@@ -102,7 +102,7 @@ Vor Anzeige in der Wortwolke: automatischer Filter (Beleidigungen, Namen von Pri
 ## Branding
 
 - Name: **„Politik-Duell"**, Slogan: **„Versprechen kann jeder."**
-- „Wer liefert?" ist nicht mehr der Name (zu nah an der Marke „wer liefert was“/wlw), darf aber als Frage im Spiel vorkommen. Repository (`abaron-lab/politik-duell`) und Vercel-Projekt (`politik-duell.vercel.app`) heißen `politik-duell`; nur das Supabase-Projekt heißt technisch weiterhin `wer-liefert`. Domain: **politik-duell.de** (Hauptadresse), politikduell.de leitet dorthin weiter.
+- „Wer liefert?" ist nicht mehr der Name (zu nah an der Marke „wer liefert was“/wlw), darf aber als Frage im Spiel vorkommen. Repository (`politik-duell/politik-duell`, in der GitHub-Organisation `politik-duell`) und Vercel-Projekt (`politik-duell.vercel.app`) heißen `politik-duell`; nur das Supabase-Projekt heißt technisch weiterhin `wer-liefert`. Domain: **politik-duell.de** (Hauptadresse), politikduell.de leitet dorthin weiter.
 - Eigenes, originales Logo und Design mit Quizshow-Anmutung (Spannung, Auflösung, Punktestand), aber **nicht** Logo, Farbschema oder Studiodesign von „Wer wird Millionär" nachbilden (markenrechtlich geschützt).
 - Tonalität: neutral, freundlich, leicht spielerisch; keine Seitenhiebe auf einzelne Parteien in Texten, Grafiken oder Animationen.
 

@@ -9,13 +9,13 @@ Die Dateien in `supabase/dashboard/` sind zum Kopieren gedacht. Auf GitHub gibt 
 
 ### 1. Datenbank anlegen
 
-1. Datei öffnen: [`supabase/dashboard/1-datenbank.sql`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/dashboard/1-datenbank.sql) → **Copy raw file**
+1. Datei öffnen: [`supabase/dashboard/1-datenbank.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/1-datenbank.sql) → **Copy raw file**
 2. [SQL Editor öffnen](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new), einfügen, **Run** klicken.
 3. Erwartet: „Success. No rows returned“. Im *Table Editor* stehen jetzt Tabellen mit Beispieldaten.
 
 ### 2. Edge Function anlegen
 
-1. Datei öffnen: [`supabase/dashboard/2-analyse.ts`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) → **Copy raw file**
+1. Datei öffnen: [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) → **Copy raw file**
 2. [Edge Functions öffnen](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/functions) → **Deploy a new function** → **Via Editor**.
 3. Den vorhandenen Beispielcode komplett löschen, den kopierten Inhalt einfügen.
 4. Als Namen der Funktion **`analyse`** eintragen (genau so, klein geschrieben) → **Deploy function**.
@@ -48,12 +48,12 @@ URL und Publishable Key liest die App aus der Datei `.env` im Repo; dort ist nic
 
 Einmalig, wenn Schritt 1–3 schon erledigt sind:
 
-1. **Datenbank ergänzen:** [`supabase/migrations/20260927000000_moderation.sql`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/migrations/20260927000000_moderation.sql)
+1. **Datenbank ergänzen:** [`supabase/migrations/20260927000000_moderation.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20260927000000_moderation.sql)
    → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
    einfügen → **Run**. Legt Stichwort- und Moderationsfelder, die Tabelle `admins` und die
    Zugriffsregeln für Admins an und schaltet Realtime für `runden` ein.
 2. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
-   [`supabase/dashboard/2-analyse.ts`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**
    (sie speichert jetzt ein Stichwort und prüft es mit dem automatischen Filter).
 3. **Admin-Konto anlegen:** [Authentication → Users](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/auth/users)
    → **Add user → Create new user**, E-Mail und ein starkes Passwort eintragen,
@@ -86,7 +86,7 @@ So läuft die Moderation:
 Datenbank: **nichts zu tun** (keine neue Migration).
 
 1. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
-   [`supabase/dashboard/2-analyse.ts`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**.
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**.
    Neu: globales Rate-Limit über alle Sitzungen (Kostendeckel für die KI, ohne IP-Adressen),
    optionale Beschränkung auf die eigene Website, Größenlimit für Anfragen.
 2. **Secrets setzen** ([Edge Functions → Secrets](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/functions/secrets)):
@@ -97,7 +97,7 @@ Datenbank: **nichts zu tun** (keine neue Migration).
      Aktueller Wert, Erklärung und Fehlersuche: [`ERLAUBTE_URSPRUENGE.md`](ERLAUBTE_URSPRUENGE.md).
    - `RATE_LIMIT_GLOBAL` – optional, KI-Anfragen pro Stunde für alle zusammen (Standard: 600).
      Pro Sitzung gelten weiter 40 Anfragen in 30 Minuten.
-3. **Impressum und Datenschutz ausfüllen:** [`src/rechtliches/betreiber.ts`](https://github.com/abaron-lab/politik-duell/blob/main/src/rechtliches/betreiber.ts)
+3. **Impressum und Datenschutz ausfüllen:** [`src/rechtliches/betreiber.ts`](https://github.com/politik-duell/politik-duell/blob/main/src/rechtliches/betreiber.ts)
    auf GitHub bearbeiten (Stift-Symbol) und alle Felder in `[…]` ersetzen: Name, ladungsfähige
    Anschrift, E-Mail, Aufsichtsbehörde des Bundeslands. Solange etwas fehlt, zeigen beide Seiten
    einen gelben Entwurfs-Hinweis. Die Seiten stehen unter `#/impressum` und `#/datenschutz` und
@@ -149,13 +149,13 @@ Admin-Konto danach wie in Weg A, Schritt 4.3–4.5.
 
 Einmalig, **in dieser Reihenfolge** (sonst zeigt die App „Die Spieldaten konnten nicht geladen werden“):
 
-1. **Datenbank ergänzen:** [`supabase/migrations/20260928000000_abdeckung.sql`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/migrations/20260928000000_abdeckung.sql)
+1. **Datenbank ergänzen:** [`supabase/migrations/20260928000000_abdeckung.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20260928000000_abdeckung.sql)
    → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
    einfügen → **Run**. Legt die Tabelle `abdeckung` an und erlaubt den Rundenstatus `unvollstaendig`.
-2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/seed.sql)
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
    im SQL Editor ausführen (füllt `abdeckung`; gespielte Runden bleiben erhalten).
 3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
-   [`supabase/dashboard/2-analyse.ts`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**
    (speichert Runden mit einer noch nicht erfassten Partei als `unvollstaendig`, ohne Punkte).
 4. Erst danach den Branch nach `main` übernehmen, damit Vercel die neue App veröffentlicht.
 
@@ -163,11 +163,11 @@ Einmalig, **in dieser Reihenfolge** (sonst zeigt die App „Die Spieldaten konnt
 
 Einmalig, **in dieser Reihenfolge**. Ablauf und Regeln: [`daten/README.md`](../daten/README.md) → „Prüfung“.
 
-1. **Datenbank ergänzen:** [`supabase/migrations/20260929000000_pruefung.sql`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/migrations/20260929000000_pruefung.sql)
+1. **Datenbank ergänzen:** [`supabase/migrations/20260929000000_pruefung.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20260929000000_pruefung.sql)
    → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
    einfügen → **Run**. Legt die Tabellen `pruef_einladungen` und `pruef_bewertungen` an (nur Admins
    und die Edge Function haben Zugriff) und die Funktion `pruefende_oeffentlich` für die Methodenseite.
-2. **Edge Function anlegen:** [`supabase/dashboard/3-pruefung.ts`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/dashboard/3-pruefung.ts)
+2. **Edge Function anlegen:** [`supabase/dashboard/3-pruefung.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/3-pruefung.ts)
    → **Copy raw file** → [Edge Functions](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/functions)
    → **Deploy a new function** → **Via Editor** → Beispielcode löschen, einfügen, Name **`pruefung`** → **Deploy function**.
    Danach unter *Details → Function configuration* **„Verify JWT with legacy secret“ ausschalten** → **Save changes**
@@ -184,7 +184,7 @@ Einmalig, **in dieser Reihenfolge**. Ablauf und Regeln: [`daten/README.md`](../d
    (oder die Datei in einer Claude-Code-Sitzung übergeben).
 
 6. **„Neuer Link“ freischalten** (einmalig, nachträglich ergänzt):
-   [`supabase/migrations/20260930000000_pruefung_neuer_link.sql`](https://github.com/abaron-lab/politik-duell/blob/main/supabase/migrations/20260930000000_pruefung_neuer_link.sql)
+   [`supabase/migrations/20260930000000_pruefung_neuer_link.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20260930000000_pruefung_neuer_link.sql)
    → **Copy raw file** → im SQL Editor einfügen → **Run**. Erwartet: „Success. No rows returned“.
    Die Edge Function bleibt unverändert.
 
