@@ -13,7 +13,22 @@ const CACHE = new URL('../.cache/programme/', import.meta.url)
 async function lade(url: string): Promise<Uint8Array> {
   const datei = new URL(`${createHash('sha1').update(url).digest('hex')}.pdf`, CACHE)
   if (existsSync(datei)) return new Uint8Array(readFileSync(datei))
-  const res = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(120_000) })
+  // Manche Parteiserver brechen Verbindungen gelegentlich ab: bis zu dreimal versuchen.
+  let res: Response | null = null
+  for (let versuch = 1; !res; versuch++) {
+    try {
+      res = await fetch(url, {
+        redirect: 'follow',
+        headers: { 'User-Agent': 'Mozilla/5.0 (Politik-Duell Zitatprüfung; +https://politik-duell.de)' },
+        signal: AbortSignal.timeout(120_000),
+      })
+    } catch (e) {
+      // „fetch failed“ allein sagt nichts – die eigentliche Ursache (DNS, TLS, Abbruch) steht in `cause`.
+      const ursache = e instanceof Error && e.cause instanceof Error ? `${e.message}: ${e.cause.message}` : String(e)
+      if (versuch >= 3) throw new Error(ursache)
+      await new Promise((r) => setTimeout(r, 2000 * versuch))
+    }
+  }
   if (!res.ok) throw new Error(`HTTP ${res.status}`)
   const daten = new Uint8Array(await res.arrayBuffer())
   mkdirSync(CACHE, { recursive: true })
