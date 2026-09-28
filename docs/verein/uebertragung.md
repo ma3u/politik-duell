@@ -14,7 +14,7 @@ Urheberrecht selbst ist in Deutschland nicht übertragbar (§ 29 UrhG) – über
 > **Politik-Duell e. V.**, [Anschrift], eingetragen im Vereinsregister des Amtsgerichts [Ort] unter VR [Nummer], vertreten durch [vertretungsberechtigte Vorstandsmitglieder] – im Folgenden „Verein“ –
 >
 > **§ 1 Gegenstand**
-> (1) Die Gründerin hat das Lernspiel „Politik-Duell“ entwickelt, bestehend insbesondere aus dem Quellcode im Repository `github.com/abaron-lab/politik-duell` (bzw. dessen Nachfolger in der Organisation `politik-duell`), dem Datenkatalog (`daten/`), den Texten zur Methode, dem Logo und Design sowie der Datenbank bei Supabase (im Folgenden „Projekt“).
+> (1) Die Gründerin hat das Lernspiel „Politik-Duell“ entwickelt, bestehend insbesondere aus dem Quellcode im Repository `github.com/politik-duell/politik-duell` der GitHub-Organisation `politik-duell`, dem Datenkatalog (`daten/`), den Texten zur Methode, dem Logo und Design sowie der Datenbank bei Supabase (im Folgenden „Projekt“).
 > (2) Zum Projekt gehören ferner die Domains `politik-duell.de` und `politikduell.de`, das E-Mail-Postfach `politik-duell@posteo.de` und die Konten nach Anlage 1.
 >
 > **§ 2 Nutzungsrechte**
@@ -57,7 +57,7 @@ Urheberrecht selbst ist in Deutschland nicht übertragbar (§ 29 UrhG) – über
 
 | Dienst | Heute | Umstellung | Erledigt |
 | --- | --- | --- | --- |
-| **GitHub** | Repo `abaron-lab/politik-duell` | Organisation `politik-duell` gehört dem Verein (mind. 2 Owner aus dem Vorstand); Repo dorthin übertragen. Danach Links in README, `betreiber.ts` (`quellcode`), Impressum anpassen. | [ ] |
+| **GitHub** | Repo `politik-duell/politik-duell` in der Organisation `politik-duell` (Owner: Gründerin) | Organisation angelegt und Repo übertragen, Links im Repo (`betreiber.ts` → `quellcode`/Impressum, `supabase/EINRICHTEN.md`) angepasst (September 2026). Offen: Organisation dem Verein übergeben (mind. 2 Owner aus dem Vorstand). | [ ] |
 | **Vercel** | Projekt `politik-duell` im privaten Konto | Team für den Verein anlegen, Projekt übertragen (*Settings → Transfer*); Tarif klären (Hobby nur für persönliche, nicht-kommerzielle Nutzung; ein Verein als Inhaber oder ein Spendenaufruf auf der Seite passt nicht mehr dazu). Domain-Verbindung und Umgebungsvariablen prüfen. | [ ] |
 | **Supabase** | Projekt `wer-liefert` (`xfprvshhexhzhfgkfxpi`) | Organisation des Vereins anlegen, Projekt übertragen (*Project Settings → General → Transfer project*); Mitglieder mit eigenen Konten statt geteiltem Passwort. Admins in Tabelle `admins` prüfen. | [ ] |
 | **Mistral** | privates Konto, Secret `MISTRAL_API_KEY` | Organisation/Workspace für den Verein mit Vereinskonto als Zahlungsmittel; neuen API-Schlüssel erzeugen, in Supabase-Secret eintragen, alten löschen. Ausgabenlimit wieder setzen, Training-Opt-out prüfen. | [ ] |

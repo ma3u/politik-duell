@@ -45,6 +45,14 @@ Screenshots der Trefferlisten mit Datum im Projektordner ablegen (nicht im Repo)
 
 Ziel: Das Repo gehört nicht mehr deinem persönlichen Konto `abaron-lab`, sondern einer Organisation `politik-duell`. Später bekommen weitere Vorstandsmitglieder Zugang, und der Verein übernimmt die Organisation, ohne dass du dein Konto hergeben musst.
 
+**Stand September 2026:** Organisation `politik-duell` angelegt, Repo nach `politik-duell/politik-duell` übertragen, Links im Repo angepasst. Die Schritte 2.2 und 2.3 unten sind erledigt und bleiben als Nachweis stehen (deshalb nennen sie noch den alten Pfad). Offen: Vercel und Claude Code prüfen (2.4).
+
+- [x] Organisation `politik-duell` angelegt (2.2)
+- [x] Repo übertragen (2.3)
+- [x] Links im Repo angepasst (2.4, „Links im Repo“)
+- [ ] Vercel angeschlossen (2.4)
+- [ ] Claude Code angeschlossen (2.4)
+
 ### 2.1 Vorher prüfen
 
 - [ ] **Zwei-Faktor-Anmeldung** auf deinem GitHub-Konto ist an: Profilbild → **Settings → Password and authentication** → „Two-factor authentication“ muss „Enabled“ zeigen. Die Wiederherstellungscodes (*Recovery codes*) in den Passwortmanager legen (Abschnitt 3.1).
@@ -165,7 +173,8 @@ Den Hobby-Zugang kannst du nicht an andere weitergeben; bei der Übergabe wird d
 
 - [ ] Passwortmanager mit Notfallzugang
 - [ ] Posteo: 2FA, Wiederherstellung, Guthaben
-- [ ] GitHub: 2FA, Organisation, Repo übertragen, Vercel und Claude angeschlossen, Links angepasst
+- [x] GitHub: Organisation angelegt, Repo übertragen, Links angepasst
+- [ ] GitHub: 2FA, Vercel und Claude angeschlossen
 - [ ] Supabase: Organisation umbenannt, Rechnungsadresse, 2FA
 - [ ] Mistral: Workspace, Rechnungsadresse, Limit, Training aus, 2FA
 - [ ] INWX: 2FA, Domain-Kontakt-E-Mail, automatische Verlängerung
