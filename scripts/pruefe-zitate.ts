@@ -29,8 +29,9 @@ async function lade(url: string): Promise<Uint8Array> {
       const jetzt = new Date().toISOString().replace(/\D/g, '').slice(0, 14)
       daten = await herunterladen(`https://web.archive.org/web/${jetzt}id_/${url}`)
       hinweise.push(`Direkt nicht erreichbar (${e instanceof Error ? e.message : e}), geprüft mit der Kopie auf web.archive.org: ${url}`)
-    } catch {
-      throw e
+    } catch (archiv) {
+      const text = (x: unknown) => (x instanceof Error ? x.message : String(x))
+      throw new Error(`${text(e)}; Kopie auf web.archive.org: ${text(archiv)}`)
     }
   }
   mkdirSync(CACHE, { recursive: true })
@@ -43,11 +44,7 @@ async function herunterladen(url: string): Promise<Uint8Array> {
   let res: Response | null = null
   for (let versuch = 1; !res; versuch++) {
     try {
-      res = await fetch(url, {
-        redirect: 'follow',
-        headers: { 'User-Agent': 'Mozilla/5.0 (Politik-Duell Zitatprüfung; +https://politik-duell.de)' },
-        signal: AbortSignal.timeout(120_000),
-      })
+      res = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(120_000) })
     } catch (e) {
       // „fetch failed“ allein sagt nichts – die eigentliche Ursache (DNS, TLS, Abbruch) steht in `cause`.
       const ursache = e instanceof Error && e.cause instanceof Error ? `${e.message}: ${e.cause.message}` : String(e)
@@ -81,12 +78,15 @@ for (const m of massnahmen) {
 
 const fehler: string[] = []
 let ok = 0
+let ungeprueft = 0
 for (const [url, liste] of jeProgramm) {
   let seiten: string[]
   try {
     seiten = await seitenTexte(await lade(url))
   } catch (e) {
-    fehler.push(`Programm nicht lesbar (${e instanceof Error ? e.message : e}): ${url} – ${liste.length} Zitate ungeprüft`)
+    // Kein Datenfehler, sondern ein gesperrter Server: melden, aber die Prüfung der anderen nicht rot färben.
+    hinweise.push(`Programm nicht erreichbar (${e instanceof Error ? e.message : e}): ${url} – ${liste.length} Zitate ungeprüft, bitte von einem normalen Internetanschluss aus prüfen`)
+    ungeprueft += liste.length
     continue
   }
   for (const m of liste) {
@@ -104,8 +104,12 @@ for (const [url, liste] of jeProgramm) {
   }
 }
 
-for (const h of hinweise) console.warn(`Hinweis: ${h}`)
+// In GitHub Actions als Warnung am Lauf sichtbar, damit ungeprüfte Zitate nicht untergehen.
+for (const h of hinweise) console.warn(process.env.GITHUB_ACTIONS ? `::warning::${h}` : `Hinweis: ${h}`)
 for (const f of fehler) console.error(`Fehler:  ${f}`)
-console.log(`\n${ok} von ${massnahmen.length} Zitaten auf der angegebenen Seite gefunden.`)
+console.log(
+  `\n${ok} von ${massnahmen.length} Zitaten auf der angegebenen Seite gefunden` +
+    (ungeprueft ? `, ${ungeprueft} ungeprüft (Programm nicht erreichbar).` : '.'),
+)
 if (fehler.length) process.exit(1)
-console.log('Alle Zitate in Ordnung.')
+console.log(ungeprueft ? 'Alle erreichbaren Zitate in Ordnung.' : 'Alle Zitate in Ordnung.')

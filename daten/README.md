@@ -262,7 +262,7 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen
 - `supabase/seed.sql` passt zum Katalog
-- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige.
+- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten.
 
 ```bash
 npm run daten:pruefen              # Dateien prüfen
