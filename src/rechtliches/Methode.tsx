@@ -75,6 +75,12 @@ export function Methode() {
         Problem, ordnet eine KI es einem Thema und den passenden Ursachen zu. Die KI vergibt keine Punkte, nennt keine
         Quellen und bewertet keine Parteien.
       </p>
+      <p>
+        Die Ursachen legen wir fest, bevor wir in die Wahlprogramme schauen. Sie beschreiben, was schiefläuft, nicht wie
+        es zu beheben ist – so können Lösungen aus ganz unterschiedlichen Richtungen Punkte bekommen. Wir stützen uns auf
+        Quellen unterschiedlicher Ausrichtung und prüfen, ob die Problemdiagnosen aus der Fachdebatte vorkommen. Eine
+        Diagnose, die sich nicht unabhängig belegen lässt, nehmen wir nicht auf – gleich, wer sie vertritt.
+      </p>
 
       <h2>2. Maßnahmen aus den Wahlprogrammen</h2>
       <p>
@@ -106,6 +112,11 @@ export function Methode() {
         sie ansetzt, zu diesem Ziel beiträgt.
       </p>
       <Skala stufen={WIRKSAMKEIT} />
+      <p>
+        Die höchste Stufe setzt voraus, dass die Wirkung belegt ist – durch übereinstimmende Studien oder Erfahrungen
+        anderswo. Kommt die Forschung zu unterschiedlichen Ergebnissen, vergeben wir höchstens 2 und nennen in der
+        Begründung beide Seiten.
+      </p>
       <h3>Umsetzbarkeit: Ist sie rechtlich, finanziell und zeitlich realistisch?</h3>
       <Skala stufen={UMSETZBARKEIT} />
       <p>
@@ -121,7 +132,14 @@ export function Methode() {
           bringt eine Maßnahme ohne Wirkung keine Punkte, auch wenn sie leicht umzusetzen wäre – und eine wirksame, die
           sich nicht umsetzen lässt, ebenso wenig.
         </li>
-        <li>Die Rundenpunkte sind die Summe über alle zugeordneten Ursachen.</li>
+        <li>
+          Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr aufschreibt, nicht wer
+          besser ansetzt.
+        </li>
+        <li>
+          Die Rundenpunkte sind die Summe über alle zugeordneten Ursachen. Parteien setzen oft an verschiedenen Ursachen
+          an; so können sehr unterschiedliche Programme ähnlich viele Punkte erreichen.
+        </li>
         <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>
         <li>
           Finden wir im Programm keine Maßnahme zu den Ursachen, gibt es 0 Punkte. Das heißt nur: Im Wahlprogramm mit

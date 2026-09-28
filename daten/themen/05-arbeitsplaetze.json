@@ -7,7 +7,7 @@
   "ursachen": [
     {
       "id": 501,
-      "beschreibung": "Die Industrie verliert an Wettbewerbsfähigkeit; Strukturwandel und geopolitische Veränderungen gefährden das Exportmodell",
+      "beschreibung": "Die Industrie verliert an Wettbewerbsfähigkeit: überdurchschnittlich gestiegene Energiepreise und Lohnstückkosten, dazu hohe wirtschaftspolitische Unsicherheit und geopolitische Veränderungen",
       "quelle_url": "https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/jg202526/JG202526_Kurzfassung.pdf",
       "schlagwoerter": ["industrie", "energiekosten", "standort", "abwandern", "verlagert", "auftraege", "export", "insolvenz", "pleite"]
     },
@@ -21,7 +21,31 @@
       "id": 503,
       "beschreibung": "Löhne in Ostdeutschland liegen weiterhin deutlich unter denen im Westen",
       "quelle_url": "https://www.destatis.de/DE/Themen/Querschnitt/35-Jahre-Deutsche-Einheit/Vermoegen-Einkommen/Textbausteine/01_verdienstunterschiede.html",
-      "schlagwoerter": ["im osten", "ostdeutsch", "ostdeutschland", "niedriglohn", "wenig verdienen", "schlecht bezahlt", "tarif", "lohnluecke", "weggezogen"]
+      "schlagwoerter": ["im osten", "ostdeutsch", "ostdeutschland", "lohnluecke", "weggezogen"]
+    },
+    {
+      "id": 504,
+      "beschreibung": "Zu wenig Investitionen: Für Verkehr, Bildung, Kommunen und Klimaschutz fehlen über zehn Jahre rund 600 Mrd. Euro zusätzliche öffentliche Investitionen",
+      "quelle_url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/policy_papers/PDF/2024/IW-Policy-Paper_2024-Investitionsbedarfe.pdf",
+      "schlagwoerter": ["investition", "infrastruktur", "bruecke", "strasse", "schiene", "glasfaser", "funkloch", "breitband", "investiert"]
+    },
+    {
+      "id": 505,
+      "beschreibung": "Hohe Bürokratiekosten: Unternehmen tragen jährlich rund 64 Mrd. Euro Kosten für Berichts- und Informationspflichten",
+      "quelle_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5",
+      "schlagwoerter": ["buerokratie", "formulare", "auflagen", "vorschriften", "genehmigung", "dokumentation", "papierkram", "berichtspflicht"]
+    },
+    {
+      "id": 506,
+      "beschreibung": "Mehr zu arbeiten lohnt sich für Menschen im Bürgergeld oft kaum, weil der Hinzuverdienst größtenteils angerechnet wird",
+      "quelle_url": "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-629-erwerbstaetigenfreibetraege.html",
+      "schlagwoerter": ["hinzuverdienst", "lohnt sich nicht", "angerechnet", "minijob", "aufstocker", "arbeiten lohnt"]
+    },
+    {
+      "id": 507,
+      "beschreibung": "Nur knapp die Hälfte der Beschäftigten (49 %) arbeitet in einem tarifgebundenen Betrieb",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_109_623.html",
+      "schlagwoerter": ["tarif", "tariflohn", "tarifvertrag", "niedriglohn", "wenig verdienen", "schlecht bezahlt", "mindestlohn", "gewerkschaft"]
     }
   ]
 }
