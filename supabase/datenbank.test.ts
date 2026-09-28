@@ -85,7 +85,26 @@ describe('Datenbank', () => {
     expect(alt.rows[0].n).toBe(0)
     const runde = await pruef.query<{ partei_a: number | null }>(`select partei_a from runden where problem_text = 'alt'`)
     expect(runde.rows).toEqual([{ partei_a: null }])
+    // Länder und Ebenen der Ursachen kommen mit.
+    const laender = await pruef.query<{ id: string }>('select id from laender order by id')
+    expect(laender.rows.map((l) => l.id)).toEqual(['BE', 'MV', 'ST'])
+    const ebene = await pruef.query<{ ebene: string }>('select ebene from ursachen where id = 401')
+    expect(ebene.rows).toEqual([{ ebene: 'land' }])
     await pruef.close()
+  })
+
+  it('Abdeckung: je Thema, Partei und Programm höchstens ein Eintrag', async () => {
+    await db.exec(`insert into laender (id, name, letzte_wahl) values ('ST', 'Sachsen-Anhalt', '2026-09-06')`)
+    const a = KATALOG.abdeckung[0]
+    const neu = (land: string) =>
+      db.exec(`insert into abdeckung (thema_id, partei_id, land, art, begruendung, stand) values (${a.thema_id}, ${a.partei_id}, ${land}, 'keine', 'x', '2026-05-01')`)
+    // Bundeseintrag gibt es schon aus dem Seed; ein zweiter (land = null) wird abgelehnt.
+    await expect(neu('null')).rejects.toThrow()
+    await neu(`'ST'`)
+    await expect(neu(`'ST'`)).rejects.toThrow()
+    await db.exec(`delete from laender where id = 'ST'`)
+    const r = await alsRolle('anon', () => db.query('select * from laender'))
+    expect(r.rows).toEqual([])
   })
 
   it('anon sieht nur freigegebene Runden', async () => {

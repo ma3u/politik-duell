@@ -137,7 +137,11 @@ for (const thema of katalog.themen) {
   // Feste, aber parteiunabhängige Reihenfolge für Durchgang A (wie auf der Prüfseite der App).
   const blind = blindeReihenfolge(massnahmen)
   const kennung = new Map(blind.map((m, i) => [m.id, `M${i + 1}`]))
-  const fehlend = katalog.parteien.filter((p) => !katalog.abdeckung.some((a) => a.thema_id === thema.id && a.partei_id === p.id))
+  const fehlend = katalog.parteien.filter((p) => !katalog.abdeckung.some((a) => a.thema_id === thema.id && a.partei_id === p.id && !a.land))
+  const landName = (id: string) => katalog.laender.find((l) => l.id === id)?.name ?? id
+  // Umsetzbarkeit wird auf der Ebene des Programms bewertet (Bund oder Land).
+  const ebeneText = (m: (typeof massnahmen)[number]) =>
+    m.land ? `Landesebene (${esc(landName(m.land))})` : 'Bundesebene'
 
   const daten = {
     thema: thema.id,
@@ -161,7 +165,7 @@ for (const thema of katalog.themen) {
         <span class="kennung">${kennung.get(m.id)}</span>
         <div>
           <p>${esc(m.beschreibung)}</p>
-          <p class="leise">Setzt an bei: ${m.ursachen_ids.map((u) => esc(ursacheText(u))).join(' · ')}</p>
+          <p class="leise">Setzt an bei: ${m.ursachen_ids.map((u) => esc(ursacheText(u))).join(' · ')} · ${ebeneText(m)}</p>
         </div>
         <div class="wahl">${auswahl(m.id, 'w', 'Wirks.')}${auswahl(m.id, 'u', 'Umsetz.')}</div>
         <details class="empfehlung"><summary>Empfehlung ansehen</summary>
@@ -178,7 +182,9 @@ for (const thema of katalog.themen) {
         <p class="leise"><a href="${esc(m.beleg_programm_url)}" target="_blank" rel="noopener">Programm öffnen (PDF-Seite ${esc(m.beleg_programm_url.split('#page=')[1] ?? '?')})</a>${
           m.beleg_studie_url ? ` · <a href="${esc(m.beleg_studie_url)}" target="_blank" rel="noopener">Studie</a>` : ''
         }</p>
-        <p class="leise">Setzt an bei: ${m.ursachen_ids.map((u) => esc(ursacheText(u))).join(' · ')}</p>
+        <p class="leise">Setzt an bei: ${m.ursachen_ids.map((u) => esc(ursacheText(u))).join(' · ')} · ${ebeneText(m)}${
+          m.evidenz ? ` · Forschungsstand: ${m.evidenz}` : ''
+        }</p>
         <p class="leise">Begründung: ${esc(m.begruendung)}${
           m.rollen_modifikator
             ? `<br>Rollen: ${Object.entries(m.rollen_modifikator)

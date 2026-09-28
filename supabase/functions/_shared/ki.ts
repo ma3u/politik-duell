@@ -118,7 +118,10 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
     a.parteien[0] === a.parteien[1]
   )
     throw new EingabeFehler('Ungültige Parteien.')
-  return { sitzung: a.sitzung, verlauf: a.verlauf, rolle: a.rolle ?? null, parteien: a.parteien }
+  // Bundesland nur als Kürzel; es zählt nur für die Wertung und wird nicht gespeichert.
+  if (a.land !== null && a.land !== undefined && (typeof a.land !== 'string' || !/^[A-Z]{2}$/.test(a.land)))
+    throw new EingabeFehler('Ungültiges Bundesland.')
+  return { sitzung: a.sitzung, verlauf: a.verlauf, rolle: a.rolle ?? null, land: a.land ?? null, parteien: a.parteien }
 }
 
 const regexText = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')

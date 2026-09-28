@@ -24,6 +24,35 @@ export interface Partei {
   programm_stand: string // ISO-Datum
 }
 
+/** Bundesland, für das Landtagswahlprogramme erfasst werden. */
+export interface Land {
+  /** Kürzel wie „ST“ (Sachsen-Anhalt). */
+  id: string
+  name: string
+  /** Datum der letzten Landtagswahl: Aktuell sind nur Programme zu dieser Wahl (laufende Wahlperiode). */
+  letzte_wahl: string
+}
+
+/**
+ * Wahlprogramm einer Partei zur letzten Landtagswahl eines Landes. Ohne `url`
+ * gibt es nachweislich keins (z. B. nicht angetreten) – dann steht in
+ * `kein_programm`, warum.
+ */
+export interface Landesprogramm {
+  partei_id: number
+  land: string
+  url: string | null
+  /** Beschlussdatum des Programms. */
+  stand: string | null
+  kein_programm: string | null
+}
+
+/** Wer vor allem zuständig ist: Bei `land` zählt das Landesprogramm, wenn ein Bundesland gewählt ist. */
+export type Ebene = 'bund' | 'land'
+
+/** Wie gut die Wirkung einer Maßnahme in der Forschung belegt ist. */
+export type Evidenz = 'belegt' | 'gemischt' | 'offen'
+
 export interface Thema {
   id: number
   name: string
@@ -39,6 +68,8 @@ export interface Ursache {
   thema_id: number
   beschreibung: string
   quelle_url: string
+  /** Fehlt sie (ältere Daten), gilt `bund`. */
+  ebene?: Ebene
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Ursachen erkennt. */
   schlagwoerter?: string[]
 }
@@ -52,6 +83,8 @@ export interface Massnahme {
   id: number
   thema_id: number
   partei_id: number
+  /** Kürzel des Landes bei Maßnahmen aus einem Landesprogramm; null/fehlend = Bundesprogramm. */
+  land?: string | null
   beschreibung: string
   ursachen_ids: number[]
   wirksamkeit: 0 | 1 | 2 | 3
@@ -62,6 +95,7 @@ export interface Massnahme {
   zitat?: string
   beleg_programm_url: string
   beleg_studie_url?: string
+  evidenz?: Evidenz | null
   stand: string
   geprueft: boolean
 }
@@ -73,6 +107,8 @@ export interface Massnahme {
 export interface AbdeckungEintrag {
   thema_id: number
   partei_id: number
+  /** Kürzel des Landes bei Landesprogrammen; null/fehlend = Bundesprogramm. */
+  land?: string | null
   /** `massnahmen`: alle Maßnahmen zum Thema erfasst; `keine`: Programm enthält nachweislich nichts dazu. */
   art: 'massnahmen' | 'keine'
   /** Nur bei `keine`: was durchsucht wurde. */
@@ -102,6 +138,8 @@ export interface AnalyseAnfrage {
   sitzung: string
   verlauf: Nachricht[]
   rolle: Rolle | null
+  /** Gewähltes Bundesland (Kürzel) – nur zur Wertung, wird nicht gespeichert. */
+  land: string | null
   /** IDs der beiden gewählten Parteien (A, B) – zum Speichern der Runde. */
   parteien: [number, number]
 }

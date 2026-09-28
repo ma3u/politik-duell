@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { pruefeDatenordner } from './katalog-laden'
 import { pruefMassnahmenTs } from './pruef-massnahmen'
 import { seedSql } from './seed-sql'
-import { pruefeKatalog, spielbareAbdeckung, spielbareMassnahmen, type Datei } from '../src/data/katalog'
+import { pruefeKatalog, spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen, type Datei } from '../src/data/katalog'
 
 // Kleiner, gültiger Katalog mit echten (nicht fiktiven) Regeln als Ausgangspunkt.
 const parteien = (fiktiv = false): Datei => ({
@@ -27,6 +27,7 @@ const massnahme = (ueber: Record<string, unknown> = {}) => ({
   zitat: 'Wir schaffen mehr Praxen.',
   beleg_programm_url: 'https://eins.de/programm.pdf#page=4',
   stand: '2026-03-01',
+  evidenz: 'belegt',
   geprueft: true,
   bewertung: { anzahl: 2, median_w: 3, median_u: 2, spannweite: 1, datum: '2026-03-05', entwurf: [2, 2] },
   ...ueber,
@@ -39,7 +40,7 @@ const thema = (ueber: Record<string, unknown> = {}): Datei => ({
     name: 'Arzttermine',
     beschreibung: 'Lange Wartezeiten.',
     ziel: 'Termine in angemessener Zeit.',
-    ursachen: [{ id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/aerzte' }],
+    ursachen: [{ id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/aerzte', ebene: 'bund' }],
     abdeckung: [
       { partei_id: 1, massnahmen: [massnahme()] },
       { partei_id: 2, keine_massnahme: { begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true } },
@@ -58,8 +59,8 @@ describe('Datenkatalog: Prüfregeln', () => {
     expect(katalog.massnahmen[0]).toMatchObject({ id: 1, thema_id: 1, partei_id: 1 })
     expect(katalog.ursachen[0]).toMatchObject({ id: 11, thema_id: 1 })
     expect(katalog.abdeckung).toEqual([
-      { thema_id: 1, partei_id: 1, art: 'massnahmen', begruendung: null, stand: '2026-03-01', geprueft: true },
-      { thema_id: 1, partei_id: 2, art: 'keine', begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true },
+      { thema_id: 1, partei_id: 1, land: null, art: 'massnahmen', begruendung: null, stand: '2026-03-01', geprueft: true },
+      { thema_id: 1, partei_id: 2, land: null, art: 'keine', begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true },
     ])
   })
 
@@ -95,7 +96,7 @@ describe('Datenkatalog: Prüfregeln', () => {
   })
 
   it('erlaubt einen Vermerk für nachträglich ergänzte Ursachen', () => {
-    const u = { id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/aerzte' }
+    const u = { id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/aerzte', ebene: 'bund' }
     expect(fehlerVon(thema({ ursachen: [{ ...u, nachtraeglich: '2026-09-28: ergänzt, weil …' }] }))).toBe('')
     expect(fehlerVon(thema({ ursachen: [{ ...u, nachtraeglich: '' }] }))).toMatch(/„nachtraeglich“ fehlt oder ist leer/)
   })
@@ -181,7 +182,7 @@ describe('Datenkatalog: Prüfregeln', () => {
     expect(echt.warnungen).toHaveLength(1)
     expect(spielbareMassnahmen(echt.katalog)).toEqual([])
     expect(spielbareAbdeckung(echt.katalog)).toEqual([
-      { thema_id: 1, partei_id: 2, art: 'keine', begruendung: 'x', stand: '2026-03-01' },
+      { thema_id: 1, partei_id: 2, land: null, art: 'keine', begruendung: 'x', stand: '2026-03-01' },
     ])
 
     // Sind alle Maßnahmen geprüft, zählt der Eintrag.
@@ -196,6 +197,80 @@ describe('Datenkatalog: Prüfregeln', () => {
   })
 })
 
+describe('Datenkatalog: Länder und Stand der Forschung', () => {
+  // Partei 1 hat ein Programm zur letzten Wahl in ST, Partei 2 ist dort nicht angetreten.
+  const mitLaendern = (ueber: Record<string, unknown>[] = []): Datei => {
+    const p = parteien()
+    const inhalt = p.inhalt as { parteien: Record<string, unknown>[] } & Record<string, unknown>
+    inhalt.laender = [{ id: 'ST', name: 'Sachsen-Anhalt', letzte_wahl: '2026-09-06' }]
+    inhalt.parteien[0].landesprogramme = [
+      { land: 'ST', landtagswahl: '2026-09-06', url: 'https://eins.de/st.pdf', stand: '2026-04-01' },
+      ...ueber,
+    ]
+    inhalt.parteien[1].landesprogramme = [{ land: 'ST', landtagswahl: '2026-09-06', kein_programm: 'nicht angetreten' }]
+    return p
+  }
+  const landUrsachen = [
+    { id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/aerzte', ebene: 'bund' },
+    { id: 12, beschreibung: 'Zu wenige Lehrkräfte', quelle_url: 'https://studie.de/schule', ebene: 'land' },
+  ]
+  const landMassnahme = (ueber: Record<string, unknown> = {}) =>
+    massnahme({ id: 5, ursachen_ids: [12], beleg_programm_url: 'https://eins.de/st.pdf#page=7', stand: '2026-05-01', ...ueber })
+  const mitLandEintrag = (m: Record<string, unknown> = landMassnahme()) =>
+    thema({ ursachen: landUrsachen, abdeckung: [...(thema().inhalt as { abdeckung: unknown[] }).abdeckung, { partei_id: 1, land: 'ST', massnahmen: [m] }] })
+
+  it('liest Länder und Landesprogramme; nur aktuelle zählen', () => {
+    const { katalog, fehler } = pruefeKatalog(mitLaendern(), [mitLandEintrag()])
+    expect(fehler).toEqual([])
+    expect(katalog.laender).toEqual([{ id: 'ST', name: 'Sachsen-Anhalt', letzte_wahl: '2026-09-06' }])
+    expect(spielbareLandesprogramme(katalog)).toEqual([
+      { partei_id: 1, land: 'ST', url: 'https://eins.de/st.pdf', stand: '2026-04-01', kein_programm: null },
+      { partei_id: 2, land: 'ST', url: null, stand: null, kein_programm: 'nicht angetreten' },
+    ])
+    expect(spielbareMassnahmen(katalog).map((m) => [m.id, m.land])).toEqual([[1, null], [5, 'ST']])
+    expect(spielbareAbdeckung(katalog).filter((a) => a.land).map((a) => a.partei_id)).toEqual([1])
+  })
+
+  it('verwirft Landesprogramme früherer Wahlperioden mit Warnung', () => {
+    const p = mitLaendern()
+    const inhalt = p.inhalt as { laender: Record<string, unknown>[] }
+    inhalt.laender[0].letzte_wahl = '2031-06-01'
+    const { katalog, fehler, warnungen } = pruefeKatalog(p, [mitLandEintrag()])
+    expect(fehler).toEqual([])
+    expect(warnungen.join('\n')).toMatch(/veraltet/)
+    expect(spielbareLandesprogramme(katalog)).toEqual([])
+    expect(spielbareMassnahmen(katalog).map((m) => m.id)).toEqual([1])
+  })
+
+  it('prüft Landeseinträge: Programm, Beleg und Ebene der Ursache', () => {
+    expect(fehlerVon(mitLandEintrag(landMassnahme({ beleg_programm_url: 'https://eins.de/programm.pdf#page=7' })), mitLaendern()))
+      .toMatch(/nicht auf das Programm der Partei \(https:\/\/eins.de\/st.pdf\)/)
+    expect(fehlerVon(mitLandEintrag(landMassnahme({ ursachen_ids: [11] })), mitLaendern())).toMatch(/Ursache 11 liegt beim Bund/)
+    expect(fehlerVon(mitLandEintrag(landMassnahme({ stand: '2026-03-01' })), mitLaendern())).toMatch(/vor dem Programmstand 2026-04-01/)
+    const ohneProgramm = thema({ ursachen: landUrsachen, abdeckung: [{ partei_id: 2, land: 'ST', keine_massnahme: { begruendung: 'x', stand: '2026-05-01', geprueft: true } }] })
+    expect(fehlerVon(ohneProgramm, mitLaendern())).toMatch(/hat in „ST“ kein Programm/)
+    const unbekannt = thema({ ursachen: landUrsachen, abdeckung: [{ partei_id: 1, land: 'BY', keine_massnahme: { begruendung: 'x', stand: '2026-05-01', geprueft: true } }] })
+    expect(fehlerVon(unbekannt, mitLaendern())).toMatch(/kein Landesprogramm „BY“/)
+    expect(fehlerVon(mitLandEintrag(), mitLaendern([{ land: 'ST', landtagswahl: '2026-09-06', kein_programm: 'x' }]))).toMatch(/„ST“ ist für diese Partei doppelt/)
+    expect(fehlerVon(mitLandEintrag(), mitLaendern([{ land: 'XX', landtagswahl: '2026-09-06', kein_programm: 'x' }]))).toMatch(/unbekanntes Land „XX“/)
+  })
+
+  it('verlangt bei echten Daten eine Ebene je Ursache', () => {
+    const ohne = thema({ ursachen: [{ id: 11, beschreibung: 'x', quelle_url: 'https://studie.de/aerzte' }] })
+    expect(fehlerVon(ohne)).toMatch(/„ebene“ muss „bund“ oder „land“ sein/)
+    expect(fehlerVon(ohne, parteien(true))).not.toMatch(/ebene/)
+  })
+
+  it('erlaubt Wirksamkeit 3 nur mit belegter Wirkung', () => {
+    const mit = (m: Record<string, unknown>) =>
+      fehlerVon(thema({ abdeckung: [{ partei_id: 1, massnahmen: [massnahme(m)] }, { partei_id: 2, keine_massnahme: { begruendung: 'x', stand: '2026-03-01', geprueft: true } }] }))
+    expect(mit({ evidenz: 'gemischt' })).toMatch(/„wirksamkeit“ 3 nur mit „evidenz“: „belegt“/)
+    expect(mit({ evidenz: 'unklar' })).toMatch(/„evidenz“ muss/)
+    expect(mit({ evidenz: undefined })).toMatch(/„evidenz“ fehlt/)
+    expect(mit({ evidenz: 'gemischt', wirksamkeit: 2, bewertung: { anzahl: 2, median_w: 2, median_u: 2, spannweite: 1, datum: '2026-03-05', entwurf: [2, 2] } })).toBe('')
+  })
+})
+
 describe('Datenkatalog im Repo (daten/)', () => {
   const { katalog, fehler } = pruefeDatenordner()
 
@@ -203,8 +278,8 @@ describe('Datenkatalog im Repo (daten/)', () => {
     expect(fehler).toEqual([])
   })
 
-  it('hat höchstens einen Eintrag je Thema und Partei', () => {
-    const paare = katalog.abdeckung.map((a) => `${a.thema_id}/${a.partei_id}`)
+  it('hat höchstens einen Eintrag je Thema, Partei und Programm', () => {
+    const paare = katalog.abdeckung.map((a) => `${a.thema_id}/${a.partei_id}/${a.land ?? ''}`)
     expect(new Set(paare).size).toBe(paare.length)
   })
 

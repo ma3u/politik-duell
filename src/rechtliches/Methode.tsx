@@ -142,6 +142,12 @@ export function Methode() {
         </li>
         <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>
         <li>
+          Wählst du ein Bundesland, zählt bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
+          Schulgebäude), das Wahlprogramm der Partei zur letzten Landtagswahl, sonst das Bundesprogramm. Je Partei und
+          Ursache zählt immer genau ein Programm. Ist eine Partei in deinem Land nicht angetreten, wird die Runde nicht
+          gewertet. Das Bundesland wird nicht gespeichert.
+        </li>
+        <li>
           Finden wir im Programm keine Maßnahme zu den Ursachen, gibt es 0 Punkte. Das heißt nur: Im Wahlprogramm mit
           dem angegebenen Stand steht dazu nichts – nicht, dass die Partei sich nie dazu geäußert hätte. Steht zum
           ganzen Thema nichts im Programm, halten wir fest, was wir durchsucht haben.

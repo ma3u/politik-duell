@@ -1,4 +1,13 @@
-import { ROLLEN_IDS, type AbdeckungEintrag, type Massnahme, type Partei, type Thema, type Ursache } from './types.ts'
+import {
+  ROLLEN_IDS,
+  type AbdeckungEintrag,
+  type Land,
+  type Landesprogramm,
+  type Massnahme,
+  type Partei,
+  type Thema,
+  type Ursache,
+} from './types.ts'
 
 // ---------------------------------------------------------------------------
 // Kuratierter Datenkatalog (Ordner `daten/`, Format siehe daten/README.md).
@@ -22,9 +31,18 @@ export interface Abdeckung extends AbdeckungEintrag {
   geprueft: boolean
 }
 
+/** Landesprogramm im Repo: mit Wahl, zu der es gehört. */
+export interface LandesprogrammEintrag extends Landesprogramm {
+  landtagswahl: string
+  /** true, wenn es zur letzten Landtagswahl des Landes gehört (laufende Wahlperiode). */
+  aktuell: boolean
+}
+
 export interface Katalog {
   /** true = erfundene Platzhalterdaten (Mock). Dann gelten gelockerte Regeln. */
   fiktiv: boolean
+  laender: Land[]
+  landesprogramme: LandesprogrammEintrag[]
   parteien: Partei[]
   themen: Thema[]
   ursachen: Ursache[]
@@ -53,21 +71,39 @@ export interface Pruefergebnis {
  * könnte eine Partei sonst schlechter dastehen lassen, als sie ist.
  * Bei fiktiven Daten zählt alles, weil es dort nichts zu prüfen gibt.
  */
-export function spielbareAbdeckung(k: Katalog): AbdeckungEintrag[] {
-  return k.abdeckung
-    .filter((a) => k.fiktiv || a.geprueft)
-    .map(({ thema_id, partei_id, art, begruendung, stand }) => ({ thema_id, partei_id, art, begruendung, stand }))
+/** Landesprogramme der laufenden Wahlperiode – nur sie zählen im Spiel. */
+export function spielbareLandesprogramme(k: Katalog): Landesprogramm[] {
+  return k.landesprogramme
+    .filter((p) => p.aktuell)
+    .map(({ partei_id, land, url, stand, kein_programm }) => ({ partei_id, land, url, stand, kein_programm }))
 }
 
+export function spielbareAbdeckung(k: Katalog): AbdeckungEintrag[] {
+  // Landesprogramme zählen nur in der laufenden Wahlperiode.
+  const aktuell = new Set(spielbareLandesprogramme(k).filter((p) => p.url).map((p) => `${p.partei_id}/${p.land}`))
+  return k.abdeckung
+    .filter((a) => k.fiktiv || a.geprueft)
+    .filter((a) => !a.land || aktuell.has(`${a.partei_id}/${a.land}`))
+    .map(({ thema_id, partei_id, land, art, begruendung, stand }) => ({
+      thema_id, partei_id, land: land ?? null, art, begruendung, stand,
+    }))
+}
+
+const programmSchluessel = (x: { thema_id: number; partei_id: number; land?: string | null }) =>
+  `${x.thema_id}/${x.partei_id}/${x.land ?? ''}`
+
 export function spielbareMassnahmen(k: Katalog): Massnahme[] {
-  const frei = new Set(spielbareAbdeckung(k).map((a) => `${a.thema_id}/${a.partei_id}`))
-  return k.massnahmen.filter((m) => frei.has(`${m.thema_id}/${m.partei_id}`))
+  const frei = new Set(spielbareAbdeckung(k).map(programmSchluessel))
+  return k.massnahmen.filter((m) => frei.has(programmSchluessel(m)))
 }
 
 const DATUM = /^\d{4}-\d{2}-\d{2}$/
 const FARBE = /^#[0-9a-fA-F]{6}$/
 const SEITENANKER = /#page=\d+$/
 const PLATZHALTER_HOSTS = ['example.org', 'example.com', 'example.net']
+const LAND_KUERZEL = /^[A-Z]{2}$/
+const EBENEN = ['bund', 'land'] as const
+const EVIDENZ = ['belegt', 'gemischt', 'offen'] as const
 
 const istObjekt = (v: unknown): v is Record<string, unknown> =>
   typeof v === 'object' && v !== null && !Array.isArray(v)
@@ -80,7 +116,9 @@ const ohneAnker = (url: string) => url.split('#')[0]
 export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pruefergebnis {
   const fehler: string[] = []
   const warnungen: string[] = []
-  const katalog: Katalog = { fiktiv: false, parteien: [], themen: [], ursachen: [], massnahmen: [], abdeckung: [] }
+  const katalog: Katalog = {
+    fiktiv: false, laender: [], landesprogramme: [], parteien: [], themen: [], ursachen: [], massnahmen: [], abdeckung: [],
+  }
 
   // Kleine Helfer, die jeweils eine Meldung mit Ort erzeugen.
   const f = (ort: string, text: string) => fehler.push(`${ort}: ${text}`)
@@ -144,15 +182,31 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
     f(pOrt, 'erwartet ein Objekt mit „fiktiv“ und „parteien“ (Liste)')
     return { katalog, fehler, warnungen }
   }
-  unbekannteFelder(pOrt, pd, ['fiktiv', 'hinweis', 'parteien'])
+  unbekannteFelder(pOrt, pd, ['fiktiv', 'hinweis', 'laender', 'parteien'])
   katalog.fiktiv = wahrheitswert(pOrt, pd, 'fiktiv')
+
+  // --- Länder: nur die, für die Landesprogramme erfasst werden ---------------
+  if (pd.laender !== undefined && !Array.isArray(pd.laender)) f(pOrt, '„laender“ muss eine Liste sein')
+  for (const [i, roh] of (Array.isArray(pd.laender) ? pd.laender : []).entries()) {
+    const ort = `${pOrt} › laender[${i}]`
+    if (!istObjekt(roh)) {
+      f(ort, 'erwartet ein Objekt')
+      continue
+    }
+    unbekannteFelder(ort, roh, ['id', 'name', 'letzte_wahl'])
+    const land: Land = { id: text(ort, roh, 'id', 2), name: text(ort, roh, 'name', 40), letzte_wahl: datum(ort, roh, 'letzte_wahl') }
+    if (land.id && !LAND_KUERZEL.test(land.id)) f(ort, '„id“ muss ein Kürzel aus zwei Großbuchstaben sein (z. B. „ST“)')
+    if (katalog.laender.some((l) => l.id === land.id)) f(ort, `Land „${land.id}“ ist doppelt`)
+    katalog.laender.push(land)
+  }
+  const landNach = new Map(katalog.laender.map((l) => [l.id, l]))
 
   const parteiIds = new Set<number>()
   const parteiNamen = new Set<string>()
   pd.parteien.forEach((roh, i) => {
     const ort = `${pOrt} › parteien[${i}]`
     if (!istObjekt(roh)) return f(ort, 'erwartet ein Objekt')
-    unbekannteFelder(ort, roh, ['id', 'name', 'kurzname', 'farbe', 'programm_url', 'programm_stand'])
+    unbekannteFelder(ort, roh, ['id', 'name', 'kurzname', 'farbe', 'programm_url', 'programm_stand', 'landesprogramme'])
     const p: Partei = {
       id: ganzzahl(ort, roh, 'id', 1, 32767),
       name: text(ort, roh, 'name', 80),
@@ -171,6 +225,41 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
     }
     parteiIds.add(p.id)
     katalog.parteien.push(p)
+
+    // Landesprogramme: je Land höchstens eins – das zur letzten Wahl, sonst ist es veraltet.
+    if (roh.landesprogramme !== undefined && !Array.isArray(roh.landesprogramme)) f(ort, '„landesprogramme“ muss eine Liste sein')
+    for (const [j, lRoh] of (Array.isArray(roh.landesprogramme) ? roh.landesprogramme : []).entries()) {
+      const lOrt = `${ort} › landesprogramme[${j}]`
+      if (!istObjekt(lRoh)) {
+        f(lOrt, 'erwartet ein Objekt')
+        continue
+      }
+      unbekannteFelder(lOrt, lRoh, ['land', 'landtagswahl', 'url', 'stand', 'kein_programm'])
+      const landId = text(lOrt, lRoh, 'land', 2)
+      const land = landNach.get(landId)
+      if (landId && !land) f(lOrt, `unbekanntes Land „${landId}“ (erst unter „laender“ eintragen)`)
+      const landtagswahl = datum(lOrt, lRoh, 'landtagswahl')
+      const hatUrl = lRoh.url !== undefined
+      const hatKein = lRoh.kein_programm !== undefined
+      if (hatUrl === hatKein) f(lOrt, 'genau eines von „url“ (mit „stand“) oder „kein_programm“ (Begründung) angeben')
+      const lp: LandesprogrammEintrag = {
+        partei_id: p.id,
+        land: landId,
+        url: hatUrl ? (url(lOrt, lRoh, 'url') ?? null) : null,
+        stand: hatUrl ? datum(lOrt, lRoh, 'stand') : null,
+        kein_programm: hatKein ? text(lOrt, lRoh, 'kein_programm', 300) : null,
+        landtagswahl,
+        aktuell: !!land && landtagswahl === land.letzte_wahl,
+      }
+      if (!hatUrl && lRoh.stand !== undefined) f(lOrt, '„stand“ nur zusammen mit „url“')
+      if (lp.url?.includes('#')) f(lOrt, '„url“ ist die Adresse des ganzen Programms – ohne #-Anker')
+      if (land && landtagswahl > land.letzte_wahl) f(lOrt, `„landtagswahl“ liegt nach der letzten Wahl in ${land.name} (${land.letzte_wahl})`)
+      if (land && landtagswahl && landtagswahl < land.letzte_wahl) {
+        warnungen.push(`${lOrt}: Programm zur Wahl ${landtagswahl} ist veraltet (letzte Wahl in ${land.name}: ${land.letzte_wahl}) – zählt nicht mehr; Programm zur neuen Wahl eintragen`)
+      }
+      if (katalog.landesprogramme.some((x) => x.partei_id === p.id && x.land === landId)) f(lOrt, `Land „${landId}“ ist für diese Partei doppelt`)
+      katalog.landesprogramme.push(lp)
+    }
   })
   if (katalog.parteien.length < 2) f(pOrt, 'mindestens zwei Parteien nötig')
   const parteiNach = new Map(katalog.parteien.map((p) => [p.id, p]))
@@ -214,7 +303,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         f(uOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'schlagwoerter', 'nachtraeglich'])
+      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'schlagwoerter', 'nachtraeglich'])
       // Nach dem Blick in die Programme ergänzt? Dann offen vermerkt, mit Datum und Grund.
       if (roh.nachtraeglich !== undefined) text(uOrt, roh, 'nachtraeglich', 300)
       const u: Ursache = {
@@ -222,6 +311,11 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         thema_id: thema.id,
         beschreibung: text(uOrt, roh, 'beschreibung', 200),
         quelle_url: url(uOrt, roh, 'quelle_url') ?? '',
+      }
+      // Zuständigkeit: Bei echten Daten Pflicht, damit Landesprogramme richtig zählen.
+      if (roh.ebene !== undefined || !katalog.fiktiv) {
+        if (!(EBENEN as readonly unknown[]).includes(roh.ebene)) f(uOrt, '„ebene“ muss „bund“ oder „land“ sein')
+        else u.ebene = roh.ebene as Ursache['ebene']
       }
       const uw = schlagwoerter(uOrt, roh)
       if (uw) u.schlagwoerter = uw
@@ -234,7 +328,8 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
     // Abdeckung: Jede Partei höchstens einmal – mit Maßnahmen oder „keine_massnahme“.
     // Fehlt eine Partei, gilt das Thema für sie als „noch nicht erfasst“. So kann ein
     // Thema zuerst nur mit Ursachen angelegt werden (Ablauf in daten/README.md).
-    const gesehen = new Set<number>()
+    const gesehen = new Set<string>()
+    const bundErfasst = new Set<number>()
     const adressiert = new Set<number>()
     if (t.abdeckung !== undefined && !Array.isArray(t.abdeckung)) f(ort, '„abdeckung“ muss eine Liste sein (ein Eintrag pro Partei)')
     for (const [i, roh] of (Array.isArray(t.abdeckung) ? t.abdeckung : []).entries()) {
@@ -243,12 +338,25 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         f(aOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(aOrt, roh, ['partei_id', 'massnahmen', 'keine_massnahme'])
+      unbekannteFelder(aOrt, roh, ['partei_id', 'land', 'massnahmen', 'keine_massnahme'])
       const parteiId = ganzzahl(aOrt, roh, 'partei_id', 1, 32767)
       const partei = parteiNach.get(parteiId)
       if (!partei) f(aOrt, `unbekannte Partei-ID ${parteiId}`)
-      if (gesehen.has(parteiId)) f(aOrt, `Partei ${parteiId} ist mehrfach eingetragen`)
-      gesehen.add(parteiId)
+
+      // Ohne „land“: Bundesprogramm. Mit „land“: Landesprogramm der Partei in diesem Land.
+      const land = roh.land === undefined ? null : text(aOrt, roh, 'land', 2)
+      let programm = partei ? { url: partei.programm_url, stand: partei.programm_stand } : null
+      if (land !== null) {
+        const lp = katalog.landesprogramme.find((x) => x.partei_id === parteiId && x.land === land)
+        if (!lp) f(aOrt, `kein Landesprogramm „${land}“ für Partei ${parteiId} eingetragen (parteien.json → „landesprogramme“)`)
+        else if (!lp.url) f(aOrt, `Partei ${parteiId} hat in „${land}“ kein Programm (${lp.kein_programm}) – Eintrag entfernen`)
+        else if (!lp.aktuell) warnungen.push(`${aOrt}: Landesprogramm „${land}“ ist veraltet – zählt nicht mehr`)
+        programm = lp?.url && lp.stand ? { url: lp.url, stand: lp.stand } : null
+      }
+      const schluessel = `${parteiId}/${land ?? ''}`
+      if (gesehen.has(schluessel)) f(aOrt, `Partei ${parteiId}${land ? ` (${land})` : ''} ist mehrfach eingetragen`)
+      gesehen.add(schluessel)
+      if (land === null) bundErfasst.add(parteiId)
 
       const hatListe = roh.massnahmen !== undefined
       const hatKeine = roh.keine_massnahme !== undefined
@@ -268,11 +376,11 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         const begruendung = text(kOrt, k, 'begruendung')
         const stand = datum(kOrt, k, 'stand')
         const geprueft = wahrheitswert(kOrt, k, 'geprueft')
-        if (partei && stand && partei.programm_stand && stand < partei.programm_stand) {
-          f(kOrt, `„stand“ ${stand} liegt vor dem Programmstand ${partei.programm_stand} – bitte im aktuellen Programm neu prüfen`)
+        if (programm && stand && programm.stand && stand < programm.stand) {
+          f(kOrt, `„stand“ ${stand} liegt vor dem Programmstand ${programm.stand} – bitte im aktuellen Programm neu prüfen`)
         }
         if (!katalog.fiktiv && !geprueft) warnungen.push(`${kOrt}: noch nicht geprüft – Thema gilt für die Partei als „noch nicht erfasst“`)
-        katalog.abdeckung.push({ thema_id: thema.id, partei_id: parteiId, art: 'keine', begruendung, stand, geprueft })
+        katalog.abdeckung.push({ thema_id: thema.id, partei_id: parteiId, land, art: 'keine', begruendung, stand, geprueft })
         continue
       }
 
@@ -290,12 +398,13 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         }
         unbekannteFelder(mOrt, mRoh, [
           'id', 'beschreibung', 'ursachen_ids', 'wirksamkeit', 'umsetzbarkeit', 'rollen_modifikator',
-          'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'stand', 'geprueft', 'bewertung',
+          'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'bewertung',
         ])
         const m: Massnahme = {
           id: ganzzahl(mOrt, mRoh, 'id', 1, 2147483647),
           thema_id: thema.id,
           partei_id: parteiId,
+          land,
           beschreibung: text(mOrt, mRoh, 'beschreibung', 200),
           ursachen_ids: [],
           wirksamkeit: ganzzahl(mOrt, mRoh, 'wirksamkeit', 0, 3) as Massnahme['wirksamkeit'],
@@ -307,6 +416,16 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         }
         const studie = url(mOrt, mRoh, 'beleg_studie_url', false)
         if (studie) m.beleg_studie_url = studie
+
+        // Stand der Forschung: Höchste Wirksamkeit nur mit belegter Wirkung (docs/methode.md).
+        if (mRoh.evidenz !== undefined) {
+          if (!(EVIDENZ as readonly unknown[]).includes(mRoh.evidenz)) f(mOrt, `„evidenz“ muss ${EVIDENZ.map((e) => `„${e}“`).join(', ')} sein`)
+          else m.evidenz = mRoh.evidenz as Massnahme['evidenz']
+        }
+        if (!katalog.fiktiv) {
+          if (m.wirksamkeit === 3 && m.evidenz !== 'belegt') f(mOrt, '„wirksamkeit“ 3 nur mit „evidenz“: „belegt“ – sonst höchstens 2')
+          if (m.geprueft && !m.evidenz) f(mOrt, '„evidenz“ fehlt – vor „geprueft“ angeben, wie gut die Wirkung belegt ist')
+        }
         // Wörtliches Zitat aus dem Programm: macht die Prüfung nachvollziehbar
         // (Suche im PDF). Bei echten Daten Pflicht.
         if (mRoh.zitat !== undefined || !katalog.fiktiv) {
@@ -325,20 +444,24 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
           for (const id of ids as number[]) {
             if (!eigeneUrsachen.has(id)) f(mOrt, `Ursache ${id} gehört nicht zum Thema „${thema.name}“`)
             else adressiert.add(id)
+            // Landesprogramme zählen nur für Ursachen in Länderzuständigkeit.
+            const ebene = katalog.ursachen.find((u) => u.id === id)?.ebene ?? 'bund'
+            if (land !== null && eigeneUrsachen.has(id) && ebene !== 'land')
+              f(mOrt, `Ursache ${id} liegt beim Bund – Maßnahmen aus Landesprogrammen nur für Ursachen mit „ebene“: „land“`)
           }
           if (new Set(ids).size !== ids.length) f(mOrt, '„ursachen_ids“ enthält Doppelte')
           m.ursachen_ids = ids as number[]
         }
 
-        // Beleg muss ins Programm der Partei zeigen, mit Seitenanker.
-        if (m.beleg_programm_url && partei) {
-          if (ohneAnker(m.beleg_programm_url) !== partei.programm_url) {
-            f(mOrt, `„beleg_programm_url“ zeigt nicht auf das Programm der Partei (${partei.programm_url})`)
+        // Beleg muss ins Programm der Partei zeigen (Bundes- bzw. Landesprogramm), mit Seitenanker.
+        if (m.beleg_programm_url && programm) {
+          if (ohneAnker(m.beleg_programm_url) !== programm.url) {
+            f(mOrt, `„beleg_programm_url“ zeigt nicht auf das Programm der Partei (${programm.url})`)
           }
           if (!SEITENANKER.test(m.beleg_programm_url)) f(mOrt, '„beleg_programm_url“ braucht einen Seitenanker wie #page=12')
         }
-        if (partei && m.stand && partei.programm_stand && m.stand < partei.programm_stand) {
-          f(mOrt, `„stand“ ${m.stand} liegt vor dem Programmstand ${partei.programm_stand} – bitte im aktuellen Programm neu prüfen`)
+        if (programm && m.stand && programm.stand && m.stand < programm.stand) {
+          f(mOrt, `„stand“ ${m.stand} liegt vor dem Programmstand ${programm.stand} – bitte im aktuellen Programm neu prüfen`)
         }
 
         // Rollen-Modifikatoren: nur bekannte Rollen, kleiner Wert, immer begründet.
@@ -397,11 +520,12 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         katalog.massnahmen.push(m)
       }
       katalog.abdeckung.push({
-        thema_id: thema.id, partei_id: parteiId, art: 'massnahmen', begruendung: null, stand: neuesterStand, geprueft: alleGeprueft,
+        thema_id: thema.id, partei_id: parteiId, land, art: 'massnahmen', begruendung: null, stand: neuesterStand, geprueft: alleGeprueft,
       })
     }
 
-    const fehlend = katalog.parteien.filter((p) => !gesehen.has(p.id))
+    // Landesprogramme sind eine Ergänzung: Maßgeblich für „noch nicht erfasst“ ist das Bundesprogramm.
+    const fehlend = katalog.parteien.filter((p) => !bundErfasst.has(p.id))
     if (fehlend.length) {
       warnungen.push(
         `${ort}: noch nicht erfasst für ${fehlend.map((p) => `„${p.kurzname}“ (${p.id})`).join(', ')} – ` +

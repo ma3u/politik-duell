@@ -25,6 +25,7 @@ const massnahme = (id: number, w: number, u: number) => ({
   zitat: 'Wörtlich.',
   beleg_programm_url: 'https://eins.de/p.pdf#page=2',
   stand: '2026-03-01',
+  evidenz: 'belegt',
   geprueft: false,
 })
 const THEMA = {
@@ -32,7 +33,7 @@ const THEMA = {
   name: 'Arzttermine',
   beschreibung: 'x',
   ziel: 'y',
-  ursachen: [{ id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/a' }],
+  ursachen: [{ id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/a', ebene: 'bund' }],
   abdeckung: [{ partei_id: 1, massnahmen: [massnahme(101, 2, 3), massnahme(102, 1, 1)] }],
 }
 const katalog = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/01.json', inhalt: THEMA }]).katalog

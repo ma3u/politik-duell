@@ -9,18 +9,21 @@
       "id": 301,
       "beschreibung": "Hohe Netzentgelte für den Betrieb und Ausbau der Stromnetze",
       "quelle_url": "https://www.bundesnetzagentur.de/DE/Vportal/Energie/PreiseAbschlaege/Tarife-table.html",
+      "ebene": "bund",
       "schlagwoerter": ["netz", "grundgebuehr", "grundpreis", "netzentgelt"]
     },
     {
       "id": 302,
       "beschreibung": "Steuern, Abgaben und Umlagen machen einen großen Teil des Strompreises aus",
       "quelle_url": "https://www.bundesnetzagentur.de/DE/Vportal/Energie/PreiseAbschlaege/Tarife-table.html",
+      "ebene": "bund",
       "schlagwoerter": ["steuer", "abgabe", "umlage", "co2"]
     },
     {
       "id": 303,
       "beschreibung": "Rund 70 % der Energie wird importiert, vor allem Öl, Gas und Steinkohle",
       "quelle_url": "https://www.umweltbundesamt.de/daten/umweltzustand-trends/energie/primaerenergiegewinnung-importe",
+      "ebene": "bund",
       "schlagwoerter": ["gas", "oel", "import", "abhaengig", "heizoel"]
     }
   ]

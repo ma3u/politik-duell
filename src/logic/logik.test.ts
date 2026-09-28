@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { ABDECKUNG, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from '../data/mock'
-import type { Nachricht } from '../data/types'
+import type { AbdeckungEintrag, Landesprogramm, Massnahme, Nachricht } from '../data/types'
 import { analysiere } from './analyse'
-import { besteParteien, bewertePartei, massnahmenPunkte, rundenpunkte, werteRunde } from './bewertung'
+import { besteParteien, bewertePartei, massnahmenPunkte, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
+import { ohneTreffer } from './ohneTreffer'
 
 const spieler = (...texte: string[]): Nachricht[] => texte.map((text) => ({ von: 'spieler', text }))
 const partei = (id: number) => PARTEIEN.find((p) => p.id === id)!
@@ -121,6 +122,83 @@ describe('Bewertung', () => {
   it('findet die insgesamt beste Partei', () => {
     const beste = besteParteien(PARTEIEN, 1, [101], null, MASSNAHMEN, ABDECKUNG)
     expect(beste.map((b) => b.partei.id)).toEqual([1])
+  })
+})
+
+describe('Bewertung mit Bund und Ländern', () => {
+  // Thema 99: Ursache 991 beim Bund, 992 bei den Ländern. Alpha hat ein Programm in ST, Beta ist dort nicht angetreten.
+  const alpha = partei(1)
+  const beta = partei(2)
+  const m = (id: number, parteiId: number, ursache: number, land: string | null, w: 0 | 1 | 2 | 3, u: 0 | 1 | 2 | 3): Massnahme => ({
+    id, thema_id: 99, partei_id: parteiId, land, beschreibung: `M${id}`, ursachen_ids: [ursache], wirksamkeit: w, umsetzbarkeit: u,
+    begruendung: 'x', beleg_programm_url: 'https://example.org/p.pdf#page=1', stand: '2026-05-01', geprueft: true,
+  })
+  const massnahmen = [m(1, 1, 991, null, 2, 2), m(2, 1, 992, null, 1, 1), m(3, 1, 992, 'ST', 3, 3), m(4, 2, 992, null, 2, 3)]
+  const eintrag = (parteiId: number, land: string | null, art: 'massnahmen' | 'keine' = 'massnahmen'): AbdeckungEintrag => ({
+    thema_id: 99, partei_id: parteiId, land, art, begruendung: art === 'keine' ? 'durchsucht' : null, stand: '2026-05-01',
+  })
+  const abdeckung = [eintrag(1, null), eintrag(1, 'ST'), eintrag(2, null)]
+  const landesprogramme: Landesprogramm[] = [
+    { partei_id: 1, land: 'ST', url: 'https://example.org/st.pdf', stand: '2026-04-01', kein_programm: null },
+    { partei_id: 2, land: 'ST', url: null, stand: null, kein_programm: 'nicht angetreten' },
+  ]
+  const ursachen = [{ id: 991, ebene: 'bund' as const }, { id: 992, ebene: 'land' as const }]
+  const ebenen = (land: string | null): Ebenen => ({ land, ursachen, landesprogramme })
+
+  it('wertet ohne Bundesland nur Bundesprogramme', () => {
+    const e = bewertePartei(alpha, 99, [991, 992], null, massnahmen, abdeckung, ebenen(null))
+    expect(e.punkte).toBe(4 + 1)
+    expect(e.programme.map((p) => p.land)).toEqual([null])
+    expect(bewertePartei(alpha, 99, [991, 992], null, massnahmen, abdeckung).punkte).toBe(5)
+  })
+
+  it('nimmt mit Bundesland für Landesursachen nur das Landesprogramm', () => {
+    const e = bewertePartei(alpha, 99, [991, 992], null, massnahmen, abdeckung, ebenen('ST'))
+    // 991 aus dem Bundesprogramm (2×2), 992 nur aus dem Landesprogramm (3×3) – die Bundesmaßnahme zu 992 zählt nicht.
+    expect(e.punkte).toBe(4 + 9)
+    expect(e.treffer.map((t) => t.massnahme.id)).toEqual([1, 3])
+    expect(e.programme.map((p) => [p.land, p.url])).toEqual([[null, alpha.programm_url], ['ST', 'https://example.org/st.pdf']])
+  })
+
+  it('wertet nicht ohne aktuelles Landesprogramm oder ohne Auswertung', () => {
+    const b = bewertePartei(beta, 99, [992], null, massnahmen, abdeckung, ebenen('ST'))
+    expect(b).toMatchObject({ abdeckung: null, punkte: 0, fehlt: { grund: 'kein_landesprogramm', land: 'ST', begruendung: 'nicht angetreten' } })
+    const a = bewertePartei(alpha, 99, [992], null, massnahmen, abdeckung, ebenen('ST'))
+    expect(werteRunde(a, b).status).toBe('unvollstaendig')
+    // Programm vorhanden, aber zum Thema noch nicht ausgewertet.
+    const ohneLandEintrag = abdeckung.filter((x) => x.land !== 'ST')
+    expect(bewertePartei(alpha, 99, [992], null, massnahmen, ohneLandEintrag, ebenen('ST')).fehlt).toEqual({ grund: 'nicht_erfasst', land: 'ST' })
+    // Land ohne erfasste Programme.
+    expect(bewertePartei(alpha, 99, [992], null, massnahmen, abdeckung, ebenen('BE')).fehlt).toEqual({ grund: 'nicht_erfasst', land: 'BE' })
+    // Bundesursache allein braucht kein Landesprogramm.
+    expect(bewertePartei(beta, 99, [991], null, massnahmen, abdeckung, ebenen('ST')).abdeckung).not.toBeNull()
+  })
+
+  it('meldet „nichts zum Thema“ nur, wenn alle genutzten Programme nichts enthalten', () => {
+    const keine = [eintrag(1, null, 'keine'), eintrag(1, 'ST')]
+    const e = bewertePartei(alpha, 99, [991, 992], null, [], keine, ebenen('ST'))
+    expect(e.abdeckung?.art).toBe('massnahmen')
+    const beideKeine = [eintrag(1, null, 'keine'), eintrag(1, 'ST', 'keine')]
+    const leer = bewertePartei(alpha, 99, [991, 992], null, [], beideKeine, ebenen('ST'))
+    expect(leer.abdeckung?.art).toBe('keine')
+    expect(ohneTreffer(leer, () => 'Sachsen-Anhalt')?.lang).toMatch(/Wahlprogramm .* und das Landeswahlprogramm Sachsen-Anhalt .* enthalten keine Maßnahme zu diesem Thema/)
+    const kein = bewertePartei(beta, 99, [992], null, massnahmen, abdeckung, ebenen('ST'))
+    expect(ohneTreffer(kein, () => 'Sachsen-Anhalt')?.lang).toMatch(/Für Sachsen-Anhalt gibt es kein Wahlprogramm der laufenden Wahlperiode \(nicht angetreten\)/)
+  })
+
+  it('vergleicht bei der besten Lösung nur Parteien mit Wertung', () => {
+    expect(besteParteien([alpha, beta], 99, [992], null, massnahmen, abdeckung, ebenen('ST')).map((b) => b.partei.id)).toEqual([1])
+    expect(besteParteien([alpha, beta], 99, [992], null, massnahmen, abdeckung, ebenen(null)).map((b) => b.partei.id)).toEqual([2])
+  })
+})
+
+describe('waehlbareLaender', () => {
+  it('bietet nur Länder an, für die Landeseinträge im Spiel sind', async () => {
+    const { waehlbareLaender, MOCK_DATEN } = await import('../data/quelle')
+    const laender = [{ id: 'ST', name: 'Sachsen-Anhalt', letzte_wahl: '2026-09-06' }, { id: 'BE', name: 'Berlin', letzte_wahl: '2026-09-20' }]
+    expect(waehlbareLaender({ ...MOCK_DATEN, laender })).toEqual([])
+    const abdeckung = [...MOCK_DATEN.abdeckung, { ...MOCK_DATEN.abdeckung[0], land: 'ST' }]
+    expect(waehlbareLaender({ ...MOCK_DATEN, laender, abdeckung }).map((l) => l.id)).toEqual(['ST'])
   })
 })
 

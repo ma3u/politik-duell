@@ -6,7 +6,12 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 
 // _shared/bewertung.ts
-var findeAbdeckung = (abdeckung, parteiId, themaId) => abdeckung.find((a) => a.partei_id === parteiId && a.thema_id === themaId) ?? null;
+var findeAbdeckung = (abdeckung, parteiId, themaId, land = null) => abdeckung.find((a) => a.partei_id === parteiId && a.thema_id === themaId && (a.land ?? null) === land) ?? null;
+function programmFuer(ursacheId, ebenen) {
+  if (!ebenen?.land) return null;
+  const ebene = ebenen.ursachen.find((u) => u.id === ursacheId)?.ebene ?? "bund";
+  return ebene === "land" ? ebenen.land : null;
+}
 function massnahmenPunkte(m, rolle) {
   const mod = rolle ? m.rollen_modifikator?.[rolle] : void 0;
   const rollenBonus = mod?.wert ?? 0;
@@ -18,21 +23,59 @@ function massnahmenPunkte(m, rolle) {
     rollenBegruendung: mod?.begruendung
   };
 }
-function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckung) {
-  const erfasst = findeAbdeckung(abdeckung, partei.id, themaId);
-  if (!erfasst) return {
+function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckung, ebenen) {
+  const benoetigt = ursachenIds.length ? [
+    ...new Set(ursachenIds.map((id) => programmFuer(id, ebenen)))
+  ] : [
+    null
+  ];
+  const programme = [];
+  const ohneWertung = (fehlt) => ({
     partei,
     punkte: 0,
     treffer: [],
-    abdeckung: null
-  };
+    abdeckung: null,
+    fehlt,
+    programme: []
+  });
+  for (const land of benoetigt) {
+    let url = partei.programm_url;
+    let stand = partei.programm_stand;
+    if (land !== null) {
+      const lp = ebenen?.landesprogramme.find((p) => p.partei_id === partei.id && p.land === land);
+      if (!lp) return ohneWertung({
+        grund: "nicht_erfasst",
+        land
+      });
+      if (!lp.url || !lp.stand) return ohneWertung({
+        grund: "kein_landesprogramm",
+        land,
+        begruendung: lp.kein_programm ?? void 0
+      });
+      url = lp.url;
+      stand = lp.stand;
+    }
+    const a = findeAbdeckung(abdeckung, partei.id, themaId, land);
+    if (!a) return ohneWertung({
+      grund: "nicht_erfasst",
+      land
+    });
+    programme.push({
+      land,
+      url,
+      stand,
+      abdeckung: a
+    });
+  }
+  const erfasst = programme.every((p) => p.abdeckung.art === "keine") ? programme[0].abdeckung : programme.find((p) => p.abdeckung.art === "massnahmen").abdeckung;
   const eigene = massnahmen.filter((m) => m.partei_id === partei.id && m.thema_id === themaId);
   const trefferJeMassnahme = /* @__PURE__ */ new Map();
   let punkte = 0;
   for (const ursacheId of ursachenIds) {
+    const land = programmFuer(ursacheId, ebenen);
     let beste = null;
     for (const m of eigene) {
-      if (!m.ursachen_ids.includes(ursacheId)) continue;
+      if (!m.ursachen_ids.includes(ursacheId) || (m.land ?? null) !== land) continue;
       const p = massnahmenPunkte(m, rolle);
       if (!beste || p.punkte > beste.p.punkte) beste = {
         m,
@@ -63,7 +106,8 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
     treffer: [
       ...trefferJeMassnahme.values()
     ],
-    abdeckung: erfasst
+    abdeckung: erfasst,
+    programme
   };
 }
 function rundenpunkte(a, b) {
@@ -295,10 +339,12 @@ function pruefeAnfrage(roh) {
   if (a.verlauf[a.verlauf.length - 1].von !== "spieler") throw new EingabeFehler("Letzte Nachricht muss vom Spieler sein.");
   if (a.rolle !== null && a.rolle !== void 0 && !ROLLEN_IDS.includes(a.rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
   if (!Array.isArray(a.parteien) || a.parteien.length !== 2 || !a.parteien.every((p) => Number.isInteger(p)) || a.parteien[0] === a.parteien[1]) throw new EingabeFehler("Ung\xFCltige Parteien.");
+  if (a.land !== null && a.land !== void 0 && (typeof a.land !== "string" || !/^[A-Z]{2}$/.test(a.land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
   return {
     sitzung: a.sitzung,
     verlauf: a.verlauf,
     rolle: a.rolle ?? null,
+    land: a.land ?? null,
     parteien: a.parteien
   };
 }
@@ -496,7 +542,7 @@ Deno.serve(async (req) => {
     }, 503);
     const [themenRes, ursachenRes, parteienRes] = await Promise.all([
       db.from("themen").select("id, name, beschreibung"),
-      db.from("ursachen").select("id, thema_id, beschreibung, quelle_url"),
+      db.from("ursachen").select("*"),
       db.from("parteien").select("*")
     ]);
     if (themenRes.error) throw themenRes.error;
@@ -509,7 +555,7 @@ Deno.serve(async (req) => {
     const antwort = bereinigeAntwort(roh, anfrage.verlauf, themen, ursachen, parteien);
     if (antwort.typ !== "forderung") {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
-      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, original, parteien);
+      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, original, parteien, ursachen);
     }
     return json(antwort);
   } catch (e) {
@@ -522,7 +568,7 @@ Deno.serve(async (req) => {
     }, 502);
   }
 });
-async function speichereRunde(antwort, [parteiA, parteiB], rolle, original, parteien) {
+async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, original, parteien, ursachen) {
   const stichwort = antwort.stichwort ?? null;
   const basis = {
     problem_text: antwort.zusammenfassung,
@@ -552,7 +598,7 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, original, part
     ]);
     return;
   }
-  const [mRes, aRes] = await Promise.all([
+  const [mRes, aRes, lpRes] = await Promise.all([
     db.from("massnahmen").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
       parteiA,
       parteiB
@@ -560,9 +606,16 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, original, part
     db.from("abdeckung").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
       parteiA,
       parteiB
-    ])
+    ]),
+    land ? db.from("landesprogramme").select("*").eq("land", land).in("partei_id", [
+      parteiA,
+      parteiB
+    ]) : Promise.resolve({
+      data: [],
+      error: null
+    })
   ]);
-  const fehler = mRes.error ?? aRes.error;
+  const fehler = mRes.error ?? aRes.error ?? lpRes.error;
   if (fehler) {
     console.error("speichereRunde:", fehler.message);
     return;
@@ -572,8 +625,13 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, original, part
   const a = parteien.find((p) => p.id === parteiA);
   const b = parteien.find((p) => p.id === parteiB);
   if (!a || !b) return;
-  const ea = bewertePartei(a, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung);
-  const eb = bewertePartei(b, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung);
+  const ebenen = {
+    land,
+    ursachen,
+    landesprogramme: lpRes.data
+  };
+  const ea = bewertePartei(a, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen);
+  const eb = bewertePartei(b, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen);
   const { status } = werteRunde(ea, eb);
   const punkte = status === "gewertet" ? {
     punkte_a: ea.punkte,

@@ -191,6 +191,22 @@ Einmalig, **in dieser Reihenfolge**. Ablauf und Regeln: [`daten/README.md`](../d
 Nach Änderungen an den Maßnahmen eines Themas (neue IDs) `npm run dashboard` ausführen und `3-pruefung.ts`
 neu einspielen – die Funktion kennt die Maßnahmen-IDs je Thema aus dem Datenkatalog.
 
+### 8. Bund und Länder, Stand der Forschung
+
+Einmalig, **in dieser Reihenfolge**. Regeln: [`docs/methode.md`](../docs/methode.md) → „Bund und Länder“.
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261001000000_laender.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261001000000_laender.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Ergänzt `ursachen.ebene`, `massnahmen.land` und `massnahmen.evidenz`, `abdeckung.land`
+   und legt die Tabellen `laender` und `landesprogramme` an.
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1, sonst Fehler bei `laender`).
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**
+   (wertet mit dem gewählten Bundesland; gespeichert wird es nicht).
+4. Danach den Branch nach `main` übernehmen. Die App verträgt es auch, wenn Schritt 1 fehlt: Dann gibt es nur keine
+   Bundesland-Auswahl. Die Auswahl erscheint ohnehin erst, wenn für ein Land Landesprogramme ausgewertet und geprüft sind.
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

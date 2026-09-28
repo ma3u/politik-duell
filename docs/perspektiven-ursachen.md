@@ -4,11 +4,11 @@ Hier steht für jedes Thema, ob die in der Fach- und öffentlichen Debatte vertr
 
 Die Prüfung stützt sich auf Fachquellen, nicht auf Wahlprogramme. „Diagnose“ meint eine Erklärung, *warum* das Problem besteht – nicht eine Forderung. Die Spalte „eher vertreten von“ dient nur der Kontrolle, ob die Liste einseitig ist; sie fließt nicht in die Bewertung ein.
 
-**Zur Ebene:** Maßgeblich ist, wer vor allem zuständig ist. Eine Ursache auf Landesebene wird mit dem Landesprogramm bewertet, wenn Spielende ein Bundesland wählen, sonst mit dem Bundesprogramm (siehe „Bund und Länder“ im Methodenpapier). Das Datenformat dafür (`ebene`) kommt mit der nächsten Formatänderung; bis dahin steht die Zuordnung nur hier.
+**Zur Ebene:** Maßgeblich ist, wer vor allem zuständig ist. Eine Ursache auf Landesebene wird mit dem Landesprogramm bewertet, wenn Spielende ein Bundesland wählen, sonst mit dem Bundesprogramm (siehe „Bund und Länder“ im Methodenpapier). Die Zuordnung steht im Datenkatalog (`ebene` je Ursache); hier ist sie begründet.
 
 ## Schule (4)
 
-Stand: 28. 9. 2026 · KI-Entwurf, zur Entscheidung durch die Betreiberin
+Stand: 28. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 | ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
 | --- | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ Verworfen:
 
 ## Arbeitsplätze (5)
 
-Stand: 28. 9. 2026 · KI-Entwurf, zur Entscheidung durch die Betreiberin
+Stand: 28. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 | ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
 | --- | --- | --- | --- | --- |
@@ -44,30 +44,45 @@ Verworfen:
 
 ## Zuwanderung und Integration (6)
 
-Stand: 28. 9. 2026 · KI-Entwurf, zur Entscheidung durch die Betreiberin
+Stand: 28. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 | ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
 | --- | --- | --- | --- | --- |
 | 601 *geändert* | Zahl der Neuankommenden und Kapazitäten vor Ort passen nicht zusammen; Unterbringung, Ausländerbehörden | Land | Mediendienst Integration (Kommunenexpertise 2025) | Zugang begrenzen (eher konservativ/rechts) oder Kapazitäten ausbauen (eher links) |
 | 602 | Lange Asyl- und Gerichtsverfahren | Bund | Bundestag (hib) | schnellere Verfahren – breit geteilt |
 | 603 | Sprachkurse, Anerkennung, Arbeitsmarktzugang dauern | Bund | IAB | schnellere Integration in Arbeit – breit geteilt |
-| 604 | Ausreisepflichtige werden oft nicht zurückgeführt | Bund *(zu entscheiden)* | Mediendienst Integration | Rückführungen durchsetzen (eher konservativ/rechts) |
+| 604 | Ausreisepflichtige werden oft nicht zurückgeführt | Bund | Mediendienst Integration | Rückführungen durchsetzen (eher konservativ/rechts) |
 | **605** *neu* | EU-Zuständigkeitsregeln (Dublin) greifen kaum, 2025 nur rund jede siebte Überstellung vollzogen | Bund | Bundestag (hib), Antwort der Bundesregierung | Grenzkontrollen, Zurückweisungen (eher konservativ/rechts); europäische Verteilung, GEAS (eher Mitte/links) |
 | **606** *neu* | Viele Menschen leben jahrelang nur geduldet (rund 41 % seit mehr als fünf Jahren) | Bund | Mediendienst Integration | Bleiberecht, Arbeitserlaubnis (eher links); Ausreise durchsetzen (eher rechts) |
 
 Bei 601 ist neu, dass beide Seiten des Missverhältnisses genannt sind. Vorher stand dort nur „Unterbringung herausfordernd“. Das hätte nahegelegt, dass nur mehr Kapazität hilft. Die Schlagwörter „duldung“ und „geduldet“ sind von 604 zu 606 gewandert.
 
+Entschieden: **604 Bund** – Rechtsrahmen und Abkommen mit Herkunftsstaaten liegen beim Bund; die im Befund genannten Hindernisse (fehlende Papiere, Herkunftsstaaten) ebenso. Den Vollzug übernehmen die Ausländerbehörden der Länder.
+
 Offen:
-- **Ebene von 604:** Den Rechtsrahmen und die Abkommen mit Herkunftsstaaten verantwortet der Bund. Den Vollzug übernehmen die Ausländerbehörden der Länder. Vorschlag: Bund, weil die im Befund genannten Hindernisse (fehlende Papiere, Herkunftsstaaten) auf Bundesebene liegen.
 - **605 nach der GEAS-Reform:** Das neue Gemeinsame Europäische Asylsystem gilt seit Juni 2026. Die Ursache sollte mit den ersten Zahlen nach der Reform neu geprüft werden.
 
 Verworfen:
 - *Kriminalität von Zugewanderten.* Gehört zum Thema Sicherheit.
 - *Wohnungsmangel.* Gehört zum Thema Miete.
 
+## Ebenen der übrigen Themen
+
+Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unverändert). Die Ebenen sind ein Vorschlag vom 28. 9. 2026 (KI-Entwurf). Sie werden bei der Perspektivenprüfung des jeweiligen Themas bestätigt.
+
+| Thema | Land | Bund | Begründung |
+| --- | --- | --- | --- |
+| Arzttermine (1) | – | 101, 102, 103 | Bedarfsplanung, Vergütung und Steuerung regelt das SGB V (Bund, Selbstverwaltung) |
+| Miete (2) | – | 201–204 | Mietrecht, steuerliche Förderung und Baustandards (GEG, Gebäudetyp E) liegen beim Bund; soziale Wohnraumförderung ist zwar Ländersache, die meisten Hebel für Neubau (201) aber beim Bund. Folge: Landesprogramme zählen bei Miete nicht – auch nicht in Berlin. Bei der Perspektivenprüfung Miete erneut ansehen. |
+| Energiepreise (3) | – | 301, 302, 303 | Netzentgelte (Regulierung), Steuern und Umlagen, Energieimporte |
+| Rente (7) | – | 701, 702, 703 | Gesetzliche Rente und Betriebsrenten |
+| Bus und Bahn (8) | 801, 803 | 802 | Nahverkehrsangebot und Personal: Länder und Kommunen (Aufgabenträger); Schienennetz: Bund (DB InfraGO) |
+| Sicherheit (9) | 901, 902, 903 | – | Polizei, Justiz und Prävention sind Ländersache; Strafrecht ist Bundesrecht – Maßnahmen dazu stehen in Bundesprogrammen und zählen ohne gewähltes Bundesland |
+| Pflege (10) | – | 1001–1004 | Pflegeversicherung, Pflegeberufe und Leistungen für Angehörige; die Investitionskosten der Heime tragen die Länder, der Hauptteil der Eigenanteile hängt aber an Bundesrecht |
+
 ## Hinweise zur Quellenprüfung
 
-Die neuen Quellen hat die KI über Suchergebnisse geprüft, der Netzwerkzugang zu den Originalseiten war gesperrt. Vor der Übernahme deshalb im Original nachsehen:
+Die neuen Quellen hat die KI über Suchergebnisse geprüft, der Netzwerkzugang zu den Originalseiten war gesperrt. Die Betreiberin hat sie am 28. 9. 2026 im Original bestätigt:
 
 - 404: Formulierung „sehr unterschiedlich erfasst und gefördert“ (Bildungsbericht 2024, Kap. C). Laut Zusammenfassung liegt der Anteil mit Förderbedarf je nach Land zwischen 15 und 40 %, und sieben Länder testen alle Kinder.
 - 405: „seit 2018 weiter zurück“ (IQB-Bildungstrend 2024)

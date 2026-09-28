@@ -52,10 +52,14 @@ parteien (id, name, kurzname, farbe, programm_url, programm_stand date)
 
 themen (id, name, beschreibung)
 
-ursachen (id, thema_id, beschreibung, quelle_url)
+ursachen (id, thema_id, beschreibung, quelle_url, ebene)   -- ebene: bund | land
+
+laender (id, name, letzte_wahl)                    -- nur Länder mit erfassten Landesprogrammen
+landesprogramme (partei_id, land, url, stand, kein_programm)   -- nur laufende Wahlperiode
 
 massnahmen (
   id, thema_id, partei_id,
+  land text null,                     -- null = Bundesprogramm
   beschreibung,
   ursachen_ids int[],
   wirksamkeit smallint check (0..3),
@@ -64,6 +68,7 @@ massnahmen (
   begruendung text,
   beleg_programm_url text not null,   -- mit #page=N wo möglich
   beleg_studie_url text,
+  evidenz text,                       -- belegt | gemischt | offen
   stand date,
   geprueft boolean default false
 )
@@ -116,7 +121,7 @@ Vor Anzeige in der Wortwolke: automatischer Filter (Beleidigungen, Namen von Pri
 
 ## Offene Punkte
 
-- ~~Welche Parteien sind dabei?~~ Entschieden: CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW. Grundlage sind die Wahlprogramme zur Bundestagswahl 2025, wo vorhanden ergänzt um neuere Grundsatzprogramme. Für Ursachen in Länderzuständigkeit zählen Landtagswahlprogramme der laufenden Wahlperiode, wenn Spielende ein Bundesland wählen (beschlossen, Umsetzung offen; siehe `docs/methode.md` → „Bund und Länder“).
+- ~~Welche Parteien sind dabei?~~ Entschieden: CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW. Grundlage sind die Wahlprogramme zur Bundestagswahl 2025, wo vorhanden ergänzt um neuere Grundsatzprogramme. Für Ursachen in Länderzuständigkeit zählen Landtagswahlprogramme der laufenden Wahlperiode, wenn Spielende ein Bundesland wählen (Datenformat und Wertung umgesetzt, Landesprogramme werden erfasst – zuerst ST, MV, BE; siehe `docs/methode.md` → „Bund und Länder“).
 - Wer pflegt und prüft die Bewertungen? Format und Ablauf stehen (`daten/` als JSON, Pull Requests mit Quellenpflicht, automatische Prüfung; Bewertung durch eingeladene Prüfende in der App mit Median je Kriterium, Belegprüfung durch die Betreiberin, siehe `daten/README.md` → „Prüfung“ und `docs/plan-pruefung.md`) – offen ist, welche Personen das übernehmen.
 - ~~Domain sichern~~ Erledigt (September 2026): politik-duell.de ist die Hauptadresse (bei INWX, in Vercel verbunden, HTTPS, in `ERLAUBTE_URSPRUENGE` und als Supabase *Site URL* eingetragen), politikduell.de leitet dorthin weiter. Kontakt: politik-duell@posteo.de.
 - Trägerschaft: Geplant ist ein gemeinnütziger Verein „Politik-Duell e. V.“ (politische Bildung, Methodenbeirat, Neutralität in der Satzung). Unterlagen und Fahrplan in `docs/verein/`. Lizenz festgelegt: Code AGPL-3.0-or-later (`LICENSE`), Daten CC BY 4.0 (`daten/LICENSE`). Offen: sieben Gründungsmitglieder finden; bis dahin betreibt die Gründerin das Projekt als Einzelperson.

@@ -24,7 +24,7 @@ Fünf Regeln gelten ohne Ausnahme:
 
 Grundlage sind die Wahlprogramme zur Bundestagswahl 2025 von sieben Parteien. Neuere Grundsatzprogramme gibt es bisher nicht (Stand September 2026); kommt eines hinzu, werden alle älteren Einträge der Partei neu geprüft.
 
-**Landesprogramme** (beschlossen im September 2026, Umsetzung folgt): Für Ursachen, für die vor allem die Länder zuständig sind – etwa Lehrkräfte oder Schulgebäude –, zählt das Wahlprogramm der Partei zur Landtagswahl, sofern es aus der **laufenden Wahlperiode** des Landtags stammt. Spielende können dafür optional ihr Bundesland wählen. Mehr dazu unter „Bund und Länder“.
+**Landesprogramme:** Für Ursachen, für die vor allem die Länder zuständig sind – etwa Lehrkräfte oder Schulgebäude –, zählt das Wahlprogramm der Partei zur Landtagswahl, sofern es aus der **laufenden Wahlperiode** des Landtags stammt. Spielende können dafür optional ihr Bundesland wählen. Mehr dazu unter „Bund und Länder“. Erfasst werden zuerst die Programme zu den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin; ein Land steht im Spiel zur Wahl, sobald dafür geprüfte Einträge vorliegen.
 
 | Partei | Wahlprogramm | Beschluss |
 | --- | --- | --- |
