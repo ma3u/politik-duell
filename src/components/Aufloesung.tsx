@@ -14,6 +14,8 @@ function seitenText(url: string, land: boolean) {
   return seite ? `${name}, S. ${seite}` : name
 }
 
+export const KI_HINWEIS = 'Vorläufige KI-Bewertung – noch nicht von Menschen geprüft'
+
 const EVIDENZ_TEXT = { gemischt: 'Wirkung in der Forschung umstritten', offen: 'Wirkung bisher kaum untersucht' }
 
 
@@ -89,6 +91,7 @@ function ParteiKarte({
         )}
         <Kreuzfeld />
       </header>
+      {ergebnis.ki_entwurf && <span className="badge-ungeprueft">vorläufige KI-Bewertung</span>}
       {leer ? (
         <div className="keine-massnahme">
           {leer.badge && <span className="badge-ungeprueft">{leer.badge}</span>}
@@ -209,6 +212,12 @@ export function Aufloesung({
                   ? `Punkt für ${spieler[1].name} (${spieler[1].partei.kurzname})!`
                   : 'Keine der beiden Parteien hat dazu eine Maßnahme im Programm – kein Punkt.'}
           </p>
+          {runde.ergebnisse.some((e) => e.ki_entwurf) && (
+            <p className="ki-hinweis enthuellen" style={{ animationDelay: '1000ms' }} role="note">
+              <strong>{KI_HINWEIS}.</strong> Maßnahmen und Punkte sind in der Testphase ein Entwurf, den eine KI nach
+              der offenen Methode erstellt hat. Zitat und Seite im Programm lassen sich über die Links prüfen.
+            </p>
+          )}
           <section className="beste enthuellen" style={{ animationDelay: '1200ms' }}>
             <h3 className="beste-titel">Beste Lösung aller Parteien</h3>
             {runde.beste.length === 0 ? (
@@ -221,6 +230,7 @@ export function Aufloesung({
               runde.beste.map((b) => (
                 <div key={b.partei.id} className="beste-zeile" style={parteiStil(b.partei.farbe)}>
                   <strong>{b.partei.name}</strong> mit {b.punkte} Punkten
+                  {b.ki_entwurf && ' (vorläufige KI-Bewertung)'}
                   {b.treffer.map((t) => (
                     <p key={t.massnahme.id} className="beste-massnahme">
                       {t.massnahme.beschreibung} <MassnahmeBelege massnahme={t.massnahme} />

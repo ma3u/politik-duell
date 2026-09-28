@@ -37,6 +37,8 @@ export interface ParteiErgebnis {
   fehlt?: { grund: 'nicht_erfasst' | 'kein_landesprogramm'; land: string | null; begruendung?: string }
   /** Programme, aus denen gewertet wurde (leer, wenn nicht gewertet wird). */
   programme: GenutztesProgramm[]
+  /** true, wenn die Wertung (auch) auf KI-Entwürfen beruht – nur in der geschlossenen Testphase. */
+  ki_entwurf?: boolean
 }
 
 /**
@@ -150,7 +152,10 @@ export function bewertePartei(
     }
   }
 
-  return { partei, punkte, treffer: [...trefferJeMassnahme.values()], abdeckung: erfasst, programme }
+  const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf)
+  return {
+    partei, punkte, treffer: [...trefferJeMassnahme.values()], abdeckung: erfasst, programme, ...(kiEntwurf ? { ki_entwurf: true } : {}),
+  }
 }
 
 /**

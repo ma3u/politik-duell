@@ -5,6 +5,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { beforeAll, describe, expect, it } from 'vitest'
 import { seedSql } from '../scripts/seed-sql'
 import { ABDECKUNG, KATALOG, MASSNAHMEN } from '../src/data/mock'
+import { tokenHash } from './functions/_shared/pruefung'
 
 const lies = (pfad: string) => readFileSync(new URL(pfad, import.meta.url), 'utf8')
 const db = new PGlite()
@@ -105,6 +106,39 @@ describe('Datenbank', () => {
     await db.exec(`delete from laender where id = 'ST'`)
     const r = await alsRolle('anon', () => db.query('select * from laender'))
     expect(r.rows).toEqual([])
+  })
+
+  it('Testphase: KI-Entwürfe nur mit gültigem, nicht gesperrtem Zugang', async () => {
+    const m = MASSNAHMEN[0]
+    const a = ABDECKUNG[0]
+    await db.exec(`update massnahmen set ki_entwurf = true where id = ${m.id}`)
+    await db.exec(`update abdeckung set ki_entwurf = true where thema_id = ${a.thema_id} and partei_id = ${a.partei_id}`)
+    try {
+      // Öffentlich unsichtbar.
+      const oeffentlich = await alsRolle('anon', () => db.query<{ id: number }>('select id from massnahmen'))
+      expect(oeffentlich.rows.map((r) => r.id)).not.toContain(m.id)
+      const abd = await alsRolle('anon', () => db.query('select * from abdeckung where ki_entwurf'))
+      expect(abd.rows).toEqual([])
+
+      const token = 'T'.repeat(43)
+      await db.query(`insert into testphase_zugaenge (token_hash, name) values ($1, 'Test')`, [await tokenHash(token)])
+      const daten = (t: string) =>
+        alsRolle('anon', () => db.query<{ d: { massnahmen: { id: number }[]; abdeckung: unknown[] } | null }>('select testphase_daten($1) as d', [t]))
+      const mit = (await daten(token)).rows[0].d
+      expect(mit?.massnahmen.map((x) => x.id)).toEqual([m.id])
+      expect(mit?.abdeckung).toHaveLength(1)
+      expect((await daten('F'.repeat(43))).rows[0].d).toBeNull()
+      expect((await daten('kurz')).rows[0].d).toBeNull()
+      await db.exec(`update testphase_zugaenge set gesperrt = true`)
+      expect((await daten(token)).rows[0].d).toBeNull()
+
+      // Zugänge sieht nur, wer Admin ist; die Prüffunktion ist nicht direkt aufrufbar.
+      expect((await alsRolle('anon', () => db.query('select * from testphase_zugaenge'))).rows).toEqual([])
+      expect((await alsNutzer(() => db.query('select * from testphase_zugaenge'))).rows).toEqual([])
+      await expect(alsRolle('anon', () => db.query('select testphase_zugang_gueltig($1)', [token]))).rejects.toThrow()
+    } finally {
+      await db.exec(`update massnahmen set ki_entwurf = false; update abdeckung set ki_entwurf = false; delete from testphase_zugaenge`)
+    }
   })
 
   it('anon sieht nur freigegebene Runden', async () => {

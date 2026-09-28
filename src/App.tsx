@@ -4,12 +4,22 @@ import { Ende } from './components/Ende'
 import { Fusszeile } from './components/Fusszeile'
 import { Kopfzeile } from './components/Kopfzeile'
 import { MockHinweis } from './components/MockHinweis'
+import { TestphaseHinweis } from './components/TestphaseHinweis'
 import { Punktestand } from './components/Punktestand'
 import { Runde } from './components/Runde'
 import { Setup } from './components/Setup'
 import { Start } from './components/Start'
 import { DatenKontext } from './data/kontext'
-import { ladeDaten, MOCK_DATEN, sindBeispieldaten, type Daten } from './data/quelle'
+import {
+  gespeicherterZugang,
+  ladeDaten,
+  mitTestphase,
+  MOCK_DATEN,
+  sindBeispieldaten,
+  speichereZugang,
+  ZugangUngueltig,
+  type Daten,
+} from './data/quelle'
 import { RUNDEN_GESAMT, type RundenErgebnis, type Spieler } from './spiel'
 
 type Phase = 'start' | 'setup' | 'runde' | 'aufloesung' | 'ende'
@@ -20,11 +30,24 @@ export default function App() {
   const [runden, setRunden] = useState<RundenErgebnis[]>([])
   const [daten, setDaten] = useState<Daten | null>(null)
   const [ladeFehler, setLadeFehler] = useState<string | null>(null)
+  const [zugangsHinweis, setZugangsHinweis] = useState<string | null>(null)
   // Nur für diese Sitzung im Speicher, damit der Weg zurück zur Startseite nicht erneut fragt.
   const [einverstanden, setEinverstanden] = useState(false)
 
   useEffect(() => {
     ladeDaten()
+      .then(async (d) => {
+        const zugang = gespeicherterZugang()
+        if (!zugang) return d
+        try {
+          return await mitTestphase(d, zugang)
+        } catch (e) {
+          // Gesperrter oder unbekannter Zugang: normal weiterspielen, nur mit geprüften Daten.
+          if (e instanceof ZugangUngueltig) speichereZugang(null)
+          setZugangsHinweis(e instanceof Error ? e.message : String(e))
+          return d
+        }
+      })
       .then(setDaten)
       .catch((e: unknown) => setLadeFehler(e instanceof Error ? e.message : String(e)))
   }, [])
@@ -43,6 +66,12 @@ export default function App() {
     <DatenKontext.Provider value={daten ?? MOCK_DATEN}>
       <div className="app">
         {sindBeispieldaten(daten ?? MOCK_DATEN) && <MockHinweis />}
+        {daten?.testphase && <TestphaseHinweis />}
+        {zugangsHinweis && (
+          <div className="mock-hinweis" role="alert">
+            {zugangsHinweis} Es werden nur geprüfte Daten gezeigt.
+          </div>
+        )}
         {phase !== 'start' && (
           <Kopfzeile
             spielLaeuft={phase === 'runde' || phase === 'aufloesung'}

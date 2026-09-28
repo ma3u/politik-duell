@@ -186,6 +186,12 @@ describe('Bewertung mit Bund und Ländern', () => {
     expect(ohneTreffer(kein, () => 'Sachsen-Anhalt')?.lang).toMatch(/Für Sachsen-Anhalt gibt es kein Wahlprogramm der laufenden Wahlperiode \(nicht angetreten\)/)
   })
 
+  it('kennzeichnet Wertungen aus KI-Entwürfen (Testphase)', () => {
+    const mitKi = abdeckung.map((x) => (x.land === 'ST' ? { ...x, ki_entwurf: true } : x))
+    expect(bewertePartei(alpha, 99, [991, 992], null, massnahmen, mitKi, ebenen('ST')).ki_entwurf).toBe(true)
+    expect(bewertePartei(alpha, 99, [991, 992], null, massnahmen, mitKi, ebenen(null)).ki_entwurf).toBeUndefined()
+  })
+
   it('vergleicht bei der besten Lösung nur Parteien mit Wertung', () => {
     expect(besteParteien([alpha, beta], 99, [992], null, massnahmen, abdeckung, ebenen('ST')).map((b) => b.partei.id)).toEqual([1])
     expect(besteParteien([alpha, beta], 99, [992], null, massnahmen, abdeckung, ebenen(null)).map((b) => b.partei.id)).toEqual([2])

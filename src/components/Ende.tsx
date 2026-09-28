@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { gesamtpunkte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import { useLandName } from '../data/kontext'
-import { Belege } from './Aufloesung'
+import { Belege, KI_HINWEIS } from './Aufloesung'
 import { Kreuz } from './Kreuz'
 import { Logo } from './Logo'
 import { parteiStil } from './stil'
@@ -20,11 +20,14 @@ export function Ende({
   const landName = useLandName()
   const [geteilt, setGeteilt] = useState<string | null>(null)
   const sieger = pa === pb ? null : pa > pb ? spieler[0] : spieler[1]
+  const mitKi = runden.some((r) => r.ergebnisse?.some((e) => e.ki_entwurf))
 
   async function teilen() {
     const text =
       `Politik-Duell – ${runden.length} Alltagsprobleme geprüft. ` +
-      `Ergebnis: ${spieler[0].partei.kurzname} ${pa} : ${pb} ${spieler[1].partei.kurzname}. Versprechen kann jeder.`
+      `Ergebnis: ${spieler[0].partei.kurzname} ${pa} : ${pb} ${spieler[1].partei.kurzname}. ` +
+      (mitKi ? `(Testphase – ${KI_HINWEIS}.) ` : '') +
+      'Versprechen kann jeder.'
     if (navigator.share) {
       try {
         await navigator.share({ title: 'Politik-Duell', text, url: location.href })
@@ -54,6 +57,11 @@ export function Ende({
         <p className="sieger">
           {sieger ? `${sieger.partei.name} liefert in diesem Spiel mehr – ${sieger.name} gewinnt!` : 'Unentschieden!'}
         </p>
+        {mitKi && (
+          <p className="ki-hinweis" role="note">
+            <strong>{KI_HINWEIS}.</strong> Das Ergebnis beruht teilweise auf KI-Entwürfen aus der Testphase.
+          </p>
+        )}
       </div>
 
       <section>
@@ -64,6 +72,12 @@ export function Ende({
               <p className="zf-kopf">
                 <strong>Runde {r.nr}</strong>, {spieler[r.sprecher].name}:{' '}
                 {r.thema ? r.thema.name : <span className="badge-ungeprueft">ungeprüft – keine Wertung</span>}
+                {r.ergebnisse?.some((e) => e.ki_entwurf) && (
+                  <>
+                    {' '}
+                    <span className="badge-ungeprueft">vorläufige KI-Bewertung</span>
+                  </>
+                )}
                 {r.status === 'unvollstaendig' && (
                   <>
                     {' '}

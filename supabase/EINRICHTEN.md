@@ -207,6 +207,26 @@ Einmalig, **in dieser Reihenfolge**. Regeln: [`docs/methode.md`](../docs/methode
 4. Danach den Branch nach `main` übernehmen. Die App verträgt es auch, wenn Schritt 1 fehlt: Dann gibt es nur keine
    Bundesland-Auswahl. Die Auswahl erscheint ohnehin erst, wenn für ein Land Landesprogramme ausgewertet und geprüft sind.
 
+### 9. Geschlossene Testphase
+
+Einmalig, **in dieser Reihenfolge**. Wer einen Zugangslink hat, sieht im Spiel zusätzlich KI-Entwürfe – deutlich als
+„vorläufige KI-Bewertung“ gekennzeichnet. Alle anderen sehen weiterhin nur Geprüftes.
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261002000000_testphase.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261002000000_testphase.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Ergänzt `ki_entwurf` bei Maßnahmen und Abdeckung (öffentlich nicht lesbar), `testphase` bei
+   Runden, die Tabelle `testphase_zugaenge` und die Funktion `testphase_daten`.
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1).
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**.
+   Wichtig, und zwar direkt nach Schritt 1: Die Funktion liest mit dem Service-Key, der die Zugriffsregeln
+   umgeht, und schließt KI-Entwürfe ohne Zugang erst in der neuen Fassung aus.
+4. Branch nach `main` übernehmen.
+5. **Zugänge anlegen:** `#/admin` → Reiter **„Testphase“** → Name eintragen → **Zugang anlegen** → Link kopieren und
+   der Person persönlich schicken (er wird nur einmal angezeigt). Einzelne Zugänge lassen sich sperren oder löschen.
+   Wer den Link öffnet, bleibt in diesem Browser in der Testphase, bis er „Testphase verlassen“ wählt.
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

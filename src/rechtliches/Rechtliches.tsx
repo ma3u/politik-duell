@@ -224,7 +224,26 @@ function Datenschutz() {
         Namen. Bereits übernommene Mediane enthalten keine personenbezogenen Daten und bleiben bestehen.
       </p>
 
-      <h2>10. Deine Rechte</h2>
+      <h2 id="testphase">10. Geschlossene Testphase</h2>
+      <p>
+        Für die Testphase laden wir einzelne Personen mit einem persönlichen Zugangslink ein. Mit diesem Link zeigt das
+        Spiel zusätzlich vorläufige Bewertungen, die noch nicht von Menschen geprüft sind. Dieser Abschnitt betrifft nur
+        Personen mit Zugangslink.
+      </p>
+      <p>
+        <strong>Gespeichert werden:</strong> in deinem Browser der Zugangscode aus dem Link (localStorage), damit du
+        die Testphase nicht bei jedem Besuch neu öffnen musst – bis du „Testphase verlassen“ wählst. Das ist für die
+        gewünschte Funktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Bei uns (Supabase, Frankfurt am Main):
+        ein Hashwert des Codes (nicht der Code selbst), ein Name zur Unterscheidung der Zugänge, den wir beim Anlegen
+        eintragen, und das Anlegedatum. Runden aus der Testphase sind als solche markiert, damit wir sie getrennt
+        auswerten können; sie werden nicht mit dem Zugang verknüpft. Für Eingaben im Spiel gilt Abschnitt 4.
+      </p>
+      <p>
+        <strong>Löschung:</strong> Wir löschen die Zugänge mit dem Ende der Testphase oder vorher auf Wunsch per
+        E-Mail.
+      </p>
+
+      <h2>11. Deine Rechte</h2>
       <p>
         Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
         und Widerspruch (Art. 15–21 DSGVO) sowie auf Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO). Da wir keine

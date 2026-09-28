@@ -98,6 +98,8 @@ export interface Massnahme {
   evidenz?: Evidenz | null
   stand: string
   geprueft: boolean
+  /** Gehört zu einem Eintrag, der nur als KI-Entwurf vorliegt (nur in der geschlossenen Testphase sichtbar). */
+  ki_entwurf?: boolean
 }
 
 /**
@@ -114,6 +116,8 @@ export interface AbdeckungEintrag {
   /** Nur bei `keine`: was durchsucht wurde. */
   begruendung: string | null
   stand: string
+  /** Eintrag nur als KI-Entwurf, noch nicht von Menschen geprüft (nur in der geschlossenen Testphase). */
+  ki_entwurf?: boolean
 }
 
 /** Antwortformat der Edge Function `analyse` (siehe CLAUDE.md). */
@@ -140,6 +144,8 @@ export interface AnalyseAnfrage {
   rolle: Rolle | null
   /** Gewähltes Bundesland (Kürzel) – nur zur Wertung, wird nicht gespeichert. */
   land: string | null
+  /** Zugang zur geschlossenen Testphase (Token aus dem Einladungslink) – dann zählen auch KI-Entwürfe. */
+  zugang?: string | null
   /** IDs der beiden gewählten Parteien (A, B) – zum Speichern der Runde. */
   parteien: [number, number]
 }

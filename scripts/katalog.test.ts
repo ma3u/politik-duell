@@ -59,8 +59,8 @@ describe('Datenkatalog: Prüfregeln', () => {
     expect(katalog.massnahmen[0]).toMatchObject({ id: 1, thema_id: 1, partei_id: 1 })
     expect(katalog.ursachen[0]).toMatchObject({ id: 11, thema_id: 1 })
     expect(katalog.abdeckung).toEqual([
-      { thema_id: 1, partei_id: 1, land: null, art: 'massnahmen', begruendung: null, stand: '2026-03-01', geprueft: true },
-      { thema_id: 1, partei_id: 2, land: null, art: 'keine', begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true },
+      { thema_id: 1, partei_id: 1, land: null, art: 'massnahmen', begruendung: null, stand: '2026-03-01', geprueft: true, ki_entwurf: false },
+      { thema_id: 1, partei_id: 2, land: null, art: 'keine', begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true, ki_entwurf: false },
     ])
   })
 
@@ -268,6 +268,39 @@ describe('Datenkatalog: Länder und Stand der Forschung', () => {
     expect(mit({ evidenz: 'unklar' })).toMatch(/„evidenz“ muss/)
     expect(mit({ evidenz: undefined })).toMatch(/„evidenz“ fehlt/)
     expect(mit({ evidenz: 'gemischt', wirksamkeit: 2, bewertung: { anzahl: 2, median_w: 2, median_u: 2, spannweite: 1, datum: '2026-03-05', entwurf: [2, 2] } })).toBe('')
+  })
+})
+
+describe('Datenkatalog: KI-Entwürfe für die Testphase', () => {
+  const eintraege = (eins: Record<string, unknown>[], zwei: Record<string, unknown> = { begruendung: 'x', stand: '2026-03-01', geprueft: false, ki_entwurf: true }) =>
+    thema({ abdeckung: [{ partei_id: 1, massnahmen: eins }, { partei_id: 2, keine_massnahme: zwei }] })
+  const ki = (ueber: Record<string, unknown> = {}) => massnahme({ geprueft: false, bewertung: undefined, ki_entwurf: true, ...ueber })
+
+  it('zählt KI-Entwürfe nur mit Testphase, gekennzeichnet', () => {
+    const { katalog, fehler } = pruefeKatalog(parteien(), [eintraege([ki(), massnahme({ id: 2 })])])
+    expect(fehler).toEqual([])
+    // Öffentlich: nichts (Partei 1 hat einen KI-Entwurf, Partei 2 ist nur KI-Entwurf).
+    expect(spielbareAbdeckung(katalog)).toEqual([])
+    expect(spielbareMassnahmen(katalog)).toEqual([])
+    // Mit Testphase: beide Einträge, als KI-Entwurf gekennzeichnet – auch die schon geprüfte Maßnahme im selben Eintrag.
+    expect(spielbareAbdeckung(katalog, true).map((a) => [a.partei_id, a.ki_entwurf])).toEqual([[1, true], [2, true]])
+    expect(spielbareMassnahmen(katalog, true).map((m) => [m.id, m.ki_entwurf])).toEqual([[1, true], [2, true]])
+  })
+
+  it('zählt einen Eintrag nicht, wenn ein Teil weder geprüft noch KI-Entwurf ist', () => {
+    const { katalog } = pruefeKatalog(parteien(), [eintraege([ki(), massnahme({ id: 2, geprueft: false, bewertung: undefined })])])
+    expect(spielbareAbdeckung(katalog, true).map((a) => a.partei_id)).toEqual([2])
+  })
+
+  it('geprüfte Einträge bleiben öffentlich, ohne Kennzeichnung', () => {
+    const { katalog } = pruefeKatalog(parteien(), [eintraege([massnahme()], { begruendung: 'x', stand: '2026-03-01', geprueft: true })])
+    expect(spielbareAbdeckung(katalog, true).map((a) => a.ki_entwurf)).toEqual([false, false])
+    expect(spielbareAbdeckung(katalog).map((a) => a.ki_entwurf)).toEqual([undefined, undefined])
+  })
+
+  it('verlangt auch bei KI-Entwürfen den Forschungsstand', () => {
+    expect(fehlerVon(eintraege([ki({ evidenz: undefined })]))).toMatch(/„evidenz“ fehlt/)
+    expect(fehlerVon(eintraege([ki({ ki_entwurf: 'ja' })]))).toMatch(/„ki_entwurf“ muss true oder false sein/)
   })
 })
 

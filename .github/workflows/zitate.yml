@@ -1,0 +1,29 @@
+name: Zitate prüfen
+
+# Steht jedes wörtliche Zitat auf der Seite im Programm, auf die der Beleg zeigt?
+# Eigener Ablauf, weil er die Programm-PDFs der Parteien herunterlädt.
+on:
+  pull_request:
+    paths: ['daten/**', 'scripts/zitate.ts', 'scripts/pruefe-zitate.ts']
+  push:
+    branches: [main]
+    paths: ['daten/**']
+  schedule:
+    - cron: '17 5 * * 1' # montags: fällt auf, wenn ein Programm ausgetauscht wurde
+  workflow_dispatch:
+
+jobs:
+  zitate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: .cache/programme
+          key: programme-${{ hashFiles('daten/parteien.json') }}
+      - run: npm run zitate:pruefen
