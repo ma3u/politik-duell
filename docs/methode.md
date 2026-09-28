@@ -24,6 +24,8 @@ Fünf Regeln gelten ohne Ausnahme:
 
 Grundlage sind die Wahlprogramme zur Bundestagswahl 2025 von sieben Parteien. Neuere Grundsatzprogramme gibt es bisher nicht (Stand September 2026); kommt eines hinzu, werden alle älteren Einträge der Partei neu geprüft.
 
+**Landesprogramme:** Für Ursachen, für die vor allem die Länder zuständig sind – etwa Lehrkräfte oder Schulgebäude –, zählt das Wahlprogramm der Partei zur Landtagswahl, sofern es aus der **laufenden Wahlperiode** des Landtags stammt. Spielende können dafür optional ihr Bundesland wählen. Mehr dazu unter „Bund und Länder“. Erfasst werden zuerst die Programme zu den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin; ein Land steht im Spiel zur Wahl, sobald dafür geprüfte Einträge vorliegen.
+
 | Partei | Wahlprogramm | Beschluss |
 | --- | --- | --- |
 | CDU/CSU | [Politikwechsel für Deutschland](https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf) | 17. 12. 2024 |
@@ -43,6 +45,14 @@ Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen i
 Jedes Thema hat ein **Ziel aus Sicht der Betroffenen** (Miete: „Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten.“) und eine Liste von **Ursachen**, warum das Problem besteht. Jede Ursache braucht eine unabhängige Quelle, etwa Statistisches Bundesamt, Sachverständigenräte, IAB, DIW oder BKA. Parteiquellen sind ausgeschlossen, Lobbyverbände nie als einzige Quelle.
 
 Die Ursachen werden in einem eigenen Schritt festgelegt, **bevor** Maßnahmen aus den Programmen erfasst werden. So kann niemand die Ursachen passend zu einem Programm zuschneiden.
+
+Die Ursachenliste entscheidet mit, welche Lösungen überhaupt Punkte bekommen können. Sie ist deshalb die empfindlichste Stelle der Methode. Drei Regeln sollen verhindern, dass sie einseitig wird:
+
+1. **Lösungsoffen formulieren.** Eine Ursache beschreibt, *was* schiefläuft, nicht, *wie* es zu beheben ist. „Zahl der Neuankommenden und Kapazitäten vor Ort passen nicht zusammen“ lässt Lösungen auf beiden Seiten zu (weniger Zugang oder mehr Kapazität); „zu wenige Unterkünfte“ ließe nur eine zu.
+2. **Quellen aus unterschiedlichen Richtungen.** Für jedes Thema werden Institute und Gremien unterschiedlicher Ausrichtung herangezogen, etwa arbeitgebernahe und gewerkschaftsnahe Forschung, und amtliche Statistik. Gemeinsame Studien solcher Institute sind besonders geeignet.
+3. **Perspektivenprüfung.** Vor der Erfassung von Maßnahmen wird geprüft, ob die in der öffentlichen und fachlichen Debatte vertretenen Problemdiagnosen in mindestens einer belegten Ursache vorkommen. Grundlage sind Fachquellen, nicht die Wahlprogramme. Eine Diagnose, die sich nicht unabhängig belegen lässt, wird nicht aufgenommen – gleich, wer sie vertritt. Die Prüfung wird mit Ergebnis und verworfenen Kandidaten festgehalten ([`docs/perspektiven-ursachen.md`](perspektiven-ursachen.md)).
+
+Mehr Ursachen bedeuten nicht mehr Punkte: Die KI ordnet einem Problem nur die Ursachen zu, die dazu passen.
 
 ### Maßnahmen: für jede Partei, mit Zitat
 
@@ -68,16 +78,31 @@ Das Produkt ist Absicht: Eine Maßnahme ohne Wirkung bringt keine Punkte, auch w
 | 2 | hilft spürbar: setzt an einer Ursache an, deutliche Verbesserung zu erwarten | umsetzbar mit Aufwand oder in mehreren Jahren |
 | 3 | hilft stark: setzt direkt an einer Hauptursache an, Wirkung gut belegt | rechtlich möglich, finanziert, in einer Wahlperiode realistisch |
 
-Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für andere Gruppen zählen hier nicht. Umsetzbarkeit fragt, ob eine Bundesregierung die Maßnahme in einer Wahlperiode rechtlich und finanziell umsetzen könnte. Ob sie politisch mehrheitsfähig ist, spielt keine Rolle. Zu jeder Bewertung gehört eine Begründung in ein bis zwei neutralen Sätzen: was dafür, was dagegen spricht.
+Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für andere Gruppen zählen hier nicht. Umsetzbarkeit fragt, ob die Regierung der Ebene, aus deren Programm die Maßnahme stammt – Bund oder Land –, sie in einer Wahlperiode rechtlich und finanziell umsetzen könnte. Ob sie politisch mehrheitsfähig ist, spielt keine Rolle. Zu jeder Bewertung gehört eine Begründung in ein bis zwei neutralen Sätzen: was dafür, was dagegen spricht.
+
+**Stand der Forschung.** Zu jeder Maßnahme wird festgehalten, wie gut ihre Wirkung belegt ist: *belegt* (übereinstimmende Studien oder Erfahrungen anderswo), *gemischt* (Studien kommen zu unterschiedlichen Ergebnissen) oder *offen* (kaum untersucht). Wirksamkeit 3 setzt *belegt* voraus. Ist die Wirkung umstritten, zeigt das Spiel das an („Wirkung in der Forschung umstritten“) und nennt in der Begründung beide Seiten.
+
+**Verschiedene Wege, ähnliche Punkte.** Für die meisten Probleme gibt es nicht die eine richtige Lösung. Parteien setzen oft an verschiedenen Ursachen an – die eine beim Angebot, die andere bei den Kosten. Weil jede Ursache für sich zählt, können sehr unterschiedliche Programme ähnlich viele Punkte erreichen. Ein Gleichstand ist dann kein Mangel, sondern ein Ergebnis: Beide haben einen tragfähigen Weg.
 
 **Rollen.** Spielende können eine Rolle wählen: Mieter:in, Eigentümer:in, angestellt, selbstständig, Rentner:in, arbeitslos, studierend, vermögend. Wirkt eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter, verschiebt sich ihre Wirksamkeit um bis zu zwei Stufen (innerhalb 0 bis 3). Jede solche Verschiebung ist einzeln begründet und wird angezeigt.
 
 ### Punkte in der Runde
 
-1. Pro Ursache zählt die beste Maßnahme einer Partei.
+1. Pro Ursache zählt die beste Maßnahme einer Partei. Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr Einzelforderungen aufschreibt, nicht wer besser ansetzt. Wer mehrere Ursachen angeht, wird über die Summe belohnt.
 2. Die Rundenpunkte sind die Summe über alle Ursachen, denen das Problem zugeordnet wurde.
 3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.
 4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte.
+
+### Bund und Länder
+
+Jede Ursache ist der Ebene zugeordnet, die vor allem dafür zuständig ist: **Bund** (z. B. Asylverfahren, Bürgergeld) oder **Land** (z. B. Lehrkräfte, Schulgebäude). Welche Ebene eine Ursache hat, wird zusammen mit den Ursachen festgelegt.
+
+| Ursache | Bundesland gewählt | Bundesland nicht gewählt |
+| --- | --- | --- |
+| Ebene Bund | Bundesprogramm | Bundesprogramm |
+| Ebene Land | Landesprogramm der Partei in diesem Land | Bundesprogramm |
+
+Es zählt immer genau ein Programm je Partei und Ursache. So hat keine Partei mehr Chancen, nur weil sie in mehr Ländern aktuelle Programme hat. Als aktuell gilt ein Landesprogramm, solange die Wahlperiode läuft, für die es beschlossen wurde. Ist eine Partei in dem gewählten Land nicht angetreten oder hat sie dort kein Programm der laufenden Wahlperiode, wird die Runde nicht gewertet (wie „noch nicht erfasst“). Das gewählte Bundesland wird nicht gespeichert.
 
 ### Sonderfälle
 
@@ -87,6 +112,7 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 | Maßnahmen zum Thema, aber keine zu diesen Ursachen | „keine Maßnahme zu diesen Ursachen“ | 0 |
 | Programm enthält nichts zum Thema, geprüft | „nichts zum Thema im Programm“ + was durchsucht wurde | 0 |
 | Thema für diese Partei noch nicht vollständig geprüft | „noch nicht erfasst“ | Runde wird nicht gewertet |
+| Ursache auf Landesebene, Partei hat im gewählten Land kein aktuelles Programm | „kein aktuelles Landesprogramm“ | Runde wird nicht gewertet |
 | Thema gar nicht in der Datenbank | „ungeprüft – keine Wertung“, ohne Links; kommt in die Warteschlange für neue Themen | keine |
 | Spieler:in nennt einen Wert oder eine Haltung | wird respektvoll als persönliche Haltung benannt; neues Problem möglich | keine |
 
@@ -128,6 +154,7 @@ flowchart TD
 - **Blind bewerten:** Die Prüfenden sehen keine Parteinamen, die Maßnahmen kommen in gemischter Reihenfolge, und niemand sieht die Werte der anderen. Den Entwurf mit Begründung sehen sie erst nach ihrer eigenen Bewertung.
 - **Median statt Mittelwert:** Je Maßnahme zählt der Median, getrennt für Wirksamkeit und Umsetzbarkeit. Einzelne Ausreißer verschieben das Ergebnis so kaum.
 - **Streit wird geklärt, nicht gemittelt:** Liegen zwei Einschätzungen zwei oder mehr Stufen auseinander, wird der Maßstab geklärt, bevor Werte übernommen werden.
+- **KI-Entwürfe:** Die Schritte 2 und 3 (Maßnahmen erfassen, Entwurf bewerten) können mit Hilfe einer KI erstellt werden. Solche Entwürfe sind im Datenkatalog als KI-Entwurf gekennzeichnet und zählen erst nach der menschlichen Prüfung. In einer geschlossenen Testphase dürfen sie im Spiel erscheinen, dann mit deutlichem Hinweis am Ergebnis („vorläufige KI-Bewertung – noch nicht von Menschen geprüft“). Die Regel „Die KI vergibt keine Punkte“ gilt für das Spiel selbst: Dort werden Punkte immer aus der Datenbank berechnet.
 - **Namen nur mit Einwilligung:** Prüfende werden öffentlich nur genannt, wenn sie zustimmen; sonst heißt es „von n unabhängigen Prüfenden“.
 - **Korrigierbar:** Fehler kann jede Person melden, mit Link auf die Stelle im Programm. Parteien können ihre Einträge jederzeit prüfen und eine Stellungnahme schicken.
 
@@ -137,7 +164,9 @@ Die Methode ist so fair wie möglich, aber nicht fehlerfrei. Wir benennen ihre G
 
 - **Programme sind nicht Politik.** Bewertet wird, was im Wahlprogramm steht, nicht was eine Partei im Parlament oder in einer Regierung tatsächlich getan hat.
 - **Bewerten bleibt Urteil.** Wirksamkeit und Umsetzbarkeit sind Einschätzungen. Blinde Prüfung, Median und offene Begründungen machen sie nachvollziehbar, aber nicht objektiv.
-- **Die Ursachenliste prägt das Ergebnis.** Welche Ursachen ein Thema hat, entscheidet mit, welche Maßnahmen zählen. Deshalb werden sie vorab mit unabhängigen Quellen festgelegt und nur in begründeten Ausnahmen ergänzt.
+- **Die Ursachenliste prägt das Ergebnis.** Welche Ursachen ein Thema hat, entscheidet mit, welche Maßnahmen zählen. Deshalb werden sie vorab mit unabhängigen Quellen festgelegt, auf verschiedene Perspektiven geprüft und nur in begründeten Ausnahmen ergänzt.
+- **Belegte Wirkung bevorzugt Erprobtes.** Instrumente, die es schon gibt, sind besser untersucht als neue Ideen. Die Regel „Wirksamkeit 3 nur mit belegter Wirkung“ kann neue Vorschläge daher etwas benachteiligen. Wir nehmen das in Kauf, weil die Alternative wäre, Versprechen ungeprüft zu glauben.
+- **Das Bundesland verändert das Ergebnis.** Bei Landesthemen kann dieselbe Partei in zwei Ländern unterschiedlich abschneiden. Das ist gewollt: Landesparteien haben eigene Programme.
 - **Ein Spiel ist ein Ausschnitt.** Es deckt fünf Probleme ab und ist kein Gesamturteil über eine Partei – und keine Wahlempfehlung.
 - **Die KI kann falsch zuordnen.** Deshalb zeigt jede Runde, welchem Thema und welchen Ursachen das Problem zugeordnet wurde, damit Spielende es nachprüfen können.
 

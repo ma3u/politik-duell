@@ -16,6 +16,7 @@ Die Reihenfolge ist wichtig für die Neutralität.
 
 1. **Thema und Ursachen festlegen – ohne Blick in die Wahlprogramme.**
    Ursachen beschreiben, *warum* das Alltagsproblem besteht. Jede Ursache braucht eine unabhängige Quelle (z. B. Statistisches Bundesamt, Sachverständigenrat, Bundesbank, wissenschaftliche Studie). Keine Parteiquellen, keine Quellen von Lobbyverbänden als einzige Quelle.
+   Ursachen **lösungsoffen** formulieren (was schiefläuft, nicht wie es zu beheben ist), Quellen unterschiedlicher Ausrichtung heranziehen und eine **Perspektivenprüfung** machen: Kommen die in der Fachdebatte vertretenen Problemdiagnosen in mindestens einer belegten Ursache vor? Ergebnis, Zuständigkeitsebene (Bund oder Land) und verworfene Kandidaten in [`docs/perspektiven-ursachen.md`](../docs/perspektiven-ursachen.md) festhalten (Regeln: [`docs/methode.md`](../docs/methode.md) → „Ursachen“).
    Eigener Pull Request, damit die Ursachen feststehen, bevor Maßnahmen dazukommen. Die Themendatei enthält dann noch keine `abdeckung` – das Thema gilt für alle Parteien als „noch nicht erfasst“.
 2. **Maßnahmen aus den Programmen erfassen.**
    Für **jede** Partei entweder Maßnahmen mit **wörtlichem Zitat** (`zitat`) und Seitenanker eintragen oder ausdrücklich `keine_massnahme` mit kurzer Begründung („Programm Stand … durchsucht, Kapitel … enthält nichts zu …“). Neue Einträge haben `"geprueft": false`. Nur Maßnahmen aufnehmen, die an einer der erfassten Ursachen ansetzen. Ursachen werden dafür grundsätzlich nicht nachträglich ergänzt; Ausnahmen (bisher: Miete, Ursache 204) sind mit `nachtraeglich` gekennzeichnet.
@@ -115,7 +116,7 @@ Jedes Thema hat ein **Ziel aus Sicht der Betroffenen** (`ziel`, z. B. Miete: „
 
 ### Umsetzbarkeit (0–3): Ist die Maßnahme realistisch?
 
-Gemeint ist: Könnte eine Bundesregierung sie in einer Wahlperiode rechtlich und finanziell umsetzen? Ob die Maßnahme politisch mehrheitsfähig ist, spielt keine Rolle.
+Gemeint ist: Könnte die Regierung der Ebene, aus deren Programm die Maßnahme stammt (Bund oder Land), sie in einer Wahlperiode rechtlich und finanziell umsetzen? Ob die Maßnahme politisch mehrheitsfähig ist, spielt keine Rolle.
 
 | Wert | Bedeutung |
 | --- | --- |
@@ -127,6 +128,10 @@ Gemeint ist: Könnte eine Bundesregierung sie in einer Wahlperiode rechtlich und
 ### Rollen-Modifikator (−2 bis +2, optional)
 
 Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung. Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
+
+### Stand der Forschung
+
+Feld `evidenz`: `belegt` (übereinstimmende Studien oder Erfahrungen anderswo), `gemischt` (Studien kommen zu unterschiedlichen Ergebnissen) oder `offen` (kaum untersucht). Wirksamkeit 3 nur mit `belegt`; bei `gemischt` oder `offen` höchstens 2, und die Begründung nennt beide Seiten. Das Spiel zeigt „Wirkung in der Forschung umstritten“ bzw. „Wirkung bisher kaum untersucht“ an. Ergibt die Prüfung einen Median von 3 bei nicht belegter Wirkung, meldet `npm run pruefung:uebernehmen` einen Fehler – dann Forschungsstand klären oder die Wirksamkeit begründet auf 2 setzen.
 
 ### Begründung
 
@@ -154,6 +159,31 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 
 `programm_url` ist die Adresse des ganzen Programms ohne `#`-Anker. Erscheint ein neues Programm, `programm_url` und `programm_stand` ändern: Die Prüfung meldet dann alle Einträge dieser Partei mit älterem `stand` zur Neuprüfung.
 
+#### Länder und Landesprogramme
+
+```json
+{
+  "fiktiv": false,
+  "laender": [
+    { "id": "ST", "name": "Sachsen-Anhalt", "letzte_wahl": "2026-09-06" }
+  ],
+  "parteien": [
+    {
+      "id": 11,
+      "…": "…",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://…/landeswahlprogramm.pdf", "stand": "2026-03-14" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "kein_programm": "Zur Landtagswahl nicht angetreten." }
+      ]
+    }
+  ]
+}
+```
+
+- `laender` nennt nur Länder, für die Landesprogramme erfasst werden, mit dem Datum der letzten Landtagswahl. In der App stehen sie zur Wahl, sobald für das Land mindestens ein Eintrag geprüft ist.
+- Je Partei und Land höchstens ein Eintrag: das Programm zur letzten Wahl (`url`, Beschlussdatum `stand`) oder `kein_programm` mit Begründung (nicht angetreten, kein Programm veröffentlicht). Fehlt der Eintrag, gilt das Land für die Partei als „noch nicht erfasst“.
+- **Laufende Wahlperiode:** Nach einer neuen Landtagswahl `letzte_wahl` ändern. Ältere Programme zählen dann automatisch nicht mehr (Warnung), bis das neue eingetragen ist.
+
 ### `themen/NN-name.json` – eine Datei pro Thema
 
 ```json
@@ -164,7 +194,7 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
   "ziel": "Was sich für die Betroffenen ändern soll – Maßstab für die Wirksamkeit.",
   "schlagwoerter": ["kita", "betreuung"],
   "ursachen": [
-    { "id": 401, "beschreibung": "Zu wenige Fachkräfte", "quelle_url": "https://…" }
+    { "id": 401, "beschreibung": "Zu wenige Fachkräfte", "quelle_url": "https://…", "ebene": "land" }
   ],
   "abdeckung": [
     {
@@ -181,9 +211,17 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
           "zitat": "Wörtlich aus dem Programm, so wie es auf der Seite steht.",
           "beleg_programm_url": "https://…/wahlprogramm.pdf#page=17",
           "beleg_studie_url": "https://…",
+          "evidenz": "gemischt",
           "stand": "2026-03-01",
           "geprueft": false
         }
+      ]
+    },
+    {
+      "partei_id": 1,
+      "land": "ST",
+      "massnahmen": [
+        { "id": 102, "…": "wie oben, Beleg im Landesprogramm, nur Ursachen mit \"ebene\": \"land\"" }
       ]
     },
     {
@@ -199,13 +237,16 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 ```
 
 - **IDs** sind im ganzen Katalog eindeutig und ändern sich nie (gespielte Runden verweisen darauf). Konvention für Ursachen: Themen-ID × 100 + laufende Nummer; für Maßnahmen: Themen-ID × 1000 + laufende Nummer (Miete: 2001, 2002 …).
+- `ebene` (Pflicht bei Ursachen): `bund` oder `land` – wer vor allem zuständig ist. Bei `land` zählt das Landesprogramm, wenn Spielende ein Bundesland wählen; sonst das Bundesprogramm. Zuordnung und Begründung in [`docs/perspektiven-ursachen.md`](../docs/perspektiven-ursachen.md).
+- `land` (bei Abdeckungseinträgen): Eintrag aus dem Landesprogramm der Partei in diesem Land. Ohne `land` ist es das Bundesprogramm. Je Thema, Partei und Programm höchstens ein Eintrag. Landeseinträge sind eine Ergänzung: „noch nicht erfasst“ bezieht sich auf das Bundesprogramm; für Landesursachen gibt es bei gewähltem Bundesland zusätzlich „noch nicht erfasst“ für das Land.
 - `nachtraeglich` (optional, bei Ursachen): Wurde eine Ursache erst nach dem Blick in die Programme ergänzt, steht hier Datum und Grund. Das soll die Ausnahme bleiben und ist im Pull Request zu begründen.
 - `zitat` ist bei echten Daten Pflicht: der Satz aus dem Programm, auf den sich die Maßnahme stützt, wörtlich (Silbentrennungen am Zeilenende zusammengezogen). Es dient der Prüfung und kommt nicht in die Datenbank.
 - `schlagwoerter` braucht nur die Offline-Analyse ohne KI; kleingeschrieben, Umlaute als ae/oe/ue.
-- `beleg_programm_url` muss auf `programm_url` der Partei zeigen, mit Seitenanker `#page=N`.
+- `beleg_programm_url` muss auf `programm_url` der Partei zeigen (bei Landeseinträgen auf die `url` des Landesprogramms), mit Seitenanker `#page=N`.
+- `evidenz`: Stand der Forschung, siehe „Stand der Forschung“. Pflicht, bevor eine Maßnahme `geprueft` wird.
 - `beleg_studie_url` ist optional.
 - `bewertung` schreibt nur `npm run pruefung:uebernehmen` (siehe „Prüfung“), z. B. `{ "anzahl": 3, "median_w": 2, "median_u": 2, "spannweite": 1, "datum": "2026-10-05", "entwurf": [2, 3] }`. `wirksamkeit` und `umsetzbarkeit` müssen den Medianen entsprechen; `entwurf` hält die ursprünglichen Werte fest.
-- `stand` darf nicht vor dem `programm_stand` der Partei liegen.
+- `stand` darf nicht vor dem `programm_stand` der Partei liegen (bei Landeseinträgen: vor dem `stand` des Landesprogramms).
 
 ## Was die automatische Prüfung kontrolliert
 
@@ -213,7 +254,9 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 - eindeutige IDs und Namen
 - jede Ursache mit https-Quelle; Maßnahmen verweisen nur auf Ursachen ihres Themas
 - Beleg zeigt ins Programm der richtigen Partei, mit Seitenanker; bei echten Daten ein wörtliches Zitat
-- **Abdeckung:** jede Partei höchstens einmal pro Thema – mit Maßnahmen oder `keine_massnahme`; fehlende Parteien werden als „noch nicht erfasst“ gemeldet (Warnung)
+- **Abdeckung:** jede Partei höchstens einmal pro Thema und Programm – mit Maßnahmen oder `keine_massnahme`; fehlende Parteien (Bundesprogramm) werden als „noch nicht erfasst“ gemeldet (Warnung)
+- **Bund und Länder:** jede Ursache mit `ebene`; Landeseinträge nur mit eingetragenem Landesprogramm, Beleg in diesem Programm und nur für Ursachen mit `ebene: land`; Programme früherer Wahlperioden zählen nicht (Warnung)
+- **Stand der Forschung:** Wirksamkeit 3 nur mit `evidenz: belegt`; `geprueft` nur mit `evidenz`
 - Einträge sind nicht älter als das aktuelle Programm
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen

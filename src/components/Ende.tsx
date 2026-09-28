@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { gesamtpunkte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
+import { useLandName } from '../data/kontext'
 import { Belege } from './Aufloesung'
 import { Kreuz } from './Kreuz'
 import { Logo } from './Logo'
@@ -16,6 +17,7 @@ export function Ende({
   onNeu: () => void
 }) {
   const [pa, pb] = gesamtpunkte(runden)
+  const landName = useLandName()
   const [geteilt, setGeteilt] = useState<string | null>(null)
   const sieger = pa === pb ? null : pa > pb ? spieler[0] : spieler[1]
 
@@ -73,7 +75,7 @@ export function Ende({
               {r.ergebnisse && (
                 <div className="zf-parteien">
                   {r.ergebnisse.map((e, i) => {
-                    const leer = ohneTreffer(e)
+                    const leer = ohneTreffer(e, landName)
                     return (
                       <div key={e.partei.id} className="zf-partei" style={parteiStil(e.partei.farbe)}>
                         <span>

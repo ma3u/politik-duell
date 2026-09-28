@@ -7,7 +7,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 ## Grundprinzipien (nicht verhandelbar)
 
 1. **Neutrale Methode, kein vorgegebenes Ergebnis.** Alle Parteien werden nach denselben Kriterien bewertet. Bietet eine Partei nachweislich die beste Lösung, gewinnt sie – egal welche.
-2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und ordnet Probleme Themen/Ursachen zu. Punkte kommen deterministisch aus der kuratierten Datenbank.
+2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und ordnet Probleme Themen/Ursachen zu. Punkte kommen deterministisch aus der kuratierten Datenbank. (KI-gestützte Entwürfe für Maßnahmen und Bewertungen im Datenkatalog sind erlaubt, sind gekennzeichnet und zählen erst nach menschlicher Prüfung – außer in einer geschlossenen Testphase mit deutlichem Hinweis am Ergebnis.)
 3. **Die KI erfindet niemals Quellen oder Links.** Alle Belege stammen ausschließlich aus der Datenbank.
 4. **Forderung ≠ Problem.** Nennt ein Spieler eine Forderung („weniger X"), fragt die KI nach dem konkreten Alltagsproblem dahinter.
 5. **Datenschutz:** Politische Meinungen sind besondere Daten (Art. 9 DSGVO). Keine Konten, keine IPs, kein Audio speichern – nur anonymen Problemtext.
@@ -52,10 +52,14 @@ parteien (id, name, kurzname, farbe, programm_url, programm_stand date)
 
 themen (id, name, beschreibung)
 
-ursachen (id, thema_id, beschreibung, quelle_url)
+ursachen (id, thema_id, beschreibung, quelle_url, ebene)   -- ebene: bund | land
+
+laender (id, name, letzte_wahl)                    -- nur Länder mit erfassten Landesprogrammen
+landesprogramme (partei_id, land, url, stand, kein_programm)   -- nur laufende Wahlperiode
 
 massnahmen (
   id, thema_id, partei_id,
+  land text null,                     -- null = Bundesprogramm
   beschreibung,
   ursachen_ids int[],
   wirksamkeit smallint check (0..3),
@@ -64,6 +68,7 @@ massnahmen (
   begruendung text,
   beleg_programm_url text not null,   -- mit #page=N wo möglich
   beleg_studie_url text,
+  evidenz text,                       -- belegt | gemischt | offen
   stand date,
   geprueft boolean default false
 )
@@ -116,7 +121,7 @@ Vor Anzeige in der Wortwolke: automatischer Filter (Beleidigungen, Namen von Pri
 
 ## Offene Punkte
 
-- ~~Welche Parteien sind dabei?~~ Entschieden: CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW. Grundlage sind die Wahlprogramme zur Bundestagswahl 2025, wo vorhanden ergänzt um neuere Grundsatzprogramme.
+- ~~Welche Parteien sind dabei?~~ Entschieden: CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW. Grundlage sind die Wahlprogramme zur Bundestagswahl 2025, wo vorhanden ergänzt um neuere Grundsatzprogramme. Für Ursachen in Länderzuständigkeit zählen Landtagswahlprogramme der laufenden Wahlperiode, wenn Spielende ein Bundesland wählen (Datenformat und Wertung umgesetzt, Landesprogramme werden erfasst – zuerst ST, MV, BE; siehe `docs/methode.md` → „Bund und Länder“).
 - Wer pflegt und prüft die Bewertungen? Format und Ablauf stehen (`daten/` als JSON, Pull Requests mit Quellenpflicht, automatische Prüfung; Bewertung durch eingeladene Prüfende in der App mit Median je Kriterium, Belegprüfung durch die Betreiberin, siehe `daten/README.md` → „Prüfung“ und `docs/plan-pruefung.md`) – offen ist, welche Personen das übernehmen.
 - ~~Domain sichern~~ Erledigt (September 2026): politik-duell.de ist die Hauptadresse (bei INWX, in Vercel verbunden, HTTPS, in `ERLAUBTE_URSPRUENGE` und als Supabase *Site URL* eingetragen), politikduell.de leitet dorthin weiter. Kontakt: politik-duell@posteo.de.
 - Trägerschaft: Geplant ist ein gemeinnütziger Verein „Politik-Duell e. V.“ (politische Bildung, Methodenbeirat, Neutralität in der Satzung). Unterlagen und Fahrplan in `docs/verein/`. Lizenz festgelegt: Code AGPL-3.0-or-later (`LICENSE`), Daten CC BY 4.0 (`daten/LICENSE`). Offen: sieben Gründungsmitglieder finden; bis dahin betreibt die Gründerin das Projekt als Einzelperson.

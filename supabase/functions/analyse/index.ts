@@ -14,7 +14,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2'
 import { bewertePartei, werteRunde } from '../_shared/bewertung.ts'
 import { bereinigeAntwort, EingabeFehler, nutzerNachrichten, pruefeAnfrage, systemPrompt } from '../_shared/ki.ts'
 import { pruefeText } from '../_shared/moderation.ts'
-import type { AbdeckungEintrag, AnalyseAntwort, Massnahme, Partei, Rolle, Thema, Ursache } from '../_shared/typen.ts'
+import type { AbdeckungEintrag, AnalyseAntwort, Landesprogramm, Massnahme, Partei, Rolle, Thema, Ursache } from '../_shared/typen.ts'
 import {
   corsKoepfe,
   erlaubteUrspruenge,
@@ -93,7 +93,7 @@ Deno.serve(async (req) => {
 
     const [themenRes, ursachenRes, parteienRes] = await Promise.all([
       db.from('themen').select('id, name, beschreibung'),
-      db.from('ursachen').select('id, thema_id, beschreibung, quelle_url'),
+      db.from('ursachen').select('*'),
       db.from('parteien').select('*'),
     ])
     if (themenRes.error) throw themenRes.error
@@ -110,7 +110,7 @@ Deno.serve(async (req) => {
     if (antwort.typ !== 'forderung') {
       // Der Originaltext wird nur geprüft, nicht gespeichert.
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
-      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, original, parteien)
+      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, original, parteien, ursachen)
     }
 
     return json(antwort)
@@ -125,8 +125,10 @@ async function speichereRunde(
   antwort: AnalyseAntwort,
   [parteiA, parteiB]: [number, number],
   rolle: Rolle | null,
+  land: string | null,
   original: string[],
   parteien: Partei[],
+  ursachen: Ursache[],
 ) {
   const stichwort = antwort.stichwort ?? null
   const basis = {
@@ -154,12 +156,15 @@ async function speichereRunde(
     return
   }
 
-  const [mRes, aRes] = await Promise.all([
+  const [mRes, aRes, lpRes] = await Promise.all([
     db.from('massnahmen').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB]),
     db.from('abdeckung').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB]),
+    land
+      ? db.from('landesprogramme').select('*').eq('land', land).in('partei_id', [parteiA, parteiB])
+      : Promise.resolve({ data: [], error: null }),
   ])
   // Speichern ist Nebensache: Ein Fehler hier soll die Antwort an die App nicht verhindern.
-  const fehler = mRes.error ?? aRes.error
+  const fehler = mRes.error ?? aRes.error ?? lpRes.error
   if (fehler) {
     console.error('speichereRunde:', fehler.message)
     return
@@ -170,8 +175,10 @@ async function speichereRunde(
   const b = parteien.find((p) => p.id === parteiB)
   if (!a || !b) return
 
-  const ea = bewertePartei(a, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung)
-  const eb = bewertePartei(b, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung)
+  // Das Bundesland zählt nur für die Wertung; gespeichert wird es nicht.
+  const ebenen = { land, ursachen, landesprogramme: lpRes.data as Landesprogramm[] }
+  const ea = bewertePartei(a, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
+  const eb = bewertePartei(b, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
   const { status } = werteRunde(ea, eb)
   // Gespeichert werden die Rundenpunkte (Summe über die Ursachen), nicht der Spielpunkt.
   // Ist das Thema für eine Partei noch nicht erfasst, gibt es keine Punkte.

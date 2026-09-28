@@ -1,5 +1,10 @@
 {
   "fiktiv": false,
+  "laender": [
+    { "id": "BE", "name": "Berlin", "letzte_wahl": "2026-09-20" },
+    { "id": "MV", "name": "Mecklenburg-Vorpommern", "letzte_wahl": "2026-09-20" },
+    { "id": "ST", "name": "Sachsen-Anhalt", "letzte_wahl": "2026-09-06" }
+  ],
   "parteien": [
     {
       "id": 11,

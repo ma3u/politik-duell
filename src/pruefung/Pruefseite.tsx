@@ -469,8 +469,15 @@ function ZielUndMassstab({ thema, ursachen }: { thema: Thema; ursachen: Ursache[
           Nur aus Sicht der Betroffenen. Vor- und Nachteile für andere Gruppen zählen hier nicht.
         </p>
         <Skala stufen={WIRKSAMKEIT} />
-        <h3>Umsetzbarkeit: Könnte eine Bundesregierung sie in einer Wahlperiode rechtlich und finanziell umsetzen?</h3>
-        <p className="hinweis">Ob sie politisch mehrheitsfähig ist, spielt keine Rolle.</p>
+        <p className="hinweis">
+          Stufe 3 nur, wenn die Wirkung belegt ist (übereinstimmende Studien oder Erfahrungen anderswo). Ist die
+          Forschung uneins, höchstens 2.
+        </p>
+        <h3>Umsetzbarkeit: Könnte die zuständige Regierung sie in einer Wahlperiode rechtlich und finanziell umsetzen?</h3>
+        <p className="hinweis">
+          Zuständig ist die Ebene des Programms: bei Bundesprogrammen die Bundesregierung, bei Landesprogrammen die
+          Landesregierung (steht an jeder Maßnahme). Ob sie politisch mehrheitsfähig ist, spielt keine Rolle.
+        </p>
         <Skala stufen={UMSETZBARKEIT} />
         <p className="hinweis">Punkte je Maßnahme = Wirksamkeit × Umsetzbarkeit (0 bis 9).</p>
         <h3>Ursachen</h3>
@@ -537,7 +544,10 @@ function MassnahmeKarte({
     <article className={`pruef-karte ${className}`}>
       <p className="pruef-kennung">{kennung}</p>
       <p className="pruef-text">{m.beschreibung}</p>
-      <p className="admin-klein">Setzt an bei: {m.ursachen_ids.map(ursacheText).join(' · ')}</p>
+      <p className="admin-klein">
+        Setzt an bei: {m.ursachen_ids.map(ursacheText).join(' · ')} ·{' '}
+        {m.land ? `Landesebene (${KATALOG.laender.find((l) => l.id === m.land)?.name ?? m.land})` : 'Bundesebene'}
+      </p>
       <div className="pruef-wahlen">
         <WertWahl name={`w-${m.id}`} titel="Wirksamkeit" wert={wert.wirksamkeit} onWahl={(w) => onAendern({ wirksamkeit: w }, true)} />
         <WertWahl name={`u-${m.id}`} titel="Umsetzbarkeit" wert={wert.umsetzbarkeit} onWahl={(u) => onAendern({ umsetzbarkeit: u }, true)} />

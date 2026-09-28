@@ -7,6 +7,8 @@ export interface Spieler {
   name: string
   partei: Partei
   rolle: Rolle | null
+  /** Bundesland (Kürzel) – bei Ursachen in Länderzuständigkeit zählt dann das Landesprogramm. */
+  land: string | null
 }
 
 export interface RundenErgebnis {
@@ -14,13 +16,16 @@ export interface RundenErgebnis {
   /** Index des Spielers, der das Problem genannt hat (0 = A, 1 = B). */
   sprecher: 0 | 1
   rolle: Rolle | null
+  /** Bundesland der Person, die das Problem genannt hat. */
+  land: string | null
   zusammenfassung: string
   /** Vorläufige Einschätzung bei ungeprüften Themen (ohne Punkte und Links). */
   einschaetzung: string | null
   thema: Thema | null
   /**
    * gewertet: beide Parteien für das Thema erfasst · unvollstaendig: Thema bekannt, aber für
-   * mindestens eine der beiden noch nicht erfasst (keine Punkte) · ungeprueft: Thema unbekannt.
+   * mindestens eine der beiden noch nicht erfasst oder ohne aktuelles Landesprogramm (keine Punkte)
+   * · ungeprueft: Thema unbekannt.
    */
   status: 'gewertet' | 'unvollstaendig' | 'ungeprueft'
   /** Ergebnisse der beiden gewählten Parteien (bei „gewertet“ und „unvollstaendig“). */
@@ -29,7 +34,7 @@ export interface RundenErgebnis {
   punkte: [number, number]
   /** Parteien mit der insgesamt besten Lösung (alle Parteien der DB, für die das Thema erfasst ist). */
   beste: ParteiErgebnis[]
-  /** Parteien, für die das Thema noch nicht erfasst ist. */
+  /** Parteien ohne Wertung (noch nicht erfasst oder kein aktuelles Landesprogramm). */
   nichtErfasst: Partei[]
 }
 

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useDaten } from '../data/kontext'
-import { analysiere, AnalyseFehler, type Daten } from '../data/quelle'
+import { analysiere, AnalyseFehler, ebenenFuer, type Daten } from '../data/quelle'
 import { ROLLEN } from '../data/rollen'
 import type { AnalyseAntwort, Nachricht } from '../data/types'
-import { besteParteien, bewertePartei, findeAbdeckung, werteRunde } from '../logic/bewertung'
+import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
 import type { RundenErgebnis, Spieler } from '../spiel'
 import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
@@ -17,31 +17,35 @@ function werteAus(
   nr: number,
   sprecher: 0 | 1,
   spieler: [Spieler, Spieler],
-  { themen, parteien, massnahmen, abdeckung }: Daten,
+  daten: Daten,
 ): RundenErgebnis {
-  const rolle = spieler[sprecher].rolle
+  const { themen, parteien, massnahmen, abdeckung } = daten
+  const { rolle, land } = spieler[sprecher]
   const thema = themen.find((t) => t.id === analyse.thema_id) ?? null
 
   // Ohne Thema in der Datenbank: ungeprüft. Die Review-Warteschlange füllt die Edge Function.
   if (!thema) {
     return {
-      nr, sprecher, rolle, thema: null, status: 'ungeprueft',
+      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft',
       zusammenfassung: analyse.zusammenfassung, einschaetzung: analyse.einschaetzung ?? null,
       ergebnisse: null, punkte: [0, 0], beste: [], nichtErfasst: [],
     }
   }
 
-  const ea = bewertePartei(spieler[0].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung)
-  const eb = bewertePartei(spieler[1].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung)
+  const ebenen = ebenenFuer(daten, land)
+  const ea = bewertePartei(spieler[0].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
+  const eb = bewertePartei(spieler[1].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
   const { status, punkte } = werteRunde(ea, eb)
   return {
-    nr, sprecher, rolle, thema, status,
+    nr, sprecher, rolle, land, thema, status,
     zusammenfassung: analyse.zusammenfassung,
     einschaetzung: null,
     ergebnisse: [ea, eb],
     punkte,
-    beste: besteParteien(parteien, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung),
-    nichtErfasst: parteien.filter((p) => !findeAbdeckung(abdeckung, p.id, thema.id)),
+    beste: besteParteien(parteien, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen),
+    nichtErfasst: parteien.filter(
+      (p) => !bewertePartei(p, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen).abdeckung,
+    ),
   }
 }
 
@@ -65,6 +69,7 @@ export function Runde({
 
   const aktiv = spieler[sprecher]
   const rolle = ROLLEN.find((r) => r.id === aktiv.rolle)?.label
+  const land = daten.laender.find((l) => l.id === aktiv.land)?.name
 
   async function absenden(e: { preventDefault(): void }) {
     e.preventDefault()
@@ -81,6 +86,7 @@ export function Runde({
       analyse = await analysiere(daten, {
         verlauf: neu,
         rolle: aktiv.rolle,
+        land: aktiv.land,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
       })
     } catch (err) {
@@ -110,6 +116,7 @@ export function Runde({
         <span className="am-zug-label">{aktiv.partei.kurzname}</span>
         <strong>{aktiv.name} ist dran</strong>
         {rolle && <span className="rolle-chip">{rolle}</span>}
+        {land && <span className="rolle-chip">{land}</span>}
       </div>
       <h2>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">

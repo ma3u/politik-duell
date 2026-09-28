@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useDaten } from '../data/kontext'
+import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
 import type { Massnahme } from '../data/types'
 import type { ParteiErgebnis } from '../logic/bewertung'
@@ -8,16 +8,20 @@ import type { RundenErgebnis, Spieler } from '../spiel'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
 
-function seitenText(url: string) {
+function seitenText(url: string, land: boolean) {
   const seite = /#page=(\d+)/.exec(url)?.[1]
-  return seite ? `Programm, S. ${seite}` : 'Programm'
+  const name = land ? 'Landesprogramm' : 'Programm'
+  return seite ? `${name}, S. ${seite}` : name
 }
+
+const EVIDENZ_TEXT = { gemischt: 'Wirkung in der Forschung umstritten', offen: 'Wirkung bisher kaum untersucht' }
+
 
 export function MassnahmeBelege({ massnahme }: { massnahme: Massnahme }) {
   return (
     <span className="belege">
       <a href={massnahme.beleg_programm_url} target="_blank" rel="noopener noreferrer">
-        {seitenText(massnahme.beleg_programm_url)}
+        {seitenText(massnahme.beleg_programm_url, !!massnahme.land)}
       </a>
       {massnahme.beleg_studie_url && (
         <>
@@ -56,7 +60,11 @@ function ParteiKarte({
 }) {
   const { ursachen } = useDaten()
   const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? ''
-  const leer = ohneTreffer(ergebnis)
+  const landName = useLandName()
+  const leer = ohneTreffer(ergebnis, landName)
+  const programme = ergebnis.programme.length
+    ? ergebnis.programme
+    : [{ land: null, url: ergebnis.partei.programm_url }]
   return (
     <article
       className={`partei-karte enthuellen${gewinnt ? ' gewinnt' : ''}`}
@@ -87,9 +95,14 @@ function ParteiKarte({
           <p>{leer.lang}</p>
           {ergebnis.abdeckung?.begruendung && <p className="keine-begruendung">{ergebnis.abdeckung.begruendung}</p>}
           <span className="belege">
-            <a href={ergebnis.partei.programm_url} target="_blank" rel="noopener noreferrer">
-              Wahlprogramm
-            </a>
+            {programme.map((p, i) => (
+              <span key={p.land ?? 'bund'}>
+                {i > 0 && ' · '}
+                <a href={p.url} target="_blank" rel="noopener noreferrer">
+                  {p.land ? `Landeswahlprogramm ${landName(p.land)}` : 'Wahlprogramm'}
+                </a>
+              </span>
+            ))}
           </span>
         </div>
       ) : (
@@ -103,6 +116,10 @@ function ParteiKarte({
               {t.ursachen_ids.length > 1 && ` · × ${t.ursachen_ids.length} Ursachen`}
             </p>
             <p className="massnahme-ursachen">Setzt an bei: {t.ursachen_ids.map(ursacheText).join(', ')}</p>
+            {t.massnahme.land && <p className="massnahme-ursachen">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
+            {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
+              <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>
+            )}
             <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
             {t.rollenBegruendung && <p className="massnahme-rolle">Rolle: {t.rollenBegruendung}</p>}
             <MassnahmeBelege massnahme={t.massnahme} />
@@ -131,6 +148,9 @@ export function Aufloesung({
   }, [])
 
   const rolle = ROLLEN.find((r) => r.id === runde.rolle)?.label
+  const landName = useLandName()
+  const ohneWertung = runde.ergebnisse?.filter((e) => !e.abdeckung) ?? []
+  const keinLandesprogramm = ohneWertung.filter((e) => e.fehlt?.grund === 'kein_landesprogramm')
 
   return (
     <main className="seite aufloesung">
@@ -139,6 +159,7 @@ export function Aufloesung({
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
         {rolle && ` · Rolle: ${rolle}`}
+        {runde.land && ` · ${landName(runde.land)}`}
       </p>
 
       {!enthuellt ? (
@@ -173,10 +194,13 @@ export function Aufloesung({
           </div>
           <p className="rundensieger enthuellen" style={{ animationDelay: '900ms' }}>
             {runde.status === 'unvollstaendig'
-              ? `Keine Wertung: Für ${runde.ergebnisse
-                  .filter((e) => !e.abdeckung)
-                  .map((e) => e.partei.kurzname)
-                  .join(' und ')} ist dieses Thema noch nicht erfasst. Fehlende Daten kosten keine Partei einen Punkt.`
+              ? keinLandesprogramm.length
+                ? `Keine Wertung: ${keinLandesprogramm.map((e) => e.partei.kurzname).join(' und ')} ${
+                    keinLandesprogramm.length > 1 ? 'haben' : 'hat'
+                  } in ${landName(runde.land ?? '')} kein aktuelles Landeswahlprogramm. Fehlende Daten kosten keine Partei einen Punkt.`
+                : `Keine Wertung: Für ${ohneWertung
+                    .map((e) => e.partei.kurzname)
+                    .join(' und ')} ist dieses Thema noch nicht erfasst. Fehlende Daten kosten keine Partei einen Punkt.`
               : runde.punkte[0] === 1 && runde.punkte[1] === 1
               ? 'Gleichstand – beide bekommen einen Punkt.'
               : runde.punkte[0] === 1
@@ -207,7 +231,9 @@ export function Aufloesung({
             )}
             {runde.nichtErfasst.length > 0 && (
               <p className="beste-hinweis">
-                Noch nicht erfasst und daher nicht verglichen: {runde.nichtErfasst.map((p) => p.kurzname).join(', ')}.
+                Ohne Wertung und daher nicht verglichen (noch nicht erfasst
+                {runde.land ? ' oder ohne aktuelles Landeswahlprogramm' : ''}):{' '}
+                {runde.nichtErfasst.map((p) => p.kurzname).join(', ')}.
               </p>
             )}
           </section>

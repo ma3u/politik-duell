@@ -83,6 +83,8 @@ describe('pruefeAnfrage', () => {
 
   it('akzeptiert eine gültige Anfrage', () => {
     expect(pruefeAnfrage(gueltig).rolle).toBe('mieter')
+    expect(pruefeAnfrage(gueltig).land).toBeNull()
+    expect(pruefeAnfrage({ ...gueltig, land: 'ST' }).land).toBe('ST')
   })
 
   it.each([
@@ -92,6 +94,7 @@ describe('pruefeAnfrage', () => {
     ['mit KI als letzter Nachricht', { ...gueltig, verlauf: [spieler('a'), ki('b')] }],
     ['mit unbekannter Rolle', { ...gueltig, rolle: 'koenig' }],
     ['mit gleicher Partei', { ...gueltig, parteien: [1, 1] }],
+    ['mit ungültigem Bundesland', { ...gueltig, land: 'Sachsen-Anhalt' }],
     ['mit zu langem Verlauf', { ...gueltig, verlauf: Array(7).fill(spieler('a')) }],
   ])('lehnt Anfrage %s ab', (_, anfrage) => {
     expect(() => pruefeAnfrage(anfrage)).toThrow(EingabeFehler)

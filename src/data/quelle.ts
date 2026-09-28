@@ -1,7 +1,18 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import { analysiereAsync } from '../logic/analyse'
-import { ABDECKUNG, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from './mock'
-import type { AbdeckungEintrag, AnalyseAnfrage, AnalyseAntwort, Massnahme, Partei, Thema, Ursache } from './types'
+import type { Ebenen } from '../logic/bewertung'
+import { ABDECKUNG, LAENDER, LANDESPROGRAMME, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from './mock'
+import type {
+  AbdeckungEintrag,
+  AnalyseAnfrage,
+  AnalyseAntwort,
+  Land,
+  Landesprogramm,
+  Massnahme,
+  Partei,
+  Thema,
+  Ursache,
+} from './types'
 
 // Datenquelle der App: Supabase (Standard, wenn konfiguriert) oder die
 // eingebauten Beispieldaten (VITE_DATENQUELLE=mock, z. B. für Offline-Demos).
@@ -14,6 +25,9 @@ export interface Daten {
   massnahmen: Massnahme[]
   /** Welche Themen je Partei erfasst sind – fehlt ein Eintrag, wird nicht gewertet. */
   abdeckung: AbdeckungEintrag[]
+  /** Länder mit erfassten Landesprogrammen und die Programme der laufenden Wahlperiode. */
+  laender: Land[]
+  landesprogramme: Landesprogramm[]
 }
 
 const URL = import.meta.env.VITE_SUPABASE_URL as string | undefined
@@ -30,6 +44,8 @@ export const MOCK_DATEN: Daten = {
   ursachen: URSACHEN,
   massnahmen: MASSNAHMEN,
   abdeckung: ABDECKUNG,
+  laender: LAENDER,
+  landesprogramme: LANDESPROGRAMME,
 }
 
 /**
@@ -41,12 +57,14 @@ export const sindBeispieldaten = (d: Daten) =>
 
 export async function ladeDaten(): Promise<Daten> {
   if (!supabase) return MOCK_DATEN
-  const [p, t, u, m, a] = await Promise.all([
+  const [p, t, u, m, a, l, lp] = await Promise.all([
     supabase.from('parteien').select('*').order('id'),
     supabase.from('themen').select('*').order('id'),
     supabase.from('ursachen').select('*').order('id'),
     supabase.from('massnahmen').select('*').order('id'),
     supabase.from('abdeckung').select('*'),
+    supabase.from('laender').select('*').order('name'),
+    supabase.from('landesprogramme').select('*'),
   ])
   const fehler = p.error ?? t.error ?? u.error ?? m.error
   if (fehler) throw new Error(fehler.message)
@@ -60,8 +78,23 @@ export async function ladeDaten(): Promise<Daten> {
     ursachen: u.data as Ursache[],
     massnahmen: m.data as Massnahme[],
     abdeckung: a.data as AbdeckungEintrag[],
+    // Fehlen die Tabellen (Migration 20261001000000_laender.sql noch nicht ausgeführt),
+    // gibt es keine Bundesland-Auswahl – gewertet wird dann nur mit Bundesprogrammen.
+    laender: l.error ? [] : (l.data as Land[]),
+    landesprogramme: lp.error ? [] : (lp.data as Landesprogramm[]),
   }
 }
+
+/** Länder, für die schon Landesprogramme ausgewertet sind – nur sie stehen zur Wahl. */
+export const waehlbareLaender = (d: Daten): Land[] =>
+  d.laender.filter((l) => d.abdeckung.some((a) => a.land === l.id))
+
+/** Zuständigkeiten für die Wertung (siehe bewertePartei). */
+export const ebenenFuer = (d: Daten, land: string | null): Ebenen => ({
+  land,
+  ursachen: d.ursachen,
+  landesprogramme: d.landesprogramme,
+})
 
 /** Zufällige Sitzungs-ID nur für das Rate-Limit – ohne Bezug zu einer Person. */
 let sitzungImSpeicher: string | null = null
