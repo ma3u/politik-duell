@@ -33,5 +33,637 @@
       "ebene": "bund",
       "schlagwoerter": ["angehoerige", "mutter pflegen", "vater pflegen", "zu hause pflegen", "kurzzeitpflege", "tagespflege", "verhinderungspflege", "beruf und pflege", "erschoepft"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6223,
+      "name": "Investitionskosten der Heime nicht mehr den Bewohnern anlasten",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Die Investitionskosten machen einen spürbaren Teil der Eigenanteile im Heim aus; übernehmen die Länder sie, sinkt die Belastung direkt. Der Bund kann es vorschreiben, zahlen müssten aber die Länder, deren Finanzierung offen ist.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6224,
+      "name": "Private Pflegeversicherung in den Finanzausgleich einbeziehen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Ausgleich zwischen sozialer und privater Pflegeversicherung verbreitert die Finanzierung und kann Beiträge oder Eigenanteile entlasten; wie viel davon bei den Eigenanteilen ankommt, hängt von der Verwendung ab. Verfassungsrechtlich umstritten, aber per Bundesgesetz möglich.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6225,
+      "name": "Private und betriebliche Pflegezusatzvorsorge fördern",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zusatzversicherungen können künftige Eigenanteile abdecken; bisher haben nur wenige eine, Geringverdienende und heute Pflegebedürftige erreicht die Förderung kaum. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6226,
+      "name": "Leistungen für häusliche Pflege zu einem flexiblen Budget bündeln",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt daran an, dass Entlastungsleistungen wenig genutzt werden, weil sie kompliziert und starr sind; ob ein Budget die Nutzung deutlich erhöht, ist noch wenig untersucht. Per Bundesgesetz umsetzbar, erste Schritte gibt es seit 2025.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6227,
+      "name": "Lohnersatz für pflegende Angehörige, die ihre Arbeitszeit reduzieren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Lohnersatz ähnlich dem Elterngeld entlastet pflegende Angehörige finanziell und erleichtert, Beruf und Pflege zu verbinden; die Kosten sind je nach Ausgestaltung hoch, und ob mehr Angehörige die Leistung nutzen als die bisherige Pflegezeit, ist offen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6228,
+      "name": "Tages-, Nacht- und Kurzzeitpflege sowie Beratung ausbauen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr erreichbare Entlastungsangebote und Beratung setzen daran an, dass Angehörige die Hauptlast tragen; die Plätze fehlen aber oft auch wegen fehlender Pflegekräfte. Der Bund kann Leistungen und Förderung erhöhen, Planung und Bau liegen bei Ländern und Trägern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6229,
+      "name": "Arbeitsbedingungen in der Pflege verbessern (Personalbemessung, verlässliche Dienstpläne, weniger Dokumentation)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Arbeitsbedingungen setzen am wichtigsten Grund an, warum Pflegekräfte den Beruf verlassen oder in Teilzeit gehen; eine verbindliche Personalbemessung braucht aber zunächst mehr Personal. Per Bundesgesetz umsetzbar, die Umsetzung dauert Jahre.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6230,
+      "name": "Ausgestiegene Pflegekräfte zurückgewinnen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Befragungen zeigen, dass viele ehemalige Pflegekräfte bei besseren Bedingungen zurückkehren würden; wie viele es tatsächlich tun, hängt davon ab, ob sich die Bedingungen spürbar ändern. Ohne eigene Maßnahmen bleibt es ein Ziel.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6231,
+      "name": "Pflegekräfte im Ausland anwerben, Anerkennung beschleunigen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zuwanderung hat einen großen Teil des Beschäftigungszuwachses in der Pflege getragen; lange Anerkennungsverfahren und Sprachhürden bremsen, und die Anerkennung liegt bei den Ländern. Der Bund kann Verfahren vereinfachen und Anwerbung fördern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6232,
+      "name": "Mehr Befugnisse und Aufstiegswege für Pflegefachpersonen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Verantwortung und Aufstiegsmöglichkeiten machen den Beruf attraktiver; wie stark das die Zahl der Pflegekräfte erhöht, ist kaum belegt. Per Bundesgesetz umsetzbar, erste Schritte wurden 2025 beschlossen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6233,
+      "name": "Bessere Bezahlung in der Pflege",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Höhere Löhne machen den Beruf attraktiver und halten Pflegekräfte; seit der Tarifpflicht von 2022 sind die Löhne deutlich gestiegen, was aber auch die Eigenanteile erhöht hat. Die Refinanzierung ist per Bundesgesetz möglich, die Finanzierung ist offen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6234,
+      "name": "Prävention und Reha, um Pflegebedürftigkeit hinauszuzögern",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Prävention und Rehabilitation können Pflegebedürftigkeit bei Einzelnen verzögern; an der Alterung der Bevölkerung ändern sie nichts, und ihre Wirkung auf die Zahl der Pflegebedürftigen ist schwer zu belegen. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6235,
+      "name": "Pflegeausbildung verbessern und ausbauen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Ausbildungsbedingungen können mehr Menschen in den Beruf bringen und Abbrüche verringern; die Ausbildung ist seit 2020 bereits vergütet und schulgeldfrei, weitere Effekte sind schwer abzuschätzen. Per Bundesgesetz und mit den Ländern umsetzbar.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6236,
+          "instrument": 6225,
+          "beschreibung": "Pflegezusatzversicherungen steuerlich besser absetzbar machen (Prüfauftrag)",
+          "ursachen_ids": [1002],
+          "zitat": "Bezahlbare Pflegezusatzversicherungen können die Finanzierungslücke in der Pflege schließen. Wir prüfen die bessere steuerliche Absetzbarkeit solcher Modelle als Teil einer nachhaltigen Vorsorge.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=71",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6237,
+          "instrument": 6226,
+          "beschreibung": "Pflegebudget, das flexibel für pflegerische Leistungen eingesetzt werden kann",
+          "ursachen_ids": [1004],
+          "zitat": "Wir wollen mehr Vereinfachung mit einem Pflegebudget erreichen, das flexibel für pflegerische Leistungen eingesetzt werden kann.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=71",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6238,
+          "instrument": 6234,
+          "beschreibung": "Pflegebedürftigkeit durch Prävention und Reha aufschieben",
+          "ursachen_ids": [1003],
+          "zitat": "Mit Prävention und Reha wollen wir Pflegebedürftigkeit möglichst lange aufschieben.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6239,
+          "instrument": 6229,
+          "beschreibung": "Planbare Einsatzzeiten, Springerpools, Aufstiegsmöglichkeiten",
+          "ursachen_ids": [1001],
+          "zitat": "Um dem Personalnotstand entgegenzuwirken, setzen wir auf attraktive Arbeitsbedingungen wie planbare Einsatzzeiten und Springerpools zum Abfedern von Belastungsspitzen, Aufstiegsmöglichkeiten, neue Berufsbilder und Anwerbungen im Ausland.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6240,
+          "instrument": 6231,
+          "beschreibung": "Pflegekräfte im Ausland anwerben",
+          "ursachen_ids": [1001],
+          "zitat": "Um dem Personalnotstand entgegenzuwirken, setzen wir auf attraktive Arbeitsbedingungen wie planbare Einsatzzeiten und Springerpools zum Abfedern von Belastungsspitzen, Aufstiegsmöglichkeiten, neue Berufsbilder und Anwerbungen im Ausland.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6241,
+          "instrument": 6232,
+          "beschreibung": "Rolle der Pflegefachpersonen stärken, Dokumentation vereinfachen",
+          "ursachen_ids": [1001],
+          "zitat": "Wir stärken die Rolle von Pflegefachpersonen in der gesundheitlichen Versorgung und vereinfachen Dokumentationsprozesse, die viel Zeit in Anspruch nehmen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6242,
+          "beschreibung": "Pflegekosten-Deckel: Eigenanteile in der stationären Pflege auf 1.000 Euro im Monat begrenzen",
+          "ursachen_ids": [1002],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein Deckel senkt die pflegebedingten Eigenanteile direkt und für alle Heimbewohner; Unterkunft, Verpflegung und Investitionskosten bleiben aber, und die Mehrkosten von mehreren Milliarden Euro im Jahr müssen über Beiträge oder Steuern finanziert werden.",
+          "zitat": "Die hohen Eigenanteile bei den Pflegekosten in der stationären Langzeitpflege wollen wir durch eine Begrenzung auf 1.000 Euro pro Monat (sogenannter Pflegekosten-Deckel) maßgeblich reduzieren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=31",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6243,
+          "instrument": 6223,
+          "beschreibung": "Investitionskosten der Heime nicht mehr vollständig auf die Bewohner umlegen",
+          "ursachen_ids": [1002],
+          "zitat": "Außerdem sollen die Investitionsaufwendungen der Heime zukünftig nicht mehr vollständig auf die Bewohner umgelegt werden dürfen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6244,
+          "instrument": 6224,
+          "beschreibung": "Private Pflegeversicherungen in den Risikostrukturausgleich einbeziehen",
+          "ursachen_ids": [1002],
+          "zitat": "Im ersten Schritt wollen wir so schnell wie möglich die privaten Pflegeversicherungen in den Risikostrukturausgleich zwischen allen Pflegekassen und damit in eine faire und leistungsgerechte Finanzierung einbeziehen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6245,
+          "instrument": 6227,
+          "beschreibung": "Familienpflegezeit und Familienpflegegeld analog zum Elterngeld",
+          "ursachen_ids": [1004],
+          "zitat": "Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6246,
+          "instrument": 6228,
+          "beschreibung": "Beratung und Anlaufstellen, Tages- und Nachtpflege ausbauen",
+          "ursachen_ids": [1004],
+          "zitat": "Zugleich werden wir die Beratung, Vernetzung und Anlaufstellen für die Pflegebedürftigen und ihre Angehörigen ausbauen und neue Wohnformen verstetigen sowie die Tages- und Nachtpflegeeinrichtungen ausbauen",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6247,
+          "instrument": 6229,
+          "beschreibung": "Bundeseinheitliche bedarfsgerechte Personalausstattung",
+          "ursachen_ids": [1001],
+          "zitat": "Wir wollen zudem dafür sorgen, dass die bedarfsgerechte Personalausstattung bundeseinheitlich für alle Beschäftigtengruppen im Gesundheitswesen eingeführt wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6248,
+          "instrument": 6233,
+          "beschreibung": "Tarifgebundene Gehälter refinanzieren",
+          "ursachen_ids": [1001],
+          "zitat": "Die Stabilisierung der Kranken- und Pflegeversicherung wird finanziellen Spielraum schaffen, um tarifgebundene Gehälter zu refinanzieren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6249,
+          "instrument": 6232,
+          "beschreibung": "Befugnisse von Pflegefachpersonen erweitern",
+          "ursachen_ids": [1001],
+          "zitat": "die Befugnisse von Pflegefachpersonen erweitern",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6250,
+          "instrument": 6231,
+          "beschreibung": "Weltweite Anwerbung und Integration von Fachkräften ausbauen",
+          "ursachen_ids": [1001],
+          "zitat": "Um dem durch den demografischen Wandel bedingten Personalmangel entgegenzuwirken, werden wir die weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6251,
+          "instrument": 6235,
+          "beschreibung": "Praxisnahe und kostenfreie Ausbildung in den Gesundheitsfachberufen",
+          "ursachen_ids": [1001],
+          "zitat": "Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6252,
+          "instrument": 6234,
+          "beschreibung": "Angebote im Quartier fördern, um Pflegebedürftigkeit hinauszuzögern",
+          "ursachen_ids": [1003],
+          "zitat": "Wir wollen Angebote im Quartier, also vor Ort, fördern und so auch Pflegebedürftigkeit hinauszögern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=91",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6253,
+          "instrument": 6227,
+          "beschreibung": "Zeitlich begrenzter Lohnersatz und Rentenbeiträge für Angehörige, die für die Pflege Arbeitszeit reduzieren",
+          "ursachen_ids": [1004],
+          "zitat": "Wer die eigene Arbeitszeit für die Pflege reduziert, braucht finanzielle Unterstützung in Form eines zeitlich begrenzten Ausgleichs der entgangenen Einkünfte.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6254,
+          "instrument": 6228,
+          "beschreibung": "Tages- und Kurzzeitpflege stärken und ausbauen",
+          "ursachen_ids": [1004],
+          "zitat": "müssen zur besseren Vereinbarkeit von Pflege und Beruf die Angebote der Tages- und Kurzzeitpflege gestärkt und ausgebaut werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6255,
+          "instrument": 6226,
+          "beschreibung": "Leistungen flexibel kombinieren, etwa über ein Pflegebudget",
+          "ursachen_ids": [1004],
+          "zitat": "Pflegebedürftige sollen Pflege, therapeutische Leistungen oder Unterstützung bei der Haushaltsführung von professionellen Anbietern sowie ehrenamtlichen oder privaten Netzwerken flexibler als bisher in Anspruch nehmen und miteinander kombinieren können, zum Beispiel in Form eines Pflegebudgets.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6256,
+          "instrument": 6230,
+          "beschreibung": "Rückkehroffensive für ausgestiegene Pflegekräfte",
+          "ursachen_ids": [1001],
+          "zitat": "Fachkräfte, die aufgrund von Überlastung den Job verlassen haben, wollen wir mit einer Rückkehroffensive zurückgewinnen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6257,
+          "instrument": 6229,
+          "beschreibung": "Höhere Personalschlüssel",
+          "ursachen_ids": [1001],
+          "zitat": "Dieses Potenzial wollen wir durch die weitere Umsetzung höherer Personalschlüssel, mehr Kompetenzen und Eigenverantwortlichkeit für den Pflegeberuf sowie durch bessere Aufstiegschancen nutzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6258,
+          "instrument": 6232,
+          "beschreibung": "Mehr Kompetenzen und Aufstiegschancen für den Pflegeberuf",
+          "ursachen_ids": [1001],
+          "zitat": "Dieses Potenzial wollen wir durch die weitere Umsetzung höherer Personalschlüssel, mehr Kompetenzen und Eigenverantwortlichkeit für den Pflegeberuf sowie durch bessere Aufstiegschancen nutzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6259,
+          "instrument": 6235,
+          "beschreibung": "Ausbildungsbedingungen verbessern, Pflegeassistenz bundesweit einheitlich regeln",
+          "ursachen_ids": [1001],
+          "zitat": "Wir wollen die Ausbildungsbedingungen verbessern und die Pflegeassistenzausbildung bundesweit einheitlich regeln.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6260,
+          "instrument": 6224,
+          "beschreibung": "Ausgleich zwischen gesetzlicher und privater Pflegeversicherung auf dem Weg zur Pflegebürgerversicherung",
+          "ursachen_ids": [1002],
+          "zitat": "Auch in der Pflege wollen wir auf dem Weg hin zu einer Pflegebürgerversicherung mit einem Ausgleich zwischen gesetzlicher und privater Pflegeversicherung dafür sorgen, dass sich alle gerecht an der Finanzierung des Pflegerisikos beteiligen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=94",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6261,
+          "instrument": 6229,
+          "beschreibung": "Pflegeanbieter von doppelten Prüfungen und unnötigen Dokumentationspflichten befreien",
+          "ursachen_ids": [1001],
+          "zitat": "Wir Freie Demokraten befreien Pflegeanbieter von doppelten Prüfungen ohne Mehrwert, unnötigen Nachweis- und Dokumentationspflichten und überbordenden Vorgaben.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6262,
+          "instrument": 6228,
+          "beschreibung": "Niedrigschwellige Beratung ausbauen, auch für pflegende Kinder und Jugendliche",
+          "ursachen_ids": [1004],
+          "zitat": "Zugleich wollen wir die Situation und besonderen Bedürfnisse pflegender Kinder und Jugendlicher in den Blick nehmen und niedrigschwellige Beratungsangebote ausbauen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6263,
+          "instrument": 6231,
+          "beschreibung": "Mehr Pflegefachkräfte im In- und Ausland gewinnen, Anerkennung drastisch vereinfachen",
+          "ursachen_ids": [1001],
+          "zitat": "Wir wollen im Inland und Ausland mehr Pflegefachkräfte gewinnen. Dafür wollen wir Anerkennungsverfahren für ausländische … Pflegekräfte drastisch vereinfachen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6264,
+          "beschreibung": "Pflegepersonal durch digitale Anwendungen, Automatisierung und Robotik entlasten",
+          "ursachen_ids": [1001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Digitale Dokumentation und Assistenzsysteme können Pflegekräfte von Routinearbeit entlasten; wie viel Zeit das spart und ob Robotik in der Pflege breit einsetzbar ist, ist bisher kaum untersucht. Der Bund kann es fördern.",
+          "zitat": "Durch digitale Anwendungen, Automatisierung und Robotik wollen wir maßgeblich zur Entlastung des Pflegepersonals beitragen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=35",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6265,
+          "beschreibung": "Soziale Pflegeversicherung um eine kapitalgedeckte Komponente ergänzen",
+          "ursachen_ids": [1003],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein Kapitalstock kann die Beitragssätze dämpfen, wenn die Zahl der Pflegebedürftigen steigt; der bestehende Pflegevorsorgefonds ist klein, und ein neuer Kapitalstock wirkt erst langfristig. Per Bundesgesetz umsetzbar, der Aufbau braucht zusätzliche Mittel.",
+          "zitat": "Zur Stabilisierung der Beitragssätze wollen wir sie um eine kapitalgedeckte Komponente ergänzen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=35",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6266,
+          "instrument": 6225,
+          "beschreibung": "Anreize für private Pflegevorsorge, betriebliche Pflegevorsorge der Betriebsrente gleichstellen",
+          "ursachen_ids": [1002],
+          "zitat": "Zudem setzen wir uns für mehr Anreize für private Pflegevorsorge sowie für die Gleichbehandlung von betrieblicher Pflegevorsorge und Betriebsrente ein.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6267,
+          "beschreibung": "Häusliche Pflege durch Angehörige deutlich höher honorieren",
+          "ursachen_ids": [1004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein höheres Pflegegeld erkennt die Arbeit pflegender Angehöriger an und entlastet sie finanziell, verringert aber nicht ihre zeitliche und körperliche Belastung. Das Programm nennt keinen Betrag; die Mehrkosten trägt die Pflegeversicherung.",
+          "zitat": "Die Situation der Pflegebedürftigen und ihrer Angehörigen wollen wir erleichtern, indem wir die häusliche Pflege deutlich höher finanziell honorieren.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=29",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6268,
+          "instrument": 6228,
+          "beschreibung": "Ambulante und befristete stationäre Angebote für pflegende Angehörige ausweiten",
+          "ursachen_ids": [1004],
+          "zitat": "Die Unterstützung bei Krankheit oder Urlaubswunsch der pflegenden Angehörigen durch verbesserte ambulante und befristete stationäre Angebote ausgeweitet werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=29",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6269,
+          "instrument": 6230,
+          "beschreibung": "Ausgebildete Pflegekräfte durch bessere Bedingungen in den Beruf zurückholen",
+          "ursachen_ids": [1001],
+          "zitat": "sondern die Pflegefachkräfte durch bessere Bedingungen zurück in den Beruf zu holen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=113",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6270,
+          "beschreibung": "Solidarische Pflegevollversicherung, die alle pflegerischen Leistungen abdeckt",
+          "ursachen_ids": [1002],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 1,
+          "begruendung": "Eine Vollversicherung beseitigt die pflegebedingten Eigenanteile vollständig; Unterkunft und Verpflegung bleiben. Die Mehrkosten liegen bei deutlich über 10 Milliarden Euro im Jahr, die Finanzierung über eine Bürgerversicherung ist politisch und rechtlich offen.",
+          "zitat": "Unsere solidarische Pflegevollversicherung soll alle pflegerischen Leistungen abdecken",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "evidenz": "belegt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6271,
+          "instrument": 6230,
+          "beschreibung": "Bundesweite Offensive zur Rückanwerbung von Pflegekräften",
+          "ursachen_ids": [1001],
+          "zitat": "Wir fordern eine bundesweite Offensive zur Rückanwerbung von Pflegekräften und anderen Gesundheitsarbeiter*innen, die ihren Beruf verlassen haben, außerdem eine Ausbildungsoffensive",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6272,
+          "instrument": 6235,
+          "beschreibung": "Ausbildungsoffensive",
+          "ursachen_ids": [1001],
+          "zitat": "Wir fordern eine bundesweite Offensive zur Rückanwerbung von Pflegekräften und anderen Gesundheitsarbeiter*innen, die ihren Beruf verlassen haben, außerdem eine Ausbildungsoffensive",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6273,
+          "instrument": 6229,
+          "beschreibung": "Gute Arbeitsbedingungen und Entlastung der Beschäftigten in Pflegeeinrichtungen",
+          "ursachen_ids": [1001],
+          "zitat": "Wir setzen uns für einen Systemwechsel in der Pflege ein: Für gute Arbeitsbedingungen und Entlastung der Beschäftigten in den Pflegeeinrichtungen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6274,
+          "instrument": 6223,
+          "beschreibung": "Länder verpflichten, Investitions- und Ausbildungskosten zu übernehmen; Kosten für Unterkunft und Verpflegung deckeln",
+          "ursachen_ids": [1002],
+          "zitat": "Die nicht von der Pflegeversicherung erfassten Heimkosten (Unterbringung und Verpflegung) wollen wir deckeln und die Bundesländer verpflichten, die realen Investitionskosten und Ausbildungskosten zu übernehmen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6275,
+          "beschreibung": "Schonvermögen für Pflegebedürftige erhöhen",
+          "ursachen_ids": [1002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein höheres Schonvermögen schützt Erspartes, bevor die Sozialhilfe einspringt; die Eigenanteile selbst sinken dadurch nicht. Per Bundesgesetz umsetzbar, die Mehrkosten tragen die Sozialhilfeträger.",
+          "zitat": "Kurzfristig muss das Schonvermögen erhöht werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6276,
+          "instrument": 6233,
+          "beschreibung": "Lohnlücke zwischen Alten- und Krankenpflege von rund 300 Euro schließen",
+          "ursachen_ids": [1001],
+          "zitat": "Trotzdem besteht noch eine Lohnlücke von etwa 300 Euro. Diese muss geschlossen werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6277,
+          "beschreibung": "Sechs Wochen Freistellung mit vollem, arbeitgeberfinanziertem Lohnausgleich beim ersten Pflegefall in der Familie",
+          "ursachen_ids": [1004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Eine bezahlte Freistellung hilft Angehörigen, einen neuen Pflegefall zu organisieren; die langfristige Belastung bleibt. Die Kosten tragen die Arbeitgeber, was vor allem kleine Betriebe belastet.",
+          "zitat": "Wir wollen für alle Beschäftigten sechs Wochen Freistellung bei vollem arbeitgeberfinanziertem Lohnausgleich beim ersten Auftreten eines familiären Pflegefalls",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6278,
+          "instrument": 6228,
+          "beschreibung": "Wohnortnahe, nichtkommerzielle Tages- und Kurzzeitpflege",
+          "ursachen_ids": [1004],
+          "zitat": "Die größte Entlastung sowohl für Menschen mit Pflegebedarf als auch für ihre pflegenden Angehörigen sind Angebote einer wohnortnahen, nichtkommerziellen und von einer solidarischen Pflegevollversicherung abgedeckten professionellen Tages- und Kurzzeitpflege",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
