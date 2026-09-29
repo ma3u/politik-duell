@@ -14,17 +14,17 @@
     },
     {
       "id": 1002,
-      "beschreibung": "Steigende Eigenanteile im Pflegeheim (im ersten Jahr im Schnitt über 3.300 Euro im Monat)",
+      "beschreibung": "Steigende Eigenanteile im Heim für Pflege, Ausbildung, Unterkunft und Verpflegung (mit Investitionskosten im ersten Jahr im Schnitt 3.364 Euro im Monat)",
       "quelle_url": "https://www.vdek.com/presse/pressemitteilungen/2026/stationaere-pflege-eigenanteile-juli-2026.html",
       "ebene": "bund",
       "schlagwoerter": ["eigenanteil", "kosten", "teuer", "zuzahlung", "sozialamt", "erspartes", "heimkosten", "rechnung"]
     },
     {
       "id": 1003,
-      "beschreibung": "Durch die Alterung steigt die Zahl der Pflegebedürftigen deutlich",
-      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/03/PD23_124_12.html",
+      "beschreibung": "Die Zahl der Pflegebedürftigen steigt stärker als durch die Alterung allein, auch wegen des 2017 weiter gefassten Pflegebedürftigkeitsbegriffs",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/12/PD24_478_224.html",
       "ebene": "bund",
-      "schlagwoerter": ["immer mehr", "alt werden", "demografie", "babyboomer", "hochbetagt"]
+      "schlagwoerter": ["immer mehr", "alt werden", "demografie", "babyboomer", "hochbetagt", "pflegegrad 1", "einstufung", "begutachtung"]
     },
     {
       "id": 1004,
@@ -32,6 +32,14 @@
       "quelle_url": "https://www.zqp.de/thema/entlastung-pflegende/",
       "ebene": "bund",
       "schlagwoerter": ["angehoerige", "mutter pflegen", "vater pflegen", "zu hause pflegen", "kurzzeitpflege", "tagespflege", "verhinderungspflege", "beruf und pflege", "erschoepft"]
+    },
+    {
+      "id": 1005,
+      "beschreibung": "Die Länder fördern die Investitionskosten der Heime kaum; Bewohner zahlen dafür im Schnitt über 500 Euro im Monat",
+      "quelle_url": "https://www.iges.com/kunden/gesundheit/forschungsergebnisse/2024/investitionskosten-von-pflegeeinrichtungen/index_ger.html",
+      "ebene": "land",
+      "schlagwoerter": ["investitionskosten", "investitionskosten heim", "gebaeude", "instandhaltung", "land zahlt nicht", "pflegewohngeld"],
+      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung aus 1002 herausgelöst, weil die Investitionskosten Ländersache sind (§ 9 SGB XI); die Programme waren schon nach Maßnahmen gegen die Eigenanteile durchsucht."
     }
   ],
   "instrumente": [
@@ -138,6 +146,30 @@
       "umsetzbarkeit": 3,
       "begruendung": "Bessere Ausbildungsbedingungen können mehr Menschen in den Beruf bringen und Abbrüche verringern; die Ausbildung ist seit 2020 bereits vergütet und schulgeldfrei, weitere Effekte sind schwer abzuschätzen. Per Bundesgesetz und mit den Ländern umsetzbar.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 6447,
+      "name": "Land übernimmt die Investitionskosten der Heime (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Übernimmt das Land die Investitionskosten, sinkt der Eigenanteil im Heim direkt um im Schnitt rund 500 Euro im Monat; Unterkunft, Verpflegung und pflegebedingte Kosten bleiben. Das Land kann es selbst regeln, die Kosten von vielen Millionen Euro im Jahr muss es dauerhaft im Haushalt tragen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6448,
+      "name": "Land beteiligt sich an den Investitionskosten, ohne Umfang (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Landesbeteiligung an den Investitionskosten senkt den Eigenanteil; ohne Angabe, wie viel das Land übernimmt, bleibt die Entlastung offen. Das Land kann es selbst regeln.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6449,
+      "name": "Landesprogramm für Investitionen und Sanierung von Pflegeeinrichtungen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Fördergeld für Bau und Sanierung dämpft, was Heime als Investitionskosten weitergeben, betrifft aber nur geförderte Einrichtungen und senkt den laufenden Eigenanteil der übrigen Bewohner nicht. Das Land kann ein Programm selbst auflegen.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -233,7 +265,7 @@
           "id": 6243,
           "instrument": 6223,
           "beschreibung": "Investitionskosten der Heime nicht mehr vollständig auf die Bewohner umlegen",
-          "ursachen_ids": [1002],
+          "ursachen_ids": [1005],
           "zitat": "Außerdem sollen die Investitionsaufwendungen der Heime zukünftig nicht mehr vollständig auf die Bewohner umgelegt werden dürfen.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=31",
           "stand": "2026-09-29",
@@ -606,7 +638,7 @@
           "id": 6274,
           "instrument": 6223,
           "beschreibung": "Länder verpflichten, Investitions- und Ausbildungskosten zu übernehmen; Kosten für Unterkunft und Verpflegung deckeln",
-          "ursachen_ids": [1002],
+          "ursachen_ids": [1002, 1005],
           "zitat": "Die nicht von der Pflegeversicherung erfassten Heimkosten (Unterbringung und Verpflegung) wollen wir deckeln und die Bundesländer verpflichten, die realen Investitionskosten und Ausbildungskosten zu übernehmen",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
           "stand": "2026-09-29",
@@ -719,6 +751,299 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 13. 6. 2026) durchsucht, Kapitel Pflege (S. 28–29) und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil: Das Programm fordert auf Bundesebene gedeckelte Eigenanteile (Ursache 1002, Bund), nennt aber keine Landesmaßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6450,
+          "instrument": 6448,
+          "beschreibung": "Landesbeteiligung an Investitionskosten und Ausbildungsumlage, Landesinvestitionsprogramm für Pflegeeinrichtungen",
+          "ursachen_ids": [1005],
+          "zitat": "Indem wir durch eine … Landesbeteiligung an den Investitionskosten und der Ausbildungsumlage die … Eigenanteile reduzieren, machen wir Pflege bezahlbarer.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=78",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 9. 6. 2026) durchsucht, Kapitel Gesundheit und Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6451,
+          "instrument": 6449,
+          "beschreibung": "Investitionen in Pflegeeinrichtungen fördern, wo die Versorgung sonst nicht gesichert wäre",
+          "ursachen_ids": [1005],
+          "zitat": "Notwendige Investitionen in Pflegeeinrichtungen werden dort gefördert, wo die Versorgung sonst nicht gesichert wäre.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=13",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 13. 6. 2026) durchsucht, Kapitel Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 9. 5. 2026) durchsucht, Kapitel Gesundheit und Pflege (S. 33–34) und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil: Das Programm will die Eigenanteile deckeln (Bundesrecht, Ursache 1002), nennt aber keine Landesmaßnahme zu den Investitionskosten (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6452,
+          "instrument": 6447,
+          "beschreibung": "Land übernimmt Investitions- und Ausbildungskosten aus dem Eigenanteil",
+          "ursachen_ids": [1005],
+          "zitat": "Ansätze sind die Übernahme der Investitions- und Ausbildungskosten aus dem Eigenanteil durch das Land.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=86",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 6. 6. 2026) durchsucht, Kapitel Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 15. 2. 2026) durchsucht, Kapitel Gesundheit und Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 25. 4. 2026) durchsucht, Kapitel Gesundheit und Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 22. 3. 2026) durchsucht, Kapitel Gesundheit und Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 17. 7. 2026) durchsucht, Kapitel Gesundheit und Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 11. 4. 2026) durchsucht, Kapitel Gesundheit und Pflege (S. 245) und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil: Das Programm will die Eigenanteile „wirksam begrenzen“, nennt dafür aber kein Instrument und keine Maßnahme zu den Investitionskosten (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 30. 5. 2026) durchsucht, Kapitel Pflege und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim: keine Maßnahme zu den Investitionskosten der Heime (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6453,
+          "beschreibung": "Investitionskostenzuschuss des Landes auf 300 Euro je Person und Monat erhöhen; 40.000 Euro je neuem Heimplatz",
+          "ursachen_ids": [1005],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein Zuschuss von 300 Euro im Monat deckt einen großen Teil der Investitionskosten und senkt den Eigenanteil spürbar; das Programm nennt keine Finanzierung, und Berlin müsste dafür dauerhaft einen dreistelligen Millionenbetrag im Jahr aufbringen.",
+          "zitat": "Zudem werden wir den Investitionskostenzuschuss des Landes Berlin pro zu pflegende Person und Monat auf 300 Euro erhöhen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=71",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6454,
+          "instrument": 6447,
+          "beschreibung": "Land übernimmt die Investitionskosten der Pflegeeinrichtungen vollständig",
+          "ursachen_ids": [1005],
+          "zitat": "das Sachsen-Anhalt die Investitionskosten der Pflegeeinrichtungen vollständig übernimmt.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=56",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6455,
+          "instrument": 6449,
+          "beschreibung": "Sanierungen vollstationärer Einrichtungen durch ein Investitionsprogramm unterstützen",
+          "ursachen_ids": [1005],
+          "zitat": "Die notwendigen Sanierungen von vollstationären Einrichtungen durch ein Investitionsprogramm unterstützen, damit die Eigenanteile durch die Kosten des Wohnens nicht schneller in die Höhe getrieben werden.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=12",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6456,
+          "beschreibung": "Pflegewohngeld: Land übernimmt Investitionskosten für Heimbewohner",
+          "ursachen_ids": [1005],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein Pflegewohngeld übernimmt die Investitionskosten für Bewohner, die sie nicht selbst tragen können, und entlastet sie direkt; wer mehr Einkommen oder Vermögen hat, zahlt weiter. Das Land kann es selbst einführen, die Kosten muss es dauerhaft tragen.",
+          "zitat": "Wir wollen, dass das Land seiner Verantwortung bei der Finanzierung der Investitionskosten in vollstationären Pflegeeinrichtungen nachkommt. Daher setzen wir uns für die Einführung eines Pflegewohngelds ein, dass die Heimbewohner*innen unmittelbar entlastet.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=140",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 7. 3. 2026) durchsucht, Kapitel Gesundheit und Pflege (S. 55–57, 77) und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil: Das Programm beschreibt die hohen Heimkosten, nennt aber keine Maßnahme zu den Investitionskosten (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6457,
+          "instrument": 6447,
+          "beschreibung": "Eigenanteile senken: Land übernimmt die Investitionskosten auf Grundlage der Landespflegeplanung",
+          "ursachen_ids": [1005],
+          "zitat": "Senkung der Eigenanteile […] durch Übernahme der […] der Einrichtungen durch das Land auf Grundlage der Landespflegeplanung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=66",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 25. 4. 2026) durchsucht, Kapitel Gesundheit (S. 23) und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil: Das Programm fordert gedeckelte Eigenanteile in der Pflegeversicherung (Bundesrecht, Ursache 1002), nennt aber keine Landesmaßnahme zu den Investitionskosten (Ursache 1005).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
     }
   ]
 }
