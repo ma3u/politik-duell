@@ -5,6 +5,7 @@ import { Fusszeile } from './components/Fusszeile'
 import { Kopfzeile } from './components/Kopfzeile'
 import { MockHinweis } from './components/MockHinweis'
 import { TestphaseHinweis } from './components/TestphaseHinweis'
+import { Testphasesperre } from './components/Testphasesperre'
 import { Punktestand } from './components/Punktestand'
 import { Runde } from './components/Runde'
 import { Setup } from './components/Setup'
@@ -21,6 +22,8 @@ import {
   type Daten,
 } from './data/quelle'
 import { RUNDEN_GESAMT, type RundenErgebnis, type Spieler } from './spiel'
+
+const NUR_TESTPHASE = import.meta.env.VITE_OFFEN !== 'true'
 
 type Phase = 'start' | 'setup' | 'runde' | 'aufloesung' | 'ende'
 
@@ -60,6 +63,20 @@ export default function App() {
     setRunden([])
     setPhase(ziel)
     scrollTo({ top: 0 })
+  }
+
+  // Nur geschlossene Testphase: Ohne gültigen Zugangslink kein Spiel. Mit VITE_OFFEN=true wieder öffentlich.
+  if (NUR_TESTPHASE && daten?.quelle === 'supabase' && !daten.testphase) {
+    return (
+      <div className="app">
+        {zugangsHinweis && (
+          <div className="mock-hinweis" role="alert">
+            {zugangsHinweis}
+          </div>
+        )}
+        <Testphasesperre />
+      </div>
+    )
   }
 
   return (
