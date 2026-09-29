@@ -6,7 +6,7 @@ Lizenz: [CC BY 4.0](LICENSE) für Auswahl, Struktur, Ursachen, Bewertungen und B
 
 Änderungen laufen per Pull Request mit Quellenpflicht. Jeder Pull Request wird automatisch geprüft (`npm run daten:pruefen`).
 
-> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind bisher für Miete, Schule und Arbeitsplätze erfasst (Schule und Arbeitsplätze als KI-Entwurf aus den Bundesprogrammen) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase.
+> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind bisher für Miete, Schule, Arbeitsplätze sowie Zuwanderung und Integration erfasst (die letzten drei als KI-Entwurf aus den Bundesprogrammen) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase.
 >
 > Die fiktiven Beispieldaten für „Mit Beispieldaten spielen“ und die Tests liegen getrennt in [`beispiel/`](beispiel/) und werden nicht weiter gepflegt.
 
@@ -120,7 +120,7 @@ Gemeint ist: Könnte die Regierung der Ebene, aus deren Programm die Maßnahme s
 
 Steht eine Maßnahme im **Bundesprogramm**, betrifft aber Länderzuständigkeit (etwa Schule), gilt einheitlich: 3 – der Bund ist zuständig oder finanziert es bereits; 2 – der Bund kann mit Geld, einem Programm oder einer Vereinbarung mit den Ländern beitragen; 1 – nur die Länder können es über ihr eigenes Recht regeln (kein Hebel des Bundes), es braucht eine Grundgesetzänderung, oder das nötige Personal fehlt absehbar.
 
-Hängt eine Maßnahme ganz oder teilweise von EU-Entscheidungen ab, die Deutschland nicht allein treffen kann (etwa EU-Emissionshandel, EU-Berichtspflichten, Sanktionen), gilt 1; ist sie klar EU-rechtswidrig, 0.
+Hängt eine Maßnahme ganz oder teilweise von EU-Entscheidungen ab, die Deutschland nicht allein treffen kann (etwa EU-Emissionshandel, EU-Berichtspflichten, Sanktionen), gilt 1; ist sie klar EU-rechtswidrig, 0. Hängt sie von der Zustimmung anderer Staaten ab (etwa Rücknahmeabkommen mit Herkunftsstaaten), gilt höchstens 2.
 
 | Wert | Bedeutung |
 | --- | --- |

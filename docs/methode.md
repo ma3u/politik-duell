@@ -179,7 +179,7 @@ Die App läuft als spielbarer Prototyp mit Spracheingabe, KI-Zuordnung, Wortwolk
 | --- | --- |
 | Parteien und Programme | 7 Parteien, Wahlprogramme 2025 erfasst |
 | Themen mit belegten Ursachen | 10 Themen |
-| Maßnahmen erfasst | Miete, alle 7 Parteien (noch ungeprüft); Schule und Arbeitsplätze, alle 7 Parteien aus den Bundesprogrammen (KI-Entwurf, ungeprüft) |
+| Maßnahmen erfasst | Miete, alle 7 Parteien (noch ungeprüft); Schule, Arbeitsplätze sowie Zuwanderung und Integration, alle 7 Parteien aus den Bundesprogrammen (KI-Entwurf, ungeprüft) |
 | Geprüft und im Spiel | noch keine – das Prüfverfahren startet mit dem Thema Miete |
 
 Wir suchen:
