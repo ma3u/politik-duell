@@ -92,6 +92,35 @@ Verworfen:
 - *Frühe Renteneintritte (abschlagsfreie Rente nach 45 Jahren).* Keine eigene Ursache, sondern ein Faktor im Verhältnis von Rentnern zu Beitragszahlenden (701).
 - *Zu wenig Kapitaldeckung.* Das beschreibt eine Lösung, keine Ursache. Maßnahmen dazu setzen an 701 (Kapitalstock) oder 703 (Zusatzvorsorge) an.
 
+## Pflege (10)
+
+Stand: 29. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#11, #14). Die Prüfung stützt sich nur auf Fachquellen.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1001 | Zu wenige Pflegekräfte | Bund | Destatis (Pflegekräftevorausberechnung) | bessere Bedingungen und Bezahlung (eher links/gewerkschaftsnah); Anwerbung, weniger Bürokratie, Digitalisierung (eher wirtschaftsliberal) – breit geteilt |
+| 1002 *geändert* | Steigende Eigenanteile für Pflege, Ausbildung, Unterkunft und Verpflegung | Bund | vdek, Juli 2026 | Deckel oder Vollversicherung (eher links/Mitte); private Zusatzvorsorge (eher wirtschaftsliberal/konservativ) |
+| 1003 *geändert* | Zahl der Pflegebedürftigen steigt stärker als durch die Alterung allein, auch wegen des 2017 erweiterten Pflegebedürftigkeitsbegriffs | Bund | Destatis, Pressemitteilung 478/2024 | Prävention und Reha (breit geteilt); Einstufung und Leistungsumfang überprüfen (eher wirtschaftsliberal/konservativ); Kapitalrücklage (eher wirtschaftsliberal) |
+| 1004 | Pflegende Angehörige tragen die Hauptlast | Bund | ZQP | Entlastungsangebote, Lohnersatz, höheres Pflegegeld – breit geteilt, Wege verschieden |
+| **1005** *neu* | Die Länder fördern die Investitionskosten der Heime kaum; Bewohner zahlen dafür im Schnitt über 500 Euro im Monat | Land | IGES für das Bundesministerium für Gesundheit, 2024 (Berichte der Länder nach § 10 SGB XI) | Länder sollen zahlen (Kassen, Sozialverbände, Parteien quer durch das Spektrum); Pflegewohngeld (eher links) |
+
+**1003:** Laut Destatis ist die Zahl der Pflegebedürftigen von 2021 bis 2023 um 730.000 gestiegen. Durch die Alterung allein wären es rund 100.000 gewesen, der Rest geht zum Teil auf den weiter gefassten Begriff von 2017 zurück. Vorher nannte die Ursache nur die Alterung. Damit fehlte eine Diagnose, die vor allem in der Debatte um die Finanzen der Pflegeversicherung vertreten wird.
+
+**1005:** Das ist ein neuer Teil, herausgelöst aus 1002. Für die Investitionskosten sind nach § 9 SGB XI die Länder zuständig. Laut IGES gilt: „Zur finanziellen Entlastung von Pflegeheimbewohnern trägt das Fördervolumen weiterhin kaum bei.“ Die Bewohner zahlen dafür im Bundesschnitt 521 Euro im Monat (vdek, Juli 2026). Weil hier die Länder zuständig sind, zählt mit gewähltem Bundesland das Landesprogramm. Deshalb wurden alle 21 Landesprogramme (ST, MV, BE) nach Maßnahmen dazu durchsucht (Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim, Pflegeeinrichtung): 8 Maßnahmen, 13 × `keine_massnahme`. Die Ursache ist mit `nachtraeglich` gekennzeichnet, weil sie nach der Erfassung der Bundesprogramme dazukam. Diese waren schon nach Maßnahmen gegen die Eigenanteile durchsucht, und ein Abgleich mit dem Stichwort „Investitions…“ fand keine weiteren Stellen als bei SPD und Linke. Das BSW-Bundesprogramm war dafür nicht abrufbar.
+
+**Neu zugeordnet:**
+- 6243 (SPD, Investitionskosten nicht mehr vollständig umlegen): 1002 → 1005
+- 6274 (Linke, Länder übernehmen Investitionskosten, Unterkunft und Verpflegung deckeln): 1002 → 1002 und 1005
+
+Entschieden: **1001–1004 Bund, 1005 Land.** Pflegeversicherung, Pflegeberufe und Leistungen für Angehörige regelt der Bund. Die Investitionskosten der Heime tragen die Länder.
+
+Verworfen:
+- *Finanzlage der Pflegeversicherung (Defizite, versicherungsfremde Leistungen).* Das betrifft vor allem die Beitragszahlenden, nicht das Ziel der Pflegebedürftigen. Auf die Eigenanteile wirkt es über 1002.
+- *Zu viel Bürokratie und Dokumentation.* Keine eigene Ursache, sondern ein Teil der Arbeitsbedingungen, die Pflegekräfte aus dem Beruf treiben (1001).
+- *Heime und Pflegedienste schließen oder nehmen niemanden mehr auf.* Laut den Quellen liegt das vor allem am fehlenden Personal (1001). Für eine eigene wirtschaftliche Ursache fehlt ein unabhängiger Beleg.
+
 ## Ebenen der übrigen Themen
 
 Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unverändert). Die Ebenen sind ein Vorschlag vom 28. 9. 2026 (KI-Entwurf). Sie werden bei der Perspektivenprüfung des jeweiligen Themas bestätigt.
@@ -103,7 +132,6 @@ Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unveränder
 | Energiepreise (3) | – | 301, 302, 303 | Netzentgelte (Regulierung), Steuern und Umlagen, Energieimporte |
 | Bus und Bahn (8) | 801, 803 | 802 | Nahverkehrsangebot und Personal: Länder und Kommunen (Aufgabenträger); Schienennetz: Bund (DB InfraGO) |
 | Sicherheit (9) | 901, 902, 903 | – | Polizei, Justiz und Prävention sind Ländersache; Strafrecht ist Bundesrecht – Maßnahmen dazu stehen in Bundesprogrammen und zählen ohne gewähltes Bundesland |
-| Pflege (10) | – | 1001–1004 | Pflegeversicherung, Pflegeberufe und Leistungen für Angehörige; die Investitionskosten der Heime tragen die Länder, der Hauptteil der Eigenanteile hängt aber an Bundesrecht |
 
 ## Hinweise zur Quellenprüfung
 
@@ -114,3 +142,10 @@ Die neuen Quellen hat die KI über Suchergebnisse geprüft, der Netzwerkzugang z
 - 505: 64 Mrd. Euro (NKR-Jahresbericht 2025)
 - 605: 2025 rund 36.000 Übernahmeersuchen und 5.377 Überstellungen (hib-Meldung). Ob die Meldung das ganze Jahr 2025 abdeckt, bitte prüfen. Für das erste Halbjahr 2025 lauten die Zahlen 20.574 und 3.109 (Drucksache 21/1668).
 - 606: 41 % von rund 181.500 Geduldeten, Stand 31. 3. 2025
+
+Rente und Pflege (29. 9. 2026): Die KI hat die Quellen diesmal im Original abgerufen. Die Freigabe durch die Betreiberin steht noch aus.
+
+- 701: Beitragssatz 21,2 % und Rentenniveau 46,3 % im Jahr 2039 (bundesregierung.de, Rentenversicherungsbericht 2025). Die BMAS-Pressemitteilung vom 19. 11. 2025 nennt nur die 46,3 %.
+- 703: „Ergänzende Vorsorge erreicht Geringverdienende, Menschen mit Erwerbsunterbrechungen und Beschäftigte kleiner Betriebe deutlich seltener“ (DIW Wochenbericht 16/2026)
+- 1003: +730.000 Pflegebedürftige von 2021 bis 2023, davon rund 100.000 demografisch bedingt (Destatis, PM 478 vom 18. 12. 2024)
+- 1005: Fördervolumen der Länder 2022 bei 876 Mio. Euro (IGES, 19. 4. 2024); Investitionskosten 521 Euro im Monat (vdek, 1. 7. 2026)
