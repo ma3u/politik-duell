@@ -4,12 +4,12 @@ name: Zitate prüfen
 # Eigener Ablauf, weil er die Programm-PDFs der Parteien herunterlädt.
 on:
   pull_request:
-    paths: ['daten/**', 'scripts/zitate.ts', 'scripts/pruefe-zitate.ts']
+    paths: ['daten/**', 'scripts/zitate.ts', 'scripts/pruefe-zitate.ts', 'scripts/programme.ts']
   push:
     branches: [main]
     paths: ['daten/**']
   schedule:
-    - cron: '17 5 * * 1' # montags: fällt auf, wenn ein Programm ausgetauscht wurde
+    - cron: '17 5 * * 1' # montags: fällt auf, wenn ein Programm ausgetauscht wurde (Prüfsumme)
   workflow_dispatch:
 
 jobs:
@@ -22,8 +22,14 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Montags ohne Zwischenspeicher: sonst fiele ein ausgetauschtes Programm nicht auf.
       - uses: actions/cache@v4
+        if: github.event_name != 'schedule'
         with:
           path: .cache/programme
           key: programme-${{ hashFiles('daten/parteien.json') }}
       - run: npm run zitate:pruefen
+        if: github.event_name != 'schedule' && github.event_name != 'workflow_dispatch'
+      # Wöchentlich zusätzlich: jedes Programm im Internet Archive sichern, falls es dort fehlt.
+      - run: npm run zitate:pruefen -- --archivieren
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'

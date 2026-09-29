@@ -1,0 +1,23 @@
+// Aufruf: npm run daten:id                         – nächste freie ID für Maßnahmen und Instrumente
+//         npm run daten:id -- --gegen origin/main  – prüft, dass keine ID verschwindet oder umgewidmet wird
+import { gitStand, pruefeDatenordner } from './katalog-laden.ts'
+import { naechsteId, vergleicheIds } from './ids.ts'
+
+const { katalog, fehler } = pruefeDatenordner()
+if (fehler.length) {
+  console.error('Datenkatalog fehlerhaft – erst `npm run daten:pruefen` beheben.')
+  process.exit(1)
+}
+
+const i = process.argv.indexOf('--gegen')
+if (i < 0) {
+  console.log(naechsteId(katalog))
+} else {
+  const ref = process.argv[i + 1]
+  // Ältere Stände folgen teils älteren Regeln; für den Vergleich zählen nur die IDs.
+  const alt = pruefeDatenordner(gitStand(ref)).katalog
+  const probleme = vergleicheIds(alt, katalog)
+  for (const p of probleme) console.error(`Fehler:  ${p}`)
+  if (probleme.length) process.exit(1)
+  console.log(`IDs in Ordnung (verglichen mit ${ref}). Nächste freie ID: ${naechsteId(katalog)}`)
+}

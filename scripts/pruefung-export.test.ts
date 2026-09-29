@@ -62,7 +62,7 @@ describe('Export prüfen', () => {
   })
 
   it('prüft gegen den Katalog', () => {
-    expect(pruefeExport(exportDatei([b(999)]), katalog).fehler.join('\n')).toMatch(/unbekannte Maßnahme 999/)
+    expect(pruefeExport(exportDatei([b(999)]), katalog).fehler.join('\n')).toMatch(/unbekannte Maßnahme oder unbekanntes Instrument 999/)
     expect(pruefeExport(exportDatei([b(101)], { thema_id: 7 }), katalog).fehler.join('\n')).toMatch(/unbekanntes Thema 7/)
     expect(pruefeExport(exportDatei([b(101), b(101)]), katalog).fehler.join('\n')).toMatch(/doppelt/)
     expect(pruefeExport(exportDatei([b(101, { median_w: 4 })]), katalog).fehler.join('\n')).toMatch(/zwischen 0 und 3/)
@@ -112,6 +112,40 @@ describe('Übernahme', () => {
     expect(pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: t }]).fehler).toEqual([])
     for (const m of t.abdeckung[0].massnahmen) (m as { geprueft: boolean }).geprueft = true
     expect(pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: t }]).fehler.join('\n')).toMatch(/erst ab zwei unabhängigen Bewertungen/)
+  })
+})
+
+describe('Instrumente', () => {
+  // Maßnahme 103 und 104 verweisen auf Instrument 190, 101 bleibt einzeln.
+  const mitInstrument = (id: number) => {
+    const { wirksamkeit: _w, umsetzbarkeit: _u, begruendung: _b, evidenz: _e, ...rest } = massnahme(id, 0, 0)
+    return { ...rest, instrument: 190 }
+  }
+  const T = {
+    ...THEMA,
+    instrumente: [{ id: 190, name: 'Mehr Praxen', wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Neutral.', evidenz: 'gemischt' }],
+    abdeckung: [
+      { partei_id: 1, massnahmen: [massnahme(101, 2, 3), mitInstrument(103)] },
+      { partei_id: 2, massnahmen: [{ ...mitInstrument(104), beleg_programm_url: 'https://zwei.de/p.pdf#page=5' }] },
+    ],
+  }
+  const k = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/01.json', inhalt: T }]).katalog
+
+  it('bewertet das Instrument, nicht die Maßnahmen dahinter', () => {
+    expect(pruefeExport(exportDatei([b(101), b(190)]), k).fehler).toEqual([])
+    expect(pruefeExport(exportDatei([b(103)]), k).fehler.join('\n')).toMatch(/unbekannte Maßnahme oder unbekanntes Instrument 103/)
+    expect(pruefeExport(exportDatei([b(101)]), k).warnungen.join('\n')).toMatch(/Ohne Bewertung im Export: 190/)
+  })
+
+  it('schreibt das Ergebnis an das Instrument; Maßnahmen bleiben ohne eigene Bewertung', () => {
+    const { inhalt, aenderungen } = uebernehme(T, exportDatei([b(190, { median_w: 1, median_u: 3 })]) as never)
+    const t = inhalt as typeof T
+    expect(t.instrumente[0]).toMatchObject({ wirksamkeit: 1, umsetzbarkeit: 3, bewertung: { anzahl: 3, entwurf: [2, 2] } })
+    expect(t.abdeckung[0].massnahmen[1]).toEqual(mitInstrument(103))
+    expect(aenderungen).toEqual([{ massnahme_id: 190, vorher: [2, 2], nachher: [1, 3] }])
+    const { fehler, katalog } = pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: t }])
+    expect(fehler).toEqual([])
+    expect(katalog.massnahmen.filter((m) => m.instrument_id === 190).map((m) => m.wirksamkeit * m.umsetzbarkeit)).toEqual([3, 3])
   })
 })
 

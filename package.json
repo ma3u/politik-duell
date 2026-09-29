@@ -15,7 +15,11 @@
     "daten:pruefen": "node --experimental-strip-types scripts/pruefe-daten.ts",
     "pruefliste": "node --experimental-strip-types scripts/erzeuge-pruefliste.ts",
     "pruefung:uebernehmen": "node --experimental-strip-types scripts/uebernehme-pruefung.ts",
-    "zitate:pruefen": "node --experimental-strip-types scripts/pruefe-zitate.ts"
+    "zitate:pruefen": "node --experimental-strip-types scripts/pruefe-zitate.ts",
+    "daten:id": "node --experimental-strip-types scripts/daten-id.ts",
+    "programm:text": "node --experimental-strip-types scripts/entwurf/programm-text.ts",
+    "programm:sichern": "node --experimental-strip-types scripts/entwurf/programm-sichern.ts",
+    "punkte": "node --experimental-strip-types scripts/entwurf/punkte.ts"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",

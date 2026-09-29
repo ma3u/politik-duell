@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { pruefeDatenordner } from './katalog-laden'
 import { pruefMassnahmenTs } from './pruef-massnahmen'
 import { seedSql } from './seed-sql'
-import { pruefeKatalog, spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen, type Datei } from '../src/data/katalog'
+import { pruefEinheiten, pruefeKatalog, spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen, type Datei } from '../src/data/katalog'
 
 // Kleiner, gültiger Katalog mit echten (nicht fiktiven) Regeln als Ausgangspunkt.
 const parteien = (fiktiv = false): Datei => ({
@@ -11,8 +11,8 @@ const parteien = (fiktiv = false): Datei => ({
   inhalt: {
     fiktiv,
     parteien: [
-      { id: 1, name: 'Partei Eins', kurzname: 'Eins', farbe: '#112233', programm_url: 'https://eins.de/programm.pdf', programm_stand: '2026-01-01' },
-      { id: 2, name: 'Partei Zwei', kurzname: 'Zwei', farbe: '#445566', programm_url: 'https://zwei.de/programm.pdf', programm_stand: '2026-02-01' },
+      { id: 1, name: 'Partei Eins', kurzname: 'Eins', farbe: '#112233', programm_url: 'https://eins.de/programm.pdf', programm_stand: '2026-01-01', programm_sha256: 'a'.repeat(64) },
+      { id: 2, name: 'Partei Zwei', kurzname: 'Zwei', farbe: '#445566', programm_url: 'https://zwei.de/programm.pdf', programm_stand: '2026-02-01', programm_sha256: 'b'.repeat(64) },
     ],
   },
 })
@@ -59,8 +59,8 @@ describe('Datenkatalog: Prüfregeln', () => {
     expect(katalog.massnahmen[0]).toMatchObject({ id: 1, thema_id: 1, partei_id: 1 })
     expect(katalog.ursachen[0]).toMatchObject({ id: 11, thema_id: 1 })
     expect(katalog.abdeckung).toEqual([
-      { thema_id: 1, partei_id: 1, land: null, art: 'massnahmen', begruendung: null, stand: '2026-03-01', geprueft: true, ki_entwurf: false },
-      { thema_id: 1, partei_id: 2, land: null, art: 'keine', begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true, ki_entwurf: false },
+      { thema_id: 1, partei_id: 1, land: null, art: 'massnahmen', begruendung: null, stand: '2026-03-01', geprueft: true, ki_entwurf: false, aktuell: true },
+      { thema_id: 1, partei_id: 2, land: null, art: 'keine', begruendung: 'Programm durchsucht, nichts gefunden.', stand: '2026-03-01', geprueft: true, ki_entwurf: false, aktuell: true },
     ])
   })
 
@@ -171,7 +171,7 @@ describe('Datenkatalog: Prüfregeln', () => {
     const f = pruefeKatalog(parteien(), [thema(), zweites]).fehler.join('\n')
     expect(f).toMatch(/Themen-ID 1 ist doppelt/)
     expect(f).toMatch(/Ursachen-ID 11 ist doppelt/)
-    expect(f).toMatch(/Maßnahmen-ID 1 ist doppelt/)
+    expect(f).toMatch(/Maßnahmen-ID 1 ist schon vergeben/)
   })
 
   it('übernimmt bei echten Daten nur vollständig geprüfte Einträge je Thema und Partei', () => {
@@ -204,7 +204,7 @@ describe('Datenkatalog: Länder und Stand der Forschung', () => {
     const inhalt = p.inhalt as { parteien: Record<string, unknown>[] } & Record<string, unknown>
     inhalt.laender = [{ id: 'ST', name: 'Sachsen-Anhalt', letzte_wahl: '2026-09-06' }]
     inhalt.parteien[0].landesprogramme = [
-      { land: 'ST', landtagswahl: '2026-09-06', url: 'https://eins.de/st.pdf', stand: '2026-04-01' },
+      { land: 'ST', landtagswahl: '2026-09-06', url: 'https://eins.de/st.pdf', stand: '2026-04-01', sha256: 'c'.repeat(64) },
       ...ueber,
     ]
     inhalt.parteien[1].landesprogramme = [{ land: 'ST', landtagswahl: '2026-09-06', kein_programm: 'nicht angetreten' }]
@@ -217,7 +217,7 @@ describe('Datenkatalog: Länder und Stand der Forschung', () => {
   const landMassnahme = (ueber: Record<string, unknown> = {}) =>
     massnahme({ id: 5, ursachen_ids: [12], beleg_programm_url: 'https://eins.de/st.pdf#page=7', stand: '2026-05-01', ...ueber })
   const mitLandEintrag = (m: Record<string, unknown> = landMassnahme()) =>
-    thema({ ursachen: landUrsachen, abdeckung: [...(thema().inhalt as { abdeckung: unknown[] }).abdeckung, { partei_id: 1, land: 'ST', massnahmen: [m] }] })
+    thema({ ursachen: landUrsachen, abdeckung: [...(thema().inhalt as { abdeckung: unknown[] }).abdeckung, { partei_id: 1, land: 'ST', landtagswahl: '2026-09-06', massnahmen: [m] }] })
 
   it('liest Länder und Landesprogramme; nur aktuelle zählen', () => {
     const { katalog, fehler } = pruefeKatalog(mitLaendern(), [mitLandEintrag()])
@@ -237,9 +237,34 @@ describe('Datenkatalog: Länder und Stand der Forschung', () => {
     inhalt.laender[0].letzte_wahl = '2031-06-01'
     const { katalog, fehler, warnungen } = pruefeKatalog(p, [mitLandEintrag()])
     expect(fehler).toEqual([])
-    expect(warnungen.join('\n')).toMatch(/veraltet/)
+    expect(warnungen.join('\n')).toMatch(/kein Programm zur letzten Wahl in Sachsen-Anhalt \(2031-06-01\)/)
     expect(spielbareLandesprogramme(katalog)).toEqual([])
     expect(spielbareMassnahmen(katalog).map((m) => m.id)).toEqual([1])
+    expect(pruefEinheiten(katalog).map((e) => e.id)).toEqual([1])
+  })
+
+  it('behält Programme früherer Wahlperioden neben dem neuen, nur das neue zählt', () => {
+    const p = mitLaendern([{ land: 'ST', landtagswahl: '2031-06-01', url: 'https://eins.de/st-2031.pdf', stand: '2031-03-01', sha256: 'd'.repeat(64) }])
+    const inhalt = p.inhalt as { laender: Record<string, unknown>[]; parteien: Record<string, unknown>[] }
+    inhalt.laender[0].letzte_wahl = '2031-06-01'
+    inhalt.parteien[1].landesprogramme = [{ land: 'ST', landtagswahl: '2031-06-01', kein_programm: 'nicht angetreten' }]
+    const t = mitLandEintrag()
+    ;(t.inhalt as { abdeckung: unknown[] }).abdeckung.push({
+      partei_id: 1, land: 'ST', landtagswahl: '2031-06-01',
+      massnahmen: [landMassnahme({ id: 6, beleg_programm_url: 'https://eins.de/st-2031.pdf#page=3', stand: '2031-04-01' })],
+    })
+    const { katalog, fehler, warnungen } = pruefeKatalog(p, [t])
+    expect(fehler).toEqual([])
+    expect(warnungen).toEqual([])
+    expect(katalog.massnahmen.map((m) => [m.id, m.landtagswahl])).toEqual([[1, undefined], [5, '2026-09-06'], [6, '2031-06-01']])
+    expect(spielbareMassnahmen(katalog).map((m) => m.id)).toEqual([1, 6])
+    expect(spielbareMassnahmen(katalog)[1]).not.toHaveProperty('landtagswahl')
+    expect(spielbareLandesprogramme(katalog).map((l) => l.url)).toEqual(['https://eins.de/st-2031.pdf', null])
+    // Doppelt nur bei gleicher Wahl; ohne „landtagswahl“ ist der Landeseintrag unvollständig.
+    ;(t.inhalt as { abdeckung: Record<string, unknown>[] }).abdeckung[3].landtagswahl = '2026-09-06'
+    expect(fehlerVon(t, p)).toMatch(/Partei 1 \(ST, Wahl 2026-09-06\) ist mehrfach eingetragen/)
+    delete (t.inhalt as { abdeckung: Record<string, unknown>[] }).abdeckung[3].landtagswahl
+    expect(fehlerVon(t, p)).toMatch(/„landtagswahl“ muss ein Datum/)
   })
 
   it('prüft Landeseinträge: Programm, Beleg und Ebene der Ursache', () => {
@@ -247,12 +272,22 @@ describe('Datenkatalog: Länder und Stand der Forschung', () => {
       .toMatch(/nicht auf das Programm der Partei \(https:\/\/eins.de\/st.pdf\)/)
     expect(fehlerVon(mitLandEintrag(landMassnahme({ ursachen_ids: [11] })), mitLaendern())).toMatch(/Ursache 11 liegt beim Bund/)
     expect(fehlerVon(mitLandEintrag(landMassnahme({ stand: '2026-03-01' })), mitLaendern())).toMatch(/vor dem Programmstand 2026-04-01/)
-    const ohneProgramm = thema({ ursachen: landUrsachen, abdeckung: [{ partei_id: 2, land: 'ST', keine_massnahme: { begruendung: 'x', stand: '2026-05-01', geprueft: true } }] })
+    const ohneProgramm = thema({ ursachen: landUrsachen, abdeckung: [{ partei_id: 2, land: 'ST', landtagswahl: '2026-09-06', keine_massnahme: { begruendung: 'x', stand: '2026-05-01', geprueft: true } }] })
     expect(fehlerVon(ohneProgramm, mitLaendern())).toMatch(/hat in „ST“ kein Programm/)
-    const unbekannt = thema({ ursachen: landUrsachen, abdeckung: [{ partei_id: 1, land: 'BY', keine_massnahme: { begruendung: 'x', stand: '2026-05-01', geprueft: true } }] })
+    const unbekannt = thema({ ursachen: landUrsachen, abdeckung: [{ partei_id: 1, land: 'BY', landtagswahl: '2026-09-06', keine_massnahme: { begruendung: 'x', stand: '2026-05-01', geprueft: true } }] })
     expect(fehlerVon(unbekannt, mitLaendern())).toMatch(/kein Landesprogramm „BY“/)
-    expect(fehlerVon(mitLandEintrag(), mitLaendern([{ land: 'ST', landtagswahl: '2026-09-06', kein_programm: 'x' }]))).toMatch(/„ST“ ist für diese Partei doppelt/)
+    expect(fehlerVon(mitLandEintrag(), mitLaendern([{ land: 'ST', landtagswahl: '2026-09-06', kein_programm: 'x' }]))).toMatch(/„ST“ zur Wahl 2026-09-06 ist für diese Partei doppelt/)
     expect(fehlerVon(mitLandEintrag(), mitLaendern([{ land: 'XX', landtagswahl: '2026-09-06', kein_programm: 'x' }]))).toMatch(/unbekanntes Land „XX“/)
+  })
+
+  it('hält die ausgewertete Fassung mit Prüfsumme fest', () => {
+    const p = mitLaendern()
+    const inhalt = p.inhalt as { parteien: Record<string, unknown>[] }
+    delete inhalt.parteien[0].programm_sha256
+    ;(inhalt.parteien[0].landesprogramme as Record<string, unknown>[])[0].sha256 = 'XYZ'
+    const { fehler, warnungen } = pruefeKatalog(p, [thema()])
+    expect(warnungen.join('\n')).toMatch(/ohne „programm_sha256“/)
+    expect(fehler.join('\n')).toMatch(/„sha256“ muss eine SHA-256-Prüfsumme sein/)
   })
 
   it('verlangt bei echten Daten eine Ebene je Ursache', () => {
@@ -304,6 +339,86 @@ describe('Datenkatalog: KI-Entwürfe für die Testphase', () => {
   })
 })
 
+describe('Datenkatalog: Instrumente und IDs', () => {
+  const instrument = (ueber: Record<string, unknown> = {}) => ({
+    id: 90, name: 'Mehr Praxen', wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Setzt an der Ursache an.', evidenz: 'gemischt', ...ueber,
+  })
+  // Maßnahme mit Instrument: ohne eigene Bewertung.
+  const mitInstrument = (ueber: Record<string, unknown> = {}) => {
+    const m: Record<string, unknown> = massnahme({ instrument: 90, geprueft: false, ki_entwurf: true, ...ueber })
+    for (const f of ['wirksamkeit', 'umsetzbarkeit', 'begruendung', 'evidenz', 'bewertung']) if (!(f in ueber)) delete m[f]
+    return m
+  }
+  const mitInstrumenten = (eins: Record<string, unknown>[], instrumente: Record<string, unknown>[] = [instrument()]) =>
+    thema({
+      instrumente,
+      abdeckung: [
+        { partei_id: 1, massnahmen: eins },
+        { partei_id: 2, massnahmen: [mitInstrument({ id: 2, beleg_programm_url: 'https://zwei.de/programm.pdf#page=9' })] },
+      ],
+    })
+
+  it('übernimmt Bewertung und Begründung aus dem Instrument', () => {
+    const { katalog, fehler, warnungen } = pruefeKatalog(parteien(), [mitInstrumenten([mitInstrument()])])
+    expect(fehler).toEqual([])
+    expect(warnungen.join('\n')).not.toMatch(/Instrument/)
+    expect(katalog.massnahmen.map((m) => [m.id, m.instrument_id, m.wirksamkeit, m.umsetzbarkeit, m.evidenz])).toEqual([
+      [1, 90, 2, 2, 'gemischt'],
+      [2, 90, 2, 2, 'gemischt'],
+    ])
+    const spiel = spielbareMassnahmen(katalog, true)
+    expect(spiel.map((m) => [m.id, m.begruendung, m.ki_entwurf])).toEqual([[1, 'Setzt an der Ursache an.', true], [2, 'Setzt an der Ursache an.', true]])
+    expect(spiel[0]).not.toHaveProperty('instrument_id')
+  })
+
+  it('bewertet ein Instrument als eine Prüfeinheit, Maßnahmen ohne Instrument einzeln', () => {
+    const t = mitInstrumenten([mitInstrument(), massnahme({ id: 3, geprueft: false, ki_entwurf: true, bewertung: undefined })])
+    const einheiten = pruefEinheiten(pruefeKatalog(parteien(), [t]).katalog)
+    expect(einheiten.map((e) => [e.id, e.instrument, e.beschreibung, e.massnahmen.map((m) => m.id)])).toEqual([
+      [3, false, 'Mehr Praxen', [3]],
+      [90, true, 'Mehr Praxen', [1, 2]],
+    ])
+  })
+
+  it('prüft Verweise, doppelte Angaben, Ebene und Nummernkreis', () => {
+    expect(fehlerVon(mitInstrumenten([mitInstrument({ instrument: 91 })]))).toMatch(/Instrument 91 steht nicht unter „instrumente“/)
+    expect(fehlerVon(mitInstrumenten([mitInstrument({ wirksamkeit: 3 })]))).toMatch(/„wirksamkeit“ kommt aus dem Instrument/)
+    expect(fehlerVon(mitInstrumenten([mitInstrument()], [instrument({ evidenz: undefined })]))).toMatch(/„evidenz“ fehlt/)
+    expect(fehlerVon(mitInstrumenten([mitInstrument()], [instrument({ id: 2 })]))).toMatch(/Maßnahmen-ID 2 ist schon vergeben \(.*instrumente\[0\]\)/)
+    const t = mitInstrumenten([mitInstrument(), massnahme({ id: 3, geprueft: false, ki_entwurf: true, bewertung: undefined })], [instrument(), instrument({ id: 91 })])
+    expect(pruefeKatalog(parteien(), [t]).warnungen.join('\n')).toMatch(/Instrument 91 wird von keiner Maßnahme genutzt/)
+  })
+
+  it('gilt nur für eine Ebene', () => {
+    const p = parteien()
+    const inhalt = p.inhalt as { parteien: Record<string, unknown>[] } & Record<string, unknown>
+    inhalt.laender = [{ id: 'ST', name: 'Sachsen-Anhalt', letzte_wahl: '2026-09-06' }]
+    inhalt.parteien[0].landesprogramme = [{ land: 'ST', landtagswahl: '2026-09-06', url: 'https://eins.de/st.pdf', stand: '2026-04-01' }]
+    const t = mitInstrumenten([mitInstrument()])
+    const td = t.inhalt as Record<string, unknown>
+    td.ursachen = [...(td.ursachen as unknown[]), { id: 12, beschreibung: 'Zu wenige Lehrkräfte', quelle_url: 'https://studie.de/schule', ebene: 'land' }]
+    ;(td.abdeckung as unknown[]).push({
+      partei_id: 1, land: 'ST', landtagswahl: '2026-09-06',
+      massnahmen: [mitInstrument({ id: 5, ursachen_ids: [12], beleg_programm_url: 'https://eins.de/st.pdf#page=2', stand: '2026-05-01' })],
+    })
+    expect(fehlerVon(t, p)).toMatch(/Instrument 90 wird schon für Maßnahmen der Bundesebene genutzt/)
+  })
+
+  it('zählt als geprüft erst mit zwei Bewertungen des Instruments', () => {
+    const bewertung = { anzahl: 2, median_w: 2, median_u: 2, spannweite: 0, datum: '2026-03-05', entwurf: [2, 2] }
+    expect(fehlerVon(mitInstrumenten([mitInstrument({ geprueft: true })]))).toMatch(/erst, wenn Instrument 90 zwei unabhängige Bewertungen hat/)
+    expect(fehlerVon(mitInstrumenten([mitInstrument({ geprueft: true })], [instrument({ bewertung })]))).toBe('')
+    expect(fehlerVon(mitInstrumenten([mitInstrument()], [instrument({ bewertung: { ...bewertung, median_w: 3 } })]))).toMatch(/weichen von den Medianen/)
+  })
+
+  it('vergibt stillgelegte IDs nicht neu', () => {
+    const ids = (stillgelegt: unknown[]): Datei => ({ pfad: 'ids.json', inhalt: { stillgelegt } })
+    expect(pruefeKatalog(parteien(), [thema()], ids([{ id: 7, grund: 'Doppelt erfasst' }])).fehler).toEqual([])
+    expect(pruefeKatalog(parteien(), [thema()], ids([{ id: 1, grund: 'Doppelt erfasst' }])).fehler.join('\n')).toMatch(/ID 1 ist stillgelegt/)
+    expect(pruefeKatalog(parteien(), [thema()], ids([{ id: 7 }])).fehler.join('\n')).toMatch(/„grund“ fehlt/)
+  })
+})
+
 describe('Datenkatalog im Repo (daten/)', () => {
   const { katalog, fehler } = pruefeDatenordner()
 
@@ -312,7 +427,7 @@ describe('Datenkatalog im Repo (daten/)', () => {
   })
 
   it('hat höchstens einen Eintrag je Thema, Partei und Programm', () => {
-    const paare = katalog.abdeckung.map((a) => `${a.thema_id}/${a.partei_id}/${a.land ?? ''}`)
+    const paare = katalog.abdeckung.map((a) => `${a.thema_id}/${a.partei_id}/${a.land ?? ''}/${a.landtagswahl ?? ''}`)
     expect(new Set(paare).size).toBe(paare.length)
   })
 

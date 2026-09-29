@@ -95,8 +95,9 @@ export function Methode() {
         Reihenfolge und ohne die Bewertungen der anderen zu sehen. Unseren Entwurf mit Begründung sehen sie erst,
         nachdem sie selbst bewertet haben. Je Maßnahme zählt der Median der Einzelwerte, getrennt für Wirksamkeit und
         Umsetzbarkeit; die Punkte ergeben sich erst daraus. Liegen die Einschätzungen weit auseinander, klären wir den
-        Maßstab, bevor wir die Werte übernehmen. Zitat, Seite und Zuordnung zu den Ursachen prüfen wir zusätzlich
-        selbst.
+        Maßstab, bevor wir die Werte übernehmen. Schlagen mehrere Programme denselben Lösungsweg vor, wird er einmal
+        bewertet – die Bewertung gilt dann für alle Parteien und Länder gleich. Zitat, Seite und Zuordnung zu den
+        Ursachen prüfen wir zusätzlich selbst.
       </p>
       <Pruefende />
       <p>

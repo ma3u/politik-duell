@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { BewertungEingabe, Wert } from '../../supabase/functions/_shared/pruefung'
 import { Logo } from '../components/Logo'
-import type { Massnahme, Thema, Ursache } from '../data/types'
+import { pruefEinheiten, type Pruefeinheit } from '../data/katalog'
+import type { Thema, Ursache } from '../data/types'
 import { UMSETZBARKEIT, WIRKSAMKEIT } from '../rechtliches/massstab'
 import { Skala } from '../rechtliches/Methode'
 import * as api from './api'
@@ -81,7 +82,15 @@ export function Pruefseite({ token }: { token: string }) {
 }
 
 const themaVon = (id: number) => KATALOG.themen.find((t) => t.id === id)
-const massnahmenVon = (themaId: number) => blindeReihenfolge(KATALOG.massnahmen.filter((m) => m.thema_id === themaId))
+// Bewertet wird je Prüfeinheit: ein Instrument (gleicher Lösungsweg in mehreren Programmen) oder eine einzelne Maßnahme.
+const massnahmenVon = (themaId: number) => blindeReihenfolge(pruefEinheiten(KATALOG, themaId))
+
+/** Ebene, aus deren Sicht die Umsetzbarkeit bewertet wird (ein Instrument gilt nur für eine). */
+function ebeneText(e: Pruefeinheit): string {
+  const laender = [...new Set(e.massnahmen.map((m) => m.land).filter((l): l is string => !!l))]
+  if (!laender.length) return 'Bundesebene'
+  return `Landesebene (${laender.map((l) => KATALOG.laender.find((x) => x.id === l)?.name ?? l).join(', ')})`
+}
 
 function Einwilligung({ token, stand, onFertig }: { token: string; stand: api.PruefStand; onFertig: () => Promise<void> }) {
   const [ja, setJa] = useState(false)
@@ -532,7 +541,7 @@ function MassnahmeKarte({
 }: {
   className: string
   kennung: string
-  massnahme: Massnahme
+  massnahme: Pruefeinheit
   ursachen: Ursache[]
   wert: api.GeladeneBewertung
   onAendern: (teil: Partial<api.GeladeneBewertung>, sofort?: boolean) => void
@@ -544,9 +553,18 @@ function MassnahmeKarte({
     <article className={`pruef-karte ${className}`}>
       <p className="pruef-kennung">{kennung}</p>
       <p className="pruef-text">{m.beschreibung}</p>
+      {m.instrument && (
+        <div className="admin-klein">
+          <p>Dieser Lösungsweg steht in {m.massnahmen.length} Programmen, deine Bewertung gilt für alle. So heißt er dort:</p>
+          <ul>
+            {[...new Set(m.massnahmen.map((x) => x.beschreibung))].map((b) => (
+              <li key={b}>{b}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       <p className="admin-klein">
-        Setzt an bei: {m.ursachen_ids.map(ursacheText).join(' · ')} ·{' '}
-        {m.land ? `Landesebene (${KATALOG.laender.find((l) => l.id === m.land)?.name ?? m.land})` : 'Bundesebene'}
+        Setzt an bei: {m.ursachen_ids.map(ursacheText).join(' · ')} · {ebeneText(m)}
       </p>
       <div className="pruef-wahlen">
         <WertWahl name={`w-${m.id}`} titel="Wirksamkeit" wert={wert.wirksamkeit} onWahl={(w) => onAendern({ wirksamkeit: w }, true)} />

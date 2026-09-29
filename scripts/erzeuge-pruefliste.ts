@@ -5,6 +5,7 @@
 //         npm run pruefliste -- 2 --artefakt  – ohne HTML-Gerüst (zum Veröffentlichen als Artifact)
 // Ausgabe: pruefung/<nr>-<thema>.html (nicht im Repo)
 import { mkdirSync, writeFileSync } from 'node:fs'
+import { pruefEinheiten, type KatalogMassnahme, type Pruefeinheit } from '../src/data/katalog.ts'
 import { blindeReihenfolge } from '../src/pruefung/auswertung.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
@@ -127,7 +128,9 @@ const STIL = `
 
 for (const thema of katalog.themen) {
   if (nurThema !== null && thema.id !== nurThema) continue
-  const massnahmen = katalog.massnahmen.filter((m) => m.thema_id === thema.id)
+  // Durchgang A bewertet Prüfeinheiten (Instrumente einmal für alle Programme), Durchgang B prüft jeden Beleg.
+  const einheiten = pruefEinheiten(katalog, thema.id)
+  const massnahmen = einheiten.flatMap((e) => e.massnahmen).sort((a, b) => a.id - b.id)
   const keine = katalog.abdeckung.filter((a) => a.thema_id === thema.id && a.art === 'keine')
   if (!massnahmen.length && !keine.length) continue
 
@@ -135,20 +138,25 @@ for (const thema of katalog.themen) {
   const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? String(id)
   const partei = (id: number) => katalog.parteien.find((p) => p.id === id)!
   // Feste, aber parteiunabhängige Reihenfolge für Durchgang A (wie auf der Prüfseite der App).
-  const blind = blindeReihenfolge(massnahmen)
-  const kennung = new Map(blind.map((m, i) => [m.id, `M${i + 1}`]))
+  const blind = blindeReihenfolge(einheiten)
+  const kennungen = new Map(blind.map((e, i) => [e.id, `M${i + 1}`]))
+  // In Durchgang B trägt jede Maßnahme die Kennung ihrer Prüfeinheit.
+  const kennungVon = (m: KatalogMassnahme) => kennungen.get(m.instrument_id ?? m.id)
   const fehlend = katalog.parteien.filter((p) => !katalog.abdeckung.some((a) => a.thema_id === thema.id && a.partei_id === p.id && !a.land))
   const landName = (id: string) => katalog.laender.find((l) => l.id === id)?.name ?? id
   // Umsetzbarkeit wird auf der Ebene des Programms bewertet (Bund oder Land).
-  const ebeneText = (m: (typeof massnahmen)[number]) =>
-    m.land ? `Landesebene (${esc(landName(m.land))})` : 'Bundesebene'
+  const ebeneText = (m: { land?: string | null } | Pruefeinheit): string => {
+    const laender = 'massnahmen' in m ? [...new Set(m.massnahmen.map((x) => x.land).filter((l): l is string => !!l))] : m.land ? [m.land] : []
+    return laender.length ? `Landesebene (${laender.map((l) => esc(landName(l))).join(', ')})` : 'Bundesebene'
+  }
 
   const daten = {
     thema: thema.id,
     massnahmen: blind.map((m) => ({
       id: m.id,
-      kennung: kennung.get(m.id),
-      partei: partei(m.partei_id).kurzname,
+      kennung: kennungen.get(m.id),
+      teile: m.massnahmen.map((x) => x.id),
+      partei: m.massnahmen.map((x) => partei(x.partei_id).kurzname + (x.land ? ` ${x.land}` : '')).join(', '),
       w: m.wirksamkeit,
       u: m.umsetzbarkeit,
       text: m.beschreibung,
@@ -160,11 +168,15 @@ for (const thema of katalog.themen) {
             <select id="a-${id}-${feld}" data-feld="${feld}"><option value="">–</option>${[0, 1, 2, 3].map((v) => `<option>${v}</option>`).join('')}</select>
           </label>`
 
-  const zeileA = (m: (typeof massnahmen)[number]) => `
+  const zeileA = (m: Pruefeinheit) => `
       <div class="zeile" data-id="${m.id}" data-teil="a">
-        <span class="kennung">${kennung.get(m.id)}</span>
+        <span class="kennung">${kennungen.get(m.id)}</span>
         <div>
-          <p>${esc(m.beschreibung)}</p>
+          <p>${esc(m.beschreibung)}</p>${
+            m.instrument
+              ? `<p class="leise">Lösungsweg aus ${m.massnahmen.length} Programmen, die Bewertung gilt für alle: ${[...new Set(m.massnahmen.map((x) => esc(x.beschreibung)))].join(' · ')}</p>`
+              : ''
+          }
           <p class="leise">Setzt an bei: ${m.ursachen_ids.map((u) => esc(ursacheText(u))).join(' · ')} · ${ebeneText(m)}</p>
         </div>
         <div class="wahl">${auswahl(m.id, 'w', 'Wirks.')}${auswahl(m.id, 'u', 'Umsetz.')}</div>
@@ -174,9 +186,9 @@ for (const thema of katalog.themen) {
         <p class="vergleich" aria-live="polite"></p>
       </div>`
 
-  const karteB = (m: (typeof massnahmen)[number]) => `
+  const karteB = (m: KatalogMassnahme) => `
       <div class="karte" data-id="${m.id}" data-teil="b">
-        <div class="karte-kopf"><b>${kennung.get(m.id)}</b><span>${esc(partei(m.partei_id).name)}</span><span>Entwurf: Wirksamkeit ${m.wirksamkeit} × Umsetzbarkeit ${m.umsetzbarkeit} = ${m.wirksamkeit * m.umsetzbarkeit} Punkte</span></div>
+        <div class="karte-kopf"><b>${kennungVon(m)}</b><span>${esc(partei(m.partei_id).name)}</span><span>Entwurf: Wirksamkeit ${m.wirksamkeit} × Umsetzbarkeit ${m.umsetzbarkeit} = ${m.wirksamkeit * m.umsetzbarkeit} Punkte</span></div>
         <p><b>${esc(m.beschreibung)}</b></p>
         <blockquote>„${esc(m.zitat ?? '(kein Zitat)')}“</blockquote>
         <p class="leise"><a href="${esc(m.beleg_programm_url)}" target="_blank" rel="noopener">Programm öffnen (PDF-Seite ${esc(m.beleg_programm_url.split('#page=')[1] ?? '?')})</a>${
@@ -193,7 +205,7 @@ for (const thema of katalog.themen) {
             : ''
         }</p>
         <div class="haken">${PUNKTE_B.map((p, i) => `<label for="b-${m.id}-${i}"><input type="checkbox" id="b-${m.id}-${i}" data-feld="b${i}"> ${p}</label>`).join('')}</div>
-        <textarea id="b-${m.id}-notiz" data-feld="notiz" placeholder="Einwand oder Notiz" aria-label="Notiz zu ${kennung.get(m.id)}"></textarea>
+        <textarea id="b-${m.id}-notiz" data-feld="notiz" placeholder="Einwand oder Notiz" aria-label="Notiz zu ${kennungVon(m)}"></textarea>
       </div>`
 
   const inhalt = `<title>Prüfliste ${esc(thema.name)}</title>
@@ -205,7 +217,7 @@ for (const thema of katalog.themen) {
   <header class="kopf">
     <p class="etikett">Politik-Duell · Vier-Augen-Prüfung · Stand ${new Date().toISOString().slice(0, 10)}</p>
     <h1>Prüfliste ${esc(thema.name)}</h1>
-    <p class="leise">${massnahmen.length} Maßnahmen aus ${new Set(massnahmen.map((m) => m.partei_id)).size} Wahlprogrammen${keine.length ? `, ${keine.length} × „keine Maßnahme“` : ''}.${
+    <p class="leise">${massnahmen.length} Maßnahmen (${einheiten.length} zu bewerten, gleiche Lösungswege als ein Instrument) aus ${new Set(massnahmen.map((m) => m.partei_id)).size} Wahlprogrammen${keine.length ? `, ${keine.length} × „keine Maßnahme“` : ''}.${
       fehlend.length ? ` Noch nicht erfasst: ${fehlend.map((p) => esc(p.name)).join(', ')}.` : ''
     } Deine Eingaben bleiben nur in diesem Browser gespeichert.</p>
     ${thema.ziel ? `<div class="ziel"><p class="etikett">Ziel – daran misst sich die Wirksamkeit</p><p>${esc(thema.ziel)}</p></div>` : ''}
@@ -217,7 +229,7 @@ for (const thema of katalog.themen) {
     <p class="etikett">Wirksamkeit: Wie stark hilft sie beim Ziel?</p>
     <p class="leise" style="margin-bottom:6px">Nur aus Sicht der Betroffenen. Vor- und Nachteile für andere (z. B. Vermieter) zählen hier nicht.</p>
     <div class="skala"><b>0</b><span>hilft beim Ziel nicht: setzt an keiner der erfassten Ursachen an</span><b>1</b><span>hilft kaum: nur am Rand oder lindert nur Folgen (z. B. Zuschuss ohne mehr Angebot)</span><b>2</b><span>hilft spürbar: setzt an einer Ursache an, deutliche Verbesserung zu erwarten</span><b>3</b><span>hilft stark: direkt an einer Hauptursache, Wirkung gut belegt</span></div>
-    <p class="etikett">Umsetzbarkeit: Könnte eine Bundesregierung sie in einer Wahlperiode rechtlich und finanziell umsetzen?</p>
+    <p class="etikett">Umsetzbarkeit: Könnte die Regierung der Ebene (Bund oder Land) sie in einer Wahlperiode rechtlich und finanziell umsetzen?</p>
     <div class="skala"><b>0</b><span>derzeit rechtlich oder finanziell nicht umsetzbar</span><b>1</b><span>nur mit großen Hürden (z. B. Verfassungsänderung, ungeklärte Finanzierung)</span><b>2</b><span>mit Aufwand oder in mehreren Jahren</span><b>3</b><span>rechtlich möglich, finanziert, in einer Wahlperiode realistisch</span></div>
     <p class="leise">Punkte je Maßnahme = Wirksamkeit × Umsetzbarkeit (0 bis 9).</p>
     <p class="etikett" style="margin-top:10px">Ursachen</p>
@@ -291,9 +303,10 @@ document.getElementById('kopieren').addEventListener('click', () => {
   const z = ['### Prüfung Thema ' + DATEN.thema, '', '| Maßnahme | Partei | Entwurf W×U | Prüfung W×U | Belege | Notiz |', '| --- | --- | --- | --- | --- | --- |'];
   for (const m of DATEN.massnahmen) {
     const w = wert(m.id, 'w'), u = wert(m.id, 'u');
-    const haken = [0, 1, 2, 3, 4].filter((i) => zustand[m.id + ':b:b' + i]).length;
-    const notiz = String(zustand[m.id + ':b:notiz'] || '').replace(/\\n/g, ' ').replace(/\\|/g, '/');
-    z.push('| ' + m.kennung + ' (' + m.id + ') ' + m.text.replace(/\\|/g, '/') + ' | ' + m.partei + ' | ' + m.w + '×' + m.u + ' | ' + (w === null ? '–' : w) + '×' + (u === null ? '–' : u) + ' | ' + haken + '/5 | ' + notiz + ' |');
+    // Belege prüft Durchgang B je Maßnahme – bei Instrumenten für alle Maßnahmen dahinter.
+    const haken = m.teile.reduce((n, id) => n + [0, 1, 2, 3, 4].filter((i) => zustand[id + ':b:b' + i]).length, 0);
+    const notiz = m.teile.map((id) => String(zustand[id + ':b:notiz'] || '')).filter(Boolean).join(' / ').replace(/\\n/g, ' ').replace(/\\|/g, '/');
+    z.push('| ' + m.kennung + ' (' + m.id + ') ' + m.text.replace(/\\|/g, '/') + ' | ' + m.partei + ' | ' + m.w + '×' + m.u + ' | ' + (w === null ? '–' : w) + '×' + (u === null ? '–' : u) + ' | ' + haken + '/' + 5 * m.teile.length + ' | ' + notiz + ' |');
   }
   const text = z.join('\\n');
   const feld = document.getElementById('ausgabe');

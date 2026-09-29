@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { exportiere, KRITISCHE_SPANNWEITE, MINDEST_BEWERTUNGEN, werteAus, type Einzelwert } from '../pruefung/auswertung'
 import { KATALOG } from '../pruefung/katalog'
 import type { PruefBewertung, PruefEinladung } from './client'
-import { massnahmenIds, themaName } from './pruefKatalog'
+import { einheiten, massnahmenIds, themaName } from './pruefKatalog'
 
 // Admin → Prüfung → Auswertung je Thema: Einzelwerte (mit Namen, nur hier),
 // Median je Kriterium, Punkte aus den Medianen, Spannweite. Der Export enthält
@@ -31,7 +31,10 @@ export function PruefAuswertung({ einladungen, bewertungen }: { einladungen: Pru
   const name = new Map(einladungen.map((e) => [e.id, e.name]))
   const aktiv = new Set(einladungen.filter((e) => !e.gesperrt).map((e) => e.id))
   const partei = (id: number) => KATALOG.parteien.find((p) => p.id === id)
-  const massnahmen = KATALOG.massnahmen.filter((m) => m.thema_id === themaId).sort((a, b) => a.partei_id - b.partei_id || a.id - b.id)
+  // Instrumente zuerst, dann einzelne Maßnahmen nach Partei.
+  const massnahmen = einheiten(themaId).sort(
+    (a, b) => Number(b.instrument) - Number(a.instrument) || a.massnahmen[0].partei_id - b.massnahmen[0].partei_id || a.id - b.id,
+  )
 
   const zeilen = massnahmen.map((m) => {
     const einzel = bewertungen.filter((b) => b.massnahme_id === m.id && aktiv.has(b.einladung_id))
@@ -72,7 +75,7 @@ export function PruefAuswertung({ einladungen, bewertungen }: { einladungen: Pru
         Spannweite ab {KRITISCHE_SPANNWEITE} – vor der Übernahme klären. * = nach dem Ansehen der Empfehlung geändert.
       </p>
       <p className="admin-klein">
-        {themaName(themaId)}: {massnahmen.length} Maßnahmen, davon {zuKlaeren} zu klären.
+        {themaName(themaId)}: {massnahmen.length} Prüfeinheiten (Instrumente und einzelne Maßnahmen), davon {zuKlaeren} zu klären.
       </p>
       <div className="pruef-tabelle-rahmen">
         <table className="pruef-tabelle">
@@ -94,7 +97,9 @@ export function PruefAuswertung({ einladungen, bewertungen }: { einladungen: Pru
                 <th scope="row">
                   <span className="admin-klein">
                     {a.klaeren && '⚠ '}
-                    {partei(m.partei_id)?.kurzname} · {m.id}
+                    {m.instrument
+                      ? `Instrument · ${m.id} · ${m.massnahmen.map((x) => `${partei(x.partei_id)?.kurzname}${x.land ? ` ${x.land}` : ''}`).join(', ')}`
+                      : `${partei(m.massnahmen[0].partei_id)?.kurzname}${m.massnahmen[0].land ? ` ${m.massnahmen[0].land}` : ''} · ${m.id}`}
                   </span>
                   <br />
                   {m.beschreibung}
