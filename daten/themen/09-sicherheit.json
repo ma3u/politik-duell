@@ -26,5 +26,1854 @@
       "ebene": "land",
       "schlagwoerter": ["jugendliche", "jugendgewalt", "kinder", "schule", "mobbing", "jugendbande", "abgezogen"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6279,
+      "name": "Videoüberwachung an Bahnhöfen und Gefahrenorten ausbauen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Videoüberwachung kann an einzelnen Orten Straftaten aufklären und manche verhindern; Studien finden Wirkung vor allem auf Parkplätzen, im öffentlichen Raum kaum. An Bahnhöfen ist die Bundespolizei zuständig, an anderen Orten die Länder.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6280,
+      "name": "Mehr Personal und Präsenz der Bundespolizei",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Bundespolizei kann an Bahnhöfen für mehr Präsenz sorgen; an den übrigen Orten, an denen sich Unsicherheit ballt, sind die Landespolizeien zuständig. Der Bund kann die Stellen selbst schaffen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6281,
+      "name": "Justiz mit einem Bund-Länder-Pakt personell und digital stärken",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Richter, Staatsanwälte und eine digitale Justiz setzen direkt an der Überlastung an; der erste Pakt für den Rechtsstaat hat Stellen geschaffen, die Rückstände aber nicht beseitigt. Der Bund kann nur mitfinanzieren, einstellen müssen die Länder.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6282,
+      "name": "Strafprozessordnung modernisieren und straffen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Einfachere Verfahrensregeln können Strafverfahren beschleunigen; wie stark, hängt von der Ausgestaltung ab, und Beschuldigtenrechte setzen Grenzen. Der Bund ist für das Strafverfahrensrecht zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6283,
+      "name": "Bagatelldelikte aus dem Strafrecht nehmen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wenn etwa Fahren ohne Fahrschein oder Drogenbesitz keine Straftat mehr ist, entfallen jährlich viele Verfahren bei Polizei, Staatsanwaltschaften und Gerichten; die Entlastung trifft aber vor allem einfache Verfahren. Der Bund ist zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6284,
+      "name": "Strafmündigkeit senken oder überprüfen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine niedrigere Strafmündigkeit setzt an der steigenden Zahl tatverdächtiger Kinder an; Studien finden aber keine abschreckende Wirkung früherer Strafen, und Jugendhilfe kann schon heute eingreifen. Der Bund ist für das Strafrecht zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6285,
+      "name": "Heranwachsende (18 bis 20 Jahre) nach Erwachsenenstrafrecht verurteilen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Härtere Strafen für junge Erwachsene sollen abschrecken; die Forschung findet dafür kaum Belege, erzieherische Maßnahmen senken Rückfälle eher. Der Bund ist für das Jugendgerichtsgesetz zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6286,
+      "name": "Mehr Polizei und sichtbare Präsenz vor Ort (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Polizei auf der Straße kann Straftaten verhindern und das Sicherheitsgefühl stärken; Studien finden Effekte vor allem, wenn die Präsenz auf Brennpunkte gerichtet ist. Neue Stellen kosten Geld und Ausbildungszeit, der Nachwuchs ist knapp.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6287,
+      "name": "Polizeipräsenz gezielt an Kriminalitätsschwerpunkten (Land)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "begruendung": "Streifen und Wachen an Orten, an denen sich Straftaten ballen, senken dort nachweislich die Kriminalität, ohne sie im großen Stil zu verdrängen (Hot-Spot-Policing). Das Land kann es selbst organisieren, braucht aber Personal.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6288,
+      "name": "Videoüberwachung öffentlicher Orte ausweiten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Videoüberwachung hilft bei der Aufklärung und kann an einzelnen Orten Straftaten verhindern; Studien finden im öffentlichen Raum nur kleine Effekte und keine deutliche Wirkung auf das Sicherheitsgefühl. Per Polizeigesetz des Landes umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6289,
+      "name": "KI-gestützte Videoanalyse im öffentlichen Raum (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Automatische Erkennung auffälliger Situationen kann Einsatzkräfte schneller alarmieren; die Wirkung ist kaum untersucht, und EU-KI-Verordnung und Grundrechte setzen enge Grenzen. Erste Modellprojekte gibt es.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6290,
+      "name": "Waffen- und Messerverbotszonen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbotszonen erlauben Kontrollen an Brennpunkten; ob sie Gewalt dort senken, ist kaum belegt, und anlassarme Kontrollen sind umstritten. Die Länder können sie per Verordnung einrichten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6291,
+      "name": "Angsträume beseitigen: Beleuchtung und Gestaltung öffentlicher Orte (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Beleuchtung und übersichtliche Gestaltung senken laut Studien Straftaten und stärken das Sicherheitsgefühl an den betroffenen Orten; die Wirkung bleibt örtlich begrenzt. Land und Kommunen können es mit Förderprogrammen umsetzen.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6292,
+      "name": "Polizei und Ordnungsämter gemeinsam im öffentlichen Raum (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gemeinsame Streifen und Sicherheitspartnerschaften erhöhen die Präsenz an Plätzen und Bahnhöfen und bündeln Zuständigkeiten; eigene Wirkungsstudien gibt es wenige. Land und Kommunen können es vereinbaren.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6293,
+      "name": "Sozialarbeit und Hilfen an Brennpunkten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Aufsuchende Sozialarbeit, Sucht- und Wohnungslosenhilfe können Konflikte an Plätzen und Bahnhöfen entschärfen; die Wirkung auf Kriminalität und Sicherheitsgefühl ist wenig untersucht. Sie braucht dauerhafte Finanzierung durch Land und Kommunen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6294,
+      "name": "Mehr Personal für Gerichte und Staatsanwaltschaften (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Richter, Staatsanwälte und Justizpersonal setzen direkt an der Überlastung an; der Nachwuchs ist knapp und die Besoldung im Wettbewerb der Länder entscheidend. Das Land kann einstellen, braucht dafür aber Haushaltsmittel.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6295,
+      "name": "Justiz digitalisieren (E-Akte, digitale Verfahren, KI) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Die elektronische Akte und digitale Abläufe können Verfahren mittelfristig beschleunigen; in der Umstellungsphase belasten sie das Personal eher zusätzlich. Die E-Akte ist bundesrechtlich ohnehin vorgeschrieben, das Land setzt sie um.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6296,
+      "name": "Beschleunigte Verfahren stärker nutzen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Das beschleunigte Verfahren nach § 417 StPO und feste Zielzeiten sorgen bei einfachen Fällen für schnelle Urteile; für die Masse komplexer Verfahren ändert sich wenig. Staatsanwaltschaften und Gerichte des Landes können es stärker nutzen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6297,
+      "name": "Schnelle Verfahren für junge Tatverdächtige, Häuser des Jugendrechts (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wenn Polizei, Staatsanwaltschaft und Jugendhilfe gemeinsam und schnell reagieren, folgt eine Reaktion kurz auf die Tat; Auswertungen berichten schnellere Verfahren, ein Effekt auf Rückfälle ist nicht eindeutig belegt. Das Land kann es einrichten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6298,
+      "name": "Gewaltprävention für Kinder und Jugendliche (Schule, Jugendarbeit, Streetwork) (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Präventionsprogramme an Schulen und aufsuchende Jugendarbeit setzen früh an; gut evaluierte Programme senken Gewalt, viele Angebote sind aber nicht untersucht. Land und Kommunen müssen sie dauerhaft finanzieren.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6299,
+      "name": "Auf Bundesebene das Jugendstrafrecht verschärfen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Eine niedrigere Strafmündigkeit oder Erwachsenenstrafrecht für Heranwachsende soll abschrecken; die Forschung findet dafür kaum Belege. Ein Land kann es nur über den Bundesrat anstoßen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6300,
+      "name": "Auf Bundesebene Bagatelldelikte entkriminalisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Bagatellverfahren würden Staatsanwaltschaften und Gerichte entlasten, vor allem bei einfachen Fällen; ein Land kann es nur über den Bundesrat anstoßen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6301,
+      "name": "Freiwillige Sicherheitshelfer oder Bürgerwacht (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ehrenamtliche Helfer können die Präsenz im öffentlichen Raum erhöhen und Polizei und Ordnungsämter entlasten; ihre Wirkung ist kaum untersucht, Befugnisse und Ausbildung müssen eng begrenzt sein. Das Land kann es gesetzlich regeln.",
+      "evidenz": "offen"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6302,
+          "instrument": 6279,
+          "beschreibung": "Videoschutz an Gefahrenorten ausbauen, Gesichtserkennung an Bahnhöfen und Kriminalitätsschwerpunkten",
+          "ursachen_ids": [901],
+          "zitat": "Wir fordern den Ausbau des Videoschutzes an öffentlichen Gefahrenorten und Systeme zur automatisierten Gesichtserkennung an Bahnhöfen, Flughäfen und anderen Kriminalitätsschwerpunkten zur Identifizierung schwerer Straftäter.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6303,
+          "instrument": 6284,
+          "beschreibung": "Mindestalter für die Strafmündigkeit wissenschaftlich prüfen lassen",
+          "ursachen_ids": [903],
+          "zitat": "Wir lassen dies durch eine wissenschaftliche Untersuchung prüfen, um gegebenenfalls das Mindestalter für die Strafmündigkeit anzupassen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6304,
+          "instrument": 6285,
+          "beschreibung": "Auf alle Heranwachsenden das allgemeine Strafrecht anwenden",
+          "ursachen_ids": [903],
+          "zitat": "Künftig soll auf alle Heranwachsende (18 bis 21 Jahre) das allgemeine Strafrecht Anwendung finden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6305,
+          "instrument": 6281,
+          "beschreibung": "Neuer Pakt für den Rechtsstaat: mehr Personal, Digitalisierung, schnellere Verfahren",
+          "ursachen_ids": [902],
+          "zitat": "Wir brauchen eine bessere personelle Ausstattung unserer Gerichte, eine konkurrenzfähige Besoldung, einen Digitalisierungsschub und schnellere Gerichtsverfahren.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6306,
+          "instrument": 6280,
+          "beschreibung": "Personalaufbau bei den Sicherheitsbehörden fortsetzen, Polizei sichtbarer machen",
+          "ursachen_ids": [901],
+          "zitat": "Besonders in herausfordernden Zeiten ist die Sichtbarkeit der Polizei von erheblicher Bedeutung. Auch dafür wollen wir den Personalaufbau bei den Sicherheitsbehörden konsequent fortsetzen",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=42",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6307,
+          "instrument": 6281,
+          "beschreibung": "Erneuter Pakt für den Rechtsstaat mit den Ländern",
+          "ursachen_ids": [902],
+          "zitat": "Mit einem erneuten Pakt für den Rechtsstaat werden wir gemeinsam mit den Ländern die Justiz personell und materiell besser ausstatten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=43",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6308,
+          "instrument": 6282,
+          "beschreibung": "Strafprozessordnung auf Effektivität reformieren",
+          "ursachen_ids": [902],
+          "zitat": "Zudem wollen wir die Strafprozessordnung auf Effektivität reformieren",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=43",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6309,
+          "instrument": 6281,
+          "beschreibung": "Neuauflage des Pakts für den Rechtsstaat; mehr Richter und Staatsanwälte, Digitalisierung",
+          "ursachen_ids": [902],
+          "zitat": "Mit einer Neuauflage des Pakts für den Rechtsstaat wollen wir gemeinsam mit den Bundesländern die Modernisierung unserer Justiz fortsetzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=113",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6310,
+          "instrument": 6283,
+          "beschreibung": "Geringfügige Delikte außerhalb des Strafrechts regeln, um die Justiz zu entlasten",
+          "ursachen_ids": [902],
+          "zitat": "Wir modernisieren das Strafrecht mit dem Ziel, die Justiz zu entlasten. Hierfür wollen wir prüfen, welche geringfügigen Delikte außerhalb des Strafrechts geregelt werden können.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=114",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6311,
+          "instrument": 6280,
+          "beschreibung": "Bundespolizei personell und technisch stärken",
+          "ursachen_ids": [901],
+          "zitat": "Wir wollen die Bundespolizei und das Bundeskriminalamt (BKA) so aufstellen, dass sie das Personal, die Technik, das Knowhow und auch die verfassungskonformen Befugnisse haben, die sie für eine effektive Aufgabenerfüllung benötigen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=133",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6312,
+          "beschreibung": "Sonderprogramm über zehn Jahre für Kinder- und Jugendarbeit in den Kommunen",
+          "ursachen_ids": [903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Offene Jugendarbeit bietet Orte und Ansprechpersonen und kann Gewalt vorbeugen; ihre Wirkung auf Jugendgewalt ist schwer nachzuweisen. Der Bund kann mit einem Förderprogramm beitragen, zuständig sind Länder und Kommunen.",
+          "zitat": "Mit einem Sonderprogramm wollen wir über zehn Jahre Kommunen dabei unterstützen, Strukturen für Kinder- und Jugendarbeit aufzubauen und zu stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6313,
+          "instrument": 6281,
+          "beschreibung": "Gerichte und Staatsanwaltschaften gut ausstatten, KI in der Justiz nutzen",
+          "ursachen_ids": [902],
+          "zitat": "Zu einem modernen Rechtsstaat gehören gut ausgestattete Gerichte und Staatsanwaltschaften. Dazu gehört auch, dass die Chancen der Künstlichen Intelligenz (KI) in der Justiz genutzt werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6314,
+          "instrument": 6283,
+          "beschreibung": "Überholte Straftatbestände streichen, Schwarzfahren als Ordnungswidrigkeit",
+          "ursachen_ids": [902],
+          "zitat": "Wir wollen das Strafgesetzbuch systematisch überprüfen und überholte Straftatbestände anpassen oder streichen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6315,
+          "instrument": 6281,
+          "beschreibung": "Staatsanwaltschaften und Gerichte der Länder über einen höheren Steueranteil unterstützen; Justizpersonal aufstocken",
+          "ursachen_ids": [902],
+          "zitat": "Unterstützung der Staatsanwaltschaften und der Gerichte in den Bundesländern zur Bewältigung dieser gesamtgesellschaftlichen Aufgabe durch Erhöhung des Anteils am Steueraufkommen",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=118",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6316,
+          "instrument": 6282,
+          "beschreibung": "Prozessordnung modernisieren",
+          "ursachen_ids": [902],
+          "zitat": "Neben der Modernisierung der noch aus dem 19. Jahrhundert stammenden Prozessordnung",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=120",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6317,
+          "instrument": 6284,
+          "beschreibung": "Strafmündigkeit auf 12 Jahre senken",
+          "ursachen_ids": [903],
+          "zitat": "Herabsetzung der Strafmündigkeit auf 12 Jahre",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6318,
+          "instrument": 6285,
+          "beschreibung": "Jugendstrafrecht nur noch bis zum 18. Lebensjahr",
+          "ursachen_ids": [903],
+          "zitat": "Anwendbarkeit des Jugendstrafrechts nur noch auf Jugendliche bis zur Vollendung des 18. Lebensjahrs",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6319,
+          "beschreibung": "Mehrfach- und Intensivtäter zeitnah inhaftieren",
+          "ursachen_ids": [903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Schnelle Haft kann einzelne Intensivtäter stoppen; Haft ist aber an enge rechtliche Voraussetzungen gebunden, und Jugendhaft erhöht laut Studien eher das Rückfallrisiko. Der Bund kann Haftgründe ändern, vollziehen müssen die Länder.",
+          "zitat": "Zeitnahe Inhaftierung von Personen, die als Mehrfach- und Intensivtäter eingestuft werden",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=119",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6320,
+          "instrument": 6283,
+          "beschreibung": "Drogenkonsum vollständig entkriminalisieren",
+          "ursachen_ids": [902],
+          "zitat": "Wir wollen Drogenkonsum vollständig entkriminalisieren",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6321,
+          "beschreibung": "Hilfen und Sozialarbeit statt Verdrängung von Obdachlosen und Suchtkranken aus den Innenstädten",
+          "ursachen_ids": [901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Hilfsangebote können Konflikte an Plätzen und Bahnhöfen entschärfen; die Wirkung auf das Sicherheitsgefühl ist wenig untersucht. Der Bund kann Hilfen mitfinanzieren, zuständig sind Länder und Kommunen.",
+          "zitat": "Obdachlosen und Suchtabhängigen ist nicht mit einer Verdrängung aus den Innenstädten geholfen, vielmehr benötigen sie bessere Hilfsangebote und eine Stärkung der Sozialarbeit",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6322,
+          "instrument": 6286,
+          "beschreibung": "Landespolizei auf weit mehr als 8.100 Bedienstete aufstocken, Sichtbarkeit in den Revieren erhöhen",
+          "ursachen_ids": [901],
+          "zitat": "Wir wollen einen personellen Aufwuchs innerhalb der Landespolizei auf weit mehr als 8.100 Bedienstete.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=6",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6323,
+          "instrument": 6288,
+          "beschreibung": "Videoschutz im öffentlichen Raum ausweiten",
+          "ursachen_ids": [901],
+          "zitat": "Zur Aufklärung und Verhinderung von Straftaten soll der Videoschutz im öffentlichen Raum ausgeweitet werden.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=7",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6324,
+          "instrument": 6289,
+          "beschreibung": "KI-gestützten Videoschutz landesweit ermöglichen",
+          "ursachen_ids": [901],
+          "zitat": "Ergänzend dazu wollen wir einen KI-gestützten intelligenten Videoschutz landesweit ermöglichen, um auffällige Verhaltensmuster automatisiert erkennen und zusätzliche Fahndungserfolge erzielen zu können.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=7",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6325,
+          "instrument": 6296,
+          "beschreibung": "Beschleunigte Verfahren, Zielzeiten für zentrale Verfahrensarten",
+          "ursachen_ids": [902],
+          "zitat": "Durch beschleunigte Verfahren soll eine unmittelbare Ahndung von Straftaten erfolgen. Hierfür werden wir Zielzeiten für zentrale Verfahrensarten definieren und eine digitale Infrastruktur einführen, die Verfahren beschleunigt.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=58",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6326,
+          "instrument": 6294,
+          "beschreibung": "Nachwuchs für die Justiz gewinnen, Justizberufe attraktiver machen",
+          "ursachen_ids": [902],
+          "zitat": "Wir werden die Nachwuchsgewinnung, auch unter Nutzung von Sozialen Medien, weiter ausbauen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=58",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6327,
+          "instrument": 6295,
+          "beschreibung": "Vollständige elektronische Aktenführung, KI in der Justiz",
+          "ursachen_ids": [902],
+          "zitat": "Wir treiben die Digitalisierung innerhalb der Justiz und für Dritte konsequent voran. Ziel ist die vollständige elektronische Aktenführung",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=58",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6328,
+          "instrument": 6298,
+          "beschreibung": "Schülergremien gegen beginnende Jugendkriminalität stärken",
+          "ursachen_ids": [903],
+          "zitat": "Wir werden daher Jugendliche stärken, die Verantwortung in Schülergremien übernehmen und im Umfeld beginnender Jugendkriminalität die Durchsetzung und Akzeptanz der Rechtsordnung bei Gleichaltrigen erklären und umsetzen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=59",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6329,
+          "instrument": 6297,
+          "beschreibung": "Häuser des Jugendrechts ermöglichen",
+          "ursachen_ids": [903],
+          "zitat": "Im Bereich der Kriminalprävention ermöglichen wir die Einrichtung von Häusern des Jugendrechts, in denen Delikte minderjähriger Beschuldigter durch Polizei, Staatsanwaltschaft und Jugendhilfe gemeinsam bearbeitet werden.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6330,
+          "instrument": 6286,
+          "beschreibung": "Ausreichende Personalstärke der Polizei sichern",
+          "ursachen_ids": [901],
+          "zitat": "Ausreichende Personalstärke bleibt Voraussetzung.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=29",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6331,
+          "instrument": 6291,
+          "beschreibung": "Städtebauliche Maßnahmen und gute Beleuchtung für mehr Sicherheitsgefühl",
+          "ursachen_ids": [901],
+          "zitat": "Städtebauliche Maßnahmen, gute Beleuchtung, sichere Verkehrswege und erreichbare Ansprechpersonen erhöhen das Sicherheitsgefühl.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=30",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6332,
+          "instrument": 6298,
+          "beschreibung": "Kommunale Präventionsräte und soziale Präventionsangebote unterstützen",
+          "ursachen_ids": [903],
+          "zitat": "Präventionsarbeit in Kommunen, Schulen und Vereinen hilft, Konflikte frühzeitig zu entschärfen und Straftaten zu verhindern. Kommunale Präventionsräte und soziale Präventionsangebote werden unterstützt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=30",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6333,
+          "instrument": 6294,
+          "beschreibung": "Gerichte und Staatsanwaltschaften personell stärken, kein Einstellungsstopp",
+          "ursachen_ids": [902],
+          "zitat": "Gerichte und Staatsanwaltschaften werden personell und technisch gestärkt. Ein Einstellungsstopp in der Justiz wird abgelehnt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6334,
+          "instrument": 6295,
+          "beschreibung": "Verbindliches Digitalisierungskonzept für die Justiz, E-Akte",
+          "ursachen_ids": [902],
+          "zitat": "Für die Justiz wird ein verbindliches Digitalisierungskonzept entwickelt, das Transparenz über Schritte, Zuständigkeiten und Zeitpläne schafft.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6335,
+          "instrument": 6286,
+          "beschreibung": "Personalausbau auf 7.000 Vollzugsstellen, Fahrradstreifen",
+          "ursachen_ids": [901],
+          "zitat": "Der Personalausbau bei den Vollzugsbeamt*innen soll konsequent bis zur Zielgröße von 7.000 Stellen fortgesetzt werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6336,
+          "instrument": 6291,
+          "beschreibung": "Sichere Haltestellen schaffen, Angsträume beseitigen",
+          "ursachen_ids": [901],
+          "zitat": "Konkret wollen wir sichere Haltestellen schaffen und Angsträume beseitigen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=28",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6337,
+          "instrument": 6295,
+          "beschreibung": "Digitalisierung der Justiz, E-Akte mit Priorität",
+          "ursachen_ids": [902],
+          "zitat": "Die Einführung der E-Akte muss Priorität bekommen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=46",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6338,
+          "instrument": 6294,
+          "beschreibung": "Gerichte und Staatsanwaltschaften personell so ausstatten, dass Verfahren zügig bearbeitet werden",
+          "ursachen_ids": [902],
+          "zitat": "Gerichte und Staatsanwaltschaften müssen personell so ausgestattet werden, dass Verfahren effizient und zügig bearbeitet werden können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=46",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6339,
+          "instrument": 6295,
+          "beschreibung": "E-Akte in der ganzen Justiz bis spätestens 2030",
+          "ursachen_ids": [902],
+          "zitat": "Die landesweite Einführung der elektronischen Akte in allen Bereichen der Justiz muss bis spätestens 2030 abgeschlossen sein.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6340,
+          "instrument": 6294,
+          "beschreibung": "Justiz als attraktiver Arbeitgeber",
+          "ursachen_ids": [902],
+          "zitat": "Die Justiz muss in allen Bereichen ein attraktiver Arbeitgeber werden.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=46",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6341,
+          "instrument": 6286,
+          "beschreibung": "Sichtbar mehr Polizei, 7.000 Vollzugsstellen, Entlastung durch Verwaltungspersonal",
+          "ursachen_ids": [901],
+          "zitat": "Wir sorgen für sichtbar mehr Polizei in Stadt und Land durch eine klare Aufgabentrennung nach Qualifikation.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=47",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6342,
+          "instrument": 6292,
+          "beschreibung": "Sicherheitspartnerschaften von Polizei und Ordnungsämtern, gemeinsame Einsätze als Regelfall",
+          "ursachen_ids": [901],
+          "zitat": "Wir bauen Sicherheitspartnerschaften zwischen Polizei und Ordnungsämtern flächendeckend aus und machen gemeinsame Einsätze zum Regelfall.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=47",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6343,
+          "instrument": 6286,
+          "beschreibung": "Landespolizei auf mindestens 7.500 Vollzugsbeamte aufstocken",
+          "ursachen_ids": [901],
+          "zitat": "Wir werden deshalb die Landespolizei auf mindestens 7.500 Vollzugsbeamte aufstocken.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=105",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6344,
+          "beschreibung": "Freiwillige Bürgerwacht unter dem Ordnungsamt",
+          "ursachen_ids": [901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ehrenamtliche Streifen können die Präsenz im öffentlichen Raum erhöhen; ihre Wirkung ist kaum untersucht, und Befugnisse sowie Ausbildung müssen klar begrenzt sein. Das Land kann es gesetzlich regeln.",
+          "zitat": "Wir werden deshalb als eine dritte Säule der Sicherheitsarchitektur vor Ort eine freiwillige Bürgerwacht aufbauen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=112",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6345,
+          "beschreibung": "Warnschussarrest bei jeder Form der Jugendkriminalität",
+          "ursachen_ids": [903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Kurzer Arrest soll jugendliche Täter warnen; Studien finden nach Jugendarrest hohe Rückfallquoten. Ob Arrest verhängt wird, entscheiden unabhängige Gerichte nach Bundesrecht, eine Landesregierung kann es nicht anordnen.",
+          "zitat": "werden wir dafür sorgen, dass bei jeder Form der Jugendkriminalität konsequent der sogenannte Warnschussarrest verhängt wird.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=109",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6346,
+          "instrument": 6296,
+          "beschreibung": "Beschleunigtes Verfahren nach § 417 StPO stärker nutzen",
+          "ursachen_ids": [902],
+          "zitat": "Von der Möglichkeit eines beschleunigten Verfahrens nach § 417 Strafprozessordnung soll stärker Gebrauch gemacht werden, damit die Strafe als Konsequenz der Tat erfahrbar wird.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6347,
+          "instrument": 6297,
+          "beschreibung": "Neuköllner Modell: jugendliche Täter schnell aburteilen",
+          "ursachen_ids": [903],
+          "zitat": "Prinzipiell werden wir nach dem „Neuköllner Modell“ dafür sorgen, dass insbesondere bei Straftaten von Jugendlichen der Delinquent schnell abgeurteilt wird.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6348,
+          "instrument": 6294,
+          "beschreibung": "Engpässe der Justiz durch Investitionen und Personal auflösen",
+          "ursachen_ids": [902],
+          "zitat": "Eine AfD-Regierung wird durch beherzte Investitionen und Einstellung von Personal die Engpässe auflösen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6349,
+          "instrument": 6299,
+          "beschreibung": "Auf Bundesebene Strafmündigkeit auf 12 Jahre senken, Heranwachsende nach Erwachsenenstrafrecht",
+          "ursachen_ids": [903],
+          "zitat": "Wir werden uns deshalb auf Bundesebene dafür einsetzen, die Strafmündigkeit von derzeit 14 auf 12 Jahre abzusenken.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=124",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6350,
+          "instrument": 6286,
+          "beschreibung": "500 neue Polizeistellen bis 2030, mobile Polizeistationen",
+          "ursachen_ids": [901],
+          "zitat": "500 neue Polizeistellen bis 2030 bedeuten nicht nur mehr Präsenz auf der Straße, sondern vor allem mehr Zeit für echte Bürger:innennähe.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=128",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6351,
+          "instrument": 6298,
+          "beschreibung": "Mehr Streetwork, offene Jugendtreffs und Jugendzentren; Präventionspolizei an Schulen",
+          "ursachen_ids": [903],
+          "zitat": "Unsere Investitionen sind gezielt: Jugendarbeit statt Jugendknast – mehr Streetwork, offene Jugendtreffs und Jugendzentren, die jungen Menschen einen Halt und eine Perspektive bieten.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=134",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6352,
+          "instrument": 6294,
+          "beschreibung": "Langfristige Personalstrategie, Stellen schnell besetzen, mehr Assistenzkräfte",
+          "ursachen_ids": [902],
+          "zitat": "Neu- und Nachbesetzungen schnell und konsequent durchführen",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=136",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6353,
+          "instrument": 6295,
+          "beschreibung": "Funktionstüchtige, flächendeckende E-Akte",
+          "ursachen_ids": [902],
+          "zitat": "eine funktionstüchtige und flächendeckende E-Akte",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=136",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6354,
+          "instrument": 6300,
+          "beschreibung": "Auf Bundesebene Fahren ohne Fahrschein entkriminalisieren",
+          "ursachen_ids": [902],
+          "zitat": "die Abschaffung der Straffälligkeit von Fahren ohne gültigen Fahrausweis, um unverhältnismäßige Verfahren zu vermeiden",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=139",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6355,
+          "instrument": 6297,
+          "beschreibung": "Häuser des Jugendrechts einrichten",
+          "ursachen_ids": [903],
+          "zitat": "die Einrichtung von „Häusern des Jugendrechts“, um schnelle, behördenübergreifende Reaktionen zu ermöglichen",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=140",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6356,
+          "instrument": 6298,
+          "beschreibung": "Mehr Sozialarbeiter in der Jugendarbeit, Gewaltprävention weiter fördern",
+          "ursachen_ids": [903],
+          "zitat": "Die Zahl der Sozialarbeiter in der Jugendarbeit muss dringend erhöht werden. Projekte der Gewalt- und Extremismusprävention wie die in der Trägerschaft der Halleschen Jugendwerkstatt leisten einen wichtigen Beitrag und sollen weiter vom Land gefördert werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=65",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6357,
+          "instrument": 6286,
+          "beschreibung": "Landespolizei bis 2028 auf rund 7.000 Stellen aufstocken, mehr sichtbare Präsenz",
+          "ursachen_ids": [901],
+          "zitat": "Bis spätestens 2028 braucht Sachsen-Anhalt insgesamt rund 7.000 Polizeibeamte, um Einsatzfähigkeit, Präsenz und Ermittlungsarbeit dauerhaft sicherzustellen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=68",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6358,
+          "instrument": 6294,
+          "beschreibung": "Bessere Besoldung, Einstellungsstopp im Justizdienst aufheben",
+          "ursachen_ids": [902],
+          "zitat": "Wir fordern deshalb eine Verbesserung der Richter- und Staatsanwaltsbesoldung, mehr Planungssicherheit bei Einstellungen sowie die Aufhebung des faktischen Einstellungsstopps im mittleren und gehobenen Justizdienst.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=71",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6359,
+          "instrument": 6286,
+          "beschreibung": "Landespolizei dauerhaft stärken und personell aufstocken, Soll-Stärke erreichen",
+          "ursachen_ids": [901],
+          "zitat": "Wir werden die Landespolizei dauerhaft stärken, personell aufstocken und modern",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6360,
+          "instrument": 6288,
+          "beschreibung": "Videobeobachtung in Angsträumen",
+          "ursachen_ids": [901],
+          "zitat": "Videobeobachtung in Angsträumen",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6361,
+          "instrument": 6287,
+          "beschreibung": "Mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten",
+          "ursachen_ids": [901],
+          "zitat": "Polizei in den Innenstädten und an Kriminalitätsschwerpunkten",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6362,
+          "instrument": 6292,
+          "beschreibung": "Enge Zusammenarbeit mit den kommunalen Ordnungsdiensten",
+          "ursachen_ids": [901],
+          "zitat": "arbeiten eng … mit den Kommunalen Ordnungsdiensten zusammen",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6363,
+          "instrument": 6291,
+          "beschreibung": "Modernes Beleuchtungsmanagement und bauliche Maßnahmen",
+          "ursachen_ids": [901],
+          "zitat": "Mit einem modernen Beleuchtungsmanagement und baulichen Maßnahmen wollen",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6364,
+          "instrument": 6294,
+          "beschreibung": "50 zusätzliche Stellen bei den Staatsanwaltschaften, Gerichte nach Personalbedarf ausstatten",
+          "ursachen_ids": [902],
+          "zitat": "Daher werden wir die Justiz durch 50 zusätzliche Stellen bei den",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=33",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6365,
+          "instrument": 6295,
+          "beschreibung": "Digitalisierung der Justiz, E-Akte in allen Rechtsgebieten, KI als Hilfsmittel",
+          "ursachen_ids": [902],
+          "zitat": "Neben zusätzlichem Personal werden wir die Digitalisierung der Justiz konsequent",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=34",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6366,
+          "instrument": 6297,
+          "beschreibung": "Beschleunigte Verfahren im Jugendstrafrecht, Häuser des Jugendrechts prüfen",
+          "ursachen_ids": [903],
+          "zitat": "Wir setzen uns für beschleunigte Verfahren im Jugendstrafrecht ein, damit",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6367,
+          "beschreibung": "Jugendlichen Mehrfach- und Intensivtätern wirksamer begegnen, bessere Kooperation und Datenaustausch",
+          "ursachen_ids": [903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Abgestimmte Programme für jugendliche Intensivtäter setzen an der kleinen Gruppe an, die viele Taten begeht; Auswertungen berichten weniger Rückfälle, die Befunde sind aber nicht einheitlich. Das Land kann es mit Polizei, Justiz und Jugendhilfe umsetzen.",
+          "zitat": "Jugendlichen Mehrfach- und Intensivtätern wollen wir",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=35",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6368,
+          "instrument": 6292,
+          "beschreibung": "Sicherheit und Ordnung an Bahnhöfen, Haltestellen, in Bussen und Bahnen gemeinsam stärken",
+          "ursachen_ids": [901],
+          "zitat": "Wir wollen Sicherheit und Ordnung an Bahnhöfen, Haltestellen sowie in Bussen und Bahnen gemeinsam mit Kommunen, Verkehrsunternehmen, Polizei und Ordnungsbehörden weiter stärken.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=46",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6369,
+          "instrument": 6286,
+          "beschreibung": "Personalaufwuchs auf mindestens 6.183 Polizeibeamte, Präsenz in der Fläche",
+          "ursachen_ids": [901],
+          "zitat": "Deshalb werden wir am weiteren Personalaufwuchs auf mindestens 6.183 Polizeibeamte",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=46",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6370,
+          "instrument": 6294,
+          "beschreibung": "Personalausstattung der Justiz auf hohem Niveau halten",
+          "ursachen_ids": [902],
+          "zitat": "Erstens werden wir die Personalausstattung der Justiz auf hohem Niveau erhalten und die Arbeitsbedingungen attraktiv halten.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=59",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6371,
+          "instrument": 6295,
+          "beschreibung": "Digitalisierung der Justiz vorantreiben, E-Akte als Standard",
+          "ursachen_ids": [902],
+          "zitat": "Zweitens treiben wir die Digitalisierung der Justiz weiter voran, damit Verfahren einfacher, schneller und zugleich rechtsstaatlich sicher werden.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=59",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6372,
+          "instrument": 6298,
+          "beschreibung": "Soziale Präventionsarbeit in den Kommunen stärken (Streetwork, Jugendclubs)",
+          "ursachen_ids": [903],
+          "zitat": "soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=76",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6373,
+          "instrument": 6286,
+          "beschreibung": "Bürger*innen-Polizei mit mehr Präsenz zu Fuß in den Quartieren, ausreichende Neueinstellungen",
+          "ursachen_ids": [901],
+          "zitat": "eine „Bürger*innen-Polizei“ nach skandinavischem Vorbild stärken, mit mehr Präsenz vor Ort, etwa durch Beamt*innen zu Fuß in den Quartieren",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=76",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6374,
+          "instrument": 6294,
+          "beschreibung": "Deutlich mehr Richter*innen, Staatsanwält*innen und Justizbedienstete einstellen",
+          "ursachen_ids": [902],
+          "zitat": "für den Ausgleich der Altersabgänge deutlich mehr Richter*innen, Staatsanwält*innen und Justizbedienstete einstellen und angemessen bezahlen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=78",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6375,
+          "instrument": 6286,
+          "beschreibung": "Mehr Polizeibeamte im operativen Dienst, Entlastung von Verwaltungsaufgaben",
+          "ursachen_ids": [901],
+          "zitat": "den Personalschlüssel der Landespolizei bedarfs- und aufgabengerecht anpassen, und wieder mehr Polizeibeamte im operativen Dienst einsetzen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=133",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6376,
+          "instrument": 6294,
+          "beschreibung": "Zahl der Richter, Staatsanwälte und Justizmitarbeitenden bedarfsgerecht erhöhen",
+          "ursachen_ids": [902],
+          "zitat": "die Zahl der Richter, Staatsanwälte sowie der Mitarbeitenden in den Justizbehörden unverzüglich bedarfsgerecht erhöhen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=138",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6377,
+          "instrument": 6295,
+          "beschreibung": "Digitalisierung der Justiz, elektronische Ermittlungsakte mit Schnittstelle zur Polizei",
+          "ursachen_ids": [902],
+          "zitat": "die Digitalisierung der Justiz konsequent vorantreiben, um Verfahren zu beschleunigen",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=138",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6378,
+          "instrument": 6286,
+          "beschreibung": "Am Ziel von 6.200 Beamten der Landespolizei festhalten",
+          "ursachen_ids": [901],
+          "zitat": "Wir halten am Ziel von 6200 Beamten der Landespolizei fest.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=37",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6379,
+          "instrument": 6301,
+          "beschreibung": "Freiwillige Sicherheitshelfer prüfen",
+          "ursachen_ids": [901],
+          "zitat": "Zusätzlich prüfen wir die Einführung freiwilliger Sicherheitshelfer nach dem Vorbild anderer Bundesländer, um Polizei und kommunale Ordnungsdienste zu entlasten.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=37",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6380,
+          "instrument": 6296,
+          "beschreibung": "Beschleunigtes Verfahren in einfachen Fällen stärker nutzen",
+          "ursachen_ids": [902],
+          "zitat": "Wir ermutigen die Staatsanwaltschaften, in einfach gelagerten Fällen von der Möglichkeit des beschleunigten Verfahrens mehr Gebrauch zu machen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6381,
+          "instrument": 6297,
+          "beschreibung": "Vereinfachtes Jugendverfahren anwenden",
+          "ursachen_ids": [903],
+          "zitat": "In Jugendsachen soll entsprechend das vereinfachte Verfahren angewandt werden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6382,
+          "instrument": 6299,
+          "beschreibung": "Bundesratsinitiative: Strafmündigkeit auf 12 Jahre senken",
+          "ursachen_ids": [903],
+          "zitat": "Wir werden in den Bundesrat die Initiative einbringen, die Strafmündigkeit von derzeit 14 auf 12 Jahre abzusenken.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6383,
+          "instrument": 6286,
+          "beschreibung": "Polizei personell und sachlich ausreichend ausstatten",
+          "ursachen_ids": [901],
+          "zitat": "Die Polizei durch ausreichende personelle und sachliche Ausstattung unterstützen",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6384,
+          "instrument": 6294,
+          "beschreibung": "Arbeitsbedingungen in Gerichten und Staatsanwaltschaften verbessern",
+          "ursachen_ids": [902],
+          "zitat": "Die Arbeitsbedingungen in Gerichten, Staatsanwaltschaften und im Justizvollzug verbessern, um entsprechende Berufe dauerhaft attraktiv zu machen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6385,
+          "instrument": 6295,
+          "beschreibung": "E-Akte und Schnittstellen zu Polizei und weiteren Stellen interoperabel gestalten",
+          "ursachen_ids": [902],
+          "zitat": "E-Akte, Fachverfahren und Schnittstellen zu Polizei, Anwaltschaft, Sozialverwaltung und weiteren Institutionen interoperabel, zuverlässig und datenschutzkonform gestalten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6386,
+          "instrument": 6287,
+          "beschreibung": "Mehr Personal im Streifendienst für Präsenz in Problem- und Brennpunktbereichen",
+          "ursachen_ids": [901],
+          "zitat": "Präsenz in Problem- und Brennpunktbereichen zu stärken",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=67",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6387,
+          "instrument": 6294,
+          "beschreibung": "Mehr Richter, Staatsanwälte und Servicekräfte",
+          "ursachen_ids": [902],
+          "zitat": "zusätzliche Richter, Staatsanwälte sowie qualifizierte",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=69",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6388,
+          "instrument": 6296,
+          "beschreibung": "Schnellere Verfahren und Vollstreckung im Strafrecht",
+          "ursachen_ids": [902],
+          "zitat": "Schnellere Verfahren und Vollstreckung im Strafrecht, damit auf die Tat zeitnah die Strafe folgt",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=69",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6389,
+          "instrument": 6288,
+          "beschreibung": "Videoüberwachung an allen kriminalitätsbelasteten Orten ausbauen",
+          "ursachen_ids": [901],
+          "zitat": "Wir werden die Videoüberwachung an allen kriminalitätsbelasteten Orten weiter ausbauen",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=10",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6390,
+          "instrument": 6287,
+          "beschreibung": "Polizeiwachen an Kriminalitätsschwerpunkten, etwa am Leopoldplatz",
+          "ursachen_ids": [901],
+          "zitat": "Aufbauend auf diesen positiven Erfahrungen setzen wir uns auch für eine Polizeiwache am Leopoldplatz ein",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=8",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6391,
+          "instrument": 6291,
+          "beschreibung": "Angsträume abbauen: Beleuchtung, übersichtliche Wege, gepflegte Unterführungen",
+          "ursachen_ids": [901],
+          "zitat": "Deshalb wollen wir Angsträume konsequent abbauen: durch bessere Beleuchtung, übersichtliche Wegeführungen, gepflegte Unterführungen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=10",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6392,
+          "instrument": 6290,
+          "beschreibung": "Waffen- und Messerverbotszonen an Kriminalitätsschwerpunkten",
+          "ursachen_ids": [901],
+          "zitat": "An bekannten Kriminalitätsschwerpunkten kommen nun verstärkt Videoüberwachung und Waffen- und Messerverbotszonen zum Einsatz.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=6",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6393,
+          "instrument": 6286,
+          "beschreibung": "Neue Wege bei der Personalgewinnung der Polizei",
+          "ursachen_ids": [901],
+          "zitat": "Angesichts bevorstehender Pensionierungswellen werden wir neue Wege bei der Personalgewinnung gehen",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=7",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6394,
+          "instrument": 6296,
+          "beschreibung": "Beschleunigte Strafverfahren bei Straßenkriminalität zum Regelfall machen",
+          "ursachen_ids": [902],
+          "zitat": "Besonders beschleunigte Strafverfahren werden wir deutlich ausbauen und sie insbesondere bei Delikten der Straßenkriminalität zum Regelfall machen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6395,
+          "instrument": 6295,
+          "beschreibung": "Digitale Justiz, die IT und Künstliche Intelligenz nutzt",
+          "ursachen_ids": [902],
+          "zitat": "Unser Ziel ist eine digitale und zukunftsfähige Justiz, die IT und Künstliche Intelligenz konsequent nutzt",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6396,
+          "instrument": 6294,
+          "beschreibung": "Ruhestand von Richterinnen und Richtern freiwillig bis 68 hinausschieben",
+          "ursachen_ids": [902],
+          "zitat": "Deshalb wollen wir im Berliner Richtergesetz die Möglichkeit schaffen, den Ruhestand auf Antrag freiwillig bis zum 68. Lebensjahr hinauszuschieben.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6397,
+          "instrument": 6299,
+          "beschreibung": "Auf Bundesebene Strafmündigkeit von 14 auf 12 Jahre senken",
+          "ursachen_ids": [903],
+          "zitat": "Wir setzen uns auf Bundesebene dafür ein, das Alter der Strafmündigkeit von 14 Jahren auf 12 Jahre herabzusetzen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6398,
+          "instrument": 6287,
+          "beschreibung": "Mehr Fuß- und Fahrradstreifen, Sicherheitspersonal auf U- und S-Bahnhöfen",
+          "ursachen_ids": [901],
+          "zitat": "Fuß- und Fahrradstreifen weiten wir stadtweit aus. U- und S-Bahnhöfe besetzen wir häufiger mit Sicherheitspersonal.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6399,
+          "instrument": 6298,
+          "beschreibung": "Präventionsräte stärken, Gewaltpräventionsgesetz",
+          "ursachen_ids": [903],
+          "zitat": "Die bezirklichen Präventionsräte stärken wir personell. Ein Gewaltpräventionsgesetz soll Prävention, bezirkliche Strukturen und ressortübergreifende Zusammenarbeit verbindlich regeln und dauerhaft finanzieren.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6400,
+          "instrument": 6291,
+          "beschreibung": "Haltestellen überdachen und beleuchten",
+          "ursachen_ids": [901],
+          "zitat": "Wir stärken die Sicherheit im öffentlichen Raum, etwa durch Überdachung und Beleuchtung von Haltestellen",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6401,
+          "instrument": 6294,
+          "beschreibung": "Verfahren durch bessere Abläufe, Digitalisierung und zusätzliche Stellen verkürzen",
+          "ursachen_ids": [902],
+          "zitat": "Deshalb verkürzen wir diese durch bessere Abläufe, konsequente Digitalisierung und zusätzliche Stellen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6402,
+          "instrument": 6297,
+          "beschreibung": "Schnelle Reaktion auf Straftaten Jugendlicher und Heranwachsender",
+          "ursachen_ids": [903],
+          "zitat": "Gerade bei Jugendlichen und Heranwachsenden sollen die Behörden auf Straftaten schnell reagieren.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6403,
+          "instrument": 6287,
+          "beschreibung": "Kontaktbereichsbeamte, Fahrradstreifen und mobile Wachen an Hotspots",
+          "ursachen_ids": [901],
+          "zitat": "Dazu zählen mehr Kontaktbereichsbeamt*innen als lokale Ansprechpersonen, die Ausweitung von Fahrradstreifen und Präsenz an hochfrequentierten Orten oder Hotspots, auch mit mobilen Wachen und Kiezläufer*innen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=225",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6404,
+          "instrument": 6298,
+          "beschreibung": "Jugendsozial- und Jugendkulturarbeit absichern, besonders für junge Männer",
+          "ursachen_ids": [903],
+          "zitat": "werden wir die Angebote der Jugendsozial- und Jugendkulturarbeit, insbesondere für junge Männer, absichern",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=225",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6405,
+          "instrument": 6292,
+          "beschreibung": "Bezirkliche Ordnungsämter stärken",
+          "ursachen_ids": [901],
+          "zitat": "Die bezirklichen Ordnungsämter wollen wir stärken, damit sie ihren Aufgaben im Bereich der Gefahrenabwehr endlich gerecht werden können",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=227",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6406,
+          "instrument": 6294,
+          "beschreibung": "Personaloffensive für die Justiz",
+          "ursachen_ids": [902],
+          "zitat": "werden wir unsere Bemühungen für eine Personaloffensive in diesem Bereich erneuern",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=240",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6407,
+          "instrument": 6295,
+          "beschreibung": "Digitalisierung der Justiz mit Priorität",
+          "ursachen_ids": [902],
+          "zitat": "Die Digitalisierung der Justiz ist eine Mammutaufgabe, die Priorität haben muss.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=241",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6408,
+          "instrument": 6287,
+          "beschreibung": "Wachen nach dem Vorbild der „Kotti-Wache“ an kriminalitätsbelasteten Orten",
+          "ursachen_ids": [901],
+          "zitat": "Maßnahmen nach dem Vorbild der „Kotti-Wache“ befürworten wir an kriminalitätsbelasteten Orten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=66",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6409,
+          "instrument": 6291,
+          "beschreibung": "Beleuchtung, offene Sichtachsen, keine dunklen Ecken",
+          "ursachen_ids": [901],
+          "zitat": "mit baulichen Maßnahmen wie guter Beleuchtung, offenen Sichtachsen, Verhinderung dunkler Ecken die Sicherheit, Sauberkeit und Aufenthaltsqualität erhöhen",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=67",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6410,
+          "instrument": 6298,
+          "beschreibung": "Mehr Jugend- und Sozialarbeit sowie Streetwork",
+          "ursachen_ids": [903],
+          "zitat": "ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6411,
+          "instrument": 6294,
+          "beschreibung": "Personalsituation in Gerichten und Staatsanwaltschaft verbessern",
+          "ursachen_ids": [902],
+          "zitat": "Wir wollen die Personalsituation in den Gerichten, bei der Staatsanwaltschaft, dem Justizvollzug, der Feuerwehr und der Polizei verbessern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6412,
+          "instrument": 6297,
+          "beschreibung": "Schnelle Jugendverfahren (Neuköllner Modell) fortsetzen und verstetigen",
+          "ursachen_ids": [903],
+          "zitat": "Daher werden wir Maßnahmen, die das ermöglichen, fortsetzen und verstetigen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=73",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6413,
+          "instrument": 6288,
+          "beschreibung": "Vollständige Videoüberwachung in Brennpunktbereichen",
+          "ursachen_ids": [901],
+          "zitat": "Eine vollständige Videoüberwachung in allen Brennpunktbereichen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6414,
+          "instrument": 6287,
+          "beschreibung": "Mobile Polizeiwachen in Problemvierteln, dichteres Wachennetz",
+          "ursachen_ids": [901],
+          "zitat": "Die Einführung mobiler Polizeiwachen in Problemvierteln sowie die Schaffung eines dichteren Netzes stationärer Polizeiwachen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6415,
+          "instrument": 6286,
+          "beschreibung": "Mehr Personal bei der Polizei",
+          "ursachen_ids": [901],
+          "zitat": "Die Erhöhung des Personals bei der Polizei, der Justiz und der Feuerwehr",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6416,
+          "instrument": 6294,
+          "beschreibung": "Mehr Personal bei der Justiz",
+          "ursachen_ids": [902],
+          "zitat": "Die Erhöhung des Personals bei der Polizei, der Justiz und der Feuerwehr",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6417,
+          "instrument": 6292,
+          "beschreibung": "Bezirkspolizei bei den Ordnungsämtern einführen",
+          "ursachen_ids": [901],
+          "zitat": "Wir wollen die Polizei entlasten, indem wir eine Bezirkspolizei, die bei den Ordnungsämtern angesiedelt ist, einführen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=12",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6418,
+          "instrument": 6297,
+          "beschreibung": "Beschleunigte Jugendverfahren (Neuköllner Modell) ausweiten",
+          "ursachen_ids": [903],
+          "zitat": "Die Ausweitung beschleunigter Verfahren im Jugendstrafrecht bei leichten und mittleren Delikten (Neuköllner Modell) soll forciert werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6419,
+          "instrument": 6299,
+          "beschreibung": "Strafmündigkeit von 14 auf 12 Jahre senken",
+          "ursachen_ids": [903],
+          "zitat": "Das Strafmündigkeitsalter soll von 14 auf 12 Jahre abgesenkt werden",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6420,
+          "beschreibung": "Rechtsgrundlage für nächtliche Ausgangssperren für jugendliche Intensivtäter",
+          "ursachen_ids": [903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ausgangssperren sollen einzelne Intensivtäter nachts von der Straße fernhalten; ihre Wirkung ist kaum untersucht, und sie greifen tief in Grundrechte ein. Ob ein Land sie im Polizeirecht regeln darf, ist rechtlich offen.",
+          "zitat": "Eine rechtliche Grundlage für kriminalitätsbezogene nächtliche Ausgangssperren für jugendliche Intensivtäter.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6421,
+          "instrument": 6293,
+          "beschreibung": "Straßensozialarbeit und Parkläufer ausbauen",
+          "ursachen_ids": [901],
+          "zitat": "Genauso wichtig ist u. a. der Ausbau der Straßensozialarbeit, der Tätigkeit der Parkläufer*innen und wirksamer Projekte der Jugendsozialarbeit.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=288",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6422,
+          "instrument": 6298,
+          "beschreibung": "Kiezorientierte Gewalt- und Kriminalitätsprävention ausweiten",
+          "ursachen_ids": [903],
+          "zitat": "der Ausweitung der kiezorientierten Gewalt- und Kriminalitätsprävention auf Bezirksebene",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=288",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6423,
+          "instrument": 6294,
+          "beschreibung": "Mehr richterliche Stellen und Personal für die Auswertung von Beweismitteln",
+          "ursachen_ids": [902],
+          "zitat": "indem wir für eine angemessene Ausstattung mit richterlichen Stellen sowie mit Personal zur kriminaltechnischen Auswertung von Beweismitteln sorgen",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=307",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6424,
+          "instrument": 6295,
+          "beschreibung": "Digitalisierung der Berliner Justiz vorantreiben",
+          "ursachen_ids": [902],
+          "zitat": "Wir treiben die Digitalisierung der Berliner Justiz voran",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=307",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6425,
+          "instrument": 6300,
+          "beschreibung": "Armutsdelikte wie Fahren ohne Fahrschein entkriminalisieren",
+          "ursachen_ids": [902],
+          "zitat": "die Entkriminalisierung typischer Armutsdelikte, insbesondere des sogenannten „Schwarzfahrens“",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=311",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6426,
+          "instrument": 6286,
+          "beschreibung": "Einstellungsoffensive bei der Polizei",
+          "ursachen_ids": [901],
+          "zitat": "Wir fordern eine Einstellungsoffensive bei Polizei und Feuerwehr",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=39",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6427,
+          "instrument": 6298,
+          "beschreibung": "Flächendeckende Präventions- und Anti-Gewaltprogramme",
+          "ursachen_ids": [903],
+          "zitat": "Es müssen flächendeckend Präventions- und Anti-Gewaltprogramme eingeführt werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6428,
+          "instrument": 6287,
+          "beschreibung": "Mehr Streifen an Bahnhöfen, Parks und Plätzen",
+          "ursachen_ids": [901],
+          "zitat": "Um Gewalt im öffentlichen Raum vorzubeugen, wird eine intensivere Streifenpräsenz an Brennpunkten wie Bahnhöfen und besonders kriminalitätsbelasteten Parks und Plätzen eingerichtet.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6429,
+          "instrument": 6291,
+          "beschreibung": "Beleuchtung und städtebauliche Kriminalprävention ausbauen",
+          "ursachen_ids": [901],
+          "zitat": "Wir wollen die Beleuchtung der Stadt und städtebauliche Kriminalprävention ausbauen und dunkle Ecken in Parks und Bahnhofsvorplätzen abschaffen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6430,
+          "instrument": 6294,
+          "beschreibung": "Deutlich mehr Richter- und Staatsanwaltsstellen",
+          "ursachen_ids": [902],
+          "zitat": "Für uns ist klar: es braucht deutlich mehr Richter- und Staatsanwaltsstellen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6431,
+          "instrument": 6296,
+          "beschreibung": "Beschleunigte Verfahren bei Alltagskriminalität",
+          "ursachen_ids": [902],
+          "zitat": "Zudem sorgen wir für beschleunigte Verfahren bei Alltags- und Jugendkriminalität.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6432,
+          "instrument": 6297,
+          "beschreibung": "Beschleunigte Verfahren bei Jugendkriminalität",
+          "ursachen_ids": [903],
+          "zitat": "Zudem sorgen wir für beschleunigte Verfahren bei Alltags- und Jugendkriminalität.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6433,
+          "instrument": 6288,
+          "beschreibung": "Videoüberwachung an besonders kriminalitätsbelasteten Orten",
+          "ursachen_ids": [901],
+          "zitat": "Dazu setzen wir Videoüberwachung an nachweislich besonders kriminalitätsbelasteten Orten ein",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6434,
+          "instrument": 6292,
+          "beschreibung": "Gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll",
+          "ursachen_ids": [901],
+          "zitat": "führen wir zusätzliche gemeinsame Kontrollen des Ordnungsamts mit der Polizei und den Zollbehörden ein",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
