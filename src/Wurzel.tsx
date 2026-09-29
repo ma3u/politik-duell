@@ -1,5 +1,6 @@
-import { lazy, Suspense, useSyncExternalStore } from 'react'
+import { lazy, Suspense } from 'react'
 import App from './App.tsx'
+import { useHash, zurueck } from './navigation.ts'
 import { Rechtliches, type RechtsSeite } from './rechtliches/Rechtliches.tsx'
 
 // Admin-Ansicht unter #/admin – eigenes Bundle, wird nur dort geladen.
@@ -8,29 +9,11 @@ const Admin = lazy(() => import('./admin/Admin.tsx').then((m) => ({ default: m.A
 // (enthält den ganzen Datenkatalog mit Entwürfen).
 const Pruefseite = lazy(() => import('./pruefung/Pruefseite.tsx').then((m) => ({ default: m.Pruefseite })))
 
-// Wurde eine Rechtsseite aus der App heraus geöffnet? Dann führt „Zurück“ per
-// history.back() ins laufende Spiel, sonst zur Startseite.
-let ausDerApp = false
-addEventListener('hashchange', (e) => {
-  ausDerApp = !rechtsSeite(new URL(e.oldURL).hash)
-})
-
-const useHash = () =>
-  useSyncExternalStore(
-    (f) => (addEventListener('hashchange', f), () => removeEventListener('hashchange', f)),
-    () => location.hash,
-  )
-
 function rechtsSeite(hash: string): RechtsSeite | null {
   if (hash.startsWith('#/impressum')) return 'impressum'
   if (hash.startsWith('#/datenschutz')) return 'datenschutz'
   if (hash.startsWith('#/methode')) return 'methode'
   return null
-}
-
-function zurueck() {
-  if (ausDerApp) history.back()
-  else location.hash = '#/'
 }
 
 export function Wurzel() {
@@ -50,6 +33,7 @@ export function Wurzel() {
     )
   const seite = rechtsSeite(hash)
   // Die App bleibt unter der Rechtsseite geladen, damit ein laufendes Spiel erhalten bleibt.
+  // Die Themenübersicht (#/themen) zeigt die App selbst, weil sie deren Daten braucht.
   return (
     <>
       {seite && <Rechtliches seite={seite} onZurueck={zurueck} />}

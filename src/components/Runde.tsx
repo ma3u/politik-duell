@@ -4,6 +4,7 @@ import { analysiere, AnalyseFehler, ebenenFuer, type Daten } from '../data/quell
 import { ROLLEN } from '../data/rollen'
 import type { AnalyseAntwort, Nachricht } from '../data/types'
 import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
+import { fuerBeideErfasst } from '../logic/stand'
 import type { RundenErgebnis, Spieler } from '../spiel'
 import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
@@ -121,8 +122,8 @@ export function Runde({
       <h2>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">
         Halte den Knopf gedrückt und erzähl, was in deinem Alltag konkret schiefläuft – oder tippe es ein.
-        Beispiele: Arzttermine, Miete, Energiepreise.
       </p>
+      <ThemenHinweis parteiIds={[spieler[0].partei.id, spieler[1].partei.id]} />
 
       <div className="verlauf" aria-live="polite">
         {hinweis && <p className="blase blase-ki">{hinweis}</p>}
@@ -168,5 +169,40 @@ export function Runde({
         </button>
       </form>
     </main>
+  )
+}
+
+/**
+ * Welche Themen das Spiel schon kennt – damit niemand ins Leere fragt. Markiert
+ * wird nur, ob ein Thema für beide Parteien ausgewertet ist, nicht für welche
+ * nicht: Das verrät vor der Auflösung nichts über eine einzelne Partei.
+ */
+function ThemenHinweis({ parteiIds }: { parteiIds: [number, number] }) {
+  const daten = useDaten()
+  if (!daten.themen.length) return null
+  const themen = daten.themen.map((t) => ({ ...t, bereit: fuerBeideErfasst(daten, t.id, parteiIds) }))
+  const bereit = themen.filter((t) => t.bereit).length
+  return (
+    <details className="themen-hinweis">
+      <summary>
+        Welche Themen kennt das Spiel schon? ({daten.themen.length})
+      </summary>
+      <ul className="themen-chips">
+        {themen.map((t) => (
+          <li key={t.id} className={t.bereit ? 'bereit' : undefined}>
+            {t.bereit && <span aria-hidden="true">✓ </span>}
+            {t.name}
+            {!t.bereit && <span className="sr-only"> (noch nicht für beide Parteien ausgewertet)</span>}
+          </li>
+        ))}
+      </ul>
+      <p className="meta">
+        {bereit === themen.length
+          ? 'Alle Themen sind für eure beiden Parteien ausgewertet.'
+          : `✓ = für eure beiden Parteien ausgewertet (${bereit} von ${themen.length}). Bei den anderen wird die Runde gezeigt, aber noch nicht gewertet.`}{' '}
+        Andere Probleme kannst du trotzdem nennen – dann gibt es eine Einschätzung ohne Wertung.{' '}
+        <a href="#/themen">Ganze Übersicht</a>
+      </p>
+    </details>
   )
 }

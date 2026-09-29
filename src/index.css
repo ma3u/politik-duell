@@ -1647,3 +1647,289 @@ textarea {
   border: 2px dashed var(--warnung);
   font-size: 0.85rem;
 }
+
+/* ---------- Themen & Zahlen (#/themen) ---------- */
+/* Diagrammfarben: zwei Blaustufen für den Erfassungsstand (auf Weiß und für
+   Farbsehschwächen unterscheidbar), Orange nur für KI-Entwürfe. Keine
+   Parteifarben in Diagrammen – die kennzeichnen nur Parteien. */
+.themenstand {
+  --st-massnahmen: #256abf;
+  --st-keine: #86b6ef;
+  --st-offen: var(--flaeche-2);
+  --mn-geprueft: #256abf;
+  --mn-entwurf: #eb6834;
+}
+.start-themen {
+  margin: 0;
+  padding: 0 20px 12px;
+  font-weight: 700;
+}
+.kacheln {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: 10px;
+}
+.kachel {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+}
+.kachel-label {
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.kachel-wert {
+  font-family: var(--schrift-titel);
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.kachel-zusatz {
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
+.fortschritt {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+}
+.fortschritt-kopf {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.fortschritt-spur {
+  height: 10px;
+  margin: 8px 0 6px;
+  border-radius: 5px;
+  background: var(--flaeche-2);
+  overflow: hidden;
+}
+.fortschritt-fuellung {
+  display: block;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  background: var(--st-massnahmen);
+}
+.fortschritt .meta {
+  margin: 0;
+  font-size: 0.85rem;
+}
+.diagramm {
+  margin: 0 0 14px;
+  padding: 14px;
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+}
+.diagramm figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.diagramm figcaption span {
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.diagramm-legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
+.diagramm-legende li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.legende-feld {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+.st-massnahmen {
+  background: var(--st-massnahmen);
+}
+.st-keine {
+  background: var(--st-keine);
+}
+.st-offen {
+  background: var(--st-offen);
+}
+.legende-feld.st-offen {
+  box-shadow: inset 0 0 0 1px var(--linie);
+}
+.mn-geprueft {
+  background: var(--mn-geprueft);
+}
+.mn-entwurf {
+  background: var(--mn-entwurf);
+}
+.balken {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.balken-zeile {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, 34%) 1fr 2.6rem;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 32px;
+  padding: 2px 4px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.balken-zeile:hover,
+.balken-zeile.aktiv {
+  background: var(--stimmblau-hell);
+}
+.balken-zeile:focus-visible {
+  outline: 2px solid var(--fokus);
+  outline-offset: 1px;
+}
+.balken-name {
+  font-size: 0.88rem;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+}
+/* Balken: 14px dick, 2px Flächenlücke zwischen Teilen, rundes Ende nur außen. */
+.balken-spur {
+  display: flex;
+  gap: 2px;
+  height: 14px;
+}
+.balken-teil {
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: 2px;
+}
+.balken-teil:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.balken-wert {
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--text-leise);
+}
+.diagramm-detail {
+  min-height: 2.6em;
+  margin: 8px 4px 0;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.stand-tabelle-rahmen {
+  /* relative: hält die absolut positionierten Screenreader-Texte im Scrollbereich */
+  position: relative;
+  overflow-x: auto;
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+}
+.stand-tabelle {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.stand-tabelle th,
+.stand-tabelle td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--linie);
+  text-align: center;
+  white-space: nowrap;
+}
+.stand-tabelle tbody tr:last-child > * {
+  border-bottom: 0;
+}
+.stand-tabelle th[scope='row'],
+.stand-tabelle thead th:first-child {
+  text-align: left;
+  font-weight: 700;
+  white-space: normal;
+  min-width: 7rem;
+  /* Themenspalte bleibt beim seitlichen Scrollen stehen */
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--flaeche);
+}
+.stand-tabelle .zahl {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.partei-punkt {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background: var(--partei);
+  box-shadow: 0 0 0 1px var(--partei-linie);
+  vertical-align: 1px;
+}
+.st-zelle-massnahmen {
+  color: var(--st-massnahmen);
+}
+.st-zelle-keine {
+  color: var(--st-massnahmen);
+}
+.st-zelle-offen {
+  color: var(--text-leise);
+}
+.stand-zeichen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 0.8rem;
+}
+
+/* ---------- Themenhinweis in der Runde ---------- */
+.themen-hinweis {
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+}
+.themen-hinweis summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--akzent-text);
+}
+.themen-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0.6rem 0 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+.themen-chips li {
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px dashed var(--linie);
+  color: var(--text-leise);
+  font-size: 0.85rem;
+}
+.themen-chips li.bereit {
+  border: 1px solid var(--stimmblau);
+  background: var(--stimmblau-hell);
+  color: var(--tinte);
+}
+.themen-hinweis .meta {
+  margin: 0;
+  font-size: 0.85rem;
+}

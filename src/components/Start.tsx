@@ -34,6 +34,9 @@ export function Start({
           Zwei Spieler:innen, zwei Parteien, fünf Runden. Nennt echte Alltagsprobleme – das Spiel zeigt, welche
           Partei dafür die wirksamste und umsetzbare Lösung bietet. Mit Beleg nach jeder Runde.
         </p>
+        <p className="start-themen">
+          <a href="#/themen">Welche Themen das Spiel schon kennt</a>
+        </p>
         {ladeFehler ? (
           <div className="ladefehler" role="alert">
             <p>Die Spieldaten konnten nicht geladen werden ({ladeFehler}).</p>
