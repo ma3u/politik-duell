@@ -66,6 +66,32 @@ Verworfen:
 - *Kriminalität von Zugewanderten.* Gehört zum Thema Sicherheit.
 - *Wohnungsmangel.* Gehört zum Thema Miete.
 
+## Rente (7)
+
+Stand: 29. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Die Maßnahmen waren schon erfasst (politik-duell/politik-duell#10, #14), bevor die Ursachen geprüft wurden. Die Prüfung stützt sich trotzdem nur auf Fachquellen. Neue Ursachen kommen nicht hinzu, zwei werden genauer gefasst.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 701 *geändert* | Immer weniger Beitragszahlende je Rentner; nach geltendem Recht steigt der Beitrag bis 2039 auf 21,2 %, das Rentenniveau sinkt auf 46,3 % | Bund | Rentenversicherungsbericht 2025 (Bundesregierung) | längeres Arbeiten, Kapitaldeckung, mehr Erwerbstätige (eher wirtschaftsliberal/konservativ); Rentenniveau sichern, mehr Einzahlende (eher links) |
+| 702 | Niedrige Löhne und Lücken im Erwerbsleben führen zu niedrigen Ansprüchen | Bund | DIW (Erwerbsverläufe der Babyboomer) | Mindestlohn, Aufwertung niedriger Renten (eher links); Vorsorgepflicht für Selbstständige (breit geteilt) |
+| 703 *geändert* | Betriebliche und private Zusatzvorsorge erreicht Geringverdienende, Menschen mit Erwerbsunterbrechungen und kleine Betriebe deutlich seltener | Bund | DIW Wochenbericht 16/2026 (auf Basis des Alterssicherungsberichts 2024 und SOEP) | geförderte Depots, Aktienrente (eher wirtschaftsliberal); Opt-out, öffentlicher Fonds, Arbeitgeberbeteiligung (eher links/Mitte) |
+
+Bei 701 ist neu, dass beide Folgen des Missverhältnisses genannt sind: steigende Beiträge und sinkendes Rentenniveau. Vorher stand dort nur das Verhältnis. Damit war nicht zu erkennen, dass sowohl Maßnahmen zur Finanzierung als auch Maßnahmen zum Leistungsniveau hier ansetzen. Auch die steigende Rentenbezugsdauer gehört zu 701, weil sie das Verhältnis von Rentnern zu Beitragszahlenden verschiebt.
+
+Bei 703 ist neu, dass die private Zusatzvorsorge dazugehört. Vorher nannte die Ursache nur die Betriebsrente. Maßnahmen zu Altersvorsorgedepots, Kinderdepots und Fonds mit Widerspruchslösung waren aber schon 703 zugeordnet. Die neue Quelle (DIW) nennt dieselben Lücken für betriebliche und private Vorsorge. Die alte Quelle (bpb) betraf nur die Betriebsrente.
+
+Maßnahmen neu zugeordnet: keine. Die Punkte bleiben gleich (`npm run punkte -- 7` vorher und nachher identisch).
+
+Entschieden: **701–703 Bund.** Gesetzliche Rente, Förderung der Zusatzvorsorge und Mindestlohn regelt der Bund.
+
+Verworfen:
+- *Nicht beitragsgedeckte („versicherungsfremde“) Leistungen belasten die Beitragszahlenden.* Wie groß die Lücke ist, ist strittig: Die Deutsche Rentenversicherung beziffert sie für 2023 auf rund 40 Mrd. Euro. Laut Bundesrechnungshof sind diese Leistungen gesetzlich nicht abgegrenzt, und ein Beitrag im Wirtschaftsdienst (2025) hält sie durch die Bundeszuschüsse für gedeckt. Maßnahmen dazu setzen an 701 an (Finanzierung).
+- *Verdeckte Altersarmut: Grundsicherung im Alter wird oft nicht beantragt* (DIW 2019: rund 60 %). Belegt, betrifft aber den Zugang zur Grundsicherung, nicht die Höhe der Rente. Kandidat, falls das Ziel des Themas später auf Einkommen im Alter erweitert wird.
+- *Frühe Renteneintritte (abschlagsfreie Rente nach 45 Jahren).* Keine eigene Ursache, sondern ein Faktor im Verhältnis von Rentnern zu Beitragszahlenden (701).
+- *Zu wenig Kapitaldeckung.* Das beschreibt eine Lösung, keine Ursache. Maßnahmen dazu setzen an 701 (Kapitalstock) oder 703 (Zusatzvorsorge) an.
+
 ## Ebenen der übrigen Themen
 
 Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unverändert). Die Ebenen sind ein Vorschlag vom 28. 9. 2026 (KI-Entwurf). Sie werden bei der Perspektivenprüfung des jeweiligen Themas bestätigt.
@@ -75,7 +101,6 @@ Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unveränder
 | Arzttermine (1) | – | 101, 102, 103 | Bedarfsplanung, Vergütung und Steuerung regelt das SGB V (Bund, Selbstverwaltung) |
 | Miete (2) | – | 201–204 | Mietrecht, steuerliche Förderung und Baustandards (GEG, Gebäudetyp E) liegen beim Bund; soziale Wohnraumförderung ist zwar Ländersache, die meisten Hebel für Neubau (201) aber beim Bund. Folge: Landesprogramme zählen bei Miete nicht – auch nicht in Berlin. Bei der Perspektivenprüfung Miete erneut ansehen. |
 | Energiepreise (3) | – | 301, 302, 303 | Netzentgelte (Regulierung), Steuern und Umlagen, Energieimporte |
-| Rente (7) | – | 701, 702, 703 | Gesetzliche Rente und Betriebsrenten |
 | Bus und Bahn (8) | 801, 803 | 802 | Nahverkehrsangebot und Personal: Länder und Kommunen (Aufgabenträger); Schienennetz: Bund (DB InfraGO) |
 | Sicherheit (9) | 901, 902, 903 | – | Polizei, Justiz und Prävention sind Ländersache; Strafrecht ist Bundesrecht – Maßnahmen dazu stehen in Bundesprogrammen und zählen ohne gewähltes Bundesland |
 | Pflege (10) | – | 1001–1004 | Pflegeversicherung, Pflegeberufe und Leistungen für Angehörige; die Investitionskosten der Heime tragen die Länder, der Hauptteil der Eigenanteile hängt aber an Bundesrecht |
