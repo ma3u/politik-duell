@@ -140,12 +140,12 @@ Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #1
 **905:** Die PKS 2025 nennt den Anteil als „weiterhin deutlich überrepräsentiert“. Die Zuwanderungsprüfung hatte die Diagnose „Kriminalität von Zugewanderten“ an dieses Thema verwiesen. Über die Gründe ist sich die Forschung nicht einig. Das ifo Institut (2025) findet keinen Zusammenhang zwischen dem Ausländeranteil einer Region und ihrer Kriminalitätsrate und erklärt die Überrepräsentation vor allem mit dem Wohnort in Ballungsräumen; Alter und Geschlecht spielen dort eine kleinere Rolle. Die Studie ist in der Debatte umstritten. Deshalb nennt die Ursache nur den Befund und lässt die Erklärung offen, damit Lösungen auf beiden Seiten ansetzen können. Ebene **Bund**, wie bei 604: Aufenthalts- und Ausweisungsrecht sind Bundesrecht.
 
 **Nacherfassung:**
-- 904: alle 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter häusliche Gewalt, Partnerschaftsgewalt, Gewalt gegen Frauen, Frauenhaus, Gewaltschutz, Fußfessel, Istanbul-Konvention, Femizid, Gewalthilfe, Schutzwohnung, Hochrisiko, Täterarbeit)
-- 905: die 6 erreichbaren Bundesprogramme (Stichwörter Straftäter, Ausweisung, Abschiebung, ausländische, Clan, Messer). Die BSW-Maßnahme stammt aus dem schon geprüften Zuwanderungseintrag 6064 (S. 37).
-- Ergebnis: 40 Maßnahmen, 9 Instrumente
+- 904: alle 7 Bundes- und alle 21 Landesprogramme (Stichwörter häusliche Gewalt, Partnerschaftsgewalt, Gewalt gegen Frauen, Frauenhaus, Gewaltschutz, Fußfessel, Istanbul-Konvention, Femizid, Gewalthilfe, Schutzwohnung, Hochrisiko, Täterarbeit)
+- 905: alle 7 Bundesprogramme (Stichwörter Straftäter, Ausweisung, Abschiebung, ausländische, Clan, Messer). Die BSW-Maßnahme entspricht dem Zuwanderungseintrag 6064 (S. 37).
+- Ergebnis: 41 Maßnahmen, 9 Instrumente
 - Keine Maßnahme zu 904 bei AfD Bund, ST, MV und BE. Keine Maßnahme zu 905 bei FDP und Linke. Die Linke lehnt Abschiebungen als „Doppelbestrafung“ ab, das ist keine Maßnahme.
 
-**Offen:** Das BSW-Bundesprogramm war nicht abrufbar (bsw-vg.de gesperrt). Laut Programmvergleichen fordert es mehr Frauenhausplätze. Bis es nach 904 durchsucht ist, steht das BSW dort ohne Bundesland zu Unrecht bei 0.
+Das BSW-Bundesprogramm war aus der Sitzung nicht abrufbar. Die Betreiberin hat es bereitgestellt (Prüfsumme stimmt), danach wurde es ebenfalls nach 904 durchsucht (S. 33).
 
 Entschieden: **901–904 Land, 905 Bund.**
 
