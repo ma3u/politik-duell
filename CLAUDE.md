@@ -70,7 +70,8 @@ massnahmen (
   beleg_studie_url text,
   evidenz text,                       -- belegt | gemischt | offen
   stand date,
-  geprueft boolean default false
+  geprueft boolean default false,
+  ki_entwurf boolean default false    -- nur mit Zugang zur geschlossenen Testphase sichtbar
 )
 
 runden (

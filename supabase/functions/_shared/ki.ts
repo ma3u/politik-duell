@@ -121,7 +121,12 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
   // Bundesland nur als Kürzel; es zählt nur für die Wertung und wird nicht gespeichert.
   if (a.land !== null && a.land !== undefined && (typeof a.land !== 'string' || !/^[A-Z]{2}$/.test(a.land)))
     throw new EingabeFehler('Ungültiges Bundesland.')
-  return { sitzung: a.sitzung, verlauf: a.verlauf, rolle: a.rolle ?? null, land: a.land ?? null, parteien: a.parteien }
+  // Zugang zur Testphase: nur das Format prüfen; ob er gültig ist, entscheidet die Datenbank.
+  if (a.zugang !== null && a.zugang !== undefined && (typeof a.zugang !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(a.zugang)))
+    throw new EingabeFehler('Ungültiger Zugang zur Testphase.')
+  return {
+    sitzung: a.sitzung, verlauf: a.verlauf, rolle: a.rolle ?? null, land: a.land ?? null, zugang: a.zugang ?? null, parteien: a.parteien,
+  }
 }
 
 const regexText = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')

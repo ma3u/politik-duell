@@ -243,7 +243,8 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 - `zitat` ist bei echten Daten Pflicht: der Satz aus dem Programm, auf den sich die Maßnahme stützt, wörtlich (Silbentrennungen am Zeilenende zusammengezogen). Es dient der Prüfung und kommt nicht in die Datenbank.
 - `schlagwoerter` braucht nur die Offline-Analyse ohne KI; kleingeschrieben, Umlaute als ae/oe/ue.
 - `beleg_programm_url` muss auf `programm_url` der Partei zeigen (bei Landeseinträgen auf die `url` des Landesprogramms), mit Seitenanker `#page=N`.
-- `evidenz`: Stand der Forschung, siehe „Stand der Forschung“. Pflicht, bevor eine Maßnahme `geprueft` wird.
+- `evidenz`: Stand der Forschung, siehe „Stand der Forschung“. Pflicht, bevor eine Maßnahme `geprueft` wird, und bei KI-Entwürfen.
+- `ki_entwurf` (optional, bei Maßnahmen und `keine_massnahme`): `true`, wenn der Eintrag mit Hilfe einer KI erstellt wurde. Öffentlich zählt er wie jeder ungeprüfte Eintrag nicht („noch nicht erfasst“). In der **geschlossenen Testphase** (nur mit Zugangslink, siehe `supabase/EINRICHTEN.md`) zählt ein Eintrag, wenn jede Maßnahme darin geprüft oder KI-Entwurf ist – im Spiel deutlich als „vorläufige KI-Bewertung“ gekennzeichnet. Nach der menschlichen Prüfung bleibt das Feld als Herkunftsangabe stehen; entscheidend ist dann `geprueft`.
 - `beleg_studie_url` ist optional.
 - `bewertung` schreibt nur `npm run pruefung:uebernehmen` (siehe „Prüfung“), z. B. `{ "anzahl": 3, "median_w": 2, "median_u": 2, "spannweite": 1, "datum": "2026-10-05", "entwurf": [2, 3] }`. `wirksamkeit` und `umsetzbarkeit` müssen den Medianen entsprechen; `entwurf` hält die ursprünglichen Werte fest.
 - `stand` darf nicht vor dem `programm_stand` der Partei liegen (bei Landeseinträgen: vor dem `stand` des Landesprogramms).
@@ -261,6 +262,7 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen
 - `supabase/seed.sql` passt zum Katalog
+- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten.
 
 ```bash
 npm run daten:pruefen              # Dateien prüfen
@@ -268,4 +270,5 @@ npm run daten:pruefen -- --links   # zusätzlich alle Links abrufen
 npm run seed                       # supabase/seed.sql neu erzeugen
 npm run dashboard                  # zusätzlich Dateien fürs Supabase-Dashboard
 npm run pruefung:uebernehmen -- export.json   # Ergebnis der Prüfung übernehmen
+npm run zitate:pruefen             # Zitate gegen die Programm-PDFs prüfen (braucht Internet)
 ```

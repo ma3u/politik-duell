@@ -14,6 +14,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2'
 import { bewertePartei, werteRunde } from '../_shared/bewertung.ts'
 import { bereinigeAntwort, EingabeFehler, nutzerNachrichten, pruefeAnfrage, systemPrompt } from '../_shared/ki.ts'
 import { pruefeText } from '../_shared/moderation.ts'
+import { tokenHash } from '../_shared/pruefung.ts'
 import type { AbdeckungEintrag, AnalyseAntwort, Landesprogramm, Massnahme, Partei, Rolle, Thema, Ursache } from '../_shared/typen.ts'
 import {
   corsKoepfe,
@@ -110,7 +111,8 @@ Deno.serve(async (req) => {
     if (antwort.typ !== 'forderung') {
       // Der Originaltext wird nur geprüft, nicht gespeichert.
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
-      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, original, parteien, ursachen)
+      const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
+      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen)
     }
 
     return json(antwort)
@@ -121,11 +123,24 @@ Deno.serve(async (req) => {
   }
 })
 
+/** Gültiger, nicht gesperrter Zugang zur Testphase? Dann zählen auch KI-Entwürfe. */
+async function zugangGueltig(token: string): Promise<boolean> {
+  const { data, error } = await db
+    .from('testphase_zugaenge')
+    .select('id')
+    .eq('token_hash', await tokenHash(token))
+    .eq('gesperrt', false)
+    .maybeSingle()
+  if (error) throw error
+  return data !== null
+}
+
 async function speichereRunde(
   antwort: AnalyseAntwort,
   [parteiA, parteiB]: [number, number],
   rolle: Rolle | null,
   land: string | null,
+  testphase: boolean,
   original: string[],
   parteien: Partei[],
   ursachen: Ursache[],
@@ -138,6 +153,7 @@ async function speichereRunde(
     filter_grund: pruefeText(stichwort, antwort.zusammenfassung, ...original),
     partei_a: parteiA,
     partei_b: parteiB,
+    testphase,
   }
 
   if (antwort.typ === 'wert') {
@@ -156,9 +172,16 @@ async function speichereRunde(
     return
   }
 
+  // Der Service-Key umgeht Row Level Security: KI-Entwürfe deshalb ausdrücklich nur in der Testphase.
+  let mAbfrage = db.from('massnahmen').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB])
+  let aAbfrage = db.from('abdeckung').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB])
+  if (!testphase) {
+    mAbfrage = mAbfrage.eq('ki_entwurf', false)
+    aAbfrage = aAbfrage.eq('ki_entwurf', false)
+  }
   const [mRes, aRes, lpRes] = await Promise.all([
-    db.from('massnahmen').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB]),
-    db.from('abdeckung').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB]),
+    mAbfrage,
+    aAbfrage,
     land
       ? db.from('landesprogramme').select('*').eq('land', land).in('partei_id', [parteiA, parteiB])
       : Promise.resolve({ data: [], error: null }),

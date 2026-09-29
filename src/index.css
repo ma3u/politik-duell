@@ -1628,3 +1628,22 @@ textarea {
 .pruefung :is(.admin-eintrag, .pruef-kasten, .pruef-karte) {
   border-width: 1px;
 }
+
+/* Geschlossene Testphase: KI-Entwürfe sind überall deutlich gekennzeichnet. */
+.link-knopf {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ki-hinweis {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px dashed var(--warnung);
+  font-size: 0.85rem;
+}

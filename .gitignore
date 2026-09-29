@@ -29,3 +29,6 @@ supabase/.branches
 
 # Prüflisten (npm run pruefliste) – werden lokal erzeugt
 /pruefung/
+
+# Heruntergeladene Programme (npm run zitate:pruefen)
+/.cache/

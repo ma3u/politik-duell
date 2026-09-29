@@ -1,5 +1,6 @@
 -- AUTOMATISCH ERZEUGT aus daten/ (npm run seed) – nicht von Hand bearbeiten.
 -- Nur vollständig geprüfte Einträge je Thema und Partei; alles andere gilt als „noch nicht erfasst“.
+-- Ausnahme: KI-Entwürfe (ki_entwurf = true), nur mit Zugang zur geschlossenen Testphase sichtbar.
 
 -- Mehrfach ausführbar: Stammdaten per Upsert, Maßnahmen und Abdeckung werden neu geschrieben.
 -- Gespielte Runden bleiben erhalten.

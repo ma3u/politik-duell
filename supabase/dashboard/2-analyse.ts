@@ -100,6 +100,7 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
       });
     }
   }
+  const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf);
   return {
     partei,
     punkte,
@@ -107,7 +108,10 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
       ...trefferJeMassnahme.values()
     ],
     abdeckung: erfasst,
-    programme
+    programme,
+    ...kiEntwurf ? {
+      ki_entwurf: true
+    } : {}
   };
 }
 function rundenpunkte(a, b) {
@@ -340,11 +344,13 @@ function pruefeAnfrage(roh) {
   if (a.rolle !== null && a.rolle !== void 0 && !ROLLEN_IDS.includes(a.rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
   if (!Array.isArray(a.parteien) || a.parteien.length !== 2 || !a.parteien.every((p) => Number.isInteger(p)) || a.parteien[0] === a.parteien[1]) throw new EingabeFehler("Ung\xFCltige Parteien.");
   if (a.land !== null && a.land !== void 0 && (typeof a.land !== "string" || !/^[A-Z]{2}$/.test(a.land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
+  if (a.zugang !== null && a.zugang !== void 0 && (typeof a.zugang !== "string" || !/^[A-Za-z0-9_-]{43}$/.test(a.zugang))) throw new EingabeFehler("Ung\xFCltiger Zugang zur Testphase.");
   return {
     sitzung: a.sitzung,
     verlauf: a.verlauf,
     rolle: a.rolle ?? null,
     land: a.land ?? null,
+    zugang: a.zugang ?? null,
     parteien: a.parteien
   };
 }
@@ -419,6 +425,14 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
     stichwort,
     einschaetzung: null
   };
+}
+
+// _shared/pruefung.ts
+async function tokenHash(token) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(token));
+  return [
+    ...new Uint8Array(digest)
+  ].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
 // _shared/zugriff.ts
@@ -555,7 +569,8 @@ Deno.serve(async (req) => {
     const antwort = bereinigeAntwort(roh, anfrage.verlauf, themen, ursachen, parteien);
     if (antwort.typ !== "forderung") {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
-      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, original, parteien, ursachen);
+      const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
+      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen);
     }
     return json(antwort);
   } catch (e) {
@@ -568,7 +583,12 @@ Deno.serve(async (req) => {
     }, 502);
   }
 });
-async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, original, parteien, ursachen) {
+async function zugangGueltig(token) {
+  const { data, error } = await db.from("testphase_zugaenge").select("id").eq("token_hash", await tokenHash(token)).eq("gesperrt", false).maybeSingle();
+  if (error) throw error;
+  return data !== null;
+}
+async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphase, original, parteien, ursachen) {
   const stichwort = antwort.stichwort ?? null;
   const basis = {
     problem_text: antwort.zusammenfassung,
@@ -576,7 +596,8 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, original
     // Automatischer Filter: Treffer landen in der Admin-Ansicht unter „Vom Filter gestoppt“.
     filter_grund: pruefeText(stichwort, antwort.zusammenfassung, ...original),
     partei_a: parteiA,
-    partei_b: parteiB
+    partei_b: parteiB,
+    testphase
   };
   if (antwort.typ === "wert") {
     await db.from("runden").insert({
@@ -598,15 +619,21 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, original
     ]);
     return;
   }
+  let mAbfrage = db.from("massnahmen").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
+    parteiA,
+    parteiB
+  ]);
+  let aAbfrage = db.from("abdeckung").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
+    parteiA,
+    parteiB
+  ]);
+  if (!testphase) {
+    mAbfrage = mAbfrage.eq("ki_entwurf", false);
+    aAbfrage = aAbfrage.eq("ki_entwurf", false);
+  }
   const [mRes, aRes, lpRes] = await Promise.all([
-    db.from("massnahmen").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
-      parteiA,
-      parteiB
-    ]),
-    db.from("abdeckung").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
-      parteiA,
-      parteiB
-    ]),
+    mAbfrage,
+    aAbfrage,
     land ? db.from("landesprogramme").select("*").eq("land", land).in("partei_id", [
       parteiA,
       parteiB

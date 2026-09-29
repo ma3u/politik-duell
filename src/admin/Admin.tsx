@@ -4,13 +4,14 @@ import { FILTER_TEXTE, pruefeText, type FilterGrund } from '../../supabase/funct
 import { Logo } from '../components/Logo'
 import { adminDb, type AdminRunde, type ReviewEintrag } from './client'
 import { Pruefung } from './Pruefung'
+import { Testphase } from './Testphase'
 
 // Einfache Admin-Ansicht (#/admin): Probleme für die Wortwolke freigeben oder
 // ablehnen, Review-Warteschlange (Themen ohne Daten) abhaken, Prüfende einladen
 // und ihre Bewertungen auswerten.
 // Zugriff regelt die Datenbank: Nur Konten in der Tabelle `admins` sehen etwas.
 
-type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'pruefung'
+type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'pruefung' | 'testphase'
 
 const REITER: { id: Reiter; name: string }[] = [
   { id: 'offen', name: 'Offen' },
@@ -19,9 +20,10 @@ const REITER: { id: Reiter; name: string }[] = [
   { id: 'abgelehnt', name: 'Abgelehnt' },
   { id: 'review', name: 'Neue Themen' },
   { id: 'pruefung', name: 'Prüfung' },
+  { id: 'testphase', name: 'Testphase' },
 ]
 
-function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'pruefung'> {
+function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'pruefung' | 'testphase'> {
   if (r.freigegeben) return 'frei'
   if (r.abgelehnt) return 'abgelehnt'
   return r.filter_grund ? 'gestoppt' : 'offen'
@@ -198,7 +200,7 @@ function Moderation() {
   }
 
   const anzahl = (id: Reiter) =>
-    id === 'pruefung' ? null : id === 'review' ? review.length : runden.filter((r) => reiterVon(r) === id).length
+    id === 'pruefung' || id === 'testphase' ? null : id === 'review' ? review.length : runden.filter((r) => reiterVon(r) === id).length
   const sichtbar = runden.filter((r) => reiterVon(r) === reiter)
   const jetzt = () => new Date().toISOString()
 
@@ -224,6 +226,8 @@ function Moderation() {
 
       {reiter === 'pruefung' ? (
         <Pruefung />
+      ) : reiter === 'testphase' ? (
+        <Testphase />
       ) : reiter === 'review' ? (
         <>
           <p className="admin-hinweis">

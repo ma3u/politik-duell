@@ -23,12 +23,18 @@ export interface KeineMassnahme {
   begruendung: string
   stand: string
   geprueft: boolean
+  ki_entwurf?: boolean
 }
 
 /** Abdeckung im Repo: wie in der Datenbank, plus Prüfstatus des ganzen Eintrags. */
 export interface Abdeckung extends AbdeckungEintrag {
   /** true, wenn `keine_massnahme` bzw. alle Maßnahmen der Partei zum Thema geprüft sind. */
   geprueft: boolean
+  /**
+   * true, wenn der Eintrag nicht ganz geprüft ist, aber jeder ungeprüfte Teil als
+   * KI-Entwurf gekennzeichnet ist – dann zählt er in der geschlossenen Testphase.
+   */
+  ki_entwurf: boolean
 }
 
 /** Landesprogramm im Repo: mit Wahl, zu der es gehört. */
@@ -78,23 +84,31 @@ export function spielbareLandesprogramme(k: Katalog): Landesprogramm[] {
     .map(({ partei_id, land, url, stand, kein_programm }) => ({ partei_id, land, url, stand, kein_programm }))
 }
 
-export function spielbareAbdeckung(k: Katalog): AbdeckungEintrag[] {
+/**
+ * Einträge, die im Spiel zählen. Öffentlich nur geprüfte; mit `mitKiEntwurf`
+ * (Seed für die Datenbank) zusätzlich KI-Entwürfe, gekennzeichnet mit
+ * `ki_entwurf: true` – die Datenbank gibt sie nur mit Zugang zur Testphase heraus.
+ */
+export function spielbareAbdeckung(k: Katalog, mitKiEntwurf = false): AbdeckungEintrag[] {
   // Landesprogramme zählen nur in der laufenden Wahlperiode.
   const aktuell = new Set(spielbareLandesprogramme(k).filter((p) => p.url).map((p) => `${p.partei_id}/${p.land}`))
   return k.abdeckung
-    .filter((a) => k.fiktiv || a.geprueft)
+    .filter((a) => k.fiktiv || a.geprueft || (mitKiEntwurf && a.ki_entwurf))
     .filter((a) => !a.land || aktuell.has(`${a.partei_id}/${a.land}`))
-    .map(({ thema_id, partei_id, land, art, begruendung, stand }) => ({
+    .map(({ thema_id, partei_id, land, art, begruendung, stand, geprueft }) => ({
       thema_id, partei_id, land: land ?? null, art, begruendung, stand,
+      ...(mitKiEntwurf ? { ki_entwurf: !k.fiktiv && !geprueft } : {}),
     }))
 }
 
 const programmSchluessel = (x: { thema_id: number; partei_id: number; land?: string | null }) =>
   `${x.thema_id}/${x.partei_id}/${x.land ?? ''}`
 
-export function spielbareMassnahmen(k: Katalog): Massnahme[] {
-  const frei = new Set(spielbareAbdeckung(k).map(programmSchluessel))
-  return k.massnahmen.filter((m) => frei.has(programmSchluessel(m)))
+export function spielbareMassnahmen(k: Katalog, mitKiEntwurf = false): Massnahme[] {
+  const eintraege = new Map(spielbareAbdeckung(k, mitKiEntwurf).map((a) => [programmSchluessel(a), a]))
+  return k.massnahmen
+    .filter((m) => eintraege.has(programmSchluessel(m)))
+    .map((m) => (mitKiEntwurf ? { ...m, ki_entwurf: eintraege.get(programmSchluessel(m))!.ki_entwurf } : m))
 }
 
 const DATUM = /^\d{4}-\d{2}-\d{2}$/
@@ -372,15 +386,20 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
           f(kOrt, 'erwartet ein Objekt mit begruendung, stand, geprueft')
           continue
         }
-        unbekannteFelder(kOrt, k, ['begruendung', 'stand', 'geprueft'])
+        unbekannteFelder(kOrt, k, ['begruendung', 'stand', 'geprueft', 'ki_entwurf'])
         const begruendung = text(kOrt, k, 'begruendung')
         const stand = datum(kOrt, k, 'stand')
         const geprueft = wahrheitswert(kOrt, k, 'geprueft')
+        const kiEntwurf = k.ki_entwurf !== undefined && wahrheitswert(kOrt, k, 'ki_entwurf')
         if (programm && stand && programm.stand && stand < programm.stand) {
           f(kOrt, `„stand“ ${stand} liegt vor dem Programmstand ${programm.stand} – bitte im aktuellen Programm neu prüfen`)
         }
-        if (!katalog.fiktiv && !geprueft) warnungen.push(`${kOrt}: noch nicht geprüft – Thema gilt für die Partei als „noch nicht erfasst“`)
-        katalog.abdeckung.push({ thema_id: thema.id, partei_id: parteiId, land, art: 'keine', begruendung, stand, geprueft })
+        if (!katalog.fiktiv && !geprueft) {
+          warnungen.push(`${kOrt}: noch nicht geprüft – Thema gilt für die Partei als „noch nicht erfasst“${kiEntwurf ? ' (Testphase: KI-Entwurf)' : ''}`)
+        }
+        katalog.abdeckung.push({
+          thema_id: thema.id, partei_id: parteiId, land, art: 'keine', begruendung, stand, geprueft, ki_entwurf: !geprueft && kiEntwurf,
+        })
         continue
       }
 
@@ -389,6 +408,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         continue
       }
       let alleGeprueft = true
+      let alleKiOderGeprueft = true
       let neuesterStand = ''
       for (const [j, mRoh] of roh.massnahmen.entries()) {
         const mOrt = `${aOrt} › massnahmen[${j}]`
@@ -398,7 +418,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         }
         unbekannteFelder(mOrt, mRoh, [
           'id', 'beschreibung', 'ursachen_ids', 'wirksamkeit', 'umsetzbarkeit', 'rollen_modifikator',
-          'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'bewertung',
+          'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'bewertung', 'ki_entwurf',
         ])
         const m: Massnahme = {
           id: ganzzahl(mOrt, mRoh, 'id', 1, 2147483647),
@@ -422,9 +442,12 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
           if (!(EVIDENZ as readonly unknown[]).includes(mRoh.evidenz)) f(mOrt, `„evidenz“ muss ${EVIDENZ.map((e) => `„${e}“`).join(', ')} sein`)
           else m.evidenz = mRoh.evidenz as Massnahme['evidenz']
         }
+        // KI-Entwurf: in der geschlossenen Testphase sichtbar, deshalb schon vollständig (mit Forschungsstand).
+        const kiEntwurf = mRoh.ki_entwurf !== undefined && wahrheitswert(mOrt, mRoh, 'ki_entwurf')
         if (!katalog.fiktiv) {
           if (m.wirksamkeit === 3 && m.evidenz !== 'belegt') f(mOrt, '„wirksamkeit“ 3 nur mit „evidenz“: „belegt“ – sonst höchstens 2')
-          if (m.geprueft && !m.evidenz) f(mOrt, '„evidenz“ fehlt – vor „geprueft“ angeben, wie gut die Wirkung belegt ist')
+          if ((m.geprueft || kiEntwurf) && !m.evidenz)
+            f(mOrt, '„evidenz“ fehlt – vor „geprueft“ bzw. bei KI-Entwürfen angeben, wie gut die Wirkung belegt ist')
         }
         // Wörtliches Zitat aus dem Programm: macht die Prüfung nachvollziehbar
         // (Suche im PDF). Bei echten Daten Pflicht.
@@ -512,6 +535,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
 
         if (!m.geprueft) {
           alleGeprueft = false
+          if (!kiEntwurf) alleKiOderGeprueft = false
           if (!katalog.fiktiv) {
             warnungen.push(`${mOrt}: noch nicht geprüft – bis alle Maßnahmen der Partei zum Thema geprüft sind, gilt es als „noch nicht erfasst“`)
           }
@@ -521,6 +545,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
       }
       katalog.abdeckung.push({
         thema_id: thema.id, partei_id: parteiId, land, art: 'massnahmen', begruendung: null, stand: neuesterStand, geprueft: alleGeprueft,
+        ki_entwurf: !alleGeprueft && alleKiOderGeprueft,
       })
     }
 
