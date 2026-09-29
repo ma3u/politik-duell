@@ -9,185 +9,6 @@ import { createClient } from "npm:@supabase/supabase-js@2";
 var EingabeFehler = class extends Error {
 };
 
-// _shared/pruef-massnahmen.ts
-var MASSNAHMEN_JE_THEMA = {
-  2: [
-    2001,
-    2002,
-    2003,
-    2004,
-    2005,
-    2006,
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2021,
-    2022,
-    2023,
-    2024,
-    2031,
-    2032,
-    2033,
-    2034,
-    2041,
-    2042,
-    2043,
-    2051,
-    2052,
-    2053,
-    2054,
-    2055,
-    2056,
-    2061,
-    2062,
-    2063,
-    2064
-  ],
-  4: [
-    4001,
-    4002,
-    4003,
-    4004,
-    4011,
-    4012,
-    4013,
-    4014,
-    4022,
-    4023,
-    4024,
-    4025,
-    4031,
-    4032,
-    4033,
-    4034,
-    4035,
-    4036,
-    4041,
-    4042,
-    4043,
-    4044,
-    4051,
-    4052,
-    4053,
-    4054,
-    4055,
-    4056,
-    4057,
-    4061,
-    4062,
-    4064,
-    4065,
-    4066,
-    4067,
-    4135,
-    4136,
-    4137,
-    4142,
-    4143,
-    4146,
-    4162,
-    4211,
-    4232,
-    4236,
-    4241,
-    4254,
-    4275,
-    4276,
-    4303,
-    4304,
-    4334,
-    4357,
-    6067,
-    6068,
-    6069,
-    6070,
-    6071,
-    6072,
-    6073,
-    6074,
-    6075,
-    6076,
-    6077,
-    6078,
-    6079,
-    6080,
-    6081,
-    6082,
-    6083,
-    6084,
-    6085,
-    6086,
-    6087,
-    6088
-  ],
-  5: [
-    5003,
-    5013,
-    5015,
-    5025,
-    5027,
-    5034,
-    5035,
-    5041,
-    5042,
-    5044,
-    5045,
-    5047,
-    5052,
-    5056,
-    5061,
-    5062,
-    5063,
-    6089,
-    6090,
-    6091,
-    6092,
-    6093,
-    6094,
-    6095,
-    6096,
-    6097,
-    6098
-  ],
-  6: [
-    6007,
-    6008,
-    6011,
-    6012,
-    6021,
-    6031,
-    6036,
-    6037,
-    6039,
-    6040,
-    6045,
-    6048,
-    6049,
-    6050,
-    6051,
-    6054,
-    6055,
-    6062,
-    6065,
-    6099,
-    6100,
-    6101,
-    6102,
-    6103,
-    6104,
-    6105,
-    6106,
-    6107,
-    6108,
-    6109,
-    6110,
-    6111,
-    6112
-  ]
-};
-
 // _shared/pruefung.ts
 var TOKEN_MUSTER = /^[A-Za-z0-9_-]{43}$/;
 var MAX_NOTIZ = 1e3;
@@ -452,6 +273,18 @@ var speicher = {
     }).eq("id", id));
   }
 };
+var einheiten = null;
+async function pruefEinheiten() {
+  if (einheiten && Date.now() - einheiten.stand < 6e4) return einheiten.jeThema;
+  const zeilen = pruefe(await db.from("pruef_einheiten").select("id, thema_id").limit(1e5));
+  const jeThema = {};
+  for (const z of zeilen) (jeThema[z.thema_id] ??= []).push(z.id);
+  einheiten = {
+    stand: Date.now(),
+    jeThema
+  };
+  return jeThema;
+}
 async function lesJson(req) {
   const text = await req.text();
   if (new TextEncoder().encode(text).length > MAX_ANFRAGE_BYTES) throw new EingabeFehler("Anfrage zu gro\xDF.");
@@ -482,7 +315,7 @@ Deno.serve(async (req) => {
   }, 405);
   try {
     const anfrage = pruefePruefAnfrage(await lesJson(req));
-    const { status, body } = await bearbeitePruefung(anfrage, speicher, MASSNAHMEN_JE_THEMA);
+    const { status, body } = await bearbeitePruefung(anfrage, speicher, await pruefEinheiten());
     return json(body, status);
   } catch (e) {
     if (e instanceof EingabeFehler) return json({

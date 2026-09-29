@@ -68,7 +68,7 @@ pruef_bewertungen (
 
 ### 3. Maßnahmen für die Prüfseite
 
-Die ungeprüften Maßnahmen stehen nicht in der Datenbank (dort nur `spielbareMassnahmen`). Die Prüfseite lädt sie deshalb **aus dem Datenkatalog im Bundle** (`daten/`, wie `src/data/mock.ts` es für `daten/beispiel/` tut). Das ist unbedenklich: `daten/` ist ohnehin öffentlich im Repo. In der Datenbank landen nur die Bewertungen mit Maßnahmen-ID.
+Die ungeprüften Maßnahmen stehen nicht in der Datenbank (dort nur `spielbareMassnahmen`); welche IDs je Thema bewertet werden dürfen, schreibt der Seed in die Tabelle `pruef_einheiten`, die nur die Edge Function liest. Die Prüfseite lädt sie deshalb **aus dem Datenkatalog im Bundle** (`daten/`, wie `src/data/mock.ts` es für `daten/beispiel/` tut). Das ist unbedenklich: `daten/` ist ohnehin öffentlich im Repo. In der Datenbank landen nur die Bewertungen mit Maßnahmen-ID.
 
 ### 4. Prüfseite in der App (`#/pruefen/<token>`)
 

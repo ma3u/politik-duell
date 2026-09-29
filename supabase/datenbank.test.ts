@@ -91,6 +91,12 @@ describe('Datenbank', () => {
     expect(laender.rows.map((l) => l.id)).toEqual(['BE', 'MV', 'ST'])
     const ebene = await pruef.query<{ ebene: string }>('select ebene from ursachen where id = 401')
     expect(ebene.rows).toEqual([{ ebene: 'land' }])
+    // Prüfeinheiten für die Edge Function `pruefung`: nur für die Function, nicht für anon.
+    const einheiten = await pruef.query<{ n: number }>('select count(*)::int as n from pruef_einheiten')
+    expect(einheiten.rows[0].n).toBeGreaterThan(0)
+    await pruef.exec('set role anon')
+    await expect(pruef.query('select * from pruef_einheiten')).rejects.toThrow()
+    await pruef.exec('reset role')
     await pruef.close()
     // Frische Datenbank plus echter Seed – wächst mit dem Datenkatalog.
   }, 30_000)

@@ -1,5 +1,5 @@
 // Baut den Inhalt von supabase/seed.sql aus dem geprüften Datenkatalog.
-import { spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen, type Katalog } from '../src/data/katalog.ts'
+import { pruefEinheiten, spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen, type Katalog } from '../src/data/katalog.ts'
 
 const q = (v: string | null | undefined) => (v == null ? 'null' : `'${v.replace(/'/g, "''")}'`)
 const zeilen = (werte: string[]) => werte.join(',\n  ')
@@ -9,6 +9,7 @@ export function seedSql(k: Katalog): string {
   const massnahmen = spielbareMassnahmen(k, true)
   const abdeckung = spielbareAbdeckung(k, true)
   const landesprogramme = spielbareLandesprogramme(k)
+  const einheiten = pruefEinheiten(k)
   const kopf = k.fiktiv
     ? '-- FIKTIVE Platzhalterdaten: Parteien, Maßnahmen, Punkte und Links sind erfunden.'
     : '-- Nur vollständig geprüfte Einträge je Thema und Partei; alles andere gilt als „noch nicht erfasst“.\n' +
@@ -21,6 +22,7 @@ ${kopf}
 delete from public.massnahmen;
 delete from public.abdeckung;
 delete from public.landesprogramme;
+delete from public.pruef_einheiten;
 
 insert into public.parteien (id, name, kurzname, farbe, programm_url, programm_stand) values
   ${zeilen(k.parteien.map((p) => `(${p.id}, ${q(p.name)}, ${q(p.kurzname)}, ${q(p.farbe)}, ${q(p.programm_url)}, ${q(p.programm_stand)})`))}
@@ -73,6 +75,14 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   )};
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
+`
+    : ''
+}${
+  einheiten.length
+    ? `
+-- Was Prüfende je Thema bewerten (auch ungeprüfte Einträge): Instrumente und Maßnahmen ohne Instrument.
+insert into public.pruef_einheiten (id, thema_id) values
+  ${zeilen(einheiten.map((e) => `(${e.id}, ${e.thema_id})`))};
 `
     : ''
 }${

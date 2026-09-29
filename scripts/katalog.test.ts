@@ -1,7 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { pruefeDatenordner } from './katalog-laden'
-import { pruefMassnahmenTs } from './pruef-massnahmen'
 import { seedSql } from './seed-sql'
 import { pruefEinheiten, pruefeKatalog, spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen, type Datei } from '../src/data/katalog'
 
@@ -441,8 +440,8 @@ describe('Datenkatalog im Repo (daten/)', () => {
     expect(datei).toBe(seedSql(katalog))
   })
 
-  it('Maßnahmenliste der Edge Function `pruefung` ist aktuell (sonst: npm run seed)', () => {
-    const datei = readFileSync(new URL('../supabase/functions/_shared/pruef-massnahmen.ts', import.meta.url), 'utf8')
-    expect(datei).toBe(pruefMassnahmenTs(katalog))
+  it('seed.sql enthält alle Prüfeinheiten für die Edge Function `pruefung`', () => {
+    const sql = seedSql(katalog)
+    for (const e of pruefEinheiten(katalog)) expect(sql).toContain(`(${e.id}, ${e.thema_id})`)
   })
 })
