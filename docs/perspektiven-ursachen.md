@@ -121,6 +121,43 @@ Verworfen:
 - *Zu viel Bürokratie und Dokumentation.* Keine eigene Ursache, sondern ein Teil der Arbeitsbedingungen, die Pflegekräfte aus dem Beruf treiben (1001).
 - *Heime und Pflegedienste schließen oder nehmen niemanden mehr auf.* Laut den Quellen liegt das vor allem am fehlenden Personal (1001). Für eine eigene wirtschaftliche Ursache fehlt ein unabhängiger Beleg.
 
+## Sicherheit (9)
+
+Stand: 29. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #14). Zwei belegte Diagnosen deckte keine Ursache ab. Sie sind jetzt als 904 und 905 aufgenommen, und alle erreichbaren Programme wurden eigens danach durchsucht.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 901 | Unsicherheit ballt sich an bestimmten Orten (Bahnhöfe, Parks, nachts) | Land | BKA, PKS 2025 und Dunkelfeldstudie SKiD | Polizeipräsenz, Videoschutz (eher konservativ); Gestaltung, Sozialarbeit (eher links) |
+| 902 | Überlastete Strafjustiz | Land | Destatis | mehr Personal und Digitalisierung (breit geteilt); Entkriminalisierung (eher links/liberal); schnellere Verfahren (eher konservativ) |
+| 903 | Junge Menschen häufiger Opfer von Gewalt, mehr tatverdächtige Kinder | Land | BKA, PKS 2025 und SKiD | schärferes Jugendstrafrecht (eher konservativ/rechts); Prävention, Jugendarbeit (eher links); schnelle Verfahren (breit geteilt) |
+| **904** *neu* | Häusliche Gewalt nimmt zu: 2024 rund 266.000 Opfer (Höchststand), 70 % Frauen; meist geht sie von (Ex-)Partnern aus | Land | BKA, Bundeslagebild Häusliche Gewalt 2024 | Schutzplätze und Beratung (eher links/Mitte); Fußfessel, Kontaktverbote, härtere Strafen (eher konservativ); Täterarbeit (breit geteilt) |
+| **905** *neu* | Nichtdeutsche sind unter Tatverdächtigen der Gewaltkriminalität stark überrepräsentiert (2025: 42,9 %); die Gründe sind in der Forschung umstritten | Bund | BKA, PKS 2025 | Ausweisung und Abschiebung von Straftätern (eher konservativ/rechts); Integration, Prävention (eher links) |
+
+**904:** Knapp ein Viertel aller in der PKS erfassten Opfer sind Opfer häuslicher Gewalt. Die Opferzahl ist in fünf Jahren um fast 18 % gestiegen. Die Diagnose fehlte, weil 901 nur öffentliche Orte betrifft. Ebene **Land**: Polizei (Wegweisung, Kontaktverbote, Gefährdungsanalysen), Frauenhäuser und Beratung liegen bei den Ländern. Der Bund regelt das Gewaltschutzgesetz und beteiligt sich über das Gewalthilfegesetz an der Finanzierung. Seine Maßnahmen zählen, wenn kein Bundesland gewählt ist.
+
+**905:** Die PKS 2025 nennt den Anteil als „weiterhin deutlich überrepräsentiert“. Die Zuwanderungsprüfung hatte die Diagnose „Kriminalität von Zugewanderten“ an dieses Thema verwiesen. Über die Gründe ist sich die Forschung nicht einig. Das ifo Institut (2025) findet keinen Zusammenhang zwischen dem Ausländeranteil einer Region und ihrer Kriminalitätsrate und erklärt die Überrepräsentation vor allem mit dem Wohnort in Ballungsräumen; Alter und Geschlecht spielen dort eine kleinere Rolle. Die Studie ist in der Debatte umstritten. Deshalb nennt die Ursache nur den Befund und lässt die Erklärung offen, damit Lösungen auf beiden Seiten ansetzen können. Ebene **Bund**, wie bei 604: Aufenthalts- und Ausweisungsrecht sind Bundesrecht.
+
+**Nacherfassung:**
+- 904: alle 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter häusliche Gewalt, Partnerschaftsgewalt, Gewalt gegen Frauen, Frauenhaus, Gewaltschutz, Fußfessel, Istanbul-Konvention, Femizid, Gewalthilfe, Schutzwohnung, Hochrisiko, Täterarbeit)
+- 905: die 6 erreichbaren Bundesprogramme (Stichwörter Straftäter, Ausweisung, Abschiebung, ausländische, Clan, Messer). Die BSW-Maßnahme stammt aus dem schon geprüften Zuwanderungseintrag 6064 (S. 37).
+- Ergebnis: 40 Maßnahmen, 9 Instrumente
+- Keine Maßnahme zu 904 bei AfD Bund, ST, MV und BE. Keine Maßnahme zu 905 bei FDP und Linke. Die Linke lehnt Abschiebungen als „Doppelbestrafung“ ab, das ist keine Maßnahme.
+
+**Offen:** Das BSW-Bundesprogramm war nicht abrufbar (bsw-vg.de gesperrt). Laut Programmvergleichen fordert es mehr Frauenhausplätze. Bis es nach 904 durchsucht ist, steht das BSW dort ohne Bundesland zu Unrecht bei 0.
+
+Entschieden: **901–904 Land, 905 Bund.**
+
+Belegt, aber noch nicht aufgenommen (nächster Schritt, eigener PR mit Nacherfassung):
+- *Betrug und Cyberkriminalität, zunehmend aus dem Ausland.* Laut SKiD war jede fünfte Person schon Opfer, mehr als jeder Zweite fürchtet Betrug im Internet (BKA, PKS 2025). Die im Ausland begangenen Betrugstaten stiegen um 7 %, der Schaden um 65 %.
+- *Politisch motivierte Kriminalität auf Höchststand* (2025: 85.837 Straftaten, 4.156 Gewalttaten; BKA/BMI, 9. 6. 2026). Die Debatte betont je nach Seite Rechtsextremismus, Islamismus oder Linksextremismus.
+
+Verworfen:
+- *Zu wenig Polizei.* Das beschreibt eine Lösung, keine Ursache. Maßnahmen dazu setzen an 901 an.
+- *Sexualisierte Gewalt außerhalb von Partnerschaften* (Vergewaltigungen seit 2018 +72 %, PKS 2025). Belegt und nah an 904. Kandidat für den nächsten Schritt zusammen mit Cyberkriminalität, weil Sexualstrafrecht und digitale Gewalt eigene Maßnahmen haben.
+- *Messerangriffe* (2025: 29.243, etwa wie im Vorjahr). Keine eigene Ursache, sondern ein Tatmittel an Orten (901) und bei Jugendlichen (903).
+
 ## Ebenen der übrigen Themen
 
 Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unverändert). Die Ebenen sind ein Vorschlag vom 28. 9. 2026 (KI-Entwurf). Sie werden bei der Perspektivenprüfung des jeweiligen Themas bestätigt.
@@ -131,7 +168,6 @@ Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unveränder
 | Miete (2) | – | 201–204 | Mietrecht, steuerliche Förderung und Baustandards (GEG, Gebäudetyp E) liegen beim Bund; soziale Wohnraumförderung ist zwar Ländersache, die meisten Hebel für Neubau (201) aber beim Bund. Folge: Landesprogramme zählen bei Miete nicht – auch nicht in Berlin. Bei der Perspektivenprüfung Miete erneut ansehen. |
 | Energiepreise (3) | – | 301, 302, 303 | Netzentgelte (Regulierung), Steuern und Umlagen, Energieimporte |
 | Bus und Bahn (8) | 801, 803 | 802 | Nahverkehrsangebot und Personal: Länder und Kommunen (Aufgabenträger); Schienennetz: Bund (DB InfraGO) |
-| Sicherheit (9) | 901, 902, 903 | – | Polizei, Justiz und Prävention sind Ländersache; Strafrecht ist Bundesrecht – Maßnahmen dazu stehen in Bundesprogrammen und zählen ohne gewähltes Bundesland |
 
 ## Hinweise zur Quellenprüfung
 
@@ -149,3 +185,8 @@ Rente und Pflege (29. 9. 2026): Die KI hat die Quellen diesmal im Original abger
 - 703: „Ergänzende Vorsorge erreicht Geringverdienende, Menschen mit Erwerbsunterbrechungen und Beschäftigte kleiner Betriebe deutlich seltener“ (DIW Wochenbericht 16/2026)
 - 1003: +730.000 Pflegebedürftige von 2021 bis 2023, davon rund 100.000 demografisch bedingt (Destatis, PM 478 vom 18. 12. 2024)
 - 1005: Fördervolumen der Länder 2022 bei 876 Mio. Euro (IGES, 19. 4. 2024); Investitionskosten 521 Euro im Monat (vdek, 1. 7. 2026)
+
+Sicherheit (29. 9. 2026), von der KI im Original abgerufen:
+
+- 904: 265.942 Opfer häuslicher Gewalt 2024, 70,4 % weiblich, 64,3 % Partnerschaftsgewalt (BKA-Pressemitteilung vom 21. 11. 2025)
+- 905: „Nichtdeutsche Tatverdächtige sind bei der Gewaltkriminalität mit 42,9 Prozent weiterhin deutlich überrepräsentiert.“ (BKA-Pressemitteilung vom 20. 4. 2026)

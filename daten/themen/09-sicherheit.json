@@ -3,7 +3,7 @@
   "name": "Sicherheit",
   "beschreibung": "Sich im Alltag unsicher fühlen oder Opfer von Kriminalität werden.",
   "ziel": "Menschen sind im Alltag sicher und fühlen sich sicher; Straftaten werden zügig verfolgt.",
-  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends"],
+  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends", "haeusliche gewalt", "partner", "frauenhaus", "auslaender", "migranten"],
   "ursachen": [
     {
       "id": 901,
@@ -25,6 +25,22 @@
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
       "ebene": "land",
       "schlagwoerter": ["jugendliche", "jugendgewalt", "kinder", "schule", "mobbing", "jugendbande", "abgezogen"]
+    },
+    {
+      "id": 904,
+      "beschreibung": "Häusliche Gewalt nimmt zu: 2024 rund 266.000 Opfer (Höchststand), 70 % Frauen; meist geht sie von (Ex-)Partnern aus",
+      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2025/Presse2025/251121_PM_BLB_HG_StraftatengegenFrauen2024.html",
+      "ebene": "land",
+      "schlagwoerter": ["haeusliche gewalt", "partner", "ex-partner", "ehemann", "freund schlaegt", "frauenhaus", "femizid", "stalking", "zuhause nicht sicher"],
+      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 905,
+      "beschreibung": "Nichtdeutsche sind unter Tatverdächtigen der Gewaltkriminalität stark überrepräsentiert (2025: 42,9 %); die Gründe sind in der Forschung umstritten",
+      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
+      "ebene": "bund",
+      "schlagwoerter": ["auslaender", "migranten", "zuwanderer", "gefluechtete", "auslaenderkriminalitaet", "abschiebung von straftaetern"],
+      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
     }
   ],
   "instrumente": [
@@ -211,6 +227,78 @@
       "umsetzbarkeit": 2,
       "begruendung": "Ehrenamtliche Helfer können die Präsenz im öffentlichen Raum erhöhen und Polizei und Ordnungsämter entlasten; ihre Wirkung ist kaum untersucht, Befugnisse und Ausbildung müssen eng begrenzt sein. Das Land kann es gesetzlich regeln.",
       "evidenz": "offen"
+    },
+    {
+      "id": 6458,
+      "name": "Gewaltschutzgesetz verschärfen: elektronische Fußfessel, Täterprogramme als Auflage (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Elektronisch überwachte Kontakt- und Näherungsverbote warnen Betroffene, wenn sich der Täter nähert, und Täterprogramme sollen Wiederholungen verhindern; die Erfahrungen etwa aus Spanien gelten als gut, belastbare Wirkungsstudien sind aber rar. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6459,
+      "name": "Frauenhäuser, Schutzwohnungen und Beratung ausbauen, Rechtsanspruch mit Bundesbeteiligung (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Schutzplätze und Beratung schützen Betroffene akut und erleichtern die Trennung vom Täter; dass sie die Zahl der Taten senken, ist kaum belegt. Der Bund kann sich finanziell beteiligen, wie mit dem Gewalthilfegesetz; Ausbau und Betrieb liegen bei Ländern und Kommunen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6460,
+      "name": "Frauenhäuser, Schutzwohnungen und Beratung ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Schutzplätze und Beratung schützen Betroffene akut und erleichtern die Trennung vom Täter; dass sie die Zahl der Taten senken, ist kaum belegt. Das Land ist zuständig und bekommt Bundesmittel aus dem Gewalthilfegesetz; Plätze und Fachpersonal aufzubauen dauert.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6461,
+      "name": "Kontakt- und Näherungsverbote durchsetzen, elektronische Fußfessel nach Polizeirecht (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Elektronisch überwachte oder konsequent durchgesetzte Kontakt- und Näherungsverbote schützen Betroffene vor erneuten Angriffen; die Erfahrungen etwa aus Spanien gelten als gut, belastbare Wirkungsstudien sind aber rar. Die Länder können es über ihr Polizeirecht regeln, mehrere tun es bereits.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6462,
+      "name": "Hochrisikomanagement: standardisierte Gefährdungsanalysen und Fallkonferenzen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Standardisierte Gefährdungsanalysen und Fallkonferenzen von Polizei, Justiz und Hilfesystem sollen gefährliche Fälle früh erkennen; sie gehören zu den Vorgaben der Istanbul-Konvention, ihre Wirkung auf schwere Gewalt ist aber wenig untersucht. Das Land kann es selbst einführen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6463,
+      "name": "Täterarbeit ausbauen, auch verpflichtend (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Täterprogramme sollen Wiederholungstaten verhindern; Studien finden eher kleine und uneinheitliche Effekte. Das Land kann Angebote fördern, als Auflage anordnen können sie Gerichte und Staatsanwaltschaften nach Bundesrecht.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6464,
+      "name": "Eigenanteil für den Aufenthalt im Frauenhaus abschaffen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Müssen Betroffene den Aufenthalt nicht selbst zahlen, sinkt eine Hürde, Schutz zu suchen; an der Zahl der fehlenden Plätze ändert das nichts. Das Land kann die Kosten übernehmen.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6465,
+      "name": "Finanzierung bestehender Frauenhäuser und Beratungsstellen sichern, ohne Ausbau (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine gesicherte Finanzierung erhält bestehende Frauenhäuser und Beratungsstellen, schafft aber keine zusätzlichen Plätze, die vielerorts fehlen. Das Land kann es im Haushalt absichern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6466,
+      "name": "Ausländische Straftäter konsequent ausweisen und abschieben (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Abschiebungen verurteilter ausländischer Straftäter verhindern weitere Taten dieser Personen hier; die meisten nichtdeutschen Tatverdächtigen sind aber nicht ausreisepflichtig, und Abschiebungen scheitern oft an Papieren oder Herkunftsstaaten. Der Bund regelt das Aufenthaltsrecht.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -260,6 +348,31 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6467,
+          "instrument": 6458,
+          "beschreibung": "Elektronische Fußfessel verstärkt einsetzen, Frauenhäuser stärken",
+          "ursachen_ids": [904],
+          "zitat": "Die elektronische Fußfessel setzen wir verstärkt ein, damit Gewalttäter gegen Frauen Abstand zu ihren ehemaligen Partnerinnen halten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6474,
+          "beschreibung": "Ausreisepflichtige Straftäter nach der Haft in unbefristeten Ausreisearrest",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Arrest bis zur Ausreise verhindert, dass straffällige Ausreisepflichtige untertauchen; die meisten nichtdeutschen Tatverdächtigen sind aber nicht ausreisepflichtig. Eine zeitlich unbegrenzte Freiheitsentziehung ist mit Grundgesetz und EU-Rückführungsrichtlinie kaum vereinbar.",
+          "zitat": "Wir ändern das Recht so, dass jeder ausreisepflichtige Straftäter und Gefährder im Anschluss an seine Haft in zeitlich unbegrenzten Ausreisearrest genommen werden kann, bis er freiwillig ausreist oder die zwangsweise Abschiebung gelingt.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=43",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -295,6 +408,39 @@
           "ursachen_ids": [902],
           "zitat": "Zudem wollen wir die Strafprozessordnung auf Effektivität reformieren",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=43",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6468,
+          "instrument": 6458,
+          "beschreibung": "Gewaltschutzgesetz verschärfen: Fußfessel, verpflichtende Anti-Gewalt-Trainings, Aufenthaltsverbote",
+          "ursachen_ids": [904],
+          "zitat": "Mit einer Verschärfung des Gewaltschutzgesetzes wollen wir Betroffenen häuslicher Gewalt und anderer Nachstellungen besser schützen: Maßnahmen wie elektronische Fußfesseln, verpflichtende Anti-Gewalt-Trainings für Täter und Aufenthaltsverbote sowie Hausarreste bieten besseren Schutz vor Tätern",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6469,
+          "instrument": 6459,
+          "beschreibung": "Bundesweiter Rechtsanspruch auf Schutz und Beratung",
+          "ursachen_ids": [904],
+          "zitat": "Mit einem bundesweiten Rechtsanspruch stellen wir sicher, dass Betroffene jederzeit Zugang zu Schutzunterkünften wie Frauenhäusern und Beratungsstellen erhalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6475,
+          "instrument": 6466,
+          "beschreibung": "Rasche und konsequente Abschiebungen, insbesondere bei Straftätern",
+          "ursachen_ids": [905],
+          "zitat": "Wird dies verweigert, setzen wir auf rasche wie konsequente Abschiebungen, insbesondere bei Straftätern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=56",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -350,6 +496,39 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6470,
+          "instrument": 6459,
+          "beschreibung": "Rechtsanspruch auf Schutz und Beratung, Bundesbeteiligung an Frauenhäusern und Beratungsstellen",
+          "ursachen_ids": [904],
+          "zitat": "Durch eine Bundesbeteiligung stellen wir gemeinsam mit den Ländern kostenfreie Hilfen wie Frauenhäuser, Beratungsstellen und Schutzwohnungen flächendeckend sicher.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=118",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6471,
+          "instrument": 6458,
+          "beschreibung": "Annäherungsverbote wirksam durchsetzen, auch mit elektronischer Fußfessel",
+          "ursachen_ids": [904],
+          "zitat": "Annäherungsverbote müssen in Fällen von häuslicher Gewalt effektiv kontrolliert und durchgesetzt werden können, auch zum Beispiel durch den Einsatz der elektronischen Fußfessel.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=118",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6476,
+          "instrument": 6466,
+          "beschreibung": "Ausreisepflichtige nach schweren Straftaten vorrangig zurückführen",
+          "ursachen_ids": [905],
+          "zitat": "Ausreisepflichtige, die schwere Straftaten begangen haben, müssen nach Verbüßung ihrer Strafen prioritär zurückgeführt werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=130",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -374,6 +553,20 @@
           "ursachen_ids": [902],
           "zitat": "Wir wollen das Strafgesetzbuch systematisch überprüfen und überholte Straftatbestände anpassen oder streichen.",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6472,
+          "beschreibung": "Länder und Kommunen sollen Frauenhausplätze ausfinanzieren; bundesweite Online-Plattform freier Plätze",
+          "ursachen_ids": [904],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Eine Plattform mit freien Plätzen verkürzt die Suche im Notfall; mehr Plätze entstehen dadurch nicht, deren Finanzierung überlässt das Programm Ländern und Kommunen. Die Plattform kann der Bund selbst aufbauen.",
+          "zitat": "Zur Bekämpfung von häuslicher Gewalt gegen Frauen möchten wir, dass Länder und Kommunen Frauenhausplätze bedarfsgerecht ausfinanzieren und dass durch eine bundesweite Online-Plattform verfügbare Frauenhausplätze in Echtzeit angezeigt werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=29",
+          "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -440,6 +633,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6477,
+          "instrument": 6466,
+          "beschreibung": "Zwingende Ausweisung verurteilter ausländischer Straftäter konsequent vollziehen, schon im Strafurteil feststellen",
+          "ursachen_ids": [905],
+          "zitat": "den konsequenten Vollzug der zwingenden Ausweisung verurteilter ausländischer Straftäter sowie die Feststellung der Verpflichtung hierzu bereits im Strafurteil",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=117",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -467,6 +671,17 @@
           "zitat": "Obdachlosen und Suchtabhängigen ist nicht mit einer Verdrängung aus den Innenstädten geholfen, vielmehr benötigen sie bessere Hilfsangebote und eine Stärkung der Sozialarbeit",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
           "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6473,
+          "instrument": 6459,
+          "beschreibung": "Frauenhäuser bedarfsgerecht und verlässlich finanzieren",
+          "ursachen_ids": [904],
+          "zitat": "Frauenhäuser müssen bedarfsgerecht, einzelfallunabhängig und verlässlich finanziert werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -505,6 +720,17 @@
           "ursachen_ids": [902],
           "zitat": "Dies erreichen wir durch sinnvolle Reformen, besonders im Bereich des Strafrechts.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6478,
+          "instrument": 6466,
+          "beschreibung": "Straftäter ausweisen und abschieben, Verfahren dazu vorrangig betreiben",
+          "ursachen_ids": [905],
+          "zitat": "Zuwanderer, die in schwerer Weise mit dem Gesetz in Konflikt kommen, müssen ausgewiesen und nötigenfalls abgeschoben werden. Entsprechende Behörden- und Gerichtsverfahren sind vorrangig und zügig zu betreiben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=37",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -592,6 +818,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6479,
+          "instrument": 6465,
+          "beschreibung": "Finanzierung von Beratungsstellen und Frauenhäusern sichern",
+          "ursachen_ids": [904],
+          "zitat": "Wir werden den Opferschutz weiter ausbauen und die verlässliche Finanzierung ambulanter Beratungsstellen sowie von Frauenhäusern sichern.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=59",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -665,6 +902,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6483,
+          "instrument": 6460,
+          "beschreibung": "Frauenhäuser und Schutzwohnungen im ganzen Land ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Der Ausbau von Frauenhäusern und Schutzwohnungen wird im gesamten Land vorangetrieben.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6484,
+          "instrument": 6464,
+          "beschreibung": "Land übernimmt die Tagessätze in Frauenschutzhäusern",
+          "ursachen_ids": [904],
+          "zitat": "Das Land soll die Tagessätze übernehmen, die Betroffene in Frauenschutzhäusern bislang selbst leisten müssen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -716,6 +975,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6488,
+          "instrument": 6460,
+          "beschreibung": "Bedarfsgerechter Ausbau von Frauenhäusern, Eigenanteil der Bewohnerinnen abschaffen",
+          "ursachen_ids": [904],
+          "zitat": "Zugleich braucht es einen bedarfsgerechten Ausbau von Frauenhäusern und anderen Schutzräumen, damit ausreichend Plätze in allen Regionen zur Verfügung stehen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6489,
+          "instrument": 6463,
+          "beschreibung": "Fachstellen für Täterarbeit auch im ländlichen Raum fördern",
+          "ursachen_ids": [904],
+          "zitat": "Wir werden Fachstellen zur Täterarbeit auch in den ländlichen Regionen abseits von Halle und Magdeburg fördern",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -764,6 +1045,17 @@
           "ursachen_ids": [901],
           "zitat": "Wir bauen Sicherheitspartnerschaften zwischen Polizei und Ordnungsämtern flächendeckend aus und machen gemeinsame Einsätze zum Regelfall.",
           "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=47",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6492,
+          "instrument": 6464,
+          "beschreibung": "Eigenanteile für die Übernachtung in Frauenhäusern abschaffen",
+          "ursachen_ids": [904],
+          "zitat": "Beispielsweise sehen wir die Abschaffung der Eigenanteile für die Übernachtung in Frauenhäusern als einen geeigneten Weg.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=39",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -930,6 +1222,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6497,
+          "instrument": 6464,
+          "beschreibung": "Eigenanteil im Frauenschutzhaus abschaffen, Frauenberatungsstellen stärken",
+          "ursachen_ids": [904],
+          "zitat": "die Frauenberatungsstellen im Land stärken und zudem den Eigenanteil für Frauen, die Hilfe in einem Frauenschutzhaus suchen, abschaffen",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -967,6 +1270,17 @@
           "ursachen_ids": [902],
           "zitat": "Wir fordern deshalb eine Verbesserung der Richter- und Staatsanwaltsbesoldung, mehr Planungssicherheit bei Einstellungen sowie die Aufhebung des faktischen Einstellungsstopps im mittleren und gehobenen Justizdienst.",
           "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=71",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6502,
+          "instrument": 6460,
+          "beschreibung": "Mehr Plätze in Frauenhäusern und Schutzwohnungen, dauerhafte Finanzierung",
+          "ursachen_ids": [904],
+          "zitat": "Erhöhung der Zahl der Plätze bei Frauenhäusern / Schutzwohnungen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=65",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1079,6 +1393,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6480,
+          "instrument": 6461,
+          "beschreibung": "Polizeiliche Kontakt- und Näherungsverbote ausweiten, verpflichtende Gewaltpräventionsberatung für Gefährder",
+          "ursachen_ids": [904],
+          "zitat": "Das Thema Schutz vor häuslicher Gewalt und Stalking werden wir stärker in den Fokus … nehmen und die Möglichkeit der präventiven Anordnung von Kontakt- und … Näherungsverboten durch die Polizei ausweiten.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1130,6 +1455,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6485,
+          "instrument": 6460,
+          "beschreibung": "Frauenhäuser modernisieren und bedarfsgerecht ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Dazu werden wir auch die zusätzlichen Investitionsmöglichkeiten nutzen, um bspw. Frauenhäuser zu modernisieren und bedarfsgerecht auszubauen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=38",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1170,6 +1506,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6490,
+          "instrument": 6465,
+          "beschreibung": "Beratungsstellen und Frauenhäuser stärken, Finanzierung dauerhaft sichern",
+          "ursachen_ids": [904],
+          "zitat": "Wir stärken Beratungsstellen, Frauenhäuser und mobile Hilfsangebote und sichern ihre Finanzierung dauerhaft ab.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1207,6 +1554,28 @@
           "ursachen_ids": [902],
           "zitat": "die Digitalisierung der Justiz konsequent vorantreiben, um Verfahren zu beschleunigen",
           "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=138",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6493,
+          "instrument": 6461,
+          "beschreibung": "Elektronische Fußfessel bei häuslicher Gewalt im Landespolizeirecht",
+          "ursachen_ids": [904],
+          "zitat": "Bis zu einer bundesweiten Regelung im Gewaltschutzgesetz wollen wir das Sicherheits- und Ordnungsgesetz so ändern, dass bei häuslicher Gewalt auch eine elektronische Fußfessel angeordnet werden kann.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=133",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6494,
+          "instrument": 6465,
+          "beschreibung": "Finanzierung des Beratungs- und Hilfenetzes stärken",
+          "ursachen_ids": [904],
+          "zitat": "die Finanzierung des Beratungs- und Hilfenetzes Mecklenburg-Vorpommern stärken.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=53",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1312,6 +1681,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6498,
+          "instrument": 6460,
+          "beschreibung": "Mehr Plätze in Frauenhäusern, Beratung und Täterarbeit ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Mehr Plätze in Frauenhäusern schaffen und barrierefreie Schutzorte ausbauen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6499,
+          "instrument": 6462,
+          "beschreibung": "Landesweites Hochrisikomanagement bei häuslicher Gewalt",
+          "ursachen_ids": [904],
+          "zitat": "Femizide verhindern und ein landesweites Hochrisikomanagement bei häuslicher Gewalt einführen sowie verbindliche Verfahren zur Gefährdungseinschätzung besonders gefährdeter Frauen entwickeln.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1349,6 +1740,28 @@
           "ursachen_ids": [902],
           "zitat": "Schnellere Verfahren und Vollstreckung im Strafrecht, damit auf die Tat zeitnah die Strafe folgt",
           "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=69",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6503,
+          "instrument": 6460,
+          "beschreibung": "Frauenhausplätze und Schutzwohnungen ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Ausbau von Frauenhausplätzen und Schutzwohnungen in ganz Mecklenburg-Vorpommern, insbesondere im ländlichen Raum.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6504,
+          "instrument": 6461,
+          "beschreibung": "Wegweisungen und Annäherungsverbote konsequent durchsetzen",
+          "ursachen_ids": [904],
+          "zitat": "Konsequente Wegweisungen und Annäherungsverbote zum schnellen Schutz Betroffener.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=72",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1458,6 +1871,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6481,
+          "instrument": 6461,
+          "beschreibung": "Elektronische Fußfessel bei Hochrisiko-Gefährdern ausweiten, Warngeräte für Opfer",
+          "ursachen_ids": [904],
+          "zitat": "Wir werden ihren Einsatz bei Hochrisiko-Gefährdern konsequent ausweiten, damit Kontakt- und Näherungsverbote zuverlässig überwacht und Verstöße frühzeitig erkannt werden können.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=11",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6482,
+          "instrument": 6460,
+          "beschreibung": "Zusätzliche Schutzplätze, zehntes Frauenhaus",
+          "ursachen_ids": [904],
+          "zitat": "etwa durch zusätzliche Schutzplätze, Beratungs- und Interventionsangebote sowie die Schaffung eines zehnten Frauenhauses in Berlin.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=11",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1516,6 +1951,28 @@
           "beschreibung": "Schnelle Reaktion auf Straftaten Jugendlicher und Heranwachsender",
           "ursachen_ids": [903],
           "zitat": "Gerade bei Jugendlichen und Heranwachsenden sollen die Behörden auf Straftaten schnell reagieren.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6486,
+          "instrument": 6462,
+          "beschreibung": "Systematische Risikoanalysen bei der Polizei zur Früherkennung von Hochrisikofällen",
+          "ursachen_ids": [904],
+          "zitat": "Wir führen systematische Risikoanalysen bei der Polizei ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6487,
+          "instrument": 6460,
+          "beschreibung": "Frauenhäuser, Schutzwohnungen und Täterarbeit stadtweit ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Die Istanbul-Konvention setzen wir konsequent um und bauen Frauenhäuser, Schutzwohnungen, Unterstützungsangebote für queere Menschen, Angebote psychosozialer Arbeit mit Täter*innen sowie Gewaltschutzambulanzen stadtweit aus.",
           "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
           "stand": "2026-09-29",
           "geprueft": false,
@@ -1582,6 +2039,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6491,
+          "instrument": 6460,
+          "beschreibung": "Zwei neue Frauenhäuser, mehr Beratung und Zweite-Stufe-Wohnungen",
+          "ursachen_ids": [904],
+          "zitat": "Wir schaffen mehr Beratungsangebote, zwei neue Frauenhäuser, mehr Zweite-Stufe-Wohnungen für gewaltbetroffene Frauen und ihre Kinder",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=131",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1641,6 +2109,28 @@
           "ursachen_ids": [903],
           "zitat": "Daher werden wir Maßnahmen, die das ermöglichen, fortsetzen und verstetigen.",
           "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=73",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6495,
+          "instrument": 6460,
+          "beschreibung": "Schutzplätze in Frauenhäusern und Zufluchtswohnungen ausweiten",
+          "ursachen_ids": [904],
+          "zitat": "Die Zahl der Schutzplätze in Frauenhäusern und Zufluchtswohnungen muss ausgeweitet werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=80",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6496,
+          "instrument": 6463,
+          "beschreibung": "Täterarbeit deutlich ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Die Täterarbeit wird deutlich ausgebaut.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=81",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1804,6 +2294,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6500,
+          "instrument": 6460,
+          "beschreibung": "Fraueninfrastruktur sichern und ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "die Fraueninfrastruktur langfristig zu sichern, auszubauen und finanziell zu stärken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=213",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6501,
+          "instrument": 6463,
+          "beschreibung": "Verpflichtende Täter*innenkurse",
+          "ursachen_ids": [904],
+          "zitat": "Täter*innenkurse müssen für Personen, die häusliche Gewalt ausüben, verpflichtend angeboten und konsequent umgesetzt werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=214",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1907,6 +2419,28 @@
           "ursachen_ids": [901],
           "zitat": "führen wir zusätzliche gemeinsame Kontrollen des Ordnungsamts mit der Polizei und den Zollbehörden ein",
           "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6505,
+          "instrument": 6461,
+          "beschreibung": "Spanisches Modell: Fußfessel bei Annäherungsverbot mit Warnsystem",
+          "ursachen_ids": [904],
+          "zitat": "Wir unterstützen in Fällen, in denen Gefahr für Leib und Leben droht, das spanische Modell (elektronische Fußfessel bei Annäherungsverbot und Warnsystem für Betroffene) – richterlich angeordnet und verhältnismäßig.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6506,
+          "instrument": 6460,
+          "beschreibung": "Frauenhäuser ausbauen",
+          "ursachen_ids": [904],
+          "zitat": "Das Angebot von Frauenhäusern bauen wir aus",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
