@@ -120,6 +120,11 @@ export function Methode() {
       <h3>Umsetzbarkeit: Ist sie rechtlich, finanziell und zeitlich realistisch?</h3>
       <Skala stufen={UMSETZBARKEIT} />
       <p>
+        Maßstab ist die Regierung der Ebene, aus deren Programm die Maßnahme stammt. Verspricht ein Bundesprogramm etwas,
+        wofür die Länder zuständig sind (etwa in der Schule), gibt es 2, wenn der Bund mit Geld, einem Programm oder einer
+        Vereinbarung beitragen kann, und 1, wenn nur die Länder es über ihr eigenes Recht regeln können.
+      </p>
+      <p>
         <strong>Rolle:</strong> Wählst du eine Rolle (z. B. Mieter:in), kann eine Maßnahme für dich mehr oder weniger
         bringen. Dann verschiebt sich ihre Wirksamkeit für dich um bis zu zwei Stufen (innerhalb von 0 bis 3). Solche
         Auf- oder Abwertungen sind je Maßnahme einzeln begründet und werden angezeigt.
