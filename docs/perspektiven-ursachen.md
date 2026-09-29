@@ -127,6 +127,8 @@ Stand: 29. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
 
 Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #14). Zwei belegte Diagnosen deckte keine Ursache ab. Sie sind jetzt als 904 und 905 aufgenommen, und alle erreichbaren Programme wurden eigens danach durchsucht.
 
+Im nächsten Schritt kamen die drei dafür vorgemerkten Diagnosen als 906–908 dazu, ebenfalls mit eigener Nacherfassung (siehe unten, „906–908“).
+
 | ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
 | --- | --- | --- | --- | --- |
 | 901 | Unsicherheit ballt sich an bestimmten Orten (Bahnhöfe, Parks, nachts) | Land | BKA, PKS 2025 und Dunkelfeldstudie SKiD | Polizeipräsenz, Videoschutz (eher konservativ); Gestaltung, Sozialarbeit (eher links) |
@@ -134,6 +136,9 @@ Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #1
 | 903 | Junge Menschen häufiger Opfer von Gewalt, mehr tatverdächtige Kinder | Land | BKA, PKS 2025 und SKiD | schärferes Jugendstrafrecht (eher konservativ/rechts); Prävention, Jugendarbeit (eher links); schnelle Verfahren (breit geteilt) |
 | **904** *neu* | Häusliche Gewalt nimmt zu: 2024 rund 266.000 Opfer (Höchststand), 70 % Frauen; meist geht sie von (Ex-)Partnern aus | Land | BKA, Bundeslagebild Häusliche Gewalt 2024 | Schutzplätze und Beratung (eher links/Mitte); Fußfessel, Kontaktverbote, härtere Strafen (eher konservativ); Täterarbeit (breit geteilt) |
 | **905** *neu* | Nichtdeutsche sind unter Tatverdächtigen der Gewaltkriminalität stark überrepräsentiert (2025: 42,9 %); die Gründe sind in der Forschung umstritten | Bund | BKA, PKS 2025 | Ausweisung und Abschiebung von Straftätern (eher konservativ/rechts); Integration, Prävention (eher links) |
+| **906** *neu* | Betrug und Cyberkriminalität treffen viele (jede fünfte Person schon Opfer), Betrug aus dem Ausland nimmt zu | Bund | BKA, PKS 2025 und SKiD | Ermittlungsbefugnisse, Datenspeicherung (eher konservativ); Quick Freeze, Bürgerrechte (eher liberal/links); internationale Zusammenarbeit (breit geteilt) |
+| **907** *neu* | Politisch motivierte Kriminalität auf Höchststand (2025: 85.837 Straftaten, 4.156 Gewalttaten) | Land | BKA/BMI, PMK 2025 | je nach Seite Schwerpunkt Rechtsextremismus, Linksextremismus oder Islamismus; Verbote, Verfassungsschutz, Strafrecht (eher konservativ); Prävention, Opferberatung, Demokratieförderung (eher links) |
+| **908** *neu* | Sexualisierte Gewalt: deutlich mehr erfasste Vergewaltigungen (seit 2018 +72 %), nur ein kleiner Teil wird angezeigt | Land | BKA, PKS 2025 und SKiD | härtere Strafen (eher konservativ); „Nur Ja heißt Ja“, Hilfe und Spurensicherung für Betroffene (eher links/Mitte) |
 
 **904:** Knapp ein Viertel aller in der PKS erfassten Opfer sind Opfer häuslicher Gewalt. Die Opferzahl ist in fünf Jahren um fast 18 % gestiegen. Die Diagnose fehlte, weil 901 nur öffentliche Orte betrifft. Ebene **Land**: Polizei (Wegweisung, Kontaktverbote, Gefährdungsanalysen), Frauenhäuser und Beratung liegen bei den Ländern. Der Bund regelt das Gewaltschutzgesetz und beteiligt sich über das Gewalthilfegesetz an der Finanzierung. Seine Maßnahmen zählen, wenn kein Bundesland gewählt ist.
 
@@ -147,16 +152,34 @@ Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #1
 
 **Offen:** Das BSW-Bundesprogramm war nicht abrufbar (bsw-vg.de gesperrt). Laut Programmvergleichen fordert es mehr Frauenhausplätze. Bis es nach 904 durchsucht ist, steht das BSW dort ohne Bundesland zu Unrecht bei 0.
 
-Entschieden: **901–904 Land, 905 Bund.**
+**906–908** (29. 9. 2026, eigener Schritt nach der Perspektivenprüfung): Die Diagnosen waren belegt, aber noch nicht aufgenommen; sexualisierte Gewalt stand als Kandidat unter „Verworfen“. Alle drei sind lösungsoffen formuliert und mit `nachtraeglich` gekennzeichnet.
 
-Belegt, aber noch nicht aufgenommen (nächster Schritt, eigener PR mit Nacherfassung):
-- *Betrug und Cyberkriminalität, zunehmend aus dem Ausland.* Laut SKiD war jede fünfte Person schon Opfer, mehr als jeder Zweite fürchtet Betrug im Internet (BKA, PKS 2025). Die im Ausland begangenen Betrugstaten stiegen um 7 %, der Schaden um 65 %.
-- *Politisch motivierte Kriminalität auf Höchststand* (2025: 85.837 Straftaten, 4.156 Gewalttaten; BKA/BMI, 9. 6. 2026). Die Debatte betont je nach Seite Rechtsextremismus, Islamismus oder Linksextremismus.
+**906:** Laut SKiD war jede fünfte Person schon Opfer von Cyberkriminalität, mehr als jeder Zweite fürchtet Betrug im Internet. Im Inland gingen Betrug (−8,4 %) und Cyberkriminalität (−4,1 %) zurück, die aus dem Ausland begangenen Taten stiegen (Betrug +7,0 %, Schaden 2,3 Mrd. Euro, +65,1 %). Die Ursache nennt beides, damit Maßnahmen im Inland (Ermittlungen, Befugnisse) und über Grenzen hinweg (europäische Zusammenarbeit) ansetzen können. Ebene **Bund**: Strafprozessrecht, Telekommunikationsrecht, BKA als Zentralstelle und die internationale Zusammenarbeit liegen beim Bund; die Länder ermitteln zwar selbst, gegen Täter im Ausland haben sie aber kaum eigene Hebel.
+
+**907:** Höchststand seit Einführung der Statistik 2001 (BKA/BMI, 9. 6. 2026). Rund die Hälfte der Taten ordnet die Polizei rechts zu, die Zahl links motivierter Taten stieg um mehr als 35 %. Die Ursache nennt nur die Gesamtzahl, damit Maßnahmen gegen jede Richtung zählen. Ebene **Land**, wie 901–904: Polizeilicher Staatsschutz, Landesämter für Verfassungsschutz, Staatsanwaltschaften, Präventions- und Aussteigerprogramme sowie Vereinsverbote für landesweite Vereine liegen bei den Ländern. Der Bund regelt Strafrecht, Waffenrecht und Aufenthaltsrecht und verbietet bundesweite Vereine; seine Maßnahmen zählen, wenn kein Bundesland gewählt ist.
+
+**908:** Vergewaltigungen stiegen 2025 um 9,0 %, seit 2018 um 72 %. Die Anzeigequote liegt laut SKiD bei 6,2 % (Vergewaltigung und sexueller Missbrauch). Ein Teil des Anstiegs kann deshalb auch mehr Anzeigen bedeuten; die Ursache nennt beides. Sie umfasst sexualisierte Gewalt gegen Jugendliche und Erwachsene innerhalb und außerhalb von Partnerschaften; Maßnahmen gegen häusliche Gewalt allgemein bleiben bei 904. Ebene **Land**, wie 904: Polizei, Justiz, Gewaltschutzambulanzen, vertrauliche Spurensicherung und Beratung liegen bei den Ländern, das Sexualstrafrecht beim Bund.
+
+**Nacherfassung 906–908:**
+- 906: die 6 erreichbaren Bundesprogramme (Stichwörter Betrug, Cyber, Enkeltrick, Schockanruf, Phishing, Callcenter, Internetkriminalität, IP-Adressen, Quick Freeze, Vorratsdaten, Europol, Verbraucherschutz online). Ergebnis: 11 Maßnahmen.
+- 907: die 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter Extremismus, politisch motiviert, Verfassungsschutz, Demokratie leben, Demokratiefördergesetz, Aussteiger, Hasskriminalität, Hass und Hetze, Islamismus, Terror, Antisemitismus, Radikalisierung, Vereinsverbot, verfassungsfeindlich). Ergebnis: 74 Maßnahmen.
+- 908: die 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter sexualisiert, sexuelle Gewalt, Übergriff, Belästigung, Vergewaltigung, Sexualstrafrecht, K.-o.-Tropfen, Catcalling, „Ja heißt Ja“, Gewaltschutzambulanz, Spurensicherung, Sexualdelikt, bildbasiert, Deepfake). Ergebnis: 20 Maßnahmen.
+- Zusammen 105 Maßnahmen (IDs 6529–6633), 22 neue Instrumente (6507–6528), dazu das vorhandene Instrument 6466 und 13 Einzelbewertungen.
+- Keine Maßnahme zu 906 bei der AfD. Zu 907 keine bei der FDP in Sachsen-Anhalt. Zu 908 keine bei FDP Bund, Union, SPD, FDP, AfD, Linke und BSW in Sachsen-Anhalt, Union, AfD und BSW in Mecklenburg-Vorpommern sowie Union und BSW in Berlin. Da jeder dieser Partei-Land-Einträge schon Maßnahmen zu anderen Ursachen hat, steht dort kein `keine_massnahme`-Vermerk.
+
+Abgrenzung beim Erfassen:
+- *Nicht gezählt* wurden Verbote von Parteien (AfD-Verbotsverfahren, auch in Landesprogrammen), Regeln für Verfassungsfeinde im öffentlichen Dienst, Förderbedingungen für Vereine und bloße Bekenntnisse gegen Extremismus. Sie richten sich nicht gegen Straftaten. Verbote militanter Organisationen und Vereinsverbote zählen.
+- Zu 906 zählen Maßnahmen gegen Kriminalität im Internet und aus dem Ausland, nicht solche zur IT-Sicherheit von Staat und Unternehmen (BSI, KRITIS, Cyberabwehr). Die IP-Speicherung der Union ist ausdrücklich für schwere Straftaten wie sexuelle Gewalt gegen Kinder und Terror gedacht und zählt deshalb nicht.
+- Zu 908 zählen keine Maßnahmen, die nur den Schutz von Kindern (Kinderschutzkonzepte, Childhood-Häuser) oder digitale Gewalt wie Deepfakes betreffen. Maßnahmen gegen Straftäter allgemein zählen, wenn sie Sexualdelikte ausdrücklich nennen.
+
+**Offen:** Das BSW-Bundesprogramm war auch diesmal nicht abrufbar (bsw-vg.de: HTTP 503, Kopie im Internet Archive gesperrt). Laut Programmvergleichen fordert es mehr Frauenhausplätze. Bis es nach 904 und 906–908 durchsucht ist, steht das BSW dort ohne Bundesland zu Unrecht bei 0. Bei 906 gilt das auch mit gewähltem Bundesland, weil 906 eine Bundesursache ist.
+
+Entschieden: **901–904, 907 und 908 Land, 905 und 906 Bund.**
 
 Verworfen:
 - *Zu wenig Polizei.* Das beschreibt eine Lösung, keine Ursache. Maßnahmen dazu setzen an 901 an.
-- *Sexualisierte Gewalt außerhalb von Partnerschaften* (Vergewaltigungen seit 2018 +72 %, PKS 2025). Belegt und nah an 904. Kandidat für den nächsten Schritt zusammen mit Cyberkriminalität, weil Sexualstrafrecht und digitale Gewalt eigene Maßnahmen haben.
 - *Messerangriffe* (2025: 29.243, etwa wie im Vorjahr). Keine eigene Ursache, sondern ein Tatmittel an Orten (901) und bei Jugendlichen (903).
+- *Sexueller Missbrauch von Kindern* und *digitale Gewalt* (Deepfakes, Verbreitung intimer Bilder, Cyberstalking). Belegt und eng mit 908 verwandt, aber mit eigenen Quellen und eigenen Maßnahmen (Kinderschutz, Plattformrecht). Kandidaten für eine spätere Prüfung.
 
 ## Ebenen der übrigen Themen
 
@@ -190,3 +213,6 @@ Sicherheit (29. 9. 2026), von der KI im Original abgerufen:
 
 - 904: 265.942 Opfer häuslicher Gewalt 2024, 70,4 % weiblich, 64,3 % Partnerschaftsgewalt (BKA-Pressemitteilung vom 21. 11. 2025)
 - 905: „Nichtdeutsche Tatverdächtige sind bei der Gewaltkriminalität mit 42,9 Prozent weiterhin deutlich überrepräsentiert.“ (BKA-Pressemitteilung vom 20. 4. 2026)
+- 906: „Nach den Ergebnissen der Dunkelfeldstudie SKiD war bereits jede fünfte Person Opfer von Delikten aus dem Bereich der Cyberkriminalität.“ Betrug aus dem Ausland +7,0 %, Schaden 2,3 Mrd. Euro, +65,1 % (BKA-Pressemitteilung vom 20. 4. 2026)
+- 907: 85.837 Straftaten (+ ca. 2 %), „Höchststand seit Einführung der Statistik 2001“, 4.156 Gewalttaten (+ rund 1,2 %) (BKA-Pressemitteilung vom 9. 6. 2026)
+- 908: Vergewaltigung 2025 +9,0 %, seit 2018 +72 %; Anzeigequote bei Vergewaltigung und sexuellem Missbrauch 6,2 % (BKA-Pressemitteilung vom 20. 4. 2026)
