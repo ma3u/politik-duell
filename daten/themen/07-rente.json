@@ -26,5 +26,592 @@
       "ebene": "bund",
       "schlagwoerter": ["betriebsrente", "privat vorsorgen", "riester", "zusatzrente", "sparen", "kleiner betrieb"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6173,
+      "name": "Rentenniveau gesetzlich bei mindestens 48 Prozent halten",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine Haltelinie verhindert, dass die Renten wegen des steigenden Verhältnisses von Rentnern zu Beitragszahlenden hinter den Löhnen zurückfallen; das Missverhältnis bleibt, die Kosten steigen über Beiträge oder Steuerzuschüsse. Per Bundesgesetz umsetzbar, die dauerhafte Finanzierung ist offen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6174,
+      "name": "Anreize, über das Rentenalter hinaus zu arbeiten",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Weiterarbeit im Rentenalter bringt der Rentenversicherung etwas mehr Beiträge und Steuern; Studien erwarten nur kleine Beschäftigungseffekte, Steuerfreiheit kostet Einnahmen. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6175,
+      "name": "Pflicht zur Altersvorsorge für nicht abgesicherte Selbstständige",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Viele Solo-Selbstständige sorgen kaum vor und sind im Alter häufiger arm; eine Vorsorgepflicht setzt direkt an dieser Lücke an, wirkt aber erst über Jahrzehnte, und Pflichtbeiträge belasten Selbstständige mit geringem Einkommen. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6176,
+      "name": "Beamte, Abgeordnete und weitere Gruppen in die gesetzliche Rente einbeziehen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Einzahlende verbessern das Verhältnis zu den Rentnern zunächst, später entstehen aus den Beiträgen aber auch Ansprüche; für Beamte kostet der Übergang Bund und Länder anfangs viel Geld. Per Bundesgesetz möglich, mit langen Übergangszeiten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6177,
+      "name": "Betriebsrenten stärker fördern und für kleine Betriebe erleichtern",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an der geringen Verbreitung von Betriebsrenten an; mehr Förderung und weniger Haftungsrisiken haben die Verbreitung bisher aber nur langsam erhöht, vor allem in kleinen Betrieben und bei Geringverdienenden. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6178,
+      "name": "Geförderte private Vorsorge neu ordnen (kostengünstige Depots, gezielte Förderung)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kostengünstige, einfache Produkte und eine Förderung für kleine und mittlere Einkommen setzen an der Lücke bei der Zusatzvorsorge an; ob deutlich mehr Menschen vorsorgen, ist offen, solange die Teilnahme freiwillig bleibt. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6179,
+      "name": "Kapitalstock zur Stützung der gesetzlichen Rente",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Fonds kann den Beitragsanstieg dämpfen, wenn weniger Beitragszahlende auf mehr Rentner kommen; bei den vorgeschlagenen Größenordnungen ist der Effekt klein, die Erträge sind unsicher. Per Bundesgesetz umsetzbar, bei Kreditfinanzierung mit Haushaltsrisiken.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6180,
+      "name": "Grundrente ausbauen, niedrige Rentenansprüche aufwerten",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine stärkere Aufwertung niedriger Ansprüche setzt direkt an niedrigen Renten nach niedrigen Löhnen an; wer große Lücken im Erwerbsleben hat, profitiert oft nicht, die Kosten steigen. Per Bundesgesetz umsetzbar, die Finanzierung ist nicht geklärt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6181,
+      "name": "Mindestlohn auf mindestens 15 Euro anheben",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein höherer Mindestlohn erhöht die Rentenansprüche von Geringverdienenden; auch mit 15 Euro liegt die Rente nach Lücken im Erwerbsleben oft nahe der Grundsicherung. Per Bundesgesetz umsetzbar, bisher entscheidet die Mindestlohnkommission.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6182,
+      "name": "Nicht beitragsgedeckte Leistungen aus dem Bundeshaushalt finanzieren",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Verlagert Kosten von den Beitragszahlenden auf die Steuerzahlenden und entlastet die Beiträge; am Verhältnis von Beitragszahlenden zu Rentnern ändert es nichts. Es geht um zweistellige Milliardenbeträge im Jahr, deren Finanzierung offen ist.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6183,
+          "instrument": 6174,
+          "beschreibung": "Aktivrente: Arbeitslohn nach Erreichen der Regelaltersgrenze bis 2.000 Euro im Monat steuerfrei",
+          "ursachen_ids": [701],
+          "zitat": "Arbeiten im Alter machen wir mit einer Aktivrente attraktiv. Wer das gesetzliche Rentenalter erreicht und freiwillig weiterarbeitet, bekommt sein Gehalt bis zu 2.000 Euro im Monat steuerfrei.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6184,
+          "instrument": 6177,
+          "beschreibung": "Kleine und mittlere Arbeitgeber beim Abschluss von Betriebsrenten unterstützen",
+          "ursachen_ids": [703],
+          "zitat": "Dabei wollen wir insbesondere kleinere und mittlere Arbeitgeber bei Abschluss von Betriebsrenten unterstützen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6185,
+          "beschreibung": "Frühstart-Rente: 10 Euro im Monat vom 6. bis 18. Lebensjahr in ein kapitalgedecktes Altersvorsorgedepot",
+          "ursachen_ids": [703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "10 Euro im Monat ergeben bis zum Rentenalter nur einen kleinen Zusatzbetrag, und die Wirkung setzt erst in Jahrzehnten ein; das Depot kann aber den Einstieg in eigene Vorsorge erleichtern. Per Bundesgesetz umsetzbar, die Kosten sind überschaubar.",
+          "zitat": "Deshalb werden wir für jedes Kind vom 6. bis zum 18. Lebensjahr pro Monat 10 Euro in ein individuelles, kapitalgedecktes und privatwirtschaftlich organisiertes Altersvorsorgedepot einzahlen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=35",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6186,
+          "instrument": 6175,
+          "beschreibung": "Verbindliche Altersvorsorge für nicht ausreichend abgesicherte Selbstständige",
+          "ursachen_ids": [702],
+          "zitat": "Wir führen eine verbindliche Altersvorsorge für Selbständige ein, die nicht anderweitig ausreichend abgesichert sind.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6187,
+          "instrument": 6173,
+          "beschreibung": "Rentenniveau dauerhaft bei mindestens 48 Prozent sichern",
+          "ursachen_ids": [701],
+          "zitat": "Wir sorgen dafür, dass das Niveau der gesetzlichen Rentenversicherung dauerhaft bei mindestens 48 Prozent gesichert wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6188,
+          "instrument": 6174,
+          "beschreibung": "Weiterarbeit nach Rentenbeginn: Arbeitgeberbeiträge an die Beschäftigten auszahlen",
+          "ursachen_ids": [701],
+          "zitat": "Für alle, die das Rentenalter erreicht haben, soll der Arbeitgeberbeitrag zur Arbeitslosenversicherung und auch der Rentenversicherung direkt an die Beschäftigten ausgezahlt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6189,
+          "instrument": 6176,
+          "beschreibung": "Langfristig alle Erwerbstätigen in die gesetzliche Rente einbeziehen",
+          "ursachen_ids": [701],
+          "zitat": "Wir wollen mehr und langfristig alle Erwerbstätigen in die Solidarität der gesetzlichen Rentenversicherung einbeziehen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6190,
+          "instrument": 6175,
+          "beschreibung": "Zunächst alle Selbstständigen absichern",
+          "ursachen_ids": [702],
+          "zitat": "Wir wollen zunächst alle Selbstständigen absichern, die oft ein hohes Schutzbedürfnis haben.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6191,
+          "instrument": 6177,
+          "beschreibung": "Steuerliche Förderung der Betriebsrente für Geringverdiener ausbauen",
+          "ursachen_ids": [703],
+          "zitat": "Wir wollen eine attraktive betriebliche Altersvorsorge stärker fördern, die im Rahmen von Tarifverträgen ausgestaltet werden kann. […] Hierzu werden wir insbesondere die steuerliche Förderung der Betriebsrente für Geringverdiener ausbauen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6192,
+          "instrument": 6178,
+          "beschreibung": "Förderung privater Vorsorge nur für Produkte mit gedeckelten Kosten, konzentriert auf kleine und mittlere Einkommen",
+          "ursachen_ids": [703],
+          "zitat": "Staatliche Förderung für private Altersvorsorge wollen wir nur für solche neuen Altersvorsorgeprodukte zulassen, deren Kosten transparent und gedeckelt sind. Die staatliche Förderung soll differenziert ausgestaltet und auf kleine und mittlere Einkommensbezieher konzentriert werden",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6193,
+          "instrument": 6181,
+          "beschreibung": "Mindestlohn spätestens 2026 auf 15 Euro",
+          "ursachen_ids": [702],
+          "zitat": "Dementsprechend muss der Mindestlohn spätestens ab 2026 bei 15 Euro liegen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6194,
+          "instrument": 6173,
+          "beschreibung": "Rentenniveau bei mindestens 48 Prozent halten",
+          "ursachen_ids": [701],
+          "zitat": "Daher werden wir das gesetzliche Rentenniveau bei mindestens 48 Prozent halten und nachhaltig stabilisieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=97",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6195,
+          "instrument": 6180,
+          "beschreibung": "Grundrente zu einer Garantierente nach 30 Versicherungsjahren weiterentwickeln",
+          "ursachen_ids": [702],
+          "zitat": "Die Grundrente werden wir zu einer Garantierente nach 30 Versicherungsjahren weiterentwickeln, die deutlich mehr Menschen als bisher einbezieht und finanziell besserstellt.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=97",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6196,
+          "beschreibung": "Mehr Beitragszahlende durch höhere Erwerbstätigkeit von Frauen und qualifizierte Zuwanderung",
+          "ursachen_ids": [701],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Eine höhere Erwerbstätigkeit, vor allem von Frauen, und Zuwanderung in Arbeit gelten in Studien als wichtigste Hebel gegen das sinkende Verhältnis von Beitragszahlenden zu Rentnern; das Programm nennt aber keine Größenordnung. Kitaausbau und Integration brauchen Länder, Kommunen und Zeit.",
+          "zitat": "Deshalb fördern wir sozialversicherungspflichtige Beschäftigung und verbessern insbesondere die Erwerbsmöglichkeiten für Frauen durch gleiche Löhne, gute Kinderbetreuung […] Durch qualifizierte Zuwanderung und Integration in den Arbeitsmarkt stärken wir unsere Wirtschaftskraft und steigern die Beitragszahlungen in die Rente.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=97",
+          "evidenz": "belegt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6197,
+          "instrument": 6181,
+          "beschreibung": "Mindestlohn erneut anheben, Minijobs abbauen",
+          "ursachen_ids": [702],
+          "zitat": "Um die Renten zu stärken, werden wir auch erneut den Mindestlohn anheben und prekäre Beschäftigung, insbesondere Minijobs, abbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6198,
+          "instrument": 6176,
+          "beschreibung": "Gesetzliche Rente zur Bürgerversicherung: Abgeordnete und perspektivisch Beamte einbeziehen",
+          "ursachen_ids": [701],
+          "zitat": "Dafür sollen auch Abgeordnete in die gesetzliche Rente einzahlen […] Auch Beamt*innen sollen perspektivisch, unter Beibehaltung des Alimentationsprinzips, in die gesetzliche Rente einbezogen werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6199,
+          "instrument": 6175,
+          "beschreibung": "Nicht anderweitig abgesicherte Selbstständige einbeziehen",
+          "ursachen_ids": [702],
+          "zitat": "und auch nicht anderweitig abgesicherte Selbstständige wollen wir unter fairen Bedingungen einbeziehen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6200,
+          "instrument": 6174,
+          "beschreibung": "Weiterarbeit neben dem Rentenbezug: Arbeitgeberbeiträge an die Beschäftigten auszahlen",
+          "ursachen_ids": [701],
+          "zitat": "Dafür werden wir den Arbeitgeberbeitrag zur Arbeitslosen- und Rentenversicherung an die Arbeitnehmer*innen auszahlen, falls sie sich gegen freiwillige Beiträge in die Rentenversicherung entscheiden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6201,
+          "instrument": 6179,
+          "beschreibung": "Ergänzende Kapitaldeckung in der gesetzlichen Rente aus Bundesmitteln (Bürger*innenfonds)",
+          "ursachen_ids": [701],
+          "zitat": "Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung – und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6202,
+          "beschreibung": "Öffentlich verwalteter Bürger*innenfonds für die private Vorsorge mit Widerspruchslösung",
+          "ursachen_ids": [703],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Automatische Teilnahme mit Widerspruchsrecht hat in Großbritannien und Neuseeland die Beteiligung an Zusatzvorsorge stark erhöht; wie hoch die Zusatzrente wird, hängt von den Beiträgen ab. Der öffentliche Fonds muss erst aufgebaut werden.",
+          "zitat": "Sie sollen die Möglichkeit erhalten, zu sehr geringen Kosten in den öffentlich verwalteten Bürger*innenfonds zu investieren […] Wer nicht teilnehmen möchte, kann widersprechen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+          "evidenz": "belegt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6203,
+          "instrument": 6177,
+          "beschreibung": "Bürger*innenfonds auch für Betriebsrenten öffnen, vor allem für kleine und mittlere Unternehmen",
+          "ursachen_ids": [703],
+          "zitat": "Den Bürger*innenfonds öffnen wir als fairen und transparenten Weg auch für die betriebliche Altersversorgung, damit noch mehr Beschäftigte, insbesondere von kleinen und mittleren Unternehmen, von Betriebsrenten profitieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=99",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6204,
+          "beschreibung": "Flexibler Renteneintritt nach schwedischem Vorbild mit Zu- und Abschlägen",
+          "ursachen_ids": [701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein flexibler Renteneintritt mit fairen Zu- und Abschlägen kann längeres Arbeiten attraktiver machen; wie viele dadurch später in Rente gehen, ist unsicher, wer früher geht, bekommt weniger. Per Bundesgesetz umsetzbar.",
+          "zitat": "Die Menschen sollen nach schwedischem Vorbild künftig selbst entscheiden, wann der Ruhestand beginnt, sofern dann keine Sozialleistungen beantragt werden müssen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=21",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6205,
+          "instrument": 6179,
+          "beschreibung": "Gesetzliche Aktienrente: kleiner Teil der Rentenbeiträge in einen unabhängig verwalteten Fonds",
+          "ursachen_ids": [701],
+          "zitat": "Wir wollen, dass ebenfalls wie in Schweden ein kleiner Teil der Rentenbeiträge in einem unabhängig verwalteten Fonds angelegt wird",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6206,
+          "instrument": 6178,
+          "beschreibung": "Steuerlich gefördertes Altersvorsorgedepot für die private Vorsorge",
+          "ursachen_ids": [703],
+          "zitat": "Schließlich fordern wir Freie Demokraten die Einführung eines Altersvorsorgedepots für die private Altersvorsorge. Dieses Depot soll steuerlich gefördert sein",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6207,
+          "instrument": 6177,
+          "beschreibung": "Reine Beitragszusage allen Betrieben ermöglichen, vor allem Kleinstbetrieben",
+          "ursachen_ids": [703],
+          "zitat": "Wir wollen die reine Beitragszusage allen Betrieben ermöglichen, vor allem Kleinstbetrieben, die bisher vor Haftungsrisiken zurückschrecken.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6208,
+          "instrument": 6176,
+          "beschreibung": "Verbeamtung nur für Hoheitsaufgaben, Politiker in die gesetzliche Rente",
+          "ursachen_ids": [701],
+          "zitat": "Verbeamtungen nur noch für diejenigen vorsehen, die mit Hoheitsaufgaben betraut sind, so dass die große Mehrheit der Staatsbediensteten in die Rentenversicherung einzahlt",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=19",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6209,
+          "instrument": 6182,
+          "beschreibung": "Alle nicht beitragsgedeckten Leistungen aus dem Bundeshaushalt finanzieren",
+          "ursachen_ids": [701],
+          "zitat": "alle nicht beitragsgedeckten Leistungen mittelfristig aus dem Bundeshaushalt finanzieren",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=19",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6210,
+          "beschreibung": "Elternschaft in der Rente höher bewerten",
+          "ursachen_ids": [702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Höhere Rentenansprüche für Eltern gleichen Lücken im Erwerbsleben durch Kindererziehung teilweise aus; das Programm nennt weder Umfang noch Finanzierung. Per Bundesgesetz umsetzbar, zuletzt bei der Mütterrente mit hohen Kosten.",
+          "zitat": "die Elternschaft bei der Rente höher vergüten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=20",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6211,
+          "instrument": 6178,
+          "beschreibung": "Private und betriebliche Vorsorge mit Aktien, ETFs und Fonds systematisch steuerlich fördern",
+          "ursachen_ids": [703],
+          "zitat": "Die AfD setzt sich dafür ein, dass die individuelle private wie auch betriebliche Altersvorsorge bspw. mit Aktien, ETFs und herkömmlichen Fonds endlich systematisch steuerlich gefördert wird.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=20",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6212,
+          "beschreibung": "Junior-Spardepot: 100 Euro im Monat aus Steuermitteln bis zum 18. Lebensjahr für jedes Kind mit deutscher Staatsangehörigkeit",
+          "ursachen_ids": [703],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "100 Euro im Monat über 18 Jahre ergeben einen spürbaren Kapitalstock für das Alter; die Kosten von grob 15 Milliarden Euro im Jahr sind nicht gegenfinanziert, und die Beschränkung auf deutsche Kinder ist verfassungsrechtlich fraglich.",
+          "zitat": "Bis zum vollendeten 18. Lebensjahr sollen monatlich 100 Euro aus Steuermitteln in einen ETF-Sparplan oder Aktienfonds-Sparplan eingezahlt werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=20",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6213,
+          "instrument": 6174,
+          "beschreibung": "Zusätzlicher Steuerfreibetrag von 12.000 Euro für arbeitende Rentner",
+          "ursachen_ids": [701],
+          "zitat": "Schaffung von Arbeitsanreizen für Rentner durch einen zusätzlichen Steuergrundfreibetrag in Höhe von 12.000 €",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6214,
+          "beschreibung": "Mehr Erwerbsanreize durch niedrigere Einkommensteuern und ein weniger attraktives Bürgergeld",
+          "ursachen_ids": [701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Stärkere Arbeitsanreize können die Zahl der Beitragszahlenden etwas erhöhen; wie stark Steuersenkungen und Kürzungen beim Bürgergeld die Beschäftigung steigern, ist in der Forschung umstritten. Steuersenkungen sind nicht gegenfinanziert.",
+          "zitat": "Reduzierung von Fachkräftemangel durch höhere Erwerbsanreize, indem Einkommensteuern gesenkt werden und das Bürgergeld unattraktiver gemacht wird",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=21",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6215,
+          "beschreibung": "Willkommensprämie von 20.000 Euro für jedes neugeborene Kind",
+          "ursachen_ids": [701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Mehr Geburten würden das Verhältnis von Beitragszahlenden zu Rentnern erst nach rund zwei Jahrzehnten verbessern; ob Geldprämien die Geburtenrate dauerhaft erhöhen, ist umstritten. Die Kosten von rund 13 Milliarden Euro im Jahr sind nicht gegenfinanziert.",
+          "zitat": "eine Willkommensprämie von 20.000 € für neugeborene Babys",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=21",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6216,
+          "instrument": 6176,
+          "beschreibung": "Solidarische Erwerbstätigenversicherung für alle mit Erwerbseinkommen",
+          "ursachen_ids": [701],
+          "zitat": "Für ein gerechtes Rentensystem zahlen alle Menschen mit Erwerbseinkommen – auch Beamt*innen, Selbstständige, Freiberufler*innen, Manager*innen und Abgeordnete – in eine solidarische Erwerbstätigenversicherung ein",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6217,
+          "beschreibung": "Rentenniveau auf 53 Prozent anheben",
+          "ursachen_ids": [701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ein höheres Rentenniveau erhöht die Renten aller, gleicht aber nur die Folgen des steigenden Verhältnisses von Rentnern zu Beitragszahlenden aus; die Mehrkosten von jährlich deutlich über 30 Milliarden Euro sind nicht geklärt.",
+          "zitat": "Wir wollen das Rentenniveau wieder auf 53 Prozent anheben",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6218,
+          "instrument": 6180,
+          "beschreibung": "Niedrige Rentenansprüche von Geringverdienenden, Erwerbslosen, Erziehenden und Pflegenden aufwerten",
+          "ursachen_ids": [702],
+          "zitat": "Die niedrigen Rentenansprüche von Niedrig- und Geringverdienenden, Erwerbslosen, Erziehenden und Pflegenden wollen wir aufwerten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6219,
+          "instrument": 6182,
+          "beschreibung": "Versicherungsfremde Leistungen nicht mehr aus Beiträgen finanzieren",
+          "ursachen_ids": [701],
+          "zitat": "Dass die Beitragszahler*innen versicherungsfremde Leistungen wie z. B. die Anerkennung von Kindererziehungszeiten (bekannt als „Mütterrente“) und die Grundrente finanzieren, muss beendet werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6220,
+          "beschreibung": "Solidarische Mindestrente bis zur Armutsrisikogrenze (rund 1.400 Euro)",
+          "ursachen_ids": [702],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ein Zuschlag bis zur Armutsrisikogrenze beseitigt Altersarmut nach niedrigen Löhnen und Lücken direkt, setzt aber nicht an den Löhnen selbst an und kann den Anreiz zu eigener Vorsorge schwächen. Die Kosten wären hoch, die Finanzierung ist offen.",
+          "zitat": "Gegen Altersarmut hilft unsere „solidarische Mindestrente“: für diejenigen, die wegen schlechter Jobs, erzwungener Teilzeit oder Erwerbslosigkeit keine auskömmliche Rente bekommen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6221,
+          "beschreibung": "Betriebsrenten mindestens zur Hälfte durch die Arbeitgeber finanzieren",
+          "ursachen_ids": [703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein Pflichtanteil der Arbeitgeber erhöht die Leistungen bestehender Betriebsrenten, bringt aber nicht mehr Betriebe dazu, überhaupt eine anzubieten, und könnte kleine Betriebe eher abschrecken. Per Bundesgesetz umsetzbar.",
+          "zitat": "Ergänzend gibt es Betriebsrenten, die mindestens zu 50 Prozent von den Arbeitgebern finanziert sein müssen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6222,
+          "instrument": 6181,
+          "beschreibung": "Mindestlohn von mindestens 15 Euro, ab 2026 16 Euro",
+          "ursachen_ids": [702],
+          "zitat": "Mit einem Mindestlohn von mindestens 15 Euro – spätestens ab 2026 16 Euro –",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
