@@ -92,7 +92,8 @@ describe('Datenbank', () => {
     const ebene = await pruef.query<{ ebene: string }>('select ebene from ursachen where id = 401')
     expect(ebene.rows).toEqual([{ ebene: 'land' }])
     await pruef.close()
-  })
+    // Frische Datenbank plus echter Seed – wächst mit dem Datenkatalog.
+  }, 30_000)
 
   it('Abdeckung: je Thema, Partei und Programm höchstens ein Eintrag', async () => {
     await db.exec(`insert into laender (id, name, letzte_wahl) values ('ST', 'Sachsen-Anhalt', '2026-09-06')`)
