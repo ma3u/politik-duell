@@ -12,7 +12,12 @@
       "kurzname": "Union",
       "farbe": "#8a96a3",
       "programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf",
-      "programm_stand": "2024-12-17"
+      "programm_stand": "2024-12-17",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf", "stand": "2026-06-13" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf", "stand": "2026-06-05" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf", "stand": "2026-06-09" }
+      ]
     },
     {
       "id": 12,
@@ -20,7 +25,12 @@
       "kurzname": "SPD",
       "farbe": "#f0605d",
       "programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf",
-      "programm_stand": "2025-01-11"
+      "programm_stand": "2025-01-11",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf", "stand": "2026-03-21" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf", "stand": "2026-06-13" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf", "stand": "2026-05-09" }
+      ]
     },
     {
       "id": 13,
@@ -28,7 +38,11 @@
       "kurzname": "Grüne",
       "farbe": "#6fbf4a",
       "programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf",
-      "programm_stand": "2025-01-26"
+      "programm_stand": "2025-01-26",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf", "stand": "2026-05-09" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf", "stand": "2026-02-15" }
+      ]
     },
     {
       "id": 14,
@@ -36,7 +50,12 @@
       "kurzname": "FDP",
       "farbe": "#ffe74d",
       "programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf",
-      "programm_stand": "2025-02-09"
+      "programm_stand": "2025-02-09",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf", "stand": "2026-04-25" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf", "stand": "2026-03-22" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf", "stand": "2026-07-17" }
+      ]
     },
     {
       "id": 15,
@@ -44,7 +63,12 @@
       "kurzname": "AfD",
       "farbe": "#4fb8e8",
       "programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
-      "programm_stand": "2025-01-12"
+      "programm_stand": "2025-01-12",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf", "stand": "2026-04-11" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf", "stand": "2026-05-30" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf", "stand": "2026-05-30" }
+      ]
     },
     {
       "id": 16,
@@ -52,7 +76,10 @@
       "kurzname": "Linke",
       "farbe": "#e0659b",
       "programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf",
-      "programm_stand": "2025-01-18"
+      "programm_stand": "2025-01-18",
+      "landesprogramme": [
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf", "stand": "2026-05-30" }
+      ]
     },
     {
       "id": 17,
@@ -60,7 +87,12 @@
       "kurzname": "BSW",
       "farbe": "#b784c9",
       "programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf",
-      "programm_stand": "2025-01-12"
+      "programm_stand": "2025-01-12",
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf", "stand": "2026-03-07" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf", "stand": "2026-03-14" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf", "stand": "2026-04-25" }
+      ]
     }
   ]
 }
