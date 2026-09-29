@@ -474,6 +474,44 @@
       ]
     },
     {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6444,
+          "instrument": 6280,
+          "beschreibung": "Sichtbare Polizeipräsenz auf Straßen und Plätzen mit ausreichend Personal",
+          "ursachen_ids": [901],
+          "zitat": "Sichtbare Polizeipräsenz auf Straßen und öffentlichen Plätzen ist wichtig für das Sicherheitsgefühl und zur Vorbeugung von Straftaten. Dafür braucht es ausreichend Personal.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6445,
+          "instrument": 6281,
+          "beschreibung": "Deutlich mehr Personal in den Justizbehörden",
+          "ursachen_ids": [902],
+          "zitat": "Wir wollen deutlich mehr Personal in den Justizbehörden und eine Reduzierung der Verfahrenszahlen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6446,
+          "instrument": 6283,
+          "beschreibung": "Verfahrenszahlen durch Reformen im Strafrecht senken",
+          "ursachen_ids": [902],
+          "zitat": "Dies erreichen wir durch sinnvolle Reformen, besonders im Bereich des Strafrechts.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
       "partei_id": 11,
       "land": "ST",
       "landtagswahl": "2026-09-06",

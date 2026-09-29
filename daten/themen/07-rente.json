@@ -612,6 +612,72 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6435,
+          "instrument": 6176,
+          "beschreibung": "Alle Erwerbstätigen, auch Abgeordnete und Minister, zahlen in die gesetzliche Rente ein",
+          "ursachen_ids": [701],
+          "zitat": "Wie in Österreich sollten auch bei uns alle Erwerbstätigen, auch alle Bundestagsabgeordneten und Bundesminister, verpflichtend in die gesetzliche Rente einzahlen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6436,
+          "instrument": 6175,
+          "beschreibung": "Alle Selbstständigen in die Sozialversicherungen einbeziehen",
+          "ursachen_ids": [702],
+          "zitat": "Wir fordern, alle Erwerbstätigen und ihre Arbeitseinkommen und damit auch alle Selbstständigen in die Sozialversicherungen einzubeziehen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6437,
+          "instrument": 6181,
+          "beschreibung": "Mindestlohn sofort auf 15 Euro anheben",
+          "ursachen_ids": [702],
+          "zitat": "Wir wollen den gesetzlichen Mindestlohn unverzüglich auf 15 Euro anheben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6438,
+          "beschreibung": "Mindestrente von 1.500 Euro nach 40 Versicherungsjahren, gestaffelt nach Versicherungsjahren",
+          "ursachen_ids": [702],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Eine Mindestrente hebt niedrige Renten nach langen Versicherungszeiten direkt an; wer große Lücken im Erwerbsleben hat, erreicht die Stufen oft nicht. Die Kosten wären hoch, die Finanzierung nennt das Programm nicht.",
+          "zitat": "Wir fordern eine Mindestrente von 1500 Euro nach 40 Versicherungsjahren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=22",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6439,
+          "beschreibung": "Leistungsniveau von mindestens 75 Prozent des früheren Nettoeinkommens",
+          "ursachen_ids": [701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ein deutlich höheres Leistungsniveau erhöht die Renten aller, gleicht aber nur die Folgen des steigenden Verhältnisses von Rentnern zu Beitragszahlenden aus; die Mehrkosten wären sehr hoch und sind nicht geklärt.",
+          "zitat": "Das durchschnittliche Leistungsniveau sollte bei mindestens 75 Prozent des im Arbeitsleben erzielten Nettoeinkommens liegen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=23",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

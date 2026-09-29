@@ -664,6 +664,61 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6440,
+          "beschreibung": "Pflegevollversicherung, überwiegend aus Steuermitteln finanziert",
+          "ursachen_ids": [1002],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 1,
+          "begruendung": "Eine Vollversicherung beseitigt die pflegebedingten Eigenanteile vollständig; Unterkunft und Verpflegung bleiben. Die Mehrkosten liegen bei deutlich über 10 Milliarden Euro im Jahr, eine Finanzierung überwiegend aus Steuern ist offen.",
+          "zitat": "Deshalb fordern wir eine Pflegevollversicherung, die überwiegend aus Steuermitteln finanziert wird.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "evidenz": "belegt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6441,
+          "instrument": 6235,
+          "beschreibung": "Mehr Pflegepersonal ausbilden",
+          "ursachen_ids": [1001],
+          "zitat": "mehr Pflegepersonal ausbilden und eine bessere Bezahlung",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6442,
+          "instrument": 6233,
+          "beschreibung": "Bessere Bezahlung in der Pflege",
+          "ursachen_ids": [1001],
+          "zitat": "mehr Pflegepersonal ausbilden und eine bessere Bezahlung",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6443,
+          "beschreibung": "Pflegegeld deutlich erhöhen, orientiert an der Bezahlung professioneller Pflegekräfte",
+          "ursachen_ids": [1004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ein höheres Pflegegeld erkennt die Arbeit pflegender Angehöriger an und entlastet sie finanziell, verringert aber nicht ihre zeitliche und körperliche Belastung. Eine Orientierung am Lohn von Pflegekräften würde ein Vielfaches kosten, die Finanzierung ist offen.",
+          "zitat": "So muss sich das Pflegegeld deutlich erhöhen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=33",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }
