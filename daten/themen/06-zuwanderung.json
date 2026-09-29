@@ -160,6 +160,86 @@
       "umsetzbarkeit": 2,
       "begruendung": "Mehr Personal und gestraffte Verfahren setzen direkt an der Verfahrensdauer an; beim Bundesamt hat Personalaufbau Rückstände schon abgebaut. Das Bundesamt und das Asylprozessrecht regelt der Bund, das Personal der Verwaltungsgerichte stellen die Länder.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 6113,
+      "name": "Bezahlkarte oder Sachleistungen für Asylsuchende (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bezahlkarte und Sachleistungen sollen Anreize senken und Auszahlungen vereinfachen; eine Wirkung auf die Zahl der Neuankommenden ist nicht belegt, an Unterkünften und Ausländerbehörden ändert sich nichts. Die Länder können sie im Rahmen des Asylbewerberleistungsgesetzes selbst einführen.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6114,
+      "name": "Asylsuchende zentral in Landes- oder Großunterkünften unterbringen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zentrale Unterbringung, etwa bis zum Asylbescheid, entlastet die Kommunen, verlagert den Bedarf an Plätzen aber auf das Land; ob Verfahren und Rückführungen dadurch schneller werden, ist kaum untersucht. Das Land schafft die Plätze, die Wohnpflicht regelt der Bund.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6115,
+      "name": "Ausländerbehörden personell und digital stärken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an der Überlastung der Ausländerbehörden an; wie viel schneller die Verfahren werden, hängt von Stellen und Digitalisierung ab und ist wenig untersucht. Das Land kann Personal und Digitalisierung mitfinanzieren, braucht dafür aber Geld und Fachkräfte.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6116,
+      "name": "Kommunen und Bezirke für die Aufnahme finanziell stärker ausstatten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Landesgeld, etwa als Pauschale je Platz oder Person, setzt an der Kapazitätsseite an; Geld allein schafft aber nicht sofort Unterkünfte, Kitaplätze oder Personal, und die Programme nennen meist keinen Umfang. Umsetzbar über den Landeshaushalt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6117,
+      "name": "Auf Bundes- und EU-Ebene auf weniger Zugang dringen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Grenzkontrollen, Zurückweisungen, Familiennachzug oder Asylverfahren an den EU-Außengrenzen kann ein Land nicht selbst regeln, sondern nur über den Bundesrat oder beim Bund darauf hinwirken; die Wirkung solcher Maßnahmen auf die Zugangszahlen ist zudem umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6118,
+      "name": "Geflüchtete dezentral in Wohnungen unterbringen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Wohnungen statt Sammelunterkünften erleichtern das Ankommen und können günstiger sein; zusätzliche Plätze entstehen aber nur, wo Wohnungen frei sind, in angespannten Wohnungsmärkten konkurriert der Bedarf mit anderen Wohnungssuchenden. Das Land kann es über Aufnahmegesetz und Förderung steuern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6119,
+      "name": "Verteilung im Land an der Aufnahmefähigkeit der Kommunen ausrichten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verteilung nach Leistungsfähigkeit oder Zuzugssperren für überlastete Orte (§ 12a Aufenthaltsgesetz) entlasten einzelne Kommunen, verschieben den Bedarf aber nur im Land; Wohnsitzauflagen können laut Studien die Arbeitsaufnahme verzögern. Das Land kann es selbst regeln.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6120,
+      "name": "Aufnahmestopp des Landes",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 0,
+      "begruendung": "Ein Aufnahmestopp würde das Land entlasten, den Bedarf aber auf andere Länder verschieben. Die Länder sind nach dem Asylgesetz verpflichtet, die ihnen zugewiesenen Asylsuchenden aufzunehmen; ein einseitiger Stopp ist rechtlich derzeit nicht umsetzbar.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6121,
+      "name": "Mehr Unterbringungsplätze verbindlich schaffen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbindliche Vorgaben für Standorte und die Nutzung leer stehender Gebäude setzen direkt an fehlenden Unterkünften an; Planung und Umbau dauern aber, und gegen einzelne Standorte gibt es oft Widerstand vor Ort. Umsetzbar über Landesrecht und Landeshaushalt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6122,
+      "name": "Vom Bund die volle Übernahme der Unterbringungskosten fordern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Eine volle Kostenübernahme durch den Bund würde Länder und Kommunen finanziell entlasten, schafft aber nicht sofort Plätze; ein Land kann sie nur fordern, entscheiden müssen Bundesregierung und Bundestag.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -843,6 +923,710 @@
           "ursachen_ids": [601, 605],
           "zitat": "Asylverfahren sollten nach Möglichkeit außerhalb der EU in sicheren Drittstaaten stattfinden.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=38",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6123,
+          "instrument": 6113,
+          "beschreibung": "Bezahlkarte für Asylsuchende dauerhaft beibehalten und weiterentwickeln",
+          "ursachen_ids": [601],
+          "zitat": "Leistungsfähige Ausländerbehörden, beschleunigte Verfahren, eine zentrale Erstaufnahme und wirksame Instrumente wie die Bezahlkarte sichern wir dauerhaft ab und entwickeln sie gezielt weiter.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=8",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6124,
+          "instrument": 6114,
+          "beschreibung": "Zentrale Erstaufnahme dauerhaft absichern",
+          "ursachen_ids": [601],
+          "zitat": "Leistungsfähige Ausländerbehörden, beschleunigte Verfahren, eine zentrale Erstaufnahme und wirksame Instrumente wie die Bezahlkarte sichern wir dauerhaft ab und entwickeln sie gezielt weiter.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=8",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6125,
+          "instrument": 6115,
+          "beschreibung": "Leistungsfähige Ausländerbehörden absichern und weiterentwickeln",
+          "ursachen_ids": [601],
+          "zitat": "Leistungsfähige Ausländerbehörden, beschleunigte Verfahren, eine zentrale Erstaufnahme und wirksame Instrumente wie die Bezahlkarte sichern wir dauerhaft ab und entwickeln sie gezielt weiter.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=8",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6126,
+          "instrument": 6117,
+          "beschreibung": "Auf Bundesebene: Asylverfahren an den EU-Außengrenzen, Aufnahmeprogramme beenden, Familiennachzug zu subsidiär Schutzberechtigten weiter aussetzen",
+          "ursachen_ids": [601],
+          "zitat": "Asylverfahren sollen möglichst bereits an den Außengrenzen der Europäischen Union durchgeführt werden. Zugleich sollen freiwillige Aufnahmeprogramme beendet und der Familiennachzug für subsidiär Schutzberechtigte weiterhin ausgesetzt bleiben.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=8",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6127,
+          "instrument": 6116,
+          "beschreibung": "Kommunen für die Erstintegration ausstatten",
+          "ursachen_ids": [601],
+          "zitat": "Kommunen sind zentrale Orte des Ankommens. Sie müssen so ausgestattet sein, dass Erstintegration gut gelingt und Zusammenleben reibungslos gestaltet werden kann.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=11",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6128,
+          "instrument": 6115,
+          "beschreibung": "Ausländerbehörden besser ausstatten und zu Migrationszentren weiterentwickeln",
+          "ursachen_ids": [601],
+          "zitat": "Wir werden die Ausländerbehörden im Land besser ausstatten und zu Migrationszentren konzeptionell weiterentwickeln.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=78",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6129,
+          "instrument": 6118,
+          "beschreibung": "Geflüchtete zügig in private Wohnungen vermitteln",
+          "ursachen_ids": [601],
+          "zitat": "Wo immer möglich, wollen wir zügig in private Wohnungen vermitteln.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=78",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6130,
+          "instrument": 6115,
+          "beschreibung": "Ausländerbehörden bei der Digitalisierung unterstützen; Arbeitserlaubnis binnen vier Wochen",
+          "ursachen_ids": [601],
+          "zitat": "wollen wir die Ausländerbehörden in den Landkreisen und kreisfreien Städten bei der Umsetzung von Digitalisierungsvorhaben unterstützen. Ziel ist es, dass Aufenthaltstitel, die zur Aufnahme einer Beschäftigung berechtigen, innerhalb von vier Wochen erteilt werden.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=10",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6131,
+          "instrument": 6117,
+          "beschreibung": "Über den Bundesrat stärkere Grenzkontrollen und Zurückweisungen durchsetzen",
+          "ursachen_ids": [601],
+          "zitat": "Eine AfD-geführte Landesregierung wird sich im Bundesrat dafür einsetzen, dass die Kontrollen an den deutschen Grenzen massiv verstärkt und illegale Zuwanderer ohne Asylantragsrecht ausnahmslos zurückgewiesen werden.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6132,
+          "instrument": 6120,
+          "beschreibung": "Aufnahme von Personen verweigern, die aus einem sicheren Drittstaat eingereist sind",
+          "ursachen_ids": [601],
+          "zitat": "Eine AfD-geführte Landesregierung wird die Aufnahme von Personen in Sachsen-Anhalt verweigern, die illegal aus einem sicheren Drittland nach Deutschland eingereist sind.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=27",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6133,
+          "instrument": 6120,
+          "beschreibung": "Aufnahmestopp des Landes als Ultima Ratio",
+          "ursachen_ids": [601],
+          "zitat": "Im akuten Notfall wird eine AfD-geführte Landesregierung zur Abwendung einer institutionellen Notlage als Ultima Ratio einen Aufnahmestopp für das Land verhängen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=31",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6134,
+          "instrument": 6119,
+          "beschreibung": "Zuzugsstopps für überforderte Kommunen verhängen (negative Wohnsitzauflage)",
+          "ursachen_ids": [601],
+          "zitat": "Eine AfD-geführte Landesregierung wird Anträge überforderter Städte und Kommunen prüfen und nach einem positiven Befund Zuzugsstopps für „Flüchtlinge“ verhängen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=30",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6135,
+          "instrument": 6114,
+          "beschreibung": "Asylbewerber in zentralen Unterkünften unterbringen",
+          "ursachen_ids": [601],
+          "zitat": "Eine AfD-geführte Landesregierung wird Asylanten in zentralen Unterkünften einquartieren.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=33",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6136,
+          "instrument": 6113,
+          "beschreibung": "Sachleistungsprinzip konsequent anwenden",
+          "ursachen_ids": [601],
+          "zitat": "Eine AfD-geführte Landesregierung wird das Sachleistungsprinzip im Einklang mit dem Asylbewerberleistungsgesetz konsequent anwenden, um finanzielle Fehlanreize für illegale Zuwanderer zu unterbinden.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6137,
+          "instrument": 6116,
+          "beschreibung": "Aufnahmegesetz reformieren; Integrationsbudget mit Mitteln für die Kommunen",
+          "ursachen_ids": [601],
+          "zitat": "Dazu werden wir das Aufnahmegesetz reformieren und […] ein Integrationsbudget auflegen, aus welchem unbürokratisch Mittel für Kommunen zur besseren Integration ausgereicht werden",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=97",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6138,
+          "instrument": 6122,
+          "beschreibung": "Unterbringungskosten der Kommunen durch den Bund übernehmen lassen",
+          "ursachen_ids": [601],
+          "zitat": "Um die Kosten für die Unterbringung für die Kommunen zu verringern, ist die Übernahme durch den Bund erforderlich.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=65",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6139,
+          "instrument": 6113,
+          "beschreibung": "Missbrauch der Bezahlkarte beenden",
+          "ursachen_ids": [601],
+          "zitat": "Außerdem werden wir den Missbrauch der Bezahlkarte in Abstimmung mit dem Bund … konsequent beenden.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=37",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 13. 6. 2026) durchsucht, Kapitel „Asyl und Migration mit Humanität und klaren Regeln“ (S. 60–61) und Stichwörter Unterbringung, Unterkunft, Ausländerbehörde, Erstaufnahme, Bezahlkarte: Das Programm würdigt die Kommunen, die Geflüchtete unterbringen, nennt aber keine Maßnahme zu Unterbringungsplätzen, Ausländerbehörden oder zur Zahl der Neuankommenden (Ursache 601).",
+        "stand": "2026-09-29",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6140,
+          "instrument": 6118,
+          "beschreibung": "Gemeinschaftsunterkünfte reduzieren, dezentrales Wohnen stärken",
+          "ursachen_ids": [601],
+          "zitat": "die Unterbringung von Geflüchteten menschenwürdig reformieren, indem wir Gemeinschaftsunterkünfte reduzieren, dezentrales Wohnen stärken",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=92",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6141,
+          "instrument": 6114,
+          "beschreibung": "Menschen ohne Bleibeperspektive in den Erstaufnahmeeinrichtungen belassen",
+          "ursachen_ids": [601],
+          "zitat": "Menschen ohne Bleibeperspektive in den Erstaufnahmeeinrichtungen belassen und die direkte Rückführung von dort sicherstellen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=144",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6142,
+          "instrument": 6113,
+          "beschreibung": "Landesweit einheitliche Bezahlkarte umsetzen und beibehalten",
+          "ursachen_ids": [601],
+          "zitat": "Daher muss das landesweit einheitliches Bezahlkartensystem konsequent umgesetzt und beibehalten werden.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=143",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6143,
+          "instrument": 6115,
+          "beschreibung": "Ausländerbehörden personell und organisatorisch stärken",
+          "ursachen_ids": [601],
+          "zitat": "Ausländerbehörden personell und organisatorisch stärken, damit Verfahren schneller abgeschlossen werden können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=144",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6144,
+          "instrument": 6120,
+          "beschreibung": "Landesweiten Aufnahmestopp als Option",
+          "ursachen_ids": [601],
+          "zitat": "Hierzu gehört explizit die Option, einen landesweiten Aufnahmestopp zum Schutze unserer Bürger auszurufen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=48",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6145,
+          "instrument": 6117,
+          "beschreibung": "Den Bund zu echtem Grenzschutz drängen",
+          "ursachen_ids": [601],
+          "zitat": "In Regierungsverantwortung werden wir alle rechtlichen und politischen Mittel ausschöpfen, um den Bund für einen echten Grenzschutz in die Pflicht zu nehmen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=48",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6146,
+          "instrument": 6114,
+          "beschreibung": "Asylbewerber in wenigen großen Unterkünften unterbringen",
+          "ursachen_ids": [601],
+          "zitat": "Wir streben die Unterbringung in wenigen großen Unterkünften an.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=49",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6147,
+          "instrument": 6113,
+          "beschreibung": "Sachleistungsprinzip maximal ausweiten",
+          "ursachen_ids": [601],
+          "zitat": "Zur Beendigung falscher finanzieller Migrationsanreize fordern wir die maximale Ausweitung des Sachleistungsprinzips",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=52",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6148,
+          "instrument": 6118,
+          "beschreibung": "Dezentrale Unterbringung priorisieren; Kommunen bei der Wohnraumversorgung Geflüchteter unterstützen",
+          "ursachen_ids": [601],
+          "zitat": "Die Dezentrale Unterbringung von Geflüchteten priorisieren […] Kommunen bei der Wohnraumversorgung Geflüchteter unterstützen",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=13",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6149,
+          "instrument": 6119,
+          "beschreibung": "Geflüchtete nach der tatsächlichen Leistungsfähigkeit der Kommunen verteilen",
+          "ursachen_ids": [601],
+          "zitat": "Gerechte Verteilung von Geflüchteten nach der tatsächlichen Leistungsfähigkeit von Kommunen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=74",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6150,
+          "instrument": 6116,
+          "beschreibung": "Unterbringung verlässlich durch Land und Bund finanzieren",
+          "ursachen_ids": [601],
+          "zitat": "Verlässliche Finanzierung von Unterbringung, Betreuung und",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=74",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6151,
+          "instrument": 6117,
+          "beschreibung": "Asylverfahren an den EU-Außengrenzen oder in sicheren Drittstaaten unterstützen",
+          "ursachen_ids": [601],
+          "zitat": "Wir unterstützen Asylverfahren an EU-Außengrenzen oder in sicheren",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=73",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6152,
+          "instrument": 6114,
+          "beschreibung": "Asylbewerber vom ersten Tag bis zur Entscheidung über den Asylantrag in zentralen Einrichtungen unterbringen",
+          "ursachen_ids": [601],
+          "zitat": "Asylbewerber und illegal Eingereiste sollen deshalb vom ersten Tag bis zur Entscheidung über ihren Asylantrag in zentralen Einrichtungen untergebracht werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6153,
+          "instrument": 6113,
+          "beschreibung": "Bezahlkarte dauerhaft etablieren",
+          "ursachen_ids": [601],
+          "zitat": "Wir stehen zur Einführung der Bezahlkarte und wollen diese dauerhaft etablieren.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=25",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6154,
+          "instrument": 6118,
+          "beschreibung": "Weg von Notunterkünften: dezentrales Wohnen, Geflüchtetenwohnen ausbauen, alle Bezirke beteiligen",
+          "ursachen_ids": [601],
+          "zitat": "Wir wollen stattdessen menschenwürdiges, dezentrales Wohnen. Hierbei müssen alle Bezirke einen gerechten Beitrag leisten. Danach bauen wir Gemeinschaftsunterkünfte schrittweise ab. Gleichzeitig bauen wir das Geflüchtetenwohnen aus.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=52",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6155,
+          "instrument": 6116,
+          "beschreibung": "Gemeinschaftspauschale je Geflüchteten und Bezirk stärken",
+          "ursachen_ids": [601],
+          "zitat": "Deshalb stärken wir die Gemeinschaftspauschale pro Geflüchteten und Bezirk.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=52",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6156,
+          "instrument": 6118,
+          "beschreibung": "Unterbringung vorrangig in Wohnungen und kleineren Gemeinschaftsunterkünften in allen Bezirken",
+          "ursachen_ids": [601],
+          "zitat": "In der Neuaufstellung der Unterbringung setzen wir in erster Linie auf Wohnungen und kleinere Gemeinschaftsunterkünfte in allen Bezirken.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=145",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6157,
+          "instrument": 6116,
+          "beschreibung": "Jährliche Pauschale je Unterbringungsplatz für die Bezirke",
+          "ursachen_ids": [601],
+          "zitat": "Dabei setzen wir auf dezentrale Einrichtungen, die Integration in den Sozialraum ermöglichen. Die Bezirke sollen hierfür eine jährliche Pauschale pro Unterbringungsplatz erhalten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6158,
+          "instrument": 6121,
+          "beschreibung": "Senatskommission Unterbringung soll neue Standorte zügig festlegen",
+          "ursachen_ids": [601],
+          "zitat": "Die Senatskommission Unterbringung soll sicherstellen, dass neue Standorte zügig identifiziert und beschlossen werden",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=146",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6159,
+          "instrument": 6115,
+          "beschreibung": "Landesamt für Einwanderung stärken, digitales Antragssystem für alle Aufenthaltstitel",
+          "ursachen_ids": [601],
+          "zitat": "Dazu etablieren wir ein digitales Antragssystem für alle Aufenthaltstitel und deren Verlängerung. Das LEA wird gestärkt, um eine zügige, rechtskonforme und transparente Bearbeitung der Anträge sicherzustellen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=146",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6160,
+          "instrument": 6113,
+          "beschreibung": "Bezahlkarte für Geflüchtete sofort einführen",
+          "ursachen_ids": [601],
+          "zitat": "Berlin führt – als letztes Bundesland – unverzüglich die Bezahlkarte für Geflüchtete ein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=96",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6161,
+          "instrument": 6118,
+          "beschreibung": "Bei guter Bleibeprognose dezentrale Unterbringung in Wohnungen („Leverkusener Modell“)",
+          "ursachen_ids": [601],
+          "zitat": "Bei guter Bleibeprognose durch das Bundesamt für Migration und Flüchtlinge ist mittelfristig eine dezentrale Unterbringung in Wohnungen anzustreben",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=96",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6162,
+          "instrument": 6120,
+          "beschreibung": "Sofortiger Aufnahmestopp für Asylbewerber in Berlin",
+          "ursachen_ids": [601],
+          "zitat": "Einen sofortigen Aufnahmestopp für Asylbewerber in Berlin.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=22",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6163,
+          "instrument": 6113,
+          "beschreibung": "Umstellung auf reine Sachleistungen",
+          "ursachen_ids": [601],
+          "zitat": "Die Umstellung auf reine Sachleistungen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6164,
+          "instrument": 6114,
+          "beschreibung": "Freie Plätze in bestehenden Unterkünften voll belegen; zentrale Unterbringung von Personen mit geringen Anerkennungschancen",
+          "ursachen_ids": [601],
+          "zitat": "Freie Plätze in bestehenden Unterkünften vollständig zu belegen. […] Die zentrale Unterbringung von abgelehnten Asylbewerbern und Personen mit geringen Anerkennungschancen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=23",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6165,
+          "instrument": 6121,
+          "beschreibung": "Bezirke verpflichten, Flächen für Gemeinschaftsunterkünfte bereitzustellen; leer stehende Gebäude aktivieren",
+          "ursachen_ids": [601],
+          "zitat": "Jeder Bezirk wird zudem verpflichtet, Grundstücke oder Immobilien für Gemeinschaftsunterkünfte zur Verfügung zu stellen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=283",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6166,
+          "instrument": 6118,
+          "beschreibung": "Mehr Geflüchtete über Kooperationsverträge mit landeseigenen Wohnungsbaugesellschaften in eigenen Wohnraum vermitteln",
+          "ursachen_ids": [601],
+          "zitat": "Außerdem wollen wir durch Kooperationsverträge zwischen landeseigenen Wohnungsbaugesellschaften, dem Land und den Bezirken mehr Menschen aus Geflüchtetenunterkünften in eigenen Wohnraum vermitteln.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=283",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6167,
+          "instrument": 6116,
+          "beschreibung": "Infrastrukturprämien für die Bezirke je untergebrachter Person",
+          "ursachen_ids": [601],
+          "zitat": "Infrastrukturprämien für die Bezirke pro untergebrachter Person",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=283",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6168,
+          "instrument": 6122,
+          "beschreibung": "Vom Bund eine Personenpauschale für die Unterbringungskosten fordern",
+          "ursachen_ids": [601],
+          "zitat": "Außerdem fordern wir vom Bund eine Personenpauschale, um die Unterbringungskosten abzudecken",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=285",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6169,
+          "instrument": 6117,
+          "beschreibung": "Grenzkontrollen und Zurückweisungen an den deutschen Grenzen unterstützen",
+          "ursachen_ids": [601],
+          "zitat": "Wir unterstützen Grenzkontrollen an allen deutschen Grenzen und die Zurückweisung an der Grenze, solange kein EU-weites Rückführungsabkommen existiert",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6170,
+          "beschreibung": "Asylbewerber stärker auf die umliegenden Bundesländer verteilen",
+          "ursachen_ids": [601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Eine andere Verteilung zwischen den Ländern würde Berlin entlasten, verschiebt den Bedarf aber nur; den Verteilschlüssel (Königsteiner Schlüssel) legen Bund und Länder gemeinsam fest, Berlin kann ihn nicht allein ändern.",
+          "zitat": "Asylbewerber müssen auch auf Unterkünfte in den anliegenden Bundesländern verteilt werden, die weit mehr Kapazitäten haben.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=35",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6171,
+          "instrument": 6119,
+          "beschreibung": "Bezirke, die bisher am meisten geleistet haben, bei der Verteilung entlasten",
+          "ursachen_ids": [601],
+          "zitat": "Bei der Unterbringung von Asylbewerbern innerhalb Berlins müssen die Bezirke, die bislang am meisten geleistet haben, entlastet werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6172,
+          "instrument": 6116,
+          "beschreibung": "Ansiedlung mit einem Infrastrukturzuschuss für den Bezirk verbinden",
+          "ursachen_ids": [601],
+          "zitat": "Wir unterstützen die Idee, die Ansiedlung mit einem Infrastrukturzuschuss für den betroffenen Bezirk zu verbinden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=35",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
