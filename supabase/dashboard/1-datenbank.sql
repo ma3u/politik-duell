@@ -1188,7 +1188,19 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (6431, 9, 17, 'BE', 'Beschleunigte Verfahren bei Alltagskriminalität', '{902}', 1, 3, null, 'Das beschleunigte Verfahren nach § 417 StPO und feste Zielzeiten sorgen bei einfachen Fällen für schnelle Urteile; für die Masse komplexer Verfahren ändert sich wenig. Staatsanwaltschaften und Gerichte des Landes können es stärker nutzen.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41', null, 'gemischt', '2026-09-29', false, true),
   (6432, 9, 17, 'BE', 'Beschleunigte Verfahren bei Jugendkriminalität', '{903}', 2, 3, null, 'Wenn Polizei, Staatsanwaltschaft und Jugendhilfe gemeinsam und schnell reagieren, folgt eine Reaktion kurz auf die Tat; Auswertungen berichten schnellere Verfahren, ein Effekt auf Rückfälle ist nicht eindeutig belegt. Das Land kann es einrichten.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41', null, 'gemischt', '2026-09-29', false, true),
   (6433, 9, 17, 'BE', 'Videoüberwachung an besonders kriminalitätsbelasteten Orten', '{901}', 1, 3, null, 'Videoüberwachung hilft bei der Aufklärung und kann an einzelnen Orten Straftaten verhindern; Studien finden im öffentlichen Raum nur kleine Effekte und keine deutliche Wirkung auf das Sicherheitsgefühl. Per Polizeigesetz des Landes umsetzbar.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41', null, 'gemischt', '2026-09-29', false, true),
-  (6434, 9, 17, 'BE', 'Gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll', '{901}', 1, 3, null, 'Gemeinsame Streifen und Sicherheitspartnerschaften erhöhen die Präsenz an Plätzen und Bahnhöfen und bündeln Zuständigkeiten; eigene Wirkungsstudien gibt es wenige. Land und Kommunen können es vereinbaren.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41', null, 'gemischt', '2026-09-29', false, true);
+  (6434, 9, 17, 'BE', 'Gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll', '{901}', 1, 3, null, 'Gemeinsame Streifen und Sicherheitspartnerschaften erhöhen die Präsenz an Plätzen und Bahnhöfen und bündeln Zuständigkeiten; eigene Wirkungsstudien gibt es wenige. Land und Kommunen können es vereinbaren.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41', null, 'gemischt', '2026-09-29', false, true),
+  (6435, 7, 17, null, 'Alle Erwerbstätigen, auch Abgeordnete und Minister, zahlen in die gesetzliche Rente ein', '{701}', 1, 2, null, 'Mehr Einzahlende verbessern das Verhältnis zu den Rentnern zunächst, später entstehen aus den Beiträgen aber auch Ansprüche; für Beamte kostet der Übergang Bund und Länder anfangs viel Geld. Per Bundesgesetz möglich, mit langen Übergangszeiten.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=23', null, 'gemischt', '2026-09-29', false, true),
+  (6436, 7, 17, null, 'Alle Selbstständigen in die Sozialversicherungen einbeziehen', '{702}', 2, 3, null, 'Viele Solo-Selbstständige sorgen kaum vor und sind im Alter häufiger arm; eine Vorsorgepflicht setzt direkt an dieser Lücke an, wirkt aber erst über Jahrzehnte, und Pflichtbeiträge belasten Selbstständige mit geringem Einkommen. Per Bundesgesetz umsetzbar.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=15', null, 'gemischt', '2026-09-29', false, true),
+  (6437, 7, 17, null, 'Mindestlohn sofort auf 15 Euro anheben', '{702}', 1, 3, null, 'Ein höherer Mindestlohn erhöht die Rentenansprüche von Geringverdienenden; auch mit 15 Euro liegt die Rente nach Lücken im Erwerbsleben oft nahe der Grundsicherung. Per Bundesgesetz umsetzbar, bisher entscheidet die Mindestlohnkommission.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21', null, 'gemischt', '2026-09-29', false, true),
+  (6438, 7, 17, null, 'Mindestrente von 1.500 Euro nach 40 Versicherungsjahren, gestaffelt nach Versicherungsjahren', '{702}', 2, 1, null, 'Eine Mindestrente hebt niedrige Renten nach langen Versicherungszeiten direkt an; wer große Lücken im Erwerbsleben hat, erreicht die Stufen oft nicht. Die Kosten wären hoch, die Finanzierung nennt das Programm nicht.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=22', null, 'gemischt', '2026-09-29', false, true),
+  (6439, 7, 17, null, 'Leistungsniveau von mindestens 75 Prozent des früheren Nettoeinkommens', '{701}', 1, 1, null, 'Ein deutlich höheres Leistungsniveau erhöht die Renten aller, gleicht aber nur die Folgen des steigenden Verhältnisses von Rentnern zu Beitragszahlenden aus; die Mehrkosten wären sehr hoch und sind nicht geklärt.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=23', null, 'gemischt', '2026-09-29', false, true),
+  (6440, 10, 17, null, 'Pflegevollversicherung, überwiegend aus Steuermitteln finanziert', '{1002}', 3, 1, null, 'Eine Vollversicherung beseitigt die pflegebedingten Eigenanteile vollständig; Unterkunft und Verpflegung bleiben. Die Mehrkosten liegen bei deutlich über 10 Milliarden Euro im Jahr, eine Finanzierung überwiegend aus Steuern ist offen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', null, 'belegt', '2026-09-29', false, true),
+  (6441, 10, 17, null, 'Mehr Pflegepersonal ausbilden', '{1001}', 1, 3, null, 'Bessere Ausbildungsbedingungen können mehr Menschen in den Beruf bringen und Abbrüche verringern; die Ausbildung ist seit 2020 bereits vergütet und schulgeldfrei, weitere Effekte sind schwer abzuschätzen. Per Bundesgesetz und mit den Ländern umsetzbar.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', null, 'gemischt', '2026-09-29', false, true),
+  (6442, 10, 17, null, 'Bessere Bezahlung in der Pflege', '{1001}', 2, 2, null, 'Höhere Löhne machen den Beruf attraktiver und halten Pflegekräfte; seit der Tarifpflicht von 2022 sind die Löhne deutlich gestiegen, was aber auch die Eigenanteile erhöht hat. Die Refinanzierung ist per Bundesgesetz möglich, die Finanzierung ist offen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', null, 'gemischt', '2026-09-29', false, true),
+  (6443, 10, 17, null, 'Pflegegeld deutlich erhöhen, orientiert an der Bezahlung professioneller Pflegekräfte', '{1004}', 1, 1, null, 'Ein höheres Pflegegeld erkennt die Arbeit pflegender Angehöriger an und entlastet sie finanziell, verringert aber nicht ihre zeitliche und körperliche Belastung. Eine Orientierung am Lohn von Pflegekräften würde ein Vielfaches kosten, die Finanzierung ist offen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=33', null, 'gemischt', '2026-09-29', false, true),
+  (6444, 9, 17, null, 'Sichtbare Polizeipräsenz auf Straßen und Plätzen mit ausreichend Personal', '{901}', 1, 3, null, 'Mehr Bundespolizei kann an Bahnhöfen für mehr Präsenz sorgen; an den übrigen Orten, an denen sich Unsicherheit ballt, sind die Landespolizeien zuständig. Der Bund kann die Stellen selbst schaffen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35', null, 'gemischt', '2026-09-29', false, true),
+  (6445, 9, 17, null, 'Deutlich mehr Personal in den Justizbehörden', '{902}', 2, 2, null, 'Mehr Richter, Staatsanwälte und eine digitale Justiz setzen direkt an der Überlastung an; der erste Pakt für den Rechtsstaat hat Stellen geschaffen, die Rückstände aber nicht beseitigt. Der Bund kann nur mitfinanzieren, einstellen müssen die Länder.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36', null, 'gemischt', '2026-09-29', false, true),
+  (6446, 9, 17, null, 'Verfahrenszahlen durch Reformen im Strafrecht senken', '{902}', 1, 3, null, 'Wenn etwa Fahren ohne Fahrschein oder Drogenbesitz keine Straftat mehr ist, entfallen jährlich viele Verfahren bei Polizei, Staatsanwaltschaften und Gerichten; die Entlastung trifft aber vor allem einfache Verfahren. Der Bund ist zuständig.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36', null, 'gemischt', '2026-09-29', false, true);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -1442,7 +1454,11 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6344, 9),
   (6345, 9),
   (6367, 9),
-  (6420, 9);
+  (6420, 9),
+  (6438, 7),
+  (6439, 7),
+  (6440, 10),
+  (6443, 10);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf) values
   (4, 11, null, 'massnahmen', null, '2026-09-28', true),
@@ -1514,12 +1530,14 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (7, 14, null, 'massnahmen', null, '2026-09-29', true),
   (7, 15, null, 'massnahmen', null, '2026-09-29', true),
   (7, 16, null, 'massnahmen', null, '2026-09-29', true),
+  (7, 17, null, 'massnahmen', null, '2026-09-29', true),
   (9, 11, null, 'massnahmen', null, '2026-09-29', true),
   (9, 12, null, 'massnahmen', null, '2026-09-29', true),
   (9, 13, null, 'massnahmen', null, '2026-09-29', true),
   (9, 14, null, 'massnahmen', null, '2026-09-29', true),
   (9, 15, null, 'massnahmen', null, '2026-09-29', true),
   (9, 16, null, 'massnahmen', null, '2026-09-29', true),
+  (9, 17, null, 'massnahmen', null, '2026-09-29', true),
   (9, 11, 'ST', 'massnahmen', null, '2026-09-29', true),
   (9, 12, 'ST', 'massnahmen', null, '2026-09-29', true),
   (9, 13, 'ST', 'massnahmen', null, '2026-09-29', true),
@@ -1546,6 +1564,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (10, 13, null, 'massnahmen', null, '2026-09-29', true),
   (10, 14, null, 'massnahmen', null, '2026-09-29', true),
   (10, 15, null, 'massnahmen', null, '2026-09-29', true),
-  (10, 16, null, 'massnahmen', null, '2026-09-29', true);
+  (10, 16, null, 'massnahmen', null, '2026-09-29', true),
+  (10, 17, null, 'massnahmen', null, '2026-09-29', true);
 
 commit;

@@ -6,7 +6,7 @@ Lizenz: [CC BY 4.0](LICENSE) für Auswahl, Struktur, Ursachen, Bewertungen und B
 
 Änderungen laufen per Pull Request mit Quellenpflicht. Jeder Pull Request wird automatisch geprüft (`npm run daten:pruefen`).
 
-> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind bisher für Miete, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Pflege sowie Sicherheit erfasst (alle außer Miete als KI-Entwurf aus den Bundesprogrammen – bei Rente, Pflege und Sicherheit noch ohne BSW, dessen Programm-PDF zurzeit nicht abrufbar ist –, Schule, Zuwanderung und Integration sowie Sicherheit zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 102 Instrumente zusammengefasst (siehe „Instrumente“).
+> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind bisher für Miete, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Pflege sowie Sicherheit erfasst (alle außer Miete als KI-Entwurf aus den Bundesprogrammen, Schule, Zuwanderung und Integration sowie Sicherheit zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 102 Instrumente zusammengefasst (siehe „Instrumente“).
 >
 > Die fiktiven Beispieldaten für „Mit Beispieldaten spielen“ und die Tests liegen getrennt in [`beispiel/`](beispiel/) und werden nicht weiter gepflegt.
 
