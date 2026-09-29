@@ -8,8 +8,7 @@
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { EingabeFehler } from '../_shared/fehler.ts'
-import { MASSNAHMEN_JE_THEMA } from '../_shared/pruef-massnahmen.ts'
-import { bearbeitePruefung, pruefePruefAnfrage, type GespeicherteBewertung, type PruefSpeicher } from '../_shared/pruefung.ts'
+import { bearbeitePruefung, pruefePruefAnfrage, type GespeicherteBewertung, type MassnahmenJeThema, type PruefSpeicher } from '../_shared/pruefung.ts'
 import { corsKoepfe, erlaubteUrspruenge, ursprungErlaubt } from '../_shared/zugriff.ts'
 
 const MAX_ANFRAGE_BYTES = 64_000
@@ -77,6 +76,18 @@ const speicher: PruefSpeicher = {
   },
 }
 
+// Prüfeinheiten je Thema (Tabelle `pruef_einheiten`, geschrieben vom Seed) – eine Minute
+// zwischengespeichert. So gelten neue Daten ohne neues Deploy der Function.
+let einheiten: { stand: number; jeThema: MassnahmenJeThema } | null = null
+async function pruefEinheiten(): Promise<MassnahmenJeThema> {
+  if (einheiten && Date.now() - einheiten.stand < 60_000) return einheiten.jeThema
+  const zeilen = pruefe(await db.from('pruef_einheiten').select('id, thema_id').limit(100_000)) as { id: number; thema_id: number }[]
+  const jeThema: Record<number, number[]> = {}
+  for (const z of zeilen) (jeThema[z.thema_id] ??= []).push(z.id)
+  einheiten = { stand: Date.now(), jeThema }
+  return jeThema
+}
+
 async function lesJson(req: Request): Promise<unknown> {
   const text = await req.text()
   if (new TextEncoder().encode(text).length > MAX_ANFRAGE_BYTES) throw new EingabeFehler('Anfrage zu groß.')
@@ -99,7 +110,7 @@ Deno.serve(async (req) => {
 
   try {
     const anfrage = pruefePruefAnfrage(await lesJson(req))
-    const { status, body } = await bearbeitePruefung(anfrage, speicher, MASSNAHMEN_JE_THEMA)
+    const { status, body } = await bearbeitePruefung(anfrage, speicher, await pruefEinheiten())
     return json(body, status)
   } catch (e) {
     if (e instanceof EingabeFehler) return json({ fehler: e.message }, 400)

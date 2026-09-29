@@ -65,7 +65,7 @@ export interface PruefSpeicher {
   widerrufen(einladungId: string): Promise<void>
 }
 
-/** Maßnahmen-IDs je Thema aus dem Datenkatalog (auch ungeprüfte). */
+/** IDs der Prüfeinheiten (Instrumente, Maßnahmen ohne Instrument) je Thema – aus der Tabelle `pruef_einheiten`. */
 export type MassnahmenJeThema = Record<number, readonly number[]>
 
 export interface Antwort {

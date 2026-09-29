@@ -35,11 +35,50 @@ export interface Abdeckung extends AbdeckungEintrag {
    * KI-Entwurf gekennzeichnet ist – dann zählt er in der geschlossenen Testphase.
    */
   ki_entwurf: boolean
+  /** Nur bei Landesprogrammen: die Landtagswahl, zu der das Programm gehört. */
+  landtagswahl?: string
+  /** false bei Landesprogrammen früherer Wahlperioden: bleiben stehen, zählen aber nicht mehr. */
+  aktuell: boolean
+}
+
+/**
+ * Instrument: ein Lösungsweg, den mehrere Programme vorschlagen (etwa „Handyverbot an
+ * Schulen“). Wirksamkeit, Umsetzbarkeit und Begründung stehen einmal hier und gelten
+ * für jede Maßnahme, die darauf verweist – so bleibt die Bewertung über Parteien,
+ * Länder und Wahlperioden gleich, und Prüfende bewerten es nur einmal.
+ */
+export interface Instrument {
+  id: number
+  thema_id: number
+  name: string
+  wirksamkeit: Massnahme['wirksamkeit']
+  umsetzbarkeit: Massnahme['umsetzbarkeit']
+  begruendung: string
+  evidenz?: Massnahme['evidenz']
+  beleg_studie_url?: string
+  rollen_modifikator?: Massnahme['rollen_modifikator']
+  /** Zahl der Bewertungen durch Prüfende (0 = noch Entwurf). */
+  bewertungen: number
+}
+
+/** Partei im Repo: mit Prüfsumme der ausgewerteten Fassung des Bundesprogramms. */
+export interface KatalogPartei extends Partei {
+  programm_sha256?: string
+}
+
+/** Maßnahme im Repo: wie in der Datenbank, plus Herkunft der Bewertung und Wahlperiode. */
+export interface KatalogMassnahme extends Massnahme {
+  /** Instrument, aus dem Wirksamkeit, Umsetzbarkeit und Begründung stammen. */
+  instrument_id?: number
+  /** Nur bei Landesprogrammen: die Landtagswahl, zu der das Programm gehört. */
+  landtagswahl?: string
 }
 
 /** Landesprogramm im Repo: mit Wahl, zu der es gehört. */
 export interface LandesprogrammEintrag extends Landesprogramm {
   landtagswahl: string
+  /** SHA-256 der ausgewerteten PDF-Datei: belegt die Fassung, auch wenn die Partei sie austauscht. */
+  sha256?: string
   /** true, wenn es zur letzten Landtagswahl des Landes gehört (laufende Wahlperiode). */
   aktuell: boolean
 }
@@ -49,11 +88,14 @@ export interface Katalog {
   fiktiv: boolean
   laender: Land[]
   landesprogramme: LandesprogrammEintrag[]
-  parteien: Partei[]
+  parteien: KatalogPartei[]
   themen: Thema[]
   ursachen: Ursache[]
-  /** Alle erfassten Maßnahmen, auch ungeprüfte Entwürfe. */
-  massnahmen: Massnahme[]
+  instrumente: Instrument[]
+  /** Alle erfassten Maßnahmen, auch ungeprüfte Entwürfe und frühere Wahlperioden. */
+  massnahmen: KatalogMassnahme[]
+  /** IDs entfernter Einträge (daten/ids.json) – werden nie wieder vergeben. */
+  stillgelegt: number[]
   abdeckung: Abdeckung[]
 }
 
@@ -90,25 +132,75 @@ export function spielbareLandesprogramme(k: Katalog): Landesprogramm[] {
  * `ki_entwurf: true` – die Datenbank gibt sie nur mit Zugang zur Testphase heraus.
  */
 export function spielbareAbdeckung(k: Katalog, mitKiEntwurf = false): AbdeckungEintrag[] {
-  // Landesprogramme zählen nur in der laufenden Wahlperiode.
-  const aktuell = new Set(spielbareLandesprogramme(k).filter((p) => p.url).map((p) => `${p.partei_id}/${p.land}`))
-  return k.abdeckung
-    .filter((a) => k.fiktiv || a.geprueft || (mitKiEntwurf && a.ki_entwurf))
-    .filter((a) => !a.land || aktuell.has(`${a.partei_id}/${a.land}`))
-    .map(({ thema_id, partei_id, land, art, begruendung, stand, geprueft }) => ({
-      thema_id, partei_id, land: land ?? null, art, begruendung, stand,
-      ...(mitKiEntwurf ? { ki_entwurf: !k.fiktiv && !geprueft } : {}),
-    }))
+  return zaehlendeAbdeckung(k, mitKiEntwurf).map(({ thema_id, partei_id, land, art, begruendung, stand, geprueft }) => ({
+    thema_id, partei_id, land: land ?? null, art, begruendung, stand,
+    ...(mitKiEntwurf ? { ki_entwurf: !k.fiktiv && !geprueft } : {}),
+  }))
 }
 
-const programmSchluessel = (x: { thema_id: number; partei_id: number; land?: string | null }) =>
-  `${x.thema_id}/${x.partei_id}/${x.land ?? ''}`
+// Landesprogramme zählen nur in der laufenden Wahlperiode; ältere Einträge bleiben im Katalog.
+const zaehlendeAbdeckung = (k: Katalog, mitKiEntwurf: boolean) =>
+  k.abdeckung.filter((a) => a.aktuell && (k.fiktiv || a.geprueft || (mitKiEntwurf && a.ki_entwurf)))
+
+const programmSchluessel = (x: { thema_id: number; partei_id: number; land?: string | null; landtagswahl?: string }) =>
+  `${x.thema_id}/${x.partei_id}/${x.land ?? ''}/${x.landtagswahl ?? ''}`
 
 export function spielbareMassnahmen(k: Katalog, mitKiEntwurf = false): Massnahme[] {
-  const eintraege = new Map(spielbareAbdeckung(k, mitKiEntwurf).map((a) => [programmSchluessel(a), a]))
+  const eintraege = new Map(zaehlendeAbdeckung(k, mitKiEntwurf).map((a) => [programmSchluessel(a), a]))
   return k.massnahmen
     .filter((m) => eintraege.has(programmSchluessel(m)))
-    .map((m) => (mitKiEntwurf ? { ...m, ki_entwurf: eintraege.get(programmSchluessel(m))!.ki_entwurf } : m))
+    .map((eintrag) => {
+      const { instrument_id: _i, landtagswahl: _l, ...m } = eintrag
+      return mitKiEntwurf ? { ...m, ki_entwurf: !k.fiktiv && !eintraege.get(programmSchluessel(eintrag))!.geprueft } : m
+    })
+}
+
+/**
+ * Was Prüfende bewerten: ein Instrument (gilt für alle Maßnahmen, die darauf
+ * verweisen) oder eine einzelne Maßnahme ohne Instrument. Die ID ist die des
+ * Instruments bzw. der Maßnahme – beide teilen sich einen Nummernkreis.
+ * Nur laufende Wahlperioden; frühere Programme werden nicht mehr bewertet.
+ */
+export interface Pruefeinheit {
+  id: number
+  thema_id: number
+  /** Name des Instruments bzw. Kurzbeschreibung der Maßnahme. */
+  beschreibung: string
+  /** Die Maßnahmen dahinter (bei Instrumenten alle, die darauf verweisen). */
+  massnahmen: KatalogMassnahme[]
+  instrument: boolean
+  ursachen_ids: number[]
+  wirksamkeit: Massnahme['wirksamkeit']
+  umsetzbarkeit: Massnahme['umsetzbarkeit']
+  begruendung: string
+  evidenz?: Massnahme['evidenz']
+  beleg_studie_url?: string
+  rollen_modifikator?: Massnahme['rollen_modifikator']
+}
+
+export function pruefEinheiten(k: Katalog, themaId?: number): Pruefeinheit[] {
+  const aktuell = new Set(k.abdeckung.filter((a) => a.aktuell).map(programmSchluessel))
+  const massnahmen = k.massnahmen.filter((m) => (themaId === undefined || m.thema_id === themaId) && aktuell.has(programmSchluessel(m)))
+  const einheiten: Pruefeinheit[] = []
+  for (const i of k.instrumente) {
+    const dazu = massnahmen.filter((m) => m.instrument_id === i.id)
+    if (!dazu.length) continue
+    einheiten.push({
+      id: i.id, thema_id: i.thema_id, beschreibung: i.name, massnahmen: dazu, instrument: true,
+      ursachen_ids: [...new Set(dazu.flatMap((m) => m.ursachen_ids))].sort((a, b) => a - b),
+      wirksamkeit: i.wirksamkeit, umsetzbarkeit: i.umsetzbarkeit, begruendung: i.begruendung,
+      evidenz: i.evidenz, beleg_studie_url: i.beleg_studie_url, rollen_modifikator: i.rollen_modifikator,
+    })
+  }
+  for (const m of massnahmen) {
+    if (m.instrument_id !== undefined) continue
+    einheiten.push({
+      id: m.id, thema_id: m.thema_id, beschreibung: m.beschreibung, massnahmen: [m], instrument: false,
+      ursachen_ids: m.ursachen_ids, wirksamkeit: m.wirksamkeit, umsetzbarkeit: m.umsetzbarkeit, begruendung: m.begruendung,
+      evidenz: m.evidenz, beleg_studie_url: m.beleg_studie_url, rollen_modifikator: m.rollen_modifikator,
+    })
+  }
+  return einheiten.sort((a, b) => a.id - b.id)
 }
 
 const DATUM = /^\d{4}-\d{2}-\d{2}$/
@@ -116,8 +208,15 @@ const FARBE = /^#[0-9a-fA-F]{6}$/
 const SEITENANKER = /#page=\d+$/
 const PLATZHALTER_HOSTS = ['example.org', 'example.com', 'example.net']
 const LAND_KUERZEL = /^[A-Z]{2}$/
+const SHA256 = /^[0-9a-f]{64}$/
 const EBENEN = ['bund', 'land'] as const
 const EVIDENZ = ['belegt', 'gemischt', 'offen'] as const
+
+/** Felder, die bei einer Maßnahme mit Instrument vom Instrument kommen. */
+const INSTRUMENT_FELDER = ['wirksamkeit', 'umsetzbarkeit', 'begruendung', 'evidenz', 'beleg_studie_url', 'rollen_modifikator', 'bewertung']
+
+/** Bewertung samt Begründung – steht an einem Instrument oder an einer Maßnahme ohne Instrument. */
+type Bewertungsteil = Pick<Instrument, 'wirksamkeit' | 'umsetzbarkeit' | 'begruendung' | 'evidenz' | 'beleg_studie_url' | 'rollen_modifikator' | 'bewertungen'>
 
 const istObjekt = (v: unknown): v is Record<string, unknown> =>
   typeof v === 'object' && v !== null && !Array.isArray(v)
@@ -127,11 +226,12 @@ const istDatum = (v: unknown): v is string =>
 
 const ohneAnker = (url: string) => url.split('#')[0]
 
-export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pruefergebnis {
+export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsDatei?: Datei): Pruefergebnis {
   const fehler: string[] = []
   const warnungen: string[] = []
   const katalog: Katalog = {
-    fiktiv: false, laender: [], landesprogramme: [], parteien: [], themen: [], ursachen: [], massnahmen: [], abdeckung: [],
+    fiktiv: false, laender: [], landesprogramme: [], parteien: [], themen: [], ursachen: [], instrumente: [], massnahmen: [],
+    abdeckung: [], stillgelegt: [],
   }
 
   // Kleine Helfer, die jeweils eine Meldung mit Ort erzeugen.
@@ -179,6 +279,11 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
   const unbekannteFelder = (ort: string, o: Record<string, unknown>, erlaubt: string[]) => {
     for (const k of Object.keys(o)) if (!erlaubt.includes(k)) f(ort, `unbekanntes Feld „${k}“ (Tippfehler?)`)
   }
+  const pruefsumme = (ort: string, o: Record<string, unknown>, feld: string): string => {
+    const v = o[feld]
+    if (typeof v !== 'string' || !SHA256.test(v)) f(ort, `„${feld}“ muss eine SHA-256-Prüfsumme sein (64 Zeichen 0–9, a–f; npm run programm:sichern)`)
+    return typeof v === 'string' ? v : ''
+  }
   const schlagwoerter = (ort: string, o: Record<string, unknown>): string[] | undefined => {
     const v = o.schlagwoerter
     if (v === undefined) return undefined
@@ -187,6 +292,102 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
       return undefined
     }
     return v as string[]
+  }
+
+  // Wirksamkeit, Umsetzbarkeit, Begründung, Forschungsstand, Rollen und Ergebnis der Prüfung.
+  const bewertungsteil = (ort: string, roh: Record<string, unknown>, evidenzPflicht: boolean): Bewertungsteil => {
+    const b: Bewertungsteil = {
+      wirksamkeit: ganzzahl(ort, roh, 'wirksamkeit', 0, 3) as Massnahme['wirksamkeit'],
+      umsetzbarkeit: ganzzahl(ort, roh, 'umsetzbarkeit', 0, 3) as Massnahme['umsetzbarkeit'],
+      begruendung: text(ort, roh, 'begruendung', 300),
+      bewertungen: 0,
+    }
+    const studie = url(ort, roh, 'beleg_studie_url', false)
+    if (studie) b.beleg_studie_url = studie
+
+    // Stand der Forschung: Höchste Wirksamkeit nur mit belegter Wirkung (docs/methode.md).
+    if (roh.evidenz !== undefined) {
+      if (!(EVIDENZ as readonly unknown[]).includes(roh.evidenz)) f(ort, `„evidenz“ muss ${EVIDENZ.map((e) => `„${e}“`).join(', ')} sein`)
+      else b.evidenz = roh.evidenz as Massnahme['evidenz']
+    }
+    if (!katalog.fiktiv) {
+      if (b.wirksamkeit === 3 && b.evidenz !== 'belegt') f(ort, '„wirksamkeit“ 3 nur mit „evidenz“: „belegt“ – sonst höchstens 2')
+      // KI-Entwürfe sind in der geschlossenen Testphase sichtbar, deshalb schon vollständig.
+      if (evidenzPflicht && !b.evidenz)
+        f(ort, '„evidenz“ fehlt – vor „geprueft“, bei KI-Entwürfen und bei Instrumenten angeben, wie gut die Wirkung belegt ist')
+    }
+
+    // Rollen-Modifikatoren: nur bekannte Rollen, kleiner Wert, immer begründet.
+    const rm = roh.rollen_modifikator
+    if (rm !== undefined && rm !== null) {
+      if (!istObjekt(rm)) f(ort, '„rollen_modifikator“ muss ein Objekt sein')
+      else {
+        for (const [rolle, mod] of Object.entries(rm)) {
+          const rOrt = `${ort} › rollen_modifikator.${rolle}`
+          if (!(ROLLEN_IDS as readonly string[]).includes(rolle)) f(rOrt, `unbekannte Rolle (erlaubt: ${ROLLEN_IDS.join(', ')})`)
+          if (!istObjekt(mod)) {
+            f(rOrt, 'erwartet { wert, begruendung }')
+            continue
+          }
+          unbekannteFelder(rOrt, mod, ['wert', 'begruendung'])
+          ganzzahl(rOrt, mod, 'wert', -2, 2)
+          if (mod.wert === 0) f(rOrt, '„wert“ 0 hat keine Wirkung – Eintrag weglassen')
+          text(rOrt, mod, 'begruendung', 200)
+        }
+        b.rollen_modifikator = rm as Massnahme['rollen_modifikator']
+      }
+    }
+
+    // Ergebnis der Prüfung durch Eingeladene (npm run pruefung:uebernehmen): Anzahl und Mediane, nie Namen.
+    const bw = roh.bewertung
+    if (bw !== undefined) {
+      const bOrt = `${ort} › bewertung`
+      if (!istObjekt(bw)) f(bOrt, 'erwartet ein Objekt mit anzahl, median_w, median_u, spannweite, datum, entwurf')
+      else {
+        unbekannteFelder(bOrt, bw, ['anzahl', 'median_w', 'median_u', 'spannweite', 'datum', 'entwurf'])
+        b.bewertungen = ganzzahl(bOrt, bw, 'anzahl', 1, 99)
+        const mw = ganzzahl(bOrt, bw, 'median_w', 0, 3)
+        const mu = ganzzahl(bOrt, bw, 'median_u', 0, 3)
+        ganzzahl(bOrt, bw, 'spannweite', 0, 3)
+        datum(bOrt, bw, 'datum')
+        const e = bw.entwurf
+        if (!Array.isArray(e) || e.length !== 2 || e.some((x) => !Number.isInteger(x) || x < 0 || x > 3))
+          f(bOrt, '„entwurf“ muss [Wirksamkeit, Umsetzbarkeit] des Entwurfs sein, je 0 bis 3')
+        if (mw !== b.wirksamkeit || mu !== b.umsetzbarkeit)
+          f(bOrt, '„wirksamkeit“/„umsetzbarkeit“ weichen von den Medianen der Prüfung ab – neu prüfen lassen oder „bewertung“ anpassen')
+      }
+    }
+    return b
+  }
+
+  // --- IDs: Maßnahmen und Instrumente teilen sich einen Nummernkreis ----------
+  // Einmal vergeben, nie wieder: Entfernte IDs stehen in daten/ids.json.
+  const idOrt = new Map<number, string>()
+  if (idsDatei) {
+    const d = idsDatei.inhalt
+    if (!istObjekt(d) || !Array.isArray(d.stillgelegt)) f(idsDatei.pfad, 'erwartet { "stillgelegt": [{ "id", "grund" }] }')
+    else {
+      unbekannteFelder(idsDatei.pfad, d, ['hinweis', 'stillgelegt'])
+      for (const [i, roh] of d.stillgelegt.entries()) {
+        const sOrt = `${idsDatei.pfad} › stillgelegt[${i}]`
+        if (!istObjekt(roh)) {
+          f(sOrt, 'erwartet ein Objekt')
+          continue
+        }
+        unbekannteFelder(sOrt, roh, ['id', 'grund'])
+        const id = ganzzahl(sOrt, roh, 'id', 1, 2147483647)
+        text(sOrt, roh, 'grund', 300)
+        if (idOrt.has(id)) f(sOrt, `ID ${id} ist doppelt`)
+        idOrt.set(id, 'stillgelegt')
+        katalog.stillgelegt.push(id)
+      }
+    }
+  }
+  const neueId = (ort: string, id: number, art: string) => {
+    const vorher = idOrt.get(id)
+    if (vorher === 'stillgelegt') f(ort, `ID ${id} ist stillgelegt (daten/ids.json) und darf nicht wieder vergeben werden – npm run daten:id`)
+    else if (vorher) f(ort, `${art}-ID ${id} ist schon vergeben (${vorher}) – Maßnahmen und Instrumente teilen sich die Nummern; npm run daten:id`)
+    idOrt.set(id, ort)
   }
 
   // --- Parteien --------------------------------------------------------------
@@ -220,8 +421,8 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
   pd.parteien.forEach((roh, i) => {
     const ort = `${pOrt} › parteien[${i}]`
     if (!istObjekt(roh)) return f(ort, 'erwartet ein Objekt')
-    unbekannteFelder(ort, roh, ['id', 'name', 'kurzname', 'farbe', 'programm_url', 'programm_stand', 'landesprogramme'])
-    const p: Partei = {
+    unbekannteFelder(ort, roh, ['id', 'name', 'kurzname', 'farbe', 'programm_url', 'programm_stand', 'programm_sha256', 'landesprogramme'])
+    const p: KatalogPartei = {
       id: ganzzahl(ort, roh, 'id', 1, 32767),
       name: text(ort, roh, 'name', 80),
       kurzname: text(ort, roh, 'kurzname', 20),
@@ -229,6 +430,8 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
       programm_url: url(ort, roh, 'programm_url') ?? '',
       programm_stand: datum(ort, roh, 'programm_stand'),
     }
+    if (roh.programm_sha256 !== undefined) p.programm_sha256 = pruefsumme(ort, roh, 'programm_sha256')
+    else if (!katalog.fiktiv) warnungen.push(`${ort}: ohne „programm_sha256“ – ausgewertete Fassung nicht festgehalten (npm run programm:sichern)`)
     if (p.farbe && !FARBE.test(p.farbe)) f(ort, '„farbe“ muss ein Hex-Wert wie #1a2b3c sein')
     if (p.programm_url.includes('#')) f(ort, '„programm_url“ ist die Adresse des ganzen Programms – ohne #-Anker')
     if (parteiIds.has(p.id)) f(ort, `Partei-ID ${p.id} ist doppelt`)
@@ -248,7 +451,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         f(lOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(lOrt, lRoh, ['land', 'landtagswahl', 'url', 'stand', 'kein_programm'])
+      unbekannteFelder(lOrt, lRoh, ['land', 'landtagswahl', 'url', 'stand', 'sha256', 'kein_programm'])
       const landId = text(lOrt, lRoh, 'land', 2)
       const land = landNach.get(landId)
       if (landId && !land) f(lOrt, `unbekanntes Land „${landId}“ (erst unter „laender“ eintragen)`)
@@ -266,13 +469,25 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         aktuell: !!land && landtagswahl === land.letzte_wahl,
       }
       if (!hatUrl && lRoh.stand !== undefined) f(lOrt, '„stand“ nur zusammen mit „url“')
+      if (lRoh.sha256 !== undefined) {
+        if (!hatUrl) f(lOrt, '„sha256“ nur zusammen mit „url“')
+        else lp.sha256 = pruefsumme(lOrt, lRoh, 'sha256')
+      } else if (hatUrl && !katalog.fiktiv) {
+        warnungen.push(`${lOrt}: ohne „sha256“ – ausgewertete Fassung nicht festgehalten (npm run programm:sichern)`)
+      }
       if (lp.url?.includes('#')) f(lOrt, '„url“ ist die Adresse des ganzen Programms – ohne #-Anker')
       if (land && landtagswahl > land.letzte_wahl) f(lOrt, `„landtagswahl“ liegt nach der letzten Wahl in ${land.name} (${land.letzte_wahl})`)
-      if (land && landtagswahl && landtagswahl < land.letzte_wahl) {
-        warnungen.push(`${lOrt}: Programm zur Wahl ${landtagswahl} ist veraltet (letzte Wahl in ${land.name}: ${land.letzte_wahl}) – zählt nicht mehr; Programm zur neuen Wahl eintragen`)
-      }
-      if (katalog.landesprogramme.some((x) => x.partei_id === p.id && x.land === landId)) f(lOrt, `Land „${landId}“ ist für diese Partei doppelt`)
+      if (katalog.landesprogramme.some((x) => x.partei_id === p.id && x.land === landId && x.landtagswahl === landtagswahl))
+        f(lOrt, `„${landId}“ zur Wahl ${landtagswahl} ist für diese Partei doppelt`)
       katalog.landesprogramme.push(lp)
+    }
+    // Programme früherer Wahlperioden bleiben stehen (Belege gespielter Runden), zählen aber nicht mehr.
+    // Fehlt das Programm zur letzten Wahl, ist das Land für die Partei noch nicht erfasst.
+    for (const land of katalog.laender) {
+      const eigene = katalog.landesprogramme.filter((x) => x.partei_id === p.id && x.land === land.id)
+      if (eigene.length && !eigene.some((x) => x.aktuell)) {
+        warnungen.push(`${ort}: kein Programm zur letzten Wahl in ${land.name} (${land.letzte_wahl}) – ältere zählen nicht mehr; neues Programm oder „kein_programm“ eintragen`)
+      }
     }
   })
   if (katalog.parteien.length < 2) f(pOrt, 'mindestens zwei Parteien nötig')
@@ -282,7 +497,6 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
   const themaIds = new Set<number>()
   const themaNamen = new Set<string>()
   const ursacheIds = new Set<number>()
-  const massnahmeIds = new Set<number>()
 
   for (const datei of themenDateien) {
     const ort = datei.pfad
@@ -291,7 +505,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
       f(ort, 'erwartet ein Objekt')
       continue
     }
-    unbekannteFelder(ort, t, ['id', 'name', 'beschreibung', 'ziel', 'schlagwoerter', 'ursachen', 'abdeckung'])
+    unbekannteFelder(ort, t, ['id', 'name', 'beschreibung', 'ziel', 'schlagwoerter', 'ursachen', 'instrumente', 'abdeckung'])
     // Ziel aus Sicht der Betroffenen: Daran wird die Wirksamkeit gemessen. Bei echten Daten Pflicht.
     const ziel = t.ziel !== undefined || !katalog.fiktiv ? text(ort, t, 'ziel', 200) : ''
     const thema: Thema = {
@@ -339,6 +553,29 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
       katalog.ursachen.push(u)
     }
 
+    // Instrumente: gemeinsame Bewertung gleicher Lösungswege (daten/README.md → „Instrumente“).
+    const eigeneInstrumente = new Map<number, Instrument>()
+    const instrumentEbene = new Map<number, string>()
+    const instrumentGenutzt = new Set<number>()
+    if (t.instrumente !== undefined && !Array.isArray(t.instrumente)) f(ort, '„instrumente“ muss eine Liste sein')
+    for (const [i, roh] of (Array.isArray(t.instrumente) ? t.instrumente : []).entries()) {
+      const iOrt = `${ort} › instrumente[${i}]`
+      if (!istObjekt(roh)) {
+        f(iOrt, 'erwartet ein Objekt')
+        continue
+      }
+      unbekannteFelder(iOrt, roh, ['id', 'name', ...INSTRUMENT_FELDER])
+      const ins: Instrument = {
+        id: ganzzahl(iOrt, roh, 'id', 1, 2147483647),
+        thema_id: thema.id,
+        name: text(iOrt, roh, 'name', 120),
+        ...bewertungsteil(iOrt, roh, true),
+      }
+      neueId(iOrt, ins.id, 'Instrument')
+      eigeneInstrumente.set(ins.id, ins)
+      katalog.instrumente.push(ins)
+    }
+
     // Abdeckung: Jede Partei höchstens einmal – mit Maßnahmen oder „keine_massnahme“.
     // Fehlt eine Partei, gilt das Thema für sie als „noch nicht erfasst“. So kann ein
     // Thema zuerst nur mit Ursachen angelegt werden (Ablauf in daten/README.md).
@@ -352,23 +589,28 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         f(aOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(aOrt, roh, ['partei_id', 'land', 'massnahmen', 'keine_massnahme'])
+      unbekannteFelder(aOrt, roh, ['partei_id', 'land', 'landtagswahl', 'massnahmen', 'keine_massnahme'])
       const parteiId = ganzzahl(aOrt, roh, 'partei_id', 1, 32767)
       const partei = parteiNach.get(parteiId)
       if (!partei) f(aOrt, `unbekannte Partei-ID ${parteiId}`)
 
       // Ohne „land“: Bundesprogramm. Mit „land“: Landesprogramm der Partei in diesem Land.
+      // Mit „land“ gehört „landtagswahl“ dazu: Programme früherer Wahlperioden bleiben so eindeutig.
       const land = roh.land === undefined ? null : text(aOrt, roh, 'land', 2)
+      let landtagswahl: string | undefined
+      let aktuell = true
       let programm = partei ? { url: partei.programm_url, stand: partei.programm_stand } : null
+      if (land === null && roh.landtagswahl !== undefined) f(aOrt, '„landtagswahl“ nur zusammen mit „land“')
       if (land !== null) {
-        const lp = katalog.landesprogramme.find((x) => x.partei_id === parteiId && x.land === land)
-        if (!lp) f(aOrt, `kein Landesprogramm „${land}“ für Partei ${parteiId} eingetragen (parteien.json → „landesprogramme“)`)
-        else if (!lp.url) f(aOrt, `Partei ${parteiId} hat in „${land}“ kein Programm (${lp.kein_programm}) – Eintrag entfernen`)
-        else if (!lp.aktuell) warnungen.push(`${aOrt}: Landesprogramm „${land}“ ist veraltet – zählt nicht mehr`)
+        landtagswahl = datum(aOrt, roh, 'landtagswahl')
+        const lp = katalog.landesprogramme.find((x) => x.partei_id === parteiId && x.land === land && x.landtagswahl === landtagswahl)
+        if (!lp && landtagswahl) f(aOrt, `kein Landesprogramm „${land}“ zur Wahl ${landtagswahl} für Partei ${parteiId} eingetragen (parteien.json → „landesprogramme“)`)
+        else if (lp && !lp.url) f(aOrt, `Partei ${parteiId} hat in „${land}“ kein Programm (${lp.kein_programm}) – Eintrag entfernen`)
+        aktuell = !!lp?.aktuell && !!lp.url
         programm = lp?.url && lp.stand ? { url: lp.url, stand: lp.stand } : null
       }
-      const schluessel = `${parteiId}/${land ?? ''}`
-      if (gesehen.has(schluessel)) f(aOrt, `Partei ${parteiId}${land ? ` (${land})` : ''} ist mehrfach eingetragen`)
+      const schluessel = `${parteiId}/${land ?? ''}/${landtagswahl ?? ''}`
+      if (gesehen.has(schluessel)) f(aOrt, `Partei ${parteiId}${land ? ` (${land}, Wahl ${landtagswahl})` : ''} ist mehrfach eingetragen`)
       gesehen.add(schluessel)
       if (land === null) bundErfasst.add(parteiId)
 
@@ -394,11 +636,12 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
         if (programm && stand && programm.stand && stand < programm.stand) {
           f(kOrt, `„stand“ ${stand} liegt vor dem Programmstand ${programm.stand} – bitte im aktuellen Programm neu prüfen`)
         }
-        if (!katalog.fiktiv && !geprueft) {
+        if (!katalog.fiktiv && !geprueft && aktuell) {
           warnungen.push(`${kOrt}: noch nicht geprüft – Thema gilt für die Partei als „noch nicht erfasst“${kiEntwurf ? ' (Testphase: KI-Entwurf)' : ''}`)
         }
         katalog.abdeckung.push({
           thema_id: thema.id, partei_id: parteiId, land, art: 'keine', begruendung, stand, geprueft, ki_entwurf: !geprueft && kiEntwurf,
+          ...(landtagswahl ? { landtagswahl } : {}), aktuell,
         })
         continue
       }
@@ -417,38 +660,53 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
           continue
         }
         unbekannteFelder(mOrt, mRoh, [
-          'id', 'beschreibung', 'ursachen_ids', 'wirksamkeit', 'umsetzbarkeit', 'rollen_modifikator',
+          'id', 'instrument', 'beschreibung', 'ursachen_ids', 'wirksamkeit', 'umsetzbarkeit', 'rollen_modifikator',
           'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'bewertung', 'ki_entwurf',
         ])
-        const m: Massnahme = {
+        const kiEntwurf = mRoh.ki_entwurf !== undefined && wahrheitswert(mOrt, mRoh, 'ki_entwurf')
+        const geprueft = wahrheitswert(mOrt, mRoh, 'geprueft')
+        // Mit Instrument kommt die Bewertung von dort, sonst steht sie an der Maßnahme.
+        let instrument: Instrument | undefined
+        let bewertung: Bewertungsteil
+        if (mRoh.instrument !== undefined) {
+          const iid = ganzzahl(mOrt, mRoh, 'instrument', 1, 2147483647)
+          instrument = eigeneInstrumente.get(iid)
+          if (!instrument) f(mOrt, `Instrument ${iid} steht nicht unter „instrumente“ dieses Themas`)
+          for (const feld of INSTRUMENT_FELDER)
+            if (mRoh[feld] !== undefined) f(mOrt, `„${feld}“ kommt aus dem Instrument – hier weglassen oder Instrument entfernen`)
+          bewertung = instrument ?? { wirksamkeit: 0, umsetzbarkeit: 0, begruendung: '', bewertungen: 0 }
+        } else {
+          bewertung = bewertungsteil(mOrt, mRoh, geprueft || kiEntwurf)
+        }
+        const m: KatalogMassnahme = {
           id: ganzzahl(mOrt, mRoh, 'id', 1, 2147483647),
           thema_id: thema.id,
           partei_id: parteiId,
           land,
           beschreibung: text(mOrt, mRoh, 'beschreibung', 200),
           ursachen_ids: [],
-          wirksamkeit: ganzzahl(mOrt, mRoh, 'wirksamkeit', 0, 3) as Massnahme['wirksamkeit'],
-          umsetzbarkeit: ganzzahl(mOrt, mRoh, 'umsetzbarkeit', 0, 3) as Massnahme['umsetzbarkeit'],
-          begruendung: text(mOrt, mRoh, 'begruendung', 300),
+          wirksamkeit: bewertung.wirksamkeit,
+          umsetzbarkeit: bewertung.umsetzbarkeit,
+          begruendung: bewertung.begruendung,
           beleg_programm_url: url(mOrt, mRoh, 'beleg_programm_url') ?? '',
           stand: datum(mOrt, mRoh, 'stand'),
-          geprueft: wahrheitswert(mOrt, mRoh, 'geprueft'),
+          geprueft,
         }
-        const studie = url(mOrt, mRoh, 'beleg_studie_url', false)
-        if (studie) m.beleg_studie_url = studie
+        if (bewertung.evidenz) m.evidenz = bewertung.evidenz
+        if (bewertung.beleg_studie_url) m.beleg_studie_url = bewertung.beleg_studie_url
+        if (bewertung.rollen_modifikator) m.rollen_modifikator = bewertung.rollen_modifikator
+        if (instrument) {
+          m.instrument_id = instrument.id
+          instrumentGenutzt.add(instrument.id)
+          // Umsetzbarkeit wird aus Sicht einer Ebene bewertet – ein Instrument gilt nur für eine.
+          const ebene = land === null ? 'bund' : 'land'
+          const bisher = instrumentEbene.get(instrument.id)
+          if (bisher && bisher !== ebene)
+            f(mOrt, `Instrument ${instrument.id} wird schon für Maßnahmen der ${bisher === 'bund' ? 'Bundes' : 'Landes'}ebene genutzt – für jede Ebene ein eigenes Instrument anlegen`)
+          instrumentEbene.set(instrument.id, ebene)
+        }
+        if (landtagswahl) m.landtagswahl = landtagswahl
 
-        // Stand der Forschung: Höchste Wirksamkeit nur mit belegter Wirkung (docs/methode.md).
-        if (mRoh.evidenz !== undefined) {
-          if (!(EVIDENZ as readonly unknown[]).includes(mRoh.evidenz)) f(mOrt, `„evidenz“ muss ${EVIDENZ.map((e) => `„${e}“`).join(', ')} sein`)
-          else m.evidenz = mRoh.evidenz as Massnahme['evidenz']
-        }
-        // KI-Entwurf: in der geschlossenen Testphase sichtbar, deshalb schon vollständig (mit Forschungsstand).
-        const kiEntwurf = mRoh.ki_entwurf !== undefined && wahrheitswert(mOrt, mRoh, 'ki_entwurf')
-        if (!katalog.fiktiv) {
-          if (m.wirksamkeit === 3 && m.evidenz !== 'belegt') f(mOrt, '„wirksamkeit“ 3 nur mit „evidenz“: „belegt“ – sonst höchstens 2')
-          if ((m.geprueft || kiEntwurf) && !m.evidenz)
-            f(mOrt, '„evidenz“ fehlt – vor „geprueft“ bzw. bei KI-Entwürfen angeben, wie gut die Wirkung belegt ist')
-        }
         // Wörtliches Zitat aus dem Programm: macht die Prüfung nachvollziehbar
         // (Suche im PDF). Bei echten Daten Pflicht.
         if (mRoh.zitat !== undefined || !katalog.fiktiv) {
@@ -456,8 +714,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
           if (zitat) m.zitat = zitat
         }
 
-        if (massnahmeIds.has(m.id)) f(mOrt, `Maßnahmen-ID ${m.id} ist doppelt`)
-        massnahmeIds.add(m.id)
+        neueId(mOrt, m.id, 'Maßnahmen')
 
         // Ursachen müssen zum Thema gehören.
         const ids = mRoh.ursachen_ids
@@ -487,56 +744,20 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
           f(mOrt, `„stand“ ${m.stand} liegt vor dem Programmstand ${programm.stand} – bitte im aktuellen Programm neu prüfen`)
         }
 
-        // Rollen-Modifikatoren: nur bekannte Rollen, kleiner Wert, immer begründet.
-        const rm = mRoh.rollen_modifikator
-        if (rm !== undefined && rm !== null) {
-          if (!istObjekt(rm)) f(mOrt, '„rollen_modifikator“ muss ein Objekt sein')
-          else {
-            for (const [rolle, mod] of Object.entries(rm)) {
-              const rOrt = `${mOrt} › rollen_modifikator.${rolle}`
-              if (!(ROLLEN_IDS as readonly string[]).includes(rolle)) f(rOrt, `unbekannte Rolle (erlaubt: ${ROLLEN_IDS.join(', ')})`)
-              if (!istObjekt(mod)) {
-                f(rOrt, 'erwartet { wert, begruendung }')
-                continue
-              }
-              unbekannteFelder(rOrt, mod, ['wert', 'begruendung'])
-              ganzzahl(rOrt, mod, 'wert', -2, 2)
-              if (mod.wert === 0) f(rOrt, '„wert“ 0 hat keine Wirkung – Eintrag weglassen')
-              text(rOrt, mod, 'begruendung', 200)
-            }
-            m.rollen_modifikator = rm as Massnahme['rollen_modifikator']
-          }
-        }
-
-        // Ergebnis der Prüfung durch Eingeladene (npm run pruefung:uebernehmen): Anzahl und Mediane,
-        // nie Namen. Bei echten Daten gilt eine Maßnahme erst ab zwei Bewertungen als geprüft.
-        const bw = mRoh.bewertung
-        let anzahl = 0
-        if (bw !== undefined) {
-          const bOrt = `${mOrt} › bewertung`
-          if (!istObjekt(bw)) f(bOrt, 'erwartet ein Objekt mit anzahl, median_w, median_u, spannweite, datum, entwurf')
-          else {
-            unbekannteFelder(bOrt, bw, ['anzahl', 'median_w', 'median_u', 'spannweite', 'datum', 'entwurf'])
-            anzahl = ganzzahl(bOrt, bw, 'anzahl', 1, 99)
-            const mw = ganzzahl(bOrt, bw, 'median_w', 0, 3)
-            const mu = ganzzahl(bOrt, bw, 'median_u', 0, 3)
-            ganzzahl(bOrt, bw, 'spannweite', 0, 3)
-            datum(bOrt, bw, 'datum')
-            const e = bw.entwurf
-            if (!Array.isArray(e) || e.length !== 2 || e.some((x) => !Number.isInteger(x) || x < 0 || x > 3))
-              f(bOrt, '„entwurf“ muss [Wirksamkeit, Umsetzbarkeit] des Entwurfs sein, je 0 bis 3')
-            if (mw !== m.wirksamkeit || mu !== m.umsetzbarkeit)
-              f(bOrt, '„wirksamkeit“/„umsetzbarkeit“ weichen von den Medianen der Prüfung ab – neu prüfen lassen oder „bewertung“ anpassen')
-          }
-        }
-        if (!katalog.fiktiv && m.geprueft && anzahl < 2) {
-          f(mOrt, '„geprueft“ erst ab zwei unabhängigen Bewertungen („bewertung.anzahl“ ≥ 2, siehe daten/README.md → „Prüfung“)')
+        // Geprüft erst ab zwei unabhängigen Bewertungen – bei Instrumenten die des Instruments.
+        if (!katalog.fiktiv && m.geprueft && bewertung.bewertungen < 2) {
+          f(
+            mOrt,
+            instrument
+              ? `„geprueft“ erst, wenn Instrument ${instrument.id} zwei unabhängige Bewertungen hat („bewertung.anzahl“ ≥ 2, siehe daten/README.md → „Prüfung“)`
+              : '„geprueft“ erst ab zwei unabhängigen Bewertungen („bewertung.anzahl“ ≥ 2, siehe daten/README.md → „Prüfung“)',
+          )
         }
 
         if (!m.geprueft) {
           alleGeprueft = false
           if (!kiEntwurf) alleKiOderGeprueft = false
-          if (!katalog.fiktiv) {
+          if (!katalog.fiktiv && aktuell) {
             warnungen.push(`${mOrt}: noch nicht geprüft – bis alle Maßnahmen der Partei zum Thema geprüft sind, gilt es als „noch nicht erfasst“`)
           }
         }
@@ -545,8 +766,12 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
       }
       katalog.abdeckung.push({
         thema_id: thema.id, partei_id: parteiId, land, art: 'massnahmen', begruendung: null, stand: neuesterStand, geprueft: alleGeprueft,
-        ki_entwurf: !alleGeprueft && alleKiOderGeprueft,
+        ki_entwurf: !alleGeprueft && alleKiOderGeprueft, ...(landtagswahl ? { landtagswahl } : {}), aktuell,
       })
+    }
+
+    for (const id of eigeneInstrumente.keys()) {
+      if (!instrumentGenutzt.has(id)) warnungen.push(`${ort}: Instrument ${id} wird von keiner Maßnahme genutzt`)
     }
 
     // Landesprogramme sind eine Ergänzung: Maßgeblich für „noch nicht erfasst“ ist das Bundesprogramm.
@@ -568,6 +793,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Pru
   const nachId = <T extends { id: number }>(a: T, b: T) => a.id - b.id
   katalog.themen.sort(nachId)
   katalog.ursachen.sort(nachId)
+  katalog.instrumente.sort(nachId)
   katalog.massnahmen.sort(nachId)
   return { katalog, fehler, warnungen }
 }

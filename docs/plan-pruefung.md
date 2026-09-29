@@ -4,7 +4,7 @@ Stand: 28. 9. 2026. Umsetzung in einem eigenen Pull Request.
 
 ## Ziel
 
-Die Betreiberin schickt 2–3 (oder mehr) Bekannten mit Fachwissen je einen persönlichen Link. Sie bewerten in der App die Maßnahmen eines Themas nach dem Maßstab in `daten/README.md`. Die App sammelt die Bewertungen, bildet je Maßnahme den **Median** und zeigt, wo die Prüfenden weit auseinanderliegen. Die Ergebnisse werden per Skript in den Datenkatalog übernommen.
+Die Betreiberin schickt 2–3 (oder mehr) Bekannten mit Fachwissen je einen persönlichen Link. Sie bewerten in der App die Maßnahmen eines Themas nach dem Maßstab in `daten/README.md` – gleiche Lösungswege aus mehreren Programmen als ein **Instrument** nur einmal (`daten/README.md` → „Instrumente“; in der Datenbank steht dann die Instrument-ID in `massnahme_id`, beide teilen sich einen Nummernkreis). Die App sammelt die Bewertungen, bildet je Maßnahme den **Median** und zeigt, wo die Prüfenden weit auseinanderliegen. Die Ergebnisse werden per Skript in den Datenkatalog übernommen.
 
 ## Entscheidungen (von der Betreiberin getroffen)
 
@@ -68,7 +68,7 @@ pruef_bewertungen (
 
 ### 3. Maßnahmen für die Prüfseite
 
-Die ungeprüften Maßnahmen stehen nicht in der Datenbank (dort nur `spielbareMassnahmen`). Die Prüfseite lädt sie deshalb **aus dem Datenkatalog im Bundle** (`daten/`, wie `src/data/mock.ts` es für `daten/beispiel/` tut). Das ist unbedenklich: `daten/` ist ohnehin öffentlich im Repo. In der Datenbank landen nur die Bewertungen mit Maßnahmen-ID.
+Die ungeprüften Maßnahmen stehen nicht in der Datenbank (dort nur `spielbareMassnahmen`); welche IDs je Thema bewertet werden dürfen, schreibt der Seed in die Tabelle `pruef_einheiten`, die nur die Edge Function liest. Die Prüfseite lädt sie deshalb **aus dem Datenkatalog im Bundle** (`daten/`, wie `src/data/mock.ts` es für `daten/beispiel/` tut). Das ist unbedenklich: `daten/` ist ohnehin öffentlich im Repo. In der Datenbank landen nur die Bewertungen mit Maßnahmen-ID.
 
 ### 4. Prüfseite in der App (`#/pruefen/<token>`)
 

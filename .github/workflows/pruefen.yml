@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # für den Vergleich der IDs mit dem Zielzweig
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -17,6 +19,11 @@ jobs:
       - run: npm ci
       - name: Datenkatalog prüfen
         run: npm run daten:pruefen
+      - name: Keine ID entfernt oder umgewidmet
+        if: github.event_name == 'pull_request'
+        env:
+          ZIEL: origin/${{ github.base_ref }}
+        run: npm run daten:id -- --gegen "$ZIEL"
       - run: npm run lint
       - run: npm test
       - run: npm run build

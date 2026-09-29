@@ -6,7 +6,7 @@ Lizenz: [CC BY 4.0](LICENSE) für Auswahl, Struktur, Ursachen, Bewertungen und B
 
 Änderungen laufen per Pull Request mit Quellenpflicht. Jeder Pull Request wird automatisch geprüft (`npm run daten:pruefen`).
 
-> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind bisher für Miete, Schule, Arbeitsplätze sowie Zuwanderung und Integration erfasst (die letzten drei als KI-Entwurf aus den Bundesprogrammen, Schule zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase.
+> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind bisher für Miete, Schule, Arbeitsplätze sowie Zuwanderung und Integration erfasst (die letzten drei als KI-Entwurf aus den Bundesprogrammen, Schule zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 46 Instrumente zusammengefasst (siehe „Instrumente“).
 >
 > Die fiktiven Beispieldaten für „Mit Beispieldaten spielen“ und die Tests liegen getrennt in [`beispiel/`](beispiel/) und werden nicht weiter gepflegt.
 
@@ -19,8 +19,8 @@ Die Reihenfolge ist wichtig für die Neutralität.
    Ursachen **lösungsoffen** formulieren (was schiefläuft, nicht wie es zu beheben ist), Quellen unterschiedlicher Ausrichtung heranziehen und eine **Perspektivenprüfung** machen: Kommen die in der Fachdebatte vertretenen Problemdiagnosen in mindestens einer belegten Ursache vor? Ergebnis, Zuständigkeitsebene (Bund oder Land) und verworfene Kandidaten in [`docs/perspektiven-ursachen.md`](../docs/perspektiven-ursachen.md) festhalten (Regeln: [`docs/methode.md`](../docs/methode.md) → „Ursachen“).
    Eigener Pull Request, damit die Ursachen feststehen, bevor Maßnahmen dazukommen. Die Themendatei enthält dann noch keine `abdeckung` – das Thema gilt für alle Parteien als „noch nicht erfasst“.
 2. **Maßnahmen aus den Programmen erfassen.**
-   Für **jede** Partei entweder Maßnahmen mit **wörtlichem Zitat** (`zitat`) und Seitenanker eintragen oder ausdrücklich `keine_massnahme` mit kurzer Begründung („Programm Stand … durchsucht, Kapitel … enthält nichts zu …“). Neue Einträge haben `"geprueft": false`. Nur Maßnahmen aufnehmen, die an einer der erfassten Ursachen ansetzen. Ursachen werden dafür grundsätzlich nicht nachträglich ergänzt; Ausnahmen (bisher: Miete, Ursache 204) sind mit `nachtraeglich` gekennzeichnet.
-3. **Entwurf bewerten** nach dem Maßstab unten, möglichst **ohne Parteinamen** (Maßnahmentext allein beurteilen). Die Entwurfswerte sind die „Empfehlung“, die Prüfende erst nach ihrer eigenen Bewertung sehen.
+   Für **jede** Partei entweder Maßnahmen mit **wörtlichem Zitat** (`zitat`) und Seitenanker eintragen oder ausdrücklich `keine_massnahme` mit kurzer Begründung („Programm Stand … durchsucht, Kapitel … enthält nichts zu …“). Neue Einträge haben `"geprueft": false`. Nur Maßnahmen aufnehmen, die an einer der erfassten Ursachen ansetzen. Ursachen werden dafür grundsätzlich nicht nachträglich ergänzt; Ausnahmen (bisher: Miete, Ursache 204) sind mit `nachtraeglich` gekennzeichnet. Werkzeuge dafür: siehe „Erfassen“.
+3. **Entwurf bewerten** nach dem Maßstab unten, möglichst **ohne Parteinamen** (Maßnahmentext allein beurteilen). Schlägt ein anderes Programm denselben Lösungsweg vor, auf dessen **Instrument** verweisen statt neu zu bewerten; kommt ein Lösungsweg in mehreren Programmen vor, ein Instrument anlegen (siehe „Instrumente“). Die Entwurfswerte sind die „Empfehlung“, die Prüfende erst nach ihrer eigenen Bewertung sehen.
 4. **Prüfen:** Eingeladene Prüfende bewerten in der App, die Betreiberin prüft die Belege und setzt `"geprueft": true` (siehe „Prüfung“).
 
 Ins Spiel kommt ein Thema für eine Partei erst, wenn der **ganze Eintrag** geprüft ist: alle Maßnahmen der Partei zum Thema bzw. `keine_massnahme`. Bis dahin gilt es als **„noch nicht erfasst“** – die App zeigt das so an und wertet Runden mit dieser Partei zu diesem Thema nicht (fehlende Daten sollen keiner Partei einen Punkt kosten). Ungeprüfte Einträge bleiben als Entwurf im Repo und landen nicht in der Datenbank. Bei fiktiven Daten zählt alles.
@@ -39,13 +39,13 @@ Ein Pull Request pro Thema. Die Prüfung hat zwei Teile: Die **Bewertung** über
 ### Bewertung durch eingeladene Prüfende
 
 1. **Einladen:** In der Admin-Ansicht (`#/admin` → „Prüfung“) je Person eine Einladung mit Name und Themen anlegen. Der Link wird nur einmal angezeigt – kopieren und persönlich schicken.
-2. **Bewerten:** Die Person willigt ein und bewertet in der App (`#/pruefen/…`) jede Maßnahme des Themas: ohne Parteinamen, in gemischter Reihenfolge, ohne die Bewertungen der anderen zu sehen. Die Empfehlung (Entwurfswerte und Begründung) wird erst nach der eigenen Bewertung sichtbar; Änderungen danach werden vermerkt. Am Ende „Absenden“.
-3. **Auswerten:** Admin → „Prüfung“ → „Auswertung“ zeigt je Maßnahme alle Einzelwerte, Median Wirksamkeit, Median Umsetzbarkeit, Punkte (= Median W × Median U) und Spannweite. Es zählen nur abgesendete Bewertungen nicht gesperrter Einladungen.
-4. **Übernehmen:** „Export (ohne Namen)“ herunterladen, dann `npm run pruefung:uebernehmen -- <export.json>`. Das Skript schreibt die Mediane als `wirksamkeit`/`umsetzbarkeit` und hält in `bewertung` Anzahl, Mediane, Spannweite, Datum und die ursprünglichen Entwurfswerte fest. Die Exportdatei selbst gehört nicht ins Repo.
+2. **Bewerten:** Die Person willigt ein und bewertet in der App (`#/pruefen/…`) jede **Prüfeinheit** des Themas – ein Instrument einmal für alle Programme, die es vorschlagen (die Formulierungen aus den Programmen stehen dabei), sonst die einzelne Maßnahme: ohne Parteinamen, in gemischter Reihenfolge, ohne die Bewertungen der anderen zu sehen. Die Empfehlung (Entwurfswerte und Begründung) wird erst nach der eigenen Bewertung sichtbar; Änderungen danach werden vermerkt. Am Ende „Absenden“.
+3. **Auswerten:** Admin → „Prüfung“ → „Auswertung“ zeigt je Prüfeinheit alle Einzelwerte, Median Wirksamkeit, Median Umsetzbarkeit, Punkte (= Median W × Median U) und Spannweite. Es zählen nur abgesendete Bewertungen nicht gesperrter Einladungen.
+4. **Übernehmen:** „Export (ohne Namen)“ herunterladen, dann `npm run pruefung:uebernehmen -- <export.json>`. Das Skript schreibt die Mediane als `wirksamkeit`/`umsetzbarkeit` an das Instrument bzw. die Maßnahme ohne Instrument und hält in `bewertung` Anzahl, Mediane, Spannweite, Datum und die ursprünglichen Entwurfswerte fest. Die Exportdatei selbst gehört nicht ins Repo.
 
 Regeln:
 
-- **Mindestens 2, besser 3** unabhängige Bewertungen je Thema. Bei echten Daten darf eine Maßnahme erst mit `bewertung.anzahl` ≥ 2 `geprueft: true` sein (prüft `npm run daten:pruefen`).
+- **Mindestens 2, besser 3** unabhängige Bewertungen je Thema. Bei echten Daten darf eine Maßnahme erst mit `bewertung.anzahl` ≥ 2 `geprueft: true` sein – bei Maßnahmen mit Instrument zählt die `bewertung` des Instruments (prüft `npm run daten:pruefen`).
 - **Median je Kriterium**, Punkte erst daraus. Bei gerader Anzahl mit zwei verschiedenen mittleren Werten (z. B. 2,5) entscheidet die Betreiberin zwischen diesen beiden, trägt den Wert in der Exportdatei ein und begründet es im Pull Request – das Skript nimmt vorher nichts an.
 - **Spannweite ≥ 2:** vor der Übernahme klären – Maßstab hier präzisieren oder bei den Prüfenden nachfragen. Danach übernehmen mit `--geklaert`.
 - **Namen nie ins Repo.** Im Datenkatalog stehen nur Anzahl, Median, Spannweite und Datum; die Zuordnung Person ↔ Bewertung bleibt in Supabase. Die Methodenseite nennt Namen nur von Personen, die der öffentlichen Nennung zugestimmt haben, sonst „von n unabhängigen Prüfenden“.
@@ -60,7 +60,9 @@ Regeln:
 
 ## Programme
 
-Grundlage sind die Wahlprogramme zur Bundestagswahl 2025. Neuere Grundsatzprogramme gibt es bisher bei keiner der Parteien (Stand September 2026: SPD, FDP und Linke wollen 2027 neue beschließen; CDU 2024, Grüne 2020, AfD 2016). Kommt ein neues Programm hinzu, `programm_url` und `programm_stand` anpassen – die Prüfung meldet dann alle älteren Einträge zur Neuprüfung.
+Grundlage sind die Wahlprogramme zur Bundestagswahl 2025. Neuere Grundsatzprogramme gibt es bisher bei keiner der Parteien (Stand September 2026: SPD, FDP und Linke wollen 2027 neue beschließen; CDU 2024, Grüne 2020, AfD 2016). Kommt ein neues Programm hinzu, `programm_url`, `programm_stand` und die Prüfsumme anpassen (`npm run programm:sichern -- <url>`) – die Prüfung meldet dann alle älteren Einträge zur Neuprüfung.
+
+Zu jedem Programm steht in `parteien.json` die **SHA-256-Prüfsumme** der ausgewerteten PDF-Datei (`programm_sha256` bzw. `sha256`). Sie belegt, welche Fassung ausgewertet wurde, auch wenn eine Partei die Datei später austauscht oder löscht: Die Zitatprüfung warnt, wenn die abrufbare Datei abweicht, und der wöchentliche Lauf sichert jedes Programm im Internet Archive, dessen Kopie sich über die Prüfsumme als dieselbe Fassung erkennen lässt.
 
 | ID | Partei | Programm | Beschluss |
 | --- | --- | --- | --- |
@@ -76,7 +78,7 @@ Seitenanker `#page=N` zählen PDF-Seiten, nicht die gedruckten Seitenzahlen. Die
 
 ### Landesprogramme
 
-Für Ursachen mit `ebene: land` zählt bei gewähltem Bundesland das Wahlprogramm der laufenden Wahlperiode (siehe `parteien.json` → `landesprogramme`). Datum = Beschluss; bei FDP Berlin ist kein Beschlussdatum veröffentlicht, dort steht das Datum der Endfassung. Die Server der Linken in ST und BE sind aus GitHub Actions nicht erreichbar; deren Zitate prüft die automatische Prüfung deshalb nicht (Warnung) – sie wurden lokal gegen die PDFs geprüft.
+Für Ursachen mit `ebene: land` zählt bei gewähltem Bundesland das Wahlprogramm der laufenden Wahlperiode (siehe `parteien.json` → `landesprogramme`). Datum = Beschluss; bei FDP Berlin ist kein Beschlussdatum veröffentlicht, dort steht das Datum der Endfassung. Die Server der Linken in ST und BE sind aus GitHub Actions zeitweise nicht erreichbar; deren Zitate prüft die automatische Prüfung dann über die Kopie im Internet Archive oder gar nicht (Warnung) – lokal mit `npm run zitate:pruefen -- --lokal <ordner>` (siehe „Erfassen“).
 
 | Land | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -151,6 +153,14 @@ Feld `evidenz`: `belegt` (übereinstimmende Studien oder Erfahrungen anderswo), 
 
 Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der Partei, nur der Maßnahme.
 
+### Instrumente
+
+Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an Schulen oder mehr Schulsozialarbeit. Damit er überall gleich bewertet wird, auch in anderen Ländern und späteren Wahlperioden, stehen Wirksamkeit, Umsetzbarkeit, Begründung, Forschungsstand und Studie **einmal** am Instrument (`instrumente` in der Themendatei). Jede Maßnahme, die ihn vorschlägt, verweist mit `instrument` darauf und hat selbst nur Beschreibung, Ursachen, Zitat und Beleg. Prüfende bewerten das Instrument einmal; das Ergebnis gilt für alle Maßnahmen dahinter.
+
+- **Gleicher Lösungsweg, gleiches Instrument.** Unterscheidet sich eine Maßnahme so, dass sie anders zu bewerten ist – etwa ein Schulbauprogramm mit Betrag statt ohne –, bekommt sie ein eigenes Instrument (bei nur einem Programm: eigene Bewertung ohne Instrument).
+- **Eine Ebene je Instrument.** Die Umsetzbarkeit wird aus Sicht von Bund oder Land bewertet; dasselbe Vorhaben im Bundes- und im Landesprogramm braucht deshalb zwei Instrumente.
+- Instrumente und Maßnahmen teilen sich einen Nummernkreis (siehe „IDs“).
+
 ## Dateiformat
 
 ### `parteien.json`
@@ -165,7 +175,8 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
       "kurzname": "Kurz",
       "farbe": "#1a2b3c",
       "programm_url": "https://…/wahlprogramm.pdf",
-      "programm_stand": "2026-01-01"
+      "programm_stand": "2026-01-01",
+      "programm_sha256": "64 Zeichen, von npm run programm:sichern"
     }
   ]
 }
@@ -186,7 +197,7 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
       "id": 11,
       "…": "…",
       "landesprogramme": [
-        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://…/landeswahlprogramm.pdf", "stand": "2026-03-14" },
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://…/landeswahlprogramm.pdf", "stand": "2026-03-14", "sha256": "…" },
         { "land": "MV", "landtagswahl": "2026-09-20", "kein_programm": "Zur Landtagswahl nicht angetreten." }
       ]
     }
@@ -195,8 +206,8 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 ```
 
 - `laender` nennt nur Länder, für die Landesprogramme erfasst werden, mit dem Datum der letzten Landtagswahl. In der App stehen sie zur Wahl, sobald für das Land mindestens ein Eintrag geprüft ist.
-- Je Partei und Land höchstens ein Eintrag: das Programm zur letzten Wahl (`url`, Beschlussdatum `stand`) oder `kein_programm` mit Begründung (nicht angetreten, kein Programm veröffentlicht). Fehlt der Eintrag, gilt das Land für die Partei als „noch nicht erfasst“.
-- **Laufende Wahlperiode:** Nach einer neuen Landtagswahl `letzte_wahl` ändern. Ältere Programme zählen dann automatisch nicht mehr (Warnung), bis das neue eingetragen ist.
+- Je Partei, Land und Landtagswahl ein Eintrag: das Programm (`url`, Beschlussdatum `stand`, Prüfsumme `sha256`) oder `kein_programm` mit Begründung (nicht angetreten, kein Programm veröffentlicht). Fehlt der Eintrag zur letzten Wahl, gilt das Land für die Partei als „noch nicht erfasst“.
+- **Laufende Wahlperiode:** Es zählt nur das Programm zur `letzte_wahl` des Landes. Programme früherer Wahlen **bleiben stehen**, ebenso ihre Maßnahmen – sie belegen gespielte Runden, zählen aber nicht mehr und werden nicht mehr geprüft. Ablauf siehe „Neue Wahlperiode“.
 
 ### `themen/NN-name.json` – eine Datei pro Thema
 
@@ -209,6 +220,16 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
   "schlagwoerter": ["kita", "betreuung"],
   "ursachen": [
     { "id": 401, "beschreibung": "Zu wenige Fachkräfte", "quelle_url": "https://…", "ebene": "land" }
+  ],
+  "instrumente": [
+    {
+      "id": 6200,
+      "name": "Quereinstieg mit Qualifizierung",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein bis zwei neutrale Sätze.",
+      "evidenz": "gemischt"
+    }
   ],
   "abdeckung": [
     {
@@ -234,8 +255,19 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
     {
       "partei_id": 1,
       "land": "ST",
+      "landtagswahl": "2026-09-06",
       "massnahmen": [
-        { "id": 102, "…": "wie oben, Beleg im Landesprogramm, nur Ursachen mit \"ebene\": \"land\"" }
+        {
+          "id": 102,
+          "instrument": 6200,
+          "beschreibung": "Seiteneinsteiger berufsbegleitend qualifizieren",
+          "ursachen_ids": [401],
+          "zitat": "…",
+          "beleg_programm_url": "https://…/landeswahlprogramm.pdf#page=31",
+          "stand": "2026-09-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
       ]
     },
     {
@@ -250,9 +282,10 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 }
 ```
 
-- **IDs** sind im ganzen Katalog eindeutig und ändern sich nie (gespielte Runden verweisen darauf). Konvention für Ursachen: Themen-ID × 100 + laufende Nummer; für Maßnahmen: Themen-ID × 1000 + laufende Nummer (Miete: 2001, 2002 …).
+- **IDs:** siehe „IDs“ unten.
+- `instrumente` (optional): gemeinsame Bewertung gleicher Lösungswege, siehe „Instrumente“. Eine Maßnahme mit `instrument` hat **keine** eigenen Felder `wirksamkeit`, `umsetzbarkeit`, `begruendung`, `evidenz`, `beleg_studie_url`, `rollen_modifikator` und `bewertung` – die kommen vom Instrument. Ein Instrument, auf das keine Maßnahme verweist, meldet die Prüfung (Warnung).
 - `ebene` (Pflicht bei Ursachen): `bund` oder `land` – wer vor allem zuständig ist. Bei `land` zählt das Landesprogramm, wenn Spielende ein Bundesland wählen; sonst das Bundesprogramm. Zuordnung und Begründung in [`docs/perspektiven-ursachen.md`](../docs/perspektiven-ursachen.md).
-- `land` (bei Abdeckungseinträgen): Eintrag aus dem Landesprogramm der Partei in diesem Land. Ohne `land` ist es das Bundesprogramm. Je Thema, Partei und Programm höchstens ein Eintrag. Landeseinträge sind eine Ergänzung: „noch nicht erfasst“ bezieht sich auf das Bundesprogramm; für Landesursachen gibt es bei gewähltem Bundesland zusätzlich „noch nicht erfasst“ für das Land.
+- `land` und `landtagswahl` (bei Abdeckungseinträgen): Eintrag aus dem Landesprogramm der Partei in diesem Land zu dieser Wahl. Ohne `land` ist es das Bundesprogramm. Je Thema, Partei und Programm höchstens ein Eintrag. Landeseinträge sind eine Ergänzung: „noch nicht erfasst“ bezieht sich auf das Bundesprogramm; für Landesursachen gibt es bei gewähltem Bundesland zusätzlich „noch nicht erfasst“ für das Land.
 - `nachtraeglich` (optional, bei Ursachen): Wurde eine Ursache erst nach dem Blick in die Programme ergänzt, steht hier Datum und Grund. Das soll die Ausnahme bleiben und ist im Pull Request zu begründen.
 - `zitat` ist bei echten Daten Pflicht: der Satz aus dem Programm, auf den sich die Maßnahme stützt, wörtlich (Silbentrennungen am Zeilenende zusammengezogen). Es dient der Prüfung und kommt nicht in die Datenbank.
 - `schlagwoerter` braucht nur die Offline-Analyse ohne KI; kleingeschrieben, Umlaute als ae/oe/ue.
@@ -263,20 +296,57 @@ Ein bis zwei neutrale Sätze: was dafür, was dagegen spricht. Keine Wertung der
 - `bewertung` schreibt nur `npm run pruefung:uebernehmen` (siehe „Prüfung“), z. B. `{ "anzahl": 3, "median_w": 2, "median_u": 2, "spannweite": 1, "datum": "2026-10-05", "entwurf": [2, 3] }`. `wirksamkeit` und `umsetzbarkeit` müssen den Medianen entsprechen; `entwurf` hält die ursprünglichen Werte fest.
 - `stand` darf nicht vor dem `programm_stand` der Partei liegen (bei Landeseinträgen: vor dem `stand` des Landesprogramms).
 
+### IDs
+
+- **Einmal vergeben, nie wieder.** Gespielte Runden, Bewertungen der Prüfenden und Links verweisen auf IDs. Deshalb werden Einträge nicht gelöscht, sondern bleiben stehen – auch aus früheren Wahlperioden.
+- **Maßnahmen und Instrumente** teilen sich einen fortlaufenden Nummernkreis ohne Bedeutung: `npm run daten:id` nennt die nächste freie Nummer. Die älteren IDs folgen noch der früheren Regel „Themen-ID × 1000 + laufende Nummer“; sie bleiben, wie sie sind.
+- **Ursachen:** Themen-ID × 100 + laufende Nummer (je Thema reichen 99).
+- Muss ein Eintrag doch weg (etwa doppelt erfasst), kommt seine ID mit Grund in [`ids.json`](ids.json) → `stillgelegt`. Bei jedem Pull Request vergleicht die Prüfung die IDs mit dem Zielzweig: Verschwindet eine ID, ohne stillgelegt zu sein, oder steht sie plötzlich für etwas anderes (anderes Thema, andere Partei, anderes Programm), schlägt sie fehl.
+
+## Erfassen
+
+Werkzeuge für Schritt 2 und 3 des Ablaufs (neues Thema oder neues Programm). Sie brauchen Internet oder eine lokale Kopie des PDFs.
+
+```bash
+npm run programm:text -- <url|datei.pdf> auszug.txt       # Text mit Seitenmarken „===== Seite N =====“ (N = #page=N)
+npm run programm:text -- <url|datei.pdf> --suche "Wort"   # Fundstellen mit Seite
+npm run programm:sichern -- <url> [--datei kopie.pdf]     # Prüfsumme in parteien.json, Kopie im Internet Archive
+npm run daten:id                                          # nächste freie ID
+npm run daten:pruefen                                     # Format, Instrumente, Belege
+npm run zitate:pruefen -- --thema 4                       # Zitate gegen die PDFs
+npm run zitate:pruefen -- --thema 4 --lokal pdfs/         # dasselbe mit lokalen PDFs (Zuordnung über die Prüfsumme)
+npm run punkte -- 4                                       # Punkte je Partei und Ursache, Bund und jedes Land
+npm run seed && npm run dashboard                         # Datenbank- und Dashboard-Dateien neu erzeugen
+```
+
+Reihenfolge beim Erfassen eines Programms: Programm in `parteien.json` eintragen und sichern → Text auslesen und nach den Ursachen des Themas durchsuchen → Maßnahmen mit Zitat eintragen, vorhandene Instrumente wiederverwenden (`instrumente` der Themendatei), neue anlegen → `daten:pruefen`, `zitate:pruefen`, `punkte` → Pull Request.
+
+## Neue Wahlperiode
+
+**Landtagswahl:** Programme werden erfasst, sobald sie beschlossen sind; bis zur Wahl zählt weiter das Programm der laufenden Wahlperiode.
+
+1. Neue Einträge unter `landesprogramme` mit der neuen `landtagswahl` anlegen und sichern (`npm run programm:sichern`). Die alten bleiben stehen.
+2. Maßnahmen als **neue Abdeckungseinträge** mit neuer `landtagswahl` und **neuen IDs** erfassen. Unveränderte Lösungswege verweisen auf dasselbe Instrument – die Bewertung ist damit schon da, zu prüfen sind nur neue Instrumente und die Belege.
+3. Nach der Wahl `letzte_wahl` des Landes ändern. Ab dann zählen die neuen Einträge, die alten nicht mehr. Fehlt für eine Partei das neue Programm, warnt die Prüfung, und das Land gilt für sie als „noch nicht erfasst“.
+
+**Bundestagswahl:** Bis jetzt gibt es nur ein Bundesprogramm je Partei (`programm_url`). Vor der nächsten Bundestagswahl (spätestens 2029) wird das Format nach dem Muster der Länder erweitert (Programm je Wahl, alte Einträge bleiben stehen); bis dahin gilt „Kommt ein neues Programm hinzu“ unter „Programme“.
+
 ## Was die automatische Prüfung kontrolliert
 
 - Pflichtfelder, Wertebereiche, Datumsformat, keine unbekannten Felder (Tippfehler)
-- eindeutige IDs und Namen
+- eindeutige IDs und Namen; Maßnahmen und Instrumente in einem Nummernkreis; keine stillgelegte ID wiederverwendet; bei Pull Requests: keine ID entfernt oder umgewidmet
+- **Instrumente:** Verweis auf ein Instrument desselben Themas, keine doppelten Bewertungsfelder an der Maßnahme, ein Instrument nur für eine Ebene
 - jede Ursache mit https-Quelle; Maßnahmen verweisen nur auf Ursachen ihres Themas
 - Beleg zeigt ins Programm der richtigen Partei, mit Seitenanker; bei echten Daten ein wörtliches Zitat
 - **Abdeckung:** jede Partei höchstens einmal pro Thema und Programm – mit Maßnahmen oder `keine_massnahme`; fehlende Parteien (Bundesprogramm) werden als „noch nicht erfasst“ gemeldet (Warnung)
-- **Bund und Länder:** jede Ursache mit `ebene`; Landeseinträge nur mit eingetragenem Landesprogramm, Beleg in diesem Programm und nur für Ursachen mit `ebene: land`; Programme früherer Wahlperioden zählen nicht (Warnung)
+- **Bund und Länder:** jede Ursache mit `ebene`; Landeseinträge nur mit eingetragenem Landesprogramm, Beleg in diesem Programm und nur für Ursachen mit `ebene: land`; Programme früherer Wahlperioden bleiben stehen, zählen aber nicht; fehlt das Programm zur letzten Wahl, gibt es eine Warnung
 - **Stand der Forschung:** Wirksamkeit 3 nur mit `evidenz: belegt`; `geprueft` nur mit `evidenz`
 - Einträge sind nicht älter als das aktuelle Programm
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen
 - `supabase/seed.sql` passt zum Katalog
-- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten.
+- bei echten Daten: Prüfsumme je Programm (sonst Warnung)
+- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten oder mit `--lokal`. Weicht eine Datei von der Prüfsumme ab, warnt sie (Programm ausgetauscht?). Montags läuft sie ohne Zwischenspeicher und sichert fehlende Programme im Internet Archive.
 
 ```bash
 npm run daten:pruefen              # Dateien prüfen
@@ -285,4 +355,7 @@ npm run seed                       # supabase/seed.sql neu erzeugen
 npm run dashboard                  # zusätzlich Dateien fürs Supabase-Dashboard
 npm run pruefung:uebernehmen -- export.json   # Ergebnis der Prüfung übernehmen
 npm run zitate:pruefen             # Zitate gegen die Programm-PDFs prüfen (braucht Internet)
+npm run daten:id -- --gegen origin/main       # IDs mit einem anderen Stand vergleichen
 ```
+
+Werkzeuge zum Erfassen: siehe „Erfassen“.

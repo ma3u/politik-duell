@@ -86,6 +86,8 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 
 **Rollen.** Spielende können eine Rolle wählen: Mieter:in, Eigentümer:in, angestellt, selbstständig, Rentner:in, arbeitslos, studierend, vermögend. Wirkt eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter, verschiebt sich ihre Wirksamkeit um bis zu zwei Stufen (innerhalb 0 bis 3). Jede solche Verschiebung ist einzeln begründet und wird angezeigt.
 
+**Gleicher Vorschlag, gleiche Bewertung.** Schlagen mehrere Programme denselben Lösungsweg vor – etwa ein Handyverbot an Schulen –, wird er einmal bewertet und begründet (als *Instrument* im Datenkatalog). Die Bewertung gilt dann für jede Partei, jedes Land und jede spätere Wahlperiode, in der er vorkommt; nur Zitat und Beleg sind je Programm eigene. Unterscheidet sich ein Vorschlag in einem bewertungsrelevanten Punkt – etwa ein Schulbauprogramm mit Betrag statt ohne –, gilt er als eigener Lösungsweg.
+
 ### Punkte in der Runde
 
 1. Pro Ursache zählt die beste Maßnahme einer Partei. Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr Einzelforderungen aufschreibt, nicht wer besser ansetzt. Wer mehrere Ursachen angeht, wird über die Summe belohnt.
@@ -152,7 +154,8 @@ flowchart TD
 ```
 
 - **Blind bewerten:** Die Prüfenden sehen keine Parteinamen, die Maßnahmen kommen in gemischter Reihenfolge, und niemand sieht die Werte der anderen. Den Entwurf mit Begründung sehen sie erst nach ihrer eigenen Bewertung.
-- **Median statt Mittelwert:** Je Maßnahme zählt der Median, getrennt für Wirksamkeit und Umsetzbarkeit. Einzelne Ausreißer verschieben das Ergebnis so kaum.
+- **Einmal je Lösungsweg:** Ein Instrument (derselbe Lösungsweg in mehreren Programmen) bewerten die Prüfenden einmal, mit den Formulierungen aus allen Programmen vor Augen; das Ergebnis gilt für alle.
+- **Median statt Mittelwert:** Je Maßnahme bzw. Instrument zählt der Median, getrennt für Wirksamkeit und Umsetzbarkeit. Einzelne Ausreißer verschieben das Ergebnis so kaum.
 - **Streit wird geklärt, nicht gemittelt:** Liegen zwei Einschätzungen zwei oder mehr Stufen auseinander, wird der Maßstab geklärt, bevor Werte übernommen werden.
 - **KI-Entwürfe:** Die Schritte 2 und 3 (Maßnahmen erfassen, Entwurf bewerten) können mit Hilfe einer KI erstellt werden. Solche Entwürfe sind im Datenkatalog als KI-Entwurf gekennzeichnet (`ki_entwurf`) und zählen öffentlich erst nach der menschlichen Prüfung. In der geschlossenen Testphase – nur mit persönlichem Zugangslink – erscheinen sie im Spiel, mit deutlichem Hinweis am Ergebnis, im Endstand und im Teilen-Text („vorläufige KI-Bewertung – noch nicht von Menschen geprüft“). Die Regel „Die KI vergibt keine Punkte“ gilt für das Spiel selbst: Dort werden Punkte immer aus der Datenbank berechnet.
 - **Zitate automatisch geprüft:** Ein Programm lädt die Wahlprogramme herunter und prüft, ob jedes wörtliche Zitat auf der Seite steht, auf die der Beleg zeigt (`npm run zitate:pruefen`, auch automatisch bei jeder Datenänderung und wöchentlich). Das fängt vor allem ungenaue oder erfundene Zitate ab.

@@ -1,7 +1,7 @@
 // Übernahme der Prüfergebnisse (Export aus Admin → Prüfung) in daten/themen/*.json.
 // Reine Funktionen, damit sie sich testen lassen; das Kommando steht in
 // scripts/uebernehme-pruefung.ts.
-import type { Katalog } from '../src/data/katalog.ts'
+import { pruefEinheiten, type Katalog } from '../src/data/katalog.ts'
 import { KRITISCHE_SPANNWEITE, MINDEST_BEWERTUNGEN, type PruefExport } from '../src/pruefung/auswertung.ts'
 
 const istObjekt = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v)
@@ -31,6 +31,8 @@ export function pruefeExport(roh: unknown, katalog: Katalog, { geklaert = false 
   if (!thema) fehler.push(`Export: unbekanntes Thema ${String(roh.thema_id)}`)
   if (typeof roh.datum !== 'string' || !DATUM.test(roh.datum)) fehler.push('Export: „datum“ muss JJJJ-MM-TT sein')
 
+  // Bewertet werden Prüfeinheiten: Instrumente und Maßnahmen ohne Instrument (Feld heißt weiter „massnahme_id“).
+  const einheiten = pruefEinheiten(katalog)
   const ids = new Set<number>()
   for (const [i, b] of roh.bewertungen.entries()) {
     const ort = `Export › bewertungen[${i}]`
@@ -39,14 +41,14 @@ export function pruefeExport(roh: unknown, katalog: Katalog, { geklaert = false 
       continue
     }
     nur(ort, b, ['massnahme_id', 'anzahl', 'median_w', 'median_u', 'spannweite'])
-    const m = katalog.massnahmen.find((x) => x.id === b.massnahme_id)
-    if (!m) fehler.push(`${ort}: unbekannte Maßnahme ${String(b.massnahme_id)}`)
-    else if (thema && m.thema_id !== thema.id) fehler.push(`${ort}: Maßnahme ${m.id} gehört nicht zum Thema „${thema.name}“`)
+    const m = einheiten.find((x) => x.id === b.massnahme_id)
+    if (!m) fehler.push(`${ort}: unbekannte Maßnahme oder unbekanntes Instrument ${String(b.massnahme_id)}`)
+    else if (thema && m.thema_id !== thema.id) fehler.push(`${ort}: ${m.id} gehört nicht zum Thema „${thema.name}“`)
     if (typeof b.massnahme_id === 'number') {
       if (ids.has(b.massnahme_id)) fehler.push(`${ort}: Maßnahme ${b.massnahme_id} ist doppelt`)
       ids.add(b.massnahme_id)
     }
-    const name = `Maßnahme ${String(b.massnahme_id)}`
+    const name = `${m?.instrument ? 'Instrument' : 'Maßnahme'} ${String(b.massnahme_id)}`
     if (!Number.isInteger(b.anzahl) || (b.anzahl as number) < 1) fehler.push(`${ort}: „anzahl“ muss eine ganze Zahl ab 1 sein`)
     else if ((b.anzahl as number) < MINDEST_BEWERTUNGEN)
       warnungen.push(`${name}: nur ${String(b.anzahl)} Bewertung – für „geprueft“ sind mindestens ${MINDEST_BEWERTUNGEN} nötig`)
@@ -71,7 +73,7 @@ export function pruefeExport(roh: unknown, katalog: Katalog, { geklaert = false 
     }
   }
   if (thema) {
-    const ohne = katalog.massnahmen.filter((m) => m.thema_id === thema.id && !ids.has(m.id)).map((m) => m.id)
+    const ohne = einheiten.filter((m) => m.thema_id === thema.id && !ids.has(m.id)).map((m) => m.id)
     if (ohne.length) warnungen.push(`Ohne Bewertung im Export: ${ohne.join(', ')}`)
   }
   return { export: fehler.length ? null : (roh as unknown as PruefExport), fehler, warnungen }
@@ -84,7 +86,8 @@ export interface Aenderung {
 }
 
 /**
- * Schreibt die Mediane als `wirksamkeit`/`umsetzbarkeit` in die Themendatei und
+ * Schreibt die Mediane als `wirksamkeit`/`umsetzbarkeit` in die Themendatei – an
+ * das Instrument bzw. an die Maßnahme ohne Instrument – und
  * hält Anzahl, Spannweite, Datum und die ursprünglichen Entwurfswerte in
  * `bewertung` fest. `geprueft` bleibt unverändert: Das setzt die Betreiberin
  * nach der Belegprüfung.
@@ -92,34 +95,35 @@ export interface Aenderung {
 export function uebernehme(themaDatei: unknown, daten: PruefExport): { inhalt: unknown; aenderungen: Aenderung[] } {
   const nach = new Map(daten.bewertungen.map((b) => [b.massnahme_id, b]))
   const aenderungen: Aenderung[] = []
-  const t = structuredClone(themaDatei) as { abdeckung?: { massnahmen?: Record<string, unknown>[] }[] }
-  for (const a of t.abdeckung ?? []) {
-    a.massnahmen = a.massnahmen?.map((m) => {
-      const b = nach.get(m.id as number)
-      if (!b) return m
-      const alt = m.bewertung as { entwurf?: [number, number] } | undefined
-      const vorher: [number, number] = [m.wirksamkeit as number, m.umsetzbarkeit as number]
-      aenderungen.push({ massnahme_id: b.massnahme_id, vorher, nachher: [b.median_w, b.median_u] })
-      // Feldreihenfolge erhalten, `bewertung` direkt nach `umsetzbarkeit` – für kleine Diffs.
-      const neu: Record<string, unknown> = {}
-      for (const [k, v] of Object.entries(m)) {
-        if (k === 'bewertung') continue
-        neu[k] = k === 'wirksamkeit' ? b.median_w : k === 'umsetzbarkeit' ? b.median_u : v
-        if (k === 'umsetzbarkeit') {
-          neu.bewertung = {
-            anzahl: b.anzahl,
-            median_w: b.median_w,
-            median_u: b.median_u,
-            spannweite: b.spannweite,
-            datum: daten.datum,
-            // Bei erneuter Übernahme bleibt der ursprüngliche Entwurf stehen.
-            entwurf: alt?.entwurf ?? vorher,
-          }
+  const t = structuredClone(themaDatei) as { instrumente?: Record<string, unknown>[]; abdeckung?: { massnahmen?: Record<string, unknown>[] }[] }
+  const setze = (m: Record<string, unknown>) => {
+    const b = nach.get(m.id as number)
+    // Maßnahmen mit Instrument haben keine eigene Bewertung.
+    if (!b || m.instrument !== undefined) return m
+    const alt = m.bewertung as { entwurf?: [number, number] } | undefined
+    const vorher: [number, number] = [m.wirksamkeit as number, m.umsetzbarkeit as number]
+    aenderungen.push({ massnahme_id: b.massnahme_id, vorher, nachher: [b.median_w, b.median_u] })
+    // Feldreihenfolge erhalten, `bewertung` direkt nach `umsetzbarkeit` – für kleine Diffs.
+    const neu: Record<string, unknown> = {}
+    for (const [k, v] of Object.entries(m)) {
+      if (k === 'bewertung') continue
+      neu[k] = k === 'wirksamkeit' ? b.median_w : k === 'umsetzbarkeit' ? b.median_u : v
+      if (k === 'umsetzbarkeit') {
+        neu.bewertung = {
+          anzahl: b.anzahl,
+          median_w: b.median_w,
+          median_u: b.median_u,
+          spannweite: b.spannweite,
+          datum: daten.datum,
+          // Bei erneuter Übernahme bleibt der ursprüngliche Entwurf stehen.
+          entwurf: alt?.entwurf ?? vorher,
         }
       }
-      return neu
-    })
+    }
+    return neu
   }
+  t.instrumente = t.instrumente?.map(setze)
+  for (const a of t.abdeckung ?? []) a.massnahmen = a.massnahmen?.map(setze)
   return { inhalt: t, aenderungen }
 }
 

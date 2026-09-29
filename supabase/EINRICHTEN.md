@@ -188,8 +188,8 @@ Einmalig, **in dieser Reihenfolge**. Ablauf und Regeln: [`daten/README.md`](../d
    → **Copy raw file** → im SQL Editor einfügen → **Run**. Erwartet: „Success. No rows returned“.
    Die Edge Function bleibt unverändert.
 
-Nach Änderungen an den Maßnahmen eines Themas (neue IDs) `npm run dashboard` ausführen und `3-pruefung.ts`
-neu einspielen – die Funktion kennt die Maßnahmen-IDs je Thema aus dem Datenkatalog.
+Neue Maßnahmen oder Instrumente kennt die Funktion über die Tabelle `pruef_einheiten`, die `seed.sql`
+schreibt (siehe Schritt 10) – ein neues Deploy ist dafür nicht nötig.
 
 ### 8. Bund und Länder, Stand der Forschung
 
@@ -227,13 +227,28 @@ Einmalig, **in dieser Reihenfolge**. Wer einen Zugangslink hat, sieht im Spiel z
    der Person persönlich schicken (er wird nur einmal angezeigt). Einzelne Zugänge lassen sich sperren oder löschen.
    Wer den Link öffnet, bleibt in diesem Browser in der Testphase, bis er „Testphase verlassen“ wählt.
 
+### 10. Prüfeinheiten in der Datenbank
+
+Einmalig, **in dieser Reihenfolge**. Danach muss die Funktion `pruefung` bei neuen Daten nicht mehr neu
+deployt werden – `seed.sql` reicht.
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261003000000_pruef_einheiten.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261003000000_pruef_einheiten.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Legt die Tabelle `pruef_einheiten` an (nur für die Edge Function lesbar).
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1).
+3. **Edge Function aktualisieren:** in der Funktion `pruefung` den Code durch
+   [`supabase/dashboard/3-pruefung.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/3-pruefung.ts)
+   ersetzen → **Deploy** (braucht Schritt 1 und 2, sonst findet sie keine Prüfeinheiten).
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.
 Danach im Dashboard:
 
-- **Beispieldaten geändert:** nur den Inhalt von `supabase/seed.sql` im SQL Editor ausführen
-  (mehrfach ausführbar, gespielte Runden bleiben erhalten).
+- **Daten geändert** (neue Maßnahmen, Instrumente, Programme): nur den Inhalt von `supabase/seed.sql` im
+  SQL Editor ausführen (mehrfach ausführbar, gespielte Runden und Bewertungen bleiben erhalten). Die Edge
+  Functions bleiben unverändert.
 - **Edge Function geändert:** in der Funktion `analyse` den Code durch `2-analyse.ts` ersetzen → Deploy
   (bzw. `pruefung` durch `3-pruefung.ts`).
 - **Neue Migration:** nur die neue Datei aus `supabase/migrations/` im SQL Editor ausführen.
