@@ -183,7 +183,7 @@ Verworfen:
 
 ## Arzttermine (1)
 
-Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+Stand: 30. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Neue Ursachen kommen nicht hinzu, eine wird genauer gefasst.
 
@@ -206,7 +206,7 @@ Verworfen:
 
 ## Miete (2)
 
-Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+Stand: 30. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 Die Maßnahmen der Bundesprogramme waren schon erfasst (27. und 28. 9. 2026). Die Prüfung stützt sich trotzdem nur auf Fachquellen. Zwei belegte Diagnosen deckte keine Ursache ab. Sie sind jetzt als 205 und 206 aufgenommen und mit `nachtraeglich` gekennzeichnet.
 
@@ -246,7 +246,7 @@ Verworfen:
 
 ## Energiepreise (3)
 
-Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+Stand: 30. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Das Ziel („Haushalte können Strom und Heizung dauerhaft bezahlen“) umfasst Strom und Heizung. Die Ursachen deckten bisher aber vor allem den Strompreis ab.
 
@@ -256,13 +256,13 @@ Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Das Ziel („Haus
 | 302 *geändert* | Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis | Bund | Bundesnetzagentur | Stromsteuer senken (breit geteilt); CO₂-Preis abschaffen (eher rechts); Klimageld (eher Mitte/links, auch wirtschaftsliberal) |
 | 303 | Rund 70 % der Energie wird importiert | Bund | Umweltbundesamt | Lieferländer streuen, heimische Förderung (eher konservativ); weniger Verbrauch (eher grün) |
 | **304** *neu* | Der Börsenstrompreis richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk | Bund | Wissenschaftliche Dienste des Bundestages, WD 5-3000-121/22 | mehr erneuerbare Energien und Speicher (eher links/grün); Kohle- und Kernkraftwerke länger (eher rechts/konservativ) |
-| **305** *neu* | Drei Viertel der Wohnungen werden mit Gas oder Öl beheizt | Bund | Destatis, Zensus 2022 | Heizungstausch fördern (eher grün/links); Technologieoffenheit, fossile Preise senken (eher konservativ/rechts) |
+| **305** *neu* | Drei Viertel der Wohnungen wurden 2022 mit Gas oder Öl beheizt | Bund | Destatis, Zensus 2022 | Heizungstausch fördern (eher grün/links); Technologieoffenheit, fossile Preise senken (eher konservativ/rechts) |
 
 **302:** Laut Bundesnetzagentur gehören beim Gas die CO₂-Abgabe und die Energiesteuer zu den Preisbestandteilen, beim Strom Stromsteuer, Umsatzsteuer und Umlagen. Vorher nannte die Ursache nur den Strompreis. Maßnahmen zum CO₂-Preis auf Heizen hätten nicht gepasst.
 
 **304:** Der Strompreis besteht zu einem großen Teil aus den Beschaffungskosten. Die bestimmt an der Börse das teuerste Kraftwerk, das noch gebraucht wird. Laut den Wissenschaftlichen Diensten ist das „heute oft“ ein Gaskraftwerk. Keine der bisherigen Ursachen deckte die Stromerzeugung ab. Die Ursache ist lösungsoffen: Mehr günstiger Strom (erneuerbar oder aus Kohle und Kernkraft) und Speicher setzen hier an.
 
-**305:** Laut Zensus 2022 werden 56 % der Wohnungen mit Gas und 19 % mit Öl beheizt. Die Heizkosten hängen deshalb direkt an den Preisen fossiler Brennstoffe. 303 erfasst die Importabhängigkeit des Landes, nicht die Heiztechnik der Haushalte.
+**305:** Laut Zensus 2022 (Stichtag 15. 5. 2022) wurden 56 % der Wohnungen mit Gas und 19 % mit Öl beheizt. Die Heizkosten hängen deshalb direkt an den Preisen fossiler Brennstoffe. 303 erfasst die Importabhängigkeit des Landes, nicht die Heiztechnik der Haushalte.
 
 Entschieden: **301–305 Bund.** Netzregulierung, Steuern und Abgaben, Energiepolitik und Gebäudeenergierecht (GEG, Förderung) liegen beim Bund. Die kommunale Wärmeplanung ist ein Teil von 305, aber nicht der Hauptteil.
 
@@ -275,7 +275,7 @@ Verworfen:
 
 ## Bus und Bahn (8)
 
-Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+Stand: 30. 9. 2026 · KI-Entwurf, von der Betreiberin freigegeben (Quellen im Original geprüft)
 
 Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Neue Ursachen kommen nicht hinzu, zwei werden genauer gefasst.
 
@@ -330,14 +330,14 @@ Sicherheit (29. 9. 2026), von der KI im Original abgerufen:
 - 907: 85.837 Straftaten (+ ca. 2 %), „Höchststand seit Einführung der Statistik 2001“, 4.156 Gewalttaten (+ rund 1,2 %) (BKA-Pressemitteilung vom 9. 6. 2026)
 - 908: Vergewaltigung 2025 +9,0 %, seit 2018 +72 %; Anzeigequote bei Vergewaltigung und sexuellem Missbrauch 6,2 % (BKA-Pressemitteilung vom 20. 4. 2026)
 
-Arzttermine, Miete, Energiepreise, Bus und Bahn (30. 9. 2026), von der KI im Original abgerufen:
+Arzttermine, Miete, Energiepreise, Bus und Bahn (30. 9. 2026), von der KI im Original abgerufen und von der Betreiberin am 30. 9. 2026 im Original bestätigt:
 
 - 101: „Bis 2035 werden altersbedingt fast 30.000 Hausärzte ausscheiden. Die freiwerdenden Hausarztsitze werden Nachwuchsärzte und zugewanderte Ärzte nicht in gleicher Zahl besetzen.“ (idw, Robert Bosch Stiftung)
 - 205: Knappheit „getragen von einem positiven Außenwanderungssaldo, teilweise starker Binnenwanderungskonzentration, Einkommenszuwächsen und lange niedrigen Zinsen“ (IW-Report 24/2026, Zusammenfassung S. 4); Bevölkerungszuwachs „insbesondere auf die starke Zuwanderung zurückzuführen“ (S. 19)
 - 206: 27.283 geförderte Sozialwohnungen 2025; „jährlich rund 55.000 Sozialmietwohnungen aus der Bindung“ (hib-Meldung zur Drucksache 21/7212)
 - 302: Preisbestandteile Gas einschließlich CO₂-Abgabe (Bundesnetzagentur, Verbraucherportal)
 - 304: „Nach dem teuersten aktuell noch benötigten Kraftwerk („Grenzkraftwerk“) richtet sich“ der Preis; Grenzkraftwerk „heute oft Gaskraftwerke“ (WD 5-3000-121/22, Abschluss 30. 9. 2022)
-- 305: 75 % der Wohnungen mit Gas (56 %) oder Öl (19 %) beheizt (Destatis, Zensus 2022)
+- 305: 75 % der Wohnungen mit Gas (56 %) oder Öl (19 %) beheizt (Destatis, Zensus 2022, Stichtag 15. 5. 2022). Die Betreiberin hat darauf hingewiesen, dass die Zahl für 2022 gilt; die Ursache nennt das Jahr jetzt.
 - 802: „Er sieht die Gefahr, dass auch künftige Bundesmittel nicht zu einer substanziellen Verbesserung der Schieneninfrastruktur führen werden.“ (Bundesrechnungshof, Bericht zur LuFV III, Nr. 0.2)
 - 803: knapp 1.700 unbesetzte Stellen für Bus- und Straßenbahnfahrer im Juni 2025; „in den kommenden zehn Jahren rund vier von zehn Beschäftigte in Verkehrsberufen altersbedingt“ (KOFA, Fachkräftereport Juni 2025)
 
