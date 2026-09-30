@@ -361,6 +361,8 @@ Verworfen:
 - *Zu wenig Geld allgemein.* Teil von 1201 und 1202; die öffentliche Investitionslücke insgesamt ist schon Ursache 504 (Arbeitsplätze).
 - *Tempolimit, Parkplätze gegen Radwege.* Wertfragen ohne belegte Ursache für das Ziel des Themas.
 
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Brücke, Straße, Autobahn, Sanierung, Erhalt, Planung, Genehmigung, Ersatzneubau, Umweltverträglichkeitsprüfung, Baustelle, Maut, Schuldenbremse, Investitionsprogramm, Kommunen, Altschulden, Gemeindefinanz, Radweg, Radverkehr, Fahrrad, Tempo 30, Vision Zero. Ergebnis: 28 Maßnahmen (IDs 6938–6965), 9 Instrumente (6929–6937), drei Einzelbewertungen. Da die Landesursachen 1202–1204 bisher nur mit den Bundesprogrammen erfasst sind, zählen ohne gewähltes Bundesland diese; die Landesprogramme folgen. Nicht erfasst wurden: Tempolimit auf Autobahnen (Grüne, SPD, Linke; betrifft nicht die Sicherheit von Radfahrenden, die Ursache 1204 beschreibt), Ablehnung von Tempolimit und Tempo 30 (Union, FDP, AfD; keine Maßnahme), Lkw-Parkplätze und Überholverbote (AfD; keine erfasste Ursache), Raststätten (BSW, Linke).
+
 ### Internet und Mobilfunk (13)
 
 Ziel: „Menschen haben zu Hause schnelles Internet und unterwegs verlässlichen Mobilfunkempfang, auch auf dem Land.“

@@ -33,5 +33,435 @@
       "ebene": "land",
       "schlagwoerter": ["radweg", "fahrradweg", "radfahren", "fahrrad", "pedelec", "e-bike", "radfahrer", "gefaehrlich", "kreuzung"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6929,
+      "name": "Erhalt und Sanierung von Autobahnen, Straßen und Brücken ausreichend und verlässlich finanzieren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr und planbares Geld ist eine Voraussetzung, um den Rückstand bei den Brücken aufzuholen; laut Bundesrechnungshof fehlen der Autobahn GmbH aber auch Personal und Steuerung. Seit 2025 steht mit dem Sondervermögen Infrastruktur zusätzliches Geld bereit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bundesrechnungshof.de/SharedDocs/Pressemitteilungen/DE/2025/brueckenmodernisierung.html"
+    },
+    {
+      "id": 6930,
+      "name": "Vorrang für Sanierung vor Neu- und Ausbau von Straßen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bündelt knappe Planungs- und Baukapazitäten auf den Erhalt, wie es der Bundesrechnungshof für die Brücken fordert; weniger Neubau kann Engpässe auf überlasteten Strecken länger bestehen lassen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bundesrechnungshof.de/SharedDocs/Statements/DE/2025/brueckenmodernisierung.html"
+    },
+    {
+      "id": 6931,
+      "name": "Großes Investitionsprogramm, Investitionen von der Schuldenbremse ausnehmen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Geld für Bund, Länder und Kommunen kann Sanierungsstau abbauen; ob es bei Straßen und Brücken ankommt und verbaut werden kann, hängt von Personal und Verfahren ab. Braucht eine Grundgesetzänderung, wie sie 2025 für das Sondervermögen beschlossen wurde.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6932,
+      "name": "Finanzierungskreislauf Straße: Lkw-Maut für die Autobahn GmbH, privates Kapital",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Macht die Finanzierung der Autobahnen planbarer und unabhängiger vom Haushalt; öffentlich-private Partnerschaften waren laut Bundesrechnungshof bisher oft teurer als konventionelle Vergabe.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6933,
+      "name": "Planung und Genehmigung beschleunigen, Ersatzneubauten ohne Planfeststellung oder Umweltprüfung",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verkürzt die Zeit bis zum Ersatz maroder Brücken, bei denen sich an Lage und Umweltwirkung wenig ändert; seit 2023 gibt es dafür schon Erleichterungen. Nach Bundesrechnungshof und KfW bremsen vor allem Personal und Geld, nicht nur die Verfahren.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6934,
+      "name": "Kommunalfinanzen stärken: Altschuldenlösung, Gemeindefinanzreform",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gibt überschuldeten Kommunen wieder Spielraum für Investitionen; ob das Geld in Straßen fließt, entscheiden die Kommunen. Eine Altschuldenlösung braucht eine Einigung von Bund und Ländern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6935,
+      "name": "Güterverkehr von der Straße auf die Schiene verlagern",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schwere Lkw belasten Brücken am stärksten, weniger Lkw verlangsamen den Verschleiß; eine spürbare Verlagerung braucht aber Jahre und mehr Kapazität auf der Schiene.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6936,
+      "name": "Radwegenetz ausbauen und dauerhaft finanzieren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Getrennte, durchgehende Radwege senken das Unfallrisiko nach vielen Studien; an Kreuzungen, wo die meisten schweren Unfälle passieren, hängt es von der Gestaltung ab. Bauen müssen Länder und Kommunen, der Bund kann fördern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6937,
+      "name": "Tempo 30 innerorts erleichtern oder zur Regel machen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Niedrigere Geschwindigkeit verringert Zahl und Schwere von Unfällen mit Radfahrenden und Fußgängern deutlich; auf Landstraßen und an Hauptverkehrsachsen, wo viele schwere Radunfälle passieren, ändert es nichts.",
+      "evidenz": "belegt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6938,
+          "instrument": 6929,
+          "beschreibung": "Auskömmliche Finanzierung von Autobahnen, Brücken und Straßen",
+          "ursachen_ids": [1201],
+          "zitat": "Wir stehen für eine auskömmliche Finanzierung von Autobahnen, Brücken- und Straßeninfrastruktur.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6939,
+          "instrument": 6933,
+          "beschreibung": "Ersatzneubauten per Anzeigeverfahren statt Planfeststellung zulassen",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "Ersatzneubauten, unwesentliche Änderungen oder Erweiterungen können anstelle des Planfeststellungsverfahrens durch ein Anzeigeverfahren zugelassen werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6940,
+          "instrument": 6936,
+          "beschreibung": "Neue Radwege und Ausbau des Radnetzes",
+          "ursachen_ids": [1204],
+          "zitat": "Dazu setzen wir auf neue Radwege, den Ausbau des Netzes und Mobilstationen, vor allem an Verkehrsknotenpunkten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=75",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6941,
+          "instrument": 6929,
+          "beschreibung": "Autobahnnetz und vor allem Brücken dringend sanieren",
+          "ursachen_ids": [1201],
+          "zitat": "Das deutsche Autobahnnetz muss aber dringend saniert werden, insbesondere die Brücken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6942,
+          "instrument": 6933,
+          "beschreibung": "Deutschlandpakt zur Planungs- und Genehmigungsbeschleunigung fortsetzen",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "Die Bundesregierung hat im letzten Jahr mit den Ländern einen Deutschlandpakt zur Planungs-, Genehmigungs- und Umsetzungsbeschleunigung vereinbart",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=9",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6943,
+          "instrument": 6934,
+          "beschreibung": "Lösung für kommunale Altschulden, Kommunalfinanzen verbessern",
+          "ursachen_ids": [1202],
+          "zitat": "Es bedarf endlich einer Lösung des spezifischen Problems der kommunalen Altschulden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6944,
+          "beschreibung": "Größere Planungskapazitäten der Kommunen, gemeinsamer Personaleinsatz",
+          "ursachen_ids": [1203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Setzt am Personalmangel der Bauverwaltungen an, den die KfW als größtes Hemmnis nennt; wie der Bund dazu beitragen will, bleibt offen, zuständig sind Länder und Kommunen.",
+          "evidenz": "offen",
+          "zitat": "Außerdem sind größere und moderne Kapazitäten zur Infrastrukturplanung der Kommunen erforderlich, etwa für kommunenübergreifende Investitionsplanung oder gemeinsamen Personaleinsatz.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6945,
+          "instrument": 6935,
+          "beschreibung": "Verkehr von der Straße auf Schiene und Wasserstraße lenken",
+          "ursachen_ids": [1201],
+          "zitat": "Wir werden Verkehr von der Straße vor allem auf die Schiene und auch auf die Wasserstraße lenken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6946,
+          "instrument": 6936,
+          "beschreibung": "Bundesweit vernetzte Radschnellwege und Fahrradparkhäuser fördern",
+          "ursachen_ids": [1204],
+          "zitat": "Im Sinne der Intermodalität fördern wir die Fahrradinfrastruktur mit bundesweit vernetzten Radschnellwegen und mit Fahrradparkhäusern",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6947,
+          "beschreibung": "Vision Zero im Straßenverkehrsrecht verankern",
+          "ursachen_ids": [1204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein gesetzliches Ziel ohne Verkehrstote kann Behörden verpflichten, Sicherheit bei Planung und Anordnungen stärker zu gewichten; welche Regeln sich konkret ändern, bleibt offen.",
+          "evidenz": "offen",
+          "zitat": "Für eine echte Gleichberechtigung der Verkehrsteilnehmenden werden wir das Straßenverkehrsrecht weiter reformieren und die Vision Zero fest verankern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6948,
+          "instrument": 6929,
+          "beschreibung": "Überjährige Finanzierung für den Erhalt von Straßen und Brücken über den Deutschlandfonds",
+          "ursachen_ids": [1201],
+          "zitat": "überjährige Finanzierungsgrundlage für den Erhalt von Straßen und Brücken, für den Ausbau unserer Schieneninfrastruktur sowie unseres öffentlichen Nahverkehrs zu schaffen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6949,
+          "instrument": 6930,
+          "beschreibung": "Sanierung statt Neubau im Straßennetz",
+          "ursachen_ids": [1201],
+          "zitat": "ist das Straßennetz bereits flächendeckend gut ausgebaut und benötigt daher Sanierungen statt Neubau.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6950,
+          "instrument": 6936,
+          "beschreibung": "Ausbau eines guten Radwegenetzes dauerhaft finanzieren",
+          "ursachen_ids": [1204],
+          "zitat": "sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6951,
+          "instrument": 6937,
+          "beschreibung": "Kommunen flächendeckend Tempo 30 innerorts ermöglichen",
+          "ursachen_ids": [1204],
+          "zitat": "In einem nächsten Schritt wollen wir unseren Kommunen noch mehr Spielräume einräumen, etwa um flächendeckend innerorts Tempo 30 zu ermöglichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=48",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6952,
+          "instrument": 6934,
+          "beschreibung": "Altschuldenfonds von Bund und Ländern",
+          "ursachen_ids": [1202],
+          "zitat": "setzen wir uns für einen von Bund und Ländern finanzierten Altschuldenfonds ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=108",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6953,
+          "instrument": 6933,
+          "beschreibung": "Ersatzneubauten genehmigungsfrei stellen, Planungszeiten halbieren",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "wollen wir Ersatzneubauten von Infrastruktur generell genehmigungsfrei stellen, auch wenn diese erweitert und an den wachsenden Bedarf angepasst werden müssen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6954,
+          "beschreibung": "Baustellen-Turbo: Ausschreibungen belohnen schnelles, fristgerechtes Bauen",
+          "ursachen_ids": [1203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Bonus-Malus-Regeln in Bauverträgen können Bauzeiten verkürzen und sind erprobt; an fehlendem Personal und Geld ändern sie nichts.",
+          "evidenz": "gemischt",
+          "zitat": "Wir Freie Demokraten wollen weniger Staus durch den Baustellen-Turbo.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6955,
+          "instrument": 6932,
+          "beschreibung": "Finanzierungskreislauf Straße mit Lkw-Maut und privatem Kapital",
+          "ursachen_ids": [1201],
+          "zitat": "Wir wollen den Finanzierungskreislauf Straße stärken, eigene Einnahmen für die Autobahn GmbH durch die LKW-Maut und eine Öffnung für privates Kapital, um eine auskömmliche und überjährige Planung und Finanzierung zu ermöglichen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6956,
+          "instrument": 6929,
+          "beschreibung": "Planvolle, kontinuierliche Sanierung von Straßen und Brücken",
+          "ursachen_ids": [1201],
+          "zitat": "planvolle, kontinuierliche Sanierung von Straßen, Schienenwegen und Brücken",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6957,
+          "instrument": 6933,
+          "beschreibung": "Keine Umweltverträglichkeitsprüfung bei Ersatzbauten, effizientere Baustellen",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "Das geht nur mit effizienten Maßnahmen in der Planung und Ausführung von Baustellen sowie dem Wegfall der Umweltverträglichkeitsprüfung bei Ersatzbauten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=45",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6958,
+          "instrument": 6934,
+          "beschreibung": "Gemeindefinanzreform und Altschuldenfonds für überschuldete Kommunen",
+          "ursachen_ids": [1202],
+          "zitat": "Um die Kommunen zu unterstützen, brauchen wir eine Gemeindefinanzreform, die 100-prozentige Anrechnung der kommunalen Finanzkraft im Länderfinanzausgleich und einen Altschuldenfonds für überschuldete Kommunen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=13",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6959,
+          "instrument": 6937,
+          "beschreibung": "Innerorts Tempo 30 außer auf Hauptverkehrsachsen",
+          "ursachen_ids": [1204],
+          "zitat": "innerorts Tempo 30 – außer auf Hauptverkehrsachsen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6960,
+          "instrument": 6930,
+          "beschreibung": "Beim Straßenbau auf die Sanierung des Bestands konzentrieren, keine neuen Autobahnen",
+          "ursachen_ids": [1201],
+          "zitat": "Wir wollen uns beim Straßenbau auf die Sanierung des Bestands konzentrieren",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6961,
+          "instrument": 6935,
+          "beschreibung": "Güterverkehr von der Straße auf die Schiene verlagern",
+          "ursachen_ids": [1201],
+          "zitat": "Wir wollen den Güterverkehr auf der Straße reduzieren und auf die Schiene verlagern",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6962,
+          "instrument": 6936,
+          "beschreibung": "Flächendeckendes bundesweites Radverkehrsnetz, sichere Radwege",
+          "ursachen_ids": [1204],
+          "zitat": "Deutschland braucht ein flächendeckendes bundesweites Radverkehrsnetz",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6963,
+          "instrument": 6931,
+          "beschreibung": "Investitionen in Brücken und Straßen aus der Schuldenbremse ausklammern, großes Investitionsprogramm",
+          "ursachen_ids": [1201, 1202],
+          "zitat": "Wir wollen Investitionen in Brücken, Straßen, Schienen, Schulen, Wohnungen und Netze aus der Schuldenbremse ausklammern und den dramatischen Investitionsstau, der zum Verfall unserer Infrastruktur führt, ohne weiteren Verzug durch ein großes Investitionsprogramm beheben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6964,
+          "instrument": 6934,
+          "beschreibung": "Gerechte Altschuldenlösung, Kommunen mit nötigen Mitteln ausstatten",
+          "ursachen_ids": [1202],
+          "zitat": "Ein wichtiger Hebel wäre eine gerechte Altschuldenlösung für die Kommunen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6965,
+          "instrument": 6929,
+          "beschreibung": "Mehr Geld für Straßenbau und die Erneuerung von Brücken",
+          "ursachen_ids": [1201],
+          "zitat": "Es braucht mehr Geld für den Straßenbau und für die Erneuerung von Brücken in Deutschland.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
