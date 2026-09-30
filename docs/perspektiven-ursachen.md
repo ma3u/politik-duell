@@ -381,6 +381,8 @@ Verworfen:
 - *Wenige nutzen vorhandene Glasfaser (aktive Anschlüsse 17 %).* Belegt (Bundesnetzagentur, Jahresbericht 2025), betrifft aber die Entscheidung der Haushalte, nicht das Ziel.
 - *Rückkehr der Marktmacht der Telekom beim Wechsel vom Kupfer- ins Glasfasernetz* (Monopolkommission, Sektorgutachten 2025). Betrifft Wettbewerb und Preise, nicht die Verfügbarkeit. Kandidat, falls das Ziel um Preise erweitert wird.
 
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Glasfaser, Mobilfunk, Funkloch, Breitband, 5G, Gigabit, weiße Flecken, Internet, digitale Infrastruktur, Masten, Roaming, Mindestbandbreite. Ergebnis: 13 Maßnahmen (IDs 6970–6982), 4 Instrumente (6966–6969), zwei Einzelbewertungen. SPD, AfD und BSW nennen nur das Ziel, keinen Weg (Instrument 6969). Zu 1302 (Funklöcher) haben SPD, AfD und BSW keine Maßnahme. Nicht erfasst wurden Preisdeckel für Internetzugänge (Linke; betrifft Preise, nicht die Versorgung) und die Förderung der Digitalisierung von Häfen (AfD).
+
 ### Behördengänge (14)
 
 Ziel: „Menschen erledigen Behördenangelegenheiten schnell, einfach und ohne unnötige Wege, möglichst digital.“
