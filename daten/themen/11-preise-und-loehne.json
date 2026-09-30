@@ -1,0 +1,44 @@
+{
+  "id": 11,
+  "name": "Preise und Löhne",
+  "beschreibung": "Lebensmittel und Dinge des Alltags sind teuer geworden, der Lohn reicht kaum.",
+  "ziel": "Menschen können sich mit ihrem Einkommen Lebensmittel und den täglichen Bedarf dauerhaft leisten.",
+  "schlagwoerter": ["lebensmittel", "einkauf", "einkaufen", "supermarkt", "preise", "teuer", "inflation", "lohn", "gehalt", "netto", "reicht nicht", "am monatsende", "lebenshaltung"],
+  "ursachen": [
+    {
+      "id": 1101,
+      "beschreibung": "Lebensmittelpreise hängen stark an den Energiekosten in Landwirtschaft, Transport, Lagerung und Dünger; nach dem Preisschub ab 2021 steigen sie mit dem Energiepreisschock 2026 voraussichtlich erneut",
+      "quelle_url": "https://publikationen.bundesbank.de/publikationen-de/berichte-studien/monatsberichte/monatsbericht-juni-2026-998608?article=deutschland-prognose-energiepreisschock-treibt-teuerung-an-und-bremst-die-konjunkturerholung-998836",
+      "ebene": "bund",
+      "schlagwoerter": ["lebensmittelpreise", "butter", "brot", "gemuese", "obst", "fleisch", "duenger", "energiekosten"]
+    },
+    {
+      "id": 1102,
+      "beschreibung": "Der Lebensmittelhandel ist stark konzentriert: Vier Handelsgruppen haben rund 87 % des Umsatzes, und die Preisaufschläge in der Lieferkette sind zeitgleich mit der Konzentration gestiegen",
+      "quelle_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Sondergutachten/Monopolkommission-Sondergutachten-84-2025-Wettbewerb-in-der-Lebensmittellieferkette.pdf#page=12",
+      "ebene": "bund",
+      "schlagwoerter": ["edeka", "rewe", "aldi", "lidl", "kaufland", "discounter", "supermarktketten", "marktmacht", "konzerne", "gewinne", "abzocke"]
+    },
+    {
+      "id": 1103,
+      "beschreibung": "Die Löhne hielten mit den Preisen lange nicht mit: Die Reallöhne sanken von 2020 bis 2023 und erreichten 2025 erst wieder fast das Niveau von 2019",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/02/PD26_068_62321.html",
+      "ebene": "bund",
+      "schlagwoerter": ["reallohn", "lohnerhoehung", "gehaltserhoehung", "kaufkraft", "mehr verdienen", "loehne steigen nicht"]
+    },
+    {
+      "id": 1104,
+      "beschreibung": "Hohe Steuern und Sozialabgaben auf Arbeit: Bei einem alleinstehenden Durchschnittsverdiener gehen 49,3 % der Arbeitskosten an Staat und Sozialversicherung, der zweithöchste Wert in der OECD (2025)",
+      "quelle_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/taxing-wages-2026-country-notes_491a0e97/germany_649f0784/ca03c391-en.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["abzuege", "steuern", "sozialabgaben", "brutto", "abgaben", "krankenkassenbeitrag", "vom brutto bleibt"]
+    },
+    {
+      "id": 1105,
+      "beschreibung": "Rund 6,3 Millionen Jobs (16 %) liegen im Niedriglohnbereich, vor allem in Gastgewerbe, Landwirtschaft und Kultur (April 2025)",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/12/PD25_434_623.html",
+      "ebene": "bund",
+      "schlagwoerter": ["niedriglohn", "mindestlohn", "schlecht bezahlt", "wenig verdienen", "minijob", "gastronomie"]
+    }
+  ]
+}

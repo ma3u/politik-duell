@@ -88,7 +88,7 @@ Für Ursachen mit `ebene: land` zählt bei gewähltem Bundesland das Wahlprogram
 
 ## Themenauswahl
 
-Welche Themen in den Katalog kommen, richtet sich danach, was Menschen selbst als wichtigste Probleme nennen – nicht nach den Schwerpunkten einzelner Parteien. Grundlage für die zehn Themen (Stand September 2026) sind die Umfragen vor den Wahlen 2026:
+Welche Themen in den Katalog kommen, richtet sich danach, was Menschen selbst als wichtigste Probleme nennen – nicht nach den Schwerpunkten einzelner Parteien. Grundlage für die ersten zehn Themen (Stand September 2026) sind die Umfragen vor den Wahlen 2026:
 
 | Wahl | Meistgenannte Probleme | Umfrage |
 | --- | --- | --- |
@@ -109,7 +109,25 @@ Weitere Belege, vor allem für Pflege und Rente, deren Prozentwerte in Mecklenbu
 
 Daraus: Arzttermine und Pflege (Gesundheit/Pflege), Miete, Energiepreise (Lebenshaltungskosten), Schule, Arbeitsplätze (Wirtschaft und Arbeitslosigkeit), Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit.
 
-Noch nicht aufgenommen, Kandidaten für später: soziale Ungerechtigkeit/Armut (MV 8 %), Verwaltung und Bürgeramt-Termine sowie Müll (Berlin, im Wahlkampf genannt), Abwanderung junger Menschen und Kita-Betreuung (Sachsen-Anhalt). Häufige Einträge in der Review-Warteschlange sind ein weiterer Hinweis.
+**Erweiterung (30. 9. 2026):** Die Betreiberin hat acht Themenkomplexe vorgelegt, die Menschen bundesweit belasten (Lebenshaltungskosten, Migration und Sicherheit, Energie und Klima, Infrastruktur und Digitalisierung, Mobilität, Krieg und Verteidigung, Vertrauen in den Staat, Sozialstaat). Abgeglichen mit den vorhandenen Themen kamen sechs neue dazu, weil sie Aspekte betreffen, die noch keine Ursache abdeckte:
+
+| Thema | Aus dem Komplex | Weitere Belege |
+| --- | --- | --- |
+| Preise und Löhne (11) | Lebensmittelpreise, stagnierende Reallöhne | Sachsen-Anhalt-Monitor 2025: Wirtschaft und Finanzen, Soziales (s. o.); MV: Lebenshaltungskosten, Armut |
+| Straßen und Brücken (12) | marode Brücken und Straßen, fehlende Radwege | Sachsen-Anhalt-Monitor 2025: Infrastruktur und Mobilität am häufigsten genannt (360 Nennungen) |
+| Internet und Mobilfunk (13) | Funklöcher | ebenda |
+| Behördengänge (14) | langsame Behörden, bürokratische Trägheit | Berlin: Bürgeramt-Termine (Kandidat seit 2026) |
+| Autofahren (15) | Spritpreise, Ladesäulen | [ZDF-Politbarometer Sept. 2026](https://presseportal.zdf.de/pressemitteilung/zdf-politbarometer-september-2026): 78 % finden, die Bundesregierung tue zu wenig gegen steigende Energiepreise; Tankrabatt 2026 |
+| Heizungstausch (16) | Überforderung durch das Heizungsgesetz | Gebäudemodernisierungsgesetz seit Juli 2026 |
+
+Schon abgedeckt und deshalb nicht neu aufgenommen: Energie- und Mietpreise, Arbeitsplatzverlust in der Industrie (Arbeitsplätze), Zuwanderung, Integration in Arbeit und überlastete Kommunen (Zuwanderung und Integration), Sicherheit, Bahn und ÖPNV auf dem Land (Bus und Bahn), Lehrermangel (Schule), Ärztemangel auf dem Land (Arzttermine), Rente und Pflegekosten.
+
+Bewusst nicht als eigenes Thema aufgenommen:
+- **Krieg, Geopolitik und Verteidigung.** Die Sorge vor einer Eskalation ist verständlich, aber kein Alltagsproblem, dessen Ursachen sich unabhängig belegen und an dem sich Maßnahmen nach Wirksamkeit messen ließen: Ob Abschreckung oder Verhandlungen Krieg eher verhindern, ist eine Wertungs- und Einschätzungsfrage, keine Frage belegter Wirkung. Im Spiel wird das als persönliche Haltung (`wert`) behandelt. Folgen im Alltag (Energie- und Spritpreise) sind über Energiepreise und Autofahren abgedeckt.
+- **Vertrauen in Politik und Medien.** Querschnittsthema; der greifbare Teil (langsame Verwaltung, Bürokratie) ist jetzt das Thema Behördengänge. Streit in Koalitionen oder das Gefühl der Ohnmacht sind keine Ursachen, an denen Programm-Maßnahmen gemessen werden können.
+- **Tempolimit, Parkplätze, Verbrenner-Aus als Kulturkampf.** Wertfragen; die Kosten des Autofahrens sind im Thema Autofahren erfasst (siehe Perspektivenprüfung).
+
+Noch nicht aufgenommen, Kandidaten für später: soziale Ungerechtigkeit/Armut (MV 8 %), Müll (Berlin, im Wahlkampf genannt), Abwanderung junger Menschen und Kita-Betreuung (Sachsen-Anhalt). Häufige Einträge in der Review-Warteschlange sind ein weiterer Hinweis.
 
 ## Bewertungsmaßstab
 

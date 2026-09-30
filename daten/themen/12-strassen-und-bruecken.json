@@ -1,0 +1,37 @@
+{
+  "id": 12,
+  "name": "Straßen und Brücken",
+  "beschreibung": "Kaputte Straßen, gesperrte Brücken, lange Umwege und gefährliche Radwege.",
+  "ziel": "Menschen kommen auf Straßen, Brücken und Radwegen sicher und ohne lange Sperrungen und Umwege ans Ziel.",
+  "schlagwoerter": ["strasse", "bruecke", "schlagloch", "baustelle", "sperrung", "gesperrt", "umweg", "autobahn", "radweg", "fahrrad", "marode", "stau"],
+  "ursachen": [
+    {
+      "id": 1201,
+      "beschreibung": "Viele Autobahnbrücken sind marode, ihre Modernisierung liegt weit hinter dem Plan: Bis Ende 2024 war nur 40 % des Vorgesehenen geschafft; der Autobahn GmbH fehlen Personal und Mittel",
+      "quelle_url": "https://www.bundesrechnungshof.de/SharedDocs/Kurzmeldungen/DE/2025/brueckenmodernisierung/kurzmeldung.html",
+      "ebene": "bund",
+      "schlagwoerter": ["autobahnbruecke", "bruecke gesperrt", "talbruecke", "lkw-verbot", "vollsperrung"]
+    },
+    {
+      "id": 1202,
+      "beschreibung": "Die Kommunen schieben bei Straßen und Verkehrswegen einen Sanierungsstau von rund 54 Mrd. Euro vor sich her",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_897920.html",
+      "ebene": "land",
+      "schlagwoerter": ["schlagloch", "schlagloecher", "kaputte strasse", "gemeindestrasse", "ortsstrasse", "buergersteig", "gehweg"]
+    },
+    {
+      "id": 1203,
+      "beschreibung": "Bauvorhaben kommen schleppend voran: Kommunen setzen nur rund zwei Drittel ihrer geplanten Investitionen um; es fehlt Personal, Genehmigung und Vergabe sind aufwendig",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_897920.html",
+      "ebene": "land",
+      "schlagwoerter": ["dauert ewig", "baustelle seit", "genehmigung", "planung", "nichts passiert", "jahrelang"]
+    },
+    {
+      "id": 1204,
+      "beschreibung": "Radfahren ist gefährlicher geworden: 2025 starben 462 Radfahrende, 20,6 % mehr als 2015, vor allem Ältere auf Pedelecs; Unfallgegner ist meist ein Auto",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_N025_461.html",
+      "ebene": "land",
+      "schlagwoerter": ["radweg", "fahrradweg", "radfahren", "fahrrad", "pedelec", "e-bike", "radfahrer", "gefaehrlich", "kreuzung"]
+    }
+  ]
+}

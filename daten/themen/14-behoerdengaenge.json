@@ -1,0 +1,37 @@
+{
+  "id": 14,
+  "name": "Behördengänge",
+  "beschreibung": "Lange Wartezeiten auf Termine und Bescheide, viel Papier, dieselben Angaben immer wieder.",
+  "ziel": "Menschen erledigen Behördenangelegenheiten schnell, einfach und ohne unnötige Wege, möglichst digital.",
+  "schlagwoerter": ["amt", "behoerde", "buergeramt", "termin beim amt", "antrag", "formular", "bescheid", "buerokratie", "papierkram", "verwaltung", "wartezeit", "online-antrag", "ausweis", "ummelden"],
+  "ursachen": [
+    {
+      "id": 1401,
+      "beschreibung": "Online-Angebote der Verwaltung sind schwer zu finden und oft nicht durchgängig digital: Digitale Anträge werden nicht schneller bearbeitet, nur 15 % sehen ihre Erwartungen erfüllt (2025)",
+      "quelle_url": "https://initiatived21.de/presse/egovernment-monitor-2025-wie-die-digitale-verwaltung-helfen-kann-staatsvertrauen-zurueckzugewinnen",
+      "ebene": "land",
+      "schlagwoerter": ["online", "digital", "nicht online", "ausdrucken", "faxen", "per post", "app", "portal", "online beantragen"]
+    },
+    {
+      "id": 1402,
+      "beschreibung": "Der Verwaltung fehlt Personal: Bis 2030 geht fast ein Drittel der Beschäftigten im öffentlichen Dienst in den Ruhestand",
+      "quelle_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5#page=35",
+      "ebene": "land",
+      "schlagwoerter": ["kein termin", "termin", "wochen warten", "monate warten", "bearbeitungszeit", "ueberlastet", "niemand erreichbar", "personal"]
+    },
+    {
+      "id": 1403,
+      "beschreibung": "Behörden tauschen Daten kaum aus: Register sind nicht vernetzt, Menschen müssen dieselben Angaben und Nachweise immer wieder einreichen",
+      "quelle_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5#page=55",
+      "ebene": "bund",
+      "schlagwoerter": ["nachweis", "nachweise", "bescheinigung", "immer wieder", "doppelt", "schon abgegeben", "unterlagen", "kopie"]
+    },
+    {
+      "id": 1404,
+      "beschreibung": "Die Verwaltung ist mit Aufgaben und kleinteiligen Vorschriften überladen: Die Kommunen beklagen einen ungebremsten Aufgabenanstieg und zu viele Detailvorschriften",
+      "quelle_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5#page=49",
+      "ebene": "bund",
+      "schlagwoerter": ["vorschriften", "regeln", "kompliziert", "paragraphen", "zu viel buerokratie", "unverstaendlich", "zustaendig"]
+    }
+  ]
+}

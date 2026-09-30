@@ -1,0 +1,23 @@
+{
+  "id": 13,
+  "name": "Internet und Mobilfunk",
+  "beschreibung": "Langsames Internet zu Hause und Funklöcher unterwegs.",
+  "ziel": "Menschen haben zu Hause schnelles Internet und unterwegs verlässlichen Mobilfunkempfang, auch auf dem Land.",
+  "schlagwoerter": ["internet", "wlan", "glasfaser", "dsl", "breitband", "langsam", "funkloch", "netz", "empfang", "handy", "mobilfunk", "5g", "lte"],
+  "ursachen": [
+    {
+      "id": 1301,
+      "beschreibung": "Glasfaser reicht erst zu rund 43 % der Haushalte (2025); wo sich der Ausbau nicht lohnt, vor allem auf dem Land, braucht es Förderung, die teuer ist und privaten Ausbau teils verdrängt",
+      "quelle_url": "https://www.wik.org/fileadmin/user_upload/Unternehmen/Veroeffentlichungen/Kurzstudien/2026/WIK_Kurzstudie_Anreizwirkung_der_derzeitigen_Gigabitfoerderung_auf_den_eigenwirtschaftlichen_Glasfaserausbau_in_Deutschland.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["glasfaser", "kein glasfaser", "dsl", "langsames internet", "breitband", "dorf", "auf dem land", "homeoffice", "streaming"]
+    },
+    {
+      "id": 1302,
+      "beschreibung": "Rund 2 % der Fläche haben gar keinen Mobilfunk mit 4G oder 5G, vor allem in Wäldern, Höhenlagen, Schutz- und Grenzgebieten",
+      "quelle_url": "https://bmds.bund.de/aktuelles/pressemitteilungen/detail/mobilfunkversorgung-uebersicht-zu-weissen-flecken",
+      "ebene": "bund",
+      "schlagwoerter": ["funkloch", "funkloecher", "kein empfang", "kein netz", "empfang", "zug", "handy", "telefonieren", "abbrechen"]
+    }
+  ]
+}

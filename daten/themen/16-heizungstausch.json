@@ -1,0 +1,37 @@
+{
+  "id": 16,
+  "name": "Heizungstausch",
+  "beschreibung": "Unsicherheit und hohe Kosten, wenn die Heizung erneuert werden muss oder soll.",
+  "ziel": "Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten.",
+  "schlagwoerter": ["heizung", "heizungstausch", "neue heizung", "waermepumpe", "gasheizung", "oelheizung", "heizungsgesetz", "geg", "gebaeudemodernisierungsgesetz", "fernwaerme", "waermeplanung"],
+  "ursachen": [
+    {
+      "id": 1601,
+      "beschreibung": "Viele halten den Umstieg für nicht lohnend oder können ihn nicht bezahlen: 43 % der Interessierten zweifeln an der Wirtschaftlichkeit einer Wärmepumpe, 32 % fehlt das Geld (2026)",
+      "quelle_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf#page=19",
+      "ebene": "bund",
+      "schlagwoerter": ["teuer", "kosten", "kann ich mir nicht leisten", "rentiert", "lohnt sich nicht", "foerderung", "zuschuss", "kredit", "altbau"]
+    },
+    {
+      "id": 1602,
+      "beschreibung": "Die Regeln für neue Heizungen wurden in wenigen Jahren mehrfach grundlegend geändert (zuletzt Gebäudemodernisierungsgesetz, Juli 2026), dazu kommt ab 2028 ein europäischer CO₂-Preis für Heizöl und Gas",
+      "quelle_url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-gebaeudemodernisierungsgesetz-2430284",
+      "ebene": "bund",
+      "schlagwoerter": ["unsicher", "hin und her", "was ist erlaubt", "heizungsgesetz", "65 prozent", "bio-treppe", "co2-preis", "verbot", "planungssicherheit"]
+    },
+    {
+      "id": 1603,
+      "beschreibung": "Viele wissen noch nicht, ob Fernwärme oder ein Wärmenetz kommt: Erst 26 % der Gemeinden haben ihre Wärmeplanung abgeschlossen (Juni 2026)",
+      "quelle_url": "https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html",
+      "ebene": "land",
+      "schlagwoerter": ["waermeplanung", "waermeplan", "fernwaerme", "waermenetz", "gemeinde", "stadtwerke", "anschluss"]
+    },
+    {
+      "id": 1604,
+      "beschreibung": "Mieterinnen und Mieter können über die Heizung nicht entscheiden, tragen aber die Heizkosten: Sie nutzen fast viermal seltener klimafreundliche Technik als Eigenheimbesitzer (15 % zu 59 %)",
+      "quelle_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf#page=5",
+      "ebene": "bund",
+      "schlagwoerter": ["mieter", "vermieter", "mietwohnung", "modernisierungsumlage", "umlage", "alte heizung", "nebenkosten"]
+    }
+  ]
+}
