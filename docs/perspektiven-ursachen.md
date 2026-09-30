@@ -402,6 +402,8 @@ Verworfen:
 - *Datenschutz verhindert Digitalisierung.* In der Debatte häufig, als eigene Ursache nicht unabhängig belegt; der NKR nennt vor allem fehlende Standards und Register. Teil von 1403.
 - *Föderalismus, unklare Zuständigkeiten.* Belegt (NKR), aber als Ursache für Bürgerinnen und Bürger sichtbar über 1401 und 1403. Maßnahmen zur Staatsreform setzen an 1404 an.
 
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Verwaltung, Verwaltungsdigitalisierung, Once-Only, Register, Onlinezugang, OZG, Bürgeramt, Behörde, Deutschland-App, DeutschlandID, digitale Identität, antragslos, öffentlicher Dienst, Bürokratieabbau, Ermessen, Digitalministerium. Ergebnis: 22 Maßnahmen (IDs 6989–7010), 6 Instrumente (6983–6988), vier Einzelbewertungen. AfD und Linke haben nur je eine Maßnahme zu 1401. Nicht erfasst wurden: Bürokratieabbau für Unternehmen (betrifft nicht Behördengänge von Bürgerinnen und Bürgern), Stellenabbau in Bundesministerien (Union, FDP; keine Maßnahme für schnellere Behördengänge), Recht auf analoges Leben (AfD; Zugang ohne Digitalisierung, keine erfasste Ursache), Genehmigungsfiktion für Bau- und Investitionsvorhaben (SPD; betrifft vor allem Unternehmen und Bauherren).
+
 ### Autofahren (15)
 
 Ziel: „Wer auf das Auto angewiesen ist, kann sich das Fahren dauerhaft leisten, mit Verbrenner oder Elektroauto.“ Pendeln mangels Bus und Bahn gehört zum Thema Bus und Bahn (801).

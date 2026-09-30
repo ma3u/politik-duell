@@ -33,5 +33,345 @@
       "ebene": "bund",
       "schlagwoerter": ["vorschriften", "regeln", "kompliziert", "paragraphen", "zu viel buerokratie", "unverstaendlich", "zustaendig"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6983,
+      "name": "Zentrales Portal oder App mit digitaler Identität für alle Verwaltungsleistungen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Zugang für alle Leistungen macht Angebote leichter auffindbar, was Nutzer laut eGovernment MONITOR vermissen; schneller wird es nur, wenn die Anträge dahinter auch digital bearbeitet werden. Braucht die Mitarbeit von Ländern und Kommunen, das Onlinezugangsgesetz zeigt, wie lange das dauert.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://initiatived21.de/publikationen/egovernment-monitor/2025"
+    },
+    {
+      "id": 6984,
+      "name": "Once-Only: Register vernetzen, Daten nur einmal angeben",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt daran an, dass Nachweise immer wieder eingereicht werden müssen; Länder wie Österreich und Estland zeigen, dass es funktioniert. Die Registermodernisierung ist aber ein Vorhaben über viele Jahre, und die Länder können nicht zur Anbindung verpflichtet werden.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5"
+    },
+    {
+      "id": 6985,
+      "name": "Zuständigkeit für Verwaltungsdigitalisierung in einem Digitalministerium bündeln",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Klare Zuständigkeit kann Projekte beschleunigen; seit 2025 gibt es ein solches Ministerium. Für Bürgerinnen und Bürger ändert sich erst etwas, wenn Leistungen tatsächlich digital und schneller werden.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6986,
+      "name": "Automatisierung, KI und antragslose Verfahren in der Verwaltung",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann den Personalmangel abfedern und Bearbeitungszeiten senken, wie der Normenkontrollrat empfiehlt; Voraussetzung sind digitale Akten und vernetzte Daten, die vielerorts fehlen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6987,
+      "name": "Öffentlichen Dienst als Arbeitgeber attraktiver machen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Setzt am Personalmangel an; der Bund regelt aber nur die Bedingungen seiner eigenen Beschäftigten, die meisten Stellen mit Bürgerkontakt liegen bei Ländern und Kommunen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6988,
+      "name": "Mehr Ermessen für Behörden, Regeln auf den Regelfall ausrichten",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Entscheidungen beschleunigen und Einzelfallprüfungen vermeiden; wie stark Vorschriften dadurch tatsächlich schlanker werden, ist offen.",
+      "evidenz": "offen"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6989,
+          "instrument": 6983,
+          "beschreibung": "Sichere digitale Identität mit eigenem Postfach für Behördengänge (DeutschlandID)",
+          "ursachen_ids": [1401],
+          "zitat": "Wir wollen für alle Bürgerinnen und Bürger eine sichere digitale Identität mit eigenem Postfach insbesondere für Behördengänge.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6990,
+          "instrument": 6985,
+          "beschreibung": "Bundesdigitalministerium einrichten",
+          "ursachen_ids": [1401],
+          "zitat": "Dazu richten wir ein Bundesdigitalministerium ein.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6991,
+          "instrument": 6984,
+          "beschreibung": "Once-Only-Prinzip konsequent umsetzen",
+          "ursachen_ids": [1403],
+          "zitat": "Dafür setzen wir auch das „Once-Only“-Prinzip konsequent um, wonach Bürger und Unternehmen ihre Daten nur ein einziges Mal an die Verwaltung übermitteln müssen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=79",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6992,
+          "instrument": 6986,
+          "beschreibung": "Digitalen Vollzug zum Standard machen",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Wir machen den digitalen Vollzug zum Standard.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=79",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6993,
+          "instrument": 6988,
+          "beschreibung": "Gesetze auf den Regelfall ausrichten, mehr Ermessen, Experimentierklausel",
+          "ursachen_ids": [1404],
+          "zitat": "Wir richten Gesetze und andere Regelungen wieder stärker auf den grundsätzlichen Anwendungsfall aus, nicht in erster Linie auf den Ausnahmefall.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=79",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6994,
+          "instrument": 6985,
+          "beschreibung": "Alle Zuständigkeiten der Verwaltungsdigitalisierung in einem Ministerium bündeln",
+          "ursachen_ids": [1401],
+          "zitat": "Wir werden alle Zuständigkeiten der Verwaltungsdigitalisierung in einem Ministerium bündeln und dieses mit den nötigen finanziellen Mitteln und Befugnissen ausstatten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6995,
+          "instrument": 6984,
+          "beschreibung": "System der einmaligen Datenübermittlung, Staatsvertrag mit den Ländern, Registermodernisierung",
+          "ursachen_ids": [1403],
+          "zitat": "Dafür wollen wir ein System der einmaligen Übermittlung von Daten aufbauen und den dafür notwendigen Staatsvertrag zwischen Bund und Ländern zügig abschließen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6996,
+          "instrument": 6983,
+          "beschreibung": "DeutschlandID für zentralen Zugang zu Verwaltungsdiensten",
+          "ursachen_ids": [1401],
+          "zitat": "Um Verwaltungsdienste zentral und unkompliziert verfügbar zu machen, führen wir die DeutschlandID ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6997,
+          "instrument": 6986,
+          "beschreibung": "Automatisierung und KI für schnellere Verwaltungsprozesse",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Wir nutzen Automatisierung und Künstliche Intelligenz, um Verwaltungsprozesse zu beschleunigen und effizienter zu gestalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6998,
+          "instrument": 6987,
+          "beschreibung": "Staat als Arbeitgeber attraktiver machen: Homeoffice, Job-Sharing, weniger Befristungen",
+          "ursachen_ids": [1402],
+          "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6999,
+          "instrument": 6983,
+          "beschreibung": "Deutschland-App für alle Verwaltungsleistungen, gemeinsam mit Ländern und Kommunen",
+          "ursachen_ids": [1401],
+          "zitat": "Deshalb werden wir gemeinsam mit den Ländern und Kommunen eine plattformunabhängige Deutschland-App auf Open-Source-Basis einführen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7000,
+          "instrument": 6986,
+          "beschreibung": "Automatisierung, KI und antragslose Verfahren",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Wir ermöglichen den Einsatz von Automatisierung und KI- Anwendungen überall, wo sie hilfreich, sinnvoll, diskriminierungsarm und ethisch verantwortbar sind.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7001,
+          "instrument": 6988,
+          "beschreibung": "Ermessensspielräume der Entscheider erhöhen",
+          "ursachen_ids": [1404],
+          "zitat": "Hierfür erhöhen wir die Ermessensspielräume der Entscheider*innen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7002,
+          "instrument": 6984,
+          "beschreibung": "Registermodernisierung und -vernetzung, Daten nur einmal einpflegen",
+          "ursachen_ids": [1403],
+          "zitat": "Die Behörden sollen Datentools vorhalten, bei denen Bürger*innen und Unternehmen ihre Daten nur einmal einpflegen müssen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 7003,
+          "instrument": 6984,
+          "beschreibung": "Once-only-Garantie, alle relevanten Register digitalisieren und vernetzen",
+          "ursachen_ids": [1403],
+          "zitat": "Wir Freie Demokraten fordern die Einführung einer Once-only-Garantie und eines Rechtsanspruchs auf digitale Verwaltungsleistungen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7004,
+          "instrument": 6985,
+          "beschreibung": "Bundesministerium für Digitalisierung mit Befugnissen für die Verwaltungsdigitalisierung",
+          "ursachen_ids": [1401],
+          "zitat": "Wir werden dafür ein Bundesministerium für Digitalisierung einrichten, das sich aus bestehenden Abteilungen anderer Ministerien bildet und das als zentrale Instanz die Digitalisierung der Verwaltung bundesweit einheitlich steuert.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7005,
+          "instrument": 6983,
+          "beschreibung": "Government as a Platform mit allen digitalen Verwaltungsanwendungen, digitale Wallet",
+          "ursachen_ids": [1401],
+          "zitat": "Ein zentrales Element für eine erfolgreiche Verwaltungsdigitalisierung ist das „Government as a Platform“-Modell (GaaP).",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=39",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7006,
+          "beschreibung": "Weniger Ministerien und Behörden, klarere Zuständigkeiten",
+          "ursachen_ids": [1404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Klarere Zuständigkeiten können Abstimmungen verkürzen; die Bundesministerien haben aber wenig direkten Kontakt mit Bürgerinnen und Bürgern, und an der Menge der Vorschriften ändert das wenig.",
+          "evidenz": "offen",
+          "zitat": "Wir Freie Demokraten wollen die Zahl von Bundesministerien und Behörden reduzieren, ihre Strukturen verschlanken und Zuständigkeiten klarer festlegen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 7007,
+          "beschreibung": "Digitalisierung der Verwaltung vorantreiben",
+          "ursachen_ids": [1401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Nennt das Ziel, aber keinen Weg.",
+          "evidenz": "offen",
+          "zitat": "Vorantreiben der Digitalisierung der Verwaltung",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 7008,
+          "beschreibung": "Geräte und fachkundiges Personal vor Ort, um beim Ausfüllen von Onlineanträgen zu helfen",
+          "ursachen_ids": [1401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Hilft Menschen, die mit Onlineanträgen nicht zurechtkommen; an der Bearbeitung ändert es nichts und braucht zusätzliches Personal in Kommunen, auf die der Bund kaum Zugriff hat.",
+          "evidenz": "offen",
+          "zitat": "Öffentliche Stellen müssen Geräte und fachkundiges Personal bereitstellen, um vor Ort beim Ausfüllen von Onlineanträgen zu helfen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 7009,
+          "instrument": 6987,
+          "beschreibung": "Verwaltungen als Arbeitgeber attraktiver machen",
+          "ursachen_ids": [1402],
+          "zitat": "Die Attraktivität der Verwaltungen als Arbeitgeber wollen wir durch flexible Arbeitszeitmodelle, kompetente und schlanke Führungsstrukturen sowie die frühzeitige Förderung von Leistungsträgern erhöhen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7010,
+          "instrument": 6983,
+          "beschreibung": "Zentrales Online-Portal als One-Stop-Shop mit Once-Only-Prinzip",
+          "ursachen_ids": [1401, 1403],
+          "zitat": "Mit einem zentralen Online-Portal für Bürger und Unternehmen als „ One-Stop-Shop“ für alle behördlichen Dienstleistungen, in dem Daten nur einmal eingegeben werden müssen („Once-Only-Prinzip“) wollen wir das Leben für die Menschen vereinfachen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
