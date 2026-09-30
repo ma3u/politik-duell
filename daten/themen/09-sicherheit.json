@@ -3,7 +3,7 @@
   "name": "Sicherheit",
   "beschreibung": "Sich im Alltag unsicher fühlen oder Opfer von Kriminalität werden.",
   "ziel": "Menschen sind im Alltag sicher und fühlen sich sicher; Straftaten werden zügig verfolgt.",
-  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends", "haeusliche gewalt", "partner", "frauenhaus", "auslaender", "migranten"],
+  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends", "haeusliche gewalt", "partner", "frauenhaus", "auslaender", "migranten", "betrug", "extremismus", "vergewaltigung"],
   "ursachen": [
     {
       "id": 901,
@@ -41,6 +41,30 @@
       "ebene": "bund",
       "schlagwoerter": ["auslaender", "migranten", "zuwanderer", "gefluechtete", "auslaenderkriminalitaet", "abschiebung von straftaetern"],
       "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 906,
+      "beschreibung": "Betrug und Cyberkriminalität treffen viele: Jede fünfte Person war schon Opfer von Cyberkriminalität; Betrug aus dem Ausland nimmt zu (2025: 7 % mehr Fälle, 65 % mehr Schaden)",
+      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
+      "ebene": "bund",
+      "schlagwoerter": ["betrug", "betrogen", "abzocke", "enkeltrick", "schockanruf", "phishing", "fake-shop", "internetbetrug", "online-betrug", "gehackt", "cyber", "anlagebetrug", "callcenter"],
+      "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 907,
+      "beschreibung": "Politisch motivierte Kriminalität auf Höchststand: 2025 rund 85.800 Straftaten, darunter rund 4.200 Gewalttaten, so viele wie nie seit 2001",
+      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260609_PM_PMK2025.html",
+      "ebene": "land",
+      "schlagwoerter": ["extremismus", "extremisten", "rechtsextrem", "linksextrem", "islamismus", "islamisten", "terror", "anschlag", "politische gewalt", "hasskriminalitaet", "antisemitismus", "reichsbuerger", "bedrohung wegen"],
+      "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 908,
+      "beschreibung": "Sexualisierte Gewalt: Die Polizei erfasst deutlich mehr Vergewaltigungen (seit 2018 plus 72 %), angezeigt wird aber nur ein kleiner Teil",
+      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
+      "ebene": "land",
+      "schlagwoerter": ["vergewaltigung", "vergewaltigt", "sexuelle belaestigung", "sexueller uebergriff", "begrapscht", "grapschen", "ko-tropfen", "catcalling", "sexualisierte gewalt"],
+      "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
     }
   ],
   "instrumente": [
@@ -299,6 +323,182 @@
       "umsetzbarkeit": 2,
       "begruendung": "Abschiebungen verurteilter ausländischer Straftäter verhindern weitere Taten dieser Personen hier; die meisten nichtdeutschen Tatverdächtigen sind aber nicht ausreisepflichtig, und Abschiebungen scheitern oft an Papieren oder Herkunftsstaaten. Der Bund regelt das Aufenthaltsrecht.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 6508,
+      "name": "Polizei und Justiz gegen Cyberkriminalität personell und technisch stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Fachleute und Technik verbessern die Aufklärung von Taten im Inland; ein wachsender Teil von Betrug und Cyberkriminalität wird aber aus dem Ausland begangen, wo deutsche Ermittler wenig ausrichten. Der Bund kann das BKA stärken, die meisten Ermittlungen führen die Länder.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6509,
+      "name": "Europol zu einem europäischen Kriminalamt ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Gemeinsame europäische Ermittlungen setzen daran an, dass Betrug und Cyberkriminalität zunehmend aus dem Ausland kommen; Taten aus Staaten außerhalb der EU erreicht auch Europol nur mit deren Hilfe. Eigene Befugnisse für Europol muss die EU beschließen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6510,
+      "name": "Strafrecht gegen extremistische Propaganda verschärfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Neue Straftatbestände, etwa für das Werben für Terrororganisationen, erfassen mehr Taten; dass sie Gewalt verhindern, ist kaum belegt. Grenzen setzt die Meinungsfreiheit, der Bund ist für das Strafrecht zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6511,
+      "name": "Ausländische Extremisten und Gefährder ausweisen und abschieben (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Wer ausgewiesen wird, begeht hier keine weiteren Taten; der größere Teil der politisch motivierten Straftaten geht aber von Deutschen aus, und Abschiebungen scheitern oft an Herkunftsstaaten. Der Bund regelt das Aufenthaltsrecht.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6512,
+      "name": "Extremistische Vereinigungen verbieten und ihre Finanzen austrocknen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbote und Finanzermittlungen schwächen Strukturen, die Straftaten organisieren; oft entstehen Nachfolgegruppen, und Einzeltäter erreichen sie nicht. Das Bundesinnenministerium kann bundesweit tätige Vereine verbieten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6513,
+      "name": "Extremisten konsequent entwaffnen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wer als Extremist bekannt ist, soll keine legalen Waffen besitzen; das verringert das Risiko schwerer Taten, die meisten politisch motivierten Straftaten werden aber ohne Schusswaffe begangen. Der Bund regelt das Waffenrecht.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6514,
+      "name": "Verfassungsschutz und Sicherheitsbehörden gegen Extremismus stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Personal, Technik und Befugnisse können Anschlagspläne und Netzwerke früher aufdecken; auf die große Zahl einzelner Straftaten wie Propaganda oder Sachbeschädigung wirkt das kaum. Der Bund kann seine Behörden selbst ausstatten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6515,
+      "name": "Strafen für sexualisierte Gewalt verschärfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Höhere Strafen schrecken nach der Forschung kaum ab; das größere Problem ist, dass nur wenige Taten angezeigt und verurteilt werden. Der Bund ist für das Strafrecht zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6516,
+      "name": "Prävention, Ausstiegs- und Demokratieprogramme dauerhaft fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Präventions- und Ausstiegsprogramme können einzelne Menschen von Gewalt abhalten; wie stark sie Straftaten insgesamt senken, ist kaum untersucht. Der Bund kann eigene Programme wie „Demokratie leben!“ gesetzlich absichern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6517,
+      "name": "Hasskriminalität im Netz konsequenter verfolgen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Ermittlungsbefugnisse im Netz, etwa die Login-Falle, und Pflichten für Plattformen können mehr Täter erreichen; ein großer Teil der Plattformregeln liegt inzwischen bei der EU (Digital Services Act).",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6518,
+      "name": "Sexualstrafrecht erweitern: Zustimmungslösung („Nur Ja heißt Ja“) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Zustimmungslösung macht mehr Übergriffe strafbar als das seit 2016 geltende „Nein heißt Nein“; Beweisprobleme im Verfahren bleiben. Erfahrungen etwa aus Schweden zeigen mehr Verurteilungen, die Wirkung auf die Zahl der Taten ist offen. Der Bund ist zuständig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6519,
+      "name": "Verkehrsdaten im Verdachtsfall sichern lassen (Quick Freeze) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Im Verdachtsfall lassen sich vorhandene Verbindungsdaten auf Anordnung einfrieren; sind sie beim Anbieter schon gelöscht, hilft das Verfahren nicht. Der Bund kann es in der Strafprozessordnung regeln.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6520,
+      "name": "Verfassungsschutz und polizeilichen Staatsschutz gegen Extremismus stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Personal und Befugnisse können extremistische Netzwerke und Anschlagspläne früher aufdecken; auf die große Zahl einzelner Straftaten wie Propaganda oder Sachbeschädigung wirkt das kaum. Das Land kann seine Behörden selbst ausstatten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6521,
+      "name": "Prävention, Ausstiegs- und Demokratieprogramme dauerhaft fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mobile Beratung, Aussteigerhilfe und Präventionsprojekte können einzelne Menschen von Gewalt abhalten; wie stark sie Straftaten insgesamt senken, ist kaum untersucht. Das Land kann sie selbst finanzieren.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6522,
+      "name": "Politisch motivierte und Hasskriminalität spezialisiert verfolgen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schwerpunktstaatsanwaltschaften und geschulte Ermittler bündeln Fachwissen und können Verfahren beschleunigen; belastbare Auswertungen dazu fehlen. Das Land kann seine Justiz selbst so organisieren.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6523,
+      "name": "Beratung für Betroffene politisch motivierter Gewalt ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Opferberatung hilft Betroffenen und kann dazu beitragen, dass mehr Taten angezeigt werden; weniger Taten folgen daraus nicht unmittelbar. Das Land kann sie selbst finanzieren.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6524,
+      "name": "Extremisten konsequent entwaffnen, Waffenbehörden stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wer als Extremist bekannt ist, soll keine legalen Waffen besitzen; das verringert das Risiko schwerer Taten, die meisten politisch motivierten Straftaten werden aber ohne Schusswaffe begangen. Den Vollzug des Waffenrechts organisieren die Länder.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6525,
+      "name": "Hilfe nach sexualisierter Gewalt: Beratung, Gewaltschutzambulanzen, vertrauliche Spurensicherung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Beratung und eine vertrauliche Spurensicherung helfen Betroffenen und erlauben eine spätere Anzeige; ob dadurch mehr Taten verfolgt werden, ist kaum untersucht. Das Land kann die Angebote selbst finanzieren.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6526,
+      "name": "Auf Bundesebene Strafrecht und Befugnisse gegen Extremismus verschärfen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Neue Straftatbestände oder Befugnisse können mehr Taten erfassen; dass sie Gewalt verhindern, ist kaum belegt. Das Land kann nur über den Bundesrat darauf hinwirken.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6527,
+      "name": "Prävention sexualisierter Gewalt: Aufklärung, Schutzkonzepte, Projekte (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Präventionsprogramme können Wissen und Haltungen verändern; ob sie Übergriffe messbar verringern, zeigen Studien uneinheitlich. Das Land kann sie selbst fördern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6528,
+      "name": "Verfassungsschutz auf gewaltbereiten Extremismus ausrichten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein Fokus auf Gewalt kann Kräfte dort bündeln, wo die größte Gefahr ausgeht; ob sich dadurch Straftaten verringern, ist nicht untersucht. Das Land kann seinen Verfassungsschutz selbst ausrichten.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6529,
+      "name": "Extremistische Vereinigungen verbieten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbote schwächen Strukturen, die Straftaten organisieren; oft entstehen Nachfolgegruppen. Das Land kann Vereine verbieten, die nur in seinem Gebiet tätig sind, bundesweit tätige Vereine verbietet der Bund.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -373,6 +573,108 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6530,
+          "beschreibung": "Telekommunikationsüberwachung und Funkzellenauswertung ausweiten, etwa gegen den Enkeltrick",
+          "ursachen_ids": [906],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Mehr Befugnisse zur Überwachung von Telefonen und Funkzellen können helfen, Abholer und Helfer bei Enkeltrick und Schockanrufen zu fassen; die Hintermänner sitzen oft in Callcentern im Ausland und bleiben meist unerreichbar. Der Bund regelt die Strafprozessordnung.",
+          "zitat": "Die Möglichkeit zur Überwachung der Telekommunikation und zur Funkzellenauswertung weiten wir aus. Das gilt insbesondere für Verbrechen wie den Wohnungseinbruchsdiebstahl und den Enkeltrick",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=40",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6531,
+          "instrument": 6508,
+          "beschreibung": "Sicherheitsbehörden für Cybersicherheit mit Befugnissen, Fachpersonal und Infrastruktur ausstatten",
+          "ursachen_ids": [906],
+          "zitat": "Wir statten unsere Sicherheitsbehörden bei der Cybersicherheit mit den notwendigen Befugnissen, mit Fachpersonal und moderner Infrastruktur aus.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6532,
+          "instrument": 6509,
+          "beschreibung": "Europol zur europäischen Zentralstelle ausbauen, auch gegen Cyberkriminalität",
+          "ursachen_ids": [906],
+          "zitat": "Europol muss so weiterentwickelt und ausgestattet werden, dass es eine Zentralstelle für Europa wird und ein gemeinsames Daten- und Informationshaus für die nationalen Sicherheitsbehörden bereitstellt – im Kampf gegen Organisierte Kriminalität, insbesondere Drogen- und Schleuserkriminalität, Cyberkriminalität und Terrorismus.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=47",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6533,
+          "instrument": 6510,
+          "beschreibung": "Gesetz zur Bekämpfung des Extremismus: Werben für Terrororganisationen strafbar, Regelausweisung",
+          "ursachen_ids": [907],
+          "zitat": "Wir legen umgehend ein Gesetz zur Bekämpfung des Extremismus vor. Wer für Ziele und Handlungen einer Terrororganisation wirbt, macht sich künftig strafbar.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6534,
+          "instrument": 6511,
+          "beschreibung": "Antisemitische Straftat führt zum Verlust des Schutzstatus und zur Abschiebung",
+          "ursachen_ids": [907],
+          "zitat": "Wir ändern das Aufenthalts- und Asylrecht so, dass eine antisemitische Straftat auch zu einem Verlust des humanitären Schutzes in Deutschland und zur Abschiebung führt.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=46",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6535,
+          "instrument": 6512,
+          "beschreibung": "Moscheen schließen, in denen Hass und Antisemitismus gepredigt wird",
+          "ursachen_ids": [907],
+          "zitat": "Wir dulden keinerlei Rückzugsräume und schließen Moscheen, in denen Hass und Antisemitismus gepredigt wird.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6536,
+          "instrument": 6513,
+          "beschreibung": "Extremisten entwaffnen",
+          "ursachen_ids": [907],
+          "zitat": "Die Feinde unseres Staates gehören entwaffnet.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6537,
+          "instrument": 6514,
+          "beschreibung": "Nachrichtendiensten die nötigen Befugnisse geben, um Gefahren für die Grundordnung früh zu erkennen",
+          "ursachen_ids": [907],
+          "zitat": "Unsere Nachrichtendienste erfüllen mit der frühzeitigen Aufklärung von Gefahren für unseren Staat und unsere freiheitlich-demokratische Grundordnung eine zentrale Aufgabe. Wir geben ihnen die notwendigen Befugnisse, damit sie ihren gesetzlichen Auftrag bestmöglich erfüllen können.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6538,
+          "instrument": 6515,
+          "beschreibung": "Gruppenvergewaltigungen deutlich härter bestrafen",
+          "ursachen_ids": [908],
+          "zitat": "Körperverletzungen, insbesondere wenn sie mit einem Messer begangen werden, und Gruppenvergewaltigungen werden wir deutlich härter bestrafen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -441,6 +743,86 @@
           "ursachen_ids": [905],
           "zitat": "Wird dies verweigert, setzen wir auf rasche wie konsequente Abschiebungen, insbesondere bei Straftätern.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=56",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6539,
+          "instrument": 6508,
+          "beschreibung": "Kompetenzen der Sicherheitsbehörden gegen Cybercrime stärken",
+          "ursachen_ids": [906],
+          "zitat": "Zudem stärken wir die Kompetenzen der Sicherheitsbehörden gegen Cybercrime.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6540,
+          "beschreibung": "IP-Adressen und Portnummern zur Strafverfolgung sichern, ergänzt um die Login-Falle",
+          "ursachen_ids": [906],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Gespeicherte IP-Adressen machen es leichter, Täter im Internet einem Anschluss zuzuordnen; bei Tätern im Ausland oder mit Verschleierung hilft das wenig. Eine Speicherpflicht muss die engen Vorgaben des Europäischen Gerichtshofs einhalten.",
+          "zitat": "stärken die Verteidigung gegen Cyberangriffe auf Menschen und Wirtschaft – insbesondere IP-Adressen und Port-Nummern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6541,
+          "instrument": 6516,
+          "beschreibung": "Demokratiefördergesetz: Initiativen wie „Demokratie leben!“ nachhaltig fördern",
+          "ursachen_ids": [907],
+          "zitat": "Mit dem Demokratiefördergesetz schaffen wir die Grundlage, zivilgesellschaftliche Initiativen, die durch Programme wie das Bundesprogramm „Demokratie leben!“ gefördert werden, nachhaltig zu unterstützen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6542,
+          "instrument": 6512,
+          "beschreibung": "Finanzquellen rechtsextremistischer Netzwerke offenlegen und austrocknen",
+          "ursachen_ids": [907],
+          "zitat": "Wir sorgen dafür, dass die Finanzquellen rechtsextremistischer Netzwerke offengelegt und ausgetrocknet werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=42",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6543,
+          "instrument": 6514,
+          "beschreibung": "Extremistische Bestrebungen intensiv überwachen, früher eingreifen",
+          "ursachen_ids": [907],
+          "zitat": "Extremistische Bestrebungen werden weiterhin intensiv überwacht, unsere Sicherheitsbehörden müssen frühzeitiger bei verfassungsfeindlichen Aktivitäten eingreifen können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=42",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6544,
+          "instrument": 6517,
+          "beschreibung": "Hasskriminalität im Netz bekämpfen, Plattformen zum Entfernen illegaler Inhalte verpflichten",
+          "ursachen_ids": [907],
+          "zitat": "Wir setzen klare Regeln zur Bekämpfung von Hasskriminalität und Netzstraftaten um. Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6545,
+          "instrument": 6518,
+          "beschreibung": "Jede sexuelle Handlung ohne eindeutiges Einverständnis unter Strafe stellen",
+          "ursachen_ids": [908],
+          "zitat": "Jede ohne eindeutiges Einverständnis vorgenommene sexuelle Handlung muss unter Strafe gestellt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=44",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -529,6 +911,130 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6546,
+          "instrument": 6508,
+          "beschreibung": "Polizeiliche Ermittlungen im digitalen Raum stärken",
+          "ursachen_ids": [906],
+          "zitat": "Dazu zählt, dass wir polizeiliche Ermittlungen im digitalen Raum stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=133",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6547,
+          "instrument": 6519,
+          "beschreibung": "Quick-Freeze-Verfahren für die Strafverfolgung im digitalen Raum",
+          "ursachen_ids": [906],
+          "zitat": "Gerade im digitalen Raum wollen wir diese mit effektiven und bürgerrechtsschonenden Instrumenten wie dem Quick-Freeze-Verfahren konsequent ausbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=115",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6548,
+          "instrument": 6509,
+          "beschreibung": "Europol zu einem Europäischen Kriminalamt mit operativen Möglichkeiten weiterentwickeln",
+          "ursachen_ids": [906],
+          "zitat": "Das Europäische Polizeiamt Europol wollen wir zu einem Europäischen Kriminalamt weiterentwickeln und mit eigenen operativen Möglichkeiten ausstatten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6549,
+          "instrument": 6516,
+          "beschreibung": "Prävention, Aussteiger- und Deradikalisierungsprogramme stärken und mit einem Demokratiefördergesetz absichern",
+          "ursachen_ids": [907],
+          "zitat": "Wir brauchen Angebote für Aussteiger*innen aus den extremistischen Szenen oder Deradikalisierungsprogramme für den Justizvollzug. Diese Arbeit wollen wir finanziell stärken und dauerhaft mit einem Demokratiefördergesetz gesetzlich absichern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=137",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6550,
+          "instrument": 6512,
+          "beschreibung": "Extremistische Netzwerke beobachten, Vereinsverbote konsequent aussprechen",
+          "ursachen_ids": [907],
+          "zitat": "Extremistische Netzwerke müssen von den Sicherheitsbehörden frühzeitig erkannt, intensiv beobachtet und Vereinsverbote konsequent ausgesprochen werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=137",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6551,
+          "instrument": 6513,
+          "beschreibung": "Verfassungsfeinde konsequent entwaffnen",
+          "ursachen_ids": [907],
+          "zitat": "Verfassungsfeind*innen dürfen nicht an Waffen gelangen und müssen konsequent entwaffnet werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=137",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6552,
+          "instrument": 6514,
+          "beschreibung": "BKA und Verfassungsschutz gegen Terrorismus mit Personal, Technik und Befugnissen ausstatten",
+          "ursachen_ids": [907],
+          "zitat": "Dafür werden wir die Sicherheitsbehörden im Kampf gegen den Terrorismus stärken und das BKA und den Verfassungsschutz dafür mit ausreichend Personal, Technik und verfassungskonformen Befugnissen ausstatten",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=137",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6553,
+          "instrument": 6517,
+          "beschreibung": "Strafverfolgung von Hasskriminalität im Netz stärken, Login-Falle",
+          "ursachen_ids": [907],
+          "zitat": "Wir stärken die effektiven Möglichkeiten der deutschen Strafverfolgungsbehörden im digitalen Raum, um gegen Organisierte Kriminalität und Hasskriminalität vorgehen zu können",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=140",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6554,
+          "instrument": 6518,
+          "beschreibung": "Sexualstrafrecht mit der Zustimmungslösung reformieren",
+          "ursachen_ids": [908],
+          "zitat": "Wir wollen das geltende Sexualstrafrecht mit der Zustimmungslösung reformieren, um Straftaten besser verfolgen zu können.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6555,
+          "instrument": 6515,
+          "beschreibung": "Einsatz von K.-o.-Tropfen bei sexuellen Übergriffen als strafverschärfend aufnehmen",
+          "ursachen_ids": [908],
+          "zitat": "Auch der Einsatz von K.-o.- Tropfen und ähnlichen Substanzen bei sexuellen Übergriffen muss als strafverschärfender Umstand in das Strafgesetzbuch aufgenommen werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=119",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6556,
+          "beschreibung": "Flächendeckende medizinische Notfallversorgung nach Vergewaltigung mit anonymer Spurensicherung",
+          "ursachen_ids": [908],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Eine vertrauliche Spurensicherung erlaubt Betroffenen, Beweise zu sichern und sich später für eine Anzeige zu entscheiden; ob dadurch mehr Taten verfolgt werden, ist kaum untersucht. Die Krankenkassen zahlen sie bereits, das Angebot vor Ort organisieren die Länder.",
+          "zitat": "Opfer von Vergewaltigungen brauchen flächendeckend qualifizierte medizinische Notfallversorgung – inklusive anonymer Spurensicherung und der „Pille danach“.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=118",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -567,6 +1073,75 @@
           "zitat": "Zur Bekämpfung von häuslicher Gewalt gegen Frauen möchten wir, dass Länder und Kommunen Frauenhausplätze bedarfsgerecht ausfinanzieren und dass durch eine bundesweite Online-Plattform verfügbare Frauenhausplätze in Echtzeit angezeigt werden.",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=29",
           "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6557,
+          "instrument": 6509,
+          "beschreibung": "Europol zu einem Europäischen Kriminalamt ausbauen, auch gegen Cyberkriminalität",
+          "ursachen_ids": [906],
+          "zitat": "Auf europäischer Ebene fordern wir, Europol zu einem echten Europäischen Kriminalamt auszubauen. Denn Terrorismus, organisierte Kriminalität und Cyberkriminalität macht nicht an den Landesgrenzen halt.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=22",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6558,
+          "instrument": 6519,
+          "beschreibung": "Quick Freeze: Daten im Verdachtsfall auf richterliche Anordnung sichern",
+          "ursachen_ids": [906],
+          "zitat": "Mit unserem Quick-Freeze-Modell können stattdessen im Verdachtsfall bestimmte Daten auf richterliche Anordnung gesichert werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6559,
+          "instrument": 6514,
+          "beschreibung": "Wissenschaftliche Expertise der Sicherheitsbehörden gegen Extremismus ausbauen, gefährdete Gruppen schützen",
+          "ursachen_ids": [907],
+          "zitat": "Die Sicherheitsbehörden müssen sich besser um den Schutz besonders gefährdeter Gruppen und ihrer Einrichtungen kümmern. Die wissenschaftliche Expertise in den Sicherheitsbehörden bei der Bekämpfung verschiedener Extremismusformen muss ausgebaut werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6560,
+          "instrument": 6512,
+          "beschreibung": "Mehr Betätigungs- und Organisationsverbote für antisemitische Organisationen",
+          "ursachen_ids": [907],
+          "zitat": "Wir wollen zudem mehr Betätigungs- und Organisationsverbote für antisemitische Organisationen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=51",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6561,
+          "instrument": 6513,
+          "beschreibung": "Beim Waffenrecht den Fokus auf Gefährder und Extremisten legen",
+          "ursachen_ids": [907],
+          "zitat": "Stattdessen sollte der Fokus auf Gefährdern und Extremisten durch eine verbesserte Kommunikation der Behörden und der Bekämpfung des illegalen Waffenhandels liegen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6562,
+          "beschreibung": "Präventions- und Deradikalisierungsprogramme auf ihre Wirksamkeit überprüfen",
+          "ursachen_ids": [907],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Eine Überprüfung kann Geld zu wirksamen Programmen lenken; eine Wirkung auf Straftaten hat sie nur mittelbar. Der Bund kann seine Programme selbst evaluieren.",
+          "zitat": "Alle bestehenden Präventions- und Deradikalisierungsprogramme müssen auf ihre Effektivität hin überprüft werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "evidenz": "offen",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -644,6 +1219,50 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6563,
+          "instrument": 6512,
+          "beschreibung": "Organisationen des gewaltsamen Linksextremismus verbieten; islamistische Vereine verbieten",
+          "ursachen_ids": [907],
+          "zitat": "Bei Organisationen, die dem gewaltsamen Linksextremismus zuzuordnen sind, reicht eine mögliche Streichung der Zuwendung öffentlicher Fördermittel nicht aus. Diese Organisationen sind zu verbieten",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=121",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6564,
+          "instrument": 6510,
+          "beschreibung": "Öffentliche Forderung nach einem Kalifat unter Strafe stellen",
+          "ursachen_ids": [907],
+          "zitat": "Die von Teilen der in Deutschland lebenden Muslime auf Veranstaltungen und Demonstrationen erhobene öffentliche Forderung nach der Einrichtung eines Kalifats läuft der freiheitlich demokratischen Grundordnung diametral entgegen und ist verfassungsfeindlich; sie ist unter Strafe zu stellen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=122",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6565,
+          "instrument": 6511,
+          "beschreibung": "Ausländische Gefährder und Extremisten vorrangig zurückführen",
+          "ursachen_ids": [907],
+          "zitat": "Ausländische Gefährder, Extremisten und schwere Straftäter werden wir vorrangig zurückführen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=102",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6566,
+          "instrument": 6466,
+          "beschreibung": "Ausweisung ausländischer Straftäter bei Sexualdelikten deutlich erleichtern",
+          "ursachen_ids": [908],
+          "zitat": "Die Ausweisung ausländischer Straftäter insbesondere bei Gewalt-, Drogen- und Sexualdelikten sowie bei der organisierten und Clankriminalität werden wir deutlich erleichtern.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=102",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -682,6 +1301,64 @@
           "ursachen_ids": [904],
           "zitat": "Frauenhäuser müssen bedarfsgerecht, einzelfallunabhängig und verlässlich finanziert werden",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6567,
+          "instrument": 6508,
+          "beschreibung": "Kriminalpolizei und Staatsanwaltschaft in die Lage versetzen, mit Cyber-Kriminalität Schritt zu halten",
+          "ursachen_ids": [906],
+          "zitat": "Stattdessen müssen Kriminalpolizei und Staatsanwaltschaft in die Lage versetzt werden, mit der dynamischen Entwicklung von Kriminalität Schritt zu halten: von der Wirtschaftskriminalität über Cyber- Attacken hin zu Manipulation mithilfe von KI und Algorithmen in sozialen Medien",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6568,
+          "instrument": 6516,
+          "beschreibung": "Mobile Beratung gegen Rechtsextremismus und Opferberatungen mit einem Demokratiefördergesetz absichern",
+          "ursachen_ids": [907],
+          "zitat": "Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse, Migrant*innen-Selbstorganisationen sowie Antifa-Initiativen müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=51",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6569,
+          "instrument": 6512,
+          "beschreibung": "Militante, bewaffnete neonazistische Organisationen verbieten",
+          "ursachen_ids": [907],
+          "zitat": "Wir fordern das Verbot militanter, bewaffneter, neonazistischer Organisationen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=51",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6570,
+          "instrument": 6518,
+          "beschreibung": "Prinzip „Nur Ja heißt Ja“ gesetzlich verankern",
+          "ursachen_ids": [908],
+          "zitat": "Wir fordern, dass das Prinzip „Nur Ja heißt Ja“ gesellschaftlich und gesetzlich verankert wird und dass gezielt gegen Netzwerke sexualisierter Gewalt vorgegangen wird",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6571,
+          "beschreibung": "Awareness-Konzepte gegen sexualisierte Gewalt bei Großveranstaltungen verpflichtend",
+          "ursachen_ids": [908],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ansprechpersonen und Schutzkonzepte bei Veranstaltungen können Übergriffe verhindern und Betroffenen schnell helfen; belastbare Studien fehlen. Das Veranstaltungs- und Ordnungsrecht liegt bei den Ländern.",
+          "zitat": "Für öffentliche und private Großveranstaltungen fordern wir, dass als Bestandteil von Sicherheitskonzepten auch Awareness-Konzepte zum Schutz vor sexualisierter Gewalt zum Einsatz kommen müssen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "evidenz": "offen",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -743,6 +1420,28 @@
           "zitat": "Wir setzen uns das Ziel, die Gewaltschutz- und Hilfesysteme auszubauen, und die Zahl an Schutzwohnungen und Frauenhausplätzen signifikant zu erhöhen. Die Finanzierung der Frauenhäuser muss durch den Bund langfristig gesichert sein.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=33",
           "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6635,
+          "instrument": 6508,
+          "beschreibung": "Polizei mit modernen Einsatzmitteln und IT ausstatten, auch gegen Cyberkriminalität",
+          "ursachen_ids": [906],
+          "zitat": "Wir fordern eine solide Ausstattung der Polizei mit modernen Einsatzmitteln und IT – gerade auch im Hinblick auf aktuelle Herausforderungen wie Cyberkriminalität und Terrorismus.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6636,
+          "instrument": 6514,
+          "beschreibung": "Polizei in die Lage versetzen, Terroristen und Extremisten wirksamer das Handwerk zu legen",
+          "ursachen_ids": [907],
+          "zitat": "Unsere Polizei muss in die Lage versetzt werden, Kriminellen, Terroristen und Extremisten wirksamer das Handwerk legen zu können.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -837,6 +1536,17 @@
           "ursachen_ids": [904],
           "zitat": "Wir werden den Opferschutz weiter ausbauen und die verlässliche Finanzierung ambulanter Beratungsstellen sowie von Frauenhäusern sichern.",
           "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=59",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6572,
+          "instrument": 6520,
+          "beschreibung": "Sicherheitsbehörden und Verfassungsschutz gegen zunehmenden Extremismus stärken",
+          "ursachen_ids": [907],
+          "zitat": "Da extremistische Bestrebungen im Land zunehmen, müssen die Sicherheitsbehörden insgesamt und damit auch der Verfassungsschutz weiter gestärkt werden.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=7",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -935,6 +1645,50 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6573,
+          "instrument": 6520,
+          "beschreibung": "Verfassungsschutz bei Ausrüstung und Personal verbessern",
+          "ursachen_ids": [907],
+          "zitat": "Den wachsenden Herausforderungen durch Rechtsextremismus, Sabotage und Spionage muss auch der Verfassungsschutz gewachsen sein. Dafür braucht es Verbesserung in Sachen Ausrüstung und Personal.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=33",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6574,
+          "instrument": 6521,
+          "beschreibung": "Landesprogramm für Demokratie fortführen und ausbauen, Beratungsstellen und Aussteigerprogramme verlässlich unterstützen",
+          "ursachen_ids": [907],
+          "zitat": "Das Landesprogramm für Demokratie, Vielfalt und Weltoffenheit wird fortgeführt und ausgebaut.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6575,
+          "instrument": 6522,
+          "beschreibung": "Schwerpunktstaatsanwaltschaft Rechtsextremismus",
+          "ursachen_ids": [907],
+          "zitat": "Eine Schwerpunktstaatsanwaltschaft Rechtsextremismus stärkt die konsequente strafrechtliche Verfolgung.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6576,
+          "instrument": 6523,
+          "beschreibung": "Opferschutz für Opfer von Hasskriminalität und Extremismus ausbauen",
+          "ursachen_ids": [907],
+          "zitat": "Opferschutz wird weiter ausgebaut. Opfer von Gewalt, Hasskriminalität und Extremismus brauchen Schutz, Beratung und Begleitung.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1005,6 +1759,61 @@
           "ursachen_ids": [904],
           "zitat": "Wir werden Fachstellen zur Täterarbeit auch in den ländlichen Regionen abseits von Halle und Magdeburg fördern",
           "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=45",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6577,
+          "instrument": 6520,
+          "beschreibung": "Erkenntnisse über rechtsextreme Netzwerke nutzen und Strukturen zerschlagen",
+          "ursachen_ids": [907],
+          "zitat": "Die Erkenntnisse über rechtsextreme Netzwerke müssen von den Sicherheitsbehörden effektiv genutzt und entsprechende Strukturen dauerhaft zerschlagen werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6578,
+          "instrument": 6521,
+          "beschreibung": "Zivilgesellschaft und Beratungsstellen in der Extremismusprävention stärker unterstützen",
+          "ursachen_ids": [907],
+          "zitat": "Wir setzen uns außerdem für eine stärkere Unterstützung zivilgesellschaftlicher Akteur*innen und Beratungsstellen in der Extremismusprävention in der Fläche Sachsen-Anhalts ein.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6579,
+          "instrument": 6524,
+          "beschreibung": "Waffenbesitz für Extremisten verbieten, Waffenbehörden stärken",
+          "ursachen_ids": [907],
+          "zitat": "Wir lassen nicht zu, dass Verfassungsfeinde legal Zugriff auf Waffen haben. Um das durchzusetzen, stärken wir die Waffenbehörden massiv.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6580,
+          "instrument": 6523,
+          "beschreibung": "Niedrigschwellige Beratung und psychosoziale Hilfe für Betroffene rechter Gewalt",
+          "ursachen_ids": [907],
+          "zitat": "Wir investieren in niedrigschwellige […] Beratung und psychosoziale Hilfe, um Betroffene nicht allein zu lassen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6581,
+          "instrument": 6525,
+          "beschreibung": "Alle Kliniken ins „Netzwerk Evidence“ für anonymisierte Spurensicherung nach sexueller Gewalt",
+          "ursachen_ids": [908],
+          "zitat": "Wir setzen uns dafür ein, dass alle Kliniken in Sachsen-Anhalt Teil des „Netzwerks Evidence“ werden, um anonymisierte Spurensicherungen nach sexueller Gewalt flächendeckend zu ermöglichen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=83",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1160,6 +1969,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6582,
+          "instrument": 6520,
+          "beschreibung": "Nachrichtendienstlichen und polizeilichen Verfolgungsdruck auf die linksextreme Szene erhöhen",
+          "ursachen_ids": [907],
+          "zitat": "Wir werden der Bekämpfung der „Antifa“ in Sachsen-Anhalt höchste Priorität einräumen und den nachrichtendienstlichen und polizeilichen Verfolgungsdruck auf diese Szene massiv erhöhen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=112",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6583,
+          "instrument": 6526,
+          "beschreibung": "Auf Bundesebene Antifa-Organisationen zu Terrororganisationen erklären lassen",
+          "ursachen_ids": [907],
+          "zitat": "Wir werden uns auf Bundesebene dafür einsetzen, auch in Deutschland alle Organisationen, die sich der „Antifa“ zurechnen, zu Terrororganisationen zu erklären und entsprechend zu bekämpfen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=112",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1244,6 +2075,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6584,
+          "instrument": 6521,
+          "beschreibung": "Mobile Beratungsteams unterstützen Kommunen gegen rechtsextreme Umtriebe",
+          "ursachen_ids": [907],
+          "zitat": "Mobile Beratungsteams unterstützen Kommunen beim Umgang mit rechtsextremen Umtrieben und helfen, lokale Strukturen gegen Radikalisierung zu schützen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=15",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6585,
+          "instrument": 6522,
+          "beschreibung": "Schwerpunktstaatsanwaltschaften für rechtsextrem motivierte Straftaten, spezialisierte Ansprechpersonen für Hasskriminalität",
+          "ursachen_ids": [907],
+          "zitat": "Schwerpunktstaatsanwaltschaften einrichten, die rechtsextrem motivierte Straftaten überregional bündeln und effektiv bearbeiten",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=138",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1292,6 +2145,17 @@
           "ursachen_ids": [904],
           "zitat": "Erhöhung der Zahl der Plätze bei Frauenhäusern / Schutzwohnungen.",
           "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=65",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6586,
+          "instrument": 6521,
+          "beschreibung": "Islamismusprävention der Halleschen Jugendwerkstatt weiter fördern",
+          "ursachen_ids": [907],
+          "zitat": "In der Islamismusprävention leisten die Präventionsprojekte der Halleschen Jugendwerkstatt einen wichtigen Beitrag und müssen daher weiterhin Förderung von Bund und Land erhalten.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=15",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1415,6 +2279,28 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6587,
+          "instrument": 6526,
+          "beschreibung": "Auf Bundesebene eine Vorratsdatenspeicherung gegen Hasskriminalität im Internet einfordern",
+          "ursachen_ids": [907],
+          "zitat": "Daher werden wir weiterhin auf Bundesebene die Einführung einer mit dem EU-Recht […] vereinbaren Vorratsdatenspeicherung einfordern.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=35",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6588,
+          "instrument": 6521,
+          "beschreibung": "Extremismus bekämpfen, flankiert von politischer Bildung und Prävention",
+          "ursachen_ids": [907],
+          "zitat": "Mit Politischer Bildung und […] Präventionsmaßnahmen werden wir Interventionen flankieren",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=38",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1477,6 +2363,39 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6589,
+          "instrument": 6524,
+          "beschreibung": "Rechtsextreme Strukturen durch verschärfte Waffenkontrollen, Entwaffnung, Prävention und Repression zerschlagen",
+          "ursachen_ids": [907],
+          "zitat": "Rechtsextreme Strukturen und rechtsextreme Gewalt bekämpfen und zerschlagen wir durch verschärfte Waffenbesitzkontrollen und möglichst konsequente Entwaffnung, den Ausbau der Kriminalprävention und Repression.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=42",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6590,
+          "instrument": 6521,
+          "beschreibung": "Landesprogramm „Demokratie und Toleranz“ mit Opferberatung und Aussteigerhilfe weiter fördern",
+          "ursachen_ids": [907],
+          "zitat": "Dafür stärken wir die Zivilgesellschaft, indem das Landesprogramm „Demokratie und Toleranz gemeinsam stärken!“, mitsamt Regionalzentren, der Beratung für Opfer von rechtsextremer Gewalt und weiterer Angebote, wie der Dokumentations- und Informationsstelle Antisemitismus, der Aussteigerhilfe u. a. m. weiter fördern.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=42",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6591,
+          "instrument": 6525,
+          "beschreibung": "Interventions- und Beratungsstellen für sexualisierte Gewalt besser ausstatten",
+          "ursachen_ids": [908],
+          "zitat": "Unser Ziel ist darüber hinaus, die Situation der Frauenschutzhäuser, der Interventions- und Beratungsstellen für häusliche und sexualisierte Gewalt und der Täterberatung zu verbessern.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=38",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1524,6 +2443,50 @@
           "beschreibung": "Beratungsstellen und Frauenhäuser stärken, Finanzierung dauerhaft sichern",
           "ursachen_ids": [904],
           "zitat": "Wir stärken Beratungsstellen, Frauenhäuser und mobile Hilfsangebote und sichern ihre Finanzierung dauerhaft ab.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6592,
+          "instrument": 6521,
+          "beschreibung": "Landesprogramm „Demokratie und Toleranz“ gesetzlich verankern",
+          "ursachen_ids": [907],
+          "zitat": "das Landesprogramm „Demokratie und Toleranz gemeinsam stärken“ gesetzlich verankern und das Demokratiefördergesetz gemeinsam mit der Zivilgesellschaft weiterentwickeln.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=68",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6593,
+          "instrument": 6522,
+          "beschreibung": "Polizei und Staatsanwaltschaften gegen politisch motivierte Straftaten im digitalen Raum ausstatten",
+          "ursachen_ids": [907],
+          "zitat": "Um geschlechtsspezifische Gewalt sowie politisch motivierten Straftaten und Bedrohungen im digitalen Raum effektiv zu bekämpfen, müssen Polizeien und Staatsanwaltschaften personell und technisch modern ausgestattet werden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6594,
+          "instrument": 6523,
+          "beschreibung": "Beratung für Betroffene von Gewalt und Diskriminierung ausbauen und dauerhaft finanzieren",
+          "ursachen_ids": [907],
+          "zitat": "Wir bauen Beratungs- und Unterstützungsangebote für Betroffene von Gewalt und Diskriminierung konsequent aus und sichern ihre Finanzierung dauerhaft ab.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=90",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6595,
+          "instrument": 6527,
+          "beschreibung": "Präventionskonzepte gegen sexualisierte Gewalt an Schulen, Hochschulen und am Arbeitsplatz",
+          "ursachen_ids": [908],
+          "zitat": "Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz.",
           "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
           "stand": "2026-09-29",
           "geprueft": false,
@@ -1590,6 +2553,31 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6596,
+          "beschreibung": "Bestehende Präventionsprogramme überprüfen und anpassen",
+          "ursachen_ids": [907],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Eine Überprüfung kann Geld zu wirksamen Programmen lenken; eine Wirkung auf Straftaten hat sie nur mittelbar. Das Land kann seine Programme selbst evaluieren.",
+          "zitat": "Bestehende Präventionsprogramme werden wir überprüfen und an die Herausforderungen der Gegenwart anpassen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=145",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6597,
+          "instrument": 6527,
+          "beschreibung": "Öffentlichkeitsarbeit und Prävention zu sexualisierter Gewalt ausbauen",
+          "ursachen_ids": [908],
+          "zitat": "die Öffentlichkeitsarbeit des Landes hinsichtlich der Thematik sexualisierte und häusliche Gewalt deutlich ausbauen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=53",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1649,6 +2637,31 @@
           "ursachen_ids": [903],
           "zitat": "Wir werden in den Bundesrat die Initiative einbringen, die Strafmündigkeit von derzeit 14 auf 12 Jahre abzusenken.",
           "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=44",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6598,
+          "instrument": 6528,
+          "beschreibung": "Verfassungsschutz reformieren und auf Cybercrime, Spionageabwehr und politische Militanz ausrichten",
+          "ursachen_ids": [907],
+          "zitat": "In der Arbeit der Landesbehörde sollen zukünftig die Bereiche Cybercrime, Spionageabwehr und Abwehr politischer Militanz priorisiert werden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=41",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6599,
+          "beschreibung": "Islamverbände verpflichten, Meldestellen für radikale und extremistische Tendenzen vorzuhalten",
+          "ursachen_ids": [907],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Hinweise aus dem Umfeld können Radikalisierung früh sichtbar machen; eine Wirkung ist nicht untersucht. Eine Pflicht für Religionsgemeinschaften fehlt im Landesrecht und stößt an die Religionsfreiheit.",
+          "zitat": "Wir werden diese Verbände in die Pflicht nehmen, eigene Meldestellen und andere von ihnen als geeignet angesehene Einrichtungen vorzuhalten, die radikale und extremistische Tendenzen sowie entsprechende Personen in ihrem Umfeld erfassen und melden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=53",
+          "evidenz": "offen",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1714,6 +2727,39 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6600,
+          "instrument": 6521,
+          "beschreibung": "Präventive Programme gegen Radikalisierung stärken",
+          "ursachen_ids": [907],
+          "zitat": "Präventive Programme gegen Radikalisierung sowie Bildung und Aufklärung in Schulen, Vereinen und öffentlichen Einrichtungen stärken.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=7",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6601,
+          "instrument": 6524,
+          "beschreibung": "Gegen militant-rechte Netzwerke vorgehen, Verbote prüfen, Neonazis entwaffnen",
+          "ursachen_ids": [907],
+          "zitat": "Ein konsequentes Vorgehen gegen militant-rechte Netzwerke, einschließlich der Prüfung von Verboten sowie der Entwaffnung von Neonazis.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=8",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6602,
+          "instrument": 6527,
+          "beschreibung": "Projekte gegen sexualisierte Gewalt unterstützen",
+          "ursachen_ids": [908],
+          "zitat": "Projekte unterstützen, die sich gegen Hass, sexualisierte Gewalt und digitale Übergriffe engagieren.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1773,6 +2819,17 @@
           "ursachen_ids": [904],
           "zitat": "Konsequente Wegweisungen und Annäherungsverbote zum schnellen Schutz Betroffener.",
           "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=72",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6603,
+          "instrument": 6528,
+          "beschreibung": "Verfassungsschutz auf gewaltbereiten Extremismus ausrichten, mit Aussteigerprogrammen zusammenarbeiten",
+          "ursachen_ids": [907],
+          "zitat": "konsequente Ausrichtung auf gewaltbereiten Extremismus und verfassungsfeindliche Bestrebungen",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=70",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -1904,6 +2961,61 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6604,
+          "instrument": 6520,
+          "beschreibung": "Verfassungsschutz erweiterte Befugnisse zur Extremismusbekämpfung geben",
+          "ursachen_ids": [907],
+          "zitat": "Wir werden die rechtlichen Grundlagen schaffen, um dem Verfassungsschutz erweiterte Befugnisse zur Extremismusbekämpfung zu ermöglichen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=21",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6605,
+          "instrument": 6521,
+          "beschreibung": "Aussteigerprogramme bedarfsgerecht fortführen",
+          "ursachen_ids": [907],
+          "zitat": "Wir treten rechtsextremer Gewalt mit der vollen Härte des Rechtsstaates entgegen und werden Aussteigerprogramme bedarfsgerecht fortführen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6606,
+          "instrument": 6522,
+          "beschreibung": "Abteilung für Staatsschutzdelikte und Hasskriminalität bei der Staatsanwaltschaft ausbauen",
+          "ursachen_ids": [907],
+          "zitat": "Die spezialisierte Abteilung für Staatsschutzdelikte und Hasskriminalität bei der Staatsanwaltschaft werden wir weiter ausbauen und stärken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6607,
+          "instrument": 6529,
+          "beschreibung": "Radikalen Trägerverein der Al-Nur-Moschee verbieten, weitere Verbote prüfen",
+          "ursachen_ids": [907],
+          "zitat": "Den vom Berliner Verfassungsschutz beobachteten radikalen Trägerverein „Islamische Gemeinschaft Berlin e.V.“ der Al-Nur-Moschee in Neukölln wollen wir verbieten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6608,
+          "instrument": 6526,
+          "beschreibung": "Auf Bundesebene Forderungen nach Gottesstaat oder Kalifat strafbar machen",
+          "ursachen_ids": [907],
+          "zitat": "Wir setzen uns dafür ein, dass öffentliche Forderungen nach der Errichtung eines islamistischen Gottesstaates, der Einführung der Scharia oder eines Kalifats in Deutschland strafbar werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1988,6 +3100,50 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6609,
+          "instrument": 6521,
+          "beschreibung": "Kompetenzzentrum für Deradikalisierungs- und Ausstiegsarbeit, Demokratiefördergesetz",
+          "ursachen_ids": [907],
+          "zitat": "Zusätzlich richten wir ein Kompetenzzentrum für Deradikalisierungs-, Distanzierungs- und Ausstiegsarbeit in den Bereichen Islamismus und Rechtsextremismus ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6610,
+          "instrument": 6523,
+          "beschreibung": "Spezialisierte Beratungsstellen bei Hasskriminalität stärken",
+          "ursachen_ids": [907],
+          "zitat": "Gewalt gegen Frauen, queerfeindliche Übergriffe und andere Formen von Hasskriminalität bekämpfen wir entschlossen - egal, ob sie online oder offline stattfinden. Wir stärken spezialisierte Beratungsstellen",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=30",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6611,
+          "instrument": 6522,
+          "beschreibung": "Staatsanwaltschaft durch Fortbildungen zur organisierten extremen Rechten stärken",
+          "ursachen_ids": [907],
+          "zitat": "Außerdem stärken wir die Staatsanwaltschaft Berlin durch Fortbildungsangebote zur organisierten, extremen Rechten.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6612,
+          "instrument": 6525,
+          "beschreibung": "Gewaltschutzambulanzen ausbauen, vertrauliche Spurensicherung in allen gynäkologischen Notfallkliniken",
+          "ursachen_ids": [908],
+          "zitat": "Zudem setzen wir uns weiter dafür ein, dass Krankenkassen die Kosten der „Vertraulichen Spurensicherung“ übernehmen. Es sollen nach Möglichkeit alle Notfallkrankenhäuser mit Fachrichtung Gynäkologie diese durchführen können.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -2058,6 +3214,89 @@
           "ursachen_ids": [904],
           "zitat": "Wir schaffen mehr Beratungsangebote, zwei neue Frauenhäuser, mehr Zweite-Stufe-Wohnungen für gewaltbetroffene Frauen und ihre Kinder",
           "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=131",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6613,
+          "instrument": 6521,
+          "beschreibung": "Landesprogramm gegen Rechtsextremismus, Rassismus und Antisemitismus erweitern",
+          "ursachen_ids": [907],
+          "zitat": "Wir Grüne erweitern das Landesprogramm gegen Rechtsextremismus, Rassismus und Antisemitismus sowie die Landeskommission gegen Gewalt",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=159",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6614,
+          "instrument": 6523,
+          "beschreibung": "Opferberatungsstellen stärken",
+          "ursachen_ids": [907],
+          "zitat": "Wir stärken Opferberatungsstellen sowie zivilgesellschaftliche Akteur*innen, die sich gegen rechtsextreme Bedrohungen einsetzen oder Ziel von rechtsextremen Angriffen und Diffamierungskampagnen werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=160",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6615,
+          "instrument": 6520,
+          "beschreibung": "Staatsschutz stärken, offene Haftbefehle gegen Rechtsextreme vollstrecken",
+          "ursachen_ids": [907],
+          "zitat": "Dazu stärken wir den Staatsschutz, schulen Staatsanwaltschaften regelmäßig zu aktuellen Entwicklungen und vollstrecken offene Haftbefehle konsequent.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=160",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6616,
+          "instrument": 6524,
+          "beschreibung": "Rechtsextremisten und Reichsbürger systematisch entwaffnen",
+          "ursachen_ids": [907],
+          "zitat": "Rechtsextremist*innen, Reichsbürger*innen und Verschwörungsideolog*innen müssen systematisch zum Schutz der gesamten Gesellschaft entwaffnet werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=160",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6617,
+          "instrument": 6529,
+          "beschreibung": "Vereinsverbote gegen verfassungsfeindliche Vereinigungen nutzen",
+          "ursachen_ids": [907],
+          "zitat": "Um organisierte Netzwerke hinter rechtsextremem Hass und Straftaten zu zerschlagen, ist auch das Instrument der Vereinsverbote gegenüber verfassungsfeindlichen Vereinigungen zu nutzen, sobald die rechtlichen Voraussetzungen gegeben sind.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=230",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6618,
+          "beschreibung": "Sonderzuständigkeit für Sexualdelikte an den Strafgerichten",
+          "ursachen_ids": [908],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Spezialisierte Richterinnen und Richter können Verfahren sachkundiger und für Betroffene schonender führen; belastbare Auswertungen fehlen. Das Land kann die Geschäftsverteilung seiner Gerichte entsprechend gestalten.",
+          "zitat": "An den Strafgerichten schaffen wir eine Sonderzuständigkeit für Sexualdelikte.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=132",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6619,
+          "beschreibung": "Auf Bundesebene Catcalling unter Strafe stellen",
+          "ursachen_ids": [908],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Neue Straftatbestände wie für „Catcalling“ erfassen mehr Übergriffe, ihre abschreckende Wirkung ist offen. Das Land kann nur über den Bundesrat darauf hinwirken.",
+          "zitat": "Auf Bundesebene setzen wir uns dafür ein, „Catcalling“ unter Strafe zu stellen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=132",
+          "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -2142,6 +3381,53 @@
           "ursachen_ids": [904],
           "zitat": "Die Täterarbeit wird deutlich ausgebaut.",
           "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=81",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6620,
+          "instrument": 6521,
+          "beschreibung": "Ursachenorientierte Prävention: Aufklärung, Aussteigerprogramme, Vernetzung",
+          "ursachen_ids": [907],
+          "zitat": "Wir fordern eine ursachenorientierte Kriminalprävention durch verstärkte Aufklärung, Aussteigerprogramme und die Vernetzung staatlicher Stellen mit bürgerschaftlichen Initiativen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=66",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6621,
+          "beschreibung": "Verfassungsschutzämter Berlin und Brandenburg fusionieren",
+          "ursachen_ids": [907],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein gemeinsames Amt kann Kräfte bündeln; ob es Extremismus wirksamer bekämpft, ist nicht untersucht. Die Fusion braucht einen Staatsvertrag mit dem Nachbarland.",
+          "zitat": "Die Landesämter für Verfassungsschutz von Berlin und Brandenburg wollen wir fusionieren, um ihre Schlagkraft in der Metropolregion zu erhöhen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6622,
+          "instrument": 6522,
+          "beschreibung": "Polizei, Staatsanwaltschaft und Gerichte für antisemitische Straftaten sensibilisieren",
+          "ursachen_ids": [907],
+          "zitat": "Wir setzen uns für umfangreiche Schulungen von Polizei, Staatsanwaltschaft und Gerichten zur Sensibilisierung im Hinblick auf antisemitische Aussagen und Straftaten ein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=78",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6623,
+          "instrument": 6525,
+          "beschreibung": "Gewaltschutzambulanz stärken und ausbauen",
+          "ursachen_ids": [908],
+          "zitat": "Wir wollen die Gewaltschutzambulanz stärken und ausbauen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=69",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -2243,6 +3529,70 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6624,
+          "instrument": 6520,
+          "beschreibung": "Stärkere Beobachtung und Überwachung links- und islamistisch-extremistischer Strukturen",
+          "ursachen_ids": [907],
+          "zitat": "Die Beobachtung linksextremistischer Kampagnen wie „Switch Off“ und ihrer Vorfeldstrukturen durch den Verfassungsschutz.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=17",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6625,
+          "beschreibung": "Islamistische Gefährder konsequent abschieben",
+          "ursachen_ids": [907],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Wer abgeschoben wird, begeht hier keine weiteren Taten; der größere Teil der politisch motivierten Straftaten geht aber von Deutschen aus. Das Land vollzieht Abschiebungen, ist aber auf Bundesrecht und die Herkunftsstaaten angewiesen.",
+          "zitat": "Die konsequente Abschiebung islamistischer Gefährder auch in Herkunftsländer wie Syrien und Afghanistan.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=17",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6626,
+          "instrument": 6529,
+          "beschreibung": "Verfassungsfeindliche Moscheen schließen, Vereinsverbote",
+          "ursachen_ids": [907],
+          "zitat": "Die Schließung verfassungsfeindlicher Moscheen und Vereinsverbote.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=24",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6627,
+          "beschreibung": "Sexualstraftäter im Justizvollzug über chemische Kastration aufklären",
+          "ursachen_ids": [908],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Eine freiwillige medikamentöse Behandlung kann bei einzelnen Tätern Rückfälle senken, Studien kommen zu unterschiedlichen Ergebnissen; sie erreicht nur bereits verurteilte Täter. Das Land kann im Justizvollzug darüber informieren.",
+          "zitat": "Die Aufklärung über die Möglichkeit der chemischen Kastration für Sexualstraftäter in den Justizvollzugsanstalten.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6628,
+          "beschreibung": "Über den Bundesrat Doppelstaatlern nach schweren Sexualstraftaten die Staatsangehörigkeit aberkennen",
+          "ursachen_ids": [908],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Der Entzug soll eine spätere Abschiebung ermöglichen und betrifft nur wenige Täter; ob er Taten verhindert, ist nicht untersucht. Das Grundgesetz verbietet den Entzug der Staatsangehörigkeit weitgehend, das Land kann nur über den Bundesrat darauf hinwirken.",
+          "zitat": "Die Aberkennung der deutschen Staatsbürgerschaft bei Doppelstaatlern, die wegen schwerer Straftaten verurteilt worden sind, insbesondere wegen Mordes und Totschlages, schwerer Sexualstraftaten",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=26",
+          "evidenz": "offen",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -2324,6 +3674,61 @@
           "ursachen_ids": [904],
           "zitat": "Täter*innenkurse müssen für Personen, die häusliche Gewalt ausüben, verpflichtend angeboten und konsequent umgesetzt werden.",
           "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=214",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6629,
+          "instrument": 6521,
+          "beschreibung": "Demokratie-Projekte über ein Demokratiefördergesetz langfristig absichern, Aussteigerprogramme ausbauen",
+          "ursachen_ids": [907],
+          "zitat": "Ihre strukturelle und langfristige Förderung muss u. a. über ein Demokratiefördergesetz abgesichert werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=270",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6630,
+          "instrument": 6529,
+          "beschreibung": "Alle militanten neonazistischen Organisationen verbieten",
+          "ursachen_ids": [907],
+          "zitat": "Wir fordern das Verbot aller militanten neonazistischen Organisationen",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=328",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6631,
+          "instrument": 6524,
+          "beschreibung": "Rechte Strukturen konsequent entwaffnen",
+          "ursachen_ids": [907],
+          "zitat": "Wir setzen uns außerdem für eine konsequente Entwaffnung rechter Strukturen ein.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=329",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6632,
+          "instrument": 6523,
+          "beschreibung": "Projekte stärken, die antisemitische Vorfälle erfassen, Opfer beraten und vorbeugen",
+          "ursachen_ids": [907],
+          "zitat": "werden die Projekte stärken, die in diesem Feld Vorfälle monitoren, Opfer beraten und Präventionsarbeit leisten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=271",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6633,
+          "instrument": 6525,
+          "beschreibung": "Anonyme und vertrauliche Spurensicherung flächendeckend und rund um die Uhr",
+          "ursachen_ids": [908],
+          "zitat": "Die anonyme und vertrauliche Spurensicherung muss in Berlin flächendeckend, dezentral und rund um die Uhr verfügbar sein.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=142",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
@@ -2452,6 +3857,17 @@
           "ursachen_ids": [904],
           "zitat": "Das Angebot von Frauenhäusern bauen wir aus",
           "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6634,
+          "instrument": 6521,
+          "beschreibung": "Entradikalisierungsprogramme",
+          "ursachen_ids": [907],
+          "zitat": "setzen wir auf Deeskalationsmaßnahmen, auf mehr und bessere Jugendarbeit und auf Entradikalisierungsprogramme.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=38",
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
