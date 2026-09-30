@@ -123,7 +123,7 @@ Verworfen:
 
 ## Sicherheit (9)
 
-Stand: 29. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+Stand: 29. 9. 2026, ergänzt 30. 9. 2026 (905 neu gefasst, 909) · KI-Entwurf, noch nicht von der Betreiberin freigegeben
 
 Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #14). Zwei belegte Diagnosen deckte keine Ursache ab. Sie sind jetzt als 904 und 905 aufgenommen, und alle erreichbaren Programme wurden eigens danach durchsucht.
 
@@ -506,6 +506,54 @@ Verworfen:
 **Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Heizungsgesetz, Gebäudeenergiegesetz, GEG, Heizung, Heizungstausch, Wärmepumpe, Wärmeplanung, Wärmenetz, Fernwärme, Contracting, Leasing, Förderung, Modernisierungsumlage, Kappungsgrenze, Warmmietenneutralität, Wohngeld. Ergebnis: 20 Maßnahmen (IDs 7040–7059), 6 Instrumente (7034–7039), fünf Einzelbewertungen. Zu 1602 sind beide Richtungen gleich bewertet (Instrumente 7036 „abschaffen“ und 7037 „beibehalten“, je Wirksamkeit 1): Beide versprechen Klarheit, keine kann sie allein sichern. Die SPD-Aussage „Beschlossene Gesetze werden wir umsetzen“ steht im Klimakapitel und ist 7037 zugeordnet; bei der Prüfung bitte auf Passung achten. Nicht erfasst wurden: CO₂-Preis und Energiesteuern (Energiepreise), Fernwärme-Preisaufsicht und Gewinnverbot bei Wärmenetzen (SPD, Linke; Energiepreise), Ablehnung eines Anschlusszwangs an Fernwärme (FDP; keine Maßnahme), Holzheizungen erlauben (Union, FDP; keine erfasste Ursache).
 
 **Landesprogramme** (1603; 30. 9. 2026, KI-Entwurf): alle 21 Landesprogramme, Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme. Ergebnis: 18 Maßnahmen (IDs 7161–7178), 3 Landesinstrumente (7158–7160), eine Einzelbewertung, 4 × `keine_massnahme` (Union, Linke und BSW in Mecklenburg-Vorpommern, AfD in Berlin). Die Richtungen sind getrennt bewertet: Wärmeplanung unterstützen (Wirksamkeit 2), vereinfachen (1), Pflicht abschaffen (1, Umsetzbarkeit 1, weil Bundesrecht).
+
+## Neutralitätsprüfung der Suchbegriffe, alle Themen (30. 9. 2026)
+
+Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Anlass war das Artefakt bei 905 (siehe Sicherheit): Die Tabelle nannte Lösungsrichtungen beider Seiten, gesucht wurde aber nur nach einer. Geprüft wurde deshalb für jede Ursache:
+
+1. Welche Parteien haben im Bundesprogramm keine Maßnahme dazu (`npm run punkte`, Abdeckung je Ursache)?
+2. Nennt die Spalte „Diagnose aus der Debatte“ eine Lösungsrichtung, die zu diesen Parteien passt, für die aber kein Suchbegriff dokumentiert ist oder deren Maßnahmen einer anderen Ursache zugeordnet sind?
+3. Wenn ja: mit Suchbegriffen dieser Richtung in allen erreichbaren Bundesprogrammen nachsuchen und die Fundstellen lesen.
+
+Das BSW-Bundesprogramm war aus der Sitzung nicht abrufbar. Es muss für die unten genannten Punkte noch mit denselben Stichwörtern durchsucht werden.
+
+**Artefakte, jetzt behoben:**
+
+| Ursache | Befund | Änderung |
+| --- | --- | --- |
+| 905, 909 | nur nach Ausweisung/Abschiebung gesucht; Gefühl nur als Kriminalität zuzuordnen | siehe Sicherheit |
+| 205 | nur nach Zuwanderung gesucht, nicht nach „mehr Angebot in wachsenden Städten“ | 4 Maßnahmen zusätzlich 205 zugeordnet, 2 neu (siehe Miete) |
+| 206 | „Wohngeld statt Objektförderung“ genannt, AfD-Maßnahme dazu nur bei 202 | 2042 auch 206; Wohngeld-Vereinfachung der Linken neu (202) |
+| 305 | „fossile Preise senken“ genannt, Maßnahmen gegen den CO₂-Preis beim Heizen nur bei 302 | alle Maßnahmen mit Instrument 6706 („würde Gas- und Heizölpreise direkt senken“) auch 305: 6729 (AfD), 6738 (Linke), 6831 (BSW) |
+| 901 | „Polizeipräsenz“ genannt; der AfD-Abschnitt „Stärkung der Polizei“ (Besoldung, Ausrüstung) war nicht erfasst | 7224 (AfD, 1 × 1: Besoldung der Landespolizei ist Ländersache) |
+| 1003 | „Prävention und Reha“ genannt; SPD (Digitalisierung, um Pflegebedürftigkeit vorzubeugen) nicht erfasst | 7231 (SPD, Instrument 6234) |
+| 1105 | „Qualifizierung, Aufstieg“ genannt, gesucht nur nach Mindestlohn, Tarif, Minijob | Instrument 7228 (Geringqualifizierte zum Berufsabschluss): 7229 (Union, S. 15), 7230 (Linke, S. 40) |
+| 1401, 1402 | „Automatisierung, Effizienz“ genannt, „Automatisierung“ und „KI“ fehlten in den Bundes-Stichwörtern | 7225 (FDP, vollautomatisierte Steuerveranlagung), 7226 (FDP, KI-basierte Beantragung von Familienleistungen), beide Instrument 6986 |
+| 1604 | „Anreize für Vermieter“ genannt; die Union-Maßnahme (Effizienzinvestitionen steuerlich absetzbar) stand nur bei Energiepreise | 7227 (Union, eigene Bewertung aus Sicht der Mieter) |
+
+Punkte ändern sich dadurch nur, wo eine Partei vorher bei der Ursache leer ausging oder die neue Maßnahme besser bewertet ist (`npm run punkte -- <Thema>`).
+
+**Geprüft, keine Änderung** (die Lücke liegt am Programm, nicht an der Suche):
+- 102: Zu „Aufgaben an andere Gesundheitsberufe“ und „Selbstbeteiligung“ fehlten Stichwörter; nachgesucht (Gesundheitsberufe, Pflegefachpersonen, Community Health, Gemeindeschwester, Delegation, Selbstbeteiligung, Praxisgebühr): alle erreichbaren Parteien haben schon eine Maßnahme zu 102.
+- 303: „weniger Verbrauch“ hat nur die Grünen ausdrücklich (6823); Wind und Solar bei SPD und Linke zielen laut Zitat auf den Strompreis (304).
+- 503: Union und AfD nennen den Osten nur als Geschichte, ohne Maßnahme.
+- 506: SPD und Linke haben nichts zu Hinzuverdienst oder Freibeträgen im Bürgergeld.
+- 702: Die FDP bietet Selbstständigen nur das Vorsorgedepot an (703), keine Pflicht.
+- 903: SPD (Bundesakademie für Kriminalprävention), FDP (Sport und Gewaltprävention) und Linke (Jugendzentren als Teil der Daseinsvorsorge) nennen nur allgemeine Absichten ohne Bezug zu Jugendgewalt; nicht erfasst.
+- 1002: AfD ohne Maßnahme zu den Eigenanteilen.
+- 1102: FDP und AfD ohne Maßnahme zum Wettbewerb im Lebensmittelhandel; die Union will die Eingriffsbefugnisse des Kartellamts eher binden.
+- 1105: Das Aufstiegs-BAföG (Grüne, FDP, Linke) richtet sich an Fachkräfte auf dem Weg zum Meister, nicht an den Niedriglohnbereich; nicht zugeordnet.
+- 1204: Zu Helm, Training und Verkehrserziehung für Radfahrende steht in keinem Bundesprogramm etwas; die Treffer betreffen die Fahrausbildung für Autos.
+- 1503: Keine Maßnahme zu Raffinerien und Großhandel; die Übergewinnsteuer der Linken betrifft Strom und Gas.
+- 405: Die AfD will Förderschulen für Kinder mit Behinderung erhalten, das betrifft nicht die soziale Herkunft.
+
+**Offen (Entscheidung der Betreiberin):**
+- **1501 (Rohölpreis).** Die Tabelle nennt „weniger Ölabhängigkeit: E-Mobilität eher grün, heimische Förderung eher rechts“. Beide Seiten haben Maßnahmen: E-Auto-Förderung (SPD, Grüne, Linke, BSW; Instrument 7014, bei 1504) und E-Fuels/synthetische Kraftstoffe (Union S. 75, FDP S. 42, AfD S. 44; bisher nicht erfasst). Eine Bewertung gilt aber für alle Ursachen einer Maßnahme: Die E-Auto-Förderung ist für den Kaufpreis mit 2 × 3 bewertet und brächte bei jeder Beschwerde über Spritpreise 6 Punkte, obwohl sie kurzfristig nicht gegen einen Ölpreisschock hilft. E-Fuels sind heute deutlich teurer als fossiler Sprit. Vorschlag: 1501 vorerst ohne Maßnahmen lassen, oder für 1501 eigene Einträge mit eigener Bewertung anlegen (dann beide Richtungen).
+- **905: Zuwanderung begrenzen** (siehe Sicherheit, „Offen“).
+
+**Regel für künftige Erfassungen** (jetzt auch in [`methode.md`](methode.md) → „Ursachen“, Regel 4): Für jede Lösungsrichtung, die die Perspektivenprüfung nennt, werden eigene Suchbegriffe festgelegt und dokumentiert. Findet sich zu einer genannten Richtung keine Maßnahme, steht das ausdrücklich in der Erfassung.
 
 ## Hinweise zur Quellenprüfung
 
