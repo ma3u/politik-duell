@@ -33,6 +33,22 @@
       "ebene": "bund",
       "schlagwoerter": ["mieterhoehung", "erhoeh", "indexmiete", "vergleichsmiete", "mietspiegel", "modernisierung", "bestandsmiete", "jedes jahr mehr"],
       "nachtraeglich": "2026-09-28: nach Sichtung der Programme ergänzt, weil mehrere Programme Mieterhöhungen im laufenden Mietverhältnis begrenzen wollen und keine der Ursachen das abdeckte."
+    },
+    {
+      "id": 205,
+      "beschreibung": "Die Nachfrage wächst vor allem in Großstädten: mehr Haushalte, getragen vor allem von Zuwanderung",
+      "quelle_url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2026/IW-Report_2026-Migration-und-Wohnungsmarkt.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["zuwanderung", "zuzug", "zugezogen", "fluechtlinge", "migranten", "zu viele leute", "stadt waechst", "nachfrage"],
+      "nachtraeglich": "2026-09-30: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 206,
+      "beschreibung": "Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden (2025: rund 27.000 neu gefördert, rund 55.000 fallen jährlich heraus)",
+      "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1200778",
+      "ebene": "land",
+      "schlagwoerter": ["sozialwohnung", "wbs", "wohnberechtigungsschein", "sozialer wohnungsbau", "sozialbindung", "kommunale wohnung", "genossenschaft"],
+      "nachtraeglich": "2026-09-30: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
     }
   ],
   "abdeckung": [
@@ -48,6 +64,7 @@
           "begruendung": "Senkt Baukosten und beschleunigt Planung; Bauordnungen sind Ländersache, die Wirkung hängt daher auch von den Ländern ab.",
           "zitat": "Mit dem Gebäudetyp E – wie „Einfach“ – schaffen wir die Voraussetzungen für kostengünstigeres, aber sicheres Bauen. Mit einer befristeten Sonderregelung für angespannte Wohnungsmärkte erlauben wir bei Wohnungsbauvorhaben Ausnahmen vom geltenden Planungsrecht.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
@@ -60,16 +77,15 @@
           "begruendung": "Mehr verfügbare Flächen erleichtern Neubau in Wachstumsregionen; Umfang und Tempo hängen von Kommunen und Ländern ab.",
           "zitat": "Bundeseigene Grundstücke der Bundesanstalt für Immobilienaufgaben sollen für den Wohnungsbau genutzt werden.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2003,
+          "instrument": 6641,
           "beschreibung": "Keine neuen kostentreibenden Standards (Baukostenmoratorium), Genehmigungsverfahren digitalisieren und beschleunigen",
           "ursachen_ids": [203],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 3,
-          "begruendung": "Verhindert weitere Kostensteigerungen durch Vorschriften und verkürzt Verfahren; bereits gestiegene Material- und Lohnkosten bleiben.",
           "zitat": "Mit uns gibt es keine neuen Standards, die Baukosten ohne nennenswerten Mehrwert erhöhen. Planungs- und Nebenkosten senken wir durch Digitalisierung und Beschleunigung von Bauleit- und Baugenehmigungsverfahren.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
           "stand": "2026-09-27",
@@ -77,11 +93,9 @@
         },
         {
           "id": 2004,
+          "instrument": 6640,
           "beschreibung": "Höhere befristete Sonderabschreibung und degressive Abschreibung für bezahlbaren Mietwohnungsbau in angespannten Märkten",
           "ursachen_ids": [201],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "begruendung": "Steuerliche Anreize können Neubau anstoßen; kostet Steuereinnahmen, und ob die Wohnungen günstig vermietet werden, ist nicht gesichert.",
           "zitat": "Dazu konzentrieren wir die Förderung auf den Geschosswohnungsbau in angespannten Wohnungsmärkten.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
           "stand": "2026-09-27",
@@ -90,12 +104,13 @@
         {
           "id": 2005,
           "beschreibung": "Sozialen Wohnungsbau solide fördern und Wohngeld regelmäßig anpassen",
-          "ursachen_ids": [201, 202],
+          "ursachen_ids": [201, 202, 206],
           "wirksamkeit": 1,
           "umsetzbarkeit": 3,
           "begruendung": "Hält bestehende Instrumente aufrecht, ohne Umfang oder Ausbau zu beziffern; Wohngeld entlastet, schafft aber keine Wohnungen.",
           "zitat": "Der soziale Wohnungsbau muss solide gefördert und das Wohngeld regelmäßig angepasst werden.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "evidenz": "belegt",
           "stand": "2026-09-27",
           "geprueft": false
         },
@@ -108,6 +123,7 @@
           "begruendung": "Setzt einen kleinen Anreiz für günstige Mieten, vor allem bei privaten Vermietern; die Wirkung auf das Mietniveau ist begrenzt.",
           "zitat": "Den Werbungskostenabzug passen wir an, damit derjenige, der weniger als die ortsübliche Vergleichsmiete verlangt, künftig keine steuerlichen Nachteile hat.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false
         }
@@ -135,6 +151,7 @@
           "begruendung": "Dämpft Mieten bei Neuvermietung in angespannten Märkten; schafft keine neuen Wohnungen. Eine unbefristete Geltung ist verfassungsrechtlich weniger abgesichert als die befristete.",
           "zitat": "Die Mietpreisbremse soll unbefristet und auch für Immobilien, die bis 2019 bezogen wurden, gelten, um langfristig für stabile und bezahlbare Mieten in angespannten Wohnungsmärkten zu sorgen.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=20",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
@@ -157,28 +174,28 @@
           "begruendung": "Begrenzt Erhöhungen in laufenden Mietverträgen spürbar, vor allem in angespannten Märkten; schafft keine neuen Wohnungen.",
           "zitat": "Deswegen wollen wir, dass in Gebieten mit angespanntem Wohnungsmarkt nur eine maximale Mietsteigerung von sechs Prozent in drei Jahren bis zur ortsüblichen Vergleichsmiete gestattet ist.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=21",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2013,
           "beschreibung": "Sozialen Wohnungsbau stärken; Wohnungsgesellschaften und Genossenschaften über einen Deutschlandfonds mit Eigenkapital ausstatten",
-          "ursachen_ids": [201],
+          "ursachen_ids": [201, 206],
           "wirksamkeit": 2,
           "umsetzbarkeit": 2,
           "begruendung": "Mehr Kapital für gemeinwohlorientierte Bauherren kann das Angebot günstiger Wohnungen erhöhen; erfordert erhebliche öffentliche Mittel.",
           "zitat": "Über den Deutschlandfonds werden wir Wohnungsbaugesellschaften und -genossenschaften mit dem nötigen Eigenkapital versorgen und damit den Wohnungsbau ankurbeln.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=21",
+          "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2014,
+          "instrument": 6641,
           "beschreibung": "Baukosten senken: Gebäudetyp E weiterentwickeln, serielles und modulares Bauen fördern, Bauverwaltung digitalisieren",
           "ursachen_ids": [203],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 3,
-          "begruendung": "Setzt an Vorschriften und Verfahrensdauer an; bereits gestiegene Material- und Lohnkosten bleiben.",
           "zitat": "Vereinfachte Baustandards wie der Gebäudetyp E müssen weiterentwickelt werden.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
           "stand": "2026-09-27",
@@ -193,6 +210,7 @@
           "begruendung": "Schafft zusätzliche Wohnungen, laut Programm vor allem für Beschäftigte des Bundes; die Wirkung auf den allgemeinen Markt ist begrenzt.",
           "zitat": "Der Bund geht mit einer neuen bundeseigenen Wohnungsgesellschaft voran, um durch eigene Wohnraumförderung den Markt zu entlasten und Wohnraum für Angestellte und Beamte des Bundes zu schaffen.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
+          "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false
         }
@@ -220,26 +238,15 @@
           "begruendung": "Dämpft Mieten bei Neuvermietung in angespannten Märkten; schafft keine neuen Wohnungen.",
           "zitat": "Wir werden die Mietpreisbremse verlängern und sie durch die Abschaffung von Ausnahmen verschärfen.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2022,
+          "instrument": 6639,
           "beschreibung": "Mietenstopp in angespannten Wohnungsmärkten ermöglichen und Kappungsgrenzen senken",
           "ursachen_ids": [204],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "rollen_modifikator": {
-            "mieter": {
-              "wert": 1,
-              "begruendung": "Verhindert Mieterhöhungen im laufenden Mietverhältnis."
-            },
-            "eigentuemer": {
-              "wert": -1,
-              "begruendung": "Schließt Mieterhöhungen im Bestand zeitweise aus."
-            }
-          },
-          "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen in angespannten Märkten; schafft keine neuen Wohnungen. Ein Mietenstopp wirft verfassungsrechtliche Fragen auf.",
           "zitat": "Wir werden in angespannten Wohnungsmärkten einen Mietenstopp ermöglichen.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
           "stand": "2026-09-27",
@@ -254,20 +261,39 @@
           "begruendung": "Nutzt vorhandene Gebäude und senkt Kosten durch einfachere Regeln; wie viele Wohnungen so entstehen, ist unsicher.",
           "zitat": "Dazu werden wir das Baurecht vereinfachen, Verfahren digitalisieren und bundesweit angleichen – davon profitieren alle Formen des Bauens. Übertriebene Anforderungen an bauliche Standards werden wir auf ein sinnvolles Maß zurückführen.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=71",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2024,
+          "instrument": 6642,
           "beschreibung": "Fördermittel für sozialen und gemeinnützigen Wohnungsbau erhöhen, Miet- und Belegungsbindungen unbefristet",
-          "ursachen_ids": [201],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "begruendung": "Schafft dauerhaft preisgebundene Wohnungen; erfordert erhebliche öffentliche Mittel.",
+          "ursachen_ids": [201, 206],
           "zitat": "Den sozialen und gemeinnützigen Wohnungsbau unterstützen wir, indem im Bund die Fördermittel für sozialen Wohnungsbau erhöht werden.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=72",
           "stand": "2026-09-27",
           "geprueft": false
+        },
+        {
+          "id": 6643,
+          "beschreibung": "Mietwucher leichter ahnden (§ 5 Wirtschaftsstrafgesetz), Indexmieten durch Obergrenzen begrenzen",
+          "ursachen_ids": [202, 204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "rollen_modifikator": {
+            "mieter": {
+              "wert": 1,
+              "begruendung": "Stärkt die Rechte von Mieterinnen und Mietern unmittelbar."
+            }
+          },
+          "begruendung": "Erleichtert es, überhöhte Mieten zurückzufordern, und begrenzt Erhöhungen bei Indexmieten; wirkt nur für einen Teil der Verträge und schafft keine Wohnungen.",
+          "zitat": "Mietwucher muss durch die Stärkung des § 5 Wirtschaftsstrafgesetzbuch bekämpft werden, um den Nachweis für Mieter*innen zu erleichtern und somit Verstöße gegen die Mietpreisbremse stärker zu ahnden. Indexmieten sollen durch Obergrenzen reguliert werden",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -276,11 +302,9 @@
       "massnahmen": [
         {
           "id": 2031,
+          "instrument": 6640,
           "beschreibung": "Steuerliche Abschreibungen im Wohnungsbau verbessern, Sonderabschreibung fortführen",
           "ursachen_ids": [201],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "begruendung": "Steuerliche Anreize können Neubau anstoßen; kostet Steuereinnahmen, und ob die Wohnungen günstig vermietet werden, ist nicht gesichert.",
           "zitat": "Wir Freie Demokraten werden die steuerlichen Abschreibungen im Wohnungsbau verbessern – das macht Investitionen attraktiver und schafft schneller neuen Wohnraum.",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=43",
           "stand": "2026-09-27",
@@ -295,6 +319,7 @@
           "begruendung": "Setzt an Vorschriften als Kostentreiber an; Mindeststandards bei Gebäudeenergie sind teils durch EU-Recht vorgegeben.",
           "zitat": "Wir werden überzogene Bau-Auflagen abbauen und auf sinnvolle Mindeststandards bei Gebäudeenergie, Brand- und Gesundheitsschutz sowie Statik reduzieren.",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false
         },
@@ -307,26 +332,15 @@
           "begruendung": "Beschleunigt Verfahren und erweitert das Flächenangebot; Personalmangel in Bauämtern bleibt ein Engpass.",
           "zitat": "Reagiert die Behörde nicht fristgerecht, gilt der Bauantrag als genehmigt (Genehmigungsfiktion).",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2034,
+          "instrument": 6637,
           "beschreibung": "Mietpreisbremse auslaufen lassen, um Anreize für Neubau zu setzen",
           "ursachen_ids": [201],
-          "wirksamkeit": 1,
-          "umsetzbarkeit": 3,
-          "rollen_modifikator": {
-            "mieter": {
-              "wert": -1,
-              "begruendung": "Fällt die Begrenzung weg, können Neuvermietungsmieten in angespannten Märkten stärker steigen."
-            },
-            "eigentuemer": {
-              "wert": 1,
-              "begruendung": "Mehr Spielraum bei der Miethöhe."
-            }
-          },
-          "begruendung": "Soll Investitionen anregen; Neubauten sind von der Mietpreisbremse ohnehin ausgenommen, die Wirkung auf den Neubau ist daher gering.",
           "zitat": "Die Mietpreisbremse ist nachweislich eine Investitionsbremse. Deshalb lassen wir sie auslaufen.",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
           "stand": "2026-09-27",
@@ -346,6 +360,7 @@
           "begruendung": "Senkt einzelne Anforderungen an Neubauten; das Gesetz setzt zum Teil EU-Recht um, eine Abschaffung wäre daher nur eingeschränkt möglich.",
           "zitat": "Ideologiegetriebene Kosten wie EEG-Umlage, CO₂-Steuer und das Gebäudeenergiegesetz (GEG) werden wir abschaffen.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=37",
+          "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false
         },
@@ -358,30 +373,33 @@
           "begruendung": "Entlastet Haushalte mit geringem Einkommen direkt; schafft keine zusätzlichen Wohnungen, der Verzicht auf sozialen Wohnungsbau verringert das Angebot günstiger Wohnungen.",
           "zitat": "Es ist besser, einkommensschwache Mieter vermehrt mit Wohngeld zu unterstützen, wodurch eine soziale Durchmischung gewährleistet wird.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=38",
+          "evidenz": "belegt",
           "stand": "2026-09-27",
           "geprueft": false
         },
         {
           "id": 2043,
+          "instrument": 6637,
           "beschreibung": "Mietpreisbremse und Mietendeckel ablehnen, um Investitionshemmnisse abzubauen",
           "ursachen_ids": [201],
-          "wirksamkeit": 1,
-          "umsetzbarkeit": 3,
-          "rollen_modifikator": {
-            "mieter": {
-              "wert": -1,
-              "begruendung": "Fällt die Begrenzung weg, können Neuvermietungsmieten in angespannten Märkten stärker steigen."
-            },
-            "eigentuemer": {
-              "wert": 1,
-              "begruendung": "Mehr Spielraum bei der Miethöhe."
-            }
-          },
-          "begruendung": "Soll Investitionen anregen; Neubauten sind von der Mietpreisbremse ohnehin ausgenommen, die Wirkung auf den Neubau ist daher gering.",
           "zitat": "Die AfD steht für ein ausgewogenes Mietrecht und lehnt staatliche Überregulierungen sowie Investitionshemmnisse wie die Mietpreisbremse oder den Mietendeckel ab.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=39",
           "stand": "2026-09-27",
           "geprueft": false
+        },
+        {
+          "id": 6644,
+          "beschreibung": "Keine Zuweisung von Asylberechtigten und Asylbewerbern mehr in angespannte Wohnungsmärkte",
+          "ursachen_ids": [205],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Verringert die Nachfrage in angespannten Märkten nur für eine kleine Gruppe und verlagert sie in andere Regionen; anerkannte Flüchtlinge dürfen nur befristet und zur Integration an einen Wohnort gebunden werden (§ 12a AufenthG).",
+          "zitat": "Um die Wohnungsnot in Gebieten mit angespannten Wohnungsmärkten insbesondere auch für junge Familien zu begrenzen, ist die Zuweisung von Wohnungen an Asylberechtigte und erst recht an Asylbewerber in diese Wohnquartiere maximal zu begrenzen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=111",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -390,21 +408,9 @@
       "massnahmen": [
         {
           "id": 2051,
+          "instrument": 6638,
           "beschreibung": "Bundesweiter Mietendeckel; besonders hohe Mieten in angespannten Märkten absenken",
           "ursachen_ids": [202],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 1,
-          "rollen_modifikator": {
-            "mieter": {
-              "wert": 1,
-              "begruendung": "Senkt oder begrenzt die Miete unmittelbar."
-            },
-            "eigentuemer": {
-              "wert": -1,
-              "begruendung": "Begrenzt oder senkt Mieteinnahmen."
-            }
-          },
-          "begruendung": "Begrenzt Mieten direkt, auch bei Neuvermietung; schafft keine neuen Wohnungen. Eine Absenkung bestehender Mieten ist verfassungsrechtlich umstritten.",
           "zitat": "Wir fordern einen bundesweiten Mietendeckel! Unser Ziel: Die Explosion der Mieten nicht nur bremsen, sondern beenden und rückgängig machen",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=8",
           "stand": "2026-09-28",
@@ -429,18 +435,20 @@
           "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen vollständig; ein bundesweiter Stopp über sechs Jahre wirft erhebliche verfassungsrechtliche Fragen auf.",
           "zitat": "Als Sofortmaßnahme müssen Mieterhöhungen bundesweit für die nächsten sechs Jahre ausgeschlossen werden",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=8",
+          "evidenz": "gemischt",
           "stand": "2026-09-28",
           "geprueft": false
         },
         {
           "id": 2053,
           "beschreibung": "20 Milliarden Euro im Jahr für gemeinnützigen Wohnungsbau, Sozialbindung dauerhaft, Investitionen von der Schuldenbremse ausnehmen",
-          "ursachen_ids": [201],
+          "ursachen_ids": [201, 206],
           "wirksamkeit": 2,
           "umsetzbarkeit": 1,
           "begruendung": "Würde das Angebot dauerhaft günstiger Wohnungen deutlich erhöhen; die Ausnahme von der Schuldenbremse erfordert eine Verfassungsänderung.",
           "zitat": "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen Wohnraum investieren",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
+          "evidenz": "belegt",
           "stand": "2026-09-28",
           "geprueft": false
         },
@@ -453,6 +461,7 @@
           "begruendung": "Kann Mieten im übernommenen Bestand dämpfen, schafft aber keine neuen Wohnungen; Entschädigung unter Marktwert ist rechtlich umstritten und teuer.",
           "zitat": "Wir wollen den Wohnbestand von Immobilien konzernen mit mehr als 3 000 Wohnungen vergesellschaften und in eine Anstalt öffentlichen Rechts mit demokratischer Verwaltung überführen",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
+          "evidenz": "offen",
           "stand": "2026-09-28",
           "geprueft": false
         },
@@ -465,6 +474,7 @@
           "begruendung": "Kann leerstehende Wohnungen auf den Markt bringen; in angespannten Märkten ist der Leerstand gering, ein großer Teil liegt in schrumpfenden Regionen.",
           "zitat": "Wohnungsleerstände müssen systematisch erfasst werden und dann mit einer Leerstandsabgabe von 10 Euro pro Quadratmeter belegt werden",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
+          "evidenz": "offen",
           "stand": "2026-09-28",
           "geprueft": false
         },
@@ -477,6 +487,7 @@
           "begruendung": "Setzt an Vorschriften als Kostentreiber an, bleibt aber allgemein und nennt keine konkreten Regeln.",
           "zitat": "Wir wollen Regulierungen überprüfen: Nicht alle Regulierungen beim Neubau sind sozial und ökologisch sinnvoll, manche treiben lediglich die Preise in die Höhe",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
+          "evidenz": "offen",
           "stand": "2026-09-28",
           "geprueft": false
         }
@@ -487,11 +498,9 @@
       "massnahmen": [
         {
           "id": 2061,
+          "instrument": 6642,
           "beschreibung": "Gemeinnützigen und kommunalen Wohnungsbau stärken: zinsvergünstigte Kredite, großes Wohnungsbauprogramm, dauerhafte Sozialbindung",
-          "ursachen_ids": [201],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "begruendung": "Mehr Kapital für gemeinwohlorientierte Bauherren kann das Angebot günstiger Wohnungen erhöhen; Umfang und Finanzierung sind nicht beziffert.",
+          "ursachen_ids": [201, 206],
           "zitat": "Größere Teile des Wohnungsmarktes müssen wieder den Regeln der Gemeinnützigkeit unterliegen, gemeinnützige und kommunale Wohnungsbauunternehmen sollten zinsvergünstigte Kredite erhalten und ein großes Wohnungsbauprogramm auflegen.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
           "stand": "2026-09-28",
@@ -499,21 +508,9 @@
         },
         {
           "id": 2062,
+          "instrument": 6638,
           "beschreibung": "Bundesweiter Mietendeckel statt Mietpreisbremse",
           "ursachen_ids": [202],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 1,
-          "rollen_modifikator": {
-            "mieter": {
-              "wert": 1,
-              "begruendung": "Senkt oder begrenzt die Miete unmittelbar."
-            },
-            "eigentuemer": {
-              "wert": -1,
-              "begruendung": "Begrenzt oder senkt Mieteinnahmen."
-            }
-          },
-          "begruendung": "Begrenzt Mieten direkt, auch bei Neuvermietung; schafft keine neuen Wohnungen. Ein bundesweiter Mietendeckel ist verfassungsrechtlich umstritten.",
           "zitat": "Wir fordern einen bundesweiten Mietendeckel statt einer wirkungslosen Mietpreisbremse.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
           "stand": "2026-09-28",
@@ -521,21 +518,9 @@
         },
         {
           "id": 2063,
+          "instrument": 6639,
           "beschreibung": "Mieten in Regionen mit knappem bezahlbarem Wohnraum bis Ende des Jahrzehnts einfrieren; Sanierungskosten tragen die Vermieter",
           "ursachen_ids": [204],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "rollen_modifikator": {
-            "mieter": {
-              "wert": 1,
-              "begruendung": "Verhindert Mieterhöhungen im laufenden Mietverhältnis."
-            },
-            "eigentuemer": {
-              "wert": -1,
-              "begruendung": "Schließt Mieterhöhungen im Bestand zeitweise aus."
-            }
-          },
-          "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen in angespannten Regionen; schafft keine neuen Wohnungen. Ein Mietenstopp wirft verfassungsrechtliche Fragen auf.",
           "zitat": "In allen Regionen, in denen es nicht mehr möglich ist, sich mit einem normalen Einkommen adäquaten Wohnraum zu leisten, wollen wir die Mieten bis zum Ende des Jahrzehnts einfrieren.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
           "stand": "2026-09-28",
@@ -550,10 +535,593 @@
           "begruendung": "Setzt an Verfahrensdauer und Vorschriften an; wie stark die Kosten sinken, hängt von der Umsetzung in den Ländern ab.",
           "zitat": "Notwendig ist auch die Beschleunigung von Bauvorhaben, etwa durch die Vereinfachung von seriellem Bauen und die Einführung eines vereinfachten Genehmigungsverfahrens für sozialen Wohnungsbau.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
+          "evidenz": "gemischt",
           "stand": "2026-09-28",
           "geprueft": false
         }
       ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6651,
+          "instrument": 6645,
+          "beschreibung": "Sozialen Wohnungsbau fördern, Wohnraumförderprogramme des Bundes weiter kofinanzieren",
+          "ursachen_ids": [206],
+          "zitat": "Stattdessen setzen wir uns auf Bundesebene für die Wiedereinführung des Baukindergeldes ein, fördern den sozialen Wohnungsbau und unterstützen energetische und barrierefreie Sanierungen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6652,
+          "instrument": 6646,
+          "beschreibung": "Sozialen Wohnungsbau stärken, Bundesmittel nutzen und kofinanzieren",
+          "ursachen_ids": [206],
+          "zitat": "Der soziale Wohnungsbau wird gestärkt, insbesondere für altersgerechte und barrierefreie Wohnungen, Wohnraum für Familien in Oberzentren sowie junges Wohnen für Studierende und Auszubildende.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6653,
+          "instrument": 6646,
+          "beschreibung": "Sozialen Wohnungsbau und die Bundesmittel dafür in Sachsen-Anhalt nutzbar machen",
+          "ursachen_ids": [206],
+          "zitat": "der soziale Wohnungsbau und die dafür bereitgestellten Bundesmittel in Sachsen-Anhalt nutzbar gemacht werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=91",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 25. 4. 2026) durchsucht, Kapitel Wohnen und Stichwörter Sozialwohnung, sozialer Wohnungsbau, Wohnraumförderung, Belegungs- und Sozialbindung: Das Programm will einen Altschuldenfonds für kommunale Wohnungsunternehmen und Genossenschaften (S. 12), nennt aber keine Maßnahme zu Sozialwohnungen (Ursache 206).",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6654,
+          "instrument": 6646,
+          "beschreibung": "1:1-Kofinanzierung der Bundesmittel für den sozialen Wohnungsbau wiederbeleben",
+          "ursachen_ids": [206],
+          "zitat": "Das werden wir ändern und dazu die 1:1 Kofinanzierung der Bundesmittel für den sozialen Wohnungsbau wiederbeleben und entsprechende Fördermittel für die Wohnungsbau- und Städtebauförderung zur Verfügung stellen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=190",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6655,
+          "instrument": 6647,
+          "beschreibung": "Wohnungsbauförderung nur noch für unbefristet gebundenen sozialen Mietwohnungsbau",
+          "ursachen_ids": [206],
+          "zitat": "Fördermittel für den Wohnungsbau nur für unbefristet gebundenen sozialen Mietwohnungsbau verwenden und nicht für die Förderung von Eigentum,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=83",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6656,
+          "beschreibung": "Landeswohnungsbaugesellschaft gründen, deren Wohnungen nicht aus der Sozialbindung fallen",
+          "ursachen_ids": [206],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Eine eigene Gesellschaft kann dauerhaft gebundene Wohnungen bauen, wo andere nicht investieren; Aufbau und Eigenkapital kosten Zeit und Geld, und in vielen Regionen Sachsen-Anhalts fehlt eher Nachfrage als Angebot.",
+          "zitat": "Wir setzen uns für die Gründung einer Landeswohnungsbaugesellschaft ein.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=84",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6657,
+          "instrument": 6646,
+          "beschreibung": "Sozialen und gemeinnützigen Wohnungsbau deutlich ausweiten",
+          "ursachen_ids": [206],
+          "zitat": "Das BSW Sachsen-Anhalt setzt sich für eine deutliche Ausweitung des sozialen und gemeinnützigen Wohnungsbaus ein",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6658,
+          "beschreibung": "Eigenes Landesprogramm zur Förderung des Mietwohnungsbaus, vor allem für kommunale und genossenschaftliche Wohnungsunternehmen",
+          "ursachen_ids": [206],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Mehr geförderte Mietwohnungen kommunaler und genossenschaftlicher Unternehmen können günstige Wohnungen sichern; das Programm nennt aber weder Miet- noch Belegungsbindungen noch einen Umfang.",
+          "zitat": "Neben der Förderung des Wohneigentums werden wir ein eigenständiges Programm … zur Förderung des Mietwohnungsbaus auflegen. Dieses unterstützt insbesondere … kommunale und genossenschaftliche Wohnungsunternehmen beim Neubau",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=19",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6659,
+          "instrument": 6645,
+          "beschreibung": "Landesförderprogramm für sozialen Wohnungsneubau fortführen",
+          "ursachen_ids": [206],
+          "zitat": "Das Landesförderprogramm für sozialen … Wohnungsneubau dient im Schwerpunkt dem Neubau in Ober-, Mittel- und Grundzentren",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=54",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6660,
+          "instrument": 6646,
+          "beschreibung": "Landesprogramm „Wohnungsbau Sozial“ aufstocken, höhere Zuschüsse für Sozialwohnungen",
+          "ursachen_ids": [206],
+          "zitat": "das Landeswohnraumförderprogramm „Wohnungsbau Sozial“ aufstocken und reformieren, unter anderem durch zinsgünstigere Darlehen und höhere Tilgungszuschüsse für Sozialwohnungen, eine möglichst lange Mietpreisbindung",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=53",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6661,
+          "instrument": 6647,
+          "beschreibung": "Sozialbindung entfristen",
+          "ursachen_ids": [206],
+          "zitat": "Parallel dazu stärken wir den sozialen und barrierefreien Wohnungsbau mit höheren Sozialwohnungsquoten, der Entfristung der Sozialbindung",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=54",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6662,
+          "instrument": 6648,
+          "beschreibung": "Höhere Quote für Sozialwohnungen bei Neubauten",
+          "ursachen_ids": [206],
+          "zitat": "die Erhöhung der Sozialwohnungsquote bei Neubauten.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=54",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 22. 3. 2026) durchsucht, Stichwörter Wohnen, Wohnraum, Miete, Sozialwohnung, sozialer Wohnungsbau, Wohnraumförderung: Das Programm nennt einen Freibetrag bei der Grunderwerbsteuer (S. 72) und mehr Bauen für Studierende (S. 114), aber keine Maßnahme zu Sozialwohnungen (Ursache 206).",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landeswahlprogramm (Beschluss 30. 5. 2026) durchsucht, Abschnitt „Bezahlbaren Wohnraum erhalten“ (S. 90) und Stichwörter Sozialwohnung, sozialer Wohnungsbau, Wohnraumförderung: Das Programm will Genossenschaften und kommunale Wohnungsunternehmen allgemein unterstützen und Leerstand nutzbar machen, nennt aber keine Maßnahme zu Sozialwohnungen oder Bindungen (Ursache 206).",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6663,
+          "instrument": 6646,
+          "beschreibung": "Förderprogramme für den sozialen Wohnungsbau reformieren und attraktiver machen",
+          "ursachen_ids": [206],
+          "zitat": "Förderprogramme für den sozialen Wohnungsbau reformieren und attraktiver gestalten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6664,
+          "instrument": 6646,
+          "beschreibung": "Sozialen Wohnungsbau mit verlässlichen Landesprogrammen bedarfsgerecht ausbauen",
+          "ursachen_ids": [206],
+          "zitat": "Bedarfsgerechter Ausbau des sozialen Wohnungsbaus durch verlässliche Förderprogramme des Landes.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=21",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6665,
+          "instrument": 6645,
+          "beschreibung": "Wohnraumförderung fortführen (rund 5.000 neue Sozialwohnungen im Jahr, Wohnraumförderfonds)",
+          "ursachen_ids": [206],
+          "zitat": "Über 750 Millionen Euro fließen zusätzlich in den Wohnraumförderfonds, um bezahlbaren Wohnraum zu sichern und neue Projekte anzustoßen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6666,
+          "instrument": 6649,
+          "beschreibung": "Einkommensprüfung in Sozialwohnungen mit Mietzuschlag, Einnahmen für neue Sozialwohnungen",
+          "ursachen_ids": [206],
+          "zitat": "Deshalb werden wir bei Neuvermietungen regelmäßige Einkommensprüfungen für Mieter einführen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=31",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6667,
+          "instrument": 6648,
+          "beschreibung": "Quote für Sozialwohnungen im kooperativen Baulandmodell von 30 auf 50 Prozent erhöhen",
+          "ursachen_ids": [206],
+          "zitat": "Wir erhöhen diese Quote auf 50 Prozent und stärken das Modell als Kerninstrument für bezahlbares Wohnen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6668,
+          "instrument": 6650,
+          "beschreibung": "Eigentümer ab 50 Wohnungen verpflichten, einen Anteil an Haushalte mit Wohnberechtigungsschein zu vermieten",
+          "ursachen_ids": [206],
+          "zitat": "einen festgelegten Anteil ihres Bestands an Haushalte mit Wohnberechtigungsschein zu vermieten.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=21",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6669,
+          "instrument": 6648,
+          "beschreibung": "Quote für mietpreisgebundene Wohnungen in der kooperativen Baulandentwicklung auf 50 Prozent erhöhen",
+          "ursachen_ids": [206],
+          "zitat": "Das Berliner Modell der kooperativen Baulandentwicklung entwickeln wir weiter und erhöhen die Quote für mietpreisgebundenen Wohnraum (WBS-Wohnungen) auf 50 Prozent.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=60",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6670,
+          "instrument": 6649,
+          "beschreibung": "Fehlbelegungsabgabe am Marktpreis orientiert",
+          "ursachen_ids": [206],
+          "zitat": "Dies kann durch eine am Marktpreis orientierte Fehlbelegungsabgabe erfolgen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6671,
+          "instrument": 6649,
+          "beschreibung": "Fehlbelegungsabgabe wieder einführen",
+          "ursachen_ids": [206],
+          "zitat": "Um die Belegung dieser Wohnungen sozial gerecht zu gestalten, wollen wir die Fehlbelegungsabgabe wieder einführen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=6",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6672,
+          "beschreibung": "Bestände mit auslaufenden Bindungen ankaufen, Förderprogramm zur Verlängerung auslaufender Bindungen",
+          "ursachen_ids": [206],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Setzt direkt am Auslaufen der Bindungen an; Ankäufe und Verlängerungen sind teuer und schaffen keine zusätzlichen Wohnungen.",
+          "zitat": "Zusätzlich sollen gezielt Wohnungsbestände mit auslaufenden Mietpreis- und Belegungsbindungen durch die Landeseigenen Wohnungsunternehmen angekauft und ein Förderprogramm aufgelegt werden, um auslaufende Mietpreis- und Belegungsbindungen zu verlängern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=33",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6673,
+          "instrument": 6648,
+          "beschreibung": "Kooperative Baulandentwicklung: mindestens zwei Drittel mietpreis- und belegungsgebundene Wohnungen",
+          "ursachen_ids": [206],
+          "zitat": "sondern mindestens zwei Drittel der Fläche mit mietpreis- und belegungsgebundenen Wohnungen und davon die Hälfte im ersten Förderweg bebaut werden müssen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6674,
+          "instrument": 6650,
+          "beschreibung": "Sicher-Wohnen-Gesetz: große Vermieter müssen einen Teil frei werdender Wohnungen zu Sozialmieten vermieten",
+          "ursachen_ids": [206],
+          "zitat": "Mit dem Sicher-Wohnen-Gesetz verpflichten wir große Vermieter dazu, einen Anteil der jährlich frei werdenden Wohnungen an Menschen mit niedrigen und mittleren Einkommen zu vermieten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6675,
+          "instrument": 6646,
+          "beschreibung": "Mindestens 6.000 neue Sozialwohnungen pro Jahr",
+          "ursachen_ids": [206],
+          "zitat": "Wir setzen uns für ein verbindliches Ziel von mindestens 6.000 neuen Sozialwohnungen pro Jahr ein.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6676,
+          "instrument": 6647,
+          "beschreibung": "Öffentlich geförderte Wohnungen dauerhaft binden",
+          "ursachen_ids": [206],
+          "zitat": "Öffentliche Förderung muss dauerhaft an Mietpreis- und Belegungsbindungen gebunden sein.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6637,
+      "name": "Mietpreisbremse auslaufen lassen, um Investitionen anzuregen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "rollen_modifikator": {
+        "mieter": {
+          "wert": -1,
+          "begruendung": "Fällt die Begrenzung weg, können Neuvermietungsmieten in angespannten Märkten stärker steigen."
+        },
+        "eigentuemer": {
+          "wert": 1,
+          "begruendung": "Mehr Spielraum bei der Miethöhe."
+        }
+      },
+      "begruendung": "Soll Investitionen anregen; Neubauten sind von der Mietpreisbremse ohnehin ausgenommen, die Wirkung auf den Neubau ist daher gering. Studien finden keinen deutlichen Rückgang des Neubaus durch die Bremse.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6638,
+      "name": "Bundesweiter Mietendeckel",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "rollen_modifikator": {
+        "mieter": {
+          "wert": 1,
+          "begruendung": "Senkt oder begrenzt die Miete unmittelbar."
+        },
+        "eigentuemer": {
+          "wert": -1,
+          "begruendung": "Begrenzt oder senkt Mieteinnahmen."
+        }
+      },
+      "begruendung": "Begrenzt Mieten direkt, auch bei Neuvermietung, schafft aber keine neuen Wohnungen; in Berlin sanken 2020/21 die regulierten Mieten, zugleich wurden weniger Wohnungen angeboten. Ob ein bundesweiter Deckel mit Absenkung verfassungsgemäß wäre, ist offen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6639,
+      "name": "Mietenstopp in angespannten Wohnungsmärkten",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "rollen_modifikator": {
+        "mieter": {
+          "wert": 1,
+          "begruendung": "Verhindert Mieterhöhungen im laufenden Mietverhältnis."
+        },
+        "eigentuemer": {
+          "wert": -1,
+          "begruendung": "Schließt Mieterhöhungen im Bestand zeitweise aus."
+        }
+      },
+      "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen in angespannten Märkten; schafft keine neuen Wohnungen und kann Instandhaltung und Modernisierung bremsen. Ein Mietenstopp wirft verfassungsrechtliche Fragen auf.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6640,
+      "name": "Bessere steuerliche Abschreibung für den Mietwohnungsbau",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Steuerliche Anreize können Neubau anstoßen; kostet Steuereinnahmen, und ob die Wohnungen günstig vermietet werden, ist nicht gesichert. Frühere Sonderabschreibungen wirkten vor allem bei ohnehin geplanten Projekten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6641,
+      "name": "Keine neuen kostentreibenden Baustandards, einfachere Standards und digitale Verfahren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert weitere Kostensteigerungen durch Vorschriften und verkürzt Verfahren; bereits gestiegene Material-, Lohn- und Zinskosten bleiben. Wie viel Standards an den Baukosten ausmachen, ist umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6642,
+      "name": "Sozialen und gemeinnützigen Wohnungsbau stärker fördern, mit langen Bindungen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft preisgebundene Wohnungen für Haushalte mit geringem Einkommen; erfordert erhebliche öffentliche Mittel, der Umfang ist nicht beziffert.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6645,
+      "name": "Soziale Wohnraumförderung des Landes fortführen (ohne Ausbau)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Hält den Neubau geförderter Wohnungen aufrecht, bremst aber den Rückgang des Bestands nicht, solange mehr Wohnungen aus der Bindung fallen als neu gefördert werden.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6646,
+      "name": "Soziale Wohnraumförderung des Landes ausbauen, Bundesmittel voll kofinanzieren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr geförderte Neubauten wirken dem Rückgang des Bestands direkt entgegen; das Land muss dafür zusätzliche Haushaltsmittel bereitstellen, und die Wirkung hängt davon ab, dass Bauherren die Förderung annehmen.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6647,
+      "name": "Sozialbindung geförderter Wohnungen unbefristet",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert, dass künftig geförderte Wohnungen nach einigen Jahren aus der Bindung fallen; das Land kann das im eigenen Förderrecht regeln. Private Bauherren nehmen eine Förderung mit Dauerbindung womöglich seltener an.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6648,
+      "name": "Höhere Quote für Sozialwohnungen bei Neubauten (kooperative Baulandentwicklung)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Sichert in neuen Quartieren mehr Sozialwohnungen ohne volle Landesförderung; eine sehr hohe Quote kann private Bauvorhaben unwirtschaftlich machen und den Neubau bremsen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6649,
+      "name": "Fehlbelegungsabgabe für Mieter in Sozialwohnungen mit gestiegenem Einkommen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Lenkt Sozialwohnungen stärker zu Bedürftigen und bringt Geld für neue Förderung; schafft selbst kaum neue Wohnungen, der Verwaltungsaufwand ist hoch, und Besserverdienende ziehen aus, was die Durchmischung verringern kann.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6650,
+      "name": "Große Vermieter per Landesgesetz verpflichten, einen Teil der Wohnungen an WBS-Haushalte zu vermieten",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Würde den Bestand an Wohnungen für Haushalte mit geringem Einkommen schnell erweitern; ob ein Land das regeln darf, ist fraglich, denn das Mietrecht ist Bundessache (Bundesverfassungsgericht 2021 zum Berliner Mietendeckel).",
+      "evidenz": "offen"
     }
   ]
 }
