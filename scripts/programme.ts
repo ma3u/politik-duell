@@ -3,18 +3,34 @@
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import type { Katalog } from '../src/data/katalog.ts'
+import { seitenTexte } from './zitate.ts'
 
 export const sha256 = (daten: Uint8Array) => createHash('sha256').update(daten).digest('hex')
 
+const cacheName = (url: string) => createHash('sha1').update(url).digest('hex')
+
 const text = (x: unknown) => (x instanceof Error ? x.message : String(x))
 
+export interface Programm {
+  url: string
+  sha256?: string
+  name: string
+  partei: string
+  /** null = Bundesprogramm */
+  land: string | null
+  /** false bei Landesprogrammen früherer Wahlperioden */
+  aktuell: boolean
+}
+
 /** Alle Programme im Katalog mit der Prüfsumme der ausgewerteten Fassung. */
-export function programme(k: Katalog): { url: string; sha256?: string; name: string }[] {
-  const liste = new Map<string, { url: string; sha256?: string; name: string }>()
-  for (const p of k.parteien) liste.set(p.programm_url, { url: p.programm_url, sha256: p.programm_sha256, name: `${p.kurzname} (Bund)` })
+export function programme(k: Katalog): Programm[] {
+  const liste = new Map<string, Programm>()
+  for (const p of k.parteien)
+    liste.set(p.programm_url, { url: p.programm_url, sha256: p.programm_sha256, name: `${p.kurzname} (Bund)`, partei: p.kurzname, land: null, aktuell: true })
   for (const l of k.landesprogramme) {
     const partei = k.parteien.find((p) => p.id === l.partei_id)?.kurzname ?? String(l.partei_id)
-    if (l.url) liste.set(l.url, { url: l.url, sha256: l.sha256, name: `${partei} (${l.land}, Wahl ${l.landtagswahl})` })
+    if (l.url)
+      liste.set(l.url, { url: l.url, sha256: l.sha256, name: `${partei} (${l.land}, Wahl ${l.landtagswahl})`, partei, land: l.land, aktuell: l.aktuell })
   }
   return [...liste.values()]
 }
@@ -78,7 +94,7 @@ export async function ladeProgramm(
   lokal?: Map<string, Uint8Array>,
 ): Promise<{ daten: Uint8Array; hinweis?: string }> {
   if (erwartet && lokal?.has(erwartet)) return { daten: lokal.get(erwartet)!, hinweis: `lokal geprüft (Prüfsumme stimmt): ${url}` }
-  const cache = new URL(`../.cache/programme/${createHash('sha1').update(url).digest('hex')}.pdf`, import.meta.url)
+  const cache = new URL(`../.cache/programme/${cacheName(url)}.pdf`, import.meta.url)
   let daten: Uint8Array
   let hinweis: string | undefined
   if (existsSync(cache)) daten = new Uint8Array(readFileSync(cache))
@@ -101,4 +117,33 @@ export async function ladeProgramm(
     hinweis = hinweis ? `${hinweis}. ${neu}` : neu
   }
   return { daten, hinweis }
+}
+
+/**
+ * Seitentexte eines Programms (Index 0 = Seite 1), zwischengespeichert in .cache/texte/.
+ * Der Zwischenspeicher gilt nur für dieselbe Datei (Prüfsumme). .cache/ ist nicht
+ * versioniert: Programme und ihre Texte dürfen nicht ins Repository (Urheberrecht).
+ */
+export async function programmSeiten(
+  url: string,
+  erwartet: string | undefined,
+  lokal?: Map<string, Uint8Array>,
+): Promise<{ seiten: string[]; sha256: string; hinweis?: string }> {
+  const cache = new URL(`../.cache/texte/${cacheName(url)}.json`, import.meta.url)
+  // Eine lokale Kopie der ausgewerteten Fassung geht dem Zwischenspeicher vor.
+  if (existsSync(cache) && !(erwartet && lokal?.has(erwartet))) {
+    const gespeichert = JSON.parse(readFileSync(cache, 'utf8')) as { sha256: string; seiten: string[] }
+    const hinweis =
+      erwartet && gespeichert.sha256 !== erwartet
+        ? `Datei weicht von der ausgewerteten Fassung ab (sha256 ${gespeichert.sha256.slice(0, 12)}… statt ${erwartet.slice(0, 12)}…): ${url}`
+        : undefined
+    return { seiten: gespeichert.seiten, sha256: gespeichert.sha256, hinweis }
+  }
+  const { daten, hinweis } = await ladeProgramm(url, erwartet, lokal)
+  // Prüfsumme vorher bilden: Das Auslesen übergibt die Daten an pdf.js.
+  const summe = sha256(daten)
+  const seiten = await seitenTexte(daten)
+  mkdirSync(new URL('.', cache), { recursive: true })
+  writeFileSync(cache, JSON.stringify({ url, sha256: summe, seiten }))
+  return { seiten, sha256: summe, hinweis }
 }
