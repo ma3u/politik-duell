@@ -39,6 +39,7 @@ function werteAus(
   const { status, punkte } = werteRunde(ea, eb)
   return {
     nr, sprecher, rolle, land, thema, status,
+    ursachen_ids: analyse.ursachen_ids,
     zusammenfassung: analyse.zusammenfassung,
     einschaetzung: null,
     ergebnisse: [ea, eb],

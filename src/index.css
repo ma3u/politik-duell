@@ -661,39 +661,85 @@ textarea {
     transform: none;
   }
 }
-.karten {
-  display: grid;
-  gap: 12px;
+/* Duell je Ursache: ein Stimmzettelbogen mit Mittelfalz. Links wächst Spieler A,
+   rechts Spieler B – wer an einer Ursache mehr liefert, drückt weiter nach außen. */
+.duell {
   margin-top: 1.25rem;
-}
-@media (min-width: 640px) {
-  .karten {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.partei-karte {
-  padding: 0 16px 16px;
-  border-radius: var(--papier-radius);
   background: var(--flaeche);
-  border: 1.5px solid var(--linie);
+  border: 1.5px solid var(--tinte);
+  border-radius: var(--papier-radius);
   box-shadow: var(--schatten);
+  overflow: hidden;
 }
-.partei-karte.gewinnt {
-  border-color: var(--tinte);
-}
-/* Kopf wie eine Stimmzettelzeile: Farbfeld, Name, Punkte, Kreis. */
-.partei-karte header {
+.duell-kopf {
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: center;
-  column-gap: 10px;
-  margin: 0 -16px;
-  padding: 12px 12px 12px 26px;
-  border-bottom: 1px solid var(--linie);
-  background: linear-gradient(90deg, var(--partei) 0 10px, transparent 10px);
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1.5px solid var(--tinte);
 }
-.gewinnt header {
-  border-bottom-color: var(--tinte);
+.duell-partei {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    'spieler spieler'
+    'name name'
+    'summe kreuz'
+    'marke marke';
+  align-items: center;
+  column-gap: 8px;
+  padding: 12px 14px 12px;
+  min-width: 0;
+}
+.duell-a {
+  border-top: 8px solid var(--partei);
+}
+.duell-b {
+  border-top: 8px solid var(--partei);
+  border-left: 1.5px solid var(--tinte);
+  text-align: right;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'spieler spieler'
+    'name name'
+    'kreuz summe'
+    'marke marke';
+}
+.duell-spieler {
+  grid-area: spieler;
+  font-size: 0.8rem;
+  color: var(--text-leise);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.duell-partei h3 {
+  grid-area: name;
+  margin: 0;
+  font-size: 1.15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.duell-summe {
+  grid-area: summe;
+  font-family: var(--schrift-titel);
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.duell-partei:not(.gewinnt) .duell-summe {
+  color: var(--text-leise);
+}
+.duell-partei .kreuzfeld {
+  grid-area: kreuz;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.duell-b .kreuzfeld {
+  justify-self: end;
+}
+.duell-partei:not(.gewinnt) .kreuzfeld {
+  opacity: 0.35;
 }
 .gewinnt .kreuzfeld .kreuz path {
   animation-delay: var(--kreuz-verzoegerung, 0.6s);
@@ -701,67 +747,198 @@ textarea {
 .gewinnt .kreuzfeld .kreuz path + path {
   animation-delay: calc(var(--kreuz-verzoegerung, 0.6s) + 0.18s);
 }
-.partei-karte header .kreuzfeld {
-  grid-column: 3;
-  grid-row: 1 / span 2;
+.duell-marke {
+  grid-area: marke;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
 }
-.karte-spieler {
-  grid-column: 1;
+.duell-b .duell-marke {
+  justify-content: flex-end;
+}
+
+.duell-zeilen {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.duell-zeilen li + li {
+  border-top: 1px solid var(--linie);
+}
+.duell-zeile summary {
+  display: grid;
+  gap: 6px;
+  padding: 10px 14px 12px;
+  cursor: pointer;
+  list-style: none;
+}
+.duell-zeile summary::-webkit-details-marker {
+  display: none;
+}
+.duell-zeile summary:hover {
+  background: var(--papier);
+}
+.duell-zeile summary:focus-visible {
+  outline: 3px solid var(--fokus);
+  outline-offset: -3px;
+}
+.duell-ursache {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+/* Pfeil zeigt, dass sich die Zeile aufklappen lässt. */
+.duell-ursache::after {
+  content: '';
+  flex: none;
+  width: 0.45em;
+  height: 0.45em;
+  margin-top: 0.3em;
+  border-right: 2px solid var(--text-leise);
+  border-bottom: 2px solid var(--text-leise);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+.duell-zeile[open] .duell-ursache::after {
+  transform: rotate(-135deg);
+  margin-top: 0.5em;
+}
+.duell-balken {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 26px;
+  background: linear-gradient(var(--tinte), var(--tinte)) center / 2px 100% no-repeat;
+}
+.duell-halb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+/* Graue Spur = höchstmögliche Punktzahl, damit die Balkenlänge einzuordnen ist. */
+.duell-halb:first-child {
+  flex-direction: row-reverse;
+  padding-right: 1px;
+  background: linear-gradient(var(--flaeche-2), var(--flaeche-2)) right / calc(100% - 1.6rem) 60% no-repeat;
+}
+.duell-halb:last-child {
+  padding-left: 1px;
+  background: linear-gradient(var(--flaeche-2), var(--flaeche-2)) left / calc(100% - 1.6rem) 60% no-repeat;
+}
+.duell-fuellung {
+  flex: none;
+  width: calc(var(--anteil) * (100% - 1.6rem));
+  height: 100%;
+  background: var(--partei-hell);
+  box-shadow: inset 0 0 0 1.5px var(--partei-linie);
+  transform-origin: left;
+  animation: balken-wachsen 0.6s cubic-bezier(0.2, 0.8, 0.3, 1) both;
+  animation-delay: calc(300ms + var(--zeile, 0) * 120ms);
+}
+.duell-halb:first-child .duell-fuellung {
+  transform-origin: right;
+  border-radius: 4px 0 0 4px;
+}
+.duell-halb:last-child .duell-fuellung {
+  border-radius: 0 4px 4px 0;
+}
+.duell-halb.vorne .duell-fuellung {
+  background: var(--partei);
+  box-shadow: inset 0 0 0 1.5px var(--partei-linie);
+}
+.duell-halb.duell-halb.offen {
+  background: repeating-linear-gradient(-45deg, transparent 0 5px, var(--linie) 5px 6.5px);
+}
+@keyframes balken-wachsen {
+  from {
+    transform: scaleX(0);
+  }
+}
+.duell-wert {
+  flex: none;
+  min-width: 1rem;
+  font-family: var(--schrift-titel);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-leise);
+}
+.duell-halb.vorne .duell-wert {
+  color: var(--text);
+}
+
+.duell-details {
+  display: grid;
+  gap: 10px;
+  padding: 2px 14px 14px;
+}
+@media (min-width: 560px) {
+  .duell-details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.duell-massnahme {
+  padding: 8px 0 0 12px;
+  border-left: 4px solid var(--partei);
+  font-size: 0.92rem;
+}
+.duell-massnahme p {
+  margin: 0 0 4px;
+}
+.duell-massnahme-partei {
   font-size: 0.8rem;
   color: var(--text-leise);
 }
-.partei-karte h3 {
-  grid-column: 1;
-  margin: 0;
-}
-.karte-punkte {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  min-width: 2.5rem;
-  text-align: right;
-  font-family: var(--schrift-titel);
-  font-size: 2rem;
-  font-weight: 800;
+.duell-rechnung {
+  font-size: 0.85rem;
+  color: var(--text-leise);
   font-variant-numeric: tabular-nums;
 }
-.massnahme {
-  margin-top: 12px;
-  padding-top: 12px;
+.duell-rechnung strong {
+  color: var(--text);
+}
+.duell-keine {
+  color: var(--text-leise);
+  font-style: italic;
+}
+.duell-legende {
+  margin: 0;
+  padding: 8px 14px;
   border-top: 1px solid var(--linie);
+  font-size: 0.8rem;
+  color: var(--text-leise);
+  text-align: center;
 }
-.massnahme:first-of-type {
-  border-top: 0;
-  padding-top: 0;
+.duell-fehlt {
+  padding: 8px 14px;
+  border-top: 1px solid var(--linie);
+  border-left: 6px solid var(--partei);
+  font-size: 0.88rem;
+  color: var(--text-leise);
 }
-.massnahme p {
-  margin: 0 0 4px;
+.duell-fehlt summary {
+  cursor: pointer;
+  color: var(--text);
+}
+.duell-fehlt p {
+  margin: 6px 0 4px;
 }
 .massnahme-titel {
   font-weight: 700;
 }
-.massnahme-werte,
-.massnahme-ursachen,
 .massnahme-rolle {
   font-size: 0.85rem;
   color: var(--text-leise);
 }
 .massnahme-begruendung {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
-.karte-punkte-leer {
-  color: var(--text-leise);
-}
-.keine-massnahme {
-  margin-top: 12px;
-  color: var(--text-leise);
-}
-.keine-massnahme p {
-  margin: 6px 0 4px;
-  font-style: italic;
-}
-.keine-massnahme .keine-begruendung {
+.keine-begruendung {
   font-size: 0.85rem;
-  font-style: normal;
 }
 .belege {
   display: inline-block;
@@ -784,14 +961,36 @@ textarea {
   font-weight: 700;
   color: var(--text);
 }
+.rundensieger-zusatz {
+  display: block;
+  margin-top: 2px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-leise);
+}
 .beste {
   margin-top: 1.25rem;
-  padding: 14px 16px;
+  padding: 12px 16px;
   border-radius: var(--papier-radius);
   border: 1.5px dashed var(--text-leise);
 }
+.beste summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  cursor: pointer;
+}
 .beste-titel {
-  font-size: 1.05rem;
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+}
+.beste-kurz {
+  color: var(--text-leise);
+}
+.ki-hinweis summary {
+  cursor: pointer;
 }
 .beste-hinweis {
   margin: 10px 0 0;
