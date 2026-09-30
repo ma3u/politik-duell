@@ -337,6 +337,8 @@ Verworfen:
 - *Auflagen und Bürokratie in der Landwirtschaft verteuern Lebensmittel.* Die Monopolkommission nennt steigende Bürokratiekosten der Betriebe, aber keinen Beleg, dass sie die Verbraucherpreise treiben; die Erzeugerpreise sind weniger gestiegen als die Verbraucherpreise.
 - *Übergewinne der Unternehmen („Gierflation“).* Für die Eurozone 2022/23 diskutiert (IWF), für den deutschen Lebensmittelhandel laut Monopolkommission in diesen Jahren nicht belegt; die längerfristige Seite steckt in 1102.
 
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Lebensmittel, Nahrungsmittel, Lebensmittelpreis, Mehrwertsteuer, Preisaufsicht, Preisüberwacher, Kartell, Marktmacht, Entflechtung, Einkommensteuer, Grundfreibetrag, Sozialabgaben, Sozialversicherungsbeiträge, Mindestlohn, Tarifbindung, Tariftreue, Minijob, Agrardiesel. Ergebnis: 36 Maßnahmen (IDs 6893–6928), 14 Instrumente (6879–6892), zwei Einzelbewertungen. Keine Maßnahme zu 1102, 1103 und 1105 haben Union, FDP und AfD, zu 1101 Grüne, FDP und AfD; da alle Parteien Maßnahmen zu anderen Ursachen haben, steht kein `keine_massnahme`-Vermerk. Nicht erfasst wurden: Senkung der Mehrwertsteuer in der Gastronomie (AfD, BSW; betrifft nicht den täglichen Bedarf), CO₂-Preis und Stromsteuer (Energiepreise), Mindesterzeugerpreise und Kauf zu kostendeckenden Preisen (Linke, BSW, Grüne; sollen Erzeugerpreise erhöhen, nicht Verbraucherpreise senken), Verbot von Mogelpackungen (Grüne; keine erfasste Ursache), steuerfreie Überstundenzuschläge (Union, FDP; Arbeitsanreiz, nicht Entlastung kleiner Einkommen).
+
 ### Straßen und Brücken (12)
 
 Ziel: „Menschen kommen auf Straßen, Brücken und Radwegen sicher und ohne lange Sperrungen und Umwege ans Ziel.“

@@ -40,5 +40,559 @@
       "ebene": "bund",
       "schlagwoerter": ["niedriglohn", "mindestlohn", "schlecht bezahlt", "wenig verdienen", "minijob", "gastronomie"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6879,
+      "name": "Mehrwertsteuer auf Lebensmittel senken (von 7 auf 5 %)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die Preise einmalig um knapp 2 %, wenn der Handel die Senkung weitergibt; an den Ursachen der Preissteigerung ändert das nichts. Rechtlich und finanziell ohne große Hürden möglich.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6880,
+      "name": "Mehrwertsteuer auf Grundnahrungsmittel abschaffen (0 %)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Preise für Grundnahrungsmittel um bis zu 6,5 % und entlastet vor allem Haushalte mit wenig Geld, wenn die Senkung weitergegeben wird; seit 2022 erlaubt das EU-Recht einen Nullsatz. Dagegen spricht der hohe Steuerausfall, und ob der Handel die Senkung vollständig weitergibt, ist umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6881,
+      "name": "Preisbeobachtung oder Preisüberwacher für Lebensmittel",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Macht Preise und Margen entlang der Lieferkette sichtbar und kann Kartellverfahren anstoßen; ob Transparenz allein die Preise senkt, ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6882,
+      "name": "Marktbeherrschende Handelskonzerne entflechten",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Setzt an der Konzentration im Lebensmittelhandel an; ob kleinere Händler niedrigere Preise bringen, ist offen. Eine Entflechtung ohne Rechtsverstoß ist verfassungsrechtlich umstritten und dauert Jahre.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6883,
+      "name": "Fusionskontrolle und Wettbewerbsrecht stärken",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann weitere Konzentration im Handel bremsen, wie es die Monopolkommission empfiehlt; auf die Preise wirkt das erst langfristig und nicht sicher.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.monopolkommission.de/publikationen/lebensmittel/s/wettbewerb-in-der-lebensmittellieferkette"
+    },
+    {
+      "id": 6884,
+      "name": "Einkommensteuer für kleine und mittlere Einkommen senken, gegenfinanziert",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erhöht das Nettoeinkommen von Geringverdienenden und der Mitte direkt; die Gegenfinanzierung über höhere Steuern für hohe Einkommen oder Vermögen ist umsetzbar, aber politisch und rechtlich aufwendig.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6885,
+      "name": "Einkommensteuertarif abflachen und Grundfreibetrag erhöhen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Erhöht das Nettoeinkommen fast aller Steuerzahlenden, am stärksten in absoluten Beträgen bei höheren Einkommen; die Kosten sind hoch und die Finanzierung ist nicht geklärt.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6886,
+      "name": "Grundfreibetrag stark anheben (auf rund 15.000 Euro bzw. die Armutsgefährdungsschwelle)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Entlastet besonders kleine Einkommen spürbar; die Steuerausfälle lägen im hohen zweistelligen Milliardenbereich, eine Finanzierung ist nicht geklärt.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6887,
+      "name": "Sozialabgaben bei 40 % begrenzen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verhindert weitere Beitragssteigerungen, senkt die Abgaben aber nicht; dafür wären Reformen in Rente, Gesundheit und Pflege nötig, die noch offen sind.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6888,
+      "name": "Beiträge für Bürgergeldbeziehende aus Steuern statt aus Beiträgen finanzieren",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Kranken- und Pflegebeiträge etwas, weil der Bund die Kosten trägt; die Entlastung der Beschäftigten ist gering und belastet den Bundeshaushalt mit rund zehn Milliarden Euro im Jahr.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6889,
+      "name": "Mindestlohn auf 15 Euro oder 60 % des Medianlohns anheben",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erhöht die Löhne im Niedriglohnbereich direkt; Studien zur Einführung 2015 und zur Erhöhung 2022 fanden kaum Jobverluste. Der Bundestag kann die Höhe per Gesetz festlegen, wie 2022 geschehen.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6890,
+      "name": "Tarifbindung stärken (Tariftreuegesetz, Allgemeinverbindlichkeit erleichtern)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wer nach Tarif arbeitet, verdient im Schnitt mehr; Tariftreue greift aber nur bei öffentlichen Aufträgen, und wie stark die Tarifbindung dadurch steigt, ist offen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6891,
+      "name": "Minijobs in sozialversicherungspflichtige Beschäftigung überführen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Minijobs sind überwiegend schlecht bezahlt; ob ihre Umwandlung zu höheren Stundenlöhnen führt oder nur zu mehr Sozialversicherung bei gleichem Netto, ist umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6892,
+      "name": "Steuerermäßigung für Agrardiesel wieder einführen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die Energiekosten landwirtschaftlicher Betriebe um wenige Hundert Millionen Euro im Jahr; auf die Lebensmittelpreise wirkt das kaum.",
+      "evidenz": "offen"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6893,
+          "instrument": 6885,
+          "beschreibung": "Einkommensteuertarif schrittweise abflachen, Grundfreibetrag erhöhen",
+          "ursachen_ids": [1104],
+          "zitat": "Dazu flachen wir den Einkommensteuertarif schrittweise spürbar ab und erhöhen den Grundfreibetrag.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6894,
+          "instrument": 6887,
+          "beschreibung": "Sozialversicherungsbeiträge wieder in Richtung 40 % senken",
+          "ursachen_ids": [1104],
+          "zitat": "Unser Ziel für die Sozialversicherungsbeiträge: Wir wollen uns wieder auf die 40 Prozent hinbewegen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6895,
+          "instrument": 6892,
+          "beschreibung": "Agrardieselrückvergütung wieder vollständig einführen",
+          "ursachen_ids": [1101],
+          "zitat": "Wir führen die Agrardieselrückvergütung wieder vollständig ein.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6896,
+          "instrument": 6879,
+          "beschreibung": "Mehrwertsteuer auf Lebensmittel von 7 auf 5 % senken",
+          "ursachen_ids": [1101],
+          "zitat": "wollen wir den ermäßigten Mehrwertsteuersatz für Lebensmittel von sieben Prozent auf fünf Prozent senken",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6897,
+          "instrument": 6881,
+          "beschreibung": "Behörden stärken, die die Zusammensetzung von Lebensmittelpreisen öffentlich machen und Wettbewerbsverstöße prüfen",
+          "ursachen_ids": [1102],
+          "zitat": "Dazu wollen wir die zuständigen Behörden stärken, die die Entwicklung und Zusammensetzung ausgewählter Lebensmittelpreise von der Produktion bis zum Verkauf transparent und öffentlich machen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6898,
+          "instrument": 6889,
+          "beschreibung": "Mindestlohn spätestens 2026 auf 15 Euro",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Dementsprechend muss der Mindestlohn spätestens ab 2026 bei 15 Euro liegen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6899,
+          "instrument": 6890,
+          "beschreibung": "Bundestariftreuegesetz, Allgemeinverbindlicherklärung erleichtern",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Wir werden mit einem Bundestariftreuegesetz dafür sorgen, dass öffentliche Aufträge des Bundes nur an Unternehmen gehen, die ihre Beschäftigten nach Tarif bezahlen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6900,
+          "instrument": 6884,
+          "beschreibung": "Rund 95 % der Steuerzahlenden entlasten, Spitzeneinkommen und Vermögen stärker beteiligen",
+          "ursachen_ids": [1104],
+          "zitat": "Wir wollen die große Mehrheit der Einkommensteuerpflichtigen entlasten (etwa 95 Prozent) und dafür unter anderem Spitzeneinkommen und -vermögen stärker an der Finanzierung des Gemeinwohls und der Modernisierung unseres Landes beteiligen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6901,
+          "instrument": 6883,
+          "beschreibung": "Wettbewerbsrecht weiterentwickeln, Verbraucher besser vor Monopolen schützen",
+          "ursachen_ids": [1102],
+          "zitat": "Das Wettbewerbsrecht braucht eine Weiterentwicklung, um KMU sowie Verbraucher*innen effektiver vor Monopolen zu schützen und für mehr Fairness zu sorgen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=27",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6902,
+          "instrument": 6889,
+          "beschreibung": "Mindestlohn zunächst 15 Euro, Referenzwert 60 % des Medianlohns",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "braucht es jetzt einen schrittweise steigenden Mindestlohn von zunächst 15 Euro in 2025 und das auch für unter 18-Jährige.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=67",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6903,
+          "instrument": 6890,
+          "beschreibung": "Allgemeinverbindlicherklärung erleichtern, Tariftreuegesetz",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Deshalb wollen wir die Allgemeinverbindlichkeitserklärung von Tarifverträgen erleichtern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=67",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6904,
+          "instrument": 6891,
+          "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen",
+          "ursachen_ids": [1105],
+          "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6905,
+          "instrument": 6884,
+          "beschreibung": "Steuergutschriften für niedrige Einkommen, Grundfreibetrag erhöhen",
+          "ursachen_ids": [1104],
+          "zitat": "Um insbesondere niedrige Einkommen, Alleinerziehende und auch Menschen, die mit Bürgergeld aufstocken müssen, zielgenau und unbürokratisch zu entlasten, führen wir Steuergutschriften ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6906,
+          "instrument": 6885,
+          "beschreibung": "Linear-progressiver Chancentarif ohne Mittelstandsbauch, Grundfreibetrag um mindestens 1.000 Euro anheben",
+          "ursachen_ids": [1104],
+          "zitat": "Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6907,
+          "instrument": 6887,
+          "beschreibung": "Sozialabgaben nicht über 40 % steigen lassen",
+          "ursachen_ids": [1104],
+          "zitat": "Wir Freie Demokraten wollen ausschließen, dass die Sozialabgaben über das Niveau von 40 Prozent immer weiter steigen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=21",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6908,
+          "instrument": 6886,
+          "beschreibung": "Grundfreibetrag auf 15.000 Euro erhöhen und indexieren",
+          "ursachen_ids": [1104],
+          "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=59",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6909,
+          "instrument": 6888,
+          "beschreibung": "Krankenversicherung der Bürgergeldbeziehenden vollständig aus dem Bundeshaushalt zahlen, um Beitragserhöhungen zu verhindern",
+          "ursachen_ids": [1104],
+          "zitat": "Das werden wir verhindern, indem die beitragsfreie Mitversicherung der Bürgergeldempfänger, die heute zu zwei Dritteln vom Beitragszahler finanziert wird, zukünftig vollständig aus dem Bundeshaushalt aufgebracht wird.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6910,
+          "instrument": 6880,
+          "beschreibung": "Grundnahrungsmittel von der Mehrwertsteuer befreien, Weitergabe gesetzlich sichern",
+          "ursachen_ids": [1101],
+          "zitat": "Grundnahrungsmittel, Hygieneprodukte, Bus und Bahn (Regional- und Fernverkehr) wollen wir von der Mehrwertsteuer befreien",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=6",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6911,
+          "instrument": 6882,
+          "beschreibung": "Monopole im Lebensmittelhandel zerschlagen, Preiswächter mit Durchgriffsrechten",
+          "ursachen_ids": [1102],
+          "zitat": "Monopole müssen zerschlagen werden und Preiswächter müssen durchgreifen können",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=6",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6912,
+          "instrument": 6881,
+          "beschreibung": "Neue Preisaufsicht als unabhängige Bundesbehörde",
+          "ursachen_ids": [1102],
+          "zitat": "Wir fordern eine neue Preisaufsicht als Frühwarnsystem für die deutsche und Europäische Wirtschaft",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6913,
+          "beschreibung": "Übergewinnsteuer von 90 % auf Extragewinne in Krisen",
+          "ursachen_ids": [1102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Soll Anreize nehmen, Preise in Krisen über die Kosten hinaus zu erhöhen; ob das die Preise senkt, ist kaum untersucht. Die Abgrenzung von Übergewinnen ist rechtlich schwierig, ein Satz von 90 % verfassungsrechtlich umstritten.",
+          "evidenz": "offen",
+          "zitat": "Wir fordern eine Übergewinnsteuer, die die Extragewinne der Konzerne mit 90 Prozent besteuert",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6914,
+          "instrument": 6884,
+          "beschreibung": "Steuern für die Mehrheit senken, Vermögensteuer für sehr große Vermögen",
+          "ursachen_ids": [1104],
+          "zitat": "Die Steuern für die Mehrheit wollen wir senken",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6915,
+          "instrument": 6889,
+          "beschreibung": "Mindestlohn mindestens 15 Euro, spätestens 2026 16 Euro",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Mit einem Mindestlohn von mindestens 15 Euro – spätestens ab 2026 16 Euro – sowie Steuerentlastungen für kleine Einkommen stellen wir sicher, dass sich Erwerbsarbeit lohnt",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6916,
+          "instrument": 6890,
+          "beschreibung": "Bundestariftreuegesetz und Aktionsplan für Tarifbindung",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "In einem Bundestariftreuegesetz muss festgeschrieben werden, dass öffentliche Aufträge nur noch diejenigen Unternehmen bekommen, die tarifvertragliche Standards einhalten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6917,
+          "instrument": 6891,
+          "beschreibung": "Volle Sozialversicherung ab dem ersten Euro statt Minijobs",
+          "ursachen_ids": [1105],
+          "zitat": "Volle Sozialversicherung in jedem Arbeitsverhältnis ab dem ersten Euro statt Minijobs, Midijobs und Ausnahmen für ausländische Saisonbeschäftigte",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6918,
+          "instrument": 6883,
+          "beschreibung": "Bundeskartellamt für wirksame Fusionskontrolle stärken",
+          "ursachen_ids": [1102],
+          "zitat": "Wir wollen das Bundeskartellamt mit den nötigen Ressourcen und Kompetenzen ausstatten, um eine wirksame Fusionskontrolle zu betreiben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6919,
+          "instrument": 6886,
+          "beschreibung": "Grundfreibetrag deutlich erhöhen, an der Armutsgefährdungsschwelle orientiert",
+          "ursachen_ids": [1104],
+          "zitat": "Wir fordern eine deutliche Erhöhung des steuerlichen Grundfreibetrages, der sich an der Armutsgefährdungsschwelle orientieren sollte.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6920,
+          "beschreibung": "Freibetrag bei den Sozialabgaben, gegenfinanziert durch höhere Beitragsbemessungsgrenzen",
+          "ursachen_ids": [1104],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Entlastet kleine Einkommen bei den Sozialabgaben, die für sie oft schwerer wiegen als die Einkommensteuer; gegenfinanziert durch höhere Beiträge besser Verdienender. Die Umsetzung in allen Sozialversicherungen ist aufwendig, Vorbilder gibt es nur bei Midijobs.",
+          "evidenz": "offen",
+          "zitat": "Wir brauchen einen Grundfreibetrag auf Sozialabgaben bei gleichbleibenden Ansprüchen, gegenfinanziert durch eine Anhebung der Beitragsbemessungsgrenzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6921,
+          "instrument": 6892,
+          "beschreibung": "Streichung der Agrardiesel-Ermäßigung zurücknehmen",
+          "ursachen_ids": [1101],
+          "zitat": "Die Streichung der Steuerermäßigung für Agrardiesel wollen wir zurücknehmen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=19",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6922,
+          "instrument": 6889,
+          "beschreibung": "Mindestlohn unverzüglich auf 15 Euro",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Wir wollen den gesetzlichen Mindestlohn unverzüglich auf 15 Euro anheben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6923,
+          "instrument": 6891,
+          "beschreibung": "Minijobs in sozialversicherungspflichtige Beschäftigung überführen",
+          "ursachen_ids": [1105],
+          "zitat": "Wir wollen gesetzliche Grundlagen schaffen, um Minijobs in sozialversicherungspflichtige Beschäftigungsverhältnisse zu überführen",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6924,
+          "instrument": 6890,
+          "beschreibung": "Öffentliche Aufträge nur an Unternehmen mit Tariflohn, Allgemeinverbindlichkeit erleichtern",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Öffentliche Aufträge und Subventionen sollen nur noch an Unternehmen vergeben werden, die Tariflöhne zahlen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6925,
+          "instrument": 6888,
+          "beschreibung": "Beiträge für Bürgergeldbeziehende aus Steuern finanzieren",
+          "ursachen_ids": [1104],
+          "zitat": "Wir fordern die Steuerfinanzierung von versicherungsfremden Leistungen (z. B. Beiträge von Bürgergeld-Empfängern).",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6926,
+          "instrument": 6882,
+          "beschreibung": "Starkes Kartellrecht, marktbeherrschende Konzerne entflechten",
+          "ursachen_ids": [1102],
+          "zitat": "Notwendig ist außerdem ein starkes Kartellrecht, sodass marktbeherrschende Konzerne entflochten werden können.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=31",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6927,
+          "instrument": 6881,
+          "beschreibung": "Preisüberwacher nach Schweizer Vorbild",
+          "ursachen_ids": [1102],
+          "zitat": "Wir brauchen einen Preisüberwacher nach Schweizer Vorbild, um hohe Gewinnspannen einzelner Marktteilnehmer transparent zu machen und, soweit erforderlich, dagegen vorzugehen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=31",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6928,
+          "instrument": 6880,
+          "beschreibung": "Mehrwertsteuer auf Grundnahrungsmittel auf 0 %",
+          "ursachen_ids": [1101],
+          "zitat": "Stattdessen fordern wir eine Absenkung der Mehrwertsteuer auf 0 Prozent für Grundnahrungsmittel wie Fleisch, Getreide, Milchprodukte, sowie Obst und Gemüse.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=31",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
