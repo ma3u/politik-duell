@@ -308,6 +308,10 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 Werkzeuge für Schritt 2 und 3 des Ablaufs (neues Thema oder neues Programm). Sie brauchen Internet oder eine lokale Kopie des PDFs.
 
 ```bash
+npm run programme:laden                                   # alle Programme in den Zwischenspeicher .cache/ (einmalig, ca. 1 Minute)
+npm run programme:suche -- "Wort" "Synonym"               # alle Programme auf einmal durchsuchen: Fundstellen + Übersicht je Programm
+npm run programme:suche -- "Wort" --land BE               # nur Landesprogramme von BE (--bund: nur Bund; --partei SPD; --zaehlen)
+npm run programm:text -- <url|datei.pdf> --seiten 2-4     # nur diese Seiten (Inhaltsverzeichnis, ein Kapitel)
 npm run programm:text -- <url|datei.pdf> auszug.txt       # Text mit Seitenmarken „===== Seite N =====“ (N = #page=N)
 npm run programm:text -- <url|datei.pdf> --suche "Wort"   # Fundstellen mit Seite
 npm run programm:sichern -- <url> [--datei kopie.pdf]     # Prüfsumme in parteien.json, Kopie im Internet Archive
@@ -320,6 +324,10 @@ npm run seed && npm run dashboard                         # Datenbank- und Dashb
 ```
 
 Reihenfolge beim Erfassen eines Programms: Programm in `parteien.json` eintragen und sichern → Text auslesen und nach den Ursachen des Themas durchsuchen → Maßnahmen mit Zitat eintragen, vorhandene Instrumente wiederverwenden (`instrumente` der Themendatei), neue anlegen → `daten:pruefen`, `zitate:pruefen`, `punkte` → Pull Request.
+
+**Suchen statt ganze Programme lesen.** Alle Programme zusammen haben rund 7,6 Millionen Zeichen – zu viel, um sie für jedes Thema ganz zu lesen (auch für eine KI). Deshalb: je Ursache Suchbegriffe samt Synonymen festlegen, `programme:suche` über alle Programme laufen lassen, dann die Fundstellen und über das Inhaltsverzeichnis (`programm:text -- <url> --seiten …`) die passenden Kapitel lesen. Dieselben Begriffe für alle Parteien. Null Treffer allein reicht nicht für `keine_massnahme` – erst das passende Kapitel ansehen.
+
+**Programme nie ins Repository.** Die PDFs und ihre Texte sind urheberrechtlich geschützt (Wahlprogramme sind keine amtlichen Werke). Sie liegen nur im Zwischenspeicher `.cache/` (in `.gitignore`), als vorübergehende Kopie zur Auswertung; ins Repository kommen nur URL, Prüfsumme, Seitenanker und kurze wörtliche Zitate. In Cloud-Sitzungen von Claude Code lädt `.claude/hooks/session-start.sh` die Programme beim Start automatisch.
 
 ## Neue Wahlperiode
 
