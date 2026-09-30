@@ -26,5 +26,1036 @@
       "ebene": "land",
       "schlagwoerter": ["personal", "fahrer", "busfahrer", "lokfuehrer", "personalmangel", "gestrichen", "faellt aus"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6740,
+      "name": "Mehr Bundesmittel für den Nahverkehr (Regionalisierungsmittel)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Geld erlaubt den Ländern, mehr Züge und Busse zu bestellen; ob es beim Angebot auf dem Land ankommt oder etwa für gestiegene Kosten oder Ticketpreise gebraucht wird, entscheiden die Länder.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6741,
+      "name": "Netz und Betrieb der Deutschen Bahn stärker trennen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Soll Wettbewerb und klare Verantwortung für das Netz schaffen; in anderen Ländern hat die Trennung nicht einheitlich zu einem besseren Netz geführt, und die Umstrukturierung bindet Jahre.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6742,
+      "name": "Überjährige Finanzierung der Schiene über einen Fonds",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verlässliche Mittel über mehrere Jahre erleichtern die Planung von Sanierungen, wie der Bahninfrastrukturfonds der Schweiz zeigt; ohne bessere Steuerung ist nicht gesichert, dass mehr Geld den Zustand verbessert.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6743,
+      "name": "Busführerschein und Berufskraftfahrerqualifikation günstiger und einfacher",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt eine Hürde für den Berufseinstieg; die Regeln stammen zum großen Teil aus EU-Richtlinien, und Bezahlung und Arbeitszeiten bleiben die Hauptgründe für den Mangel.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6744,
+      "name": "Schienennetz mit mehr Mitteln sanieren und ausbauen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt am maroden Netz an, wirkt wegen Bauzeiten aber erst nach Jahren; der Bundesrechnungshof bezweifelt, dass mehr Mittel ohne bessere Steuerung den Zustand verbessern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6745,
+      "name": "Bund steuert die Infrastruktur der Deutschen Bahn wirksamer",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an der vom Bundesrechnungshof kritisierten Steuerung an; wie viel das für Pünktlichkeit bringt, ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6746,
+      "name": "Bessere Bezahlung und Arbeitsbedingungen im Nahverkehr (Tariftreue, Personalübernahme)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Bedingungen machen den Fahrdienst attraktiver und halten Beschäftigte im Beruf; die Kosten tragen Länder und Kommunen, und Vergaben regeln vor allem die Länder.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6747,
+      "name": "Stillgelegte Bahnstrecken reaktivieren",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbessert die Anbindung einzelner ländlicher Orte deutlich, erreicht insgesamt aber nur wenige Menschen; Planung und Bau dauern viele Jahre.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6748,
+      "name": "Verbindliches Mindestangebot an Bus und Bahn (Mobilitätsgarantie)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt am fehlenden Grundangebot an; ein flächendeckender Takt ist teuer und scheitert derzeit auch am fehlenden Fahrpersonal. Zuständig sind die Länder, der Bund kann über Geld und Rahmenrecht beitragen.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6749,
+      "name": "Landesweites Bus- und Bahnnetz ausbauen, Takte verdichten",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Häufigere Fahrten und direkte Verbindungen verbessern das Angebot spürbar und ziehen mehr Fahrgäste an; das Land muss die zusätzlichen Fahrten dauerhaft bezahlen und braucht Fahrpersonal.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6750,
+      "name": "Rufbusse und On-Demand-Verkehre ausbauen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schließt Lücken dort, wo Linienbusse fast leer fahren würden; Rufbusse befördern wenige Menschen je Fahrt und sind teuer, ersetzen also keinen dichten Takt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6751,
+      "name": "Verbindliches Mindestangebot (z. B. Stundentakt für jeden Ort, 10-Minuten-Takt in der Stadt)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt am fehlenden Grundangebot an; ein flächendeckender Takt ist teuer und braucht Fahrpersonal, das derzeit fehlt.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 6752,
+      "name": "Stillgelegte Strecken und Haltepunkte reaktivieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbessert die Anbindung einzelner Orte deutlich, erreicht insgesamt aber wenige Menschen; Planung und Bau dauern Jahre.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6753,
+      "name": "Tariftreue und bessere Bezahlung im Nahverkehr (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Bezahlung macht den Fahrdienst attraktiver und hält Beschäftigte; das Land kann Tariftreue in der Vergabe und bei eigenen Unternehmen durchsetzen, muss die Mehrkosten aber tragen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6754,
+      "name": "Offensive zur Gewinnung und Ausbildung von Fahrpersonal",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schnellere Qualifizierung, Anerkennung ausländischer Abschlüsse und eigene Ausbildung setzen direkt am Mangel an; ohne bessere Bedingungen verlassen viele den Beruf wieder.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6755,
+          "instrument": 6740,
+          "beschreibung": "Auskömmliche Finanzierung des Nahverkehrs sichern",
+          "ursachen_ids": [801],
+          "zitat": "Bei der Finanzierung des ÖPNV wollen wir eine neue Transparenz schaffen und eine auskömmliche Finanzierung sichern.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6756,
+          "instrument": 6741,
+          "beschreibung": "Infrastruktur und Transport der Deutschen Bahn stärker trennen",
+          "ursachen_ids": [802],
+          "zitat": "Für mehr Wettbewerb müssen Infrastruktur- und Transportbereich stärker als bisher voneinander getrennt werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6757,
+          "instrument": 6742,
+          "beschreibung": "Dauerhafte, vom Haushalt unabhängige Finanzierung der Infrastruktur",
+          "ursachen_ids": [802],
+          "zitat": "Wir sorgen für dauerhafte Finanzierungsstabilität, die unabhängig von schwankenden Haushaltsmitteln ist.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6758,
+          "instrument": 6743,
+          "beschreibung": "Berufskraftfahrerqualifikation reformieren gegen den Fahrermangel bei Bus und Lkw",
+          "ursachen_ids": [803],
+          "zitat": "Zur Bekämpfung des Fahrermangels bei LKW und Bus reformieren wir die Berufskraftfahrerqualifikation.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=75",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6759,
+          "instrument": 6744,
+          "beschreibung": "Rekordinvestitionen in die Schiene fortsetzen, Generalsanierung wichtiger Strecken",
+          "ursachen_ids": [802],
+          "zitat": "Wir haben Rekordinvestitionen in die Schiene durchgesetzt und werden sie fortsetzen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6760,
+          "instrument": 6745,
+          "beschreibung": "DB InfraGO und Gesamtkonzern mit mehr Kontrolle und Steuerung des Bundes",
+          "ursachen_ids": [802],
+          "zitat": "Die neue gemeinwohlorientierte Infrastruktursparte DB InfraGO sowie den Gesamtkonzern entwickeln wir mit mehr Kontrolle und Steuerung des Bundes weiter.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6761,
+          "instrument": 6740,
+          "beschreibung": "Finanzierung des Nahverkehrs mit Ländern und Kommunen dauerhaft stärken",
+          "ursachen_ids": [801],
+          "zitat": "Wir werden die Finanzierung des öffentlichen Nahverkehrs gemeinsam mit Ländern und Kommunen dauerhaft stärken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6762,
+          "instrument": 6746,
+          "beschreibung": "Personalübernahme beim Betreiberwechsel und Tariftreue in Vergabeverfahren",
+          "ursachen_ids": [803],
+          "zitat": "Wir werden die verpflichtende Personalübernahme für alle Beschäftigten beim Betreiberwechsel im Nah- und Regionalverkehr gesetzlich festschreiben.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6763,
+          "instrument": 6742,
+          "beschreibung": "Überjährige Finanzierung für Schiene und Nahverkehr über den Deutschlandfonds",
+          "ursachen_ids": [802],
+          "zitat": "überjährige Finanzierungsgrundlage für den Erhalt von Straßen und Brücken, für den Ausbau unserer Schieneninfrastruktur sowie unseres öffentlichen Nahverkehrs zu schaffen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6764,
+          "instrument": 6747,
+          "beschreibung": "Stillgelegte Bahntrassen auf dem Land reaktivieren",
+          "ursachen_ids": [801],
+          "zitat": "stillgelegte Bahntrassen – gerade in den ländlichen Räumen – reaktivieren und modernisieren",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6765,
+          "instrument": 6740,
+          "beschreibung": "Bundesmittel für den Nahverkehr gemeinsam mit den Ländern steigern",
+          "ursachen_ids": [801],
+          "zitat": "Bundesmittel wollen wir zusammen mit höheren Ausgaben der Länder für den Nahverkehr weiter steigern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=49",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6766,
+          "instrument": 6748,
+          "beschreibung": "Im ganzen Land ein alltagstaugliches Angebot mit verlässlichen Takten garantieren",
+          "ursachen_ids": [801],
+          "zitat": "Der öffentliche Nahverkehr soll mittelfristig im ganzen Land ein alltagstaugliches Angebot mit verlässlichen Taktverkehren garantieren",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=49",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6767,
+          "instrument": 6744,
+          "beschreibung": "Marodes Schienennetz mit Hochdruck sanieren",
+          "ursachen_ids": [802],
+          "zitat": "Das Schienennetz, das wir marode vorgefunden haben, werden wir weiter mit Hochdruck sanieren und im erforderlichen Maß ausbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=50",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6768,
+          "instrument": 6746,
+          "beschreibung": "Bessere Arbeitsbedingungen und gute Bezahlung im Nah- und Fernverkehr",
+          "ursachen_ids": [803],
+          "zitat": "Wir wollen dafür sorgen, dass die Arbeitsbedingungen der Beschäftigten im Nah- und Fernverkehr verbessert werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=50",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6769,
+          "instrument": 6741,
+          "beschreibung": "Netz und Betrieb bei der Deutschen Bahn trennen",
+          "ursachen_ids": [802],
+          "zitat": "Wir trennen Netz- und Betrieb bei der Deutschen Bahn, um die betriebliche Effizienz zu steigern, klare Verantwortlichkeiten zu schaffen und die Instandhaltung sowie den Ausbau der Infrastruktur zu optimieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6770,
+          "instrument": 6743,
+          "beschreibung": "Bus-Führerschein und Berufskraftfahrerqualifikation günstiger machen",
+          "ursachen_ids": [803],
+          "zitat": "Deshalb wollen wir den Führerschein und die Berufskraftfahrerqualifikation (Lkw-Führerschein, Bus-Führerschein) wieder günstiger machen",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6771,
+          "beschreibung": "Starre Linienverkehre durch flexible, bedarfsgerechte Angebote ergänzen",
+          "ursachen_ids": [801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "On-Demand-Angebote können Lücken im ländlichen Raum schließen, befördern aber wenige Menschen je Fahrt und sind teuer; Angebot und Finanzierung liegen bei Ländern und Kommunen.",
+          "zitat": "Starre Linienverkehre werden wir durch flexible, bedarfsgerechte Angebote ergänzen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=43",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6772,
+          "instrument": 6745,
+          "beschreibung": "Bahnkonzern in eine GmbH umwandeln, damit der Bund die Infrastruktur wirksam steuern kann",
+          "ursachen_ids": [802],
+          "zitat": "Der Bahnkonzern muss dafür in eine GmbH umgewandelt und so strukturiert werden, dass der Bund seine Infrastruktursparte wirksam steuern kann.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=46",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6773,
+          "instrument": 6744,
+          "beschreibung": "Vernachlässigtes Schienennetz ausbauen, Engpässe beseitigen",
+          "ursachen_ids": [802],
+          "zitat": "Die AfD unterstützt den Ausbau des zu lange vernachlässigten Schienennetzes – insbesondere die Beseitigung von Engpässen und die Erweiterung des Hochgeschwindigkeitsnetzes.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=46",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6774,
+          "beschreibung": "ÖPNV im ländlichen Raum bedarfsgerecht ausbauen",
+          "ursachen_ids": [801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Benennt das Ziel eines besseren Angebots auf dem Land, aber keinen Weg und keine Finanzierung; Angebot und Bestellung liegen bei Ländern und Kommunen.",
+          "zitat": "muss die Infrastruktur und vor allem der ÖPNV bedarfsgerecht und zukunftsfähig ausgebaut werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=40",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6775,
+          "instrument": 6742,
+          "beschreibung": "Verkehrsträgerübergreifender Infrastrukturfonds nach Schweizer Vorbild",
+          "ursachen_ids": [802],
+          "zitat": "schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6776,
+          "instrument": 6748,
+          "beschreibung": "Jede Ortschaft tagsüber mindestens stündlich an Bus und Bahn anbinden",
+          "ursachen_ids": [801],
+          "zitat": "Jede Ortschaft braucht tagsüber eine mindestens stündliche Anbindung an Bus und Bahn",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6777,
+          "instrument": 6746,
+          "beschreibung": "Mehr Personal durch bessere Bezahlung und Arbeitsbedingungen",
+          "ursachen_ids": [803],
+          "zitat": "Mehr Personal ist nur mit besserer Bezahlung und besseren Arbeitsbedingungen wie Zugang zu sauberen Toiletten und ausreichenden Pausen für die Beschäftigten zu haben",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6778,
+          "instrument": 6744,
+          "beschreibung": "Netz sanieren, elektrifizieren und ausbauen",
+          "ursachen_ids": [802],
+          "zitat": "Damit die Bahn wieder pünktlich und zuverlässig fährt, muss das Netz saniert, elektrifiziert, müssen Strecken reaktiviert und ausgebaut werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6779,
+          "instrument": 6747,
+          "beschreibung": "Stillgelegte Strecken reaktivieren",
+          "ursachen_ids": [801],
+          "zitat": "Damit die Bahn wieder pünktlich und zuverlässig fährt, muss das Netz saniert, elektrifiziert, müssen Strecken reaktiviert und ausgebaut werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6780,
+          "instrument": 6749,
+          "beschreibung": "Sachsen-Anhalt-Takt erweitern, alle Ober- und Mittelzentren verbinden",
+          "ursachen_ids": [801],
+          "zitat": "Der Sachsen-Anhalt-Takt soll alle Ober- und Mittelzentren in Sachsen-Anhalt zuverlässig und optimal miteinander verbinden.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=62",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6781,
+          "instrument": 6750,
+          "beschreibung": "Rufverkehre, Bürgerbusse und autonome Angebote im ländlichen Raum",
+          "ursachen_ids": [801],
+          "zitat": "Hierbei setzen wir auch auf innovative Konzepte, wie autonomes Fahren und Ruf-Verkehre, Bürgerbusse",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=63",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6782,
+          "instrument": 6751,
+          "beschreibung": "Mobilitätsgarantie für alle Regionen",
+          "ursachen_ids": [801],
+          "zitat": "Ziel ist eine Mobilitätsgarantie für alle Regionen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=41",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6783,
+          "instrument": 6752,
+          "beschreibung": "Stillgelegte Strecken reaktivieren, zusätzliche Haltepunkte",
+          "ursachen_ids": [801],
+          "zitat": "Der Schienenverkehr wird gezielt gestärkt: durch höhere Kapazitäten auf stark genutzten Regionalstrecken, die Sicherung bestehender Verbindungen wie der RB 20, die Reaktivierung stillgelegter Strecken und zusätzliche Haltepunkte.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6784,
+          "instrument": 6753,
+          "beschreibung": "ÖPNV-Leistungen nur bei Anwendung der Tarifverträge vergeben",
+          "ursachen_ids": [803],
+          "zitat": "Daher sind Leistungen im ÖPNV nur bei verbindlicher Anwendung der einschlägigen Tarifverträge durch alle Leistungserbringer zu vergeben.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=41",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6785,
+          "instrument": 6751,
+          "beschreibung": "Busverkehr so ausbauen, dass jedes Dorf mindestens stündlich erreicht wird",
+          "ursachen_ids": [801],
+          "zitat": "Der Busverkehr muss flächendeckend in Sachsen-Anhalt ausgebaut werden, um alle Dörfer mindestens einmal pro Stunde zuverlässig zu erreichen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6786,
+          "instrument": 6749,
+          "beschreibung": "Landes-Bus-Netz ausbauen, On-Demand-Shuttles und Rufbusse in Taktverkehre einbinden",
+          "ursachen_ids": [801],
+          "zitat": "Wir bauen das Landes-Bus-Netz aus und modernisieren Angebote im ländlichen Raum – inklusive On-Demand-Shuttles, Rufbussen und perspektivisch autonomen Kleinbussen, nahtlos integriert in Taktverkehre.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=67",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6787,
+          "beschreibung": "Schülerbeförderung aus dem Landeshaushalt bezahlen, damit mehr Regionalisierungsmittel für das Angebot bleiben",
+          "ursachen_ids": [801],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Macht Geld für zusätzliche Fahrten frei, ohne neue Bundesmittel; das Land muss die Schülerbeförderung dafür dauerhaft aus dem eigenen Haushalt bezahlen.",
+          "zitat": "Die Kosten der Schülerbeförderung der Landkreise und kreisfreien Städte wollen wir künftig aus dem Landeshaushalt finanzieren, um mehr Regionalisierungsmittel für den öffentlichen Nahverkehr zur Verfügung zu haben.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=69",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6788,
+          "instrument": 6754,
+          "beschreibung": "Offensive für Fahrpersonal: schnellere Qualifizierung, Anerkennung ausländischer Abschlüsse",
+          "ursachen_ids": [803],
+          "zitat": "Eine Offensive für Fahrpersonal sorgt für mehr Verlässlichkeit: beschleunigte Qualifizierung, bessere Anerkennung ausländischer Abschlüsse, Sprachprogramme und modulare Weiterbildung.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=68",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6789,
+          "beschreibung": "Flächendeckendes Nahverkehrsangebot sichern statt Buslinien kürzen",
+          "ursachen_ids": [801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Sichert das bestehende Angebot gegen Kürzungen, nennt aber weder Umfang noch Finanzierung eines Ausbaus.",
+          "zitat": "Ebenso werden wir für ein flächendeckendes Angebot im öffentlichen Nahverkehr sorgen, statt Buslinien zu kürzen und Bahnhöfe zu schließen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=191",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6790,
+          "instrument": 6752,
+          "beschreibung": "Heidebahn Wittenberg–Eilenburg regelmäßig befahren",
+          "ursachen_ids": [801],
+          "zitat": "Die Heidebahn zwischen der Lutherstadt Wittenberg und Eilenburg muss länderübergreifend (Sachsen-Anhalt und Sachsen) in den öffentlichen Personen-Nahverkehr übernommen und regelmäßig befahren werden.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=200",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6791,
+          "instrument": 6749,
+          "beschreibung": "Landesbedeutsame Buslinien mit engerem Takt zum Zug",
+          "ursachen_ids": [801],
+          "zitat": "im überregionalen Nahverkehr eine Stärkung landesbedeutsamer Buslinien mit einer engeren Taktung zum Schienenpersonennahverkehr nicht nur für Pendler:innen realisieren",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=103",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6792,
+          "instrument": 6750,
+          "beschreibung": "Rufbusse im ländlichen Raum ausbauen",
+          "ursachen_ids": [801],
+          "zitat": "Ausbau Rufbusse im ländlichen Raum (Erweiterung des Modells „harzbewegt-Taxi“ auf andere Landkreise).",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=58",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6793,
+          "instrument": 6752,
+          "beschreibung": "Stillgelegte Strecken sichern und Haltepunkte reaktivieren",
+          "ursachen_ids": [801],
+          "zitat": "eine Trassensicherung stillgelegter Strecken landesplanerisch festschreiben, um sie bei Bedarf schneller reaktivieren zu können,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=102",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 6794,
+          "instrument": 6749,
+          "beschreibung": "Takte verbessern, Grund-, Mittel- und Oberzentren direkt verbinden",
+          "ursachen_ids": [801],
+          "zitat": "Ziel ist es, Wege kurz zu halten und Taktungen zu verbessern.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6795,
+          "instrument": 6750,
+          "beschreibung": "Rufbus-Garantie mit verlässlicher Anbindung jedes Dorfes",
+          "ursachen_ids": [801],
+          "zitat": "Die Rufbus-Garantie wollen wir mit fairer Finanzierung und verlässlicher Anbindung … jedes Dorfes absichern.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=122",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6796,
+          "instrument": 6750,
+          "beschreibung": "Rufbussystem landesweit vereinheitlichen und über Kreisgrenzen nutzbar machen",
+          "ursachen_ids": [801],
+          "zitat": "Die Erfolge des Rufbusses sollen evaluiert und das System landesweit harmonisiert und über Kreisgrenzen hinweg und in Landkreisen kreisweit in Gänze nutzbar werden.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=25",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6797,
+          "instrument": 6751,
+          "beschreibung": "Landesverkehrsplan mit verbindlichem Stundentakt im ganzen Land",
+          "ursachen_ids": [801],
+          "zitat": "einen Landesverkehrsplan erarbeiten, der die Mobilitätsbedürfnisse der Bürger*innen abbildet und im ganzen Land mindestens einen Stundentakt verbindlich sicherstellt.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6798,
+          "instrument": 6752,
+          "beschreibung": "Stillgelegte Bahnstrecken reaktivieren",
+          "ursachen_ids": [801],
+          "zitat": "die Reaktivierung stillgelegter sowie den Ausbau bestehender Bahnstrecken vorantreiben",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6799,
+          "instrument": 6750,
+          "beschreibung": "Mobilität im ländlichen Raum sichern, Rufbussystem und seine Finanzierung überprüfen",
+          "ursachen_ids": [801],
+          "zitat": "die Mobilitätsversorgung im ländlichen Raum sichern, inklusive einer Evaluation des bestehenden Rufbussystems und dessen Finanzierung.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6800,
+          "instrument": 6749,
+          "beschreibung": "Taktung zwischen Bus und Bahn verbessern",
+          "ursachen_ids": [801],
+          "zitat": "Wichtig ist, die Taktung zwischen Bus und Bahn zu verbessern und für Sicherheit im ÖPNV zu sorgen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=70",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6801,
+          "instrument": 6750,
+          "beschreibung": "Rufbussystem verstetigen und ausbauen",
+          "ursachen_ids": [801],
+          "zitat": "das Rufbussystem verstetigen und ausbauen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=12",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6802,
+          "beschreibung": "Nahverkehrsabgabe für Betriebe ab 50 Beschäftigten",
+          "ursachen_ids": [801],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Schafft eine zusätzliche Einnahmequelle für mehr Angebot, wie sie etwa Frankreich kennt; das Land braucht dafür eine eigene gesetzliche Grundlage, und die Abgabe belastet die Betriebe.",
+          "zitat": "Eine Nahverkehrsabgabe für mittelständige und große Betriebe ab 50 Mitarbeiter:innen einführen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6803,
+          "instrument": 6752,
+          "beschreibung": "Reaktivierung weiterer Strecken konkretisieren",
+          "ursachen_ids": [801],
+          "zitat": "Reaktivierungspläne für weitere Strecken wie die Kaiserbahn, die Strecken Neubrandenburg-Friedland und Greifswald- Lubmin konkretisieren.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6804,
+          "instrument": 6749,
+          "beschreibung": "Bessere Vernetzung und Taktung von Bus und Bahn, landesweites Rufbussystem",
+          "ursachen_ids": [801],
+          "zitat": "Ausbau eines gut erreichbaren und barrierefrei nutzbaren öffentlichen Personennahverkehrs, insbesondere durch bessere Vernetzung und Taktung von Bus und Bahn",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6805,
+          "instrument": 6749,
+          "beschreibung": "S-Bahn mit dichteren Takten und zusätzlichen Gleisen in die Außenbezirke stärken",
+          "ursachen_ids": [801],
+          "zitat": "Gleichzeitig werden wir die S-Bahn durch dichtere Takte, zusätzliche Gleise und bessere Verbindungen in die Außenbezirke stärken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=73",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6806,
+          "instrument": 6754,
+          "beschreibung": "BVG bei der Gewinnung von Personal unterstützen",
+          "ursachen_ids": [803],
+          "zitat": "Wir werden die BVG dabei unterstützen, mehr Personal zu gewinnen, Fahrzeuge schneller verfügbar zu machen und Werkstätten sowie Betriebsabläufe modern aufzustellen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=72",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6807,
+          "instrument": 6751,
+          "beschreibung": "Flächendeckend mindestens ein 10-Minuten-Takt, auch in den Außenbezirken",
+          "ursachen_ids": [801],
+          "zitat": "Wir wollen für alle Nutzer*innen mit oder ohne Behinderungen flächendeckend mindestens einen 10-Minuten-Takt – in der Innenstadt ebenso wie in den Außenbezirken.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6808,
+          "instrument": 6751,
+          "beschreibung": "Zehn-Minuten-Takt als Basisangebot ausweiten",
+          "ursachen_ids": [801],
+          "zitat": "Wir setzen uns deshalb dafür ein, dass in Berlin der Zehn-Minuten-Takt als Basisangebot ausgeweitet wird.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=80",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6809,
+          "instrument": 6753,
+          "beschreibung": "Gute Arbeitsbedingungen und faire Bezahlung bei BVG und S-Bahn",
+          "ursachen_ids": [803],
+          "zitat": "Dazu gehören für uns vor allem gute Arbeitsbedingungen und eine faire, vorbildliche Bezahlung bei BVG und S-Bahn.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=83",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6810,
+          "instrument": 6751,
+          "beschreibung": "Für alle eine Haltestelle in 300 Metern und die Innenstadt in 30 Minuten erreichbar",
+          "ursachen_ids": [801],
+          "zitat": "Wir wollen einen ÖPNV, bei dem jede Berlinerin und jeder Berliner innerhalb von 300 Metern Zugang findet und Alexanderplatz oder Bahnhof Zoo in 30 Minuten erreicht.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=54",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6811,
+          "instrument": 6749,
+          "beschreibung": "U-Bahn-Netz ausbauen",
+          "ursachen_ids": [801],
+          "zitat": "Um den begrenzten Straßenraum zu entlasten, setzen wir uns insbesondere für den Ausbau des U-Bahn-Netzes ein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6812,
+          "instrument": 6754,
+          "beschreibung": "Offensive zur Personalgewinnung bei BVG und S-Bahn",
+          "ursachen_ids": [803],
+          "zitat": "Eine Offensive zur Personalgewinnung bei BVG und S-Bahn.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=41",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6813,
+          "instrument": 6749,
+          "beschreibung": "Nahverkehrsanbindung neuer Stadtgebiete fertigstellen, bevor sie bezogen werden",
+          "ursachen_ids": [801],
+          "zitat": "Effektive ÖPNV-Anbindungen fertigzustellen, bevor neue Stadtgebiete bezogen werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6814,
+          "instrument": 6750,
+          "beschreibung": "Kleinbuslinien und Rufbusse in Außenbezirken und am Stadtrand",
+          "ursachen_ids": [801],
+          "zitat": "soll die Anbindung an das Schnellbahnnetz mit Kleinbuslinien im ÖPNV-Tarif hergestellt werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=60",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6815,
+          "instrument": 6754,
+          "beschreibung": "Anwerbung und Ausbildung von Fahrpersonal bei der BVG ausweiten",
+          "ursachen_ids": [803],
+          "zitat": "Die erfolgreichen Anstrengungen der BVG zur Anwerbung und Ausbildung von Fahrpersonal werden wir unterstützen und ausweiten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6816,
+          "instrument": 6753,
+          "beschreibung": "Arbeitsbedingungen bei der BVG verbessern",
+          "ursachen_ids": [803],
+          "zitat": "Unsere Priorität liegt auf Verbesserungen der Arbeitsbedingungen bei der BVG, damit das Personal langfristig gehalten werden kann.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 6817,
+          "instrument": 6749,
+          "beschreibung": "U-Bahn, S-Bahn, Straßenbahn und Bus vor allem in den Außenbezirken ausbauen",
+          "ursachen_ids": [801],
+          "zitat": "Deshalb setzen wir uns für den gezielten Ausbau von U-Bahn, S-Bahn, Straßenbahn und Bus ein.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=48",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6818,
+          "instrument": 6750,
+          "beschreibung": "Rufbusse dort, wo Ortsteile unzureichend erschlossen sind",
+          "ursachen_ids": [801],
+          "zitat": "Rufbusse und ähnliche Angebote sind vor allem dort sinnvoll, wo Ortsteile bislang nur unzureichend erschlossen sind.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=48",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6819,
+          "instrument": 6753,
+          "beschreibung": "Gleiche Bezahlung auch bei Tochtergesellschaften wie der BT Berlin Transport",
+          "ursachen_ids": [803],
+          "zitat": "Dies gilt sowohl für Beschäftigte bei Tochtergesellschaften (z.B. Vivantes, Charité, BVG und BT Berlin Transport GmbH), die die gleiche Arbeit verrichten",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

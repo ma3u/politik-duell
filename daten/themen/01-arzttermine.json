@@ -26,5 +26,331 @@
       "ebene": "bund",
       "schlagwoerter": ["kassenpatient", "gesetzlich versichert", "privatpatient", "privat versichert", "privatversichert", "budget", "quartal", "abrechnung"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 6677,
+      "name": "Hausarztpraxis als erste Anlaufstelle (Primärarztsystem)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Lenkt Patientinnen und Patienten gezielter und kann unnötige Facharztbesuche vermeiden; die Erfahrungen aus Ländern mit Primärarztsystem sind überwiegend positiv. Es setzt aber voraus, dass genug Hausarztpraxen da sind, die schon heute knapp sind.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6678,
+      "name": "Andere Gesundheitsberufe übernehmen mehr Aufgaben (z. B. Advanced Practice Nurses, Gemeindeschwestern)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet Ärztinnen und Ärzte, sodass mehr Termine frei werden; internationale Studien zeigen gute Qualität bei übertragenen Aufgaben. Braucht neue Ausbildungswege und Änderungen im Berufsrecht, das dauert.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6679,
+      "name": "Kommunale MVZ und Gesundheitszentren fördern",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Angestelltenverhältnisse und Teamarbeit entsprechen den Wünschen vieler junger Ärztinnen und Ärzte und können Praxissitze in unterversorgten Regionen besetzen; wie viele Zentren tatsächlich entstehen, hängt von Kommunen und Finanzierung ab.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6680,
+      "name": "Budgetierung ärztlicher Leistungen aufheben",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Voll bezahlte Leistungen machen Kassenpatienten für Praxen attraktiver und verringern den Vergütungsabstand zu Privatversicherten; ob dadurch spürbar mehr Termine entstehen, ist nicht belegt, und die Mehrkosten tragen die Beitragszahlenden.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6681,
+      "name": "Einheitliche Vergütung für gesetzlich und privat Versicherte (Bürgerversicherung)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Nimmt Praxen den finanziellen Anreiz, Privatversicherte bei Terminen vorzuziehen; ob die Wartezeiten insgesamt sinken, hängt von der Höhe der neuen Vergütung ab. Der Umbau der privaten Krankenversicherung ist rechtlich und praktisch sehr aufwendig.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6682,
+          "instrument": 6677,
+          "beschreibung": "Hausarztpraxen sollen Patientinnen und Patienten stärker steuern, um Wartezeiten zu senken",
+          "ursachen_ids": [102],
+          "zitat": "Wir entwickeln die Haus- und Kinderarztpraxen innovativ weiter. Sie soll eine stärkere Steuerungsfunktion der Patienten übernehmen, um zu einer besseren Koordination der Behandlungsabläufe beizutragen und die Wartezeiten auf Arzttermine zu senken.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=70",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6683,
+          "instrument": 6678,
+          "beschreibung": "Andere Gesundheitsberufe sollen mehr Verantwortung für die Versorgung übernehmen",
+          "ursachen_ids": [102],
+          "zitat": "sowie den Leistungen der anderen Gesundheitsberufe, die mehr Verantwortung für die Versorgung übernehmen sollen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=69",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6684,
+          "instrument": 6679,
+          "beschreibung": "Gründung kommunaler MVZ erleichtern",
+          "ursachen_ids": [101],
+          "zitat": "die Erleichterung der Gründung von kommunalen MVZ und die Einführung der Advanced Practice Nurse und Gemeindeschwestern",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6685,
+          "instrument": 6678,
+          "beschreibung": "Advanced Practice Nurses und Gemeindeschwestern einführen",
+          "ursachen_ids": [102],
+          "zitat": "die Erleichterung der Gründung von kommunalen MVZ und die Einführung der Advanced Practice Nurse und Gemeindeschwestern",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6686,
+          "beschreibung": "Termingarantie: Gesetzlich Versicherte sollen so schnell wie Privatversicherte einen Termin bekommen, sonst sinkt ihr Beitrag",
+          "ursachen_ids": [102, 103],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Setzt Krankenkassen und Kassenärztliche Vereinigungen unter Druck, Termine zu vermitteln, schafft aber selbst keine zusätzlichen Termine; Terminservicestellen gibt es bereits.",
+          "zitat": "Um Wartezeiten zu verringern, werden wir eine Termingarantie der Krankenkassen und Kassenärztlichen Vereinigungen einführen. Gesetzlich Versicherte sollen genauso schnell wie Privatversicherte einen Termin erhalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6687,
+          "instrument": 6681,
+          "beschreibung": "Bürgerversicherung mit einheitlichem Vergütungssystem",
+          "ursachen_ids": [103],
+          "zitat": "Unser Ziel ist zudem ein einheitliches und einfaches Vergütungssystem, das zugleich die Vorhaltekosten der Leistungserbringer absichert.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6688,
+          "instrument": 6677,
+          "beschreibung": "Hausärztlich-zentrierte Primärversorgung stärken",
+          "ursachen_ids": [102],
+          "zitat": "Deshalb werden wir die hausärztlich-zentrierte Primärversorgung stärken, um eine bessere Behandlungsqualität und Effizienz zu erreichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6689,
+          "instrument": 6678,
+          "beschreibung": "Zusammenarbeit mit anderen Gesundheitsberufen wie Community Health Nurses ausbauen",
+          "ursachen_ids": [102],
+          "zitat": "Wir wollen die interdisziplinäre Zusammenarbeit von Ärzt*innen und Angehörigen anderer Gesundheitsberufe wie zum Beispiel Community Health Nurses, Hebammen und Pflegekräfte weiter vorantreiben.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6690,
+          "instrument": 6679,
+          "beschreibung": "Gründung kommunaler MVZ und Primärversorgungszentren fördern",
+          "ursachen_ids": [101],
+          "zitat": "wollen wir auch die vermehrte Gründung von kommunalen MVZ und Primärversorgungszentren fördern, in denen soziale Beratung integriert wird.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6691,
+          "beschreibung": "Mehr Sprechstunden für gesetzlich Versicherte",
+          "ursachen_ids": [103],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Verschiebt Termine zu gesetzlich Versicherten; Mindestsprechstunden gibt es schon, und ohne mehr Ärztinnen und Ärzte entstehen insgesamt kaum zusätzliche Termine.",
+          "zitat": "den Sprechstundenanteil für gesetzlich Versicherte erhöhen, damit Patient*innen schneller Termine erhalten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6692,
+          "beschreibung": "Anspruch auf Patientenlotsen",
+          "ursachen_ids": [102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Lotsen können Wege durch das System verkürzen, vor allem für chronisch Kranke; für die Terminlage insgesamt ist die Wirkung klein, und es braucht zusätzliches Personal.",
+          "zitat": "Wir wollen die Orientierung der Patient*innen im Gesundheitssystem verbessern und dafür einen Anspruch auf Patientenlotsen",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=89",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6693,
+          "instrument": 6677,
+          "beschreibung": "Primärarztsystem: Haus- und Kinderärzte als erste Anlaufstelle",
+          "ursachen_ids": [102],
+          "zitat": "In der ambulanten Versorgung setzen wir uns für ein Primärarztsystem ein: Haus- und Kinderärzte sollten die erste Anlaufstelle für Patientinnen und Patienten sein.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6694,
+          "instrument": 6680,
+          "beschreibung": "Ungekürzte Vergütung, Behandlung ohne Budgetierung",
+          "ursachen_ids": [101, 103],
+          "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6695,
+          "instrument": 6680,
+          "beschreibung": "Budgetierung ärztlicher Leistungen beenden",
+          "ursachen_ids": [101, 103],
+          "zitat": "Die Rationierung ärztlicher Leistungen durch den Zwang, Behandlungen ohne Vergütungsanspruch zu erbringen, muss beendet werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6696,
+          "beschreibung": "Gestaffelte Bonus- und Rückvergütungssysteme gegen Bagatellbehandlungen",
+          "ursachen_ids": [102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Finanzielle Anreize können Arztbesuche etwas senken; die Praxisgebühr von 2004 bis 2012 hatte nur kurz Wirkung und belastete vor allem Menschen mit geringem Einkommen.",
+          "zitat": "Um einer ungesteuerten Leistungsausweitung durch Bagatellbehandlungen zu begegnen, sind gestaffelte Bonus- bzw. Rückvergütungssysteme sinnvoll.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6697,
+          "beschreibung": "Finanzielle und organisatorische Niederlassungshilfen für Ärzte auf dem Land",
+          "ursachen_ids": [101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Zuschüsse für die Niederlassung gibt es bereits bei Kassenärztlichen Vereinigungen und Ländern; sie wirken bisher nur begrenzt, weil viele junge Ärztinnen und Ärzte eine Anstellung bevorzugen.",
+          "zitat": "Zur Förderung der Niederlassung von Ärzten im ländlichen Räumen sind finanzielle und organisatorische Niederlassungshilfen zu etablieren.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6698,
+          "beschreibung": "Mehr Studienplätze in Human- und Zahnmedizin",
+          "ursachen_ids": [101],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Mehr Absolventinnen und Absolventen setzen am Nachwuchsmangel an, wirken aber erst nach etwa zwölf Jahren Studium und Weiterbildung; ob sie Hausärzte auf dem Land werden, ist offen. Studienplätze finanzieren die Länder, der Bund kann nur mitfinanzieren.",
+          "zitat": "Wir fordern eine Ausweitung des Angebots an Studienplätzen in Zahn- und Humanmedizin.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=34",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6699,
+          "instrument": 6679,
+          "beschreibung": "Kommunale Versorgungszentren als Rückgrat der wohnortnahen Versorgung fördern",
+          "ursachen_ids": [101],
+          "zitat": "Wir wollen kommunale Versorgungszentren als Rückgrat der wohnortnahen Gesundheitsversorgung fördern!",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6700,
+          "beschreibung": "Kleinere Versorgungsbezirke, von Ländern und Kommunen bestimmt",
+          "ursachen_ids": [101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Kleinere Planungsbereiche machen Unterversorgung in einzelnen Stadtteilen und Dörfern sichtbar und können Niederlassungen dorthin lenken; zusätzliche Ärztinnen und Ärzte entstehen dadurch nicht.",
+          "zitat": "Die Versorgungsbezirke müssen kleiner bemessen und von Ländern und Kommunen bestimmt werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6701,
+          "instrument": 6678,
+          "beschreibung": "Befugnisse der Heilberufe ausweiten",
+          "ursachen_ids": [102],
+          "zitat": "Wir wollen die Befugnisse der Heilberufe ausweiten und eine flächendeckende Versorgung gewährleisten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6702,
+          "instrument": 6681,
+          "beschreibung": "Privatversicherte in die gesetzliche Krankenversicherung übernehmen",
+          "ursachen_ids": [103],
+          "zitat": "Privatversicherte werden in die gesetzliche Krankenversicherung übernommen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

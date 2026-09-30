@@ -181,16 +181,128 @@ Verworfen:
 - *Messerangriffe* (2025: 29.243, etwa wie im Vorjahr). Keine eigene Ursache, sondern ein Tatmittel an Orten (901) und bei Jugendlichen (903).
 - *Sexueller Missbrauch von Kindern* und *digitale Gewalt* (Deepfakes, Verbreitung intimer Bilder, Cyberstalking). Belegt und eng mit 908 verwandt, aber mit eigenen Quellen und eigenen Maßnahmen (Kinderschutz, Plattformrecht). Kandidaten für eine spätere Prüfung.
 
-## Ebenen der übrigen Themen
+## Arzttermine (1)
 
-Für diese Themen steht noch keine Perspektivenprüfung an (Ursachen unverändert). Die Ebenen sind ein Vorschlag vom 28. 9. 2026 (KI-Entwurf). Sie werden bei der Perspektivenprüfung des jeweiligen Themas bestätigt.
+Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
 
-| Thema | Land | Bund | Begründung |
-| --- | --- | --- | --- |
-| Arzttermine (1) | – | 101, 102, 103 | Bedarfsplanung, Vergütung und Steuerung regelt das SGB V (Bund, Selbstverwaltung) |
-| Miete (2) | – | 201–204 | Mietrecht, steuerliche Förderung und Baustandards (GEG, Gebäudetyp E) liegen beim Bund; soziale Wohnraumförderung ist zwar Ländersache, die meisten Hebel für Neubau (201) aber beim Bund. Folge: Landesprogramme zählen bei Miete nicht – auch nicht in Berlin. Bei der Perspektivenprüfung Miete erneut ansehen. |
-| Energiepreise (3) | – | 301, 302, 303 | Netzentgelte (Regulierung), Steuern und Umlagen, Energieimporte |
-| Bus und Bahn (8) | 801, 803 | 802 | Nahverkehrsangebot und Personal: Länder und Kommunen (Aufgabenträger); Schienennetz: Bund (DB InfraGO) |
+Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Neue Ursachen kommen nicht hinzu, eine wird genauer gefasst.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 101 *geändert* | Zu wenige Hausarztpraxen, besonders auf dem Land: viele gehen in den Ruhestand, zu wenige lassen sich als Hausarzt nieder | Bund | Robert Bosch Stiftung/IGES (Hausarztstudie) | Niederlassungsförderung, mehr Studienplätze (breit geteilt); Gesundheitszentren und Anstellung (eher links/Mitte); Entbudgetierung (eher wirtschaftsliberal) |
+| 102 | Termine und Wege werden kaum gesteuert; knappes Personal wird nicht gezielt eingesetzt | Bund | Sachverständigenrat Gesundheit, Gutachten 2024 | Primärarztsystem (inzwischen breit geteilt); Aufgaben an andere Gesundheitsberufe (eher links/Mitte); Selbstbeteiligung (eher wirtschaftsliberal/rechts) |
+| 103 | Unterschiedliche Vergütung: Facharztpraxen bevorzugen Privatversicherte | Bund | RWI, Feldexperiment mit rund 1.000 Praxen | Bürgerversicherung, einheitliche Vergütung (eher links); Entbudgetierung (eher wirtschaftsliberal) |
+
+**101:** Laut Studie liegt der Mangel an zwei Dingen: Bis 2035 gehen fast 30.000 Hausärztinnen und Hausärzte in den Ruhestand, und zu wenige Nachwuchskräfte lassen sich nieder, weil viele eine Anstellung und Teilzeit bevorzugen. Vorher nannte die Ursache nur den Ruhestand. Damit hätten Maßnahmen zum Nachwuchs (Studienplätze, Niederlassungshilfen, Anstellung in Zentren) nur indirekt gepasst.
+
+Entschieden: **101–103 Bund.** Bedarfsplanung, Vergütung und Steuerung regelt das SGB V (Bund und Selbstverwaltung). Medizinstudienplätze und Landarztquoten sind Ländersache, sind aber nur ein Teil von 101.
+
+Verworfen:
+- *Budgetierung ärztlicher Leistungen.* Als eigene Ursache nur von Ärzteverbänden belegt. Für die Hausärzte ist sie seit 2025 aufgehoben. Die RWI-Studie zeigt aber, dass der Vergütungsabstand die Terminvergabe prägt. Maßnahmen zur Entbudgetierung setzen deshalb an 103 an (und an 101, weil sie Praxen wirtschaftlich stärken).
+- *Zu viele Arztbesuche.* Belegt (im internationalen Vergleich viele Kontakte), aber Teil der fehlenden Steuerung (102).
+- *Bürokratie in den Praxen.* Nur mit Quellen der Ärzteschaft belegt; keine eigene Ursache.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf): sechs Bundesprogramme, Stichwörter Hausarzt, Primärarzt, Terminservice, Facharzttermin, Wartezeit, Landarzt, Medizinstudium, Studienplätze, Niederlassung, Bürgerversicherung, Privatversichert, Budgetierung, Entbudgetierung, MVZ, Gesundheitszentrum. Ergebnis: 21 Maßnahmen (IDs 6682–6702), 5 Instrumente (6677–6681). Die Union hat keine Maßnahme zu 101 und 103. Das BSW-Bundesprogramm war aus der Sitzung nicht abrufbar und fehlt noch.
+
+## Miete (2)
+
+Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Die Maßnahmen der Bundesprogramme waren schon erfasst (27. und 28. 9. 2026). Die Prüfung stützt sich trotzdem nur auf Fachquellen. Zwei belegte Diagnosen deckte keine Ursache ab. Sie sind jetzt als 205 und 206 aufgenommen und mit `nachtraeglich` gekennzeichnet.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 201 | Es werden weniger Wohnungen gebaut als gebraucht | Bund | BBSR, Wohnungsbedarfsprognose 2025 | mehr bauen – breit geteilt, Wege verschieden |
+| 202 | Neuvermietungsmieten rund 43 % über Bestandsmieten | Bund | BBSR | Mietpreisbremse, Mietendeckel (eher links); Angebot ausweiten (eher wirtschaftsliberal) |
+| 203 | Stark gestiegene Baukosten | Bund | Destatis, Baupreisindex | Standards senken, Gebäudetyp E (eher wirtschaftsliberal/konservativ, inzwischen breit geteilt) |
+| 204 | Mieten in laufenden Verträgen steigen weiter | Bund | Destatis | Kappungsgrenzen, Mietenstopp (eher links) |
+| **205** *neu* | Die Nachfrage wächst vor allem in Großstädten, getragen vor allem von Zuwanderung | Bund | IW-Report 24/2026, Gutachten für den Sachverständigenrat für Integration und Migration | Zuwanderung begrenzen oder steuern (eher rechts/konservativ); mehr Angebot in wachsenden Städten (breit geteilt) |
+| **206** *neu* | Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden | Land | Bundestag (hib), Antwort der Bundesregierung, Drucksache 21/7212 | Sozialen Wohnungsbau ausweiten, Bindungen verlängern (eher links/Mitte); Fehlbelegungsabgabe, Wohngeld statt Objektförderung (eher wirtschaftsliberal/rechts) |
+
+**205:** Laut IW-Gutachten ist die Knappheit seit den 2010er-Jahren „getragen von einem positiven Außenwanderungssaldo, teilweise starker Binnenwanderungskonzentration, Einkommenszuwächsen und lange niedrigen Zinsen“. Das Bevölkerungswachstum geht „insbesondere auf die starke Zuwanderung“ zurück, die Zahl der Haushalte wächst vor allem in wirtschaftlich starken Städten. 201 beschreibt nur das Angebot. Die Nachfrageseite fehlte. Die Ursache ist lösungsoffen: Maßnahmen können die Nachfrage steuern oder das Angebot dort erhöhen, wo sie wächst. Ebene **Bund**: Zuwanderungs- und Aufenthaltsrecht liegen beim Bund.
+
+**206:** 2025 wurden 27.283 Sozialwohnungen neu gefördert. Laut Bundesregierung fallen in den nächsten Jahren „jährlich rund 55.000 Sozialmietwohnungen aus der Bindung“. Der Bestand sinkt deshalb weiter. 201 und 202 erfassten den Wohnungsmangel allgemein, nicht den Verlust gebundener Wohnungen. Ebene **Land**: Die soziale Wohnraumförderung ist seit 2006 Ländersache, der Bund beteiligt sich mit Finanzhilfen (Art. 104d GG). Damit zählen bei Miete erstmals Landesprogramme. Die Ebenenprüfung vom 28. 9. 2026 hatte das für Berlin als offene Frage vorgemerkt.
+
+**Nacherfassung 205 und 206:**
+- 205: alle sechs erreichbaren Bundesprogramme, Suche nach Zuwanderung, Migration, Einwanderung, Asyl und Flüchtling im Umfeld von Wohnungsmarkt, Wohnraum, Wohnungsnot und Mieten. Ergebnis: 1 Maßnahme (AfD). Die Linke nennt die Zuwanderung als Herausforderung für den Wohnraum, aber ohne Maßnahme.
+- 206 Bund: Die schon erfassten Maßnahmen zum sozialen und gemeinnützigen Wohnungsbau (2005, 2013, 2024, 2053, 2061) setzen auch an 206 an. Sie sind jetzt beiden Ursachen zugeordnet.
+- 206 Länder: alle 21 Landesprogramme, Stichwörter Sozialwohnung, sozialer Wohnungsbau, Wohnraumförderung, Belegungs-, Sozial- und Mietpreisbindung, geförderte Wohnung, Wohnberechtigungsschein, Wohnungsbaugesellschaft, landeseigene, Fehlbelegung. Ergebnis: 26 Maßnahmen, 3 × `keine_massnahme` (FDP in ST und MV, AfD in MV).
+- Neu auf Bundesebene außerdem: Grüne, Mietwucher und Indexmieten (202, 204). Sie war bei der ersten Erfassung übersehen worden.
+- Zusammen 28 neue Maßnahmen (IDs 6643–6644 und 6651–6676), 12 Instrumente (6637–6642 Bund, 6645–6650 Land).
+
+**Überarbeitung der vorhandenen Maßnahmen:**
+- Gleiche Lösungswege sind jetzt Instrumente: Mietpreisbremse auslaufen lassen (FDP, AfD), bundesweiter Mietendeckel (Linke, BSW), Mietenstopp (Grüne, BSW), bessere Abschreibung (Union, FDP), keine neuen kostentreibenden Standards (Union, SPD), sozialen Wohnungsbau stärker fördern (Grüne, BSW). Die Werte der zusammengefassten Maßnahmen waren schon gleich; einige Begründungen sind um den Forschungsstand ergänzt.
+- Alle Maßnahmen haben jetzt einen Stand der Forschung (`evidenz`).
+- Die Mietpreisbremse bei SPD (unbefristet) und Grünen (verlängern) bleibt getrennt bewertet, weil die unbefristete Geltung verfassungsrechtlich weniger abgesichert ist.
+- Alle erreichbaren Zitate stehen auf der angegebenen Seite (`npm run zitate:pruefen -- --thema 2`). Die vier BSW-Zitate sind nicht prüfbar, solange das Bundesprogramm nicht abrufbar ist.
+
+Hinweis: Die vorhandenen Bundesmaßnahmen sind nicht als KI-Entwurf gekennzeichnet. Einträge, in denen sie mit neuen KI-Entwürfen stehen, zählen deshalb auch in der Testphase erst nach der Prüfung.
+
+Verworfen:
+- *Hohe Bauzinsen.* Belegt, aber ein Grund dafür, dass zu wenig gebaut wird (201), und kaum politisch steuerbar (Geldpolitik der EZB).
+- *Zu wenig Bauland und lange Genehmigungen.* Teil von 201 (weniger gebaut als gebraucht) und 203 (Kosten). Maßnahmen dazu sind dort zugeordnet.
+- *Leerstand und Zweckentfremdung (Ferienwohnungen).* Regional belegt, bundesweit aber klein. Maßnahmen dazu setzen an 201 an.
+- *Nebenkosten und Heizkosten.* Gehört zum Thema Energiepreise.
+
+## Energiepreise (3)
+
+Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Das Ziel („Haushalte können Strom und Heizung dauerhaft bezahlen“) umfasst Strom und Heizung. Die Ursachen deckten bisher aber vor allem den Strompreis ab.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 301 | Hohe Netzentgelte | Bund | Bundesnetzagentur | Zuschüsse aus dem Haushalt (eher links/Mitte); günstigerer Netzausbau (eher wirtschaftsliberal) |
+| 302 *geändert* | Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis | Bund | Bundesnetzagentur | Stromsteuer senken (breit geteilt); CO₂-Preis abschaffen (eher rechts); Klimageld (eher Mitte/links, auch wirtschaftsliberal) |
+| 303 | Rund 70 % der Energie wird importiert | Bund | Umweltbundesamt | Lieferländer streuen, heimische Förderung (eher konservativ); weniger Verbrauch (eher grün) |
+| **304** *neu* | Der Börsenstrompreis richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk | Bund | Wissenschaftliche Dienste des Bundestages, WD 5-3000-121/22 | mehr erneuerbare Energien und Speicher (eher links/grün); Kohle- und Kernkraftwerke länger (eher rechts/konservativ) |
+| **305** *neu* | Drei Viertel der Wohnungen werden mit Gas oder Öl beheizt | Bund | Destatis, Zensus 2022 | Heizungstausch fördern (eher grün/links); Technologieoffenheit, fossile Preise senken (eher konservativ/rechts) |
+
+**302:** Laut Bundesnetzagentur gehören beim Gas die CO₂-Abgabe und die Energiesteuer zu den Preisbestandteilen, beim Strom Stromsteuer, Umsatzsteuer und Umlagen. Vorher nannte die Ursache nur den Strompreis. Maßnahmen zum CO₂-Preis auf Heizen hätten nicht gepasst.
+
+**304:** Der Strompreis besteht zu einem großen Teil aus den Beschaffungskosten. Die bestimmt an der Börse das teuerste Kraftwerk, das noch gebraucht wird. Laut den Wissenschaftlichen Diensten ist das „heute oft“ ein Gaskraftwerk. Keine der bisherigen Ursachen deckte die Stromerzeugung ab. Die Ursache ist lösungsoffen: Mehr günstiger Strom (erneuerbar oder aus Kohle und Kernkraft) und Speicher setzen hier an.
+
+**305:** Laut Zensus 2022 werden 56 % der Wohnungen mit Gas und 19 % mit Öl beheizt. Die Heizkosten hängen deshalb direkt an den Preisen fossiler Brennstoffe. 303 erfasst die Importabhängigkeit des Landes, nicht die Heiztechnik der Haushalte.
+
+Entschieden: **301–305 Bund.** Netzregulierung, Steuern und Abgaben, Energiepolitik und Gebäudeenergierecht (GEG, Förderung) liegen beim Bund. Die kommunale Wärmeplanung ist ein Teil von 305, aber nicht der Hauptteil.
+
+Verworfen:
+- *Schlecht gedämmte Gebäude, niedrige Sanierungsrate.* Die Sanierungsrate ist nur durch Verbandsquellen (BuVEG) belegt. Kandidat, sobald eine unabhängige Quelle vorliegt. Maßnahmen zur Effizienz setzen einstweilen an 305 an.
+- *Zu wenig Wettbewerb bei Versorgern, überhöhte Heizkostenabrechnungen.* Kein unabhängiger Beleg, dass das die Preise allgemein treibt.
+- *Fernwärmepreise.* Regional belegt (Preisaufsicht fehlt), betrifft aber 15 % der Wohnungen. Kandidat für später.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf): sechs Bundesprogramme, Stichwörter Netzentgelt, Stromsteuer, Strompreis, Energiepreis, Gaspreis, CO₂-Preis, Klimageld, Klimadividende, Heizkosten, Umlage, Wärmepumpe, Heizungstausch, Kraftwerk, Kernenergie, Erneuerbare, Speicher, Erdgasförderung. Ergebnis: 34 Maßnahmen (IDs 6710–6739 und 6820–6823), 7 Instrumente (6703–6709). Nicht erfasst wurden Sockeltarife, Preisaufsicht und Härtefallfonds für Heizkosten (Linke) sowie die Fernwärme-Preisaufsicht (SPD): Sie lindern Folgen, setzen aber an keiner der Ursachen an. Nicht erfasst wurden auch Forderungen, die an einer Ursache ansetzen, aber keine Entlastung versprechen (Heizungsgesetz abschaffen, Union und AfD). Das BSW-Bundesprogramm fehlt noch.
+
+## Bus und Bahn (8)
+
+Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Neue Ursachen kommen nicht hinzu, zwei werden genauer gefasst.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 801 | Rund 21 Millionen Menschen fehlt ein gutes Grundangebot, besonders auf dem Land | Land | Agora Verkehrswende, ÖV-Atlas 2026 | Mindestangebot, mehr Geld (eher grün/links); Rufbusse, On-Demand, autonomes Fahren (eher wirtschaftsliberal/konservativ) |
+| 802 *geändert* | Marodes, überaltertes Schienennetz; laut Bundesrechnungshof steuert der Bund seine Mittel für den Erhalt kaum wirksam | Bund | Bundesrechnungshof, Bericht zur LuFV III (2025) | mehr Geld und Fonds (breit geteilt); Trennung von Netz und Betrieb (eher wirtschaftsliberal/konservativ); stärkere Steuerung durch den Bund (Mitte/links, auch rechts) |
+| 803 *geändert* | Zu wenige Bus- und Straßenbahnfahrerinnen und -fahrer; in zehn Jahren gehen rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand | Land | KOFA (IW), Fachkräftereport Juni 2025 | bessere Bezahlung, Tariftreue (eher links/gewerkschaftsnah); schnellere Qualifizierung, Anerkennung, günstigerer Busführerschein (eher wirtschaftsliberal) |
+
+**802:** Der Bericht des Bundesrechnungshofs, auf den die Ursache schon verwies, handelt vor allem von der Steuerung: Er sieht „die Gefahr, dass auch künftige Bundesmittel nicht zu einer substanziellen Verbesserung der Schieneninfrastruktur führen werden“. Vorher nannte die Ursache nur den Zustand des Netzes. Damit hätten Maßnahmen zur Steuerung und Struktur der Deutschen Bahn nur indirekt gepasst.
+
+**803:** Laut KOFA fehlten im Juni 2025 noch knapp 1.700 Bus- und Straßenbahnfahrerinnen und -fahrer, deutlich weniger als ein Jahr zuvor. Der Grund könnte auch die Finanznot vieler Verkehrsbetriebe sein. Langfristig verschärft sich der Mangel, weil in zehn Jahren rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand gehen. Die Ursache nennt jetzt diese belegte Aussage statt „viele Stellen bleiben unbesetzt“.
+
+Entschieden: **801 und 803 Land, 802 Bund**, wie am 28. 9. 2026 vorgeschlagen. Das Nahverkehrsangebot bestellen Länder und Kommunen, sie sind auch für das Fahrpersonal der Verkehrsunternehmen verantwortlich. Das Schienennetz des Bundes betreibt die DB InfraGO.
+
+Offen:
+- *Ticketpreise.* Das Ziel des Themas („zuverlässig und in vertretbarer Zeit ans Ziel“) umfasst den Preis nicht. Viele Programme haben Maßnahmen zum Deutschlandticket, sie werden deshalb nicht erfasst. Ob das Ziel um die Bezahlbarkeit erweitert wird, entscheidet die Betreiberin.
+
+Verworfen:
+- *Überlastetes Netz, zu wenig Kapazität.* Teil von 802; Maßnahmen zum Ausbau setzen dort an.
+- *Zu wenig Geld für den Betrieb (Regionalisierungsmittel, Deutschlandticket).* Belegt vor allem durch Verbandsquellen (VDV) und Agora Verkehrswende. Teil von 801 (Angebot); Maßnahmen zur Finanzierung setzen dort an.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf):
+- Bund: sechs Bundesprogramme, Stichwörter Schiene, Regionalisierungsmittel, ÖPNV, Nahverkehr, Deutsche Bahn, InfraGO, Schienennetz, Mobilitätsgarantie, Busfahrer, Fahrermangel, Fahrpersonal, Berufskraftfahrer, Führerschein. Ergebnis: 25 Maßnahmen, 9 Instrumente. Die AfD hat keine Maßnahme zu 803. Das BSW-Bundesprogramm fehlt noch.
+- Länder (801, 803): alle 21 Landesprogramme, Stichwörter ÖPNV, Nahverkehr, Busverkehr, Rufbus, On-Demand, Takt, Landesbus, Mobilitätsgarantie, Regionalisierung, Reaktivierung, SPNV, Bahnstrecke, BVG, Straßenbahn, U-Bahn, Fahrpersonal, Busfahrer, Tarif. Ergebnis: 40 Maßnahmen, 6 Instrumente. Zu 803 haben nur SPD und FDP in Sachsen-Anhalt Maßnahmen, in Mecklenburg-Vorpommern keine Partei; in Berlin alle außer SPD und FDP. Da jeder dieser Partei-Land-Einträge schon Maßnahmen zu 801 hat, steht dort kein `keine_massnahme`-Vermerk.
+- Zusammen 65 Maßnahmen (IDs 6755–6819), 15 Instrumente (6740–6754).
+- Nicht erfasst wurden Maßnahmen zu Ticketpreisen (siehe „Offen“), zur Barrierefreiheit, zur Sicherheit in Bus und Bahn sowie zum Schienengüterverkehr.
 
 ## Hinweise zur Quellenprüfung
 
@@ -216,3 +328,16 @@ Sicherheit (29. 9. 2026), von der KI im Original abgerufen:
 - 906: „Nach den Ergebnissen der Dunkelfeldstudie SKiD war bereits jede fünfte Person Opfer von Delikten aus dem Bereich der Cyberkriminalität.“ Betrug aus dem Ausland +7,0 %, Schaden 2,3 Mrd. Euro, +65,1 % (BKA-Pressemitteilung vom 20. 4. 2026)
 - 907: 85.837 Straftaten (+ ca. 2 %), „Höchststand seit Einführung der Statistik 2001“, 4.156 Gewalttaten (+ rund 1,2 %) (BKA-Pressemitteilung vom 9. 6. 2026)
 - 908: Vergewaltigung 2025 +9,0 %, seit 2018 +72 %; Anzeigequote bei Vergewaltigung und sexuellem Missbrauch 6,2 % (BKA-Pressemitteilung vom 20. 4. 2026)
+
+Arzttermine, Miete, Energiepreise, Bus und Bahn (30. 9. 2026), von der KI im Original abgerufen:
+
+- 101: „Bis 2035 werden altersbedingt fast 30.000 Hausärzte ausscheiden. Die freiwerdenden Hausarztsitze werden Nachwuchsärzte und zugewanderte Ärzte nicht in gleicher Zahl besetzen.“ (idw, Robert Bosch Stiftung)
+- 205: Knappheit „getragen von einem positiven Außenwanderungssaldo, teilweise starker Binnenwanderungskonzentration, Einkommenszuwächsen und lange niedrigen Zinsen“ (IW-Report 24/2026, Zusammenfassung S. 4); Bevölkerungszuwachs „insbesondere auf die starke Zuwanderung zurückzuführen“ (S. 19)
+- 206: 27.283 geförderte Sozialwohnungen 2025; „jährlich rund 55.000 Sozialmietwohnungen aus der Bindung“ (hib-Meldung zur Drucksache 21/7212)
+- 302: Preisbestandteile Gas einschließlich CO₂-Abgabe (Bundesnetzagentur, Verbraucherportal)
+- 304: „Nach dem teuersten aktuell noch benötigten Kraftwerk („Grenzkraftwerk“) richtet sich“ der Preis; Grenzkraftwerk „heute oft Gaskraftwerke“ (WD 5-3000-121/22, Abschluss 30. 9. 2022)
+- 305: 75 % der Wohnungen mit Gas (56 %) oder Öl (19 %) beheizt (Destatis, Zensus 2022)
+- 802: „Er sieht die Gefahr, dass auch künftige Bundesmittel nicht zu einer substanziellen Verbesserung der Schieneninfrastruktur führen werden.“ (Bundesrechnungshof, Bericht zur LuFV III, Nr. 0.2)
+- 803: knapp 1.700 unbesetzte Stellen für Bus- und Straßenbahnfahrer im Juni 2025; „in den kommenden zehn Jahren rund vier von zehn Beschäftigte in Verkehrsberufen altersbedingt“ (KOFA, Fachkräftereport Juni 2025)
+
+Die Quelle zu 304 ist von 2022. Sie erklärt den Mechanismus, der unverändert gilt. Eine neuere unabhängige Quelle mit einer Zahl (etwa Anteil der Stunden, in denen Gas den Preis setzt) wäre besser.
