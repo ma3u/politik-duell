@@ -5,6 +5,8 @@ import { Fusszeile } from './components/Fusszeile'
 import { Kopfzeile } from './components/Kopfzeile'
 import { MockHinweis } from './components/MockHinweis'
 import { TestphaseHinweis } from './components/TestphaseHinweis'
+import { Testphasesperre } from './components/Testphasesperre'
+import { Themenstand } from './components/Themenstand'
 import { Punktestand } from './components/Punktestand'
 import { Runde } from './components/Runde'
 import { Setup } from './components/Setup'
@@ -20,7 +22,10 @@ import {
   ZugangUngueltig,
   type Daten,
 } from './data/quelle'
+import { useHash, zurueck } from './navigation'
 import { RUNDEN_GESAMT, type RundenErgebnis, type Spieler } from './spiel'
+
+const NUR_TESTPHASE = import.meta.env.VITE_OFFEN !== 'true'
 
 type Phase = 'start' | 'setup' | 'runde' | 'aufloesung' | 'ende'
 
@@ -33,6 +38,8 @@ export default function App() {
   const [zugangsHinweis, setZugangsHinweis] = useState<string | null>(null)
   // Nur für diese Sitzung im Speicher, damit der Weg zurück zur Startseite nicht erneut fragt.
   const [einverstanden, setEinverstanden] = useState(false)
+  // Themenübersicht (#/themen): liegt über dem Spiel, damit eine laufende Partie erhalten bleibt.
+  const themenSeite = useHash().startsWith('#/themen')
 
   useEffect(() => {
     ladeDaten()
@@ -62,9 +69,31 @@ export default function App() {
     scrollTo({ top: 0 })
   }
 
+  // Nur geschlossene Testphase: Ohne gültigen Zugangslink kein Spiel. Mit VITE_OFFEN=true wieder öffentlich.
+  if (NUR_TESTPHASE && daten?.quelle === 'supabase' && !daten.testphase) {
+    return (
+      <div className="app">
+        {zugangsHinweis && (
+          <div className="mock-hinweis" role="alert">
+            {zugangsHinweis}
+          </div>
+        )}
+        <Testphasesperre />
+      </div>
+    )
+  }
+
   return (
     <DatenKontext.Provider value={daten ?? MOCK_DATEN}>
-      <div className="app">
+      {themenSeite && (
+        <div className="app">
+          {daten && sindBeispieldaten(daten) && <MockHinweis />}
+          {daten?.testphase && <TestphaseHinweis />}
+          <Themenstand daten={daten} ladeFehler={ladeFehler} onZurueck={zurueck} />
+          <Fusszeile />
+        </div>
+      )}
+      <div className="app" hidden={themenSeite}>
         {sindBeispieldaten(daten ?? MOCK_DATEN) && <MockHinweis />}
         {daten?.testphase && <TestphaseHinweis />}
         {zugangsHinweis && (

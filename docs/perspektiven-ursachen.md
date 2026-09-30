@@ -108,7 +108,7 @@ Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#11, #1
 
 **1003:** Laut Destatis ist die Zahl der Pflegebedürftigen von 2021 bis 2023 um 730.000 gestiegen. Durch die Alterung allein wären es rund 100.000 gewesen, der Rest geht zum Teil auf den weiter gefassten Begriff von 2017 zurück. Vorher nannte die Ursache nur die Alterung. Damit fehlte eine Diagnose, die vor allem in der Debatte um die Finanzen der Pflegeversicherung vertreten wird.
 
-**1005:** Das ist ein neuer Teil, herausgelöst aus 1002. Für die Investitionskosten sind nach § 9 SGB XI die Länder zuständig. Laut IGES gilt: „Zur finanziellen Entlastung von Pflegeheimbewohnern trägt das Fördervolumen weiterhin kaum bei.“ Die Bewohner zahlen dafür im Bundesschnitt 521 Euro im Monat (vdek, Juli 2026). Weil hier die Länder zuständig sind, zählt mit gewähltem Bundesland das Landesprogramm. Deshalb wurden alle 21 Landesprogramme (ST, MV, BE) nach Maßnahmen dazu durchsucht (Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim, Pflegeeinrichtung): 8 Maßnahmen, 13 × `keine_massnahme`. Die Ursache ist mit `nachtraeglich` gekennzeichnet, weil sie nach der Erfassung der Bundesprogramme dazukam. Diese waren schon nach Maßnahmen gegen die Eigenanteile durchsucht, und ein Abgleich mit dem Stichwort „Investitions…“ fand keine weiteren Stellen als bei SPD und Linke. Das BSW-Bundesprogramm war dafür nicht abrufbar.
+**1005:** Das ist ein neuer Teil, herausgelöst aus 1002. Für die Investitionskosten sind nach § 9 SGB XI die Länder zuständig. Laut IGES gilt: „Zur finanziellen Entlastung von Pflegeheimbewohnern trägt das Fördervolumen weiterhin kaum bei.“ Die Bewohner zahlen dafür im Bundesschnitt 521 Euro im Monat (vdek, Juli 2026). Weil hier die Länder zuständig sind, zählt mit gewähltem Bundesland das Landesprogramm. Deshalb wurden alle 21 Landesprogramme (ST, MV, BE) nach Maßnahmen dazu durchsucht (Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil, Pflegeheim, Pflegeeinrichtung): 8 Maßnahmen, 13 × `keine_massnahme`. Die Ursache ist mit `nachtraeglich` gekennzeichnet, weil sie nach der Erfassung der Bundesprogramme dazukam. Diese waren schon nach Maßnahmen gegen die Eigenanteile durchsucht, und ein Abgleich mit dem Stichwort „Investitions…“ fand keine weiteren Stellen als bei SPD und Linke. Das BSW-Bundesprogramm hat die Betreiberin bereitgestellt. Es enthält nichts zu den Investitionskosten, nur die Pflegevollversicherung (S. 27, schon unter 1002).
 
 **Neu zugeordnet:**
 - 6243 (SPD, Investitionskosten nicht mehr vollständig umlegen): 1002 → 1005
@@ -145,12 +145,12 @@ Im nächsten Schritt kamen die drei dafür vorgemerkten Diagnosen als 906–908 
 **905:** Die PKS 2025 nennt den Anteil als „weiterhin deutlich überrepräsentiert“. Die Zuwanderungsprüfung hatte die Diagnose „Kriminalität von Zugewanderten“ an dieses Thema verwiesen. Über die Gründe ist sich die Forschung nicht einig. Das ifo Institut (2025) findet keinen Zusammenhang zwischen dem Ausländeranteil einer Region und ihrer Kriminalitätsrate und erklärt die Überrepräsentation vor allem mit dem Wohnort in Ballungsräumen; Alter und Geschlecht spielen dort eine kleinere Rolle. Die Studie ist in der Debatte umstritten. Deshalb nennt die Ursache nur den Befund und lässt die Erklärung offen, damit Lösungen auf beiden Seiten ansetzen können. Ebene **Bund**, wie bei 604: Aufenthalts- und Ausweisungsrecht sind Bundesrecht.
 
 **Nacherfassung:**
-- 904: alle 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter häusliche Gewalt, Partnerschaftsgewalt, Gewalt gegen Frauen, Frauenhaus, Gewaltschutz, Fußfessel, Istanbul-Konvention, Femizid, Gewalthilfe, Schutzwohnung, Hochrisiko, Täterarbeit)
-- 905: die 6 erreichbaren Bundesprogramme (Stichwörter Straftäter, Ausweisung, Abschiebung, ausländische, Clan, Messer). Die BSW-Maßnahme stammt aus dem schon geprüften Zuwanderungseintrag 6064 (S. 37).
-- Ergebnis: 40 Maßnahmen, 9 Instrumente
+- 904: alle 7 Bundes- und alle 21 Landesprogramme (Stichwörter häusliche Gewalt, Partnerschaftsgewalt, Gewalt gegen Frauen, Frauenhaus, Gewaltschutz, Fußfessel, Istanbul-Konvention, Femizid, Gewalthilfe, Schutzwohnung, Hochrisiko, Täterarbeit)
+- 905: alle 7 Bundesprogramme (Stichwörter Straftäter, Ausweisung, Abschiebung, ausländische, Clan, Messer). Die BSW-Maßnahme entspricht dem Zuwanderungseintrag 6064 (S. 37).
+- Ergebnis: 41 Maßnahmen, 9 Instrumente
 - Keine Maßnahme zu 904 bei AfD Bund, ST, MV und BE. Keine Maßnahme zu 905 bei FDP und Linke. Die Linke lehnt Abschiebungen als „Doppelbestrafung“ ab, das ist keine Maßnahme.
 
-**Offen:** Das BSW-Bundesprogramm war nicht abrufbar (bsw-vg.de gesperrt). Laut Programmvergleichen fordert es mehr Frauenhausplätze. Bis es nach 904 durchsucht ist, steht das BSW dort ohne Bundesland zu Unrecht bei 0.
+Das BSW-Bundesprogramm war aus der Sitzung nicht abrufbar. Die Betreiberin hat es bereitgestellt (Prüfsumme stimmt), danach wurde es ebenfalls nach 904 durchsucht (S. 33).
 
 **906–908** (29. 9. 2026, eigener Schritt nach der Perspektivenprüfung): Die Diagnosen waren belegt, aber noch nicht aufgenommen; sexualisierte Gewalt stand als Kandidat unter „Verworfen“. Alle drei sind lösungsoffen formuliert und mit `nachtraeglich` gekennzeichnet.
 
@@ -164,7 +164,7 @@ Im nächsten Schritt kamen die drei dafür vorgemerkten Diagnosen als 906–908 
 - 906: die 6 erreichbaren Bundesprogramme (Stichwörter Betrug, Cyber, Enkeltrick, Schockanruf, Phishing, Callcenter, Internetkriminalität, IP-Adressen, Quick Freeze, Vorratsdaten, Europol, Verbraucherschutz online). Ergebnis: 11 Maßnahmen.
 - 907: die 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter Extremismus, politisch motiviert, Verfassungsschutz, Demokratie leben, Demokratiefördergesetz, Aussteiger, Hasskriminalität, Hass und Hetze, Islamismus, Terror, Antisemitismus, Radikalisierung, Vereinsverbot, verfassungsfeindlich). Ergebnis: 74 Maßnahmen.
 - 908: die 6 erreichbaren Bundes- und alle 21 Landesprogramme (Stichwörter sexualisiert, sexuelle Gewalt, Übergriff, Belästigung, Vergewaltigung, Sexualstrafrecht, K.-o.-Tropfen, Catcalling, „Ja heißt Ja“, Gewaltschutzambulanz, Spurensicherung, Sexualdelikt, bildbasiert, Deepfake). Ergebnis: 20 Maßnahmen.
-- Zusammen 105 Maßnahmen (IDs 6529–6633), 22 neue Instrumente (6507–6528), dazu das vorhandene Instrument 6466 und 13 Einzelbewertungen.
+- Zusammen 105 Maßnahmen (IDs 6530–6634), 22 neue Instrumente (6508–6529), dazu das vorhandene Instrument 6466 und 13 Einzelbewertungen.
 - Keine Maßnahme zu 906 bei der AfD. Zu 907 keine bei der FDP in Sachsen-Anhalt. Zu 908 keine bei FDP Bund, Union, SPD, FDP, AfD, Linke und BSW in Sachsen-Anhalt, Union, AfD und BSW in Mecklenburg-Vorpommern sowie Union und BSW in Berlin. Da jeder dieser Partei-Land-Einträge schon Maßnahmen zu anderen Ursachen hat, steht dort kein `keine_massnahme`-Vermerk.
 
 Abgrenzung beim Erfassen:
