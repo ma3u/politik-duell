@@ -3,6 +3,7 @@ import type { Daten } from '../data/quelle'
 import { statistik, themenStand, type Erfassung, type ThemaStand } from '../logic/stand'
 import { BETREIBER } from '../rechtliches/betreiber'
 import { Logo } from './Logo'
+import { Zusammenhaenge } from './Zusammenhaenge'
 import { parteiStil } from './stil'
 
 // Übersicht unter #/themen: welche Themen das Spiel kennt, wie weit die Programme
@@ -43,7 +44,32 @@ function Legende({ eintraege }: { eintraege: { klasse: string; label: string }[]
   )
 }
 
-/** Balkendiagramm aus Zeilen: Hover, Fokus oder Tippen zeigt die Details unter dem Diagramm. */
+interface Zeile {
+  id: number
+  name: string
+  wert: string
+  segmente: { klasse: string; anteil: number }[]
+  detail: string
+  /** Aufklappbare Unterzeilen (z. B. Ursachen eines Themas). */
+  kinder?: Zeile[]
+}
+
+function Balken({ segmente }: { segmente: Zeile['segmente'] }) {
+  return (
+    <span className="balken-spur" aria-hidden="true">
+      {segmente
+        .filter((s) => s.anteil > 0)
+        .map((s, i) => (
+          <span key={i} className={`balken-teil ${s.klasse}`} style={{ flexBasis: `${s.anteil * 100}%` }} />
+        ))}
+    </span>
+  )
+}
+
+/**
+ * Balkendiagramm aus Zeilen: Hover, Fokus oder Tippen zeigt die Details unter dem Diagramm.
+ * Zeilen mit `kinder` klappen beim Tippen ihre Unterzeilen auf.
+ */
 function Balkendiagramm({
   titel,
   unterzeile,
@@ -54,11 +80,58 @@ function Balkendiagramm({
   titel: string
   unterzeile: string
   legende?: { klasse: string; label: string }[]
-  zeilen: { id: number; name: string; wert: string; segmente: { klasse: string; anteil: number }[]; detail: string }[]
+  zeilen: Zeile[]
   leer: string
 }) {
-  const [aktiv, setAktiv] = useState<number | null>(null)
-  const detail = zeilen.find((z) => z.id === aktiv)?.detail
+  const [aktiv, setAktiv] = useState<string | null>(null)
+  const [offen, setOffen] = useState<ReadonlySet<number>>(new Set())
+  const klappbar = zeilen.some((z) => z.kinder?.length)
+  const schluessel = (z: Zeile, eltern?: number) => (eltern === undefined ? `${z.id}` : `${eltern}/${z.id}`)
+  const detail = [
+    ...zeilen.map((z) => [schluessel(z), z.detail]),
+    ...zeilen.flatMap((z) => (z.kinder ?? []).map((k) => [schluessel(k, z.id), k.detail])),
+  ].find(([s]) => s === aktiv)?.[1]
+  const umschalten = (id: number) =>
+    setOffen((o) => {
+      const n = new Set(o)
+      if (n.has(id)) n.delete(id)
+      else n.add(id)
+      return n
+    })
+
+  const knopf = (z: Zeile, eltern?: number) => {
+    const s = schluessel(z, eltern)
+    const kinder = eltern === undefined && z.kinder?.length ? z.kinder : null
+    return (
+      <button
+        type="button"
+        className={`balken-zeile${aktiv === s ? ' aktiv' : ''}${eltern !== undefined ? ' balken-kind' : ''}`}
+        aria-label={z.detail}
+        aria-expanded={kinder ? offen.has(z.id) : undefined}
+        onMouseEnter={() => setAktiv(s)}
+        onFocus={() => setAktiv(s)}
+        onBlur={() => setAktiv(null)}
+        onClick={() => {
+          setAktiv(s)
+          if (kinder) umschalten(z.id)
+        }}
+      >
+        <span className="balken-name">
+          {kinder && (
+            <span className={`balken-pfeil${offen.has(z.id) ? ' offen' : ''}`} aria-hidden="true">
+              ▸
+            </span>
+          )}
+          {z.name}
+        </span>
+        <Balken segmente={z.segmente} />
+        <span className="balken-wert" aria-hidden="true">
+          {z.wert}
+        </span>
+      </button>
+    )
+  }
+
   return (
     <figure className="diagramm">
       <figcaption>
@@ -66,30 +139,27 @@ function Balkendiagramm({
         <span>{unterzeile}</span>
       </figcaption>
       {legende && <Legende eintraege={legende} />}
+      {klappbar && (
+        <p className="diagramm-steuerung">
+          <button type="button" className="knopf-link" onClick={() => setOffen(new Set(zeilen.map((z) => z.id)))}>
+            Alle aufklappen
+          </button>
+          <button type="button" className="knopf-link" onClick={() => setOffen(new Set())}>
+            Alle zuklappen
+          </button>
+        </p>
+      )}
       <ul className="balken" onMouseLeave={() => setAktiv(null)}>
         {zeilen.map((z) => (
           <li key={z.id}>
-            <button
-              type="button"
-              className={`balken-zeile${aktiv === z.id ? ' aktiv' : ''}`}
-              aria-label={z.detail}
-              onMouseEnter={() => setAktiv(z.id)}
-              onFocus={() => setAktiv(z.id)}
-              onBlur={() => setAktiv(null)}
-              onClick={() => setAktiv(z.id)}
-            >
-              <span className="balken-name">{z.name}</span>
-              <span className="balken-spur" aria-hidden="true">
-                {z.segmente
-                  .filter((s) => s.anteil > 0)
-                  .map((s, i) => (
-                    <span key={i} className={`balken-teil ${s.klasse}`} style={{ flexBasis: `${s.anteil * 100}%` }} />
-                  ))}
-              </span>
-              <span className="balken-wert" aria-hidden="true">
-                {z.wert}
-              </span>
-            </button>
+            {knopf(z)}
+            {z.kinder && offen.has(z.id) && (
+              <ul className="balken balken-unter">
+                {z.kinder.map((k) => (
+                  <li key={k.id}>{knopf(k, z.id)}</li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>
@@ -154,6 +224,59 @@ function Massnahmendiagramm({ themen, testphase }: { themen: ThemaStand[]; testp
           (t.massnahmenEntwurf ? ` (davon ${zahl(t.massnahmenEntwurf)} KI-Entwurf)` : '') +
           '.',
       }))}
+    />
+  )
+}
+
+const kurz = (text: string, max = 60) => (text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text)
+
+function Ursachendiagramm({ themen, testphase }: { themen: ThemaStand[]; testphase: boolean }) {
+  const maxUrsachen = Math.max(1, ...themen.map((t) => t.ursachen))
+  const maxMassnahmen = Math.max(1, ...themen.flatMap((t) => t.ursachenStand.map((u) => u.massnahmen + u.massnahmenEntwurf)))
+  const mitEntwurf = testphase && themen.some((t) => t.massnahmenEntwurf > 0)
+  return (
+    <Balkendiagramm
+      titel="Ursachen je Thema"
+      unterzeile="Belegte Ursachen und ob schon Maßnahmen an ihnen ansetzen; aufklappen zeigt die Maßnahmen je Ursache (alle Parteien zusammen)"
+      legende={[
+        { klasse: 'ur-mit', label: 'Ursache mit Maßnahmen' },
+        { klasse: 'ur-ohne', label: 'noch ohne Maßnahme' },
+        ...(mitEntwurf ? [{ klasse: 'mn-entwurf', label: 'Maßnahmen als KI-Entwurf' }] : []),
+      ]}
+      leer="Tippe auf ein Thema, um seine Ursachen aufzuklappen."
+      zeilen={themen.map((t) => {
+        const mit = t.ursachen - t.ursachenOhneMassnahme
+        return {
+          id: t.id,
+          name: t.name,
+          wert: zahl(t.ursachen),
+          segmente: [
+            { klasse: 'ur-mit', anteil: mit / maxUrsachen },
+            { klasse: 'ur-ohne', anteil: t.ursachenOhneMassnahme / maxUrsachen },
+          ],
+          detail:
+            `${t.name}: ${zahl(t.ursachen)} ${t.ursachen === 1 ? 'Ursache' : 'Ursachen'}` +
+            (t.ursachenOhneMassnahme ? `, davon ${zahl(t.ursachenOhneMassnahme)} noch ohne Maßnahme.` : ', an allen setzen Maßnahmen an.'),
+          kinder: t.ursachenStand.map((u) => {
+            const summe = u.massnahmen + u.massnahmenEntwurf
+            return {
+              id: u.id,
+              name: kurz(u.beschreibung),
+              wert: zahl(summe),
+              segmente: [
+                { klasse: 'mn-geprueft', anteil: u.massnahmen / maxMassnahmen },
+                { klasse: 'mn-entwurf', anteil: u.massnahmenEntwurf / maxMassnahmen },
+              ],
+              detail:
+                `${u.beschreibung} (${u.ebene === 'land' ? 'Länderzuständigkeit' : 'Bund'}): ` +
+                (summe
+                  ? `${zahl(summe)} ${summe === 1 ? 'Maßnahme setzt' : 'Maßnahmen setzen'} hier an` +
+                    (u.massnahmenEntwurf ? ` (davon ${zahl(u.massnahmenEntwurf)} KI-Entwurf).` : '.')
+                  : 'noch keine Maßnahme erfasst.'),
+            }
+          }),
+        }
+      })}
     />
   )
 }
@@ -316,6 +439,9 @@ function Inhalt({ daten }: { daten: Daten }) {
         <>
           <Auswertungsdiagramm themen={themen} parteien={s.parteien} />
           <Massnahmendiagramm themen={themen} testphase={testphase} />
+          <Ursachendiagramm themen={themen} testphase={testphase} />
+          <h2>Zusammenhänge</h2>
+          <Zusammenhaenge daten={daten} />
           <h2>Je Thema und Partei</h2>
           <Tabelle daten={daten} themen={themen} />
         </>

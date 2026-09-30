@@ -1899,6 +1899,174 @@ textarea {
   font-size: 0.8rem;
 }
 
+/* Aufklappbare Balken (Ursachen je Thema) */
+.diagramm-steuerung {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+}
+.knopf-link {
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--akzent-text);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.knopf-link:focus-visible {
+  outline: 2px solid var(--fokus);
+  outline-offset: 2px;
+}
+.balken-pfeil {
+  display: inline-block;
+  width: 1em;
+  color: var(--text-leise);
+  transition: transform 0.15s;
+}
+.balken-pfeil.offen {
+  transform: rotate(90deg);
+}
+.balken-unter {
+  margin: 2px 0 8px 1em;
+  padding-left: 8px;
+  border-left: 2px solid var(--linie);
+}
+.balken-kind .balken-name {
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
+.balken-kind .balken-spur {
+  height: 10px;
+}
+.ur-mit {
+  background: var(--st-massnahmen);
+}
+.ur-ohne {
+  background: var(--st-keine);
+}
+
+/* Zusammenhangsgraph: Themen dunkel, Ursachen blau (Länder hell mit Rand),
+   Maßnahmen klein und hohl, KI-Entwürfe orange. */
+.graph-flaeche {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.graph-kanten line {
+  stroke: var(--linie);
+  stroke-width: 1.2;
+}
+.graph-kanten line.aktiv {
+  stroke: var(--text-leise);
+  stroke-width: 2;
+}
+.graph-knoten {
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.graph-knoten circle {
+  stroke: var(--flaeche);
+  stroke-width: 2;
+}
+.graph-knoten:focus {
+  outline: none;
+}
+.graph-knoten:focus-visible circle,
+.graph-knoten.aktiv circle {
+  stroke: var(--fokus);
+  stroke-width: 3;
+}
+.graph-knoten.gedimmt {
+  opacity: 0.35;
+}
+.g-thema circle {
+  fill: var(--tinte);
+}
+.g-thema.g-auf circle {
+  fill: var(--stimmblau-tief);
+}
+.g-ursache circle {
+  fill: var(--st-massnahmen);
+}
+.g-ursache.g-land circle {
+  fill: var(--st-keine);
+  stroke: var(--st-massnahmen);
+  stroke-width: 1.5;
+}
+.g-ursache.g-auf circle {
+  stroke: var(--tinte);
+  stroke-width: 2.5;
+}
+.g-massnahme circle {
+  fill: var(--flaeche);
+  stroke: var(--st-massnahmen);
+  stroke-width: 1.5;
+}
+.g-massnahme.g-entwurf circle {
+  fill: var(--mn-entwurf);
+  stroke: var(--flaeche);
+}
+.graph-zahl {
+  fill: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.graph-label {
+  fill: var(--text);
+  font-size: 11px;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: var(--flaeche);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.g-thema .graph-label {
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.graph-legende {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.graph-legende.g-thema {
+  background: var(--tinte);
+}
+.graph-legende.g-ursache {
+  background: var(--st-massnahmen);
+}
+.graph-legende.g-ursache.g-land {
+  background: var(--st-keine);
+  box-shadow: inset 0 0 0 1.5px var(--st-massnahmen);
+}
+.graph-legende.g-massnahme {
+  width: 9px;
+  height: 9px;
+  background: var(--flaeche);
+  box-shadow: inset 0 0 0 1.5px var(--st-massnahmen);
+}
+.graph-legende.g-massnahme.g-entwurf {
+  background: var(--mn-entwurf);
+  box-shadow: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .balken-pfeil,
+  .graph-knoten {
+    transition: none;
+  }
+}
+
 /* ---------- Themenhinweis in der Runde ---------- */
 .themen-hinweis {
   margin: 0.5rem 0 0;

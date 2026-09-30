@@ -3,6 +3,7 @@
 // eines Themas, keine Zählungen von Maßnahmen – sonst läse sich die Übersicht
 // wie eine Rangliste, obwohl sie nur zeigt, wie weit die Auswertung ist.
 import type { Daten } from '../data/quelle'
+import type { Ebene } from '../data/types'
 import { findeAbdeckung } from './bewertung'
 
 /** Wie weit das Bundesprogramm einer Partei zu einem Thema ausgewertet ist (wie in der Auflösung). */
@@ -15,10 +16,25 @@ export interface ErfassungJePartei {
   ki_entwurf: boolean
 }
 
+/** Eine Ursache mit der Zahl der Maßnahmen aller Parteien zusammen, die an ihr ansetzen. */
+export interface UrsacheStand {
+  id: number
+  beschreibung: string
+  ebene: Ebene
+  /** Ohne KI-Entwürfe. Eine Maßnahme kann an mehreren Ursachen ansetzen und zählt dann bei jeder. */
+  massnahmen: number
+  /** Nur in der Testphase größer 0. */
+  massnahmenEntwurf: number
+}
+
 export interface ThemaStand {
   id: number
   name: string
   ursachen: number
+  /** Ursachen des Themas in Datenbank-Reihenfolge. */
+  ursachenStand: UrsacheStand[]
+  /** Ursachen, an denen noch keine erfasste Maßnahme ansetzt. */
+  ursachenOhneMassnahme: number
   /** Maßnahmen aus Bundes- und Landesprogrammen, ohne KI-Entwürfe. */
   massnahmen: number
   /** Nur in der Testphase größer 0. */
@@ -53,10 +69,24 @@ export function themenStand(daten: Daten): ThemaStand[] {
     })
     const zaehlung: Record<Erfassung, number> = { massnahmen: 0, keine: 0, offen: 0 }
     for (const p of parteien) zaehlung[p.stand]++
+    const ursachenStand = daten.ursachen
+      .filter((u) => u.thema_id === t.id)
+      .map((u): UrsacheStand => {
+        const dazu = massnahmen.filter((m) => m.ursachen_ids.includes(u.id))
+        return {
+          id: u.id,
+          beschreibung: u.beschreibung,
+          ebene: u.ebene ?? 'bund',
+          massnahmen: dazu.filter((m) => !m.ki_entwurf).length,
+          massnahmenEntwurf: dazu.filter((m) => m.ki_entwurf).length,
+        }
+      })
     return {
       id: t.id,
       name: t.name,
-      ursachen: daten.ursachen.filter((u) => u.thema_id === t.id).length,
+      ursachen: ursachenStand.length,
+      ursachenStand,
+      ursachenOhneMassnahme: ursachenStand.filter((u) => u.massnahmen + u.massnahmenEntwurf === 0).length,
       massnahmen: massnahmen.filter((m) => !m.ki_entwurf).length,
       massnahmenEntwurf: massnahmen.filter((m) => m.ki_entwurf).length,
       parteien,
