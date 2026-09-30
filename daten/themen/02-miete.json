@@ -241,14 +241,11 @@
         },
         {
           "id": 7221,
+          "instrument": 7232,
           "beschreibung": "Kurzzeitvermietung in Ballungsgebieten auf ein Mindestmaß reduzieren",
           "ursachen_ids": [201, 205],
-          "wirksamkeit": 1,
-          "umsetzbarkeit": 2,
-          "begruendung": "Weniger Ferienwohnungen bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.",
           "zitat": "In Ballungsgebieten soll Kurzzeitvermietung auf ein Mindestmaß reduziert werden.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=20",
-          "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -570,10 +567,10 @@
           "id": 2061,
           "instrument": 6642,
           "beschreibung": "Gemeinnützigen und kommunalen Wohnungsbau stärken: zinsvergünstigte Kredite, großes Wohnungsbauprogramm, dauerhafte Sozialbindung",
-          "ursachen_ids": [201, 206],
-          "zitat": "Größere Teile des Wohnungsmarktes müssen wieder den Regeln der Gemeinnützigkeit unterliegen, gemeinnützige und kommunale Wohnungsbauunternehmen sollten zinsvergünstigte Kredite erhalten und ein großes Wohnungsbauprogramm auflegen.",
+          "ursachen_ids": [201, 206, 205],
+          "zitat": "Größere Teile des Wohnungsmarktes müssen wieder den Regeln der Gemeinnützigkeit unterliegen, gemeinnützige und kommunale Wohnungsbauunternehmen sollten zinsvergünstigte Kredite erhalten und ein großes Wohnungsbauprogramm auflegen. […] Mieter müssen vor allem in Ballungsräumen und Universitätsstädten immer mehr für das Wohnen ausgeben. Anstatt das Wohngeld zu erhöhen, das am Ende nur Immobilieneigentümern zugutekommt, sollte der Staat Mieten deckeln und in den Neubau von Mietwohnungen investieren",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
-          "stand": "2026-09-28",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
@@ -610,6 +607,17 @@
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
           "evidenz": "gemischt",
           "stand": "2026-09-28",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7233,
+          "instrument": 7232,
+          "beschreibung": "Umwandlung von Wohnungen in Ferienwohnungen und Leerstand strenger regulieren",
+          "ursachen_ids": [201],
+          "zitat": "In Bund, Ländern und Kommunen befürworten wir Initiativen zur strengeren Regulierung der Umwandlung von Wohnungen in gewerbliche Ferienwohnungen sowie gegen den Leerstand von Wohnraum.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1196,6 +1204,14 @@
       "umsetzbarkeit": 1,
       "begruendung": "Würde den Bestand an Wohnungen für Haushalte mit geringem Einkommen schnell erweitern; ob ein Land das regeln darf, ist fraglich, denn das Mietrecht ist Bundessache (Bundesverfassungsgericht 2021 zum Berliner Mietendeckel).",
       "evidenz": "offen"
+    },
+    {
+      "id": 7232,
+      "name": "Kurzzeitvermietung und Zweckentfremdung begrenzen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.",
+      "evidenz": "gemischt"
     }
   ]
 }
