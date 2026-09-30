@@ -299,11 +299,18 @@ Einordnung ("typ"):
   Dann stelle in "nachfrage" genau eine kurze, freundliche Frage nach dem konkreten Alltagsproblem dahinter,
   z. B. \u201EWas l\xE4uft in deinem Alltag konkret schief?\u201C.
 - "wert": eine pers\xF6nliche Haltung oder ein Wert (z. B. \u201EMir ist Gerechtigkeit wichtig\u201C), kein Problem.
+- Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
+  ist weder Problem noch Wert: Ordne es als "forderung" ein und frage nach dem Alltag dahinter,
+  z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C. Widersprich nicht, belehre nicht,
+  wiederhole das Urteil nicht und \xFCbernimm es nicht in "zusammenfassung" oder "stichwort".
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+- Unterscheide Erlebnis und Gef\xFChl: Schildert jemand vor allem ein Gef\xFChl oder eine Sorge (z. B. \u201EIch f\xFChle mich
+  unsicher, seit \u2026\u201C), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
+  sich Unsicherheit ballt. Ursachen zu Taten oder T\xE4tergruppen nur, wenn die Schilderung sie erkennen l\xE4sst.
 - L\xE4sst sich keine Ursache erkennen: "ursachen_ids": [] und in "nachfrage" genau eine kurze, freundliche Frage,
   woran es im Alltag konkret hakt, z. B. \u201EWas genau macht dir dabei Sorgen?\u201C. Gib keine Antworten vor.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1\u20132 neutrale S\xE4tze zu m\xF6glichen

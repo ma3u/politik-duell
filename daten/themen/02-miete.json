@@ -40,7 +40,7 @@
       "quelle_url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2026/IW-Report_2026-Migration-und-Wohnungsmarkt.pdf",
       "ebene": "bund",
       "schlagwoerter": ["zuwanderung", "zuzug", "zugezogen", "fluechtlinge", "migranten", "zu viele leute", "stadt waechst", "nachfrage"],
-      "nachtraeglich": "2026-09-30: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "nachtraeglich": "2026-09-30: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht. 2026-09-30: Nacherfassung auch für die Angebotsseite (mehr Wohnraum in wachsenden Städten)."
     },
     {
       "id": 206,
@@ -58,28 +58,28 @@
         {
           "id": 2001,
           "beschreibung": "Bauordnungsrecht entschlacken, Gebäudetyp E, befristete Ausnahmen vom Planungsrecht in angespannten Wohnungsmärkten",
-          "ursachen_ids": [201, 203],
+          "ursachen_ids": [201, 203, 205],
           "wirksamkeit": 2,
           "umsetzbarkeit": 2,
           "begruendung": "Senkt Baukosten und beschleunigt Planung; Bauordnungen sind Ländersache, die Wirkung hängt daher auch von den Ländern ab.",
           "zitat": "Mit dem Gebäudetyp E – wie „Einfach“ – schaffen wir die Voraussetzungen für kostengünstigeres, aber sicheres Bauen. Mit einer befristeten Sonderregelung für angespannte Wohnungsmärkte erlauben wir bei Wohnungsbauvorhaben Ausnahmen vom geltenden Planungsrecht.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
           "evidenz": "gemischt",
-          "stand": "2026-09-27",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
         {
           "id": 2002,
           "beschreibung": "Mehr Bauland: Brach- und Konversionsflächen sowie bundeseigene Grundstücke für den Wohnungsbau nutzen",
-          "ursachen_ids": [201],
+          "ursachen_ids": [201, 205],
           "wirksamkeit": 2,
           "umsetzbarkeit": 2,
           "begruendung": "Mehr verfügbare Flächen erleichtern Neubau in Wachstumsregionen; Umfang und Tempo hängen von Kommunen und Ländern ab.",
-          "zitat": "Bundeseigene Grundstücke der Bundesanstalt für Immobilienaufgaben sollen für den Wohnungsbau genutzt werden.",
+          "zitat": "Für mehr Neubau braucht es auch mehr Bauland – gerade in den Metropolen und Wachstumsregionen. Notwendig ist ein Mix aus (Innen-)Verdichtung, Neubaugebieten und Aufstockung von Wohn- und Geschäftsgebäuden. […] Bundeseigene Grundstücke der Bundesanstalt für Immobilienaufgaben sollen für den Wohnungsbau genutzt werden.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
           "evidenz": "gemischt",
-          "stand": "2026-09-27",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
@@ -130,6 +130,20 @@
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
           "evidenz": "offen",
           "stand": "2026-09-27",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7222,
+          "beschreibung": "Ballungsräume entlasten: Verkehrswege und Nahverkehr ins Umland bedarfsgerecht ausbauen",
+          "ursachen_ids": [205],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Bessere Verbindungen machen das Umland als Wohnort attraktiver und können die Nachfrage in den Großstädten dämpfen; wie stark, ist kaum untersucht, und der Ausbau dauert Jahre.",
+          "zitat": "Wir können Ballungsräume entlasten, wenn wir die Verkehrswege und den Nahverkehr bedarfsgerecht ausbauen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=77",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -224,6 +238,20 @@
           "stand": "2026-09-27",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7221,
+          "beschreibung": "Kurzzeitvermietung in Ballungsgebieten auf ein Mindestmaß reduzieren",
+          "ursachen_ids": [201, 205],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Weniger Ferienwohnungen bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.",
+          "zitat": "In Ballungsgebieten soll Kurzzeitvermietung auf ein Mindestmaß reduziert werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=20",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -268,14 +296,14 @@
         {
           "id": 2023,
           "beschreibung": "Mehr Wohnraum im Bestand: Aufstockung, Umwandlung von Büros, Dachausbau; Baurecht vereinfachen, Verfahren digitalisieren, Standards zurückführen",
-          "ursachen_ids": [201, 203],
+          "ursachen_ids": [201, 203, 205],
           "wirksamkeit": 2,
           "umsetzbarkeit": 2,
           "begruendung": "Nutzt vorhandene Gebäude und senkt Kosten durch einfachere Regeln; wie viele Wohnungen so entstehen, ist unsicher.",
           "zitat": "Dazu werden wir das Baurecht vereinfachen, Verfahren digitalisieren und bundesweit angleichen – davon profitieren alle Formen des Bauens. Übertriebene Anforderungen an bauliche Standards werden wir auf ein sinnvolles Maß zurückführen.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=71",
           "evidenz": "gemischt",
-          "stand": "2026-09-27",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
@@ -387,14 +415,14 @@
         {
           "id": 2042,
           "beschreibung": "Mehr Wohngeld und zusätzliches kommunales Wohngeld statt sozialem Wohnungsbau",
-          "ursachen_ids": [202],
+          "ursachen_ids": [202, 206],
           "wirksamkeit": 1,
           "umsetzbarkeit": 2,
           "begruendung": "Entlastet Haushalte mit geringem Einkommen direkt; schafft keine zusätzlichen Wohnungen, der Verzicht auf sozialen Wohnungsbau verringert das Angebot günstiger Wohnungen.",
           "zitat": "Es ist besser, einkommensschwache Mieter vermehrt mit Wohngeld zu unterstützen, wodurch eine soziale Durchmischung gewährleistet wird.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=38",
           "evidenz": "belegt",
-          "stand": "2026-09-27",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
@@ -466,14 +494,14 @@
         {
           "id": 2053,
           "beschreibung": "20 Milliarden Euro im Jahr für gemeinnützigen Wohnungsbau, Sozialbindung dauerhaft, Investitionen von der Schuldenbremse ausnehmen",
-          "ursachen_ids": [201, 206],
+          "ursachen_ids": [201, 206, 205],
           "wirksamkeit": 2,
           "umsetzbarkeit": 1,
           "begruendung": "Würde das Angebot dauerhaft günstiger Wohnungen deutlich erhöhen; die Ausnahme von der Schuldenbremse erfordert eine Verfassungsänderung.",
-          "zitat": "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen Wohnraum investieren",
+          "zitat": "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen Wohnraum investieren […] Auch wenn Neubau allein die Miete nicht senkt, gibt es in den Metropolen einen Bedarf an mehr Wohnraum",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
           "evidenz": "belegt",
-          "stand": "2026-09-28",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
@@ -516,6 +544,20 @@
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
           "evidenz": "offen",
           "stand": "2026-09-28",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7223,
+          "beschreibung": "Wohngeld-Antrag stark vereinfachen, Anträge binnen drei Monaten bescheiden",
+          "ursachen_ids": [202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Entlastet Haushalte mit geringem Einkommen direkt, wenn mehr Berechtigte das Wohngeld tatsächlich erhalten; zusätzliche Wohnungen entstehen dadurch nicht.",
+          "zitat": "Wir wollen das Verfahren daher stark vereinfachen und von unnötigen Kriterien befreien. Anträge müssen spätestens drei Monate nach Antragstellung beschieden werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=8",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }

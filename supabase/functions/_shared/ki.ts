@@ -57,11 +57,18 @@ Einordnung ("typ"):
   Dann stelle in "nachfrage" genau eine kurze, freundliche Frage nach dem konkreten Alltagsproblem dahinter,
   z. B. „Was läuft in deinem Alltag konkret schief?“.
 - "wert": eine persönliche Haltung oder ein Wert (z. B. „Mir ist Gerechtigkeit wichtig“), kein Problem.
+- Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)
+  ist weder Problem noch Wert: Ordne es als "forderung" ein und frage nach dem Alltag dahinter,
+  z. B. „Was hast du selbst erlebt, oder wo fühlst du dich unsicher?“. Widersprich nicht, belehre nicht,
+  wiederhole das Urteil nicht und übernimm es nicht in "zusammenfassung" oder "stichwort".
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema gehört – jede zugeordnete Ursache zählt in der Wertung.
+- Unterscheide Erlebnis und Gefühl: Schildert jemand vor allem ein Gefühl oder eine Sorge (z. B. „Ich fühle mich
+  unsicher, seit …“), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
+  sich Unsicherheit ballt. Ursachen zu Taten oder Tätergruppen nur, wenn die Schilderung sie erkennen lässt.
 - Lässt sich keine Ursache erkennen: "ursachen_ids": [] und in "nachfrage" genau eine kurze, freundliche Frage,
   woran es im Alltag konkret hakt, z. B. „Was genau macht dir dabei Sorgen?“. Gib keine Antworten vor.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1–2 neutrale Sätze zu möglichen
