@@ -17,6 +17,8 @@ import {
 export const MAX_NACHFRAGEN = 2
 export const MAX_NACHRICHTEN = 2 * MAX_NACHFRAGEN + 1
 export const MAX_TEXTLAENGE = 500
+/** Nachfrage, wenn das Thema klar ist, aber keine Ursache erkennbar. */
+export const NACHFRAGE_URSACHE = 'Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.'
 
 const ROLLEN_TEXT: Record<Rolle, string> = {
   mieter: 'Mieter:in',
@@ -58,7 +60,10 @@ Einordnung ("typ"):
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
-- "ursachen_ids": IDs der Ursachen dieses Themas, die zum geschilderten Problem passen. Wenn unklar: alle Ursachen des Themas.
+- "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
+  Nimm keine Ursache dazu, nur weil sie zum Thema gehört – jede zugeordnete Ursache zählt in der Wertung.
+- Lässt sich keine Ursache erkennen: "ursachen_ids": [] und in "nachfrage" genau eine kurze, freundliche Frage,
+  woran es im Alltag konkret hakt, z. B. „Was genau macht dir dabei Sorgen?“. Gib keine Antworten vor.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1–2 neutrale Sätze zu möglichen
   Ursachen des Problems – ohne Parteien, ohne Lösungsbewertung, ohne Links.
 
@@ -79,7 +84,8 @@ export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
   const hinweis =
     `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : 'keine Angabe'}.` +
     (nachfragen >= MAX_NACHFRAGEN
-      ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt als "problem" oder "wert" ein, nicht als "forderung".'
+      ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt als "problem" oder "wert" ein, nicht als "forderung",' +
+        ' und stelle keine Nachfrage mehr. Wähle nur Ursachen, die sich aus dem Gesagten erkennen lassen.'
       : '')
   return [
     { role: 'system' as const, content: hinweis },
@@ -211,11 +217,25 @@ export function bereinigeAntwort(
 
   const erlaubt = ursachen.filter((u) => u.thema_id === thema.id).map((u) => u.id)
   const genannt = Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number).filter((id) => erlaubt.includes(id)) : []
+  if (genannt.length === 0) {
+    // Keine Ursache erkennbar: nicht einfach alle Ursachen werten – sonst gewänne, wer zum
+    // Thema die meisten Maßnahmen hat, nicht wer das geschilderte Problem am besten löst.
+    // Also nachfragen; ist das nicht mehr möglich, bleibt die Runde ohne Wertung.
+    return {
+      typ,
+      nachfrage: nachfragen < MAX_NACHFRAGEN ? nachfrage || NACHFRAGE_URSACHE : null,
+      thema_id: null,
+      ursachen_ids: [],
+      zusammenfassung,
+      stichwort,
+      einschaetzung: null,
+    }
+  }
   return {
     typ,
     nachfrage: null,
     thema_id: thema.id,
-    ursachen_ids: genannt.length > 0 ? [...new Set(genannt)] : erlaubt,
+    ursachen_ids: [...new Set(genannt)],
     zusammenfassung,
     stichwort,
     einschaetzung: null,

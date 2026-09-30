@@ -1,4 +1,4 @@
-import { MAX_NACHFRAGEN } from '../../supabase/functions/_shared/ki.ts'
+import { MAX_NACHFRAGEN, NACHFRAGE_URSACHE } from '../../supabase/functions/_shared/ki.ts'
 import type { AnalyseAntwort, Nachricht, Thema, Ursache } from '../data/types'
 
 // Mock der Edge Function `analyse`. Liefert dasselbe JSON-Format wie später
@@ -54,9 +54,8 @@ function erkenneThema(text: string, themen: Thema[]): Thema | null {
 
 function erkenneUrsachen(text: string, thema: Thema, ursachen: Ursache[]): number[] {
   const kandidaten = ursachen.filter((u) => u.thema_id === thema.id)
-  const passend = kandidaten.filter((u) => treffer(text, u.schlagwoerter) > 0)
-  // Ohne konkreten Hinweis zählen alle bekannten Ursachen des Themas.
-  return (passend.length > 0 ? passend : kandidaten).map((u) => u.id)
+  // Nur Ursachen mit konkretem Hinweis – nicht alle des Themas (siehe bereinigeAntwort).
+  return kandidaten.filter((u) => treffer(text, u.schlagwoerter) > 0).map((u) => u.id)
 }
 
 function kuerze(text: string, max = 90): string {
@@ -85,12 +84,24 @@ export function analysiere(verlauf: Nachricht[], themen: Thema[], ursachen: Ursa
   }
 
   if (thema) {
+    const ursachenIds = erkenneUrsachen(gesamt, thema, ursachen)
+    if (ursachenIds.length > 0) {
+      return {
+        typ: 'problem',
+        nachfrage: null,
+        thema_id: thema.id,
+        ursachen_ids: ursachenIds,
+        zusammenfassung: kuerze(spielerTexte.at(-1) ?? ''),
+      }
+    }
+    // Thema klar, Ursache nicht: nachfragen; danach ohne Wertung.
     return {
       typ: 'problem',
-      nachfrage: null,
-      thema_id: thema.id,
-      ursachen_ids: erkenneUrsachen(gesamt, thema, ursachen),
+      nachfrage: bisherigeNachfragen < MAX_NACHFRAGEN ? NACHFRAGE_URSACHE : null,
+      thema_id: null,
+      ursachen_ids: [],
       zusammenfassung: kuerze(spielerTexte.at(-1) ?? ''),
+      einschaetzung: null,
     }
   }
 

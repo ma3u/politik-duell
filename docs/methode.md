@@ -91,7 +91,7 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 ### Punkte in der Runde
 
 1. Pro Ursache zählt die beste Maßnahme einer Partei. Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr Einzelforderungen aufschreibt, nicht wer besser ansetzt. Wer mehrere Ursachen angeht, wird über die Summe belohnt.
-2. Die Rundenpunkte sind die Summe über alle Ursachen, denen das Problem zugeordnet wurde.
+2. Die Rundenpunkte sind die Summe über alle Ursachen, denen das Problem zugeordnet wurde. Zugeordnet werden nur Ursachen, die sich aus der Schilderung erkennen lassen – nicht vorsorglich alle Ursachen des Themas, sonst gewänne bei vagen Problemen, wer zum Thema die meisten Maßnahmen hat. Ist keine Ursache erkennbar, fragt das Spiel nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); bleibt es unklar, wird die Runde nicht gewertet.
 3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.
 4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte.
 
