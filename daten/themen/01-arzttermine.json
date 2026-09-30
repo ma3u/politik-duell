@@ -67,6 +67,14 @@
       "umsetzbarkeit": 1,
       "begruendung": "Nimmt Praxen den finanziellen Anreiz, Privatversicherte bei Terminen vorzuziehen; ob die Wartezeiten insgesamt sinken, hängt von der Höhe der neuen Vergütung ab. Der Umbau der privaten Krankenversicherung ist rechtlich und praktisch sehr aufwendig.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 6824,
+      "name": "Mehr Studienplätze in der Medizin",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Absolventinnen und Absolventen setzen am Nachwuchsmangel an, wirken aber erst nach etwa zwölf Jahren Studium und Weiterbildung; ob sie Hausärzte auf dem Land werden, ist offen. Studienplätze finanzieren die Länder, der Bund kann nur mitfinanzieren.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -286,14 +294,11 @@
         },
         {
           "id": 6698,
+          "instrument": 6824,
           "beschreibung": "Mehr Studienplätze in Human- und Zahnmedizin",
           "ursachen_ids": [101],
-          "wirksamkeit": 2,
-          "umsetzbarkeit": 2,
-          "begruendung": "Mehr Absolventinnen und Absolventen setzen am Nachwuchsmangel an, wirken aber erst nach etwa zwölf Jahren Studium und Weiterbildung; ob sie Hausärzte auf dem Land werden, ist offen. Studienplätze finanzieren die Länder, der Bund kann nur mitfinanzieren.",
           "zitat": "Wir fordern eine Ausweitung des Angebots an Studienplätzen in Zahn- und Humanmedizin.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=34",
-          "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -346,6 +351,47 @@
           "ursachen_ids": [103],
           "zitat": "Privatversicherte werden in die gesetzliche Krankenversicherung übernommen",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6825,
+          "instrument": 6681,
+          "beschreibung": "Bürgerversicherung statt Zwei-Klassen-Medizin",
+          "ursachen_ids": [103],
+          "zitat": "Wir fordern die Abschaffung der Zusatzbeiträge und die Einführung einer Bürgerversicherung, in die alle Bürger nach ihrem Einkommen einzahlen und grundsätzlich gleiche Leistungen auf dem Niveau der höchsten medizinischen Standards erhalten.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6826,
+          "beschreibung": "Hausärzte höher vergüten",
+          "ursachen_ids": [101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Macht die Niederlassung als Hausarzt attraktiver; ob das allein genug Nachwuchs bringt, ist offen, denn viele junge Ärztinnen und Ärzte wünschen sich vor allem Anstellung und Teilzeit. Die Mehrkosten tragen die Beitragszahlenden.",
+          "zitat": "Besonders Hausärzte als Ansprechpartner der Patienten müssen höher vergütet werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6827,
+          "instrument": 6824,
+          "beschreibung": "Mehr Medizinstudienplätze",
+          "ursachen_ids": [101],
+          "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true

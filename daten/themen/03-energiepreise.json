@@ -97,6 +97,14 @@
       "umsetzbarkeit": 3,
       "begruendung": "Haushalte, die Strom in günstigen Stunden nutzen können, sparen; für viele Haushalte ohne Wärmepumpe, E-Auto oder Batterie ist die Ersparnis gering.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 6828,
+      "name": "Wieder Gas aus Russland über Nord Stream beziehen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 0,
+      "begruendung": "Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -432,14 +440,11 @@
         },
         {
           "id": 6732,
+          "instrument": 6828,
           "beschreibung": "Nord-Stream-Pipelines reparieren und wieder in Betrieb nehmen",
           "ursachen_ids": [303],
-          "wirksamkeit": 1,
-          "umsetzbarkeit": 0,
-          "begruendung": "Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.",
           "zitat": "Reparatur und Wiederinbetriebnahme der Nord-Stream-Pipelines",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
-          "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -530,6 +535,111 @@
           "begruendung": "Ermöglicht auch Eigentümern mit wenig Geld den Umstieg von Gas und Öl und koppelt die Heizkosten von fossilen Preisen ab; das Programm soll 25 Milliarden Euro im Jahr kosten, die Finanzierung ist offen.",
           "zitat": "Beim Heizungstausch wollen wir die Förderung für Zusatzkosten nach Einkommen staffeln: Menschen mit niedrigem Einkommen bekommen den Heizungstausch mit bis zu 100 Prozent bezahlt",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6829,
+          "instrument": 6703,
+          "beschreibung": "Netze aus öffentlichen Mitteln statt über den Strompreis finanzieren",
+          "ursachen_ids": [301],
+          "zitat": "Die Instandhaltung und der Ausbau der Energienetze sind öffentliche Aufgaben und müssen aus öffentlichen Mitteln und nicht über die Strompreise finanziert werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6830,
+          "beschreibung": "Stromnetze verstaatlichen und Netzentgelte auf ein Minimum senken",
+          "ursachen_ids": [301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ohne Renditen für private Netzbetreiber könnten die Netzentgelte etwas sinken; der Kauf der Netze würde viele Milliarden kosten, und der Ausbau bliebe trotzdem zu bezahlen.",
+          "zitat": "Statt privaten Netzbetreibern Traumrenditen zu sichern, wollen wir die Netze verstaatlichen und die Netzentgelte auf ein Minimum reduzieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6831,
+          "instrument": 6706,
+          "beschreibung": "CO₂-Preis abschaffen",
+          "ursachen_ids": [302],
+          "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6832,
+          "instrument": 6828,
+          "beschreibung": "Mit Russland über Gaslieferungen durch Nord Stream verhandeln",
+          "ursachen_ids": [303],
+          "zitat": "Die Bundesregierung sollte mit Russland verhandeln, um über den verbliebenen Strang der Nord-Stream-Pipeline wieder günstiges Erdgas zu beziehen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6833,
+          "beschreibung": "Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis",
+          "ursachen_ids": [303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Langfristige Verträge können Preisschwankungen dämpfen; sie binden aber auch an Preise, wenn der Markt fällt, und ein Kriterium nur nach dem Preis erhöht die Abhängigkeit von einzelnen Lieferländern.",
+          "zitat": "Wir brauchen wieder langfristige Verträge zu Energieimporten, die sich am Kriterium des niedrigsten Preises orientieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6834,
+          "beschreibung": "Neue Gaskraftwerke als Reserve für Dunkelflauten",
+          "ursachen_ids": [304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Mehr Reservekraftwerke können Preisspitzen in wind- und sonnenarmen Stunden dämpfen; sie senken den Durchschnittspreis kaum, weil gerade Gaskraftwerke den Preis dann setzen, und müssen über Umlagen oder Steuern bezahlt werden.",
+          "zitat": "Statt an dunklen windarmen Tagen die Wirtschaft mit Extrempreisen zu belasten und bei Wind und Sonne Steuergeld zu verbrennen, muss in neue Gaskraftwerke als Reservekapazität sowie in die Netze investiert werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6835,
+          "instrument": 6707,
+          "beschreibung": "Repowering: alte Windanlagen durch neue ersetzen",
+          "ursachen_ids": [304],
+          "zitat": "Im Bereich der Erneuerbaren Energien fordern wir ein „Repowering“-Programm.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6836,
+          "beschreibung": "Einbau von Wärmepumpen fördern, ohne andere Heizungen zu benachteiligen",
+          "ursachen_ids": [305],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Förderung erleichtert den Umstieg von Gas und Öl; ohne Vorgaben für neue Heizungen bleiben viele Haushalte bei fossilen Heizungen und damit von deren Preisen abhängig.",
+          "zitat": "Den Einbau von Wärmepumpen wollen wir fördern, ohne den Betrieb anderer Technologien zu diskriminieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,

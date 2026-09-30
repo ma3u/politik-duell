@@ -1,9 +1,9 @@
 {
   "id": 8,
   "name": "Bus und Bahn",
-  "beschreibung": "Seltene Verbindungen, Ausfälle und Verspätungen.",
-  "ziel": "Menschen kommen mit Bus und Bahn zuverlässig und in vertretbarer Zeit ans Ziel, auch auf dem Land.",
-  "schlagwoerter": ["bus", "bahn", "im zug", "mit dem zug", "regionalzug", "zuege", "oepnv", "nahverkehr", "haltestelle", "verspaetung", "ausfall", "anschluss", "tram", "s-bahn", "deutschlandticket", "pendeln"],
+  "beschreibung": "Seltene Verbindungen, Ausfälle, Verspätungen und teure Tickets.",
+  "ziel": "Menschen kommen mit Bus und Bahn zuverlässig, in vertretbarer Zeit und zu bezahlbaren Preisen ans Ziel, auch auf dem Land.",
+  "schlagwoerter": ["bus", "bahn", "im zug", "mit dem zug", "regionalzug", "zuege", "oepnv", "nahverkehr", "haltestelle", "verspaetung", "ausfall", "anschluss", "tram", "s-bahn", "deutschlandticket", "pendeln", "ticket", "fahrkarte", "teuer", "preis"],
   "ursachen": [
     {
       "id": 801,
@@ -25,6 +25,14 @@
       "quelle_url": "https://www.kofa.de/daten-und-fakten/studien/fachkraeftereport-juni-2025/",
       "ebene": "land",
       "schlagwoerter": ["personal", "fahrer", "busfahrer", "lokfuehrer", "personalmangel", "gestrichen", "faellt aus"]
+    },
+    {
+      "id": 804,
+      "beschreibung": "Tickets werden teurer: Das Deutschlandticket kostet seit Januar 2026 63 Euro im Monat; den Preis legen die Länder fest, Bund und Länder zahlen je 1,5 Milliarden Euro im Jahr zu",
+      "quelle_url": "https://www.bundesregierung.de/breg-de/aktuelles/deutschlandticket-2134074",
+      "ebene": "land",
+      "schlagwoerter": ["ticket", "deutschlandticket", "fahrkarte", "fahrpreis", "teuer", "preis", "sozialticket", "schuelerticket", "azubiticket", "kostenlos", "63 euro", "leisten"],
+      "nachtraeglich": "2026-09-30: auf Wunsch der Betreiberin ergänzt, nachdem das Ziel des Themas um die Bezahlbarkeit erweitert wurde; alle Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
     }
   ],
   "instrumente": [
@@ -147,6 +155,46 @@
       "umsetzbarkeit": 3,
       "begruendung": "Schnellere Qualifizierung, Anerkennung ausländischer Abschlüsse und eigene Ausbildung setzen direkt am Mangel an; ohne bessere Bedingungen verlassen viele den Beruf wieder.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 6837,
+      "name": "Deutschlandticket günstiger machen (Bund gemeinsam mit den Ländern)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein niedrigerer Preis entlastet alle Fahrgäste direkt; das Neun-Euro-Ticket und die Einführung des Deutschlandtickets haben die Nutzung deutlich erhöht. Jeder Euro weniger kostet Bund und Länder Hunderte Millionen im Jahr, den Preis legen die Länder fest.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6838,
+      "name": "Vergünstigtes Deutschlandticket für bestimmte Gruppen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet Gruppen mit wenig Geld wie Auszubildende, Studierende oder Menschen mit geringem Einkommen gezielt; für alle anderen ändert sich nichts. Der Bund kann es nur gemeinsam mit den Ländern einführen und mitfinanzieren.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6839,
+      "name": "Deutschlandticket mit Landesmitteln erhalten",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert den bundesweit einheitlichen Preis, verhindert aber weitere Preiserhöhungen nicht; das Land zahlt seinen Anteil schon heute.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6840,
+      "name": "Vergünstigte Tickets für bestimmte Gruppen (Sozial-, Senioren-, Azubi-, Schülerticket)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet die Gruppen spürbar, für die der Preis am ehesten eine Hürde ist; das Land muss die Rabatte dauerhaft bezahlen, und für alle anderen bleibt der Preis gleich.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6841,
+      "name": "Kostenloser Nahverkehr für junge Menschen (Schüler, Auszubildende, unter 21 oder 27 Jahren)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Nimmt jungen Menschen die Kosten ganz ab; kostenlose Schülertickets gibt es in mehreren Ländern bereits. Das Land muss die Einnahmeausfälle dauerhaft ausgleichen.",
+      "evidenz": "belegt"
     }
   ],
   "abdeckung": [
@@ -245,6 +293,31 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6846,
+          "beschreibung": "Preis des Deutschlandtickets dauerhaft auf aktuellem Niveau halten, mit den Ländern auskömmlich finanzieren",
+          "ursachen_ids": [804],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Verhindert weitere Preiserhöhungen, senkt den Preis aber nicht; die steigenden Kosten der Verkehrsbetriebe müssen Bund und Länder dann ausgleichen, und den Preis legen die Länder fest.",
+          "zitat": "Der günstige Preis und die einfache Nutzung sind das Erfolgsrezept des Tickets – wir wollen, dass der Preis dauerhaft auf aktuellem Niveau bleibt.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "evidenz": "belegt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6847,
+          "instrument": 6838,
+          "beschreibung": "Bundeseinheitlich vergünstigtes Deutschlandticket für soziale Gruppen",
+          "ursachen_ids": [804],
+          "zitat": "Außerdem setzen wir uns für ein bundeseinheitlich vergünstigtes Deutschlandticket zu einem reduzierten Preis für bestimmte soziale Gruppen wie Seniorinnen und Senioren, Familien mit Kindern, Auszubildende, Studierende, Schülerinnen und Schüler oder Menschen mit Behinderung ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -313,6 +386,28 @@
           "ursachen_ids": [803],
           "zitat": "Wir wollen dafür sorgen, dass die Arbeitsbedingungen der Beschäftigten im Nah- und Fernverkehr verbessert werden.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=50",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6848,
+          "instrument": 6837,
+          "beschreibung": "Deutschlandticket für 49 Euro",
+          "ursachen_ids": [804],
+          "zitat": "Unser Ziel ist, gemeinsam mit den Ländern einen Ticketpreis von 49 Euro sicherzustellen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=49",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6849,
+          "instrument": 6838,
+          "beschreibung": "Azubi-Deutschland-Ticket",
+          "ursachen_ids": [804],
+          "zitat": "eine Lösung für ein Azubi-Deutschland-Ticket finden",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -458,6 +553,86 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6850,
+          "beschreibung": "9-Euro-Ticket sofort wieder einführen",
+          "ursachen_ids": [804],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 1,
+          "begruendung": "Senkt den Preis für alle drastisch und hat 2022 die Nutzung stark erhöht; kostet Bund und Länder zusätzlich viele Milliarden Euro im Jahr, und die Finanzierung ist offen.",
+          "zitat": "Wir wollen das 9-Euro-Ticket sofort wieder einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
+          "evidenz": "belegt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6851,
+          "beschreibung": "Mehrwertsteuer im Nah- und Fernverkehr abschaffen",
+          "ursachen_ids": [804],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Könnte Fahrpreise um bis zu 7 Prozent senken, wenn die Ersparnis weitergegeben wird; das EU-Mehrwertsteuerrecht erlaubt eine vollständige Befreiung für den Personenverkehr nicht ohne Weiteres.",
+          "zitat": "Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6842,
+          "instrument": 6837,
+          "beschreibung": "Niedrigere Preise bei Bus und Bahn, Deutschlandticket dauerhaft zu bezahlbarem Preis",
+          "ursachen_ids": [804],
+          "zitat": "Wir setzen uns für niedrigere Preise bei Bus und Bahn und für den dauerhaften Erhalt des Deutschland-Tickets zum bezahlbaren Preis ein.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6843,
+          "instrument": 6744,
+          "beschreibung": "Verfallende Infrastruktur instand setzen, großes Investitionsprogramm",
+          "ursachen_ids": [802],
+          "zitat": "Wo die Infrastruktur verfällt, wollen wir sie wieder in Stand setzen",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6844,
+          "instrument": 6745,
+          "beschreibung": "Bahn mit Netz und Zügen wieder als „Deutsche Bundesbahn“ führen",
+          "ursachen_ids": [802],
+          "zitat": "Die Bahn muss wieder – Schienennetz und Züge – zu einer zuverlässigen und erfolgreichen „Deutschen Bundesbahn“ gemacht werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6845,
+          "beschreibung": "Integriertes, getaktetes Bahn- und ÖPNV-Konzept nach Schweizer Vorbild",
+          "ursachen_ids": [801],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ein abgestimmter Taktfahrplan mit verlässlichen Anschlüssen hat in der Schweiz das Angebot auch in der Fläche deutlich verbessert; in Deutschland setzt er Netzausbau und Absprachen mit allen Ländern voraus und dauert Jahre.",
+          "zitat": "Wir fordern ein integriertes und getaktetes Bahn- und ÖPNV-Konzept nach Schweizer Vorbild.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=30",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -484,6 +659,17 @@
           "ursachen_ids": [801],
           "zitat": "Hierbei setzen wir auch auf innovative Konzepte, wie autonomes Fahren und Ruf-Verkehre, Bürgerbusse",
           "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=63",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6852,
+          "instrument": 6839,
+          "beschreibung": "Deutschlandticket erhalten, Nutzen für den ländlichen Raum stärken",
+          "ursachen_ids": [804],
+          "zitat": "Das Deutschlandticket wollen wir erhalten, allerdings müssen zukünftig vor allem die Bürgerinnen und Bürger im ländlichen Raum stärker als bisher davon profitieren können.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=62",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -527,6 +713,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6853,
+          "instrument": 6839,
+          "beschreibung": "Deutschlandticket langfristig bezahlbar absichern",
+          "ursachen_ids": [804],
+          "zitat": "Das Deutschlandticket wird langfristig bezahlbar und verlässlich abgesichert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6854,
+          "instrument": 6840,
+          "beschreibung": "Deutschlandticket für Senioren mit rund 20 Euro im Monat fördern",
+          "ursachen_ids": [804],
+          "zitat": "wird das Land Sachsen-Anhalt das Abonnement des Deutschlandtickets für Senioren mit ca. 20 Euro/Monat fördern.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -541,6 +749,17 @@
           "beschreibung": "Busverkehr so ausbauen, dass jedes Dorf mindestens stündlich erreicht wird",
           "ursachen_ids": [801],
           "zitat": "Der Busverkehr muss flächendeckend in Sachsen-Anhalt ausgebaut werden, um alle Dörfer mindestens einmal pro Stunde zuverlässig zu erreichen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6855,
+          "instrument": 6840,
+          "beschreibung": "Vergünstigte Deutschlandtickets für Auszubildende, Freiwillige und Menschen mit geringem Einkommen",
+          "ursachen_ids": [804],
+          "zitat": "Zudem setzen wir uns für vergünstigte Deutschlandtickets für Auszubildende, Freiwilligendienstleistende und Menschen mit geringen Einkommen ein.",
           "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=29",
           "stand": "2026-09-30",
           "geprueft": false,
@@ -588,6 +807,17 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6856,
+          "instrument": 6839,
+          "beschreibung": "Deutschlandticket bleibt Teil des Angebots",
+          "ursachen_ids": [804],
+          "zitat": "Das Deutschlandticket bleibt Teil des Angebots, darf jedoch nicht zu Lasten von Qualität und Stabilität der Verkehre gehen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=67",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -617,6 +847,17 @@
           "ursachen_ids": [801],
           "zitat": "Die Heidebahn zwischen der Lutherstadt Wittenberg und Eilenburg muss länderübergreifend (Sachsen-Anhalt und Sachsen) in den öffentlichen Personen-Nahverkehr übernommen und regelmäßig befahren werden.",
           "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=200",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6857,
+          "instrument": 6841,
+          "beschreibung": "Deutschlandticket für alle Schüler",
+          "ursachen_ids": [804],
+          "zitat": "Wir werden als Landesregierung dafür sorgen, dass alle Schüler das Deutschlandticket erhalten und dazu den Kreisen finanzielle Zuschüsse gewähren, wenn sie die Finanzierung nicht aus eigenen Mitteln bewältigen können.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=201",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -660,6 +901,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6858,
+          "instrument": 6840,
+          "beschreibung": "Senioren-Tickets und ermäßigte Tarife für Ältere",
+          "ursachen_ids": [804],
+          "zitat": "Einführung von „Senioren-Tickets“ oder ermäßigten Tarifen für ältere Menschen,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=58",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6859,
+          "instrument": 6841,
+          "beschreibung": "Günstiges Jugendticket bis hin zum Nulltarif",
+          "ursachen_ids": [804],
+          "zitat": "Bezahlbarkeit garantieren – dauerhaft günstige Jugendmobilität bis hin zum Jugendticket bzw. Nulltarif als Ziel,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=64",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -675,6 +938,28 @@
           "ursachen_ids": [801],
           "zitat": "Ziel ist es, Wege kurz zu halten und Taktungen zu verbessern.",
           "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6860,
+          "instrument": 6841,
+          "beschreibung": "Kostenloser Nahverkehr für Schulkinder und Auszubildende",
+          "ursachen_ids": [804],
+          "zitat": "Für Schulkinder und Auszubildende fordern wir einen kostenfreien Zugang zum Nahverkehr – unabhängig vom Wohnort und ohne bürokratische Hürden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6861,
+          "instrument": 6840,
+          "beschreibung": "Bezahlbare Sozialtickets für Menschen mit geringem Einkommen",
+          "ursachen_ids": [804],
+          "zitat": "Ergänzend braucht es bezahlbare Sozialtickets für Menschen mit geringem Einkommen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=33",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -696,6 +981,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6862,
+          "instrument": 6840,
+          "beschreibung": "Vergünstigtes Deutschlandticket für junge Menschen bis 27 Jahre",
+          "ursachen_ids": [804],
+          "zitat": "Gleichzeitig wollen wir ein vergünstigtes Deutschlandticket für junge Menschen bis … 27 Jahren nach dem Vorbild des Seniorentickets umsetzen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=124",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6863,
+          "instrument": 6841,
+          "beschreibung": "Gratis-Ticket für Auszubildende (wahlweise Führerscheinzuschuss)",
+          "ursachen_ids": [804],
+          "zitat": "Für Auszubildende schaffen wir die Wahlmöglichkeit, entweder ein Gratis-Ticket für",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=124",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -711,6 +1018,28 @@
           "ursachen_ids": [801],
           "zitat": "Die Erfolge des Rufbusses sollen evaluiert und das System landesweit harmonisiert und über Kreisgrenzen hinweg und in Landkreisen kreisweit in Gänze nutzbar werden.",
           "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=25",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6864,
+          "instrument": 6839,
+          "beschreibung": "Deutschlandticket weiter mit Landesmitteln unterstützen",
+          "ursachen_ids": [804],
+          "zitat": "Das Deutschlandticket werden wir weiterhin gezielt unterstützen und uns nachdrücklich im Bund für dessen Fortbestand einsetzen",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6865,
+          "instrument": 6840,
+          "beschreibung": "MV-Jugendticket für Schüler und Auszubildende nach Art des Azubitickets",
+          "ursachen_ids": [804],
+          "zitat": "wie wir nach Art des Azubitickets im nächsten Schritt ein MV - Jugendticket sowohl für Schülerinnen und Schüler als auch Azubis anbieten können",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=5",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -743,6 +1072,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6866,
+          "instrument": 6841,
+          "beschreibung": "Deutschlandticket für alle unter 27 kostenfrei",
+          "ursachen_ids": [804],
+          "zitat": "das Deutschlandticket für alle unter 27 kostenfrei machen",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6867,
+          "instrument": 6840,
+          "beschreibung": "Deutschlandticket für Menschen mit geringem Einkommen deutlich vergünstigen",
+          "ursachen_ids": [804],
+          "zitat": "das Deutschlandticket für Menschen mit geringem Einkommen deutlich vergünstigen",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -761,6 +1112,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6868,
+          "instrument": 6839,
+          "beschreibung": "Deutschlandticket mit Landeszuschüssen erhalten",
+          "ursachen_ids": [804],
+          "zitat": "uns für den Erhalt eines Deutschlandtickets mit einem zukunftsfesten Finanzierungskonzept einsetzen und die notwendigen landesseitigen Zuschüsse leisten.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6869,
+          "instrument": 6840,
+          "beschreibung": "Kostengünstige Azubi-Tickets weiter fördern",
+          "ursachen_ids": [804],
+          "zitat": "kostengünstige Azubi-Tickets zur ÖPNV-Nutzung weiter fördern.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=110",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -776,6 +1149,17 @@
           "ursachen_ids": [801],
           "zitat": "Wichtig ist, die Taktung zwischen Bus und Bahn zu verbessern und für Sicherheit im ÖPNV zu sorgen.",
           "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=70",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6870,
+          "instrument": 6840,
+          "beschreibung": "Landesweites Azubi-Ticket",
+          "ursachen_ids": [804],
+          "zitat": "Neben einem landesweiten Azubi-Ticket und einem attraktiven öffentlichen Nahverkehr für Lehrlinge ist die Berufsschuldichte in Mecklenburg-Vorpommern wieder zu erhöhen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=34",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -822,6 +1206,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6871,
+          "instrument": 6841,
+          "beschreibung": "Nahverkehr für unter 21-Jährige kostenfrei",
+          "ursachen_ids": [804],
+          "zitat": "Den ÖPNV für unter 21-Jährige kostenfrei machen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6872,
+          "instrument": 6840,
+          "beschreibung": "Ermäßigtes Deutschlandticket auch für Studierende auf 29 Euro deckeln",
+          "ursachen_ids": [804],
+          "zitat": "Das ermäßigte Deutschlandticket für Azubis und Senior:innen auch für Studierende auf 29 Euro deckeln.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -837,6 +1243,17 @@
           "ursachen_ids": [801],
           "zitat": "Ausbau eines gut erreichbaren und barrierefrei nutzbaren öffentlichen Personennahverkehrs, insbesondere durch bessere Vernetzung und Taktung von Bus und Bahn",
           "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6873,
+          "instrument": 6841,
+          "beschreibung": "Kostenloser Nahverkehr für Schulkinder und Auszubildende",
+          "ursachen_ids": [804],
+          "zitat": "Kostenfreier ÖPNV für Schulkinder und Auszubildende.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=90",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -887,6 +1304,17 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6874,
+          "instrument": 6840,
+          "beschreibung": "Günstigeres Sozialticket",
+          "ursachen_ids": [804],
+          "zitat": "Finanzielle Hilfen und Mobilitätsangebote – etwa ein günstigeres Sozialticket – weiten wir dazu gezielt aus.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -913,6 +1341,17 @@
           "ursachen_ids": [803],
           "zitat": "Dazu gehören für uns vor allem gute Arbeitsbedingungen und eine faire, vorbildliche Bezahlung bei BVG und S-Bahn.",
           "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=83",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6875,
+          "instrument": 6840,
+          "beschreibung": "Berliner Klimaticket für 9 Euro im Monat für Menschen mit wenig Geld",
+          "ursachen_ids": [804],
+          "zitat": "Den Anfang machen wir mit dem bundesweit gültigen Berliner Klimaticket: Menschen mit wenig Geld, die heute noch über 27 Euro für das Sozialticket zahlen müssen, bieten wir bezahlbare und klimafreundliche Mobilität für neun Euro im Monat an.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=82",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -1014,6 +1453,31 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 6876,
+          "instrument": 6840,
+          "beschreibung": "Sozialticket wieder auf 9 Euro senken",
+          "ursachen_ids": [804],
+          "zitat": "Den Preis des Sozialtickets (Berlin S) werden wir wieder auf 9 Euro senken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6877,
+          "beschreibung": "Preisanstieg bei BVG und S-Bahn stoppen, kostenloses Schülerticket erhalten",
+          "ursachen_ids": [804],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Verhindert weitere Erhöhungen der Berliner Tarife; für das Deutschlandticket, das viele nutzen, gilt der bundesweit festgelegte Preis weiter. Das Land muss die steigenden Kosten der Verkehrsbetriebe ausgleichen.",
+          "zitat": "Wir stoppen den Preisanstieg bei BVG und S-Bahn, erhalten das kostenlose Schüler*innenticket und holen das 9-Euro-Sozialticket zurück.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=8",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1051,6 +1515,17 @@
           "ursachen_ids": [803],
           "zitat": "Dies gilt sowohl für Beschäftigte bei Tochtergesellschaften (z.B. Vivantes, Charité, BVG und BT Berlin Transport GmbH), die die gleiche Arbeit verrichten",
           "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6878,
+          "instrument": 6841,
+          "beschreibung": "Kostenloses Schülerticket in der ganzen Region Berlin-Brandenburg",
+          "ursachen_ids": [804],
+          "zitat": "Deshalb wollen wir die Tarifstruktur zwischen Berlin und Brandenburg neu ordnen, Pendlerverkehre stärker berücksichtigen und uns für ein kostenloses Schülerticket in der gesamten Region einsetzen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=48",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true

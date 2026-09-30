@@ -202,7 +202,7 @@ Verworfen:
 - *Zu viele Arztbesuche.* Belegt (im internationalen Vergleich viele Kontakte), aber Teil der fehlenden Steuerung (102).
 - *Bürokratie in den Praxen.* Nur mit Quellen der Ärzteschaft belegt; keine eigene Ursache.
 
-**Erfassung** (30. 9. 2026, KI-Entwurf): sechs Bundesprogramme, Stichwörter Hausarzt, Primärarzt, Terminservice, Facharzttermin, Wartezeit, Landarzt, Medizinstudium, Studienplätze, Niederlassung, Bürgerversicherung, Privatversichert, Budgetierung, Entbudgetierung, MVZ, Gesundheitszentrum. Ergebnis: 21 Maßnahmen (IDs 6682–6702), 5 Instrumente (6677–6681). Die Union hat keine Maßnahme zu 101 und 103. Das BSW-Bundesprogramm war aus der Sitzung nicht abrufbar und fehlt noch.
+**Erfassung** (30. 9. 2026, KI-Entwurf): sechs Bundesprogramme, Stichwörter Hausarzt, Primärarzt, Terminservice, Facharzttermin, Wartezeit, Landarzt, Medizinstudium, Studienplätze, Niederlassung, Bürgerversicherung, Privatversichert, Budgetierung, Entbudgetierung, MVZ, Gesundheitszentrum. Ergebnis: 21 Maßnahmen (IDs 6682–6702), 5 Instrumente (6677–6681). Die Union hat keine Maßnahme zu 101 und 103, das BSW keine zu 102. Das BSW-Bundesprogramm war zunächst nicht abrufbar; die Betreiberin hat es bereitgestellt (Prüfsumme stimmt), danach wurde es mit denselben Stichwörtern durchsucht. Ergebnis BSW: 3 Maßnahmen (IDs 6825–6827); die schon erfasste AfD-Maßnahme zu Medizinstudienplätzen ist dafür in ein Instrument überführt (6824).
 
 ## Miete (2)
 
@@ -234,9 +234,9 @@ Die Maßnahmen der Bundesprogramme waren schon erfasst (27. und 28. 9. 2026). Di
 - Gleiche Lösungswege sind jetzt Instrumente: Mietpreisbremse auslaufen lassen (FDP, AfD), bundesweiter Mietendeckel (Linke, BSW), Mietenstopp (Grüne, BSW), bessere Abschreibung (Union, FDP), keine neuen kostentreibenden Standards (Union, SPD), sozialen Wohnungsbau stärker fördern (Grüne, BSW). Die Werte der zusammengefassten Maßnahmen waren schon gleich; einige Begründungen sind um den Forschungsstand ergänzt.
 - Alle Maßnahmen haben jetzt einen Stand der Forschung (`evidenz`).
 - Die Mietpreisbremse bei SPD (unbefristet) und Grünen (verlängern) bleibt getrennt bewertet, weil die unbefristete Geltung verfassungsrechtlich weniger abgesichert ist.
-- Alle erreichbaren Zitate stehen auf der angegebenen Seite (`npm run zitate:pruefen -- --thema 2`). Die vier BSW-Zitate sind nicht prüfbar, solange das Bundesprogramm nicht abrufbar ist.
+- Alle Zitate stehen auf der angegebenen Seite (`npm run zitate:pruefen -- --thema 2`, die vier BSW-Zitate mit dem von der Betreiberin bereitgestellten Programm). Das BSW-Bundesprogramm enthält nichts zu 205; 206 deckt die schon erfasste Maßnahme 2061 ab.
 
-Hinweis: Die vorhandenen Bundesmaßnahmen sind nicht als KI-Entwurf gekennzeichnet. Einträge, in denen sie mit neuen KI-Entwürfen stehen, zählen deshalb auch in der Testphase erst nach der Prüfung.
+Auf Wunsch der Betreiberin sind jetzt auch die zuerst erfassten Miete-Maßnahmen als KI-Entwurf gekennzeichnet (`ki_entwurf`), denn sie wurden ebenfalls mit Hilfe einer KI erstellt. Damit zählt Miete wie die übrigen Themen in der geschlossenen Testphase.
 
 Verworfen:
 - *Hohe Bauzinsen.* Belegt, aber ein Grund dafür, dass zu wenig gebaut wird (201), und kaum politisch steuerbar (Geldpolitik der EZB).
@@ -271,7 +271,7 @@ Verworfen:
 - *Zu wenig Wettbewerb bei Versorgern, überhöhte Heizkostenabrechnungen.* Kein unabhängiger Beleg, dass das die Preise allgemein treibt.
 - *Fernwärmepreise.* Regional belegt (Preisaufsicht fehlt), betrifft aber 15 % der Wohnungen. Kandidat für später.
 
-**Erfassung** (30. 9. 2026, KI-Entwurf): sechs Bundesprogramme, Stichwörter Netzentgelt, Stromsteuer, Strompreis, Energiepreis, Gaspreis, CO₂-Preis, Klimageld, Klimadividende, Heizkosten, Umlage, Wärmepumpe, Heizungstausch, Kraftwerk, Kernenergie, Erneuerbare, Speicher, Erdgasförderung. Ergebnis: 34 Maßnahmen (IDs 6710–6739 und 6820–6823), 7 Instrumente (6703–6709). Nicht erfasst wurden Sockeltarife, Preisaufsicht und Härtefallfonds für Heizkosten (Linke) sowie die Fernwärme-Preisaufsicht (SPD): Sie lindern Folgen, setzen aber an keiner der Ursachen an. Nicht erfasst wurden auch Forderungen, die an einer Ursache ansetzen, aber keine Entlastung versprechen (Heizungsgesetz abschaffen, Union und AfD). Das BSW-Bundesprogramm fehlt noch.
+**Erfassung** (30. 9. 2026, KI-Entwurf): sechs Bundesprogramme, Stichwörter Netzentgelt, Stromsteuer, Strompreis, Energiepreis, Gaspreis, CO₂-Preis, Klimageld, Klimadividende, Heizkosten, Umlage, Wärmepumpe, Heizungstausch, Kraftwerk, Kernenergie, Erneuerbare, Speicher, Erdgasförderung. Ergebnis: 34 Maßnahmen (IDs 6710–6739 und 6820–6823), 7 Instrumente (6703–6709). Nicht erfasst wurden Sockeltarife, Preisaufsicht und Härtefallfonds für Heizkosten (Linke) sowie die Fernwärme-Preisaufsicht (SPD): Sie lindern Folgen, setzen aber an keiner der Ursachen an. Nicht erfasst wurden auch Forderungen, die an einer Ursache ansetzen, aber keine Entlastung versprechen (Heizungsgesetz abschaffen, Union und AfD). Das BSW-Bundesprogramm war zunächst nicht abrufbar; die Betreiberin hat es bereitgestellt (Prüfsumme stimmt), danach wurde es mit denselben Stichwörtern durchsucht. Ergebnis BSW: 8 Maßnahmen (IDs 6829–6836); die AfD-Maßnahme zu Nord Stream ist dafür in ein Instrument überführt (6828).
 
 ## Bus und Bahn (8)
 
@@ -284,25 +284,26 @@ Die Ursachen wurden geprüft, bevor Maßnahmen erfasst wurden. Neue Ursachen kom
 | 801 | Rund 21 Millionen Menschen fehlt ein gutes Grundangebot, besonders auf dem Land | Land | Agora Verkehrswende, ÖV-Atlas 2026 | Mindestangebot, mehr Geld (eher grün/links); Rufbusse, On-Demand, autonomes Fahren (eher wirtschaftsliberal/konservativ) |
 | 802 *geändert* | Marodes, überaltertes Schienennetz; laut Bundesrechnungshof steuert der Bund seine Mittel für den Erhalt kaum wirksam | Bund | Bundesrechnungshof, Bericht zur LuFV III (2025) | mehr Geld und Fonds (breit geteilt); Trennung von Netz und Betrieb (eher wirtschaftsliberal/konservativ); stärkere Steuerung durch den Bund (Mitte/links, auch rechts) |
 | 803 *geändert* | Zu wenige Bus- und Straßenbahnfahrerinnen und -fahrer; in zehn Jahren gehen rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand | Land | KOFA (IW), Fachkräftereport Juni 2025 | bessere Bezahlung, Tariftreue (eher links/gewerkschaftsnah); schnellere Qualifizierung, Anerkennung, günstigerer Busführerschein (eher wirtschaftsliberal) |
+| **804** *neu* | Tickets werden teurer: Deutschlandticket seit Januar 2026 63 Euro im Monat | Land | Bundesregierung, Fragen und Antworten zum Deutschlandticket | Preis senken, Sozialtickets (eher links/Mitte); Preis an Kosten koppeln, Geld ins Angebot (eher wirtschaftsliberal/rechts) |
 
 **802:** Der Bericht des Bundesrechnungshofs, auf den die Ursache schon verwies, handelt vor allem von der Steuerung: Er sieht „die Gefahr, dass auch künftige Bundesmittel nicht zu einer substanziellen Verbesserung der Schieneninfrastruktur führen werden“. Vorher nannte die Ursache nur den Zustand des Netzes. Damit hätten Maßnahmen zur Steuerung und Struktur der Deutschen Bahn nur indirekt gepasst.
 
 **803:** Laut KOFA fehlten im Juni 2025 noch knapp 1.700 Bus- und Straßenbahnfahrerinnen und -fahrer, deutlich weniger als ein Jahr zuvor. Der Grund könnte auch die Finanznot vieler Verkehrsbetriebe sein. Langfristig verschärft sich der Mangel, weil in zehn Jahren rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand gehen. Die Ursache nennt jetzt diese belegte Aussage statt „viele Stellen bleiben unbesetzt“.
 
-Entschieden: **801 und 803 Land, 802 Bund**, wie am 28. 9. 2026 vorgeschlagen. Das Nahverkehrsangebot bestellen Länder und Kommunen, sie sind auch für das Fahrpersonal der Verkehrsunternehmen verantwortlich. Das Schienennetz des Bundes betreibt die DB InfraGO.
+Entschieden: **801, 803 und 804 Land, 802 Bund**; 801–803 wie am 28. 9. 2026 vorgeschlagen. Das Nahverkehrsangebot bestellen Länder und Kommunen, sie sind auch für das Fahrpersonal der Verkehrsunternehmen verantwortlich. Das Schienennetz des Bundes betreibt die DB InfraGO.
 
-Offen:
-- *Ticketpreise.* Das Ziel des Themas („zuverlässig und in vertretbarer Zeit ans Ziel“) umfasst den Preis nicht. Viele Programme haben Maßnahmen zum Deutschlandticket, sie werden deshalb nicht erfasst. Ob das Ziel um die Bezahlbarkeit erweitert wird, entscheidet die Betreiberin.
+**804** *neu* (30. 9. 2026, Entscheidung der Betreiberin): Das Ziel umfasste den Preis zunächst nicht. Auf Wunsch der Betreiberin lautet es jetzt „Menschen kommen mit Bus und Bahn zuverlässig, in vertretbarer Zeit und zu bezahlbaren Preisen ans Ziel, auch auf dem Land.“ Dazu kommt Ursache 804: Tickets werden teurer; das Deutschlandticket kostet seit Januar 2026 63 Euro im Monat, den Preis legen die Länder fest, Bund und Länder zahlen je 1,5 Milliarden Euro im Jahr zu (Quelle: Bundesregierung, Fragen und Antworten zum Deutschlandticket). Diagnosen aus der Debatte: Preis senken oder deckeln, Sozialtickets (eher links/Mitte); Preis an die Kosten koppeln, Geld lieber ins Angebot (eher wirtschaftsliberal/rechts). Ebene **Land**: Laut Bundesregierung entscheiden die Länder „eigenständig ohne Einfluss des Bundes über die Preisgestaltung“, weil sie für den Nahverkehr zuständig sind; der Bund beteiligt sich an der Finanzierung. Die Ursache ist mit `nachtraeglich` gekennzeichnet.
 
 Verworfen:
 - *Überlastetes Netz, zu wenig Kapazität.* Teil von 802; Maßnahmen zum Ausbau setzen dort an.
 - *Zu wenig Geld für den Betrieb (Regionalisierungsmittel, Deutschlandticket).* Belegt vor allem durch Verbandsquellen (VDV) und Agora Verkehrswende. Teil von 801 (Angebot); Maßnahmen zur Finanzierung setzen dort an.
 
 **Erfassung** (30. 9. 2026, KI-Entwurf):
-- Bund: sechs Bundesprogramme, Stichwörter Schiene, Regionalisierungsmittel, ÖPNV, Nahverkehr, Deutsche Bahn, InfraGO, Schienennetz, Mobilitätsgarantie, Busfahrer, Fahrermangel, Fahrpersonal, Berufskraftfahrer, Führerschein. Ergebnis: 25 Maßnahmen, 9 Instrumente. Die AfD hat keine Maßnahme zu 803. Das BSW-Bundesprogramm fehlt noch.
+- Bund: sechs Bundesprogramme, Stichwörter Schiene, Regionalisierungsmittel, ÖPNV, Nahverkehr, Deutsche Bahn, InfraGO, Schienennetz, Mobilitätsgarantie, Busfahrer, Fahrermangel, Fahrpersonal, Berufskraftfahrer, Führerschein. Ergebnis: 25 Maßnahmen, 9 Instrumente. Die AfD hat keine Maßnahme zu 803. Das BSW-Bundesprogramm war zunächst nicht abrufbar; die Betreiberin hat es bereitgestellt (Prüfsumme stimmt), danach wurde es mit denselben Stichwörtern durchsucht. Ergebnis BSW: 3 Maßnahmen zu 801 und 802 (IDs 6843–6845), keine zu 803.
 - Länder (801, 803): alle 21 Landesprogramme, Stichwörter ÖPNV, Nahverkehr, Busverkehr, Rufbus, On-Demand, Takt, Landesbus, Mobilitätsgarantie, Regionalisierung, Reaktivierung, SPNV, Bahnstrecke, BVG, Straßenbahn, U-Bahn, Fahrpersonal, Busfahrer, Tarif. Ergebnis: 40 Maßnahmen, 6 Instrumente. Zu 803 haben nur SPD und FDP in Sachsen-Anhalt Maßnahmen, in Mecklenburg-Vorpommern keine Partei; in Berlin alle außer SPD und FDP. Da jeder dieser Partei-Land-Einträge schon Maßnahmen zu 801 hat, steht dort kein `keine_massnahme`-Vermerk.
 - Zusammen 65 Maßnahmen (IDs 6755–6819), 15 Instrumente (6740–6754).
-- Nicht erfasst wurden Maßnahmen zu Ticketpreisen (siehe „Offen“), zur Barrierefreiheit, zur Sicherheit in Bus und Bahn sowie zum Schienengüterverkehr.
+- Nacherfassung 804: alle 7 Bundes- und alle 21 Landesprogramme, Stichwörter Deutschlandticket, Ticket, Fahrpreis, Sozialticket, Azubiticket, Schülerticket, kostenlos, kostenfrei, Nulltarif, fahrscheinlos, 9-Euro, Mehrwertsteuer im Nahverkehr. Ergebnis: 34 Maßnahmen (IDs 6842 und 6846–6878), 5 Instrumente (6837–6841). Keine Maßnahme zu 804 haben Union und FDP im Bund sowie Union und FDP in Berlin. Die AfD will das Deutschlandticket „zu einem ehrlichen Preis“ anbieten und das Geld ins Angebot stecken; das ist keine Maßnahme für niedrigere Preise und wurde nicht erfasst. Da jeder dieser Einträge schon Maßnahmen zu anderen Ursachen hat, steht dort kein `keine_massnahme`-Vermerk.
+- Nicht erfasst wurden Maßnahmen zur Barrierefreiheit, zur Sicherheit in Bus und Bahn sowie zum Schienengüterverkehr.
 
 ## Hinweise zur Quellenprüfung
 
@@ -340,4 +341,6 @@ Arzttermine, Miete, Energiepreise, Bus und Bahn (30. 9. 2026), von der KI im Ori
 - 802: „Er sieht die Gefahr, dass auch künftige Bundesmittel nicht zu einer substanziellen Verbesserung der Schieneninfrastruktur führen werden.“ (Bundesrechnungshof, Bericht zur LuFV III, Nr. 0.2)
 - 803: knapp 1.700 unbesetzte Stellen für Bus- und Straßenbahnfahrer im Juni 2025; „in den kommenden zehn Jahren rund vier von zehn Beschäftigte in Verkehrsberufen altersbedingt“ (KOFA, Fachkräftereport Juni 2025)
 
-Die Quelle zu 304 ist von 2022. Sie erklärt den Mechanismus, der unverändert gilt. Eine neuere unabhängige Quelle mit einer Zahl (etwa Anteil der Stunden, in denen Gas den Preis setzt) wäre besser.
+- 804: „Seit Januar 2026 kostet das Deutschlandticket monatlich 63 Euro.“ Die Länder entscheiden „eigenständig ohne Einfluss des Bundes über die Preisgestaltung“; Bund und Länder zahlen je 1,5 Mrd. Euro (bundesregierung.de, Fragen und Antworten zum Deutschlandticket)
+
+Die Quelle zu 304 ist von 2022. Sie erklärt den Mechanismus, der unverändert gilt; die Betreiberin hat sie am 30. 9. 2026 als Quelle bestätigt.

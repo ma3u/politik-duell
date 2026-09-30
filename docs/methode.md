@@ -182,8 +182,8 @@ Die App läuft als spielbarer Prototyp mit Spracheingabe, KI-Zuordnung, Wortwolk
 | --- | --- |
 | Parteien und Programme | 7 Parteien, Wahlprogramme 2025 erfasst |
 | Themen mit belegten Ursachen | 10 Themen |
-| Maßnahmen erfasst | alle 10 Themen aus den Bundesprogrammen (ungeprüft, als KI-Entwurf – außer den zuerst erfassten Maßnahmen zu Miete); bei Arzttermine, Energiepreise sowie Bus und Bahn fehlt noch das BSW |
-| Landesprogramme | Schule, Zuwanderung und Integration, Sicherheit, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen) sowie Bus und Bahn (Angebot, Fahrpersonal): alle 21 Programme zu den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin (KI-Entwurf, ungeprüft) |
+| Maßnahmen erfasst | alle 10 Themen, alle 7 Parteien aus den Bundesprogrammen (KI-Entwurf, ungeprüft) |
+| Landesprogramme | Schule, Zuwanderung und Integration, Sicherheit, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen) sowie Bus und Bahn (Angebot, Fahrpersonal, Ticketpreise): alle 21 Programme zu den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin (KI-Entwurf, ungeprüft) |
 | Geprüft und im Spiel | noch keine – das Prüfverfahren startet mit dem Thema Miete |
 
 Wir suchen:
