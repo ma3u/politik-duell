@@ -14,10 +14,10 @@
     },
     {
       "id": 302,
-      "beschreibung": "Steuern, Abgaben und Umlagen machen einen großen Teil des Strompreises aus",
+      "beschreibung": "Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis",
       "quelle_url": "https://www.bundesnetzagentur.de/DE/Vportal/Energie/PreiseAbschlaege/Tarife-table.html",
       "ebene": "bund",
-      "schlagwoerter": ["steuer", "abgabe", "umlage", "co2"]
+      "schlagwoerter": ["steuer", "abgabe", "umlage", "co2", "co2-preis", "stromsteuer", "mehrwertsteuer"]
     },
     {
       "id": 303,
@@ -25,6 +25,627 @@
       "quelle_url": "https://www.umweltbundesamt.de/daten/umweltzustand-trends/energie/primaerenergiegewinnung-importe",
       "ebene": "bund",
       "schlagwoerter": ["gas", "oel", "import", "abhaengig", "heizoel"]
+    },
+    {
+      "id": 304,
+      "beschreibung": "Der Strompreis an der Börse richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk",
+      "quelle_url": "https://www.bundestag.de/resource/blob/918822/abb4747668630cbe6d457512d42265c4/WD-5-121-22-pdf-data.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["boerse", "strompreis", "kraftwerk", "erzeugung", "atomkraft", "kohle", "wind", "solar", "erneuerbar", "dunkelflaute"]
+    },
+    {
+      "id": 305,
+      "beschreibung": "Drei Viertel der Wohnungen wurden 2022 mit Gas oder Öl beheizt (Zensus); die Heizkosten hängen deshalb stark von deren Preisen ab",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zensus2022-Pressemitteilungen/PM_zenus2022_45.html",
+      "ebene": "bund",
+      "schlagwoerter": ["heizung", "gasheizung", "oelheizung", "waermepumpe", "heizen", "nebenkosten", "heizkostenabrechnung", "daemmung"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6703,
+      "name": "Netzentgelte mit Bundesmitteln senken oder deckeln",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt einen großen Teil des Strompreises direkt und spürbar; die Kosten des Netzausbaus trägt dann der Bundeshaushalt, und die Finanzierung muss auf Dauer gesichert werden.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6704,
+      "name": "Stromsteuer für alle auf das EU-Mindestmaß senken",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt den Strompreis für Haushalte um gut 2 Cent je Kilowattstunde; kostet den Bundeshaushalt mehrere Milliarden Euro im Jahr.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6705,
+      "name": "Klimageld: Einnahmen aus dem CO₂-Preis pro Kopf an die Haushalte zurückgeben",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gleicht höhere Heizkosten durch den CO₂-Preis vor allem für Haushalte mit geringem Einkommen aus, senkt die Preise selbst aber nicht; ein Auszahlungsweg muss erst aufgebaut werden.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6706,
+      "name": "CO₂-Preis auf Heizen abschaffen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Würde Gas- und Heizölpreise direkt senken; ab 2028 gilt aber der europäische Emissionshandel für Gebäude und Verkehr, den Deutschland nicht allein abschaffen kann.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 6707,
+      "name": "Erneuerbare Energien und Speicher schneller ausbauen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6708,
+      "name": "Kohle- und Kernkraftwerke länger oder wieder betreiben",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Mehr Kraftwerksleistung könnte die Börsenpreise in einzelnen Stunden senken; die abgeschalteten Kernkraftwerke sind weitgehend zurückgebaut, eine Wiederinbetriebnahme wäre teuer, langwierig und rechtlich neu zu regeln, und Kohlestrom wird durch den Emissionshandel teurer.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6709,
+      "name": "Dynamische Stromtarife und intelligente Messsysteme",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Haushalte, die Strom in günstigen Stunden nutzen können, sparen; für viele Haushalte ohne Wärmepumpe, E-Auto oder Batterie ist die Ersparnis gering.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6828,
+      "name": "Wieder Gas aus Russland über Nord Stream beziehen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 0,
+      "begruendung": "Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6710,
+          "instrument": 6703,
+          "beschreibung": "Netzentgelte senken und neu regeln",
+          "ursachen_ids": [301],
+          "zitat": "Wir senken die Stromsteuer für alle und reduzieren die Netzentgelte.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6711,
+          "instrument": 6704,
+          "beschreibung": "Stromsteuer für alle senken",
+          "ursachen_ids": [302],
+          "zitat": "Wir senken die Stromsteuer für alle und reduzieren die Netzentgelte.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6712,
+          "instrument": 6705,
+          "beschreibung": "Klimabonus als sozialer Ausgleich für den CO₂-Preis",
+          "ursachen_ids": [302],
+          "zitat": "Um Verbraucher und Unternehmen schnell und effizient mit einem sozialen Ausgleich zu entlasten, schaffen wir einen Klimabonus.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6713,
+          "instrument": 6708,
+          "beschreibung": "Prüfen, ob die zuletzt abgeschalteten Kernkraftwerke wieder in Betrieb gehen können",
+          "ursachen_ids": [304],
+          "zitat": "Gleichzeitig streben wir schnellstmöglich eine fachliche Bestandsaufnahme an, ob angesichts des jeweiligen Rückbaustadiums eine Wiederaufnahme des Betriebs der zuletzt abgeschalteten Kernkraftwerke unter vertretbarem technischem und finanziellem Aufwand noch möglich ist.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6714,
+          "instrument": 6709,
+          "beschreibung": "Smart Meter und Digitalisierung, damit Verbraucher flexibler auf den Strompreis reagieren können",
+          "ursachen_ids": [304],
+          "zitat": "Verbraucher sollen flexibler auf den Strompreis reagieren können. Dazu muss die Stromnutzung durch Smart Meter und Digitalisierung intelligenter werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6715,
+          "beschreibung": "Investitionen in Energieeffizienz steuerlich schneller absetzbar",
+          "ursachen_ids": [305],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Macht Sanierungen und Heizungstausch für Eigentümer günstiger und senkt langfristig den Verbrauch; Mieterinnen und Mieter profitieren nur indirekt, und der Steuervorteil hilft Haushalten mit hohem Einkommen mehr.",
+          "zitat": "Investitionen in Klimatechnologien und Energieeffizienz sollen künftig steuerlich deutlich schneller und besser abgesetzt werden können.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=24",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6822,
+          "beschreibung": "Europäischen Energiebinnenmarkt stärken, internationale Energiepartnerschaften ausbauen",
+          "ursachen_ids": [303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Mehr Lieferländer machen Deutschland weniger anfällig für Preissprünge bei einzelnen Lieferanten; die Maßnahme bleibt allgemein und nennt keine konkreten Schritte.",
+          "zitat": "Für notwendige Energieimporte und -exporte mobilisieren wir europäische Potenziale und intensivieren internationale Partnerschaften.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6716,
+          "instrument": 6703,
+          "beschreibung": "Übertragungsnetzentgelte stabilisieren und auf 3 Cent pro Kilowattstunde deckeln",
+          "ursachen_ids": [301],
+          "zitat": "Wir werden die Entgelte für das Übertragungsnetz, das die Regionen in Deutschland verbindet und massiv ausgebaut wird, zunächst stabilisieren, dann schnellstmöglich auf 3 Cent pro Kilowattstunde deckeln und so den Netzausbau unterstützen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6717,
+          "instrument": 6705,
+          "beschreibung": "Klimageld, wenn ab 2027 der europäische CO₂-Preis gilt",
+          "ursachen_ids": [302],
+          "zitat": "Wenn ab 2027 die europäische Regelung in Kraft tritt, werden wir durch geeignete Maßnahmen auf europäischer und nationaler Ebene (zum Beispiel Klimageld) dafür Sorge tragen, dass niemand überfordert wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6718,
+          "instrument": 6707,
+          "beschreibung": "Wind- und Solarenergie konsequent ausbauen, Speicher einbinden",
+          "ursachen_ids": [304],
+          "zitat": "Ihr konsequenter Ausbau und die Einbindung von Speichern macht unsere Energieversorgung sicher und dauerhaft bezahlbar.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6719,
+          "beschreibung": "Soziales Wärmepumpen-Leasing für ärmere Haushalte",
+          "ursachen_ids": [305],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Senkt die Hürde, von Gas oder Öl auf eine Wärmepumpe umzusteigen, für Haushalte ohne Ersparnisse; die meisten ärmeren Haushalte wohnen zur Miete und entscheiden nicht über die Heizung.",
+          "zitat": "Ärmeren Haushalten wollen wir Heiz-Mietmodelle anbieten (soziales Wärmepumpen-Leasing).",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6720,
+          "instrument": 6703,
+          "beschreibung": "Netzentgelte für überregionale Stromleitungen aus dem Deutschlandfonds bezahlen",
+          "ursachen_ids": [301],
+          "zitat": "Deshalb übernehmen wir die Netzentgelte für die überregionalen Stromleitungen aus dem Deutschlandfonds und senken die Stromsteuer auf das europäische Minimum.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6721,
+          "instrument": 6704,
+          "beschreibung": "Stromsteuer auf das europäische Minimum senken",
+          "ursachen_ids": [302],
+          "zitat": "Deshalb übernehmen wir die Netzentgelte für die überregionalen Stromleitungen aus dem Deutschlandfonds und senken die Stromsteuer auf das europäische Minimum.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6722,
+          "instrument": 6705,
+          "beschreibung": "Sozial gestaffeltes Klimageld",
+          "ursachen_ids": [302],
+          "zitat": "Einen Großteil dieser Einnahmen werden wir als sozial gestaffeltes Klimageld an Menschen mit niedrigen und mittleren Einkommen auszahlen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=40",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6723,
+          "instrument": 6709,
+          "beschreibung": "Dynamische Stromtarife und flexible Netze",
+          "ursachen_ids": [304],
+          "zitat": "Mit digitalen und flexiblen Stromnetzen und dynamischen Stromtarifen werden künftig die Bürger*innen in die Lage versetzt, in Zeiten von viel Wind und Sonne den Strom per Batterie oder Wärmepumpe systemdienlich zu speichern",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6724,
+          "instrument": 6707,
+          "beschreibung": "Strom in spätestens zehn Jahren vollständig erneuerbar",
+          "ursachen_ids": [304],
+          "zitat": "Im Stromsektor werden wir uns in spätestens zehn Jahren vollständig erneuerbar versorgen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6725,
+          "beschreibung": "Förderung von bis zu 70 Prozent für fossilfreie Heizungen",
+          "ursachen_ids": [305],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Macht den Umstieg von Gas und Öl auf Wärmepumpen und Wärmenetze bezahlbarer und koppelt die Heizkosten von fossilen Preisen ab; die Förderung besteht bereits, der Umstieg dauert aber Jahre und hängt vom Strompreis ab.",
+          "zitat": "Wir geben mit dem Gebäudeenergiegesetz und einer Förderung von bis zu 70 Prozent für den Einbau von fossilfreien Heizungen",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=44",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6823,
+          "beschreibung": "Gasverbrauch schneller senken, Umstieg auf erneuerbare Energien",
+          "ursachen_ids": [303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Weniger Gasverbrauch verringert die Importabhängigkeit und damit das Risiko von Preissprüngen; die Wirkung auf die Rechnungen der Haushalte stellt sich erst über Jahre ein.",
+          "zitat": "beschleunigen wir die anlaufende Reduktion des europäischen Gasverbrauchs sowie den Umstieg auf grünen Wasserstoff und andere erneuerbare Energiequellen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=43",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6726,
+          "instrument": 6704,
+          "beschreibung": "Stromsteuer auf das EU-Mindestmaß senken, langfristig abschaffen",
+          "ursachen_ids": [302],
+          "zitat": "Wir Freie Demokraten wollen die Stromsteuer in einem ersten Schritt auf das EU-Mindestmaß absenken und werden uns auf europäischer Ebene für ihre Abschaffung einsetzen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6727,
+          "beschreibung": "Netzausbau günstiger: Freileitungen statt Erdkabel, dynamische Netzentgelte",
+          "ursachen_ids": [301],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Freileitungen sind deutlich billiger als Erdkabel und dämpfen so den Anstieg der Netzentgelte; für viele bereits geplante Leitungen wäre ein Wechsel aufwendig, und Freileitungen stoßen vor Ort häufiger auf Widerstand.",
+          "zitat": "Wir wollen die Kosten für den Netzausbau erheblich reduzieren, in dem die neuen Leitungen in der Regel überirdisch gebaut werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=17",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6728,
+          "instrument": 6705,
+          "beschreibung": "Klimadividende: Einnahmen aus dem Emissionshandel pro Kopf zurückzahlen",
+          "ursachen_ids": [302],
+          "zitat": "Wir Freie Demokraten wollen eine Klimadividende einführen, um Einnahmen aus dem Emissionshandel direkt und pauschal pro Kopf an die Bürgerinnen und Bürger zurückzuzahlen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=40",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6820,
+          "instrument": 6708,
+          "beschreibung": "Wiederinbetriebnahme der vorhandenen Kernkraftwerke rechtlich ermöglichen",
+          "ursachen_ids": [304],
+          "zitat": "Wir wollen die Wiederinbetriebnahme der vorhandenen Kernkraftwerke rechtlich ermöglichen und die Entscheidung darüber den Betreibern überlassen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6821,
+          "beschreibung": "Heimische Erdgasförderung ausbauen, auch mit Fracking",
+          "ursachen_ids": [303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Mehr heimisches Gas verringert die Importe etwas; der Gaspreis bildet sich aber auf dem europäischen Markt, und die möglichen Mengen sind im Vergleich zum Verbrauch klein. Genehmigungen, vor allem für Fracking, dauern lange.",
+          "zitat": "Dafür sollte die heimische Erdgasförderung ausgebaut werden, wozu sich aktuell das Gasfeld in Borkum und Fracking-Verfahren anbieten.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6729,
+          "instrument": 6706,
+          "beschreibung": "CO₂-Abgabe abschaffen",
+          "ursachen_ids": [302],
+          "zitat": "Abschaffung der CO₂ -Abgabe",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6730,
+          "instrument": 6704,
+          "beschreibung": "Energiesteuer reduzieren, Stromsteuer auf das Minimum senken",
+          "ursachen_ids": [302],
+          "zitat": "Reduzierung der Energiesteuer und Senkung der Stromsteuer auf das Minimum",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6731,
+          "instrument": 6708,
+          "beschreibung": "Kohlekraftwerke länger betreiben, Wiedereinstieg in die Kernenergie",
+          "ursachen_ids": [304],
+          "zitat": "Verlängerung der Laufzeiten der Kohlekraftwerke",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6732,
+          "instrument": 6828,
+          "beschreibung": "Nord-Stream-Pipelines reparieren und wieder in Betrieb nehmen",
+          "ursachen_ids": [303],
+          "zitat": "Reparatur und Wiederinbetriebnahme der Nord-Stream-Pipelines",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6733,
+          "beschreibung": "Ausbau der Windenergie stoppen, um höhere Netzentgelte zu verhindern",
+          "ursachen_ids": [301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Weniger neue Windparks bedeuten weniger neuen Netzausbau; zugleich fehlt günstiger Windstrom, sodass teurere Kraftwerke den Börsenpreis öfter bestimmen.",
+          "zitat": "Verhinderung immer höherer Netzentgelte durch Windenergie- Ausbaustopp",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6734,
+          "instrument": 6705,
+          "beschreibung": "Soziales Klimageld von 320 Euro pro Person und Jahr",
+          "ursachen_ids": [302],
+          "zitat": "ein soziales Klimageld von 320 Euro jährlich pro Person als Direktzahlung einführen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6735,
+          "beschreibung": "Neue Netzentgeltstruktur: Stromerzeuger und Stromhandel an den Transportkosten beteiligen",
+          "ursachen_ids": [301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Würde Haushalte bei den Netzentgelten entlasten; Entgelte für Erzeuger begrenzt das EU-Recht eng, und die Kosten würden zum Teil über höhere Strompreise wieder bei den Verbrauchern landen.",
+          "zitat": "Die Stromerzeuger und der internationale Stromhandel müssen an den Kosten des Stromtransports beteiligt werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6736,
+          "instrument": 6704,
+          "beschreibung": "Stromsteuer auf den europäischen Mindeststeuersatz senken",
+          "ursachen_ids": [302],
+          "zitat": "Wir fordern die Senkung der Stromsteuer auf den europäischen Mindeststeuersatz",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6737,
+          "instrument": 6707,
+          "beschreibung": "Schnellstmöglich auf erneuerbare Energien umsteigen",
+          "ursachen_ids": [304],
+          "zitat": "Wir wollen schnellstmöglich auf erneuerbare Energien umsteigen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6738,
+          "instrument": 6706,
+          "beschreibung": "Keine CO₂-Preise im Wärmebereich",
+          "ursachen_ids": [302],
+          "zitat": "Mieter*innen können ihre Heizungen nicht wechseln, deshalb lehnen wir CO2-Preise im Wärmebereich ab",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6739,
+          "beschreibung": "Heizungstausch nach Einkommen gestaffelt fördern, bis zu 100 Prozent",
+          "ursachen_ids": [305],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Ermöglicht auch Eigentümern mit wenig Geld den Umstieg von Gas und Öl und koppelt die Heizkosten von fossilen Preisen ab; das Programm soll 25 Milliarden Euro im Jahr kosten, die Finanzierung ist offen.",
+          "zitat": "Beim Heizungstausch wollen wir die Förderung für Zusatzkosten nach Einkommen staffeln: Menschen mit niedrigem Einkommen bekommen den Heizungstausch mit bis zu 100 Prozent bezahlt",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6829,
+          "instrument": 6703,
+          "beschreibung": "Netze aus öffentlichen Mitteln statt über den Strompreis finanzieren",
+          "ursachen_ids": [301],
+          "zitat": "Die Instandhaltung und der Ausbau der Energienetze sind öffentliche Aufgaben und müssen aus öffentlichen Mitteln und nicht über die Strompreise finanziert werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6830,
+          "beschreibung": "Stromnetze verstaatlichen und Netzentgelte auf ein Minimum senken",
+          "ursachen_ids": [301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ohne Renditen für private Netzbetreiber könnten die Netzentgelte etwas sinken; der Kauf der Netze würde viele Milliarden kosten, und der Ausbau bliebe trotzdem zu bezahlen.",
+          "zitat": "Statt privaten Netzbetreibern Traumrenditen zu sichern, wollen wir die Netze verstaatlichen und die Netzentgelte auf ein Minimum reduzieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6831,
+          "instrument": 6706,
+          "beschreibung": "CO₂-Preis abschaffen",
+          "ursachen_ids": [302],
+          "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6832,
+          "instrument": 6828,
+          "beschreibung": "Mit Russland über Gaslieferungen durch Nord Stream verhandeln",
+          "ursachen_ids": [303],
+          "zitat": "Die Bundesregierung sollte mit Russland verhandeln, um über den verbliebenen Strang der Nord-Stream-Pipeline wieder günstiges Erdgas zu beziehen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6833,
+          "beschreibung": "Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis",
+          "ursachen_ids": [303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Langfristige Verträge können Preisschwankungen dämpfen; sie binden aber auch an Preise, wenn der Markt fällt, und ein Kriterium nur nach dem Preis erhöht die Abhängigkeit von einzelnen Lieferländern.",
+          "zitat": "Wir brauchen wieder langfristige Verträge zu Energieimporten, die sich am Kriterium des niedrigsten Preises orientieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6834,
+          "beschreibung": "Neue Gaskraftwerke als Reserve für Dunkelflauten",
+          "ursachen_ids": [304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Mehr Reservekraftwerke können Preisspitzen in wind- und sonnenarmen Stunden dämpfen; sie senken den Durchschnittspreis kaum, weil gerade Gaskraftwerke den Preis dann setzen, und müssen über Umlagen oder Steuern bezahlt werden.",
+          "zitat": "Statt an dunklen windarmen Tagen die Wirtschaft mit Extrempreisen zu belasten und bei Wind und Sonne Steuergeld zu verbrennen, muss in neue Gaskraftwerke als Reservekapazität sowie in die Netze investiert werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6835,
+          "instrument": 6707,
+          "beschreibung": "Repowering: alte Windanlagen durch neue ersetzen",
+          "ursachen_ids": [304],
+          "zitat": "Im Bereich der Erneuerbaren Energien fordern wir ein „Repowering“-Programm.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6836,
+          "beschreibung": "Einbau von Wärmepumpen fördern, ohne andere Heizungen zu benachteiligen",
+          "ursachen_ids": [305],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Förderung erleichtert den Umstieg von Gas und Öl; ohne Vorgaben für neue Heizungen bleiben viele Haushalte bei fossilen Heizungen und damit von deren Preisen abhängig.",
+          "zitat": "Den Einbau von Wärmepumpen wollen wir fördern, ohne den Betrieb anderer Technologien zu diskriminieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }
