@@ -33,5 +33,326 @@
       "ebene": "bund",
       "schlagwoerter": ["mieter", "vermieter", "mietwohnung", "modernisierungsumlage", "umlage", "alte heizung", "nebenkosten"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 7034,
+      "name": "Zuschüsse für neue klimafreundliche Heizungen fortführen oder ausbauen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die Investition, die viele Haushalte scheuen oder nicht aufbringen können, und setzt damit an den laut KfW größten Hindernissen an. Ob sie Haushalte mit wenig Geld erreicht, hängt von der Staffelung ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf"
+    },
+    {
+      "id": 7035,
+      "name": "Wärmepumpen-Leasing oder Wärme-Contracting ohne hohe Startinvestition",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Nimmt Haushalten die hohe Anfangsinvestition ab, die laut KfW oft fehlt; solche Angebote gibt es bisher nur vereinzelt, ihre Wirkung in der Breite ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7036,
+      "name": "Heizungsgesetz abschaffen, freie Wahl der Heizung",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schafft Wahlfreiheit und beendet den Streit um die 65-Prozent-Vorgabe; ist aber selbst eine weitere Änderung der Regeln, und mit dem steigenden CO₂-Preis bleibt offen, welche Heizung sich langfristig lohnt. 2026 mit dem Gebäudemodernisierungsgesetz weitgehend umgesetzt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7037,
+      "name": "Geltende Vorgaben beibehalten, Planungssicherheit bis 2045",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vermeidet weitere Wechsel der Regeln; die Vorgaben selbst waren stark umstritten, und ob sie Regierungswechsel überdauern, ist offen – 2026 wurden sie grundlegend geändert.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7038,
+      "name": "Kommunale Wärmeplanung und Wärmenetze fördern",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Beschleunigt die Wärmepläne, auf die viele Eigentümer warten, und den Bau von Wärmenetzen; planen und bauen müssen die Kommunen, der Bund kann nur Geld und Beratung geben.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html"
+    },
+    {
+      "id": 7039,
+      "name": "Modernisierungsumlage für energetische Sanierung abschaffen, Warmmietenneutralität",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schützt Mieterinnen und Mieter vor Mietsteigerungen durch den Heizungstausch; zugleich sinkt der Anreiz für Vermieter, die Heizung zu erneuern, sodass Mieter länger die Kosten alter Heizungen tragen können.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 7040,
+          "instrument": 7036,
+          "beschreibung": "Heizungsgesetz der Ampel abschaffen, technologieoffene Wärmelösungen",
+          "ursachen_ids": [1602],
+          "zitat": "Das Heizungsgesetz der Ampel schaffen wir ab.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7041,
+          "instrument": 7034,
+          "beschreibung": "Verlässliche, technologieoffene Förderung",
+          "ursachen_ids": [1601],
+          "zitat": "Dabei setzen wir auf CO2-Bepreisung mit sozialem Ausgleich, verlässliche Förderung und technologieoffene Lösungen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 7042,
+          "instrument": 7034,
+          "beschreibung": "Förderung vor allem für die, die sich den Umstieg sonst nicht leisten können",
+          "ursachen_ids": [1601],
+          "zitat": "Dabei gilt: Geld vom Staat bekommen vor allem diejenigen, die sich den Umstieg auf klimafreundliche Technologien wie eine Wärmepumpe oder ein E-Auto ansonsten nicht leisten können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7043,
+          "instrument": 7037,
+          "beschreibung": "Beschlossene Gesetze umsetzen, Planungssicherheit",
+          "ursachen_ids": [1602],
+          "zitat": "Beschlossene Gesetze werden wir umsetzen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7044,
+          "instrument": 7038,
+          "beschreibung": "Lokale Wärmepläne und Kommunen mit Fördermitteln unterstützen",
+          "ursachen_ids": [1603],
+          "zitat": "Wir wollen lokale Wärmepläne fördern, die eine klimafreundliche und klug geplante Energieversorgung auf kommunaler Ebene sicherstellen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7045,
+          "instrument": 7035,
+          "beschreibung": "Soziales Wärmepumpen-Leasing für ärmere Haushalte",
+          "ursachen_ids": [1601, 1604],
+          "zitat": "Ärmeren Haushalten wollen wir Heiz-Mietmodelle anbieten (soziales Wärmepumpen-Leasing).",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 7046,
+          "instrument": 7037,
+          "beschreibung": "Gebäudeenergiegesetz beibehalten, Planungssicherheit bis 2045",
+          "ursachen_ids": [1602],
+          "zitat": "Wir geben mit dem Gebäudeenergiegesetz und einer Förderung von bis zu 70 Prozent für den Einbau von fossilfreien Heizungen den Eigenheimbesitzer*innen, der Wirtschaft sowie den Mieter*innen und Vermieter*innen bis 2045 die nötige Planungssicherheit für Kauf und Einbau einer modernen klimafreundlichen Heizung wie der Wärmepumpe.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7047,
+          "instrument": 7034,
+          "beschreibung": "Förderung von bis zu 70 % ausbauen",
+          "ursachen_ids": [1601],
+          "zitat": "Die Unterstützung auf diesem Weg werden wir ausbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7048,
+          "instrument": 7035,
+          "beschreibung": "Wärme-Contracting durch Stadtwerke und Firmen",
+          "ursachen_ids": [1601],
+          "zitat": "Wir wollen Stadtwerke und Firmen unterstützen, um Wärme-Contracting, etwa mit Wärmepumpen, anzubieten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7049,
+          "beschreibung": "Klimakomponente im Wohngeld stärken",
+          "ursachen_ids": [1604],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Hilft Haushalten mit Wohngeld, höhere Heizkosten oder Mieten nach einer Sanierung zu tragen; erreicht nur Wohngeldbeziehende und ändert nichts daran, ob die Heizung erneuert wird.",
+          "evidenz": "gemischt",
+          "zitat": "Zudem wollen wir die Klimakomponente im Wohngeld weiter stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 7050,
+          "instrument": 7036,
+          "beschreibung": "Heizungsgesetz vollständig auslaufen lassen, CO₂-Zertifikatehandel statt Einzelvorschriften",
+          "ursachen_ids": [1602],
+          "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=45",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7051,
+          "beschreibung": "Kappungsgrenzen bei energetischen Sanierungen lockern",
+          "ursachen_ids": [1604],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Erhöht den Anreiz für Vermieter, Heizung und Gebäude zu erneuern, was Heizkosten der Mieter senken kann; zugleich dürfen Mieten nach der Sanierung stärker steigen.",
+          "evidenz": "gemischt",
+          "zitat": "Zudem werden wir die starren Kappungsgrenzen bei energetischen Sanierungen lockern, damit die Modernisierung des Gebäudebestands vorankommt.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 7052,
+          "instrument": 7036,
+          "beschreibung": "Gebäudeenergiegesetz abschaffen, Verbot von Gas- und Ölheizungen aufheben",
+          "ursachen_ids": [1602],
+          "zitat": "Ideologiegetriebene Kosten wie EEG-Umlage, CO₂-Steuer und das Gebäudeenergiegesetz (GEG) werden wir abschaffen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 7053,
+          "beschreibung": "Heizungstausch nach Einkommen fördern, bis zu 100 % für niedrige Einkommen; 25 Mrd. Euro im Jahr",
+          "ursachen_ids": [1601],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Beseitigt die Kostenhürde für Haushalte mit kleinem und mittlerem Einkommen weitgehend; 25 Milliarden Euro im Jahr sind ein Vielfaches der heutigen Förderung, die Finanzierung hängt an neuen Steuern.",
+          "evidenz": "gemischt",
+          "zitat": "Beim Heizungstausch wollen wir die Förderung für Zusatzkosten nach Einkommen staffeln: Menschen mit niedrigem Einkommen bekommen den Heizungstausch mit bis zu 100 Prozent bezahlt, Menschen mit mittlerem Einkommen anteilig gestaffelt",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7054,
+          "instrument": 7039,
+          "beschreibung": "Umlage für energetische Sanierung abschaffen, Warmmietenneutralität verankern",
+          "ursachen_ids": [1604],
+          "zitat": "Deshalb wollen wir die Umlage für energetische Sanierung abschaffen und das Konzept der Warmmietenneutralität verankern",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7055,
+          "beschreibung": "Vermieter verpflichten, Fördermittel zu nutzen und weiterzugeben",
+          "ursachen_ids": [1604],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Kann die Kosten für Mieter senken, wenn saniert wird; eine Pflicht zur Förderung ist ungewöhnlich und schwer durchzusetzen, und sie verpflichtet nicht zur Sanierung selbst.",
+          "evidenz": "offen",
+          "zitat": "Wir wollen Vermieter*innen dazu verpflichten, Fördermittel in Anspruch zu nehmen und die finanziellen Vorteile weiterzureichen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7056,
+          "instrument": 7038,
+          "beschreibung": "Städte und Gemeinden beim Ausbau von Nah- und Fernwärmenetzen unterstützen",
+          "ursachen_ids": [1603],
+          "zitat": "deshalb wollen wir Städte und Gemeinden bei dem Ausbau von Nah- und Fernwärmenetzen unterstützen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 7057,
+          "instrument": 7034,
+          "beschreibung": "Einbau von Wärmepumpen fördern, ohne andere Technologien zu benachteiligen",
+          "ursachen_ids": [1601],
+          "zitat": "Den Einbau von Wärmepumpen wollen wir fördern, ohne den Betrieb anderer Technologien zu diskriminieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7058,
+          "instrument": 7036,
+          "beschreibung": "Heizungsgesetz sofort abschaffen und durch sinnvolle Regelungen ersetzen",
+          "ursachen_ids": [1602],
+          "zitat": "Habecks Heizungsgesetz wollen wir sofort abschaffen und durch sinnvolle Regelungen ersetzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7059,
+          "instrument": 7038,
+          "beschreibung": "Ausbau der Fernwärme unterstützen",
+          "ursachen_ids": [1603],
+          "zitat": "Fernwärme wird in Zukunft eine wichtigere Rolle spielen, wir unterstützen ihren Ausbau und die Umstellung auf erneuerbare Energiequellen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=12",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
