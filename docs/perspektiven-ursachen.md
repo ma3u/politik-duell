@@ -430,6 +430,8 @@ Verworfen:
 - *Hohe Versicherungs- und Werkstattkosten.* Belegt vor allem durch Verbandsquellen; kaum politisch steuerbar.
 - *Tempolimit, Parkplatzabbau, „Bevormundung“.* Wertfragen, im Spiel als persönliche Haltung (`wert`).
 
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Kraftstoff, Sprit, Benzin, Diesel, Energiesteuer, CO₂-Preis, CO₂-Abgabe, Klimageld, Klimabonus, Pendlerpauschale, Mobilitätsgeld, Tankstelle, Mineralöl, Raffinerie, E-Auto, Elektroauto, Elektromobilität, Kaufprämie, Leasing, Ladesäule, Ladeinfrastruktur, Wallbox, Verbrenner. Ergebnis: 18 Maßnahmen (IDs 7016–7033), 5 Instrumente (7011–7015), drei Einzelbewertungen. Zu 1501 (Rohölpreis) und 1503 (Wettbewerb bei Raffinerien und Großhandel) hat kein Programm eine Maßnahme; alle Programme wurden vor dem Iran-Krieg 2026 beschlossen. Union und FDP haben keine Maßnahme zu 1504, AfD und FDP keine zu 1505. Nicht erfasst wurden: Rücknahme des „Verbrenner-Verbots“ (Union, FDP, AfD, BSW; setzt an keiner erfassten Ursache an, siehe „Verworfen“), Ende der Förderung von E-Mobilität und Ladeinfrastruktur (AfD; keine Maßnahme für das Ziel), Ende der Sanktionen gegen Russland (AfD, BSW; die Programme nennen Gas, nicht Öl), Preise an Autobahnraststätten (BSW), Kfz-Steuer-Befreiung für E-Autos verlängern (SPD; geringer Betrag, bereits geltendes Recht bis 2030).
+
 ### Heizungstausch (16)
 
 Ziel: „Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten.“ Die laufenden Heizkosten gehören zum Thema Energiepreise (302, 305).
