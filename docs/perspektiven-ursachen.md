@@ -305,6 +305,163 @@ Verworfen:
 - Nacherfassung 804: alle 7 Bundes- und alle 21 Landesprogramme, Stichwörter Deutschlandticket, Ticket, Fahrpreis, Sozialticket, Azubiticket, Schülerticket, kostenlos, kostenfrei, Nulltarif, fahrscheinlos, 9-Euro, Mehrwertsteuer im Nahverkehr. Ergebnis: 34 Maßnahmen (IDs 6842 und 6846–6878), 5 Instrumente (6837–6841). Keine Maßnahme zu 804 haben Union und FDP im Bund sowie Union und FDP in Berlin. Die AfD will das Deutschlandticket „zu einem ehrlichen Preis“ anbieten und das Geld ins Angebot stecken; das ist keine Maßnahme für niedrigere Preise und wurde nicht erfasst. Da jeder dieser Einträge schon Maßnahmen zu anderen Ursachen hat, steht dort kein `keine_massnahme`-Vermerk.
 - Nicht erfasst wurden Maßnahmen zur Barrierefreiheit, zur Sicherheit in Bus und Bahn sowie zum Schienengüterverkehr.
 
+## Neue Themen 11–16 (30. 9. 2026)
+
+Stand: 30. 9. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+
+Die Themen gehen auf die acht Themenkomplexe zurück, die die Betreiberin vorgelegt hat (siehe [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl)). Ursachen, Ebenen und Perspektivenprüfung wurden festgelegt, **bevor** in ein Wahlprogramm geschaut wurde, und in einem eigenen Commit festgehalten. Die KI hat alle Quellen im Original abgerufen (Zitate und Zahlen siehe „Hinweise zur Quellenprüfung“).
+
+### Preise und Löhne (11)
+
+Ziel: „Menschen können sich mit ihrem Einkommen Lebensmittel und den täglichen Bedarf dauerhaft leisten.“ Energie und Miete haben eigene Themen und bleiben hier außen vor.
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1101 | Lebensmittelpreise hängen an den Energiekosten (Landwirtschaft, Transport, Lagerung, Dünger); nach dem Preisschub ab 2021 steigen sie mit dem Energiepreisschock 2026 voraussichtlich erneut | Bund | Bundesbank, Monatsbericht Juni 2026 (Deutschland-Prognose) | Energiekosten und Abgaben senken (eher konservativ/wirtschaftsliberal, auch BSW/Linke); Mehrwertsteuer auf Lebensmittel senken (quer durch das Spektrum) |
+| 1102 | Lebensmittelhandel stark konzentriert (vier Gruppen, rund 87 % Umsatzanteil), Preisaufschläge zeitgleich gestiegen | Bund | Monopolkommission, Sondergutachten 84 (2025) | Fusionskontrolle, Preisbeobachtung, Übergewinne (eher links/Mitte); mehr Wettbewerb und Markteintritt (eher wirtschaftsliberal) |
+| 1103 | Reallöhne sanken 2020–2023, 2025 erst wieder fast auf dem Niveau von 2019 | Bund | Destatis, Pressemitteilung 068/2026 | höhere Löhne, Mindestlohn, Tarifbindung (eher links/gewerkschaftsnah); Wachstum und Produktivität (eher wirtschaftsliberal) |
+| 1104 | Hohe Steuern und Sozialabgaben: Abgabenkeil 49,3 %, zweithöchster Wert in der OECD | Bund | OECD, Taxing Wages 2026 (Länderbericht Deutschland) | Einkommensteuer und Sozialabgaben senken, kalte Progression (eher wirtschaftsliberal/konservativ); Entlastung unten, Gegenfinanzierung oben (eher links) |
+| 1105 | Rund 6,3 Mio. Jobs (16 %) im Niedriglohnbereich | Bund | Destatis, Pressemitteilung 434/2025 | Mindestlohn, Tarifbindung (eher links); Qualifizierung, Aufstieg (breit geteilt) |
+
+**1101:** Laut Bundesbank wirken höhere Energiepreise bei Nahrungsmitteln „vor allem über steigende Kosten in der landwirtschaftlichen Produktion sowie für Logistik, insbesondere Transport und Lagerung. Hinzu kommen höhere Kosten für energieabhängige Vorleistungen wie Düngemittel.“ Für 2027 erwartet sie wieder steigende Nahrungsmittelpreise (+2,9 %). Die Ursache nennt die Kostenseite, 1102 die Wettbewerbsseite.
+
+**1102:** Die Monopolkommission stellt „deutliche Hinweise für Wettbewerbsprobleme“ fest; der Anstieg der Preisaufschläge falle „zeitlich mit dem Anstieg der Marktkonzentration zusammen“ (S. 12 f.). Umsatzanteile 2023: Edeka 32,1 %, Rewe 21,2 %, Schwarz-Gruppe 20,9 %, Aldi 13 % (S. 37). Sie weist auch darauf hin, dass die Aufschläge des Handels in den Inflationsjahren 2022 und 2023 nicht gestiegen sind (S. 39). Die Ursache nennt deshalb nur das zeitliche Zusammenfallen, nicht einen belegten Preistreiber.
+
+**1103:** Eher Folge als Ursache (wie 403 bei Schule), bleibt aber als Sammelursache für die Einkommensseite: Maßnahmen, die Löhne erhöhen, setzen hier an.
+
+Entschieden: **1101–1105 Bund.** Steuern, Sozialabgaben, Mindestlohn, Wettbewerbsrecht und Energiepolitik liegen beim Bund.
+
+Verworfen:
+- *Allgemeine Inflation und Geldpolitik.* Liegt bei der EZB, von keiner Regierung steuerbar.
+- *Mehrwertsteuer auf Lebensmittel.* Eine Lösung, keine Ursache: Der Satz (7 %) hat sich nicht geändert. Maßnahmen dazu setzen an 1101 an (Preisniveau).
+- *Auflagen und Bürokratie in der Landwirtschaft verteuern Lebensmittel.* Die Monopolkommission nennt steigende Bürokratiekosten der Betriebe, aber keinen Beleg, dass sie die Verbraucherpreise treiben; die Erzeugerpreise sind weniger gestiegen als die Verbraucherpreise.
+- *Übergewinne der Unternehmen („Gierflation“).* Für die Eurozone 2022/23 diskutiert (IWF), für den deutschen Lebensmittelhandel laut Monopolkommission in diesen Jahren nicht belegt; die längerfristige Seite steckt in 1102.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Lebensmittel, Nahrungsmittel, Lebensmittelpreis, Mehrwertsteuer, Preisaufsicht, Preisüberwacher, Kartell, Marktmacht, Entflechtung, Einkommensteuer, Grundfreibetrag, Sozialabgaben, Sozialversicherungsbeiträge, Mindestlohn, Tarifbindung, Tariftreue, Minijob, Agrardiesel. Ergebnis: 36 Maßnahmen (IDs 6893–6928), 14 Instrumente (6879–6892), zwei Einzelbewertungen. Keine Maßnahme zu 1102, 1103 und 1105 haben Union, FDP und AfD, zu 1101 Grüne, FDP und AfD; da alle Parteien Maßnahmen zu anderen Ursachen haben, steht kein `keine_massnahme`-Vermerk. Nicht erfasst wurden: Senkung der Mehrwertsteuer in der Gastronomie (AfD, BSW; betrifft nicht den täglichen Bedarf), CO₂-Preis und Stromsteuer (Energiepreise), Mindesterzeugerpreise und Kauf zu kostendeckenden Preisen (Linke, BSW, Grüne; sollen Erzeugerpreise erhöhen, nicht Verbraucherpreise senken), Verbot von Mogelpackungen (Grüne; keine erfasste Ursache), steuerfreie Überstundenzuschläge (Union, FDP; Arbeitsanreiz, nicht Entlastung kleiner Einkommen).
+
+### Straßen und Brücken (12)
+
+Ziel: „Menschen kommen auf Straßen, Brücken und Radwegen sicher und ohne lange Sperrungen und Umwege ans Ziel.“
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1201 | Autobahnbrücken marode, Modernisierung weit hinter Plan (bis Ende 2024: 40 %), Autobahn GmbH fehlen Personal und Mittel | Bund | Bundesrechnungshof, 29. 4. 2025 | mehr Geld, Fonds, Vorrang Erhalt vor Neubau (breit geteilt; Vorrang Erhalt eher grün/links); schnellere Planung, weniger Vorgaben (eher wirtschaftsliberal/konservativ) |
+| 1202 | Sanierungsstau der Kommunen bei Straßen und Verkehrswegen rund 54 Mrd. Euro | Land | KfW-Kommunalpanel 2026 | mehr Geld für Kommunen (breit geteilt), Altschulden (eher links/Mitte), Aufgabenkritik (eher wirtschaftsliberal) |
+| 1203 | Kommunen setzen nur rund zwei Drittel der geplanten Investitionen um: Personal fehlt, Genehmigung und Vergabe aufwendig | Land | KfW-Kommunalpanel 2026 | Planungs- und Vergabebeschleunigung (eher wirtschaftsliberal/konservativ, inzwischen breit geteilt); Personal und Ausbildung in Bauverwaltungen (eher links/Mitte) |
+| 1204 | Radfahren gefährlicher: 462 Getötete 2025, +20,6 % seit 2015, vor allem Ältere auf Pedelecs; Unfallgegner meist Auto | Land | Destatis, Pressemitteilung N025/2026 | getrennte, sichere Radwege und Kreuzungen (eher grün/links); Helm, Training, Verkehrserziehung, Rücksicht aller (eher konservativ) |
+
+**1203:** Laut KfW hemmen vor allem Personalmangel in den Bauverwaltungen, komplexe Genehmigungs- und Vergabeverfahren und umfangreiche Bauvorschriften die Umsetzung. Die Ursache ist lösungsoffen: Maßnahmen können beim Personal oder bei den Verfahren ansetzen.
+
+**1204:** Destatis nennt die Zahlen, nicht die Gründe. Radverbände (ADFC) und der Verkehrssicherheitsrat sehen fehlende sichere Radwege als Hauptgrund; dafür gibt es keine unabhängige Quelle, die den Anstieg erklärt. Der Anstieg geht laut Destatis vor allem auf Pedelecs zurück, 61,5 % der Getöteten waren 65 Jahre oder älter. Die Ursache nennt deshalb nur den Befund, damit Maßnahmen an der Infrastruktur und am Verhalten ansetzen können.
+
+Entschieden: **1201 Bund; 1202–1204 Land.** Autobahnen und Bundesstraßen liegen beim Bund (Autobahn GmbH). Gemeinde-, Kreis- und Landesstraßen, die meisten Radwege und die kommunalen Bauverwaltungen liegen bei Ländern und Kommunen; der Bund beteiligt sich mit Geld (Sondervermögen, Radverkehrsförderung). Seine Maßnahmen zählen, wenn kein Bundesland gewählt ist.
+
+Verworfen:
+- *Zu viel Verkehr, besonders Lkw.* Belegt ist die Belastung der Brücken durch den Schwerverkehr, sie gehört aber zu 1201 (Grund für den schlechten Zustand); Maßnahmen zur Verlagerung auf die Schiene setzen dort an.
+- *Zu wenig Geld allgemein.* Teil von 1201 und 1202; die öffentliche Investitionslücke insgesamt ist schon Ursache 504 (Arbeitsplätze).
+- *Tempolimit, Parkplätze gegen Radwege.* Wertfragen ohne belegte Ursache für das Ziel des Themas.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Brücke, Straße, Autobahn, Sanierung, Erhalt, Planung, Genehmigung, Ersatzneubau, Umweltverträglichkeitsprüfung, Baustelle, Maut, Schuldenbremse, Investitionsprogramm, Kommunen, Altschulden, Gemeindefinanz, Radweg, Radverkehr, Fahrrad, Tempo 30, Vision Zero. Ergebnis: 28 Maßnahmen (IDs 6938–6965), 9 Instrumente (6929–6937), drei Einzelbewertungen. Da die Landesursachen 1202–1204 bisher nur mit den Bundesprogrammen erfasst sind, zählen ohne gewähltes Bundesland diese; die Landesprogramme folgen. Nicht erfasst wurden: Tempolimit auf Autobahnen (Grüne, SPD, Linke; betrifft nicht die Sicherheit von Radfahrenden, die Ursache 1204 beschreibt), Ablehnung von Tempolimit und Tempo 30 (Union, FDP, AfD; keine Maßnahme), Lkw-Parkplätze und Überholverbote (AfD; keine erfasste Ursache), Raststätten (BSW, Linke).
+
+**Landesprogramme** (1202–1204; 30. 9. 2026, KI-Entwurf): alle 21 Landesprogramme (ST, MV, BE), Stichwörter Landesstraße, Kreisstraße, Straße, Brücke, Sanierung, Erhalt, Investitionsstau, Finanzausgleich, Altschulden, Planungs- und Genehmigungsverfahren, Bauverwaltung, Straßenbauverwaltung, Radweg, Radverkehr, Radverkehrsnetz, Mobilitätsgesetz, Tempo 30, Verkehrssicherheit. Ergebnis: 58 Maßnahmen (IDs 7067–7124), 7 Landesinstrumente (7060–7066). Jede Partei hat in jedem Land mindestens eine Maßnahme. Keine Maßnahme zu 1203 (Planung, Personal der Bauverwaltung) haben SPD, Grüne und Linke in Sachsen-Anhalt, Grüne, Linke in Mecklenburg-Vorpommern sowie alle Parteien außer der Linken in Berlin; da jeder dieser Einträge schon Maßnahmen zu anderen Ursachen hat, steht dort kein `keine_massnahme`-Vermerk. Nicht erfasst wurden Neubauprojekte (Autobahnen, Ortsumgehungen, Elbquerungen), Rücknahmen von Radverkehrszielen (AfD Berlin) und die Ablehnung von Tempo 30 (Union Sachsen-Anhalt).
+
+### Internet und Mobilfunk (13)
+
+Ziel: „Menschen haben zu Hause schnelles Internet und unterwegs verlässlichen Mobilfunkempfang, auch auf dem Land.“
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1301 | Glasfaser erst für rund 43 % der Haushalte; wo sich der Ausbau nicht lohnt, braucht es teure Förderung, die privaten Ausbau teils verdrängt | Bund | WIK, Kurzstudie März 2026 | staatlicher oder kommunaler Ausbau, mehr Förderung (eher links/Mitte); Förderung zielgenauer, weniger Bürokratie, privater Ausbau zuerst (eher wirtschaftsliberal/konservativ) |
+| 1302 | Rund 2 % der Fläche ohne 4G/5G, vor allem Wald, Höhenlagen, Schutz- und Grenzgebiete | Bund | Bundesministerium für Digitales und Staatsmodernisierung, Analyse der weißen Flecken, 28. 10. 2025 | Versorgungsauflagen, staatliche Masten (eher links/Mitte); schnellere Genehmigung, Mitnutzung, nationales Roaming (quer durch das Spektrum) |
+
+**1301:** Laut WIK liegt die Glasfaserquote (Homes Passed) bei rund 42,9 % (Juni 2025). Rund 12 % der Glasfaserversorgung ist gefördert; die Studie sieht im Förderregime Anreize zur Überförderung und zum Verdrängen des eigenwirtschaftlichen Ausbaus. Die Ursache nennt beides: die Lücke dort, wo sich der Ausbau nicht lohnt, und die Schwächen der Förderung.
+
+Entschieden: **1301 und 1302 Bund.** Telekommunikationsrecht, Frequenzvergabe, Gigabitförderung und Mobilfunkförderung liegen beim Bund; die Länder ergänzen mit eigenen Programmen und Genehmigungsrecht.
+
+Verworfen:
+- *Lange Genehmigungen für Funkmasten und Tiefbau.* In der Debatte oft genannt, aber in den gefundenen unabhängigen Quellen nicht als Hauptursache belegt. Maßnahmen dazu setzen an 1301 oder 1302 an. Kandidat, sobald eine unabhängige Quelle vorliegt.
+- *Wenige nutzen vorhandene Glasfaser (aktive Anschlüsse 17 %).* Belegt (Bundesnetzagentur, Jahresbericht 2025), betrifft aber die Entscheidung der Haushalte, nicht das Ziel.
+- *Rückkehr der Marktmacht der Telekom beim Wechsel vom Kupfer- ins Glasfasernetz* (Monopolkommission, Sektorgutachten 2025). Betrifft Wettbewerb und Preise, nicht die Verfügbarkeit. Kandidat, falls das Ziel um Preise erweitert wird.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Glasfaser, Mobilfunk, Funkloch, Breitband, 5G, Gigabit, weiße Flecken, Internet, digitale Infrastruktur, Masten, Roaming, Mindestbandbreite. Ergebnis: 13 Maßnahmen (IDs 6970–6982), 4 Instrumente (6966–6969), zwei Einzelbewertungen. SPD, AfD und BSW nennen nur das Ziel, keinen Weg (Instrument 6969). Zu 1302 (Funklöcher) haben SPD, AfD und BSW keine Maßnahme. Nicht erfasst wurden Preisdeckel für Internetzugänge (Linke; betrifft Preise, nicht die Versorgung) und die Förderung der Digitalisierung von Häfen (AfD).
+
+### Behördengänge (14)
+
+Ziel: „Menschen erledigen Behördenangelegenheiten schnell, einfach und ohne unnötige Wege, möglichst digital.“
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1401 | Online-Angebote schwer zu finden, oft nicht durchgängig digital; nur 15 % sehen Erwartungen erfüllt | Land | Initiative D21/TU München, eGovernment MONITOR 2025 | Digitalisierung, zentrale Portale und Apps (breit geteilt) |
+| 1402 | Personalmangel: bis 2030 geht fast ein Drittel der Beschäftigten in den Ruhestand | Land | Nationaler Normenkontrollrat, Jahresbericht 2025, S. 35 | mehr Personal, bessere Bezahlung (eher links/gewerkschaftsnah); Automatisierung, Effizienz, Personal abbauen (eher wirtschaftsliberal/konservativ) |
+| 1403 | Register nicht vernetzt, Nachweise müssen immer wieder eingereicht werden | Bund | Nationaler Normenkontrollrat, Jahresbericht 2025, S. 55 | Once-Only, Registermodernisierung (breit geteilt); Datenschutzbedenken (eher links/liberal) |
+| 1404 | Verwaltung mit Aufgaben und Detailvorschriften überladen | Bund | Nationaler Normenkontrollrat, Jahresbericht 2025, S. 49 | Bürokratieabbau, Aufgabenkritik (eher wirtschaftsliberal/konservativ, inzwischen breit geteilt); Aufgaben bündeln, Staatsreform (breit geteilt) |
+
+**1401:** Laut eGovernment MONITOR werden digital eingereichte Anträge nicht schneller bearbeitet; genannt werden auch die schwere Auffindbarkeit und doppelte Dateneingaben. Letzteres ist 1403. Ebene **Land**: Die meisten Leistungen für Bürgerinnen und Bürger erbringen Länder und Kommunen; der Bund setzt Standards (OZG) und stellt Basisdienste bereit.
+
+**1403, 1404:** Ebene **Bund**, weil Registerrecht und die meisten Leistungsgesetze Bundesrecht sind. Der NKR weist darauf hin, dass die Länder nicht zur Anbindung an Bundeslösungen verpflichtet werden können; auch Landesmaßnahmen können deshalb ansetzen, zählen aber nur, wenn kein Bundesland gewählt ist.
+
+Verworfen:
+- *Datenschutz verhindert Digitalisierung.* In der Debatte häufig, als eigene Ursache nicht unabhängig belegt; der NKR nennt vor allem fehlende Standards und Register. Teil von 1403.
+- *Föderalismus, unklare Zuständigkeiten.* Belegt (NKR), aber als Ursache für Bürgerinnen und Bürger sichtbar über 1401 und 1403. Maßnahmen zur Staatsreform setzen an 1404 an.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Verwaltung, Verwaltungsdigitalisierung, Once-Only, Register, Onlinezugang, OZG, Bürgeramt, Behörde, Deutschland-App, DeutschlandID, digitale Identität, antragslos, öffentlicher Dienst, Bürokratieabbau, Ermessen, Digitalministerium. Ergebnis: 22 Maßnahmen (IDs 6989–7010), 6 Instrumente (6983–6988), vier Einzelbewertungen. AfD und Linke haben nur je eine Maßnahme zu 1401. Nicht erfasst wurden: Bürokratieabbau für Unternehmen (betrifft nicht Behördengänge von Bürgerinnen und Bürgern), Stellenabbau in Bundesministerien (Union, FDP; keine Maßnahme für schnellere Behördengänge), Recht auf analoges Leben (AfD; Zugang ohne Digitalisierung, keine erfasste Ursache), Genehmigungsfiktion für Bau- und Investitionsvorhaben (SPD; betrifft vor allem Unternehmen und Bauherren).
+
+**Landesprogramme** (1401, 1402; 30. 9. 2026, KI-Entwurf): alle 21 Landesprogramme, Stichwörter Verwaltung, Verwaltungsdigitalisierung, Onlinezugang, Serviceportal, Bürgeramt, Termin, App, Once-Only, KI, öffentlicher Dienst, Personalgewinnung, Ausbildung, Nachwuchs. Ergebnis: 28 Maßnahmen (IDs 7130–7157), 5 Landesinstrumente (7125–7129), eine Einzelbewertung. Jede Partei hat in jedem Land mindestens eine Maßnahme. Nicht erfasst wurden: Stellenabbau und Aufgabenkritik (Union Berlin und Sachsen-Anhalt, AfD Sachsen-Anhalt; keine Maßnahme gegen fehlendes Personal), Genehmigungsfiktionen (vor allem für Unternehmen und Bauherren, wie beim Bund), Recht auf analoge Verwaltung (BSW Sachsen-Anhalt; keine erfasste Ursache).
+
+### Autofahren (15)
+
+Ziel: „Wer auf das Auto angewiesen ist, kann sich das Fahren dauerhaft leisten, mit Verbrenner oder Elektroauto.“ Pendeln mangels Bus und Bahn gehört zum Thema Bus und Bahn (801).
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1501 | Spritpreis hängt am Rohöl-Weltmarkt; Iran-Krieg und Sperrung der Straße von Hormus 2026 | Bund | Monopolkommission, Policy Brief 16 (Juni 2026), S. 2 | Vorräte, Lieferländer, weniger Ölabhängigkeit (breit geteilt, Wege verschieden: E-Mobilität eher grün, heimische Förderung eher rechts) |
+| 1502 | Steuern und Abgaben (Energiesteuer, CO₂-Preis, Mehrwertsteuer) machen einen großen Teil des Preises aus | Bund | Wissenschaftliche Dienste des Bundestages, WD 4-3000-030/21 | Energiesteuer oder CO₂-Preis senken, Pendlerpauschale (eher konservativ/rechts, auch BSW); Klimageld statt Steuersenkung (eher grün/links, auch wirtschaftsliberal) |
+| 1503 | Wenig Wettbewerb bei Raffinerien und Großhandel; Senkungen kommen nicht vollständig an | Bund | Monopolkommission, Policy Brief 16 (Juni 2026), S. 1 | Kartellrecht, Übergewinnsteuer, Preisaufsicht (eher links); Markttransparenz, Wettbewerb (eher wirtschaftsliberal) |
+| 1504 | Elektroautos für viele zu teuer: 52 % der Haushalte ohne E-Auto nennen den Preis | Bund | KfW-Energiewendebarometer 2026, S. 23 | Kaufprämie, Social Leasing (eher links/Mitte); Technologieoffenheit, keine Subventionen (eher wirtschaftsliberal/konservativ) |
+| 1505 | In Mehrparteienhäusern kaum Lademöglichkeiten (9 Mio. Stellplätze an 21 Mio. Wohnungen unzureichend ausgestattet) | Bund | Bundesministerium für Verkehr, 25. 3. 2026 | Förderung und Recht auf Wallbox (breit geteilt); öffentliche Ladesäulen (eher grün/links) |
+
+**1501, 1503:** Laut Monopolkommission stiegen die Kraftstoffpreise binnen Wochen „teilweise um mehr als ein Drittel“; im europäischen Vergleich falle „die Preissteigerung in Deutschland besonders stark“ aus. Der Tankrabatt (Mai bis Juni 2026) sei „zu einem großen Teil, aber nicht vollständig“ weitergegeben worden, was „erneut auf ein Wettbewerbsproblem auf der vorgelagerten Marktstufe“ hindeute. Die Kostenseite (1501) und die Wettbewerbsseite (1503) sind getrennt, damit Maßnahmen an beiden ansetzen können.
+
+**1502:** Die Quelle ist von 2021, der Energiesteuersatz ist seither unverändert (65,45 Cent je Liter Benzin, 47,04 Cent Diesel). Der CO₂-Preis ist seither gestiegen (2026: 55 bis 65 Euro je Tonne); ab 2028 gilt der europäische Emissionshandel (EU-ETS2). Maßnahmen dazu hängen damit teils von EU-Entscheidungen ab (Umsetzbarkeit 1 nach dem Maßstab).
+
+**1504:** Der Preisabstand zu Verbrennern ist umstritten und sinkt; laut KfW ging der Anteil, der den Preis nennt, erstmals deutlich zurück (von 59 auf 52 %). Die Ursache nennt deshalb die Einschätzung der Haushalte, nicht einen festen Preisabstand.
+
+Entschieden: **1501–1505 Bund.** Energiesteuer, Kartellrecht, Förderung von E-Autos und Ladeinfrastruktur sowie das Wohnungseigentums- und Mietrecht (Anspruch auf Wallbox) liegen beim Bund.
+
+Verworfen:
+- *Unsicherheit durch das „Verbrenner-Aus“ (EU-Flottengrenzwerte ab 2035).* In der Debatte stark vertreten (eher konservativ/rechts), aber kein unabhängiger Beleg, dass sie das Fahren heute verteuert; betrifft Neuwagenkäufe und EU-Recht. Maßnahmen dazu setzen, wenn überhaupt, an 1504 an.
+- *Zu wenige öffentliche Ladesäulen allgemein.* Laut den gefundenen Quellen fehlen Lademöglichkeiten vor allem beim Laden zu Hause (1505). Schnellladen auf dem Land ist Teil davon.
+- *Hohe Versicherungs- und Werkstattkosten.* Belegt vor allem durch Verbandsquellen; kaum politisch steuerbar.
+- *Tempolimit, Parkplatzabbau, „Bevormundung“.* Wertfragen, im Spiel als persönliche Haltung (`wert`).
+
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Kraftstoff, Sprit, Benzin, Diesel, Energiesteuer, CO₂-Preis, CO₂-Abgabe, Klimageld, Klimabonus, Pendlerpauschale, Mobilitätsgeld, Tankstelle, Mineralöl, Raffinerie, E-Auto, Elektroauto, Elektromobilität, Kaufprämie, Leasing, Ladesäule, Ladeinfrastruktur, Wallbox, Verbrenner. Ergebnis: 18 Maßnahmen (IDs 7016–7033), 5 Instrumente (7011–7015), drei Einzelbewertungen. Zu 1501 (Rohölpreis) und 1503 (Wettbewerb bei Raffinerien und Großhandel) hat kein Programm eine Maßnahme; alle Programme wurden vor dem Iran-Krieg 2026 beschlossen. Union und FDP haben keine Maßnahme zu 1504, AfD und FDP keine zu 1505. Nicht erfasst wurden: Rücknahme des „Verbrenner-Verbots“ (Union, FDP, AfD, BSW; setzt an keiner erfassten Ursache an, siehe „Verworfen“), Ende der Förderung von E-Mobilität und Ladeinfrastruktur (AfD; keine Maßnahme für das Ziel), Ende der Sanktionen gegen Russland (AfD, BSW; die Programme nennen Gas, nicht Öl), Preise an Autobahnraststätten (BSW), Kfz-Steuer-Befreiung für E-Autos verlängern (SPD; geringer Betrag, betrifft die laufenden Kosten, nicht den Kaufpreis).
+
+### Heizungstausch (16)
+
+Ziel: „Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten.“ Die laufenden Heizkosten gehören zum Thema Energiepreise (302, 305).
+
+| ID | Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1601 | Viele halten den Umstieg für nicht lohnend (43 %) oder können ihn nicht bezahlen (32 %) | Bund | KfW-Energiewendebarometer 2026, S. 19 | Förderung, günstiger Strom für Wärmepumpen (eher grün/links/Mitte); Technologieoffenheit, keine Vorgaben (eher konservativ/wirtschaftsliberal) |
+| 1602 | Regeln für neue Heizungen mehrfach grundlegend geändert (zuletzt Juli 2026), ab 2028 europäischer CO₂-Preis | Bund | Bundesregierung, Gebäudemodernisierungsgesetz (Juli 2026) | verlässliche Regeln statt Wechsel (breit geteilt; Inhalt strittig: Vorgaben behalten eher grün, abschaffen eher konservativ/rechts) |
+| 1603 | Erst 26 % der Gemeinden haben ihre Wärmeplanung abgeschlossen | Land | BBSR, Analysen kompakt 09/2026 | Wärmeplanung beschleunigen und fördern (breit geteilt); Pflicht lockern (eher wirtschaftsliberal) |
+| 1604 | Mieterinnen und Mieter entscheiden nicht über die Heizung, tragen aber die Heizkosten | Bund | KfW-Energiewendebarometer 2026, S. 5 | Umlage begrenzen, Warmmietenneutralität (eher links/grün); Anreize für Vermieter (eher wirtschaftsliberal/konservativ) |
+
+**1601:** Laut KfW halten rund 43 % der Haushalte, die sich eine Wärmepumpe vorstellen können, die Investition für nicht lohnend; es folgen finanzielle Restriktionen (32 %) und fehlende Entscheidungsbefugnis in Mehrfamilienhäusern (16 %). Das ist die Sicht der Haushalte; ob sich der Umstieg rechnet, hängt vom Gebäude und vom Verhältnis von Strom- und Gaspreis ab (Energiepreise, 302).
+
+**1602:** Die 65-Prozent-Regel des Gebäudeenergiegesetzes (2024) ist mit dem Gebäudemodernisierungsgesetz entfallen; stattdessen gilt ab 2029 eine schrittweise Bio-Beimischung für Gas und Öl. Die Bundesregierung nennt „mehr Planungssicherheit“ als Ziel. Die Ursache ist lösungsoffen: Maßnahmen können Vorgaben verlässlich festschreiben oder abschaffen; bewertet wird, ob sie Klarheit schaffen.
+
+Entschieden: **1601, 1602, 1604 Bund; 1603 Land.** Gebäudeenergierecht, Förderung und Mietrecht liegen beim Bund. Die Wärmeplanung machen die Kommunen nach Landesrecht (Wärmeplanungsgesetz des Bundes, Landesgesetze).
+
+Verworfen:
+- *Zu wenige Handwerker und Installateure.* In der Debatte genannt, aber in den gefundenen unabhängigen Quellen nicht als Hemmnis beim Heizungstausch belegt (die KfW nennt Wirtschaftlichkeit, Geld und Entscheidungsbefugnis). Kandidat für später.
+- *Schlecht gedämmte Gebäude.* Wie bei Energiepreisen nur durch Verbandsquellen belegt; Maßnahmen zur Sanierung setzen an 1601 an (Wirtschaftlichkeit).
+- *Heizungsgesetz als Bevormundung.* Wertfrage; der belegte Teil (häufige Änderungen, Unsicherheit) ist 1602.
+
+**Erfassung** (30. 9. 2026, KI-Entwurf, nach dem Festlegen der Ursachen): alle 7 Bundesprogramme, Stichwörter Heizungsgesetz, Gebäudeenergiegesetz, GEG, Heizung, Heizungstausch, Wärmepumpe, Wärmeplanung, Wärmenetz, Fernwärme, Contracting, Leasing, Förderung, Modernisierungsumlage, Kappungsgrenze, Warmmietenneutralität, Wohngeld. Ergebnis: 20 Maßnahmen (IDs 7040–7059), 6 Instrumente (7034–7039), fünf Einzelbewertungen. Zu 1602 sind beide Richtungen gleich bewertet (Instrumente 7036 „abschaffen“ und 7037 „beibehalten“, je Wirksamkeit 1): Beide versprechen Klarheit, keine kann sie allein sichern. Die SPD-Aussage „Beschlossene Gesetze werden wir umsetzen“ steht im Klimakapitel und ist 7037 zugeordnet; bei der Prüfung bitte auf Passung achten. Nicht erfasst wurden: CO₂-Preis und Energiesteuern (Energiepreise), Fernwärme-Preisaufsicht und Gewinnverbot bei Wärmenetzen (SPD, Linke; Energiepreise), Ablehnung eines Anschlusszwangs an Fernwärme (FDP; keine Maßnahme), Holzheizungen erlauben (Union, FDP; keine erfasste Ursache).
+
+**Landesprogramme** (1603; 30. 9. 2026, KI-Entwurf): alle 21 Landesprogramme, Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme. Ergebnis: 18 Maßnahmen (IDs 7161–7178), 3 Landesinstrumente (7158–7160), eine Einzelbewertung, 4 × `keine_massnahme` (Union, Linke und BSW in Mecklenburg-Vorpommern, AfD in Berlin). Die Richtungen sind getrennt bewertet: Wärmeplanung unterstützen (Wirksamkeit 2), vereinfachen (1), Pflicht abschaffen (1, Umsetzbarkeit 1, weil Bundesrecht).
+
 ## Hinweise zur Quellenprüfung
 
 Die neuen Quellen hat die KI über Suchergebnisse geprüft, der Netzwerkzugang zu den Originalseiten war gesperrt. Die Betreiberin hat sie am 28. 9. 2026 im Original bestätigt:
@@ -344,3 +501,29 @@ Arzttermine, Miete, Energiepreise, Bus und Bahn (30. 9. 2026), von der KI im Ori
 - 804: „Seit Januar 2026 kostet das Deutschlandticket monatlich 63 Euro.“ Die Länder entscheiden „eigenständig ohne Einfluss des Bundes über die Preisgestaltung“; Bund und Länder zahlen je 1,5 Mrd. Euro (bundesregierung.de, Fragen und Antworten zum Deutschlandticket)
 
 Die Quelle zu 304 ist von 2022. Sie erklärt den Mechanismus, der unverändert gilt; die Betreiberin hat sie am 30. 9. 2026 als Quelle bestätigt.
+
+Neue Themen 11–16 (30. 9. 2026), von der KI im Original abgerufen, noch nicht von der Betreiberin bestätigt:
+
+- 1101: „Bei Nahrungsmitteln geschieht dies vor allem über steigende Kosten in der landwirtschaftlichen Produktion sowie für Logistik, insbesondere Transport und Lagerung. Hinzu kommen höhere Kosten für energieabhängige Vorleistungen wie Düngemittel.“ (Bundesbank, Monatsbericht Juni 2026); Ursache des Schocks: „Der Krieg im Nahen Osten und die Blockade der Straße von Hormus“
+- 1102: „Im Lebensmitteleinzelhandel vereinen die Edeka-Gruppe, Rewe-Gruppe, Schwarz-Gruppe und Aldi-Nord und Aldi-Süd große Teile des Marktes auf sich.“ „Auffällig ist, dass der Anstieg der Preisaufschläge auf den jeweiligen Stufen der Lebensmittellieferketten zeitlich mit dem Anstieg der Marktkonzentration zusammenfällt.“ (Monopolkommission, SG 84, S. 12 f.); Anteile 2023 S. 37; „In den beiden Jahren hoher Inflation in 2022 und 2023 ist keine Erhöhung der Preisaufschläge zu beobachten.“ (S. 39, Einzelhandel)
+- 1103: „Im Jahr 2025 erreichte der Reallohnindex mit 100 Punkten damit fast wieder das Reallohnniveau des Jahres 2019“; „Nach den Rückgängen in den Jahren 2020 bis 2023 stiegen die Reallöhne in den Folgejahren wieder an.“ (Destatis, PM 068 vom 27. 2. 2026)
+- 1104: „The tax wedge for the average single worker in Germany increased by 1.34 percentage points from 47.9% in 2024 to 49.3% in 2025“, Rang 2 von 38 (OECD, Taxing Wages 2026)
+- 1105: rund 6,3 Mio. Jobs, 16 %, Schwelle 14,32 Euro (Destatis, PM 434, Dezember 2025)
+- 1201: rund 5.000 Teilbauwerke bis 2032, bis Ende 2024 40 % der vorgesehenen Modernisierungen, 2024 nur 69 von 280 (Bundesrechnungshof, 29. 4. 2025)
+- 1202, 1203: Investitionsrückstand 231,2 Mrd. Euro, davon Straßen und Verkehrsinfrastruktur 53,7 Mrd. Euro; Hemmnisse Personalmangel in Bauverwaltungen, komplexe Genehmigungs- und Vergabeverfahren, Bauvorschriften; umgesetzt rund zwei Drittel der geplanten Investitionen (KfW, 17. 6. 2026)
+- 1204: 462 getötete Radfahrende 2025 (+3,8 %), 217 auf Pedelecs, +20,6 % gegenüber 2015; „61,5 % aller tödlich verunglückten Radfahrenden sind 65 Jahre oder älter“; Unfallgegner in 69,8 % ein Pkw (Destatis, PM N025 vom 27. 4. 2026)
+- 1301: Glasfaserausbauquote (Homes Passed) „ca. 42,9 %“ im Juni 2025; „rund 12 % der bestehenden Glasfaserversorgung“ gefördert; Förderregime mit Anreizen zu „Überförderung“ und „Crowding-Out des eigenwirtschaftlichen Netzausbaus“ (WIK, März 2026, S. 3 und 20)
+- 1302: „Derzeit sind etwa 2 Prozent der Fläche Deutschlands unversorgt.“ „Weiße Flecken sind überproportional in Wäldern, Höhenlagen, Naturschutz- und Grenzgebieten zu finden.“ (BMDS, 28. 10. 2025)
+- 1401: „15 Prozent der Bürger*innen sehen ihre Erwartungen an eine moderne digitale Verwaltung erfüllt“; Hürden: Auffindbarkeit, keine schnellere Bearbeitung digitaler Anträge, doppelte Dateneingaben (Initiative D21, 22. 9. 2025)
+- 1402: „Bis 2030 gehen viele geburtenstarke Jahrgänge in Rente, fast ein Drittel der Beschäftigten wird den öffentlichen Dienst verlassen.“ (NKR, Jahresbericht 2025, S. 35 der PDF)
+- 1403: Once-Only-Prinzip, Registermodernisierung mit OZG verbinden (NKR, Jahresbericht 2025, S. 55 der PDF)
+- 1404: Die kommunale Ebene „beklagt den ungebremsten Aufgabenanstieg, zu viele Detailvorschriften und Personalmangel“ (NKR, Jahresbericht 2025, S. 49 der PDF)
+- 1501: „Der Krieg im Iran treibt die Kraftstoffpreise in Deutschland stark nach oben.“ „Die Preise aller Kraftstoffsorten sind binnen weniger Wochen stark gestiegen, teilweise um mehr als ein Drittel.“ (Monopolkommission, Policy Brief 16, Juni 2026, S. 1 f.)
+- 1502: Energiesteuer 65,45 Cent je Liter Benzin, 47,04 Cent Diesel (Wissenschaftliche Dienste, WD 4-3000-030/21)
+- 1503: Weitergabe des Tankrabatts „zu einem großen Teil, aber nicht vollständig“; „Das deutet erneut auf ein Wettbewerbsproblem auf der vorgelagerten Marktstufe hin.“ (Policy Brief 16, S. 1)
+- 1504: „Am häufigsten wird der Preis genannt: Gut die Hälfte (52 %) der Haushalte ohne Elektroauto sieht darin ein Hemmnis.“ (KfW-Energiewendebarometer 2026, August 2026, S. 23 der PDF)
+- 1505: 21 Mio. Wohnungen in Mehrparteienhäusern, knapp 9 Mio. Stellplätze, „nur unzureichend mit Ladeinfrastruktur ausgestattet“ (BMV, 25. 3. 2026)
+- 1601: „Rund 43 % der Haushalte, die sich eine Wärmepumpe grundsätzlich vorstellen können, halten die Investition für nicht lohnend“; finanzielle Restriktionen rund 32 % (KfW-Energiewendebarometer 2026, S. 19 der PDF)
+- 1602: „Die gesetzliche Vorgabe eines einheitlichen Anteils von mindestens 65 Prozent erneuerbarer Energien […] entfällt.“ Verkündet 28. 7. 2026, gilt ab 29. 7. 2026 (bundesregierung.de)
+- 1603: 2.836 von 10.775 Gemeinden (26,3 %) mit abgeschlossener Wärmeplanung, 72 von 83 Großstädten fristgerecht (BBSR, Analysen kompakt 09/2026, Stand 30. 6. 2026)
+- 1604: Haushalte im eigenen Ein- oder Zweifamilienhaus nutzen zu 59 % mindestens eine Energiewendetechnologie, „fast viermal so häufig wie Haushalte in Mietwohnungen (15 %)“ (KfW-Energiewendebarometer 2026, S. 5 der PDF)

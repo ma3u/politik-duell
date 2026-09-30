@@ -1,0 +1,1308 @@
+{
+  "id": 12,
+  "name": "Straßen und Brücken",
+  "beschreibung": "Kaputte Straßen, gesperrte Brücken, lange Umwege und gefährliche Radwege.",
+  "ziel": "Menschen kommen auf Straßen, Brücken und Radwegen sicher und ohne lange Sperrungen und Umwege ans Ziel.",
+  "schlagwoerter": ["strasse", "bruecke", "schlagloch", "baustelle", "sperrung", "gesperrt", "umweg", "autobahn", "radweg", "fahrrad", "marode", "stau"],
+  "ursachen": [
+    {
+      "id": 1201,
+      "beschreibung": "Viele Autobahnbrücken sind marode, ihre Modernisierung liegt weit hinter dem Plan: Bis Ende 2024 war nur 40 % des Vorgesehenen geschafft; der Autobahn GmbH fehlen Personal und Mittel",
+      "quelle_url": "https://www.bundesrechnungshof.de/SharedDocs/Kurzmeldungen/DE/2025/brueckenmodernisierung/kurzmeldung.html",
+      "ebene": "bund",
+      "schlagwoerter": ["autobahnbruecke", "bruecke gesperrt", "talbruecke", "lkw-verbot", "vollsperrung"]
+    },
+    {
+      "id": 1202,
+      "beschreibung": "Die Kommunen schieben bei Straßen und Verkehrswegen einen Sanierungsstau von rund 54 Mrd. Euro vor sich her",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_897920.html",
+      "ebene": "land",
+      "schlagwoerter": ["schlagloch", "schlagloecher", "kaputte strasse", "gemeindestrasse", "ortsstrasse", "buergersteig", "gehweg"]
+    },
+    {
+      "id": 1203,
+      "beschreibung": "Bauvorhaben kommen schleppend voran: Kommunen setzen nur rund zwei Drittel ihrer geplanten Investitionen um; es fehlt Personal, Genehmigung und Vergabe sind aufwendig",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_897920.html",
+      "ebene": "land",
+      "schlagwoerter": ["dauert ewig", "baustelle seit", "genehmigung", "planung", "nichts passiert", "jahrelang"]
+    },
+    {
+      "id": 1204,
+      "beschreibung": "Radfahren ist gefährlicher geworden: 2025 starben 462 Radfahrende, 20,6 % mehr als 2015, vor allem Ältere auf Pedelecs; Unfallgegner ist meist ein Auto",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_N025_461.html",
+      "ebene": "land",
+      "schlagwoerter": ["radweg", "fahrradweg", "radfahren", "fahrrad", "pedelec", "e-bike", "radfahrer", "gefaehrlich", "kreuzung"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6929,
+      "name": "Erhalt und Sanierung von Autobahnen, Straßen und Brücken ausreichend und verlässlich finanzieren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr und planbares Geld ist eine Voraussetzung, um den Rückstand bei den Brücken aufzuholen; laut Bundesrechnungshof fehlen der Autobahn GmbH aber auch Personal und Steuerung. Seit 2025 steht mit dem Sondervermögen Infrastruktur zusätzliches Geld bereit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bundesrechnungshof.de/SharedDocs/Pressemitteilungen/DE/2025/brueckenmodernisierung.html"
+    },
+    {
+      "id": 6930,
+      "name": "Vorrang für Sanierung vor Neu- und Ausbau von Straßen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bündelt knappe Planungs- und Baukapazitäten auf den Erhalt, wie es der Bundesrechnungshof für die Brücken fordert; weniger Neubau kann Engpässe auf überlasteten Strecken länger bestehen lassen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bundesrechnungshof.de/SharedDocs/Statements/DE/2025/brueckenmodernisierung.html"
+    },
+    {
+      "id": 6931,
+      "name": "Großes Investitionsprogramm, Investitionen von der Schuldenbremse ausnehmen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Geld für Bund, Länder und Kommunen kann Sanierungsstau abbauen; ob es bei Straßen und Brücken ankommt und verbaut werden kann, hängt von Personal und Verfahren ab. Braucht eine Grundgesetzänderung, wie sie 2025 für das Sondervermögen beschlossen wurde.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6932,
+      "name": "Finanzierungskreislauf Straße: Lkw-Maut für die Autobahn GmbH, privates Kapital",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Macht die Finanzierung der Autobahnen planbarer und unabhängiger vom Haushalt; öffentlich-private Partnerschaften waren laut Bundesrechnungshof bisher oft teurer als konventionelle Vergabe.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6933,
+      "name": "Planung und Genehmigung beschleunigen, Ersatzneubauten ohne Planfeststellung oder Umweltprüfung",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verkürzt die Zeit bis zum Ersatz maroder Brücken, bei denen sich an Lage und Umweltwirkung wenig ändert; seit 2023 gibt es dafür schon Erleichterungen. Nach Bundesrechnungshof und KfW bremsen vor allem Personal und Geld, nicht nur die Verfahren.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6934,
+      "name": "Kommunalfinanzen stärken: Altschuldenlösung, Gemeindefinanzreform",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gibt überschuldeten Kommunen wieder Spielraum für Investitionen; ob das Geld in Straßen fließt, entscheiden die Kommunen. Eine Altschuldenlösung braucht eine Einigung von Bund und Ländern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6935,
+      "name": "Güterverkehr von der Straße auf die Schiene verlagern",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schwere Lkw belasten Brücken am stärksten, weniger Lkw verlangsamen den Verschleiß; eine spürbare Verlagerung braucht aber Jahre und mehr Kapazität auf der Schiene.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6936,
+      "name": "Radwegenetz ausbauen und dauerhaft finanzieren",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Getrennte, durchgehende Radwege senken das Unfallrisiko nach vielen Studien; an Kreuzungen, wo die meisten schweren Unfälle passieren, hängt es von der Gestaltung ab. Bauen müssen Länder und Kommunen, der Bund kann fördern.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6937,
+      "name": "Tempo 30 innerorts erleichtern oder zur Regel machen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Niedrigere Geschwindigkeit verringert Zahl und Schwere von Unfällen mit Radfahrenden und Fußgängern deutlich; auf Landstraßen und an Hauptverkehrsachsen, wo viele schwere Radunfälle passieren, ändert es nichts.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 7060,
+      "name": "Landes- und kommunale Straßen und Brücken sanieren (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Geld und klare Prioritäten für den Erhalt bauen den Sanierungsstau ab; seit 2025 stehen den Ländern Mittel aus dem Sondervermögen Infrastruktur zur Verfügung. Ob sie verbaut werden, hängt von Personal und Verfahren ab.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7061,
+      "name": "Kommunen finanziell stärken: Finanzausgleich, Investitionspauschalen, Altschulden (Landesprogramm)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gibt Kommunen Spielraum für Investitionen; ob das Geld in Straßen fließt, entscheiden sie selbst, und der Landeshaushalt ist begrenzt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7062,
+      "name": "Planung, Genehmigung und Vergabe im Land beschleunigen (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Das Land kann Bauordnung, Vergaberecht und Verwaltungsabläufe selbst ändern und so Verfahren verkürzen; laut KfW bremst aber vor allem fehlendes Personal.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7063,
+      "name": "Bauverwaltungen personell und finanziell stärken (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt am größten Hemmnis an, das die KfW nennt; Ingenieurinnen und Ingenieure sind knapp, neue Stellen lassen sich nicht sofort besetzen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7064,
+      "name": "Radwege ausbauen und sanieren, sichere und durchgängige Netze (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Getrennte, durchgehende Radwege und sichere Kreuzungen senken das Unfallrisiko nach vielen Studien; die Wirkung hängt von der Gestaltung ab, und neue Wege entstehen nur nach und nach.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7065,
+      "name": "Tempo 30 innerorts ausweiten, besonders an Schulen, Kitas und Seniorenheimen (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Niedrigere Geschwindigkeit verringert Zahl und Schwere von Unfällen mit Radfahrenden und Fußgängern; seit 2024 können Länder und Kommunen Tempo 30 leichter anordnen.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 7066,
+      "name": "Verkehrserziehung und Sicherheitsangebote, auch für Ältere (Landesprogramm)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Richtet sich an Gruppen mit hohem Risiko, etwa ältere Menschen auf Pedelecs; wie stark Trainings die Zahl schwerer Unfälle senken, ist kaum untersucht.",
+      "evidenz": "offen"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6938,
+          "instrument": 6929,
+          "beschreibung": "Auskömmliche Finanzierung von Autobahnen, Brücken und Straßen",
+          "ursachen_ids": [1201],
+          "zitat": "Wir stehen für eine auskömmliche Finanzierung von Autobahnen, Brücken- und Straßeninfrastruktur.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6939,
+          "instrument": 6933,
+          "beschreibung": "Ersatzneubauten per Anzeigeverfahren statt Planfeststellung zulassen",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "Ersatzneubauten, unwesentliche Änderungen oder Erweiterungen können anstelle des Planfeststellungsverfahrens durch ein Anzeigeverfahren zugelassen werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6940,
+          "instrument": 6936,
+          "beschreibung": "Neue Radwege und Ausbau des Radnetzes",
+          "ursachen_ids": [1204],
+          "zitat": "Dazu setzen wir auf neue Radwege, den Ausbau des Netzes und Mobilstationen, vor allem an Verkehrsknotenpunkten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=75",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6941,
+          "instrument": 6929,
+          "beschreibung": "Autobahnnetz und vor allem Brücken dringend sanieren",
+          "ursachen_ids": [1201],
+          "zitat": "Das deutsche Autobahnnetz muss aber dringend saniert werden, insbesondere die Brücken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6942,
+          "instrument": 6933,
+          "beschreibung": "Deutschlandpakt zur Planungs- und Genehmigungsbeschleunigung fortsetzen",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "Die Bundesregierung hat im letzten Jahr mit den Ländern einen Deutschlandpakt zur Planungs-, Genehmigungs- und Umsetzungsbeschleunigung vereinbart",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=9",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6943,
+          "instrument": 6934,
+          "beschreibung": "Lösung für kommunale Altschulden, Kommunalfinanzen verbessern",
+          "ursachen_ids": [1202],
+          "zitat": "Es bedarf endlich einer Lösung des spezifischen Problems der kommunalen Altschulden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6944,
+          "beschreibung": "Größere Planungskapazitäten der Kommunen, gemeinsamer Personaleinsatz",
+          "ursachen_ids": [1203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Setzt am Personalmangel der Bauverwaltungen an, den die KfW als größtes Hemmnis nennt; wie der Bund dazu beitragen will, bleibt offen, zuständig sind Länder und Kommunen.",
+          "evidenz": "offen",
+          "zitat": "Außerdem sind größere und moderne Kapazitäten zur Infrastrukturplanung der Kommunen erforderlich, etwa für kommunenübergreifende Investitionsplanung oder gemeinsamen Personaleinsatz.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6945,
+          "instrument": 6935,
+          "beschreibung": "Verkehr von der Straße auf Schiene und Wasserstraße lenken",
+          "ursachen_ids": [1201],
+          "zitat": "Wir werden Verkehr von der Straße vor allem auf die Schiene und auch auf die Wasserstraße lenken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6946,
+          "instrument": 6936,
+          "beschreibung": "Bundesweit vernetzte Radschnellwege und Fahrradparkhäuser fördern",
+          "ursachen_ids": [1204],
+          "zitat": "Im Sinne der Intermodalität fördern wir die Fahrradinfrastruktur mit bundesweit vernetzten Radschnellwegen und mit Fahrradparkhäusern",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6947,
+          "beschreibung": "Vision Zero im Straßenverkehrsrecht verankern",
+          "ursachen_ids": [1204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein gesetzliches Ziel ohne Verkehrstote kann Behörden verpflichten, Sicherheit bei Planung und Anordnungen stärker zu gewichten; welche Regeln sich konkret ändern, bleibt offen.",
+          "evidenz": "offen",
+          "zitat": "Für eine echte Gleichberechtigung der Verkehrsteilnehmenden werden wir das Straßenverkehrsrecht weiter reformieren und die Vision Zero fest verankern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6948,
+          "instrument": 6929,
+          "beschreibung": "Überjährige Finanzierung für den Erhalt von Straßen und Brücken über den Deutschlandfonds",
+          "ursachen_ids": [1201],
+          "zitat": "überjährige Finanzierungsgrundlage für den Erhalt von Straßen und Brücken, für den Ausbau unserer Schieneninfrastruktur sowie unseres öffentlichen Nahverkehrs zu schaffen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6949,
+          "instrument": 6930,
+          "beschreibung": "Sanierung statt Neubau im Straßennetz",
+          "ursachen_ids": [1201],
+          "zitat": "ist das Straßennetz bereits flächendeckend gut ausgebaut und benötigt daher Sanierungen statt Neubau.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6950,
+          "instrument": 6936,
+          "beschreibung": "Ausbau eines guten Radwegenetzes dauerhaft finanzieren",
+          "ursachen_ids": [1204],
+          "zitat": "sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6951,
+          "instrument": 6937,
+          "beschreibung": "Kommunen flächendeckend Tempo 30 innerorts ermöglichen",
+          "ursachen_ids": [1204],
+          "zitat": "In einem nächsten Schritt wollen wir unseren Kommunen noch mehr Spielräume einräumen, etwa um flächendeckend innerorts Tempo 30 zu ermöglichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=48",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6952,
+          "instrument": 6934,
+          "beschreibung": "Altschuldenfonds von Bund und Ländern",
+          "ursachen_ids": [1202],
+          "zitat": "setzen wir uns für einen von Bund und Ländern finanzierten Altschuldenfonds ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=108",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6953,
+          "instrument": 6933,
+          "beschreibung": "Ersatzneubauten genehmigungsfrei stellen, Planungszeiten halbieren",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "wollen wir Ersatzneubauten von Infrastruktur generell genehmigungsfrei stellen, auch wenn diese erweitert und an den wachsenden Bedarf angepasst werden müssen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6954,
+          "beschreibung": "Baustellen-Turbo: Ausschreibungen belohnen schnelles, fristgerechtes Bauen",
+          "ursachen_ids": [1203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Bonus-Malus-Regeln in Bauverträgen können Bauzeiten verkürzen und sind erprobt; an fehlendem Personal und Geld ändern sie nichts.",
+          "evidenz": "gemischt",
+          "zitat": "Wir Freie Demokraten wollen weniger Staus durch den Baustellen-Turbo.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6955,
+          "instrument": 6932,
+          "beschreibung": "Finanzierungskreislauf Straße mit Lkw-Maut und privatem Kapital",
+          "ursachen_ids": [1201],
+          "zitat": "Wir wollen den Finanzierungskreislauf Straße stärken, eigene Einnahmen für die Autobahn GmbH durch die LKW-Maut und eine Öffnung für privates Kapital, um eine auskömmliche und überjährige Planung und Finanzierung zu ermöglichen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6956,
+          "instrument": 6929,
+          "beschreibung": "Planvolle, kontinuierliche Sanierung von Straßen und Brücken",
+          "ursachen_ids": [1201],
+          "zitat": "planvolle, kontinuierliche Sanierung von Straßen, Schienenwegen und Brücken",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6957,
+          "instrument": 6933,
+          "beschreibung": "Keine Umweltverträglichkeitsprüfung bei Ersatzbauten, effizientere Baustellen",
+          "ursachen_ids": [1201, 1203],
+          "zitat": "Das geht nur mit effizienten Maßnahmen in der Planung und Ausführung von Baustellen sowie dem Wegfall der Umweltverträglichkeitsprüfung bei Ersatzbauten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=45",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6958,
+          "instrument": 6934,
+          "beschreibung": "Gemeindefinanzreform und Altschuldenfonds für überschuldete Kommunen",
+          "ursachen_ids": [1202],
+          "zitat": "Um die Kommunen zu unterstützen, brauchen wir eine Gemeindefinanzreform, die 100-prozentige Anrechnung der kommunalen Finanzkraft im Länderfinanzausgleich und einen Altschuldenfonds für überschuldete Kommunen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=13",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6959,
+          "instrument": 6937,
+          "beschreibung": "Innerorts Tempo 30 außer auf Hauptverkehrsachsen",
+          "ursachen_ids": [1204],
+          "zitat": "innerorts Tempo 30 – außer auf Hauptverkehrsachsen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6960,
+          "instrument": 6930,
+          "beschreibung": "Beim Straßenbau auf die Sanierung des Bestands konzentrieren, keine neuen Autobahnen",
+          "ursachen_ids": [1201],
+          "zitat": "Wir wollen uns beim Straßenbau auf die Sanierung des Bestands konzentrieren",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6961,
+          "instrument": 6935,
+          "beschreibung": "Güterverkehr von der Straße auf die Schiene verlagern",
+          "ursachen_ids": [1201],
+          "zitat": "Wir wollen den Güterverkehr auf der Straße reduzieren und auf die Schiene verlagern",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6962,
+          "instrument": 6936,
+          "beschreibung": "Flächendeckendes bundesweites Radverkehrsnetz, sichere Radwege",
+          "ursachen_ids": [1204],
+          "zitat": "Deutschland braucht ein flächendeckendes bundesweites Radverkehrsnetz",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=44",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6963,
+          "instrument": 6931,
+          "beschreibung": "Investitionen in Brücken und Straßen aus der Schuldenbremse ausklammern, großes Investitionsprogramm",
+          "ursachen_ids": [1201, 1202],
+          "zitat": "Wir wollen Investitionen in Brücken, Straßen, Schienen, Schulen, Wohnungen und Netze aus der Schuldenbremse ausklammern und den dramatischen Investitionsstau, der zum Verfall unserer Infrastruktur führt, ohne weiteren Verzug durch ein großes Investitionsprogramm beheben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6964,
+          "instrument": 6934,
+          "beschreibung": "Gerechte Altschuldenlösung, Kommunen mit nötigen Mitteln ausstatten",
+          "ursachen_ids": [1202],
+          "zitat": "Ein wichtiger Hebel wäre eine gerechte Altschuldenlösung für die Kommunen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6965,
+          "instrument": 6929,
+          "beschreibung": "Mehr Geld für Straßenbau und die Erneuerung von Brücken",
+          "ursachen_ids": [1201],
+          "zitat": "Es braucht mehr Geld für den Straßenbau und für die Erneuerung von Brücken in Deutschland.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7067,
+          "instrument": 7060,
+          "beschreibung": "Landesweiter Brückensanierungsplan",
+          "ursachen_ids": [1202],
+          "zitat": "Zudem setzen wir uns für die Erstellung eines landesweiten Brückensanierungsplans sowie weitere feste Elb-Querungen ein.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=62",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7068,
+          "instrument": 7062,
+          "beschreibung": "Planung und Genehmigung beschleunigen, Bearbeitungsfristen, vereinfachte Verfahren für Ersatzneubauten",
+          "ursachen_ids": [1203],
+          "zitat": "Planung und Genehmigungsprozesse werden wir wirksam beschleunigen, Gesetze überprüfen und eine zeitliche Begrenzung für die Bearbeitung einführen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=55",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7069,
+          "instrument": 7064,
+          "beschreibung": "Mehr Radwege bauen, regionale Radwegekonzepte unterstützen",
+          "ursachen_ids": [1204],
+          "zitat": "Wir wollen die Zahl der gebauten Radwege steigern und regionale Radwegekonzepte stärker unterstützen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=63",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7070,
+          "instrument": 7066,
+          "beschreibung": "Radfahrausbildung und Verkehrssicherheitsangebote, auch für Ältere",
+          "ursachen_ids": [1204],
+          "zitat": "Freiwillige Angebote zur Verkehrssicherheit werden wir auch für unsere Seniorinnen und Senioren anbieten und ausbauen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=63",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7071,
+          "instrument": 7060,
+          "beschreibung": "Straßen und Brücken instand setzen, Sanierung hat Priorität",
+          "ursachen_ids": [1202],
+          "zitat": "Reparatur und Sanierung haben grundsätzlich Priorität, zugleich werden notwendige Neubauprojekte umgesetzt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7072,
+          "instrument": 7064,
+          "beschreibung": "Mindestens zehn Prozent der Landesstraßenbaumittel für Fuß- und Radverkehr, geschlossenes Radverkehrsnetz",
+          "ursachen_ids": [1204],
+          "zitat": "Mindestens zehn Prozent der Landesmittel für den Straßenbau werden dauerhaft für Fuß- und Radverkehr eingesetzt",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7073,
+          "instrument": 7066,
+          "beschreibung": "Vision Zero, Verkehrserziehung und Unfallprävention stärken",
+          "ursachen_ids": [1204],
+          "zitat": "Verkehrserziehung, Prävention und die Arbeit der Verkehrswachten werden gestärkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7074,
+          "instrument": 7060,
+          "beschreibung": "Erhalt von Straßen und Brücken vor Neubau priorisieren",
+          "ursachen_ids": [1202],
+          "zitat": "Deshalb wollen wir den Erhalt von Straßen und Brücken konsequent priorisieren, bevor neue Infrastruktur geplant wird.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7075,
+          "instrument": 7061,
+          "beschreibung": "Reform der Kommunalfinanzierung, Altschuldenfonds",
+          "ursachen_ids": [1202],
+          "zitat": "Zur Entlastung strukturell überschuldeter Kommunen wollen wir einen Altschuldenfonds einrichten.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=97",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7076,
+          "instrument": 7064,
+          "beschreibung": "Radwegemittel auf mindestens 15 Mio. Euro im Jahr, Radwege an Landes- und Kreisstraßen",
+          "ursachen_ids": [1204],
+          "zitat": "Wir fordern zudem, die Mittel für den Radwegebau auf mindestens 15 Millionen Euro pro Jahr zu erhöhen",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=27",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7077,
+          "instrument": 7060,
+          "beschreibung": "Erhalt von Landes- und Kreisstraßen hat Priorität, Investitionsquote erhöhen",
+          "ursachen_ids": [1202],
+          "zitat": "Beim Straßenbau hat für uns weiterhin der Erhalt Priorität.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7078,
+          "instrument": 7062,
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, interkommunale Kooperation",
+          "ursachen_ids": [1203],
+          "zitat": "Wir beschleunigen Planungs- und Genehmigungsverfahren, stärken kommunale Verantwortung und erleichtern interkommunale Kooperationen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=58",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7079,
+          "instrument": 7064,
+          "beschreibung": "Radwegenetz weiter ausbauen, sicher für Schülerinnen und Schüler",
+          "ursachen_ids": [1204],
+          "zitat": "Wir wollen das Radwegenetz weiter ausbauen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7080,
+          "instrument": 7060,
+          "beschreibung": "Investitionsstau bei Straßen und Brücken unverzüglich abbauen, Gesamtkonzept zur Finanzierung",
+          "ursachen_ids": [1202],
+          "zitat": "Der Investitionsstau muss unverzüglich abgebaut werden",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=197",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7081,
+          "instrument": 7062,
+          "beschreibung": "Planungsverfahren für Radwege vereinfachen und beschleunigen",
+          "ursachen_ids": [1203, 1204],
+          "zitat": "sind insbesondere die Planungsverfahren für Radwege zu vereinfachen und zu beschleunigen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=204",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7082,
+          "instrument": 7064,
+          "beschreibung": "Landesförderung für kommunale Radverkehrsnetze deutlich erhöhen",
+          "ursachen_ids": [1204],
+          "zitat": "Ebenso sind die Fördermittel des Landes zur Unterstützung des kommunalen Radverkehrsnetzes deutlich zu erhöhen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=204",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7083,
+          "instrument": 7060,
+          "beschreibung": "Fuß- und Radwege, Straßen und Brücken nachhaltig instand halten",
+          "ursachen_ids": [1202],
+          "zitat": "Fuß- und Radwege, Straßen, Brücken, Schulen, Sport- und Kulturstätten werden nachhaltig instandgehalten und modernisiert",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=81",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7084,
+          "instrument": 7064,
+          "beschreibung": "Sichere, durchgehende Radwege für Kinder und Jugendliche",
+          "ursachen_ids": [1204],
+          "zitat": "sichere Radwege für Kinder und Jugendliche ausbauen",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=64",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7085,
+          "instrument": 7065,
+          "beschreibung": "Sichere Schulwege mit Tempo 30 und markierten Querungen",
+          "ursachen_ids": [1204],
+          "zitat": "sichere Schulwege stärken – Tempo 30, gut markierte Querungen",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7086,
+          "instrument": 7061,
+          "beschreibung": "Kommunalfinanzausgleich stärken, Investitionsprogramme, Entschuldung",
+          "ursachen_ids": [1202],
+          "zitat": "Das Land Sachsen-Anhalt muss dazu eigene Investitionsprogramme auflegen, den Kommunalfinanzausgleich stärken, landeseigene Gesellschaften gezielt einsetzen und die Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen dauerhaft ausbauen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=19",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7087,
+          "instrument": 7062,
+          "beschreibung": "Bau und Sanierung beschleunigen: leistungsbezogene Vergabe, verbindliche Bauzeitenpläne",
+          "ursachen_ids": [1203],
+          "zitat": "Bau und Sanierung von Infrastruktur müssen beschleunigt werden, unter anderem durch leistungsbezogene Vergabe, verbindliche Bauzeitenpläne und fristgerechte Reparaturen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7088,
+          "instrument": 7064,
+          "beschreibung": "Alltagstaugliche, sichere Radwege",
+          "ursachen_ids": [1204],
+          "zitat": "Neben touristischen Angeboten stehen alltagstaugliche, sichere Radwege, Bike-&-Ride- und Park-&-Ride-Systeme im Fokus.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=33",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7089,
+          "instrument": 7061,
+          "beschreibung": "Finanzausgleichsgesetz novellieren, kommunale Finanzausstattung dauerhaft stärken",
+          "ursachen_ids": [1202],
+          "zitat": "Mit einer Novellierung des Finanzausgleichsgesetzes werden … wir die kommunale Finanzausstattung strukturell und dauerhaft stärken.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=41",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7090,
+          "instrument": 7063,
+          "beschreibung": "Straßenbauverwaltung des Landes finanziell und personell stärken",
+          "ursachen_ids": [1203],
+          "zitat": "die Straßenbauverwaltung des Landes finanziell, personell und organisatorisch so … stärken, dass sie ihren Aufgaben bei Planung, Bau und Unterhaltung der Bundes-, … Landes- und Kreisstraßen wieder vollumfänglich nachkommen kann.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=114",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7091,
+          "instrument": 7062,
+          "beschreibung": "Landesbeschleunigungsgesetz mit Fristen und parallelen Genehmigungsschritten",
+          "ursachen_ids": [1203],
+          "zitat": "Mit einem Landesbeschleunigungsgesetz werden wir Bürokratie reduzieren und … Planungs- und Genehmigungsverfahren beschleunigen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=104",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7092,
+          "instrument": 7064,
+          "beschreibung": "Kommunen bei Erhalt, Sanierung und Pflege der Radwege stärker unterstützen",
+          "ursachen_ids": [1204],
+          "zitat": "Land die Kommunen bei Erhalt, Sanierung und Pflege der Radwegeinfrastruktur … stärker unterstützen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7093,
+          "instrument": 7060,
+          "beschreibung": "Erhaltung der Straßen und Brücken, Sondervermögen nutzen",
+          "ursachen_ids": [1202],
+          "zitat": "Wir legen neben der Erhaltung der Straßen und Brücken die Priorität auf den Ausbau von Ortsdurchfahrten.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=27",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7094,
+          "instrument": 7062,
+          "beschreibung": "Genehmigungserleichterungen für Radwegeprojekte konsequent nutzen",
+          "ursachen_ids": [1203, 1204],
+          "zitat": "die im Bundesrecht versprochenen Erleichterungen für schnellere und einfachere Genehmigungsverfahren gerade für Radwegeprojekte konsequent nutzen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7095,
+          "instrument": 7064,
+          "beschreibung": "Ausbau und Erhalt von Radwegen, landesweites Radwegenetz",
+          "ursachen_ids": [1204],
+          "zitat": "Wir wollen gemeinsam mit den Kommunen den Ausbau und Erhalt von Radwegen weiterhin forciert voranbringen",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7096,
+          "instrument": 7064,
+          "beschreibung": "Flächendeckendes Fuß- und Radverkehrsnetz, Landesradnetz zügig umsetzen",
+          "ursachen_ids": [1204],
+          "zitat": "Wir bauen ein flächendeckendes Fuß- und Radverkehrsnetz mit sicheren, durchgehenden und komfortablen Verbindungen im ganzen Land auf.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=23",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7097,
+          "instrument": 7060,
+          "beschreibung": "Erhalt vor Neubau, Sanierungsstau bei Landesstraßen und Brücken abarbeiten",
+          "ursachen_ids": [1202],
+          "zitat": "Erhalt vor Neubau priorisieren. Der Sanierungsstau bei Landesstraßen und Brücken muss systematisch abgearbeitet werden.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=66",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7098,
+          "instrument": 7061,
+          "beschreibung": "Investitionsmittel über den kommunalen Finanzausgleich statt kleinteiliger Förderprogramme",
+          "ursachen_ids": [1202],
+          "zitat": "Kommunen stärker entlasten, indem Investitionsmittel über den kommunalen Finanzausgleich ohne kleinteilige Förderprogramme ausgereicht werden.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=66",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7099,
+          "instrument": 7062,
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, Genehmigungsfiktionen",
+          "ursachen_ids": [1203],
+          "zitat": "Planungs- und Genehmigungsverfahren beschleunigen, etwa mit Genehmigungsfiktionen, damit Verfahren nicht endlos verschleppt werden können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=66",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7100,
+          "instrument": 7064,
+          "beschreibung": "Kommunen beim Ausbau der Fahrradinfrastruktur unterstützen",
+          "ursachen_ids": [1204],
+          "zitat": "die Kommunen dabei unterstützen, die Fahrradinfrastruktur im Land weiter auszubauen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7101,
+          "instrument": 7060,
+          "beschreibung": "Mehr Haushaltsmittel für den Erhalt der Straßen, einfachere Förderpraxis",
+          "ursachen_ids": [1202],
+          "zitat": "Dazu bedarf es größerer Haushaltsmittel und einer Entwirrung der viel zu komplizierten Förderpraxis.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=71",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7102,
+          "instrument": 7062,
+          "beschreibung": "Planung und Genehmigung von Straßenbauvorhaben deutlich vereinfachen",
+          "ursachen_ids": [1203],
+          "zitat": "Ebenfalls müssen die Planung und Genehmigung von Straßenbauvorhaben deutlich vereinfacht werden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=71",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7103,
+          "instrument": 7064,
+          "beschreibung": "Radverkehrsmaßnahmen als kommunale Pflichtaufgabe anerkennen",
+          "ursachen_ids": [1204],
+          "zitat": "setzen wir uns für die Anerkennung von Radverkehrsmaßnahmen als kommunale Pflichtaufgabe ein.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=71",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7104,
+          "instrument": 7061,
+          "beschreibung": "Kommunen bei Projektbürokratie und Altschulden entlasten",
+          "ursachen_ids": [1202],
+          "zitat": "Kommunen bei Projektbürokratie und Altschulden entlasten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=8",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7105,
+          "instrument": 7064,
+          "beschreibung": "Bestehende Radwege erhalten, erneuern und landesweit ausbauen",
+          "ursachen_ids": [1204],
+          "zitat": "Bestehende Radwege erhalten, erneuern und landesweit ausbauen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7106,
+          "instrument": 7060,
+          "beschreibung": "Konsequente Sanierung von Landesstraßen und Brücken nach Priorität",
+          "ursachen_ids": [1202],
+          "zitat": "Konsequente Sanierung von Landesstraßen und Brücken nach Priorität.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=90",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7107,
+          "instrument": 7062,
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen",
+          "ursachen_ids": [1203],
+          "zitat": "Beschleunigung von Planungs- und Genehmigungsverfahren, ohne Abstriche bei Rechtssicherheit und Beteiligung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7108,
+          "instrument": 7064,
+          "beschreibung": "Rad- und Gehwege mitplanen, wo sinnvoll und sicher",
+          "ursachen_ids": [1204],
+          "zitat": "Mitplanung von Rad- und Gehwegen dort, wo sie sinnvoll und sicher sind.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=90",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7109,
+          "instrument": 7060,
+          "beschreibung": "Sonderprogramm für Brücken nach dem Masterplan Brücken, über 200 Mio. Euro 2026/27",
+          "ursachen_ids": [1202],
+          "zitat": "Ergänzend werden wir ein Sonderprogramm für Brücken auflegen, mit dem besonders sanierungsbedürftige Bauwerke entsprechend des Masterplans Brücken priorisiert instandgesetzt oder – wo erforderlich – ersetzt werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=69",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7110,
+          "instrument": 7064,
+          "beschreibung": "Radwegenetz verbessern, Sanierung bestehender Radwege hat Vorrang",
+          "ursachen_ids": [1204],
+          "zitat": "Das Berliner Radwegenetz werden wir gezielt verbessern und bedarfsgerecht ausbauen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=71",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7111,
+          "instrument": 7060,
+          "beschreibung": "Erhalt von Straßen und Brücken statt Weiterbau der A100",
+          "ursachen_ids": [1202],
+          "zitat": "Statt die A100 weiterzubauen, setzen wir auf den Erhalt unserer Straßen und Brücken sowie auf nachhaltige Mobilität.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7112,
+          "instrument": 7064,
+          "beschreibung": "Radverkehrsplan konsequent umsetzen, Radvorrangnetz priorisieren",
+          "ursachen_ids": [1204],
+          "zitat": "Für ein lückenloses und sicheres Netz setzen wir den Radverkehrsplan konsequent um und priorisieren das Radvorrangnetz.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=25",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7113,
+          "instrument": 7065,
+          "beschreibung": "Tempo 30 rund um Kitas, Schulen, Spielplätze und Seniorenheime",
+          "ursachen_ids": [1204],
+          "zitat": "Tempo 30 richten wir besonders rund um Kitas, Schulen, Spielplätze und Seniorenheime ein und nutzen die neuen Spielräume der Straßenverkehrsordnung konsequent.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7114,
+          "instrument": 7064,
+          "beschreibung": "Radverkehrsnetz mit sicheren, durchgängigen Radwegen an Hauptstraßen",
+          "ursachen_ids": [1204],
+          "zitat": "setzen das Radverkehrsnetz um – mit sicheren, durchgängigen Radwegen an Hauptstraßen und mit Fahrradstraßen in Nebenstraßen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=87",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7115,
+          "instrument": 7065,
+          "beschreibung": "Mehr Tempo 30 über den Lärmaktionsplan",
+          "ursachen_ids": [1204],
+          "zitat": "setzen wir den Lärmaktionsplan mit mehr Tempo 30",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=85",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7116,
+          "instrument": 7064,
+          "beschreibung": "Radwegenetz grundlegend ausbauen, bestehende Radwege instand setzen",
+          "ursachen_ids": [1204],
+          "zitat": "Wir werden das Berliner Radwegenetz grundlegend ausbauen und überholen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7117,
+          "instrument": 7060,
+          "beschreibung": "Vorausschauende Sanierung maroder Brücken, Infrastruktur-Monitoring",
+          "ursachen_ids": [1202],
+          "zitat": "Eine vorausschauende Sanierung maroder Brücken, um Abrisse zu vermeiden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7118,
+          "instrument": 7064,
+          "beschreibung": "Bedarfsgerechter Ausbau der Radverkehrsinfrastruktur mit besserem Monitoring",
+          "ursachen_ids": [1204],
+          "zitat": "Einen bedarfsgerechten Ausbau der Radverkehrsinfrastruktur durch besseres Radverkehrsmonitoring.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7119,
+          "instrument": 7060,
+          "beschreibung": "Koordinierte Instandhaltung der Straßen, Masterplan Brücken umsetzen",
+          "ursachen_ids": [1202],
+          "zitat": "Wir werden unseren Fokus auf die koordinierte Instandhaltung der Straßeninfrastruktur legen und den Masterplan Brücken umsetzen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=69",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7120,
+          "instrument": 7063,
+          "beschreibung": "Planungskapazitäten für Brücken, Rad- und Fußwege ausbauen, mehr Personal im Tiefbau",
+          "ursachen_ids": [1203],
+          "zitat": "Wir werden die Planungskapazitäten für neue ÖPNV-Verbindungen und Brücken sowie Rad- und Fußwege in der Hauptverwaltung und den Bezirken ausbauen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=56",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7121,
+          "instrument": 7064,
+          "beschreibung": "Ausbau sicherer Radwege fortführen, lückenloses Netz nach Radnetzplan",
+          "ursachen_ids": [1204],
+          "zitat": "Wir werden den Ausbau von sicheren Radwegen fortführen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7122,
+          "instrument": 7065,
+          "beschreibung": "Alle Möglichkeiten für Tempo 30 auf Berliner Straßen nutzen",
+          "ursachen_ids": [1204],
+          "zitat": "nutzen unabhängig davon alle Möglichkeiten, um Tempo 30 auch auf Berliner Straßen umzusetzen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=63",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7123,
+          "instrument": 7060,
+          "beschreibung": "Investitionsmittel für die Instandsetzung von Straßen und Brücken, Sondervermögen nutzen",
+          "ursachen_ids": [1202],
+          "zitat": "Kurz- und mittelfristig sind die erforderlichen Investitionsmittel bereitzustellen, um Straßen, Brücken, Sportstätten, Schulen sowie weitere öffentliche Einrichtungen nachhaltig instand zu setzen und zu erneuern.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7124,
+          "instrument": 7064,
+          "beschreibung": "Sicheres, zusammenhängendes Radwegenetz, sichere Kreuzungen mit getrennten Ampelphasen",
+          "ursachen_ids": [1204],
+          "zitat": "Gerade an Kreuzungen braucht es klare Lösungen, etwa durch getrennte Ampelphasen für abbiegende Kraftfahrzeuge und geradeaus fahrenden Radverkehr.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=49",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}

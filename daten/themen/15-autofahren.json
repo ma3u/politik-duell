@@ -1,0 +1,332 @@
+{
+  "id": 15,
+  "name": "Autofahren",
+  "beschreibung": "Teures Tanken, wenige Lademöglichkeiten und teure Elektroautos.",
+  "ziel": "Wer auf das Auto angewiesen ist, kann sich das Fahren dauerhaft leisten, mit Verbrenner oder Elektroauto.",
+  "schlagwoerter": ["auto", "tanken", "sprit", "benzin", "diesel", "spritpreis", "tankstelle", "pendeln", "pendler", "e-auto", "elektroauto", "laden", "ladesaeule", "verbrenner"],
+  "ursachen": [
+    {
+      "id": 1501,
+      "beschreibung": "Der Spritpreis hängt am Weltmarkt für Rohöl: Mit dem Krieg im Iran und der zeitweisen Sperrung der Straße von Hormus stiegen die Preise 2026 binnen Wochen teils um mehr als ein Drittel",
+      "quelle_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=2",
+      "ebene": "bund",
+      "schlagwoerter": ["oelpreis", "rohoel", "iran", "krieg", "hormus", "weltmarkt", "spritpreise gestiegen"]
+    },
+    {
+      "id": 1502,
+      "beschreibung": "Steuern und Abgaben machen einen großen Teil des Spritpreises aus: Energiesteuer (65,45 Cent je Liter Benzin, 47,04 Cent Diesel), CO₂-Preis und Mehrwertsteuer",
+      "quelle_url": "https://www.bundestag.de/resource/blob/834634/dfae7d2604f66510d0469c84eee9e6b5/WD-4-030-21-pdf-data.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["steuer", "energiesteuer", "mineraloelsteuer", "co2", "co2-preis", "co2-steuer", "mehrwertsteuer", "abgaben", "tankrabatt"]
+    },
+    {
+      "id": 1503,
+      "beschreibung": "Wenig Wettbewerb bei Raffinerien und Großhandel: Preissenkungen kommen nicht vollständig an der Zapfsäule an, in Deutschland stiegen die Preise 2026 besonders stark",
+      "quelle_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1",
+      "ebene": "bund",
+      "schlagwoerter": ["mineraloelkonzerne", "abzocke", "tankstellen", "preise schwanken", "raffinerie", "konzerne", "wettbewerb"]
+    },
+    {
+      "id": 1504,
+      "beschreibung": "Elektroautos sind für viele noch zu teuer: Gut die Hälfte der Haushalte ohne Elektroauto nennt den Preis als Hindernis (2026: 52 %)",
+      "quelle_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf#page=23",
+      "ebene": "bund",
+      "schlagwoerter": ["e-auto teuer", "elektroauto teuer", "kaufpraemie", "foerderung e-auto", "gebrauchtwagen", "umstieg"]
+    },
+    {
+      "id": 1505,
+      "beschreibung": "Wer in einem Mehrparteienhaus wohnt, kann oft nicht zu Hause laden: Die rund 9 Millionen Stellplätze an 21 Millionen Wohnungen sind bisher nur unzureichend mit Lademöglichkeiten ausgestattet",
+      "quelle_url": "https://www.bmv.de/SharedDocs/DE/Pressemitteilungen/2026/021-schnieder-500-millionen-foerderung-ladeinfrastruktur-mehrfamilienhaeuser.html",
+      "ebene": "bund",
+      "schlagwoerter": ["laden", "ladesaeule", "ladepunkt", "wallbox", "zu hause laden", "mietwohnung", "tiefgarage", "strom tanken"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 7011,
+      "name": "CO₂-Preis auf Kraftstoffe abschaffen",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Senkt den Spritpreis 2026 um rund 15 bis 18 Cent je Liter; ab 2028 gilt aber der europäische Emissionshandel für Verkehr, den Deutschland nicht allein abschaffen kann. Die Einnahmen fehlen für Entlastungen an anderer Stelle.",
+      "evidenz": "belegt"
+    },
+    {
+      "id": 7012,
+      "name": "CO₂-Einnahmen als Klimageld oder Klimabonus zurückzahlen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gleicht die Mehrkosten durch den CO₂-Preis für viele Haushalte aus, senkt den Spritpreis aber nicht; wer viel fahren muss, wird nur teilweise entlastet. Ein Auszahlungsweg an alle Haushalte muss erst aufgebaut werden.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7013,
+      "name": "Pendlerpauschale erhöhen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet Pendelnde über die Steuer; wer wenig verdient und kaum Steuern zahlt, hat wenig davon.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7014,
+      "name": "Kaufförderung für Elektroautos für kleine und mittlere Einkommen (Prämie, Steuerabzug, Leasing)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt am Preis an, den Haushalte als größtes Hindernis nennen; soziales Leasing hat in Frankreich viele Haushalte mit kleinem Einkommen erreicht. Frühere Prämien in Deutschland wurden zum Teil mitgenommen und kamen vor allem besser Verdienenden zugute.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf"
+    },
+    {
+      "id": 7015,
+      "name": "Öffentliche Ladeinfrastruktur ausbauen und Ladepreise senken",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 7016,
+          "instrument": 7013,
+          "beschreibung": "Pendlerpauschale erhöhen",
+          "ursachen_ids": [1502],
+          "zitat": "Die Pendlerpauschale erhöhen wir.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7017,
+          "instrument": 7012,
+          "beschreibung": "Klimabonus aus den CO₂-Einnahmen",
+          "ursachen_ids": [1502],
+          "zitat": "Um Verbraucher und Unternehmen schnell und effizient mit einem sozialen Ausgleich zu entlasten, schaffen wir einen Klimabonus.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7018,
+          "instrument": 7015,
+          "beschreibung": "Ladeinfrastruktur angemessen ausbauen",
+          "ursachen_ids": [1505],
+          "zitat": "Für die E-Mobilität muss die Ladeinfrastruktur angemessen ausgebaut werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 7019,
+          "instrument": 7014,
+          "beschreibung": "Befristeter Steuerabzugsbetrag für in Deutschland produzierte E-Autos, auch Gebrauchte und Leasing",
+          "ursachen_ids": [1504],
+          "zitat": "Wir wollen mit einem zeitlich befristeten Steuerabzugsbetrag für die Anschaffung eines in Deutschland produzierten E-Autos auch den privaten Neuwagenkauf fördern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7020,
+          "instrument": 7015,
+          "beschreibung": "Laden an öffentlichen Ladesäulen günstiger als Tanken, Schnellladepflicht für Tankstellen",
+          "ursachen_ids": [1505],
+          "zitat": "Das Laden an öffentlichen Ladesäulen muss in Zukunft so einfach wie und auch günstiger werden als das Tanken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7021,
+          "instrument": 7012,
+          "beschreibung": "Klimageld, wenn ab 2027 der europäische CO₂-Preis gilt",
+          "ursachen_ids": [1502],
+          "zitat": "Wenn ab 2027 die europäische Regelung in Kraft tritt, werden wir durch geeignete Maßnahmen auf europäischer und nationaler Ebene (zum Beispiel Klimageld) dafür Sorge tragen, dass niemand überfordert wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 7022,
+          "instrument": 7014,
+          "beschreibung": "Staatliche Unterstützung beim Kauf verbrauchsarmer E-Autos, Social Leasing, Ladekarte",
+          "ursachen_ids": [1504],
+          "zitat": "Dazu schlagen wir eine staatliche Unterstützung beim Erwerb eines verbrauchsarmen E-Autos vor, welches zusätzlich die europäische Automobilwirtschaft unterstützt.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=40",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7023,
+          "instrument": 7015,
+          "beschreibung": "Überzogene Preise an Ladesäulen beenden",
+          "ursachen_ids": [1505],
+          "zitat": "Damit beenden wir überzogene Preise an Ladesäulen, sodass alle günstigen erneuerbaren Ladestrom nutzen können.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=40",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7024,
+          "instrument": 7012,
+          "beschreibung": "Sozial gestaffeltes Klimageld aus den CO₂-Einnahmen",
+          "ursachen_ids": [1502],
+          "zitat": "Einen Großteil dieser Einnahmen werden wir als sozial gestaffeltes Klimageld an Menschen mit niedrigen und mittleren Einkommen auszahlen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=40",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 7025,
+          "beschreibung": "Energiesteuer auf Kraftstoffe bis auf null abschmelzen, CO₂-Preis soll sie ersetzen, Kfz-Steuer abschaffen",
+          "ursachen_ids": [1502],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ersetzt eine Steuer durch den CO₂-Preis; ob Sprit dadurch billiger wird, hängt von dessen Höhe ab. Die EU-Mindestsätze kann Deutschland nicht allein ändern.",
+          "evidenz": "offen",
+          "zitat": "Die EU-Mindestsätze für die Energiesteuer auf Heiz- und Kraftstoffe wollen wir angesichts des tendenziell steigenden CO2-Preises sukzessive bis auf null abschmelzen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 7026,
+          "beschreibung": "Energiesteuer senken",
+          "ursachen_ids": [1502],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Senkt den Spritpreis direkt; die Tankrabatte 2022 und 2026 wurden laut Monopolkommission großteils weitergegeben. Eine dauerhafte Senkung kostet je 10 Cent mehrere Milliarden Euro im Jahr, eine Gegenfinanzierung nennt das Programm nicht.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf",
+          "zitat": "Reduzierung der Energiesteuer und Senkung der Stromsteuer auf das Minimum",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7027,
+          "instrument": 7011,
+          "beschreibung": "CO₂-Abgaben ersatzlos abschaffen",
+          "ursachen_ids": [1502],
+          "zitat": "Wir fordern eine ersatzlose Abschaffung der CO₂-Abgaben.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=58",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 7028,
+          "instrument": 7012,
+          "beschreibung": "Soziales Klimageld von 320 Euro im Jahr pro Person",
+          "ursachen_ids": [1502],
+          "zitat": "Die Linke will deshalb rückwirkend zum 1. Januar 2025 ein soziales Klimageld von 320 Euro jährlich pro Person als Direktzahlung einführen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=7",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7029,
+          "instrument": 7014,
+          "beschreibung": "Sozial gestaffelte Förderung kleiner E-Fahrzeuge für Pendelnde auf dem Land",
+          "ursachen_ids": [1504],
+          "zitat": "Menschen im ländlichen Raum, die auf ein Auto zum Pendeln angewiesen sind, wollen wir sozial gestaffelte Förderangebote für kleine E-Fahrzeuge einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7030,
+          "instrument": 7015,
+          "beschreibung": "Investitionen in öffentliche Ladeinfrastruktur mit günstigen Tarifen",
+          "ursachen_ids": [1505],
+          "zitat": "Wir wollen endlich umfassende Investitionen in die öffentliche Ladeinfrastruktur, verbunden mit günstigen Tarifen und Auflagen für mehr Ladepunkte an Tankstellen, im Einzelhandel und am Arbeitsplatz",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7031,
+          "beschreibung": "Pendlerpauschale durch ein Mobilitätsgeld ersetzen",
+          "ursachen_ids": [1502],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein fester Betrag je Kilometer entlastet Pendelnde mit kleinem Einkommen stärker als die Pauschale, besser Verdienende weniger; der Spritpreis selbst ändert sich nicht.",
+          "evidenz": "offen",
+          "zitat": "Die Pendlerpauschale wollen wir durch ein Mobilitätsgeld ersetzen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 7032,
+          "instrument": 7011,
+          "beschreibung": "CO₂-Preis abschaffen",
+          "ursachen_ids": [1502],
+          "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7033,
+          "instrument": 7014,
+          "beschreibung": "Volksleasing für umweltfreundliche Fahrzeuge aus europäischer Produktion, Kaufprämien im niedrigen Preissegment",
+          "ursachen_ids": [1504],
+          "zitat": "Mit einem „Volksleasing“ für umweltfreundliche Fahrzeuge aus europäischer Produktion, einschließlich verbrauchsarmer Verbrenner (unter 5l), wollen wir Menschen in Regionen mit geringen öffentlichen Verkehrsangeboten angemessene Mobilität ermöglichen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}

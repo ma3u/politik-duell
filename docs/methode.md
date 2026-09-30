@@ -38,7 +38,7 @@ Grundlage sind die Wahlprogramme zur Bundestagswahl 2025 von sieben Parteien. Ne
 
 ### Themen: was Menschen selbst nennen
 
-Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen in Umfragen vor den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin – nicht nach den Schwerpunkten einzelner Parteien. Daraus ergeben sich zehn Themen: Arzttermine, Miete, Energiepreise, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit, Pflege. Details: [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl).
+Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen in Umfragen vor den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin – nicht nach den Schwerpunkten einzelner Parteien. Daraus ergeben sich zehn Themen: Arzttermine, Miete, Energiepreise, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit, Pflege. Dazu kommen sechs Themen zu bundesweit häufig genannten Belastungen, die noch keine Ursache abdeckte: Preise und Löhne, Straßen und Brücken, Internet und Mobilfunk, Behördengänge, Autofahren, Heizungstausch. Details: [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl).
 
 ### Ursachen: festgelegt, bevor jemand in die Programme schaut
 
@@ -188,7 +188,7 @@ Die App läuft als spielbarer Prototyp mit Spracheingabe, KI-Zuordnung, Wortwolk
 
 Wir suchen:
 
-- **Prüfende mit Fachwissen** zu einem der zehn Themen, z. B. Wohnen, Gesundheit, Energie, Rente. Aufwand: etwa 20–30 Minuten je Thema, in der App, ohne Konto.
+- **Prüfende mit Fachwissen** zu einem der Themen, z. B. Wohnen, Gesundheit, Energie, Rente. Aufwand: etwa 20–30 Minuten je Thema, in der App, ohne Konto.
 - **Partnerorganisationen**, die die Methode fachlich begleiten, das Spiel in ihren Netzwerken bekannt machen oder es in der politischen Bildung einsetzen.
 - **Hinweise auf Fehler** in Maßnahmen, Zitaten oder Ursachen, immer mit Link auf die Quelle.
 

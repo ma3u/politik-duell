@@ -1,0 +1,244 @@
+{
+  "id": 13,
+  "name": "Internet und Mobilfunk",
+  "beschreibung": "Langsames Internet zu Hause und Funklöcher unterwegs.",
+  "ziel": "Menschen haben zu Hause schnelles Internet und unterwegs verlässlichen Mobilfunkempfang, auch auf dem Land.",
+  "schlagwoerter": ["internet", "wlan", "glasfaser", "dsl", "breitband", "langsam", "funkloch", "netz", "empfang", "handy", "mobilfunk", "5g", "lte"],
+  "ursachen": [
+    {
+      "id": 1301,
+      "beschreibung": "Glasfaser reicht erst zu rund 43 % der Haushalte (2025); wo sich der Ausbau nicht lohnt, vor allem auf dem Land, braucht es Förderung, die teuer ist und privaten Ausbau teils verdrängt",
+      "quelle_url": "https://www.wik.org/fileadmin/user_upload/Unternehmen/Veroeffentlichungen/Kurzstudien/2026/WIK_Kurzstudie_Anreizwirkung_der_derzeitigen_Gigabitfoerderung_auf_den_eigenwirtschaftlichen_Glasfaserausbau_in_Deutschland.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["glasfaser", "kein glasfaser", "dsl", "langsames internet", "breitband", "dorf", "auf dem land", "homeoffice", "streaming"]
+    },
+    {
+      "id": 1302,
+      "beschreibung": "Rund 2 % der Fläche haben gar keinen Mobilfunk mit 4G oder 5G, vor allem in Wäldern, Höhenlagen, Schutz- und Grenzgebieten",
+      "quelle_url": "https://bmds.bund.de/aktuelles/pressemitteilungen/detail/mobilfunkversorgung-uebersicht-zu-weissen-flecken",
+      "ebene": "bund",
+      "schlagwoerter": ["funkloch", "funkloecher", "kein empfang", "kein netz", "empfang", "zug", "handy", "telefonieren", "abbrechen"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6966,
+      "name": "Genehmigungen beschleunigen, Netzausbau im überragenden öffentlichen Interesse, alternative Verlegemethoden",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verkürzt Genehmigungen für Masten und Leitungen und senkt Tiefbaukosten; wo sich der Ausbau wirtschaftlich nicht lohnt oder das Gelände schwierig ist, ändert das allein wenig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6967,
+      "name": "Staatliche Förderung gezielt dort, wo sich der private Ausbau nicht lohnt",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schließt Lücken, die der Markt nicht schließt; laut WIK ist die heutige Förderung aber teuer, anfällig für Überförderung und verdrängt teils privaten Ausbau – es kommt auf die Ausgestaltung an.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wik.org/fileadmin/user_upload/Unternehmen/Veroeffentlichungen/Kurzstudien/2026/WIK_Kurzstudie_Anreizwirkung_der_derzeitigen_Gigabitfoerderung_auf_den_eigenwirtschaftlichen_Glasfaserausbau_in_Deutschland.pdf"
+    },
+    {
+      "id": 6968,
+      "name": "Recht auf schnelles Internet: Mindestbandbreite erhöhen",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein höherer Anspruch verpflichtet die Anbieter, auch unversorgte Haushalte anzuschließen; bei deutlich höheren Bandbreiten wird das teuer und langwierig, die Kosten tragen Anbieter oder Staat.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 6969,
+      "name": "Breitband- und Netzausbau auf dem Land voranbringen (ohne nähere Angaben)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Nennt das Ziel, aber keinen Weg, wie die Lücken geschlossen werden sollen.",
+      "evidenz": "offen"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 6970,
+          "instrument": 6967,
+          "beschreibung": "Ausbau in die Fläche mit Wettbewerb, Kooperationsmodellen und verlässlicher Förderung",
+          "ursachen_ids": [1301, 1302],
+          "zitat": "Dazu setzen wir auf mehr Wettbewerb, Kooperationsmodelle und eine verlässliche Förderung.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6971,
+          "instrument": 6966,
+          "beschreibung": "Mobilfunk- und Glasfaserausbau ins überragende öffentliche Interesse stellen, Genehmigungsturbo",
+          "ursachen_ids": [1301, 1302],
+          "zitat": "Dazu gehört insbesondere, bis zur Erreichung aller Ausbauziele sowohl den Mobilfunk als auch den Glasfaserausbau in das überragende öffentliche Interesse zu stellen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 6972,
+          "instrument": 6969,
+          "beschreibung": "Breitbandinternet in ländlichen Räumen ausbauen",
+          "ursachen_ids": [1301],
+          "zitat": "Wir werden ländliche Räume stärken, indem wir Breitbandinternet ausbauen und nachhaltige Mobilitätslösungen schaffen und fördern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=52",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 6973,
+          "instrument": 6966,
+          "beschreibung": "Genehmigungen beschleunigen, alternative Verlegemethoden, Open Access",
+          "ursachen_ids": [1301, 1302],
+          "zitat": "Wir werden bessere Rahmenbedingungen für den Ausbau von Glasfaser und 5G-Mobilfunk schaffen, indem wir Genehmigungsprozesse beschleunigen, alternative Verlegemethoden erleichtern und Open Access fördern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6974,
+          "instrument": 6967,
+          "beschreibung": "Gigabitförderung für ländliche und strukturschwache Regionen bedarfsorientiert erhöhen",
+          "ursachen_ids": [1301],
+          "zitat": "Für ländliche Gebiete und strukturschwache Regionen werden wir die staatliche Gigabitförderung bedarfsorientiert erhöhen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6975,
+          "instrument": 6968,
+          "beschreibung": "Mindestbandbreite schrittweise erhöhen",
+          "ursachen_ids": [1301],
+          "zitat": "Wir stärken die Rechte von Verbraucher*innen auf schnelles Internet, indem wir die Mindestbandbreite schrittweise erhöhen",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=35",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 6976,
+          "instrument": 6967,
+          "beschreibung": "Passgenaue Förderung nur, wo sich privater Ausbau nicht rechnet",
+          "ursachen_ids": [1301, 1302],
+          "zitat": "Die hohe Dynamik beim Glasfaser- und Mobilfunkausbau durch private und kommunale Telekommunikationsunternehmen wollen wir nur dort durch eine passgenaue Förderung ergänzen, wo sich der privatwirtschaftliche Ausbau nicht rechnet.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=38",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6977,
+          "instrument": 6966,
+          "beschreibung": "Mobilfunk- und Glasfaserausbau als überragendes öffentliches Interesse",
+          "ursachen_ids": [1301, 1302],
+          "zitat": "Wir setzen uns dafür ein, dass sowohl Mobilfunk- auch Glasfaserausbau überragendes öffentliches Interesse im Telekommunikationsnetzausbaubeschleunigungsgesetz des Bundes werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=41",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 6978,
+          "instrument": 6969,
+          "beschreibung": "Ausbau der digitalen Infrastruktur beschleunigen",
+          "ursachen_ids": [1301],
+          "zitat": "Beschleunigung des Ausbaus der digitalen Infrastruktur",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 6979,
+          "beschreibung": "Kommunalen und gemeinnützigen Glasfaserausbau fördern, Doppelausbau verhindern",
+          "ursachen_ids": [1301],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Kommunale Netzgesellschaften haben in manchen Regionen Lücken geschlossen, die private Anbieter ließen; sie brauchen Kapital und Fachpersonal. Doppelausbau zu verhindern, kann Mittel für unversorgte Gebiete frei machen, schränkt aber Wettbewerb ein.",
+          "evidenz": "gemischt",
+          "zitat": "Deshalb wollen wir den kommunalen und gemeinnützigen Ausbau von Glasfasernetzen fördern, unnötigen Doppelausbau verhindern",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6980,
+          "instrument": 6968,
+          "beschreibung": "Recht auf Internetzugang mit 100 Mbit/s",
+          "ursachen_ids": [1301],
+          "zitat": "das Recht auf Internetzugang auf 100 Mbit/s Downloadgeschwindigkeit erhöhen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 6981,
+          "beschreibung": "Ein gemeinsames Mobilfunk- und Glasfasernetz für alle Anbieter",
+          "ursachen_ids": [1301, 1302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ein gemeinsames Netz spart Doppelinvestitionen und kann Lücken schließen; laut Grundgesetz (Art. 87f) erbringen aber private Anbieter die Telekommunikation, ein Umbau der bestehenden Netze wäre rechtlich und finanziell sehr aufwendig.",
+          "evidenz": "offen",
+          "zitat": "Ein einziges Netz, über das alle ihre Dienstleistungen anbieten können, spart Baukosten, Material und Umweltbelastung und ermöglicht ein schnelles flächendeckendes Netz überall",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 6982,
+          "instrument": 6969,
+          "beschreibung": "Schnelles Internet als staatliche Aufgabe gewährleisten",
+          "ursachen_ids": [1301],
+          "zitat": "ÖPNV, ärztliche Grundversorgung und regional erreichbare Krankenhäuser, Einkaufsmöglichkeiten für den täglichen Bedarf, Freizeittreffs insbesondere für die Jugend und ältere Mitbürger sowie schnelles Internet sind vom Staat zu gewährleisten.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}
