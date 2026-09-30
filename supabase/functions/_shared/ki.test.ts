@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { PARTEIEN, THEMEN, URSACHEN } from '../../../src/data/mock'
-import { bereinigeAntwort, EingabeFehler, nutzerNachrichten, ohneParteinamen, pruefeAnfrage, systemPrompt } from './ki.ts'
+import { bereinigeAntwort, EingabeFehler, NACHFRAGE_URSACHE, nutzerNachrichten, ohneParteinamen, pruefeAnfrage, systemPrompt } from './ki.ts'
 import type { Nachricht } from './typen.ts'
 
 const spieler = (text: string): Nachricht => ({ von: 'spieler', text })
@@ -28,9 +28,9 @@ describe('nutzerNachrichten', () => {
 
 describe('bereinigeAntwort', () => {
   it('liefert ein kurzes Stichwort für die Wortwolke', () => {
-    const a = bereinige({ typ: 'problem', thema_id: 2, stichwort: '„Mieterhöhung“', zusammenfassung: 'Miete steigt.' })
+    const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [202], stichwort: '„Mieterhöhung“', zusammenfassung: 'Miete steigt.' })
     expect(a.stichwort).toBe('Mieterhöhung')
-    const b = bereinige({ typ: 'problem', thema_id: 2, zusammenfassung: 'Die Miete steigt stark an.' })
+    const b = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [202], zusammenfassung: 'Die Miete steigt stark an.' })
     expect(b.stichwort).toBe('Die Miete steigt')
   })
 
@@ -39,9 +39,22 @@ describe('bereinigeAntwort', () => {
     expect(a).toMatchObject({ typ: 'problem', thema_id: 2, ursachen_ids: [202] })
   })
 
-  it('verwirft Ursachen, die nicht zum Thema gehören, und nimmt dann alle', () => {
-    const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [101, 999], zusammenfassung: 'x' })
-    expect(a.ursachen_ids).toEqual([201, 202, 203])
+  it('verwirft Ursachen, die nicht zum Thema gehören', () => {
+    const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [202, 101, 999], zusammenfassung: 'x' })
+    expect(a.ursachen_ids).toEqual([202])
+  })
+
+  it('fragt nach, statt ohne erkennbare Ursache alle Ursachen zu werten', () => {
+    const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [101], nachfrage: 'Was genau?', zusammenfassung: 'x' })
+    expect(a).toMatchObject({ typ: 'problem', nachfrage: 'Was genau?', thema_id: null, ursachen_ids: [] })
+    const b = bereinige({ typ: 'problem', thema_id: 2, zusammenfassung: 'x' })
+    expect(b.nachfrage).toBe(NACHFRAGE_URSACHE)
+  })
+
+  it('wertet nach zwei Nachfragen ohne erkennbare Ursache nicht', () => {
+    const verlauf = [spieler('a'), ki('?'), spieler('b'), ki('?'), spieler('c')]
+    const a = bereinige({ typ: 'problem', thema_id: 2, nachfrage: 'Noch was?', zusammenfassung: 'x' }, verlauf)
+    expect(a).toMatchObject({ typ: 'problem', nachfrage: null, thema_id: null, ursachen_ids: [] })
   })
 
   it('setzt unbekannte Themen auf ungeprüft', () => {

@@ -267,6 +267,7 @@ var ROLLEN_IDS = [
 var MAX_NACHFRAGEN = 2;
 var MAX_NACHRICHTEN = 2 * MAX_NACHFRAGEN + 1;
 var MAX_TEXTLAENGE = 500;
+var NACHFRAGE_URSACHE = "Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.";
 var ROLLEN_TEXT = {
   mieter: "Mieter:in",
   eigentuemer: "Eigent\xFCmer:in",
@@ -301,7 +302,10 @@ Einordnung ("typ"):
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
-- "ursachen_ids": IDs der Ursachen dieses Themas, die zum geschilderten Problem passen. Wenn unklar: alle Ursachen des Themas.
+- "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
+  Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+- L\xE4sst sich keine Ursache erkennen: "ursachen_ids": [] und in "nachfrage" genau eine kurze, freundliche Frage,
+  woran es im Alltag konkret hakt, z. B. \u201EWas genau macht dir dabei Sorgen?\u201C. Gib keine Antworten vor.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1\u20132 neutrale S\xE4tze zu m\xF6glichen
   Ursachen des Problems \u2013 ohne Parteien, ohne L\xF6sungsbewertung, ohne Links.
 
@@ -318,7 +322,7 @@ Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 }
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt als "problem" oder "wert" ein, nicht als "forderung".' : "");
+  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt als "problem" oder "wert" ein, nicht als "forderung", und stelle keine Nachfrage mehr. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
   return [
     {
       role: "system",
@@ -414,13 +418,24 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   }
   const erlaubt = ursachen.filter((u) => u.thema_id === thema.id).map((u) => u.id);
   const genannt = Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number).filter((id) => erlaubt.includes(id)) : [];
+  if (genannt.length === 0) {
+    return {
+      typ,
+      nachfrage: nachfragen < MAX_NACHFRAGEN ? nachfrage || NACHFRAGE_URSACHE : null,
+      thema_id: null,
+      ursachen_ids: [],
+      zusammenfassung,
+      stichwort,
+      einschaetzung: null
+    };
+  }
   return {
     typ,
     nachfrage: null,
     thema_id: thema.id,
-    ursachen_ids: genannt.length > 0 ? [
+    ursachen_ids: [
       ...new Set(genannt)
-    ] : erlaubt,
+    ],
     zusammenfassung,
     stichwort,
     einschaetzung: null
@@ -567,7 +582,7 @@ Deno.serve(async (req) => {
     const parteien = parteienRes.data;
     const roh = await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle));
     const antwort = bereinigeAntwort(roh, anfrage.verlauf, themen, ursachen, parteien);
-    if (antwort.typ !== "forderung") {
+    if (!antwort.nachfrage) {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
       const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
       await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen);

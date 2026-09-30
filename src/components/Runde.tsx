@@ -100,7 +100,8 @@ export function Runde({
       setDenkt(false)
     }
 
-    if (analyse.typ === 'forderung' && analyse.nachfrage) {
+    // Nachfrage bei einer Forderung oder wenn keine Ursache erkennbar ist.
+    if (analyse.nachfrage) {
       setVerlauf([...neu, { von: 'ki', text: analyse.nachfrage }])
     } else if (analyse.typ === 'wert') {
       // Runde ohne Wertung – ein neues Problem kann genannt werden.

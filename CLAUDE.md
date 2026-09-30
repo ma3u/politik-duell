@@ -20,7 +20,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 4. KI klassifiziert: `problem` | `forderung` | `wert`.
    - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?").
    - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich.
-   - `problem` → Zuordnung zu Thema + Ursachen.
+   - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
 6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, Teilen-Button.
 

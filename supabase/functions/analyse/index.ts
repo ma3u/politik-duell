@@ -107,8 +107,8 @@ Deno.serve(async (req) => {
     const roh = await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle))
     const antwort = bereinigeAntwort(roh, anfrage.verlauf, themen, ursachen, parteien)
 
-    // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung).
-    if (antwort.typ !== 'forderung') {
+    // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht abgeschlossen.
+    if (!antwort.nachfrage) {
       // Der Originaltext wird nur geprüft, nicht gespeichert.
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
       const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false

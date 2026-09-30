@@ -46,10 +46,22 @@ describe('analysiere (Mock der Edge Function)', () => {
     expect(a.thema_id).toBeNull()
   })
 
-  it('nimmt alle Ursachen des Themas, wenn keine konkret genannt ist', () => {
+  it('fragt nach, wenn das Thema klar ist, aber keine Ursache', () => {
     const a = analysiere(spieler('Meine Stromrechnung ist ein Problem'), THEMEN, URSACHEN)
-    expect(a.thema_id).toBe(3)
-    expect(a.ursachen_ids).toEqual([301, 302, 303])
+    expect(a).toMatchObject({ typ: 'problem', thema_id: null, ursachen_ids: [] })
+    expect(a.nachfrage).toBeTruthy()
+  })
+
+  it('wertet ohne erkennbare Ursache nach zwei Nachfragen nicht', () => {
+    const verlauf: Nachricht[] = [
+      { von: 'spieler', text: 'Meine Stromrechnung ist ein Problem' },
+      { von: 'ki', text: 'Nachfrage 1' },
+      { von: 'spieler', text: 'Die Stromrechnung eben' },
+      { von: 'ki', text: 'Nachfrage 2' },
+      { von: 'spieler', text: 'Strom ist ein Problem' },
+    ]
+    const a = analysiere(verlauf, THEMEN, URSACHEN)
+    expect(a).toMatchObject({ typ: 'problem', nachfrage: null, thema_id: null, ursachen_ids: [] })
   })
 })
 
