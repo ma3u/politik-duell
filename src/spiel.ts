@@ -22,6 +22,8 @@ export interface RundenErgebnis {
   /** Vorläufige Einschätzung bei ungeprüften Themen (ohne Punkte und Links). */
   einschaetzung: string | null
   thema: Thema | null
+  /** Zugeordnete Ursachen (Reihenfolge der Analyse); leer bei ungeprüften Themen. */
+  ursachen_ids?: number[]
   /**
    * gewertet: beide Parteien für das Thema erfasst · unvollstaendig: Thema bekannt, aber für
    * mindestens eine der beiden noch nicht erfasst oder ohne aktuelles Landesprogramm (keine Punkte)

@@ -49,56 +49,172 @@ export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
   )
 }
 
-function ParteiKarte({
+/** Höchste Punktzahl je Ursache: Wirksamkeit 3 × Umsetzbarkeit 3. */
+const MAX_JE_URSACHE = 9
+
+const trefferFuer = (e: ParteiErgebnis, ursacheId: number) => e.treffer.find((t) => t.ursachen_ids.includes(ursacheId))
+
+/** Kopf des Duells: beide Parteien mit Gesamtpunkten, Kreuz bei der Rundensiegerin. */
+function DuellKopf({
   ergebnis,
   spielerName,
   gewinnt,
-  verzoegerung,
+  seite,
 }: {
   ergebnis: ParteiErgebnis
   spielerName: string
   gewinnt: boolean
-  verzoegerung: number
+  seite: 'a' | 'b'
 }) {
-  const { ursachen } = useDaten()
-  const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? ''
   const landName = useLandName()
   const leer = ohneTreffer(ergebnis, landName)
-  const programme = ergebnis.programme.length
-    ? ergebnis.programme
-    : [{ land: null, url: ergebnis.partei.programm_url }]
   return (
-    <article
-      className={`partei-karte enthuellen${gewinnt ? ' gewinnt' : ''}`}
+    <div
+      className={`duell-partei duell-${seite}${gewinnt ? ' gewinnt' : ''}`}
       style={{
         ...parteiStil(ergebnis.partei.farbe),
-        animationDelay: `${verzoegerung}ms`,
-        // Das Kreuz der Gewinnerin wird gezogen, nachdem die Karte erschienen ist.
-        ['--kreuz-verzoegerung' as string]: `${verzoegerung + 700}ms`,
+        // Das Kreuz wird gezogen, nachdem die Balken stehen.
+        ['--kreuz-verzoegerung' as string]: '1.1s',
       }}
     >
-      <header>
-        <span className="karte-spieler">{spielerName}</span>
-        <h3>{ergebnis.partei.name}</h3>
+      <span className="duell-spieler">{spielerName}</span>
+      <h3 title={ergebnis.partei.name}>{ergebnis.partei.kurzname}</h3>
+      <span className="duell-summe">
         {ergebnis.abdeckung ? (
-          <span className="karte-punkte" aria-label={`${ergebnis.punkte} Punkte`}>
+          <>
             {ergebnis.punkte}
-          </span>
+            <span className="sr-only"> Punkte</span>
+          </>
         ) : (
-          <span className="karte-punkte karte-punkte-leer" aria-label="keine Wertung">
-            –
-          </span>
+          <span aria-label="keine Wertung">–</span>
         )}
-        <Kreuzfeld />
-      </header>
-      {ergebnis.ki_entwurf && <span className="badge-ungeprueft">vorläufige KI-Bewertung</span>}
-      {leer ? (
-        <div className="keine-massnahme">
-          {leer.badge && <span className="badge-ungeprueft">{leer.badge}</span>}
-          <p>{leer.lang}</p>
-          {ergebnis.abdeckung?.begruendung && <p className="keine-begruendung">{ergebnis.abdeckung.begruendung}</p>}
+      </span>
+      <Kreuzfeld />
+      {(leer?.badge || ergebnis.ki_entwurf) && (
+        <span className="duell-marke">
+          {leer?.badge && <span className="badge-ungeprueft">{leer.badge}</span>}
+          {ergebnis.ki_entwurf && <span className="badge-ungeprueft">KI-Entwurf</span>}
+        </span>
+      )}
+    </div>
+  )
+}
+
+/** Eine Hälfte des Balkens: wächst von der Mittellinie nach außen. */
+function Halbbalken({ ergebnis, punkte, vorne }: { ergebnis: ParteiErgebnis; punkte: number | null; vorne: boolean }) {
+  return (
+    <span className={`duell-halb${vorne ? ' vorne' : ''}${punkte === null ? ' offen' : ''}`} style={parteiStil(ergebnis.partei.farbe)}>
+      <span className="duell-fuellung" style={{ ['--anteil' as string]: (punkte ?? 0) / MAX_JE_URSACHE }} />
+      <span className="duell-wert">{punkte ?? '–'}</span>
+    </span>
+  )
+}
+
+/** Maßnahme einer Partei zu einer Ursache, aufgeklappt. */
+function MassnahmeDetail({ ergebnis, ursacheId }: { ergebnis: ParteiErgebnis; ursacheId: number }) {
+  const landName = useLandName()
+  const t = trefferFuer(ergebnis, ursacheId)
+  const leer = ohneTreffer(ergebnis, landName)
+  return (
+    <div className="duell-massnahme" style={parteiStil(ergebnis.partei.farbe)}>
+      <span className="duell-massnahme-partei">{ergebnis.partei.kurzname}</span>
+      {!t ? (
+        <p className="duell-keine">
+          {!ergebnis.abdeckung ? leer?.kurz : leer ? `${leer.kurz}.` : 'Keine Maßnahme zu dieser Ursache.'}
+        </p>
+      ) : (
+        <>
+          <p className="massnahme-titel">{t.massnahme.beschreibung}</p>
+          <p className="duell-rechnung">
+            wirkt {t.wirksamkeit}/3 × umsetzbar {t.massnahme.umsetzbarkeit}/3 = <strong>{t.punkteJeUrsache}</strong>
+          </p>
+          <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
+          {t.rollenBegruendung && (
+            <p className="massnahme-rolle">
+              Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
+              {t.rollenBegruendung}
+            </p>
+          )}
+          {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
+          {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
+            <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>
+          )}
+          <MassnahmeBelege massnahme={t.massnahme} />
+        </>
+      )}
+    </div>
+  )
+}
+
+/**
+ * Gegenüberstellung je Ursache: Balken von der Mitte nach links (A) und rechts (B),
+ * Länge = Punkte der besten Maßnahme zu dieser Ursache. Tippen klappt die Maßnahmen auf.
+ */
+function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, Spieler] }) {
+  const { ursachen } = useDaten()
+  const landName = useLandName()
+  const [a, b] = runde.ergebnisse!
+  // Ältere Runden ohne gespeicherte Ursachen: aus den Treffern ableiten.
+  const ursachenIds =
+    runde.ursachen_ids ?? [...new Set([...a.treffer, ...b.treffer].flatMap((t) => t.ursachen_ids))]
+  const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? 'Ursache'
+  const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (trefferFuer(e, id)?.punkteJeUrsache ?? 0) : null)
+  const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
+
+  return (
+    <section className="duell enthuellen" aria-label="Gegenüberstellung je Ursache">
+      <div className="duell-kopf">
+        {runde.ergebnisse!.map((e, i) => (
+          <DuellKopf
+            key={e.partei.id}
+            ergebnis={e}
+            spielerName={spieler[i].name}
+            gewinnt={runde.punkte[i] === 1}
+            seite={i === 0 ? 'a' : 'b'}
+          />
+        ))}
+      </div>
+      {ursachenIds.length > 0 && (
+        <ul className="duell-zeilen">
+          {ursachenIds.map((id, i) => {
+            const pa = punkteVon(a, id)
+            const pb = punkteVon(b, id)
+            return (
+              <li key={id} style={{ ['--zeile' as string]: i }}>
+                <details className="duell-zeile">
+                  <summary>
+                    <span className="duell-ursache">{ursacheText(id)}</span>
+                    <span className="duell-balken" aria-hidden="true">
+                      <Halbbalken ergebnis={a} punkte={pa} vorne={(pa ?? 0) > 0 && (pa ?? 0) >= (pb ?? 0)} />
+                      <Halbbalken ergebnis={b} punkte={pb} vorne={(pb ?? 0) > 0 && (pb ?? 0) >= (pa ?? 0)} />
+                    </span>
+                    <span className="sr-only">
+                      {a.partei.kurzname}: {pa ?? 'keine Wertung'}, {b.partei.kurzname}: {pb ?? 'keine Wertung'} von{' '}
+                      {MAX_JE_URSACHE} Punkten
+                    </span>
+                  </summary>
+                  <div className="duell-details">
+                    <MassnahmeDetail ergebnis={a} ursacheId={id} />
+                    <MassnahmeDetail ergebnis={b} ursacheId={id} />
+                  </div>
+                </details>
+              </li>
+            )
+          })}
+        </ul>
+      )}
+      <p className="duell-legende">
+        Balken: Punkte der besten Maßnahme je Ursache (höchstens {MAX_JE_URSACHE}). Tippen zeigt Maßnahme und Beleg.
+      </p>
+      {leere.map(({ e, leer }) => (
+        <details key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
+          <summary>
+            {e.partei.kurzname}: {leer!.kurz}
+          </summary>
+          <p>{leer!.lang}</p>
+          {e.abdeckung?.begruendung && <p className="keine-begruendung">{e.abdeckung.begruendung}</p>}
           <span className="belege">
-            {programme.map((p, i) => (
+            {(e.programme.length ? e.programme : [{ land: null, url: e.partei.programm_url }]).map((p, i) => (
               <span key={p.land ?? 'bund'}>
                 {i > 0 && ' · '}
                 <a href={p.url} target="_blank" rel="noopener noreferrer">
@@ -107,29 +223,9 @@ function ParteiKarte({
               </span>
             ))}
           </span>
-        </div>
-      ) : (
-        ergebnis.treffer.map((t) => (
-          <div key={t.massnahme.id} className="massnahme">
-            <p className="massnahme-titel">{t.massnahme.beschreibung}</p>
-            <p className="massnahme-werte">
-              Wirksamkeit {t.massnahme.wirksamkeit}/3
-              {t.rollenBonus !== 0 && ` (für deine Rolle ${t.wirksamkeit}/3)`} × Umsetzbarkeit {t.massnahme.umsetzbarkeit}/3
-              {' '}= {t.punkteJeUrsache} Punkte
-              {t.ursachen_ids.length > 1 && ` · × ${t.ursachen_ids.length} Ursachen`}
-            </p>
-            <p className="massnahme-ursachen">Setzt an bei: {t.ursachen_ids.map(ursacheText).join(', ')}</p>
-            {t.massnahme.land && <p className="massnahme-ursachen">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
-            {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
-              <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>
-            )}
-            <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
-            {t.rollenBegruendung && <p className="massnahme-rolle">Rolle: {t.rollenBegruendung}</p>}
-            <MassnahmeBelege massnahme={t.massnahme} />
-          </div>
-        ))
-      )}
-    </article>
+        </details>
+      ))}
+    </section>
   )
 }
 
@@ -184,42 +280,43 @@ export function Aufloesung({
         </section>
       ) : (
         <>
-          <div className="karten">
-            {runde.ergebnisse.map((e, i) => (
-              <ParteiKarte
-                key={e.partei.id}
-                ergebnis={e}
-                spielerName={spieler[i].name}
-                gewinnt={runde.punkte[i] === 1}
-                verzoegerung={i * 400}
-              />
-            ))}
-          </div>
-          <p className="rundensieger enthuellen" style={{ animationDelay: '900ms' }}>
+          <Duell runde={runde} spieler={spieler} />
+          <p className="rundensieger enthuellen" style={{ animationDelay: '1300ms' }}>
             {runde.status === 'unvollstaendig'
               ? keinLandesprogramm.length
                 ? `Keine Wertung: ${keinLandesprogramm.map((e) => e.partei.kurzname).join(' und ')} ${
                     keinLandesprogramm.length > 1 ? 'haben' : 'hat'
-                  } in ${landName(runde.land ?? '')} kein aktuelles Landeswahlprogramm. Fehlende Daten kosten keine Partei einen Punkt.`
-                : `Keine Wertung: Für ${ohneWertung
-                    .map((e) => e.partei.kurzname)
-                    .join(' und ')} ist dieses Thema noch nicht erfasst. Fehlende Daten kosten keine Partei einen Punkt.`
+                  } in ${landName(runde.land ?? '')} kein aktuelles Landeswahlprogramm.`
+                : `Keine Wertung: Für ${ohneWertung.map((e) => e.partei.kurzname).join(' und ')} noch nicht erfasst.`
               : runde.punkte[0] === 1 && runde.punkte[1] === 1
-              ? 'Gleichstand – beide bekommen einen Punkt.'
-              : runde.punkte[0] === 1
-                ? `Punkt für ${spieler[0].name} (${spieler[0].partei.kurzname})!`
-                : runde.punkte[1] === 1
-                  ? `Punkt für ${spieler[1].name} (${spieler[1].partei.kurzname})!`
-                  : 'Keine der beiden Parteien hat dazu eine Maßnahme im Programm – kein Punkt.'}
+                ? 'Gleichstand – beide bekommen einen Punkt.'
+                : runde.punkte[0] === 1
+                  ? `Punkt für ${spieler[0].name} (${spieler[0].partei.kurzname})!`
+                  : runde.punkte[1] === 1
+                    ? `Punkt für ${spieler[1].name} (${spieler[1].partei.kurzname})!`
+                    : 'Keine der beiden Parteien hat dazu eine Maßnahme im Programm – kein Punkt.'}
+            {runde.status === 'unvollstaendig' && (
+              <span className="rundensieger-zusatz">Fehlende Daten kosten keine Partei einen Punkt.</span>
+            )}
           </p>
           {runde.ergebnisse.some((e) => e.ki_entwurf) && (
-            <p className="ki-hinweis enthuellen" style={{ animationDelay: '1000ms' }} role="note">
-              <strong>{KI_HINWEIS}.</strong> Maßnahmen und Punkte sind in der Testphase ein Entwurf, den eine KI nach
-              der offenen Methode erstellt hat. Zitat und Seite im Programm lassen sich über die Links prüfen.
-            </p>
+            <details className="ki-hinweis enthuellen" style={{ animationDelay: '1400ms' }} role="note">
+              <summary>
+                <strong>{KI_HINWEIS}</strong>
+              </summary>
+              Maßnahmen und Punkte sind in der Testphase ein Entwurf, den eine KI nach der offenen Methode erstellt hat.
+              Zitat und Seite im Programm lassen sich über die Links prüfen.
+            </details>
           )}
-          <section className="beste enthuellen" style={{ animationDelay: '1200ms' }}>
-            <h3 className="beste-titel">Beste Lösung aller Parteien</h3>
+          <details className="beste enthuellen" style={{ animationDelay: '1500ms' }}>
+            <summary>
+              <span className="beste-titel">Beste Lösung aller Parteien</span>
+              <span className="beste-kurz">
+                {runde.beste.length === 0
+                  ? 'keine'
+                  : `${runde.beste.map((b) => b.partei.kurzname).join(', ')} · ${runde.beste[0].punkte} Punkte`}
+              </span>
+            </summary>
             {runde.beste.length === 0 ? (
               <p>
                 {runde.nichtErfasst.length === 0
@@ -246,7 +343,7 @@ export function Aufloesung({
                 {runde.nichtErfasst.map((p) => p.kurzname).join(', ')}.
               </p>
             )}
-          </section>
+          </details>
         </>
       )}
 
