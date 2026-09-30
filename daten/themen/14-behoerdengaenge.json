@@ -84,6 +84,46 @@
       "umsetzbarkeit": 3,
       "begruendung": "Kann Entscheidungen beschleunigen und Einzelfallprüfungen vermeiden; wie stark Vorschriften dadurch tatsächlich schlanker werden, ist offen.",
       "evidenz": "offen"
+    },
+    {
+      "id": 7125,
+      "name": "Verwaltungsleistungen im Land durchgängig digital, zentrales Portal oder App (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an den Hürden an, die Nutzer nennen: schwere Auffindbarkeit und Anträge, die hinterher doch auf Papier bearbeitet werden. Die meisten Leistungen erbringen Land und Kommunen selbst.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7126,
+      "name": "Verwaltungsmodernisierung zentral im Land bündeln (Landesprogramm)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Klare Zuständigkeit kann Digitalisierungsprojekte beschleunigen; für Bürgerinnen und Bürger ändert sich erst etwas, wenn Leistungen tatsächlich einfacher werden.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7127,
+      "name": "KI und Automatisierung zur Entlastung der Verwaltung (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Personalmangel abfedern und Bearbeitungszeiten senken; Voraussetzung sind digitale Akten und Daten, die vielerorts fehlen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7128,
+      "name": "Öffentlichen Dienst im Land attraktiver machen: Ausbildung, Bezahlung, Arbeitsbedingungen (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt am Personalmangel an, den der Normenkontrollrat als drängend beschreibt; das Land konkurriert aber mit Wirtschaft und anderen Ländern um dieselben Fachkräfte.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7129,
+      "name": "Terminvergabe in Bürgerämtern verbessern (Landesprogramm)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verteilt vorhandene Termine besser und verkürzt Wartezeiten etwas; mehr Kapazität entsteht dadurch nicht.",
+      "evidenz": "offen"
     }
   ],
   "abdeckung": [
@@ -367,6 +407,464 @@
           "ursachen_ids": [1401, 1403],
           "zitat": "Mit einem zentralen Online-Portal für Bürger und Unternehmen als „ One-Stop-Shop“ für alle behördlichen Dienstleistungen, in dem Daten nur einmal eingegeben werden müssen („Once-Only-Prinzip“) wollen wir das Leben für die Menschen vereinfachen.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7130,
+          "instrument": 7126,
+          "beschreibung": "Verwaltungsmodernisierung an einer zentralen Stelle der Landesverwaltung bündeln",
+          "ursachen_ids": [1401],
+          "zitat": "Wir wollen die Modernisierung der Verwaltung in Sachsen-Anhalt an einer zentralen Stelle in der Landesverwaltung bündeln",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=55",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7131,
+          "instrument": 7125,
+          "beschreibung": "Verwaltungsverfahren Ende-zu-Ende digitalisieren, vom Antrag bis zum Bescheid",
+          "ursachen_ids": [1401],
+          "zitat": "Genehmigungs- und Verwaltungsverfahren werden deshalb konsequent Ende-zu-Ende digitalisiert – vom Antrag bis zum Bescheid.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=56",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7132,
+          "instrument": 7128,
+          "beschreibung": "Öffentlicher Dienst als attraktiver, tarifgebundener Arbeitgeber, verlässliche Personalentwicklung",
+          "ursachen_ids": [1402],
+          "zitat": "Der öffentliche Dienst in Sachsen-Anhalt soll ein attraktiver, moderner und tarifgebundener Arbeitgeber sein.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7133,
+          "instrument": 7125,
+          "beschreibung": "Alle Verwaltungsleistungen über eine Sachsen-Anhalt-App",
+          "ursachen_ids": [1401],
+          "zitat": "Alle Verwaltungsdienstleistungen sollen über einen zentralen Zugang erreichbar sein: Die Sachsen- Anhalt-App.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=89",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7134,
+          "instrument": 7127,
+          "beschreibung": "KI für effizientere Bürgerservices und Entlastung der Mitarbeitenden",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Künstliche Intelligenz soll Bürgerservices effizienter machen, Mitarbeitende entlasten und Bürger*innen unterstützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7135,
+          "instrument": 7125,
+          "beschreibung": "Vollständig digitale Verfahren, medienbruchfrei zwischen Behörden (Digital Only)",
+          "ursachen_ids": [1401],
+          "zitat": "Wir setzen auf vollständig digitale Genehmigungen, einheitliche Datenstandards und medienbruchfreie Verfahren zwischen Behörden (Digital Only) durch.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7136,
+          "instrument": 7125,
+          "beschreibung": "Behörden digitalisieren, KI als Angebot, Bürgerportale verpflichtend",
+          "ursachen_ids": [1401],
+          "zitat": "Wir setzen auf Digitalisierung der Behörden und den intelligenten Einsatz von Künstlicher Intelligenz (KI) dort, wo es sinnvoll ist, und als Angebot an die Bürger.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=213",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7137,
+          "instrument": 7127,
+          "beschreibung": "KI-Anwendungen zur Entlastung der Verwaltung, Prozesse vorher vereinfachen",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "den Aufbau von KI-Anwendungsfällen mit dem Fokus auf einen großen Entlastungseffekt für die Verwaltung",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=143",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7138,
+          "instrument": 7128,
+          "beschreibung": "Kommunale Verwaltungen personell und digital stärken",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Kommunale Verwaltungen personell und digital stärken",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=77",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7139,
+          "instrument": 7125,
+          "beschreibung": "Alle Behördengänge bis 2030 digital über das MV-Serviceportal (One-Stop-Government)",
+          "ursachen_ids": [1401],
+          "zitat": "wollen das Prinzip des One-Stop-Government umsetzen, indem alle … Verwaltungsleistungen über das MV-Serviceportal in Anspruch genommen werden … können.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=101",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7140,
+          "instrument": 7125,
+          "beschreibung": "Onlinezugangsgesetz für Land und Kommunen vollständig umsetzen, zentrales Konto",
+          "ursachen_ids": [1401],
+          "zitat": "Wir treiben die Digitalisierung der Verwaltung konsequent voran und setzen das Onlinezugangsgesetz mit klaren Standards für Land und Kommunen vollständig um.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=56",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7141,
+          "instrument": 7128,
+          "beschreibung": "Familienfreundliche Arbeitsmodelle im öffentlichen Dienst",
+          "ursachen_ids": [1402],
+          "zitat": "Familienfreundliche Arbeitsmodelle im öffentlichen Dienst stärken,",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=84",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7142,
+          "instrument": 7125,
+          "beschreibung": "MV-Serviceportal zum One-Stop-Shop mit Ende-zu-Ende-Verfahren und Fristen, Anlaufstellen vor Ort",
+          "ursachen_ids": [1401],
+          "zitat": "das MV-Serviceportal zum echten One-Stop-Shop ausbauen – mit Ende-zu-Ende-Verfahren, Status-Tracking und verbindlichen Fristen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=57",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7143,
+          "instrument": 7127,
+          "beschreibung": "Digitalisierung und Prozessoptimierung im öffentlichen Dienst, um Kapazitäten freizusetzen",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Dies gilt ausdrücklich auch für den öffentlichen Dienst, wo Digitalisierung und Prozessoptimierung erhebliche Kapazitäten freisetzen können.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7144,
+          "instrument": 7128,
+          "beschreibung": "Familienfreundliche Arbeitsmodelle im öffentlichen Dienst ausbauen",
+          "ursachen_ids": [1402],
+          "zitat": "Familienfreundliche Arbeitsmodelle im öffentlichen Dienst ausbauen, etwa durch flexiblere Arbeitszeiten",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=15",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7145,
+          "instrument": 7125,
+          "beschreibung": "Medienbruchfreie Verfahren, verbindliche Standards, erst vereinfachen, dann digitalisieren",
+          "ursachen_ids": [1401],
+          "zitat": "Medienbruchfreie Verfahren, moderne Register und verbindliche Standards.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=91",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7146,
+          "instrument": 7128,
+          "beschreibung": "Gute Arbeitsbedingungen und Qualifizierung für Verwaltungsbeschäftigte",
+          "ursachen_ids": [1402],
+          "zitat": "Gute Arbeitsbedingungen und Qualifizierung für … als Voraussetzung für bürgernahes Verwaltungshandeln.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=76",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7147,
+          "instrument": 7125,
+          "beschreibung": "Verwaltungsinterne Abläufe konsequent digital abbilden",
+          "ursachen_ids": [1401],
+          "zitat": "Es braucht weiterhin große Anstrengungen, auch verwaltungsinterne Abläufe konsequent digital abzubilden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=89",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7148,
+          "instrument": 7127,
+          "beschreibung": "Entlastung durch KI bei standardisierten Aufgaben in Bezirken und nachgeordneten Bereichen",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Auch in den nachgeordneten Bereichen und den Bezirken setzen wir gezielt auf Verwaltungsvereinfachungen und Entlastung durch künstliche Intelligenz bei standardisierten Aufgaben, um Freiraum für wichtigere Aufgaben zu schaffen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=90",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7149,
+          "instrument": 7125,
+          "beschreibung": "Berlin-App nach Wiener Vorbild, Digitallotsen, mobile Angebote in den Kiezen",
+          "ursachen_ids": [1401],
+          "zitat": "Eine moderne Berlin-App nach Wiener Vorbild sowie Digitallotsen sollen dabei unterstützen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7150,
+          "instrument": 7128,
+          "beschreibung": "Beschäftigtenwohnungen für die Personalgewinnung, Personalaufgaben bündeln",
+          "ursachen_ids": [1402],
+          "zitat": "Deshalb treiben wir den Bau von Beschäftigtenwohnungen voran",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=61",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7151,
+          "instrument": 7128,
+          "beschreibung": "Ausbildungsoffensive für den öffentlichen Dienst, Beschäftigtenwohnen",
+          "ursachen_ids": [1402],
+          "zitat": "Unser Ziel, mehr junge Menschen für eine berufliche Zukunft im öffentlichen Dienst zu gewinnen, wollen wir durch eine Ausbildungsoffensive erreichen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=247",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7152,
+          "instrument": 7125,
+          "beschreibung": "Digitalgesetz für Berlin vollenden, Verwaltungsdigitalisierung umsetzen",
+          "ursachen_ids": [1401],
+          "zitat": "Wir wollen das Digitalgesetz für Berlin vollenden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=249",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7153,
+          "instrument": 7125,
+          "beschreibung": "Alle Behördengänge rund um die Uhr über ein digitales Rathaus",
+          "ursachen_ids": [1401],
+          "zitat": "Alle Behördengänge sollen rund um die Uhr digital von zu Hause aus über ein einheitliches „digitales Rathaus“ erledigt werden können",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7154,
+          "instrument": 7129,
+          "beschreibung": "KI-System für Bürgeramtstermine, digitale Warteliste für stornierte Termine",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Für Termine beim Bürgeramt und anderen Behörden führen wir ein KI-System ein, das Terminslots in Echtzeit optimiert.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=91",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7155,
+          "beschreibung": "Strategische Digitalisierung der Verwaltung",
+          "ursachen_ids": [1401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Nennt das Ziel einer effizienten, digitalen Verwaltung, aber keinen konkreten Weg für Bürgerinnen und Bürger.",
+          "evidenz": "offen",
+          "zitat": "Durch strategische Digitalisierung wollen wir die Lebensqualität verbessern und Berlin als Technologiestandort stärken.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=18",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7156,
+          "instrument": 7125,
+          "beschreibung": "Verwaltung digitaler und effizienter machen, Verwaltungsreform umsetzen",
+          "ursachen_ids": [1401],
+          "zitat": "Wir müssen unsere Verwaltung digitaler und effizienter machen und die Verwaltungsreform mit Leben füllen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=11",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7157,
+          "instrument": 7128,
+          "beschreibung": "Konkurrenzfähige Gehälter für IT-Fachkräfte im öffentlichen Dienst",
+          "ursachen_ids": [1401, 1402],
+          "zitat": "Um für eine erfolgreiche Umsetzung der Verwaltungsdigitalisierung exzellente EDV-Mitarbeiter gewinnen zu können, sollen die derzeitigen Eingruppierungskriterien gelockert werden, damit auch im öffentlichen Dienst konkurrenzfähige Gehälter gezahlt werden können.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=66",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true

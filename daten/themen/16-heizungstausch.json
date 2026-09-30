@@ -84,6 +84,30 @@
       "umsetzbarkeit": 3,
       "begruendung": "Schützt Mieterinnen und Mieter vor Mietsteigerungen durch den Heizungstausch; zugleich sinkt der Anreiz für Vermieter, die Heizung zu erneuern, sodass Mieter länger die Kosten alter Heizungen tragen können.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 7158,
+      "name": "Kommunale Wärmeplanung und Wärmenetze unterstützen: Beratung, Personal, Förderung (Landesprogramm)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Beschleunigt die Wärmepläne und den Bau von Wärmenetzen, auf die viele Eigentümer warten; das Land kann Kommunen mit Geld und Fachleuten helfen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7159,
+      "name": "Kommunale Wärmeplanung vereinfachen, realistische Vorgaben (Landesprogramm)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann die Planung für kleine Gemeinden beschleunigen; wenn Pläne gröber werden, wissen Eigentümer aber weniger genau, was kommt.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7160,
+      "name": "Pflicht zur kommunalen Wärmeplanung abschaffen (Landesprogramm)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Nimmt Kommunen eine Pflicht ab und Eigentümern das Warten auf einen Plan, schafft aber keine Klarheit, ob ein Wärmenetz kommt. Die Pflicht steht im Bundesrecht; das Land kann nur sein Ausführungsgesetz ändern oder im Bundesrat werben.",
+      "evidenz": "offen"
     }
   ],
   "abdeckung": [
@@ -353,6 +377,370 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7161,
+          "instrument": 7159,
+          "beschreibung": "Kommunale Wärmeplanung realistisch und bezahlbar gestalten",
+          "ursachen_ids": [1603],
+          "zitat": "Kommunale Wärmeplanung realistisch und bezahlbar gestalten",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=46",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7162,
+          "instrument": 7158,
+          "beschreibung": "Kommunen fachlich und finanziell bei der Wärmeplanung unterstützen",
+          "ursachen_ids": [1603],
+          "zitat": "Wir wollen diese fachlich und finanziell bei Klimaschutz- und Klimamanagement, kommunaler Wärmeplanung, Hitzeaktionsplänen, dem Schutz innerörtlicher Grünflächen sowie Luftreinhalte- und Lärmschutzplänen unterstützen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=24",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7163,
+          "instrument": 7158,
+          "beschreibung": "Kommunen und Heizungsbesitzer bei der Wärmewende und Wärmeplanung stärker unterstützen",
+          "ursachen_ids": [1603],
+          "zitat": "Hier brauchen Bürger*innen und Kommunen deshalb verstärkt Unterstützung.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=25",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7164,
+          "instrument": 7158,
+          "beschreibung": "Kommunen sollen Nahwärmenetze aufbauen können, auch mit Kooperationen oder Konzessionen",
+          "ursachen_ids": [1603],
+          "zitat": "Kommunen sollen Infrastruktur für Nahwärme aufbauen können",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=14",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7165,
+          "instrument": 7160,
+          "beschreibung": "Landesgesetz zur Wärmeplanung abschaffen, im Bundesrat für Abschaffung des Wärmeplanungsgesetzes",
+          "ursachen_ids": [1603],
+          "zitat": "Auf Landesebene wird die AfD-Regierung das Ausführungsgesetz zur Umsetzung der Wärmeplanung und zur Dekarbonisierung der Wärmenetze im Land Sachsen-Anhalt abschaffen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=158",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7166,
+          "instrument": 7158,
+          "beschreibung": "Kommunale Wärmeplanung fachlich und finanziell unterstützen, Wärmenetze auch auf dem Land fördern",
+          "ursachen_ids": [1603],
+          "zitat": "Nah- und Fernwärmenetze auch in kleineren Städten und ländlichen Räumen fördern",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=108",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7167,
+          "instrument": 7159,
+          "beschreibung": "Kommunale Wärmeplanung flexibel und praxisnah gestalten",
+          "ursachen_ids": [1603],
+          "zitat": "Kommunale Wärmeplanung flexibel und praxisnah gestalten",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=34",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7168,
+          "instrument": 7158,
+          "beschreibung": "Stadtwerke als zentrale Akteure der Wärmeplanung sichern und unterstützen",
+          "ursachen_ids": [1603],
+          "zitat": "Wir wollen unsere Stadtwerke langfristig sichern und ihre zukunftsfeste Aufstellung unterstützen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=17",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7169,
+          "instrument": 7158,
+          "beschreibung": "Kommunen umfassend bei Wärmeplanung und Umsetzung unterstützen, Beratung ausbauen",
+          "ursachen_ids": [1603],
+          "zitat": "Dafür unterstützen wir Kommunen umfassend bei der Wärmeplanung und ihrer Umsetzung.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=8",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7170,
+          "instrument": 7160,
+          "beschreibung": "Verpflichtende kommunale Wärmeplanung abschaffen, Freiwilligkeit",
+          "ursachen_ids": [1603],
+          "zitat": "die ineffiziente verpflichtende kommunale Wärmeplanung abschaffen und zur Freiwilligkeit zurückkehren",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7171,
+          "instrument": 7158,
+          "beschreibung": "Bürgschaftsprogramm für kleine Wärmenetze",
+          "ursachen_ids": [1603],
+          "zitat": "ein Bürgschaftsprogramm für den Bau von kleinen Wärmenetzen aufsetzen",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=65",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7172,
+          "beschreibung": "Tiefengeothermie als kommunale Wärmequelle fördern, Genehmigungen entbürokratisieren",
+          "ursachen_ids": [1603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Kann dort, wo die Geologie passt, Wärmenetze möglich machen und so Klarheit über die künftige Versorgung schaffen; Tiefengeothermie ist teuer, braucht Jahre und kommt nur für einen Teil der Gemeinden in Frage.",
+          "evidenz": "offen",
+          "zitat": "wollen wir die Tiefengeothermie als kommunale Wärmequelle, als echte, grundlastfähige und langfristig verlässliche Option, nicht als ideologisch verordnete Einheitslösung aktiv fördern.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=86",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landesprogramm durchsucht (Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme): keine Maßnahme zur kommunalen Wärmeplanung oder zu Wärmenetzen.",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landesprogramm durchsucht (Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme): keine Maßnahme zur kommunalen Wärmeplanung oder zu Wärmenetzen.",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landesprogramm durchsucht (Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme): keine Maßnahme zur kommunalen Wärmeplanung oder zu Wärmenetzen.",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7173,
+          "instrument": 7158,
+          "beschreibung": "Kommunale Wärmeplanung als Orientierung fortführen, Fernwärme dekarbonisieren",
+          "ursachen_ids": [1603],
+          "zitat": "Die kommunale Wärmeplanung bleibt für uns ein wichtiges Instrument, um Bürgerinnen und Bürgern, Unternehmen und Energieversorgern Orientierung für die zukünftige Wärmeversorgung zu geben.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=32",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7174,
+          "instrument": 7158,
+          "beschreibung": "Fernwärme über die Wärmeplanung ausbauen, Förderdarlehen für neue Wärmenetze",
+          "ursachen_ids": [1603],
+          "zitat": "Über die Wärmeplanung treiben wir den Ausbau der Fernwärme durch den landeseigenen Anbieter Berliner Energie und Wärme (BEW) voran.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=59",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7175,
+          "instrument": 7158,
+          "beschreibung": "Wärmewende-Manager in den Bezirken, Förderinstrumente für die Umsetzung der Wärmeplanung",
+          "ursachen_ids": [1603],
+          "zitat": "Wir wollen auf bezirklicher Ebene Wärmewende-Manager*innen als „Kümmer*innen“ für die Quartierswärme finanziell absichern.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=13",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7176,
+          "instrument": 7158,
+          "beschreibung": "Fern- und Nahwärmenetze im Stadtgebiet ausweiten",
+          "ursachen_ids": [1603],
+          "zitat": "Fern- und Nahwärmenetze im Stadtgebiet ausweiten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=87",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7177,
+          "instrument": 7158,
+          "beschreibung": "Wärmeagentur, Beratung und Förderung, mehr Personal für die Bezirke",
+          "ursachen_ids": [1603],
+          "zitat": "Bei der Umsetzung der Wärmeplanung werden wir die Berliner*innen mit Beratung durch eine Wärmeagentur und Förderung umfassend unterstützen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=195",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7178,
+          "instrument": 7158,
+          "beschreibung": "Konsequenter Ausbau der Fernwärme, gesteuert über die kommunale Wärmeplanung",
+          "ursachen_ids": [1603],
+          "zitat": "Das BSW fordert einen konsequenten Ausbau von Fernwärmeanlagen. Zur Steuerung dieses Prozesses soll maßgeblich die kommunale Wärmeplanung dienen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=46",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Landesprogramm durchsucht (Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme): keine Maßnahme zur kommunalen Wärmeplanung oder zu Wärmenetzen.",
+        "stand": "2026-09-30",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
     }
   ]
 }
