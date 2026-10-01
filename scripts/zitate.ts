@@ -59,7 +59,8 @@ export function seiteVon(url: string): number | null {
 /** Text jeder Seite eines PDFs (Index 0 = Seite 1). */
 export async function seitenTexte(pdf: Uint8Array): Promise<string[]> {
   const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs')
-  const dokument = await pdfjs.getDocument({ data: pdf, isEvalSupported: false, verbosity: pdfjs.VerbosityLevel.ERRORS }).promise
+  const ladeAuftrag = pdfjs.getDocument({ data: pdf, isEvalSupported: false, verbosity: pdfjs.VerbosityLevel.ERRORS })
+  const dokument = await ladeAuftrag.promise
   try {
     const seiten: string[] = []
     for (let n = 1; n <= dokument.numPages; n++) {
@@ -68,6 +69,6 @@ export async function seitenTexte(pdf: Uint8Array): Promise<string[]> {
     }
     return seiten
   } finally {
-    await dokument.destroy()
+    await ladeAuftrag.destroy()
   }
 }
