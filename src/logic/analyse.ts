@@ -19,6 +19,13 @@ const FORDERUNG_MUSTER = [
   /\bwir brauchen\b/,
 ]
 
+/** Pauschale Urteile über Gruppen („die Ausländer sind alle …“): nachfragen, nicht wiederholen. */
+const PAUSCHAL_MUSTER = [
+  /\bsind (doch |eh |halt )?alle\b/,
+  /\balle (auslaender|migranten|fluechtlinge|zuwanderer|asylanten|asylbewerber|muslime|rentner|politiker|beamten|arbeitslosen)\b/,
+]
+export const NACHFRAGE_PAUSCHAL = 'Was hast du selbst erlebt, oder wo fühlst du dich unsicher?'
+
 const WERT_MUSTER = [
   /\bich finde\b/,
   /\bmeiner meinung\b/,
@@ -71,6 +78,17 @@ export function analysiere(verlauf: Nachricht[], themen: Thema[], ursachen: Ursa
 
   const thema = erkenneThema(gesamt, themen)
   const istForderung = FORDERUNG_MUSTER.some((m) => m.test(letzter))
+
+  // Pauschalurteil über eine Gruppe: wie eine Forderung nachfragen, das Urteil aber nicht wiedergeben.
+  if (PAUSCHAL_MUSTER.some((m) => m.test(letzter)) && bisherigeNachfragen < MAX_NACHFRAGEN) {
+    return {
+      typ: 'forderung',
+      nachfrage: NACHFRAGE_PAUSCHAL,
+      thema_id: null,
+      ursachen_ids: [],
+      zusammenfassung: 'Allgemeine Aussage über eine Gruppe',
+    }
+  }
 
   // Forderung ≠ Problem: nach dem Alltagsproblem dahinter fragen (max. 2×).
   if (istForderung && bisherigeNachfragen < MAX_NACHFRAGEN) {

@@ -46,11 +46,13 @@ Jedes Thema hat ein **Ziel aus Sicht der Betroffenen** (Miete: „Mieterinnen un
 
 Die Ursachen werden in einem eigenen Schritt festgelegt, **bevor** Maßnahmen aus den Programmen erfasst werden. So kann niemand die Ursachen passend zu einem Programm zuschneiden.
 
-Die Ursachenliste entscheidet mit, welche Lösungen überhaupt Punkte bekommen können. Sie ist deshalb die empfindlichste Stelle der Methode. Drei Regeln sollen verhindern, dass sie einseitig wird:
+Die Ursachenliste entscheidet mit, welche Lösungen überhaupt Punkte bekommen können. Sie ist deshalb die empfindlichste Stelle der Methode. Vier Regeln sollen verhindern, dass sie einseitig wird:
 
 1. **Lösungsoffen formulieren.** Eine Ursache beschreibt, *was* schiefläuft, nicht, *wie* es zu beheben ist. „Zahl der Neuankommenden und Kapazitäten vor Ort passen nicht zusammen“ lässt Lösungen auf beiden Seiten zu (weniger Zugang oder mehr Kapazität); „zu wenige Unterkünfte“ ließe nur eine zu.
 2. **Quellen aus unterschiedlichen Richtungen.** Für jedes Thema werden Institute und Gremien unterschiedlicher Ausrichtung herangezogen, etwa arbeitgebernahe und gewerkschaftsnahe Forschung, und amtliche Statistik. Gemeinsame Studien solcher Institute sind besonders geeignet.
 3. **Perspektivenprüfung.** Vor der Erfassung von Maßnahmen wird geprüft, ob die in der öffentlichen und fachlichen Debatte vertretenen Problemdiagnosen in mindestens einer belegten Ursache vorkommen. Grundlage sind Fachquellen, nicht die Wahlprogramme. Eine Diagnose, die sich nicht unabhängig belegen lässt, wird nicht aufgenommen – gleich, wer sie vertritt. Die Prüfung wird mit Ergebnis und verworfenen Kandidaten festgehalten ([`docs/perspektiven-ursachen.md`](perspektiven-ursachen.md)).
+
+4. **In alle Richtungen suchen.** Beim Erfassen der Maßnahmen bekommt jede Lösungsrichtung, die die Perspektivenprüfung nennt, eigene Suchbegriffe – dieselben für alle Parteien. Wer nur nach den Stichwörtern einer Richtung sucht, findet nur deren Maßnahmen, und die übrigen Parteien gehen leer aus, obwohl ihr Programm etwas dazu enthält. Findet sich zu einer genannten Richtung keine Maßnahme, wird das ausdrücklich festgehalten.
 
 Mehr Ursachen bedeuten nicht mehr Punkte: Die KI ordnet einem Problem nur die Ursachen zu, die dazu passen.
 
