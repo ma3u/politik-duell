@@ -80,6 +80,33 @@ export function ursachenFreigegeben(freigegeben: Katalog, arbeitsstand: Katalog,
   return fehler
 }
 
+/**
+ * Beim Festlegen der Ursachen schaut niemand in Wahlprogramme. Liegt eine Adresse
+ * auf dem Server eines Programms im Katalog (auch als Kopie im Internet Archive),
+ * nennt das den Grund; sonst null.
+ */
+export function programmServer(k: Katalog, url: string): string | null {
+  const host = (u: string) => {
+    try {
+      return new URL(u).hostname.toLowerCase().replace(/^www\./, '')
+    } catch {
+      return null
+    }
+  }
+  const server = new Set([...k.parteien.map((p) => p.programm_url), ...k.landesprogramme.map((l) => l.url)].map((u) => (u ? host(u) : null)).filter((h): h is string => !!h))
+  let adresse = url.toLowerCase()
+  try {
+    adresse = decodeURIComponent(adresse)
+  } catch {
+    // ungültige Prozentkodierung: Adresse so prüfen, wie sie ist
+  }
+  for (const h of server) {
+    const muster = new RegExp(`(^|[/.@])${h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([/:?#]|$)`)
+    if (muster.test(adresse)) return `${url} liegt auf ${h}, dem Server eines Wahlprogramms – beim Festlegen der Ursachen gesperrt`
+  }
+  return null
+}
+
 // ---------------------------------------------------------------------------
 // Liste ohne Parteinamen
 // ---------------------------------------------------------------------------

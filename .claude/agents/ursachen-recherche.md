@@ -39,4 +39,4 @@ Du legst für ein Thema des Politik-Duells fest, **warum** ein Alltagsproblem be
 
 2. **Perspektivenprüfung** als Markdown-Tabelle: Ursache (kurz) | Ebene | Quelle | Diagnose aus der Debatte (mit „eher vertreten von“ – nur zur Kontrolle der Einseitigkeit). Danach „Entschieden:“ für strittige Ebenen und „Verworfen:“ mit Gründen.
 
-3. **Hinweise zur Quellenprüfung:** je Ursache die wörtlichen Zitate und Zahlen aus der Quelle mit Datum und Seite, damit die Betreiberin sie im Original bestätigen kann. Markiere alles, was du nicht im Original lesen konntest.
+3. **Hinweise zur Quellenprüfung:** je Ursache die wörtlichen Zitate und Zahlen aus der Quelle mit Datum und Seite, damit die Betreiberin sie im Original bestätigen kann. Markiere alles, was du nicht im Original lesen konntest, mit der **genauen URL** des PDFs – der Skill liest es dann selbst nach. Lass eine Diagnose deshalb nicht einfach weg: nenne sie unter „Verworfen“ als „nicht gelesen“ mit Quelle.

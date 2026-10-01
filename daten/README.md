@@ -335,6 +335,7 @@ npm run programm:text -- <url|datei.pdf> --seiten 2-4     # nur diese Seiten (In
 npm run programm:text -- <url|datei.pdf> auszug.txt       # Text mit Seitenmarken „===== Seite N =====“ (N = #page=N)
 npm run programm:text -- <url|datei.pdf> --suche "Wort"   # Fundstellen mit Seite
 npm run programm:sichern -- <url> [--datei kopie.pdf]     # Prüfsumme in parteien.json, Kopie im Internet Archive
+npm run quelle:text -- <url> --suche "Wort"              # unabhängige Quelle (Studie, Statistik) als PDF lesen; Programmserver gesperrt
 npm run daten:id                                          # nächste freie ID
 npm run daten:pruefen                                     # Format, Instrumente, Belege
 npm run zitate:pruefen -- --thema 4                       # Zitate gegen die PDFs
