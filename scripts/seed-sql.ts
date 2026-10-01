@@ -88,8 +88,8 @@ insert into public.pruef_einheiten (id, thema_id) values
 }${
   abdeckung.length
     ? `
-insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf) values
-  ${zeilen(abdeckung.map((a) => `(${a.thema_id}, ${a.partei_id}, ${q(a.land)}, ${q(a.art)}, ${q(a.begruendung)}, ${q(a.stand)}, ${a.ki_entwurf ?? false})`))};
+insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
+  ${zeilen(abdeckung.map((a) => `(${a.thema_id}, ${a.partei_id}, ${q(a.land)}, ${q(a.art)}, ${q(a.begruendung)}, ${q(a.stand)}, ${a.ki_entwurf ?? false}, ${a.durchsucht_fuer ? `'{${a.durchsucht_fuer.join(',')}}'` : 'null'})`))};
 `
     : ''
 }`

@@ -127,8 +127,9 @@ export function Methode() {
       </p>
       <p>
         <strong>Rolle:</strong> Wählst du eine Rolle (z. B. Mieter:in), kann eine Maßnahme für dich mehr oder weniger
-        bringen. Dann verschiebt sich ihre Wirksamkeit für dich um bis zu zwei Stufen (innerhalb von 0 bis 3). Solche
-        Auf- oder Abwertungen sind je Maßnahme einzeln begründet und werden angezeigt.
+        bringen. Dann verschiebt sich ihre Wirksamkeit für dich um bis zu zwei Stufen (innerhalb von 0 bis 3); auf 3
+        nur, wenn die Wirkung belegt ist. Solche Auf- oder Abwertungen sind je Maßnahme einzeln begründet und werden
+        angezeigt.
       </p>
 
       <h2>4. Punkte in der Runde</h2>
@@ -159,8 +160,9 @@ export function Methode() {
           ganzen Thema nichts im Programm, halten wir fest, was wir durchsucht haben.
         </li>
         <li>
-          Haben wir das Programm einer Partei zu einem Thema noch nicht vollständig ausgewertet und geprüft, zeigen wir
-          „noch nicht erfasst“. Dann wird die Runde nicht gewertet: Fehlende Daten sollen keiner Partei einen Punkt
+          Haben wir das Programm einer Partei zu einem Thema noch nicht vollständig ausgewertet und geprüft – auch wenn
+          es nur nach einer später ergänzten Ursache noch nicht durchsucht ist –, zeigen wir „noch nicht erfasst“. Dann
+          wird die Runde nicht gewertet: Fehlende Daten sollen keiner Partei einen Punkt
           kosten. Bei der besten Lösung aller Parteien vergleichen wir nur Parteien, für die das Thema erfasst ist.
         </li>
         <li>

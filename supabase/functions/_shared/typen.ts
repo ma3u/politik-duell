@@ -118,6 +118,12 @@ export interface AbdeckungEintrag {
   stand: string
   /** Eintrag nur als KI-Entwurf, noch nicht von Menschen geprüft (nur in der geschlossenen Testphase). */
   ki_entwurf?: boolean
+  /**
+   * Ursachen, für die das Programm durchsucht wurde. Fehlt eine Ursache, gilt sie für die
+   * Partei als „noch nicht erfasst“ (etwa nach einer nachträglich ergänzten Ursache).
+   * null/fehlend = ältere Einträge: für alle Ursachen des Themas durchsucht.
+   */
+  durchsucht_fuer?: number[] | null
 }
 
 /** Antwortformat der Edge Function `analyse` (siehe CLAUDE.md). */

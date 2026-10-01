@@ -6,7 +6,8 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { pruefeDatenordner } from '../katalog-laden.ts'
-import { programme, programmSeiten } from '../programme.ts'
+import { programmName } from '../entwurf.ts'
+import { erfassungsSeiten, programme, seitenOhneText } from '../programme.ts'
 
 const args = process.argv.slice(2)
 const liste = (name: string) => {
@@ -28,7 +29,6 @@ if (!/(^|[\\/])\.cache([\\/]|$)/.test(ordner)) {
   console.error('Der Ordner muss unter .cache/ liegen (Programmtexte nie ins Repository).')
   process.exit(1)
 }
-const ascii = (s: string) => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/ß/g, 'ss').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 const { katalog } = pruefeDatenordner()
 const auswahl = programme(katalog).filter(
@@ -40,11 +40,14 @@ const auswahl = programme(katalog).filter(
 mkdirSync(ordner, { recursive: true })
 let fehler = 0
 for (const p of auswahl) {
-  const datei = join(ordner, `${ascii(p.partei)}-${p.land ?? 'Bund'}.txt`)
+  const datei = join(ordner, `${programmName(p.partei, p.land)}.txt`)
   try {
-    const { seiten } = await programmSeiten(p.url, p.sha256)
-    writeFileSync(datei, seiten.map((t, n) => `\n===== Seite ${n + 1} =====\n${t}`).join(''), 'utf8')
-    console.log(`${datei}  (${seiten.length} Seiten) – ${p.name}`)
+    const { seiten } = await erfassungsSeiten(p.url, p.sha256)
+    // Seiten ohne Text (Bilder, Scans) stehen am Anfang der Datei: Dort findet keine Suche etwas.
+    const leer = seitenOhneText(seiten)
+    const kopf = leer.length ? `Hinweis: ${leer.length} von ${seiten.length} Seiten fast ohne Text (Bild oder Scan?): ${leer.join(', ')}\n` : ''
+    writeFileSync(datei, kopf + seiten.map((t, n) => `\n===== Seite ${n + 1} =====\n${t}`).join(''), 'utf8')
+    console.log(`${datei}  (${seiten.length} Seiten${leer.length ? `, ${leer.length} fast ohne Text: ${leer.join(', ')}` : ''}) – ${p.name}`)
   } catch (e) {
     fehler++
     console.error(`NICHT GELADEN: ${p.name}: ${e instanceof Error ? e.message : e}`)

@@ -15,7 +15,7 @@
 // Mehrere Begriffe = oder. Kein Treffer heißt nicht „nichts im Programm“: Synonyme
 // suchen und die passenden Kapitel lesen (npm run programm:text -- <url> --seiten 12-20).
 import { pruefeDatenordner } from '../katalog-laden.ts'
-import { lokalePdfs, programme, programmSeiten } from '../programme.ts'
+import { erfassungsSeiten, lokalePdfs, programme } from '../programme.ts'
 
 const args = process.argv.slice(2)
 const liste = (name: string) => {
@@ -76,7 +76,7 @@ const uebersicht: { name: string; seiten: number; treffer: number | null }[] = [
 for (const p of auswahl) {
   let seiten: string[]
   try {
-    ;({ seiten } = await programmSeiten(p.url, p.sha256, lokal))
+    ;({ seiten } = await erfassungsSeiten(p.url, p.sha256, lokal))
   } catch (e) {
     uebersicht.push({ name: p.name, seiten: 0, treffer: null })
     console.log(`\n## ${p.name} – NICHT DURCHSUCHT (${e instanceof Error ? e.message : e})`)

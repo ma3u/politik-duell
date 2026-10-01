@@ -9,7 +9,8 @@
 // Die Seitenzahl in „===== Seite N =====“ ist die PDF-Seite für den Beleg (#page=N),
 // nicht die gedruckte Seitenzahl.
 import { existsSync, readFileSync } from 'node:fs'
-import { programmSeiten, sha256 } from '../programme.ts'
+import { pruefeDatenordner } from '../katalog-laden.ts'
+import { erfassungsSeiten, programme, sha256 } from '../programme.ts'
 import { seitenTexte } from '../zitate.ts'
 import { gibSeitenAus, optionenAus } from './seiten-ausgabe.ts'
 
@@ -33,7 +34,16 @@ if (existsSync(quelle)) {
   // Prüfsumme vorher bilden: Das Auslesen übergibt die Daten an pdf.js.
   summe = sha256(daten)
   seiten = await seitenTexte(daten)
-} else ({ seiten, sha256: summe } = await programmSeiten(quelle, undefined))
+} else {
+  // Programm aus dem Katalog: nur die ausgewertete Fassung (Prüfsumme), sonst Abbruch.
+  const erwartet = programme(pruefeDatenordner().katalog).find((p) => p.url === quelle)?.sha256
+  try {
+    ;({ seiten, sha256: summe } = await erfassungsSeiten(quelle, erwartet))
+  } catch (e) {
+    console.error(`NICHT GELESEN: ${e instanceof Error ? e.message : e}`)
+    process.exit(1)
+  }
+}
 console.error(`${seiten.length} Seiten · sha256 ${summe}`)
 
 gibSeitenAus(seiten, { ...optionen, ausgabe })

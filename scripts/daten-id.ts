@@ -1,7 +1,9 @@
 // Aufruf: npm run daten:id                         – nächste freie ID für Maßnahmen und Instrumente
-//         npm run daten:id -- --gegen origin/main  – prüft, dass keine ID verschwindet oder umgewidmet wird
+//         npm run daten:id -- --gegen origin/main  – prüft, dass keine ID verschwindet oder umgewidmet wird,
+//                                                   neue Ursachen „durchsucht_fuer“ bekommen und Blindwerte nicht still geändert werden
 import { gitStand, pruefeDatenordner } from './katalog-laden.ts'
 import { naechsteId, vergleicheIds } from './ids.ts'
+import { vergleicheStand } from './stand-vergleich.ts'
 
 const { katalog, fehler } = pruefeDatenordner()
 if (fehler.length) {
@@ -14,10 +16,10 @@ if (i < 0) {
   console.log(naechsteId(katalog))
 } else {
   const ref = process.argv[i + 1]
-  // Ältere Stände folgen teils älteren Regeln; für den Vergleich zählen nur die IDs.
+  // Ältere Stände folgen teils älteren Regeln; verglichen werden nur IDs, Ursachen und Blindwerte.
   const alt = pruefeDatenordner(gitStand(ref)).katalog
-  const probleme = vergleicheIds(alt, katalog)
+  const probleme = [...vergleicheIds(alt, katalog), ...vergleicheStand(alt, katalog)]
   for (const p of probleme) console.error(`Fehler:  ${p}`)
   if (probleme.length) process.exit(1)
-  console.log(`IDs in Ordnung (verglichen mit ${ref}). Nächste freie ID: ${naechsteId(katalog)}`)
+  console.log(`IDs, neue Ursachen und Blindwerte in Ordnung (verglichen mit ${ref}). Nächste freie ID: ${naechsteId(katalog)}`)
 }

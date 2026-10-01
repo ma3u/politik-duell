@@ -3,10 +3,11 @@
 // IDs, als ungeprüfter KI-Entwurf. Danach: npm run daten:pruefen, zitate:pruefen, punkte.
 // Aufruf: npm run entwurf:eintragen -- <erfassung.json> <bewertung.json> [--stand JJJJ-MM-TT]
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { eintragen, pruefeBewertung, pruefeErfassung, type Bewertung, type Erfassung } from '../entwurf.ts'
+import { eintragen, pruefeBewertung, pruefeErfassung, pruefeProtokoll, type Bewertung, type Erfassung } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { formatiere } from '../pruefung-export.ts'
 import { leseKennungen } from './kennungen-datei.ts'
+import { leseProtokoll } from './protokoll-lesen.ts'
 
 const args = process.argv.slice(2)
 const i = args.indexOf('--stand')
@@ -26,7 +27,12 @@ const bewertung = JSON.parse(readFileSync(bewertungPfad, 'utf8')) as Bewertung
 const { fest, probleme: kennungProbleme } = leseKennungen(erfassungPfad, erfassung)
 for (const p of kennungProbleme) console.error(`Fehler:  kennungen.json passt nicht zur Erfassung: ${p}`)
 if (kennungProbleme.length) process.exit(1)
-const probleme = [...pruefeErfassung(katalog, erfassung), ...pruefeBewertung(katalog, erfassung, bewertung, fest)]
+// Ohne Protokoll kein Eintrag: Rohantworten, Aufträge und Rückfragen machen Eingriffe sichtbar.
+const probleme = [
+  ...pruefeErfassung(katalog, erfassung),
+  ...pruefeBewertung(katalog, erfassung, bewertung, fest),
+  ...pruefeProtokoll(katalog, erfassung, leseProtokoll(erfassungPfad), bewertung.blind_pruefsumme),
+]
 for (const p of probleme) console.error(`Fehler:  ${p}`)
 if (probleme.length) process.exit(1)
 

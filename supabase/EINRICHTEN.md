@@ -241,6 +241,20 @@ deployt werden – `seed.sql` reicht.
    [`supabase/dashboard/3-pruefung.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/3-pruefung.ts)
    ersetzen → **Deploy** (braucht Schritt 1 und 2, sonst findet sie keine Prüfeinheiten).
 
+### 11. Abdeckung je Ursache
+
+Einmalig, **in dieser Reihenfolge**. Danach wird eine Runde nicht gewertet, wenn ein Programm nach einer
+(nachträglich ergänzten) Ursache noch nicht durchsucht ist – statt dass die Partei dafür 0 Punkte bekommt.
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261004000000_abdeckung_ursachen.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261004000000_abdeckung_ursachen.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Fügt der Tabelle `abdeckung` die Spalte `durchsucht_fuer` hinzu.
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1).
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy**. Enthält auch die neue Regel, dass eine Rolle die Wirksamkeit ohne belegte Wirkung nur bis 2 hebt.
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

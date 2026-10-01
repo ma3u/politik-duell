@@ -180,11 +180,11 @@ Hängt eine Maßnahme ganz oder teilweise von EU-Entscheidungen ab, die Deutschl
 
 ### Rollen-Modifikator (−2 bis +2, optional)
 
-Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung. Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
+Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung. Auf Wirksamkeit 3 hebt der Modifikator nur bei `evidenz: belegt`; sonst zählt er höchstens bis 2 (die Prüfung warnt). Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
 
 ### Stand der Forschung
 
-Feld `evidenz`: `belegt` (übereinstimmende Studien oder Erfahrungen anderswo), `gemischt` (Studien kommen zu unterschiedlichen Ergebnissen) oder `offen` (kaum untersucht). Wirksamkeit 3 nur mit `belegt`; bei `gemischt` oder `offen` höchstens 2, und die Begründung nennt beide Seiten. Das Spiel zeigt „Wirkung in der Forschung umstritten“ bzw. „Wirkung bisher kaum untersucht“ an. Ergibt die Prüfung einen Median von 3 bei nicht belegter Wirkung, meldet `npm run pruefung:uebernehmen` einen Fehler – dann Forschungsstand klären oder die Wirksamkeit begründet auf 2 setzen.
+Feld `evidenz`: `belegt` (übereinstimmende Studien oder Erfahrungen anderswo), `gemischt` (Studien kommen zu unterschiedlichen Ergebnissen) oder `offen` (kaum untersucht). Wirksamkeit 3 nur mit `belegt` und einer Studie (`beleg_studie_url`, bei neuen Blindbewertungen Pflicht, sonst Warnung); bei `gemischt` oder `offen` höchstens 2, und die Begründung nennt beide Seiten. Das Spiel zeigt „Wirkung in der Forschung umstritten“ bzw. „Wirkung bisher kaum untersucht“ an. Ergibt die Prüfung einen Median von 3 bei nicht belegter Wirkung, meldet `npm run pruefung:uebernehmen` einen Fehler – dann Forschungsstand klären oder die Wirksamkeit begründet auf 2 setzen.
 
 ### Begründung
 
@@ -323,6 +323,8 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 - `instrumente` (optional): gemeinsame Bewertung gleicher Lösungswege, siehe „Instrumente“. Eine Maßnahme mit `instrument` hat **keine** eigenen Felder `wirksamkeit`, `umsetzbarkeit`, `begruendung`, `evidenz`, `beleg_studie_url`, `rollen_modifikator` und `bewertung` – die kommen vom Instrument. Ein Instrument, auf das keine Maßnahme verweist, meldet die Prüfung (Warnung).
 - `ebene` (Pflicht bei Ursachen): `bund` oder `land` – wer vor allem zuständig ist. Bei `land` zählt das Landesprogramm, wenn Spielende ein Bundesland wählen; sonst das Bundesprogramm. Zuordnung und Begründung in [`docs/perspektiven-ursachen.md`](../docs/perspektiven-ursachen.md).
 - `land` und `landtagswahl` (bei Abdeckungseinträgen): Eintrag aus dem Landesprogramm der Partei in diesem Land zu dieser Wahl. Ohne `land` ist es das Bundesprogramm. Je Thema, Partei und Programm höchstens ein Eintrag. Landeseinträge sind eine Ergänzung: „noch nicht erfasst“ bezieht sich auf das Bundesprogramm; für Landesursachen gibt es bei gewähltem Bundesland zusätzlich „noch nicht erfasst“ für das Land.
+- `durchsucht_fuer` (bei Abdeckungseinträgen, von `npm run entwurf:eintragen` gesetzt): Ursachen, nach denen das Programm durchsucht wurde (bei Landeseinträgen nur Ursachen mit `ebene: land`). Fehlt eine Ursache, gilt sie für die Partei als „noch nicht erfasst“, und eine Runde mit ihr wird nicht gewertet. Ohne das Feld (ältere Einträge) gilt das Programm für alle Ursachen als durchsucht. Kommt eine Ursache zu einem Thema mit Abdeckung hinzu, verlangt die Prüfung bei Pull Requests das Feld an jedem aktuellen Eintrag, für den die Ursache zählt – mit der neuen Ursache erst, wenn das Programm danach durchsucht ist.
+- `entwurf_herkunft` (bei Instrumenten und Maßnahmen ohne Instrument): `blind`, wenn die Entwurfswerte aus der Blindbewertung stammen (setzt `entwurf:eintragen`), `nicht_blind`, wenn jemand sie mit Kenntnis der Partei vergeben oder geändert hat. Fehlt bei Einträgen von vor dem 1. 10. 2026 (nicht blind entstanden). Werte mit `blind` dürfen sich nur durch die Prüfung ändern; wer sie anders ändert, setzt `nicht_blind` und begründet es im Pull Request (prüft die CI).
 - `nachtraeglich` (optional, bei Ursachen): Wurde eine Ursache erst nach dem Blick in die Programme ergänzt, steht hier Datum und Grund. Das soll die Ausnahme bleiben und ist im Pull Request zu begründen.
 - `zitat` ist bei echten Daten Pflicht: der Satz aus dem Programm, auf den sich die Maßnahme stützt, wörtlich (Silbentrennungen am Zeilenende zusammengezogen). Es dient der Prüfung und kommt nicht in die Datenbank.
 - `schlagwoerter` braucht nur die Offline-Analyse ohne KI; kleingeschrieben, Umlaute als ae/oe/ue.
@@ -382,15 +384,21 @@ Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die
 
 ```bash
 npm run ursachen:freigegeben -- 17                      # bricht ab, wenn die Ursachen nicht auf main stehen oder verändert wurden
-npm run entwurf:blind -- erfassung.json --ausgabe blind.json   # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 … (gespeichert als kennungen.json)
+npm run entwurf:blind -- erfassung.json --ausgabe blind.json   # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 … (gespeichert als kennungen.json), mit Prüfsumme
 npm run entwurf:json -- antwort.txt bewertung.json      # JSON-Objekt aus einer gespeicherten Agentenantwort holen
-npm run entwurf:bewertung-pruefen -- erfassung.json bewertung.json   # Ebenen, unbenutzte Instrumente, Wirksamkeit 3, Hinweise (viel „offen“)
-npm run entwurf:eintragen -- erfassung.json bewertung.json   # neue IDs, Beleg-Links, KI-Entwurf; schreibt nur einen gültigen Katalog
+npm run entwurf:bewertung-pruefen -- erfassung.json bewertung.json   # Prüfsumme der Blindliste, Ebenen, unbenutzte Instrumente, Wirksamkeit 3, Hinweise
+npm run entwurf:eintragen -- erfassung.json bewertung.json   # verlangt protokoll/; neue IDs, Beleg-Links, KI-Entwurf, durchsucht_fuer, entwurf_herkunft
 ```
 
 **Windows/PowerShell 7:** npm verschluckt Optionen mit Wert (`--partei`, `--seiten`, `--ausgabe`, `--thema`), wenn das erste `--` nicht in Anführungszeichen steht. Schreibe dann `npm run programme:suche '--' "Wort" '--partei' SPD` oder rufe das Skript direkt auf (`node --experimental-strip-types scripts/entwurf/programme-suche.ts "Wort" --partei SPD`).
 
-Formate der Arbeitsdateien (`Erfassung`, `Bewertung`) stehen in `scripts/entwurf.ts`; sie liegen in `.cache/entwurf/<Themen-ID>/` und kommen nicht ins Repository. Ein Programm, das ein Agent nicht laden konnte, wird ausgelassen (bleibt „noch nicht erfasst“) und nie als „keine Maßnahme“ eingetragen.
+Formate der Arbeitsdateien (`Erfassung`, `Bewertung`) stehen in `scripts/entwurf.ts`; sie liegen in `.cache/entwurf/<Themen-ID>/` und kommen nicht ins Repository.
+
+Was technisch abgesichert ist, damit Eingriffe des Koordinators (der die Parteien kennt) sichtbar bleiben:
+
+- **Prüfsumme der Blindliste:** `blind.json` trägt eine `pruefsumme` über den ganzen Inhalt; der Bewertungs-Agent gibt sie als `blind_pruefsumme` zurück. Wird danach eine Beschreibung, ein Zitat, eine Seite, eine Ursachenzuordnung oder ein vorhandenes Instrument geändert, lehnen `entwurf:bewertung-pruefen` und `entwurf:eintragen` die Bewertung ab.
+- **Protokoll:** `entwurf:eintragen` verlangt neben der Erfassung den Ordner `protokoll/` mit `erfassung-<Partei>-<Bund|Land>.txt` (Rohantwort jedes Erfassungs-Agenten samt Protokoll), `bewertung-auftrag.txt` (vollständiger Auftrag mit der Blindliste und ihrer Prüfsumme, ohne Parteinamen), `bewertung-antwort.txt` und `rueckfragen.md` (jede Rückfrage mit Programm bzw. Kennung, Anlass und Ergebnis, sonst „keine“).
+- **Programmfassung:** `programme:texte`, `programme:suche` und `programm:text` lesen nur die Fassung mit der Prüfsumme aus `parteien.json`; bei Abweichung gilt das Programm als nicht durchsucht. `programme:texte` nennt Seiten fast ohne Text (Bilder, Scans). Ein Programm, das ein Agent nicht laden konnte, wird ausgelassen (bleibt „noch nicht erfasst“) und nie als „keine Maßnahme“ eingetragen.
 
 ## Neue Wahlperiode
 
@@ -411,7 +419,9 @@ Formate der Arbeitsdateien (`Erfassung`, `Bewertung`) stehen in `scripts/entwurf
 - Beleg zeigt ins Programm der richtigen Partei, mit Seitenanker; bei echten Daten ein wörtliches Zitat
 - **Abdeckung:** jede Partei höchstens einmal pro Thema und Programm – mit Maßnahmen oder `keine_massnahme`; fehlende Parteien (Bundesprogramm) werden als „noch nicht erfasst“ gemeldet (Warnung)
 - **Bund und Länder:** jede Ursache mit `ebene`; Landeseinträge nur mit eingetragenem Landesprogramm, Beleg in diesem Programm und nur für Ursachen mit `ebene: land`; Programme früherer Wahlperioden bleiben stehen, zählen aber nicht; fehlt das Programm zur letzten Wahl, gibt es eine Warnung
-- **Stand der Forschung:** Wirksamkeit 3 nur mit `evidenz: belegt`; `geprueft` nur mit `evidenz`
+- **Stand der Forschung:** Wirksamkeit 3 nur mit `evidenz: belegt` (Warnung ohne Studie); `geprueft` nur mit `evidenz`; Rollen-Modifikatoren, die ohne belegte Wirkung auf 3 heben würden (Warnung, zählen bis 2)
+- **Abdeckung je Ursache:** `durchsucht_fuer` nur mit Ursachen des Themas (bei Landeseinträgen nur Landesursachen); Maßnahmen nur zu durchsuchten Ursachen; bei Pull Requests: neue Ursache in einem Thema mit Abdeckung → `durchsucht_fuer` an jedem aktuellen Eintrag, für den sie zählt
+- **Blindbewertung:** bei Pull Requests keine geänderten Werte an Einträgen mit `entwurf_herkunft: blind` außer durch die Prüfung
 - Einträge sind nicht älter als das aktuelle Programm
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen
@@ -426,7 +436,7 @@ npm run seed                       # supabase/seed.sql neu erzeugen
 npm run dashboard                  # zusätzlich Dateien fürs Supabase-Dashboard
 npm run pruefung:uebernehmen -- export.json   # Ergebnis der Prüfung übernehmen
 npm run zitate:pruefen             # Zitate gegen die Programm-PDFs prüfen (braucht Internet)
-npm run daten:id -- --gegen origin/main       # IDs mit einem anderen Stand vergleichen
+npm run daten:id -- --gegen origin/main       # IDs, neue Ursachen und Blindwerte mit einem anderen Stand vergleichen
 ```
 
 Werkzeuge zum Erfassen: siehe „Erfassen“.

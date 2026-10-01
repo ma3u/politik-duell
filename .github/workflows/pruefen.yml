@@ -19,7 +19,7 @@ jobs:
       - run: npm ci
       - name: Datenkatalog prüfen
         run: npm run daten:pruefen
-      - name: Keine ID entfernt oder umgewidmet
+      - name: IDs, neue Ursachen und Blindwerte gegen den Zielzweig
         if: github.event_name == 'pull_request'
         env:
           ZIEL: origin/${{ github.base_ref }}

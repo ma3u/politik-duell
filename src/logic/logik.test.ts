@@ -131,6 +131,24 @@ describe('Bewertung', () => {
     expect(massnahmenPunkte(m, 'eigentuemer')).toMatchObject({ punkte: 0, wirksamkeit: 0 })
   })
 
+  it('hebt die Wirksamkeit über die Rolle nur mit belegter Wirkung auf 3', () => {
+    const m = { ...MASSNAHMEN[0], wirksamkeit: 2 as const, umsetzbarkeit: 3 as const, rollen_modifikator: { mieter: { wert: 1, begruendung: 'x' } } }
+    expect(massnahmenPunkte({ ...m, evidenz: 'gemischt' }, 'mieter')).toMatchObject({ punkte: 6, wirksamkeit: 2 })
+    expect(massnahmenPunkte({ ...m, evidenz: 'offen' }, 'mieter')).toMatchObject({ punkte: 6, wirksamkeit: 2 })
+    expect(massnahmenPunkte({ ...m, evidenz: 'belegt' }, 'mieter')).toMatchObject({ punkte: 9, wirksamkeit: 3 })
+  })
+
+  it('wertet nicht für eine Ursache, nach der das Programm nicht durchsucht wurde', () => {
+    // Partei Gamma, Energie: Maßnahmen zu 301 und 303, keine zu 302. Angenommen, 302 kam nachträglich dazu.
+    const ohne302 = ABDECKUNG.map((a) => (a.partei_id === 3 && a.thema_id === 3 ? { ...a, durchsucht_fuer: [301, 303] } : a))
+    expect(bewertePartei(partei(3), 3, [301], null, MASSNAHMEN, ohne302).punkte).toBe(4)
+    const neu = bewertePartei(partei(3), 3, [301, 302], null, MASSNAHMEN, ohne302)
+    expect(neu.abdeckung).toBeNull()
+    expect(neu.fehlt).toMatchObject({ grund: 'nicht_erfasst' })
+    // Ohne Angabe (ältere Einträge) gilt das Programm für alle Ursachen als durchsucht: 0 Punkte bei 302.
+    expect(bewertePartei(partei(3), 3, [302], null, MASSNAHMEN, ABDECKUNG)).toMatchObject({ punkte: 0, abdeckung: { art: 'massnahmen' } })
+  })
+
   it('vergibt Rundenpunkte nach Regel', () => {
     expect(rundenpunkte(5, 3)).toEqual([1, 0])
     expect(rundenpunkte(2, 4)).toEqual([0, 1])
