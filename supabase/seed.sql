@@ -1418,7 +1418,18 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7254, 9, 12, null, 'Ausländerbehörden stärken, Datenaustausch verbessern, Verfahren aus einer Hand', '{910}', 1, 2, null, 'Bessere Aufnahmebedingungen können die Belastungen verringern, die Kriminologen für den Anstieg 2015/16 mitverantwortlich machen; ob sie Straftaten verhindern, ist nicht untersucht.', 'https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55', null, 'offen', '2026-10-01', false, true),
   (7255, 9, 13, null, 'Kommunen mit einer Integrationsoffensive stärker und verlässlicher finanziell unterstützen', '{910}', 1, 2, null, 'Bessere Aufnahmebedingungen können die Belastungen verringern, die Kriminologen für den Anstieg 2015/16 mitverantwortlich machen; ob sie Straftaten verhindern, ist nicht untersucht.', 'https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=128', null, 'offen', '2026-10-01', false, true),
   (7256, 9, 16, null, 'Fonds für Willkommenskommunen; der Bund erstattet die Unterbringungskosten vollständig pro Person', '{910}', 1, 2, null, 'Bessere Aufnahmebedingungen können die Belastungen verringern, die Kriminologen für den Anstieg 2015/16 mitverantwortlich machen; ob sie Straftaten verhindern, ist nicht untersucht.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=52', null, 'offen', '2026-10-01', false, true),
-  (7257, 9, 15, null, 'Asylsuchende für die Dauer des Verfahrens in zentralen Aufnahmeeinrichtungen unterbringen', '{910}', 1, 2, null, 'Zentrale Unterbringung kann Verfahren und Rückführungen erleichtern; große Sammelunterkünfte gelten in der kriminologischen Forschung aber eher als Risiko für Konflikte. Die Wirkung auf Straftaten ist nicht untersucht.', 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=106', null, 'offen', '2026-10-01', false, true);
+  (7257, 9, 15, null, 'Asylsuchende für die Dauer des Verfahrens in zentralen Aufnahmeeinrichtungen unterbringen', '{910}', 1, 2, null, 'Zentrale Unterbringung kann Verfahren und Rückführungen erleichtern; große Sammelunterkünfte gelten in der kriminologischen Forschung aber eher als Risiko für Konflikte. Die Wirkung auf Straftaten ist nicht untersucht.', 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=106', null, 'offen', '2026-10-01', false, true),
+  (7261, 15, 12, null, 'Befristeter Steuerabzugsbetrag für in Deutschland produzierte E-Autos, auch Gebrauchte und Leasing', '{1501}', 1, 3, null, 'Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.', 'https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=7', 'https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html', 'gemischt', '2026-10-01', false, true),
+  (7262, 15, 13, null, 'Staatliche Unterstützung beim Kauf verbrauchsarmer E-Autos, Social Leasing, Ladekarte', '{1501}', 1, 3, null, 'Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.', 'https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=40', 'https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html', 'gemischt', '2026-10-01', false, true),
+  (7263, 15, 16, null, 'Sozial gestaffelte Förderung kleiner E-Fahrzeuge für Pendelnde auf dem Land', '{1501}', 1, 3, null, 'Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32', 'https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html', 'gemischt', '2026-10-01', false, true),
+  (7264, 15, 17, null, 'Volksleasing für umweltfreundliche Fahrzeuge aus europäischer Produktion, Kaufprämien im niedrigen Preissegment', '{1501}', 1, 3, null, 'Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29', 'https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html', 'gemischt', '2026-10-01', false, true),
+  (7265, 15, 11, null, 'Technologieoffenheit: E-Fuels, Wasserstoff und nachhaltige Biokraftstoffe neben der Elektromobilität nutzen', '{1501}', 1, 1, null, 'Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=75', 'https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf', 'offen', '2026-10-01', false, true),
+  (7266, 15, 14, null, 'Statt eines Verbrennerverbots alternative Kraftstoffe wie E-Fuels ermöglichen', '{1501}', 1, 1, null, 'Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.', 'https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42', 'https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf', 'offen', '2026-10-01', false, true),
+  (7267, 15, 15, null, 'Synthetische Kraftstoffe berücksichtigen und bei den Abgaben wie Elektrofahrzeuge behandeln', '{1501}', 1, 1, null, 'Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.', 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=44', 'https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf', 'offen', '2026-10-01', false, true),
+  (7268, 15, 17, null, 'Verbrauchsarme Verbrenner und alternative Kraftstoffe fördern', '{1501}', 1, 1, null, 'Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', 'https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf', 'offen', '2026-10-01', false, true),
+  (7269, 15, 11, null, 'In angespannter Lage Energie- und Umsatzsteuer für Güter des täglichen Bedarfs schnell senken dürfen', '{1501}', 1, 1, null, 'Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14', 'https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1', 'gemischt', '2026-10-01', false, true),
+  (7270, 15, 11, null, 'Europäischen Energiebinnenmarkt stärken, internationale Energiepartnerschaften ausbauen', '{1501}', 1, 3, null, 'Mehr Lieferländer machen Deutschland weniger anfällig für Preissprünge bei einzelnen Lieferanten; die Maßnahme nennt weder Öl noch konkrete Schritte.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22', null, 'offen', '2026-10-01', false, true),
+  (7271, 15, 17, null, 'Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis', '{1501}', 1, 2, null, 'Langfristige Verträge können Preisschwankungen dämpfen, binden aber auch an Preise, wenn der Markt fällt; die Maßnahme nennt kein Öl, sondern Energieimporte allgemein.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', null, 'offen', '2026-10-01', false, true);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -1908,7 +1919,12 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7238, 9),
   (7239, 9),
   (7253, 9),
-  (7257, 9);
+  (7257, 9),
+  (7258, 15),
+  (7259, 15),
+  (7260, 15),
+  (7270, 15),
+  (7271, 15);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf) values
   (1, 11, null, 'massnahmen', null, '2026-09-30', true),
@@ -2177,13 +2193,13 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (14, 15, 'BE', 'massnahmen', null, '2026-09-30', true),
   (14, 16, 'BE', 'massnahmen', null, '2026-09-30', true),
   (14, 17, 'BE', 'massnahmen', null, '2026-09-30', true),
-  (15, 11, null, 'massnahmen', null, '2026-09-30', true),
-  (15, 12, null, 'massnahmen', null, '2026-09-30', true),
-  (15, 13, null, 'massnahmen', null, '2026-09-30', true),
-  (15, 14, null, 'massnahmen', null, '2026-09-30', true),
-  (15, 15, null, 'massnahmen', null, '2026-09-30', true),
-  (15, 16, null, 'massnahmen', null, '2026-09-30', true),
-  (15, 17, null, 'massnahmen', null, '2026-09-30', true),
+  (15, 11, null, 'massnahmen', null, '2026-10-01', true),
+  (15, 12, null, 'massnahmen', null, '2026-10-01', true),
+  (15, 13, null, 'massnahmen', null, '2026-10-01', true),
+  (15, 14, null, 'massnahmen', null, '2026-10-01', true),
+  (15, 15, null, 'massnahmen', null, '2026-10-01', true),
+  (15, 16, null, 'massnahmen', null, '2026-10-01', true),
+  (15, 17, null, 'massnahmen', null, '2026-10-01', true),
   (16, 11, null, 'massnahmen', null, '2026-09-30', true),
   (16, 12, null, 'massnahmen', null, '2026-09-30', true),
   (16, 13, null, 'massnahmen', null, '2026-09-30', true),
