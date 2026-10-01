@@ -72,7 +72,7 @@ insert into public.themen (id, name, beschreibung) values
   (14, 'Behördengänge', 'Lange Wartezeiten auf Termine und Bescheide, viel Papier, dieselben Angaben immer wieder.'),
   (15, 'Autofahren', 'Teures Tanken, wenige Lademöglichkeiten und teure Elektroautos.'),
   (16, 'Heizungstausch', 'Unsicherheit und hohe Kosten, wenn die Heizung erneuert werden muss oder soll.'),
-  (17, 'Kita-Betreuung', 'Familien finden keinen passenden Betreuungsplatz oder erleben, dass die Betreuung zu wenig Personal hat oder ausfällt.')
+  (17, 'Kita-Betreuung', 'Familien finden keinen passenden Betreuungsplatz oder erleben, dass die Betreuung zu wenig Personal hat, ausfällt oder zu viel kostet.')
 on conflict (id) do update set name = excluded.name, beschreibung = excluded.beschreibung;
 
 insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene) values
@@ -155,7 +155,8 @@ insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene) valu
   (1701, 17, 'Der Betreuungsbedarf der Eltern übersteigt das Angebot bei unter Dreijährigen: 2025 wünschten 49,3 % einen Platz, 37,8 % nutzten ein Angebot (Lücke im Westen 12,7, im Osten 5,8 Prozentpunkte)', 'https://www.akjstat.tu-dortmund.de/themen/kindertagesbetreuung-bis-zum-schuleintritt/weiterhin-ungedeckte-platzbedarfe-kindertagesbetreuung-kompakt-ausbaustand-und-bedarf-2025-erschienen', 'land'),
   (1702, 17, 'Das Personal reicht oft nicht für die Kinderzahl: Mehr als jede zweite Kita-Leitung befürchtet, dass Personalmangel gute Betreuung erschwert, fast 80 % nennen Fehlzeiten als Einschränkung (2024)', 'https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1677-gut-ausgebildet-und-gestresst.html', 'land'),
   (1703, 17, 'Der Personalschlüssel liegt oft unter wissenschaftlichen Empfehlungen: 2022 wurden in Ostdeutschland fast 90 % der Kita-Kinder in nicht kindgerecht besetzten Gruppen betreut (Westen: 62 %)', 'https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2023/november/mehr-plaetze-und-bessere-qualitaet-in-kitas-bis-2030-wenn-jetzt-entschlossen-gehandelt-wird', 'land'),
-  (1704, 17, 'Kitas schließen immer wieder ungeplant: 2023/24 erlebten 43 % der Familien mit Kita-Kindern unerwartete Schließtage, bei rund 13 % summierten sie sich auf mehr als eine Woche im Kita-Jahr', 'https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1730-unerwartete-kita-schliessungen-gehen-mit-verstaerkten-zweifeln-an-der-qualitaet-einher.html', 'land')
+  (1704, 17, 'Kitas schließen immer wieder ungeplant: 2023/24 erlebten 43 % der Familien mit Kita-Kindern unerwartete Schließtage, bei rund 13 % summierten sie sich auf mehr als eine Woche im Kita-Jahr', 'https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1730-unerwartete-kita-schliessungen-gehen-mit-verstaerkten-zweifeln-an-der-qualitaet-einher.html', 'land'),
+  (1705, 17, 'Viele Eltern sehen bei den Kosten Verbesserungsbedarf: Bei unter Dreijährigen nennen 37 % „viel Bedarf“ bei den Elternbeiträgen, bei Älteren 24 % (Erhebung 2022)', 'https://doi.org/10.36189/DJI202606', 'land')
 on conflict (id) do update set thema_id = excluded.thema_id, beschreibung = excluded.beschreibung,
   quelle_url = excluded.quelle_url, ebene = excluded.ebene;
 
