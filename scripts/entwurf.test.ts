@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, pruefeBewertung, pruefeErfassung, pruefeKennungen, ursachenFreigegeben, type Bewertung, type Erfassung } from './entwurf'
+import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, pruefeBewertung, pruefeErfassung, pruefeKennungen, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
 
 const PARTEIEN: Datei = {
   pfad: 'parteien.json',
@@ -117,10 +117,12 @@ describe('Liste ohne Parteinamen', () => {
     // Ohne gespeicherte Zuordnung verschiebt sich die Reihenfolge bei manchen Textänderungen (Prüfsumme).
     const verschiebt = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].some((x) => {
       e.programme[0].massnahmen[0].beschreibung = `Kitaplätze fördern ${x}`
-      return JSON.stringify(kennungen(e)) !== JSON.stringify(fest)
+      const nur = (l: Kennung[]) => JSON.stringify(l.map(({ kennung, programm, massnahme }) => [kennung, programm, massnahme]))
+      return nur(kennungen(e)) !== nur(fest)
     })
     expect(verschiebt).toBe(true)
     expect(kennungen(e, fest)).toEqual(fest)
+    expect(pruefeKennungen(e, fest)).toEqual([])
     const liste = blindListe(katalog(), e, fest)
     expect(liste.massnahmen.map((m) => m.kennung)).toEqual(fest.map((x) => x.kennung))
     // Eine Maßnahme mehr oder weniger macht die gespeicherte Zuordnung ungültig.
@@ -128,6 +130,24 @@ describe('Liste ohne Parteinamen', () => {
     expect(pruefeKennungen(e, fest).join()).toMatch(/fehlt in der gespeicherten Zuordnung/)
     e.programme[0].massnahmen.splice(0, 2)
     expect(pruefeKennungen(e, fest).join()).toMatch(/gibt es in der Erfassung nicht mehr/)
+  })
+
+  it('erkennt umsortierte Programme und ausgetauschte Maßnahmen bei gleicher Anzahl', () => {
+    // Zwei Programme mit gleich vielen Maßnahmen tauschen: Positionen passen, Parteien nicht.
+    const e = erfassung()
+    e.programme[0].massnahmen.splice(1)
+    const fest = kennungen(e)
+    const getauscht = structuredClone(e)
+    ;[getauscht.programme[0], getauscht.programme[2]] = [getauscht.programme[2], getauscht.programme[0]]
+    expect(pruefeKennungen(getauscht, fest).join()).toMatch(/Programme umsortiert/)
+    // Nur das Zitat korrigiert: erlaubt. Beschreibung und Zitat neu: andere Maßnahme.
+    e.programme[0].massnahmen[0].zitat = 'Korrigiertes Zitat.'
+    expect(pruefeKennungen(e, fest)).toEqual([])
+    e.programme[0].massnahmen[0].beschreibung = 'Ganz andere Maßnahme'
+    expect(pruefeKennungen(e, fest).join()).toMatch(/ausgetauscht/)
+    // Alte kennungen.json ohne die neuen Felder wird weiter nach Position geprüft.
+    const alt = fest.map(({ kennung, programm, massnahme }) => ({ kennung, programm, massnahme }))
+    expect(pruefeKennungen(e, alt)).toEqual([])
   })
 })
 

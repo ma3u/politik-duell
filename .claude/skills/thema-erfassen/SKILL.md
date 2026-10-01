@@ -54,7 +54,7 @@ Zitate gleich prüfen lässt sich erst nach dem Eintragen (Schritt 4); grobe Feh
 npm run -s entwurf:blind '--' .cache/entwurf/<ID>/erfassung.json '--ausgabe' .cache/entwurf/<ID>/blind.json
 ```
 
-Das Skript speichert die Kennungen (M01 …) als `.cache/entwurf/<ID>/kennungen.json` und benutzt sie danach weiter. Du darfst Texte in `erfassung.json` also noch korrigieren, aber **keine Maßnahme hinzufügen, streichen oder umsortieren**, solange die Bewertung läuft (sonst warnt das Skript und erzeugt neue Kennungen – eine frühere Bewertung ist dann ungültig).
+Das Skript speichert die Kennungen (M01 …) als `.cache/entwurf/<ID>/kennungen.json` und benutzt sie danach weiter. Du darfst Texte in `erfassung.json` also noch korrigieren (Beschreibung oder Zitat), aber **keine Maßnahme hinzufügen, streichen, austauschen oder umsortieren und keine Programme umstellen**, solange die Bewertung läuft. Die Datei hält dazu Partei, Land und den Textanfang jeder Maßnahme fest; passt das nicht mehr, warnt `entwurf:blind` und erzeugt neue Kennungen, `entwurf:eintragen` bricht ab – eine frühere Bewertung ist dann ungültig.
 
 Starte **einen** Agenten `blind-bewertung` und gib ihm **nur** den Inhalt von `blind.json` und das heutige Datum – keine Parteinamen, keine Hinweise auf die Herkunft, nichts aus der Erfassung. (Der Agent hat keinen Dateizugriff; die Liste gehört in den Auftrag. Bei vielen Maßnahmen über 100 kann das ein großer Auftrag werden.) Wird die Antwort als Datei abgelegt (über 20 KB), hole das JSON mit `npm run entwurf:json '--' <antwort.txt> .cache/entwurf/<ID>/bewertung.json`; sonst speichere es dort selbst als UTF-8.
 

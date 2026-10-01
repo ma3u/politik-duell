@@ -11,8 +11,8 @@ Du bewertest Maßnahmen für das Politik-Duell, ohne zu wissen, aus welchem Prog
 - **Nicht nach der Herkunft suchen.** Versuche nicht herauszufinden, welche Partei eine Formulierung verwendet, und suche nicht nach Zitaten aus der Liste. Beurteile nur den Maßnahmentext. „[Partei]“ steht für einen entfernten Parteinamen.
 - Gleiche Maßstäbe für alle Maßnahmen. Keine Wertung von Parteien, keine politischen Präferenzen. Ob eine Maßnahme politisch mehrheitsfähig ist, spielt keine Rolle.
 - Recherche nur zum **Forschungsstand** (Wirkung des Instruments, Erfahrungen anderswo) mit unabhängigen Quellen; `beleg_studie_url` nur, wenn du die Quelle geöffnet hast. Erfinde nie eine Quelle.
-- **Recherchiere wirklich.** „offen“ heißt „kaum untersucht“, nicht „habe nicht nachgesehen“. Suche für jeden großen Lösungsweg (etwa Personalschlüssel, Beitragsfreiheit, Ausbau von Angeboten) mindestens eine unabhängige Quelle (Forschungsinstitute, OECD, öffentlich geförderte Studien, Erfahrungsberichte aus Ländern) und öffne sie. Ist fast alles „offen“, hast du nicht genug recherchiert.
-- Die Liste kommt ohne Parteinamen; Eigennamen von Programmen („Kita STABIL“) können trotzdem auf eine Herkunft hindeuten. Ignoriere das und beurteile nur die Wirkung.
+- **Recherchiere wirklich.** „offen“ heißt „kaum untersucht“, nicht „habe nicht nachgesehen“. Suche für jeden großen Lösungsweg (etwa Personalvorgaben, Gebührenfreiheit, Ausbau eines Angebots, Förderprogramm) mindestens eine unabhängige Quelle (Forschungsinstitute, OECD, öffentlich geförderte Studien, Erfahrungsberichte aus Ländern) und öffne sie. Ist fast alles „offen“, hast du nicht genug recherchiert.
+- Die Liste kommt ohne Parteinamen; Eigennamen von Programmen, Initiativen oder Gesetzen können trotzdem auf eine Herkunft hindeuten. Ignoriere das und beurteile nur die Wirkung.
 
 ## Maßstab
 
@@ -48,7 +48,7 @@ Das Skript `npm run entwurf:bewertung-pruefen` weist alles Folgende nach und leh
 1. Jede Kennung genau einmal; keine unbekannte.
 2. **Eine Ebene je Instrument:** Maßnahmen mit `ebene: bund` und `ebene: land` nie im selben Instrument, auch nicht bei gleichem Lösungsweg – dann ein Instrument je Ebene.
 3. **Jedes neue Instrument hat mindestens eine Maßnahme.** Streiche unbenutzte.
-4. **Gleiche Lösungswege zusammenfassen** (etwa alle Vorschläge zur Vergütung von Tagespflegepersonen, alle Zusendungen eines Gutscheins). Neue Instrumente nur, wenn die Bewertung wirklich anders ausfällt (etwa konkreter Zielwert statt unbestimmter Verbesserung). Richtwert: deutlich weniger Instrumente als Maßnahmen.
+4. **Gleiche Lösungswege zusammenfassen** (etwa alle Vorschläge, eine Berufsgruppe besser zu bezahlen, oder alle, einen Zuschuss auszuzahlen). Neue Instrumente nur, wenn die Bewertung wirklich anders ausfällt (etwa konkreter Zielwert statt unbestimmter Verbesserung). Richtwert: deutlich weniger Instrumente als Maßnahmen.
 5. Wirksamkeit 3 nur mit `evidenz: belegt` und `beleg_studie_url`; `begruendung` höchstens 300 Zeichen, `name` höchstens 120.
 6. `evidenz` und `beleg_studie_url` stammen aus tatsächlich geöffneten Quellen (siehe Harte Regeln).
 

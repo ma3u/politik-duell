@@ -156,7 +156,15 @@ export interface Kennung {
   kennung: string
   programm: number
   massnahme: number
+  /** Herkunft und Anfang der Texte beim Vergeben – damit `pruefeKennungen` vertauschte Programme und ausgetauschte Maßnahmen erkennt. */
+  partei_id?: number
+  land?: string | null
+  beschreibung?: string
+  zitat?: string
 }
+
+/** Anfang eines Texts für den Abgleich: klein, ohne Leerraum-Unterschiede, 40 Zeichen. */
+const anfang = (t: string | undefined) => (t ?? '').toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 40)
 
 /**
  * Feste Kennungen M01, M02 … in gemischter Reihenfolge: sortiert nach einer Prüfsumme
@@ -176,10 +184,26 @@ export function kennungen(e: Erfassung, fest?: Kennung[]): Kennung[] {
   )
   liste.sort((a, b) => (a.schluessel < b.schluessel ? -1 : a.schluessel > b.schluessel ? 1 : a.programm - b.programm || a.massnahme - b.massnahme))
   const stellen = String(liste.length).length < 2 ? 2 : String(liste.length).length
-  return liste.map((x, n) => ({ kennung: `M${String(n + 1).padStart(stellen, '0')}`, programm: x.programm, massnahme: x.massnahme }))
+  return liste.map((x, n) => {
+    const p = e.programme[x.programm]
+    const m = p.massnahmen[x.massnahme]
+    return {
+      kennung: `M${String(n + 1).padStart(stellen, '0')}`,
+      programm: x.programm,
+      massnahme: x.massnahme,
+      partei_id: p.partei_id,
+      land: p.land,
+      beschreibung: anfang(m.beschreibung),
+      zitat: anfang(m.zitat),
+    }
+  })
 }
 
-/** Passt eine gespeicherte Zuordnung noch zur Erfassung (jede Maßnahme genau einmal, keine fremde)? */
+/**
+ * Passt eine gespeicherte Zuordnung noch zur Erfassung? Jede Maßnahme genau einmal, keine fremde,
+ * dasselbe Programm an derselben Stelle – und keine ausgetauschte Maßnahme: Eine Textkorrektur
+ * ändert Beschreibung oder Zitat, sind beide anders, ist es eine andere Maßnahme.
+ */
 export function pruefeKennungen(e: Erfassung, fest: Kennung[]): string[] {
   const f: string[] = []
   const erwartet = new Set(e.programme.flatMap((p, i) => p.massnahmen.map((_, j) => `${i}/${j}`)))
@@ -188,6 +212,14 @@ export function pruefeKennungen(e: Erfassung, fest: Kennung[]): string[] {
   for (const x of fest) {
     const pos = `${x.programm}/${x.massnahme}`
     if (!erwartet.has(pos)) f.push(`${x.kennung}: Maßnahme ${pos} gibt es in der Erfassung nicht mehr`)
+    else {
+      const p = e.programme[x.programm]
+      const m = p.massnahmen[x.massnahme]
+      if ((x.partei_id !== undefined && x.partei_id !== p.partei_id) || (x.land !== undefined && x.land !== p.land))
+        f.push(`${x.kennung}: Programm ${x.programm} ist jetzt ein anderes (Partei ${p.partei_id}, ${p.land ?? 'Bund'}) – Programme umsortiert?`)
+      else if (x.beschreibung !== undefined && x.zitat !== undefined && x.beschreibung !== anfang(m.beschreibung) && x.zitat !== anfang(m.zitat))
+        f.push(`${x.kennung}: Maßnahme ${pos} hat neue Beschreibung und neues Zitat – ausgetauscht?`)
+    }
     if (gesehen.has(pos)) f.push(`Maßnahme ${pos}: mehrfach in der Zuordnung`)
     if (namen.has(x.kennung)) f.push(`${x.kennung}: doppelt vergeben`)
     gesehen.add(pos)
