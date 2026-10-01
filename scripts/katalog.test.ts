@@ -27,6 +27,7 @@ const massnahme = (ueber: Record<string, unknown> = {}) => ({
   beleg_programm_url: 'https://eins.de/programm.pdf#page=4',
   stand: '2026-03-01',
   evidenz: 'belegt',
+  beleg_studie_url: 'https://studie.de/praxen',
   geprueft: true,
   bewertung: { anzahl: 2, median_w: 3, median_u: 2, spannweite: 1, datum: '2026-03-05', entwurf: [2, 2] },
   ...ueber,
@@ -345,7 +346,7 @@ describe('Datenkatalog: Instrumente und IDs', () => {
   // Maßnahme mit Instrument: ohne eigene Bewertung.
   const mitInstrument = (ueber: Record<string, unknown> = {}) => {
     const m: Record<string, unknown> = massnahme({ instrument: 90, geprueft: false, ki_entwurf: true, ...ueber })
-    for (const f of ['wirksamkeit', 'umsetzbarkeit', 'begruendung', 'evidenz', 'bewertung']) if (!(f in ueber)) delete m[f]
+    for (const f of ['wirksamkeit', 'umsetzbarkeit', 'begruendung', 'evidenz', 'beleg_studie_url', 'bewertung']) if (!(f in ueber)) delete m[f]
     return m
   }
   const mitInstrumenten = (eins: Record<string, unknown>[], instrumente: Record<string, unknown>[] = [instrument()]) =>

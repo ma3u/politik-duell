@@ -1,6 +1,6 @@
 # Datenmodell
 
-Stand: Migrationen bis `20261003000000_pruef_einheiten.sql` (`supabase/migrations/`).
+Stand: Migrationen bis `20261004000000_abdeckung_ursachen.sql` (`supabase/migrations/`).
 Die kuratierten Daten liegen als JSON in `daten/`; `npm run seed` erzeugt daraus die `seed.sql`.
 
 ## ER-Diagramm
@@ -67,6 +67,7 @@ erDiagram
         text begruendung
         date stand
         boolean ki_entwurf
+        integer_array durchsucht_fuer "null = alle Ursachen"
     }
     laender {
         text id PK "z. B. ST"

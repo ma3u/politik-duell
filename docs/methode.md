@@ -86,7 +86,7 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 
 **Verschiedene Wege, ähnliche Punkte.** Für die meisten Probleme gibt es nicht die eine richtige Lösung. Parteien setzen oft an verschiedenen Ursachen an – die eine beim Angebot, die andere bei den Kosten. Weil jede Ursache für sich zählt, können sehr unterschiedliche Programme ähnlich viele Punkte erreichen. Ein Gleichstand ist dann kein Mangel, sondern ein Ergebnis: Beide haben einen tragfähigen Weg.
 
-**Rollen.** Spielende können eine Rolle wählen: Mieter:in, Eigentümer:in, angestellt, selbstständig, Rentner:in, arbeitslos, studierend, vermögend. Wirkt eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter, verschiebt sich ihre Wirksamkeit um bis zu zwei Stufen (innerhalb 0 bis 3). Jede solche Verschiebung ist einzeln begründet und wird angezeigt.
+**Rollen.** Spielende können eine Rolle wählen: Mieter:in, Eigentümer:in, angestellt, selbstständig, Rentner:in, arbeitslos, studierend, vermögend. Wirkt eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter, verschiebt sich ihre Wirksamkeit um bis zu zwei Stufen (innerhalb 0 bis 3). Auf 3 hebt eine Rolle sie nur, wenn die Wirkung belegt ist – wie bei jeder Wirksamkeit 3. Jede solche Verschiebung ist einzeln begründet und wird angezeigt.
 
 **Gleicher Vorschlag, gleiche Bewertung.** Schlagen mehrere Programme denselben Lösungsweg vor – etwa ein Handyverbot an Schulen –, wird er einmal bewertet und begründet (als *Instrument* im Datenkatalog). Die Bewertung gilt dann für jede Partei, jedes Land und jede spätere Wahlperiode, in der er vorkommt; nur Zitat und Beleg sind je Programm eigene. Unterscheidet sich ein Vorschlag in einem bewertungsrelevanten Punkt – etwa ein Schulbauprogramm mit Betrag statt ohne –, gilt er als eigener Lösungsweg.
 
@@ -115,7 +115,7 @@ Es zählt immer genau ein Programm je Partei und Ursache. So hat keine Partei me
 | Maßnahme zu den Ursachen vorhanden, geprüft | Maßnahme mit Bewertung, Begründung und Belegen | nach Bewertung |
 | Maßnahmen zum Thema, aber keine zu diesen Ursachen | „keine Maßnahme zu diesen Ursachen“ | 0 |
 | Programm enthält nichts zum Thema, geprüft | „nichts zum Thema im Programm“ + was durchsucht wurde | 0 |
-| Thema für diese Partei noch nicht vollständig geprüft | „noch nicht erfasst“ | Runde wird nicht gewertet |
+| Thema für diese Partei noch nicht vollständig geprüft, oder das Programm wurde nach einer später ergänzten Ursache noch nicht durchsucht | „noch nicht erfasst“ | Runde wird nicht gewertet |
 | Ursache auf Landesebene, Partei hat im gewählten Land kein aktuelles Programm | „kein aktuelles Landesprogramm“ | Runde wird nicht gewertet |
 | Thema gar nicht in der Datenbank | „ungeprüft – keine Wertung“, ohne Links; kommt in die Warteschlange für neue Themen | keine |
 | Spieler:in nennt einen Wert oder eine Haltung | wird respektvoll als persönliche Haltung benannt; neues Problem möglich | keine |

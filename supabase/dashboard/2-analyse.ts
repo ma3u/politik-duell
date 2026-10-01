@@ -15,7 +15,8 @@ function programmFuer(ursacheId, ebenen) {
 function massnahmenPunkte(m, rolle) {
   const mod = rolle ? m.rollen_modifikator?.[rolle] : void 0;
   const rollenBonus = mod?.wert ?? 0;
-  const wirksamkeit = Math.min(3, Math.max(0, m.wirksamkeit + rollenBonus));
+  const hoechstens = m.evidenz === "gemischt" || m.evidenz === "offen" ? Math.max(2, m.wirksamkeit) : 3;
+  const wirksamkeit = Math.min(hoechstens, Math.max(0, m.wirksamkeit + rollenBonus));
   return {
     punkte: wirksamkeit * m.umsetzbarkeit,
     wirksamkeit,
@@ -57,6 +58,10 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
     }
     const a = findeAbdeckung(abdeckung, partei.id, themaId, land);
     if (!a) return ohneWertung({
+      grund: "nicht_erfasst",
+      land
+    });
+    if (a.durchsucht_fuer && ursachenIds.some((id) => programmFuer(id, ebenen) === land && !a.durchsucht_fuer.includes(id))) return ohneWertung({
       grund: "nicht_erfasst",
       land
     });

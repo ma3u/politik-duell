@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, pruefeBewertung, pruefeErfassung, pruefeKennungen, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { seitenOhneText } from './programme'
+import { vergleicheStand } from './stand-vergleich'
 
 const PARTEIEN: Datei = {
   pfad: 'parteien.json',
@@ -54,6 +56,7 @@ const bewertung = (e: Erfassung): Bewertung => {
   const k = kennungen(e)
   const nach = (p: number, m: number) => k.find((x) => x.programm === p && x.massnahme === m)!.kennung
   return {
+    blind_pruefsumme: blindListe(katalog(), e).pruefsumme,
     neue_instrumente: [{ kennung: 'I1', name: 'Kitaplätze ausbauen (Bund)', wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Mehr Plätze.', evidenz: 'belegt' }],
     zuordnung: [
       { kennung: nach(0, 0), instrument: 'I1' },
@@ -76,6 +79,12 @@ describe('Ursachen freigegeben', () => {
     const fehler = ursachenFreigegeben(k, geaendert, 17).join('\n')
     expect(fehler).toMatch(/1701 weicht/)
     expect(fehler).toMatch(/1703 ist nicht freigegeben/)
+  })
+
+  it('verlangt auch das freigegebene Ziel', () => {
+    const k = katalog()
+    const anderesZiel = katalog({ ...themaInhalt(), ziel: 'Eltern finden einen bezahlbaren Platz.' })
+    expect(ursachenFreigegeben(k, anderesZiel, 17).join()).toMatch(/Ziel von Thema 17 weicht/)
   })
 })
 
@@ -208,7 +217,46 @@ describe('Erfassung und Bewertung prüfen', () => {
     b.zuordnung.pop()
     const fehler = pruefeBewertung(katalog(), e, b).join('\n')
     expect(fehler).toMatch(/Wirksamkeit 3 nur mit evidenz/)
+    expect(fehler).toMatch(/Wirksamkeit 3 nur mit beleg_studie_url/)
     expect(fehler).toMatch(/nicht bewertet/)
+  })
+
+  it('lehnt eine Bewertung ab, wenn sich die Blindliste danach geändert hat', () => {
+    const e = erfassung()
+    const b = bewertung(e)
+    const fest = kennungen(e)
+    // Beschreibung nach dem Bewerten umgeschrieben (Zitat gleich): Die Kennungen bleiben, die Prüfsumme nicht.
+    e.programme[0].massnahmen[0].beschreibung = 'Kitaplätze großzügig fördern und Gebühren abschaffen'
+    expect(pruefeKennungen(e, fest)).toEqual([])
+    expect(pruefeBewertung(katalog(), e, b, fest).join('\n')).toMatch(/blind_pruefsumme passt nicht/)
+    expect(pruefeBewertung(katalog(), e, { ...b, blind_pruefsumme: undefined }, fest).join('\n')).toMatch(/blind_pruefsumme fehlt/)
+  })
+})
+
+describe('Protokoll', () => {
+  const vollstaendig = (e: Erfassung, auftrag: string) =>
+    new Map([
+      [PROTOKOLL.erfassung('Eins', null), 'Rohantwort …'],
+      [PROTOKOLL.erfassung('Zwei', null), 'Rohantwort …'],
+      [PROTOKOLL.erfassung('Zwei', 'ST'), 'Rohantwort …'],
+      [PROTOKOLL.auftrag, auftrag],
+      [PROTOKOLL.antwort, '{ … }'],
+      [PROTOKOLL.rueckfragen, 'keine'],
+    ])
+
+  it('verlangt Rohantworten, Auftrag mit Prüfsumme ohne Parteinamen, Antwort und Rückfragen', () => {
+    const e = erfassung()
+    const liste = blindListe(katalog(), e)
+    const auftrag = `Bewerte diese Liste.\n${JSON.stringify(liste)}`
+    expect(pruefeProtokoll(katalog(), e, vollstaendig(e, auftrag), liste.pruefsumme)).toEqual([])
+    const fehlt = vollstaendig(e, auftrag)
+    fehlt.delete(PROTOKOLL.erfassung('Zwei', 'ST'))
+    fehlt.delete(PROTOKOLL.rueckfragen)
+    const fehler = pruefeProtokoll(katalog(), e, fehlt, liste.pruefsumme).join('\n')
+    expect(fehler).toMatch(/erfassung-Zwei-ST\.txt fehlt/)
+    expect(fehler).toMatch(/rueckfragen\.md fehlt/)
+    expect(pruefeProtokoll(katalog(), e, vollstaendig(e, `${auftrag}\nM03 stammt von der SPD.`), liste.pruefsumme).join()).toMatch(/Parteinamen/)
+    expect(pruefeProtokoll(katalog(), e, vollstaendig(e, 'Bewerte die Liste.'), liste.pruefsumme).join()).toMatch(/Prüfsumme/)
   })
 })
 
@@ -228,8 +276,63 @@ describe('Eintragen', () => {
     expect(r.katalog.massnahmen.every((m) => !m.geprueft)).toBe(true)
     expect(r.katalog.abdeckung.every((a) => a.ki_entwurf && !a.geprueft)).toBe(true)
     expect(r.katalog.massnahmen[0].instrument_id).toBe(1)
+    // Herkunft der Werte und durchsuchte Ursachen stehen dabei (Land: nur Landesursachen).
+    expect(r.katalog.instrumente[0].entwurf_herkunft).toBe('blind')
+    expect(r.katalog.massnahmen.find((m) => m.instrument_id === undefined)?.entwurf_herkunft).toBe('blind')
+    expect(r.katalog.abdeckung.map((a) => [a.partei_id, a.land ?? null, a.durchsucht_fuer])).toEqual([
+      [1, null, [1701, 1702]],
+      [2, null, [1701, 1702]],
+      [2, 'ST', [1701]],
+    ])
     const keine = r.katalog.abdeckung.find((a) => a.partei_id === 2 && !a.land)
     expect(keine).toMatchObject({ art: 'keine', ki_entwurf: true, geprueft: false })
     expect(pruefeErfassung(r.katalog, e).join('\n')).toMatch(/schon einen Eintrag/)
+  })
+})
+
+describe('Vergleich mit dem Zielzweig', () => {
+  const mitAbdeckung = (extra: Record<string, unknown> = {}, ursachen = themaInhalt().ursachen) => {
+    const e = erfassung()
+    return katalog({ ...eintragen(katalog(), themaInhalt(ursachen), e, bewertung(e), '2026-10-01'), ...extra })
+  }
+
+  it('verlangt „durchsucht_fuer“, wenn eine Ursache zu einem Thema mit Abdeckung dazukommt', () => {
+    const alt = mitAbdeckung()
+    const datei = eintragen(katalog(), themaInhalt(), erfassung(), bewertung(erfassung()), '2026-10-01') as { abdeckung: Record<string, unknown>[] }
+    const ursachen = [...themaInhalt().ursachen, { id: 1703, beschreibung: 'Neu', quelle_url: 'https://destatis.de/c', ebene: 'bund' }]
+    // Mit Angabe (aus eintragen): in Ordnung – 1703 fehlt dort, gilt also als „noch nicht erfasst“.
+    expect(vergleicheStand(alt, katalog({ ...datei, ursachen }))).toEqual([])
+    // Ohne Angabe (ältere Einträge): Fehler je Eintrag, für den die Bundesursache zählt.
+    const ohne = { ...datei, ursachen, abdeckung: datei.abdeckung.map(({ durchsucht_fuer: _durchsucht, ...a }) => a) }
+    const fehler = vergleicheStand(alt, katalog(ohne))
+    expect(fehler).toHaveLength(2)
+    expect(fehler.join()).toMatch(/Ursache 1703 ist neu/)
+  })
+
+  it('lehnt still geänderte Werte einer Blindbewertung ab', () => {
+    const alt = mitAbdeckung()
+    const datei = eintragen(katalog(), themaInhalt(), erfassung(), bewertung(erfassung()), '2026-10-01') as { instrumente: Record<string, unknown>[] }
+    const geaendert = { ...datei, instrumente: [{ ...datei.instrumente[0], wirksamkeit: 1 }] }
+    expect(vergleicheStand(alt, katalog(geaendert)).join()).toMatch(/Werte der Blindbewertung geändert/)
+    const offen = { ...datei, instrumente: [{ ...datei.instrumente[0], wirksamkeit: 1, entwurf_herkunft: 'nicht_blind' }] }
+    expect(vergleicheStand(alt, katalog(offen))).toEqual([])
+  })
+})
+
+describe('Abdeckung je Ursache im Katalog', () => {
+  it('prüft „durchsucht_fuer“ gegen Thema, Ebene und Maßnahmen', () => {
+    const datei = eintragen(katalog(), themaInhalt(), erfassung(), bewertung(erfassung()), '2026-10-01') as { abdeckung: Record<string, unknown>[] }
+    const mit = (i: number, d: unknown) => ({ ...datei, abdeckung: datei.abdeckung.map((a, j) => (j === i ? { ...a, durchsucht_fuer: d } : a)) })
+    const fehler = (inhalt: unknown) =>
+      pruefeKatalog(PARTEIEN, [{ pfad: 'themen/17-kita.json', inhalt }], { pfad: 'ids.json', inhalt: { stillgelegt: [] } }).fehler.join('\n')
+    expect(fehler(mit(2, [1702]))).toMatch(/1702 liegt beim Bund/)
+    expect(fehler(mit(1, [1799]))).toMatch(/1799 gehört nicht zum Thema/)
+    expect(fehler(mit(0, [1702]))).toMatch(/1701 fehlt in „durchsucht_fuer“/)
+  })
+})
+
+describe('Seiten ohne Text', () => {
+  it('nennt Seiten mit kaum Text', () => {
+    expect(seitenOhneText(['x'.repeat(500), '  \n ', 'kurz', 'y'.repeat(300)])).toEqual([2, 3])
   })
 })

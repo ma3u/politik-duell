@@ -51,6 +51,8 @@ export interface Einzelbewertung {
 
 /** Antwort des Bewertungs-Agenten – kennt nur Kennungen, keine Parteien. */
 export interface Bewertung {
+  /** Prüfsumme der Blindliste, die bewertet wurde (`pruefsumme` aus blind.json). */
+  blind_pruefsumme?: string
   neue_instrumente: ({ kennung: string; name: string } & Einzelbewertung)[]
   zuordnung: ({ kennung: string; instrument: number | string } | { kennung: string; einzeln: Einzelbewertung })[]
 }
@@ -70,6 +72,10 @@ export function ursachenFreigegeben(freigegeben: Katalog, arbeitsstand: Katalog,
     return [`Thema ${themaId} steht noch nicht im Zielzweig – erst Ursachen festlegen und freigeben lassen (/thema-anlegen)`]
   if (!vorher.length) return [`Thema ${themaId} hat im Zielzweig keine Ursachen`]
   const fehler: string[] = []
+  // Das Ziel ist der Maßstab für die Wirksamkeit – es gehört zur Freigabe wie die Ursachen.
+  const zielVorher = freigegeben.themen.find((t) => t.id === themaId)?.ziel ?? ''
+  const zielJetzt = arbeitsstand.themen.find((t) => t.id === themaId)?.ziel ?? ''
+  if (zielVorher !== zielJetzt) fehler.push(`Ziel von Thema ${themaId} weicht vom freigegebenen Stand ab – das Ziel nicht beim Erfassen ändern`)
   for (const u of jetzt) {
     const alt = vorher.find((v) => v.id === u.id)
     if (!alt) fehler.push(`Ursache ${u.id} ist nicht freigegeben (fehlt im Zielzweig) – Ursachen nicht beim Erfassen ergänzen`)
@@ -236,6 +242,8 @@ function instrumentEbene(k: Katalog, id: number): 'bund' | 'land' | null {
 }
 
 export interface BlindListe {
+  /** SHA-256 über den übrigen Inhalt: Die Bewertung gibt sie zurück, damit spätere Textänderungen auffallen. */
+  pruefsumme: string
   thema: { id: number; name: string; ziel?: string }
   ursachen: { id: number; beschreibung: string; ebene: string }[]
   instrumente: { id: number; name: string; ebene: string | null; wirksamkeit: number; umsetzbarkeit: number; evidenz?: string | null; begruendung: string }[]
@@ -258,7 +266,7 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
       ursachen_ids: m.ursachen_ids,
     }
   })
-  return {
+  const liste: Omit<BlindListe, 'pruefsumme'> = {
     thema: { id: thema.id, name: thema.name, ziel: thema.ziel },
     ursachen: k.ursachen.filter((u) => u.thema_id === thema.id).map((u) => ({ id: u.id, beschreibung: u.beschreibung, ebene: u.ebene ?? 'bund' })),
     instrumente: k.instrumente
@@ -274,6 +282,49 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
       })),
     massnahmen,
   }
+  return { pruefsumme: createHash('sha256').update(JSON.stringify(liste)).digest('hex'), ...liste }
+}
+
+// ---------------------------------------------------------------------------
+// Protokoll: Spuren, die der Koordinator hinterlassen muss
+// ---------------------------------------------------------------------------
+
+/** Dateiname je Programm, z. B. „Gruene-Bund“ (ASCII, wie in programme:texte). */
+export const programmName = (kurzname: string, land: string | null) =>
+  `${kurzname.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/ß/g, 'ss').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')}-${land ?? 'Bund'}`
+
+/** Feste Namen im Ordner `protokoll/` neben der Erfassung. */
+export const PROTOKOLL = {
+  erfassung: (kurzname: string, land: string | null) => `erfassung-${programmName(kurzname, land)}.txt`,
+  auftrag: 'bewertung-auftrag.txt',
+  antwort: 'bewertung-antwort.txt',
+  rueckfragen: 'rueckfragen.md',
+}
+
+/**
+ * Liegt alles vor, was ein Eingriff des Koordinators sichtbar macht? Die Rohantwort jedes
+ * Erfassungs-Agenten, der Auftrag an den Bewertungs-Agenten (mit der Prüfsumme der Blindliste,
+ * ohne Parteinamen), dessen Antwort und die Liste der Rückfragen (auch „keine“).
+ */
+export function pruefeProtokoll(k: Katalog, e: Erfassung, dateien: Map<string, string>, pruefsumme: string | undefined): string[] {
+  const f: string[] = []
+  const da = (name: string) => (dateien.get(name) ?? '').trim()
+  for (const p of e.programme) {
+    const kurz = k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? String(p.partei_id)
+    const name = PROTOKOLL.erfassung(kurz, p.land)
+    if (!da(name)) f.push(`protokoll/${name} fehlt oder ist leer – Rohantwort des Erfassungs-Agenten samt Protokoll speichern`)
+  }
+  const auftrag = da(PROTOKOLL.auftrag)
+  if (!auftrag) f.push(`protokoll/${PROTOKOLL.auftrag} fehlt – den vollständigen Auftrag an den Bewertungs-Agenten speichern`)
+  else {
+    if (pruefsumme && !auftrag.includes(pruefsumme)) f.push(`protokoll/${PROTOKOLL.auftrag} enthält nicht die Blindliste mit Prüfsumme ${pruefsumme.slice(0, 12)}…`)
+    const weitere = k.parteien.flatMap((p) => [p.name, p.kurzname])
+    if (ohneParteinamen(auftrag, weitere) !== auftrag) f.push(`protokoll/${PROTOKOLL.auftrag} enthält einen Parteinamen – der Bewertungs-Agent darf keine Herkunft erfahren`)
+  }
+  if (!da(PROTOKOLL.antwort)) f.push(`protokoll/${PROTOKOLL.antwort} fehlt – die Antwort des Bewertungs-Agenten speichern`)
+  if (!dateien.has(PROTOKOLL.rueckfragen))
+    f.push(`protokoll/${PROTOKOLL.rueckfragen} fehlt – jede Rückfrage an einen Agenten mit Programm bzw. Kennung, Anlass und Ergebnis (oder „keine“)`)
+  return f
 }
 
 // ---------------------------------------------------------------------------
@@ -290,6 +341,7 @@ function pruefeEinzel(was: string, b: Einzelbewertung): string[] {
   if (!b.begruendung?.trim()) f.push(`${was}: begruendung fehlt`)
   if (!EVIDENZ.has(b.evidenz)) f.push(`${was}: evidenz muss belegt, gemischt oder offen sein`)
   if (b.wirksamkeit === 3 && b.evidenz !== 'belegt') f.push(`${was}: Wirksamkeit 3 nur mit evidenz „belegt“`)
+  if (b.wirksamkeit === 3 && !b.beleg_studie_url) f.push(`${was}: Wirksamkeit 3 nur mit beleg_studie_url (geöffnete Studie, die die Wirkung belegt)`)
   if (b.begruendung && b.begruendung.length > 300) f.push(`${was}: begruendung ist länger als 300 Zeichen`)
   return f
 }
@@ -333,6 +385,17 @@ export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
 /** Prüft die Bewertung: jede Kennung genau einmal, Instrumente bekannt und auf einer Ebene. */
 export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung, fest?: Kennung[]): string[] {
   const f: string[] = []
+  // Gehört die Bewertung zu genau dieser Liste? Sonst wurden Texte, Maßnahmen oder vorhandene
+  // Instrumente nach dem Bewerten geändert – und die Werte gälten für etwas anderes als bewertet.
+  let pruefsumme: string | null = null
+  try {
+    pruefsumme = blindListe(k, e, fest).pruefsumme
+  } catch {
+    // Thema fehlt – meldet pruefeErfassung
+  }
+  if (!b.blind_pruefsumme) f.push('blind_pruefsumme fehlt – der Bewertungs-Agent gibt die „pruefsumme“ aus blind.json zurück')
+  else if (pruefsumme && b.blind_pruefsumme !== pruefsumme)
+    f.push('blind_pruefsumme passt nicht zur aktuellen Blindliste – seit npm run entwurf:blind wurde etwas geändert (Beschreibung, Zitat, Seite, Ursachen oder Instrumente). entwurf:blind neu ausführen und neu bewerten lassen')
   const alle = new Map(kennungen(e, fest).map((x) => [x.kennung, x]))
   const vorhandene = new Set(k.instrumente.filter((i) => i.thema_id === e.thema_id).map((i) => i.id))
   const neue = new Map((b.neue_instrumente ?? []).map((i) => [i.kennung, i]))
@@ -399,7 +462,7 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
   for (const i of b.neue_instrumente ?? []) {
     neueIds.set(i.kennung, id)
     const { kennung: _, ...rest } = i
-    instrumente.push({ id: id++, ...rest })
+    instrumente.push({ id: id++, ...rest, entwurf_herkunft: 'blind' })
   }
   const zuordnung = new Map((b.zuordnung ?? []).map((z) => [z.kennung, z]))
   const kennungNach = new Map(kennungen(e, fest).map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
@@ -408,7 +471,9 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
     const partei = k.parteien.find((x) => x.id === p.partei_id)!
     const lp = p.land ? k.landesprogramme.find((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell) : undefined
     const url = lp ? lp.url! : partei.programm_url
-    const kopf: Json = { partei_id: p.partei_id, ...(lp ? { land: lp.land, landtagswahl: lp.landtagswahl } : {}) }
+    // Durchsucht wurde nach allen freigegebenen Ursachen, die für dieses Programm zählen.
+    const durchsucht = k.ursachen.filter((u) => u.thema_id === e.thema_id && (!lp || (u.ebene ?? 'bund') === 'land')).map((u) => u.id)
+    const kopf: Json = { partei_id: p.partei_id, ...(lp ? { land: lp.land, landtagswahl: lp.landtagswahl } : {}), durchsucht_fuer: durchsucht }
     if (!p.massnahmen.length) {
       abdeckung.push({ ...kopf, keine_massnahme: { begruendung: p.keine_massnahme, stand: heute, geprueft: false, ki_entwurf: true } })
       continue
@@ -425,7 +490,7 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
         ...('instrument' in bewertung ? { instrument: bewertung.instrument } : {}),
         beschreibung: m.beschreibung,
         ursachen_ids: m.ursachen_ids,
-        ...('instrument' in bewertung ? {} : werte),
+        ...('instrument' in bewertung ? {} : { ...werte, entwurf_herkunft: 'blind' }),
         ...(rollen_modifikator ? { rollen_modifikator } : {}),
         ...(begruendung ? { begruendung } : {}),
         zitat: m.zitat,

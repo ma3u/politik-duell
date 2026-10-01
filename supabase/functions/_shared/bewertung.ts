@@ -73,7 +73,9 @@ export function massnahmenPunkte(m: Massnahme, rolle: Rolle | null) {
   // Produkt statt Summe: Eine unwirksame Maßnahme bringt keine Punkte, egal wie leicht
   // sie umsetzbar ist, und eine nicht umsetzbare ebenso wenig. Die Rolle verschiebt nur
   // die Wirksamkeit (für diese Person wirkt die Maßnahme stärker oder schwächer).
-  const wirksamkeit = Math.min(3, Math.max(0, m.wirksamkeit + rollenBonus))
+  // Wirksamkeit 3 setzt belegte Wirkung voraus (docs/methode.md) – auch, wenn erst die Rolle sie dahin hebt.
+  const hoechstens = m.evidenz === 'gemischt' || m.evidenz === 'offen' ? Math.max(2, m.wirksamkeit) : 3
+  const wirksamkeit = Math.min(hoechstens, Math.max(0, m.wirksamkeit + rollenBonus))
   return {
     punkte: wirksamkeit * m.umsetzbarkeit,
     wirksamkeit,
@@ -117,6 +119,10 @@ export function bewertePartei(
     // Nicht erfasst → keine Maßnahmen verwenden, auch wenn (inkonsistent) welche vorliegen.
     const a = findeAbdeckung(abdeckung, partei.id, themaId, land)
     if (!a) return ohneWertung({ grund: 'nicht_erfasst', land })
+    // Für eine Ursache, nach der dieses Programm (noch) nicht durchsucht wurde, gibt es keine
+    // Aussage – also keine Wertung, statt 0 Punkte (etwa nach einer nachträglich ergänzten Ursache).
+    if (a.durchsucht_fuer && ursachenIds.some((id) => programmFuer(id, ebenen) === land && !a.durchsucht_fuer!.includes(id)))
+      return ohneWertung({ grund: 'nicht_erfasst', land })
     programme.push({ land, url, stand, abdeckung: a })
   }
   const erfasst = programme.every((p) => p.abdeckung.art === 'keine')

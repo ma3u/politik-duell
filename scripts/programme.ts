@@ -92,7 +92,7 @@ export async function ladeProgramm(
   url: string,
   erwartet: string | undefined,
   lokal?: Map<string, Uint8Array>,
-): Promise<{ daten: Uint8Array; hinweis?: string }> {
+): Promise<{ daten: Uint8Array; hinweis?: string; abweichend?: boolean }> {
   if (erwartet && lokal?.has(erwartet)) return { daten: lokal.get(erwartet)!, hinweis: `lokal geprüft (Prüfsumme stimmt): ${url}` }
   const cache = new URL(`../.cache/programme/${cacheName(url)}.pdf`, import.meta.url)
   let daten: Uint8Array
@@ -115,6 +115,7 @@ export async function ladeProgramm(
   if (erwartet && sha256(daten) !== erwartet) {
     const neu = `Datei weicht von der ausgewerteten Fassung ab (sha256 ${sha256(daten).slice(0, 12)}… statt ${erwartet.slice(0, 12)}…): ${url} – ausgetauscht? Zitate und Seiten prüfen, dann npm run programm:sichern`
     hinweis = hinweis ? `${hinweis}. ${neu}` : neu
+    return { daten, hinweis, abweichend: true }
   }
   return { daten, hinweis }
 }
@@ -128,7 +129,7 @@ export async function programmSeiten(
   url: string,
   erwartet: string | undefined,
   lokal?: Map<string, Uint8Array>,
-): Promise<{ seiten: string[]; sha256: string; hinweis?: string }> {
+): Promise<{ seiten: string[]; sha256: string; hinweis?: string; abweichend?: boolean }> {
   const cache = new URL(`../.cache/texte/${cacheName(url)}.json`, import.meta.url)
   // Eine lokale Kopie der ausgewerteten Fassung geht dem Zwischenspeicher vor.
   if (existsSync(cache) && !(erwartet && lokal?.has(erwartet))) {
@@ -137,13 +138,28 @@ export async function programmSeiten(
       erwartet && gespeichert.sha256 !== erwartet
         ? `Datei weicht von der ausgewerteten Fassung ab (sha256 ${gespeichert.sha256.slice(0, 12)}… statt ${erwartet.slice(0, 12)}…): ${url}`
         : undefined
-    return { seiten: gespeichert.seiten, sha256: gespeichert.sha256, hinweis }
+    return { seiten: gespeichert.seiten, sha256: gespeichert.sha256, hinweis, ...(hinweis ? { abweichend: true } : {}) }
   }
-  const { daten, hinweis } = await ladeProgramm(url, erwartet, lokal)
+  const { daten, hinweis, abweichend } = await ladeProgramm(url, erwartet, lokal)
   // Prüfsumme vorher bilden: Das Auslesen übergibt die Daten an pdf.js.
   const summe = sha256(daten)
   const seiten = await seitenTexte(daten)
   mkdirSync(new URL('.', cache), { recursive: true })
   writeFileSync(cache, JSON.stringify({ url, sha256: summe, seiten }))
-  return { seiten, sha256: summe, hinweis }
+  return { seiten, sha256: summe, hinweis, ...(abweichend ? { abweichend } : {}) }
 }
+
+/**
+ * Für das Erfassen: Text der ausgewerteten Fassung – oder ein Fehler, wenn die Datei von der
+ * Prüfsumme in parteien.json abweicht. Sonst würden Maßnahmen aus einer anderen Fassung erfasst.
+ */
+export async function erfassungsSeiten(url: string, erwartet: string | undefined, lokal?: Map<string, Uint8Array>) {
+  const r = await programmSeiten(url, erwartet, lokal)
+  if (r.abweichend)
+    throw new Error(`${r.hinweis} – nicht die ausgewertete Fassung. Richtige Datei mit --lokal angeben oder das neue Programm erst eintragen und sichern (npm run programm:sichern)`)
+  return r
+}
+
+/** PDF-Seiten fast ohne Text (Bilder, Scans, Leerseiten): Dort kann eine Suche nichts finden. */
+export const seitenOhneText = (seiten: string[], mindestens = 200) =>
+  seiten.flatMap((t, i) => (t.replace(/\s+/g, '').length < mindestens ? [i + 1] : []))

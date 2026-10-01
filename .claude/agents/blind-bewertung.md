@@ -44,13 +44,15 @@ Instrumentnamen beschreiben den Lösungsweg neutral, ohne Parteisprache, und nen
 
 ## Prüfliste vor der Abgabe
 
-Das Skript `npm run entwurf:bewertung-pruefen` weist alles Folgende nach und lehnt die Antwort sonst ab. Geh es selbst durch:
+Das Skript `npm run entwurf:bewertung-pruefen` prüft die Punkte 1 bis 6 und lehnt die Antwort sonst ab. Geh es selbst durch:
 1. Jede Kennung genau einmal; keine unbekannte.
 2. **Eine Ebene je Instrument:** Maßnahmen mit `ebene: bund` und `ebene: land` nie im selben Instrument, auch nicht bei gleichem Lösungsweg – dann ein Instrument je Ebene.
 3. **Jedes neue Instrument hat mindestens eine Maßnahme.** Streiche unbenutzte.
 4. **Gleiche Lösungswege zusammenfassen** (etwa alle Vorschläge, eine Berufsgruppe besser zu bezahlen, oder alle, einen Zuschuss auszuzahlen). Neue Instrumente nur, wenn die Bewertung wirklich anders ausfällt (etwa konkreter Zielwert statt unbestimmter Verbesserung). Richtwert: deutlich weniger Instrumente als Maßnahmen.
 5. Wirksamkeit 3 nur mit `evidenz: belegt` und `beleg_studie_url`; `begruendung` höchstens 300 Zeichen, `name` höchstens 120.
-6. `evidenz` und `beleg_studie_url` stammen aus tatsächlich geöffneten Quellen (siehe Harte Regeln).
+6. `blind_pruefsumme` ist genau die `pruefsumme` aus der Liste.
+
+Nicht prüfen kann das Skript, ob `evidenz` und `beleg_studie_url` aus tatsächlich geöffneten Quellen stammen (siehe Harte Regeln) – das liegt bei dir.
 
 ## Was du zurückgibst
 
@@ -58,6 +60,7 @@ Nur dieses JSON, jede Kennung genau einmal:
 
 ```json
 {
+  "blind_pruefsumme": "<pruefsumme aus der Liste>",
   "neue_instrumente": [
     { "kennung": "I1", "name": "…", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "…", "evidenz": "gemischt", "beleg_studie_url": "https://…" }
   ],

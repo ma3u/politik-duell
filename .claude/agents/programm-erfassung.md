@@ -39,7 +39,9 @@ Du bekommst: Partei, Programm (Bund oder Land, URL), Thema mit Ziel, die freigeg
 
 `keine_massnahme` nur, wenn du das passende Kapitel gelesen hast und dort nichts an den Ursachen ansetzt. Null Suchtreffer allein reichen nicht. Begründung wie: „Programm Stand 2025-01-11 durchsucht (Suchbegriffe …), Kapitel ‚Familie‘ (S. 40–44) enthält nichts zu Kitaplätzen oder Fachkräften.“
 
-**Konntest du das Programm nicht laden oder nicht vollständig lesen** (Fehler, „NICHT DURCHSUCHT“, leerer Text), versuche zuerst, den Volltext in eine Datei zu schreiben (`npm run -s programm:text '--' <url> .cache/entwurf/<ID>/<name>.txt`) und diese zu lesen. Nur wenn auch das scheitert, gib `"nicht_durchsucht": "<Grund>"` zurück – niemals `keine_massnahme`. Fehlende Daten dürfen keiner Partei einen Punkt kosten.
+**Seiten ohne Text:** Steht am Anfang der Textdatei „Hinweis: … Seiten fast ohne Text“, haben diese Seiten (fast) keinen auslesbaren Text. Meist sind das Titel-, Rück- oder Kapiteltrennseiten – das ist normal. Liegt eine davon mitten im passenden Kapitel und fehlt dort erkennbar Inhalt (ein Satz bricht ab, laut Inhaltsverzeichnis beginnt dort ein Abschnitt), ist der Text vermutlich ein Bild: nenne die Seiten im Protokoll, und `keine_massnahme` gibt es dann nicht – sondern `nicht_durchsucht` mit diesem Grund.
+
+**Konntest du das Programm nicht laden oder nicht vollständig lesen** (Fehler, „NICHT DURCHSUCHT“, „NICHT GELESEN“, „weicht von der ausgewerteten Fassung ab“, leerer Text), versuche zuerst, den Volltext in eine Datei zu schreiben (`npm run -s programm:text '--' <url> .cache/entwurf/<ID>/<name>.txt`) und diese zu lesen. Nur wenn auch das scheitert, gib `"nicht_durchsucht": "<Grund>"` zurück – niemals `keine_massnahme`. Fehlende Daten dürfen keiner Partei einen Punkt kosten.
 
 ## Was du zurückgibst
 
