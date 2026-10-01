@@ -6,7 +6,7 @@ Lizenz: [CC BY 4.0](LICENSE) für Auswahl, Struktur, Ursachen, Bewertungen und B
 
 Änderungen laufen per Pull Request mit Quellenpflicht. Jeder Pull Request wird automatisch geprüft (`npm run daten:pruefen`).
 
-> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind für alle sechzehn Themen erfasst (als KI-Entwurf aus allen sieben Bundesprogrammen; Schule, Zuwanderung und Integration, Sicherheit, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen), Bus und Bahn (Angebot, Fahrpersonal, Ticketpreise), Straßen und Brücken (kommunale Straßen, Bauverwaltung, Radverkehr), Behördengänge (Online-Angebote, Personal) sowie Heizungstausch (Wärmeplanung) zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 260 Instrumente zusammengefasst (siehe „Instrumente“).
+> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind für sechzehn der siebzehn Themen erfasst, Kita-Betreuung hat bisher nur Ursachen (als KI-Entwurf aus allen sieben Bundesprogrammen; Schule, Zuwanderung und Integration, Sicherheit, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen), Bus und Bahn (Angebot, Fahrpersonal, Ticketpreise), Straßen und Brücken (kommunale Straßen, Bauverwaltung, Radverkehr), Behördengänge (Online-Angebote, Personal) sowie Heizungstausch (Wärmeplanung) zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 260 Instrumente zusammengefasst (siehe „Instrumente“).
 >
 > Die fiktiven Beispieldaten für „Mit Beispieldaten spielen“ und die Tests liegen getrennt in [`beispiel/`](beispiel/) und werden nicht weiter gepflegt.
 
@@ -122,12 +122,14 @@ Daraus: Arzttermine und Pflege (Gesundheit/Pflege), Miete, Energiepreise (Lebens
 
 Schon abgedeckt und deshalb nicht neu aufgenommen: Energie- und Mietpreise, Arbeitsplatzverlust in der Industrie (Arbeitsplätze), Zuwanderung, Integration in Arbeit und überlastete Kommunen (Zuwanderung und Integration), Sicherheit, Bahn und ÖPNV auf dem Land (Bus und Bahn), Lehrermangel (Schule), Ärztemangel auf dem Land (Arzttermine), Rente und Pflegekosten.
 
+**Erweiterung (1. 10. 2026): Kita-Betreuung (17).** Das Thema stand als Kandidat für Sachsen-Anhalt in dieser Liste. Eine Umfrage, in der Menschen dort Kita-Betreuung als wichtigstes Problem nennen, liegt nicht vor (Sachsen-AnhaltTREND Mai 2026: Zuwanderung, Bildung, Wirtschaft). Aufgenommen ist es auf Wunsch der Betreiberin, weil das Erleben der Eltern belegt ist: Laut [DJI](https://www.dji.de/veroeffentlichungen/pressemitteilungen/detailansicht/article/fruehe-bildung-es-werden-weiterhin-plaetze-benoetigt.html) konnten 2025 11 % der Eltern von Kindern unter drei Jahren trotz Bedarf keinen Platz nutzen, und nach einer [DJI-Analyse](https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1730-unerwartete-kita-schliessungen-gehen-mit-verstaerkten-zweifeln-an-der-qualitaet-einher.html) erlebten 2023/24 43 % der Familien ungeplante Schließtage. Abgegrenzt von Schule (Sprachförderung vor der Einschulung bleibt Ursache 404).
+
 Bewusst nicht als eigenes Thema aufgenommen:
 - **Krieg, Geopolitik und Verteidigung.** Die Sorge vor einer Eskalation ist verständlich, aber kein Alltagsproblem, dessen Ursachen sich unabhängig belegen und an dem sich Maßnahmen nach Wirksamkeit messen ließen: Ob Abschreckung oder Verhandlungen Krieg eher verhindern, ist eine Wertungs- und Einschätzungsfrage, keine Frage belegter Wirkung. Im Spiel wird das als persönliche Haltung (`wert`) behandelt. Folgen im Alltag (Energie- und Spritpreise) sind über Energiepreise und Autofahren abgedeckt.
 - **Vertrauen in Politik und Medien.** Querschnittsthema; der greifbare Teil (langsame Verwaltung, Bürokratie) ist jetzt das Thema Behördengänge. Streit in Koalitionen oder das Gefühl der Ohnmacht sind keine Ursachen, an denen Programm-Maßnahmen gemessen werden können.
 - **Tempolimit, Parkplätze, Verbrenner-Aus als Kulturkampf.** Wertfragen; die Kosten des Autofahrens sind im Thema Autofahren erfasst (siehe Perspektivenprüfung).
 
-Noch nicht aufgenommen, Kandidaten für später: soziale Ungerechtigkeit/Armut (MV 8 %), Müll (Berlin, im Wahlkampf genannt), Abwanderung junger Menschen und Kita-Betreuung (Sachsen-Anhalt). Häufige Einträge in der Review-Warteschlange sind ein weiterer Hinweis.
+Noch nicht aufgenommen, Kandidaten für später: soziale Ungerechtigkeit/Armut (MV 8 %), Müll (Berlin, im Wahlkampf genannt), Abwanderung junger Menschen (Sachsen-Anhalt). Häufige Einträge in der Review-Warteschlange sind ein weiterer Hinweis.
 
 ## Bewertungsmaßstab
 
@@ -333,6 +335,7 @@ npm run programm:text -- <url|datei.pdf> --seiten 2-4     # nur diese Seiten (In
 npm run programm:text -- <url|datei.pdf> auszug.txt       # Text mit Seitenmarken „===== Seite N =====“ (N = #page=N)
 npm run programm:text -- <url|datei.pdf> --suche "Wort"   # Fundstellen mit Seite
 npm run programm:sichern -- <url> [--datei kopie.pdf]     # Prüfsumme in parteien.json, Kopie im Internet Archive
+npm run quelle:text -- <url> --suche "Wort"              # unabhängige Quelle (Studie, Statistik) als PDF lesen; Programmserver gesperrt
 npm run daten:id                                          # nächste freie ID
 npm run daten:pruefen                                     # Format, Instrumente, Belege
 npm run zitate:pruefen -- --thema 4                       # Zitate gegen die PDFs
@@ -346,6 +349,25 @@ Reihenfolge beim Erfassen eines Programms: Programm in `parteien.json` eintragen
 **Suchen statt ganze Programme lesen.** Alle Programme zusammen haben rund 7,6 Millionen Zeichen – zu viel, um sie für jedes Thema ganz zu lesen (auch für eine KI). Deshalb: je Ursache Suchbegriffe samt Synonymen festlegen, `programme:suche` über alle Programme laufen lassen, dann die Fundstellen und über das Inhaltsverzeichnis (`programm:text -- <url> --seiten …`) die passenden Kapitel lesen. Dieselben Begriffe für alle Parteien. Null Treffer allein reicht nicht für `keine_massnahme` – erst das passende Kapitel ansehen.
 
 **Programme nie ins Repository.** Die PDFs und ihre Texte sind urheberrechtlich geschützt (Wahlprogramme sind keine amtlichen Werke). Sie liegen nur im Zwischenspeicher `.cache/` (in `.gitignore`), als vorübergehende Kopie zur Auswertung; ins Repository kommen nur URL, Prüfsumme, Seitenanker und kurze wörtliche Zitate. In Cloud-Sitzungen von Claude Code lädt `.claude/hooks/session-start.sh` die Programme beim Start automatisch.
+
+### Mit KI-Agenten
+
+Für Claude Code liegen zwei Skills im Repository, die den Ablauf oben in getrennten Schritten ausführen. Beide enden mit einem Pull Request; ins Spiel kommt nichts ohne Merge und menschliche Prüfung.
+
+| Aufruf | Phase | Wer arbeitet | Ergebnis |
+| --- | --- | --- | --- |
+| `/thema-anlegen Kita-Betreuung` | Schritt 1: Ziel, Ursachen, Ebene, Perspektivenprüfung | Agent `ursachen-recherche` – nur Web-Recherche, kein Zugriff auf Repository und Programme | Pull Request nur mit Ursachen → **Freigabe durch die Betreiberin (Merge)** |
+| `/thema-erfassen 17` (optional `--bund`, `--land XX`) | Schritte 2 und 3: Maßnahmen erfassen, Entwurf bewerten | je Programm ein Agent `programm-erfassung` (gleiche Suchbegriffe für alle, keine Bewertung); dann **ein** Agent `blind-bewertung`, der nur die Liste ohne Parteinamen sieht | Pull Request mit KI-Entwürfen (`ki_entwurf: true`, `geprueft: false`) |
+
+Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die Neutralität zwingend ist, sichern Skripte ab, nicht nur die Anleitung:
+
+```bash
+npm run ursachen:freigegeben -- 17                      # bricht ab, wenn die Ursachen nicht auf main stehen oder verändert wurden
+npm run entwurf:blind -- erfassung.json                 # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 …
+npm run entwurf:eintragen -- erfassung.json bewertung.json   # neue IDs, Beleg-Links, KI-Entwurf; schreibt nur einen gültigen Katalog
+```
+
+Formate der Arbeitsdateien (`Erfassung`, `Bewertung`) stehen in `scripts/entwurf.ts`; sie liegen in `.cache/entwurf/<Themen-ID>/` und kommen nicht ins Repository. Ein Programm, das ein Agent nicht laden konnte, wird ausgelassen (bleibt „noch nicht erfasst“) und nie als „keine Maßnahme“ eingetragen.
 
 ## Neue Wahlperiode
 

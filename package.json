@@ -20,8 +20,12 @@
     "programm:text": "node --experimental-strip-types scripts/entwurf/programm-text.ts",
     "programme:laden": "node --experimental-strip-types scripts/entwurf/programme-laden.ts",
     "programme:suche": "node --experimental-strip-types scripts/entwurf/programme-suche.ts",
+    "quelle:text": "node --experimental-strip-types scripts/entwurf/quelle-text.ts",
     "programm:sichern": "node --experimental-strip-types scripts/entwurf/programm-sichern.ts",
-    "punkte": "node --experimental-strip-types scripts/entwurf/punkte.ts"
+    "punkte": "node --experimental-strip-types scripts/entwurf/punkte.ts",
+    "ursachen:freigegeben": "node --experimental-strip-types scripts/entwurf/ursachen-freigegeben.ts",
+    "entwurf:blind": "node --experimental-strip-types scripts/entwurf/blind.ts",
+    "entwurf:eintragen": "node --experimental-strip-types scripts/entwurf/eintragen.ts"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",
@@ -41,7 +45,7 @@
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "oxlint": "^1.81.0",
-    "pdfjs-dist": "^5.7.284",
+    "pdfjs-dist": "^6.3.289",
     "typescript": "~6.0.2",
     "vite": "^8.3.0",
     "vite-plugin-pwa": "^1.3.0",
