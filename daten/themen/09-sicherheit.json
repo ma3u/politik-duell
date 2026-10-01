@@ -73,6 +73,14 @@
       "ebene": "land",
       "schlagwoerter": ["gefuehl", "wahrnehmung", "wahrgenommen", "medien", "berichterstattung", "herkunft", "nationalitaet", "zusammenhang", "unsicherheitsgefuehl", "angst vor auslaendern"],
       "nachtraeglich": "2026-09-30: nach einem Hinweis der Betreiberin ergänzt (ein Unsicherheitsgefühl wegen Zuwanderung konnte nur der Kriminalitätsursache 905 zugeordnet werden); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 910,
+      "beschreibung": "Mit dem starken Zuzug Geflüchteter 2014–2016 stieg die Kriminalität in den aufnehmenden Kreisen moderat, mit einem Jahr Verzögerung; ob wegen der Zahl oder der Aufnahmebedingungen, ist offen",
+      "quelle_url": "https://www.zew.de/en/publications/do-refugees-impact-crime-causal-evidence-from-large-scale-refugee-immigration-to-germany-3",
+      "ebene": "bund",
+      "schlagwoerter": ["zu viele", "seit die fluechtlinge", "seit 2015", "zuzug", "grenzen", "begrenzen", "obergrenze", "unterkunft", "heim", "massenmigration"],
+      "nachtraeglich": "2026-10-01: auf Entscheidung der Betreiberin ergänzt (Diagnose aus der Debatte, durch Kausalstudien für Deutschland gemischt belegt); die Bundesprogramme wurden danach eigens nach Maßnahmen zu Zugang und Aufnahme durchsucht."
     }
   ],
   "instrumente": [
@@ -511,17 +519,17 @@
     {
       "id": 7179,
       "name": "Arbeitsverbote für Geflüchtete abschaffen (Bund, Sicherheit)",
-      "wirksamkeit": 1,
+      "wirksamkeit": 2,
       "umsetzbarkeit": 3,
-      "begruendung": "Arbeit und eigenes Einkommen senken laut Studien aus mehreren Ländern das Risiko, dass Geflüchtete straffällig werden; Beschäftigungsverbote wirken lange nach. Der Effekt betrifft nur einen Teil der Tatverdächtigen, und für Deutschland fehlen Studien mit verknüpften Daten.",
+      "begruendung": "Arbeitsmarktzugang beseitigte in der Schweiz zwei Drittel des erhöhten Gewaltrisikos von Asylsuchenden mit Kriegserfahrung (Couttenier u. a. 2019); Arbeitsverbote wirken bis zu zehn Jahre nach. Für Deutschland fehlen Studien mit verknüpften Daten.",
       "evidenz": "gemischt"
     },
     {
       "id": 7180,
       "name": "Geflüchtete früh in Arbeit vermitteln (Bund, Sicherheit)",
-      "wirksamkeit": 1,
+      "wirksamkeit": 2,
       "umsetzbarkeit": 3,
-      "begruendung": "Arbeit und eigenes Einkommen senken laut Studien aus mehreren Ländern das Risiko, dass Geflüchtete straffällig werden; Beschäftigungsverbote wirken lange nach. Der Effekt betrifft nur einen Teil der Tatverdächtigen, und für Deutschland fehlen Studien mit verknüpften Daten.",
+      "begruendung": "Arbeitsmarktzugang beseitigte in der Schweiz zwei Drittel des erhöhten Gewaltrisikos von Asylsuchenden mit Kriegserfahrung (Couttenier u. a. 2019); Arbeitsverbote wirken bis zu zehn Jahre nach. Für Deutschland fehlen Studien mit verknüpften Daten.",
       "evidenz": "gemischt"
     },
     {
@@ -543,9 +551,9 @@
     {
       "id": 7183,
       "name": "Spurwechsel für integrierte Menschen ohne Schutzstatus (Bund, Sicherheit)",
-      "wirksamkeit": 1,
+      "wirksamkeit": 2,
       "umsetzbarkeit": 3,
-      "begruendung": "Ein sicherer Aufenthalt mit legaler Arbeit hat in Italien und den USA die Kriminalität der Betroffenen gesenkt. Ein Spurwechsel erreicht aber vor allem Menschen, die schon integriert und straffrei sind.",
+      "begruendung": "Ein legaler Aufenthalt halbierte in Italien etwa die Kriminalität der Betroffenen (Pinotti 2017). Ein Spurwechsel erreicht aber vor allem Menschen, die schon integriert und straffrei sind; der Effekt dürfte kleiner sein.",
       "evidenz": "gemischt"
     },
     {
@@ -578,6 +586,46 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Befragungen zeigen, wie viel Kriminalität Menschen tatsächlich erleben und wie sehr sie sich fürchten, und machen den Abstand zwischen Gefühl und Risiko sichtbar. Allein ändern sie das Sicherheitsgefühl nicht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7235,
+      "name": "Asylsuchende an den Grenzen zurückweisen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Zurückweisungen von Asylsuchenden an Binnengrenzen sind nach EU-Recht nur in engen Ausnahmen zulässig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7236,
+      "name": "Familiennachzug begrenzen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Kriminologen sehen im Familiennachzug zugleich einen Schutz vor Straffälligkeit junger Männer (Baier/Pfeiffer/Kliem 2018).",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7237,
+      "name": "Asylverfahren in Drittstaaten außerhalb der EU (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Solche Verfahren hängen von Abkommen mit Drittstaaten ab und sind rechtlich umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7238,
+      "name": "Schutzsuchende verbindlich in der EU verteilen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Eine verbindliche Verteilung braucht die Zustimmung der übrigen EU-Staaten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7239,
+      "name": "Kommunen und Ausländerbehörden für die Aufnahme besser ausstatten (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Aufnahmebedingungen können die Belastungen verringern, die Kriminologen für den Anstieg 2015/16 mitverantwortlich machen; ob sie Straftaten verhindern, ist nicht untersucht.",
       "evidenz": "offen"
     }
   ],
@@ -802,6 +850,39 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7240,
+          "instrument": 7235,
+          "beschreibung": "Asylsuchende an den deutschen Grenzen zurückweisen, wenn sie aus einem EU- oder Schengen-Staat einreisen",
+          "ursachen_ids": [910],
+          "zitat": "Dazu weisen wir diejenigen an den deutschen Grenzen zurück, die […] aus einem anderen Mitgliedstaat der EU oder dem Schengen-Raum nach Deutschland einreisen und bei uns einen Asylantrag stellen wollen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=42",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7243,
+          "instrument": 7236,
+          "beschreibung": "Familiennachzug zu subsidiär Schutzberechtigten aussetzen, freiwillige Aufnahmeprogramme beenden",
+          "ursachen_ids": [910],
+          "zitat": "Wir setzen den Familiennachzug zu subsidiär Schutzberechtigten aus und beenden alle freiwilligen Aufnahmeprogramme.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=43",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7246,
+          "instrument": 7237,
+          "beschreibung": "Asylverfahren in sicheren Drittstaaten außerhalb Europas",
+          "ursachen_ids": [910],
+          "zitat": "Jeder, der in Europa Asyl beantragt, soll in einen sicheren Drittstaat überführt werden und dort ein Asylverfahren durchlaufen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=44",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -984,6 +1065,28 @@
           "zitat": "Wir setzen auf eine deutliche Beschleunigung der Asylverfahren – sowohl beim Bundesamt für Migration und Flüchtlinge wie auch bei den verwaltungsgerichtlichen Verfahren. Mit umfassender Digitalisierung und Verwaltungsmodernisierung wollen wir sicherstellen, dass Asylentscheidungen innerhalb von sechs Monaten getroffen werden können.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7250,
+          "instrument": 7238,
+          "beschreibung": "Solidarische Verteilung von Schutzsuchenden unter allen EU-Staaten",
+          "ursachen_ids": [910],
+          "zitat": "Unser Ziel ist eine wirklich solidarische Verteilung, an der sich alle Mitgliedstaaten beteiligen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7254,
+          "instrument": 7239,
+          "beschreibung": "Ausländerbehörden stärken, Datenaustausch verbessern, Verfahren aus einer Hand",
+          "ursachen_ids": [910],
+          "zitat": "Dazu stärken wir die Ausländerbehörden, verbessern den Datenaustausch und etablieren One-Stop-Government-Verfahren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1253,6 +1356,28 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7251,
+          "instrument": 7238,
+          "beschreibung": "Faire, verbindliche und solidarische Verteilung von Schutzsuchenden in Europa",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben – mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=130",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7255,
+          "instrument": 7239,
+          "beschreibung": "Kommunen mit einer Integrationsoffensive stärker und verlässlicher finanziell unterstützen",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen für mehr bezahlbaren Wohnraum sorgen und die Kommunen mit einer Integrationsoffensive stärker und verlässlicher finanziell unterstützen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=128",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1422,6 +1547,39 @@
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
           "evidenz": "offen",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7241,
+          "instrument": 7235,
+          "beschreibung": "Zurückweisungen an den deutschen Grenzen modellhaft erproben",
+          "ursachen_ids": [910],
+          "zitat": "Als Freie Demokraten unterstützen wir die modellhafte Erprobung von Zurückweisungen an den deutschen Außengrenzen, um alle rechtlichen Möglichkeiten zur Begrenzung der irregulären Migration auszuschöpfen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7244,
+          "instrument": 7236,
+          "beschreibung": "Familiennachzug zu subsidiär Schutzberechtigten aussetzen, Aufnahmeprogramme pausieren",
+          "ursachen_ids": [910],
+          "zitat": "Den Familiennachzug zu subsidiär Schutzberechtigten wollen wir aussetzen und Aufnahmeprogramme pausieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7247,
+          "instrument": 7237,
+          "beschreibung": "Asylverfahren auch in Drittstaaten",
+          "ursachen_ids": [910],
+          "zitat": "Asylverfahren sollen zudem auch in Drittstaaten stattfinden, wenn Schutzsuchende dort sicher und rechtstaatliche Verfahren gewährleistet sind.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1609,6 +1767,53 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7242,
+          "instrument": 7235,
+          "beschreibung": "Grenzen selbst kontrollieren, illegal Einreisende an der Grenze zurückweisen",
+          "ursachen_ids": [910],
+          "zitat": "Wir werden stattdessen unsere Grenzen wieder selbst kontrollieren und die Bundespolizei als Grenzbehörde einsetzen, um illegale Einreisen wirksam zu unterbinden und illegal einreisende Personen konsequent an der Grenze zurückweisen zu können.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=104",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7245,
+          "instrument": 7236,
+          "beschreibung": "Grundsätzlichen Anspruch auf Familiennachzug zu subsidiär Schutzberechtigten streichen",
+          "ursachen_ids": [910],
+          "zitat": "Wegfall des grundsätzlichen Nachzugsanspruches für Familienangehörige subsidiär Schutzberechtigter",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=105",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7248,
+          "instrument": 7237,
+          "beschreibung": "Asylanträge künftig außerhalb Deutschlands stellen und bearbeiten",
+          "ursachen_ids": [910],
+          "zitat": "Wir werden uns dafür einsetzen, dass Asylverfahren und Anträge auf subsidiären Schutz zukünftig außerhalb Deutschlands gestellt und bearbeitet werden",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=104",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7257,
+          "beschreibung": "Asylsuchende für die Dauer des Verfahrens in zentralen Aufnahmeeinrichtungen unterbringen",
+          "ursachen_ids": [910],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Zentrale Unterbringung kann Verfahren und Rückführungen erleichtern; große Sammelunterkünfte gelten in der kriminologischen Forschung aber eher als Risiko für Konflikte. Die Wirkung auf Straftaten ist nicht untersucht.",
+          "zitat": "Unterbringung in zentralen Aufnahmeeinrichtungen für die Dauer des Asylverfahrens",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=106",
+          "evidenz": "offen",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1735,13 +1940,35 @@
           "id": 7203,
           "beschreibung": "Legalisierung für Menschen ohne Aufenthaltsstatus; wirksame Bleiberechtsregelungen bei Kettenduldungen",
           "ursachen_ids": [905],
-          "wirksamkeit": 1,
+          "wirksamkeit": 2,
           "umsetzbarkeit": 3,
-          "begruendung": "Legalisierungsprogramme haben in Italien, Spanien und den USA die Kriminalität der Betroffenen gesenkt, weil legale Arbeit möglich wurde. Der Effekt betrifft nur einen Teil der Tatverdächtigen und ist für Deutschland nicht untersucht.",
+          "begruendung": "Ein legaler Aufenthalt halbierte in Italien etwa die Kriminalität der Betroffenen (Pinotti 2017), ähnliche Befunde gibt es für die USA. Der Effekt betrifft nur einen Teil der Tatverdächtigen und ist für Deutschland nicht untersucht.",
           "zitat": "Wir fordern Legalisierungsmöglichkeiten für Menschen ohne Aufenthaltsstatus und effektive Bleiberechtsregelungen für Menschen, die mit einem unsicheren Aufenthaltsstatus oder mit Kettenduldungen leben müssen",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
           "evidenz": "gemischt",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7252,
+          "instrument": 7238,
+          "beschreibung": "Europäische Fluchtumlage: EU-Geld für aufnahmebereite Länder, Regionen und Städte",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen eine europäische Fluchtumlage. Länder, Regionen und Städte, die bereit sind, mehr Geflüchtete aufzunehmen und adäquat unterzubringen und zu versorgen, werden mit EU-Mitteln finanziell unterstützt.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7256,
+          "instrument": 7239,
+          "beschreibung": "Fonds für Willkommenskommunen; der Bund erstattet die Unterbringungskosten vollständig pro Person",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen einen Fonds für Willkommenskommunen. […] Außerdem muss der Bund über eine Pro-Personen-Pauschale die Unterbringungskosten für Geflüchtete vollständig erstatten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=52",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1874,6 +2101,31 @@
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=37",
           "evidenz": "gemischt",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7249,
+          "instrument": 7237,
+          "beschreibung": "Asylverfahren möglichst außerhalb der EU in sicheren Drittstaaten",
+          "ursachen_ids": [910],
+          "zitat": "Asylverfahren sollten nach Möglichkeit außerhalb der EU in sicheren Drittstaaten stattfinden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=38",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7253,
+          "beschreibung": "Wer aus einem sicheren Drittstaat einreist, bekommt kein Asylverfahren und keinen Aufenthalt",
+          "ursachen_ids": [910],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 0,
+          "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Ein pauschaler Ausschluss vom Asylverfahren bei Einreise über sichere Drittstaaten ist mit EU-Recht nicht vereinbar.",
+          "zitat": "Wer aus einem sicheren Drittstaat einreist, hat kein Recht auf Aufenthalt. Wer kein Recht auf Aufenthalt hat, hat keinen Anspruch auf […] ein Asylverfahren und auch keinen Anspruch auf soziale Leistungen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+          "evidenz": "gemischt",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
