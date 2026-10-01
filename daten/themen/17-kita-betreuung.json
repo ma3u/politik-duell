@@ -40,5 +40,2370 @@
       "ebene": "land",
       "schlagwoerter": ["kita-gebuehren", "kitagebuehren", "elternbeitrag", "elternbeitraege", "zu teuer", "kosten", "beitrag", "gebuehrenfrei", "beitragsfrei"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 7179,
+      "name": "Bedarfsgerechte Betreuungsplätze und Rechtsanspruch verlässlich sichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein erfüllter Anspruch verbessert den Zugang direkt, setzt aber ausreichende Plätze und Personal voraus. Die Umsetzung hängt deshalb von regionaler Kapazität und Finanzierung ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7180,
+      "name": "Genehmigungsverfahren für Kita-Ausbau beschleunigen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kürzere Verfahren können den Ausbau erleichtern, schaffen aber weder Bauflächen noch Personal. Verwaltungsvereinfachungen sind innerhalb einer Wahlperiode realistisch.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7181,
+      "name": "Kita-Plätze bedarfsgerecht ausbauen, erhalten und sanieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche und gesicherte Plätze wirken unmittelbar gegen Angebotslücken; der tatsächliche Effekt hängt von Personalverfügbarkeit und regionaler Planung ab. Investitionen und laufende Kosten begrenzen das Tempo.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7182,
+      "name": "Kita-Träger und Kindertagespflege bedarfsgerecht finanzieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine verlässliche Finanzierung kann Plätze erhalten und Ausbau ermöglichen. Der Effekt hängt davon ab, ob Mittel zusätzlich bereitgestellt und tatsächlich für Kapazitäten eingesetzt werden.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/kita-personalbedarf.html"
+    },
+    {
+      "id": 7183,
+      "name": "Kommunale Bedarfsplanung und flexible Angebotssteuerung stärken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kleinräumige Planung kann Plätze besser an Bedarf und Bevölkerungsentwicklung anpassen. Sie behebt einen landesweiten Personal- oder Finanzmangel nicht allein.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7184,
+      "name": "Flexible und ergänzende Betreuungsangebote ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bedarfsgerechte Zeiten und Ersatzangebote können Versorgungslücken für Familien mit besonderen Arbeitszeiten abfedern. Personalbedarf, Nachfrage und Qualität begrenzen die flächendeckende Umsetzung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/eltern-wuenschen-sich-flexiblere-betreuungsangebote.html"
+    },
+    {
+      "id": 7185,
+      "name": "Kita-Betreuung rund um die Uhr anbieten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Nachtbetreuung hilft nur Familien mit entsprechendem Bedarf und löst die allgemeine Angebotslücke kaum. Der hohe Personal- und Organisationsaufwand erschwert eine Umsetzung in der Wahlperiode.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7186,
+      "name": "Betriebliche Kinderbetreuung fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Betriebskitas schaffen zusätzliche Plätze und können Arbeitszeiten besser abdecken. Sie erreichen nicht alle Familien und benötigen Personal sowie tragfähige Trägerfinanzierung.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7187,
+      "name": "Kommunen beim Ausbau wohnortnaher Betreuungsplätze unterstützen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Investitionshilfen können zusätzliche Plätze und erreichbare Angebote ermöglichen. Die Wirkung hängt von kommunaler Planung, Kofinanzierung und verfügbarem Personal ab.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/kita-personalbedarf.html"
+    },
+    {
+      "id": 7188,
+      "name": "Betriebliche Kinderbetreuung fördern und steuerlich unterstützen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Anreize können zusätzliche betriebliche Plätze mobilisieren, besonders für Beschäftigte mit passenden Arbeitszeiten. Wie viele zusätzliche Plätze dadurch entstehen, ist für die konkrete Ausgestaltung unsicher.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7189,
+      "name": "Kitagutschein automatisch versenden und Zugangshilfen bündeln (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine automatische Information und Vermittlung kann administrative Hürden senken. Sie erhöht das Platzangebot nicht und hilft nur, wenn passende Plätze verfügbar sind.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7190,
+      "name": "Kita-Platzvergabe transparent und digital organisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Transparente Verfahren können Mehrfachanmeldungen und ungerechte Zugänge reduzieren. Ein digitales System schafft selbst keine zusätzlichen Betreuungsplätze.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7191,
+      "name": "Belegte Kita-Plätze für kurzfristigen Bedarf vorhalten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Reservierte Plätze können einzelne Zugangsprobleme abfedern, verringern aber die Zahl regulär verfügbarer Plätze. Der Nutzen hängt von lokaler Nachfrage und verlässlicher Finanzierung ab.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7192,
+      "name": "Über Kita-Leistungen innerhalb fester Frist entscheiden (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schnellere Bescheide erleichtern die Planung und beseitigen Verzögerungen im Verwaltungszugang. Sie schaffen keinen Platz, wenn das Angebot fehlt.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7193,
+      "name": "Personalschlüssel auf 1:3 in Krippen und 1:7,5 in Kindergärten verbessern (Land)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "begruendung": "Die konkreten Zielwerte setzen direkt an der Personalausstattung an, die pädagogische Interaktionen ermöglicht. Die Verbesserung ist wirksam, erfordert angesichts des Fachkräftemangels aber zusätzliche Personal- und Finanzressourcen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7194,
+      "name": "Tatsächliche Personal-Kind-Relation schrittweise verbessern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr anrechenbare Personalzeit und die Berücksichtigung von Ausfällen können die Betreuung spürbar verbessern. Der Effekt bleibt begrenzt, wenn zusätzliche Fachkräfte nicht verfügbar sind.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7195,
+      "name": "Personalschlüssel in Krippen auf 1:4 und in Kindergärten auf 1:10 verbessern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Die Zielwerte verbessern die Personalausstattung gegenüber ungünstigen Ausgangslagen, bleiben aber hinter den fachlichen Empfehlungen zurück. Zusätzliches Personal ist nötig.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/plaetze-und-personalschluessel.html"
+    },
+    {
+      "id": 7196,
+      "name": "Gruppengrößen auf fünf beziehungsweise 13 Kinder je Fachkraft senken (Land)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 1,
+      "begruendung": "Die ambitionierten Grenzwerte greifen direkt in die Gruppenzusammensetzung ein und können individuelle Betreuung ermöglichen. Der Personalbedarf und die kurze Umsetzungsfrist machen die Realisierung besonders anspruchsvoll.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7197,
+      "name": "Bundesweite Personal-Kind-Relation einschließlich Ausfallzeiten festlegen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Einheitliche Mindeststandards können die Qualität und Berücksichtigung von Ausfällen stärken. Die Länder setzen sie um; Personalverfügbarkeit und Finanzierung bestimmen die tatsächliche Wirkung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7198,
+      "name": "Vergütung und Arbeitsbedingungen in Kitas verbessern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Bezahlung und Arbeitsbedingungen können die Attraktivität und Bindung von Fachkräften erhöhen. Der Fachkräftemangel und die Tarif- und Haushaltskosten begrenzen Geschwindigkeit und Reichweite.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7199,
+      "name": "Tarifvergütung in Sozial- und Erziehungsdiensten refinanzieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Die Refinanzierung kann Trägern ermöglichen, tarifliche Löhne zu zahlen und Personal zu halten. Der Bund kann Kosten mittragen, aber die tatsächliche Personalgewinnung ist nicht garantiert.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7200,
+      "name": "Ausbildungskapazitäten erweitern und Qualifizierung erleichtern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Ausbildungsplätze, Praxisanteile und Quereinstiege können mittelfristig den Personalzugang verbessern. Fehlende Lehrkräfte, Räume und Ausbildungserfolg begrenzen den Zuwachs.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7201,
+      "name": "Erzieherausbildung und Praxisphasen vergüten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Vergütung kann den Zugang zur Ausbildung erleichtern und die Zahl der Auszubildenden erhöhen. Ein unmittelbarer Effekt auf verfügbare Fachkräfte entsteht erst nach Ausbildungsabschluss.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7202,
+      "name": "Ausbildung und Fachkräftegewinnung für Kitas fördern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bundesmittel für vergütete Ausbildung, Kapazitäten und Qualifizierung können den Ländern beim Aufbau des Personals helfen. Wirkung und Zeitbedarf hängen von Länderumsetzung und Ausbildungserfolg ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7203,
+      "name": "Verwaltungs- und Dokumentationsaufwand in Kitas reduzieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger unnötige Dokumentation kann Fachkräfte und Leitung entlasten. Freigesetzte Zeit ersetzt keine zusätzlichen Betreuungskräfte und hängt von einer sorgfältigen Auswahl der Pflichten ab.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7204,
+      "name": "Pädagogische Teams durch Verwaltungs- und Hauswirtschaftskräfte entlasten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche Unterstützung kann pädagogischen Fachkräften mehr Zeit für Kinder geben. Sie benötigt weiteres Personal und verbessert nicht automatisch die Fachkraft-Kind-Relation.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7205,
+      "name": "Multiprofessionelle Teams und zusätzliche Förderung stärken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche spezialisierte Kräfte können Kinder mit besonderem Förderbedarf gezielter unterstützen. Fachkräftemangel und die Finanzierung dauerhafter Stellen begrenzen die Umsetzung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7206,
+      "name": "Kindertagespflege fair vergüten und verlässlich unterstützen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Faire Entgelte, Beratung und klare Vereinbarungen können Tagespflegepersonen halten und zusätzliche Plätze ermöglichen. Die Zahl der erreichbaren Plätze bleibt von der Gewinnung und Bindung der Betreuungspersonen abhängig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7207,
+      "name": "Kita-Personalstandards auf Kindertagespflege übertragen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine bessere Personalausstattung kann die Betreuungsqualität erhöhen. Eine Übertragung ohne Einkommensverluste erfordert zusätzliche Finanzierung und muss zur Struktur der Tagespflege passen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7208,
+      "name": "Kindertagespflege bundesweit als Betreuungsangebot stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bundesunterstützung kann die Länder beim Erhalt und Ausbau ergänzender Betreuungsplätze unterstützen. Die konkrete Wirkung hängt von Umsetzung und dauerhafter Finanzierung vor Ort ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html"
+    },
+    {
+      "id": 7209,
+      "name": "Kita-Beiträge landesweit abschaffen und Kosten dauerhaft finanzieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Beitragsfreiheit entlastet Familien und kann die Nutzung besonders bei jüngeren Kindern erhöhen. Sie schafft zusätzliche Nachfrage und kann Mittel binden, die sonst für Qualität oder Plätze verfügbar wären.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html"
+    },
+    {
+      "id": 7210,
+      "name": "Kita-Beiträge bundesweit abschaffen oder senken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Geringere Beiträge entlasten Familien und können den Zugang erleichtern, beseitigen aber nicht alle Zusatzkosten. Mehr Nachfrage kann bei knappen Plätzen den Zugang erschweren, wenn der Ausbau nicht Schritt hält.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html"
+    },
+    {
+      "id": 7211,
+      "name": "Beitragsermäßigungen für Mehrkinderfamilien sichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ermäßigungen mindern die finanzielle Belastung größerer Familien, ohne die Kosten für alle Eltern abzuschaffen. Die Entlastung erreicht nur Familien, die die jeweilige Regelung nutzen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html"
+    },
+    {
+      "id": 7212,
+      "name": "Kita-Beiträge nach Einkommen staffeln (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Einkommensabhängige Beiträge können die Belastung gezielter bei Familien mit geringem Einkommen senken. Eine soziale Staffelung schafft Verwaltungsaufwand und löst keine Angebotsknappheit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html"
+    },
+    {
+      "id": 7213,
+      "name": "Kinderbetreuungskosten steuerlich absetzen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Steuerliche Abzüge können einen Teil der Kosten kompensieren. Die Entlastung ist geringer oder fehlt bei Familien mit niedriger Steuerlast und löst weder Platzmangel noch hohe laufende Beiträge direkt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html"
+    },
+    {
+      "id": 7214,
+      "name": "Personal- und Elternkosten der Kita-Qualität bedarfsgerecht finanzieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine Finanzierung der tatsächlichen Kosten kann bessere Personalausstattung ermöglichen und Beitragsbelastungen begrenzen. Die Ausgabenhöhe und die Verteilung zwischen Land, Kommunen und Trägern sind anspruchsvoll.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/plaetze-und-personalschluessel.html"
+    },
+    {
+      "id": 7215,
+      "name": "Kinderbetreuungskosten über ein Lebenschancen-BAföG mitfinanzieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein zweckgebundener Zuschuss kann einzelne Familien bei den Kosten entlasten. Seine Reichweite hängt von Anspruchshöhe und Zugang ab und beeinflusst das Platzangebot nicht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7216,
+      "name": "Landeserziehungsgeld für Kinder unter drei Jahren einführen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Geldbetrag kann Familien finanziell entlasten, sichert aber keinen Kita-Platz und kann die Nachfrage nach Betreuung sogar senken. Die Kosten hängen von Anspruch und Leistungshöhe ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html"
+    },
+    {
+      "id": 7217,
+      "name": "Mittagsverpflegung in Kitas kostenfrei anbieten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kostenfreie Mahlzeiten senken einen Teil der Familienausgaben, lassen Elternbeiträge und weitere Zusatzkosten aber bestehen. Die Wirkung auf die Gesamtbelastung ist daher begrenzt.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7218,
+      "name": "Verpflichtende Zusatzbeiträge von Eltern verhindern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Das Verhindern verpflichtender Zusatzforderungen kann unerwartete Kosten begrenzen. Es senkt nicht automatisch die regulären Elternbeiträge und muss mit der Finanzierung zusätzlicher Leistungen vereinbar sein.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7219,
+      "name": "Mindestankündigungsfristen und Schlichtung bei Kita-Streiks einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Vorankündigung und Schlichtung könnten Familien mehr Planungssicherheit geben. Sie verhindern weder krankheitsbedingte Ausfälle noch lösen sie Personalengpässe; arbeitsrechtliche Ausgestaltung ist anspruchsvoll.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7220,
+      "name": "Zusätzliche Mittel zur kurzfristigen Personalsicherung bereitstellen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche Personalressourcen können Ausfälle auffangen und Betreuung stabilisieren. Eine dauerhafte Wirkung setzt verlässliche Finanzierung und verfügbare Fachkräfte voraus.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7221,
+      "name": "Kita-Qualitätsmittel für Personal und Leitungszeit einsetzen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche pädagogische Leitungs- und Personalzeit kann die Arbeit in Einrichtungen verbessern. Die Wirkung hängt davon ab, dass Mittel zusätzlich und dauerhaft für qualifiziertes Personal eingesetzt werden.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7222,
+      "name": "Betreuungsgehalt zur Entlastung und Senkung der Platznachfrage einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Betreuungsgehalt kann einzelne Familien finanziell entlasten, stellt aber keine bedarfsgerechte externe Betreuung sicher. Ob es die Platznachfrage dauerhaft senkt, ist unklar.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7223,
+      "name": "Gesundheits-, Lärm- und Hitzeschutz für Kita-Beschäftigte verbessern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Arbeitsbedingungen können Belastungen mindern und die Bindung von Personal unterstützen. Der direkte Beitrag zu mehr verfügbaren Betreuungsstunden ist begrenzt und nicht gut untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7224,
+      "name": "Kita-Platzvergabe bundesweit nach Bedarf priorisieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Eine Priorisierung kann Plätze für bestimmte Familien zugänglicher machen, erhöht aber nicht die Zahl der Plätze und kann andere Familien benachteiligen. Ein bundesweiter Eingriff in die Vergabe erfordert Abstimmung mit Ländern und Kommunen.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7225,
+      "name": "Verpflichtenden beitragsfreien Kita-Besuch bei Deutschförderbedarf einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Frühe Sprachförderung kann den Förderzugang verbessern, aber eine Pflicht erhöht nicht das knappe Platzangebot. Bedarfsermittlung, Zuständigkeit und Durchsetzung sind anspruchsvoll.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html"
+    },
+    {
+      "id": 7226,
+      "name": "Rechtsanspruch auf zehn Stunden Kita-Betreuung täglich schaffen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ein längerer Anspruch kann den Betreuungsumfang für Familien mit entsprechendem Bedarf direkt verbessern. Er verlangt zusätzliche Plätze und Personal und ist ohne entsprechende Kapazitäten innerhalb einer Wahlperiode schwer erfüllbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7227,
+      "name": "Bundeseinheitliche Qualitätsstandards für Kitas festlegen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gemeinsame Standards können regionale Mindestqualität und Ausfallberücksichtigung verbessern. Ihre Umsetzung erfordert Abstimmung mit den Ländern und zusätzliche Mittel, wenn sie über bestehende Ausstattung hinausgehen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/plaetze-und-personalschluessel.html"
+    },
+    {
+      "id": 7228,
+      "name": "Zusatzmittel für Kitas mit Platzmangel oder sozialem Förderbedarf bereitstellen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gezielte Mittel können zusätzliche Kapazitäten und Förderung an Orten mit hohem Bedarf unterstützen. Ob Plätze entstehen, hängt von Umsetzung, Personal und ergänzender kommunaler Finanzierung ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html"
+    },
+    {
+      "id": 7229,
+      "name": "Betreuungsanspruch bis zum 14. Lebensjahr aufrechterhalten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ein Anspruch für ältere Kinder geht über das für dieses Thema erforderliche Kita-Angebot hinaus und schafft keinen Platz. Umfang, Zuständigkeiten und Finanzierung machen die Umsetzung schwierig.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7230,
+      "name": "Zusätzliche pädagogische Kita-Leistungen gegen Elternbeiträge ermöglichen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zusätzliche kostenpflichtige Leistungen verbessern die Bezahlbarkeit der Grundbetreuung nicht und können die Belastung von Familien erhöhen. Die Erlaubnis ist administrativ umsetzbar, wirkt aber dem Kostenziel nicht entgegen.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7231,
+      "name": "Kinderbetreuung für Hochschulangehörige schaffen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein gezieltes Angebot kann den Zugang für Hochschulangehörige verbessern, löst aber nur einen kleinen Teil des allgemeinen Platzmangels. Personal- und Investitionsbedarf bleiben bestehen.",
+      "evidenz": "offen"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "massnahmen": [
+        {
+          "id": 7232,
+          "instrument": 7187,
+          "beschreibung": "Länder und Kommunen mit einem Investitionsprogramm beim Ausbau von Betreuungsplätzen unterstützen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir setzen auf Mindeststandards und unterstützen mit einem weiteren Investitionsprogramm Länder und Kommunen beim Ausbau der Betreuungsplätze.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=65",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7233,
+          "instrument": 7213,
+          "beschreibung": "Die steuerliche Absetzbarkeit von Kinderbetreuungskosten verbessern.",
+          "ursachen_ids": [1705],
+          "zitat": "Zudem verbessern wir die steuerliche Absetzbarkeit von Kinderbetreuungskosten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=63",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "massnahmen": [
+        {
+          "id": 7234,
+          "instrument": 7202,
+          "beschreibung": "Fachkräfteoffensive für Kitas und Schulen mit mehr Ausbildungskapazitäten und entlohnter Erzieherausbildung vereinbaren; mehr Fachkräfte sollen mehr Plätze und weniger Schließzeiten ermöglichen.",
+          "ursachen_ids": [1701, 1702, 1704],
+          "zitat": "Gut qualifizierte Fachkräfte in ausreichender Zahl sind die entscheidende Voraussetzung für mehr Kita-Plätze […] und eine Reduzierung von Schließzeiten. Wir wollen daher eine Fachkräfteoffensive für Kitas und Schulen verbindlich zwischen allen Bundesländern vereinbaren, die unter anderem den Ausbau von Ausbildungskapazitäten, eine entlohnte Ausbildung für Erzieherinnen und Erzieher […] umfasst.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=15",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7235,
+          "instrument": 7210,
+          "beschreibung": "Kostenfreie Bildung ab der Kita.",
+          "ursachen_ids": [1705],
+          "zitat": "Zudem setzen wir uns für eine kostenfreie Bildung von der Kita an ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=26",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "massnahmen": [
+        {
+          "id": 7236,
+          "instrument": 7188,
+          "beschreibung": "Steuerliche Anreize für Unternehmen, die selbst oder gemeinsam mit anderen Betreuungsplätze schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir führen steuerliche Anreize für Unternehmen ein, die selbst oder in Kooperation Kitaplätze schaffen, sodass Kinder von Beschäftigten in unmittelbarer Nähe zur Arbeitsstelle betreut werden können.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=76",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7237,
+          "instrument": 7202,
+          "beschreibung": "Fachkräfte für Kitas und Kindertagespflege gewinnen und sichern: vergütete, schulgeldfreie Ausbildung, attraktivere Arbeitsplätze, erleichterte Anerkennung und Weiterbildung.",
+          "ursachen_ids": [1702, 1704],
+          "zitat": "Deshalb investieren wir in gute Kitas, Kindertagespflegestellen und weitere soziale Betreuungsstätten sowie in die Gewinnung von Erzieher*innen und unterstützenden Fachkräften. […] Darin machen wir uns für schulgeldfreie, vergütete Ausbildungen, einen attraktiven Arbeitsplatz, berufsbegleitende Anerkennungsverfahren, schnellere Anerkennung ausländischer Abschlüsse und flexiblere Weiterbildungen und Umschulungen stark.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=75",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7238,
+          "instrument": 7212,
+          "beschreibung": "Einkommensabhängige Kita-Gebühren als Standard einführen.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir fordern einkommensabhängige Kitagebühren als Standard.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=76",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "massnahmen": [
+        {
+          "id": 7239,
+          "instrument": 7208,
+          "beschreibung": "Kindertagespflege als weitere Säule der Kindertagesbetreuung stärken.",
+          "ursachen_ids": [1701],
+          "zitat": "Außerdem wollen wir die Kindertagespflege als eine weitere Säule der Kindertagesbetreuung stärken.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7240,
+          "instrument": 7228,
+          "beschreibung": "Startchancen-Programm für Kitas mit akutem Platzmangel oder hohem Anteil sozial benachteiligter Kinder.",
+          "ursachen_ids": [1701],
+          "zitat": "Durch ein Startchancen-Programm für Kitas soll zusätzlich unterstützt werden, wo ein hoher Anteil sozial benachteiligter Kinder oder ein akuter Kita-Platzmangel vorhanden ist.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7241,
+          "instrument": 7188,
+          "beschreibung": "Ausbau von Betriebskindergärten unterstützen und bürokratische Hürden abbauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Für eine verbesserte Vereinbarkeit von Familie, Pflege und Beruf soll der Ausbau von Betriebskindergärten unterstützt und bürokratische Hürden abgebaut werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=31",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7242,
+          "instrument": 7227,
+          "beschreibung": "Bundeseinheitliche Kita-Qualitätsstandards mit bedarfsgerechtem Betreuungsschlüssel inklusive Ausfallzeiten, weniger Bürokratie und multiprofessionellen Teams.",
+          "ursachen_ids": [1702, 1703, 1704],
+          "zitat": "Diese umfassen insbesondere einen bedarfsgerechten Betreuungsschlüssel, der pädagogische Arbeit, administrative Aufgaben und Ausfallzeiten einberechnet, den Abbau überflüssiger Bürokratie und den Einsatz von multiprofessionellen Teams zur Entlastung des Erziehungspersonals.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7243,
+          "instrument": 7202,
+          "beschreibung": "Erzieherausbildung und Weiterbildung schulgeldfrei und vergütet anbieten, Ausbildungskapazitäten der Länder erhöhen.",
+          "ursachen_ids": [1702],
+          "zitat": "Indem wir die Erzieheraus- und Weiterbildung generell schulgeldfrei stellen und angemessen vergüten sowie die Ausbildungskapazitäten der Länder erhöhen, ermöglichen wir mehr Menschen den Zugang zur Ausbildung.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=8",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7244,
+          "instrument": 7219,
+          "beschreibung": "Bei Arbeitskämpfen in Kitas verpflichtende Schlichtung, Mindestankündigungsfristen und Notbetrieb vorsehen.",
+          "ursachen_ids": [1704],
+          "zitat": "In kritischen Bereichen wie […] Kindertagesstätten […] braucht es jedoch eine verpflichtende Schlichtungsvereinbarung zu Beginn von Tarifverhandlungen sowie Mindestankündigungsfristen sowie die Sicherstellung eines Notbetriebs.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=19",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7245,
+          "instrument": 7215,
+          "beschreibung": "Kinderbetreuungskosten über ein Lebenschancen-BAföG mitfinanzieren.",
+          "ursachen_ids": [1705],
+          "zitat": "Zur Finanzierung von Kursgebühren, bildungsbedingten Auszeiten und Kinderbetreuung wollen wir ein neues „Lebenschancen-BAföG“ einführen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=10",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7246,
+          "instrument": 7213,
+          "beschreibung": "Steuerlichen Abzug von Kinderbetreuungskosten verbessern.",
+          "ursachen_ids": [1705],
+          "zitat": "Der steuerliche Abzug von Kinderbetreuungskosten soll verbessert werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=31",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "massnahmen": [
+        {
+          "id": 7247,
+          "instrument": 7224,
+          "beschreibung": "Ausreichend Kindergarten- und Kitaplätze in Wohnraumnähe bereitstellen, mit Vorrang für Familien mit zwei arbeitenden Eltern und arbeitende Alleinerziehende.",
+          "ursachen_ids": [1701],
+          "zitat": "Bereitstellung von ausreichend Kindergarten- und Kitaplätzen in Wohnraumnähe mit Vorrang für Familien, in denen beide Eltern arbeiten, sowie für arbeitende Alleinerziehende",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=21",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7248,
+          "instrument": 7222,
+          "beschreibung": "Krippen und Kitas ausreichend und qualifiziert besetzen; ein Betreuungsgehalt soll die Nachfrage nach Kitaplätzen und damit den Fachkräftemangel senken.",
+          "ursachen_ids": [1701, 1702],
+          "zitat": "Krippen und Kitas sind personell ausreichend und qualifiziert zu besetzen. Der bestehende Fachkräftemangel kann vor allem durch das von uns geforderte Betreuungsgehalt reduziert werden, das die Nachfrage nach Kita-Plätzen deutlich senken wird.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=153",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7249,
+          "instrument": 7188,
+          "beschreibung": "Betriebskindergärten stärker fördern.",
+          "ursachen_ids": [1701],
+          "zitat": "Um die Vereinbarkeit von Familie und Beruf zu verbessern, sind Betriebskindergärten stärker als bisher zu fördern.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=153",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "massnahmen": [
+        {
+          "id": 7250,
+          "instrument": 7187,
+          "beschreibung": "Rechtsanspruch auf Ganztagsbetreuung umsetzen und ausreichend Kitaplätze schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "Der Rechtsanspruch auf Ganztagsbetreuung muss umgesetzt werden, dazu gehört die Schaffung von ausreichend Kitaplätzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7251,
+          "instrument": 7187,
+          "beschreibung": "Familienentlastende Infrastruktur mit guter Erreichbarkeit ausbauen, Kitas in allen Stadtteilen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir wollen den Ausbau einer familienentlastenden Infrastruktur mit guter Erreichbarkeit vorantreiben. Gute Schulen und Kitas müssen in allen Stadtteilen selbstverständlich sein (Kapitel 10).",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7252,
+          "instrument": 7197,
+          "beschreibung": "Betreuungsschlüssel auf höchstens eine Fachkraft für drei Kinder unter drei Jahren und 7,5 ältere Kinder verbessern, unter Berücksichtigung von Ausfall- und Vorbereitungszeiten.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren – unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=38",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7253,
+          "instrument": 7199,
+          "beschreibung": "Löhne in den Sozial- und Erziehungsdiensten erhöhen und Refinanzierung der Tarifverträge sichern.",
+          "ursachen_ids": [1702],
+          "zitat": "Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen! Dafür muss die Refinanzierung der Tarifverträge insbesondere für den kommunalen wie den freigemeinnützigen Bereich gesichert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=38",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7254,
+          "instrument": 7202,
+          "beschreibung": "Zugang zur Erzieher*innen-Ausbildung erleichtern und Ausbildungsqualität erhöhen.",
+          "ursachen_ids": [1702],
+          "zitat": "Wir wollen den Zugang zur Erzieher*innen-Ausbildung erleichtern und die Qualität der Ausbildung erhöhen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=38",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7255,
+          "instrument": 7210,
+          "beschreibung": "Kitas für alle Kinder gebührenfrei machen.",
+          "ursachen_ids": [1705],
+          "zitat": "Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=38",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "massnahmen": [
+        {
+          "id": 7256,
+          "instrument": 7188,
+          "beschreibung": "Unternehmen stärker zur Bereitstellung von Kita-Plätzen verpflichten, im Gegenzug steuerliche Vorteile.",
+          "ursachen_ids": [1701],
+          "zitat": "Unternehmen sollen stärker in die Pflicht genommen werden, wenn es um die Bereitstellung von Kita-Plätzen geht. Im Gegenzug soll es für diese Unternehmen steuerliche Vorteile geben.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=32",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7257,
+          "instrument": 7202,
+          "beschreibung": "Länder und Kommunen bei der Ausbildung von mehr Erziehern unterstützen, Arbeitsbedingungen in Bildungseinrichtungen verbessern.",
+          "ursachen_ids": [1702],
+          "zitat": "Um den Fachkräftemangel in pädagogischen Berufen aufzulösen, sind Länder und Kommunen bei der Ausbildung von mehr Lehrern und Erziehern zu unterstützen. Die Arbeitsbedingungen in allen Bildungseinrichtungen müssen dringend verbessert werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=25",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7258,
+          "instrument": 7225,
+          "beschreibung": "Für Kinder ab drei Jahren mit festgestellten Deutschdefiziten verpflichtender, beitragsfreier Kita-Besuch mit Sprachbildung.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir fordern einen verpflichtenden Deutschtest für Kinder ab 3 Jahren und bei festgestellten Deutsch-Defiziten den verpflichtenden (beitragsfreien) Besuch einer Kita mit zusätzlichen Angeboten zu Integration und Sprachbildung.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7259,
+          "instrument": 7210,
+          "beschreibung": "Kita-Beiträge stabilisieren oder senken, mittelfristig Beitragsfreiheit.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir fordern Stabilität bzw. Senkung von Kita-Beiträgen und mittelfristig Beitragsfreiheit.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7260,
+          "instrument": 7183,
+          "beschreibung": "Konzept vorlegen, das den Bedarf erfasst, die Finanzierung stabilisiert und den Personalschlüssel verbessert.",
+          "ursachen_ids": [1701, 1702, 1703, 1704],
+          "zitat": "Wir werden ein belastbares Konzept vorlegen, das den tatsächlichen Bedarf realistisch erfasst, eine stabile Finanzierung gewährleistet und gleichzeitig den Personalschlüssel verbessert. Damit sichern wir Verlässlichkeit, Qualität, individuelle Förderung und sorgen dafür, dass gut ausgebildetes Personal dem Land erhalten bleibt.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=49",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7261,
+          "instrument": 7183,
+          "beschreibung": "Wohnortnahe Betreuung erhalten und über flexible Modelle, Kooperationen und Zusammenschlüsse an die regionale Nachfrage anpassen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir wollen eine wohnortnahe Betreuung in Stadt und Land erhalten, zugleich aber realistisch und vorausschauend auf Rückgänge bei der Nachfrage reagieren. Unser Ziel ist es, Strukturen nicht zu zerschlagen, sondern tragfähige Lösungen zu schaffen, auch durch flexible Modelle, Kooperationen und intelligente Zusammenschlüsse.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=49",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7262,
+          "instrument": 7203,
+          "beschreibung": "Dokumentationspflichten abbauen, Arbeitsalltag digital unterstützen, Leitungskräfte entlasten.",
+          "ursachen_ids": [1702],
+          "zitat": "Dafür werden wir überbordende Dokumentationspflichten abbauen, den Arbeitsalltag digital unterstützen und Leitungskräfte stärker entlasten.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=49",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7263,
+          "instrument": 7206,
+          "beschreibung": "Kindertagespflege durch faire Vergütung, Beratung und Sachkostenförderung stärken.",
+          "ursachen_ids": [1701, 1702],
+          "zitat": "Wir stärken Tagesmütter und -väter mit fairer Vergütung, Beratung und angemessener Sachkostenförderung. Das Wunsch- und Wahlrecht der Eltern bleibt dabei erhalten.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=49",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7264,
+          "instrument": 7181,
+          "beschreibung": "Kitas bedarfsgerecht ausbauen und sanieren, flexible Öffnungszeitenmodelle fördern.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir fördern den bedarfsgerechten Ausbau und die Sanierung von Kitas, insbesondere im ländlichen Raum. Flexible Öffnungszeitenmodelle sollen helfen, Familie und Beruf besser zu vereinbaren.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=50",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7265,
+          "instrument": 7220,
+          "beschreibung": "Zusätzliche Personalmittel über „Kita STABIL“ bereitstellen und das Programm über 2028 hinaus fortsetzen.",
+          "ursachen_ids": [1701, 1702],
+          "zitat": "Mit Kita STABIL werden zusätzliche Personalmittel bereitgestellt, um Fachkräfte zu entlasten und das Kita-Netz insbesondere im ländlichen Raum zu sichern. Wir werden dieses Programm auch über 2028 hinaus fortsetzen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=27",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7266,
+          "instrument": 7184,
+          "beschreibung": "Flexible Öffnungszeiten von Kitas bis in Randzeiten ausbauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Berufstätige Eltern brauchen bedarfsgerechte Öffnungszeiten. Gerade vor dem Hintergrund des Fachkräftemangels werden Kitas mit flexiblen Öffnungszeiten auch in Randzeiten benötigt. Deren Ausbau unterstützen wir.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7267,
+          "instrument": 7229,
+          "beschreibung": "Rechtsanspruch auf bis zu zehn Stunden Betreuung von Geburt bis zum 14. Lebensjahr aufrechterhalten.",
+          "ursachen_ids": [1701],
+          "zitat": "Der Rechtsanspruch auf bis zu zehn Stunden Betreuung von Geburt bis zum 14. Lebensjahr ist nicht verhandelbar.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=27",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7268,
+          "instrument": 7194,
+          "beschreibung": "Tatsächlichen Personalschlüssel in Kitas schrittweise verbessern.",
+          "ursachen_ids": [1703],
+          "zitat": "Der tatsächliche Personalschlüssel in der Arbeit mit den Kindern wird schrittweise verbessert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7269,
+          "instrument": 7205,
+          "beschreibung": "Kitas mit besonderen sozialen Herausforderungen zusätzlich unterstützen.",
+          "ursachen_ids": [1702],
+          "zitat": "Kitas mit besonderen sozialen Herausforderungen erhalten zusätzliche Unterstützung.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7270,
+          "instrument": 7211,
+          "beschreibung": "Kurzfristige Entlastung von Eltern mit mehreren Kindern bei den Betreuungskosten sichern.",
+          "ursachen_ids": [1705],
+          "zitat": "Kurzfristig wird die Entlastung von Eltern mit mehreren Kindern gesichert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7271,
+          "instrument": 7183,
+          "beschreibung": "Nachhaltige kommunale Kitaplanung finanzieren.",
+          "ursachen_ids": [1701],
+          "zitat": "Dafür ist eine nachhaltige kommunale Kitaplanung vonnöten, die wir finanzieren wollen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7272,
+          "instrument": 7181,
+          "beschreibung": "Programm „HeimatKita“: wohnortnahe Betreuung zusichern und Kleinst-Kitas unterstützen.",
+          "ursachen_ids": [1701],
+          "zitat": "Mit einem Programm „HeimatKita“ soll das Land ein Versprechen für jeden Ort im Land geben: Die nächste Kindertagesbetreuung ist entweder in derselben Ortschaft oder maximal 15 Minuten entfernt! Mit dem Programm werden auch Kleinst-Kitas finanziell, personell und organisatorisch vom Land unterstützt.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7273,
+          "instrument": 7220,
+          "beschreibung": "Befristete Personalsicherung durch „Kita STABIL“ in eine langfristige strukturelle Verbesserung überführen.",
+          "ursachen_ids": [1702],
+          "zitat": "Mit dem Programm „Kita STABIL“ sichert das Land aktuell das Personal in den Kitas bis 2028 auch bei sinkenden Kinderzahlen. Nach der Landtagswahl ist diese mittelfristige Lösung in eine langfristige und strukturelle Verbesserung der Personalsituation zu überführen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7274,
+          "instrument": 7205,
+          "beschreibung": "Mindestpersonalschlüssel anheben, Sonderförderung für Kitas mit besonderen Bedarfen und Kita-Sozialarbeit ausbauen.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Dafür wollen wir den Mindestpersonalschlüssel anheben, die zielgenaue Sonderförderung für Kitas mit besonderen Bedarfen ausbauen und insbesondere die Kitasozialarbeit fördern.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7275,
+          "instrument": 7198,
+          "beschreibung": "Bezahlung und Arbeitsbedingungen für Erzieher*innen verbessern, von Bürokratie entlasten.",
+          "ursachen_ids": [1702],
+          "zitat": "Dazu gehören auch eine bessere Bezahlung und attraktive Arbeitsbedingungen für Erzieher*innen sowie die Entlastung von bürokratischen Aufgaben, damit mehr Zeit für die pädagogische Arbeit mit den Kindern bleibt.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7276,
+          "instrument": 7201,
+          "beschreibung": "Erzieher*innen im Anerkennungsjahr unabhängig von der Trägerschaft angemessen vergüten.",
+          "ursachen_ids": [1702],
+          "zitat": "Erzieher*innen im Anerkennungsjahr leisten wertvolle Arbeit und sollen unabhängig von der Trägerschaft angemessen vergütet werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7277,
+          "instrument": 7211,
+          "beschreibung": "Beitragsermäßigung für Mehrkinderfamilien dauerhaft sichern, Modell zur sozialen Staffelung der Kitabeiträge erarbeiten.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir sichern die Beitragsermäßigung für Mehrkinderfamilien dauerhaft ab, um Familien finanziell zu entlasten und allen Kindern gleiche Zugänge zu frühkindlicher Bildung zu ermöglichen. Das Land soll ein Modell zur sozialen Staffelung von Kitabeiträgen erarbeiten.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=57",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7278,
+          "instrument": 7184,
+          "beschreibung": "Flexible Öffnungszeiten am tatsächlichen Bedarf der Familien ausrichten.",
+          "ursachen_ids": [1701],
+          "zitat": "Gleichzeitig müssen Kitas so organisiert sein, dass sie zum Alltag der Familien passen – mit flexiblen Öffnungszeiten nach tatsächlichem Bedarf.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=23",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7279,
+          "instrument": 7184,
+          "beschreibung": "Landesmodellprojekt für Gemeinschaftsbüros mit Kinderbetreuung und mobile Betreuungsreserven.",
+          "ursachen_ids": [1701, 1704],
+          "zitat": "Wir starten ein landesweites Modellprojekt zur Förderung von „Gemeinschaftsbüros mit Kinderbetreuung“ und mobilen Betreuungsreserven.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=24",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7280,
+          "instrument": 7184,
+          "beschreibung": "Kurzfristig einspringende Betreuungszusammenschlüsse für Zeiten außerhalb der üblichen Öffnungszeiten unterstützen.",
+          "ursachen_ids": [1701, 1704],
+          "zitat": "Zudem unterstützen wir den Aufbau von Betreuungszusammenschlüssen, die kurzfristig und unbürokratisch einspringen, wenn Arbeitszeiten außerhalb der üblichen Öffnungszeiten von Kindertagesstätten liegen – etwa bei Schichtarbeit oder im ländlichen Raum.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=24",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7281,
+          "instrument": 7200,
+          "beschreibung": "Erzieherinnen und Erzieher entsprechend ausbilden und von Dokumentationspflichten entlasten.",
+          "ursachen_ids": [1702],
+          "zitat": "Erzieher müssen hierfür entsprechend ausgebildet und von bürokratischen Dokumentationspflichten entbunden werden, um sich ihren Kernaufgaben widmen zu können.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=24",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7282,
+          "instrument": 7205,
+          "beschreibung": "Betreuungsschlüssel an den Förderbedarf anpassen und unterstützendes Personal einsetzen.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Zudem fordern wir eine weitere Anpassung des Betreuungsschlüssels […] Dabei wollen wir dafür sorgen, dass nicht nur Fachkräfte, sondern auch unterstützendes Personal eingesetzt werden.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=25",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7283,
+          "instrument": 7211,
+          "beschreibung": "Geschwisterkindregelung bei den Elternbeiträgen ändern, ohne sie abzuschaffen.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir wollen Fehlanreize in der Geschwisterkindregelung auflösen, ohne diese abzuschaffen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=25",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7284,
+          "instrument": 7209,
+          "beschreibung": "Krippen und Kindergärten ab dem ersten Kind mit dauerhaft gesicherter Landesfinanzierung kostenfrei machen.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir werden Krippen und Kindergärten mit einer dauerhaft auf Landesebene gesicherten Finanzierung ab dem ersten Kind kostenlos machen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=18",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7285,
+          "instrument": 7226,
+          "beschreibung": "Uneingeschränkten Rechtsanspruch auf zehn Stunden Betreuung täglich in Kindertageseinrichtungen schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "jedes Kind einen uneingeschränkten Rechtsanspruch auf eine ganztägige Betreuung in Kindertageseinrichtungen von 10 Stunden hat",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7286,
+          "instrument": 7205,
+          "beschreibung": "Multiprofessionelle Teams in Kitas flächendeckend aufbauen und die nötigen personellen und finanziellen Ressourcen sichern.",
+          "ursachen_ids": [1702],
+          "zitat": "Für den flächendeckenden Auf- und Ausbau multiprofessioneller Teams werden wir: […] die benötigten finanziellen und personellen Ressourcen für die Umsetzung der Konzeption sicherstellen",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=27",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7287,
+          "instrument": 7193,
+          "beschreibung": "Personalschlüssel auf 1:3 in Krippen und 1:7,5 in Kindergärten verbessern.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "die Personalschlüssel entsprechend den wissenschaftlichen Empfehlungen auf 1:3 in der Krippe und auf 1:7,5 im Kindergarten verbessert werden",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7288,
+          "instrument": 7206,
+          "beschreibung": "Für die Kindertagespflege Leistungs-, Entgelt- und Qualitätsvereinbarungen mit den Jugendämtern abschließen.",
+          "ursachen_ids": [1702],
+          "zitat": "für die Kindertagespflege Leistungs-, Entgelt- und Qualitätsvereinbarungen mit den Jugendämtern abgeschlossen werden, um verlässliche Beschäftigungsperspektiven zu schaffen und die Arbeitsbedingungen zu verbessern",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7289,
+          "instrument": 7209,
+          "beschreibung": "Bildung in Kindertageseinrichtungen für alle Eltern beitragsfrei machen.",
+          "ursachen_ids": [1705],
+          "zitat": "die Bildung in Kindertageseinrichtungen für alle Eltern beitragsfrei wird",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7290,
+          "instrument": 7217,
+          "beschreibung": "Kostenlose Mittagsversorgung für Kinder in Kitas und Kindertagespflege.",
+          "ursachen_ids": [1705],
+          "zitat": "alle Kinder in Kitas und in der Tagespflege eine kostenlose Mittagsversorgung erhalten",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7291,
+          "instrument": 7214,
+          "beschreibung": "Finanzierung an den tatsächlichen Personalkosten ausrichten; Elternbeiträge und Mehrkosten besserer Personalschlüssel vollständig vom Land finanzieren.",
+          "ursachen_ids": [1702, 1703, 1705],
+          "zitat": "ein neues transparentes Finanzierungssystem eingeführt wird, das sich an den tatsächlichen Personalkosten orientiert […] die bisherigen Elternbeiträge sowie die höheren Kosten durch bessere Personalschlüssel werden dabei vollständig durch das Land finanziert",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7292,
+          "instrument": 7181,
+          "beschreibung": "Alle Kita-Standorte im Land erhalten.",
+          "ursachen_ids": [1701],
+          "zitat": "den Erhalt aller Kita-, Schul- und Hortstandorte im Land",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=46",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "massnahmen": [
+        {
+          "id": 7293,
+          "instrument": 7200,
+          "beschreibung": "Ausbildungskapazitäten für Erzieher ausweiten und Studienplätze in der Kindheitspädagogik ausbauen.",
+          "ursachen_ids": [1702],
+          "zitat": "Ausbildungskapazitäten für staatlich anerkannte Erzieher müssen deutlich ausgeweitet und Studienplätze in der Kindheitspädagogik ausgebaut werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=46",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7294,
+          "instrument": 7198,
+          "beschreibung": "Ausbildungs- und Arbeitsbedingungen im frühkindlichen Bereich durch Bezahlung, verlässliche Arbeitszeiten und Ausbildungsvergütung aufwerten.",
+          "ursachen_ids": [1702],
+          "zitat": "Ausbildungs- und Arbeitsbedingungen im frühkindlichen Bereich müssen aufgewertet werden – durch angemessene Bezahlung, verlässliche Arbeitszeiten und eine faire Vergütung der Auszubildenden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=46",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7295,
+          "instrument": 7194,
+          "beschreibung": "Personal-Kind-Betreuungsschlüssel stärken.",
+          "ursachen_ids": [1703],
+          "zitat": "So könnte jetzt in den Kindertagesstätten der Personal-Kind-Betreuungsschlüssel zugunsten einer besseren Bildungsarbeit und Betreuungsqualität gestärkt werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=46",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7296,
+          "instrument": 7209,
+          "beschreibung": "Beitragsfreie Kitas einführen.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir setzen uns deshalb für beitragsfreie Kitas in Sachsen-Anhalt ein.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=46",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7297,
+          "instrument": 7180,
+          "beschreibung": "Planungs- und Genehmigungsverfahren für Kitas beschleunigen.",
+          "ursachen_ids": [1701],
+          "zitat": "Planungs- und Genehmigungsverfahren für Schulen, Kitas, Feuerwehr, Straßen …, Verwaltungsgebäude und digitale Infrastruktur werden beschleunigt.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=42",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7298,
+          "instrument": 7231,
+          "beschreibung": "Kindertagesbetreuung für Hochschulangehörige schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "Dazu … gehören eine auf die spezifischen Bedürfnisse von Hochschulangehörigen … zugeschnittene Kindertagesbetreuung, Still- und Wickelräume, Spielbereiche sowie … Unterstützungs- und Beratungsangebote durch Familien-Service-Büros.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=68",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7299,
+          "instrument": 7194,
+          "beschreibung": "Freiwerdende Ressourcen für bessere Betreuungsschlüssel einsetzen.",
+          "ursachen_ids": [1703],
+          "zitat": "Deshalb … werden freiwerdende Ressourcen weitgehend für eine Verbesserung der … Betreuungsschlüssel und spezifische Fördermaßnahmen eingesetzt.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7300,
+          "instrument": 7194,
+          "beschreibung": "Mit relevanten Akteuren einen Perspektivplan zur Verbesserung der Erzieher-Kind-Relation entwickeln.",
+          "ursachen_ids": [1703],
+          "zitat": "Mit den gesellschaftlich relevanten Akteuren werden wir einen … Perspektivplan für die Verbesserung der Erzieher-Kind-Relation entwickeln.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7301,
+          "instrument": 7205,
+          "beschreibung": "Multiprofessionelle Teams mit spezialisierten Fachkräften in Kindergärten vorschreiben.",
+          "ursachen_ids": [1702],
+          "zitat": "Für eine bessere Lernbetreuung im Kindergarten werden multiprofessionelle … Teams mit spezialisierten Fachkräften aus Pädagogik, Sprachförderung, Musik/Kunst …, Bewegung/Motorik und MINT-Bildung vorgeschrieben, um eine frühkindliche … alltagsintegrierte Bildung in diesen Bereichen zu gewährleisten.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7302,
+          "instrument": 7221,
+          "beschreibung": "Mittel aus dem Kita-Qualitätsgesetz in qualitätssteigernde Maßnahmen, insbesondere pädagogische Leitungszeit, investieren.",
+          "ursachen_ids": [1702],
+          "zitat": "Die Mittel aus dem KiTa-Qualitätsgesetz investieren wir ausschließlich in … qualitätssteigernde Maßnahmen, insbesondere in pädagogische Leitungszeit und … spezifische Fördermaßnahmen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7303,
+          "instrument": 7204,
+          "beschreibung": "Pädagogische Teams durch Hauswirtschafts- und Verwaltungskräfte entlasten.",
+          "ursachen_ids": [1702],
+          "zitat": "Wir entlasten pädagogische Teams durch den Einsatz … von Hauswirtschafts- und Verwaltungskräften.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7304,
+          "instrument": 7183,
+          "beschreibung": "Runde Tische mit den Kommunen je Landkreis und kreisfreier Stadt für verlässliche Bedarfsplanung einrichten.",
+          "ursachen_ids": [1701],
+          "zitat": "Für eine verlässliche Bedarfsplanung und sichere Arbeitsplatzperspektiven richten wir mit den Kommunen je Landkreis und kreisfreier Stadt Runde Tische ein.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=4",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7305,
+          "instrument": 7196,
+          "beschreibung": "Gruppengröße in Krippen ab 2027 auf fünf, im Kindergarten ab 2028 auf 13 Kinder je Fachkraft senken.",
+          "ursachen_ids": [1703],
+          "zitat": "In der Krippe verkleinern wir die Gruppengröße zum 1. Januar 2027 von 6 auf 5 Kinder je Fachkraft […]. Ab dem 1. Januar 2028 soll die Gruppengröße im Kindergarten auf 13 Kinder je Fachkraft […] gesenkt werden.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=4",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7306,
+          "instrument": 7205,
+          "beschreibung": "Multiprofessionelle Teams schrittweise als Grundausstattung an Kitas einführen, beginnend bei Kitas mit besonderen Herausforderungen.",
+          "ursachen_ids": [1702],
+          "zitat": "Dazu wollen wir schrittweise multiprofessionelle Teams an Kitas […] als Grundausstattung einführen und ausbauen – beginnend mit Kitas und Schulen, die besondere Herausforderungen beim Lernen zu meistern haben.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=67",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7307,
+          "instrument": 7209,
+          "beschreibung": "Beitragsfreiheit der Kitas fortführen.",
+          "ursachen_ids": [1705],
+          "zitat": "Die Kindertagesstätte bleibt beitragsfrei. Garantiert.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=64",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7308,
+          "instrument": 7179,
+          "beschreibung": "Anspruch auf einen vollen Ganztagsplatz für alle Kinder einführen.",
+          "ursachen_ids": [1701],
+          "zitat": "Darum treten wir auch dafür ein, dass alle Kinder das Recht auf einen vollen Ganztagsplatz erhalten.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=41",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7309,
+          "instrument": 7184,
+          "beschreibung": "Landesweites Modellprojekt mit flexibler Kinderbetreuung für junge Eltern.",
+          "ursachen_ids": [1701],
+          "zitat": "Ein landesweites Modellprojekt umsetzen, das junge Eltern durch flexible Kinderbetreuung dabei unterstützt, ihre Erwerbsarbeit an ihre Lebenssituation anzupassen, und zwar so, wie sie es wollen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=84",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7310,
+          "instrument": 7194,
+          "beschreibung": "Betreuungsschlüssel deutlich verbessern und sinkende Geburtenzahlen für kleinere Gruppen statt Personalabbau nutzen.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Wir verbessern die Betreuungsschlüssel deutlich und nutzen sinkende Geburtenzahlen für kleinere Gruppen statt für Personalabbau.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=41",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7311,
+          "instrument": 7206,
+          "beschreibung": "Kindertagespflegepersonen, die Fachstandards erfüllen, entsprechend bezahlen.",
+          "ursachen_ids": [1702],
+          "zitat": "Kindertagespflegepersonen, die Fachstandards erfüllen, dementsprechend bezahlen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=41",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7312,
+          "instrument": 7209,
+          "beschreibung": "Beitragsfreie Kita beibehalten.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir stehen zur beitragsfreien Kita.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=41",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7313,
+          "instrument": 7179,
+          "beschreibung": "Bestehenden Betreuungsanspruch überall verlässlich erfüllen und passgenaue Angebote sichern.",
+          "ursachen_ids": [1701, 1704],
+          "zitat": "keine neuen pauschalen Vollzeitversprechen abgeben, sondern den bestehenden Rechtsanspruch endlich überall verlässlich erfüllen und passgenaue Angebote statt Einheitslösungen sichern.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=82",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7314,
+          "instrument": 7182,
+          "beschreibung": "Landesfinanzierung für Kita und Kindertagespflege an den tatsächlichen Bedarf anpassen.",
+          "ursachen_ids": [1701],
+          "zitat": "die Finanzierung des Landes für die frühkindliche Betreuung in Kitas und Kindertagespflegestellen überprüfen und an die tatsächlichen Notwendigkeiten anpassen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7315,
+          "instrument": 7182,
+          "beschreibung": "Private Träger und Betriebskindergärten bei Einhaltung der Qualitätsstandards öffentlich fördern.",
+          "ursachen_ids": [1701],
+          "zitat": "Auch private Träger und Betriebskindergärten sollen staatliche Förderung erhalten, wenn sie die Qualitätsstandards einhalten.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=83",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7316,
+          "instrument": 7206,
+          "beschreibung": "Kindertagespflege rechtssicher stärken, Bürokratie abbauen, verlässliche Rahmenbedingungen schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "die Kindertagespflege rechtssicher stärken, Bürokratie abbauen und die Rahmenbedingungen so verbessern, dass Tagespflegepersonen verlässlich planen und arbeiten können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=83",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7317,
+          "instrument": 7206,
+          "beschreibung": "Tageseltern angemessen vergüten und Betreuung über das dritte Lebensjahr hinaus ermöglichen.",
+          "ursachen_ids": [1701],
+          "zitat": "die Arbeit der Tageseltern angemessen vergüten und ihnen ein Betreuungsangebot auch über das 3. Lebensjahr hinaus ermöglichen",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=83",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7318,
+          "instrument": 7194,
+          "beschreibung": "Fachkraft-Kind-Relation stufenweise, evidenzbasiert und gegenfinanziert verbessern.",
+          "ursachen_ids": [1703],
+          "zitat": "Qualitätsverbesserungen bei der Fachkraft-Kind-Relation stufenweise, evidenzbasiert und gegenfinanziert umsetzen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=82",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7319,
+          "instrument": 7221,
+          "beschreibung": "Zusätzliche Mittel vorrangig in Personal, Sprachförderung und Verlässlichkeit investieren.",
+          "ursachen_ids": [1702, 1704],
+          "zitat": "Qualität vor pauschaler Subventionierung setzen. Zusätzliche Mittel wollen wir prioritär in Personal, Sprachförderung und Verlässlichkeit investieren.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=82",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7320,
+          "instrument": 7200,
+          "beschreibung": "Mehr Fachkräfte durch niedrigere Ausbildungshürden, stärkere Praxisanteile und bedarfsgerechte Ausbildungskapazitäten gewinnen.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "mehr Fachkräfte gewinnen, indem wir Ausbildungshürden senken, Praxisanteile stärken und Ausbildungskapazitäten bedarfsgerecht ausbauen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=82",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7321,
+          "instrument": 7200,
+          "beschreibung": "Erzieherausbildung dual weiterentwickeln, weitere pädagogische und therapeutische Fachkräfte flexibler in Kitas einsetzen.",
+          "ursachen_ids": [1702],
+          "zitat": "Kernpunkt ist eine duale Ausbildung. Außerdem sollen Fachkräfte aus der Logopädie, Ergotherapie sowie an Hochschulen ausgebildete Kinderpädagoginnen und -pädagogen stärker und flexibler in den Kitas eingesetzt werden können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=82",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7322,
+          "instrument": 7198,
+          "beschreibung": "Beschäftigte von Kindertageseinrichtungen bei gleicher Qualifikation und Leistung gleich bezahlen.",
+          "ursachen_ids": [1702],
+          "zitat": "dafür sorgen, dass Beschäftigte von Kindertageseinrichtungen bei gleicher Qualifikation und Leistung auch gleich bezahlt werden.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=83",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7323,
+          "instrument": 7203,
+          "beschreibung": "Kita-Leitungen durch bessere Arbeitsbedingungen, weniger Berichtspflichten, digitale Verwaltung und klare Zuständigkeiten stärken.",
+          "ursachen_ids": [1702],
+          "zitat": "Kita-Leitungen durch Verbesserung bei den Arbeitsbedingungen, weniger Berichtspflichten, digitale Verwaltungsprozesse und klare Zuständigkeiten stärken.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=83",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7324,
+          "instrument": 7195,
+          "beschreibung": "Betreuungsschlüssel in Krippen auf 1:4 und in Kindergärten auf 1:10 verbessern.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "die deutliche Verbesserung der Betreuungsquote auf 1:4 in der Krippe, 1:10 im Kindergarten",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=20",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7325,
+          "instrument": 7198,
+          "beschreibung": "Erzieher angelehnt an den TVöD vergüten und von Dokumentationspflichten entlasten.",
+          "ursachen_ids": [1702],
+          "zitat": "Sie müssen ein Arbeitsumfeld vorfinden, in dem eine an den TVöD angelehnte Vergütung garantiert ist und sie nicht mit ausufernden Dokumentationspflichten konfrontiert sind.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=20",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7326,
+          "instrument": 7209,
+          "beschreibung": "Beitragsfreie Kitas erhalten.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir stehen zur beitragsfreien Kita als wichtige Familienentlastung",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=19",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7327,
+          "instrument": 7206,
+          "beschreibung": "Kindertagespflegepersonen stärker unterstützen.",
+          "ursachen_ids": [1701],
+          "zitat": "Dazu leisten neben den Kitas auch die Kindertagespflegepersonen einen wichtigen Beitrag, die wir stärker als bisher unterstützen werden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=20",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7328,
+          "instrument": 7209,
+          "beschreibung": "Beitragsfreiheit in Kitas erhalten.",
+          "ursachen_ids": [1705],
+          "zitat": "Die Beitragsfreiheit in der Kita erhalten",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=5",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7329,
+          "instrument": 7179,
+          "beschreibung": "Garantie für eine wohnortnahe Tagesbetreuung für jedes Kind.",
+          "ursachen_ids": [1701],
+          "zitat": "Eine Garantie für eine wohnortnahe Tagesbetreuung für jedes Kind.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=5",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7330,
+          "instrument": 7195,
+          "beschreibung": "Gruppengröße in der Krippe schrittweise auf vier Kinder je Gruppe senken.",
+          "ursachen_ids": [1703],
+          "zitat": "schrittweise Absenkung der Gruppengröße in der Krippe auf je vier Kinder pro Gruppe",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=5",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7331,
+          "instrument": 7184,
+          "beschreibung": "Arbeitszeiten in Kitas und Kindertagespflege an Arbeitswege und -zeiten der Eltern anpassen.",
+          "ursachen_ids": [1701],
+          "zitat": "Arbeitszeiten in Kitas und Kindertagespflege an Arbeitswege und -zeiten der Eltern anpassen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=15",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7332,
+          "instrument": 7198,
+          "beschreibung": "Erzieherberuf tariflich aufwerten, Arbeitsbedingungen verbessern und verlässliche Personalausstattung sichern.",
+          "ursachen_ids": [1702],
+          "zitat": "Tarifliche und […] Aufwertung des Erzieherberufes, verbunden mit besseren Arbeitsbedingungen und verlässlicher […].",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7333,
+          "instrument": 7194,
+          "beschreibung": "Betreuungsschlüssel verbessern, damit mehr Zeit für individuelle Förderung bleibt.",
+          "ursachen_ids": [1703],
+          "zitat": "Verbesserung des Betreuungsschlüssels, um mehr Zeit für individuelle Förderung der Kinder zu ermöglichen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7334,
+          "instrument": 7209,
+          "beschreibung": "Beitragsfreie Kita sichern und Kostenbeteiligung des Landes erhöhen.",
+          "ursachen_ids": [1705],
+          "zitat": "Beitragsfreie Kita sichern, bei […] höherer Kostenbeteiligung des Landes, um Kommunen zu entlasten.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=45",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7335,
+          "instrument": 7184,
+          "beschreibung": "Flexiblere und längere Betreuungsangebote ausbauen, etwa Betriebskindergärten und zusätzliche Tagesmütter und -väter.",
+          "ursachen_ids": [1701],
+          "zitat": "Gleichzeitig sorgen wir für eine solide Finanzierung sowie den Ausbau von flexibleren und längeren Betreuungsangeboten, z.B. beim bedarfsgerechten Ausbau von Betriebskindergärten und neuen Tagesmüttern und -vätern.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=108",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7336,
+          "instrument": 7205,
+          "beschreibung": "Kita-Qualitätsoffensive mit Schwerpunkt Sprachbildung und Qualifizierung des pädagogischen Personals.",
+          "ursachen_ids": [1702],
+          "zitat": "Wir werden eine Qualitätsoffensive für Kitas mit einem klaren Schwerpunkt auf Sprachbildung und der Qualifizierung des pädagogischen Personals starten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=108",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7337,
+          "instrument": 7205,
+          "beschreibung": "Multiprofessionelle Strukturen und Kita-Sozialarbeit stärken.",
+          "ursachen_ids": [1702],
+          "zitat": "Auch multiprofessionelle Strukturen und die Kita-Sozialarbeit werden wir weiter stärken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=108",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7338,
+          "instrument": 7185,
+          "beschreibung": "24-Stunden-Kitas mit Betreuung zu Rand- und Nachtzeiten ausbauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Speziell für diese Berufsgruppen setzen wir uns für den Ausbau von sogenannten 24-Stunden-Kitas ein, die auch eine Betreuung zu Rand- und Nachtzeiten möglich machen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=108",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7339,
+          "instrument": 7184,
+          "beschreibung": "Flexible, kostenfreie Betreuungsangebote, insbesondere zu Randzeiten.",
+          "ursachen_ids": [1705],
+          "zitat": "Flexible und kostenfreie Betreuungsangebote, insbesondere in Randzeiten, sollen die Vereinbarkeit von Familie und Beruf verbessern.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=108",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7340,
+          "instrument": 7181,
+          "beschreibung": "Sanierung und Neubau von Kitas in den Kiezen als Investitionsschwerpunkt des Sondervermögens.",
+          "ursachen_ids": [1701],
+          "zitat": "Viertens Sanierung und Neubau von Schulen, Kitas und sozialer Infrastruktur in den Kiezen (→ siehe Kapitel DIE SCHULBAUOFFENSIVE FORTSETZEN).",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7341,
+          "instrument": 7181,
+          "beschreibung": "Finanzierung landeseigener Kita-Betriebe mit Investitionsmitteln stabilisieren, wohnortnahes Angebot in allen Bezirken.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir stabilisieren ihre Finanzierung durch zusätzliche Investitionsmittel, berücksichtigen dabei schwankende Geburtenrate und ermöglichen mit den Eigenbetrieben ein wohnortnahes Kita-Angebot in allen Bezirken.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7342,
+          "instrument": 7194,
+          "beschreibung": "Betreuungsschlüssel weiter verbessern und mittelbare pädagogische Arbeit durch mehr Personalzeit stärken.",
+          "ursachen_ids": [1703],
+          "zitat": "Wir verbessern deshalb den Betreuungsschlüssel in den Kitas weiter – spürbar im Alltag. […] Dazu verbessern wir die mittelbare pädagogische Arbeit mit einer deutlichen Erhöhung im Personalschlüssel.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7343,
+          "instrument": 7194,
+          "beschreibung": "Personalschlüssel nur nach tatsächlich anwesendem Personal berechnen; Urlaub, Krankheit und Fortbildung zählen nicht mit.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Künftig berechnen wir den Schlüssel nur nach dem Personal, das tatsächlich vor Ort ist. Urlaub, Krankheit oder Fortbildung zählen nicht mit.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7344,
+          "instrument": 7205,
+          "beschreibung": "Kitas mit zusätzlichem Fachpersonal für Sprachbildung stärken und den Personalzuschlag für Sprachförderung wieder einführen.",
+          "ursachen_ids": [1702],
+          "zitat": "Deshalb wollen wir alle Kitas gezielt durch zusätzliches Fachpersonal stärken, insbesondere für die alltagsintegrierte Sprachbildung. […] Für die Sprachförderung führen wir den Personalzuschlag „nicht deutscher Herkunftssprache“ (ndH) wieder ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7345,
+          "instrument": 7205,
+          "beschreibung": "Personalzuschlag für Integrationskitas erhöhen.",
+          "ursachen_ids": [1702],
+          "zitat": "Integrationskitas stärken wir durch eine Erhöhung des Personalzuschlages.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7346,
+          "instrument": 7189,
+          "beschreibung": "Allen Familien zum ersten Geburtstag automatisch einen Kitagutschein mit Zugang zu Beratung und Kitaplatzvermittlung zusenden.",
+          "ursachen_ids": [1701],
+          "zitat": "In Zukunft sollen alle Familien zum ersten Geburtstag ihres Kindes automatisch einen Kitagutschein mit mehrsprachigem Begleitbrief erhalten. Ein beiliegender QR-Code führt direkt zu wohnortnahen Beratungsangeboten und Terminen zu Kitaplatzvermittlung und Beratungen – so werden Informationen und Zugänge leicht verständlich und für alle real nutzbar.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=182",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7347,
+          "instrument": 7190,
+          "beschreibung": "Kitaplätze transparent und diskriminierungsfrei vergeben.",
+          "ursachen_ids": [1701],
+          "zitat": "Die Vergabe der Plätze muss transparent und diskriminierungsfrei erfolgen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=182",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7348,
+          "instrument": 7184,
+          "beschreibung": "Betriebskitas unterstützen und ergänzende Betreuung außerhalb der Öffnungszeiten für Alleinerziehende und Schichtarbeitende ausweiten.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir wollen Arbeitgeber*innen unterstützen, wenn sie Betriebskitas eröffnen, und Eltern besser über die Angebote der ergänzenden Betreuung außerhalb von Kita- und Hortöffnungszeiten informieren; diese wollen wir insbesondere für Alleinerziehende und Eltern in Schichtarbeit ausweiten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=110",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7349,
+          "instrument": 7181,
+          "beschreibung": "Kita-Platzausbau bei der Planung neuer Unterbringungsstandorte berücksichtigen.",
+          "ursachen_ids": [1701],
+          "zitat": "Die Senatskommission Unterbringung soll sicherstellen, dass neue Standorte zügig identifiziert und beschlossen werden […] insbesondere beim Ausbau von Kita- und Schulplätzen […].",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=146",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7350,
+          "instrument": 7194,
+          "beschreibung": "Betreuungsschlüssel in Kitas weiter verbessern.",
+          "ursachen_ids": [1703],
+          "zitat": "Deshalb wollen wir den Betreuungsschlüssel in Kitas weiter verbessern.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=182",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7351,
+          "instrument": 7180,
+          "beschreibung": "Landesweites Fast-Track-Genehmigungsverfahren mit Bearbeitungsgarantie, um Verwaltungshindernisse beim Kita-Ausbau abzubauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir wollen eine bezirksübergreifende, vergleichbare Verwaltungsorganisationsstruktur, ein „Fast-Track-System“ auf Landesebene, in dem nur noch ein Genehmigungsantrag gestellt werden muss, der mit einer kurzzeitigen Bearbeitungsgarantie versehen ist.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7352,
+          "instrument": 7182,
+          "beschreibung": "Freie Kitaträger bei der Finanzierung den landeseigenen Kitas gleichstellen.",
+          "ursachen_ids": [1701],
+          "zitat": "Die freien Träger stellen knapp 80 Prozent der Kitaplätze in Berlin und müssen daher auch in der Finanzierung den landeseigenen Kitas gleichgestellt werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7353,
+          "instrument": 7230,
+          "beschreibung": "Freien Kitaträgern Beiträge für zusätzliche pädagogische Leistungen außerhalb des Kitagutscheins ermöglichen.",
+          "ursachen_ids": [1705],
+          "zitat": "Gleichzeitig wollen wir es Kitas in freier Trägerschaft ermöglichen, für zusätzliche pädagogische Leistungen, die nicht über den Kitagutschein gedeckt sind, Beiträge zu erheben.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7354,
+          "instrument": 7198,
+          "beschreibung": "Sonderqualifikationen pädagogischer Fachkräfte in Kitas zusätzlich vergüten.",
+          "ursachen_ids": [1702],
+          "zitat": "Sonderqualifikationen von pädagogischem Fachpersonal in Kitas, wie beispielsweise sprachpädagogische Zusatzausbildungen, sollen zusätzlich vergütet werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7355,
+          "instrument": 7194,
+          "beschreibung": "Mittelbare pädagogische Arbeit vollständig anerkennen und in die Personalschlüssel einrechnen.",
+          "ursachen_ids": [1703],
+          "zitat": "Wir wollen erreichen, dass die mittelbare Arbeit (u. a. Diagnostik, Beobachtungen, Elterngespräche) der pädagogischen Fachkräfte auch vollständig anerkannt wird und vollumfänglich in die Personalschlüssel einfließt.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=6",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7356,
+          "instrument": 7194,
+          "beschreibung": "Fachkräftemangel im Erziehungssektor bekämpfen und Betreuungsschlüssel in Berliner Kitas deutlich verbessern.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Wir wollen den Fachkräftemangel im Erziehungssektor bekämpfen und den Betreuungsschlüssel in Berliner Kitas deutlich verbessern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=8",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7357,
+          "instrument": 7189,
+          "beschreibung": "Kitagutschein automatisch mit der Geburtsurkunde ausstellen.",
+          "ursachen_ids": [1701],
+          "zitat": "Es soll automatisch mit dem Ausstellen der Geburtsurkunde auch der Kitagutschein ausgestellt werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=8",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7358,
+          "instrument": 7190,
+          "beschreibung": "Digitale Plattform für Kita- und Schulanmeldungen mit Echtzeit-Anmeldung und Mehrfachanmeldungen schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir werden eine digitale Plattform schaffen, die Anmeldungen für Kitas und Schulen in Echtzeit ermöglicht und Mehrfachanmeldungen berücksichtigt.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=113",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7359,
+          "instrument": 7192,
+          "beschreibung": "Über Anträge auf staatliche Leistungen einschließlich Kitagutscheinen binnen vier Wochen entscheiden und auszahlen.",
+          "ursachen_ids": [1701],
+          "zitat": "Familien sollen staatliche Leistungen wie Kindergeld, Elterngeld und Kitagutscheine schnell und unbürokratisch erhalten. Über Leistungsanträge ist innerhalb von vier Wochen nach vollständiger Antragstellung zu entscheiden und das Geld auszuzahlen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=113",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7360,
+          "instrument": 7184,
+          "beschreibung": "Dauerhaft ausreichend Kita- und Tagespflegeplätze mit flexibleren Öffnungszeiten, Notfallangeboten und 24-Stunden-Kitas schaffen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir wollen dauerhaft ausreichend Kitaplätze bzw. Plätze bei Tagesmüttern und -vätern mit flexibleren Öffnungszeiten schaffen. Dazu gehören Notfallangebote über Nacht oder am Wochenende ebenso wie Angebote für Menschen, die Schichtarbeit leisten, also „24-Stunden-Kitas“.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=113",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7361,
+          "instrument": 7184,
+          "beschreibung": "Kinderbetreuung zu Hause für Menschen im Schichtdienst staatlich unterstützen.",
+          "ursachen_ids": [1701],
+          "zitat": "Für Menschen, die im Schichtdienst arbeiten, soll zudem die Kinderbetreuung zu Hause staatlich unterstützt werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=113",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7362,
+          "instrument": 7184,
+          "beschreibung": "Mobilen Kinderbetreuungsservice für Eltern mit besonderen Arbeitszeiten (MoKiS) deutlich ausbauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Hier wollen wir das Angebot „Mobiler […] Kinderbetreuungsservice für Eltern mit besonderen Arbeitszeiten“ (MoKiS) deutlich ausbauen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=113",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7363,
+          "instrument": 7216,
+          "beschreibung": "Landeserziehungsgeld für Kinder unter drei Jahren in Höhe der vergleichbaren Kosten eines Kita-Platzes einführen.",
+          "ursachen_ids": [1705],
+          "zitat": "Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=59",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7364,
+          "instrument": 7209,
+          "beschreibung": "Kostenfreiheit der Kita beibehalten.",
+          "ursachen_ids": [1705],
+          "zitat": "Wir halten an der Kostenfreiheit für die Kita fest.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=59",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7365,
+          "instrument": 7179,
+          "beschreibung": "Angebot an Kita-Plätzen erhalten und bedarfsgerecht ausbauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir werden das Angebot an Kita-Plätzen erhalten und bedarfsgerecht ausbauen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=60",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7366,
+          "instrument": 7186,
+          "beschreibung": "„Blaulicht“-Kita für Polizei, Feuerwehr und Rettungsdienste schaffen; kleine und mittelgroße Kita-Träger sowie Betriebskindergärten fördern.",
+          "ursachen_ids": [1701],
+          "zitat": "Für Polizei, Feuerwehr und Rettungsdienste werden wir eine „Blaulicht“-Kita schaffen. Wir werden kleine und mittelgroße Kita-Träger sowie Betriebskindergärten fördern.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=60",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7367,
+          "instrument": 7181,
+          "beschreibung": "Bestehende Hochschul-Kitas ausbauen.",
+          "ursachen_ids": [1701],
+          "zitat": "Die bestehenden Maßnahmen zur Familienfreundlichkeit wie Dual-Career-Service, Tenure Track, Hochschul-Kitas sowie Familienbüros müssen ausgebaut werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=37",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7368,
+          "instrument": 7194,
+          "beschreibung": "Betreuungsschlüssel erhöhen und längere Öffnungszeiten für Eltern mit besonderen Arbeitszeiten ermöglichen.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Dabei wollen wir den Betreuungsschlüssel erhöhen und für Eltern mit besonderen Arbeitszeiten längere Öffnungszeiten ermöglichen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=60",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "massnahmen": [
+        {
+          "id": 7369,
+          "instrument": 7193,
+          "beschreibung": "Personalschlüssel verbessern; Ziel sind rechnerisch drei Kinder unter drei Jahren bzw. 7,5 Kinder über drei Jahren je Fachkraft.",
+          "ursachen_ids": [1703],
+          "zitat": "Den Geburtenrückgang werden wir nutzen, um den Personalschlüssel nachhaltig zu verbessern. Unser Ziel ist, dass auf eine Fachkraft rechnerisch drei Kinder unter drei Jahren bzw. 7,5 Kinder über drei Jahren entfallen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=184",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7370,
+          "instrument": 7194,
+          "beschreibung": "Fehlzeiten und mittelbare Arbeitszeiten in der Personalzumessung berücksichtigen; nur ausgebildete Fachkräfte voll auf den Personalschlüssel anrechnen.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Die Fehlzeiten der Fachkräfte aufgrund von Krankheit, Urlaub und Fortbildung müssen in der Personalzumessung realistisch berücksichtigt werden, ebenso die Zeiten für Dokumentation, Elternarbeit und Dienstbesprechungen. Nur ausgebildete Fachkräfte sollen auf den Personalschlüssel einer Kita voll angerechnet werden dürfen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=184",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7371,
+          "instrument": 7205,
+          "beschreibung": "Geltende Personalzuschläge mit Fachwelt und Praxis prüfen, öffnen und verbessern.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "In einem offenen Diskussionsprozess mit Fachwelt und Praxis wollen wir die gültigen Personalzuschläge prüfen, öffnen und verbessern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=184",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7372,
+          "instrument": 7223,
+          "beschreibung": "Gesundheits-, Lärm- und Hitzeschutz in allen Kitas einführen, um das Arbeitsfeld für Fachkräfte attraktiv zu halten.",
+          "ursachen_ids": [1702],
+          "zitat": "Wir setzen uns für einen aktiven Gesundheits- und Lärmschutz sowie Hitzeschutzkonzepte in allen Kitas ein. Nur so bleibt das Arbeitsfeld Kita langfristig für die Fachkräfte attraktiv, das im Kern auf kontinuierlicher Beziehungsarbeit basiert.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=185",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7373,
+          "instrument": 7205,
+          "beschreibung": "Modellprogramm Kita-Sozialarbeit erhalten und ausweiten, mittelfristig für zehn Prozent der Kitakinder, langfristig flächendeckend.",
+          "ursachen_ids": [1702],
+          "zitat": "Wir setzen uns für den Erhalt, die Weiterentwicklung und die mehrstufige Ausweitung des Modelprogramms Kita-Sozialarbeit ein, sodass mittelfristig 10 Prozent der Berliner Kitakinder von ihr profitieren, insbesondere in herausfordernden Lagen. Langfristiges Ziel ist die flächendeckende Verankerung von Kita-Sozialarbeit im Land Berlin sowie ihre Regelfinanzierung.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=185",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7374,
+          "instrument": 7181,
+          "beschreibung": "Bestehende Kita-Plätze durch planvolle Sanierungen sichern.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir werden mit Sanierungen die Plätze im Bestand planvoll sichern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=185",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7375,
+          "instrument": 7183,
+          "beschreibung": "Raum und Personal trotz sinkender Kinderzahlen im Kita-System halten.",
+          "ursachen_ids": [1701, 1702],
+          "zitat": "In Zeiten rückläufiger Kinderzahlen wollen wir mit aller Kraft Kita-Ressourcen wie Raum und Personal im System halten, sodass sie weiterhin den Kindern und Familien dieser Stadt zugutekommen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=186",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7376,
+          "instrument": 7182,
+          "beschreibung": "Anteil der landeseigenen Kita-Betriebe am Platzangebot auf ein Drittel erhöhen.",
+          "ursachen_ids": [1701],
+          "zitat": "Für eine stabile Basis wollen wir die Eigenbetriebe des Landes Berlin stärken und ihren Anteil am gesamten Berliner Kitaplatzangebot auf ein Drittel erhöhen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=186",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7377,
+          "instrument": 7182,
+          "beschreibung": "Eigenanteil der Kitaträger an der Platzfinanzierung schrittweise abschmelzen.",
+          "ursachen_ids": [1701],
+          "zitat": "Wir werden den derzeitigen Eigenanteil der Kitaträger zur Platzfinanzierung von 5 Prozent schrittweise abschmelzen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=186",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7378,
+          "instrument": 7189,
+          "beschreibung": "Allen Familien zum ersten Geburtstag einen verständlichen, mehrsprachigen Kita-Gutschein zusenden und aufsuchende Sozialarbeit zum Abbau von Zugangshürden stärken.",
+          "ursachen_ids": [1701],
+          "zitat": "Jeder Berliner Familie muss zum ersten Geburtstag ihres Kindes der gut verständliche, auch in Leichter Sprache und mehrsprachig verfasste Kita-Gutschein zugehen. Mit einer Stärkung aufsuchender Sozialarbeit im Kiez werden wir Hürden beim Kitazugang senken und dabei gezielt Familienzentren, Arztpraxen, Gemeinschaftsunterkünfte und Stadtteilmütter mit einbinden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=187",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7379,
+          "instrument": 7191,
+          "beschreibung": "Jugendämtern Zugriff auf einen Teil der Kitaplätze geben und das Freihalten von Plätzen finanzieren.",
+          "ursachen_ids": [1701],
+          "zitat": "Uns ist wichtig, dass die Jugendämter ein Zugriffsrecht auf einen bestimmten Prozentsatz von Kitaplätzen haben, um den Bedarfen besonders herausgeforderter Kinder und Familien entsprechen zu können. Das Freihalten einer bestimmten Zahl von Plätzen bei Freien Trägern und in den Eigenbetrieben wollen wir finanzieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=187",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7380,
+          "instrument": 7206,
+          "beschreibung": "Vergütung in der Kindertagespflege so bemessen, dass sie Lebenshaltungskosten und Mieten deckt.",
+          "ursachen_ids": [1701],
+          "zitat": "Nicht nur die Kita, auch Kindertagespflegeeinrichtungen brauchen eine soziale und finanzielle Absicherung. Wir setzen uns hier für eine Vergütung ein, die die tatsächlichen Lebenshaltungskosten und Mieten deckt.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=187",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7381,
+          "instrument": 7207,
+          "beschreibung": "Verbesserten Kita-Betreuungsschlüssel ohne finanzielle Einbußen auf die Kindertagespflege übertragen.",
+          "ursachen_ids": [1703],
+          "zitat": "Der verbesserte Betreuungsschlüssel in Kitas muss ohne finanzielle Einbußen auf Kindertagespflegeeinrichtungen übertragen werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=187",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7382,
+          "instrument": 7205,
+          "beschreibung": "Ausreichend barrierefreie Kitaplätze in Wohnortnähe schaffen und Kitas mit heil-, sozial- und inklusionspädagogischen Fachkräften ausstatten.",
+          "ursachen_ids": [1701, 1702],
+          "zitat": "Hierfür braucht es ausreichend barrierefreie Kitaplätze in Wohnortnähe […] sowie die konsequente Ausstattung aller Kitas mit heil-, sozial- und inklusionspädagogischen Fachkräften.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=188",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7383,
+          "instrument": 7200,
+          "beschreibung": "Gezielt für das Berufsfeld Kita werben und Quereinsteigende bis zum DQR-Niveau 6 qualifizieren.",
+          "ursachen_ids": [1702],
+          "zitat": "Die Linke will gezielt für das Berufsfeld Kita werben. […] Den Quereinsteigenden wollen wir umfassende Qualifizierungsangebote bieten, sodass sie das Ausbildungsniveau 6 gemäß Deutschem Qualifikationsrahmen (DQR) erreichen […]",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=189",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7384,
+          "instrument": 7200,
+          "beschreibung": "Qualitätsinitiative für die Ausbildung starten und den Anteil staatlicher Schulen an der Erzieher*innenausbildung erhöhen.",
+          "ursachen_ids": [1702],
+          "zitat": "Wir werden eine Qualitätsinitiative in der Ausbildung in Gang setzen und den Anteil der staatlichen Schulen an der Ausbildung von Erzieher*innen und Sozialpädagog*innen erhöhen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=189",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7385,
+          "instrument": 7201,
+          "beschreibung": "Praxisstunden in der Ausbildung vergüten und ausdrückliche Ausbildungsverträge einführen.",
+          "ursachen_ids": [1702],
+          "zitat": "Die Praxisstunden im Rahmen einer Ausbildung müssen grundsätzlich vergütet werden. Wir kämpfen für die Einführung expliziter Ausbildungsverträge in Abgrenzung zu regulären Beschäftigungsverhältnissen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=189",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7386,
+          "instrument": 7209,
+          "beschreibung": "Gebührenfreiheit der Bildung von der Kita bis zur Hochschule als Grundsatz beibehalten.",
+          "ursachen_ids": [1705],
+          "zitat": "Die Linke steht fest zum Prinzip der gebührenfreien Bildung von der Kita bis zur Hochschule.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=153",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7387,
+          "instrument": 7218,
+          "beschreibung": "Verpflichtende Zusatzzahlungen über Kitafördervereine zurückweisen.",
+          "ursachen_ids": [1705],
+          "zitat": "Der sozialen Abgrenzung privilegierter Gruppen durch Zusatzzahlungen – wie etwa über verpflichtende Mitgliedschaften in Kitafördervereinen – treten wir entschieden entgegen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=187",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "keine_massnahme": {
+        "begruendung": "Programm Stand 2026-04-25 durchsucht (Suchbegriffe wie oben). Das Kapitel „Frühkindliche Förderung als Grundlage für Integration und Chancengleichheit“ (S. 14) enthält keine Maßnahme zu den Ursachen 1701–1705: Die dort genannten Bildungsmaßnahmen betreffen weder den Platzmangel bei unter Dreijährigen noch Kita-Personal, Personalschlüssel, ungeplante Schließungen oder Elternbeiträge.",
+        "stand": "2026-10-01",
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
   ]
 }
