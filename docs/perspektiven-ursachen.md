@@ -604,6 +604,14 @@ Punkte ändern sich dadurch nur, wo eine Partei vorher bei der Ursache leer ausg
 
 **Regel für künftige Erfassungen** (jetzt auch in [`methode.md`](methode.md) → „Ursachen“, Regel 4): Für jede Lösungsrichtung, die die Perspektivenprüfung nennt, werden eigene Suchbegriffe festgelegt und dokumentiert. Findet sich zu einer genannten Richtung keine Maßnahme, steht das ausdrücklich in der Erfassung.
 
+## Vorgemerkt: weitere Recherchen (1. 10. 2026)
+
+Auf Wunsch der Betreiberin noch nicht begonnen:
+
+- **1503 Wettbewerb bei Raffinerien und Großhandel** (Thema Autofahren): bisher keine Maßnahme einer Partei. Kandidaten: Preisaufsicht der Linken (S. 7, nennt Mobilität ausdrücklich; im Thema Preise und Löhne als 6912 bei 1102), Preisüberwacher des BSW (6927, bei 1102), Ende des Raststättenmonopols (BSW, S. 29, „horrende Spritpreise“, bisher nicht erfasst) sowie allgemeine Wettbewerbsforderungen (Grüne 6901, BSW 6918 und 6926, Linke 6911). Für das Thema Autofahren brauchen sie eigene Instrumente und Bewertungen (Instrumente gelten nur innerhalb eines Themas). Zu klären: Zählen allgemeine Kartellrechtsforderungen, die Kraftstoff nicht nennen? Suchbegriffe: Kartellrecht, Marktmacht, Raffinerie, Tankstelle, Tankstellenmarkt, Preisüberwachung, Preisaufsicht, Markttransparenz, Entflechtung. Die Aussage in der Erfassung, die Übergewinnsteuer der Linken betreffe nur Strom und Gas, war als Begründung für „nichts erfasst“ zu knapp.
+- **Klimageld, Deutschlandticket, Radwege, ÖPNV-Ausbau und weitere Maßnahmen.** Vorab klären, ob das Ziel des Themas Autofahren („Wer auf das Auto angewiesen ist, kann sich das Fahren dauerhaft leisten“) Alternativen zum Auto umfasst; Bus und Bahn sind ein eigenes Thema (801, 804), das Klimageld hängt bisher an 1502.
+- **Offen aus der Neutralitätsprüfung:** Union 6822 und BSW 6833 (allgemeine Energieimporte, ohne Öl) sind 1501 zugeordnet; die Prüfenden sollten das bestätigen oder streichen.
+
 ## Hinweise zur Quellenprüfung
 
 Die neuen Quellen hat die KI über Suchergebnisse geprüft, der Netzwerkzugang zu den Originalseiten war gesperrt. Die Betreiberin hat sie am 28. 9. 2026 im Original bestätigt:
