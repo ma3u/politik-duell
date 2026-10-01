@@ -20,6 +20,7 @@
     "programm:text": "node --experimental-strip-types scripts/entwurf/programm-text.ts",
     "programme:laden": "node --experimental-strip-types scripts/entwurf/programme-laden.ts",
     "programme:suche": "node --experimental-strip-types scripts/entwurf/programme-suche.ts",
+    "quelle:text": "node --experimental-strip-types scripts/entwurf/quelle-text.ts",
     "programm:sichern": "node --experimental-strip-types scripts/entwurf/programm-sichern.ts",
     "punkte": "node --experimental-strip-types scripts/entwurf/punkte.ts",
     "ursachen:freigegeben": "node --experimental-strip-types scripts/entwurf/ursachen-freigegeben.ts",
