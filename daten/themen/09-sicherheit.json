@@ -3,7 +3,7 @@
   "name": "Sicherheit",
   "beschreibung": "Sich im Alltag unsicher fühlen oder Opfer von Kriminalität werden.",
   "ziel": "Menschen sind im Alltag sicher und fühlen sich sicher; Straftaten werden zügig verfolgt.",
-  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends", "haeusliche gewalt", "partner", "frauenhaus", "auslaender", "migranten", "betrug", "extremismus", "vergewaltigung"],
+  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends", "haeusliche gewalt", "partner", "frauenhaus", "auslaender", "migranten", "betrug", "extremismus", "vergewaltigung", "wahrnehmung", "medien"],
   "ursachen": [
     {
       "id": 901,
@@ -36,11 +36,11 @@
     },
     {
       "id": 905,
-      "beschreibung": "Nichtdeutsche sind unter Tatverdächtigen der Gewaltkriminalität stark überrepräsentiert (2025: 42,9 %); die Gründe sind in der Forschung umstritten",
+      "beschreibung": "Nichtdeutsche sind bei Gewaltkriminalität als Tatverdächtige überrepräsentiert (2025: 42,9 %); Gründe: Alter, Wohnort, fehlende Arbeits- und Bleibeperspektive, Mehrfachtäter – Gewicht umstritten",
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
       "ebene": "bund",
-      "schlagwoerter": ["auslaender", "migranten", "zuwanderer", "gefluechtete", "auslaenderkriminalitaet", "abschiebung von straftaetern"],
-      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "schlagwoerter": ["auslaender", "migranten", "zuwanderer", "gefluechtete", "auslaenderkriminalitaet", "abschiebung von straftaetern", "intensivtaeter", "mehrfachtaeter", "junge maenner", "perspektive", "arbeitsverbot", "integration"],
+      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt. 2026-09-30: lösungsoffen gefasst, weil die Nacherfassung nur nach Ausweisung und Abschiebung gesucht hatte; Bundesprogramme danach auch nach Arbeit, Sprache, Bleibeperspektive, Verfahren, Rückkehr und Wohnort durchsucht."
     },
     {
       "id": 906,
@@ -65,6 +65,22 @@
       "ebene": "land",
       "schlagwoerter": ["vergewaltigung", "vergewaltigt", "sexuelle belaestigung", "sexueller uebergriff", "begrapscht", "grapschen", "ko-tropfen", "catcalling", "sexualisierte gewalt"],
       "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 909,
+      "beschreibung": "Zugewanderte werden stärker mit Kriminalität verbunden, als es die Daten zeigen; nennen Medien die Herkunft von Tatverdächtigen, sind Ausländer etwa dreifach überrepräsentiert",
+      "quelle_url": "https://mediendienst-integration.de/news/auslaendische-tatverdaechtige-in-deutschen-leitmedien-ueberrepraesentiert/",
+      "ebene": "land",
+      "schlagwoerter": ["gefuehl", "wahrnehmung", "wahrgenommen", "medien", "berichterstattung", "herkunft", "nationalitaet", "zusammenhang", "unsicherheitsgefuehl", "angst vor auslaendern"],
+      "nachtraeglich": "2026-09-30: nach einem Hinweis der Betreiberin ergänzt (ein Unsicherheitsgefühl wegen Zuwanderung konnte nur der Kriminalitätsursache 905 zugeordnet werden); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+    },
+    {
+      "id": 910,
+      "beschreibung": "Mit dem starken Zuzug Geflüchteter 2014–2016 stieg die Kriminalität in den aufnehmenden Kreisen moderat, mit einem Jahr Verzögerung; ob wegen der Zahl oder der Aufnahmebedingungen, ist offen",
+      "quelle_url": "https://www.zew.de/en/publications/do-refugees-impact-crime-causal-evidence-from-large-scale-refugee-immigration-to-germany-3",
+      "ebene": "bund",
+      "schlagwoerter": ["zu viele", "seit die fluechtlinge", "seit 2015", "zuzug", "grenzen", "begrenzen", "obergrenze", "unterkunft", "heim", "massenmigration"],
+      "nachtraeglich": "2026-10-01: auf Entscheidung der Betreiberin ergänzt (Diagnose aus der Debatte, durch Kausalstudien für Deutschland gemischt belegt); die Bundesprogramme wurden danach eigens nach Maßnahmen zu Zugang und Aufnahme durchsucht."
     }
   ],
   "instrumente": [
@@ -499,6 +515,118 @@
       "umsetzbarkeit": 2,
       "begruendung": "Verbote schwächen Strukturen, die Straftaten organisieren; oft entstehen Nachfolgegruppen. Das Land kann Vereine verbieten, die nur in seinem Gebiet tätig sind, bundesweit tätige Vereine verbietet der Bund.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 7179,
+      "name": "Arbeitsverbote für Geflüchtete abschaffen (Bund, Sicherheit)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Arbeitsmarktzugang beseitigte in der Schweiz zwei Drittel des erhöhten Gewaltrisikos von Asylsuchenden mit Kriegserfahrung (Couttenier u. a. 2019); Arbeitsverbote wirken bis zu zehn Jahre nach. Für Deutschland fehlen Studien mit verknüpften Daten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7180,
+      "name": "Geflüchtete früh in Arbeit vermitteln (Bund, Sicherheit)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Arbeitsmarktzugang beseitigte in der Schweiz zwei Drittel des erhöhten Gewaltrisikos von Asylsuchenden mit Kriegserfahrung (Couttenier u. a. 2019); Arbeitsverbote wirken bis zu zehn Jahre nach. Für Deutschland fehlen Studien mit verknüpften Daten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7181,
+      "name": "Sprach- und Integrationskurse ausbauen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Sprachkurse erhöhten in Dänemark Einkommen und Beschäftigung von Geflüchteten dauerhaft, senkten ihre eigene Kriminalität aber nicht; bei ihren Söhnen sank sie (Foged u. a. 2024). Für Deutschland nicht eigens untersucht.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7182,
+      "name": "Anerkennung ausländischer Abschlüsse vereinfachen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schnellere Anerkennung verbessert Verdienstmöglichkeiten und damit die Perspektive; auf Kriminalität wirkt das nur mittelbar und ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7183,
+      "name": "Spurwechsel für integrierte Menschen ohne Schutzstatus (Bund, Sicherheit)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein legaler Aufenthalt halbierte in Italien etwa die Kriminalität der Betroffenen (Pinotti 2017). Ein Spurwechsel erreicht aber vor allem Menschen, die schon integriert und straffrei sind; der Effekt dürfte kleiner sein.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7184,
+      "name": "Weitere sichere Herkunftsstaaten (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schnellere Entscheidungen schaffen früher Klarheit, gerade für Gruppen mit geringer Bleibeperspektive, unter denen das BKA besonders viele Mehrfachtatverdächtige zählt. Ob das Straftaten verhindert, ist nicht untersucht, und die Einstufung setzt eine belegte Lage im Herkunftsstaat voraus.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7185,
+      "name": "Asylverfahren beschleunigen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kurze Verfahren verkürzen die Zeit ohne sichere Perspektive, die Kriminologen mit Frust und Gewalt in Verbindung bringen. Ob das Straftaten verhindert, ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7186,
+      "name": "Periodischer Sicherheitsbericht, der die Kriminalstatistik einordnet (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein regelmäßiger Bericht ordnet die Kriminalstatistik mit Forschung und Dunkelfeldstudien ein und kann Fehlwahrnehmungen entgegenwirken; ob er das Sicherheitsgefühl verändert, ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7187,
+      "name": "Regelmäßige Dunkelfeldbefragungen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Befragungen zeigen, wie viel Kriminalität Menschen tatsächlich erleben und wie sehr sie sich fürchten, und machen den Abstand zwischen Gefühl und Risiko sichtbar. Allein ändern sie das Sicherheitsgefühl nicht.",
+      "evidenz": "offen"
+    },
+    {
+      "id": 7235,
+      "name": "Asylsuchende an den Grenzen zurückweisen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Zurückweisungen von Asylsuchenden an Binnengrenzen sind nach EU-Recht nur in engen Ausnahmen zulässig.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7236,
+      "name": "Familiennachzug begrenzen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Kriminologen sehen im Familiennachzug zugleich einen Schutz vor Straffälligkeit junger Männer (Baier/Pfeiffer/Kliem 2018).",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7237,
+      "name": "Asylverfahren in Drittstaaten außerhalb der EU (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Solche Verfahren hängen von Abkommen mit Drittstaaten ab und sind rechtlich umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7238,
+      "name": "Schutzsuchende verbindlich in der EU verteilen (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Eine verbindliche Verteilung braucht die Zustimmung der übrigen EU-Staaten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "id": 7239,
+      "name": "Kommunen und Ausländerbehörden für die Aufnahme besser ausstatten (Bund, Sicherheit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Aufnahmebedingungen können die Belastungen verringern, die Kriminologen für den Anstieg 2015/16 mitverantwortlich machen; ob sie Straftaten verhindern, ist nicht untersucht.",
+      "evidenz": "offen"
     }
   ],
   "abdeckung": [
@@ -675,6 +803,86 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7190,
+          "instrument": 7180,
+          "beschreibung": "Arbeitsvermittlung nicht wegen laufender Sprach- oder Integrationskurse aufschieben; Spracherwerb berufsbegleitend",
+          "ursachen_ids": [905],
+          "zitat": "In vielen Branchen und Berufen sind nicht abgeschlossene Integrations- oder Sprachkurse kein Grund, die Arbeitsvermittlung aufzuschieben. Wir sorgen dafür, dass der Spracherwerb auch berufsbegleitend erfolgt.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=31",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7197,
+          "instrument": 7182,
+          "beschreibung": "Berufsanerkennung vereinfachen, Deutschlernen „on the job“ stärken",
+          "ursachen_ids": [905],
+          "zitat": "Wir vereinfachen die Verfahren zur Berufsanerkennung und stärken das Erlernen der deutschen Sprache „on the job“.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7204,
+          "instrument": 7184,
+          "beschreibung": "Weitere Länder als sichere Herkunftsstaaten einstufen",
+          "ursachen_ids": [905],
+          "zitat": "Um Asylverfahren zu beschleunigen und Rückführungen zu erleichtern, stufen wir weitere Länder als „sichere Herkunftsländer“ ein.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=43",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7210,
+          "beschreibung": "Zentrale Asylverfahren für beschleunigte Verfahren und Bundesausreisezentren",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Zentrale Verfahren können Entscheidungen beschleunigen; das Leben in großen Sammelunterkünften gilt in der kriminologischen Forschung dagegen eher als Risiko für Konflikte. Die Wirkung auf Straftaten ist nicht untersucht.",
+          "zitat": "Wir wollen zentrale Asylverfahren für beschleunigte Verfahren und Bundesausreisezentren schaffen, um Rückführungen zu erleichtern.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=43",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7240,
+          "instrument": 7235,
+          "beschreibung": "Asylsuchende an den deutschen Grenzen zurückweisen, wenn sie aus einem EU- oder Schengen-Staat einreisen",
+          "ursachen_ids": [910],
+          "zitat": "Dazu weisen wir diejenigen an den deutschen Grenzen zurück, die […] aus einem anderen Mitgliedstaat der EU oder dem Schengen-Raum nach Deutschland einreisen und bei uns einen Asylantrag stellen wollen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=42",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7243,
+          "instrument": 7236,
+          "beschreibung": "Familiennachzug zu subsidiär Schutzberechtigten aussetzen, freiwillige Aufnahmeprogramme beenden",
+          "ursachen_ids": [910],
+          "zitat": "Wir setzen den Familiennachzug zu subsidiär Schutzberechtigten aus und beenden alle freiwilligen Aufnahmeprogramme.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=43",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7246,
+          "instrument": 7237,
+          "beschreibung": "Asylverfahren in sicheren Drittstaaten außerhalb Europas",
+          "ursachen_ids": [910],
+          "zitat": "Jeder, der in Europa Asyl beantragt, soll in einen sicheren Drittstaat überführt werden und dort ein Asylverfahren durchlaufen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=44",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -824,6 +1032,61 @@
           "zitat": "Jede ohne eindeutiges Einverständnis vorgenommene sexuelle Handlung muss unter Strafe gestellt werden.",
           "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=44",
           "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7192,
+          "instrument": 7181,
+          "beschreibung": "Integrationskurse ausbauen und ausreichend finanzieren",
+          "ursachen_ids": [905],
+          "zitat": "Wir werden die Integrationskurse ausbauen und sicherstellen, dass sie mit angemessenen Haushaltsmitteln finanziert werden, damit sie ihre zentrale Rolle bei der Erstintegration weiterhin erfüllen können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=54",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7200,
+          "instrument": 7183,
+          "beschreibung": "Spurwechsel in die Fachkräfteeinwanderung für integrierte, straffreie Menschen ohne Schutzstatus",
+          "ursachen_ids": [905],
+          "zitat": "Wer als Geflüchteter keinen Schutzstatus erhalten hat und dennoch Integration in Arbeitsmarkt und Gesellschaft bewältigt und straffrei ist, dem soll der Spurwechsel in die Fachkräfteeinwanderung ermöglicht werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=54",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7207,
+          "instrument": 7185,
+          "beschreibung": "Asylverfahren beim Bundesamt und an den Verwaltungsgerichten durch Digitalisierung beschleunigen, Entscheidung in sechs Monaten",
+          "ursachen_ids": [905],
+          "zitat": "Wir setzen auf eine deutliche Beschleunigung der Asylverfahren – sowohl beim Bundesamt für Migration und Flüchtlinge wie auch bei den verwaltungsgerichtlichen Verfahren. Mit umfassender Digitalisierung und Verwaltungsmodernisierung wollen wir sicherstellen, dass Asylentscheidungen innerhalb von sechs Monaten getroffen werden können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7250,
+          "instrument": 7238,
+          "beschreibung": "Solidarische Verteilung von Schutzsuchenden unter allen EU-Staaten",
+          "ursachen_ids": [910],
+          "zitat": "Unser Ziel ist eine wirklich solidarische Verteilung, an der sich alle Mitgliedstaaten beteiligen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7254,
+          "instrument": 7239,
+          "beschreibung": "Ausländerbehörden stärken, Datenaustausch verbessern, Verfahren aus einer Hand",
+          "ursachen_ids": [910],
+          "zitat": "Dazu stärken wir die Ausländerbehörden, verbessern den Datenaustausch und etablieren One-Stop-Government-Verfahren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1035,6 +1298,86 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7188,
+          "instrument": 7179,
+          "beschreibung": "Arbeitsverbote abschaffen; arbeitsbezogene Genehmigungen gelten nach kurzer Frist als erteilt",
+          "ursachen_ids": [905],
+          "zitat": "Hier haben wir in der Bundesregierung bereits erhebliche Verbesserungen erzielt und werden bestehende Arbeitsverbote abschaffen sowie die Verfahren vereinfachen und beschleunigen. […] Deswegen werden wir kurze Fristen einführen, nach denen arbeitsbezogene Genehmigungen als erteilt gelten, wenn durch die Ausländerbehörde nicht aktiv Widerspruch eingelegt wird.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=128",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7193,
+          "instrument": 7181,
+          "beschreibung": "Ausfinanzierte Integrations- und Sprachkurse direkt nach der Ankunft",
+          "ursachen_ids": [905],
+          "zitat": "Dazu zählt das Angebot von ausfinanzierten, bedarfsgerechten und qualifizierten Integrations- und Sprachkursen, die direkt nach der Ankunft zugänglich sind.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=128",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7201,
+          "instrument": 7183,
+          "beschreibung": "Spurwechsel ausgestalten; auf das Chancen-Aufenthaltsrecht weitere Reformen folgen lassen",
+          "ursachen_ids": [905],
+          "zitat": "Gleichzeitig vertreten wir den pragmatischen Ansatz des „Spurwechsels“ und gestalten ihn sinnvoll aus. […] Mit dem Chancenaufenthaltsrecht haben wir viele gut integrierte Menschen aus der Duldung geholt, ihnen eine echte Bleibeperspektive gegeben und gleichzeitig die Ausländerbehörden stark entlastet. Es ist beispielgebend, weitere Reformen müssen folgen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=127",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7213,
+          "beschreibung": "Periodischen Sicherheitsbericht gesetzlich verankern",
+          "ursachen_ids": [909],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein regelmäßiger Bericht ordnet die Kriminalstatistik mit Forschung und Dunkelfeldstudien ein und kann Fehlwahrnehmungen entgegenwirken; ob er das Sicherheitsgefühl verändert, ist kaum untersucht.",
+          "zitat": "Den periodischen Sicherheitsbericht, der diese Arbeit bündelt, wollen wir daher gesetzlich verankern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=133",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7220,
+          "instrument": 7182,
+          "beschreibung": "Anerkennung ausländischer Abschlüsse und Qualifikationen vereinfachen",
+          "ursachen_ids": [905],
+          "zitat": "Die Anerkennung ausländischer Abschlüsse und Qualifikationen wollen wir vereinfachen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=129",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7251,
+          "instrument": 7238,
+          "beschreibung": "Faire, verbindliche und solidarische Verteilung von Schutzsuchenden in Europa",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben – mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=130",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7255,
+          "instrument": 7239,
+          "beschreibung": "Kommunen mit einer Integrationsoffensive stärker und verlässlicher finanziell unterstützen",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen für mehr bezahlbaren Wohnraum sorgen und die Kommunen mit einer Integrationsoffensive stärker und verlässlicher finanziell unterstützen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=128",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1145,6 +1488,100 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7195,
+          "beschreibung": "Sprach- und Integrationskurse trennen; Sprachkurse modular und leistungsdifferenziert",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Bessere Sprachkurse erhöhten in Dänemark Einkommen und Beschäftigung von Geflüchteten dauerhaft, senkten ihre eigene Kriminalität aber nicht, wohl die ihrer Söhne (Foged u. a. 2024); die Neuordnung soll die Kurse wirksamer machen.",
+          "zitat": "Insbesondere müssen wir Sprach- und Integrationskurse voneinander trennen, denn der derzeitige Ansatz hat sich als ineffektiv und kostspielig erwiesen. Sprachkurse sollen modular und leistungsdifferenziert ablaufen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=29",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7198,
+          "instrument": 7182,
+          "beschreibung": "Anerkennung ausländischer Abschlüsse beschleunigen und durchgehend digitalisieren",
+          "ursachen_ids": [905],
+          "zitat": "Die Anerkennung im Ausland erworbener Abschlüsse wollen wir beschleunigen und durchgehend digitalisieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7202,
+          "instrument": 7183,
+          "beschreibung": "Spurwechsel für gut integrierte Schutzsuchende, die ohne Transferleistungen leben können",
+          "ursachen_ids": [905],
+          "zitat": "Für gut integrierte Schutzsuchende muss es die Möglichkeit eines Spurwechsels zur Einwanderung in den Arbeitsmarkt geben, wenn sie so qualifiziert sind, dass sie und ihre Familien von eigener Arbeit ohne Transferleistungen leben können.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7205,
+          "instrument": 7184,
+          "beschreibung": "Geordnetes Verfahren, um mehr sichere Herkunftsstaaten festzustellen",
+          "ursachen_ids": [905],
+          "zitat": "Wir fordern zudem geordnetes Verfahren zur Feststellung von mehr Sicheren Herkunftsstaaten.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7212,
+          "beschreibung": "Wohnsitzauflage stärker nutzen",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Der Wohnort erklärt laut ifo einen großen Teil der Überrepräsentation, und eine Wohnsitzauflage steuert ihn; sie kann aber Arbeitssuche und Anschluss an Familie erschweren. Die Wirkung auf Straftaten ist nicht untersucht.",
+          "zitat": "Um die Rahmenbedingungen für Integration zu verbessern, wollen wir unter anderem das Instrument der Wohnsitzauflage stärker […] nutzen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7241,
+          "instrument": 7235,
+          "beschreibung": "Zurückweisungen an den deutschen Grenzen modellhaft erproben",
+          "ursachen_ids": [910],
+          "zitat": "Als Freie Demokraten unterstützen wir die modellhafte Erprobung von Zurückweisungen an den deutschen Außengrenzen, um alle rechtlichen Möglichkeiten zur Begrenzung der irregulären Migration auszuschöpfen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7244,
+          "instrument": 7236,
+          "beschreibung": "Familiennachzug zu subsidiär Schutzberechtigten aussetzen, Aufnahmeprogramme pausieren",
+          "ursachen_ids": [910],
+          "zitat": "Den Familiennachzug zu subsidiär Schutzberechtigten wollen wir aussetzen und Aufnahmeprogramme pausieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7247,
+          "instrument": 7237,
+          "beschreibung": "Asylverfahren auch in Drittstaaten",
+          "ursachen_ids": [910],
+          "zitat": "Asylverfahren sollen zudem auch in Drittstaaten stattfinden, wenn Schutzsuchende dort sicher und rechtstaatliche Verfahren gewährleistet sind.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1211,12 +1648,15 @@
         },
         {
           "id": 6477,
-          "instrument": 6466,
           "beschreibung": "Zwingende Ausweisung verurteilter ausländischer Straftäter konsequent vollziehen, schon im Strafurteil feststellen",
           "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ausweisung verhindert weitere Taten der Betroffenen hier, scheitert aber oft an Papieren und Herkunftsstaaten. Eine zwingende Ausweisung ohne Einzelfallabwägung verträgt sich kaum mit Art. 8 EMRK; seit 2016 verlangt das Aufenthaltsrecht deshalb eine Abwägung.",
           "zitat": "den konsequenten Vollzug der zwingenden Ausweisung verurteilter ausländischer Straftäter sowie die Feststellung der Verpflichtung hierzu bereits im Strafurteil",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=117",
-          "stand": "2026-09-29",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         },
@@ -1261,6 +1701,117 @@
           "zitat": "Die Ausweisung ausländischer Straftäter insbesondere bei Gewalt-, Drogen- und Sexualdelikten sowie bei der organisierten und Clankriminalität werden wir deutlich erleichtern.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=102",
           "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7196,
+          "beschreibung": "Pflicht zum Spracherwerb auf B2-Niveau in der Regel binnen zwei Jahren; Kosten abgebrochener Kurse erstatten",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Sprache öffnet den Weg in Arbeit; eine Pflicht mit Kostenerstattung setzt auf Druck statt auf ein Angebot. Wie sich das auf Straftaten auswirkt, ist nicht untersucht.",
+          "zitat": "Aktive Beteiligung aller Migranten an einer gelingenden Integration. Dazu gehört der angemessene Spracherwerb, mindestens auf B2-Niveau, in angemessener Zeit, in der Regel innerhalb von 2 Jahren, in Ausnahmefällen innerhalb von 5 Jahren",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=110",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7206,
+          "instrument": 7184,
+          "beschreibung": "Zahl der sicheren Herkunftsstaaten deutlich ausweiten",
+          "ursachen_ids": [905],
+          "zitat": "Deutliche Ausweitung der Zahl sicherer Herkunftsstaaten",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=105",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7208,
+          "instrument": 7185,
+          "beschreibung": "Asylverfahren vor den Verwaltungsgerichten straffen, mehr Personal zum Abbau von Altfällen",
+          "ursachen_ids": [905],
+          "zitat": "Die Asylverfahren vor den Verwaltungsgerichten werden wir im Rahmen rechtsstaatlicher Möglichkeiten straffen. Zum Abbau von Altfällen werden wir das Personal erhöhen",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=106",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7211,
+          "beschreibung": "Bundesprogramme zur Förderung der freiwilligen Rückkehr ausweiten",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Rückkehrprogramme geben Menschen ohne Bleibeperspektive eine Perspektive im Herkunftsland, was Kriminologen gegen Frust und Straftaten empfehlen; ob sie Straftaten verhindern, ist kaum untersucht.",
+          "zitat": "Offensive Bewerbung der freiwilligen Rückkehr in Verbindung mit der Ausweitung von Bundesprogrammen zur Förderung der freiwilligen Rückkehr nach Syrien",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=109",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7224,
+          "beschreibung": "Polizei bundeseinheitlich besser besolden, Zulagen erhöhen, Bewaffnung und Ausrüstung verbessern",
+          "ursachen_ids": [901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Bessere Bezahlung und Ausrüstung können helfen, Personal zu gewinnen und zu halten, und so mehr Präsenz ermöglichen; mehr Stellen sieht die Maßnahme nicht vor. Die Besoldung der Landespolizeien regeln seit 2006 die Länder, eine bundeseinheitliche Regel bräuchte eine Grundgesetzänderung.",
+          "zitat": "Bundeseinheitliche Besoldung und angemessene Vergütungen mit Gefährdungszulagen sowie weitere Zulagen für Überstunden und Sondereinsätze für Polizei und Rettungskräfte. Verbesserung von Bewaffnung und Ausrüstung",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=120",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7242,
+          "instrument": 7235,
+          "beschreibung": "Grenzen selbst kontrollieren, illegal Einreisende an der Grenze zurückweisen",
+          "ursachen_ids": [910],
+          "zitat": "Wir werden stattdessen unsere Grenzen wieder selbst kontrollieren und die Bundespolizei als Grenzbehörde einsetzen, um illegale Einreisen wirksam zu unterbinden und illegal einreisende Personen konsequent an der Grenze zurückweisen zu können.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=104",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7245,
+          "instrument": 7236,
+          "beschreibung": "Grundsätzlichen Anspruch auf Familiennachzug zu subsidiär Schutzberechtigten streichen",
+          "ursachen_ids": [910],
+          "zitat": "Wegfall des grundsätzlichen Nachzugsanspruches für Familienangehörige subsidiär Schutzberechtigter",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=105",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7248,
+          "instrument": 7237,
+          "beschreibung": "Asylanträge künftig außerhalb Deutschlands stellen und bearbeiten",
+          "ursachen_ids": [910],
+          "zitat": "Wir werden uns dafür einsetzen, dass Asylverfahren und Anträge auf subsidiären Schutz zukünftig außerhalb Deutschlands gestellt und bearbeitet werden",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=104",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7257,
+          "beschreibung": "Asylsuchende für die Dauer des Verfahrens in zentralen Aufnahmeeinrichtungen unterbringen",
+          "ursachen_ids": [910],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Zentrale Unterbringung kann Verfahren und Rückführungen erleichtern; große Sammelunterkünfte gelten in der kriminologischen Forschung aber eher als Risiko für Konflikte. Die Wirkung auf Straftaten ist nicht untersucht.",
+          "zitat": "Unterbringung in zentralen Aufnahmeeinrichtungen für die Dauer des Asylverfahrens",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=106",
+          "evidenz": "offen",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1362,6 +1913,64 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7189,
+          "instrument": 7179,
+          "beschreibung": "Uneingeschränkte Arbeitserlaubnis für alle Geflüchteten ab dem Tag der Ankunft",
+          "ursachen_ids": [905],
+          "zitat": "Wir fordern, dass alle Geflüchteten ab dem Tag ihrer Ankunft in Deutschland eine uneingeschränkte Arbeitserlaubnis erhalten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=52",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7194,
+          "instrument": 7181,
+          "beschreibung": "Geflüchtete dezentral in Wohnungen unterbringen, flächendeckend kostenlose Sprachkurse",
+          "ursachen_ids": [905],
+          "zitat": "Geflüchtete wollen wir bundesweit dezentral und in Wohnungen unterbringen und ihnen flächendeckend kostenlose Sprachkurse anbieten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=52",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7203,
+          "beschreibung": "Legalisierung für Menschen ohne Aufenthaltsstatus; wirksame Bleiberechtsregelungen bei Kettenduldungen",
+          "ursachen_ids": [905],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Ein legaler Aufenthalt halbierte in Italien etwa die Kriminalität der Betroffenen (Pinotti 2017), ähnliche Befunde gibt es für die USA. Der Effekt betrifft nur einen Teil der Tatverdächtigen und ist für Deutschland nicht untersucht.",
+          "zitat": "Wir fordern Legalisierungsmöglichkeiten für Menschen ohne Aufenthaltsstatus und effektive Bleiberechtsregelungen für Menschen, die mit einem unsicheren Aufenthaltsstatus oder mit Kettenduldungen leben müssen",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7252,
+          "instrument": 7238,
+          "beschreibung": "Europäische Fluchtumlage: EU-Geld für aufnahmebereite Länder, Regionen und Städte",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen eine europäische Fluchtumlage. Länder, Regionen und Städte, die bereit sind, mehr Geflüchtete aufzunehmen und adäquat unterzubringen und zu versorgen, werden mit EU-Mitteln finanziell unterstützt.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7256,
+          "instrument": 7239,
+          "beschreibung": "Fonds für Willkommenskommunen; der Bund erstattet die Unterbringungskosten vollständig pro Person",
+          "ursachen_ids": [910],
+          "zitat": "Wir wollen einen Fonds für Willkommenskommunen. […] Außerdem muss der Bund über eine Pro-Personen-Pauschale die Unterbringungskosten für Geflüchtete vollständig erstatten",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=52",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -1442,6 +2051,81 @@
           "zitat": "Unsere Polizei muss in die Lage versetzt werden, Kriminellen, Terroristen und Extremisten wirksamer das Handwerk legen zu können.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7191,
+          "instrument": 7180,
+          "beschreibung": "Job-Turbo für Ukrainer und andere Geflüchtete mit Schutzstatus umsetzen",
+          "ursachen_ids": [905],
+          "zitat": "Der versprochene Jobturbo für Ukrainer und andere Flüchtlingsgruppen mit Schutzstatus muss endlich umgesetzt werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7199,
+          "beschreibung": "Erwachsenenbildung zum Nachholen von Schulabschlüssen und Nachqualifikation bei abweichenden Berufsausbildungen",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Nachqualifikation verbessert Verdienstmöglichkeiten und damit die Perspektive; auf Kriminalität wirkt das nur mittelbar und ist kaum untersucht.",
+          "zitat": "Dafür brauchen wir ein System der Erwachsenenbildung, in dem Schulabschlüsse nachgeholt werden können und Nachqualifikationen möglich sind, falls vorhandene Berufsausbildungen nicht dem deutschen System entsprechen",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7209,
+          "instrument": 7185,
+          "beschreibung": "Behörden und Gerichte vorrangig mit Personal ausstatten, Asylverfahren in drei Monaten",
+          "ursachen_ids": [905],
+          "zitat": "Die für Asylverfahren zuständigen Behörden und Gerichte müssen vorrangig mit Personal ausgestattet und die Verfahren so gestrafft werden, dass sie im Normalfall in drei Monaten abgeschlossen werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=37",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7234,
+          "beschreibung": "Nach schweren Straftaten Anspruch auf Asylverfahren entziehen, Abschiebungsschutz nur bei drohender Todesstrafe",
+          "ursachen_ids": [905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 0,
+          "begruendung": "Wer keinen Schutz mehr hat, kann eher abgeschoben werden; Abschiebungen scheitern aber oft an Papieren und Herkunftsstaaten. Das Verbot, in Folter oder unmenschliche Behandlung abzuschieben (Art. 3 EMRK, Art. 19 EU-Grundrechtecharta), gilt absolut und lässt sich nicht auf die Todesstrafe begrenzen.",
+          "zitat": "Wir fordern, Gesetze und nötigenfalls das Grundgesetz so zu ändern, dass Flüchtlinge nach schweren Straftaten ihren Anspruch auf ein Asylverfahren in Deutschland verlieren und der Schutz vor Abschiebung auf Fälle begrenzt wird, in denen klare Indizien vorliegen, dass dem Betroffenen im Herkunftsstaat die Todesstrafe droht.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=37",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7249,
+          "instrument": 7237,
+          "beschreibung": "Asylverfahren möglichst außerhalb der EU in sicheren Drittstaaten",
+          "ursachen_ids": [910],
+          "zitat": "Asylverfahren sollten nach Möglichkeit außerhalb der EU in sicheren Drittstaaten stattfinden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=38",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7253,
+          "beschreibung": "Wer aus einem sicheren Drittstaat einreist, bekommt kein Asylverfahren und keinen Aufenthalt",
+          "ursachen_ids": [910],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 0,
+          "begruendung": "Weniger Zuzug bedeutet nach den Studien zu Deutschland 2014–2016 etwas weniger Taten in den aufnehmenden Kreisen; internationale Studien finden keinen solchen Zusammenhang. Ein pauschaler Ausschluss vom Asylverfahren bei Einreise über sichere Drittstaaten ist mit EU-Recht nicht vereinbar.",
+          "zitat": "Wer aus einem sicheren Drittstaat einreist, hat kein Recht auf Aufenthalt. Wer kein Recht auf Aufenthalt hat, hat keinen Anspruch auf […] ein Asylverfahren und auch keinen Anspruch auf soziale Leistungen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+          "evidenz": "gemischt",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -1815,6 +2499,17 @@
           "zitat": "Wir setzen uns dafür ein, dass alle Kliniken in Sachsen-Anhalt Teil des „Netzwerks Evidence“ werden, um anonymisierte Spurensicherungen nach sexueller Gewalt flächendeckend zu ermöglichen.",
           "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=83",
           "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7214,
+          "instrument": 7186,
+          "beschreibung": "Kriminalstatistik durch Studien ergänzen und einordnen, um das subjektive Sicherheitsempfinden einzuordnen",
+          "ursachen_ids": [909],
+          "zitat": "Die Polizeiliche Kriminalstatistik (PKS) muss daher stärker durch Studien und wissenschaftliche Erkenntnisse zum Kriminalitätsgeschehen ergänzt und eingeordnet werden, um das subjektive Sicherheitsempfinden besser einordnen und adressieren zu können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=42",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -2491,6 +3186,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7215,
+          "instrument": 7186,
+          "beschreibung": "Periodischer Sicherheitsbericht, der die Kriminalstatistik allgemeinverständlich ergänzt",
+          "ursachen_ids": [909],
+          "zitat": "einen periodischen Sicherheitsbericht, der die Kriminalstatistik unter Einbeziehung von Wissenschaft und Zivilgesellschaft allgemeinverständlich ergänzt und auch gruppenbezogene Hasskriminalität sichtbar macht.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=77",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -2663,6 +3369,31 @@
           "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=53",
           "evidenz": "offen",
           "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7217,
+          "beschreibung": "Mehr Angaben zur Ausländerkriminalität auch für Landkreise und kreisfreie Städte veröffentlichen",
+          "ursachen_ids": [909],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Mehr veröffentlichte Angaben machen die Lage nachprüfbar. Laut einer Studie baut die Nennung der Herkunft aller Tatverdächtigen, auch der deutschen, Fehlwahrnehmungen ab; zusätzliche Angaben nur zu Ausländern können die ungleiche Aufmerksamkeit dagegen verstärken.",
+          "zitat": "Wir erhöhen die Aussagekraft der Polizeilichen Kriminalstatistik, indem wir mehr Informationen zur Ausländerkriminalität auch auf Ebene der Landkreise und kreisfreien Städte veröffentlichen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=39",
+          "evidenz": "gemischt",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7218,
+          "instrument": 7187,
+          "beschreibung": "Regelmäßige landesweite Dunkelfeldbefragungen, auch zur Furcht vor Kriminalität",
+          "ursachen_ids": [909],
+          "zitat": "Wir führen regelmäßig landesweite Dunkelfeldbefragungen durch, in denen die Bürger über selbst erfahrene Kriminalität und eigene, aus Furcht vor Kriminalität veranlasste Verhaltensweisen wie z.B. das Meiden öffentlicher Plätze berichten.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=39",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -3144,6 +3875,17 @@
           "stand": "2026-09-29",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7219,
+          "instrument": 7187,
+          "beschreibung": "Regelmäßige Dunkelfeldforschung zu den wichtigsten Kriminalitätsphänomenen fördern",
+          "ursachen_ids": [909],
+          "zitat": "In diesem Rahmen wollen wir insbesondere auch regelmäßige Dunkelfeldforschung zu den wichtigsten Kriminalitätsphänomenen in Berlin fördern",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=30",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -3298,6 +4040,17 @@
           "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=132",
           "evidenz": "gemischt",
           "stand": "2026-09-29",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7216,
+          "instrument": 7186,
+          "beschreibung": "Berliner Periodischen Sicherheitsbericht einführen, der auch die Ursachen der Taten analysiert",
+          "ursachen_ids": [909],
+          "zitat": "Daher führen wir neben der Polizeilichen Kriminalstatistik den Berliner Periodischen Sicherheitsbericht ein, der nicht nur die Anzahl der Taten analysiert, sondern auch deren Ursachen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=227",
+          "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
         }
