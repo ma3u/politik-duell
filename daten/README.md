@@ -129,7 +129,24 @@ Bewusst nicht als eigenes Thema aufgenommen:
 - **Vertrauen in Politik und Medien.** Querschnittsthema; der greifbare Teil (langsame Verwaltung, Bürokratie) ist jetzt das Thema Behördengänge. Streit in Koalitionen oder das Gefühl der Ohnmacht sind keine Ursachen, an denen Programm-Maßnahmen gemessen werden können.
 - **Tempolimit, Parkplätze, Verbrenner-Aus als Kulturkampf.** Wertfragen; die Kosten des Autofahrens sind im Thema Autofahren erfasst (siehe Perspektivenprüfung).
 
-Noch nicht aufgenommen, Kandidaten für später: soziale Ungerechtigkeit/Armut (MV 8 %), Müll (Berlin, im Wahlkampf genannt), Abwanderung junger Menschen (Sachsen-Anhalt). Häufige Einträge in der Review-Warteschlange sind ein weiterer Hinweis.
+- **Sprache, Gendern und Quoten** (aus dem Komplex „Identity Politics, Gesellschaftsklima und Sprachkritik“, Abgleich vom 1. 10. 2026). Ob Gendern oder Quoten richtig sind, ist eine Wertfrage, kein Problem mit belegbaren Ursachen, an dem sich die Wirksamkeit von Maßnahmen messen ließe. Im Spiel wird das als persönliche Haltung (`wert`) behandelt.
+
+### Kandidaten für später
+
+Noch nicht aufgenommen. Jedes Thema wird einzeln mit `/thema-anlegen` geprüft (Umfragebeleg, Überschneidung, Wertfrage) und erst danach mit `/thema-erfassen` erfasst; ein Eintrag hier ist noch keine Entscheidung für die Aufnahme. Häufige Einträge in der Review-Warteschlange sind ein weiterer Hinweis.
+
+**Abgleich (1. 10. 2026):** Die Betreiberin hat eine erweiterte Liste mit zehn Themenkomplexen vorgelegt (zusätzlich zu den acht oben: „Identity Politics, Gesellschaftsklima und Sprachkritik“ sowie „Social-Media-Dynamiken und Polarisierung im Netz“). Schon abgedeckt sind daraus Lebenshaltungskosten (Miete, Energiepreise, Preise und Löhne), Arbeitsplatzverlust (Arbeitsplätze), überlastete Kommunen, Integration und Sicherheit (Zuwanderung und Integration, Sicherheit), Heizungsgesetz (Heizungstausch), Bahn, Brücken, Lehrermangel, Funklöcher und Behörden (Bus und Bahn, Straßen und Brücken, Schule, Internet und Mobilfunk, Behördengänge), Spritpreise, Ladesäulen und Radwege (Autofahren, Straßen und Brücken), Altersarmut, Pflegekosten und Ärztemangel auf dem Land (Rente, Pflege, Arzttermine). Krieg und Verteidigung, Vertrauen in Politik und Medien sowie Gendern und Quoten bleiben aus den oben genannten Gründen draußen. Nicht abgedeckt sind die folgenden Aspekte:
+
+| Kandidat | Aus dem Komplex bzw. Anlass | Hinweis für `/thema-anlegen` |
+| --- | --- | --- |
+| Psychotherapie-Plätze | Verunsicherung jüngerer Generationen (Komplex 6), Gesundheit/Pflege (MV 10 %) | Arzttermine (1) hat nur Ursachen zu Haus- und Facharztpraxen. Prüfen, ob eigenes Thema oder neue Ursache in Arzttermine. |
+| Hass und Desinformation im Netz | Social-Media-Dynamiken (Komplex 10), Vorwürfe der Manipulation (Komplex 8) | Abgrenzen von Sicherheit (Cyberkriminalität, politisch motivierte Kriminalität). Perspektivenprüfung: Maßnahmen berühren die Meinungsfreiheit; das Ziel muss beide Sorgen fassen (Schutz vor Hass und vor Überregulierung). |
+| Kinder und Jugendliche in sozialen Netzwerken | Social-Media-Dynamiken (Komplex 10), Verunsicherung jüngerer Generationen (Komplex 6) | Ggf. mit „Hass und Desinformation im Netz“ zusammenlegen; Abgrenzung zu Schule (Medienbildung). |
+| Hitze und Unwetter | Energiepolitik und Klimaschutz (Komplex 3) | Der Klimaschutz selbst ist kein Alltagsproblem einzelner Menschen; greifbar sind die Folgen (Hitze in Städten, Starkregen, Hochwasser, Kosten der Elementarversicherung). Abgrenzen von Energiepreise und Heizungstausch. |
+| Sichere Stromversorgung | Unsicherheit über die künftige Energieversorgung (Komplex 3) | Prüfen, ob Menschen Stromausfälle selbst als Problem erleben oder nur befürchten (Umfragebeleg nötig); abgrenzen von Energiepreise (Preis, nicht Versorgung). |
+| Armut und soziale Ungerechtigkeit | Ungerechtigkeit bei Sozialleistungen (Komplex 9), MV 8 % | Abgrenzen von Preise und Löhne, Rente und Arbeitsplätze (Ursache Hinzuverdienst im Bürgergeld). „Gerechtigkeit“ der Verteilung ist teils Wertfrage; greifbar sind etwa Kinderarmut oder nicht abgerufene Leistungen. |
+| Ländlicher Raum und Abwanderung | Veröden des ländlichen Raums (Komplex 9), Abwanderung junger Menschen (Sachsen-Anhalt) | Ärztemangel und ÖPNV sind schon in Arzttermine und Bus und Bahn; offen sind etwa Abwanderung, fehlende Läden und Treffpunkte. |
+| Müll | Berlin, im Wahlkampf genannt | Fast nur Länder- und Kommunalzuständigkeit; nur mit Landesprogrammen sinnvoll. |
 
 ## Bewertungsmaßstab
 
