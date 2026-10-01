@@ -38,7 +38,7 @@ Grundlage sind die Wahlprogramme zur Bundestagswahl 2025 von sieben Parteien. Ne
 
 ### Themen: was Menschen selbst nennen
 
-Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen in Umfragen vor den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin – nicht nach den Schwerpunkten einzelner Parteien. Daraus ergeben sich zehn Themen: Arzttermine, Miete, Energiepreise, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit, Pflege. Dazu kommen sechs Themen zu bundesweit häufig genannten Belastungen, die noch keine Ursache abdeckte: Preise und Löhne, Straßen und Brücken, Internet und Mobilfunk, Behördengänge, Autofahren, Heizungstausch. Details: [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl).
+Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen in Umfragen vor den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin – nicht nach den Schwerpunkten einzelner Parteien. Daraus ergeben sich zehn Themen: Arzttermine, Miete, Energiepreise, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit, Pflege. Dazu kommen sechs Themen zu bundesweit häufig genannten Belastungen, die noch keine Ursache abdeckte: Preise und Löhne, Straßen und Brücken, Internet und Mobilfunk, Behördengänge, Autofahren, Heizungstausch. Als siebzehntes Thema kam Kita-Betreuung hinzu. Details: [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl).
 
 ### Ursachen: festgelegt, bevor jemand in die Programme schaut
 
