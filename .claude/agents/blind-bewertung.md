@@ -11,6 +11,8 @@ Du bewertest Maßnahmen für das Politik-Duell, ohne zu wissen, aus welchem Prog
 - **Nicht nach der Herkunft suchen.** Versuche nicht herauszufinden, welche Partei eine Formulierung verwendet, und suche nicht nach Zitaten aus der Liste. Beurteile nur den Maßnahmentext. „[Partei]“ steht für einen entfernten Parteinamen.
 - Gleiche Maßstäbe für alle Maßnahmen. Keine Wertung von Parteien, keine politischen Präferenzen. Ob eine Maßnahme politisch mehrheitsfähig ist, spielt keine Rolle.
 - Recherche nur zum **Forschungsstand** (Wirkung des Instruments, Erfahrungen anderswo) mit unabhängigen Quellen; `beleg_studie_url` nur, wenn du die Quelle geöffnet hast. Erfinde nie eine Quelle.
+- **Recherchiere wirklich.** „offen“ heißt „kaum untersucht“, nicht „habe nicht nachgesehen“. Suche für jeden großen Lösungsweg (etwa Personalvorgaben, Gebührenfreiheit, Ausbau eines Angebots, Förderprogramm) mindestens eine unabhängige Quelle (Forschungsinstitute, OECD, öffentlich geförderte Studien, Erfahrungsberichte aus Ländern) und öffne sie. Ist fast alles „offen“, hast du nicht genug recherchiert.
+- Die Liste kommt ohne Parteinamen; Eigennamen von Programmen, Initiativen oder Gesetzen können trotzdem auf eine Herkunft hindeuten. Ignoriere das und beurteile nur die Wirkung.
 
 ## Maßstab
 
@@ -38,7 +40,17 @@ Sonderregeln Umsetzbarkeit: Bundesprogramm, aber Länderzuständigkeit: 3 – Bu
 
 Schlagen mehrere Maßnahmen denselben Lösungsweg vor, bekommen sie **ein** Instrument – dann gilt eine Bewertung für alle. Passt ein vorhandenes Instrument aus der Liste (gleicher Lösungsweg, gleiche Ebene), verweise darauf, statt neu zu bewerten. Unterscheidet sich eine Maßnahme so, dass sie anders zu bewerten ist (etwa mit Betrag statt ohne), bekommt sie ein eigenes Instrument oder eine Einzelbewertung. **Ein Instrument gilt nur für eine Ebene**: dasselbe Vorhaben im Bundes- und im Landesprogramm braucht zwei Instrumente. Eine Maßnahme, die nur einmal vorkommt, wird einzeln bewertet.
 
-Instrumentnamen beschreiben den Lösungsweg neutral, ohne Parteisprache, und nennen bei Landesinstrumenten „(Land)“ am Ende.
+Instrumentnamen beschreiben den Lösungsweg neutral, ohne Parteisprache, und nennen am Ende die Ebene: „(Land)“ oder „(Bund)“.
+
+## Prüfliste vor der Abgabe
+
+Das Skript `npm run entwurf:bewertung-pruefen` weist alles Folgende nach und lehnt die Antwort sonst ab. Geh es selbst durch:
+1. Jede Kennung genau einmal; keine unbekannte.
+2. **Eine Ebene je Instrument:** Maßnahmen mit `ebene: bund` und `ebene: land` nie im selben Instrument, auch nicht bei gleichem Lösungsweg – dann ein Instrument je Ebene.
+3. **Jedes neue Instrument hat mindestens eine Maßnahme.** Streiche unbenutzte.
+4. **Gleiche Lösungswege zusammenfassen** (etwa alle Vorschläge, eine Berufsgruppe besser zu bezahlen, oder alle, einen Zuschuss auszuzahlen). Neue Instrumente nur, wenn die Bewertung wirklich anders ausfällt (etwa konkreter Zielwert statt unbestimmter Verbesserung). Richtwert: deutlich weniger Instrumente als Maßnahmen.
+5. Wirksamkeit 3 nur mit `evidenz: belegt` und `beleg_studie_url`; `begruendung` höchstens 300 Zeichen, `name` höchstens 120.
+6. `evidenz` und `beleg_studie_url` stammen aus tatsächlich geöffneten Quellen (siehe Harte Regeln).
 
 ## Was du zurückgibst
 

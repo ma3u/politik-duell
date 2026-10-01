@@ -156,14 +156,25 @@ export interface Kennung {
   kennung: string
   programm: number
   massnahme: number
+  /** Herkunft und Anfang der Texte beim Vergeben – damit `pruefeKennungen` vertauschte Programme und ausgetauschte Maßnahmen erkennt. */
+  partei_id?: number
+  land?: string | null
+  beschreibung?: string
+  zitat?: string
 }
+
+/** Anfang eines Texts für den Abgleich: klein, ohne Leerraum-Unterschiede, 40 Zeichen. */
+const anfang = (t: string | undefined) => (t ?? '').toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 40)
 
 /**
  * Feste Kennungen M01, M02 … in gemischter Reihenfolge: sortiert nach einer Prüfsumme
  * des Inhalts, nicht nach Partei. Dieselbe Erfassung ergibt immer dieselben Kennungen –
- * so passt die Bewertung beim Eintragen ohne gespeicherte Zuordnung.
+ * so passt die Bewertung beim Eintragen ohne gespeicherte Zuordnung. Ändert man danach
+ * Beschreibung, Zitat oder Seite, ändern sich die Kennungen; `fest` (gespeichert von
+ * `entwurf:blind`) hält sie dann stabil.
  */
-export function kennungen(e: Erfassung): Kennung[] {
+export function kennungen(e: Erfassung, fest?: Kennung[]): Kennung[] {
+  if (fest) return fest
   const liste = e.programme.flatMap((p, i) =>
     p.massnahmen.map((m, j) => ({
       programm: i,
@@ -173,7 +184,49 @@ export function kennungen(e: Erfassung): Kennung[] {
   )
   liste.sort((a, b) => (a.schluessel < b.schluessel ? -1 : a.schluessel > b.schluessel ? 1 : a.programm - b.programm || a.massnahme - b.massnahme))
   const stellen = String(liste.length).length < 2 ? 2 : String(liste.length).length
-  return liste.map((x, n) => ({ kennung: `M${String(n + 1).padStart(stellen, '0')}`, programm: x.programm, massnahme: x.massnahme }))
+  return liste.map((x, n) => {
+    const p = e.programme[x.programm]
+    const m = p.massnahmen[x.massnahme]
+    return {
+      kennung: `M${String(n + 1).padStart(stellen, '0')}`,
+      programm: x.programm,
+      massnahme: x.massnahme,
+      partei_id: p.partei_id,
+      land: p.land,
+      beschreibung: anfang(m.beschreibung),
+      zitat: anfang(m.zitat),
+    }
+  })
+}
+
+/**
+ * Passt eine gespeicherte Zuordnung noch zur Erfassung? Jede Maßnahme genau einmal, keine fremde,
+ * dasselbe Programm an derselben Stelle – und keine ausgetauschte Maßnahme: Eine Textkorrektur
+ * ändert Beschreibung oder Zitat, sind beide anders, ist es eine andere Maßnahme.
+ */
+export function pruefeKennungen(e: Erfassung, fest: Kennung[]): string[] {
+  const f: string[] = []
+  const erwartet = new Set(e.programme.flatMap((p, i) => p.massnahmen.map((_, j) => `${i}/${j}`)))
+  const gesehen = new Set<string>()
+  const namen = new Set<string>()
+  for (const x of fest) {
+    const pos = `${x.programm}/${x.massnahme}`
+    if (!erwartet.has(pos)) f.push(`${x.kennung}: Maßnahme ${pos} gibt es in der Erfassung nicht mehr`)
+    else {
+      const p = e.programme[x.programm]
+      const m = p.massnahmen[x.massnahme]
+      if ((x.partei_id !== undefined && x.partei_id !== p.partei_id) || (x.land !== undefined && x.land !== p.land))
+        f.push(`${x.kennung}: Programm ${x.programm} ist jetzt ein anderes (Partei ${p.partei_id}, ${p.land ?? 'Bund'}) – Programme umsortiert?`)
+      else if (x.beschreibung !== undefined && x.zitat !== undefined && x.beschreibung !== anfang(m.beschreibung) && x.zitat !== anfang(m.zitat))
+        f.push(`${x.kennung}: Maßnahme ${pos} hat neue Beschreibung und neues Zitat – ausgetauscht?`)
+    }
+    if (gesehen.has(pos)) f.push(`Maßnahme ${pos}: mehrfach in der Zuordnung`)
+    if (namen.has(x.kennung)) f.push(`${x.kennung}: doppelt vergeben`)
+    gesehen.add(pos)
+    namen.add(x.kennung)
+  }
+  for (const pos of erwartet) if (!gesehen.has(pos)) f.push(`Maßnahme ${pos}: fehlt in der gespeicherten Zuordnung`)
+  return f
 }
 
 /** Ebene eines Instruments aus den Maßnahmen, die darauf verweisen. */
@@ -190,11 +243,11 @@ export interface BlindListe {
 }
 
 /** Was der Bewertungs-Agent sieht: Thema, Ursachen, vorhandene Instrumente und Maßnahmen ohne Partei. */
-export function blindListe(k: Katalog, e: Erfassung): BlindListe {
+export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindListe {
   const thema = k.themen.find((t) => t.id === e.thema_id)
   if (!thema) throw new Error(`Thema ${e.thema_id} nicht im Katalog`)
   const weitere = k.parteien.flatMap((p) => [p.name, p.kurzname])
-  const massnahmen = kennungen(e).map(({ kennung, programm, massnahme }) => {
+  const massnahmen = kennungen(e, fest).map(({ kennung, programm, massnahme }) => {
     const p = e.programme[programm]
     const m = p.massnahmen[massnahme]
     return {
@@ -237,6 +290,7 @@ function pruefeEinzel(was: string, b: Einzelbewertung): string[] {
   if (!b.begruendung?.trim()) f.push(`${was}: begruendung fehlt`)
   if (!EVIDENZ.has(b.evidenz)) f.push(`${was}: evidenz muss belegt, gemischt oder offen sein`)
   if (b.wirksamkeit === 3 && b.evidenz !== 'belegt') f.push(`${was}: Wirksamkeit 3 nur mit evidenz „belegt“`)
+  if (b.begruendung && b.begruendung.length > 300) f.push(`${was}: begruendung ist länger als 300 Zeichen`)
   return f
 }
 
@@ -261,7 +315,9 @@ export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
     for (const [j, m] of p.massnahmen.entries()) {
       const was = `${name}, Maßnahme ${j + 1}`
       if (!m.beschreibung?.trim()) f.push(`${was}: beschreibung fehlt`)
+      else if (m.beschreibung.length > 200) f.push(`${was}: beschreibung ist länger als 200 Zeichen (${m.beschreibung.length})`)
       if (!m.zitat?.trim()) f.push(`${was}: zitat fehlt`)
+      else if (m.zitat.length > 800) f.push(`${was}: zitat ist länger als 800 Zeichen`)
       if (!Number.isInteger(m.seite) || m.seite < 1) f.push(`${was}: seite muss die PDF-Seite sein (ganze Zahl ≥ 1)`)
       if (!m.ursachen_ids?.length) f.push(`${was}: ursachen_ids fehlen`)
       for (const id of m.ursachen_ids ?? []) {
@@ -275,13 +331,14 @@ export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
 }
 
 /** Prüft die Bewertung: jede Kennung genau einmal, Instrumente bekannt und auf einer Ebene. */
-export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung): string[] {
+export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung, fest?: Kennung[]): string[] {
   const f: string[] = []
-  const alle = new Map(kennungen(e).map((x) => [x.kennung, x]))
+  const alle = new Map(kennungen(e, fest).map((x) => [x.kennung, x]))
   const vorhandene = new Set(k.instrumente.filter((i) => i.thema_id === e.thema_id).map((i) => i.id))
   const neue = new Map((b.neue_instrumente ?? []).map((i) => [i.kennung, i]))
   for (const i of b.neue_instrumente ?? []) {
     if (!i.name?.trim()) f.push(`Instrument ${i.kennung}: name fehlt`)
+    else if (i.name.length > 120) f.push(`Instrument ${i.kennung}: name ist länger als 120 Zeichen`)
     f.push(...pruefeEinzel(`Instrument ${i.kennung}`, i))
   }
   const ebenen = new Map<number | string, Set<string>>()
@@ -311,13 +368,31 @@ export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung): string[
   return f
 }
 
+/**
+ * Hinweise (keine Fehler) zur Bewertung: Fast alles „offen“ heißt meist, dass der Forschungsstand
+ * nicht recherchiert wurde; sehr viele Instrumente für wenige Maßnahmen heißt, dass gleiche
+ * Lösungswege nicht zusammengefasst wurden.
+ */
+export function bewertungsHinweise(b: Bewertung): string[] {
+  const h: string[] = []
+  const werte = [...(b.neue_instrumente ?? []), ...(b.zuordnung ?? []).flatMap((z) => ('einzeln' in z ? [z.einzeln] : []))]
+  const offen = werte.filter((w) => w.evidenz === 'offen').length
+  if (werte.length >= 5 && offen / werte.length > 0.6) h.push(`${offen} von ${werte.length} Bewertungen mit evidenz „offen“ – Forschungsstand recherchieren lassen`)
+  const belegt = werte.filter((w) => w.evidenz !== 'offen' && !w.beleg_studie_url)
+  if (belegt.length) h.push(`${belegt.length} Bewertungen mit evidenz „belegt“ oder „gemischt“ ohne beleg_studie_url`)
+  const massnahmen = (b.zuordnung ?? []).length
+  if (massnahmen >= 20 && (b.neue_instrumente ?? []).length / massnahmen > 0.5)
+    h.push(`${(b.neue_instrumente ?? []).length} Instrumente für ${massnahmen} Maßnahmen – gleiche Lösungswege zusammenfassen?`)
+  return h
+}
+
 type Json = Record<string, unknown>
 
 /**
  * Schreibt Erfassung und Bewertung in die Themendatei (als Objekt): neue Instrumente,
  * je Programm ein Abdeckungseintrag, alles als ungeprüfter KI-Entwurf mit neuen IDs.
  */
-export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, heute: string): Json {
+export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, heute: string, fest?: Kennung[]): Json {
   let id = naechsteId(k)
   const neueIds = new Map<string, number>()
   const instrumente = [...((datei.instrumente as Json[] | undefined) ?? [])]
@@ -327,7 +402,7 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
     instrumente.push({ id: id++, ...rest })
   }
   const zuordnung = new Map((b.zuordnung ?? []).map((z) => [z.kennung, z]))
-  const kennungNach = new Map(kennungen(e).map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
+  const kennungNach = new Map(kennungen(e, fest).map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
   const abdeckung = [...((datei.abdeckung as Json[] | undefined) ?? [])]
   for (const [i, p] of e.programme.entries()) {
     const partei = k.parteien.find((x) => x.id === p.partei_id)!

@@ -3,6 +3,8 @@
 //         npm run programm:text -- <url oder datei.pdf> --seiten 2-4,57   – nur diese Seiten (etwa Inhaltsverzeichnis, ein Kapitel)
 //         npm run programm:text -- <url oder datei.pdf> --suche "Schulsozialarbeit"
 // Eine URL wird über den Zwischenspeicher .cache/ geladen (npm run programme:laden).
+// Unter PowerShell 7 verschluckt npm Optionen mit Wert, wenn "--" nicht in Anführungszeichen steht:
+//   npm run programm:text '--' <url> '--seiten' 2-4      oder direkt: node --experimental-strip-types scripts/entwurf/programm-text.ts <url> --seiten 2-4
 // Über alle Programme auf einmal sucht npm run programme:suche.
 // Die Seitenzahl in „===== Seite N =====“ ist die PDF-Seite für den Beleg (#page=N),
 // nicht die gedruckte Seitenzahl.
@@ -16,6 +18,11 @@ const optionen = optionenAus(argumente)
 const [quelle, ausgabe] = argumente
 if (!quelle) {
   console.error('Aufruf: npm run programm:text -- <url oder datei.pdf> [ausgabe.txt] [--seiten 2-4,57] [--suche "Wort"]')
+  process.exit(1)
+}
+// Ein Seitenbereich oder Suchwort als Ausgabedatei heißt: npm hat die Option davor verschluckt (PowerShell, siehe oben).
+if (ausgabe && (/^[\d,\s-]+$/.test(ausgabe) || !/\.\w+$/.test(ausgabe))) {
+  console.error(`"${ausgabe}" sieht nicht wie eine Ausgabedatei aus (Endung fehlt). Fehlt "--seiten" oder "--suche"? Unter PowerShell: npm run programm:text '--' <url> '--seiten' 2-4`)
   process.exit(1)
 }
 

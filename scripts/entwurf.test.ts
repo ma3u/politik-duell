@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { blindListe, eintragen, kennungen, ohneParteinamen, programmServer, pruefeBewertung, pruefeErfassung, ursachenFreigegeben, type Bewertung, type Erfassung } from './entwurf'
+import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, pruefeBewertung, pruefeErfassung, pruefeKennungen, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
 
 const PARTEIEN: Datei = {
   pfad: 'parteien.json',
@@ -108,6 +108,75 @@ describe('Liste ohne Parteinamen', () => {
     expect(text).not.toMatch(/partei_id|Freie Demokraten|LINKE|eins\.de|zwei/)
     expect(liste.massnahmen.find((m) => m.ebene === 'land')?.zitat).toBe('Die [Partei] will mehr Kitas.')
     expect(liste.ursachen).toHaveLength(2)
+  })
+
+  it('hält gespeicherte Kennungen stabil, auch wenn ein Text später geändert wird', () => {
+    const e = erfassung()
+    const fest = kennungen(e)
+    expect(pruefeKennungen(e, fest)).toEqual([])
+    // Ohne gespeicherte Zuordnung verschiebt sich die Reihenfolge bei manchen Textänderungen (Prüfsumme).
+    const verschiebt = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].some((x) => {
+      e.programme[0].massnahmen[0].beschreibung = `Kitaplätze fördern ${x}`
+      const nur = (l: Kennung[]) => JSON.stringify(l.map(({ kennung, programm, massnahme }) => [kennung, programm, massnahme]))
+      return nur(kennungen(e)) !== nur(fest)
+    })
+    expect(verschiebt).toBe(true)
+    expect(kennungen(e, fest)).toEqual(fest)
+    expect(pruefeKennungen(e, fest)).toEqual([])
+    const liste = blindListe(katalog(), e, fest)
+    expect(liste.massnahmen.map((m) => m.kennung)).toEqual(fest.map((x) => x.kennung))
+    // Eine Maßnahme mehr oder weniger macht die gespeicherte Zuordnung ungültig.
+    e.programme[0].massnahmen.push({ beschreibung: 'Neu', ursachen_ids: [1701], zitat: 'Neu.', seite: 1 })
+    expect(pruefeKennungen(e, fest).join()).toMatch(/fehlt in der gespeicherten Zuordnung/)
+    e.programme[0].massnahmen.splice(0, 2)
+    expect(pruefeKennungen(e, fest).join()).toMatch(/gibt es in der Erfassung nicht mehr/)
+  })
+
+  it('erkennt umsortierte Programme und ausgetauschte Maßnahmen bei gleicher Anzahl', () => {
+    // Zwei Programme mit gleich vielen Maßnahmen tauschen: Positionen passen, Parteien nicht.
+    const e = erfassung()
+    e.programme[0].massnahmen.splice(1)
+    const fest = kennungen(e)
+    const getauscht = structuredClone(e)
+    ;[getauscht.programme[0], getauscht.programme[2]] = [getauscht.programme[2], getauscht.programme[0]]
+    expect(pruefeKennungen(getauscht, fest).join()).toMatch(/Programme umsortiert/)
+    // Nur das Zitat korrigiert: erlaubt. Beschreibung und Zitat neu: andere Maßnahme.
+    e.programme[0].massnahmen[0].zitat = 'Korrigiertes Zitat.'
+    expect(pruefeKennungen(e, fest)).toEqual([])
+    e.programme[0].massnahmen[0].beschreibung = 'Ganz andere Maßnahme'
+    expect(pruefeKennungen(e, fest).join()).toMatch(/ausgetauscht/)
+    // Alte kennungen.json ohne die neuen Felder wird weiter nach Position geprüft.
+    const alt = fest.map(({ kennung, programm, massnahme }) => ({ kennung, programm, massnahme }))
+    expect(pruefeKennungen(e, alt)).toEqual([])
+  })
+})
+
+describe('Hinweise zur Bewertung', () => {
+  it('warnt vor fast nur „offen“, fehlenden Quellen und zu vielen Instrumenten', () => {
+    const ins = (n: number, evidenz: 'offen' | 'gemischt', url?: string) =>
+      ({ kennung: `I${n}`, name: `I${n}`, wirksamkeit: 1, umsetzbarkeit: 1, begruendung: 'x', evidenz, ...(url ? { beleg_studie_url: url } : {}) }) as Bewertung['neue_instrumente'][number]
+    const b: Bewertung = {
+      neue_instrumente: [ins(1, 'offen'), ins(2, 'offen'), ins(3, 'offen'), ins(4, 'gemischt'), ins(5, 'offen')],
+      zuordnung: Array.from({ length: 8 }, (_, i) => ({ kennung: `M${i + 1}`, instrument: `I${(i % 5) + 1}` })),
+    }
+    const h = bewertungsHinweise(b).join('\n')
+    expect(h).toMatch(/4 von 5 Bewertungen mit evidenz „offen“/)
+    expect(h).toMatch(/1 Bewertungen mit evidenz/)
+    expect(bewertungsHinweise({ neue_instrumente: [ins(1, 'gemischt', 'https://x.de')], zuordnung: [{ kennung: 'M1', instrument: 'I1' }] })).toEqual([])
+  })
+})
+
+describe('Erfassung und Bewertung prüfen (Längen)', () => {
+  it('meldet zu lange Beschreibungen, Zitate und Begründungen vor dem Eintragen', () => {
+    const e = erfassung()
+    e.programme[0].massnahmen[0].beschreibung = 'x'.repeat(201)
+    e.programme[0].massnahmen[1].zitat = 'x'.repeat(801)
+    expect(pruefeErfassung(katalog(), e).join('\n')).toMatch(/länger als 200 Zeichen[^]*länger als 800 Zeichen/)
+    const f = erfassung()
+    const b = bewertung(f)
+    b.neue_instrumente[0].begruendung = 'x'.repeat(301)
+    b.neue_instrumente[0].name = 'x'.repeat(121)
+    expect(pruefeBewertung(katalog(), f, b).join('\n')).toMatch(/name ist länger als 120[^]*begruendung ist länger als 300/)
   })
 })
 

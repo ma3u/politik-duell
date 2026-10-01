@@ -329,7 +329,9 @@ Werkzeuge für Schritt 2 und 3 des Ablaufs (neues Thema oder neues Programm). Si
 
 ```bash
 npm run programme:laden                                   # alle Programme in den Zwischenspeicher .cache/ (einmalig, ca. 1 Minute)
+npm run programme:texte -- .cache/entwurf/17/texte        # Text aller aktuellen Programme als Textdateien mit Seitenmarken (zum Lesen mit Read/Grep)
 npm run programme:suche -- "Wort" "Synonym"               # alle Programme auf einmal durchsuchen: Fundstellen + Übersicht je Programm
+npm run programme:suche -- "Wort" "Synonym" --je-begriff --zaehlen   # Treffer je Begriff und Programm
 npm run programme:suche -- "Wort" --land BE               # nur Landesprogramme von BE (--bund: nur Bund; --partei SPD; --zaehlen)
 npm run programm:text -- <url|datei.pdf> --seiten 2-4     # nur diese Seiten (Inhaltsverzeichnis, ein Kapitel)
 npm run programm:text -- <url|datei.pdf> auszug.txt       # Text mit Seitenmarken „===== Seite N =====“ (N = #page=N)
@@ -363,9 +365,13 @@ Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die
 
 ```bash
 npm run ursachen:freigegeben -- 17                      # bricht ab, wenn die Ursachen nicht auf main stehen oder verändert wurden
-npm run entwurf:blind -- erfassung.json                 # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 …
+npm run entwurf:blind -- erfassung.json --ausgabe blind.json   # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 … (gespeichert als kennungen.json)
+npm run entwurf:json -- antwort.txt bewertung.json      # JSON-Objekt aus einer gespeicherten Agentenantwort holen
+npm run entwurf:bewertung-pruefen -- erfassung.json bewertung.json   # Ebenen, unbenutzte Instrumente, Wirksamkeit 3, Hinweise (viel „offen“)
 npm run entwurf:eintragen -- erfassung.json bewertung.json   # neue IDs, Beleg-Links, KI-Entwurf; schreibt nur einen gültigen Katalog
 ```
+
+**Windows/PowerShell 7:** npm verschluckt Optionen mit Wert (`--partei`, `--seiten`, `--ausgabe`, `--thema`), wenn das erste `--` nicht in Anführungszeichen steht. Schreibe dann `npm run programme:suche '--' "Wort" '--partei' SPD` oder rufe das Skript direkt auf (`node --experimental-strip-types scripts/entwurf/programme-suche.ts "Wort" --partei SPD`).
 
 Formate der Arbeitsdateien (`Erfassung`, `Bewertung`) stehen in `scripts/entwurf.ts`; sie liegen in `.cache/entwurf/<Themen-ID>/` und kommen nicht ins Repository. Ein Programm, das ein Agent nicht laden konnte, wird ausgelassen (bleibt „noch nicht erfasst“) und nie als „keine Maßnahme“ eingetragen.
 
