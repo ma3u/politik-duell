@@ -532,7 +532,7 @@ Verworfen:
 
 ## Forschungsstand: Integration, Abschiebung, Zuzug (1. 10. 2026)
 
-Stand: 1. 10. 2026 · KI-Recherche, Studien teils im Original (Foged u. a.), teils über die Zusammenfassungen der Verlage geprüft; noch nicht von der Betreiberin bestätigt
+Stand: 1. 10. 2026 · KI-Recherche, noch nicht von der Betreiberin bestätigt. Geprüft am 1. 10. 2026: im Volltext Foged u. a., Dustmann u. a., Gehrsitz/Ungerer, ifo; im Abstract (Verlagsseite) Couttenier u. a., Pinotti, Fasani u. a., Hines/Peri, Lange/Sommerfeld, Marie/Pinotti. Miles/Cox und die Zahlen zu den Abgeschobenen nur über [EconoFact](https://econofact.org/does-deporting-immigrants-lower-crime-evidence-from-secure-communities) (Hines/Peri); die Originalseiten (SSRN) waren nicht abrufbar.
 
 Frage der Betreiberin: Ist bessere Integration langfristig wirksamer gegen Kriminalität als mehr Abschiebungen und Abschottung? Eine Studie, die die drei Wege direkt vergleicht, gibt es nicht. Die einzelnen Wege sind unterschiedlich gut untersucht:
 
@@ -542,9 +542,9 @@ Frage der Betreiberin: Ist bessere Integration langfristig wirksamer gegen Krimi
 | Arbeitsverbote | Fasani/Frattini/Minale, JEEA 2021 (Europa) | Ein Arbeitsverbot nach Ankunft senkt die Beschäftigung noch bis zu zehn Jahre später um 15 % (Kriminalität nicht untersucht) |
 | Legaler Aufenthalt | Pinotti, AER 2017 (Italien, Regressionsdiskontinuität „click days“) | Legalisierung senkt die Kriminalität der Betroffenen von 1,1 % um 0,6 Prozentpunkte, also etwa um die Hälfte |
 | Sprachkurse | Foged u. a., REStat 2024 (Dänemark, 18 Jahre) | Einkommen dauerhaft höher; Kriminalität der Erwachsenen unverändert, die ihrer Söhne niedriger |
-| Leistungskürzung | Dustmann/Landersø/Andersen (Dänemark, Starthilfe 2002) | rund 40 % weniger Leistungen: kurz mehr Beschäftigung, aber mehr Diebstahl und Ladendiebstahl, schlechtere Bildung und mehr Kriminalität bei Jugendlichen |
-| Abschiebungen | Miles/Cox, JLE 2014; Hines/Peri 2019 (USA, Secure Communities, gestaffelte Einführung) | mehr Abschiebungen, aber keine messbare Senkung der Gewalt- oder Eigentumskriminalität; nur rund ein Viertel der Abgeschobenen war wegen schwerer Taten verurteilt |
-| Weniger Zuzug | Marie/Pinotti, JEP 2024 (55 Länder); ifo 2025 (Kreise 2018–2023) | kein systematischer Zusammenhang zwischen Zuwanderung und Kriminalität |
+| Leistungskürzung | Dustmann/Landersø/Andersen (Dänemark, Starthilfe 2002; IZA DP 16077) | rund 40 % weniger Leistungen: kurzfristig mehr Beschäftigung, aber mehr Armut und Beschaffungskriminalität (v. a. Ladendiebstahl) |
+| Abschiebungen | Miles/Cox, JLE 2014; Hines/Peri 2019 (USA, Secure Communities, gestaffelte Einführung) | mehr Abschiebungen, aber keine messbare Senkung der Gewalt- oder Eigentumskriminalität; über 15 % der Abgeschobenen hatten keine Verurteilung, weitere 30 % nur geringfügige Vergehen (Hines/Peri, laut EconoFact) |
+| Weniger Zuzug | Marie/Pinotti, JEP 2024 (internationale Daten); ifo 2025 (Kreise 2018–2023) | kein systematischer Zusammenhang zwischen Zuwanderung und Kriminalität |
 | Weniger Zuzug | Gehrsitz/Ungerer, Economica 2022; Lange/Sommerfeld, Labour Economics 2024 (Deutschland 2014–2016, Verteilung als natürliches Experiment) | moderater Anstieg mit größerem Zuzug, teils mit einem Jahr Verzögerung |
 
 Was daraus folgt:
