@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, pruefeBewertung, pruefeErfassung, pruefeKennungen, ursachenFreigegeben, type Bewertung, type Erfassung } from './entwurf'
+import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, pruefeBewertung, pruefeErfassung, pruefeKennungen, ursachenFreigegeben, type Bewertung, type Erfassung } from './entwurf'
 
 const PARTEIEN: Datei = {
   pfad: 'parteien.json',
@@ -76,6 +76,18 @@ describe('Ursachen freigegeben', () => {
     const fehler = ursachenFreigegeben(k, geaendert, 17).join('\n')
     expect(fehler).toMatch(/1701 weicht/)
     expect(fehler).toMatch(/1703 ist nicht freigegeben/)
+  })
+})
+
+describe('Quellen beim Festlegen der Ursachen', () => {
+  it('sperrt die Server der Wahlprogramme, auch als Archivkopie', () => {
+    const k = katalog()
+    expect(programmServer(k, 'https://www.eins.de/andere.pdf')).toMatch(/eins\.de/)
+    expect(programmServer(k, 'https://landtag.zwei-st.de/x.pdf')).toMatch(/zwei-st\.de/)
+    expect(programmServer(k, 'https://web.archive.org/web/2025id_/https://zwei.de/p.pdf')).toMatch(/zwei\.de/)
+    expect(programmServer(k, 'https://web.archive.org/web/2025/https%3A%2F%2Fzwei.de%2Fp.pdf')).toMatch(/zwei\.de/)
+    expect(programmServer(k, 'https://www.dji.de/studie.pdf')).toBeNull()
+    expect(programmServer(k, 'https://keins.de/p.pdf')).toBeNull()
   })
 })
 

@@ -82,6 +82,33 @@
       "umsetzbarkeit": 3,
       "begruendung": "Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 7258,
+      "name": "Elektro- und verbrauchsarme Fahrzeuge fördern, um weniger Kraftstoff zu brauchen (Bund, Ölabhängigkeit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html"
+    },
+    {
+      "id": 7259,
+      "name": "Alternative Kraftstoffe wie E-Fuels zulassen und gleichstellen (Bund, Ölabhängigkeit)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf"
+    },
+    {
+      "id": 7260,
+      "name": "Energie- und Umsatzsteuer in Preiskrisen schnell senken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1"
     }
   ],
   "abdeckung": [
@@ -118,6 +145,42 @@
           "zitat": "Für die E-Mobilität muss die Ladeinfrastruktur angemessen ausgebaut werden.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7265,
+          "instrument": 7259,
+          "beschreibung": "Technologieoffenheit: E-Fuels, Wasserstoff und nachhaltige Biokraftstoffe neben der Elektromobilität nutzen",
+          "ursachen_ids": [1501],
+          "zitat": "Neben der Elektromobilität sollen alle klimafreundlichen Möglichkeiten für alternative Antriebe und energieeffiziente Kraftstoffe genutzt werden. Dazu gehören beispielsweise E-Fuels, Wasserstoff und nachhaltige Biokraftstoffe.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=75",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7269,
+          "instrument": 7260,
+          "beschreibung": "In angespannter Lage Energie- und Umsatzsteuer für Güter des täglichen Bedarfs schnell senken dürfen",
+          "ursachen_ids": [1501],
+          "zitat": "Wir setzen uns in Europa dafür ein, dass in angespannter Lage die Energie- und Umsatzsteuer für Güter des täglichen Bedarfs schnell und ohne langwierige Genehmigung reduziert werden dürfen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7270,
+          "beschreibung": "Europäischen Energiebinnenmarkt stärken, internationale Energiepartnerschaften ausbauen",
+          "ursachen_ids": [1501],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Mehr Lieferländer machen Deutschland weniger anfällig für Preissprünge bei einzelnen Lieferanten; die Maßnahme nennt weder Öl noch konkrete Schritte.",
+          "zitat": "Für notwendige Energieimporte und -exporte mobilisieren wir europäische Potenziale und intensivieren internationale Partnerschaften.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+          "evidenz": "offen",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -158,6 +221,17 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7261,
+          "instrument": 7258,
+          "beschreibung": "Befristeter Steuerabzugsbetrag für in Deutschland produzierte E-Autos, auch Gebrauchte und Leasing",
+          "ursachen_ids": [1501],
+          "zitat": "Wir wollen mit einem zeitlich befristeten Steuerabzugsbetrag für die Anschaffung eines in Deutschland produzierten E-Autos auch den privaten Neuwagenkauf fördern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=7",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -196,6 +270,17 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7262,
+          "instrument": 7258,
+          "beschreibung": "Staatliche Unterstützung beim Kauf verbrauchsarmer E-Autos, Social Leasing, Ladekarte",
+          "ursachen_ids": [1501],
+          "zitat": "Dazu schlagen wir eine staatliche Unterstützung beim Erwerb eines verbrauchsarmen E-Autos vor, welches zusätzlich die europäische Automobilwirtschaft unterstützt.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=40",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -213,6 +298,17 @@
           "zitat": "Die EU-Mindestsätze für die Energiesteuer auf Heiz- und Kraftstoffe wollen wir angesichts des tendenziell steigenden CO2-Preises sukzessive bis auf null abschmelzen.",
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=17",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7266,
+          "instrument": 7259,
+          "beschreibung": "Statt eines Verbrennerverbots alternative Kraftstoffe wie E-Fuels ermöglichen",
+          "ursachen_ids": [1501],
+          "zitat": "Statt eines Verbotes des Verbrennungsmotors, ermöglichen wir alternative Kraftstoffe wie etwa E-Fuels.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -244,6 +340,17 @@
           "zitat": "Wir fordern eine ersatzlose Abschaffung der CO₂-Abgaben.",
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=58",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7267,
+          "instrument": 7259,
+          "beschreibung": "Synthetische Kraftstoffe berücksichtigen und bei den Abgaben wie Elektrofahrzeuge behandeln",
+          "ursachen_ids": [1501],
+          "zitat": "sind synthetische Kraftstoffe als zukunftsfähiger Treibstoff für Verbrennungsmotoren zu berücksichtigen. Fahrzeuge mit Verbrennungsmotor, welche mit synthetischem Kraftstoff angetrieben werden, müssen hinsichtlich Ihrer Abgabenlast gegenüber elektrisch angetriebenen Fahrzeugen eine Gleichbehandlung erfahren.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=44",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }
@@ -298,6 +405,17 @@
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
+        },
+        {
+          "id": 7263,
+          "instrument": 7258,
+          "beschreibung": "Sozial gestaffelte Förderung kleiner E-Fahrzeuge für Pendelnde auf dem Land",
+          "ursachen_ids": [1501],
+          "zitat": "Menschen im ländlichen Raum, die auf ein Auto zum Pendeln angewiesen sind, wollen wir sozial gestaffelte Förderangebote für kleine E-Fahrzeuge einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=32",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
         }
       ]
     },
@@ -323,6 +441,42 @@
           "zitat": "Mit einem „Volksleasing“ für umweltfreundliche Fahrzeuge aus europäischer Produktion, einschließlich verbrauchsarmer Verbrenner (unter 5l), wollen wir Menschen in Regionen mit geringen öffentlichen Verkehrsangeboten angemessene Mobilität ermöglichen.",
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7264,
+          "instrument": 7258,
+          "beschreibung": "Volksleasing für umweltfreundliche Fahrzeuge aus europäischer Produktion, Kaufprämien im niedrigen Preissegment",
+          "ursachen_ids": [1501],
+          "zitat": "Mit einem „Volksleasing“ für umweltfreundliche Fahrzeuge aus europäischer Produktion, einschließlich verbrauchsarmer Verbrenner (unter 5l), wollen wir Menschen in Regionen mit geringen öffentlichen Verkehrsangeboten angemessene Mobilität ermöglichen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7268,
+          "instrument": 7259,
+          "beschreibung": "Verbrauchsarme Verbrenner und alternative Kraftstoffe fördern",
+          "ursachen_ids": [1501],
+          "zitat": "Das gilt für die Entwicklung verbrauchsarmer und effizienter Verbrennermotoren sowie für die Förderung alternativer Kraftstoffe.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7271,
+          "beschreibung": "Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis",
+          "ursachen_ids": [1501],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Langfristige Verträge können Preisschwankungen dämpfen, binden aber auch an Preise, wenn der Markt fällt; die Maßnahme nennt kein Öl, sondern Energieimporte allgemein.",
+          "zitat": "Wir brauchen wieder langfristige Verträge zu Energieimporten, die sich am Kriterium des niedrigsten Preises orientieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "evidenz": "offen",
+          "stand": "2026-10-01",
           "geprueft": false,
           "ki_entwurf": true
         }

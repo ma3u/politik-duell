@@ -154,6 +154,14 @@
       "umsetzbarkeit": 3,
       "begruendung": "Senkt die Energiekosten landwirtschaftlicher Betriebe um wenige Hundert Millionen Euro im Jahr; auf die Lebensmittelpreise wirkt das kaum.",
       "evidenz": "offen"
+    },
+    {
+      "id": 7228,
+      "name": "Geringqualifizierte zum Berufsabschluss führen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente.",
+      "evidenz": "gemischt"
     }
   ],
   "abdeckung": [
@@ -189,6 +197,17 @@
           "ursachen_ids": [1101],
           "zitat": "Wir führen die Agrardieselrückvergütung wieder vollständig ein.",
           "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=36",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7229,
+          "instrument": 7228,
+          "beschreibung": "Menschen in Helfertätigkeiten auf dem Weg zur Fachkraft fördern",
+          "ursachen_ids": [1105],
+          "zitat": "Menschen in Helfertätigkeiten fördern wir auf ihrem Weg zu einer qualifizierten Fachkraft und entwickeln Anreize zum Erwerb beruflicher Qualifikationen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=15",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true
@@ -459,6 +478,17 @@
           "ursachen_ids": [1105],
           "zitat": "Volle Sozialversicherung in jedem Arbeitsverhältnis ab dem ersten Euro statt Minijobs, Midijobs und Ausnahmen für ausländische Saisonbeschäftigte",
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=26",
+          "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7230,
+          "instrument": 7228,
+          "beschreibung": "Anspruch auf verlängerte Umschulung und erleichterte Externenprüfung für Menschen ohne Ausbildung",
+          "ursachen_ids": [1105],
+          "zitat": "Menschen ohne Ausbildung sollten einen Anspruch auf verlängerte Umschulungen und auf erleichterte Externenprüfungen erhalten, damit sie anerkannte Berufsabschlüsse nachholen können",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40",
           "stand": "2026-09-30",
           "geprueft": false,
           "ki_entwurf": true

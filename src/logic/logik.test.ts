@@ -22,6 +22,13 @@ describe('analysiere (Mock der Edge Function)', () => {
     expect(a.nachfrage).toBeTruthy()
   })
 
+  it('fragt bei einem Pauschalurteil nach dem Erlebten und gibt das Urteil nicht wieder', () => {
+    const a = analysiere(spieler('Die Ausländer sind doch alle kriminell'), THEMEN, URSACHEN)
+    expect(a.typ).toBe('forderung')
+    expect(a.nachfrage).toContain('selbst erlebt')
+    expect(a.zusammenfassung).not.toMatch(/kriminell|Ausländer/i)
+  })
+
   it('fragt höchstens zweimal nach', () => {
     const verlauf: Nachricht[] = [
       { von: 'spieler', text: 'Mehr Wohnungen!' },

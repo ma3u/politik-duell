@@ -15,6 +15,13 @@ describe('systemPrompt', () => {
     expect(p).toContain('Ursache 202')
     expect(p).not.toMatch(/https?:\/\//)
   })
+
+  it('behandelt Pauschalurteile über Gruppen wie Forderungen und trennt Gefühl von Erlebnis', () => {
+    const p = systemPrompt(THEMEN, URSACHEN)
+    expect(p).toContain('pauschales Urteil über eine Gruppe')
+    expect(p).toContain('Widersprich nicht, belehre nicht')
+    expect(p).toContain('Unterscheide Erlebnis und Gefühl')
+  })
 })
 
 describe('nutzerNachrichten', () => {
