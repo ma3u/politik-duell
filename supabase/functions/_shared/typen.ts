@@ -100,6 +100,12 @@ export interface Massnahme {
   geprueft: boolean
   /** Gehört zu einem Eintrag, der nur als KI-Entwurf vorliegt (nur in der geschlossenen Testphase sichtbar). */
   ki_entwurf?: boolean
+  /**
+   * Nur bei KI-Entwürfen: Stammen die Entwurfswerte aus der Bewertung ohne Parteinamen (`blind`) oder
+   * wurden sie mit Kenntnis der Partei vergeben oder geändert (`nicht_blind`)? null = vor dem 1. 10. 2026
+   * entstanden, nicht blind.
+   */
+  entwurf_herkunft?: 'blind' | 'nicht_blind' | null
 }
 
 /**

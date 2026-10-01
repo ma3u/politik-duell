@@ -162,3 +162,37 @@ describe('Formatierung', () => {
     expect(pruefeDatenordner().fehler).toEqual([])
   })
 })
+
+describe('Nachweis für „geprueft“ und Exporte im Repository', () => {
+  const thema = (bewertung: Record<string, unknown>, geprueft = true, pruefung?: unknown) => ({
+    ...THEMA,
+    abdeckung: [
+      { partei_id: 1, massnahmen: [{ ...massnahme(101, 3, 2), bewertung, geprueft, ...(pruefung ? { pruefung } : {}) }] },
+      { partei_id: 2, keine_massnahme: { begruendung: 'Kapitel Gesundheit gelesen.', stand: '2026-03-01', geprueft: true, pruefung: { belege_geprueft: '2026-10-06', zweite_suche: 'Hausarzt, Praxis, Termin erneut gesucht; Kapitel 4 gelesen; Treffermatrix: 0' } } },
+    ],
+  })
+  const bw = { anzahl: 3, median_w: 3, median_u: 2, spannweite: 1, datum: '2026-10-05', entwurf: [2, 3] }
+  const ex = (werte?: [number, number][], ueber: Record<string, unknown> = {}) => ({
+    pfad: 'daten/pruefungen/thema-01-2026-10-05.json',
+    inhalt: exportDatei([b(101, { ...(werte ? { werte } : {}), ...ueber })]),
+  })
+  const fehler = (t: unknown, exporte = [ex()]) => pruefeKatalog(PARTEIEN, [{ pfad: 'themen/01.json', inhalt: t }], undefined, exporte).fehler.join('\n')
+
+  it('verlangt das Datum der Belegprüfung und bei „keine Maßnahme“ die zweite Suche', () => {
+    expect(fehler(thema(bw, true))).toMatch(/„geprueft“ nur mit „pruefung“/)
+    expect(fehler(thema(bw, true, { belege_geprueft: '2026-10-06' }))).toBe('')
+    const kurz = thema(bw, true, { belege_geprueft: '2026-10-06' })
+    ;(kurz.abdeckung[1] as { keine_massnahme: Record<string, unknown> }).keine_massnahme.pruefung = { belege_geprueft: '2026-10-06', zweite_suche: 'ja' }
+    expect(fehler(kurz)).toMatch(/zweite_suche“ nennt Suchbegriffe/)
+  })
+
+  it('gleicht jede „bewertung“ mit dem Export ab', () => {
+    const t = thema(bw, false)
+    expect(fehler(t)).toBe('')
+    expect(fehler(t, [])).toMatch(/kein Export vom 2026-10-05/)
+    expect(fehler(t, [ex(undefined, { median_w: 2 })])).toMatch(/weicht vom Export/)
+    expect(fehler(t, [ex([[2, 2], [3, 2], [3, 3]])])).toBe('')
+    expect(fehler(t, [ex([[2, 2], [2, 2], [3, 3]])])).toMatch(/median_w“ 3 passt nicht/)
+    expect(fehler(t, [ex([[2, 2], [3, 2], [3, 3]], { namen: 'x' })])).toMatch(/unbekanntes Feld „namen“/)
+  })
+})

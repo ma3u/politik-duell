@@ -255,6 +255,20 @@ Einmalig, **in dieser Reihenfolge**. Danach wird eine Runde nicht gewertet, wenn
    [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
    ersetzen → **Deploy**. Enthält auch die neue Regel, dass eine Rolle die Wirksamkeit ohne belegte Wirkung nur bis 2 hebt.
 
+### 12. Herkunft der Entwurfswerte
+
+Einmalig, **in dieser Reihenfolge**. Danach zeigt die Testphase KI-Entwürfe, deren Werte nicht aus der Bewertung
+ohne Parteinamen stammen, als „vorläufige Bewertung, nicht blind“.
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261005000000_entwurf_herkunft.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261005000000_entwurf_herkunft.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Fügt der Tabelle `massnahmen` die Spalte `entwurf_herkunft` hinzu.
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1).
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy** (gleiche Wertung, nur die neue Kennzeichnung).
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

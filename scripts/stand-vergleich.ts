@@ -1,6 +1,7 @@
 // Vergleich mit dem Zielzweig eines Pull Requests (npm run daten:id -- --gegen origin/main):
 // Was ein Pull Request nicht unbemerkt tun darf. Reine Funktionen; IDs prüft scripts/ids.ts.
 import type { Katalog } from '../src/data/katalog.ts'
+import { enthaeltParteinamen } from './entwurf.ts'
 
 const ort = (k: Katalog, partei: number, land: string | null) => `${k.parteien.find((p) => p.id === partei)?.kurzname ?? partei} (${land ?? 'Bund'})`
 
@@ -11,6 +12,11 @@ const ort = (k: Katalog, partei: number, land: string | null) => `${k.parteien.f
  *    Programm als durchsucht, und die Partei bekäme 0 Punkte, ohne dass jemand gesucht hat.
  * 2. Werte aus der Blindbewertung (`entwurf_herkunft: blind`) ändern sich nur durch die Prüfung
  *    (neue `bewertung`). Wer sie mit Kenntnis der Partei ändert, setzt `nicht_blind`.
+ * 3. Phasen getrennt: Ursachen oder Ziel eines Themas und seine Maßnahmen (Abdeckung, Instrumente)
+ *    ändern sich nicht im selben Pull Request – sonst ließen sich Ursachen passend zu den gefundenen
+ *    Maßnahmen zuschneiden. Ausnahme: nachträgliche Ursachen (`nachtraeglich`), wenn jeder aktuelle
+ *    Eintrag des Themas `durchsucht_fuer` angibt.
+ * 4. Neue oder geänderte Ursachen und Ziele nennen keine Partei.
  */
 export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
   const fehler: string[] = []
@@ -44,5 +50,46 @@ export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
   for (const i of neu.instrumente) pruefe(i.id, { werte: werte(i), herkunft: i.entwurf_herkunft, bewertungen: i.bewertungen }, 'Instrument')
   for (const m of neu.massnahmen)
     if (m.instrument_id === undefined) pruefe(m.id, { werte: werte(m), herkunft: m.entwurf_herkunft, bewertungen: m.bewertungen ?? 0 }, 'Maßnahme')
+  fehler.push(...trennePhasen(alt, neu))
+  return fehler
+}
+
+const ursacheText = (u: Katalog['ursachen'][number]) => JSON.stringify([u.beschreibung, u.quelle_url, u.ebene ?? 'bund'])
+
+/** Phase A (Ursachen, Ziel) und Phase B–D (Maßnahmen) desselben Themas nicht im selben Pull Request. */
+export function trennePhasen(alt: Katalog, neu: Katalog): string[] {
+  const fehler: string[] = []
+  const namen = neu.parteien.flatMap((p) => [p.name, p.kurzname])
+  const massnahmenTeil = (k: Katalog, id: number) =>
+    JSON.stringify([
+      k.instrumente.filter((i) => i.thema_id === id),
+      k.massnahmen.filter((m) => m.thema_id === id),
+      k.abdeckung.filter((a) => a.thema_id === id),
+    ])
+  for (const t of neu.themen) {
+    const vorher = alt.themen.find((x) => x.id === t.id)
+    const alteU = new Map(alt.ursachen.filter((u) => u.thema_id === t.id).map((u) => [u.id, u]))
+    const jetztU = neu.ursachen.filter((u) => u.thema_id === t.id)
+    const geaendert = jetztU.filter((u) => !alteU.has(u.id) || ursacheText(alteU.get(u.id)!) !== ursacheText(u))
+    const entfernt = [...alteU.keys()].filter((id) => !jetztU.some((u) => u.id === id))
+    const zielNeu = (vorher?.ziel ?? '') !== (t.ziel ?? '')
+
+    for (const u of geaendert)
+      if (enthaeltParteinamen(u.beschreibung, namen)) fehler.push(`Ursache ${u.id} nennt eine Partei oder Person – Ursachen beschreiben das Problem, nicht wer es wie lösen will`)
+    if (zielNeu && t.ziel && enthaeltParteinamen(t.ziel, namen)) fehler.push(`Ziel von Thema ${t.id} nennt eine Partei oder Person`)
+
+    const phaseA = !vorher || zielNeu || geaendert.length > 0 || entfernt.length > 0
+    if (!phaseA || massnahmenTeil(alt, t.id) === massnahmenTeil(neu, t.id)) continue
+    // Maßnahmen haben sich geändert – und Ursachen oder Ziel auch.
+    const ausnahme =
+      vorher && !zielNeu && !entfernt.length &&
+      geaendert.every((u) => !alteU.has(u.id) && u.nachtraeglich) &&
+      neu.abdeckung.filter((a) => a.thema_id === t.id && a.aktuell).every((a) => a.durchsucht_fuer)
+    if (!ausnahme)
+      fehler.push(
+        `Thema ${t.id}: ${!vorher ? 'neues Thema' : zielNeu ? 'Ziel' : `Ursache ${[...geaendert.map((u) => u.id), ...entfernt].join(', ')}`} und Maßnahmen im selben Pull Request – ` +
+          'erst Ursachen und Ziel freigeben lassen (eigener Pull Request), dann erfassen. Ausnahme: neue Ursache mit „nachtraeglich“ und „durchsucht_fuer“ an jedem aktuellen Eintrag',
+      )
+  }
   return fehler
 }

@@ -64,13 +64,13 @@ ${
   massnahmen.length
     ? `
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, wirksamkeit, umsetzbarkeit,
-  rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf) values
+  rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values
   ${zeilen(
     massnahmen.map(
       (m) =>
         `(${m.id}, ${m.thema_id}, ${m.partei_id}, ${q(m.land)}, ${q(m.beschreibung)}, '{${m.ursachen_ids.join(',')}}', ${m.wirksamkeit}, ${m.umsetzbarkeit}, ` +
         `${m.rollen_modifikator ? `${q(JSON.stringify(m.rollen_modifikator))}::jsonb` : 'null'}, ${q(m.begruendung)}, ` +
-        `${q(m.beleg_programm_url)}, ${q(m.beleg_studie_url)}, ${q(m.evidenz)}, ${q(m.stand)}, ${m.geprueft}, ${m.ki_entwurf ?? false})`,
+        `${q(m.beleg_programm_url)}, ${q(m.beleg_studie_url)}, ${q(m.evidenz)}, ${q(m.stand)}, ${m.geprueft}, ${m.ki_entwurf ?? false}, ${q(m.entwurf_herkunft ?? null)})`,
     ),
   )};
 

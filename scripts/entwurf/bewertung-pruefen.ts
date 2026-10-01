@@ -1,9 +1,9 @@
 // Prüft eine Bewertung (Antwort des Agenten blind-bewertung), ohne etwas zu schreiben:
-// jede Kennung genau einmal, Instrumente bekannt, eine Ebene je Instrument, keine unbenutzten
+// jede Kennung genau einmal, jede Zuordnung zu einer Ursache bestätigt, Instrumente bekannt, eine Ebene je Instrument, keine unbenutzten
 // Instrumente, Wirksamkeit 3 nur mit Beleg – und Hinweise (zu viel „offen“, zu viele Instrumente).
 // Aufruf: npm run entwurf:bewertung-pruefen -- <erfassung.json> <bewertung.json>
 import { readFileSync } from 'node:fs'
-import { bewertungsHinweise, pruefeBewertung, pruefeErfassung, pruefeProtokoll, type Bewertung, type Erfassung } from '../entwurf.ts'
+import { bewertungsHinweise, pruefeBewertung, pruefeErfassung, pruefeProtokoll, zuordnungsHinweise, type Bewertung, type Erfassung } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { leseKennungen } from './kennungen-datei.ts'
 import { leseProtokoll } from './protokoll-lesen.ts'
@@ -27,7 +27,7 @@ const fehlerliste = [
   ...pruefeBewertung(katalog, erfassung, bewertung, fest),
 ]
 for (const p of fehlerliste) console.error(`Fehler:  ${p}`)
-for (const h of bewertungsHinweise(bewertung)) console.error(`Hinweis: ${h}`)
+for (const h of [...bewertungsHinweise(bewertung), ...zuordnungsHinweise(katalog, erfassung, bewertung, fest)]) console.error(`Hinweis: ${h}`)
 // Das Protokoll verlangt erst entwurf:eintragen – hier schon sagen, was noch fehlt.
 for (const h of pruefeProtokoll(katalog, erfassung, leseProtokoll(erfassungPfad), bewertung.blind_pruefsumme)) console.error(`Hinweis: ${h}`)
 if (fehlerliste.length) process.exit(1)

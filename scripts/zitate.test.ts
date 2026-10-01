@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bereinigeSeite, findeZitat, kompakt, seiteVon, seitenTexte, zitatTeile } from './zitate'
+import { bereinigeSeite, fehlendeZahlen, findeZitat, kompakt, seiteVon, seitenTexte, zitatKontext, zitatTeile } from './zitate'
 
 /** Kleines PDF mit einer Textzeile-Liste je Seite (Helvetica, WinAnsi – Umlaute als Oktal-Escape). */
 function testPdf(seiten: string[][]): Uint8Array {
@@ -68,5 +68,25 @@ describe('Zitatprüfung', () => {
     expect(seiten).toHaveLength(3)
     expect(findeZitat('Wir wollen mehr bezahlbare Wohnungen bauen', seiten, 2)).toEqual({ status: 'ok' })
     expect(findeZitat('Größere Förderung für Städte', seiten, 2)).toEqual({ status: 'andere_seite', seiten: [3] })
+  })
+})
+
+describe('Zitat mit Kontext', () => {
+  const seite = 'Wir wollen die Kita-Gebühren abschaffen, sofern der Bund die Kosten vollständig übernimmt und die Länder zustimmen. Das gilt für alle Kinder ab drei Jahren in allen Einrichtungen des Landes.'
+  it('zeigt den ausgelassenen Text und warnt vor einschränkenden Wörtern und kurzen Teilen', () => {
+    const k = zitatKontext('Wir wollen die Kita-Gebühren abschaffen […] für alle Kinder', [seite], 1)!
+    expect(k.auslassungen).toEqual([', sofern der Bund die Kosten vollständig übernimmt und die Länder zustimmen. Das gilt'])
+    expect(k.warnungen.join()).toMatch(/„sofern“/)
+    expect(k.warnungen.join()).toMatch(/Teil 2 hat nur 13 Zeichen/)
+    expect(zitatKontext('Wir wollen die Kita-Gebühren abschaffen', [seite], 1)).toEqual({ auslassungen: [], warnungen: [] })
+    expect(zitatKontext('Steht nicht da', [seite], 1)).toBeNull()
+  })
+  it('warnt bei langen Auslassungen', () => {
+    const lang = `Anfang des Satzes hier. ${'Füllwort '.repeat(40)}Ende des Satzes dort.`
+    expect(zitatKontext('Anfang des Satzes hier. […] Ende des Satzes dort.', [lang], 1)!.warnungen.join()).toMatch(/umfasst \d{3} Zeichen/)
+  })
+  it('findet Zahlen der Beschreibung, die im Zitat fehlen', () => {
+    expect(fehlendeZahlen('Mehrwertsteuer von 7 auf 5 % senken', 'von sieben Prozent auf fünf Prozent senken')).toEqual([])
+    expect(fehlendeZahlen('Förderung bis zu 70 % und 100.000 Plätze', 'Die Förderung bauen wir aus, 100 000 Plätze.')).toEqual(['70'])
   })
 })

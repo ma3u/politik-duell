@@ -8,6 +8,7 @@ import {
   type Thema,
   type Ursache,
 } from './types.ts'
+import { werteStimmen } from '../pruefung/auswertung.ts'
 
 // ---------------------------------------------------------------------------
 // Kuratierter Datenkatalog (Ordner `daten/`, Format siehe daten/README.md).
@@ -65,6 +66,25 @@ export interface Instrument {
 
 export type EntwurfHerkunft = 'blind' | 'nicht_blind'
 
+/** Ursache im Repo: mit Vermerk, wenn sie erst nach dem Blick in die Programme dazukam. */
+export interface KatalogUrsache extends Ursache {
+  nachtraeglich?: string
+}
+
+/**
+ * Freigabe der Ursachen durch die Betreiberin: Datum und die Ursachen, deren Quellen sie im Original
+ * bestätigt hat. Erst damit dürfen Maßnahmen erfasst werden (npm run ursachen:freigegeben).
+ */
+export interface Freigabe {
+  datum: string
+  quellen_bestaetigt: number[]
+}
+
+/** Thema im Repo: mit Freigabe der Ursachen. */
+export interface KatalogThema extends Thema {
+  freigabe?: Freigabe
+}
+
 /** Partei im Repo: mit Prüfsumme der ausgewerteten Fassung des Bundesprogramms. */
 export interface KatalogPartei extends Partei {
   programm_sha256?: string
@@ -97,8 +117,8 @@ export interface Katalog {
   laender: Land[]
   landesprogramme: LandesprogrammEintrag[]
   parteien: KatalogPartei[]
-  themen: Thema[]
-  ursachen: Ursache[]
+  themen: KatalogThema[]
+  ursachen: KatalogUrsache[]
   instrumente: Instrument[]
   /** Alle erfassten Maßnahmen, auch ungeprüfte Entwürfe und frühere Wahlperioden. */
   massnahmen: KatalogMassnahme[]
@@ -158,8 +178,12 @@ export function spielbareMassnahmen(k: Katalog, mitKiEntwurf = false): Massnahme
   return k.massnahmen
     .filter((m) => eintraege.has(programmSchluessel(m)))
     .map((eintrag) => {
-      const { instrument_id: _i, landtagswahl: _l, entwurf_herkunft: _h, bewertungen: _b, ...m } = eintrag
-      return mitKiEntwurf ? { ...m, ki_entwurf: !k.fiktiv && !eintraege.get(programmSchluessel(eintrag))!.geprueft } : m
+      const { instrument_id: _i, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, ...m } = eintrag
+      if (!mitKiEntwurf) return m
+      const ki = !k.fiktiv && !eintraege.get(programmSchluessel(eintrag))!.geprueft
+      // Herkunft der Entwurfswerte (Instrument oder Maßnahme) – im Spiel als „nicht blind“ gekennzeichnet.
+      const herkunft = eintrag.instrument_id !== undefined ? k.instrumente.find((i) => i.id === eintrag.instrument_id)?.entwurf_herkunft : eigene
+      return { ...m, ki_entwurf: ki, ...(ki ? { entwurf_herkunft: herkunft ?? null } : {}) }
     })
 }
 
@@ -234,7 +258,12 @@ const istDatum = (v: unknown): v is string =>
 
 const ohneAnker = (url: string) => url.split('#')[0]
 
-export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsDatei?: Datei): Pruefergebnis {
+/**
+ * `pruefungDateien`: übernommene Exporte der Prüfenden (daten/pruefungen/). Werden sie übergeben,
+ * muss jede `bewertung` im Katalog genau zu einem Export passen – so lässt sich kein Prüfergebnis
+ * von Hand eintragen. Ohne (App) entfällt dieser Abgleich.
+ */
+export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsDatei?: Datei, pruefungDateien?: Datei[]): Pruefergebnis {
   const fehler: string[] = []
   const warnungen: string[] = []
   const katalog: Katalog = {
@@ -302,8 +331,50 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
     return v as string[]
   }
 
+  // Nachweis der Belegprüfung: Wer `geprueft` setzt, trägt ein, wann die Belege geprüft wurden – bei
+  // „keine Maßnahme“ zusätzlich, wie die zweite Suche lief (Begriffe, Kapitel, Abgleich mit der Treffermatrix).
+  const nachweis = (ort: string, o: Record<string, unknown>, geprueft: boolean, keine: boolean) => {
+    const p = o.pruefung
+    if (p === undefined) {
+      if (geprueft && !katalog.fiktiv)
+        f(ort, `„geprueft“ nur mit „pruefung“: { „belege_geprueft“: Datum${keine ? ', „zweite_suche“: wie und wonach erneut gesucht wurde' : ''} }`)
+      return
+    }
+    const pOrt = `${ort} › pruefung`
+    if (!istObjekt(p)) return f(pOrt, 'erwartet ein Objekt')
+    unbekannteFelder(pOrt, p, keine ? ['belege_geprueft', 'zweite_suche'] : ['belege_geprueft'])
+    datum(pOrt, p, 'belege_geprueft')
+    if (keine) {
+      const z = text(pOrt, p, 'zweite_suche', 400)
+      if (z && z.length < 30) f(pOrt, '„zweite_suche“ nennt Suchbegriffe, gelesene Kapitel und den Abgleich mit der Treffermatrix (mindestens 30 Zeichen)')
+    }
+  }
+
+  // Übernommene Exporte der Prüfenden: je Thema, Datum und Prüfeinheit Anzahl, Mediane, Spannweite (und Einzelwerte).
+  type ExportZeile = { anzahl: unknown; median_w: unknown; median_u: unknown; spannweite: unknown; werte?: [number, number][] }
+  const exporte = new Map<string, ExportZeile & { pfad: string }>()
+  for (const d of pruefungDateien ?? []) {
+    const e = d.inhalt
+    if (!istObjekt(e) || !Array.isArray(e.bewertungen)) {
+      f(d.pfad, 'erwartet einen Export { thema_id, datum, bewertungen } aus npm run pruefung:uebernehmen')
+      continue
+    }
+    unbekannteFelder(d.pfad, e, ['thema_id', 'datum', 'bewertungen'])
+    for (const [i, b] of e.bewertungen.entries()) {
+      const bOrt = `${d.pfad} › bewertungen[${i}]`
+      if (!istObjekt(b)) {
+        f(bOrt, 'erwartet ein Objekt')
+        continue
+      }
+      // Nur Zahlen: So kann über diesen Weg kein Name ins Repository gelangen.
+      unbekannteFelder(bOrt, b, ['massnahme_id', 'anzahl', 'median_w', 'median_u', 'spannweite', 'werte'])
+      if (Array.isArray(b.werte)) for (const x of werteStimmen(bOrt, b as ExportZeile & { werte: [number, number][] })) f(bOrt, x.slice(bOrt.length + 2))
+      exporte.set(`${String(e.thema_id)}/${String(e.datum)}/${String(b.massnahme_id)}`, { ...(b as ExportZeile), pfad: d.pfad })
+    }
+  }
+
   // Wirksamkeit, Umsetzbarkeit, Begründung, Forschungsstand, Rollen und Ergebnis der Prüfung.
-  const bewertungsteil = (ort: string, roh: Record<string, unknown>, evidenzPflicht: boolean): Bewertungsteil => {
+  const bewertungsteil = (ort: string, roh: Record<string, unknown>, evidenzPflicht: boolean, themaId?: number): Bewertungsteil => {
     const b: Bewertungsteil = {
       wirksamkeit: ganzzahl(ort, roh, 'wirksamkeit', 0, 3) as Massnahme['wirksamkeit'],
       umsetzbarkeit: ganzzahl(ort, roh, 'umsetzbarkeit', 0, 3) as Massnahme['umsetzbarkeit'],
@@ -368,6 +439,13 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
           f(bOrt, '„entwurf“ muss [Wirksamkeit, Umsetzbarkeit] des Entwurfs sein, je 0 bis 3')
         if (mw !== b.wirksamkeit || mu !== b.umsetzbarkeit)
           f(bOrt, '„wirksamkeit“/„umsetzbarkeit“ weichen von den Medianen der Prüfung ab – neu prüfen lassen oder „bewertung“ anpassen')
+        // Abgleich mit dem übernommenen Export (daten/pruefungen/): gleiche Zahlen, sonst von Hand geändert.
+        if (pruefungDateien && !katalog.fiktiv && themaId !== undefined) {
+          const ex = exporte.get(`${themaId}/${String(bw.datum)}/${String(roh.id)}`)
+          if (!ex) f(bOrt, `kein Export vom ${String(bw.datum)} in daten/pruefungen/ mit dieser ID – Prüfergebnisse nur mit npm run pruefung:uebernehmen eintragen`)
+          else if (['anzahl', 'median_w', 'median_u', 'spannweite'].some((k) => ex[k as keyof ExportZeile] !== bw[k]))
+            f(bOrt, `weicht vom Export ${ex.pfad} ab (Anzahl, Mediane oder Spannweite)`)
+        }
       }
     }
     // Herkunft der Entwurfswerte: aus der Blindbewertung (`blind`) oder mit Kenntnis der Partei (`nicht_blind`).
@@ -524,10 +602,10 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
       f(ort, 'erwartet ein Objekt')
       continue
     }
-    unbekannteFelder(ort, t, ['id', 'name', 'beschreibung', 'ziel', 'schlagwoerter', 'ursachen', 'instrumente', 'abdeckung'])
+    unbekannteFelder(ort, t, ['id', 'name', 'beschreibung', 'ziel', 'schlagwoerter', 'freigabe', 'ursachen', 'instrumente', 'abdeckung'])
     // Ziel aus Sicht der Betroffenen: Daran wird die Wirksamkeit gemessen. Bei echten Daten Pflicht.
     const ziel = t.ziel !== undefined || !katalog.fiktiv ? text(ort, t, 'ziel', 200) : ''
-    const thema: Thema = {
+    const thema: KatalogThema = {
       id: ganzzahl(ort, t, 'id', 1, 32767),
       name: text(ort, t, 'name', 60),
       beschreibung: text(ort, t, 'beschreibung', 300),
@@ -552,8 +630,8 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
       }
       unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'schlagwoerter', 'nachtraeglich'])
       // Nach dem Blick in die Programme ergänzt? Dann offen vermerkt, mit Datum und Grund.
-      if (roh.nachtraeglich !== undefined) text(uOrt, roh, 'nachtraeglich', 300)
-      const u: Ursache = {
+      const nachtraeglich = roh.nachtraeglich !== undefined ? text(uOrt, roh, 'nachtraeglich', 300) : undefined
+      const u: KatalogUrsache = {
         id: ganzzahl(uOrt, roh, 'id', 1, 32767),
         thema_id: thema.id,
         beschreibung: text(uOrt, roh, 'beschreibung', 200),
@@ -566,10 +644,25 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
       }
       const uw = schlagwoerter(uOrt, roh)
       if (uw) u.schlagwoerter = uw
+      if (nachtraeglich) u.nachtraeglich = nachtraeglich
       if (ursacheIds.has(u.id)) f(uOrt, `Ursachen-ID ${u.id} ist doppelt`)
       ursacheIds.add(u.id)
       eigeneUrsachen.add(u.id)
       katalog.ursachen.push(u)
+    }
+
+    // Freigabe durch die Betreiberin: Datum und Ursachen, deren Quellen sie im Original bestätigt hat.
+    if (t.freigabe !== undefined) {
+      const fOrt = `${ort} › freigabe`
+      const fr = t.freigabe
+      if (!istObjekt(fr)) f(fOrt, 'erwartet { datum, quellen_bestaetigt }')
+      else {
+        unbekannteFelder(fOrt, fr, ['datum', 'quellen_bestaetigt'])
+        const q = fr.quellen_bestaetigt
+        if (!Array.isArray(q) || q.some((x) => !Number.isInteger(x))) f(fOrt, '„quellen_bestaetigt“ muss eine Liste von Ursachen-IDs sein')
+        else for (const id of q as number[]) if (!eigeneUrsachen.has(id)) f(fOrt, `„quellen_bestaetigt“: Ursache ${id} gehört nicht zum Thema`)
+        thema.freigabe = { datum: datum(fOrt, fr, 'datum'), quellen_bestaetigt: Array.isArray(q) ? (q as number[]) : [] }
+      }
     }
 
     // Instrumente: gemeinsame Bewertung gleicher Lösungswege (daten/README.md → „Instrumente“).
@@ -588,7 +681,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
         id: ganzzahl(iOrt, roh, 'id', 1, 2147483647),
         thema_id: thema.id,
         name: text(iOrt, roh, 'name', 120),
-        ...bewertungsteil(iOrt, roh, true),
+        ...bewertungsteil(iOrt, roh, true, thema.id),
       }
       neueId(iOrt, ins.id, 'Instrument')
       eigeneInstrumente.set(ins.id, ins)
@@ -666,10 +759,13 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
           f(kOrt, 'erwartet ein Objekt mit begruendung, stand, geprueft')
           continue
         }
-        unbekannteFelder(kOrt, k, ['begruendung', 'stand', 'geprueft', 'ki_entwurf'])
+        unbekannteFelder(kOrt, k, ['begruendung', 'stand', 'treffer', 'geprueft', 'pruefung', 'ki_entwurf'])
         const begruendung = text(kOrt, k, 'begruendung')
         const stand = datum(kOrt, k, 'stand')
         const geprueft = wahrheitswert(kOrt, k, 'geprueft')
+        // Treffer aller Suchbegriffe im Programm (npm run entwurf:eintragen) – Anhaltspunkt für die zweite Suche.
+        if (k.treffer !== undefined) ganzzahl(kOrt, k, 'treffer', 0, 1000000)
+        nachweis(kOrt, k, geprueft, true)
         const kiEntwurf = k.ki_entwurf !== undefined && wahrheitswert(kOrt, k, 'ki_entwurf')
         if (programm && stand && programm.stand && stand < programm.stand) {
           f(kOrt, `„stand“ ${stand} liegt vor dem Programmstand ${programm.stand} – bitte im aktuellen Programm neu prüfen`)
@@ -699,11 +795,12 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
         }
         unbekannteFelder(mOrt, mRoh, [
           'id', 'instrument', 'beschreibung', 'ursachen_ids', 'wirksamkeit', 'umsetzbarkeit', 'rollen_modifikator',
-          'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'bewertung', 'ki_entwurf',
+          'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'pruefung', 'bewertung', 'ki_entwurf',
           'entwurf_herkunft',
         ])
         const kiEntwurf = mRoh.ki_entwurf !== undefined && wahrheitswert(mOrt, mRoh, 'ki_entwurf')
         const geprueft = wahrheitswert(mOrt, mRoh, 'geprueft')
+        nachweis(mOrt, mRoh, geprueft, false)
         // Mit Instrument kommt die Bewertung von dort, sonst steht sie an der Maßnahme.
         let instrument: Instrument | undefined
         let bewertung: Bewertungsteil
@@ -715,7 +812,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
             if (mRoh[feld] !== undefined) f(mOrt, `„${feld}“ kommt aus dem Instrument – hier weglassen oder Instrument entfernen`)
           bewertung = instrument ?? { wirksamkeit: 0, umsetzbarkeit: 0, begruendung: '', bewertungen: 0 }
         } else {
-          bewertung = bewertungsteil(mOrt, mRoh, geprueft || kiEntwurf)
+          bewertung = bewertungsteil(mOrt, mRoh, geprueft || kiEntwurf, thema.id)
         }
         const m: KatalogMassnahme = {
           id: ganzzahl(mOrt, mRoh, 'id', 1, 2147483647),

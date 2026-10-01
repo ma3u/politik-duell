@@ -15,6 +15,8 @@ function seitenText(url: string, land: boolean) {
 }
 
 export const KI_HINWEIS = 'Vorläufige KI-Bewertung – noch nicht von Menschen geprüft'
+/** KI-Entwurf, dessen Werte mit Kenntnis der Partei vergeben oder geändert wurden (oder vor der Blindbewertung entstanden). */
+export const NICHT_BLIND = 'vorläufige Bewertung, nicht blind'
 
 const EVIDENZ_TEXT = { gemischt: 'Wirkung in der Forschung umstritten', offen: 'Wirkung bisher kaum untersucht' }
 
@@ -93,7 +95,7 @@ function DuellKopf({
       {(leer?.badge || ergebnis.ki_entwurf) && (
         <span className="duell-marke">
           {leer?.badge && <span className="badge-ungeprueft">{leer.badge}</span>}
-          {ergebnis.ki_entwurf && <span className="badge-ungeprueft">KI-Entwurf</span>}
+          {ergebnis.ki_entwurf && <span className="badge-ungeprueft">{ergebnis.nicht_blind ? NICHT_BLIND : 'KI-Entwurf'}</span>}
         </span>
       )}
     </div>
@@ -306,6 +308,8 @@ export function Aufloesung({
               </summary>
               Maßnahmen und Punkte sind in der Testphase ein Entwurf, den eine KI nach der offenen Methode erstellt hat.
               Zitat und Seite im Programm lassen sich über die Links prüfen.
+              {runde.ergebnisse.some((e) => e.nicht_blind) &&
+                ' „Nicht blind“ heißt: Diese Werte wurden mit Kenntnis der Partei vergeben oder geändert, nicht ohne Parteinamen.'}
             </details>
           )}
           <details className="beste enthuellen" style={{ animationDelay: '1500ms' }}>
@@ -327,7 +331,7 @@ export function Aufloesung({
               runde.beste.map((b) => (
                 <div key={b.partei.id} className="beste-zeile" style={parteiStil(b.partei.farbe)}>
                   <strong>{b.partei.name}</strong> mit {b.punkte} Punkten
-                  {b.ki_entwurf && ' (vorläufige KI-Bewertung)'}
+                  {b.ki_entwurf && (b.nicht_blind ? ` (${NICHT_BLIND})` : ' (vorläufige KI-Bewertung)')}
                   {b.treffer.map((t) => (
                     <p key={t.massnahme.id} className="beste-massnahme">
                       {t.massnahme.beschreibung} <MassnahmeBelege massnahme={t.massnahme} />
