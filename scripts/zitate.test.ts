@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { findeZitat, kompakt, seiteVon, seitenTexte, zitatTeile } from './zitate'
+import { bereinigeSeite, findeZitat, kompakt, seiteVon, seitenTexte, zitatTeile } from './zitate'
 
 /** Kleines PDF mit einer Textzeile-Liste je Seite (Helvetica, WinAnsi – Umlaute als Oktal-Escape). */
 function testPdf(seiten: string[][]): Uint8Array {
@@ -44,6 +44,17 @@ describe('Zitatprüfung', () => {
     // Teile mit Auslassung müssen in dieser Reihenfolge vorkommen.
     expect(findeZitat('Wir […] Wohnungen', seiten, 2)).toEqual({ status: 'ok' })
     expect(findeZitat('Wohnungen […] Wir bauen', seiten, 2)).toEqual({ status: 'nicht_gefunden' })
+  })
+
+  it('toleriert Zeilennummern am Zeilenende und Ligatur-Glyphen, nur als zweiten Versuch', () => {
+    const nummeriert = ['Titel', 'Wir sorgen daf\u00fcr, dass alle Kinder 1477\nstark in die Schule starten. 1478\nDazu 2027 gleich 1479']
+    expect(findeZitat('Wir sorgen daf\u00fcr, dass alle Kinder stark in die Schule starten.', nummeriert, 2)).toEqual({ status: 'ok' })
+    expect(bereinigeSeite('Zeile eins 1477\nZeile zwei')).toBe('Zeile eins\nZeile zwei')
+    const glyphen = ['Beitragsfreie Kita sichern, bei gleichzei\u019fg h\u00f6herer Kosten, die gesellscha\u014cliche Aufwertung.']
+    expect(findeZitat('Beitragsfreie Kita sichern, bei gleichzeitig h\u00f6herer Kosten', glyphen, 1)).toEqual({ status: 'ok' })
+    expect(findeZitat('Aufwertung gesellschaftliche', glyphen, 1)).toEqual({ status: 'nicht_gefunden' })
+    // Eine echte Zahl am Zeilenende bleibt im ersten Versuch erhalten.
+    expect(findeZitat('Das Jahr 2027', ['Das Jahr 2027'], 1)).toEqual({ status: 'ok' })
   })
 
   it('liest den Seitenanker', () => {

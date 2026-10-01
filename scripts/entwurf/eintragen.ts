@@ -6,6 +6,7 @@ import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { eintragen, pruefeBewertung, pruefeErfassung, type Bewertung, type Erfassung } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { formatiere } from '../pruefung-export.ts'
+import { leseKennungen } from './kennungen-datei.ts'
 
 const args = process.argv.slice(2)
 const i = args.indexOf('--stand')
@@ -22,7 +23,10 @@ if (fehler.length) {
 }
 const erfassung = JSON.parse(readFileSync(erfassungPfad, 'utf8')) as Erfassung
 const bewertung = JSON.parse(readFileSync(bewertungPfad, 'utf8')) as Bewertung
-const probleme = [...pruefeErfassung(katalog, erfassung), ...pruefeBewertung(katalog, erfassung, bewertung)]
+const { fest, probleme: kennungProbleme } = leseKennungen(erfassungPfad, erfassung)
+for (const p of kennungProbleme) console.error(`Fehler:  kennungen.json passt nicht zur Erfassung: ${p}`)
+if (kennungProbleme.length) process.exit(1)
+const probleme = [...pruefeErfassung(katalog, erfassung), ...pruefeBewertung(katalog, erfassung, bewertung, fest)]
 for (const p of probleme) console.error(`Fehler:  ${p}`)
 if (probleme.length) process.exit(1)
 
@@ -34,7 +38,7 @@ if (!name) {
 }
 const datei = new URL(name, ordner)
 const original = readFileSync(datei, 'utf8')
-writeFileSync(datei, formatiere(eintragen(katalog, JSON.parse(original), erfassung, bewertung, stand)) + '\n')
+writeFileSync(datei, formatiere(eintragen(katalog, JSON.parse(original), erfassung, bewertung, stand, fest)) + '\n')
 
 // Ergebnis muss die Katalogprüfung bestehen, sonst zurück zum alten Stand.
 const nachher = pruefeDatenordner()

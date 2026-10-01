@@ -7,6 +7,9 @@
 //         npm run programme:suche -- "Lehrkräfte" --land BE --land MV      – nur diese Länder (ohne Bund)
 //         npm run programme:suche -- "Pflege" --partei SPD --max 3         – eine Partei, höchstens 3 Seiten je Programm
 //         npm run programme:suche -- "Pflegeheim" --zaehlen                – nur die Übersicht der Treffer je Programm
+//         npm run programme:suche -- "kita" "krippe" --je-begriff --zaehlen – Treffer je Begriff und Programm (fürs Protokoll)
+// Unter PowerShell 7 verschluckt npm Optionen mit Wert (--partei, --land, --max), wenn "--" nicht in
+// Anführungszeichen steht: npm run programme:suche '--' "kita" '--partei' SPD   (oder direkt mit node).
 // Suchbegriffe sind Wortteile ohne Groß-/Kleinschreibung: „sozialarbeit“ findet auch
 // „Schulsozialarbeit“. Silbentrennung am Zeilenende und Zeilenumbrüche stören nicht.
 // Mehrere Begriffe = oder. Kein Treffer heißt nicht „nichts im Programm“: Synonyme
@@ -31,10 +34,11 @@ const max = Number(liste('--max')[0] ?? 8)
 const lokalOrdner = liste('--lokal')[0]
 const nurBund = schalter('--bund')
 const nurZaehlen = schalter('--zaehlen')
+const jeBegriff = schalter('--je-begriff')
 const alle = schalter('--alle')
 const begriffe = args.filter((a) => a.trim())
 if (!begriffe.length) {
-  console.error('Aufruf: npm run programme:suche -- "Begriff" ["Begriff" …] [--bund | --land BE] [--partei SPD] [--max 8] [--zaehlen] [--alle]')
+  console.error('Aufruf: npm run programme:suche -- "Begriff" ["Begriff" …] [--bund | --land BE] [--partei SPD] [--max 8] [--zaehlen] [--je-begriff] [--alle]')
   process.exit(1)
 }
 
@@ -57,6 +61,10 @@ const muster = new RegExp(
 
 const lokal = lokalOrdner ? lokalePdfs(lokalOrdner) : undefined
 const { katalog } = pruefeDatenordner()
+const parteiNamen = new Set(katalog.parteien.flatMap((p) => [p.name.toLowerCase(), p.kurzname.toLowerCase()]))
+for (const b of begriffe)
+  if (parteiNamen.has(b.trim().toLowerCase()))
+    console.error(`Warnung: „${b}“ ist ein Parteiname und wird als Suchbegriff benutzt – hat npm „--partei“ verschluckt? (PowerShell: npm run programme:suche '--' … '--partei' ${b})`)
 const auswahl = programme(katalog).filter(
   (p) =>
     (p.aktuell || alle) &&
@@ -75,6 +83,13 @@ for (const p of auswahl) {
     continue
   }
   const fundseiten: { n: number; auszuege: string[]; anzahl: number }[] = []
+  if (jeBegriff) {
+    const zahlen = begriffe.map((b) => {
+      const m = new RegExp([...b.trim().replace(/\s+/g, '')].map((z) => z.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(zwischen), 'giu')
+      return `${b} ${seiten.reduce((s, roh) => s + [...fliesstext(roh).matchAll(m)].length, 0)}`
+    })
+    console.log(`\n## ${p.name} – Treffer je Begriff: ${zahlen.join('; ')}`)
+  }
   for (const [i, roh] of seiten.entries()) {
     const text = fliesstext(roh)
     const treffer = [...text.matchAll(muster)]

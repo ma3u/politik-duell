@@ -1,0 +1,3 @@
+# JSON-Katalog und Seed immer mit LF, damit Formattest und Seed-Vergleich unter Windows (autocrlf) bestehen.
+daten/**/*.json text eol=lf
+supabase/seed.sql text eol=lf

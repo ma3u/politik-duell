@@ -34,11 +34,41 @@ export type ZitatBefund =
   | { status: 'andere_seite'; seiten: number[] }
   | { status: 'nicht_gefunden' }
 
+/** Private Ligatur-Glyphen aus Word-/Skia-PDFs (etwa BSW MV 2026), die der Textauszug statt „ti“, „ft“ usw. liefert. */
+const LIGATUREN: Record<string, string> = {
+  Ɵ: 'ti',
+  Ō: 'ft',
+  Ʃ: 'tt',
+  ĩ: 'fb',
+  ƞ: 'tf',
+  ƪ: 'tf',
+  ŏ: 'ff',
+  Ņ: 'fk',
+  Ī: 'ffb',
+  ņ: 'ffk',
+}
+
+/**
+ * Textauszug ohne Eigenheiten mancher PDFs: Zeilennummern am Zeilenende (Wahlprogramme mit
+ * Zeilenzählung, etwa CDU MV 2026) fallen weg, Ligatur-Glyphen werden aufgelöst. Wird nur als
+ * zweiter Versuch benutzt, damit echte Zahlen am Zeilenende das Prüfen nicht verfälschen.
+ */
+export function bereinigeSeite(text: string): string {
+  return text.replace(/[ƟŌƩĩƞƪŏŅĪņ]/g, (c) => LIGATUREN[c]).replace(/[ \t]*\b\d{3,4}[ \t]*$/gm, '')
+}
+
 /**
  * Sucht das Zitat auf Seite `erwartet` (1-basiert, wie #page=N). Ein Zitat, das
  * auf die nächste Seite umbricht, gilt als gefunden. Sonst: Auf welchen Seiten steht es?
  */
 export function findeZitat(zitat: string, seiten: string[], erwartet: number): ZitatBefund {
+  const roh = findeInSeiten(zitat, seiten, erwartet)
+  if (roh.status === 'ok') return roh
+  const bereinigt = findeInSeiten(zitat, seiten.map(bereinigeSeite), erwartet)
+  return bereinigt.status === 'ok' || roh.status === 'nicht_gefunden' ? bereinigt : roh
+}
+
+function findeInSeiten(zitat: string, seiten: string[], erwartet: number): ZitatBefund {
   const teile = zitatTeile(zitat)
   const kompakteSeiten = seiten.map(kompakt)
   const auf = (n: number) => enthaelt(kompakteSeiten[n - 1] ?? '', teile)
