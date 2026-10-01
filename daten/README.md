@@ -347,6 +347,25 @@ Reihenfolge beim Erfassen eines Programms: Programm in `parteien.json` eintragen
 
 **Programme nie ins Repository.** Die PDFs und ihre Texte sind urheberrechtlich geschützt (Wahlprogramme sind keine amtlichen Werke). Sie liegen nur im Zwischenspeicher `.cache/` (in `.gitignore`), als vorübergehende Kopie zur Auswertung; ins Repository kommen nur URL, Prüfsumme, Seitenanker und kurze wörtliche Zitate. In Cloud-Sitzungen von Claude Code lädt `.claude/hooks/session-start.sh` die Programme beim Start automatisch.
 
+### Mit KI-Agenten
+
+Für Claude Code liegen zwei Skills im Repository, die den Ablauf oben in getrennten Schritten ausführen. Beide enden mit einem Pull Request; ins Spiel kommt nichts ohne Merge und menschliche Prüfung.
+
+| Aufruf | Phase | Wer arbeitet | Ergebnis |
+| --- | --- | --- | --- |
+| `/thema-anlegen Kita-Betreuung` | Schritt 1: Ziel, Ursachen, Ebene, Perspektivenprüfung | Agent `ursachen-recherche` – nur Web-Recherche, kein Zugriff auf Repository und Programme | Pull Request nur mit Ursachen → **Freigabe durch die Betreiberin (Merge)** |
+| `/thema-erfassen 17` (optional `--bund`, `--land XX`) | Schritte 2 und 3: Maßnahmen erfassen, Entwurf bewerten | je Programm ein Agent `programm-erfassung` (gleiche Suchbegriffe für alle, keine Bewertung); dann **ein** Agent `blind-bewertung`, der nur die Liste ohne Parteinamen sieht | Pull Request mit KI-Entwürfen (`ki_entwurf: true`, `geprueft: false`) |
+
+Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die Neutralität zwingend ist, sichern Skripte ab, nicht nur die Anleitung:
+
+```bash
+npm run ursachen:freigegeben -- 17                      # bricht ab, wenn die Ursachen nicht auf main stehen oder verändert wurden
+npm run entwurf:blind -- erfassung.json                 # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 …
+npm run entwurf:eintragen -- erfassung.json bewertung.json   # neue IDs, Beleg-Links, KI-Entwurf; schreibt nur einen gültigen Katalog
+```
+
+Formate der Arbeitsdateien (`Erfassung`, `Bewertung`) stehen in `scripts/entwurf.ts`; sie liegen in `.cache/entwurf/<Themen-ID>/` und kommen nicht ins Repository. Ein Programm, das ein Agent nicht laden konnte, wird ausgelassen (bleibt „noch nicht erfasst“) und nie als „keine Maßnahme“ eingetragen.
+
 ## Neue Wahlperiode
 
 **Landtagswahl:** Programme werden erfasst, sobald sie beschlossen sind; bis zur Wahl zählt weiter das Programm der laufenden Wahlperiode.
