@@ -12,6 +12,7 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     expect(web('https://www.spd.de/x')).toMatch(/spd\.de ist gesperrt/)
     expect(web('https://spd-mv.de/uploads/a.pdf')).toMatch(/gesperrt/)
     expect(web('https://lichtenberg.afd.berlin/x.pdf')).toMatch(/gesperrt/)
+    for (const host of ['cdulsa.de', 'spdsachsenanhalt.de', 'gruene-lsa.de', 'dielinke.berlin', 'die-linke-mv.de', 'st.bsw-vg.de']) expect(web(`https://${host}/p.pdf`)).toMatch(/gesperrt/)
     expect(web('https://berlin-wird.de/image/x.pdf')).toMatch(/berlin-wird\.de ist gesperrt/)
     expect(web('https://web.archive.org/web/2025id_/https%3A%2F%2Fwww.fdp.de%2Fx.pdf')).toMatch(/fdp\.de/)
     expect(web('https://library.fes.de/pdf-files/x.pdf')).toMatch(/fes\.de/)
@@ -20,7 +21,7 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
   })
 
   it('lässt unabhängige Quellen durch', () => {
-    for (const url of ['https://www.destatis.de/a', 'https://www.dji.de/b.pdf', 'https://www.iab.de/c', 'https://github.com/andere/repo', 'https://www.bundestag.de/d'])
+    for (const url of ['https://www.destatis.de/a', 'https://www.dji.de/b.pdf', 'https://www.iab.de/c', 'https://github.com/andere/repo', 'https://www.bundestag.de/d', 'https://www.linkedin.com/x', 'https://spdx.org/y', 'https://www.afdb.org/z'])
       expect(web(url)).toBeNull()
   })
 

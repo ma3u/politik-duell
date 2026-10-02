@@ -7,7 +7,8 @@
     "politik-duell.de", "politikduell.de", "politik-duell.vercel.app"
   ],
   "muster": [
-    "(^|[.-])(cdu|csu|spd|gruene|fdp|afd|dielinke|die-linke|linke|bsw)[a-z0-9]*([.-]|$)"
+    "(^|[.-])(cdu|csu|spd|gruene|fdp|afd|bsw)([.-]|lsa|mv|sachsen|berlin|bayern|nrw|bw|hessen|thueringen|brandenburg|hamburg|bremen|sh|rlp|saar)",
+    "(^|[.-])(die-?linke|linke|linksfraktion)([.-])"
   ],
   "pfade": [
     "github.com/politik-duell",
