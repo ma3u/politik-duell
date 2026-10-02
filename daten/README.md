@@ -6,7 +6,7 @@ Lizenz: [CC BY 4.0](LICENSE) für Auswahl, Struktur, Ursachen, Bewertungen und B
 
 Änderungen laufen per Pull Request mit Quellenpflicht. Jeder Pull Request wird automatisch geprüft (`npm run daten:pruefen`).
 
-> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind für alle siebzehn Themen erfasst (als KI-Entwurf aus allen sieben Bundesprogrammen; Schule, Zuwanderung und Integration, Sicherheit, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen), Bus und Bahn (Angebot, Fahrpersonal, Ticketpreise), Straßen und Brücken (kommunale Straßen, Bauverwaltung, Radverkehr), Behördengänge (Online-Angebote, Personal), Heizungstausch (Wärmeplanung) sowie Kita-Betreuung zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 313 Instrumente zusammengefasst (siehe „Instrumente“).
+> **Echte Daten, im Aufbau.** Parteien und Programme siehe unten („Programme“). Maßnahmen sind für sechzehn der siebzehn Themen erfasst (als KI-Entwurf aus allen sieben Bundesprogrammen; Schule, Zuwanderung und Integration, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen), Bus und Bahn (Angebot, Fahrpersonal, Ticketpreise), Straßen und Brücken (kommunale Straßen, Bauverwaltung, Radverkehr), Behördengänge (Online-Angebote, Personal), Heizungstausch (Wärmeplanung) sowie Kita-Betreuung zusätzlich aus allen 21 Landesprogrammen für ST, MV und BE) und noch nicht geprüft – öffentlich gilt deshalb vorerst alles als „noch nicht erfasst“; KI-Entwürfe erscheinen nur in der geschlossenen Testphase. Gleiche Lösungswege sind als 245 Instrumente zusammengefasst (siehe „Instrumente“). Sicherheit wird neu angelegt: Die bisherigen Maßnahmen sind stillgelegt (`ids.json`), das Thema gilt bis zur neuen Erfassung für alle Parteien als „noch nicht erfasst“.
 >
 > Die fiktiven Beispieldaten für „Mit Beispieldaten spielen“ und die Tests liegen getrennt in [`beispiel/`](beispiel/) und werden nicht weiter gepflegt.
 
@@ -391,6 +391,7 @@ Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die
 ```bash
 npm run phase-a -- start "Kita-Betreuung"              # Phase A: Programme und .cache/ gesperrt (auch für Agenten); Ende: npm run phase-a -- ende
 npm run themen:ueberblick                               # vorhandene Themen nur mit Ziel und Ursachen (für Phase A)
+npm run themen:ueberblick -- --ohne 9                   # dasselbe ohne ein Thema – für dessen Neuanlage (/thema-anlegen <Thema> --neu <ID>)
 npm run ursachen:freigegeben -- 17                      # bricht ab ohne „freigabe“ im Zielzweig oder wenn Ursachen bzw. Ziel verändert wurden
 npm run entwurf:treffer -- erfassung.json               # zählt jeden Suchbegriff (je Ursache und Lösungsrichtung) in allen Programmen der Erfassung
 npm run entwurf:blind -- erfassung.json --ausgabe blind.json   # ohne Parteinamen, Personen und Länder, gemischte Reihenfolge, Kennungen M01 … (kennungen.json), Prüfsumme; bricht bei zu vielen verdächtigen Resten ab

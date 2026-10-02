@@ -1,7 +1,7 @@
 ---
 name: thema-anlegen
 description: Phase A für ein neues Thema des Politik-Duells – Ziel, Ursachen mit unabhängigen Quellen, Ebene und Perspektivenprüfung festlegen, ohne in Wahlprogramme zu schauen. Endet mit einem Pull Request zur Freigabe durch die Betreiberin. Aufruf mit dem Thema, z. B. /thema-anlegen Kita-Betreuung.
-argument-hint: <Thema> [Begründung, warum es aufgenommen wird]
+argument-hint: <Thema> [Begründung, warum es aufgenommen wird] | <Thema> --neu <ID> (Neuanlage eines vorhandenen Themas)
 disable-model-invocation: true
 ---
 
@@ -51,3 +51,19 @@ Erlaubt ist `npm run -s quelle:text -- <url> [--seiten N] [--suche "Wort"]`: Es 
    Lege dann den Pull Request mit dieser Beschreibung an. Gibt es für den Zweig schon einen Pull Request (etwa von Hand angelegt), ersetze dessen Beschreibung. Geht beides nicht, gib den Inhalt von `pr.md` am Ende vollständig aus, damit die Betreiberin ihn einfügen kann. Ein Pull Request mit leerer Vorlage ist nicht fertig.
 
 **Dann stoppen.** Nicht mit der Erfassung beginnen, auch wenn es naheliegt.
+
+## Neuanlage eines vorhandenen Themas (`--neu <ID>`)
+
+Für Themen, deren Ursachen nach der Regel „Nachträgliche Ursachen“ (`docs/methode.md`) neu geprüft werden und die noch keine geprüften Einträge haben. Es gilt alles oben, mit diesen Abweichungen:
+
+- **Voraussetzung:** Die Themendatei hat keine `instrumente` und keine `abdeckung` mehr (Maßnahmen vorher in einem eigenen Pull Request stillgelegt, IDs in `daten/ids.json`). Sonst **abbrechen** und das der Betreiberin sagen.
+- **Schritt 1 (Aufnahme)** entfällt; Aufnahmegrund ist die Neuprüfung. Die Überschneidungsprüfung läuft gegen die übrigen Themen.
+- **Schritt 2 (Recherche):** Der Agent bekommt die Themenliste **ohne** das Thema selbst: `npm run -s themen:ueberblick '--' '--ohne' <ID>`. Gib ihm weder das bisherige Ziel noch die bisherigen Ursachen, nicht einmal sinngemäß – er soll unabhängig herleiten. Nur Name und Beschreibung des Themas.
+- **Abgleich erst danach.** Lege in der Dokumentation eine Tabelle an: bisherige Ursache → Ergebnis. Je bisherige Ursache eins von:
+  - *bestätigt* – dieselbe Diagnose wurde unabhängig gefunden: ID bleibt, Text und Quelle aus der neuen Recherche;
+  - *zusammengelegt* oder *verworfen* – ID entfällt (Ursachen-IDs nie wiederverwenden), Grund unter „Verworfen“;
+  - neue Ursachen bekommen IDs ab der höchsten bisherigen + 1.
+  Fehlt eine bisherige Diagnose in der neuen Recherche, wird sie nicht einfach übernommen: entweder mit Beleg nach den Belegstufen bestätigen (dann im Pull Request als „aus dem Abgleich“ kennzeichnen) oder verwerfen.
+- **Schritt 4 (Datei):** die vorhandene Themendatei überarbeiten (`beschreibung`, `ziel`, `ursachen`), keine neue anlegen. `nachtraeglich` fällt weg – die Ursachen stammen jetzt aus Phase A. Keine `freigabe`.
+- **Schritt 5 (Doku):** In `docs/perspektiven-ursachen.md` im Abschnitt des Themas einen neuen Unterabschnitt „Neuanlage <Datum>“ **über** dem alten Stand einfügen (Tabelle, Abgleich, Entschieden, Verworfen); der alte Stand bleibt als Protokoll. `daten/README.md` → „Themenauswahl“ und `docs/methode.md` → „Themen“ bleiben, wie sie sind.
+- **Schritt 7 (Pull Request):** Titel „<Thema>: Neuanlage – Ursachen und Perspektivenprüfung“. Unter „Entscheidungen für die Betreiberin“ zusätzlich die Abgleich-Tabelle mit je einem Satz, warum eine bisherige Ursache bleibt oder entfällt.

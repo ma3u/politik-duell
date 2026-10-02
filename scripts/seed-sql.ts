@@ -60,6 +60,10 @@ insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene) valu
   ${zeilen(k.ursachen.map((u) => `(${u.id}, ${u.thema_id}, ${q(u.beschreibung)}, ${q(u.quelle_url)}, ${q(u.ebene ?? 'bund')})`))}
 on conflict (id) do update set thema_id = excluded.thema_id, beschreibung = excluded.beschreibung,
   quelle_url = excluded.quelle_url, ebene = excluded.ebene;
+
+-- Ursachen, die nicht mehr im Katalog stehen (etwa nach der Neuanlage eines Themas), entfernen –
+-- sonst ordnete die KI Probleme ihnen weiter zu. Nichts verweist per Fremdschlüssel auf sie.
+delete from public.ursachen where id not in (${k.ursachen.map((u) => u.id).join(', ')});
 ${
   massnahmen.length
     ? `

@@ -56,6 +56,14 @@ describe('Datenbank', () => {
     expect(r.rows[0].n).toBe(KATALOG.parteien.length)
   })
 
+  it('Seed entfernt Ursachen, die nicht mehr im Katalog stehen (Neuanlage eines Themas)', async () => {
+    const u = KATALOG.ursachen[0]
+    await db.query('insert into ursachen (id, thema_id, beschreibung, quelle_url, ebene) values (9999, $1, $2, $3, $4)', [u.thema_id, 'alt', u.quelle_url, 'bund'])
+    await db.exec(seedSql(KATALOG))
+    const r = await db.query<{ n: number }>('select count(*)::int as n from ursachen')
+    expect(r.rows[0].n).toBe(KATALOG.ursachen.length)
+  })
+
   it('anon darf Stammdaten lesen', async () => {
     const r = await alsRolle('anon', () => db.query('select * from massnahmen'))
     expect(r.rows.length).toBe(MASSNAHMEN.length)
