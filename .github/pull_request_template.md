@@ -29,6 +29,8 @@ Bei Maßnahmen (Phase B–D):
 - [ ] `npm run ursachen:freigegeben` lief durch; Ursachen und Ziel sind in diesem Pull Request unverändert
 - [ ] Jede Lösungsrichtung hatte eigene Suchbegriffe; Treffermatrix und ihre Hinweise sind erledigt oder begründet
 - [ ] Verdächtige Reste der Blindliste sind begründet oder behoben
-- [ ] Der Bewertungs-Agent hat jede Zuordnung zu Ursachen bestätigt; Hinweise zur Mehrfachzuordnung sind für alle Programme gleich erledigt
+- [ ] Der Leitfaden (`daten/leitfaeden/<ID>.json`) mit Regeln und Bündeln passt; neue Bündel sind genannt
+- [ ] Alle Programme wurden mit demselben Modell erfasst (Modelle hier genannt)
+- [ ] Die Zuordnung zu Ursachen hat die Bewertung ohne Parteinamen entschieden; die Bilanz je Programm steht hier, Hinweise zur Mehrfachzuordnung sind für alle Programme gleich erledigt
 - [ ] Nicht blind geänderte Werte tragen `entwurf_herkunft: nicht_blind` und sind hier begründet
 - [ ] Nicht durchsuchte Programme sind genannt (bleiben „noch nicht erfasst“, nie `keine_massnahme`)
