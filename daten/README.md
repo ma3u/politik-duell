@@ -166,6 +166,8 @@ Jedes Thema hat ein **Ziel aus Sicht der Betroffenen** (`ziel`, z. B. Miete: „
 | 2 | hilft spürbar: setzt an einer Ursache an, eine deutliche Verbesserung ist zu erwarten |
 | 3 | hilft stark: setzt direkt an einer Hauptursache an; die Wirkung ist gut belegt (Studie oder Erfahrungen anderswo) |
 
+**Ablehnungen:** Lehnt eine Maßnahme ein Mittel ab oder nimmt es zurück, zählt nur, was sie selbst zum Ziel beiträgt. Ist das abgelehnte Mittel nicht selbst Teil des Problems (anders als etwa ein CO₂-Preis bei Energiekosten), ist die Wirksamkeit 0 – auch wenn das Mittel nur schwach wirkt. Was das Programm stattdessen vorschlägt, wird als eigene Maßnahme bewertet (Entscheidung der Betreiberin, 2. 10. 2026).
+
 ### Umsetzbarkeit (0–3): Ist die Maßnahme realistisch?
 
 Gemeint ist: Könnte die Regierung der Ebene, aus deren Programm die Maßnahme stammt (Bund oder Land), sie in einer Wahlperiode rechtlich und finanziell umsetzen? Ob die Maßnahme politisch mehrheitsfähig ist, spielt keine Rolle.
