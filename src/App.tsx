@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Aufloesung } from './components/Aufloesung'
 import { Ende } from './components/Ende'
 import { Fusszeile } from './components/Fusszeile'
@@ -6,6 +6,7 @@ import { Kopfzeile } from './components/Kopfzeile'
 import { MockHinweis } from './components/MockHinweis'
 import { TestphaseHinweis } from './components/TestphaseHinweis'
 import { Testphasesperre } from './components/Testphasesperre'
+import { Wortwolke } from './components/Wortwolke'
 import { Themenstand } from './components/Themenstand'
 import { Punktestand } from './components/Punktestand'
 import { Runde } from './components/Runde'
@@ -22,6 +23,7 @@ import {
   ZugangUngueltig,
   type Daten,
 } from './data/quelle'
+import { themenWoerter } from './data/wortwolke'
 import { useHash, zurueck } from './navigation'
 import { RUNDEN_GESAMT, type RundenErgebnis, type Spieler } from './spiel'
 
@@ -40,6 +42,8 @@ export default function App() {
   const [einverstanden, setEinverstanden] = useState(false)
   // Themenübersicht (#/themen): liegt über dem Spiel, damit eine laufende Partie erhalten bleibt.
   const themenSeite = useHash().startsWith('#/themen')
+  // Erst nach dem Laden – bis dahin bleibt die Wortwolke leer.
+  const woerter = useMemo(() => (daten ? themenWoerter(daten) : []), [daten])
 
   useEffect(() => {
     ladeDaten()
@@ -94,6 +98,8 @@ export default function App() {
         </div>
       )}
       <div className="app" hidden={themenSeite}>
+        {/* Startseite: ganze Fläche; im Spiel nur links und rechts neben der Spalte. */}
+        <Wortwolke woerter={woerter} nurRaender={phase !== 'start'} />
         {sindBeispieldaten(daten ?? MOCK_DATEN) && <MockHinweis />}
         {daten?.testphase && <TestphaseHinweis />}
         {zugangsHinweis && (
@@ -111,7 +117,6 @@ export default function App() {
         {phase === 'start' && (
           <Start
             bereit={daten !== null}
-            daten={daten}
             einverstanden={einverstanden}
             onEinverstanden={setEinverstanden}
             ladeFehler={ladeFehler}
