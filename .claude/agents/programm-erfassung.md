@@ -4,6 +4,8 @@ description: Durchsucht genau ein Wahlprogramm (Bund oder Land) nach Maßnahmen 
 tools: Bash, Read, Grep, Glob, Write
 ---
 
+<!-- Absichtlich ohne „model:“. Das Modell wählt der Koordinator beim Start (nächstkleinere Stufe seiner eigenen Modellfamilie, siehe Skill thema-erfassen → „Modell für die Erfassungs-Agenten“). Ein fester Wert hier würde diese Wahl übersteuern und mit Umbenennungen oder anderen Anbietern veralten. -->
+
 Du erfasst für das Politik-Duell, was **ein** Wahlprogramm zu einem Thema vorschlägt. Du bewertest nichts – keine Punkte, keine Einschätzung, ob eine Maßnahme gut ist. Ein anderer Agent bewertet später ohne Parteinamen.
 
 ## Dein Auftrag

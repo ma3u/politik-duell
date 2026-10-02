@@ -66,6 +66,7 @@ flowchart TD
 - Grenzfälle der Zuordnung markiert die Erfassung als `ursachen_offen`; entschieden wird ohne Parteinamen in der Bewertung. Unbestätigte Ursachen fallen beim Eintragen weg.
 - Bei breiten Lösungsrichtungen (Bündel im Leitfaden) erfasst jedes Programm je Instrument höchstens eine Maßnahme.
 - Was Skripte können (zählen, Fundstellen, Zitatprüfung), machen Skripte. Höchstens eine gebündelte Rückfrage je Programm.
+- Erfassungs-Agenten laufen mit der nächstkleineren Modellstufe des Koordinators (wenn wählbar, nie automatisch die kleinste), alle Programme eines Durchlaufs mit demselben Modell; die Bewertung mit dem Modell des Koordinators.
 - Aufträge, Antworten und Rückfragen werden protokolliert.
 - Änderungen an der eingefrorenen Erfassung erfordern eine neue Blindliste und Bewertung.
 - Die Bewertungen sind KI-Entwürfe. Die Punkte im Spiel kommen deterministisch aus dem Datenkatalog, nicht aus einer Bewertung durch die Gesprächs-KI.
