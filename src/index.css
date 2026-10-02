@@ -319,7 +319,12 @@ textarea:focus-visible {
 }
 .wolke-platz {
   transition: transform 2.5s ease-in-out;
-  animation: auftauchen 3s ease-out both;
+}
+/* Aus dem Nebel: von klein, unscharf und unsichtbar zur vollen Größe. */
+.wolke-nebel {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: auftauchen 2.8s cubic-bezier(0.2, 0.6, 0.3, 1) both;
 }
 .wolke-wort {
   font-weight: 800;
@@ -338,6 +343,11 @@ textarea:focus-visible {
 @keyframes auftauchen {
   from {
     opacity: 0;
+    transform: scale(0.55);
+    filter: blur(6px);
+  }
+  60% {
+    filter: blur(0);
   }
 }
 

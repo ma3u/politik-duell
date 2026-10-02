@@ -1,13 +1,9 @@
-import { useId, useMemo } from 'react'
-import type { Daten } from '../data/quelle'
-import { themenWoerter } from '../data/wortwolke'
+import { useId } from 'react'
 import { Kreuzfeld } from './Kreuz'
 import { Logo } from './Logo'
-import { Wortwolke } from './Wortwolke'
 
 export function Start({
   bereit,
-  daten,
   einverstanden,
   onEinverstanden,
   ladeFehler,
@@ -15,8 +11,6 @@ export function Start({
   onStart,
 }: {
   bereit: boolean
-  /** Erst nach dem Laden da – bis dahin bleibt die Wortwolke leer. */
-  daten: Daten | null
   einverstanden: boolean
   onEinverstanden: (ja: boolean) => void
   ladeFehler: string | null
@@ -24,10 +18,8 @@ export function Start({
   onStart: () => void
 }) {
   const id = useId()
-  const woerter = useMemo(() => (daten ? themenWoerter(daten) : []), [daten])
   return (
     <main className="start">
-      <Wortwolke woerter={woerter} />
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
@@ -37,8 +29,8 @@ export function Start({
           <Logo groesse={72} />
         </div>
         <p className="erklaerung">
-          Zwei Spieler:innen, zwei Parteien, fünf Runden. Nennt echte Alltagsprobleme – das Spiel zeigt, welche
-          Partei dafür die wirksamste und umsetzbare Lösung bietet. Mit Beleg nach jeder Runde.
+          Zwei Spieler:innen, zwei Parteien, fünf Runden. Nennt echte Alltagsprobleme – das Spiel zeigt, welche Partei
+          dafür die wirksamste und umsetzbare Lösung bietet. Mit Beleg nach jeder Runde.
         </p>
         <p className="start-themen">
           <a href="#/themen">Welche Themen das Spiel schon kennt</a>
