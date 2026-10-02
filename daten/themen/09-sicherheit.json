@@ -1,86 +1,79 @@
 {
   "id": 9,
   "name": "Sicherheit",
-  "beschreibung": "Sich im Alltag unsicher fühlen oder Opfer von Kriminalität werden.",
-  "ziel": "Menschen sind im Alltag sicher und fühlen sich sicher; Straftaten werden zügig verfolgt.",
-  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "angst", "messer", "belaestigung", "bahnhof", "nachts", "abends", "haeusliche gewalt", "partner", "frauenhaus", "auslaender", "migranten", "betrug", "extremismus", "vergewaltigung", "wahrnehmung", "medien"],
+  "beschreibung": "Opfer von Gewalt, Diebstahl oder Betrug werden – zu Hause, unterwegs oder im Internet – oder sich im Alltag unsicher fühlen.",
+  "ziel": "Menschen bleiben zu Hause, unterwegs und im Internet von Straftaten verschont und fühlen sich auch nachts im öffentlichen Raum sicher.",
+  "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "angst", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "bahnhof", "nachts", "messer", "betrug", "straftaeter", "taeter"],
   "ursachen": [
     {
       "id": 901,
-      "beschreibung": "Unsicherheit ballt sich an bestimmten Orten: nachts fühlen sich viele an Bahnhöfen und in Parks unsicher",
+      "beschreibung": "Nachts fühlen sich viele an bestimmten Orten unsicher: 2024 fühlten sich an Bahnhöfen nur 27 % und in Parks nur 23 % sicher",
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
       "ebene": "land",
-      "schlagwoerter": ["bahnhof", "park", "nachts", "abends", "dunkel", "beleuchtung", "brennpunkt", "allein unterwegs"]
+      "schlagwoerter": ["bahnhof", "park", "nachts", "abends", "dunkel", "s-bahn", "u-bahn", "nahverkehr", "innenstadt", "drogenszene", "allein unterwegs", "belaestigung", "angstraum"]
     },
     {
       "id": 902,
-      "beschreibung": "Überlastete Strafjustiz: Rund eine Million offene Ermittlungsverfahren, Verfahren dauern lange",
+      "beschreibung": "Viele Straftaten haben keine oder späte Folgen: 2025 blieben 42 % unaufgeklärt; Ende 2024 waren 950.900 Ermittlungsverfahren offen, so viele wie nie seit 2014",
       "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/10/PD25_360_2421.html",
       "ebene": "land",
-      "schlagwoerter": ["anzeige", "eingestellt", "keine folgen", "gericht", "staatsanwaltschaft", "verfahren", "passiert nichts", "strafe"]
+      "schlagwoerter": ["aufklaerung", "nicht aufgeklaert", "anzeige", "eingestellt", "keine folgen", "passiert nichts", "staatsanwaltschaft", "gericht", "justiz", "verfahren dauert", "keine strafe", "polizei kommt nicht"]
     },
     {
       "id": 903,
-      "beschreibung": "Junge Menschen werden häufiger Opfer von Gewalt; die Zahl tatverdächtiger Kinder steigt",
+      "beschreibung": "Junge Menschen werden häufiger Opfer von Gewalt: 2024 wurden 8,5 % der 16- und 17-Jährigen Opfer einer Körperverletzung (2020: 3,1 %); 2025 mehr tatverdächtige Kinder bei Gewaltdelikten",
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
       "ebene": "land",
-      "schlagwoerter": ["jugendliche", "jugendgewalt", "kinder", "schule", "mobbing", "jugendbande", "abgezogen"]
+      "schlagwoerter": ["jugendliche", "jugendgewalt", "jugendbande", "kinder", "schlaegerei", "pruegelei", "koerperverletzung", "abgezogen", "messer", "messerangriff", "schule gewalt", "gruppe"]
     },
     {
       "id": 904,
-      "beschreibung": "Häusliche Gewalt nimmt zu: 2024 rund 266.000 Opfer (Höchststand), 70 % Frauen; meist geht sie von (Ex-)Partnern aus",
+      "beschreibung": "Gewalt in Partnerschaft und Familie auf Höchststand: 2024 rund 266.000 Opfer häuslicher Gewalt (+17,8 % in fünf Jahren), 70 % Frauen; Partnerschaftsgewalt wird zu weniger als 5 % angezeigt",
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2025/Presse2025/251121_PM_BLB_HG_StraftatengegenFrauen2024.html",
       "ebene": "land",
-      "schlagwoerter": ["haeusliche gewalt", "partner", "ex-partner", "ehemann", "freund schlaegt", "frauenhaus", "femizid", "stalking", "zuhause nicht sicher"],
-      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "schlagwoerter": ["haeusliche gewalt", "partnerschaftsgewalt", "partner", "ex-partner", "gewalt gegen frauen", "femizid", "frauenhaus", "stalking", "gewalt in der familie", "zuhause nicht sicher"]
     },
     {
       "id": 905,
-      "beschreibung": "Nichtdeutsche sind bei Gewaltkriminalität als Tatverdächtige überrepräsentiert (2025: 42,9 %); Gründe: Alter, Wohnort, fehlende Arbeits- und Bleibeperspektive, Mehrfachtäter – Gewicht umstritten",
+      "beschreibung": "Nichtdeutsche sind bei Gewaltdelikten als Tatverdächtige überrepräsentiert (2025: 42,9 %); Gründe laut Forschung: Alter, Geschlecht, Wohnort, Aufenthaltsperspektive, Zuzug 2015/16 – Gewicht umstritten",
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
       "ebene": "bund",
-      "schlagwoerter": ["auslaender", "migranten", "zuwanderer", "gefluechtete", "auslaenderkriminalitaet", "abschiebung von straftaetern", "intensivtaeter", "mehrfachtaeter", "junge maenner", "perspektive", "arbeitsverbot", "integration"],
-      "nachtraeglich": "2026-09-29: bei der Perspektivenprüfung ergänzt. 2026-09-30: lösungsoffen gefasst, weil die Nacherfassung nur nach Ausweisung und Abschiebung gesucht hatte; Bundesprogramme danach auch nach Arbeit, Sprache, Bleibeperspektive, Verfahren, Rückkehr und Wohnort durchsucht."
+      "schlagwoerter": ["auslaender", "auslaenderkriminalitaet", "migranten", "zuwanderer", "fluechtlinge", "gefluechtete", "asylbewerber", "nichtdeutsche", "seit 2015", "zu viele", "abschiebung von straftaetern", "junge maenner", "perspektive", "arbeitsverbot"]
     },
     {
       "id": 906,
-      "beschreibung": "Betrug und Cyberkriminalität treffen viele: Jede fünfte Person war schon Opfer von Cyberkriminalität; Betrug aus dem Ausland nimmt zu (2025: 7 % mehr Fälle, 65 % mehr Schaden)",
-      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
+      "beschreibung": "Betrug und Datenmissbrauch im Internet treffen viele und werden selten angezeigt: 2023 war fast jede fünfte Person betroffen; 2025 kamen zwei Drittel der Fälle aus dem Ausland oder von unbekanntem Ort",
+      "quelle_url": "https://skid.bka.de/Wichtige_Ergebnisse.html",
       "ebene": "bund",
-      "schlagwoerter": ["betrug", "betrogen", "abzocke", "enkeltrick", "schockanruf", "phishing", "fake-shop", "internetbetrug", "online-betrug", "gehackt", "cyber", "anlagebetrug", "callcenter"],
-      "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "schlagwoerter": ["betrug", "betrogen", "online-betrug", "internetbetrug", "phishing", "fake-shop", "enkeltrick", "schockanruf", "konto gehackt", "gehackt", "datenklau", "cyber", "abzocke", "callcenter"]
     },
     {
       "id": 907,
-      "beschreibung": "Politisch motivierte Kriminalität auf Höchststand: 2025 rund 85.800 Straftaten, darunter rund 4.200 Gewalttaten, so viele wie nie seit 2001",
-      "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260609_PM_PMK2025.html",
-      "ebene": "land",
-      "schlagwoerter": ["extremismus", "extremisten", "rechtsextrem", "linksextrem", "islamismus", "islamisten", "terror", "anschlag", "politische gewalt", "hasskriminalitaet", "antisemitismus", "reichsbuerger", "bedrohung wegen"],
-      "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "beschreibung": "Politisch und religiös motivierte Kriminalität auf Höchststand: 2025 rund 85.800 Straftaten, so viele wie nie, darunter rund 4.200 Gewaltdelikte",
+      "quelle_url": "https://www.bka.de/DE/UnsereAufgaben/Deliktsbereiche/PMK/PMKZahlen/PMKZahlen_node.html",
+      "ebene": "bund",
+      "schlagwoerter": ["extremismus", "extremisten", "rechtsextrem", "linksextrem", "islamismus", "islamisten", "terror", "anschlag", "gefaehrder", "politische gewalt", "hasskriminalitaet", "antisemitismus", "weihnachtsmarkt"]
     },
     {
       "id": 908,
-      "beschreibung": "Sexualisierte Gewalt: Die Polizei erfasst deutlich mehr Vergewaltigungen (seit 2018 plus 72 %), angezeigt wird aber nur ein kleiner Teil",
+      "beschreibung": "Sexualisierte Gewalt: Die Polizei erfasst deutlich mehr Vergewaltigungen (2025: +9,0 %, seit 2018 rund +72 %), angezeigt werden aber nur rund 6 %",
       "quelle_url": "https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2026/Presse2026/260420_PM_PKS_SKiD.html",
       "ebene": "land",
-      "schlagwoerter": ["vergewaltigung", "vergewaltigt", "sexuelle belaestigung", "sexueller uebergriff", "begrapscht", "grapschen", "ko-tropfen", "catcalling", "sexualisierte gewalt"],
-      "nachtraeglich": "2026-09-29: nach der Perspektivenprüfung ergänzt (belegte Diagnose, von keiner Ursache abgedeckt, in docs/perspektiven-ursachen.md für diesen Schritt vorgemerkt); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "schlagwoerter": ["vergewaltigung", "vergewaltigt", "sexuelle belaestigung", "sexueller uebergriff", "begrapscht", "grapschen", "ko-tropfen", "catcalling", "sexualisierte gewalt"]
     },
     {
       "id": 909,
-      "beschreibung": "Zugewanderte werden stärker mit Kriminalität verbunden, als es die Daten zeigen; nennen Medien die Herkunft von Tatverdächtigen, sind Ausländer etwa dreifach überrepräsentiert",
+      "beschreibung": "Zugewanderte werden stärker mit Kriminalität verbunden, als es die Daten zeigen: Nennen Fernsehen und Zeitungen bei Gewalttaten die Herkunft, geht es zu über 90 % um ausländische Tatverdächtige (2025)",
       "quelle_url": "https://mediendienst-integration.de/news/auslaendische-tatverdaechtige-in-deutschen-leitmedien-ueberrepraesentiert/",
       "ebene": "land",
-      "schlagwoerter": ["gefuehl", "wahrnehmung", "wahrgenommen", "medien", "berichterstattung", "herkunft", "nationalitaet", "zusammenhang", "unsicherheitsgefuehl", "angst vor auslaendern"],
-      "nachtraeglich": "2026-09-30: nach einem Hinweis der Betreiberin ergänzt (ein Unsicherheitsgefühl wegen Zuwanderung konnte nur der Kriminalitätsursache 905 zugeordnet werden); die Programme wurden danach eigens nach Maßnahmen dazu durchsucht."
+      "schlagwoerter": ["gefuehl", "wahrnehmung", "wahrgenommen", "medien", "berichterstattung", "herkunft", "nationalitaet", "zusammenhang", "unsicherheitsgefuehl", "angst vor auslaendern", "statistik"]
     },
     {
-      "id": 910,
-      "beschreibung": "Mit dem starken Zuzug Geflüchteter 2014–2016 stieg die Kriminalität in den aufnehmenden Kreisen moderat, mit einem Jahr Verzögerung; ob wegen der Zahl oder der Aufnahmebedingungen, ist offen",
-      "quelle_url": "https://www.zew.de/en/publications/do-refugees-impact-crime-causal-evidence-from-large-scale-refugee-immigration-to-germany-3",
-      "ebene": "bund",
-      "schlagwoerter": ["zu viele", "seit die fluechtlinge", "seit 2015", "zuzug", "grenzen", "begrenzen", "obergrenze", "unterkunft", "heim", "massenmigration"],
-      "nachtraeglich": "2026-10-01: auf Entscheidung der Betreiberin ergänzt (Diagnose aus der Debatte, durch Kausalstudien für Deutschland gemischt belegt); die Bundesprogramme wurden danach eigens nach Maßnahmen zu Zugang und Aufnahme durchsucht."
+      "id": 911,
+      "beschreibung": "Unbehandelte schwere psychische Erkrankungen und Suchterkrankungen erhöhen das Risiko für Gewalttaten, besonders zusammen; die meisten Gewalttaten gehen aber nicht darauf zurück",
+      "quelle_url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000120",
+      "ebene": "land",
+      "schlagwoerter": ["psychisch krank", "psychisch kranke", "psychose", "schizophrenie", "verwirrt", "drogen", "alkohol", "sucht", "amok", "einzeltaeter", "gefaehrlich", "psychiatrie"]
     }
   ]
 }
