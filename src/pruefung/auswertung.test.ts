@@ -51,12 +51,12 @@ describe('Auswertung je Maßnahme', () => {
 })
 
 describe('Export', () => {
-  it('enthält nur Zahlen je Maßnahme, keine Namen, und lässt Unbewertetes weg', () => {
+  it('enthält nur Zahlen je Maßnahme, keine Namen, sortierte Einzelwerte, und lässt Unbewertetes weg', () => {
     const daten = exportiere(2, '2026-10-05', [werteAus(2001, [w(2, 3), w(2, 2), w(3, 2)]), werteAus(2002, [])])
     expect(daten).toEqual({
       thema_id: 2,
       datum: '2026-10-05',
-      bewertungen: [{ massnahme_id: 2001, anzahl: 3, median_w: 2, median_u: 2, spannweite: 1 }],
+      bewertungen: [{ massnahme_id: 2001, anzahl: 3, median_w: 2, median_u: 2, spannweite: 1, werte: [[2, 2], [2, 3], [3, 2]] }],
     })
   })
 })

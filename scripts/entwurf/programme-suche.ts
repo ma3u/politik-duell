@@ -16,6 +16,7 @@
 // suchen und die passenden Kapitel lesen (npm run programm:text -- <url> --seiten 12-20).
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs, programme } from '../programme.ts'
+import { begriffQuelle, fliesstext, zaehle } from './suche.ts'
 
 const args = process.argv.slice(2)
 const liste = (name: string) => {
@@ -42,22 +43,7 @@ if (!begriffe.length) {
   process.exit(1)
 }
 
-/** Fließtext einer Seite: Silbentrennung am Zeilenende zusammengezogen, Leerraum vereinheitlicht. */
-const fliesstext = (seite: string) =>
-  seite
-    .normalize('NFKC')
-    .replace(/­/g, '')
-    .replace(/(\p{Ll})[-‐]\s*\n\s*(\p{Ll})/gu, '$1$2')
-    .replace(/\s+/g, ' ')
-// Manche PDFs zerlegen Wörter im Textauszug („unab - dingbar“, „erh ö hen“): Zwischen
-// zwei Zeichen eines Begriffs darf deshalb ein Leerzeichen oder eine Trennung stehen.
-const zwischen = '(?:\\s*[-‐]\\s+|\\s)?'
-const muster = new RegExp(
-  begriffe
-    .map((b) => [...b.trim().replace(/\s+/g, '')].map((z) => z.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(zwischen))
-    .join('|'),
-  'giu',
-)
+const muster = new RegExp(begriffe.map(begriffQuelle).join('|'), 'giu')
 
 const lokal = lokalOrdner ? lokalePdfs(lokalOrdner) : undefined
 const { katalog } = pruefeDatenordner()
@@ -85,8 +71,7 @@ for (const p of auswahl) {
   const fundseiten: { n: number; auszuege: string[]; anzahl: number }[] = []
   if (jeBegriff) {
     const zahlen = begriffe.map((b) => {
-      const m = new RegExp([...b.trim().replace(/\s+/g, '')].map((z) => z.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(zwischen), 'giu')
-      return `${b} ${seiten.reduce((s, roh) => s + [...fliesstext(roh).matchAll(m)].length, 0)}`
+      return `${b} ${zaehle(seiten, b)}`
     })
     console.log(`\n## ${p.name} – Treffer je Begriff: ${zahlen.join('; ')}`)
   }

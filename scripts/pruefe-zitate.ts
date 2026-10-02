@@ -7,9 +7,11 @@
 //         npm run zitate:pruefen -- --lokal <ordner> – PDFs aus einem Ordner nehmen (zugeordnet über die Prüfsumme),
 //                                                     etwa wenn ein Parteiserver den Abruf sperrt
 //         npm run zitate:pruefen -- --archivieren   – zusätzlich jedes Programm im Internet Archive sichern
+// Außerdem: Auslassungen „[…]“ über 200 Zeichen, Teile unter 20 Zeichen und einschränkende Wörter
+// („nicht“, „nur“, „sofern“ …) im ausgelassenen Text werden gemeldet (kein Fehler).
 import { pruefeDatenordner } from './katalog-laden.ts'
 import { archivieren, ladeProgramm, lokalePdfs, programme } from './programme.ts'
-import { findeZitat, seiteVon, seitenTexte } from './zitate.ts'
+import { findeZitat, seiteVon, seitenTexte, zitatKontext } from './zitate.ts'
 
 const hinweise: string[] = []
 
@@ -46,6 +48,7 @@ for (const m of massnahmen) {
 }
 
 const fehler: string[] = []
+const auslassungen: string[] = []
 let ok = 0
 let ungeprueft = 0
 for (const [url, liste] of jeProgramm) {
@@ -68,12 +71,23 @@ for (const [url, liste] of jeProgramm) {
       continue
     }
     const befund = findeZitat(m.zitat!, seiten, seite)
-    if (befund.status === 'ok') ok++
+    if (befund.status === 'ok') {
+      ok++
+      // Auslassungen, die den Sinn ändern könnten: zum Nachsehen in der Belegprüfung (npm run pruefliste).
+      const kontext = zitatKontext(m.zitat!, seiten, seite)
+      if (kontext?.warnungen.length)
+        auslassungen.push(`${wo}: ${kontext.warnungen.join('; ')} – ausgelassen: ${kontext.auslassungen.map((a) => `„${a.length > 160 ? `${a.slice(0, 160)}…` : a}“`).join(' / ')}`)
+    }
     else if (befund.status === 'andere_seite')
       fehler.push(`${wo}: Zitat steht nicht auf S. ${seite}, sondern auf S. ${befund.seiten.join(', ')} – Seitenanker anpassen`)
     else fehler.push(`${wo}: Zitat nicht im Programm gefunden (S. ${seite}) – Wortlaut prüfen`)
   }
 }
+
+// Kein Fehler: Auslassungen sind erlaubt, sollen aber bei der Belegprüfung angesehen werden.
+for (const a of auslassungen) console.warn(`Auslassung: ${a}`)
+if (auslassungen.length && process.env.GITHUB_ACTIONS)
+  console.warn(`::warning::${auslassungen.length} Zitate mit langen oder einschränkenden Auslassungen – in der Belegprüfung ansehen (Liste im Lauf, npm run pruefliste)`)
 
 // In GitHub Actions als Warnung am Lauf sichtbar, damit ungeprüfte Zitate nicht untergehen.
 for (const h of hinweise) console.warn(process.env.GITHUB_ACTIONS ? `::warning::${h}` : `Hinweis: ${h}`)

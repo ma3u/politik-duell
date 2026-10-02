@@ -229,6 +229,15 @@ describe('Bewertung mit Bund und Ländern', () => {
     expect(bewertePartei(alpha, 99, [991, 992], null, massnahmen, mitKi, ebenen(null)).ki_entwurf).toBeUndefined()
   })
 
+  it('kennzeichnet KI-Entwürfe, deren Werte nicht blind entstanden sind', () => {
+    const ki = (herkunft: 'blind' | 'nicht_blind' | null) => massnahmen.map((m) => ({ ...m, ki_entwurf: true, entwurf_herkunft: herkunft }))
+    const mitKi = abdeckung.map((x) => ({ ...x, ki_entwurf: true }))
+    expect(bewertePartei(alpha, 99, [991, 992], null, ki('blind'), mitKi, ebenen(null)).nicht_blind).toBeUndefined()
+    expect(bewertePartei(alpha, 99, [991, 992], null, ki('nicht_blind'), mitKi, ebenen(null)).nicht_blind).toBe(true)
+    expect(bewertePartei(alpha, 99, [991, 992], null, ki(null), mitKi, ebenen(null)).nicht_blind).toBe(true)
+    expect(bewertePartei(alpha, 99, [991, 992], null, massnahmen, abdeckung, ebenen(null)).nicht_blind).toBeUndefined()
+  })
+
   it('vergleicht bei der besten Lösung nur Parteien mit Wertung', () => {
     expect(besteParteien([alpha, beta], 99, [992], null, massnahmen, abdeckung, ebenen('ST')).map((b) => b.partei.id)).toEqual([1])
     expect(besteParteien([alpha, beta], 99, [992], null, massnahmen, abdeckung, ebenen(null)).map((b) => b.partei.id)).toEqual([2])

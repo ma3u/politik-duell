@@ -17,7 +17,7 @@ Die Reihenfolge ist wichtig für die Neutralität.
 1. **Thema und Ursachen festlegen – ohne Blick in die Wahlprogramme.**
    Ursachen beschreiben, *warum* das Alltagsproblem besteht. Jede Ursache braucht eine unabhängige Quelle (z. B. Statistisches Bundesamt, Sachverständigenrat, Bundesbank, wissenschaftliche Studie). Keine Parteiquellen, keine Quellen von Lobbyverbänden als einzige Quelle.
    Ursachen **lösungsoffen** formulieren (was schiefläuft, nicht wie es zu beheben ist), Quellen unterschiedlicher Ausrichtung heranziehen und eine **Perspektivenprüfung** machen: Kommen die in der Fachdebatte vertretenen Problemdiagnosen in mindestens einer belegten Ursache vor? Ergebnis, Zuständigkeitsebene (Bund oder Land) und verworfene Kandidaten in [`docs/perspektiven-ursachen.md`](../docs/perspektiven-ursachen.md) festhalten (Regeln: [`docs/methode.md`](../docs/methode.md) → „Ursachen“).
-   Eigener Pull Request, damit die Ursachen feststehen, bevor Maßnahmen dazukommen. Die Themendatei enthält dann noch keine `abdeckung` – das Thema gilt für alle Parteien als „noch nicht erfasst“.
+   Eigener Pull Request, damit die Ursachen feststehen, bevor Maßnahmen dazukommen (die Prüfung lehnt Ursachen oder Ziel und Maßnahmen desselben Themas im selben Pull Request ab). Die Themendatei enthält dann noch keine `abdeckung` – das Thema gilt für alle Parteien als „noch nicht erfasst“. Die Perspektivenprüfung nennt je Ursache die **Lösungsrichtungen** aus der Debatte; jede bekommt beim Erfassen eigene Suchbegriffe. Freigegeben sind Ziel und Ursachen, wenn die Betreiberin `freigabe` (Datum, bestätigte Quellen) einträgt.
 2. **Maßnahmen aus den Programmen erfassen.**
    Für **jede** Partei entweder Maßnahmen mit **wörtlichem Zitat** (`zitat`) und Seitenanker eintragen oder ausdrücklich `keine_massnahme` mit kurzer Begründung („Programm Stand … durchsucht, Kapitel … enthält nichts zu …“). Neue Einträge haben `"geprueft": false`. Nur Maßnahmen aufnehmen, die an einer der erfassten Ursachen ansetzen. Ursachen werden dafür grundsätzlich nicht nachträglich ergänzt; Ausnahmen (bisher: Miete 204–206, Pflege 1005, Sicherheit 904–910, Bus und Bahn 804) sind mit `nachtraeglich` gekennzeichnet. Werkzeuge dafür: siehe „Erfassen“.
 3. **Entwurf bewerten** nach dem Maßstab unten, möglichst **ohne Parteinamen** (Maßnahmentext allein beurteilen). Schlägt ein anderes Programm denselben Lösungsweg vor, auf dessen **Instrument** verweisen statt neu zu bewerten; kommt ein Lösungsweg in mehreren Programmen vor, ein Instrument anlegen (siehe „Instrumente“). Die Entwurfswerte sind die „Empfehlung“, die Prüfende erst nach ihrer eigenen Bewertung sehen.
@@ -41,7 +41,7 @@ Ein Pull Request pro Thema. Die Prüfung hat zwei Teile: Die **Bewertung** über
 1. **Einladen:** In der Admin-Ansicht (`#/admin` → „Prüfung“) je Person eine Einladung mit Name und Themen anlegen. Der Link wird nur einmal angezeigt – kopieren und persönlich schicken.
 2. **Bewerten:** Die Person willigt ein und bewertet in der App (`#/pruefen/…`) jede **Prüfeinheit** des Themas – ein Instrument einmal für alle Programme, die es vorschlagen (die Formulierungen aus den Programmen stehen dabei), sonst die einzelne Maßnahme: ohne Parteinamen, in gemischter Reihenfolge, ohne die Bewertungen der anderen zu sehen. Die Empfehlung (Entwurfswerte und Begründung) wird erst nach der eigenen Bewertung sichtbar; Änderungen danach werden vermerkt. Am Ende „Absenden“.
 3. **Auswerten:** Admin → „Prüfung“ → „Auswertung“ zeigt je Prüfeinheit alle Einzelwerte, Median Wirksamkeit, Median Umsetzbarkeit, Punkte (= Median W × Median U) und Spannweite. Es zählen nur abgesendete Bewertungen nicht gesperrter Einladungen.
-4. **Übernehmen:** „Export (ohne Namen)“ herunterladen, dann `npm run pruefung:uebernehmen -- <export.json>`. Das Skript schreibt die Mediane als `wirksamkeit`/`umsetzbarkeit` an das Instrument bzw. die Maßnahme ohne Instrument und hält in `bewertung` Anzahl, Mediane, Spannweite, Datum und die ursprünglichen Entwurfswerte fest. Die Exportdatei selbst gehört nicht ins Repo.
+4. **Übernehmen:** „Export (ohne Namen)“ herunterladen, dann `npm run pruefung:uebernehmen -- <export.json>`. Das Skript schreibt die Mediane als `wirksamkeit`/`umsetzbarkeit` an das Instrument bzw. die Maßnahme ohne Instrument und hält in `bewertung` Anzahl, Mediane, Spannweite, Datum und die ursprünglichen Entwurfswerte fest. Den Export legt es unter `pruefungen/thema-NN-<datum>.json` ab – er kommt mit ins Repository: Er enthält nur Zahlen (je Prüfeinheit Anzahl, Mediane, Spannweite und die sortierten Einzelwerte, ohne Zuordnung zu Personen), und `npm run daten:pruefen` gleicht jede `bewertung` im Katalog damit ab. Ein von Hand eingetragenes Prüfergebnis fällt so auf.
 
 Regeln:
 
@@ -56,7 +56,9 @@ Regeln:
 `npm run pruefliste -- <Themen-ID>` erzeugt `pruefung/<nr>-<thema>.html` (nicht im Repo) – im Browser öffnen, Eingaben bleiben dort gespeichert. Durchgang A (eigene Bewertung ohne Parteinamen) ist durch die Bewertung in der App ersetzt; maßgeblich ist:
 
 1. **Durchgang B – Belege.** Je Maßnahme: Link öffnet die richtige Seite · Zitat steht dort wörtlich · Kurzbeschreibung gibt es richtig wieder · passt zu den Ursachen · Begründung neutral. Bei `keine_massnahme`: Stichprobe mit der PDF-Suche.
-2. **Ergebnis** mit „Zusammenfassung kopieren“ als Kommentar in den Pull Request; Einwände als Zeilenkommentar. Sind Bewertung übernommen und alle Belege einer Partei in Ordnung, `geprueft: true` setzen – erst dann zählt das Thema für diese Partei.
+   Die Prüfliste zeigt zu jedem Zitat den **ausgelassenen Text** („[…]“) und hebt hervor, was den Sinn ändern könnte: Auslassungen über 200 Zeichen, Teile unter 20 Zeichen, einschränkende Wörter („nicht“, „nur“, „sofern“ …) im Ausgelassenen und Zahlen, die nur in der Beschreibung stehen.
+2. **Zweite Suche bei `keine_massnahme`:** mit eigenen Begriffen im PDF suchen, das passende Kapitel lesen und mit der Trefferzahl (`treffer` am Eintrag, aus der Treffermatrix der Erfassung) abgleichen. Was gesucht und gelesen wurde, kommt in `pruefung.zweite_suche`.
+3. **Ergebnis** mit „Zusammenfassung kopieren“ als Kommentar in den Pull Request; Einwände als Zeilenkommentar. Sind Bewertung übernommen und alle Belege einer Partei in Ordnung, `geprueft: true` setzen und das Datum der Belegprüfung eintragen (`"pruefung": { "belege_geprueft": "JJJJ-MM-TT" }`, bei `keine_massnahme` zusätzlich `zweite_suche`) – erst dann zählt das Thema für diese Partei. Ohne diesen Nachweis lehnt die Prüfung `geprueft` ab.
 
 ## Programme
 
@@ -255,6 +257,7 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
   "beschreibung": "Kurzer neutraler Satz.",
   "ziel": "Was sich für die Betroffenen ändern soll – Maßstab für die Wirksamkeit.",
   "schlagwoerter": ["kita", "betreuung"],
+  "freigabe": { "datum": "2026-10-02", "quellen_bestaetigt": [401] },
   "ursachen": [
     { "id": 401, "beschreibung": "Zu wenige Fachkräfte", "quelle_url": "https://…", "ebene": "land" }
   ],
@@ -325,7 +328,10 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 - `land` und `landtagswahl` (bei Abdeckungseinträgen): Eintrag aus dem Landesprogramm der Partei in diesem Land zu dieser Wahl. Ohne `land` ist es das Bundesprogramm. Je Thema, Partei und Programm höchstens ein Eintrag. Landeseinträge sind eine Ergänzung: „noch nicht erfasst“ bezieht sich auf das Bundesprogramm; für Landesursachen gibt es bei gewähltem Bundesland zusätzlich „noch nicht erfasst“ für das Land.
 - `durchsucht_fuer` (bei Abdeckungseinträgen, von `npm run entwurf:eintragen` gesetzt): Ursachen, nach denen das Programm durchsucht wurde (bei Landeseinträgen nur Ursachen mit `ebene: land`). Fehlt eine Ursache, gilt sie für die Partei als „noch nicht erfasst“, und eine Runde mit ihr wird nicht gewertet. Ohne das Feld (ältere Einträge) gilt das Programm für alle Ursachen als durchsucht. Kommt eine Ursache zu einem Thema mit Abdeckung hinzu, verlangt die Prüfung bei Pull Requests das Feld an jedem aktuellen Eintrag, für den die Ursache zählt – mit der neuen Ursache erst, wenn das Programm danach durchsucht ist.
 - `entwurf_herkunft` (bei Instrumenten und Maßnahmen ohne Instrument): `blind`, wenn die Entwurfswerte aus der Blindbewertung stammen (setzt `entwurf:eintragen`), `nicht_blind`, wenn jemand sie mit Kenntnis der Partei vergeben oder geändert hat. Fehlt bei Einträgen von vor dem 1. 10. 2026 (nicht blind entstanden). Werte mit `blind` dürfen sich nur durch die Prüfung ändern; wer sie anders ändert, setzt `nicht_blind` und begründet es im Pull Request (prüft die CI).
-- `nachtraeglich` (optional, bei Ursachen): Wurde eine Ursache erst nach dem Blick in die Programme ergänzt, steht hier Datum und Grund. Das soll die Ausnahme bleiben und ist im Pull Request zu begründen.
+- `freigabe` (bei neuen Themen vor dem Erfassen Pflicht): Datum, an dem die Betreiberin Ziel und Ursachen freigegeben hat, und die Ursachen, deren Quellen sie im Original bestätigt hat. Trägt nur die Betreiberin ein (meist als letzter Commit im Pull Request der Phase A). `npm run ursachen:freigegeben` verlangt das Feld im Zielzweig und jede Ursache in `quellen_bestaetigt` – ein Merge allein ist keine Freigabe. Themen, die vor dem 2. 10. 2026 erfasst wurden, haben das Feld noch nicht.
+- `pruefung` (bei `geprueft: true` Pflicht): `{ "belege_geprueft": "JJJJ-MM-TT" }` an jeder Maßnahme; bei `keine_massnahme` zusätzlich `"zweite_suche"`: Suchbegriffe, gelesene Kapitel und Abgleich mit der Treffermatrix. Siehe „Belegprüfung“.
+- `treffer` (bei `keine_massnahme`, von `npm run entwurf:eintragen` gesetzt): Treffer aller Suchbegriffe in diesem Programm – Anhaltspunkt für die zweite Suche.
+- `nachtraeglich` (optional, bei Ursachen): Wurde eine Ursache erst nach dem Blick in die Programme ergänzt, steht hier Datum und Grund. Das soll die Ausnahme bleiben und ist im Pull Request zu begründen (Verfahren: [`docs/methode.md`](../docs/methode.md) → „Nachträgliche Ursachen“). Nur so darf eine Ursache im selben Pull Request wie Maßnahmen des Themas dazukommen – und nur, wenn jeder aktuelle Abdeckungseintrag `durchsucht_fuer` angibt.
 - `zitat` ist bei echten Daten Pflicht: der Satz aus dem Programm, auf den sich die Maßnahme stützt, wörtlich (Silbentrennungen am Zeilenende zusammengezogen). Es dient der Prüfung und kommt nicht in die Datenbank.
 - `schlagwoerter` braucht nur die Offline-Analyse ohne KI; kleingeschrieben, Umlaute als ae/oe/ue.
 - `beleg_programm_url` muss auf `programm_url` der Partei zeigen (bei Landeseinträgen auf die `url` des Landesprogramms), mit Seitenanker `#page=N`.
@@ -369,7 +375,7 @@ Reihenfolge beim Erfassen eines Programms: Programm in `parteien.json` eintragen
 
 **Suchen statt ganze Programme lesen.** Alle Programme zusammen haben rund 7,6 Millionen Zeichen – zu viel, um sie für jedes Thema ganz zu lesen (auch für eine KI). Deshalb: je Ursache Suchbegriffe samt Synonymen festlegen, `programme:suche` über alle Programme laufen lassen, dann die Fundstellen und über das Inhaltsverzeichnis (`programm:text -- <url> --seiten …`) die passenden Kapitel lesen. Dieselben Begriffe für alle Parteien. Null Treffer allein reicht nicht für `keine_massnahme` – erst das passende Kapitel ansehen.
 
-**Programme nie ins Repository.** Die PDFs und ihre Texte sind urheberrechtlich geschützt (Wahlprogramme sind keine amtlichen Werke). Sie liegen nur im Zwischenspeicher `.cache/` (in `.gitignore`), als vorübergehende Kopie zur Auswertung; ins Repository kommen nur URL, Prüfsumme, Seitenanker und kurze wörtliche Zitate. In Cloud-Sitzungen von Claude Code lädt `.claude/hooks/session-start.sh` die Programme beim Start automatisch.
+**Programme nie ins Repository.** Die PDFs und ihre Texte sind urheberrechtlich geschützt (Wahlprogramme sind keine amtlichen Werke). Sie liegen nur im Zwischenspeicher `.cache/` (in `.gitignore`), als vorübergehende Kopie zur Auswertung; ins Repository kommen nur URL, Prüfsumme, Seitenanker und kurze wörtliche Zitate. In Cloud-Sitzungen von Claude Code lädt `.claude/hooks/session-start.sh` die Programme beim Start automatisch – außer in Phase A (`npm run phase-a -- start`).
 
 ### Mit KI-Agenten
 
@@ -383,10 +389,14 @@ Für Claude Code liegen zwei Skills im Repository, die den Ablauf oben in getren
 Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die Neutralität zwingend ist, sichern Skripte ab, nicht nur die Anleitung:
 
 ```bash
-npm run ursachen:freigegeben -- 17                      # bricht ab, wenn die Ursachen nicht auf main stehen oder verändert wurden
-npm run entwurf:blind -- erfassung.json --ausgabe blind.json   # Maßnahmen ohne Parteinamen, gemischte Reihenfolge, Kennungen M01 … (gespeichert als kennungen.json), mit Prüfsumme
+npm run phase-a -- start "Kita-Betreuung"              # Phase A: Programme und .cache/ gesperrt (auch für Agenten); Ende: npm run phase-a -- ende
+npm run themen:ueberblick                               # vorhandene Themen nur mit Ziel und Ursachen (für Phase A)
+npm run ursachen:freigegeben -- 17                      # bricht ab ohne „freigabe“ im Zielzweig oder wenn Ursachen bzw. Ziel verändert wurden
+npm run entwurf:treffer -- erfassung.json               # zählt jeden Suchbegriff (je Ursache und Lösungsrichtung) in allen Programmen der Erfassung
+npm run entwurf:blind -- erfassung.json --ausgabe blind.json   # ohne Parteinamen, Personen und Länder, gemischte Reihenfolge, Kennungen M01 … (kennungen.json), Prüfsumme; bricht bei zu vielen verdächtigen Resten ab
+npm run blind:reste                                     # verdächtige Reste nach dem Neutralisieren über den ganzen Katalog
 npm run entwurf:json -- antwort.txt bewertung.json      # JSON-Objekt aus einer gespeicherten Agentenantwort holen
-npm run entwurf:bewertung-pruefen -- erfassung.json bewertung.json   # Prüfsumme der Blindliste, Ebenen, unbenutzte Instrumente, Wirksamkeit 3, Hinweise
+npm run entwurf:bewertung-pruefen -- erfassung.json bewertung.json   # Prüfsumme der Blindliste, bestätigte Zuordnung zu Ursachen, Ebenen, unbenutzte Instrumente, Wirksamkeit 3, Hinweise
 npm run entwurf:eintragen -- erfassung.json bewertung.json   # verlangt protokoll/; neue IDs, Beleg-Links, KI-Entwurf, durchsucht_fuer, entwurf_herkunft
 ```
 
@@ -398,6 +408,11 @@ Was technisch abgesichert ist, damit Eingriffe des Koordinators (der die Parteie
 
 - **Prüfsumme der Blindliste:** `blind.json` trägt eine `pruefsumme` über den ganzen Inhalt; der Bewertungs-Agent gibt sie als `blind_pruefsumme` zurück. Wird danach eine Beschreibung, ein Zitat, eine Seite, eine Ursachenzuordnung oder ein vorhandenes Instrument geändert, lehnen `entwurf:bewertung-pruefen` und `entwurf:eintragen` die Bewertung ab.
 - **Protokoll:** `entwurf:eintragen` verlangt neben der Erfassung den Ordner `protokoll/` mit `erfassung-<Partei>-<Bund|Land>.txt` (Rohantwort jedes Erfassungs-Agenten samt Protokoll), `bewertung-auftrag.txt` (vollständiger Auftrag mit der Blindliste und ihrer Prüfsumme, ohne Parteinamen), `bewertung-antwort.txt` und `rueckfragen.md` (jede Rückfrage mit Programm bzw. Kennung, Anlass und Ergebnis, sonst „keine“).
+- **Programmsperre:** Ein PreToolUse-Hook (`.claude/hooks/sperre.mjs`, Liste in [`gesperrte-adressen.json`](gesperrte-adressen.json)) weist WebFetch auf Partei-, Fraktions- und Stiftungsserver, die Server aller Programme und dieses Repository ab – auch bei Agenten. In Phase A (`npm run phase-a -- start`) sperrt er zusätzlich `.cache/` und alle Werkzeuge, die Programme lesen; der Sitzungsstart lädt dann keine Programme.
+- **Suchbegriffe je Lösungsrichtung:** `suchbegriffe` in der Erfassung ist `{ "<Ursache>": { "<Richtung>": ["Begriff", …] } }` mit den Richtungen aus der Spalte „Diagnose aus der Debatte“. `entwurf:blind` lehnt Ursachen ohne Richtung und Richtungen ohne Begriffe ab und verlangt die Treffermatrix (`entwurf:treffer`) zu genau diesen Begriffen. Hat ein Programm zu einer Ursache viele Treffer, aber keine Maßnahme, gibt es einen Hinweis. Nennt ein Erfassungs-Agent eigene Synonyme, kommen sie in `suchbegriffe` und werden mit einem neuen Lauf in allen Programmen gezählt.
+- **Blindliste:** Parteinamen samt Artikel und „Wir“ („Wir Freie Demokraten“, „Die LINKE“), Namen aus mehreren Wörtern ohne Rücksicht auf Groß- und Kleinschreibung, bekannte Personen, Länder, Städte und Landesorgane („Senat“, „Abgeordnetenhaus“) werden ersetzt. Wörter, die trotzdem auf eine Partei hindeuten können („liberal“, „Fraktion“, „Ampel“ …), meldet `entwurf:blind`; über einer Schwelle (3 oder 5 %) bricht es ab.
+- **Zuordnung blind bestätigt:** Der Bewertungs-Agent nennt je Maßnahme die Ursachen, an denen sie ansetzt (`ursachen`). Fehlt darin eine Ursache aus der Erfassung, lehnen `entwurf:bewertung-pruefen` und `entwurf:eintragen` ab. Hinweise gibt es, wenn er zusätzliche Ursachen sieht, Maßnahmen desselben Instruments verschiedenen Ursachen zugeordnet sind oder ein Programm deutlich öfter mehreren Ursachen zugeordnet ist als die übrigen.
+- **Zahlen:** Steht in einer Beschreibung eine Zahl, die das Zitat nicht enthält, lehnt `entwurf:blind` ab (im Katalog: Warnung).
 - **Programmfassung:** `programme:texte`, `programme:suche` und `programm:text` lesen nur die Fassung mit der Prüfsumme aus `parteien.json`; bei Abweichung gilt das Programm als nicht durchsucht. `programme:texte` nennt Seiten fast ohne Text (Bilder, Scans). Ein Programm, das ein Agent nicht laden konnte, wird ausgelassen (bleibt „noch nicht erfasst“) und nie als „keine Maßnahme“ eingetragen.
 
 ## Neue Wahlperiode
@@ -422,12 +437,16 @@ Was technisch abgesichert ist, damit Eingriffe des Koordinators (der die Parteie
 - **Stand der Forschung:** Wirksamkeit 3 nur mit `evidenz: belegt` (Warnung ohne Studie); `geprueft` nur mit `evidenz`; Rollen-Modifikatoren, die ohne belegte Wirkung auf 3 heben würden (Warnung, zählen bis 2)
 - **Abdeckung je Ursache:** `durchsucht_fuer` nur mit Ursachen des Themas (bei Landeseinträgen nur Landesursachen); Maßnahmen nur zu durchsuchten Ursachen; bei Pull Requests: neue Ursache in einem Thema mit Abdeckung → `durchsucht_fuer` an jedem aktuellen Eintrag, für den sie zählt
 - **Blindbewertung:** bei Pull Requests keine geänderten Werte an Einträgen mit `entwurf_herkunft: blind` außer durch die Prüfung
+- **Phasen getrennt:** bei Pull Requests nicht Ursachen oder Ziel und Maßnahmen (Abdeckung, Instrumente) desselben Themas zugleich – außer eine neue Ursache mit `nachtraeglich` und `durchsucht_fuer` an jedem aktuellen Eintrag; neue oder geänderte Ursachen und Ziele nennen keine Partei
+- **Nachweis der Prüfung:** `geprueft` nur mit `pruefung.belege_geprueft` (bei `keine_massnahme` mit `zweite_suche`); jede `bewertung` passt zu einem Export in `pruefungen/` (Anzahl, Mediane, Spannweite, Einzelwerte)
+- **Freigabe:** `freigabe.quellen_bestaetigt` nur mit Ursachen des Themas (verlangt von `ursachen:freigegeben`)
+- Zahlen in Beschreibungen, die nicht im Zitat stehen (Warnung)
 - Einträge sind nicht älter als das aktuelle Programm
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen
 - `supabase/seed.sql` passt zum Katalog
 - bei echten Daten: Prüfsumme je Programm (sonst Warnung)
-- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten oder mit `--lokal`. Weicht eine Datei von der Prüfsumme ab, warnt sie (Programm ausgetauscht?). Montags läuft sie ohne Zwischenspeicher und sichert fehlende Programme im Internet Archive.
+- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten oder mit `--lokal`. Weicht eine Datei von der Prüfsumme ab, warnt sie (Programm ausgetauscht?). Auslassungen über 200 Zeichen, Teile unter 20 Zeichen und einschränkende Wörter im ausgelassenen Text meldet sie als Hinweis (kein Fehler) – nachzusehen in der Prüfliste. Montags läuft sie ohne Zwischenspeicher und sichert fehlende Programme im Internet Archive.
 
 ```bash
 npm run daten:pruefen              # Dateien prüfen
@@ -436,7 +455,7 @@ npm run seed                       # supabase/seed.sql neu erzeugen
 npm run dashboard                  # zusätzlich Dateien fürs Supabase-Dashboard
 npm run pruefung:uebernehmen -- export.json   # Ergebnis der Prüfung übernehmen
 npm run zitate:pruefen             # Zitate gegen die Programm-PDFs prüfen (braucht Internet)
-npm run daten:id -- --gegen origin/main       # IDs, neue Ursachen und Blindwerte mit einem anderen Stand vergleichen
+npm run daten:id -- --gegen origin/main       # IDs, neue Ursachen, Phasen und Blindwerte mit einem anderen Stand vergleichen
 ```
 
 Werkzeuge zum Erfassen: siehe „Erfassen“.

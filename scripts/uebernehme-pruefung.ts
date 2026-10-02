@@ -3,9 +3,9 @@
 //   <export.json>  Datei aus Admin → Prüfung → „Export (ohne Namen)“
 //   --geklaert     Maßnahmen mit Spannweite ≥ 2 sind geklärt und dürfen übernommen werden
 // Regeln: daten/README.md → „Prüfung“.
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { pruefeDatenordner } from './katalog-laden.ts'
-import { formatiere, pruefeExport, uebernehme } from './pruefung-export.ts'
+import { exportPfad, formatiere, pruefeExport, uebernehme } from './pruefung-export.ts'
 
 const argumente = process.argv.slice(2)
 const pfad = argumente.find((a) => !a.startsWith('--'))
@@ -41,17 +41,24 @@ const datei = readdirSync(ordner)
 const original = readFileSync(datei, 'utf8')
 const { inhalt, aenderungen } = uebernehme(JSON.parse(original), daten)
 writeFileSync(datei, formatiere(inhalt) + '\n')
+// Der Export (nur Zahlen, keine Namen) kommt ins Repository: Daran prüft daten:pruefen jede `bewertung`.
+const ablage = new URL(`../${exportPfad(daten)}`, import.meta.url)
+const ablageVorher = existsSync(ablage) ? readFileSync(ablage, 'utf8') : null
+mkdirSync(new URL('.', ablage), { recursive: true })
+writeFileSync(ablage, formatiere(daten) + '\n')
 
 // Ergebnis muss die Katalogprüfung bestehen, sonst zurück zum alten Stand.
 const nachher = pruefeDatenordner()
 if (nachher.fehler.length) {
   writeFileSync(datei, original)
+  if (ablageVorher === null) rmSync(ablage)
+  else writeFileSync(ablage, ablageVorher)
   console.error(`Übernahme verworfen, Katalog wäre fehlerhaft:\n  ${nachher.fehler.join('\n  ')}`)
   process.exit(1)
 }
 
 const name = datei.pathname.split('/').pop()
-console.log(`\ndaten/themen/${name}: ${aenderungen.length} Maßnahmen übernommen`)
+console.log(`\ndaten/themen/${name}: ${aenderungen.length} Maßnahmen übernommen, Export in ${exportPfad(daten)}`)
 for (const a of aenderungen) {
   const geaendert = a.vorher[0] !== a.nachher[0] || a.vorher[1] !== a.nachher[1]
   console.log(`  ${a.massnahme_id}: ${a.vorher.join('×')} → ${a.nachher.join('×')}${geaendert ? '  (geändert)' : ''}`)

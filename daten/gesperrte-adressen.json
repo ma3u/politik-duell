@@ -1,0 +1,18 @@
+{
+  "hinweis": "Adressen, die Claude Code (auch Agenten) nicht mit WebFetch abrufen darf – geprüft von .claude/hooks/sperre.mjs. Die Server aller Programme in parteien.json sind zusätzlich gesperrt. Ursachen werden ohne Blick in Programme und Parteiquellen festgelegt, Bewertungen ohne Kenntnis der Herkunft.",
+  "hosts": [
+    "cdu.de", "csu.de", "spd.de", "gruene.de", "fdp.de", "afd.de", "die-linke.de", "bsw-vg.de", "bsw-partei.de",
+    "cducsu.de", "spdfraktion.de", "gruene-bundestag.de", "fdpbt.de", "afdbundestag.de", "linksfraktion.de",
+    "kas.de", "fes.de", "boell.de", "freiheit.org", "rosalux.de", "erasmus-stiftung.de", "hss.de",
+    "politik-duell.de", "politikduell.de", "politik-duell.vercel.app"
+  ],
+  "muster": [
+    "(^|[.-])(cdu|csu|spd|gruene|fdp|afd|bsw)([.-]|lsa|mv|sachsen|berlin|bayern|nrw|bw|hessen|thueringen|brandenburg|hamburg|bremen|sh|rlp|saar)",
+    "(^|[.-])(die-?linke|linke|linksfraktion)([.-])"
+  ],
+  "pfade": [
+    "github.com/politik-duell",
+    "raw.githubusercontent.com/politik-duell",
+    "api.github.com/repos/politik-duell"
+  ]
+}

@@ -80,6 +80,88 @@ function findeInSeiten(zitat: string, seiten: string[], erwartet: number): Zitat
   return treffer.length ? { status: 'andere_seite', seiten: treffer } : { status: 'nicht_gefunden' }
 }
 
+/** Vergleichsform wie `kompakt` und zu jedem Zeichen die Stelle im (NFKC-normalisierten) Text. */
+function kompaktMitStellen(text: string): { kompakt: string; stellen: number[]; text: string } {
+  const t = text.normalize('NFKC')
+  let kompakt = ''
+  const stellen: number[] = []
+  for (let i = 0; i < t.length; ) {
+    const z = String.fromCodePoint(t.codePointAt(i)!)
+    for (const k of z.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '')) {
+      kompakt += k
+      stellen.push(i)
+    }
+    i += z.length
+  }
+  return { kompakt, stellen, text: t }
+}
+
+/** Wörter, die eine Aussage einschränken oder umkehren – stehen sie im ausgelassenen Text, ändert das Zitat womöglich den Sinn. */
+const EINSCHRAENKUNG = /(?<![\p{L}])(?:nicht|kein\p{L}*|nie|niemals|ohne|sofern|falls|wenn|soweit|solange|nur|außer|ausgenommen|vorausgesetzt|allerdings|jedoch|aber|lehnen|ablehn\p{L}*|prüfen|geprüft|langfristig)(?![\p{L}])/giu
+
+export interface ZitatKontext {
+  /** Was zwischen den Teilen des Zitats auf der Seite steht (je Auslassung „[…]“ eine Stelle). */
+  auslassungen: string[]
+  /** Hinweise für die Belegprüfung: lange Auslassungen, sehr kurze Teile, einschränkende Wörter im Ausgelassenen. */
+  warnungen: string[]
+}
+
+/**
+ * Was ein Zitat auslässt. Lange Auslassungen und kurze Bruchstücke können den Sinn verändern
+ * („Wir wollen [… nicht …] abschaffen“); die Belegprüfung sieht deshalb den ausgelassenen Text.
+ * null, wenn das Zitat auf der Seite (und ggf. der folgenden) nicht gefunden wird.
+ */
+export function zitatKontext(zitat: string, seiten: string[], erwartet: number): ZitatKontext | null {
+  const teile = zitatTeile(zitat)
+  for (const bereinigen of [false, true]) {
+    const roh = (seiten[erwartet - 1] ?? '') + '\n' + (seiten[erwartet] ?? '')
+    const { kompakt: k, stellen, text } = kompaktMitStellen(bereinigen ? bereinigeSeite(roh) : roh)
+    const funde: [number, number][] = []
+    let ab = 0
+    for (const teil of teile) {
+      const i = k.indexOf(teil, ab)
+      if (i < 0) break
+      funde.push([i, i + teil.length])
+      ab = i + teil.length
+    }
+    if (funde.length !== teile.length || !teile.length) continue
+    const auslassungen: string[] = []
+    const warnungen: string[] = []
+    for (let j = 1; j < funde.length; j++) {
+      const von = stellen[funde[j - 1][1] - 1] + 1
+      const bis = stellen[funde[j][0]]
+      const aus = text.slice(von, bis).replace(/\s+/g, ' ').trim()
+      auslassungen.push(aus)
+      const laenge = funde[j][0] - funde[j - 1][1]
+      if (laenge > 200) warnungen.push(`Auslassung ${j} umfasst ${laenge} Zeichen`)
+      const woerter = [...new Set([...aus.matchAll(EINSCHRAENKUNG)].map((m) => m[0].toLowerCase()))]
+      if (woerter.length) warnungen.push(`Auslassung ${j} enthält ${woerter.map((w) => `„${w}“`).join(', ')}`)
+    }
+    // Kurze Teile zählen nur neben einer echten Auslassung – nicht neben Zeilennummern (etwa CDU MV).
+    const echt = (j: number) => /\p{L}/u.test(auslassungen[j] ?? '')
+    for (const [j, t] of teile.entries())
+      if (teile.length > 1 && t.length < 20 && (echt(j - 1) || echt(j))) warnungen.push(`Teil ${j + 1} hat nur ${t.length} Zeichen`)
+    return { auslassungen, warnungen }
+  }
+  return null
+}
+
+const ZAHLWOERTER = ['null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf']
+
+/** Zahlen aus einem Text, ohne Tausenderpunkte („100.000“ = „100000“); „sechs“ zählt als 6, „ein(e)“ als 1. */
+const zahlen = (t: string) => [
+  ...[...t.matchAll(/\d+(?:[.  ]\d{3})*(?:,\d+)?/g)].map((m) => m[0].replace(/[.  ]/g, '')),
+  ...[...t.matchAll(/(?<![\p{L}])(null|eins?|eine[mnrs]?|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf)(?![\p{L}])/giu)].map((m) =>
+    String(m[1].toLowerCase().startsWith('ein') ? 1 : ZAHLWOERTER.indexOf(m[1].toLowerCase())),
+  ),
+]
+
+/** Zahlen der Beschreibung, die im Zitat nicht vorkommen – die Beschreibung soll nichts dazuerfinden. */
+export function fehlendeZahlen(beschreibung: string, zitat: string): string[] {
+  const imZitat = new Set(zahlen(zitat))
+  return [...new Set([...beschreibung.matchAll(/\d+(?:[.  ]\d{3})*(?:,\d+)?/g)].map((m) => m[0].replace(/[.  ]/g, '')))].filter((z) => !imZitat.has(z))
+}
+
 /** Seite aus einem Beleg wie „…/programm.pdf#page=17“. */
 export function seiteVon(url: string): number | null {
   const m = /#page=(\d+)$/.exec(url)

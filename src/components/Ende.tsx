@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { gesamtpunkte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import { useLandName } from '../data/kontext'
-import { Belege, KI_HINWEIS } from './Aufloesung'
+import { Belege, KI_HINWEIS, NICHT_BLIND } from './Aufloesung'
 import { Kreuz } from './Kreuz'
 import { Logo } from './Logo'
 import { parteiStil } from './stil'
@@ -75,7 +75,7 @@ export function Ende({
                 {r.ergebnisse?.some((e) => e.ki_entwurf) && (
                   <>
                     {' '}
-                    <span className="badge-ungeprueft">vorläufige KI-Bewertung</span>
+                    <span className="badge-ungeprueft">{r.ergebnisse.some((e) => e.nicht_blind) ? NICHT_BLIND : 'vorläufige KI-Bewertung'}</span>
                   </>
                 )}
                 {r.status === 'unvollstaendig' && (

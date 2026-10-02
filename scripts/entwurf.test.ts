@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { bewertungsHinweise, blindListe, eintragen, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { begriffePruefsumme, bewertungsHinweise, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { vergleicheStand } from './stand-vergleich'
 
@@ -27,7 +27,7 @@ const PARTEIEN: Datei = {
 const themaInhalt = (ursachen = [
   { id: 1701, beschreibung: 'Zu wenige Plätze', quelle_url: 'https://destatis.de/a', ebene: 'land' },
   { id: 1702, beschreibung: 'Zu wenig Personal', quelle_url: 'https://destatis.de/b', ebene: 'bund' },
-]) => ({ id: 17, name: 'Kita', beschreibung: 'Kein Kitaplatz.', ziel: 'Eltern finden einen Platz.', ursachen })
+]) => ({ id: 17, name: 'Kita', beschreibung: 'Kein Kitaplatz.', ziel: 'Eltern finden einen Platz.', freigabe: { datum: '2026-10-01', quellen_bestaetigt: [1701, 1702] }, ursachen })
 
 const katalog = (inhalt: Record<string, unknown> = themaInhalt()) => {
   const r = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/17-kita.json', inhalt }], { pfad: 'ids.json', inhalt: { stillgelegt: [] } })
@@ -35,9 +35,20 @@ const katalog = (inhalt: Record<string, unknown> = themaInhalt()) => {
   return r.katalog
 }
 
+const SUCHBEGRIFFE = { '1701': { 'Plätze ausbauen': ['kita'] }, '1702': { 'Fachkräfte gewinnen': ['erzieher'], Quereinstieg: ['quereinst'] } }
+const TREFFER = {
+  begriffe_pruefsumme: begriffePruefsumme(SUCHBEGRIFFE),
+  programme: [
+    { partei_id: 1, land: null, ursachen: { '1701': { 'Plätze ausbauen': { kita: 4 } }, '1702': { 'Fachkräfte gewinnen': { erzieher: 2 }, Quereinstieg: { quereinst: 0 } } } },
+    { partei_id: 2, land: null, ursachen: { '1701': { 'Plätze ausbauen': { kita: 12 } }, '1702': { 'Fachkräfte gewinnen': { erzieher: 0 }, Quereinstieg: { quereinst: 0 } } } },
+    { partei_id: 2, land: 'ST', ursachen: { '1701': { 'Plätze ausbauen': { kita: 3 } } } },
+  ],
+}
+
 const erfassung = (): Erfassung => ({
   thema_id: 17,
-  suchbegriffe: ['Kita', 'Erzieher'],
+  suchbegriffe: structuredClone(SUCHBEGRIFFE),
+  treffer: structuredClone(TREFFER),
   programme: [
     {
       partei_id: 1,
@@ -59,9 +70,9 @@ const bewertung = (e: Erfassung): Bewertung => {
     blind_pruefsumme: blindListe(katalog(), e).pruefsumme,
     neue_instrumente: [{ kennung: 'I1', name: 'Kitaplätze ausbauen (Bund)', wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Mehr Plätze.', evidenz: 'belegt' }],
     zuordnung: [
-      { kennung: nach(0, 0), instrument: 'I1' },
-      { kennung: nach(0, 1), einzeln: { wirksamkeit: 2, umsetzbarkeit: 3, begruendung: 'Mehr Bewerbungen.', evidenz: 'gemischt' } },
-      { kennung: nach(2, 0), einzeln: { wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Land ist zuständig.', evidenz: 'belegt' } },
+      { kennung: nach(0, 0), instrument: 'I1', ursachen: [1701] },
+      { kennung: nach(0, 1), einzeln: { wirksamkeit: 2, umsetzbarkeit: 3, begruendung: 'Mehr Bewerbungen.', evidenz: 'gemischt' }, ursachen: [1702] },
+      { kennung: nach(2, 0), einzeln: { wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Land ist zuständig.', evidenz: 'belegt' }, ursachen: [1701] },
     ],
   }
 }
@@ -79,6 +90,14 @@ describe('Ursachen freigegeben', () => {
     const fehler = ursachenFreigegeben(k, geaendert, 17).join('\n')
     expect(fehler).toMatch(/1701 weicht/)
     expect(fehler).toMatch(/1703 ist nicht freigegeben/)
+  })
+
+  it('verlangt Freigabe mit Datum und bestätigten Quellen im Zielzweig', () => {
+    const { freigabe: _f, ...ohne } = themaInhalt()
+    expect(ursachenFreigegeben(katalog(ohne), katalog(), 17).join()).toMatch(/keine „freigabe“/)
+    const teilweise = katalog({ ...themaInhalt(), freigabe: { datum: '2026-10-01', quellen_bestaetigt: [1701] } })
+    expect(ursachenFreigegeben(teilweise, katalog(), 17).join()).toMatch(/Ursache 1702 sind nicht bestätigt/)
+    expect(pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: { ...themaInhalt(), freigabe: { datum: '1.10.', quellen_bestaetigt: [1799] } } }]).fehler.join()).toMatch(/1799 gehört nicht zum Thema[^]*Datum/)
   })
 
   it('verlangt auch das freigegebene Ziel', () => {
@@ -101,11 +120,27 @@ describe('Quellen beim Festlegen der Ursachen', () => {
 })
 
 describe('Liste ohne Parteinamen', () => {
-  it('ersetzt Parteinamen, aber keine Wortteile', () => {
-    expect(ohneParteinamen('Wir Freie Demokraten und die LINKE wollen das.')).toBe('Wir [Partei] und die [Partei] wollen das.')
+  it('ersetzt Parteinamen samt Artikel und „Wir“, aber keine Wortteile', () => {
+    expect(ohneParteinamen('Wir Freie Demokraten und die LINKE wollen das.')).toBe('Wir und [Partei] wollen das.')
     expect(ohneParteinamen('Grünflächen und Unionsrecht bleiben.')).toBe('Grünflächen und Unionsrecht bleiben.')
-    expect(ohneParteinamen('Die Europäische Union und die linke Spur bleiben, die Union nicht.')).toBe('Die Europäische Union und die linke Spur bleiben, die [Partei] nicht.')
-    expect(ohneParteinamen('Die Partei Eins will das.', ['Partei Eins'])).toBe('Die [Partei] will das.')
+    expect(ohneParteinamen('Die Europäische Union und die linke Spur bleiben, die Union nicht.')).toBe('Die Europäische Union und die linke Spur bleiben, [Partei] nicht.')
+    expect(ohneParteinamen('Die Partei Eins will das.', ['Partei Eins'])).toBe('[Partei] will das.')
+    // Mehrwortnamen ohne Rücksicht auf Groß- und Kleinschreibung, Namen mit Artikel aus parteien.json.
+    expect(ohneParteinamen('DIE LINKE und BÜNDNIS 90/DIE GRÜNEN, wir als AfD', ['Die Linke'])).toBe('[Partei] und [Partei], wir')
+    expect(ohneParteinamen('Das BSW und Friedrich Merz')).toBe('[Partei] und [Person]')
+  })
+
+  it('ersetzt Länder, Städte und Landesorgane', () => {
+    expect(neutralisiere('Der Berliner Senat und das Abgeordnetenhaus, Sachsen-Anhalts Kitas in Magdeburg')).toBe('Der [Land] [Land] und das [Land], [Land] Kitas in [Land]')
+    expect(neutralisiere('Niedersächsische Sachsenhausen-Gedenkstätte')).toBe('Niedersächsische Sachsenhausen-Gedenkstätte')
+  })
+
+  it('meldet verdächtige Reste und bricht über einer Schwelle ab', () => {
+    const liste = { massnahmen: [{ kennung: 'M01', ebene: 'bund' as const, beschreibung: 'Liberale Kita-Politik', zitat: 'Unsere Fraktion will das. Die Ampel hat versagt.', ursachen_ids: [1701] }] }
+    expect(blindReste(liste)).toEqual([{ kennung: 'M01', reste: ['Liberale', 'Fraktion', 'Ampel'] }])
+    expect(blindReste({ massnahmen: [{ ...liste.massnahmen[0], beschreibung: 'Ampelphasen', zitat: 'Genossenschaften fördern' }] })).toEqual([])
+    expect(resteSchwelle(10)).toBe(3)
+    expect(resteSchwelle(200)).toBe(10)
   })
 
   it('mischt die Reihenfolge fest und zeigt keine Partei', () => {
@@ -115,7 +150,7 @@ describe('Liste ohne Parteinamen', () => {
     const liste = blindListe(katalog(), e)
     const text = JSON.stringify(liste)
     expect(text).not.toMatch(/partei_id|Freie Demokraten|LINKE|eins\.de|zwei/)
-    expect(liste.massnahmen.find((m) => m.ebene === 'land')?.zitat).toBe('Die [Partei] will mehr Kitas.')
+    expect(liste.massnahmen.find((m) => m.ebene === 'land')?.zitat).toBe('[Partei] will mehr Kitas.')
     expect(liste.ursachen).toHaveLength(2)
   })
 
@@ -233,6 +268,53 @@ describe('Erfassung und Bewertung prüfen', () => {
   })
 })
 
+describe('Suchbegriffe je Lösungsrichtung', () => {
+  it('verlangt je Ursache Richtungen mit Begriffen und eine passende Treffermatrix', () => {
+    const k = katalog()
+    const alt = { ...erfassung(), suchbegriffe: ['kita'] } as unknown as Erfassung
+    expect(pruefeErfassung(k, alt).join()).toMatch(/je Richtung aus der Perspektivenprüfung eigene Begriffe/)
+    const leer = erfassung()
+    leer.suchbegriffe['1702'] = { 'Fachkräfte gewinnen': ['erzieher'], Quereinstieg: [] }
+    delete (leer.suchbegriffe as Record<string, unknown>)['1701']
+    const f = pruefeErfassung(k, leer).join('\n')
+    expect(f).toMatch(/Ursache 1701 ohne Lösungsrichtung/)
+    expect(f).toMatch(/Richtung „Quereinstieg“ ohne Begriffe/)
+    const ergaenzt = erfassung()
+    ergaenzt.suchbegriffe['1701']['Plätze ausbauen'].push('krippe')
+    expect(pruefeErfassung(k, ergaenzt).join()).toMatch(/treffer passen nicht zu den Suchbegriffen/)
+    expect(pruefeErfassung(k, { ...erfassung(), treffer: undefined }).join()).toMatch(/npm run entwurf:treffer/)
+  })
+
+  it('weist auf viele Treffer ohne Maßnahme hin', () => {
+    const h = erfassungsHinweise(katalog(), erfassung())
+    expect(h).toHaveLength(1)
+    expect(h[0]).toMatch(/Zwei \(Bund\): 12 Treffer zu Ursache 1701/)
+  })
+})
+
+describe('Zuordnung zu Ursachen blind bestätigt', () => {
+  it('lehnt unbestätigte Paare ab und weist auf abweichende Mehrfachzuordnung hin', () => {
+    const e = erfassung()
+    const b = bewertung(e)
+    const k = katalog()
+    b.zuordnung[0] = { ...b.zuordnung[0], ursachen: [] }
+    const { ursachen: _u, ...ohne } = b.zuordnung[1]
+    b.zuordnung[1] = ohne
+    const f = pruefeBewertung(k, e, b).join('\n')
+    expect(f).toMatch(/Zuordnung zu Ursache 1701 nicht bestätigt/)
+    expect(f).toMatch(/„ursachen“ fehlt/)
+    const c = bewertung(e)
+    c.zuordnung[2] = { ...c.zuordnung[2], ursachen: [1701, 1702] }
+    expect(zuordnungsHinweise(k, e, c).join()).toMatch(/zusätzlich Ursache 1702/)
+    // Gleiches Instrument, unterschiedliche Ursachen.
+    e.programme[0].massnahmen[1].ursachen_ids = [1701, 1702]
+    const d = bewertung(e)
+    const zweite = kennungen(e).find((x) => x.programm === 0 && x.massnahme === 1)!.kennung
+    d.zuordnung = d.zuordnung.map((z) => (z.kennung === zweite ? { kennung: zweite, instrument: 'I1', ursachen: [1701, 1702] } : z))
+    expect(zuordnungsHinweise(k, e, d).join()).toMatch(/Instrument I1: Maßnahmen mit unterschiedlichen Ursachen/)
+  })
+})
+
 describe('Protokoll', () => {
   const vollstaendig = (e: Erfassung, auftrag: string) =>
     new Map([
@@ -305,8 +387,9 @@ describe('Vergleich mit dem Zielzweig', () => {
     // Ohne Angabe (ältere Einträge): Fehler je Eintrag, für den die Bundesursache zählt.
     const ohne = { ...datei, ursachen, abdeckung: datei.abdeckung.map(({ durchsucht_fuer: _durchsucht, ...a }) => a) }
     const fehler = vergleicheStand(alt, katalog(ohne))
-    expect(fehler).toHaveLength(2)
-    expect(fehler.join()).toMatch(/Ursache 1703 ist neu/)
+    expect(fehler.filter((f) => /Ursache 1703 ist neu/.test(f))).toHaveLength(2)
+    // Dazu die Phasentrennung: neue Ursache ohne „nachtraeglich“ und geänderte Abdeckung im selben Pull Request.
+    expect(fehler.join()).toMatch(/Ursache 1703 und Maßnahmen/)
   })
 
   it('lehnt still geänderte Werte einer Blindbewertung ab', () => {
@@ -334,5 +417,40 @@ describe('Abdeckung je Ursache im Katalog', () => {
 describe('Seiten ohne Text', () => {
   it('nennt Seiten mit kaum Text', () => {
     expect(seitenOhneText(['x'.repeat(500), '  \n ', 'kurz', 'y'.repeat(300)])).toEqual([2, 3])
+  })
+})
+
+describe('Phasen getrennt', () => {
+  const datei = () => eintragen(katalog(), themaInhalt(), erfassung(), bewertung(erfassung()), '2026-10-01') as { abdeckung: Record<string, unknown>[]; ursachen: Record<string, unknown>[] }
+
+  it('lehnt Ursachen oder Ziel und Maßnahmen desselben Themas im selben Pull Request ab', () => {
+    const vorher = katalog()
+    // Neues Thema mit Ursachen und Abdeckung zugleich.
+    expect(vergleicheStand({ ...vorher, themen: [], ursachen: [] }, katalog(datei())).join()).toMatch(/Thema 17: neues Thema und Maßnahmen/)
+    // Ursache umformuliert und Maßnahmen erfasst.
+    const d = datei()
+    d.ursachen[0] = { ...d.ursachen[0], beschreibung: 'Zu wenige Plätze im Westen' }
+    expect(vergleicheStand(vorher, katalog(d)).join()).toMatch(/Thema 17: Ursache 1701 und Maßnahmen/)
+    // Ziel geändert und Maßnahmen erfasst.
+    expect(vergleicheStand(vorher, katalog({ ...datei(), ziel: 'Anderes Ziel.' })).join()).toMatch(/Thema 17: Ziel und Maßnahmen/)
+    // Nur Maßnahmen: in Ordnung.
+    expect(vergleicheStand(vorher, katalog(datei()))).toEqual([])
+  })
+
+  it('erlaubt eine nachträgliche Ursache mit „durchsucht_fuer“ an jedem Eintrag', () => {
+    const vorher = katalog(datei())
+    const neu = datei()
+    neu.ursachen.push({ id: 1703, beschreibung: 'Neu', quelle_url: 'https://destatis.de/c', ebene: 'land', nachtraeglich: '2026-10-02: Fachquelle, Grund …' })
+    neu.abdeckung[2] = { ...neu.abdeckung[2], durchsucht_fuer: [1701, 1703] }
+    expect(vergleicheStand(vorher, katalog(neu))).toEqual([])
+    neu.ursachen[2] = { ...neu.ursachen[2], nachtraeglich: undefined }
+    expect(vergleicheStand(vorher, katalog(JSON.parse(JSON.stringify(neu)))).join()).toMatch(/Ursache 1703 und Maßnahmen/)
+  })
+
+  it('meldet Parteinamen in neuen Ursachen und Zielen', () => {
+    const vorher = katalog()
+    const mitName = themaInhalt([...themaInhalt().ursachen.slice(0, 1), { id: 1702, beschreibung: 'Die Politik der Grünen', quelle_url: 'https://destatis.de/b', ebene: 'bund' }])
+    expect(vergleicheStand(vorher, katalog(mitName)).join()).toMatch(/Ursache 1702 nennt eine Partei/)
+    expect(vergleicheStand(vorher, katalog({ ...themaInhalt(), ziel: 'Wie die SPD es will.' })).join()).toMatch(/Ziel von Thema 17 nennt eine Partei/)
   })
 })

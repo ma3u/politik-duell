@@ -1,6 +1,6 @@
 # Politik-Duell – Methodenpapier
 
-Stand: 28. 9. 2026
+Stand: 2. 10. 2026
 
 *Versprechen kann jeder.* Das Politik-Duell vergleicht Parteien daran, ob sie für reale Alltagsprobleme wirksame und umsetzbare Lösungen anbieten – nach denselben Regeln für alle und mit Beleg für jede Bewertung.
 
@@ -52,7 +52,15 @@ Die Ursachenliste entscheidet mit, welche Lösungen überhaupt Punkte bekommen k
 2. **Quellen aus unterschiedlichen Richtungen.** Für jedes Thema werden Institute und Gremien unterschiedlicher Ausrichtung herangezogen, etwa arbeitgebernahe und gewerkschaftsnahe Forschung, und amtliche Statistik. Gemeinsame Studien solcher Institute sind besonders geeignet.
 3. **Perspektivenprüfung.** Vor der Erfassung von Maßnahmen wird geprüft, ob die in der öffentlichen und fachlichen Debatte vertretenen Problemdiagnosen in mindestens einer belegten Ursache vorkommen. Grundlage sind Fachquellen, nicht die Wahlprogramme. Eine Diagnose, die sich nicht unabhängig belegen lässt, wird nicht aufgenommen – gleich, wer sie vertritt. Die Prüfung wird mit Ergebnis und verworfenen Kandidaten festgehalten ([`docs/perspektiven-ursachen.md`](perspektiven-ursachen.md)).
 
-4. **In alle Richtungen suchen.** Beim Erfassen der Maßnahmen bekommt jede Lösungsrichtung, die die Perspektivenprüfung nennt, eigene Suchbegriffe – dieselben für alle Parteien. Wer nur nach den Stichwörtern einer Richtung sucht, findet nur deren Maßnahmen, und die übrigen Parteien gehen leer aus, obwohl ihr Programm etwas dazu enthält. Findet sich zu einer genannten Richtung keine Maßnahme, wird das ausdrücklich festgehalten.
+4. **In alle Richtungen suchen.** Beim Erfassen der Maßnahmen bekommt jede Lösungsrichtung, die die Perspektivenprüfung nennt, eigene Suchbegriffe – dieselben für alle Parteien. Wer nur nach den Stichwörtern einer Richtung sucht, findet nur deren Maßnahmen, und die übrigen Parteien gehen leer aus, obwohl ihr Programm etwas dazu enthält. Die Treffer jedes Begriffs werden in allen Programmen gezählt; hat ein Programm viele Treffer, aber keine Maßnahme, wird nachgelesen. Findet sich zu einer genannten Richtung keine Maßnahme, wird das ausdrücklich festgehalten.
+
+**Welche Quellen zählen.** Amtliche Statistik und begutachtete Studien immer. Forschungsinstitute auch, wenn sie einer Seite nahestehen – dann wird die Ausrichtung genannt. Stiftungen, Thinktanks, Verbände und Ministerien zählen nur mit eigenen Daten; die Ursache braucht dann eine zweite Quelle. Parteien, Fraktionen und parteinahe Stiftungen zählen nie.
+
+**Belegstufen.** A – amtliche Messung; B – repräsentative Befragung oder begutachtete Studie; C – Einschätzung, Prognose oder Verbandsangabe. A oder B reicht allein, C nur zusammen mit einer zweiten Quelle aus A oder B. Das gilt gleich für aufgenommene und für verworfene Diagnosen.
+
+**Das Ziel ist der Maßstab.** Gemessen wird an ihm, nicht an einzelnen Ursachen. Es wird deshalb wie die Ursachen darauf geprüft, dass es keinen Lösungsweg vorgibt, und von der Betreiberin mit Datum freigegeben, bevor Maßnahmen erfasst werden.
+
+**Nachträgliche Ursachen** sind die Ausnahme und folgen einem festen Verfahren: Fachquelle, Recherche ohne Zugriff auf die Programme, Freigabe durch eine zweite Person, Neusuche in allen Programmen; bis dahin gilt die Ursache für alle Parteien als „noch nicht erfasst“. Sind mehr als ein Drittel der Ursachen eines Themas nachträglich, wird das ganze Thema neu geprüft.
 
 Mehr Ursachen bedeuten nicht mehr Punkte: Die KI ordnet einem Problem nur die Ursachen zu, die dazu passen.
 
@@ -62,6 +70,8 @@ Für jede Partei und jedes Thema gibt es genau einen von zwei Einträgen:
 
 - **Maßnahmen**, die an einer der Ursachen ansetzen, jeweils mit wörtlichem Zitat und Seitenanker im Programm (z. B. `…wahlprogramm.pdf#page=17`), oder
 - **„keine Maßnahme“**, mit Angabe, welche Kapitel durchsucht wurden.
+
+**Was als Maßnahme zählt:** jede Zusage, etwas zu tun. Ziele oder Leitbilder ohne Handlung („gute Kitas für alle“) und bloße Prüfaufträge zählen nicht; angezeigt wird dann, dass das Programm das Ziel nennt, aber keine Maßnahme. Wie unbestimmt eine Zusage ist, wirkt nur über die Umsetzbarkeit. Die Länge eines Programms wird nicht herausgerechnet: Gleich gründliche Suche (dieselben Begriffe für jede Lösungsrichtung, gezählt in allen Programmen) und eine ohne Parteinamen bestätigte Zuordnung zu den Ursachen sorgen dafür, dass ausführliche Programme nicht allein durch ihre Länge mehr Punkte holen.
 
 Alle Daten liegen offen als Dateien im Quellcode ([`daten/`](../daten/README.md)). Änderungen sind nachvollziehbar und brauchen immer eine Quelle; eine automatische Prüfung kontrolliert Pflichtfelder, Wertebereiche und dass jeder Beleg ins Programm der richtigen Partei zeigt.
 
@@ -82,7 +92,7 @@ Das Produkt ist Absicht: Eine Maßnahme ohne Wirkung bringt keine Punkte, auch w
 
 Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für andere Gruppen zählen hier nicht. Umsetzbarkeit fragt, ob die Regierung der Ebene, aus deren Programm die Maßnahme stammt – Bund oder Land –, sie in einer Wahlperiode rechtlich und finanziell umsetzen könnte. Ob sie politisch mehrheitsfähig ist, spielt keine Rolle. Zu jeder Bewertung gehört eine Begründung in ein bis zwei neutralen Sätzen: was dafür, was dagegen spricht.
 
-**Stand der Forschung.** Zu jeder Maßnahme wird festgehalten, wie gut ihre Wirkung belegt ist: *belegt* (übereinstimmende Studien oder Erfahrungen anderswo), *gemischt* (Studien kommen zu unterschiedlichen Ergebnissen) oder *offen* (kaum untersucht). Wirksamkeit 3 setzt *belegt* voraus. Ist die Wirkung umstritten, zeigt das Spiel das an („Wirkung in der Forschung umstritten“) und nennt in der Begründung beide Seiten.
+**Stand der Forschung.** Zu jeder Maßnahme wird festgehalten, wie gut ihre Wirkung belegt ist: *belegt* (übereinstimmende Studien oder Erfahrungen anderswo), *gemischt* (Studien kommen zu unterschiedlichen Ergebnissen) oder *offen* (kaum untersucht). Wirksamkeit 3 setzt *belegt* voraus und misst die erwartete Verbesserung für die Betroffenen, nicht, ob eine Zielzahl aus der Quelle genau erreicht wird. Ist die Wirkung umstritten, zeigt das Spiel das an („Wirkung in der Forschung umstritten“) und nennt in der Begründung beide Seiten.
 
 **Verschiedene Wege, ähnliche Punkte.** Für die meisten Probleme gibt es nicht die eine richtige Lösung. Parteien setzen oft an verschiedenen Ursachen an – die eine beim Angebot, die andere bei den Kosten. Weil jede Ursache für sich zählt, können sehr unterschiedliche Programme ähnlich viele Punkte erreichen. Ein Gleichstand ist dann kein Mangel, sondern ein Ergebnis: Beide haben einen tragfähigen Weg.
 
@@ -160,6 +170,8 @@ flowchart TD
 - **Median statt Mittelwert:** Je Maßnahme bzw. Instrument zählt der Median, getrennt für Wirksamkeit und Umsetzbarkeit. Einzelne Ausreißer verschieben das Ergebnis so kaum.
 - **Streit wird geklärt, nicht gemittelt:** Liegen zwei Einschätzungen zwei oder mehr Stufen auseinander, wird der Maßstab geklärt, bevor Werte übernommen werden.
 - **KI-Entwürfe:** Die Schritte 2 und 3 (Maßnahmen erfassen, Entwurf bewerten) können mit Hilfe einer KI erstellt werden. Solche Entwürfe sind im Datenkatalog als KI-Entwurf gekennzeichnet (`ki_entwurf`) und zählen öffentlich erst nach der menschlichen Prüfung. In der geschlossenen Testphase – nur mit persönlichem Zugangslink – erscheinen sie im Spiel, mit deutlichem Hinweis am Ergebnis, im Endstand und im Teilen-Text („vorläufige KI-Bewertung – noch nicht von Menschen geprüft“). Die Regel „Die KI vergibt keine Punkte“ gilt für das Spiel selbst: Dort werden Punkte immer aus der Datenbank berechnet. Neue Entwürfe entstehen seit 30. 9. 2026 in festen, getrennten Schritten: Die Ursachen recherchiert eine KI ohne Zugriff auf die Programme, verwendet werden sie erst nach menschlicher Freigabe; jedes Programm wird getrennt mit denselben Suchbegriffen durchsucht; die Entwurfswerte vergibt eine KI, die nur die Maßnahmen ohne Parteinamen in gemischter Reihenfolge sieht (Ablauf: [`daten/README.md` → „Mit KI-Agenten“](../daten/README.md#mit-ki-agenten)).
+- **Technisch gesicherte Neutralität beim Entwurf:** Während die Ursachen festgelegt werden, sind die Programme gesperrt (auch für Agenten); Partei-, Fraktions- und Stiftungsserver sind für die KI nie abrufbar. Die Liste für die Bewertung enthält keine Parteinamen, Personen oder Länder; verdächtige Restwörter werden gemeldet. Die bewertende KI bestätigt jede Zuordnung einer Maßnahme zu einer Ursache. Ursachen oder Ziel und Maßnahmen desselben Themas dürfen sich nicht im selben Schritt ändern. Werte, die jemand mit Kenntnis der Partei vergeben oder geändert hat, sind als „nicht blind“ gekennzeichnet und erscheinen in der Testphase als „vorläufige Bewertung, nicht blind“.
+- **Nachweis der Prüfung:** Als geprüft gilt ein Eintrag nur mit Datum der Belegprüfung, bei „keine Maßnahme“ zusätzlich mit einer dokumentierten zweiten Suche. Die Ergebnisse der Prüfenden liegen ohne Namen im Quellcode; jede übernommene Bewertung wird automatisch dagegen abgeglichen.
 - **Zitate automatisch geprüft:** Ein Programm lädt die Wahlprogramme herunter und prüft, ob jedes wörtliche Zitat auf der Seite steht, auf die der Beleg zeigt (`npm run zitate:pruefen`, auch automatisch bei jeder Datenänderung und wöchentlich). Das fängt vor allem ungenaue oder erfundene Zitate ab.
 - **Namen nur mit Einwilligung:** Prüfende werden öffentlich nur genannt, wenn sie zustimmen; sonst heißt es „von n unabhängigen Prüfenden“.
 - **Korrigierbar:** Fehler kann jede Person melden, mit Link auf die Stelle im Programm. Parteien können ihre Einträge jederzeit prüfen und eine Stellungnahme schicken.
@@ -171,6 +183,7 @@ Die Methode ist so fair wie möglich, aber nicht fehlerfrei. Wir benennen ihre G
 - **Programme sind nicht Politik.** Bewertet wird, was im Wahlprogramm steht, nicht was eine Partei im Parlament oder in einer Regierung tatsächlich getan hat.
 - **Bewerten bleibt Urteil.** Wirksamkeit und Umsetzbarkeit sind Einschätzungen. Blinde Prüfung, Median und offene Begründungen machen sie nachvollziehbar, aber nicht objektiv.
 - **Die Ursachenliste prägt das Ergebnis.** Welche Ursachen ein Thema hat, entscheidet mit, welche Maßnahmen zählen. Deshalb werden sie vorab mit unabhängigen Quellen festgelegt, auf verschiedene Perspektiven geprüft und nur in begründeten Ausnahmen ergänzt.
+- **Lange Programme haben mehr Fundstellen.** Wir rechnen die Programmlänge nicht heraus, sondern sichern gleich gründliche Suche und gleiche Zuordnung; den Zusammenhang zwischen Länge und Punkten nennen wir je Thema.
 - **Belegte Wirkung bevorzugt Erprobtes.** Instrumente, die es schon gibt, sind besser untersucht als neue Ideen. Die Regel „Wirksamkeit 3 nur mit belegter Wirkung“ kann neue Vorschläge daher etwas benachteiligen. Wir nehmen das in Kauf, weil die Alternative wäre, Versprechen ungeprüft zu glauben.
 - **Das Bundesland verändert das Ergebnis.** Bei Landesthemen kann dieselbe Partei in zwei Ländern unterschiedlich abschneiden. Das ist gewollt: Landesparteien haben eigene Programme.
 - **Ein Spiel ist ein Ausschnitt.** Es deckt fünf Probleme ab und ist kein Gesamturteil über eine Partei – und keine Wahlempfehlung.

@@ -26,9 +26,13 @@
     "punkte": "node --experimental-strip-types scripts/entwurf/punkte.ts",
     "ursachen:freigegeben": "node --experimental-strip-types scripts/entwurf/ursachen-freigegeben.ts",
     "entwurf:blind": "node --experimental-strip-types scripts/entwurf/blind.ts",
+    "entwurf:treffer": "node --experimental-strip-types scripts/entwurf/treffer.ts",
+    "blind:reste": "node --experimental-strip-types scripts/entwurf/reste.ts",
     "entwurf:json": "node --experimental-strip-types scripts/entwurf/json-extrahieren.ts",
     "entwurf:bewertung-pruefen": "node --experimental-strip-types scripts/entwurf/bewertung-pruefen.ts",
-    "entwurf:eintragen": "node --experimental-strip-types scripts/entwurf/eintragen.ts"
+    "entwurf:eintragen": "node --experimental-strip-types scripts/entwurf/eintragen.ts",
+    "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
+    "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",

@@ -12,7 +12,7 @@ Du bewertest Maßnahmen für das Politik-Duell, ohne zu wissen, aus welchem Prog
 - Gleiche Maßstäbe für alle Maßnahmen. Keine Wertung von Parteien, keine politischen Präferenzen. Ob eine Maßnahme politisch mehrheitsfähig ist, spielt keine Rolle.
 - Recherche nur zum **Forschungsstand** (Wirkung des Instruments, Erfahrungen anderswo) mit unabhängigen Quellen; `beleg_studie_url` nur, wenn du die Quelle geöffnet hast. Erfinde nie eine Quelle.
 - **Recherchiere wirklich.** „offen“ heißt „kaum untersucht“, nicht „habe nicht nachgesehen“. Suche für jeden großen Lösungsweg (etwa Personalvorgaben, Gebührenfreiheit, Ausbau eines Angebots, Förderprogramm) mindestens eine unabhängige Quelle (Forschungsinstitute, OECD, öffentlich geförderte Studien, Erfahrungsberichte aus Ländern) und öffne sie. Ist fast alles „offen“, hast du nicht genug recherchiert.
-- Die Liste kommt ohne Parteinamen; Eigennamen von Programmen, Initiativen oder Gesetzen können trotzdem auf eine Herkunft hindeuten. Ignoriere das und beurteile nur die Wirkung.
+- Die Liste kommt ohne Parteinamen, Personen und Länder („[Partei]“, „[Person]“, „[Land]“); Eigennamen von Programmen, Initiativen oder Gesetzen können trotzdem auf eine Herkunft hindeuten. Ignoriere das und beurteile nur die Wirkung.
 
 ## Maßstab
 
@@ -51,6 +51,7 @@ Das Skript `npm run entwurf:bewertung-pruefen` prüft die Punkte 1 bis 6 und leh
 4. **Gleiche Lösungswege zusammenfassen** (etwa alle Vorschläge, eine Berufsgruppe besser zu bezahlen, oder alle, einen Zuschuss auszuzahlen). Neue Instrumente nur, wenn die Bewertung wirklich anders ausfällt (etwa konkreter Zielwert statt unbestimmter Verbesserung). Richtwert: deutlich weniger Instrumente als Maßnahmen.
 5. Wirksamkeit 3 nur mit `evidenz: belegt` und `beleg_studie_url`; `begruendung` höchstens 300 Zeichen, `name` höchstens 120.
 6. `blind_pruefsumme` ist genau die `pruefsumme` aus der Liste.
+7. **Zuordnung zu Ursachen bestätigt:** Jede Zuordnung nennt in `ursachen` die Ursachen, an denen die Maßnahme nach ihrem Text tatsächlich ansetzt. Übernimm eine Ursache aus `ursachen_ids` der Liste nur, wenn du ihr zustimmst; setzt die Maßnahme deiner Ansicht nach an einer weiteren Ursache an, nenne sie zusätzlich. Gleiche Maßstäbe für alle: Ein Lösungsweg setzt überall an denselben Ursachen an.
 
 Nicht prüfen kann das Skript, ob `evidenz` und `beleg_studie_url` aus tatsächlich geöffneten Quellen stammen (siehe Harte Regeln) – das liegt bei dir.
 
@@ -65,11 +66,11 @@ Nur dieses JSON, jede Kennung genau einmal:
     { "kennung": "I1", "name": "…", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "…", "evidenz": "gemischt", "beleg_studie_url": "https://…" }
   ],
   "zuordnung": [
-    { "kennung": "M01", "instrument": "I1" },
-    { "kennung": "M02", "instrument": 6929 },
-    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "…", "evidenz": "offen" } }
+    { "kennung": "M01", "instrument": "I1", "ursachen": [1701] },
+    { "kennung": "M02", "instrument": 6929, "ursachen": [1702, 1704] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "…", "evidenz": "offen" }, "ursachen": [1705] }
   ]
 }
 ```
 
-Danach kurz: welche Einstufungen dir schwerfielen und warum (hilft den Prüfenden, den Maßstab zu schärfen).
+Danach kurz: welche Zuordnungen zu Ursachen du nicht bestätigst oder ergänzt (mit Kennung und Grund), welche Einstufungen dir schwerfielen und warum (hilft den Prüfenden, den Maßstab zu schärfen).

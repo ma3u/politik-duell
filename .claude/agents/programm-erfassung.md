@@ -6,13 +6,13 @@ tools: Bash, Read, Grep, Glob
 
 Du erfasst für das Politik-Duell, was **ein** Wahlprogramm zu einem Thema vorschlägt. Du bewertest nichts – keine Punkte, keine Einschätzung, ob eine Maßnahme gut ist. Ein anderer Agent bewertet später ohne Parteinamen.
 
-Du bekommst: Partei, Programm (Bund oder Land, URL), Thema mit Ziel, die freigegebenen Ursachen (ID, Beschreibung, Ebene) und eine feste Liste von Suchbegriffen. Dieselbe Liste bekommen alle Programme – so wird jede Partei gleich gründlich durchsucht.
+Du bekommst: Partei, Programm (Bund oder Land, URL), Thema mit Ziel, die freigegebenen Ursachen (ID, Beschreibung, Ebene) und feste Suchbegriffe **je Ursache und Lösungsrichtung**. Dieselben Begriffe bekommen alle Programme – so wird jede Partei in jede Richtung gleich gründlich durchsucht.
 
 ## Vorgehen
 
 **Technik (wichtig):** Unter PowerShell 7 verschluckt npm Optionen mit Wert, wenn das erste `--` nicht in Anführungszeichen steht (`--partei SPD` wird zu einem Suchbegriff „SPD“, `--seiten 2-4` zu einer Ausgabedatei „2-4“, im Projektstamm entstehen Textdateien). Schreibe deshalb `npm run -s programme:suche '--' …` und `'--partei' SPD`, oder rufe das Skript direkt auf (`node --experimental-strip-types --no-warnings scripts/entwurf/programme-suche.ts …`). Die Programmtexte liegen meist schon als Textdatei vor (Pfad steht im Auftrag, sonst `npm run -s programm:text '--' <url> .cache/entwurf/<ID>/<name>.txt`): Lies sie mit Read (in Abschnitten) und Grep. Die Seitenmarke „===== Seite N =====“ vor einer Stelle ist die PDF-Seite.
 
-1. **Suchen** mit allen vorgegebenen Begriffen (und nur zusätzlich mit eigenen Synonymen, die du im Protokoll nennst). Suchbegriffe sind Wortteile; „betreuungsplatz“ findet „Betreuungsplätze“ nicht – such bei Umlautpluralen zusätzlich nach dem Stamm („betreuungspl“). Trefferzahlen je Begriff liefert `programme:suche … --je-begriff --zaehlen`:
+1. **Suchen** mit allen vorgegebenen Begriffen jeder Richtung (und nur zusätzlich mit eigenen Synonymen, die du im Protokoll unter „Eigene Synonyme“ mit Ursache und Richtung nennst – sie werden danach in allen Programmen nachgesucht). Suchbegriffe sind Wortteile; „betreuungsplatz“ findet „Betreuungsplätze“ nicht – such bei Umlautpluralen zusätzlich nach dem Stamm („betreuungspl“). Trefferzahlen je Begriff liefert `programme:suche … --je-begriff --zaehlen`:
    - Bundesprogramm: `npm run -s programme:suche '--' "Begriff" "Begriff2" … '--bund' '--partei' <Kurzname> '--max' 30`
    - Landesprogramm: `npm run -s programme:suche '--' "Begriff" … '--land' <XX> '--partei' <Kurzname> '--max' 30`
 2. **Inhaltsverzeichnis lesen** (Seiten 1–6 der Textdatei) und die Kapitel bestimmen, in die das Thema gehört.
@@ -59,4 +59,4 @@ Nur Folgendes, ohne Bewertung:
 
 oder mit leerer Liste `"massnahmen": []` und `"keine_massnahme": "Begründung"`, oder `"nicht_durchsucht": "Grund"`.
 
-Danach ein kurzes **Protokoll**: benutzte Suchbegriffe mit Trefferzahl je Begriff, gelesene Seiten und Kapitel, „Nicht erfasst“ mit Grund, „Stand im PDF“ bei Abweichung. Das Protokoll fließt in `docs/perspektiven-ursachen.md` ein.
+Danach ein kurzes **Protokoll**: benutzte Suchbegriffe mit Trefferzahl je Begriff, „Eigene Synonyme“ (Begriff, Ursache, Richtung), Richtungen ohne Maßnahme, gelesene Seiten und Kapitel, „Nicht erfasst“ mit Grund, „Stand im PDF“ bei Abweichung. Das Protokoll fließt in `docs/perspektiven-ursachen.md` ein.

@@ -39,6 +39,8 @@ export interface ParteiErgebnis {
   programme: GenutztesProgramm[]
   /** true, wenn die Wertung (auch) auf KI-Entwürfen beruht – nur in der geschlossenen Testphase. */
   ki_entwurf?: boolean
+  /** true, wenn eine gewertete Maßnahme ein KI-Entwurf ist, dessen Werte nicht blind entstanden sind. */
+  nicht_blind?: boolean
 }
 
 /**
@@ -159,8 +161,11 @@ export function bewertePartei(
   }
 
   const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf)
+  const treffer = [...trefferJeMassnahme.values()]
+  // Entwurfswerte mit Kenntnis der Partei (oder vor der Blindbewertung entstanden): eigens gekennzeichnet.
+  const nichtBlind = treffer.some((t) => t.massnahme.ki_entwurf && t.massnahme.entwurf_herkunft !== 'blind')
   return {
-    partei, punkte, treffer: [...trefferJeMassnahme.values()], abdeckung: erfasst, programme, ...(kiEntwurf ? { ki_entwurf: true } : {}),
+    partei, punkte, treffer, abdeckung: erfasst, programme, ...(kiEntwurf ? { ki_entwurf: true } : {}), ...(nichtBlind ? { nicht_blind: true } : {}),
   }
 }
 

@@ -2,8 +2,15 @@
 // Aufruf: npm run daten:pruefen            – nur Dateien prüfen
 //         npm run daten:pruefen -- --links – zusätzlich alle Links abrufen
 import { pruefeDatenordner } from './katalog-laden.ts'
+import { fehlendeZahlen } from './zitate.ts'
 
 const { katalog, fehler, warnungen } = pruefeDatenordner()
+
+// Die Beschreibung soll nur wiedergeben, was im Zitat steht – auch bei Zahlen (neue Erfassungen: Fehler in entwurf:blind).
+for (const m of katalog.massnahmen) {
+  const zahlen = m.zitat ? fehlendeZahlen(m.beschreibung, m.zitat) : []
+  if (zahlen.length) warnungen.push(`Maßnahme ${m.id}: Zahl ${zahlen.join(', ')} steht in der Beschreibung, aber nicht im Zitat`)
+}
 
 if (process.argv.includes('--links') && !fehler.length) {
   if (katalog.fiktiv) {

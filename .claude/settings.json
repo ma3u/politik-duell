@@ -20,6 +20,17 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "WebFetch|Read|Grep|Glob|Bash|NotebookRead",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/sperre.mjs\""
+          }
+        ]
+      }
     ]
   }
 }

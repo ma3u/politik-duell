@@ -8,6 +8,7 @@
 import type { Katalog } from '../src/data/katalog.ts'
 import type { Evidenz, Rolle, RollenModifikator } from '../src/data/types.ts'
 import { naechsteId } from './ids.ts'
+import { fehlendeZahlen } from './zitate.ts'
 import { createHash } from 'node:crypto'
 
 // ---------------------------------------------------------------------------
@@ -33,10 +34,27 @@ export interface ErfasstesProgramm {
   keine_massnahme?: string
 }
 
+/**
+ * Suchbegriffe je Ursache und Lösungsrichtung, z. B. `{ "1705": { "Beitragsfreiheit": ["beitragsfrei", …],
+ * "Beiträge nach Einkommen": ["einkommensabhängig", …] } }`. Die Richtungen kommen aus der Spalte
+ * „Diagnose aus der Debatte“ der Perspektivenprüfung; jede bekommt eigene Begriffe, damit keine
+ * Richtung nur deshalb leer ausgeht, weil niemand nach ihr gesucht hat. Für alle Programme dieselben.
+ */
+export type Suchbegriffe = Record<string, Record<string, string[]>>
+
+/** Treffer je Programm, Ursache, Richtung und Begriff – von `npm run entwurf:treffer` geschrieben. */
+export interface Treffermatrix {
+  /** Prüfsumme der Suchbegriffe, mit denen gezählt wurde: Kommen Begriffe dazu, muss neu gezählt werden. */
+  begriffe_pruefsumme: string
+  programme: { partei_id: number; land: string | null; ursachen: Record<string, Record<string, Record<string, number>>> }[]
+}
+
 export interface Erfassung {
   thema_id: number
   /** Für alle Programme dieselben – steht später in docs/perspektiven-ursachen.md. */
-  suchbegriffe: string[]
+  suchbegriffe: Suchbegriffe
+  /** Alle Begriffe in allen erfassten Programmen gezählt (`npm run entwurf:treffer`). */
+  treffer?: Treffermatrix
   programme: ErfasstesProgramm[]
 }
 
@@ -54,8 +72,15 @@ export interface Bewertung {
   /** Prüfsumme der Blindliste, die bewertet wurde (`pruefsumme` aus blind.json). */
   blind_pruefsumme?: string
   neue_instrumente: ({ kennung: string; name: string } & Einzelbewertung)[]
-  zuordnung: ({ kennung: string; instrument: number | string } | { kennung: string; einzeln: Einzelbewertung })[]
+  zuordnung: Zuordnung[]
 }
+
+/**
+ * Eine Maßnahme der Blindliste: Instrument oder Einzelbewertung, dazu die Ursachen, an denen sie aus
+ * Sicht des Bewertungs-Agenten ansetzt. Jede Ursache aus der Erfassung muss darin bestätigt sein –
+ * sonst entscheidet allein der Erfassungs-Agent (der die Partei kennt), wo eine Maßnahme Punkte holt.
+ */
+export type Zuordnung = ({ kennung: string; instrument: number | string } | { kennung: string; einzeln: Einzelbewertung }) & { ursachen?: number[] }
 
 // ---------------------------------------------------------------------------
 // Freigabe der Ursachen
@@ -72,6 +97,13 @@ export function ursachenFreigegeben(freigegeben: Katalog, arbeitsstand: Katalog,
     return [`Thema ${themaId} steht noch nicht im Zielzweig – erst Ursachen festlegen und freigeben lassen (/thema-anlegen)`]
   if (!vorher.length) return [`Thema ${themaId} hat im Zielzweig keine Ursachen`]
   const fehler: string[] = []
+  // Freigegeben heißt: Die Betreiberin hat Datum und bestätigte Quellen eingetragen – ein Merge allein genügt nicht.
+  const freigabe = freigegeben.themen.find((t) => t.id === themaId)?.freigabe
+  if (!freigabe) fehler.push(`Thema ${themaId} hat im Zielzweig keine „freigabe“ – die Betreiberin trägt Datum und bestätigte Quellen ein (daten/README.md → „Dateiformat“)`)
+  else {
+    const offen = vorher.filter((u) => !freigabe.quellen_bestaetigt.includes(u.id)).map((u) => u.id)
+    if (offen.length) fehler.push(`Quellen von Ursache ${offen.join(', ')} sind nicht bestätigt („freigabe.quellen_bestaetigt“)`)
+  }
   // Das Ziel ist der Maßstab für die Wirksamkeit – es gehört zur Freigabe wie die Ursachen.
   const zielVorher = freigegeben.themen.find((t) => t.id === themaId)?.ziel ?? ''
   const zielJetzt = arbeitsstand.themen.find((t) => t.id === themaId)?.ziel ?? ''
@@ -122,15 +154,27 @@ const PARTEI_NAMEN = [
   'Alternative für Deutschland',
   'Bündnis Sahra Wagenknecht',
   'Bündnis Soziale Gerechtigkeit und Wirtschaftliche Vernunft',
-  'Sahra Wagenknecht',
   'Bündnis 90/Die Grünen',
   'Bündnis 90',
+  'Christlich Demokratische Union',
+  'Christlich-Soziale Union',
+  'Sozialdemokratische Partei Deutschlands',
+  'Freie Demokratische Partei',
   'Freie Demokraten',
   'Freien Demokraten',
   'Sozialdemokratinnen und Sozialdemokraten',
+  'Junge Union',
+  'Junge Liberale',
+  'Grüne Jugend',
   'Sozialdemokraten',
   'Sozialdemokratie',
   'Christdemokraten',
+  'Bündnisgrüne',
+  'Bündnisgrünen',
+  'Linkspartei',
+  'Linksjugend',
+  'Jusos',
+  'JuLis',
   'CDU/CSU',
   'CDU',
   'CSU',
@@ -138,24 +182,100 @@ const PARTEI_NAMEN = [
   'SPD',
   'Grünen',
   'Grüne',
+  'GRÜNEN',
+  'GRÜNE',
   'FDP',
   'Liberale',
+  'Liberalen',
   'AfD',
   'Linken',
   'Linke',
+  'LINKEN',
   'LINKE',
   'BSW',
 ]
 
+/** Bekannte Personen der Parteien (Vorsitz, Spitzenkandidaturen, Regierungschefs der erfassten Länder). */
+const PERSONEN = [
+  'Sahra Wagenknecht', 'Wagenknecht', 'Friedrich Merz', 'Merz', 'Markus Söder', 'Söder', 'Olaf Scholz', 'Scholz',
+  'Lars Klingbeil', 'Klingbeil', 'Saskia Esken', 'Esken', 'Robert Habeck', 'Habeck', 'Annalena Baerbock', 'Baerbock',
+  'Christian Lindner', 'Lindner', 'Christian Dürr', 'Alice Weidel', 'Weidel', 'Tino Chrupalla', 'Chrupalla', 'Björn Höcke', 'Höcke',
+  'Heidi Reichinnek', 'Reichinnek', 'Jan van Aken', 'van Aken', 'Ines Schwerdtner', 'Schwerdtner', 'Gregor Gysi', 'Gysi',
+  'Kai Wegner', 'Wegner', 'Manuela Schwesig', 'Schwesig', 'Reiner Haseloff', 'Haseloff', 'Sven Schulze',
+]
+
+/** Länder, Hauptstädte und Landesorgane: verraten mit der Ebene oft schon die Partei. */
+const LAENDER = [
+  'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern',
+  'Mecklenburg', 'Vorpommern', 'Niedersachsen', 'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen-Anhalt',
+  'Sachsen', 'Anhalt', 'Schleswig-Holstein', 'Thüringen', 'Altmark', 'Stuttgart', 'München', 'Potsdam', 'Wiesbaden',
+  'Schwerin', 'Rostock', 'Greifswald', 'Neubrandenburg', 'Stralsund', 'Hannover', 'Düsseldorf', 'Mainz', 'Saarbrücken',
+  'Magdeburg', 'Dessau-Roßlau', 'Dessau', 'Dresden', 'Leipzig', 'Kiel', 'Erfurt',
+  // Berliner Bezirke und Organe
+  'Charlottenburg-Wilmersdorf', 'Friedrichshain-Kreuzberg', 'Kreuzberg', 'Lichtenberg', 'Marzahn-Hellersdorf', 'Neukölln',
+  'Pankow', 'Reinickendorf', 'Spandau', 'Steglitz-Zehlendorf', 'Tempelhof-Schöneberg', 'Treptow-Köpenick',
+  'Abgeordnetenhaus', 'Senatsverwaltungen', 'Senatsverwaltung', 'Senat', 'Senats', 'Bürgerschaft',
+  'MV', 'M-V', 'LSA',
+]
+
+const quote = (n: string) => n.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')
+const wortMuster = (namen: string[], flags: string, endung = '') =>
+  namen.length
+    ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${[...new Set(namen)].sort((a, b) => b.length - a.length).map(quote).join('|')})${endung}(?![\\p{L}\\p{N}])`, flags)
+    : null
+
 /**
  * Ersetzt Parteinamen durch „[Partei]“, damit die Bewertung nicht am Namen hängt.
- * Groß- und Kleinschreibung zählt: „die linke Spur“ oder „grüner Wasserstoff“ bleiben
- * stehen, ebenso „Europäische Union“.
+ * Einzelne Wörter nur in der Schreibweise der Liste: „die linke Spur“ oder „grüner Wasserstoff“
+ * bleiben stehen, ebenso „Europäische Union“. Namen aus mehreren Wörtern („DIE LINKE“,
+ * „freie Demokraten“) ohne Rücksicht auf Groß- und Kleinschreibung. Artikel und „Wir“ davor
+ * fallen weg („Die [Partei]“, „Wir Freie Demokraten“): Sie verraten Genus und Selbstbezeichnung.
  */
 export function ohneParteinamen(text: string, weitere: string[] = []): string {
-  const namen = [...new Set([...PARTEI_NAMEN, ...weitere])].sort((a, b) => b.length - a.length)
-  const muster = new RegExp(`(?<![\\p{L}])(?:${namen.map((n) => n.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')).join('|')})(?![\\p{L}])`, 'gu')
-  return text.replace(muster, (name, stelle: number) => (name === 'Union' && /Europäischen?\s+$/.test(text.slice(0, stelle)) ? name : '[Partei]'))
+  return ersetzeNamen(text, weitere)
+    .replace(/(?<![\p{L}])(wir)(?:\s+als|\s+von\s+de[rn])?\s+\[Partei\]/giu, '$1')
+    .replace(/(?<![\p{L}])(?:die|das|der|den|dem|des)\s+\[Partei\]/giu, '[Partei]')
+    .replace(/\[Partei\](?:\s*[-/]?\s*\[Partei\])+/g, '[Partei]')
+}
+
+function ersetzeNamen(text: string, weitere: string[]): string {
+  // „Die Linke“ → „Linke“: Der Artikel fällt danach ohnehin weg, und „die linke Spur“ bleibt stehen.
+  const alle = [...PARTEI_NAMEN, ...weitere].map((n) => n.trim().replace(/^(?:die|der|das)\s+(?=\S+$)/i, '')).flatMap((n) => [n, n.toUpperCase()])
+  const mehrwort = wortMuster(alle.filter((n) => /[\s/]/.test(n)), 'giu')
+  const einzeln = wortMuster(alle.filter((n) => !/[\s/]/.test(n)), 'gu')
+  let t = mehrwort ? text.replace(mehrwort, '[Partei]') : text
+  if (einzeln) t = t.replace(einzeln, (name, stelle: number, ganz: string) => (name === 'Union' && /Europäischen?\s+$/.test(ganz.slice(0, stelle)) ? name : '[Partei]'))
+  return t.replace(wortMuster(PERSONEN, 'gu')!, '[Person]')
+}
+
+/** Steht im Text ein Parteiname oder eine bekannte Person? (Für Aufträge an den Bewertungs-Agenten.) */
+export const enthaeltParteinamen = (text: string, weitere: string[] = []) => ersetzeNamen(text, weitere) !== text
+
+/** Ersetzt Länder, Städte und Landesorgane durch „[Land]“ (auch „Berliner“, „Sachsen-Anhalts“). */
+export function ohneLaender(text: string): string {
+  return text.replace(wortMuster(LAENDER, 'gu', '(?:s|er|ern|ische[nmrs]?|isch)?')!, '[Land]')
+}
+
+/** Was der Bewertungs-Agent von einem Text sieht: ohne Parteien, Personen und Länder. */
+export const neutralisiere = (text: string, weitere: string[] = []) => ohneLaender(ohneParteinamen(text, weitere))
+
+/**
+ * Wörter, die nach dem Neutralisieren noch auf eine Partei hindeuten können („liberal“, „Fraktion“,
+ * „Altparteien“ …). `entwurf:blind` gibt sie aus und bricht über einer Schwelle ab; jeder Rest
+ * wird im Pull Request begründet oder vorher in der Erfassung umformuliert (nur die Beschreibung –
+ * Zitate bleiben wörtlich).
+ */
+const VERDAECHTIG = [
+  'liberal\\p{L}*', 'sozialdemokrat\\p{L}*', 'christdemokrat\\p{L}*', 'christlich\\p{L}*', 'bündnisgrün\\p{L}*', 'genoss(?:in|innen|en)',
+  'fraktion\\p{L}*', '\\p{L}*fraktion', 'parteitag\\p{L}*', 'landesverband\\p{L}*', 'volkspartei\\p{L}*', 'altpartei\\p{L}*', 'kartellpartei\\p{L}*',
+  'ampel', 'ampel-?(?:koalition|regierung)\\p{L}*', 'groko', 'große koalition', '(?:rot|schwarz|grün)-(?:rot|grün|gelb|schwarz)\\p{L}*', 'linksgrün\\p{L}*',
+  'wahlprogramm\\p{L}*', 'regierungsprogramm\\p{L}*', 'unsere partei', 'wir als partei', 'patriot\\p{L}*', 'sozialist\\p{L}*', 'kommunist\\p{L}*',
+  'konservativ\\p{L}*', 'ökosozial\\p{L}*',
+]
+const VERDAECHTIG_MUSTER = new RegExp(`(?<![\\p{L}])(?:${VERDAECHTIG.join('|')})(?![\\p{L}])`, 'giu')
+
+export function verdaechtigeReste(text: string): string[] {
+  return [...new Set([...text.matchAll(VERDAECHTIG_MUSTER)].map((m) => m[0]))]
 }
 
 export interface Kennung {
@@ -261,8 +381,8 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
     return {
       kennung,
       ebene: p.land ? ('land' as const) : ('bund' as const),
-      beschreibung: ohneParteinamen(m.beschreibung, weitere),
-      zitat: ohneParteinamen(m.zitat, weitere),
+      beschreibung: neutralisiere(m.beschreibung, weitere),
+      zitat: neutralisiere(m.zitat, weitere),
       ursachen_ids: m.ursachen_ids,
     }
   })
@@ -284,6 +404,16 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
   }
   return { pruefsumme: createHash('sha256').update(JSON.stringify(liste)).digest('hex'), ...liste }
 }
+
+/** Maßnahmen der Blindliste, in denen nach dem Neutralisieren noch verdächtige Wörter stehen. */
+export function blindReste(liste: Pick<BlindListe, 'massnahmen'>): { kennung: string; reste: string[] }[] {
+  return liste.massnahmen
+    .map((m) => ({ kennung: m.kennung, reste: verdaechtigeReste(`${m.beschreibung}\n${m.zitat}`) }))
+    .filter((r) => r.reste.length)
+}
+
+/** Ab so vielen Maßnahmen mit Resten bricht `entwurf:blind` ab: höchstens 3 oder 5 % der Liste. */
+export const resteSchwelle = (anzahl: number) => Math.max(3, Math.floor(anzahl * 0.05))
 
 // ---------------------------------------------------------------------------
 // Protokoll: Spuren, die der Koordinator hinterlassen muss
@@ -319,7 +449,7 @@ export function pruefeProtokoll(k: Katalog, e: Erfassung, dateien: Map<string, s
   else {
     if (pruefsumme && !auftrag.includes(pruefsumme)) f.push(`protokoll/${PROTOKOLL.auftrag} enthält nicht die Blindliste mit Prüfsumme ${pruefsumme.slice(0, 12)}…`)
     const weitere = k.parteien.flatMap((p) => [p.name, p.kurzname])
-    if (ohneParteinamen(auftrag, weitere) !== auftrag) f.push(`protokoll/${PROTOKOLL.auftrag} enthält einen Parteinamen – der Bewertungs-Agent darf keine Herkunft erfahren`)
+    if (enthaeltParteinamen(auftrag, weitere)) f.push(`protokoll/${PROTOKOLL.auftrag} enthält einen Parteinamen oder eine Person – der Bewertungs-Agent darf keine Herkunft erfahren`)
   }
   if (!da(PROTOKOLL.antwort)) f.push(`protokoll/${PROTOKOLL.antwort} fehlt – die Antwort des Bewertungs-Agenten speichern`)
   if (!dateien.has(PROTOKOLL.rueckfragen))
@@ -346,12 +476,80 @@ function pruefeEinzel(was: string, b: Einzelbewertung): string[] {
   return f
 }
 
+/** Ursachen, die für mindestens ein Programm der Erfassung zählen (Landesprogramme nur für Landesursachen). */
+const ursachenDerErfassung = (k: Katalog, e: Erfassung) =>
+  k.ursachen.filter((u) => u.thema_id === e.thema_id && e.programme.some((p) => !p.land || (u.ebene ?? 'bund') === 'land'))
+
+/** Ursachen, für die ein Programm durchsucht wird. */
+const ursachenFuer = (k: Katalog, e: Erfassung, p: ErfasstesProgramm) =>
+  k.ursachen.filter((u) => u.thema_id === e.thema_id && (!p.land || (u.ebene ?? 'bund') === 'land'))
+
+export const begriffePruefsumme = (s: Suchbegriffe) =>
+  createHash('sha256')
+    .update(JSON.stringify(Object.keys(s).sort().map((u) => [u, Object.keys(s[u]).sort().map((r) => [r, [...s[u][r]].sort()])])))
+    .digest('hex')
+
+/** Je Ursache mindestens eine Lösungsrichtung, je Richtung mindestens ein Begriff; die Treffermatrix passt dazu. */
+export function pruefeSuchbegriffe(k: Katalog, e: Erfassung): string[] {
+  const f: string[] = []
+  const s = e.suchbegriffe as unknown
+  if (!s || typeof s !== 'object' || Array.isArray(s)) {
+    return ['suchbegriffe: erwartet { "<Ursachen-ID>": { "<Lösungsrichtung>": ["Begriff", …] } } – je Richtung aus der Perspektivenprüfung eigene Begriffe']
+  }
+  const ursachen = new Set(k.ursachen.filter((u) => u.thema_id === e.thema_id).map((u) => String(u.id)))
+  for (const id of Object.keys(e.suchbegriffe)) if (!ursachen.has(id)) f.push(`suchbegriffe: Ursache ${id} gehört nicht zum Thema`)
+  for (const u of ursachenDerErfassung(k, e)) {
+    const richtungen = e.suchbegriffe[String(u.id)]
+    if (!richtungen || typeof richtungen !== 'object' || Array.isArray(richtungen) || !Object.keys(richtungen).length) {
+      f.push(`suchbegriffe: Ursache ${u.id} ohne Lösungsrichtung – Richtungen aus „Diagnose aus der Debatte“ übernehmen`)
+      continue
+    }
+    for (const [r, begriffe] of Object.entries(richtungen))
+      if (!r.trim() || !Array.isArray(begriffe) || !begriffe.some((b) => typeof b === 'string' && b.trim()))
+        f.push(`suchbegriffe: Ursache ${u.id}, Richtung „${r}“ ohne Begriffe`)
+  }
+  if (f.length) return f
+  if (!e.treffer) f.push('treffer fehlen – npm run entwurf:treffer zählt alle Begriffe in allen Programmen')
+  else if (e.treffer.begriffe_pruefsumme !== begriffePruefsumme(e.suchbegriffe))
+    f.push('treffer passen nicht zu den Suchbegriffen (Begriffe ergänzt?) – npm run entwurf:treffer erneut ausführen')
+  else
+    for (const p of e.programme)
+      if (!e.treffer.programme.some((t) => t.partei_id === p.partei_id && t.land === p.land))
+        f.push(`treffer: Partei ${p.partei_id} ${p.land ?? 'Bund'} fehlt – npm run entwurf:treffer erneut ausführen`)
+  return f
+}
+
+/** Ab so vielen Treffern zu einer Ursache ohne Maßnahme fragt der Hinweis nach. */
+export const TREFFER_OHNE_MASSNAHME = 10
+
+/**
+ * Hinweise (keine Fehler): Ein Programm hat zu einer Ursache viele Treffer, aber keine Maßnahme –
+ * dann den Agenten die Fundstellen lesen lassen oder im Protokoll begründen, warum nichts passt.
+ */
+export function erfassungsHinweise(k: Katalog, e: Erfassung): string[] {
+  const h: string[] = []
+  const name = (p: { partei_id: number; land: string | null }) =>
+    `${k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? p.partei_id} (${p.land ?? 'Bund'})`
+  for (const p of e.programme) {
+    const t = e.treffer?.programme.find((x) => x.partei_id === p.partei_id && x.land === p.land)
+    if (!t) continue
+    for (const u of ursachenFuer(k, e, p)) {
+      if (p.massnahmen.some((m) => m.ursachen_ids.includes(u.id))) continue
+      const richtungen = Object.entries(t.ursachen[String(u.id)] ?? {}).map(([r, b]) => [r, Object.values(b).reduce((a, c) => a + c, 0)] as const)
+      const summe = richtungen.reduce((a, [, n]) => a + n, 0)
+      if (summe >= TREFFER_OHNE_MASSNAHME)
+        h.push(`${name(p)}: ${summe} Treffer zu Ursache ${u.id} (${richtungen.filter(([, n]) => n).map(([r, n]) => `${r} ${n}`).join(', ')}), aber keine Maßnahme – Fundstellen prüfen lassen oder Grund im Protokoll`)
+    }
+  }
+  return h
+}
+
 /** Prüft die Erfassung gegen den Katalog, bevor irgendetwas geschrieben wird. */
 export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
   const f: string[] = []
   const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === e.thema_id).map((u) => [u.id, u]))
   if (!ursachen.size) f.push(`Thema ${e.thema_id} hat keine Ursachen`)
-  if (!e.suchbegriffe?.length) f.push('suchbegriffe fehlen')
+  f.push(...pruefeSuchbegriffe(k, e))
   const gesehen = new Set<string>()
   for (const p of e.programme) {
     const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
@@ -370,6 +568,10 @@ export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
       else if (m.beschreibung.length > 200) f.push(`${was}: beschreibung ist länger als 200 Zeichen (${m.beschreibung.length})`)
       if (!m.zitat?.trim()) f.push(`${was}: zitat fehlt`)
       else if (m.zitat.length > 800) f.push(`${was}: zitat ist länger als 800 Zeichen`)
+      else if (m.beschreibung) {
+        const zahlen = fehlendeZahlen(m.beschreibung, m.zitat)
+        if (zahlen.length) f.push(`${was}: Zahl ${zahlen.join(', ')} steht in der Beschreibung, aber nicht im Zitat – nichts dazuerfinden oder das Zitat erweitern`)
+      }
       if (!Number.isInteger(m.seite) || m.seite < 1) f.push(`${was}: seite muss die PDF-Seite sein (ganze Zahl ≥ 1)`)
       if (!m.ursachen_ids?.length) f.push(`${was}: ursachen_ids fehlen`)
       for (const id of m.ursachen_ids ?? []) {
@@ -414,6 +616,12 @@ export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung, fest?: K
     }
     if (zugeordnet.has(z.kennung)) f.push(`${z.kennung}: mehrfach zugeordnet`)
     zugeordnet.add(z.kennung)
+    const erfasst = e.programme[x.programm].massnahmen[x.massnahme].ursachen_ids
+    if (!Array.isArray(z.ursachen)) f.push(`${z.kennung}: „ursachen“ fehlt – der Bewertungs-Agent bestätigt jede Zuordnung zu einer Ursache`)
+    else
+      for (const u of erfasst)
+        if (!z.ursachen.includes(u))
+          f.push(`${z.kennung}: Zuordnung zu Ursache ${u} nicht bestätigt – Erfassungs-Agent die Stelle prüfen lassen, Zuordnung korrigieren und entwurf:blind neu ausführen`)
     const ebene = e.programme[x.programm].land ? 'land' : 'bund'
     if ('instrument' in z) {
       if (typeof z.instrument === 'number' ? !vorhandene.has(z.instrument) : !neue.has(z.instrument))
@@ -449,6 +657,45 @@ export function bewertungsHinweise(b: Bewertung): string[] {
   return h
 }
 
+/**
+ * Hinweise zur Zuordnung zu Ursachen: Sieht der Bewertungs-Agent eine weitere Ursache, oder ordnen
+ * Programme denselben Lösungsweg unterschiedlich vielen Ursachen zu, prüft der Koordinator das nach.
+ * Mehrfachzuordnung bringt Punkte bei mehr Problemen – sie muss für alle Programme gleich gehandhabt werden.
+ */
+export function zuordnungsHinweise(k: Katalog, e: Erfassung, b: Bewertung, fest?: Kennung[]): string[] {
+  const h: string[] = []
+  const alle = new Map(kennungen(e, fest).map((x) => [x.kennung, x]))
+  const jeInstrument = new Map<string, { kennung: string; ursachen: string }[]>()
+  for (const z of b.zuordnung ?? []) {
+    const x = alle.get(z.kennung)
+    if (!x) continue
+    const erfasst = e.programme[x.programm].massnahmen[x.massnahme].ursachen_ids
+    const mehr = (z.ursachen ?? []).filter((u) => !erfasst.includes(u))
+    if (mehr.length) h.push(`${z.kennung}: Bewertung sieht zusätzlich Ursache ${mehr.join(', ')} – Erfassung prüfen (gleich für alle Programme)`)
+    if ('instrument' in z) {
+      const liste = jeInstrument.get(String(z.instrument)) ?? []
+      liste.push({ kennung: z.kennung, ursachen: [...erfasst].sort((a, c) => a - c).join('+') })
+      jeInstrument.set(String(z.instrument), liste)
+    }
+  }
+  for (const [i, liste] of jeInstrument) {
+    const arten = new Set(liste.map((x) => x.ursachen))
+    if (arten.size > 1)
+      h.push(`Instrument ${i}: Maßnahmen mit unterschiedlichen Ursachen (${liste.map((x) => `${x.kennung} ${x.ursachen}`).join(', ')}) – gleicher Lösungsweg, gleiche Zuordnung?`)
+  }
+  // Ordnet ein Programm deutlich öfter mehreren Ursachen zu als die übrigen, holt es leichter Punkte.
+  const mehrfach = e.programme.map((p) => ({ p, n: p.massnahmen.length, m: p.massnahmen.filter((m) => m.ursachen_ids.length > 1).length }))
+  const gesamt = mehrfach.reduce((a, x) => a + x.n, 0)
+  const anteil = gesamt ? mehrfach.reduce((a, x) => a + x.m, 0) / gesamt : 0
+  for (const x of mehrfach)
+    if (x.n >= 3 && x.m / x.n > Math.max(0.3, 2 * anteil))
+      h.push(
+        `${k.parteien.find((p) => p.id === x.p.partei_id)?.kurzname ?? x.p.partei_id} (${x.p.land ?? 'Bund'}): ${x.m} von ${x.n} Maßnahmen mehreren Ursachen zugeordnet ` +
+          `(alle Programme: ${Math.round(anteil * 100)} %) – Mehrfachzuordnung prüfen`,
+      )
+  return h
+}
+
 type Json = Record<string, unknown>
 
 /**
@@ -475,7 +722,10 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
     const durchsucht = k.ursachen.filter((u) => u.thema_id === e.thema_id && (!lp || (u.ebene ?? 'bund') === 'land')).map((u) => u.id)
     const kopf: Json = { partei_id: p.partei_id, ...(lp ? { land: lp.land, landtagswahl: lp.landtagswahl } : {}), durchsucht_fuer: durchsucht }
     if (!p.massnahmen.length) {
-      abdeckung.push({ ...kopf, keine_massnahme: { begruendung: p.keine_massnahme, stand: heute, geprueft: false, ki_entwurf: true } })
+      // Treffer aller Suchbegriffe im Programm: Anhaltspunkt für die zweite Suche vor „geprueft“.
+      const t = e.treffer?.programme.find((x) => x.partei_id === p.partei_id && x.land === p.land)
+      const treffer = t ? Object.values(t.ursachen).flatMap((r) => Object.values(r).flatMap((b) => Object.values(b))).reduce((a, c) => a + c, 0) : undefined
+      abdeckung.push({ ...kopf, keine_massnahme: { begruendung: p.keine_massnahme, stand: heute, ...(treffer !== undefined ? { treffer } : {}), geprueft: false, ki_entwurf: true } })
       continue
     }
     const massnahmen = p.massnahmen.map((m, j) => {

@@ -11,5 +11,11 @@ fi
 cd "$CLAUDE_PROJECT_DIR"
 npm install --no-audit --no-fund
 
+# Phase A (Ursachen festlegen, npm run phase-a -- start): keine Programme laden.
+if [ -f .cache/phase-a ]; then
+  echo "Phase A aktiv – Programme werden nicht geladen (Ende: npm run phase-a -- ende)."
+  exit 0
+fi
+
 # Ein gesperrter Parteiserver soll den Start der Sitzung nicht verhindern.
 npm run -s programme:laden || echo "Programme konnten nicht vollständig geladen werden – npm run programme:laden erneut versuchen."

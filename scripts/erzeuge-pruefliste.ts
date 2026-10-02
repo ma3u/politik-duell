@@ -8,6 +8,8 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { pruefEinheiten, type KatalogMassnahme, type Pruefeinheit } from '../src/data/katalog.ts'
 import { blindeReihenfolge } from '../src/pruefung/auswertung.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
+import { programmSeiten, programme } from './programme.ts'
+import { fehlendeZahlen, seiteVon, zitatKontext, type ZitatKontext } from './zitate.ts'
 
 const { katalog, fehler } = pruefeDatenordner()
 if (fehler.length) {
@@ -33,7 +35,27 @@ const PUNKTE_B = [
   'Kurzbeschreibung gibt das Zitat sinngemäß richtig wieder (nicht zugespitzt)',
   'Maßnahme passt zu den eingetragenen Ursachen',
   'Begründung ist neutral und bewertet nur die Maßnahme',
+  'Ausgelassener Text („[…]“) ändert den Sinn nicht',
 ]
+
+// Was die Zitate auslassen, steht in der Prüfliste: Dafür werden die Programme gelesen (Zwischenspeicher
+// .cache/, sonst Download). Ist ein Programm nicht erreichbar, fehlt nur dieser Hinweis.
+const pruefsummen = new Map(programme(katalog).map((p) => [p.url, p.sha256]))
+const seitenCache = new Map<string, string[] | null>()
+async function kontextVon(m: KatalogMassnahme): Promise<ZitatKontext | null | 'nicht geladen'> {
+  const url = m.beleg_programm_url.split('#')[0]
+  const seite = seiteVon(m.beleg_programm_url)
+  if (!m.zitat || seite === null) return null
+  if (!seitenCache.has(url)) {
+    try {
+      seitenCache.set(url, (await programmSeiten(url, pruefsummen.get(url))).seiten)
+    } catch {
+      seitenCache.set(url, null)
+    }
+  }
+  const seiten = seitenCache.get(url)
+  return seiten ? zitatKontext(m.zitat, seiten, seite) : 'nicht geladen'
+}
 
 const STIL = `
   :root {
@@ -104,6 +126,7 @@ const STIL = `
   }
   button.zweit { background: transparent; color: var(--akzent); }
   .bilanz { font-variant-numeric: tabular-nums; }
+  .achtung { color: var(--eins); }
   .gleich { color: var(--gleich); } .eins { color: var(--eins); } .zwei { color: var(--zwei); font-weight: 700; }
   .karte { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 10px; padding: 14px; display: grid; gap: 8px; }
   .karte-kopf { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 0.85rem; color: var(--leise); }
@@ -186,11 +209,28 @@ for (const thema of katalog.themen) {
         <p class="vergleich" aria-live="polite"></p>
       </div>`
 
+  const kontexte = new Map<number, Awaited<ReturnType<typeof kontextVon>>>()
+  for (const m of massnahmen) kontexte.set(m.id, await kontextVon(m))
+  const auslassungB = (m: KatalogMassnahme) => {
+    const k = kontexte.get(m.id)
+    const zahlen = fehlendeZahlen(m.beschreibung, m.zitat ?? '')
+    const teile: string[] = []
+    if (k === 'nicht geladen') teile.push('<p class="leise">Programm nicht geladen – Auslassungen im PDF selbst ansehen.</p>')
+    else if (k?.auslassungen.length)
+      teile.push(
+        `<p class="leise${k.warnungen.length ? ' achtung' : ''}">Ausgelassen: ${k.auslassungen.map((a) => `„${esc(a)}“`).join(' · ')}${
+          k.warnungen.length ? ` <b>(${esc(k.warnungen.join('; '))})</b>` : ''
+        }</p>`,
+      )
+    if (zahlen.length) teile.push(`<p class="leise achtung"><b>Zahlen nur in der Beschreibung, nicht im Zitat: ${zahlen.map(esc).join(', ')}</b></p>`)
+    return teile.join('')
+  }
+
   const karteB = (m: KatalogMassnahme) => `
       <div class="karte" data-id="${m.id}" data-teil="b">
         <div class="karte-kopf"><b>${kennungVon(m)}</b><span>${esc(partei(m.partei_id).name)}</span><span>Entwurf: Wirksamkeit ${m.wirksamkeit} × Umsetzbarkeit ${m.umsetzbarkeit} = ${m.wirksamkeit * m.umsetzbarkeit} Punkte</span></div>
         <p><b>${esc(m.beschreibung)}</b></p>
-        <blockquote>„${esc(m.zitat ?? '(kein Zitat)')}“</blockquote>
+        <blockquote>„${esc(m.zitat ?? '(kein Zitat)')}“</blockquote>${auslassungB(m)}
         <p class="leise"><a href="${esc(m.beleg_programm_url)}" target="_blank" rel="noopener">Programm öffnen (PDF-Seite ${esc(m.beleg_programm_url.split('#page=')[1] ?? '?')})</a>${
           m.beleg_studie_url ? ` · <a href="${esc(m.beleg_studie_url)}" target="_blank" rel="noopener">Studie</a>` : ''
         }</p>
@@ -272,6 +312,7 @@ for (const thema of katalog.themen) {
 
 <script>
 const DATEN = ${JSON.stringify(daten)};
+const PUNKTE = ${JSON.stringify(PUNKTE_B.map((_, i) => i))};
 const SCHLUESSEL = 'pruefliste-' + DATEN.thema;
 let zustand = {};
 try { zustand = JSON.parse(localStorage.getItem(SCHLUESSEL) || '{}') || {}; } catch (e) { zustand = {}; }
@@ -304,9 +345,9 @@ document.getElementById('kopieren').addEventListener('click', () => {
   for (const m of DATEN.massnahmen) {
     const w = wert(m.id, 'w'), u = wert(m.id, 'u');
     // Belege prüft Durchgang B je Maßnahme – bei Instrumenten für alle Maßnahmen dahinter.
-    const haken = m.teile.reduce((n, id) => n + [0, 1, 2, 3, 4].filter((i) => zustand[id + ':b:b' + i]).length, 0);
+    const haken = m.teile.reduce((n, id) => n + PUNKTE.filter((i) => zustand[id + ':b:b' + i]).length, 0);
     const notiz = m.teile.map((id) => String(zustand[id + ':b:notiz'] || '')).filter(Boolean).join(' / ').replace(/\\n/g, ' ').replace(/\\|/g, '/');
-    z.push('| ' + m.kennung + ' (' + m.id + ') ' + m.text.replace(/\\|/g, '/') + ' | ' + m.partei + ' | ' + m.w + '×' + m.u + ' | ' + (w === null ? '–' : w) + '×' + (u === null ? '–' : u) + ' | ' + haken + '/' + 5 * m.teile.length + ' | ' + notiz + ' |');
+    z.push('| ' + m.kennung + ' (' + m.id + ') ' + m.text.replace(/\\|/g, '/') + ' | ' + m.partei + ' | ' + m.w + '×' + m.u + ' | ' + (w === null ? '–' : w) + '×' + (u === null ? '–' : u) + ' | ' + haken + '/' + PUNKTE.length * m.teile.length + ' | ' + notiz + ' |');
   }
   const text = z.join('\\n');
   const feld = document.getElementById('ausgabe');

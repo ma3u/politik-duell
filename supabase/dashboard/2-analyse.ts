@@ -106,16 +106,21 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
     }
   }
   const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf);
+  const treffer = [
+    ...trefferJeMassnahme.values()
+  ];
+  const nichtBlind = treffer.some((t) => t.massnahme.ki_entwurf && t.massnahme.entwurf_herkunft !== "blind");
   return {
     partei,
     punkte,
-    treffer: [
-      ...trefferJeMassnahme.values()
-    ],
+    treffer,
     abdeckung: erfasst,
     programme,
     ...kiEntwurf ? {
       ki_entwurf: true
+    } : {},
+    ...nichtBlind ? {
+      nicht_blind: true
     } : {}
   };
 }

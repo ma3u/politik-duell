@@ -2,7 +2,7 @@
 // Reine Funktionen, damit sie sich testen lassen; das Kommando steht in
 // scripts/uebernehme-pruefung.ts.
 import { pruefEinheiten, type Katalog } from '../src/data/katalog.ts'
-import { KRITISCHE_SPANNWEITE, MINDEST_BEWERTUNGEN, type PruefExport } from '../src/pruefung/auswertung.ts'
+import { KRITISCHE_SPANNWEITE, MINDEST_BEWERTUNGEN, werteStimmen, type PruefExport } from '../src/pruefung/auswertung.ts'
 
 const istObjekt = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v)
 const DATUM = /^\d{4}-\d{2}-\d{2}$/
@@ -40,7 +40,7 @@ export function pruefeExport(roh: unknown, katalog: Katalog, { geklaert = false 
       fehler.push(`${ort}: erwartet ein Objekt`)
       continue
     }
-    nur(ort, b, ['massnahme_id', 'anzahl', 'median_w', 'median_u', 'spannweite'])
+    nur(ort, b, ['massnahme_id', 'anzahl', 'median_w', 'median_u', 'spannweite', 'werte'])
     const m = einheiten.find((x) => x.id === b.massnahme_id)
     if (!m) fehler.push(`${ort}: unbekannte Maßnahme oder unbekanntes Instrument ${String(b.massnahme_id)}`)
     else if (thema && m.thema_id !== thema.id) fehler.push(`${ort}: ${m.id} gehört nicht zum Thema „${thema.name}“`)
@@ -64,6 +64,13 @@ export function pruefeExport(roh: unknown, katalog: Katalog, { geklaert = false 
         )
       }
     }
+    // Einzelwerte (ohne Personen): Mediane und Spannweite müssen sich daraus ergeben.
+    if (b.werte !== undefined) {
+      const werte = b.werte
+      if (!Array.isArray(werte) || werte.some((x) => !Array.isArray(x) || x.length !== 2 || x.some((v) => !Number.isInteger(v) || v < 0 || v > 3)))
+        fehler.push(`${ort}: „werte“ muss eine Liste von [Wirksamkeit, Umsetzbarkeit] sein, je 0 bis 3`)
+      else fehler.push(...werteStimmen(name, b as Parameters<typeof werteStimmen>[1]))
+    }
     if (!Number.isInteger(b.spannweite) || (b.spannweite as number) < 0 || (b.spannweite as number) > 3) {
       fehler.push(`${ort}: „spannweite“ muss eine ganze Zahl von 0 bis 3 sein`)
     } else if ((b.spannweite as number) >= KRITISCHE_SPANNWEITE) {
@@ -78,6 +85,9 @@ export function pruefeExport(roh: unknown, katalog: Katalog, { geklaert = false 
   }
   return { export: fehler.length ? null : (roh as unknown as PruefExport), fehler, warnungen }
 }
+
+/** Dateiname im Repository für einen übernommenen Export. */
+export const exportPfad = (e: Pick<PruefExport, 'thema_id' | 'datum'>) => `daten/pruefungen/thema-${String(e.thema_id).padStart(2, '0')}-${e.datum}.json`
 
 export interface Aenderung {
   massnahme_id: number
