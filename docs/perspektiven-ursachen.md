@@ -125,6 +125,8 @@ Verworfen:
 
 Stand: 29. 9. 2026, ergänzt 30. 9. 2026 (905 neu gefasst, 909) · KI-Entwurf, noch nicht von der Betreiberin freigegeben
 
+> **Neuanlage (2. 10. 2026):** 7 der 10 Ursachen (904–910) kamen nachträglich dazu, nachdem die Programme schon ausgewertet waren. Nach der Regel in [`methode.md`](methode.md) → „Nachträgliche Ursachen“ (mehr als ein Drittel) wird das Thema neu geprüft. Weil noch nichts geprüft war, beginnt es von vorn: Die 337 Maßnahmen und 68 Instrumente sind stillgelegt (IDs 6279–7257 in [`daten/ids.json`](../daten/ids.json)), Sicherheit gilt bis zur neuen Erfassung für alle Parteien als „noch nicht erfasst“. Danach folgen Phase A als Neuanlage (`/thema-anlegen`, ohne Kenntnis der bisherigen Ursachen, Abgleich mit 901–910 erst danach) und eine neue Erfassung mit `/thema-erfassen 9`. Der Abschnitt unten bleibt als Protokoll des ersten Durchgangs stehen.
+
 Auch hier waren die Maßnahmen schon erfasst (politik-duell/politik-duell#13, #14). Zwei belegte Diagnosen deckte keine Ursache ab. Sie sind jetzt als 904 und 905 aufgenommen, und alle erreichbaren Programme wurden eigens danach durchsucht.
 
 Im nächsten Schritt kamen die drei dafür vorgemerkten Diagnosen als 906–908 dazu, ebenfalls mit eigener Nacherfassung (siehe unten, „906–908“).

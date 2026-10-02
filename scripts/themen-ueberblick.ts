@@ -1,11 +1,13 @@
 // Vorhandene Themen nur mit Name, Beschreibung, Ziel und Ursachen – ohne Maßnahmen, Instrumente
 // und Abdeckung. Für Phase A (/thema-anlegen): Überschneidungen prüfen, ohne zu sehen, was in
 // den Programmen steht.
-// Aufruf: npm run themen:ueberblick [-- --json]
+// Aufruf: npm run themen:ueberblick [-- --json] [--ohne <ID>]   (--ohne: ein Thema weglassen, etwa bei dessen Neuanlage)
 import { pruefeDatenordner } from './katalog-laden.ts'
 
+const i = process.argv.indexOf('--ohne')
+const ohne = i >= 0 ? Number(process.argv[i + 1]) : null
 const { katalog } = pruefeDatenordner()
-const themen = katalog.themen.map((t) => ({
+const themen = katalog.themen.filter((t) => t.id !== ohne).map((t) => ({
   id: t.id,
   name: t.name,
   beschreibung: t.beschreibung,
