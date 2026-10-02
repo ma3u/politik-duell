@@ -532,7 +532,7 @@ Verworfen:
 
 ## Kita-Betreuung (17)
 
-Stand: 1. 10. 2026 · KI-Entwurf, noch nicht von der Betreiberin freigegeben
+Stand: 1. 10. 2026 · KI-Entwurf, Ziel und Ursachen am 2. 10. 2026 von der Betreiberin freigegeben (`freigabe` in der Themendatei)
 
 Ziel: „Eltern finden für ihr Kind einen bezahlbaren Betreuungsplatz, der zu ihrem Bedarf passt, verlässlich geöffnet ist und das Kind gut fördert.“ Ursachen und Ebenen wurden festgelegt, **bevor** in ein Wahlprogramm geschaut wurde. „bezahlbar“ und Ursache 1705 kamen am 1. 10. 2026 hinzu, ebenfalls vor der Erfassung (siehe 1705).
 
@@ -554,7 +554,12 @@ Ziel: „Eltern finden für ihr Kind einen bezahlbaren Betreuungsplatz, der zu i
 
 **1705:** Gemessen ist der Verbesserungsbedarf aus Elternsicht, nicht die Höhe der Beiträge oder ihr Anteil am Einkommen: Eltern unter dreijähriger Kinder sehen „vor allem bei den Elternbeiträgen ‚viel Bedarf‘ für Verbesserungen“ (37 %, 36 % „wenig Bedarf“, 27 % „kein Bedarf“); bei Eltern von Kindern ab drei Jahren sind es 24 % (35 % „wenig“, 42 % „kein Bedarf“) (S. 28 f., Abb. 1.13). Die Zufriedenheit mit den Kosten ist bei U3 am niedrigsten aller Aspekte (Mittelwert 4,1 von 6; 70 % vergeben 4 oder mehr, S. 13) und „vor allem in den Ländern“ höher, „in denen es vollständige oder weitreichende Gebührenbefreiungen gibt“ (S. 8). Für Sachsen-Anhalt liegt der Mittelwert bei 4,7 (U3) und 4,9 (U6), also mittel im Ländervergleich (Tab. I, S. 44). Das Ergebnis stammt aus der Erhebung 2022. Zur Ebene: Laut Studie „obliegt“ die „Ausgestaltung und Finanzierung der Angebote der FBBE“ den „Bundesländern, Kommunen und Trägern“ (S. 18). Quelle ist die DOI-Adresse des Reports ohne Seitenanker.
 
-Das ist nicht Studie 4 des Reports 2024 (Elternbeiträge, Haller u. a.), die weiter fehlt, sondern Studie 4 des Reports 2023 (Zufriedenheit, Lippert/Hüsken/Kuger, DOI 10.36189/DJI202606). Sie belegt, dass die Kosten ein von Eltern genannter Verbesserungsbereich sind, aber keine Belastung in Euro. Ob das als Ursache genug ist, entscheidet die Betreiberin; ohne 1705 gäbe es für Beitragsfreiheit keine Punkte.
+Das ist nicht Studie 4 des Reports 2024 (Elternbeiträge, Haller u. a.), die weiter fehlt, sondern Studie 4 des Reports 2023 (Zufriedenheit, Lippert/Hüsken/Kuger, DOI 10.36189/DJI202606). Sie belegt, dass die Kosten ein von Eltern genannter Verbesserungsbereich sind, aber keine Belastung in Euro. Ob das als Ursache genug ist, entscheidet die Betreiberin; ohne 1705 gäbe es für Beitragsfreiheit keine Punkte. **Entschieden (2. 10. 2026):** 1705 bleibt, wie es ist. Nach den Belegstufen (`docs/methode.md`) ist die repräsentative Elternbefragung des DJI Stufe B und reicht allein.
+
+**Entscheidungen der Betreiberin (2. 10. 2026):**
+- **1705** bleibt unverändert (siehe oben).
+- **1703 und Bewertung des Personalschlüssels:** bestätigt. Wirksamkeit 3 nur für den Personalschlüssel nach wissenschaftlicher Empfehlung (7286), 2 für kleinere Schritte (7288, 7289) – nach der Regel, dass Wirksamkeit 3 die erwartete Verbesserung misst und ein Instrument Lösungsweg und Größe des Schritts umfasst.
+- **Ziel:** bleibt mit „bezahlbar“, weil 1705 bleibt.
 
 Entschieden: **1701–1705 Land.** Der Bund setzt den Rechtsanspruch (§ 24 SGB VIII) und fördert über das Kita-Qualitätsgesetz; das Angebot planen und finanzieren Länder und Kommunen, Personalschlüssel, Qualifikationsvorgaben und Öffnungszeiten regeln die Länder (Landesrecht, Träger der Jugendhilfe nach § 69 SGB VIII durch Landesrecht bestimmt). Maßnahmen aus dem Bundesprogramm zählen, wenn kein Bundesland gewählt ist.
 

@@ -54,7 +54,7 @@ Dokumentation zu Paket 1: `daten/README.md` (Format, „Mit KI-Agenten“, „Wa
 ## Vorhandene Daten
 
 - **Sicherheit (9):** 7 von 10 Ursachen nachträglich – Thema nach Phase A neu prüfen (Paket 2).
-- **Kita (17):** Entscheidungen zu 1705 (Belegstufe), 1703 und zum Ziel (Methodenfragen 3 bis 5).
+- **Kita (17):** entschieden am 2. 10. 2026 – 1705 bleibt, die Abstufung beim Personalschlüssel (1703) ist bestätigt, das Ziel bleibt mit „bezahlbar“; Ziel und Ursachen freigegeben (`freigabe`).
 - **Miete (2):** Rollen-Modifikatoren – durch 1.2 abgedeckt.
 
 ## Methodenfragen – Empfehlung, mit Paket 2 in die Methode übernommen
@@ -90,4 +90,4 @@ Dokumentation zu Paket 1: `daten/README.md` (Format, „Mit KI-Agenten“, „Wa
 | 2.8 | Regeln zu vagen Zusagen, Programmlänge, Wirksamkeit 3, Ziel, Belegstufen, Quellenarten, nachträglichen Ursachen und Lösungsrichtungen in `docs/methode.md` und `Methode.tsx`; Feld `freigabe: {datum, quellen_bestaetigt}`, das `ursachen:freigegeben` im Zielzweig verlangt; `pr.md` bei jedem Push neu (beide Skills); Ja/Nein-Checkliste in `.github/pull_request_template.md`. | Kein Thema hat bisher `freigabe` – vor der nächsten Erfassung trägt die Betreiberin sie für das Thema ein. |
 | 2.9 | Spalte `entwurf_herkunft` in `massnahmen` (bei KI-Entwürfen: vom Instrument bzw. der Maßnahme; ältere Einträge null); Wertung kennzeichnet `nicht_blind`; Anzeige „vorläufige Bewertung, nicht blind“ statt „KI-Entwurf“ in Auflösung, bester Lösung und Endstand. | 154 Maßnahmen `blind`, 2 `nicht_blind` (Kita 7289, 7305), die übrigen KI-Entwürfe null (vor dem 1. 10. 2026, nicht blind) – sie erscheinen in der Testphase als „nicht blind“. |
 
-Noch offen aus „Vorhandene Daten“: Sicherheit (9) mit 7 von 10 nachträglichen Ursachen nach der neuen Regel (mehr als ein Drittel) neu prüfen; Kita-Entscheidungen zu 1705, 1703 und zum Ziel.
+Noch offen aus „Vorhandene Daten“: Sicherheit (9) mit 7 von 10 nachträglichen Ursachen nach der neuen Regel (mehr als ein Drittel) neu prüfen – die Betreiberin legt das Thema neu an.
