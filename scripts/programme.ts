@@ -163,3 +163,10 @@ export async function erfassungsSeiten(url: string, erwartet: string | undefined
 /** PDF-Seiten fast ohne Text (Bilder, Scans, Leerseiten): Dort kann eine Suche nichts finden. */
 export const seitenOhneText = (seiten: string[], mindestens = 200) =>
   seiten.flatMap((t, i) => (t.replace(/\s+/g, '').length < mindestens ? [i + 1] : []))
+
+/** Text eines Programms als Datei für Read/Grep: Seitenmarken „===== Seite N =====“, Seiten ohne Text am Anfang genannt. */
+export function textdatei(seiten: string[]): string {
+  const leer = seitenOhneText(seiten)
+  const kopf = leer.length ? `Hinweis: ${leer.length} von ${seiten.length} Seiten fast ohne Text (Bild oder Scan?): ${leer.join(', ')}\n` : ''
+  return kopf + seiten.map((t, n) => `\n===== Seite ${n + 1} =====\n${t}`).join('')
+}

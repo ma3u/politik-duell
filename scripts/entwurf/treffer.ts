@@ -8,6 +8,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { begriffePruefsumme, erfassungsHinweise, pruefeSuchbegriffe, type Erfassung, type Treffermatrix } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
+import { leseLeitfaden } from './erfassung-datei.ts'
 import { zaehle } from './suche.ts'
 
 const args = process.argv.slice(2)
@@ -65,5 +66,6 @@ if (nichtGeladen) {
 }
 const neu = { ...erfassung, treffer: matrix }
 writeFileSync(pfad, JSON.stringify(neu, null, 2) + '\n', 'utf8')
-for (const h of erfassungsHinweise(katalog, neu)) console.error(`Hinweis: ${h}`)
+const leitfaden = leseLeitfaden(neu.thema_id)
+for (const h of erfassungsHinweise(katalog, leitfaden ? { ...neu, leitfaden } : neu)) console.error(`Hinweis: ${h}`)
 console.log(`\nTreffer für ${matrix.programme.length} Programme in ${pfad} geschrieben.`)

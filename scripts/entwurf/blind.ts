@@ -5,9 +5,10 @@
 // Parteinamen, Personen und Länder werden ersetzt; Wörter, die trotzdem auf eine Partei hindeuten
 // („liberal“, „Fraktion“ …), gibt das Skript aus und bricht ab, wenn es mehr als resteSchwelle sind.
 // Aufruf: npm run entwurf:blind -- <erfassung.json> [--ausgabe <blind.json>] [--schwelle N]   (ohne --ausgabe: Standardausgabe)
-import { readFileSync, writeFileSync } from 'node:fs'
-import { blindListe, blindReste, erfassungsHinweise, kennungen, pruefeErfassung, resteSchwelle, type Erfassung } from '../entwurf.ts'
+import { writeFileSync } from 'node:fs'
+import { blindListe, blindReste, erfassungsHinweise, kennungen, pruefeErfassung, resteSchwelle } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
+import { leseErfassung } from './erfassung-datei.ts'
 import { leseKennungen, schreibeKennungen } from './kennungen-datei.ts'
 
 const args = process.argv.slice(2)
@@ -27,7 +28,7 @@ if (fehler.length) {
   console.error('Datenkatalog fehlerhaft – erst `npm run daten:pruefen` beheben.')
   process.exit(1)
 }
-const erfassung = JSON.parse(readFileSync(pfad, 'utf8')) as Erfassung
+const erfassung = leseErfassung(pfad)
 const probleme = pruefeErfassung(katalog, erfassung)
 for (const p of probleme) console.error(`Fehler:  ${p}`)
 if (probleme.length) process.exit(1)

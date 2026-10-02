@@ -18,7 +18,15 @@ import { createHash } from 'node:crypto'
 /** Was ein Erfassungs-Agent in einem Programm gefunden hat – ohne Bewertung. */
 export interface ErfassteMassnahme {
   beschreibung: string
+  /** Ursachen, an denen die Maßnahme nach dem Leitfaden ansetzt. */
   ursachen_ids: number[]
+  /**
+   * Grenzfälle: Ursachen, bei denen der Leitfaden keine klare Antwort gibt. Ob die Maßnahme dort
+   * ansetzt, entscheidet die Bewertung ohne Parteinamen – für alle Programme mit demselben Blick.
+   */
+  ursachen_offen?: number[]
+  /** Bei Ursachen mit Bündelregel: das Instrument aus dem Leitfaden (je Programm höchstens eine Maßnahme). */
+  buendel?: string
   /** Wörtlich, wie auf der Seite. */
   zitat: string
   /** PDF-Seite (#page=N), nicht die gedruckte Seitenzahl. */
@@ -32,6 +40,28 @@ export interface ErfasstesProgramm {
   massnahmen: ErfassteMassnahme[]
   /** Nur wenn `massnahmen` leer ist: was durchsucht wurde und warum nichts passt. */
   keine_massnahme?: string
+  /** Programm konnte nicht (vollständig) gelesen werden – bleibt „noch nicht erfasst“, kommt nie in die Erfassung. */
+  nicht_durchsucht?: string
+}
+
+/**
+ * Erfassungsleitfaden je Thema (`daten/leitfaeden/<ID>.json`), festgelegt bevor ein Agent startet:
+ * Regeln zur Abgrenzung und Zuordnung, die für alle Programme gleich gelten und ohne Parteinamen
+ * auch an die Bewertung gehen. So wird ein Maßstab einmal entschieden statt in Rückfragen je
+ * Programm ausgehandelt.
+ */
+export interface Leitfaden {
+  thema_id: number
+  stand: string
+  /** Woher die Regeln stammen (Perspektivenprüfung, frühere Erfassung …). */
+  herkunft?: string
+  regeln: { nr: number; ursachen?: number[]; text: string }[]
+  /**
+   * Bündelregel für breite Lösungsrichtungen: je Ursache eine Liste von Instrumenten. Ein Programm
+   * erfasst je Instrument höchstens eine Maßnahme (die konkreteste Stelle), statt jede Einzelzusage.
+   * Die Liste ist offen: Neue Instrumente meldet ein Agent, der Koordinator ergänzt sie für alle.
+   */
+  buendel?: Record<string, string[]>
 }
 
 /**
@@ -55,6 +85,8 @@ export interface Erfassung {
   suchbegriffe: Suchbegriffe
   /** Alle Begriffe in allen erfassten Programmen gezählt (`npm run entwurf:treffer`). */
   treffer?: Treffermatrix
+  /** Aus `daten/leitfaeden/<ID>.json` – die Skripte lesen ihn von dort, nicht aus der Arbeitsdatei. */
+  leitfaden?: Leitfaden
   programme: ErfasstesProgramm[]
 }
 
@@ -77,10 +109,24 @@ export interface Bewertung {
 
 /**
  * Eine Maßnahme der Blindliste: Instrument oder Einzelbewertung, dazu die Ursachen, an denen sie aus
- * Sicht des Bewertungs-Agenten ansetzt. Jede Ursache aus der Erfassung muss darin bestätigt sein –
- * sonst entscheidet allein der Erfassungs-Agent (der die Partei kennt), wo eine Maßnahme Punkte holt.
+ * Sicht des Bewertungs-Agenten ansetzt. Die Bewertung entscheidet die Zuordnung: Was sie aus
+ * `ursachen_ids` und `ursachen_offen` nicht bestätigt, fällt beim Eintragen weg – so bestimmt nicht
+ * der Erfassungs-Agent (der die Partei kennt), wo eine Maßnahme Punkte holt. Bestätigt sie keine
+ * Ursache (`ursachen: []`), braucht die Maßnahme keine Bewertung und wird nicht eingetragen.
  */
-export type Zuordnung = ({ kennung: string; instrument: number | string } | { kennung: string; einzeln: Einzelbewertung }) & { ursachen?: number[] }
+export type Zuordnung =
+  | (({ kennung: string; instrument: number | string } | { kennung: string; einzeln: Einzelbewertung }) & { ursachen?: number[] })
+  | { kennung: string; ursachen: [] }
+
+/** Alle Ursachen, die die Erfassung einer Maßnahme vorschlägt (sichere und offene). */
+export const vorgeschlageneUrsachen = (m: ErfassteMassnahme) => [...(m.ursachen_ids ?? []), ...(m.ursachen_offen ?? [])]
+
+/** Was nach der Bewertung bleibt: vorgeschlagene Ursachen, die die Bewertung bestätigt (Reihenfolge der Erfassung). */
+export const bestaetigteUrsachen = (m: ErfassteMassnahme, z: Zuordnung | undefined) =>
+  vorgeschlageneUrsachen(m).filter((u) => (z?.ursachen ?? []).includes(u))
+
+/** Hat die Bewertung die Maßnahme verworfen (keine Ursache bestätigt)? */
+const verworfen = (m: ErfassteMassnahme, z: Zuordnung | undefined) => !bestaetigteUrsachen(m, z).length
 
 // ---------------------------------------------------------------------------
 // Freigabe der Ursachen
@@ -366,8 +412,10 @@ export interface BlindListe {
   pruefsumme: string
   thema: { id: number; name: string; ziel?: string }
   ursachen: { id: number; beschreibung: string; ebene: string }[]
+  /** Regeln zur Zuordnung aus dem Leitfaden – dieselben, die die Erfassung hatte. */
+  regeln?: { nr: number; ursachen?: number[]; text: string }[]
   instrumente: { id: number; name: string; ebene: string | null; wirksamkeit: number; umsetzbarkeit: number; evidenz?: string | null; begruendung: string }[]
-  massnahmen: { kennung: string; ebene: 'bund' | 'land'; beschreibung: string; zitat: string; ursachen_ids: number[] }[]
+  massnahmen: { kennung: string; ebene: 'bund' | 'land'; beschreibung: string; zitat: string; ursachen_ids: number[]; ursachen_offen?: number[] }[]
 }
 
 /** Was der Bewertungs-Agent sieht: Thema, Ursachen, vorhandene Instrumente und Maßnahmen ohne Partei. */
@@ -384,11 +432,14 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
       beschreibung: neutralisiere(m.beschreibung, weitere),
       zitat: neutralisiere(m.zitat, weitere),
       ursachen_ids: m.ursachen_ids,
+      ...(m.ursachen_offen?.length ? { ursachen_offen: m.ursachen_offen } : {}),
     }
   })
+  const regeln = e.leitfaden?.regeln.map((r) => ({ ...r, text: neutralisiere(r.text, weitere) }))
   const liste: Omit<BlindListe, 'pruefsumme'> = {
     thema: { id: thema.id, name: thema.name, ziel: thema.ziel },
     ursachen: k.ursachen.filter((u) => u.thema_id === thema.id).map((u) => ({ id: u.id, beschreibung: u.beschreibung, ebene: u.ebene ?? 'bund' })),
+    ...(regeln?.length ? { regeln } : {}),
     instrumente: k.instrumente
       .filter((i) => i.thema_id === thema.id)
       .map((i) => ({
@@ -426,6 +477,8 @@ export const programmName = (kurzname: string, land: string | null) =>
 /** Feste Namen im Ordner `protokoll/` neben der Erfassung. */
 export const PROTOKOLL = {
   erfassung: (kurzname: string, land: string | null) => `erfassung-${programmName(kurzname, land)}.txt`,
+  /** Antwort auf die n-te Rückfrage – die frühere Fassung bleibt stehen. */
+  rueckfrage: (kurzname: string, land: string | null, n: number) => `erfassung-${programmName(kurzname, land)}-rueckfrage-${n}.txt`,
   auftrag: 'bewertung-auftrag.txt',
   antwort: 'bewertung-antwort.txt',
   rueckfragen: 'rueckfragen.md',
@@ -534,52 +587,134 @@ export function erfassungsHinweise(k: Katalog, e: Erfassung): string[] {
     const t = e.treffer?.programme.find((x) => x.partei_id === p.partei_id && x.land === p.land)
     if (!t) continue
     for (const u of ursachenFuer(k, e, p)) {
-      if (p.massnahmen.some((m) => m.ursachen_ids.includes(u.id))) continue
+      if (p.massnahmen.some((m) => vorgeschlageneUrsachen(m).includes(u.id))) continue
       const richtungen = Object.entries(t.ursachen[String(u.id)] ?? {}).map(([r, b]) => [r, Object.values(b).reduce((a, c) => a + c, 0)] as const)
       const summe = richtungen.reduce((a, [, n]) => a + n, 0)
       if (summe >= TREFFER_OHNE_MASSNAHME)
         h.push(`${name(p)}: ${summe} Treffer zu Ursache ${u.id} (${richtungen.filter(([, n]) => n).map(([r, n]) => `${r} ${n}`).join(', ')}), aber keine Maßnahme – Fundstellen prüfen lassen oder Grund im Protokoll`)
     }
+    // Bündelregel: Viele Maßnahmen ohne Bündel an einer Ursache mit Bündelliste heißt meist, dass Einzelzusagen nicht zusammengefasst wurden.
+    for (const [u, liste] of Object.entries(e.leitfaden?.buendel ?? {})) {
+      if (!liste.length) continue
+      const ohne = p.massnahmen.filter((m) => vorgeschlageneUrsachen(m).includes(Number(u)) && !m.buendel).length
+      if (ohne > BUENDEL_OHNE)
+        h.push(`${name(p)}: ${ohne} Maßnahmen zu Ursache ${u} ohne Bündel – Einzelzusagen je Instrument zusammenfassen (Leitfaden, Bündelregel)?`)
+    }
   }
   return h
+}
+
+/** Ab so vielen Maßnahmen ohne Bündel an einer Ursache mit Bündelliste gibt es einen Hinweis. */
+export const BUENDEL_OHNE = 3
+
+/** Regeln und Bündel des Leitfadens: Ursachen des Themas, eindeutige Nummern, keine Parteinamen (er geht an die Bewertung). */
+export function pruefeLeitfaden(k: Katalog, l: Leitfaden): string[] {
+  const f: string[] = []
+  const ursachen = new Set(k.ursachen.filter((u) => u.thema_id === l.thema_id).map((u) => u.id))
+  if (!k.themen.some((t) => t.id === l.thema_id)) f.push(`Leitfaden: Thema ${l.thema_id} gibt es nicht`)
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(l.stand ?? '')) f.push('Leitfaden: stand muss ein Datum JJJJ-MM-TT sein')
+  if (!Array.isArray(l.regeln)) return [...f, 'Leitfaden: regeln fehlen (Liste, auch leer)']
+  const weitere = k.parteien.flatMap((p) => [p.name, p.kurzname])
+  const nummern = new Set<number>()
+  for (const r of l.regeln) {
+    if (!Number.isInteger(r.nr) || nummern.has(r.nr)) f.push(`Leitfaden: Regel ${r.nr} – Nummer fehlt oder doppelt`)
+    nummern.add(r.nr)
+    if (!r.text?.trim()) f.push(`Leitfaden: Regel ${r.nr} ohne Text`)
+    else if (r.text.length > 500) f.push(`Leitfaden: Regel ${r.nr} ist länger als 500 Zeichen`)
+    else if (enthaeltParteinamen(r.text, weitere)) f.push(`Leitfaden: Regel ${r.nr} nennt eine Partei oder Person – die Regeln gehen an die Bewertung ohne Parteinamen`)
+    for (const u of r.ursachen ?? []) if (!ursachen.has(u)) f.push(`Leitfaden: Regel ${r.nr} nennt Ursache ${u}, die nicht zum Thema gehört`)
+  }
+  for (const [u, liste] of Object.entries(l.buendel ?? {})) {
+    if (!ursachen.has(Number(u))) f.push(`Leitfaden: Bündel für Ursache ${u}, die nicht zum Thema gehört`)
+    if (!Array.isArray(liste)) {
+      f.push(`Leitfaden: Bündel zu Ursache ${u} müssen eine Liste sein`)
+      continue
+    }
+    const namen = new Set<string>()
+    for (const b of liste) {
+      if (typeof b !== 'string' || !b.trim() || b.length > 80) f.push(`Leitfaden: Bündel „${b}“ zu Ursache ${u} – leer oder länger als 80 Zeichen`)
+      else if (namen.has(b)) f.push(`Leitfaden: Bündel „${b}“ zu Ursache ${u} doppelt`)
+      else if (enthaeltParteinamen(b, weitere)) f.push(`Leitfaden: Bündel „${b}“ nennt eine Partei oder Person`)
+      namen.add(b)
+    }
+  }
+  return f
+}
+
+/** Hinweise zu Zitaten, die eine Rückfrage auslösen würden (keine Fehler – der Agent prüft die Stelle). */
+export function zitatHinweise(m: ErfassteMassnahme): string[] {
+  const h: string[] = []
+  // Listenpunkt oder Satzrest ohne Einleitung: Wer was zusagt, steht dann nicht im Zitat.
+  const anfang = m.zitat?.replace(/^\s*(?:\[\s*(?:…|\.\.\.)\s*\]|…|\.\.\.)\s*/, '').trimStart() ?? ''
+  if (/^\p{Ll}/u.test(anfang))
+    h.push('Zitat beginnt klein – Listenpunkt oder Satzrest? Die einleitende Zusage mitzitieren („Wir werden: […] …“)')
+  return h
+}
+
+/**
+ * Was für ein einzelnes Programm geprüft werden kann, ohne die übrigen zu kennen – vom Erfassungs-Agenten
+ * selbst vor der Abgabe (`entwurf:programm-pruefen`) und für jedes Programm in `pruefeErfassung`.
+ */
+export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leitfaden'>, p: ErfasstesProgramm): string[] {
+  const f: string[] = []
+  const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === e.thema_id).map((u) => [u.id, u]))
+  const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
+  if (p.nicht_durchsucht !== undefined) return [`${name}: nicht durchsucht (${p.nicht_durchsucht}) – das Programm bleibt „noch nicht erfasst“ und gehört nicht in die Erfassung`]
+  if (!k.parteien.some((x) => x.id === p.partei_id)) f.push(`${name}: unbekannte Partei`)
+  if (p.land && !k.landesprogramme.some((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell && l.url))
+    f.push(`${name}: kein aktuelles Landesprogramm in parteien.json`)
+  if (!Array.isArray(p.massnahmen)) return [...f, `${name}: massnahmen fehlen (Liste, auch leer)`]
+  if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
+  if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  const buendelGesehen = new Map<string, number>()
+  for (const [j, m] of p.massnahmen.entries()) {
+    const was = `${name}, Maßnahme ${j + 1}`
+    if (!m.beschreibung?.trim()) f.push(`${was}: beschreibung fehlt`)
+    else if (m.beschreibung.length > 200) f.push(`${was}: beschreibung ist länger als 200 Zeichen (${m.beschreibung.length})`)
+    if (!m.zitat?.trim()) f.push(`${was}: zitat fehlt`)
+    else if (m.zitat.length > 800) f.push(`${was}: zitat ist länger als 800 Zeichen`)
+    else if (m.beschreibung) {
+      const zahlen = fehlendeZahlen(m.beschreibung, m.zitat)
+      if (zahlen.length) f.push(`${was}: Zahl ${zahlen.join(', ')} steht in der Beschreibung, aber nicht im Zitat – nichts dazuerfinden oder das Zitat erweitern`)
+    }
+    if (!Number.isInteger(m.seite) || m.seite < 1) f.push(`${was}: seite muss die PDF-Seite sein (ganze Zahl ≥ 1)`)
+    if (!Array.isArray(m.ursachen_ids)) f.push(`${was}: ursachen_ids fehlen (Liste, leer nur mit ursachen_offen)`)
+    if (m.ursachen_offen !== undefined && !Array.isArray(m.ursachen_offen)) f.push(`${was}: ursachen_offen muss eine Liste sein`)
+    const alle = vorgeschlageneUrsachen(m)
+    if (!alle.length) f.push(`${was}: ursachen_ids fehlen`)
+    if (new Set(alle).size < alle.length) f.push(`${was}: Ursache doppelt (in ursachen_ids und ursachen_offen?)`)
+    for (const id of alle) {
+      const u = ursachen.get(id)
+      if (!u) f.push(`${was}: Ursache ${id} gehört nicht zum Thema`)
+      else if (p.land && (u.ebene ?? 'bund') !== 'land') f.push(`${was}: Landesprogramme nur für Ursachen mit ebene „land“ (${id} ist Bund)`)
+    }
+    if (m.buendel !== undefined) {
+      const erlaubt = alle.flatMap((u) => e.leitfaden?.buendel?.[String(u)] ?? [])
+      if (!erlaubt.includes(m.buendel))
+        f.push(`${was}: Bündel „${m.buendel}“ steht im Leitfaden nicht bei ihren Ursachen – im Protokoll unter „Neue Bündel“ melden; der Koordinator ergänzt den Leitfaden für alle Programme`)
+      const vorher = buendelGesehen.get(m.buendel)
+      if (vorher !== undefined) f.push(`${was}: Bündel „${m.buendel}“ schon bei Maßnahme ${vorher} – je Bündel eine Maßnahme (konkreteste Stelle zitieren)`)
+      else buendelGesehen.set(m.buendel, j + 1)
+    }
+  }
+  return f
 }
 
 /** Prüft die Erfassung gegen den Katalog, bevor irgendetwas geschrieben wird. */
 export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
   const f: string[] = []
-  const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === e.thema_id).map((u) => [u.id, u]))
-  if (!ursachen.size) f.push(`Thema ${e.thema_id} hat keine Ursachen`)
+  if (!k.ursachen.some((u) => u.thema_id === e.thema_id)) f.push(`Thema ${e.thema_id} hat keine Ursachen`)
+  if (e.leitfaden && e.leitfaden.thema_id !== e.thema_id) f.push(`Leitfaden gehört zu Thema ${e.leitfaden.thema_id}, die Erfassung zu ${e.thema_id}`)
+  else if (e.leitfaden) f.push(...pruefeLeitfaden(k, e.leitfaden))
   f.push(...pruefeSuchbegriffe(k, e))
   const gesehen = new Set<string>()
   for (const p of e.programme) {
     const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
     if (gesehen.has(name)) f.push(`${name}: doppelt in der Erfassung`)
     gesehen.add(name)
-    if (!k.parteien.some((x) => x.id === p.partei_id)) f.push(`${name}: unbekannte Partei`)
-    if (p.land && !k.landesprogramme.some((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell && l.url))
-      f.push(`${name}: kein aktuelles Landesprogramm in parteien.json`)
     if (k.abdeckung.some((a) => a.thema_id === e.thema_id && a.partei_id === p.partei_id && (a.land ?? null) === p.land && a.aktuell))
       f.push(`${name}: hat zu diesem Thema schon einen Eintrag – bestehende Einträge von Hand ergänzen`)
-    if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
-    if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
-    for (const [j, m] of p.massnahmen.entries()) {
-      const was = `${name}, Maßnahme ${j + 1}`
-      if (!m.beschreibung?.trim()) f.push(`${was}: beschreibung fehlt`)
-      else if (m.beschreibung.length > 200) f.push(`${was}: beschreibung ist länger als 200 Zeichen (${m.beschreibung.length})`)
-      if (!m.zitat?.trim()) f.push(`${was}: zitat fehlt`)
-      else if (m.zitat.length > 800) f.push(`${was}: zitat ist länger als 800 Zeichen`)
-      else if (m.beschreibung) {
-        const zahlen = fehlendeZahlen(m.beschreibung, m.zitat)
-        if (zahlen.length) f.push(`${was}: Zahl ${zahlen.join(', ')} steht in der Beschreibung, aber nicht im Zitat – nichts dazuerfinden oder das Zitat erweitern`)
-      }
-      if (!Number.isInteger(m.seite) || m.seite < 1) f.push(`${was}: seite muss die PDF-Seite sein (ganze Zahl ≥ 1)`)
-      if (!m.ursachen_ids?.length) f.push(`${was}: ursachen_ids fehlen`)
-      for (const id of m.ursachen_ids ?? []) {
-        const u = ursachen.get(id)
-        if (!u) f.push(`${was}: Ursache ${id} gehört nicht zum Thema`)
-        else if (p.land && (u.ebene ?? 'bund') !== 'land') f.push(`${was}: Landesprogramme nur für Ursachen mit ebene „land“ (${id} ist Bund)`)
-      }
-    }
+    f.push(...pruefeProgramm(k, e, p))
   }
   return f
 }
@@ -616,14 +751,16 @@ export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung, fest?: K
     }
     if (zugeordnet.has(z.kennung)) f.push(`${z.kennung}: mehrfach zugeordnet`)
     zugeordnet.add(z.kennung)
-    const erfasst = e.programme[x.programm].massnahmen[x.massnahme].ursachen_ids
-    if (!Array.isArray(z.ursachen)) f.push(`${z.kennung}: „ursachen“ fehlt – der Bewertungs-Agent bestätigt jede Zuordnung zu einer Ursache`)
-    else
-      for (const u of erfasst)
-        if (!z.ursachen.includes(u))
-          f.push(`${z.kennung}: Zuordnung zu Ursache ${u} nicht bestätigt – Erfassungs-Agent die Stelle prüfen lassen, Zuordnung korrigieren und entwurf:blind neu ausführen`)
+    const m = e.programme[x.programm].massnahmen[x.massnahme]
+    if (!Array.isArray(z.ursachen)) {
+      f.push(`${z.kennung}: „ursachen“ fehlt – der Bewertungs-Agent nennt je Maßnahme die Ursachen, an denen sie ansetzt (auch leer)`)
+      continue
+    }
+    // Bestätigt die Bewertung keine vorgeschlagene Ursache, wird die Maßnahme nicht eingetragen und braucht keine Bewertung.
+    if (verworfen(m, z)) continue
     const ebene = e.programme[x.programm].land ? 'land' : 'bund'
-    if ('instrument' in z) {
+    if (!('instrument' in z) && !('einzeln' in z)) f.push(`${z.kennung}: weder instrument noch einzeln, aber Ursachen bestätigt`)
+    else if ('instrument' in z) {
       if (typeof z.instrument === 'number' ? !vorhandene.has(z.instrument) : !neue.has(z.instrument))
         f.push(`${z.kennung}: Instrument ${z.instrument} gibt es nicht`)
       const vorher = typeof z.instrument === 'number' ? instrumentEbene(k, z.instrument) : null
@@ -637,6 +774,38 @@ export function pruefeBewertung(k: Katalog, e: Erfassung, b: Bewertung, fest?: K
   for (const kennung of neue.keys())
     if (!(b.zuordnung ?? []).some((z) => 'instrument' in z && z.instrument === kennung)) f.push(`Instrument ${kennung}: keine Maßnahme verweist darauf`)
   return f
+}
+
+/**
+ * Was die Bewertung an der Zuordnung geändert hat, je Programm: nicht bestätigte Ursachen und
+ * verworfene Maßnahmen. Steht im Pull Request – so ist sichtbar, ob die Entscheidung alle Programme
+ * ähnlich trifft.
+ */
+export function zuordnungsBilanz(k: Katalog, e: Erfassung, b: Bewertung, fest?: Kennung[]): string[] {
+  const zuordnung = new Map((b.zuordnung ?? []).map((z) => [z.kennung, z]))
+  const kennungNach = new Map(kennungen(e, fest).map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
+  return e.programme.map((p, i) => {
+    let vorgeschlagen = 0
+    let offen = 0
+    const weg: string[] = []
+    const dazu: string[] = []
+    let raus = 0
+    for (const [j, m] of p.massnahmen.entries()) {
+      const kennung = kennungNach.get(`${i}/${j}`)!
+      const z = zuordnung.get(kennung)
+      vorgeschlagen += vorgeschlageneUrsachen(m).length
+      offen += m.ursachen_offen?.length ?? 0
+      const bleibt = bestaetigteUrsachen(m, z)
+      if (!bleibt.length) raus++
+      for (const u of vorgeschlageneUrsachen(m)) if (!bleibt.includes(u)) weg.push(`${kennung} ${u}`)
+      for (const u of m.ursachen_offen ?? []) if (bleibt.includes(u)) dazu.push(`${kennung} ${u}`)
+    }
+    const name = `${k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? p.partei_id} (${p.land ?? 'Bund'})`
+    return (
+      `${name}: ${p.massnahmen.length} Maßnahmen, ${vorgeschlagen} Zuordnungen (davon ${offen} offen); ` +
+      `nicht bestätigt ${weg.length}${weg.length ? ` (${weg.join(', ')})` : ''}; offene bestätigt ${dazu.length}; verworfen ${raus}`
+    )
+  })
 }
 
 /**
@@ -665,16 +834,17 @@ export function bewertungsHinweise(b: Bewertung): string[] {
 export function zuordnungsHinweise(k: Katalog, e: Erfassung, b: Bewertung, fest?: Kennung[]): string[] {
   const h: string[] = []
   const alle = new Map(kennungen(e, fest).map((x) => [x.kennung, x]))
+  const zuordnung = new Map((b.zuordnung ?? []).map((z) => [z.kennung, z]))
   const jeInstrument = new Map<string, { kennung: string; ursachen: string }[]>()
   for (const z of b.zuordnung ?? []) {
     const x = alle.get(z.kennung)
     if (!x) continue
-    const erfasst = e.programme[x.programm].massnahmen[x.massnahme].ursachen_ids
-    const mehr = (z.ursachen ?? []).filter((u) => !erfasst.includes(u))
-    if (mehr.length) h.push(`${z.kennung}: Bewertung sieht zusätzlich Ursache ${mehr.join(', ')} – Erfassung prüfen (gleich für alle Programme)`)
+    const m = e.programme[x.programm].massnahmen[x.massnahme]
+    const mehr = (z.ursachen ?? []).filter((u) => !vorgeschlageneUrsachen(m).includes(u))
+    if (mehr.length) h.push(`${z.kennung}: Bewertung sieht zusätzlich Ursache ${mehr.join(', ')} – zählt nicht (nur vorgeschlagene Ursachen); gleiche Stelle in anderen Programmen prüfen`)
     if ('instrument' in z) {
       const liste = jeInstrument.get(String(z.instrument)) ?? []
-      liste.push({ kennung: z.kennung, ursachen: [...erfasst].sort((a, c) => a - c).join('+') })
+      liste.push({ kennung: z.kennung, ursachen: bestaetigteUrsachen(m, z).sort((a, c) => a - c).join('+') })
       jeInstrument.set(String(z.instrument), liste)
     }
   }
@@ -684,7 +854,11 @@ export function zuordnungsHinweise(k: Katalog, e: Erfassung, b: Bewertung, fest?
       h.push(`Instrument ${i}: Maßnahmen mit unterschiedlichen Ursachen (${liste.map((x) => `${x.kennung} ${x.ursachen}`).join(', ')}) – gleicher Lösungsweg, gleiche Zuordnung?`)
   }
   // Ordnet ein Programm deutlich öfter mehreren Ursachen zu als die übrigen, holt es leichter Punkte.
-  const mehrfach = e.programme.map((p) => ({ p, n: p.massnahmen.length, m: p.massnahmen.filter((m) => m.ursachen_ids.length > 1).length }))
+  const kennungNach = new Map([...alle.values()].map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
+  const mehrfach = e.programme.map((p, i) => {
+    const bleibt = p.massnahmen.map((m, j) => bestaetigteUrsachen(m, zuordnung.get(kennungNach.get(`${i}/${j}`)!))).filter((u) => u.length)
+    return { p, n: bleibt.length, m: bleibt.filter((u) => u.length > 1).length }
+  })
   const gesamt = mehrfach.reduce((a, x) => a + x.n, 0)
   const anteil = gesamt ? mehrfach.reduce((a, x) => a + x.m, 0) / gesamt : 0
   for (const x of mehrfach)
@@ -704,15 +878,24 @@ type Json = Record<string, unknown>
  */
 export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, heute: string, fest?: Kennung[]): Json {
   let id = naechsteId(k)
+  const zuordnung = new Map((b.zuordnung ?? []).map((z) => [z.kennung, z]))
+  const kennungNach = new Map(kennungen(e, fest).map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
+  const zuordnungVon = (i: number, j: number) => zuordnung.get(kennungNach.get(`${i}/${j}`)!)!
+  // Instrumente, auf die nur verworfene Maßnahmen verweisen, kommen nicht in den Katalog.
+  const benutzt = new Set(
+    e.programme.flatMap((p, i) => p.massnahmen.flatMap((m, j) => {
+      const z = zuordnungVon(i, j)
+      return !verworfen(m, z) && 'instrument' in z ? [z.instrument] : []
+    })),
+  )
   const neueIds = new Map<string, number>()
   const instrumente = [...((datei.instrumente as Json[] | undefined) ?? [])]
   for (const i of b.neue_instrumente ?? []) {
+    if (!benutzt.has(i.kennung)) continue
     neueIds.set(i.kennung, id)
     const { kennung: _, ...rest } = i
     instrumente.push({ id: id++, ...rest, entwurf_herkunft: 'blind' })
   }
-  const zuordnung = new Map((b.zuordnung ?? []).map((z) => [z.kennung, z]))
-  const kennungNach = new Map(kennungen(e, fest).map((x) => [`${x.programm}/${x.massnahme}`, x.kennung]))
   const abdeckung = [...((datei.abdeckung as Json[] | undefined) ?? [])]
   for (const [i, p] of e.programme.entries()) {
     const partei = k.parteien.find((x) => x.id === p.partei_id)!
@@ -721,15 +904,21 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
     // Durchsucht wurde nach allen freigegebenen Ursachen, die für dieses Programm zählen.
     const durchsucht = k.ursachen.filter((u) => u.thema_id === e.thema_id && (!lp || (u.ebene ?? 'bund') === 'land')).map((u) => u.id)
     const kopf: Json = { partei_id: p.partei_id, ...(lp ? { land: lp.land, landtagswahl: lp.landtagswahl } : {}), durchsucht_fuer: durchsucht }
-    if (!p.massnahmen.length) {
+    const bleiben = p.massnahmen.flatMap((m, j) => (verworfen(m, zuordnungVon(i, j)) ? [] : [j]))
+    if (!bleiben.length) {
       // Treffer aller Suchbegriffe im Programm: Anhaltspunkt für die zweite Suche vor „geprueft“.
       const t = e.treffer?.programme.find((x) => x.partei_id === p.partei_id && x.land === p.land)
       const treffer = t ? Object.values(t.ursachen).flatMap((r) => Object.values(r).flatMap((b) => Object.values(b))).reduce((a, c) => a + c, 0) : undefined
-      abdeckung.push({ ...kopf, keine_massnahme: { begruendung: p.keine_massnahme, stand: heute, ...(treffer !== undefined ? { treffer } : {}), geprueft: false, ki_entwurf: true } })
+      // Alle erfassten Stellen verworfen: Das Programm enthält nach der Bewertung ohne Parteinamen nichts, was an einer Ursache ansetzt.
+      const begruendung = p.massnahmen.length
+        ? `Erfasste Stellen (S. ${[...new Set(p.massnahmen.map((m) => m.seite))].join(', ')}) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.`
+        : p.keine_massnahme
+      abdeckung.push({ ...kopf, keine_massnahme: { begruendung, stand: heute, ...(treffer !== undefined ? { treffer } : {}), geprueft: false, ki_entwurf: true } })
       continue
     }
-    const massnahmen = p.massnahmen.map((m, j) => {
-      const z = zuordnung.get(kennungNach.get(`${i}/${j}`)!)!
+    const massnahmen = bleiben.map((j) => {
+      const m = p.massnahmen[j]
+      const z = zuordnungVon(i, j) as Exclude<Zuordnung, { ursachen: [] }>
       const bewertung: Json =
         'instrument' in z
           ? { instrument: typeof z.instrument === 'number' ? z.instrument : neueIds.get(z.instrument) }
@@ -739,7 +928,7 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
         id: id++,
         ...('instrument' in bewertung ? { instrument: bewertung.instrument } : {}),
         beschreibung: m.beschreibung,
-        ursachen_ids: m.ursachen_ids,
+        ursachen_ids: bestaetigteUrsachen(m, z),
         ...('instrument' in bewertung ? {} : { ...werte, entwurf_herkunft: 'blind' }),
         ...(rollen_modifikator ? { rollen_modifikator } : {}),
         ...(begruendung ? { begruendung } : {}),

@@ -1,10 +1,11 @@
 // Prüft eine Bewertung (Antwort des Agenten blind-bewertung), ohne etwas zu schreiben:
-// jede Kennung genau einmal, jede Zuordnung zu einer Ursache bestätigt, Instrumente bekannt, eine Ebene je Instrument, keine unbenutzten
+// jede Kennung genau einmal, je Maßnahme die bestätigten Ursachen (Unbestätigtes fällt beim Eintragen weg), Instrumente bekannt, eine Ebene je Instrument, keine unbenutzten
 // Instrumente, Wirksamkeit 3 nur mit Beleg – und Hinweise (zu viel „offen“, zu viele Instrumente).
 // Aufruf: npm run entwurf:bewertung-pruefen -- <erfassung.json> <bewertung.json>
 import { readFileSync } from 'node:fs'
-import { bewertungsHinweise, pruefeBewertung, pruefeErfassung, pruefeProtokoll, zuordnungsHinweise, type Bewertung, type Erfassung } from '../entwurf.ts'
+import { bewertungsHinweise, pruefeBewertung, pruefeErfassung, pruefeProtokoll, zuordnungsBilanz, zuordnungsHinweise, type Bewertung } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
+import { leseErfassung } from './erfassung-datei.ts'
 import { leseKennungen } from './kennungen-datei.ts'
 import { leseProtokoll } from './protokoll-lesen.ts'
 
@@ -18,7 +19,7 @@ if (fehler.length) {
   console.error('Datenkatalog fehlerhaft – erst `npm run daten:pruefen` beheben.')
   process.exit(1)
 }
-const erfassung = JSON.parse(readFileSync(erfassungPfad, 'utf8')) as Erfassung
+const erfassung = leseErfassung(erfassungPfad)
 const bewertung = JSON.parse(readFileSync(bewertungPfad, 'utf8')) as Bewertung
 const { fest, probleme: kennungProbleme } = leseKennungen(erfassungPfad, erfassung)
 const fehlerliste = [
@@ -31,4 +32,6 @@ for (const h of [...bewertungsHinweise(bewertung), ...zuordnungsHinweise(katalog
 // Das Protokoll verlangt erst entwurf:eintragen – hier schon sagen, was noch fehlt.
 for (const h of pruefeProtokoll(katalog, erfassung, leseProtokoll(erfassungPfad), bewertung.blind_pruefsumme)) console.error(`Hinweis: ${h}`)
 if (fehlerliste.length) process.exit(1)
+// Was die Bewertung an der Zuordnung entschieden hat – gehört in den Pull Request.
+for (const z of zuordnungsBilanz(katalog, erfassung, bewertung, fest)) console.log(`Zuordnung: ${z}`)
 console.log(`Bewertung in Ordnung: ${bewertung.zuordnung.length} Maßnahmen, ${bewertung.neue_instrumente?.length ?? 0} neue Instrumente.`)

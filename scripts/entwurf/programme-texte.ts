@@ -7,7 +7,7 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { programmName } from '../entwurf.ts'
-import { erfassungsSeiten, programme, seitenOhneText } from '../programme.ts'
+import { erfassungsSeiten, programme, seitenOhneText, textdatei } from '../programme.ts'
 
 const args = process.argv.slice(2)
 const liste = (name: string) => {
@@ -45,8 +45,7 @@ for (const p of auswahl) {
     const { seiten } = await erfassungsSeiten(p.url, p.sha256)
     // Seiten ohne Text (Bilder, Scans) stehen am Anfang der Datei: Dort findet keine Suche etwas.
     const leer = seitenOhneText(seiten)
-    const kopf = leer.length ? `Hinweis: ${leer.length} von ${seiten.length} Seiten fast ohne Text (Bild oder Scan?): ${leer.join(', ')}\n` : ''
-    writeFileSync(datei, kopf + seiten.map((t, n) => `\n===== Seite ${n + 1} =====\n${t}`).join(''), 'utf8')
+    writeFileSync(datei, textdatei(seiten), 'utf8')
     console.log(`${datei}  (${seiten.length} Seiten${leer.length ? `, ${leer.length} fast ohne Text: ${leer.join(', ')}` : ''}) – ${p.name}`)
   } catch (e) {
     fehler++

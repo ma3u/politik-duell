@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { begriffePruefsumme, bewertungsHinweise, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
 import { seitenOhneText } from './programme'
+import { auftragText } from './entwurf/auftrag-text'
+import { erstesJsonObjekt } from './entwurf/json-text'
+import { pruefeDatenordner } from './katalog-laden'
+import { readdirSync, readFileSync } from 'node:fs'
 import { vergleicheStand } from './stand-vergleich'
 
 const PARTEIEN: Datei = {
@@ -292,17 +296,23 @@ describe('Suchbegriffe je Lösungsrichtung', () => {
   })
 })
 
-describe('Zuordnung zu Ursachen blind bestätigt', () => {
-  it('lehnt unbestätigte Paare ab und weist auf abweichende Mehrfachzuordnung hin', () => {
+describe('Zuordnung zu Ursachen blind entschieden', () => {
+  it('verlangt „ursachen“ je Kennung, nimmt Verworfenes ohne Bewertung an und weist auf abweichende Mehrfachzuordnung hin', () => {
     const e = erfassung()
     const b = bewertung(e)
     const k = katalog()
-    b.zuordnung[0] = { ...b.zuordnung[0], ursachen: [] }
-    const { ursachen: _u, ...ohne } = b.zuordnung[1]
+    b.zuordnung[0] = { kennung: b.zuordnung[0].kennung, ursachen: [] }
+    const { ursachen: _u, ...ohne } = b.zuordnung[1] as Exclude<Bewertung['zuordnung'][number], { ursachen: [] }>
     b.zuordnung[1] = ohne
     const f = pruefeBewertung(k, e, b).join('\n')
-    expect(f).toMatch(/Zuordnung zu Ursache 1701 nicht bestätigt/)
     expect(f).toMatch(/„ursachen“ fehlt/)
+    // Verworfen (keine Ursache bestätigt) braucht keine Bewertung – I1 hängt dann an keiner Maßnahme mehr.
+    expect(f).not.toMatch(/nicht bewertet|nicht bestätigt/)
+    expect(f).toMatch(/Instrument I1: keine Maßnahme verweist darauf/)
+    // Ursachen bestätigt, aber weder Instrument noch Einzelbewertung.
+    const c0 = bewertung(e)
+    c0.zuordnung[1] = { kennung: c0.zuordnung[1].kennung, ursachen: [1702] } as unknown as Bewertung['zuordnung'][number]
+    expect(pruefeBewertung(k, e, c0).join()).toMatch(/weder instrument noch einzeln/)
     const c = bewertung(e)
     c.zuordnung[2] = { ...c.zuordnung[2], ursachen: [1701, 1702] }
     expect(zuordnungsHinweise(k, e, c).join()).toMatch(/zusätzlich Ursache 1702/)
@@ -452,5 +462,147 @@ describe('Phasen getrennt', () => {
     const mitName = themaInhalt([...themaInhalt().ursachen.slice(0, 1), { id: 1702, beschreibung: 'Die Politik der Grünen', quelle_url: 'https://destatis.de/b', ebene: 'bund' }])
     expect(vergleicheStand(vorher, katalog(mitName)).join()).toMatch(/Ursache 1702 nennt eine Partei/)
     expect(vergleicheStand(vorher, katalog({ ...themaInhalt(), ziel: 'Wie die SPD es will.' })).join()).toMatch(/Ziel von Thema 17 nennt eine Partei/)
+  })
+})
+
+const LEITFADEN: Leitfaden = {
+  thema_id: 17,
+  stand: '2026-10-02',
+  regeln: [
+    { nr: 1, ursachen: [1702], text: 'Ausbildungsvergütung gehört zu 1702.' },
+    { nr: 2, text: 'Finanzierung ohne Zweck ist keine Maßnahme.' },
+  ],
+  buendel: { '1702': ['Vergütung', 'Ausbildung'] },
+}
+
+describe('Offene Zuordnung', () => {
+  it('erlaubt Grenzfälle in ursachen_offen, zeigt sie der Bewertung und trägt nur Bestätigtes ein', () => {
+    const k = katalog()
+    const e = erfassung()
+    // Maßnahme 1 von Partei Eins: sicher 1701, offen 1702; Maßnahme 2: nur offen.
+    e.programme[0].massnahmen[0].ursachen_offen = [1702]
+    e.programme[0].massnahmen[1].ursachen_ids = []
+    e.programme[0].massnahmen[1].ursachen_offen = [1702]
+    expect(pruefeErfassung(k, e)).toEqual([])
+    const liste = blindListe(k, e)
+    expect(liste.massnahmen.filter((m) => m.ursachen_offen).map((m) => m.ursachen_offen)).toEqual([[1702], [1702]])
+    const b = bewertung(e)
+    const nach = (p: number, m: number) => kennungen(e).find((x) => x.programm === p && x.massnahme === m)!.kennung
+    // Bewertung: bei der ersten nur 1701 (offene 1702 abgelehnt), die zweite verworfen.
+    b.zuordnung = b.zuordnung.map((z) =>
+      z.kennung === nach(0, 0) ? { ...z, ursachen: [1701] } : z.kennung === nach(0, 1) ? { kennung: z.kennung, ursachen: [] as [] } : z,
+    )
+    b.blind_pruefsumme = liste.pruefsumme
+    expect(pruefeBewertung(k, e, b)).toEqual([])
+    const bilanz = zuordnungsBilanz(k, e, b).join('\n')
+    expect(bilanz).toMatch(/Eins \(Bund\): 2 Maßnahmen, 3 Zuordnungen \(davon 2 offen\); nicht bestätigt 2 .*verworfen 1/)
+    const neu = eintragen(k, themaInhalt(), e, b, '2026-10-01')
+    const r = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/17-kita.json', inhalt: neu }], { pfad: 'ids.json', inhalt: { stillgelegt: [] } })
+    expect(r.fehler).toEqual([])
+    expect(r.katalog.massnahmen.filter((m) => m.partei_id === 1).map((m) => m.ursachen_ids)).toEqual([[1701]])
+  })
+
+  it('macht aus einem ganz verworfenen Programm „keine Maßnahme“ und lässt unbenutzte Instrumente weg', () => {
+    const k = katalog()
+    const e = erfassung()
+    const b = bewertung(e)
+    const nach = (p: number, m: number) => kennungen(e).find((x) => x.programm === p && x.massnahme === m)!.kennung
+    b.zuordnung = b.zuordnung.map((z) => (z.kennung === nach(0, 0) || z.kennung === nach(0, 1) ? { kennung: z.kennung, ursachen: [] as [] } : z))
+    const neu = eintragen(k, themaInhalt(), e, b, '2026-10-01')
+    const r = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/17-kita.json', inhalt: neu }], { pfad: 'ids.json', inhalt: { stillgelegt: [] } })
+    expect(r.fehler).toEqual([])
+    expect(r.katalog.instrumente).toEqual([])
+    const eins = r.katalog.abdeckung.find((a) => a.partei_id === 1)!
+    expect(eins).toMatchObject({ art: 'keine', ki_entwurf: true, geprueft: false })
+    expect(eins.begruendung).toMatch(/S\. 12, 13.*keiner der Ursachen/)
+  })
+})
+
+describe('Leitfaden und Bündel', () => {
+  it('prüft Regeln und Bündel und gibt die Regeln ohne Parteinamen an die Bewertung', () => {
+    const k = katalog()
+    expect(pruefeLeitfaden(k, LEITFADEN)).toEqual([])
+    const kaputt: Leitfaden = { ...LEITFADEN, regeln: [...LEITFADEN.regeln, { nr: 2, ursachen: [9999], text: 'Wie die SPD es will.' }], buendel: { '1702': ['A', 'A'], '9999': ['B'] } }
+    const f = pruefeLeitfaden(k, kaputt).join('\n')
+    expect(f).toMatch(/Regel 2 – Nummer fehlt oder doppelt/)
+    expect(f).toMatch(/nennt eine Partei/)
+    expect(f).toMatch(/Ursache 9999, die nicht zum Thema gehört/)
+    expect(f).toMatch(/Bündel „A“ zu Ursache 1702 doppelt/)
+    const e = { ...erfassung(), leitfaden: { ...LEITFADEN, regeln: [{ nr: 1, text: 'Die Ausbildung zählt (wie bei Partei Eins).' }] } }
+    expect(blindListe(k, e).regeln).toEqual([{ nr: 1, text: 'Die Ausbildung zählt (wie bei [Partei]).' }])
+  })
+
+  it('verlangt bekannte Bündel, höchstens eine Maßnahme je Bündel und weist auf ungebündelte Einzelzusagen hin', () => {
+    const k = katalog()
+    const e = { ...erfassung(), leitfaden: LEITFADEN }
+    const p = e.programme[0]
+    p.massnahmen[1].buendel = 'Vergütung'
+    expect(pruefeProgramm(k, e, p)).toEqual([])
+    p.massnahmen.push({ ...p.massnahmen[1], zitat: 'Die Ausbildung wird besser vergütet.', buendel: 'Vergütung' })
+    p.massnahmen.push({ ...p.massnahmen[1], zitat: 'Wir zahlen mehr.', buendel: 'Gehälter' })
+    const f = pruefeProgramm(k, e, p).join('\n')
+    expect(f).toMatch(/Bündel „Vergütung“ schon bei Maßnahme 2/)
+    expect(f).toMatch(/Bündel „Gehälter“ steht im Leitfaden nicht.*„Neue Bündel“/)
+    // Ungebündelt viele Maßnahmen an einer Ursache mit Bündelliste.
+    const viele = { ...erfassung(), leitfaden: LEITFADEN }
+    viele.programme[0].massnahmen = Array.from({ length: BUENDEL_OHNE + 1 }, (_, i) => ({ beschreibung: `Zusage ${i}`, ursachen_ids: [1702], zitat: `Zusage ${i}.`, seite: 13 }))
+    expect(erfassungsHinweise(k, viele).join()).toMatch(/Eins \(Bund\): 4 Maßnahmen zu Ursache 1702 ohne Bündel/)
+  })
+
+  it('meldet nicht durchsuchte Programme, offene und sichere Ursache doppelt und Zitate, die klein beginnen', () => {
+    const k = katalog()
+    const e = erfassung()
+    expect(pruefeProgramm(k, e, { partei_id: 1, land: null, massnahmen: [], nicht_durchsucht: 'HTTP 503' }).join()).toMatch(/noch nicht erfasst/)
+    e.programme[0].massnahmen[0].ursachen_offen = [1701]
+    expect(pruefeProgramm(k, e, e.programme[0]).join()).toMatch(/Ursache doppelt/)
+    expect(zitatHinweise({ beschreibung: 'x', ursachen_ids: [1701], zitat: '[…] mehr Kitaplätze schaffen.', seite: 1 })).toHaveLength(1)
+    expect(zitatHinweise({ beschreibung: 'x', ursachen_ids: [1701], zitat: 'Wir schaffen mehr Kitaplätze.', seite: 1 })).toEqual([])
+  })
+})
+
+describe('Erfassungsauftrag', () => {
+  const seiten = ['Inhalt: Familie 2', 'Wir bauen 1.000 neue Kitas und Kitaplätze aus. Erzieher werden besser bezahlt.', 'Kein Treffer hier.']
+
+  it('enthält zulässige Ursachen, Leitfaden, Trefferzahlen, Pflichtursachen und Fundstellen mit PDF-Seite', () => {
+    const k = katalog()
+    const e = { ...erfassung(), leitfaden: LEITFADEN }
+    const text = auftragText(k, e, { partei_id: 1, kurzname: 'Eins', land: null, url: 'https://eins.de/p.pdf', stand: '2025-01-01' }, seiten, { textPfad: 't.txt', ergebnisPfad: 'protokoll/erfassung-Eins-Bund.txt' })
+    expect(text).toMatch(/\*\*1701\*\* \(Land\)/)
+    expect(text).toMatch(/\*\*R1\*\* \[1702\]/)
+    expect(text).toMatch(/„Vergütung“ · „Ausbildung“/)
+    expect(text).toMatch(/Plätze ausbauen \(2\): kita 2/)
+    expect(text).toMatch(/Quereinstieg \(0\): – · ohne Treffer: quereinst/)
+    expect(text).toMatch(/- S\. 2 \[1701 Plätze ausbauen 2; 1702 Fachkräfte gewinnen 1\]: .*«Kita»/)
+    expect(text).not.toMatch(/S\. 3 \[/)
+    expect(text).not.toMatch(/Pflicht:/)
+    const viel = auftragText(k, e, { partei_id: 1, kurzname: 'Eins', land: null, url: 'u', stand: null }, Array(12).fill('kita'), { textPfad: 't', ergebnisPfad: 'e', maxSeiten: 3 })
+    expect(viel).toMatch(/\*\*Pflicht:\*\* Zu Ursache 1701/)
+    expect(viel).toMatch(/Weitere Seiten mit Treffern \(ohne Auszug\): 4 \[1701 Plätze ausbauen\]/)
+  })
+
+  it('nennt einem Landesprogramm nur Landesursachen und ihre Regeln', () => {
+    const text = auftragText(katalog(), { ...erfassung(), leitfaden: LEITFADEN }, { partei_id: 2, kurzname: 'Zwei', land: 'ST', url: 'u', stand: '2026-03-01' }, seiten, { textPfad: 't', ergebnisPfad: 'e' })
+    expect(text).toMatch(/\*\*1701\*\*/)
+    expect(text).not.toMatch(/\*\*1702\*\*|\*\*R1\*\*|Bündel/)
+    expect(text).toMatch(/\*\*R2\*\*/)
+  })
+})
+
+describe('JSON aus einer Agentenantwort', () => {
+  it('holt das erste vollständige Objekt, auch mit Klammern in Texten', () => {
+    expect(erstesJsonObjekt('Antwort:\n{ "a": "x { y }", "b": [1] }\nProtokoll …')).toEqual({ objekt: { a: 'x { y }', b: [1] }, rest: 'Protokoll …' })
+    expect(() => erstesJsonObjekt('{ "a": 1')).toThrow(/abgeschnitten/)
+  })
+})
+
+describe('Leitfäden im Repository', () => {
+  it('passen zum Datenkatalog', () => {
+    const { katalog: k } = pruefeDatenordner()
+    const ordner = new URL('../daten/leitfaeden/', import.meta.url)
+    for (const d of readdirSync(ordner)) {
+      const l = JSON.parse(readFileSync(new URL(d, ordner), 'utf8')) as Leitfaden
+      expect(d).toBe(`${l.thema_id}.json`)
+      expect(pruefeLeitfaden(k, l)).toEqual([])
+    }
   })
 })

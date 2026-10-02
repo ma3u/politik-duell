@@ -3,9 +3,10 @@
 // IDs, als ungeprüfter KI-Entwurf. Danach: npm run daten:pruefen, zitate:pruefen, punkte.
 // Aufruf: npm run entwurf:eintragen -- <erfassung.json> <bewertung.json> [--stand JJJJ-MM-TT]
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { eintragen, pruefeBewertung, pruefeErfassung, pruefeProtokoll, type Bewertung, type Erfassung } from '../entwurf.ts'
+import { eintragen, pruefeBewertung, pruefeErfassung, pruefeProtokoll, zuordnungsBilanz, type Bewertung } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { formatiere } from '../pruefung-export.ts'
+import { leseErfassung } from './erfassung-datei.ts'
 import { leseKennungen } from './kennungen-datei.ts'
 import { leseProtokoll } from './protokoll-lesen.ts'
 
@@ -22,7 +23,7 @@ if (fehler.length) {
   console.error('Datenkatalog fehlerhaft – erst `npm run daten:pruefen` beheben.')
   process.exit(1)
 }
-const erfassung = JSON.parse(readFileSync(erfassungPfad, 'utf8')) as Erfassung
+const erfassung = leseErfassung(erfassungPfad)
 const bewertung = JSON.parse(readFileSync(bewertungPfad, 'utf8')) as Bewertung
 const { fest, probleme: kennungProbleme } = leseKennungen(erfassungPfad, erfassung)
 for (const p of kennungProbleme) console.error(`Fehler:  kennungen.json passt nicht zur Erfassung: ${p}`)
@@ -53,6 +54,8 @@ if (nachher.fehler.length) {
   console.error(`Eintragen verworfen, Katalog wäre fehlerhaft:\n  ${nachher.fehler.join('\n  ')}`)
   process.exit(1)
 }
-const n = erfassung.programme.reduce((s, p) => s + p.massnahmen.length, 0)
-console.log(`daten/themen/${name}: ${n} Maßnahmen, ${bewertung.neue_instrumente.length} neue Instrumente, ${erfassung.programme.length} Programme eingetragen.`)
+const n = nachher.katalog.massnahmen.filter((m) => m.thema_id === erfassung.thema_id).length - katalog.massnahmen.filter((m) => m.thema_id === erfassung.thema_id).length
+const neueInstrumente = nachher.katalog.instrumente.length - katalog.instrumente.length
+console.log(`daten/themen/${name}: ${n} Maßnahmen, ${neueInstrumente} neue Instrumente, ${erfassung.programme.length} Programme eingetragen.`)
+for (const z of zuordnungsBilanz(katalog, erfassung, bewertung, fest)) console.log(`Zuordnung: ${z}`)
 console.log('Weiter: npm run daten:pruefen && npm run zitate:pruefen -- --thema ' + erfassung.thema_id + ' && npm run punkte -- ' + erfassung.thema_id)
