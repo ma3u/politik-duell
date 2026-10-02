@@ -106,7 +106,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 | `src/logic/analyse.ts` | Offline-Ersatz für die KI (Schlagwörter) |
 | `src/logic/sprache.ts` | Hook für die Spracherkennung (Push-to-talk) |
 | `src/components/` | Bildschirme: Start (mit Wortwolke), Setup, Runde, Auflösung, Ende |
-| `src/data/wortwolke.ts` | Wörter der Wortwolke (angelegte Themen) |
+| `src/data/wortwolke.ts` | Wörter der Wortwolke (erfasste Themen) |
 | `src/admin/` | Admin-Ansicht zur Moderation (`#/admin`, eigenes Bundle) |
 | `src/rechtliches/` | Impressum, Datenschutzerklärung und Betreiberangaben |
 | `vercel.json` | Deployment: Build und Sicherheits-Header |
