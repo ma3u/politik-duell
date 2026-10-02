@@ -23,10 +23,3 @@ export const MASSNAHMEN = spielbareMassnahmen(KATALOG)
 export const ABDECKUNG = spielbareAbdeckung(KATALOG)
 export const LAENDER = KATALOG.laender
 export const LANDESPROGRAMME = spielbareLandesprogramme(KATALOG)
-
-/** Beispielprobleme für die Hintergrund-Wortwolke (später: freigegebene Runden aus Supabase). */
-export const BEISPIEL_PROBLEME = [
-  'Kein Facharzttermin', 'Miete frisst Gehalt', 'Stromrechnung verdoppelt', 'Keine Wohnung in Uni-Nähe',
-  'Hausarzt nimmt niemanden', 'Nebenkosten-Nachzahlung', 'Monate auf Termin warten', 'Mieterhöhung',
-  'Heizkosten', 'WG-Zimmer unbezahlbar', 'Praxis auf dem Land zu', 'Netzentgelte',
-]

@@ -1,10 +1,9 @@
 import cloud from 'd3-cloud'
 import { type RefObject, useEffect, useRef, useState } from 'react'
-import { useWortwolke, type Wort } from '../data/wortwolke'
+import type { Wort } from '../data/wortwolke'
 
-// Hintergrund-Wortwolke des Startbildschirms: freigegebene Probleme, Größe nach
-// Häufigkeit. Layout per d3-cloud; die Wörter schweben langsam (CSS) und gleiten
-// bei neuen Einträgen an ihre neue Position.
+// Hintergrund-Wortwolke des Startbildschirms: die erfassten Themen, Größe nach
+// Zahl der Ursachen. Layout per d3-cloud; die Wörter schweben langsam (CSS).
 
 interface Platziert {
   text: string
@@ -62,7 +61,7 @@ function useLayout(woerter: Wort[], groesse: [number, number] | null): Platziert
     const max = Math.max(...woerter.map((w) => w.anzahl))
     const groesste = Math.min(52, Math.max(28, breite / 12))
     const kleinste = breite < 500 ? 15 : 18
-    // Häufige Probleme größer; bei gleicher Häufigkeit leichte Abwechslung.
+    // Breit erfasste Themen größer; bei gleicher Häufigkeit leichte Abwechslung.
     const schrift = (w: Wort) =>
       kleinste +
       (groesste - kleinste) * Math.sqrt(max > 1 ? (w.anzahl - 1) / (max - 1) : 0) +
@@ -85,9 +84,8 @@ function useLayout(woerter: Wort[], groesse: [number, number] | null): Platziert
   return platziert
 }
 
-export function Wortwolke() {
+export function Wortwolke({ woerter }: { woerter: Wort[] }) {
   const ref = useRef<HTMLDivElement>(null)
-  const woerter = useWortwolke()
   const groesse = useGroesse(ref)
   const platziert = useLayout(woerter, groesse)
   const max = Math.max(1, ...platziert.map((w) => w.anzahl))

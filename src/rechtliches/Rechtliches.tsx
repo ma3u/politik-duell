@@ -98,7 +98,7 @@ function Datenschutz() {
           Was du eingibst, ordnet eine KI (Mistral AI, Paris) ein. Wir speichern davon nur eine anonyme, neutrale
           Kurzfassung und ein Stichwort – nicht deinen Originaltext.
         </li>
-        <li>Ein Stichwort erscheint erst nach Prüfung durch uns in der öffentlichen Wortwolke.</li>
+        <li>Die Wortwolke im Hintergrund zeigt nur die Themen, die das Spiel kennt – keine Eingaben von Spielenden.</li>
       </ul>
 
       <h2>1. Verantwortlich</h2>
@@ -152,8 +152,8 @@ function Datenschutz() {
         haben, landen zusätzlich mit einer kurzen vorläufigen Einschätzung in einer Liste zur redaktionellen Prüfung.
       </p>
       <p>
-        <strong>Wortwolke:</strong> Stichwörter erscheinen erst in der öffentlichen Wortwolke, nachdem wir sie geprüft
-        und freigegeben haben.
+        <strong>Wortwolke:</strong> Die Wortwolke auf der Startseite zeigt die Themen, die das Spiel kennt. Eingaben
+        und Stichwörter von Spielenden erscheinen dort nicht.
       </p>
       <p>
         <strong>Widerruf:</strong> Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen,

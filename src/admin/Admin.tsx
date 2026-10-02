@@ -6,7 +6,7 @@ import { adminDb, type AdminRunde, type ReviewEintrag } from './client'
 import { Pruefung } from './Pruefung'
 import { Testphase } from './Testphase'
 
-// Einfache Admin-Ansicht (#/admin): Probleme für die Wortwolke freigeben oder
+// Einfache Admin-Ansicht (#/admin): Probleme für eine öffentliche Anzeige freigeben oder
 // ablehnen, Review-Warteschlange (Themen ohne Daten) abhaken, Prüfende einladen
 // und ihre Bewertungen auswerten.
 // Zugriff regelt die Datenbank: Nur Konten in der Tabelle `admins` sehen etwas.
@@ -143,7 +143,7 @@ function Moderation() {
       db
         .from('runden')
         .select('id, created_at, problem_text, stichwort, filter_grund, status, freigegeben, abgelehnt, moderiert_am')
-        .neq('status', 'wert') // Werte sind keine Probleme und kommen nicht in die Wortwolke
+        .neq('status', 'wert') // Werte sind keine Probleme und kommen nicht zur Freigabe
         .order('created_at', { ascending: false })
         .limit(300),
       db
@@ -254,8 +254,8 @@ function Moderation() {
         <>
           {reiter === 'offen' && (
             <p className="admin-hinweis">
-              Nur neutrale Stichwörter ohne Namen, Orte oder Beleidigungen freigeben. Das Stichwort erscheint
-              öffentlich in der Wortwolke.
+              Nur neutrale Stichwörter ohne Namen, Orte oder Beleidigungen freigeben. Freigegebene Stichwörter
+              erscheinen derzeit nirgends öffentlich: Die Wortwolke zeigt die erfassten Themen.
             </p>
           )}
           {sichtbar.length === 0 && <p className="admin-leer">Keine Einträge.</p>}
@@ -304,7 +304,7 @@ function RundenEintrag({
       {runde.filter_grund && <p className="admin-warnung">Filter: {filterText(runde.filter_grund)}</p>}
       {offen ? (
         <label className="admin-stichwort">
-          Stichwort für die Wortwolke
+          Stichwort
           <input value={stichwort} maxLength={40} onChange={(e) => setStichwort(e.target.value)} />
         </label>
       ) : (

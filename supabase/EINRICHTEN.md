@@ -78,8 +78,8 @@ So läuft die Moderation:
   Der Originaltext wird dafür nur geprüft, nicht gespeichert.
 - „Wert“-Runden erscheinen nicht, weil sie keine Probleme sind.
 - **Neue Themen:** Probleme ohne passendes Thema (Review-Warteschlange) zum Abhaken.
-- Die Wortwolke auf dem Startbildschirm aktualisiert sich live (Supabase Realtime). Solange noch
-  nichts freigegeben ist, zeigt sie Beispielwörter.
+- Die Wortwolke auf dem Startbildschirm zeigt die erfassten Themen aus den geladenen Daten, nicht die
+  freigegebenen Stichwörter. Freigaben haben daher derzeit keine öffentliche Wirkung.
 
 ### 5. Meilenstein 5: Start für die Öffentlichkeit
 
