@@ -38,7 +38,7 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 
 ## Stand: Meilenstein 4 – Wortwolke und Moderation
 
-- Wortwolke auf dem Startbildschirm mit d3-cloud: die angelegten Themen mit belegten Ursachen, die für mindestens eine Partei erfasst sind (keine Spielereingaben; noch nicht erfasste Themen fehlen), Größe nach Zahl der Ursachen, langsames Schweben; im Spiel in den Rändern neben der Spielspalte. Ursprünglich zeigte sie freigegebene Stichwörter; diese werden weiter gespeichert und moderiert, aber nicht mehr angezeigt
+- Wortwolke auf dem Startbildschirm mit d3-cloud: die angelegten Themen mit belegten Ursachen, die für alle Parteien erfasst sind (keine Spielereingaben; noch nicht erfasste Themen fehlen), Größe nach Zahl der Ursachen, langsames Schweben; im Spiel in den Rändern neben der Spielspalte. Ursprünglich zeigte sie freigegebene Stichwörter; diese werden weiter gespeichert und moderiert, aber nicht mehr angezeigt
 - Die KI liefert pro Problem ein neutrales Stichwort (1–3 Wörter); öffentlich wird es erst nach Freigabe
 - Automatischer Filter (`supabase/functions/_shared/moderation.ts`): Beleidigungen, Hetze/Gewalt, Namen mit Anrede, Kontaktdaten und Links → „Vom Filter gestoppt“
 - Admin-Ansicht unter `#/admin` (Supabase Auth, nur Konten in `admins`): Stichwort anpassen, freigeben, ablehnen, zurückziehen, löschen; Review-Warteschlange für neue Themen abhaken
