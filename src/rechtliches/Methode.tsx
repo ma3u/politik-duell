@@ -81,6 +81,29 @@ export function Methode() {
         Quellen unterschiedlicher Ausrichtung und prüfen, ob die Problemdiagnosen aus der Fachdebatte vorkommen. Eine
         Diagnose, die sich nicht unabhängig belegen lässt, nehmen wir nicht auf – gleich, wer sie vertritt.
       </p>
+      <p>
+        <strong>Welche Quellen zählen?</strong> Amtliche Statistik und begutachtete Studien immer. Forschungsinstitute
+        auch, wenn sie einer Seite nahestehen – dann nennen wir die Ausrichtung. Stiftungen, Thinktanks, Verbände und
+        Ministerien zählen nur mit eigenen Daten, und die Ursache braucht dann eine zweite Quelle. Parteien, Fraktionen
+        und parteinahe Stiftungen zählen nie.
+      </p>
+      <p>
+        <strong>Wie gut muss eine Ursache belegt sein?</strong> Es gibt drei Stufen: A – amtliche Messung; B –
+        repräsentative Befragung oder begutachtete Studie; C – Einschätzung, Prognose oder Verbandsangabe. A oder B
+        reicht allein, C nur zusammen mit einer zweiten Quelle aus A oder B. Das gilt gleich für Diagnosen, die wir
+        aufnehmen, und für solche, die wir verwerfen.
+      </p>
+      <p>
+        <strong>Das Ziel ist der Maßstab.</strong> Wie die Ursachen prüfen wir auch das Ziel eines Themas darauf, dass
+        es keinen Lösungsweg vorgibt. Bevor wir Maßnahmen erfassen, benennen wir die gegenläufigen Lösungswege aus der
+        Debatte und suchen in jedem Programm nach allen gleich gründlich – mit denselben Suchbegriffen für alle Parteien.
+      </p>
+      <p>
+        <strong>Später ergänzte Ursachen</strong> sind die Ausnahme. Sie brauchen eine Fachquelle, werden ohne Blick in
+        die Programme recherchiert und von einer zweiten Person freigegeben; danach werden alle Programme neu
+        durchsucht. Bis dahin gilt die Ursache für alle Parteien als „noch nicht erfasst“. Kommt bei einem Thema mehr
+        als ein Drittel der Ursachen nachträglich hinzu, prüfen wir das ganze Thema neu.
+      </p>
 
       <h2>2. Maßnahmen aus den Wahlprogrammen</h2>
       <p>
@@ -88,6 +111,13 @@ export function Methode() {
         Ursachen ansetzen – mit wörtlichem Zitat, Seitenangabe, Stand des Programms und, wo vorhanden, einer Studie zur
         Wirkung. Jede Bewertung hat eine kurze Begründung, die in der Auflösung angezeigt wird. Ins Spiel kommt ein
         Thema für eine Partei erst, wenn alle Einträge dazu geprüft sind.
+      </p>
+      <p>
+        <strong>Was als Maßnahme zählt:</strong> eine Zusage, etwas zu tun. Ein Ziel oder Leitbild ohne Handlung
+        („gute Kitas für alle“) und ein bloßer Prüfauftrag zählen nicht; dann zeigen wir, dass das Programm das Ziel
+        nennt, aber keine Maßnahme. Wie bestimmt eine Zusage ist, fließt in die Umsetzbarkeit ein. Wie lang ein Programm
+        ist, rechnen wir nicht heraus: Wir durchsuchen jedes gleich gründlich und ordnen gleiche Lösungswege überall
+        denselben Ursachen zu.
       </p>
       <p>
         <strong>Wer bewertet?</strong> Mindestens zwei, besser drei unabhängige Prüfende mit Fachwissen, die wir
@@ -116,7 +146,8 @@ export function Methode() {
       <p>
         Die höchste Stufe setzt voraus, dass die Wirkung belegt ist – durch übereinstimmende Studien oder Erfahrungen
         anderswo. Kommt die Forschung zu unterschiedlichen Ergebnissen, vergeben wir höchstens 2 und nennen in der
-        Begründung beide Seiten.
+        Begründung beide Seiten. Gemessen wird die erwartete Verbesserung für die Betroffenen, nicht, ob eine Zielzahl
+        aus einer Studie genau erreicht wird.
       </p>
       <h3>Umsetzbarkeit: Ist sie rechtlich, finanziell und zeitlich realistisch?</h3>
       <Skala stufen={UMSETZBARKEIT} />
