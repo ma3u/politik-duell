@@ -1,10 +1,13 @@
-import { useId } from 'react'
+import { useId, useMemo } from 'react'
+import type { Daten } from '../data/quelle'
+import { themenWoerter } from '../data/wortwolke'
 import { Kreuzfeld } from './Kreuz'
 import { Logo } from './Logo'
 import { Wortwolke } from './Wortwolke'
 
 export function Start({
   bereit,
+  daten,
   einverstanden,
   onEinverstanden,
   ladeFehler,
@@ -12,6 +15,8 @@ export function Start({
   onStart,
 }: {
   bereit: boolean
+  /** Erst nach dem Laden da – bis dahin bleibt die Wortwolke leer. */
+  daten: Daten | null
   einverstanden: boolean
   onEinverstanden: (ja: boolean) => void
   ladeFehler: string | null
@@ -19,9 +24,10 @@ export function Start({
   onStart: () => void
 }) {
   const id = useId()
+  const woerter = useMemo(() => (daten ? themenWoerter(daten) : []), [daten])
   return (
     <main className="start">
-      <Wortwolke />
+      <Wortwolke woerter={woerter} />
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
@@ -68,8 +74,8 @@ export function Start({
         )}
         <p className="datenschutz">
           <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
-          ordnet eine KI (Mistral, EU) ein. Gespeichert wird nur eine anonyme, neutrale Kurzfassung des Problems; ein
-          Stichwort daraus kann nach Prüfung in der Wortwolke erscheinen.{' '}
+          ordnet eine KI (Mistral, EU) ein. Gespeichert wird nur eine anonyme, neutrale Kurzfassung des Problems. Die
+          Wortwolke im Hintergrund zeigt die Themen, die das Spiel kennt – keine Eingaben.{' '}
           <a href="#/datenschutz">Mehr erfahren</a>
         </p>
       </div>

@@ -14,7 +14,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 
 ## Spielablauf
 
-1. Startbildschirm mit Titel, kurzer Erklärung, Datenschutzhinweis. Im Hintergrund: langsam bewegte Wortwolke der zuletzt genannten (freigegebenen) Probleme.
+1. Startbildschirm mit Titel, kurzer Erklärung, Datenschutzhinweis. Im Hintergrund: langsam bewegte Wortwolke der Themen, die das Spiel kennt (angelegt, mit belegten Ursachen; keine Eingaben von Spielenden).
 2. Spieler A und B wählen je eine Partei (nicht dieselbe) und optional eine Rolle (Mieter, Eigentümer, Angestellte, Selbstständig, Rentner, Arbeitslos, Studierend, Vermögend).
 3. Pro Runde (insgesamt 5, abwechselnd): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
 4. KI klassifiziert: `problem` | `forderung` | `wert`.
@@ -43,7 +43,7 @@ Ist ein Thema nicht in der DB: KI gibt eine vorläufige Einschätzung, deutlich 
 - **Backend:** Supabase, Region Frankfurt (Postgres, Edge Functions, Realtime).
 - **KI:** API-Aufruf ausschließlich aus einer Edge Function (API-Key nie im Frontend). Günstiges Modell (z. B. Claude Haiku oder Mistral). Antworten als striktes JSON. Rate-Limit pro Sitzung.
 - **Sprache:** Push-to-talk via Web Speech API (Chrome/Safari); Fallback Texteingabe. Später optional Transkriptionsdienst.
-- **Wortwolke:** d3-cloud, sanfte Bewegung, Updates über Supabase Realtime.
+- **Wortwolke:** d3-cloud, sanfte Bewegung. Die Wörter sind die angelegten Themen mit belegten Ursachen, Größe nach Zahl der Ursachen (`src/data/wortwolke.ts`). „Erfasst“ bleibt der Wertungsregel (Tabelle `abdeckung`) vorbehalten; die Wolke zeigt auch Themen, die noch für keine Partei erfasst sind.
 
 ## Datenmodell (Entwurf)
 
@@ -78,7 +78,7 @@ runden (
   id, created_at, thema_id null, problem_text,
   partei_a, partei_b, punkte_a, punkte_b,
   status text,            -- gewertet | ungeprueft | wert
-  freigegeben boolean default false   -- für Wortwolke
+  freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
 )
 ```
 
@@ -103,7 +103,7 @@ Systemprompt-Regeln: neutral, respektvoll, keine Belehrung, keine eigenen Bewert
 
 ## Moderation
 
-Vor Anzeige in der Wortwolke: automatischer Filter (Beleidigungen, Namen von Privatpersonen, Hetze) + Admin-Freigabe in einfacher Admin-Ansicht (Supabase Auth, nur Admins).
+Vor jeder öffentlichen Anzeige von Spielereingaben (derzeit zeigt die Wortwolke nur Themen): automatischer Filter (Beleidigungen, Namen von Privatpersonen, Hetze) + Admin-Freigabe in einfacher Admin-Ansicht (Supabase Auth, nur Admins).
 
 ## Branding
 

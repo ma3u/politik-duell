@@ -111,6 +111,7 @@ export default function App() {
         {phase === 'start' && (
           <Start
             bereit={daten !== null}
+            daten={daten}
             einverstanden={einverstanden}
             onEinverstanden={setEinverstanden}
             ladeFehler={ladeFehler}

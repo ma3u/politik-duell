@@ -2158,6 +2158,47 @@ textarea {
   user-select: none;
   -webkit-user-select: none;
 }
+.graph-rahmen {
+  position: relative;
+}
+.graph-zoom {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.graph-zoom button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+  background: var(--flaeche);
+  color: var(--tinte);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.15);
+  cursor: pointer;
+}
+.graph-zoom button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.graph-zoom button:focus-visible {
+  outline: 2px solid var(--fokus);
+  outline-offset: 2px;
+}
+.graph-zoom svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .graph-kanten line {
   stroke: var(--linie);
   stroke-width: 1.2;
