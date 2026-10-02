@@ -1,0 +1,156 @@
+{
+  "thema_id": 9,
+  "stand": "2026-10-02",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 9: Tabelle, Erläuterungen, „Verworfen“ und „Abgrenzung“), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        901
+      ],
+      "text": "Zu 901 gehören Maßnahmen an bestimmten Orten im öffentlichen Raum (Bahnhöfe, Nahverkehr, Parks, Innenstädte, Plätze): sichtbare Polizei- oder Ordnungsdienstpräsenz, Kontrollen, Videoüberwachung, Waffen- und Messerverbotszonen, Auflösen offener Drogenszenen, Beleuchtung, Gestaltung und Belebung, Sozialarbeit und Drogenhilfe vor Ort. Die Maßnahme braucht im Zitat einen Bezug zu Orten, zum öffentlichen Raum oder zur Präsenz."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        901,
+        902
+      ],
+      "text": "Mehr Polizeipersonal oder bessere Ausstattung ohne Bezug zu Orten oder Präsenz im Zitat gehört zu 902. Nennt das Zitat Präsenz, Streifen oder öffentlichen Raum, gehört sie zu 901; 902 dann nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        902
+      ],
+      "text": "Zu 902 gehören Personal und Ausstattung von Polizei, Staatsanwaltschaften und Gerichten, Ermittlungsbefugnisse und Datenzugriff ohne Bezug zu einem bestimmten Deliktfeld, schnellere oder vereinfachte Verfahren, Entkriminalisierung oder Entlastung von Bagatellverfahren und Digitalisierung von Polizei und Justiz – Ausbau wie Rücknahme gleich."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        902
+      ],
+      "text": "Strafverschärfungen oder -milderungen für ein bestimmtes Deliktfeld gehören zur Ursache dieses Feldes (etwa Partnerschaftsgewalt zu 904, Vergewaltigung zu 908, politisch motivierte Taten zu 907). Allgemeine Änderungen von Strafrahmen ohne Deliktfeld, organisierte Kriminalität, Clans, Geldwäsche und Vermögensabschöpfung: nur als ursachen_offen [902]."
+    },
+    {
+      "nr": 5,
+      "ursachen": [
+        903
+      ],
+      "text": "Zu 903 gehören Jugendstrafrecht, Strafmündigkeit, Häuser des Jugendrechts, Gewaltprävention an Schulen, Jugendarbeit und Schulsozialarbeit, wenn das Zitat Gewalt, Kriminalität oder Prävention nennt, und Messerverbote mit Bezug zu jungen Menschen oder Schulen. Schulsozialarbeit oder Jugendarbeit ohne diesen Bezug gehört nicht dazu."
+    },
+    {
+      "nr": 6,
+      "ursachen": [
+        901,
+        903,
+        907
+      ],
+      "text": "Messer- und Waffenverbote im öffentlichen Raum gehören zu 901, mit Bezug zu jungen Menschen zu 903, Entwaffnung von Extremisten zu 907. Allgemeines Waffenrecht für legale Waffenbesitzer (Sportschützen, Jäger) ohne einen dieser Bezüge: nur als ursachen_offen [901]."
+    },
+    {
+      "nr": 7,
+      "ursachen": [
+        904
+      ],
+      "text": "Zu 904 gehören Frauenhäuser und Schutzplätze, Beratung, Gewaltschutzgesetz, elektronische Fußfessel, Kontakt- und Näherungsverbote, Hochrisiko- und Fallmanagement, Täterarbeit, Strafen für Partnerschaftsgewalt und Femizide und die Umsetzung der Istanbul-Konvention mit konkretem Instrument. Gewalt gegen Frauen allgemein gehört zu 904; nennt das Zitat ausdrücklich sexualisierte Gewalt, zusätzlich zu 908."
+    },
+    {
+      "nr": 8,
+      "ursachen": [
+        905
+      ],
+      "text": "Zu 905 gehören Maßnahmen, die bei Straftaten von Nichtdeutschen ansetzen: Ausweisung und Abschiebung von Straftätern und – in beiden Richtungen gleich – Zuzugsbegrenzung, Arbeitsmarktzugang, Sprache, Bleibeperspektive, Aufnahme und Verteilung, wenn Zitat oder Abschnitt Straftaten oder Sicherheit nennen. Ohne diesen Bezug gehören sie zu Thema 6 und werden nicht erfasst. Grenzkontrollen mit Kriminalitätsbezug nur als ursachen_offen [905]."
+    },
+    {
+      "nr": 9,
+      "ursachen": [
+        905,
+        907
+      ],
+      "text": "Abschiebung von Gefährdern oder extremistischen Straftätern gehört zu 907, die von Straftätern allgemein zu 905. Nennt das Zitat beide, gehört die Maßnahme zu 905 und 907."
+    },
+    {
+      "nr": 10,
+      "ursachen": [
+        906
+      ],
+      "text": "Zu 906 gehören Speicherung von IP-Adressen, Quick Freeze, Pflichten und Haftung von Banken, Zahlungsdiensten und Plattformen, internationale Zusammenarbeit gegen Cybercrime, Ermittlungseinheiten für Internetkriminalität, Schutz vor Telefon- und Onlinebetrug und Aufklärung gegen Betrug. Nennt das Zitat zusätzlich Terror oder Extremismus: 907 als ursachen_offen. IT-Sicherheit von Staat und kritischer Infrastruktur ohne Bezug zu Privatpersonen gehört nicht dazu."
+    },
+    {
+      "nr": 11,
+      "ursachen": [
+        907
+      ],
+      "text": "Zu 907 gehören Maßnahmen gegen politisch oder religiös motivierte Kriminalität jeder Richtung: Verfassungsschutz und Nachrichtendienste (Ausbau, Begrenzung, Kontrolle, Abschaffung), Gefährder, Vereinsverbote, Prävention, Ausstieg und Demokratieförderung mit Extremismusbezug (auch deren Kürzung oder Streichung), Hasskriminalität, antisemitische Straftaten, Schutz gefährdeter Einrichtungen. Politische Bildung ohne Bezug zu Extremismus oder Straftaten gehört nicht dazu."
+    },
+    {
+      "nr": 12,
+      "ursachen": [
+        908
+      ],
+      "text": "Zu 908 gehören Sexualstrafrecht („Nur Ja heißt Ja“ oder Strafverschärfungen), vertrauliche Spurensicherung und Gewaltschutzambulanzen, Beratung nach sexualisierter Gewalt, K.-o.-Tropfen und sexuelle Belästigung im öffentlichen Raum. Gewalt in Partnerschaften gehört zu 904. Sexueller Missbrauch von Kindern und digitale Gewalt (Deepfakes, Cyberstalking) sind keine Ursache dieses Themas: nicht erfassen, im Protokoll unter „Nicht erfasst“ nennen."
+    },
+    {
+      "nr": 13,
+      "ursachen": [
+        909
+      ],
+      "text": "Zu 909 gehören Nennung der Herkunft oder Staatsangehörigkeit von Tatverdächtigen durch Polizei und Behörden, Lagebilder, Periodische Sicherheitsberichte, wissenschaftliche Einordnung oder Reform der Kriminalstatistik und Dunkelfeldbefragungen. Allgemeine Medienpolitik und Rundfunkreformen gehören nicht dazu."
+    },
+    {
+      "nr": 14,
+      "ursachen": [
+        911
+      ],
+      "text": "Zu 911 gehören Versorgung schwer psychisch Kranker (Krisendienste, aufsuchende Behandlung, sozialpsychiatrische Dienste), Informationsaustausch zwischen Kliniken und Sicherheitsbehörden, Gefährdermanagement bei psychisch auffälligen Personen, Unterbringung und Maßregelvollzug sowie Suchthilfe mit Bezug zu Gewalt oder schweren Erkrankungen. Allgemeine Psychotherapieplätze und Drogenpolitik ohne diesen Bezug: nur als ursachen_offen [911]. Drogenhilfe an Orten: 901."
+    },
+    {
+      "nr": 15,
+      "text": "Nicht erfassen (im Protokoll unter „Nicht erfasst“ nennen): Verkehrssicherheit (Thema 12), Asylverfahren, Grenzschutz und Rückführung ohne Straftatenbezug (Thema 6), Personal im öffentlichen Dienst allgemein (Thema 14), Ladendiebstahl und Wirtschaftskriminalität gegen Unternehmen, Einbruchschutz an Gebäuden, Schutz von Einsatzkräften, Zivil- und Katastrophenschutz, Bundeswehr und äußere Sicherheit."
+    },
+    {
+      "nr": 16,
+      "text": "Ein Bekenntnis („Sicherheit hat Vorrang“, „Wir stärken den Rechtsstaat“) ohne Instrument ist keine Maßnahme. Finanzierungszusagen ohne Zweck aus einer Ursache sind keine Maßnahme; nennt das Zitat den Zweck, gehört die Maßnahme zur Ursache dieses Zwecks."
+    }
+  ],
+  "buendel": {
+    "901": [
+      "Polizei- und Ordnungsdienstpräsenz und Kontrollen",
+      "Videoüberwachung",
+      "Waffen- und Messerverbotszonen",
+      "Offene Drogenszenen",
+      "Gestaltung, Beleuchtung und Belebung",
+      "Sozialarbeit und Drogenhilfe vor Ort",
+      "Sicherheit in Bahnhöfen und Nahverkehr"
+    ],
+    "902": [
+      "Personal und Ausstattung der Polizei",
+      "Personal und Ausstattung der Justiz",
+      "Ermittlungsbefugnisse und Datenzugriff",
+      "Beschleunigte und vereinfachte Verfahren",
+      "Entkriminalisierung und Entlastung von Bagatellverfahren",
+      "Digitalisierung von Polizei und Justiz",
+      "Strafrahmen und Sanktionen allgemein",
+      "Zusammenarbeit der Sicherheitsbehörden"
+    ],
+    "905": [
+      "Zuzug begrenzen und steuern",
+      "Ausweisung und Abschiebung von Straftätern",
+      "Arbeitsmarktzugang und Beschäftigung",
+      "Sprache und Integrationsangebote",
+      "Bleibeperspektive und Aufenthaltsstatus",
+      "Aufnahme, Unterbringung und Verteilung"
+    ],
+    "907": [
+      "Verfassungsschutz und Nachrichtendienste",
+      "Gefährder und Abschiebung extremistischer Straftäter",
+      "Vereins- und Organisationsverbote, Finanzierung extremistischer Strukturen",
+      "Entwaffnung von Extremisten",
+      "Prävention, Ausstieg und Demokratieförderung",
+      "Strafrecht und Strafverfolgung bei politisch motivierten Taten",
+      "Schutz gefährdeter Gruppen und Einrichtungen",
+      "Radikalisierung und Hass im Internet"
+    ]
+  }
+}
