@@ -78,7 +78,7 @@ So läuft die Moderation:
   Der Originaltext wird dafür nur geprüft, nicht gespeichert.
 - „Wert“-Runden erscheinen nicht, weil sie keine Probleme sind.
 - **Neue Themen:** Probleme ohne passendes Thema (Review-Warteschlange) zum Abhaken.
-- Die Wortwolke auf dem Startbildschirm zeigt die angelegten Themen mit belegten Ursachen, nicht die
+- Die Wortwolke auf dem Startbildschirm zeigt die erfassten Themen (mindestens eine Partei, Bundesprogramm), nicht die
   freigegebenen Stichwörter. Freigaben haben daher derzeit keine öffentliche Wirkung.
 
 ### 5. Meilenstein 5: Start für die Öffentlichkeit

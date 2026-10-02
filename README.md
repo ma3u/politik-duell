@@ -6,7 +6,7 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 
 ## Stand: Meilenstein 1 – klickbarer Prototyp
 
-- Startbildschirm mit Erklärung, Datenschutzhinweis und schwebender Wortwolke der Themen, die das Spiel kennt
+- Startbildschirm mit Erklärung, Datenschutzhinweis und schwebender Wortwolke der erfassten Themen
 - Parteiwahl für Spieler:in A und B (nicht dieselbe) plus optionale Rolle
 - 5 Runden abwechselnd, Texteingabe
 - Mock-Analyse im Format der späteren Edge Function `analyse` (`problem` | `forderung` | `wert`)
@@ -38,7 +38,7 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 
 ## Stand: Meilenstein 4 – Wortwolke und Moderation
 
-- Wortwolke auf dem Startbildschirm mit d3-cloud: die angelegten Themen mit belegten Ursachen (keine Spielereingaben; auch Themen, die noch für keine Partei erfasst sind), Größe nach Zahl der Ursachen, langsames Schweben; im Spiel in den Rändern neben der Spielspalte. Ursprünglich zeigte sie freigegebene Stichwörter; diese werden weiter gespeichert und moderiert, aber nicht mehr angezeigt
+- Wortwolke auf dem Startbildschirm mit d3-cloud: die angelegten Themen mit belegten Ursachen, die für mindestens eine Partei erfasst sind (keine Spielereingaben; noch nicht erfasste Themen fehlen), Größe nach Zahl der Ursachen, langsames Schweben; im Spiel in den Rändern neben der Spielspalte. Ursprünglich zeigte sie freigegebene Stichwörter; diese werden weiter gespeichert und moderiert, aber nicht mehr angezeigt
 - Die KI liefert pro Problem ein neutrales Stichwort (1–3 Wörter); öffentlich wird es erst nach Freigabe
 - Automatischer Filter (`supabase/functions/_shared/moderation.ts`): Beleidigungen, Hetze/Gewalt, Namen mit Anrede, Kontaktdaten und Links → „Vom Filter gestoppt“
 - Admin-Ansicht unter `#/admin` (Supabase Auth, nur Konten in `admins`): Stichwort anpassen, freigeben, ablehnen, zurückziehen, löschen; Review-Warteschlange für neue Themen abhaken

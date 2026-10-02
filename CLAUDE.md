@@ -43,7 +43,7 @@ Ist ein Thema nicht in der DB: KI gibt eine vorläufige Einschätzung, deutlich 
 - **Backend:** Supabase, Region Frankfurt (Postgres, Edge Functions, Realtime).
 - **KI:** API-Aufruf ausschließlich aus einer Edge Function (API-Key nie im Frontend). Günstiges Modell (z. B. Claude Haiku oder Mistral). Antworten als striktes JSON. Rate-Limit pro Sitzung.
 - **Sprache:** Push-to-talk via Web Speech API (Chrome/Safari); Fallback Texteingabe. Später optional Transkriptionsdienst.
-- **Wortwolke:** d3-cloud, sanfte Bewegung. Die Wörter sind die angelegten Themen mit belegten Ursachen, Größe nach Zahl der Ursachen (`src/data/wortwolke.ts`). Auf dem Startbildschirm über die ganze Fläche, im Spiel nur links und rechts neben der Spielspalte (bei schmalen Fenstern gar nicht). „Erfasst“ bleibt der Wertungsregel (Tabelle `abdeckung`) vorbehalten; die Wolke zeigt auch Themen, die noch für keine Partei erfasst sind.
+- **Wortwolke:** d3-cloud, sanfte Bewegung. Die Wörter sind die angelegten Themen mit belegten Ursachen, die für mindestens eine Partei erfasst sind (Bundesprogramm, Tabelle `abdeckung`), Größe nach Zahl der Ursachen (`src/data/wortwolke.ts`). Auf dem Startbildschirm über die ganze Fläche, im Spiel nur links und rechts neben der Spielspalte (bei schmalen Fenstern gar nicht). Noch nicht erfasste Themen zeigt die Wolke nicht.
 
 ## Datenmodell (Entwurf)
 
