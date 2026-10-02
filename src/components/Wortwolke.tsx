@@ -1,9 +1,10 @@
 import cloud from 'd3-cloud'
-import { type RefObject, useEffect, useRef, useState } from 'react'
+import { type RefObject, useEffect, useMemo, useRef, useState } from 'react'
 import type { Wort } from '../data/wortwolke'
 
-// Hintergrund-Wortwolke des Startbildschirms: die Themen, die das Spiel kennt, Größe nach
-// Zahl der Ursachen. Layout per d3-cloud; die Wörter schweben langsam (CSS).
+// Hintergrund-Wortwolke: die Themen, die das Spiel kennt, Größe nach Zahl der
+// Ursachen. Auf der Startseite über die ganze Fläche, im Spiel nur in den Rändern
+// neben der Spielspalte. Layout per d3-cloud; die Wörter schweben langsam (CSS).
 
 interface Platziert {
   text: string
@@ -52,20 +53,31 @@ function useGroesse(ref: RefObject<HTMLElement | null>) {
   return groesse
 }
 
-function useLayout(woerter: Wort[], groesse: [number, number] | null): Platziert[] {
-  const [platziert, setPlatziert] = useState<Platziert[]>([])
+/** Breite der Spielspalte (`.app`) und Abstand der Wörter zu ihr. */
+const SPALTE = 720
+const ABSTAND = 24
+/** Schmalere Ränder bleiben leer – dort passt kaum ein Thema hinein. */
+const MIN_RAND = 180
+const KEINE: Wort[] = []
+/** Abstand zwischen Wörtern in den Rändern: Dort stehen sie übereinander und dürfen sich beim Schweben nicht berühren. */
+const RAND_ABSTAND = 14
+
+/**
+ * Ordnet Wörter in einer Fläche an. Die Schriftgröße richtet sich nach der Breite
+ * des Fensters, damit die Wörter in der ganzen Wolke und in den Rändern gleich groß sind.
+ */
+function useLayout(woerter: Wort[], flaeche: [number, number] | null, fenster: number, abstand: number): Platziert[] {
+  const [stand, setStand] = useState<{ fuer: Wort[]; platziert: Platziert[] }>({ fuer: KEINE, platziert: [] })
 
   useEffect(() => {
-    if (!groesse || groesse[0] < 50 || woerter.length === 0) return
-    const [breite, hoehe] = groesse
+    if (!flaeche || flaeche[0] < 50 || woerter.length === 0) return
+    const [breite, hoehe] = flaeche
     const max = Math.max(...woerter.map((w) => w.anzahl))
-    const groesste = Math.min(52, Math.max(28, breite / 12))
-    const kleinste = breite < 500 ? 15 : 18
-    // Themen mit mehr Ursachen größer; bei gleicher Häufigkeit leichte Abwechslung.
+    const groesste = Math.min(44, Math.max(24, fenster / 14))
+    const kleinste = fenster < 500 ? 13 : 16
+    // Themen mit mehr Ursachen größer; bei gleicher Zahl leichte Abwechslung.
     const schrift = (w: Wort) =>
-      kleinste +
-      (groesste - kleinste) * Math.sqrt(max > 1 ? (w.anzahl - 1) / (max - 1) : 0) +
-      (hash(w.text) % 4) * 2
+      kleinste + (groesste - kleinste) * Math.sqrt(max > 1 ? (w.anzahl - 1) / (max - 1) : 0) + (hash(w.text) % 3) * 2
     const layout = cloud<Platziert & cloud.Word>()
       .size([breite, hoehe])
       .words(woerter.map((w) => ({ ...w, size: 0, x: 0, y: 0 })))
@@ -74,26 +86,62 @@ function useLayout(woerter: Wort[], groesse: [number, number] | null): Platziert
       .fontWeight(800)
       .fontSize(schrift)
       .rotate(0)
-      .padding(4)
+      .padding(abstand)
       .random(zufall(woerter.length * 7919 + breite))
-      .on('end', (w) => setPlatziert(w.map(({ text, anzahl, size, x, y }) => ({ text, anzahl, size, x, y }))))
+      .on('end', (w) =>
+        setStand({ fuer: woerter, platziert: w.map(({ text, anzahl, size, x, y }) => ({ text, anzahl, size, x, y })) }),
+      )
     layout.start()
     return () => void layout.stop()
-  }, [woerter, groesse])
+  }, [woerter, flaeche, fenster, abstand])
 
-  return platziert
+  // Ein altes Layout für andere Wörter (etwa nach dem Wechsel zwischen ganzer Fläche und Rändern) nicht zeigen.
+  return stand.fuer === woerter ? stand.platziert : []
 }
 
-export function Wortwolke({ woerter }: { woerter: Wort[] }) {
+/**
+ * Wortwolke im Hintergrund. `nurRaender`: im Spiel nur links und rechts neben der
+ * Spielspalte, damit kein Wort hinter Text liegt; bei schmalem Fenster gar nicht.
+ */
+export function Wortwolke({ woerter, nurRaender = false }: { woerter: Wort[]; nurRaender?: boolean }) {
   const ref = useRef<HTMLDivElement>(null)
   const groesse = useGroesse(ref)
-  const platziert = useLayout(woerter, groesse)
+  const fenster = groesse?.[0] ?? 0
+  const rand = (fenster - SPALTE) / 2 - ABSTAND
+  const raender = nurRaender && rand >= MIN_RAND
+  const randFlaeche = useMemo<[number, number] | null>(
+    () => (groesse && raender ? [Math.round(rand), groesse[1]] : null),
+    [groesse, raender, rand],
+  )
+
+  // Ganze Fläche: alle Wörter. Ränder: abwechselnd links und rechts.
+  const [links, rechts] = useMemo(
+    () =>
+      !nurRaender
+        ? [woerter, KEINE]
+        : raender
+          ? [woerter.filter((_, i) => i % 2 === 0), woerter.filter((_, i) => i % 2 === 1)]
+          : [KEINE, KEINE],
+    [woerter, nurRaender, raender],
+  )
+  const versatz = SPALTE / 2 + ABSTAND + rand / 2
+  const platziert = [
+    ...useLayout(links, nurRaender ? randFlaeche : groesse, fenster, nurRaender ? RAND_ABSTAND : 4).map((w) => ({
+      ...w,
+      x: w.x - (nurRaender ? versatz : 0),
+    })),
+    ...useLayout(rechts, randFlaeche, fenster, RAND_ABSTAND).map((w) => ({ ...w, x: w.x + versatz })),
+  ]
   const max = Math.max(1, ...platziert.map((w) => w.anzahl))
 
   return (
     <div className="wortwolke" ref={ref} aria-hidden="true">
       {groesse && (
-        <svg width={groesse[0]} height={groesse[1]} viewBox={`${-groesse[0] / 2} ${-groesse[1] / 2} ${groesse[0]} ${groesse[1]}`}>
+        <svg
+          width={groesse[0]}
+          height={groesse[1]}
+          viewBox={`${-groesse[0] / 2} ${-groesse[1] / 2} ${groesse[0]} ${groesse[1]}`}
+        >
           {platziert.map((w, i) => (
             <g key={w.text} className="wolke-platz" style={{ transform: `translate(${w.x}px, ${w.y}px)` }}>
               <text
