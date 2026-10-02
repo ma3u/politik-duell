@@ -227,6 +227,8 @@ Ohne Maßnahme zu einer Ursache: 903 SPD, Grüne, FDP, Linke; 904 AfD; 905 FDP; 
 
 Nicht erfasst wurden (Gründe in den Protokollen): Prüfaufträge („prüfen“), Bekenntnisse ohne Instrument (etwa „vollständige Umsetzung der Istanbul-Konvention“ ohne Instrument), Asyl-, Grenz- und Rückführungspolitik ohne Straftatenbezug (Thema 6), Schutz von Einsatzkräften, IT-Sicherheit des Staates und Cyberabwehr, Zivil- und Katastrophenschutz, sexueller Missbrauch von Kindern und digitale Gewalt (Regel 12), Menschenhandel und Prostitution, Wohnungseinbruch als eigenes Feld (keine Ursache), Jugendarbeit und Schulsozialarbeit ohne Gewaltbezug.
 
+**Entscheidungen der Betreiberin zur Erfassung (2. 10. 2026):** Leitfaden `daten/leitfaeden/9.json` mit dem Bündel „Vermögensabschöpfung und Einziehung“ bestätigt. Wohnungseinbruch wird keine eigene Ursache; Einbruchschutz bleibt nach Regel 15 draußen. Maßnahmen, die ein Mittel nur ablehnen (etwa Vorratsdatenspeicherung oder Videoüberwachung), behalten Wirksamkeit 0: Die Ablehnung trägt nichts zum Ziel bei, was ein Programm stattdessen vorschlägt, zählt als eigene Maßnahme (allgemeine Regel im Bewertungsmaßstab, `daten/README.md`).
+
 ### Erster Durchgang (29. 9.–1. 10. 2026)
 
 Stand: 29. 9. 2026, ergänzt 30. 9. 2026 (905 neu gefasst, 909) · KI-Entwurf, noch nicht von der Betreiberin freigegeben

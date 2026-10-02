@@ -149,6 +149,11 @@ export function Methode() {
         Begründung beide Seiten. Gemessen wird die erwartete Verbesserung für die Betroffenen, nicht, ob eine Zielzahl
         aus einer Studie genau erreicht wird.
       </p>
+      <p>
+        Lehnt eine Maßnahme ein Mittel nur ab oder nimmt es zurück, zählt, was sie selbst zum Ziel beiträgt. Ist das
+        abgelehnte Mittel nicht selbst Teil des Problems, ist die Wirksamkeit 0 – auch wenn es nur schwach wirkt. Was
+        eine Partei stattdessen vorschlägt, bewerten wir als eigene Maßnahme.
+      </p>
       <h3>Umsetzbarkeit: Ist sie rechtlich, finanziell und zeitlich realistisch?</h3>
       <Skala stufen={UMSETZBARKEIT} />
       <p>
