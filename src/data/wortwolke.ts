@@ -3,15 +3,17 @@ import type { Daten } from './quelle'
 // Einträge der Wortwolke: die Themen, die das Spiel schon kennt (wie in der
 // Übersicht „Was das Spiel schon kennt“). Es erscheinen keine Eingaben von
 // Spielenden. Die Größe folgt der Zahl der belegten Ursachen eines Themas – nicht
-// den Maßnahmen oder Parteien, damit die Wolke zeigt, wie breit ein Thema erfasst
-// ist, und keine Partei bevorzugt.
+// den Maßnahmen oder Parteien, damit keine Partei bevorzugt wird.
+//
+// Nicht verwechseln mit „erfasst“ aus der Wertungsregel (Tabelle `abdeckung`, siehe
+// logic/stand.ts): Die Wolke zeigt auch Themen, die noch für keine Partei erfasst sind.
 
 export interface Wort {
   text: string
   anzahl: number
 }
 
-/** Erfasst: Das Thema ist angelegt und hat belegte Ursachen. Ob schon Programme ausgewertet sind, zeigt die Themenübersicht. */
+/** Themen, die das Spiel kennt: angelegt und mit belegten Ursachen – unabhängig davon, ob sie schon erfasst sind. */
 export function themenWoerter(daten: Daten): Wort[] {
   return daten.themen
     .map((t) => ({ text: t.name, anzahl: daten.ursachen.filter((u) => u.thema_id === t.id).length }))

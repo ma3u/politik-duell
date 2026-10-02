@@ -14,7 +14,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 
 ## Spielablauf
 
-1. Startbildschirm mit Titel, kurzer Erklärung, Datenschutzhinweis. Im Hintergrund: langsam bewegte Wortwolke der erfassten Themen (keine Eingaben von Spielenden).
+1. Startbildschirm mit Titel, kurzer Erklärung, Datenschutzhinweis. Im Hintergrund: langsam bewegte Wortwolke der Themen, die das Spiel kennt (angelegt, mit belegten Ursachen; keine Eingaben von Spielenden).
 2. Spieler A und B wählen je eine Partei (nicht dieselbe) und optional eine Rolle (Mieter, Eigentümer, Angestellte, Selbstständig, Rentner, Arbeitslos, Studierend, Vermögend).
 3. Pro Runde (insgesamt 5, abwechselnd): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
 4. KI klassifiziert: `problem` | `forderung` | `wert`.
@@ -43,7 +43,7 @@ Ist ein Thema nicht in der DB: KI gibt eine vorläufige Einschätzung, deutlich 
 - **Backend:** Supabase, Region Frankfurt (Postgres, Edge Functions, Realtime).
 - **KI:** API-Aufruf ausschließlich aus einer Edge Function (API-Key nie im Frontend). Günstiges Modell (z. B. Claude Haiku oder Mistral). Antworten als striktes JSON. Rate-Limit pro Sitzung.
 - **Sprache:** Push-to-talk via Web Speech API (Chrome/Safari); Fallback Texteingabe. Später optional Transkriptionsdienst.
-- **Wortwolke:** d3-cloud, sanfte Bewegung. Die Wörter sind die erfassten Themen aus den geladenen Daten, Größe nach Zahl der Ursachen (`src/data/wortwolke.ts`).
+- **Wortwolke:** d3-cloud, sanfte Bewegung. Die Wörter sind die angelegten Themen mit belegten Ursachen, Größe nach Zahl der Ursachen (`src/data/wortwolke.ts`). „Erfasst“ bleibt der Wertungsregel (Tabelle `abdeckung`) vorbehalten; die Wolke zeigt auch Themen, die noch für keine Partei erfasst sind.
 
 ## Datenmodell (Entwurf)
 

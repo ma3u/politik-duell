@@ -255,7 +255,7 @@ function Moderation() {
           {reiter === 'offen' && (
             <p className="admin-hinweis">
               Nur neutrale Stichwörter ohne Namen, Orte oder Beleidigungen freigeben. Freigegebene Stichwörter
-              erscheinen derzeit nirgends öffentlich: Die Wortwolke zeigt die erfassten Themen.
+              erscheinen derzeit nirgends öffentlich: Die Wortwolke zeigt die Themen, die das Spiel kennt.
             </p>
           )}
           {sichtbar.length === 0 && <p className="admin-leer">Keine Einträge.</p>}

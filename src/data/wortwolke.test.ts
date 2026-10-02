@@ -12,7 +12,7 @@ const ursache = (id: number, thema_id: number) => ({
 })
 
 describe('themenWoerter', () => {
-  it('zeigt nur Themen mit Ursachen, breit erfasste zuerst', () => {
+  it('zeigt nur Themen mit Ursachen, mit mehr Ursachen zuerst', () => {
     const d: Daten = {
       ...MOCK_DATEN,
       themen: [thema(1, 'Miete'), thema(2, 'Rente'), thema(3, 'Schule')],

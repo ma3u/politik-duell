@@ -2,7 +2,7 @@ import cloud from 'd3-cloud'
 import { type RefObject, useEffect, useRef, useState } from 'react'
 import type { Wort } from '../data/wortwolke'
 
-// Hintergrund-Wortwolke des Startbildschirms: die erfassten Themen, Größe nach
+// Hintergrund-Wortwolke des Startbildschirms: die Themen, die das Spiel kennt, Größe nach
 // Zahl der Ursachen. Layout per d3-cloud; die Wörter schweben langsam (CSS).
 
 interface Platziert {
@@ -61,7 +61,7 @@ function useLayout(woerter: Wort[], groesse: [number, number] | null): Platziert
     const max = Math.max(...woerter.map((w) => w.anzahl))
     const groesste = Math.min(52, Math.max(28, breite / 12))
     const kleinste = breite < 500 ? 15 : 18
-    // Breit erfasste Themen größer; bei gleicher Häufigkeit leichte Abwechslung.
+    // Themen mit mehr Ursachen größer; bei gleicher Häufigkeit leichte Abwechslung.
     const schrift = (w: Wort) =>
       kleinste +
       (groesste - kleinste) * Math.sqrt(max > 1 ? (w.anzahl - 1) / (max - 1) : 0) +
