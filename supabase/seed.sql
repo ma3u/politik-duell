@@ -72,7 +72,8 @@ insert into public.themen (id, name, beschreibung) values
   (14, 'Behördengänge', 'Lange Wartezeiten auf Termine und Bescheide, viel Papier, dieselben Angaben immer wieder.'),
   (15, 'Autofahren', 'Teures Tanken, wenige Lademöglichkeiten und teure Elektroautos.'),
   (16, 'Heizungstausch', 'Unsicherheit und hohe Kosten, wenn die Heizung erneuert werden muss oder soll.'),
-  (17, 'Kita-Betreuung', 'Familien finden keinen passenden Betreuungsplatz oder erleben, dass die Betreuung zu wenig Personal hat, ausfällt oder zu viel kostet.')
+  (17, 'Kita-Betreuung', 'Familien finden keinen passenden Betreuungsplatz oder erleben, dass die Betreuung zu wenig Personal hat, ausfällt oder zu viel kostet.'),
+  (18, 'Hitze und Unwetter', 'Hitzewellen, Starkregen und Hochwasser belasten die Gesundheit und beschädigen Wohnungen und Eigentum.')
 on conflict (id) do update set name = excluded.name, beschreibung = excluded.beschreibung;
 
 insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene) values
@@ -158,13 +159,19 @@ insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene) valu
   (1702, 17, 'Das Personal reicht oft nicht für die Kinderzahl: Mehr als jede zweite Kita-Leitung befürchtet, dass Personalmangel gute Betreuung erschwert, fast 80 % nennen Fehlzeiten als Einschränkung (2024)', 'https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1677-gut-ausgebildet-und-gestresst.html', 'land'),
   (1703, 17, 'Der Personalschlüssel liegt oft unter wissenschaftlichen Empfehlungen: 2022 wurden in Ostdeutschland fast 90 % der Kita-Kinder in nicht kindgerecht besetzten Gruppen betreut (Westen: 62 %)', 'https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2023/november/mehr-plaetze-und-bessere-qualitaet-in-kitas-bis-2030-wenn-jetzt-entschlossen-gehandelt-wird', 'land'),
   (1704, 17, 'Kitas schließen immer wieder ungeplant: 2023/24 erlebten 43 % der Familien mit Kita-Kindern unerwartete Schließtage, bei rund 13 % summierten sie sich auf mehr als eine Woche im Kita-Jahr', 'https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1730-unerwartete-kita-schliessungen-gehen-mit-verstaerkten-zweifeln-an-der-qualitaet-einher.html', 'land'),
-  (1705, 17, 'Viele Eltern sehen bei den Kosten Verbesserungsbedarf: Bei unter Dreijährigen nennen 37 % „viel Bedarf“ bei den Elternbeiträgen, bei Älteren 24 % (Erhebung 2022)', 'https://doi.org/10.36189/DJI202606', 'land')
+  (1705, 17, 'Viele Eltern sehen bei den Kosten Verbesserungsbedarf: Bei unter Dreijährigen nennen 37 % „viel Bedarf“ bei den Elternbeiträgen, bei Älteren 24 % (Erhebung 2022)', 'https://doi.org/10.36189/DJI202606', 'land'),
+  (1801, 18, 'Hitze nimmt zu: Die Zahl der Heißen Tage (mindestens 30 °C) hat sich im Mittel über Deutschland seit den 1950er-Jahren von etwa 4 auf durchschnittlich 12 pro Jahr verdreifacht', 'https://www.dwd.de/DE/klimaumwelt/klimawandel/klimawandel_node.html', 'bund'),
+  (1802, 18, 'Hitze fordert Todesopfer: Das RKI schätzt für die Sommer 2023 und 2024 jeweils rund 3.000 hitzebedingte Sterbefälle, vor allem bei Menschen über 75 Jahren', 'https://edoc.rki.de/handle/176904/12682', 'bund'),
+  (1803, 18, 'Großstädte heizen sich auf: In heißen Sommern gab es in Berlin bis zu 20 Tropennächte (Bundesmittel 1 bis 1,5), die Innenstadt war über 11 Kelvin wärmer als das Umland', 'https://www.umweltbundesamt.de/monitoring-zur-das/handlungsfelder/bauwesen/bau-i-1_bau-i-2/indikator', 'land'),
+  (1804, 18, 'Viel Fläche ist versiegelt: Ende 2018 waren etwa 45,1 % der Siedlungs- und Verkehrsfläche versiegelt, Regenwasser versickert dort kaum und fließt über die Kanalisation direkt in die Gewässer', 'https://www.umweltbundesamt.de/themen/wasser/extremereignisse/hochwasser', 'land'),
+  (1805, 18, 'Auch in Überschwemmungsgebieten wird weiter gebaut: Die bebaute Fläche dort wuchs in rund 20 Jahren bis 2021 um rund 100 km² (knapp 13 %), in rund der Hälfte der Gemeinden ist dort bebaut', 'https://www.umweltbundesamt.de/monitoring-zur-das/handlungsfelder/raumplanung/ro-r-6/indikator', 'land'),
+  (1806, 18, 'Viele Wohngebäude sind nicht gegen Elementarschäden versichert: 2024 hatten 57 % eine Volldeckung (vorläufig), in Mecklenburg-Vorpommern 37 %, in Sachsen-Anhalt und Berlin 52 %', 'https://www.svr-verbraucherfragen.de/wp-content/uploads/2026/03/Studie_ESV_in_Deutschland.pdf', 'bund')
 on conflict (id) do update set thema_id = excluded.thema_id, beschreibung = excluded.beschreibung,
   quelle_url = excluded.quelle_url, ebene = excluded.ebene;
 
 -- Ursachen, die nicht mehr im Katalog stehen (etwa nach der Neuanlage eines Themas), entfernen –
 -- sonst ordnete die KI Probleme ihnen weiter zu. Nichts verweist per Fremdschlüssel auf sie.
-delete from public.ursachen where id not in (101, 102, 103, 201, 202, 203, 204, 205, 206, 301, 302, 303, 304, 305, 401, 402, 403, 404, 405, 501, 502, 503, 504, 505, 506, 507, 601, 602, 603, 604, 605, 606, 701, 702, 703, 801, 802, 803, 804, 901, 902, 903, 904, 905, 906, 907, 908, 909, 911, 1001, 1002, 1003, 1004, 1005, 1101, 1102, 1103, 1104, 1105, 1201, 1202, 1203, 1204, 1301, 1302, 1401, 1402, 1403, 1404, 1501, 1502, 1503, 1504, 1505, 1601, 1602, 1603, 1604, 1701, 1702, 1703, 1704, 1705);
+delete from public.ursachen where id not in (101, 102, 103, 201, 202, 203, 204, 205, 206, 301, 302, 303, 304, 305, 401, 402, 403, 404, 405, 501, 502, 503, 504, 505, 506, 507, 601, 602, 603, 604, 605, 606, 701, 702, 703, 801, 802, 803, 804, 901, 902, 903, 904, 905, 906, 907, 908, 909, 911, 1001, 1002, 1003, 1004, 1005, 1101, 1102, 1103, 1104, 1105, 1201, 1202, 1203, 1204, 1301, 1302, 1401, 1402, 1403, 1404, 1501, 1502, 1503, 1504, 1505, 1601, 1602, 1603, 1604, 1701, 1702, 1703, 1704, 1705, 1801, 1802, 1803, 1804, 1805, 1806);
 
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, wirksamkeit, umsetzbarkeit,
   rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values

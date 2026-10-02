@@ -38,7 +38,7 @@ Grundlage sind die Wahlprogramme zur Bundestagswahl 2025 von sieben Parteien. Ne
 
 ### Themen: was Menschen selbst nennen
 
-Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen in Umfragen vor den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin – nicht nach den Schwerpunkten einzelner Parteien. Daraus ergeben sich zehn Themen: Arzttermine, Miete, Energiepreise, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit, Pflege. Dazu kommen sechs Themen zu bundesweit häufig genannten Belastungen, die noch keine Ursache abdeckte: Preise und Löhne, Straßen und Brücken, Internet und Mobilfunk, Behördengänge, Autofahren, Heizungstausch. Als siebzehntes Thema kam Kita-Betreuung hinzu. Details: [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl).
+Welche Themen ins Spiel kommen, richtet sich nach den meistgenannten Problemen in Umfragen vor den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin – nicht nach den Schwerpunkten einzelner Parteien. Daraus ergeben sich zehn Themen: Arzttermine, Miete, Energiepreise, Schule, Arbeitsplätze, Zuwanderung und Integration, Rente, Bus und Bahn, Sicherheit, Pflege. Dazu kommen sechs Themen zu bundesweit häufig genannten Belastungen, die noch keine Ursache abdeckte: Preise und Löhne, Straßen und Brücken, Internet und Mobilfunk, Behördengänge, Autofahren, Heizungstausch. Als siebzehntes Thema kam Kita-Betreuung hinzu, als achtzehntes Hitze und Unwetter. Details: [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl).
 
 ### Ursachen: festgelegt, bevor jemand in die Programme schaut
 
@@ -196,7 +196,7 @@ Die App läuft als spielbarer Prototyp mit Spracheingabe, KI-Zuordnung, Wortwolk
 | Baustein | Stand September 2026 |
 | --- | --- |
 | Parteien und Programme | 7 Parteien, Wahlprogramme 2025 erfasst |
-| Themen mit belegten Ursachen | 17 Themen |
+| Themen mit belegten Ursachen | 18 Themen |
 | Maßnahmen erfasst | 16 Themen, alle 7 Parteien aus den Bundesprogrammen (KI-Entwurf, ungeprüft); Sicherheit wird neu angelegt |
 | Landesprogramme | Schule, Zuwanderung und Integration, Pflege (Investitionskosten der Heime), Miete (Sozialwohnungen) sowie Bus und Bahn (Angebot, Fahrpersonal, Ticketpreise): alle 21 Programme zu den Landtagswahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin (KI-Entwurf, ungeprüft) |
 | Geprüft und im Spiel | noch keine – das Prüfverfahren startet mit dem Thema Miete |
