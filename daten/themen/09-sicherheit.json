@@ -4,6 +4,10 @@
   "beschreibung": "Opfer von Gewalt, Diebstahl oder Betrug werden – zu Hause, unterwegs oder im Internet – oder sich im Alltag unsicher fühlen.",
   "ziel": "Menschen bleiben zu Hause, unterwegs und im Internet von Straftaten verschont und fühlen sich auch nachts im öffentlichen Raum sicher.",
   "schlagwoerter": ["sicherheit", "unsicher", "kriminalitaet", "angst", "polizei", "gewalt", "ueberfall", "diebstahl", "einbruch", "bahnhof", "nachts", "messer", "betrug", "straftaeter", "taeter"],
+  "freigabe": {
+    "datum": "2026-10-02",
+    "quellen_bestaetigt": [901, 902, 903, 904, 905, 906, 907, 908, 909, 911]
+  },
   "ursachen": [
     {
       "id": 901,
@@ -72,7 +76,7 @@
       "id": 911,
       "beschreibung": "Unbehandelte schwere psychische Erkrankungen und Suchterkrankungen erhöhen das Risiko für Gewalttaten, besonders zusammen; die meisten Gewalttaten gehen aber nicht darauf zurück",
       "quelle_url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000120",
-      "ebene": "land",
+      "ebene": "bund",
       "schlagwoerter": ["psychisch krank", "psychisch kranke", "psychose", "schizophrenie", "verwirrt", "drogen", "alkohol", "sucht", "amok", "einzeltaeter", "gefaehrlich", "psychiatrie"]
     }
   ]
