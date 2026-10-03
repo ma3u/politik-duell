@@ -42,6 +42,11 @@ export interface ErfasstesProgramm {
   keine_massnahme?: string
   /** Programm konnte nicht (vollständig) gelesen werden – bleibt „noch nicht erfasst“, kommt nie in die Erfassung. */
   nicht_durchsucht?: string
+  /** Für den Kurzbericht an die Koordination (feste Form, siehe `kurzbericht`) – fließen nicht in die Bewertung. */
+  neue_buendel?: { ursache: number; name: string; seite?: number }[]
+  eigene_synonyme?: { begriff: string; ursache: number; richtung: string }[]
+  /** Nur wenn das PDF einen anderen Stand nennt als der Auftrag. */
+  stand_im_pdf?: string
 }
 
 /**
@@ -105,6 +110,8 @@ export interface Bewertung {
   blind_pruefsumme?: string
   neue_instrumente: ({ kennung: string; name: string } & Einzelbewertung)[]
   zuordnung: Zuordnung[]
+  /** Nur nach `entwurf:bewertung-zusammenfuehren`: aus welcher Bewertung übernommen und welche Kennungen neu bewertet wurden. */
+  teilbewertung?: { vorherige_pruefsumme: string; neu_bewertet: string[] }
 }
 
 /**
@@ -324,81 +331,175 @@ export function verdaechtigeReste(text: string): string[] {
   return [...new Set([...text.matchAll(VERDAECHTIG_MUSTER)].map((m) => m[0]))]
 }
 
+/**
+ * Kennung einer Maßnahme in der Blindliste (M01 …). `programm` und `massnahme` sind die Stelle in der
+ * aktuellen Erfassung – sie werden bei jedem Lesen aus dem Inhalt neu bestimmt, nie aus der Datei
+ * übernommen. Die übrigen Felder halten fest, welche Maßnahme die Kennung trägt.
+ */
 export interface Kennung {
   kennung: string
   programm: number
   massnahme: number
-  /** Herkunft und Anfang der Texte beim Vergeben – damit `pruefeKennungen` vertauschte Programme und ausgetauschte Maßnahmen erkennt. */
   partei_id?: number
   land?: string | null
+  /** Anfang von Beschreibung und Zitat (40 Zeichen, klein) – für korrigierte Zitate und ältere Dateien. */
   beschreibung?: string
   zitat?: string
+  /** Prüfsumme des ganzen Zitats (klein, Leerraum vereinheitlicht): Schlüssel der Zuordnung über den Inhalt. */
+  zitat_sha?: string
+  /** Prüfsumme des Inhalts, den die Bewertung sieht (Beschreibung, Zitat, Ursachen) – „geändert“, wenn sie abweicht. */
+  inhalt_sha?: string
+  seite?: number
 }
 
 /** Anfang eines Texts für den Abgleich: klein, ohne Leerraum-Unterschiede, 40 Zeichen. */
 const anfang = (t: string | undefined) => (t ?? '').toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 40)
+const sha = (t: string) => createHash('sha256').update(t).digest('hex').slice(0, 16)
+const zitatSha = (z: string | undefined) => sha((z ?? '').toLowerCase().replace(/\s+/g, ' ').trim())
+const inhaltSha = (m: ErfassteMassnahme) => sha(JSON.stringify([m.beschreibung, m.zitat, m.ursachen_ids ?? [], m.ursachen_offen ?? []]))
+const nummer = (kennung: string) => Number(kennung.replace(/^\D+/, ''))
 
-/**
- * Feste Kennungen M01, M02 … in gemischter Reihenfolge: sortiert nach einer Prüfsumme
- * des Inhalts, nicht nach Partei. Dieselbe Erfassung ergibt immer dieselben Kennungen –
- * so passt die Bewertung beim Eintragen ohne gespeicherte Zuordnung. Ändert man danach
- * Beschreibung, Zitat oder Seite, ändern sich die Kennungen; `fest` (gespeichert von
- * `entwurf:blind`) hält sie dann stabil.
- */
-export function kennungen(e: Erfassung, fest?: Kennung[]): Kennung[] {
-  if (fest) return fest
+/** Was eine Kennung über ihre Maßnahme festhält. */
+function beschreibe(e: Erfassung, programm: number, massnahme: number, kennung: string): Kennung {
+  const p = e.programme[programm]
+  const m = p.massnahmen[massnahme]
+  return {
+    kennung,
+    programm,
+    massnahme,
+    partei_id: p.partei_id,
+    land: p.land,
+    beschreibung: anfang(m.beschreibung),
+    zitat: anfang(m.zitat),
+    zitat_sha: zitatSha(m.zitat),
+    inhalt_sha: inhaltSha(m),
+    seite: m.seite,
+  }
+}
+
+/** Alle Maßnahmen der Erfassung, sortiert nach einer Prüfsumme des Inhalts (gemischt, nicht nach Partei). */
+function gemischt(e: Erfassung, nur?: Set<string>) {
   const liste = e.programme.flatMap((p, i) =>
-    p.massnahmen.map((m, j) => ({
-      programm: i,
-      massnahme: j,
-      schluessel: createHash('sha256').update(`${m.beschreibung}\n${m.zitat}\n${m.seite}`).digest('hex'),
-    })),
+    p.massnahmen.flatMap((m, j) =>
+      nur && !nur.has(`${i}/${j}`) ? [] : [{ programm: i, massnahme: j, schluessel: createHash('sha256').update(`${m.beschreibung}\n${m.zitat}\n${m.seite}`).digest('hex') }],
+    ),
   )
-  liste.sort((a, b) => (a.schluessel < b.schluessel ? -1 : a.schluessel > b.schluessel ? 1 : a.programm - b.programm || a.massnahme - b.massnahme))
-  const stellen = String(liste.length).length < 2 ? 2 : String(liste.length).length
-  return liste.map((x, n) => {
-    const p = e.programme[x.programm]
-    const m = p.massnahmen[x.massnahme]
-    return {
-      kennung: `M${String(n + 1).padStart(stellen, '0')}`,
-      programm: x.programm,
-      massnahme: x.massnahme,
-      partei_id: p.partei_id,
-      land: p.land,
-      beschreibung: anfang(m.beschreibung),
-      zitat: anfang(m.zitat),
-    }
-  })
+  return liste.sort((a, b) => (a.schluessel < b.schluessel ? -1 : a.schluessel > b.schluessel ? 1 : a.programm - b.programm || a.massnahme - b.massnahme))
 }
 
 /**
- * Passt eine gespeicherte Zuordnung noch zur Erfassung? Jede Maßnahme genau einmal, keine fremde,
- * dasselbe Programm an derselben Stelle – und keine ausgetauschte Maßnahme: Eine Textkorrektur
- * ändert Beschreibung oder Zitat, sind beide anders, ist es eine andere Maßnahme.
+ * Kennungen M01, M02 … in gemischter Reihenfolge: sortiert nach einer Prüfsumme des Inhalts, nicht nach
+ * Partei. Ohne `fest` werden sie neu vergeben (erster Lauf von `entwurf:blind`); mit `fest` (aus
+ * `ordneKennungen`, an die aktuelle Erfassung angepasst) gelten die gespeicherten.
  */
-export function pruefeKennungen(e: Erfassung, fest: Kennung[]): string[] {
-  const f: string[] = []
-  const erwartet = new Set(e.programme.flatMap((p, i) => p.massnahmen.map((_, j) => `${i}/${j}`)))
-  const gesehen = new Set<string>()
+export function kennungen(e: Erfassung, fest?: Kennung[]): Kennung[] {
+  if (fest) return fest
+  const liste = gemischt(e)
+  const stellen = Math.max(2, String(liste.length).length)
+  return liste.map((x, n) => beschreibe(e, x.programm, x.massnahme, `M${String(n + 1).padStart(stellen, '0')}`))
+}
+
+/** Ergebnis des Abgleichs gespeicherter Kennungen mit der aktuellen Erfassung. */
+export interface KennungAbgleich {
+  /** Alle Kennungen der aktuellen Erfassung, nach Nummer sortiert, mit aktueller Stelle. */
+  kennungen: Kennung[]
+  /** Neue oder ausgetauschte Maßnahmen – fortlaufend nach der höchsten je vergebenen Nummer. */
+  neu: Kennung[]
+  /** Maßnahmen, die es nicht mehr gibt. Ihre Nummern werden nie neu vergeben. */
+  entfallen: Kennung[]
+  /** Dieselbe Maßnahme mit geändertem Inhalt (Beschreibung, Zitat, Seite oder Ursachen). */
+  geaendert: { kennung: Kennung; was: string[] }[]
+  /** Höchste je vergebene Nummer (auch entfallene). */
+  vergeben_bis: number
+  /** Formfehler der gespeicherten Datei (doppelte Kennungen …). */
+  probleme: string[]
+}
+
+/**
+ * Ordnet gespeicherte Kennungen über den Inhalt zu, nicht über die Stelle: dasselbe Programm (Partei,
+ * Land) und dasselbe Zitat. Die Beschreibung darf sich ändern. Bleibt eine Maßnahme übrig, zählt im
+ * selben Programm auch derselbe Zitat- oder Beschreibungsanfang (korrigiertes Zitat). Was dann noch
+ * fehlt, ist neu und bekommt eine neue, fortlaufende Kennung; entfallene Nummern werden nicht neu
+ * vergeben. So bleibt eine Bewertung für unveränderte Maßnahmen gültig, und jede Verschiebung wird
+ * gemeldet statt still neu verteilt.
+ */
+export function ordneKennungen(e: Erfassung, gespeichert: Kennung[], vergebenBis = 0): KennungAbgleich {
+  const probleme: string[] = []
   const namen = new Set<string>()
-  for (const x of fest) {
-    const pos = `${x.programm}/${x.massnahme}`
-    if (!erwartet.has(pos)) f.push(`${x.kennung}: Maßnahme ${pos} gibt es in der Erfassung nicht mehr`)
-    else {
-      const p = e.programme[x.programm]
-      const m = p.massnahmen[x.massnahme]
-      if ((x.partei_id !== undefined && x.partei_id !== p.partei_id) || (x.land !== undefined && x.land !== p.land))
-        f.push(`${x.kennung}: Programm ${x.programm} ist jetzt ein anderes (Partei ${p.partei_id}, ${p.land ?? 'Bund'}) – Programme umsortiert?`)
-      else if (x.beschreibung !== undefined && x.zitat !== undefined && x.beschreibung !== anfang(m.beschreibung) && x.zitat !== anfang(m.zitat))
-        f.push(`${x.kennung}: Maßnahme ${pos} hat neue Beschreibung und neues Zitat – ausgetauscht?`)
-    }
-    if (gesehen.has(pos)) f.push(`Maßnahme ${pos}: mehrfach in der Zuordnung`)
-    if (namen.has(x.kennung)) f.push(`${x.kennung}: doppelt vergeben`)
-    gesehen.add(pos)
+  for (const x of gespeichert) {
+    if (namen.has(x.kennung)) probleme.push(`${x.kennung}: doppelt vergeben`)
     namen.add(x.kennung)
   }
-  for (const pos of erwartet) if (!gesehen.has(pos)) f.push(`Maßnahme ${pos}: fehlt in der gespeicherten Zuordnung`)
-  return f
+  // Ältere Dateien ohne Partei: die Herkunft aus der damaligen Stelle übernehmen.
+  const alt = gespeichert.map((x) => {
+    const p = e.programme[x.programm]
+    return x.partei_id === undefined && p ? { ...x, partei_id: p.partei_id, land: p.land } : x
+  })
+  const offen = new Set(e.programme.flatMap((p, i) => p.massnahmen.map((_, j) => `${i}/${j}`)))
+  const treffer = new Map<string, string>() // kennung → Stelle
+  const stellen = (x: Kennung) =>
+    [...offen].filter((pos) => {
+      const p = e.programme[Number(pos.split('/')[0])]
+      return p.partei_id === x.partei_id && (x.land === undefined || (p.land ?? null) === (x.land ?? null))
+    })
+  const massnahmeAn = (pos: string) => {
+    const [i, j] = pos.split('/').map(Number)
+    return e.programme[i].massnahmen[j]
+  }
+  const runde = (passt: (x: Kennung, m: ErfassteMassnahme) => boolean) => {
+    for (const x of alt) {
+      if (treffer.has(x.kennung) || x.partei_id === undefined) continue
+      const pos = stellen(x).find((s) => passt(x, massnahmeAn(s)))
+      if (pos) {
+        treffer.set(x.kennung, pos)
+        offen.delete(pos)
+      }
+    }
+  }
+  runde((x, m) => x.zitat_sha !== undefined && x.zitat_sha === zitatSha(m.zitat))
+  runde((x, m) => x.zitat_sha === undefined && x.zitat === anfang(m.zitat) && x.beschreibung === anfang(m.beschreibung))
+  runde((x, m) => !!x.zitat && x.zitat === anfang(m.zitat))
+  runde((x, m) => !!x.beschreibung && x.beschreibung === anfang(m.beschreibung))
+
+  const hoechste = Math.max(vergebenBis, 0, ...gespeichert.map((x) => nummer(x.kennung)).filter(Number.isFinite))
+  const breite = Math.max(2, ...gespeichert.map((x) => x.kennung.length - 1))
+  const behalten: Kennung[] = []
+  const geaendert: KennungAbgleich['geaendert'] = []
+  const entfallen: Kennung[] = []
+  for (const x of alt) {
+    const pos = treffer.get(x.kennung)
+    if (!pos) {
+      entfallen.push(x)
+      continue
+    }
+    const [i, j] = pos.split('/').map(Number)
+    const jetzt = beschreibe(e, i, j, x.kennung)
+    const was: string[] = []
+    if (x.zitat_sha !== undefined ? x.zitat_sha !== jetzt.zitat_sha : x.zitat !== jetzt.zitat) was.push('Zitat')
+    if (x.seite !== undefined && x.seite !== jetzt.seite) was.push('Seite')
+    if (x.inhalt_sha !== undefined && x.inhalt_sha !== jetzt.inhalt_sha && !was.includes('Zitat')) was.push('Beschreibung oder Ursachen')
+    else if (x.inhalt_sha === undefined && x.beschreibung !== jetzt.beschreibung) was.push('Beschreibung')
+    if (was.length) geaendert.push({ kennung: jetzt, was })
+    behalten.push(jetzt)
+  }
+  let n = hoechste
+  const neu = gemischt(e, offen).map((x) => beschreibe(e, x.programm, x.massnahme, `M${String(++n).padStart(breite, '0')}`))
+  const alle = [...behalten, ...neu].sort((a, b) => nummer(a.kennung) - nummer(b.kennung))
+  return { kennungen: alle, neu, entfallen, geaendert, vergeben_bis: n, probleme }
+}
+
+/**
+ * Passt eine gespeicherte Zuordnung noch zur Erfassung, ohne neue Kennungen? Für `entwurf:bewertung-pruefen`
+ * und `entwurf:eintragen`: Neue oder entfallene Maßnahmen heißen, dass `entwurf:blind` erneut laufen muss.
+ * Geänderter Inhalt ist hier kein Fehler – das meldet die Prüfsumme der Blindliste.
+ */
+export function pruefeKennungen(e: Erfassung, fest: Kennung[]): string[] {
+  const a = ordneKennungen(e, fest)
+  return [
+    ...a.probleme,
+    ...a.neu.map((x) => `Maßnahme ${x.programm}/${x.massnahme} (S. ${x.seite}) hat noch keine Kennung – npm run entwurf:blind erneut ausführen`),
+    ...a.entfallen.map((x) => `${x.kennung}: Maßnahme gibt es in der Erfassung nicht mehr – npm run entwurf:blind erneut ausführen`),
+  ]
 }
 
 /** Ebene eines Instruments aus den Maßnahmen, die darauf verweisen. */
@@ -415,7 +516,33 @@ export interface BlindListe {
   /** Regeln zur Zuordnung aus dem Leitfaden – dieselben, die die Erfassung hatte. */
   regeln?: { nr: number; ursachen?: number[]; text: string }[]
   instrumente: { id: number; name: string; ebene: string | null; wirksamkeit: number; umsetzbarkeit: number; evidenz?: string | null; begruendung: string }[]
-  massnahmen: { kennung: string; ebene: 'bund' | 'land'; beschreibung: string; zitat: string; ursachen_ids: number[]; ursachen_offen?: number[] }[]
+  massnahmen: BlindMassnahme[]
+  /**
+   * Nur bei einer Teil-Neubewertung (`entwurf:blind --teil`): welche Kennungen neu zu bewerten sind und
+   * die bisherige Bewertung der übrigen (ohne Parteinamen – sie kennt nur Kennungen). Steht außerhalb der
+   * `pruefsumme`; `entwurf:bewertung-zusammenfuehren` baut den Block aus den Dateien neu und vergleicht.
+   */
+  teilbewertung?: Teilbewertung
+}
+
+export interface BlindMassnahme {
+  kennung: string
+  ebene: 'bund' | 'land'
+  beschreibung: string
+  zitat: string
+  ursachen_ids: number[]
+  ursachen_offen?: number[]
+  /** Prüfsumme dieses Eintrags (ohne sie selbst): Bei einer Teil-Neubewertung gilt ein Eintrag als unverändert, wenn sie gleich bleibt. */
+  pruefsumme: string
+}
+
+export interface Teilbewertung {
+  /** Prüfsumme der Blindliste, zu der `bisher` gehört. */
+  vorherige_pruefsumme: string
+  /** Neue oder geänderte Kennungen – nur sie bewertet der Agent. */
+  zu_bewerten: string[]
+  /** Bisherige Bewertung der unveränderten Kennungen und alle bisherigen neuen Instrumente. */
+  bisher: Pick<Bewertung, 'neue_instrumente' | 'zuordnung'>
 }
 
 /** Was der Bewertungs-Agent sieht: Thema, Ursachen, vorhandene Instrumente und Maßnahmen ohne Partei. */
@@ -423,10 +550,10 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
   const thema = k.themen.find((t) => t.id === e.thema_id)
   if (!thema) throw new Error(`Thema ${e.thema_id} nicht im Katalog`)
   const weitere = k.parteien.flatMap((p) => [p.name, p.kurzname])
-  const massnahmen = kennungen(e, fest).map(({ kennung, programm, massnahme }) => {
+  const massnahmen = kennungen(e, fest).map(({ kennung, programm, massnahme }): BlindMassnahme => {
     const p = e.programme[programm]
     const m = p.massnahmen[massnahme]
-    return {
+    const eintrag = {
       kennung,
       ebene: p.land ? ('land' as const) : ('bund' as const),
       beschreibung: neutralisiere(m.beschreibung, weitere),
@@ -434,6 +561,7 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
       ursachen_ids: m.ursachen_ids,
       ...(m.ursachen_offen?.length ? { ursachen_offen: m.ursachen_offen } : {}),
     }
+    return { ...eintrag, pruefsumme: createHash('sha256').update(JSON.stringify(eintrag)).digest('hex').slice(0, 16) }
   })
   const regeln = e.leitfaden?.regeln.map((r) => ({ ...r, text: neutralisiere(r.text, weitere) }))
   const liste: Omit<BlindListe, 'pruefsumme'> = {
@@ -454,6 +582,98 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
     massnahmen,
   }
   return { pruefsumme: createHash('sha256').update(JSON.stringify(liste)).digest('hex'), ...liste }
+}
+
+/**
+ * Prüfsumme über alles außer den Maßnahmen (Thema, Ursachen, Regeln, vorhandene Instrumente). Ändert sich
+ * davon etwas, ist eine Teil-Neubewertung nicht zulässig – dann gilt der Maßstab für alle neu.
+ */
+export const kontextPruefsumme = (l: Omit<BlindListe, 'pruefsumme' | 'massnahmen' | 'teilbewertung'> & Partial<BlindListe>) => {
+  const { pruefsumme: _p, massnahmen: _m, teilbewertung: _t, ...kontext } = l
+  return createHash('sha256').update(JSON.stringify(kontext)).digest('hex')
+}
+
+// ---------------------------------------------------------------------------
+// Teil-Neubewertung
+// ---------------------------------------------------------------------------
+
+/** JSON mit sortierten Schlüsseln – für den Vergleich, ob zwei Einträge gleich sind. */
+const stabil = (x: unknown): string =>
+  Array.isArray(x)
+    ? `[${x.map(stabil).join(',')}]`
+    : x && typeof x === 'object'
+      ? `{${Object.keys(x).sort().map((k) => `${JSON.stringify(k)}:${stabil((x as Record<string, unknown>)[k])}`).join(',')}}`
+      : JSON.stringify(x)
+export const gleich = (a: unknown, b: unknown) => stabil(a) === stabil(b)
+
+/**
+ * Block für eine Teil-Neubewertung: Unverändert ist eine Kennung, deren Eintrag in beiden Listen dieselbe
+ * Prüfsumme hat. Nur die übrigen bewertet der Agent; er liest trotzdem die ganze Liste und kann vorhandene
+ * Instrumente wiederverwenden. Nicht zulässig, wenn sich Thema, Ursachen, Regeln oder vorhandene
+ * Instrumente geändert haben – dann gilt der Maßstab für alle neu.
+ */
+export function teilbewertung(vorherListe: BlindListe, jetzt: BlindListe, vorher: Bewertung): { block?: Teilbewertung; fehler: string[] } {
+  const fehler: string[] = []
+  if (vorher.blind_pruefsumme !== vorherListe.pruefsumme) fehler.push('Die bisherige Bewertung gehört nicht zur archivierten Blindliste (blind_pruefsumme)')
+  if (kontextPruefsumme(vorherListe) !== kontextPruefsumme(jetzt))
+    fehler.push('Thema, Ursachen, Regeln des Leitfadens oder vorhandene Instrumente haben sich geändert – Teil-Neubewertung nicht zulässig, ganz neu bewerten')
+  if (vorherListe.massnahmen.some((m) => !m.pruefsumme)) fehler.push('Die archivierte Blindliste hat keine Prüfsumme je Maßnahme – ganz neu bewerten')
+  if (fehler.length) return { fehler }
+  const alt = new Map(vorherListe.massnahmen.map((m) => [m.kennung, m.pruefsumme]))
+  const unveraendert = new Set(jetzt.massnahmen.filter((m) => alt.get(m.kennung) === m.pruefsumme).map((m) => m.kennung))
+  return {
+    fehler,
+    block: {
+      vorherige_pruefsumme: vorherListe.pruefsumme,
+      zu_bewerten: jetzt.massnahmen.filter((m) => !unveraendert.has(m.kennung)).map((m) => m.kennung),
+      bisher: { neue_instrumente: vorher.neue_instrumente ?? [], zuordnung: (vorher.zuordnung ?? []).filter((z) => unveraendert.has(z.kennung)) },
+    },
+  }
+}
+
+/**
+ * Führt eine Teilbewertung mit der bisherigen zusammen. Lehnt ab, wenn die Teilbewertung eine
+ * unveränderte Kennung oder ein bisheriges Instrument anders bewertet, eine zu bewertende Kennung
+ * auslässt oder zu einer anderen Liste gehört. Das Ergebnis prüft danach `pruefeBewertung` wie jede
+ * vollständige Bewertung.
+ */
+export function fuehreTeilbewertungZusammen(jetzt: BlindListe, block: Teilbewertung, teil: Bewertung): { bewertung?: Bewertung; fehler: string[] } {
+  const fehler: string[] = []
+  if (teil.blind_pruefsumme !== jetzt.pruefsumme) fehler.push('Die Teilbewertung gehört nicht zur aktuellen Blindliste (blind_pruefsumme)')
+  const neu = new Set(block.zu_bewerten)
+  const bisher = new Map(block.bisher.zuordnung.map((z) => [z.kennung, z]))
+  const bisherInstr = new Map(block.bisher.neue_instrumente.map((i) => [i.kennung, i]))
+  const zuordnung = new Map<string, Zuordnung>(bisher)
+  const gesehen = new Set<string>()
+  for (const z of teil.zuordnung ?? []) {
+    if (gesehen.has(z.kennung)) fehler.push(`${z.kennung}: mehrfach in der Teilbewertung`)
+    gesehen.add(z.kennung)
+    if (neu.has(z.kennung)) zuordnung.set(z.kennung, z)
+    else if (bisher.has(z.kennung)) {
+      if (!gleich(bisher.get(z.kennung), z)) fehler.push(`${z.kennung}: unverändert, aber anders bewertet als bisher – unveränderte Einträge bleiben, wie sie sind`)
+    } else fehler.push(`${z.kennung}: unbekannte Kennung`)
+  }
+  for (const k of block.zu_bewerten) if (!gesehen.has(k)) fehler.push(`${k}: neu oder geändert, aber nicht bewertet`)
+  const instrumente = new Map(bisherInstr)
+  for (const i of teil.neue_instrumente ?? []) {
+    const vorher = bisherInstr.get(i.kennung)
+    if (vorher && !gleich(vorher, i)) fehler.push(`Instrument ${i.kennung}: gibt es schon mit anderen Werten – bisherige Instrumente nicht ändern, für Abweichendes eine neue Kennung`)
+    else instrumente.set(i.kennung, i)
+  }
+  if (fehler.length) return { fehler }
+  const reihenfolge = jetzt.massnahmen.map((m) => m.kennung).filter((k) => zuordnung.has(k))
+  const liste = reihenfolge.map((k) => zuordnung.get(k)!)
+  // Instrumente, auf die keine Maßnahme mehr verweist (ihre Maßnahmen sind entfallen), fallen weg.
+  const benutzt = new Set(liste.flatMap((z) => ('instrument' in z ? [z.instrument] : [])))
+  return {
+    fehler,
+    bewertung: {
+      blind_pruefsumme: jetzt.pruefsumme,
+      neue_instrumente: [...instrumente.values()].filter((i) => benutzt.has(i.kennung)),
+      zuordnung: liste,
+      teilbewertung: { vorherige_pruefsumme: block.vorherige_pruefsumme, neu_bewertet: block.zu_bewerten },
+    },
+  }
 }
 
 /** Maßnahmen der Blindliste, in denen nach dem Neutralisieren noch verdächtige Wörter stehen. */
@@ -486,8 +706,9 @@ export const PROTOKOLL = {
 
 /**
  * Liegt alles vor, was ein Eingriff des Koordinators sichtbar macht? Die Rohantwort jedes
- * Erfassungs-Agenten, der Auftrag an den Bewertungs-Agenten (mit der Prüfsumme der Blindliste,
- * ohne Parteinamen), dessen Antwort und die Liste der Rückfragen (auch „keine“).
+ * Erfassungs-Agenten, der Auftrag an den Bewertungs-Agenten (mit der Prüfsumme der Blindliste, die er
+ * selbst liest, ohne Parteinamen), dessen Antwort (von ihm selbst geschrieben) und die Liste der
+ * Rückfragen (auch „keine“).
  */
 export function pruefeProtokoll(k: Katalog, e: Erfassung, dateien: Map<string, string>, pruefsumme: string | undefined): string[] {
   const f: string[] = []
@@ -498,9 +719,9 @@ export function pruefeProtokoll(k: Katalog, e: Erfassung, dateien: Map<string, s
     if (!da(name)) f.push(`protokoll/${name} fehlt oder ist leer – Rohantwort des Erfassungs-Agenten samt Protokoll speichern`)
   }
   const auftrag = da(PROTOKOLL.auftrag)
-  if (!auftrag) f.push(`protokoll/${PROTOKOLL.auftrag} fehlt – den vollständigen Auftrag an den Bewertungs-Agenten speichern`)
+  if (!auftrag) f.push(`protokoll/${PROTOKOLL.auftrag} fehlt – den Auftrag an den Bewertungs-Agenten mit npm run entwurf:bewertung-auftrag schreiben`)
   else {
-    if (pruefsumme && !auftrag.includes(pruefsumme)) f.push(`protokoll/${PROTOKOLL.auftrag} enthält nicht die Blindliste mit Prüfsumme ${pruefsumme.slice(0, 12)}…`)
+    if (pruefsumme && !auftrag.includes(pruefsumme)) f.push(`protokoll/${PROTOKOLL.auftrag} nennt nicht die Prüfsumme ${pruefsumme.slice(0, 12)}… der bewerteten Blindliste – Auftrag mit npm run entwurf:bewertung-auftrag schreiben`)
     const weitere = k.parteien.flatMap((p) => [p.name, p.kurzname])
     if (enthaeltParteinamen(auftrag, weitere)) f.push(`protokoll/${PROTOKOLL.auftrag} enthält einen Parteinamen oder eine Person – der Bewertungs-Agent darf keine Herkunft erfahren`)
   }
@@ -604,6 +825,91 @@ export function erfassungsHinweise(k: Katalog, e: Erfassung): string[] {
   return h
 }
 
+/**
+ * Paart die Maßnahmen eines Programms in zwei Ständen über den Inhalt – wie die Kennungen: gleiches
+ * Zitat, sonst gleicher Zitat- oder Beschreibungsanfang. Rest links: entfallen, Rest rechts: neu.
+ */
+function paareMassnahmen(alt: ErfassteMassnahme[], neu: ErfassteMassnahme[]) {
+  const frei = new Set(neu.map((_, j) => j))
+  const paare: [number, number][] = []
+  const offenAlt = new Set(alt.map((_, i) => i))
+  for (const passt of [
+    (a: ErfassteMassnahme, b: ErfassteMassnahme) => zitatSha(a.zitat) === zitatSha(b.zitat),
+    (a: ErfassteMassnahme, b: ErfassteMassnahme) => anfang(a.zitat) === anfang(b.zitat),
+    (a: ErfassteMassnahme, b: ErfassteMassnahme) => anfang(a.beschreibung) === anfang(b.beschreibung),
+  ])
+    for (const i of offenAlt) {
+      const j = [...frei].find((x) => passt(alt[i], neu[x]))
+      if (j !== undefined) {
+        paare.push([i, j])
+        frei.delete(j)
+        offenAlt.delete(i)
+      }
+    }
+  return { paare, entfallen: [...offenAlt], neu: [...frei] }
+}
+
+const kurz = (m: ErfassteMassnahme) => `S. ${m.seite} „${m.beschreibung.length > 80 ? `${m.beschreibung.slice(0, 80)}…` : m.beschreibung}“`
+
+/**
+ * Was eine Rückfrage an der Erfassung verändert hat, je Programm (plan–validate–execute): entfallene
+ * Maßnahmen (mit Verdacht auf Zusammenfassen, wenn eine geänderte oder neue Maßnahme dasselbe Bündel oder
+ * dieselbe Seite hat), neue Maßnahmen, Ursachen, die keine Maßnahme mehr haben, und Programme, die
+ * herausgefallen sind. Die Koordination prüft das, bevor `entwurf:blind` läuft – so fällt ein Verlust auf,
+ * bevor er bewertet wird (Thema 9: eine Zusage fiel weg, weil sie in ein belegtes Bündel gefasst wurde).
+ */
+export function vergleicheErfassung(k: Katalog, vorher: ErfasstesProgramm[], jetzt: ErfasstesProgramm[]): string[] {
+  const zeilen: string[] = []
+  const name = (p: { partei_id: number; land: string | null }) => `${k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? p.partei_id} (${p.land ?? 'Bund'})`
+  const schluessel = (p: ErfasstesProgramm) => `${p.partei_id}/${p.land ?? null}`
+  const neuNach = new Map(jetzt.map((p) => [schluessel(p), p]))
+  for (const a of vorher) {
+    const b = neuNach.get(schluessel(a))
+    if (!b) {
+      zeilen.push(`${name(a)}: ganz entfallen (${a.massnahmen.length} Maßnahmen) – nicht durchsucht oder Datei fehlt?`)
+      continue
+    }
+    const { paare, entfallen, neu } = paareMassnahmen(a.massnahmen, b.massnahmen)
+    const geaendert = paare.filter(([i, j]) => !gleich(a.massnahmen[i], b.massnahmen[j])).map(([, j]) => j)
+    const kandidaten = [...new Set([...geaendert, ...neu])].map((j) => b.massnahmen[j])
+    for (const i of entfallen) {
+      const m = a.massnahmen[i]
+      const mit = kandidaten.find((x) => (m.buendel && x.buendel === m.buendel) || Math.abs(x.seite - m.seite) <= 1)
+      zeilen.push(
+        mit
+          ? `${name(a)}: zusammengefasst? ${kurz(m)}${m.buendel ? ` [${m.buendel}]` : ''} fehlt, ${kurz(mit)}${mit.buendel ? ` [${mit.buendel}]` : ''} ist neu oder geändert – zwei verschiedene Zusagen nie zusammenfassen, nur weil das Bündel belegt ist`
+          : `${name(a)}: entfallen ${kurz(m)}${m.buendel ? ` [${m.buendel}]` : ''}`,
+      )
+    }
+    for (const j of neu) zeilen.push(`${name(a)}: neu ${kurz(b.massnahmen[j])}`)
+    for (const j of geaendert) zeilen.push(`${name(a)}: geändert ${kurz(b.massnahmen[j])}`)
+    // Ursache verliert ihre letzte Maßnahme: genau so fiel bei Thema 9 eine Zusage aus der Bewertung.
+    const zahl = (p: ErfasstesProgramm, u: number) => p.massnahmen.filter((m) => vorgeschlageneUrsachen(m).includes(u)).length
+    const ursachen = [...new Set(a.massnahmen.flatMap(vorgeschlageneUrsachen))].sort((x, y) => x - y)
+    for (const u of ursachen) if (zahl(b, u) === 0) zeilen.push(`${name(a)}: Ursache ${u} hatte ${zahl(a, u)} Maßnahme(n), jetzt keine`)
+  }
+  for (const b of jetzt) if (!vorher.some((a) => schluessel(a) === schluessel(b))) zeilen.push(`${name(b)}: neu in der Erfassung (${b.massnahmen.length} Maßnahmen)`)
+  return zeilen
+}
+
+/**
+ * Maßnahmen ohne Bündel an Ursachen, für die der Leitfaden Bündel nennt – je Programm mit Seite. Das ist
+ * erlaubt (eine zweite, verschiedene Zusage bleibt ohne Bündel), aber jede soll die Koordination einmal
+ * ansehen: gleiches Instrument (dann Rückfrage) oder eigenes (dann bleibt sie, oder ein neues Bündel).
+ */
+export function ohneBuendel(k: Katalog, e: Pick<Erfassung, 'programme' | 'leitfaden'>): string[] {
+  const zeilen: string[] = []
+  const mitBuendel = new Set(Object.entries(e.leitfaden?.buendel ?? {}).filter(([, l]) => l.length).map(([u]) => Number(u)))
+  for (const p of e.programme) {
+    const name = `${k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? p.partei_id} (${p.land ?? 'Bund'})`
+    for (const m of p.massnahmen) {
+      const u = vorgeschlageneUrsachen(m).filter((x) => mitBuendel.has(x))
+      if (u.length && !m.buendel) zeilen.push(`${name}: ${kurz(m)} ohne Bündel (Ursache ${u.join(', ')} hat Bündel)`)
+    }
+  }
+  return zeilen
+}
+
 /** Ab so vielen Maßnahmen ohne Bündel an einer Ursache mit Bündelliste gibt es einen Hinweis. */
 export const BUENDEL_OHNE = 3
 
@@ -666,6 +972,12 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
   if (!Array.isArray(p.massnahmen)) return [...f, `${name}: massnahmen fehlen (Liste, auch leer)`]
   if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
   if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  for (const b of p.neue_buendel ?? [])
+    if (!b || typeof b.name !== 'string' || !b.name.trim() || !ursachen.has(b.ursache)) f.push(`${name}: neue_buendel – je Eintrag { "ursache": <ID des Themas>, "name": "…", "seite": N }`)
+  for (const b of p.eigene_synonyme ?? [])
+    if (!b || typeof b.begriff !== 'string' || !b.begriff.trim() || !ursachen.has(b.ursache) || typeof b.richtung !== 'string')
+      f.push(`${name}: eigene_synonyme – je Eintrag { "begriff": "…", "ursache": <ID des Themas>, "richtung": "…" }`)
+  if (p.stand_im_pdf !== undefined && typeof p.stand_im_pdf !== 'string') f.push(`${name}: stand_im_pdf muss Text sein`)
   const buendelGesehen = new Map<string, number>()
   for (const [j, m] of p.massnahmen.entries()) {
     const was = `${name}, Maßnahme ${j + 1}`
@@ -693,11 +1005,38 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
       if (!erlaubt.includes(m.buendel))
         f.push(`${was}: Bündel „${m.buendel}“ steht im Leitfaden nicht bei ihren Ursachen – im Protokoll unter „Neue Bündel“ melden; der Koordinator ergänzt den Leitfaden für alle Programme`)
       const vorher = buendelGesehen.get(m.buendel)
-      if (vorher !== undefined) f.push(`${was}: Bündel „${m.buendel}“ schon bei Maßnahme ${vorher} – je Bündel eine Maßnahme (konkreteste Stelle zitieren)`)
+      if (vorher !== undefined) f.push(
+          `${was}: Bündel „${m.buendel}“ schon bei Maßnahme ${vorher} – gleichartige Zusage: nur die konkreteste Stelle behalten; andere Zusage: ohne „buendel“ erfassen oder unter „neue_buendel“ melden, nie zusammenfassen`,
+        )
       else buendelGesehen.set(m.buendel, j + 1)
     }
   }
   return f
+}
+
+/**
+ * Kurzbericht eines Erfassungs-Agenten in fester Form – nur aus den Daten, nie frei formuliert. So kann
+ * kein Bericht etwas anderes sagen als die gespeicherte Datei (Thema 9: „906: 2“ und zugleich
+ * „906 keine Maßnahme“). Der Agent gibt genau diese Zeilen zurück.
+ */
+export function kurzbericht(name: string, p: ErfasstesProgramm, hinweise: number, ziel: string): string {
+  const m = Array.isArray(p.massnahmen) ? p.massnahmen : []
+  if (p.nicht_durchsucht !== undefined) return [`${name}: nicht durchsucht – ${p.nicht_durchsucht}`, 'Bleibt „noch nicht erfasst“.'].join('\n')
+  const jeUrsache = new Map<number, number>()
+  for (const x of m) for (const u of vorgeschlageneUrsachen(x)) jeUrsache.set(u, (jeUrsache.get(u) ?? 0) + 1)
+  const offen = m.flatMap((x, j) => (x.ursachen_offen?.length ? [`Maßnahme ${j + 1} (S. ${x.seite}) offen ${x.ursachen_offen.join(', ')}`] : []))
+  const gebuendelt = m.filter((x) => x.buendel).length
+  const ergebnis = m.length
+    ? `${m.length} Maßnahmen (${[...jeUrsache].sort(([a], [b]) => a - b).map(([u, n]) => `${u}: ${n}`).join(', ')}${offen.length ? `; ${offen.length} mit offener Zuordnung` : ''}${gebuendelt ? `; ${gebuendelt} gebündelt` : ''})`
+    : 'keine Maßnahme'
+  const liste = (l: string[]) => (l.length ? l.join('; ') : 'keine')
+  return [
+    `${name}: ${ergebnis}${hinweise ? `, ${hinweise} Hinweise` : ''} – gespeichert in ${ziel}`,
+    `Grenzfälle: ${liste(offen)}`,
+    `Neue Bündel: ${liste((p.neue_buendel ?? []).map((b) => `${b.ursache} „${b.name}“${b.seite ? ` (S. ${b.seite})` : ''}`))}`,
+    `Eigene Synonyme: ${liste((p.eigene_synonyme ?? []).map((b) => `„${b.begriff}“ → ${b.ursache} ${b.richtung}`))}`,
+    `Stand im PDF: ${p.stand_im_pdf?.trim() || 'wie im Auftrag'}`,
+  ].join('\n')
 }
 
 /** Prüft die Erfassung gegen den Katalog, bevor irgendetwas geschrieben wird. */

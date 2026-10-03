@@ -6,7 +6,7 @@
 // Erwartet die Erfassung (thema_id) als erfassung.json im Arbeitsordner (eine Ebene über protokoll/).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { programmName, pruefeProgramm, vorgeschlageneUrsachen, zitatHinweise, type ErfasstesProgramm } from '../entwurf.ts'
+import { kurzbericht, programmName, pruefeProgramm, zitatHinweise, type ErfasstesProgramm } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
 import { findeZitat } from '../zitate.ts'
@@ -55,7 +55,7 @@ if (p.nicht_durchsucht !== undefined) {
     writeFileSync(join(programmOrdner(ordner), `${name}.json`), JSON.stringify({ partei_id: p.partei_id, land: p.land ?? null, nicht_durchsucht: p.nicht_durchsucht }, null, 2) + '\n', 'utf8')
   }
   for (const f of fehlerliste) console.error(`Fehler:  ${f}`)
-  console.log(`${name}: nicht durchsucht (${p.nicht_durchsucht}) – bleibt „noch nicht erfasst“.`)
+  if (!fehlerliste.length) console.log(`--- Kurzbericht ---\n${kurzbericht(name, p, 0, join(programmOrdner(ordner), `${name}.json`))}`)
   process.exit(fehlerliste.length ? 1 : 0)
 }
 
@@ -98,12 +98,5 @@ if (fehlerliste.length) {
 mkdirSync(programmOrdner(ordner), { recursive: true })
 const ziel = join(programmOrdner(ordner), `${name}.json`)
 writeFileSync(ziel, JSON.stringify(p, null, 2) + '\n', 'utf8')
-// Kurzbericht – genau das gibt der Agent an den Koordinator zurück.
-const jeUrsache = new Map<number, number>()
-for (const m of massnahmen) for (const u of vorgeschlageneUrsachen(m)) jeUrsache.set(u, (jeUrsache.get(u) ?? 0) + 1)
-const offen = massnahmen.filter((m) => m.ursachen_offen?.length).length
-const buendel = massnahmen.filter((m) => m.buendel).length
-console.log(
-  `${name}: ${massnahmen.length ? `${massnahmen.length} Maßnahmen (${[...jeUrsache].sort(([a], [b]) => a - b).map(([u, n]) => `${u}: ${n}`).join(', ')}` + `${offen ? `; ${offen} mit offener Zuordnung` : ''}${buendel ? `; ${buendel} gebündelt` : ''})` : `keine Maßnahme`}` +
-    `${hinweise.length ? `, ${hinweise.length} Hinweise` : ''} – gespeichert in ${ziel}`,
-)
+// Kurzbericht in fester Form – genau diese Zeilen gibt der Agent an die Koordination zurück.
+console.log(`\n--- Kurzbericht ---\n${kurzbericht(name, p, hinweise.length, ziel)}`)

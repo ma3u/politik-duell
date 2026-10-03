@@ -6,7 +6,7 @@
 // Regeln, Themendatei, Erfassung und Parteiliste – und sieht keine Ergebnisse anderer Programme.
 import type { Katalog } from '../../src/data/katalog.ts'
 import { TREFFER_OHNE_MASSNAHME, type Erfassung } from '../entwurf.ts'
-import { seitenOhneText } from '../programme.ts'
+import { programme, seitenOhneText, type Programm } from '../programme.ts'
 import { begriffQuelle, fliesstext } from './suche.ts'
 
 export interface AuftragProgramm {
@@ -28,6 +28,23 @@ export interface AuftragOptionen {
 /** Ursachen, die für ein Programm zählen: Bund alle, Land nur Ebene „land“. */
 export const zulaessigeUrsachen = (k: Katalog, themaId: number, land: string | null) =>
   k.ursachen.filter((u) => u.thema_id === themaId && (!land || (u.ebene ?? 'bund') === 'land'))
+
+/**
+ * Programme eines Durchlaufs: alle Bundesprogramme und – hat das Thema Landesursachen – alle aktuellen
+ * Landesprogramme; `--bund` nur Bund, `--land XX` nur diese Länder, `--partei` nur diese Parteien.
+ * Gemeinsam für entwurf:auftrag und entwurf:treffer --vorab, damit beide dieselben Programme sehen.
+ */
+export function auswahlProgramme(k: Katalog, themaId: number, o: { nurBund?: boolean; laender?: string[]; parteien?: string[] }): Programm[] {
+  const laender = o.laender ?? []
+  const parteien = (o.parteien ?? []).map((p) => p.toLowerCase())
+  const hatLand = k.ursachen.some((u) => u.thema_id === themaId && u.ebene === 'land')
+  return programme(k).filter(
+    (p) =>
+      p.aktuell &&
+      (p.land === null ? !laender.length : !o.nurBund && hatLand && (!laender.length || laender.includes(p.land))) &&
+      (!parteien.length || parteien.includes(p.partei.toLowerCase())),
+  )
+}
 
 export interface Fundstellen {
   /** Treffer je Ursache, Richtung und Begriff im ganzen Programm. */

@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { pruefe } from '../.claude/hooks/sperre.mjs'
 
 const liste = JSON.parse(readFileSync(new URL('../daten/gesperrte-adressen.json', import.meta.url), 'utf8'))
-const kontext = (phaseA = false) => ({ liste, programmHosts: ['cms.gruene.de', 'berlin-wird.de'], phaseA })
+const kontext = (phaseA = false) => ({ liste, programmHosts: ['cms.gruene.de', 'berlin-wird.de'], phaseA, wurzel: '/repo' })
 const web = (url: string) => pruefe({ tool_name: 'WebFetch', tool_input: { url } }, kontext())
 
 describe('Programmsperre (PreToolUse-Hook)', () => {
@@ -36,5 +36,52 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     expect(p('Bash', { command: 'npm run -s quelle:text -- https://www.dji.de/x.pdf --suche Kita' })).toBeNull()
     expect(p('Read', { file_path: '/repo/daten/README.md' })).toBeNull()
     expect(p('Read', { file_path: '/repo/.cache/entwurf/17/texte/SPD-Bund.txt' }, false)).toBeNull()
+  })
+
+  describe('Agent blind-bewertung', () => {
+    const blind = (tool_name: string, tool_input: Record<string, string>, extra: Record<string, unknown> = {}) =>
+      pruefe({ tool_name, tool_input, agent_type: 'blind-bewertung', agent_id: 'a1', cwd: '/repo', ...extra }, kontext())
+
+    it('erlaubt genau die Blindliste zum Lesen und die Antwortdatei zum Schreiben', () => {
+      expect(blind('Read', { file_path: '/repo/.cache/entwurf/9/blind.json' })).toBeNull()
+      expect(blind('Read', { file_path: '.cache/entwurf/17/blind.json' })).toBeNull()
+      expect(blind('Write', { file_path: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt', content: '{}' })).toBeNull()
+      expect(blind('WebSearch', { query: 'Wirkung Videoüberwachung Studie' })).toBeNull()
+      expect(blind('WebFetch', { url: 'https://www.kfn.de/studie.pdf' })).toBeNull()
+    })
+
+    it('sperrt alles andere – auch Umwege über „..“, andere Arbeitsdateien und Werkzeuge', () => {
+      for (const datei of [
+        '/repo/.cache/entwurf/9/erfassung.json',
+        '/repo/.cache/entwurf/9/kennungen.json',
+        '/repo/.cache/entwurf/9/programme/SPD-Bund.json',
+        '/repo/.cache/entwurf/9/texte/SPD-Bund.txt',
+        '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt',
+        '/repo/.cache/entwurf/9/protokoll/blind-0123456789abcdef.json',
+        '/repo/.cache/entwurf/9/x/../erfassung.json',
+        '/repo/.cache/entwurf/9/x/../../9/blind.json/../kennungen.json',
+        '/repo/daten/themen/09-sicherheit.json',
+        '/repo/.cache/entwurf/9/blind.json.bak',
+        '/anderes/.cache/entwurf/9/blind.json',
+        '/etc/passwd',
+      ])
+        expect(blind('Read', { file_path: datei })).toMatch(/Bewertung ohne Parteinamen/)
+      expect(blind('Read', { file_path: '/repo/.cache/entwurf/9/x/../blind.json' })).toBeNull()
+      expect(blind('Write', { file_path: '/repo/.cache/entwurf/9/blind.json', content: '' })).toMatch(/gesperrt/)
+      expect(blind('Write', { file_path: '/repo/.cache/entwurf/9/bewertung.json', content: '' })).toMatch(/gesperrt/)
+      expect(blind('Edit', { file_path: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt' })).toMatch(/gesperrt/)
+      expect(blind('Bash', { command: 'cat .cache/entwurf/9/erfassung.json' })).toMatch(/gesperrt/)
+      expect(blind('Grep', { pattern: 'SPD', path: '.cache' })).toMatch(/gesperrt/)
+      expect(blind('Glob', { pattern: '**/*.json' })).toMatch(/gesperrt/)
+      expect(blind('Read', {})).toMatch(/gesperrt/)
+      // Parteiserver bleiben auch für diesen Agenten gesperrt.
+      expect(blind('WebFetch', { url: 'https://www.spd.de/programm.pdf' })).toMatch(/spd\.de ist gesperrt/)
+    })
+
+    it('gilt nur für diesen Agenten; die Koordination und andere Agenten sind nicht betroffen', () => {
+      expect(pruefe({ tool_name: 'Read', tool_input: { file_path: '/repo/.cache/entwurf/9/erfassung.json' } }, kontext())).toBeNull()
+      expect(pruefe({ tool_name: 'Read', tool_input: { file_path: '/repo/.cache/entwurf/9/erfassung.json' }, agent_type: 'programm-erfassung' }, kontext())).toBeNull()
+      expect(blind('Read', { file_path: '/repo/.cache/entwurf/9/erfassung.json' }, { agent_type: 'projekt:blind-bewertung' })).toMatch(/gesperrt/)
+    })
   })
 })

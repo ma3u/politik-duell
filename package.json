@@ -32,6 +32,8 @@
     "entwurf:treffer": "node --experimental-strip-types scripts/entwurf/treffer.ts",
     "blind:reste": "node --experimental-strip-types scripts/entwurf/reste.ts",
     "entwurf:json": "node --experimental-strip-types scripts/entwurf/json-extrahieren.ts",
+    "entwurf:bewertung-auftrag": "node --experimental-strip-types scripts/entwurf/bewertung-auftrag.ts",
+    "entwurf:bewertung-zusammenfuehren": "node --experimental-strip-types scripts/entwurf/bewertung-zusammenfuehren.ts",
     "entwurf:bewertung-pruefen": "node --experimental-strip-types scripts/entwurf/bewertung-pruefen.ts",
     "entwurf:eintragen": "node --experimental-strip-types scripts/entwurf/eintragen.ts",
     "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
