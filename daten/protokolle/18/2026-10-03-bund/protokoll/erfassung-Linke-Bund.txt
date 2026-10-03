@@ -1,0 +1,22 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Kitas und Schulen besser vor Hitzewellen schützen, Investitionsmittel dafür bereitstellen", "ursachen_ids": [1802], "zitat": "Bildungseinrichtungen, insbesondere Kitas und Schulen, müssen vor Hitzewellen besser geschützt werden. Dafür müssen Investitionsmittel bereitgestellt werden.", "seite": 38 },
+    { "beschreibung": "Mehr öffentliche Parks und Grünflächen gegen die Hitze sowie öffentliche Wasserspender; Gebäude- und Flächenbegrünung ausweiten", "ursachen_ids": [1803, 1802], "zitat": "Wir wollen mehr öffentliche Parks und Grünflächen, Kleingärten und Gemeinschaftsgärten gegen die Hitze, öffentliche Toiletten und Wasserspender.", "seite": 45 },
+    { "beschreibung": "Flächenentsiegelung vorantreiben, Städte zu Schwammstädten machen und vor Flutkatastrophen schützen", "ursachen_ids": [1804], "ursachen_offen": [1805], "zitat": "Wir müssen die Flächenentsiegelung vorantreiben, Städte müssen zu Schwammstädten werden und vor Flutkatastrophen geschützt werden.", "seite": 45 },
+    { "beschreibung": "Luftaustausch zwischen Stadt und Umland durch bessere Raumplanung verbessern", "ursachen_ids": [1803], "zitat": "Den Luftaustausch zwischen der Stadt und dem Umland wollen wir durch eine bessere Raumplanung verbessern.", "seite": 45 },
+    { "beschreibung": "Klimaanpassung als Gemeinschaftsaufgabe von Bund, Ländern und Kommunen definieren, Katastrophenschutz massiv aufwerten", "ursachen_ids": [1801], "ursachen_offen": [1805], "zitat": "Klimaschutz und Klimaanpassung muss als Gemeinschaftsaufgabe definiert werden, damit Bund, Länder und Kommunen gemeinsam handeln können.", "seite": 33 },
+    { "beschreibung": "Sektorziele im Klimaschutzgesetz wiederherstellen, verbindliche Ziele und Emissionsgrenzen", "ursachen_ids": [1801], "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen", "zitat": "Wir wollen verbindliche Ziele und Emissionsgrenzen und machen den Konzernen klare Vorschriften. Die Sektorziele stellen wir wieder her.", "seite": 33 },
+    { "beschreibung": "Emissionshandel für Wärme und Verkehr (ETS-2) ablehnen, stattdessen verbindliche Klimaziele und Emissionsgrenzen", "ursachen_ids": [1801], "buendel": "CO₂-Bepreisung und Emissionshandel", "zitat": "Wir lehnen den Emissionshandel in den Sektoren Wärme und Verkehr (ETS-2) ab: Stattdessen müssen verbind- liche Klimaziele und Emissionsgrenzen gesetzt werden.", "seite": 33 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1805, "seiten": [33, 44, 45], "grund": "Hochwasserschutz nur als Katastrophenschutz bzw. Schutz von Städten ohne konkretes Instrument; nur als ursachen_offen erfasst." },
+    { "ursache": 1806, "seiten": [44], "grund": "Keine Zusage zu Elementarschadenversicherung; Treffer 'Soforthilfe' betrifft Kommunalfinanzen." }
+  ]
+}
+
+Protokoll
+Gelesen: S. 32-33 (Klimaschutz und Klimaanpassung), S. 38, S. 44-45 (Städte umbauen), Kontext der Fundstellen.
+Nicht erfasst: S. 33 Ausbau erneuerbarer Energien / Energiewende (öffentliches Eigentum) nicht einzeln aufgenommen; S. 34 Ablehnung von CCS und Gaskraftwerken nicht aufgenommen (Zeit); S. 44 "Klimaanpassung und Katastrophenschutz müssen als selbstverständliche Aufgaben der öffentlichen Versorgung definiert werden" ähnlich der S.33-Zusage; S. 44 Soforthilfeprogramm für Kommunen (Finanzkrisen, kein Zweck aus Ursachen).
+Hitzeaktionspläne, Hitzewarnung, Pflege: keine Zusage gefunden.

@@ -1,0 +1,593 @@
+{
+  "pruefsumme": "ba489bf1d274416bbe9b54572dc64f4eee63ced1f06f9ed39920095a61d15287",
+  "thema": {
+    "id": 18,
+    "name": "Hitze und Unwetter",
+    "ziel": "Menschen bleiben bei Hitze gesund und können Schäden durch Unwetter an Wohnung und Eigentum finanziell verkraften."
+  },
+  "ursachen": [
+    {
+      "id": 1801,
+      "beschreibung": "Hitze nimmt zu: Die Zahl der Heißen Tage (mindestens 30 °C) hat sich im Mittel über Deutschland seit den 1950er-Jahren von etwa 4 auf durchschnittlich 12 pro Jahr verdreifacht",
+      "ebene": "bund"
+    },
+    {
+      "id": 1802,
+      "beschreibung": "Hitze fordert Todesopfer: Das RKI schätzt für die Sommer 2023 und 2024 jeweils rund 3.000 hitzebedingte Sterbefälle, vor allem bei Menschen über 75 Jahren",
+      "ebene": "bund"
+    },
+    {
+      "id": 1803,
+      "beschreibung": "Großstädte heizen sich auf: In heißen Sommern gab es in Berlin bis zu 20 Tropennächte (Bundesmittel 1 bis 1,5), die Innenstadt war über 11 Kelvin wärmer als das Umland",
+      "ebene": "land"
+    },
+    {
+      "id": 1804,
+      "beschreibung": "Viel Fläche ist versiegelt: Ende 2018 waren etwa 45,1 % der Siedlungs- und Verkehrsfläche versiegelt, Regenwasser versickert dort kaum und fließt über die Kanalisation direkt in die Gewässer",
+      "ebene": "land"
+    },
+    {
+      "id": 1805,
+      "beschreibung": "Auch in Überschwemmungsgebieten wird weiter gebaut: Die bebaute Fläche dort wuchs in rund 20 Jahren bis 2021 um rund 100 km² (knapp 13 %), in rund der Hälfte der Gemeinden ist dort bebaut",
+      "ebene": "land"
+    },
+    {
+      "id": 1806,
+      "beschreibung": "Viele Wohngebäude sind nicht gegen Elementarschäden versichert: 2024 hatten 57 % eine Volldeckung (vorläufig), in Mecklenburg-Vorpommern 37 %, in Sachsen-Anhalt und Berlin 52 %",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        1801,
+        1802
+      ],
+      "text": "Maßnahmen, die Treibhausgasemissionen senken, oder Zusagen, Klimaschutzinstrumente abzuschaffen, zurückzunehmen oder zu begrenzen, gehören zu 1801 – in beiden Richtungen gleich, unabhängig davon, ob sie dem Ziel helfen (das entscheidet die Bewertung). Nicht zusätzlich zu 1802 zuordnen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        1801
+      ],
+      "text": "Hitzeanpassung, die nicht einer der Ursachen 1802 bis 1805 zuzuordnen ist (etwa eine nationale Anpassungsstrategie mit konkreter Zusage), gehört zu 1801. Ein bloßes Bekenntnis zu Klimazielen ohne Instrument ist keine Maßnahme."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        1802
+      ],
+      "text": "Zu 1802 gehören Hitzeaktionspläne, Hitzewarnung, Hitzeschutz in Pflege, Krankenhäusern und für ältere Menschen, Kühlräume und Trinkwasser als Gesundheitsschutz. Allgemeine Warnsysteme (Sirenen, Warn-Apps) ohne Hitzebezug im Zitat gehören nicht dazu."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        1803
+      ],
+      "text": "Zu 1803 gehören Stadtgrün, Straßenbäume, Verschattung, Frischluftschneisen und Hitzeschutz an Gebäuden, wenn das Zitat Stadt, Quartier oder Siedlung oder Hitze bzw. Kühlung nennt. Waldumbau, allgemeiner Wohnungsbau und Kommunalfinanzen ohne diesen Bezug gehören nicht dazu."
+    },
+    {
+      "nr": 5,
+      "ursachen": [
+        1804,
+        1805
+      ],
+      "text": "Zu 1804 gehören Entsiegelung, Schwammstadt, Regenwasserbewirtschaftung, Versickerung, Begrenzung des Flächenverbrauchs und Kanal- oder Speicherausbau gegen Starkregen in Siedlungen. Wasserrückhalt in Landwirtschaft, Wald oder Mooren ohne Siedlungsbezug gehört nicht zu 1804; mit Hochwasserbezug im Zitat zu 1805."
+    },
+    {
+      "nr": 6,
+      "ursachen": [
+        1803,
+        1804
+      ],
+      "text": "Eine Maßnahme gehört nur dann zu 1803 und 1804 zugleich, wenn das Zitat beide Wirkungen nennt (Kühlung und Regenwasser, etwa Gründächer zur Kühlung und zum Wasserrückhalt). Sonst nur die genannte Wirkung; im Zweifel die zweite als ursachen_offen."
+    },
+    {
+      "nr": 7,
+      "ursachen": [
+        1805
+      ],
+      "text": "Zu 1805 gehören technischer und naturnaher Hochwasserschutz (Deiche, Rückhaltebecken, Polder, Deichrückverlegung, Retentionsflächen, Auen mit Hochwasserbezug) und Zusagen, Bauen in Überschwemmungsgebieten zu begrenzen – auch ohne ausdrückliches Bauverbot. Gewässerrenaturierung ohne Hochwasserbezug im Zitat gehört nicht dazu."
+    },
+    {
+      "nr": 8,
+      "ursachen": [
+        1805
+      ],
+      "text": "Ausstattung von Feuerwehr und Katastrophenschutz reagiert auf Hochwasser, setzt aber nicht an der Bebauung von Überschwemmungsgebieten an: nur als ursachen_offen [1805], wenn das Zitat Hochwasserschutz nennt, sonst nicht erfassen."
+    },
+    {
+      "nr": 9,
+      "ursachen": [
+        1806
+      ],
+      "text": "Zu 1806 gehören Pflichtversicherung, Angebotspflicht mit Abwahlmöglichkeit, staatliche Rückversicherung und Förderung oder Information zur Elementarschadenversicherung. Staatliche Hilfen nach einem Schaden ändern den Versicherungsschutz nicht: nur als ursachen_offen [1806]."
+    },
+    {
+      "nr": 10,
+      "text": "Finanzierungszusagen ohne Zweck aus einer Ursache („Kommunen stärken“, „Klimaanpassung finanzieren“) sind keine Maßnahme. Nennt das Zitat den Zweck (etwa ein Programm für Entsiegelung), gehört die Maßnahme zur Ursache dieses Zwecks."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Klimaanpassung als Gemeinschaftsaufgabe von Bund, Ländern und Kommunen definieren, Katastrophenschutz massiv aufwerten",
+      "zitat": "Klimaschutz und Klimaanpassung muss als Gemeinschaftsaufgabe definiert werden, damit Bund, Länder und Kommunen gemeinsam handeln können.",
+      "ursachen_ids": [
+        1801
+      ],
+      "ursachen_offen": [
+        1805
+      ],
+      "pruefsumme": "a19576d0ddc0b76a"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Geplanten Ausstieg aus der Braunkohleverstromung nicht umsetzen, Kohlekraftwerke ausbauen.",
+      "zitat": "Den geplanten Ausstieg aus der Braunkohleverstromung wird es mit [Partei] nicht geben.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "54cc7cd3ec31228c"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Kommunale Wärmepläne für klimaneutrale Wärmeversorgung fördern.",
+      "zitat": "Wir wollen lokale Wärmepläne fördern, die eine klimafreundliche und klug geplante Energieversorgung auf kommunaler Ebene sicherstellen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "262ef7ac8cf59cbf"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Alle verbliebenen Kohlekraftwerke ab 2030 nicht mehr befeuern, Kohleförderung beenden, fossiles Gas schrittweise reduzieren",
+      "zitat": "halten wir daran fest, alle verbliebenen Kohlekraftwerke ab 2030 nicht mehr zu befeuern und mit dem Koh - leausstieg die Kohleförderung in Deutsch - land einzustellen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "e43a9716616b2b7a"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Förderung für fossilfreie Heizungen und Wärmenetze ausbauen, Energieberatung ausbauen",
+      "zitat": "Die Unterstützung auf diesem Weg werden wir ausbauen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "4f6baedc919fd007"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckende Pflichtversicherung für Elementarschäden einführen",
+      "zitat": "Eine flächendeckende Pflichtversicherung für Elementarschäden ist die richtige finanzielle Schadensvorsorge. Wir werden sie deshalb einführen und so die Lasten im Sinne der Steuerzahler gerecht verteilen.",
+      "ursachen_ids": [
+        1806
+      ],
+      "pruefsumme": "0700a044249d2c59"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Abgabe auf CO₂ abschaffen.",
+      "zitat": "Abschaffung der CO₂ -Abgabe",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "554b4a2e327f4e51"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Luftaustausch zwischen Stadt und Umland durch bessere Raumplanung verbessern",
+      "zitat": "Den Luftaustausch zwischen der Stadt und dem Umland wollen wir durch eine bessere Raumplanung verbessern.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "d1d78bd353ca4a7a"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Mittel aus Aktionsprogramm Natürlicher Klimaschutz flächendeckend einsetzen, um Wälder, Moore, Flussauen und Stadtgrün zu schützen.",
+      "zitat": "Mittel aus dem Aktionsprogramm Natürlicher Klimaschutz und dem Naturschutzfonds sollen flächendeckend eingesetzt werden, um Wälder, Moore, Flussauen oder Stadtgrün zu schützen.",
+      "ursachen_ids": [
+        1801,
+        1803
+      ],
+      "pruefsumme": "57236a77cdb5382f"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Nationales Klimaneutralitätsziel 2045 im Klimaschutzgesetz durch das europäische Ziel 2050 ersetzen",
+      "zitat": "Da nationale Sonderziele im Rahmen des europäischen Emissionshandels keinerlei zusätzlichen Nutzen für den Klimaschutz haben können, wollen wir das Ziel der Klimaneutralität bis 2045 im deutschen Klimaschutzgesetz durch das europäische Ziel der Klimaneutralität bis 2050 ersetzen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "1d3a0878779bf183"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Städte und Gemeinden bei Wassermanagement und verstärkter Begrünung unterstützen",
+      "zitat": "Die Anpassung an den Klimawandel wird immer wichtiger. Wir unterstützen Städte und Gemeinden beim verantwortungsvollen Umgang mit Wasser und einer verstärkten Begrünung.",
+      "ursachen_ids": [
+        1803
+      ],
+      "ursachen_offen": [
+        1804
+      ],
+      "pruefsumme": "d1b73b9f09a2537b"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Wiedereinstieg in die Kernenergie, bestehende Kraftwerke so schnell wie möglich wieder in Betrieb nehmen.",
+      "zitat": "Neben dem kurzfristig notwendigen Ausbau von Kohlekraftwerken planen wir den Wiedereinstieg in die Kernenergie.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "201a72f5065f4d0d"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "CO2-Bepreisung zum Leitinstrument ausbauen, Einnahmen zurückgeben",
+      "zitat": "Die CO2-Bepreisung bauen wir im Instrumentenmix zum Leitinstrument aus und geben deren Einnahmen an Verbraucher und Wirtschaft zurück.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "9f9d2a4c385e9237"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Mehr öffentliche Parks und Grünflächen gegen die Hitze sowie öffentliche Wasserspender; Gebäude- und Flächenbegrünung ausweiten",
+      "zitat": "Wir wollen mehr öffentliche Parks und Grünflächen, Kleingärten und Gemeinschaftsgärten gegen die Hitze, öffentliche Toiletten und Wasserspender.",
+      "ursachen_ids": [
+        1803,
+        1802
+      ],
+      "pruefsumme": "fffa15436b7652ce"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Verbrenner-Verbot rückgängig machen",
+      "zitat": "Das Verbrenner-Verbot muss rückgängig gemacht werden.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "673be878b901338d"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Versicherungsschutz gegen Elementarschäden sozialverträglich ausweiten",
+      "zitat": "Den Versicherungs - schutz gegen Elementarschäden werden wir sozialverträglich ausweiten.",
+      "ursachen_ids": [
+        1806
+      ],
+      "pruefsumme": "7688d438d32b0ab8"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Vorsorge gegen Klimafolgen wie Hitzewellen im Bevölkerungsschutz stärken.",
+      "zitat": "Wir verbessern den Bevölkerungsschutz und die Katastrophenhilfe. Wir stärken die Vorsorge gegen Klimafolgen wie extreme Niederschläge, Hitzewellen und Dürre.",
+      "ursachen_ids": [
+        1801
+      ],
+      "ursachen_offen": [
+        1802
+      ],
+      "pruefsumme": "9d7fd37ba834d095"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Heizungsgesetz abschaffen, stattdessen technologieoffen emissionsarme Wärme fördern",
+      "zitat": "Das Heizungsgesetz der Ampel schaffen wir ab.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "28b3ad39a0abade6"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Rahmenbedingungen für Kohlenstoffabscheidung, -nutzung und -speicherung samt Transportinfrastruktur schaffen",
+      "zitat": "Wir schaffen die notwendigen Rahmenbedingungen, um Carbon Capture and Utilization (CCU), Carbon Capture and Storage (CCS) und Direct Air Capture (DACCS) sowie die erforderliche Transportinfrastruktur zu ermöglichen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "6dc5510405a7057d"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Weiteren Ausbau der Windenergie ablehnen.",
+      "zitat": "Deshalb lehnen wir den weiteren Ausbau der Windenergie ab.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "3be0b39bce15d740"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Flächenverbrauch mit neuen Instrumenten (Flächenzertifikatehandel, Baulandabgabemodell) bis 2030 auf 30 Hektar pro Tag senken",
+      "zitat": "Deshalb setzen wir auf neue Instrumente wie den Flächenzer - tifikatehandel oder ein Baulandabgabemo - dell. So setzen wir Anreize, den Flächenver - brauch bis 2030 auf 30 Hektar pro Tag und langfristig auf Nettonull zu senken.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "fc11da2f995efb1d"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Küsten- und Hochwasserschutz priorisieren und von der Ausgleichspflicht für solche Maßnahmen wegkommen",
+      "zitat": "Um die Menschen in gefährdeten Regionen zu schützen, hat für uns der Küsten- und Hochwasserschutz Priorität. Wir wollen weg von der Ausgleichspflicht für Maßnahmen des Küsten- und Hochwasserschutzes.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "b43e8380c99002b1"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Aus dem Pariser Klimaabkommen aussteigen.",
+      "zitat": "Wir wollen zudem aus dem Pariser Klimaabkommen aussteigen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "ea14d912ce4893e1"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Moorschutz intensivieren und Anreize für Wiedervernässung geben",
+      "zitat": "Wir wollen den Schutz der Moore gemeinsam mit den Grundstückseigentümern intensivieren und Anreize für Wiedervernässungsprojekte geben.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "390ca045b51bc4a1"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Heizungsgesetz vollständig auslaufen lassen; stattdessen Zertifikatehandel",
+      "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "0f6d52d8bb78803a"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Windkraft und Fotovoltaik konsequent ausbauen und mit Speichern einbinden.",
+      "zitat": "Ihr konsequenter Ausbau und die Einbindung von Speichern macht unsere Energieversorgung sicher und dauerhaft bezahlbar.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "1ec7c4c38fd90786"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Sektorziele im Klimaschutzgesetz wiederherstellen, verbindliche Ziele und Emissionsgrenzen",
+      "zitat": "Wir wollen verbindliche Ziele und Emissionsgrenzen und machen den Konzernen klare Vorschriften. Die Sektorziele stellen wir wieder her.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "9d241d56756820b4"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Flächenversiegelung reduzieren und Flächen klüger nutzen",
+      "zitat": "Wir nutzen Flächen an Land und Gewässer nachhaltig. Dazu reduzieren wir die Flächenversiegelung, unterstützen die kluge Flächennutzung durch Doppel- und Mehrfachnutzungen und verbessern die Ausgleichsmaßnahmen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "3014d859338b06fa"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Kitas und Schulen besser vor Hitzewellen schützen, Investitionsmittel dafür bereitstellen",
+      "zitat": "Bildungseinrichtungen, insbesondere Kitas und Schulen, müssen vor Hitzewellen besser geschützt werden. Dafür müssen Investitionsmittel bereitgestellt werden.",
+      "ursachen_ids": [
+        1802
+      ],
+      "pruefsumme": "41efa93bc25687af"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Faktisches Verbrenner-Verbot ab 2035 umgehend aufheben",
+      "zitat": "Deshalb setzen wir uns für eine umgehende Aufhebung des faktischen Verbrenner-Verbots ab dem Jahr 2035 […] ein",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "0289c3b70f9cd4c0"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Nationalen Hitzeschutzplan ausbauen und Hitzeaktionspläne in allen Kommunen",
+      "zitat": "Zentral sind neben dem Aus - bau des Nationalen Hitzeschutzplans auch Hitzeaktionspläne in allen Kommunen.",
+      "ursachen_ids": [
+        1802
+      ],
+      "pruefsumme": "b456da1acba639e2"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Verbot des Verbrennungsmotors aufheben.",
+      "zitat": "Im Verkehrssektor wird sich [Partei] auf allen Ebenen dafür einsetzen, das Verbot des Ver- brennungsmotors aufzuheben.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "8ecf01862ab8cf3c"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Sektorverantwortung im Klimaschutzgesetz stärken, bei Zielverfehlung verbindlich nachsteuern",
+      "zitat": "Verantwortung von Sektoren im Bundes- Klimaschutzgesetz stärken, in denen Kli - maschutz zu wenig vorankommt. Bei prog - nostizierter längerfristiger Zielverfehlung soll in den jeweiligen Sektoren verbindlich nachgesteuert werden",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "0b0aa7ce8f8c9c83"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Städtebauförderung zur Klimaanpassung: Begrünung, Entsiegelung (Schwammstadt) und kühlende öffentliche Räume in Städten.",
+      "zitat": "Wir wollen eine Städtebauförderung zur Anpassung an den Klimawandel, um den Städten zu ermöglichen, grüne Infrastruktur zu schaffen und hitzeresiliente Städteplanung umzusetzen.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "d92d6468cf66cbc7"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Hochwasserschutz mit den Ländern verbessern: natürliche Überschwemmungsräume, Auen mehr Raum, Deiche und Rückhaltesysteme, beschleunigte Umsetzung",
+      "zitat": "den wir den Hochwasserschutz zusammen mit den Ländern verbessern. Insbesondere brauchen wir Investitionen in natürliche Überschwemmungsräume wie Auenwälder oder Erlenbrüche.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "c41249c234531d94"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Europäischen Emissionshandel für Verkehr und Gebäude unterstützen und den CO₂-Preis als zentralen Hebel stärken",
+      "zitat": "durch konkrete Maßnahmen wie die Unterstützung für den geplanten europäischen Emissionshandel für Verkehr und Gebäude und den Clean Industrial Act.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "d761a37430d3cdcc"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Bau neuer Kernkraftwerke und Wiederinbetriebnahme vorhandener rechtlich ermöglichen, ohne Subventionen",
+      "zitat": "Wir wollen die Nutzung klimafreundlicher Zukunftstechnologien wie Kernfusion und sicherer Kernkraftwerke ohne Subventionen ermöglichen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "4088a5092f6ef665"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Verbot von Gas- und Ölheizungen aufheben.",
+      "zitat": "Aufhebung des Verbots von Gas- und Ölheizungen",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "5289e7f81b370abc"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Erneuerbare Energien ohne EEG-Subventionen für neue Anlagen vollständig in den Markt überführen",
+      "zitat": "Wir wollen die erneuerbaren Energien vollständig in den Markt überführen. Da auf diese bereits heute mehr als 60 Prozent der Stromproduktion entfallen, sind die EEG-Subventionen für neue Anlagen nicht mehr zu rechtfertigen.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "3743e62ea2c692c6"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Kein weiteres endgültiges Abschalten von Kohlekraftwerken, bevor Ersatz gebaut ist",
+      "zitat": "Auf dem Weg darf es kein weiteres endgültiges Abschalten von Kohlekraftwerken geben, solange als Ersatz keine neuen Gaskraftwerke und Kraft-Wärme-Kopplungs-Anlagen gebaut sind.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "97276d8c4f31f788"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Abscheidung und Speicherung von Treibhausgasen (CCS/CCU) diskriminierungsfrei als Klimaschutz-Option ermöglichen",
+      "zitat": "Die Abscheidung und Speicherung von Treibhausgasemissionen durch Carbon Capture and Storage (CCS) und Carbon Capture and Utilization (CCU) wollen wir diskriminierungsfrei als Klimaschutz-Option ermöglichen",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "24f01ea6f5047684"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Städte gegen Hitzewellen und Starkregen schützen: mehr Entsiegelung, Frischluftschneisen, Gebäude- und Stadtgrün, Trinkbrunnen, Schwammstadt",
+      "zitat": "Dafür sorgen wir mit mehr Bodenentsiegelung, Frischluftschneisen, Gebäudebegrünung, Stadtgrün und öffentlichen Trinkbrunnen. Als Schwammstädte sollen sie künftig mehr Wasser aufnehmen, speichern und im Sommer kühlend wirken.",
+      "ursachen_ids": [
+        1802,
+        1803,
+        1804
+      ],
+      "pruefsumme": "fab7b73e1dae6a8e"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Flächenentsiegelung vorantreiben, Städte zu Schwammstädten machen und vor Flutkatastrophen schützen",
+      "zitat": "Wir müssen die Flächenentsiegelung vorantreiben, Städte müssen zu Schwammstädten werden und vor Flutkatastrophen geschützt werden.",
+      "ursachen_ids": [
+        1804
+      ],
+      "ursachen_offen": [
+        1805
+      ],
+      "pruefsumme": "8874180742dcb5b0"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Einheitlicher europäischer Emissionshandel als Leitinstrument der Klimapolitik, mit global angestrebtem Preis für Treibhausgase",
+      "zitat": "Dafür wollen wir einen einheitlichen europäischen Emissionshandel als Leitinstrument der Klimapolitik etablieren.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "bdbaa3a1376da6f7"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Bund unterstützt Feuerwehren bei komplexen Gefahrenlagen, etwa Hochwasserschutz.",
+      "zitat": "Wir werden weiter für eine solide ergänzende Ausstattung für die Feuerwehren sorgen. Wir wollen, dass der Bund hier hilft, auf komplexe Gefahrenlagen vorbereitet zu sein, etwa beim Hochwasserschutz und dem CBRN-Einsatz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1805
+      ],
+      "pruefsumme": "2c81698d6307cb04"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Emissionshandel für Wärme und Verkehr (ETS-2) ablehnen, stattdessen verbindliche Klimaziele und Emissionsgrenzen",
+      "zitat": "Wir lehnen den Emissionshandel in den Sektoren Wärme und Verkehr (ETS-2) ab: Stattdessen müssen verbind- liche Klimaziele und Emissionsgrenzen gesetzt werden.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "ef626d9265b213e2"
+    }
+  ]
+}
