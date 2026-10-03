@@ -229,6 +229,18 @@ Nicht erfasst wurden (Gründe in den Protokollen): Prüfaufträge („prüfen“
 
 **Entscheidungen der Betreiberin zur Erfassung (2. 10. 2026):** Leitfaden `daten/leitfaeden/9.json` mit dem Bündel „Vermögensabschöpfung und Einziehung“ bestätigt. Wohnungseinbruch wird keine eigene Ursache; Einbruchschutz bleibt nach Regel 15 draußen. Maßnahmen, die ein Mittel nur ablehnen (etwa Vorratsdatenspeicherung oder Videoüberwachung), behalten Wirksamkeit 0: Die Ablehnung trägt nichts zum Ziel bei, was ein Programm stattdessen vorschlägt, zählt als eigene Maßnahme (allgemeine Regel im Bewertungsmaßstab, `daten/README.md`).
 
+### Erfassung der Landesprogramme (3. 10. 2026)
+
+KI-Entwurf, nach dem Festlegen der Ursachen. Erfasst sind die **21 Landesprogramme** für Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin (je sieben Parteien) zu den Land-Ursachen 901, 902, 903, 904, 908 und 909. Grundlage ist derselbe Leitfaden `daten/leitfaeden/9.json` wie für die Bundesprogramme (unverändert, keine neuen Bündel).
+
+Suchbegriffe: dieselben wie bei den Bundesprogrammen (oben), für die Landesprogramme genauer gefasst, weil sie dort vor allem mitten in anderen Wörtern trafen – für alle 21 Programme gleich: „streife“ → „polizeistreife“, „fußstreife“, „streifendienst“, „streifenwagen“; „angstr“ → „angstraum“ (neben „angsträum“); „konsumr“ entfällt (über „drogenkonsumr“ abgedeckt); „richter“ → „richterstell“, „richterinnen“, „richterschaft“; „gerichte“ → „gerichtsverfahren“, „gerichtsstandort“, „ausstattung der justiz“; „befugnis“ → „polizeigesetz“, „polizeirecht“, „eingriffsbefugnis“, „überwachungsbefugnis“; „beschleunig“ → „verfahrensbeschleunig“, „beschleunigung der verfahren“; „beratungsstelle“ → „frauenberatung“, „fachberatungsstelle“, „interventionsstelle“, „gewaltberatung“. Belassen: „bahnhof“ (24 Treffer, Wörter wie „Hauptbahnhof“ gehören dazu) und „ermittler“ (14 Treffer, davon 6 aus „Vermittler“ und Ähnlichem).
+
+Ergebnis: 279 erfasste Zusagen, davon 270 Maßnahmen eingetragen (IDs 7662–7931) und 36 neue Landesinstrumente (IDs 7626–7661); die Bundesinstrumente 7481–7507 gelten nur für Bundesmaßnahmen. Neun Zusagen ordnete die Bewertung keiner Ursache zu (Ziele ohne Instrument, Waffenrecht für legale Besitzer ohne Bezug zum öffentlichen Raum, Schutz von Einsatzkräften, Wirtschaftskriminalität, Dunkelfeldanalysen als Ermittlungsarbeit).
+
+Ohne Maßnahme zu einer Ursache: **ST** 901 SPD; 903 FDP; 904 AfD; 908 Union, SPD, FDP; 909 Union, SPD, FDP, AfD, BSW. **MV** 903 SPD, FDP, Linke; 904 AfD; 908 Union, FDP, AfD, BSW; 909 Union, SPD, Linke, BSW. **BE** 903 SPD; 904 AfD; 908 Union, AfD, BSW; 909 FDP, Linke, BSW. Nicht durchsucht: keins.
+
+Nicht erfasst wurden (Gründe in den Protokollen) wie bei den Bundesprogrammen: Prüfaufträge, Bekenntnisse ohne Instrument, Schutz von Einsatzkräften, Jugendarbeit und Schulsozialarbeit ohne Gewaltbezug, „Herkunft“ im Sinn von sozialer Herkunft oder Herkunftssprache.
+
 ### Erster Durchgang (29. 9.–1. 10. 2026)
 
 Stand: 29. 9. 2026, ergänzt 30. 9. 2026 (905 neu gefasst, 909) · KI-Entwurf, noch nicht von der Betreiberin freigegeben
