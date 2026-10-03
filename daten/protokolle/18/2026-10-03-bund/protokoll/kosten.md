@@ -16,3 +16,4 @@
 | programm-erfassung | AfD-Bund (Rückfrage 1) | 39.099 | 9 s |
 | programm-erfassung | BSW-Bund | 37.283 | 24 s |
 | blind-bewertung | Teil-Neubewertung M47–M53 (BSW Bund) | 41.671 | 17 s |
+| programm-erfassung | BSW-Bund (Rückfrage 1) | 38.779 | 7 s |

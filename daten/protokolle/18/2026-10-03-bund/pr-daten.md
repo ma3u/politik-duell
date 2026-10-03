@@ -15,7 +15,7 @@
 | FDP | 7 → 7 |
 | AfD | 7 → 7; 1 Rückfrage |
 | Linke | 7 → 7 |
-| BSW | 7 → 7 |
+| BSW | 7 → 7; 1 Rückfrage |
 
 **Ohne Maßnahme zu einer Ursache:** **Bund** 1802 Union, FDP, AfD, BSW; 1803 FDP, AfD, BSW; 1804 SPD, FDP, AfD, BSW; 1805 SPD, FDP, AfD; 1806 SPD, FDP, AfD, Linke, BSW.
 
@@ -63,6 +63,8 @@ AfD-Bund 1805 (S. 79, 81): S. 79 beschreibt Ahrtal, fehlende Dämme und bebaute 
 AfD-Bund 1806 (S. 3, 16, 22, 34, 55, 62, 103, 120): Treffer nur Eigenverantwortung allgemein, Sozialversicherungspflicht, Opt-out Asyl, Dienstversicherung; keine Elementarschadenversicherung.
 Linke-Bund 1805 (S. 33, 44, 45): Hochwasserschutz nur als Katastrophenschutz bzw. Schutz von Städten ohne konkretes Instrument; nur als ursachen_offen erfasst.
 Linke-Bund 1806 (S. 44): Keine Zusage zu Elementarschadenversicherung; Treffer 'Soforthilfe' betrifft Kommunalfinanzen.
+BSW-Bund 1804 (S. 28, 41): S. 28: Eindämmung der Bodenspekulation, keine Entsiegelung oder Flächenbegrenzung; S. 41: 'versickern' bildlich für Rundfunkgebühren. Kein Regenwasser- oder Flächenbezug.
+BSW-Bund 1806 (S. 21): Treffer ist Sozialversicherungspflicht bei Minijobs, kein Elementarschaden. Mehrgefahrenversicherung nur für landwirtschaftliche Betriebe (S. 20), nicht Wohngebäude.
 ```
 
 </details>
@@ -70,7 +72,7 @@ Linke-Bund 1806 (S. 44): Keine Zusage zu Elementarschadenversicherung; Treffer '
 **Vergleich nach Rückfragen** (`entwurf:zusammenfuehren`): 
 
 ```
-Stand 2 → jetzt:
+Stand 2 → Stand 3:
   BSW (Bund): neu in der Erfassung (7 Maßnahmen)
 ```
 
@@ -175,6 +177,7 @@ Modell der Bewertung: Opus (Modell der Koordination)
 | Programm bzw. Kennung | Anlass (Regel) | Ergebnis |
 | --- | --- | --- |
 | AfD (Bund) | 1804/1805 mit Treffern (S. 79, 81) ohne Maßnahme und ohne Begründung; erst bei der Prüfung nach punkte bemerkt (späte Rückfrage) | keine Maßnahme; `nicht_erfasst` 1804 und 1805 mit S. 79, 81 und Grund ergänzt |
+| BSW (Bund) | 1804/1806 mit Treffern (S. 21, 28, 41) ohne Maßnahme und ohne Begründung; gleicher Maßstab wie bei AfD (Bund) | keine Maßnahme; `nicht_erfasst` 1804 (S. 28, 41) und 1806 (S. 21) mit Grund ergänzt |
 ```
 
 </details>
@@ -200,6 +203,7 @@ Modell der Bewertung: Opus (Modell der Koordination)
 | programm-erfassung | AfD-Bund (Rückfrage 1) | 39.099 | 9 s |
 | programm-erfassung | BSW-Bund | 37.283 | 24 s |
 | blind-bewertung | Teil-Neubewertung M47–M53 (BSW Bund) | 41.671 | 17 s |
+| programm-erfassung | BSW-Bund (Rückfrage 1) | 38.779 | 7 s |
 ```
 
 </details>
