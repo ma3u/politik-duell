@@ -46,6 +46,10 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
       expect(blind('Read', { file_path: '/repo/.cache/entwurf/9/blind.json' })).toBeNull()
       expect(blind('Read', { file_path: '.cache/entwurf/17/blind.json' })).toBeNull()
       expect(blind('Write', { file_path: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt', content: '{}' })).toBeNull()
+      // Die eigene Antwort darf er lesen (Write verlangt das vor dem Überschreiben) und genau die Selbstprüfung ausführen.
+      expect(blind('Read', { file_path: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt' })).toBeNull()
+      expect(blind('Bash', { command: 'npm run -s entwurf:antwort-pruefen -- 9' })).toBeNull()
+      expect(blind('Bash', { command: "npm run -s entwurf:antwort-pruefen '--' 17" })).toBeNull()
       expect(blind('WebSearch', { query: 'Wirkung Videoüberwachung Studie' })).toBeNull()
       expect(blind('WebFetch', { url: 'https://www.kfn.de/studie.pdf' })).toBeNull()
     })
@@ -56,7 +60,7 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
         '/repo/.cache/entwurf/9/kennungen.json',
         '/repo/.cache/entwurf/9/programme/SPD-Bund.json',
         '/repo/.cache/entwurf/9/texte/SPD-Bund.txt',
-        '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt',
+        '/repo/.cache/entwurf/9/protokoll/bewertung-auftrag.txt',
         '/repo/.cache/entwurf/9/protokoll/blind-0123456789abcdef.json',
         '/repo/.cache/entwurf/9/x/../erfassung.json',
         '/repo/.cache/entwurf/9/x/../../9/blind.json/../kennungen.json',
@@ -71,6 +75,16 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
       expect(blind('Write', { file_path: '/repo/.cache/entwurf/9/bewertung.json', content: '' })).toMatch(/gesperrt/)
       expect(blind('Edit', { file_path: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt' })).toMatch(/gesperrt/)
       expect(blind('Bash', { command: 'cat .cache/entwurf/9/erfassung.json' })).toMatch(/gesperrt/)
+      for (const command of [
+        'npm run -s entwurf:antwort-pruefen -- 9; cat .cache/entwurf/9/erfassung.json',
+        'npm run -s entwurf:antwort-pruefen -- 9 && cat x',
+        'npm run -s entwurf:antwort-pruefen -- 9 | tee x',
+        'npm run -s entwurf:antwort-pruefen -- $(cat x)',
+        'npm run -s entwurf:antwort-pruefen -- 9 > x',
+        'npm run -s entwurf:bewertung-pruefen -- .cache/entwurf/9/erfassung.json x',
+        'node scripts/entwurf/antwort-pruefen.ts 9',
+      ])
+        expect(blind('Bash', { command })).toMatch(/gesperrt/)
       expect(blind('Grep', { pattern: 'SPD', path: '.cache' })).toMatch(/gesperrt/)
       expect(blind('Glob', { pattern: '**/*.json' })).toMatch(/gesperrt/)
       expect(blind('Read', {})).toMatch(/gesperrt/)

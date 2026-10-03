@@ -1,0 +1,21 @@
+{
+  "skills": [
+    "thema-erfassen"
+  ],
+  "name": "Pflichtursache ohne Maßnahme, Begründung fehlt",
+  "herkunft": "Landesdurchgang Thema 9 (BSW-ST, Ursache 909): Der Erfassungs-Agent nannte keinen gelesenen Fundort; der Hinweis von entwurf:treffer verlangte eine Rückfrage der Koordination.",
+  "query": "Ein Erfassungs-Agent meldet für eine Pflichtursache mit 12 Treffern keine Maßnahme und nennt keine gelesenen Seiten. Führe den Skill fort.",
+  "files": [
+    ".cache/entwurf/9/protokoll/erfassung-BSW-ST.txt",
+    ".cache/entwurf/9/auftraege/BSW-ST.md"
+  ],
+  "expected_behavior": [
+    "entwurf:programm-pruefen lehnt die Datei ab („Pflichtursache … in „nicht_erfasst“ …“), der Agent ergänzt nicht_erfasst mit Seiten und Grund und prüft erneut",
+    "Die Koordination stellt dafür keine Rückfrage",
+    "entwurf:treffer meldet den Hinweis danach nicht mehr; der Grund steht über entwurf:bericht im Pull Request",
+    "Die Regel gilt für alle Programme gleich"
+  ],
+  "automatische_tests": [
+    "scripts/entwurf.test.ts › Suchbegriffe und Begründungen im Repository › sieht Treffer-Hinweise …"
+  ]
+}

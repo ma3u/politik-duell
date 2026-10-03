@@ -21,15 +21,15 @@ flowchart TD
     subgraph B["Phase B · /thema-erfassen"]
         B0{"Ursachen freigegeben<br/>und unverändert?"}
         STOP["Abbruch"]
-        B1["Leitfaden und Suchbegriffe festlegen<br/>entwurf:treffer --vorab: zu allgemeine Begriffe genauer fassen<br/>entwurf:auftrag: Texte, Treffer, Fundstellen je Programm"]
+        B1["Leitfaden mit Suchbegriffen (im Repository)<br/>entwurf:treffer --vorab: zu allgemeine Begriffe genauer fassen oder begründen<br/>entwurf:auftrag: Texte, Treffer, Fundstellen je Programm"]
         B2["Agent: programm-erfassung<br/>Nur der eigene Auftrag, bis zu 7 parallel"]
-        B3["Agent prüft sich selbst<br/>entwurf:programm-pruefen: Zitat auf der Seite, Bündel, Ebene<br/>Kurzbericht in fester Form"]
+        B3["Agent prüft sich selbst<br/>entwurf:programm-pruefen: Zitat auf der Seite, Bündel, Ebene, Pflichtursachen begründet<br/>Kurzbericht in fester Form"]
         B4["Koordination: zusammenführen, Treffermatrix<br/>höchstens eine gebündelte Rückfrage je Programm"]
         B5["Vergleich mit dem vorherigen Stand<br/>entfallen, zusammengefasst, Ursache ohne Maßnahme"]
         B0 -->|"Nein"| STOP
         B0 -->|"Ja"| B1 --> B2 --> B3 --> B4
         B3 -->|"Fehler"| B2
-        B4 -->|"Unplausibel oder Pflichtursache unbegründet"| B2
+        B4 -->|"Unplausibel oder offener Hinweis"| B2
         B4 --> B5
         B5 -->|"Verlust durch eigene Rückfrage: Korrektur, protokolliert"| B2
     end
@@ -37,17 +37,17 @@ flowchart TD
     subgraph C["Phase C · Blindbewertung"]
         C1["entwurf:blind<br/>Herkunft anonymisieren, Regeln des Leitfadens, Prüfsumme<br/>Kennungen über den Inhalt: neu / entfallen / geändert<br/>Erfassung einfrieren"]
         C1a["entwurf:bewertung-auftrag<br/>Auftrag mit zwei Pfaden, Prüfsumme, Datum"]
-        C2["Agent: blind-bewertung<br/>liest nur blind.json, schreibt nur bewertung-antwort.txt (Hook)<br/>Forschungsstand, Instrumente, Bewertung<br/>entscheidet die Zuordnung zu Ursachen"]
+        C2["Agent: blind-bewertung<br/>liest nur blind.json, schreibt nur bewertung-antwort.txt (Hook)<br/>Quellen vorhandener Instrumente zuerst, Bewertung<br/>entscheidet die Zuordnung zu Ursachen<br/>prüft sich selbst: entwurf:antwort-pruefen"]
         C3["entwurf:json und entwurf:bewertung-pruefen<br/>Koordination prüft Methode, nicht Ergebnis"]
         B5 -->|"geprüft"| C1 --> C1a --> C2 --> C3
-        C3 -->|"Formfehler: Rückfrage mit Zeile, Spalte, Kennung"| C1a
+        C3 -->|"Formfehler: Rückfrage an denselben Agenten"| C1a
         C3 -->|"wenige Kennungen neu: Teil-Neubewertung"| C1
     end
 
     subgraph D["Phase D · Eintragen und Übergabe"]
         D1["Eintragen als ungeprüfter KI-Entwurf<br/>nur bestätigte Ursachen, IDs und Beleg-Links"]
         D2["Daten, Zitate, Punkte, Seed und Tests prüfen"]
-        D3["Dokumentation und Pull Request<br/>Protokolle und offene Fragen ausweisen"]
+        D3["entwurf:bericht und entwurf:archivieren<br/>Dokumentation und Pull Request<br/>Protokolle im Repository, offene Fragen ausweisen"]
         C3 -->|"Prüfung bestanden"| D1 --> D2 --> D3
     end
 
@@ -60,7 +60,7 @@ flowchart TD
 |---|---|---|
 | `ursachen-recherche` | Unabhängige Quellen recherchieren | Wahlprogramme oder Parteiquellen lesen |
 | `programm-erfassung` | Den eigenen Auftrag und das zugewiesene Programm lesen, Maßnahmen belegen, Ergebnis selbst schreiben und prüfen | Maßnahmen bewerten, andere Programme oder die Gesamterfassung lesen |
-| `blind-bewertung` | `blind.json` lesen, `protokoll/bewertung-antwort.txt` schreiben, unabhängige Quellen recherchieren; Zuordnung zu Ursachen entscheiden | Andere Dateien lesen oder schreiben (Hook), Herkunft suchen |
+| `blind-bewertung` | `blind.json` und die eigene Antwort lesen, `protokoll/bewertung-antwort.txt` schreiben, die Selbstprüfung ausführen, unabhängige Quellen recherchieren; Zuordnung zu Ursachen entscheiden | Andere Dateien lesen oder schreiben, andere Befehle (Hook), Herkunft suchen |
 | Koordination (Hauptagent bei `/thema-erfassen`) | Leitfaden und Suchbegriffe festlegen, Aufträge, Protokolle und Prüfungen koordinieren, eigene fehlerhafte Rückfragen protokolliert korrigieren | Programme selbst lesen, Werte oder Zuordnungen vergeben, Blindliste oder Bewertung abschreiben |
 
 ## Wichtige Regeln

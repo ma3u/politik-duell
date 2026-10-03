@@ -1,6 +1,6 @@
 # Evaluationen für `/thema-erfassen`
 
-Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expected_behavior`). Sie stammen aus echten Fehlern beim Erfassen von Thema 9 (Sicherheit). Jedes Szenario ist zusätzlich als automatischer Test umgesetzt (`scripts/entwurf.test.ts` → „Evaluationen des Skills“, dort wird auch das Format dieser Dateien geprüft). Das Verhalten der Koordination selbst (`expected_behavior`) lässt sich nur in einem Durchlauf beobachten; die Tests sichern die Skripte, auf die sich dieses Verhalten stützt.
+Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expected_behavior`). Sie stammen aus echten Fehlern beim Erfassen von Thema 9 (Sicherheit; Bundes- und Landesdurchgang). Jedes Szenario ist zusätzlich als automatischer Test umgesetzt (`scripts/entwurf.test.ts` → „Evaluationen des Skills“, dort wird auch das Format dieser Dateien geprüft). Das Verhalten der Koordination selbst (`expected_behavior`) lässt sich nur in einem Durchlauf beobachten; die Tests sichern die Skripte, auf die sich dieses Verhalten stützt.
 
 | Datei | Szenario | Automatisch geprüft |
 | --- | --- | --- |
@@ -8,6 +8,8 @@ Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expec
 | [b-kennungen-stabil.json](b-kennungen-stabil.json) | Maßnahme nach Rückfrage eingefügt → Kennungen stabil, Meldung neu/entfallen | eine neue Kennung, alte Bewertung passt nicht mehr, Teil-Neubewertung nur für die neue |
 | [c-programm-nicht-erreichbar.json](c-programm-nicht-erreichbar.json) | Programm online nicht erreichbar → lokale Kopie mit Prüfsumme, sonst „noch nicht erfasst“ | kein Abdeckungseintrag, lokale Kopie nur über die Prüfsumme |
 | [d-parteiname-im-zitat.json](d-parteiname-im-zitat.json) | Rest eines Parteinamens im Zitat → Meldung, Begründung im Pull Request | Rest gemeldet, Zitat wörtlich, Parteiname in Rückfrage erkannt; Hook-Tests in `scripts/sperre.test.ts` |
+| [e-pflichtursache-begruendet.json](e-pflichtursache-begruendet.json) | Pflichtursache ohne Maßnahme und ohne gelesene Seiten → Agent ergänzt `nicht_erfasst`, keine Rückfrage | Format, Hinweis erledigt, Kurzbericht |
+| [f-formfehler-bewertung.json](f-formfehler-bewertung.json) | Formfehler der Bewertung → Rückfrage an denselben Agenten, Selbstprüfung | `pruefeAntwort` = `pruefeBewertung`, Skript mit Zeile/Spalte, Hook erlaubt nur den Prüfbefehl |
 
 ## Vergleichstest: kleinste Modellstufe bei der Erfassung
 

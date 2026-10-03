@@ -10,11 +10,12 @@
 // Aufruf: npm run entwurf:treffer -- <erfassung.json> [--lokal <ordner>]
 //         npm run entwurf:treffer -- <erfassung.json> --vorab [--bund | --land XX …] [--partei SPD …] [--lokal <ordner>]
 import { readFileSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { begriffePruefsumme, erfassungsHinweise, pruefeSuchbegriffe, type Erfassung, type Treffermatrix } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
 import { auswahlProgramme, zulaessigeUrsachen } from './auftrag-text.ts'
-import { leseLeitfaden } from './erfassung-datei.ts'
+import { leseErfassung } from './erfassung-datei.ts'
 import { fliesstext, wortformen, zaehle } from './suche.ts'
 import { breiteBegriffe, type BegriffZaehlung } from './vorab.ts'
 
@@ -44,7 +45,10 @@ if (fehler.length) {
   console.error('Datenkatalog fehlerhaft – erst `npm run daten:pruefen` beheben.')
   process.exit(1)
 }
-const erfassung = JSON.parse(readFileSync(pfad, 'utf8')) as Erfassung
+const roh = JSON.parse(readFileSync(pfad, 'utf8')) as Erfassung
+// Suchbegriffe aus dem Leitfaden, wenn er sie enthält (eine Quelle für Bund und Länder).
+const erfassung = leseErfassung(pfad)
+const geprueft = erfassung.leitfaden?.suchbegriffe_geprueft ?? {}
 // Nur das Format der Begriffe muss stimmen; die Treffer schreibt dieses Skript erst.
 const format = pruefeSuchbegriffe(katalog, { ...erfassung, treffer: undefined }).filter((f) => !f.startsWith('treffer'))
 for (const f of format) console.error(`Fehler:  ${f}`)
@@ -75,11 +79,13 @@ if (vorab) {
         }
     gezaehlt++
   }
-  const breit = breiteBegriffe([...zaehlungen.values()])
+  const alle = breiteBegriffe([...zaehlungen.values()])
+  const breit = alle.filter((z) => !Object.keys(geprueft).some((b) => z.startsWith(`„${b}“ `)))
+  for (const [b, grund] of Object.entries(geprueft)) if (alle.some((z) => z.startsWith(`„${b}“ `))) console.log(`Belassen (Leitfaden, suchbegriffe_geprueft): „${b}“ – ${grund}`)
   console.log(`Vorabprüfung: ${zaehlungen.size} Begriffe in ${gezaehlt} von ${auswahl.length} Programmen gezählt.`)
   if (!breit.length) console.log('Keine zu allgemeinen Begriffe.')
   else {
-    console.log(`\n${breit.length} Begriffe sind sehr allgemein – genauer fassen (für alle Programme gleich), bevor entwurf:auftrag läuft:`)
+    console.log(`\n${breit.length} Begriffe sind sehr allgemein – im Leitfaden genauer fassen (für alle Programme gleich) oder mit Grund unter „suchbegriffe_geprueft“ eintragen, bevor entwurf:auftrag läuft:`)
     for (const z of breit) console.log(`  ${z}`)
   }
   process.exit(0)
@@ -87,6 +93,8 @@ if (vorab) {
 
 const matrix: Treffermatrix = { begriffe_pruefsumme: begriffePruefsumme(erfassung.suchbegriffe), programme: [] }
 let nichtGeladen = 0
+// Die ausführliche Matrix je Richtung geht in eine Datei; auf der Konsole nur Summen je Ursache (kurz halten).
+const ausfuehrlich: string[] = []
 for (const p of erfassung.programme) {
   const partei = katalog.parteien.find((x) => x.id === p.partei_id)
   const lp = p.land ? katalog.landesprogramme.find((x) => x.partei_id === p.partei_id && x.land === p.land && x.aktuell && x.url) : undefined
@@ -112,15 +120,17 @@ for (const p of erfassung.programme) {
       ursachen[u.id][richtung] = Object.fromEntries(begriffe.map((b) => [b, zaehle(seiten, b)]))
   }
   matrix.programme.push({ partei_id: p.partei_id, land: p.land, ursachen })
-  const summen = Object.entries(ursachen).map(([u, r]) => `${u}: ${Object.entries(r).map(([rn, b]) => `${rn} ${Object.values(b).reduce((a, c) => a + c, 0)}`).join(' / ')}`)
-  console.log(`${name.padEnd(16)} ${summen.join(' · ')}`)
+  const summe = (b: Record<string, number>) => Object.values(b).reduce((a, c) => a + c, 0)
+  ausfuehrlich.push(`${name.padEnd(16)} ${Object.entries(ursachen).map(([u, r]) => `${u}: ${Object.entries(r).map(([rn, b]) => `${rn} ${summe(b)}`).join(' / ')}`).join(' · ')}`)
+  console.log(`${name.padEnd(16)} ${Object.entries(ursachen).map(([u, r]) => `${u}: ${Object.values(r).reduce((a, b) => a + summe(b), 0)}`).join(' · ')}`)
 }
 if (nichtGeladen) {
   console.error(`${nichtGeladen} Programme nicht gezählt – aus der Erfassung nehmen (bleiben „noch nicht erfasst“) oder mit --lokal laden.`)
   process.exit(1)
 }
-const neu = { ...erfassung, treffer: matrix }
-writeFileSync(pfad, JSON.stringify(neu, null, 2) + '\n', 'utf8')
-const leitfaden = leseLeitfaden(neu.thema_id)
-for (const h of erfassungsHinweise(katalog, leitfaden ? { ...neu, leitfaden } : neu)) console.error(`Hinweis: ${h}`)
-console.log(`\nTreffer für ${matrix.programme.length} Programme in ${pfad} geschrieben.`)
+const { leitfaden: _, ...ohneLeitfaden } = roh
+writeFileSync(pfad, JSON.stringify({ ...ohneLeitfaden, suchbegriffe: erfassung.suchbegriffe, treffer: matrix }, null, 2) + '\n', 'utf8')
+const matrixDatei = join(pfad, '..', 'treffer.txt')
+writeFileSync(matrixDatei, ausfuehrlich.join('\n') + '\n', 'utf8')
+for (const h of erfassungsHinweise(katalog, { ...erfassung, treffer: matrix })) console.error(`Hinweis: ${h}`)
+console.log(`\nTreffer für ${matrix.programme.length} Programme in ${pfad} geschrieben; je Richtung in ${matrixDatei}.`)

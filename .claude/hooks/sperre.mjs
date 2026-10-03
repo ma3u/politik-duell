@@ -7,8 +7,9 @@
 //    .cache/ (Programmtexte, Erfassungen) und die Programm-Werkzeuge gesperrt. Start und Ende:
 //    npm run phase-a -- start "<Thema>" bzw. npm run phase-a -- ende
 // 3. Agent blind-bewertung (erkannt an agent_type in der Hook-Eingabe, die Claude Code bei jedem
-//    Werkzeugaufruf eines Subagenten mitschickt): Read nur genau .cache/entwurf/<ID>/blind.json, Write nur
-//    genau .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt, WebFetch wie unter 1; alles andere gesperrt.
+//    Werkzeugaufruf eines Subagenten mitschickt): Read nur genau .cache/entwurf/<ID>/blind.json und die
+//    eigene Antwort, Write nur genau .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt, Bash nur genau
+//    die Selbstprüfung `npm run -s entwurf:antwort-pruefen -- <ID>`, WebFetch wie unter 1; alles andere gesperrt.
 //
 // Eingabe: JSON auf stdin ({ tool_name, tool_input, cwd, agent_type? }). Ausgabe bei Sperre: Entscheidung
 // „deny“ mit Grund. Ohne Abhängigkeiten, damit der Hook schnell startet.
@@ -35,10 +36,16 @@ export function blindPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
   const basis = norm(wurzel).replace(/\/$/, '')
   const rest = datei.startsWith(`${basis}/`) ? datei.slice(basis.length + 1) : null
   if (rest === null) return false
-  if (werkzeug === 'Read') return /^\.cache\/entwurf\/\d+\/blind\.json$/.test(rest)
+  if (werkzeug === 'Read') return /^\.cache\/entwurf\/\d+\/(blind\.json|protokoll\/bewertung-antwort\.txt)$/.test(rest)
   if (werkzeug === 'Write') return /^\.cache\/entwurf\/\d+\/protokoll\/bewertung-antwort\.txt$/.test(rest)
   return false
 }
+
+/**
+ * Die Selbstprüfung des Bewertungs-Agenten – genau dieser Befehl, ohne weitere Zeichen: keine
+ * Verkettung, Umleitung oder Ersetzung. Das Skript liest nur blind.json und die Antwort.
+ */
+export const BLIND_PRUEFBEFEHL = /^npm run (-s |--silent )?entwurf:antwort-pruefen '?--'? \d+$/
 
 /** Gründe für eine Sperre; null = erlaubt. Reine Funktion für Tests (scripts/sperre.test.ts). */
 export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = wurzel }) {
@@ -50,9 +57,11 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
   if (typeof eingabe.agent_type === 'string' && BLIND_AGENT.test(eingabe.agent_type)) {
     if (werkzeug === 'WebFetch' || werkzeug === 'WebSearch') return null
     if ((werkzeug === 'Read' || werkzeug === 'Write') && blindPfadErlaubt(werkzeug, e.file_path, basis, eingabe.cwd || basis)) return null
+    if (werkzeug === 'Bash' && typeof e.command === 'string' && BLIND_PRUEFBEFEHL.test(e.command.trim()) && !e.run_in_background) return null
     return (
       `Bewertung ohne Parteinamen: ${werkzeug} ${e.file_path ?? e.path ?? e.command ?? ''} ist gesperrt. ` +
-      'Erlaubt sind nur Read auf .cache/entwurf/<ID>/blind.json, Write auf .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt, WebSearch und WebFetch.'
+      'Erlaubt sind nur Read auf .cache/entwurf/<ID>/blind.json und protokoll/bewertung-antwort.txt, Write auf .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt, ' +
+      'Bash nur „npm run -s entwurf:antwort-pruefen -- <ID>“, WebSearch und WebFetch.'
     )
   }
   if (werkzeug === 'WebFetch') return null

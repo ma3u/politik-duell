@@ -64,12 +64,13 @@ Schreibe mit Write in die Ergebnisdatei aus dem Auftrag (`protokoll/erfassung-<N
 
 `ursachen_offen` und `buendel` nur, wenn sie zutreffen. Oder mit leerer Liste `"massnahmen": []` und `"keine_massnahme": "Begründung"`, oder `"nicht_durchsucht": "Grund"`.
 
-Für den Kurzbericht stehen drei Angaben im JSON (nur wenn zutreffend; das Skript gibt sie in fester Form aus):
+Weitere Angaben im JSON (nur wenn zutreffend; das Skript prüft sie und gibt sie im Kurzbericht aus):
+- `"nicht_erfasst": [{ "ursache": 909, "seiten": [35, 66], "grund": "…" }]` – Ursache ohne Maßnahme: gelesene Fundstellen (PDF-Seiten) und warum nichts passt. **Pflicht** für jede Pflichtursache des Auftrags ohne Maßnahme, sonst lehnt die Prüfung ab; für andere Ursachen ohne Maßnahme, wenn du Fundstellen gelesen hast;
 - `"neue_buendel": [{ "ursache": 905, "name": "…", "seite": 33 }]` – eigenes Instrument, das in keinem Bündel des Auftrags steht;
 - `"eigene_synonyme": [{ "begriff": "rückführ", "ursache": 905, "richtung": "…" }]` – Begriffe, die im Programm für eine Richtung stehen und in der Suche fehlen;
 - `"stand_im_pdf": "…"` – nur wenn das PDF einen anderen Stand nennt als der Auftrag.
 
-**Protokoll** (unter dem JSON, kurz): gelesene Seiten und Kapitel; „Nicht erfasst“ mit Seite und Grund (bei Pflichtursachen ohne Maßnahme die gelesenen Fundstellen); Richtungen ohne Maßnahme; Seiten ohne Text, falls sie eine Rolle spielten.
+**Protokoll** (unter dem JSON, kurz): gelesene Seiten und Kapitel; „Nicht erfasst“ mit Seite und Grund für Stellen, die du gelesen und nicht aufgenommen hast (Ursachen ohne Maßnahme stehen schon in `nicht_erfasst`); Richtungen ohne Maßnahme; Seiten ohne Text, falls sie eine Rolle spielten.
 
 Dann prüfen:
 
@@ -88,6 +89,7 @@ Genau den Block unter „--- Kurzbericht ---“ aus der letzten, erfolgreichen P
 Grenzfälle: …
 Neue Bündel: …
 Eigene Synonyme: …
+Nicht erfasst: …
 Stand im PDF: …
 ```
 

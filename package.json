@@ -34,9 +34,12 @@
     "blind:reste": "node --experimental-strip-types scripts/entwurf/reste.ts",
     "entwurf:json": "node --experimental-strip-types scripts/entwurf/json-extrahieren.ts",
     "entwurf:bewertung-auftrag": "node --experimental-strip-types scripts/entwurf/bewertung-auftrag.ts",
+    "entwurf:antwort-pruefen": "node --experimental-strip-types --no-warnings scripts/entwurf/antwort-pruefen.ts",
     "entwurf:bewertung-zusammenfuehren": "node --experimental-strip-types scripts/entwurf/bewertung-zusammenfuehren.ts",
     "entwurf:bewertung-pruefen": "node --experimental-strip-types scripts/entwurf/bewertung-pruefen.ts",
     "entwurf:eintragen": "node --experimental-strip-types scripts/entwurf/eintragen.ts",
+    "entwurf:bericht": "node --experimental-strip-types scripts/entwurf/bericht.ts",
+    "entwurf:archivieren": "node --experimental-strip-types scripts/entwurf/archivieren.ts",
     "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
     "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts"
   },

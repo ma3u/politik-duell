@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, type BlindListe, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
+import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
 import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
+import { mitLeitfaden } from './entwurf/erfassung-datei'
+import { berichtText } from './entwurf/bericht-text'
 import { breiteBegriffe } from './entwurf/vorab'
 import { wortformen } from './entwurf/suche'
 import { pruefeDatenordner } from './katalog-laden'
@@ -792,6 +794,7 @@ describe('Kurzbericht der Erfassung (feste Form)', () => {
       'Grenzfälle: Maßnahme 1 (S. 12) offen 1702',
       'Neue Bündel: 1702 „Zulagen“ (S. 13)',
       'Eigene Synonyme: „fachkraft“ → 1702 Fachkräfte gewinnen',
+      'Nicht erfasst: keine',
       'Stand im PDF: wie im Auftrag',
     ])
     expect(kurzbericht('Zwei-Bund', erfassung().programme[1], 0, 'x').split('\n')[0]).toBe('Zwei-Bund: keine Maßnahme – gespeichert in x')
@@ -880,5 +883,152 @@ describe('Evaluationen des Skills (.claude/skills/thema-erfassen/evals)', () => 
     expect(m.zitat).toBe('Mit sozialdemokratischer Politik fördern wir Kitaplätze.')
     expect(blindReste(liste)).toEqual([{ kennung: m.kennung, reste: ['sozialdemokratischer'] }])
     expect(enthaeltParteinamen(`${m.kennung} stammt von der SPD.`)).toBe(true)
+  })
+})
+
+describe('Selbstprüfung der Bewertung (nur gegen die Blindliste)', () => {
+  it('prüft mit demselben Code wie entwurf:bewertung-pruefen', () => {
+    const k = katalog()
+    const e = erfassung()
+    const liste = blindListe(k, e)
+    const b = bewertung(e)
+    expect(pruefeAntwort(liste, b, { teil: false })).toEqual([])
+    expect(pruefeBewertung(k, e, b)).toEqual([])
+    const falsch: Bewertung = {
+      ...b,
+      neue_instrumente: [{ ...b.neue_instrumente[0], name: 'x'.repeat(121) }],
+      zuordnung: [...b.zuordnung.slice(1), { kennung: 'M99', ursachen: [] }],
+    }
+    const f = pruefeAntwort(liste, falsch, { teil: false })
+    expect(f).toEqual(pruefeBewertung(k, e, falsch))
+    expect(f.join('\n')).toMatch(/name ist länger als 120 Zeichen \(121\)/)
+    expect(f.join('\n')).toMatch(/M99: unbekannte Kennung/)
+    expect(f.join('\n')).toMatch(new RegExp(`${b.zuordnung[0].kennung}: nicht bewertet`))
+  })
+
+  it('prüft eine Teilbewertung nur auf die neu zu bewertenden Kennungen', () => {
+    const k = katalog()
+    const e = erfassung()
+    const fest = kennungen(e)
+    const alt = blindListe(k, e, fest)
+    const bisher = bewertung(e)
+    e.programme[0].massnahmen.push({ beschreibung: 'Erzieher einstellen', ursachen_ids: [1702], zitat: 'Wir stellen Erzieher ein.', seite: 15 })
+    const jetzt = blindListe(k, e, ordneKennungen(e, fest, fest.length).kennungen)
+    jetzt.teilbewertung = teilbewertung(alt, jetzt, bisher).block
+    const teil: Bewertung = { blind_pruefsumme: jetzt.pruefsumme, neue_instrumente: [], zuordnung: [{ kennung: 'M04', instrument: 'I1', ursachen: [1702] }] }
+    expect(pruefeAntwort(jetzt, teil, { teil: true })).toEqual([])
+    expect(pruefeAntwort(jetzt, { ...teil, zuordnung: [...teil.zuordnung, bisher.zuordnung[0]] }, { teil: true }).join()).toMatch(/nicht neu zu bewerten/)
+    expect(pruefeAntwort(jetzt, { ...teil, zuordnung: [{ kennung: 'M04', instrument: 'I9', ursachen: [1702] }] }, { teil: true }).join()).toMatch(/I9 gibt es nicht/)
+  })
+
+  it('führt das Skript nur mit der Themen-ID aus und gibt keine Herkunft aus', async () => {
+    const { execFileSync } = await import('node:child_process')
+    const { mkdirSync, rmSync, writeFileSync } = await import('node:fs')
+    const ordner = new URL('../.cache/entwurf/99999/', import.meta.url)
+    mkdirSync(new URL('protokoll/', ordner), { recursive: true })
+    try {
+      const e = erfassung()
+      const liste = blindListe(katalog(), e)
+      writeFileSync(new URL('blind.json', ordner), JSON.stringify(liste))
+      const b = bewertung(e)
+      const lauf = (antwort: string) => {
+        writeFileSync(new URL('protokoll/bewertung-antwort.txt', ordner), antwort)
+        try {
+          return { ok: true, text: execFileSync('node', ['--experimental-strip-types', '--no-warnings', 'scripts/entwurf/antwort-pruefen.ts', '99999'], { encoding: 'utf8', stdio: 'pipe' }) }
+        } catch (x) {
+          return { ok: false, text: String((x as { stderr: string }).stderr) }
+        }
+      }
+      expect(lauf(`${JSON.stringify(b, null, 1)}\n\nAnmerkungen.`)).toMatchObject({ ok: true, text: expect.stringMatching(/Antwort in Ordnung: 3 Kennungen/) })
+      const kaputt = lauf('{\n "blind_pruefsumme": "x",\n "zuordnung": [\n}')
+      expect(kaputt.ok).toBe(false)
+      expect(kaputt.text).toMatch(/Zeile 4, Spalte 1/)
+      expect(kaputt.text).not.toMatch(/Eins|Zwei|partei/)
+    } finally {
+      rmSync(ordner, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('Suchbegriffe und Begründungen im Repository', () => {
+  it('nimmt Suchbegriffe aus dem Leitfaden und prüft ihr Format', () => {
+    const k = katalog()
+    const l: Leitfaden = { ...LEITFADEN, suchbegriffe: SUCHBEGRIFFE, suchbegriffe_geprueft: { kita: 'gehört dazu' } }
+    expect(pruefeLeitfaden(k, l)).toEqual([])
+    const e = mitLeitfaden({ ...erfassung(), suchbegriffe: {} }, l)
+    expect(e.suchbegriffe).toEqual(SUCHBEGRIFFE)
+    expect(pruefeErfassung(k, e)).toEqual([])
+    const f = pruefeLeitfaden(k, { ...l, suchbegriffe: { '1799': { R: ['x'] }, '1701': { 'Wie die SPD': ['kita'] }, '1702': { Leer: [] } }, suchbegriffe_geprueft: { fremd: 'x', kita: '' } }).join('\n')
+    expect(f).toMatch(/Ursache 1799, die nicht zum Thema gehört/)
+    expect(f).toMatch(/nennen eine Partei/)
+    expect(f).toMatch(/Richtung „Leer“ – Liste nicht leerer Begriffe/)
+    expect(f).toMatch(/„fremd“ steht in keiner Richtung/)
+    expect(f).toMatch(/„kita“ ohne Grund/)
+  })
+
+  it('sieht Treffer-Hinweise mit strukturierter Begründung als erledigt an', () => {
+    const k = katalog()
+    const e = erfassung()
+    // Partei 2 (Bund) hat 12 Treffer zu 1701 und keine Maßnahme.
+    expect(erfassungsHinweise(k, e).join()).toMatch(/Zwei \(Bund\): 12 Treffer zu Ursache 1701/)
+    e.programme[1].nicht_erfasst = [{ ursache: 1701, seiten: [20, 21], grund: 'Nur Rückblick auf frühere Kita-Politik.' }]
+    expect(erfassungsHinweise(k, e)).toEqual([])
+    expect(pruefeProgramm(k, e, e.programme[1])).toEqual([])
+    expect(kurzbericht('Zwei-Bund', e.programme[1], 0, 'x')).toMatch(/Nicht erfasst: 1701 \(S\. 20, 21\)/)
+    expect(pruefeProgramm(k, e, { ...e.programme[1], nicht_erfasst: [{ ursache: 1701, seiten: [], grund: '' }] }).join()).toMatch(/nicht_erfasst/)
+  })
+
+  it('gibt der Bewertung die Quelle vorhandener Instrumente mit', () => {
+    const k = katalog()
+    const e = erfassung()
+    const b = bewertung(e)
+    b.neue_instrumente[0].beleg_studie_url = 'https://www.dji.de/studie.pdf'
+    const datei = eintragen(k, themaInhalt(), e, b, '2026-10-03')
+    const mit = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/17-kita.json', inhalt: datei }], { pfad: 'ids.json', inhalt: { stillgelegt: [] } }).katalog
+    const neu = { ...erfassung(), programme: [{ partei_id: 1, land: 'ST', massnahmen: [] as Erfassung['programme'][number]['massnahmen'], keine_massnahme: 'x' }] }
+    const instr = blindListe(mit, neu).instrumente
+    expect(instr).toHaveLength(1)
+    expect(instr[0]).toMatchObject({ ebene: 'bund', beleg_studie_url: 'https://www.dji.de/studie.pdf' })
+  })
+})
+
+describe('Datenteil des Pull Requests', () => {
+  it('kommt wörtlich aus den Dateien', () => {
+    const k = katalog()
+    const e = { ...erfassung(), leitfaden: LEITFADEN }
+    const fest = kennungen(e)
+    const b = bewertung(e)
+    const rueckfragen = 'Modell der Erfassung: mittlere Stufe\nModell der Bewertung: geerbt\n\n| Programm | Anlass | Ergebnis |\n| --- | --- | --- |\n| Eins-Bund | Pflichtursache (R1) | Seiten nachgetragen |'
+    const vorher = structuredClone(e)
+    vorher.programme[0].massnahmen.push({ beschreibung: 'Weggefallen', ursachen_ids: [1701], zitat: 'Weg.', seite: 40 })
+    const text = berichtText({
+      katalog: k,
+      erfassung: e,
+      bewertung: b,
+      fest,
+      liste: blindListe(k, e, fest),
+      protokoll: new Map([
+        ['rueckfragen.md', rueckfragen],
+        ['erfassung-Eins-Bund-rueckfrage-1.txt', '{}'],
+        ['bewertung-antwort.txt', `${JSON.stringify(b)}\nSchwierig: M02, weil …`],
+        ['kosten.md', '| Agent | Tokens |\n| programm-erfassung Eins-Bund | 50000 |'],
+      ]),
+      staende: [vorher],
+      nichtDurchsucht: [['Drei-Bund', 'HTTP 503']],
+      entfallen: [],
+      punkte: 'Kita – Punkte …',
+    })
+    expect(text).toMatch(/- Modell der Erfassung: mittlere Stufe/)
+    expect(text).toMatch(/\| Eins \| 2 → 2; 1 Rückfrage \| – \|/)
+    expect(text).toMatch(/\| Zwei \| 0 → 0 \| 1 → 1 \|/)
+    expect(text).toMatch(/\*\*Bund\*\* 1701 Zwei; 1702 Zwei/)
+    expect(text).toMatch(/Drei-Bund \(HTTP 503\)/)
+    expect(text).toMatch(/Eins \(Bund\): entfallen S\. 40 „Weggefallen“/)
+    expect(text).toMatch(/Ohne Bündel an Ursachen mit Bündeln \(1,/)
+    expect(text).toMatch(/Zuordnung: Eins \(Bund\): 2 Maßnahmen/)
+    expect(text).toMatch(/Schwierig: M02, weil …/)
+    expect(text).toMatch(/\| Eins-Bund \| Pflichtursache \(R1\) \| Seiten nachgetragen \|/)
+    expect(text).toMatch(/programm-erfassung Eins-Bund \| 50000/)
+    expect(text).toMatch(new RegExp(`Prüfsumme \`${blindListe(k, e, fest).pruefsumme}\``))
   })
 })

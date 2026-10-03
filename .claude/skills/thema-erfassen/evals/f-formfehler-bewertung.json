@@ -1,0 +1,22 @@
+{
+  "skills": [
+    "thema-erfassen"
+  ],
+  "name": "Formfehler in der Bewertung",
+  "herkunft": "Landesdurchgang Thema 9: Ein Instrumentname war länger als 120 Zeichen; die Koordination schickte die Rückfrage an denselben Agenten, der Skill sagte das nicht eindeutig.",
+  "query": "entwurf:bewertung-pruefen meldet „Instrument I24: name ist länger als 120 Zeichen“. Führe den Skill fort.",
+  "files": [
+    ".cache/entwurf/9/protokoll/bewertung-antwort.txt",
+    ".cache/entwurf/9/blind.json"
+  ],
+  "expected_behavior": [
+    "Repariert die Antwortdatei nicht selbst",
+    "Legt die Rückfrage mit entwurf:bewertung-auftrag --rueckfrage ab (ohne Partei-, Personen- oder Ländernamen)",
+    "Schickt den Text an denselben Agenten blind-bewertung, der die Datei neu schreibt und mit entwurf:antwort-pruefen selbst prüft",
+    "Trägt die Rückfrage in protokoll/rueckfragen.md ein"
+  ],
+  "automatische_tests": [
+    "scripts/entwurf.test.ts › Selbstprüfung der Bewertung …",
+    "scripts/sperre.test.ts › Agent blind-bewertung › …"
+  ]
+}

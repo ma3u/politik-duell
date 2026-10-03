@@ -19,6 +19,8 @@ Meldungen der Skripte, ihre übliche Ursache und was zu tun ist. Die Meldungen s
 | `zusammengefasst? … fehlt, … ist neu oder geändert` | Rückfrage hat zwei Zusagen vereint | Prüfen; war es nicht das Ziel: „Korrektur einer fehlerhaften Rückfrage“ in `SKILL.md`. |
 | `Ursache N hatte … Maßnahme(n), jetzt keine` | Rückfrage oder Regel hat die letzte Maßnahme entfernt | Ist das begründet (Protokoll)? Sonst Korrektur. |
 | `ganz entfallen` | `programme/<Name>.json` fehlt oder `nicht_durchsucht` | Datei prüfen; nicht durchsucht bleibt „noch nicht erfasst“. |
+| `Pflichtursache N (… Treffer) ohne Maßnahme: in „nicht_erfasst“ …` | Agent hat gelesene Seiten nicht angegeben | Agent ergänzt `nicht_erfasst` selbst und prüft erneut – keine Rückfrage nötig. |
+| `nicht_erfasst N: keine der genannten Seiten hat einen Treffer` (Hinweis) | Seiten passen nicht zu den Fundstellen | Agent prüft die Seiten; Kapitel ohne Suchtreffer dürfen genannt sein. |
 
 ## Kennungen und Blindliste
 
@@ -35,7 +37,8 @@ Meldungen der Skripte, ihre übliche Ursache und was zu tun ist. Die Meldungen s
 
 | Meldung | Ursache | Tun |
 | --- | --- | --- |
-| `Kein gültiges JSON: … Zeile Z, Spalte S` | Agent hat das JSON beschädigt | Rückfrage mit Zeile, Spalte und Meldung (`'--rueckfrage'`). Nicht selbst reparieren – die Antwortdatei bleibt wörtlich. |
+| `Kein gültiges JSON: … Zeile Z, Spalte S` | Agent hat das JSON beschädigt (sollte seine Selbstprüfung abfangen) | Rückfrage mit Zeile, Spalte und Meldung (`'--rueckfrage'`) an denselben Agenten. Nicht selbst reparieren – die Antwortdatei bleibt wörtlich. |
+| Agent meldet, `entwurf:antwort-pruefen` sei gesperrt | Hook erkennt den Befehl nicht (anders geschrieben) | Genau `npm run -s entwurf:antwort-pruefen -- <ID>`; sonst prüft die Koordination wie bisher und fragt nach. |
 | `blind_pruefsumme passt nicht` | Bewertung gehört zu einer älteren Liste | Neuer Auftrag mit der aktuellen Liste. |
 | `Mn: nicht bewertet` / `mehrfach zugeordnet` | Kennung fehlt oder doppelt | Rückfrage mit den Kennungen. |
 | `Instrument …: Maßnahmen aus Bund und Land` | Ebenen gemischt | Rückfrage: je Ebene ein Instrument. |
@@ -48,4 +51,6 @@ Meldungen der Skripte, ihre übliche Ursache und was zu tun ist. Die Meldungen s
 | `protokoll/… fehlt` | Protokolldatei fehlt | Nachtragen (Antworten schreiben die Agenten selbst, Aufträge die Skripte). |
 | `bewertung-auftrag.txt nennt nicht die Prüfsumme` | Auftrag gehört zu einer anderen Liste | `entwurf:bewertung-auftrag` neu, Bewertung neu. |
 | `zitate:pruefen`: Zitat nicht gefunden | Zitat nach der Prüfung verändert | Rückfrage an den Agenten, nicht passend machen. |
+| `zitate:pruefen`: Warnung zu Auslassungen („…“, sehr kurze Teile) | Zitat lässt viel aus, ist aber auf der Seite | Keine Rückfrage; die Zahl der Warnungen in den Pull Request (Belegprüfung sieht sie an). |
+| `Treffer: Programm nicht geladen` bei `zitate:pruefen` für ein Programm außerhalb des Durchgangs | z. B. BSW-Bundesprogramm nicht erreichbar | Für diesen Durchgang ohne Belang; im Pull Request nennen. |
 | `punkte`: Partei überall 0 | Erfassung lückenhaft oder Programm hat nichts | Vergleich in `staende/` und Protokoll lesen; bei Lücke Rückfrage oder Korrektur. |

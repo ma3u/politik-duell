@@ -1,8 +1,9 @@
 // Führt die geprüften Ergebnisse je Programm (programme/<Name>.json aus entwurf:programm-pruefen)
 // in die Erfassung zusammen. Nicht durchsuchte Programme bleiben draußen („noch nicht erfasst“).
 // Vergleicht mit dem vorherigen Stand (plan–validate–execute): je Programm entfallene, vermutlich
-// zusammengefasste, neue und geänderte Maßnahmen und Ursachen, die keine Maßnahme mehr haben; dazu
-// Maßnahmen ohne Bündel an Ursachen mit Bündeln. Der vorherige Stand bleibt als staende/erfassung-N.json.
+// zusammengefasste, neue und geänderte Maßnahmen und Ursachen, die keine Maßnahme mehr haben. Maßnahmen
+// ohne Bündel an Ursachen mit Bündeln stehen nur zur Information in ohne-buendel.txt.
+// Der vorherige Stand bleibt als staende/erfassung-N.json.
 // Danach: npm run entwurf:treffer -- <erfassung.json>
 // Aufruf: npm run entwurf:zusammenfuehren -- <erfassung.json>
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
@@ -68,8 +69,9 @@ if (vorher.length) {
   if (vergleich.length) console.log('Jede Zeile prüfen, bevor entwurf:blind läuft: Ist der Wegfall gewollt (Rückfrage, Regel)? Sonst Korrektur nach SKILL.md, Fall „Korrektur einer fehlerhaften Rückfrage“.')
 }
 const ungebuendelt = ohneBuendel(katalog, { programme: liste, leitfaden })
-if (ungebuendelt.length) {
-  console.log('\nOhne Bündel an Ursachen mit Bündeln (erlaubt, wenn es eine eigene Zusage ist – nie mit einer anderen zusammenfassen):')
-  for (const z of ungebuendelt) console.log(`  ${z}`)
-}
+// Nur zur Information (kommt über entwurf:bericht in den Pull Request): Je Ursache zählt die beste
+// Maßnahme, eine zusätzliche gleichartige bringt keinen Punkt. Keine Prüfung durch die Koordination.
+const buendelDatei = join(pfad, '..', 'ohne-buendel.txt')
+writeFileSync(buendelDatei, ungebuendelt.join('\n') + (ungebuendelt.length ? '\n' : ''), 'utf8')
+if (ungebuendelt.length) console.log(`\n${ungebuendelt.length} Maßnahmen ohne Bündel an Ursachen mit Bündeln – zur Information in ${buendelDatei} (keine Rückfrage nötig)`)
 console.log(`Weiter: npm run entwurf:treffer -- ${pfad}`)
