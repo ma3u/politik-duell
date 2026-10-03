@@ -27,7 +27,7 @@ Diese Wörter bedeuten im Skill, in den Agenten und in `daten/README.md` immer d
 | **Rückfrage** | Gezielte Nachfrage an einen Agenten zu konkreten Maßnahmen, Seiten oder Fehlern. Steht als Zeile in `protokoll/rueckfragen.md`. |
 | **Protokoll** | `protokoll/`: Antworten der Agenten (von ihnen selbst geschrieben), Aufträge, Rückfragen. Ohne Protokoll trägt `entwurf:eintragen` nichts ein. |
 
-**Zwei verschiedene Zusagen werden nie zusammengefasst, nur um die Bündelregel einzuhalten.** Ist das passende Bündel belegt, bleibt die zweite Zusage ohne Bündel – oder sie ist ein eigenes Instrument, dann kommt ein neues Bündel in den Leitfaden (für alle Programme).
+**Zwei verschiedene Zusagen werden nie zusammengefasst, nur um die Bündelregel einzuhalten.** Ist das passende Bündel belegt, bleibt die zweite Zusage ohne Bündel – oder sie ist ein eigenes Instrument, dann kommt ein neues Bündel in den Leitfaden (für alle Programme). Bündel sparen nur Aufwand: Je Ursache zählt die beste Maßnahme, eine zusätzliche gleichartige bringt keinen Punkt. Deshalb prüfst du Maßnahmen ohne Bündel nicht einzeln.
 
 ## Fortschritt
 
@@ -36,20 +36,22 @@ Kopiere diese Liste in deine erste Antwort und hake ab. Wird ein Durchgang in ei
 ```
 Thema <ID> – Fortschritt
 - [ ] 0 Freigabe: ursachen:freigegeben ohne Fehler
-- [ ] 1 Leitfaden und Suchbegriffe; entwurf:treffer --vorab ohne offene Begriffe; entwurf:auftrag
+- [ ] 1 Leitfaden mit Suchbegriffen; entwurf:treffer --vorab ohne offene Begriffe; entwurf:auftrag
 - [ ] 2 Erfassung: alle Agenten fertig; zusammenführen; treffer; Rückfragen erledigt; Vergleich geprüft
 - [ ] 3 Bewertung: entwurf:blind (neu/entfallen/geändert geprüft); bewertung-auftrag; Agent; entwurf:json; bewertung-pruefen ohne Fehler
 - [ ] 4 Eintragen: entwurf:eintragen; daten:pruefen; zitate:pruefen; punkte; seed; test
-- [ ] 5 Dokumentation; pr.md; Commit; Pull Request
+- [ ] 5 Dokumentation; entwurf:bericht; entwurf:archivieren; pr.md; Commit; Pull Request
 ```
 
 | Schritt erledigt, wenn … | Datei in `.cache/entwurf/<ID>/` |
 | --- | --- |
-| 1 | `auftraege/*.md` und `erfassung.json` mit `suchbegriffe` |
+| 1 | `suchbegriffe` in `daten/leitfaeden/<ID>.json`, `auftraege/*.md` |
 | 2 | `programme/<Name>.json` für jeden Auftrag, `erfassung.json` mit `treffer`, `protokoll/rueckfragen.md` |
 | 3 | `blind.json`, `kennungen.json`, `protokoll/bewertung-auftrag.txt` und `bewertung-antwort.txt`, `bewertung.json`, die `entwurf:bewertung-pruefen` annimmt |
 | 4 | Themendatei in `daten/themen/` mit `abdeckung` für die Programme (`git status --short`) |
-| 5 | `pr.md` und ein offener Pull Request |
+| 5 | `pr-daten.md`, `daten/protokolle/<ID>/…`, `pr.md` und ein offener Pull Request |
+
+Halte den Stand außerdem in `.cache/entwurf/<ID>/fortschritt.md` fest (je Schritt eine Zeile: erledigt, nächster Befehl). Wird eine Antwort unterbrochen, setzt du dort wieder ein.
 
 ## Grundregeln
 
@@ -57,7 +59,8 @@ Thema <ID> – Fortschritt
 - **Nicht durchsucht** heißt „noch nicht erfasst“, nie `keine_massnahme`. Fehlende Daten kosten keiner Partei einen Punkt.
 - **Ursachen und Ziel** ändern sich beim Erfassen nicht. Fehlt eine Ursache: im Pull Request nennen, die Betreiberin entscheidet.
 - **Keine Werte, keine Zuordnungen von dir.** Muss ein Wert später mit Kenntnis der Partei geändert werden (nur auf Entscheidung der Betreiberin), steht `"entwurf_herkunft": "nicht_blind"` daran und der Grund im Pull Request.
-- **Sparsam:** Was ein Skript kann (zählen, Fundstellen, Zitate prüfen, zusammenführen, vergleichen), macht das Skript. Agenten schreiben ihre Ergebnisse selbst in Dateien; lies Antworten nicht in deinen Kontext, wenn die Skriptausgabe genügt.
+- **Sparsam:** Was ein Skript kann (zählen, Fundstellen, Zitate prüfen, zusammenführen, vergleichen, berichten), macht das Skript. Agenten schreiben ihre Ergebnisse selbst in Dateien. Lange Ausgaben stehen in Dateien (`treffer.txt`, `ohne-buendel.txt`, `pr-daten.md`) – hole sie nicht in deinen Kontext, ebenso wenig Auftragsauszüge oder Zitate, wenn die Zahlen der Skriptausgabe genügen.
+- **Kosten mitschreiben:** Nach jedem Agenten eine Zeile in `protokoll/kosten.md`: `| Agent | Programm bzw. Auftrag | Tokens | Dauer |` (aus der Meldung beim Ende des Agenten).
 - **Viele Programme:** erst Bund (`--bund`) mit eigenem Pull Request, dann Länder (`--land XX`).
 
 ## 0. Freigabe prüfen
@@ -75,7 +78,7 @@ Fehler → **abbrechen**: Die Ursachen sind nicht freigegeben (erst `/thema-anle
 - **Regeln** je Ursache: was dazugehört, was nicht, Grenzfälle. Hat die Methode keine Antwort: „nur als `ursachen_offen`“ (dann entscheidet die Bewertung). Keine Parteinamen, keine Wertung.
 - **Bündel** nur für breite Lösungsrichtungen mit vielen gleichartigen Einzelzusagen: je Ursache neutral benannte Instrumente, die Lösungswege **aller** Richtungen abdecken (Ausbau wie Rücknahme).
 
-**Suchbegriffe** in `erfassung.json` (`{ "thema_id": <ID>, "suchbegriffe": { … }, "programme": [] }`): je Ursache jede Lösungsrichtung aus „Diagnose aus der Debatte“ (`docs/perspektiven-ursachen.md`, durch „;“ getrennt) mit eigenen Begriffen, z. B. `"1705": { "Beitragsfreiheit": ["beitragsfrei", "gebührenfrei"], "Beiträge nach Einkommen": ["einkommensabhängig"] }`. Wortteile genügen („sozialarbeit“ findet „Schulsozialarbeit“), bei Umlautpluralen der Stamm („betreuungspl“). Sprache aller Richtungen, möglichst spezifisch.
+**Suchbegriffe** im Leitfaden (`"suchbegriffe"`, gelten für Bund und Länder; die Skripte übernehmen sie in die Arbeitsdatei `erfassung.json` = `{ "thema_id": <ID>, "programme": [] }`). Stehen sie schon dort (späterer Durchgang), übernimm sie und ändere sie nur, wenn die Vorabprüfung es verlangt. Sonst: je Ursache jede Lösungsrichtung aus „Diagnose aus der Debatte“ (`docs/perspektiven-ursachen.md`, durch „;“ getrennt) mit eigenen Begriffen, z. B. `"1705": { "Beitragsfreiheit": ["beitragsfrei", "gebührenfrei"], "Beiträge nach Einkommen": ["einkommensabhängig"] }`. Wortteile genügen („sozialarbeit“ findet „Schulsozialarbeit“), bei Umlautpluralen der Stamm („betreuungspl“). Sprache aller Richtungen, möglichst spezifisch.
 
 **Begriffe vorab prüfen**, bevor ein Agent startet:
 
@@ -83,7 +86,7 @@ Fehler → **abbrechen**: Die Ursachen sind nicht freigegeben (erst `/thema-anle
 npm run -s entwurf:treffer '--' .cache/entwurf/<ID>/erfassung.json '--vorab'      # dieselben Schalter wie unten (--bund, --land XX)
 ```
 
-Gemeldete Begriffe (viele Treffer je Programm oder viele Treffer mitten in anderen Wörtern, etwa „sucht“ in „versucht“) machst du genauer oder ersetzt sie – für alle Programme gleich. Erneut prüfen, bis die Liste leer ist oder jeder verbleibende Begriff im Pull Request begründet ist.
+Gemeldete Begriffe (viele Treffer je Programm oder viele Treffer mitten in anderen Wörtern, etwa „sucht“ in „versucht“) machst du im Leitfaden genauer oder ersetzt sie – für alle Programme gleich. Bleibt ein Begriff begründet, trag ihn mit Grund unter `"suchbegriffe_geprueft"` ein; dann meldet ihn die Vorabprüfung nicht mehr. Erneut prüfen, bis die Liste leer ist.
 
 **Aufträge** für alle Programme:
 
@@ -101,7 +104,7 @@ Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig; den näch
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
-Der Agent schreibt `protokoll/erfassung-<Name>.txt`, prüft sie mit `entwurf:programm-pruefen` und speichert bei Erfolg `programme/<Name>.json`. Er gibt nur den **Kurzbericht** des Skripts zurück (feste Form: Ergebniszeile, Grenzfälle, Neue Bündel, Eigene Synonyme, Stand im PDF). Andere Zahlen in seiner Antwort zählen nicht. Fehlt `programme/<Name>.json`, hat die Prüfung nicht bestanden → Agent erneut beauftragen.
+Der Agent schreibt `protokoll/erfassung-<Name>.txt`, prüft sie mit `entwurf:programm-pruefen` und speichert bei Erfolg `programme/<Name>.json`. Pflichtursachen ohne Maßnahme begründet er im JSON (`nicht_erfasst` mit gelesenen Seiten); ohne das lehnt die Prüfung die Datei ab. Er gibt nur den **Kurzbericht** des Skripts zurück (feste Form: Ergebniszeile, Grenzfälle, Neue Bündel, Eigene Synonyme, Nicht erfasst, Stand im PDF). Andere Zahlen in seiner Antwort zählen nicht. Fehlt `programme/<Name>.json`, hat die Prüfung nicht bestanden → Agent erneut beauftragen.
 
 Wenn alle fertig sind:
 
@@ -111,10 +114,10 @@ npm run -s entwurf:treffer '--' .cache/entwurf/<ID>/erfassung.json
 ```
 
 Prüfe – bei **allen** Programmen mit demselben Maßstab:
-- **Eigene Synonyme:** in `suchbegriffe` übernehmen (gelten für alle), `entwurf:treffer` erneut. Nur viele neue Treffer ohne Maßnahme in einem Programm werden eine Rückfrage.
+- **Eigene Synonyme:** in die `suchbegriffe` des Leitfadens übernehmen (gelten für alle), `entwurf:treffer` erneut. Nur viele neue Treffer ohne Maßnahme in einem Programm werden eine Rückfrage.
 - **Neue Bündel:** ins Leitfaden-Bündel, wenn es ein eigenes Instrument ist; sonst dem Agenten das passende vorhandene nennen – aber nur, wenn die Zusage wirklich gleichartig ist. Im Pull Request nennen.
-- **Hinweise von `entwurf:treffer`** („viele Treffer, aber keine Maßnahme“): erledigt, wenn das Protokoll unter „Nicht erfasst“ gelesene Fundstellen und einen Grund nennt; sonst Rückfrage.
-- **„Ohne Bündel an Ursachen mit Bündeln“** (Ausgabe von `zusammenfuehren`): erlaubt, wenn es eine eigene Zusage ist. Gleichartig mit einer gebündelten → Rückfrage. Nie eine Zusammenfassung verlangen, nur weil das Bündel belegt ist.
+- **Hinweise von `entwurf:treffer`** („viele Treffer, aber keine Maßnahme“): Erledigte (mit `nicht_erfasst` und Seiten) meldet das Skript nicht mehr. Was bleibt, ist eine Rückfrage.
+- **Ohne Bündel** (`ohne-buendel.txt`): nur zur Information, kommt über `entwurf:bericht` in den Pull Request. Keine Prüfung, keine Rückfrage.
 - `nicht_durchsucht` → bleibt draußen, im Pull Request nennen.
 - **Unplausibles** (Zitat passt nicht zur Beschreibung, Ziel statt Zusage, falscher Zusammenhang, Leitfaden nicht befolgt): Rückfrage. Zuordnungsfragen sind **keine** Rückfrage – sie entscheidet die Bewertung (zweifelhaft → `ursachen_offen`; das darf der Agent in der Rückfrage ändern).
 
@@ -146,20 +149,22 @@ npm run -s entwurf:bewertung-auftrag '--' .cache/entwurf/<ID>/erfassung.json
 
 Prüft Blindliste und Kennungen, legt frühere Fassungen von Auftrag und Antwort als `bewertung-auftrag-N.txt` / `bewertung-antwort-N.txt` ab, archiviert die Liste als `protokoll/blind-<Prüfsumme>.json` und schreibt `protokoll/bewertung-auftrag.txt`. **Genau dessen Text** (zwei Pfade, Prüfsumme, Datum) ist der Auftrag an **einen** Agenten `blind-bewertung` – immer mit deinem eigenen Modell (hier zählen Recherche und Urteil). Nichts dazuschreiben: keine Parteinamen, keine Hinweise auf die Herkunft.
 
-Der Agent liest nur `blind.json` und schreibt nur `protokoll/bewertung-antwort.txt`; der Hook `.claude/hooks/sperre.mjs` sperrt für ihn alles andere (außer WebSearch und WebFetch auf unabhängige Quellen). Danach:
+Der Agent liest nur `blind.json` (und seine eigene Antwort), schreibt nur `protokoll/bewertung-antwort.txt` und darf als einzigen Befehl seine Selbstprüfung ausführen; der Hook `.claude/hooks/sperre.mjs` sperrt für ihn alles andere (außer WebSearch und WebFetch auf unabhängige Quellen). Vorhandene Instrumente stehen mit ihrer Quelle in der Liste – derselbe Lösungsweg auf der anderen Ebene wird so nicht neu recherchiert. Danach:
 
 ```bash
 npm run -s entwurf:json '--' .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt .cache/entwurf/<ID>/bewertung.json
 npm run -s entwurf:bewertung-pruefen '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/bewertung.json
 ```
 
-**Fehler → Rückfrage an die Bewertung** (Feedback-Schleife): Schreibe die Fehlermeldungen (Zeile und Spalte von `entwurf:json`, Kennungen von `entwurf:bewertung-pruefen`) in eine Datei und starte einen neuen Auftrag:
+Der Agent prüft seine Antwort vor der Abgabe selbst (`npm run -s entwurf:antwort-pruefen -- <ID>`, gleiche Regeln wie `entwurf:bewertung-pruefen`, nur gegen die Blindliste); Formfehler sollten deshalb selten sein.
+
+**Fehler → Rückfrage an denselben Agenten** (Feedback-Schleife): Schreibe die Fehlermeldungen (Zeile und Spalte von `entwurf:json`, Kennungen von `entwurf:bewertung-pruefen`) in eine Datei und lege den Auftrag ab:
 
 ```bash
 npm run -s entwurf:bewertung-auftrag '--' .cache/entwurf/<ID>/erfassung.json '--rueckfrage' .cache/entwurf/<ID>/rueckfrage-bewertung.txt
 ```
 
-Das Skript lehnt Rückfragen mit Partei-, Personen- oder Ländernamen ab. Eintrag in `rueckfragen.md`. Wiederholen, bis `entwurf:bewertung-pruefen` ohne Fehler durchläuft.
+Das Skript lehnt Rückfragen mit Partei-, Personen- oder Ländernamen ab. Den Text von `protokoll/bewertung-auftrag.txt` schickst du wörtlich als Nachricht an **denselben** Agenten (Claude Code: SendMessage) – er kennt seine Bewertung noch und korrigiert nur die genannten Stellen. Nur wenn das nicht geht, ein neuer Agent mit demselben Auftrag. Eintrag in `rueckfragen.md`. Wiederholen, bis `entwurf:bewertung-pruefen` ohne Fehler durchläuft.
 
 **Die Bewertung entscheidet die Zuordnung zu Ursachen:** Nicht genannte Ursachen fallen beim Eintragen weg, `"ursachen": []` wird nicht eingetragen. Die Zeilen `Zuordnung: …` kommen in den Pull Request. Prüfe selbst nur die Methode: gleiche Lösungswege im selben Instrument, vorhandene Instrumente wiederverwendet, neutrale Begründungen. Werte und Zuordnungen änderst du nicht.
 
@@ -184,9 +189,16 @@ Fehlerbilder und ihre Ursachen: [reference/fehlerbilder.md](reference/fehlerbild
 
 ## 5. Dokumentieren und Pull Request
 
-- `docs/perspektiven-ursachen.md`, Abschnitt des Themas: Absatz **„Erfassung“** (Datum, „KI-Entwurf, nach dem Festlegen der Ursachen“, Programme, Leitfaden mit Bündeln, Suchbegriffe je Ursache und Richtung, Ergebnis mit ID-Bereichen, Parteien ohne Maßnahme je Ursache, nicht durchsuchte Programme, „Nicht erfasst wurden: …“).
+```bash
+npm run -s entwurf:bericht '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/bewertung.json
+npm run -s entwurf:archivieren '--' .cache/entwurf/<ID>/erfassung.json
+```
+
+- `entwurf:bericht` schreibt den Datenteil der Beschreibung nach `pr-daten.md` – wörtlich aus den Dateien (Übersicht je Programm, Ohne Maßnahme, Treffer, Vergleich, Kennungen, Zuordnung, Punkte, Rückfragen, Anmerkungen der Bewertung, Kosten). Nicht abschreiben, nicht kürzen.
+- `entwurf:archivieren` kopiert Erfassung, Stände, Kennungen, Blindliste, Bewertung und `protokoll/` nach `daten/protokolle/<ID>/<Datum>-<Ebene>/` (ohne Programmtexte und Aufträge). Mit dem Pull Request committen – sonst gehen die Protokolle mit dem Container verloren.
+- `docs/perspektiven-ursachen.md`, Abschnitt des Themas: Absatz **„Erfassung“** (Datum, „KI-Entwurf, nach dem Festlegen der Ursachen“, Programme, Leitfaden mit Bündeln, geänderte Suchbegriffe – die vollständigen stehen im Leitfaden –, Ergebnis mit ID-Bereichen, nicht durchsuchte Programme, „Nicht erfasst wurden: …“).
 - `daten/README.md`: Hinweis „Echte Daten, im Aufbau“ aktualisieren.
-- Beschreibung nach `.cache/entwurf/<ID>/pr.md`, Inhalt nach [reference/pull-request.md](reference/pull-request.md); bei jedem Push aktualisieren. Titel: „<Thema>: Maßnahmen aus N Programmen (KI-Entwurf)“.
+- `pr.md` = deine Einordnung (nach [reference/pull-request.md](reference/pull-request.md)) + `pr-daten.md`; bei jedem Push aktualisieren. Titel: „<Thema>: Maßnahmen aus N Programmen (KI-Entwurf)“.
 
 ## Sonderfälle
 

@@ -140,7 +140,7 @@ export function auftragText(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'suchbeg
   z.push('')
   if (pflicht.length)
     z.push(
-      `**Pflicht:** Zu Ursache ${pflicht.join(', ')} gibt es mindestens ${TREFFER_OHNE_MASSNAHME} Treffer. Hast du dazu am Ende keine Maßnahme, nenne unter „Nicht erfasst“ die gelesenen Fundstellen (Seiten) und den Grund – sonst folgt eine Rückfrage.`,
+      `**Pflicht:** Zu Ursache ${pflicht.join(', ')} gibt es mindestens ${TREFFER_OHNE_MASSNAHME} Treffer. Hast du dazu am Ende keine Maßnahme, trage im JSON unter „nicht_erfasst“ die gelesenen Fundstellen (Seiten) und den Grund ein – sonst lehnt entwurf:programm-pruefen die Datei ab.`,
       '',
     )
   const max = o.maxSeiten ?? 80

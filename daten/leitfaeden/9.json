@@ -1,7 +1,7 @@
 {
   "thema_id": 9,
   "stand": "2026-10-02",
-  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 9: Tabelle, Erläuterungen, „Verworfen“ und „Abgrenzung“), vor dem Blick in die Programme geschrieben; das Bündel „Vermögensabschöpfung und Einziehung“ (902) kam während der Erfassung dazu. Von der Betreiberin bestätigt am 2. 10. 2026.",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 9: Tabelle, Erläuterungen, „Verworfen“ und „Abgrenzung“), vor dem Blick in die Programme geschrieben; das Bündel „Vermögensabschöpfung und Einziehung“ (902) kam während der Erfassung dazu. Von der Betreiberin bestätigt am 2. 10. 2026. Suchbegriffe: Stand des Landesdurchgangs vom 3. 10. 2026 (docs/perspektiven-ursachen.md, „Erfassung der Landesprogramme“); der Bundesdurchgang vom 2. 10. 2026 nutzte die dort zuerst genannte Fassung.",
   "regeln": [
     {
       "nr": 1,
@@ -153,5 +153,427 @@
       "Schutz gefährdeter Gruppen und Einrichtungen",
       "Radikalisierung und Hass im Internet"
     ]
+  },
+  "suchbegriffe": {
+    "901": {
+      "Sichtbare Polizei, Videoschutz, Kontrollen": [
+        "polizeipräsenz",
+        "präsenz",
+        "polizeistreife",
+        "fußstreife",
+        "streifendienst",
+        "streifenwagen",
+        "videoüberwachung",
+        "videoschutz",
+        "kameraüberwachung",
+        "kontrolldruck",
+        "ordnungsdienst",
+        "ordnungsamt",
+        "kriminalitätsschwerpunkt",
+        "gefährliche orte",
+        "brennpunkt"
+      ],
+      "Waffenverbotszonen": [
+        "waffenverbot",
+        "messerverbot",
+        "verbotszone",
+        "waffenverbotszone"
+      ],
+      "Offene Drogenszenen auflösen": [
+        "drogenszene",
+        "offene szene",
+        "drogenhandel",
+        "dealer"
+      ],
+      "Gestaltung, Beleuchtung, Belebung": [
+        "beleuchtung",
+        "angstraum",
+        "angsträum",
+        "öffentlicher raum",
+        "öffentlichen raum",
+        "städtebauliche kriminalprävention",
+        "belebung"
+      ],
+      "Sozialarbeit und Drogenhilfe vor Ort": [
+        "straßensozialarbeit",
+        "streetwork",
+        "aufsuchende sozialarbeit",
+        "drogenkonsumr",
+        "drogenhilfe"
+      ],
+      "Bahnhöfe und Nahverkehr": [
+        "bahnhof",
+        "bahnhöfe",
+        "bahnhöfen",
+        "nahverkehr",
+        "öpnv",
+        "sicherheit in bus",
+        "sicherheitspersonal",
+        "bundespolizei"
+      ]
+    },
+    "902": {
+      "Mehr Polizei und Ermittler": [
+        "polizist",
+        "polizeibeamt",
+        "stellen bei der polizei",
+        "polizeistellen",
+        "ermittler",
+        "kriminalpolizei",
+        "ausstattung der polizei",
+        "sicherheitsbehörden"
+      ],
+      "Mehr Richter und Staatsanwälte": [
+        "richterstell",
+        "richterinnen",
+        "richterschaft",
+        "staatsanw",
+        "justizpersonal",
+        "pakt für den rechtsstaat",
+        "rechtsstaatspakt",
+        "gerichtsverfahren",
+        "gerichtsstandort",
+        "ausstattung der justiz"
+      ],
+      "Ermittlungsbefugnisse und Datenzugriff": [
+        "polizeigesetz",
+        "polizeirecht",
+        "eingriffsbefugnis",
+        "überwachungsbefugnis",
+        "datenzugriff",
+        "vorratsdatenspeicherung",
+        "online-durchsuchung",
+        "quellen-tkü",
+        "telekommunikationsüberwachung",
+        "gesichtserkennung",
+        "datenanalyse",
+        "palantir"
+      ],
+      "Schnellere und vereinfachte Verfahren": [
+        "verfahrensbeschleunig",
+        "beschleunigung der verfahren",
+        "schnellverfahren",
+        "beschleunigtes verfahren",
+        "verfahrensdauer",
+        "strafprozess",
+        "strafverfahren",
+        "auf dem fuße"
+      ],
+      "Entkriminalisierung von Bagatelldelikten": [
+        "entkriminalis",
+        "bagatell",
+        "fahren ohne fahrschein",
+        "schwarzfahren",
+        "ersatzfreiheitsstraf",
+        "legalisierung"
+      ],
+      "Digitalisierung der Justiz": [
+        "digitalisierung der justiz",
+        "e-akte",
+        "elektronische akte",
+        "digitale justiz",
+        "digitalisierung der polizei"
+      ],
+      "Strafen und Aufklärung allgemein": [
+        "aufklärungsquote",
+        "strafverfolgung",
+        "mindeststrafe",
+        "strafrahmen",
+        "strafverschärfung",
+        "clan",
+        "organisierte kriminalität",
+        "vermögensabschöpfung"
+      ]
+    },
+    "903": {
+      "Jugendstrafrecht verschärfen, Strafmündigkeit": [
+        "jugendstrafrecht",
+        "strafmündigkeit",
+        "jugendgerichtsgesetz",
+        "heranwachsend",
+        "jugendliche straftäter",
+        "jugendkriminalität",
+        "intensivtäter"
+      ],
+      "Häuser des Jugendrechts, schnelle Verfahren": [
+        "haus des jugendrechts",
+        "häuser des jugendrechts",
+        "jugendrecht"
+      ],
+      "Jugendarbeit, Schulsozialarbeit, Prävention": [
+        "jugendarbeit",
+        "schulsozialarbeit",
+        "gewaltprävention",
+        "jugendgewalt",
+        "kriminalprävention",
+        "jugendzentr",
+        "jugendclub"
+      ],
+      "Messer- und Waffenverbote": [
+        "messer",
+        "messerangriff",
+        "messerkriminalität",
+        "waffenrecht"
+      ]
+    },
+    "904": {
+      "Schutzplätze und Beratung": [
+        "frauenhaus",
+        "frauenhäuser",
+        "schutzplätz",
+        "schutzwohnung",
+        "gewalthilfegesetz",
+        "frauenberatung",
+        "fachberatungsstelle",
+        "interventionsstelle",
+        "gewaltberatung",
+        "hilfetelefon",
+        "istanbul-konvention"
+      ],
+      "Fußfessel, Kontaktverbote, Hochrisikomanagement, Strafen": [
+        "fußfessel",
+        "elektronische aufenthaltsüberwachung",
+        "kontaktverbot",
+        "näherungsverbot",
+        "gewaltschutzgesetz",
+        "hochrisiko",
+        "femizid",
+        "stalking",
+        "wegweisung"
+      ],
+      "Täterarbeit": [
+        "täterarbeit",
+        "täterprogramm",
+        "anti-gewalt-training",
+        "antigewalttraining"
+      ],
+      "Rollenbilder": [
+        "rollenbild",
+        "geschlechterstereotyp",
+        "toxische männlich",
+        "gleichstellung"
+      ],
+      "Häusliche Gewalt allgemein": [
+        "häusliche gewalt",
+        "häuslicher gewalt",
+        "partnerschaftsgewalt",
+        "gewalt gegen frauen",
+        "gewaltschutz"
+      ]
+    },
+    "905": {
+      "Zuzug begrenzen und steuern": [
+        "zuwanderung begrenz",
+        "migration begrenz",
+        "zurückweisung",
+        "grenzkontroll",
+        "obergrenze",
+        "irreguläre migration"
+      ],
+      "Straffällige Ausländer ausweisen und abschieben": [
+        "ausweisung",
+        "abschieb",
+        "straftäter",
+        "straffällig",
+        "ausreisepflicht",
+        "abschiebehaft",
+        "staatsangehörigkeit entziehen",
+        "ausländerkriminalität"
+      ],
+      "Arbeitsmarktzugang, Sprache, Bleibeperspektive, Integration": [
+        "arbeitsverbot",
+        "beschäftigungsverbot",
+        "arbeitsmarktzugang",
+        "integrationskurs",
+        "sprachkurs",
+        "bleibeperspektive",
+        "spurwechsel",
+        "bleiberecht"
+      ],
+      "Aufnahme, Verteilung, Wohnort": [
+        "wohnsitzauflage",
+        "verteilung",
+        "unterbringung",
+        "sammelunterkunft",
+        "gemeinschaftsunterkunft",
+        "aufnahmeeinrichtung"
+      ],
+      "Einordnung nach Alter, Geschlecht, Anzeigeverhalten": [
+        "tatverdächtig",
+        "nichtdeutsch",
+        "migrant",
+        "zugewandert"
+      ]
+    },
+    "906": {
+      "IP-Adressen speichern, Ermittlungsbefugnisse": [
+        "ip-adress",
+        "ip-adressen",
+        "speicherpflicht",
+        "cybercrime",
+        "cyberkriminalität",
+        "internetkriminalität"
+      ],
+      "Quick Freeze, Datenschutz": [
+        "quick freeze",
+        "quick-freeze",
+        "login-falle",
+        "anlassbezogen"
+      ],
+      "Haftung von Banken und Plattformen": [
+        "phishing",
+        "betrug",
+        "haftung",
+        "zahlungsdienst",
+        "überweisung",
+        "plattform",
+        "fake-shop",
+        "enkeltrick",
+        "schockanruf",
+        "callcenter",
+        "anrufer"
+      ],
+      "Internationale Rechtshilfe, Europol": [
+        "europol",
+        "rechtshilfe",
+        "internationale zusammenarbeit",
+        "e-evidence"
+      ],
+      "Aufklärung und Medienkompetenz": [
+        "medienkompetenz",
+        "verbraucheraufklärung",
+        "digitale kompetenz",
+        "sensibilisierung"
+      ]
+    },
+    "907": {
+      "Islamismus und Gefährder": [
+        "islamis",
+        "gefährder",
+        "dschihad",
+        "salafis",
+        "politischer islam",
+        "terror"
+      ],
+      "Rechtsextremismus": [
+        "rechtsextrem",
+        "rechter terror",
+        "neonazi",
+        "reichsbürger",
+        "rechtsradikal"
+      ],
+      "Linksextremismus": [
+        "linksextrem",
+        "antifa",
+        "linksradikal",
+        "linke gewalt"
+      ],
+      "Befugnisse der Nachrichtendienste": [
+        "verfassungsschutz",
+        "nachrichtendienst",
+        "bundesnachrichtendienst",
+        "geheimdienst",
+        "v-leute",
+        "v-person"
+      ],
+      "Prävention, Ausstieg, Demokratieförderung": [
+        "demokratie leben",
+        "demokratieförder",
+        "demokratiefördergesetz",
+        "ausstiegsprogramm",
+        "deradikalisierung",
+        "extremismusprävention",
+        "prävention"
+      ],
+      "Extremismus und Hasskriminalität allgemein": [
+        "extremis",
+        "politisch motiviert",
+        "hasskriminalität",
+        "hass und hetze",
+        "antisemitis",
+        "vereinsverbot",
+        "verbotsverfahren"
+      ]
+    },
+    "908": {
+      "Härtere Strafen": [
+        "sexualstraf",
+        "vergewaltig",
+        "sexualdelikt",
+        "sexualstraftäter",
+        "sexuelle nötigung"
+      ],
+      "Nur Ja heißt Ja, Spurensicherung, Beratung": [
+        "nur ja heißt ja",
+        "ja heißt ja",
+        "spurensicherung",
+        "gewaltschutzambulanz",
+        "sexualisierte gewalt",
+        "sexuelle gewalt"
+      ],
+      "Schutz im öffentlichen Raum, K.-o.-Tropfen": [
+        "k.-o.-tropfen",
+        "ko-tropfen",
+        "k.o.-tropfen",
+        "belästigung",
+        "catcalling",
+        "übergriff"
+      ]
+    },
+    "909": {
+      "Herkunft offener nennen, mehr Lagebilder": [
+        "herkunft",
+        "nationalität",
+        "lagebild",
+        "täterherkunft",
+        "nennung der staatsangehörigkeit"
+      ],
+      "Kriminalstatistik einordnen, Sicherheitsbericht": [
+        "sicherheitsbericht",
+        "kriminalstatistik",
+        "pks",
+        "kriminologi"
+      ],
+      "Dunkelfeldbefragungen": [
+        "dunkelfeld",
+        "viktimisierungsbefragung",
+        "opferbefragung"
+      ]
+    },
+    "911": {
+      "Behandlung und aufsuchende Versorgung": [
+        "psychiatri",
+        "psychisch krank",
+        "psychische erkrank",
+        "krisendienst",
+        "sozialpsychiatri",
+        "aufsuchend"
+      ],
+      "Informationsaustausch und Gefährdermanagement": [
+        "informationsaustausch",
+        "fallkonferenz",
+        "gefährdermanagement",
+        "psychisch auffällig"
+      ],
+      "Unterbringung nach PsychKG": [
+        "psychkg",
+        "psychisch-kranken-gesetz",
+        "unterbringung",
+        "maßregelvollzug",
+        "zwangseinweisung"
+      ],
+      "Suchthilfe": [
+        "suchthilfe",
+        "suchtberatung",
+        "sucht",
+        "drogenabhängig",
+        "alkoholabhängig",
+        "substitution"
+      ]
+    }
+  },
+  "suchbegriffe_geprueft": {
+    "bahnhof": "Zusammensetzungen wie „Hauptbahnhof“ gehören zum Thema (Landesdurchgang 3. 10. 2026)",
+    "ermittler": "Nur ein Teil der Treffer aus „Vermittler“ und Ähnlichem; „Ermittler“ selbst ist zentral (Landesdurchgang 3. 10. 2026)"
   }
 }

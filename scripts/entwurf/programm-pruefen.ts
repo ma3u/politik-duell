@@ -6,7 +6,8 @@
 // Erwartet die Erfassung (thema_id) als erfassung.json im Arbeitsordner (eine Ebene über protokoll/).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { kurzbericht, programmName, pruefeProgramm, zitatHinweise, type ErfasstesProgramm } from '../entwurf.ts'
+import { kurzbericht, programmName, pruefeProgramm, TREFFER_OHNE_MASSNAHME, vorgeschlageneUrsachen, zitatHinweise, type ErfasstesProgramm } from '../entwurf.ts'
+import { fundstellen, zulaessigeUrsachen } from './auftrag-text.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
 import { findeZitat } from '../zitate.ts'
@@ -73,6 +74,22 @@ try {
   if (url) ({ seiten } = await erfassungsSeiten(url, lp ? lp.sha256 : partei.programm_sha256, lokal))
 } catch (e) {
   hinweise.push(`Zitate nicht geprüft – Programm nicht geladen: ${e instanceof Error ? e.message : e}`)
+}
+// Pflichtursachen (viele Treffer, keine Maßnahme): gelesene Seiten und Grund strukturiert in „nicht_erfasst“.
+// So behebt der Agent eine fehlende Begründung selbst, statt dass die Koordination nachfragt.
+if (seiten) {
+  const ursachen = zulaessigeUrsachen(katalog, erfassung.thema_id, p.land ?? null).map((u) => u.id)
+  const f = fundstellen(seiten, erfassung.suchbegriffe, ursachen)
+  for (const u of ursachen) {
+    const summe = Object.values(f.zahlen[u] ?? {}).reduce((a, r) => a + Object.values(r).reduce((x, y) => x + y, 0), 0)
+    const n = (p.nicht_erfasst ?? []).find((x) => x.ursache === u)
+    for (const s of Array.isArray(n?.seiten) ? n.seiten : []) if (Number.isInteger(s) && s > seiten.length) fehlerliste.push(`nicht_erfasst ${u}: Seite ${s} gibt es nicht (${seiten.length} Seiten)`)
+    if (massnahmen.some((m) => vorgeschlageneUrsachen(m).includes(u))) continue
+    if (summe >= TREFFER_OHNE_MASSNAHME && !n?.seiten?.length)
+      fehlerliste.push(`Pflichtursache ${u} (${summe} Treffer) ohne Maßnahme: in „nicht_erfasst“ die gelesenen Fundstellen (Seiten) und den Grund nennen`)
+    else if (n && Array.isArray(n.seiten) && !n.seiten.some((s) => f.seiten.some((x) => x.n === s && [...x.marken.keys()].some((k) => k.startsWith(`${u} `)))))
+      hinweise.push(`nicht_erfasst ${u}: keine der genannten Seiten hat einen Treffer zu dieser Ursache – Fundstellen aus dem Auftrag gelesen?`)
+  }
 }
 const gesehen = new Map<string, number>()
 for (const [j, m] of massnahmen.entries()) {

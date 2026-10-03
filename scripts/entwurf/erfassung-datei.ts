@@ -2,6 +2,7 @@
 // Erfassungsleitfaden aus dem Repository (daten/leitfaeden/<ID>.json). Der Leitfaden gilt immer in
 // der Fassung aus dem Repository – eine Kopie in der Arbeitsdatei wird überschrieben, damit
 // Erfassung, Blindliste und Bewertung denselben Maßstab haben und er im Pull Request sichtbar ist.
+// Dasselbe gilt für die Suchbegriffe, wenn der Leitfaden sie enthält.
 import { existsSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import type { Erfassung, Leitfaden } from '../entwurf.ts'
@@ -15,9 +16,17 @@ export function leseLeitfaden(themaId: number): Leitfaden | undefined {
 
 export function leseErfassung(pfad: string): Erfassung {
   const e = JSON.parse(readFileSync(pfad, 'utf8')) as Erfassung
+  return mitLeitfaden(e, leseLeitfaden(e.thema_id))
+}
+
+/**
+ * Leitfaden aus dem Repository einsetzen. Stehen dort Suchbegriffe, gelten sie – nicht die der
+ * Arbeitsdatei: eine Quelle für Bund und Länder, die den Container überlebt.
+ */
+export function mitLeitfaden(e: Erfassung, leitfaden: Leitfaden | undefined): Erfassung {
   const { leitfaden: _, ...rest } = e
-  const leitfaden = leseLeitfaden(e.thema_id)
-  return leitfaden ? { ...rest, leitfaden } : rest
+  if (!leitfaden) return rest
+  return { ...rest, ...(leitfaden.suchbegriffe ? { suchbegriffe: leitfaden.suchbegriffe } : {}), leitfaden }
 }
 
 /** Arbeitsordner eines Themas aus dem Pfad einer Datei in protokoll/ oder programme/. */
