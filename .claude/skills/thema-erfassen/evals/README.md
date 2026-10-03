@@ -11,7 +11,7 @@ Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expec
 
 ## Vergleichstest: kleinste Modellstufe bei der Erfassung
 
-**Frage:** Erkennt die kleinste Stufe der Modellfamilie (hier Claude Haiku) Zusagen und Zitate so verlässlich, dass `programm-erfassung` mit ihr laufen kann?
+**Frage:** Erkennt die kleinste Stufe der Modellfamilie (in Claude Code: `model: haiku`) Zusagen und Zitate so verlässlich, dass `programm-erfassung` mit ihr laufen kann?
 
 **Aufbau (3. 10. 2026):** Bundesprogramm der FDP, Thema 9, Suchbegriffe aus `docs/perspektiven-ursachen.md` („Erfassung“), Leitfaden `daten/leitfaeden/9.json`, Auftrag mit `auftragText` wie bei `entwurf:auftrag` (Arbeitsordner `.cache/vergleich/9/`, nicht im Repository). Ein Agent `programm-erfassung` mit `model: haiku`, Auftrag wie im Skill. Vergleich mit den 11 Maßnahmen in `daten/themen/09-sicherheit.json` (Erfassung mit der mittleren Stufe, nach der Bewertung ohne Parteinamen).
 
