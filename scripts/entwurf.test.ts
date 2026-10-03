@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, type BlindListe, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
-import { erstesJsonObjekt } from './entwurf/json-text'
+import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
+import { breiteBegriffe } from './entwurf/vorab'
+import { wortformen } from './entwurf/suche'
 import { pruefeDatenordner } from './katalog-laden'
 import { readdirSync, readFileSync } from 'node:fs'
 import { vergleicheStand } from './stand-vergleich'
@@ -40,7 +42,7 @@ const katalog = (inhalt: Record<string, unknown> = themaInhalt()) => {
 }
 
 const SUCHBEGRIFFE = { '1701': { 'Plätze ausbauen': ['kita'] }, '1702': { 'Fachkräfte gewinnen': ['erzieher'], Quereinstieg: ['quereinst'] } }
-const TREFFER = {
+const TREFFER: Treffermatrix = {
   begriffe_pruefsumme: begriffePruefsumme(SUCHBEGRIFFE),
   programme: [
     { partei_id: 1, land: null, ursachen: { '1701': { 'Plätze ausbauen': { kita: 4 } }, '1702': { 'Fachkräfte gewinnen': { erzieher: 2 }, Quereinstieg: { quereinst: 0 } } } },
@@ -169,33 +171,81 @@ describe('Liste ohne Parteinamen', () => {
       return nur(kennungen(e)) !== nur(fest)
     })
     expect(verschiebt).toBe(true)
-    expect(kennungen(e, fest)).toEqual(fest)
+    // Über den Inhalt zugeordnet: gleiche Kennung, Beschreibung als geändert gemeldet.
+    const a = ordneKennungen(e, fest)
+    expect(a.neu).toEqual([])
+    expect(a.entfallen).toEqual([])
+    expect(a.kennungen.map((x) => [x.kennung, x.programm, x.massnahme])).toEqual(fest.map((x) => [x.kennung, x.programm, x.massnahme]))
+    expect(a.geaendert.map((g) => [g.kennung.kennung, g.was])).toEqual([[fest.find((x) => x.programm === 0 && x.massnahme === 0)!.kennung, ['Beschreibung oder Ursachen']]])
     expect(pruefeKennungen(e, fest)).toEqual([])
-    const liste = blindListe(katalog(), e, fest)
+    const liste = blindListe(katalog(), e, a.kennungen)
     expect(liste.massnahmen.map((m) => m.kennung)).toEqual(fest.map((x) => x.kennung))
-    // Eine Maßnahme mehr oder weniger macht die gespeicherte Zuordnung ungültig.
-    e.programme[0].massnahmen.push({ beschreibung: 'Neu', ursachen_ids: [1701], zitat: 'Neu.', seite: 1 })
-    expect(pruefeKennungen(e, fest).join()).toMatch(/fehlt in der gespeicherten Zuordnung/)
-    e.programme[0].massnahmen.splice(0, 2)
-    expect(pruefeKennungen(e, fest).join()).toMatch(/gibt es in der Erfassung nicht mehr/)
   })
 
-  it('erkennt umsortierte Programme und ausgetauschte Maßnahmen bei gleicher Anzahl', () => {
-    // Zwei Programme mit gleich vielen Maßnahmen tauschen: Positionen passen, Parteien nicht.
+  it('vergibt beim Einfügen nur der neuen Maßnahme eine neue, fortlaufende Kennung', () => {
     const e = erfassung()
-    e.programme[0].massnahmen.splice(1)
     const fest = kennungen(e)
-    const getauscht = structuredClone(e)
+    const vorher = new Map(fest.map((x) => [`${x.partei_id}/${x.land}/${x.zitat}`, x.kennung]))
+    // Maßnahme vorn einfügen: Alle Stellen in Programm 0 verschieben sich, die Kennungen nicht.
+    e.programme[0].massnahmen.unshift({ beschreibung: 'Neue Zusage', ursachen_ids: [1702], zitat: 'Wir stellen mehr Erzieher ein.', seite: 14 })
+    const a = ordneKennungen(e, fest, fest.length)
+    expect(a.neu.map((x) => [x.kennung, x.programm, x.massnahme])).toEqual([['M04', 0, 0]])
+    expect(a.entfallen).toEqual([])
+    expect(a.geaendert).toEqual([])
+    for (const x of a.kennungen.filter((k) => k.kennung !== 'M04')) expect(vorher.get(`${x.partei_id}/${x.land}/${x.zitat}`)).toBe(x.kennung)
+    expect(pruefeKennungen(e, fest).join()).toMatch(/noch keine Kennung/)
+    // Die Blindliste nennt die neue Kennung zuletzt; die übrigen Einträge sind unverändert (gleiche Prüfsumme je Maßnahme).
+    const alt = blindListe(katalog(), erfassung(), fest)
+    const neu = blindListe(katalog(), e, a.kennungen)
+    expect(neu.massnahmen.map((m) => m.kennung)).toEqual(['M01', 'M02', 'M03', 'M04'])
+    for (const m of alt.massnahmen) expect(neu.massnahmen.find((x) => x.kennung === m.kennung)?.pruefsumme).toBe(m.pruefsumme)
+  })
+
+  it('vergibt entfallene Kennungen nicht neu und erkennt Umsortieren und geänderte Zitate', () => {
+    const e = erfassung()
+    const fest = kennungen(e)
+    const weg = fest.find((x) => x.programm === 0 && x.massnahme === 1)!
+    // Löschen: Kennung entfällt, die nächste neue Maßnahme bekommt trotzdem eine höhere Nummer.
+    e.programme[0].massnahmen.splice(1, 1)
+    const a = ordneKennungen(e, fest, fest.length)
+    expect(a.entfallen.map((x) => x.kennung)).toEqual([weg.kennung])
+    expect(a.neu).toEqual([])
+    expect(pruefeKennungen(e, fest).join()).toMatch(/gibt es in der Erfassung nicht mehr/)
+    e.programme[0].massnahmen.push({ beschreibung: 'Andere Zusage', ursachen_ids: [1702], zitat: 'Ganz anders.', seite: 30 })
+    const b = ordneKennungen(e, a.kennungen, a.vergeben_bis)
+    expect(b.neu.map((x) => x.kennung)).toEqual(['M04'])
+    // Programme umsortieren: Zuordnung über Partei und Land, nicht über die Stelle.
+    const getauscht = structuredClone(erfassung())
     ;[getauscht.programme[0], getauscht.programme[2]] = [getauscht.programme[2], getauscht.programme[0]]
-    expect(pruefeKennungen(getauscht, fest).join()).toMatch(/Programme umsortiert/)
-    // Nur das Zitat korrigiert: erlaubt. Beschreibung und Zitat neu: andere Maßnahme.
-    e.programme[0].massnahmen[0].zitat = 'Korrigiertes Zitat.'
-    expect(pruefeKennungen(e, fest)).toEqual([])
-    e.programme[0].massnahmen[0].beschreibung = 'Ganz andere Maßnahme'
-    expect(pruefeKennungen(e, fest).join()).toMatch(/ausgetauscht/)
-    // Alte kennungen.json ohne die neuen Felder wird weiter nach Position geprüft.
-    const alt = fest.map(({ kennung, programm, massnahme }) => ({ kennung, programm, massnahme }))
-    expect(pruefeKennungen(e, alt)).toEqual([])
+    const c = ordneKennungen(getauscht, fest)
+    expect([c.neu, c.entfallen, c.geaendert]).toEqual([[], [], []])
+    for (const x of c.kennungen) expect(getauscht.programme[x.programm].partei_id).toBe(fest.find((f) => f.kennung === x.kennung)!.partei_id)
+    // Zitat korrigiert (gleicher Anfang): dieselbe Kennung, als geändert gemeldet. Beschreibung und Zitat neu: neue Maßnahme.
+    const korr = erfassung()
+    korr.programme[0].massnahmen[0].zitat = 'Wir Freie Demokraten fördern Kitaplätze überall.'
+    const d = ordneKennungen(korr, fest)
+    expect(d.geaendert.map((g) => g.was)).toEqual([['Zitat']])
+    korr.programme[0].massnahmen[0] = { beschreibung: 'Ganz andere Maßnahme', ursachen_ids: [1701], zitat: 'Etwas völlig anderes.', seite: 12 }
+    const f = ordneKennungen(korr, fest)
+    expect([f.neu.length, f.entfallen.length]).toEqual([1, 1])
+    // Ältere kennungen.json ohne Herkunft: weiter lesbar (Herkunft aus der damaligen Stelle).
+    const alt = fest.map(({ kennung, programm, massnahme, beschreibung, zitat }) => ({ kennung, programm, massnahme, beschreibung, zitat }))
+    expect(pruefeKennungen(erfassung(), alt)).toEqual([])
+  })
+
+  it('ordnet ein Zitat mit Parteinamen über das Original zu, obwohl die Blindliste den Namen ersetzt', () => {
+    const e = erfassung()
+    const fest = kennungen(e)
+    const fdp = fest.find((x) => x.programm === 0 && x.massnahme === 0)!
+    expect(blindListe(katalog(), e, fest).massnahmen.find((m) => m.kennung === fdp.kennung)?.zitat).toBe('Wir fördern Kitaplätze.')
+    // Eine zweite Maßnahme mit demselben neutralisierten Zitat, aber anderem Original („Die LINKE“ statt „Wir Freie Demokraten“).
+    e.programme[2].massnahmen.unshift({ beschreibung: 'Kitaplätze', ursachen_ids: [1701], zitat: 'Wir fördern Kitaplätze.', seite: 12 })
+    const a = ordneKennungen(e, fest, fest.length)
+    expect(a.kennungen.find((x) => x.kennung === fdp.kennung)).toMatchObject({ partei_id: 1, land: null, programm: 0, massnahme: 0 })
+    expect(a.neu).toHaveLength(1)
+    expect(a.neu[0]).toMatchObject({ partei_id: 2, land: 'ST' })
+    // Das neutralisierte Zitat steht nicht in kennungen.json – dort nur Anfang und Prüfsumme des Originals.
+    expect(fdp.zitat).toBe('wir freie demokraten fördern kitaplätze.')
   })
 })
 
@@ -314,7 +364,7 @@ describe('Zuordnung zu Ursachen blind entschieden', () => {
     c0.zuordnung[1] = { kennung: c0.zuordnung[1].kennung, ursachen: [1702] } as unknown as Bewertung['zuordnung'][number]
     expect(pruefeBewertung(k, e, c0).join()).toMatch(/weder instrument noch einzeln/)
     const c = bewertung(e)
-    c.zuordnung[2] = { ...c.zuordnung[2], ursachen: [1701, 1702] }
+    c.zuordnung[2] = { ...c.zuordnung[2], ursachen: [1701, 1702] } as Zuordnung
     expect(zuordnungsHinweise(k, e, c).join()).toMatch(/zusätzlich Ursache 1702/)
     // Gleiches Instrument, unterschiedliche Ursachen.
     e.programme[0].massnahmen[1].ursachen_ids = [1701, 1702]
@@ -326,7 +376,7 @@ describe('Zuordnung zu Ursachen blind entschieden', () => {
 })
 
 describe('Protokoll', () => {
-  const vollstaendig = (e: Erfassung, auftrag: string) =>
+  const vollstaendig = (_e: Erfassung, auftrag: string) =>
     new Map([
       [PROTOKOLL.erfassung('Eins', null), 'Rohantwort …'],
       [PROTOKOLL.erfassung('Zwei', null), 'Rohantwort …'],
@@ -489,8 +539,8 @@ describe('Offene Zuordnung', () => {
     const b = bewertung(e)
     const nach = (p: number, m: number) => kennungen(e).find((x) => x.programm === p && x.massnahme === m)!.kennung
     // Bewertung: bei der ersten nur 1701 (offene 1702 abgelehnt), die zweite verworfen.
-    b.zuordnung = b.zuordnung.map((z) =>
-      z.kennung === nach(0, 0) ? { ...z, ursachen: [1701] } : z.kennung === nach(0, 1) ? { kennung: z.kennung, ursachen: [] as [] } : z,
+    b.zuordnung = b.zuordnung.map((z): Zuordnung =>
+      z.kennung === nach(0, 0) ? ({ ...z, ursachen: [1701] } as Zuordnung) : z.kennung === nach(0, 1) ? { kennung: z.kennung, ursachen: [] as [] } : z,
     )
     b.blind_pruefsumme = liste.pruefsumme
     expect(pruefeBewertung(k, e, b)).toEqual([])
@@ -593,6 +643,14 @@ describe('JSON aus einer Agentenantwort', () => {
     expect(erstesJsonObjekt('Antwort:\n{ "a": "x { y }", "b": [1] }\nProtokoll …')).toEqual({ objekt: { a: 'x { y }', b: [1] }, rest: 'Protokoll …' })
     expect(() => erstesJsonObjekt('{ "a": 1')).toThrow(/abgeschnitten/)
   })
+
+  it('nennt bei Fehlern Zeile und Spalte in der Datei', () => {
+    expect(() => erstesJsonObjekt('Antwort\n{\n  "a": [1, 2,\n  "b": 2\n}')).toThrow(/„}“ schließt „\[“ aus Zeile 3, Spalte 8.*Zeile 5, Spalte 1/)
+    expect(() => erstesJsonObjekt('{"a": 1,\n "b": }')).toThrow(/Zeile 2, Spalte 7/)
+    expect(() => erstesJsonObjekt('x\n{"a": [1]\n, "c": tru }')).toThrow(/Zeile 3, Spalte 8/)
+    expect(fehlerStelle('{"a": [1, 2]}')).toBe(-1)
+    expect(fehlerStelle('{"a" 1}')).toBe(5)
+  })
 })
 
 describe('Leitfäden im Repository', () => {
@@ -604,5 +662,223 @@ describe('Leitfäden im Repository', () => {
       expect(d).toBe(`${l.thema_id}.json`)
       expect(pruefeLeitfaden(k, l)).toEqual([])
     }
+  })
+})
+
+describe('Verluste nach Rückfragen (Vergleich mit dem vorherigen Stand)', () => {
+  it('meldet zusammengefasste und entfallene Maßnahmen und Ursachen ohne Maßnahme', () => {
+    const k = katalog()
+    // Fall Thema 9: zwei verschiedene Zusagen, eine im Bündel, eine ohne – die Rückfrage fasst sie zusammen.
+    const vorher = erfassung().programme
+    vorher[0].massnahmen = [
+      { beschreibung: 'Ausbildung vergüten', ursachen_ids: [1702], buendel: 'Vergütung', zitat: 'Die Ausbildung wird vergütet.', seite: 13 },
+      { beschreibung: 'Mehr Kitaplätze fördern', ursachen_ids: [1701], zitat: 'Wir Freie Demokraten fördern Kitaplätze.', seite: 12 },
+    ]
+    const jetzt = structuredClone(vorher)
+    jetzt[0].massnahmen = [{ beschreibung: 'Ausbildung vergüten und Kitaplätze fördern', ursachen_ids: [1702], buendel: 'Vergütung', zitat: 'Die Ausbildung wird vergütet.', seite: 13 }]
+    const z = vergleicheErfassung(k, vorher, jetzt).join('\n')
+    expect(z).toMatch(/Eins \(Bund\): zusammengefasst\? S\. 12 „Mehr Kitaplätze fördern“ fehlt, S\. 13 „Ausbildung vergüten und Kitaplätze fördern“ \[Vergütung\] ist neu oder geändert/)
+    expect(z).toMatch(/Eins \(Bund\): Ursache 1701 hatte 1 Maßnahme\(n\), jetzt keine/)
+    // Ohne passende geänderte Maßnahme: schlicht entfallen. Neue Maßnahmen und weggefallene Programme werden genannt.
+    const nurWeg = structuredClone(vorher)
+    nurWeg[0].massnahmen.splice(1, 1)
+    nurWeg.pop()
+    nurWeg[0].massnahmen.push({ beschreibung: 'Neu', ursachen_ids: [1702], zitat: 'Neu.', seite: 40 })
+    const w = vergleicheErfassung(k, vorher, nurWeg).join('\n')
+    expect(w).toMatch(/Eins \(Bund\): entfallen S\. 12/)
+    expect(w).toMatch(/Eins \(Bund\): neu S\. 40 „Neu“/)
+    expect(w).toMatch(/Zwei \(ST\): ganz entfallen/)
+    expect(vergleicheErfassung(k, vorher, structuredClone(vorher))).toEqual([])
+  })
+
+  it('listet Maßnahmen ohne Bündel an Ursachen mit Bündeln', () => {
+    const k = katalog()
+    const e = { ...erfassung(), leitfaden: LEITFADEN }
+    expect(ohneBuendel(k, e)).toEqual(['Eins (Bund): S. 13 „Erzieherausbildung vergüten“ ohne Bündel (Ursache 1702 hat Bündel)'])
+    e.programme[0].massnahmen[1].buendel = 'Vergütung'
+    expect(ohneBuendel(k, e)).toEqual([])
+  })
+})
+
+describe('Teil-Neubewertung', () => {
+  const k = katalog()
+  const basis = () => {
+    const e = erfassung()
+    const fest = kennungen(e)
+    const liste = blindListe(k, e, fest)
+    return { e, fest, liste, bisher: bewertung(e) }
+  }
+
+  it('bewertet nur neue oder geänderte Kennungen und übernimmt die übrigen unverändert', () => {
+    const { e, fest, liste, bisher } = basis()
+    e.programme[0].massnahmen.push({ beschreibung: 'Erzieher einstellen', ursachen_ids: [1702], zitat: 'Wir stellen Erzieher ein.', seite: 15 })
+    const a = ordneKennungen(e, fest, fest.length)
+    const jetzt = blindListe(k, e, a.kennungen)
+    const { block, fehler } = teilbewertung(liste, jetzt, bisher)
+    expect(fehler).toEqual([])
+    expect(block!.zu_bewerten).toEqual(['M04'])
+    expect(block!.bisher.zuordnung).toHaveLength(3)
+    expect(JSON.stringify(block)).not.toMatch(/partei|Freie Demokraten|LINKE/)
+    const teil: Bewertung = { blind_pruefsumme: jetzt.pruefsumme, neue_instrumente: [], zuordnung: [{ kennung: 'M04', instrument: 'I1', ursachen: [1702] }] }
+    const { bewertung: zusammen, fehler: f2 } = fuehreTeilbewertungZusammen(jetzt, block!, teil)
+    expect(f2).toEqual([])
+    expect(zusammen!.zuordnung.map((z) => z.kennung)).toEqual(['M01', 'M02', 'M03', 'M04'])
+    expect(zusammen!.teilbewertung).toEqual({ vorherige_pruefsumme: liste.pruefsumme, neu_bewertet: ['M04'] })
+    // Danach dieselbe strenge Prüfung wie bei einer vollständigen Bewertung.
+    expect(pruefeBewertung(k, e, zusammen!, a.kennungen)).toEqual([])
+  })
+
+  it('lehnt ab, wenn unveränderte Einträge anders bewertet werden, Kennungen fehlen oder der Maßstab sich geändert hat', () => {
+    const { e, fest, liste, bisher } = basis()
+    e.programme[0].massnahmen[1].beschreibung = 'Erzieherausbildung vergüten, mit Zuschlag'
+    const jetzt = blindListe(k, e, ordneKennungen(e, fest).kennungen)
+    const { block } = teilbewertung(liste, jetzt, bisher)
+    const geaendert = fest.find((x) => x.programm === 0 && x.massnahme === 1)!.kennung
+    expect(block!.zu_bewerten).toEqual([geaendert])
+    const unveraendert = bisher.zuordnung.find((z) => z.kennung !== geaendert)!
+    const falsch: Bewertung = {
+      blind_pruefsumme: jetzt.pruefsumme,
+      neue_instrumente: [{ ...bisher.neue_instrumente[0], wirksamkeit: 3 }],
+      zuordnung: [{ ...unveraendert, ursachen: [] }],
+    }
+    const f = fuehreTeilbewertungZusammen(jetzt, block!, falsch).fehler.join('\n')
+    expect(f).toMatch(/unverändert, aber anders bewertet/)
+    expect(f).toMatch(/Instrument I1: gibt es schon mit anderen Werten/)
+    expect(f).toMatch(new RegExp(`${geaendert}: neu oder geändert, aber nicht bewertet`))
+    expect(fuehreTeilbewertungZusammen(jetzt, block!, { ...falsch, blind_pruefsumme: liste.pruefsumme }).fehler.join()).toMatch(/aktuellen Blindliste/)
+    // Regeln geändert: keine Teil-Neubewertung.
+    const mitRegel = blindListe(k, { ...e, leitfaden: LEITFADEN }, ordneKennungen(e, fest).kennungen)
+    expect(teilbewertung(liste, mitRegel, bisher).fehler.join()).toMatch(/Teil-Neubewertung nicht zulässig/)
+    expect(teilbewertung(liste, jetzt, { ...bisher, blind_pruefsumme: 'x' }).fehler.join()).toMatch(/gehört nicht zur archivierten/)
+  })
+
+  it('lässt Instrumente entfallener Maßnahmen weg', () => {
+    const { e, fest, liste, bisher } = basis()
+    const mitI1 = bisher.zuordnung.find((z) => 'instrument' in z)!.kennung
+    const pos = fest.find((x) => x.kennung === mitI1)!
+    e.programme[pos.programm].massnahmen.splice(pos.massnahme, 1)
+    const jetzt = blindListe(k, e, ordneKennungen(e, fest).kennungen) as BlindListe
+    const { block } = teilbewertung(liste, jetzt, bisher)
+    expect(block!.zu_bewerten).toEqual([])
+    const { bewertung: b } = fuehreTeilbewertungZusammen(jetzt, block!, { blind_pruefsumme: jetzt.pruefsumme, neue_instrumente: [], zuordnung: [] })
+    expect(b!.neue_instrumente).toEqual([])
+    expect(b!.zuordnung).toHaveLength(2)
+  })
+})
+
+describe('Suchbegriffe vor dem Start prüfen', () => {
+  it('meldet Begriffe mit vielen Treffern oder vielen Fehltreffern mitten in anderen Wörtern', () => {
+    const seiten = ['Die Sucht ist schlimm. Wir haben versucht, untersucht und besucht.', 'Suchthilfe hilft. Er sucht.']
+    expect([...wortformen(seiten, 'sucht')]).toEqual([['sucht', 2], ['versucht', 1], ['untersucht', 1], ['besucht', 1], ['suchthilfe', 1]])
+    const z = (begriff: string, treffer: number[], formen: [string, number][]) => ({ ursache: '911', richtung: 'Suchthilfe', begriff, treffer, formen: new Map(formen) })
+    const breit = breiteBegriffe([
+      z('sucht', [3, 4, 3], [['versucht', 4], ['sucht', 3], ['untersucht', 3]]),
+      z('prävention', [12, 15, 10], [['prävention', 37]]),
+      z('islamis', [4, 5, 4], [['islamismus', 7], ['islamistische', 6]]),
+      z('fußfessel', [1, 0, 2], [['fußfessel', 3]]),
+    ])
+    expect(breit).toHaveLength(2)
+    expect(breit[0]).toMatch(/„sucht“ \(911 Suchthilfe\): 10 Treffer, 70 % mitten in anderen Wörtern/)
+    expect(breit[1]).toMatch(/„prävention“.*Median 12 Treffer je Programm/)
+  })
+})
+
+describe('Kurzbericht der Erfassung (feste Form)', () => {
+  it('gibt Zahlen nur aus den Daten wieder', () => {
+    const p = { ...erfassung().programme[0], neue_buendel: [{ ursache: 1702, name: 'Zulagen', seite: 13 }], eigene_synonyme: [{ begriff: 'fachkraft', ursache: 1702, richtung: 'Fachkräfte gewinnen' }] }
+    p.massnahmen[0].ursachen_offen = [1702]
+    expect(kurzbericht('Eins-Bund', p, 1, 'programme/Eins-Bund.json').split('\n')).toEqual([
+      'Eins-Bund: 2 Maßnahmen (1701: 1, 1702: 2; 1 mit offener Zuordnung), 1 Hinweise – gespeichert in programme/Eins-Bund.json',
+      'Grenzfälle: Maßnahme 1 (S. 12) offen 1702',
+      'Neue Bündel: 1702 „Zulagen“ (S. 13)',
+      'Eigene Synonyme: „fachkraft“ → 1702 Fachkräfte gewinnen',
+      'Stand im PDF: wie im Auftrag',
+    ])
+    expect(kurzbericht('Zwei-Bund', erfassung().programme[1], 0, 'x').split('\n')[0]).toBe('Zwei-Bund: keine Maßnahme – gespeichert in x')
+    expect(pruefeProgramm(k(), erfassung(), { ...p, eigene_synonyme: [{ begriff: '', ursache: 1, richtung: 'x' }] }).join()).toMatch(/eigene_synonyme/)
+  })
+  const k = () => katalog()
+})
+
+describe('Evaluationen des Skills (.claude/skills/thema-erfassen/evals)', () => {
+  const ordner = new URL('../.claude/skills/thema-erfassen/evals/', import.meta.url)
+  const evals = readdirSync(ordner).filter((d) => d.endsWith('.json'))
+
+  it('haben mindestens drei Szenarien im Format der Best Practices', () => {
+    expect(evals.length).toBeGreaterThanOrEqual(3)
+    for (const d of evals) {
+      const e = JSON.parse(readFileSync(new URL(d, ordner), 'utf8'))
+      expect(e.skills, d).toEqual(['thema-erfassen'])
+      expect(typeof e.query, d).toBe('string')
+      expect(Array.isArray(e.files), d).toBe(true)
+      expect(e.expected_behavior.length, d).toBeGreaterThanOrEqual(3)
+    }
+  })
+
+  it('(a) Bündel belegt: die Prüfung verlangt kein Zusammenfassen, der Vergleich meldet es', () => {
+    const k = katalog()
+    const e = { ...erfassung(), leitfaden: LEITFADEN }
+    const p = e.programme[0]
+    p.massnahmen = [
+      { beschreibung: 'Ausbildung vergüten', ursachen_ids: [1702], buendel: 'Vergütung', zitat: 'Die Ausbildung wird vergütet.', seite: 13 },
+      { beschreibung: 'Zulage für Leitungen', ursachen_ids: [1702], buendel: 'Vergütung', zitat: 'Kitaleitungen erhalten eine Zulage.', seite: 14 },
+    ]
+    const f = pruefeProgramm(k, e, p).join()
+    expect(f).toMatch(/andere Zusage: ohne „buendel“ erfassen oder unter „neue_buendel“ melden, nie zusammenfassen/)
+    // Richtig: zweite Zusage ohne Bündel – zulässig, aber in der Liste „ohne Bündel“ sichtbar.
+    const richtig = structuredClone(p)
+    delete richtig.massnahmen[1].buendel
+    expect(pruefeProgramm(k, e, richtig)).toEqual([])
+    expect(ohneBuendel(k, { programme: [richtig], leitfaden: LEITFADEN })).toHaveLength(1)
+    // Falsch: zusammengefasst – der Vergleich meldet den Verlust vor entwurf:blind.
+    const falsch = structuredClone(richtig)
+    falsch.massnahmen = [{ ...falsch.massnahmen[0], beschreibung: 'Ausbildung vergüten und Leitungszulage' }]
+    expect(vergleicheErfassung(k, [richtig], [falsch]).join()).toMatch(/zusammengefasst\? S\. 14 „Zulage für Leitungen“ fehlt/)
+  })
+
+  it('(b) Maßnahme nach Rückfrage eingefügt: eine neue Kennung, alte Bewertung passt nicht mehr, Teilbewertung möglich', () => {
+    const k = katalog()
+    const e = erfassung()
+    const fest = kennungen(e)
+    const alt = bewertung(e)
+    e.programme[2].massnahmen.push({ beschreibung: 'Kitaplätze im Land ausbauen', ursachen_ids: [1701], zitat: 'Wir bauen 500 Plätze.', seite: 6 })
+    const a = ordneKennungen(e, fest, fest.length)
+    expect([a.neu.map((x) => x.kennung), a.entfallen, a.geaendert]).toEqual([['M04'], [], []])
+    expect(pruefeBewertung(k, e, alt, a.kennungen).join()).toMatch(/blind_pruefsumme passt nicht|M04: nicht bewertet/)
+    const { block } = teilbewertung(blindListe(k, erfassung(), fest), blindListe(k, e, a.kennungen), alt)
+    expect(block!.zu_bewerten).toEqual(['M04'])
+  })
+
+  it('(c) Programm nicht erreichbar: bleibt „noch nicht erfasst“, lokale Kopie nur mit passender Prüfsumme', async () => {
+    const k = katalog()
+    expect(pruefeProgramm(k, erfassung(), { partei_id: 2, land: null, massnahmen: [], nicht_durchsucht: 'HTTP 503' }).join()).toMatch(/bleibt „noch nicht erfasst“/)
+    // Ohne das Programm in der Erfassung entsteht kein Abdeckungseintrag – also auch kein keine_massnahme.
+    const e = erfassung()
+    e.programme.splice(1, 1)
+    e.treffer!.programme.splice(1, 1)
+    const b: Bewertung = {
+      blind_pruefsumme: blindListe(k, e).pruefsumme,
+      neue_instrumente: [],
+      zuordnung: kennungen(e).map((x) => ({ kennung: x.kennung, einzeln: { wirksamkeit: 2, umsetzbarkeit: 2, begruendung: 'Test.', evidenz: 'offen' }, ursachen: e.programme[x.programm].massnahmen[x.massnahme].ursachen_ids })),
+    }
+    expect(pruefeBewertung(k, e, b)).toEqual([])
+    const datei = eintragen(k, themaInhalt(), e, b, '2026-10-03') as { abdeckung: { partei_id: number; land?: string }[] }
+    expect(datei.abdeckung.some((a) => a.partei_id === 2 && !a.land)).toBe(false)
+    // Lokale Kopie: wird nur über die erwartete Prüfsumme gefunden, ohne Netz.
+    const { ladeProgramm, sha256 } = await import('./programme')
+    const pdf = new TextEncoder().encode('%PDF-1.4 Testdatei')
+    const lokal = new Map([[sha256(pdf), pdf]])
+    expect((await ladeProgramm('https://nicht-erreichbar.invalid/p.pdf', sha256(pdf), lokal)).hinweis).toMatch(/lokal geprüft/)
+  })
+
+  it('(d) Rest eines Parteinamens im Zitat: gemeldet, Zitat bleibt wörtlich, Herkunft geht nicht an die Bewertung', () => {
+    const k = katalog()
+    const e = erfassung()
+    e.programme[0].massnahmen[0].zitat = 'Mit sozialdemokratischer Politik fördern wir Kitaplätze.'
+    const liste = blindListe(k, e)
+    const m = liste.massnahmen.find((x) => x.zitat.includes('sozialdemokratischer'))!
+    expect(m.zitat).toBe('Mit sozialdemokratischer Politik fördern wir Kitaplätze.')
+    expect(blindReste(liste)).toEqual([{ kennung: m.kennung, reste: ['sozialdemokratischer'] }])
+    expect(enthaeltParteinamen(`${m.kennung} stammt von der SPD.`)).toBe(true)
   })
 })

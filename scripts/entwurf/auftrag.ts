@@ -10,8 +10,8 @@ import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PROTOKOLL, programmName, pruefeLeitfaden, pruefeSuchbegriffe } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
-import { erfassungsSeiten, lokalePdfs, programme, textdatei } from '../programme.ts'
-import { auftragText, zulaessigeUrsachen } from './auftrag-text.ts'
+import { erfassungsSeiten, lokalePdfs, textdatei } from '../programme.ts'
+import { auftragText, auswahlProgramme, zulaessigeUrsachen } from './auftrag-text.ts'
 import { leseErfassung, leitfadenPfad } from './erfassung-datei.ts'
 
 const args = process.argv.slice(2)
@@ -48,13 +48,7 @@ const leitfadenFehler = erfassung.leitfaden ? pruefeLeitfaden(katalog, erfassung
 for (const f of leitfadenFehler) console.error(`Fehler:  ${f}`)
 if (leitfadenFehler.length) process.exit(1)
 
-const hatLand = katalog.ursachen.some((u) => u.thema_id === themaId && u.ebene === 'land')
-const auswahl = programme(katalog).filter(
-  (p) =>
-    p.aktuell &&
-    (p.land === null ? !laender.length : !nurBund && hatLand && (!laender.length || laender.includes(p.land))) &&
-    (!parteien.length || parteien.includes(p.partei.toLowerCase())),
-)
+const auswahl = auswahlProgramme(katalog, themaId, { nurBund, laender, parteien })
 // Suchbegriffe müssen für jede Ursache stehen, die eines der Programme betrifft (die Treffer zählt erst entwurf:treffer).
 const stub = { ...erfassung, treffer: undefined, programme: auswahl.map((p) => ({ partei_id: 0, land: p.land, massnahmen: [] })) }
 const begriffFehler = pruefeSuchbegriffe(katalog, stub).filter((f) => !f.startsWith('treffer'))

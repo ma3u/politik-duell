@@ -1,10 +1,13 @@
 // Führt die geprüften Ergebnisse je Programm (programme/<Name>.json aus entwurf:programm-pruefen)
 // in die Erfassung zusammen. Nicht durchsuchte Programme bleiben draußen („noch nicht erfasst“).
+// Vergleicht mit dem vorherigen Stand (plan–validate–execute): je Programm entfallene, vermutlich
+// zusammengefasste, neue und geänderte Maßnahmen und Ursachen, die keine Maßnahme mehr haben; dazu
+// Maßnahmen ohne Bündel an Ursachen mit Bündeln. Der vorherige Stand bleibt als staende/erfassung-N.json.
 // Danach: npm run entwurf:treffer -- <erfassung.json>
 // Aufruf: npm run entwurf:zusammenfuehren -- <erfassung.json>
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { pruefeProgramm, type Erfassung, type ErfasstesProgramm } from '../entwurf.ts'
+import { ohneBuendel, pruefeProgramm, vergleicheErfassung, type Erfassung, type ErfasstesProgramm } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { leseLeitfaden, programmOrdner } from './erfassung-datei.ts'
 
@@ -45,8 +48,28 @@ if (fehlerliste.length) process.exit(1)
 // Feste Reihenfolge: Partei, dann Bund vor den Ländern.
 const liste = [...programme.values()].sort((a, b) => a.partei_id - b.partei_id || (a.land ?? '').localeCompare(b.land ?? ''))
 const { treffer: _, leitfaden: __, ...ohne } = erfassung
+const vorher = erfassung.programme ?? []
+if (vorher.length) {
+  // Vorherigen Stand aufheben, damit der Vergleich auch später nachvollziehbar bleibt.
+  const staende = join(pfad, '..', 'staende')
+  mkdirSync(staende, { recursive: true })
+  let n = 1
+  while (existsSync(join(staende, `erfassung-${n}.json`))) n++
+  writeFileSync(join(staende, `erfassung-${n}.json`), readFileSync(pfad, 'utf8'), 'utf8')
+}
 writeFileSync(pfad, JSON.stringify({ ...ohne, programme: liste }, null, 2) + '\n', 'utf8')
 const n = liste.reduce((s, p) => s + p.massnahmen.length, 0)
 console.log(`${pfad}: ${liste.length} Programme, ${n} Maßnahmen.`)
 for (const x of nichtDurchsucht) console.log(`nicht durchsucht (bleibt „noch nicht erfasst“, im Pull Request nennen): ${x}`)
+if (vorher.length) {
+  const vergleich = vergleicheErfassung(katalog, vorher, liste)
+  console.log(`\nVergleich mit dem vorherigen Stand: ${vergleich.length ? '' : 'keine Änderung'}`)
+  for (const z of vergleich) console.log(`  ${z}`)
+  if (vergleich.length) console.log('Jede Zeile prüfen, bevor entwurf:blind läuft: Ist der Wegfall gewollt (Rückfrage, Regel)? Sonst Korrektur nach SKILL.md, Fall „Korrektur einer fehlerhaften Rückfrage“.')
+}
+const ungebuendelt = ohneBuendel(katalog, { programme: liste, leitfaden })
+if (ungebuendelt.length) {
+  console.log('\nOhne Bündel an Ursachen mit Bündeln (erlaubt, wenn es eine eigene Zusage ist – nie mit einer anderen zusammenfassen):')
+  for (const z of ungebuendelt) console.log(`  ${z}`)
+}
 console.log(`Weiter: npm run entwurf:treffer -- ${pfad}`)

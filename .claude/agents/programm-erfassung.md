@@ -26,10 +26,11 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
    - Stellen aus einem anderen Zusammenhang (prüfe bei Zweifeln die Seiten davor und danach);
    - was nach dem Leitfaden nicht zu einer Ursache gehört.
 5. **Zuordnung nach dem Leitfaden.** Gilt eine Regel, folge ihr. Lässt der Leitfaden eine Zuordnung offen, trage die Ursache in `ursachen_offen` ein statt in `ursachen_ids` – die Bewertung ohne Parteinamen entscheidet dann für alle Programme gleich. `ursachen_offen` ist für echte Grenzfälle, nicht für „vielleicht auch noch“: Jede Ursache, an der eine Maßnahme hängt, kann Punkte bringen. Landesprogramme nur Ursachen mit Ebene Land.
-6. **Bündel.** Nennt der Auftrag Bündel für eine Ursache, erfasst du je Bündel **höchstens eine** Maßnahme (Feld `buendel`, Name genau wie im Auftrag): die konkreteste Stelle, also die mit Zusage, Zahl oder Frist – nicht die, die du für die beste hältst. Das Bündel ist das Instrument, nicht die Richtung: „CO₂-Preis erhöhen“ und „CO₂-Preis abschaffen“ gehören beide zu „CO₂-Bepreisung und Emissionshandel“, die Richtung steht in der Beschreibung. Die Beschreibung gibt nur wieder, was im gewählten Zitat steht; weitere Stellen zum selben Bündel nennst du im Protokoll. Passt eine Zusage zu keinem Bündel, ist aber ein eigenes Instrument derselben Ursache, nenne es im Protokoll unter „Neue Bündel“ und erfasse sie ohne `buendel`.
+6. **Bündel.** Ein Bündel begrenzt die *Erfassung*: je Programm und Bündel höchstens **eine** Maßnahme, und nur für **gleichartige** Einzelzusagen (dasselbe Instrument, mehrfach im Programm). Es ist kein Instrument der Bewertung – ob zwei Maßnahmen gleich bewertet werden, entscheidet später die Bewertung. Nennt der Auftrag Bündel für eine Ursache, setze `buendel` (Name genau wie im Auftrag) und nimm die konkreteste Stelle (Zusage, Zahl oder Frist) – nicht die, die du für die beste hältst. Die Richtung steht in der Beschreibung: „CO₂-Preis erhöhen“ und „CO₂-Preis abschaffen“ gehören beide zu „CO₂-Bepreisung und Emissionshandel“. Weitere gleichartige Stellen zum selben Bündel nennst du im Protokoll.
+   **Zwei verschiedene Zusagen fasst du nie zusammen**, nur weil das passende Bündel schon belegt ist (etwa „mehr Stellen“ und „bessere Bezahlung“ in einem Bündel „Personal“). Dann bleibt die zweite ohne `buendel` – oder, wenn sie ein eigenes Instrument derselben Ursache ist, trägst du sie in `neue_buendel` ein (die Koordination ergänzt den Leitfaden für alle Programme).
 7. Gleiche Vorschläge an mehreren Stellen: einmal erfassen, die aussagekräftigste Stelle zitieren.
 8. **Beschreibung** höchstens 200 Zeichen, sinngemäß, ohne Parteinamen, keine Zahl, die nicht im Zitat steht.
-9. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), melde das unter „Stand im PDF“.
+9. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), trage ihn in `stand_im_pdf` ein.
 
 ## Regeln für Zitate
 
@@ -63,7 +64,12 @@ Schreibe mit Write in die Ergebnisdatei aus dem Auftrag (`protokoll/erfassung-<N
 
 `ursachen_offen` und `buendel` nur, wenn sie zutreffen. Oder mit leerer Liste `"massnahmen": []` und `"keine_massnahme": "Begründung"`, oder `"nicht_durchsucht": "Grund"`.
 
-**Protokoll** (kurz): gelesene Seiten und Kapitel; „Nicht erfasst“ mit Seite und Grund (bei Pflichtursachen ohne Maßnahme die gelesenen Fundstellen); Richtungen ohne Maßnahme; „Eigene Synonyme“ (Begriff, Ursache, Richtung – oder „keine“); „Neue Bündel“ (oder „keine“); „Stand im PDF“ bei Abweichung; Seiten ohne Text, falls sie eine Rolle spielten.
+Für den Kurzbericht stehen drei Angaben im JSON (nur wenn zutreffend; das Skript gibt sie in fester Form aus):
+- `"neue_buendel": [{ "ursache": 905, "name": "…", "seite": 33 }]` – eigenes Instrument, das in keinem Bündel des Auftrags steht;
+- `"eigene_synonyme": [{ "begriff": "rückführ", "ursache": 905, "richtung": "…" }]` – Begriffe, die im Programm für eine Richtung stehen und in der Suche fehlen;
+- `"stand_im_pdf": "…"` – nur wenn das PDF einen anderen Stand nennt als der Auftrag.
+
+**Protokoll** (unter dem JSON, kurz): gelesene Seiten und Kapitel; „Nicht erfasst“ mit Seite und Grund (bei Pflichtursachen ohne Maßnahme die gelesenen Fundstellen); Richtungen ohne Maßnahme; Seiten ohne Text, falls sie eine Rolle spielten.
 
 Dann prüfen:
 
@@ -71,10 +77,20 @@ Dann prüfen:
 npm run -s entwurf:programm-pruefen '--' <Ergebnisdatei>
 ```
 
-Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft.
+Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 6 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft.
 
 ## Was du zurückgibst
 
-Nur die letzte Zeile der Prüfung (`<Name>: N Maßnahmen (…) – gespeichert in …`) und höchstens fünf Zeilen: offene Grenzfälle, „Neue Bündel“, „Eigene Synonyme“, „Stand im PDF“. Nicht das JSON, nicht das Protokoll – beides steht in der Datei.
+Genau den Block unter „--- Kurzbericht ---“ aus der letzten, erfolgreichen Prüfung – Zeile für Zeile, ohne eigene Zahlen oder Zusammenfassung:
 
-**Technik unter Windows/PowerShell 7:** npm verschluckt Optionen, wenn das erste `--` nicht in Anführungszeichen steht – deshalb `'--'`. Alternativ direkt: `node --experimental-strip-types --no-warnings scripts/entwurf/programm-pruefen.ts <Datei>`.
+```
+<Name>: N Maßnahmen (Ursache: Anzahl …) – gespeichert in …
+Grenzfälle: …
+Neue Bündel: …
+Eigene Synonyme: …
+Stand im PDF: …
+```
+
+Keine Zusammenfassung davor oder danach. Fehlt dir etwas darin, korrigiere das JSON und prüfe erneut – der Bericht kommt nur aus der Datei. Nicht das JSON, nicht das Protokoll zurückgeben – beides steht in der Datei.
+
+Unter Windows/PowerShell 7 gehört das erste `--` in Anführungszeichen (`'--'`); alternativ direkt: `node --experimental-strip-types --no-warnings scripts/entwurf/programm-pruefen.ts <Datei>`.

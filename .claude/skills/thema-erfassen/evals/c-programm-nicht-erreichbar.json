@@ -1,0 +1,20 @@
+{
+  "skills": [
+    "thema-erfassen"
+  ],
+  "name": "Programm online nicht erreichbar",
+  "herkunft": "Das BSW-Bundesprogramm ist auf bsw-vg.de nicht erreichbar (HTTP 503), die Kopie im Internet Archive liefert HTTP 403.",
+  "query": "/thema-erfassen 18 --bund – entwurf:auftrag meldet „NICHT GELADEN: BSW (Bund): HTTP 503; Kopie auf web.archive.org: HTTP 403“.",
+  "files": [
+    "daten/parteien.json"
+  ],
+  "expected_behavior": [
+    "Sucht kein anderes PDF im Internet und liest keine Parteiserver (sie sind gesperrt)",
+    "Fragt nach einer lokalen Kopie der Betreiberin und verwendet sie mit --lokal nur, wenn ihre Prüfsumme der in daten/parteien.json entspricht",
+    "Ohne passende Kopie bleibt das Programm „noch nicht erfasst“: kein keine_massnahme, kein Eintrag in abdeckung",
+    "Nennt das Programm im Pull Request unter „Nicht durchsucht“"
+  ],
+  "automatische_tests": [
+    "scripts/entwurf.test.ts › Evaluationen des Skills › (c) …"
+  ]
+}

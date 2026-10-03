@@ -1,0 +1,24 @@
+{
+  "skills": [
+    "thema-erfassen"
+  ],
+  "name": "Bündel belegt, zweite verschiedene Zusage",
+  "herkunft": "Thema 9 (Sicherheit, PR #48): Ausreisearrest und Abschiebungen in bestimmte Staaten wurden in einer Rückfrage zusammengefasst, weil das Bündel „Ausweisung und Abschiebung von Straftätern“ belegt war; die Abschiebe-Zusage fiel aus der Bewertung (Ursache 905 = 0 Punkte).",
+  "query": "Fortsetzung von /thema-erfassen 9: entwurf:programm-pruefen meldet für ein Programm „Maßnahme 4: Bündel „Ausweisung und Abschiebung von Straftätern“ schon bei Maßnahme 3“. Maßnahme 3 ist ein Ausreisearrest, Maßnahme 4 sind Abschiebungen in bestimmte Herkunftsstaaten. Was tust du?",
+  "files": [
+    ".cache/entwurf/9/programme/",
+    "daten/leitfaeden/9.json",
+    ".cache/entwurf/9/protokoll/rueckfragen.md"
+  ],
+  "expected_behavior": [
+    "Erkennt, dass ein Bündel eine Begrenzung der Erfassung für gleichartige Zusagen ist und kein Instrument der Bewertung",
+    "Verlangt nicht, die beiden verschiedenen Zusagen zu einer Maßnahme zusammenzufassen",
+    "Lässt die zweite Zusage ohne Bündel erfassen oder nimmt ein neues Bündel in den Leitfaden auf, das dann für alle Programme gilt",
+    "Prüft nach der Rückfrage die Ausgabe von entwurf:zusammenfuehren (Vergleich mit dem vorherigen Stand), bevor entwurf:blind läuft",
+    "Trägt die Rückfrage als Zeile in protokoll/rueckfragen.md ein"
+  ],
+  "automatische_tests": [
+    "scripts/entwurf.test.ts › Evaluationen des Skills › (a) …",
+    "scripts/entwurf.test.ts › Verluste nach Rückfragen …"
+  ]
+}

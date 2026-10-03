@@ -95,7 +95,7 @@ describe('Übernahme', () => {
     expect(Object.keys(m[0]).indexOf('bewertung')).toBe(Object.keys(m[0]).indexOf('umsetzbarkeit') + 1)
     expect(m[1]).toEqual(massnahme(102, 1, 1))
     expect(aenderungen).toEqual([{ massnahme_id: 101, vorher: [2, 3], nachher: [3, 2] }])
-    expect(Object.keys((m[0] as { bewertung: object }).bewertung)).toEqual(['anzahl', 'median_w', 'median_u', 'spannweite', 'datum', 'entwurf'])
+    expect(Object.keys((m[0] as unknown as { bewertung: object }).bewertung)).toEqual(['anzahl', 'median_w', 'median_u', 'spannweite', 'datum', 'entwurf'])
     // Das Original bleibt unverändert.
     expect(THEMA.abdeckung[0].massnahmen[0].wirksamkeit).toBe(2)
   })
