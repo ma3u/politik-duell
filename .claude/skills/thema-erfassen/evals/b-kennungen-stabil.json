@@ -1,0 +1,25 @@
+{
+  "skills": [
+    "thema-erfassen"
+  ],
+  "name": "Maßnahme nach Rückfrage eingefügt – Kennungen bleiben stabil",
+  "herkunft": "Thema 9: Nach dem Einfügen einer Maßnahme vergab entwurf:blind fast alle Kennungen neu (Sortierung nach Prüfsumme, Zuordnung über die Stelle); kennungen.json musste von Hand repariert werden.",
+  "query": "Nach der Bewertung hat eine Rückfrage an ein Programm eine fehlende Maßnahme ergänzt. Führe den Skill fort.",
+  "files": [
+    ".cache/entwurf/9/erfassung.json",
+    ".cache/entwurf/9/kennungen.json",
+    ".cache/entwurf/9/bewertung.json"
+  ],
+  "expected_behavior": [
+    "Führt entwurf:zusammenfuehren und entwurf:treffer erneut aus und prüft den Vergleich",
+    "Führt entwurf:blind erneut aus; die Ausgabe nennt genau eine neue Kennung mit der nächsten freien Nummer und keine entfallene",
+    "Bearbeitet kennungen.json nicht von Hand",
+    "Lässt neu bewerten – als Teil-Neubewertung (entwurf:blind --teil, entwurf:bewertung-zusammenfuehren), wenn Leitfaden und vorhandene Instrumente gleich geblieben sind",
+    "Nennt die neue Kennung und die Teil-Neubewertung im Pull Request"
+  ],
+  "automatische_tests": [
+    "scripts/entwurf.test.ts › Liste ohne Parteinamen › vergibt beim Einfügen …",
+    "scripts/entwurf.test.ts › Teil-Neubewertung › …",
+    "scripts/entwurf.test.ts › Evaluationen des Skills › (b) …"
+  ]
+}

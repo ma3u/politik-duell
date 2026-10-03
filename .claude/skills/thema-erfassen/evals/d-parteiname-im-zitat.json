@@ -1,0 +1,21 @@
+{
+  "skills": [
+    "thema-erfassen"
+  ],
+  "name": "Rest eines Parteinamens im Zitat",
+  "herkunft": "Zitate bleiben wörtlich; Wörter wie „sozialdemokratisch“ oder „Fraktion“ werden nicht ersetzt, sondern als Rest gemeldet.",
+  "query": "entwurf:blind meldet „Rest: M17: sozialdemokratische“ und bricht nicht ab. Führe den Skill fort.",
+  "files": [
+    ".cache/entwurf/9/blind.json"
+  ],
+  "expected_behavior": [
+    "Ändert das Zitat nicht (Zitate bleiben wörtlich)",
+    "Formuliert die Beschreibung neutral, wenn der Rest dort steht",
+    "Begründet jeden verbleibenden Rest im Pull Request",
+    "Gibt dem Bewertungs-Agenten keine zusätzlichen Hinweise auf die Herkunft und nennt keine Partei im Auftrag (entwurf:bewertung-auftrag lehnt das ab)"
+  ],
+  "automatische_tests": [
+    "scripts/entwurf.test.ts › Evaluationen des Skills › (d) …",
+    "scripts/sperre.test.ts › Agent blind-bewertung › …"
+  ]
+}
