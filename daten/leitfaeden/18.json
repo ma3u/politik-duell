@@ -5,47 +5,68 @@
   "regeln": [
     {
       "nr": 1,
-      "ursachen": [1801, 1802],
+      "ursachen": [
+        1801,
+        1802
+      ],
       "text": "Maßnahmen, die Treibhausgasemissionen senken, oder Zusagen, Klimaschutzinstrumente abzuschaffen, zurückzunehmen oder zu begrenzen, gehören zu 1801 – in beiden Richtungen gleich, unabhängig davon, ob sie dem Ziel helfen (das entscheidet die Bewertung). Nicht zusätzlich zu 1802 zuordnen."
     },
     {
       "nr": 2,
-      "ursachen": [1801],
+      "ursachen": [
+        1801
+      ],
       "text": "Hitzeanpassung, die nicht einer der Ursachen 1802 bis 1805 zuzuordnen ist (etwa eine nationale Anpassungsstrategie mit konkreter Zusage), gehört zu 1801. Ein bloßes Bekenntnis zu Klimazielen ohne Instrument ist keine Maßnahme."
     },
     {
       "nr": 3,
-      "ursachen": [1802],
+      "ursachen": [
+        1802
+      ],
       "text": "Zu 1802 gehören Hitzeaktionspläne, Hitzewarnung, Hitzeschutz in Pflege, Krankenhäusern und für ältere Menschen, Kühlräume und Trinkwasser als Gesundheitsschutz. Allgemeine Warnsysteme (Sirenen, Warn-Apps) ohne Hitzebezug im Zitat gehören nicht dazu."
     },
     {
       "nr": 4,
-      "ursachen": [1803],
+      "ursachen": [
+        1803
+      ],
       "text": "Zu 1803 gehören Stadtgrün, Straßenbäume, Verschattung, Frischluftschneisen und Hitzeschutz an Gebäuden, wenn das Zitat Stadt, Quartier oder Siedlung oder Hitze bzw. Kühlung nennt. Waldumbau, allgemeiner Wohnungsbau und Kommunalfinanzen ohne diesen Bezug gehören nicht dazu."
     },
     {
       "nr": 5,
-      "ursachen": [1804, 1805],
+      "ursachen": [
+        1804,
+        1805
+      ],
       "text": "Zu 1804 gehören Entsiegelung, Schwammstadt, Regenwasserbewirtschaftung, Versickerung, Begrenzung des Flächenverbrauchs und Kanal- oder Speicherausbau gegen Starkregen in Siedlungen. Wasserrückhalt in Landwirtschaft, Wald oder Mooren ohne Siedlungsbezug gehört nicht zu 1804; mit Hochwasserbezug im Zitat zu 1805."
     },
     {
       "nr": 6,
-      "ursachen": [1803, 1804],
+      "ursachen": [
+        1803,
+        1804
+      ],
       "text": "Eine Maßnahme gehört nur dann zu 1803 und 1804 zugleich, wenn das Zitat beide Wirkungen nennt (Kühlung und Regenwasser, etwa Gründächer zur Kühlung und zum Wasserrückhalt). Sonst nur die genannte Wirkung; im Zweifel die zweite als ursachen_offen."
     },
     {
       "nr": 7,
-      "ursachen": [1805],
+      "ursachen": [
+        1805
+      ],
       "text": "Zu 1805 gehören technischer und naturnaher Hochwasserschutz (Deiche, Rückhaltebecken, Polder, Deichrückverlegung, Retentionsflächen, Auen mit Hochwasserbezug) und Zusagen, Bauen in Überschwemmungsgebieten zu begrenzen – auch ohne ausdrückliches Bauverbot. Gewässerrenaturierung ohne Hochwasserbezug im Zitat gehört nicht dazu."
     },
     {
       "nr": 8,
-      "ursachen": [1805],
+      "ursachen": [
+        1805
+      ],
       "text": "Ausstattung von Feuerwehr und Katastrophenschutz reagiert auf Hochwasser, setzt aber nicht an der Bebauung von Überschwemmungsgebieten an: nur als ursachen_offen [1805], wenn das Zitat Hochwasserschutz nennt, sonst nicht erfassen."
     },
     {
       "nr": 9,
-      "ursachen": [1806],
+      "ursachen": [
+        1806
+      ],
       "text": "Zu 1806 gehören Pflichtversicherung, Angebotspflicht mit Abwahlmöglichkeit, staatliche Rückversicherung und Förderung oder Information zur Elementarschadenversicherung. Staatliche Hilfen nach einem Schaden ändern den Versicherungsschutz nicht: nur als ursachen_offen [1806]."
     },
     {
@@ -66,5 +87,160 @@
       "Natürliche Kohlenstoffspeicher (Wald, Moore, Böden)",
       "Klimaziele, Klimaschutzgesetz und internationale Abkommen"
     ]
+  },
+  "suchbegriffe": {
+    "1801": {
+      "Erwärmung begrenzen, Emissionen senken": [
+        "klimaschutzgesetz",
+        "treibhausgas",
+        "klimaneutral",
+        "klimaziel",
+        "emissionshandel",
+        "co2-preis",
+        "co₂-preis",
+        "co2-bepreisung",
+        "co₂-bepreisung",
+        "pariser",
+        "klimaschutzziel",
+        "klimaschutzpolitik",
+        "klimaschutzprogramm",
+        "klimaschutzvertr"
+      ],
+      "Klimaschutz begrenzen, Kosten senken": [
+        "klimapolitik",
+        "heizungsgesetz",
+        "gebäudeenergiegesetz",
+        "verbrennerverbot",
+        "green deal",
+        "klimaideologie",
+        "dekarbonisierung"
+      ],
+      "Energie und Emissionsquellen": [
+        "erneuerbare energie",
+        "windkraft",
+        "windenergie",
+        "kernkraft",
+        "kernenergie",
+        "atomkraft",
+        "kohleausstieg",
+        "kohlekraft",
+        "abscheidung",
+        "wiedervernässung",
+        "aufforstung"
+      ],
+      "Hitzeanpassung": [
+        "klimaanpassung",
+        "anpassung an den klimawandel",
+        "klimafolgen",
+        "klimawandel",
+        "erderwärmung",
+        "klimaresilien"
+      ]
+    },
+    "1802": {
+      "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": [
+        "hitze",
+        "trinkbrunnen",
+        "trinkwasserbrunnen",
+        "kühlräume",
+        "kühle orte",
+        "tropennacht"
+      ]
+    },
+    "1803": {
+      "Stadtgrün, Verschattung, Frischluft": [
+        "stadtgrün",
+        "stadtbäume",
+        "straßenbäume",
+        "stadtbaum",
+        "begrünung",
+        "gründach",
+        "grünfläche",
+        "frischluft",
+        "kaltluft",
+        "verschattung",
+        "wärmeinsel",
+        "stadtklima"
+      ],
+      "Bauvorschriften und Gebäudehitzeschutz": [
+        "sommerlicher wärmeschutz",
+        "außenverschattung",
+        "kühlung"
+      ],
+      "Nachverdichtung nicht bremsen": [
+        "nachverdichtung",
+        "innenentwicklung"
+      ]
+    },
+    "1804": {
+      "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": [
+        "entsiegel",
+        "versiegel",
+        "schwammstadt",
+        "flächenverbrauch",
+        "flächenfraß",
+        "flächenneuinanspruchnahme"
+      ],
+      "Technischer Rückhalt, Kanal und Speicher": [
+        "regenwasser",
+        "versicker",
+        "starkregen",
+        "kanalisation",
+        "regenrückhalt",
+        "abwasser"
+      ],
+      "Bauland ausweisen, Bauen nicht verteuern": [
+        "baulandausweisung",
+        "neubaugebiet",
+        "flächenausweisung",
+        "bauland"
+      ]
+    },
+    "1805": {
+      "Bauverbot, Flächen freihalten, Rückbau": [
+        "überschwemmungsgebiet",
+        "überschwemmung",
+        "bauverbot",
+        "retention",
+        "flussauen",
+        "auenschutz",
+        "deichrückverlegung"
+      ],
+      "Technischer Hochwasserschutz": [
+        "hochwasser",
+        "deich",
+        "polder",
+        "rückhaltebecken",
+        "überflutung",
+        "flutkatastrophe",
+        "ahrtal"
+      ],
+      "Bauvorsorge der Eigentümer": [
+        "objektschutz",
+        "bauvorsorge",
+        "eigenvorsorge"
+      ]
+    },
+    "1806": {
+      "Pflichtversicherung, Angebotspflicht": [
+        "elementarschaden",
+        "elementarversicherung",
+        "pflichtversicherung",
+        "versicherungspflicht",
+        "opt-out",
+        "naturgefahren"
+      ],
+      "Rückversicherung, Prävention": [
+        "rückversicherung",
+        "versicherungsschutz"
+      ],
+      "Freiwillige Versicherung, staatliche Hilfen": [
+        "soforthilfe",
+        "aufbauhilfe",
+        "fluthilfe",
+        "katastrophenhilfe",
+        "eigenverantwortung"
+      ]
+    }
   }
 }
