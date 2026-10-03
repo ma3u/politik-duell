@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, type BlindListe, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, type BlindListe, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
 import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
@@ -42,7 +42,7 @@ const katalog = (inhalt: Record<string, unknown> = themaInhalt()) => {
 }
 
 const SUCHBEGRIFFE = { '1701': { 'Plätze ausbauen': ['kita'] }, '1702': { 'Fachkräfte gewinnen': ['erzieher'], Quereinstieg: ['quereinst'] } }
-const TREFFER = {
+const TREFFER: Treffermatrix = {
   begriffe_pruefsumme: begriffePruefsumme(SUCHBEGRIFFE),
   programme: [
     { partei_id: 1, land: null, ursachen: { '1701': { 'Plätze ausbauen': { kita: 4 } }, '1702': { 'Fachkräfte gewinnen': { erzieher: 2 }, Quereinstieg: { quereinst: 0 } } } },
@@ -364,7 +364,7 @@ describe('Zuordnung zu Ursachen blind entschieden', () => {
     c0.zuordnung[1] = { kennung: c0.zuordnung[1].kennung, ursachen: [1702] } as unknown as Bewertung['zuordnung'][number]
     expect(pruefeBewertung(k, e, c0).join()).toMatch(/weder instrument noch einzeln/)
     const c = bewertung(e)
-    c.zuordnung[2] = { ...c.zuordnung[2], ursachen: [1701, 1702] }
+    c.zuordnung[2] = { ...c.zuordnung[2], ursachen: [1701, 1702] } as Zuordnung
     expect(zuordnungsHinweise(k, e, c).join()).toMatch(/zusätzlich Ursache 1702/)
     // Gleiches Instrument, unterschiedliche Ursachen.
     e.programme[0].massnahmen[1].ursachen_ids = [1701, 1702]
@@ -376,7 +376,7 @@ describe('Zuordnung zu Ursachen blind entschieden', () => {
 })
 
 describe('Protokoll', () => {
-  const vollstaendig = (e: Erfassung, auftrag: string) =>
+  const vollstaendig = (_e: Erfassung, auftrag: string) =>
     new Map([
       [PROTOKOLL.erfassung('Eins', null), 'Rohantwort …'],
       [PROTOKOLL.erfassung('Zwei', null), 'Rohantwort …'],
@@ -539,8 +539,8 @@ describe('Offene Zuordnung', () => {
     const b = bewertung(e)
     const nach = (p: number, m: number) => kennungen(e).find((x) => x.programm === p && x.massnahme === m)!.kennung
     // Bewertung: bei der ersten nur 1701 (offene 1702 abgelehnt), die zweite verworfen.
-    b.zuordnung = b.zuordnung.map((z) =>
-      z.kennung === nach(0, 0) ? { ...z, ursachen: [1701] } : z.kennung === nach(0, 1) ? { kennung: z.kennung, ursachen: [] as [] } : z,
+    b.zuordnung = b.zuordnung.map((z): Zuordnung =>
+      z.kennung === nach(0, 0) ? ({ ...z, ursachen: [1701] } as Zuordnung) : z.kennung === nach(0, 1) ? { kennung: z.kennung, ursachen: [] as [] } : z,
     )
     b.blind_pruefsumme = liste.pruefsumme
     expect(pruefeBewertung(k, e, b)).toEqual([])

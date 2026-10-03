@@ -677,7 +677,7 @@ export function fuehreTeilbewertungZusammen(jetzt: BlindListe, block: Teilbewert
 }
 
 /** Maßnahmen der Blindliste, in denen nach dem Neutralisieren noch verdächtige Wörter stehen. */
-export function blindReste(liste: Pick<BlindListe, 'massnahmen'>): { kennung: string; reste: string[] }[] {
+export function blindReste(liste: { massnahmen: Pick<BlindMassnahme, 'kennung' | 'beschreibung' | 'zitat'>[] }): { kennung: string; reste: string[] }[] {
   return liste.massnahmen
     .map((m) => ({ kennung: m.kennung, reste: verdaechtigeReste(`${m.beschreibung}\n${m.zitat}`) }))
     .filter((r) => r.reste.length)

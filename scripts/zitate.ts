@@ -171,7 +171,10 @@ export function seiteVon(url: string): number | null {
 /** Text jeder Seite eines PDFs (Index 0 = Seite 1). */
 export async function seitenTexte(pdf: Uint8Array): Promise<string[]> {
   const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs')
-  const ladeAuftrag = pdfjs.getDocument({ data: pdf, isEvalSupported: false, verbosity: pdfjs.VerbosityLevel.ERRORS })
+  // isEvalSupported: kein eval() beim Auswerten fremder PDFs. Die Typen von pdfjs-dist kennen die Option
+  // nicht mehr; sie bleibt trotzdem gesetzt, falls die Laufzeit sie noch auswertet.
+  const optionen = { data: pdf, isEvalSupported: false, verbosity: pdfjs.VerbosityLevel.ERRORS } as Parameters<typeof pdfjs.getDocument>[0]
+  const ladeAuftrag = pdfjs.getDocument(optionen)
   const dokument = await ladeAuftrag.promise
   try {
     const seiten: string[] = []

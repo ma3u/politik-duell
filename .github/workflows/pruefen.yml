@@ -25,5 +25,7 @@ jobs:
           ZIEL: origin/${{ github.base_ref }}
         run: npm run daten:id -- --gegen "$ZIEL"
       - run: npm run lint
+      - name: Typen prüfen (App, Vite-Konfiguration, Skripte und Tests)
+        run: npm run typen
       - run: npm test
       - run: npm run build
