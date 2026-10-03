@@ -190,7 +190,7 @@ Fehlerbilder und ihre Ursachen: [reference/fehlerbilder.md](reference/fehlerbild
 
 ## Sonderfälle
 
-**Programm nicht erreichbar** (`NICHT GELADEN`): Eine lokale Kopie der Betreiberin mit `'--lokal' <ordner>` bei `entwurf:auftrag`, `entwurf:treffer`, `entwurf:programm-pruefen` und `zitate:pruefen` verwenden – sie zählt nur, wenn ihre Prüfsumme der in `daten/parteien.json` entspricht (die Skripte prüfen das). Gibt es keine: Das Programm bleibt „noch nicht erfasst“ und steht im Pull Request. Nie `keine_massnahme`, nie eine andere Fassung.
+**Programm nicht erreichbar** (`NICHT GELADEN`): Frage die Betreiberin nach einer lokalen Kopie (Programm, URL und erwartete Prüfsumme aus `daten/parteien.json` nennen) und arbeite mit den übrigen Programmen weiter. Die Kopie mit `'--lokal' <ordner>` bei `entwurf:auftrag`, `entwurf:treffer`, `entwurf:programm-pruefen` und `zitate:pruefen` verwenden – sie zählt nur, wenn ihre Prüfsumme der in `daten/parteien.json` entspricht (die Skripte prüfen das). Kommt keine: Das Programm bleibt „noch nicht erfasst“ und steht im Pull Request. Nie `keine_massnahme`, nie eine andere Fassung.
 
 **Korrektur einer fehlerhaften Rückfrage der Koordination.** Zeigt der Vergleich nach einer Rückfrage (oder später `punkte`), dass deine Rückfrage einen Fehler verursacht hat – etwa eine Zusammenfassung verschiedener Zusagen –, ist eine weitere Rückfrage an dieses Programm erlaubt, auch nach der ersten:
 1. Zeile in `protokoll/rueckfragen.md`: `| <Programm> | Korrektur: Rückfrage N war fehlerhaft (<was>) | <Ergebnis> |`.
