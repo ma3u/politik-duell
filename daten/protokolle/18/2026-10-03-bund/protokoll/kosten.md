@@ -14,3 +14,5 @@
 | programm-erfassung | FDP-Bund | 46.437 | 36 s |
 | blind-bewertung | Thema 18 Bund (46 Kennungen) | 74.225 | 261 s |
 | programm-erfassung | AfD-Bund (Rückfrage 1) | 39.099 | 9 s |
+| programm-erfassung | BSW-Bund | 37.283 | 24 s |
+| blind-bewertung | Teil-Neubewertung M47–M53 (BSW Bund) | 41.671 | 17 s |

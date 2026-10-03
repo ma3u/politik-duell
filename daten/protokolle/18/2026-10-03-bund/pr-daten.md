@@ -15,12 +15,19 @@
 | FDP | 7 → 7 |
 | AfD | 7 → 7; 1 Rückfrage |
 | Linke | 7 → 7 |
+| BSW | 7 → 7 |
 
-**Ohne Maßnahme zu einer Ursache:** **Bund** 1802 Union, FDP, AfD; 1803 FDP, AfD; 1804 SPD, FDP, AfD; 1805 SPD, FDP, AfD; 1806 SPD, FDP, AfD, Linke.
+**Ohne Maßnahme zu einer Ursache:** **Bund** 1802 Union, FDP, AfD, BSW; 1803 FDP, AfD, BSW; 1804 SPD, FDP, AfD, BSW; 1805 SPD, FDP, AfD; 1806 SPD, FDP, AfD, Linke, BSW.
 
 **Nicht durchsucht:** keins
 
-Meldungen der Erfassungs-Agenten (neue Bündel, Synonyme, Stand im PDF): keine
+<details><summary>Meldungen der Erfassungs-Agenten (neue Bündel, Synonyme, Stand im PDF)</summary>
+
+```
+BSW-Bund: neues Bündel 1801 „Fernwärme und Geothermie“ (S. 12)
+```
+
+</details>
 
 <details><summary>Treffer je Programm und Ursache (Summe aller Begriffe; je Richtung in treffer.txt)</summary>
 
@@ -32,6 +39,7 @@ Grune-Bund       125     6     4     9    10     5
 FDP-Bund          44     0     1     0     0     3
 AfD-Bund          33     0     0     2     4    11
 Linke-Bund        46     6     2     3     4     2
+BSW-Bund          27     0     0     2     2     1
 ```
 
 </details>
@@ -59,18 +67,25 @@ Linke-Bund 1806 (S. 44): Keine Zusage zu Elementarschadenversicherung; Treffer '
 
 </details>
 
-**Vergleich nach Rückfragen** (`entwurf:zusammenfuehren`): keine Änderung
+**Vergleich nach Rückfragen** (`entwurf:zusammenfuehren`): 
 
-<details><summary>Ohne Bündel an Ursachen mit Bündeln (2, nur zur Information – je Ursache zählt die beste Maßnahme)</summary>
+```
+Stand 2 → jetzt:
+  BSW (Bund): neu in der Erfassung (7 Maßnahmen)
+```
+
+<details><summary>Ohne Bündel an Ursachen mit Bündeln (3, nur zur Information – je Ursache zählt die beste Maßnahme)</summary>
 
 ```
 SPD (Bund): S. 46 „Vorsorge gegen Klimafolgen wie Hitzewellen im Bevölkerungsschutz stärken.“ ohne Bündel (Ursache 1801 hat Bündel)
 Linke (Bund): S. 33 „Klimaanpassung als Gemeinschaftsaufgabe von Bund, Ländern und Kommunen definiere…“ ohne Bündel (Ursache 1801 hat Bündel)
+BSW (Bund): S. 12 „Fernwärme ausbauen und auf erneuerbare Quellen umstellen, Geothermie-Ausbauziele…“ ohne Bündel (Ursache 1801 hat Bündel)
 ```
 
 </details>
 
-**Blindliste:** 46 Kennungen, Prüfsumme `ba489bf1d274416bbe9b54572dc64f4eee63ced1f06f9ed39920095a61d15287`. Entfallene Kennungen: keine.
+**Blindliste:** 53 Kennungen, Prüfsumme `5ec3a2c6f1f3205ac5b79d7e781c85f255d0a2b01f15a8258b2925be91fa563f`. Entfallene Kennungen: keine.
+Teil-Neubewertung: neu bewertet M47, M48, M49, M50, M51, M52, M53 (bisherige Liste ba489bf1d274416b…).
 
 **Verdächtige Reste:** M18: Ampel – Begründung siehe oben
 
@@ -83,6 +98,7 @@ Zuordnung: Grüne (Bund): 9 Maßnahmen, 11 Zuordnungen (davon 0 offen); nicht be
 Zuordnung: FDP (Bund): 7 Maßnahmen, 7 Zuordnungen (davon 0 offen); nicht bestätigt 0; offene bestätigt 0; verworfen 0
 Zuordnung: AfD (Bund): 7 Maßnahmen, 7 Zuordnungen (davon 0 offen); nicht bestätigt 0; offene bestätigt 0; verworfen 0
 Zuordnung: Linke (Bund): 7 Maßnahmen, 10 Zuordnungen (davon 2 offen); nicht bestätigt 1 (M01 1805); offene bestätigt 1; verworfen 0
+Zuordnung: BSW (Bund): 7 Maßnahmen, 7 Zuordnungen (davon 0 offen); nicht bestätigt 0; offene bestätigt 0; verworfen 0
 ```
 
 **Hinweise zur Bewertung:** 
@@ -104,7 +120,7 @@ Grüne       3    6    4    4    4    2     23
 FDP         2    0    0    0    0    0      2
 AfD         0    0    0    0    0    0      0
 Linke       2    4    4    4    4    0     18
-BSW         –    –    –    –    –    –      –
+BSW         3    0    0    0    4    0      7
 
 BE       1801 1802 1803 1804 1805 1806   alle
 Union       3    0    –    –    –    6      –
@@ -113,7 +129,7 @@ Grüne       3    6    –    –    –    2      –
 FDP         2    0    –    –    –    0      –
 AfD         0    0    –    –    –    0      –
 Linke       2    4    –    –    –    0      –
-BSW         –    –    –    –    –    –      –
+BSW         3    0    –    –    –    0      –
 
 MV       1801 1802 1803 1804 1805 1806   alle
 Union       3    0    –    –    –    6      –
@@ -122,7 +138,7 @@ Grüne       3    6    –    –    –    2      –
 FDP         2    0    –    –    –    0      –
 AfD         0    0    –    –    –    0      –
 Linke       2    4    –    –    –    0      –
-BSW         –    –    –    –    –    –      –
+BSW         3    0    –    –    –    0      –
 
 ST       1801 1802 1803 1804 1805 1806   alle
 Union       3    0    –    –    –    6      –
@@ -131,16 +147,19 @@ Grüne       3    6    –    –    –    2      –
 FDP         2    0    –    –    –    0      –
 AfD         0    0    –    –    –    0      –
 Linke       2    4    –    –    –    0      –
-BSW         –    –    –    –    –    –      –
+BSW         3    0    –    –    –    0      –
 ```
 
 <details><summary>Schwierige Einstufungen (Text der Bewertung unter dem JSON, wörtlich)</summary>
 
 ```
-Nicht bestätigt: M34 nur 1803 (Zitat nennt grüne Infrastruktur und hitzeresiliente Planung, kein Regenwasser; Regel 6). M17 nur 1802 statt 1801 (Zitat nennt Vorsorge gegen Hitzewellen im Bevölkerungsschutz = Gesundheitsschutz, Regel 3).
-Offene Ursachen: M01 1805 nicht übernommen (Katastrophenschutz nur in der Beschreibung, nicht im Zitat). M11 1804 nicht übernommen ("Umgang mit Wasser" zu unbestimmt für Regenwasser). M17 1802 übernommen. M43 1805 übernommen (Schutz der Städte vor Flutkatastrophen wie bei M22 als Hochwasserschutz gewertet).
-Ohne Ursache: M45 – Ausstattung der Feuerwehr reagiert auf Hochwasser, setzt nicht an der Bebauung von Überschwemmungsgebieten oder Schäden an (Regel 8).
-Schwierig: Wirksamkeit aller Klimaschutzmaßnahmen auf 1 (globale, langfristige Wirkung auf Hitze), Rücknahmen auf 0. M12 enthält im Zitat Kohleausbau und Kernkraft, daher getrennt von M37 bewertet. M31 mit 3 trotz beobachtender Studienlage (Studie nennt Einschränkungen). M06: Frankreichs 98 % beruhen laut ZEV eher auf Koppelung an Kredite/Mietverträge als auf formaler Pflicht. M21 Flächenzertifikate nur als Planspiel erprobt.
+Hinweise:
+- Alle sieben Kennungen passen auf bisherige Instrumente derselben Ebene (Bund); keine neuen Instrumente nötig.
+- Alle vorgeschlagenen Ursachen bestätigt (Regel 1 für 1801, Regel 7 für 1805 bei M51: Deiche und Dämme). Keine offenen Ursachen in diesen Kennungen.
+- M47 (Verbrenner-Verbot kippen) wie M15/M30/M32 zu I4; M49 und M53 (CO2-Preis bzw. Heizungsgesetz abschaffen) wie M07/M18/M25 zu I3.
+- M48 (Fernwärme auf Erneuerbare, Geothermie) zu I6 (klimafreundliche Wärmeversorgung) statt I1, da Wärmeversorgung wie M03/M05.
+- Grenzfall M50: Förderung von CCS/CCU über Superabschreibungen/Kredite geht über das bloße Ermöglichen (I5) hinaus; die Bewertung (Wirkung gemischt, nur langfristig auf Hitze) fällt aber gleich aus, daher I5.
+- Grenzfall M52: Repowering ist Ausbau erneuerbarer Energien (I1); die Wirkung ist kleiner als ein allgemeiner Ausbau, bei Wirksamkeit 1 aber nicht anders zu bewerten.
 ```
 
 </details>
@@ -179,6 +198,8 @@ Modell der Bewertung: Opus (Modell der Koordination)
 | programm-erfassung | FDP-Bund | 46.437 | 36 s |
 | blind-bewertung | Thema 18 Bund (46 Kennungen) | 74.225 | 261 s |
 | programm-erfassung | AfD-Bund (Rückfrage 1) | 39.099 | 9 s |
+| programm-erfassung | BSW-Bund | 37.283 | 24 s |
+| blind-bewertung | Teil-Neubewertung M47–M53 (BSW Bund) | 41.671 | 17 s |
 ```
 
 </details>

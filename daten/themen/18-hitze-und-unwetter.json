@@ -739,6 +739,89 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [1801, 1802, 1803, 1804, 1805, 1806],
+      "massnahmen": [
+        {
+          "id": 7985,
+          "instrument": 7934,
+          "beschreibung": "Nationalen CO2-Preis abschaffen.",
+          "ursachen_ids": [1801],
+          "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7986,
+          "instrument": 7935,
+          "beschreibung": "Verbrenner-Verbot zurücknehmen.",
+          "ursachen_ids": [1801],
+          "zitat": "Das Verbrennerverbot wollen wir kippen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7987,
+          "instrument": 7934,
+          "beschreibung": "Heizungsgesetz sofort abschaffen und durch andere Regelungen ersetzen.",
+          "ursachen_ids": [1801],
+          "zitat": "Habecks Heizungsgesetz wollen wir sofort abschaffen und durch sinnvolle Regelungen ersetzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7988,
+          "instrument": 7936,
+          "beschreibung": "Bau von CCS- und CCU-Anlagen durch Superabschreibungen oder öffentliche Kredite fördern.",
+          "ursachen_ids": [1801],
+          "zitat": "Den Bau von CCS- oder CCU-Anlagen wollen wir mithilfe von Superabschreibungen oder öffentlicher Kredite fördern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=12",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7989,
+          "instrument": 7932,
+          "beschreibung": "Repowering-Programm: alte Windanlagen durch neue ersetzen.",
+          "ursachen_ids": [1801],
+          "zitat": "Im Bereich der Erneuerbaren Energien fordern wir ein „Repowering“-Programm. Alte Windanlagen wollen wir durch neue ersetzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7990,
+          "instrument": 7937,
+          "beschreibung": "Fernwärme ausbauen und auf erneuerbare Quellen umstellen, Geothermie-Ausbauziele anheben.",
+          "ursachen_ids": [1801],
+          "zitat": "Fernwärme wird in Zukunft eine wichtigere Rolle spielen, wir unterstützen ihren Ausbau und die Umstellung auf erneuerbare Energiequellen. Geothermie wollen wir ausbauen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=12",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 7991,
+          "instrument": 7939,
+          "beschreibung": "Mittel für Auf- und Ausbau von Deichen und Dämmen bereitstellen, Folgen von Hochwasser abmildern.",
+          "ursachen_ids": [1805],
+          "zitat": "Wir wollen den Katastrophenschutz stärken, Hochwasserereignisse in ihren Folgen abmildern, Mittel für Auf- und Ausbau von Deichen und Dämmen zur Verfügung stellen",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=20",
+          "stand": "2026-10-03",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

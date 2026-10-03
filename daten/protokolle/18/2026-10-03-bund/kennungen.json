@@ -1,5 +1,5 @@
 {
-  "vergeben_bis": 46,
+  "vergeben_bis": 53,
   "kennungen": [
     {
       "kennung": "M01",
@@ -552,6 +552,90 @@
       "zitat_sha": "6210f0647a9b074e",
       "inhalt_sha": "00cbfb8a560ab7ac",
       "seite": 33
+    },
+    {
+      "kennung": "M47",
+      "programm": 6,
+      "massnahme": 1,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "verbrenner-verbot zurücknehmen.",
+      "zitat": "das verbrennerverbot wollen wir kippen.",
+      "zitat_sha": "56f0440e8cd5e5cb",
+      "inhalt_sha": "f7f0e78be12136b3",
+      "seite": 29
+    },
+    {
+      "kennung": "M48",
+      "programm": 6,
+      "massnahme": 5,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "fernwärme ausbauen und auf erneuerbare q",
+      "zitat": "fernwärme wird in zukunft eine wichtiger",
+      "zitat_sha": "97fa87501f0d3364",
+      "inhalt_sha": "cdd5f81a2833379a",
+      "seite": 12
+    },
+    {
+      "kennung": "M49",
+      "programm": 6,
+      "massnahme": 0,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "nationalen co2-preis abschaffen.",
+      "zitat": "den co2-preis, der alles teurer macht, o",
+      "zitat_sha": "709b6f801db32bf8",
+      "inhalt_sha": "bab20cb07513fc67",
+      "seite": 10
+    },
+    {
+      "kennung": "M50",
+      "programm": 6,
+      "massnahme": 3,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "bau von ccs- und ccu-anlagen durch super",
+      "zitat": "den bau von ccs- oder ccu-anlagen wollen",
+      "zitat_sha": "c4aaba7fc9043c6b",
+      "inhalt_sha": "1511f34c6cc58c2c",
+      "seite": 12
+    },
+    {
+      "kennung": "M51",
+      "programm": 6,
+      "massnahme": 6,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "mittel für auf- und ausbau von deichen u",
+      "zitat": "wir wollen den katastrophenschutz stärke",
+      "zitat_sha": "6337ea23f90a7a70",
+      "inhalt_sha": "6a736eacdc40c340",
+      "seite": 20
+    },
+    {
+      "kennung": "M52",
+      "programm": 6,
+      "massnahme": 4,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "repowering-programm: alte windanlagen du",
+      "zitat": "im bereich der erneuerbaren energien for",
+      "zitat_sha": "4f0aab8cffa84390",
+      "inhalt_sha": "9afd5e5e4c6138fd",
+      "seite": 11
+    },
+    {
+      "kennung": "M53",
+      "programm": 6,
+      "massnahme": 2,
+      "partei_id": 17,
+      "land": null,
+      "beschreibung": "heizungsgesetz sofort abschaffen und dur",
+      "zitat": "habecks heizungsgesetz wollen wir sofort",
+      "zitat_sha": "50835f54e13de3c8",
+      "inhalt_sha": "3b9c406ef4c97211",
+      "seite": 10
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "blind_pruefsumme": "ba489bf1d274416bbe9b54572dc64f4eee63ced1f06f9ed39920095a61d15287",
+  "blind_pruefsumme": "5ec3a2c6f1f3205ac5b79d7e781c85f255d0a2b01f15a8258b2925be91fa563f",
   "neue_instrumente": [
     {
       "kennung": "I1",
@@ -490,6 +490,67 @@
       "ursachen": [
         1801
       ]
+    },
+    {
+      "kennung": "M47",
+      "instrument": "I4",
+      "ursachen": [
+        1801
+      ]
+    },
+    {
+      "kennung": "M48",
+      "instrument": "I6",
+      "ursachen": [
+        1801
+      ]
+    },
+    {
+      "kennung": "M49",
+      "instrument": "I3",
+      "ursachen": [
+        1801
+      ]
+    },
+    {
+      "kennung": "M50",
+      "instrument": "I5",
+      "ursachen": [
+        1801
+      ]
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I8",
+      "ursachen": [
+        1805
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I1",
+      "ursachen": [
+        1801
+      ]
+    },
+    {
+      "kennung": "M53",
+      "instrument": "I3",
+      "ursachen": [
+        1801
+      ]
     }
-  ]
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "ba489bf1d274416bbe9b54572dc64f4eee63ced1f06f9ed39920095a61d15287",
+    "neu_bewertet": [
+      "M47",
+      "M48",
+      "M49",
+      "M50",
+      "M51",
+      "M52",
+      "M53"
+    ]
+  }
 }
