@@ -1,6 +1,6 @@
 # Plan: Forderungen und Haltungen einordnen
 
-Stand: 3. 10. 2026. Entwurf zur Entscheidung durch die Betreiberin, noch kein Code. Umsetzung in eigenen Pull Requests (siehe „Reihenfolge“).
+Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“), noch kein Code. Umsetzung in eigenen Pull Requests (siehe „Reihenfolge“).
 
 ## Ziel
 
@@ -10,6 +10,19 @@ Wer eine Forderung („Weniger Zuwanderung!“) oder eine Haltung („Mir ist He
 - **Haltung:** Wo stehen die Parteien dazu? Welche Zielkonflikte gibt es? Welche Alltagsprobleme hängen damit zusammen?
 
 Grundsatz: **Verortung statt Wertung.** Punkte gibt es weiterhin nur für Lösungen zu Alltagsproblemen (Grundprinzipien 2 und 4 bleiben unverändert).
+
+## Forderung oder Haltung?
+
+Die **Forderungskarte** ordnet einen *Lösungsweg* ein (wie man etwas erreichen will), die **Haltungskarte** eine *Wertfrage* (was man überhaupt will).
+
+| | Forderungskarte | Haltungskarte |
+| --- | --- | --- |
+| Auslöser | Forderung nach einer bestimmten Maßnahme („Asylsuchende an der Grenze zurückweisen!“) | Haltung oder Wert („Es kommen zu viele, das muss weniger werden.“) |
+| Grundlage | Vorhandene Instrumente, schon erfasst und bewertet | Neuer Katalog von Haltungsfragen |
+| Inhalt | Welche Parteien den Lösungsweg im Programm haben, Forschungsstand und Begründung | Position aller sieben Parteien mit Zitat, Zielkonflikte |
+| Besser oder schlechter? | Ob ein Mittel wirkt, lässt sich untersuchen – daher der Forschungsstand | Über Werte entscheiden keine Studien – daher nur Verortung |
+
+Beide enden mit dem Angebot, ein Alltagsproblem zu nennen; erst das wird gewertet. Kann die KI eine Äußerung weder einem Instrument noch einer Haltung sicher zuordnen, gibt es keine Karte, sondern wie bisher eine Nachfrage.
 
 ## Ist-Zustand
 
@@ -139,7 +152,7 @@ Nach den fünf Runden ein eigener Abschnitt unter der Zusammenfassung: alle Halt
 
 ### B6 Pilot
 
-Start mit drei Haltungen, Vorschlag: Zuwanderung begrenzen, Tempolimit, staatliche Unterstützung häuslicher Kinderbetreuung (verwandte Themen 6/9, 15, 17 – dort schon als Wertfragen benannt). Erst nach Tests mit Spielenden aus verschiedenen Lagern (auch Wähler:innen von AfD und BSW) weitere Haltungen.
+Start mit drei Haltungen (E7): Zuwanderung begrenzen, Tempolimit, staatliche Unterstützung häuslicher Kinderbetreuung (verwandte Themen 6/9, 15, 17 – dort schon als Wertfragen benannt). Erst nach Tests mit Spielenden aus verschiedenen Lagern (auch Wähler:innen von AfD und BSW) weitere Haltungen.
 
 ## Teil C: Tatsachenbehauptungen
 
@@ -336,16 +349,16 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 4. **Haltungen**: Format, Prüfung, drei Pilot-Haltungen erfassen, Haltungskarte, Endbildschirm.
 5. Tests mit Spielenden aus verschiedenen Lagern; danach über weitere Haltungen entscheiden.
 
-## Offene Entscheidungen (Betreiberin)
+## Entscheidungen (von der Betreiberin getroffen, 4. 10. 2026)
 
-| Nr. | Frage | Vorschlag |
+| Nr. | Frage | Entscheidung |
 | --- | --- | --- |
-| E1 | Zeigt die Forderungskarte Forschungsstand und Begründung des Instruments, oder nur, wer es fordert? | Mit Forschungsstand und Begründung, ohne Punktzahl – das ist der faktenbasierte Teil. |
+| E1 | Zeigt die Forderungskarte Forschungsstand und Begründung des Instruments oder nur, wer es fordert? | Mit Forschungsstand und Begründung, ohne Punktzahl – das ist der faktenbasierte Teil. |
 | E2 | Dürfen Spielende Ursachen antippen (A2)? Das weicht von „nur aus der Schilderung“ ab. | Ja, höchstens drei. |
-| E3 | Positionswerte `ja` / `nein` / `teils` / `keine_aussage` – reicht das? | Ja; feinere Skalen wirken wie eine Bewertung. |
-| E4 | Haltungskarte nur bei allen sieben Parteien? | Ja (Grundsatz 3). |
+| E3 | Reichen die Positionswerte `ja` / `nein` / `teils` / `keine_aussage`? | Ja; feinere Skalen wirken wie eine Bewertung. |
+| E4 | Haltungskarte nur, wenn alle sieben Parteien erfasst sind? | Ja (Grundsatz 3). |
 | E5 | Gewählte Parteien in der Haltungskarte hervorheben? | Nein, sonst wird daraus ein verdecktes Duell um Haltungen. |
-| E6 | Zitate von Haltungspositionen in die Datenbank (bei Maßnahmen bisher nicht)? | Ja. |
+| E6 | Zitate von Haltungspositionen in die Datenbank (bei Maßnahmen bisher nicht)? | Ja, weil bei Haltungen der Wortlaut der eigentliche Beleg ist. |
 | E7 | Welche drei Pilot-Haltungen? | Zuwanderung begrenzen, Tempolimit, häusliche Kinderbetreuung fördern. |
 | E8 | Verbraucht eine Karte die Runde? | Nein; höchstens eine Haltungskarte je Runde. |
 | E9 | Wer prüft die Formulierung der Haltungsfragen (B1 Nr. 4)? | Zwei Personen mit unterschiedlicher politischer Haltung; bis zur Vereinsgründung aus dem Kreis der Prüfenden. |
