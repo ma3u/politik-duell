@@ -272,6 +272,7 @@ var ROLLEN_IDS = [
   "studierend",
   "vermoegend"
 ];
+var MAX_AUSWAHL = 3;
 
 // _shared/ki.ts
 var MAX_NACHFRAGEN = 2;
@@ -306,13 +307,18 @@ Regeln:
 Einordnung ("typ"):
 - "problem": ein konkretes Alltagsproblem (z. B. \u201EIch finde keine bezahlbare Wohnung\u201C).
 - "forderung": eine politische Forderung ohne konkretes Alltagsproblem (z. B. \u201EWeniger Steuern!\u201C).
-  Dann stelle in "nachfrage" genau eine kurze, freundliche Frage nach dem konkreten Alltagsproblem dahinter,
-  z. B. \u201EWas l\xE4uft in deinem Alltag konkret schief?\u201C.
+  Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle genau eine kurze,
+  freundliche Frage nach dem Alltag dahinter, z. B. \u201EDu m\xF6chtest weniger Steuern zahlen. Was soll sich dadurch
+  in deinem Alltag \xE4ndern?\u201C. Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
+  Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung geh\xF6rt, sonst null; "ursachen_ids": [].
 - "wert": eine pers\xF6nliche Haltung oder ein Wert (z. B. \u201EMir ist Gerechtigkeit wichtig\u201C), kein Problem.
+  Dann "thema_id": null und "ursachen_ids": [].
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
-  ist weder Problem noch Wert: Ordne es als "forderung" ein und frage nach dem Alltag dahinter,
-  z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C. Widersprich nicht, belehre nicht,
-  wiederhole das Urteil nicht und \xFCbernimm es nicht in "zusammenfassung" oder "stichwort".
+  ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
+  nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.
+  Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und \xFCbernimm es nicht in "nachfrage",
+  "zusammenfassung" oder "stichwort".
+  Sonst ist "pauschal" immer false.
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
@@ -321,8 +327,9 @@ Zuordnung (nur bei "problem"):
 - Unterscheide Erlebnis und Gef\xFChl: Schildert jemand vor allem ein Gef\xFChl oder eine Sorge (z. B. \u201EIch f\xFChle mich
   unsicher, seit \u2026\u201C), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
   sich Unsicherheit ballt. Ursachen zu Taten oder T\xE4tergruppen nur, wenn die Schilderung sie erkennen l\xE4sst.
-- L\xE4sst sich keine Ursache erkennen: "ursachen_ids": [] und in "nachfrage" genau eine kurze, freundliche Frage,
-  woran es im Alltag konkret hakt, z. B. \u201EWas genau macht dir dabei Sorgen?\u201C. Gib keine Antworten vor.
+- L\xE4sst sich keine Ursache erkennen: "thema_id" wie erkannt, "ursachen_ids": [] und in "nachfrage" genau eine
+  kurze, freundliche Frage, woran es im Alltag konkret hakt, z. B. \u201EWas genau macht dir dabei Sorgen?\u201C.
+  Gib keine Antworten vor.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1\u20132 neutrale S\xE4tze zu m\xF6glichen
   Ursachen des Problems \u2013 ohne Parteien, ohne L\xF6sungsbewertung, ohne Links.
 
@@ -335,11 +342,12 @@ ${katalog}
 
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
- "ursachen_ids": number[], "zusammenfassung": string, "stichwort": string, "einschaetzung": string | null}`;
+ "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
+ "einschaetzung": string | null}`;
 }
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt als "problem" oder "wert" ein, nicht als "forderung", und stelle keine Nachfrage mehr. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
+  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
   return [
     {
       role: "system",
@@ -356,12 +364,13 @@ function pruefeAnfrage(roh) {
   const a = roh;
   if (!a || typeof a !== "object") throw new EingabeFehler("Anfrage fehlt.");
   if (typeof a.sitzung !== "string" || !SITZUNG_MUSTER.test(a.sitzung)) throw new EingabeFehler("Ung\xFCltige Sitzung.");
-  if (!Array.isArray(a.verlauf) || a.verlauf.length === 0 || a.verlauf.length > MAX_NACHRICHTEN) throw new EingabeFehler("Ung\xFCltiger Verlauf.");
+  const auswahl = pruefeAuswahl(a.auswahl);
+  if (!Array.isArray(a.verlauf) || a.verlauf.length === 0 && !auswahl || a.verlauf.length > MAX_NACHRICHTEN) throw new EingabeFehler("Ung\xFCltiger Verlauf.");
   for (const n of a.verlauf) {
     if (!n || n.von !== "spieler" && n.von !== "ki" || typeof n.text !== "string") throw new EingabeFehler("Ung\xFCltige Nachricht.");
     if (n.text.trim().length === 0 || n.text.length > MAX_TEXTLAENGE) throw new EingabeFehler("Text zu lang oder leer.");
   }
-  if (a.verlauf[a.verlauf.length - 1].von !== "spieler") throw new EingabeFehler("Letzte Nachricht muss vom Spieler sein.");
+  if (!auswahl && a.verlauf[a.verlauf.length - 1].von !== "spieler") throw new EingabeFehler("Letzte Nachricht muss vom Spieler sein.");
   if (a.rolle !== null && a.rolle !== void 0 && !ROLLEN_IDS.includes(a.rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
   if (!Array.isArray(a.parteien) || a.parteien.length !== 2 || !a.parteien.every((p) => Number.isInteger(p)) || a.parteien[0] === a.parteien[1]) throw new EingabeFehler("Ung\xFCltige Parteien.");
   if (a.land !== null && a.land !== void 0 && (typeof a.land !== "string" || !/^[A-Z]{2}$/.test(a.land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
@@ -372,7 +381,35 @@ function pruefeAnfrage(roh) {
     rolle: a.rolle ?? null,
     land: a.land ?? null,
     zugang: a.zugang ?? null,
-    parteien: a.parteien
+    parteien: a.parteien,
+    auswahl
+  };
+}
+function pruefeAuswahl(roh) {
+  if (roh === null || roh === void 0) return null;
+  const w = roh;
+  const ids = w.ursachen_ids;
+  if (typeof w !== "object" || !Number.isInteger(w.thema_id) || !Array.isArray(ids) || ids.length === 0 || ids.length > MAX_AUSWAHL || !ids.every((id) => Number.isInteger(id)) || new Set(ids).size !== ids.length) throw new EingabeFehler(`Ung\xFCltige Auswahl (1 bis ${MAX_AUSWAHL} Ursachen eines Themas).`);
+  return {
+    thema_id: w.thema_id,
+    ursachen_ids: ids
+  };
+}
+function antwortAusAuswahl(auswahl, themen, ursachen) {
+  const thema = themen.find((t) => t.id === auswahl.thema_id);
+  const gewaehlt = auswahl.ursachen_ids.map((id) => ursachen.find((u) => u.id === id && u.thema_id === auswahl.thema_id));
+  if (!thema || gewaehlt.some((u) => !u)) throw new EingabeFehler("Diese Ursachen geh\xF6ren nicht zu diesem Thema.");
+  const liste = gewaehlt.map((u) => u.beschreibung).join("; ");
+  return {
+    typ: "problem",
+    nachfrage: null,
+    thema_id: thema.id,
+    ursachen_ids: [
+      ...auswahl.ursachen_ids
+    ],
+    zusammenfassung: kurz(`${thema.name}: ${liste}`, 200),
+    stichwort: bereinigeStichwort(thema.name, thema.name),
+    einschaetzung: null
   };
 }
 var regexText = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -401,27 +438,33 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
   const letzterText = verlauf.filter((n) => n.von === "spieler").at(-1)?.text ?? "";
   const ohneLinks = (s) => ohneParteinamen(s.replace(/(https?:\/\/|www\.)\S+/gi, ""), parteien).trim();
-  let typ = r.typ === "forderung" || r.typ === "wert" ? r.typ : "problem";
+  const typ = r.typ === "forderung" || r.typ === "wert" ? r.typ : "problem";
+  const pauschal = typ === "forderung" && r.pauschal === true;
   let nachfrage = ohneLinks(kurz(r.nachfrage, 200));
-  if (typ === "forderung" && (nachfragen >= MAX_NACHFRAGEN || !nachfrage)) {
-    if (nachfragen >= MAX_NACHFRAGEN) typ = "problem";
-    else nachfrage = "Was l\xE4uft in deinem Alltag konkret schief?";
+  if (typ === "forderung") {
+    if (nachfragen >= MAX_NACHFRAGEN) nachfrage = "";
+    else if (!nachfrage) nachfrage = "Was l\xE4uft in deinem Alltag konkret schief?";
   }
+  const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null;
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120));
   const stichwortRoh = typeof r.stichwort === "string" ? ohneLinks(r.stichwort).replace(/\[Partei\]/g, "").trim() : "";
   const stichwort = bereinigeStichwort(stichwortRoh, zusammenfassung.replace(/\[Partei\]/g, ""));
   if (typ !== "problem") {
     return {
       typ,
-      nachfrage: typ === "forderung" ? nachfrage : null,
-      thema_id: null,
+      nachfrage: typ === "forderung" ? nachfrage || null : null,
+      // Bei einer Forderung: erkanntes Thema für die Ursachenauswahl (nicht bei Pauschalurteilen).
+      thema_id: typ === "forderung" && !pauschal ? erkanntesThema?.id ?? null : null,
       ursachen_ids: [],
+      ...pauschal ? {
+        pauschal: true
+      } : {},
       zusammenfassung,
       stichwort,
       einschaetzung: null
     };
   }
-  const thema = themen.find((t) => t.id === Number(r.thema_id)) ?? null;
+  const thema = erkanntesThema;
   if (!thema) {
     return {
       typ,
@@ -436,10 +479,11 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   const erlaubt = ursachen.filter((u) => u.thema_id === thema.id).map((u) => u.id);
   const genannt = Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number).filter((id) => erlaubt.includes(id)) : [];
   if (genannt.length === 0) {
+    const fragen = nachfragen < MAX_NACHFRAGEN;
     return {
       typ,
-      nachfrage: nachfragen < MAX_NACHFRAGEN ? nachfrage || NACHFRAGE_URSACHE : null,
-      thema_id: null,
+      nachfrage: fragen ? nachfrage || NACHFRAGE_URSACHE : null,
+      thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung,
       stichwort,
@@ -583,7 +627,7 @@ Deno.serve(async (req) => {
     if (!await imLimit(anfrage.sitzung, RATE_LIMIT_SITZUNG.max, RATE_LIMIT_SITZUNG.fenster)) return json({
       fehler: "Zu viele Anfragen. Bitte warte ein paar Minuten."
     }, 429);
-    if (!await imLimit(GLOBALE_SITZUNG, GLOBAL_MAX, RATE_LIMIT_GLOBAL.fenster)) return json({
+    if (!anfrage.auswahl && !await imLimit(GLOBALE_SITZUNG, GLOBAL_MAX, RATE_LIMIT_GLOBAL.fenster)) return json({
       fehler: "Gerade spielen sehr viele Leute. Bitte versuch es etwas sp\xE4ter noch einmal."
     }, 503);
     const [themenRes, ursachenRes, parteienRes] = await Promise.all([
@@ -597,8 +641,7 @@ Deno.serve(async (req) => {
     const themen = themenRes.data;
     const ursachen = ursachenRes.data;
     const parteien = parteienRes.data;
-    const roh = await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle));
-    const antwort = bereinigeAntwort(roh, anfrage.verlauf, themen, ursachen, parteien);
+    const antwort = anfrage.auswahl ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen) : bereinigeAntwort(await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien);
     if (!antwort.nachfrage) {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
       const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
@@ -635,6 +678,14 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
     await db.from("runden").insert({
       ...basis,
       status: "wert"
+    });
+    return;
+  }
+  if (antwort.typ === "forderung") {
+    await db.from("runden").insert({
+      ...basis,
+      status: "forderung",
+      thema_id: antwort.thema_id
     });
     return;
   }

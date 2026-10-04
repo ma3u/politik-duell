@@ -26,6 +26,7 @@ describe('analysiere (Mock der Edge Function)', () => {
     const a = analysiere(spieler('Die Ausländer sind doch alle kriminell'), THEMEN, URSACHEN)
     expect(a.typ).toBe('forderung')
     expect(a.nachfrage).toContain('selbst erlebt')
+    expect(a).toMatchObject({ pauschal: true, thema_id: null })
     expect(a.zusammenfassung).not.toMatch(/kriminell|Ausländer/i)
   })
 
@@ -38,8 +39,14 @@ describe('analysiere (Mock der Edge Function)', () => {
       { von: 'spieler', text: 'Wir brauchen mehr Wohnungen' },
     ]
     const a = analysiere(verlauf, THEMEN, URSACHEN)
-    expect(a.typ).toBe('problem')
-    expect(a.thema_id).toBe(2)
+    // Bleibt es bei der Forderung, wird sie nicht zum Problem umgedeutet: ohne Wertung, mit Thema.
+    expect(a).toMatchObject({ typ: 'forderung', nachfrage: null, thema_id: 2, ursachen_ids: [] })
+  })
+
+  it('nennt bei einer Forderung das Thema für die Ursachenauswahl', () => {
+    const a = analysiere(spieler('Mehr Wohnungen!'), THEMEN, URSACHEN)
+    expect(a).toMatchObject({ typ: 'forderung', thema_id: 2, ursachen_ids: [] })
+    expect(a.nachfrage).toBeTruthy()
   })
 
   it('erkennt eine persönliche Haltung', () => {
@@ -55,7 +62,7 @@ describe('analysiere (Mock der Edge Function)', () => {
 
   it('fragt nach, wenn das Thema klar ist, aber keine Ursache', () => {
     const a = analysiere(spieler('Meine Stromrechnung ist ein Problem'), THEMEN, URSACHEN)
-    expect(a).toMatchObject({ typ: 'problem', thema_id: null, ursachen_ids: [] })
+    expect(a).toMatchObject({ typ: 'problem', thema_id: 3, ursachen_ids: [] })
     expect(a.nachfrage).toBeTruthy()
   })
 

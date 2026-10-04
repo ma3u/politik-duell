@@ -110,6 +110,7 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 
 1. Pro Ursache zählt die beste Maßnahme einer Partei. Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr Einzelforderungen aufschreibt, nicht wer besser ansetzt. Wer mehrere Ursachen angeht, wird über die Summe belohnt.
 2. Die Rundenpunkte sind die Summe über alle Ursachen, denen das Problem zugeordnet wurde. Zugeordnet werden nur Ursachen, die sich aus der Schilderung erkennen lassen – nicht vorsorglich alle Ursachen des Themas, sonst gewänne bei vagen Problemen, wer zum Thema die meisten Maßnahmen hat. Ist keine Ursache erkennbar, fragt das Spiel nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); bleibt es unklar, wird die Runde nicht gewertet.
+   Ist das Thema erkennbar, zeigt das Spiel bei jeder Nachfrage zusätzlich die Ursachen des Themas zum Antippen. Angetippte Ursachen gelten als Schilderung der Person und werden gewertet wie eine Zuordnung durch die KI – höchstens drei, aus demselben Grund wie oben. Bei pauschalen Urteilen über Gruppen gibt es keine Auswahl, nur die Nachfrage nach dem Erlebten.
 3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.
 4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte.
 
@@ -135,6 +136,7 @@ Es zählt immer genau ein Programm je Partei und Ursache. So hat keine Partei me
 | Ursache auf Landesebene, Partei hat im gewählten Land kein aktuelles Programm | „kein aktuelles Landesprogramm“ | Runde wird nicht gewertet |
 | Thema gar nicht in der Datenbank | „ungeprüft – keine Wertung“, ohne Links; kommt in die Warteschlange für neue Themen | keine |
 | Spieler:in nennt einen Wert oder eine Haltung | wird respektvoll als persönliche Haltung benannt; neues Problem möglich | keine |
+| Spieler:in bleibt nach zwei Nachfragen bei einer Forderung | Forderung wird als verstanden benannt, mit Thema, falls erkennbar; neues Problem möglich. Sie wird nicht zum Problem umgedeutet und kommt nicht in die Warteschlange für neue Themen | keine |
 
 0 Punkte heißt nur: Im Wahlprogramm mit dem angegebenen Stand steht dazu nichts – nicht, dass sich die Partei nie dazu geäußert hätte. Fehlende Daten kosten keine Partei einen Punkt.
 
@@ -145,8 +147,8 @@ Die KI ist Übersetzerin, nicht Schiedsrichterin. Sie macht aus einem frei formu
 | Die KI … | Die KI … nicht |
 | --- | --- |
 | erkennt, ob ein Problem, eine Forderung oder eine Haltung genannt wurde | vergibt Punkte |
-| stellt bei Forderungen höchstens zwei Nachfragen nach dem Alltagsproblem | nennt Quellen oder Links |
-| ordnet das Problem einem Thema und dessen Ursachen zu | bewertet Parteien oder äußert sich zu ihnen |
+| gibt eine Forderung neutral wieder und stellt höchstens zwei Nachfragen nach dem Alltagsproblem | nennt Quellen oder Links |
+| ordnet das Problem (oder die Forderung) einem Thema und das Problem dessen Ursachen zu | bewertet Parteien oder äußert sich zu ihnen |
 | fasst das Problem in einem neutralen Satz zusammen | belehrt oder kommentiert Meinungen |
 
 Technisch abgesichert: Die KI antwortet in einem festen Format, die Antwort wird geprüft (nur IDs aus dem Katalog, keine Links), Parteinamen in KI-Texten werden entfernt. Die Punkte berechnet ein festes Programm aus der Datenbank – dieselbe Eingabe ergibt immer dasselbe Ergebnis.

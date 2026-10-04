@@ -1,4 +1,5 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
+import { antwortAusAuswahl } from '../../supabase/functions/_shared/ki.ts'
 import { analysiereAsync } from '../logic/analyse'
 import type { Ebenen } from '../logic/bewertung'
 import { ABDECKUNG, LAENDER, LANDESPROGRAMME, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from './mock'
@@ -164,6 +165,7 @@ export async function analysiere(
   anfrage: Omit<AnalyseAnfrage, 'sitzung'>,
 ): Promise<AnalyseAntwort> {
   if (daten.quelle === 'mock' || !supabase) {
+    if (anfrage.auswahl) return antwortAusAuswahl(anfrage.auswahl, daten.themen, daten.ursachen)
     return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen)
   }
   const zugang = daten.testphase ? gespeicherterZugang() : null

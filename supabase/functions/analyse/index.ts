@@ -12,7 +12,7 @@
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { bewertePartei, werteRunde } from '../_shared/bewertung.ts'
-import { bereinigeAntwort, EingabeFehler, nutzerNachrichten, pruefeAnfrage, systemPrompt } from '../_shared/ki.ts'
+import { antwortAusAuswahl, bereinigeAntwort, EingabeFehler, nutzerNachrichten, pruefeAnfrage, systemPrompt } from '../_shared/ki.ts'
 import { pruefeText } from '../_shared/moderation.ts'
 import { tokenHash } from '../_shared/pruefung.ts'
 import type { AbdeckungEintrag, AnalyseAntwort, Landesprogramm, Massnahme, Partei, Rolle, Thema, Ursache } from '../_shared/typen.ts'
@@ -86,10 +86,10 @@ Deno.serve(async (req) => {
   try {
     const anfrage = pruefeAnfrage(await lesJson(req))
 
-    // Erst pro Sitzung, dann für alle zusammen (Kostendeckel für die KI).
+    // Erst pro Sitzung, dann für alle zusammen (Kostendeckel für die KI – angetippte Ursachen fragen keine KI).
     if (!(await imLimit(anfrage.sitzung, RATE_LIMIT_SITZUNG.max, RATE_LIMIT_SITZUNG.fenster)))
       return json({ fehler: 'Zu viele Anfragen. Bitte warte ein paar Minuten.' }, 429)
-    if (!(await imLimit(GLOBALE_SITZUNG, GLOBAL_MAX, RATE_LIMIT_GLOBAL.fenster)))
+    if (!anfrage.auswahl && !(await imLimit(GLOBALE_SITZUNG, GLOBAL_MAX, RATE_LIMIT_GLOBAL.fenster)))
       return json({ fehler: 'Gerade spielen sehr viele Leute. Bitte versuch es etwas später noch einmal.' }, 503)
 
     const [themenRes, ursachenRes, parteienRes] = await Promise.all([
@@ -104,8 +104,13 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data as Ursache[]
     const parteien = parteienRes.data as Partei[]
 
-    const roh = await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle))
-    const antwort = bereinigeAntwort(roh, anfrage.verlauf, themen, ursachen, parteien)
+    // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein.
+    const antwort = anfrage.auswahl
+      ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
+      : bereinigeAntwort(
+          await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)),
+          anfrage.verlauf, themen, ursachen, parteien,
+        )
 
     // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht abgeschlossen.
     if (!antwort.nachfrage) {
@@ -158,6 +163,11 @@ async function speichereRunde(
 
   if (antwort.typ === 'wert') {
     await db.from('runden').insert({ ...basis, status: 'wert' })
+    return
+  }
+  // Forderung ohne Alltagsproblem nach zwei Nachfragen: ohne Wertung, mit dem erkannten Thema.
+  if (antwort.typ === 'forderung') {
+    await db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id })
     return
   }
 

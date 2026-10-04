@@ -8,10 +8,20 @@ import { fuerBeideErfasst } from '../logic/stand'
 import type { RundenErgebnis, Spieler } from '../spiel'
 import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
+import { UrsachenAuswahl } from './UrsachenAuswahl'
 
 const WERT_ANTWORT =
-  'Das klingt nach einer persönlichen Haltung – die respektieren wir. Werte werden hier nicht gewertet. ' +
-  'Magst du stattdessen ein konkretes Alltagsproblem nennen?'
+  'Das ist eine persönliche Haltung – darüber kann man verschieden denken. ' +
+  'Magst du erzählen, wo dir das im Alltag begegnet?'
+
+/** Forderung ohne Alltagsproblem nach zwei Nachfragen: keine Wertung, neues Problem möglich. */
+function forderungAntwort(themaName: string | null): string {
+  return (
+    'Deine Forderung haben wir verstanden' +
+    (themaName ? ` – sie gehört zum Thema „${themaName}“` : '') +
+    '. Gewertet werden hier Lösungen für konkrete Alltagsprobleme. Magst du eins nennen?'
+  )
+}
 
 function werteAus(
   analyse: AnalyseAntwort,
@@ -67,6 +77,13 @@ export function Runde({
   const [eingabe, setEingabe] = useState('')
   const [denkt, setDenkt] = useState(false)
   const [fehler, setFehler] = useState<string | null>(null)
+  /** Thema, dessen Ursachen gerade zum Antippen angeboten werden (bei einer offenen Nachfrage). */
+  const [auswahlThema, setAuswahlThema] = useState<number | null>(null)
+  /**
+   * Neutrale Zusammenfassung der KI zu einem geschilderten Problem – für die Anzeige nach einer Auswahl.
+   * Bei einer Forderung bleibt sie leer: Dann steht das Thema mit den gewählten Ursachen als Problem da.
+   */
+  const [zusammenfassung, setZusammenfassung] = useState<string | null>(null)
   const daten = useDaten()
 
   const aktiv = spieler[sprecher]
@@ -82,6 +99,7 @@ export function Runde({
     setEingabe('')
     setHinweis(null)
     setFehler(null)
+    setAuswahlThema(null)
     setDenkt(true)
     let analyse: AnalyseAntwort
     try {
@@ -101,17 +119,47 @@ export function Runde({
       setDenkt(false)
     }
 
-    // Nachfrage bei einer Forderung oder wenn keine Ursache erkennbar ist.
+    // Nachfrage bei einer Forderung oder wenn keine Ursache erkennbar ist – mit erkanntem Thema
+    // zusätzlich dessen Ursachen zum Antippen (nicht bei Pauschalurteilen über Gruppen).
     if (analyse.nachfrage) {
       setVerlauf([...neu, { von: 'ki', text: analyse.nachfrage }])
-    } else if (analyse.typ === 'wert') {
+      setAuswahlThema(analyse.pauschal ? null : analyse.thema_id)
+      setZusammenfassung(analyse.typ === 'problem' ? analyse.zusammenfassung || null : null)
+    } else if (analyse.typ === 'wert' || analyse.typ === 'forderung') {
       // Runde ohne Wertung – ein neues Problem kann genannt werden.
+      const thema = daten.themen.find((t) => t.id === analyse.thema_id)?.name ?? null
       setVerlauf([])
-      setHinweis(WERT_ANTWORT)
+      setZusammenfassung(null)
+      setHinweis(analyse.typ === 'wert' ? WERT_ANTWORT : forderungAntwort(thema))
     } else {
       onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten))
     }
   }
+
+  /** Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. */
+  async function auswaehlen(themaId: number, ursachenIds: number[]) {
+    if (denkt) return
+    setFehler(null)
+    setDenkt(true)
+    let analyse: AnalyseAntwort
+    try {
+      analyse = await analysiere(daten, {
+        verlauf: [],
+        rolle: aktiv.rolle,
+        land: aktiv.land,
+        parteien: [spieler[0].partei.id, spieler[1].partei.id],
+        auswahl: { thema_id: themaId, ursachen_ids: ursachenIds },
+      })
+    } catch (err) {
+      setFehler(err instanceof AnalyseFehler ? err.message : 'Die Wertung hat gerade nicht geklappt.')
+      return
+    } finally {
+      setDenkt(false)
+    }
+    onErgebnis(werteAus({ ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung }, nr, sprecher, spieler, daten))
+  }
+
+  const angebot = daten.themen.find((t) => t.id === auswahlThema) ?? null
 
   return (
     <main className="seite runde">
@@ -141,6 +189,16 @@ export function Runde({
           </p>
         )}
       </div>
+
+      {angebot && (
+        <UrsachenAuswahl
+          key={`${angebot.id}-${verlauf.length}`}
+          thema={angebot}
+          ursachen={daten.ursachen}
+          gesperrt={denkt}
+          onWaehlen={(ids) => auswaehlen(angebot.id, ids)}
+        />
+      )}
 
       <SprechKnopf
         gesperrt={denkt}

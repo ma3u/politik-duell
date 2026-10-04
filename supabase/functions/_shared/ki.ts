@@ -1,6 +1,7 @@
 import { EingabeFehler } from './fehler.ts'
 import { bereinigeStichwort } from './moderation.ts'
 import {
+  MAX_AUSWAHL,
   ROLLEN_IDS,
   type AnalyseAnfrage,
   type AnalyseAntwort,
@@ -9,6 +10,7 @@ import {
   type Rolle,
   type Thema,
   type Ursache,
+  type UrsachenAuswahl,
 } from './typen.ts'
 
 // Prompt-Aufbau und strenge Prüfung der KI-Antwort. Reines TypeScript,
@@ -54,13 +56,18 @@ Regeln:
 Einordnung ("typ"):
 - "problem": ein konkretes Alltagsproblem (z. B. „Ich finde keine bezahlbare Wohnung“).
 - "forderung": eine politische Forderung ohne konkretes Alltagsproblem (z. B. „Weniger Steuern!“).
-  Dann stelle in "nachfrage" genau eine kurze, freundliche Frage nach dem konkreten Alltagsproblem dahinter,
-  z. B. „Was läuft in deinem Alltag konkret schief?“.
+  Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle genau eine kurze,
+  freundliche Frage nach dem Alltag dahinter, z. B. „Du möchtest weniger Steuern zahlen. Was soll sich dadurch
+  in deinem Alltag ändern?“. Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
+  Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung gehört, sonst null; "ursachen_ids": [].
 - "wert": eine persönliche Haltung oder ein Wert (z. B. „Mir ist Gerechtigkeit wichtig“), kein Problem.
+  Dann "thema_id": null und "ursachen_ids": [].
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)
-  ist weder Problem noch Wert: Ordne es als "forderung" ein und frage nach dem Alltag dahinter,
-  z. B. „Was hast du selbst erlebt, oder wo fühlst du dich unsicher?“. Widersprich nicht, belehre nicht,
-  wiederhole das Urteil nicht und übernimm es nicht in "zusammenfassung" oder "stichwort".
+  ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
+  nach dem Alltag dahinter, z. B. „Was hast du selbst erlebt, oder wo fühlst du dich unsicher?“.
+  Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und übernimm es nicht in "nachfrage",
+  "zusammenfassung" oder "stichwort".
+  Sonst ist "pauschal" immer false.
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
@@ -69,8 +76,9 @@ Zuordnung (nur bei "problem"):
 - Unterscheide Erlebnis und Gefühl: Schildert jemand vor allem ein Gefühl oder eine Sorge (z. B. „Ich fühle mich
   unsicher, seit …“), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
   sich Unsicherheit ballt. Ursachen zu Taten oder Tätergruppen nur, wenn die Schilderung sie erkennen lässt.
-- Lässt sich keine Ursache erkennen: "ursachen_ids": [] und in "nachfrage" genau eine kurze, freundliche Frage,
-  woran es im Alltag konkret hakt, z. B. „Was genau macht dir dabei Sorgen?“. Gib keine Antworten vor.
+- Lässt sich keine Ursache erkennen: "thema_id" wie erkannt, "ursachen_ids": [] und in "nachfrage" genau eine
+  kurze, freundliche Frage, woran es im Alltag konkret hakt, z. B. „Was genau macht dir dabei Sorgen?“.
+  Gib keine Antworten vor.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1–2 neutrale Sätze zu möglichen
   Ursachen des Problems – ohne Parteien, ohne Lösungsbewertung, ohne Links.
 
@@ -83,7 +91,8 @@ ${katalog}
 
 Antworte ausschließlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
- "ursachen_ids": number[], "zusammenfassung": string, "stichwort": string, "einschaetzung": string | null}`
+ "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
+ "einschaetzung": string | null}`
 }
 
 export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
@@ -91,8 +100,9 @@ export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
   const hinweis =
     `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : 'keine Angabe'}.` +
     (nachfragen >= MAX_NACHFRAGEN
-      ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt als "problem" oder "wert" ein, nicht als "forderung",' +
-        ' und stelle keine Nachfrage mehr. Wähle nur Ursachen, die sich aus dem Gesagten erkennen lassen.'
+      ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschließend ein und stelle keine Nachfrage mehr.' +
+        ' Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein.' +
+        ' Wähle nur Ursachen, die sich aus dem Gesagten erkennen lassen.'
       : '')
   return [
     { role: 'system' as const, content: hinweis },
@@ -115,14 +125,17 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
   // Nur zufällige UUIDs (Version 4, wie crypto.randomUUID). Damit kann die App
   // nicht die feste ID des globalen Rate-Limits (siehe zugriff.ts) verwenden.
   if (typeof a.sitzung !== 'string' || !SITZUNG_MUSTER.test(a.sitzung)) throw new EingabeFehler('Ungültige Sitzung.')
-  if (!Array.isArray(a.verlauf) || a.verlauf.length === 0 || a.verlauf.length > MAX_NACHRICHTEN)
+  const auswahl = pruefeAuswahl(a.auswahl)
+  // Mit Auswahl fragt die Funktion keine KI; ein Verlauf ist dann nicht nötig.
+  if (!Array.isArray(a.verlauf) || (a.verlauf.length === 0 && !auswahl) || a.verlauf.length > MAX_NACHRICHTEN)
     throw new EingabeFehler('Ungültiger Verlauf.')
   for (const n of a.verlauf) {
     if (!n || (n.von !== 'spieler' && n.von !== 'ki') || typeof n.text !== 'string')
       throw new EingabeFehler('Ungültige Nachricht.')
     if (n.text.trim().length === 0 || n.text.length > MAX_TEXTLAENGE) throw new EingabeFehler('Text zu lang oder leer.')
   }
-  if (a.verlauf[a.verlauf.length - 1].von !== 'spieler') throw new EingabeFehler('Letzte Nachricht muss vom Spieler sein.')
+  if (!auswahl && a.verlauf[a.verlauf.length - 1].von !== 'spieler')
+    throw new EingabeFehler('Letzte Nachricht muss vom Spieler sein.')
   if (a.rolle !== null && a.rolle !== undefined && !ROLLEN_IDS.includes(a.rolle)) throw new EingabeFehler('Ungültige Rolle.')
   if (
     !Array.isArray(a.parteien) ||
@@ -139,6 +152,46 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
     throw new EingabeFehler('Ungültiger Zugang zur Testphase.')
   return {
     sitzung: a.sitzung, verlauf: a.verlauf, rolle: a.rolle ?? null, land: a.land ?? null, zugang: a.zugang ?? null, parteien: a.parteien,
+    auswahl,
+  }
+}
+
+/** Form der angetippten Ursachen prüfen; ob sie zum Katalog passen, prüft antwortAusAuswahl. */
+function pruefeAuswahl(roh: unknown): UrsachenAuswahl | null {
+  if (roh === null || roh === undefined) return null
+  const w = roh as Partial<UrsachenAuswahl>
+  const ids = w.ursachen_ids
+  if (
+    typeof w !== 'object' ||
+    !Number.isInteger(w.thema_id) ||
+    !Array.isArray(ids) ||
+    ids.length === 0 ||
+    ids.length > MAX_AUSWAHL ||
+    !ids.every((id) => Number.isInteger(id)) ||
+    new Set(ids).size !== ids.length
+  )
+    throw new EingabeFehler(`Ungültige Auswahl (1 bis ${MAX_AUSWAHL} Ursachen eines Themas).`)
+  return { thema_id: w.thema_id as number, ursachen_ids: ids }
+}
+
+/**
+ * Antwort für angetippte Ursachen – ohne KI. Gewertet wird wie bei einer Zuordnung durch die KI.
+ * Die Zusammenfassung nennt nur Thema und Anzahl (die Ursachen zeigt die Auflösung):
+ * Der Text der Person wird nicht gespeichert.
+ */
+export function antwortAusAuswahl(auswahl: UrsachenAuswahl, themen: Thema[], ursachen: Ursache[]): AnalyseAntwort {
+  const thema = themen.find((t) => t.id === auswahl.thema_id)
+  const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id))
+  if (!thema || !passt) throw new EingabeFehler('Diese Ursachen gehören nicht zu diesem Thema.')
+  const n = auswahl.ursachen_ids.length
+  return {
+    typ: 'problem',
+    nachfrage: null,
+    thema_id: thema.id,
+    ursachen_ids: [...auswahl.ursachen_ids],
+    zusammenfassung: kurz(`${thema.name}: ${n === 1 ? 'eine Ursache' : `${n} Ursachen`} angetippt`, 200),
+    stichwort: bereinigeStichwort(thema.name, thema.name),
+    einschaetzung: null,
   }
 }
 
@@ -185,12 +238,16 @@ export function bereinigeAntwort(
   const letzterText = verlauf.filter((n) => n.von === 'spieler').at(-1)?.text ?? ''
   const ohneLinks = (s: string) => ohneParteinamen(s.replace(/(https?:\/\/|www\.)\S+/gi, ''), parteien).trim()
 
-  let typ: AnalyseAntwort['typ'] = r.typ === 'forderung' || r.typ === 'wert' ? r.typ : 'problem'
+  const typ: AnalyseAntwort['typ'] = r.typ === 'forderung' || r.typ === 'wert' ? r.typ : 'problem'
+  const pauschal = typ === 'forderung' && r.pauschal === true
   let nachfrage = ohneLinks(kurz(r.nachfrage, 200))
-  if (typ === 'forderung' && (nachfragen >= MAX_NACHFRAGEN || !nachfrage)) {
-    if (nachfragen >= MAX_NACHFRAGEN) typ = 'problem'
-    else nachfrage = 'Was läuft in deinem Alltag konkret schief?'
+  // Nach zwei Nachfragen bleibt eine Forderung eine Forderung (ohne Wertung) – sie wird nicht
+  // zum Problem umgedeutet, sonst bekäme sie eine Einschätzung, die für unbekannte Probleme gedacht ist.
+  if (typ === 'forderung') {
+    if (nachfragen >= MAX_NACHFRAGEN) nachfrage = ''
+    else if (!nachfrage) nachfrage = 'Was läuft in deinem Alltag konkret schief?'
   }
+  const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null
 
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120))
   // Im Stichwort wird ein Parteiname ganz entfernt; bleibt nichts übrig, greift die Zusammenfassung.
@@ -200,16 +257,18 @@ export function bereinigeAntwort(
   if (typ !== 'problem') {
     return {
       typ,
-      nachfrage: typ === 'forderung' ? nachfrage : null,
-      thema_id: null,
+      nachfrage: typ === 'forderung' ? nachfrage || null : null,
+      // Bei einer Forderung: erkanntes Thema für die Ursachenauswahl (nicht bei Pauschalurteilen).
+      thema_id: typ === 'forderung' && !pauschal ? erkanntesThema?.id ?? null : null,
       ursachen_ids: [],
+      ...(pauschal ? { pauschal: true } : {}),
       zusammenfassung,
       stichwort,
       einschaetzung: null,
     }
   }
 
-  const thema = themen.find((t) => t.id === Number(r.thema_id)) ?? null
+  const thema = erkanntesThema
   if (!thema) {
     return {
       typ,
@@ -227,11 +286,13 @@ export function bereinigeAntwort(
   if (genannt.length === 0) {
     // Keine Ursache erkennbar: nicht einfach alle Ursachen werten – sonst gewänne, wer zum
     // Thema die meisten Maßnahmen hat, nicht wer das geschilderte Problem am besten löst.
-    // Also nachfragen; ist das nicht mehr möglich, bleibt die Runde ohne Wertung.
+    // Also nachfragen (mit dem Thema, damit die App dessen Ursachen zum Antippen anbietet);
+    // ist das nicht mehr möglich, bleibt die Runde ohne Wertung.
+    const fragen = nachfragen < MAX_NACHFRAGEN
     return {
       typ,
-      nachfrage: nachfragen < MAX_NACHFRAGEN ? nachfrage || NACHFRAGE_URSACHE : null,
-      thema_id: null,
+      nachfrage: fragen ? nachfrage || NACHFRAGE_URSACHE : null,
+      thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung,
       stichwort,

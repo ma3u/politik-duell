@@ -86,16 +86,19 @@ export function analysiere(verlauf: Nachricht[], themen: Thema[], ursachen: Ursa
       nachfrage: NACHFRAGE_PAUSCHAL,
       thema_id: null,
       ursachen_ids: [],
+      pauschal: true,
       zusammenfassung: 'Allgemeine Aussage über eine Gruppe',
     }
   }
 
-  // Forderung ≠ Problem: nach dem Alltagsproblem dahinter fragen (max. 2×).
-  if (istForderung && bisherigeNachfragen < MAX_NACHFRAGEN) {
+  // Forderung ≠ Problem: nach dem Alltagsproblem dahinter fragen (max. 2×), mit dem erkannten
+  // Thema für die Ursachenauswahl. Danach bleibt es eine Forderung ohne Wertung.
+  if (istForderung) {
+    const fragen = bisherigeNachfragen < MAX_NACHFRAGEN
     return {
       typ: 'forderung',
-      nachfrage: NACHFRAGEN[bisherigeNachfragen],
-      thema_id: null,
+      nachfrage: fragen ? NACHFRAGEN[bisherigeNachfragen] : null,
+      thema_id: thema?.id ?? null,
       ursachen_ids: [],
       zusammenfassung: `Forderung: ${kuerze(spielerTexte.at(-1) ?? '')}`,
     }
@@ -112,11 +115,12 @@ export function analysiere(verlauf: Nachricht[], themen: Thema[], ursachen: Ursa
         zusammenfassung: kuerze(spielerTexte.at(-1) ?? ''),
       }
     }
-    // Thema klar, Ursache nicht: nachfragen; danach ohne Wertung.
+    // Thema klar, Ursache nicht: nachfragen (Thema für die Ursachenauswahl); danach ohne Wertung.
+    const fragen = bisherigeNachfragen < MAX_NACHFRAGEN
     return {
       typ: 'problem',
-      nachfrage: bisherigeNachfragen < MAX_NACHFRAGEN ? NACHFRAGE_URSACHE : null,
-      thema_id: null,
+      nachfrage: fragen ? NACHFRAGE_URSACHE : null,
+      thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung: kuerze(spielerTexte.at(-1) ?? ''),
       einschaetzung: null,
