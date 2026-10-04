@@ -2,7 +2,12 @@
   "id": 2,
   "frage": "Soll Zuwanderung nach Deutschland stärker begrenzt werden?",
   "beschreibung": "Ob insgesamt weniger Menschen nach Deutschland kommen sollen als bisher – über Asyl, Familiennachzug oder Arbeit –, unabhängig davon, mit welchen Mitteln das geschähe.",
-  "verwandte_themen": [6, 2, 5, 9],
+  "verwandte_themen": [
+    6,
+    2,
+    5,
+    9
+  ],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -24,5 +29,8 @@
       "text": "Wer das ablehnt, nennt außerdem den Schutz politisch Verfolgter, den das Grundgesetz als Recht auf Asyl garantiert.",
       "quelle_url": "https://www.gesetze-im-internet.de/gg/art_16a.html"
     }
-  ]
+  ],
+  "freigabe": {
+    "datum": "2026-10-04"
+  }
 }

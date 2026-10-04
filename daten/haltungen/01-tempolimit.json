@@ -2,7 +2,10 @@
   "id": 1,
   "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
   "beschreibung": "Ob auf allen Autobahnen eine feste Höchstgeschwindigkeit gelten soll oder ob Tempolimits wie bisher nur dort gelten, wo Verkehr, Unfälle oder Lärm es verlangen.",
-  "verwandte_themen": [15, 12],
+  "verwandte_themen": [
+    15,
+    12
+  ],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -24,5 +27,8 @@
       "text": "Wer es ablehnt, will Tempolimits nur dort, wo Verkehr, Unfälle oder Lärm sie verlangen – so gilt es heute auf knapp drei von zehn Kilometern Autobahn.",
       "quelle_url": "https://www.bast.de/DE/Publikationen/BerichteBASt/Fachveroeffentlichungen/Verkehrstechnik/Downloads/V1-BAB-Tempolimit-2015.pdf?__blob=publicationFile&v=1"
     }
-  ]
+  ],
+  "freigabe": {
+    "datum": "2026-10-04"
+  }
 }

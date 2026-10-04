@@ -64,12 +64,19 @@ Nur zwei Zielkonflikte, je einer pro Seite. Verworfen:
 
 ## Freigabe durch die Betreiberin
 
-Je Haltung `"freigabe": { "datum": "JJJJ-MM-TT" }` eintragen, wenn:
+**Freigegeben am 4. 10. 2026** für alle drei Haltungen (`freigabe.datum` in `daten/haltungen/01–03`), durch die Betreiberin. Damit dürfen die Positionen erfasst werden (Phase B).
 
-- [ ] die Frage eine neutrale Ja/Nein-Frage ist, in der sich beide Seiten wiederfinden,
-- [ ] die Beschreibung keinen Lösungsweg und keine Partei nennt,
-- [ ] jede Quelle im Original geöffnet und die Zahl im Zielkonflikt bestätigt ist,
-- [ ] die Zielkonflikte beider Seiten gleich stark formuliert sind,
-- [ ] die verwandten Themen passen (siehe Frage zu Haltung 2).
+Geprüft vor der Freigabe:
 
-Nach E9 prüfen zusätzlich zwei Personen mit unterschiedlicher politischer Haltung die Formulierung von Frage und Beschreibung (B1 Nr. 4). Solange sie nicht feststehen, gilt die Freigabe der Betreiberin als vorläufig; das Ergebnis wird hier nachgetragen.
+- [x] Frage ist eine neutrale Ja/Nein-Frage, in der sich beide Seiten wiederfinden
+- [x] Beschreibung nennt keinen Lösungsweg und keine Partei
+- [x] Jede Quelle geöffnet, Zahl im Zielkonflikt bestätigt (zwei Quellen nur über Sekundärstellen, siehe unten)
+- [x] Zielkonflikte beider Seiten gleich stark formuliert
+- [x] Verwandte Themen passen (Haltung 2 unverändert mit 6, 2, 5, 9)
+
+**Zurückgestellt:** Die Formulierungsprüfung durch zwei Personen mit unterschiedlicher politischer Haltung (E9, B1 Nr. 4) hat **nicht stattgefunden**. Die Betreiberin hat sie in der Entwicklungsphase vorerst als erledigt vermerkt. Sie wird vor einem öffentlichen Start nachgeholt; das Ergebnis wird hier nachgetragen. Bis dahin sind die Haltungen nur in der geschlossenen Testphase sichtbar.
+
+Nur über Sekundärstellen geprüft (vor einem öffentlichen Start im Original nachsehen):
+
+- Zielkonflikt 1/ja: Metz-Peeters (2025) über die Pressemitteilung der Ruhr-Universität Bochum, nicht im Aufsatz selbst.
+- Zielkonflikt 1/nein (Fahrzeiten): Bauernschuster/Traxler (2021) über den frei zugänglichen Preprint, nicht die Verlagsfassung.
