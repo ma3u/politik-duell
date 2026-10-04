@@ -397,9 +397,9 @@ function pruefeAuswahl(roh) {
 }
 function antwortAusAuswahl(auswahl, themen, ursachen) {
   const thema = themen.find((t) => t.id === auswahl.thema_id);
-  const gewaehlt = auswahl.ursachen_ids.map((id) => ursachen.find((u) => u.id === id && u.thema_id === auswahl.thema_id));
-  if (!thema || gewaehlt.some((u) => !u)) throw new EingabeFehler("Diese Ursachen geh\xF6ren nicht zu diesem Thema.");
-  const liste = gewaehlt.map((u) => u.beschreibung).join("; ");
+  const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id));
+  if (!thema || !passt) throw new EingabeFehler("Diese Ursachen geh\xF6ren nicht zu diesem Thema.");
+  const n = auswahl.ursachen_ids.length;
   return {
     typ: "problem",
     nachfrage: null,
@@ -407,7 +407,7 @@ function antwortAusAuswahl(auswahl, themen, ursachen) {
     ursachen_ids: [
       ...auswahl.ursachen_ids
     ],
-    zusammenfassung: kurz(`${thema.name}: ${liste}`, 200),
+    zusammenfassung: kurz(`${thema.name}: ${n === 1 ? "eine Ursache" : `${n} Ursachen`} angetippt`, 200),
     stichwort: bereinigeStichwort(thema.name, thema.name),
     einschaetzung: null
   };
