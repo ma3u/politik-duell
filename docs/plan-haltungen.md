@@ -375,6 +375,7 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
      - Beispieldaten: `daten/beispiel/haltungen/` mit zwei vollständigen und einer unvollständigen Haltung (fiktive Parteien).
      - Noch offen: Haltungen in die manuelle Prompt-Evaluation aufnehmen (siehe „Tests“).
    - **4b Pilot-Haltungen** (E7) erfassen: zuerst Phase A (Frage, Beschreibung, verwandte Themen, Zielkonflikte) mit Freigabe durch die Betreiberin, danach Phase B (Positionen aus allen sieben Bundesprogrammen) in eigenem Pull Request.
+     - Phase A: Entwurf vom 4. 10. 2026 in `daten/haltungen/01–03`, Begründung, Quellen und Verworfenes in [`docs/haltungen.md`](haltungen.md). Wartet auf die Freigabe (`freigabe.datum`); danach Phase B.
 5. Tests mit Spielenden aus verschiedenen Lagern; danach über weitere Haltungen entscheiden.
 
 ## Entscheidungen (von der Betreiberin getroffen, 4. 10. 2026)
