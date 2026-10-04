@@ -1,4 +1,4 @@
-# Haltungen: Phase A (Frage, Beschreibung, Zielkonflikte)
+# Haltungen: Pilot (Phase A: Frage, Beschreibung, Zielkonflikte · Phase B: Positionen)
 
 Stand: 4. 10. 2026. Pilot-Haltungen nach Entscheidung E7 (`docs/plan-haltungen.md`). Festgelegt **ohne Blick in die Wahlprogramme** (technische Programmsperre `npm run phase-a` war aktiv). Regeln: [`docs/methode.md`](methode.md) → „Forderungen und Haltungen“, Format: [`daten/README.md`](../daten/README.md) → „`haltungen/`“.
 
@@ -80,3 +80,45 @@ Nur über Sekundärstellen geprüft (vor einem öffentlichen Start im Original n
 
 - Zielkonflikt 1/ja: Metz-Peeters (2025) über die Pressemitteilung der Ruhr-Universität Bochum, nicht im Aufsatz selbst.
 - Zielkonflikt 1/nein (Fahrzeiten): Bauernschuster/Traxler (2021) über den frei zugänglichen Preprint, nicht die Verlagsfassung.
+
+# Phase B: Positionen der Parteien
+
+Stand: 4. 10. 2026. Positionen aus den sieben Bundesprogrammen (Fassungen laut `parteien.json`, Prüfsummen stimmen; das BSW-Programm lag als lokale Kopie vor). Alle als **KI-Entwurf** (`ki_entwurf`, `geprueft: false`): im Spiel nur in der geschlossenen Testphase sichtbar. Alle 1544 Zitate des Katalogs (davon 13 neu) stehen wörtlich auf der angegebenen Seite (`npm run zitate:pruefen`).
+
+## Vorgehen
+
+1. **Gleiche Suche für alle:** dieselben Begriffe in allen sieben Programmen. Kein Treffer galt nicht als „keine Aussage“; erst nach dem Lesen des Kapitels und einer zweiten, weiteren Suche.
+   - *Tempolimit:* Tempolimit, Höchstgeschwindigkeit, Geschwindigkeitsbegrenzung, Geschwindigkeitsbeschränkung, Tempo 130, Tempo 120, freie Fahrt; zweite Suche: Geschwindigkeit, „Tempo “, Autobahn, Rasen.
+   - *Zuwanderung:* Zuwanderung, Einwanderung, Obergrenze, Begrenzung der Migration, Migration begrenz, Zuzug, irreguläre Migration, Asylzuwanderung; dazu die Seiten mit Migration, Asyl, Zuwanderung, Einwanderung gelesen (Sätze mit begrenz*, Obergrenze, Fachkräfte, Asylrecht, Zurückweisung u. a.).
+   - *Betreuung zu Hause:* Betreuungsgeld, Betreuungsgehalt, Erziehungsgehalt, Herdprämie, Wahlfreiheit, zu Hause/zuhause betreu*, Familiengeld, Erziehungsleistung, häusliche, „Eltern, die“; zweite Suche über alle Seiten: Fremd-/Eigen-/Selbstbetreuung, Betreuung oder Erziehung mit „zu Hause“ oder „selbst“, Erziehungsgeld, Familienarbeit, Care-Arbeit.
+2. **Zitat und Seite** aus dem Textauszug; Kurzfassung in neutralen Worten (höchstens 25 Wörter), nur was das Zitat trägt. Zitate ohne lange Auslassungen: Bei Zweispaltensatz (BSW) stehen im Textauszug fremde Sätze zwischen benachbarten, deshalb nur zusammenhängende Passagen.
+3. **Einordnung nicht blind:** Die Einordnung `ja`/`nein`/`teils` habe ich in Kenntnis der Partei vorgenommen. Die blinde Bestätigung durch zwei Prüfende (nur das Zitat, ohne Parteinamen) steht aus und ist Voraussetzung für `geprueft`.
+
+## Einordnungsregel für die Zuwanderung
+
+- **ja:** will die Zuwanderung insgesamt senken, auch über das Asylsystem hinaus.
+- **teils:** will einen Teil begrenzen (Asyl, irreguläre Migration) und einen anderen erleichtern oder erhalten (Arbeitsmigration) oder die Steuerung statt der Senkung betonen.
+- **nein:** will keine stärkere Begrenzung, lehnt Verschärfungen ab.
+
+## Ergebnis
+
+| Haltung | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 Tempolimit | Nein (S. 74) | Ja (S. 36) | Ja (S. 48) | Nein (S. 41) | Nein (S. 45) | Ja (S. 37) | Keine Aussage |
+| 2 Zuwanderung | Teils (S. 44) | Teils (S. 55) | Nein (S. 129) | Teils (S. 27) | Ja (S. 101) | Nein (S. 54) | Teils (S. 36) |
+| 3 Betreuung zu Hause | – | – | – | – | Ja (S. 148, nur Hinweis) | – | – |
+
+Hinweise zum Tempolimit: Die Linke fordert Tempo 120 auf Autobahnen (und innerorts Tempo 30), SPD und Grüne Tempo 130; die Kurzfassung nennt die Zahl. Das BSW nennt Autobahnen nur bei Raststättenpreisen und Güterverkehr (S. 29–30).
+
+**Grenzfälle für die blinde Prüfung (Haltung 2):** Die Einordnung dieser Zitate ist ein Urteil und gehört zuerst den Prüfenden vorgelegt:
+
+- *BSW (S. 36)*: „Asylrecht für wirklich Schutzbedürftige verteidigen, unkontrollierte Einwanderung beenden“ – `teils`. Andere Stellen derselben Seite („Zahl der hier ankommenden Flüchtlinge … immer noch viel zu hoch“) sprechen für `ja`; sie standen nicht in einem zusammenhängenden Zitat.
+- *Union (S. 44)*: Das Zitat belegt die Trennung von humanitärer Aufnahme und Fachkräfteeinwanderung und das „begrenzte Kontingent“; der Kern („faktischer Aufnahmestopp“, Zurückweisungen, S. 42–43) steht nicht im Zitat. Wer das als `ja` liest, hat dafür gute Gründe.
+- *SPD (S. 55)* `teils` und *Grüne (S. 129)* `nein`: Beide wollen Migration „steuern“; die Grünen lehnen ausdrücklich Asylrechtsverschärfungen ab, die SPD lehnt Pauschalzurückweisungen ab, will aber Fluchtmigration besser kontrollieren und konsequent abschieben.
+- *AfD (S. 101)*: `ja`, obwohl sie qualifizierte Zuwanderung „maßvoll“ begrüßt (S. 112, 114); das Zitat nennt die EU-Freizügigkeit als Ausnahme.
+
+## Befund: Haltung 3 erfüllt das Aufnahmekriterium nicht
+
+Nach Aufnahmekriterium 1 (`docs/plan-haltungen.md`, B1) muss die Frage in **mindestens drei** der sieben Bundesprogramme mit erkennbarer Position vorkommen. Bei „Betreuung zu Hause“ ist das nur bei der **AfD** der Fall (Betreuungsgehalt, S. 148: „… sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung erhalten“). Die anderen sechs Programme äußern sich zu einer Leistung für die Betreuung zu Hause nicht (Union, SPD, Grüne, FDP, Linke und BSW fördern Kita-Ausbau, Elterngeld und Kindergeld, nennen aber weder Betreuungsgeld noch Wahlfreiheit zwischen Kita und Zuhause).
+
+Eine Karte mit sechs Mal „Keine Aussage“ und einer klaren Position würde eine Partei hervorheben – genau das wollen Grundsatz 3 und das Aufnahmekriterium vermeiden. **Deshalb sind für Haltung 3 keine Positionen eingetragen.** Die Karte erscheint nicht; die Datei bleibt als Phase A stehen. Entscheidung der Betreiberin: Haltung 3 ersetzen (etwa durch eine Frage, die in mindestens drei Programmen vorkommt), zurückstellen oder bewusst mit dem Befund aufnehmen.
