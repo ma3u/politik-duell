@@ -96,6 +96,7 @@ Antwort (JSON):
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],
   "pauschal": "boolean (Pauschalurteil über eine Gruppe: keine Ursachenauswahl)",
+  "rueckmeldung": "string | null (bei wert und abschließender forderung: greift die Äußerung neutral auf; sonst fester Satz)",
   "zusammenfassung": "kurzer neutraler Satz zum Problem"
 }
 ```

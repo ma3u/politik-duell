@@ -10,11 +10,18 @@ import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
 
+/** Fester Satz zu einer Haltung, wenn die KI keine eigene Rückmeldung liefert. */
 const WERT_ANTWORT =
   'Das ist eine persönliche Haltung – darüber kann man verschieden denken. ' +
   'Magst du erzählen, wo dir das im Alltag begegnet?'
 
-/** Forderung ohne Alltagsproblem nach zwei Nachfragen: keine Wertung, neues Problem möglich. */
+/** Nach einem Pauschalurteil ohne Alltagsproblem: das Urteil nicht als „Forderung“ bestätigen. */
+const PAUSCHAL_ANTWORT = 'Gewertet werden hier Lösungen für konkrete Alltagsprobleme. Magst du eins nennen?'
+
+/**
+ * Fester Satz zu einer Forderung ohne Alltagsproblem nach zwei Nachfragen (keine Wertung, neues Problem
+ * möglich) – wenn die KI keine eigene Rückmeldung liefert.
+ */
 function forderungAntwort(themaName: string | null): string {
   return (
     'Deine Forderung haben wir verstanden' +
@@ -130,7 +137,11 @@ export function Runde({
       const thema = daten.themen.find((t) => t.id === analyse.thema_id)?.name ?? null
       setVerlauf([])
       setZusammenfassung(null)
-      setHinweis(analyse.typ === 'wert' ? WERT_ANTWORT : forderungAntwort(thema))
+      // Die KI greift die Äußerung auf; ohne brauchbare Rückmeldung (oder bei Pauschalurteilen) ein fester Satz.
+      setHinweis(
+        analyse.rueckmeldung ||
+          (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
+      )
     } else {
       onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten))
     }

@@ -312,13 +312,19 @@ Einordnung ("typ"):
   in deinem Alltag \xE4ndern?\u201C. Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung geh\xF6rt, sonst null; "ursachen_ids": [].
 - "wert": eine pers\xF6nliche Haltung oder ein Wert (z. B. \u201EMir ist Gerechtigkeit wichtig\u201C), kein Problem.
-  Dann "thema_id": null und "ursachen_ids": [].
+  Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Haltung in eigenen
+  Worten neutral aufgreifen, sagen, dass man dar\xFCber verschieden denken kann, und fragen, wo sie der Person im
+  Alltag begegnet \u2013 z. B. \u201EHeimat ist dir wichtig \u2013 dar\xFCber kann man verschieden denken. Wo begegnet dir das im
+  Alltag?\u201C. Stimme nicht zu und widersprich nicht. Wertet die Haltung eine Gruppe von Menschen ab, gib sie nicht
+  wieder und frag nur nach dem Alltag.
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.
   Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und \xFCbernimm es nicht in "nachfrage",
   "zusammenfassung" oder "stichwort".
   Sonst ist "pauschal" immer false.
+
+Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinweis im Gespr\xE4ch).
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
@@ -343,11 +349,11 @@ ${katalog}
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null}`;
+ "einschaetzung": string | null, "rueckmeldung": string | null}`;
 }
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
+  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
   return [
     {
       role: "system",
@@ -432,6 +438,12 @@ function ohneParteinamen(text, parteien) {
   const muster = new RegExp(`(?:(?<!\\p{L})[Dd](?:ie|er|en|em|es)\\s+)?(?<![\\p{L}\\d])(?:${alternativen})(?:n|en|s)?(?![\\p{L}\\d])`, "gu");
   return text.replace(muster, "[Partei]");
 }
+var MAX_RUECKMELDUNG = 240;
+function bereinigeRueckmeldung(roh, ohneLinks) {
+  const text = ohneLinks(kurz(roh, MAX_RUECKMELDUNG + 1));
+  if (text.length < 10 || text.length > MAX_RUECKMELDUNG || text.includes("[Partei]") || pruefeText(text)) return null;
+  return text;
+}
 var kurz = (s, max) => typeof s === "string" ? s.trim().replace(/\s+/g, " ").slice(0, max) : "";
 function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   const r = roh && typeof roh === "object" ? roh : {};
@@ -450,9 +462,10 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   const stichwortRoh = typeof r.stichwort === "string" ? ohneLinks(r.stichwort).replace(/\[Partei\]/g, "").trim() : "";
   const stichwort = bereinigeStichwort(stichwortRoh, zusammenfassung.replace(/\[Partei\]/g, ""));
   if (typ !== "problem") {
+    const offen = typ === "forderung" ? nachfrage || null : null;
     return {
       typ,
-      nachfrage: typ === "forderung" ? nachfrage || null : null,
+      nachfrage: offen,
       // Bei einer Forderung: erkanntes Thema für die Ursachenauswahl (nicht bei Pauschalurteilen).
       thema_id: typ === "forderung" && !pauschal ? erkanntesThema?.id ?? null : null,
       ursachen_ids: [],
@@ -461,7 +474,8 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
       } : {},
       zusammenfassung,
       stichwort,
-      einschaetzung: null
+      einschaetzung: null,
+      rueckmeldung: offen || pauschal ? null : bereinigeRueckmeldung(r.rueckmeldung, ohneLinks)
     };
   }
   const thema = erkanntesThema;
