@@ -60,6 +60,22 @@ Regeln:
 2. **Zweite Suche bei `keine_massnahme`:** mit eigenen Begriffen im PDF suchen, das passende Kapitel lesen und mit der Trefferzahl (`treffer` am Eintrag, aus der Treffermatrix der Erfassung) abgleichen. Was gesucht und gelesen wurde, kommt in `pruefung.zweite_suche`.
 3. **Ergebnis** mit „Zusammenfassung kopieren“ als Kommentar in den Pull Request; Einwände als Zeilenkommentar. Sind Bewertung übernommen und alle Belege einer Partei in Ordnung, `geprueft: true` setzen und das Datum der Belegprüfung eintragen (`"pruefung": { "belege_geprueft": "JJJJ-MM-TT" }`, bei `keine_massnahme` zusätzlich `zweite_suche`) – erst dann zählt das Thema für diese Partei. Ohne diesen Nachweis lehnt die Prüfung `geprueft` ab.
 
+### Haltungen prüfen
+
+Für Haltungen (`haltungen/`) gibt es dieselben Stufen wie bei Maßnahmen, aber andere Hilfen, weil es keine Punkte zu bewerten gibt: Die Belege prüft die Betreiberin, die Einordnung Ja/Nein/Teils bestätigen zwei Prüfende, die die Partei nicht sehen, und die Formulierung der Frage prüfen zwei Personen mit unterschiedlicher politischer Haltung (E9). Eine Haltung ist erst `geprueft`, wenn alles davon erledigt ist.
+
+`npm run haltung:pruefliste` erzeugt drei eigenständige HTML-Seiten in `pruefung/` (nicht im Repo; mit `-- --lokal <ordner>` aus lokalen Programm-PDFs). Eingaben bleiben im Browser gespeichert, die Ergebnisse werden kopiert oder als Datei geladen.
+
+| Seite | Wer | Was |
+| --- | --- | --- |
+| `haltungen-formulierung.html` | zwei Personen mit unterschiedlicher politischer Haltung | Fragen, Beschreibungen und Ziele – **ohne** die Positionen. Ist die Frage fair gestellt, finden sich beide Seiten wieder, fehlt ein Argument? Die Antworten kommen zurück als Text. Ändert sich daraufhin Frage, Beschreibung oder ein Ziel, braucht die Haltung eine neue `freigabe`. |
+| `haltungen-blind.html` | zwei Prüfende, die die Partei nicht sehen sollen | Frage und Zitat ohne Parteinamen (stattdessen „[Partei]“), gemischt, ohne Kurzfassung und ohne die Einordnung des Entwurfs. Sie wählen Ja, Nein, Teils oder Unklar; „Antworten kopieren“ liefert einen kurzen JSON-Text ohne Namen. |
+| `haltungen-belege.html` | die Betreiberin | Je Position Link auf die PDF-Seite, Zitat, Kurzfassung, Auslassungen im Zitat und Prüfpunkte (Link, wörtlich, Kapitel schränkt nicht ein, Kurzfassung neutral). Bei „Keine Aussage“: eigene Suche und gelesenes Kapitel. Das Ergebnis liefert je geprüfter Position die Zeile `pruefung` für die Datei. |
+
+`npm run haltung:auswerten -- antwort-1.json antwort-2.json` vergleicht die Antworten der Blindblätter mit dem Entwurf und zeigt, welche Positionen mindestens zwei Prüfende bestätigen (`einordnung_bestaetigt`). Abweichungen werden **nicht gemittelt**, sondern geklärt: Wortlaut ändern oder den Maßstab schärfen, dann neu beantworten lassen. Jede Antwort trägt eine Prüfsumme der Fragen und Zitate (`stand`); ändert sich der Katalog nach dem Versand, lehnt die Auswertung sie ab.
+
+Wer die Blindblätter beantwortet, sollte nicht zugleich die Belege prüfen, und die Parteizugehörigkeit der Zitate nicht kennen. Namen der Prüfenden stehen nie im Repository, nur die Zahl `einordnung_bestaetigt` und der Vermerk in `docs/haltungen.md`. Die Seiten sind unabhängig von der App; die Prüfseite für Maßnahmen (`#/pruefen/…`) deckt Haltungen nicht ab.
+
 ## Programme
 
 Grundlage sind die Wahlprogramme zur Bundestagswahl 2025. Neuere Grundsatzprogramme gibt es bisher bei keiner der Parteien (Stand September 2026: SPD, FDP und Linke wollen 2027 neue beschließen; CDU 2024, Grüne 2020, AfD 2016). Kommt ein neues Programm hinzu, `programm_url`, `programm_stand` und die Prüfsumme anpassen (`npm run programm:sichern -- <url>`) – die Prüfung meldet dann alle älteren Einträge zur Neuprüfung.

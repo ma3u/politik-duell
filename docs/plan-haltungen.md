@@ -376,6 +376,7 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
      - Noch offen: Haltungen in die manuelle Prompt-Evaluation aufnehmen (siehe „Tests“).
    - **4b Pilot-Haltungen** (E7) erfassen: zuerst Phase A (Frage, Beschreibung, verwandte Themen, Zielkonflikte) mit Freigabe durch die Betreiberin, danach Phase B (Positionen aus allen sieben Bundesprogrammen) in eigenem Pull Request.
      - Phase A: Entwurf vom 4. 10. 2026 in `daten/haltungen/01–03`, Begründung, Quellen und Verworfenes in [`docs/haltungen.md`](haltungen.md). Freigegeben am 4. 10. 2026; die Formulierungsprüfung durch zwei Personen (E9) ist in der Entwicklungsphase zurückgestellt und wird vor dem öffentlichen Start nachgeholt. Phase B (Positionen aus den sieben Bundesprogrammen, KI-Entwurf, nicht blind eingeordnet) ist für Tempolimit und Zuwanderung erfasst; **Haltung 3 (Betreuung zu Hause) erfüllt das Aufnahmekriterium nicht** (nur die AfD äußert sich) und hat deshalb keine Positionen – von der Betreiberin am 4. 10. 2026 zurückgestellt. Befund, Suchbegriffe und Grenzfälle in [`docs/haltungen.md`](haltungen.md).
+     - Prüfwerkzeuge (`npm run haltung:pruefliste`, `haltung:auswerten`): Belegprüfung, Blindblatt für die Einordnung und Formulierungsblatt für E9, siehe `daten/README.md` → „Haltungen prüfen“.
 5. Tests mit Spielenden aus verschiedenen Lagern; danach über weitere Haltungen entscheiden.
 
 ## Entscheidungen (von der Betreiberin getroffen, 4. 10. 2026)

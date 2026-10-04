@@ -92,7 +92,7 @@ Stand: 4. 10. 2026. Positionen aus den sieben Bundesprogrammen (Fassungen laut `
    - *Zuwanderung:* Zuwanderung, Einwanderung, Obergrenze, Begrenzung der Migration, Migration begrenz, Zuzug, irreguläre Migration, Asylzuwanderung; dazu die Seiten mit Migration, Asyl, Zuwanderung, Einwanderung gelesen (Sätze mit begrenz*, Obergrenze, Fachkräfte, Asylrecht, Zurückweisung u. a.).
    - *Betreuung zu Hause:* Betreuungsgeld, Betreuungsgehalt, Erziehungsgehalt, Herdprämie, Wahlfreiheit, zu Hause/zuhause betreu*, Familiengeld, Erziehungsleistung, häusliche, „Eltern, die“; zweite Suche über alle Seiten: Fremd-/Eigen-/Selbstbetreuung, Betreuung oder Erziehung mit „zu Hause“ oder „selbst“, Erziehungsgeld, Familienarbeit, Care-Arbeit.
 2. **Zitat und Seite** aus dem Textauszug; Kurzfassung in neutralen Worten (höchstens 25 Wörter), nur was das Zitat trägt. Zitate ohne lange Auslassungen: Bei Zweispaltensatz (BSW) stehen im Textauszug fremde Sätze zwischen benachbarten, deshalb nur zusammenhängende Passagen.
-3. **Einordnung nicht blind:** Die Einordnung `ja`/`nein`/`teils` habe ich in Kenntnis der Partei vorgenommen. Die blinde Bestätigung durch zwei Prüfende (nur das Zitat, ohne Parteinamen) steht aus und ist Voraussetzung für `geprueft`.
+3. **Einordnung nicht blind:** Die Einordnung `ja`/`nein`/`teils` habe ich in Kenntnis der Partei vorgenommen. Die blinde Bestätigung durch zwei Prüfende (nur das Zitat, ohne Parteinamen) steht aus und ist Voraussetzung für `geprueft`. Ablauf und Werkzeuge: `daten/README.md` → „Haltungen prüfen“ (`npm run haltung:pruefliste`, `npm run haltung:auswerten`).
 
 ## Einordnungsregel für die Zuwanderung
 
@@ -122,3 +122,16 @@ Hinweise zum Tempolimit: Die Linke fordert Tempo 120 auf Autobahnen (und inneror
 Nach Aufnahmekriterium 1 (`docs/plan-haltungen.md`, B1) muss die Frage in **mindestens drei** der sieben Bundesprogramme mit erkennbarer Position vorkommen. Bei „Betreuung zu Hause“ ist das nur bei der **AfD** der Fall (Betreuungsgehalt, S. 148: „… sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung erhalten“). Die anderen sechs Programme äußern sich zu einer Leistung für die Betreuung zu Hause nicht (Union, SPD, Grüne, FDP, Linke und BSW fördern Kita-Ausbau, Elterngeld und Kindergeld, nennen aber weder Betreuungsgeld noch Wahlfreiheit zwischen Kita und Zuhause).
 
 Eine Karte mit sechs Mal „Keine Aussage“ und einer klaren Position würde eine Partei hervorheben – genau das wollen Grundsatz 3 und das Aufnahmekriterium vermeiden. **Deshalb sind für Haltung 3 keine Positionen eingetragen.** Die Karte erscheint nicht; die Datei bleibt als Phase A stehen. **Entscheidung der Betreiberin (4. 10. 2026): zurückgestellt.** Die Datei bleibt als Phase A liegen und kommt ohne Positionen nicht ins Spiel. Eine Ersatzfrage, die in mindestens drei Programmen vorkommt, wäre ein eigener Schritt mit eigener Phase A.
+
+## Prüfung: Stand 4. 10. 2026
+
+Für Haltung 1 (Tempolimit) und 2 (Zuwanderung) hat die Betreiberin am 4. 10. 2026 gemeldet, dass die Prüfung abgeschlossen ist. Grundlage dieses Vermerks ist ihre Mitteilung; die Rohdaten (Antwortdateien der Prüfenden, ausgefüllte Seiten) liegen nicht im Repository und wurden nicht mit `npm run haltung:auswerten` ausgewertet.
+
+| Schritt | Ergebnis |
+| --- | --- |
+| Sekundärquellen im Original (Metz-Peeters 2025, Bauernschuster/Traxler 2021) | geprüft, Zahlen stimmen |
+| Formulierung nach E9 (zwei Personen) | beide stimmen allem zu, keine Änderungswünsche. Die politische Haltung der beiden ist hier nicht festgehalten; sie ist nachzutragen, wenn die Prüfung als Beleg für Ausgewogenheit zitiert wird |
+| Blinde Einordnung (zwei Prüfende, nur Frage und Zitat ohne Parteinamen) | beide bestätigen alle 13 Einordnungen, auch die Grenzfälle der Zuwanderung (BSW, Union, SPD, Grüne) – `einordnung_bestaetigt: 2` |
+| Belege (Betreiberin) | alle 14 Positionen korrekt belegt – `belege_geprueft: 2026-10-04`; bei „Keine Aussage“ (BSW, Tempolimit) mit Vermerk zur zweiten Suche |
+
+Damit sind die Positionen beider Haltungen `geprueft: true`. `ki_entwurf` bleibt als Herkunftsangabe stehen. Sobald der Seed in Supabase liegt, erscheinen die Karten ohne Hinweis auf einen KI-Entwurf – im Spiel aber weiterhin nur, wo die App freigeschaltet ist (geschlossene Testphase, `VITE_OFFEN`). Haltung 3 hat keine Positionen und bleibt zurückgestellt.
