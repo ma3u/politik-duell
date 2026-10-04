@@ -19,6 +19,8 @@ import {
 export const MAX_NACHFRAGEN = 2
 export const MAX_NACHRICHTEN = 2 * MAX_NACHFRAGEN + 1
 export const MAX_TEXTLAENGE = 500
+/** Ergänzte Frage, wenn die KI eine Forderung nur wiedergibt, ohne nachzufragen. */
+export const NACHFRAGE_FORDERUNG = 'Was soll sich dadurch in deinem Alltag ändern?'
 /** Nachfrage, wenn das Thema klar ist, aber keine Ursache erkennbar. */
 export const NACHFRAGE_URSACHE = 'Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.'
 
@@ -56,9 +58,10 @@ Regeln:
 Einordnung ("typ"):
 - "problem": ein konkretes Alltagsproblem (z. B. „Ich finde keine bezahlbare Wohnung“).
 - "forderung": eine politische Forderung ohne konkretes Alltagsproblem (z. B. „Weniger Steuern!“).
-  Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle genau eine kurze,
-  freundliche Frage nach dem Alltag dahinter, z. B. „Du möchtest weniger Steuern zahlen. Was soll sich dadurch
-  in deinem Alltag ändern?“. Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
+  Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle danach immer genau eine
+  kurze, freundliche Frage nach dem Alltag dahinter, z. B. „Du möchtest weniger Steuern zahlen. Was soll sich
+  dadurch in deinem Alltag ändern?“. Die Wiedergabe allein reicht nie – "nachfrage" endet immer mit der Frage.
+  Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung gehört, sonst null; "ursachen_ids": [].
 - "wert": eine persönliche Haltung oder ein Wert (z. B. „Mir ist Gerechtigkeit wichtig“), kein Problem.
   Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1–2 kurze Sätze: die Haltung in eigenen
@@ -267,6 +270,8 @@ export function bereinigeAntwort(
   if (typ === 'forderung') {
     if (nachfragen >= MAX_NACHFRAGEN) nachfrage = ''
     else if (!nachfrage) nachfrage = 'Was läuft in deinem Alltag konkret schief?'
+    // Gibt die KI die Forderung nur wieder („Du möchtest, dass die Mieten sinken.“), fehlt die Frage – ergänzen.
+    else if (!nachfrage.includes('?')) nachfrage = `${nachfrage.replace(/[.!…]*$/, '')}. ${NACHFRAGE_FORDERUNG}`
   }
   const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null
 
@@ -314,7 +319,8 @@ export function bereinigeAntwort(
     const fragen = nachfragen < MAX_NACHFRAGEN
     return {
       typ,
-      nachfrage: fragen ? nachfrage || NACHFRAGE_URSACHE : null,
+      // Ohne Frage (nur eine Feststellung) die Standardfrage nehmen.
+      nachfrage: fragen ? (nachfrage.includes('?') ? nachfrage : NACHFRAGE_URSACHE) : null,
       thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung,

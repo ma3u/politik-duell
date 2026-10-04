@@ -4,6 +4,7 @@ import {
   antwortAusAuswahl,
   bereinigeAntwort,
   EingabeFehler,
+  NACHFRAGE_FORDERUNG,
   NACHFRAGE_URSACHE,
   nutzerNachrichten,
   ohneParteinamen,
@@ -148,6 +149,18 @@ describe('bereinigeAntwort', () => {
   it('gibt bei Haltungen kein Thema weiter', () => {
     const a = bereinige({ typ: 'wert', thema_id: 2, ursachen_ids: [202], zusammenfassung: 'x' })
     expect(a).toMatchObject({ typ: 'wert', nachfrage: null, thema_id: null, ursachen_ids: [] })
+  })
+
+  it('ergänzt die Frage, wenn die KI eine Forderung nur wiedergibt', () => {
+    const a = bereinige({ typ: 'forderung', nachfrage: 'Du möchtest, dass die Mieten sinken.', thema_id: 2, zusammenfassung: 'x' })
+    expect(a.nachfrage).toBe(`Du möchtest, dass die Mieten sinken. ${NACHFRAGE_FORDERUNG}`)
+    const b = bereinige({ typ: 'forderung', nachfrage: 'Du willst weniger Steuern. Was soll sich ändern?', zusammenfassung: 'x' })
+    expect(b.nachfrage).toBe('Du willst weniger Steuern. Was soll sich ändern?')
+  })
+
+  it('nimmt die Standardfrage, wenn eine Nachfrage zur Ursache keine Frage ist', () => {
+    const a = bereinige({ typ: 'problem', thema_id: 2, nachfrage: 'Die Miete ist zu hoch.', zusammenfassung: 'x' })
+    expect(a.nachfrage).toBe(NACHFRAGE_URSACHE)
   })
 
   it('ergänzt eine fehlende Nachfrage', () => {

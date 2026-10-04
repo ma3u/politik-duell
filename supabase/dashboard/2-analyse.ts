@@ -278,6 +278,7 @@ var MAX_AUSWAHL = 3;
 var MAX_NACHFRAGEN = 2;
 var MAX_NACHRICHTEN = 2 * MAX_NACHFRAGEN + 1;
 var MAX_TEXTLAENGE = 500;
+var NACHFRAGE_FORDERUNG = "Was soll sich dadurch in deinem Alltag \xE4ndern?";
 var NACHFRAGE_URSACHE = "Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.";
 var ROLLEN_TEXT = {
   mieter: "Mieter:in",
@@ -307,9 +308,10 @@ Regeln:
 Einordnung ("typ"):
 - "problem": ein konkretes Alltagsproblem (z. B. \u201EIch finde keine bezahlbare Wohnung\u201C).
 - "forderung": eine politische Forderung ohne konkretes Alltagsproblem (z. B. \u201EWeniger Steuern!\u201C).
-  Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle genau eine kurze,
-  freundliche Frage nach dem Alltag dahinter, z. B. \u201EDu m\xF6chtest weniger Steuern zahlen. Was soll sich dadurch
-  in deinem Alltag \xE4ndern?\u201C. Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
+  Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle danach immer genau eine
+  kurze, freundliche Frage nach dem Alltag dahinter, z. B. \u201EDu m\xF6chtest weniger Steuern zahlen. Was soll sich
+  dadurch in deinem Alltag \xE4ndern?\u201C. Die Wiedergabe allein reicht nie \u2013 "nachfrage" endet immer mit der Frage.
+  Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung geh\xF6rt, sonst null; "ursachen_ids": [].
 - "wert": eine pers\xF6nliche Haltung oder ein Wert (z. B. \u201EMir ist Gerechtigkeit wichtig\u201C), kein Problem.
   Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Haltung in eigenen
@@ -456,6 +458,7 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   if (typ === "forderung") {
     if (nachfragen >= MAX_NACHFRAGEN) nachfrage = "";
     else if (!nachfrage) nachfrage = "Was l\xE4uft in deinem Alltag konkret schief?";
+    else if (!nachfrage.includes("?")) nachfrage = `${nachfrage.replace(/[.!…]*$/, "")}. ${NACHFRAGE_FORDERUNG}`;
   }
   const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null;
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120));
@@ -496,7 +499,8 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
     const fragen = nachfragen < MAX_NACHFRAGEN;
     return {
       typ,
-      nachfrage: fragen ? nachfrage || NACHFRAGE_URSACHE : null,
+      // Ohne Frage (nur eine Feststellung) die Standardfrage nehmen.
+      nachfrage: fragen ? nachfrage.includes("?") ? nachfrage : NACHFRAGE_URSACHE : null,
       thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung,
