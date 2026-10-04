@@ -1,0 +1,21 @@
+{
+  "blind_pruefsumme": "5ec3a2c6f1f3205ac5b79d7e781c85f255d0a2b01f15a8258b2925be91fa563f",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M47", "instrument": "I4", "ursachen": [1801] },
+    { "kennung": "M48", "instrument": "I6", "ursachen": [1801] },
+    { "kennung": "M49", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M50", "instrument": "I5", "ursachen": [1801] },
+    { "kennung": "M51", "instrument": "I8", "ursachen": [1805] },
+    { "kennung": "M52", "instrument": "I1", "ursachen": [1801] },
+    { "kennung": "M53", "instrument": "I3", "ursachen": [1801] }
+  ]
+}
+
+Hinweise:
+- Alle sieben Kennungen passen auf bisherige Instrumente derselben Ebene (Bund); keine neuen Instrumente nötig.
+- Alle vorgeschlagenen Ursachen bestätigt (Regel 1 für 1801, Regel 7 für 1805 bei M51: Deiche und Dämme). Keine offenen Ursachen in diesen Kennungen.
+- M47 (Verbrenner-Verbot kippen) wie M15/M30/M32 zu I4; M49 und M53 (CO2-Preis bzw. Heizungsgesetz abschaffen) wie M07/M18/M25 zu I3.
+- M48 (Fernwärme auf Erneuerbare, Geothermie) zu I6 (klimafreundliche Wärmeversorgung) statt I1, da Wärmeversorgung wie M03/M05.
+- Grenzfall M50: Förderung von CCS/CCU über Superabschreibungen/Kredite geht über das bloße Ermöglichen (I5) hinaus; die Bewertung (Wirkung gemischt, nur langfristig auf Hitze) fällt aber gleich aus, daher I5.
+- Grenzfall M52: Repowering ist Ausbau erneuerbarer Energien (I1); die Wirkung ist kleiner als ein allgemeiner Ausbau, bei Wirksamkeit 1 aber nicht anders zu bewerten.

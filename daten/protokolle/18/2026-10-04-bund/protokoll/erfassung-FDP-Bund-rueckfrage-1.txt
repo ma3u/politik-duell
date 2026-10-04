@@ -1,0 +1,25 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Einheitlicher europäischer Emissionshandel als Leitinstrument der Klimapolitik, mit global angestrebtem Preis für Treibhausgase", "ursachen_ids": [1801, 1802], "buendel": "CO₂-Bepreisung und Emissionshandel", "zitat": "Dafür wollen wir einen einheitlichen europäischen Emissionshandel als Leitinstrument der Klimapolitik etablieren.", "seite": 40 },
+    { "beschreibung": "Nationales Klimaneutralitätsziel 2045 im Klimaschutzgesetz durch das europäische Ziel 2050 ersetzen", "ursachen_ids": [1801, 1802], "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen", "zitat": "Da nationale Sonderziele im Rahmen des europäischen Emissionshandels keinerlei zusätzlichen Nutzen für den Klimaschutz haben können, wollen wir das Ziel der Klimaneutralität bis 2045 im deutschen Klimaschutzgesetz durch das europäische Ziel der Klimaneutralität bis 2050 ersetzen.", "seite": 40 },
+    { "beschreibung": "Abscheidung und Speicherung von Treibhausgasen (CCS/CCU) diskriminierungsfrei als Klimaschutz-Option ermöglichen", "ursachen_ids": [1801, 1802], "buendel": "CO₂-Abscheidung und Negativemissionen", "zitat": "Die Abscheidung und Speicherung von Treibhausgasemissionen durch Carbon Capture and Storage (CCS) und Carbon Capture and Utilization (CCU) wollen wir diskriminierungsfrei als Klimaschutz-Option ermöglichen", "seite": 40 },
+    { "beschreibung": "Heizungsgesetz vollständig auslaufen lassen; stattdessen Zertifikatehandel", "ursachen_ids": [1801, 1802], "buendel": "Wärme und Gebäude", "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.", "seite": 45 },
+    { "beschreibung": "Faktisches Verbrenner-Verbot ab 2035 umgehend aufheben", "ursachen_ids": [1801, 1802], "buendel": "Verkehr und Antriebe", "zitat": "Deshalb setzen wir uns für eine umgehende Aufhebung des faktischen Verbrenner-Verbots ab dem Jahr 2035 […] ein", "seite": 40 },
+    { "beschreibung": "Erneuerbare Energien ohne EEG-Subventionen für neue Anlagen vollständig in den Markt überführen", "ursachen_ids": [1801, 1802], "buendel": "Ausbau erneuerbarer Stromerzeugung", "zitat": "Wir Freie Demokraten wollen die erneuerbaren Energien vollständig in den Markt überführen. Da auf diese bereits heute mehr als 60 Prozent der Stromproduktion entfallen, sind die EEG-Subventionen für neue Anlagen nicht mehr zu rechtfertigen.", "seite": 18 },
+    { "beschreibung": "Bau neuer Kernkraftwerke und Wiederinbetriebnahme vorhandener rechtlich ermöglichen, ohne Subventionen", "ursachen_ids": [1801, 1802], "buendel": "Kernenergie", "zitat": "Wir Freie Demokraten wollen die Nutzung klimafreundlicher Zukunftstechnologien wie Kernfusion und sicherer Kernkraftwerke ohne Subventionen ermöglichen.", "seite": 18 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1803, "seiten": [44], "grund": "Nachverdichtung/Bauflächen (S. 44) ohne Hitze- oder Kühlungsbezug; kein Stadtgrün oder Hitzeschutz im Programm." },
+    { "ursache": 1804, "seiten": [44], "grund": "Keine Entsiegelung, Schwammstadt oder Regenwasserzusage; Bauflächenausweisung ist keine Maßnahme dazu." },
+    { "ursache": 1805, "seiten": [24], "grund": "Kein Hochwasserschutz im Programm; Katastrophenschutz (S. 24) ohne Hochwasserbezug (R8)." },
+    { "ursache": 1806, "seiten": [18, 20, 24], "grund": "Treffer betreffen Eigenverantwortung bei Arbeitslosenversicherung und Katastrophenhilfe-Behörde; nichts zu Elementarschadenversicherung." }
+  ]
+}
+
+Protokoll
+Gelesen: Seiten 17, 18, 39-46 (Kapitel Nachhaltigkeit, Energie, Bauen/Wohnen, Landwirtschaft/Wald), Fundstellen S. 13, 20, 24 über Auszüge und Textsuche (hitze, hochwasser, versicher, starkregen, katastroph ohne einschlägige Treffer).
+Nicht erfasst: S. 13 (Green Deal, Berichtspflichten abschaffen: Bürokratieabbau, kein Klimainstrument); S. 17 (Energiesteuern abschmelzen, CO2-Preis ersetzt Steuern: gleiches Bündel wie Emissionshandel, S. 40 gewählt); S. 18 Kapazitätsmarkt Gaskraftwerke (Versorgungssicherheit, kein klares Klimabezug); S. 40 Aufforstungszertifikate (Teil des CCS-Satzes); S. 42 E-Fuels (Hinweis Verkehr, Bündel schon belegt); S. 45 Klimadividende (Ausgleich, kein Instrument zu den Ursachen); S. 46 klimaresilienter Waldumbau (kein Siedlungsbezug, Bekenntnis zu Waldumbau, keine Zusage).
+Rückfrage 1: Alle 7 Maßnahmen fallen unter R1 und tragen jetzt 1801 und 1802.
+Richtungen ohne Maßnahme: Hitzeanpassung, Gesundheitsschutz, Stadtklima, Regenwasser, Hochwasser, Elementarversicherung.

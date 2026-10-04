@@ -1,0 +1,24 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Städtebauförderung zur Klimaanpassung: Begrünung, Entsiegelung (Schwammstadt) und kühlende öffentliche Räume in Städten.", "ursachen_ids": [1803, 1804], "zitat": "Wir wollen eine Städtebauförderung zur Anpassung an den Klimawandel, um den Städten zu ermöglichen, grüne Infrastruktur zu schaffen und hitzeresiliente Städteplanung umzusetzen.", "seite": 34 },
+    { "beschreibung": "Vorsorge gegen Klimafolgen wie Hitzewellen im Bevölkerungsschutz stärken.", "ursachen_ids": [1801], "ursachen_offen": [1802], "zitat": "Wir verbessern den Bevölkerungsschutz und die Katastrophenhilfe. Wir stärken die Vorsorge gegen Klimafolgen wie extreme Niederschläge, Hitzewellen und Dürre.", "seite": 46 },
+    { "beschreibung": "Bund unterstützt Feuerwehren bei komplexen Gefahrenlagen, etwa Hochwasserschutz.", "ursachen_ids": [], "ursachen_offen": [1805], "zitat": "Wir werden weiter für eine solide ergänzende Ausstattung für die Feuerwehren sorgen. Wir wollen, dass der Bund hier hilft, auf komplexe Gefahrenlagen vorbereitet zu sein, etwa beim Hochwasserschutz und dem CBRN-Einsatz.", "seite": 46 },
+    { "beschreibung": "Kommunale Wärmepläne für klimaneutrale Wärmeversorgung fördern.", "ursachen_ids": [1801, 1802], "buendel": "Wärme und Gebäude", "zitat": "Wir wollen lokale Wärmepläne fördern, die eine klimafreundliche und klug geplante Energieversorgung auf kommunaler Ebene sicherstellen.", "seite": 33 },
+    { "beschreibung": "Mittel aus Aktionsprogramm Natürlicher Klimaschutz flächendeckend einsetzen, um Wälder, Moore, Flussauen und Stadtgrün zu schützen.", "ursachen_ids": [1801, 1802, 1803], "buendel": "Natürliche Kohlenstoffspeicher (Wald, Moore, Böden)", "zitat": "Mittel aus dem Aktionsprogramm Natürlicher Klimaschutz und dem Naturschutzfonds sollen flächendeckend eingesetzt werden, um Wälder, Moore, Flussauen oder Stadtgrün zu schützen.", "seite": 53 },
+    { "beschreibung": "Windkraft und Fotovoltaik konsequent ausbauen und mit Speichern einbinden.", "ursachen_ids": [1801, 1802], "buendel": "Ausbau erneuerbarer Stromerzeugung", "zitat": "Ihr konsequenter Ausbau und die Einbindung von Speichern macht unsere Energieversorgung sicher und dauerhaft bezahlbar.", "seite": 34 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1802, "seiten": [34, 46], "grund": "Nur S. 46 (Vorsorge gegen Hitzewellen) als offene Zuordnung; keine Hitzeaktionspläne, Hitzewarnung oder Pflege-Hitzeschutz." },
+    { "ursache": 1806, "seiten": [18, 26, 46], "grund": "Treffer sind Arbeitslosenrückversicherung, Sozialversicherungspflicht, Katastrophenhilfe ohne Versicherungsbezug; keine Elementarschadenversicherung." },
+    { "ursache": 1805, "seiten": [46, 53], "grund": "Nur Feuerwehr-Ausstattung (offen zugeordnet); Flussauen S. 53 ohne Hochwasserbezug." },
+    { "ursache": 1804, "seiten": [22, 34], "grund": "Bauland S. 22 betrifft Einheimischenmodelle; Entsiegelung nur in der Städtebauförderung (S. 34, erfasst)." }
+  ]
+}
+
+Protokoll
+Gelesen: S. 33-35, 46, 53 sowie Fundstellen-Auszüge. Inhaltsverzeichnis nicht gesondert; Volltext per Suche nach hitze, hochwasser, elementar, klimaanpass geprüft.
+Nicht erfasst: S. 33 Bekenntnis zu Klimazielen/Green Deal (kein Instrument); S. 34 CO2-Preis/Klimageld (Ausgleich, Bekenntnis zum bestehenden Preis); S. 6, 8, 11, 16 allgemeine Energie-/Wirtschaftsaussagen; S. 53 Ziele der Klimaschutzpolitik; S. 54, 61, 65 Landwirtschaft/Außenpolitik (kein Hitzebezug im Inland); S. 46 Sirenen/Warn-Apps ohne Hitzebezug (R3).
+
+Rückfrage 1: Neue R1 angewendet. 1802 ergänzt bei den drei Klimaschutz-Maßnahmen (Wärmepläne, Natürlicher Klimaschutz, Windkraft/Fotovoltaik). Hitzeanpassung (S. 46) bleibt bei 1801 mit offen 1802; Städtebauförderung unverändert.

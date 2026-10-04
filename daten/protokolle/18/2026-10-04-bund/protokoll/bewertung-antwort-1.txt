@@ -1,0 +1,66 @@
+{
+  "blind_pruefsumme": "ba489bf1d274416bbe9b54572dc64f4eee63ced1f06f9ed39920095a61d15287",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Treibhausgase senken durch Kohleausstieg, Ausbau erneuerbarer Energien und verbindliche Sektorziele (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Weniger Emissionen bremsen die Zunahme von Hitzeextremen, das ist belegt. Der deutsche Anteil an den weltweiten Emissionen ist aber klein, die Wirkung auf Hitze hierzulande zeigt sich erst über Jahrzehnte und nur im globalen Verbund.", "evidenz": "belegt", "beleg_studie_url": "https://www.umweltbundesamt.de/themen/klima-energie/klimawandel/haeufige-fragen-klimawandel" },
+    { "kennung": "I2", "name": "CO2-Bepreisung als zentrales Klimaschutzinstrument stärken (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Eine Meta-Analyse von Ex-post-Studien findet Emissionsminderungen von rund 5 bis 21 Prozent durch CO2-Preise. Auf die Hitze in Deutschland wirkt das nur langfristig und im globalen Verbund.", "evidenz": "belegt", "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11099057/" },
+    { "kennung": "I3", "name": "Nationale Klimaschutzvorgaben zurücknehmen (CO2-Preis, Heizungsgesetz, Kohleausstieg, Windausbau, Klimaziel) (Bund)", "wirksamkeit": 0, "umsetzbarkeit": 2, "begruendung": "Die Rücknahme senkt keine Emissionen, sondern erhöht sie eher und setzt damit an keiner Ursache für weniger Hitze an. Rechtlich wäre vieles national änderbar, teils überlagert durch EU-Recht.", "evidenz": "belegt", "beleg_studie_url": "https://www.umweltbundesamt.de/themen/klima-energie/klimawandel/haeufige-fragen-klimawandel" },
+    { "kennung": "I4", "name": "EU-Aus für neue Verbrennerfahrzeuge ab 2035 aufheben (Bund)", "wirksamkeit": 0, "umsetzbarkeit": 1, "begruendung": "Mehr Verbrennerfahrzeuge senken keine Emissionen und helfen beim Schutz vor Hitze nicht. Die Flottengrenzwerte sind EU-Recht, Deutschland kann sie nicht allein aufheben.", "evidenz": "belegt", "beleg_studie_url": "https://www.umweltbundesamt.de/themen/klima-energie/klimawandel/haeufige-fragen-klimawandel" },
+    { "kennung": "I5", "name": "Abscheidung und Speicherung von CO2 (CCS/CCU) rechtlich ermöglichen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "CCS kann Emissionen schwer vermeidbarer Industrieprozesse mindern; bisherige Großprojekte blieben aber oft hinter ihren Abscheidezielen zurück. Die Wirkung auf Hitze ist zudem nur langfristig und global.", "evidenz": "gemischt" },
+    { "kennung": "I6", "name": "Klimafreundliche Wärmeversorgung fördern (kommunale Wärmeplanung, Heizungsförderung) (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Förderung und Wärmeplanung können den Umstieg auf emissionsarme Heizungen beschleunigen; Mitnahmeeffekte schmälern den Zusatznutzen. Auf Hitze in Deutschland wirkt das nur langfristig und global.", "evidenz": "gemischt" },
+    { "kennung": "I7", "name": "Stadtgrün, Entsiegelung und Schwammstadt in Städten ausbauen und fördern (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Mehr Bäume und Grün kühlen Städte nachweislich; eine Modellstudie für 93 Städte schätzt, dass 30 % Baumbedeckung ein Drittel der Hitzetoten durch Wärmeinseln vermeiden könnte. Umsetzung liegt bei Kommunen und braucht Jahre.", "evidenz": "belegt", "beleg_studie_url": "https://www.epi.ims.cam.ac.uk/blog/2023/02/02/planting-trees-reduce-premature-deaths/" },
+    { "kennung": "I8", "name": "Hochwasserschutz ausbauen: Rückhalteräume, Auen und Deiche (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Rückhalteräume und Deiche mindern Hochwasserschäden, Rückhalteräume mit einem Nutzen von etwa 4 Euro je investiertem Euro. Sie begrenzen aber nicht das Bauen in Überschwemmungsgebieten; zuständig sind vor allem die Länder.", "evidenz": "belegt", "beleg_studie_url": "https://www.forschung-und-lehre.de/forschung/was-bietet-den-effizientesten-schutz-bei-hochwasser-5379" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Eine Gemeinschaftsaufgabe könnte die dauerhafte Finanzierung der Klimaanpassung sichern; sie benennt aber noch keine konkrete Maßnahme und erfordert eine Grundgesetzänderung mit Zweidrittelmehrheit.", "evidenz": "offen" }, "ursachen": [1801] },
+    { "kennung": "M02", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M03", "instrument": "I6", "ursachen": [1801] },
+    { "kennung": "M04", "instrument": "I1", "ursachen": [1801] },
+    { "kennung": "M05", "instrument": "I6", "ursachen": [1801] },
+    { "kennung": "M06", "einzeln": { "wirksamkeit": 3, "umsetzbarkeit": 2, "begruendung": "Setzt direkt an der Versicherungslücke an: In Frankreich sind durch das Pflicht- bzw. Koppelungssystem rund 98 % der Haushalte versichert. Verfassungs- und Prämienfragen machen die Umsetzung aufwendig.", "evidenz": "belegt", "beleg_studie_url": "https://www.cec-zev.eu/fileadmin/Media/PDF/publications/Etudes-Rapports_DE/Studie_Elementarschadenversicherung_Frankreich_ZEV.pdf" }, "ursachen": [1806] },
+    { "kennung": "M07", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M08", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Frischluftschneisen können Städte nachts kühlen; die Zusage bleibt aber unbestimmt, und Bauleitplanung liegt bei Ländern und Kommunen.", "evidenz": "offen" }, "ursachen": [1803] },
+    { "kennung": "M09", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Das Programm besteht bereits; Schutz von Mooren, Wäldern und Stadtgrün bindet CO2 und erhält kühlende Flächen. Neue Kühlwirkung entsteht aber eher wenig, da vorhandenes Grün nur geschützt wird.", "evidenz": "belegt", "beleg_studie_url": "https://www.klimafakten.de/klimawissen/was-nuetzt/was-koennen-moore-zum-klimaschutz-beitragen" }, "ursachen": [1801, 1803] },
+    { "kennung": "M10", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M11", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Mehr Stadtgrün kühlt, doch die Zusage nennt weder Umfang noch Programm; Unterstützung der Kommunen ist für den Bund leicht möglich.", "evidenz": "offen" }, "ursachen": [1803] },
+    { "kennung": "M12", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 1, "begruendung": "Der vorgesehene Ausbau von Kohlekraftwerken erhöht Emissionen; der Wiedereinstieg in die Kernenergie ist bei Reaktoren im Rückbau ungewiss, teuer und langwierig.", "evidenz": "gemischt" }, "ursachen": [1801] },
+    { "kennung": "M13", "instrument": "I2", "ursachen": [1801] },
+    { "kennung": "M14", "instrument": "I7", "ursachen": [1803, 1802] },
+    { "kennung": "M15", "instrument": "I4", "ursachen": [1801] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Zielt auf die Versicherungslücke, nennt aber kein Instrument (Pflicht, Angebotspflicht, Förderung); ohne Instrument ist kaum abzusehen, wie stark die Deckung steigt.", "evidenz": "offen" }, "ursachen": [1806] },
+    { "kennung": "M17", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Vorsorge gegen Hitzewellen im Bevölkerungsschutz kann Gesundheitsschäden mindern; die Zusage bleibt jedoch ohne konkrete Maßnahme.", "evidenz": "offen" }, "ursachen": [1802] },
+    { "kennung": "M18", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M19", "instrument": "I5", "ursachen": [1801] },
+    { "kennung": "M20", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M21", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Ein Flächenzertifikatehandel mit Zielwert kann neue Versiegelung begrenzen; ein Planspiel mit 87 Kommunen verlief positiv, Praxiserfahrung fehlt. Bestehende Versiegelung bleibt, Bundesgesetz und Länder nötig.", "evidenz": "offen" }, "ursachen": [1804] },
+    { "kennung": "M22", "instrument": "I8", "ursachen": [1805] },
+    { "kennung": "M23", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 2, "begruendung": "Ein Austritt senkt keine Emissionen und schwächt die internationale Zusammenarbeit gegen die Erwärmung; rechtlich möglich, aber mit EU-Bindungen verknüpft.", "evidenz": "offen" }, "ursachen": [1801] },
+    { "kennung": "M24", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Entwässerte Moore verursachen rund 7 % der deutschen Emissionen, Wiedervernässung senkt sie deutlich. Auf Hitze in Deutschland wirkt das nur langfristig und global; Umsetzung braucht Einigung mit Eigentümern.", "evidenz": "belegt", "beleg_studie_url": "https://www.klimafakten.de/klimawissen/was-nuetzt/was-koennen-moore-zum-klimaschutz-beitragen" }, "ursachen": [1801] },
+    { "kennung": "M25", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M26", "instrument": "I1", "ursachen": [1801] },
+    { "kennung": "M27", "instrument": "I1", "ursachen": [1801] },
+    { "kennung": "M28", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Weniger Versiegelung hilft der Versickerung, die Zusage nennt aber weder Instrument noch Zielwert.", "evidenz": "offen" }, "ursachen": [1804] },
+    { "kennung": "M29", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Hitzeschutz in Kitas und Schulen schützt Kinder; die meisten Hitzetoten sind aber über 75. Der Bund kann nur mit Geld beitragen, zuständig sind Länder und Träger.", "evidenz": "offen" }, "ursachen": [1802] },
+    { "kennung": "M30", "instrument": "I4", "ursachen": [1801] },
+    { "kennung": "M31", "einzeln": { "wirksamkeit": 3, "umsetzbarkeit": 2, "begruendung": "Hitzeschutzpläne gingen in 14 europäischen Ländern mit rund 25 % weniger hitzebedingten Todesfällen einher. Der Bund kann Kommunen Pläne nicht direkt vorschreiben, sondern nur fördern oder mit Ländern vereinbaren.", "evidenz": "belegt", "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12724396/" }, "ursachen": [1802] },
+    { "kennung": "M32", "instrument": "I4", "ursachen": [1801] },
+    { "kennung": "M33", "instrument": "I1", "ursachen": [1801] },
+    { "kennung": "M34", "instrument": "I7", "ursachen": [1803] },
+    { "kennung": "M35", "instrument": "I8", "ursachen": [1805] },
+    { "kennung": "M36", "instrument": "I2", "ursachen": [1801] },
+    { "kennung": "M37", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Kernkraft ist emissionsarm, doch ohne Subventionen ist ein Bau neuer Anlagen in einer Wahlperiode unwahrscheinlich, und die stillgelegten Reaktoren sind im Rückbau.", "evidenz": "gemischt" }, "ursachen": [1801] },
+    { "kennung": "M38", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M39", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 2, "begruendung": "Marktintegration kann Kosten senken, das Ende der Förderung kann den Ausbau aber bremsen; eine Emissionsminderung ist nicht zu erwarten.", "evidenz": "offen" }, "ursachen": [1801] },
+    { "kennung": "M40", "instrument": "I3", "ursachen": [1801] },
+    { "kennung": "M41", "instrument": "I5", "ursachen": [1801] },
+    { "kennung": "M42", "instrument": "I7", "ursachen": [1802, 1803, 1804] },
+    { "kennung": "M43", "instrument": "I7", "ursachen": [1804, 1805] },
+    { "kennung": "M44", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "CO2-Preise senken nachweislich Emissionen; ein einheitlicher europäischer Emissionshandel hängt aber von EU-Entscheidungen ab und wirkt auf Hitze nur langfristig.", "evidenz": "belegt" }, "ursachen": [1801] },
+    { "kennung": "M45", "ursachen": [] },
+    { "kennung": "M46", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Verbindliche Emissionsgrenzen könnten den Emissionshandel ersetzen, ihre Wirkung hängt von der Ausgestaltung ab. Der ETS-2 ist bereits beschlossenes EU-Recht.", "evidenz": "gemischt" }, "ursachen": [1801] }
+  ]
+}
+
+Nicht bestätigt: M34 nur 1803 (Zitat nennt grüne Infrastruktur und hitzeresiliente Planung, kein Regenwasser; Regel 6). M17 nur 1802 statt 1801 (Zitat nennt Vorsorge gegen Hitzewellen im Bevölkerungsschutz = Gesundheitsschutz, Regel 3).
+Offene Ursachen: M01 1805 nicht übernommen (Katastrophenschutz nur in der Beschreibung, nicht im Zitat). M11 1804 nicht übernommen ("Umgang mit Wasser" zu unbestimmt für Regenwasser). M17 1802 übernommen. M43 1805 übernommen (Schutz der Städte vor Flutkatastrophen wie bei M22 als Hochwasserschutz gewertet).
+Ohne Ursache: M45 – Ausstattung der Feuerwehr reagiert auf Hochwasser, setzt nicht an der Bebauung von Überschwemmungsgebieten oder Schäden an (Regel 8).
+Schwierig: Wirksamkeit aller Klimaschutzmaßnahmen auf 1 (globale, langfristige Wirkung auf Hitze), Rücknahmen auf 0. M12 enthält im Zitat Kohleausbau und Kernkraft, daher getrennt von M37 bewertet. M31 mit 3 trotz beobachtender Studienlage (Studie nennt Einschränkungen). M06: Frankreichs 98 % beruhen laut ZEV eher auf Koppelung an Kredite/Mietverträge als auf formaler Pflicht. M21 Flächenzertifikate nur als Planspiel erprobt.

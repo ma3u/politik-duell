@@ -1,0 +1,1678 @@
+{
+  "thema_id": 18,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Flächendeckende Pflichtversicherung für Elementarschäden einführen",
+          "ursachen_ids": [
+            1806
+          ],
+          "zitat": "Eine flächendeckende Pflichtversicherung für Elementarschäden ist die richtige finanzielle Schadensvorsorge. Wir werden sie deshalb einführen und so die Lasten im Sinne der Steuerzahler gerecht verteilen.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Küsten- und Hochwasserschutz priorisieren und von der Ausgleichspflicht für solche Maßnahmen wegkommen",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Um die Menschen in gefährdeten Regionen zu schützen, hat für uns der Küsten- und Hochwasserschutz Priorität. Wir wollen weg von der Ausgleichspflicht für Maßnahmen des Küsten- und Hochwasserschutzes.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Flächenversiegelung reduzieren und Flächen klüger nutzen",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir nutzen Flächen an Land und Gewässer nachhaltig. Dazu reduzieren wir die Flächenversiegelung, unterstützen die kluge Flächennutzung durch Doppel- und Mehrfachnutzungen und verbessern die Ausgleichsmaßnahmen.",
+          "seite": 26
+        },
+        {
+          "beschreibung": "Städte und Gemeinden bei Wassermanagement und verstärkter Begrünung unterstützen",
+          "ursachen_ids": [
+            1803
+          ],
+          "ursachen_offen": [
+            1804
+          ],
+          "zitat": "Die Anpassung an den Klimawandel wird immer wichtiger. Wir unterstützen Städte und Gemeinden beim verantwortungsvollen Umgang mit Wasser und einer verstärkten Begrünung.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "CO2-Bepreisung zum Leitinstrument ausbauen, Einnahmen zurückgeben",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Bepreisung und Emissionshandel",
+          "zitat": "Die CO2-Bepreisung bauen wir im Instrumentenmix zum Leitinstrument aus und geben deren Einnahmen an Verbraucher und Wirtschaft zurück.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Heizungsgesetz abschaffen, stattdessen technologieoffen emissionsarme Wärme fördern",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Wärme und Gebäude",
+          "zitat": "Das Heizungsgesetz der Ampel schaffen wir ab.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Verbrenner-Verbot rückgängig machen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Verkehr und Antriebe",
+          "zitat": "Das Verbrenner-Verbot muss rückgängig gemacht werden.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Kein weiteres endgültiges Abschalten von Kohlekraftwerken, bevor Ersatz gebaut ist",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Kohle- und Gasverstromung",
+          "zitat": "Auf dem Weg darf es kein weiteres endgültiges Abschalten von Kohlekraftwerken geben, solange als Ersatz keine neuen Gaskraftwerke und Kraft-Wärme-Kopplungs-Anlagen gebaut sind.",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Moorschutz intensivieren und Anreize für Wiedervernässung geben",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Natürliche Kohlenstoffspeicher (Wald, Moore, Böden)",
+          "zitat": "Wir wollen den Schutz der Moore gemeinsam mit den Grundstückseigentümern intensivieren und Anreize für Wiedervernässungsprojekte geben.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Rahmenbedingungen für Kohlenstoffabscheidung, -nutzung und -speicherung samt Transportinfrastruktur schaffen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Abscheidung und Negativemissionen",
+          "zitat": "Wir schaffen die notwendigen Rahmenbedingungen, um Carbon Capture and Utilization (CCU), Carbon Capture and Storage (CCS) und Direct Air Capture (DACCS) sowie die erforderliche Transportinfrastruktur zu ermöglichen.",
+          "seite": 24
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Städtebauförderung zur Klimaanpassung: Begrünung, Entsiegelung (Schwammstadt) und kühlende öffentliche Räume in Städten.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Wir wollen eine Städtebauförderung zur Anpassung an den Klimawandel, um den Städten zu ermöglichen, grüne Infrastruktur zu schaffen und hitzeresiliente Städteplanung umzusetzen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Vorsorge gegen Klimafolgen wie Hitzewellen im Bevölkerungsschutz stärken.",
+          "ursachen_ids": [
+            1801
+          ],
+          "ursachen_offen": [
+            1802
+          ],
+          "zitat": "Wir verbessern den Bevölkerungsschutz und die Katastrophenhilfe. Wir stärken die Vorsorge gegen Klimafolgen wie extreme Niederschläge, Hitzewellen und Dürre.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Bund unterstützt Feuerwehren bei komplexen Gefahrenlagen, etwa Hochwasserschutz.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1805
+          ],
+          "zitat": "Wir werden weiter für eine solide ergänzende Ausstattung für die Feuerwehren sorgen. Wir wollen, dass der Bund hier hilft, auf komplexe Gefahrenlagen vorbereitet zu sein, etwa beim Hochwasserschutz und dem CBRN-Einsatz.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Kommunale Wärmepläne für klimaneutrale Wärmeversorgung fördern.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Wärme und Gebäude",
+          "zitat": "Wir wollen lokale Wärmepläne fördern, die eine klimafreundliche und klug geplante Energieversorgung auf kommunaler Ebene sicherstellen.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Mittel aus Aktionsprogramm Natürlicher Klimaschutz flächendeckend einsetzen, um Wälder, Moore, Flussauen und Stadtgrün zu schützen.",
+          "ursachen_ids": [
+            1801,
+            1803
+          ],
+          "buendel": "Natürliche Kohlenstoffspeicher (Wald, Moore, Böden)",
+          "zitat": "Mittel aus dem Aktionsprogramm Natürlicher Klimaschutz und dem Naturschutzfonds sollen flächendeckend eingesetzt werden, um Wälder, Moore, Flussauen oder Stadtgrün zu schützen.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Windkraft und Fotovoltaik konsequent ausbauen und mit Speichern einbinden.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Ausbau erneuerbarer Stromerzeugung",
+          "zitat": "Ihr konsequenter Ausbau und die Einbindung von Speichern macht unsere Energieversorgung sicher und dauerhaft bezahlbar.",
+          "seite": 34
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1802,
+          "seiten": [
+            34,
+            46
+          ],
+          "grund": "Nur S. 46 (Vorsorge gegen Hitzewellen) als offene Zuordnung; keine Hitzeaktionspläne, Hitzewarnung oder Pflege-Hitzeschutz."
+        },
+        {
+          "ursache": 1806,
+          "seiten": [
+            18,
+            26,
+            46
+          ],
+          "grund": "Treffer sind Arbeitslosenrückversicherung, Sozialversicherungspflicht, Katastrophenhilfe ohne Versicherungsbezug; keine Elementarschadenversicherung."
+        },
+        {
+          "ursache": 1805,
+          "seiten": [
+            46,
+            53
+          ],
+          "grund": "Nur Feuerwehr-Ausstattung (offen zugeordnet); Flussauen S. 53 ohne Hochwasserbezug."
+        },
+        {
+          "ursache": 1804,
+          "seiten": [
+            22,
+            34
+          ],
+          "grund": "Bauland S. 22 betrifft Einheimischenmodelle; Entsiegelung nur in der Städtebauförderung (S. 34, erfasst)."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Europäischen Emissionshandel für Verkehr und Gebäude unterstützen und den CO₂-Preis als zentralen Hebel stärken",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Bepreisung und Emissionshandel",
+          "zitat": "durch konkrete Maßnahmen wie die Unterstützung für den geplanten europäischen Emissionshandel für Verkehr und Gebäude und den Clean Industrial Act.",
+          "seite": 38
+        },
+        {
+          "beschreibung": "Sektorverantwortung im Klimaschutzgesetz stärken, bei Zielverfehlung verbindlich nachsteuern",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen",
+          "zitat": "Verantwortung von Sektoren im Bundes- Klimaschutzgesetz stärken, in denen Kli - maschutz zu wenig vorankommt. Bei prog - nostizierter längerfristiger Zielverfehlung soll in den jeweiligen Sektoren verbindlich nachgesteuert werden",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Alle verbliebenen Kohlekraftwerke ab 2030 nicht mehr befeuern, Kohleförderung beenden, fossiles Gas schrittweise reduzieren",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Kohle- und Gasverstromung",
+          "zitat": "halten wir daran fest, alle verbliebenen Kohlekraftwerke ab 2030 nicht mehr zu befeuern und mit dem Koh - leausstieg die Kohleförderung in Deutsch - land einzustellen.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Förderung für fossilfreie Heizungen und Wärmenetze ausbauen, Energieberatung ausbauen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Wärme und Gebäude",
+          "zitat": "Die Unterstützung auf diesem Weg werden wir ausbauen.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Hochwasserschutz mit den Ländern verbessern: natürliche Überschwemmungsräume, Auen mehr Raum, Deiche und Rückhaltesysteme, beschleunigte Umsetzung",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "den wir den Hochwasserschutz zusammen mit den Ländern verbessern. Insbesondere brauchen wir Investitionen in natürliche Überschwemmungsräume wie Auenwälder oder Erlenbrüche.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Städte gegen Hitzewellen und Starkregen schützen: mehr Entsiegelung, Frischluftschneisen, Gebäude- und Stadtgrün, Trinkbrunnen, Schwammstadt",
+          "ursachen_ids": [
+            1802,
+            1803,
+            1804
+          ],
+          "zitat": "Dafür sorgen wir mit mehr Bodenentsiegelung, Frischluftschneisen, Gebäudebegrünung, Stadtgrün und öffentlichen Trinkbrunnen. Als Schwammstädte sollen sie künftig mehr Wasser aufnehmen, speichern und im Sommer kühlend wirken.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Versicherungsschutz gegen Elementarschäden sozialverträglich ausweiten",
+          "ursachen_ids": [
+            1806
+          ],
+          "zitat": "Den Versicherungs - schutz gegen Elementarschäden werden wir sozialverträglich ausweiten.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Nationalen Hitzeschutzplan ausbauen und Hitzeaktionspläne in allen Kommunen",
+          "ursachen_ids": [
+            1802
+          ],
+          "zitat": "Zentral sind neben dem Aus - bau des Nationalen Hitzeschutzplans auch Hitzeaktionspläne in allen Kommunen.",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Flächenverbrauch mit neuen Instrumenten (Flächenzertifikatehandel, Baulandabgabemodell) bis 2030 auf 30 Hektar pro Tag senken",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Deshalb setzen wir auf neue Instrumente wie den Flächenzer - tifikatehandel oder ein Baulandabgabemo - dell. So setzen wir Anreize, den Flächenver - brauch bis 2030 auf 30 Hektar pro Tag und langfristig auf Nettonull zu senken.",
+          "seite": 73
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einheitlicher europäischer Emissionshandel als Leitinstrument der Klimapolitik, mit global angestrebtem Preis für Treibhausgase",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Bepreisung und Emissionshandel",
+          "zitat": "Dafür wollen wir einen einheitlichen europäischen Emissionshandel als Leitinstrument der Klimapolitik etablieren.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Nationales Klimaneutralitätsziel 2045 im Klimaschutzgesetz durch das europäische Ziel 2050 ersetzen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen",
+          "zitat": "Da nationale Sonderziele im Rahmen des europäischen Emissionshandels keinerlei zusätzlichen Nutzen für den Klimaschutz haben können, wollen wir das Ziel der Klimaneutralität bis 2045 im deutschen Klimaschutzgesetz durch das europäische Ziel der Klimaneutralität bis 2050 ersetzen.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Abscheidung und Speicherung von Treibhausgasen (CCS/CCU) diskriminierungsfrei als Klimaschutz-Option ermöglichen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Abscheidung und Negativemissionen",
+          "zitat": "Die Abscheidung und Speicherung von Treibhausgasemissionen durch Carbon Capture and Storage (CCS) und Carbon Capture and Utilization (CCU) wollen wir diskriminierungsfrei als Klimaschutz-Option ermöglichen",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Heizungsgesetz vollständig auslaufen lassen; stattdessen Zertifikatehandel",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Wärme und Gebäude",
+          "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Faktisches Verbrenner-Verbot ab 2035 umgehend aufheben",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Verkehr und Antriebe",
+          "zitat": "Deshalb setzen wir uns für eine umgehende Aufhebung des faktischen Verbrenner-Verbots ab dem Jahr 2035 […] ein",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Erneuerbare Energien ohne EEG-Subventionen für neue Anlagen vollständig in den Markt überführen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Ausbau erneuerbarer Stromerzeugung",
+          "zitat": "Wir Freie Demokraten wollen die erneuerbaren Energien vollständig in den Markt überführen. Da auf diese bereits heute mehr als 60 Prozent der Stromproduktion entfallen, sind die EEG-Subventionen für neue Anlagen nicht mehr zu rechtfertigen.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Bau neuer Kernkraftwerke und Wiederinbetriebnahme vorhandener rechtlich ermöglichen, ohne Subventionen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Kernenergie",
+          "zitat": "Wir Freie Demokraten wollen die Nutzung klimafreundlicher Zukunftstechnologien wie Kernfusion und sicherer Kernkraftwerke ohne Subventionen ermöglichen.",
+          "seite": 18
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1802,
+          "seiten": [
+            24
+          ],
+          "grund": "Kein Hitzebezug im Programm; Zivil- und Katastrophenschutz (S. 24) ohne Hitzeschutz, nur allgemeine Zusage."
+        },
+        {
+          "ursache": 1803,
+          "seiten": [
+            44
+          ],
+          "grund": "Nachverdichtung/Bauflächen (S. 44) ohne Hitze- oder Kühlungsbezug; kein Stadtgrün oder Hitzeschutz im Programm."
+        },
+        {
+          "ursache": 1804,
+          "seiten": [
+            44
+          ],
+          "grund": "Keine Entsiegelung, Schwammstadt oder Regenwasserzusage; Bauflächenausweisung ist keine Maßnahme dazu."
+        },
+        {
+          "ursache": 1805,
+          "seiten": [
+            24
+          ],
+          "grund": "Kein Hochwasserschutz im Programm; Katastrophenschutz (S. 24) ohne Hochwasserbezug (R8)."
+        },
+        {
+          "ursache": 1806,
+          "seiten": [
+            18,
+            20,
+            24
+          ],
+          "grund": "Treffer betreffen Eigenverantwortung bei Arbeitslosenversicherung und Katastrophenhilfe-Behörde; nichts zu Elementarschadenversicherung."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Geplanten Ausstieg aus der Braunkohleverstromung nicht umsetzen, Kohlekraftwerke ausbauen.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Kohle- und Gasverstromung",
+          "zitat": "Den geplanten Ausstieg aus der Braunkohleverstromung wird es mit der AfD nicht geben.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Wiedereinstieg in die Kernenergie, bestehende Kraftwerke so schnell wie möglich wieder in Betrieb nehmen.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Kernenergie",
+          "zitat": "Neben dem kurzfristig notwendigen Ausbau von Kohlekraftwerken planen wir den Wiedereinstieg in die Kernenergie.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Abgabe auf CO₂ abschaffen.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Bepreisung und Emissionshandel",
+          "zitat": "Abschaffung der CO₂ -Abgabe",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Verbot von Gas- und Ölheizungen aufheben.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Wärme und Gebäude",
+          "zitat": "Aufhebung des Verbots von Gas- und Ölheizungen",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Verbot des Verbrennungsmotors aufheben.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Verkehr und Antriebe",
+          "zitat": "Im Verkehrssektor wird sich die AfD auf allen Ebenen dafür einsetzen, das Verbot des Ver- brennungsmotors aufzuheben.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Weiteren Ausbau der Windenergie ablehnen.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Ausbau erneuerbarer Stromerzeugung",
+          "zitat": "Deshalb lehnen wir den weiteren Ausbau der Windenergie ab.",
+          "seite": 81
+        },
+        {
+          "beschreibung": "Aus dem Pariser Klimaabkommen aussteigen.",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen",
+          "zitat": "Wir wollen zudem aus dem Pariser Klimaabkommen aussteigen.",
+          "seite": 80
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1806,
+          "seiten": [
+            3,
+            16,
+            22,
+            34,
+            55,
+            62,
+            103,
+            120
+          ],
+          "grund": "Treffer nur Eigenverantwortung allgemein, Sozialversicherungspflicht, Opt-out Asyl, Dienstversicherung; keine Elementarschadenversicherung."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Kitas und Schulen besser vor Hitzewellen schützen, Investitionsmittel dafür bereitstellen",
+          "ursachen_ids": [
+            1802
+          ],
+          "zitat": "Bildungseinrichtungen, insbesondere Kitas und Schulen, müssen vor Hitzewellen besser geschützt werden. Dafür müssen Investitionsmittel bereitgestellt werden.",
+          "seite": 38
+        },
+        {
+          "beschreibung": "Mehr öffentliche Parks und Grünflächen gegen die Hitze sowie öffentliche Wasserspender; Gebäude- und Flächenbegrünung ausweiten",
+          "ursachen_ids": [
+            1803,
+            1802
+          ],
+          "zitat": "Wir wollen mehr öffentliche Parks und Grünflächen, Kleingärten und Gemeinschaftsgärten gegen die Hitze, öffentliche Toiletten und Wasserspender.",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Flächenentsiegelung vorantreiben, Städte zu Schwammstädten machen und vor Flutkatastrophen schützen",
+          "ursachen_ids": [
+            1804
+          ],
+          "ursachen_offen": [
+            1805
+          ],
+          "zitat": "Wir müssen die Flächenentsiegelung vorantreiben, Städte müssen zu Schwammstädten werden und vor Flutkatastrophen geschützt werden.",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Luftaustausch zwischen Stadt und Umland durch bessere Raumplanung verbessern",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Den Luftaustausch zwischen der Stadt und dem Umland wollen wir durch eine bessere Raumplanung verbessern.",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Klimaanpassung als Gemeinschaftsaufgabe von Bund, Ländern und Kommunen definieren, Katastrophenschutz massiv aufwerten",
+          "ursachen_ids": [
+            1801
+          ],
+          "ursachen_offen": [
+            1805
+          ],
+          "zitat": "Klimaschutz und Klimaanpassung muss als Gemeinschaftsaufgabe definiert werden, damit Bund, Länder und Kommunen gemeinsam handeln können.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Sektorziele im Klimaschutzgesetz wiederherstellen, verbindliche Ziele und Emissionsgrenzen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen",
+          "zitat": "Wir wollen verbindliche Ziele und Emissionsgrenzen und machen den Konzernen klare Vorschriften. Die Sektorziele stellen wir wieder her.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Emissionshandel für Wärme und Verkehr (ETS-2) ablehnen, stattdessen verbindliche Klimaziele und Emissionsgrenzen",
+          "ursachen_ids": [
+            1801
+          ],
+          "buendel": "CO₂-Bepreisung und Emissionshandel",
+          "zitat": "Wir lehnen den Emissionshandel in den Sektoren Wärme und Verkehr (ETS-2) ab: Stattdessen müssen verbind- liche Klimaziele und Emissionsgrenzen gesetzt werden.",
+          "seite": 33
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            33,
+            44,
+            45
+          ],
+          "grund": "Hochwasserschutz nur als Katastrophenschutz bzw. Schutz von Städten ohne konkretes Instrument; nur als ursachen_offen erfasst."
+        },
+        {
+          "ursache": 1806,
+          "seiten": [
+            44
+          ],
+          "grund": "Keine Zusage zu Elementarschadenversicherung; Treffer 'Soforthilfe' betrifft Kommunalfinanzen."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1801": {
+      "Erwärmung begrenzen, Emissionen senken": [
+        "klimaschutzgesetz",
+        "treibhausgas",
+        "klimaneutral",
+        "klimaziel",
+        "emissionshandel",
+        "co2-preis",
+        "co₂-preis",
+        "co2-bepreisung",
+        "co₂-bepreisung",
+        "pariser",
+        "klimaschutzziel",
+        "klimaschutzpolitik",
+        "klimaschutzprogramm",
+        "klimaschutzvertr"
+      ],
+      "Klimaschutz begrenzen, Kosten senken": [
+        "klimapolitik",
+        "heizungsgesetz",
+        "gebäudeenergiegesetz",
+        "verbrennerverbot",
+        "green deal",
+        "klimaideologie",
+        "dekarbonisierung"
+      ],
+      "Energie und Emissionsquellen": [
+        "erneuerbare energie",
+        "windkraft",
+        "windenergie",
+        "kernkraft",
+        "kernenergie",
+        "atomkraft",
+        "kohleausstieg",
+        "kohlekraft",
+        "abscheidung",
+        "wiedervernässung",
+        "aufforstung"
+      ],
+      "Hitzeanpassung": [
+        "klimaanpassung",
+        "anpassung an den klimawandel",
+        "klimafolgen",
+        "klimawandel",
+        "erderwärmung",
+        "klimaresilien"
+      ]
+    },
+    "1802": {
+      "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": [
+        "hitze",
+        "trinkbrunnen",
+        "trinkwasserbrunnen",
+        "kühlräume",
+        "kühle orte",
+        "tropennacht"
+      ]
+    },
+    "1803": {
+      "Stadtgrün, Verschattung, Frischluft": [
+        "stadtgrün",
+        "stadtbäume",
+        "straßenbäume",
+        "stadtbaum",
+        "begrünung",
+        "gründach",
+        "grünfläche",
+        "frischluft",
+        "kaltluft",
+        "verschattung",
+        "wärmeinsel",
+        "stadtklima"
+      ],
+      "Bauvorschriften und Gebäudehitzeschutz": [
+        "sommerlicher wärmeschutz",
+        "außenverschattung",
+        "kühlung"
+      ],
+      "Nachverdichtung nicht bremsen": [
+        "nachverdichtung",
+        "innenentwicklung"
+      ]
+    },
+    "1804": {
+      "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": [
+        "entsiegel",
+        "versiegel",
+        "schwammstadt",
+        "flächenverbrauch",
+        "flächenfraß",
+        "flächenneuinanspruchnahme"
+      ],
+      "Technischer Rückhalt, Kanal und Speicher": [
+        "regenwasser",
+        "versicker",
+        "starkregen",
+        "kanalisation",
+        "regenrückhalt",
+        "abwasser"
+      ],
+      "Bauland ausweisen, Bauen nicht verteuern": [
+        "baulandausweisung",
+        "neubaugebiet",
+        "flächenausweisung",
+        "bauland"
+      ]
+    },
+    "1805": {
+      "Bauverbot, Flächen freihalten, Rückbau": [
+        "überschwemmungsgebiet",
+        "überschwemmung",
+        "bauverbot",
+        "retention",
+        "flussauen",
+        "auenschutz",
+        "deichrückverlegung"
+      ],
+      "Technischer Hochwasserschutz": [
+        "hochwasser",
+        "deich",
+        "polder",
+        "rückhaltebecken",
+        "überflutung",
+        "flutkatastrophe",
+        "ahrtal"
+      ],
+      "Bauvorsorge der Eigentümer": [
+        "objektschutz",
+        "bauvorsorge",
+        "eigenvorsorge"
+      ]
+    },
+    "1806": {
+      "Pflichtversicherung, Angebotspflicht": [
+        "elementarschaden",
+        "elementarversicherung",
+        "pflichtversicherung",
+        "versicherungspflicht",
+        "opt-out",
+        "naturgefahren"
+      ],
+      "Rückversicherung, Prävention": [
+        "rückversicherung",
+        "versicherungsschutz"
+      ],
+      "Freiwillige Versicherung, staatliche Hilfen": [
+        "soforthilfe",
+        "aufbauhilfe",
+        "fluthilfe",
+        "katastrophenhilfe",
+        "eigenverantwortung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5813194c3ebb9bac018835039ba1c1670de3902ed2dcc39ae2d68a527e9d2917",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "1801": {
+            "Erwärmung begrenzen, Emissionen senken": {
+              "klimaschutzgesetz": 0,
+              "treibhausgas": 0,
+              "klimaneutral": 3,
+              "klimaziel": 1,
+              "emissionshandel": 1,
+              "co2-preis": 1,
+              "co₂-preis": 0,
+              "co2-bepreisung": 2,
+              "co₂-bepreisung": 0,
+              "pariser": 0,
+              "klimaschutzziel": 0,
+              "klimaschutzpolitik": 0,
+              "klimaschutzprogramm": 0,
+              "klimaschutzvertr": 0
+            },
+            "Klimaschutz begrenzen, Kosten senken": {
+              "klimapolitik": 1,
+              "heizungsgesetz": 1,
+              "gebäudeenergiegesetz": 0,
+              "verbrennerverbot": 0,
+              "green deal": 0,
+              "klimaideologie": 0,
+              "dekarbonisierung": 0
+            },
+            "Energie und Emissionsquellen": {
+              "erneuerbare energie": 0,
+              "windkraft": 0,
+              "windenergie": 1,
+              "kernkraft": 1,
+              "kernenergie": 2,
+              "atomkraft": 0,
+              "kohleausstieg": 1,
+              "kohlekraft": 1,
+              "abscheidung": 0,
+              "wiedervernässung": 1,
+              "aufforstung": 0
+            },
+            "Hitzeanpassung": {
+              "klimaanpassung": 3,
+              "anpassung an den klimawandel": 1,
+              "klimafolgen": 0,
+              "klimawandel": 3,
+              "erderwärmung": 1,
+              "klimaresilien": 0
+            }
+          },
+          "1802": {
+            "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": {
+              "hitze": 0,
+              "trinkbrunnen": 0,
+              "trinkwasserbrunnen": 0,
+              "kühlräume": 0,
+              "kühle orte": 0,
+              "tropennacht": 0
+            }
+          },
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 1,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 1,
+              "schwammstadt": 0,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 1,
+              "flächenausweisung": 0,
+              "bauland": 3
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 4,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 1
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          },
+          "1806": {
+            "Pflichtversicherung, Angebotspflicht": {
+              "elementarschaden": 0,
+              "elementarversicherung": 0,
+              "pflichtversicherung": 1,
+              "versicherungspflicht": 1,
+              "opt-out": 0,
+              "naturgefahren": 0
+            },
+            "Rückversicherung, Prävention": {
+              "rückversicherung": 1,
+              "versicherungsschutz": 0
+            },
+            "Freiwillige Versicherung, staatliche Hilfen": {
+              "soforthilfe": 0,
+              "aufbauhilfe": 0,
+              "fluthilfe": 0,
+              "katastrophenhilfe": 0,
+              "eigenverantwortung": 7
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "1801": {
+            "Erwärmung begrenzen, Emissionen senken": {
+              "klimaschutzgesetz": 0,
+              "treibhausgas": 2,
+              "klimaneutral": 12,
+              "klimaziel": 2,
+              "emissionshandel": 0,
+              "co2-preis": 3,
+              "co₂-preis": 0,
+              "co2-bepreisung": 0,
+              "co₂-bepreisung": 0,
+              "pariser": 1,
+              "klimaschutzziel": 0,
+              "klimaschutzpolitik": 1,
+              "klimaschutzprogramm": 0,
+              "klimaschutzvertr": 0
+            },
+            "Klimaschutz begrenzen, Kosten senken": {
+              "klimapolitik": 2,
+              "heizungsgesetz": 0,
+              "gebäudeenergiegesetz": 0,
+              "verbrennerverbot": 0,
+              "green deal": 1,
+              "klimaideologie": 0,
+              "dekarbonisierung": 1
+            },
+            "Energie und Emissionsquellen": {
+              "erneuerbare energie": 3,
+              "windkraft": 1,
+              "windenergie": 1,
+              "kernkraft": 0,
+              "kernenergie": 0,
+              "atomkraft": 1,
+              "kohleausstieg": 0,
+              "kohlekraft": 0,
+              "abscheidung": 1,
+              "wiedervernässung": 0,
+              "aufforstung": 0
+            },
+            "Hitzeanpassung": {
+              "klimaanpassung": 2,
+              "anpassung an den klimawandel": 1,
+              "klimafolgen": 1,
+              "klimawandel": 3,
+              "erderwärmung": 0,
+              "klimaresilien": 0
+            }
+          },
+          "1802": {
+            "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": {
+              "hitze": 2,
+              "trinkbrunnen": 0,
+              "trinkwasserbrunnen": 0,
+              "kühlräume": 0,
+              "kühle orte": 0,
+              "tropennacht": 0
+            }
+          },
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 1,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 1,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 1,
+              "versiegel": 0,
+              "schwammstadt": 1,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 2
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 1,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          },
+          "1806": {
+            "Pflichtversicherung, Angebotspflicht": {
+              "elementarschaden": 0,
+              "elementarversicherung": 0,
+              "pflichtversicherung": 0,
+              "versicherungspflicht": 1,
+              "opt-out": 0,
+              "naturgefahren": 0
+            },
+            "Rückversicherung, Prävention": {
+              "rückversicherung": 1,
+              "versicherungsschutz": 0
+            },
+            "Freiwillige Versicherung, staatliche Hilfen": {
+              "soforthilfe": 0,
+              "aufbauhilfe": 0,
+              "fluthilfe": 0,
+              "katastrophenhilfe": 1,
+              "eigenverantwortung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "1801": {
+            "Erwärmung begrenzen, Emissionen senken": {
+              "klimaschutzgesetz": 1,
+              "treibhausgas": 4,
+              "klimaneutral": 46,
+              "klimaziel": 13,
+              "emissionshandel": 4,
+              "co2-preis": 6,
+              "co₂-preis": 0,
+              "co2-bepreisung": 2,
+              "co₂-bepreisung": 0,
+              "pariser": 6,
+              "klimaschutzziel": 3,
+              "klimaschutzpolitik": 0,
+              "klimaschutzprogramm": 0,
+              "klimaschutzvertr": 3
+            },
+            "Klimaschutz begrenzen, Kosten senken": {
+              "klimapolitik": 5,
+              "heizungsgesetz": 0,
+              "gebäudeenergiegesetz": 1,
+              "verbrennerverbot": 0,
+              "green deal": 8,
+              "klimaideologie": 0,
+              "dekarbonisierung": 3
+            },
+            "Energie und Emissionsquellen": {
+              "erneuerbare energie": 3,
+              "windkraft": 1,
+              "windenergie": 3,
+              "kernkraft": 0,
+              "kernenergie": 0,
+              "atomkraft": 1,
+              "kohleausstieg": 1,
+              "kohlekraft": 1,
+              "abscheidung": 1,
+              "wiedervernässung": 2,
+              "aufforstung": 0
+            },
+            "Hitzeanpassung": {
+              "klimaanpassung": 5,
+              "anpassung an den klimawandel": 0,
+              "klimafolgen": 0,
+              "klimawandel": 2,
+              "erderwärmung": 0,
+              "klimaresilien": 0
+            }
+          },
+          "1802": {
+            "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": {
+              "hitze": 5,
+              "trinkbrunnen": 1,
+              "trinkwasserbrunnen": 0,
+              "kühlräume": 0,
+              "kühle orte": 0,
+              "tropennacht": 0
+            }
+          },
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 1,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 1,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 1,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 1
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 1,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 3,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 2,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 2
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 3,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 5,
+              "deich": 1,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 1
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          },
+          "1806": {
+            "Pflichtversicherung, Angebotspflicht": {
+              "elementarschaden": 0,
+              "elementarversicherung": 0,
+              "pflichtversicherung": 0,
+              "versicherungspflicht": 2,
+              "opt-out": 0,
+              "naturgefahren": 0
+            },
+            "Rückversicherung, Prävention": {
+              "rückversicherung": 0,
+              "versicherungsschutz": 2
+            },
+            "Freiwillige Versicherung, staatliche Hilfen": {
+              "soforthilfe": 0,
+              "aufbauhilfe": 0,
+              "fluthilfe": 0,
+              "katastrophenhilfe": 1,
+              "eigenverantwortung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "1801": {
+            "Erwärmung begrenzen, Emissionen senken": {
+              "klimaschutzgesetz": 1,
+              "treibhausgas": 6,
+              "klimaneutral": 5,
+              "klimaziel": 6,
+              "emissionshandel": 8,
+              "co2-preis": 5,
+              "co₂-preis": 0,
+              "co2-bepreisung": 0,
+              "co₂-bepreisung": 0,
+              "pariser": 1,
+              "klimaschutzziel": 0,
+              "klimaschutzpolitik": 0,
+              "klimaschutzprogramm": 0,
+              "klimaschutzvertr": 0
+            },
+            "Klimaschutz begrenzen, Kosten senken": {
+              "klimapolitik": 1,
+              "heizungsgesetz": 1,
+              "gebäudeenergiegesetz": 0,
+              "verbrennerverbot": 0,
+              "green deal": 2,
+              "klimaideologie": 0,
+              "dekarbonisierung": 0
+            },
+            "Energie und Emissionsquellen": {
+              "erneuerbare energie": 1,
+              "windkraft": 1,
+              "windenergie": 0,
+              "kernkraft": 3,
+              "kernenergie": 0,
+              "atomkraft": 0,
+              "kohleausstieg": 0,
+              "kohlekraft": 0,
+              "abscheidung": 1,
+              "wiedervernässung": 0,
+              "aufforstung": 1
+            },
+            "Hitzeanpassung": {
+              "klimaanpassung": 0,
+              "anpassung an den klimawandel": 0,
+              "klimafolgen": 0,
+              "klimawandel": 0,
+              "erderwärmung": 0,
+              "klimaresilien": 1
+            }
+          },
+          "1802": {
+            "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": {
+              "hitze": 0,
+              "trinkbrunnen": 0,
+              "trinkwasserbrunnen": 0,
+              "kühlräume": 0,
+              "kühle orte": 0,
+              "tropennacht": 0
+            }
+          },
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 1,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          },
+          "1806": {
+            "Pflichtversicherung, Angebotspflicht": {
+              "elementarschaden": 0,
+              "elementarversicherung": 0,
+              "pflichtversicherung": 0,
+              "versicherungspflicht": 0,
+              "opt-out": 0,
+              "naturgefahren": 0
+            },
+            "Rückversicherung, Prävention": {
+              "rückversicherung": 0,
+              "versicherungsschutz": 0
+            },
+            "Freiwillige Versicherung, staatliche Hilfen": {
+              "soforthilfe": 0,
+              "aufbauhilfe": 0,
+              "fluthilfe": 0,
+              "katastrophenhilfe": 1,
+              "eigenverantwortung": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "1801": {
+            "Erwärmung begrenzen, Emissionen senken": {
+              "klimaschutzgesetz": 0,
+              "treibhausgas": 0,
+              "klimaneutral": 0,
+              "klimaziel": 0,
+              "emissionshandel": 0,
+              "co2-preis": 0,
+              "co₂-preis": 0,
+              "co2-bepreisung": 0,
+              "co₂-bepreisung": 0,
+              "pariser": 1,
+              "klimaschutzziel": 0,
+              "klimaschutzpolitik": 1,
+              "klimaschutzprogramm": 0,
+              "klimaschutzvertr": 0
+            },
+            "Klimaschutz begrenzen, Kosten senken": {
+              "klimapolitik": 3,
+              "heizungsgesetz": 2,
+              "gebäudeenergiegesetz": 1,
+              "verbrennerverbot": 2,
+              "green deal": 4,
+              "klimaideologie": 2,
+              "dekarbonisierung": 0
+            },
+            "Energie und Emissionsquellen": {
+              "erneuerbare energie": 0,
+              "windkraft": 6,
+              "windenergie": 3,
+              "kernkraft": 2,
+              "kernenergie": 2,
+              "atomkraft": 0,
+              "kohleausstieg": 0,
+              "kohlekraft": 2,
+              "abscheidung": 0,
+              "wiedervernässung": 0,
+              "aufforstung": 0
+            },
+            "Hitzeanpassung": {
+              "klimaanpassung": 0,
+              "anpassung an den klimawandel": 0,
+              "klimafolgen": 0,
+              "klimawandel": 2,
+              "erderwärmung": 0,
+              "klimaresilien": 0
+            }
+          },
+          "1802": {
+            "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": {
+              "hitze": 0,
+              "trinkbrunnen": 0,
+              "trinkwasserbrunnen": 0,
+              "kühlräume": 0,
+              "kühle orte": 0,
+              "tropennacht": 0
+            }
+          },
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 1,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 1,
+              "überschwemmung": 1,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 1,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 1
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          },
+          "1806": {
+            "Pflichtversicherung, Angebotspflicht": {
+              "elementarschaden": 0,
+              "elementarversicherung": 0,
+              "pflichtversicherung": 1,
+              "versicherungspflicht": 2,
+              "opt-out": 1,
+              "naturgefahren": 0
+            },
+            "Rückversicherung, Prävention": {
+              "rückversicherung": 0,
+              "versicherungsschutz": 0
+            },
+            "Freiwillige Versicherung, staatliche Hilfen": {
+              "soforthilfe": 0,
+              "aufbauhilfe": 0,
+              "fluthilfe": 0,
+              "katastrophenhilfe": 0,
+              "eigenverantwortung": 7
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "1801": {
+            "Erwärmung begrenzen, Emissionen senken": {
+              "klimaschutzgesetz": 2,
+              "treibhausgas": 1,
+              "klimaneutral": 3,
+              "klimaziel": 3,
+              "emissionshandel": 3,
+              "co2-preis": 6,
+              "co₂-preis": 0,
+              "co2-bepreisung": 0,
+              "co₂-bepreisung": 0,
+              "pariser": 1,
+              "klimaschutzziel": 0,
+              "klimaschutzpolitik": 0,
+              "klimaschutzprogramm": 0,
+              "klimaschutzvertr": 1
+            },
+            "Klimaschutz begrenzen, Kosten senken": {
+              "klimapolitik": 4,
+              "heizungsgesetz": 1,
+              "gebäudeenergiegesetz": 0,
+              "verbrennerverbot": 0,
+              "green deal": 0,
+              "klimaideologie": 0,
+              "dekarbonisierung": 0
+            },
+            "Energie und Emissionsquellen": {
+              "erneuerbare energie": 2,
+              "windkraft": 2,
+              "windenergie": 0,
+              "kernkraft": 0,
+              "kernenergie": 0,
+              "atomkraft": 6,
+              "kohleausstieg": 1,
+              "kohlekraft": 0,
+              "abscheidung": 1,
+              "wiedervernässung": 0,
+              "aufforstung": 0
+            },
+            "Hitzeanpassung": {
+              "klimaanpassung": 4,
+              "anpassung an den klimawandel": 0,
+              "klimafolgen": 0,
+              "klimawandel": 5,
+              "erderwärmung": 0,
+              "klimaresilien": 0
+            }
+          },
+          "1802": {
+            "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": {
+              "hitze": 6,
+              "trinkbrunnen": 0,
+              "trinkwasserbrunnen": 0,
+              "kühlräume": 0,
+              "kühle orte": 0,
+              "tropennacht": 0
+            }
+          },
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 1,
+              "gründach": 0,
+              "grünfläche": 1,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 1,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 1,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 1,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 2,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          },
+          "1806": {
+            "Pflichtversicherung, Angebotspflicht": {
+              "elementarschaden": 0,
+              "elementarversicherung": 0,
+              "pflichtversicherung": 0,
+              "versicherungspflicht": 0,
+              "opt-out": 0,
+              "naturgefahren": 0
+            },
+            "Rückversicherung, Prävention": {
+              "rückversicherung": 0,
+              "versicherungsschutz": 1
+            },
+            "Freiwillige Versicherung, staatliche Hilfen": {
+              "soforthilfe": 1,
+              "aufbauhilfe": 0,
+              "fluthilfe": 0,
+              "katastrophenhilfe": 0,
+              "eigenverantwortung": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}
