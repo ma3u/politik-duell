@@ -1,5 +1,5 @@
 {
-  "pruefsumme": "5ec3a2c6f1f3205ac5b79d7e781c85f255d0a2b01f15a8258b2925be91fa563f",
+  "pruefsumme": "b3c3d238053907458d3f774a4ecf580921d1db6f81ce672660cb0c9e015b99d8",
   "thema": {
     "id": 18,
     "name": "Hitze und Unwetter",
@@ -44,7 +44,7 @@
         1801,
         1802
       ],
-      "text": "Maßnahmen, die Treibhausgasemissionen senken, oder Zusagen, Klimaschutzinstrumente abzuschaffen, zurückzunehmen oder zu begrenzen, gehören zu 1801 – in beiden Richtungen gleich, unabhängig davon, ob sie dem Ziel helfen (das entscheidet die Bewertung). Nicht zusätzlich zu 1802 zuordnen."
+      "text": "Maßnahmen, die Treibhausgasemissionen senken, oder Zusagen, Klimaschutzinstrumente abzuschaffen, zurückzunehmen oder zu begrenzen, gehören zu 1801 und zu 1802 – in beiden Richtungen gleich, unabhängig davon, ob sie dem Ziel helfen (das entscheidet die Bewertung). Entscheidung der Betreiberin vom 4. 10. 2026: Klimaschutz zählt für beide Ursachen."
     },
     {
       "nr": 2,
@@ -130,9 +130,10 @@
       "beschreibung": "Geplanten Ausstieg aus der Braunkohleverstromung nicht umsetzen, Kohlekraftwerke ausbauen.",
       "zitat": "Den geplanten Ausstieg aus der Braunkohleverstromung wird es mit [Partei] nicht geben.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "54cc7cd3ec31228c"
+      "pruefsumme": "3789013630b84d2a"
     },
     {
       "kennung": "M03",
@@ -140,9 +141,10 @@
       "beschreibung": "Kommunale Wärmepläne für klimaneutrale Wärmeversorgung fördern.",
       "zitat": "Wir wollen lokale Wärmepläne fördern, die eine klimafreundliche und klug geplante Energieversorgung auf kommunaler Ebene sicherstellen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "262ef7ac8cf59cbf"
+      "pruefsumme": "bee291eb21f325c7"
     },
     {
       "kennung": "M04",
@@ -150,9 +152,10 @@
       "beschreibung": "Alle verbliebenen Kohlekraftwerke ab 2030 nicht mehr befeuern, Kohleförderung beenden, fossiles Gas schrittweise reduzieren",
       "zitat": "halten wir daran fest, alle verbliebenen Kohlekraftwerke ab 2030 nicht mehr zu befeuern und mit dem Koh - leausstieg die Kohleförderung in Deutsch - land einzustellen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "e43a9716616b2b7a"
+      "pruefsumme": "c3a5744ccf01b97c"
     },
     {
       "kennung": "M05",
@@ -160,9 +163,10 @@
       "beschreibung": "Förderung für fossilfreie Heizungen und Wärmenetze ausbauen, Energieberatung ausbauen",
       "zitat": "Die Unterstützung auf diesem Weg werden wir ausbauen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "4f6baedc919fd007"
+      "pruefsumme": "e785c1d02f9a4333"
     },
     {
       "kennung": "M06",
@@ -180,9 +184,10 @@
       "beschreibung": "Abgabe auf CO₂ abschaffen.",
       "zitat": "Abschaffung der CO₂ -Abgabe",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "554b4a2e327f4e51"
+      "pruefsumme": "9f79939dd6ec3550"
     },
     {
       "kennung": "M08",
@@ -201,9 +206,10 @@
       "zitat": "Mittel aus dem Aktionsprogramm Natürlicher Klimaschutz und dem Naturschutzfonds sollen flächendeckend eingesetzt werden, um Wälder, Moore, Flussauen oder Stadtgrün zu schützen.",
       "ursachen_ids": [
         1801,
+        1802,
         1803
       ],
-      "pruefsumme": "57236a77cdb5382f"
+      "pruefsumme": "785a05a18c0ce542"
     },
     {
       "kennung": "M10",
@@ -211,9 +217,10 @@
       "beschreibung": "Nationales Klimaneutralitätsziel 2045 im Klimaschutzgesetz durch das europäische Ziel 2050 ersetzen",
       "zitat": "Da nationale Sonderziele im Rahmen des europäischen Emissionshandels keinerlei zusätzlichen Nutzen für den Klimaschutz haben können, wollen wir das Ziel der Klimaneutralität bis 2045 im deutschen Klimaschutzgesetz durch das europäische Ziel der Klimaneutralität bis 2050 ersetzen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "1d3a0878779bf183"
+      "pruefsumme": "b39931f849f9a691"
     },
     {
       "kennung": "M11",
@@ -234,9 +241,10 @@
       "beschreibung": "Wiedereinstieg in die Kernenergie, bestehende Kraftwerke so schnell wie möglich wieder in Betrieb nehmen.",
       "zitat": "Neben dem kurzfristig notwendigen Ausbau von Kohlekraftwerken planen wir den Wiedereinstieg in die Kernenergie.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "201a72f5065f4d0d"
+      "pruefsumme": "21c677c173aaf16c"
     },
     {
       "kennung": "M13",
@@ -244,9 +252,10 @@
       "beschreibung": "CO2-Bepreisung zum Leitinstrument ausbauen, Einnahmen zurückgeben",
       "zitat": "Die CO2-Bepreisung bauen wir im Instrumentenmix zum Leitinstrument aus und geben deren Einnahmen an Verbraucher und Wirtschaft zurück.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "9f9d2a4c385e9237"
+      "pruefsumme": "26d576d57eb711a5"
     },
     {
       "kennung": "M14",
@@ -265,9 +274,10 @@
       "beschreibung": "Verbrenner-Verbot rückgängig machen",
       "zitat": "Das Verbrenner-Verbot muss rückgängig gemacht werden.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "673be878b901338d"
+      "pruefsumme": "41bdf43efc9f5e37"
     },
     {
       "kennung": "M16",
@@ -298,9 +308,10 @@
       "beschreibung": "Heizungsgesetz abschaffen, stattdessen technologieoffen emissionsarme Wärme fördern",
       "zitat": "Das Heizungsgesetz der Ampel schaffen wir ab.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "28b3ad39a0abade6"
+      "pruefsumme": "530507f475feed30"
     },
     {
       "kennung": "M19",
@@ -308,9 +319,10 @@
       "beschreibung": "Rahmenbedingungen für Kohlenstoffabscheidung, -nutzung und -speicherung samt Transportinfrastruktur schaffen",
       "zitat": "Wir schaffen die notwendigen Rahmenbedingungen, um Carbon Capture and Utilization (CCU), Carbon Capture and Storage (CCS) und Direct Air Capture (DACCS) sowie die erforderliche Transportinfrastruktur zu ermöglichen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "6dc5510405a7057d"
+      "pruefsumme": "d37f4f90a7144674"
     },
     {
       "kennung": "M20",
@@ -318,9 +330,10 @@
       "beschreibung": "Weiteren Ausbau der Windenergie ablehnen.",
       "zitat": "Deshalb lehnen wir den weiteren Ausbau der Windenergie ab.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "3be0b39bce15d740"
+      "pruefsumme": "3fc56b5453578dd9"
     },
     {
       "kennung": "M21",
@@ -348,9 +361,10 @@
       "beschreibung": "Aus dem Pariser Klimaabkommen aussteigen.",
       "zitat": "Wir wollen zudem aus dem Pariser Klimaabkommen aussteigen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "ea14d912ce4893e1"
+      "pruefsumme": "afc8beb625c9a7de"
     },
     {
       "kennung": "M24",
@@ -358,9 +372,10 @@
       "beschreibung": "Moorschutz intensivieren und Anreize für Wiedervernässung geben",
       "zitat": "Wir wollen den Schutz der Moore gemeinsam mit den Grundstückseigentümern intensivieren und Anreize für Wiedervernässungsprojekte geben.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "390ca045b51bc4a1"
+      "pruefsumme": "a1b5cab9ecfc4b7a"
     },
     {
       "kennung": "M25",
@@ -368,9 +383,10 @@
       "beschreibung": "Heizungsgesetz vollständig auslaufen lassen; stattdessen Zertifikatehandel",
       "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "0f6d52d8bb78803a"
+      "pruefsumme": "a4cbf9ebc28af76f"
     },
     {
       "kennung": "M26",
@@ -378,9 +394,10 @@
       "beschreibung": "Windkraft und Fotovoltaik konsequent ausbauen und mit Speichern einbinden.",
       "zitat": "Ihr konsequenter Ausbau und die Einbindung von Speichern macht unsere Energieversorgung sicher und dauerhaft bezahlbar.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "1ec7c4c38fd90786"
+      "pruefsumme": "dc5d47b7ee1aeb65"
     },
     {
       "kennung": "M27",
@@ -388,9 +405,10 @@
       "beschreibung": "Sektorziele im Klimaschutzgesetz wiederherstellen, verbindliche Ziele und Emissionsgrenzen",
       "zitat": "Wir wollen verbindliche Ziele und Emissionsgrenzen und machen den Konzernen klare Vorschriften. Die Sektorziele stellen wir wieder her.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "9d241d56756820b4"
+      "pruefsumme": "ac02050bacfab31f"
     },
     {
       "kennung": "M28",
@@ -418,9 +436,10 @@
       "beschreibung": "Faktisches Verbrenner-Verbot ab 2035 umgehend aufheben",
       "zitat": "Deshalb setzen wir uns für eine umgehende Aufhebung des faktischen Verbrenner-Verbots ab dem Jahr 2035 […] ein",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "0289c3b70f9cd4c0"
+      "pruefsumme": "63946b8e506d58b4"
     },
     {
       "kennung": "M31",
@@ -438,9 +457,10 @@
       "beschreibung": "Verbot des Verbrennungsmotors aufheben.",
       "zitat": "Im Verkehrssektor wird sich [Partei] auf allen Ebenen dafür einsetzen, das Verbot des Ver- brennungsmotors aufzuheben.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "8ecf01862ab8cf3c"
+      "pruefsumme": "5e618a11c128d5e6"
     },
     {
       "kennung": "M33",
@@ -448,9 +468,10 @@
       "beschreibung": "Sektorverantwortung im Klimaschutzgesetz stärken, bei Zielverfehlung verbindlich nachsteuern",
       "zitat": "Verantwortung von Sektoren im Bundes- Klimaschutzgesetz stärken, in denen Kli - maschutz zu wenig vorankommt. Bei prog - nostizierter längerfristiger Zielverfehlung soll in den jeweiligen Sektoren verbindlich nachgesteuert werden",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "0b0aa7ce8f8c9c83"
+      "pruefsumme": "8ea9430a148ef8e7"
     },
     {
       "kennung": "M34",
@@ -479,9 +500,10 @@
       "beschreibung": "Europäischen Emissionshandel für Verkehr und Gebäude unterstützen und den CO₂-Preis als zentralen Hebel stärken",
       "zitat": "durch konkrete Maßnahmen wie die Unterstützung für den geplanten europäischen Emissionshandel für Verkehr und Gebäude und den Clean Industrial Act.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "d761a37430d3cdcc"
+      "pruefsumme": "ce2e664fd5c2020d"
     },
     {
       "kennung": "M37",
@@ -489,9 +511,10 @@
       "beschreibung": "Bau neuer Kernkraftwerke und Wiederinbetriebnahme vorhandener rechtlich ermöglichen, ohne Subventionen",
       "zitat": "Wir wollen die Nutzung klimafreundlicher Zukunftstechnologien wie Kernfusion und sicherer Kernkraftwerke ohne Subventionen ermöglichen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "4088a5092f6ef665"
+      "pruefsumme": "c1d0c7f22f84f6bf"
     },
     {
       "kennung": "M38",
@@ -499,9 +522,10 @@
       "beschreibung": "Verbot von Gas- und Ölheizungen aufheben.",
       "zitat": "Aufhebung des Verbots von Gas- und Ölheizungen",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "5289e7f81b370abc"
+      "pruefsumme": "6f5809f6dd74eb3f"
     },
     {
       "kennung": "M39",
@@ -509,9 +533,10 @@
       "beschreibung": "Erneuerbare Energien ohne EEG-Subventionen für neue Anlagen vollständig in den Markt überführen",
       "zitat": "Wir wollen die erneuerbaren Energien vollständig in den Markt überführen. Da auf diese bereits heute mehr als 60 Prozent der Stromproduktion entfallen, sind die EEG-Subventionen für neue Anlagen nicht mehr zu rechtfertigen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "3743e62ea2c692c6"
+      "pruefsumme": "318e3b0c82f24100"
     },
     {
       "kennung": "M40",
@@ -519,9 +544,10 @@
       "beschreibung": "Kein weiteres endgültiges Abschalten von Kohlekraftwerken, bevor Ersatz gebaut ist",
       "zitat": "Auf dem Weg darf es kein weiteres endgültiges Abschalten von Kohlekraftwerken geben, solange als Ersatz keine neuen Gaskraftwerke und Kraft-Wärme-Kopplungs-Anlagen gebaut sind.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "97276d8c4f31f788"
+      "pruefsumme": "af8758aa086b875a"
     },
     {
       "kennung": "M41",
@@ -529,9 +555,10 @@
       "beschreibung": "Abscheidung und Speicherung von Treibhausgasen (CCS/CCU) diskriminierungsfrei als Klimaschutz-Option ermöglichen",
       "zitat": "Die Abscheidung und Speicherung von Treibhausgasemissionen durch Carbon Capture and Storage (CCS) und Carbon Capture and Utilization (CCU) wollen wir diskriminierungsfrei als Klimaschutz-Option ermöglichen",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "24f01ea6f5047684"
+      "pruefsumme": "17580150c48f8cf4"
     },
     {
       "kennung": "M42",
@@ -564,9 +591,10 @@
       "beschreibung": "Einheitlicher europäischer Emissionshandel als Leitinstrument der Klimapolitik, mit global angestrebtem Preis für Treibhausgase",
       "zitat": "Dafür wollen wir einen einheitlichen europäischen Emissionshandel als Leitinstrument der Klimapolitik etablieren.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "bdbaa3a1376da6f7"
+      "pruefsumme": "8debad166097136b"
     },
     {
       "kennung": "M45",
@@ -585,9 +613,10 @@
       "beschreibung": "Emissionshandel für Wärme und Verkehr (ETS-2) ablehnen, stattdessen verbindliche Klimaziele und Emissionsgrenzen",
       "zitat": "Wir lehnen den Emissionshandel in den Sektoren Wärme und Verkehr (ETS-2) ab: Stattdessen müssen verbind- liche Klimaziele und Emissionsgrenzen gesetzt werden.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "ef626d9265b213e2"
+      "pruefsumme": "af82f46313d9cc13"
     },
     {
       "kennung": "M47",
@@ -595,9 +624,10 @@
       "beschreibung": "Verbrenner-Verbot zurücknehmen.",
       "zitat": "Das Verbrennerverbot wollen wir kippen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "3fffb37521053a0a"
+      "pruefsumme": "fd0a985c09ac17f8"
     },
     {
       "kennung": "M48",
@@ -605,9 +635,10 @@
       "beschreibung": "Fernwärme ausbauen und auf erneuerbare Quellen umstellen, Geothermie-Ausbauziele anheben.",
       "zitat": "Fernwärme wird in Zukunft eine wichtigere Rolle spielen, wir unterstützen ihren Ausbau und die Umstellung auf erneuerbare Energiequellen. Geothermie wollen wir ausbauen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "29cdcd9ad39e2859"
+      "pruefsumme": "3d9969e6e55f1f7c"
     },
     {
       "kennung": "M49",
@@ -615,9 +646,10 @@
       "beschreibung": "Nationalen CO2-Preis abschaffen.",
       "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "4789b4d5b2bcfeae"
+      "pruefsumme": "ab2f581ae31fea2e"
     },
     {
       "kennung": "M50",
@@ -625,9 +657,10 @@
       "beschreibung": "Bau von CCS- und CCU-Anlagen durch Superabschreibungen oder öffentliche Kredite fördern.",
       "zitat": "Den Bau von CCS- oder CCU-Anlagen wollen wir mithilfe von Superabschreibungen oder öffentlicher Kredite fördern.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "3231e48d4d9ad3a9"
+      "pruefsumme": "a88a9884e0cd64e5"
     },
     {
       "kennung": "M51",
@@ -645,9 +678,10 @@
       "beschreibung": "Repowering-Programm: alte Windanlagen durch neue ersetzen.",
       "zitat": "Im Bereich der Erneuerbaren Energien fordern wir ein „Repowering“-Programm. Alte Windanlagen wollen wir durch neue ersetzen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "8fa9cb822674ccdb"
+      "pruefsumme": "126a255de9b7fe0d"
     },
     {
       "kennung": "M53",
@@ -655,9 +689,10 @@
       "beschreibung": "Heizungsgesetz sofort abschaffen und durch andere Regelungen ersetzen.",
       "zitat": "Habecks Heizungsgesetz wollen wir sofort abschaffen und durch sinnvolle Regelungen ersetzen.",
       "ursachen_ids": [
-        1801
+        1801,
+        1802
       ],
-      "pruefsumme": "b4a7843b97c21344"
+      "pruefsumme": "8bab42a5e8812601"
     }
   ]
 }

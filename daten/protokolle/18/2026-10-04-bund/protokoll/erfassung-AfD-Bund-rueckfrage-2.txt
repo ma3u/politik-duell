@@ -1,0 +1,25 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Geplanten Ausstieg aus der Braunkohleverstromung nicht umsetzen, Kohlekraftwerke ausbauen.", "ursachen_ids": [1801, 1802], "buendel": "Kohle- und Gasverstromung", "zitat": "Den geplanten Ausstieg aus der Braunkohleverstromung wird es mit der AfD nicht geben.", "seite": 42 },
+    { "beschreibung": "Wiedereinstieg in die Kernenergie, bestehende Kraftwerke so schnell wie möglich wieder in Betrieb nehmen.", "ursachen_ids": [1801, 1802], "buendel": "Kernenergie", "zitat": "Neben dem kurzfristig notwendigen Ausbau von Kohlekraftwerken planen wir den Wiedereinstieg in die Kernenergie.", "seite": 42 },
+    { "beschreibung": "Abgabe auf CO₂ abschaffen.", "ursachen_ids": [1801, 1802], "buendel": "CO₂-Bepreisung und Emissionshandel", "zitat": "Abschaffung der CO₂ -Abgabe", "seite": 14 },
+    { "beschreibung": "Verbot von Gas- und Ölheizungen aufheben.", "ursachen_ids": [1801, 1802], "buendel": "Wärme und Gebäude", "zitat": "Aufhebung des Verbots von Gas- und Ölheizungen", "seite": 14 },
+    { "beschreibung": "Verbot des Verbrennungsmotors aufheben.", "ursachen_ids": [1801, 1802], "buendel": "Verkehr und Antriebe", "zitat": "Im Verkehrssektor wird sich die AfD auf allen Ebenen dafür einsetzen, das Verbot des Ver- brennungsmotors aufzuheben.", "seite": 42 },
+    { "beschreibung": "Weiteren Ausbau der Windenergie ablehnen.", "ursachen_ids": [1801, 1802], "buendel": "Ausbau erneuerbarer Stromerzeugung", "zitat": "Deshalb lehnen wir den weiteren Ausbau der Windenergie ab.", "seite": 81 },
+    { "beschreibung": "Aus dem Pariser Klimaabkommen aussteigen.", "ursachen_ids": [1801, 1802], "buendel": "Klimaziele, Klimaschutzgesetz und internationale Abkommen", "zitat": "Wir wollen zudem aus dem Pariser Klimaabkommen aussteigen.", "seite": 80 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1804, "seiten": [79, 81], "grund": "S. 79 nennt fehlende Kanalisationen nur als Schadensursache (Kritik, keine Zusage); S. 81 Flächenverbrauch betrifft die Ablehnung von Agro-PV auf Agrarflächen, kein Siedlungsbezug, keine Entsiegelung." },
+    { "ursache": 1805, "seiten": [79, 81], "grund": "S. 79 beschreibt Ahrtal, fehlende Dämme und bebaute Überschwemmungsgebiete als Befund; keine Zusage zu Hochwasserschutz oder Bauverbot. S. 81 ohne Hochwasserbezug." },
+    { "ursache": 1806, "seiten": [3, 16, 22, 34, 55, 62, 103, 120], "grund": "Treffer nur Eigenverantwortung allgemein, Sozialversicherungspflicht, Opt-out Asyl, Dienstversicherung; keine Elementarschadenversicherung." }
+  ]
+}
+
+Protokoll: Gelesen S. 14, 41, 42, 74, 78-81 (Energie, Klima, Landwirtschaft/Umwelt); Fundstellen zu 1806 per Auszug geprüft.
+Nicht erfasst: S. 79 (Ahrtal, fehlende Dämme, bebaute Überschwemmungsgebiete) ist Lagebeschreibung/Kritik ohne Handlungszusage; S. 14 Windenergie-Ausbaustopp zu Netzentgelten (gleiches Bündel wie S. 81); S. 14 Kohlelaufzeiten (gleiches Bündel wie S. 42); S. 41 Verzicht auf Vorrangeinspeisung (Bündel Erneuerbare, S. 81 gewählt); S. 80 "jede Steuer ablehnen" ohne Instrument.
+Keine Maßnahmen zu 1802-1805 (Hitze, Stadtgrün, Entsiegelung, Hochwasserschutz).
+
+Rückfrage 1: S. 79 und 81 erneut gelesen; nur Befund/Kritik, keine Handlungszusage zu 1804/1805.
+Rückfrage 2: 1802 bei allen 7 Maßnahmen ergänzt (neue R1).
