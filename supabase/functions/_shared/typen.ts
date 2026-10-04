@@ -145,6 +145,11 @@ export interface AnalyseAntwort {
   ursachen_ids: number[]
   /** Pauschales Urteil über eine Gruppe: nur nachfragen, keine Ursachenauswahl. */
   pauschal?: boolean
+  /**
+   * Bei einer Haltung und bei einer Forderung ohne weitere Nachfrage: kurze Antwort der KI, die die
+   * Äußerung neutral aufgreift und zu einem Alltagsproblem einlädt. Fehlt sie, zeigt die App einen festen Satz.
+   */
+  rueckmeldung?: string | null
   zusammenfassung: string
   /**
    * Nur bei Problemen ohne Thema in der Datenbank: vorläufige, neutrale

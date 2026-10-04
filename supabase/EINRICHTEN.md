@@ -269,6 +269,18 @@ ohne Parteinamen stammen, als „vorläufige Bewertung, nicht blind“.
    [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
    ersetzen → **Deploy** (gleiche Wertung, nur die neue Kennzeichnung).
 
+### 13. Forderungen und Haltungen (Plan `docs/plan-haltungen.md`, Schritt 1)
+
+Ursachen zum Antippen bei Nachfragen, keine Umdeutung von Forderungen zum Problem, Rückmeldung der KI auf
+Haltungen und abschließende Forderungen.
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261006000000_runden_forderung.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261006000000_runden_forderung.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Erlaubt den Rundenstatus `forderung`.
+2. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy** (braucht Schritt 1, sonst fehlen Forderungs-Runden in der Statistik).
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

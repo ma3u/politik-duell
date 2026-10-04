@@ -1,5 +1,5 @@
 import { EingabeFehler } from './fehler.ts'
-import { bereinigeStichwort } from './moderation.ts'
+import { bereinigeStichwort, pruefeText } from './moderation.ts'
 import {
   MAX_AUSWAHL,
   ROLLEN_IDS,
@@ -61,13 +61,19 @@ Einordnung ("typ"):
   in deinem Alltag ändern?“. Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung gehört, sonst null; "ursachen_ids": [].
 - "wert": eine persönliche Haltung oder ein Wert (z. B. „Mir ist Gerechtigkeit wichtig“), kein Problem.
-  Dann "thema_id": null und "ursachen_ids": [].
+  Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1–2 kurze Sätze: die Haltung in eigenen
+  Worten neutral aufgreifen, sagen, dass man darüber verschieden denken kann, und fragen, wo sie der Person im
+  Alltag begegnet – z. B. „Heimat ist dir wichtig – darüber kann man verschieden denken. Wo begegnet dir das im
+  Alltag?“. Stimme nicht zu und widersprich nicht. Wertet die Haltung eine Gruppe von Menschen ab, gib sie nicht
+  wieder und frag nur nach dem Alltag.
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. „Was hast du selbst erlebt, oder wo fühlst du dich unsicher?“.
   Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und übernimm es nicht in "nachfrage",
   "zusammenfassung" oder "stichwort".
   Sonst ist "pauschal" immer false.
+
+Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis im Gespräch).
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
@@ -92,7 +98,7 @@ ${katalog}
 Antworte ausschließlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null}`
+ "einschaetzung": string | null, "rueckmeldung": string | null}`
 }
 
 export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
@@ -101,7 +107,9 @@ export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
     `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : 'keine Angabe'}.` +
     (nachfragen >= MAX_NACHFRAGEN
       ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschließend ein und stelle keine Nachfrage mehr.' +
-        ' Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein.' +
+        ' Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in' +
+        ' "rueckmeldung" 1–2 kurze Sätze: die Forderung neutral aufgreifen, sagen, dass hier Lösungen für' +
+        ' konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen.' +
         ' Wähle nur Ursachen, die sich aus dem Gesagten erkennen lassen.'
       : '')
   return [
@@ -220,6 +228,19 @@ export function ohneParteinamen(text: string, parteien: Pick<Partei, 'name' | 'k
   return text.replace(muster, '[Partei]')
 }
 
+/**
+ * Rückmeldung der KI auf eine Haltung oder abschließende Forderung. Im Zweifel null – dann zeigt die
+ * App einen festen Satz: bei einem Parteinamen (die KI soll keine Partei nennen), bei einem Treffer des
+ * Moderationsfilters (etwa wenn eine abwertende Äußerung wiedergegeben wird) und wenn der Text zu kurz
+ * oder so lang ist, dass er mitten im Satz abgeschnitten würde.
+ */
+export const MAX_RUECKMELDUNG = 240
+function bereinigeRueckmeldung(roh: unknown, ohneLinks: (s: string) => string): string | null {
+  const text = ohneLinks(kurz(roh, MAX_RUECKMELDUNG + 1))
+  if (text.length < 10 || text.length > MAX_RUECKMELDUNG || text.includes('[Partei]') || pruefeText(text)) return null
+  return text
+}
+
 const kurz = (s: unknown, max: number) => (typeof s === 'string' ? s.trim().replace(/\s+/g, ' ').slice(0, max) : '')
 
 /**
@@ -255,9 +276,10 @@ export function bereinigeAntwort(
   const stichwort = bereinigeStichwort(stichwortRoh, zusammenfassung.replace(/\[Partei\]/g, ''))
 
   if (typ !== 'problem') {
+    const offen = typ === 'forderung' ? nachfrage || null : null
     return {
       typ,
-      nachfrage: typ === 'forderung' ? nachfrage || null : null,
+      nachfrage: offen,
       // Bei einer Forderung: erkanntes Thema für die Ursachenauswahl (nicht bei Pauschalurteilen).
       thema_id: typ === 'forderung' && !pauschal ? erkanntesThema?.id ?? null : null,
       ursachen_ids: [],
@@ -265,6 +287,7 @@ export function bereinigeAntwort(
       zusammenfassung,
       stichwort,
       einschaetzung: null,
+      rueckmeldung: offen || pauschal ? null : bereinigeRueckmeldung(r.rueckmeldung, ohneLinks),
     }
   }
 

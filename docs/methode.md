@@ -150,6 +150,7 @@ Die KI ist Übersetzerin, nicht Schiedsrichterin. Sie macht aus einem frei formu
 | gibt eine Forderung neutral wieder und stellt höchstens zwei Nachfragen nach dem Alltagsproblem | nennt Quellen oder Links |
 | ordnet das Problem (oder die Forderung) einem Thema und das Problem dessen Ursachen zu | bewertet Parteien oder äußert sich zu ihnen |
 | fasst das Problem in einem neutralen Satz zusammen | belehrt oder kommentiert Meinungen |
+| greift eine Haltung oder Forderung in eigenen Worten auf und lädt zu einem Alltagsproblem ein | stimmt Haltungen zu oder widerspricht ihnen |
 
 Technisch abgesichert: Die KI antwortet in einem festen Format, die Antwort wird geprüft (nur IDs aus dem Katalog, keine Links), Parteinamen in KI-Texten werden entfernt. Die Punkte berechnet ein festes Programm aus der Datenbank – dieselbe Eingabe ergibt immer dasselbe Ergebnis.
 

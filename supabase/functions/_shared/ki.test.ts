@@ -38,6 +38,12 @@ describe('systemPrompt', () => {
     expect(p).toContain('neutralen Halbsatz wieder')
     expect(p).toContain('Thema aus dem Katalog, zu dem die Forderung gehört')
   })
+
+  it('verlangt bei Haltungen eine aufgreifende Rückmeldung ohne Zustimmung oder Widerspruch', () => {
+    const p = systemPrompt(THEMEN, URSACHEN)
+    expect(p).toContain('"rueckmeldung": string | null')
+    expect(p).toContain('Stimme nicht zu und widersprich nicht')
+  })
 })
 
 describe('nutzerNachrichten', () => {
@@ -47,6 +53,7 @@ describe('nutzerNachrichten', () => {
     expect(n[0].content).toContain('bereits zweimal')
     // Eine Forderung bleibt eine Forderung, sie wird nicht zum Problem umgedeutet.
     expect(n[0].content).toContain('als "forderung" ein')
+    expect(n[0].content).toContain('"rueckmeldung"')
     expect(n.slice(1).map((x) => x.role)).toEqual(['user', 'assistant', 'user', 'assistant', 'user'])
   })
 })
@@ -111,6 +118,31 @@ describe('bereinigeAntwort', () => {
     expect(a).toMatchObject({ typ: 'forderung', pauschal: true, thema_id: null })
     // „pauschal“ zählt nur bei Forderungen.
     expect(bereinige({ typ: 'wert', pauschal: true, zusammenfassung: 'x' }).pauschal).toBeUndefined()
+  })
+
+  it('übernimmt eine Rückmeldung zu Haltungen und abschließenden Forderungen', () => {
+    const r = 'Heimat ist dir wichtig – darüber kann man verschieden denken. Wo begegnet dir das im Alltag?'
+    expect(bereinige({ typ: 'wert', rueckmeldung: r, zusammenfassung: 'x' }).rueckmeldung).toBe(r)
+    const verlauf = [spieler('Weniger X'), ki('?'), spieler('Mehr Y'), ki('?'), spieler('Weniger Z')]
+    const f = bereinige({ typ: 'forderung', rueckmeldung: 'Du willst weniger X. Magst du ein Alltagsproblem nennen?', zusammenfassung: 'z' }, verlauf)
+    expect(f.rueckmeldung).toBe('Du willst weniger X. Magst du ein Alltagsproblem nennen?')
+  })
+
+  it('verwirft die Rückmeldung, wo sie nicht passt oder unsicher ist', () => {
+    const r = 'Das ist eine Haltung. Wo begegnet dir das?'
+    // Bei offener Nachfrage, bei Problemen und bei Pauschalurteilen gibt es keine Rückmeldung.
+    expect(bereinige({ typ: 'forderung', nachfrage: 'Was genau?', rueckmeldung: r, zusammenfassung: 'x' }).rueckmeldung).toBeNull()
+    expect(bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [202], rueckmeldung: r, zusammenfassung: 'x' }).rueckmeldung).toBeUndefined()
+    const verlauf = [spieler('a'), ki('?'), spieler('b'), ki('?'), spieler('c')]
+    expect(bereinige({ typ: 'forderung', pauschal: true, rueckmeldung: r, zusammenfassung: 'x' }, verlauf).rueckmeldung).toBeNull()
+    // Zu kurz, zu lang, mit Link-Rest oder Parteiname: fester Satz in der App.
+    expect(bereinige({ typ: 'wert', rueckmeldung: 'Ok.', zusammenfassung: 'x' }).rueckmeldung).toBeNull()
+    expect(bereinige({ typ: 'wert', rueckmeldung: 'a'.repeat(241), zusammenfassung: 'x' }).rueckmeldung).toBeNull()
+    expect(bereinige({ typ: 'wert', zusammenfassung: 'x' }).rueckmeldung).toBeNull()
+    const mitPartei = bereinigeAntwort({ typ: 'wert', rueckmeldung: 'Das sagt auch die Partei Alpha. Wo begegnet dir das?', zusammenfassung: 'x' }, [spieler('t')], THEMEN, URSACHEN, PARTEIEN)
+    expect(mitPartei.rueckmeldung).toBeNull()
+    const link = bereinige({ typ: 'wert', rueckmeldung: 'Mehr dazu auf https://example.org – wo begegnet dir das im Alltag?', zusammenfassung: 'x' })
+    expect(link.rueckmeldung).not.toContain('example.org')
   })
 
   it('gibt bei Haltungen kein Thema weiter', () => {
