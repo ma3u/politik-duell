@@ -2968,4 +2968,23 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (18, 16, null, 'massnahmen', null, '2026-10-04', true, '{1801,1802,1803,1804,1805,1806}'),
   (18, 17, null, 'massnahmen', null, '2026-10-04', true, '{1801,1802,1803,1804,1805,1806}');
 
-delete from public.haltungen where id not in (0);
+-- Haltungen für die Haltungskarte (ohne Punkte). Upsert, damit gespeicherte Runden ihren Verweis behalten.
+insert into public.haltungen (id, frage, beschreibung, verwandte_themen) values
+  (1, 'Soll es ein generelles Tempolimit auf Autobahnen geben?', 'Ob auf allen Autobahnen eine feste Höchstgeschwindigkeit gelten soll oder ob Tempolimits wie bisher nur dort gelten, wo Verkehr, Unfälle oder Lärm es verlangen.', '{15,12}'),
+  (2, 'Soll Zuwanderung nach Deutschland stärker begrenzt werden?', 'Ob insgesamt weniger Menschen nach Deutschland kommen sollen als bisher – über Asyl, Familiennachzug oder Arbeit –, unabhängig davon, mit welchen Mitteln das geschähe.', '{6,2,5,9}'),
+  (3, 'Soll der Staat Eltern, die ihr kleines Kind zu Hause statt in einer Kita betreuen, finanziell unterstützen?', 'Ob Eltern von Kleinkindern, die keinen Betreuungsplatz nutzen, dafür eine eigene Geldleistung bekommen sollen – zusätzlich zu Elterngeld und Kindergeld, die alle Eltern erhalten.', '{17}')
+on conflict (id) do update set frage = excluded.frage, beschreibung = excluded.beschreibung, verwandte_themen = excluded.verwandte_themen;
+
+delete from public.haltungen where id not in (1, 2, 3);
+
+insert into public.haltung_zielkonflikte (haltung_id, seite, text, quelle_url) values
+  (1, 'ja', 'Wer ein Tempolimit will, nennt weniger schwere Unfälle: Mit Tempo 120 gab es auf Autobahnabschnitten gut ein Drittel weniger Unfälle mit Toten.', 'https://doi.org/10.1016/j.tra.2025.104616'),
+  (1, 'ja', 'Wer ein Tempolimit will, nennt außerdem den Klimaschutz: Tempo 120 auf Autobahnen spart nach Berechnungen des Umweltbundesamts jährlich rund 6,7 Millionen Tonnen Treibhausgase.', 'https://www.umweltbundesamt.de/themen/tempolimits-koennten-mehr-treibhausgase-sparen-als'),
+  (1, 'nein', 'Wer es ablehnt, nennt längere Fahrzeiten: Auf Abschnitten ohne Limit fuhren rund drei von zehn Fahrzeugen schneller als 130 km/h.', 'https://doi.org/10.1515/pwp-2021-0023'),
+  (1, 'nein', 'Wer es ablehnt, will Tempolimits nur dort, wo Verkehr, Unfälle oder Lärm sie verlangen – so gilt es heute auf knapp drei von zehn Kilometern Autobahn.', 'https://www.bast.de/DE/Publikationen/BerichteBASt/Fachveroeffentlichungen/Verkehrstechnik/Downloads/V1-BAB-Tempolimit-2015.pdf?__blob=publicationFile&v=1'),
+  (2, 'ja', 'Wer Zuwanderung stärker begrenzen will, nennt die Belastung der Kommunen: Die Unterbringung bleibt für die meisten herausfordernd, Ausländerbehörden sind besonders stark belastet.', 'https://mediendienst-integration.de/fileadmin/Dateien/EXPERTISE_FLUECHTLINGSAUFNAHME_IN_DEN_KOMMUNEN_MEDIENDIENST_INTEGRATION_NOV_2025_FINAL.pdf'),
+  (2, 'ja', 'Wer Zuwanderung stärker begrenzen will, nennt außerdem den Wohnungsmarkt: In Großstädten wächst die Nachfrage vor allem durch Zuwanderung.', 'https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2026/IW-Report_2026-Migration-und-Wohnungsmarkt.pdf'),
+  (2, 'nein', 'Wer das ablehnt, nennt den Bedarf an Arbeitskräften: Ohne Zuwanderung sänke das Arbeitskräfteangebot bis 2060 um 16 Millionen, gleich bliebe es nur mit netto rund 400.000 Zuwandernden im Jahr.', 'https://doku.iab.de/kurzber/2021/kb2021-25.pdf'),
+  (2, 'nein', 'Wer das ablehnt, nennt außerdem den Schutz politisch Verfolgter, den das Grundgesetz als Recht auf Asyl garantiert.', 'https://www.gesetze-im-internet.de/gg/art_16a.html'),
+  (3, 'ja', 'Wer das will, nennt die Wahlfreiheit der Eltern: Rund die Hälfte der Eltern von unter Dreijährigen wünscht sich keinen Betreuungsplatz.', 'https://www.akjstat.tu-dortmund.de/themen/kindertagesbetreuung-bis-zum-schuleintritt/weiterhin-ungedeckte-platzbedarfe-kindertagesbetreuung-kompakt-ausbaustand-und-bedarf-2025-erschienen'),
+  (3, 'nein', 'Wer das ablehnt, nennt frühe Förderung in der Kita: Mit einem Betreuungsgeld in Thüringen gingen Zweijährige um 8 Prozentpunkte seltener in die Kita.', 'https://docs.iza.org/dp10813.pdf');

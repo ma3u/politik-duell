@@ -1,0 +1,34 @@
+{
+  "id": 1,
+  "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
+  "beschreibung": "Ob auf allen Autobahnen eine feste Höchstgeschwindigkeit gelten soll oder ob Tempolimits wie bisher nur dort gelten, wo Verkehr, Unfälle oder Lärm es verlangen.",
+  "verwandte_themen": [
+    15,
+    12
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer ein Tempolimit will, nennt weniger schwere Unfälle: Mit Tempo 120 gab es auf Autobahnabschnitten gut ein Drittel weniger Unfälle mit Toten.",
+      "quelle_url": "https://doi.org/10.1016/j.tra.2025.104616"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer ein Tempolimit will, nennt außerdem den Klimaschutz: Tempo 120 auf Autobahnen spart nach Berechnungen des Umweltbundesamts jährlich rund 6,7 Millionen Tonnen Treibhausgase.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/tempolimits-koennten-mehr-treibhausgase-sparen-als"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer es ablehnt, nennt längere Fahrzeiten: Auf Abschnitten ohne Limit fuhren rund drei von zehn Fahrzeugen schneller als 130 km/h.",
+      "quelle_url": "https://doi.org/10.1515/pwp-2021-0023"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer es ablehnt, will Tempolimits nur dort, wo Verkehr, Unfälle oder Lärm sie verlangen – so gilt es heute auf knapp drei von zehn Kilometern Autobahn.",
+      "quelle_url": "https://www.bast.de/DE/Publikationen/BerichteBASt/Fachveroeffentlichungen/Verkehrstechnik/Downloads/V1-BAB-Tempolimit-2015.pdf?__blob=publicationFile&v=1"
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-04"
+  }
+}
