@@ -68,7 +68,8 @@ async function frageMistral(system: string, nachrichten: ReturnType<typeof nutze
     body: JSON.stringify({
       model: Deno.env.get('MISTRAL_MODEL') ?? 'mistral-small-latest',
       temperature: 0.1,
-      max_tokens: 400,
+      // Platz für drei Fassungen von Nachfrage bzw. Rückmeldung.
+      max_tokens: 700,
       response_format: { type: 'json_object' },
       messages: [{ role: 'system', content: system }, ...nachrichten],
     }),

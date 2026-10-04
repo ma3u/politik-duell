@@ -96,17 +96,17 @@ Antwort (JSON):
 ```json
 {
   "typ": "problem | forderung | wert",
-  "nachfrage": "string | null",
+  "nachfrage": "string[] | null (drei Fassungen; die Edge Function zeigt eine zufällig)",
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],
   "instrument_id": "number | null (nur bei forderung mit Thema; zweiter, kurzer Aufruf nur mit den Instrumenten des Themas)",
   "pauschal": "boolean (Pauschalurteil über eine Gruppe: keine Ursachenauswahl)",
-  "rueckmeldung": "string | null (bei wert und abschließender forderung: greift die Äußerung neutral auf; sonst fester Satz)",
+  "rueckmeldung": "string[] | null (drei Fassungen; bei wert und abschließender forderung: greift die Äußerung neutral auf; sonst fester Satz)",
   "zusammenfassung": "kurzer neutraler Satz zum Problem"
 }
 ```
 
-Systemprompt-Regeln: neutral, respektvoll, keine Belehrung, keine eigenen Bewertungen von Parteien, keine Links, Deutsch, kurze Sätze.
+Systemprompt-Regeln: neutral, respektvoll, keine Belehrung, keine eigenen Bewertungen von Parteien, keine Links, Deutsch, kurze Sätze. Temperatur niedrig (0,1), damit die Zuordnung zu Thema und Ursachen stabil bleibt; Abwechslung im Text kommt aus den drei Fassungen, nicht aus einer höheren Temperatur.
 
 ## Moderation
 

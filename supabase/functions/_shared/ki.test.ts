@@ -48,8 +48,9 @@ describe('systemPrompt', () => {
 
   it('verlangt bei Haltungen eine aufgreifende Rückmeldung ohne Zustimmung oder Widerspruch', () => {
     const p = systemPrompt(THEMEN, URSACHEN)
-    expect(p).toContain('"rueckmeldung": string | null')
+    expect(p).toContain('"rueckmeldung": string[] | null')
     expect(p).toContain('Stimme nicht zu und widersprich nicht')
+    expect(p).toContain('Liste von drei Fassungen')
   })
 })
 
@@ -164,6 +165,29 @@ describe('bereinigeAntwort', () => {
     expect(a.nachfrage).toBe(`Du möchtest, dass die Mieten sinken. ${NACHFRAGE_FORDERUNG}`)
     const b = bereinige({ typ: 'forderung', nachfrage: 'Du willst weniger Steuern. Was soll sich ändern?', zusammenfassung: 'x' })
     expect(b.nachfrage).toBe('Du willst weniger Steuern. Was soll sich ändern?')
+  })
+
+  it('wählt zufällig eine von mehreren Fassungen', () => {
+    const fassungen = ['Was ändert sich für dich?', 'Wo merkst du das im Alltag?', 'Woran hakt es bei dir?']
+    const roh = { typ: 'forderung', nachfrage: fassungen, thema_id: 2, zusammenfassung: 'x' }
+    const mit = (z: number) => bereinigeAntwort(roh, [spieler('Test')], THEMEN, URSACHEN, [], () => z).nachfrage
+    expect([mit(0), mit(0.5), mit(0.99)]).toEqual(fassungen)
+    const r = ['Heimat ist dir wichtig. Wo begegnet dir das?', 'Dir liegt Heimat am Herzen. Woran merkst du das?']
+    const w = (z: number) => bereinigeAntwort({ typ: 'wert', rueckmeldung: r, zusammenfassung: 'x' }, [spieler('t')], THEMEN, URSACHEN, [], () => z)
+    expect([w(0).rueckmeldung, w(0.9).rueckmeldung]).toEqual(r)
+  })
+
+  it('nimmt unter den Fassungen nur brauchbare', () => {
+    const verlauf = [spieler('a'), ki('Wo merkst du das im Alltag?'), spieler('b')]
+    // Ohne Frage oder schon gestellt: nicht gewählt, solange es eine bessere Fassung gibt.
+    const roh = { typ: 'forderung', nachfrage: ['Du willst X.', 'Wo merkst du das im Alltag?', 'Was soll sich ändern?'], zusammenfassung: 'x' }
+    for (const z of [0, 0.5, 0.99]) {
+      expect(bereinigeAntwort(roh, verlauf, THEMEN, URSACHEN, [], () => z).nachfrage).toBe('Was soll sich ändern?')
+    }
+    // Unbrauchbare Rückmeldungen fallen heraus; bleibt keine, gibt es den festen Satz (null).
+    const r = { typ: 'wert', rueckmeldung: ['Ok.', 'Das sagt auch die Partei Alpha. Wo begegnet dir das?', 'Gerechtigkeit ist dir wichtig. Wo merkst du das?'], zusammenfassung: 'x' }
+    expect(bereinigeAntwort(r, [spieler('t')], THEMEN, URSACHEN, PARTEIEN, () => 0).rueckmeldung).toBe('Gerechtigkeit ist dir wichtig. Wo merkst du das?')
+    expect(bereinige({ typ: 'wert', rueckmeldung: ['Ok.', 'Na.'], zusammenfassung: 'x' }).rueckmeldung).toBeNull()
   })
 
   it('wiederholt eine Nachfrage nicht wörtlich', () => {
