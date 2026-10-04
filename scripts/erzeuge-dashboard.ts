@@ -1,54 +1,10 @@
-// Erzeugt Dateien zum Einfügen im Supabase-Dashboard (ohne Kommandozeile):
-//   supabase/dashboard/1-datenbank.sql   – Schema + Beispieldaten für den SQL Editor
-//   supabase/dashboard/2-analyse.ts      – Edge Function `analyse` als eine Datei für den Function-Editor
-//   supabase/dashboard/3-pruefung.ts     – Edge Function `pruefung` (Bewertung durch Eingeladene)
+// Erzeugt die Dateien zum Einfügen im Supabase-Dashboard (ohne Kommandozeile) in supabase/dashboard/,
+// Inhalt siehe scripts/dashboard.ts.
 // Aufruf: npm run dashboard
-import { execFileSync } from 'node:child_process'
-import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdirSync, writeFileSync } from 'node:fs'
+import { dashboardDateien } from './dashboard.ts'
 
-const wurzel = new URL('../supabase/', import.meta.url)
-const ziel = new URL('dashboard/', wurzel)
+const ziel = new URL('../supabase/dashboard/', import.meta.url)
 mkdirSync(ziel, { recursive: true })
-
-const migrationen = readdirSync(new URL('migrations/', wurzel))
-  .filter((d) => d.endsWith('.sql'))
-  .sort()
-  .map((d) => `-- ===== migrations/${d} =====\n` + readFileSync(new URL(`migrations/${d}`, wurzel), 'utf8'))
-const seed = readFileSync(new URL('seed.sql', wurzel), 'utf8')
-
-writeFileSync(
-  new URL('1-datenbank.sql', ziel),
-  `-- AUTOMATISCH ERZEUGT (npm run dashboard) – nicht von Hand bearbeiten.
--- Im Supabase-Dashboard: SQL Editor → New query → alles einfügen → Run.
--- Nur beim ersten Mal komplett ausführen. Später reicht der Teil ab „seed.sql“.
-
-begin;
-
-${migrationen.join('\n')}
--- ===== seed.sql =====
-${seed}
-commit;
-`,
-)
-
-const funktionen = new URL('functions/', wurzel)
-for (const [datei, name] of [
-  ['2-analyse.ts', 'analyse'],
-  ['3-pruefung.ts', 'pruefung'],
-]) {
-  const bundle = new URL(datei, ziel)
-  execFileSync('npx', ['-y', 'deno', 'bundle', '--quiet', '--external', 'npm:*', '-o', bundle.pathname, `${name}/index.ts`], {
-    cwd: funktionen,
-    stdio: 'inherit',
-  })
-  writeFileSync(
-    bundle,
-    `// @ts-nocheck
-// AUTOMATISCH ERZEUGT aus supabase/functions/${name} (npm run dashboard) – nicht von Hand bearbeiten.
-// Im Supabase-Dashboard: Edge Functions → Deploy a new function → Via Editor,
-// Name „${name}“, diesen Inhalt komplett einfügen → Deploy.
-` + readFileSync(bundle, 'utf8'),
-  )
-}
-rmSync(new URL('deno.lock', funktionen), { force: true })
+for (const [datei, inhalt] of Object.entries(dashboardDateien())) writeFileSync(new URL(datei, ziel), inhalt)
 console.log('supabase/dashboard/ geschrieben.')
