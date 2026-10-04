@@ -19,6 +19,8 @@ import {
 export const MAX_NACHFRAGEN = 2
 export const MAX_NACHRICHTEN = 2 * MAX_NACHFRAGEN + 1
 export const MAX_TEXTLAENGE = 500
+/** Zweite Nachfrage, wenn die KI die erste wörtlich wiederholt. */
+export const NACHFRAGE_BEISPIEL = 'Magst du ein Beispiel nennen, wann dich das zuletzt betroffen hat?'
 /** Ergänzte Frage, wenn die KI eine Forderung nur wiedergibt, ohne nachzufragen. */
 export const NACHFRAGE_FORDERUNG = 'Was soll sich dadurch in deinem Alltag ändern?'
 /** Nachfrage, wenn das Thema klar ist, aber keine Ursache erkennbar. */
@@ -108,6 +110,10 @@ export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
   const nachfragen = verlauf.filter((n) => n.von === 'ki').length
   const hinweis =
     `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : 'keine Angabe'}.` +
+    (nachfragen === 1
+      ? ' Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor,' +
+        ' z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder.'
+      : '') +
     (nachfragen >= MAX_NACHFRAGEN
       ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschließend ein und stelle keine Nachfrage mehr.' +
         ' Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in' +
@@ -244,6 +250,21 @@ function bereinigeRueckmeldung(roh: unknown, ohneLinks: (s: string) => string): 
   return text
 }
 
+const vergleichbar = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
+
+/**
+ * Wiederholt eine Nachfrage eine frühere wörtlich (die KI antwortet bei gleicher Eingabe gleich),
+ * stattdessen nach einem Beispiel fragen – oder, falls auch das schon gefragt wurde, nach der Ursache.
+ */
+function ohneWiederholung(nachfrage: string, verlauf: Nachricht[]): string {
+  if (!nachfrage) return nachfrage
+  const frueher = new Set(verlauf.filter((n) => n.von === 'ki').map((n) => vergleichbar(n.text)))
+  for (const kandidat of [nachfrage, NACHFRAGE_BEISPIEL, NACHFRAGE_URSACHE]) {
+    if (!frueher.has(vergleichbar(kandidat))) return kandidat
+  }
+  return nachfrage
+}
+
 const kurz = (s: unknown, max: number) => (typeof s === 'string' ? s.trim().replace(/\s+/g, ' ').slice(0, max) : '')
 
 /**
@@ -273,6 +294,7 @@ export function bereinigeAntwort(
     // Gibt die KI die Forderung nur wieder („Du möchtest, dass die Mieten sinken.“), fehlt die Frage – ergänzen.
     else if (!nachfrage.includes('?')) nachfrage = `${nachfrage.replace(/[.!…]*$/, '')}. ${NACHFRAGE_FORDERUNG}`
   }
+  nachfrage = ohneWiederholung(nachfrage, verlauf)
   const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null
 
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120))
@@ -320,7 +342,7 @@ export function bereinigeAntwort(
     return {
       typ,
       // Ohne Frage (nur eine Feststellung) die Standardfrage nehmen.
-      nachfrage: fragen ? (nachfrage.includes('?') ? nachfrage : NACHFRAGE_URSACHE) : null,
+      nachfrage: fragen ? ohneWiederholung(nachfrage.includes('?') ? nachfrage : NACHFRAGE_URSACHE, verlauf) : null,
       thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung,

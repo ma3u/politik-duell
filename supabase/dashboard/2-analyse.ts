@@ -278,6 +278,7 @@ var MAX_AUSWAHL = 3;
 var MAX_NACHFRAGEN = 2;
 var MAX_NACHRICHTEN = 2 * MAX_NACHFRAGEN + 1;
 var MAX_TEXTLAENGE = 500;
+var NACHFRAGE_BEISPIEL = "Magst du ein Beispiel nennen, wann dich das zuletzt betroffen hat?";
 var NACHFRAGE_FORDERUNG = "Was soll sich dadurch in deinem Alltag \xE4ndern?";
 var NACHFRAGE_URSACHE = "Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.";
 var ROLLEN_TEXT = {
@@ -355,7 +356,7 @@ Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 }
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
+  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
   return [
     {
       role: "system",
@@ -446,6 +447,19 @@ function bereinigeRueckmeldung(roh, ohneLinks) {
   if (text.length < 10 || text.length > MAX_RUECKMELDUNG || text.includes("[Partei]") || pruefeText(text)) return null;
   return text;
 }
+var vergleichbar = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+function ohneWiederholung(nachfrage, verlauf) {
+  if (!nachfrage) return nachfrage;
+  const frueher = new Set(verlauf.filter((n) => n.von === "ki").map((n) => vergleichbar(n.text)));
+  for (const kandidat of [
+    nachfrage,
+    NACHFRAGE_BEISPIEL,
+    NACHFRAGE_URSACHE
+  ]) {
+    if (!frueher.has(vergleichbar(kandidat))) return kandidat;
+  }
+  return nachfrage;
+}
 var kurz = (s, max) => typeof s === "string" ? s.trim().replace(/\s+/g, " ").slice(0, max) : "";
 function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   const r = roh && typeof roh === "object" ? roh : {};
@@ -460,6 +474,7 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
     else if (!nachfrage) nachfrage = "Was l\xE4uft in deinem Alltag konkret schief?";
     else if (!nachfrage.includes("?")) nachfrage = `${nachfrage.replace(/[.!…]*$/, "")}. ${NACHFRAGE_FORDERUNG}`;
   }
+  nachfrage = ohneWiederholung(nachfrage, verlauf);
   const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null;
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120));
   const stichwortRoh = typeof r.stichwort === "string" ? ohneLinks(r.stichwort).replace(/\[Partei\]/g, "").trim() : "";
@@ -500,7 +515,7 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
     return {
       typ,
       // Ohne Frage (nur eine Feststellung) die Standardfrage nehmen.
-      nachfrage: fragen ? nachfrage.includes("?") ? nachfrage : NACHFRAGE_URSACHE : null,
+      nachfrage: fragen ? ohneWiederholung(nachfrage.includes("?") ? nachfrage : NACHFRAGE_URSACHE, verlauf) : null,
       thema_id: fragen ? thema.id : null,
       ursachen_ids: [],
       zusammenfassung,

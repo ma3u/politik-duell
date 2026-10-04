@@ -4,6 +4,7 @@ import {
   antwortAusAuswahl,
   bereinigeAntwort,
   EingabeFehler,
+  NACHFRAGE_BEISPIEL,
   NACHFRAGE_FORDERUNG,
   NACHFRAGE_URSACHE,
   nutzerNachrichten,
@@ -55,6 +56,8 @@ describe('nutzerNachrichten', () => {
     // Eine Forderung bleibt eine Forderung, sie wird nicht zum Problem umgedeutet.
     expect(n[0].content).toContain('als "forderung" ein')
     expect(n[0].content).toContain('"rueckmeldung"')
+    expect(nutzerNachrichten([spieler('a'), ki('b'), spieler('c')], null)[0].content).toContain('frag anders als zuvor')
+    expect(nutzerNachrichten([spieler('a')], null)[0].content).not.toContain('frag anders')
     expect(n.slice(1).map((x) => x.role)).toEqual(['user', 'assistant', 'user', 'assistant', 'user'])
   })
 })
@@ -156,6 +159,18 @@ describe('bereinigeAntwort', () => {
     expect(a.nachfrage).toBe(`Du möchtest, dass die Mieten sinken. ${NACHFRAGE_FORDERUNG}`)
     const b = bereinige({ typ: 'forderung', nachfrage: 'Du willst weniger Steuern. Was soll sich ändern?', zusammenfassung: 'x' })
     expect(b.nachfrage).toBe('Du willst weniger Steuern. Was soll sich ändern?')
+  })
+
+  it('wiederholt eine Nachfrage nicht wörtlich', () => {
+    const erste = `Du möchtest, dass die Mieten sinken. ${NACHFRAGE_FORDERUNG}`
+    const verlauf = [spieler('Die Miete muss runter'), ki(erste), spieler('Die Miete muss runter')]
+    const a = bereinige({ typ: 'forderung', nachfrage: erste, thema_id: 2, zusammenfassung: 'x' }, verlauf)
+    expect(a.nachfrage).toBe(NACHFRAGE_BEISPIEL)
+    // Auch eine ergänzte Frage zählt als Wiederholung, und bei Problemen gilt dasselbe.
+    const b = bereinige({ typ: 'forderung', nachfrage: 'Du möchtest, dass die Mieten sinken.', zusammenfassung: 'x' }, verlauf)
+    expect(b.nachfrage).toBe(NACHFRAGE_BEISPIEL)
+    const c = bereinige({ typ: 'problem', thema_id: 2, nachfrage: NACHFRAGE_URSACHE, zusammenfassung: 'x' }, [spieler('a'), ki(NACHFRAGE_URSACHE), spieler('b')])
+    expect(c.nachfrage).toBe(NACHFRAGE_BEISPIEL)
   })
 
   it('nimmt die Standardfrage, wenn eine Nachfrage zur Ursache keine Frage ist', () => {
