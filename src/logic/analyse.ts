@@ -1,5 +1,5 @@
 import { grenzeAntwort, instrumenteZurAuswahl, MAX_NACHFRAGEN, mitInstrument, NACHFRAGE_URSACHE } from '../../supabase/functions/_shared/ki.ts'
-import type { AnalyseAntwort, InstrumentEintrag, Massnahme, Nachricht, Thema, Ursache } from '../data/types'
+import type { AnalyseAntwort, HaltungEintrag, InstrumentEintrag, Massnahme, Nachricht, Thema, Ursache } from '../data/types'
 
 // Mock der Edge Function `analyse`. Liefert dasselbe JSON-Format wie später
 // die KI, arbeitet aber nur mit Schlagwörtern. Vergibt – wie die KI – keine
@@ -41,6 +41,7 @@ export const NACHFRAGE_PAUSCHAL = 'Was hast du selbst erlebt, oder wo fühlst du
 const WERT_MUSTER = [
   /\bich finde\b/,
   /\bmeiner meinung\b/,
+  /\bich bin (fuer|dafuer|gegen|dagegen)\b/,
   /\b(freiheit|gerechtigkeit|solidaritaet|tradition|heimat|werte|anstand|respekt|zusammenhalt)\b/,
 ]
 
@@ -83,6 +84,22 @@ export interface InstrumentOptionen {
   massnahmen?: Pick<Massnahme, 'instrument_id' | 'land'>[]
   /** Bundesland der Person: nur dann kommen Landes-Instrumente in Frage. */
   land?: string | null
+  /** Vollständig erfasste Haltungen (wie im Prompt der Edge Function); nur ihnen wird eine Haltung zugeordnet. */
+  haltungen?: Pick<HaltungEintrag, 'id' | 'schlagwoerter'>[]
+}
+
+/** Die Haltung mit den meisten Schlagwort-Treffern; ohne Treffer null (nicht raten). */
+function erkenneHaltung(text: string, haltungen: Pick<HaltungEintrag, 'id' | 'schlagwoerter'>[] = []): number | null {
+  let beste: number | null = null
+  let besteTreffer = 0
+  for (const h of haltungen) {
+    const n = treffer(text, h.schlagwoerter)
+    if (n > besteTreffer) {
+      beste = h.id
+      besteTreffer = n
+    }
+  }
+  return beste
 }
 
 /** Das Instrument des Themas mit den meisten Schlagwort-Treffern; ohne Treffer null (nicht raten). */
@@ -148,6 +165,20 @@ export function analysiere(
       },
       thema ? erkenneInstrument(gesamt, thema, optionen) : null,
     )
+  }
+
+  // Haltung zu einer erfassten Wertfrage („Ich finde, ein Tempolimit …“): vor dem Thema, sonst würde sie als
+  // Problem ohne Ursache nachgefragt. Ohne passende Haltung bleibt es bei der bisherigen Reihenfolge.
+  const haltung = WERT_MUSTER.some((m) => m.test(letzter)) ? erkenneHaltung(letzter, optionen.haltungen) : null
+  if (haltung !== null) {
+    return {
+      typ: 'wert',
+      nachfrage: null,
+      thema_id: null,
+      ursachen_ids: [],
+      haltung_id: haltung,
+      zusammenfassung: `Persönliche Haltung: ${kuerze(spielerTexte.at(-1) ?? '')}`,
+    }
   }
 
   if (thema) {

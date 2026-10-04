@@ -9,6 +9,8 @@ const WURZEL = new URL('../', import.meta.url)
 /** Woher die Dateien kommen: Arbeitsverzeichnis oder ein Git-Stand (etwa der Zielzweig eines Pull Requests). */
 interface Quelle {
   themen(): string[]
+  /** Haltungen (daten/haltungen/); fehlt der Ordner, eine leere Liste. */
+  haltungen(): string[]
   /** Übernommene Exporte der Prüfenden (daten/pruefungen/); fehlt der Ordner, eine leere Liste. */
   pruefungen(): string[]
   lesen(pfad: string): string
@@ -16,6 +18,7 @@ interface Quelle {
 
 const arbeitsverzeichnis: Quelle = {
   themen: () => readdirSync(new URL('daten/themen/', WURZEL)),
+  haltungen: () => (existsSync(new URL('daten/haltungen/', WURZEL)) ? readdirSync(new URL('daten/haltungen/', WURZEL)) : []),
   pruefungen: () => (existsSync(new URL('daten/pruefungen/', WURZEL)) ? readdirSync(new URL('daten/pruefungen/', WURZEL)) : []),
   lesen: (pfad) => readFileSync(new URL(pfad, WURZEL), 'utf8'),
 }
@@ -25,6 +28,13 @@ export function gitStand(ref: string): Quelle {
   const git = (...args: string[]) => execFileSync('git', args, { cwd: WURZEL, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] })
   return {
     themen: () => git('ls-tree', '--name-only', `${ref}:daten/themen/`).split('\n').filter(Boolean),
+    haltungen: () => {
+      try {
+        return git('ls-tree', '--name-only', `${ref}:daten/haltungen/`).split('\n').filter(Boolean)
+      } catch {
+        return []
+      }
+    },
     pruefungen: () => {
       try {
         return git('ls-tree', '--name-only', `${ref}:daten/pruefungen/`).split('\n').filter(Boolean)
@@ -70,6 +80,15 @@ export function pruefeDatenordner(quelle: Quelle = arbeitsverzeichnis): Prueferg
       syntaxfehler.push(`${pfad}: kein gültiges JSON – ${e instanceof Error ? e.message : e}`)
     }
   }
+  const haltungen: Datei[] = []
+  for (const d of quelle.haltungen().filter((x) => x.endsWith('.json')).sort()) {
+    const pfad = `daten/haltungen/${d}`
+    try {
+      haltungen.push({ pfad, inhalt: JSON.parse(quelle.lesen(pfad)) })
+    } catch (e) {
+      syntaxfehler.push(`${pfad}: kein gültiges JSON – ${e instanceof Error ? e.message : e}`)
+    }
+  }
   if (syntaxfehler.length) return { ...pruefeKatalog({ pfad: '', inhalt: null }, []), fehler: syntaxfehler, warnungen: [] }
-  return pruefeKatalog(dateien[0], dateien.slice(1), ids, pruefungen)
+  return pruefeKatalog(dateien[0], dateien.slice(1), ids, pruefungen, haltungen)
 }

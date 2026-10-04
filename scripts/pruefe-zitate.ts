@@ -1,4 +1,4 @@
-// Prüft alle wörtlichen Zitate gegen die Programm-PDFs: Steht das Zitat auf der
+// Prüft alle wörtlichen Zitate (Maßnahmen und Positionen zu Haltungen) gegen die Programm-PDFs: Steht das Zitat auf der
 // Seite, auf die der Beleg zeigt? Lädt jedes Programm einmal herunter und legt
 // es in .cache/programme/ ab. Weicht eine Datei von der ausgewerteten Fassung ab
 // (Prüfsumme in parteien.json), gibt es eine Warnung.
@@ -38,13 +38,30 @@ if (process.argv.includes('--archivieren')) {
     }
   }
 }
-const massnahmen = katalog.massnahmen.filter((m) => m.zitat && (nurThema === null || m.thema_id === nurThema))
 const partei = (id: number) => katalog.parteien.find((p) => p.id === id)?.kurzname ?? String(id)
 
-const jeProgramm = new Map<string, typeof massnahmen>()
-for (const m of massnahmen) {
-  const url = m.beleg_programm_url.split('#')[0]
-  jeProgramm.set(url, [...(jeProgramm.get(url) ?? []), m])
+/** Was geprüft wird: Zitate von Maßnahmen und von Positionen zu Haltungen (dort ist der Wortlaut der Beleg). */
+interface Zitat {
+  wo: string
+  zitat: string
+  beleg_programm_url: string
+}
+const zitate: Zitat[] = [
+  ...katalog.massnahmen
+    .filter((m) => m.zitat && (nurThema === null || m.thema_id === nurThema))
+    .map((m) => ({ wo: `Maßnahme ${m.id} (${partei(m.partei_id)}${m.land ? `, ${m.land}` : ''})`, zitat: m.zitat!, beleg_programm_url: m.beleg_programm_url })),
+  // Haltungen gehören zu keinem Thema – mit --thema bleiben sie weg.
+  ...(nurThema === null ? katalog.haltungen : []).flatMap((h) =>
+    h.positionen
+      .filter((p) => p.zitat && p.beleg_programm_url)
+      .map((p) => ({ wo: `Haltung ${h.id}, Position ${partei(p.partei_id)}`, zitat: p.zitat!, beleg_programm_url: p.beleg_programm_url! })),
+  ),
+]
+
+const jeProgramm = new Map<string, Zitat[]>()
+for (const z of zitate) {
+  const url = z.beleg_programm_url.split('#')[0]
+  jeProgramm.set(url, [...(jeProgramm.get(url) ?? []), z])
 }
 
 const fehler: string[] = []
@@ -64,17 +81,17 @@ for (const [url, liste] of jeProgramm) {
     continue
   }
   for (const m of liste) {
-    const wo = `Maßnahme ${m.id} (${partei(m.partei_id)}${m.land ? `, ${m.land}` : ''})`
+    const { wo } = m
     const seite = seiteVon(m.beleg_programm_url)
     if (seite === null) {
       fehler.push(`${wo}: Beleg ohne Seitenanker`)
       continue
     }
-    const befund = findeZitat(m.zitat!, seiten, seite)
+    const befund = findeZitat(m.zitat, seiten, seite)
     if (befund.status === 'ok') {
       ok++
       // Auslassungen, die den Sinn ändern könnten: zum Nachsehen in der Belegprüfung (npm run pruefliste).
-      const kontext = zitatKontext(m.zitat!, seiten, seite)
+      const kontext = zitatKontext(m.zitat, seiten, seite)
       if (kontext?.warnungen.length)
         auslassungen.push(`${wo}: ${kontext.warnungen.join('; ')} – ausgelassen: ${kontext.auslassungen.map((a) => `„${a.length > 160 ? `${a.slice(0, 160)}…` : a}“`).join(' / ')}`)
     }
@@ -93,7 +110,7 @@ if (auslassungen.length && process.env.GITHUB_ACTIONS)
 for (const h of hinweise) console.warn(process.env.GITHUB_ACTIONS ? `::warning::${h}` : `Hinweis: ${h}`)
 for (const f of fehler) console.error(`Fehler:  ${f}`)
 console.log(
-  `\n${ok} von ${massnahmen.length} Zitaten auf der angegebenen Seite gefunden` +
+  `\n${ok} von ${zitate.length} Zitaten auf der angegebenen Seite gefunden` +
     (ungeprueft ? `, ${ungeprueft} ungeprüft (Programm nicht erreichbar).` : '.'),
 )
 if (fehler.length) process.exit(1)

@@ -27,3 +27,14 @@ export function MassnahmeBelege({ massnahme }: { massnahme: Massnahme }) {
     </span>
   )
 }
+
+/** Link ins Programm mit Seitenangabe („Programm, S. 12“) – etwa für Positionen in der Haltungskarte. */
+export function ProgrammLink({ url, land = false }: { url: string; land?: boolean }) {
+  return (
+    <span className="belege">
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {seitenText(url, land)}
+      </a>
+    </span>
+  )
+}

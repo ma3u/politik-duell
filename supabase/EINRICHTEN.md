@@ -325,6 +325,34 @@ Verlauf, und die Runde geht weiter. Ein pauschales Urteil („Die … sind alle 
 bisher die Nachfrage nach dem Erlebten. Im SQL Editor: `select status, problem_text, stichwort from runden order
 by id desc limit 1` zeigt `grenze` mit leerem Text und ohne Stichwort.
 
+### 16. Haltungskarte (Plan `docs/plan-haltungen.md`, Schritt 4)
+
+Wer eine Haltung nennt, die eindeutig eine erfasste Wertfrage berührt (etwa „Ich finde, es sollte ein Tempolimit
+geben“), bekommt die Haltungskarte: wo jede Partei dazu steht (mit Wortlaut und Seite im Programm) und welche Ziele
+gegeneinander stehen – ohne Punkte. Am Ende der Partie stehen alle Haltungs- und Forderungskarten unter „Worüber ihr
+gesprochen habt“. Einmalig, **in dieser Reihenfolge**:
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261009000000_haltungen.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261009000000_haltungen.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Legt die Tabellen `haltungen`, `haltung_positionen` und `haltung_zielkonflikte` und die
+   View `haltungen_vollstaendig` an („Alle sieben oder keine“), ergänzt `runden.haltung_id` und erweitert die
+   Testphasen-Funktion um Entwürfe der Positionen.
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1). Solange `daten/haltungen/` leer ist, bleiben die Tabellen leer –
+   dann läuft alles wie bisher, nur ohne Haltungskarte.
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy**. Sie nennt der KI die vollständig erfassten Haltungen (ohne Testphase nur geprüfte) und
+   speichert bei einer Haltung die Nummer der Wertfrage. Kein zweiter KI-Aufruf, keine neuen Secrets. Ohne Schritt 1
+   findet sie die View nicht und arbeitet ohne Haltungen weiter.
+
+Prüfen: Im SQL Editor `select * from haltungen_vollstaendig` – erscheint eine Haltung erst, wenn alle sieben
+Parteien eine Position haben (`geprueft` = alle geprüft; sonst nur mit Zugang zur Testphase sichtbar). In der App
+eine Haltung zu einer solchen Frage nennen – unter „Das ist eine Haltung …“ erscheint die Karte mit den sieben
+Positionen, den Zielkonflikten und verwandten Themen zum Antippen. Ohne passende Haltung bleibt es beim Satz zur
+persönlichen Haltung. Mit „Mit Beispieldaten spielen“ lässt sich die Karte ohne Datenbank ansehen (fiktive
+Parteien, z. B. „Ich finde, ein Tempolimit wäre richtig“).
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

@@ -17,6 +17,8 @@ const ort = (k: Katalog, partei: number, land: string | null) => `${k.parteien.f
  *    Maßnahmen zuschneiden. Ausnahme: nachträgliche Ursachen (`nachtraeglich`), wenn jeder aktuelle
  *    Eintrag des Themas `durchsucht_fuer` angibt.
  * 4. Neue oder geänderte Ursachen und Ziele nennen keine Partei.
+ * 5. Haltungen: Frage, Beschreibung und Zielkonflikte (Phase A) und die Positionen (Phase B) ändern sich nicht im
+ *    selben Pull Request; ändert sich Phase A nach der Freigabe, braucht es eine neue Freigabe.
  */
 export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
   const fehler: string[] = []
@@ -51,6 +53,30 @@ export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
   for (const m of neu.massnahmen)
     if (m.instrument_id === undefined) pruefe(m.id, { werte: werte(m), herkunft: m.entwurf_herkunft, bewertungen: m.bewertungen ?? 0 }, 'Maßnahme')
   fehler.push(...trennePhasen(alt, neu))
+  fehler.push(...trenneHaltungsPhasen(alt, neu))
+  return fehler
+}
+
+/**
+ * Haltungen in zwei Phasen wie Themen (docs/plan-haltungen.md, „Erfassen und Prüfen“): erst Frage, Beschreibung,
+ * verwandte Themen und Zielkonflikte ohne Blick in die Programme, freigegeben von der Betreiberin; dann die
+ * Positionen. Sonst ließe sich die Frage passend zu den gefundenen Positionen zuschneiden.
+ */
+export function trenneHaltungsPhasen(alt: Katalog, neu: Katalog): string[] {
+  const fehler: string[] = []
+  const phaseA = (h: Katalog['haltungen'][number]) => JSON.stringify([h.frage, h.beschreibung, h.verwandte_themen, h.zielkonflikte])
+  for (const h of neu.haltungen) {
+    const vorher = alt.haltungen.find((x) => x.id === h.id)
+    const aGeaendert = !vorher || phaseA(vorher) !== phaseA(h)
+    const bGeaendert = JSON.stringify(vorher?.positionen ?? []) !== JSON.stringify(h.positionen)
+    if (aGeaendert && bGeaendert && h.positionen.length)
+      fehler.push(
+        `Haltung ${h.id}: ${vorher ? 'Frage, Beschreibung oder Zielkonflikte' : 'neue Haltung'} und Positionen im selben Pull Request – ` +
+          'erst Frage, Beschreibung und Zielkonflikte freigeben lassen (eigener Pull Request), dann die Positionen erfassen',
+      )
+    if (vorher && aGeaendert && h.freigabe && vorher.freigabe?.datum === h.freigabe.datum)
+      fehler.push(`Haltung ${h.id}: Frage, Beschreibung oder Zielkonflikte nach der Freigabe geändert – neue Freigabe („freigabe.datum“) nötig`)
+  }
   return fehler
 }
 

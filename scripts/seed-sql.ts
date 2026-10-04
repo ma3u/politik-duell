@@ -1,5 +1,13 @@
 // Baut den Inhalt von supabase/seed.sql aus dem geprüften Datenkatalog.
-import { pruefEinheiten, spielbareAbdeckung, spielbareInstrumente, spielbareLandesprogramme, spielbareMassnahmen, type Katalog } from '../src/data/katalog.ts'
+import {
+  pruefEinheiten,
+  spielbareAbdeckung,
+  spielbareHaltungen,
+  spielbareInstrumente,
+  spielbareLandesprogramme,
+  spielbareMassnahmen,
+  type Katalog,
+} from '../src/data/katalog.ts'
 
 const q = (v: string | null | undefined) => (v == null ? 'null' : `'${v.replace(/'/g, "''")}'`)
 const zeilen = (werte: string[]) => werte.join(',\n  ')
@@ -11,6 +19,7 @@ export function seedSql(k: Katalog): string {
   const landesprogramme = spielbareLandesprogramme(k)
   const instrumente = spielbareInstrumente(k, true)
   const einheiten = pruefEinheiten(k)
+  const haltungen = spielbareHaltungen(k, true)
   const kopf = k.fiktiv
     ? '-- FIKTIVE Platzhalterdaten: Parteien, Maßnahmen, Punkte und Links sind erfunden.'
     : '-- Nur vollständig geprüfte Einträge je Thema und Partei; alles andere gilt als „noch nicht erfasst“.\n' +
@@ -24,6 +33,8 @@ delete from public.massnahmen;
 delete from public.abdeckung;
 delete from public.landesprogramme;
 delete from public.pruef_einheiten;
+delete from public.haltung_positionen;
+delete from public.haltung_zielkonflikte;
 
 insert into public.parteien (id, name, kurzname, farbe, programm_url, programm_stand) values
   ${zeilen(k.parteien.map((p) => `(${p.id}, ${q(p.name)}, ${q(p.kurzname)}, ${q(p.farbe)}, ${q(p.programm_url)}, ${q(p.programm_stand)})`))}
@@ -114,6 +125,37 @@ insert into public.pruef_einheiten (id, thema_id) values
     ? `
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   ${zeilen(abdeckung.map((a) => `(${a.thema_id}, ${a.partei_id}, ${q(a.land)}, ${q(a.art)}, ${q(a.begruendung)}, ${q(a.stand)}, ${a.ki_entwurf ?? false}, ${a.durchsucht_fuer ? `'{${a.durchsucht_fuer.join(',')}}'` : 'null'})`))};
+`
+    : ''
+}${
+  haltungen.haltungen.length
+    ? `
+-- Haltungen für die Haltungskarte (ohne Punkte). Upsert, damit gespeicherte Runden ihren Verweis behalten.
+insert into public.haltungen (id, frage, beschreibung, verwandte_themen) values
+  ${zeilen(haltungen.haltungen.map((h) => `(${h.id}, ${q(h.frage)}, ${q(h.beschreibung)}, '{${h.verwandte_themen.join(',')}}')`))}
+on conflict (id) do update set frage = excluded.frage, beschreibung = excluded.beschreibung, verwandte_themen = excluded.verwandte_themen;
+`
+    : ''
+}
+delete from public.haltungen where id not in (${haltungen.haltungen.length ? haltungen.haltungen.map((h) => h.id).join(', ') : '0'});
+${
+  haltungen.zielkonflikte.length
+    ? `
+insert into public.haltung_zielkonflikte (haltung_id, seite, text, quelle_url) values
+  ${zeilen(haltungen.zielkonflikte.map((z) => `(${z.haltung_id}, ${q(z.seite)}, ${q(z.text)}, ${q(z.quelle_url)})`))};
+`
+    : ''
+}${
+  haltungen.positionen.length
+    ? `
+insert into public.haltung_positionen (haltung_id, partei_id, land, position, kurzfassung, zitat, beleg_programm_url, begruendung, stand, ki_entwurf) values
+  ${zeilen(
+    haltungen.positionen.map(
+      (p) =>
+        `(${p.haltung_id}, ${p.partei_id}, ${q(p.land)}, ${q(p.position)}, ${q(p.kurzfassung)}, ${q(p.zitat)}, ${q(p.beleg_programm_url)}, ` +
+        `${q(p.begruendung)}, ${q(p.stand)}, ${p.ki_entwurf ?? false})`,
+    ),
+  )};
 `
     : ''
 }`

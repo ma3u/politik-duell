@@ -1,6 +1,6 @@
 # Datenmodell
 
-Stand: Migrationen bis `20261007000000_instrumente.sql` (`supabase/migrations/`).
+Stand: Migrationen bis `20261009000000_haltungen.sql` (`supabase/migrations/`).
 Die kuratierten Daten liegen als JSON in `daten/`; `npm run seed` erzeugt daraus die `seed.sql`.
 
 ## ER-Diagramm
@@ -12,6 +12,10 @@ erDiagram
     themen ||--o{ instrumente : "gehört zu"
     instrumente |o--o| instrumente : "entspricht (Bund ↔ Land)"
     instrumente |o--o{ runden : "instrument_id"
+    haltungen ||--o{ haltung_positionen : "hat"
+    parteien ||--o{ haltung_positionen : "vertritt"
+    haltungen ||--o{ haltung_zielkonflikte : "hat"
+    haltungen |o--o{ runden : "haltung_id"
     themen ||--o{ massnahmen : "gehört zu"
     themen ||--o{ ursachen : "hat"
     themen ||--o{ abdeckung : "ist erfasst für"
@@ -103,6 +107,7 @@ erDiagram
         timestamptz created_at
         smallint thema_id FK
         integer instrument_id FK "nur bei status forderung"
+        smallint haltung_id FK "nur bei status wert"
         text problem_text
         smallint partei_a FK
         smallint partei_b FK
@@ -111,6 +116,31 @@ erDiagram
         text status "gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze"
         boolean freigegeben
         boolean testphase
+    }
+    haltungen {
+        smallint id PK "eigener Nummernkreis"
+        text frage "neutrale Ja/Nein-Frage"
+        text beschreibung
+        smallint_arr verwandte_themen "Verweis auf themen.id"
+    }
+    haltung_positionen {
+        smallint haltung_id FK
+        smallint partei_id FK
+        text land FK "null = Bund (zunächst nur Bund)"
+        text position "ja | nein | teils | keine_aussage"
+        text kurzfassung
+        text zitat "wörtlich, bei Haltungen der Beleg"
+        text beleg_programm_url
+        text begruendung "nur bei keine_aussage"
+        date stand
+        boolean ki_entwurf
+    }
+    haltung_zielkonflikte {
+        int id PK
+        smallint haltung_id FK
+        text seite "ja | nein"
+        text text
+        text quelle_url
     }
     review_warteschlange {
         bigint id PK
@@ -157,13 +187,14 @@ erDiagram
 `massnahmen.ursachen_ids` ist ein Array und daher keine echte Fremdschlüsselbeziehung.
 `instrumente` enthält bewusst keine Wirksamkeit und Umsetzbarkeit: Die Forderungskarte zeigt Forschungsstand und Begründung, aber keine Punkte; gewertet wird weiter über die Maßnahmen. Ein Instrument gilt für eine Ebene; `entspricht` verbindet das Bundes- mit dem Landes-Instrument desselben Lösungswegs.
 `pruef_bewertungen.massnahme_id` verweist auf IDs aus `daten/`, nicht zwingend auf `massnahmen`.
+`haltungen.verwandte_themen` ist ein Array und daher keine echte Fremdschlüsselbeziehung. Haltungen haben keine Punkte; anders als bei Maßnahmen steht das Zitat in der Datenbank, weil bei Haltungen der Wortlaut der eigentliche Beleg ist. Die View `haltungen_vollstaendig (haltung_id, geprueft)` nennt die Haltungen, zu denen jede Partei eine Position im Bundesprogramm hat („Alle sieben oder keine“); sie läuft mit den Rechten der Abfragenden, öffentlich zählen also nur geprüfte Positionen. Die Edge Function sieht mit der Service-Rolle auch Entwürfe und nimmt ohne Testphase nur Zeilen mit `geprueft`. Die App nutzt dieselbe Regel (`supabase/functions/_shared/haltung.ts`).
 
 ## Gruppen
 
 | Gruppe | Tabellen | Zugriff |
 |---|---|---|
 | Stammdaten | `parteien`, `themen`, `laender`, `landesprogramme` | lesbar |
-| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
+| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente`, `haltungen`, `haltung_positionen`, `haltung_zielkonflikte` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
 | Spieldaten | `runden`, `review_warteschlange`, `rate_limit` | schreibbar nur über Edge Function |
 | Betrieb | `admins`, `pruef_*`, `testphase_zugaenge` | anon gesperrt; Admins und Edge Functions |
 

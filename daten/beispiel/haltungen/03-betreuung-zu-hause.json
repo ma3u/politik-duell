@@ -1,0 +1,32 @@
+{
+  "id": 3,
+  "frage": "Soll der Staat Familien, die ihre Kinder zu Hause betreuen, finanziell unterstützen?",
+  "beschreibung": "Ob Eltern, die ihre kleinen Kinder selbst betreuen statt in einer Kita, dafür Geld vom Staat bekommen sollen. Beispiel für eine noch nicht vollständig erfasste Haltung: Die Karte erscheint nicht.",
+  "verwandte_themen": [5],
+  "schlagwoerter": ["zu hause betreuen", "betreuungsgeld", "wahlfreiheit"],
+  "zielkonflikte": [
+    { "seite": "ja", "text": "Wer das will, nennt die Wahlfreiheit der Eltern bei der Betreuung.", "quelle_url": "https://example.org/mock/quelle/wahlfreiheit" },
+    { "seite": "nein", "text": "Wer das ablehnt, nennt frühe Bildung in der Kita und die Erwerbstätigkeit von Müttern.", "quelle_url": "https://example.org/mock/quelle/fruehe-bildung" }
+  ],
+  "positionen": [
+    {
+      "partei_id": 1,
+      "position": "nein",
+      "kurzfassung": "Will das Geld lieber in Kitaplätze stecken.",
+      "zitat": "Statt einer Prämie für das Fernbleiben von der Kita investieren wir in mehr Kitaplätze.",
+      "beleg_programm_url": "https://example.org/mock/alpha/wahlprogramm.pdf#page=33",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 2,
+      "position": "ja",
+      "kurzfassung": "Will Eltern, die zu Hause betreuen, ein monatliches Betreuungsgeld zahlen.",
+      "zitat": "Eltern, die ihre Kinder zu Hause betreuen, sollen ein monatliches Betreuungsgeld erhalten.",
+      "beleg_programm_url": "https://example.org/mock/beta/wahlprogramm.pdf#page=12",
+      "stand": "2026-01-01",
+      "geprueft": true
+    }
+  ],
+  "freigabe": { "datum": "2026-01-01" }
+}

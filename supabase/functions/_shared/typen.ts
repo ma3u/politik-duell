@@ -100,6 +100,54 @@ export interface InstrumentEintrag {
   schlagwoerter?: string[]
 }
 
+/**
+ * Haltung (docs/plan-haltungen.md, Teil B): eine Wertfrage, über die man verschieden denken kann, als neutrale
+ * Ja/Nein-Frage. Die Haltungskarte zeigt dazu die Positionen der Parteien mit Zitat und die Zielkonflikte –
+ * ohne Punkte und ohne Einordnung als richtig oder falsch.
+ */
+export interface HaltungEintrag {
+  id: number
+  frage: string
+  beschreibung: string
+  /** Themen, deren Alltagsprobleme mit der Haltung zusammenhängen (zum Antippen auf der Karte). */
+  verwandte_themen: number[]
+  /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse eine Haltung dieser Frage zuordnet. */
+  schlagwoerter?: string[]
+}
+
+/**
+ * Position einer Partei zu einer Haltung: `ja`/`nein` (klar dafür bzw. dagegen), `teils` (nur ein Teil oder
+ * unter Bedingungen – die Kurzfassung sagt, welcher), `keine_aussage` (Programm durchsucht, nichts gefunden).
+ */
+export type Positionswert = 'ja' | 'nein' | 'teils' | 'keine_aussage'
+
+export interface HaltungPosition {
+  haltung_id: number
+  partei_id: number
+  /** Kürzel des Landes bei Landesprogrammen; null/fehlend = Bundesprogramm (zunächst nur Bund). */
+  land?: string | null
+  position: Positionswert
+  /** Neutrale Kurzfassung in eigenen Worten (höchstens 25 Wörter); fehlt bei `keine_aussage`. */
+  kurzfassung: string | null
+  /** Wörtliches Zitat aus dem Programm – bei Haltungen der eigentliche Beleg; fehlt bei `keine_aussage`. */
+  zitat: string | null
+  beleg_programm_url: string | null
+  /** Nur bei `keine_aussage`: was durchsucht wurde. */
+  begruendung: string | null
+  stand: string
+  /** Nur Entwurf, noch nicht von Menschen geprüft (nur in der geschlossenen Testphase). */
+  ki_entwurf?: boolean
+}
+
+/** Ein Ziel, das bei einer Haltung gegen ein anderes steht – je Seite der Frage mindestens einer, mit Quelle. */
+export interface Zielkonflikt {
+  haltung_id: number
+  /** Welche Seite der Frage das Ziel nennt. */
+  seite: 'ja' | 'nein'
+  text: string
+  quelle_url: string
+}
+
 export interface RollenModifikator {
   wert: number
   begruendung: string
@@ -187,6 +235,11 @@ export interface AnalyseAntwort {
    * Die App zeigt dann die Forderungskarte („Zeig mir, wer das fordert“) – ohne Punkte. Sonst null/fehlend.
    */
   instrument_id?: number | null
+  /**
+   * Nur bei einer Haltung (`wert`): die Wertfrage aus dem Katalog, die die Äußerung berührt – nur aus den
+   * vollständig erfassten Haltungen (alle Parteien). Die App zeigt dann die Haltungskarte. Sonst null/fehlend.
+   */
+  haltung_id?: number | null
   zusammenfassung: string
   /**
    * Nur bei Problemen ohne Thema in der Datenbank: vorläufige, neutrale
