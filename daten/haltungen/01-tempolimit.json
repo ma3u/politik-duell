@@ -30,5 +30,75 @@
   ],
   "freigabe": {
     "datum": "2026-10-04"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "nein",
+      "kurzfassung": "Lehnt ein generelles Tempolimit auf deutschen Autobahnen ab.",
+      "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will ein Tempolimit von 130 km/h auf Bundesautobahnen einführen.",
+      "zitat": "Wir wollen ein Tempolimit von 130 km/h auf Bundesautobahnen einführen.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Hält ein generelles Tempolimit von 130 km/h auf Autobahnen für überfällig.",
+      "zitat": "Ein Sicherheitstempo von 130 km/h auf Autobahnen als generelles Tempolimit ist deshalb überfällig.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=48",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "nein",
+      "kurzfassung": "Lehnt ein generelles Tempolimit auf Autobahnen ab.",
+      "zitat": "Wir Freie Demokraten lehnen ein generelles Tempolimit auf Autobahnen ab.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=41",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Lehnt ein generelles Tempolimit auf Bundesautobahnen strikt ab.",
+      "zitat": "Die AfD lehnt ein generelles Tempolimit auf Bundesautobahnen strikt ab.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=45",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Will ein Tempolimit von 120 km/h auf Autobahnen und innerorts Tempo 30.",
+      "zitat": "Um Menschen und Klima zu schützen, brauchen wir endlich ein Tempolimit von 120 km/h auf Autobahnen und innerorts Tempo 30 – außer auf Hauptverkehrsachsen.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "Programm auf Tempolimit, Höchstgeschwindigkeit, Geschwindigkeitsbegrenzung, Geschwindigkeitsbeschränkung, Tempo 130, Tempo 120, freie Fahrt, Geschwindigkeit, Tempo, Autobahn und Rasen durchsucht; Verkehrskapitel (S. 29–30) gelesen – keine Aussage zu einem Tempolimit gefunden.",
+      "stand": "2026-10-04",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }
