@@ -18,9 +18,9 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 2. Spieler A und B wählen je eine Partei (nicht dieselbe) und optional eine Rolle (Mieter, Eigentümer, Angestellte, Selbstständig, Rentner, Arbeitslos, Studierend, Vermögend).
 3. Pro Runde (insgesamt 5, abwechselnd): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
 4. KI klassifiziert: `problem` | `forderung` | `wert`.
-   - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?").
+   - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
    - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich.
-   - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2), sonst Runde ohne Wertung.
+   - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2, mit Ursachen zum Antippen), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
 6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, Teilen-Button.
 
@@ -77,7 +77,7 @@ massnahmen (
 runden (
   id, created_at, thema_id null, problem_text,
   partei_a, partei_b, punkte_a, punkte_b,
-  status text,            -- gewertet | ungeprueft | wert
+  status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung
   freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
 )
 ```
@@ -95,6 +95,7 @@ Antwort (JSON):
   "nachfrage": "string | null",
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],
+  "pauschal": "boolean (Pauschalurteil über eine Gruppe: keine Ursachenauswahl)",
   "zusammenfassung": "kurzer neutraler Satz zum Problem"
 }
 ```

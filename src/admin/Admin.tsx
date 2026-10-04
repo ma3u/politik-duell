@@ -143,7 +143,7 @@ function Moderation() {
       db
         .from('runden')
         .select('id, created_at, problem_text, stichwort, filter_grund, status, freigegeben, abgelehnt, moderiert_am')
-        .neq('status', 'wert') // Werte sind keine Probleme und kommen nicht zur Freigabe
+        .not('status', 'in', '(wert,forderung)') // Werte und Forderungen sind keine Probleme und kommen nicht zur Freigabe
         .order('created_at', { ascending: false })
         .limit(300),
       db

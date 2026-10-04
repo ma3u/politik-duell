@@ -136,8 +136,15 @@ export interface AbdeckungEintrag {
 export interface AnalyseAntwort {
   typ: 'problem' | 'forderung' | 'wert'
   nachfrage: string | null
+  /**
+   * Bei `problem` mit Ursachen: das gewertete Thema. Bei einer Nachfrage (Forderung oder Problem ohne
+   * erkennbare Ursache) und bei einer Forderung ohne Problem: das erkannte Thema, ohne Wertung – die App
+   * bietet dann dessen Ursachen zum Antippen an bzw. nennt das Thema.
+   */
   thema_id: number | null
   ursachen_ids: number[]
+  /** Pauschales Urteil über eine Gruppe: nur nachfragen, keine Ursachenauswahl. */
+  pauschal?: boolean
   zusammenfassung: string
   /**
    * Nur bei Problemen ohne Thema in der Datenbank: vorläufige, neutrale
@@ -160,6 +167,19 @@ export interface AnalyseAnfrage {
   zugang?: string | null
   /** IDs der beiden gewählten Parteien (A, B) – zum Speichern der Runde. */
   parteien: [number, number]
+  /**
+   * Von der Person angetippte Ursachen eines Themas (statt einer Schilderung). Dann fragt die
+   * Edge Function keine KI, sondern wertet und speichert die Runde mit diesen Ursachen.
+   */
+  auswahl?: UrsachenAuswahl | null
+}
+
+/** Höchstens so viele Ursachen dürfen angetippt werden (docs/plan-haltungen.md, A2). */
+export const MAX_AUSWAHL = 3
+
+export interface UrsachenAuswahl {
+  thema_id: number
+  ursachen_ids: number[]
 }
 
 export interface Nachricht {

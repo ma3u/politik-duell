@@ -1,6 +1,15 @@
 import { describe, expect, it } from 'vitest'
 import { PARTEIEN, THEMEN, URSACHEN } from '../../../src/data/mock'
-import { bereinigeAntwort, EingabeFehler, NACHFRAGE_URSACHE, nutzerNachrichten, ohneParteinamen, pruefeAnfrage, systemPrompt } from './ki.ts'
+import {
+  antwortAusAuswahl,
+  bereinigeAntwort,
+  EingabeFehler,
+  NACHFRAGE_URSACHE,
+  nutzerNachrichten,
+  ohneParteinamen,
+  pruefeAnfrage,
+  systemPrompt,
+} from './ki.ts'
 import type { Nachricht } from './typen.ts'
 
 const spieler = (text: string): Nachricht => ({ von: 'spieler', text })
@@ -21,6 +30,13 @@ describe('systemPrompt', () => {
     expect(p).toContain('pauschales Urteil über eine Gruppe')
     expect(p).toContain('Widersprich nicht, belehre nicht')
     expect(p).toContain('Unterscheide Erlebnis und Gefühl')
+    expect(p).toContain('"pauschal": true')
+  })
+
+  it('lässt Forderungen spiegeln und dem Thema zuordnen', () => {
+    const p = systemPrompt(THEMEN, URSACHEN)
+    expect(p).toContain('neutralen Halbsatz wieder')
+    expect(p).toContain('Thema aus dem Katalog, zu dem die Forderung gehört')
   })
 })
 
@@ -29,6 +45,8 @@ describe('nutzerNachrichten', () => {
     const n = nutzerNachrichten([spieler('a'), ki('b'), spieler('c'), ki('d'), spieler('e')], 'mieter')
     expect(n[0].content).toContain('Mieter:in')
     expect(n[0].content).toContain('bereits zweimal')
+    // Eine Forderung bleibt eine Forderung, sie wird nicht zum Problem umgedeutet.
+    expect(n[0].content).toContain('als "forderung" ein')
     expect(n.slice(1).map((x) => x.role)).toEqual(['user', 'assistant', 'user', 'assistant', 'user'])
   })
 })
@@ -53,7 +71,8 @@ describe('bereinigeAntwort', () => {
 
   it('fragt nach, statt ohne erkennbare Ursache alle Ursachen zu werten', () => {
     const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [101], nachfrage: 'Was genau?', zusammenfassung: 'x' })
-    expect(a).toMatchObject({ typ: 'problem', nachfrage: 'Was genau?', thema_id: null, ursachen_ids: [] })
+    // Das Thema bleibt erhalten, damit die App dessen Ursachen zum Antippen anbieten kann.
+    expect(a).toMatchObject({ typ: 'problem', nachfrage: 'Was genau?', thema_id: 2, ursachen_ids: [] })
     const b = bereinige({ typ: 'problem', thema_id: 2, zusammenfassung: 'x' })
     expect(b.nachfrage).toBe(NACHFRAGE_URSACHE)
   })
@@ -75,11 +94,28 @@ describe('bereinigeAntwort', () => {
     expect(a.einschaetzung).toBeNull()
   })
 
-  it('erzwingt nach zwei Nachfragen keine dritte', () => {
+  it('erzwingt nach zwei Nachfragen keine dritte und deutet die Forderung nicht um', () => {
     const verlauf = [spieler('Weniger X'), ki('?'), spieler('Mehr Y'), ki('?'), spieler('Weniger Z')]
-    const a = bereinige({ typ: 'forderung', nachfrage: 'Noch eine Frage?', zusammenfassung: 'z' }, verlauf)
-    expect(a.typ).toBe('problem')
-    expect(a.nachfrage).toBeNull()
+    const a = bereinige({ typ: 'forderung', nachfrage: 'Noch eine Frage?', thema_id: 2, zusammenfassung: 'z', einschaetzung: 'e' }, verlauf)
+    expect(a).toMatchObject({ typ: 'forderung', nachfrage: null, thema_id: 2, ursachen_ids: [], einschaetzung: null })
+  })
+
+  it('behält bei einer Forderung das erkannte Thema, aber keine Ursachen', () => {
+    const a = bereinige({ typ: 'forderung', nachfrage: 'Du willst X. Was soll sich ändern?', thema_id: 2, ursachen_ids: [202], zusammenfassung: 'x' })
+    expect(a).toMatchObject({ typ: 'forderung', thema_id: 2, ursachen_ids: [] })
+    expect(bereinige({ typ: 'forderung', thema_id: 77, zusammenfassung: 'x' }).thema_id).toBeNull()
+  })
+
+  it('bietet bei Pauschalurteilen kein Thema an', () => {
+    const a = bereinige({ typ: 'forderung', pauschal: true, thema_id: 6, nachfrage: 'Was hast du erlebt?', zusammenfassung: 'x' })
+    expect(a).toMatchObject({ typ: 'forderung', pauschal: true, thema_id: null })
+    // „pauschal“ zählt nur bei Forderungen.
+    expect(bereinige({ typ: 'wert', pauschal: true, zusammenfassung: 'x' }).pauschal).toBeUndefined()
+  })
+
+  it('gibt bei Haltungen kein Thema weiter', () => {
+    const a = bereinige({ typ: 'wert', thema_id: 2, ursachen_ids: [202], zusammenfassung: 'x' })
+    expect(a).toMatchObject({ typ: 'wert', nachfrage: null, thema_id: null, ursachen_ids: [] })
   })
 
   it('ergänzt eine fehlende Nachfrage', () => {
@@ -120,8 +156,41 @@ describe('pruefeAnfrage', () => {
     ['mit ungültigem Bundesland', { ...gueltig, land: 'Sachsen-Anhalt' }],
     ['mit ungültigem Zugang zur Testphase', { ...gueltig, zugang: 'geheim' }],
     ['mit zu langem Verlauf', { ...gueltig, verlauf: Array(7).fill(spieler('a')) }],
+    ['ohne Verlauf und ohne Auswahl', { ...gueltig, verlauf: [] }],
+    ['mit leerer Auswahl', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: [] } }],
+    ['mit mehr als drei Ursachen', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: [201, 202, 203, 204] } }],
+    ['mit doppelter Ursache', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: [202, 202] } }],
+    ['mit Auswahl ohne Thema', { ...gueltig, auswahl: { ursachen_ids: [202] } }],
+    ['mit Auswahl als Text', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: ['202'] } }],
   ])('lehnt Anfrage %s ab', (_, anfrage) => {
     expect(() => pruefeAnfrage(anfrage)).toThrow(EingabeFehler)
+  })
+
+  it('akzeptiert angetippte Ursachen ohne Verlauf', () => {
+    const a = pruefeAnfrage({ ...gueltig, verlauf: [], auswahl: { thema_id: 2, ursachen_ids: [201, 202] } })
+    expect(a.auswahl).toEqual({ thema_id: 2, ursachen_ids: [201, 202] })
+    // Auch mit der Nachfrage der KI als letzter Nachricht.
+    expect(pruefeAnfrage({ ...gueltig, verlauf: [spieler('a'), ki('b')], auswahl: { thema_id: 2, ursachen_ids: [202] } }).auswahl).toBeTruthy()
+    expect(pruefeAnfrage(gueltig).auswahl).toBeNull()
+  })
+})
+
+describe('antwortAusAuswahl', () => {
+  it('wertet die angetippten Ursachen wie eine Zuordnung der KI', () => {
+    const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [202, 201] }, THEMEN, URSACHEN)
+    expect(a).toMatchObject({ typ: 'problem', nachfrage: null, thema_id: 2, ursachen_ids: [202, 201], einschaetzung: null })
+  })
+
+  it('speichert keinen Text der Person, nur Thema und Ursachen', () => {
+    const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [202] }, THEMEN, URSACHEN)
+    expect(a.zusammenfassung).toBe('Miete: eine Ursache angetippt')
+    expect(a.stichwort).toBe('Miete')
+    expect(antwortAusAuswahl({ thema_id: 2, ursachen_ids: [201, 202] }, THEMEN, URSACHEN).zusammenfassung).toBe('Miete: 2 Ursachen angetippt')
+  })
+
+  it('lehnt Ursachen eines anderen Themas und unbekannte Themen ab', () => {
+    expect(() => antwortAusAuswahl({ thema_id: 2, ursachen_ids: [101] }, THEMEN, URSACHEN)).toThrow(EingabeFehler)
+    expect(() => antwortAusAuswahl({ thema_id: 77, ursachen_ids: [202] }, THEMEN, URSACHEN)).toThrow(EingabeFehler)
   })
 })
 

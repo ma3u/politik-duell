@@ -162,6 +162,12 @@ describe('Datenbank', () => {
     expect(r.rows.map((x) => x.problem_text)).toEqual(['frei'])
   })
 
+  it('speichert Forderungen ohne Problem als eigenen Status und lehnt unbekannte ab', async () => {
+    await db.exec(`insert into runden (problem_text, status, thema_id) values ('Forderung: mehr Wohnungen', 'forderung', 2)`)
+    await expect(db.query(`insert into runden (problem_text, status) values ('x', 'unbekannt')`)).rejects.toThrow()
+    await db.exec(`delete from runden where status = 'forderung'`)
+  })
+
   it('anon darf nicht schreiben', async () => {
     await expect(
       alsRolle('anon', () => db.query(`insert into runden (problem_text, status) values ('x', 'wert')`)),

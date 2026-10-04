@@ -1,6 +1,6 @@
 # Plan: Forderungen und Haltungen einordnen
 
-Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“), noch kein Code. Umsetzung in eigenen Pull Requests (siehe „Reihenfolge“).
+Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
 
 ## Ziel
 
@@ -66,7 +66,7 @@ Beide enden mit dem Angebot, ein Alltagsproblem zu nennen; erst das wird gewerte
    - einen Knopf **„Zeig mir, wer das fordert“** (nur mit erkanntem Instrument, siehe A3).
 4. Nennt die Person ein Problem oder tippt Ursachen an, läuft die Runde normal weiter und wird gewertet. Die Forderungskarte erscheint dann zusätzlich in der Auflösung („Deine Forderung: …“).
 5. Öffnet die Person die Forderungskarte, kann sie danach ein Problem nennen oder Ursachen antippen. Die Runde bleibt dieselbe; die Karte allein wertet nicht.
-6. Bleibt es nach zwei Nachfragen bei der Forderung: Runde ohne Wertung mit Forderungskarte (falls Instrument) bzw. Hinweis auf das Thema. **Keine** KI-Einschätzung und kein Eintrag in die Review-Warteschlange (behebt Lücke 4).
+6. Bleibt es nach zwei Nachfragen bei der Forderung: Runde ohne Wertung mit Forderungskarte (falls Instrument) bzw. Hinweis auf das Thema. **Keine** KI-Einschätzung und kein Eintrag in die Review-Warteschlange (behebt Lücke 4). Wie bei einer Haltung (E8) verbraucht das die Runde nicht: Die Person kann danach ein Problem nennen; gespeichert wird eine Runde mit `status = 'forderung'`.
 
 ### A2 Ursachen zum Antippen
 
@@ -343,7 +343,10 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 
 ## Reihenfolge
 
-1. **Ursachenauswahl und Forderung ohne Umdeutung** (A1, A2, Lücke 4, neuer `wert`-Text). Braucht keine neuen Daten.
+1. **Ursachenauswahl und Forderung ohne Umdeutung** (A1, A2, A4, Lücke 4, neuer `wert`-Text). Braucht keine neuen Daten. *Umgesetzt (4. 10. 2026).* Umsetzungsdetails:
+   - Die Ursachen erscheinen nur, solange eine Nachfrage offen ist – nicht nach der letzten Antwort, damit eine Runde nicht doppelt gespeichert wird.
+   - Angetippte Ursachen gehen als `auswahl` an die Edge Function `analyse`; sie fragt dann keine KI (zählt nur für das Rate-Limit je Sitzung, nicht für das globale) und speichert die Runde. Als Problem steht dort nur „Thema: n Ursachen angetippt“ – kein Text der Person.
+   - Feld `pauschal` und Status `forderung` (Migration `20261006000000_runden_forderung.sql`) sind schon in diesem Schritt dabei; Forderungen ohne Problem kommen wie Haltungen nicht zur Freigabe in der Admin-Ansicht.
 2. **Forderungskarte** (A3): Instrumente in die Datenbank, zweistufiger KI-Aufruf.
 3. **Grenze** (Teil D) mit Methodentext.
 4. **Haltungen**: Format, Prüfung, drei Pilot-Haltungen erfassen, Haltungskarte, Endbildschirm.
