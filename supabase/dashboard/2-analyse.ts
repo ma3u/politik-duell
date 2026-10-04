@@ -346,13 +346,18 @@ Zuordnung (nur bei "problem"):
 "stichwort": 1\u20133 W\xF6rter, die das Problem neutral benennen (z. B. \u201EFacharzttermin\u201C, \u201ENebenkosten-Nachzahlung\u201C),
   ohne Namen, Orte, Beleidigungen oder Wertungen.
 
+Formulierungen:
+- Gib "nachfrage" und "rueckmeldung" jeweils als Liste von drei Fassungen an, die dasselbe sagen, aber mit
+  anderen W\xF6rtern und anderem Satzbau \u2013 das Spiel zeigt eine davon zuf\xE4llig, damit es nicht wie ein Textbaustein
+  wirkt. Jede Fassung f\xFCr sich erf\xFCllt die Regeln oben. Gibt es keine Nachfrage oder R\xFCckmeldung: null.
+
 Katalog:
 ${katalog}
 
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
-{"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
+{"typ": "problem" | "forderung" | "wert", "nachfrage": string[] | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null, "rueckmeldung": string | null}`;
+ "einschaetzung": string | null, "rueckmeldung": string[] | null}`;
 }
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
@@ -447,6 +452,10 @@ function bereinigeRueckmeldung(roh, ohneLinks) {
   if (text.length < 10 || text.length > MAX_RUECKMELDUNG || text.includes("[Partei]") || pruefeText(text)) return null;
   return text;
 }
+var fassungen = (roh) => Array.isArray(roh) ? roh.slice(0, 5) : [
+  roh
+];
+var zufaellig = (liste, zufall) => liste[Math.min(liste.length - 1, Math.floor(zufall() * liste.length))];
 var vergleichbar = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 function ohneWiederholung(nachfrage, verlauf) {
   if (!nachfrage) return nachfrage;
@@ -461,14 +470,17 @@ function ohneWiederholung(nachfrage, verlauf) {
   return nachfrage;
 }
 var kurz = (s, max) => typeof s === "string" ? s.trim().replace(/\s+/g, " ").slice(0, max) : "";
-function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
+function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall = Math.random) {
   const r = roh && typeof roh === "object" ? roh : {};
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
   const letzterText = verlauf.filter((n) => n.von === "spieler").at(-1)?.text ?? "";
   const ohneLinks = (s) => ohneParteinamen(s.replace(/(https?:\/\/|www\.)\S+/gi, ""), parteien).trim();
   const typ = r.typ === "forderung" || r.typ === "wert" ? r.typ : "problem";
   const pauschal = typ === "forderung" && r.pauschal === true;
-  let nachfrage = ohneLinks(kurz(r.nachfrage, 200));
+  const frueher = new Set(verlauf.filter((n) => n.von === "ki").map((n) => vergleichbar(n.text)));
+  const vorschlaege = fassungen(r.nachfrage).map((x) => ohneLinks(kurz(x, 200))).filter(Boolean);
+  const gute = vorschlaege.filter((q) => q.includes("?") && !frueher.has(vergleichbar(q)));
+  let nachfrage = zufaellig(gute.length ? gute : vorschlaege, zufall) ?? "";
   if (typ === "forderung") {
     if (nachfragen >= MAX_NACHFRAGEN) nachfrage = "";
     else if (!nachfrage) nachfrage = "Was l\xE4uft in deinem Alltag konkret schief?";
@@ -476,6 +488,7 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
   }
   nachfrage = ohneWiederholung(nachfrage, verlauf);
   const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null;
+  const rueckmeldung = () => zufaellig(fassungen(r.rueckmeldung).map((x) => bereinigeRueckmeldung(x, ohneLinks)).filter((x) => x !== null), zufall) ?? null;
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120));
   const stichwortRoh = typeof r.stichwort === "string" ? ohneLinks(r.stichwort).replace(/\[Partei\]/g, "").trim() : "";
   const stichwort = bereinigeStichwort(stichwortRoh, zusammenfassung.replace(/\[Partei\]/g, ""));
@@ -493,7 +506,7 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = []) {
       zusammenfassung,
       stichwort,
       einschaetzung: null,
-      rueckmeldung: offen || pauschal ? null : bereinigeRueckmeldung(r.rueckmeldung, ohneLinks)
+      rueckmeldung: offen || pauschal ? null : rueckmeldung()
     };
   }
   const thema = erkanntesThema;
@@ -600,7 +613,8 @@ async function frageMistral(system, nachrichten) {
     body: JSON.stringify({
       model: Deno.env.get("MISTRAL_MODEL") ?? "mistral-small-latest",
       temperature: 0.1,
-      max_tokens: 400,
+      // Platz für drei Fassungen von Nachfrage bzw. Rückmeldung.
+      max_tokens: 700,
       response_format: {
         type: "json_object"
       },

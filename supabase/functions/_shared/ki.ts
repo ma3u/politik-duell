@@ -97,13 +97,18 @@ Zuordnung (nur bei "problem"):
 "stichwort": 1–3 Wörter, die das Problem neutral benennen (z. B. „Facharzttermin“, „Nebenkosten-Nachzahlung“),
   ohne Namen, Orte, Beleidigungen oder Wertungen.
 
+Formulierungen:
+- Gib "nachfrage" und "rueckmeldung" jeweils als Liste von drei Fassungen an, die dasselbe sagen, aber mit
+  anderen Wörtern und anderem Satzbau – das Spiel zeigt eine davon zufällig, damit es nicht wie ein Textbaustein
+  wirkt. Jede Fassung für sich erfüllt die Regeln oben. Gibt es keine Nachfrage oder Rückmeldung: null.
+
 Katalog:
 ${katalog}
 
 Antworte ausschließlich mit einem JSON-Objekt:
-{"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
+{"typ": "problem" | "forderung" | "wert", "nachfrage": string[] | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null, "rueckmeldung": string | null}`
+ "einschaetzung": string | null, "rueckmeldung": string[] | null}`
 }
 
 export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
@@ -250,6 +255,13 @@ function bereinigeRueckmeldung(roh: unknown, ohneLinks: (s: string) => string): 
   return text
 }
 
+/** Die KI liefert mehrere Fassungen (Liste); ältere Antworten und Ausreißer nur einen Text. */
+const fassungen = (roh: unknown): unknown[] => (Array.isArray(roh) ? roh.slice(0, 5) : [roh])
+
+/** Zufällige Fassung, damit dieselbe Eingabe nicht immer denselben Satz ergibt. */
+const zufaellig = <T>(liste: T[], zufall: () => number): T | undefined =>
+  liste[Math.min(liste.length - 1, Math.floor(zufall() * liste.length))]
+
 const vergleichbar = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
 
 /**
@@ -277,6 +289,7 @@ export function bereinigeAntwort(
   themen: Thema[],
   ursachen: Ursache[],
   parteien: Pick<Partei, 'name' | 'kurzname'>[] = [],
+  zufall: () => number = Math.random,
 ): AnalyseAntwort {
   const r = (roh && typeof roh === 'object' ? roh : {}) as Record<string, unknown>
   const nachfragen = verlauf.filter((n) => n.von === 'ki').length
@@ -285,7 +298,11 @@ export function bereinigeAntwort(
 
   const typ: AnalyseAntwort['typ'] = r.typ === 'forderung' || r.typ === 'wert' ? r.typ : 'problem'
   const pauschal = typ === 'forderung' && r.pauschal === true
-  let nachfrage = ohneLinks(kurz(r.nachfrage, 200))
+  // Von mehreren Fassungen eine zufällige – bevorzugt eine echte Frage, die nicht schon gestellt wurde.
+  const frueher = new Set(verlauf.filter((n) => n.von === 'ki').map((n) => vergleichbar(n.text)))
+  const vorschlaege = fassungen(r.nachfrage).map((x) => ohneLinks(kurz(x, 200))).filter(Boolean)
+  const gute = vorschlaege.filter((q) => q.includes('?') && !frueher.has(vergleichbar(q)))
+  let nachfrage = zufaellig(gute.length ? gute : vorschlaege, zufall) ?? ''
   // Nach zwei Nachfragen bleibt eine Forderung eine Forderung (ohne Wertung) – sie wird nicht
   // zum Problem umgedeutet, sonst bekäme sie eine Einschätzung, die für unbekannte Probleme gedacht ist.
   if (typ === 'forderung') {
@@ -296,6 +313,13 @@ export function bereinigeAntwort(
   }
   nachfrage = ohneWiederholung(nachfrage, verlauf)
   const erkanntesThema = themen.find((t) => t.id === Number(r.thema_id)) ?? null
+  const rueckmeldung = () =>
+    zufaellig(
+      fassungen(r.rueckmeldung)
+        .map((x) => bereinigeRueckmeldung(x, ohneLinks))
+        .filter((x): x is string => x !== null),
+      zufall,
+    ) ?? null
 
   const zusammenfassung = ohneLinks(kurz(r.zusammenfassung, 200)) || ohneLinks(kurz(letzterText, 120))
   // Im Stichwort wird ein Parteiname ganz entfernt; bleibt nichts übrig, greift die Zusammenfassung.
@@ -314,7 +338,7 @@ export function bereinigeAntwort(
       zusammenfassung,
       stichwort,
       einschaetzung: null,
-      rueckmeldung: offen || pauschal ? null : bereinigeRueckmeldung(r.rueckmeldung, ohneLinks),
+      rueckmeldung: offen || pauschal ? null : rueckmeldung(),
     }
   }
 
