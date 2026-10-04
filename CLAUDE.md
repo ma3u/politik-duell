@@ -17,9 +17,10 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 1. Startbildschirm mit Titel, kurzer Erklärung, Datenschutzhinweis. Im Hintergrund: langsam bewegte Wortwolke der Themen, die das Spiel kennt (angelegt, mit belegten Ursachen; keine Eingaben von Spielenden).
 2. Spieler A und B wählen je eine Partei (nicht dieselbe) und optional eine Rolle (Mieter, Eigentümer, Angestellte, Selbstständig, Rentner, Arbeitslos, Studierend, Vermögend).
 3. Pro Runde (insgesamt 5, abwechselnd): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
-4. KI klassifiziert: `problem` | `forderung` | `wert`.
+4. KI klassifiziert: `problem` | `forderung` | `wert` | `grenze`.
    - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Entspricht die Forderung eindeutig einem erfassten Lösungsweg (Instrument des Themas, zweiter KI-Aufruf), zeigt ein Knopf „Zeig mir, wer das fordert“ die **Forderungskarte**: welche Parteien den Lösungsweg im Programm haben (mit Beleg-Link), Forschungsstand und Begründung – ohne Punkte; nach einem gewerteten Problem erscheint sie zusätzlich in der Auflösung. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
    - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich.
+   - `grenze` → Abwertung einer Gruppe (Menschenwürde, gleiche Rechte), Gewaltaufruf oder Beleidigung: „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte, Inhalt wird nicht gespeichert; neues Problem möglich. Ein Pauschalurteil über eine Gruppe ist **kein** `grenze`-Fall (dort Nachfrage nach dem Erlebten), im Zweifel Nachfrage (`docs/methode.md` → „Grenze“).
    - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2, mit Ursachen zum Antippen), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
 6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, Teilen-Button.
@@ -81,7 +82,7 @@ instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, 
 runden (
   id, created_at, thema_id null, instrument_id null, problem_text,
   partei_a, partei_b, punkte_a, punkte_b,
-  status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung
+  status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze (ohne Inhalt)
   freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
 )
 ```
@@ -95,7 +96,7 @@ Antwort (JSON):
 
 ```json
 {
-  "typ": "problem | forderung | wert",
+  "typ": "problem | forderung | wert | grenze",
   "nachfrage": "string[] | null (drei Fassungen; die Edge Function zeigt eine zufällig)",
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],

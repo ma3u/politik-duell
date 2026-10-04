@@ -16,6 +16,12 @@ const WERT_ANTWORT =
   'Das ist eine persönliche Haltung – darüber kann man verschieden denken. ' +
   'Magst du erzählen, wo dir das im Alltag begegnet?'
 
+/**
+ * Grenze (Abwertung, Gewalt, Beleidigung): ohne Belehrung, ohne Wiedergabe, ohne Karte – nur die Einladung
+ * zu einem Alltagsproblem. Die Runde läuft weiter.
+ */
+const GRENZE_ANTWORT = 'Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?'
+
 /** Nach einem Pauschalurteil ohne Alltagsproblem: das Urteil nicht als „Forderung“ bestätigen. */
 const PAUSCHAL_ANTWORT = 'Gewertet werden hier Lösungen für konkrete Alltagsprobleme. Magst du eins nennen?'
 
@@ -141,9 +147,17 @@ export function Runde({
       setForderung(bekannt && analyse.thema_id !== null ? { instrument_id: analyse.instrument_id!, thema_id: analyse.thema_id } : null)
       // Nach der letzten Nachfrage („Forderung bleibt“) zeigt die Runde die Karte gleich.
       setKarteOffen(bekannt && !analyse.nachfrage)
-    } else if (analyse.typ === 'wert') {
+    } else if (analyse.typ === 'wert' || analyse.typ === 'grenze') {
       setForderung(null)
       setKarteOffen(false)
+    }
+
+    if (analyse.typ === 'grenze') {
+      // Die Äußerung verschwindet aus dem Verlauf; die Runde beginnt von vorn.
+      setVerlauf([])
+      setZusammenfassung(null)
+      setHinweis(GRENZE_ANTWORT)
+      return
     }
 
     // Nachfrage bei einer Forderung oder wenn keine Ursache erkennbar ist – mit erkanntem Thema

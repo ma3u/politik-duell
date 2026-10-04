@@ -79,6 +79,13 @@ Einordnung ("typ"):
   Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und übernimm es nicht in "nachfrage",
   "zusammenfassung" oder "stichwort".
   Sonst ist "pauschal" immer false.
+- "grenze": nur wenn die Äußerung einer Gruppe von Menschen (wegen Herkunft, Religion, Geschlecht, Behinderung,
+  sexueller Orientierung o. Ä.) die Menschenwürde oder gleiche Rechte abspricht, zu Gewalt aufruft oder
+  Personen beleidigt (z. B. „Die sind keine Menschen“, „Die gehören alle aufgehängt“). Dann "nachfrage": null,
+  "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
+  Gib die Äußerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
+  Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
+  "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 
 Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis im Gespräch).
 
@@ -108,7 +115,7 @@ Katalog:
 ${katalog}
 
 Antworte ausschließlich mit einem JSON-Objekt:
-{"typ": "problem" | "forderung" | "wert", "nachfrage": string[] | null, "thema_id": number | null,
+{"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
  "einschaetzung": string | null, "rueckmeldung": string[] | null}`
 }
@@ -345,6 +352,20 @@ function ohneWiederholung(nachfrage: string, verlauf: Nachricht[]): string {
   return nachfrage
 }
 
+/** Antwort bei einer Grenzüberschreitung: ohne jeden Inhalt der Äußerung. */
+export function grenzeAntwort(): AnalyseAntwort {
+  return {
+    typ: 'grenze',
+    nachfrage: null,
+    thema_id: null,
+    ursachen_ids: [],
+    zusammenfassung: '',
+    stichwort: '',
+    einschaetzung: null,
+    rueckmeldung: null,
+  }
+}
+
 const kurz = (s: unknown, max: number) => (typeof s === 'string' ? s.trim().replace(/\s+/g, ' ').slice(0, max) : '')
 
 /**
@@ -363,6 +384,10 @@ export function bereinigeAntwort(
   const nachfragen = verlauf.filter((n) => n.von === 'ki').length
   const letzterText = verlauf.filter((n) => n.von === 'spieler').at(-1)?.text ?? ''
   const ohneLinks = (s: string) => ohneParteinamen(s.replace(/(https?:\/\/|www\.)\S+/gi, ''), parteien).trim()
+
+  // Grenze (Abwertung, Gewalt, Beleidigung): nichts übernehmen – kein Text der KI, keine Zusammenfassung, kein
+  // Stichwort, keine IDs. So wird vom Inhalt nichts gespeichert und nichts wiedergegeben.
+  if (r.typ === 'grenze') return grenzeAntwort()
 
   const typ: AnalyseAntwort['typ'] = r.typ === 'forderung' || r.typ === 'wert' ? r.typ : 'problem'
   const pauschal = typ === 'forderung' && r.pauschal === true

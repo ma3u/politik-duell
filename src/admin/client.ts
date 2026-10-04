@@ -15,7 +15,7 @@ export interface AdminRunde {
   problem_text: string
   stichwort: string | null
   filter_grund: string | null
-  status: 'gewertet' | 'unvollstaendig' | 'ungeprueft' | 'wert' | 'forderung'
+  status: 'gewertet' | 'unvollstaendig' | 'ungeprueft' | 'wert' | 'forderung' | 'grenze'
   freigegeben: boolean
   abgelehnt: boolean
   moderiert_am: string | null

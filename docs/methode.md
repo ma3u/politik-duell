@@ -138,8 +138,24 @@ Es zählt immer genau ein Programm je Partei und Ursache. So hat keine Partei me
 | Spieler:in nennt eine Forderung, die eindeutig einem erfassten Lösungsweg entspricht | Forderungskarte (auf Wunsch bei der Nachfrage, bei bleibender Forderung gleich, nach einem gewerteten Problem zusätzlich in der Auflösung): welche Parteien den Lösungsweg im Programm haben („steht im Programm“, „zu diesem Thema nicht gefunden“ oder „noch nicht erfasst“) mit Beleg, dazu Forschungsstand und Begründung. Eingeordnet wird der Lösungsweg, nicht die Partei | keine |
 | Spieler:in nennt einen Wert oder eine Haltung | wird respektvoll als persönliche Haltung benannt; neues Problem möglich | keine |
 | Spieler:in bleibt nach zwei Nachfragen bei einer Forderung | Forderung wird als verstanden benannt, mit Thema, falls erkennbar; neues Problem möglich. Sie wird nicht zum Problem umgedeutet und kommt nicht in die Warteschlange für neue Themen | keine |
+| Spieler:in spricht einer Gruppe die Menschenwürde oder gleiche Rechte ab, ruft zu Gewalt auf oder beleidigt Personen | „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte; neues Problem möglich. Vom Inhalt wird nichts gespeichert (siehe „Grenze“) | keine |
 
 0 Punkte heißt nur: Im Wahlprogramm mit dem angegebenen Stand steht dazu nichts – nicht, dass sich die Partei nie dazu geäußert hätte. Fehlende Daten kosten keine Partei einen Punkt.
+
+### Grenze
+
+Das Spiel nimmt jede Äußerung ernst, auch zugespitzte. Eine Grenze gibt es nur für Äußerungen, die
+
+- einer Gruppe von Menschen (etwa wegen Herkunft, Religion, Geschlecht, Behinderung oder sexueller Orientierung) die Menschenwürde oder gleiche Rechte absprechen,
+- zu Gewalt aufrufen oder
+- Personen beleidigen.
+
+Darauf geht das Spiel nicht ein: keine Nachfrage, keine Forderungs- oder Haltungskarte, keine Punkte. Die Antwort belehrt nicht und gibt die Äußerung nicht wieder, sondern lädt zu einem Problem aus dem Alltag ein; die Runde geht weiter. Gespeichert wird nur, dass es eine solche Runde gab – ohne Zusammenfassung, Stichwort oder Thema.
+
+- **Begründung:** Art. 1 GG (Menschenwürde) und Art. 3 GG (Gleichheit). Über Lösungen für Alltagsprobleme lässt sich streiten; ob Menschen gleiche Würde und gleiche Rechte haben, ist im Spiel nicht verhandelbar.
+- **Für alle Richtungen gleich.** Es zählt, was gesagt wird, nicht gegen wen oder aus welcher politischen Richtung.
+- **Programme werden nicht gefiltert.** Die Grenze gilt für Eingaben von Spielenden. Positionen der Parteien in ihren Programmen werden zitiert und nach denselben Kriterien bewertet wie alle anderen, nicht gefiltert.
+- **Abgrenzung zum Pauschalurteil.** Ein pauschales Urteil über eine Gruppe („Die … sind alle kriminell“) ist noch kein Grenzfall. Dahinter steckt oft eine Erfahrung oder eine Sorge; deshalb fragt das Spiel nach dem Erlebten – ohne das Urteil zu wiederholen und ohne Ursachen zum Antippen. Im Zweifel wählt die KI diese Nachfrage, nicht die Grenze.
 
 ## Rolle der KI
 
@@ -152,6 +168,7 @@ Die KI ist Übersetzerin, nicht Schiedsrichterin. Sie macht aus einem frei formu
 | ordnet das Problem (oder die Forderung) einem Thema und das Problem dessen Ursachen zu; ordnet eine Forderung – in einem zweiten, kurzen Aufruf nur mit den Lösungswegen dieses Themas – einem davon zu, wenn sie ihm eindeutig entspricht (sonst keinem) | bewertet Parteien oder äußert sich zu ihnen |
 | fasst das Problem in einem neutralen Satz zusammen | belehrt oder kommentiert Meinungen |
 | greift eine Haltung oder Forderung in eigenen Worten auf und lädt zu einem Alltagsproblem ein | stimmt Haltungen zu oder widerspricht ihnen |
+| erkennt Abwertung von Gruppen, Gewaltaufrufe und Beleidigungen (Grenze) – im Zweifel fragt sie lieber nach | gibt solche Äußerungen wieder oder kommentiert sie |
 
 Technisch abgesichert: Die KI antwortet in einem festen Format, die Antwort wird geprüft (nur IDs aus dem Katalog, keine Links), Parteinamen in KI-Texten werden entfernt. Die Punkte berechnet ein festes Programm aus der Datenbank – dieselbe Eingabe ergibt immer dasselbe Ergebnis.
 
@@ -197,6 +214,7 @@ Die Methode ist so fair wie möglich, aber nicht fehlerfrei. Wir benennen ihre G
 - **Belegte Wirkung bevorzugt Erprobtes.** Instrumente, die es schon gibt, sind besser untersucht als neue Ideen. Die Regel „Wirksamkeit 3 nur mit belegter Wirkung“ kann neue Vorschläge daher etwas benachteiligen. Wir nehmen das in Kauf, weil die Alternative wäre, Versprechen ungeprüft zu glauben.
 - **Das Bundesland verändert das Ergebnis.** Bei Landesthemen kann dieselbe Partei in zwei Ländern unterschiedlich abschneiden. Das ist gewollt: Landesparteien haben eigene Programme.
 - **Ein Spiel ist ein Ausschnitt.** Es deckt fünf Probleme ab und ist kein Gesamturteil über eine Partei – und keine Wahlempfehlung.
+- **Wo die Grenze verläuft, ist eine Abwägung.** Ob eine Äußerung abwertet oder „nur“ pauschal urteilt, entscheidet im Einzelfall die KI nach festen Regeln. Sie kann sich irren – in beide Richtungen. Deshalb ist die Grenze eng gefasst, im Zweifel wird nachgefragt, und ein Grenzfall kostet niemanden etwas: Die Runde geht mit einem anderen Problem weiter.
 - **Die KI kann falsch zuordnen.** Deshalb zeigt jede Runde, welchem Thema und welchen Ursachen das Problem zugeordnet wurde, damit Spielende es nachprüfen können.
 
 ## Stand und Mitmachen

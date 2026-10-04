@@ -108,7 +108,7 @@ erDiagram
         smallint partei_b FK
         smallint punkte_a
         smallint punkte_b
-        text status "gewertet | ungeprueft | unvollstaendig | wert | forderung"
+        text status "gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze"
         boolean freigegeben
         boolean testphase
     }

@@ -326,6 +326,13 @@ Einordnung ("typ"):
   Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und \xFCbernimm es nicht in "nachfrage",
   "zusammenfassung" oder "stichwort".
   Sonst ist "pauschal" immer false.
+- "grenze": nur wenn die \xC4u\xDFerung einer Gruppe von Menschen (wegen Herkunft, Religion, Geschlecht, Behinderung,
+  sexueller Orientierung o. \xC4.) die Menschenw\xFCrde oder gleiche Rechte abspricht, zu Gewalt aufruft oder
+  Personen beleidigt (z. B. \u201EDie sind keine Menschen\u201C, \u201EDie geh\xF6ren alle aufgeh\xE4ngt\u201C). Dann "nachfrage": null,
+  "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
+  Gib die \xC4u\xDFerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
+  Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
+  "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 
 Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinweis im Gespr\xE4ch).
 
@@ -355,7 +362,7 @@ Katalog:
 ${katalog}
 
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
-{"typ": "problem" | "forderung" | "wert", "nachfrage": string[] | null, "thema_id": number | null,
+{"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
  "einschaetzung": string | null, "rueckmeldung": string[] | null}`;
 }
@@ -504,12 +511,25 @@ function ohneWiederholung(nachfrage, verlauf) {
   }
   return nachfrage;
 }
+function grenzeAntwort() {
+  return {
+    typ: "grenze",
+    nachfrage: null,
+    thema_id: null,
+    ursachen_ids: [],
+    zusammenfassung: "",
+    stichwort: "",
+    einschaetzung: null,
+    rueckmeldung: null
+  };
+}
 var kurz = (s, max) => typeof s === "string" ? s.trim().replace(/\s+/g, " ").slice(0, max) : "";
 function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall = Math.random) {
   const r = roh && typeof roh === "object" ? roh : {};
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
   const letzterText = verlauf.filter((n) => n.von === "spieler").at(-1)?.text ?? "";
   const ohneLinks = (s) => ohneParteinamen(s.replace(/(https?:\/\/|www\.)\S+/gi, ""), parteien).trim();
+  if (r.typ === "grenze") return grenzeAntwort();
   const typ = r.typ === "forderung" || r.typ === "wert" ? r.typ : "problem";
   const pauschal = typ === "forderung" && r.pauschal === true;
   const frueher = new Set(verlauf.filter((n) => n.von === "ki").map((n) => vergleichbar(n.text)));
@@ -773,6 +793,16 @@ async function zugangGueltig(token) {
   return data !== null;
 }
 async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphase, original, parteien, ursachen) {
+  if (antwort.typ === "grenze") {
+    await db.from("runden").insert({
+      problem_text: "",
+      status: "grenze",
+      partei_a: parteiA,
+      partei_b: parteiB,
+      testphase
+    });
+    return;
+  }
   const stichwort = antwort.stichwort ?? null;
   const basis = {
     problem_text: antwort.zusammenfassung,

@@ -105,6 +105,16 @@ export function Methode() {
         als ein Drittel der Ursachen nachträglich hinzu, prüfen wir das ganze Thema neu.
       </p>
 
+      <p>
+        <strong>Nicht jede Äußerung ist ein Problem.</strong> Nennst du eine Forderung, fragt das Spiel nach dem
+        Alltagsproblem dahinter; eine Haltung benennt es als Haltung, über die man verschieden denken kann. Beides gibt
+        keine Punkte. Auf Äußerungen, die einer Gruppe die Menschenwürde oder gleiche Rechte absprechen, zu Gewalt
+        aufrufen oder Personen beleidigen, geht das Spiel nicht ein (Art. 1 und 3 Grundgesetz) – gleich, aus welcher
+        Richtung sie kommen. Vom Inhalt wird dann nichts gespeichert. Ein pauschales Urteil über eine Gruppe ist noch
+        kein solcher Fall: Dann fragt das Spiel, was du selbst erlebt hast. Die Wahlprogramme der Parteien werden davon
+        nicht berührt – sie werden zitiert und nach denselben Kriterien bewertet wie alle anderen.
+      </p>
+
       <h2>2. Maßnahmen aus den Wahlprogrammen</h2>
       <p>
         Für jede Partei erfassen wir die Maßnahmen aus ihrem Wahlprogramm zur Bundestagswahl 2025, die an diesen
