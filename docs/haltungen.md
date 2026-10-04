@@ -92,7 +92,7 @@ Stand: 4. 10. 2026. Positionen aus den sieben Bundesprogrammen (Fassungen laut `
    - *Zuwanderung:* Zuwanderung, Einwanderung, Obergrenze, Begrenzung der Migration, Migration begrenz, Zuzug, irreguläre Migration, Asylzuwanderung; dazu die Seiten mit Migration, Asyl, Zuwanderung, Einwanderung gelesen (Sätze mit begrenz*, Obergrenze, Fachkräfte, Asylrecht, Zurückweisung u. a.).
    - *Betreuung zu Hause:* Betreuungsgeld, Betreuungsgehalt, Erziehungsgehalt, Herdprämie, Wahlfreiheit, zu Hause/zuhause betreu*, Familiengeld, Erziehungsleistung, häusliche, „Eltern, die“; zweite Suche über alle Seiten: Fremd-/Eigen-/Selbstbetreuung, Betreuung oder Erziehung mit „zu Hause“ oder „selbst“, Erziehungsgeld, Familienarbeit, Care-Arbeit.
 2. **Zitat und Seite** aus dem Textauszug; Kurzfassung in neutralen Worten (höchstens 25 Wörter), nur was das Zitat trägt. Zitate ohne lange Auslassungen: Bei Zweispaltensatz (BSW) stehen im Textauszug fremde Sätze zwischen benachbarten, deshalb nur zusammenhängende Passagen.
-3. **Einordnung nicht blind:** Die Einordnung `ja`/`nein`/`teils` habe ich in Kenntnis der Partei vorgenommen. Die blinde Bestätigung durch zwei Prüfende (nur das Zitat, ohne Parteinamen) steht aus und ist Voraussetzung für `geprueft`.
+3. **Einordnung nicht blind:** Die Einordnung `ja`/`nein`/`teils` habe ich in Kenntnis der Partei vorgenommen. Die blinde Bestätigung durch zwei Prüfende (nur das Zitat, ohne Parteinamen) steht aus und ist Voraussetzung für `geprueft`. Ablauf und Werkzeuge: `daten/README.md` → „Haltungen prüfen“ (`npm run haltung:pruefliste`, `npm run haltung:auswerten`).
 
 ## Einordnungsregel für die Zuwanderung
 
