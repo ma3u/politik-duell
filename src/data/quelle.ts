@@ -2,11 +2,12 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import { antwortAusAuswahl } from '../../supabase/functions/_shared/ki.ts'
 import { analysiereAsync } from '../logic/analyse'
 import type { Ebenen } from '../logic/bewertung'
-import { ABDECKUNG, LAENDER, LANDESPROGRAMME, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from './mock'
+import { ABDECKUNG, INSTRUMENTE, LAENDER, LANDESPROGRAMME, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from './mock'
 import type {
   AbdeckungEintrag,
   AnalyseAnfrage,
   AnalyseAntwort,
+  InstrumentEintrag,
   Land,
   Landesprogramm,
   Massnahme,
@@ -29,6 +30,8 @@ export interface Daten {
   /** Länder mit erfassten Landesprogrammen und die Programme der laufenden Wahlperiode. */
   laender: Land[]
   landesprogramme: Landesprogramm[]
+  /** Lösungswege, die mehrere Programme vorschlagen – Grundlage der Forderungskarte (ohne Punkte). */
+  instrumente: InstrumentEintrag[]
   /** Geschlossene Testphase: KI-Entwürfe sind geladen und zählen (mit Hinweis am Ergebnis). */
   testphase?: boolean
 }
@@ -49,6 +52,7 @@ export const MOCK_DATEN: Daten = {
   abdeckung: ABDECKUNG,
   laender: LAENDER,
   landesprogramme: LANDESPROGRAMME,
+  instrumente: INSTRUMENTE,
 }
 
 /**
@@ -60,7 +64,7 @@ export const sindBeispieldaten = (d: Daten) =>
 
 export async function ladeDaten(): Promise<Daten> {
   if (!supabase) return MOCK_DATEN
-  const [p, t, u, m, a, l, lp] = await Promise.all([
+  const [p, t, u, m, a, l, lp, ins] = await Promise.all([
     supabase.from('parteien').select('*').order('id'),
     supabase.from('themen').select('*').order('id'),
     supabase.from('ursachen').select('*').order('id'),
@@ -68,6 +72,7 @@ export async function ladeDaten(): Promise<Daten> {
     supabase.from('abdeckung').select('*'),
     supabase.from('laender').select('*').order('name'),
     supabase.from('landesprogramme').select('*'),
+    supabase.from('instrumente').select('*').order('id'),
   ])
   const fehler = p.error ?? t.error ?? u.error ?? m.error
   if (fehler) throw new Error(fehler.message)
@@ -85,6 +90,8 @@ export async function ladeDaten(): Promise<Daten> {
     // gibt es keine Bundesland-Auswahl – gewertet wird dann nur mit Bundesprogrammen.
     laender: l.error ? [] : (l.data as Land[]),
     landesprogramme: lp.error ? [] : (lp.data as Landesprogramm[]),
+    // Fehlt die Tabelle (Migration 20261007000000_instrumente.sql noch nicht ausgeführt), gibt es keine Forderungskarte.
+    instrumente: ins.error ? [] : (ins.data as InstrumentEintrag[]),
   }
 }
 
@@ -123,11 +130,17 @@ export async function mitTestphase(daten: Daten, token: string): Promise<Daten> 
   const { data, error } = await supabase.rpc('testphase_daten', { p_token: token })
   if (error) throw new Error(error.message)
   if (!data) throw new ZugangUngueltig('Dieser Zugang zur Testphase ist nicht (mehr) gültig.')
-  const { massnahmen, abdeckung } = data as { massnahmen: Massnahme[]; abdeckung: AbdeckungEintrag[] }
+  const { massnahmen, abdeckung, instrumente } = data as {
+    massnahmen: Massnahme[]
+    abdeckung: AbdeckungEintrag[]
+    /** Fehlt bei einer Datenbank ohne Migration 20261007000000_instrumente.sql. */
+    instrumente?: InstrumentEintrag[]
+  }
   return {
     ...daten,
     massnahmen: [...daten.massnahmen, ...massnahmen].sort((a, b) => a.id - b.id),
     abdeckung: [...daten.abdeckung, ...abdeckung],
+    instrumente: [...daten.instrumente, ...(instrumente ?? [])].sort((a, b) => a.id - b.id),
     testphase: true,
   }
 }
@@ -166,7 +179,7 @@ export async function analysiere(
 ): Promise<AnalyseAntwort> {
   if (daten.quelle === 'mock' || !supabase) {
     if (anfrage.auswahl) return antwortAusAuswahl(anfrage.auswahl, daten.themen, daten.ursachen)
-    return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen)
+    return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen, { instrumente: daten.instrumente, massnahmen: daten.massnahmen, land: anfrage.land })
   }
   const zugang = daten.testphase ? gespeicherterZugang() : null
   const { data, error } = await supabase.functions.invoke<AnalyseAntwort>('analyse', {

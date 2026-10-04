@@ -8,6 +8,7 @@ import { fuerBeideErfasst } from '../logic/stand'
 import type { RundenErgebnis, Spieler } from '../spiel'
 import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
+import { ForderungsKarte } from './ForderungsKarte'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
 
 /** Fester Satz zu einer Haltung, wenn die KI keine eigene Rückmeldung liefert. */
@@ -36,6 +37,7 @@ function werteAus(
   sprecher: 0 | 1,
   spieler: [Spieler, Spieler],
   daten: Daten,
+  forderung?: RundenErgebnis['forderung'],
 ): RundenErgebnis {
   const { themen, parteien, massnahmen, abdeckung } = daten
   const { rolle, land } = spieler[sprecher]
@@ -44,7 +46,7 @@ function werteAus(
   // Ohne Thema in der Datenbank: ungeprüft. Die Review-Warteschlange füllt die Edge Function.
   if (!thema) {
     return {
-      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft',
+      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}),
       zusammenfassung: analyse.zusammenfassung, einschaetzung: analyse.einschaetzung ?? null,
       ergebnisse: null, punkte: [0, 0], beste: [], nichtErfasst: [],
     }
@@ -55,7 +57,7 @@ function werteAus(
   const eb = bewertePartei(spieler[1].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
   const { status, punkte } = werteRunde(ea, eb)
   return {
-    nr, sprecher, rolle, land, thema, status,
+    nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}),
     ursachen_ids: analyse.ursachen_ids,
     zusammenfassung: analyse.zusammenfassung,
     einschaetzung: null,
@@ -91,6 +93,12 @@ export function Runde({
    * Bei einer Forderung bleibt sie leer: Dann steht das Thema mit den gewählten Ursachen als Problem da.
    */
   const [zusammenfassung, setZusammenfassung] = useState<string | null>(null)
+  /**
+   * Lösungsweg, dem die genannte Forderung entspricht (Forderungskarte, ohne Punkte). Bleibt für den Rest der
+   * Runde: Wird danach ein Problem gewertet, erscheint die Karte zusätzlich in der Auflösung.
+   */
+  const [forderung, setForderung] = useState<{ instrument_id: number; thema_id: number } | null>(null)
+  const [karteOffen, setKarteOffen] = useState(false)
   const daten = useDaten()
 
   const aktiv = spieler[sprecher]
@@ -126,6 +134,18 @@ export function Runde({
       setDenkt(false)
     }
 
+    // Forderungskarte nur, wenn die Forderung eindeutig einem bekannten Lösungsweg entspricht.
+    // Eine Haltung („wert“) setzt sie zurück; ein Problem lässt sie unverändert.
+    if (analyse.typ === 'forderung') {
+      const bekannt = analyse.instrument_id != null && daten.instrumente.some((i) => i.id === analyse.instrument_id)
+      setForderung(bekannt && analyse.thema_id !== null ? { instrument_id: analyse.instrument_id!, thema_id: analyse.thema_id } : null)
+      // Nach der letzten Nachfrage („Forderung bleibt“) zeigt die Runde die Karte gleich.
+      setKarteOffen(bekannt && !analyse.nachfrage)
+    } else if (analyse.typ === 'wert') {
+      setForderung(null)
+      setKarteOffen(false)
+    }
+
     // Nachfrage bei einer Forderung oder wenn keine Ursache erkennbar ist – mit erkanntem Thema
     // zusätzlich dessen Ursachen zum Antippen (nicht bei Pauschalurteilen über Gruppen).
     if (analyse.nachfrage) {
@@ -143,7 +163,7 @@ export function Runde({
           (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
       )
     } else {
-      onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten))
+      onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined))
     }
   }
 
@@ -167,7 +187,9 @@ export function Runde({
     } finally {
       setDenkt(false)
     }
-    onErgebnis(werteAus({ ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung }, nr, sprecher, spieler, daten))
+    onErgebnis(
+      werteAus({ ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung }, nr, sprecher, spieler, daten, forderung ?? undefined),
+    )
   }
 
   const angebot = daten.themen.find((t) => t.id === auswahlThema) ?? null
@@ -209,6 +231,24 @@ export function Runde({
           gesperrt={denkt}
           onWaehlen={(ids) => auswaehlen(angebot.id, ids)}
         />
+      )}
+
+      {forderung && (
+        <div className="forderung-knopf">
+          {!karteOffen && (
+            <button type="button" className="knopf knopf-zweit" onClick={() => setKarteOffen(true)}>
+              Zeig mir, wer das fordert
+            </button>
+          )}
+          {karteOffen && (
+            <>
+              <ForderungsKarte instrumentId={forderung.instrument_id} land={aktiv.land} />
+              <button type="button" className="knopf-link" onClick={() => setKarteOffen(false)}>
+                Karte ausblenden
+              </button>
+            </>
+          )}
+        </div>
       )}
 
       <SprechKnopf

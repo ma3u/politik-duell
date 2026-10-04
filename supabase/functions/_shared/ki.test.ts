@@ -3,7 +3,12 @@ import { PARTEIEN, THEMEN, URSACHEN } from '../../../src/data/mock'
 import {
   antwortAusAuswahl,
   bereinigeAntwort,
+  bereinigeInstrument,
   EingabeFehler,
+  instrumentNachrichten,
+  instrumentPrompt,
+  instrumenteZurAuswahl,
+  mitInstrument,
   NACHFRAGE_BEISPIEL,
   NACHFRAGE_FORDERUNG,
   NACHFRAGE_URSACHE,
@@ -12,7 +17,7 @@ import {
   pruefeAnfrage,
   systemPrompt,
 } from './ki.ts'
-import type { Nachricht } from './typen.ts'
+import type { AnalyseAntwort, Nachricht } from './typen.ts'
 
 const spieler = (text: string): Nachricht => ({ von: 'spieler', text })
 const ki = (text: string): Nachricht => ({ von: 'ki', text })
@@ -307,5 +312,75 @@ describe('bereinigeAntwort ohne Parteinamen', () => {
       PARTEIEN,
     )
     expect(a.stichwort).toBe('Gerechtigkeit ist wichtig')
+  })
+})
+
+describe('Forderung → Instrument (zweiter Aufruf)', () => {
+  const instrumente = [
+    { id: 90, thema_id: 2, name: 'Mietpreisbremse verlängern', ebene: 'bund' as const },
+    { id: 91, thema_id: 2, name: 'Mietpreisbremse im Land verlängern', ebene: 'land' as const },
+    { id: 92, thema_id: 2, name: 'Wohngeld erhöhen', ebene: 'bund' as const },
+    { id: 120, thema_id: 3, name: 'Strompreis senken', ebene: 'bund' as const },
+  ]
+  const massnahmen = [
+    { instrument_id: 90, land: null },
+    { instrument_id: 91, land: 'ST' },
+  ]
+
+  it('bietet nur Instrumente des Themas an: Bund immer, Land nur im gewählten Bundesland', () => {
+    const ids = (land: string | null) => instrumenteZurAuswahl(2, instrumente, massnahmen, land).map((i) => i.id)
+    expect(ids(null)).toEqual([90, 92])
+    expect(ids('ST')).toEqual([90, 91, 92])
+    expect(ids('BE')).toEqual([90, 92])
+    expect(instrumenteZurAuswahl(3, instrumente, massnahmen, 'ST').map((i) => i.id)).toEqual([120])
+  })
+
+  it('baut einen kurzen Prompt nur mit den Instrumenten des Themas, ohne Links und ohne Parteien', () => {
+    const kandidaten = instrumenteZurAuswahl(2, instrumente, massnahmen, null)
+    const p = instrumentPrompt({ id: 2, name: 'Miete' }, kandidaten)
+    expect(p).toContain('Instrument 90: Mietpreisbremse verlängern')
+    expect(p).toContain('Instrument 92: Wohngeld erhöhen')
+    expect(p).not.toContain('Strompreis')
+    expect(p).not.toContain('Instrument 91')
+    expect(p).toContain('"instrument_id": null')
+    expect(p).not.toMatch(/https?:\/\//)
+    expect(p.length).toBeLessThan(systemPrompt(THEMEN, URSACHEN).length)
+  })
+
+  it('gibt dem zweiten Aufruf nur das Gespräch', () => {
+    expect(instrumentNachrichten([spieler('Mietpreisbremse!'), ki('Was soll sich ändern?')])).toEqual([
+      { role: 'user', content: 'Mietpreisbremse!' },
+      { role: 'assistant', content: 'Was soll sich ändern?' },
+    ])
+  })
+
+  it('übernimmt nur eine ID aus der Liste dieses Aufrufs', () => {
+    const erlaubt = [{ id: 90 }, { id: 92 }]
+    expect(bereinigeInstrument({ instrument_id: 90 }, erlaubt)).toBe(90)
+    // Fremde (auch echte, aber nicht angebotene) und erfundene IDs, falsche Typen, Müll.
+    expect(bereinigeInstrument({ instrument_id: 91 }, erlaubt)).toBeNull()
+    expect(bereinigeInstrument({ instrument_id: 120 }, erlaubt)).toBeNull()
+    expect(bereinigeInstrument({ instrument_id: 99999 }, erlaubt)).toBeNull()
+    expect(bereinigeInstrument({ instrument_id: '90' }, erlaubt)).toBeNull()
+    expect(bereinigeInstrument({ instrument_id: null }, erlaubt)).toBeNull()
+    expect(bereinigeInstrument({}, erlaubt)).toBeNull()
+    expect(bereinigeInstrument('90', erlaubt)).toBeNull()
+    expect(bereinigeInstrument(null, erlaubt)).toBeNull()
+  })
+
+  it('hängt das Instrument nur an eine Forderung mit Thema, nie an Pauschalurteile, Probleme oder Haltungen', () => {
+    const forderung: AnalyseAntwort = { typ: 'forderung', nachfrage: 'Was soll sich ändern?', thema_id: 2, ursachen_ids: [], zusammenfassung: 'x' }
+    expect(mitInstrument(forderung, 90)).toMatchObject({ instrument_id: 90 })
+    expect(mitInstrument(forderung, null)).toBe(forderung)
+    expect(mitInstrument({ ...forderung, pauschal: true }, 90)).not.toHaveProperty('instrument_id')
+    expect(mitInstrument({ ...forderung, thema_id: null }, 90)).not.toHaveProperty('instrument_id')
+    expect(mitInstrument({ ...forderung, typ: 'problem' }, 90)).not.toHaveProperty('instrument_id')
+    expect(mitInstrument({ ...forderung, typ: 'wert' }, 90)).not.toHaveProperty('instrument_id')
+  })
+
+  it('der erste Aufruf liefert noch kein Instrument – auch nicht, wenn die KI eins nennt', () => {
+    const a = bereinige({ typ: 'forderung', nachfrage: 'Was soll sich ändern?', thema_id: 2, instrument_id: 90, ursachen_ids: [] })
+    expect(a).toMatchObject({ typ: 'forderung', thema_id: 2 })
+    expect(a).not.toHaveProperty('instrument_id')
   })
 })

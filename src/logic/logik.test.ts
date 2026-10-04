@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ABDECKUNG, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from '../data/mock'
+import { ABDECKUNG, INSTRUMENTE, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from '../data/mock'
 import type { AbdeckungEintrag, Landesprogramm, Massnahme, Nachricht } from '../data/types'
 import { analysiere } from './analyse'
 import { besteParteien, bewertePartei, massnahmenPunkte, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
@@ -47,6 +47,24 @@ describe('analysiere (Mock der Edge Function)', () => {
     const a = analysiere(spieler('Mehr Wohnungen!'), THEMEN, URSACHEN)
     expect(a).toMatchObject({ typ: 'forderung', thema_id: 2, ursachen_ids: [] })
     expect(a.nachfrage).toBeTruthy()
+  })
+
+  it('ordnet eine Forderung einem Instrument des Themas zu (zweiter Schritt, nur mit eindeutigem Treffer)', () => {
+    const mit = (text: string, land: string | null = null) =>
+      analysiere(spieler(text), THEMEN, URSACHEN, { instrumente: INSTRUMENTE, massnahmen: MASSNAHMEN, land })
+    const a = mit('Weg mit hohen Mieten – Mietpreisbremse verlängern!')
+    expect(a).toMatchObject({ typ: 'forderung', thema_id: 2, instrument_id: 90 })
+    // Ohne eindeutigen Treffer (nur das Thema ist klar): kein Instrument, die Forderung bleibt wie bisher.
+    expect(mit('Weniger Mieten!')).toMatchObject({ typ: 'forderung', thema_id: 2 })
+    expect(mit('Weniger Mieten!')).not.toHaveProperty('instrument_id')
+    // Ohne Katalog (alter Aufruf) ändert sich nichts.
+    expect(analysiere(spieler('Weg mit hohen Mieten – Mietpreisbremse verlängern!'), THEMEN, URSACHEN)).not.toHaveProperty('instrument_id')
+  })
+
+  it('ordnet Pauschalurteile und Probleme keinem Instrument zu', () => {
+    const o = { instrumente: INSTRUMENTE, massnahmen: MASSNAHMEN }
+    expect(analysiere(spieler('Die Ausländer sind doch alle kriminell'), THEMEN, URSACHEN, o)).not.toHaveProperty('instrument_id')
+    expect(analysiere(spieler('Die Mietpreisbremse greift bei mir nicht, ich finde keine Wohnung'), THEMEN, URSACHEN, o)).not.toHaveProperty('instrument_id')
   })
 
   it('erkennt eine persönliche Haltung', () => {

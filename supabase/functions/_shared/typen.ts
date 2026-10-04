@@ -74,6 +74,32 @@ export interface Ursache {
   schlagwoerter?: string[]
 }
 
+/**
+ * Lösungsweg, den mehrere Programme vorschlagen (daten/README.md → „Instrumente“). Die App zeigt daran in der
+ * Forderungskarte, welche Parteien ihn haben und was die Forschung sagt – ohne Punkte. Wirksamkeit und
+ * Umsetzbarkeit stehen nur im Datenkatalog und an den Maßnahmen.
+ */
+export interface InstrumentEintrag {
+  id: number
+  thema_id: number
+  name: string
+  begruendung: string | null
+  /** Forschungsstand: wie gut die Wirkung belegt ist. */
+  evidenz: Evidenz | null
+  /** Studie zum Forschungsstand, falls vorhanden. */
+  beleg_studie_url?: string | null
+  /** Instrumente gelten für eine Ebene: Bundes- oder Landesprogramme. */
+  ebene: Ebene
+  /** Der gleiche Lösungsweg auf der anderen Ebene (Bund ↔ Land). */
+  entspricht?: number | null
+  /** Nur Entwurf, noch nicht von Menschen geprüft (nur in der geschlossenen Testphase). */
+  ki_entwurf?: boolean
+  /** Nur bei Entwürfen: Herkunft der Entwurfswerte, wie bei Maßnahmen. */
+  entwurf_herkunft?: 'blind' | 'nicht_blind' | null
+  /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Forderungen diesem Instrument zuordnet. */
+  schlagwoerter?: string[]
+}
+
 export interface RollenModifikator {
   wert: number
   begruendung: string
@@ -87,6 +113,8 @@ export interface Massnahme {
   land?: string | null
   beschreibung: string
   ursachen_ids: number[]
+  /** Gleicher Lösungsweg wie in anderen Programmen (siehe `Instrument`); null/fehlend = einzelne Maßnahme. */
+  instrument_id?: number | null
   wirksamkeit: 0 | 1 | 2 | 3
   umsetzbarkeit: 0 | 1 | 2 | 3
   rollen_modifikator?: Partial<Record<Rolle, RollenModifikator>>
@@ -150,6 +178,11 @@ export interface AnalyseAntwort {
    * Äußerung neutral aufgreift und zu einem Alltagsproblem einlädt. Fehlt sie, zeigt die App einen festen Satz.
    */
   rueckmeldung?: string | null
+  /**
+   * Nur bei einer Forderung mit erkanntem Thema: der Lösungsweg (Instrument), dem sie eindeutig entspricht.
+   * Die App zeigt dann die Forderungskarte („Zeig mir, wer das fordert“) – ohne Punkte. Sonst null/fehlend.
+   */
+  instrument_id?: number | null
   zusammenfassung: string
   /**
    * Nur bei Problemen ohne Thema in der Datenbank: vorläufige, neutrale

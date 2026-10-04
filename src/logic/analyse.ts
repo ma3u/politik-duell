@@ -1,5 +1,5 @@
-import { MAX_NACHFRAGEN, NACHFRAGE_URSACHE } from '../../supabase/functions/_shared/ki.ts'
-import type { AnalyseAntwort, Nachricht, Thema, Ursache } from '../data/types'
+import { instrumenteZurAuswahl, MAX_NACHFRAGEN, mitInstrument, NACHFRAGE_URSACHE } from '../../supabase/functions/_shared/ki.ts'
+import type { AnalyseAntwort, InstrumentEintrag, Massnahme, Nachricht, Thema, Ursache } from '../data/types'
 
 // Mock der Edge Function `analyse`. Liefert dasselbe JSON-Format wie später
 // die KI, arbeitet aber nur mit Schlagwörtern. Vergibt – wie die KI – keine
@@ -65,12 +65,40 @@ function erkenneUrsachen(text: string, thema: Thema, ursachen: Ursache[]): numbe
   return kandidaten.filter((u) => treffer(text, u.schlagwoerter) > 0).map((u) => u.id)
 }
 
+/** Was der Mock für den zweiten Aufruf (Instrument zur Forderung) braucht – wie die Edge Function. */
+export interface InstrumentOptionen {
+  instrumente?: InstrumentEintrag[]
+  massnahmen?: Pick<Massnahme, 'instrument_id' | 'land'>[]
+  /** Bundesland der Person: nur dann kommen Landes-Instrumente in Frage. */
+  land?: string | null
+}
+
+/** Das Instrument des Themas mit den meisten Schlagwort-Treffern; ohne Treffer null (nicht raten). */
+function erkenneInstrument(text: string, thema: Thema, o: InstrumentOptionen): number | null {
+  const kandidaten = instrumenteZurAuswahl(thema.id, o.instrumente ?? [], o.massnahmen ?? [], o.land ?? null)
+  let beste: number | null = null
+  let besteTreffer = 0
+  for (const i of kandidaten) {
+    const n = treffer(text, (o.instrumente ?? []).find((x) => x.id === i.id)?.schlagwoerter)
+    if (n > besteTreffer) {
+      beste = i.id
+      besteTreffer = n
+    }
+  }
+  return beste
+}
+
 function kuerze(text: string, max = 90): string {
   const t = text.trim().replace(/\s+/g, ' ')
   return t.length > max ? `${t.slice(0, max - 1)}…` : t
 }
 
-export function analysiere(verlauf: Nachricht[], themen: Thema[], ursachen: Ursache[]): AnalyseAntwort {
+export function analysiere(
+  verlauf: Nachricht[],
+  themen: Thema[],
+  ursachen: Ursache[],
+  optionen: InstrumentOptionen = {},
+): AnalyseAntwort {
   const spielerTexte = verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
   const letzter = normalisiere(spielerTexte.at(-1) ?? '')
   const gesamt = normalisiere(spielerTexte.join(' '))
@@ -95,13 +123,16 @@ export function analysiere(verlauf: Nachricht[], themen: Thema[], ursachen: Ursa
   // Thema für die Ursachenauswahl. Danach bleibt es eine Forderung ohne Wertung.
   if (istForderung) {
     const fragen = bisherigeNachfragen < MAX_NACHFRAGEN
-    return {
-      typ: 'forderung',
-      nachfrage: fragen ? NACHFRAGEN[bisherigeNachfragen] : null,
-      thema_id: thema?.id ?? null,
-      ursachen_ids: [],
-      zusammenfassung: `Forderung: ${kuerze(spielerTexte.at(-1) ?? '')}`,
-    }
+    return mitInstrument(
+      {
+        typ: 'forderung',
+        nachfrage: fragen ? NACHFRAGEN[bisherigeNachfragen] : null,
+        thema_id: thema?.id ?? null,
+        ursachen_ids: [],
+        zusammenfassung: `Forderung: ${kuerze(spielerTexte.at(-1) ?? '')}`,
+      },
+      thema ? erkenneInstrument(gesamt, thema, optionen) : null,
+    )
   }
 
   if (thema) {
@@ -153,8 +184,9 @@ export async function analysiereAsync(
   verlauf: Nachricht[],
   themen: Thema[],
   ursachen: Ursache[],
+  optionen: InstrumentOptionen = {},
   verzoegerungMs = 600,
 ): Promise<AnalyseAntwort> {
   await new Promise((r) => setTimeout(r, verzoegerungMs))
-  return analysiere(verlauf, themen, ursachen)
+  return analysiere(verlauf, themen, ursachen, optionen)
 }

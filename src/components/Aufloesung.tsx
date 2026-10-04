@@ -1,43 +1,17 @@
 import { useEffect, useState } from 'react'
 import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
-import type { Massnahme } from '../data/types'
 import type { ParteiErgebnis } from '../logic/bewertung'
+import { EVIDENZ_TEXT } from '../logic/forderung'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import type { RundenErgebnis, Spieler } from '../spiel'
+import { KI_HINWEIS, MassnahmeBelege, NICHT_BLIND } from './belege'
+import { ForderungsKarte } from './ForderungsKarte'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
 
-function seitenText(url: string, land: boolean) {
-  const seite = /#page=(\d+)/.exec(url)?.[1]
-  const name = land ? 'Landesprogramm' : 'Programm'
-  return seite ? `${name}, S. ${seite}` : name
-}
-
-export const KI_HINWEIS = 'Vorläufige KI-Bewertung – noch nicht von Menschen geprüft'
-/** KI-Entwurf, dessen Werte mit Kenntnis der Partei vergeben oder geändert wurden (oder vor der Blindbewertung entstanden). */
-export const NICHT_BLIND = 'vorläufige Bewertung, nicht blind'
-
-const EVIDENZ_TEXT = { gemischt: 'Wirkung in der Forschung umstritten', offen: 'Wirkung bisher kaum untersucht' }
-
-
-export function MassnahmeBelege({ massnahme }: { massnahme: Massnahme }) {
-  return (
-    <span className="belege">
-      <a href={massnahme.beleg_programm_url} target="_blank" rel="noopener noreferrer">
-        {seitenText(massnahme.beleg_programm_url, !!massnahme.land)}
-      </a>
-      {massnahme.beleg_studie_url && (
-        <>
-          {' · '}
-          <a href={massnahme.beleg_studie_url} target="_blank" rel="noopener noreferrer">
-            Studie
-          </a>
-        </>
-      )}
-    </span>
-  )
-}
+// Gemeinsame Bausteine liegen in belege.tsx (auch die Forderungskarte nutzt sie); hier weiter exportiert.
+export { KI_HINWEIS, MassnahmeBelege, NICHT_BLIND }
 
 export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
   return (
@@ -349,6 +323,10 @@ export function Aufloesung({
             )}
           </details>
         </>
+      )}
+
+      {enthuellt && runde.forderung && (
+        <ForderungsKarte instrumentId={runde.forderung.instrument_id} land={runde.land} titel="Deine Forderung" />
       )}
 
       {enthuellt && runde.ergebnisse && (
