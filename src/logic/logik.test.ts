@@ -30,6 +30,19 @@ describe('analysiere (Mock der Edge Function)', () => {
     expect(a.zusammenfassung).not.toMatch(/kriminell|Ausländer/i)
   })
 
+  it('geht auf Abwertung, Gewaltaufrufe und Beleidigungen nicht ein (Grenze)', () => {
+    for (const text of ['Die gehören alle aufgehängt', 'Das sind doch keine Menschen', 'Die sollen keine Rechte haben', 'Du Vollidiot']) {
+      const a = analysiere(spieler(text), THEMEN, URSACHEN, { instrumente: INSTRUMENTE, massnahmen: MASSNAHMEN })
+      expect(a).toEqual({
+        typ: 'grenze', nachfrage: null, thema_id: null, ursachen_ids: [], zusammenfassung: '', stichwort: '', einschaetzung: null, rueckmeldung: null,
+      })
+    }
+    // Ein Pauschalurteil ist noch keine Grenze: Nachfrage nach dem Erlebten.
+    expect(analysiere(spieler('Die Ausländer sind doch alle kriminell'), THEMEN, URSACHEN)).toMatchObject({ typ: 'forderung', pauschal: true })
+    // Auch eine Forderung mit Thema bleibt eine Forderung.
+    expect(analysiere(spieler('Mehr Abschiebungen!'), THEMEN, URSACHEN).typ).toBe('forderung')
+  })
+
   it('fragt höchstens zweimal nach', () => {
     const verlauf: Nachricht[] = [
       { von: 'spieler', text: 'Mehr Wohnungen!' },

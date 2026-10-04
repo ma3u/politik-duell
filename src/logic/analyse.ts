@@ -1,4 +1,4 @@
-import { instrumenteZurAuswahl, MAX_NACHFRAGEN, mitInstrument, NACHFRAGE_URSACHE } from '../../supabase/functions/_shared/ki.ts'
+import { grenzeAntwort, instrumenteZurAuswahl, MAX_NACHFRAGEN, mitInstrument, NACHFRAGE_URSACHE } from '../../supabase/functions/_shared/ki.ts'
 import type { AnalyseAntwort, InstrumentEintrag, Massnahme, Nachricht, Thema, Ursache } from '../data/types'
 
 // Mock der Edge Function `analyse`. Liefert dasselbe JSON-Format wie später
@@ -24,6 +24,18 @@ const PAUSCHAL_MUSTER = [
   /\bsind (doch |eh |halt )?alle\b/,
   /\balle (auslaender|migranten|fluechtlinge|zuwanderer|asylanten|asylbewerber|muslime|rentner|politiker|beamten|arbeitslosen)\b/,
 ]
+/**
+ * Grenze (docs/methode.md → „Grenze“): Abwertung einer Gruppe, Gewaltaufruf, Beleidigung. Bewusst eng –
+ * ein Pauschalurteil („die sind alle …“) bleibt eine Nachfrage nach dem Erlebten.
+ */
+const GRENZE_MUSTER = [
+  /\b(sind|seid) (doch |eh |halt |alle |keine )*(keine menschen|untermenschen|ungeziefer|abschaum|parasiten|tiere)\b/,
+  /\b(gehoeren|sollte man|muss man|sollen) (alle |die )*(erschossen|aufgehaengt|vergast|abgeknallt|erschiessen|aufhaengen|vergasen|abknallen|totschlagen)\b/,
+  /\b(sollen|duerfen|sollten) (doch |eh |halt )?(keine|nicht die gleichen) rechte haben\b/,
+  /\b(drecks|scheiss)(auslaender|deutsche|muslime|juden|kanaken|schwule|frauen|weiber|linke|rechte|nazis|zecken)\b/,
+  /\b(idiot|vollidiot|arschloch|hurensohn|wichser)\b/,
+]
+
 export const NACHFRAGE_PAUSCHAL = 'Was hast du selbst erlebt, oder wo fühlst du dich unsicher?'
 
 const WERT_MUSTER = [
@@ -106,6 +118,9 @@ export function analysiere(
 
   const thema = erkenneThema(gesamt, themen)
   const istForderung = FORDERUNG_MUSTER.some((m) => m.test(letzter))
+
+  // Grenze: keine Karte, keine Nachfrage, kein Inhalt.
+  if (GRENZE_MUSTER.some((m) => m.test(letzter))) return grenzeAntwort()
 
   // Pauschalurteil über eine Gruppe: wie eine Forderung nachfragen, das Urteil aber nicht wiedergeben.
   if (PAUSCHAL_MUSTER.some((m) => m.test(letzter)) && bisherigeNachfragen < MAX_NACHFRAGEN) {

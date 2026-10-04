@@ -1,6 +1,6 @@
 # Plan: Forderungen und Haltungen einordnen
 
-Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 und 2 umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
+Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 bis 3 umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
 
 ## Ziel
 
@@ -356,7 +356,14 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
    - App: `ForderungsKarte.tsx` (Logik in `src/logic/forderung.ts`) in der Runde – Knopf „Zeig mir, wer das fordert“ unter der Nachfrage, bei bleibender Forderung gleich offen – und in der Auflösung („Deine Forderung“), wenn die Runde mit einer Forderung begann. Forschungsstand mit Begründung, keine Punkte, feste Parteireihenfolge, keine Hervorhebung der gewählten Parteien. Für „steht nicht drin“ gilt der Wortlaut „zu diesem Thema nicht gefunden“; ein Programm, das für die Ursachen des Lösungswegs noch nicht durchsucht ist, erscheint als „noch nicht erfasst“.
    - Gespeichert wird bei `status = 'forderung'` die `instrument_id` (nur die ID, kein Text). Gewertete Runden speichern sie nicht.
    - Noch offen: Die manuelle Prompt-Evaluation für die Zuordnung (siehe „Tests“) und das Setzen von `entspricht` in den Daten.
-3. **Grenze** (Teil D) mit Methodentext.
+3. **Grenze** (Teil D) mit Methodentext. *Umgesetzt (4. 10. 2026).* Umsetzungsdetails:
+   - Prompt: neuer Typ `grenze` (Menschenwürde oder gleiche Rechte einer Gruppe absprechen, Gewaltaufruf, Beleidigung; gleich aus welcher Richtung), ausdrücklich abgegrenzt vom Pauschalurteil – im Zweifel `forderung` mit `pauschal: true`.
+   - `bereinigeAntwort` übernimmt bei `grenze` nichts aus der KI-Antwort (keine Nachfrage, Rückmeldung, Zusammenfassung, kein Stichwort, Thema, Instrument oder `pauschal`); einen zweiten KI-Aufruf gibt es nicht.
+   - Gespeichert wird eine Runde mit `status = 'grenze'` und leerem `problem_text`, ohne Filtergrund. Die Migration `20261008000000_runden_grenze.sql` erlaubt den Status und sichert per Check ab, dass solche Runden keinen Inhalt, kein Thema, keine Punkte und keine Freigabe haben. In der Admin-Ansicht erscheinen sie nicht.
+   - App: fester Satz „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“; die Äußerung verschwindet aus dem Verlauf, eine offene Forderungskarte wird geschlossen, die Runde läuft weiter (wie bei einer Haltung, E8).
+   - Mock: enge Schlagwortmuster für Abwertung, Gewaltaufrufe und Beleidigungen; Pauschalurteile bleiben Nachfragen.
+   - Methode: `docs/methode.md` → „Grenze“ (Begründung Art. 1 und 3 GG, Programme werden nicht gefiltert, Abgrenzung zum Pauschalurteil), Sonderfälle, Rolle der KI und „Grenzen der Methode“; kurzer Absatz auf der Methodenseite der App.
+   - Noch offen: Grenzfälle in die manuelle Prompt-Evaluation aufnehmen (siehe „Tests“), mit Beispielen aus verschiedenen Richtungen.
 4. **Haltungen**: Format, Prüfung, drei Pilot-Haltungen erfassen, Haltungskarte, Endbildschirm.
 5. Tests mit Spielenden aus verschiedenen Lagern; danach über weitere Haltungen entscheiden.
 

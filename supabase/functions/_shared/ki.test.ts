@@ -52,6 +52,14 @@ describe('systemPrompt', () => {
     expect(p).toContain('Stimme nicht zu und widersprich nicht')
     expect(p).toContain('Liste von drei Fassungen')
   })
+
+  it('kennt die Grenze und grenzt sie vom Pauschalurteil ab', () => {
+    const p = systemPrompt(THEMEN, URSACHEN)
+    expect(p).toContain('"typ": "problem" | "forderung" | "wert" | "grenze"')
+    expect(p).toContain('Menschenwürde oder gleiche Rechte abspricht, zu Gewalt aufruft')
+    expect(p).toContain('gleich, aus welcher Richtung')
+    expect(p).toContain('Im Zweifel: "forderung" mit "pauschal": true')
+  })
 })
 
 describe('nutzerNachrichten', () => {
@@ -128,6 +136,32 @@ describe('bereinigeAntwort', () => {
     expect(a).toMatchObject({ typ: 'forderung', pauschal: true, thema_id: null })
     // „pauschal“ zählt nur bei Forderungen.
     expect(bereinige({ typ: 'wert', pauschal: true, zusammenfassung: 'x' }).pauschal).toBeUndefined()
+  })
+
+  it('übernimmt bei einer Grenze nichts aus der Antwort', () => {
+    const leer = { typ: 'grenze', nachfrage: null, thema_id: null, ursachen_ids: [], zusammenfassung: '', stichwort: '', einschaetzung: null, rueckmeldung: null }
+    const a = bereinige({
+      typ: 'grenze',
+      nachfrage: ['Was meinst du damit?'],
+      rueckmeldung: ['Das sehen viele so.'],
+      thema_id: 9,
+      ursachen_ids: [901],
+      instrument_id: 90,
+      pauschal: true,
+      zusammenfassung: 'Abwertende Aussage über eine Gruppe',
+      stichwort: 'Gruppe',
+      einschaetzung: 'e',
+    })
+    expect(a).toEqual(leer)
+    // Auch nach zwei Nachfragen und ohne weitere Felder.
+    const verlauf = [spieler('a'), ki('?'), spieler('b'), ki('?'), spieler('c')]
+    expect(bereinige({ typ: 'grenze' }, verlauf)).toEqual(leer)
+    // Ein Instrument hängt nie an einer Grenze.
+    expect(mitInstrument(a, 90)).not.toHaveProperty('instrument_id')
+  })
+
+  it('macht aus unbekannten Typen keine Grenze', () => {
+    expect(bereinige({ typ: 'GRENZE', thema_id: 2, ursachen_ids: [202], zusammenfassung: 'x' }).typ).toBe('problem')
   })
 
   it('übernimmt eine Rückmeldung zu Haltungen und abschließenden Forderungen', () => {

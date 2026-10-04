@@ -218,6 +218,13 @@ async function speichereRunde(
   parteien: Partei[],
   ursachen: Ursache[],
 ) {
+  // Grenze (Abwertung, Gewalt, Beleidigung): nur, dass es eine solche Runde gab – ohne Zusammenfassung,
+  // Stichwort oder Filtergrund. Vom Inhalt wird nichts gespeichert.
+  if (antwort.typ === 'grenze') {
+    await db.from('runden').insert({ problem_text: '', status: 'grenze', partei_a: parteiA, partei_b: parteiB, testphase })
+    return
+  }
+
   const stichwort = antwort.stichwort ?? null
   const basis = {
     problem_text: antwort.zusammenfassung,

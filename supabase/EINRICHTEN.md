@@ -304,6 +304,27 @@ Grenze zurückweisen!“) – unter der Nachfrage erscheint „Zeig mir, wer das
 Datenbank (Schritt 2 fehlt) oder ohne Treffer läuft alles wie bisher, nur ohne Karte. Landes-Blöcke erscheinen
 erst, wenn im Datenkatalog `entspricht` gesetzt ist (siehe `daten/README.md` → „Instrumente“).
 
+### 15. Grenze (Plan `docs/plan-haltungen.md`, Schritt 3)
+
+Auf Äußerungen, die einer Gruppe die Menschenwürde oder gleiche Rechte absprechen, zu Gewalt aufrufen oder
+Personen beleidigen, geht das Spiel nicht ein (`docs/methode.md` → „Grenze“). Gespeichert wird nur, dass es eine
+solche Runde gab, ohne Inhalt. Einmalig, **in dieser Reihenfolge**:
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261008000000_runden_grenze.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261008000000_runden_grenze.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Erlaubt den Rundenstatus `grenze` und stellt sicher, dass solche Runden keinen Text,
+   kein Stichwort, kein Thema und keine Punkte haben.
+2. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy** (braucht Schritt 1, sonst scheitert das Speichern solcher Runden – die Antwort an die
+   App kommt trotzdem an). Keine neuen Secrets.
+
+Prüfen: In der App eine abwertende Äußerung eingeben (etwa „Die gehören alle aufgehängt“) – es erscheint „Darauf
+geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“, die Äußerung verschwindet aus dem
+Verlauf, und die Runde geht weiter. Ein pauschales Urteil („Die … sind alle kriminell“) bekommt dagegen wie
+bisher die Nachfrage nach dem Erlebten. Im SQL Editor: `select status, problem_text, stichwort from runden order
+by id desc limit 1` zeigt `grenze` mit leerem Text und ohne Stichwort.
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

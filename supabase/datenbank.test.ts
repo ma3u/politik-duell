@@ -236,6 +236,22 @@ describe('Datenbank', () => {
     await db.exec(`delete from runden where status = 'forderung'`)
   })
 
+  it('speichert Grenzfälle nur ohne Inhalt', async () => {
+    await db.exec(`insert into runden (problem_text, status, partei_a, partei_b, testphase) values ('', 'grenze', 1, 2, false)`)
+    // Kein Text, kein Stichwort, kein Thema, kein Filtergrund, keine Punkte, keine Freigabe.
+    for (const spalten of [
+      `(problem_text, status) values ('Abwertung', 'grenze')`,
+      `(problem_text, stichwort, status) values ('', 'x', 'grenze')`,
+      `(problem_text, filter_grund, status) values ('', 'Hetze', 'grenze')`,
+      `(problem_text, thema_id, status) values ('', 2, 'grenze')`,
+      `(problem_text, punkte_a, status) values ('', 0, 'grenze')`,
+    ])
+      await expect(db.query(`insert into runden ${spalten}`)).rejects.toThrow()
+    const { rows } = await db.query<{ id: number }>(`select id from runden where status = 'grenze'`)
+    await expect(db.query(`update runden set freigegeben = true where id = $1`, [rows[0].id])).rejects.toThrow()
+    await db.exec(`delete from runden where status = 'grenze'`)
+  })
+
   it('anon darf nicht schreiben', async () => {
     await expect(
       alsRolle('anon', () => db.query(`insert into runden (problem_text, status) values ('x', 'wert')`)),

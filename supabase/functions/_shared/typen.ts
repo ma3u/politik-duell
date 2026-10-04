@@ -162,7 +162,11 @@ export interface AbdeckungEintrag {
 
 /** Antwortformat der Edge Function `analyse` (siehe CLAUDE.md). */
 export interface AnalyseAntwort {
-  typ: 'problem' | 'forderung' | 'wert'
+  /**
+   * `grenze`: Abwertung einer Gruppe, Gewaltaufruf oder Beleidigung (docs/methode.md → „Grenze“). Keine Karte,
+   * keine Nachfrage, kein gespeicherter Inhalt – die App lädt nur zu einem Alltagsproblem ein.
+   */
+  typ: 'problem' | 'forderung' | 'wert' | 'grenze'
   nachfrage: string | null
   /**
    * Bei `problem` mit Ursachen: das gewertete Thema. Bei einer Nachfrage (Forderung oder Problem ohne
