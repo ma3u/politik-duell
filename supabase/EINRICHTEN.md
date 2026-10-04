@@ -281,6 +281,29 @@ Haltungen und abschließende Forderungen.
    [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
    ersetzen → **Deploy** (braucht Schritt 1, sonst fehlen Forderungs-Runden in der Statistik).
 
+### 14. Forderungskarte (Plan `docs/plan-haltungen.md`, Schritt 2)
+
+Wer eine Forderung nennt, die einem erfassten Lösungsweg entspricht, bekommt den Knopf „Zeig mir, wer das
+fordert“: welche Parteien den Lösungsweg im Programm haben, Forschungsstand und Begründung – ohne Punkte.
+Einmalig, **in dieser Reihenfolge**:
+
+1. **Datenbank ergänzen:** [`supabase/migrations/20261007000000_instrumente.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261007000000_instrumente.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**. Legt die Tabelle `instrumente` an, ergänzt `massnahmen.instrument_id` und
+   `runden.instrument_id` und erweitert die Testphasen-Funktion um Instrument-Entwürfe.
+2. **Daten einspielen:** Inhalt von [`supabase/seed.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/seed.sql)
+   im SQL Editor ausführen (braucht Schritt 1; füllt die Instrumente und setzt sie an den Maßnahmen).
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy** (braucht Schritt 1, sonst kann sie die Instrumente nicht lesen und zeigt keine Karte).
+   Dasselbe Secret `MISTRAL_API_KEY` genügt. Pro Forderung mit erkanntem Thema gibt es einen zweiten,
+   kurzen Aufruf an die KI; im Rate-Limit zählt das als eine Anfrage.
+
+Prüfen: In der App eine Forderung nennen, die zu einem erfassten Lösungsweg passt (etwa „Asylsuchende an der
+Grenze zurückweisen!“) – unter der Nachfrage erscheint „Zeig mir, wer das fordert“. Ohne Instrumente in der
+Datenbank (Schritt 2 fehlt) oder ohne Treffer läuft alles wie bisher, nur ohne Karte. Landes-Blöcke erscheinen
+erst, wenn im Datenkatalog `entspricht` gesetzt ist (siehe `daten/README.md` → „Instrumente“).
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.

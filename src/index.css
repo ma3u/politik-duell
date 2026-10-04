@@ -2406,3 +2406,63 @@ textarea {
   display: block;
   margin: 0 0 0.6rem;
 }
+
+/* Forderungskarte (Runde und Auflösung): Wer hat den Lösungsweg im Programm? Keine Punkte, keine Ampelfarben. */
+.forderungskarte {
+  margin: 1rem 0;
+  padding: 14px 16px;
+  border: 1.5px solid var(--linie);
+  border-radius: var(--papier-radius);
+  background: var(--flaeche);
+}
+.forderungskarte h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.forderungskarte h4 {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 0.95rem;
+}
+.forderung-name {
+  margin: 4px 0 0;
+  font-weight: 700;
+}
+.fund-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fund {
+  padding: 4px 0 4px 12px;
+  border-left: 6px solid var(--partei);
+  font-size: 0.92rem;
+}
+.fund-partei {
+  margin-right: 8px;
+  font-weight: 700;
+}
+.fund-nicht_gefunden .fund-text,
+.fund-offen .fund-text,
+.fund-kein_programm .fund-text {
+  color: var(--text-leise);
+}
+.fund-massnahme {
+  margin: 4px 0 0;
+}
+.forderung-evidenz {
+  font-weight: 700;
+}
+.forderungskarte .ki-hinweis {
+  margin: 0.75rem 0 0;
+}
+.forderungskarte > .meta {
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-leise);
+}
+.forderung-knopf {
+  margin: 0 0 1rem;
+}

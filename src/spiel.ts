@@ -30,6 +30,11 @@ export interface RundenErgebnis {
    * · ungeprueft: Thema unbekannt.
    */
   status: 'gewertet' | 'unvollstaendig' | 'ungeprueft'
+  /**
+   * Die Runde begann mit einer Forderung, die einem Lösungsweg entspricht: Die Auflösung zeigt dazu die
+   * Forderungskarte („Deine Forderung: …“) – ohne Punkte, zusätzlich zur Wertung des Problems.
+   */
+  forderung?: { instrument_id: number; thema_id: number }
   /** Ergebnisse der beiden gewählten Parteien (bei „gewertet“ und „unvollstaendig“). */
   ergebnisse: [ParteiErgebnis, ParteiErgebnis] | null
   /** Spielpunkte dieser Runde für A und B. */

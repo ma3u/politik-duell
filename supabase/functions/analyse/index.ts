@@ -12,10 +12,33 @@
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { bewertePartei, werteRunde } from '../_shared/bewertung.ts'
-import { antwortAusAuswahl, bereinigeAntwort, EingabeFehler, nutzerNachrichten, pruefeAnfrage, systemPrompt } from '../_shared/ki.ts'
+import {
+  antwortAusAuswahl,
+  bereinigeAntwort,
+  bereinigeInstrument,
+  EingabeFehler,
+  instrumentNachrichten,
+  instrumentPrompt,
+  instrumenteZurAuswahl,
+  mitInstrument,
+  nutzerNachrichten,
+  pruefeAnfrage,
+  systemPrompt,
+} from '../_shared/ki.ts'
 import { pruefeText } from '../_shared/moderation.ts'
 import { tokenHash } from '../_shared/pruefung.ts'
-import type { AbdeckungEintrag, AnalyseAntwort, Landesprogramm, Massnahme, Partei, Rolle, Thema, Ursache } from '../_shared/typen.ts'
+import type {
+  AbdeckungEintrag,
+  AnalyseAntwort,
+  InstrumentEintrag,
+  Landesprogramm,
+  Massnahme,
+  Nachricht,
+  Partei,
+  Rolle,
+  Thema,
+  Ursache,
+} from '../_shared/typen.ts'
 import {
   corsKoepfe,
   erlaubteUrspruenge,
@@ -104,19 +127,28 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data as Ursache[]
     const parteien = parteienRes.data as Partei[]
 
+    // Zugang zur Testphase: Dann zählen auch KI-Entwürfe (Maßnahmen, Instrumente).
+    const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
+
     // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein.
-    const antwort = anfrage.auswahl
+    let antwort = anfrage.auswahl
       ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
       : bereinigeAntwort(
           await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)),
           anfrage.verlauf, themen, ursachen, parteien,
         )
 
+    // Forderung mit erkanntem Thema: ein zweiter, kurzer Aufruf nur mit den Instrumenten dieses Themas.
+    // Er zählt nicht extra für das Rate-Limit; scheitert er, bleibt es bei der Forderung ohne Karte.
+    if (antwort.typ === 'forderung' && !antwort.pauschal && antwort.thema_id !== null) {
+      const thema = themen.find((t) => t.id === antwort.thema_id)
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase))
+    }
+
     // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht abgeschlossen.
     if (!antwort.nachfrage) {
       // Der Originaltext wird nur geprüft, nicht gespeichert.
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
-      const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
       await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen)
     }
 
@@ -127,6 +159,41 @@ Deno.serve(async (req) => {
     return json({ fehler: 'Die Einordnung hat gerade nicht geklappt. Bitte versuch es noch einmal.' }, 502)
   }
 })
+
+/**
+ * Zweiter Aufruf bei einer Forderung: Entspricht sie eindeutig einem Instrument des Themas? Der Service-Key
+ * umgeht Row Level Security: Entwürfe deshalb ausdrücklich nur in der Testphase.
+ */
+async function erkenneInstrument(
+  thema: Thema,
+  verlauf: Nachricht[],
+  land: string | null,
+  testphase: boolean,
+): Promise<number | null> {
+  try {
+    let iAbfrage = db.from('instrumente').select('id, thema_id, name, ebene').eq('thema_id', thema.id)
+    let mAbfrage = db.from('massnahmen').select('instrument_id, land').eq('thema_id', thema.id).not('instrument_id', 'is', null)
+    if (!testphase) {
+      iAbfrage = iAbfrage.eq('ki_entwurf', false)
+      mAbfrage = mAbfrage.eq('ki_entwurf', false)
+    }
+    const [iRes, mRes] = await Promise.all([iAbfrage, mAbfrage])
+    if (iRes.error) throw iRes.error
+    if (mRes.error) throw mRes.error
+    const kandidaten = instrumenteZurAuswahl(
+      thema.id,
+      iRes.data as Pick<InstrumentEintrag, 'id' | 'thema_id' | 'name' | 'ebene'>[],
+      mRes.data as Pick<Massnahme, 'instrument_id' | 'land'>[],
+      land,
+    )
+    if (!kandidaten.length) return null
+    const roh = await frageMistral(instrumentPrompt(thema, kandidaten), instrumentNachrichten(verlauf))
+    return bereinigeInstrument(roh, kandidaten)
+  } catch (e) {
+    console.error('erkenneInstrument:', e instanceof Error ? e.message : e)
+    return null
+  }
+}
 
 /** Gültiger, nicht gesperrter Zugang zur Testphase? Dann zählen auch KI-Entwürfe. */
 async function zugangGueltig(token: string): Promise<boolean> {
@@ -167,7 +234,7 @@ async function speichereRunde(
   }
   // Forderung ohne Alltagsproblem nach zwei Nachfragen: ohne Wertung, mit dem erkannten Thema.
   if (antwort.typ === 'forderung') {
-    await db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id })
+    await db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id, ...(antwort.instrument_id ? { instrument_id: antwort.instrument_id } : {}) })
     return
   }
 

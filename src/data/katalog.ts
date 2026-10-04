@@ -1,6 +1,8 @@
 import {
   ROLLEN_IDS,
   type AbdeckungEintrag,
+  type Ebene,
+  type InstrumentEintrag,
   type Land,
   type Landesprogramm,
   type Massnahme,
@@ -62,6 +64,13 @@ export interface Instrument {
   bewertungen: number
   /** Herkunft der Entwurfswerte: Blindbewertung oder mit Kenntnis der Partei; fehlt bei älteren Einträgen. */
   entwurf_herkunft?: EntwurfHerkunft
+  /**
+   * ID des gleichen Lösungswegs auf der anderen Ebene (Bund ↔ Land): Instrumente gelten je für eine Ebene,
+   * die Forderungskarte führt beide zusammen. Das Gegenstück verweist zurück.
+   */
+  entspricht?: number
+  /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Forderungen diesem Instrument zuordnet. */
+  schlagwoerter?: string[]
 }
 
 export type EntwurfHerkunft = 'blind' | 'nicht_blind'
@@ -178,13 +187,45 @@ export function spielbareMassnahmen(k: Katalog, mitKiEntwurf = false): Massnahme
   return k.massnahmen
     .filter((m) => eintraege.has(programmSchluessel(m)))
     .map((eintrag) => {
-      const { instrument_id: _i, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, ...m } = eintrag
+      const { instrument_id, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, ...m } = eintrag
+      // Das Instrument bleibt an der Maßnahme: Die Forderungskarte zeigt darüber, wer es vorschlägt.
+      if (instrument_id !== undefined) (m as Massnahme).instrument_id = instrument_id
       if (!mitKiEntwurf) return m
       const ki = !k.fiktiv && !eintraege.get(programmSchluessel(eintrag))!.geprueft
       // Herkunft der Entwurfswerte (Instrument oder Maßnahme) – im Spiel als „nicht blind“ gekennzeichnet.
       const herkunft = eintrag.instrument_id !== undefined ? k.instrumente.find((i) => i.id === eintrag.instrument_id)?.entwurf_herkunft : eigene
       return { ...m, ki_entwurf: ki, ...(ki ? { entwurf_herkunft: herkunft ?? null } : {}) }
     })
+}
+
+/**
+ * Instrumente für die Forderungskarte: nur die, hinter denen mindestens eine spielbare Maßnahme steht
+ * (sonst ließe sich nicht zeigen, wer sie vorschlägt). Öffentlich nur mit einer geprüften Maßnahme;
+ * mit `mitKiEntwurf` (Seed) auch reine Entwürfe, gekennzeichnet mit `ki_entwurf: true` – die Datenbank
+ * gibt sie nur mit Zugang zur Testphase heraus. Ohne Punkte: Wirksamkeit und Umsetzbarkeit gehören nicht dazu.
+ */
+export function spielbareInstrumente(k: Katalog, mitKiEntwurf = false): InstrumentEintrag[] {
+  const massnahmen = spielbareMassnahmen(k, mitKiEntwurf)
+  const ebene = (id: number) => (massnahmen.find((m) => m.instrument_id === id)?.land ? 'land' : 'bund') as Ebene
+  const eintraege = k.instrumente.filter((i) => massnahmen.some((m) => m.instrument_id === i.id))
+  const dabei = new Set(eintraege.map((i) => i.id))
+  return eintraege.map((i) => {
+    const dazu = massnahmen.filter((m) => m.instrument_id === i.id)
+    // Entwurf, solange keine der Maßnahmen geprüft ist (bei fiktiven Daten zählt alles).
+    const ki = !k.fiktiv && !dazu.some((m) => m.geprueft && !m.ki_entwurf)
+    return {
+      id: i.id,
+      thema_id: i.thema_id,
+      name: i.name,
+      begruendung: i.begruendung || null,
+      evidenz: i.evidenz ?? null,
+      beleg_studie_url: i.beleg_studie_url ?? null,
+      ebene: ebene(i.id),
+      entspricht: i.entspricht !== undefined && dabei.has(i.entspricht) ? i.entspricht : null,
+      ...(mitKiEntwurf ? { ki_entwurf: ki, ...(ki ? { entwurf_herkunft: i.entwurf_herkunft ?? null } : {}) } : {}),
+      ...(i.schlagwoerter ? { schlagwoerter: i.schlagwoerter } : {}),
+    }
+  })
 }
 
 /**
@@ -480,6 +521,8 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
       }
     }
   }
+  /** Ebene, für die ein Instrument genutzt wird (aus den Maßnahmen dahinter), über alle Themen. */
+  const ebeneJeInstrument = new Map<number, string>()
   const neueId = (ort: string, id: number, art: string) => {
     const vorher = idOrt.get(id)
     if (vorher === 'stillgelegt') f(ort, `ID ${id} ist stillgelegt (daten/ids.json) und darf nicht wieder vergeben werden – npm run daten:id`)
@@ -676,13 +719,16 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
         f(iOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(iOrt, roh, ['id', 'name', ...INSTRUMENT_FELDER])
+      unbekannteFelder(iOrt, roh, ['id', 'name', 'entspricht', 'schlagwoerter', ...INSTRUMENT_FELDER])
       const ins: Instrument = {
         id: ganzzahl(iOrt, roh, 'id', 1, 2147483647),
         thema_id: thema.id,
         name: text(iOrt, roh, 'name', 120),
         ...bewertungsteil(iOrt, roh, true, thema.id),
       }
+      if (roh.entspricht !== undefined) ins.entspricht = ganzzahl(iOrt, roh, 'entspricht', 1, 2147483647)
+      const sw = schlagwoerter(iOrt, roh)
+      if (sw) ins.schlagwoerter = sw
       neueId(iOrt, ins.id, 'Instrument')
       eigeneInstrumente.set(ins.id, ins)
       katalog.instrumente.push(ins)
@@ -914,6 +960,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
     for (const id of eigeneInstrumente.keys()) {
       if (!instrumentGenutzt.has(id)) warnungen.push(`${ort}: Instrument ${id} wird von keiner Maßnahme genutzt`)
     }
+    for (const [id, e] of instrumentEbene) ebeneJeInstrument.set(id, e)
 
     // Landesprogramme sind eine Ergänzung: Maßgeblich für „noch nicht erfasst“ ist das Bundesprogramm.
     const fehlend = katalog.parteien.filter((p) => !bundErfasst.has(p.id))
@@ -928,6 +975,21 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
       for (const id of eigeneUrsachen) {
         if (!adressiert.has(id)) warnungen.push(`${ort}: Ursache ${id} wird von keiner Partei adressiert`)
       }
+    }
+  }
+
+  // `entspricht`: das Gegenstück gehört zum selben Thema, gilt für die andere Ebene und verweist zurück.
+  for (const i of katalog.instrumente) {
+    if (i.entspricht === undefined) continue
+    const ort = `Thema ${i.thema_id} › Instrument ${i.id}`
+    const anderes = katalog.instrumente.find((x) => x.id === i.entspricht)
+    if (!anderes) f(ort, `„entspricht“: Instrument ${i.entspricht} gibt es nicht`)
+    else if (anderes.thema_id !== i.thema_id) f(ort, `„entspricht“: Instrument ${anderes.id} gehört zu einem anderen Thema`)
+    else if (anderes.entspricht !== i.id) f(ort, `„entspricht“: Instrument ${anderes.id} verweist nicht auf dieses Instrument zurück`)
+    else {
+      const e1 = ebeneJeInstrument.get(i.id)
+      const e2 = ebeneJeInstrument.get(anderes.id)
+      if (e1 && e2 && e1 === e2) f(ort, `„entspricht“: Instrument ${anderes.id} gilt für dieselbe Ebene – gemeint ist das Gegenstück auf der anderen (Bund ↔ Land)`)
     }
   }
 

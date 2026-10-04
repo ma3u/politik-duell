@@ -1,6 +1,6 @@
 # Plan: Forderungen und Haltungen einordnen
 
-Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
+Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 und 2 umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
 
 ## Ziel
 
@@ -349,7 +349,13 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
    - Angetippte Ursachen gehen als `auswahl` an die Edge Function `analyse`; sie fragt dann keine KI (zählt nur für das Rate-Limit je Sitzung, nicht für das globale) und speichert die Runde. Als Problem steht dort nur „Thema: n Ursachen angetippt“ – kein Text der Person.
    - Feld `pauschal` und Status `forderung` (Migration `20261006000000_runden_forderung.sql`) sind schon in diesem Schritt dabei; Forderungen ohne Problem kommen wie Haltungen nicht zur Freigabe in der Admin-Ansicht.
    - Nachgereicht: Statt immer desselben Satzes greift die KI eine Haltung oder abschließende Forderung in `rueckmeldung` in eigenen Worten auf (keine Zustimmung, kein Widerspruch). Bei Parteinamen, Filtertreffern, zu kurzem oder zu langem Text und bei Pauschalurteilen zeigt die App den festen Satz.
-2. **Forderungskarte** (A3): Instrumente in die Datenbank, zweistufiger KI-Aufruf.
+2. **Forderungskarte** (A3): Instrumente in die Datenbank, zweistufiger KI-Aufruf. *Umgesetzt (4. 10. 2026).* Umsetzungsdetails:
+   - Migration `20261007000000_instrumente.sql`: Tabelle `instrumente` (ohne Wirksamkeit und Umsetzbarkeit, dafür mit `beleg_studie_url`, `ki_entwurf` und `entwurf_herkunft`), `massnahmen.instrument_id`, `runden.instrument_id`; `testphase_daten` liefert auch Instrument-Entwürfe. Ein Instrument ist öffentlich, sobald mindestens eine seiner Maßnahmen geprüft ist (bei echten Daten verlangt das schon zwei Bewertungen am Instrument); `entspricht` verweist nur auf ein Gegenstück, das ebenfalls spielbar ist.
+   - Katalog: optionales Feld `entspricht` am Instrument, Prüfung (Gegenstück vorhanden, im selben Thema, andere Ebene, verweist zurück). In den Daten ist `entspricht` noch nirgends gesetzt – die Landes-Blöcke erscheinen erst, wenn jemand Bundes- und Landes-Instrumente bewusst verbindet.
+   - Zweiter KI-Aufruf in der Edge Function `analyse`: nur bei `forderung` mit erkanntem Thema und ohne `pauschal`. Angeboten werden die Bundes-Instrumente des Themas und, bei gewähltem Land, die Landes-Instrumente, die in einem Programm dieses Landes vorkommen; Entwürfe nur mit Zugang zur Testphase. Die Antwort wird nur übernommen, wenn die ID in der angebotenen Liste stand; scheitert der Aufruf, bleibt die Forderung ohne Karte. Rate-Limit wie vorher: eine Anfrage.
+   - App: `ForderungsKarte.tsx` (Logik in `src/logic/forderung.ts`) in der Runde – Knopf „Zeig mir, wer das fordert“ unter der Nachfrage, bei bleibender Forderung gleich offen – und in der Auflösung („Deine Forderung“), wenn die Runde mit einer Forderung begann. Forschungsstand mit Begründung, keine Punkte, feste Parteireihenfolge, keine Hervorhebung der gewählten Parteien. Für „steht nicht drin“ gilt der Wortlaut „zu diesem Thema nicht gefunden“; ein Programm, das für die Ursachen des Lösungswegs noch nicht durchsucht ist, erscheint als „noch nicht erfasst“.
+   - Gespeichert wird bei `status = 'forderung'` die `instrument_id` (nur die ID, kein Text). Gewertete Runden speichern sie nicht.
+   - Noch offen: Die manuelle Prompt-Evaluation für die Zuordnung (siehe „Tests“) und das Setzen von `entspricht` in den Daten.
 3. **Grenze** (Teil D) mit Methodentext.
 4. **Haltungen**: Format, Prüfung, drei Pilot-Haltungen erfassen, Haltungskarte, Endbildschirm.
 5. Tests mit Spielenden aus verschiedenen Lagern; danach über weitere Haltungen entscheiden.

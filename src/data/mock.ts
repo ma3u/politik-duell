@@ -1,4 +1,4 @@
-import { alsDateien, ladeKatalog, spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen } from './katalog.ts'
+import { alsDateien, ladeKatalog, spielbareAbdeckung, spielbareInstrumente, spielbareLandesprogramme, spielbareMassnahmen } from './katalog.ts'
 
 // ---------------------------------------------------------------------------
 // Eingebaute Beispieldaten der App („Mit Beispieldaten spielen“, Tests) –
@@ -21,5 +21,7 @@ export const URSACHEN = KATALOG.ursachen
 export const MASSNAHMEN = spielbareMassnahmen(KATALOG)
 /** Welche Themen je Partei erfasst sind (fehlt ein Eintrag: noch nicht erfasst). */
 export const ABDECKUNG = spielbareAbdeckung(KATALOG)
+/** Lösungswege für die Forderungskarte (nur die mit spielbaren Maßnahmen). */
+export const INSTRUMENTE = spielbareInstrumente(KATALOG)
 export const LAENDER = KATALOG.laender
 export const LANDESPROGRAMME = spielbareLandesprogramme(KATALOG)

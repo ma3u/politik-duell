@@ -135,6 +135,7 @@ Es zählt immer genau ein Programm je Partei und Ursache. So hat keine Partei me
 | Thema für diese Partei noch nicht vollständig geprüft, oder das Programm wurde nach einer später ergänzten Ursache noch nicht durchsucht | „noch nicht erfasst“ | Runde wird nicht gewertet |
 | Ursache auf Landesebene, Partei hat im gewählten Land kein aktuelles Programm | „kein aktuelles Landesprogramm“ | Runde wird nicht gewertet |
 | Thema gar nicht in der Datenbank | „ungeprüft – keine Wertung“, ohne Links; kommt in die Warteschlange für neue Themen | keine |
+| Spieler:in nennt eine Forderung, die eindeutig einem erfassten Lösungsweg entspricht | Forderungskarte (auf Wunsch bei der Nachfrage, bei bleibender Forderung gleich, nach einem gewerteten Problem zusätzlich in der Auflösung): welche Parteien den Lösungsweg im Programm haben („steht im Programm“, „zu diesem Thema nicht gefunden“ oder „noch nicht erfasst“) mit Beleg, dazu Forschungsstand und Begründung. Eingeordnet wird der Lösungsweg, nicht die Partei | keine |
 | Spieler:in nennt einen Wert oder eine Haltung | wird respektvoll als persönliche Haltung benannt; neues Problem möglich | keine |
 | Spieler:in bleibt nach zwei Nachfragen bei einer Forderung | Forderung wird als verstanden benannt, mit Thema, falls erkennbar; neues Problem möglich. Sie wird nicht zum Problem umgedeutet und kommt nicht in die Warteschlange für neue Themen | keine |
 
@@ -148,7 +149,7 @@ Die KI ist Übersetzerin, nicht Schiedsrichterin. Sie macht aus einem frei formu
 | --- | --- |
 | erkennt, ob ein Problem, eine Forderung oder eine Haltung genannt wurde | vergibt Punkte |
 | gibt eine Forderung neutral wieder und stellt höchstens zwei Nachfragen nach dem Alltagsproblem | nennt Quellen oder Links |
-| ordnet das Problem (oder die Forderung) einem Thema und das Problem dessen Ursachen zu | bewertet Parteien oder äußert sich zu ihnen |
+| ordnet das Problem (oder die Forderung) einem Thema und das Problem dessen Ursachen zu; ordnet eine Forderung – in einem zweiten, kurzen Aufruf nur mit den Lösungswegen dieses Themas – einem davon zu, wenn sie ihm eindeutig entspricht (sonst keinem) | bewertet Parteien oder äußert sich zu ihnen |
 | fasst das Problem in einem neutralen Satz zusammen | belehrt oder kommentiert Meinungen |
 | greift eine Haltung oder Forderung in eigenen Worten auf und lädt zu einem Alltagsproblem ein | stimmt Haltungen zu oder widerspricht ihnen |
 

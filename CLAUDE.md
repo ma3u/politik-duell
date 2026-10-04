@@ -18,7 +18,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 2. Spieler A und B wählen je eine Partei (nicht dieselbe) und optional eine Rolle (Mieter, Eigentümer, Angestellte, Selbstständig, Rentner, Arbeitslos, Studierend, Vermögend).
 3. Pro Runde (insgesamt 5, abwechselnd): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
 4. KI klassifiziert: `problem` | `forderung` | `wert`.
-   - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
+   - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Entspricht die Forderung eindeutig einem erfassten Lösungsweg (Instrument des Themas, zweiter KI-Aufruf), zeigt ein Knopf „Zeig mir, wer das fordert“ die **Forderungskarte**: welche Parteien den Lösungsweg im Programm haben (mit Beleg-Link), Forschungsstand und Begründung – ohne Punkte; nach einem gewerteten Problem erscheint sie zusätzlich in der Auflösung. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
    - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich.
    - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2, mit Ursachen zum Antippen), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
@@ -62,6 +62,7 @@ massnahmen (
   land text null,                     -- null = Bundesprogramm
   beschreibung,
   ursachen_ids int[],
+  instrument_id int null,             -- gleicher Lösungsweg wie in anderen Programmen (Forderungskarte)
   wirksamkeit smallint check (0..3),
   umsetzbarkeit smallint check (0..3),
   rollen_modifikator jsonb,
@@ -74,8 +75,11 @@ massnahmen (
   ki_entwurf boolean default false    -- nur mit Zugang zur geschlossenen Testphase sichtbar
 )
 
+instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, entspricht, ki_entwurf)
+  -- Lösungswege für die Forderungskarte, ohne Punkte; entspricht = gleicher Weg auf der anderen Ebene (Bund ↔ Land)
+
 runden (
-  id, created_at, thema_id null, problem_text,
+  id, created_at, thema_id null, instrument_id null, problem_text,
   partei_a, partei_b, punkte_a, punkte_b,
   status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung
   freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
@@ -95,6 +99,7 @@ Antwort (JSON):
   "nachfrage": "string | null",
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],
+  "instrument_id": "number | null (nur bei forderung mit Thema; zweiter, kurzer Aufruf nur mit den Instrumenten des Themas)",
   "pauschal": "boolean (Pauschalurteil über eine Gruppe: keine Ursachenauswahl)",
   "rueckmeldung": "string | null (bei wert und abschließender forderung: greift die Äußerung neutral auf; sonst fester Satz)",
   "zusammenfassung": "kurzer neutraler Satz zum Problem"

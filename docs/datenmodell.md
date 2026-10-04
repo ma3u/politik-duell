@@ -1,6 +1,6 @@
 # Datenmodell
 
-Stand: Migrationen bis `20261004000000_abdeckung_ursachen.sql` (`supabase/migrations/`).
+Stand: Migrationen bis `20261007000000_instrumente.sql` (`supabase/migrations/`).
 Die kuratierten Daten liegen als JSON in `daten/`; `npm run seed` erzeugt daraus die `seed.sql`.
 
 ## ER-Diagramm
@@ -8,6 +8,10 @@ Die kuratierten Daten liegen als JSON in `daten/`; `npm run seed` erzeugt daraus
 ```mermaid
 erDiagram
     parteien ||--o{ massnahmen : "hat"
+    instrumente |o--o{ massnahmen : "instrument_id"
+    themen ||--o{ instrumente : "gehört zu"
+    instrumente |o--o| instrumente : "entspricht (Bund ↔ Land)"
+    instrumente |o--o{ runden : "instrument_id"
     themen ||--o{ massnahmen : "gehört zu"
     themen ||--o{ ursachen : "hat"
     themen ||--o{ abdeckung : "ist erfasst für"
@@ -48,6 +52,7 @@ erDiagram
         text land FK "null = Bundesprogramm"
         text beschreibung
         smallint_arr ursachen_ids "Verweis auf ursachen.id"
+        integer instrument_id FK "gleicher Lösungsweg wie in anderen Programmen"
         smallint wirksamkeit "0-3"
         smallint umsetzbarkeit "0-3"
         jsonb rollen_modifikator
@@ -58,6 +63,18 @@ erDiagram
         date stand
         boolean geprueft
         boolean ki_entwurf
+    }
+    instrumente {
+        integer id PK "Nummernkreis wie Maßnahmen"
+        smallint thema_id FK
+        text name
+        text begruendung
+        text evidenz "belegt | gemischt | offen"
+        text beleg_studie_url
+        text ebene "bund | land"
+        integer entspricht FK "gleicher Lösungsweg auf der anderen Ebene"
+        boolean ki_entwurf
+        text entwurf_herkunft "blind | nicht_blind"
     }
     abdeckung {
         smallint thema_id FK
@@ -85,6 +102,7 @@ erDiagram
         bigint id PK
         timestamptz created_at
         smallint thema_id FK
+        integer instrument_id FK "nur bei status forderung"
         text problem_text
         smallint partei_a FK
         smallint partei_b FK
@@ -137,6 +155,7 @@ erDiagram
 ```
 
 `massnahmen.ursachen_ids` ist ein Array und daher keine echte Fremdschlüsselbeziehung.
+`instrumente` enthält bewusst keine Wirksamkeit und Umsetzbarkeit: Die Forderungskarte zeigt Forschungsstand und Begründung, aber keine Punkte; gewertet wird weiter über die Maßnahmen. Ein Instrument gilt für eine Ebene; `entspricht` verbindet das Bundes- mit dem Landes-Instrument desselben Lösungswegs.
 `pruef_bewertungen.massnahme_id` verweist auf IDs aus `daten/`, nicht zwingend auf `massnahmen`.
 
 ## Gruppen
@@ -144,7 +163,7 @@ erDiagram
 | Gruppe | Tabellen | Zugriff |
 |---|---|---|
 | Stammdaten | `parteien`, `themen`, `laender`, `landesprogramme` | lesbar |
-| Kern | `ursachen`, `massnahmen`, `abdeckung` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
+| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
 | Spieldaten | `runden`, `review_warteschlange`, `rate_limit` | schreibbar nur über Edge Function |
 | Betrieb | `admins`, `pruef_*`, `testphase_zugaenge` | anon gesperrt; Admins und Edge Functions |
 

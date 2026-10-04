@@ -5,6 +5,8 @@ import {
   ROLLEN_IDS,
   type AnalyseAnfrage,
   type AnalyseAntwort,
+  type InstrumentEintrag,
+  type Massnahme,
   type Nachricht,
   type Partei,
   type Rolle,
@@ -99,6 +101,72 @@ Antworte ausschließlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert", "nachfrage": string | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
  "einschaetzung": string | null, "rueckmeldung": string | null}`
+}
+
+// ---------------------------------------------------------------------------
+// Zweiter Aufruf bei einer Forderung (docs/plan-haltungen.md, A3): Erkennt der erste Aufruf eine Forderung
+// mit Thema, ordnet ein kurzer zweiter Aufruf sie einem Instrument dieses Themas zu. Alle Instrumente
+// zusammen würden den Prompt etwa verdoppeln.
+// ---------------------------------------------------------------------------
+
+export type InstrumentKurz = Pick<InstrumentEintrag, 'id' | 'thema_id' | 'name' | 'ebene'>
+
+/**
+ * Instrumente, aus denen die KI wählen darf: die Bundes-Instrumente des Themas und – bei gewähltem
+ * Bundesland – die Landes-Instrumente, die in einem Programm dieses Landes vorkommen.
+ */
+export function instrumenteZurAuswahl(
+  themaId: number,
+  instrumente: InstrumentKurz[],
+  massnahmen: Pick<Massnahme, 'instrument_id' | 'land'>[],
+  land: string | null,
+): InstrumentKurz[] {
+  return instrumente
+    .filter(
+      (i) =>
+        i.thema_id === themaId &&
+        (i.ebene === 'bund' || (land !== null && massnahmen.some((m) => m.instrument_id === i.id && m.land === land))),
+    )
+    .sort((a, b) => a.id - b.id)
+}
+
+export function instrumentPrompt(thema: Pick<Thema, 'id' | 'name'>, instrumente: InstrumentKurz[]): string {
+  const liste = instrumente.map((i) => `- Instrument ${i.id}: ${i.name}`).join('\n')
+  return `Du hilfst im Spiel „Politik-Duell“. Eine Person hat eine politische Forderung zum Thema „${thema.name}“ genannt.
+Deine einzige Aufgabe: Entspricht die Forderung eindeutig einem der folgenden Lösungswege (Instrumente)?
+
+Regeln:
+- Wähle ein Instrument nur, wenn die Forderung genau diesem Lösungsweg entspricht. Ähnlich oder verwandt genügt nicht.
+  Rate nicht: Im Zweifel "instrument_id": null.
+- Bewerte nichts und nenne keine Parteien, Links oder Zahlen.
+
+Instrumente:
+${liste}
+
+Antworte ausschließlich mit einem JSON-Objekt: {"instrument_id": number | null}`
+}
+
+/** Gespräch für den zweiten Aufruf: nur das Gesagte, ohne die Hinweise des ersten. */
+export function instrumentNachrichten(verlauf: Nachricht[]) {
+  return verlauf.map((n) => ({
+    role: n.von === 'spieler' ? ('user' as const) : ('assistant' as const),
+    content: n.text,
+  }))
+}
+
+/** Nur eine ID, die in der Liste dieses Aufrufs stand – alles andere (erfundene oder fremde IDs) wird null. */
+export function bereinigeInstrument(roh: unknown, erlaubt: Pick<InstrumentKurz, 'id'>[]): number | null {
+  const id = roh && typeof roh === 'object' ? (roh as Record<string, unknown>).instrument_id : null
+  return typeof id === 'number' && erlaubt.some((i) => i.id === id) ? id : null
+}
+
+/**
+ * Hängt das erkannte Instrument an die Antwort – nur bei einer Forderung mit erkanntem Thema und nie bei
+ * einem Pauschalurteil über eine Gruppe (dort bleibt es bei der Nachfrage). Problem und Haltung bekommen keins.
+ */
+export function mitInstrument(antwort: AnalyseAntwort, instrumentId: number | null): AnalyseAntwort {
+  if (antwort.typ !== 'forderung' || antwort.pauschal || antwort.thema_id === null || instrumentId === null) return antwort
+  return { ...antwort, instrument_id: instrumentId }
 }
 
 export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {

@@ -4,7 +4,7 @@ import { PGlite } from '@electric-sql/pglite'
 import { readFileSync, readdirSync } from 'node:fs'
 import { beforeAll, describe, expect, it } from 'vitest'
 import { seedSql } from '../scripts/seed-sql'
-import { ABDECKUNG, KATALOG, MASSNAHMEN } from '../src/data/mock'
+import { ABDECKUNG, INSTRUMENTE, KATALOG, MASSNAHMEN } from '../src/data/mock'
 import { tokenHash } from './functions/_shared/pruefung'
 
 const lies = (pfad: string) => readFileSync(new URL(pfad, import.meta.url), 'utf8')
@@ -154,6 +154,74 @@ describe('Datenbank', () => {
     } finally {
       await db.exec(`update massnahmen set ki_entwurf = false; update abdeckung set ki_entwurf = false; delete from testphase_zugaenge`)
     }
+  })
+
+  describe('Instrumente (Forderungskarte)', () => {
+    const instrument = INSTRUMENTE[0]
+    const mitMassnahme = MASSNAHMEN.find((m) => m.instrument_id === instrument.id)!
+
+    it('anon darf Instrumente lesen – ohne Punkte –, aber nicht schreiben', async () => {
+      const r = await alsRolle('anon', () => db.query<Record<string, unknown>>('select * from instrumente'))
+      expect(r.rows.map((x) => x.id)).toEqual(INSTRUMENTE.map((i) => i.id))
+      expect(Object.keys(r.rows[0])).not.toContain('wirksamkeit')
+      expect(Object.keys(r.rows[0])).not.toContain('umsetzbarkeit')
+      await expect(
+        alsRolle('anon', () => db.query(`insert into instrumente (id, thema_id, name) values (9000, 2, 'x')`)),
+      ).rejects.toThrow()
+      await expect(alsNutzer(() => db.query(`insert into instrumente (id, thema_id, name) values (9000, 2, 'x')`))).rejects.toThrow()
+    })
+
+    it('Maßnahmen verweisen auf ihr Instrument', async () => {
+      const r = await db.query<{ instrument_id: number | null }>('select instrument_id from massnahmen where id = $1', [mitMassnahme.id])
+      expect(r.rows[0].instrument_id).toBe(instrument.id)
+      await expect(db.query(`update massnahmen set instrument_id = 8888 where id = ${mitMassnahme.id}`)).rejects.toThrow()
+    })
+
+    it('Entwürfe sind öffentlich unsichtbar und kommen nur mit Zugang zur Testphase', async () => {
+      await db.exec(`update instrumente set ki_entwurf = true where id = ${instrument.id}`)
+      const token = 'I'.repeat(43)
+      await db.query(`insert into testphase_zugaenge (token_hash, name) values ($1, 'Test')`, [await tokenHash(token)])
+      try {
+        expect((await alsRolle('anon', () => db.query('select id from instrumente'))).rows).toEqual([])
+        const r = await alsRolle('anon', () =>
+          db.query<{ d: { instrumente: { id: number; ki_entwurf: boolean }[] } | null }>('select testphase_daten($1) as d', [token]),
+        )
+        expect(r.rows[0].d?.instrumente.map((i) => [i.id, i.ki_entwurf])).toEqual([[instrument.id, true]])
+        const falsch = await alsRolle('anon', () => db.query<{ d: unknown }>('select testphase_daten($1) as d', ['F'.repeat(43)]))
+        expect(falsch.rows[0].d).toBeNull()
+      } finally {
+        await db.exec(`update instrumente set ki_entwurf = false; delete from testphase_zugaenge`)
+      }
+    })
+
+    it('eine Forderung merkt sich das Instrument; ein neuer Seed lässt den Verweis stehen', async () => {
+      await db.exec(`insert into runden (problem_text, status, thema_id, instrument_id) values ('Forderung: Mietpreisbremse', 'forderung', 2, ${instrument.id})`)
+      try {
+        await db.exec(seedSql(KATALOG))
+        const r = await db.query<{ instrument_id: number }>(`select instrument_id from runden where status = 'forderung'`)
+        expect(r.rows).toEqual([{ instrument_id: instrument.id }])
+        await expect(db.query(`insert into runden (problem_text, status, instrument_id) values ('x', 'forderung', 8888)`)).rejects.toThrow()
+      } finally {
+        await db.exec(`delete from runden where status = 'forderung'`)
+      }
+    })
+
+    it('Seed entfernt Instrumente, die nicht mehr im Katalog stehen; der Verweis in Runden wird leer', async () => {
+      await db.exec(`insert into instrumente (id, thema_id, name) values (9001, 2, 'alt')`)
+      await db.exec(`insert into runden (problem_text, status, instrument_id) values ('x', 'forderung', 9001)`)
+      try {
+        await db.exec(seedSql(KATALOG))
+        expect((await db.query<{ id: number }>('select id from instrumente order by id')).rows.map((i) => i.id)).toEqual(INSTRUMENTE.map((i) => i.id))
+        expect((await db.query(`select instrument_id from runden where status = 'forderung'`)).rows).toEqual([{ instrument_id: null }])
+      } finally {
+        await db.exec(`delete from runden where status = 'forderung'`)
+      }
+    })
+
+    it('prüft Ebene und Forschungsstand', async () => {
+      await expect(db.query(`insert into instrumente (id, thema_id, name, ebene) values (9002, 2, 'x', 'kreis')`)).rejects.toThrow()
+      await expect(db.query(`insert into instrumente (id, thema_id, name, evidenz) values (9002, 2, 'x', 'sicher')`)).rejects.toThrow()
+    })
   })
 
   it('anon sieht nur freigegebene Runden', async () => {

@@ -351,6 +351,41 @@ Antworte ausschlie\xDFlich mit einem JSON-Objekt:
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
  "einschaetzung": string | null, "rueckmeldung": string | null}`;
 }
+function instrumenteZurAuswahl(themaId, instrumente, massnahmen, land) {
+  return instrumente.filter((i) => i.thema_id === themaId && (i.ebene === "bund" || land !== null && massnahmen.some((m) => m.instrument_id === i.id && m.land === land))).sort((a, b) => a.id - b.id);
+}
+function instrumentPrompt(thema, instrumente) {
+  const liste = instrumente.map((i) => `- Instrument ${i.id}: ${i.name}`).join("\n");
+  return `Du hilfst im Spiel \u201EPolitik-Duell\u201C. Eine Person hat eine politische Forderung zum Thema \u201E${thema.name}\u201C genannt.
+Deine einzige Aufgabe: Entspricht die Forderung eindeutig einem der folgenden L\xF6sungswege (Instrumente)?
+
+Regeln:
+- W\xE4hle ein Instrument nur, wenn die Forderung genau diesem L\xF6sungsweg entspricht. \xC4hnlich oder verwandt gen\xFCgt nicht.
+  Rate nicht: Im Zweifel "instrument_id": null.
+- Bewerte nichts und nenne keine Parteien, Links oder Zahlen.
+
+Instrumente:
+${liste}
+
+Antworte ausschlie\xDFlich mit einem JSON-Objekt: {"instrument_id": number | null}`;
+}
+function instrumentNachrichten(verlauf) {
+  return verlauf.map((n) => ({
+    role: n.von === "spieler" ? "user" : "assistant",
+    content: n.text
+  }));
+}
+function bereinigeInstrument(roh, erlaubt) {
+  const id = roh && typeof roh === "object" ? roh.instrument_id : null;
+  return typeof id === "number" && erlaubt.some((i) => i.id === id) ? id : null;
+}
+function mitInstrument(antwort, instrumentId) {
+  if (antwort.typ !== "forderung" || antwort.pauschal || antwort.thema_id === null || instrumentId === null) return antwort;
+  return {
+    ...antwort,
+    instrument_id: instrumentId
+  };
+}
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
   const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
@@ -655,10 +690,14 @@ Deno.serve(async (req) => {
     const themen = themenRes.data;
     const ursachen = ursachenRes.data;
     const parteien = parteienRes.data;
-    const antwort = anfrage.auswahl ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen) : bereinigeAntwort(await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien);
+    const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
+    let antwort = anfrage.auswahl ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen) : bereinigeAntwort(await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien);
+    if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
+      const thema = themen.find((t) => t.id === antwort.thema_id);
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase));
+    }
     if (!antwort.nachfrage) {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
-      const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
       await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen);
     }
     return json(antwort);
@@ -672,6 +711,29 @@ Deno.serve(async (req) => {
     }, 502);
   }
 });
+async function erkenneInstrument(thema, verlauf, land, testphase) {
+  try {
+    let iAbfrage = db.from("instrumente").select("id, thema_id, name, ebene").eq("thema_id", thema.id);
+    let mAbfrage = db.from("massnahmen").select("instrument_id, land").eq("thema_id", thema.id).not("instrument_id", "is", null);
+    if (!testphase) {
+      iAbfrage = iAbfrage.eq("ki_entwurf", false);
+      mAbfrage = mAbfrage.eq("ki_entwurf", false);
+    }
+    const [iRes, mRes] = await Promise.all([
+      iAbfrage,
+      mAbfrage
+    ]);
+    if (iRes.error) throw iRes.error;
+    if (mRes.error) throw mRes.error;
+    const kandidaten = instrumenteZurAuswahl(thema.id, iRes.data, mRes.data, land);
+    if (!kandidaten.length) return null;
+    const roh = await frageMistral(instrumentPrompt(thema, kandidaten), instrumentNachrichten(verlauf));
+    return bereinigeInstrument(roh, kandidaten);
+  } catch (e) {
+    console.error("erkenneInstrument:", e instanceof Error ? e.message : e);
+    return null;
+  }
+}
 async function zugangGueltig(token) {
   const { data, error } = await db.from("testphase_zugaenge").select("id").eq("token_hash", await tokenHash(token)).eq("gesperrt", false).maybeSingle();
   if (error) throw error;
@@ -699,7 +761,10 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
     await db.from("runden").insert({
       ...basis,
       status: "forderung",
-      thema_id: antwort.thema_id
+      thema_id: antwort.thema_id,
+      ...antwort.instrument_id ? {
+        instrument_id: antwort.instrument_id
+      } : {}
     });
     return;
   }
