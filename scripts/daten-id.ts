@@ -1,9 +1,10 @@
 // Aufruf: npm run daten:id                         – nächste freie ID für Maßnahmen und Instrumente
+//         npm run daten:id -- --haltung            – nächste freie ID für eine Haltung (eigener Nummernkreis)
 //         npm run daten:id -- --gegen origin/main  – prüft, dass keine ID verschwindet oder umgewidmet wird,
 //                                                   neue Ursachen „durchsucht_fuer“ bekommen, Blindwerte nicht still geändert werden
 //                                                   und Ursachen/Ziel nicht im selben Pull Request wie Maßnahmen eines Themas geändert werden
 import { gitStand, pruefeDatenordner } from './katalog-laden.ts'
-import { naechsteId, vergleicheIds } from './ids.ts'
+import { naechsteHaltungsId, naechsteId, vergleicheIds } from './ids.ts'
 import { vergleicheStand } from './stand-vergleich.ts'
 
 const { katalog, fehler } = pruefeDatenordner()
@@ -13,7 +14,9 @@ if (fehler.length) {
 }
 
 const i = process.argv.indexOf('--gegen')
-if (i < 0) {
+if (process.argv.includes('--haltung')) {
+  console.log(naechsteHaltungsId(katalog))
+} else if (i < 0) {
   console.log(naechsteId(katalog))
 } else {
   const ref = process.argv[i + 1]

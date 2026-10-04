@@ -23,6 +23,10 @@ if (process.argv.includes('--links') && !fehler.length) {
       urls.add(m.beleg_programm_url.split('#')[0])
       if (m.beleg_studie_url) urls.add(m.beleg_studie_url)
     }
+    for (const h of katalog.haltungen) {
+      for (const z of h.zielkonflikte) urls.add(z.quelle_url)
+      for (const p of h.positionen) if (p.beleg_programm_url) urls.add(p.beleg_programm_url.split('#')[0])
+    }
     await Promise.all(
       [...urls].map(async (url) => {
         try {
@@ -46,7 +50,7 @@ const offen = katalog.abdeckung.filter((a) => !a.geprueft).length
 console.log(
   `\n${katalog.fiktiv ? 'FIKTIVE Daten · ' : ''}${n(katalog.parteien.length, 'Partei', 'Parteien')}, ` +
     `${n(katalog.themen.length, 'Thema', 'Themen')}, ${n(katalog.ursachen.length, 'Ursache', 'Ursachen')}, ` +
-    `${n(katalog.massnahmen.length, 'Maßnahme', 'Maßnahmen')} · ` +
+    `${n(katalog.massnahmen.length, 'Maßnahme', 'Maßnahmen')}, ${n(katalog.haltungen.length, 'Haltung', 'Haltungen')} · ` +
     `Abdeckung ${katalog.abdeckung.length - offen}/${katalog.abdeckung.length} geprüft`,
 )
 if (fehler.length) {

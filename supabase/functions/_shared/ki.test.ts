@@ -5,6 +5,7 @@ import {
   bereinigeAntwort,
   bereinigeInstrument,
   EingabeFehler,
+  grenzeAntwort,
   instrumentNachrichten,
   instrumentPrompt,
   instrumenteZurAuswahl,
@@ -440,5 +441,47 @@ describe('Forderung → Instrument (zweiter Aufruf)', () => {
     const a = bereinige({ typ: 'forderung', nachfrage: 'Was soll sich ändern?', thema_id: 2, instrument_id: 90, ursachen_ids: [] })
     expect(a).toMatchObject({ typ: 'forderung', thema_id: 2 })
     expect(a).not.toHaveProperty('instrument_id')
+  })
+})
+
+describe('Haltung → Wertfrage (Haltungskarte)', () => {
+  const haltungen = [
+    { id: 1, frage: 'Soll es ein generelles Tempolimit auf Autobahnen geben?' },
+    { id: 2, frage: 'Soll Zuwanderung stärker begrenzt werden?' },
+  ]
+  const mitHaltungen = (roh: unknown, verlauf: Nachricht[] = [spieler('Test')]) =>
+    bereinigeAntwort(roh, verlauf, THEMEN, URSACHEN, PARTEIEN, () => 0, haltungen)
+
+  it('nennt die vollständigen Haltungen im Prompt – nur Nummer und Frage, ohne Parteien und Links', () => {
+    const p = systemPrompt(THEMEN, URSACHEN, haltungen)
+    expect(p).toContain('Haltung 1: Soll es ein generelles Tempolimit auf Autobahnen geben?')
+    expect(p).toContain('Haltung 2: Soll Zuwanderung stärker begrenzt werden?')
+    expect(p).toContain('"haltung_id": number | null')
+    expect(p).toMatch(/Rate nicht/)
+    expect(p).not.toMatch(/https?:\/\//)
+    for (const partei of PARTEIEN) expect(p).not.toContain(partei.name)
+  })
+
+  it('lässt den Prompt ohne Haltungen unverändert', () => {
+    expect(systemPrompt(THEMEN, URSACHEN, [])).toBe(systemPrompt(THEMEN, URSACHEN))
+    expect(systemPrompt(THEMEN, URSACHEN)).not.toContain('haltung_id')
+  })
+
+  it('übernimmt eine Haltung nur bei „wert“ und nur aus der angebotenen Liste', () => {
+    expect(mitHaltungen({ typ: 'wert', haltung_id: 1, zusammenfassung: 'Tempolimit' })).toMatchObject({ typ: 'wert', haltung_id: 1 })
+    // Erfunden, nicht angeboten (etwa unvollständig), falscher Typ.
+    for (const id of [3, 99999, '1', null]) expect(mitHaltungen({ typ: 'wert', haltung_id: id })).not.toHaveProperty('haltung_id')
+    // Ohne Liste (Datenbank ohne Haltungen): nie.
+    expect(bereinige({ typ: 'wert', haltung_id: 1 })).not.toHaveProperty('haltung_id')
+  })
+
+  it('hängt keine Haltung an Probleme, Forderungen, Pauschalurteile oder Grenzfälle', () => {
+    const problem = mitHaltungen({ typ: 'problem', thema_id: 2, ursachen_ids: [201], haltung_id: 1, zusammenfassung: 'x' })
+    expect(problem).not.toHaveProperty('haltung_id')
+    const forderung = mitHaltungen({ typ: 'forderung', nachfrage: 'Was soll sich ändern?', thema_id: null, haltung_id: 1 })
+    expect(forderung).not.toHaveProperty('haltung_id')
+    const pauschal = mitHaltungen({ typ: 'forderung', pauschal: true, nachfrage: 'Was hast du erlebt?', haltung_id: 2 })
+    expect(pauschal).not.toHaveProperty('haltung_id')
+    expect(mitHaltungen({ typ: 'grenze', haltung_id: 2 })).toEqual(grenzeAntwort())
   })
 })

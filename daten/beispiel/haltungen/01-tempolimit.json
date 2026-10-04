@@ -1,0 +1,57 @@
+{
+  "id": 1,
+  "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
+  "beschreibung": "Ob auf allen Autobahnen eine feste Höchstgeschwindigkeit gelten soll oder ob die Wahl der Geschwindigkeit dort, wo es sicher ist, frei bleibt.",
+  "verwandte_themen": [8, 3],
+  "schlagwoerter": ["tempolimit", "tempo 130", "tempo 120", "freie fahrt", "raserei", "hoechstgeschwindigkeit"],
+  "zielkonflikte": [
+    { "seite": "ja", "text": "Wer ein Tempolimit will, nennt weniger schwere Unfälle und einen geringeren Verbrauch.", "quelle_url": "https://example.org/mock/quelle/tempolimit-unfaelle" },
+    { "seite": "nein", "text": "Wer es ablehnt, nennt die freie Entscheidung der Fahrenden und kürzere Fahrzeiten auf langen Strecken.", "quelle_url": "https://example.org/mock/quelle/tempolimit-fahrzeit" }
+  ],
+  "positionen": [
+    {
+      "partei_id": 1,
+      "position": "ja",
+      "kurzfassung": "Will ein Tempolimit von 130 km/h auf allen Autobahnen.",
+      "zitat": "Wir führen ein Tempolimit von 130 km/h auf allen Autobahnen ein.",
+      "beleg_programm_url": "https://example.org/mock/alpha/wahlprogramm.pdf#page=21",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 2,
+      "position": "nein",
+      "kurzfassung": "Lehnt ein generelles Tempolimit ab und setzt auf Streckenregeln je nach Verkehrslage.",
+      "zitat": "Ein generelles Tempolimit lehnen wir ab. Wo es die Verkehrslage erfordert, gelten Höchstgeschwindigkeiten je Strecke.",
+      "beleg_programm_url": "https://example.org/mock/beta/wahlprogramm.pdf#page=8",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 3,
+      "position": "teils",
+      "kurzfassung": "Will Tempolimits nur auf Abschnitten mit vielen Unfällen, nicht flächendeckend.",
+      "zitat": "Auf Abschnitten mit hoher Unfallzahl wollen wir feste Höchstgeschwindigkeiten, ein flächendeckendes Tempolimit nicht.",
+      "beleg_programm_url": "https://example.org/mock/gamma/wahlprogramm.pdf#page=14",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 4,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Verkehr und Klima durchsucht (Suchbegriffe: Tempolimit, Höchstgeschwindigkeit, Autobahn) – keine Aussage gefunden.",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 5,
+      "position": "ja",
+      "kurzfassung": "Will ein Tempolimit auf Autobahnen, die genaue Höhe soll eine Kommission vorschlagen.",
+      "zitat": "Wir wollen ein Tempolimit auf Autobahnen. Die Höhe soll eine unabhängige Kommission vorschlagen.",
+      "beleg_programm_url": "https://example.org/mock/epsilon/wahlprogramm.pdf#page=30",
+      "stand": "2026-01-01",
+      "geprueft": true
+    }
+  ],
+  "freigabe": { "datum": "2026-01-01" }
+}

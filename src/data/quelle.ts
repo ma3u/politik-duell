@@ -2,11 +2,26 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import { antwortAusAuswahl } from '../../supabase/functions/_shared/ki.ts'
 import { analysiereAsync } from '../logic/analyse'
 import type { Ebenen } from '../logic/bewertung'
-import { ABDECKUNG, INSTRUMENTE, LAENDER, LANDESPROGRAMME, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from './mock'
+import { vollstaendigeHaltungen } from '../../supabase/functions/_shared/haltung.ts'
+import {
+  ABDECKUNG,
+  HALTUNG_POSITIONEN,
+  HALTUNGEN,
+  INSTRUMENTE,
+  LAENDER,
+  LANDESPROGRAMME,
+  MASSNAHMEN,
+  PARTEIEN,
+  THEMEN,
+  URSACHEN,
+  ZIELKONFLIKTE,
+} from './mock'
 import type {
   AbdeckungEintrag,
   AnalyseAnfrage,
   AnalyseAntwort,
+  HaltungEintrag,
+  HaltungPosition,
   InstrumentEintrag,
   Land,
   Landesprogramm,
@@ -14,6 +29,7 @@ import type {
   Partei,
   Thema,
   Ursache,
+  Zielkonflikt,
 } from './types'
 
 // Datenquelle der App: Supabase (Standard, wenn konfiguriert) oder die
@@ -32,6 +48,13 @@ export interface Daten {
   landesprogramme: Landesprogramm[]
   /** Lösungswege, die mehrere Programme vorschlagen – Grundlage der Forderungskarte (ohne Punkte). */
   instrumente: InstrumentEintrag[]
+  /**
+   * Wertfragen für die Haltungskarte mit den Positionen der Parteien (Zitat, Beleg) und den Zielkonflikten –
+   * ohne Punkte. Eine Karte gibt es nur, wenn alle Parteien eine Position haben (`vollstaendigeHaltungen`).
+   */
+  haltungen: HaltungEintrag[]
+  haltungPositionen: HaltungPosition[]
+  zielkonflikte: Zielkonflikt[]
   /** Geschlossene Testphase: KI-Entwürfe sind geladen und zählen (mit Hinweis am Ergebnis). */
   testphase?: boolean
 }
@@ -53,6 +76,9 @@ export const MOCK_DATEN: Daten = {
   laender: LAENDER,
   landesprogramme: LANDESPROGRAMME,
   instrumente: INSTRUMENTE,
+  haltungen: HALTUNGEN,
+  haltungPositionen: HALTUNG_POSITIONEN,
+  zielkonflikte: ZIELKONFLIKTE,
 }
 
 /**
@@ -64,7 +90,7 @@ export const sindBeispieldaten = (d: Daten) =>
 
 export async function ladeDaten(): Promise<Daten> {
   if (!supabase) return MOCK_DATEN
-  const [p, t, u, m, a, l, lp, ins] = await Promise.all([
+  const [p, t, u, m, a, l, lp, ins, h, hp, zk] = await Promise.all([
     supabase.from('parteien').select('*').order('id'),
     supabase.from('themen').select('*').order('id'),
     supabase.from('ursachen').select('*').order('id'),
@@ -73,6 +99,9 @@ export async function ladeDaten(): Promise<Daten> {
     supabase.from('laender').select('*').order('name'),
     supabase.from('landesprogramme').select('*'),
     supabase.from('instrumente').select('*').order('id'),
+    supabase.from('haltungen').select('*').order('id'),
+    supabase.from('haltung_positionen').select('*').order('partei_id'),
+    supabase.from('haltung_zielkonflikte').select('haltung_id, seite, text, quelle_url').order('id'),
   ])
   const fehler = p.error ?? t.error ?? u.error ?? m.error
   if (fehler) throw new Error(fehler.message)
@@ -92,6 +121,10 @@ export async function ladeDaten(): Promise<Daten> {
     landesprogramme: lp.error ? [] : (lp.data as Landesprogramm[]),
     // Fehlt die Tabelle (Migration 20261007000000_instrumente.sql noch nicht ausgeführt), gibt es keine Forderungskarte.
     instrumente: ins.error ? [] : (ins.data as InstrumentEintrag[]),
+    // Fehlen die Tabellen (Migration 20261009000000_haltungen.sql noch nicht ausgeführt), gibt es keine Haltungskarte.
+    haltungen: h.error || hp.error || zk.error ? [] : (h.data as HaltungEintrag[]),
+    haltungPositionen: h.error || hp.error || zk.error ? [] : (hp.data as HaltungPosition[]),
+    zielkonflikte: h.error || hp.error || zk.error ? [] : (zk.data as Zielkonflikt[]),
   }
 }
 
@@ -130,20 +163,26 @@ export async function mitTestphase(daten: Daten, token: string): Promise<Daten> 
   const { data, error } = await supabase.rpc('testphase_daten', { p_token: token })
   if (error) throw new Error(error.message)
   if (!data) throw new ZugangUngueltig('Dieser Zugang zur Testphase ist nicht (mehr) gültig.')
-  const { massnahmen, abdeckung, instrumente } = data as {
+  const { massnahmen, abdeckung, instrumente, haltung_positionen } = data as {
     massnahmen: Massnahme[]
     abdeckung: AbdeckungEintrag[]
     /** Fehlt bei einer Datenbank ohne Migration 20261007000000_instrumente.sql. */
     instrumente?: InstrumentEintrag[]
+    /** Fehlt bei einer Datenbank ohne Migration 20261009000000_haltungen.sql. */
+    haltung_positionen?: HaltungPosition[]
   }
   return {
     ...daten,
     massnahmen: [...daten.massnahmen, ...massnahmen].sort((a, b) => a.id - b.id),
     abdeckung: [...daten.abdeckung, ...abdeckung],
     instrumente: [...daten.instrumente, ...(instrumente ?? [])].sort((a, b) => a.id - b.id),
+    haltungPositionen: [...daten.haltungPositionen, ...(haltung_positionen ?? [])],
     testphase: true,
   }
 }
+
+/** Haltungen mit vollständiger Karte (alle Parteien erfasst) – nur sie zeigt die App, nur ihnen ordnet die KI zu. */
+export const kartenHaltungen = (d: Daten): HaltungEintrag[] => vollstaendigeHaltungen(d.haltungen, d.haltungPositionen, d.parteien)
 
 /** Länder, für die schon Landesprogramme ausgewertet sind – nur sie stehen zur Wahl. */
 export const waehlbareLaender = (d: Daten): Land[] =>
@@ -179,7 +218,12 @@ export async function analysiere(
 ): Promise<AnalyseAntwort> {
   if (daten.quelle === 'mock' || !supabase) {
     if (anfrage.auswahl) return antwortAusAuswahl(anfrage.auswahl, daten.themen, daten.ursachen)
-    return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen, { instrumente: daten.instrumente, massnahmen: daten.massnahmen, land: anfrage.land })
+    return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen, {
+      instrumente: daten.instrumente,
+      massnahmen: daten.massnahmen,
+      land: anfrage.land,
+      haltungen: kartenHaltungen(daten),
+    })
   }
   const zugang = daten.testphase ? gespeicherterZugang() : null
   const { data, error } = await supabase.functions.invoke<AnalyseAntwort>('analyse', {

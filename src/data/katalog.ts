@@ -2,6 +2,8 @@ import {
   ROLLEN_IDS,
   type AbdeckungEintrag,
   type Ebene,
+  type HaltungEintrag,
+  type HaltungPosition,
   type InstrumentEintrag,
   type Land,
   type Landesprogramm,
@@ -9,8 +11,10 @@ import {
   type Partei,
   type Thema,
   type Ursache,
+  type Zielkonflikt,
 } from './types.ts'
 import { werteStimmen } from '../pruefung/auswertung.ts'
+import { ohneParteinamen } from '../../supabase/functions/_shared/ki.ts'
 
 // ---------------------------------------------------------------------------
 // Kuratierter Datenkatalog (Ordner `daten/`, Format siehe daten/README.md).
@@ -120,6 +124,26 @@ export interface LandesprogrammEintrag extends Landesprogramm {
   aktuell: boolean
 }
 
+/** Position im Repo: wie in der Datenbank, plus Prüfstatus. */
+export interface KatalogPosition extends HaltungPosition {
+  geprueft: boolean
+}
+
+/**
+ * Haltung im Repo (daten/haltungen/NN-name.json): Frage, Beschreibung und Zielkonflikte (Phase A, freigegeben
+ * von der Betreiberin), danach die Positionen der Parteien (Phase B).
+ */
+export interface KatalogHaltung extends HaltungEintrag {
+  zielkonflikte: Zielkonflikt[]
+  positionen: KatalogPosition[]
+  /** Freigabe von Frage, Beschreibung und Zielkonflikten – erst danach werden Positionen erfasst. */
+  freigabe?: { datum: string }
+}
+
+/** Höchstens so viele Wörter hat die Kurzfassung einer Position (docs/plan-haltungen.md, B2). */
+export const MAX_KURZFASSUNG_WOERTER = 25
+const POSITIONSWERTE = ['ja', 'nein', 'teils', 'keine_aussage'] as const
+
 export interface Katalog {
   /** true = erfundene Platzhalterdaten (Mock). Dann gelten gelockerte Regeln. */
   fiktiv: boolean
@@ -134,6 +158,10 @@ export interface Katalog {
   /** IDs entfernter Einträge (daten/ids.json) – werden nie wieder vergeben. */
   stillgelegt: number[]
   abdeckung: Abdeckung[]
+  /** Wertfragen für die Haltungskarte (daten/haltungen/), eigener Nummernkreis. */
+  haltungen: KatalogHaltung[]
+  /** IDs entfernter Haltungen (daten/ids.json → „haltungen_stillgelegt“). */
+  haltungenStillgelegt: number[]
 }
 
 export interface Datei {
@@ -228,6 +256,38 @@ export function spielbareInstrumente(k: Katalog, mitKiEntwurf = false): Instrume
   })
 }
 
+export interface SpielbareHaltungen {
+  haltungen: HaltungEintrag[]
+  positionen: HaltungPosition[]
+  zielkonflikte: Zielkonflikt[]
+}
+
+/**
+ * Haltungen für die Haltungskarte: nur freigegebene (Frage, Beschreibung und Zielkonflikte bestätigt). Positionen
+ * öffentlich nur geprüfte; mit `mitKiEntwurf` (Seed) auch Entwürfe, gekennzeichnet mit `ki_entwurf: true` – die
+ * Datenbank gibt sie nur mit Zugang zur Testphase heraus. Ob die Karte erscheint (alle Parteien erfasst),
+ * entscheiden App und Datenbank (View `haltungen_vollstaendig`) mit `vollstaendigeHaltungen`.
+ * Bei fiktiven Daten zählt alles.
+ */
+export function spielbareHaltungen(k: Katalog, mitKiEntwurf = false): SpielbareHaltungen {
+  const frei = k.haltungen.filter((h) => k.fiktiv || h.freigabe)
+  return {
+    haltungen: frei.map(({ id, frage, beschreibung, verwandte_themen, schlagwoerter }) => ({
+      id, frage, beschreibung, verwandte_themen, ...(schlagwoerter ? { schlagwoerter } : {}),
+    })),
+    positionen: frei.flatMap((h) =>
+      h.positionen
+        .filter((p) => k.fiktiv || p.geprueft || (mitKiEntwurf && p.ki_entwurf))
+        .map(({ geprueft, ki_entwurf: _k, ...p }) => ({
+          ...p,
+          land: p.land ?? null,
+          ...(mitKiEntwurf ? { ki_entwurf: !k.fiktiv && !geprueft } : {}),
+        })),
+    ),
+    zielkonflikte: frei.flatMap((h) => h.zielkonflikte),
+  }
+}
+
 /**
  * Was Prüfende bewerten: ein Instrument (gilt für alle Maßnahmen, die darauf
  * verweisen) oder eine einzelne Maßnahme ohne Instrument. Die ID ist die des
@@ -304,12 +364,18 @@ const ohneAnker = (url: string) => url.split('#')[0]
  * muss jede `bewertung` im Katalog genau zu einem Export passen – so lässt sich kein Prüfergebnis
  * von Hand eintragen. Ohne (App) entfällt dieser Abgleich.
  */
-export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsDatei?: Datei, pruefungDateien?: Datei[]): Pruefergebnis {
+export function pruefeKatalog(
+  parteienDatei: Datei,
+  themenDateien: Datei[],
+  idsDatei?: Datei,
+  pruefungDateien?: Datei[],
+  haltungDateien: Datei[] = [],
+): Pruefergebnis {
   const fehler: string[] = []
   const warnungen: string[] = []
   const katalog: Katalog = {
     fiktiv: false, laender: [], landesprogramme: [], parteien: [], themen: [], ursachen: [], instrumente: [], massnahmen: [],
-    abdeckung: [], stillgelegt: [],
+    abdeckung: [], stillgelegt: [], haltungen: [], haltungenStillgelegt: [],
   }
 
   // Kleine Helfer, die jeweils eine Meldung mit Ort erzeugen.
@@ -505,7 +571,22 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
     const d = idsDatei.inhalt
     if (!istObjekt(d) || !Array.isArray(d.stillgelegt)) f(idsDatei.pfad, 'erwartet { "stillgelegt": [{ "id", "grund" }] }')
     else {
-      unbekannteFelder(idsDatei.pfad, d, ['hinweis', 'stillgelegt'])
+      unbekannteFelder(idsDatei.pfad, d, ['hinweis', 'stillgelegt', 'haltungen_stillgelegt'])
+      // Haltungen haben einen eigenen Nummernkreis (1, 2, …) und deshalb eine eigene Liste.
+      const hs = d.haltungen_stillgelegt
+      if (hs !== undefined && !Array.isArray(hs)) f(idsDatei.pfad, '„haltungen_stillgelegt“ muss eine Liste [{ "id", "grund" }] sein')
+      for (const [i, roh] of (Array.isArray(hs) ? hs : []).entries()) {
+        const sOrt = `${idsDatei.pfad} › haltungen_stillgelegt[${i}]`
+        if (!istObjekt(roh)) {
+          f(sOrt, 'erwartet ein Objekt')
+          continue
+        }
+        unbekannteFelder(sOrt, roh, ['id', 'grund'])
+        const id = ganzzahl(sOrt, roh, 'id', 1, 32767)
+        text(sOrt, roh, 'grund', 300)
+        if (katalog.haltungenStillgelegt.includes(id)) f(sOrt, `Haltungs-ID ${id} ist doppelt`)
+        katalog.haltungenStillgelegt.push(id)
+      }
       for (const [i, roh] of d.stillgelegt.entries()) {
         const sOrt = `${idsDatei.pfad} › stillgelegt[${i}]`
         if (!istObjekt(roh)) {
@@ -978,6 +1059,168 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
     }
   }
 
+  // --- Haltungen (daten/haltungen/, docs/plan-haltungen.md Teil B) -----------
+  // Wertfragen ohne Punkte: Frage, Beschreibung und Zielkonflikte (Phase A, mit Freigabe), dann je Partei
+  // eine Position mit Zitat (Phase B). Eigener Nummernkreis, nie wiederverwendet.
+  const haltungIds = new Set<number>()
+  const fragen = new Set<string>()
+  const parteinamen = katalog.parteien.map(({ name, kurzname }) => ({ name, kurzname }))
+  for (const datei of haltungDateien) {
+    const ort = datei.pfad
+    const h = datei.inhalt
+    if (!istObjekt(h)) {
+      f(ort, 'erwartet ein Objekt')
+      continue
+    }
+    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'verwandte_themen', 'zielkonflikte', 'positionen', 'freigabe', 'schlagwoerter'])
+    const haltung: KatalogHaltung = {
+      id: ganzzahl(ort, h, 'id', 1, 32767),
+      frage: text(ort, h, 'frage', 160),
+      beschreibung: text(ort, h, 'beschreibung', 300),
+      verwandte_themen: [],
+      zielkonflikte: [],
+      positionen: [],
+    }
+    if (haltung.frage && !haltung.frage.trim().endsWith('?')) f(ort, '„frage“ ist eine neutrale Ja/Nein-Frage und endet mit „?“')
+    for (const [feld, wert] of [['frage', haltung.frage], ['beschreibung', haltung.beschreibung]] as const)
+      if (wert && ohneParteinamen(wert, parteinamen) !== wert) f(ort, `„${feld}“ nennt eine Partei – die Frage beschreibt den Wertkonflikt, nicht wer wo steht`)
+    if (haltungIds.has(haltung.id)) f(ort, `Haltungs-ID ${haltung.id} ist doppelt`)
+    if (katalog.haltungenStillgelegt.includes(haltung.id))
+      f(ort, `Haltungs-ID ${haltung.id} ist stillgelegt (daten/ids.json → „haltungen_stillgelegt“) und darf nicht wieder vergeben werden`)
+    haltungIds.add(haltung.id)
+    if (haltung.frage && fragen.has(haltung.frage.toLowerCase())) f(ort, `Frage „${haltung.frage}“ gibt es schon`)
+    fragen.add(haltung.frage.toLowerCase())
+    const sw = schlagwoerter(ort, h)
+    if (sw) haltung.schlagwoerter = sw
+
+    // Brücke zum Alltag: Themen, deren Probleme mit der Haltung zusammenhängen.
+    const vt = h.verwandte_themen
+    if (!Array.isArray(vt) || vt.length === 0 || vt.some((x) => !Number.isInteger(x))) f(ort, '„verwandte_themen“ muss eine nicht leere Liste von Themen-IDs sein')
+    else {
+      for (const id of vt as number[]) if (!themaIds.has(id)) f(ort, `„verwandte_themen“: Thema ${id} gibt es nicht`)
+      if (new Set(vt).size !== vt.length) f(ort, '„verwandte_themen“ enthält Doppelte')
+      haltung.verwandte_themen = vt as number[]
+    }
+
+    // Zielkonflikte: zwei bis vier Sätze, je mit unabhängiger Quelle, mindestens einer je Seite der Frage.
+    const zk = h.zielkonflikte
+    if (!Array.isArray(zk) || zk.length < 2 || zk.length > 4) f(ort, '„zielkonflikte“ muss zwei bis vier Einträge haben')
+    for (const [i, roh] of (Array.isArray(zk) ? zk : []).entries()) {
+      const zOrt = `${ort} › zielkonflikte[${i}]`
+      if (!istObjekt(roh)) {
+        f(zOrt, 'erwartet ein Objekt { seite, text, quelle_url }')
+        continue
+      }
+      unbekannteFelder(zOrt, roh, ['seite', 'text', 'quelle_url'])
+      if (roh.seite !== 'ja' && roh.seite !== 'nein') f(zOrt, '„seite“ muss „ja“ oder „nein“ sein')
+      const t = text(zOrt, roh, 'text', 300)
+      if (t && ohneParteinamen(t, parteinamen) !== t) f(zOrt, '„text“ nennt eine Partei – Zielkonflikte beschreiben Ziele, nicht Parteien')
+      haltung.zielkonflikte.push({ haltung_id: haltung.id, seite: roh.seite === 'nein' ? 'nein' : 'ja', text: t, quelle_url: url(zOrt, roh, 'quelle_url') ?? '' })
+    }
+    for (const seite of ['ja', 'nein'] as const)
+      if (Array.isArray(zk) && !haltung.zielkonflikte.some((z) => z.seite === seite)) f(ort, `„zielkonflikte“: mindestens einer für die Seite „${seite}“`)
+
+    // Freigabe von Frage, Beschreibung und Zielkonflikten durch die Betreiberin (Phase A).
+    if (h.freigabe !== undefined) {
+      const fOrt = `${ort} › freigabe`
+      if (!istObjekt(h.freigabe)) f(fOrt, 'erwartet { datum }')
+      else {
+        unbekannteFelder(fOrt, h.freigabe, ['datum'])
+        haltung.freigabe = { datum: datum(fOrt, h.freigabe, 'datum') }
+      }
+    }
+
+    // Positionen der Parteien (Phase B): erst nach der Freigabe, höchstens eine je Partei und Programm.
+    const pos = h.positionen
+    if (pos !== undefined && !Array.isArray(pos)) f(ort, '„positionen“ muss eine Liste sein (eine je Partei)')
+    const liste = Array.isArray(pos) ? pos : []
+    if (liste.length && !haltung.freigabe && !katalog.fiktiv)
+      f(ort, '„positionen“ erst nach der Freigabe von Frage, Beschreibung und Zielkonflikten („freigabe“) erfassen')
+    for (const [i, roh] of liste.entries()) {
+      const pOrt = `${ort} › positionen[${i}]`
+      if (!istObjekt(roh)) {
+        f(pOrt, 'erwartet ein Objekt')
+        continue
+      }
+      unbekannteFelder(pOrt, roh, [
+        'partei_id', 'position', 'kurzfassung', 'zitat', 'beleg_programm_url', 'begruendung', 'stand', 'geprueft', 'pruefung', 'ki_entwurf',
+      ])
+      const parteiId = ganzzahl(pOrt, roh, 'partei_id', 1, 32767)
+      const partei = parteiNach.get(parteiId)
+      if (!partei) f(pOrt, `unbekannte Partei-ID ${parteiId}`)
+      if (haltung.positionen.some((p) => p.partei_id === parteiId)) f(pOrt, `Partei ${parteiId} hat schon eine Position zu dieser Haltung`)
+      if (!(POSITIONSWERTE as readonly unknown[]).includes(roh.position)) f(pOrt, `„position“ muss ${POSITIONSWERTE.map((w) => `„${w}“`).join(', ')} sein`)
+      const wert = (POSITIONSWERTE as readonly unknown[]).includes(roh.position) ? (roh.position as KatalogPosition['position']) : 'keine_aussage'
+      const keine = wert === 'keine_aussage'
+      const geprueft = wahrheitswert(pOrt, roh, 'geprueft')
+      const p: KatalogPosition = {
+        haltung_id: haltung.id, partei_id: parteiId, land: null, position: wert,
+        kurzfassung: null, zitat: null, beleg_programm_url: null, begruendung: null,
+        stand: datum(pOrt, roh, 'stand'), geprueft,
+      }
+      if (roh.ki_entwurf !== undefined) p.ki_entwurf = wahrheitswert(pOrt, roh, 'ki_entwurf')
+
+      if (keine) {
+        // Was durchsucht wurde – „keine Aussage“ heißt nur: im Programm mit diesem Stand nichts gefunden.
+        p.begruendung = text(pOrt, roh, 'begruendung', 400)
+        for (const feld of ['kurzfassung', 'zitat', 'beleg_programm_url'])
+          if (roh[feld] !== undefined) f(pOrt, `„${feld}“ gibt es bei „keine_aussage“ nicht – dort steht nur „begruendung“`)
+      } else {
+        // Kurzfassung in eigenen Worten, Zitat und Beleg: Bei Haltungen ist der Wortlaut der eigentliche Beleg.
+        p.kurzfassung = text(pOrt, roh, 'kurzfassung', 250)
+        p.zitat = text(pOrt, roh, 'zitat', 800)
+        p.beleg_programm_url = url(pOrt, roh, 'beleg_programm_url') ?? null
+        if (roh.begruendung !== undefined) f(pOrt, '„begruendung“ nur bei „keine_aussage“ – sonst stehen Kurzfassung und Zitat für sich')
+        const woerter = p.kurzfassung.split(/\s+/).filter(Boolean).length
+        if (woerter > MAX_KURZFASSUNG_WOERTER) f(pOrt, `„kurzfassung“ hat ${woerter} Wörter – höchstens ${MAX_KURZFASSUNG_WOERTER}`)
+        if (p.kurzfassung && ohneParteinamen(p.kurzfassung, parteinamen) !== p.kurzfassung)
+          f(pOrt, '„kurzfassung“ nennt eine Partei – in neutralen eigenen Worten, die Partei steht daneben')
+        if (p.beleg_programm_url && partei) {
+          if (ohneAnker(p.beleg_programm_url) !== partei.programm_url) f(pOrt, `„beleg_programm_url“ zeigt nicht auf das Programm der Partei (${partei.programm_url})`)
+          if (!SEITENANKER.test(p.beleg_programm_url)) f(pOrt, '„beleg_programm_url“ braucht einen Seitenanker wie #page=12')
+        }
+      }
+      if (partei && p.stand && partei.programm_stand && p.stand < partei.programm_stand)
+        f(pOrt, `„stand“ ${p.stand} liegt vor dem Programmstand ${partei.programm_stand} – bitte im aktuellen Programm neu prüfen`)
+
+      // Nachweis der Prüfung: Belege geprüft (bei „keine_aussage“ mit zweiter Suche); die Einordnung ja/nein/teils
+      // haben zusätzlich mindestens zwei Prüfende bestätigt, die die Partei nicht sehen.
+      const pr = roh.pruefung
+      if (pr === undefined) {
+        if (geprueft && !katalog.fiktiv)
+          f(pOrt, `„geprueft“ nur mit „pruefung“: { „belege_geprueft“: Datum, ${keine ? '„zweite_suche“: wie und wonach erneut gesucht wurde' : '„einordnung_bestaetigt“: Zahl der blinden Bestätigungen (mindestens 2)'} }`)
+      } else {
+        const prOrt = `${pOrt} › pruefung`
+        if (!istObjekt(pr)) f(prOrt, 'erwartet ein Objekt')
+        else {
+          unbekannteFelder(prOrt, pr, keine ? ['belege_geprueft', 'zweite_suche'] : ['belege_geprueft', 'einordnung_bestaetigt'])
+          datum(prOrt, pr, 'belege_geprueft')
+          if (keine) {
+            const z = text(prOrt, pr, 'zweite_suche', 400)
+            if (z && z.length < 30) f(prOrt, '„zweite_suche“ nennt Suchbegriffe und gelesene Kapitel (mindestens 30 Zeichen)')
+          } else {
+            const n = ganzzahl(prOrt, pr, 'einordnung_bestaetigt', 0, 99)
+            if (geprueft && !katalog.fiktiv && n < 2) f(prOrt, '„geprueft“ erst, wenn mindestens zwei Prüfende die Einordnung ohne Parteinamen bestätigt haben')
+          }
+        }
+      }
+      if (!katalog.fiktiv && !geprueft)
+        warnungen.push(`${pOrt}: noch nicht geprüft – zählt erst nach der Prüfung${p.ki_entwurf ? ' (Testphase: KI-Entwurf)' : ''}`)
+      haltung.positionen.push(p)
+    }
+
+    // „Alle sieben oder keine“: Die Karte erscheint erst, wenn jede Partei eine Position hat.
+    const fehlend = katalog.parteien.filter((x) => !haltung.positionen.some((p) => p.partei_id === x.id))
+    if ((haltung.freigabe || katalog.fiktiv) && fehlend.length)
+      warnungen.push(`${ort}: keine Position für ${fehlend.map((x) => `„${x.kurzname}“ (${x.id})`).join(', ')} – die Haltungskarte erscheint erst, wenn alle Parteien erfasst sind`)
+    // Aufnahmekriterium: Die Frage kommt in mindestens drei Programmen mit erkennbarer Position vor.
+    const erkennbar = haltung.positionen.filter((p) => p.position !== 'keine_aussage').length
+    if (!fehlend.length && erkennbar < 3)
+      warnungen.push(`${ort}: nur ${erkennbar} Programme mit erkennbarer Position – Aufnahmekriterium sind mindestens drei (docs/plan-haltungen.md, B1)`)
+    haltung.positionen.sort((a, b) => a.partei_id - b.partei_id)
+    katalog.haltungen.push(haltung)
+  }
+
   // `entspricht`: das Gegenstück gehört zum selben Thema, gilt für die andere Ebene und verweist zurück.
   for (const i of katalog.instrumente) {
     if (i.entspricht === undefined) continue
@@ -998,6 +1241,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
   katalog.ursachen.sort(nachId)
   katalog.instrumente.sort(nachId)
   katalog.massnahmen.sort(nachId)
+  katalog.haltungen.sort(nachId)
   return { katalog, fehler, warnungen }
 }
 
@@ -1008,8 +1252,8 @@ export const alsDateien = (module: Record<string, unknown>): Datei[] =>
     .map(([pfad, inhalt]) => ({ pfad: pfad.replace(/^(\.\.\/)+/, ''), inhalt }))
 
 /** Prüft und wirft bei Fehlern – für Stellen, an denen die Daten schon geprüft sein müssen. */
-export function ladeKatalog(parteienDatei: Datei, themenDateien: Datei[]): Katalog {
-  const { katalog, fehler } = pruefeKatalog(parteienDatei, themenDateien)
+export function ladeKatalog(parteienDatei: Datei, themenDateien: Datei[], haltungDateien: Datei[] = []): Katalog {
+  const { katalog, fehler } = pruefeKatalog(parteienDatei, themenDateien, undefined, undefined, haltungDateien)
   if (fehler.length) throw new Error(`Datenkatalog fehlerhaft (npm run daten:pruefen):\n${fehler.join('\n')}`)
   return katalog
 }

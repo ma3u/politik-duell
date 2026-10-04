@@ -4,11 +4,13 @@ import { analysiere, AnalyseFehler, ebenenFuer, type Daten } from '../data/quell
 import { ROLLEN } from '../data/rollen'
 import type { AnalyseAntwort, Nachricht } from '../data/types'
 import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
+import { haltungskarte } from '../logic/haltung'
 import { fuerBeideErfasst } from '../logic/stand'
-import type { RundenErgebnis, Spieler } from '../spiel'
+import { mitKarte, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
 import { ForderungsKarte } from './ForderungsKarte'
+import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
 
 /** Fester Satz zu einer Haltung, wenn die KI keine eigene Rückmeldung liefert. */
@@ -44,6 +46,7 @@ function werteAus(
   spieler: [Spieler, Spieler],
   daten: Daten,
   forderung?: RundenErgebnis['forderung'],
+  karten: Karte[] = [],
 ): RundenErgebnis {
   const { themen, parteien, massnahmen, abdeckung } = daten
   const { rolle, land } = spieler[sprecher]
@@ -52,7 +55,7 @@ function werteAus(
   // Ohne Thema in der Datenbank: ungeprüft. Die Review-Warteschlange füllt die Edge Function.
   if (!thema) {
     return {
-      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}),
+      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
       zusammenfassung: analyse.zusammenfassung, einschaetzung: analyse.einschaetzung ?? null,
       ergebnisse: null, punkte: [0, 0], beste: [], nichtErfasst: [],
     }
@@ -63,7 +66,7 @@ function werteAus(
   const eb = bewertePartei(spieler[1].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
   const { status, punkte } = werteRunde(ea, eb)
   return {
-    nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}),
+    nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
     ursachen_ids: analyse.ursachen_ids,
     zusammenfassung: analyse.zusammenfassung,
     einschaetzung: null,
@@ -105,6 +108,12 @@ export function Runde({
    */
   const [forderung, setForderung] = useState<{ instrument_id: number; thema_id: number } | null>(null)
   const [karteOffen, setKarteOffen] = useState(false)
+  /** Haltung, deren Karte gerade unter dem Verlauf steht (bis zur nächsten Eingabe). */
+  const [haltung, setHaltung] = useState<number | null>(null)
+  /** Höchstens eine Haltungskarte je Runde (B4) – sonst würden fünf Runden zu fünf Haltungsdebatten. */
+  const [haltungGezeigt, setHaltungGezeigt] = useState(false)
+  /** Karten dieser Runde (ohne Punkte) für den Endbildschirm. */
+  const [karten, setKarten] = useState<Karte[]>([])
   const daten = useDaten()
 
   const aktiv = spieler[sprecher]
@@ -121,6 +130,7 @@ export function Runde({
     setHinweis(null)
     setFehler(null)
     setAuswahlThema(null)
+    setHaltung(null)
     setDenkt(true)
     let analyse: AnalyseAntwort
     try {
@@ -142,11 +152,14 @@ export function Runde({
 
     // Forderungskarte nur, wenn die Forderung eindeutig einem bekannten Lösungsweg entspricht.
     // Eine Haltung („wert“) setzt sie zurück; ein Problem lässt sie unverändert.
+    let rundenKarten = karten
     if (analyse.typ === 'forderung') {
       const bekannt = analyse.instrument_id != null && daten.instrumente.some((i) => i.id === analyse.instrument_id)
       setForderung(bekannt && analyse.thema_id !== null ? { instrument_id: analyse.instrument_id!, thema_id: analyse.thema_id } : null)
       // Nach der letzten Nachfrage („Forderung bleibt“) zeigt die Runde die Karte gleich.
       setKarteOffen(bekannt && !analyse.nachfrage)
+      if (bekannt && analyse.thema_id !== null)
+        rundenKarten = mitKarte(rundenKarten, { art: 'forderung', instrument_id: analyse.instrument_id!, land: aktiv.land })
     } else if (analyse.typ === 'wert' || analyse.typ === 'grenze') {
       setForderung(null)
       setKarteOffen(false)
@@ -171,14 +184,27 @@ export function Runde({
       const thema = daten.themen.find((t) => t.id === analyse.thema_id)?.name ?? null
       setVerlauf([])
       setZusammenfassung(null)
-      // Die KI greift die Äußerung auf; ohne brauchbare Rückmeldung (oder bei Pauschalurteilen) ein fester Satz.
-      setHinweis(
-        analyse.rueckmeldung ||
-          (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
-      )
+      // Haltung zu einer vollständig erfassten Wertfrage: die Haltungskarte (einmal je Runde), sonst ein Satz.
+      const karte =
+        analyse.typ === 'wert' && analyse.haltung_id != null && !haltungGezeigt && haltungskarte(daten, analyse.haltung_id)
+          ? analyse.haltung_id
+          : null
+      if (karte !== null) {
+        setHaltung(karte)
+        setHaltungGezeigt(true)
+        rundenKarten = mitKarte(rundenKarten, { art: 'haltung', haltung_id: karte })
+        setHinweis(HALTUNG_EINLEITUNG)
+      } else {
+        // Die KI greift die Äußerung auf; ohne brauchbare Rückmeldung (oder bei Pauschalurteilen) ein fester Satz.
+        setHinweis(
+          analyse.rueckmeldung ||
+            (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
+        )
+      }
     } else {
-      onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined))
+      onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten))
     }
+    setKarten(rundenKarten)
   }
 
   /** Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. */
@@ -202,7 +228,10 @@ export function Runde({
       setDenkt(false)
     }
     onErgebnis(
-      werteAus({ ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung }, nr, sprecher, spieler, daten, forderung ?? undefined),
+      werteAus(
+        { ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung },
+        nr, sprecher, spieler, daten, forderung ?? undefined, karten,
+      ),
     )
   }
 
@@ -236,6 +265,17 @@ export function Runde({
           </p>
         )}
       </div>
+
+      {haltung !== null && (
+        <HaltungsKarte
+          haltungId={haltung}
+          onThema={(id) => {
+            // Ein Tipp füllt das Eingabefeld nicht vor, sondern zeigt die Ursachen des Themas zum Antippen (A2).
+            setAuswahlThema(id)
+            setZusammenfassung(null)
+          }}
+        />
+      )}
 
       {angebot && (
         <UrsachenAuswahl

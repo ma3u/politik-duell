@@ -4,7 +4,8 @@ import { PGlite } from '@electric-sql/pglite'
 import { readFileSync, readdirSync } from 'node:fs'
 import { beforeAll, describe, expect, it } from 'vitest'
 import { seedSql } from '../scripts/seed-sql'
-import { ABDECKUNG, INSTRUMENTE, KATALOG, MASSNAHMEN } from '../src/data/mock'
+import { ABDECKUNG, HALTUNG_POSITIONEN, HALTUNGEN, INSTRUMENTE, KATALOG, MASSNAHMEN, PARTEIEN, ZIELKONFLIKTE } from '../src/data/mock'
+import { vollstaendigeHaltungen } from './functions/_shared/haltung'
 import { tokenHash } from './functions/_shared/pruefung'
 
 const lies = (pfad: string) => readFileSync(new URL(pfad, import.meta.url), 'utf8')
@@ -221,6 +222,97 @@ describe('Datenbank', () => {
     it('prüft Ebene und Forschungsstand', async () => {
       await expect(db.query(`insert into instrumente (id, thema_id, name, ebene) values (9002, 2, 'x', 'kreis')`)).rejects.toThrow()
       await expect(db.query(`insert into instrumente (id, thema_id, name, evidenz) values (9002, 2, 'x', 'sicher')`)).rejects.toThrow()
+    })
+  })
+
+  describe('Haltungen (Haltungskarte)', () => {
+    const vollstaendig = vollstaendigeHaltungen(HALTUNGEN, HALTUNG_POSITIONEN, PARTEIEN).map((h) => h.id)
+
+    it('anon darf Haltungen, Positionen und Zielkonflikte lesen, aber nicht schreiben', async () => {
+      const h = await alsRolle('anon', () => db.query<{ id: number }>('select id from haltungen order by id'))
+      expect(h.rows.map((x) => x.id)).toEqual(HALTUNGEN.map((x) => x.id))
+      const p = await alsRolle('anon', () => db.query('select * from haltung_positionen'))
+      expect(p.rows).toHaveLength(HALTUNG_POSITIONEN.length)
+      const z = await alsRolle('anon', () => db.query('select * from haltung_zielkonflikte'))
+      expect(z.rows).toHaveLength(ZIELKONFLIKTE.length)
+      await expect(alsRolle('anon', () => db.query(`insert into haltungen (id, frage, beschreibung, verwandte_themen) values (90, 'x?', 'x', '{1}')`))).rejects.toThrow()
+      await expect(alsNutzer(() => db.query(`delete from haltung_positionen`))).resolves.toMatchObject({ affectedRows: 0 })
+      expect((await db.query('select * from haltung_positionen')).rows).toHaveLength(HALTUNG_POSITIONEN.length)
+    })
+
+    it('View „haltungen_vollstaendig“ folgt derselben Regel wie die App („Alle oder keine“)', async () => {
+      const r = await alsRolle('anon', () => db.query<{ haltung_id: number; geprueft: boolean }>('select * from haltungen_vollstaendig order by haltung_id'))
+      expect(vollstaendig).toEqual([1, 2])
+      expect(r.rows).toEqual(vollstaendig.map((id) => ({ haltung_id: id, geprueft: true })))
+      // Fehlt eine Partei, fällt die Haltung heraus; eine Landesposition ersetzt keine Bundesposition.
+      await db.exec(`insert into laender (id, name, letzte_wahl) values ('ST', 'Sachsen-Anhalt', '2026-09-06')`)
+      try {
+        await db.exec(`update haltung_positionen set land = 'ST' where haltung_id = 1 and partei_id = 5`)
+        const ohne = await db.query<{ haltung_id: number }>('select haltung_id from haltungen_vollstaendig order by haltung_id')
+        expect(ohne.rows.map((x) => x.haltung_id)).toEqual([2])
+      } finally {
+        await db.exec(`update haltung_positionen set land = null where haltung_id = 1 and partei_id = 5; delete from laender where id = 'ST'`)
+      }
+    })
+
+    it('Entwürfe sind öffentlich unsichtbar, die Karte gilt dann als unvollständig; mit Zugang zur Testphase kommen sie', async () => {
+      await db.exec(`update haltung_positionen set ki_entwurf = true where haltung_id = 1 and partei_id = 2`)
+      const token = 'H'.repeat(43)
+      await db.query(`insert into testphase_zugaenge (token_hash, name) values ($1, 'Test')`, [await tokenHash(token)])
+      try {
+        const oeffentlich = await alsRolle('anon', () => db.query<{ haltung_id: number }>('select haltung_id from haltungen_vollstaendig order by haltung_id'))
+        expect(oeffentlich.rows.map((x) => x.haltung_id)).toEqual([2])
+        // Die Edge Function (Service-Rolle) sieht alles und unterscheidet über „geprueft“.
+        const dienst = await db.query<{ haltung_id: number; geprueft: boolean }>('select * from haltungen_vollstaendig order by haltung_id')
+        expect(dienst.rows).toEqual([{ haltung_id: 1, geprueft: false }, { haltung_id: 2, geprueft: true }])
+        const r = await alsRolle('anon', () =>
+          db.query<{ d: { haltung_positionen: { haltung_id: number; partei_id: number; ki_entwurf: boolean }[] } | null }>('select testphase_daten($1) as d', [token]),
+        )
+        expect(r.rows[0].d?.haltung_positionen.map((p) => [p.haltung_id, p.partei_id, p.ki_entwurf])).toEqual([[1, 2, true]])
+      } finally {
+        await db.exec(`update haltung_positionen set ki_entwurf = false; delete from testphase_zugaenge`)
+      }
+    })
+
+    it('prüft Positionswerte, Pflichtfelder je Wert und eine Position je Partei und Programm', async () => {
+      const neu = (werte: string) =>
+        db.query(`insert into haltung_positionen (haltung_id, partei_id, land, position, kurzfassung, zitat, beleg_programm_url, begruendung, stand) values ${werte}`)
+      await expect(neu(`(3, 3, null, 'eher ja', 'k', 'z', 'https://x#page=1', null, '2026-01-01')`)).rejects.toThrow()
+      await expect(neu(`(3, 3, null, 'ja', 'k', null, 'https://x#page=1', null, '2026-01-01')`)).rejects.toThrow()
+      await expect(neu(`(3, 3, null, 'keine_aussage', null, null, null, null, '2026-01-01')`)).rejects.toThrow()
+      await expect(neu(`(3, 3, null, 'keine_aussage', 'k', null, null, 'durchsucht', '2026-01-01')`)).rejects.toThrow()
+      // Partei 1 hat zu Haltung 3 schon eine Bundesposition.
+      await expect(neu(`(3, 1, null, 'nein', 'k', 'z', 'https://x#page=1', null, '2026-01-01')`)).rejects.toThrow()
+      await expect(db.query(`insert into haltungen (id, frage, beschreibung, verwandte_themen) values (90, 'Keine Frage', 'x', '{1}')`)).rejects.toThrow()
+      await expect(db.query(`insert into haltungen (id, frage, beschreibung, verwandte_themen) values (90, 'Frage?', 'x', '{}')`)).rejects.toThrow()
+    })
+
+    it('eine Haltung ohne Problem merkt sich die Wertfrage; ein neuer Seed lässt den Verweis stehen', async () => {
+      await db.exec(`insert into runden (problem_text, status, haltung_id) values ('Persönliche Haltung: Tempolimit', 'wert', 1)`)
+      try {
+        await db.exec(seedSql(KATALOG))
+        const r = await db.query<{ haltung_id: number }>(`select haltung_id from runden where status = 'wert' and haltung_id is not null`)
+        expect(r.rows).toEqual([{ haltung_id: 1 }])
+        // Nur bei Haltungen, nur bekannte IDs, nie bei Grenzfällen.
+        await expect(db.query(`insert into runden (problem_text, status, haltung_id) values ('x', 'forderung', 1)`)).rejects.toThrow()
+        await expect(db.query(`insert into runden (problem_text, status, haltung_id) values ('', 'grenze', 1)`)).rejects.toThrow()
+        await expect(db.query(`insert into runden (problem_text, status, haltung_id) values ('x', 'wert', 99)`)).rejects.toThrow()
+      } finally {
+        await db.exec(`delete from runden where status = 'wert'`)
+      }
+    })
+
+    it('Seed entfernt Haltungen, die nicht mehr im Katalog stehen; der Verweis in Runden wird leer', async () => {
+      await db.exec(`insert into haltungen (id, frage, beschreibung, verwandte_themen) values (90, 'Alt?', 'alt', '{1}')`)
+      await db.exec(`insert into runden (problem_text, status, haltung_id) values ('x', 'wert', 90)`)
+      try {
+        await db.exec(seedSql(KATALOG))
+        expect((await db.query<{ id: number }>('select id from haltungen order by id')).rows.map((h) => h.id)).toEqual(HALTUNGEN.map((h) => h.id))
+        expect((await db.query(`select haltung_id from runden where status = 'wert'`)).rows).toEqual([{ haltung_id: null }])
+        expect((await db.query('select * from haltung_positionen')).rows).toHaveLength(HALTUNG_POSITIONEN.length)
+      } finally {
+        await db.exec(`delete from runden where status = 'wert'`)
+      }
     })
   })
 

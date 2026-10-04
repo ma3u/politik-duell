@@ -1,6 +1,6 @@
 # Plan: Forderungen und Haltungen einordnen
 
-Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 bis 3 umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
+Stand: 4. 10. 2026. Entscheidungen getroffen (siehe „Entscheidungen“). Schritt 1 bis 3 und der technische Teil von Schritt 4 (4a) umgesetzt, die weiteren folgen in eigenen Pull Requests (siehe „Reihenfolge“).
 
 ## Ziel
 
@@ -364,7 +364,17 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
    - Mock: enge Schlagwortmuster für Abwertung, Gewaltaufrufe und Beleidigungen; Pauschalurteile bleiben Nachfragen.
    - Methode: `docs/methode.md` → „Grenze“ (Begründung Art. 1 und 3 GG, Programme werden nicht gefiltert, Abgrenzung zum Pauschalurteil), Sonderfälle, Rolle der KI und „Grenzen der Methode“; kurzer Absatz auf der Methodenseite der App.
    - Noch offen: Grenzfälle in die manuelle Prompt-Evaluation aufnehmen (siehe „Tests“), mit Beispielen aus verschiedenen Richtungen.
-4. **Haltungen**: Format, Prüfung, drei Pilot-Haltungen erfassen, Haltungskarte, Endbildschirm.
+4. **Haltungen**: Format, Prüfung, drei Pilot-Haltungen erfassen, Haltungskarte, Endbildschirm. Aufgeteilt in 4a (Technik) und 4b (Pilot-Haltungen erfassen).
+   - **4a Technik.** *Umgesetzt (4. 10. 2026).* Umsetzungsdetails:
+     - Datenformat `daten/haltungen/NN-name.json` wie oben, Prüfung in `npm run daten:pruefen` (`src/data/katalog.ts`). Ergänzt gegenüber dem Plan: `geprueft` verlangt `pruefung` mit `belege_geprueft` und – bei `ja`/`nein`/`teils` – `einordnung_bestaetigt` ≥ 2 (blinde Bestätigungen), bei `keine_aussage` `zweite_suche` wie bei `keine_massnahme`. Frage, Beschreibung und Zielkonflikte nennen keine Partei. Weniger als drei erkennbare Positionen (Aufnahmekriterium 1) und fehlende Parteien sind Warnungen, kein Fehler. `land` an Positionen ist in der Datenbank vorgesehen, im Datenformat noch nicht (zunächst nur Bund).
+     - IDs: eigener Nummernkreis (`npm run daten:id -- --haltung`), Stilllegung in `ids.json` → `haltungen_stillgelegt`. Bei Pull Requests (`npm run daten:id -- --gegen`): keine Haltung entfernt ohne Stilllegung; Phase A und Positionen derselben Haltung nicht zugleich; nach einer Änderung von Phase A eine neue `freigabe`.
+     - `npm run zitate:pruefen` prüft auch die Zitate der Positionen.
+     - Migration `20261009000000_haltungen.sql`: Tabellen wie unter „Datenmodell“ (mit `unique nulls not distinct`, Pflichtfelder je Positionswert als Check), View `haltungen_vollstaendig (haltung_id, geprueft)` mit `security_invoker` – öffentlich zählen nur geprüfte Positionen, die Edge Function (Service-Rolle) filtert ohne Testphase auf `geprueft`. `runden.haltung_id` nur bei `status = 'wert'`. `testphase_daten` liefert auch Entwürfe der Positionen. Ins Spiel (Seed) kommen nur freigegebene Haltungen.
+     - KI: Im ersten Aufruf stehen die vollständigen Haltungen als `Haltung N: Frage` (ohne Haltungen bleibt der Prompt unverändert). `bereinigeAntwort` übernimmt `haltung_id` nur bei `wert` und nur aus dieser Liste. Kein zweiter Aufruf. Gespeichert wird bei `wert` die `haltung_id` (nur die ID).
+     - App: `HaltungsKarte.tsx` (Logik in `src/logic/haltung.ts`, Regel „Alle oder keine“ in `supabase/functions/_shared/haltung.ts`, gemeinsam mit dem Mock). Einleitung „Das ist eine Haltung – darüber kann man verschieden denken. So stehen die Parteien dazu:“, Positionen in fester Reihenfolge mit Kurzfassung, Beleg und aufklappbarem Wortlaut, Zielkonflikte (Ja-Seite zuerst), verwandte Themen zum Antippen (zeigen deren Ursachen, A2). Höchstens eine Karte je Runde; danach nur der Satz. Endbildschirm „Worüber ihr gesprochen habt“ mit allen Haltungs- und Forderungskarten der Partie (`RundenErgebnis.karten`), nicht im Teilen-Text.
+     - Beispieldaten: `daten/beispiel/haltungen/` mit zwei vollständigen und einer unvollständigen Haltung (fiktive Parteien).
+     - Noch offen: Haltungen in die manuelle Prompt-Evaluation aufnehmen (siehe „Tests“).
+   - **4b Pilot-Haltungen** (E7) erfassen: zuerst Phase A (Frage, Beschreibung, verwandte Themen, Zielkonflikte) mit Freigabe durch die Betreiberin, danach Phase B (Positionen aus allen sieben Bundesprogrammen) in eigenem Pull Request.
 5. Tests mit Spielenden aus verschiedenen Lagern; danach über weitere Haltungen entscheiden.
 
 ## Entscheidungen (von der Betreiberin getroffen, 4. 10. 2026)

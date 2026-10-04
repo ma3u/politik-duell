@@ -5,6 +5,7 @@ import {
   ROLLEN_IDS,
   type AnalyseAnfrage,
   type AnalyseAntwort,
+  type HaltungEintrag,
   type InstrumentEintrag,
   type Massnahme,
   type Nachricht,
@@ -39,7 +40,14 @@ const ROLLEN_TEXT: Record<Rolle, string> = {
   vermoegend: 'Vermögend',
 }
 
-export function systemPrompt(themen: Thema[], ursachen: Ursache[]): string {
+/** Was die KI von einer Haltung sieht: nur Nummer und Frage (keine Positionen, keine Parteien). */
+export type HaltungKurz = Pick<HaltungEintrag, 'id' | 'frage'>
+
+/**
+ * `haltungen`: nur vollständig erfasste (alle Parteien, View `haltungen_vollstaendig`). Ohne Haltungen bleibt der
+ * Prompt wie bisher – dann gibt es keine Haltungskarte.
+ */
+export function systemPrompt(themen: Thema[], ursachen: Ursache[], haltungen: HaltungKurz[] = []): string {
   const katalog = themen
     .map((t) => {
       const u = ursachen
@@ -72,7 +80,13 @@ Einordnung ("typ"):
   Worten neutral aufgreifen, sagen, dass man darüber verschieden denken kann, und fragen, wo sie der Person im
   Alltag begegnet – z. B. „Heimat ist dir wichtig – darüber kann man verschieden denken. Wo begegnet dir das im
   Alltag?“. Stimme nicht zu und widersprich nicht. Wertet die Haltung eine Gruppe von Menschen ab, gib sie nicht
-  wieder und frag nur nach dem Alltag.
+  wieder und frag nur nach dem Alltag.${
+    haltungen.length
+      ? `
+  Berührt die Haltung eindeutig eine der Fragen unter „Haltungen“ (gleich, welche Seite die Person vertritt),
+  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.`
+      : ''
+  }
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. „Was hast du selbst erlebt, oder wo fühlst du dich unsicher?“.
@@ -87,7 +101,9 @@ Einordnung ("typ"):
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 
-Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis im Gespräch).
+Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis im Gespräch).${
+    haltungen.length ? '\n"haltung_id" ist nur bei "wert" gesetzt, sonst immer null.' : ''
+  }
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
@@ -113,11 +129,18 @@ Formulierungen:
 
 Katalog:
 ${katalog}
-
+${
+  haltungen.length
+    ? `
+Haltungen (Wertfragen, nur für "wert"):
+${haltungen.map((h) => `- Haltung ${h.id}: ${h.frage}`).join('\n')}
+`
+    : ''
+}
 Antworte ausschließlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null, "rueckmeldung": string[] | null}`
+ "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": number | null' : ''}}`
 }
 
 // ---------------------------------------------------------------------------
@@ -371,6 +394,7 @@ const kurz = (s: unknown, max: number) => (typeof s === 'string' ? s.trim().repl
 /**
  * Macht aus der (nicht vertrauenswürdigen) KI-Antwort eine gültige AnalyseAntwort:
  * nur IDs aus dem Katalog, höchstens zwei Nachfragen, keine Links, keine Parteinamen.
+ * `haltungen`: die im Prompt angebotenen (vollständigen) Haltungen – nur deren IDs werden übernommen.
  */
 export function bereinigeAntwort(
   roh: unknown,
@@ -379,6 +403,7 @@ export function bereinigeAntwort(
   ursachen: Ursache[],
   parteien: Pick<Partei, 'name' | 'kurzname'>[] = [],
   zufall: () => number = Math.random,
+  haltungen: Pick<HaltungEintrag, 'id'>[] = [],
 ): AnalyseAntwort {
   const r = (roh && typeof roh === 'object' ? roh : {}) as Record<string, unknown>
   const nachfragen = verlauf.filter((n) => n.von === 'ki').length
@@ -421,6 +446,8 @@ export function bereinigeAntwort(
 
   if (typ !== 'problem') {
     const offen = typ === 'forderung' ? nachfrage || null : null
+    // Haltung nur bei „wert“ und nur aus der angebotenen Liste – erfundene oder unvollständige gibt es nicht.
+    const haltungId = typ === 'wert' && typeof r.haltung_id === 'number' && haltungen.some((h) => h.id === r.haltung_id) ? r.haltung_id : null
     return {
       typ,
       nachfrage: offen,
@@ -432,6 +459,7 @@ export function bereinigeAntwort(
       stichwort,
       einschaetzung: null,
       rueckmeldung: offen || pauschal ? null : rueckmeldung(),
+      ...(haltungId !== null ? { haltung_id: haltungId } : {}),
     }
   }
 

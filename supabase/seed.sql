@@ -8,6 +8,8 @@ delete from public.massnahmen;
 delete from public.abdeckung;
 delete from public.landesprogramme;
 delete from public.pruef_einheiten;
+delete from public.haltung_positionen;
+delete from public.haltung_zielkonflikte;
 
 insert into public.parteien (id, name, kurzname, farbe, programm_url, programm_stand) values
   (11, 'CDU/CSU', 'Union', '#8a96a3', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf', '2024-12-17'),
@@ -2965,3 +2967,5 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (18, 15, null, 'massnahmen', null, '2026-10-04', true, '{1801,1802,1803,1804,1805,1806}'),
   (18, 16, null, 'massnahmen', null, '2026-10-04', true, '{1801,1802,1803,1804,1805,1806}'),
   (18, 17, null, 'massnahmen', null, '2026-10-04', true, '{1801,1802,1803,1804,1805,1806}');
+
+delete from public.haltungen where id not in (0);

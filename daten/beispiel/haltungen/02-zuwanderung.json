@@ -1,0 +1,58 @@
+{
+  "id": 2,
+  "frage": "Soll Zuwanderung stärker begrenzt werden?",
+  "beschreibung": "Ob weniger Menschen nach Deutschland kommen sollen als bisher – unabhängig davon, mit welchen Mitteln das geschehen würde.",
+  "verwandte_themen": [6, 5],
+  "schlagwoerter": ["zu viele", "begrenzen", "begrenzt", "obergrenze", "zuwanderung", "einwanderung"],
+  "zielkonflikte": [
+    { "seite": "ja", "text": "Wer Zuwanderung stärker begrenzen will, nennt die Belastung von Kommunen bei Unterbringung und Schulplätzen.", "quelle_url": "https://example.org/mock/quelle/kommunen" },
+    { "seite": "nein", "text": "Wer das ablehnt, nennt den Fachkräftebedarf, etwa in der Pflege.", "quelle_url": "https://example.org/mock/quelle/fachkraefte" },
+    { "seite": "nein", "text": "Wer das ablehnt, nennt außerdem das Recht auf Asyl für Verfolgte.", "quelle_url": "https://example.org/mock/quelle/asylrecht" }
+  ],
+  "positionen": [
+    {
+      "partei_id": 1,
+      "position": "nein",
+      "kurzfassung": "Will Zuwanderung nicht begrenzen, sondern Verfahren und Integration beschleunigen.",
+      "zitat": "Statt neuer Grenzen für Zuwanderung brauchen wir schnellere Verfahren und bessere Integration.",
+      "beleg_programm_url": "https://example.org/mock/alpha/wahlprogramm.pdf#page=40",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 2,
+      "position": "ja",
+      "kurzfassung": "Will die Zahl der Asylanträge deutlich senken und Zuwanderung stärker steuern.",
+      "zitat": "Die Zahl der Asylanträge muss deutlich sinken. Zuwanderung wollen wir stärker steuern und begrenzen.",
+      "beleg_programm_url": "https://example.org/mock/beta/wahlprogramm.pdf#page=17",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 3,
+      "position": "teils",
+      "kurzfassung": "Will Asylzuwanderung begrenzen, Zuwanderung von Fachkräften aber erleichtern.",
+      "zitat": "Ungesteuerte Zuwanderung ins Asylsystem wollen wir begrenzen, die Einwanderung von Fachkräften erleichtern.",
+      "beleg_programm_url": "https://example.org/mock/gamma/wahlprogramm.pdf#page=25",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 4,
+      "position": "ja",
+      "kurzfassung": "Will eine feste jährliche Obergrenze für Zuwanderung.",
+      "zitat": "Wir setzen uns für eine feste jährliche Obergrenze für Zuwanderung ein.",
+      "beleg_programm_url": "https://example.org/mock/delta/wahlprogramm.pdf#page=9",
+      "stand": "2026-01-01",
+      "geprueft": true
+    },
+    {
+      "partei_id": 5,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Migration und Arbeit durchsucht (Suchbegriffe: Zuwanderung, Begrenzung, Obergrenze, Asyl) – keine Aussage gefunden.",
+      "stand": "2026-01-01",
+      "geprueft": true
+    }
+  ],
+  "freigabe": { "datum": "2026-01-01" }
+}

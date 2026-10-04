@@ -1,4 +1,12 @@
-import { alsDateien, ladeKatalog, spielbareAbdeckung, spielbareInstrumente, spielbareLandesprogramme, spielbareMassnahmen } from './katalog.ts'
+import {
+  alsDateien,
+  ladeKatalog,
+  spielbareAbdeckung,
+  spielbareHaltungen,
+  spielbareInstrumente,
+  spielbareLandesprogramme,
+  spielbareMassnahmen,
+} from './katalog.ts'
 
 // ---------------------------------------------------------------------------
 // Eingebaute Beispieldaten der App („Mit Beispieldaten spielen“, Tests) –
@@ -11,8 +19,9 @@ import { alsDateien, ladeKatalog, spielbareAbdeckung, spielbareInstrumente, spie
 
 const [parteienDatei] = alsDateien(import.meta.glob('../../daten/beispiel/parteien.json', { eager: true, import: 'default' }))
 const themenDateien = alsDateien(import.meta.glob('../../daten/beispiel/themen/*.json', { eager: true, import: 'default' }))
+const haltungDateien = alsDateien(import.meta.glob('../../daten/beispiel/haltungen/*.json', { eager: true, import: 'default' }))
 
-export const KATALOG = ladeKatalog(parteienDatei, themenDateien)
+export const KATALOG = ladeKatalog(parteienDatei, themenDateien, haltungDateien)
 
 export const PARTEIEN = KATALOG.parteien
 export const THEMEN = KATALOG.themen
@@ -25,3 +34,8 @@ export const ABDECKUNG = spielbareAbdeckung(KATALOG)
 export const INSTRUMENTE = spielbareInstrumente(KATALOG)
 export const LAENDER = KATALOG.laender
 export const LANDESPROGRAMME = spielbareLandesprogramme(KATALOG)
+/** Wertfragen für die Haltungskarte mit Positionen und Zielkonflikten (ohne Punkte). */
+const HALTUNGSDATEN = spielbareHaltungen(KATALOG)
+export const HALTUNGEN = HALTUNGSDATEN.haltungen
+export const HALTUNG_POSITIONEN = HALTUNGSDATEN.positionen
+export const ZIELKONFLIKTE = HALTUNGSDATEN.zielkonflikte

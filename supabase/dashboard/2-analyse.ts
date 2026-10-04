@@ -291,7 +291,7 @@ var ROLLEN_TEXT = {
   studierend: "Studierend",
   vermoegend: "Verm\xF6gend"
 };
-function systemPrompt(themen, ursachen) {
+function systemPrompt(themen, ursachen, haltungen = []) {
   const katalog = themen.map((t) => {
     const u = ursachen.filter((x) => x.thema_id === t.id).map((x) => `    - Ursache ${x.id}: ${x.beschreibung}`).join("\n");
     return `- Thema ${t.id}: ${t.name} \u2013 ${t.beschreibung}
@@ -319,7 +319,9 @@ Einordnung ("typ"):
   Worten neutral aufgreifen, sagen, dass man dar\xFCber verschieden denken kann, und fragen, wo sie der Person im
   Alltag begegnet \u2013 z. B. \u201EHeimat ist dir wichtig \u2013 dar\xFCber kann man verschieden denken. Wo begegnet dir das im
   Alltag?\u201C. Stimme nicht zu und widersprich nicht. Wertet die Haltung eine Gruppe von Menschen ab, gib sie nicht
-  wieder und frag nur nach dem Alltag.
+  wieder und frag nur nach dem Alltag.${haltungen.length ? `
+  Ber\xFChrt die Haltung eindeutig eine der Fragen unter \u201EHaltungen\u201C (gleich, welche Seite die Person vertritt),
+  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.` : ""}
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.
@@ -334,7 +336,7 @@ Einordnung ("typ"):
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 
-Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinweis im Gespr\xE4ch).
+Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinweis im Gespr\xE4ch).${haltungen.length ? '\n"haltung_id" ist nur bei "wert" gesetzt, sonst immer null.' : ""}
 
 Zuordnung (nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
@@ -360,11 +362,14 @@ Formulierungen:
 
 Katalog:
 ${katalog}
-
+${haltungen.length ? `
+Haltungen (Wertfragen, nur f\xFCr "wert"):
+${haltungen.map((h) => `- Haltung ${h.id}: ${h.frage}`).join("\n")}
+` : ""}
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
  "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null, "rueckmeldung": string[] | null}`;
+ "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": number | null' : ""}}`;
 }
 function instrumenteZurAuswahl(themaId, instrumente, massnahmen, land) {
   return instrumente.filter((i) => i.thema_id === themaId && (i.ebene === "bund" || land !== null && massnahmen.some((m) => m.instrument_id === i.id && m.land === land))).sort((a, b) => a.id - b.id);
@@ -524,7 +529,7 @@ function grenzeAntwort() {
   };
 }
 var kurz = (s, max) => typeof s === "string" ? s.trim().replace(/\s+/g, " ").slice(0, max) : "";
-function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall = Math.random) {
+function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall = Math.random, haltungen = []) {
   const r = roh && typeof roh === "object" ? roh : {};
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
   const letzterText = verlauf.filter((n) => n.von === "spieler").at(-1)?.text ?? "";
@@ -549,6 +554,7 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall 
   const stichwort = bereinigeStichwort(stichwortRoh, zusammenfassung.replace(/\[Partei\]/g, ""));
   if (typ !== "problem") {
     const offen = typ === "forderung" ? nachfrage || null : null;
+    const haltungId = typ === "wert" && typeof r.haltung_id === "number" && haltungen.some((h) => h.id === r.haltung_id) ? r.haltung_id : null;
     return {
       typ,
       nachfrage: offen,
@@ -561,7 +567,10 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall 
       zusammenfassung,
       stichwort,
       einschaetzung: null,
-      rueckmeldung: offen || pauschal ? null : rueckmeldung()
+      rueckmeldung: offen || pauschal ? null : rueckmeldung(),
+      ...haltungId !== null ? {
+        haltung_id: haltungId
+      } : {}
     };
   }
   const thema = erkanntesThema;
@@ -744,7 +753,13 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data;
     const parteien = parteienRes.data;
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
-    let antwort = anfrage.auswahl ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen) : bereinigeAntwort(await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien);
+    let antwort;
+    if (anfrage.auswahl) {
+      antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
+    } else {
+      const haltungen = await vollstaendigeHaltungen(testphase);
+      antwort = bereinigeAntwort(await frageMistral(systemPrompt(themen, ursachen, haltungen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien, Math.random, haltungen);
+    }
     if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id);
       if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase));
@@ -787,6 +802,23 @@ async function erkenneInstrument(thema, verlauf, land, testphase) {
     return null;
   }
 }
+async function vollstaendigeHaltungen(testphase) {
+  try {
+    let vAbfrage = db.from("haltungen_vollstaendig").select("haltung_id");
+    if (!testphase) vAbfrage = vAbfrage.eq("geprueft", true);
+    const [vRes, hRes] = await Promise.all([
+      vAbfrage,
+      db.from("haltungen").select("id, frage").order("id")
+    ]);
+    if (vRes.error) throw vRes.error;
+    if (hRes.error) throw hRes.error;
+    const ids = new Set(vRes.data.map((v) => v.haltung_id));
+    return hRes.data.filter((h) => ids.has(h.id));
+  } catch (e) {
+    console.error("vollstaendigeHaltungen:", e instanceof Error ? e.message : e);
+    return [];
+  }
+}
 async function zugangGueltig(token) {
   const { data, error } = await db.from("testphase_zugaenge").select("id").eq("token_hash", await tokenHash(token)).eq("gesperrt", false).maybeSingle();
   if (error) throw error;
@@ -816,7 +848,10 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
   if (antwort.typ === "wert") {
     await db.from("runden").insert({
       ...basis,
-      status: "wert"
+      status: "wert",
+      ...antwort.haltung_id ? {
+        haltung_id: antwort.haltung_id
+      } : {}
     });
     return;
   }

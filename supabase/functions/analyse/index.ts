@@ -17,6 +17,7 @@ import {
   bereinigeAntwort,
   bereinigeInstrument,
   EingabeFehler,
+  type HaltungKurz,
   instrumentNachrichten,
   instrumentPrompt,
   instrumenteZurAuswahl,
@@ -131,13 +132,18 @@ Deno.serve(async (req) => {
     // Zugang zur Testphase: Dann zählen auch KI-Entwürfe (Maßnahmen, Instrumente).
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
 
-    // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein.
-    let antwort = anfrage.auswahl
-      ? antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
-      : bereinigeAntwort(
-          await frageMistral(systemPrompt(themen, ursachen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)),
-          anfrage.verlauf, themen, ursachen, parteien,
-        )
+    // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein – bei einer Haltung
+    // auch einer der vollständig erfassten Wertfragen (Haltungskarte).
+    let antwort: AnalyseAntwort
+    if (anfrage.auswahl) {
+      antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
+    } else {
+      const haltungen = await vollstaendigeHaltungen(testphase)
+      antwort = bereinigeAntwort(
+        await frageMistral(systemPrompt(themen, ursachen, haltungen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)),
+        anfrage.verlauf, themen, ursachen, parteien, Math.random, haltungen,
+      )
+    }
 
     // Forderung mit erkanntem Thema: ein zweiter, kurzer Aufruf nur mit den Instrumenten dieses Themas.
     // Er zählt nicht extra für das Rate-Limit; scheitert er, bleibt es bei der Forderung ohne Karte.
@@ -196,6 +202,26 @@ async function erkenneInstrument(
   }
 }
 
+/**
+ * Haltungen mit vollständiger Karte (alle Parteien, View `haltungen_vollstaendig`) – nur sie kommen in den
+ * Prompt. Der Service-Key sieht auch Entwürfe; ohne Zugang zur Testphase zählen deshalb nur geprüfte Karten.
+ * Fehlen die Tabellen (Migration noch nicht ausgeführt) oder klappt die Abfrage nicht: keine Haltungen.
+ */
+async function vollstaendigeHaltungen(testphase: boolean): Promise<HaltungKurz[]> {
+  try {
+    let vAbfrage = db.from('haltungen_vollstaendig').select('haltung_id')
+    if (!testphase) vAbfrage = vAbfrage.eq('geprueft', true)
+    const [vRes, hRes] = await Promise.all([vAbfrage, db.from('haltungen').select('id, frage').order('id')])
+    if (vRes.error) throw vRes.error
+    if (hRes.error) throw hRes.error
+    const ids = new Set((vRes.data as { haltung_id: number }[]).map((v) => v.haltung_id))
+    return (hRes.data as HaltungKurz[]).filter((h) => ids.has(h.id))
+  } catch (e) {
+    console.error('vollstaendigeHaltungen:', e instanceof Error ? e.message : e)
+    return []
+  }
+}
+
 /** Gültiger, nicht gesperrter Zugang zur Testphase? Dann zählen auch KI-Entwürfe. */
 async function zugangGueltig(token: string): Promise<boolean> {
   const { data, error } = await db
@@ -236,8 +262,9 @@ async function speichereRunde(
     testphase,
   }
 
+  // Haltung: mit der erkannten Wertfrage, falls zugeordnet (nur die ID).
   if (antwort.typ === 'wert') {
-    await db.from('runden').insert({ ...basis, status: 'wert' })
+    await db.from('runden').insert({ ...basis, status: 'wert', ...(antwort.haltung_id ? { haltung_id: antwort.haltung_id } : {}) })
     return
   }
   // Forderung ohne Alltagsproblem nach zwei Nachfragen: ohne Wertung, mit dem erkannten Thema.

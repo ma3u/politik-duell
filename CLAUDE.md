@@ -19,11 +19,11 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 3. Pro Runde (insgesamt 5, abwechselnd): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
 4. KI klassifiziert: `problem` | `forderung` | `wert` | `grenze`.
    - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Entspricht die Forderung eindeutig einem erfassten Lösungsweg (Instrument des Themas, zweiter KI-Aufruf), zeigt ein Knopf „Zeig mir, wer das fordert“ die **Forderungskarte**: welche Parteien den Lösungsweg im Programm haben (mit Beleg-Link), Forschungsstand und Begründung – ohne Punkte; nach einem gewerteten Problem erscheint sie zusätzlich in der Auflösung. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
-   - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich.
+   - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich. Berührt die Haltung eindeutig eine erfasste Wertfrage (`haltung_id`, nur Haltungen mit Position aller sieben Parteien), zeigt die Runde die **Haltungskarte** (höchstens eine je Runde): die Frage, die Position jeder Partei aus dem Bundesprogramm (`ja`/`nein`/`teils`/`keine_aussage`, Kurzfassung, Zitat aufklappbar, Beleg-Link) und die Zielkonflikte beider Seiten – ohne Punkte, ohne Hervorhebung der gewählten Parteien; verwandte Themen zum Antippen führen zu deren Ursachen.
    - `grenze` → Abwertung einer Gruppe (Menschenwürde, gleiche Rechte), Gewaltaufruf oder Beleidigung: „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte, Inhalt wird nicht gespeichert; neues Problem möglich. Ein Pauschalurteil über eine Gruppe ist **kein** `grenze`-Fall (dort Nachfrage nach dem Erlebten), im Zweifel Nachfrage (`docs/methode.md` → „Grenze“).
    - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2, mit Ursachen zum Antippen), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
-6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, Teilen-Button.
+6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, „Worüber ihr gesprochen habt“ (alle Haltungs- und Forderungskarten der Partie, aufklappbar, nicht im Teilen-Text), Teilen-Button.
 
 ## Bewertungslogik
 
@@ -79,8 +79,13 @@ massnahmen (
 instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, entspricht, ki_entwurf)
   -- Lösungswege für die Forderungskarte, ohne Punkte; entspricht = gleicher Weg auf der anderen Ebene (Bund ↔ Land)
 
+haltungen (id, frage, beschreibung, verwandte_themen)   -- Wertfragen für die Haltungskarte, eigener Nummernkreis
+haltung_positionen (haltung_id, partei_id, land, position, kurzfassung, zitat, beleg_programm_url, begruendung, stand, ki_entwurf)
+haltung_zielkonflikte (haltung_id, seite, text, quelle_url)
+  -- View haltungen_vollstaendig: Haltungen mit Position aller Parteien („Alle sieben oder keine“)
+
 runden (
-  id, created_at, thema_id null, instrument_id null, problem_text,
+  id, created_at, thema_id null, instrument_id null, haltung_id null, problem_text,
   partei_a, partei_b, punkte_a, punkte_b,
   status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze (ohne Inhalt)
   freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
@@ -91,7 +96,7 @@ Row Level Security: Frontend darf nur lesen (Themen, Maßnahmen, freigegebene Pr
 
 ## KI-Schnittstelle
 
-Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle, Liste aller Themen + Ursachen (IDs + Kurztext).
+Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle, Liste aller Themen + Ursachen (IDs + Kurztext) und der vollständig erfassten Haltungen (ID + Frage).
 Antwort (JSON):
 
 ```json
@@ -101,6 +106,7 @@ Antwort (JSON):
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],
   "instrument_id": "number | null (nur bei forderung mit Thema; zweiter, kurzer Aufruf nur mit den Instrumenten des Themas)",
+  "haltung_id": "number | null (nur bei wert; nur vollständig erfasste Haltungen stehen im Prompt)",
   "pauschal": "boolean (Pauschalurteil über eine Gruppe: keine Ursachenauswahl)",
   "rueckmeldung": "string[] | null (drei Fassungen; bei wert und abschließender forderung: greift die Äußerung neutral auf; sonst fester Satz)",
   "zusammenfassung": "kurzer neutraler Satz zum Problem"

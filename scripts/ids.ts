@@ -1,4 +1,4 @@
-// Nummernkreis für Maßnahmen und Instrumente (daten/README.md → „IDs“):
+// Nummernkreis für Maßnahmen und Instrumente, dazu der eigene der Haltungen (daten/README.md → „IDs“):
 // Eine ID wird einmal vergeben und nie wieder – gespielte Runden, Prüfungen und
 // Links verweisen darauf. Reine Funktionen; das Kommando steht in scripts/daten-id.ts.
 import type { Katalog } from '../src/data/katalog.ts'
@@ -23,6 +23,11 @@ export function naechsteId(k: Katalog): number {
   return Math.max(0, ...eintraege(k).keys(), ...k.stillgelegt) + 1
 }
 
+/** Nächste freie ID für eine neue Haltung (eigener Nummernkreis 1, 2, …). */
+export function naechsteHaltungsId(k: Katalog): number {
+  return Math.max(0, ...k.haltungen.map((h) => h.id), ...k.haltungenStillgelegt) + 1
+}
+
 /**
  * Vergleicht zwei Stände: Keine ID darf verschwinden (außer, sie ist in
  * daten/ids.json stillgelegt), umgewidmet werden oder aus der Stilllegung zurückkehren.
@@ -44,6 +49,15 @@ export function vergleicheIds(alt: Katalog, neu: Katalog): string[] {
   }
   for (const id of alt.stillgelegt) {
     if (!still.has(id)) fehler.push(`ID ${id} fehlt in daten/ids.json – stillgelegte IDs bleiben dort für immer`)
+  }
+  // Haltungen: eigener Nummernkreis, ebenfalls nie wiederverwendet (gespeicherte Runden verweisen darauf).
+  const haltungenStill = new Set(neu.haltungenStillgelegt)
+  for (const h of alt.haltungen) {
+    if (!neu.haltungen.some((x) => x.id === h.id) && !haltungenStill.has(h.id))
+      fehler.push(`Haltung ${h.id} ist entfernt – wenn sie wirklich weg muss, in daten/ids.json unter „haltungen_stillgelegt“ mit Grund eintragen`)
+  }
+  for (const id of alt.haltungenStillgelegt) {
+    if (!haltungenStill.has(id)) fehler.push(`Haltung ${id} fehlt in daten/ids.json → „haltungen_stillgelegt“ – stillgelegte IDs bleiben dort für immer`)
   }
   return fehler
 }

@@ -1,8 +1,12 @@
 import { useState } from 'react'
-import { gesamtpunkte, type RundenErgebnis, type Spieler } from '../spiel'
+import { gesamtpunkte, gespraechsKarten, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
-import { useLandName } from '../data/kontext'
+import { forderungskarte } from '../logic/forderung'
+import { haltungskarte } from '../logic/haltung'
+import { useDaten, useLandName } from '../data/kontext'
 import { Belege, KI_HINWEIS, NICHT_BLIND } from './Aufloesung'
+import { ForderungsKarte } from './ForderungsKarte'
+import { HaltungsKarte } from './HaltungsKarte'
 import { Kreuz } from './Kreuz'
 import { Logo } from './Logo'
 import { parteiStil } from './stil'
@@ -114,6 +118,8 @@ export function Ende({
         </ol>
       </section>
 
+      <Gespraechskarten karten={gespraechsKarten(runden)} />
+
       <div className="knopf-reihe">
         <button className="knopf" onClick={teilen}>
           Teilen
@@ -128,5 +134,42 @@ export function Ende({
         <a href="#/methode">So bewerten wir · Fehler melden</a>
       </p>
     </main>
+  )
+}
+
+/**
+ * „Worüber ihr gesprochen habt“ (docs/plan-haltungen.md, B5): alle Haltungs- und Forderungskarten der Partie,
+ * aufklappbar – als Gesprächsanlass nach dem Spiel, ohne Punkte. Nicht im Teilen-Text: Haltungen lassen
+ * politische Meinungen erkennen (Art. 9 DSGVO).
+ */
+function Gespraechskarten({ karten }: { karten: Karte[] }) {
+  const daten = useDaten()
+  // Nur Karten, die es (noch) gibt – etwa nach einem Wechsel der Daten.
+  const zeigbar = karten.filter((k) =>
+    k.art === 'haltung' ? haltungskarte(daten, k.haltung_id) : forderungskarte(daten, k.instrument_id, k.land),
+  )
+  if (!zeigbar.length) return null
+  return (
+    <section className="gespraechskarten">
+      <h3>Worüber ihr gesprochen habt</h3>
+      <p className="hinweis">Haltungen und Forderungen aus eurer Partie – ohne Punkte, zum Weiterreden.</p>
+      {zeigbar.map((k) =>
+        k.art === 'haltung' ? (
+          <details key={`h${k.haltung_id}`} className="gespraechskarte">
+            <summary>
+              <span className="karten-art">Haltung</span> {haltungskarte(daten, k.haltung_id)!.haltung.frage}
+            </summary>
+            <HaltungsKarte haltungId={k.haltung_id} />
+          </details>
+        ) : (
+          <details key={`f${k.instrument_id}/${k.land ?? ''}`} className="gespraechskarte">
+            <summary>
+              <span className="karten-art">Forderung</span> {forderungskarte(daten, k.instrument_id, k.land)!.instrument.name}
+            </summary>
+            <ForderungsKarte instrumentId={k.instrument_id} land={k.land} />
+          </details>
+        ),
+      )}
+    </section>
   )
 }

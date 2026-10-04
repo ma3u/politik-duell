@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { ABDECKUNG, INSTRUMENTE, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from '../data/mock'
 import type { AbdeckungEintrag, Landesprogramm, Massnahme, Nachricht } from '../data/types'
+import { kartenHaltungen, MOCK_DATEN } from '../data/quelle'
 import { analysiere } from './analyse'
 import { besteParteien, bewertePartei, massnahmenPunkte, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
 import { ohneTreffer } from './ohneTreffer'
@@ -83,6 +84,25 @@ describe('analysiere (Mock der Edge Function)', () => {
   it('erkennt eine persönliche Haltung', () => {
     const a = analysiere(spieler('Ich finde Gerechtigkeit wichtig'), THEMEN, URSACHEN)
     expect(a.typ).toBe('wert')
+  })
+
+  it('ordnet eine Haltung einer vollständig erfassten Wertfrage zu (Haltungskarte), sonst keiner', () => {
+    const o = { haltungen: kartenHaltungen(MOCK_DATEN) }
+    expect(analysiere(spieler('Ich finde, ein Tempolimit wäre richtig'), THEMEN, URSACHEN, o)).toMatchObject({ typ: 'wert', haltung_id: 1 })
+    expect(analysiere(spieler('Ich bin dagegen, dass so viele Menschen zuwandern – es sind zu viele'), THEMEN, URSACHEN, o)).toMatchObject({
+      typ: 'wert',
+      haltung_id: 2,
+    })
+    // Haltung 3 ist nicht für alle Parteien erfasst: keine Zuordnung, nur der Satz.
+    const unvollstaendig = analysiere(spieler('Ich finde Wahlfreiheit bei der Betreuung wichtig'), THEMEN, URSACHEN, o)
+    expect(unvollstaendig.typ).toBe('wert')
+    expect(unvollstaendig).not.toHaveProperty('haltung_id')
+    // Ohne Haltungen (Datenbank ohne Karten) und bei einer Forderung: keine Haltung.
+    expect(analysiere(spieler('Ich finde, ein Tempolimit wäre richtig'), THEMEN, URSACHEN)).not.toHaveProperty('haltung_id')
+    expect(analysiere(spieler('Wir brauchen ein Tempolimit!'), THEMEN, URSACHEN, o)).toMatchObject({ typ: 'forderung' })
+    expect(analysiere(spieler('Wir brauchen ein Tempolimit!'), THEMEN, URSACHEN, o)).not.toHaveProperty('haltung_id')
+    // Ein Problem bleibt ein Problem.
+    expect(analysiere(spieler('Ich finde keine bezahlbare Wohnung, die Miete ist zu hoch'), THEMEN, URSACHEN, o)).not.toHaveProperty('haltung_id')
   })
 
   it('liefert thema_id null für unbekannte Themen', () => {

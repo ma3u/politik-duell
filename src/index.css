@@ -2466,3 +2466,104 @@ textarea {
 .forderung-knopf {
   margin: 0 0 1rem;
 }
+
+/* Haltungskarte (Runde, Endbildschirm): Positionen der Parteien zu einer Wertfrage. Keine Punkte, keine
+   Ampelfarben – jede Position sieht gleich aus, nur die Parteifarbe am Rand unterscheidet sie. */
+.haltungskarte {
+  margin: 0 0 1rem;
+  padding: 14px 16px;
+  border: 1.5px solid var(--linie);
+  border-radius: var(--papier-radius);
+  background: var(--flaeche);
+}
+.haltungskarte h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.haltungskarte h4 {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 0.95rem;
+}
+.haltungskarte .meta {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.position-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.position {
+  padding: 4px 0 4px 12px;
+  border-left: 6px solid var(--partei);
+  font-size: 0.92rem;
+}
+.position-wert {
+  font-weight: 700;
+}
+.position-text {
+  margin: 2px 0 0;
+}
+.position-zitat summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.position-zitat blockquote {
+  margin: 4px 0 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--linie);
+  font-style: italic;
+}
+.haltung-ziele ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+}
+.haltung-ziele li + li {
+  margin-top: 4px;
+}
+.haltung-themen-liste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.haltungskarte .ki-hinweis {
+  margin: 0.75rem 0 0;
+}
+
+/* Endbildschirm: „Worüber ihr gesprochen habt“ – Karten der Partie zum Aufklappen. */
+.gespraechskarten {
+  margin: 1.5rem 0 0;
+}
+.gespraechskarte {
+  margin: 0 0 0.6rem;
+}
+.gespraechskarte > summary {
+  cursor: pointer;
+  padding: 8px 0;
+  font-weight: 600;
+}
+.gespraechskarte[open] > summary {
+  margin-bottom: 0.4rem;
+}
+.karten-art {
+  margin-right: 6px;
+  padding: 1px 8px;
+  border: 1px solid var(--linie);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-leise);
+}
+/* Die Frage steht schon in der Zusammenfassung darüber. */
+.gespraechskarte .haltungskarte > h3 {
+  display: none;
+}

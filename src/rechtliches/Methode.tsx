@@ -108,7 +108,9 @@ export function Methode() {
       <p>
         <strong>Nicht jede Äußerung ist ein Problem.</strong> Nennst du eine Forderung, fragt das Spiel nach dem
         Alltagsproblem dahinter; eine Haltung benennt es als Haltung, über die man verschieden denken kann. Beides gibt
-        keine Punkte. Auf Äußerungen, die einer Gruppe die Menschenwürde oder gleiche Rechte absprechen, zu Gewalt
+        keine Punkte. Berührt eine Haltung eine Wertfrage, zu der alle sieben Programme ausgewertet sind, zeigt das
+        Spiel, wo die Parteien dazu stehen – mit Wortlaut und Seite im Programm, ohne Richtig oder Falsch – und welche
+        Ziele dabei gegeneinander stehen. Auf Äußerungen, die einer Gruppe die Menschenwürde oder gleiche Rechte absprechen, zu Gewalt
         aufrufen oder Personen beleidigen, geht das Spiel nicht ein (Art. 1 und 3 Grundgesetz) – gleich, aus welcher
         Richtung sie kommen. Vom Inhalt wird dann nichts gespeichert. Ein pauschales Urteil über eine Gruppe ist noch
         kein solcher Fall: Dann fragt das Spiel, was du selbst erlebt hast. Die Wahlprogramme der Parteien werden davon

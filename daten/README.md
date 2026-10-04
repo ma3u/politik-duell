@@ -1,6 +1,6 @@
 # Datenkatalog
 
-Hier liegen alle Daten, aus denen das Politik-Duell Punkte vergibt: Parteien, Themen, Ursachen und Maßnahmen. Die KI liest diese Daten nur, um ein Problem einem Thema und seinen Ursachen zuzuordnen. **Punkte und Links kommen ausschließlich von hier.**
+Hier liegen alle Daten, aus denen das Politik-Duell Punkte vergibt: Parteien, Themen, Ursachen und Maßnahmen – dazu die Haltungen (Wertfragen ohne Punkte, `haltungen/`). Die KI liest diese Daten nur, um ein Problem einem Thema und seinen Ursachen zuzuordnen. **Punkte und Links kommen ausschließlich von hier.**
 
 Lizenz: [CC BY 4.0](LICENSE) für Auswahl, Struktur, Ursachen, Bewertungen und Begründungen. Die wörtlichen Zitate aus Wahlprogrammen und die verlinkten Quellen sind davon nicht erfasst. Mit einem Pull Request stellst du deinen Beitrag unter dieselbe Lizenz.
 
@@ -348,11 +348,58 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 - `bewertung` schreibt nur `npm run pruefung:uebernehmen` (siehe „Prüfung“), z. B. `{ "anzahl": 3, "median_w": 2, "median_u": 2, "spannweite": 1, "datum": "2026-10-05", "entwurf": [2, 3] }`. `wirksamkeit` und `umsetzbarkeit` müssen den Medianen entsprechen; `entwurf` hält die ursprünglichen Werte fest.
 - `stand` darf nicht vor dem `programm_stand` der Partei liegen (bei Landeseinträgen: vor dem `stand` des Landesprogramms).
 
+### `haltungen/NN-name.json` – eine Datei pro Haltung
+
+Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als neutrale Ja/Nein-Frage. Sie bekommt **keine Punkte**: Die Haltungskarte zeigt nur, wo die Parteien dazu stehen (mit Zitat) und welche Ziele gegeneinander stehen (Regeln: [`docs/methode.md`](../docs/methode.md) → „Forderungen und Haltungen“, Plan: [`docs/plan-haltungen.md`](../docs/plan-haltungen.md), Teil B).
+
+```json
+{
+  "id": 1,
+  "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
+  "beschreibung": "Ein neutraler Satz, worum es geht.",
+  "verwandte_themen": [8],
+  "zielkonflikte": [
+    { "seite": "ja", "text": "Wer ein Tempolimit will, nennt …", "quelle_url": "https://…" },
+    { "seite": "nein", "text": "Wer es ablehnt, nennt …", "quelle_url": "https://…" }
+  ],
+  "freigabe": { "datum": "2026-10-12" },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "teils",
+      "kurzfassung": "Neutrale eigene Worte, höchstens 25 Wörter, ohne Parteinamen.",
+      "zitat": "Wörtlich aus dem Programm.",
+      "beleg_programm_url": "https://…/wahlprogramm.pdf#page=12",
+      "stand": "2026-10-14",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Verkehr durchsucht, Suchbegriffe Tempolimit, Höchstgeschwindigkeit, Autobahn – nichts gefunden.",
+      "stand": "2026-10-14",
+      "geprueft": false
+    }
+  ]
+}
+```
+
+- **Zwei Phasen wie bei Themen.** Phase A: `frage` (endet mit „?“, nennt keine Partei), `beschreibung`, `verwandte_themen` (bestehende Themen-IDs, zum Antippen auf der Karte) und `zielkonflikte` – ohne Blick in die Programme, eigener Pull Request. Freigegeben ist Phase A, wenn die Betreiberin `freigabe.datum` einträgt. Phase B: `positionen` aus allen sieben Bundesprogrammen, erst nach der Freigabe. Die Prüfung lehnt Phase A und Positionen derselben Haltung im selben Pull Request ab und verlangt nach einer Änderung von Phase A eine neue Freigabe.
+- `zielkonflikte`: zwei bis vier Sätze, mindestens einer je `seite` (`ja`/`nein`), jeder mit unabhängiger `quelle_url` (Anforderungen wie bei Ursachen). Sie beschreiben, welche Ziele gegeneinander stehen, und entscheiden den Konflikt nicht.
+- `position`: `ja` (klar dafür), `nein` (klar dagegen), `teils` (nur ein Teil oder unter Bedingungen – die Kurzfassung sagt, welcher) oder `keine_aussage` (durchsucht, nichts gefunden). Bei `ja`/`nein`/`teils` sind `kurzfassung`, `zitat` und `beleg_programm_url` (Programm der Partei mit `#page=`) Pflicht; bei `keine_aussage` nur `begruendung` (was durchsucht wurde). Je Partei höchstens eine Position; `stand` nicht vor dem `programm_stand`. Zunächst nur Bundesprogramme.
+- Anders als bei Maßnahmen kommt das **Zitat in die Datenbank** und ist auf der Karte aufklappbar: Bei Haltungen ist der Wortlaut der eigentliche Beleg. `npm run zitate:pruefen` prüft es mit.
+- `geprueft` nur mit `pruefung`: bei `ja`/`nein`/`teils` `{ "belege_geprueft": Datum, "einordnung_bestaetigt": n }` – die Betreiberin hat Zitat und Seite geprüft, und mindestens zwei Prüfende haben die Einordnung bestätigt, ohne die Partei zu sehen (nur das Zitat); bei `keine_aussage` `{ "belege_geprueft": Datum, "zweite_suche": "…" }`. `ki_entwurf` wie bei Maßnahmen: öffentlich zählt nur Geprüftes, Entwürfe erscheinen nur in der geschlossenen Testphase.
+- **Alle sieben oder keine:** Die Karte erscheint erst, wenn jede Partei eine Position hat (sonst Warnung). Weniger als drei Programme mit erkennbarer Position (Aufnahmekriterium) meldet die Prüfung ebenfalls als Warnung.
+- `schlagwoerter` (optional, nur für den Mock ohne KI): Wörter, an denen die Mock-Analyse eine Haltung dieser Frage zuordnet.
+- **IDs:** eigener Nummernkreis 1, 2, … (`npm run daten:id -- --haltung`), nie wiederverwendet; eine entfernte Haltung kommt mit Grund in [`ids.json`](ids.json) → `haltungen_stillgelegt`.
+
 ### IDs
 
 - **Einmal vergeben, nie wieder.** Gespielte Runden, Bewertungen der Prüfenden und Links verweisen auf IDs. Deshalb werden Einträge nicht gelöscht, sondern bleiben stehen – auch aus früheren Wahlperioden.
 - **Maßnahmen und Instrumente** teilen sich einen fortlaufenden Nummernkreis ohne Bedeutung: `npm run daten:id` nennt die nächste freie Nummer. Die älteren IDs folgen noch der früheren Regel „Themen-ID × 1000 + laufende Nummer“; sie bleiben, wie sie sind.
 - **Ursachen:** Themen-ID × 100 + laufende Nummer (je Thema reichen 99).
+- **Haltungen:** eigener Nummernkreis 1, 2, … (`npm run daten:id -- --haltung`); stillgelegte stehen in `ids.json` → `haltungen_stillgelegt`.
 - Muss ein Eintrag doch weg (etwa doppelt erfasst), kommt seine ID mit Grund in [`ids.json`](ids.json) → `stillgelegt`. Bei jedem Pull Request vergleicht die Prüfung die IDs mit dem Zielzweig: Verschwindet eine ID, ohne stillgelegt zu sein, oder steht sie plötzlich für etwas anderes (anderes Thema, andere Partei, anderes Programm), schlägt sie fehl.
 
 ## Erfassen
@@ -462,13 +509,14 @@ Was technisch abgesichert ist, damit Eingriffe des Koordinators (der die Parteie
 - **Phasen getrennt:** bei Pull Requests nicht Ursachen oder Ziel und Maßnahmen (Abdeckung, Instrumente) desselben Themas zugleich – außer eine neue Ursache mit `nachtraeglich` und `durchsucht_fuer` an jedem aktuellen Eintrag; neue oder geänderte Ursachen und Ziele nennen keine Partei
 - **Nachweis der Prüfung:** `geprueft` nur mit `pruefung.belege_geprueft` (bei `keine_massnahme` mit `zweite_suche`); jede `bewertung` passt zu einem Export in `pruefungen/` (Anzahl, Mediane, Spannweite, Einzelwerte)
 - **Freigabe:** `freigabe.quellen_bestaetigt` nur mit Ursachen des Themas (verlangt von `ursachen:freigegeben`)
+- **Haltungen:** Frage mit „?“ und ohne Parteinamen, verwandte Themen vorhanden, zwei bis vier Zielkonflikte mit mindestens einem je Seite und https-Quelle; Positionen erst nach `freigabe`, höchstens eine je Partei, Pflichtfelder je Positionswert, Beleg im Programm der Partei mit Seitenanker, `stand` nicht vor dem Programm, Kurzfassung höchstens 25 Wörter ohne Parteinamen, `geprueft` nur mit Nachweis (Belege, zwei blinde Bestätigungen bzw. zweite Suche); fehlende Parteien und weniger als drei erkennbare Positionen als Warnung; bei Pull Requests keine Haltung entfernt ohne Stilllegung und Phase A und Positionen nicht zugleich
 - Zahlen in Beschreibungen, die nicht im Zitat stehen (Warnung)
 - Einträge sind nicht älter als das aktuelle Programm
 - bei echten Daten: keine Platzhalter-Links (example.org); Warnung für ungeprüfte Einträge (die im Spiel „noch nicht erfasst“ sind)
 - bei echten Daten: `geprueft: true` nur mit mindestens zwei Bewertungen (`bewertung.anzahl`), Werte gleich den Medianen
 - `supabase/seed.sql` passt zum Katalog
 - bei echten Daten: Prüfsumme je Programm (sonst Warnung)
-- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten oder mit `--lokal`. Weicht eine Datei von der Prüfsumme ab, warnt sie (Programm ausgetauscht?). Auslassungen über 200 Zeichen, Teile unter 20 Zeichen und einschränkende Wörter im ausgelassenen Text meldet sie als Hinweis (kein Fehler) – nachzusehen in der Prüfliste. Montags läuft sie ohne Zwischenspeicher und sichert fehlende Programme im Internet Archive.
+- **Zitate** (eigener Ablauf, lädt die Programme herunter): Jedes `zitat` (Maßnahmen und Positionen zu Haltungen) steht auf der Seite, auf die `beleg_programm_url` zeigt – verglichen ohne Leerzeichen, Satzzeichen und Silbentrennung, Auslassungen als „[…]“. Steht es auf einer anderen Seite, nennt die Prüfung die richtige. Ist ein Parteiserver aus GitHub Actions nicht erreichbar, nimmt sie die Kopie auf web.archive.org; fehlt auch die, bleiben die Zitate dieses Programms ungeprüft (Warnung am Lauf) – dann `npm run zitate:pruefen` von einem normalen Internetanschluss aus starten oder mit `--lokal`. Weicht eine Datei von der Prüfsumme ab, warnt sie (Programm ausgetauscht?). Auslassungen über 200 Zeichen, Teile unter 20 Zeichen und einschränkende Wörter im ausgelassenen Text meldet sie als Hinweis (kein Fehler) – nachzusehen in der Prüfliste. Montags läuft sie ohne Zwischenspeicher und sichert fehlende Programme im Internet Archive.
 
 ```bash
 npm run daten:pruefen              # Dateien prüfen
@@ -478,6 +526,7 @@ npm run dashboard                  # zusätzlich Dateien fürs Supabase-Dashboar
 npm run pruefung:uebernehmen -- export.json   # Ergebnis der Prüfung übernehmen
 npm run zitate:pruefen             # Zitate gegen die Programm-PDFs prüfen (braucht Internet)
 npm run daten:id -- --gegen origin/main       # IDs, neue Ursachen, Phasen und Blindwerte mit einem anderen Stand vergleichen
+npm run daten:id -- --haltung                 # nächste freie ID für eine Haltung
 ```
 
 Werkzeuge zum Erfassen: siehe „Erfassen“.

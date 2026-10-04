@@ -147,7 +147,9 @@ function Datenschutz() {
       <p>
         <strong>Gespeichert wird pro Runde:</strong> eine neutrale Kurzfassung des Problems (höchstens 200 Zeichen,
         von der KI ohne Namen und persönliche Details formuliert), ein Stichwort, das zugeordnete Thema, die beiden
-        gewählten Parteien, deren Punkte und der Zeitpunkt. Deine Rolle und dein Name im Spiel werden nicht
+        gewählten Parteien, deren Punkte und der Zeitpunkt. Bleibt es bei einer Forderung oder Haltung, speichern wir
+        statt Punkten nur die Nummer des erkannten Lösungswegs bzw. der erkannten Wertfrage aus unserem Katalog – nicht,
+        welche Seite du vertrittst. Deine Rolle und dein Name im Spiel werden nicht
         gespeichert. Diese Daten lassen sich keiner Person zuordnen. Probleme zu Themen, die wir noch nicht bewertet
         haben, landen zusätzlich mit einer kurzen vorläufigen Einschätzung in einer Liste zur redaktionellen Prüfung.
       </p>
