@@ -1,4 +1,4 @@
-// Einordnungstabelle aus /liste-einordnen (docs/listen/<Datum>-<Name>.md): je Zeile einer Liste von Äußerungen,
+// Einordnungstabelle aus /liste-einordnen (.cache/listen/<Datum>-<Name>.md, nicht im Repository): je Zeile einer Liste von Äußerungen,
 // welche Art sie ist, was daraus wird und ob die Betreiberin das bestätigt hat. Reine Funktionen
 // (Tests: scripts/liste.test.ts); Befehl: scripts/liste-auswahl.ts.
 //
@@ -89,6 +89,6 @@ export function auftraege(zeilen: Zeile[]) {
   }
 }
 
-/** Zeilen für die Prompt-Evaluation (docs/prompt-evaluation.md): Äußerung und erwartete Antwort. */
+/** Vorlage für die Prompt-Evaluation (docs/prompt-evaluation.md): Äußerung (dort nur umschrieben) und erwartete Antwort. */
 export const evaluationsZeilen = (zeilen: Zeile[]) =>
   zeilen.filter((z) => z.ok && z.art !== 'doppelt').map((z) => `| ${z.eintrag} | ${z.art} | ${ERWARTET[z.art as Exclude<Art, 'doppelt'>]} |`)

@@ -1,7 +1,7 @@
 ---
 name: haltung-anlegen
 description: Phase A für eine oder viele Haltungen (Wertfragen) des Politik-Duells – je Haltung ein Agent haltung-recherche (parallel) für neutrale Ja/Nein-Frage, Beschreibung, Zielkonflikte mit unabhängigen Quellen, Maßstab der Einordnung und Suchbegriffe, ohne Blick in Wahlprogramme. Endet mit KI-Freigabe (Testphase) und eigenem Commit; mit --erfassen geht es direkt mit /haltung-erfassen weiter. Aufruf z. B. /haltung-anlegen Wehrpflicht; Schuldenbremse --erfassen oder mit einer Auswahl aus /liste-einordnen.
-argument-hint: <Wertfrage oder Stichwort>[; …] | --liste <docs/listen/…md> [--erfassen]
+argument-hint: <Wertfrage oder Stichwort>[; …] | --liste <.cache/listen/…md> [--erfassen]
 disable-model-invocation: true
 ---
 
@@ -11,7 +11,7 @@ Aufruf: **$ARGUMENTS**
 
 Eine **Haltung** ist eine Wertfrage, über die vernünftige Menschen verschieden urteilen; die Haltungskarte zeigt ohne Punkte, wo die Parteien stehen. Regeln: `docs/plan-haltungen.md` → B1–B3, Format: `daten/README.md` → „haltungen/NN-name.json“. Diese Phase legt Frage und Maßstab fest, **bevor** jemand in Programme schaut, und endet mit KI-Freigabe für die Testphase.
 
-**Eingabe:** einzelne Stichwörter durch „;“ getrennt, oder mit `--liste <datei>` die bestätigten Zeilen einer Einordnungstabelle: `npm run -s liste:auswahl -- <datei> --art haltung` (Vorschlag für die Frage steht in der Tabelle).
+**Eingabe:** einzelne Stichwörter durch „;“ getrennt, oder mit `--liste <datei>` die bestätigten Zeilen einer Einordnungstabelle: `npm run -s liste:auswahl -- <datei> --art haltung` (Vorschlag für die Frage steht in der Tabelle). **Vor** `phase-a start` ausführen – während der Sperre ist `.cache/` nicht lesbar.
 
 **Als Erstes:** `npm run phase-a -- start "Haltungen"` (sperrt Programme, auch für Agenten). **Zum Schluss:** `npm run phase-a -- ende`.
 

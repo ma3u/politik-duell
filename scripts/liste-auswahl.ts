@@ -1,7 +1,7 @@
 // Liest eine Einordnungstabelle aus /liste-einordnen und gibt die bestätigten Aufträge aus.
-// Aufruf: npm run liste:auswahl -- <docs/listen/….md>                – prüft die Tabelle, zählt je Art, nennt die Aufträge
+// Aufruf: npm run liste:auswahl -- <.cache/listen/….md>                – prüft die Tabelle, zählt je Art, nennt die Aufträge
 //         npm run liste:auswahl -- <datei> --art haltung|forderung|thema   – nur diese Aufträge (eine Zeile je Auftrag)
-//         npm run liste:auswahl -- <datei> --evaluation             – Tabellenzeilen für docs/prompt-evaluation.md
+//         npm run liste:auswahl -- <datei> --evaluation             – Vorlage für docs/prompt-evaluation.md (Äußerung dort nur umschrieben)
 import { readFileSync } from 'node:fs'
 import { ARTEN, auftraege, evaluationsZeilen, leseListe } from './liste.ts'
 
@@ -11,7 +11,7 @@ const art = a >= 0 ? args.splice(a, 2)[1] : undefined
 const evaluation = args.includes('--evaluation')
 const datei = args.find((x) => !x.startsWith('--'))
 if (!datei) {
-  console.error('Aufruf: npm run liste:auswahl -- <docs/listen/….md> [--art haltung|forderung|thema] [--evaluation]')
+  console.error('Aufruf: npm run liste:auswahl -- <.cache/listen/….md> [--art haltung|forderung|thema] [--evaluation]')
   process.exit(1)
 }
 const { zeilen, fehler } = leseListe(readFileSync(datei, 'utf8'))
@@ -19,6 +19,7 @@ for (const f of fehler) console.error(`Fehler:  ${f}`)
 if (fehler.length) process.exit(1)
 const x = auftraege(zeilen)
 if (evaluation) {
+  console.error('Vorlage – die Äußerung vor dem Übernehmen umschreiben (keine Parolen, Beleidigungen oder Namen im Wortlaut):')
   console.log('| Äußerung | Art | Erwartet |\n| --- | --- | --- |')
   for (const z of evaluationsZeilen(zeilen)) console.log(z)
 } else if (art === 'haltung') {

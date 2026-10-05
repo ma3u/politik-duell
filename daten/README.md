@@ -454,7 +454,7 @@ Für Claude Code liegen sechs Skills im Repository. Sie bauen den Katalog für d
 
 | Aufruf | Was | Wer arbeitet | Ergebnis |
 | --- | --- | --- | --- |
-| `/liste-einordnen liste.txt` (danach `… --ausfuehren`) | Liste von Äußerungen sortieren (Haltung, Forderung, Thema, Grenze, Pauschalurteil, Tatsache, Meta, doppelt), neutrale Vorschläge | die Koordination, Programme gesperrt | Tabelle `docs/listen/…` zum Abhaken; danach verteilt an die Skills unten, Beispiele für `docs/prompt-evaluation.md` |
+| `/liste-einordnen liste.txt` (danach `… --ausfuehren`) | Liste von Äußerungen sortieren (Haltung, Forderung, Thema, Grenze, Pauschalurteil, Tatsache, Meta, doppelt), neutrale Vorschläge | die Koordination, Programme gesperrt | Tabelle `.cache/listen/…` (nicht im Repository) zum Bestätigen; danach verteilt an die Skills unten, umschriebene Beispiele für `docs/prompt-evaluation.md` |
 | `/thema-anlegen Kita-Betreuung` (mehrere mit „;“, `--erfassen` für direkt weiter) | Ziel, Ursachen, Ebene, Perspektivenprüfung, Leitfaden mit Suchbegriffen | Agent `ursachen-recherche` – nur Web-Recherche, kein Zugriff auf Programme | Themendatei mit KI-Freigabe, eigener Commit |
 | `/thema-erfassen 17` (mehrere IDs, optional `--bund`, `--land XX`) | Maßnahmen erfassen und ohne Parteinamen bewerten | je Programm ein Agent `programm-erfassung`; **ein** Agent `blind-bewertung`, der nur die Liste ohne Parteinamen sieht | Maßnahmen und Instrumente als KI-Entwurf, Pull Request |
 | `/forderung-erfassen 2 "Mietendeckel"` | Lösungsweg nachtragen, nach dem bisher nicht gesucht wurde (Forderungskarte) | wie `/thema-erfassen`, nur für die neuen Suchbegriffe und nur in schon erfassten Programmen | Einträge ergänzt, neues oder vorhandenes Instrument |
@@ -485,7 +485,7 @@ npm run entwurf:eintragen -- erfassung.json bewertung.json   # verlangt protokol
 npm run entwurf:bericht -- erfassung.json bewertung.json     # Datenteil der Pull-Request-Beschreibung (pr-daten.md), wörtlich aus den Arbeitsdateien
 npm run entwurf:archivieren -- erfassung.json            # Protokolle, Stände, Kennungen, Blindliste und Bewertung nach daten/protokolle/<ID>/ (ohne Programmtexte)
 npm run instrumente -- 2                                 # Ursachen und Instrumente eines Themas ohne Parteinamen (gibt es einen Lösungsweg schon?)
-npm run liste:auswahl -- docs/listen/….md [--art haltung|forderung|thema] [--evaluation]   # Einordnungstabelle prüfen, bestätigte Aufträge je Skill, Zeilen für die Prompt-Evaluation
+npm run liste:auswahl -- .cache/listen/….md [--art haltung|forderung|thema] [--evaluation]   # Einordnungstabelle prüfen, bestätigte Aufträge je Skill, Zeilen für die Prompt-Evaluation
 npm run haltung:auftrag -- 4 5 6                         # Haltungen: je Bundesprogramm Textdatei und ein Auftrag für alle (.cache/haltung/lauf/)
 npm run haltung:programm-pruefen -- .cache/haltung/lauf/protokoll/fund-SPD-Bund.json   # Selbstprüfung: je Haltung ein Fund, Zitat wörtlich auf der Seite; speichert .cache/haltung/<ID>/funde/
 npm run haltung:blind -- 4 5 6                           # je Haltung blind.json ohne Parteinamen (Kennungen H1 …), kennungen.json für das Eintragen
