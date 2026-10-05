@@ -41,7 +41,7 @@ for (const d of readdirSync(ordner).filter((x) => x.endsWith('.json')).sort()) {
     continue
   }
   // Ein Bündel, das erst nach der Abgabe in den Leitfaden kam, ist jetzt bekannt – deshalb hier erneut prüfen.
-  fehlerliste.push(...pruefeProgramm(katalog, { thema_id: erfassung.thema_id, leitfaden }, p).map((f) => `${d}: ${f}`))
+  fehlerliste.push(...pruefeProgramm(katalog, { thema_id: erfassung.thema_id, leitfaden, nachtrag: erfassung.nachtrag }, p).map((f) => `${d}: ${f}`))
   programme.set(schluessel, { ...p, land: p.land ?? null })
 }
 for (const f of fehlerliste) console.error(`Fehler:  ${f}`)

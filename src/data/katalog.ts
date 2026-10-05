@@ -87,10 +87,13 @@ export interface KatalogUrsache extends Ursache {
 /**
  * Freigabe der Ursachen durch die Betreiberin: Datum und die Ursachen, deren Quellen sie im Original
  * bestätigt hat. Erst damit dürfen Maßnahmen erfasst werden (npm run ursachen:freigegeben).
+ * `art: "ki"`: KI-Freigabe für die geschlossene Testphase – Phase A stand fest (Programmsperre), bevor
+ * erfasst wurde, aber niemand hat die Quellen geprüft. Geprüfte Einträge verlangen eine Freigabe ohne `art`.
  */
 export interface Freigabe {
   datum: string
   quellen_bestaetigt: number[]
+  art?: 'ki'
 }
 
 /** Thema im Repo: mit Freigabe der Ursachen. */
@@ -136,8 +139,12 @@ export interface KatalogPosition extends HaltungPosition {
 export interface KatalogHaltung extends HaltungEintrag {
   zielkonflikte: Zielkonflikt[]
   positionen: KatalogPosition[]
-  /** Freigabe von Frage, Beschreibung und Zielkonflikten – erst danach werden Positionen erfasst. */
-  freigabe?: { datum: string }
+  /** Freigabe von Frage, Beschreibung und Zielkonflikten – erst danach werden Positionen erfasst (`art: "ki"` wie bei Themen). */
+  freigabe?: { datum: string; art?: 'ki' }
+  /** Phase A: wann eine Position `ja`, `teils` oder `nein` ist – Maßstab der Einordnung ohne Parteinamen. */
+  einordnung?: { ja: string; teils: string; nein: string }
+  /** Suchbegriffe für die Erfassung der Positionen, für alle Programme gleich (nicht Teil von Phase A). */
+  suchbegriffe?: string[]
 }
 
 /** Höchstens so viele Wörter hat die Kurzfassung einer Position (docs/plan-haltungen.md, B2). */
@@ -779,13 +786,15 @@ export function pruefeKatalog(
     if (t.freigabe !== undefined) {
       const fOrt = `${ort} › freigabe`
       const fr = t.freigabe
-      if (!istObjekt(fr)) f(fOrt, 'erwartet { datum, quellen_bestaetigt }')
+      if (!istObjekt(fr)) f(fOrt, 'erwartet { datum, quellen_bestaetigt } oder { datum, art: "ki" }')
       else {
-        unbekannteFelder(fOrt, fr, ['datum', 'quellen_bestaetigt'])
-        const q = fr.quellen_bestaetigt
+        unbekannteFelder(fOrt, fr, ['datum', 'quellen_bestaetigt', 'art'])
+        const ki = fr.art === 'ki'
+        if (fr.art !== undefined && !ki) f(fOrt, '„art“ kann nur „ki“ sein (KI-Freigabe für die Testphase)')
+        const q = fr.quellen_bestaetigt ?? (ki ? [] : undefined)
         if (!Array.isArray(q) || q.some((x) => !Number.isInteger(x))) f(fOrt, '„quellen_bestaetigt“ muss eine Liste von Ursachen-IDs sein')
         else for (const id of q as number[]) if (!eigeneUrsachen.has(id)) f(fOrt, `„quellen_bestaetigt“: Ursache ${id} gehört nicht zum Thema`)
-        thema.freigabe = { datum: datum(fOrt, fr, 'datum'), quellen_bestaetigt: Array.isArray(q) ? (q as number[]) : [] }
+        thema.freigabe = { datum: datum(fOrt, fr, 'datum'), quellen_bestaetigt: Array.isArray(q) ? (q as number[]) : [], ...(ki ? { art: 'ki' as const } : {}) }
       }
     }
 
@@ -1041,6 +1050,12 @@ export function pruefeKatalog(
     for (const id of eigeneInstrumente.keys()) {
       if (!instrumentGenutzt.has(id)) warnungen.push(`${ort}: Instrument ${id} wird von keiner Maßnahme genutzt`)
     }
+    // Geprüft heißt: Menschen haben geprüft – das setzt eine Freigabe der Ursachen durch die Betreiberin voraus.
+    const etwasGeprueft =
+      katalog.abdeckung.some((a) => a.thema_id === thema.id && a.art === 'keine' && a.geprueft) ||
+      katalog.massnahmen.some((m) => m.thema_id === thema.id && m.geprueft)
+    if (!katalog.fiktiv && thema.freigabe?.art === 'ki' && etwasGeprueft)
+      f(ort, '„geprueft“ erst nach der Freigabe der Ursachen durch die Betreiberin – „freigabe“ hat nur „art“: „ki“')
     for (const [id, e] of instrumentEbene) ebeneJeInstrument.set(id, e)
 
     // Landesprogramme sind eine Ergänzung: Maßgeblich für „noch nicht erfasst“ ist das Bundesprogramm.
@@ -1072,7 +1087,7 @@ export function pruefeKatalog(
       f(ort, 'erwartet ein Objekt')
       continue
     }
-    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'verwandte_themen', 'zielkonflikte', 'positionen', 'freigabe', 'schlagwoerter'])
+    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'verwandte_themen', 'zielkonflikte', 'einordnung', 'suchbegriffe', 'positionen', 'freigabe', 'schlagwoerter'])
     const haltung: KatalogHaltung = {
       id: ganzzahl(ort, h, 'id', 1, 32767),
       frage: text(ort, h, 'frage', 160),
@@ -1123,11 +1138,30 @@ export function pruefeKatalog(
     // Freigabe von Frage, Beschreibung und Zielkonflikten durch die Betreiberin (Phase A).
     if (h.freigabe !== undefined) {
       const fOrt = `${ort} › freigabe`
-      if (!istObjekt(h.freigabe)) f(fOrt, 'erwartet { datum }')
+      if (!istObjekt(h.freigabe)) f(fOrt, 'erwartet { datum } oder { datum, art: "ki" }')
       else {
-        unbekannteFelder(fOrt, h.freigabe, ['datum'])
-        haltung.freigabe = { datum: datum(fOrt, h.freigabe, 'datum') }
+        unbekannteFelder(fOrt, h.freigabe, ['datum', 'art'])
+        if (h.freigabe.art !== undefined && h.freigabe.art !== 'ki') f(fOrt, '„art“ kann nur „ki“ sein (KI-Freigabe für die Testphase)')
+        haltung.freigabe = { datum: datum(fOrt, h.freigabe, 'datum'), ...(h.freigabe.art === 'ki' ? { art: 'ki' as const } : {}) }
       }
+    }
+
+    // Maßstab der Einordnung (Phase A) und Suchbegriffe für die Erfassung.
+    if (h.einordnung !== undefined) {
+      const eOrt = `${ort} › einordnung`
+      if (!istObjekt(h.einordnung)) f(eOrt, 'erwartet { ja, teils, nein }')
+      else {
+        unbekannteFelder(eOrt, h.einordnung, ['ja', 'teils', 'nein'])
+        const e = { ja: text(eOrt, h.einordnung, 'ja', 300), teils: text(eOrt, h.einordnung, 'teils', 300), nein: text(eOrt, h.einordnung, 'nein', 300) }
+        for (const [feld, wert] of Object.entries(e))
+          if (wert && ohneParteinamen(wert, parteinamen) !== wert) f(eOrt, `„${feld}“ nennt eine Partei`)
+        haltung.einordnung = e
+      }
+    }
+    if (h.suchbegriffe !== undefined) {
+      const s = h.suchbegriffe
+      if (!Array.isArray(s) || !s.length || s.some((x) => typeof x !== 'string' || !x.trim())) f(ort, '„suchbegriffe“ muss eine nicht leere Liste von Wörtern sein')
+      else haltung.suchbegriffe = s as string[]
     }
 
     // Positionen der Parteien (Phase B): erst nach der Freigabe, höchstens eine je Partei und Programm.
@@ -1204,6 +1238,8 @@ export function pruefeKatalog(
           }
         }
       }
+      if (!katalog.fiktiv && geprueft && haltung.freigabe?.art === 'ki')
+        f(pOrt, '„geprueft“ erst nach der Freigabe von Frage, Beschreibung und Zielkonflikten durch die Betreiberin – „freigabe“ hat nur „art“: „ki“')
       if (!katalog.fiktiv && !geprueft)
         warnungen.push(`${pOrt}: noch nicht geprüft – zählt erst nach der Prüfung${p.ki_entwurf ? ' (Testphase: KI-Entwurf)' : ''}`)
       haltung.positionen.push(p)

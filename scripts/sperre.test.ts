@@ -38,6 +38,22 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     expect(p('Read', { file_path: '/repo/.cache/entwurf/17/texte/SPD-Bund.txt' }, false)).toBeNull()
   })
 
+  describe('Agent haltung-einordnung', () => {
+    const agent = (tool_name: string, tool_input: Record<string, string>) =>
+      pruefe({ tool_name, tool_input, agent_type: 'haltung-einordnung', agent_id: 'h1', cwd: '/repo' }, kontext())
+
+    it('erlaubt nur Blindliste, eigene Antwort und Selbstprüfung', () => {
+      expect(agent('Read', { file_path: '/repo/.cache/haltung/4/blind.json' })).toBeNull()
+      expect(agent('Write', { file_path: '.cache/haltung/4/protokoll/einordnung-antwort.txt', content: '{}' })).toBeNull()
+      expect(agent('Bash', { command: 'npm run -s haltung:antwort-pruefen -- 4' })).toBeNull()
+      for (const datei of ['/repo/.cache/haltung/4/kennungen.json', '/repo/.cache/haltung/4/funde/SPD-Bund.json', '/repo/.cache/haltung/4/../4/kennungen.json', '/repo/daten/haltungen/04.json'])
+        expect(agent('Read', { file_path: datei })).toMatch(/Einordnung ohne Parteinamen/)
+      expect(agent('Bash', { command: 'npm run -s haltung:antwort-pruefen -- 4 && cat .cache/haltung/4/kennungen.json' })).toMatch(/gesperrt/)
+      expect(agent('WebSearch', { query: 'Tempolimit Partei' })).toMatch(/gesperrt/)
+      expect(agent('WebFetch', { url: 'https://www.kfn.de/studie.pdf' })).toMatch(/gesperrt/)
+    })
+  })
+
   describe('Agent blind-bewertung', () => {
     const blind = (tool_name: string, tool_input: Record<string, string>, extra: Record<string, unknown> = {}) =>
       pruefe({ tool_name, tool_input, agent_type: 'blind-bewertung', agent_id: 'a1', cwd: '/repo', ...extra }, kontext())

@@ -11,7 +11,7 @@
 //         npm run entwurf:treffer -- <erfassung.json> --vorab [--bund | --land XX …] [--partei SPD …] [--lokal <ordner>]
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { begriffePruefsumme, erfassungsHinweise, pruefeSuchbegriffe, type Erfassung, type Treffermatrix } from '../entwurf.ts'
+import { begriffePruefsumme, erfassungsHinweise, pruefeSuchbegriffe, type Erfassung, type Treffermatrix, nachtragUrsachen } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
 import { auswahlProgramme, zulaessigeUrsachen } from './auftrag-text.ts'
@@ -68,7 +68,7 @@ if (vorab) {
       continue
     }
     const texte = seiten.map(fliesstext)
-    for (const u of zulaessigeUrsachen(katalog, erfassung.thema_id, p.land))
+    for (const u of zulaessigeUrsachen(katalog, erfassung.thema_id, p.land, nachtragUrsachen(erfassung)))
       for (const [richtung, begriffe] of Object.entries(erfassung.suchbegriffe[String(u.id)] ?? {}))
         for (const b of begriffe) {
           const key = `${u.id}|${richtung}|${b}`

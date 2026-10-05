@@ -10,6 +10,9 @@
 //    Werkzeugaufruf eines Subagenten mitschickt): Read nur genau .cache/entwurf/<ID>/blind.json und die
 //    eigene Antwort, Write nur genau .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt, Bash nur genau
 //    die Selbstprüfung `npm run -s entwurf:antwort-pruefen -- <ID>`, WebFetch wie unter 1; alles andere gesperrt.
+// 4. Agent haltung-einordnung (Haltungen ohne Parteinamen einordnen): Read nur .cache/haltung/<ID>/blind.json und
+//    die eigene Antwort, Write nur .cache/haltung/<ID>/protokoll/einordnung-antwort.txt, Bash nur
+//    `npm run -s haltung:antwort-pruefen -- <ID>`; keine Websuche (das Zitat genügt), alles andere gesperrt.
 //
 // Eingabe: JSON auf stdin ({ tool_name, tool_input, cwd, agent_type? }). Ausgabe bei Sperre: Entscheidung
 // „deny“ mit Grund. Ohne Abhängigkeiten, damit der Hook schnell startet.
@@ -41,6 +44,26 @@ export function blindPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
   return false
 }
 
+/** Name des Agenten, der Haltungen ohne Parteinamen einordnet (.claude/agents/haltung-einordnung.md). */
+export const HALTUNG_AGENT = /(^|:)haltung-einordnung$/
+export const HALTUNG_PRUEFBEFEHL = /^npm run (-s |--silent )?haltung:antwort-pruefen '?--'? \d+$/
+
+/** Darf der Einordnungs-Agent diesen Pfad benutzen? Genau die Blindliste und die eigene Antwort. */
+export function haltungPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
+  if (typeof pfad !== 'string' || !pfad.trim()) return false
+  const norm = (p) => {
+    const r = resolve(wurzel, p).replace(/\\/g, '/')
+    return process.platform === 'win32' ? r.toLowerCase() : r
+  }
+  const datei = norm(isAbsolute(pfad) ? pfad : join(cwd, pfad))
+  const basis = norm(wurzel).replace(/\/$/, '')
+  const rest = datei.startsWith(`${basis}/`) ? datei.slice(basis.length + 1) : null
+  if (rest === null) return false
+  if (werkzeug === 'Read') return /^\.cache\/haltung\/\d+\/(blind\.json|protokoll\/einordnung-antwort\.txt)$/.test(rest)
+  if (werkzeug === 'Write') return /^\.cache\/haltung\/\d+\/protokoll\/einordnung-antwort\.txt$/.test(rest)
+  return false
+}
+
 /**
  * Die Selbstprüfung des Bewertungs-Agenten – genau dieser Befehl, ohne weitere Zeichen: keine
  * Verkettung, Umleitung oder Ersetzung. Das Skript liest nur blind.json und die Antwort.
@@ -64,6 +87,15 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
       'Bash nur „npm run -s entwurf:antwort-pruefen -- <ID>“, WebSearch und WebFetch.'
     )
   }
+  if (typeof eingabe.agent_type === 'string' && HALTUNG_AGENT.test(eingabe.agent_type)) {
+    if ((werkzeug === 'Read' || werkzeug === 'Write') && haltungPfadErlaubt(werkzeug, e.file_path, basis, eingabe.cwd || basis)) return null
+    if (werkzeug === 'Bash' && typeof e.command === 'string' && HALTUNG_PRUEFBEFEHL.test(e.command.trim()) && !e.run_in_background) return null
+    return (
+      `Einordnung ohne Parteinamen: ${werkzeug} ${e.file_path ?? e.path ?? e.command ?? e.url ?? ''} ist gesperrt. ` +
+      'Erlaubt sind nur Read auf .cache/haltung/<ID>/blind.json und protokoll/einordnung-antwort.txt, Write auf protokoll/einordnung-antwort.txt ' +
+      'und Bash „npm run -s haltung:antwort-pruefen -- <ID>“.'
+    )
+  }
   if (werkzeug === 'WebFetch') return null
   if (!phaseA) return null
   const cache = /(^|[\s/\\'"=])\.cache([\s/\\'"]|$)/
@@ -74,7 +106,7 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
     const c = e.command
     if (/\bnpm run phase-a\b/.test(c) && !/[;&|]/.test(c.replace(/\b2>&1\b/g, ''))) return null
     if (cache.test(c) || /\.cache\//.test(c)) return 'Phase A (Ursachen festlegen): kein Zugriff auf .cache/ – dort liegen Programmtexte und Erfassungen.'
-    if (/\b(programme:(laden|suche|texte)|programm:(text|sichern)|zitate:pruefen|entwurf:|punkte\b|pruefliste|blind:reste)/.test(c))
+    if (/\b(programme:(laden|suche|texte)|programm:(text|sichern)|zitate:pruefen|entwurf:|punkte\b|pruefliste|blind:reste|instrumente\b|haltung:(auftrag|programm-pruefen|blind|eintragen))/.test(c))
       return 'Phase A (Ursachen festlegen): Werkzeuge, die Wahlprogramme lesen, sind gesperrt. Erlaubt: npm run quelle:text, npm run themen:ueberblick.'
     if (/(^|[\s/])scripts\/(entwurf\/(programm|programme|treffer|reste)|pruefe-zitate|erzeuge-pruefliste)/.test(c))
       return 'Phase A (Ursachen festlegen): Werkzeuge, die Wahlprogramme lesen, sind gesperrt.'

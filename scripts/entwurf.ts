@@ -98,8 +98,41 @@ export interface Treffermatrix {
   programme: { partei_id: number; land: string | null; ursachen: Record<string, Record<string, Record<string, number>>> }[]
 }
 
+/**
+ * Nachtrag eines Lösungswegs (/forderung-erfassen): Die Programme sind schon erfasst; durchsucht werden sie
+ * nur noch nach den genannten Lösungsrichtungen (aus den Suchbegriffen des Leitfadens) dieser Ursachen.
+ * Neue Fundstellen ergänzen die vorhandenen Einträge, nichts wird ersetzt.
+ */
+export interface Nachtrag {
+  /** Die Forderung in neutralen Worten, z. B. „Mietendeckel“. */
+  forderung: string
+  /** Ursache → Lösungsrichtungen (Schlüssel in `suchbegriffe`). */
+  richtungen: Record<string, string[]>
+}
+
+/** Ursachen eines Nachtrags (undefined = normale Erfassung, alle Ursachen). */
+export const nachtragUrsachen = (e: { nachtrag?: Nachtrag }) => (e.nachtrag ? Object.keys(e.nachtrag.richtungen).map(Number) : undefined)
+
+/** Prüft einen Nachtrag gegen Thema und Leitfaden: bekannte Ursachen, Richtungen mit Suchbegriffen. */
+export function pruefeNachtrag(k: Katalog, e: Erfassung, leitfaden: Leitfaden | undefined): string[] {
+  const n = e.nachtrag
+  if (!n) return []
+  const f: string[] = []
+  if (typeof n.forderung !== 'string' || !n.forderung.trim()) f.push('nachtrag.forderung fehlt')
+  if (!n.richtungen || typeof n.richtungen !== 'object' || !Object.keys(n.richtungen).length) return [...f, 'nachtrag.richtungen: erwartet { "<Ursachen-ID>": ["<Lösungsrichtung>", …] }']
+  for (const [u, rs] of Object.entries(n.richtungen)) {
+    if (!k.ursachen.some((x) => x.thema_id === e.thema_id && String(x.id) === u)) f.push(`nachtrag: Ursache ${u} gehört nicht zum Thema`)
+    if (!Array.isArray(rs) || !rs.length) f.push(`nachtrag: Ursache ${u} ohne Lösungsrichtung`)
+    for (const r of Array.isArray(rs) ? rs : [])
+      if (!(leitfaden?.suchbegriffe ?? e.suchbegriffe)?.[u]?.[r]?.length) f.push(`nachtrag: Richtung „${r}“ hat im Leitfaden bei Ursache ${u} keine Suchbegriffe – erst dort eintragen (gilt dann für alle Programme)`)
+  }
+  return f
+}
+
 export interface Erfassung {
   thema_id: number
+  /** Nur beim Nachtrag eines Lösungswegs (siehe `Nachtrag`). */
+  nachtrag?: Nachtrag
   /** Für alle Programme dieselben – steht später in docs/perspektiven-ursachen.md. */
   suchbegriffe: Suchbegriffe
   /** Alle Begriffe in allen erfassten Programmen gezählt (`npm run entwurf:treffer`). */
@@ -165,9 +198,11 @@ export function ursachenFreigegeben(freigegeben: Katalog, arbeitsstand: Katalog,
   if (!vorher.length) return [`Thema ${themaId} hat im Zielzweig keine Ursachen`]
   const fehler: string[] = []
   // Freigegeben heißt: Die Betreiberin hat Datum und bestätigte Quellen eingetragen – ein Merge allein genügt nicht.
+  // Für die Testphase genügt eine KI-Freigabe (`art: "ki"`, gesetzt am Ende von /thema-anlegen); Quellen prüft dann niemand.
   const freigabe = freigegeben.themen.find((t) => t.id === themaId)?.freigabe
-  if (!freigabe) fehler.push(`Thema ${themaId} hat im Zielzweig keine „freigabe“ – die Betreiberin trägt Datum und bestätigte Quellen ein (daten/README.md → „Dateiformat“)`)
-  else {
+  if (!freigabe)
+    fehler.push(`Thema ${themaId} hat im Vergleichsstand keine „freigabe“ – Datum und bestätigte Quellen (Betreiberin) oder „art“: „ki“ (Testphase, /thema-anlegen) eintragen und committen (daten/README.md → „Dateiformat“)`)
+  else if (freigabe.art !== 'ki') {
     const offen = vorher.filter((u) => !freigabe.quellen_bestaetigt.includes(u.id)).map((u) => u.id)
     if (offen.length) fehler.push(`Quellen von Ursache ${offen.join(', ')} sind nicht bestätigt („freigabe.quellen_bestaetigt“)`)
   }
@@ -767,12 +802,13 @@ function pruefeEinzel(was: string, b: Einzelbewertung): string[] {
 }
 
 /** Ursachen, die für mindestens ein Programm der Erfassung zählen (Landesprogramme nur für Landesursachen). */
+const imNachtrag = (e: Pick<Erfassung, 'nachtrag'>, id: number) => !e.nachtrag || String(id) in e.nachtrag.richtungen
 const ursachenDerErfassung = (k: Katalog, e: Erfassung) =>
-  k.ursachen.filter((u) => u.thema_id === e.thema_id && e.programme.some((p) => !p.land || (u.ebene ?? 'bund') === 'land'))
+  k.ursachen.filter((u) => u.thema_id === e.thema_id && imNachtrag(e, u.id) && e.programme.some((p) => !p.land || (u.ebene ?? 'bund') === 'land'))
 
 /** Ursachen, für die ein Programm durchsucht wird. */
 const ursachenFuer = (k: Katalog, e: Erfassung, p: ErfasstesProgramm) =>
-  k.ursachen.filter((u) => u.thema_id === e.thema_id && (!p.land || (u.ebene ?? 'bund') === 'land'))
+  k.ursachen.filter((u) => u.thema_id === e.thema_id && imNachtrag(e, u.id) && (!p.land || (u.ebene ?? 'bund') === 'land'))
 
 export const begriffePruefsumme = (s: Suchbegriffe) =>
   createHash('sha256')
@@ -997,9 +1033,10 @@ export function zitatHinweise(m: ErfassteMassnahme): string[] {
  * Was für ein einzelnes Programm geprüft werden kann, ohne die übrigen zu kennen – vom Erfassungs-Agenten
  * selbst vor der Abgabe (`entwurf:programm-pruefen`) und für jedes Programm in `pruefeErfassung`.
  */
-export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leitfaden'>, p: ErfasstesProgramm): string[] {
+export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leitfaden' | 'nachtrag'>, p: ErfasstesProgramm): string[] {
   const f: string[] = []
-  const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === e.thema_id).map((u) => [u.id, u]))
+  // Beim Nachtrag zählen nur die Ursachen des Lösungswegs.
+  const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === e.thema_id && imNachtrag(e, u.id)).map((u) => [u.id, u]))
   const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
   if (p.nicht_durchsucht !== undefined) return [`${name}: nicht durchsucht (${p.nicht_durchsucht}) – das Programm bleibt „noch nicht erfasst“ und gehört nicht in die Erfassung`]
   if (!k.parteien.some((x) => x.id === p.partei_id)) f.push(`${name}: unbekannte Partei`)
@@ -1087,13 +1124,15 @@ export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
   if (e.leitfaden && e.leitfaden.thema_id !== e.thema_id) f.push(`Leitfaden gehört zu Thema ${e.leitfaden.thema_id}, die Erfassung zu ${e.thema_id}`)
   else if (e.leitfaden) f.push(...pruefeLeitfaden(k, e.leitfaden))
   f.push(...pruefeSuchbegriffe(k, e))
+  f.push(...pruefeNachtrag(k, e, e.leitfaden))
   const gesehen = new Set<string>()
   for (const p of e.programme) {
     const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
     if (gesehen.has(name)) f.push(`${name}: doppelt in der Erfassung`)
     gesehen.add(name)
-    if (k.abdeckung.some((a) => a.thema_id === e.thema_id && a.partei_id === p.partei_id && (a.land ?? null) === p.land && a.aktuell))
-      f.push(`${name}: hat zu diesem Thema schon einen Eintrag – bestehende Einträge von Hand ergänzen`)
+    const hatEintrag = k.abdeckung.some((a) => a.thema_id === e.thema_id && a.partei_id === p.partei_id && (a.land ?? null) === p.land && a.aktuell)
+    if (hatEintrag && !e.nachtrag) f.push(`${name}: hat zu diesem Thema schon einen Eintrag – einen Lösungsweg nachtragen mit /forderung-erfassen`)
+    if (!hatEintrag && e.nachtrag) f.push(`${name}: Nachtrag, aber das Programm ist zu diesem Thema noch nicht erfasst – erst /thema-erfassen`)
     f.push(...pruefeProgramm(k, e, p))
   }
   return f
@@ -1299,6 +1338,11 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
     instrumente.push({ id: id++, ...rest, entwurf_herkunft: 'blind' })
   }
   const abdeckung = [...((datei.abdeckung as Json[] | undefined) ?? [])]
+  // Nachtrag: neue Fundstellen ergänzen den vorhandenen Eintrag des Programms (Kopf und `durchsucht_fuer` bleiben).
+  const vorhanden = (p: ErfasstesProgramm) =>
+    abdeckung.findIndex((a) => a.partei_id === p.partei_id && ((a.land as string | undefined) ?? null) === p.land && !a.landtagswahl === !p.land &&
+      (!p.land || a.landtagswahl === k.landesprogramme.find((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell)?.landtagswahl))
+  const zitatSchluessel = (z: unknown) => String(z ?? '').toLowerCase().replace(/\s+/g, ' ').trim()
   for (const [i, p] of e.programme.entries()) {
     const partei = k.parteien.find((x) => x.id === p.partei_id)!
     const lp = p.land ? k.landesprogramme.find((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell) : undefined
@@ -1307,6 +1351,9 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
     const durchsucht = k.ursachen.filter((u) => u.thema_id === e.thema_id && (!lp || (u.ebene ?? 'bund') === 'land')).map((u) => u.id)
     const kopf: Json = { partei_id: p.partei_id, ...(lp ? { land: lp.land, landtagswahl: lp.landtagswahl } : {}), durchsucht_fuer: durchsucht }
     const bleiben = p.massnahmen.flatMap((m, j) => (verworfen(m, zuordnungVon(i, j)) ? [] : [j]))
+    const alt = e.nachtrag ? vorhanden(p) : -1
+    if (e.nachtrag && alt < 0) throw new Error(`Nachtrag: ${partei.kurzname} (${p.land ?? 'Bund'}) hat noch keinen Eintrag – erst das Thema erfassen`)
+    if (e.nachtrag && !bleiben.length) continue
     if (!bleiben.length) {
       // Treffer aller Suchbegriffe im Programm: Anhaltspunkt für die zweite Suche vor „geprueft“.
       const t = e.treffer?.programme.find((x) => x.partei_id === p.partei_id && x.land === p.land)
@@ -1343,6 +1390,16 @@ export function eintragen(k: Katalog, datei: Json, e: Erfassung, b: Bewertung, h
         ki_entwurf: true,
       }
     })
+    if (alt >= 0) {
+      const eintrag = abdeckung[alt]
+      const bisher = (eintrag.massnahmen as Json[] | undefined) ?? []
+      const schon = new Set(bisher.map((m) => zitatSchluessel(m.zitat)))
+      const neu = massnahmen.filter((m) => !schon.has(zitatSchluessel(m.zitat)))
+      if (!neu.length) continue
+      const { keine_massnahme: _k, massnahmen: _m, ...kopfAlt } = eintrag
+      abdeckung[alt] = { ...kopfAlt, massnahmen: [...bisher, ...neu] }
+      continue
+    }
     abdeckung.push({ ...kopf, massnahmen })
   }
   return { ...datei, ...(instrumente.length ? { instrumente } : {}), abdeckung }

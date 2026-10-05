@@ -331,7 +331,7 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 
 - Haltungen anlegen wie Themen in zwei Phasen: **A** Frage, Beschreibung, Zielkonflikte (ohne Blick in die Programme, Freigabe durch die Betreiberin), **B** Positionen aus allen sieben Programmen.
 - Positionen mit KI-Hilfe erfassen ist erlaubt (gekennzeichnet `ki_entwurf`), wie bei Maßnahmen. Belegprüfung durch die Betreiberin; Einordnung `ja`/`nein`/`teils` zusätzlich durch zwei Prüfende, die die Partei **nicht** sehen (blind wie bei Maßnahmen: Zitat ohne Parteinamen).
-- Später eigener Skill `/haltung-anlegen` analog zu `/thema-anlegen`.
+- Skills `/haltung-anlegen` (Phase A, KI-Freigabe für die Testphase) und `/haltung-erfassen` (Phase B: Fundstelle je Programm, Einordnung ohne Parteinamen durch einen zweiten Agenten), siehe `.claude/skills/README.md`.
 
 ## Tests
 
