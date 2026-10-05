@@ -33,7 +33,7 @@ Pro Maßnahme in der Datenbank:
 - `umsetzbarkeit` 0–3: rechtlich, finanziell, zeitlich realistisch?
 - optional `rollen_modifikator`: Auf- oder Abwertung je Rolle (z. B. Mietrecht für Mieter vs. Eigentümer), begründet.
 
-Punkte je Maßnahme = `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (innerhalb 0–3). Pro Ursache zählt die beste Maßnahme. Rundenpunkte = Summe über die zugeordneten Ursachen. Höhere Summe gewinnt die Runde (1 Punkt). Gleichstand: beide je 1 Punkt. Hat eine Partei keine Maßnahme zum Thema: 0.
+Punkte je Maßnahme = `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (innerhalb 0–3). Pro Ursache zählen die verschiedenen Lösungswege (je Instrument die beste Maßnahme, ohne Instrument je Maßnahme) mit abnehmendem Gewicht: bester voll, zweiter ½, dritter ¼ …, zusammen höchstens 9, auf eine Nachkommastelle (Begründung und Forschung: `docs/methode.md` → „Mehrere Lösungswege je Ursache“). Rundenpunkte = Summe über die zugeordneten Ursachen. Höhere Summe gewinnt die Runde (1 Punkt). Gleichstand: beide je 1 Punkt. Hat eine Partei keine Maßnahme zum Thema: 0.
 
 Ist ein Thema für eine der beiden Parteien noch **nicht erfasst** (Programm nicht vollständig ausgewertet und geprüft, Tabelle `abdeckung`), wird die Runde nicht gewertet – fehlende Daten dürfen keiner Partei einen Punkt kosten. Die Anzeige unterscheidet „keine Maßnahme zu diesen Ursachen“, „nichts zum Thema im Programm“ und „noch nicht erfasst“.
 
@@ -90,7 +90,7 @@ review_eingaben (id, created_at, grund, eingaben text[], thema_id, zusammenfassu
 
 runden (
   id, created_at, thema_id null, instrument_id null, haltung_id null, problem_text,
-  partei_a, partei_b, punkte_a, punkte_b,
+  partei_a, partei_b, punkte_a, punkte_b,   -- numeric(5,1)
   status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze (ohne Inhalt)
   freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
 )

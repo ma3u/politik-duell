@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { gesamtpunkte, gespraechsKarten, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
+import { punkteText } from '../logic/bewertung'
 import { forderungskarte } from '../logic/forderung'
 import { haltungskarte } from '../logic/haltung'
 import { useDaten, useLandName } from '../data/kontext'
@@ -97,7 +98,7 @@ export function Ende({
                     return (
                       <div key={e.partei.id} className="zf-partei" style={parteiStil(e.partei.farbe)}>
                         <span>
-                          {e.partei.kurzname}: {e.abdeckung ? `${e.punkte} P.` : '–'} {r.punkte[i] === 1 && (
+                          {e.partei.kurzname}: {e.abdeckung ? `${punkteText(e.punkte)} P.` : '–'} {r.punkte[i] === 1 && (
                             <>
                               <Kreuz className="kreuz-klein" />
                               <span className="sr-only">Punkt</span>

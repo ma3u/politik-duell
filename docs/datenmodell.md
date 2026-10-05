@@ -223,5 +223,5 @@ order by land nulls first, partei_id;
 
 1. Die KI ordnet das Problem Thema und Ursachen zu.
 2. `abdeckung` prüfen. Fehlt ein Eintrag für eine der Parteien, ist der Status `unvollstaendig` und es gibt keine Punkte.
-3. Je Ursache zählt die beste Maßnahme (`wirksamkeit × umsetzbarkeit`, mit Rollen-Modifikator). Bei gewähltem Land zählen die Landesprogramme, sonst der Bund.
+3. Je Ursache zählen die verschiedenen Lösungswege (je `instrument_id` die beste Maßnahme, ohne Instrument jede Maßnahme für sich; Punkte `wirksamkeit × umsetzbarkeit` mit Rollen-Modifikator), absteigend gewichtet mit 1, ½, ¼ …, höchstens 9, auf eine Nachkommastelle (`runden.punkte_a/b` sind `numeric(5,1)`). Bei gewähltem Land zählen die Landesprogramme, sonst der Bund.
 4. Die Summe über die Ursachen ergibt die Rundenpunkte. Wer mehr hat, bekommt 1 Punkt, bei Gleichstand beide 1 Punkt. Das Ergebnis steht in `runden`.

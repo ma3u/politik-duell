@@ -184,13 +184,20 @@ export function Methode() {
       <h2>4. Punkte in der Runde</h2>
       <ul>
         <li>
-          Pro Ursache zählt die beste Maßnahme einer Partei: Wirksamkeit × Umsetzbarkeit, also 0 bis 9 Punkte. So
-          bringt eine Maßnahme ohne Wirkung keine Punkte, auch wenn sie leicht umzusetzen wäre – und eine wirksame, die
-          sich nicht umsetzen lässt, ebenso wenig.
+          Jede Maßnahme bekommt Wirksamkeit × Umsetzbarkeit, also 0 bis 9 Punkte. So bringt eine Maßnahme ohne Wirkung
+          keine Punkte, auch wenn sie leicht umzusetzen wäre – und eine wirksame, die sich nicht umsetzen lässt, ebenso
+          wenig.
         </li>
         <li>
-          Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr aufschreibt, nicht wer
-          besser ansetzt.
+          Geht eine Partei eine Ursache auf mehreren Wegen an, zählt der beste Weg voll, der zweite zur Hälfte, der
+          dritte zu einem Viertel und so weiter – zusammen höchstens 9 Punkte. Beispiel: 6 + 4 × ½ + 2 × ¼ = 8,5. Mehrere
+          Maßnahmen zum selben Lösungsweg zählen nur einmal.
+        </li>
+        <li>
+          Warum so? Gute Politik besteht oft aus mehreren Instrumenten, die verschiedene Hebel eines Problems bewegen –
+          das soll zählen. Weitere Instrumente für dasselbe Problem überschneiden sich aber oft, und wer nur mehr
+          aufschreibt, soll nicht allein deshalb gewinnen. Deshalb zählt jeder weitere Weg weniger, und eine sehr gute
+          Einzelmaßnahme bleibt konkurrenzfähig. Die Gründe und die Forschung dazu stehen im Methodenpapier.
         </li>
         <li>
           Die Rundenpunkte sind die Summe über alle zugeordneten Ursachen. Parteien setzen oft an verschiedenen Ursachen
