@@ -1,0 +1,50 @@
+{
+  "id": 15,
+  "frage": "Soll es eine Steuer auf stark gezuckerte Getränke geben?",
+  "beschreibung": "Ob der Staat Getränke mit hohem Zuckergehalt zusätzlich besteuern soll, um Konsum und Zuckeraufnahme zu senken, oder ob es bei den bisherigen Steuern und freiwilligen Maßnahmen bleibt.",
+  "verwandte_themen": [
+    1
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer eine Steuer auf stark gezuckerte Getränke will, nennt den Gesundheitsschutz: Eine Auswertung von Studien aus mehreren Ländern (2019) fand, dass solche Steuern Käufe und Aufnahme gezuckerter Getränke gesenkt haben.",
+      "quelle_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9285619/"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer die Steuer befürwortet, nennt zudem den Anreiz für Hersteller, Rezepturen zu ändern: In Großbritannien ging der durchschnittliche Zuckergehalt von Softdrinks laut einer Fachperson im Science Media Center (2026) um gut 30 Prozent zurück.",
+      "quelle_url": "https://www.sciencemediacenter.de/angebote/steuer-fuer-getraenke-mit-zucker-oder-suessstoffen-26213"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer die Steuer ablehnt, nennt die Belastung der Haushalte: Eine Übersichtsarbeit (2016) fand die Steuer durchgehend regressiv, wenn auch in geringem Maß: Haushalte mit niedrigem Einkommen zahlten 0,10 bis 1,0 Prozent des Jahreseinkommens, mit hohem 0,03 bis 0,60 Prozent.",
+      "quelle_url": "https://www.cambridge.org/core/journals/public-health-nutrition/article/impact-of-a-tax-on-sugarsweetened-beverages-according-to-socioeconomic-position-a-systematic-review-of-the-evidence/587CFDC392441741771A93E7F652E222"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will eine Steuer oder Abgabe auf zuckerhaltige Getränke (auch gestaffelt nach Zuckergehalt) einführen.",
+    "teils": "Will die Steuer nur unter Bedingungen, etwa als Prüfauftrag, nur für bestimmte Produkte oder zusammen mit anderen Maßnahmen wie Kennzeichnung oder freiwilliger Reduktion.",
+    "nein": "Lehnt eine Steuer auf gezuckerte Getränke ab oder setzt ausdrücklich auf freiwillige Maßnahmen statt Steuer."
+  },
+  "suchbegriffe": [
+    "zuckersteuer",
+    "zuckerabgabe",
+    "zuckerhaltige getränke",
+    "gezuckerte getränke",
+    "softdrink",
+    "limonadensteuer",
+    "zuckergesüßt",
+    "herstellerabgabe"
+  ],
+  "schlagwoerter": [
+    "zuckersteuer",
+    "limo",
+    "softdrinks",
+    "gesundheit"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}

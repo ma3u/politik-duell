@@ -1,0 +1,48 @@
+{
+  "id": 18,
+  "frage": "Soll Deutschland wieder Erdgas aus Russland beziehen?",
+  "beschreibung": "Ob Deutschland Erdgas aus Russland wieder importieren soll, etwa per Pipeline oder als Flüssigerdgas, oder ob es weiter darauf verzichtet und andere Lieferländer nutzt.",
+  "verwandte_themen": [
+    3
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer wieder russisches Gas beziehen will, nennt die wirtschaftlichen Kosten eines Wegfalls: Die Gemeinschaftsdiagnose rechnete 2022 für einen abrupten Lieferstopp mit einem aufgelaufenen Produktionsverlust von 220 Milliarden Euro bis Ende 2023.",
+      "quelle_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9120345/"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer weiter auf russisches Gas verzichten will, nennt die Abhängigkeit: Russland lieferte 2021 laut Bundesnetzagentur 52 Prozent der deutschen Gasimporte, 2022 fielen die Lieferungen über Nord Stream 1 bis September auf null, und der Großhandelspreis vervielfachte sich.",
+      "quelle_url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2023/20230106_RueckblickGasversorgung.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will Erdgas aus Russland wieder beziehen, etwa nach einem Kriegsende, oder will das EU-Importverbot aufheben oder lockern.",
+    "teils": "Will russisches Gas nur unter Bedingungen oder erst nach einem Friedensschluss wieder zulassen, oder will es nur über bestimmte Wege oder Mengen beziehen.",
+    "nein": "Will keine Erdgasimporte aus Russland, trägt den Ausstieg mit oder fordert ihn ausdrücklich."
+  },
+  "suchbegriffe": [
+    "russisch",
+    "russland",
+    "nord stream",
+    "pipelinegas",
+    "gasimport",
+    "erdgasimport",
+    "lng",
+    "gaslieferung",
+    "energiepartnerschaft",
+    "sanktionen"
+  ],
+  "schlagwoerter": [
+    "russisches gas",
+    "erdgas",
+    "nord stream",
+    "gasimporte",
+    "energiepreise"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}

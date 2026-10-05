@@ -1,0 +1,45 @@
+{
+  "id": 10,
+  "frage": "Soll eine Vermögensteuer eingeführt werden?",
+  "beschreibung": "Ob große private Vermögen jährlich besteuert werden sollen, oder ob es bei der heutigen Besteuerung ohne laufende Vermögensteuer bleibt.",
+  "verwandte_themen": [
+    11
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer eine Vermögensteuer will, nennt die ungleiche Verteilung: Laut DIW (Wochenbericht 2021) hat die untere Hälfte der Bevölkerung keine nennenswerten Vermögen, die reichsten zehn Prozent besitzen 67 Prozent.",
+      "quelle_url": "https://www.diw.de/de/diw_01.c.831678.de/publikationen/wochenberichte/2021_50_1/grunderbe_und_vermoegensteuern_koennen_die_vermoegensungleichheit_verringern.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer eine Vermögensteuer ablehnt, nennt Ausweichreaktionen: Laut Wirtschaftsdienst (2026) wird ein Minderaufkommen von bis zu 30 Prozent erwartet; für das Wachstum werden Einbußen von 0,2 bis 0,5 Prozentpunkten jährlich genannt.",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/1/beitrag/fuer-und-wider-der-wiederbelebung-der-vermoegensteuer.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will eine laufende Steuer auf Nettovermögen (Vermögensteuer) neu erheben, auch wenn sie nur auf sehr hohe Vermögen oder Milliardäre zielt.",
+    "teils": "Will Vermögen stärker belasten, aber nicht über eine allgemeine Vermögensteuer, etwa nur über Erbschaft- oder Schenkungsteuer, oder macht die Einführung von Bedingungen abhängig.",
+    "nein": "Will keine Vermögensteuer einführen oder lehnt sie ausdrücklich ab."
+  },
+  "suchbegriffe": [
+    "vermögensteuer",
+    "vermögenssteuer",
+    "vermögensabgabe",
+    "reichensteuer",
+    "millionärssteuer",
+    "milliardärssteuer",
+    "superreiche",
+    "vermögende"
+  ],
+  "schlagwoerter": [
+    "vermoegensteuer",
+    "vermoegenssteuer",
+    "reichensteuer",
+    "steuergerechtigkeit"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}

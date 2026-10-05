@@ -1,0 +1,50 @@
+{
+  "id": 12,
+  "frage": "Soll es einen gesetzlichen Mindestlohn geben?",
+  "beschreibung": "Ob der Staat eine Untergrenze für den Stundenlohn per Gesetz festlegt oder ob Löhne allein zwischen Arbeitgebern, Beschäftigten und Tarifparteien ausgehandelt werden.",
+  "verwandte_themen": [
+    11,
+    5
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer einen gesetzlichen Mindestlohn will, nennt den Schutz vor sehr niedrigen Löhnen: Von der Erhöhung auf 13,90 Euro zum 1. Januar 2026 waren laut Statistischem Bundesamt bis zu 4,8 Millionen Jobs betroffen.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_025_62.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer ihn will, verweist zudem darauf, dass nach der Erhöhung auf 12 Euro im Oktober 2022 laut IAB-Betriebsbefragung nur 2,4 % aller Betriebe Entlassungen meldeten.",
+      "quelle_url": "https://iab-forum.de/mindestlohnerhoehung-auf-12-euro-nur-wenige-betriebe-reagierten-eigenen-angaben-zufolge-mit-entlassungen/"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer einen gesetzlichen Mindestlohn ablehnt, nennt das Risiko für Arbeitsplätze: Bei 14 Euro erwarteten laut IAB-Befragung (2024) rund 19 % der Betriebe weniger Beschäftigung, bei Betrieben mit Löhnen nahe dem damaligen Mindestlohn fast ein Drittel.",
+      "quelle_url": "https://iab.de/presseinfo/bei-14-euro-mindestlohn-erwartet-ein-fuenftel-der-betriebe-einen-beschaeftigungsrueckgang/"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will einen gesetzlichen Mindestlohn beibehalten oder einführen, auch mit höherer Untergrenze.",
+    "teils": "Will ihn nur mit Einschränkungen, etwa mit Ausnahmen, regionalen oder branchenbezogenen Unterschieden, oder will die Höhe ganz den Tarifparteien überlassen, ohne ihn abzuschaffen.",
+    "nein": "Will keinen gesetzlichen Mindestlohn und die Löhne ohne staatliche Untergrenze aushandeln lassen."
+  },
+  "suchbegriffe": [
+    "mindestlohn",
+    "lohnuntergrenze",
+    "mindestlöhne",
+    "niedriglohn",
+    "mindestlohnkommission",
+    "tarifbindung",
+    "tarifautonomie",
+    "lohnuntergrenzen"
+  ],
+  "schlagwoerter": [
+    "mindestlohn",
+    "lohn",
+    "niedriglohn"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}

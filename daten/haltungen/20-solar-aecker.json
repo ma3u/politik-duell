@@ -1,0 +1,46 @@
+{
+  "id": 20,
+  "frage": "Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen?",
+  "beschreibung": "Ob Freiflächen-Photovoltaik auf landwirtschaftlich genutzten Flächen wie Äckern zulässig sein soll oder ob solche Flächen der Landwirtschaft vorbehalten bleiben und Solaranlagen auf anderen Flächen gebaut werden.",
+  "verwandte_themen": [
+    3
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer Solaranlagen auf Ackerflächen zulassen will, nennt den hohen Stromertrag je Fläche: Neue Photovoltaikanlagen erzeugen pro Hektar und Jahr rund 800 MWh, Mais-Biogasanlagen im Mittel 20 MWh.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/photovoltaik/photovoltaik-freiflaechenanlagen"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer Solaranlagen auf Ackerflächen begrenzen will, nennt die Nahrungsmittelproduktion: Ackerflächen mit hoher Bodengüte sollten in der Regel nicht für Freiflächenanlagen genutzt werden.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/photovoltaik/photovoltaik-freiflaechenanlagen"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will Freiflächen-Photovoltaik auf Ackerflächen grundsätzlich erlauben oder ausdrücklich erleichtern, ohne sie auf bestimmte Flächen zu beschränken.",
+    "teils": "Will Solaranlagen auf Äckern nur unter Bedingungen zulassen, etwa nur auf schlechten Böden, als Agri-PV mit weiterer Nutzung oder mit Obergrenzen, oder gibt Dächern und anderen Flächen den Vorrang.",
+    "nein": "Will Solaranlagen auf Ackerflächen ausschließen oder deutlich stärker beschränken und Ackerland der Landwirtschaft vorbehalten."
+  },
+  "suchbegriffe": [
+    "freifläch",
+    "photovoltaik",
+    "agri-pv",
+    "agrar-pv",
+    "solarpark",
+    "ackerland",
+    "ackerfläch",
+    "landwirtschaftliche fläch"
+  ],
+  "schlagwoerter": [
+    "solaranlagen",
+    "solarparks",
+    "photovoltaik",
+    "ackerflaechen",
+    "agri-pv"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}

@@ -135,3 +135,37 @@ Für Haltung 1 (Tempolimit) und 2 (Zuwanderung) hat die Betreiberin am 4. 10. 20
 | Belege (Betreiberin) | alle 14 Positionen korrekt belegt – `belege_geprueft: 2026-10-04`; bei „Keine Aussage“ (BSW, Tempolimit) mit Vermerk zur zweiten Suche |
 
 Damit sind die Positionen beider Haltungen `geprueft: true`. `ki_entwurf` bleibt als Herkunftsangabe stehen. Sobald der Seed in Supabase liegt, erscheinen die Karten ohne Hinweis auf einen KI-Entwurf – im Spiel aber weiterhin nur, wo die App freigeschaltet ist (geschlossene Testphase, `VITE_OFFEN`). Haltung 3 hat keine Positionen und bleibt zurückgestellt.
+
+## Weitere Haltungen (KI-Entwurf)
+
+Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Befragung (`/liste-einordnen`, Zeilen nur als Art „haltung“ bestätigt), je Haltung ein Agent `haltung-recherche` ohne Blick in Programme (`npm run phase-a` aktiv). Alle mit KI-Freigabe für die geschlossene Testphase. Die Zielkonflikt-Quellen sind Webseiten ohne Seitenzahl; die Zahlen stammen aus dem Abruf und werden vor einer Prüfung am Original gegengelesen.
+
+| ID | Frage | Verwandte Themen | Quellen der Zielkonflikte | Freigabe |
+| --- | --- | --- | --- | --- |
+| 4 | Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben? | 3 Energiepreise | bundesnetzagentur.de, smard.de | KI-Freigabe 2026-10-05 |
+| 5 | Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben? | 3 Energiepreise | umweltbundesamt.de, destatis.de | KI-Freigabe 2026-10-05 |
+| 6 | Soll Gendersprache in Behörden und Schulen verboten werden? | 4 Schule | rechtschreibrat.com, fu-berlin.de, antidiskriminierungsstelle.gov.de | KI-Freigabe 2026-10-05 |
+| 7 | Soll Deutschland die Ukraine weiter mit Waffen beliefern? | 3 Energiepreise | kielinstitut.de, bundestag.de, swp-berlin.org | KI-Freigabe 2026-10-05 |
+| 8 | Soll der gemeinsame Unterricht von Kindern mit und ohne Behinderung an Regelschulen Vorrang vor Förderschulen haben? | 4 Schule | link.springer.com, bertelsmann-stiftung.de | KI-Freigabe 2026-10-05 |
+| 9 | Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden? | 11 Preise und Löhne | bundestag.de, umweltbundesamt.de, germany.representation.ec.europa.eu | KI-Freigabe 2026-10-05 |
+| 10 | Soll eine Vermögensteuer eingeführt werden? | 11 Preise und Löhne | diw.de, wirtschaftsdienst.eu | KI-Freigabe 2026-10-05 |
+| 11 | Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben? | 9 Sicherheit | bundestag.de, ifo.de | KI-Freigabe 2026-10-05 |
+| 12 | Soll es einen gesetzlichen Mindestlohn geben? | 11 Preise und Löhne, 5 Arbeitsplätze | destatis.de, iab-forum.de, iab.de | KI-Freigabe 2026-10-05 |
+| 13 | Soll die Schuldenbremse im Grundgesetz bestehen bleiben? | 5 Arbeitsplätze | bundestag.de, boeckler.de | KI-Freigabe 2026-10-05 |
+| 14 | Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden? | 7 Rente | bundesbank.de, wirtschaftsdienst.eu | KI-Freigabe 2026-10-05 |
+| 15 | Soll es eine Steuer auf stark gezuckerte Getränke geben? | 1 Arzttermine | pmc.ncbi.nlm.nih.gov, sciencemediacenter.de, cambridge.org | KI-Freigabe 2026-10-05 |
+| 16 | Soll Deutschland Mitglied der NATO bleiben? | 9 Sicherheit | bruegel.org, sipri.org | KI-Freigabe 2026-10-05 |
+| 17 | Soll die Zahlung der historisch begründeten Staatsleistungen an die Kirchen beendet werden? | 11 Preise und Löhne | bundestag.de | KI-Freigabe 2026-10-05 |
+| 18 | Soll Deutschland wieder Erdgas aus Russland beziehen? | 3 Energiepreise | pmc.ncbi.nlm.nih.gov, bundesnetzagentur.de | KI-Freigabe 2026-10-05 |
+| 19 | Soll Deutschland den Euro als Währung behalten? | 5 Arbeitsplätze | bertelsmann-stiftung.de, bpb.de | KI-Freigabe 2026-10-05 |
+| 20 | Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-05 |
+| 21 | Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | 6 Zuwanderung und Integration | bamf.de, bundestag.de | KI-Freigabe 2026-10-05 |
+| 22 | Soll Kirchenasyl in Deutschland weiterhin möglich sein? | 6 Zuwanderung und Integration | experteninitiative-religionspolitik.de, mediendienst-integration.de | KI-Freigabe 2026-10-05 |
+| 23 | Soll Eltern erlaubt werden, ihre Kinder zu Hause statt in der Schule zu unterrichten? | 4 Schule | deutsches-schulportal.de, bundesverfassungsgericht.de | KI-Freigabe 2026-10-05 |
+
+**Ausgelassen (mit Grund):**
+
+- *Militärische Neutralität* („Soll Deutschland sich in internationalen Konflikten militärisch neutral verhalten?“): lässt sich nicht von der NATO-Frage (ID 16) trennen und würde dieselbe Wertfrage doppelt abbilden.
+- *Kulturförderung für deutsche Kultur und Heimat*: Die geöffneten Quellen tragen keine der beiden Seiten als Zielkonflikt; Frage zurückgestellt.
+- *Staatsangehörigkeit durch Geburt in Deutschland*: Für die Nein-Seite fand sich keine lesbare unabhängige Quelle zum Geburtsrecht (nur Kritik an den Einbürgerungsfristen); mit einer Seite schwächer belegt wäre die Karte nicht fair. Zurückgestellt, bis eine Quelle vorliegt.
+- Fragen, deren Wortlaut die Recherche geändert hat: Windkraft („vorantreiben“ statt „stoppen“, weil „stoppen“ einen Eingriff nahelegt), Wehrdienst („verpflichtender Wehrdienst“, weil seit 2026 ein freiwilliger Dienst gilt), Inklusion („Vorrang vor Förderschulen“), Renteneintrittsalter („über 67 hinaus“), Hausunterricht, Kirchenzahlungen („Staatsleistungen“), Kirchenasyl, Bleiberecht.

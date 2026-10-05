@@ -1,0 +1,45 @@
+{
+  "id": 4,
+  "frage": "Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben?",
+  "beschreibung": "Ob Bund und Länder den Ausbau der Windkraft an Land weiter mit dem Ziel eines wachsenden Anteils im Strommix fördern sollen oder ob dieser Ausbau begrenzt oder beendet werden soll.",
+  "verwandte_themen": [
+    3
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer den Ausbau vorantreiben will, nennt Stromversorgung und Klimaziele: Das gesetzliche Ziel von 115 Gigawatt bis 2030 erfordert laut Bundesnetzagentur im Schnitt 9,4 Gigawatt Zubau pro Jahr; 2025 waren es 4,6 Gigawatt.",
+      "quelle_url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260108_EEG.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer den Ausbau begrenzen oder stoppen will, nennt die Netzkosten: Die Kosten für das Netzengpassmanagement stiegen laut Bundesnetzagentur (SMARD) im dritten Quartal 2025 auf rund 667 Mio. Euro (Vorjahresquartal: 608 Mio. Euro).",
+      "quelle_url": "https://www.smard.de/page/home/topic-article/444/219200/volumen-und-kosten-gestiegen"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will den Ausbau der Windkraft an Land weiter vorantreiben, etwa durch höhere oder gleichbleibende Ausbauziele, mehr Flächen oder schnellere Genehmigungen.",
+    "teils": "Will den Ausbau nur unter Bedingungen oder in Teilen: etwa bei Netzausbau, Abständen, Artenschutz oder Wirtschaftlichkeit, Ausbau nur an bestimmten Standorten, oder Technologieoffenheit statt fester Ausbauziele.",
+    "nein": "Will den Ausbau der Windkraft an Land nicht weiter vorantreiben: stoppen, beenden, Förderung streichen oder neue Anlagen faktisch ausschließen."
+  },
+  "suchbegriffe": [
+    "windkraft",
+    "windenergie",
+    "windrad",
+    "windenergieanlage",
+    "onshore",
+    "windräder",
+    "abstandsregel",
+    "ausbauziel"
+  ],
+  "schlagwoerter": [
+    "windkraft",
+    "windraeder",
+    "windenergie",
+    "energiewende"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}

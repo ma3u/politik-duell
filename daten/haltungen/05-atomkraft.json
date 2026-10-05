@@ -1,0 +1,50 @@
+{
+  "id": 5,
+  "frage": "Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben?",
+  "beschreibung": "Ob Deutschland die Kernenergie zur Stromerzeugung wieder nutzen soll, also neue Anlagen bauen oder stillgelegte reaktivieren, oder ob es beim Atomausstieg bleibt.",
+  "verwandte_themen": [
+    3
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer Atomkraftwerke wieder betreiben will, nennt die geringen Treibhausgasemissionen der Kernenergie: Das Umweltbundesamt beziffert sie über den gesamten Lebenszyklus auf 5 bis 15 Gramm CO₂-Äquivalente je Kilowattstunde.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/energieversorgung/kernenergie"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer Atomkraftwerke wieder betreiben will, nennt außerdem die Versorgungssicherheit und den Gasverbrauch: 2025 stieg die Stromerzeugung aus Erdgas um 10,2 % auf 70,6 Milliarden Kilowattstunden, ein Höchstwert.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/03/PD26_073_43312.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer die Rückkehr zur Atomkraft ablehnt, nennt die Kosten: Laut Umweltbundesamt kostete Strom aus neuen Kernkraftwerken in Europa 2020 etwa 15,0 bis 19,2 Cent je Kilowattstunde, Onshore-Wind 3,6 Cent und Solar 5,3 Cent; das Amt nennt zudem Bauzeiten von etwa acht Jahren.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/energieversorgung/kernenergie"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will Atomkraftwerke in Deutschland wieder betreiben, etwa durch Reaktivierung stillgelegter Anlagen, Laufzeitverlängerung oder Neubau, und ändert dafür den Atomausstieg.",
+    "teils": "Will die Kernenergie nur eingeschränkt oder unter Bedingungen öffnen, zum Beispiel Forschung, neue Reaktortypen oder eine spätere Prüfung, ohne den Ausstieg klar aufzuheben.",
+    "nein": "Hält am Atomausstieg fest oder lehnt die Kernenergie zur Stromerzeugung in Deutschland ab."
+  },
+  "suchbegriffe": [
+    "atomkraft",
+    "kernkraft",
+    "kernenergie",
+    "atomausstieg",
+    "kernkraftwerk",
+    "atomkraftwerk",
+    "reaktor",
+    "laufzeitverlaengerung"
+  ],
+  "schlagwoerter": [
+    "atomkraft",
+    "kernkraft",
+    "atomausstieg",
+    "strom"
+  ],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  }
+}
