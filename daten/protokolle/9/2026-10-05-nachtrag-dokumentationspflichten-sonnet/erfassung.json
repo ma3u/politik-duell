@@ -1,0 +1,1311 @@
+{
+  "thema_id": 9,
+  "nachtrag": {
+    "forderung": "Dokumentationspflichten der Polizei bei Kontrollen verringern",
+    "richtungen": {
+      "902": [
+        "Dokumentationspflichten der Polizei bei Kontrollen verringern",
+        "Kontrollen dokumentieren und nachvollziehbar machen"
+      ]
+    }
+  },
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Keine Kennzeichnungspflicht für Bundespolizisten und keine Pflicht zur Kontrollquittung bei Kontrollen, um die Polizei von Bürokratie freizuhalten.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Kontrollquittung",
+          "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab. Wir verpflichten sie auch nicht, anlässlich einer Kontrolle eine Kontrollquittung auszustellen.",
+          "seite": 40
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Berichts- und Dokumentationspflichten der Polizei stark zurückfahren und überarbeiten",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bürokratieabbau bei der Polizei",
+          "zitat": "Polizeiarbeit darf nicht durch überbordende Bürokratie ausgebremst werden. Die Berichts- und Dokumentationspflichten werden wir daher drastisch zurückfahren und überarbeiten.",
+          "seite": 8
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Durch Technik, Automatisierung und KI den Zeitanteil bürokratischer Routineprozesse im Polizeidienst deutlich verringern, damit mehr Zeit für Prävention und Strafverfolgung bleibt.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bürokratieabbau bei der Polizei",
+          "zitat": "Mit einer stets an die zeitgemäßen Erfordernisse angepassten technischen Ausstattung auf dem höchsten technischen Standard und durch den Einsatz technischer Automatisierung und Künstlicher Intelligenz werden wir den Zeitanteil bürokratischer Routineprozesse im Dienst deutlich verringern, damit Polizistinnen und Polizisten den Fokus auf Prävention und Strafverfolgung legen können.",
+          "seite": 28
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten der Polizei: Sicherheitskapitel (S. 6-8, Polizei, Rechtsrahmen, Bodycam), Rechtsstaat-Kapitel (S. 57-58) und alle Fundstellen (S. 41, 42, 49, 70) gelesen; nichts zu Dokumentationspflichten, Kontrolldokumentation oder Kennzeichnungspflicht bei der Polizei."
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten/Kontrolldokumentation: Kapitel 'Respekt, Sicherheit und Schutz vor Gewalt' (S. 42-43) gelesen, Fundstellen S. 11, 18, 20, 50, 55 geprüft; nichts zu Dokumentation, Kontrollquittung oder Entlastung der Polizei von Dokumentationspflichten."
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Sicherheit (S. 29-32, v. a. S. 30-31 Freiheitsrechte schützen, Bürgernahe Polizei) und Fundstellen S. 12, 30, 50, 56, 63 gelesen; keine Zusage zu weniger Dokumentationspflichten oder zur Dokumentation von Kontrollen (Kontrollquittung, Kennzeichnung)."
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Ursache 902 (Dokumentationspflichten bei Kontrollen verringern / Kontrollen dokumentieren): Abschnitt Sicherheit und Polizei (S. 46-48) gelesen, Fundstelle S. 63 und Volltextsuche nach Kontrolle, Dokumentation, Kennzeichnung, Bodycam, Bürokratie geprüft; keine Zusage zu Kontrolldokumentation, Kontrollquittung oder Kennzeichnungspflicht."
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Bürokratische Belastungen der Polizei werden reduziert, damit sich Beschäftigte auf Kernaufgaben konzentrieren können.",
+          "ursachen_ids": [
+            902
+          ],
+          "zitat": "Bürokratische Belastungen werden reduziert, damit Polizistinnen und Polizisten sich auf ihre Kernaufgaben konzentrieren können.",
+          "seite": 29
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 902,
+          "name": "Bürokratieabbau bei der Polizei",
+          "seite": 29
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "bürokratische belastungen",
+          "ursache": 902,
+          "richtung": "Dokumentationspflichten der Polizei bei Kontrollen verringern"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Ticketsystem für polizeiliche Kontrollen, das die Gründe der Kontrolle darlegt und polizeiliches Handeln transparenter macht",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Kontrollquittung",
+          "zitat": "Mit einem Ticketsystem für Kontrollen, das die Gründe für Kontrollen darlegt, wollen wir polizeiliches Handeln transparenter machen.",
+          "seite": 134
+        },
+        {
+          "beschreibung": "Anonymisierte Kennzeichnungspflicht für die Bundespolizei",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bodycams und Kennzeichnungspflicht",
+          "zitat": "Zudem führen wir für die Bundespolizei eine anonymisierte Kennzeichnungspflicht ein.",
+          "seite": 134
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Digitale Kontrollquittung, mit der jede kontrollierte Person über den Anlass der Polizeikontrolle informiert wird.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Kontrollquittung",
+          "zitat": "Um dem entgegenzuwirken, möchten wir eine digitale Kontrollquittung einführen, mit der jede Person über den Anlass der Kontrolle informiert werden kann. Das schafft Transparenz und Nachvollziehbarkeit in Verbindung mit polizeilichem Handeln.",
+          "seite": 228
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Numerische Kennzeichnungspflicht für Polizeibeamte auf alle Einsatzlagen ausweiten, damit polizeiliches Handeln nachvollziehbar wird.",
+          "ursachen_ids": [
+            902
+          ],
+          "zitat": "Wir garantieren friedliche Demonstrationen und fordern: • die numerische Kennzeichnungspflicht auf alle Einsatzlagen und alle eingesetzten Polizeibeamtinnen und -beamte auszuweiten.",
+          "seite": 78
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Kontrolldokumentation: Kapitel 2.4 Innere Sicherheit (S. 41-43) und Fundstellen S. 43, 72 gelesen; keine Zusage, Dokumentationspflichten bei Polizeikontrollen zu verringern oder Kontrollen (Quittung, Beleg) zu dokumentieren."
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Ursache 902 (Dokumentationspflichten der Polizei verringern / Kontrollen dokumentieren): Kapitel Innere Sicherheit (S. 22-25) und Fundstellen S. 15, 18, 30, 34, 45 gelesen; die Fundstellen betreffen Steuer, Mindestlohn, Elterngeld, Pflege und Landwirtschaft, nichts zu Polizeikontrollen, Kontrollquittung oder Kennzeichnung."
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Innen, Recht und saubere Stadt' (S. 66-68) und Fundstellen S. 8, 20, 29, 116 gelesen; keine Zusage zu Dokumentationspflichten bei Polizeikontrollen, Kontrollquittung, Kennzeichnung oder Nachvollziehbarkeit von Kontrollen."
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Polizei von Bürokratie entlasten: Dokumentationspflichten und interne Verwaltungsaufgaben deutlich reduzieren und auf Verwaltungsangestellte übertragen.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bürokratieabbau bei der Polizei",
+          "zitat": "Wir Freie Demokraten werden: […] die Polizei von übermäßiger Bürokratie entlasten, damit sie ihren Dienst auf der Straße und nicht hinter Bildschirmen verrichtet. Dokumentationspflichten und innerbehördliche Verwaltungsaufgaben wollen wir deutlich reduzieren und auf Verwaltungsangestellte übertragen.",
+          "seite": 133
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Sicherheit/Polizei (S. 47-48) und Fundstellen S. 7, 8, 17, 24, 28, 34, 44, 51, 64 gelesen bzw. eingeordnet; keine Zusage zu Dokumentationspflichten der Polizei bei Kontrollen oder Kontrollquittung/Kennzeichnung.",
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "seiten": [
+            7,
+            8,
+            17,
+            24,
+            28,
+            34,
+            44,
+            47,
+            48,
+            51,
+            64
+          ],
+          "grund": "Treffer zu Dokumentationspflichten betreffen Wirtschaft, Landwirtschaft, Kita, Schule, Forschung, Ehrenamt, Pflege; im Polizeikapitel (S. 47-48) keine Zusage zu Dokumentation von Kontrollen."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten bei Kontrollen: Kapitel Innere Sicherheit (S. 118-125) und Fundstellen S. 4, 14, 34, 75, 112 gelesen bzw. eingeordnet; die Fundstellen betreffen Gesundheitswesen, Mittelstand, Landwirtschaft und Pflege, nichts zu Polizeikontrollen oder deren Dokumentation.",
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "seiten": [
+            4,
+            14,
+            34,
+            75,
+            112,
+            120
+          ],
+          "grund": "Fundstellen gehören zu anderen Bereichen (Gesundheit, Mittelstand, Landwirtschaft, Pflege); im Kapitel Innere Sicherheit keine Zusage zu Dokumentationspflichten oder Kontrolldokumentation der Polizei."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Innere Sicherheit, Justiz & Datenschutz' (S. 12-16) und Fundstellen S. 69, 71, 72 gelesen; keine Zusage, Dokumentations- oder Berichtspflichten der Polizei bei Kontrollen zu verringern, und keine Kontrolldokumentation (Quittung, Kennzeichnung). Die Treffer betreffen nur das Gesundheitswesen.",
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "seiten": [
+            12,
+            13,
+            15,
+            69,
+            71,
+            72
+          ],
+          "grund": "Treffer S. 69, 71, 72 stammen aus dem Gesundheitskapitel (Dokumentationspflicht bei Ärzten/Pflege, Entbürokratisierung); im Sicherheitskapitel keine Zusage zu Dokumentationspflichten der Polizei."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Die im Landespolizeigesetz (SOG) beschlossenen Dokumentationspflichten für die Polizei sollen sofort zurückgenommen werden.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bürokratieabbau bei der Polizei",
+          "zitat": "Wir treten unwahren Behauptungen und Unterstellungen wie z.B. pauschalen Rassismusvorwürfen in Richtung der Polizei öffentlich entgegen und werden die durch Rot-Rot beschlossenen Dokumentationspflichten im SOG in Regierungsverantwortung sofort zurücknehmen.",
+          "seite": 38
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten bei Kontrollen: Kapitel „Innere Sicherheit“ (S. 104–114) und Anfang „Justizwesen“ (S. 118–120) gelesen, dazu die drei Fundstellen S. 83, 145, 244 (Schule, Wirtschaft, Pflege). Keine Zusage zu Dokumentation oder Kontrollnachweisen der Polizei."
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeibeamte; Einsatzprotokolle und Polizeivideos werden zur Aufklärung bei Treuhandstellen aufbewahrt.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bodycams und Kennzeichnungspflicht",
+          "zitat": "Wir fordern eine individuelle Kennzeichnungspflicht von Politist*innen. Es muss selbstverständlich werden, dass Polizeibeamt*innen den Bürger*innen individuell erkennbar gegenübertreten.",
+          "seite": 49
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten: Fundstellen S. 25, 75, 87, 134, 313 (Entbürokratisierung anderer Bereiche, nicht Polizei), S. 270 und S. 290 sowie Abschnitt Polizei S. 289-291 gelesen. Keine Zusage, Dokumentationspflichten der Polizei zu verringern; die Kontrollquittung (S. 290) steht in der bereits erfassten Stelle."
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen, sodass Kontrollen nachvollziehbar werden.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Kontrollquittung",
+          "zitat": "Den Polizeibeauftragten zu einer Anlaufstelle für „alle“ machen und Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen.",
+          "seite": 20
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeikräfte und automatischer Bodycam-Einsatz bei Schusswaffengebrauch und Tasern, damit Einsätze nachvollziehbar sind.",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Bodycams und Kennzeichnungspflicht",
+          "zitat": "Die individuelle Kennzeichnungspflicht und der automatische Einsatz von Bodycams beim Schusswaffengebrauch oder beim Einsatz von Tasern schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+          "seite": 129
+        }
+      ],
+      "nicht_erfasst": []
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Ursache 902 (Dokumentationspflichten bei Polizeikontrollen): Sicherheitskapitel S. 35-36 gelesen, Fundstellen S. 12, 18, 40 gelesen; nichts zu Kontrolldokumentation, Kontrollquittung oder Kennzeichnungspflicht der Polizei."
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Kontrolldokumentation: Kapitel Innere Sicherheit (S. 38-41) und Fundstelle S. 29 gelesen; keine Zusage zu Dokumentationspflichten, Kontrollquittung, Kennzeichnungspflicht oder Nachvollziehbarkeit von Kontrollen."
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten bei Kontrollen: Kapitel 6.1 Innere Sicherheit (S. 67-72) gelesen, Volltextsuche nach Dokumentation, Bürokratie, Kontrollquittung, Kennzeichnung, Bodycam ohne einschlägigen Treffer; nichts zu Kontrolldokumentation oder Bürokratieabbau bei der Polizei."
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag Lösungsweg Dokumentationspflichten bei Kontrollen: Kapitel Sicherheit/Polizei/Justiz (S. 67-72) und Fundstellen S. 77, 82 gelesen; nichts zu Kontrolldokumentation, Kontrollquittung, Kennzeichnungspflicht oder Abbau polizeilicher Dokumentationspflichten."
+    }
+  ],
+  "suchbegriffe": {
+    "902": {
+      "Dokumentationspflichten der Polizei bei Kontrollen verringern": [
+        "dokumentationspflicht",
+        "kontrolldokumentation",
+        "dokumentation von kontrollen",
+        "bürokratie bei der polizei",
+        "bürokratische belastung der polizei",
+        "bürokratieabbau bei der polizei",
+        "verwaltungsaufwand der polizei",
+        "entbürokratis",
+        "bürokratische belastung"
+      ],
+      "Kontrollen dokumentieren und nachvollziehbar machen": [
+        "kontrollquittung",
+        "kontrollbeleg",
+        "kennzeichnungspflicht",
+        "racial profiling",
+        "rassistische kontrollen",
+        "anlassunabhängige kontrollen dokumentier"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "71d84d7d932caa1b9296daf7e4d9f7fbfca9166784524d96571aa9226effea31",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 2,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 0,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 1,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 3,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 6,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 4,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 2,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 4,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 4,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 1,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 2,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 1
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 1,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 2,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 2,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 3,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 1,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 2,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 0,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 2,
+              "racial profiling": 1,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 2,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 4,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 3,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 2,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 2,
+              "bürokratische belastung": 1
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 4,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 6,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 6,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 5,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 2,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 3,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 1,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 2,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 5,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 2,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 1,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 2,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 2,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 5,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 1,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 2,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 0,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 1,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 0,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 1,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 1,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "905": {},
+          "906": {},
+          "907": {},
+          "908": {},
+          "909": {},
+          "911": {}
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 1,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 0,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "901": {},
+          "902": {
+            "Dokumentationspflichten der Polizei bei Kontrollen verringern": {
+              "dokumentationspflicht": 0,
+              "kontrolldokumentation": 0,
+              "dokumentation von kontrollen": 0,
+              "bürokratie bei der polizei": 0,
+              "bürokratische belastung der polizei": 0,
+              "bürokratieabbau bei der polizei": 0,
+              "verwaltungsaufwand der polizei": 0,
+              "entbürokratis": 3,
+              "bürokratische belastung": 0
+            },
+            "Kontrollen dokumentieren und nachvollziehbar machen": {
+              "kontrollquittung": 0,
+              "kontrollbeleg": 0,
+              "kennzeichnungspflicht": 0,
+              "racial profiling": 0,
+              "rassistische kontrollen": 0,
+              "anlassunabhängige kontrollen dokumentier": 0
+            }
+          },
+          "903": {},
+          "904": {},
+          "908": {},
+          "909": {}
+        }
+      }
+    ]
+  }
+}

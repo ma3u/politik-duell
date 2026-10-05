@@ -87,7 +87,7 @@ Aus `/liste-einordnen` (62 Zeilen, davon 50 ohne Dopplung). Die Liste kommt übe
 | Eltern sollen ihre Kinder zu Hause unterrichten dürfen | haltung | wert, haltung_id 23 wenn erfasst |
 | Es soll mehr Förderschulen geben, Kinder mit Förderbedarf sollen getrennt lernen | haltung | wert, haltung_id 8 wenn erfasst |
 | Gesundheitsversorgung und Sozialleistungen sollen in erster Linie für Deutsche da sein | grenze | grenze |
-| Sprit soll billiger werden, Steuern darauf sollen sinken | forderung | forderung, ohne instrument_id (als Lösungsweg gesucht, in keinem Bundesprogramm gefunden; nahe: Instrument 7260 nur für Preiskrisen) |
+| Sprit soll billiger werden, Steuern darauf sollen sinken | forderung | forderung, ohne instrument_id (als Lösungsweg gesucht, in keinem Bundesprogramm gefunden; nahe: Instrument 7260 nur für Preiskrisen, Instrument 7011 für den Wegfall des CO₂-Preises) |
 | Stillgelegte Bahnstrecken sollen genutzt und der Schienenverkehr soll ausgebaut werden | forderung | forderung, instrument_id 6747 oder 6744 |
 | Pauschales Urteil über eine Religionsgemeinschaft als Bedrohung für das Land | pauschal | forderung mit pauschal: true (Nachfrage nach dem Erlebten) |
 | Zuwanderung soll begrenzt und besser kontrolliert werden | haltung | wert, haltung_id 2 wenn erfasst |

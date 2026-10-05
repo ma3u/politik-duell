@@ -1,0 +1,899 @@
+{
+  "pruefsumme": "b2f013c2674f4c7e427503d6570bc9cd8d8203e14b8fee6c7db6a1487121fc05",
+  "thema": {
+    "id": 9,
+    "name": "Sicherheit",
+    "ziel": "Menschen bleiben zu Hause, unterwegs und im Internet von Straftaten verschont und fühlen sich auch nachts im öffentlichen Raum sicher."
+  },
+  "ursachen": [
+    {
+      "id": 901,
+      "beschreibung": "Nachts fühlen sich viele an bestimmten Orten unsicher: 2024 fühlten sich an Bahnhöfen nur 27 % und in Parks nur 23 % sicher",
+      "ebene": "land"
+    },
+    {
+      "id": 902,
+      "beschreibung": "Viele Straftaten haben keine oder späte Folgen: 2025 blieben 42 % unaufgeklärt; Ende 2024 waren 950.900 Ermittlungsverfahren offen, so viele wie nie seit 2014",
+      "ebene": "land"
+    },
+    {
+      "id": 903,
+      "beschreibung": "Junge Menschen werden häufiger Opfer von Gewalt: 2024 wurden 8,5 % der 16- und 17-Jährigen Opfer einer Körperverletzung (2020: 3,1 %); 2025 mehr tatverdächtige Kinder bei Gewaltdelikten",
+      "ebene": "land"
+    },
+    {
+      "id": 904,
+      "beschreibung": "Gewalt in Partnerschaft und Familie auf Höchststand: 2024 rund 266.000 Opfer häuslicher Gewalt (+17,8 % in fünf Jahren), 70 % Frauen; Partnerschaftsgewalt wird zu weniger als 5 % angezeigt",
+      "ebene": "land"
+    },
+    {
+      "id": 905,
+      "beschreibung": "Nichtdeutsche sind bei Gewaltdelikten als Tatverdächtige überrepräsentiert (2025: 42,9 %); Gründe laut Forschung: Alter, Geschlecht, Wohnort, Aufenthaltsperspektive, Zuzug 2015/16 – Gewicht umstritten",
+      "ebene": "bund"
+    },
+    {
+      "id": 906,
+      "beschreibung": "Betrug und Datenmissbrauch im Internet treffen viele und werden selten angezeigt: 2023 war fast jede fünfte Person betroffen; 2025 kamen zwei Drittel der Fälle aus dem Ausland oder von unbekanntem Ort",
+      "ebene": "bund"
+    },
+    {
+      "id": 907,
+      "beschreibung": "Politisch und religiös motivierte Kriminalität auf Höchststand: 2025 rund 85.800 Straftaten, so viele wie nie, darunter rund 4.200 Gewaltdelikte",
+      "ebene": "bund"
+    },
+    {
+      "id": 908,
+      "beschreibung": "Sexualisierte Gewalt: Die Polizei erfasst deutlich mehr Vergewaltigungen (2025: +9,0 %, seit 2018 rund +72 %), angezeigt werden aber nur rund 6 %",
+      "ebene": "land"
+    },
+    {
+      "id": 909,
+      "beschreibung": "Zugewanderte werden stärker mit Kriminalität verbunden, als es die Daten zeigen: Nennen Fernsehen und Zeitungen bei Gewalttaten die Herkunft, geht es zu über 90 % um ausländische Tatverdächtige (2025)",
+      "ebene": "land"
+    },
+    {
+      "id": 911,
+      "beschreibung": "Unbehandelte schwere psychische Erkrankungen und Suchterkrankungen erhöhen das Risiko für Gewalttaten, besonders zusammen; die meisten Gewalttaten gehen aber nicht darauf zurück",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        901
+      ],
+      "text": "Zu 901 gehören Maßnahmen an bestimmten Orten im öffentlichen Raum (Bahnhöfe, Nahverkehr, Parks, Innenstädte, Plätze): sichtbare Polizei- oder Ordnungsdienstpräsenz, Kontrollen, Videoüberwachung, Waffen- und Messerverbotszonen, Auflösen offener Drogenszenen, Beleuchtung, Gestaltung und Belebung, Sozialarbeit und Drogenhilfe vor Ort. Die Maßnahme braucht im Zitat einen Bezug zu Orten, zum öffentlichen Raum oder zur Präsenz."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        901,
+        902
+      ],
+      "text": "Mehr Polizeipersonal oder bessere Ausstattung ohne Bezug zu Orten oder Präsenz im Zitat gehört zu 902. Nennt das Zitat Präsenz, Streifen oder öffentlichen Raum, gehört sie zu 901; 902 dann nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        902
+      ],
+      "text": "Zu 902 gehören Personal und Ausstattung von Polizei, Staatsanwaltschaften und Gerichten, Ermittlungsbefugnisse und Datenzugriff ohne Bezug zu einem bestimmten Deliktfeld, schnellere oder vereinfachte Verfahren, Entkriminalisierung oder Entlastung von Bagatellverfahren und Digitalisierung von Polizei und Justiz – Ausbau wie Rücknahme gleich."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        902
+      ],
+      "text": "Strafverschärfungen oder -milderungen für ein bestimmtes Deliktfeld gehören zur Ursache dieses Feldes (etwa Partnerschaftsgewalt zu 904, Vergewaltigung zu 908, politisch motivierte Taten zu 907). Allgemeine Änderungen von Strafrahmen ohne Deliktfeld, organisierte Kriminalität, Clans, Geldwäsche und Vermögensabschöpfung: nur als ursachen_offen [902]."
+    },
+    {
+      "nr": 5,
+      "ursachen": [
+        903
+      ],
+      "text": "Zu 903 gehören Jugendstrafrecht, Strafmündigkeit, Häuser des Jugendrechts, Gewaltprävention an Schulen, Jugendarbeit und Schulsozialarbeit, wenn das Zitat Gewalt, Kriminalität oder Prävention nennt, und Messerverbote mit Bezug zu jungen Menschen oder Schulen. Schulsozialarbeit oder Jugendarbeit ohne diesen Bezug gehört nicht dazu."
+    },
+    {
+      "nr": 6,
+      "ursachen": [
+        901,
+        903,
+        907
+      ],
+      "text": "Messer- und Waffenverbote im öffentlichen Raum gehören zu 901, mit Bezug zu jungen Menschen zu 903, Entwaffnung von Extremisten zu 907. Allgemeines Waffenrecht für legale Waffenbesitzer (Sportschützen, Jäger) ohne einen dieser Bezüge: nur als ursachen_offen [901]."
+    },
+    {
+      "nr": 7,
+      "ursachen": [
+        904
+      ],
+      "text": "Zu 904 gehören Frauenhäuser und Schutzplätze, Beratung, Gewaltschutzgesetz, elektronische Fußfessel, Kontakt- und Näherungsverbote, Hochrisiko- und Fallmanagement, Täterarbeit, Strafen für Partnerschaftsgewalt und Femizide und die Umsetzung der Istanbul-Konvention mit konkretem Instrument. Gewalt gegen Frauen allgemein gehört zu 904; nennt das Zitat ausdrücklich sexualisierte Gewalt, zusätzlich zu 908."
+    },
+    {
+      "nr": 8,
+      "ursachen": [
+        905
+      ],
+      "text": "Zu 905 gehören Maßnahmen, die bei Straftaten von Nichtdeutschen ansetzen: Ausweisung und Abschiebung von Straftätern und – in beiden Richtungen gleich – Zuzugsbegrenzung, Arbeitsmarktzugang, Sprache, Bleibeperspektive, Aufnahme und Verteilung, wenn Zitat oder Abschnitt Straftaten oder Sicherheit nennen. Ohne diesen Bezug gehören sie zu Thema 6 und werden nicht erfasst. Grenzkontrollen mit Kriminalitätsbezug nur als ursachen_offen [905]."
+    },
+    {
+      "nr": 9,
+      "ursachen": [
+        905,
+        907
+      ],
+      "text": "Abschiebung von Gefährdern oder extremistischen Straftätern gehört zu 907, die von Straftätern allgemein zu 905. Nennt das Zitat beide, gehört die Maßnahme zu 905 und 907."
+    },
+    {
+      "nr": 10,
+      "ursachen": [
+        906
+      ],
+      "text": "Zu 906 gehören Speicherung von IP-Adressen, Quick Freeze, Pflichten und Haftung von Banken, Zahlungsdiensten und Plattformen, internationale Zusammenarbeit gegen Cybercrime, Ermittlungseinheiten für Internetkriminalität, Schutz vor Telefon- und Onlinebetrug und Aufklärung gegen Betrug. Nennt das Zitat zusätzlich Terror oder Extremismus: 907 als ursachen_offen. IT-Sicherheit von Staat und kritischer Infrastruktur ohne Bezug zu Privatpersonen gehört nicht dazu."
+    },
+    {
+      "nr": 11,
+      "ursachen": [
+        907
+      ],
+      "text": "Zu 907 gehören Maßnahmen gegen politisch oder religiös motivierte Kriminalität jeder Richtung: Verfassungsschutz und Nachrichtendienste (Ausbau, Begrenzung, Kontrolle, Abschaffung), Gefährder, Vereinsverbote, Prävention, Ausstieg und Demokratieförderung mit Extremismusbezug (auch deren Kürzung oder Streichung), Hasskriminalität, antisemitische Straftaten, Schutz gefährdeter Einrichtungen. Politische Bildung ohne Bezug zu Extremismus oder Straftaten gehört nicht dazu."
+    },
+    {
+      "nr": 12,
+      "ursachen": [
+        908
+      ],
+      "text": "Zu 908 gehören Sexualstrafrecht („Nur Ja heißt Ja“ oder Strafverschärfungen), vertrauliche Spurensicherung und Gewaltschutzambulanzen, Beratung nach sexualisierter Gewalt, K.-o.-Tropfen und sexuelle Belästigung im öffentlichen Raum. Gewalt in Partnerschaften gehört zu 904. Sexueller Missbrauch von Kindern und digitale Gewalt (Deepfakes, Cyberstalking) sind keine Ursache dieses Themas: nicht erfassen, im Protokoll unter „Nicht erfasst“ nennen."
+    },
+    {
+      "nr": 13,
+      "ursachen": [
+        909
+      ],
+      "text": "Zu 909 gehören Nennung der Herkunft oder Staatsangehörigkeit von Tatverdächtigen durch Polizei und Behörden, Lagebilder, Periodische Sicherheitsberichte, wissenschaftliche Einordnung oder Reform der Kriminalstatistik und Dunkelfeldbefragungen. Allgemeine Medienpolitik und Rundfunkreformen gehören nicht dazu."
+    },
+    {
+      "nr": 14,
+      "ursachen": [
+        911
+      ],
+      "text": "Zu 911 gehören Versorgung schwer psychisch Kranker (Krisendienste, aufsuchende Behandlung, sozialpsychiatrische Dienste), Informationsaustausch zwischen Kliniken und Sicherheitsbehörden, Gefährdermanagement bei psychisch auffälligen Personen, Unterbringung und Maßregelvollzug sowie Suchthilfe mit Bezug zu Gewalt oder schweren Erkrankungen. Allgemeine Psychotherapieplätze und Drogenpolitik ohne diesen Bezug: nur als ursachen_offen [911]. Drogenhilfe an Orten: 901."
+    },
+    {
+      "nr": 15,
+      "text": "Nicht erfassen (im Protokoll unter „Nicht erfasst“ nennen): Verkehrssicherheit (Thema 12), Asylverfahren, Grenzschutz und Rückführung ohne Straftatenbezug (Thema 6), Personal im öffentlichen Dienst allgemein (Thema 14), Ladendiebstahl und Wirtschaftskriminalität gegen Unternehmen, Einbruchschutz an Gebäuden, Schutz von Einsatzkräften, Zivil- und Katastrophenschutz, Bundeswehr und äußere Sicherheit."
+    },
+    {
+      "nr": 16,
+      "text": "Ein Bekenntnis („Sicherheit hat Vorrang“, „Wir stärken den Rechtsstaat“) ohne Instrument ist keine Maßnahme. Finanzierungszusagen ohne Zweck aus einer Ursache sind keine Maßnahme; nennt das Zitat den Zweck, gehört die Maßnahme zur Ursache dieses Zwecks."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 7481,
+      "name": "Mehr Personal und Ausstattung für Staatsanwaltschaften und Gerichte, gemeinsam mit den Ländern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Fehlende Staatsanwälte und Richter gelten nach der Personalbedarfsberechnung als ein Hauptgrund für rund eine Million offene Verfahren. Mehr Personal setzt dort an. Der Bund kann über einen Pakt aber nur mitfinanzieren, und Nachwuchs ist knapp.",
+      "beleg_studie_url": "https://www.drb.de/newsroom/presse-mediencenter/nachrichten-auf-einen-blick/nachricht/news/staatsanwaltschaften-am-limit-1"
+    },
+    {
+      "id": 7482,
+      "name": "Personal, Ausstattung und Befugnisse von Polizei und Ermittlungsbehörden stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr und besser ausgestattete Ermittler können mehr Taten aufklären, und Studien aus den USA finden weniger Kriminalität bei mehr Polizei. Der Bund steuert aber nur BKA und Bundespolizei. Ohne konkreten Umfang ist die Wirkung unbestimmt."
+    },
+    {
+      "id": 7483,
+      "name": "Digitalisierung von Justiz und Gerichtsverfahren (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Digitale Akten und Verfahren können Abläufe beschleunigen. Der Rückstand entsteht aber vor allem durch fehlendes Personal, und IT-Projekte der Justiz brauchen viele Jahre und die Mitarbeit der Länder."
+    },
+    {
+      "id": 7484,
+      "name": "KI-gestützte Datenanalyse und erweiterte digitale Ermittlungsbefugnisse (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Automatisierte Analysen und Online-Befugnisse können Ermittlungen beschleunigen. Unabhängige Belege für höhere Aufklärungsquoten fehlen, und das Bundesverfassungsgericht hat enge Grenzen gesetzt."
+    },
+    {
+      "id": 7485,
+      "name": "Vorratsdatenspeicherung und weitere Überwachungsbefugnisse ablehnen oder zurücknehmen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Das Ablehnen von Befugnissen schützt Grundrechte, bringt die Aufklärung aber nicht voran. Laut einer Studie des Max-Planck-Instituts brachte die Vorratsdatenspeicherung keine messbar höhere Aufklärung, der Verlust wäre also gering.",
+      "beleg_studie_url": "https://heise.de/newsticker/meldung/Studie-Vorratsdatenspeicherung-verbessert-die-Aufklaerungsquote-nicht-1423035.html"
+    },
+    {
+      "id": 7486,
+      "name": "Quick-Freeze-Verfahren zur Datensicherung im Verdachtsfall (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Quick Freeze ist grundrechtsschonend und schnell umsetzbar. Es greift aber nur bei Daten, die zum Zeitpunkt der Anordnung noch vorhanden sind. Bei IP-Adressen ist das oft nicht mehr der Fall, daher ist der Nutzen bei Onlinebetrug begrenzt.",
+      "beleg_studie_url": "https://heise.de/newsticker/meldung/Studie-Vorratsdatenspeicherung-verbessert-die-Aufklaerungsquote-nicht-1423035.html"
+    },
+    {
+      "id": 7487,
+      "name": "Login-Falle zur Identifizierung anonymer Täter im Netz (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Die Login-Falle kann anonyme Konten gezielt identifizieren und ist rechtlich wenig umstritten. Sie wirkt aber nur bei Konten, die erneut genutzt werden, und erfasst Betrug aus dem Ausland kaum. Zur Wirkung gibt es kaum Daten."
+    },
+    {
+      "id": 7488,
+      "name": "Europol zu einem europäischen Kriminalamt ausbauen, grenznahe Polizeizusammenarbeit stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Viele Online- und organisierte Taten kommen aus dem Ausland, deshalb setzt eine bessere Zusammenarbeit an einer Ursache an. Operative Befugnisse für Europol erfordern aber eine Änderung der EU-Verträge mit allen Mitgliedstaaten."
+    },
+    {
+      "id": 7489,
+      "name": "Organisierte Kriminalität: Vermögensabschöpfung erleichtern, Beweislast umkehren, Geldwäsche bekämpfen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Eine leichtere Einziehung von Vermögen trifft kriminelle Strukturen finanziell. Auf die Aufklärung alltäglicher Straftaten wirkt sie kaum. Eine volle Beweislastumkehr steht im Konflikt mit Unschuldsvermutung und Eigentumsschutz."
+    },
+    {
+      "id": 7490,
+      "name": "Bagatelldelikte entkriminalisieren und Ersatzfreiheitsstrafen vermeiden, um die Justiz zu entlasten (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Allein Fahren ohne Fahrschein macht rund 6 % der Verurteilungen und über die Hälfte der Ersatzfreiheitsstrafen aus. Eine Streichung entlastet Justiz und Haft spürbar. Die Aufklärung schwerer Taten verbessert sie nur indirekt."
+    },
+    {
+      "id": 7491,
+      "name": "Strafen für einzelne Gewalt- und Sexualdelikte verschärfen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Höhere Strafen sind rechtlich leicht umsetzbar und benennen das Unrecht klarer. Die Forschung zeigt aber übereinstimmend: Abschreckend wirkt vor allem das Risiko, erwischt zu werden, kaum die Höhe der Strafe.",
+      "beleg_studie_url": "https://prohic.nl/wp-content/uploads/2020/11/2020-06-02-DeterrenceMetaNagin.2013.pdf"
+    },
+    {
+      "id": 7492,
+      "name": "Jugendstrafrecht verschärfen: Strafmündigkeit senken, Heranwachsende nach Erwachsenenstrafrecht (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Dafür spricht, dass Intensivtäter früher gestoppt werden können. Rückfallstudien zeigen aber keinen Vorteil härterer Sanktionen bei jungen Menschen, eher höhere Rückfallraten. Für Kinder fehlen zudem geeignete Einrichtungen.",
+      "beleg_studie_url": "https://www.uni-konstanz.de/rtf/kis/heinz-sanktionen-jugendstrafrecht-12-thesen.htm"
+    },
+    {
+      "id": 7493,
+      "name": "Zustimmungslösung im Sexualstrafrecht („Nur Ja heißt Ja“) (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "In Schweden stiegen die Verurteilungen nach der Reform deutlich. Deutschland erfasst seit 2016 aber schon Taten gegen den erkennbaren Willen, daher ist der Zusatznutzen kleiner. An der geringen Anzeigebereitschaft ändert die Reform wenig.",
+      "beleg_studie_url": "https://www.thelocal.se/20200616/how-swedens-new-consent-law-led-to-a-75-rise-in-rape-convictions/"
+    },
+    {
+      "id": 7494,
+      "name": "Frauenhäuser und Beratung ausbauen, Rechtsanspruch auf Schutz mit Bundesfinanzierung (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Es fehlen tausende Schutzplätze; Schutz und Beratung helfen Betroffenen direkt, aus der Gewalt herauszukommen. Die Gewalt selbst wird dadurch weniger verhindert. Der Bund beteiligt sich bereits, der Ausbau braucht aber Jahre und Personal.",
+      "beleg_studie_url": "https://www.institut-fuer-menschenrechte.de/aktuelles/detail/gewalt-gegen-frauen-beratungs-und-unterstuetzungsstrukturen-in-stadt-und-land-sichern"
+    },
+    {
+      "id": 7495,
+      "name": "Elektronische Fußfessel und schärferes Gewaltschutzgesetz bei häuslicher Gewalt (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "In Spanien wurde seit 2009 keine Frau getötet, deren Täter überwacht wurde. Die Maßnahme setzt bei Hochrisikofällen an. Sie erreicht aber nur wenige Fälle und setzt voraus, dass die Gewalt bereits angezeigt wurde.",
+      "beleg_studie_url": "https://www.france24.com/en/20200926-domestic-violence-electronic-bracelets-are-a-first-step-but-we-have-to-go-further"
+    },
+    {
+      "id": 7496,
+      "name": "Täterarbeit und Prävention gegen Partnerschaftsgewalt ausbauen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Meta-Analyse findet bis zu zwei Jahre nach Täterprogrammen deutlich weniger Rückfälle, danach keinen gesicherten Effekt mehr. Die Angebote liegen überwiegend bei den Ländern, der Bund kann fördern.",
+      "beleg_studie_url": "https://pure.qub.ac.uk/en/publications/the-effectiveness-of-interventions-to-prevent-recidivism-in-perpe/"
+    },
+    {
+      "id": 7497,
+      "name": "Ausweisung und Abschiebung ausländischer Straftäter erleichtern und vorrangig betreiben (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Die Maßnahme verhindert weitere Taten der Abgeschobenen im Inland. Sie betrifft aber nur einen kleinen Teil der Tatverdächtigen und lässt die Ursachen laut Forschung unberührt. Ob sie gelingt, hängt von der Mitarbeit der Herkunftsstaaten ab.",
+      "beleg_studie_url": "https://www.swp-berlin.org/10.18449/2021S12/"
+    },
+    {
+      "id": 7498,
+      "name": "Nachrichtendienste und Gefährderüberwachung mit Personal und Befugnissen stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Eine frühe Aufklärung von Netzwerken und Gefährdern kann schwere Anschläge verhindern. Unabhängige Wirkungsstudien fehlen, und neue Befugnisse stoßen auf verfassungsrechtliche Grenzen."
+    },
+    {
+      "id": 7499,
+      "name": "Verfassungsschutz grundlegend umbauen oder durch andere Stelle ersetzen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Bekannte Fehler wie im V-Leute-System sprechen für eine Reform. Ein Umbau kann aber zunächst die Früherkennung schwächen. Belege, dass eine andere Organisationsform extremistische Taten besser verhindert, fehlen."
+    },
+    {
+      "id": 7500,
+      "name": "Vereins- und Organisationsverbote gegen extremistische Gruppen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Verbote zerschlagen Strukturen, Vermögen und Treffpunkte, und das Innenministerium kann sie selbst aussprechen. Mitglieder organisieren sich aber oft neu. Zur Wirkung auf Straftaten gibt es kaum Studien."
+    },
+    {
+      "id": 7501,
+      "name": "Extremisten konsequent entwaffnen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Ohne legale Waffen sind schwere Gewalttaten von Extremisten schwerer möglich, und das Waffenrecht erlaubt den Entzug bereits. Illegal beschaffte Waffen erfasst die Maßnahme nicht, und Wirkungsstudien fehlen."
+    },
+    {
+      "id": 7502,
+      "name": "Ausstiegs- und Präventionsangebote gegen Extremismus dauerhaft finanzieren (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Auswertung eines Aussteigerprogramms fand bei 94 % der Betreuten keine neuen Straftaten, allerdings ohne Vergleichsgruppe. Belastbare Wirkungsstudien sind selten. Ob der Bund für ein Fördergesetz zuständig ist, ist umstritten.",
+      "beleg_studie_url": "https://www.bpb.de/themen/rechtsextremismus/infopool-rechtsextremismus/546159/ein-weg-aus-dem-rechtsextremismus/"
+    },
+    {
+      "id": 7503,
+      "name": "Neue Straftatbestände gegen extremistische Propaganda (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Neue Straftatbestände können Werbung für Terror oder verfassungsfeindliche Ziele früher ahnden. Sie überschneiden sich teils mit geltendem Recht und müssen vor der Meinungsfreiheit bestehen. Zur Wirkung auf Gewalttaten gibt es keine Belege."
+    },
+    {
+      "id": 7504,
+      "name": "Staatliche Förderung für extremistennahe Vereine ausschließen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Die Maßnahme verhindert, dass extremistische Strukturen staatlich mitfinanziert werden. Auf Straftaten wirkt sie nur indirekt. Ein Ausschluss allein wegen einer Beobachtung oder wegen einzelner Mitglieder ist rechtlich angreifbar."
+    },
+    {
+      "id": 7505,
+      "name": "Kriminalstatistik reformieren und Periodischen Sicherheitsbericht gesetzlich verankern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Wissenschaftlich eingeordnete Lagebilder können verzerrte Wahrnehmungen korrigieren und sind leicht umsetzbar. Ob sie die öffentliche Wahrnehmung tatsächlich ändern, ist kaum untersucht."
+    },
+    {
+      "id": 7506,
+      "name": "Sichtbare Polizeipräsenz und Kontrollen an Kriminalitätsschwerpunkten (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Studien zur gezielten Polizeipräsenz an Brennpunkten zeigen weniger Kriminalität ohne Verdrängung in andere Gebiete. Die meisten Orte liegen aber in der Zuständigkeit der Landespolizei, und Personal fehlt.",
+      "beleg_studie_url": "https://nij.ojp.gov/library/publications/hot-spots-policing-and-crime-reduction-update-ongoing-systematic-review-and"
+    },
+    {
+      "id": 7507,
+      "name": "Flächendeckende Videoüberwachung und Gesichtserkennung im öffentlichen Raum ablehnen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Die Ablehnung schützt Grundrechte, bringt die Sicherheit an unsicheren Orten aber nicht voran. Videoüberwachung senkt laut Meta-Analyse vor allem Eigentums- und Fahrzeugdelikte, kaum Gewalt; der Verzicht kostet daher wenig.",
+      "beleg_studie_url": "https://www.ojp.gov/library/publications/cctv-surveillance-crime-prevention-40-year-systematic-review-meta-analysis"
+    },
+    {
+      "id": 7626,
+      "name": "Gezielte Polizeipräsenz und Streifen an Kriminalitätsschwerpunkten wie Bahnhöfen und Parks (Land)",
+      "ebene": "land",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Studien zur gezielten Polizeipräsenz an Brennpunkten zeigen weniger Kriminalität ohne Verdrängung, teils mit Nutzen für das Umfeld. Die Landespolizei ist zuständig, doch Personal für dauerhafte Präsenz ist knapp.",
+      "beleg_studie_url": "https://www.ojp.gov/library/publications/hot-spots-policing-and-crime-reduction-update-ongoing-systematic-review-and"
+    },
+    {
+      "id": 7627,
+      "name": "Mehr sichtbare Polizeipräsenz und Streifen im öffentlichen Raum allgemein (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr sichtbare Polizei kann abschrecken und Vertrauen stärken. Ohne Ausrichtung auf Brennpunkte sind die Effekte bürgernaher Polizeiarbeit auf Kriminalität und Furcht laut Übersichtsstudie aber gering, und Personal ist knapp.",
+      "beleg_studie_url": "https://asu.elsevierpure.com/en/publications/community-oriented-policing-to-reduce-crime-disorder-and-fear-and/"
+    },
+    {
+      "id": 7628,
+      "name": "Mehr Sicherheitspersonal an Bahnhöfen, Haltestellen und im Nahverkehr (Land)",
+      "ebene": "land",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Ein Zufallsexperiment an 41 Bahnhöfen fand bei Streifen durch Sicherheitspersonal 16 % weniger Taten, bei Gewalt 31 % weniger. Das Personal kostet dauerhaft und muss mit den Verkehrsunternehmen vereinbart werden.",
+      "beleg_studie_url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0187392"
+    },
+    {
+      "id": 7629,
+      "name": "Bessere Beleuchtung und städtebauliche Kriminalprävention an Angsträumen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Eine Übersichtsstudie und ein Zufallsexperiment in New York zeigen weniger Kriminalität nach besserer Beleuchtung, dort nachts im Freien rund ein Drittel weniger schwere Taten. Umsetzen müssen meist die Kommunen, das Land kann fördern.",
+      "beleg_studie_url": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/effects-improved-street-lighting-crime"
+    },
+    {
+      "id": 7630,
+      "name": "Videoüberwachung an kriminalitätsbelasteten Orten ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Videoüberwachung senkt Kriminalität laut Meta-Analyse moderat, vor allem Eigentumsdelikte auf Parkplätzen, kaum Gewalt. Aktiv beobachtete Kameras wirken stärker. Das Polizeirecht des Landes erlaubt den Ausbau an belasteten Orten.",
+      "beleg_studie_url": "https://www.ojp.gov/library/publications/cctv-surveillance-crime-prevention-40-year-systematic-review-meta-analysis"
+    },
+    {
+      "id": 7631,
+      "name": "Flächendeckende Videoüberwachung und biometrische Gesichtserkennung ablehnen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Die Ablehnung schützt Grundrechte, bringt die Sicherheit an unsicheren Orten aber nicht voran. Da Videoüberwachung Gewalt laut Meta-Analyse kaum senkt, kostet der Verzicht wenig."
+    },
+    {
+      "id": 7632,
+      "name": "Anlasslose Kontrollen und Sonderbefugnisse an kriminalitätsbelasteten Orten ausweiten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Die Evaluation der Leipziger Waffenverbotszone fand weniger bewaffnete Angriffe, aber kaum Wirkung auf andere Taten. Anlasslose Kontrollen können Vertrauen kosten. Das Land kann sie im Polizeigesetz regeln.",
+      "beleg_studie_url": "https://medienservice.sachsen.de/medien/news/252888"
+    },
+    {
+      "id": 7633,
+      "name": "Waffenverbotszonen und anlasslose Kontrollen abschaffen oder eng begrenzen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Die Abschaffung beugt diskriminierenden Kontrollen vor, verzichtet aber auf ein Mittel, das in Leipzig bewaffnete Angriffe etwas senkte. Die Sicherheit an belasteten Orten verbessert sie nicht."
+    },
+    {
+      "id": 7634,
+      "name": "Aufsuchende Sozialarbeit, Drogenhilfe, Konsumräume und Parkläufer an belasteten Orten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Konsumräume und aufsuchende Hilfe verringern laut Evaluationen offenen Drogenkonsum und Szenebelastung; Diebstahl und Raub im Umfeld sinken aber nicht. Das Land kann solche Angebote mit den Kommunen rasch finanzieren."
+    },
+    {
+      "id": 7635,
+      "name": "Polizeipersonal aufstocken oder halten, Nachwuchsgewinnung und Bezahlung verbessern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Studien aus den USA finden weniger Gewalt bei mehr Polizei, und mehr Ermittler können mehr Taten aufklären. Die Ausbildung dauert aber Jahre, Pensionierungen zehren Zuwächse auf, und ohne Zielgröße bleibt der Umfang offen."
+    },
+    {
+      "id": 7636,
+      "name": "Ausstattung und Digitalisierung der Polizei, Entlastung von Verwaltungsarbeit (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Bessere Technik und weniger Schreibarbeit verschaffen Zeit für Ermittlungen. Belege für höhere Aufklärungsquoten fehlen, und IT-Projekte der Polizei dauern oft Jahre."
+    },
+    {
+      "id": 7637,
+      "name": "Mehr Personal für Gerichte und Staatsanwaltschaften, Justizberufe attraktiver machen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Fehlende Staatsanwälte und Richter gelten als Hauptgrund für die vielen offenen Verfahren; mehr Stellen setzen dort an. Das Land ist zuständig, doch Nachwuchs ist knapp und viele gehen in Pension."
+    },
+    {
+      "id": 7638,
+      "name": "Digitalisierung der Justiz und elektronische Akte (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Digitale Akten und Verfahren können Abläufe beschleunigen. Der Rückstand entsteht aber vor allem durch fehlendes Personal, und die Einführung der E-Akte zieht sich seit Jahren."
+    },
+    {
+      "id": 7639,
+      "name": "Beschleunigte und vereinfachte Strafverfahren stärker nutzen, auch bei Jugendlichen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Evaluation des Neuköllner Modells zeigt schnellere Verfahren in geeigneten Fällen; eine Wirkung auf spätere Straftaten ist nicht belegt. Die Verfahren gibt es schon, Länder können sie organisatorisch stärken.",
+      "beleg_studie_url": "https://jugendsozialarbeit.news/evaluation_beschleunigtes_jugendverfahren/"
+    },
+    {
+      "id": 7640,
+      "name": "Häuser des Jugendrechts und behördenübergreifende Zusammenarbeit bei Jugendstraftaten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Evaluationen zeigen eine bessere Zusammenarbeit von Polizei, Justiz und Jugendhilfe, teils kürzere Verfahren und weniger Rückfälle; Vergleichsgruppen fehlen oft. Länder können solche Häuser selbst einrichten.",
+      "beleg_studie_url": "https://www.iss-ffm.de/themen/armut-und-armutsfolgen/projekte/evaluation-der-haeuser-des-jugendrechts-in-niedersachsen"
+    },
+    {
+      "id": 7641,
+      "name": "Jugendstrafrecht verschärfen über den Bund: Strafmündigkeit senken, Heranwachsende, Warnschussarrest (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Fachverbände sehen keine Belege für eine abschreckende Wirkung, und nach Arrest und Jugendstrafe sind Rückfallquoten hoch. Dafür spricht ein früheres Eingreifen bei Intensivtätern. Das Land kann nur über den Bundesrat werben.",
+      "beleg_studie_url": "https://jugendhilfeportal.de/artikel/stellungnahme-zur-forderung-der-senkung-des-strafmuendigkeitsalters-durch-cdu-generalsekretaer"
+    },
+    {
+      "id": 7642,
+      "name": "Gewaltprävention an Schulen, Jugend- und Schulsozialarbeit, Streetwork mit Präventionsauftrag (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Meta-Analyse von 219 Studien findet weniger Aggression durch Programme an Schulen. Für allgemeine Jugend- und Schulsozialarbeit ist die Wirkung auf Gewalt schwerer nachzuweisen, und Fachkräfte fehlen.",
+      "beleg_studie_url": "https://www.ojp.gov/library/publications/effectiveness-school-based-violence-prevention-programs-reducing-disruptive"
+    },
+    {
+      "id": 7643,
+      "name": "Frauenhausplätze, Schutzwohnungen und Beratung ausbauen und dauerhaft finanzieren (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Laut Frauenhaus-Statistik fehlen über 12.000 Plätze; Schutz und Beratung helfen Betroffenen direkt. Die Gewalt selbst verhindern sie kaum. Das Gewalthilfegesetz verpflichtet die Länder, der Ausbau braucht Jahre und Personal.",
+      "beleg_studie_url": "https://www.frauenhauskoordinierung.de/aktuelles/detail/frauenhaus-statistik-2024"
+    },
+    {
+      "id": 7644,
+      "name": "Täterarbeit bei häuslicher Gewalt ausbauen, auch als verpflichtende Auflage (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Meta-Analyse findet nach längeren Täterprogrammen deutlich weniger amtlich erfasste Rückfälle, nach Angaben der Partnerinnen aber keinen Effekt; kurze Programme wirken nicht. Das Land kann Angebote fördern.",
+      "beleg_studie_url": "https://journals.copmadrid.org/pi/art/pi2020a11"
+    },
+    {
+      "id": 7645,
+      "name": "Hochrisikomanagement, Gefährdungsanalyse und Fallkonferenzen bei häuslicher Gewalt (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Fallkonferenzen und standardisierte Risikoeinschätzung wie in Großbritannien und Spanien sollen Hochrisikofälle früh erkennen; Berichte melden weniger Wiederholungstaten, aber auch Fehleinschätzungen. Das Land kann es selbst einführen."
+    },
+    {
+      "id": 7646,
+      "name": "Elektronische Fußfessel, Wegweisung, Kontakt- und Näherungsverbote bei häuslicher Gewalt (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Überwachte Näherungsverbote nach spanischem Vorbild können Hochrisikofälle schützen. Die Geräte sind aber störanfällig, erreichen nur wenige Fälle und setzen eine Anzeige voraus. Länder können sie im Polizeirecht regeln."
+    },
+    {
+      "id": 7647,
+      "name": "Femizide einheitlich definieren und systematisch erfassen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Eine einheitliche Erfassung verbessert das Lagebild und kann Prävention gezielter machen. Sie verhindert selbst keine Taten, und zur Wirkung gibt es kaum Daten."
+    },
+    {
+      "id": 7648,
+      "name": "Landesaktionsplan oder Koordinierungsstelle gegen geschlechtsspezifische Gewalt (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Ein Aktionsplan oder eine Koordinierungsstelle kann Zuständigkeiten klären und Lücken sichtbar machen. Ohne zusätzliche Mittel bleibt die Wirkung offen."
+    },
+    {
+      "id": 7649,
+      "name": "Spezialisierte Zuständigkeiten in der Justiz für geschlechtsspezifische und sexualisierte Gewalt (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Spezialisierte Staatsanwälte und Kammern können Verfahren beschleunigen und Betroffene schonen. Belege für mehr Anzeigen oder Verurteilungen fehlen weitgehend."
+    },
+    {
+      "id": 7650,
+      "name": "Gewaltschutz vor Umgangsrecht gewalttätiger Elternteile über den Bund (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Gewalt setzt sich nach Trennungen oft bei Umgangskontakten fort; ein Vorrang des Schutzes setzt dort an. Das Familienrecht regelt der Bund, das Land kann nur werben, und zur Wirkung gibt es kaum Daten."
+    },
+    {
+      "id": 7651,
+      "name": "Strafen für einzelne Delikte über den Bund verschärfen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Höhere Strafen benennen Unrecht klarer. Die Forschung zeigt aber übereinstimmend, dass vor allem das Entdeckungsrisiko abschreckt, kaum die Strafhöhe. Das Strafrecht ändert der Bund, das Land kann nur werben."
+    },
+    {
+      "id": 7652,
+      "name": "Gewaltschutzambulanzen und vertrauliche Spurensicherung flächendeckend ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Vertrauliche Spurensicherung und Ambulanzen sichern Beweise, auch wenn Betroffene erst später anzeigen. Wie stark das Anzeigen und Verurteilungen erhöht, ist kaum untersucht. Das Land kann die Angebote ausbauen."
+    },
+    {
+      "id": 7653,
+      "name": "Herkunft von Tatverdächtigen in Statistiken, Lagebildern und Polizeimeldungen häufiger ausweisen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Mehr Angaben zur Staatsangehörigkeit sollen Transparenz schaffen. Ob das die verzerrte Wahrnehmung korrigiert oder verstärkt, ist offen; Medien nennen bei Gewalttaten schon heute fast nur ausländische Tatverdächtige."
+    },
+    {
+      "id": 7654,
+      "name": "Periodischer Sicherheitsbericht, Dunkelfeldbefragungen und wissenschaftliche Einordnung der Kriminalstatistik (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Wissenschaftlich eingeordnete Lagebilder und Dunkelfeldbefragungen machen das tatsächliche Geschehen sichtbar und sind leicht umsetzbar. Ob sie die öffentliche Wahrnehmung ändern, ist kaum untersucht."
+    },
+    {
+      "id": 7655,
+      "name": "Vermögensabschöpfung und Finanzermittlungen gegen organisierte Kriminalität (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Vermögensabschöpfung trifft kriminelle Strukturen finanziell und ist eine spürbare Tatfolge. Auf die Aufklärung alltäglicher Straftaten wirkt sie kaum, Wirkungsstudien fehlen."
+    },
+    {
+      "id": 7656,
+      "name": "Beweislastumkehr bei der Einziehung kriminellen Vermögens über den Bund (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Eine leichtere Einziehung trifft kriminelle Strukturen finanziell, wirkt aber kaum auf alltägliche Taten. Die Beweislastumkehr regelt der Bund, und sie steht im Konflikt mit Unschuldsvermutung und Eigentumsschutz."
+    },
+    {
+      "id": 7657,
+      "name": "Spezialisierte Ermittlungsgruppen gegen organisierte Kriminalität (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Dauerhafte Ermittlungsgruppen bündeln Wissen gegen organisierte Kriminalität. Auf die Aufklärung der vielen alltäglichen Taten wirken sie kaum, und Belege zur Wirkung fehlen."
+    },
+    {
+      "id": 7658,
+      "name": "Fahren ohne Fahrschein entkriminalisieren und Ersatzfreiheitsstrafe abschaffen über den Bund (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Fahren ohne Fahrschein bindet viel Justizkapazität und führt oft zu Ersatzfreiheitsstrafen; eine Streichung entlastet. Schwere Taten werden dadurch nur indirekt schneller verfolgt, und das Land braucht den Bund.",
+      "beleg_studie_url": "https://www.drb.de/positionen/stellungnahmen/stellungnahme/news/14-2023"
+    },
+    {
+      "id": 7659,
+      "name": "Überwachungsbefugnisse und automatisierte Datenanalyse ablehnen oder begrenzen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Die Begrenzung schützt Grundrechte, bringt die Aufklärung aber nicht voran. Belege, dass automatisierte Analysen oder Staatstrojaner die Aufklärung messbar erhöhen, fehlen, der Verlust wäre also gering."
+    },
+    {
+      "id": 7660,
+      "name": "Quick-Freeze-Verfahren statt Vorratsdatenspeicherung über den Bund (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Quick Freeze ist grundrechtsschonend, greift aber nur bei Daten, die bei der Anordnung noch vorhanden sind. Die Strafprozessordnung regelt der Bund, das Land kann nur werben."
+    },
+    {
+      "id": 7661,
+      "name": "KI-gestützte Datenanalyse, Auswertesoftware und behördenübergreifendes Datenmanagement ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Automatisierte Analysen und Auswertesoftware können Ermittlungen beschleunigen. Unabhängige Belege für höhere Aufklärungsquoten fehlen, und das Bundesverfassungsgericht hat enge Grenzen gesetzt."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Die im Landespolizeigesetz (SOG) beschlossenen Dokumentationspflichten für die Polizei sollen sofort zurückgenommen werden.",
+      "zitat": "Wir treten unwahren Behauptungen und Unterstellungen wie z.B. pauschalen Rassismusvorwürfen in Richtung der Polizei öffentlich entgegen und werden die durch Rot-Rot beschlossenen Dokumentationspflichten im SOG in Regierungsverantwortung sofort zurücknehmen.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "407cd700d24a7e76"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Durch Technik, Automatisierung und KI den Zeitanteil bürokratischer Routineprozesse im Polizeidienst deutlich verringern, damit mehr Zeit für Prävention und Strafverfolgung bleibt.",
+      "zitat": "Mit einer stets an die zeitgemäßen Erfordernisse angepassten technischen Ausstattung auf dem höchsten technischen Standard und durch den Einsatz technischer Automatisierung und Künstlicher Intelligenz werden wir den Zeitanteil bürokratischer Routineprozesse im Dienst deutlich verringern, damit Polizistinnen und Polizisten den Fokus auf Prävention und Strafverfolgung legen können.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "27c4cbfc1cd23b10"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Keine Kennzeichnungspflicht für Bundespolizisten und keine Pflicht zur Kontrollquittung bei Kontrollen, um die Polizei von Bürokratie freizuhalten.",
+      "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab. Wir verpflichten sie auch nicht, anlässlich einer Kontrolle eine Kontrollquittung auszustellen.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "aa11545bd5d1dcc9"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Berichts- und Dokumentationspflichten der Polizei stark zurückfahren und überarbeiten",
+      "zitat": "Polizeiarbeit darf nicht durch überbordende Bürokratie ausgebremst werden. Die Berichts- und Dokumentationspflichten werden wir daher drastisch zurückfahren und überarbeiten.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "cdb347d9b0e5c458"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen, sodass Kontrollen nachvollziehbar werden.",
+      "zitat": "Den Polizeibeauftragten zu einer Anlaufstelle für „alle“ machen und Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "e830db7172db7cc7"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeibeamte; Einsatzprotokolle und Polizeivideos werden zur Aufklärung bei Treuhandstellen aufbewahrt.",
+      "zitat": "Wir fordern eine individuelle Kennzeichnungspflicht von Politist*innen. Es muss selbstverständlich werden, dass Polizeibeamt*innen den Bürger*innen individuell erkennbar gegenübertreten.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "999a09b9ab351fba"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeikräfte und automatischer Bodycam-Einsatz bei Schusswaffengebrauch und Tasern, damit Einsätze nachvollziehbar sind.",
+      "zitat": "Die individuelle Kennzeichnungspflicht und der automatische Einsatz von Bodycams beim Schusswaffengebrauch oder beim Einsatz von Tasern schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "0645f13c29b1b2f4"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Digitale Kontrollquittung, mit der jede kontrollierte Person über den Anlass der Polizeikontrolle informiert wird.",
+      "zitat": "Um dem entgegenzuwirken, möchten wir eine digitale Kontrollquittung einführen, mit der jede Person über den Anlass der Kontrolle informiert werden kann. Das schafft Transparenz und Nachvollziehbarkeit in Verbindung mit polizeilichem Handeln.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "4bd47a43dea67528"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Polizei von Bürokratie entlasten: Dokumentationspflichten und interne Verwaltungsaufgaben deutlich reduzieren und auf Verwaltungsangestellte übertragen.",
+      "zitat": "Wir werden: […] die Polizei von übermäßiger Bürokratie entlasten, damit sie ihren Dienst auf der Straße und nicht hinter Bildschirmen verrichtet. Dokumentationspflichten und innerbehördliche Verwaltungsaufgaben wollen wir deutlich reduzieren und auf Verwaltungsangestellte übertragen.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "801e09c63cd2fdec"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Anonymisierte Kennzeichnungspflicht für die Bundespolizei",
+      "zitat": "Zudem führen wir für die Bundespolizei eine anonymisierte Kennzeichnungspflicht ein.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "b85facb0085669d6"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Ticketsystem für polizeiliche Kontrollen, das die Gründe der Kontrolle darlegt und polizeiliches Handeln transparenter macht",
+      "zitat": "Mit einem Ticketsystem für Kontrollen, das die Gründe für Kontrollen darlegt, wollen wir polizeiliches Handeln transparenter machen.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "0cd9d57596d2f63a"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Numerische Kennzeichnungspflicht für Polizeibeamte auf alle Einsatzlagen ausweiten, damit polizeiliches Handeln nachvollziehbar wird.",
+      "zitat": "Wir garantieren friedliche Demonstrationen und fordern: • die numerische Kennzeichnungspflicht auf alle Einsatzlagen und alle eingesetzten Polizeibeamtinnen und -beamte auszuweiten.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "9e1afb5552374e19"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Bürokratische Belastungen der Polizei werden reduziert, damit sich Beschäftigte auf Kernaufgaben konzentrieren können.",
+      "zitat": "Bürokratische Belastungen werden reduziert, damit Polizistinnen und Polizisten sich auf ihre Kernaufgaben konzentrieren können.",
+      "ursachen_ids": [
+        902
+      ],
+      "pruefsumme": "24f246eaa8e46603"
+    }
+  ]
+}
