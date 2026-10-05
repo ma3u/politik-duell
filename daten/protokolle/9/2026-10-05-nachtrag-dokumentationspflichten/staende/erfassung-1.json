@@ -1,0 +1,216 @@
+{
+  "thema_id": 9,
+  "nachtrag": {
+    "forderung": "Dokumentationspflichten der Polizei bei Kontrollen verringern",
+    "richtungen": {
+      "902": [
+        "Dokumentationspflichten der Polizei bei Kontrollen verringern",
+        "Kontrollen dokumentieren und nachvollziehbar machen"
+      ]
+    }
+  },
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Lehnen Kennzeichnungspflicht und Kontrollquittung für Bundespolizisten ab",
+          "ursachen_ids": [
+            902
+          ],
+          "neue_buendel": [
+            {
+              "ursache": 902,
+              "name": "Dokumentationspflichten der Polizei bei Kontrollen verringern",
+              "seite": 40
+            }
+          ],
+          "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab. Wir verpflichten sie auch nicht, anlässlich einer Kontrolle eine Kontrollquittung auszustellen.",
+          "seite": 40
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel ‚Sicherheit. Ordnung. Migrationswende.' (S. 5–7) und ‚Entschlossener Rechtsstaat' (S. 56–59) gelesen; keine Zusagen zu Dokumentationspflichten der Polizei bei Kontrollen oder deren Transparenzgestaltung. Alle vier Fundstellen (S. 41, 42, 49, 70) beziehen sich auf andere Bereiche: Livestock (S. 41), Landwirtschaft (S. 42), Kindertagesstätten (S. 49), Vereine und Ehrenamt (S. 70)."
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 15–17 (Sicherheit, Demokratie, Gleichstellung, S. 40–48) gelesen. Alle 5 Treffer sind False Positives: S. 11, 18, 20 und 55 benutzen 'entbürokratis' in anderen Kontexten (CO₂-Grenzausgleich, Förderprogramme, Wohnraum, Asyl). S. 50 erwähnt 'Kennzeichnungspflicht' für KI-Bots, nicht für Polizeikontrollen. Keine Aussagen zu Polizei-Dokumentationspflichten oder Kontrollquittungen vorhanden."
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Sicherheitskapitel (S. 28-34) und Fundstellen S. 4, 14, 45 gelesen. S. 29 enthält allgemeine Aussage zu Bürokratie-Abbau bei der Polizei ('Bürokratische Belastungen werden reduziert'), die Aussage ist aber nicht konkret auf Dokumentationspflichten bei Kontrollen ausgerichtet und reicht nicht als Handlungszusage. Suchbegriffe (dokumentationspflicht, entbürokratis) haben nur Treffer zu Betrieben, Pflege und Landwirtschaft, nicht zur Polizei."
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel ‚Ein Leben in Sicherheit' (S. 133–140) vollständig gelesen. Lösungsweg: Dokumentationspflichten bei Polizeikontrolle verringern. Die Grünen schlagen im Programm das Gegenteil vor – Dokumentation ERHÖHEN: S. 134 Ticketsystem für Kontrollen zur Transparenz, anonymisierte Kennzeichnungspflicht für Bundespolizei. Keine Maßnahme zur Verringerung von Dokumentationspflichten gefunden."
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Polizeiaus- und Fortbildung mit Fokus auf Antidiskriminierung und Entgegenwirkung von Racial Profiling",
+          "ursachen_ids": [
+            902
+          ],
+          "buendel": "Personal und Ausstattung der Polizei",
+          "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein. Dazu gehört auch die Auseinandersetzung mit Fluchtursachen, Migration und dem historischen Erbe. Ziel ist eine Polizei, die Racial Profiling aktiv entgegenwirkt, Vertrauen schafft und als Partnerin einer diversen Zivilgesellschaft handelt.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Unabhängige Polizeibeauftragte zur Untersuchung von Beschwerden und Fehlverhalten mit Transparenz",
+          "ursachen_ids": [
+            902
+          ],
+          "zitat": "Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten. Ein*e Polizeibeauftragte*r stärkt das Vertrauen in die Sicherheitsbehörden, schützt Hinweisgeber*innen und ermöglicht eine offene Fehlerkultur. Die jährliche Berichterstattung an den Landtag sorgt für demokratische Kontrolle und Klarheit über strukturelle Herausforderungen.",
+          "seite": 43
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 902,
+          "name": "Unabhängige Kontrolle und Beschwerdeverfahren",
+          "seite": 43
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "richtung": "Dokumentationspflichten der Polizei bei Kontrollen verringern",
+          "seiten": [
+            72
+          ],
+          "grund": "S. 72 enthält einen Treffer für 'entbürokratis', aber im Kontext der Sportförderung ('Entbürokratisierung der Sportförderung'), nicht der Polizeibürokratie. Keine relevante Maßnahme zu Dokumentationspflichten der Polizei gefunden."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel ‚Grundrechte und Rechtstaat bewahren' (S. 21–26) vollständig gelesen; Suchbegriff-Treffer beziehen sich auf andere Bereiche (Gastronomie, Arbeitsrecht, Elterngeld, Pflege, Landwirtschaft auf S. 15, 18, 30, 34, 45). Im Sicherheitskapitel keine Maßnahme zur Verringerung von Dokumentationspflichten bei Polizeikontrolle."
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Siehe nicht_erfasst für Ursache 902.",
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "seiten": [
+            7,
+            8,
+            17,
+            24,
+            28,
+            34,
+            44,
+            51,
+            64
+          ],
+          "grund": "Alle Treffer zu 'dokumentationspflicht' und 'entbürokratis' beziehen sich auf Bürokratieabbau in anderen Bereichen (Wirtschaft, Landwirtschaft, Schulen, Forschung, Pflege, Sport). Keine Zusage zur Reduktion von Dokumentationspflichten bei Polizei-Kontrollen."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel INNERE SICHERHEIT (S. 116–139) durchsucht; Ursache 902 'Dokumentationspflichten der Polizei bei Kontrollen verringern' kommt nicht vor. Die Suchtreffer auf S. 4, 14, 34, 75, 112 beziehen sich auf Dokumentationspflichten in Gesundheitswesen, Landwirtschaft und Pflege, nicht auf polizeiliche Kontrollen."
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Lösungsweg ‚Dokumentationspflichten der Polizei bei Kontrollen verringern': Suchbegriffe ‚dokumentationspflicht' und ‚entbürokratis' treten nur in den Kontexten Schulbildung (S. 83), Wirtschaft (S. 145) und Pflege (S. 244) auf – keine Maßnahmen zu Dokumentationspflichten der Polizei bei Kontrollen gefunden. Alle drei Fundstellen gelesen; keine Relevanz für Ursache 902 in diesem Zusammenhang."
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Individuelle Kennzeichnungspflicht von Polizisten, Aufbewahrung von Einsatzprotokollen und Polizeivideos.",
+          "ursachen_ids": [
+            902
+          ],
+          "zitat": "Wir fordern eine individuelle Kennzeichnungspflicht von Politist*innen. Es muss selbstverständlich werden, dass Polizeibeamt*innen den Bürger*innen individuell erkennbar gegenübertreten. Zur Aufklärung und Vermeidung von Übergriffen sollen Einsatzprotokolle und Polizeivideos bei Treuhandstellen aufbewahrt werden.",
+          "seite": 49
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeikräfte und automatischer Bodycam-Einsatz beim Schusswaffengebrauch oder Tasereinsatz",
+          "ursachen_ids": [
+            902
+          ],
+          "zitat": "Die individuelle Kennzeichnungspflicht und der automatische Einsatz von Bodycams beim Schusswaffengebrauch oder beim Einsatz von Tasern schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+          "seite": 129
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 902,
+          "name": "Bodycams und Kennzeichnungspflicht",
+          "seite": 129
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Sicherheitskapitel (S. 33–43) gelesen. Die drei Treffer sind False Positives: S. 12 behandelt Produktlebensdauer-Kennzeichnung, S. 18 KMU-Dokumentationspflichten, S. 40 Impfschadensersatz. Keine Zusagen zu Polizeikontroll-Dokumentation oder deren Verringerung gefunden.",
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "seiten": [
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "grund": "Lösungsrichtungen 'Dokumentationspflichten der Polizei bei Kontrollen verringern' und 'Kontrollen dokumentieren und nachvollziehbar machen' nicht im Programm. Die einzige relevante Stelle (S. 35: Entlastung von nachrangigen Aufgaben) behandelt Hausdurchsuchungen wegen Politikerbeleidigung, nicht Polizeikontrolle."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Sicherheits-Kapitel 5.2 (S. 64–71) und Fundstellen S. 77, 82 gelesen; nichts zu Dokumentationspflichten oder Kontrolldokumentation bei Polizeikontollen.",
+      "nicht_erfasst": [
+        {
+          "ursache": 902,
+          "seiten": [
+            77,
+            82
+          ],
+          "grund": "Fundstellen behandeln Entbürokratisierung in Sozialleistungen (S. 77) und Jagd-/Fischereirecht (S. 82), nicht Dokumentationspflichten bei Polizeikontollen. Lösungsweg ‚Dokumentationspflichten der Polizei bei Kontrollen verringern' wird im Programm nicht adressiert."
+        }
+      ]
+    }
+  ]
+}

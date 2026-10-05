@@ -81,7 +81,7 @@ Aus `/liste-einordnen` (62 Zeilen, davon 50 ohne Dopplung). Die Liste kommt übe
 | Russisches Pipeline-Gas soll wieder importiert werden | haltung | wert, haltung_id 18 wenn erfasst |
 | Vor Ort soll verbindlich entschieden werden, ob Windräder gebaut werden | haltung | wert, haltung_id 29 wenn erfasst |
 | Studierende aus Nicht-EU-Staaten sollen Gebühren zahlen | haltung | wert, haltung_id 30 wenn erfasst (Frage gilt für alle Studierenden) |
-| Die Polizei soll Kontrollen weniger dokumentieren müssen | forderung | forderung, instrument_id aus Thema 9 wenn erfasst |
+| Die Polizei soll Kontrollen weniger dokumentieren müssen | forderung | forderung, instrument_id 7636 (Entlastung von Verwaltungsarbeit; nahe, nicht deckungsgleich) |
 | Kinder sollen in der Schule sicher sein | thema | problem (Thema 9 oder 4) oder Nachfrage |
 | Ich wünsche mir gute Schulbildung | thema | problem (Thema 4) oder Nachfrage |
 | Eltern sollen ihre Kinder zu Hause unterrichten dürfen | haltung | wert, haltung_id 23 wenn erfasst |
