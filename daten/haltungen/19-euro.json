@@ -2,9 +2,7 @@
   "id": 19,
   "frage": "Soll Deutschland den Euro als Währung behalten?",
   "beschreibung": "Ob Deutschland Mitglied der Währungsunion bleibt und weiter mit dem Euro zahlt oder ob es austritt und wieder eine eigene Währung einführt.",
-  "verwandte_themen": [
-    5
-  ],
+  "verwandte_themen": [5],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -22,25 +20,74 @@
     "teils": "Will im Euro bleiben, aber die Regeln der Währungsunion grundlegend ändern, oder schließt einen Austritt unter bestimmten Bedingungen nicht aus.",
     "nein": "Will den Euro abschaffen oder Deutschland aus der Währungsunion herausführen und eine eigene Währung einführen."
   },
-  "suchbegriffe": [
-    "euro",
-    "währungsunion",
-    "d-mark",
-    "deutsche mark",
-    "eurozone",
-    "euro-austritt",
-    "eigene währung",
-    "gemeinschaftswährung"
-  ],
-  "schlagwoerter": [
-    "euro",
-    "waehrung",
-    "d-mark",
-    "eurozone",
-    "euro-austritt"
-  ],
+  "suchbegriffe": ["euro", "währungsunion", "d-mark", "deutsche mark", "eurozone", "euro-austritt", "eigene währung", "gemeinschaftswährung"],
+  "schlagwoerter": ["euro", "waehrung", "d-mark", "eurozone", "euro-austritt"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "ja",
+      "kurzfassung": "Will eine stabile Wirtschafts- und Währungsunion und weitere Vertiefung, etwa bei Binnenmarkt und Kapitalmarktunion.",
+      "zitat": "Dazu gehören vor allem die Vertiefung des Binnenmarkts, die Stärkung der Wettbewerbsfähigkeit, die Vervollständigung sowohl der Energieunion als auch der Kapitalmarktunion, eine stabile Wirtschafts- und Währungsunion und eine ambitionierte Politik für Forschung und Innovationen, Klimaschutz, Außenhandel, den Stopp illegaler Migration, Digitalisierung sowie Verteidigung.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=54",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will die Eurozone vor Schocks schützen, mit einer europäischen Arbeitslosenrückversicherung in schweren Krisen.",
+      "zitat": "Um die Eurozone vor ökonomischen Schocks zu schützen, treten wir für eine europäische Arbeitslosenrückversicherung ein, die in Zeiten schwerer wirtschaftlicher Krisen greift.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 21 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Lagebeschreibung zu Kapitalmärkten, keine Aussage zum Euro-Verbleib.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 36 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Warnung zur Regeleinhaltung; Zweifel, ob implizit für Verbleib, aber nicht ausdrücklich.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Will die Transferunion aufkündigen und eine nationale Währung wieder einführen, gegebenenfalls neben dem Euro oder einer Verrechnungseinheit.",
+      "zitat": "Deshalb muss Deutschland diese \"Transferunion\" aufkündigen und den Irrweg der Dauerrettung durch Wiedereinführung einer nationalen Währung beenden, ggf. unter paralleler Beibehaltung des Euro oder einer flexiblen ECU-ähnlichen Verrechnungseinheit.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=63",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 14 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Digitaler Euro ist ein anderes Thema als Euro-Verbleib.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "EU-Politikkapitel (S. 8–11) und Wirtschaftsabschnitte gelesen, Suche nach Währung, D-Mark, Deutsche Mark, Eurozone, Euro-Austritt, eigene Währung, Geldpolitik, EZB: keine Aussage zur Frage, ob Deutschland den Euro behalten oder abschaffen sollte.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }
