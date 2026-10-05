@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
-import type { ParteiErgebnis } from '../logic/bewertung'
+import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
 import { EVIDENZ_TEXT } from '../logic/forderung'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import type { RundenErgebnis, Spieler } from '../spiel'
@@ -25,10 +25,15 @@ export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
   )
 }
 
-/** Höchste Punktzahl je Ursache: Wirksamkeit 3 × Umsetzbarkeit 3. */
-const MAX_JE_URSACHE = 9
+const wertungFuer = (e: ParteiErgebnis, ursacheId: number) => e.ursachen.find((u) => u.ursache_id === ursacheId)
 
-const trefferFuer = (e: ParteiErgebnis, ursacheId: number) => e.treffer.find((t) => t.ursachen_ids.includes(ursacheId))
+/** Gewicht eines Lösungswegs in Worten: voll, zur Hälfte, zu einem Viertel … */
+const BRUCH: Record<number, string> = { 2: '½', 4: '¼', 8: '⅛' }
+const gewichtText = (g: number) => {
+  const n = Math.round(1 / g)
+  return n === 1 ? 'zählt voll' : n === 2 ? 'zählt zur Hälfte' : n === 4 ? 'zählt zu einem Viertel' : `zählt zu 1/${n}`
+}
+const gewichtFaktor = (g: number) => BRUCH[Math.round(1 / g)] ?? `1/${Math.round(1 / g)}`
 
 /** Kopf des Duells: beide Parteien mit Gesamtpunkten, Kreuz bei der Rundensiegerin. */
 function DuellKopf({
@@ -58,7 +63,7 @@ function DuellKopf({
       <span className="duell-summe">
         {ergebnis.abdeckung ? (
           <>
-            {ergebnis.punkte}
+            {punkteText(ergebnis.punkte)}
             <span className="sr-only"> Punkte</span>
           </>
         ) : (
@@ -81,41 +86,69 @@ function Halbbalken({ ergebnis, punkte, vorne }: { ergebnis: ParteiErgebnis; pun
   return (
     <span className={`duell-halb${vorne ? ' vorne' : ''}${punkte === null ? ' offen' : ''}`} style={parteiStil(ergebnis.partei.farbe)}>
       <span className="duell-fuellung" style={{ ['--anteil' as string]: (punkte ?? 0) / MAX_JE_URSACHE }} />
-      <span className="duell-wert">{punkte ?? '–'}</span>
+      <span className="duell-wert">{punkte === null ? '–' : punkteText(punkte)}</span>
     </span>
   )
 }
 
-/** Maßnahme einer Partei zu einer Ursache, aufgeklappt. */
+/** Eine gezählte Maßnahme mit Rechnung, Begründung und Belegen. */
+function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number; mehrere: boolean }) {
+  const landName = useLandName()
+  return (
+    <div className={mehrere ? 'duell-weg' : undefined}>
+      <p className="massnahme-titel">{t.massnahme.beschreibung}</p>
+      <p className="duell-rechnung">
+        wirkt {t.wirksamkeit}/3 × umsetzbar {t.massnahme.umsetzbarkeit}/3 = <strong>{t.punkteJeUrsache}</strong>
+        {mehrere && ` · ${gewichtText(gewicht)}`}
+      </p>
+      <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
+      {t.rollenBegruendung && (
+        <p className="massnahme-rolle">
+          Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
+          {t.rollenBegruendung}
+        </p>
+      )}
+      {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
+      {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
+        <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>
+      )}
+      <MassnahmeBelege massnahme={t.massnahme} />
+    </div>
+  )
+}
+
+/**
+ * Maßnahmen einer Partei zu einer Ursache, aufgeklappt. Bei mehreren Lösungswegen zuerst
+ * die Rechnung (bester voll, weitere mit abnehmendem Gewicht, gedeckelt), dann jeder Weg.
+ */
 function MassnahmeDetail({ ergebnis, ursacheId }: { ergebnis: ParteiErgebnis; ursacheId: number }) {
   const landName = useLandName()
-  const t = trefferFuer(ergebnis, ursacheId)
+  const w = wertungFuer(ergebnis, ursacheId)
   const leer = ohneTreffer(ergebnis, landName)
+  const wege = (w?.beitraege ?? [])
+    .map((b) => ({ b, t: ergebnis.treffer.find((t) => t.massnahme.id === b.massnahme_id) }))
+    .filter((x): x is { b: (typeof x)['b']; t: Treffer } => !!x.t)
+  const mehrere = wege.length > 1
   return (
     <div className="duell-massnahme" style={parteiStil(ergebnis.partei.farbe)}>
       <span className="duell-massnahme-partei">{ergebnis.partei.kurzname}</span>
-      {!t ? (
+      {!w || !wege.length ? (
         <p className="duell-keine">
           {!ergebnis.abdeckung ? leer?.kurz : leer ? `${leer.kurz}.` : 'Keine Maßnahme zu dieser Ursache.'}
         </p>
       ) : (
         <>
-          <p className="massnahme-titel">{t.massnahme.beschreibung}</p>
-          <p className="duell-rechnung">
-            wirkt {t.wirksamkeit}/3 × umsetzbar {t.massnahme.umsetzbarkeit}/3 = <strong>{t.punkteJeUrsache}</strong>
-          </p>
-          <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
-          {t.rollenBegruendung && (
-            <p className="massnahme-rolle">
-              Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
-              {t.rollenBegruendung}
+          {mehrere && (
+            <p className="duell-rechnung">
+              {wege.length} Lösungswege:{' '}
+              {wege.map(({ b }, i) => (i === 0 ? `${b.punkte}` : ` + ${b.punkte} × ${gewichtFaktor(b.gewicht)}`)).join('')} ={' '}
+              <strong>{punkteText(w.punkte)}</strong>
+              {w.gedeckelt && ` (gedeckelt bei ${MAX_JE_URSACHE})`}
             </p>
           )}
-          {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
-          {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
-            <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>
-          )}
-          <MassnahmeBelege massnahme={t.massnahme} />
+          {wege.map(({ b, t }) => (
+            <MassnahmeInhalt key={b.massnahme_id} t={t} gewicht={b.gewicht} mehrere={mehrere} />
+          ))}
         </>
       )}
     </div>
@@ -124,7 +157,7 @@ function MassnahmeDetail({ ergebnis, ursacheId }: { ergebnis: ParteiErgebnis; ur
 
 /**
  * Gegenüberstellung je Ursache: Balken von der Mitte nach links (A) und rechts (B),
- * Länge = Punkte der besten Maßnahme zu dieser Ursache. Tippen klappt die Maßnahmen auf.
+ * Länge = Punkte zu dieser Ursache (bester Lösungsweg voll, weitere abnehmend, höchstens 9). Tippen klappt die Maßnahmen auf.
  */
 function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, Spieler] }) {
   const { ursachen } = useDaten()
@@ -134,7 +167,7 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
   const ursachenIds =
     runde.ursachen_ids ?? [...new Set([...a.treffer, ...b.treffer].flatMap((t) => t.ursachen_ids))]
   const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? 'Ursache'
-  const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (trefferFuer(e, id)?.punkteJeUrsache ?? 0) : null)
+  const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
 
   return (
@@ -165,7 +198,8 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
                       <Halbbalken ergebnis={b} punkte={pb} vorne={(pb ?? 0) > 0 && (pb ?? 0) >= (pa ?? 0)} />
                     </span>
                     <span className="sr-only">
-                      {a.partei.kurzname}: {pa ?? 'keine Wertung'}, {b.partei.kurzname}: {pb ?? 'keine Wertung'} von{' '}
+                      {a.partei.kurzname}: {pa === null ? 'keine Wertung' : punkteText(pa)}, {b.partei.kurzname}:{' '}
+                      {pb === null ? 'keine Wertung' : punkteText(pb)} von{' '}
                       {MAX_JE_URSACHE} Punkten
                     </span>
                   </summary>
@@ -180,7 +214,8 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
         </ul>
       )}
       <p className="duell-legende">
-        Balken: Punkte der besten Maßnahme je Ursache (höchstens {MAX_JE_URSACHE}). Tippen zeigt Maßnahme und Beleg.
+        Balken: Punkte je Ursache – bester Lösungsweg voll, jeder weitere halb so stark, höchstens {MAX_JE_URSACHE}. Tippen
+        zeigt Maßnahmen und Belege.
       </p>
       {leere.map(({ e, leer }) => (
         <details key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
@@ -303,7 +338,7 @@ export function Aufloesung({
               <span className="beste-kurz">
                 {runde.beste.length === 0
                   ? 'keine'
-                  : `${runde.beste.map((b) => b.partei.kurzname).join(', ')} · ${runde.beste[0].punkte} Punkte`}
+                  : `${runde.beste.map((b) => b.partei.kurzname).join(', ')} · ${punkteText(runde.beste[0].punkte)} Punkte`}
               </span>
             </summary>
             {runde.beste.length === 0 ? (
@@ -315,7 +350,7 @@ export function Aufloesung({
             ) : (
               runde.beste.map((b) => (
                 <div key={b.partei.id} className="beste-zeile" style={parteiStil(b.partei.farbe)}>
-                  <strong>{b.partei.name}</strong> mit {b.punkte} Punkten
+                  <strong>{b.partei.name}</strong> mit {punkteText(b.punkte)} Punkten
                   {b.ki_entwurf && (b.nicht_blind ? ` (${NICHT_BLIND})` : ' (vorläufige KI-Bewertung)')}
                   {b.treffer.map((t) => (
                     <p key={t.massnahme.id} className="beste-massnahme">

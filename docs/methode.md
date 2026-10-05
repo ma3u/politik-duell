@@ -77,7 +77,7 @@ Für jede Partei und jedes Thema gibt es genau einen von zwei Einträgen:
 
 **Wer über die Zuordnung entscheidet.** Eine Maßnahme kann bei mehreren Ursachen Punkte holen – die Zuordnung entscheidet also mit über das Ergebnis. Deshalb schlägt die Erfassung (die das Programm kennt) die Ursachen nur vor; Grenzfälle markiert sie als offen. Entschieden wird bei der Bewertung ohne Parteinamen, mit Blick auf alle Maßnahmen zugleich. Was dort nicht bestätigt wird, zählt nicht.
 
-**Breite Lösungsrichtungen gebündelt.** Manche Richtungen umfassen viele gleichartige Einzelzusagen – „die Erwärmung begrenzen“ etwa die ganze Klimapolitik eines Programms. Weil je Ursache nur die beste Maßnahme zählt, bringt jede weitere Einzelzusage kaum etwas, kostet aber Erfassung und Prüfung. Für solche Richtungen nennt der Leitfaden eine offene Liste von Instrumenten (etwa CO₂-Bepreisung, Ausbau erneuerbarer Energien, Verkehr), die alle Richtungen der Debatte abdeckt, auch Rücknahmen. Jedes Programm bekommt je Instrument höchstens eine Maßnahme, belegt mit der konkretesten Stelle (Zusage, Zahl, Frist). Bündeln heißt nicht auswählen: Welche Stelle am meisten hilft, entscheidet die Bewertung, nicht die Erfassung.
+**Breite Lösungsrichtungen gebündelt.** Manche Richtungen umfassen viele gleichartige Einzelzusagen – „die Erwärmung begrenzen“ etwa die ganze Klimapolitik eines Programms. Weil je Instrument nur eine Maßnahme zählt (siehe [„Mehrere Lösungswege je Ursache“](#mehrere-lösungswege-je-ursache)), bringt jede weitere gleichartige Einzelzusage nichts, kostet aber Erfassung und Prüfung. Für solche Richtungen nennt der Leitfaden eine offene Liste von Instrumenten (etwa CO₂-Bepreisung, Ausbau erneuerbarer Energien, Verkehr), die alle Richtungen der Debatte abdeckt, auch Rücknahmen. Jedes Programm bekommt je Instrument höchstens eine Maßnahme, belegt mit der konkretesten Stelle (Zusage, Zahl, Frist). Bündeln heißt nicht auswählen: Welche Stelle am meisten hilft, entscheidet die Bewertung, nicht die Erfassung.
 
 Alle Daten liegen offen als Dateien im Quellcode ([`daten/`](../daten/README.md)). Änderungen sind nachvollziehbar und brauchen immer eine Quelle; eine automatische Prüfung kontrolliert Pflichtfelder, Wertebereiche und dass jeder Beleg ins Programm der richtigen Partei zeigt.
 
@@ -108,11 +108,44 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 
 ### Punkte in der Runde
 
-1. Pro Ursache zählt die beste Maßnahme einer Partei. Mehrere Maßnahmen zur selben Ursache ergeben keinen Zuschlag – sonst gewänne, wer mehr Einzelforderungen aufschreibt, nicht wer besser ansetzt. Wer mehrere Ursachen angeht, wird über die Summe belohnt.
+1. Pro Ursache zählen die verschiedenen Lösungswege einer Partei mit abnehmendem Gewicht: der beste voll, der zweite zur Hälfte, der dritte zu einem Viertel und so weiter, zusammen höchstens 9 Punkte – so viel wie eine einzelne Maßnahme mit Bestwerten. Mehrere Maßnahmen zum selben Lösungsweg (Instrument) zählen nur einmal. Begründung und Beispiel im nächsten Abschnitt.
 2. Die Rundenpunkte sind die Summe über alle Ursachen, denen das Problem zugeordnet wurde. Zugeordnet werden nur Ursachen, die sich aus der Schilderung erkennen lassen – nicht vorsorglich alle Ursachen des Themas, sonst gewänne bei vagen Problemen, wer zum Thema die meisten Maßnahmen hat. Ist keine Ursache erkennbar, fragt das Spiel nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); bleibt es unklar, wird die Runde nicht gewertet.
    Ist das Thema erkennbar, zeigt das Spiel bei jeder Nachfrage zusätzlich die Ursachen des Themas zum Antippen. Angetippte Ursachen gelten als Schilderung der Person und werden gewertet wie eine Zuordnung durch die KI – höchstens drei, aus demselben Grund wie oben. Bei pauschalen Urteilen über Gruppen gibt es keine Auswahl, nur die Nachfrage nach dem Erlebten.
 3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.
 4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte.
+
+### Mehrere Lösungswege je Ursache
+
+> Punkte je Ursache = beste Maßnahme + ½ × zweitbeste + ¼ × drittbeste + …, höchstens 9
+
+Gezählt werden **Lösungswege**, nicht Textstellen: Je Instrument (gleicher Lösungsweg, siehe „Gleicher Vorschlag, gleiche Bewertung“) zählt nur die beste Maßnahme der Partei; eine Maßnahme ohne Instrument gilt als eigener Weg. Die Wege werden nach ihren Punkten geordnet und mit 1, ½, ¼, ⅛ … gewichtet. Die Summe wird auf eine Nachkommastelle gerundet und bei 9 gedeckelt. Die Auflösung zeigt die Rechnung.
+
+**Beispiel.** Partei A setzt bei einer Ursache mit drei verschiedenen Instrumenten an (6, 4 und 2 Punkte): 6 + 4 × ½ + 2 × ¼ = **8,5**. Partei B hat eine einzige Maßnahme mit Bestwerten: **9**. Partei C hat vier schwache Wege mit je 4 Punkten: 4 + 2 + 1 + 0,5 = **7,5**. Ein durchdachter Mix wird also belohnt, eine sehr gute Einzelmaßnahme bleibt konkurrenzfähig, und Menge allein schlägt Qualität nicht.
+
+**Warum nicht nur die beste Maßnahme?** Bis zum 5. Oktober 2026 zählte je Ursache nur die beste Maßnahme. Das bewertete eine Partei, die ein Problem auf mehreren Wegen angeht, genauso wie eine mit einer einzigen Idee – obwohl beide Programme die Möglichkeit hatten, mehr zu nennen. In den erfassten Bundesprogrammen hat eine Partei bei fast der Hälfte der Ursachen, zu denen sie etwas vorschlägt, mehr als einen Lösungsweg (Stand Oktober 2026).
+
+**Warum nicht einfach alles addieren?** Dann gewänne, wer mehr Einzelforderungen aufschreibt, nicht wer besser ansetzt: Bei bis zu neun Lösungswegen für eine Ursache wären 81 Punkte möglich, eine einzelne Ursache entschiede die ganze Runde, und lange Programme hätten einen Vorteil nur durch ihre Länge.
+
+**Was die Forschung dazu sagt:**
+
+- **Mehrere Instrumente sind oft nötig.** Nach der Tinbergen-Regel braucht jedes eigenständige Ziel ein eigenes Instrument (Tinbergen 1952). Hat ein Problem mehrere Hebel, deckt ein einzelnes Instrument meist nur einen Teil ab.
+- **Gute Politik ist ein Mix.** Die Forschung zu Policy-Mixes bewertet Bündel von Instrumenten unter anderem danach, wie umfassend sie die relevanten Ursachen eines Problems abdecken und wie stimmig sie zusammenwirken (Rogge & Reichardt 2016; Howlett & Rayner 2007; OECD 2007). Das spricht dafür, weitere Wege zu belohnen.
+- **Instrumente addieren sich nicht einfach.** Mehrere Instrumente für dasselbe Ziel überschneiden sich oft oder heben sich teilweise auf (Fankhauser, Hepburn & Park 2010). Bekanntes Beispiel ist der „Wasserbetteffekt“ im EU-Emissionshandel: Zusätzliche nationale Maßnahmen in den erfassten Sektoren senkten die Emissionen dort insgesamt nicht, solange die Obergrenze des Handels feststand – die frei gewordenen Zertifikate wurden anderswo genutzt; erst die Marktstabilitätsreserve hat das zeitweise geändert (Perino 2018). Deshalb zählt jeder weitere Weg weniger als der vorige.
+- **Bewertungsverfahren addieren nur Unabhängiges.** In der Entscheidungstheorie setzt eine einfache Summe voraus, dass sich die Teile nicht gegenseitig beeinflussen (Keeney & Raiffa 1976). Maßnahmen zur selben Ursache erfüllen das am wenigsten; ein abnehmendes Gewicht bildet diesen Zusammenhang vorsichtig ab, ohne jede Wechselwirkung einzeln bewerten zu müssen.
+- **Viel Text heißt Wichtigkeit, nicht Qualität.** Die vergleichende Programmforschung (Manifesto Project) misst mit dem Textanteil eines Themas, wie wichtig es einer Partei ist – nicht, wie gut ihre Lösung ist. Der Deckel verhindert, dass Ausführlichkeit allein Punkte bringt.
+
+**Was gesetzt ist.** Die Gewichte ½, ¼ … und der Deckel bei 9 folgen keiner Naturkonstante. Gewählt wurden sie, weil sie einfach nachzurechnen sind, weitere Wege spürbar, aber immer schwächer belohnen und jede Ursache gleich viel wert lassen. Sie gelten für alle Parteien gleich und können nach Prüfung durch den Methodenbeirat geändert werden.
+
+**Literatur**
+
+- Fankhauser, S., Hepburn, C. & Park, J. (2010): Combining multiple climate policy instruments: how not to do it. *Climate Change Economics* 1(3), 209–225.
+- Howlett, M. & Rayner, J. (2007): Design principles for policy mixes: cohesion and coherence in 'new governance arrangements'. *Policy and Society* 26(4), 1–18.
+- Keeney, R. L. & Raiffa, H. (1976): *Decisions with Multiple Objectives: Preferences and Value Tradeoffs.* New York: Wiley.
+- OECD (2007): *Instrument Mixes for Environmental Policy.* Paris: OECD Publishing.
+- Perino, G. (2018): New EU ETS Phase 4 rules temporarily puncture waterbed. *Nature Climate Change* 8, 262–264.
+- Rogge, K. S. & Reichardt, K. (2016): Policy mixes for sustainability transitions: an extended concept and framework for analysis. *Research Policy* 45(8), 1620–1635.
+- Tinbergen, J. (1952): *On the Theory of Economic Policy.* Amsterdam: North-Holland.
+- Manifesto Project (WZB): https://manifesto-project.wzb.eu
 
 ### Bund und Länder
 
@@ -229,6 +262,7 @@ Die Methode ist so fair wie möglich, aber nicht fehlerfrei. Wir benennen ihre G
 - **Bewerten bleibt Urteil.** Wirksamkeit und Umsetzbarkeit sind Einschätzungen. Blinde Prüfung, Median und offene Begründungen machen sie nachvollziehbar, aber nicht objektiv.
 - **Die Ursachenliste prägt das Ergebnis.** Welche Ursachen ein Thema hat, entscheidet mit, welche Maßnahmen zählen. Deshalb werden sie vorab mit unabhängigen Quellen festgelegt, auf verschiedene Perspektiven geprüft und nur in begründeten Ausnahmen ergänzt.
 - **Lange Programme haben mehr Fundstellen.** Wir rechnen die Programmlänge nicht heraus, sondern sichern gleich gründliche Suche und gleiche Zuordnung; den Zusammenhang zwischen Länge und Punkten nennen wir je Thema.
+- **Wechselwirkungen werden pauschal berücksichtigt.** Ob sich zwei Lösungswege einer Partei ergänzen oder überschneiden, wird nicht einzeln bewertet; das abnehmende Gewicht unterstellt für alle eine mittlere Überschneidung. Ein besonders gut abgestimmter Mix kann dadurch etwas zu niedrig, ein widersprüchlicher etwas zu hoch bewertet sein.
 - **Belegte Wirkung bevorzugt Erprobtes.** Instrumente, die es schon gibt, sind besser untersucht als neue Ideen. Die Regel „Wirksamkeit 3 nur mit belegter Wirkung“ kann neue Vorschläge daher etwas benachteiligen. Wir nehmen das in Kauf, weil die Alternative wäre, Versprechen ungeprüft zu glauben.
 - **Das Bundesland verändert das Ergebnis.** Bei Landesthemen kann dieselbe Partei in zwei Ländern unterschiedlich abschneiden. Das ist gewollt: Landesparteien haben eigene Programme.
 - **Ein Spiel ist ein Ausschnitt.** Es deckt fünf Probleme ab und ist kein Gesamturteil über eine Partei – und keine Wahlempfehlung.

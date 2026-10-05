@@ -813,6 +813,16 @@ $$;
 -- Ursachen in der Sprache der Betroffenen für die Auswahl zum Antippen (nur Anzeige, keine Wertung).
 alter table public.ursachen add column if not exists alltag text;
 
+-- ===== migrations/20261012000000_runden_punkte_dezimal.sql =====
+-- Politik-Duell – Rundenpunkte mit einer Nachkommastelle (docs/methode.md → „Mehrere Maßnahmen je Ursache“)
+--
+-- Je Ursache zählen mehrere Lösungswege einer Partei mit abnehmendem Gewicht (voll, ½, ¼ …), höchstens 9.
+-- Die Summe kann daher halbe oder Viertelpunkte enthalten; sie wird auf eine Nachkommastelle gerundet.
+
+alter table public.runden
+  alter column punkte_a type numeric(5, 1),
+  alter column punkte_b type numeric(5, 1);
+
 -- ===== seed.sql =====
 -- AUTOMATISCH ERZEUGT aus daten/ (npm run seed) – nicht von Hand bearbeiten.
 -- Nur vollständig geprüfte Einträge je Thema und Partei; alles andere gilt als „noch nicht erfasst“.

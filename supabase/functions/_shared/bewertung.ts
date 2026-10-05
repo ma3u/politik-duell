@@ -3,11 +3,23 @@ import type { AbdeckungEintrag, Ebene, Landesprogramm, Massnahme, Partei, Rolle,
 // Deterministische Punktevergabe aus der kuratierten Datenbank.
 // Die KI ist hier nicht beteiligt.
 
+/**
+ * Höchstpunktzahl je Ursache: so viel wie eine Maßnahme mit Wirksamkeit 3 × Umsetzbarkeit 3.
+ * Mehrere Lösungswege können sie gemeinsam erreichen, aber nicht überschreiten (docs/methode.md).
+ */
+export const MAX_JE_URSACHE = 9
+
+/** Gewicht eines Lösungswegs nach Rang innerhalb einer Ursache (0 = bester): 1, ½, ¼, … */
+export const gewichtNachRang = (rang: number) => 1 / 2 ** rang
+
+/** Auf eine Nachkommastelle, ohne Rundungsreste der Gleitkommazahlen. */
+const zehntel = (x: number) => Math.round(x * 10)
+
 export interface Treffer {
   massnahme: Massnahme
   /** Ursachen, für die diese Maßnahme gezählt wurde. */
   ursachen_ids: number[]
-  /** Punkte pro Ursache: Wirksamkeit (± Rolle, 0–3) × Umsetzbarkeit, also 0 bis 9. */
+  /** Punkte der Maßnahme selbst: Wirksamkeit (± Rolle, 0–3) × Umsetzbarkeit, also 0 bis 9 (vor dem Gewicht). */
   punkteJeUrsache: number
   rollenBonus: number
   /** Wirksamkeit nach Rollen-Modifikator (0–3). */
@@ -24,10 +36,33 @@ export interface GenutztesProgramm {
   abdeckung: AbdeckungEintrag
 }
 
+/** Ein gezählter Lösungsweg zu einer Ursache. */
+export interface Beitrag {
+  massnahme_id: number
+  /** Punkte der Maßnahme (0–9). */
+  punkte: number
+  /** 1 für den besten Lösungsweg, ½ für den zweiten, ¼ für den dritten … */
+  gewicht: number
+}
+
+/** Wertung einer Partei für eine Ursache. */
+export interface UrsachenWertung {
+  ursache_id: number
+  /** Summe der gewichteten Beiträge, höchstens MAX_JE_URSACHE, auf eine Nachkommastelle. */
+  punkte: number
+  /** Gezählte Lösungswege, bester zuerst (je Instrument nur die beste Maßnahme). */
+  beitraege: Beitrag[]
+  /** true, wenn die Summe über MAX_JE_URSACHE lag und gekappt wurde. */
+  gedeckelt: boolean
+}
+
 export interface ParteiErgebnis {
   partei: Partei
+  /** Summe über die Ursachen (auf eine Nachkommastelle). */
   punkte: number
   treffer: Treffer[]
+  /** Wertung je zugeordneter Ursache mit Maßnahme (Ursachen ohne Maßnahme fehlen). */
+  ursachen: UrsachenWertung[]
   /**
    * Erfassung des Themas für diese Partei; null = keine Wertung möglich (siehe `fehlt`).
    * Werden Bundes- und Landesprogramm genutzt: `keine` nur, wenn beide nichts zum Thema enthalten.
@@ -88,7 +123,11 @@ export function massnahmenPunkte(m: Massnahme, rolle: Rolle | null) {
 
 /**
  * Rundenpunkte einer Partei = Summe über die zugeordneten Ursachen.
- * Pro Ursache zählt die beste Maßnahme der Partei, die diese Ursache adressiert.
+ * Pro Ursache zählen die verschiedenen Lösungswege der Partei mit abnehmendem Gewicht:
+ * der beste voll, der zweite zur Hälfte, der dritte zu einem Viertel usw., zusammen
+ * höchstens MAX_JE_URSACHE. Ein Lösungsweg ist ein Instrument (`instrument_id`); mehrere
+ * Maßnahmen zum selben Instrument zählen nur einmal (die beste), eine Maßnahme ohne
+ * Instrument gilt als eigener Weg. Begründung in docs/methode.md → „Mehrere Maßnahmen je Ursache“.
  * Keine Maßnahme zum Thema → 0 Punkte. Ob das „nichts im Programm“ oder
  * „noch nicht erfasst“ heißt, steht in `abdeckung`.
  */
@@ -106,7 +145,7 @@ export function bewertePartei(
   const benoetigt = ursachenIds.length ? [...new Set(ursachenIds.map((id) => programmFuer(id, ebenen)))] : [null]
   const programme: GenutztesProgramm[] = []
   const ohneWertung = (fehlt: NonNullable<ParteiErgebnis['fehlt']>): ParteiErgebnis => ({
-    partei, punkte: 0, treffer: [], abdeckung: null, fehlt, programme: [],
+    partei, punkte: 0, treffer: [], ursachen: [], abdeckung: null, fehlt, programme: [],
   })
   for (const land of benoetigt) {
     let url = partei.programm_url
@@ -133,39 +172,55 @@ export function bewertePartei(
 
   const eigene = massnahmen.filter((m) => m.partei_id === partei.id && m.thema_id === themaId)
   const trefferJeMassnahme = new Map<number, Treffer>()
-  let punkte = 0
+  const ursachen: UrsachenWertung[] = []
+  let zehntelSumme = 0
 
   for (const ursacheId of ursachenIds) {
     const land = programmFuer(ursacheId, ebenen)
-    let beste: { m: Massnahme; p: ReturnType<typeof massnahmenPunkte> } | null = null
+    // Je Lösungsweg die beste Maßnahme; eine Maßnahme ohne Instrument ist ein eigener Weg.
+    const jeWeg = new Map<string, { m: Massnahme; p: ReturnType<typeof massnahmenPunkte> }>()
     for (const m of eigene) {
       if (!m.ursachen_ids.includes(ursacheId) || (m.land ?? null) !== land) continue
       const p = massnahmenPunkte(m, rolle)
-      if (!beste || p.punkte > beste.p.punkte) beste = { m, p }
+      const weg = m.instrument_id != null ? `i${m.instrument_id}` : `m${m.id}`
+      const bisher = jeWeg.get(weg)
+      if (!bisher || p.punkte > bisher.p.punkte) jeWeg.set(weg, { m, p })
     }
-    if (!beste) continue
-    punkte += beste.p.punkte
-    const vorhanden = trefferJeMassnahme.get(beste.m.id)
-    if (vorhanden) {
-      vorhanden.ursachen_ids.push(ursacheId)
-    } else {
-      trefferJeMassnahme.set(beste.m.id, {
-        massnahme: beste.m,
-        ursachen_ids: [ursacheId],
-        punkteJeUrsache: beste.p.punkte,
-        rollenBonus: beste.p.rollenBonus,
-        wirksamkeit: beste.p.wirksamkeit,
-        rollenBegruendung: beste.p.rollenBegruendung,
-      })
+    if (!jeWeg.size) continue
+    // Bester Weg zuerst; bei gleichen Punkten entscheidet die ID, damit die Reihenfolge feststeht.
+    const wege = [...jeWeg.values()].sort((x, y) => y.p.punkte - x.p.punkte || x.m.id - y.m.id)
+    // Wege ohne Punkte tragen nichts bei; gezeigt wird höchstens einer (wenn es sonst keinen gibt).
+    const gezaehlt = wege.filter((w, i) => i === 0 || w.p.punkte > 0)
+    const beitraege = gezaehlt.map((w, rang) => ({ massnahme_id: w.m.id, punkte: w.p.punkte, gewicht: gewichtNachRang(rang) }))
+    const roh = beitraege.reduce((s, b) => s + b.punkte * b.gewicht, 0)
+    const punkteUrsache = Math.min(zehntel(MAX_JE_URSACHE), zehntel(roh))
+    zehntelSumme += punkteUrsache
+    ursachen.push({ ursache_id: ursacheId, punkte: punkteUrsache / 10, beitraege, gedeckelt: roh > MAX_JE_URSACHE })
+
+    for (const { m, p } of gezaehlt) {
+      const vorhanden = trefferJeMassnahme.get(m.id)
+      if (vorhanden) {
+        vorhanden.ursachen_ids.push(ursacheId)
+      } else {
+        trefferJeMassnahme.set(m.id, {
+          massnahme: m,
+          ursachen_ids: [ursacheId],
+          punkteJeUrsache: p.punkte,
+          rollenBonus: p.rollenBonus,
+          wirksamkeit: p.wirksamkeit,
+          rollenBegruendung: p.rollenBegruendung,
+        })
+      }
     }
   }
+  const punkte = zehntelSumme / 10
 
   const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf)
   const treffer = [...trefferJeMassnahme.values()]
   // Entwurfswerte mit Kenntnis der Partei (oder vor der Blindbewertung entstanden): eigens gekennzeichnet.
   const nichtBlind = treffer.some((t) => t.massnahme.ki_entwurf && t.massnahme.entwurf_herkunft !== 'blind')
   return {
-    partei, punkte, treffer, abdeckung: erfasst, programme, ...(kiEntwurf ? { ki_entwurf: true } : {}), ...(nichtBlind ? { nicht_blind: true } : {}),
+    partei, punkte, treffer, ursachen, abdeckung: erfasst, programme, ...(kiEntwurf ? { ki_entwurf: true } : {}), ...(nichtBlind ? { nicht_blind: true } : {}),
   }
 }
 

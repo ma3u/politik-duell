@@ -132,7 +132,7 @@ export function berichtText(d: BerichtDaten): string {
   )
   if (vergleich.length) z.push('```', ...vergleich, '```', '')
   const ungebuendelt = ohneBuendel(k, e)
-  z.push(...details(`Ohne Bündel an Ursachen mit Bündeln (${ungebuendelt.length}, nur zur Information – je Ursache zählt die beste Maßnahme)`, ungebuendelt))
+  z.push(...details(`Ohne Bündel an Ursachen mit Bündeln (${ungebuendelt.length}, nur zur Information – je Instrument zählt eine Maßnahme)`, ungebuendelt))
 
   // Blindliste und Bewertung.
   if (d.liste) {

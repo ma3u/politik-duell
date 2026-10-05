@@ -3,7 +3,7 @@ import { ABDECKUNG, INSTRUMENTE, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from '
 import type { AbdeckungEintrag, Landesprogramm, Massnahme, Nachricht } from '../data/types'
 import { kartenHaltungen, MOCK_DATEN } from '../data/quelle'
 import { analysiere } from './analyse'
-import { besteParteien, bewertePartei, massnahmenPunkte, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
+import { besteParteien, bewertePartei, MAX_JE_URSACHE, massnahmenPunkte, punkteText, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
 import { ohneTreffer } from './ohneTreffer'
 
 const spieler = (...texte: string[]): Nachricht[] => texte.map((text) => ({ von: 'spieler', text }))
@@ -131,7 +131,7 @@ describe('analysiere (Mock der Edge Function)', () => {
 })
 
 describe('Bewertung', () => {
-  it('summiert über Ursachen und nimmt je Ursache die beste Maßnahme', () => {
+  it('summiert über Ursachen', () => {
     // Partei Gamma, Energie: Netzentgelte (2+2) + Importe (2+2); Steuern: keine Maßnahme
     const e = bewertePartei(partei(3), 3, [301, 302, 303], null, MASSNAHMEN, ABDECKUNG)
     expect(e.punkte).toBe(8)
@@ -207,6 +207,10 @@ describe('Bewertung', () => {
     expect(bewertePartei(partei(3), 3, [302], null, MASSNAHMEN, ABDECKUNG)).toMatchObject({ punkte: 0, abdeckung: { art: 'massnahmen' } })
   })
 
+  it('zeigt Punkte mit deutschem Komma', () => {
+    expect([8.5, 9, 0, 12.25].map(punkteText)).toEqual(['8,5', '9', '0', '12,3'])
+  })
+
   it('vergibt Rundenpunkte nach Regel', () => {
     expect(rundenpunkte(5, 3)).toEqual([1, 0])
     expect(rundenpunkte(2, 4)).toEqual([0, 1])
@@ -217,6 +221,80 @@ describe('Bewertung', () => {
   it('findet die insgesamt beste Partei', () => {
     const beste = besteParteien(PARTEIEN, 1, [101], null, MASSNAHMEN, ABDECKUNG)
     expect(beste.map((b) => b.partei.id)).toEqual([1])
+  })
+})
+
+describe('Mehrere Lösungswege je Ursache', () => {
+  // Thema 98, Ursachen 981 und 982, nur Partei Alpha (Bundesprogramm).
+  const alpha = partei(1)
+  const m = (id: number, w: 0 | 1 | 2 | 3, u: 0 | 1 | 2 | 3, instrument: number | null, ursachen = [981]): Massnahme => ({
+    id, thema_id: 98, partei_id: 1, beschreibung: `M${id}`, ursachen_ids: ursachen, instrument_id: instrument, wirksamkeit: w,
+    umsetzbarkeit: u, begruendung: 'x', beleg_programm_url: 'https://example.org/p.pdf#page=1', stand: '2026-05-01', geprueft: true,
+  })
+  const abdeckung: AbdeckungEintrag[] = [{ thema_id: 98, partei_id: 1, land: null, art: 'massnahmen', begruendung: null, stand: '2026-05-01' }]
+  const werte = (massnahmen: Massnahme[], ursachen = [981]) => bewertePartei(alpha, 98, ursachen, null, massnahmen, abdeckung)
+
+  it('zählt den besten Weg voll, jeden weiteren halb so stark wie den vorigen', () => {
+    // 6 + 4 × ½ + 2 × ¼ = 8,5 – die Reihenfolge der Daten spielt keine Rolle.
+    const e = werte([m(3, 1, 2, 12), m(1, 2, 3, 10), m(2, 2, 2, 11)])
+    expect(e.punkte).toBe(8.5)
+    expect(e.ursachen).toEqual([
+      {
+        ursache_id: 981,
+        punkte: 8.5,
+        gedeckelt: false,
+        beitraege: [
+          { massnahme_id: 1, punkte: 6, gewicht: 1 },
+          { massnahme_id: 2, punkte: 4, gewicht: 0.5 },
+          { massnahme_id: 3, punkte: 2, gewicht: 0.25 },
+        ],
+      },
+    ])
+    expect(e.treffer.map((t) => t.massnahme.id)).toEqual([1, 2, 3])
+  })
+
+  it('deckelt je Ursache bei 9 Punkten', () => {
+    // 9 + 9 × ½ = 13,5 → 9: Mehr Wege ersetzen keine weitere Ursache.
+    const e = werte([m(1, 3, 3, 10), m(2, 3, 3, 11)])
+    expect(e.punkte).toBe(MAX_JE_URSACHE)
+    expect(e.ursachen[0]).toMatchObject({ punkte: 9, gedeckelt: true })
+    // Eine starke Einzelmaßnahme bleibt gegen mehrere schwache konkurrenzfähig: 9 gegen 4 + 2 + 1 + 0,5.
+    const schwach = werte([m(1, 2, 2, 10), m(2, 2, 2, 11), m(3, 2, 2, 12), m(4, 2, 2, 13)])
+    expect(schwach.punkte).toBe(7.5)
+    expect(werte([m(1, 3, 3, 10)]).punkte).toBeGreaterThan(schwach.punkte)
+  })
+
+  it('zählt mehrere Maßnahmen zum selben Instrument nur einmal (die beste)', () => {
+    const e = werte([m(1, 2, 3, 10), m(2, 3, 3, 10), m(3, 1, 2, 11)])
+    // Instrument 10: 9 (Maßnahme 2), Instrument 11: 2 × ½ = 1 → 10 → gedeckelt 9.
+    expect(e.ursachen[0].beitraege.map((b) => b.massnahme_id)).toEqual([2, 3])
+    expect(e.treffer.map((t) => t.massnahme.id)).not.toContain(1)
+    const ohneDeckel = werte([m(1, 1, 3, 10), m(2, 2, 2, 10), m(3, 1, 2, 11)])
+    expect(ohneDeckel.punkte).toBe(4 + 2 * 0.5)
+  })
+
+  it('wertet eine Maßnahme ohne Instrument als eigenen Weg', () => {
+    expect(werte([m(1, 2, 3, null), m(2, 2, 3, null)]).punkte).toBe(6 + 3)
+  })
+
+  it('lässt Wege ohne Punkte weg, zeigt aber eine Maßnahme, wenn es nur solche gibt', () => {
+    const e = werte([m(1, 2, 3, 10), m(2, 0, 3, 11)])
+    expect(e.ursachen[0].beitraege.map((b) => b.massnahme_id)).toEqual([1])
+    const null_ = werte([m(1, 0, 3, 10), m(2, 0, 2, 11)])
+    expect(null_).toMatchObject({ punkte: 0, ursachen: [{ punkte: 0, beitraege: [{ massnahme_id: 1 }] }] })
+  })
+
+  it('rundet je Ursache auf eine Nachkommastelle und summiert über die Ursachen', () => {
+    // 3 + 3 × ½ + 3 × ¼ + 3 × ⅛ = 5,625 → 5,6; Ursache 982: 4.
+    const e = werte([m(1, 1, 3, 10), m(2, 1, 3, 11), m(3, 1, 3, 12), m(4, 1, 3, 13), m(5, 2, 2, 14, [982])], [981, 982])
+    expect(e.ursachen.map((u) => u.punkte)).toEqual([5.6, 4])
+    expect(e.punkte).toBe(9.6)
+  })
+
+  it('zählt eine Maßnahme zu mehreren Ursachen bei jeder Ursache', () => {
+    const e = werte([m(1, 2, 3, 10, [981, 982]), m(2, 2, 2, 11, [982])], [981, 982])
+    expect(e.punkte).toBe(6 + 6 + 4 * 0.5)
+    expect(e.treffer.find((t) => t.massnahme.id === 1)?.ursachen_ids).toEqual([981, 982])
   })
 })
 

@@ -113,7 +113,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 
 ## Bewertungsregeln im Prototyp
 
-- Pro zugeordneter Ursache zählt die beste Maßnahme der Partei: `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (0–3). Rundenpunkte = Summe.
+- Punkte je Maßnahme: `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (0–3). Pro zugeordneter Ursache zählen die verschiedenen Lösungswege der Partei mit abnehmendem Gewicht (bester voll, dann ½, ¼ …), höchstens 9 je Ursache. Rundenpunkte = Summe.
 - Höhere Summe → 1 Spielpunkt, Gleichstand → je 1 Punkt.
 - Annahme: Haben **beide** Parteien 0 Punkte (keine Maßnahme), gibt es keinen Punkt.
 - Die Rolle der Person, die das Problem nennt, gilt für die Bewertung beider Parteien.

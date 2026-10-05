@@ -6,6 +6,9 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 
 // _shared/bewertung.ts
+var MAX_JE_URSACHE = 9;
+var gewichtNachRang = (rang) => 1 / 2 ** rang;
+var zehntel = (x) => Math.round(x * 10);
 var findeAbdeckung = (abdeckung, parteiId, themaId, land = null) => abdeckung.find((a) => a.partei_id === parteiId && a.thema_id === themaId && (a.land ?? null) === land) ?? null;
 function programmFuer(ursacheId, ebenen) {
   if (!ebenen?.land) return null;
@@ -35,6 +38,7 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
     partei,
     punkte: 0,
     treffer: [],
+    ursachen: [],
     abdeckung: null,
     fehlt,
     programme: []
@@ -75,36 +79,59 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
   const erfasst = programme.every((p) => p.abdeckung.art === "keine") ? programme[0].abdeckung : programme.find((p) => p.abdeckung.art === "massnahmen").abdeckung;
   const eigene = massnahmen.filter((m) => m.partei_id === partei.id && m.thema_id === themaId);
   const trefferJeMassnahme = /* @__PURE__ */ new Map();
-  let punkte = 0;
+  const ursachen = [];
+  let zehntelSumme = 0;
   for (const ursacheId of ursachenIds) {
     const land = programmFuer(ursacheId, ebenen);
-    let beste = null;
+    const jeWeg = /* @__PURE__ */ new Map();
     for (const m of eigene) {
       if (!m.ursachen_ids.includes(ursacheId) || (m.land ?? null) !== land) continue;
       const p = massnahmenPunkte(m, rolle);
-      if (!beste || p.punkte > beste.p.punkte) beste = {
+      const weg = m.instrument_id != null ? `i${m.instrument_id}` : `m${m.id}`;
+      const bisher = jeWeg.get(weg);
+      if (!bisher || p.punkte > bisher.p.punkte) jeWeg.set(weg, {
         m,
         p
-      };
-    }
-    if (!beste) continue;
-    punkte += beste.p.punkte;
-    const vorhanden = trefferJeMassnahme.get(beste.m.id);
-    if (vorhanden) {
-      vorhanden.ursachen_ids.push(ursacheId);
-    } else {
-      trefferJeMassnahme.set(beste.m.id, {
-        massnahme: beste.m,
-        ursachen_ids: [
-          ursacheId
-        ],
-        punkteJeUrsache: beste.p.punkte,
-        rollenBonus: beste.p.rollenBonus,
-        wirksamkeit: beste.p.wirksamkeit,
-        rollenBegruendung: beste.p.rollenBegruendung
       });
     }
+    if (!jeWeg.size) continue;
+    const wege = [
+      ...jeWeg.values()
+    ].sort((x, y) => y.p.punkte - x.p.punkte || x.m.id - y.m.id);
+    const gezaehlt = wege.filter((w, i) => i === 0 || w.p.punkte > 0);
+    const beitraege = gezaehlt.map((w, rang) => ({
+      massnahme_id: w.m.id,
+      punkte: w.p.punkte,
+      gewicht: gewichtNachRang(rang)
+    }));
+    const roh = beitraege.reduce((s, b) => s + b.punkte * b.gewicht, 0);
+    const punkteUrsache = Math.min(zehntel(MAX_JE_URSACHE), zehntel(roh));
+    zehntelSumme += punkteUrsache;
+    ursachen.push({
+      ursache_id: ursacheId,
+      punkte: punkteUrsache / 10,
+      beitraege,
+      gedeckelt: roh > MAX_JE_URSACHE
+    });
+    for (const { m, p } of gezaehlt) {
+      const vorhanden = trefferJeMassnahme.get(m.id);
+      if (vorhanden) {
+        vorhanden.ursachen_ids.push(ursacheId);
+      } else {
+        trefferJeMassnahme.set(m.id, {
+          massnahme: m,
+          ursachen_ids: [
+            ursacheId
+          ],
+          punkteJeUrsache: p.punkte,
+          rollenBonus: p.rollenBonus,
+          wirksamkeit: p.wirksamkeit,
+          rollenBegruendung: p.rollenBegruendung
+        });
+      }
+    }
   }
+  const punkte = zehntelSumme / 10;
   const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf);
   const treffer = [
     ...trefferJeMassnahme.values()
@@ -114,6 +141,7 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
     partei,
     punkte,
     treffer,
+    ursachen,
     abdeckung: erfasst,
     programme,
     ...kiEntwurf ? {

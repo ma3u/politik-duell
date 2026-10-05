@@ -69,7 +69,7 @@ if (vorher.length) {
   if (vergleich.length) console.log('Jede Zeile prüfen, bevor entwurf:blind läuft: Ist der Wegfall gewollt (Rückfrage, Regel)? Sonst Korrektur nach SKILL.md, Fall „Korrektur einer fehlerhaften Rückfrage“.')
 }
 const ungebuendelt = ohneBuendel(katalog, { programme: liste, leitfaden })
-// Nur zur Information (kommt über entwurf:bericht in den Pull Request): Je Ursache zählt die beste
+// Nur zur Information (kommt über entwurf:bericht in den Pull Request): Je Instrument zählt eine
 // Maßnahme, eine zusätzliche gleichartige bringt keinen Punkt. Keine Prüfung durch die Koordination.
 const buendelDatei = join(pfad, '..', 'ohne-buendel.txt')
 writeFileSync(buendelDatei, ungebuendelt.join('\n') + (ungebuendelt.length ? '\n' : ''), 'utf8')
