@@ -6,7 +6,7 @@
 // Erwartet die Erfassung (thema_id) als erfassung.json im Arbeitsordner (eine Ebene über protokoll/).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { kurzbericht, programmName, pruefeProgramm, TREFFER_OHNE_MASSNAHME, vorgeschlageneUrsachen, zitatHinweise, type ErfasstesProgramm } from '../entwurf.ts'
+import { kurzbericht, programmName, pruefeProgramm, TREFFER_OHNE_MASSNAHME, vorgeschlageneUrsachen, zitatHinweise, type ErfasstesProgramm, nachtragUrsachen } from '../entwurf.ts'
 import { fundstellen, zulaessigeUrsachen } from './auftrag-text.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
@@ -78,7 +78,7 @@ try {
 // Pflichtursachen (viele Treffer, keine Maßnahme): gelesene Seiten und Grund strukturiert in „nicht_erfasst“.
 // So behebt der Agent eine fehlende Begründung selbst, statt dass die Koordination nachfragt.
 if (seiten) {
-  const ursachen = zulaessigeUrsachen(katalog, erfassung.thema_id, p.land ?? null).map((u) => u.id)
+  const ursachen = zulaessigeUrsachen(katalog, erfassung.thema_id, p.land ?? null, nachtragUrsachen(erfassung)).map((u) => u.id)
   const f = fundstellen(seiten, erfassung.suchbegriffe, ursachen)
   for (const u of ursachen) {
     const summe = Object.values(f.zahlen[u] ?? {}).reduce((a, r) => a + Object.values(r).reduce((x, y) => x + y, 0), 0)

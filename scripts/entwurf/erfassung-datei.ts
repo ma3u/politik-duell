@@ -26,7 +26,13 @@ export function leseErfassung(pfad: string): Erfassung {
 export function mitLeitfaden(e: Erfassung, leitfaden: Leitfaden | undefined): Erfassung {
   const { leitfaden: _, ...rest } = e
   if (!leitfaden) return rest
-  return { ...rest, ...(leitfaden.suchbegriffe ? { suchbegriffe: leitfaden.suchbegriffe } : {}), leitfaden }
+  let suchbegriffe = leitfaden.suchbegriffe
+  // Nachtrag: nur die Richtungen des Lösungswegs – für alle Programme gleich, wie sie im Leitfaden stehen.
+  if (suchbegriffe && e.nachtrag)
+    suchbegriffe = Object.fromEntries(
+      Object.entries(e.nachtrag.richtungen).map(([u, rs]) => [u, Object.fromEntries(rs.filter((r) => suchbegriffe![u]?.[r]).map((r) => [r, suchbegriffe![u][r]]))]),
+    )
+  return { ...rest, ...(suchbegriffe ? { suchbegriffe } : {}), leitfaden }
 }
 
 /** Arbeitsordner eines Themas aus dem Pfad einer Datei in protokoll/ oder programme/. */

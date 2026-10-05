@@ -19,6 +19,7 @@ import {
   type Erfassung,
   type ErfasstesProgramm,
   type Kennung,
+  nachtragUrsachen,
 } from '../entwurf.ts'
 import { zulaessigeUrsachen } from './auftrag-text.ts'
 import { erstesJsonObjekt } from './json-text.ts'
@@ -80,7 +81,7 @@ export function berichtText(d: BerichtDaten): string {
     const jeUrsache = new Map<number, string[]>()
     for (const [i, p] of e.programme.entries()) {
       if ((p.land ?? 'Bund') !== eb) continue
-      for (const u of zulaessigeUrsachen(k, e.thema_id, p.land)) {
+      for (const u of zulaessigeUrsachen(k, e.thema_id, p.land, nachtragUrsachen(e))) {
         const hat = p.massnahmen.some((m, j) =>
           b ? bestaetigteUrsachen(m, zuordnung.get(kennungNach.get(`${i}/${j}`) ?? '')).includes(u.id) : vorgeschlageneUrsachen(m).includes(u.id),
         )

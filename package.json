@@ -17,6 +17,11 @@
     "pruefliste": "node --experimental-strip-types scripts/erzeuge-pruefliste.ts",
     "haltung:pruefliste": "node --experimental-strip-types scripts/erzeuge-haltung-pruefliste.ts",
     "haltung:auswerten": "node --experimental-strip-types scripts/haltung-auswerten.ts",
+    "haltung:auftrag": "node --experimental-strip-types scripts/haltung/auftrag.ts",
+    "haltung:programm-pruefen": "node --experimental-strip-types scripts/haltung/programm-pruefen.ts",
+    "haltung:blind": "node --experimental-strip-types scripts/haltung/blind.ts",
+    "haltung:antwort-pruefen": "node --experimental-strip-types --no-warnings scripts/haltung/antwort-pruefen.ts",
+    "haltung:eintragen": "node --experimental-strip-types scripts/haltung/eintragen.ts",
     "pruefung:uebernehmen": "node --experimental-strip-types scripts/uebernehme-pruefung.ts",
     "zitate:pruefen": "node --experimental-strip-types scripts/pruefe-zitate.ts",
     "daten:id": "node --experimental-strip-types scripts/daten-id.ts",
@@ -27,6 +32,7 @@
     "quelle:text": "node --experimental-strip-types scripts/entwurf/quelle-text.ts",
     "programm:sichern": "node --experimental-strip-types scripts/entwurf/programm-sichern.ts",
     "punkte": "node --experimental-strip-types scripts/entwurf/punkte.ts",
+    "instrumente": "node --experimental-strip-types scripts/entwurf/instrumente.ts",
     "ursachen:freigegeben": "node --experimental-strip-types scripts/entwurf/ursachen-freigegeben.ts",
     "entwurf:blind": "node --experimental-strip-types scripts/entwurf/blind.ts",
     "entwurf:auftrag": "node --experimental-strip-types scripts/entwurf/auftrag.ts",
@@ -43,7 +49,8 @@
     "entwurf:bericht": "node --experimental-strip-types scripts/entwurf/bericht.ts",
     "entwurf:archivieren": "node --experimental-strip-types scripts/entwurf/archivieren.ts",
     "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
-    "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts"
+    "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts",
+    "liste:auswahl": "node --experimental-strip-types scripts/liste-auswahl.ts"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",

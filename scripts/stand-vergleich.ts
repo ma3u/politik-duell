@@ -19,8 +19,12 @@ const ort = (k: Katalog, partei: number, land: string | null) => `${k.parteien.f
  * 4. Neue oder geänderte Ursachen und Ziele nennen keine Partei.
  * 5. Haltungen: Frage, Beschreibung und Zielkonflikte (Phase A) und die Positionen (Phase B) ändern sich nicht im
  *    selben Pull Request; ändert sich Phase A nach der Freigabe, braucht es eine neue Freigabe.
+ *
+ * Ausnahme zu 3 und 5 für die Testphase: Mit KI-Freigabe (`freigabe.art: "ki"`) dürfen beide Phasen im selben
+ * Pull Request stehen, wenn der Commit-Verlauf (`verlauf`) zeigt, dass Phase A in einem eigenen Commit mit der
+ * KI-Freigabe feststand, bevor Maßnahmen bzw. Positionen dazukamen, und sich danach nicht mehr geändert hat.
  */
-export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
+export function vergleicheStand(alt: Katalog, neu: Katalog, verlauf?: Verlauf): string[] {
   const fehler: string[] = []
   const alteUrsachen = new Set(alt.ursachen.map((u) => u.id))
   for (const u of neu.ursachen) {
@@ -52,8 +56,8 @@ export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
   for (const i of neu.instrumente) pruefe(i.id, { werte: werte(i), herkunft: i.entwurf_herkunft, bewertungen: i.bewertungen }, 'Instrument')
   for (const m of neu.massnahmen)
     if (m.instrument_id === undefined) pruefe(m.id, { werte: werte(m), herkunft: m.entwurf_herkunft, bewertungen: m.bewertungen ?? 0 }, 'Maßnahme')
-  fehler.push(...trennePhasen(alt, neu))
-  fehler.push(...trenneHaltungsPhasen(alt, neu))
+  fehler.push(...trennePhasen(alt, neu, verlauf))
+  fehler.push(...trenneHaltungsPhasen(alt, neu, verlauf))
   return fehler
 }
 
@@ -62,17 +66,18 @@ export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
  * verwandte Themen und Zielkonflikte ohne Blick in die Programme, freigegeben von der Betreiberin; dann die
  * Positionen. Sonst ließe sich die Frage passend zu den gefundenen Positionen zuschneiden.
  */
-export function trenneHaltungsPhasen(alt: Katalog, neu: Katalog): string[] {
+export function trenneHaltungsPhasen(alt: Katalog, neu: Katalog, verlauf?: Verlauf): string[] {
   const fehler: string[] = []
-  const phaseA = (h: Katalog['haltungen'][number]) => JSON.stringify([h.frage, h.beschreibung, h.verwandte_themen, h.zielkonflikte])
+  const phaseA = (h: Katalog['haltungen'][number]) => JSON.stringify([h.frage, h.beschreibung, h.verwandte_themen, h.zielkonflikte, h.einordnung ?? null])
   for (const h of neu.haltungen) {
     const vorher = alt.haltungen.find((x) => x.id === h.id)
     const aGeaendert = !vorher || phaseA(vorher) !== phaseA(h)
     const bGeaendert = JSON.stringify(vorher?.positionen ?? []) !== JSON.stringify(h.positionen)
-    if (aGeaendert && bGeaendert && h.positionen.length)
+    if (aGeaendert && bGeaendert && h.positionen.length && !phaseAZuerst(verlauf?.haltung(h.id), HALTUNG_PHASEN))
       fehler.push(
         `Haltung ${h.id}: ${vorher ? 'Frage, Beschreibung oder Zielkonflikte' : 'neue Haltung'} und Positionen im selben Pull Request – ` +
-          'erst Frage, Beschreibung und Zielkonflikte freigeben lassen (eigener Pull Request), dann die Positionen erfassen',
+          'erst Frage, Beschreibung und Zielkonflikte freigeben lassen (eigener Pull Request), dann die Positionen erfassen – ' +
+          'oder (Testphase) Phase A mit „freigabe“: { „art“: „ki“ } zuerst in einem eigenen Commit',
       )
     if (vorher && aGeaendert && h.freigabe && vorher.freigabe?.datum === h.freigabe.datum)
       fehler.push(`Haltung ${h.id}: Frage, Beschreibung oder Zielkonflikte nach der Freigabe geändert – neue Freigabe („freigabe.datum“) nötig`)
@@ -83,7 +88,7 @@ export function trenneHaltungsPhasen(alt: Katalog, neu: Katalog): string[] {
 const ursacheText = (u: Katalog['ursachen'][number]) => JSON.stringify([u.beschreibung, u.quelle_url, u.ebene ?? 'bund'])
 
 /** Phase A (Ursachen, Ziel) und Phase B–D (Maßnahmen) desselben Themas nicht im selben Pull Request. */
-export function trennePhasen(alt: Katalog, neu: Katalog): string[] {
+export function trennePhasen(alt: Katalog, neu: Katalog, verlauf?: Verlauf): string[] {
   const fehler: string[] = []
   const namen = neu.parteien.flatMap((p) => [p.name, p.kurzname])
   const massnahmenTeil = (k: Katalog, id: number) =>
@@ -111,11 +116,55 @@ export function trennePhasen(alt: Katalog, neu: Katalog): string[] {
       vorher && !zielNeu && !entfernt.length &&
       geaendert.every((u) => !alteU.has(u.id) && u.nachtraeglich) &&
       neu.abdeckung.filter((a) => a.thema_id === t.id && a.aktuell).every((a) => a.durchsucht_fuer)
-    if (!ausnahme)
+    if (!ausnahme && !phaseAZuerst(verlauf?.thema(t.id), THEMA_PHASEN))
       fehler.push(
         `Thema ${t.id}: ${!vorher ? 'neues Thema' : zielNeu ? 'Ziel' : `Ursache ${[...geaendert.map((u) => u.id), ...entfernt].join(', ')}`} und Maßnahmen im selben Pull Request – ` +
-          'erst Ursachen und Ziel freigeben lassen (eigener Pull Request), dann erfassen. Ausnahme: neue Ursache mit „nachtraeglich“ und „durchsucht_fuer“ an jedem aktuellen Eintrag',
+          'erst Ursachen und Ziel freigeben lassen (eigener Pull Request), dann erfassen – oder (Testphase) Phase A mit „freigabe“: { „art“: „ki“ } zuerst in einem eigenen Commit. ' +
+          'Ausnahme: neue Ursache mit „nachtraeglich“ und „durchsucht_fuer“ an jedem aktuellen Eintrag',
       )
   }
   return fehler
 }
+
+type Json = Record<string, unknown>
+
+/**
+ * Stände einer Themen- bzw. Haltungsdatei im Pull Request, ältester zuerst: `[Zielzweig, Commit 1, …, letzter Commit]`
+ * (der erste Eintrag `undefined`, wenn die Datei im Zielzweig fehlt). Liefert `undefined`, wenn der Verlauf unbekannt ist.
+ */
+export interface Verlauf {
+  thema: (id: number) => (Json | undefined)[] | undefined
+  haltung: (id: number) => (Json | undefined)[] | undefined
+}
+
+interface Phasen {
+  a: (j: Json) => string
+  b: (j: Json) => string
+}
+const THEMA_PHASEN: Phasen = {
+  a: (j) => JSON.stringify([j.ziel ?? null, j.ursachen ?? []]),
+  b: (j) => JSON.stringify([j.instrumente ?? [], j.abdeckung ?? []]),
+}
+const HALTUNG_PHASEN: Phasen = {
+  a: (j) => JSON.stringify([j.frage, j.beschreibung, j.verwandte_themen, j.zielkonflikte, j.einordnung ?? null]),
+  b: (j) => JSON.stringify(j.positionen ?? []),
+}
+const kiFreigabe = (j: Json | undefined) => (j?.freigabe as Json | undefined)?.art === 'ki'
+
+/**
+ * Stand Phase A mit KI-Freigabe in einem eigenen Commit fest, bevor Phase B begann, und blieb danach gleich?
+ * Reine Funktion über die Stände aus `Verlauf` (Tests: scripts/entwurf.test.ts).
+ */
+export function phaseAZuerst(staende: (Json | undefined)[] | undefined, p: Phasen = THEMA_PHASEN): boolean {
+  if (!staende || staende.length < 3) return false
+  const [basis, ...commits] = staende
+  const ende = commits.at(-1)
+  if (!ende || !kiFreigabe(ende)) return false
+  const bBasis = p.b(basis ?? {})
+  const start = commits.findIndex((c) => c && p.b(c) !== bBasis)
+  if (start < 1) return false
+  const vorher = commits[start - 1]
+  if (!vorher || !kiFreigabe(vorher)) return false
+  return commits.slice(start - 1).every((c) => c && p.a(c) === p.a(ende))
+}
+export { HALTUNG_PHASEN, THEMA_PHASEN }

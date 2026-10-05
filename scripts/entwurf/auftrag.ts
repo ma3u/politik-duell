@@ -8,7 +8,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { PROTOKOLL, programmName, pruefeLeitfaden, pruefeSuchbegriffe } from '../entwurf.ts'
+import { PROTOKOLL, nachtragUrsachen, programmName, pruefeLeitfaden, pruefeNachtrag, pruefeSuchbegriffe } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs, textdatei } from '../programme.ts'
 import { auftragText, auswahlProgramme, zulaessigeUrsachen } from './auftrag-text.ts'
@@ -44,7 +44,7 @@ if (fehler.length) {
 const erfassung = leseErfassung(pfad)
 const themaId = erfassung.thema_id
 if (!erfassung.leitfaden) console.error(`Hinweis: Kein Leitfaden (${relative(process.cwd(), fileURLToPath(leitfadenPfad(themaId)))}) – Abgrenzungsfragen landen dann in Rückfragen. Erst den Leitfaden anlegen?`)
-const leitfadenFehler = erfassung.leitfaden ? pruefeLeitfaden(katalog, erfassung.leitfaden) : []
+const leitfadenFehler = [...(erfassung.leitfaden ? pruefeLeitfaden(katalog, erfassung.leitfaden) : []), ...pruefeNachtrag(katalog, erfassung, erfassung.leitfaden)]
 for (const f of leitfadenFehler) console.error(`Fehler:  ${f}`)
 if (leitfadenFehler.length) process.exit(1)
 
@@ -64,10 +64,20 @@ let nichtGeladen = 0
 const fertig: string[] = []
 for (const p of auswahl) {
   const partei = katalog.parteien.find((x) => x.kurzname === p.partei)!
-  if (katalog.abdeckung.some((a) => a.thema_id === themaId && a.partei_id === partei.id && (a.land ?? null) === p.land && a.aktuell)) {
-    console.log(`übersprungen: ${p.name} – hat schon einen Eintrag (von Hand ergänzen)`)
+  const hatEintrag = katalog.abdeckung.some((a) => a.thema_id === themaId && a.partei_id === partei.id && (a.land ?? null) === p.land && a.aktuell)
+  // Normale Erfassung: nur Programme ohne Eintrag. Nachtrag: nur Programme mit Eintrag (die anderen erfasst das Thema vollständig).
+  if (hatEintrag !== !!erfassung.nachtrag) {
+    console.log(`übersprungen: ${p.name} – ${hatEintrag ? 'hat schon einen Eintrag (Nachtrag eines Lösungswegs: /forderung-erfassen)' : 'noch nicht erfasst (erst /thema-erfassen)'}`)
     continue
   }
+  const nur = nachtragUrsachen(erfassung)
+  if (nur && !zulaessigeUrsachen(katalog, themaId, p.land, nur).length) continue
+  const bereits = erfassung.nachtrag
+    ? katalog.massnahmen.filter((m) => m.thema_id === themaId && m.partei_id === partei.id && (m.land ?? null) === p.land && m.zitat).map((m) => ({
+        seite: Number(/#page=(\d+)/.exec(m.beleg_programm_url)?.[1] ?? 0),
+        zitat: m.zitat!,
+      }))
+    : undefined
   const name = programmName(p.partei, p.land)
   let seiten: string[]
   try {
@@ -86,10 +96,10 @@ for (const p of auswahl) {
     erfassung,
     { partei_id: partei.id, kurzname: partei.kurzname, land: p.land, url: p.url, stand: lp ? lp.stand : partei.programm_stand },
     seiten,
-    { textPfad: textPfad.replace(/\\/g, '/'), ergebnisPfad: join(ordner, 'protokoll', PROTOKOLL.erfassung(partei.kurzname, p.land)).replace(/\\/g, '/'), maxSeiten },
+    { textPfad: textPfad.replace(/\\/g, '/'), ergebnisPfad: join(ordner, 'protokoll', PROTOKOLL.erfassung(partei.kurzname, p.land)).replace(/\\/g, '/'), maxSeiten, bereits },
   )
   writeFileSync(auftragPfad, text, 'utf8')
-  const ursachen = zulaessigeUrsachen(katalog, themaId, p.land).map((u) => u.id)
+  const ursachen = zulaessigeUrsachen(katalog, themaId, p.land, nur).map((u) => u.id)
   console.log(`${auftragPfad}  (${seiten.length} Seiten, Ursachen ${ursachen.join(', ')}, ${Math.round(text.length / 1000)} Tsd. Zeichen)`)
   fertig.push(auftragPfad.replace(/\\/g, '/'))
 }

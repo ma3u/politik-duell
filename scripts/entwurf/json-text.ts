@@ -84,8 +84,11 @@ export function fehlerStelle(t: string): number {
   }
 }
 
-export function erstesJsonObjekt(text: string): { objekt: unknown; rest: string } {
-  const start = text.indexOf('{')
+/** Erstes JSON-Objekt im Text; mit `auchListe` auch eine Liste, wenn sie vor dem ersten Objekt beginnt. */
+export function erstesJsonObjekt(text: string, auchListe = false): { objekt: unknown; rest: string } {
+  const klammer = text.indexOf('{')
+  const eckig = auchListe ? text.indexOf('[') : -1
+  const start = eckig >= 0 && (klammer < 0 || eckig < klammer) ? eckig : klammer
   if (start < 0) throw new Error('Kein JSON-Objekt gefunden.')
   let tiefe = 0
   let inText = false
@@ -107,7 +110,7 @@ export function erstesJsonObjekt(text: string): { objekt: unknown; rest: string 
         throw new Error(`Kein gültiges JSON: „${c}“ schließt ${auf === undefined ? 'nichts' : `„${text[auf]}“ aus ${ort(text, auf)}`} – ${ort(text, i)}`)
     }
     tiefe = offen.length
-    if (c === '}' && tiefe === 0) {
+    if ((c === '}' || (c === ']' && text[start] === '[')) && tiefe === 0) {
       try {
         return { objekt: JSON.parse(text.slice(start, i + 1)), rest: text.slice(i + 1).trim() }
       } catch (e) {

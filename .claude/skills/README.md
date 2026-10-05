@@ -1,86 +1,62 @@
 # Ablauf der Skills und Agenten
 
-Der Hauptagent koordiniert die Skills und prüft die Ergebnisse. Die drei spezialisierten Agenten übernehmen Recherche, Erfassung und Bewertung.
+Die Skills bauen den Katalog für die **geschlossene Testphase** auf: alles als KI-Entwurf mit KI-Freigabe (`"freigabe": { "art": "ki" }`), ohne menschliche Prüfschritte unterwegs. Menschen prüfen danach (Bewertung in der App, Belegprüfung, blinde Einordnung der Haltungen – `daten/README.md` → „Prüfung“); erst dann wird etwas öffentlich.
 
 ```mermaid
 flowchart TD
-    subgraph A["Phase A · /thema-anlegen"]
-        A1["Thema prüfen<br/>Wahlprogramm-Zugriffe sperren"]
-        A2["Agent: ursachen-recherche<br/>Unabhängige Quellen, Ziel, Ursachen, Perspektiven"]
-        A3["Hauptagent prüft Vorschlag<br/>und liest fehlende Quellen nach"]
-        A4["Themendatei, Leitfaden und Dokumentation<br/>Seed, Datenprüfung, Tests"]
-        A5["Pull Request nur mit Ursachen<br/>STOPP"]
-        A1 --> A2 --> A3 --> A4 --> A5
-        A3 -->|"Rückfragen"| A2
+    L["/liste-einordnen<br/>Liste sortieren: Haltung, Forderung, Thema,<br/>Grenze, Pauschal, Tatsache, Meta, doppelt"]
+    LB["Betreiberin hakt ab (oder --direkt)"]
+    L --> LB
+    LB -->|Haltungen| H1
+    LB -->|Themen| T1
+    LB -->|Forderungen| F1
+    LB -->|alle| EV["docs/prompt-evaluation.md"]
+    subgraph T["Themen"]
+        T1["/thema-anlegen<br/>Programme gesperrt · Agent ursachen-recherche<br/>Ursachen, Leitfaden, Suchbegriffe"]
+        T2["KI-Freigabe · eigener Commit"]
+        T3["/thema-erfassen<br/>je Programm Agent programm-erfassung (Zitat, Seite)<br/>Skripte prüfen, Rückfragen nur bei Skriptfehlern"]
+        T4["entwurf:blind → Agent blind-bewertung<br/>ohne Parteinamen: Werte, Instrumente, Zuordnung"]
+        T5["entwurf:eintragen · Prüfungen · Archiv · Pull Request"]
+        T1 --> T2 --> T3 --> T4 --> T5
     end
-
-    F["Betreiberin prüft Originalquellen, Ebenen und Leitfaden<br/>trägt Freigabe ein und mergt"]
-    A5 --> F
-    F -.->|"Danach separat aufrufen"| B0
-
-    subgraph B["Phase B · /thema-erfassen"]
-        B0{"Ursachen freigegeben<br/>und unverändert?"}
-        STOP["Abbruch"]
-        B1["Leitfaden mit Suchbegriffen (im Repository)<br/>entwurf:treffer --vorab: zu allgemeine Begriffe genauer fassen oder begründen<br/>entwurf:auftrag: Texte, Treffer, Fundstellen je Programm"]
-        B2["Agent: programm-erfassung<br/>Nur der eigene Auftrag, bis zu 7 parallel"]
-        B3["Agent prüft sich selbst<br/>entwurf:programm-pruefen: Zitat auf der Seite, Bündel, Ebene, Pflichtursachen begründet<br/>Kurzbericht in fester Form"]
-        B4["Koordination: zusammenführen, Treffermatrix<br/>höchstens eine gebündelte Rückfrage je Programm"]
-        B5["Vergleich mit dem vorherigen Stand<br/>entfallen, zusammengefasst, Ursache ohne Maßnahme"]
-        B0 -->|"Nein"| STOP
-        B0 -->|"Ja"| B1 --> B2 --> B3 --> B4
-        B3 -->|"Fehler"| B2
-        B4 -->|"Unplausibel oder offener Hinweis"| B2
-        B4 --> B5
-        B5 -->|"Verlust durch eigene Rückfrage: Korrektur, protokolliert"| B2
+    subgraph F["Forderungen"]
+        F1["/forderung-erfassen<br/>npm run instrumente: schon vorhanden?"]
+        F2["neue Suchbegriffe im Leitfaden<br/>Nachtrag nur in erfassten Programmen"]
+        F1 --> F2 --> T4
     end
-
-    subgraph C["Phase C · Blindbewertung"]
-        C1["entwurf:blind<br/>Herkunft anonymisieren, Regeln des Leitfadens, Prüfsumme<br/>Kennungen über den Inhalt: neu / entfallen / geändert<br/>Erfassung einfrieren"]
-        C1a["entwurf:bewertung-auftrag<br/>Auftrag mit zwei Pfaden, Prüfsumme, Datum"]
-        C2["Agent: blind-bewertung<br/>liest nur blind.json, schreibt nur bewertung-antwort.txt (Hook)<br/>Quellen vorhandener Instrumente zuerst, Bewertung<br/>entscheidet die Zuordnung zu Ursachen<br/>prüft sich selbst: entwurf:antwort-pruefen"]
-        C3["entwurf:json und entwurf:bewertung-pruefen<br/>Koordination prüft Methode, nicht Ergebnis"]
-        B5 -->|"geprüft"| C1 --> C1a --> C2 --> C3
-        C3 -->|"Formfehler: Rückfrage an denselben Agenten"| C1a
-        C3 -->|"wenige Kennungen neu: Teil-Neubewertung"| C1
+    subgraph H["Haltungen"]
+        H1["/haltung-anlegen<br/>Programme gesperrt · je Haltung Agent haltung-recherche (parallel)<br/>Frage, Zielkonflikte, Einordnung, Suchbegriffe · KI-Freigabe · Commit"]
+        H2["/haltung-erfassen (alle Haltungen in einem Lauf)<br/>je Programm ein Agent haltung-erfassung für alle Fragen"]
+        H3["haltung:blind → ein Agent haltung-einordnung<br/>ohne Parteinamen: ja/nein/teils, Kurzfassung"]
+        H4["haltung:eintragen (mind. 3 erkennbare Positionen)"]
+        H1 --> H2 --> H3 --> H4
     end
-
-    subgraph D["Phase D · Eintragen und Übergabe"]
-        D1["Eintragen als ungeprüfter KI-Entwurf<br/>nur bestätigte Ursachen, IDs und Beleg-Links"]
-        D2["Daten, Zitate, Punkte, Seed und Tests prüfen"]
-        D3["entwurf:bericht und entwurf:archivieren<br/>Dokumentation und Pull Request<br/>Protokolle im Repository, offene Fragen ausweisen"]
-        C3 -->|"Prüfung bestanden"| D1 --> D2 --> D3
-    end
-
-    D3 --> H["Menschliche Bewertung durch eingeladene Prüfende<br/>Belegprüfung durch Betreiberin"]
+    T5 --> P["Später: menschliche Prüfung ersetzt KI-Freigabe und KI-Entwurf"]
+    H4 --> P
 ```
 
-## Informationsgrenzen
+## Was die Neutralität sichert (auch ohne menschliche Prüfung)
 
-| Rolle | Darf sehen / tun | Darf nicht |
-|---|---|---|
-| `ursachen-recherche` | Unabhängige Quellen recherchieren | Wahlprogramme oder Parteiquellen lesen |
-| `programm-erfassung` | Den eigenen Auftrag und das zugewiesene Programm lesen, Maßnahmen belegen, Ergebnis selbst schreiben und prüfen | Maßnahmen bewerten, andere Programme oder die Gesamterfassung lesen |
-| `blind-bewertung` | `blind.json` und die eigene Antwort lesen, `protokoll/bewertung-antwort.txt` schreiben, die Selbstprüfung ausführen, unabhängige Quellen recherchieren; Zuordnung zu Ursachen entscheiden | Andere Dateien lesen oder schreiben, andere Befehle (Hook), Herkunft suchen |
-| Koordination (Hauptagent bei `/thema-erfassen`) | Leitfaden und Suchbegriffe festlegen, Aufträge, Protokolle und Prüfungen koordinieren, eigene fehlerhafte Rückfragen protokolliert korrigieren | Programme selbst lesen, Werte oder Zuordnungen vergeben, Blindliste oder Bewertung abschreiben |
+| Sicherung | Wie |
+|---|---|
+| Ursachen und Fragen vor den Programmen | Phase A mit Programmsperre (`npm run phase-a`, Hook `.claude/hooks/sperre.mjs`); eigener Commit mit KI-Freigabe, bevor erfasst wird – `daten:id --gegen` prüft das am Commit-Verlauf |
+| Gleiche Suche für alle | Suchbegriffe und Leitfaden je Thema bzw. Haltung, für alle Programme gleich, von Skripten gezählt |
+| Belegte Zitate | Jeder Erfassungs-Agent prüft sein Zitat gegen die PDF-Seite (`entwurf:programm-pruefen`, `haltung:programm-pruefen`); `zitate:pruefen` in der CI |
+| Urteil ohne Parteinamen | `blind-bewertung` und `haltung-einordnung` sehen nur neutralisierte Listen; der Hook sperrt ihnen alles andere |
+| Keine Eingriffe der Koordination | Sie liest keine Programme und vergibt keine Werte; Rückfragen nur bei Skriptfehlern und im Protokoll |
+| Fehlende Daten kosten nichts | Nicht durchsuchte Programme bleiben „noch nicht erfasst“, nie „keine Maßnahme“ |
 
-## Wichtige Regeln
+## Sparsam
 
-- Phase A endet mit dem Pull Request. Die Erfassung startet erst nach menschlicher Freigabe und Merge durch einen separaten Aufruf von `/thema-erfassen`.
-- Nicht durchsuchte Programme bleiben „noch nicht erfasst“, nicht „keine Maßnahme“. Fehlende Daten dürfen keiner Partei einen Punkt kosten.
-- Alle Programme erhalten dieselben Suchbegriffe je Ursache und Lösungsrichtung und denselben Leitfaden (`daten/leitfaeden/<ID>.json`). Zusätzliche Synonyme und neue Bündel werden für alle Programme berücksichtigt.
-- Grenzfälle der Zuordnung markiert die Erfassung als `ursachen_offen`; entschieden wird ohne Parteinamen in der Bewertung. Unbestätigte Ursachen fallen beim Eintragen weg.
-- **Bündel** (Erfassung) und **Instrument** (Bewertung) sind verschiedene Dinge: Ein Bündel begrenzt je Programm gleichartige Einzelzusagen auf eine Maßnahme; ein Instrument fasst gleiche Lösungswege für eine gemeinsame Bewertung zusammen. Zwei verschiedene Zusagen werden nie zusammengefasst, nur um die Bündelregel einzuhalten.
-- Was Skripte können (zählen, Fundstellen, Zitatprüfung, Vergleich nach Rückfragen), machen Skripte. Höchstens eine gebündelte Rückfrage je Programm; Korrekturen eigener Fehler sind erlaubt und stehen im Protokoll und im Pull Request.
-- Kennungen der Blindliste bleiben stabil (Zuordnung über Partei, Land und Zitat). Neue Maßnahmen bekommen neue Kennungen, entfallene werden nicht neu vergeben.
-- Erfassungs-Agenten laufen mit der nächstkleineren Modellstufe des Koordinators (wenn wählbar, nie automatisch die kleinste), alle Programme eines Durchlaufs mit demselben Modell; die Bewertung mit dem Modell des Koordinators.
-- Aufträge, Antworten und Rückfragen werden protokolliert. Die Agenten schreiben ihre Antworten selbst; niemand schreibt Blindliste oder Bewertung ab.
-- Änderungen an der eingefrorenen Erfassung erfordern eine neue Blindliste und Bewertung.
-- Die Bewertungen sind KI-Entwürfe. Die Punkte im Spiel kommen deterministisch aus dem Datenkatalog, nicht aus einer Bewertung durch die Gesprächs-KI.
+- Skripte statt Agenten, wo es geht (zählen, Fundstellen, Zitate, Zusammenführen, Bericht).
+- Keine inhaltlichen Rückfragen, keine Nachrecherche der Koordination, eine Runde für die Suchbegriffe.
+- Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf, Erfassung mit der nächstkleineren Modellstufe.
+- Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.
+- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen.
+- Keine Dokumentpflege außer dem Abschnitt in `docs/perspektiven-ursachen.md` bzw. `docs/haltungen.md`; der Rest steht in Protokoll und Pull Request.
 
 ## Grundlage
 
-- Skill [thema-anlegen/SKILL.md](thema-anlegen/SKILL.md)
-- Skill [thema-erfassen/SKILL.md](thema-erfassen/SKILL.md) mit Referenzen in [thema-erfassen/reference/](thema-erfassen/reference/) und Evaluationen in [thema-erfassen/evals/](thema-erfassen/evals/)
-- Agent [../agents/ursachen-recherche.md](../agents/ursachen-recherche.md)
-- Agent [../agents/programm-erfassung.md](../agents/programm-erfassung.md)
-- Agent [../agents/blind-bewertung.md](../agents/blind-bewertung.md)
+- Skills: [liste-einordnen](liste-einordnen/SKILL.md), [thema-anlegen](thema-anlegen/SKILL.md), [thema-erfassen](thema-erfassen/SKILL.md), [forderung-erfassen](forderung-erfassen/SKILL.md), [haltung-anlegen](haltung-anlegen/SKILL.md), [haltung-erfassen](haltung-erfassen/SKILL.md)
+- Agenten: [ursachen-recherche](../agents/ursachen-recherche.md), [programm-erfassung](../agents/programm-erfassung.md), [blind-bewertung](../agents/blind-bewertung.md), [haltung-recherche](../agents/haltung-recherche.md), [haltung-erfassung](../agents/haltung-erfassung.md), [haltung-einordnung](../agents/haltung-einordnung.md)
+- Evaluationen der Erfassung: [thema-erfassen/evals/](thema-erfassen/evals/)

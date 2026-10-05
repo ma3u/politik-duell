@@ -331,7 +331,7 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 
 - Haltungen anlegen wie Themen in zwei Phasen: **A** Frage, Beschreibung, Zielkonflikte (ohne Blick in die Programme, Freigabe durch die Betreiberin), **B** Positionen aus allen sieben Programmen.
 - Positionen mit KI-Hilfe erfassen ist erlaubt (gekennzeichnet `ki_entwurf`), wie bei Maßnahmen. Belegprüfung durch die Betreiberin; Einordnung `ja`/`nein`/`teils` zusätzlich durch zwei Prüfende, die die Partei **nicht** sehen (blind wie bei Maßnahmen: Zitat ohne Parteinamen).
-- Später eigener Skill `/haltung-anlegen` analog zu `/thema-anlegen`.
+- Skills `/haltung-anlegen` (Phase A, KI-Freigabe für die Testphase) und `/haltung-erfassen` (Phase B: Fundstelle je Programm, Einordnung ohne Parteinamen durch einen zweiten Agenten), siehe `.claude/skills/README.md`.
 
 ## Tests
 
@@ -392,3 +392,5 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 | E7 | Welche drei Pilot-Haltungen? | Zuwanderung begrenzen, Tempolimit, häusliche Kinderbetreuung fördern. |
 | E8 | Verbraucht eine Karte die Runde? | Nein; höchstens eine Haltungskarte je Runde. |
 | E9 | Wer prüft die Formulierung der Haltungsfragen (B1 Nr. 4)? | Zwei Personen mit unterschiedlicher politischer Haltung; bis zur Vereinsgründung aus dem Kreis der Prüfenden. |
+
+**Nachtrag 5. 10. 2026 zu E7 und B6:** Für die geschlossene Testphase dürfen weitere Haltungen als KI-Entwurf angelegt und erfasst werden (`/liste-einordnen`, `/haltung-anlegen`, `/haltung-erfassen`). Vor einer öffentlichen Anzeige weiterer Haltungen gilt E7 weiter: erst Tests mit Spielenden aus verschiedenen Lagern.

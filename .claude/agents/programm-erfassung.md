@@ -32,6 +32,10 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
 8. **Beschreibung** höchstens 200 Zeichen, sinngemäß, ohne Parteinamen, keine Zahl, die nicht im Zitat steht.
 9. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), trage ihn in `stand_im_pdf` ein.
 
+## Nachtrag eines Lösungswegs
+
+Beginnt der Auftrag mit „Nachtrag: Lösungsweg …“, ist das Programm zum Thema schon erfasst. Dann erfasst du **nur** Zusagen zu den dort genannten Lösungsrichtungen, nimmst nichts aus „Bereits erfasst“ erneut auf und setzt `keine_massnahme`, wenn du zu diesem Lösungsweg nichts findest. Sonst gilt alles hier.
+
 ## Regeln für Zitate
 
 - **Wörtlich**, wie auf der Seite; Silbentrennung am Zeilenende zusammenziehen. Auslassungen als „[…]“. Ein bis zwei Sätze, nur so lang wie nötig (Urheberrecht), höchstens 800 Zeichen.

@@ -23,11 +23,13 @@ export interface AuftragOptionen {
   ergebnisPfad: string
   /** Höchstens so viele Seiten mit Auszug (die mit den meisten Treffern); die übrigen nur mit Nummer. */
   maxSeiten?: number
+  /** Nachtrag: schon erfasste Stellen dieses Programms (werden nicht erneut aufgenommen). */
+  bereits?: { seite: number; zitat: string }[]
 }
 
-/** Ursachen, die für ein Programm zählen: Bund alle, Land nur Ebene „land“. */
-export const zulaessigeUrsachen = (k: Katalog, themaId: number, land: string | null) =>
-  k.ursachen.filter((u) => u.thema_id === themaId && (!land || (u.ebene ?? 'bund') === 'land'))
+/** Ursachen, die für ein Programm zählen: Bund alle, Land nur Ebene „land“; beim Nachtrag nur dessen Ursachen (`nur`). */
+export const zulaessigeUrsachen = (k: Katalog, themaId: number, land: string | null, nur?: number[]) =>
+  k.ursachen.filter((u) => u.thema_id === themaId && (!land || (u.ebene ?? 'bund') === 'land') && (!nur || nur.includes(u.id)))
 
 /**
  * Programme eines Durchlaufs: alle Bundesprogramme und – hat das Thema Landesursachen – alle aktuellen
@@ -91,10 +93,10 @@ export function fundstellen(seiten: string[], suchbegriffe: Erfassung['suchbegri
 
 const summe = (r: Record<string, number>) => Object.values(r).reduce((a, c) => a + c, 0)
 
-export function auftragText(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'suchbegriffe' | 'leitfaden'>, p: AuftragProgramm, seiten: string[], o: AuftragOptionen): string {
+export function auftragText(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'suchbegriffe' | 'leitfaden' | 'nachtrag'>, p: AuftragProgramm, seiten: string[], o: AuftragOptionen): string {
   const thema = k.themen.find((t) => t.id === e.thema_id)
   if (!thema) throw new Error(`Thema ${e.thema_id} nicht im Katalog`)
-  const ursachen = zulaessigeUrsachen(k, e.thema_id, p.land)
+  const ursachen = zulaessigeUrsachen(k, e.thema_id, p.land, e.nachtrag ? Object.keys(e.nachtrag.richtungen).map(Number) : undefined)
   const ids = new Set(ursachen.map((u) => u.id))
   const f = fundstellen(seiten, e.suchbegriffe, ursachen.map((u) => u.id))
   const leer = seitenOhneText(seiten)
@@ -109,6 +111,17 @@ export function auftragText(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'suchbeg
   z.push(`| Textdatei | \`${o.textPfad}\` (${seiten.length} PDF-Seiten${leer.length ? `; fast ohne Text: ${leer.join(', ')}` : ''}) |`)
   z.push(`| Ergebnis | \`${o.ergebnisPfad}\` – JSON und Protokoll hierhin schreiben |`)
   z.push(`| Selbstprüfung | \`npm run -s entwurf:programm-pruefen '--' ${o.ergebnisPfad}\` |`, '')
+  if (e.nachtrag) {
+    z.push(`## Nachtrag: Lösungsweg „${e.nachtrag.forderung}“`, '')
+    z.push('Das Programm ist zu diesem Thema schon erfasst. Erfasse **nur** Zusagen zu den Lösungsrichtungen unten (Ursachen und Suchbegriffe sind darauf beschränkt). Findest du keine, gilt „keine_massnahme“ nur für diesen Lösungsweg. Stellen aus der Liste „Bereits erfasst“ nimmst du nicht erneut auf.', '')
+    for (const [u, rs] of Object.entries(e.nachtrag.richtungen)) z.push(`- Ursache ${u}: ${rs.map((r) => `„${r}“`).join(', ')}`)
+    z.push('')
+    if (o.bereits?.length) {
+      z.push('### Bereits erfasst', '')
+      for (const b of o.bereits) z.push(`- S. ${b.seite}: „${b.zitat.length > 140 ? `${b.zitat.slice(0, 140)}…` : b.zitat}“`)
+      z.push('')
+    }
+  }
   z.push('## Ziel', '', thema.ziel ?? thema.beschreibung, '')
   z.push(`## Ursachen${p.land ? ' (Landesprogramm: nur Ebene Land)' : ''}`, '')
   for (const u of ursachen) z.push(`- **${u.id}** (${u.ebene === 'land' ? 'Land' : 'Bund'}): ${u.beschreibung}`)

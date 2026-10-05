@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
+import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
 import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
@@ -10,7 +10,7 @@ import { breiteBegriffe } from './entwurf/vorab'
 import { wortformen } from './entwurf/suche'
 import { pruefeDatenordner } from './katalog-laden'
 import { readdirSync, readFileSync } from 'node:fs'
-import { vergleicheStand } from './stand-vergleich'
+import { phaseAZuerst, vergleicheStand } from './stand-vergleich'
 
 const PARTEIEN: Datei = {
   pfad: 'parteien.json',
@@ -106,6 +106,12 @@ describe('Ursachen freigegeben', () => {
     const teilweise = katalog({ ...themaInhalt(), freigabe: { datum: '2026-10-01', quellen_bestaetigt: [1701] } })
     expect(ursachenFreigegeben(teilweise, katalog(), 17).join()).toMatch(/Ursache 1702 sind nicht bestätigt/)
     expect(pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: { ...themaInhalt(), freigabe: { datum: '1.10.', quellen_bestaetigt: [1799] } } }]).fehler.join()).toMatch(/1799 gehört nicht zum Thema[^]*Datum/)
+  })
+
+  it('akzeptiert eine KI-Freigabe ohne bestätigte Quellen', () => {
+    const ki = katalog({ ...themaInhalt(), freigabe: { datum: '2026-10-05', art: 'ki' } })
+    expect(ursachenFreigegeben(ki, ki, 17)).toEqual([])
+    expect(ki.themen[0].freigabe).toEqual({ datum: '2026-10-05', quellen_bestaetigt: [], art: 'ki' })
   })
 
   it('verlangt auch das freigegebene Ziel', () => {
@@ -434,6 +440,59 @@ describe('Eintragen', () => {
   })
 })
 
+describe('Nachtrag eines Lösungswegs', () => {
+  const leitfaden: Leitfaden = { thema_id: 17, stand: '2026-10-05', regeln: [], suchbegriffe: { ...SUCHBEGRIFFE, '1701': { 'Plätze ausbauen': ['kita'], Betriebskitas: ['betriebskita'] } } }
+  const nachtrag = { forderung: 'Betriebskitas fördern', richtungen: { '1701': ['Betriebskitas'] } }
+
+  it('sucht nur nach den Richtungen des Lösungswegs', () => {
+    const e = mitLeitfaden({ thema_id: 17, suchbegriffe: {}, nachtrag, programme: [] }, leitfaden)
+    expect(e.suchbegriffe).toEqual({ '1701': { Betriebskitas: ['betriebskita'] } })
+    const k = katalog()
+    expect(pruefeNachtrag(k, e, leitfaden)).toEqual([])
+    expect(pruefeNachtrag(k, { ...e, nachtrag: { forderung: 'x', richtungen: { '1701': ['Unbekannt'] } } }, leitfaden).join()).toMatch(/keine Suchbegriffe/)
+  })
+
+  it('ergänzt vorhandene Einträge, ohne etwas zu ersetzen oder doppelt aufzunehmen', () => {
+    const vorher = eintragen(katalog(), themaInhalt(), erfassung(), bewertung(erfassung()), '2026-10-01')
+    const k = katalog(vorher)
+    const e: Erfassung = {
+      thema_id: 17, suchbegriffe: { '1701': { Betriebskitas: ['betriebskita'] } }, nachtrag,
+      programme: [
+        { partei_id: 1, land: null, massnahmen: [
+          { beschreibung: 'Betriebskitas fördern', ursachen_ids: [1701], zitat: 'Wir fördern Betriebskitas.', seite: 30 },
+          { beschreibung: 'Schon erfasst', ursachen_ids: [1701], zitat: 'Wir Freie Demokraten fördern Kitaplätze.', seite: 12 },
+        ] },
+        { partei_id: 2, land: null, massnahmen: [{ beschreibung: 'Betriebskitas steuerlich fördern', ursachen_ids: [1701], zitat: 'Betriebskitas sollen steuerlich gefördert werden.', seite: 40 }] },
+        { partei_id: 2, land: 'ST', massnahmen: [], keine_massnahme: 'Nichts zu Betriebskitas.' },
+      ],
+    }
+    expect(pruefeErfassung(k, e).filter((f) => !f.startsWith('treffer'))).toEqual([])
+    const kn = kennungen(e)
+    const nach = (p: number, m: number) => kn.find((x) => x.programm === p && x.massnahme === m)!.kennung
+    const b: Bewertung = {
+      neue_instrumente: [{ kennung: 'I1', name: 'Betriebskitas fördern', wirksamkeit: 1, umsetzbarkeit: 2, begruendung: 'Wenige Plätze.', evidenz: 'gemischt' }],
+      zuordnung: [
+        { kennung: nach(0, 0), instrument: 'I1', ursachen: [1701] },
+        { kennung: nach(0, 1), instrument: 1, ursachen: [1701] },
+        { kennung: nach(1, 0), instrument: 'I1', ursachen: [1701] },
+      ],
+    }
+    const neu = eintragen(k, vorher, e, b, '2026-10-05') as { abdeckung: Record<string, unknown>[] }
+    const r = pruefeKatalog(PARTEIEN, [{ pfad: 'themen/17-kita.json', inhalt: neu }], { pfad: 'ids.json', inhalt: { stillgelegt: [] } })
+    expect(r.fehler).toEqual([])
+    expect(neu.abdeckung).toHaveLength(3)
+    // Partei 1: eine neue Maßnahme dazu (das schon erfasste Zitat nicht doppelt), Kopf bleibt.
+    expect(r.katalog.massnahmen.filter((m) => m.partei_id === 1).map((m) => m.zitat)).toEqual([
+      'Wir Freie Demokraten fördern Kitaplätze.', 'Die Ausbildung wird vergütet.', 'Wir fördern Betriebskitas.',
+    ])
+    // Partei 2 Bund: „keine Maßnahme“ wird zur Maßnahme; durchsucht_fuer bleibt.
+    expect(r.katalog.abdeckung.find((a) => a.partei_id === 2 && !a.land)).toMatchObject({ art: 'massnahmen', durchsucht_fuer: [1701, 1702] })
+    // Land ohne Fund: unverändert.
+    expect(neu.abdeckung[2]).toEqual((vorher as { abdeckung: unknown[] }).abdeckung[2])
+    expect(vergleicheStand(k, r.katalog)).toEqual([])
+  })
+})
+
 describe('Vergleich mit dem Zielzweig', () => {
   const mitAbdeckung = (extra: Record<string, unknown> = {}, ursachen = themaInhalt().ursachen) => {
     const e = erfassung()
@@ -507,6 +566,31 @@ describe('Phasen getrennt', () => {
     expect(vergleicheStand(vorher, katalog(neu))).toEqual([])
     neu.ursachen[2] = { ...neu.ursachen[2], nachtraeglich: undefined }
     expect(vergleicheStand(vorher, katalog(JSON.parse(JSON.stringify(neu)))).join()).toMatch(/Ursache 1703 und Maßnahmen/)
+  })
+
+  it('erlaubt mit KI-Freigabe beide Phasen, wenn Phase A vorher in einem eigenen Commit feststand', () => {
+    const ki = { ...themaInhalt(), freigabe: { datum: '2026-10-05', art: 'ki' } }
+    const mitMassnahmen = { ...datei(), freigabe: { datum: '2026-10-05', art: 'ki' } }
+    const leer = { ...katalog(), themen: [], ursachen: [] }
+    // Verlauf: Zielzweig ohne Thema → Commit 1 Phase A mit KI-Freigabe → Commit 2 Maßnahmen.
+    const verlauf = (staende: (Record<string, unknown> | undefined)[]) => ({ thema: () => staende, haltung: () => undefined })
+    expect(vergleicheStand(leer, katalog(mitMassnahmen), verlauf([undefined, ki, mitMassnahmen]))).toEqual([])
+    // Ohne eigenen Commit für Phase A, ohne Verlauf oder mit Freigabe durch die Betreiberin: abgelehnt.
+    expect(vergleicheStand(leer, katalog(mitMassnahmen), verlauf([undefined, mitMassnahmen])).join()).toMatch(/neues Thema und Maßnahmen/)
+    expect(vergleicheStand(leer, katalog(mitMassnahmen)).join()).toMatch(/neues Thema und Maßnahmen/)
+    expect(phaseAZuerst([undefined, themaInhalt(), datei()])).toBe(false)
+    // Ursache nach Beginn der Erfassung geändert: abgelehnt.
+    const umformuliert = { ...ki, ursachen: [{ ...themaInhalt().ursachen[0], beschreibung: 'Anders' }, themaInhalt().ursachen[1]] }
+    expect(phaseAZuerst([undefined, umformuliert, mitMassnahmen])).toBe(false)
+    expect(phaseAZuerst([undefined, ki, { ...mitMassnahmen, ursachen: umformuliert.ursachen }, mitMassnahmen])).toBe(false)
+  })
+
+  it('erlaubt „geprueft“ nicht mit KI-Freigabe', () => {
+    const d = datei() as { abdeckung: { massnahmen?: Record<string, unknown>[] }[] }
+    d.abdeckung[0].massnahmen![0] = { ...d.abdeckung[0].massnahmen![0], geprueft: true, pruefung: { belege_geprueft: '2026-10-05' } }
+    const r = pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: { ...d, freigabe: { datum: '2026-10-05', art: 'ki' } } }])
+    expect(r.fehler.join()).toMatch(/„geprueft“ erst nach der Freigabe der Ursachen durch die Betreiberin/)
+    expect(pruefeKatalog(PARTEIEN, [{ pfad: 't.json', inhalt: { ...themaInhalt(), freigabe: { datum: '2026-10-05', art: 'mensch' } } }]).fehler.join()).toMatch(/„art“ kann nur „ki“ sein/)
   })
 
   it('meldet Parteinamen in neuen Ursachen und Zielen', () => {
@@ -644,6 +728,9 @@ describe('JSON aus einer Agentenantwort', () => {
   it('holt das erste vollständige Objekt, auch mit Klammern in Texten', () => {
     expect(erstesJsonObjekt('Antwort:\n{ "a": "x { y }", "b": [1] }\nProtokoll …')).toEqual({ objekt: { a: 'x { y }', b: [1] }, rest: 'Protokoll …' })
     expect(() => erstesJsonObjekt('{ "a": 1')).toThrow(/abgeschnitten/)
+    // Liste nur auf Wunsch (Funde mehrerer Haltungen); sonst zählt das erste Objekt.
+    expect(erstesJsonObjekt('[{ "a": 1 }, { "a": 2 }]\nProtokoll', true)).toEqual({ objekt: [{ a: 1 }, { a: 2 }], rest: 'Protokoll' })
+    expect(erstesJsonObjekt('[{ "a": 1 }, { "a": 2 }]').objekt).toEqual({ a: 1 })
   })
 
   it('nennt bei Fehlern Zeile und Spalte in der Datei', () => {
