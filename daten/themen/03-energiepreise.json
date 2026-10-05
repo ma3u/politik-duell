@@ -8,6 +8,7 @@
     {
       "id": 301,
       "beschreibung": "Hohe Netzentgelte für den Betrieb und Ausbau der Stromnetze",
+      "alltag": "Auf meiner Stromrechnung stecken hohe Gebühren für das Stromnetz",
       "quelle_url": "https://www.bundesnetzagentur.de/DE/Vportal/Energie/PreiseAbschlaege/Tarife-table.html",
       "ebene": "bund",
       "schlagwoerter": ["netz", "grundgebuehr", "grundpreis", "netzentgelt"]
@@ -15,6 +16,7 @@
     {
       "id": 302,
       "beschreibung": "Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis",
+      "alltag": "Auf meiner Strom- und Gasrechnung stecken viele Steuern, Abgaben und der CO₂-Preis",
       "quelle_url": "https://www.bundesnetzagentur.de/DE/Vportal/Energie/PreiseAbschlaege/Tarife-table.html",
       "ebene": "bund",
       "schlagwoerter": ["steuer", "abgabe", "umlage", "co2", "co2-preis", "stromsteuer", "mehrwertsteuer"]
@@ -22,6 +24,7 @@
     {
       "id": 303,
       "beschreibung": "Rund 70 % der Energie wird importiert, vor allem Öl, Gas und Steinkohle",
+      "alltag": "Ich mache mir Sorgen, weil wir Öl und Gas aus dem Ausland brauchen und die Preise davon abhängen",
       "quelle_url": "https://www.umweltbundesamt.de/daten/umweltzustand-trends/energie/primaerenergiegewinnung-importe",
       "ebene": "bund",
       "schlagwoerter": ["gas", "oel", "import", "abhaengig", "heizoel"]
@@ -29,6 +32,7 @@
     {
       "id": 304,
       "beschreibung": "Der Strompreis an der Börse richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk",
+      "alltag": "Strom wird teuer, weil teure Gaskraftwerke den Preis bestimmen, obwohl auch billiger Strom erzeugt wird",
       "quelle_url": "https://www.bundestag.de/resource/blob/918822/abb4747668630cbe6d457512d42265c4/WD-5-121-22-pdf-data.pdf",
       "ebene": "bund",
       "schlagwoerter": ["boerse", "strompreis", "kraftwerk", "erzeugung", "atomkraft", "kohle", "wind", "solar", "erneuerbar", "dunkelflaute"]
@@ -36,6 +40,7 @@
     {
       "id": 305,
       "beschreibung": "Drei Viertel der Wohnungen wurden 2022 mit Gas oder Öl beheizt (Zensus); die Heizkosten hängen deshalb stark von deren Preisen ab",
+      "alltag": "Ich heize mit Gas oder Öl, und meine Heizkosten schwanken mit deren Preisen",
       "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zensus2022-Pressemitteilungen/PM_zenus2022_45.html",
       "ebene": "bund",
       "schlagwoerter": ["heizung", "gasheizung", "oelheizung", "waermepumpe", "heizen", "nebenkosten", "heizkostenabrechnung", "daemmung"]

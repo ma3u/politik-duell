@@ -32,7 +32,7 @@ export function UrsachenAuswahl({
 
   return (
     <fieldset className="ursachen-auswahl">
-      <legend>Oder tipp an, was davon dich betrifft ({thema.name})</legend>
+      <legend>Oder tipp an, was bei dir zutrifft ({thema.name})</legend>
       <p className="meta">Höchstens {MAX_AUSWAHL}. Gewertet wird dann, wer dafür die beste Lösung hat.</p>
       <ul>
         {sichtbar.map((u) => {
@@ -46,7 +46,7 @@ export function UrsachenAuswahl({
                 disabled={gesperrt || (voll && !an)}
                 onClick={() => umschalten(u.id)}
               >
-                {u.beschreibung}
+                {u.alltag ?? u.beschreibung}
               </button>
             </li>
           )

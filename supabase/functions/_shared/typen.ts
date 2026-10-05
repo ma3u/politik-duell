@@ -70,6 +70,11 @@ export interface Ursache {
   quelle_url: string
   /** Fehlt sie (ältere Daten), gilt `bund`. */
   ebene?: Ebene
+  /**
+   * Dieselbe Ursache in der Sprache der Betroffenen („Ich zahle …“): Nur diese Fassung steht in der
+   * Auswahl zum Antippen. Gewertet und belegt wird weiter an `beschreibung`. Fehlt sie, zeigt die App `beschreibung`.
+   */
+  alltag?: string | null
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Ursachen erkennt. */
   schlagwoerter?: string[]
 }
