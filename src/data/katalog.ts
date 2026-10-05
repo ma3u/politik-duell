@@ -759,7 +759,7 @@ export function pruefeKatalog(
         f(uOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'schlagwoerter', 'nachtraeglich'])
+      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'alltag', 'schlagwoerter', 'nachtraeglich'])
       // Nach dem Blick in die Programme ergänzt? Dann offen vermerkt, mit Datum und Grund.
       const nachtraeglich = roh.nachtraeglich !== undefined ? text(uOrt, roh, 'nachtraeglich', 300) : undefined
       const u: KatalogUrsache = {
@@ -773,6 +773,7 @@ export function pruefeKatalog(
         if (!(EBENEN as readonly unknown[]).includes(roh.ebene)) f(uOrt, '„ebene“ muss „bund“ oder „land“ sein')
         else u.ebene = roh.ebene as Ursache['ebene']
       }
+      if (roh.alltag !== undefined) u.alltag = text(uOrt, roh, 'alltag', 160)
       const uw = schlagwoerter(uOrt, roh)
       if (uw) u.schlagwoerter = uw
       if (nachtraeglich) u.nachtraeglich = nachtraeglich
