@@ -1,0 +1,97 @@
+{
+  "id": 21,
+  "frage": "Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben?",
+  "beschreibung": "Ob Menschen mit Duldung, die gut integriert sind, nach festen Kriterien dauerhaft in Deutschland bleiben dürfen oder ob für sie weiter die Ausreisepflicht und nur befristete Einzelfallregeln gelten.",
+  "verwandte_themen": [6],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer ein dauerhaftes Bleiberecht für gut Integrierte will, nennt den Anreiz zur Klärung der Identität: Nach dem Chancen-Aufenthaltsrecht war die Rate der Identitätsklärung laut BAMF-Kurzanalyse (2025) deutlich höher als bei vergleichbaren Geduldeten ohne diesen Titel.",
+      "quelle_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Kurzanalysen/kurzanalyse3-2025-chancen-aufenthaltsrecht.html?nn=282388"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer ein solches Bleiberecht ablehnt, nennt die Sorge vor falschen Signalen: In der Bundestagsanhörung zum Chancen-Aufenthaltsrecht (2022) warnte ein Vertreter des Bayerischen Landesamts für Asyl, es könne das Signal senden, dass sich fehlende Mitwirkung bei der Identitätsklärung lohne.",
+      "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2022/kw48-pa-inneres-chancen-aufenthaltsrechts-921220"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will gut integrierten Geduldeten nach festen Kriterien ein dauerhaftes Bleiberecht geben, unabhängig vom Einzelfall und ohne enge Frist.",
+    "teils": "Will Bleiberecht nur unter engen Bedingungen oder für Teilgruppen (z. B. mit Arbeit, Ausbildung, geklärter Identität, ohne Straftaten) oder will die bestehenden Stichtags- und Einzelfallregeln ausbauen oder entfristen.",
+    "nein": "Will kein neues oder erweitertes Bleiberecht für Geduldete; Ausreisepflichtige sollen ausreisen oder bestehende Regeln eingeschränkt werden."
+  },
+  "suchbegriffe": ["bleiberecht", "geduldete", "duldung", "chancen-aufenthalt", "aufenthaltsrecht", "spurwechsel", "ausreisepflicht", "kettenduldung"],
+  "schlagwoerter": ["bleiberecht", "geduldete", "duldung", "integration", "abschiebung"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 43 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Betrifft Sozialleistungen für Ausreisepflichtige, nicht Bleiberecht.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "teils",
+      "kurzfassung": "Will Geflüchteten ohne Schutzstatus, die integriert und straffrei sind, den Spurwechsel in die Fachkräfteeinwanderung ermöglichen.",
+      "zitat": "Wer als Geflüchteter keinen Schutzstatus erhalten hat und dennoch Integration in Arbeitsmarkt und Gesellschaft bewältigt und straffrei ist, dem soll der Spurwechsel in die Fachkräfteeinwanderung ermöglicht werden.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=54",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "teils",
+      "kurzfassung": "Verweist auf das Chancenaufenthaltsrecht, das gut integrierten Menschen aus der Duldung eine Bleibeperspektive gegeben habe.",
+      "zitat": "Mit dem Chancenaufenthaltsrecht haben wir viele gut integrierte Menschen aus der Duldung geholt, ihnen eine echte Bleibeperspektive gegeben und gleichzeitig die Ausländerbehörden stark entlastet.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=127",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "teils",
+      "kurzfassung": "Will gut integrierten Schutzsuchenden einen Spurwechsel in den Arbeitsmarkt ermöglichen, wenn sie ohne Transferleistungen leben können.",
+      "zitat": "Für gut integrierte Schutzsuchende muss es die Möglichkeit eines Spurwechsels zur Einwanderung in den Arbeitsmarkt geben, wenn sie so qualifiziert sind, dass sie und ihre Familien von eigener Arbeit ohne Transferleistungen leben können.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Will alle Bleiberechtsregelungen für Ausreisepflichtige abschaffen, auch Ausbildungs- und Beschäftigungsduldung und Chancenaufenthaltsrecht.",
+      "zitat": "Abschaffung aller Bleiberechtsregelungen für ausreisepflichtige Personen, insbesondere auch der Ausbildungs- und Beschäftigungsduldung und des Chancenaufenthaltsrechts",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=108",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Fordert Legalisierungsmöglichkeiten und wirksame Bleiberechtsregelungen für Menschen mit unsicherem Status oder Kettenduldungen.",
+      "zitat": "Wir fordern Legalisierungsmöglichkeiten für Menschen ohne Aufenthaltsstatus und effektive Bleiberechtsregelungen für Menschen, die mit einem unsicheren Aufenthaltsstatus oder mit Kettenduldungen leben müssen.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "Migrationspolitik-Kapitel (S. 36–37) gelesen. Suche nach Aufenthaltsrecht, Duldung, Geduldete, Chancen-Aufenthalt, Spurwechsel, Ausreisepflicht, Kettenduldung: keine Aussage dazu, ob gut integrierte Geduldete ein dauerhaftes Bleiberecht erhalten sollen; das Programm behandelt allgemeine Asylpolitik.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

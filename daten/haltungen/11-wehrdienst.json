@@ -1,0 +1,101 @@
+{
+  "id": 11,
+  "frage": "Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben?",
+  "beschreibung": "Ob junge Menschen in Deutschland zum Wehrdienst verpflichtet werden sollen oder ob die Bundeswehr ihr Personal allein über freiwillige Meldungen gewinnt.",
+  "verwandte_themen": [9],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer einen verpflichtenden Wehrdienst will, nennt den Personalbedarf der Bundeswehr: Sie soll auf 260.000 aktive Soldaten und 200.000 Reservisten wachsen. Sachverständige bezweifelten 2025 in einer Anhörung des Bundestags, dass Freiwilligkeit dafür reicht.",
+      "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1125922"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer einen verpflichtenden Wehrdienst ablehnt, nennt die Kosten: Das ifo Institut rechnete 2024 vor, dass bei Einzug eines ganzen Jahrgangs die Wirtschaftsleistung um 1,6 Prozent (knapp 70 Mrd. Euro) sänke, bei höherer Bezahlung Freiwilliger um etwa 37 Mrd. Euro.",
+      "quelle_url": "https://www.ifo.de/en/press-release/2024-07-10/reintroducing-military-conscription"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will junge Menschen zum Wehrdienst verpflichten, also eine Wehrpflicht in Kraft setzen, auch wenn sie zunächst nur für Teile eines Jahrgangs oder bei Bedarf gelten soll.",
+    "teils": "Will die Pflicht nur an Bedingungen knüpfen (etwa wenn Freiwillige nicht reichen, im Spannungs- oder Verteidigungsfall) oder will eine allgemeine Dienstpflicht, bei der auch ein ziviler Dienst möglich ist.",
+    "nein": "Lehnt jede Dienstpflicht in Friedenszeiten ab oder will sie abschaffen; die Bundeswehr soll nur Freiwillige gewinnen."
+  },
+  "suchbegriffe": ["wehrpflicht", "wehrdienst", "dienstpflicht", "musterung", "freiwillig", "kriegsdienst", "pflichtjahr", "wehrgerechtigkeit"],
+  "schlagwoerter": ["wehrpflicht", "wehrdienst", "bundeswehr", "dienstpflicht"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "teils",
+      "kurzfassung": "Setzt perspektivisch auf ein verpflichtendes Gesellschaftsjahr, verbunden mit der aufwachsenden Wehrpflicht.",
+      "zitat": "Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken. So werden wir dem Personalbedarf zur Stärkung unserer Verteidigungsfähigkeit gerecht.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=52",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "nein",
+      "kurzfassung": "Plant einen neuen flexiblen Wehrdienst auf Basis von Freiwilligkeit.",
+      "zitat": "Angesichts der veränderten sicherheitspolitischen Lage plant die SPD die Einführung eines neuen, flexiblen Wehrdienstes. Der neue Wehrdienst soll auf Freiwilligkeit basieren und sich dabei am Bedarf der Bundeswehr orientieren.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=58",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "nein",
+      "kurzfassung": "Will statt Grundwehrdienst den freiwilligen Wehrdienst und die Reserve attraktiver machen.",
+      "zitat": "Statt den aus guten Gründen seit 2011 ausgesetzten allgemeinen Grundwehrdienst wieder einzuführen, wollen wir den freiwilligen Wehrdienst und die Reserve für eine breite Zielgruppe attraktiver machen und durch gute Lebens- und Arbeitsbedingungen für Soldat*innen Personal langfristig binden.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=154",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "nein",
+      "kurzfassung": "Lehnt die Wiedereinsetzung der allgemeinen Wehrpflicht ab.",
+      "zitat": "Die Wiedereinsetzung der allgemeinen Wehrpflicht lehnen wir ab.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=48",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "ja",
+      "kurzfassung": "Will die Wehrpflicht wieder einsetzen, einschließlich Ersatzdienst.",
+      "zitat": "Daher wollen wir die Wehrpflicht wieder einsetzen. Diese beinhaltet gemäß aktueller Gesetzeslage auch den Ersatzdienst.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=89",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Lehnt Wiedereinführung der Wehrpflicht ab und wendet sich gegen Werbung der Bundeswehr an Schulen und Hochschulen.",
+      "zitat": "Wir stellen uns gegen eine Militarisierung der Gesellschaft: keine Wiedereinführung der Wehrpflicht, kein Werben fürs Sterben an Schulen, auf Bildungsmessen, an Universitäten oder per Briefsendungen.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=23",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "nein",
+      "kurzfassung": "Lehnt die Wiedereinführung einer Wehrpflicht ab.",
+      "zitat": "Wir lehnen die Wiedereinführung einer Wehrpflicht ab.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=6",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

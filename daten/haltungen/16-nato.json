@@ -1,0 +1,101 @@
+{
+  "id": 16,
+  "frage": "Soll Deutschland Mitglied der NATO bleiben?",
+  "beschreibung": "Ob Deutschland im Nordatlantikbündnis bleibt oder aus dem Bündnis austritt und seine Sicherheit anders organisiert.",
+  "verwandte_themen": [9],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer im Bündnis bleiben will, nennt den Schutz, den die Mitgliedschaft bietet, und die Lücken bei einer Verteidigung ohne die USA. Bruegel schätzt (2025), dass Europa ohne die USA etwa 300.000 zusätzliche Soldaten und mindestens 250 Milliarden Euro Mehrausgaben pro Jahr bräuchte.",
+      "quelle_url": "https://www.bruegel.org/analysis/defending-europe-without-us-first-estimates-what-needed"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer austreten will, nennt die wachsenden Kosten der Mitgliedschaft: Die deutschen Militärausgaben stiegen laut SIPRI 2025 um 24 Prozent auf 114 Milliarden US-Dollar.",
+      "quelle_url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will, dass Deutschland dauerhaft Mitglied der NATO bleibt, und bekennt sich ausdrücklich zum Bündnis.",
+    "teils": "Will im Bündnis bleiben, aber nur unter Bedingungen oder mit grundlegendem Umbau, oder will die Mitgliedschaft langfristig durch ein anderes Sicherheitssystem ersetzen, ohne den Austritt jetzt zu fordern.",
+    "nein": "Will, dass Deutschland aus der NATO austritt oder sie auflöst, oder lehnt die Mitgliedschaft ausdrücklich ab."
+  },
+  "suchbegriffe": ["nato", "nordatlantik", "bündnis", "bündnisfall", "austritt", "atlantische", "verteidigungsbündnis", "kollektive sicherheit"],
+  "schlagwoerter": ["nato", "buendnis", "nato-austritt", "bundeswehr", "sicherheitspolitik"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "ja",
+      "kurzfassung": "Steht ohne Wenn und Aber zur transatlantischen Verteidigungsallianz.",
+      "zitat": "Wir stehen ohne Wenn und Aber zur transatlantischen Verteidigungsallianz. Sie garantiert der Bundesrepublik seit mehr als 75 Jahren Frieden, Freiheit und Sicherheit. Jetzt ist es an der Zeit, mehr Verantwortung zu übernehmen.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=52",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Nennt die NATO tragenden Pfeiler der transatlantischen Partnerschaft und unverzichtbar für Europas Sicherheit.",
+      "zitat": "Die NATO ist ein tragender Pfeiler der transatlantischen Partnerschaft und für die europäische Sicherheit unverzichtbar.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=57",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Sieht Sicherheit in EU und NATO eingebettet und will den europäischen Pfeiler der NATO stärken.",
+      "zitat": "Unsere Sicherheit ist eingebettet in der EU und der NATO. Wir stärken den europäischen Pfeiler der NATO.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=152",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "ja",
+      "kurzfassung": "Steht uneingeschränkt zur NATO als Verteidigungsbündnis und Garant der Sicherheit.",
+      "zitat": "Wir Freie Demokraten stehen uneingeschränkt zur NATO als das erfolgreichste Verteidigungsbündnis der Welt und als Garant für unsere Sicherheit.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=48",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "teils",
+      "kurzfassung": "Hält an der NATO-Mitgliedschaft bis zum Aufbau eines europäischen Militärbündnisses fest.",
+      "zitat": "Bis zum Aufbau eines unabhängigen und handlungsfähigen europäischen Militärbündnisses bleiben die Mitgliedschaft in der NATO sowie eine aktive Rolle Deutschlands in der Organisation für Sicherheit und Zusammenarbeit in Europa (OSZE) zentrale Elemente unserer Sicherheitsstrategie.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=88",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "teils",
+      "kurzfassung": "Will eine Sicherheitsarchitektur, die die NATO überflüssig macht.",
+      "zitat": "Eine solche Sicherheitsarchitektur macht die NATO überflüssig und ermöglicht eine Außenpolitik der internationalen Kooperation anstelle von wirtschaftlicher und militärischer Konkurrenz.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=22",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "teils",
+      "kurzfassung": "Will ein defensiv ausgerichtetes Bündnis, das die UN-Charta achtet und Abrüstung anstrebt.",
+      "zitat": "Statt eines Machtinstruments für geopolitische Ziele brauchen wir ein defensiv ausgerichtetes Verteidigungsbündnis, das die Grundsätze der UN-Charta achtet, Abrüstung anstrebt, statt zu Aufrüstung zu verpflichten.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=5",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

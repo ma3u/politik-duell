@@ -1,0 +1,93 @@
+{
+  "id": 20,
+  "frage": "Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen?",
+  "beschreibung": "Ob Freiflächen-Photovoltaik auf landwirtschaftlich genutzten Flächen wie Äckern zulässig sein soll oder ob solche Flächen der Landwirtschaft vorbehalten bleiben und Solaranlagen auf anderen Flächen gebaut werden.",
+  "verwandte_themen": [3],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer Solaranlagen auf Ackerflächen zulassen will, nennt den hohen Stromertrag je Fläche: Neue Photovoltaikanlagen erzeugen pro Hektar und Jahr rund 800 MWh, Mais-Biogasanlagen im Mittel 20 MWh.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/photovoltaik/photovoltaik-freiflaechenanlagen"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer Solaranlagen auf Ackerflächen begrenzen will, nennt die Nahrungsmittelproduktion: Ackerflächen mit hoher Bodengüte sollten in der Regel nicht für Freiflächenanlagen genutzt werden.",
+      "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/photovoltaik/photovoltaik-freiflaechenanlagen"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will Freiflächen-Photovoltaik auf Ackerflächen grundsätzlich erlauben oder ausdrücklich erleichtern, ohne sie auf bestimmte Flächen zu beschränken.",
+    "teils": "Will Solaranlagen auf Äckern nur unter Bedingungen zulassen, etwa nur auf schlechten Böden, als Agri-PV mit weiterer Nutzung oder mit Obergrenzen, oder gibt Dächern und anderen Flächen den Vorrang.",
+    "nein": "Will Solaranlagen auf Ackerflächen ausschließen oder deutlich stärker beschränken und Ackerland der Landwirtschaft vorbehalten."
+  },
+  "suchbegriffe": ["freifläch", "photovoltaik", "agri-pv", "agrar-pv", "solarpark", "ackerland", "ackerfläch", "landwirtschaftliche fläch"],
+  "schlagwoerter": ["solaranlagen", "solarparks", "photovoltaik", "ackerflaechen", "agri-pv"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "keine_aussage",
+      "begruendung": "Energiekapitel (S. 21–23) und Landwirtschaftskapitel (S. 33–37) vollständig gelesen. Suche nach Freiflächen-Photovoltaik, Photovoltaik, Agri-PV, Solarpark, Ackerland, Ackerflächen: nichts zur Frage, keine Erwähnung von Solaranlagen auf Ackerflächen.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "keine_aussage",
+      "begruendung": "Landwirtschaft (S. 52–54) und Klimaschutz/Erneuerbare Energien (S. 33–35) gelesen. Suche nach freiflächen, photovoltaik, solarpark, agri-pv, agrar-pv, ackerland, ackerfläch, landwirtschaftliche fläch: kein Bezug zu Solaranlagen auf Ackerflächen gefunden; das Programm spricht von dezentraler Versorgung und Energy Sharing.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "teils",
+      "kurzfassung": "Will im Planungsrecht Vorrangflächen für Nahrungsmittelproduktion einführen und Agri-Photovoltaik stärken.",
+      "zitat": "Daher wollen wir im Planungsrecht Vorrangflächen für die Nahrungsmittelproduktion einführen und Agri-Photovoltaik und weitere Ansätze zu höherer Flächeneffizienz stärken.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=60",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Bezahlbare Energie (S. 16-18) gelesen, Seite 18 mit Suche nach Photovoltaik: Text behandelt nur EEG-Subventionen und Marktfinanzierung von PV-Anlagen generell, nicht Freiflächen auf Ackerflächen. Kapitel Umwelt- und Klimaschutz (S. 39-41) gelesen: behandelt Technologievielfalt, Emissionshandel, aber nicht Freiflächen-PV auf landwirtschaftlichen Flächen.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Lehnt den Neubau von Photovoltaik als Agro-PV auf landwirtschaftlichen Nutzflächen wegen hohen Flächenverbrauchs ab.",
+      "zitat": "Den Neubau von Photovoltaikanlagen als Agro-PV auf landwirtschaftlichen Nutzflächen lehnen wir aufgrund ihres hohen Flächenverbrauchs ab.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=81",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Agrarwende (S. 41–43) gelesen, durchgesucht nach Solaranlagen, Photovoltaik, Freiflächen-Solaranlagen, Agri-PV, Ackerland: keine Erwähnung zu Solaranlagen auf landwirtschaftlichen Flächen.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "teils",
+      "kurzfassung": "Photovoltaikanlagen sollen die agrarische Nutzung nicht verdrängen.",
+      "zitat": "Photovoltaikanlagen dürfen die agrarische Nutzung nicht verdrängen.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=20",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

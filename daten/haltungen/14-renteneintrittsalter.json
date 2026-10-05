@@ -1,0 +1,101 @@
+{
+  "id": 14,
+  "frage": "Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden?",
+  "beschreibung": "Ob die Regelaltersgrenze in der gesetzlichen Rente, die bis 2031 auf 67 Jahre steigt, weiter angehoben werden soll (etwa gekoppelt an die Lebenserwartung) oder ob sie bei 67 Jahren oder darunter bleiben soll.",
+  "verwandte_themen": [7],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer eine weitere Anhebung will, nennt die Finanzierung der Rentenversicherung: Laut Bundesbank (Monatsbericht Juni 2022) könnte der Beitragssatz bis 2070 auf etwa 29 Prozent steigen, mit einer Kopplung des Rentenalters an die Lebenserwartung auf etwa 27 Prozent.",
+      "quelle_url": "https://www.bundesbank.de/de/aufgaben/themen/monatsbericht-wie-rentenreformen-wirken-koennten--892950"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer eine weitere Anhebung ablehnt, nennt die ungleiche Lebenserwartung: Nach dem Wirtschaftsdienst (Heft 5/2026) unterschied sie sich im Alter 65 (Daten 2019) zwischen niedrigster und höchster Einkommensgruppe bei Männern um 6,6, bei Frauen um 3,7 Jahre.",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/kopplung-des-gesetzlichen-renteneintrittsalters-an-die-lebenserwartung-worauf-es-ankommt.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will das Regelrentenalter über 67 Jahre hinaus anheben, etwa fest oder gekoppelt an die Lebenserwartung.",
+    "teils": "Will das Regelrentenalter bei 67 belassen, aber den späteren Renteneintritt fördern (Anreize, Flexibilisierung, freiwilliges Weiterarbeiten) oder die Altersgrenze nur unter Bedingungen oder für bestimmte Gruppen ändern.",
+    "nein": "Lehnt eine Anhebung über 67 ab und will das Rentenalter beibehalten oder senken."
+  },
+  "suchbegriffe": ["renteneintrittsalter", "rentenalter", "regelaltersgrenze", "renteneintritt", "rente mit 67", "rente mit 68", "rente mit 70", "lebenserwartung", "altersgrenze", "länger arbeiten"],
+  "schlagwoerter": ["rente", "renteneintrittsalter", "rente mit 67", "rentenalter"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "nein",
+      "kurzfassung": "Hält an der bestehenden gesetzlichen Regelung zum Renteneintrittsalter fest.",
+      "zitat": "An der bestehenden gesetzlichen Regelung zum Renteneintrittsalter halten wir fest. Die Regelung für besonders langjährige Versicherte mit 45 Versicherungsjahren behalten wir mit Blick auf die Planungssicherheit für Unternehmen und rentennahe Jahrgänge bei.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "nein",
+      "kurzfassung": "Lehnt eine Anhebung der Regelaltersgrenze ab.",
+      "zitat": "Eine Anhebung der Regelaltersgrenze lehnen wir ab.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=25",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "teils",
+      "kurzfassung": "Hält an der Rente mit 67 fest und schafft Anreize für längeres Arbeiten.",
+      "zitat": "Wir halten an der Rente mit 67 fest. Aber wir schaffen Anreize und machen es den Menschen leichter, länger zu arbeiten, wenn sie dies wollen, auch über die Regelaltersgrenze hinaus.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=98",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "teils",
+      "kurzfassung": "Will flexiblen Renteneintritt nach schwedischem Vorbild, mit selbst bestimmtem Beginn des Ruhestands.",
+      "zitat": "Wir Freie Demokraten stehen für einen wirklich flexiblen Renteneintritt. Die Menschen sollen nach schwedischem Vorbild künftig selbst entscheiden, wann der Ruhestand beginnt, sofern dann keine Sozialleistungen beantragt werden müssen.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=21",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Will flexibles Renteneintrittsalter, abschlagsfrei nach 45 beitragsberechtigten Arbeitsjahren.",
+      "zitat": "ein flexibles Renteneintrittsalter, abschlagsfrei nach 45 beitragsberechtigten Arbeitsjahren, ermöglichen",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=19",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Fordert eine Regelaltersgrenze von 65 Jahren.",
+      "zitat": "Die Rente erst ab 67 bedeutet Rentenkürzungen für alle, insbesondere in Berufen, in denen Erwerbstätige nicht so lange durchhalten können. Wir fordern eine Regelaltersgrenze von 65 Jahren.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "nein",
+      "kurzfassung": "Will abschlagsfreie Rente mit 63 nach 45 Arbeitsjahren und lehnt weitere Erhöhung des Rentenalters ab.",
+      "zitat": "Wer 45 Jahre gearbeitet und in die Rentenkasse eingezahlt hat, muss abschlagsfrei mit 63 Jahren in Rente gehen können. Forderungen, das Renteneintrittsalter weiter zu erhöhen, erteilen wir eine klare Absage.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=23",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

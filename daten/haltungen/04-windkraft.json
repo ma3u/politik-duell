@@ -1,0 +1,97 @@
+{
+  "id": 4,
+  "frage": "Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben?",
+  "beschreibung": "Ob Bund und Länder den Ausbau der Windkraft an Land weiter mit dem Ziel eines wachsenden Anteils im Strommix fördern sollen oder ob dieser Ausbau begrenzt oder beendet werden soll.",
+  "verwandte_themen": [3],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer den Ausbau vorantreiben will, nennt Stromversorgung und Klimaziele: Das gesetzliche Ziel von 115 Gigawatt bis 2030 erfordert laut Bundesnetzagentur im Schnitt 9,4 Gigawatt Zubau pro Jahr; 2025 waren es 4,6 Gigawatt.",
+      "quelle_url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260108_EEG.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer den Ausbau begrenzen oder stoppen will, nennt die Netzkosten: Die Kosten für das Netzengpassmanagement stiegen laut Bundesnetzagentur (SMARD) im dritten Quartal 2025 auf rund 667 Mio. Euro (Vorjahresquartal: 608 Mio. Euro).",
+      "quelle_url": "https://www.smard.de/page/home/topic-article/444/219200/volumen-und-kosten-gestiegen"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will den Ausbau der Windkraft an Land weiter vorantreiben, etwa durch höhere oder gleichbleibende Ausbauziele, mehr Flächen oder schnellere Genehmigungen.",
+    "teils": "Will den Ausbau nur unter Bedingungen oder in Teilen: etwa bei Netzausbau, Abständen, Artenschutz oder Wirtschaftlichkeit, Ausbau nur an bestimmten Standorten, oder Technologieoffenheit statt fester Ausbauziele.",
+    "nein": "Will den Ausbau der Windkraft an Land nicht weiter vorantreiben: stoppen, beenden, Förderung streichen oder neue Anlagen faktisch ausschließen."
+  },
+  "suchbegriffe": ["windkraft", "windenergie", "windrad", "windenergieanlage", "onshore", "windräder", "abstandsregel", "ausbauziel"],
+  "schlagwoerter": ["windkraft", "windraeder", "windenergie", "energiewende"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "ja",
+      "kurzfassung": "Will alle Erneuerbaren konsequent nutzen, darunter Windenergie an Land und auf See.",
+      "zitat": "Wir nutzen die Erneuerbaren konsequent, und zwar alle: Windenergie an Land und auf See, Solarenergie, Geothermie, Wasserkraft, Bioenergie und den nachwachsenden Rohstoff Holz.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=21",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will konsequenten Ausbau von Windkraft und Fotovoltaik samt Speichern.",
+      "zitat": "Windkraft und Fotovoltaik sind schon heute die günstigste Form der Stromproduktion. Ihr konsequenter Ausbau und die Einbindung von Speichern macht unsere Energieversorgung sicher und dauerhaft bezahlbar.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=34",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Will Wind- und Solarerzeuger durch Bürokratieabbau, Planungssicherheit und rentable Geschäftsmodelle unterstützen.",
+      "zitat": "Dazu werden wir auch in Zukunft dezentrale Erzeuger von Solar- und Windenergie sowie Speicher und Elektrolyseure durch konsequenten Bürokratieabbau, Planungssicherheit und rentable Geschäftsmodelle unterstützen.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=41",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "teils",
+      "kurzfassung": "Lehnt gesetzlich vorgegebene Ausbaupfade einzelner Technologien und garantierte Abnahmepreise ab.",
+      "zitat": "Wir lehnen gesetzlich vorgegebene Ausbaupfade für einzelne Technologien genauso ab, wie staatlich garantierter Abnahmepreise.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Lehnt den weiteren Ausbau der Windenergie ab, wegen Gefahren für Natur und Menschen.",
+      "zitat": "Windenergieanlagen stellen grundsätzlich eine Gefährdung für Pflanzen und Tiere sowie eine Beeinträchtigung der Gesundheit und der Lebensqualität der Menschen dar. […] Deshalb lehnen wir den weiteren Ausbau der Windenergie ab.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=81",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 33 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Betrifft Ansiedlung von Fabriken, nicht den Ausbau an Land.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "Energiepolitik (S. 9–13) gelesen, Suche nach Windkraft, Windenergie, Windrad, Ausbauziel: keine Aussage zum Ausbau der Windkraft an Land. BSW nennt nur „Repowering“-Programm (alte Windanlagen durch neue ersetzen), ohne Aussage zu Ausbauziel oder Ausbaugeschwindigkeit.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

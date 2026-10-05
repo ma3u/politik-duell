@@ -1,0 +1,104 @@
+{
+  "id": 12,
+  "frage": "Soll es einen gesetzlichen Mindestlohn geben?",
+  "beschreibung": "Ob der Staat eine Untergrenze für den Stundenlohn per Gesetz festlegt oder ob Löhne allein zwischen Arbeitgebern, Beschäftigten und Tarifparteien ausgehandelt werden.",
+  "verwandte_themen": [11, 5],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer einen gesetzlichen Mindestlohn will, nennt den Schutz vor sehr niedrigen Löhnen: Von der Erhöhung auf 13,90 Euro zum 1. Januar 2026 waren laut Statistischem Bundesamt bis zu 4,8 Millionen Jobs betroffen.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_025_62.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer ihn will, verweist zudem darauf, dass nach der Erhöhung auf 12 Euro im Oktober 2022 laut IAB-Betriebsbefragung nur 2,4 % aller Betriebe Entlassungen meldeten.",
+      "quelle_url": "https://iab-forum.de/mindestlohnerhoehung-auf-12-euro-nur-wenige-betriebe-reagierten-eigenen-angaben-zufolge-mit-entlassungen/"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer einen gesetzlichen Mindestlohn ablehnt, nennt das Risiko für Arbeitsplätze: Bei 14 Euro erwarteten laut IAB-Befragung (2024) rund 19 % der Betriebe weniger Beschäftigung, bei Betrieben mit Löhnen nahe dem damaligen Mindestlohn fast ein Drittel.",
+      "quelle_url": "https://iab.de/presseinfo/bei-14-euro-mindestlohn-erwartet-ein-fuenftel-der-betriebe-einen-beschaeftigungsrueckgang/"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will einen gesetzlichen Mindestlohn beibehalten oder einführen, auch mit höherer Untergrenze.",
+    "teils": "Will ihn nur mit Einschränkungen, etwa mit Ausnahmen, regionalen oder branchenbezogenen Unterschieden, oder will die Höhe ganz den Tarifparteien überlassen, ohne ihn abzuschaffen.",
+    "nein": "Will keinen gesetzlichen Mindestlohn und die Löhne ohne staatliche Untergrenze aushandeln lassen."
+  },
+  "suchbegriffe": ["mindestlohn", "lohnuntergrenze", "mindestlöhne", "niedriglohn", "mindestlohnkommission", "tarifbindung", "tarifautonomie", "lohnuntergrenzen"],
+  "schlagwoerter": ["mindestlohn", "lohn", "niedriglohn"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "ja",
+      "kurzfassung": "Steht zum gesetzlichen Mindestlohn und zur unabhängigen Mindestlohnkommission; Lohnfindung bleibt Sache der Sozialpartner.",
+      "zitat": "Die Union hat 2014 den gesetzlichen Mindestlohn eingeführt. Er ist ein wichtiger Teil der Arbeitsmarktordnung. Wir stehen zum gesetzlichen Mindestlohn und der unabhängigen Mindestlohnkommission. Lohnfindung muss weiterhin Sache der Sozialpartner sein und nicht der Politik.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=32",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Verweist auf die Erhöhung des Mindestlohns auf zunächst 12 Euro als Gewinn für Millionen Menschen.",
+      "zitat": "Den Mindestlohn haben wir auf zunächst 12 Euro erhöht – das bedeutet mehr Einkommen und mehr Sicherheit für Millionen von Menschen!",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=5",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Will einen schrittweise steigenden Mindestlohn von zunächst 15 Euro, auch für unter 18-Jährige.",
+      "zitat": "Faire Löhne verlangen nach einem fairen Mindestlohn, damit Leistung auch anerkannt wird. Um die Inflation der vergangenen Jahre auszugleichen, braucht es jetzt einen schrittweise steigenden Mindestlohn von zunächst 15 Euro in 2025 und das auch für unter 18-Jährige.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=67",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "teils",
+      "kurzfassung": "Respektiert die Tarifautonomie und lehnt politische Eingriffe in die Mindestlohnkommission ab.",
+      "zitat": "Wir respektieren die Tarifautonomie und lehnen politische Eingriffe in die Arbeit der unabhängigen Mindestlohnkommission ab.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel 'Arbeit muss sich lohnen – Niedriglohnsektor und Mittelstand entlasten' (S. 57–59) und 'Soziale Marktwirtschaft' (S. 23–24) gelesen; Suche nach Mindestlohn, Lohnuntergrenze, Tarifautonomie: nur Erwähnung von Mindestlohn für Behinderte in Werkstätten, kein direkter Bezug zur Grundsatzfrage eines gesetzlichen Mindestlohns.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Will Mindestlohn von mindestens 15 Euro, spätestens ab 2026 16 Euro.",
+      "zitat": "Mit einem Mindestlohn von mindestens 15 Euro – spätestens ab 2026 16 Euro – sowie Steuerentlastungen für kleine Einkommen stellen wir sicher, dass sich Erwerbsarbeit lohnt.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "ja",
+      "kurzfassung": "Will den Mindestlohn auf 15 Euro erhöhen und die Tarifbindung stärken.",
+      "zitat": "Wir wollen den Mindestlohn auf 15 Euro erhöhen, die Tarifbindung stärken, eine Bürgerversicherung statt der heutigen Zwei-Klassen-Medizin und ein Rentensystem nach dem Vorbild Österreichs.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=3",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}
