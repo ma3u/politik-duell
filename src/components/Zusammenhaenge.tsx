@@ -18,13 +18,16 @@ import {
   vergroesserung,
   zoomeUm,
 } from '../logic/ansicht'
-import { baueGraph, type Knoten } from '../logic/graph'
+import { EVIDENZ_TEXT } from '../logic/forderung'
+import { baueGraph, obersteKnoten, type Knoten, type KnotenArt, type Strang } from '../logic/graph'
 
-// Aufklappbarer Graph unter #/themen: Themen → Ursachen → Maßnahmen, Knotengröße
-// nach Menge. Tippen klappt auf und zu, Ziehen verschiebt Knoten. Zoomen per
-// Knöpfen, Strg + Mausrad oder Pinch, Ziehen am Hintergrund verschiebt den
+// Aufklappbarer Graph unter #/themen in drei Strängen (siehe logic/graph.ts):
+// Probleme (Themen → Ursachen → Maßnahmen), Forderungen (Themen → Lösungswege →
+// Maßnahmen) und Haltungen (Haltungen → Positionen, Zielkonflikte, verwandte Themen).
+// Knotengröße nach Menge. Tippen klappt auf und zu, Ziehen verschiebt Knoten. Zoomen
+// per Knöpfen, Strg + Mausrad oder Pinch, Ziehen am Hintergrund verschiebt den
 // Ausschnitt (siehe logic/ansicht.ts). Maßnahmen sind bewusst ohne Partei und
-// Punkte dargestellt (siehe logic/graph.ts).
+// Punkte dargestellt, Positionen ohne ihren Inhalt.
 
 interface SimKnoten extends SimulationNodeDatum, Knoten {
   r: number
@@ -37,14 +40,62 @@ interface SimKante {
 const MIN_HOEHE = 220
 /** Vergrößerung je Knopfdruck. */
 const ZOOM_SCHRITT = 1.6
-const radius = (k: Knoten) =>
-  k.art === 'thema' ? 10 + 1.6 * Math.sqrt(k.massnahmen) : k.art === 'ursache' ? 5 + 1.4 * Math.sqrt(k.anzahl) : 4
+/** Knoten ohne eigene Kinder: kurze Kanten, schwache Abstoßung. */
+const BLATT: ReadonlySet<KnotenArt> = new Set(['massnahme', 'position', 'zielkonflikt'])
+
+function radius(k: Knoten, strang: Strang): number {
+  if (k.art === 'thema') return strang === 'haltung' ? 9 : 10 + 1.6 * Math.sqrt(k.massnahmen)
+  if (k.art === 'ursache' || k.art === 'instrument') return 5 + 1.4 * Math.sqrt(k.anzahl)
+  if (k.art === 'haltung') return 16
+  if (k.art === 'position') return 6
+  return 4
+}
 const kurz = (text: string, max: number) => (text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text)
 const zahl = (n: number) => n.toLocaleString('de-DE')
+const mz = (n: number, eins: string, viele: string) => `${zahl(n)} ${n === 1 ? eins : viele}`
 
-function beschreibe(k: Knoten): string {
-  if (k.art === 'thema')
-    return `Thema ${k.text}: ${zahl(k.anzahl)} ${k.anzahl === 1 ? 'Ursache' : 'Ursachen'}, ${zahl(k.massnahmen)} Maßnahmen.`
+const STRAENGE: { strang: Strang; label: string; titel: string; erklaerung: string }[] = [
+  {
+    strang: 'problem',
+    label: 'Probleme',
+    titel: 'Themen, Ursachen und Maßnahmen',
+    erklaerung:
+      'Ein Alltagsproblem wird einem Thema und seinen Ursachen zugeordnet; gewertet werden die Maßnahmen, die an diesen Ursachen ansetzen. Tippe auf ein Thema für seine Ursachen und auf eine Ursache für die Maßnahmen. Kreisgröße: Zahl der Maßnahmen (alle Parteien zusammen).',
+  },
+  {
+    strang: 'forderung',
+    label: 'Forderungen',
+    titel: 'Themen, Lösungswege und Maßnahmen',
+    erklaerung:
+      'Eine Forderung wird einem Lösungsweg zugeordnet; die Forderungskarte zeigt, in welchen Programmen er steht – ohne Punkte. Tippe auf ein Thema für seine Lösungswege und auf einen Lösungsweg für die Maßnahmen, die ihn enthalten. Kreisgröße: Zahl der Maßnahmen.',
+  },
+  {
+    strang: 'haltung',
+    label: 'Haltungen',
+    titel: 'Haltungen, Positionen und Zielkonflikte',
+    erklaerung:
+      'Eine Wertfrage, über die man verschieden denken kann. Die Haltungskarte zeigt die Position jeder Partei und die Zielkonflikte beider Seiten – ohne Punkte, und nur, wenn alle Positionen erfasst sind. Tippe auf eine Haltung; der Graph zeigt nur, ob eine Position erfasst ist, nicht welche.',
+  },
+]
+
+function beschreibe(k: Knoten, strang: Strang): string {
+  if (k.art === 'thema') {
+    if (strang === 'forderung')
+      return `Thema ${k.text}: ${mz(k.anzahl, 'Lösungsweg', 'Lösungswege')}, ${mz(k.massnahmen, 'Maßnahme', 'Maßnahmen')} mit Lösungsweg.`
+    if (strang === 'haltung') return `Verwandtes Thema ${k.text}: ${mz(k.anzahl, 'Ursache', 'Ursachen')}.`
+    return `Thema ${k.text}: ${mz(k.anzahl, 'Ursache', 'Ursachen')}, ${mz(k.massnahmen, 'Maßnahme', 'Maßnahmen')}.`
+  }
+  if (k.art === 'instrument')
+    return (
+      `Lösungsweg (${k.ebene === 'land' ? 'Landesprogramme' : 'Bundesprogramme'}${k.ki_entwurf ? ', KI-Entwurf' : ''}): ${k.text} – ` +
+      (k.anzahl ? `${mz(k.anzahl, 'Maßnahme', 'Maßnahmen')} aus den Programmen von ${mz(k.massnahmen, 'Partei', 'Parteien')}` : 'noch keine Maßnahme zugeordnet') +
+      (k.evidenz ? `. ${EVIDENZ_TEXT[k.evidenz]}.` : '.')
+    )
+  if (k.art === 'haltung')
+    return `Haltung: ${k.text} – ${k.erfasst ? 'alle Positionen erfasst, im Spiel.' : `${zahl(k.anzahl)} Positionen erfasst, noch nicht im Spiel.`}`
+  if (k.art === 'position')
+    return `Position ${k.text}: ${k.erfasst ? `erfasst${k.ki_entwurf ? ' (KI-Entwurf)' : ''}` : 'noch nicht erfasst'}.`
+  if (k.art === 'zielkonflikt') return `Zielkonflikt (Seite „${k.seite}“): ${k.text}`
   if (k.art === 'ursache')
     return (
       `Ursache (${k.ebene === 'land' ? 'Länderzuständigkeit' : 'Bund'}): ${k.text} – ` +
@@ -54,15 +105,15 @@ function beschreibe(k: Knoten): string {
     )
   return (
     `Maßnahme (${k.land ? `Landesprogramm ${k.land}` : 'Bundesprogramm'}${k.ki_entwurf ? ', KI-Entwurf' : ''}): ${k.text}` +
-    (k.anzahl > 1 ? ` – setzt an ${k.anzahl} Ursachen an.` : '')
+    (strang === 'problem' && k.anzahl > 1 ? ` – setzt an ${k.anzahl} Ursachen an.` : '')
   )
 }
 
 const bewegungArm = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches
 
 export function Zusammenhaenge({ daten }: { daten: Daten }) {
-  const [themenAuf, setThemenAuf] = useState<ReadonlySet<number>>(new Set())
-  const [ursachenAuf, setUrsachenAuf] = useState<ReadonlySet<number>>(new Set())
+  const [strang, setStrang] = useState<Strang>('problem')
+  const [offen, setOffen] = useState<ReadonlySet<string>>(new Set())
   const [aktiv, setAktiv] = useState<string | null>(null)
   const [, setTakt] = useState(0)
   const svg = useRef<SVGSVGElement>(null)
@@ -75,7 +126,7 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
   const zeiger = useRef(new Map<number, { x: number; y: number }>())
   const geste = useRef<{ art: 'schieben' } | { art: 'pinch'; abstand: number; x: number; y: number } | null>(null)
 
-  const graph = useMemo(() => baueGraph(daten, themenAuf, ursachenAuf), [daten, themenAuf, ursachenAuf])
+  const graph = useMemo(() => baueGraph(daten, strang, offen), [daten, strang, offen])
   // Breite der Zeichenfläche in Pixeln: 1 Einheit im Graphen = 1 Pixel, solange er passt.
   const [breite, setBreite] = useState(600)
   const schmal = breite < 480
@@ -98,7 +149,7 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
       const winkel = (i / graph.knoten.length) * 2 * Math.PI
       neu.set(k.schluessel, {
         ...k,
-        r: radius(k),
+        r: radius(k, strang),
         x: vorher?.x ?? (e?.x ?? 0) + Math.cos(winkel) * 20,
         y: vorher?.y ?? (e?.y ?? 0) + Math.sin(winkel) * 20,
         vx: vorher?.vx,
@@ -110,7 +161,7 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
     positionen.clear()
     for (const [s, k] of neu) positionen.set(s, k)
     return [...neu.values()]
-  }, [graph, positionen])
+  }, [graph, positionen, strang])
   const kanten = useMemo<SimKante[]>(() => graph.kanten.map((k) => ({ source: k.von, target: k.zu })), [graph])
   const simulation = useMemo(() => {
     const s = forceSimulation<SimKnoten, SimKante>(knoten)
@@ -120,13 +171,13 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
           .id((k) => k.schluessel)
           .distance((l) => {
             const [a, b] = [l.source as SimKnoten, l.target as SimKnoten]
-            return a.r + b.r + (b.art === 'massnahme' ? 10 : 34)
+            return a.r + b.r + (BLATT.has(b.art) ? 10 : 34)
           })
           .strength(0.7),
       )
       .force(
         'abstossung',
-        forceManyBody<SimKnoten>().strength((k) => (k.art === 'massnahme' ? -18 : -160)),
+        forceManyBody<SimKnoten>().strength((k) => (BLATT.has(k.art) ? -18 : -160)),
       )
       .force(
         'kollision',
@@ -152,15 +203,23 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
 
   const umschalten = (k: Knoten) => {
     if (!k.klappbar) return
-    const wechsel = (set: ReadonlySet<number>) => {
+    setOffen((set) => {
       const n = new Set(set)
-      if (n.has(k.id)) n.delete(k.id)
-      else n.add(k.id)
+      if (n.has(k.schluessel)) n.delete(k.schluessel)
+      else n.add(k.schluessel)
       return n
-    }
-    if (k.art === 'thema') setThemenAuf(wechsel)
-    else if (k.art === 'ursache') setUrsachenAuf(wechsel)
+    })
   }
+  const waehle = (s: Strang) => {
+    if (s === strang) return
+    // Positionen gelten je Strang (Thema-Knoten gibt es in mehreren), daher frisch beginnen.
+    positionen.clear()
+    setStrang(s)
+    setOffen(new Set())
+    setAnsicht(null)
+    setAktiv(null)
+  }
+  const info = STRAENGE.find((x) => x.strang === strang)!
 
   const loslassen = (e: React.PointerEvent) => {
     zeiger.current.delete(e.pointerId)
@@ -179,7 +238,7 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
   // der Graph; wird der Graph breiter, verkleinert sich alles.
   let [x0, y0, x1, y1] = [Infinity, Infinity, -Infinity, -Infinity]
   for (const k of knoten) {
-    const rand = k.r + (k.art === 'thema' ? 60 : 12)
+    const rand = k.r + (k.art === 'thema' || k.art === 'haltung' ? 60 : 12)
     x0 = Math.min(x0, (k.x ?? 0) - rand)
     x1 = Math.max(x1, (k.x ?? 0) + rand)
     y0 = Math.min(y0, (k.y ?? 0) - k.r - 8)
@@ -240,60 +299,48 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
       if (k.zu === aktiv) nachbarn.add(k.von)
     }
   const mitEntwurf = knoten.some((k) => k.ki_entwurf)
-  const alleThemen = new Set(daten.themen.map((t) => t.id))
+  const leer = strang === 'haltung' ? !daten.haltungen.length : !daten.themen.length
 
   return (
     <figure className="diagramm graph">
       <figcaption>
-        <strong>Themen, Ursachen und Maßnahmen</strong>
+        <strong>{info.titel}</strong>
         <span>
-          Tippe auf ein Thema, um seine Ursachen zu zeigen, und auf eine Ursache für die Maßnahmen, die an ihr ansetzen.
-          Die Größe der Kreise zeigt die Zahl der Maßnahmen (alle Parteien zusammen). Knoten lassen sich verschieben.
-          Zum Vergrößern: Knöpfe am Diagramm, zwei Finger oder Strg + Mausrad; am Hintergrund ziehen verschiebt den
-          Ausschnitt.
+          {info.erklaerung} Knoten lassen sich verschieben. Zum Vergrößern: Knöpfe am Diagramm, zwei Finger oder Strg
+          + Mausrad; am Hintergrund ziehen verschiebt den Ausschnitt.
         </span>
       </figcaption>
-      <ul className="diagramm-legende">
-        <li>
-          <span className="graph-legende g-thema" aria-hidden="true" />
-          Thema
-        </li>
-        <li>
-          <span className="graph-legende g-ursache" aria-hidden="true" />
-          Ursache (Bund)
-        </li>
-        <li>
-          <span className="graph-legende g-ursache g-land" aria-hidden="true" />
-          Ursache (Länder)
-        </li>
-        <li>
-          <span className="graph-legende g-massnahme" aria-hidden="true" />
-          Maßnahme
-        </li>
-        {mitEntwurf && (
-          <li>
-            <span className="graph-legende g-massnahme g-entwurf" aria-hidden="true" />
-            Maßnahme, KI-Entwurf
-          </li>
-        )}
-      </ul>
+      <div className="strang-wahl" role="radiogroup" aria-label="Was der Graph zeigt">
+        {STRAENGE.map((x) => (
+          <button
+            key={x.strang}
+            type="button"
+            role="radio"
+            aria-checked={strang === x.strang}
+            className={strang === x.strang ? 'aktiv' : undefined}
+            onClick={() => waehle(x.strang)}
+          >
+            {x.label}
+          </button>
+        ))}
+      </div>
+      <GraphLegende strang={strang} mitEntwurf={mitEntwurf} />
       <p className="diagramm-steuerung">
         <button
           type="button"
           className="knopf-link"
           onClick={() => {
-            setThemenAuf(alleThemen)
+            setOffen(new Set(obersteKnoten(daten, strang)))
             setAnsicht(null)
           }}
         >
-          Alle Themen aufklappen
+          {strang === 'haltung' ? 'Alle Haltungen aufklappen' : 'Alle Themen aufklappen'}
         </button>
         <button
           type="button"
           className="knopf-link"
           onClick={() => {
-            setThemenAuf(new Set())
-            setUrsachenAuf(new Set())
+            setOffen(new Set())
             setAnsicht(null)
           }}
         >
@@ -306,7 +353,7 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
           className="graph-flaeche"
           viewBox={viewBox}
           role="group"
-          aria-label="Graph der Themen, Ursachen und Maßnahmen"
+          aria-label={`Graph: ${info.titel}`}
           onPointerDown={(e) => {
             zeiger.current.set(e.pointerId, { x: e.clientX, y: e.clientY })
             e.currentTarget.setPointerCapture(e.pointerId)
@@ -390,16 +437,20 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
                 `g-${k.art}`,
                 k.ebene === 'land' ? 'g-land' : '',
                 k.ki_entwurf ? 'g-entwurf' : '',
+                k.erfasst === false ? 'g-offen' : '',
+                k.seite ? `g-seite-${k.seite}` : '',
                 k.aufgeklappt ? 'g-auf' : '',
                 gedimmt ? 'gedimmt' : '',
                 aktiv === k.schluessel ? 'aktiv' : '',
               ]
               const label =
-                k.art === 'thema'
+                k.art === 'thema' || k.art === 'position'
                   ? k.text
-                  : k.art === 'ursache' && (k.aufgeklappt || aktiv === k.schluessel)
-                    ? kurz(k.text, 34)
-                    : null
+                  : k.art === 'haltung'
+                    ? kurz(k.text, 40)
+                    : (k.art === 'ursache' || k.art === 'instrument') && (k.aufgeklappt || aktiv === k.schluessel)
+                      ? kurz(k.text, 34)
+                      : null
               return (
                 <g
                   key={k.schluessel}
@@ -407,7 +458,7 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
                   transform={`translate(${k.x ?? 0},${k.y ?? 0})`}
                   role={k.klappbar ? 'button' : 'img'}
                   tabIndex={0}
-                  aria-label={beschreibe(k)}
+                  aria-label={beschreibe(k, strang)}
                   aria-expanded={k.klappbar ? k.aufgeklappt : undefined}
                   onPointerDown={(e) => {
                     const p = punkt(e)
@@ -425,11 +476,11 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
                   }}
                 >
                   <circle r={k.r} />
-                  {k.art === 'thema' && (
+                  {(k.art === 'thema' && strang !== 'haltung') || k.art === 'haltung' ? (
                     <text className="graph-zahl" dy="0.35em" aria-hidden="true">
-                      {k.anzahl}
+                      {k.art === 'haltung' ? `${k.anzahl}/${daten.parteien.length}` : k.anzahl}
                     </text>
-                  )}
+                  ) : null}
                   {label && (
                     <text className="graph-label" y={k.r + 12} aria-hidden="true">
                       {label}
@@ -477,8 +528,61 @@ export function Zusammenhaenge({ daten }: { daten: Daten }) {
         </div>
       </div>
       <p className="diagramm-detail" aria-hidden="true">
-        {aktivKnoten ? beschreibe(aktivKnoten) : 'Zahl im Themenkreis: Ursachen. Tippen klappt auf und zu.'}
+        {aktivKnoten
+          ? beschreibe(aktivKnoten, strang)
+          : leer
+            ? strang === 'haltung'
+              ? 'Noch keine Haltungen erfasst.'
+              : 'Noch keine Themen erfasst.'
+            : {
+                problem: 'Zahl im Themenkreis: Ursachen. Tippen klappt auf und zu.',
+                forderung: 'Zahl im Themenkreis: Lösungswege. Tippen klappt auf und zu.',
+                haltung: 'Zahl im Haltungskreis: erfasste Positionen. Tippen klappt auf und zu.',
+              }[strang]}
       </p>
     </figure>
+  )
+}
+
+function LegendenEintrag({ klassen, label }: { klassen: string; label: string }) {
+  return (
+    <li>
+      <span className={`graph-legende ${klassen}`} aria-hidden="true" />
+      {label}
+    </li>
+  )
+}
+
+function GraphLegende({ strang, mitEntwurf }: { strang: Strang; mitEntwurf: boolean }) {
+  return (
+    <ul className="diagramm-legende">
+      {strang === 'haltung' ? (
+        <>
+          <LegendenEintrag klassen="g-haltung" label="Haltung (Wertfrage)" />
+          <LegendenEintrag klassen="g-position" label="Position erfasst" />
+          <LegendenEintrag klassen="g-position g-offen" label="Position noch offen" />
+          <LegendenEintrag klassen="g-zielkonflikt" label="Zielkonflikt" />
+          <LegendenEintrag klassen="g-thema g-verwandt" label="verwandtes Thema" />
+          {mitEntwurf && <LegendenEintrag klassen="g-position g-entwurf" label="Position, KI-Entwurf" />}
+        </>
+      ) : (
+        <>
+          <LegendenEintrag klassen="g-thema" label="Thema" />
+          {strang === 'problem' ? (
+            <>
+              <LegendenEintrag klassen="g-ursache" label="Ursache (Bund)" />
+              <LegendenEintrag klassen="g-ursache g-land" label="Ursache (Länder)" />
+            </>
+          ) : (
+            <>
+              <LegendenEintrag klassen="g-instrument" label="Lösungsweg (Bund)" />
+              <LegendenEintrag klassen="g-instrument g-land" label="Lösungsweg (Länder)" />
+            </>
+          )}
+          <LegendenEintrag klassen="g-massnahme" label="Maßnahme" />
+          {mitEntwurf && <LegendenEintrag klassen="g-massnahme g-entwurf" label="KI-Entwurf" />}
+        </>
+      )}
+    </ul>
   )
 }

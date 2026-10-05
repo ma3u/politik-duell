@@ -1867,6 +1867,11 @@ textarea {
   --st-offen: var(--flaeche-2);
   --mn-geprueft: #256abf;
   --mn-entwurf: #eb6834;
+  /* Forderungen (Lösungswege) türkis, Haltungen violett – nur zur Unterscheidung der Stränge. */
+  --fd-weg: #0b7a6f;
+  --fd-weg-hell: #8dd3c8;
+  --hl-haltung: #6a44b5;
+  --hl-hell: #cdbdf0;
 }
 .start-themen {
   margin: 0;
@@ -2310,6 +2315,239 @@ textarea {
   background: var(--mn-entwurf);
   box-shadow: none;
 }
+.fd-mehrere {
+  background: var(--fd-weg);
+}
+.fd-eine {
+  background: var(--fd-weg-hell);
+}
+
+/* Aufbau der Datengrundlage: je Strang eine Kette aus Kacheln mit Pfeilen. */
+.aufbau {
+  display: grid;
+  gap: 12px;
+}
+.strang {
+  padding: 12px 14px 14px;
+  border: 1px solid var(--linie);
+  border-left: 5px solid var(--st-massnahmen);
+  border-radius: 10px;
+  background: var(--flaeche);
+}
+.strang:nth-child(2) {
+  border-left-color: var(--fd-weg);
+}
+.strang:nth-child(3) {
+  border-left-color: var(--hl-haltung);
+}
+.strang-kopf {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+.strang-kopf span {
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.strang-kette {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 0.8fr);
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.strang-kette > li {
+  position: relative;
+  display: flex;
+}
+.strang-kette > li > * {
+  flex: 1;
+}
+.strang-kette > li + li::before {
+  content: '→';
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-leise);
+  font-weight: 700;
+}
+.strang-kette .kachel {
+  background: var(--papier);
+}
+.strang-ergebnis span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px dashed var(--linie);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .strang-kette {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .strang-kette > li + li::before {
+    content: '↓';
+    left: 50%;
+    top: -16px;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+  }
+  .strang-kette .kachel {
+    display: grid;
+    grid-template-columns: 3.6rem 1fr;
+    grid-template-areas: 'wert label' 'wert zusatz';
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 12px;
+  }
+  .strang-kette .kachel-label {
+    grid-area: label;
+    color: var(--text);
+    font-weight: 700;
+  }
+  .strang-kette .kachel-wert {
+    grid-area: wert;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+  .strang-kette .kachel-zusatz {
+    grid-area: zusatz;
+  }
+  .strang-ergebnis span {
+    padding: 6px;
+  }
+}
+
+/* Umschalter im Zusammenhangsgraphen: Probleme, Forderungen, Haltungen */
+.strang-wahl {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.strang-wahl button {
+  min-height: 44px;
+  padding: 6px 14px;
+  border: 0;
+  border-right: 1px solid var(--linie);
+  background: var(--flaeche);
+  color: var(--tinte);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.strang-wahl button:last-child {
+  border-right: 0;
+}
+.strang-wahl button.aktiv {
+  background: var(--tinte);
+  color: #fff;
+  font-weight: 700;
+}
+.strang-wahl button:focus-visible {
+  outline: 2px solid var(--fokus);
+  outline-offset: -3px;
+}
+
+.g-instrument circle {
+  fill: var(--fd-weg);
+}
+.g-instrument.g-land circle {
+  fill: var(--fd-weg-hell);
+  stroke: var(--fd-weg);
+  stroke-width: 1.5;
+}
+.g-instrument.g-entwurf circle {
+  stroke: var(--mn-entwurf);
+  stroke-width: 2.5;
+}
+.g-instrument.g-auf circle {
+  stroke: var(--tinte);
+  stroke-width: 2.5;
+}
+.g-haltung circle {
+  fill: var(--hl-haltung);
+}
+.g-haltung.g-offen circle {
+  fill: var(--hl-hell);
+  stroke: var(--hl-haltung);
+  stroke-width: 2;
+}
+.g-haltung.g-offen .graph-zahl {
+  fill: var(--tinte);
+}
+.g-haltung .graph-label {
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.g-position circle {
+  fill: var(--hl-hell);
+  stroke: var(--hl-haltung);
+  stroke-width: 1.5;
+}
+.g-position.g-offen circle {
+  fill: var(--flaeche);
+  stroke: var(--text-leise);
+  stroke-dasharray: 2 2;
+}
+.g-position.g-entwurf circle {
+  fill: var(--mn-entwurf);
+  stroke: var(--flaeche);
+}
+.g-position .graph-label {
+  font-size: 10px;
+}
+.g-zielkonflikt circle {
+  fill: var(--flaeche);
+  stroke: var(--hl-haltung);
+  stroke-width: 1.5;
+}
+.graph-legende.g-instrument {
+  background: var(--fd-weg);
+}
+.graph-legende.g-instrument.g-land {
+  background: var(--fd-weg-hell);
+  box-shadow: inset 0 0 0 1.5px var(--fd-weg);
+}
+.graph-legende.g-haltung {
+  background: var(--hl-haltung);
+}
+.graph-legende.g-position {
+  width: 10px;
+  height: 10px;
+  background: var(--hl-hell);
+  box-shadow: inset 0 0 0 1.5px var(--hl-haltung);
+}
+.graph-legende.g-position.g-offen {
+  background: var(--flaeche);
+  box-shadow: none;
+  border: 1.5px dashed var(--text-leise);
+}
+.graph-legende.g-position.g-entwurf {
+  background: var(--mn-entwurf);
+  box-shadow: none;
+}
+.graph-legende.g-zielkonflikt {
+  width: 9px;
+  height: 9px;
+  background: var(--flaeche);
+  box-shadow: inset 0 0 0 1.5px var(--hl-haltung);
+}
+.graph-legende.g-thema.g-verwandt {
+  width: 10px;
+  height: 10px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .balken-pfeil,
   .graph-knoten {

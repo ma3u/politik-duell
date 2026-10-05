@@ -1,7 +1,18 @@
 import { useEffect, useState } from 'react'
 import type { Daten } from '../data/quelle'
-import { statistik, themenStand, type Erfassung, type ThemaStand } from '../logic/stand'
+import {
+  haltungStand,
+  instrumentStand,
+  statistik,
+  themenStand,
+  type Erfassung,
+  type HaltungStand,
+  type Statistik,
+  type ThemaInstrumente,
+  type ThemaStand,
+} from '../logic/stand'
 import { BETREIBER } from '../rechtliches/betreiber'
+import { EVIDENZ_TEXT } from '../logic/forderung'
 import { Logo } from './Logo'
 import { Zusammenhaenge } from './Zusammenhaenge'
 import { parteiStil } from './stil'
@@ -10,6 +21,8 @@ import { parteiStil } from './stil'
 // ausgewertet sind und ein paar Zahlen zum Datenbestand. Neutralität: Parteien
 // stehen in fester Reihenfolge (wie in der Datenbank), je Partei gibt es nur den
 // Erfassungsstand – keine Maßnahmenzahlen, keine Summen, keine Sortierung nach Parteien.
+// Bei Lösungswegen steht nur, in wie vielen Programmen sie vorkommen (ohne Namen), bei
+// Haltungen nur, wie viele Positionen erfasst sind – nicht, wie die Parteien zur Frage stehen.
 
 const ERFASSUNG: Record<Erfassung, { label: string; zeichen: string }> = {
   massnahmen: { label: 'ausgewertet, mit Maßnahmen', zeichen: '●' },
@@ -281,6 +294,173 @@ function Ursachendiagramm({ themen, testphase }: { themen: ThemaStand[]; testpha
   )
 }
 
+function Loesungswegdiagramm({ themen, parteien }: { themen: ThemaInstrumente[]; parteien: number }) {
+  const max = Math.max(1, ...themen.map((t) => t.instrumente.length))
+  return (
+    <Balkendiagramm
+      titel="Lösungswege je Thema"
+      unterzeile="Grundlage der Forderungskarte; aufklappen zeigt je Lösungsweg, in den Programmen wie vieler Parteien er steht"
+      legende={[
+        { klasse: 'fd-mehrere', label: 'in Programmen mehrerer Parteien' },
+        { klasse: 'fd-eine', label: 'im Programm einer Partei' },
+      ]}
+      leer="Tippe auf ein Thema, um seine Lösungswege aufzuklappen."
+      zeilen={themen.map((t) => {
+        const n = t.instrumente.length
+        return {
+          id: t.id,
+          name: t.name,
+          wert: zahl(n),
+          segmente: [
+            { klasse: 'fd-mehrere', anteil: t.mehrere / max },
+            { klasse: 'fd-eine', anteil: (n - t.mehrere) / max },
+          ],
+          detail: n
+            ? `${t.name}: ${zahl(n)} ${n === 1 ? 'Lösungsweg' : 'Lösungswege'}, davon ${zahl(t.mehrere)} in Programmen mehrerer Parteien.`
+            : `${t.name}: noch keine Lösungswege erfasst.`,
+          kinder: t.instrumente.map((i) => ({
+            id: i.id,
+            name: kurz(i.name),
+            wert: `${i.parteien}/${parteien}`,
+            segmente: [{ klasse: i.parteien > 1 ? 'fd-mehrere' : 'fd-eine', anteil: parteien ? i.parteien / parteien : 0 }],
+            detail:
+              `${i.name} (${i.ebene === 'land' ? 'Landesprogramme' : 'Bundesprogramme'}${i.ki_entwurf ? ', KI-Entwurf' : ''}): ` +
+              (i.massnahmen
+                ? `${zahl(i.massnahmen)} ${i.massnahmen === 1 ? 'Maßnahme' : 'Maßnahmen'} aus den Programmen von ${zahl(i.parteien)} ${i.parteien === 1 ? 'Partei' : 'Parteien'}`
+                : 'noch keine Maßnahme zugeordnet') +
+              (i.evidenz ? `. ${EVIDENZ_TEXT[i.evidenz]}.` : '.'),
+          })),
+        }
+      })}
+    />
+  )
+}
+
+function Haltungsdiagramm({ haltungen }: { haltungen: HaltungStand[] }) {
+  const mitEntwurf = haltungen.some((h) => h.positionenEntwurf > 0)
+  return (
+    <Balkendiagramm
+      titel="Positionen je Haltung"
+      unterzeile="Eine Haltungskarte gibt es erst, wenn die Positionen aller Parteien erfasst sind („Alle oder keine“); ✓ = im Spiel"
+      legende={[
+        { klasse: 'st-massnahmen', label: 'Position erfasst' },
+        ...(mitEntwurf ? [{ klasse: 'mn-entwurf', label: 'als KI-Entwurf erfasst' }] : []),
+        { klasse: 'st-offen', label: 'noch nicht erfasst' },
+      ]}
+      leer="Tippe auf eine Haltung für Details."
+      zeilen={haltungen.map((h) => {
+        const erfasst = h.positionen + h.positionenEntwurf
+        const anteil = (n: number) => (h.parteien ? n / h.parteien : 0)
+        return {
+          id: h.id,
+          name: `${h.vollstaendig ? '✓ ' : ''}${kurz(h.frage)}`,
+          wert: `${erfasst}/${h.parteien}`,
+          segmente: [
+            { klasse: 'st-massnahmen', anteil: anteil(h.positionen) },
+            { klasse: 'mn-entwurf', anteil: anteil(h.positionenEntwurf) },
+            { klasse: 'st-offen', anteil: anteil(h.parteien - erfasst) },
+          ],
+          detail:
+            `${h.frage} – ${erfasst} von ${h.parteien} Positionen erfasst` +
+            (h.positionenEntwurf ? ` (davon ${h.positionenEntwurf} KI-Entwurf)` : '') +
+            `; ${h.vollstaendig ? 'im Spiel' : 'noch nicht im Spiel'}. ` +
+            `Zielkonflikte: ${h.zielkonflikte.ja} auf der Ja-, ${h.zielkonflikte.nein} auf der Nein-Seite; ` +
+            `${h.verwandteThemen} verwandte ${h.verwandteThemen === 1 ? 'Thema' : 'Themen'}.`,
+        }
+      })}
+    />
+  )
+}
+
+/** Ein Strang der Datengrundlage als Kette von Kacheln, die im Spiel zu einem Ergebnis führt. */
+function Strang({
+  name,
+  ergebnis,
+  glieder,
+  hinweis,
+}: {
+  name: string
+  ergebnis: string
+  glieder: { label: string; wert: string; zusatz?: string }[]
+  hinweis: string
+}) {
+  return (
+    <section className="strang" aria-label={`${name}: ${glieder.map((g) => `${g.wert} ${g.label}`).join(', ')}`}>
+      <header className="strang-kopf">
+        <strong>{name}</strong>
+        <span>{hinweis}</span>
+      </header>
+      <ol className="strang-kette">
+        {glieder.map((g) => (
+          <li key={g.label}>
+            <Kachel {...g} />
+          </li>
+        ))}
+        <li className="strang-ergebnis">
+          <span>{ergebnis}</span>
+        </li>
+      </ol>
+    </section>
+  )
+}
+
+function Aufbau({ s, testphase }: { s: Statistik; testphase: boolean }) {
+  const entwurf = (n: number) => (testphase && n ? `, davon ${zahl(n)} KI-Entwurf` : '')
+  const massnahmen = s.massnahmen + s.massnahmenEntwurf
+  const mitWeg = s.massnahmenMitInstrument + s.massnahmenMitInstrumentEntwurf
+  const positionen = s.positionen + s.positionenEntwurf
+  return (
+    <div className="aufbau">
+      <Strang
+        name="Probleme"
+        hinweis="Ein Alltagsproblem wird Thema und Ursachen zugeordnet; die Maßnahmen an diesen Ursachen bringen Punkte."
+        ergebnis="Wertung mit Punkten"
+        glieder={[
+          { label: 'Themen', wert: zahl(s.themen) },
+          { label: 'Ursachen', wert: zahl(s.ursachen), zusatz: 'mit Quelle belegt' },
+          { label: 'Maßnahmen', wert: zahl(massnahmen), zusatz: `aus den Programmen${entwurf(s.massnahmenEntwurf)}` },
+        ]}
+      />
+      <Strang
+        name="Forderungen"
+        hinweis="Eine Forderung wird einem Lösungsweg zugeordnet; die Karte zeigt, in welchen Programmen er steht."
+        ergebnis="Forderungskarte, ohne Punkte"
+        glieder={[
+          { label: 'Themen', wert: zahl(s.themen), zusatz: 'dieselben wie oben' },
+          {
+            label: 'Lösungswege',
+            wert: zahl(s.instrumente + s.instrumenteEntwurf),
+            zusatz: `gleiche Wege in mehreren Programmen${entwurf(s.instrumenteEntwurf)}`,
+          },
+          {
+            label: 'Maßnahmen mit Lösungsweg',
+            wert: zahl(mitWeg),
+            zusatz: `von ${zahl(massnahmen)} Maßnahmen${entwurf(s.massnahmenMitInstrumentEntwurf)}`,
+          },
+        ]}
+      />
+      <Strang
+        name="Haltungen"
+        hinweis="Eine Wertfrage, über die man verschieden denken kann – mit der Position jeder Partei und den Zielkonflikten."
+        ergebnis="Haltungskarte, ohne Punkte"
+        glieder={[
+          {
+            label: 'Haltungen',
+            wert: zahl(s.haltungen),
+            zusatz: `davon ${zahl(s.haltungenVollstaendig)} vollständig und im Spiel`,
+          },
+          {
+            label: 'Positionen',
+            wert: zahl(positionen),
+            zusatz: `von ${zahl(s.positionenMoeglich)} (Haltungen × Parteien)${entwurf(s.positionenEntwurf)}`,
+          },
+          { label: 'Zielkonflikte', wert: zahl(s.zielkonflikte), zusatz: 'je Seite der Frage, mit Quelle' },
+        ]}
+      />
+    </div>
+  )
+}
+
 function Tabelle({ daten, themen }: { daten: Daten; themen: ThemaStand[] }) {
   const mitEntwurf = themen.some((t) => t.parteien.some((p) => p.ki_entwurf))
   return (
@@ -385,6 +565,8 @@ export function Themenstand({
 function Inhalt({ daten }: { daten: Daten }) {
   const s = statistik(daten)
   const themen = themenStand(daten)
+  const wege = instrumentStand(daten)
+  const haltungen = haltungStand(daten)
   const testphase = !!daten.testphase
   const anteil = s.paare ? Math.round((s.erfasst / s.paare) * 100) : 0
   return (
@@ -395,16 +577,16 @@ function Inhalt({ daten }: { daten: Daten }) {
           sind. In der öffentlichen App zählen nur geprüfte Einträge.
         </p>
       )}
-      <h2>In Zahlen</h2>
+      <h2>So ist die Datengrundlage aufgebaut</h2>
+      <p>
+        Das Spiel unterscheidet, was jemand nennt: ein <strong>Problem</strong> aus dem Alltag, eine{' '}
+        <strong>Forderung</strong> nach einer bestimmten Lösung oder eine <strong>Haltung</strong>. Für jedes gibt es
+        einen eigenen Teil der Daten. Nur Probleme werden mit Punkten gewertet.
+      </p>
+      <Aufbau s={s} testphase={testphase} />
+      <h2>Programme</h2>
       <div className="kacheln">
-        <Kachel label="Themen" wert={zahl(s.themen)} />
-        <Kachel label="Ursachen" wert={zahl(s.ursachen)} zusatz="mit Quelle belegt" />
-        <Kachel
-          label="Maßnahmen"
-          wert={zahl(s.massnahmen + s.massnahmenEntwurf)}
-          zusatz={s.massnahmenEntwurf ? `davon ${zahl(s.massnahmenEntwurf)} KI-Entwurf` : 'geprüft'}
-        />
-        <Kachel label="Parteien" wert={zahl(s.parteien)} />
+        <Kachel label="Parteien" wert={zahl(s.parteien)} zusatz="Bundesprogramme" />
         {s.landesprogramme > 0 && (
           <Kachel
             label="Landesprogramme"
@@ -440,6 +622,10 @@ function Inhalt({ daten }: { daten: Daten }) {
           <Auswertungsdiagramm themen={themen} parteien={s.parteien} />
           <Massnahmendiagramm themen={themen} testphase={testphase} />
           <Ursachendiagramm themen={themen} testphase={testphase} />
+          <h2>Forderungen</h2>
+          <Loesungswegdiagramm themen={wege} parteien={s.parteien} />
+          <h2>Haltungen</h2>
+          {haltungen.length ? <Haltungsdiagramm haltungen={haltungen} /> : <p>Noch keine Haltungen erfasst.</p>}
           <h2>Zusammenhänge</h2>
           <Zusammenhaenge daten={daten} />
           <h2>Je Thema und Partei</h2>
