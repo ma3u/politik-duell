@@ -2,9 +2,7 @@
   "id": 5,
   "frage": "Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben?",
   "beschreibung": "Ob Deutschland die Kernenergie zur Stromerzeugung wieder nutzen soll, also neue Anlagen bauen oder stillgelegte reaktivieren, oder ob es beim Atomausstieg bleibt.",
-  "verwandte_themen": [
-    3
-  ],
+  "verwandte_themen": [3],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -27,24 +25,82 @@
     "teils": "Will die Kernenergie nur eingeschränkt oder unter Bedingungen öffnen, zum Beispiel Forschung, neue Reaktortypen oder eine spätere Prüfung, ohne den Ausstieg klar aufzuheben.",
     "nein": "Hält am Atomausstieg fest oder lehnt die Kernenergie zur Stromerzeugung in Deutschland ab."
   },
-  "suchbegriffe": [
-    "atomkraft",
-    "kernkraft",
-    "kernenergie",
-    "atomausstieg",
-    "kernkraftwerk",
-    "atomkraftwerk",
-    "reaktor",
-    "laufzeitverlaengerung"
-  ],
-  "schlagwoerter": [
-    "atomkraft",
-    "kernkraft",
-    "atomausstieg",
-    "strom"
-  ],
+  "suchbegriffe": ["atomkraft", "kernkraft", "kernenergie", "atomausstieg", "kernkraftwerk", "atomkraftwerk", "reaktor", "laufzeitverlaengerung"],
+  "schlagwoerter": ["atomkraft", "kernkraft", "atomausstieg", "strom"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "teils",
+      "kurzfassung": "Setzt auf Forschung zu neuen Reaktortypen und will prüfen, ob Wiederaufnahme abgeschalteter Kraftwerke möglich ist.",
+      "zitat": "Dabei setzen wir auf die Forschung zu Kernenergie der vierten und fünften Generation, Small Modular Reactors und Fusionskraftwerken. Gleichzeitig streben wir schnellstmöglich eine fachliche Bestandsaufnahme an, ob angesichts des jeweiligen Rückbaustadiums eine Wiederaufnahme des Betriebs der zuletzt abgeschalteten Kernkraftwerke unter vertretbarem technischem und finanziellem Aufwand noch möglich ist.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "nein",
+      "kurzfassung": "Hält die Stilllegung der Atomkraft für gut und will sichere Endlagerung.",
+      "zitat": "Die Atomkraft in Deutschland ist stillgelegt und das ist gut so. Jetzt braucht es die sichere Endlagerung der radioaktiven Stoffe. Wir werden das Endlager-Suchverfahren konstruktiv begleiten und beschleunigen, ohne die Sicherheit zu gefährden.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=53",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "nein",
+      "kurzfassung": "Lehnt Rückkehr zur Atomkraft ab, wegen Endlagerfrage, Kosten und Proliferationsgefahr.",
+      "zitat": "Eine Rückkehr zur Hochrisikotechnologie Atomkraft ist weder für das Erreichen der Klimaziele noch für die Versorgungssicherheit notwendig und für uns aufgrund der ungeklärten Endlagerfrage, der Kosten und der Gefahr der Verbreitung von atomwaffenfähigem Material keine Option.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=43",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "ja",
+      "kurzfassung": "Will Wiederinbetriebnahme vorhandener Kernkraftwerke rechtlich ermöglichen; Entscheidung bei den Betreibern.",
+      "zitat": "Wir wollen die Wiederinbetriebnahme der vorhandenen Kernkraftwerke rechtlich ermöglichen und die Entscheidung darüber den Betreibern überlassen.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "ja",
+      "kurzfassung": "Plant Wiedereinstieg in die Kernenergie und schnelle Wiederinbetriebnahme bestehender Kraftwerke.",
+      "zitat": "Neben dem kurzfristig notwendigen Ausbau von Kohlekraftwerken planen wir den Wiedereinstieg in die Kernenergie. Dabei sollen bestehende Konzepte wieder aufgegriffen und neue Entwicklungen berücksichtigt werden. Bestehende Kraftwerke sollen so schnell wie möglich wieder in Betrieb genommen werden.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=42",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Will nur in erneuerbare Energiequellen und Infrastruktur investieren.",
+      "zitat": "Die Linke will nur in echte erneuerbare Energiequellen und Infrastruktur investieren.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=33",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "teils",
+      "kurzfassung": "Lehnt Neubau konventioneller Atomkraftwerke ab, ebenso derzeit Mini-Kraftwerke.",
+      "zitat": "Den Neubau konventioneller Atomkraftwerke lehnen wir ab. Dasselbe gilt derzeit für Mini-Kraftwerke (SMR), deren Betrieb bis zu 30-mal mehr radioaktive Abfälle erzeugt als konventionelle Reaktoren.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

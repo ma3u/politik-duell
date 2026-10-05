@@ -2,9 +2,7 @@
   "id": 15,
   "frage": "Soll es eine Steuer auf stark gezuckerte Getränke geben?",
   "beschreibung": "Ob der Staat Getränke mit hohem Zuckergehalt zusätzlich besteuern soll, um Konsum und Zuckeraufnahme zu senken, oder ob es bei den bisherigen Steuern und freiwilligen Maßnahmen bleibt.",
-  "verwandte_themen": [
-    1
-  ],
+  "verwandte_themen": [1],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -27,24 +25,74 @@
     "teils": "Will die Steuer nur unter Bedingungen, etwa als Prüfauftrag, nur für bestimmte Produkte oder zusammen mit anderen Maßnahmen wie Kennzeichnung oder freiwilliger Reduktion.",
     "nein": "Lehnt eine Steuer auf gezuckerte Getränke ab oder setzt ausdrücklich auf freiwillige Maßnahmen statt Steuer."
   },
-  "suchbegriffe": [
-    "zuckersteuer",
-    "zuckerabgabe",
-    "zuckerhaltige getränke",
-    "gezuckerte getränke",
-    "softdrink",
-    "limonadensteuer",
-    "zuckergesüßt",
-    "herstellerabgabe"
-  ],
-  "schlagwoerter": [
-    "zuckersteuer",
-    "limo",
-    "softdrinks",
-    "gesundheit"
-  ],
+  "suchbegriffe": ["zuckersteuer", "zuckerabgabe", "zuckerhaltige getränke", "gezuckerte getränke", "softdrink", "limonadensteuer", "zuckergesüßt", "herstellerabgabe"],
+  "schlagwoerter": ["zuckersteuer", "limo", "softdrinks", "gesundheit"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel zu Gesundheit und Ernährung (S. 69–71) durchsucht; Suchbegriffe 'zuckersteuer', 'zuckerabgabe', 'zuckerhaltige getränke', 'gezuckerte getränke', 'limonadensteuer' nicht gefunden. Keine Aussage zur Steuer auf gezuckerte Getränke vorhanden.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will verbindliche Reduktionsziele und eine Herstellerabgabe für zuckerhaltige Getränke.",
+      "zitat": "Um den Zucker-, Salz- und Fettgehalt in unseren Lebensmitteln zu reduzieren, legen wir verbindliche Ziele fest und setzen ökonomische Anreize für weniger gesundheitsschädliche Produkte – über eine Herstellerabgabe für zuckerhaltige Getränke.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=28",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 60 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Nennt wirksame Maßnahmen, aber weder Steuer noch Ablehnung.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Gesundheit/Prävention (S. 33-34) und Nachhaltigkeit/Klima (S. 39-40) gelesen: allgemeine Aussagen zu Prävention und digitalen Gesundheitsangeboten, aber nichts zur Zuckersteuer oder Getränkeabgabe.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Lehnt jede gesonderte Lebensmittelbesteuerung ab, auch eine Zuckersteuer.",
+      "zitat": "Die AfD unterstützt das Leitbild des mündigen Bürgers. Er soll in seinem Konsumverhalten nicht staatlich bevormundet werden. Deshalb lehnen wir jede Form der gesonderten Lebensmittelbesteuerung ab, wie z. B. eine Fleisch- oder Zuckersteuer.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=75",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "teils",
+      "kurzfassung": "Will den Zuckergehalt in Softdrinks regeln und begrenzen, ohne Verbraucher zu belasten.",
+      "zitat": "Der Zuckergehalt insbesondere in Softdrinks muss geregelt und begrenzt werden, ohne die Verbraucher*innen zu belasten.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=42",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "Ernährungspolitik und Gesundheit durchsucht (Grep nach Zuckersteuer, Zuckerabgabe, gezuckerte Getränke, Softdrink, Limonadensteuer): keine Treffer. BSW behandelt Gesundheit (S. 26–27), Ernährung wird nicht spezifisch erwähnt.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

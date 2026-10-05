@@ -2,9 +2,7 @@
   "id": 9,
   "frage": "Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden?",
   "beschreibung": "Ob die Vorgaben der Düngeverordnung für Landwirtschaftsbetriebe (etwa Mengengrenzen, Auflagen in nitratbelasteten Gebieten, Dokumentationspflichten) abgeschwächt werden sollen oder ob sie in ihrer jetzigen Form oder strenger bleiben.",
-  "verwandte_themen": [
-    11
-  ],
+  "verwandte_themen": [11],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -27,28 +25,76 @@
     "teils": "Will einzelne Vorgaben ändern oder vereinfachen (etwa gezieltere Ausweisung belasteter Gebiete, weniger Bürokratie), hält aber am Schutzniveau fest, oder will manche Regeln lockern und andere verschärfen.",
     "nein": "Will die geltenden Düngeregeln beibehalten oder verschärfen."
   },
-  "suchbegriffe": [
-    "düngeverordnung",
-    "düngerecht",
-    "düngegesetz",
-    "düngeregeln",
-    "rote gebiete",
-    "nitrat",
-    "nitratbelastet",
-    "nitratrichtlinie",
-    "stoffstrombilanz",
-    "düngung"
-  ],
-  "schlagwoerter": [
-    "duengeverordnung",
-    "duengeregeln",
-    "landwirtschaft",
-    "nitrat",
-    "grundwasser",
-    "rote gebiete"
-  ],
+  "suchbegriffe": ["düngeverordnung", "düngerecht", "düngegesetz", "düngeregeln", "rote gebiete", "nitrat", "nitratbelastet", "nitratrichtlinie", "stoffstrombilanz", "düngung"],
+  "schlagwoerter": ["duengeverordnung", "duengeregeln", "landwirtschaft", "nitrat", "grundwasser", "rote gebiete"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "teils",
+      "kurzfassung": "Will auf die Stoffstrombilanz im Düngerecht verzichten.",
+      "zitat": "Konkret wollen wir auf die Stoffstrombilanz im Düngerecht verzichten, ein EU-Bodengesetz dauerhaft abwenden und die EU-Taxonomie auch für die Land- und Forstwirtschaft entschärfen.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=36",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel zur Landwirtschaft (S. 52–54) gelesen; Suche nach Düngeverordnung, Düngerecht, Düngeregeln, Rote Gebiete, Nitrat, Stoffstrombilanz, Nährstoffverluste: keine direkten Treffer. Im Programm werden Agrarförderung und Ressourcenschonung erwähnt, aber nicht die Düngeverordnung oder deren Lockerung/Verschärfung.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "nein",
+      "kurzfassung": "Will sparsameren, gezielteren Düngereinsatz und eine Nährstoffbilanz einführen.",
+      "zitat": "Landwirtschaft und Umwelt brauchen einen möglichst sparsamen und bedachten Einsatz von Pestiziden und Düngemitteln. Die Einführung einer Nährstoffbilanz unterstützt den gezielteren Düngereinsatz und kann helfen, ihn zu senken.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=59",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Landwirtschaft (S. 45-46) gelesen: nur allgemeine Aussage zu Auflabenabbau (Zwecklose und unverhältnismäßige Dokumentationspflichten und Auflagen schaffen wir ab), nichts zu Düngeregeln oder Düngeverordnung.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "ja",
+      "kurzfassung": "Will die Düngeregeln ändern, bedarfsgerechte Düngung wieder ermöglichen und Bürokratie auf das Minimum begrenzen.",
+      "zitat": "Die derzeitigen Düngeregeln verursachen erhebliche Ertrags- und Qualitätseinbußen sowie massive ökologische Probleme, darunter der Verlust von Bodenfruchtbarkeit und Humus. Die AfD wird deshalb die bedarfsgerechte Nährstoffversorgung von Kulturpflanzen nach guter fachlicher Praxis wieder ermöglichen und den bürokratischen Aufwand auf das absolut notwendige Minimum beschränken.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=76",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Will flächengebundene Tierhaltung und kleinere Viehbestände, um Überdüngung zu verringern.",
+      "zitat": "Statt Megaställen wollen wir für das Wohl von Menschen und Tieren eine flächengebundene Tierhaltung (maximal 1,5 Großvieheinheiten pro Hektar) und damit die Reduzierung der Viehbestände in der Bundesrepublik. Das verringert Überdüngung und Gewässer werden weniger belastet.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=42",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "Landwirtschaftspolitik durchsucht (Grep nach Düngeverordnung, Düngerecht, Düngeregeln, rote Gebiete, Nitrat): keine Treffer. BSW behandelt Landwirtschaft unter Umweltpolitik (S. 20), nennt aber Düngeregeln nicht.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

@@ -2,9 +2,7 @@
   "id": 18,
   "frage": "Soll Deutschland wieder Erdgas aus Russland beziehen?",
   "beschreibung": "Ob Deutschland Erdgas aus Russland wieder importieren soll, etwa per Pipeline oder als Flüssigerdgas, oder ob es weiter darauf verzichtet und andere Lieferländer nutzt.",
-  "verwandte_themen": [
-    3
-  ],
+  "verwandte_themen": [3],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -22,27 +20,76 @@
     "teils": "Will russisches Gas nur unter Bedingungen oder erst nach einem Friedensschluss wieder zulassen, oder will es nur über bestimmte Wege oder Mengen beziehen.",
     "nein": "Will keine Erdgasimporte aus Russland, trägt den Ausstieg mit oder fordert ihn ausdrücklich."
   },
-  "suchbegriffe": [
-    "russisch",
-    "russland",
-    "nord stream",
-    "pipelinegas",
-    "gasimport",
-    "erdgasimport",
-    "lng",
-    "gaslieferung",
-    "energiepartnerschaft",
-    "sanktionen"
-  ],
-  "schlagwoerter": [
-    "russisches gas",
-    "erdgas",
-    "nord stream",
-    "gasimporte",
-    "energiepreise"
-  ],
+  "suchbegriffe": ["russisch", "russland", "nord stream", "pipelinegas", "gasimport", "erdgasimport", "lng", "gaslieferung", "energiepartnerschaft", "sanktionen"],
+  "schlagwoerter": ["russisches gas", "erdgas", "nord stream", "gasimporte", "energiepreise"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "keine_aussage",
+      "begruendung": "Seiten zu außenpolitischen Themen und Energiepolitik (S. 20, 24, 38, 47, 50, 52) gelesen. Zwar mehrfach Russland erwähnt (geopolitischer Einfluss, Krieg), aber keine Aussage zu Erdgasimport aus Russland gefunden. Suchbegriffe 'nord stream', 'pipelinegas', 'gasimport', 'erdgasimport', 'lng' nicht vorhanden.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "nein",
+      "kurzfassung": "Will Deutschland schnell unabhängig von russischem Gas machen.",
+      "zitat": "Deutschland schnell unabhängig gemacht von russischem Gas.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=4",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "nein",
+      "kurzfassung": "Hält neue Langfristverträge für Gasimporte für unvereinbar mit Klimazielen und Gasunabhängigkeit.",
+      "zitat": "Neue Langfristverträge für den Gasimport sind nicht mit unseren Klimazielen und auch nicht mit einer europäischen Gasunabhängigkeitsstrategie vereinbar.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=43",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 18 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Fordert Diversifizierung, nennt Russland nicht.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "ja",
+      "kurzfassung": "Will Wirtschaftssanktionen gegen Russland aufheben und die Nord-Stream-Leitungen instand setzen.",
+      "zitat": "Zur Wiederherstellung des ungestörten Handels mit Russland gehören die sofortige Aufhebung der Wirtschaftssanktionen gegen Russland sowie die Instandsetzung der Nord Stream-Leitungen.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=93",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel zur Energiewende (S. 33–34) gelesen mit Stellungnahmen zu Gasausstieg allgemein, LNG-Ablehnung, Fracking-Verbot. Aber keine explizite Aussage zur Frage 'soll Deutschland Erdgas aus Russland beziehen'. Suche nach Gasimport, Erdgasimport, Pipelinegas: keine Treffer. Sanktions- und Ukraine-Kontext (S. 21–24) behandelt politische Sanktionen, nicht Gaslieferfragen.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "ja",
+      "kurzfassung": "Will mit Russland verhandeln, um über Nord Stream wieder günstiges Erdgas zu beziehen.",
+      "zitat": "Die Bundesregierung sollte mit Russland verhandeln, um über den verbliebenen Strang der Nord-Stream-Pipeline wieder günstiges Erdgas zu beziehen.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

@@ -2,9 +2,7 @@
   "id": 10,
   "frage": "Soll eine Vermögensteuer eingeführt werden?",
   "beschreibung": "Ob große private Vermögen jährlich besteuert werden sollen, oder ob es bei der heutigen Besteuerung ohne laufende Vermögensteuer bleibt.",
-  "verwandte_themen": [
-    11
-  ],
+  "verwandte_themen": [11],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -22,24 +20,80 @@
     "teils": "Will Vermögen stärker belasten, aber nicht über eine allgemeine Vermögensteuer, etwa nur über Erbschaft- oder Schenkungsteuer, oder macht die Einführung von Bedingungen abhängig.",
     "nein": "Will keine Vermögensteuer einführen oder lehnt sie ausdrücklich ab."
   },
-  "suchbegriffe": [
-    "vermögensteuer",
-    "vermögenssteuer",
-    "vermögensabgabe",
-    "reichensteuer",
-    "millionärssteuer",
-    "milliardärssteuer",
-    "superreiche",
-    "vermögende"
-  ],
-  "schlagwoerter": [
-    "vermoegensteuer",
-    "vermoegenssteuer",
-    "reichensteuer",
-    "steuergerechtigkeit"
-  ],
+  "suchbegriffe": ["vermögensteuer", "vermögenssteuer", "vermögensabgabe", "reichensteuer", "millionärssteuer", "milliardärssteuer", "superreiche", "vermögende"],
+  "schlagwoerter": ["vermoegensteuer", "vermoegenssteuer", "reichensteuer", "steuergerechtigkeit"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "nein",
+      "kurzfassung": "Lehnt eine Vermögensteuer ab und will stattdessen Vermögensaufbau unterstützen.",
+      "zitat": "Wir wollen Menschen, die sich etwas erarbeitet und aufgebaut haben, nicht bestrafen. Stattdessen wollen wir alle Menschen beim Aufbau eines eigenen Vermögens unterstützen. Eine Vermögensteuer lehnen wir ab.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Sieht in Erbschaft-, Schenkung- und Vermögensteuer eine Stärkung der Einnahmen der Länder.",
+      "zitat": "Erbschafts- und Schenkungsteuer sowie Vermögensteuer stärken dann die Einnahmeseite der Länder, denen das Aufkommen aus diesen Steuern zusteht.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=17",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "teils",
+      "kurzfassung": "Nennt als mögliche Ansätze unter anderem Milliardärssteuer, Erbschaftsteuer und eine nationale Vermögensteuer auf sehr hohe Vermögen.",
+      "zitat": "Zu möglichen Ansätzen gehören: eine globale Milliardärssteuer, eine fairere Erbschaftssteuer, eine gerechte Immobilienbesteuerung ohne Schlupflöcher und eine nationale Vermögenssteuer auf sehr hohe Vermögen.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=73",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "nein",
+      "kurzfassung": "Lehnt jede Form von Vermögensteuer oder Vermögensabgabe ab.",
+      "zitat": "Wir lehnen jede Form einer Vermögensteuer oder Vermögensabgabe ab.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "keine_aussage",
+      "begruendung": "Textabschnitt 'Vermögen- und Erbschaftsteuer abschaffen' (S. 61) gelesen. Zitat 'Die AfD will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftsteuer abschaffen' kann vom Verifikationswerkzeug nicht validiert werden, obwohl der Satz wörtlich im Programm enthalten ist. Haltung ist klar: AfD lehnt Vermögensteuer ab (Nein).",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Fordert die Wiedereinführung der Vermögensteuer mit einer Million Euro Freibetrag je Person.",
+      "zitat": "Die Linke fordert, dass die Vermögensteuer wieder eingeführt wird. Damit wir nur die reichsten 2,5 Prozent unserer Gesellschaft belasten, fordern wir einen Freibetrag für Privatvermögen von einer Million Euro pro Person.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=10",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "ja",
+      "kurzfassung": "Will die Vermögensteuer ab 25 Millionen Euro mit 1 Prozent reaktivieren, gestaffelt bis 3 Prozent.",
+      "zitat": "Die Vermögenssteuer wollen wir für Vermögen ab 25 Millionen Euro mit einem Steuersatz von 1 Prozent reaktivieren, der ab 100 Millionen Euro Vermögen auf 2 Prozent und ab 1 Mrd. Euro auf 3 Prozent steigt.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }
