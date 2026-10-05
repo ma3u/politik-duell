@@ -2,9 +2,7 @@
   "id": 31,
   "frage": "Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern?",
   "beschreibung": "Ob der Bund Projekte, die Demokratie stärken und Extremismus vorbeugen (wie das Bundesprogramm „Demokratie leben!“), weiter aus Steuermitteln fördert oder diese Förderung beendet.",
-  "verwandte_themen": [
-    9
-  ],
+  "verwandte_themen": [9],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -22,24 +20,78 @@
     "teils": "Will nur Teile fördern (etwa Bildung oder Extremismusprävention), die Förderung neu ausrichten, an Auflagen binden oder kürzen.",
     "nein": "Will die Bundesförderung solcher Projekte beenden oder nicht mehr als staatliche Aufgabe sehen."
   },
-  "suchbegriffe": [
-    "demokratie leben",
-    "demokratieförder",
-    "demokratiefördergesetz",
-    "extremismuspräventi",
-    "zivilgesellschaft",
-    "bundesprogramm",
-    "projektförderung",
-    "politische bildung"
-  ],
-  "schlagwoerter": [
-    "demokratiefoerderung",
-    "demokratie leben",
-    "extremismuspraevention",
-    "foerderprogramme"
-  ],
+  "suchbegriffe": ["demokratie leben", "demokratieförder", "demokratiefördergesetz", "extremismuspräventi", "zivilgesellschaft", "bundesprogramm", "projektförderung", "politische bildung"],
+  "schlagwoerter": ["demokratiefoerderung", "demokratie leben", "extremismuspraevention", "foerderprogramme"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "teils",
+      "kurzfassung": "Will das Bundesprogramm Demokratie leben künftig im Bundesinnenministerium ansiedeln.",
+      "zitat": "Das Bundesprogramm Demokratie leben siedeln wir künftig im Bundesinnenministerium an.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=45",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will mit dem Demokratiefördergesetz geförderte Initiativen, etwa über Demokratie leben!, nachhaltig unterstützen.",
+      "zitat": "Mit dem Demokratiefördergesetz schaffen wir die Grundlage, zivilgesellschaftliche Initiativen, die durch Programme wie das Bundesprogramm Demokratie leben! gefördert werden, nachhaltig zu unterstützen.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Will die Arbeit finanziell stärken und dauerhaft mit einem Demokratiefördergesetz gesetzlich absichern.",
+      "zitat": "Diese Arbeit wollen wir finanziell stärken und dauerhaft mit einem Demokratiefördergesetz gesetzlich absichern.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=137",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel zu Ehrenamt und Zivilgesellschaft (S. 32) gelesen. Das Programm betont, dass 'eine funktionierende Demokratie eine lebendige Zivilgesellschaft braucht', nennt aber nicht die Bundesförderung von Demokratieförderungsprojekten wie 'Demokratie leben!' als Position.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "keine_aussage",
+      "begruendung": "Kapitel Asyl/Migration (S. 109) gelesen, Suche nach Bundesprogrammen: nur Rückkehr-Bundesprogramme erwähnt, nicht Demokratieförderung. Gesamtes Programm durchsucht nach Demokratieförderung, Extremismusprävention, politische Bildung, Zivilgesellschaft: AfD behandelt Extremismusbekämpfung, aber keine Aussage zur Bund-Förderung von Demokratieprojekten wie »Demokratie leben!«.",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Will Beratungs- und Bündnisprojekte mit einem Demokratiefördergesetz stärker unterstützen und langfristig finanziell absichern.",
+      "zitat": "Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse, Migrant*innen-Selbstorganisationen sowie Antifa-Initiativen müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=51",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "nein",
+      "kurzfassung": "Fordert Ende der Finanzierung von Projekten, die den Diskurs beeinflussen sollen, und lehnt ein Demokratiefördergesetz ab.",
+      "zitat": "Wir fordern die Beendigung der Finanzierung von Projekten, Programmen und Organisationen, die den öffentlichen Diskurs beeinflussen sollen und für bestimmte politische Meinungen stehen. Ein sogenanntes Demokratiefördergesetz lehnen wir ab.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=39",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

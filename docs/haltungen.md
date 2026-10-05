@@ -160,6 +160,10 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 | 19 | Soll Deutschland den Euro als Währung behalten? | 5 Arbeitsplätze | bertelsmann-stiftung.de, bpb.de | KI-Freigabe 2026-10-05 |
 | 20 | Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-05 |
 | 21 | Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | 6 Zuwanderung und Integration | bamf.de, bundestag.de | KI-Freigabe 2026-10-05 |
+| 24 | Soll Deutschland Mitglied der EU bleiben? | ja | ja | ja | ja | teils | ja | teils |
+| 25 | Soll die Erbschaftsteuer abgeschafft werden? | nein | nein | nein | nein | ja | nein | nein |
+| 26 | Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | nein | ja | teils | teils | nein | ja | teils |
+| 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | teils | ja | ja | – | – | ja | nein |
 | 22 | Soll Kirchenasyl in Deutschland weiterhin möglich sein? | 6 Zuwanderung und Integration | experteninitiative-religionspolitik.de, mediendienst-integration.de | KI-Freigabe 2026-10-05 |
 | 23 | Soll Eltern erlaubt werden, ihre Kinder zu Hause statt in der Schule zu unterrichten? | 4 Schule | deutsches-schulportal.de, bundesverfassungsgericht.de | KI-Freigabe 2026-10-05 |
 | 24 | Soll Deutschland Mitglied der EU bleiben? | 5 Arbeitsplätze | destatis.de, iwkoeln.de | KI-Freigabe 2026-10-05 |
@@ -209,3 +213,9 @@ Positionen aus den sieben Bundesprogrammen (Fassungen laut `parteien.json`; das 
 - 17: Soll die Zahlung der historisch begründeten Staatsleistungen an die Kirchen beendet werden?
 - 22: Soll Kirchenasyl in Deutschland weiterhin möglich sein?
 - 23: Soll Eltern erlaubt werden, ihre Kinder zu Hause statt in der Schule zu unterrichten?
+- 27: Soll der Staat eine höhere Geburtenrate gezielt fördern? (1 Programm: AfD)
+- 28: Soll der vorübergehende Schutz für Geflüchtete aus der Ukraine enden, sobald die Sicherheitslage in ihrer Herkunftsregion es zulässt? (0 Programme mit Aussage zum Ende des Schutzes; ein Fund eingeordnet als keine Aussage)
+- 29: Sollen Anwohner und Gemeinden über den Bau von Windrädern vor Ort verbindlich mitentscheiden? (2 Programme)
+- 30: Soll es Studiengebühren an staatlichen Hochschulen geben? (2 Programme)
+
+Lauf vom 5. 10. 2026 für die Haltungen 24–31 (Liste aus `/liste-einordnen`): 24, 25, 26 und 31 sind eingetragen, 27–30 zurückgestellt. Das BSW-Bundesprogramm war nicht abrufbar (HTTP 503) und lag als lokale Kopie der Betreiberin vor. Bei Haltung 31 meldeten FDP und AfD keine Aussage. Die Fundstellen suchte die kleinere Modellstufe, die Einordnung ein Agent ohne Parteinamen.

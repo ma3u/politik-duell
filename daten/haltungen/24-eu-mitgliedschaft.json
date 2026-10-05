@@ -2,9 +2,7 @@
   "id": 24,
   "frage": "Soll Deutschland Mitglied der EU bleiben?",
   "beschreibung": "Ob Deutschland weiter Mitglied der EU sein soll oder ob es austreten und seine Beziehungen zu den anderen Staaten neu regeln soll.",
-  "verwandte_themen": [
-    5
-  ],
+  "verwandte_themen": [5],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -27,26 +25,82 @@
     "teils": "Will den Austritt nicht fordern, knüpft die Mitgliedschaft aber an weitreichende Bedingungen, etwa einen Umbau der EU zu einem losen Staatenbund, oder lässt einen Austritt als Option offen, falls Reformen scheitern.",
     "nein": "Will, dass Deutschland aus der EU austritt, oder strebt eine Neuordnung außerhalb der EU-Mitgliedschaft an."
   },
-  "suchbegriffe": [
-    "austritt",
-    "dexit",
-    "eu-mitgliedschaft",
-    "mitgliedschaft in der eu",
-    "staatenbund",
-    "bundesstaat",
-    "vereinigte staaten von europa",
-    "volksabstimmung",
-    "binnenmarkt"
-  ],
-  "schlagwoerter": [
-    "eu",
-    "eu-austritt",
-    "dexit",
-    "europaeische union",
-    "eu-mitgliedschaft"
-  ],
+  "suchbegriffe": ["austritt", "dexit", "eu-mitgliedschaft", "mitgliedschaft in der eu", "staatenbund", "bundesstaat", "vereinigte staaten von europa", "volksabstimmung", "binnenmarkt"],
+  "schlagwoerter": ["eu", "eu-austritt", "dexit", "europaeische union", "eu-mitgliedschaft"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "ja",
+      "kurzfassung": "Setzt auf Zusammenarbeit mit europäischen Partnern und einen starken Binnenmarkt.",
+      "zitat": "Das geht nur gemeinsam mit unseren Partnern in Europa, das geht nur mit einem starken Binnenmarkt. Genau wie die Sicherheitspolitik ist die Wirtschaftspolitik auch gefragt, Antworten auf Übernahmen durch Systemkonkurrenten oder Cyberangriffe zu finden.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=18",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will, dass Ukraine und Moldau Teil der EU werden.",
+      "zitat": "Auch die Ukraine und Moldau sollen ein Teil der EU werden.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=60",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Bezeichnet die EU als Friedensprojekt, Basis des Wohlstands und Lebensversicherung für Frieden und Sicherheit.",
+      "zitat": "Die EU ist das erfolgreichste Friedensprojekt und Basis für unseren wirtschaftlichen Erfolg. Sie ist die Antwort auf zwei Weltkriege und den Holocaust. Sie ist unsere Lebensversicherung für Frieden, Sicherheit und Wohlstand.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=142",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "ja",
+      "kurzfassung": "Will den europäischen Binnenmarkt vertiefen, vor allem bei Arbeit, Energie, Kapital und digitalen Diensten.",
+      "zitat": "Den europäischen Binnenmarkt wollen wir vertiefen – vor allem für Arbeit, Energie, Kapital und digitale Dienstleistungen.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=52",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "teils",
+      "kurzfassung": "Strebt einen neu zu gründenden Bund europäischer Nationen mit gewahrter Souveränität der Mitgliedstaaten an.",
+      "zitat": "Wir wollen wieder selbstverantwortliche und souveräne Nationalstaaten haben, die in Freiheit und Selbstbestimmung zusammenleben. Daher streben wir einen »Bund europäischer Nationen« an, eine neu zu gründende europäische Wirtschafts- und Interessengemeinschaft, in der die Souveränität der Mitgliedstaaten gewahrt ist.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=141",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Will innerhalb der bestehenden EU-Verträge für Veränderungen eintreten.",
+      "zitat": "Zugleich treten wir schon jetzt innerhalb der bestehenden Verträge für ein Maximum an emanzipatorischen Veränderungen im Sinne eines Europas von unten statt einer EU der Banken und Konzerne ein.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=24",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "teils",
+      "kurzfassung": "Will enge Zusammenarbeit europäischer Staaten, lehnt aber tiefere Integration Richtung Bundesstaat ab.",
+      "zitat": "Wir stehen für eine enge Zusammenarbeit der europäischen Staaten, aber nicht für eine immer tiefer gehende Integration in Richtung eines europäischen Bundesstaats. Wir sind überzeugt, dass Demokratie, Wohlstand und soziale Errungenschaften besser auf nationaler Ebene geschützt werden können.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=8",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

@@ -2,9 +2,7 @@
   "id": 25,
   "frage": "Soll die Erbschaftsteuer abgeschafft werden?",
   "beschreibung": "Ob Erbschaften und Schenkungen in Deutschland weiter besteuert werden sollen oder ob die Erbschaft- und Schenkungsteuer ersatzlos entfällt.",
-  "verwandte_themen": [
-    11
-  ],
+  "verwandte_themen": [11],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -22,24 +20,82 @@
     "teils": "Will die Steuer nicht ganz streichen, aber stark senken, für bestimmte Gruppen abschaffen (etwa Familienunternehmen, Wohnhaus, nahe Angehörige) oder durch eine andere Regelung ersetzen.",
     "nein": "Will die Erbschaftsteuer behalten, auch wenn sie sie reformiert, die Freibeträge erhöht oder sie sogar verschärft."
   },
-  "suchbegriffe": [
-    "erbschaftsteuer",
-    "erbschaftssteuer",
-    "schenkungsteuer",
-    "erbschaft",
-    "erbschaften",
-    "vererb",
-    "verschonung",
-    "freibetr"
-  ],
-  "schlagwoerter": [
-    "erbschaftsteuer",
-    "erbschaftssteuer",
-    "erben",
-    "schenkungsteuer"
-  ],
+  "suchbegriffe": ["erbschaftsteuer", "erbschaftssteuer", "schenkungsteuer", "erbschaft", "erbschaften", "vererb", "verschonung", "freibetr"],
+  "schlagwoerter": ["erbschaftsteuer", "erbschaftssteuer", "erben", "schenkungsteuer"],
   "freigabe": {
     "datum": "2026-10-05",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "nein",
+      "kurzfassung": "Will die Freibeträge deutlich erhöhen, damit das Eigenheim eher steuerfrei vererbt werden kann.",
+      "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "nein",
+      "kurzfassung": "Will die Privilegierung großer Unternehmensvermögen bei der Erbschaft- und Schenkungsteuer beenden.",
+      "zitat": "Die Erbschaft- und Schenkungsteuer in ihrer heutigen Form ist nicht gerecht, denn die übermäßige Privilegierung großer Unternehmensvermögen führt dazu, dass bei der Übertragung solcher Multimillionen- oder Milliardenvermögen oftmals nur sehr wenig oder gar keine Steuern gezahlt werden. Diese Ungerechtigkeit wollen wir abschaffen.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=19",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "nein",
+      "kurzfassung": "Will die Erbschaftsteuer reformieren: Lebensfreibetrag, weniger Ausnahmen bei großen Erbschaften, großzügige Stundung.",
+      "zitat": "eine Reform der Erbschaftssteuer hin zu einem Modell mit personenbezogenem Lebensfreibetrag, weitgehender Streichung bestehender Ausnahmen für außerordentlich große Erbschaften (selbst bewohntes Eigentum bleibt befreit) und großzügigen Stundungsregelungen",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=73",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "nein",
+      "kurzfassung": "Will Unternehmen vor Existenzgefährdung durch die Steuer schützen und Freibeträge automatisch mit der Inflation erhöhen.",
+      "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=15",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "ja",
+      "kurzfassung": "Will Vermögensteuer und Erbschaftsteuer abschaffen.",
+      "zitat": "Vermögen- und Erbschaftsteuer abschaffen. Die AfD will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftssteuer abschaffen.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=61",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Will Steuersätze für Erbschaften und Schenkungen bei Superreichen erhöhen und Freibeträge senken; selbstgenutztes Wohneigentum bleibt frei.",
+      "zitat": "Für diese Superreichen sollen die Steuersätze für Erbschaften und Schenkungen erhöht und die persönlichen Freibeträge heruntergesetzt werden. 'Normales', selbstgenutztes Wohneigentum bleibt freigestellt.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "nein",
+      "kurzfassung": "Will alle vererbten Vermögen oberhalb der Freibeträge gleich besteuern.",
+      "zitat": "Aktuell gilt: je höher das Erbvermögen, desto niedriger der effektive Steuersatz. Das ist weder gerecht noch vernünftig, denn dadurch wird ein vererbtes Einfamilienhaus mit höheren Steuern belegt als ein vererbtes Firmenimperium im Wert hunderter Millionen Euro. Das wollen wir verändern und alle vererbten Vermögen oberhalb der Freibeträge gleich besteuern.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }
