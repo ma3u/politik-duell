@@ -169,3 +169,33 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 - *Kulturförderung für deutsche Kultur und Heimat*: Die geöffneten Quellen tragen keine der beiden Seiten als Zielkonflikt; Frage zurückgestellt.
 - *Staatsangehörigkeit durch Geburt in Deutschland*: Für die Nein-Seite fand sich keine lesbare unabhängige Quelle zum Geburtsrecht (nur Kritik an den Einbürgerungsfristen); mit einer Seite schwächer belegt wäre die Karte nicht fair. Zurückgestellt, bis eine Quelle vorliegt.
 - Fragen, deren Wortlaut die Recherche geändert hat: Windkraft („vorantreiben“ statt „stoppen“, weil „stoppen“ einen Eingriff nahelegt), Wehrdienst („verpflichtender Wehrdienst“, weil seit 2026 ein freiwilliger Dienst gilt), Inklusion („Vorrang vor Förderschulen“), Renteneintrittsalter („über 67 hinaus“), Hausunterricht, Kirchenzahlungen („Staatsleistungen“), Kirchenasyl, Bleiberecht.
+
+### Ergebnisse Phase B (5. 10. 2026)
+
+Positionen aus den sieben Bundesprogrammen (Fassungen laut `parteien.json`; das BSW-Programm lag als lokale Kopie vor), alle als **KI-Entwurf** (`ki_entwurf`, `geprueft: false`), Einordnung ohne Parteinamen, im Spiel nur in der geschlossenen Testphase sichtbar. „–“ heißt „keine Aussage“. Die Fundstellen suchten Agenten der kleineren Modellstufe, die Einordnung ein Agent ohne Parteinamen. Bei Haltung 10 hatte ein Agent das AfD-Zitat nicht wörtlich geschrieben und deshalb „keine Aussage“ gemeldet; Zitat korrigiert und neu eingeordnet.
+
+| ID | Frage | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4 | Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben? | ja | ja | ja | teils | nein | – | – |
+| 5 | Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben? | teils | nein | nein | ja | ja | nein | teils |
+| 7 | Soll Deutschland die Ukraine weiter mit Waffen beliefern? | ja | ja | ja | ja | – | nein | nein |
+| 8 | Soll der gemeinsame Unterricht von Kindern mit und ohne Behinderung an Regelschulen Vorrang vor Förderschulen haben? | teils | – | ja | teils | nein | ja | – |
+| 9 | Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden? | teils | – | nein | – | ja | nein | – |
+| 10 | Soll eine Vermögensteuer eingeführt werden? | nein | teils | ja | nein | nein | ja | ja |
+| 11 | Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben? | teils | nein | nein | nein | ja | nein | nein |
+| 12 | Soll es einen gesetzlichen Mindestlohn geben? | ja | ja | ja | teils | – | ja | ja |
+| 13 | Soll die Schuldenbremse im Grundgesetz bestehen bleiben? | – | teils | teils | ja | ja | nein | teils |
+| 14 | Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden? | nein | nein | teils | teils | nein | nein | nein |
+| 15 | Soll es eine Steuer auf stark gezuckerte Getränke geben? | – | ja | – | – | nein | teils | – |
+| 16 | Soll Deutschland Mitglied der NATO bleiben? | ja | ja | ja | ja | teils | teils | teils |
+| 18 | Soll Deutschland wieder Erdgas aus Russland beziehen? | – | nein | nein | – | ja | – | ja |
+| 19 | Soll Deutschland den Euro als Währung behalten? | ja | ja | – | – | nein | – | – |
+| 20 | Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | – | – | teils | – | nein | – | teils |
+| 21 | Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | – | teils | teils | teils | nein | ja | – |
+
+**Zurückgestellt** (weniger als drei Programme mit erkennbarer Position, Aufnahmekriterium aus `docs/plan-haltungen.md`; Phase A bleibt liegen):
+
+- 6: Soll Gendersprache in Behörden und Schulen verboten werden?
+- 17: Soll die Zahlung der historisch begründeten Staatsleistungen an die Kirchen beendet werden?
+- 22: Soll Kirchenasyl in Deutschland weiterhin möglich sein?
+- 23: Soll Eltern erlaubt werden, ihre Kinder zu Hause statt in der Schule zu unterrichten?
