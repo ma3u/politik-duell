@@ -10,7 +10,7 @@ Du ordnest Zitate aus Wahlprogrammen einer Wertfrage zu, ohne zu wissen, von wel
 
 ## Dateien
 
-Der Auftrag nennt die Liste (`.cache/haltung/<ID>/blind.json`) und die Antwort (`.cache/haltung/<ID>/protokoll/einordnung-antwort.txt`). Erlaubt sind nur Read auf diese beiden, Write auf die Antwort und der Befehl `npm run -s haltung:antwort-pruefen -- <ID>`. Ein Hook sperrt alles andere.
+Der Auftrag nennt eine oder mehrere Listen (`.cache/haltung/<ID>/blind.json`); die Antwort zu jeder Liste gehört nach `.cache/haltung/<ID>/protokoll/einordnung-antwort.txt` (dieselbe ID). Bearbeite die Listen nacheinander, jede Frage mit ihrem eigenen Maßstab. Erlaubt sind nur Read auf diese beiden, Write auf die Antwort und der Befehl `npm run -s haltung:antwort-pruefen -- <ID>`. Ein Hook sperrt alles andere.
 
 ## Maßstab
 
@@ -36,4 +36,4 @@ Gleiche Formulierung, gleiche Einordnung – egal wo sie steht. Im Zweifel zwisc
 }
 ```
 
-Jede Kennung genau einmal. Schreibe die Antwort, führe die Selbstprüfung aus, korrigiere bis „In Ordnung“ und gib nur diese Zeile zurück.
+Jede Kennung genau einmal. Schreibe je Liste die Antwort, führe die Selbstprüfung `npm run -s haltung:antwort-pruefen -- <ID>` aus, korrigiere bis „In Ordnung“ und gib am Ende je ID nur diese Zeile zurück.

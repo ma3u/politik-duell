@@ -38,6 +38,8 @@ export interface HaltungAntwort {
 }
 
 export const HALTUNG_ORDNER = (id: number) => `.cache/haltung/${id}`
+/** Gemeinsamer Arbeitsordner eines Laufs (Texte, Aufträge, Rohantworten der Erfassungs-Agenten). */
+export const LAUF_ORDNER = '.cache/haltung/lauf'
 export const fundName = (k: Katalog, parteiId: number) => programmName(k.parteien.find((p) => p.id === parteiId)?.kurzname ?? String(parteiId), null)
 
 const sha = (t: string) => createHash('sha256').update(t).digest('hex').slice(0, 16)

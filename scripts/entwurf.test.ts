@@ -728,6 +728,9 @@ describe('JSON aus einer Agentenantwort', () => {
   it('holt das erste vollständige Objekt, auch mit Klammern in Texten', () => {
     expect(erstesJsonObjekt('Antwort:\n{ "a": "x { y }", "b": [1] }\nProtokoll …')).toEqual({ objekt: { a: 'x { y }', b: [1] }, rest: 'Protokoll …' })
     expect(() => erstesJsonObjekt('{ "a": 1')).toThrow(/abgeschnitten/)
+    // Liste nur auf Wunsch (Funde mehrerer Haltungen); sonst zählt das erste Objekt.
+    expect(erstesJsonObjekt('[{ "a": 1 }, { "a": 2 }]\nProtokoll', true)).toEqual({ objekt: [{ a: 1 }, { a: 2 }], rest: 'Protokoll' })
+    expect(erstesJsonObjekt('[{ "a": 1 }, { "a": 2 }]').objekt).toEqual({ a: 1 })
   })
 
   it('nennt bei Fehlern Zeile und Spalte in der Datei', () => {

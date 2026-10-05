@@ -450,15 +450,16 @@ Reihenfolge beim Erfassen eines Programms: Programm in `parteien.json` eintragen
 
 ### Mit KI-Agenten
 
-Für Claude Code liegen fünf Skills im Repository. Sie bauen den Katalog für die **geschlossene Testphase** auf: alles als KI-Entwurf mit KI-Freigabe, ohne menschliche Prüfschritte unterwegs; die menschliche Prüfung („Prüfung“ oben) folgt danach und ist Voraussetzung für die öffentliche Anzeige.
+Für Claude Code liegen sechs Skills im Repository. Sie bauen den Katalog für die **geschlossene Testphase** auf: alles als KI-Entwurf mit KI-Freigabe, ohne menschliche Prüfschritte unterwegs; die menschliche Prüfung („Prüfung“ oben) folgt danach und ist Voraussetzung für die öffentliche Anzeige.
 
 | Aufruf | Was | Wer arbeitet | Ergebnis |
 | --- | --- | --- | --- |
+| `/liste-einordnen liste.txt` (danach `… --ausfuehren`) | Liste von Äußerungen sortieren (Haltung, Forderung, Thema, Grenze, Pauschalurteil, Tatsache, Meta, doppelt), neutrale Vorschläge | die Koordination, Programme gesperrt | Tabelle `docs/listen/…` zum Abhaken; danach verteilt an die Skills unten, Beispiele für `docs/prompt-evaluation.md` |
 | `/thema-anlegen Kita-Betreuung` (mehrere mit „;“, `--erfassen` für direkt weiter) | Ziel, Ursachen, Ebene, Perspektivenprüfung, Leitfaden mit Suchbegriffen | Agent `ursachen-recherche` – nur Web-Recherche, kein Zugriff auf Programme | Themendatei mit KI-Freigabe, eigener Commit |
 | `/thema-erfassen 17` (mehrere IDs, optional `--bund`, `--land XX`) | Maßnahmen erfassen und ohne Parteinamen bewerten | je Programm ein Agent `programm-erfassung`; **ein** Agent `blind-bewertung`, der nur die Liste ohne Parteinamen sieht | Maßnahmen und Instrumente als KI-Entwurf, Pull Request |
 | `/forderung-erfassen 2 "Mietendeckel"` | Lösungsweg nachtragen, nach dem bisher nicht gesucht wurde (Forderungskarte) | wie `/thema-erfassen`, nur für die neuen Suchbegriffe und nur in schon erfassten Programmen | Einträge ergänzt, neues oder vorhandenes Instrument |
-| `/haltung-anlegen Wehrpflicht` (`--erfassen` für direkt weiter) | Frage, Beschreibung, Zielkonflikte, Maßstab der Einordnung, Suchbegriffe | die Koordination selbst, Programme gesperrt | Haltungsdatei mit KI-Freigabe, eigener Commit |
-| `/haltung-erfassen 4` | Positionen aus den sieben Bundesprogrammen | je Programm ein Agent `haltung-erfassung` (nur Zitat und Seite); **ein** Agent `haltung-einordnung` ohne Parteinamen (Einordnung und Kurzfassung) | Positionen als KI-Entwurf |
+| `/haltung-anlegen Wehrpflicht; Schuldenbremse` (`--liste`, `--erfassen`) | Frage, Beschreibung, Zielkonflikte, Maßstab der Einordnung, Suchbegriffe | je Haltung ein Agent `haltung-recherche` (parallel, Programme gesperrt) | Haltungsdateien mit KI-Freigabe, eigener Commit |
+| `/haltung-erfassen 4 5 6` | Positionen aus den sieben Bundesprogrammen, alle Haltungen in einem Lauf | je Programm **ein** Agent `haltung-erfassung` für alle Fragen (nur Zitat und Seite); **ein** Agent `haltung-einordnung` ohne Parteinamen (Einordnung und Kurzfassung) | Positionen als KI-Entwurf |
 
 Die Definitionen liegen in `.claude/skills/` und `.claude/agents/`. Was für die Neutralität zwingend ist, sichern Skripte ab, nicht nur die Anleitung:
 
@@ -484,11 +485,12 @@ npm run entwurf:eintragen -- erfassung.json bewertung.json   # verlangt protokol
 npm run entwurf:bericht -- erfassung.json bewertung.json     # Datenteil der Pull-Request-Beschreibung (pr-daten.md), wörtlich aus den Arbeitsdateien
 npm run entwurf:archivieren -- erfassung.json            # Protokolle, Stände, Kennungen, Blindliste und Bewertung nach daten/protokolle/<ID>/ (ohne Programmtexte)
 npm run instrumente -- 2                                 # Ursachen und Instrumente eines Themas ohne Parteinamen (gibt es einen Lösungsweg schon?)
-npm run haltung:auftrag -- 4                             # Haltung: je Bundesprogramm Textdatei und Auftrag (Frage, Einordnung, Treffer der Suchbegriffe)
-npm run haltung:programm-pruefen -- .cache/haltung/4/protokoll/fund-SPD-Bund.json   # Selbstprüfung: Zitat wörtlich auf der Seite; speichert funde/SPD-Bund.json
-npm run haltung:blind -- 4                               # blind.json ohne Parteinamen (Kennungen H1 …), kennungen.json für das Eintragen
-npm run haltung:antwort-pruefen -- 4                     # Selbstprüfung des Agenten haltung-einordnung
-npm run haltung:eintragen -- 4                           # Positionen als KI-Entwurf (nicht unter drei erkennbaren), Protokoll nach daten/protokolle/haltung-4/
+npm run liste:auswahl -- docs/listen/….md [--art haltung|forderung|thema] [--evaluation]   # Einordnungstabelle prüfen, bestätigte Aufträge je Skill, Zeilen für die Prompt-Evaluation
+npm run haltung:auftrag -- 4 5 6                         # Haltungen: je Bundesprogramm Textdatei und ein Auftrag für alle (.cache/haltung/lauf/)
+npm run haltung:programm-pruefen -- .cache/haltung/lauf/protokoll/fund-SPD-Bund.json   # Selbstprüfung: je Haltung ein Fund, Zitat wörtlich auf der Seite; speichert .cache/haltung/<ID>/funde/
+npm run haltung:blind -- 4 5 6                           # je Haltung blind.json ohne Parteinamen (Kennungen H1 …), kennungen.json für das Eintragen
+npm run haltung:antwort-pruefen -- 4                     # Selbstprüfung des Agenten haltung-einordnung (je Haltung)
+npm run haltung:eintragen -- 4 5 6                       # Positionen als KI-Entwurf (nicht unter drei erkennbaren, nie über geprüfte), Protokoll nach daten/protokolle/haltung-<ID>/
 ```
 
 **Nachtrag eines Lösungswegs:** Steht in `erfassung.json` ein `nachtrag` (`{ "forderung": "…", "richtungen": { "<Ursache>": ["<Richtung>", …] } }`, Richtungen mit Suchbegriffen im Leitfaden), beschränken die Skripte Suchbegriffe, Ursachen und Aufträge auf diese Richtungen, beauftragen nur schon erfasste Programme (mit der Liste der bereits erfassten Zitate) und `entwurf:eintragen` ergänzt die vorhandenen Einträge, statt neue anzulegen.

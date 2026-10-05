@@ -49,7 +49,8 @@
     "entwurf:bericht": "node --experimental-strip-types scripts/entwurf/bericht.ts",
     "entwurf:archivieren": "node --experimental-strip-types scripts/entwurf/archivieren.ts",
     "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
-    "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts"
+    "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts",
+    "liste:auswahl": "node --experimental-strip-types scripts/liste-auswahl.ts"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",

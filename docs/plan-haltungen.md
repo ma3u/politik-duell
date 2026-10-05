@@ -392,3 +392,5 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 | E7 | Welche drei Pilot-Haltungen? | Zuwanderung begrenzen, Tempolimit, häusliche Kinderbetreuung fördern. |
 | E8 | Verbraucht eine Karte die Runde? | Nein; höchstens eine Haltungskarte je Runde. |
 | E9 | Wer prüft die Formulierung der Haltungsfragen (B1 Nr. 4)? | Zwei Personen mit unterschiedlicher politischer Haltung; bis zur Vereinsgründung aus dem Kreis der Prüfenden. |
+
+**Nachtrag 5. 10. 2026 zu E7 und B6:** Für die geschlossene Testphase dürfen weitere Haltungen als KI-Entwurf angelegt und erfasst werden (`/liste-einordnen`, `/haltung-anlegen`, `/haltung-erfassen`). Vor einer öffentlichen Anzeige weiterer Haltungen gilt E7 weiter: erst Tests mit Spielenden aus verschiedenen Lagern.
