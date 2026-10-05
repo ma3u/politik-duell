@@ -148,6 +148,13 @@ erDiagram
         text einschaetzung
         boolean erledigt
     }
+    review_eingaben {
+        bigint id PK
+        text grund "grenze | wert | forderung | ungeprueft | unvollstaendig"
+        text_arr eingaben "Wortlaut, nur Admins, max. 30 Tage"
+        smallint thema_id FK
+        text zusammenfassung
+    }
     rate_limit {
         uuid sitzung PK
         timestamptz fenster_start
@@ -195,7 +202,7 @@ erDiagram
 |---|---|---|
 | Stammdaten | `parteien`, `themen`, `laender`, `landesprogramme` | lesbar |
 | Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente`, `haltungen`, `haltung_positionen`, `haltung_zielkonflikte` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
-| Spieldaten | `runden`, `review_warteschlange`, `rate_limit` | schreibbar nur über Edge Function |
+| Spieldaten | `runden`, `review_warteschlange`, `review_eingaben`, `rate_limit` | schreibbar nur über Edge Function |
 | Betrieb | `admins`, `pruef_*`, `testphase_zugaenge` | anon gesperrt; Admins und Edge Functions |
 
 ## Bund oder Land?

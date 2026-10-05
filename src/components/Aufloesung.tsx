@@ -230,7 +230,18 @@ export function Aufloesung({
   return (
     <main className="seite aufloesung">
       <h2 className="sr-only">Das Problem</h2>
-      <blockquote className="problem-zitat">{runde.zusammenfassung}</blockquote>
+      {/* Die eigene Eingabe im Wortlaut über der Kurzfassung – nicht, wenn beide gleich lauten. */}
+      {runde.eingaben?.length && !(runde.eingaben.length === 1 && runde.eingaben[0].trim() === runde.zusammenfassung.trim()) ? (
+        <div className="deine-eingabe">
+          <span className="deine-eingabe-label">{runde.eingaben.length > 1 ? 'Deine Eingaben' : 'Deine Eingabe'}</span>
+          {runde.eingaben.map((t, i) => (
+            <p key={i} className="blase blase-spieler">
+              {t}
+            </p>
+          ))}
+        </div>
+      ) : null}
+            <blockquote className="problem-zitat">{runde.zusammenfassung}</blockquote>
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
         {rolle && ` · Rolle: ${rolle}`}

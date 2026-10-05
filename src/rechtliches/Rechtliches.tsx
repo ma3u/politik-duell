@@ -95,8 +95,9 @@ function Datenschutz() {
         <li>Keine Konten, keine Cookies, kein Tracking, keine Werbung.</li>
         <li>Wir speichern keine IP-Adressen und kein Audio.</li>
         <li>
-          Was du eingibst, ordnet eine KI (Mistral AI, Paris) ein. Wir speichern davon nur eine anonyme, neutrale
-          Kurzfassung und ein Stichwort – nicht deinen Originaltext.
+          Was du eingibst, ordnet eine KI (Mistral AI, Paris) ein. Wir speichern davon eine anonyme, neutrale
+          Kurzfassung und ein Stichwort. Deinen Originaltext speichern wir nur, wenn eine Runde ohne Wertung endet –
+          nur für uns zur Prüfung sichtbar und höchstens 30 Tage.
         </li>
         <li>Die Wortwolke im Hintergrund zeigt nur die Themen, die das Spiel schon werten kann – keine Eingaben von Spielenden.</li>
       </ul>
@@ -141,8 +142,8 @@ function Datenschutz() {
       <p>
         Mistral verarbeitet den Text als Auftragsverarbeiter nur für die Einordnung und nicht zum Training seiner
         Modelle; nach seinen Bedingungen kann Mistral Anfragen für begrenzte Zeit zur Missbrauchserkennung aufbewahren.
-        Wir selbst speichern den Originaltext nicht. Er wird nur kurz automatisch auf Beleidigungen, Namen und
-        Kontaktdaten geprüft und dann verworfen.
+        Den Originaltext prüfen wir automatisch auf Beleidigungen, Namen und Kontaktdaten. Endet die Runde mit einer
+        Wertung, verwerfen wir ihn danach. Endet sie ohne Wertung (siehe unten), bewahren wir ihn kurz auf.
       </p>
       <p>
         <strong>Gespeichert wird pro Runde:</strong> eine neutrale Kurzfassung des Problems (höchstens 200 Zeichen,
@@ -154,13 +155,25 @@ function Datenschutz() {
         haben, landen zusätzlich mit einer kurzen vorläufigen Einschätzung in einer Liste zur redaktionellen Prüfung.
       </p>
       <p>
+        <strong>Runden ohne Wertung:</strong> Endet eine Runde ohne Punkte – weil du eine Haltung oder Forderung
+        nennst, das Spiel auf eine Äußerung nicht eingeht, kein Thema oder keine Ursache erkennbar ist oder eine
+        Partei zum Thema noch nicht erfasst ist –, speichern wir deine Eingaben dieser Runde im Wortlaut, dazu den
+        Grund, das erkannte Thema, die Kurzfassung und den Zeitpunkt. Nicht dabei sind Parteien, Rolle, Bundesland,
+        Name im Spiel oder eine Verbindung zur gespeicherten Runde. Zweck: Wir prüfen, ob die KI richtig eingeordnet
+        hat, und verbessern Einordnung und Themenkatalog (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, deine
+        Einwilligung vor dem Spielstart). Lesen können die Einträge nur die Admins des Projekts; sie werden nie
+        veröffentlicht. Wir löschen sie, sobald wir sie gesichtet haben, spätestens nach 30 Tagen automatisch. Bitte
+        gib deshalb erst recht keine Namen oder anderen persönlichen Details ein.
+      </p>
+      <p>
         <strong>Wortwolke:</strong> Die Wortwolke auf der Startseite zeigt die Themen, die das Spiel schon werten kann. Eingaben
         und Stichwörter von Spielenden erscheinen dort nicht.
       </p>
       <p>
         <strong>Widerruf:</strong> Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen,
-        indem du nicht weiterspielst. Bereits gespeicherte Kurzfassungen sind anonym; wir können sie dir deshalb
-        nicht mehr zuordnen und nicht gezielt löschen.
+        indem du nicht weiterspielst. Bereits gespeicherte Kurzfassungen und Eingaben sind anonym; wir können sie dir
+        deshalb nicht mehr zuordnen und nicht gezielt löschen. Eingaben ohne Wertung löschen wir ohnehin nach
+        spätestens 30 Tagen.
       </p>
 
       <h2>5. Spracheingabe</h2>

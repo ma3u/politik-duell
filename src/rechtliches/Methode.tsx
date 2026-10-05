@@ -112,7 +112,8 @@ export function Methode() {
         Spiel, wo die Parteien dazu stehen – mit Wortlaut und Seite im Programm, ohne Richtig oder Falsch – und welche
         Ziele dabei gegeneinander stehen. Auf Äußerungen, die einer Gruppe die Menschenwürde oder gleiche Rechte absprechen, zu Gewalt
         aufrufen oder Personen beleidigen, geht das Spiel nicht ein (Art. 1 und 3 Grundgesetz) – gleich, aus welcher
-        Richtung sie kommen. Vom Inhalt wird dann nichts gespeichert. Ein pauschales Urteil über eine Gruppe ist noch
+        Richtung sie kommen. Den Wortlaut sehen dann nur wir, um die Einordnung zu prüfen, und löschen ihn nach
+        spätestens 30 Tagen. Ein pauschales Urteil über eine Gruppe ist noch
         kein solcher Fall: Dann fragt das Spiel, was du selbst erlebt hast. Die Wahlprogramme der Parteien werden davon
         nicht berührt – sie werden zitiert und nach denselben Kriterien bewertet wie alle anderen.
       </p>

@@ -549,3 +549,38 @@ describe('Prüfung: neuer Link', () => {
     await expect(alsAdmin(() => db.query(`update pruef_einladungen set token_hash = 'kurz' where id = $1`, [id]))).rejects.toThrow()
   })
 })
+
+describe('Eingaben ohne Wertung (review_eingaben)', () => {
+  const einfuegen = (werte: string) => db.query(`insert into review_eingaben (grund, eingaben, thema_id, zusammenfassung) values ${werte}`)
+
+  it('nur Admins lesen und löschen, sonst niemand', async () => {
+    await einfuegen(`('wert', '{"Ich finde, Bildung ist wichtiger als alles"}', null, 'Persönliche Haltung zu Bildung')`)
+    await expect(alsRolle('anon', () => db.query('select * from review_eingaben'))).rejects.toThrow()
+    expect((await alsNutzer(() => db.query('select * from review_eingaben'))).rows).toHaveLength(0)
+    await expect(alsRolle('anon', () => db.query(`insert into review_eingaben (grund, eingaben) values ('wert', '{x}')`))).rejects.toThrow()
+    await expect(alsAdmin(() => db.query(`update review_eingaben set grund = 'forderung'`))).rejects.toThrow()
+    const a = await alsAdmin(() => db.query<{ id: number; eingaben: string[] }>('select * from review_eingaben'))
+    expect(a.rows).toHaveLength(1)
+    expect(a.rows[0].eingaben).toEqual(['Ich finde, Bildung ist wichtiger als alles'])
+    await alsAdmin(() => db.query('delete from review_eingaben where id = $1', [a.rows[0].id]))
+    expect((await db.query('select * from review_eingaben')).rows).toHaveLength(0)
+  })
+
+  it('Grenze nur mit Wortlaut, ohne Thema und Kurzfassung; höchstens drei Eingaben', async () => {
+    await einfuegen(`('grenze', '{"Abwertung"}', null, null)`)
+    await expect(einfuegen(`('grenze', '{"Abwertung"}', 2, null)`)).rejects.toThrow()
+    await expect(einfuegen(`('grenze', '{"Abwertung"}', null, 'x')`)).rejects.toThrow()
+    await expect(einfuegen(`('wert', '{}', null, null)`)).rejects.toThrow()
+    await expect(einfuegen(`('wert', '{a,b,c,d}', null, null)`)).rejects.toThrow()
+    await expect(einfuegen(`('gewertet', '{a}', null, null)`)).rejects.toThrow()
+    await db.exec('delete from review_eingaben')
+  })
+
+  it('löscht Einträge nach 30 Tagen', async () => {
+    await db.exec(`insert into review_eingaben (created_at, grund, eingaben) values (now() - interval '31 days', 'wert', '{alt}')`)
+    await db.exec(`insert into review_eingaben (created_at, grund, eingaben) values (now() - interval '29 days', 'wert', '{jung}')`)
+    const { rows } = await db.query<{ eingaben: string[] }>('select eingaben from review_eingaben')
+    expect(rows.map((r) => r.eingaben[0])).toEqual(['jung'])
+    await db.exec('delete from review_eingaben')
+  })
+})

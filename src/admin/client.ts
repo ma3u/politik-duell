@@ -52,3 +52,13 @@ export interface ReviewEintrag {
   einschaetzung: string | null
   erledigt: boolean
 }
+
+/** Eingaben einer Runde ohne Wertung im Wortlaut (Tabelle review_eingaben, nach 30 Tagen gelöscht). */
+export interface ReviewEingabe {
+  id: number
+  created_at: string
+  grund: 'grenze' | 'wert' | 'forderung' | 'ungeprueft' | 'unvollstaendig'
+  eingaben: string[]
+  thema_id: number | null
+  zusammenfassung: string | null
+}

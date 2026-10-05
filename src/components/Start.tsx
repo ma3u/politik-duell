@@ -66,7 +66,8 @@ export function Start({
         )}
         <p className="datenschutz">
           <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
-          ordnet eine KI (Mistral, EU) ein. Gespeichert wird nur eine anonyme, neutrale Kurzfassung des Problems. Die
+          ordnet eine KI (Mistral, EU) ein. Gespeichert wird eine anonyme, neutrale Kurzfassung des Problems; endet eine
+          Runde ohne Wertung, sehen wir den Wortlaut zur Prüfung (höchstens 30 Tage). Die
           Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
           <a href="#/datenschutz">Mehr erfahren</a>
         </p>

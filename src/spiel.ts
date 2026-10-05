@@ -19,6 +19,8 @@ export interface RundenErgebnis {
   /** Bundesland der Person, die das Problem genannt hat. */
   land: string | null
   zusammenfassung: string
+  /** Was die Person in dieser Runde eingegeben hat (Wortlaut, nur zur Anzeige – nicht im Teilen-Text). */
+  eingaben?: string[]
   /** Vorläufige Einschätzung bei ungeprüften Themen (ohne Punkte und Links). */
   einschaetzung: string | null
   thema: Thema | null
