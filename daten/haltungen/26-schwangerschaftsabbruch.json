@@ -1,0 +1,106 @@
+{
+  "id": 26,
+  "frage": "Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein?",
+  "beschreibung": "Ob ein Abbruch in den ersten zwölf Wochen nach Beratung rechtmäßig werden soll oder ob er wie bisher grundsätzlich rechtswidrig, aber unter Bedingungen straffrei bleibt (§§ 218, 218a StGB).",
+  "verwandte_themen": [1],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer den Abbruch in den ersten zwölf Wochen rechtmäßig stellen will, verweist auf die Empfehlung der Kommission zur reproduktiven Selbstbestimmung (2024): Schwangerschaftsabbrüche in der Frühphase der Schwangerschaft sollten rechtmäßig sein.",
+      "quelle_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/kommission-zur-reproduktiven-selbstbestimmung-und-fortpflanzungsmedizin-legt-abschlussbericht-vor-238414"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer die Rechtslage ändern will, nennt außerdem, dass Recht und Praxis auseinanderfallen: 2025 wurden 106.000 Abbrüche gemeldet, 96 Prozent davon nach der Beratungsregelung, die den Abbruch rechtswidrig, aber unter Bedingungen straffrei lässt.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_147_233.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer die Rechtmäßigkeit ablehnt, nennt den Schutz des ungeborenen Lebens: Laut Bundesverfassungsgericht (1993) ist der Abbruch für die gesamte Dauer der Schwangerschaft grundsätzlich als Unrecht anzusehen und rechtlich verboten (Leitsatz 4, amtliche englische Übersetzung).",
+      "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1993/05/fs19930528_2bvf000290en.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Will den Abbruch in den ersten zwölf Wochen (nach Beratung oder mit Beratungsangebot) ausdrücklich rechtmäßig stellen, etwa durch Änderung oder Streichung von § 218 StGB.",
+    "teils": "Will die Rechtslage nur teilweise ändern, etwa Straffreiheit sichern, Zugang und Beratung verbessern oder die Frage prüfen lassen, ohne den Abbruch ausdrücklich rechtmäßig zu stellen. Auch: Rechtmäßigkeit nur unter Bedingungen.",
+    "nein": "Will den Abbruch grundsätzlich rechtswidrig lassen und die bisherige Regelung beibehalten oder den Schutz des ungeborenen Lebens stärken."
+  },
+  "suchbegriffe": ["schwangerschaftsabbruch", "schwangerschaftsabbrüche", "abtreibung", "§ 218", "218a", "beratungsregelung", "beratungspflicht", "ungeborenes leben", "lebensschutz", "selbstbestimmung"],
+  "schlagwoerter": ["abtreibung", "schwangerschaftsabbruch", "paragraf 218", "selbstbestimmung", "lebensschutz"],
+  "freigabe": {
+    "datum": "2026-10-05",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "nein",
+      "kurzfassung": "Steht zur geltenden Rechtslage als gesellschaftlichem Kompromiss zwischen Selbstbestimmung und Schutz des ungeborenen Kindes.",
+      "zitat": "Die geltende Rechtslage zum Schwangerschaftsabbruch bildet einen mühsam gefundenen gesellschaftlichen Kompromiss ab, der das Selbstbestimmungsrecht der Frau und den Schutz des ungeborenen Kindes berücksichtigt. Zu dieser Rechtslage stehen wir.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=64",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "ja",
+      "kurzfassung": "Will Schwangerschaftsabbrüche entkriminalisieren, außerhalb des Strafrechts regeln und zur medizinischen Grundversorgung machen.",
+      "zitat": "Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen. Wir wollen Schwangerschaftsabbrüche zu einem Teil der medizinischen Grundversorgung machen.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=48",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "teils",
+      "kurzfassung": "Will, dass jede Frau Zugang zu Schwangerschaftsabbrüchen bekommt, als Teil guter medizinischer Versorgung.",
+      "zitat": "Zu einer guten medizinischen Versorgung gehört, dass jede Frau Zugang zu Schwangerschaftsabbrüchen bekommt, um eine selbstbestimmte Entscheidung zu treffen.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=90",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "teils",
+      "kurzfassung": "Will die Versorgung ungewollt Schwangerer verbessern und für alle Frauen die Kostenübernahme des Abbruchs ermöglichen.",
+      "zitat": "Ungewollt Schwangeren möchten wir bestmöglich helfen und die unzureichende Versorgungslage verbessern. […] Allen Frauen soll die Kostenübernahme des Abbruchs ermöglicht werden.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=29",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "nein",
+      "kurzfassung": "Hält die §§ 218 ff. StGB für ausgewogen und will sie nicht ändern, aber konsequent umsetzen, mit Beratungspflicht.",
+      "zitat": "Aus Sicht der AfD sind die Regelungen der §218 ff StGB ausgewogen und bedürfen keiner Änderung, lediglich einer konsequenten Umsetzung. Insbesondere ist vor der Abtreibung eine rechtskonforme Beratung lt. §219 StGB erforderlich.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=150",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "ja",
+      "kurzfassung": "Will § 218 StGB ersatzlos streichen und Entscheidung gegen eine Schwangerschaft frei von Zwängen ermöglichen.",
+      "zitat": "Körperliche und reproduktive Selbstbestimmung für alle sind zentrale Voraussetzungen für eine selbstbestimmte Familien- und Lebensplanung. Deshalb muss die Entscheidung gegen eine Schwangerschaft frei von Zwängen, Hindernissen und Stigmatisierung möglich sein. § 218 StGB muss ersatzlos gestrichen werden.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=46",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "teils",
+      "kurzfassung": "Fordert grundsätzliche Straffreiheit des Schwangerschaftsabbruchs bis zur 12. Woche.",
+      "zitat": "Die freie, selbstbestimmte Entscheidung über den eigenen Körper und darüber, ein Kind zu haben oder nicht, muss garantiert sein. Das BSW fordert die grundsätzliche Straffreiheit des Schwangerschaftsabbruchs bis zur 12. Woche.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=34",
+      "stand": "2026-10-05",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

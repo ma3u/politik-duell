@@ -1,0 +1,41 @@
+{
+  "vergeben_bis": 3,
+  "kennungen": [
+    {
+      "kennung": "M01",
+      "programm": 4,
+      "massnahme": 0,
+      "partei_id": 15,
+      "land": null,
+      "beschreibung": "asylantragstellung nur bei nachgewiesene",
+      "zitat": "beantragung von asyl und einem sonstigen",
+      "zitat_sha": "823f90dd84ae784e",
+      "inhalt_sha": "9d48cb748d7a4be1",
+      "seite": 104
+    },
+    {
+      "kennung": "M02",
+      "programm": 4,
+      "massnahme": 1,
+      "partei_id": 15,
+      "land": null,
+      "beschreibung": "asylrecht entfällt bei falschangaben zur",
+      "zitat": "wegfall des asylrechts bei falschangaben",
+      "zitat_sha": "5a9d95b061acdef7",
+      "inhalt_sha": "d81b5ffc5d031652",
+      "seite": 105
+    },
+    {
+      "kennung": "M03",
+      "programm": 3,
+      "massnahme": 0,
+      "partei_id": 14,
+      "land": null,
+      "beschreibung": "kein anspruch auf sozialleistungen für p",
+      "zitat": "jene, die die identitätsfeststellungsver",
+      "zitat_sha": "3e1feeeeed7fa98d",
+      "inhalt_sha": "98b0d697961c657f",
+      "seite": 28
+    }
+  ]
+}

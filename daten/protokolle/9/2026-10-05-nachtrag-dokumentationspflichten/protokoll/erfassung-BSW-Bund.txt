@@ -1,0 +1,37 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [],
+  "keine_massnahme": "Sicherheitskapitel (S. 33–43) gelesen. Die drei Treffer sind False Positives: S. 12 behandelt Produktlebensdauer-Kennzeichnung, S. 18 KMU-Dokumentationspflichten, S. 40 Impfschadensersatz. Keine Zusagen zu Polizeikontroll-Dokumentation oder deren Verringerung gefunden.",
+  "nicht_erfasst": [
+    {
+      "ursache": 902,
+      "seiten": [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+      "grund": "Lösungsrichtungen 'Dokumentationspflichten der Polizei bei Kontrollen verringern' und 'Kontrollen dokumentieren und nachvollziehbar machen' nicht im Programm. Die einzige relevante Stelle (S. 35: Entlastung von nachrangigen Aufgaben) behandelt Hausdurchsuchungen wegen Politikerbeleidigung, nicht Polizeikontrolle."
+    }
+  ]
+}
+
+## Protokoll
+
+**Gelesene Seiten:** Inhaltsverzeichnis (S. 2, 4), Sicherheitskapitel (S. 33–43).
+
+**Kapitel:** Kapitel 4 „Sicherheit gewährleisten, Freiheit schützen" (S. 33–43) umfasst:
+- Gewaltschutz von Frauen (S. 33–34)
+- Sichere Straßen und Plätze (S. 34–35)
+- Verfassungsschutz und Justiz (S. 36)
+- Unkontrollierte Migration (S. 36–38)
+- Meinungsfreiheit (S. 38–39)
+- Digitale Sicherheit und Datenschutz (S. 39–43)
+- Demokratie (S. 43–44)
+
+**Nachtrag-Lösungsweg:** Zu den Lösungsrichtungen „Dokumentationspflichten der Polizei bei Kontrollen verringern" und „Kontrollen dokumentieren und nachvollziehbar machen" (Ursache 902):
+
+Die Suchfunktion meldete 3 Treffer:
+- S. 12 (Kennzeichnungspflicht für Produktlebensdauer): False Positive, nicht zum Thema
+- S. 18 (KMU-Dokumentationspflichten beim Bürokratieabbau): False Positive, nicht zum Thema
+- S. 40 (Entbürokratisierung von Impfschadensersatz): False Positive, nicht zum Thema
+
+Polizeikontrolle und deren Dokumentation werden im Programm nicht behandelt. Einzige Erwähnung von Polizeientlastung (S. 35) betrifft Hausdurchsuchungen wegen Politikerbeleidigung.
+
+**Keine Maßnahme gefunden.**

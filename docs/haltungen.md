@@ -160,8 +160,20 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 | 19 | Soll Deutschland den Euro als Währung behalten? | 5 Arbeitsplätze | bertelsmann-stiftung.de, bpb.de | KI-Freigabe 2026-10-05 |
 | 20 | Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-05 |
 | 21 | Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | 6 Zuwanderung und Integration | bamf.de, bundestag.de | KI-Freigabe 2026-10-05 |
+| 24 | Soll Deutschland Mitglied der EU bleiben? | ja | ja | ja | ja | teils | ja | teils |
+| 25 | Soll die Erbschaftsteuer abgeschafft werden? | nein | nein | nein | nein | ja | nein | nein |
+| 26 | Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | nein | ja | teils | teils | nein | ja | teils |
+| 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | teils | ja | ja | – | – | ja | nein |
 | 22 | Soll Kirchenasyl in Deutschland weiterhin möglich sein? | 6 Zuwanderung und Integration | experteninitiative-religionspolitik.de, mediendienst-integration.de | KI-Freigabe 2026-10-05 |
 | 23 | Soll Eltern erlaubt werden, ihre Kinder zu Hause statt in der Schule zu unterrichten? | 4 Schule | deutsches-schulportal.de, bundesverfassungsgericht.de | KI-Freigabe 2026-10-05 |
+| 24 | Soll Deutschland Mitglied der EU bleiben? | 5 Arbeitsplätze | destatis.de, iwkoeln.de | KI-Freigabe 2026-10-05 |
+| 25 | Soll die Erbschaftsteuer abgeschafft werden? | 11 Preise und Löhne | ifo.de, destatis.de | KI-Freigabe 2026-10-05 |
+| 26 | Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | 1 Arzttermine | bmbfsfj.bund.de, destatis.de, bundesverfassungsgericht.de | KI-Freigabe 2026-10-05 |
+| 27 | Soll der Staat eine höhere Geburtenrate gezielt fördern? | 7 Rente, 17 Kita-Betreuung | destatis.de, bpb.de | KI-Freigabe 2026-10-05 |
+| 28 | Soll der vorübergehende Schutz für Geflüchtete aus der Ukraine enden, sobald die Sicherheitslage in ihrer Herkunftsregion es zulässt? | 6 Zuwanderung und Integration | europa.eu (Vertretung der EU-Kommission), idw-online.de | KI-Freigabe 2026-10-05 |
+| 29 | Sollen Anwohner und Gemeinden über den Bau von Windrädern vor Ort verbindlich mitentscheiden? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-05 |
+| 30 | Soll es Studiengebühren an staatlichen Hochschulen geben? | 4 Schule | diw.de | KI-Freigabe 2026-10-05 |
+| 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | 9 Sicherheit | dji.de, bundestag.de | KI-Freigabe 2026-10-05 |
 
 **Ausgelassen (mit Grund):**
 
@@ -169,6 +181,8 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 - *Kulturförderung für deutsche Kultur und Heimat*: Die geöffneten Quellen tragen keine der beiden Seiten als Zielkonflikt; Frage zurückgestellt.
 - *Staatsangehörigkeit durch Geburt in Deutschland*: Für die Nein-Seite fand sich keine lesbare unabhängige Quelle zum Geburtsrecht (nur Kritik an den Einbürgerungsfristen); mit einer Seite schwächer belegt wäre die Karte nicht fair. Zurückgestellt, bis eine Quelle vorliegt.
 - Fragen, deren Wortlaut die Recherche geändert hat: Windkraft („vorantreiben“ statt „stoppen“, weil „stoppen“ einen Eingriff nahelegt), Wehrdienst („verpflichtender Wehrdienst“, weil seit 2026 ein freiwilliger Dienst gilt), Inklusion („Vorrang vor Förderschulen“), Renteneintrittsalter („über 67 hinaus“), Hausunterricht, Kirchenzahlungen („Staatsleistungen“), Kirchenasyl, Bleiberecht.
+- Aus der Liste vom 5. 10. 2026 (Haltungen 24–31): Haltung 28 hat die Recherche umformuliert („Sicherheitslage in ihrer Herkunftsregion es zulässt“ statt „Herkunftsregion sicher ist“), Haltung 31 auf Demokratieförderung verengt (die Jugendförderung ist ein anderes Feld, Kinder- und Jugendplan), Haltung 30 gilt für alle Studierenden gleich (nicht nur Nicht-EU-Ausländer). Zielkonflikt-Sätze, die in den geöffneten Quellen nicht wörtlich standen (u. a. DIW-Zahlen zur Erbschaftsteuer, Rechnungshof zu „Demokratie leben!“, 1,4-%-Zwischenziel der Windflächen, Kostenzahl je Bachelorstudium), sind weggelassen. Die Befragungszahl zur Ukraine stammt von 2023 und ist bei einer Prüfung durch eine neuere Welle zu ersetzen. Haltung 26 zitiert die amtliche englische Übersetzung des BVerfG-Urteils (die deutsche Seite war nicht abrufbar); Wortlaut: BVerfGE 88, 203, Leitsatz 4.
+- Verwandte Themen bei 25, 26, 30 und 31 sind nur lose (die Prüfung verlangt mindestens ein Thema).
 
 ### Ergebnisse Phase B (5. 10. 2026)
 
@@ -199,3 +213,9 @@ Positionen aus den sieben Bundesprogrammen (Fassungen laut `parteien.json`; das 
 - 17: Soll die Zahlung der historisch begründeten Staatsleistungen an die Kirchen beendet werden?
 - 22: Soll Kirchenasyl in Deutschland weiterhin möglich sein?
 - 23: Soll Eltern erlaubt werden, ihre Kinder zu Hause statt in der Schule zu unterrichten?
+- 27: Soll der Staat eine höhere Geburtenrate gezielt fördern? (1 Programm: AfD)
+- 28: Soll der vorübergehende Schutz für Geflüchtete aus der Ukraine enden, sobald die Sicherheitslage in ihrer Herkunftsregion es zulässt? (0 Programme mit Aussage zum Ende des Schutzes; ein Fund eingeordnet als keine Aussage)
+- 29: Sollen Anwohner und Gemeinden über den Bau von Windrädern vor Ort verbindlich mitentscheiden? (2 Programme)
+- 30: Soll es Studiengebühren an staatlichen Hochschulen geben? (2 Programme)
+
+Lauf vom 5. 10. 2026 für die Haltungen 24–31 (Liste aus `/liste-einordnen`): 24, 25, 26 und 31 sind eingetragen, 27–30 zurückgestellt. Das BSW-Bundesprogramm war nicht abrufbar (HTTP 503) und lag als lokale Kopie der Betreiberin vor. Bei Haltung 31 meldeten FDP und AfD keine Aussage. Die Fundstellen suchte die kleinere Modellstufe, die Einordnung ein Agent ohne Parteinamen.

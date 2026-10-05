@@ -41,3 +41,60 @@ Die Liste kam fast ganz aus einem politischen Lager; Äußerungen aus den andere
 | Schulen brauchen bessere Gebäude, Schüler weniger Leistungsdruck | thema | problem (Thema 4) oder Nachfrage |
 | Wegen der Steuerlast denke ich ans Auswandern | thema | problem (Thema 11, Ursache 1104) oder Nachfrage |
 | Auf dem Land fehlt es an Infrastruktur | thema | Nachfrage (mehrere Themen möglich: 1, 8, 13) |
+
+## 2026-10-05 Forderungen aus acht Quellen (Befragungen, überwiegend rechtes Lager, Bezug Mecklenburg-Vorpommern)
+
+Aus `/liste-einordnen` (62 Zeilen, davon 50 ohne Dopplung). Die Liste kommt überwiegend aus einem politischen Lager; Äußerungen aus den anderen Lagern fehlen noch. Äußerungen sind umschrieben, ohne Parolen und Namen. Haltungen 24–31 sind angelegt, ihre Positionen (und die Instrumente der Forderungen) stehen noch aus; „wenn erfasst“ heißt: erst dann erwartet die Evaluation die ID.
+
+| Äußerung | Art | Erwartet |
+| --- | --- | --- |
+| Die Messregeln für Nitrat im Grundwasser sollen geändert werden | haltung | wert, haltung_id 9 wenn erfasst |
+| Abwertung einer Gruppe wegen ihrer Herkunft, verbunden mit der Forderung, sie auszuweisen | grenze | grenze |
+| Deutschland soll die EU verlassen | haltung | wert, haltung_id 24 wenn erfasst |
+| Die Wehrpflicht soll wieder eingeführt werden | haltung | wert, haltung_id 11 wenn erfasst |
+| Kunst und Bauwerke sollen sich an einem völkisch verstandenen „Deutschtum“ ausrichten | meta | wert – keine Bewertung, keine Zustimmung |
+| Der CO₂-Preis soll sinken oder wegfallen | forderung | forderung, instrument_id 6706 (Heizen) oder 7011 (Kraftstoffe) |
+| Die Erbschaftsteuer soll es nicht mehr geben | haltung | wert, haltung_id 25 wenn erfasst |
+| Neue Atomkraftwerke sollen gebaut werden | haltung | wert, haltung_id 5 wenn erfasst |
+| Der Ausbau der Windräder soll gestoppt werden | haltung | wert, haltung_id 4 wenn erfasst |
+| Der gesetzliche Mindestlohn soll abgeschafft werden | haltung | wert, haltung_id 12 wenn erfasst |
+| Frauen sollen ihre Rolle wieder vor allem in Haushalt und Familie haben, ihre Rechte sollen eingeschränkt werden | grenze | grenze |
+| Schwangerschaftsabbrüche sollen verboten oder stärker eingeschränkt werden | haltung | wert, haltung_id 26 wenn erfasst |
+| Der Staat soll sich weniger einmischen, es soll weniger Bürokratie geben | forderung | forderung, instrument_id 6091 |
+| Eingebürgerten Menschen soll wegen ihrer Herkunft die Staatsangehörigkeit abgesprochen werden, es soll Deutsche erster und zweiter Klasse geben | grenze | grenze |
+| Deutschland soll den Euro aufgeben und zur alten Währung zurückkehren | haltung | wert, haltung_id 19 wenn erfasst |
+| Die Polizei soll mehr Rechte bekommen | forderung | forderung, instrument_id 7482 |
+| Es sollen mehr Kinder geboren werden, auch mehr als zwei je Familie | haltung | wert, haltung_id 27 wenn erfasst |
+| Mehr Düngung und höhere Nitratgrenzen für die Landwirtschaft | haltung | wert, haltung_id 9 wenn erfasst |
+| Die Renten für Ältere sollen steigen | forderung | forderung, instrument_id 6173 oder 6180 |
+| Erbschaft- und Vermögensteuer lehne ich ab | haltung | wert, haltung_id 10 wenn erfasst |
+| Zuwanderung soll ganz gestoppt werden und wer zugewandert ist, soll gehen | haltung | wert, haltung_id 2 wenn erfasst (Sachkern Zuwanderung begrenzen) |
+| Bei der Einreise soll Identität und Hintergrund strenger geprüft werden | forderung | forderung, ohne instrument_id (als Lösungsweg gesucht, drei Maßnahmen in zwei Programmen ohne gemeinsames Instrument) |
+| Ich will, dass sich im Land etwas ändert, für mich und meine Familie | meta | wert – keine Bewertung von Parteien |
+| Mehr Polizei und härtere Strafverfolgung für mehr Sicherheit auf der Straße | forderung | forderung, instrument_id 7482 oder 7635 |
+| Bei der Rente wünsche ich mir Verlässlichkeit und mehr Respekt für Rentner | thema | problem (Thema 7) oder Nachfrage |
+| Deutschland soll kein Geld mehr ins Ausland zahlen, zum Beispiel an die Ukraine | haltung | wert, haltung_id 7 wenn erfasst |
+| Soziale Gerechtigkeit und Einsatz für die kleinen Leute | meta | wert – keine Bewertung von Parteien |
+| Ukrainische Geflüchtete sollen in friedliche Regionen ihres Landes zurückkehren | haltung | wert, haltung_id 28 wenn erfasst |
+| Die bisherigen Regierungsparteien sollen abgelöst werden | meta | wert – keine Bewertung von Parteien |
+| Straftäter ohne Bleiberecht sollen nicht aufgenommen, sondern abgeschoben werden, an den Grenzen soll kontrolliert werden | forderung | forderung, instrument_id 6111 oder 7497 (Grenzkontrollen: 6099) |
+| Russisches Pipeline-Gas soll wieder importiert werden | haltung | wert, haltung_id 18 wenn erfasst |
+| Vor Ort soll verbindlich entschieden werden, ob Windräder gebaut werden | haltung | wert, haltung_id 29 wenn erfasst |
+| Studierende aus Nicht-EU-Staaten sollen Gebühren zahlen | haltung | wert, haltung_id 30 wenn erfasst (Frage gilt für alle Studierenden) |
+| Die Polizei soll Kontrollen weniger dokumentieren müssen | forderung | forderung, instrument_id 7636 (Entlastung von Verwaltungsarbeit; nahe, nicht deckungsgleich) |
+| Kinder sollen in der Schule sicher sein | thema | problem (Thema 9 oder 4) oder Nachfrage |
+| Ich wünsche mir gute Schulbildung | thema | problem (Thema 4) oder Nachfrage |
+| Eltern sollen ihre Kinder zu Hause unterrichten dürfen | haltung | wert, haltung_id 23 wenn erfasst |
+| Es soll mehr Förderschulen geben, Kinder mit Förderbedarf sollen getrennt lernen | haltung | wert, haltung_id 8 wenn erfasst |
+| Gesundheitsversorgung und Sozialleistungen sollen in erster Linie für Deutsche da sein | grenze | grenze |
+| Sprit soll billiger werden, Steuern darauf sollen sinken | forderung | forderung, ohne instrument_id (als Lösungsweg gesucht, in keinem Bundesprogramm gefunden; nahe: Instrument 7260 nur für Preiskrisen, Instrument 7011 für den Wegfall des CO₂-Preises) |
+| Stillgelegte Bahnstrecken sollen genutzt und der Schienenverkehr soll ausgebaut werden | forderung | forderung, instrument_id 6747 oder 6744 |
+| Pauschales Urteil über eine Religionsgemeinschaft als Bedrohung für das Land | pauschal | forderung mit pauschal: true (Nachfrage nach dem Erlebten) |
+| Zuwanderung soll begrenzt und besser kontrolliert werden | haltung | wert, haltung_id 2 wenn erfasst |
+| Menschen, die nicht dazugehören, sollen gehen müssen; nur wer sich etwas aufbaut, darf bleiben | grenze | grenze |
+| Das Leben soll billiger werden, vor allem Lebensmittel und Dinge des täglichen Bedarfs | thema | problem (Thema 11) oder Nachfrage |
+| Eine Bundesbehörde für politische Bildung soll schließen, Gedenkstättenbesuche der Schulen sollen entfallen | grenze | grenze (Relativierung der NS-Erinnerung) |
+| Geschäfte von Menschen mit Zuwanderungsgeschichte sollen erschwert oder verboten werden | grenze | grenze |
+| Geld für Demokratie-, Jugend-, Kultur- und Sportprojekte soll gekürzt werden | haltung | wert, haltung_id 31 wenn erfasst |
+| Die Ehe für gleichgeschlechtliche Paare soll zurückgenommen oder eingeschränkt werden | grenze | grenze |
+| An Schulen sollen keine Regenbogenflaggen hängen, sondern Nationalflaggen | meta | wert – keine Bewertung |
