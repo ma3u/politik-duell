@@ -69,7 +69,7 @@ Aus `/liste-einordnen` (62 Zeilen, davon 50 ohne Dopplung). Die Liste kommt übe
 | Die Renten für Ältere sollen steigen | forderung | forderung, instrument_id 6173 oder 6180 |
 | Erbschaft- und Vermögensteuer lehne ich ab | haltung | wert, haltung_id 10 wenn erfasst |
 | Zuwanderung soll ganz gestoppt werden und wer zugewandert ist, soll gehen | haltung | wert, haltung_id 2 wenn erfasst (Sachkern Zuwanderung begrenzen) |
-| Bei der Einreise soll Identität und Hintergrund strenger geprüft werden | forderung | forderung, instrument_id aus Thema 6 wenn erfasst |
+| Bei der Einreise soll Identität und Hintergrund strenger geprüft werden | forderung | forderung, ohne instrument_id (als Lösungsweg gesucht, drei Maßnahmen in zwei Programmen ohne gemeinsames Instrument) |
 | Ich will, dass sich im Land etwas ändert, für mich und meine Familie | meta | wert – keine Bewertung von Parteien |
 | Mehr Polizei und härtere Strafverfolgung für mehr Sicherheit auf der Straße | forderung | forderung, instrument_id 7482 oder 7635 |
 | Bei der Rente wünsche ich mir Verlässlichkeit und mehr Respekt für Rentner | thema | problem (Thema 7) oder Nachfrage |
@@ -87,7 +87,7 @@ Aus `/liste-einordnen` (62 Zeilen, davon 50 ohne Dopplung). Die Liste kommt übe
 | Eltern sollen ihre Kinder zu Hause unterrichten dürfen | haltung | wert, haltung_id 23 wenn erfasst |
 | Es soll mehr Förderschulen geben, Kinder mit Förderbedarf sollen getrennt lernen | haltung | wert, haltung_id 8 wenn erfasst |
 | Gesundheitsversorgung und Sozialleistungen sollen in erster Linie für Deutsche da sein | grenze | grenze |
-| Sprit soll billiger werden, Steuern darauf sollen sinken | forderung | forderung, instrument_id aus Thema 15 wenn erfasst |
+| Sprit soll billiger werden, Steuern darauf sollen sinken | forderung | forderung, ohne instrument_id (als Lösungsweg gesucht, in keinem Bundesprogramm gefunden; nahe: Instrument 7260 nur für Preiskrisen) |
 | Stillgelegte Bahnstrecken sollen genutzt und der Schienenverkehr soll ausgebaut werden | forderung | forderung, instrument_id 6747 oder 6744 |
 | Pauschales Urteil über eine Religionsgemeinschaft als Bedrohung für das Land | pauschal | forderung mit pauschal: true (Nachfrage nach dem Erlebten) |
 | Zuwanderung soll begrenzt und besser kontrolliert werden | haltung | wert, haltung_id 2 wenn erfasst |

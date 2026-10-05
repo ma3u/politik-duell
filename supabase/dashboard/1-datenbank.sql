@@ -2860,7 +2860,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7991, 18, 17, null, 'Bau von CCS- und CCU-Anlagen durch Superabschreibungen oder öffentliche Kredite fördern.', '{1801,1802}', 7935, 1, 3, null, 'Seit Ende 2025 ist kommerzielles CCS rechtlich möglich; es kann schwer vermeidbare Industrieemissionen senken. Dagegen: Infrastruktur braucht 7 bis 10 Jahre, Kosten und Umfang sind unsicher; Wirkung auf Hitze gering.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=12', 'https://www.bundesregierung.de/breg-de/aktuelles/speicherung-von-kohlendioxid-2376946', 'gemischt', '2026-10-04', false, true, 'blind'),
   (7992, 18, 17, null, 'Repowering-Programm: alte Windanlagen durch neue ersetzen.', '{1801,1802}', 7934, 1, 3, null, 'Erneuerbare vermieden 2024 laut UBA rund 259 Mio. t CO2-Äquivalente; Förderprogramme bestehen. Auf Hitzetage in Deutschland wirkt das nur als kleiner Teil des globalen Klimaschutzes und mit Verzögerung.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11', 'https://www.umweltbundesamt.de/publikationen/emissionsbilanz-erneuerbarer-energietrager-2024', 'belegt', '2026-10-04', false, true, 'blind'),
   (7993, 18, 17, null, 'Fernwärme ausbauen und auf erneuerbare Quellen umstellen, Geothermie-Ausbauziele anheben.', '{1801,1802}', 7934, 1, 3, null, 'Erneuerbare vermieden 2024 laut UBA rund 259 Mio. t CO2-Äquivalente; Förderprogramme bestehen. Auf Hitzetage in Deutschland wirkt das nur als kleiner Teil des globalen Klimaschutzes und mit Verzögerung.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=12', 'https://www.umweltbundesamt.de/publikationen/emissionsbilanz-erneuerbarer-energietrager-2024', 'belegt', '2026-10-04', false, true, 'blind'),
-  (7994, 18, 17, null, 'Mittel für Auf- und Ausbau von Deichen und Dämmen bereitstellen, Folgen von Hochwasser abmildern.', '{1805}', 7942, 2, 3, null, 'Rückhalteräume und Auen dämpfen Hochwasserscheitel nachweislich, der Bund fördert Hochwasserschutz bereits mit. Dagegen: Deiche verlagern Risiken teils flussabwärts und ändern das Bauen in Überschwemmungsgebieten nicht.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=20', 'https://www.umweltbundesamt.de/hochwasser-durch-renaturierung-entschaerfen', 'belegt', '2026-10-04', false, true, 'blind');
+  (7994, 18, 17, null, 'Mittel für Auf- und Ausbau von Deichen und Dämmen bereitstellen, Folgen von Hochwasser abmildern.', '{1805}', 7942, 2, 3, null, 'Rückhalteräume und Auen dämpfen Hochwasserscheitel nachweislich, der Bund fördert Hochwasserschutz bereits mit. Dagegen: Deiche verlagern Risiken teils flussabwärts und ändern das Bauen in Überschwemmungsgebieten nicht.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=20', 'https://www.umweltbundesamt.de/hochwasser-durch-renaturierung-entschaerfen', 'belegt', '2026-10-04', false, true, 'blind'),
+  (7995, 6, 14, null, 'Kein Anspruch auf Sozialleistungen für Personen, die Identitätsfeststellungsverfahren aktiv behindern', '{604}', null, 1, 2, null, 'Leistungskürzung bei Verweigerung der Mitwirkung kann Anreiz zur Identitätsklärung setzen; Wirkung auf Rückführungen ist kaum untersucht, die Hauptursache liegt oft bei Herkunftsstaaten. Das Existenzminimum begrenzt Kürzungen, Bundesgesetz möglich.', 'https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=28', null, 'offen', '2026-10-05', false, true, 'blind'),
+  (7996, 6, 15, null, 'Asylantragstellung nur bei nachgewiesener Identität und Staatsangehörigkeit', '{604}', null, 1, 0, null, 'Identitätsklärung ist ein Hauptproblem bei Rückführungen, aber wer ohne Papiere flieht, könnte gar keinen Antrag mehr stellen; das widerspricht dem Zugang zum Asylverfahren (Grundgesetz, EU-Recht, Genfer Konvention). Wirkung auf Rückführungen kaum untersucht.', 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=104', null, 'offen', '2026-10-05', false, true, 'blind'),
+  (7997, 6, 15, null, 'Asylrecht entfällt bei Falschangaben zur Identität im Asylverfahren', '{604}', null, 1, 1, null, 'Sanktion für Täuschung kann Anreize zu korrekten Angaben setzen, klärt aber keine Identität und löst nicht das Papierproblem. Der Wegfall des Asylrechts berührt Art. 16a GG und Flüchtlingsschutz nach EU-Recht; nur mit großen Hürden.', 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=105', null, 'offen', '2026-10-05', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -3454,7 +3457,10 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7981, 18),
   (7984, 18),
   (7985, 18),
-  (7987, 18);
+  (7987, 18),
+  (7995, 6),
+  (7996, 6),
+  (7997, 6);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (1, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -3537,8 +3543,8 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (6, 11, null, 'massnahmen', null, '2026-09-29', true, null),
   (6, 12, null, 'massnahmen', null, '2026-09-29', true, null),
   (6, 13, null, 'massnahmen', null, '2026-09-29', true, null),
-  (6, 14, null, 'massnahmen', null, '2026-09-29', true, null),
-  (6, 15, null, 'massnahmen', null, '2026-09-29', true, null),
+  (6, 14, null, 'massnahmen', null, '2026-10-05', true, null),
+  (6, 15, null, 'massnahmen', null, '2026-10-05', true, null),
   (6, 16, null, 'massnahmen', null, '2026-09-29', true, null),
   (6, 17, null, 'massnahmen', null, '2026-09-29', true, null),
   (6, 11, 'ST', 'massnahmen', null, '2026-09-29', true, null),

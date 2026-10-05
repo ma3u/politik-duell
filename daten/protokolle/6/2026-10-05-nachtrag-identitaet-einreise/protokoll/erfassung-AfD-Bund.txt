@@ -1,0 +1,47 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Asylantragstellung nur bei nachgewiesener Identität und Staatsangehörigkeit",
+      "ursachen_ids": [604],
+      "zitat": "Beantragung von Asyl und einem sonstigen Schutzstatus nur bei nachgewiesener Identität und Staatsangehörigkeit",
+      "seite": 104
+    },
+    {
+      "beschreibung": "Asylrecht entfällt bei Falschangaben zur Identität im Asylverfahren",
+      "ursachen_ids": [604],
+      "zitat": "Wegfall des Asylrechts bei Falschangaben zur Identität im Asylverfahren",
+      "seite": 105
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Auftrag: Nachtrag zu Ursache 604 „Identität und Hintergrund bei der Einreise strenger prüfen"
+
+Gelesene Kapitel und Fundstellen:
+- Inhaltsverzeichnis (S. 3–7): Überblick, Kapitel „ASYL- UND MIGRATIONSPOLITIK" bei S. 100
+- Kapitel Asyl- und Migrationspolitik (S. 104–112): Vollständig gelesen
+
+Fundstellen analysiert:
+- S. 3 (Inhaltsverzeichnis): ignoriert
+- S. 27 (Bürgergeld/Jobcenter): Falsch-Positiv (Suchbegriff „biometrisch", nicht zu Einreise/Asyl)
+- S. 31, 69, 73, 96, 141, 153, 172–174 (kulturelle/persönliche Identität, Geschlechtsidentität): Falsch-Positive, nicht zu Einreise/Registrierung
+
+Neue Maßnahmen (nicht in „Bereits erfasst" enthalten):
+1. S. 104: „Beantragung von Asyl [...] nur bei nachgewiesener Identität und Staatsangehörigkeit" – Konkrete Zusage zur Identitätsprüfung bei Asylantrag
+2. S. 105: „Wegfall des Asylrechts bei Falschangaben zur Identität im Asylverfahren" – Konkrete Zusage zur Sanktion bei Falschangaben zur Identität
+
+Bereits erfasste Stellen nicht erneut aufgenommen:
+- S. 104: Grenzkontrolle/Bundespolizei
+- S. 104: Asylverfahren außerhalb Deutschlands
+- S. 105: Ausweitung sicherer Herkunftsstaaten
+- S. 106: Asylverfahren vor Verwaltungsgerichten straffen
+- S. 108: Druck auf Herkunftsländer, Haft-/Gewahrsamsplätze
+- S. 109: Freiwillige Rückkehr
+- S. 110: Integration und Spracherwerb
+
+Ursache 604 mit 20 Suchtreffern (Pflichtursache): Erfassung mit 2 Maßnahmen abgeschlossen.
+Ursache „Identitätsprüfung und Datenzugriff begrenzen, Datenschutz für Geflüchtete wahren" (0 Treffer): Keine Maßnahme gefunden (entspricht Programmposition).
