@@ -10,7 +10,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und ordnet Probleme Themen/Ursachen zu. Punkte kommen deterministisch aus der kuratierten Datenbank. (KI-gestützte Entwürfe für Maßnahmen und Bewertungen im Datenkatalog sind erlaubt, sind gekennzeichnet und zählen erst nach menschlicher Prüfung – außer in einer geschlossenen Testphase mit deutlichem Hinweis am Ergebnis.)
 3. **Die KI erfindet niemals Quellen oder Links.** Alle Belege stammen ausschließlich aus der Datenbank.
 4. **Forderung ≠ Problem.** Nennt ein Spieler eine Forderung („weniger X"), fragt die KI nach dem konkreten Alltagsproblem dahinter.
-5. **Datenschutz:** Politische Meinungen sind besondere Daten (Art. 9 DSGVO). Keine Konten, keine IPs, kein Audio speichern – nur anonymen Problemtext.
+5. **Datenschutz:** Politische Meinungen sind besondere Daten (Art. 9 DSGVO). Keine Konten, keine IPs, kein Audio speichern – nur anonymen Problemtext. Ausnahme: Runden ohne Wertung (auch `grenze`) landen im Wortlaut in der Review-Warteschlange `review_eingaben` – nur Admins, ohne Parteien und ohne Verbindung zur Runde, gelöscht beim Sichten oder nach 30 Tagen.
 
 ## Spielablauf
 
@@ -20,7 +20,8 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 4. KI klassifiziert: `problem` | `forderung` | `wert` | `grenze`.
    - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Entspricht die Forderung eindeutig einem erfassten Lösungsweg (Instrument des Themas, zweiter KI-Aufruf), zeigt ein Knopf „Zeig mir, wer das fordert“ die **Forderungskarte**: welche Parteien den Lösungsweg im Programm haben (mit Beleg-Link), Forschungsstand und Begründung – ohne Punkte; nach einem gewerteten Problem erscheint sie zusätzlich in der Auflösung. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
    - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich. Berührt die Haltung eindeutig eine erfasste Wertfrage (`haltung_id`, nur Haltungen mit Position aller sieben Parteien), zeigt die Runde die **Haltungskarte** (höchstens eine je Runde): die Frage, die Position jeder Partei aus dem Bundesprogramm (`ja`/`nein`/`teils`/`keine_aussage`, Kurzfassung, Zitat aufklappbar, Beleg-Link) und die Zielkonflikte beider Seiten – ohne Punkte, ohne Hervorhebung der gewählten Parteien; verwandte Themen zum Antippen führen zu deren Ursachen.
-   - `grenze` → Abwertung einer Gruppe (Menschenwürde, gleiche Rechte), Gewaltaufruf oder Beleidigung: „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte, Inhalt wird nicht gespeichert; neues Problem möglich. Ein Pauschalurteil über eine Gruppe ist **kein** `grenze`-Fall (dort Nachfrage nach dem Erlebten), im Zweifel Nachfrage (`docs/methode.md` → „Grenze“).
+   - `grenze` → Abwertung einer Gruppe (Menschenwürde, gleiche Rechte), Gewaltaufruf oder Beleidigung: „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte; in `runden` ohne Inhalt (Wortlaut nur in `review_eingaben`, s. Datenschutz); neues Problem möglich. Ein Pauschalurteil über eine Gruppe ist **kein** `grenze`-Fall (dort Nachfrage nach dem Erlebten), im Zweifel Nachfrage (`docs/methode.md` → „Grenze“).
+   - Die eigene Eingabe bleibt sichtbar: nach einer Runde ohne Wertung (auch `grenze`) oben im Verlauf bis zur nächsten Eingabe, nach einer Wertung in der Auflösung über der Kurzfassung (nicht im Teilen-Text).
    - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen; ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2, mit Ursachen zum Antippen), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
 6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, „Worüber ihr gesprochen habt“ (alle Haltungs- und Forderungskarten der Partie, aufklappbar, nicht im Teilen-Text), Teilen-Button.
@@ -82,6 +83,9 @@ instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, 
 haltungen (id, frage, beschreibung, verwandte_themen)   -- Wertfragen für die Haltungskarte, eigener Nummernkreis
 haltung_positionen (haltung_id, partei_id, land, position, kurzfassung, zitat, beleg_programm_url, begruendung, stand, ki_entwurf)
 haltung_zielkonflikte (haltung_id, seite, text, quelle_url)
+
+review_eingaben (id, created_at, grund, eingaben text[], thema_id, zusammenfassung)
+  -- Runden ohne Wertung im Wortlaut, nur Admins, gelöscht beim Sichten oder nach 30 Tagen
   -- View haltungen_vollstaendig: Haltungen mit Position aller Parteien („Alle sieben oder keine“)
 
 runden (

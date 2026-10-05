@@ -826,13 +826,16 @@ async function zugangGueltig(token) {
 }
 async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphase, original, parteien, ursachen) {
   if (antwort.typ === "grenze") {
-    await db.from("runden").insert({
-      problem_text: "",
-      status: "grenze",
-      partei_a: parteiA,
-      partei_b: parteiB,
-      testphase
-    });
+    await Promise.all([
+      db.from("runden").insert({
+        problem_text: "",
+        status: "grenze",
+        partei_a: parteiA,
+        partei_b: parteiB,
+        testphase
+      }),
+      merkeOhneWertung("grenze", original, null, null)
+    ]);
     return;
   }
   const stichwort = antwort.stichwort ?? null;
@@ -846,24 +849,30 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
     testphase
   };
   if (antwort.typ === "wert") {
-    await db.from("runden").insert({
-      ...basis,
-      status: "wert",
-      ...antwort.haltung_id ? {
-        haltung_id: antwort.haltung_id
-      } : {}
-    });
+    await Promise.all([
+      db.from("runden").insert({
+        ...basis,
+        status: "wert",
+        ...antwort.haltung_id ? {
+          haltung_id: antwort.haltung_id
+        } : {}
+      }),
+      merkeOhneWertung("wert", original, null, antwort.zusammenfassung)
+    ]);
     return;
   }
   if (antwort.typ === "forderung") {
-    await db.from("runden").insert({
-      ...basis,
-      status: "forderung",
-      thema_id: antwort.thema_id,
-      ...antwort.instrument_id ? {
-        instrument_id: antwort.instrument_id
-      } : {}
-    });
+    await Promise.all([
+      db.from("runden").insert({
+        ...basis,
+        status: "forderung",
+        thema_id: antwort.thema_id,
+        ...antwort.instrument_id ? {
+          instrument_id: antwort.instrument_id
+        } : {}
+      }),
+      merkeOhneWertung("forderung", original, antwort.thema_id, antwort.zusammenfassung)
+    ]);
     return;
   }
   if (antwort.thema_id === null) {
@@ -875,7 +884,8 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
       db.from("review_warteschlange").insert({
         problem_text: antwort.zusammenfassung,
         einschaetzung: antwort.einschaetzung ?? null
-      })
+      }),
+      merkeOhneWertung("ungeprueft", original, null, antwort.zusammenfassung)
     ]);
     return;
   }
@@ -924,10 +934,24 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
     punkte_a: ea.punkte,
     punkte_b: eb.punkte
   } : {};
-  await db.from("runden").insert({
-    ...basis,
-    thema_id: antwort.thema_id,
-    status,
-    ...punkte
+  await Promise.all([
+    db.from("runden").insert({
+      ...basis,
+      thema_id: antwort.thema_id,
+      status,
+      ...punkte
+    }),
+    status === "gewertet" ? null : merkeOhneWertung(status, original, antwort.thema_id, antwort.zusammenfassung)
+  ]);
+}
+async function merkeOhneWertung(grund, original, themaId, zusammenfassung) {
+  const eingaben = original.map((t) => t.trim().slice(0, 2e3)).filter(Boolean).slice(-3);
+  if (!eingaben.length) return;
+  const { error } = await db.from("review_eingaben").insert({
+    grund,
+    eingaben,
+    thema_id: grund === "grenze" ? null : themaId,
+    zusammenfassung: grund === "grenze" ? null : zusammenfassung?.slice(0, 200) || null
   });
+  if (error) console.error("merkeOhneWertung:", error.message);
 }

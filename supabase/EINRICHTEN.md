@@ -78,6 +78,8 @@ So läuft die Moderation:
   Der Originaltext wird dafür nur geprüft, nicht gespeichert.
 - „Wert“-Runden erscheinen nicht, weil sie keine Probleme sind.
 - **Neue Themen:** Probleme ohne passendes Thema (Review-Warteschlange) zum Abhaken.
+- **Ohne Wertung:** alle Runden ohne Wertung (auch Grenzfälle) mit den Eingaben im Wortlaut, zum Prüfen der
+  KI-Einordnung; „Gesichtet“ löscht, sonst nach 30 Tagen automatisch (Schritt 17).
 - Die Wortwolke auf dem Startbildschirm zeigt die erfassten Themen (für alle Parteien, Bundesprogramm), nicht die
   freigegebenen Stichwörter. Freigaben haben daher derzeit keine öffentliche Wirkung.
 
@@ -320,8 +322,8 @@ solche Runde gab, ohne Inhalt. Einmalig, **in dieser Reihenfolge**:
    App kommt trotzdem an). Keine neuen Secrets.
 
 Prüfen: In der App eine abwertende Äußerung eingeben (etwa „Die gehören alle aufgehängt“) – es erscheint „Darauf
-geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“, die Äußerung verschwindet aus dem
-Verlauf, und die Runde geht weiter. Ein pauschales Urteil („Die … sind alle kriminell“) bekommt dagegen wie
+geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“, die eigene Äußerung bleibt darüber
+stehen, und die Runde geht weiter. Ein pauschales Urteil („Die … sind alle kriminell“) bekommt dagegen wie
 bisher die Nachfrage nach dem Erlebten. Im SQL Editor: `select status, problem_text, stichwort from runden order
 by id desc limit 1` zeigt `grenze` mit leerem Text und ohne Stichwort.
 
@@ -353,6 +355,29 @@ Positionen, den Zielkonflikten und verwandten Themen zum Antippen. Ohne passende
 persönlichen Haltung. Mit „Mit Beispieldaten spielen“ lässt sich die Karte ohne Datenbank ansehen (fiktive
 Parteien, z. B. „Ich finde, ein Tempolimit wäre richtig“).
 
+### 17. Eingaben ohne Wertung zur Durchsicht
+
+Endet eine Runde ohne Wertung (Grenze, Haltung, Forderung, Thema oder Ursache nicht erkannt, Partei noch nicht
+erfasst), speichert die Funktion die Eingaben im Wortlaut in `review_eingaben` – nur für Admins lesbar, ohne
+Parteien und ohne Verbindung zur Runde. Die Admin-Ansicht zeigt sie im Reiter **„Ohne Wertung“**; „Gesichtet“
+löscht den Eintrag, sonst wird er nach 30 Tagen gelöscht. Einmalig, **in dieser Reihenfolge**:
+
+1. **Optional zuerst pg_cron aktivieren:** Database → Extensions → `pg_cron` einschalten. Dann löscht die
+   Datenbank alte Einträge täglich, auch wenn länger niemand spielt (sonst bei jedem neuen Eintrag).
+2. **Datenbank ergänzen:** [`supabase/migrations/20261010000000_review_eingaben.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261010000000_review_eingaben.sql)
+   → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)
+   einfügen → **Run**.
+3. **Edge Function aktualisieren:** in der Funktion `analyse` den Code durch
+   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts)
+   ersetzen → **Deploy**. Ohne Schritt 2 schlägt nur das Speichern der Eingaben fehl; Runden und Antworten an
+   die App laufen weiter.
+
+pg_cron erst später aktiviert: im SQL Editor `select cron.schedule('review_eingaben_aufraeumen', '17 3 * * *',
+'select public.review_eingaben_aufraeumen()')` ausführen.
+
+Prüfen: In der App eine Haltung eingeben (etwa „Ich finde, Familie ist das Wichtigste“) – in der Admin-Ansicht
+erscheint sie unter „Ohne Wertung“ im Wortlaut mit dem Grund „Haltung“.
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.
@@ -367,8 +392,9 @@ Danach im Dashboard:
 
 ## Datenschutz
 
-- Gespeichert wird nur die neutrale Kurzfassung eines Problems (`runden.problem_text`) und ein Stichwort, keine
-  Rohtexte, keine IPs, kein Audio. Die Sitzungs-ID für das Rate-Limit ist zufällig und wird nach
+- Gespeichert wird die neutrale Kurzfassung eines Problems (`runden.problem_text`) und ein Stichwort, keine
+  IPs, kein Audio. Rohtexte nur bei Runden ohne Wertung (`review_eingaben`, nur Admins, gelöscht beim Sichten
+  oder nach 30 Tagen). Die Sitzungs-ID für das Rate-Limit ist zufällig und wird nach
   einem Tag gelöscht.
 - Mistral: Im kostenlosen Plan in der Mistral-Konsole unter *Privacy* die Nutzung für Training
   abschalten. Für den öffentlichen Start den bezahlten Plan nutzen (dort kein Training).

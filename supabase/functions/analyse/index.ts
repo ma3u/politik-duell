@@ -154,7 +154,7 @@ Deno.serve(async (req) => {
 
     // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht abgeschlossen.
     if (!antwort.nachfrage) {
-      // Der Originaltext wird nur geprüft, nicht gespeichert.
+      // Der Originaltext wird geprüft; gespeichert wird er nur bei Runden ohne Wertung (review_eingaben, 30 Tage).
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
       await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen)
     }
@@ -244,10 +244,13 @@ async function speichereRunde(
   parteien: Partei[],
   ursachen: Ursache[],
 ) {
-  // Grenze (Abwertung, Gewalt, Beleidigung): nur, dass es eine solche Runde gab – ohne Zusammenfassung,
-  // Stichwort oder Filtergrund. Vom Inhalt wird nichts gespeichert.
+  // Grenze (Abwertung, Gewalt, Beleidigung): in `runden` nur, dass es eine solche Runde gab – ohne
+  // Zusammenfassung, Stichwort oder Filtergrund. Den Wortlaut sieht nur die Admin-Ansicht (30 Tage).
   if (antwort.typ === 'grenze') {
-    await db.from('runden').insert({ problem_text: '', status: 'grenze', partei_a: parteiA, partei_b: parteiB, testphase })
+    await Promise.all([
+      db.from('runden').insert({ problem_text: '', status: 'grenze', partei_a: parteiA, partei_b: parteiB, testphase }),
+      merkeOhneWertung('grenze', original, null, null),
+    ])
     return
   }
 
@@ -264,12 +267,18 @@ async function speichereRunde(
 
   // Haltung: mit der erkannten Wertfrage, falls zugeordnet (nur die ID).
   if (antwort.typ === 'wert') {
-    await db.from('runden').insert({ ...basis, status: 'wert', ...(antwort.haltung_id ? { haltung_id: antwort.haltung_id } : {}) })
+    await Promise.all([
+      db.from('runden').insert({ ...basis, status: 'wert', ...(antwort.haltung_id ? { haltung_id: antwort.haltung_id } : {}) }),
+      merkeOhneWertung('wert', original, null, antwort.zusammenfassung),
+    ])
     return
   }
   // Forderung ohne Alltagsproblem nach zwei Nachfragen: ohne Wertung, mit dem erkannten Thema.
   if (antwort.typ === 'forderung') {
-    await db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id, ...(antwort.instrument_id ? { instrument_id: antwort.instrument_id } : {}) })
+    await Promise.all([
+      db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id, ...(antwort.instrument_id ? { instrument_id: antwort.instrument_id } : {}) }),
+      merkeOhneWertung('forderung', original, antwort.thema_id, antwort.zusammenfassung),
+    ])
     return
   }
 
@@ -280,6 +289,7 @@ async function speichereRunde(
         problem_text: antwort.zusammenfassung,
         einschaetzung: antwort.einschaetzung ?? null,
       }),
+      merkeOhneWertung('ungeprueft', original, null, antwort.zusammenfassung),
     ])
     return
   }
@@ -318,5 +328,29 @@ async function speichereRunde(
   // Gespeichert werden die Rundenpunkte (Summe über die Ursachen), nicht der Spielpunkt.
   // Ist das Thema für eine Partei noch nicht erfasst, gibt es keine Punkte.
   const punkte = status === 'gewertet' ? { punkte_a: ea.punkte, punkte_b: eb.punkte } : {}
-  await db.from('runden').insert({ ...basis, thema_id: antwort.thema_id, status, ...punkte })
+  await Promise.all([
+    db.from('runden').insert({ ...basis, thema_id: antwort.thema_id, status, ...punkte }),
+    status === 'gewertet' ? null : merkeOhneWertung(status, original, antwort.thema_id, antwort.zusammenfassung),
+  ])
+}
+
+/**
+ * Runde ohne Wertung: die Eingaben im Wortlaut zur Durchsicht in der Admin-Ansicht (`review_eingaben`, nur Admins,
+ * nach 30 Tagen gelöscht). Ein Fehler hier soll die Antwort an die App nicht verhindern.
+ */
+async function merkeOhneWertung(
+  grund: 'grenze' | 'wert' | 'forderung' | 'ungeprueft' | 'unvollstaendig',
+  original: string[],
+  themaId: number | null,
+  zusammenfassung: string | null,
+) {
+  const eingaben = original.map((t) => t.trim().slice(0, 2000)).filter(Boolean).slice(-3)
+  if (!eingaben.length) return
+  const { error } = await db.from('review_eingaben').insert({
+    grund,
+    eingaben,
+    thema_id: grund === 'grenze' ? null : themaId,
+    zusammenfassung: grund === 'grenze' ? null : zusammenfassung?.slice(0, 200) || null,
+  })
+  if (error) console.error('merkeOhneWertung:', error.message)
 }

@@ -2,16 +2,16 @@ import type { Session } from '@supabase/supabase-js'
 import { type FormEvent, useCallback, useEffect, useState } from 'react'
 import { FILTER_TEXTE, pruefeText, type FilterGrund } from '../../supabase/functions/_shared/moderation'
 import { Logo } from '../components/Logo'
-import { adminDb, type AdminRunde, type ReviewEintrag } from './client'
+import { adminDb, type AdminRunde, type ReviewEingabe, type ReviewEintrag } from './client'
 import { Pruefung } from './Pruefung'
 import { Testphase } from './Testphase'
 
 // Einfache Admin-Ansicht (#/admin): Probleme für eine öffentliche Anzeige freigeben oder
-// ablehnen, Review-Warteschlange (Themen ohne Daten) abhaken, Prüfende einladen
+// ablehnen, Review-Warteschlange (Themen ohne Daten) abhaken, Eingaben ohne Wertung sichten, Prüfende einladen
 // und ihre Bewertungen auswerten.
 // Zugriff regelt die Datenbank: Nur Konten in der Tabelle `admins` sehen etwas.
 
-type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'pruefung' | 'testphase'
+type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'ohne' | 'pruefung' | 'testphase'
 
 const REITER: { id: Reiter; name: string }[] = [
   { id: 'offen', name: 'Offen' },
@@ -19,11 +19,12 @@ const REITER: { id: Reiter; name: string }[] = [
   { id: 'frei', name: 'Freigegeben' },
   { id: 'abgelehnt', name: 'Abgelehnt' },
   { id: 'review', name: 'Neue Themen' },
+  { id: 'ohne', name: 'Ohne Wertung' },
   { id: 'pruefung', name: 'Prüfung' },
   { id: 'testphase', name: 'Testphase' },
 ]
 
-function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'pruefung' | 'testphase'> {
+function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'ohne' | 'pruefung' | 'testphase'> {
   if (r.freigegeben) return 'frei'
   if (r.abgelehnt) return 'abgelehnt'
   return r.filter_grund ? 'gestoppt' : 'offen'
@@ -31,6 +32,14 @@ function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'pruefung' | 'test
 
 const zeit = (iso: string) =>
   new Date(iso).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
+
+const GRUND_TEXTE: Record<ReviewEingabe['grund'], string> = {
+  grenze: 'Grenze – darauf geht das Spiel nicht ein',
+  wert: 'Haltung',
+  forderung: 'Forderung ohne Alltagsproblem',
+  ungeprueft: 'kein Thema oder keine Ursache erkannt',
+  unvollstaendig: 'Partei noch nicht erfasst',
+}
 
 const filterText = (grund: string | null) =>
   grund ? (FILTER_TEXTE[grund as FilterGrund] ?? grund) : null
@@ -136,10 +145,12 @@ function Moderation() {
   const [reiter, setReiter] = useState<Reiter>('offen')
   const [runden, setRunden] = useState<AdminRunde[]>([])
   const [review, setReview] = useState<ReviewEintrag[]>([])
+  const [ohne, setOhne] = useState<ReviewEingabe[]>([])
+  const [themen, setThemen] = useState<Map<number, string>>(new Map())
   const [fehler, setFehler] = useState<string | null>(null)
 
   const laden = useCallback(async () => {
-    const [r, q] = await Promise.all([
+    const [r, q, o, t] = await Promise.all([
       db
         .from('runden')
         .select('id, created_at, problem_text, stichwort, filter_grund, status, freigegeben, abgelehnt, moderiert_am')
@@ -152,11 +163,15 @@ function Moderation() {
         .eq('erledigt', false)
         .order('created_at', { ascending: false })
         .limit(200),
+      db.from('review_eingaben').select('*').order('created_at', { ascending: false }).limit(300),
+      db.from('themen').select('id, name'),
     ])
-    const f = r.error ?? q.error
+    const f = r.error ?? q.error ?? o.error
     setFehler(f ? f.message : null)
     if (r.data) setRunden(r.data as AdminRunde[])
     if (q.data) setReview(q.data as ReviewEintrag[])
+    if (o.data) setOhne(o.data as ReviewEingabe[])
+    if (t.data) setThemen(new Map((t.data as { id: number; name: string }[]).map((x) => [x.id, x.name])))
   }, [db])
 
   useEffect(() => {
@@ -169,6 +184,7 @@ function Moderation() {
       .channel('moderation')
       .on('postgres_changes', { event: '*', schema: 'public', table: 'runden' }, baldLaden)
       .on('postgres_changes', { event: '*', schema: 'public', table: 'review_warteschlange' }, baldLaden)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'review_eingaben' }, baldLaden)
       // Erst laden, wenn der Kanal steht – so geht keine Änderung dazwischen verloren.
       // Klappt Realtime nicht, trotzdem einmal laden.
       .subscribe((status) => {
@@ -199,8 +215,22 @@ function Moderation() {
     await laden()
   }
 
+  // Gesichtet: Der Wortlaut wird sofort gelöscht (sonst nach 30 Tagen automatisch).
+  async function gesichtet(id: number) {
+    const { error } = await db.from('review_eingaben').delete().eq('id', id)
+    if (error) setFehler(error.message)
+    await laden()
+  }
+
   const anzahl = (id: Reiter) =>
-    id === 'pruefung' || id === 'testphase' ? null : id === 'review' ? review.length : runden.filter((r) => reiterVon(r) === id).length
+    id === 'pruefung' || id === 'testphase'
+      ? null
+      : id === 'review'
+        ? review.length
+        : id === 'ohne'
+          ? ohne.length
+          : runden.filter((r) => reiterVon(r) === id).length
+  const themaName = (id: number | null) => (id === null ? null : (themen.get(id) ?? `Thema ${id}`))
   const sichtbar = runden.filter((r) => reiterVon(r) === reiter)
   const jetzt = () => new Date().toISOString()
 
@@ -228,6 +258,37 @@ function Moderation() {
         <Pruefung />
       ) : reiter === 'testphase' ? (
         <Testphase />
+      ) : reiter === 'ohne' ? (
+        <>
+          <p className="admin-hinweis">
+            Runden ohne Wertung mit den Eingaben im Wortlaut – zum Prüfen, ob die KI richtig eingeordnet hat. Nur hier
+            sichtbar, nie öffentlich. „Gesichtet“ löscht den Eintrag; spätestens nach 30 Tagen wird er automatisch
+            gelöscht.
+          </p>
+          {ohne.length === 0 && <p className="admin-leer">Nichts offen.</p>}
+          <ul className="admin-liste">
+            {ohne.map((e) => (
+              <li key={e.id} className="admin-eintrag">
+                {e.eingaben.map((t, i) => (
+                  <p key={i} className="admin-text">
+                    {e.eingaben.length > 1 && <span className="admin-klein">{i === 0 ? 'Eingabe' : `Antwort ${i}`}: </span>}
+                    {t}
+                  </p>
+                ))}
+                {e.zusammenfassung && <p className="admin-klein">Kurzfassung der KI: {e.zusammenfassung}</p>}
+                <div className="admin-aktionen">
+                  <span className="admin-klein">
+                    {zeit(e.created_at)} · {GRUND_TEXTE[e.grund] ?? e.grund}
+                    {themaName(e.thema_id) && ` · ${themaName(e.thema_id)}`}
+                  </span>
+                  <button className="knopf knopf-klein" onClick={() => gesichtet(e.id)}>
+                    Gesichtet
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </>
       ) : reiter === 'review' ? (
         <>
           <p className="admin-hinweis">

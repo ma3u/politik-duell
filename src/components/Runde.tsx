@@ -39,6 +39,8 @@ function forderungAntwort(themaName: string | null): string {
   )
 }
 
+const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
+
 function werteAus(
   analyse: AnalyseAntwort,
   nr: number,
@@ -91,6 +93,11 @@ export function Runde({
   onErgebnis: (r: RundenErgebnis) => void
 }) {
   const [verlauf, setVerlauf] = useState<Nachricht[]>([])
+  /**
+   * Gespräch des letzten Versuchs, der ohne Wertung endete (Haltung, Forderung, Grenze): bleibt oben stehen,
+   * damit man sieht, was man eingegeben hat – bis zur nächsten Eingabe. Geht nicht an die KI.
+   */
+  const [vorher, setVorher] = useState<Nachricht[]>([])
   const [hinweis, setHinweis] = useState<string | null>(null)
   const [eingabe, setEingabe] = useState('')
   const [denkt, setDenkt] = useState(false)
@@ -125,7 +132,9 @@ export function Runde({
     const text = eingabe.trim()
     if (!text || denkt) return
     const neu: Nachricht[] = [...verlauf, { von: 'spieler', text }]
+    const vorherAlt = vorher
     setVerlauf(neu)
+    setVorher([])
     setEingabe('')
     setHinweis(null)
     setFehler(null)
@@ -143,6 +152,7 @@ export function Runde({
     } catch (err) {
       // Eingabe zurückgeben, damit sie erneut gesendet werden kann.
       setVerlauf(verlauf)
+      setVorher(vorherAlt)
       setEingabe(text)
       setFehler(err instanceof AnalyseFehler ? err.message : 'Die Einordnung hat gerade nicht geklappt.')
       return
@@ -166,8 +176,9 @@ export function Runde({
     }
 
     if (analyse.typ === 'grenze') {
-      // Die Äußerung verschwindet aus dem Verlauf; die Runde beginnt von vorn.
+      // Die Runde beginnt von vorn; die eigene Eingabe bleibt zum Nachlesen stehen (die Antwort gibt sie nicht wieder).
       setVerlauf([])
+      setVorher(neu)
       setZusammenfassung(null)
       setHinweis(GRENZE_ANTWORT)
       return
@@ -183,6 +194,7 @@ export function Runde({
       // Runde ohne Wertung – ein neues Problem kann genannt werden.
       const thema = daten.themen.find((t) => t.id === analyse.thema_id)?.name ?? null
       setVerlauf([])
+      setVorher(neu)
       setZusammenfassung(null)
       // Haltung zu einer vollständig erfassten Wertfrage: die Haltungskarte (einmal je Runde), sonst ein Satz.
       const karte =
@@ -202,7 +214,7 @@ export function Runde({
         )
       }
     } else {
-      onErgebnis(werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten))
+      onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
     }
     setKarten(rundenKarten)
   }
@@ -227,12 +239,15 @@ export function Runde({
     } finally {
       setDenkt(false)
     }
-    onErgebnis(
-      werteAus(
+    // Angetippt nach einer Nachfrage: das bisherige Gespräch; nach einer Haltungskarte: die Haltung davor.
+    const eingaben = spielerTexte(verlauf.length ? verlauf : vorher)
+    onErgebnis({
+      ...werteAus(
         { ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung },
         nr, sprecher, spieler, daten, forderung ?? undefined, karten,
       ),
-    )
+      ...(eingaben.length ? { eingaben } : {}),
+    })
   }
 
   const angebot = daten.themen.find((t) => t.id === auswahlThema) ?? null
@@ -252,6 +267,11 @@ export function Runde({
       <ThemenHinweis parteiIds={[spieler[0].partei.id, spieler[1].partei.id]} />
 
       <div className="verlauf" aria-live="polite">
+        {vorher.map((n, i) => (
+          <p key={`v${i}`} className={`blase blase-${n.von}`}>
+            {n.text}
+          </p>
+        ))}
         {hinweis && <p className="blase blase-ki">{hinweis}</p>}
         {verlauf.map((n, i) => (
           <p key={i} className={`blase blase-${n.von}`}>

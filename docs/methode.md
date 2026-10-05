@@ -18,7 +18,7 @@ Fünf Regeln gelten ohne Ausnahme:
 2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und ordnet ein Problem einem Thema und seinen Ursachen zu. Die Punkte kommen immer aus einer geprüften Datenbank.
 3. **Jede Bewertung hat einen Beleg.** Quellen und Links stammen nur aus der Datenbank, die KI erfindet keine. Jede Maßnahme ist mit wörtlichem Zitat und Seitenangabe im Wahlprogramm belegt.
 4. **Forderung ist nicht gleich Problem.** Sagt jemand „weniger X“, fragt das Spiel nach dem konkreten Alltagsproblem dahinter. Bewertet wird die Lösung für das Problem, nicht die Forderung.
-5. **Datenschutz.** Politische Meinungen sind besonders geschützte Daten (Art. 9 DSGVO). Es gibt keine Konten, es werden keine IP-Adressen und keine Sprachaufnahmen gespeichert, nur der anonyme Problemtext.
+5. **Datenschutz.** Politische Meinungen sind besonders geschützte Daten (Art. 9 DSGVO). Es gibt keine Konten, es werden keine IP-Adressen und keine Sprachaufnahmen gespeichert, nur der anonyme Problemtext. Endet eine Runde ohne Wertung, wird der Wortlaut der Eingaben für höchstens 30 Tage zur Prüfung der Einordnung aufbewahrt, nur für Admins sichtbar und ohne Verbindung zur Runde.
 
 ## Datengrundlage
 
@@ -140,7 +140,7 @@ Es zählt immer genau ein Programm je Partei und Ursache. So hat keine Partei me
 | Spieler:in nennt eine Haltung, die eindeutig eine erfasste Wertfrage berührt, und alle Parteien sind dazu erfasst | Haltungskarte (höchstens eine je Runde, am Ende unter „Worüber ihr gesprochen habt“): die Frage, die Position jeder Partei aus dem Bundesprogramm („Ja“, „Nein“, „Teils“ oder „Keine Aussage im Programm“) mit Kurzfassung, Wortlaut und Seite, dazu die Zielkonflikte beider Seiten und verwandte Themen zum Antippen (siehe „Forderungen und Haltungen“) | keine |
 | Haltung zu einer Wertfrage, für die noch nicht alle Parteien erfasst sind | keine Karte, nur der Satz zur persönlichen Haltung | keine |
 | Spieler:in bleibt nach zwei Nachfragen bei einer Forderung | Forderung wird als verstanden benannt, mit Thema, falls erkennbar; neues Problem möglich. Sie wird nicht zum Problem umgedeutet und kommt nicht in die Warteschlange für neue Themen | keine |
-| Spieler:in spricht einer Gruppe die Menschenwürde oder gleiche Rechte ab, ruft zu Gewalt auf oder beleidigt Personen | „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte; neues Problem möglich. Vom Inhalt wird nichts gespeichert (siehe „Grenze“) | keine |
+| Spieler:in spricht einer Gruppe die Menschenwürde oder gleiche Rechte ab, ruft zu Gewalt auf oder beleidigt Personen | „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte; neues Problem möglich. In der Runde wird vom Inhalt nichts gespeichert; der Wortlaut nur zur Prüfung (siehe „Grenze“) | keine |
 
 0 Punkte heißt nur: Im Wahlprogramm mit dem angegebenen Stand steht dazu nichts – nicht, dass sich die Partei nie dazu geäußert hätte. Fehlende Daten kosten keine Partei einen Punkt.
 
@@ -152,7 +152,7 @@ Das Spiel nimmt jede Äußerung ernst, auch zugespitzte. Eine Grenze gibt es nur
 - zu Gewalt aufrufen oder
 - Personen beleidigen.
 
-Darauf geht das Spiel nicht ein: keine Nachfrage, keine Forderungs- oder Haltungskarte, keine Punkte. Die Antwort belehrt nicht und gibt die Äußerung nicht wieder, sondern lädt zu einem Problem aus dem Alltag ein; die Runde geht weiter. Gespeichert wird nur, dass es eine solche Runde gab – ohne Zusammenfassung, Stichwort oder Thema.
+Darauf geht das Spiel nicht ein: keine Nachfrage, keine Forderungs- oder Haltungskarte, keine Punkte. Die Antwort belehrt nicht und gibt die Äußerung nicht wieder, sondern lädt zu einem Problem aus dem Alltag ein; die Runde geht weiter. In der Runde gespeichert wird nur, dass es sie gab – ohne Zusammenfassung, Stichwort oder Thema. Damit sich prüfen lässt, ob die Grenze richtig gezogen wurde, steht der Wortlaut wie bei allen Runden ohne Wertung getrennt davon in der Admin-Ansicht (Tabelle `review_eingaben`, ohne Parteien und ohne Verbindung zur Runde, gelöscht beim Sichten oder nach 30 Tagen).
 
 - **Begründung:** Art. 1 GG (Menschenwürde) und Art. 3 GG (Gleichheit). Über Lösungen für Alltagsprobleme lässt sich streiten; ob Menschen gleiche Würde und gleiche Rechte haben, ist im Spiel nicht verhandelbar.
 - **Für alle Richtungen gleich.** Es zählt, was gesagt wird, nicht gegen wen oder aus welcher politischen Richtung.

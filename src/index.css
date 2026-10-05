@@ -631,6 +631,17 @@ textarea {
 }
 
 /* ---------- Auflösung ---------- */
+.deine-eingabe {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 14px;
+}
+.deine-eingabe-label {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
 .problem-zitat {
   margin: 0 0 6px;
   font-family: var(--schrift-titel);
