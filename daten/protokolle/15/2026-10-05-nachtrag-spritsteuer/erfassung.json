@@ -1,0 +1,347 @@
+{
+  "thema_id": 15,
+  "nachtrag": {
+    "forderung": "Steuern und Abgaben auf Sprit senken",
+    "richtungen": {
+      "1502": [
+        "Energiesteuer auf Kraftstoffe dauerhaft senken",
+        "Kraftstoffbesteuerung anheben, Steuervorteile abbauen"
+      ]
+    }
+  },
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel ‚Mobilität' (S. 74–75) und Fundstelle S. 36 gelesen. S. 36 behandelt Energiesteuerbefreiung für alternative Kraftstoffe in der Land- und Forstwirtschaft, nicht Senkung der Energiesteuer auf Sprit für Autofahrer. Im Mobilität-Kapitel keine konkrete Zusage zur dauerhaften Senkung der Energiesteuer auf Kraft stoffe gefunden."
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Klimaschutz, den sich jeder leisten kann' (S. 33) und 'Pünktliche Bahn und gute Mobilität für alle' (S. 34-36) vollständig gelesen; keine Zusagen zu Energiesteuer, Mineralölsteuer, Kraftstoffsteuer, Spritsteuer, Tankrabatt oder Dieselprivileg gefunden. Die SPD setzt bei Autofahren auf Elektromobilität, Ladeinfrastruktur-Ausbau und CO₂-Preis als Steuerungsinstrument, nicht auf Reduktion der Kraftstoffbesteuerung."
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Eine mobile Gesellschaft' (S. 46–51) und Abschnitte zu Energiepreisen und Klimageld (S. 40–45) gelesen. Keine Zusage zur Senkung der Energiesteuer auf Kraftstoffe oder zum Abbau des Dieselprivilegs. Erwähnt sind E-Mobilität-Förderung, ÖPNV-Ausbau und Klimageld; diese gehören zu anderen Ursachen."
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Nachtrag zu Ursache 1502 (Energiesteuer auf Kraftstoffe senken): Die einzige Fundstelle (S. 17: Energiesteuer-Passage) ist bereits erfasst. Keine neuen Zusagen zu diesem Lösungsweg gefunden."
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Lösungsweg bereits erfasst: S. 14 ‚Reduzierung der Energiesteuer und Senkung der Stromsteuer auf das Minimum' ist bereits als Maßnahme zu Ursache 1502 erfasst. Keine weiteren Fundstellen zum Lösungsweg gefunden (Suche nach energiesteuer, mineralölsteuer, kraftstoffsteuer, etc. ergab nur diesen einen Treffer auf S. 14)."
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 9 ‚Mobilität für alle' (S. 36–37) und Kapitel 1 ‚Leben bezahlbar machen' (S. 6–7) sowie Fundstelle S. 13 gelesen. Keine konkrete Handlungszusage zu Energiesteuer auf Kraftstoffe (Richtung 1: Senken – 0 Treffer) oder Kraftstoffbesteuerung/Steuervorteile (Richtung 2): S. 13 nennt nur vage ‚klimaschädliche Subventionen' ohne Bezug zu Spritsteuer. Kapitel 9 kritisiert höheren CO2-Preis der Ampel, fordert aber nicht spezifisch Energiesteuer senken oder anheben. Kapitel 1 behandelt nur Strom/Heizenergie und Klimageld, nicht Spritsteuer.",
+      "nicht_erfasst": [
+        {
+          "ursache": 1502,
+          "seiten": [
+            13,
+            36,
+            37,
+            6,
+            7
+          ],
+          "grund": "Keine konkrete Zusage zur Energiesteuer auf Kraftstoffe oder Kraftstoffbesteuerung – nur allgemeine Kritik am CO2-Preis und vage Aussage zu ‚klimaschädlichen Subventionen'"
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Ursache 1502 (Energiesteuer auf Kraftstoffe senken): Programm behandelt Spritpreise nur allgemein (S. 29: allgemeines Ziel \"preiswerte Kraftstoffe\"), konkrete Handlungszusage zur Energiesteuer oder Mineralolsteuer fehlt. Einzige Massnahme zur Spritpreis-Reduktion ist CO2-Preis-Abschaffung (S. 10, bereits erfasst). Kapitel Mobilitat/Verkehr (S. 29-31) gelesen.",
+      "nicht_erfasst": [
+        {
+          "ursache": 1502,
+          "seiten": [
+            29
+          ],
+          "grund": "Stelle zu \"Horrende Spritpreise\" (S. 29) ist Argernis-Beschreibung (Autobahnraststatten-Monopol), nicht Zusage zur Energiesteuer. Anschliesendes Ziel \"preiswerte Kraftstoffe\" ohne konkrete Massnahme."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1502": {
+      "Energiesteuer auf Kraftstoffe dauerhaft senken": [
+        "energiesteuer",
+        "mineralölsteuer",
+        "kraftstoffsteuer",
+        "spritsteuer",
+        "steuer auf kraftstoff",
+        "steuern auf sprit",
+        "steuern auf benzin",
+        "mehrwertsteuer auf kraftstoff",
+        "tankrabatt",
+        "spritpreis",
+        "benzinpreis",
+        "dieselpreis"
+      ],
+      "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": [
+        "dieselprivileg",
+        "steuervorteil für diesel",
+        "energiesteuer erhöh",
+        "kraftstoffpreis erhöh",
+        "klimaschädliche subvention",
+        "diesel angleich"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "0b8725c3e6c331fcb2daba3b19332c0dc597697edf2e880d71b8792b340a2c68",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 1,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 0,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 0,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 0,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 0,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 0,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 2,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 0,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 1,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 0,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 0,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 0,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 1,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "1501": {},
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 0,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 1,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {},
+          "1504": {},
+          "1505": {}
+        }
+      }
+    ]
+  }
+}
