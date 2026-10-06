@@ -1,0 +1,27 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Medienkompetenz wird an allen Schulen verbindlicher Bestandteil des Unterrichts; Schülerinnen und Schüler lernen kritischen und verantwortungsvollen Umgang mit Medien.",
+      "ursachen_ids": [3303],
+      "zitat": "Medienbildung ist Demokratiebildung. Deshalb wollen wir Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Lehrkräfte werden im Bereich Digitalisierung und Medienbildung verbindlich und systematisch qualifiziert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3303],
+      "zitat": "Deshalb stärken wir die Qualifizierung von Lehrkräften im Bereich Digitalisierung und Medienbildung verbindlich und systematisch.",
+      "seite": 60
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis, Kapitel Bildung (S. 55-64), Kinder- und Jugendschutz (S. 12-13), Fundstellen S. 57, 60, 63; Grep nach Medien, Jugendschutz, Schlaf, Handy, Smartphone, Eltern, Bildschirm.
+Nicht erfasst:
+- S. 57: Medienbildung als Teil der Rahmenlehrpläne ist nur ein Ziel ("gehören dazu"), keine eigene Zusage.
+- S. 12: Bekämpfung digitaler Gewalt und Mobbing in sozialen Medien gehört nach R2 zu Mobbing bzw. Hass im Netz.
+- 3302: keine Treffer, nichts zu Nutzungszeiten, Handyregeln oder Schlaf im Programm.
+Grenzfall: Lehrkräftequalifizierung (S. 60) zielt auf Digitalisierung im Unterricht, nur teils auf Medienbildung für Kinder; daher ursachen_offen.

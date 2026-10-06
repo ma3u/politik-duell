@@ -1,0 +1,38 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Medienbildung wird in allen Schulfächern fest verankert und weiter ausgebaut.",
+      "ursachen_ids": [3303],
+      "zitat": "Digitale Lernmittel, Medienbildung und barrierefreie Systeme werden weiter ausgebaut. Medienbildung erhält in allen Fächern einen festen Stellenwert.",
+      "seite": 19
+    },
+    {
+      "beschreibung": "Beratungsangebote für Familien werden gebündelt und zu Familienberatungszentren weiterentwickelt, auch angesichts veränderter Mediennutzung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3303],
+      "zitat": "Gesellschaftliche Veränderungen wirken in Familien oft besonders stark: finanzielle Belastungen, veränderte Mediennutzung, brüchige soziale Netzwerke. Wir lassen Familien damit nicht allein. Beratungsangebote sollen gebündelt und zu Familienberatungszentren weiterentwickelt werden, um Hilfe aus einer Hand zu ermöglichen.",
+      "seite": 26
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3302,
+      "seiten": [19, 26, 41],
+      "grund": "Keine Zusage zu Nutzungszeiten, Schlaf oder Handyregeln in Schulen; die Fundstellen betreffen Medienbildung, Familienberatung und E-Sport."
+    }
+  ]
+}
+
+Protokoll
+
+Gelesen: Seiten 1-6 (kein Inhaltsverzeichnis), Bildungskapitel S. 18-20, Familienkapitel S. 26-27, Demokratie S. 35-36, Sport/E-Sport S. 40-41, dazu alle Fundstellen des Auftrags und Volltextsuche nach Handy, Smartphone, Bildschirm, Schlaf, Jugendmedienschutz, Jugendschutz, Plattform, Social Media.
+
+Nicht erfasst:
+- S. 19: "Wir unterstützen einen stärker regulierten Zugang zu Social-Media-Angeboten für Kinder und Jugendliche. Ziel ist ein altersdifferenziertes Modell mit klaren Schutzstufen und verbindlichen Plattformregeln" - gehört nach R1 zu Ursache 3301, die für dieses Landesprogramm nicht zulässig ist.
+- S. 35: "Medienbildung wird weiter ausgebaut - insbesondere zu Hass im Netz, Desinformation und gezielten Kampagnen." - Hass im Netz gehört nach R2 zu einem anderen Thema.
+- S. 41: E-Sport-Leitlinie für die Förderung, die Vermittlung von Medienkompetenz und Suchtprävention einschließt - Medienkompetenz nur als Teil einer Förderleitlinie, Spielsuchtprävention gehört nach R2 zu Sucht und Glücksspiel.
+- S. 26 (Familienberatung): als Grenzfall in ursachen_offen 3303 eingetragen, weil die Beratung allgemein für Familien gilt und Mediennutzung nur als Anlass genannt wird.
+
+Richtungen ohne Maßnahme: Nutzungszeiten begrenzen, Familiäre Regeln und Aufklärung (3302); Elterliche Verantwortung und technische Hilfen (3303).

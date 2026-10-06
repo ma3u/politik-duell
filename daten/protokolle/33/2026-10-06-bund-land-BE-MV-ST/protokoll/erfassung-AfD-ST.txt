@@ -1,0 +1,31 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Smartphone-Nutzung an Schulen bis einschließlich Klasse 10 untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3302],
+      "zitat": "Außerdem werden wir entsprechend den Empfehlungen der Leopoldina die Nutzung von Smartphones bis einschließlich Klasse 10 untersagen.",
+      "seite": 79
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3303, "seiten": [16, 20, 79], "grund": "Elternberatung nur zum Vorlesen (S. 20), nicht zur Begleitung der Mediennutzung; Elternhilfe S. 16 allgemein; S. 79 betrifft Unterricht." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 248-256), Kapitel I Familie und Kinder (S. 10-23), IV Schulbildung Punkte 12-17 (S. 78-80), XV Medien (S. 222-224); Volltextsuche nach Handy, Smartphone, Medienkompetenz, Bildschirm, soziale Medien, Jugendschutz, Altersgrenze, Schlaf u. a.
+
+Grenzfall 3302: Das Smartphone-Verbot (S. 79) wird mit Konzentration und Merkfähigkeit begründet, nicht mit Nutzungsdauer oder Schlaf; nach R1 offen, daher ursachen_offen.
+
+Nicht erfasst:
+- S. 20 (Vorlesen): Kampagne, Lehrplananpassung und Beratungsangebote für Eltern gelten dem Vorlesen; digitale Medien werden nur als Ersatz genannt, die Zusage setzt nicht an der Begleitung der Mediennutzung an.
+- S. 79: Digitale Medien im Unterricht erst an weiterführenden Schulen und nur selektiv einsetzen – Ausstattung und Unterrichtsmethode der Schulen (R2).
+- S. 80: Informatik als Pflichtfach – kein Bezug zu 3302/3303.
+- S. 222-223: NetzDG zurücknehmen, Zensur im Internet verhindern – Meinungsfreiheit, kein Jugendmedienschutz; Hass im Netz gehört nach R2 zu einem anderen Thema.
+- S. 16: Beratungs- und Unterstützungsstrukturen für familiäre Solidarität – nichts zur Mediennutzung.
+
+Richtungen ohne Maßnahme: familiäre Regeln und Aufklärung, Medienbildung und Beratung für Eltern, technische Hilfen (keine Treffer, keine Fundstellen). Seiten ohne Text lagen nicht in den passenden Kapiteln (Kapiteltrennseiten).

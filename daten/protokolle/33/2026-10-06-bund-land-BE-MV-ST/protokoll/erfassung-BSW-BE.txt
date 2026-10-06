@@ -1,0 +1,53 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Grundschulklassen ohne Bildschirme einrichten, um Aufmerksamkeit, Gedächtnis und Lesekompetenz zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3302],
+      "zitat": "In Grundschulen sollen sogenannte „Detox-Klassen“ ohne Bildschirme eingerichtet werden, um Aufmerksamkeit, Gedächtnisleistung und Lesekompetenz zu fördern.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Smartphones im Unterricht grundsätzlich nicht nutzen und vor dem Unterricht wegschließen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3302],
+      "zitat": "Smartphones sollen während des Unterrichts grundsätzlich nicht genutzt werden und sind vor dem Unterricht wegzuschließen.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Verbindlichen digitalen Führerschein mit Nachweis von Medien-, Datenschutz- und Informationskenntnissen bis Ende Klasse 10 einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3303],
+      "zitat": "Wir fordern, dass alle Schülerinnen und Schüler am Ende der 10. Klasse einen verbindlichen digitalen Führerschein erwerben, der Kenntnisse im Umgang mit Medien, Datenschutz und Informationsbewertung nachweist.",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3302,
+      "seiten": [2, 26],
+      "grund": "Seite 2 nur Forderung, Smartphones aus Grundschul-Klassenzimmern zu verbannen (Wissenserwerb, keine Nutzungszeit/Schlaf); Seite 26 nur Bewegungsangebote statt Bildschirmzeit, keine Regel zu Nutzungsdauer oder Schlaf."
+    },
+    {
+      "ursache": 3303,
+      "seiten": [16, 26],
+      "grund": "Keine Beratung oder Unterstützung für Eltern; nur schulische Medienbildung (als offener Fall erfasst)."
+    }
+  ]
+}
+
+Protokoll
+
+Gelesen: Seiten 1–5 (Vorwort, Einleitung; Inhaltsverzeichnis gibt es nicht), Kapitel Bildung S. 14–17 (Digitalisierung und Medienbildung), Sport S. 26, Schulsicherheit S. 40. Volltextsuche nach Smartphone, Handy, Bildschirm, soziale Medien, Jugendschutz, Medienkompetenz, Elternberatung, Elternarbeit.
+
+Nicht erfasst:
+- S. 2: Smartphones und Tablets aus den Klassenzimmern der Grundschulen verbannen – Wissenserwerb, nicht Nutzungszeit oder Schlaf; inhaltlich dieselbe Zusage wie S. 16.
+- S. 16: „Digitale Kompetenzen sollen in allen Fächern vermittelt werden“ und „Digitale Geräte dürfen nicht dominieren“ – Leitbild ohne konkrete Zusage.
+- S. 26: Kinder und Jugendliche von den Bildschirmen weg in Bewegung bringen, Sportangebote im Kiez ausbauen – Sportförderung, kein Ansatz an Schlaf oder elterlicher Begleitung.
+- S. 40: Cybermobbing – nach R2 anderes Thema.
+- Kapitel Digitalisierung inklusiv und fair: Zugang zu Smartphone/Computer, nicht Thema.
+
+Grenzfälle: Handyregeln und Detox-Klassen in der Grundschule haben keinen ausdrücklichen Bezug zu Nutzungsdauer oder Schlaf (R1 3302); der digitale Führerschein ist Medienbildung für Schüler, nicht für Eltern (R1 3303). Beide deshalb in ursachen_offen.
+Nicht eingeordnet: Plattformpflichten, Altersgrenzen, Jugendmedienschutz (3301 ist keine Landesursache) – im Programm nicht gefunden.

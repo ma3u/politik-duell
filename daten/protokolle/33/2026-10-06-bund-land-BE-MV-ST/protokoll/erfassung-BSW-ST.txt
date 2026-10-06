@@ -1,0 +1,30 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Verbindliches Smartphone-Verbot im Schulalltag, um Ablenkung und digitale Abhängigkeiten zu verringern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3302],
+      "zitat": "Außerdem setzen wir uns für ein verbindliches Smartphone-Verbot im Schulalltag ein, um Ablenkung, Leistungsabfall, soziale Konflikte und digitale Abhängigkeiten zu reduzieren.",
+      "seite": 45
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3303, "seiten": [48, 59], "grund": "S. 48 nennt Familienzentren mit Elternberatung nur als fehlend (Lagebeschreibung), S. 59 den problematischen Umgang mit sozialen Medien ohne Zusage zu Medienbildung oder Elternunterstützung." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2-3), Kapitel 4.2 Gute Bildung (S. 44-49, darunter Gute Schulen für alle Kinder, Beitragsfreie Kitas, Soziale Arbeit stärkt Bildung), S. 59 (Psychische Gesundheit). Zusätzlich Volltextsuche nach Medien-, Handy-, Smartphone-, Social-Media-, Bildschirm- und Jugendschutz-Begriffen im ganzen Programm.
+
+Grenzfall 3302: Das Smartphone-Verbot im Schulalltag nennt Ablenkung und digitale Abhängigkeiten, aber keine Nutzungsdauer oder Schlaf; R1 verlangt für Handyregeln in Schulen einen Bezug zur Nutzungsdauer. Deshalb in ursachen_offen.
+
+Nicht erfasst:
+- S. 45: Ziel-Listenpunkt "Keine Smartphones und Tablets im Unterricht bis Klasse 8" (gleichartig zum Smartphone-Verbot, nicht zusätzlich erfasst; Bezug zu Unterricht, nicht zu Nutzungszeit).
+- S. 45: "Digitalisierung verantwortungsvoll und altersgerecht gestalten" (allgemeines Ziel ohne konkrete Zusage).
+- S. 44-45: Einsatz digitaler Geräte und KI im Unterricht (Schulausstattung, nach R2 nicht dieses Thema).
+- S. 59: Ausbau des sozialpsychiatrischen Dienstes (Behandlung psychischer Belastung, nicht Mediennutzung).
+
+Richtungen ohne Maßnahme: Familiäre Regeln und Aufklärung (3302), Medienbildung und Beratung ausbauen (3303), Elterliche Verantwortung und technische Hilfen (3303).
