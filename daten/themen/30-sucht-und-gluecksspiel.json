@@ -1,0 +1,61 @@
+{
+  "id": 30,
+  "name": "Sucht und Glücksspiel",
+  "beschreibung": "Alkohol, Tabak, Drogen, Medikamente oder Glücksspiel beeinträchtigen Gesundheit, Beziehungen und finanzielle Sicherheit. Betroffene erleben Kontrollverlust oder Schwierigkeiten, passende Hilfe zu erhalten.",
+  "ziel": "Betroffene können Abhängigkeit und gesundheitliche, soziale sowie finanzielle Schäden vermeiden oder überwinden und ihren Alltag selbstbestimmt gestalten.",
+  "schlagwoerter": ["sucht", "alkohol", "trinken", "rauchen", "tabak", "drogen", "medikamentensucht", "spielsucht", "spielhalle", "onlinecasino", "sportwetten"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3001,
+      "beschreibung": "Leichte Verfügbarkeit von Alkohol hängt mit höherem Konsum zusammen; der Zusammenhang unterscheidet sich nach Verkaufsstelle und Altersgruppe (Review von 32 Reviews, 2025)",
+      "alltag": "Alkohol ist überall und rund um die Uhr zu bekommen",
+      "quelle_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12753591/fullTextXML",
+      "ebene": "land",
+      "schlagwoerter": ["alkohol kaufen", "kiosk", "tankstelle", "oeffnungszeiten", "jugendschutz"]
+    },
+    {
+      "id": 3002,
+      "beschreibung": "Niedrigere Preise gehen mit höherer Nachfrage nach Alkohol und Tabak einher; nicht alle Konsumgruppen reagieren gleich stark (Review, 2024)",
+      "alltag": "Alkohol und Zigaretten sind so billig, dass ich mehr konsumiere",
+      "quelle_url": "https://europepmc.org/articles/PMC11088175",
+      "ebene": "bund",
+      "schlagwoerter": ["billiger alkohol", "billige zigaretten", "rabatte", "alkoholpreise", "tabakpreise"]
+    },
+    {
+      "id": 3003,
+      "beschreibung": "Alkohol- und Tabakwerbung erhöht bei Jugendlichen die Bereitschaft zum Konsum; bei hoher Selbstkontrolle ist der Effekt geringer (Studie, 2010)",
+      "alltag": "Mein Kind sieht überall Werbung für Alkohol und Zigaretten",
+      "quelle_url": "https://europepmc.org/articles/PMC3719172",
+      "ebene": "bund",
+      "schlagwoerter": ["alkoholwerbung", "tabakwerbung", "werbung", "gruppendruck", "selbstkontrolle", "praevention"]
+    },
+    {
+      "id": 3004,
+      "beschreibung": "Schnelle, leicht zugängliche Glücksspiele erleichtern häufige Einsätze und hohe Verluste; Werbung für Sportwetten hängt mit mehr Spielen zusammen (Reviews 2021 und 2025)",
+      "alltag": "Ich verspiele in der Spielhalle oder online mein Geld und komme nicht davon los",
+      "quelle_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8997226/fullTextXML",
+      "ebene": "land",
+      "schlagwoerter": ["spielautomaten", "spielhalle", "onlinecasino", "sportwetten", "livewetten", "wettwerbung", "spielverluste"]
+    },
+    {
+      "id": 3005,
+      "beschreibung": "Auf dem illegalen Drogenmarkt sind Wirkstoffe und Dosierungen unbekannt; die meisten der mindestens 7.600 drogenbezogenen Todesfälle in der EU 2024 betrafen mehrere Substanzen",
+      "alltag": "Ich weiß nicht, was in den Drogen steckt, die ich nehme",
+      "quelle_url": "https://www.euda.europa.eu/publications/european-drug-report/2026/drug-situation-in-europe-up-to-2026_en",
+      "ebene": "bund",
+      "schlagwoerter": ["gestreckte drogen", "ueberdosis", "mischkonsum", "gefaelschte tabletten", "drogen testen"]
+    },
+    {
+      "id": 3006,
+      "beschreibung": "Scham und erwartete Abwertung halten von Hilfe ab: 36,1 % von 119 stationär behandelten Menschen mit Suchterkrankung in Frankfurt mieden notwendige medizinische Behandlung (2021 bis 2024)",
+      "alltag": "Ich traue mich nicht, wegen meiner Sucht Hilfe zu suchen",
+      "quelle_url": "https://europepmc.org/articles/PMC12828365",
+      "ebene": "land",
+      "schlagwoerter": ["suchthilfe", "suchtberatung", "schaemen", "entzug", "suchtbehandlung", "medikamentensucht", "hilfe suchen"]
+    }
+  ]
+}

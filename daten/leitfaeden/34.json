@@ -1,0 +1,30 @@
+{
+  "thema_id": 34,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 34), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3401, 3402, 3403],
+      "text": "Zu 3401 gehören Regeln für Kontrollen und Befugnisse der Polizei (anlasslose Kontrollen, Kontrollbescheinigung, Kontrollorte), zu 3402 Einsatzpraxis, Kommunikation, Aus- und Fortbildung, zu 3403 Beschwerdestellen, unabhängige Kontrolle, Kennzeichnung und Dokumentation von Einsätzen. Es zählen Maßnahmen für alle Polizeikontakte; ein Bezug zu jungen Menschen im Zitat ist nicht nötig."
+    },
+    {
+      "nr": 2,
+      "text": "Ausstattung der Polizei, Zahl der Polizistinnen und Polizisten und Aufklärung von Straftaten gehören zu Sicherheit. Diskriminierende Auswahl bei Kontrollen und Schutzlücken im öffentlichen Recht gehören zu Diskriminierung im Alltag. Platzverweise wegen Lärm gehören zu Freizeitangebote und Treffpunkte für Jugendliche."
+    }
+  ],
+  "suchbegriffe": {
+    "3401": {
+      "Kontrollen begrenzen und nachvollziehbar machen": ["anlasslose kontrollen", "verdachtsunabhängige kontrollen", "kontrollquittung", "racial profiling", "kontrollbefugnisse begrenzen", "kontrollbescheinigung", "gefahrengebiete"],
+      "Gezielte Kontrollen für Sicherheit ermöglichen": ["schleierfahndung", "kontrollbefugnisse", "kriminalitätsschwerpunkte", "kontrollen verstärken", "videoüberwachung"]
+    },
+    "3402": {
+      "Kommunikation und Fortbildung der Polizei": ["deeskalation", "polizeiausbildung", "fortbildung der polizei", "interkulturelle kompetenz", "kommunikationstraining", "bürgernahe polizei", "bodycam"],
+      "Handlungsfähigkeit und Rückhalt der Polizei": ["rückhalt für die polizei", "einsatztraining", "handlungssicherheit", "schutz für einsatzkräfte"]
+    },
+    "3403": {
+      "Unabhängige Beschwerde- und Kontrollstellen": ["polizeibeauftragte", "unabhängige beschwerdestelle", "unabhängige ermittlungsstelle", "kennzeichnungspflicht", "polizeikontrolle", "ombudsstelle polizei", "beschwerdemanagement"],
+      "Dokumentation und faire Verfahren": ["dokumentation von einsätzen", "bodycams", "rechtsstaatliche verfahren", "gegenanzeige", "faire verfahren für beamte"]
+    }
+  }
+}

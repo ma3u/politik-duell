@@ -1,0 +1,30 @@
+{
+  "thema_id": 37,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 37), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3701, 3702, 3703],
+      "text": "Zu 3701 gehören Sanierung und Neubau von Sportstätten und Sporthallen, zu 3702 Betriebs- und Nutzungskosten (Hallenmieten, Energiekosten, Zuschüsse für den Betrieb), zu 3703 Förderung der Vereine selbst (Vereinsförderung, Ehrenamt, Entlastung von Vereinen)."
+    },
+    {
+      "nr": 2,
+      "text": "Sanierung von Schulgebäuden gehört zu Schule, Straßen und Wege zu Straßen und Brücken, Kosten für Freizeit von Kindern zu Freizeitangebote und Treffpunkte für Jugendliche. Allgemeine Sportförderung (Spitzensport, Großveranstaltungen) ohne Bezug zu Vereinen oder Sportstätten ist keine Maßnahme dieses Themas."
+    }
+  ],
+  "suchbegriffe": {
+    "3701": {
+      "Sanierung und Neubau von Sportstätten fördern": ["sportstätten", "sanierung sportstätten", "sporthallen", "sportstättenförderung", "sanierungsprogramm sport", "goldener plan", "schwimmbäder", "sportinfrastruktur"],
+      "Bestand priorisieren und gemeinsam nutzen": ["bestand priorisieren", "gemeinsame nutzung", "mehrfachnutzung von hallen", "interkommunale sportstätten", "hallenbelegung"]
+    },
+    "3702": {
+      "Betriebskosten und Hallenentgelte fördern oder senken": ["hallenentgelt", "nutzungsentgelt", "betriebskostenzuschuss", "energiekosten sportvereine", "kostenfreie hallennutzung", "hallenmiete", "entgeltfreie nutzung"],
+      "Eigenverantwortung und Auslastung": ["auslastung", "nutzungsgebühr", "eigenverantwortung", "kostensenkung", "wirtschaftlicher betrieb"]
+    },
+    "3703": {
+      "Vereinsförderung und Entlastung des Ehrenamts": ["vereinsförderung", "sportvereine", "ehrenamt im sport", "übungsleiterpauschale", "ehrenamtspauschale", "gemeinnützigkeit", "vereine entlasten", "sportförderung"],
+      "Eigeneinnahmen und Kooperation der Vereine": ["sponsoring", "mitgliedsbeiträge", "kooperationen von vereinen", "vereinsfusion", "schule und verein"]
+    }
+  }
+}

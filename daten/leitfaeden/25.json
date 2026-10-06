@@ -1,0 +1,30 @@
+{
+  "thema_id": 25,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 25), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2501, 2502, 2503],
+      "text": "Zu 2501 gehören Meldewege, Beratung und Hilfe für Betroffene, zu 2502 Pflichten und Aufsicht für Plattformen (Löschen, Moderation, Durchsetzung), zu 2503 Prävention, Gesprächs- und Moderationsdesign. Strafverfolgung von Hass und Bedrohung im Netz zählt zu 2501 oder 2502, je nachdem, ob das Zitat Betroffene oder Plattformen nennt."
+    },
+    {
+      "nr": 2,
+      "text": "Betrug und Datenmissbrauch im Netz gehören zu Sicherheit, extremistische Inhalte zu Radikalisierung und Extremismus, Cybermobbing unter Schülern zu Mobbing in der Schule. Maßnahmen ohne Bezug zu Hass, Bedrohung oder Anfeindung (allgemeine Netzpolitik) sind keine Maßnahme dieses Themas."
+    }
+  ],
+  "suchbegriffe": {
+    "2501": {
+      "Meldewege und Hilfe für Betroffene ausbauen": ["hass im netz", "hassrede", "meldestelle", "beratungsstelle", "betroffene unterstützen", "hatespeech", "opferberatung", "digitale gewalt"],
+      "Strafverfolgung von Hass und Bedrohung im Netz": ["hasskriminalität", "verfolgen statt nur löschen", "online-straftaten", "staatsanwaltschaft", "bedrohung im netz", "strafbar"]
+    },
+    "2502": {
+      "Plattformen verbindlich in die Pflicht nehmen": ["plattformverantwortung", "netzwerkdurchsetzungsgesetz", "digital services act", "löschpflicht", "plattformregulierung", "moderation", "bußgeld für plattformen"],
+      "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": ["meinungsfreiheit im netz", "overblocking", "uploadfilter", "selbstverpflichtung", "kein löschzwang"]
+    },
+    "2503": {
+      "Prävention, Medienkompetenz und Gesprächskultur": ["medienkompetenz", "digitale zivilcourage", "gegenrede", "streitkultur im netz", "umgangston", "netiquette"],
+      "Moderation und Gestaltung der Plattformen": ["moderationsdesign", "anonymität", "klarnamenpflicht", "algorithmen", "empfehlungssysteme", "transparenz der algorithmen"]
+    }
+  }
+}

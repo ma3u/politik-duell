@@ -1,0 +1,30 @@
+{
+  "thema_id": 21,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 21), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2101, 2102, 2103],
+      "text": "Zu 2101 gehören Höhe und Bemessung der Grundsicherung (Regelsatz, Existenzminimum), zu 2102 Familienleistungen und Kindersicherung (Kindergeld, Kinderzuschlag, Kindergrundsicherung, Unterhaltsvorschuss, Alleinerziehende), zu 2103 Zugang und Beantragung (Information, automatische Auszahlung, Vereinfachung). Dieselbe Maßnahme zählt nur dort, wo das Zitat die Wirkung nennt."
+    },
+    {
+      "nr": 2,
+      "text": "Löhne und Arbeitsmarkt (Mindestlohn, Niedriglohn, Hinzuverdienst), Wohnen, Energie, Kita, Schule und Rente gehören zu eigenen Themen. Sanktionen und Kürzungen der Grundsicherung gehören zur Haltung, nicht zu diesem Thema."
+    }
+  ],
+  "suchbegriffe": {
+    "2101": {
+      "Grundsicherung und Regelsätze erhöhen": ["regelsatz", "regelbedarf", "existenzminimum", "bürgergeld erhöhen", "grundsicherung erhöhen", "mindestsicherung", "armutsfest", "teilhabe"],
+      "Leistungen begrenzen und gezielter einsetzen": ["sachleistung", "gezielt", "bürgergeld begrenzen", "neue grundsicherung", "grundsicherung reform", "bezahlkarte"]
+    },
+    "2102": {
+      "Familien- und Kinderleistungen ausbauen": ["kindergrundsicherung", "kindergeld", "kinderzuschlag", "kinderarmut", "unterhaltsvorschuss", "alleinerziehend", "kinderfreibetrag"],
+      "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": ["vereinbarkeit", "erwerbstätigkeit der eltern", "familienarbeitszeit", "eltern in arbeit", "betreuung für alleinerziehende"]
+    },
+    "2103": {
+      "Zugang erleichtern und Leistungen automatisch auszahlen": ["automatische auszahlung", "antragsverfahren vereinfachen", "nichtinanspruchnahme", "verdeckte armut", "ansprüche kennen", "leistungen bündeln", "digitaler antrag"],
+      "Leistungsansprüche und Anreize anpassen": ["anspruchshöhe", "bezugsdauer", "leistungsanreiz", "zumutbare arbeit", "kombination von leistungen"]
+    }
+  }
+}

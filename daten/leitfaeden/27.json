@@ -1,0 +1,42 @@
+{
+  "thema_id": 27,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 27), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2701, 2702, 2703, 2704, 2705, 2706],
+      "text": "Zu 2701 Personalbemessung und -ausstattung, zu 2702 Arbeitszeit, Dienstplan, Pausen und Erholung, zu 2703 Dokumentations- und Nachweispflichten, zu 2704 Bezahlung, Tarifbindung und Anerkennung, zu 2705 Mitsprache, Führung und Unterstützung am Arbeitsplatz, zu 2706 Sprachmittlung und Verständigung. Es zählen Maßnahmen für Beschäftigte im Gesundheitswesen, nicht für Patienten."
+    },
+    {
+      "nr": 2,
+      "text": "Zahl fehlender Pflegekräfte, Eigenanteile und Angehörige gehören zu Pflege, Wartezeiten und Praxen zu Arzttermine. Ausbildung und Anwerbung zusätzlicher Fachkräfte nur dann, wenn das Zitat Entlastung der Beschäftigten oder Personalbemessung nennt, sonst als ursachen_offen [2701]."
+    }
+  ],
+  "suchbegriffe": {
+    "2701": {
+      "Personalbemessung verbindlich vorgeben": ["personalbemessung", "personaluntergrenze", "pflegepersonalregelung", "personalschlüssel", "mindestbesetzung", "pflegepersonalbemessung"],
+      "Aufgaben und Abläufe anders verteilen": ["delegation", "aufgabenverteilung", "entlastung der pflege", "pflegeassistenz", "prozessorganisation", "kompetenzen der pflege"]
+    },
+    "2702": {
+      "Arbeitszeit begrenzen und Erholung sichern": ["pausenzeiten", "ruhezeit", "arbeitszeitbegrenzung", "dienstplansicherheit", "verlässliche dienstpläne", "springerpool", "nachtdienst"],
+      "Flexible und selbstgewählte Dienstmodelle": ["wunschdienstplan", "flexible arbeitszeitmodelle", "selbstgewählte schichtmodelle", "familienfreundliche dienstpläne", "teilzeit im gesundheitswesen"]
+    },
+    "2703": {
+      "Nachweispflichten und Bürokratie verringern": ["dokumentationspflicht", "bürokratieabbau im gesundheitswesen", "bürokratieentlastung pflege", "nachweispflichten", "dokumentationsaufwand"],
+      "Digitale Dokumentation verbessern": ["digitale dokumentation", "telematikinfrastruktur", "elektronische patientenakte", "sprachgestützte dokumentation", "künstliche intelligenz in der pflege"]
+    },
+    "2704": {
+      "Löhne und Tarifbindung stärken": ["tarifbindung", "tariflohn", "pflegemindestlohn", "mehr gehalt pflege", "bezahlung pflegekräfte", "allgemeinverbindlich", "pflegezulage"],
+      "Entlastung und Karriereperspektiven": ["berufliche perspektiven", "aufstiegschancen", "pflegekammer", "anerkennung des pflegeberufs", "weiterbildung pflege"]
+    },
+    "2705": {
+      "Mitsprache und Mitbestimmung stärken": ["mitbestimmung", "betriebsrat", "mitsprache", "selbstverwaltung der pflege", "pflegekammer"],
+      "Führung und psychosoziale Unterstützung": ["supervision", "psychosoziale unterstützung", "betriebliche gesundheitsförderung", "führungsqualität", "gesundheit der beschäftigten"]
+    },
+    "2706": {
+      "Sprachmittlung bereitstellen": ["dolmetscher", "sprachmittlung", "videodolmetschen", "sprachmittler im krankenhaus"],
+      "Berufsbezogene Sprachkompetenz fördern": ["berufsbezogene sprachkurse", "fachsprache", "sprachkompetenz pflegekräfte", "deutschkenntnisse pflege"]
+    }
+  }
+}

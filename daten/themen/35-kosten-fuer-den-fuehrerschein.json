@@ -1,0 +1,29 @@
+{
+  "id": 35,
+  "name": "Kosten für den Führerschein",
+  "beschreibung": "Der Führerscheinerwerb ist teuer. Fahrschulpreise, Fahrstunden, Prüfungen und Wartezeiten können Kosten und Dauer schwer planbar machen.",
+  "ziel": "Menschen können die Fahrerlaubnis zu bezahlbaren, nachvollziehbaren Kosten und in verlässlich planbaren Abläufen erwerben und sicher fahren lernen.",
+  "schlagwoerter": ["fuehrerschein", "fahrschule", "fahrstunden", "fahrpruefung", "theoriepruefung", "pruefungsgebuehren"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3501,
+      "beschreibung": "Fahrschule und Führerscheingebühr wurden 2024 durchschnittlich um 5,8 % teurer als im Vorjahr; die Verbraucherpreise insgesamt stiegen um 2,2 %",
+      "alltag": "Der Führerschein ist so teuer, dass ich ihn mir kaum leisten kann",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_15_p002.html?view=renderPrint",
+      "ebene": "bund",
+      "schlagwoerter": ["fahrschule teuer", "fahrstunden teuer", "fuehrerscheinkosten", "pruefungsgebuehren"]
+    },
+    {
+      "id": 3502,
+      "beschreibung": "Nicht bestandene Prüfungen führen zu Wiederholungskosten: 2025 wurden 828.324 von 2.042.050 theoretischen und 577.858 von 1.886.133 praktischen Prüfungen nicht bestanden",
+      "alltag": "Ich bin durch die Prüfung gefallen und muss sie teuer wiederholen",
+      "quelle_url": "https://www.kba.de/DE/Statistik/Kraftfahrer/Fahrerlaubnisse/Fahrerlaubnispruefungen/fahrerlaubnispruefungen_node.html",
+      "ebene": "bund",
+      "schlagwoerter": ["durchgefallen", "pruefung wiederholen", "theoriepruefung", "fahrpruefung", "nachschulung"]
+    }
+  ]
+}

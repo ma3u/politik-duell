@@ -1,0 +1,53 @@
+{
+  "id": 29,
+  "name": "Einsamkeit und psychische Belastung",
+  "beschreibung": "Menschen aller Altersgruppen fühlen sich einsam oder psychisch belastet. Manche können ihre Gefühle schwer einordnen oder ausdrücken und finden nicht rechtzeitig passende Unterstützung.",
+  "ziel": "Betroffene erleben tragfähige soziale Beziehungen, können mit ihren Gefühlen und Belastungen umgehen und erhalten bei Bedarf rechtzeitig passende Unterstützung.",
+  "schlagwoerter": ["einsamkeit", "allein", "senioren", "junge maenner", "gefuehle", "psychische belastung", "therapieplatz", "beratung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2901,
+      "beschreibung": "Einsamkeit steigt unmittelbar nach dem Tod der Partnerin oder des Partners (Review von 26 Längsschnittstudien, 2024)",
+      "alltag": "Seit mein Partner gestorben ist, habe ich niemanden zum Reden",
+      "quelle_url": "https://europepmc.org/articles/PMC11735283",
+      "ebene": "land",
+      "schlagwoerter": ["trauer", "verwitwet", "bezugsperson", "niemand zum reden"]
+    },
+    {
+      "id": 2902,
+      "beschreibung": "Je geringer das Einkommen, desto höher das Einsamkeitsrisiko: Skalenwert 2,00 bei Armutsgefährdung gegenüber 1,69 bei hohem Einkommen (Deutscher Alterssurvey, 2025)",
+      "alltag": "Ich kann mir Kontakte und Unternehmungen nicht leisten und bin allein",
+      "quelle_url": "https://www.dza.de/detailansicht/einsamkeit-in-der-zweiten-lebenshaelfte",
+      "ebene": "bund",
+      "schlagwoerter": ["teilhabe", "ausgeschlossen", "wenig geld", "fehlende kontakte"]
+    },
+    {
+      "id": 2903,
+      "beschreibung": "Schwierigkeiten, Symptome psychischer Erkrankungen zu erkennen und Gefühle auszudrücken, erschweren die Hilfesuche (Review von 22 Studien, 2010)",
+      "alltag": "Ich merke, dass es mir schlecht geht, kann aber nicht sagen, was los ist",
+      "quelle_url": "https://europepmc.org/articles/PMC3022639",
+      "ebene": "land",
+      "schlagwoerter": ["gefuehle einordnen", "gefuehle ausdruecken", "ueberfordert", "anlaufstelle"]
+    },
+    {
+      "id": 2904,
+      "beschreibung": "Verinnerlichte Männlichkeitsnormen, Scham und der Anspruch, alles allein zu bewältigen, hemmen die Hilfesuche von Männern (12 Interviews, 2018)",
+      "alltag": "Ich will keine Schwäche zeigen und spreche mit niemandem über meine Gefühle",
+      "quelle_url": "https://europepmc.org/articles/PMC7732518",
+      "ebene": "land",
+      "schlagwoerter": ["scham", "schwaeche zeigen", "alles allein schaffen", "maenner", "hilfe suchen"]
+    },
+    {
+      "id": 2905,
+      "beschreibung": "Psychotherapeutische Hilfe ist nicht überall rechtzeitig zugänglich: 2018 vergingen im Mittel 112 Tage vom Erstkontakt bis zur Richtlinientherapie, teils mit Versorgung dazwischen",
+      "alltag": "Ich finde keinen Therapieplatz und warte monatelang",
+      "quelle_url": "https://europepmc.org/articles/PMC11413774",
+      "ebene": "bund",
+      "schlagwoerter": ["therapieplatz", "psychotherapie", "wartezeit", "hilfe finden"]
+    }
+  ]
+}

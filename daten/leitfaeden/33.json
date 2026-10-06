@@ -1,0 +1,30 @@
+{
+  "thema_id": 33,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 33), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3301, 3302, 3303],
+      "text": "Zu 3301 gehören Pflichten und Altersgrenzen für Plattformen und soziale Medien, Gestaltung von Belohnungs- und Empfehlungssystemen und Jugendmedienschutz, zu 3302 Regeln zur Nutzungszeit und Schlaf (auch Handyregeln in Schulen mit Bezug zu Nutzungsdauer), zu 3303 Medienbildung, Beratung und Unterstützung für Eltern."
+    },
+    {
+      "nr": 2,
+      "text": "Cybermobbing gehört zu Mobbing in der Schule, Hass im Netz zu Hass und Anfeindungen im Internet, extremistische Inhalte zu Radikalisierung und Extremismus, Suchtbehandlung zu Sucht und Glücksspiel. Digitale Ausstattung der Schulen und Breitbandausbau sind keine Maßnahmen dieses Themas."
+    }
+  ],
+  "suchbegriffe": {
+    "3301": {
+      "Plattformpflichten und Altersgrenzen": ["altersgrenze", "altersverifikation", "social-media-verbot", "mindestalter soziale medien", "plattformpflichten", "jugendmedienschutz", "digital services act", "suchtfördernde gestaltung"],
+      "Selbstregulation und begleiteter Zugang": ["selbstregulation", "begleitete nutzung", "elternkontrolle", "medienkompetenz stärken", "keine pauschalen verbote"]
+    },
+    "3302": {
+      "Nutzungszeiten begrenzen": ["handyverbot", "handyfreie schule", "bildschirmzeit", "nutzungszeiten", "schlafenszeit", "handynutzung begrenzen", "smartphone-verbot"],
+      "Familiäre Regeln und Aufklärung": ["medienregeln in der familie", "aufklärung über schlaf", "medienerziehung", "elternabende", "mediennutzungsvertrag"]
+    },
+    "3303": {
+      "Medienbildung und Beratung ausbauen": ["medienbildung", "medienkompetenz", "digitale bildung", "elternberatung", "medienpädagogik", "elternbildung", "medienführerschein"],
+      "Elterliche Verantwortung und technische Hilfen": ["elterliche verantwortung", "jugendschutzeinstellungen", "jugendschutzprogramme", "kinderschutzfilter", "altersgerechte geräte"]
+    }
+  }
+}

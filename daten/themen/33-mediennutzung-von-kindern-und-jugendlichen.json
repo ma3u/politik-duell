@@ -1,0 +1,37 @@
+{
+  "id": 33,
+  "name": "Mediennutzung von Kindern und Jugendlichen",
+  "beschreibung": "Kinder und Jugendliche verbringen länger als gewollt Zeit am Bildschirm oder in sozialen Medien. Familien erleben Schwierigkeiten beim Begrenzen sowie Sorgen um Schlaf, Konzentration und altersgerechte Nutzung.",
+  "ziel": "Kinder und Jugendliche nutzen Medien altersgerecht und selbstbestimmt, ohne dass Schlaf, Konzentration und ihr übriger Alltag darunter leiden.",
+  "schlagwoerter": ["bildschirmzeit", "social media", "handy", "medienkonsum", "kinder", "jugendliche", "tiktok", "smartphone"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3301,
+      "beschreibung": "Soziale Belohnungen wie Likes fördern wiederholtes Posten: In einem Experiment (2021, 176 Erwachsene) wurde bei mehr Likes häufiger gepostet; auch Jugendliche reagieren auf Likes",
+      "alltag": "Mein Kind kann nicht aufhören, ständig auf Likes und Nachrichten zu schauen",
+      "quelle_url": "https://europepmc.org/articles/PMC7910435",
+      "ebene": "bund",
+      "schlagwoerter": ["likes", "staendig online", "nicht aufhoeren", "plattformgestaltung"]
+    },
+    {
+      "id": 3302,
+      "beschreibung": "Bildschirmnutzung zur Schlafenszeit hängt mit zu wenig Schlaf und Tagesmüdigkeit zusammen (Metaanalyse 2016, 20 Studien, 125.198 Kinder und Jugendliche)",
+      "alltag": "Mein Kind sitzt nachts am Handy und ist tagsüber müde",
+      "quelle_url": "https://europepmc.org/articles/PMC5380441",
+      "ebene": "land",
+      "schlagwoerter": ["handy im bett", "nachts online", "schlaf", "muede", "konzentration"]
+    },
+    {
+      "id": 3303,
+      "beschreibung": "Eltern fällt die Begleitung der Mediennutzung schwer: Für 57,6 % war die passende tägliche Nutzungsdauer zumindest manchmal eine Sorge (niederländische Befragung 2015, Kinder 1 bis 9 Jahre)",
+      "alltag": "Ich weiß nicht, wie viel Bildschirmzeit für mein Kind in Ordnung ist",
+      "quelle_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5932097/fullTextXML",
+      "ebene": "land",
+      "schlagwoerter": ["medienkompetenz", "eltern", "medienerziehung", "handyregeln", "jugendschutzeinstellungen"]
+    }
+  ]
+}

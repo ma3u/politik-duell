@@ -1,0 +1,37 @@
+{
+  "id": 34,
+  "name": "Umgang der Polizei mit jungen Menschen",
+  "beschreibung": "Junge Menschen erleben Polizeikontrollen oder Einsätze als belastend, unangemessen oder schwer nachvollziehbar und können mögliche Fehler nur schwer klären lassen.",
+  "ziel": "Junge Menschen werden bei Polizeikontakten respektvoll, nachvollziehbar und verhältnismäßig behandelt und können mögliche Fehler wirksam klären lassen.",
+  "schlagwoerter": ["polizei", "polizeikontrolle", "jugendliche", "platzverweis", "polizeigewalt", "beschwerde"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3401,
+      "beschreibung": "Häufige Polizeikontrollen können Jugendliche psychisch belasten: In einer US-Längsschnittstudie (2013 bis 2015, 645 Jungen) hing die Zahl der Kontrollen mit späterer Belastung zusammen",
+      "alltag": "Ich werde als Jugendlicher ständig kontrolliert, und das belastet mich",
+      "quelle_url": "https://europepmc.org/articles/PMC6486703",
+      "ebene": "land",
+      "schlagwoerter": ["staendig kontrolliert", "personenkontrolle", "durchsuchung", "angst vor polizei"]
+    },
+    {
+      "id": 3402,
+      "beschreibung": "Respektloses Verhalten bei Polizeikontakten ließ sich in einem US-Experiment (2017 bis 2020, 120 Orte) durch eine veränderte Einsatzpraxis beeinflussen",
+      "alltag": "Bei der Kontrolle wurde ich nicht angehört und nicht respektvoll behandelt",
+      "quelle_url": "https://europepmc.org/articles/PMC9168920",
+      "ebene": "land",
+      "schlagwoerter": ["nicht zugehoert", "respektlos", "angeschrien", "kontrolle nicht erklaert"]
+    },
+    {
+      "id": 3403,
+      "beschreibung": "Verfahren wegen mutmaßlich übermäßiger Polizeigewalt werden von Staatsanwaltschaften häufig mangels hinreichenden Tatverdachts eingestellt (Fachbeitrag, 2019)",
+      "alltag": "Ich wurde bei einer Kontrolle unangemessen behandelt, aber eine Anzeige bringt nichts",
+      "quelle_url": "https://www.kriminologie.de/index.php/krimoj/article/view/25",
+      "ebene": "land",
+      "schlagwoerter": ["polizei anzeigen", "vorfall beweisen", "beschwerde", "einsatz dokumentieren"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "thema_id": 31,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 31), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3101, 3102],
+      "text": "Zu 3101 gehören Ausbildungsvergütung, Mindestvergütung, Tarifbindung der Ausbildungsbetriebe und Unterstützung von Auszubildenden (Wohnen, Mobilität); zu 3102 BAföG (Höhe, Freibeträge, Rückzahlung), Studienfinanzierung, Nebenjobs und Wohnheimplätze für Studierende."
+    },
+    {
+      "nr": 2,
+      "text": "Studiengebühren sind eine eigene Haltung. Allgemeine Mieten gehören zu Miete, Ausbildungsplatzangebot zu Abwanderung aus strukturschwachen Regionen. Eine Maßnahme zählt hier nur, wenn das Zitat Studierende, Auszubildende, BAföG oder Ausbildung nennt."
+    }
+  ],
+  "suchbegriffe": {
+    "3101": {
+      "Ausbildungsvergütung und Tarifbindung stärken": ["mindestausbildungsvergütung", "ausbildungsvergütung", "tarifbindung in der ausbildung", "azubi", "auszubildende", "ausbildungsförderung", "azubi-wohnen"],
+      "Betriebe entlasten und Ausbildung attraktiv halten": ["ausbildungsbetriebe entlasten", "ausbildungsprämie", "bewerbermangel", "ausbildungsbonus", "betriebliche ausbildung stärken"]
+    },
+    "3102": {
+      "Studienfinanzierung ausbauen": ["bafög", "bafög-erhöhung", "bafög-reform", "elternunabhängig", "studienstarthilfe", "studienfinanzierung", "wohnpauschale", "studierendenwohnheim"],
+      "Rückzahlung und Eigenbeteiligung neu regeln": ["bafög-darlehen", "rückzahlungsbelastung", "studienkredit", "einkommensabhängige rückzahlung", "schuldenfreies studium", "darlehensanteil"]
+    }
+  }
+}

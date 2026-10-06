@@ -1,0 +1,37 @@
+{
+  "id": 37,
+  "name": "Finanzierung von Sportvereinen und Sportstätten",
+  "beschreibung": "Breiten- und Amateursportvereinen fehlen finanzielle Spielräume oder geeignete Sportstätten, um Training und Wettkämpfe dauerhaft anzubieten.",
+  "ziel": "Menschen können dauerhaft in ihrem Sportverein trainieren und an Wettkämpfen teilnehmen, mit bezahlbaren Beiträgen und geeigneten Sportstätten.",
+  "schlagwoerter": ["sportverein", "vereinsfinanzen", "mitgliedsbeitrag", "sponsoring", "sporthalle", "hallenzeiten", "vereinsinsolvenz", "sportstaette"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3701,
+      "beschreibung": "Der geschätzte Investitionsrückstand der Kommunen bei Sportstätten stieg im Kommunalpanel 2026 um 6,0 Milliarden Euro gegenüber dem Vorjahr",
+      "alltag": "Unsere Sporthalle ist marode oder gesperrt",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_897920.html",
+      "ebene": "land",
+      "schlagwoerter": ["sportstaetten", "sporthalle", "sanierungsstau", "kaputte halle"]
+    },
+    {
+      "id": 3702,
+      "beschreibung": "Im Sportbereich mussten laut Kommunalpanel 2026 60 % der Kommunen mit eigenen Betrieben zuletzt Verluste ausgleichen (beim ÖPNV 52 %)",
+      "alltag": "Hallenmiete und Nutzungsgebühren steigen, und der Verein kann sie kaum noch bezahlen",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_897920.html",
+      "ebene": "land",
+      "schlagwoerter": ["betriebskosten", "hallenmiete", "nutzungsgebuehren", "sportstaettenbetrieb"]
+    },
+    {
+      "id": 3703,
+      "beschreibung": "Der Problemdruck der Vereine durch den Zustand der Sportstätten (+3,7 %) und ihre finanzielle Situation (+2,5 %) ist im Sportentwicklungsbericht 2023 bis 2025 gegenüber 2020 gestiegen",
+      "alltag": "Unserem Verein fehlt das Geld, und die Sportstätten sind in schlechtem Zustand",
+      "quelle_url": "https://www.bisp.de/SharedDocs/Downloads/Publikationen/Publikationssuche_SEB/SEB_23-25.pdf?__blob=publicationFile&v=1#page=55",
+      "ebene": "land",
+      "schlagwoerter": ["vereinsfinanzen", "finanzielle situation", "zustand der sportstaetten", "ehrenamt", "mitgliedsbeitrag"]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "thema_id": 26,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 26), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2601, 2602, 2603],
+      "text": "Zu 2601 gehören Barrierefreiheit von Bahnhöfen, Haltestellen und Verkehrsmitteln und die Steuerung der Umsetzung; zu 2602 Arbeitsplätze, Ausstattung, Ausgleichsabgabe und Beschäftigungspflicht; zu 2603 Vorbehalte, Beratung und Regeln, die Einstellung und Beschäftigung betreffen. Barrierefreies Wohnen, Gebäude und digitale Angebote ohne Bezug zu diesen Ursachen sind nur als ursachen_offen zu melden."
+    },
+    {
+      "nr": 2,
+      "text": "Gemeinsamer Unterricht an Regelschulen ist eine eigene Haltung und gehört nicht hierher. Pflege, Rente und allgemeine Diskriminierung gehören zu anderen Themen, soweit das Zitat keine Barriere für Menschen mit Behinderung nennt."
+    }
+  ],
+  "suchbegriffe": {
+    "2601": {
+      "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": ["barrierefrei", "barrierefreiheit", "bahnhof", "aufzug", "bahnsteig", "stufenfrei", "mobilitätsgarantie", "behindertengerecht"],
+      "Finanzierung und Verfahren der Umsetzung": ["finanzierung barrierefreiheit", "förderprogramm bahnhöfe", "umsetzungsfristen", "planungsbeschleunigung"]
+    },
+    "2602": {
+      "Arbeitsplätze und Ausstattung fördern": ["arbeitsplatzanpassung", "inklusionsbetriebe", "werkstatt für behinderte", "budget für arbeit", "lohnkostenzuschuss", "arbeitsassistenz", "inklusiver arbeitsmarkt"],
+      "Verpflichtungen für Betriebe": ["ausgleichsabgabe", "beschäftigungspflicht", "schwerbehindertenquote", "pflichtquote"]
+    },
+    "2603": {
+      "Vorbehalte abbauen und beraten": ["aufklärung arbeitgeber", "inklusionsberatung", "einheitliche ansprechstellen", "vorbehalte", "sensibilisierung"],
+      "Regeln flexibler gestalten": ["kündigungsschutz", "zusatzurlaub", "entbürokratisierung inklusion", "weniger bürokratie bei der beschäftigung"]
+    }
+  }
+}

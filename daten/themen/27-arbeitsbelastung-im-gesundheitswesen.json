@@ -1,0 +1,61 @@
+{
+  "id": 27,
+  "name": "Arbeitsbelastung im Gesundheitswesen",
+  "beschreibung": "Beschäftigte in Pflege, Medizin, Kliniken und Rettungsdienst erleben Zeitdruck, belastende Dienste, knappe Personalbesetzung, aufwendige Dokumentation und unzureichende Anerkennung ihrer Arbeit.",
+  "ziel": "Beschäftigte im Gesundheitswesen können ihre Arbeit dauerhaft gesund, mit ausreichender Erholung, verlässlichen Arbeitszeiten und angemessener Entlohnung ausüben.",
+  "schlagwoerter": ["gesundheitswesen", "pflegepersonal", "klinikpersonal", "rettungsdienst", "arbeitsbelastung", "personalmangel", "schichtdienst", "bezahlung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2701,
+      "beschreibung": "Unzureichende Personalbesetzung und zu wenig Zeit je Patient hängen mit moralischem Stress zusammen (Befragung von 976 Pflegenden in der ambulanten Pflege, 2022)",
+      "alltag": "Wir sind zu wenige und haben keine Zeit für die Patienten",
+      "quelle_url": "https://europepmc.org/articles/PMC10709999",
+      "ebene": "bund",
+      "schlagwoerter": ["unterbesetzung", "personalbemessung", "zeitdruck", "zu wenig personal"]
+    },
+    {
+      "id": 2702,
+      "beschreibung": "Wer selten oder nie Pausen machen kann, ist stärker belastet; auch ein Schichtwechsel gegen den eigenen Willen belastet (Befragung von 873 Beschäftigten, 2021)",
+      "alltag": "Ich habe kaum Pausen und muss ständig für Kollegen einspringen",
+      "quelle_url": "https://europepmc.org/articles/PMC10195190",
+      "ebene": "bund",
+      "schlagwoerter": ["schichtdienst", "dienstplan", "einspringen", "pausen", "ueberstunden", "nachtdienst"]
+    },
+    {
+      "id": 2703,
+      "beschreibung": "Dokumentation bindet viel Zeit: In einer deutschen Pflegestudie (2024/25) nahm sie anfangs rund 54 Minuten je Frühdienst in Anspruch",
+      "alltag": "Ich verbringe einen großen Teil des Dienstes mit Dokumentation statt mit Patienten",
+      "quelle_url": "https://europepmc.org/articles/PMC13061367",
+      "ebene": "bund",
+      "schlagwoerter": ["buerokratie", "dokumentation", "papierkram", "computer"]
+    },
+    {
+      "id": 2704,
+      "beschreibung": "Pflegende erbringen mehr Aufwand, als sie Belohnung erfahren (ERI-Ratio 1,7; Befragung 2021 von 2.689 Pflegenden); 38,3 % hatten regelmäßig Ausstiegsgedanken",
+      "alltag": "Bezahlung und Anerkennung stehen in keinem Verhältnis zu meiner Arbeit",
+      "quelle_url": "https://europepmc.org/articles/PMC11248340",
+      "ebene": "bund",
+      "schlagwoerter": ["bezahlung", "gehalt", "wertschaetzung", "berufsausstieg", "kuendigen"]
+    },
+    {
+      "id": 2705,
+      "beschreibung": "Hohe emotionale Anforderungen, wenig Einfluss auf die Arbeit und fehlende soziale Unterstützung gehen mit stärkerem moralischem Stress einher (Befragung 2022, 976 Pflegende)",
+      "alltag": "Ich habe wenig Mitsprache, und niemand fängt mich auf, wenn die Arbeit mich belastet",
+      "quelle_url": "https://europepmc.org/articles/PMC10709999",
+      "ebene": "land",
+      "schlagwoerter": ["mitsprache", "vorgesetzte", "team", "erschoepfung", "psychischer druck"]
+    },
+    {
+      "id": 2706,
+      "beschreibung": "Fehlender Zugang zu Dolmetschenden bei Sprachbarrieren geht mit höherer Arbeitsbelastung einher (Befragung 2018 von 800 Beschäftigten in 22 Kliniken)",
+      "alltag": "Die Verständigung mit Patienten klappt oft nicht, und es gibt keine Sprachmittlung",
+      "quelle_url": "https://europepmc.org/articles/PMC9812741",
+      "ebene": "land",
+      "schlagwoerter": ["sprachbarrieren", "verstaendigung", "dolmetscher", "kommunikation"]
+    }
+  ]
+}

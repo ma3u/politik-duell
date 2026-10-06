@@ -1,0 +1,34 @@
+{
+  "thema_id": 24,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 24), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2401, 2402, 2403, 2404],
+      "text": "Zu 2401 gehören Maßnahmen, die junge Menschen in der Region halten oder zurückholen (Studien- und Ausbildungsstandorte, Rückkehrförderung), zu 2402 Geburten, Alterung und Zuzug, zu 2403 Ausbildungsplätze und Ausbildungsvermittlung, zu 2404 Finanzkraft und Handlungsfähigkeit der Kommunen (Finanzausgleich, Altschulden, Planungskapazitäten)."
+    },
+    {
+      "nr": 2,
+      "text": "Löhne, Arbeitsplätze und Investitionen, Bus und Bahn, Internet, Hausärzte, Schulen, Kultur und Sport gehören zu eigenen Themen. Maßnahmen für alle strukturschwachen Regionen zählen hier nur, wenn das Zitat Region, ländlichen Raum, Strukturwandel oder Abwanderung nennt."
+    }
+  ],
+  "suchbegriffe": {
+    "2401": {
+      "Perspektiven vor Ort schaffen und Rückkehr fördern": ["rückkehr", "abwanderung", "wegzug", "regionale perspektiven", "studienstandort", "hochschulstandort", "junge menschen halten", "rückkehrer"],
+      "Mobilität und Zuzug ermöglichen": ["zuzug", "fachkräfteeinwanderung", "wohnraum für azubis", "mobilität junger menschen"]
+    },
+    "2402": {
+      "Familien und Geburten fördern": ["geburtenrate", "familiengründung", "familienförderung", "kinderwunsch", "demografischer wandel"],
+      "Zuzug und Versorgung an Schrumpfung anpassen": ["schrumpfende regionen", "demografie", "zuzug", "bevölkerungsrückgang", "alterung", "daseinsvorsorge anpassen"]
+    },
+    "2403": {
+      "Ausbildungsplätze schaffen und sichern": ["ausbildungsplatzgarantie", "ausbildungsumlage", "ausbildungsplätze", "ausbildungsförderung", "überbetriebliche ausbildung", "azubi"],
+      "Orientierung, Vermittlung und Mobilität": ["berufsorientierung", "ausbildungsvermittlung", "azubi-ticket", "mobilitätshilfe", "wohnheim für auszubildende", "passung"]
+    },
+    "2404": {
+      "Kommunale Finanzen stärken": ["kommunale finanzen", "finanzausgleich", "altschulden", "kommunalfinanzen", "investitionsfonds", "kommunen entlasten", "strukturförderung"],
+      "Verfahren und Verwaltung vereinfachen": ["genehmigungsverfahren", "vergabe vereinfachen", "planungsbeschleunigung", "bauverwaltung", "interkommunale zusammenarbeit"]
+    }
+  }
+}

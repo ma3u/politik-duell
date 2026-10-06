@@ -1,0 +1,45 @@
+{
+  "id": 36,
+  "name": "Leerstand und Geschäftsschließungen in Innenstädten",
+  "beschreibung": "In Innenstädten und Ortskernen schließen Geschäfte. Ladenflächen stehen leer, Einkaufsangebote verschwinden und manche Orte werden weniger besucht.",
+  "ziel": "Menschen finden in ihrer Innenstadt oder ihrem Ortskern passende Einkaufsangebote und können diese gut erreichen und gerne nutzen.",
+  "schlagwoerter": ["innenstadt", "ortskern", "leerstand", "ladenschliessung", "geschaefte", "einzelhandel", "innenstadtsterben"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3601,
+      "beschreibung": "Der zunehmende Onlinehandel wirkt sich laut BBSR-Projekt (2021 bis 2024) negativ auf den Geschäftsbesatz in den Zentren aus",
+      "alltag": "Die Geschäfte in unserer Innenstadt schließen, weil alle online bestellen",
+      "quelle_url": "https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/Studien/2021/innenstadt-online-handel/01-start.html",
+      "ebene": "bund",
+      "schlagwoerter": ["onlinehandel", "onlineshopping", "internetbestellung", "kundenverlust"]
+    },
+    {
+      "id": 3602,
+      "beschreibung": "Einzigartigkeit des Sortiments und Atmosphäre eines Geschäfts hängen signifikant mit Schließungen zusammen (Daten 2015 bis 2020, Bekleidung und Medien; Studie 2024)",
+      "alltag": "In der Innenstadt gibt es immer dieselben Läden, und ich gehe lieber woanders hin",
+      "quelle_url": "https://publikationen.bibliothek.kit.edu/1000175106",
+      "ebene": "land",
+      "schlagwoerter": ["sortiment", "einkaufsangebot", "ladenauswahl", "ladenatmosphaere"]
+    },
+    {
+      "id": 3603,
+      "beschreibung": "26 % der Befragten im Osten und 32 % im Westen sahen 2026 beim Stadtbild und Aufenthalt im öffentlichen Raum großen Handlungsbedarf (Befragung von 5.079 Personen)",
+      "alltag": "Unsere Innenstadt ist ungepflegt und lädt nicht zum Bleiben ein",
+      "quelle_url": "https://cimamonitor.de/",
+      "ebene": "land",
+      "schlagwoerter": ["aufenthaltsqualitaet", "stadtbild", "plaetze", "bummeln", "sitzgelegenheiten"]
+    },
+    {
+      "id": 3604,
+      "beschreibung": "Eine zugängliche Lage und günstige Öffnungszeiten hängen mit weniger Geschäftsschließungen zusammen (Daten 2015 bis 2020, Bekleidung und Medien; Studie 2024)",
+      "alltag": "Ich komme nur umständlich in die Innenstadt, oder die Läden haben zu, wenn ich Zeit habe",
+      "quelle_url": "https://publikationen.bibliothek.kit.edu/1000175106",
+      "ebene": "land",
+      "schlagwoerter": ["erreichbarkeit", "parken", "autozufahrt", "fusswege", "radwege", "oeffnungszeiten"]
+    }
+  ]
+}

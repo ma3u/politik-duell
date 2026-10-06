@@ -1,0 +1,45 @@
+{
+  "id": 24,
+  "name": "Abwanderung aus strukturschwachen Regionen",
+  "beschreibung": "In strukturschwachen Regionen in Ost und West fehlen Zukunftsperspektiven. Junge Menschen ziehen weg, die Bevölkerung wird älter und die Versorgung vor Ort gerät unter Druck.",
+  "ziel": "Menschen können in ihrer Region eine passende Ausbildung und berufliche Perspektive finden und ihren Alltag mit verlässlicher Versorgung gestalten.",
+  "schlagwoerter": ["abwanderung", "strukturschwach", "keine zukunft", "bevoelkerungsrueckgang", "ueberalterung", "laendlicher raum", "wegziehen"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2401,
+      "beschreibung": "Junge Menschen von 18 bis 24 ziehen besonders häufig für Ausbildung, Studium und Berufseinstieg von ländlichen in städtische Regionen (Daten 2021)",
+      "alltag": "Meine Kinder müssen für Ausbildung und Studium wegziehen und kommen nicht zurück",
+      "quelle_url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/sozialbericht-2024/553043/stadt-land-wanderungen/",
+      "ebene": "land",
+      "schlagwoerter": ["junge leute ziehen weg", "wegziehen", "rueckkehr", "nachwuchs fehlt"]
+    },
+    {
+      "id": 2402,
+      "beschreibung": "Seit 1972 werden jedes Jahr weniger Kinder geboren als Menschen sterben; 2022 waren 22 % der Bevölkerung mindestens 65 Jahre alt (Osten 26,6 %, Westen 21,5 %)",
+      "alltag": "Bei uns werden immer weniger Kinder geboren, und das Dorf überaltert",
+      "quelle_url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/sozialbericht-2024/553018/altersaufbau-geburtenentwicklung-und-lebenserwartung/",
+      "ebene": "land",
+      "schlagwoerter": ["ueberalterung", "immer weniger menschen", "wenig nachwuchs", "gemeinde schrumpft"]
+    },
+    {
+      "id": 2403,
+      "beschreibung": "Ausbildungsangebot und -wünsche passen regional und beruflich nicht zusammen: 2025 blieben 54.400 Stellen unbesetzt, 84.400 junge Menschen suchten noch",
+      "alltag": "Es gibt in meiner Nähe keine passende Ausbildungsstelle",
+      "quelle_url": "https://www.bibb.de/de/215234.php",
+      "ebene": "bund",
+      "schlagwoerter": ["keine passende ausbildung", "berufsauswahl", "lehrstelle", "ausbildungsangebot"]
+    },
+    {
+      "id": 2404,
+      "beschreibung": "44 % der Kommunen bewerteten 2026 ihre Finanzlage als mangelhaft; hinzu kommen aufwendige Genehmigungs- und Vergabeverfahren und Personalmangel in Bauverwaltungen",
+      "alltag": "Unserer Gemeinde fehlt das Geld, um Straßen, Schulen und Versorgung zu erneuern",
+      "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/KfW-Research/KfW-Kommunalpanel.html",
+      "ebene": "land",
+      "schlagwoerter": ["gemeinde hat kein geld", "kommunale infrastruktur", "daseinsvorsorge", "versorgung vor ort"]
+    }
+  ]
+}

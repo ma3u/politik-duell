@@ -762,6 +762,255 @@ Abgrenzung: Heizkosten und Heiztechnik bleiben bei Energiepreise (3) und Heizung
 
 **Aufnahmegrund:** Siehe [`daten/README.md` → Themenauswahl](../daten/README.md#themenauswahl). Eine Umfrage, in der Menschen Hitze oder Unwetter als wichtigstes Problem nennen, liegt nicht vor; belegt ist das Erleben der Betroffenen. Laut UBA (Umweltbewusstsein 2024) nimmt die Bedeutung von Umwelt und Klima seit 2022 ab. Das Thema ist auf Wunsch der Betreiberin aufgenommen.
 
+## Neue Themen 19–37 (6. 10. 2026)
+
+Stand: 6. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase. Aufnahmegrund: eine Liste von Äußerungen aus einer Befragung (`/liste-einordnen`, 6. 10. 2026); die Betreiberin hat die Themen bestätigt. Je Thema ein Agent `ursachen-recherche` ohne Zugriff auf Programme und Repository (`npm run phase-a` aktiv); Ursachen und Ebenen standen fest, bevor jemand in ein Wahlprogramm schaute. Die tragenden Quellen sind überwiegend als HTML oder Volltext im Original geöffnet; PDF-Seiten nicht, wo es heißt „PDF nicht gelesen“ (dort Seite vor einer Prüfung nachtragen). Die Richtungen in der Spalte „Diagnose aus der Debatte“ sind Suchrichtungen zur Kontrolle der Einseitigkeit, keine Aussagen über Parteien. Quellen von Verbänden oder Herstellern sind als C gekennzeichnet. Zu den Ursachen mit US-, EU- oder Einzelstudien gilt: Sie belegen Zusammenhänge und Mechanismen, keine deutsche Häufigkeit; das steht in der Ursache.
+
+Gemeinsame Lücken: Bei fast allen Themen fehlt der Vergleich arbeitgeber- und gewerkschaftsnaher Institute, weil die Originale als PDF nicht lesbar waren; die Ursachen sind trotzdem jeweils mit einer A- oder B-Quelle belegt (Ausnahmen bei den Themen unten). Die Erfassungsleitfäden `daten/leitfaeden/19.json` bis `37.json` sind KI-Entwürfe vom 6. 10. 2026 mit Abgrenzungsregeln und Suchbegriffen je Lösungsrichtung, ohne Bündelliste; sie sind noch nicht von der Betreiberin bestätigt.
+
+### Diskriminierung im Alltag (19)
+
+Ziel: „Betroffene können am Alltag gleichberechtigt teilnehmen, erhalten faire Zugangschancen und werden ohne herkunfts-, religions- oder identitätsbezogene Herabsetzung behandelt.“ Aus den Zeilen zu Rassismus, queerfeindlicher Anfeindung und Benachteiligung wegen des Kopftuchs. Würde und gleiche Rechte sind kein Streitpunkt der Bewertung.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 1901 | Bewerbungen mit Kopftuch werden bei gleicher Qualifikation seltener beantwortet | Bund | IZA DP 10217 (2016, Feldexperiment; B), ergänzend Kaas/Manger (B) | Vorurteile verzerren die Auswahl (eher antidiskriminierungsorientiert); fehlende individuelle Informationen begünstigen Gruppenzuschreibungen (eher informationsökonomisch) |
+| 1902 | Rassistische Zuschreibungen verbreitet (48 % „von Natur aus fleißiger“) | Land | Rassismusmonitor, Befragung 2025/26 (B) | Erlernte Gruppenhierarchien (eher rassismuskritisch); individuelle Vorurteile (eher bildungsorientiert) |
+| 1903 | Abwertende Einstellungen gegenüber sexueller und geschlechtlicher Vielfalt (rund 20 % gegenüber trans*geschlechtlichen Menschen, 2016) | Land | Antidiskriminierungsstelle, repräsentative Umfrage 2016 (B) | Abwertung sichtbarer Vielfalt (eher queerpolitisch); mangelnde persönliche Akzeptanz (eher liberal-bildungsorientiert) |
+| 1904 | Kein spezifischer Rechtsschutz gegen Diskriminierung durch staatliches Handeln | Land | Rechtsgutachten 2025 (C), ergänzend Behördenbefragung 2023 (B, 9 % berichten von Diskriminierung bei Ämtern) | Spezifische Ansprüche fehlen (rechtsorientiert); bestehende Rechte werden unzureichend umgesetzt (verwaltungspraktisch) |
+
+Verworfen oder offen: „Benachteiligung erklärt sich nur durch geringere Qualifikation“ (durch den Bewerbungstest widerlegt); „Betroffene wehren sich selten“ (Expertise der Antidiskriminierungsstelle, PDF nicht gelesen); „Wohnungsbenachteiligung ist nur ein Einkommensproblem“ (Feldexperiment des Rassismusmonitors, nicht gleichzusetzen). 1904 ist ein Ansatzpunkt, keine nachgewiesene Entstehungsursache. Ein arbeitgeber- oder gewerkschaftsnaher Vergleich fehlt.
+
+### Freizeitangebote und Treffpunkte für Jugendliche (20)
+
+Ziel: „Jugendliche können passende Freizeitaktivitäten wahrnehmen und verlässlich Orte nutzen, an denen sie sich mit anderen treffen und ihre Interessen ausleben können.“ Aus den Zeilen zu fehlenden Angeboten und Treffpunkten, fehlendem Geld und der Vertreibung aus dem öffentlichen Raum.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2001 | Wunsch nach mehr jugendgerechten Treffpunkten und erschwinglichen Angeboten (Halle, 2024, über 2.400 Befragte) | Land | DJI (B, Regionalbefragung Halle) | Angebot ausbauen (jugend-/sozialpolitisch); vorhandene Räume mehrfach nutzen, Selbstorganisation (kommunal-pragmatisch) |
+| 2002 | Geldmangel verhindert Teilhabe (54 Interviews, 2023) | Bund | DJI-Armutsbefragung (C, qualitativ) | Individuelle Unterstützung (sozialstaatlich); günstige Angebote, Kosten senken (angebotsorientiert) |
+| 2003 | Bei überhandnehmenden Nutzungskonflikten geben Jugendliche Treffpunkte auf (Fallstudien Saarbrücken, Ludwigshafen, 2016) | Land | Dissertation Neumann (B) | Zugang ermöglichen (jugendrechtlich); Lärm mindern, Nutzungszeiten abstimmen (anwohnerorientiert) |
+
+Verworfen oder offen: Personalmangel in der Jugendarbeit (nicht jugendtreffspezifisch belegt); „Bildungsherkunft erklärt Freizeitverhalten“ (IW-PDF nicht gelesen, arbeitgebernah); „Jugendliche verursachen generell Lärmkonflikte“ (nicht belegt). 2001 gilt nur für Halle; die Ursache sagt nur, was Jugendliche dort wünschen.
+
+### Armut und Kinderarmut (21)
+
+Ziel: „Menschen und ihre Kinder können ihren notwendigen Lebensunterhalt dauerhaft sichern und am gesellschaftlichen Leben teilnehmen.“ Niedriglohn, Arbeitsmarkt, Wohnen und Kita bleiben bei ihren Themen.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2101 | Versorgungslücke trotz Grundsicherung (drei Viertel der Tafelbesuchenden bezogen 2020 Grundsicherung) | Bund | DIW Wochenbericht 39/2022, SOEP (B) | Leistungshöhe und Bedarfsermittlung (sozialpolitisch); zielgenauere Leistungen, Sachleistungen (ordnungspolitisch) |
+| 2102 | Familienressourcen sichern Kinder nicht immer ab (31 % der Alleinerziehenden armutsgefährdet, 2022) | Bund | DIW Wochenbericht 8/2025, SOEP (B), IW-Verteilungsreport 2024 ergänzend (C) | Familienleistungen (umverteilungsorientiert); Erwerbsbeteiligung, Vereinbarkeit (arbeitsmarktorientiert) |
+| 2103 | Ein Teil der Berechtigten nimmt Grundsicherung nicht in Anspruch | Bund | IAB-Studie Bruckmeier/Wiemers 2012 (B, nur Abstract gelesen); ergänzend PASS-Schätzung 32,7 % für 2008 bis 2020 (C, Preprint) | Information, automatische Auszahlung (zugangsorientiert); Anspruchshöhe und Bezugsdauer bestimmen die Nutzung (anreizorientiert) |
+
+Verworfen: Niedriglohn und Hinzuverdienst (Preise und Löhne, Arbeitsplätze); Betreuung und Wohnkosten (Kita, Miete); „Regelsätze sind generell zu niedrig“ und „Scham oder Bürokratie erklären die Nichtinanspruchnahme“ (nicht ausreichend belegt); ausbleibender Kindesunterhalt (kein A/B-Befund geöffnet). 2101 belegt eine Überschneidung, keine Ursache des Engpasses im Einzelfall.
+
+### Radikalisierung und Extremismus (22)
+
+Ziel: „Menschen können politische Meinungsverschiedenheiten respektvoll austragen und ihr Leben ohne Hinwendung zu menschenfeindlichen, demokratiefeindlichen oder gewaltlegitimierenden Ideologien gestalten.“ Alle Richtungen (rechts, links, islamistisch, auslandsbezogen) zählen gleich; Straftaten bleiben bei Sicherheit, die Bundesförderung von Demokratieprojekten ist eine eigene Haltung (31).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2201 | Kontakt zu extremistischen Gleichgesinnten (r = 0,17) | Land | Wolfowicz u. a. 2021, Metaanalyse, 127 Studien (B) | Rekrutierung und Milieu (sicherheitsorientiert); Bindungsbedürfnisse (sozialpädagogisch) |
+| 2202 | Passiver Kontakt mit extremistischen Medieninhalten (r = 0,26; Evidenz niedrig) | Bund | dieselbe Metaanalyse (B), Review 2022 (B, Abstract) | Propaganda und Plattformverantwortung (regulierungsorientiert); selektive Nutzung, Medienkompetenz (bildungs- und freiheitsorientiert) |
+| 2203 | Gefühl unfairer Behandlung und geringes Institutionenvertrauen | Bund | dieselbe Metaanalyse, Tabellen 4, 5, 11 (B); kontrolliert nur r = −0,07 | Ausschluss und Ungleichheit (sozialpolitisch); Legitimität der Institutionen (konservativ-liberal) |
+| 2204 | Überlegenheitsdenken, autoritäre Deutungen, Gewaltrechtfertigung (r = 0,25 bis 0,34) | Land | dieselbe Metaanalyse (B) | Ideologie und Gewaltlegitimation (sicherheitsorientiert); soziale Herstellung von Feindbildern (kritisch-sozialwissenschaftlich) |
+| 2205 | Emotionale Eskalation politischer Gespräche (Fokusgruppen, 42 Personen, 2021/22) | Land | Westheuser/Lux/Mau 2026 (B, qualitativ) | Verletzte Gleichheitsansprüche (egalitär); bedrohte Normalität (konservativ); Bevormundung (liberal) |
+| 2206 | Schwach erlebte Respekt- und Zuhörnormen mindern Toleranz (12 Länder, 12.041 Personen, 2023) | Land | Schäfer u. a. 2026 (B, Quotenpanel, Querschnitt) | Gleichwertiger Respekt (pluralistisch); Zusammenhalt (gemeinschaftsorientiert); Offenheit für Gegenpositionen (liberal) |
+
+Verworfen oder offen: „Zwei unversöhnliche Lager“ (nur etwa 20 % der 817 Fragen 2022 mit mehr als moderater Polarisierung); Religion, Herkunft oder Alter als Erklärung (im Review nicht signifikant); Armut allein; „Identitätspolitik verursacht Spaltung“; „Algorithmen radikalisieren zwangsläufig“; Verschwörungsmentalität und aktuelle Entwicklung (MOTRA-Berichte 2026, PDF nicht gelesen). Ursachen 1 bis 4 betreffen überwiegend die Zustimmung zu extremistischer Gewalt; die Befunde gelten nicht automatisch für jede Richtung einzeln.
+
+### Mobbing und Druck in der Schule (23)
+
+Ziel: „Schülerinnen und Schüler können ohne Mobbing und Ausgrenzung zur Schule gehen und schulische Anforderungen ohne gesundheitlich belastenden Druck bewältigen.“ Lehrkräftemangel, Unterrichtsausfall und Lernrückstände bleiben bei Schule (4).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2301 | Abwertende Klassennormen, Rechtfertigung von Übergriffen | Land | Thornberg u. a. 2019, Längsschnitt, 1.250 Kinder (B, Schweden); ergänzend Wachs u. a. 2018 (B, Sachsen: 43 bis 48 % würden nicht eingreifen) | Verantwortung und Grenzen (ordnungsorientiert); Zugehörigkeit, Zivilcourage (sozialpädagogisch) |
+| 2302 | Nicht-Eingreifen der Lehrkräfte, fehlende Unterstützung | Land | Campaert u. a. 2017 (B, Abstract; 609 Kinder, Italien) | Konsequenzen, Regeldurchsetzung; Opferschutz, Beratung, Interventionskompetenz |
+| 2303 | Digitale Verstärkung (3,0 % ausschließlich online gemobbt, 2022) | Bund | Fischer/Bilz 2024, HBSC Deutschland (B) | Plattformverantwortung (regulierungsorientiert); Medienkompetenz (kompetenzorientiert); Nutzungsbegrenzung |
+| 2304 | Belastender Leistungs- und Prüfungsdruck | Land | Steare u. a. 2023, Review, 52 Studien (B, Abstract) | Belastung reduzieren (entlastungsorientiert); Lernstrategien, Stressbewältigung (befähigungsorientiert) |
+
+Verworfen oder offen: „Große Klassen verursachen Mobbing“ (Garandeau u. a. 2019: kein Befund); „Corona erklärt die Entwicklung“ (HBSC: 2022 gegenüber 2017/18 nicht signifikant verändert); Noten und Elternansprüche als Hauptursache (OECD-PDF nicht lesbar); vorurteilsbezogene Ausgrenzung als eigene Ursache (unter 2301 berücksichtigt). Die Studien stammen überwiegend aus Schweden und Italien; sie belegen Mechanismen, keine deutschen Häufigkeiten.
+
+### Abwanderung aus strukturschwachen Regionen (24)
+
+Ziel: „Menschen können in ihrer Region eine passende Ausbildung und berufliche Perspektive finden und ihren Alltag mit verlässlicher Versorgung gestalten.“ Strukturschwach heißt hier nicht „ländlich“ oder „Ost“; Ostlöhne, Arbeitsplätze, Bus und Bahn und Internet stehen in anderen Themen.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2401 | Junge Menschen von 18 bis 24 ziehen für Ausbildung, Studium und Berufseinstieg in Städte (2021) | Land | BiB im Sozialbericht 2024, Wanderungsstatistik (A) | Perspektiven vor Ort (regionalpolitisch); Rückkehr und Zuzug (wirtschaftsliberal, migrationsoffen) |
+| 2402 | Mehr Sterbefälle als Geburten seit 1972, 22 % ab 65 Jahren (2022) | Land | Destatis im Sozialbericht 2024 (A) | Familiengründung (familienpolitisch); Zuzug; Versorgung anpassen (raumplanerisch) |
+| 2403 | Ausbildungsangebot und -wünsche passen nicht zusammen (2025: 54.400 unbesetzte Stellen, 84.400 Suchende) | Bund | BIBB/BA (A) | Mehr Ausbildungsplätze (gewerkschaftsnah); Orientierung und Vermittlung (arbeitgebernah); Mobilität |
+| 2404 | 44 % der Kommunen bewerten ihre Finanzlage als mangelhaft (2026) | Land | KfW-Kommunalpanel 2026 (B); Schiller/Ewert 2021 und IW/IMK 2024 (C) | Einnahmen, Finanzausgleich (kommunal, sozialstaatlich); Leistungen gemeinsam organisieren (effizienzorientiert); Verfahren vereinfachen |
+
+Verworfen: „Das Land verliert überall Bevölkerung“ (2021 auch Zuwächse in zuvor schrumpfenden ländlichen Kreisen); „überall fehlen Ausbildungsplätze“; „Geld allein löst die Infrastrukturprobleme“; Remanenzkosten als eigene Ursache (nur C); Schuldenbremse als Ursache (nicht belegt). Ost-West-Werte der Quellen sind keine Abgrenzung strukturschwacher Regionen.
+
+### Hass und Anfeindungen im Internet (25)
+
+Ziel: „Menschen können sich online austauschen und beteiligen, ohne angefeindet, bedroht oder durch digitale Gewalt eingeschüchtert zu werden.“ Betrug im Internet bleibt bei Sicherheit, Cybermobbing unter Schülern bei Mobbing in der Schule.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2501 | Hasskommentare werden selten gemeldet (2023: 30 %, 2019: 25 %) | Land | forsa-Befragung für die Medienanstalt NRW (B); Bezugsgruppe im PDF zu bestätigen | Meldewege und Hilfe für Betroffene; zusätzliche Erkennung durch Anbieter |
+| 2502 | Gemeldete rechtswidrige Hassrede bleibt teils online (2022: 63,6 % entfernt, 3.634 Meldungen) | Bund | EU-Kommission, Kontrolltest 2022 (A) | Verbindliche Durchsetzung (verbraucherschutzorientiert); wirksamere interne Moderation (eigenverantwortungsorientiert) |
+| 2503 | Frust und sichtbare Anfeindungen erhöhen weitere Beleidigungen (Experiment, 667 Teilnehmende, USA, 2017) | Land | Cheng u. a. 2017 (B) | Konfliktkompetenz, Gegenrede; klare Grenzen; anderes Moderationsdesign |
+
+Verworfen oder offen: „Versagen der Strafverfolgung allgemein“ (kein Bezugszeitraum); Anonymität allein (Studie variiert sie nicht); „Algorithmen verstärken Hass“ (belegt nur für Empörung); Beratungslücken und Angst vor Anzeigen (Studie „Lauter Hass – leiser Rückzug“, PDF nicht gelesen). 2501 und 2502 zählen getrennt: Meldeverhalten der Betroffenen gegen Umgang der Plattformen.
+
+### Barrieren für Menschen mit Behinderung (26)
+
+Ziel: „Menschen mit Behinderung können ihren Alltag selbstbestimmt gestalten und Wohnen, Mobilität, Angebote, Arbeit und benötigte Unterstützung gleichberechtigt nutzen.“ Der gemeinsame Unterricht ist eine eigene Haltung (8).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2601 | Der Abbau von Barrieren an Bahnhöfen verzögert sich durch unzureichende Steuerung | Bund | Bundesrechnungshof 2025 (A) | Steuerung verbessern (verwaltungsorientiert); Finanzierung ausweiten (sozialstaatlich) |
+| 2602 | Über 50 % der Betriebe nennen fehlende geeignete Tätigkeiten als Hürde (2024) | Bund | IAB-Stellenerhebung, Wirtschaftsdienst 2025 (B, 1.251 Betriebe) | Arbeitsbedingungen anpassen (inklusionsorientiert); Vermittlung und Qualifizierung (arbeitsmarktorientiert) |
+| 2603 | Etwa 22 % nennen erwartete Leistungseinschränkungen oder Sonderregeln als Hürde (2024) | Bund | dieselbe Befragung (B); Urteile der Betriebe, keine gemessene Leistungsfähigkeit | Wissen und Einstellungspraxis (behindertenrechtlich); Beratung oder Regeländerungen (marktliberal) |
+
+Offen (nicht aufgenommen, weil Originale nicht lesbar): Wohnen (IWU, 586.000 barrierereduzierte Wohnungen gegenüber rund drei Millionen Haushalten mit mobilitätseingeschränkten Mitgliedern, Datengrundlage nicht gelesen), Gebäude und Wege (Teilhabebefragung), digitale Barrieren (BFIT-Bericht), Zugang zu Teilhabeleistungen (BAR-Bericht, unabhängiger Zweitbeleg fehlt). Diese Ursachen sollten nachgetragen werden; solange gilt das Thema als teilbelegt. „Menschen mit Behinderung sind generell weniger leistungsfähig“ ist nicht belegt.
+
+### Arbeitsbelastung im Gesundheitswesen (27)
+
+Ziel: „Beschäftigte im Gesundheitswesen können ihre Arbeit dauerhaft gesund, mit ausreichender Erholung, verlässlichen Arbeitszeiten und angemessener Entlohnung ausüben.“ Die Sicht der Beschäftigten; fehlende Pflegekräfte und Eigenanteile bleiben bei Pflege (10), Wartezeiten bei Arzttermine (1).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2701 | Unzureichende Besetzung und zu wenig Zeit je Patient (976 Pflegende, 2022) | Bund | Petersen/Melzer 2023 (B) | Personalbemessung (gewerkschaftlich); Delegation, Prozessorganisation (managementorientiert) |
+| 2702 | Wenige Pausen, Schichtwechsel gegen den Willen (873 Beschäftigte, 2021) | Bund | Dall’Ora 2023 (B), NEXT 2013 (B) | Pausen, Arbeitszeitbegrenzung (arbeitsschutzorientiert); Wunschdienstplan (flexibilitätsorientiert) |
+| 2703 | Dokumentation bindet Zeit (rund 54 Minuten je Frühdienst) | Bund | Schwabe u. a. 2026 (B, herstellernah, Erstautorin bei einem Hersteller beschäftigt); Gesner 2022 (B, unabhängig, US) | Nachweispflichten vereinfachen (liberal-konservativ); bedienbare Dokumentation (digitalpolitisch) |
+| 2704 | Aufwand übersteigt Belohnung (ERI-Ratio 1,7; 38,3 % mit Ausstiegsgedanken) | Bund | Gräske u. a. 2021/2023 (B, 2.689 Pflegende, Pandemie) | Entlohnung, Tarifbindung (gewerkschaftlich); Arbeitsentlastung, Perspektiven (organisatorisch) |
+| 2705 | Hohe emotionale Anforderungen, wenig Einfluss, fehlende Unterstützung | Land | Petersen/Melzer 2023 (B); Schmedding u. a. 2025 (B, qualitativ) | Mitsprache (mitbestimmungsorientiert); Führungsqualität, Supervision (managementorientiert) |
+| 2706 | Fehlender Zugang zu Dolmetschenden bei Sprachbarrieren (800 Beschäftigte, 22 Kliniken, 2018) | Land | Schneider u. a. 2023 (B, nicht repräsentativ) | Dolmetschdienste (integrationsorientiert); berufsbezogene Sprachkompetenz (qualifikationsorientiert) |
+
+Verworfen oder offen: „Alle Gesundheitsberufe sind schlecht bezahlt“; „Schichtdienst ist grundsätzlich schlecht“ (NEXT und Interviews 2023 zeigen: Gestaltung und Passung entscheiden); körperliche Belastung (BAuA-PDFs nicht gelesen); arbeitgeber- und gewerkschaftsnahe Studien (IW, Arbeitnehmerkammer, nicht gelesen). Die Belege betreffen überwiegend die Pflege, teils Ärzteschaft; für Rettungsdienst und Klinikpersonal ist die Übertragbarkeit offen. Ebene „Land“ bei 2705 und 2706 meint betriebliche Umsetzung und regionale Aufsicht, keine Weisungsbefugnis der Landesregierung.
+
+### Sexismus und Benachteiligung von Frauen (28)
+
+Ziel: „Frauen können ihren Alltag, ihren Beruf und ihr Familienleben selbstbestimmt gestalten, ohne geschlechtsbedingte Benachteiligung oder sexistische Anfeindungen.“ Aus den Zeilen zu Sexismus, Frauenrechten, Belästigung politisch aktiver Frauen und den Folgen des Patriarchats. Gewalt in Partnerschaft, sexualisierte Gewalt und Frauenhausplätze bleiben bei Sicherheit (904, 908); Online-Hass bei Thema 25.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2801 | Bei 53 % der Paare übernimmt die Frau deutlich mehr Routine-Hausarbeit (2025) | Bund | BiB, FReDA-Auswertung 2025 (B) | Partnerschaftliche Sorgearbeit (gleichstellungsorientiert); Wahlfreiheit, Entlastung der Familienarbeit (familienorientiert, liberal) |
+| 2802 | Mütter bleiben häufig langfristig und ungewollt in Teilzeit | Bund | BiB 2017 (B Leitbildbefragung, C Deutung); IW-Unternehmensmonitor 2026 ergänzend (B, arbeitgebernah) | Rückkehr in Vollzeit, planbare Arbeitszeiten; Teilzeit nach Wunsch, Familienzeit ohne Nachteile |
+| 2803 | Widersprüchliche Erwartungen an Mütter (83 % und 84 %, Befragung 2012) | Land | BiB/bpb, Diabaté 2014 (B Einstellungen, C Deutung als Druck) | Geschlechterstereotype (feministisch); Anerkennung häuslicher Sorgearbeit (familienorientiert) |
+| 2804 | Etwa 40 % wussten 2018 nichts von einer betrieblichen Beschwerdestelle | Bund | Antidiskriminierungsstelle, Befragung 2018, 1.531 Personen (B) | Beschwerdezugang, Schutz vor Nachteilen; betriebliche Prävention, klare Verantwortung |
+
+Verworfen oder offen: „Patriarchat“ als Sammelursache (zu unspezifisch); „der gesamte Lohnabstand ist Lohndiskriminierung“ (Eurostat: unzulässiger Schluss); Benachteiligung wegen Schwangerschaft und Elternzeit (Gutachten, PDF nicht gelesen); sexistische Anfeindung politisch aktiver Frauen (kein unabhängiger Mechanismusbeleg gefunden); Erwerbsdruck durch Gleichstellungspolitik (nur C). Ein bestimmtes Familienmodell ist für sich keine Benachteiligung.
+
+### Einsamkeit und psychische Belastung (29)
+
+Ziel: „Betroffene erleben tragfähige soziale Beziehungen, können mit ihren Gefühlen und Belastungen umgehen und erhalten bei Bedarf rechtzeitig passende Unterstützung.“ Aus den Zeilen zu Einsamkeit bei Senioren und zur Emotionsverarbeitung junger Männer; Einsamkeit, Alleinleben und psychische Erkrankung sind nicht gleichzusetzen.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 2901 | Verlust enger Bezugspersonen (Einsamkeit steigt nach dem Tod der Partnerin oder des Partners) | Land | Niino u. a. 2024, Review, 26 Längsschnittstudien (B, überwiegend Ältere) | Familie und Nachbarschaft (gemeinschaftsorientiert); professionelle Trauerbegleitung (sozialstaatlich) |
+| 2902 | Geringes Einkommen geht mit höherem Einsamkeitsrisiko einher (2,00 gegenüber 1,69) | Bund | DZA, Deutscher Alterssurvey 2025 (B, korrelativ) | Finanzielle Teilhabe (sozialpolitisch); soziale Einbindung unabhängig von Erwerbsarbeit |
+| 2903 | Psychische Belastung wird nicht erkannt oder nicht in Worte gefasst | Land | Gulliver u. a. 2010, Review, 22 Studien (B) | Emotionale Kompetenzen, Prävention; verständliche Beratung und Weitervermittlung |
+| 2904 | Scham und starre Männlichkeitsnormen hemmen die Hilfesuche | Land | Staiger u. a. 2020 (B, 12 Interviews, Süddeutschland) | Entstigmatisierung (gleichstellungsorientiert); vertrauliche, zielgruppengerechte Angebote (autonomieorientiert) |
+| 2905 | Psychotherapie nicht überall rechtzeitig zugänglich (2018: 112 Tage bis zur Richtlinientherapie) | Bund | Kruse u. a. 2024 (B); Berliner Gegenprüfung 2026 (B: Mediane 2/2/1 Wochen, nicht repräsentativ) | Kapazitäten ausbauen (ausbauorientiert); Vermittlung und Abläufe steuern (steuerungsorientiert) |
+
+Verworfen oder offen: „Alter oder Geschlecht verursachen Einsamkeit“; „junge Männer können keine Gefühle verarbeiten“ (nicht belegt, aufgenommen sind Hürden beim Ausdruck und bei der Hilfesuche); „alle warten monatelang ohne Hilfe“ (Studien unterscheiden Erstgespräch, Probatorik und Richtlinientherapie); gesundheitsbedingte Teilhabeeinschränkungen (nur Abstract); Einsamkeitsbarometer 2024 (PDF nicht gelesen).
+
+### Sucht und Glücksspiel (30)
+
+Ziel: „Betroffene können Abhängigkeit und gesundheitliche, soziale sowie finanzielle Schäden vermeiden oder überwinden und ihren Alltag selbstbestimmt gestalten.“ Alkohol, Tabak, Drogen, Medikamente und Glücksspiel; neutral zwischen Regulierung, Aufklärung und Eigenverantwortung.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3001 | Leichte Verfügbarkeit von Alkohol hängt mit höherem Konsum zusammen | Land | Guindon u. a. 2025, Review von 32 Reviews (B) | Angebot begrenzen (gesundheitsorientiert); verantwortlicher Verkauf, Aufklärung (liberal) |
+| 3002 | Niedrigere Preise gehen mit höherer Nachfrage einher | Bund | Burton u. a. 2024 (B); Gegenbefund Nelson 2015 (B, industriefinanziert) | Steuern, Mindestpreise; gezielte Beratung (eigenverantwortungsorientiert) |
+| 3003 | Werbung erhöht bei Jugendlichen die Bereitschaft zum Konsum | Bund | Wills u. a. 2010 (B, nur Abstract), Lovato 2011, Scott 2017 (B) | Werbegrenzen; Medienkompetenz, Lebenskompetenzen |
+| 3004 | Schnelle, leicht zugängliche Glücksspiele; Sportwettenwerbung | Land | Newall u. a. 2021, McGrane u. a. 2025 (B, Reviews, überwiegend Australien) | Angebot und Produktregeln begrenzen; Selbstlimits, Aufklärung |
+| 3005 | Unbekannte Wirkstoffe und Mischkonsum auf dem illegalen Markt (mindestens 7.600 Todesfälle in der EU 2024) | Bund | EUDA, Europäischer Drogenbericht 2026 (A, EU-Befund) | Lieferketten kontrollieren (repressiv); Qualitätskontrolle, Drug-Checking (schadensmindernd) |
+| 3006 | Scham und erwartete Abwertung halten von Hilfe ab (36,1 % mieden notwendige Behandlung) | Land | Luderer u. a. 2026 (B, 119 Behandelte in Frankfurt, Selbstauskunft; Autoren legen Pharmahonorare offen) | Respektvolle Behandlung (teilhabeorientiert); Selbsthilfe, Vertrauen (eigenverantwortungsorientiert) |
+
+Verworfen oder offen: „Sucht entsteht nur durch fehlenden Willen“; „jede Verkaufsstelle oder Werbung wirkt gleich“; „Preise spielen beim Rauschtrinken keine Rolle“; bundesweite Wartezeiten oder Unterfinanzierung der Suchthilfe (kein A/B-Beleg); Medikamentenabhängigkeit hat noch keine eigene Ursache (reguläre Medikamenteneinnahme ist kein Suchtproblem). Glücksspiel bleibt Land, auch online (die Glücksspielbehörde handelt im Auftrag der Länder).
+
+### Kosten von Studium und Ausbildung (31)
+
+Ziel: „Studierende und Auszubildende können ihren Lebensunterhalt sichern und ihre Ausbildung abschließen, ohne finanziell überfordert zu werden.“ Die Frage der Studiengebühren ist eine eigene Haltung (30). **Nur zwei Ursachen**, weil die Sozialerhebung für die Recherche nicht lesbar war; 3102 hat die KI selbst im PDF nachgelesen (Seite 11).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3101 | Ausbildungsvergütung im ersten Jahr unterscheidet sich stark (Handwerk 816 Euro, öffentlicher Dienst 1.075 Euro, 2023) | Bund | BIBB 2025 (A, Berufsbildungsstatistik; vereinbarte Bruttovergütung) | Mindestvergütung, Tarifbindung (gewerkschaftlich); Vergütungswettbewerb, Bewerbermangel (marktorientiert) |
+| 3102 | Studierende finanzieren sich oft durch Erwerbsarbeit (54,7 % mit, 63,6 % ohne BAföG, 2021) | Bund | 22. Sozialerhebung, Studierendenwerke (B, repräsentative Befragung), S. 11 | Förderhöhe und Zugang (sozialstaatlich); Eigenbeteiligung, Erwerbsarbeit als Erfahrung (ordnungs- und marktorientiert) |
+
+Verworfen oder offen: Rückzahlung der BAföG-Darlehen (Rechtsbeleg, keine A/B-Messung der Belastung); „BAföG schreckt wegen Schulden ab“ (nicht belegt); „Ausbildungsvergütungen sinken generell“ (BIBB: gestiegen); Unterdeckung nach Wohnformen (Verbandszusammenfassung C). Der Ausdruck „Rückzahlungen“ in der Zeile hat deshalb keine eigene Ursache.
+
+### Räume für Kultur und Clubs (32)
+
+Ziel: „Kulturschaffende und Besucherinnen und Besucher finden dauerhaft nutzbare, bezahlbare Orte für vielfältige Musik, Kultur und Clubleben.“ Aus den Zeilen zu Clubszene, Freilichtbühnen und Hausprojekten (die Wohnfunktion der Hausprojekte bleibt bei Miete). **Schwach belegt:** Alle vier Ursachen stützen sich auf eine europäische Studie mit zehn Interviews (2019/20) und 24 Dokumenten, keine deutsche Stichprobe; deutsche Verbandsdaten ergänzen sie (Soziokultur-Statistik 2025, C).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3201 | Steigende Mieten verdrängen kleine Spielstätten | Land | van der Hoeven/Hitters 2020 (B, Abschnitt 4.1) | Bestandsschutz, gemeinwohlorientierte Vergabe; zusätzliche Flächen, Umnutzung |
+| 3202 | Schallkonflikte mit Anwohnenden | Land | dieselbe Studie, Abschnitt 4.2 (B); BBSR-Schallschutzprogramm (C) | Schallschutz, angepasste Genehmigungen; Emissionsbegrenzung, Betriebszeiten |
+| 3203 | Kleine Betriebsbudgets | Land | dieselbe Studie, Abschnitt 5.2 (B); Soziokultur-Statistik (C, Verband) | Verlässliche Förderung; Eigenmittel, Kooperation |
+| 3204 | Gebäude passen nicht zur Nutzung | Land | dieselbe Studie, Abschnitt 2.1 (B) | Anpassung bestehender Orte; passende Formate oder Standorte |
+
+Verworfen oder offen: „Auflagen sind generell überzogen“ und „Brandschutz verdrängt Kultur“ (kein A/B-Beleg); „Freilichtbühnen sind unterausgelastet“ (keine Auslastungsmessung); „sinkende Nachfrage verursacht das Clubsterben“; Clubstudie der Initiative Musik (PDF nicht lesbar). Auflagen, die Gebäude betreffen, zählen zu 3204, Schall zu 3202.
+
+### Mediennutzung von Kindern und Jugendlichen (33)
+
+Ziel: „Kinder und Jugendliche nutzen Medien altersgerecht und selbstbestimmt, ohne dass Schlaf, Konzentration und ihr übriger Alltag darunter leiden.“ Hohe Nutzungsdauer allein gilt nicht als Schaden oder Sucht.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3301 | Soziale Belohnungen wie Likes fördern wiederholte Nutzung | Bund | Lindström u. a. 2021, 176 Erwachsene (B); Sherman u. a. 2016, 34 Jugendliche (B) | Plattformpflichten, Altersgrenzen (kinder- und verbraucherschutzorientiert); Selbstregulation, begleiteter Zugang (medienpädagogisch) |
+| 3302 | Nutzung zur Schlafenszeit hängt mit zu wenig Schlaf zusammen | Land | Carter u. a. 2016, Metaanalyse, 20 Studien (B, nur Abstract), Waterstrat u. a. 2026 | Nächtliche Nutzungsbegrenzung (schlafmedizinisch); vereinbarte Regeln (familienorientiert) |
+| 3303 | Schwierigkeiten der Medienbegleitung (57,6 % der Eltern sorgen sich wegen der Nutzungsdauer) | Land | Nikken/Opree 2018, niederländische Befragung 2015 (B) | Medienbildung, Beratung; elterliche Steuerung, technische Hilfen |
+
+Verworfen: „Viel Bildschirmzeit bedeutet Sucht“ (kein ausreichendes Kriterium); „Eltern setzen zu wenig Grenzen“ (Poulain 2023: kein Zusammenhang zwischen Regelhäufigkeit und Bildschirmzeit); fehlende schulische Medienbildung (nicht spezifisch belegt); Ablenkung nach der JIM-Studie (PDF ohne auswertbaren Inhalt). 3302 und 3303 belegen Risikozusammenhänge, keine abschließend bewiesenen Kausalketten.
+
+### Umgang der Polizei mit jungen Menschen (34)
+
+Ziel: „Junge Menschen werden bei Polizeikontakten respektvoll, nachvollziehbar und verhältnismäßig behandelt und können mögliche Fehler wirksam klären lassen.“ **Schwach belegt:** 3401 und 3402 beruhen auf US-Forschung, 3403 auf dem Abstract eines deutschen Fachbeitrags. Keine Aussage über die Polizei oder junge Menschen insgesamt; Polizeiausstattung bleibt bei Sicherheit, diskriminierende Auswahl bei Diskriminierung im Alltag.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3401 | Häufige Kontrollen belasten Jugendliche psychisch (US, 2013 bis 2015, 645 Jungen) | Land | Del Toro u. a. 2019, PNAS (B) | Weniger vermeidbare Kontrollen (bürgerrechtlich); gezieltere Kontrollen (sicherheitsorientiert) |
+| 3402 | Respektloser Umgang bei Polizeikontakten lässt sich verändern (US-Experiment 2017 bis 2020, 120 Orte) | Land | Weisburd u. a. 2022, PNAS (B) | Beteiligung und Erklärung; professionelles Auftreten, Einsatztraining |
+| 3403 | Verfahren wegen mutmaßlich übermäßiger Gewalt werden häufig mangels Tatverdachts eingestellt | Land | Abdul-Rahman u. a. 2019 (B, nur Abstract gelesen) | Unabhängige Prüfung; nachvollziehbare Dokumentation, faire Verfahren |
+
+Verworfen oder offen: „Kontrollen sind regelmäßig anlasslos oder rechtswidrig“ (für Deutschland nicht belegt); Beschwerdeverzicht aus Angst vor Gegenanzeigen (SIAK-Journal, nicht gelesen); Überlastung und Ausbildungsdefizite als Ursachen (MEGAVO-Bericht, PDF nicht gelesen). 3403 ist ein Aufarbeitungsansatz, keine nachgewiesene Ursache ursprünglicher Gewalt. Bundespolizei ist gesondert zu ordnen.
+
+### Kosten für den Führerschein (35)
+
+Ziel: „Menschen können die Fahrerlaubnis zu bezahlbaren, nachvollziehbaren Kosten und in verlässlich planbaren Abläufen erwerben und sicher fahren lernen.“ **Nur zwei Ursachen**, beide Kostenfaktoren und keine Erklärung ihrer Entstehung; Sicherheitswirkungen sind bei Maßnahmen gesondert zu prüfen.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3501 | Fahrschule und Führerscheingebühr 2024 um 5,8 % teurer (Verbraucherpreise insgesamt +2,2 %) | Bund | Destatis (A) | Effizientere Ausbildung (Anbieter); Transparenz und Wettbewerb (Verbraucherschutz); Entlastung der Lernenden (sozialpolitisch) |
+| 3502 | Wiederholungskosten (2025: 828.324 von 2.042.050 Theorie- und 577.858 von 1.886.133 Praxisprüfungen nicht bestanden) | Bund | Kraftfahrt-Bundesamt, Stand 31. 12. 2025 (A; Prüfungsversuche, nicht Personen) | Bessere Vorbereitung (qualitätsorientiert); Prüfungsumfang überprüfen (deregulierungsorientiert) |
+
+Verworfen oder offen: Personal- und Betriebskosten als Haupttreiber (Studien der Fahrschulwirtschaft, C, PDF nicht gelesen); bundesweiter Prüfkapazitätsmangel und Wartezeiten (kein A/B-Beleg); absichtliche Intransparenz (§ 32 FahrlG verlangt Preisklarheit, Einhaltung ungeprüft); überflüssiger Pflichtunterricht (Ausbildungsordnung belegt Umfang, nicht Entbehrlichkeit). Durchfallquoten beweisen keine schlechte Ausbildung.
+
+### Leerstand und Geschäftsschließungen in Innenstädten (36)
+
+Ziel: „Menschen finden in ihrer Innenstadt oder ihrem Ortskern passende Einkaufsangebote und können diese gut erreichen und gerne nutzen.“ Abgrenzung: Wohnungsmieten bei Miete, Abwanderung allgemein bei Thema 24.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3601 | Onlinehandel wirkt negativ auf den Geschäftsbesatz in den Zentren | Bund | BBSR-Projekt 2021 bis 2024 (C, eigene Fallstudien); Eurostat (A): Onlinekäuferanteil 2015 bis 2025 um 3 Prozentpunkte gestiegen | Lokalen Handel stärken (handelsnah); Vertriebswege und Flächen anpassen (marktwirtschaftlich); Wettbewerbsbedingungen angleichen (regulierungsorientiert) |
+| 3602 | Sortiment und Atmosphäre hängen mit Schließungen zusammen (Daten 2015 bis 2020) | Land | Kupfer/Marchand/Hennig-Thurau 2024, Journal of Retailing (B, Abstract) | Profil und Wettbewerb (marktbezogen); neue Nutzungen, Ansiedlungen (stadtentwicklungsorientiert) |
+| 3603 | 26 % im Osten, 32 % im Westen sehen großen Handlungsbedarf bei Stadtbild und Aufenthalt (2026, 5.079 Befragte) | Land | CIMA-Monitor 2026 (B; kommerzielle Stadtentwicklungsberatung mit Handelsverbänden) | Aufenthalt, Verkehrsberuhigung (stadtentwicklungs-/umweltorientiert); Sauberkeit, Instandhaltung (ordnungsorientiert) |
+| 3604 | Zugängliche Lage und günstige Öffnungszeiten hängen mit weniger Schließungen zusammen | Land | dieselbe Studie 2024 (B); Berliner Befragung 2020 (B: nur 6,6 % kamen mit dem Auto) | Auto und Parkplätze (autoorientiert); Fuß, Rad, ÖPNV (umweltorientiert); Öffnungszeiten (liberal-handelsnah) |
+
+Verworfen oder offen: Gewerbemieten und Nachnutzung (ILS- und IW-PDF nicht lesbar, IW arbeitgebernah); ungeeignete Ladenflächen (BBSR-PDF nicht gelesen); „Verkehrsberuhigung verursacht Schließungen“ (weder bestätigt noch widerlegt); „Ankerladenschließungen lösen eine Abwärtsspirale aus“ (Artikel gesperrt). Wahrnehmungen (3603) sind keine gemessenen Umsatzeffekte.
+
+### Finanzierung von Sportvereinen und Sportstätten (37)
+
+Ziel: „Menschen können dauerhaft in ihrem Sportverein trainieren und an Wettkämpfen teilnehmen, mit bezahlbaren Beiträgen und geeigneten Sportstätten.“ **Teilbelegt:** Zwei Ursachen betreffen kommunale Sportstätten (Kommunalpanel), die dritte Vereine selbst (Sportentwicklungsbericht, von der KI im PDF nachgelesen, Seite 55).
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3701 | Investitionsrückstand bei Sportstätten +6,0 Mrd. Euro (Kommunalpanel 2026) | Land | KfW/Difu, Pressemitteilung 17. 6. 2026 (B, Befragung im ersten Quartal 2026; subjektive Schätzung) | Mehr Investitionsmittel (förderungsorientiert); Bestand priorisieren, gemeinsam nutzen (haushaltsorientiert) |
+| 3702 | 60 % der Kommunen mit Sportbetrieben mussten zuletzt Verluste ausgleichen (ÖPNV 52 %) | Land | dieselbe Quelle (B; kommunaler Verlustausgleich, nicht Vereinsbilanzen) | Betriebsförderung (teilhabeorientiert); Nutzungsentgelte, Auslastung (eigenverantwortungsorientiert) |
+| 3703 | Problemdruck der Vereine durch Zustand der Sportstätten (+3,7 %) und finanzielle Situation (+2,5 %) gegenüber 2020 | Land | Sportentwicklungsbericht 2023 bis 2025, Bundesinstitut für Sportwissenschaft (B, Vereinsbefragung), S. 55 | Vereinsförderung, Entlastung des Ehrenamts; Eigeneinnahmen, Kooperation |
+
+Verworfen oder offen: Vereinsinsolvenzen als verbreitetes Problem (kein Häufigkeitsbeleg gelesen); Benachteiligung kleiner gegenüber großen Vereinen (ein kleineres Budget belegt keine Unterfinanzierung); Energie- und Betriebskosten, Ehrenamt und Hallenverfügbarkeit im Einzelnen (Bericht nur teilweise gelesen); unangemessene Liga-Vorgaben und ungerechte Hallenvergabe (kein unabhängiger Beleg).
+
 ## Forschungsstand: Integration, Abschiebung, Zuzug (1. 10. 2026)
 
 Stand: 1. 10. 2026 · KI-Recherche, noch nicht von der Betreiberin bestätigt. Geprüft am 1. 10. 2026: im Volltext Foged u. a., Dustmann u. a., Gehrsitz/Ungerer, ifo; im Abstract (Verlagsseite) Couttenier u. a., Pinotti, Fasani u. a., Hines/Peri, Lange/Sommerfeld, Marie/Pinotti. Miles/Cox und die Zahlen zu den Abgeschobenen nur über [EconoFact](https://econofact.org/does-deporting-immigrants-lower-crime-evidence-from-secure-communities) (Hines/Peri); die Originalseiten (SSRN) waren nicht abrufbar.

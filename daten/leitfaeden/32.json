@@ -1,0 +1,34 @@
+{
+  "thema_id": 32,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 32), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3201, 3202, 3203, 3204],
+      "text": "Zu 3201 gehören Gewerbemieten und Flächenschutz für Kulturorte, Clubs und Hausprojekte mit Kulturnutzung, zu 3202 Schall, Lärmschutz, Auflagen und Genehmigung von Veranstaltungen, zu 3203 Förderung und Betriebskosten von Kulturorten, zu 3204 Umbau, Sanierung und Brandschutz von Gebäuden für Veranstaltungen. Wohnungsmieten und Wohnungsbau gehören zu Miete."
+    },
+    {
+      "nr": 2,
+      "text": "Allgemeine Kulturförderung (Theater, Museen, Orchester) ohne Bezug zu Clubs, Spielstätten, soziokulturellen Zentren oder selbstverwalteten Kulturorten ist keine Maßnahme dieses Themas. Jugendtreffs gehören zu Freizeitangebote und Treffpunkte für Jugendliche."
+    }
+  ],
+  "suchbegriffe": {
+    "3201": {
+      "Flächen für Kultur schützen": ["clubsterben", "clubkultur", "kulturflächen", "bestandsschutz", "kulturschutzgebiet", "gewerbemietspiegel", "milieuschutz für kultur", "hausprojekte"],
+      "Zusätzliche Flächen und Umnutzung ermöglichen": ["zwischennutzung", "umnutzung", "leerstehende gebäude", "flächen bereitstellen", "bauland für kultur"]
+    },
+    "3202": {
+      "Schallschutz und angepasste Genehmigungen": ["schallschutz", "lärmschutzfonds", "agent of change", "veranstaltungsrecht", "genehmigungsverfahren für veranstaltungen", "clubs als kulturstätten", "baunutzungsverordnung"],
+      "Emissionen begrenzen und Anwohner schützen": ["lärmschutz für anwohner", "betriebszeiten", "nachtruhe", "sperrstunde", "immissionsschutz"]
+    },
+    "3203": {
+      "Verlässliche Förderung für Kulturorte": ["kulturförderung", "clubförderung", "spielstättenförderung", "soziokultur", "kulturelle teilhabe", "projektförderung kultur", "livemusikspielstätten"],
+      "Eigenmittel und Kooperationen": ["eigeneinnahmen", "sponsoring", "kooperation von kulturorten", "kostensenkung", "ehrenamt in der kultur"]
+    },
+    "3204": {
+      "Gebäude für Veranstaltungen anpassen": ["sanierung kulturorte", "brandschutz veranstaltungsstätten", "umbau", "veranstaltungstechnik", "kulturimmobilien", "sanierungsprogramm kultur"],
+      "Nutzung an das Gebäude anpassen": ["alternative standorte", "freilichtbühne", "open-air", "mehrfachnutzung"]
+    }
+  }
+}
