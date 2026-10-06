@@ -96,7 +96,7 @@ npm run -s entwurf:bericht '--' .cache/entwurf/<ID>/erfassung.json .cache/entwur
 npm run -s entwurf:archivieren '--' .cache/entwurf/<ID>/erfassung.json
 ```
 
-Commit je Thema („<Thema>: Maßnahmen aus N Programmen (KI-Entwurf)“) mit Themendatei, Leitfaden, `supabase/seed.sql` und `daten/protokolle/<ID>/…`. Keine weiteren Dokumente. Pull Request: je Thema zwei, drei Sätze (Programme, Maßnahmen, Instrumente, nicht erfasste Programme) und darunter `pr-daten.md` unverändert ([reference/pull-request.md](reference/pull-request.md)).
+Commit je Thema („<Thema>: Maßnahmen aus N Programmen (KI-Entwurf)“) mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/` und `daten/protokolle/<ID>/…`. Keine weiteren Dokumente. Pull Request: je Thema zwei, drei Sätze (Programme, Maßnahmen, Instrumente, nicht erfasste Programme) und darunter `pr-daten.md` unverändert ([reference/pull-request.md](reference/pull-request.md)).
 
 ## Sonderfälle
 

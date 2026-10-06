@@ -84,7 +84,7 @@ npm test         # Tests: Analyse, Bewertung, KI-Prüfung, Datenbank (PGlite)
 npm run lint
 npm run build
 npm run daten:pruefen  # Datenkatalog prüfen (mit -- --links auch alle Links abrufen)
-npm run seed       # supabase/seed.sql aus daten/ erzeugen
+npm run seed       # supabase/seed.sql und seed-teile/ aus daten/ erzeugen
 npm run pruefliste # Prüflisten je Thema nach pruefung/ (mit -- <Themen-ID> nur eines)
 npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 ```
@@ -97,6 +97,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 | `daten/` | Datenkatalog: Parteien, Themen, Ursachen, Maßnahmen (JSON, Anleitung in `daten/README.md`) |
 | `scripts/` | Prüfung des Katalogs, Seed- und Dashboard-Erzeugung |
 | `supabase/seed.sql` | Seed-Daten (erzeugt aus `daten/`) |
+| `supabase/seed-teile/` | Dieselben Seed-Daten je Thema, für den SQL Editor im Dashboard |
 | `supabase/dashboard/` | Erzeugte Dateien zum Einfügen im Dashboard (SQL komplett, Edge Function als eine Datei) |
 | `supabase/functions/analyse/` | Edge Function: KI-Einordnung und Speichern der Runde |
 | `supabase/functions/_shared/` | Gemeinsamer Code von App und Funktion: Typen, Punktelogik, KI-Prompt und -Prüfung, Moderationsfilter |

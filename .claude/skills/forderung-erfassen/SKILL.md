@@ -52,4 +52,4 @@ npm run -s entwurf:archivieren '--' .cache/entwurf/<ID>/erfassung.json '--name' 
 npm run -s instrumente '--' <ID>
 ```
 
-Commit „<Thema>: Lösungsweg <Forderung> nachgetragen (KI-Entwurf)“ mit Themendatei, Leitfaden, `supabase/seed.sql`, Protokoll. Pull Request: ein Satz je Forderung (Instrument-ID, in wie vielen Programmen gefunden) und `pr-daten.md`.
+Commit „<Thema>: Lösungsweg <Forderung> nachgetragen (KI-Entwurf)“ mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/`, Protokoll. Pull Request: ein Satz je Forderung (Instrument-ID, in wie vielen Programmen gefunden) und `pr-daten.md`.
