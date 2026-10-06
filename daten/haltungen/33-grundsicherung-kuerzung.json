@@ -35,5 +35,69 @@
   "freigabe": {
     "datum": "2026-10-06",
     "art": "ki"
-  }
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "teils",
+      "kurzfassung": "Will die Grundsicherung bei grundsaetzlich fehlender Bereitschaft zur Arbeitsannahme komplett streichen.",
+      "zitat": "Wenn jemand grundsätzlich nicht bereit ist, Arbeit anzunehmen, muss der Staat davon ausgehen, dass er nicht bedürftig ist. Dann muss die Grundsicherung komplett gestrichen werden.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=31",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "keine_aussage",
+      "begruendung": "Arbeitsmarktkapitel (S. 12–14) gelesen; im gesamten Text nach Sanktionen, Kürzungen, Leistungsminderungen, zumutbarer Arbeit, Arbeitsverweigerung, Mitwirkung, Fordern, Arbeitsangeboten, Ablehnung, Bürgergeld und Grundsicherung gesucht. S. 14 fordert Mitwirkung und hält am Prinzip des Forderns fest, nennt aber keine Leistungskürzungen bei Ablehnung zumutbarer Arbeit ohne wichtigen Grund.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "keine_aussage",
+      "begruendung": "Abschnitte Soziale Sicherung (S. 99–100) und Gute Arbeit (S. 67–68) gelesen: keine Aussage zu Leistungskürzungen wegen abgelehnter zumutbarer Arbeit. S. 99 nennt nur allgemein das soziokulturelle Existenzminimum.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 19 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Das Zitat fordert Kuerzungen bei fehlender Initiative, benennt aber weder die Ablehnung zumutbarer Arbeit noch Grundsicherung fuer Arbeitsuchende. Ein Zusammenhang mit dem abgefragten Fall ist moeglich, wird im Zitat jedoch nicht ausdruecklich hergestellt.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "ja",
+      "kurzfassung": "Bemaengelt unzureichende oder unterlassene Sanktionen bei Nichtannahme zumutbarer angebotener Arbeit.",
+      "zitat": "Jobcenter können in vielen Fällen von Pflichtverletzungen nicht ausreichend sanktionieren oder wenden mögliche Sanktionen nicht an, etwa wenn eine zumutbare angebotene Arbeit nicht angenommen wird.",
+      "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=25",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Will das Buergergeld durch eine sanktionsfreie individuelle Mindestsicherung ersetzen.",
+      "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen. Anspruch haben alle, die kein ausreichendes Einkommen oder Vermögen haben.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "keine_aussage",
+      "begruendung": "Abschnitt Arbeitsmarkt und Sozialstaat (S. 20–23) und S. 36 gelesen: keine Aussage zu Leistungskürzungen bei abgelehnter zumutbarer Arbeit. S. 22 nennt Konsequenzen bei abgelehnten Qualifizierungsmaßnahmen ohne triftige Gründe, aber keine Kürzung wegen eines Arbeitsangebots.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
 }

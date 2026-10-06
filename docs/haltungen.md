@@ -224,3 +224,17 @@ Positionen aus den sieben Bundesprogrammen (Fassungen laut `parteien.json`; das 
 - 30: Soll es Studiengebühren an staatlichen Hochschulen geben? (2 Programme)
 
 Lauf vom 5. 10. 2026 für die Haltungen 24–31 (Liste aus `/liste-einordnen`): 24, 25, 26 und 31 sind eingetragen, 27–30 zurückgestellt. Das BSW-Bundesprogramm war nicht abrufbar (HTTP 503) und lag als lokale Kopie der Betreiberin vor. Bei Haltung 31 meldeten FDP und AfD keine Aussage. Die Fundstellen suchte die kleinere Modellstufe, die Einordnung ein Agent ohne Parteinamen.
+
+### Ergebnisse Phase B (6. 10. 2026)
+
+Lauf für die Haltungen 32–35 (Liste aus `/liste-einordnen`), alle Bundesprogramme lasen die Agenten; **KI-Entwurf**, Einordnung ohne Parteinamen. „–“ heißt „keine Aussage“. Bei Haltung 32 fanden die Agenten bei Union, SPD und AfD Zitate (zwei Prozent des BIP als Untergrenze, gute Ausstattung), die Einordnung wertete sie nach dem Maßstab als „keine Aussage“, weil eine reale Erhöhung nicht ausdrücklich dasteht. Bei Haltung 33 waren zwei Begründungen länger als 400 Zeichen und wurden vor dem Eintragen gekürzt (Aussage unverändert).
+
+| ID | Frage | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 32 | Soll Deutschland seine Verteidigungsausgaben erhöhen? | – | – | ja | teils | – | nein | nein |
+| 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | teils | – | – | – | ja | nein | – |
+
+**Zurückgestellt** (nur zwei Programme mit erkennbarer Position; Phase A bleibt liegen, `--trotzdem` nur auf Entscheidung der Betreiberin):
+
+- 34: Sollen trockengelegte Moore wieder vernässt werden? (Union ja, Grüne ja; Linke: Zitat zur Revitalisierung ohne ausdrückliche Wiedervernässung)
+- 35: Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? (Grüne nein, Linke nein; FDP: Zitat zur heimischen Erdgasförderung mit Fracking-Verfahren, ohne Angabe unkonventioneller Lagerstätten)
