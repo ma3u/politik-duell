@@ -98,3 +98,34 @@ Aus `/liste-einordnen` (62 Zeilen, davon 50 ohne Dopplung). Die Liste kommt übe
 | Geld für Demokratie-, Jugend-, Kultur- und Sportprojekte soll gekürzt werden | haltung | wert, haltung_id 31 wenn erfasst |
 | Die Ehe für gleichgeschlechtliche Paare soll zurückgenommen oder eingeschränkt werden | grenze | grenze |
 | An Schulen sollen keine Regenbogenflaggen hängen, sondern Nationalflaggen | meta | wert – keine Bewertung |
+
+## 2026-10-06 Auszählung aus einer Befragung (Alltagsprobleme, nach den Themen eher aus dem Umfeld Jugend, Kultur und Gleichstellung)
+
+Aus `/liste-einordnen` (95 Zeilen, davon 24 ohne Dopplung bestätigt). Die Liste besteht fast nur aus Alltagsproblemen und kommt nach den Themen zu urteilen überwiegend aus einem Umfeld mit eher progressivem Schwerpunkt (Antidiskriminierung, Jugend, Kultur, Gleichstellung); Äußerungen aus anderen Lagern müssen aus weiteren Listen kommen. Es gab keine Zeile der Art Grenze oder Pauschal. Äußerungen sind umschrieben. Die Themen 19–37 sind angelegt (Ursachen mit KI-Freigabe), ihre Maßnahmen sind noch nicht erfasst: Die KI erwartet `problem` mit der Thema-ID, gewertet wird erst nach der Erfassung. „haltung_id“ gilt nur für Haltungen, die alle sieben Parteien erfasst haben (Stand 6. 10. 2026: 32 und 33); die zurückgestellten Haltungen 34 und 35 liefern `wert` ohne `haltung_id`.
+
+| Äußerung | Art | Erwartet |
+| --- | --- | --- |
+| Menschen werden wegen ihrer Herkunft im Alltag benachteiligt und beleidigt | thema | problem (Thema 19) oder Nachfrage |
+| Jugendlichen fehlen Orte und Angebote, um sich zu treffen und ihre Freizeit zu gestalten | thema | problem (Thema 20) oder Nachfrage |
+| Familien und Kinder haben zu wenig Geld zum Leben | thema | problem (Thema 21) oder Nachfrage |
+| Die Gesellschaft ist politisch gespalten, und manche Menschen radikalisieren sich | thema | problem (Thema 22) oder Nachfrage |
+| Ich habe Angst, dass Deutschland in einen Krieg hineingezogen wird, und sorge mich um Menschen auf der Flucht | haltung | wert, haltung_id 32 (Annäherung: Frage nach den Verteidigungsausgaben) |
+| Kinder werden in der Schule ausgegrenzt und stehen unter Druck | thema | problem (Thema 23) oder Nachfrage |
+| Junge Menschen verlassen unsere Region, weil sie hier keine Zukunft sehen | thema | problem (Thema 24) oder Nachfrage |
+| Im Internet wird man beschimpft und bedroht | thema | problem (Thema 25) oder Nachfrage |
+| Menschen mit Behinderung stoßen im Alltag auf Hürden | thema | problem (Thema 26) oder Nachfrage |
+| Beschäftigte im Gesundheitswesen sind überlastet, es fehlt Personal und der Dienstplan ist belastend | thema | problem (Thema 27 oder 10) oder Nachfrage |
+| Frauen werden benachteiligt und angefeindet, und in Frauenhäusern fehlen Plätze | thema | problem (Thema 28 oder 9) oder Nachfrage |
+| Ältere Menschen sind einsam und seelisch belastet | thema | problem (Thema 29) oder Nachfrage |
+| Alkohol und Spielhallen machen Menschen abhängig | thema | problem (Thema 30) oder Nachfrage |
+| Ich habe Zweifel, ob Menschen Sozialleistungen bekommen sollen, die arbeiten könnten | haltung | wert, haltung_id 33 |
+| Studium und Ausbildung kosten viel Geld, und danach drücken die Schulden | thema | problem (Thema 31) oder Nachfrage |
+| Clubs und alternative Kultur werden durch Auflagen der Behörden verdrängt | thema | problem (Thema 32) oder Nachfrage |
+| Kinder verbringen zu viel Zeit mit Handy und sozialen Medien | thema | problem (Thema 33) oder Nachfrage |
+| Trockengelegte Moore schaden der Umwelt | haltung | wert, ohne haltung_id (Haltung 34 zurückgestellt) |
+| Die Polizei geht unverhältnismäßig gegen Jugendliche vor | thema | problem (Thema 34) oder Nachfrage |
+| Es soll mehr politische Bildung im Unterricht geben | forderung | forderung, instrument_id wenn erfasst (Lösungsweg zu Thema 4 steht aus) |
+| Der Führerschein ist teuer, und die Abläufe in der Fahrschule sind kompliziert | thema | problem (Thema 35) oder Nachfrage |
+| Gasförderung durch Fracking und der Transport fossiler Energie schaden der Natur | haltung | wert, ohne haltung_id (Haltung 35 zurückgestellt) |
+| In unserer Innenstadt schließen die Läden | thema | problem (Thema 36) oder Nachfrage |
+| Sportvereine gehen pleite | thema | problem (Thema 37) oder Nachfrage |
