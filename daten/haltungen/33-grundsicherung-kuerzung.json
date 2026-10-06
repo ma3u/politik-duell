@@ -1,0 +1,39 @@
+{
+  "id": 33,
+  "frage": "Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird?",
+  "beschreibung": "Ob die Ablehnung eines zumutbaren Arbeitsangebots ohne wichtigen Grund zu einer Leistungskürzung führen soll oder ob die Leistungen deswegen ungekürzt bleiben sollen.",
+  "verwandte_themen": [5, 11],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer solche Kürzungen befürwortet, nennt verbindliche Mitwirkung und die eigenständige Sicherung des Lebensunterhalts als Ziele.",
+      "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2019/11/ls20191105_1bvl000716.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer solche Kürzungen befürwortet, nennt eine schnellere Arbeitsaufnahme; der IAB-Forschungsüberblick von 2025 berichtet entsprechende Befunde für Sanktionsregeln vor 2019.",
+      "quelle_url": "https://iab-forum.de/sanktionen-in-der-grundsicherung-ausgewaehlte-forschungsergebnisse-aus-veroeffentlichungen-der-jahre-2021-bis-2024-im-ueberblick/"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer solche Kürzungen ablehnt, nennt die Sicherung notwendiger Alltagsbedarfe auch bei einer Pflichtverletzung.",
+      "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2019/11/ls20191105_1bvl000716.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer solche Kürzungen ablehnt, nennt nachhaltige statt nur schnelle Arbeitsaufnahme; der IAB-Forschungsüberblick von 2025 berichtet für Sanktionen vor 2019 längerfristige Nachteile bei Beschäftigungsstabilität und Beschäftigungsqualität.",
+      "quelle_url": "https://iab-forum.de/sanktionen-in-der-grundsicherung-ausgewaehlte-forschungsergebnisse-aus-veroeffentlichungen-der-jahre-2021-bis-2024-im-ueberblick/"
+    }
+  ],
+  "einordnung": {
+    "ja": "Das Programm befürwortet Leistungskürzungen bei Ablehnung zumutbarer Arbeit ohne wichtigen Grund, einschließlich der Beibehaltung bestehender Sanktionen; die Anerkennung gesetzlicher Schutzvorgaben allein macht daraus kein teils.",
+    "teils": "Das Programm befürwortet solche Kürzungen nur in ausdrücklich eingegrenzten Fällen, etwa bei wiederholter Ablehnung, oder will sie auf bestimmte Leistungsbestandteile beschränken und lehnt sie darüber hinaus ab.",
+    "nein": "Das Programm lehnt Leistungskürzungen wegen der Ablehnung zumutbarer Arbeit ab, etwa durch die Forderung nach einer sanktionsfreien Grundsicherung."
+  },
+  "suchbegriffe": ["sanktion", "leistungskürz", "leistungsminder", "grundsicherung", "bürgergeld", "zumutbar", "arbeitsverweiger", "mitwirkungspflicht", "sanktionsfrei", "existenzminimum"],
+  "schlagwoerter": ["buergergeld", "grundsicherung", "sanktionen", "leistungskuerzungen", "arbeit ablehnen"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  }
+}

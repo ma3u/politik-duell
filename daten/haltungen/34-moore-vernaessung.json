@@ -1,0 +1,34 @@
+{
+  "id": 34,
+  "frage": "Sollen trockengelegte Moore wieder vernässt werden?",
+  "beschreibung": "Es geht darum, ob entwässerte Moorflächen wieder höhere Wasserstände erhalten sollen oder ob ihre Entwässerung bestehen bleiben soll.",
+  "verwandte_themen": [18],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer die Wiedervernässung befürwortet, nennt den Klimaschutz durch geringere Emissionen aus entwässerten Torfböden und den Schutz moortypischer Lebensräume.",
+      "quelle_url": "https://www.greifswaldmoor.de/moore.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer die Wiedervernässung ablehnt, nennt den Erhalt der bisherigen landwirtschaftlichen Nutzung, die auf abgesenkten Wasserständen beruht und bei nasser Bewirtschaftung verändert werden müsste.",
+      "quelle_url": "https://www.greifswaldmoor.de/moore.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer die Wiedervernässung befürwortet, nennt auch die Möglichkeit, Moorflächen weiterhin landwirtschaftlich zu nutzen, etwa durch den Anbau von Schilf oder Rohrkolben unter nassen Bedingungen.",
+      "quelle_url": "https://www.moorwissen.de/paludikultur.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Ein Programm ist ja, wenn es die Wiedervernässung entwässerter Moore grundsätzlich als Ziel unterstützt.",
+    "teils": "Ein Programm ist teils, wenn es die Wiedervernässung nur für bestimmte Flächen oder unter ausdrücklichen Bedingungen unterstützt, etwa ausschließlich freiwillig mit Zustimmung der Eigentümer.",
+    "nein": "Ein Programm ist nein, wenn es die Wiedervernässung grundsätzlich ablehnt oder die dauerhafte Entwässerung der Moorflächen ausdrücklich beibehalten will; bloßes Schweigen ist keine_aussage."
+  },
+  "suchbegriffe": ["moor", "wiedervernäss", "vernäss", "entwässer", "paludikultur", "moorschutz", "moorbodenschutz", "wasserstand", "torfboden"],
+  "schlagwoerter": ["moore", "wiedervernaessung", "moorschutz", "trockengelegte moore"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  }
+}
