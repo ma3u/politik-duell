@@ -1,0 +1,695 @@
+{
+  "pruefsumme": "34993b2ed36d8bb5711da6ed06135436b0dfb022a1aedc4888a52ab1039d8b68",
+  "thema": {
+    "id": 30,
+    "name": "Sucht und Glücksspiel",
+    "ziel": "Betroffene können Abhängigkeit und gesundheitliche, soziale sowie finanzielle Schäden vermeiden oder überwinden und ihren Alltag selbstbestimmt gestalten."
+  },
+  "ursachen": [
+    {
+      "id": 3001,
+      "beschreibung": "Leichte Verfügbarkeit von Alkohol hängt mit höherem Konsum zusammen; der Zusammenhang unterscheidet sich nach Verkaufsstelle und Altersgruppe (Review von 32 Reviews, 2025)",
+      "ebene": "land"
+    },
+    {
+      "id": 3002,
+      "beschreibung": "Niedrigere Preise gehen mit höherer Nachfrage nach Alkohol und Tabak einher; nicht alle Konsumgruppen reagieren gleich stark (Review, 2024)",
+      "ebene": "bund"
+    },
+    {
+      "id": 3003,
+      "beschreibung": "Alkohol- und Tabakwerbung erhöht bei Jugendlichen die Bereitschaft zum Konsum; bei hoher Selbstkontrolle ist der Effekt geringer (Studie, 2010)",
+      "ebene": "bund"
+    },
+    {
+      "id": 3004,
+      "beschreibung": "Schnelle, leicht zugängliche Glücksspiele erleichtern häufige Einsätze und hohe Verluste; Werbung für Sportwetten hängt mit mehr Spielen zusammen (Reviews 2021 und 2025)",
+      "ebene": "land"
+    },
+    {
+      "id": 3005,
+      "beschreibung": "Auf dem illegalen Drogenmarkt sind Wirkstoffe und Dosierungen unbekannt; die meisten der mindestens 7.600 drogenbezogenen Todesfälle in der EU 2024 betrafen mehrere Substanzen",
+      "ebene": "bund"
+    },
+    {
+      "id": 3006,
+      "beschreibung": "Scham und erwartete Abwertung halten von Hilfe ab: 36,1 % von 119 stationär behandelten Menschen mit Suchterkrankung in Frankfurt mieden notwendige medizinische Behandlung (2021 bis 2024)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006
+      ],
+      "text": "Zu 3001 Verkaufszeiten, Verkaufsstellen und Jugendschutz bei Alkohol, zu 3002 Steuern und Preise für Alkohol und Tabak, zu 3003 Werbung und Sponsoring, zu 3004 Glücksspielrecht, Spielhallen, Online-Glücksspiel und Sportwetten, zu 3005 illegale Drogen, Drogenpolitik und Risikominderung, zu 3006 Suchtberatung, Behandlung und Entstigmatisierung. Cannabis zählt zu 3005."
+    },
+    {
+      "nr": 2,
+      "text": "Psychische Gesundheit allgemein gehört zu Einsamkeit und psychische Belastung, Gewalt unter Alkoholeinfluss zu Sicherheit. Reguläre Medikamenteneinnahme ist kein Suchtproblem; Medikamentenabhängigkeit zählt nur zu 3006, wenn das Zitat Abhängigkeit oder Hilfe nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Aufklärungskampagnen und Präventionsmaßnahmen in Schulen über die Gefahren von Alkohol und Nikotinprodukten.",
+      "zitat": "Zusätzlich stärken wir mit Aufklärungskampagnen und präventiven Maßnahmen in Schulen das Bewusstsein für die Gefahren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3003
+      ],
+      "pruefsumme": "a32f713c1887718d"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Cannabis-Legalisierung beibehalten, um den Schwarzmarkt einzudämmen sowie Qualität und Jugendschutz zu sichern.",
+      "zitat": "Bei Cannabis haben wir bereits einen entscheidenden ersten Schritt gemacht, der hilft, den Schwarzmarkt einzudämmen und zugleich Qualität und Jugendschutz zu sichern. Wir halten deshalb an der Cannabis-Legalisierung fest.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "9689b753cd5f87a2"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Mobile Beratungsstellen für Sucht-, Schulden- und Familienprobleme sowie Sozialarbeit und Familienhilfe im ländlichen Raum verfügbar machen.",
+      "zitat": "Professionelle Hilfe vor Ort ist essentiell: Sozialarbeiter:innen und Familienhelfer müssen in ländlichen Gebieten verfügbar sein. Mobile Beratungsstellen für Schulden-, Sucht- und Familienprobleme beugen Krisen vor.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "cdb765974011ed10"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Werbung für Tabak und Alkohol stärker regulieren.",
+      "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir […] die Werbung für diese Produkte stärker regulieren.",
+      "ursachen_ids": [
+        3003
+      ],
+      "pruefsumme": "bd18ceb180c3ed6e"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Angebote der Sucht- und Drogenhilfe verstetigen und ausbauen, ebenso bedarfsorientierte ambulante Therapieangebote.",
+      "zitat": "Angebote zur Suchtprävention und Aufklärung sowie zur Sucht- und Drogenhilfe werden wir verstetigen und ausbauen, um die gesellschaftliche Teilhabe von Menschen mit Suchterkrankungen zu fördern. Bedarfsorientierte ambulante Therapieangebote werden wir ausbauen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "4d3fedd383dc902e"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Niedrigschwellige, anonyme Beratungsangebote ausbauen.",
+      "zitat": "Ausbau niedrigschwelliger, anonymer Beratungsangebote.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "8c4af5827b1e38a9"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Drogenkonsum vollständig entkriminalisieren und stattdessen medizinische und sozialarbeiterische Interventionsprogramme schaffen.",
+      "zitat": "Wir wollen Drogenkonsum vollständig entkriminalisieren und medizinische und sozialarbeiterische Interventions- programme schaffen, um Drogen endlich angemessen zu regulieren.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "faf3dcebcf2a79b7"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckend Drogenkonsumräume, sterile Konsumutensilien, Medikamente gegen Überdosierung und Drugchecking verfügbar machen.",
+      "zitat": "Deshalb wollen wir einen flächendeckenden Zugang zu Drogenkonsumräumen, sterilen Konsumutensilien und Medikamenten gegen Überdosierung. Die Analyse von Drogen auf gefährliche Beimischungen und Verunreinigungen (Drugchecking) muss flächendeckend verfügbar sein.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "4b6d5f3f5704dccc"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Suchtprävention mit Fokus auf junge Menschen ausbauen (Schule, Jugendarbeit, digitale Beratung) und den Zugang zu Beratung und Therapie verbessern.",
+      "zitat": "Wir setzen uns dafür ein, dass Prävention ausgebaut wird – mit einem klaren Fokus auf junge Menschen, beginnend mit der Prävention im Schul- und Jugendkontext, digitalen Beratungsangeboten und besserem Zugang zu Beratung und Therapie.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "4a45d98970ea24ec"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Suchthilfe und psychiatrische Versorgung über das Gesundheitsdienstgesetz ausweiten, auch mit Diagnostik und Therapie zulasten der Krankenkassen.",
+      "zitat": "Im Rahmen des [Land] Gesundheitsdienstgesetzes (GDG) wollen wir die subsidiäre und sozialkompensatorische Gesundheitsförderung, Suchthilfe und psychiatrische Versorgung für Kinder und Jugendliche sowie für Erwachsene ausweiten auf Möglichkeiten zur Übernahme von Diagnostik und Therapie, auch zulasten der gesetzlichen Krankenversicherung […]",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "eb0e8d3812e599c6"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Beratungsangebote zu Suchterkrankungen ausbauen und unabhängige Ansprechpersonen in allen Regionen stärken.",
+      "zitat": "Um Menschen jeden Alters und in jeder Lebenslage Zugang zum Gesundheitssystem zu ermöglichen, werden wir: […] Beratungsangebote zu Suchterkrankungen und sexueller Gesundheit ausbauen und unabhängige Ansprechpersonen in allen Regionen stärken.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "55a95913695f21a7"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Die Teillegalisierung von Cannabis wird rückgängig gemacht.",
+      "zitat": "Die Ampel ist mit ihrem Cannabis-Gesetz gescheitert. Es begrenzt weder den Konsum, noch drängt es den Schwarzmarkt zurück. […] Die Legalisierung dieser Droge nehmen wir deshalb zurück.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "cea4361974091902"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Präventions- und Aufklärungsmaßnahmen zu Sportwetten auf Landesebene deutlich verstärken, besonders für junge Männer in Sportvereinen.",
+      "zitat": "Auf Landesebene müssen Präventions- und Aufklärungsmaßnahmen deutlich intensiviert werden, insbesondere mit Blick auf junge Männer in Sportvereinen als besonders gefährdete Gruppe.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "58ba5ee571fea76e"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Drogenkriminalität auf organisierten Handel konzentrieren und dafür Kriminalpolizei und Zoll stärken.",
+      "zitat": "Die Bekämpfung der Drogenkriminalität muss sich auf den organisierten Handel und die dahinterstehenden Strukturen der Organisierten Kriminalität fokussieren, dafür werden wir die Kriminalpolizei und den Zoll entsprechend stärken.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "ebf5f1f2ab80cd73"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Werbe- und Sponsoringverbot für Tabak, Alkohol, andere Drogen und Glücksspielangebote, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen- und Spielsucht.",
+      "zitat": "Wir wollen ein Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen sowie Glücksspielangebote einführen, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen und Spielsucht.",
+      "ursachen_ids": [
+        3003
+      ],
+      "pruefsumme": "6d05b5597316d1ce"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Strengere Regulierung, Werbebeschränkungen und Altersgrenzen für Alkohol, Einweg-Zigaretten und neuartige Nikotinprodukte.",
+      "zitat": "Wir wollen strengere Regulierungen, Werbebeschränkungen und Altersgrenzen für Energy- Drinks, Alkohol, Einweg-Zigaretten und neuartige Nikotinprodukte.",
+      "ursachen_ids": [
+        3003
+      ],
+      "pruefsumme": "91152a71b560d104"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Beratungs- und Versorgungsangebote für wohnungslose Menschen, darunter Suchtberatung, ausbauen und dauerhaft sichern.",
+      "zitat": "Parallel bauen wir Beratungs- und Versorgungsangebote aus und verstetigen sie. Dazu zählen psychosoziale Beratung und Suchtberatung sowie Clearingstellen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "d1d9fcf934bd545a"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Äußeres Erscheinungsbild von Wettbüros regeln, etwa getönte Außenfenster.",
+      "zitat": "Das äußere Erscheinungsbild von Wettbüros wird geregelt. Dazu gehört unter anderem die Verpflichtung, dass Wettbüros getönte Außenfenster haben müssen, die den Blick ins Innere verhindern […]",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "a0466326e4cc2d96"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Polizei und Aufsichtsbehörden personell, technisch und rechtlich so ausstatten, dass illegales Glücksspiel online und vor Ort verfolgt wird.",
+      "zitat": "Polizei und Aufsichtsbehörden wollen wir personell, technisch und rechtlich so ausstatten, dass sie Glücksspielkriminalität im Netz wie vor Ort wirksam verfolgen und durchsetzen können.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "b7980cdacb603301"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Schritte einleiten, um eine europarechtskonforme Legalisierung von Cannabis zu ermöglichen.",
+      "zitat": "Bei Cannabis wollen wir, um den Gesundheitsschutz, den Jugendschutz und den Kampf gegen die Organisierte Kriminalität zu verbessern, die notwendigen Schritte einleiten, um eine europarechtskonforme Legalisierung zu ermöglichen.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "9ccc7fbaddcac012"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Hilfsangebote für Drogenkranke wie medizinische Betreuung und Unterstützung bei Substitutionstherapien ausweiten.",
+      "zitat": "Aufgrund der steigenden Zahl von Drogenkranken sollten Hilfsangebote wie geschützte Drogenkonsumräume, medizinische Betreuungseinrichtungen oder die Unterstützung bei Substitutionstherapien ausgeweitet werden.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "26b23da4b2c7bcd4"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Die Freigabe des Cannabiskonsums außerhalb medizinischer Indikationen soll umgehend zurückgenommen werden.",
+      "zitat": "Die Freigabe des Cannabiskonsums außerhalb bestimmter medizinischer Indikationen halten wir für einen Fehler, der umgehend korrigiert werden muss.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "f1595e90a55510c1"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Sucht- und Präventionsarbeit im Strafvollzug absichern, Zugang zu Substitution und Therapie sowie Anschlussversorgung nach der Haft.",
+      "zitat": "Wir setzen uns dafür ein, dass die Sucht- und Präventionsarbeit im Strafvollzug als zentraler Bestandteil der Resozialisierung abgesichert wird.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "b3884d2139658f56"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "land",
+      "beschreibung": "Initiativen zur Regulierung suchtfördernder Mechanismen wie Lootboxen fortführen und unterstützen.",
+      "zitat": "Fortführung und Unterstützung von Initiativen zur Regulierung suchtfördernder Mechanismen wie Lootboxen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3004
+      ],
+      "pruefsumme": "ede5dc01c42e4415"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Abschaffung des begleiteten Trinkens für Jugendliche unter 16 Jahren unterstützen.",
+      "zitat": "Wir unterstützen die Abschaffung vom „begleiteten Trinken“ von Jugendlichen unter 16 Jahren.",
+      "ursachen_ids": [
+        3001
+      ],
+      "pruefsumme": "093c351f43695d5f"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "land",
+      "beschreibung": "Anonyme, rund um die Uhr erreichbare digitale Suchtberatung dauerhaft aus Landesmitteln finanzieren.",
+      "zitat": "Die Förderung für DigiSucht_[Land] läuft Ende 2026 aus, dabei ist das Angebot unverzichtbar: Digitale Beratung ist anonym, kostenlos und rund um die Uhr erreichbar und damit die niedrigschwelligste Möglichkeit, überhaupt Hilfe zu suchen, egal bei welcher Sucht. […] Wir überführen DigiSucht_[Land] in eine dauerhafte Landesfinanzierung.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "d59c576f0b2da926"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Einheitliche, neutrale Verpackungen ohne Markenlogos für Tabakprodukte einführen.",
+      "zitat": "Dabei setzen wir uns auch für einen starken Nichtraucher*innenschutz ein, unter anderem durch die Einführung von einheitlichen, neutralen Verpackungen ohne Markenlogos.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3003
+      ],
+      "pruefsumme": "7c19cf6fa79453cd"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "land",
+      "beschreibung": "Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Hilfsangebote ausbauen, besonders für junge und sozial benachteiligte Menschen.",
+      "zitat": "Wir wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "e6a8dfc31f894082"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "land",
+      "beschreibung": "Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, besonders für junge Menschen und sozial Benachteiligte.",
+      "zitat": "Wir wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "12112f0f3f2e7479"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "land",
+      "beschreibung": "Suchtprävention und Suchtberatung als Pflichtaufgabe der Gesundheitsämter verankern.",
+      "zitat": "Verankerung von Suchtprävention und Suchtberatung als Pflichtaufgabe der Gesundheitsämter.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "9968e18fc99baf90"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Suchtprävention stärken.",
+      "zitat": "Zudem wollen wir die Suchtprävention und die Prävention psychischer Erkrankungen stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3006
+      ],
+      "pruefsumme": "24363a5ccc7b2f28"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Angebote für Prävention, Therapie und Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen.",
+      "zitat": "Gleichzeitig wollen wir die Angebote für Prävention, Therapie und den Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen und Menschen unterstützen, damit sie gar nicht erst abhängig werden oder ihnen besser geholfen werden kann, wenn sie suchtkrank sind.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "144afff55cdc691b"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "land",
+      "beschreibung": "Werbung für Sportwetten und Glücksspiel einschränken, Warnhinweise in der Werbung vorschreiben, Werbung gemeinnütziger Vereine verbieten.",
+      "zitat": "Werbung für Sportwetten soll eingeschränkt, Glücksspielprävention an Schulen ausgebaut werden. Wir fordern eine öffentliche Kampagne zu den Risiken von Glücksspiel und entsprechende Aufklärungsarbeit durch den Landessportbund [Land], klare Warnhinweise bei Glücksspielwerbung und ein Verbot von Glücksspielwerbung für gemeinnützige Vereine.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "8884cb93ad76de2a"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "land",
+      "beschreibung": "Spielerschutz im Glücksspiel stärken: konsequent gegen illegale Angebote vorgehen und regulierten Anbietern sichere Rahmenbedingungen schaffen.",
+      "zitat": "Wir wollen den Spielerschutz im Glücksspiel stärker aufstellen. […] Wir wollen daher konsequent gegen illegale Angebote vorgehen und gleichzeitig Rahmenbedingungen schaffen, die regulierte Anbieter in die Lage versetzen, ein sicheres und verlässliches Umfeld zu bieten",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "af4dcd406ef1a66a"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "land",
+      "beschreibung": "Therapieangebote für suchtkranke Menschen ausbauen.",
+      "zitat": "Drug-Checking und Therapieangebote bauen wir aus.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "f041bb81aea572dc"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "land",
+      "beschreibung": "Zwei Versorgungszentren für obdach- und wohnungslose Menschen finanzieren, unter anderem mit Beratung bei Suchterkrankungen.",
+      "zitat": "Wir wollen zwei Versorgungszentren für obdach- und wohnungslose Menschen finanzieren […] Neben fachärztlichen und zahnmedizinischen Leistungen sind das etwa Beratung bei psychischen und Suchterkrankungen […]",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "ab3c883b54c81396"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Mehr Mittel aus den Erträgen der staatlichen Toto-Lotto GmbH für Suchtprävention beim Glücksspiel bereitstellen.",
+      "zitat": "Zusätzlich zu regulatorischen Änderungen werden wir aus den Erträgen der staatlichen Toto-Lotto GmbH mehr Mittel für die Suchtprävention im Bereich Glücksspiel zur Verfügung stellen und zudem weiterhin konsequent gemeinnützige Projekte fördern.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "628e15022930e141"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Eigenständige Förderrichtlinie für Sucht- und Drogenberatung mit ausreichenden, verlässlichen Landesmitteln wieder einführen.",
+      "zitat": "Wiedereinführung einer eigenständigen Förderrichtlinie für Sucht- und Drogenberatung des zuständigen Gesundheitsministeriums in Zusammenarbeit mit dem Landesamt für Gesundheit und Soziales [Land], ausgestattet mit ausreichenden, verlässlichen Landesmitteln.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "d740a679302f784c"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "land",
+      "beschreibung": "Verhaltensbezogene Süchte wie Glücksspiel- oder Medienspielsucht systematisch in die Hilfestrukturen einbinden.",
+      "zitat": "Wir machen uns dafür stark, dass verhaltensgebundene Süchte wie Glücksspiel- oder Medienspielsucht systematisch in die Hilfestrukturen integriert werden.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "3804412d5b448198"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "land",
+      "beschreibung": "Regeln für Glücksspiel so ausgestalten, dass Jugend- und Spielerschutz gestärkt und illegales Glücksspiel bekämpft wird.",
+      "zitat": "Die Regularien für das Glückspiel sind so zu gestalten, dass der Jugend- und Spielschutz gestärkt, das illegale Glückspiel bekämpft und der legale Markt unter fairen Bedingungen gestaltet wird.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "fbaffa4064c47ce9"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Sucht- und Präventionsarbeit im Strafvollzug absichern, mit Zugang zu Substitution und Therapie sowie Anschlussversorgung nach der Haft.",
+      "zitat": "Wir setzen uns dafür ein, dass die Sucht- und Präventionsarbeit im Strafvollzug als zentraler Bestandteil der Resozialisierung abgesichert wird. Dabei braucht es Zugang zu Substitutions- und Therapiemöglichkeiten.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "18b4862d34a8ef15"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Präventions-, Beratungs- und Hilfsangebote im Bereich Drogen und Sucht stärken.",
+      "zitat": "Wir stärken Präventions-, Beratungs- und Hilfsangebote.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "31c3f926af2e0753"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "land",
+      "beschreibung": "Schwerpunktberatungsstellen und Landesfachstelle Glücksspielsucht personell und sachlich deutlich stärker ausstatten.",
+      "zitat": "Deutliche Stärkung der personellen und sachlichen Ausstattung von Schwerpunktberatungsstellen und der Landesfachstelle Glücksspielsucht.",
+      "ursachen_ids": [
+        3004
+      ],
+      "ursachen_offen": [
+        3006
+      ],
+      "pruefsumme": "c108b8f48eba2973"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Auf Bundesebene ein Suchtpräventionsprogramm für Kommunen anstoßen, das Prävention vor Ort bei Alkohol, Nikotin, Cannabis und Drogen finanziert.",
+      "zitat": "Wir setzen uns auf Bundesebene für ein Suchtpräventionsprogramm ein, dass - ähnlich wie die frühen Hilfen - an die Kommunen ausgereicht wird, um Präventionsarbeit vor Ort zu leisten.",
+      "ursachen_ids": [
+        3001
+      ],
+      "pruefsumme": "7b14bb1abb519ea5"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "land",
+      "beschreibung": "Landesfachstelle für Kinder aus psychisch und suchtbelasteten Familien über 2027 hinaus finanzieren, um Hilfe zu bieten und Sucht vorzubeugen.",
+      "zitat": "Um Kindern und Jugendlichen aus psychisch und/oder suchtbelasteten Familien Hilfe und Schutz bieten zu können und um Suchterkrankungen vorzubeugen, wollen wir die Finanzierung der Landesfachstelle KipsFam über das Jahr 2027 hinaus sicherstellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3006
+      ],
+      "pruefsumme": "31a107a10daf180b"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Suchtpsychiatrische Versorgung ausbauen, damit Drogenkranke dauerhaft abstinent werden.",
+      "zitat": "Unterstützend befürworten wir den Ausbau der suchtpsychiatrischen Versorgung, um die dauerhafte Abstinenz von Drogenkranken zu erreichen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "d35f14302d883b6a"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Land soll sich auf Bundesebene für ein weitgehendes Werbeverbot für Sportwetten einsetzen.",
+      "zitat": "Wir fordern daher, dass sich der [Land] [Land] auf Bundesebene für ein weitgehendes Werbeverbot für Sportwetten einsetzt.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "5dd9ac0fe6828c41"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "bund",
+      "beschreibung": "Cannabis in lizenzierten Fachgeschäften verkaufen, um Schwarzmarkt und organisierte Kriminalität einzudämmen.",
+      "zitat": "An dem Ziel des Verkaufs von Cannabis in lizenzierten Fachgeschäften halten wir weiter fest und setzen uns auf europäischer und internationaler Ebene dafür ein, auch um damit den Schwarzmarkt und die Organisierte Kriminalität weiter einzudämmen.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "dcc4c818e3e8f129"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Europol soll zur europäischen Zentralstelle ausgebaut werden, auch gegen Drogenkriminalität.",
+      "zitat": "Wir stärken die Zusammenarbeit von Europol mit den Polizeien der Mitgliedstaaten. […] im Kampf gegen Organisierte Kriminalität, insbesondere Drogen- und Schleuserkriminalität, Cyberkriminalität und Terrorismus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3005
+      ],
+      "pruefsumme": "cdf023a175c76788"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "land",
+      "beschreibung": "Alkohol- und Medikamentenberatung in den Bezirken landesweit steuern, damit sie flächendeckend und verlässlich verfügbar ist.",
+      "zitat": "Gerade die Struktur der Alkohol- und Medikamentenberatung in den Bezirken ist uneinheitlich und unzureichend aufgestellt. Es braucht eine landesweite Steuerung, um eine flächendeckende, qualitativ hochwertige und verlässliche Versorgung sicherzustellen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "8cd594ea78f95c46"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Spielersperrdatei „Oasis“ ausbauen, auch für glücksspielartige Elemente digital; im Online-Glücksspiel Vermögensprüfungen und feste Einzahlungslimits als Standard.",
+      "zitat": "Glücksspielwerbung soll stark eingeschränkt, der Schutz Minderjähriger verbessert und die Spieler*innensperrdatei „Oasis“ ausgebaut werden, auch für glücksspielartige Elemente in digitalen Angeboten. Echte Vermögensprüfungen und feste Einzahlungslimits sollen im Online-Glücksspiel der Standard sein.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "15d7aa994a65f6c2"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Cannabis vollständig legalisieren und dafür die nötigen Änderungen auf EU- und UN-Ebene durchsetzen.",
+      "zitat": "Wir wollen eine vollständige Legalisierung von Cannabis und die dafür notwendigen Änderungen auf EU- und UN-Ebene durchsetzen.",
+      "ursachen_ids": [
+        3005
+      ],
+      "pruefsumme": "595d6e82e7ccef97"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "bund",
+      "beschreibung": "Vorbeugung bei Suchtmitteln durch Aufklärung für einen verantwortungsfähigen Umgang statt Kriminalisierung des Konsums.",
+      "zitat": "Wir wollen die Prävention auch bei Suchtmitteln in den Fokus rücken. Statt das Konsumverhalten zu kriminalisieren, wollen wir durch Aufklärung zu einem verantwortungsfähigen Umgang mit Suchtmitteln verhelfen.",
+      "ursachen_ids": [
+        3005
+      ],
+      "ursachen_offen": [
+        3001
+      ],
+      "pruefsumme": "e4fb4e8000d0e863"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "land",
+      "beschreibung": "Sucht- und Drogenberatung dauerhaft stärken; Perspektivplan sichert Finanzierung und Organisation der Beratungsstellen.",
+      "zitat": "Wir stärken die Sucht- und Drogenberatung nachhaltig und bedarfsgerecht. Dafür werden wir gemeinsam mit den Trägern und der kommunalen Ebene einen Perspektivplan erarbeiten, um die finanzielle und organisatorische Ausstattung der Sucht- und Drogenberatungsstellen sicherzustellen.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "4ecd04b8a82b751f"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "land",
+      "beschreibung": "Flächendeckende Präventionsangebote gegen Glücksspielsucht, auch mobil und digital, vor allem im ländlichen Raum.",
+      "zitat": "Flächendeckende Präventionsangebote, auch mobil und digital, insbesondere für ländliche Regionen.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "8b392e1b5a5811f4"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "land",
+      "beschreibung": "Mehr Unterkünfte, die speziell für suchtkranke Menschen vorgesehen sind.",
+      "zitat": "Wir fordern daher eine Erweiterung von Unterkünften, die speziell für suchtkranke Menschen vorgesehen sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3006
+      ],
+      "pruefsumme": "a60efa98967ee72d"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "land",
+      "beschreibung": "Soziale Beratungsangebote einschließlich Suchtberatung landesweit stärken und besser vernetzen.",
+      "zitat": "Soziale Beratungsangebote, einschließlich Schuldner-, Insolvenz-, Sucht- sowie Schwangerschafts- und Familienberatung, werden landesweit gestärkt und besser vernetzt.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "d28afc13e7125968"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "bund",
+      "beschreibung": "Hersteller von Tabak und Alkohol sollen stärker an den Folgekosten für das Gesundheitssystem beteiligt werden.",
+      "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir Produzenten von gesundheitsschädlichen Produkten wie Tabak und Alkohol stärker an den enormen Folgekosten am Gesundheitssystem beteiligen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3002
+      ],
+      "pruefsumme": "daa0aca83aa9b355"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "land",
+      "beschreibung": "Kommunale Suchtberatungsstellen verlässlich fördern und Beratung zu Online-, Medien- und Gamingsucht stärken.",
+      "zitat": "Die kommunalen Suchtberatungsstellen fördern wir verlässlich und sichern damit auch die digitalen Angebote im Land. Wir wollen die Suchtberatung im Land konzeptionell weiterentwickeln und insbesondere Online- und Mediensucht sowie Suchtverhalten im Bereich Gaming im Beratungsansatz stärken.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "dd2e5b6db91b5334"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale Betreuung für Abhängige weiterentwickeln und niedrigschwelligen Zugang zur Substitutionsbehandlung vorantreiben.",
+      "zitat": "Psychosoziale sowie sozialpädagogische Betreuungsangebote für Abhängige müssen weiterentwickelt und der niedrigschwellige Zugang zur Substitutionsbehandlung vorangetrieben werden.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "1ec5b13eecb46270"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "land",
+      "beschreibung": "Mindestens ein Prozent der Glücksspielerlöse des Vorjahres verbindlich für Suchtprävention bei Glücksspiel einsetzen.",
+      "zitat": "Mindestens 1% der Glücksspielerlöse des Vorjahres verbindlich für Maßnahmen der Glücksspielsuchtprävention einsetzen.",
+      "ursachen_ids": [
+        3004
+      ],
+      "pruefsumme": "a66f708acbb1540d"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "land",
+      "beschreibung": "Alkohol- und Drogenprävention im Land finanziell und strukturell absichern.",
+      "zitat": "Außerdem stellen wir die wichtige Alkohol- und Drogenprävention im Land finanziell und strukturell auf sichere Füße.",
+      "ursachen_ids": [
+        3001
+      ],
+      "pruefsumme": "35a109c5e8aba22a"
+    }
+  ]
+}

@@ -57,5 +57,1067 @@
       "ebene": "land",
       "schlagwoerter": ["suchthilfe", "suchtberatung", "schaemen", "entzug", "suchtbehandlung", "medikamentensucht", "hilfe suchen"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 8319,
+      "name": "Anonyme, digitale und mobile Suchtberatung ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Anonymität und kurze Wege senken die Hemmschwelle durch Scham; Wirkung auf die Inanspruchnahme ist kaum untersucht. Finanzierbar und kurzfristig umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8320,
+      "name": "Suchtberatung und Suchthilfe ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Behandlung wirkt gut belegt, erreicht aber zu wenige Menschen; mehr Angebot beseitigt Scham als Hürde nur indirekt. Landesmittel und Träger vorhanden.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8321,
+      "name": "Suchtberatung dauerhaft finanzieren und Struktur absichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert vorhandene Angebote, schafft aber kaum zusätzlichen Zugang und senkt die Scham-Hürde nicht. Rechtlich und finanziell leicht umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8322,
+      "name": "Konsumräume, Streetwork, Substitution und kürzere Wartezeiten ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Konsumräume erreichen Randgruppen und senken Überdosierungen ohne mehr Konsum; Substitution ist gut belegt. Räume brauchen Landesrecht, Therapieplätze Personal.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8323,
+      "name": "Beratung und Versorgung für wohnungslose Menschen mit Suchtberatung ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erreicht eine Gruppe, die Behandlung häufig meidet; Wirkung kaum untersucht. Landesmittel und Träger vorhanden.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8324,
+      "name": "Suchthilfe und Substitution im Strafvollzug absichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Substitutionsbehandlung ist gut belegt, auch in Haft; senkt Rückfall und Todesfälle. Setzt an Behandlungszugang an, nicht an Scham allgemein. Länderzuständigkeit.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8325,
+      "name": "Prävention, Beratung und Therapie bei Sucht ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Behandlung ist belegt wirksam, die Versorgung liegt aber vor allem bei Ländern, Kommunen und Kassen; der Bund kann Programme und Rahmen setzen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8326,
+      "name": "Prävention und Aufklärung zu Glücksspiel ausbauen oder finanzieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aufklärung wirkte in weniger als der Hälfte der Studien zu Jugendprogrammen; Angebot und Werbung bleiben unverändert. Mit Landesmitteln leicht umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8327,
+      "name": "Illegales Glücksspiel konsequent verfolgen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verfolgung kann illegale Angebote eindämmen; Wirkung auf Spielschäden kaum untersucht, Online-Anbieter sind schwer zu fassen. Braucht Personal und Länderabstimmung.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8328,
+      "name": "Werbung für Tabak und Alkohol stärker beschränken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wer mehr Werbung wahrnimmt, raucht später häufiger; Beschränkungen verringern die Reichweite, aber nicht vollständig. Bundesrecht, EU-Spielraum vorhanden.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.cochrane.org/evidence/CD003439_does-advertising-and-promotion-tobacco-products-make-children-more-likely-smoke",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8329,
+      "name": "Legalen Cannabisverkauf über EU- und UN-Änderungen ermöglichen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Geprüfte Qualität kann Verunreinigungen senken; Studien zeigen gemischte Folgen für Konsum und Gesundheit. Hängt von EU- und UN-Recht ab, das Deutschland nicht allein ändert.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC10176789",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8330,
+      "name": "Cannabis-Freigabe außerhalb medizinischer Nutzung zurücknehmen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann den legalen Konsum senken, setzt aber nicht an unbekannten Wirkstoffen am Schwarzmarkt an; Studien zur Legalisierung sind gemischt. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC10176789",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8331,
+          "instrument": 8330,
+          "beschreibung": "Die Teillegalisierung von Cannabis wird rückgängig gemacht.",
+          "ursachen_ids": [3005],
+          "zitat": "Die Ampel ist mit ihrem Cannabis-Gesetz gescheitert. Es begrenzt weder den Konsum, noch drängt es den Schwarzmarkt zurück. […] Die Legalisierung dieser Droge nehmen wir deshalb zurück.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 2–3), Kapitel „Gesund und umsorgt in jeder Lebensphase“ (S. 97–99), „Ein soziales Netz für unsere Stadt“ (S. 100–103), „Sicherheit überall“ (S. 10–11) und Fundstellen S. 18, 101 gelesen; nichts zu Alkohol-Verfügbarkeit, Glücksspielregulierung oder Suchtberatung/Entstigmatisierung. Volltextsuche nach Sucht, Glücksspiel, Spielhalle, Alkohol, Stigma, Abhängigkeit ohne Zusage.",
+        "stand": "2026-10-06",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8332,
+          "instrument": 8321,
+          "beschreibung": "Sucht- und Drogenberatung dauerhaft stärken; Perspektivplan sichert Finanzierung und Organisation der Beratungsstellen.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir stärken die Sucht- und Drogenberatung nachhaltig und bedarfsgerecht. Dafür werden wir gemeinsam mit den Trägern und der kommunalen Ebene einen Perspektivplan erarbeiten, um die finanzielle und organisatorische Ausstattung der Sucht- und Drogenberatungsstellen sicherzustellen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=80",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8333,
+          "instrument": 8327,
+          "beschreibung": "Polizei und Aufsichtsbehörden personell, technisch und rechtlich so ausstatten, dass illegales Glücksspiel online und vor Ort verfolgt wird.",
+          "ursachen_ids": [3004],
+          "zitat": "Polizei und Aufsichtsbehörden wollen wir personell, technisch und rechtlich so ausstatten, dass sie Glücksspielkriminalität im Netz wie vor Ort wirksam verfolgen und durchsetzen können.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=81",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8334,
+          "instrument": 8326,
+          "beschreibung": "Mehr Mittel aus den Erträgen der staatlichen Toto-Lotto GmbH für Suchtprävention beim Glücksspiel bereitstellen.",
+          "ursachen_ids": [3004],
+          "zitat": "Zusätzlich zu regulatorischen Änderungen werden wir aus den Erträgen der staatlichen Toto-Lotto GmbH mehr Mittel für die Suchtprävention im Bereich Glücksspiel zur Verfügung stellen und zudem weiterhin konsequent gemeinnützige Projekte fördern.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=82",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8335,
+          "beschreibung": "Regeln für Glücksspiel so ausgestalten, dass Jugend- und Spielerschutz gestärkt und illegales Glücksspiel bekämpft wird.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Nennt Ziele für das Regelwerk ohne konkrete Mittel; Wirkung hängt von der Ausgestaltung ab. Änderungen brauchen alle Länder.",
+          "zitat": "Die Regularien für das Glückspiel sind so zu gestalten, dass der Jugend- und Spielschutz gestärkt, das illegale Glückspiel bekämpft und der legale Markt unter fairen Bedingungen gestaltet wird.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=9",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8336,
+          "instrument": 8328,
+          "beschreibung": "Strengere Regulierung, Werbebeschränkungen und Altersgrenzen für Alkohol, Einweg-Zigaretten und neuartige Nikotinprodukte.",
+          "ursachen_ids": [3003],
+          "zitat": "Wir wollen strengere Regulierungen, Werbebeschränkungen und Altersgrenzen für Energy- Drinks, Alkohol, Einweg-Zigaretten und neuartige Nikotinprodukte.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8337,
+          "instrument": 8329,
+          "beschreibung": "Schritte einleiten, um eine europarechtskonforme Legalisierung von Cannabis zu ermöglichen.",
+          "ursachen_ids": [3005],
+          "zitat": "Bei Cannabis wollen wir, um den Gesundheitsschutz, den Jugendschutz und den Kampf gegen die Organisierte Kriminalität zu verbessern, die notwendigen Schritte einleiten, um eine europarechtskonforme Legalisierung zu ermöglichen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=46",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8338,
+          "instrument": 8323,
+          "beschreibung": "Beratungs- und Versorgungsangebote für wohnungslose Menschen, darunter Suchtberatung, ausbauen und dauerhaft sichern.",
+          "ursachen_ids": [3006],
+          "zitat": "Parallel bauen wir Beratungs- und Versorgungsangebote aus und verstetigen sie. Dazu zählen psychosoziale Beratung und Suchtberatung sowie Clearingstellen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=51",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8339,
+          "beschreibung": "Therapieangebote für suchtkranke Menschen ausbauen.",
+          "ursachen_ids": [3006],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Therapie erweitert den Zugang, Drugchecking macht Inhalte erkennbar; beides in Deutschland erst in Teilen untersucht. Landesmittel und rechtliche Grundlage vorhanden.",
+          "zitat": "Drug-Checking und Therapieangebote bauen wir aus.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=51",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8340,
+          "beschreibung": "Abschaffung des begleiteten Trinkens für Jugendliche unter 16 Jahren unterstützen.",
+          "ursachen_ids": [3001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schließt einen legalen Zugang für unter 16-Jährige, betrifft aber nur eine kleine Gruppe. Regelung liegt im Bundesrecht, das Land kann nur im Bundesrat unterstützen.",
+          "zitat": "Wir unterstützen die Abschaffung vom „begleiteten Trinken“ von Jugendlichen unter 16 Jahren.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=51",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8341,
+          "beschreibung": "Auf Bundesebene ein Suchtpräventionsprogramm für Kommunen anstoßen, das Prävention vor Ort bei Alkohol, Nikotin, Cannabis und Drogen finanziert.",
+          "ursachen_ids": [3001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kommunale Prävention zeigt in Studien gemischte Wirkung auf Konsum. Hängt von einem Bundesprogramm ab, das das Land nur anstoßen kann.",
+          "zitat": "Wir setzen uns auf Bundesebene für ein Suchtpräventionsprogramm ein, dass - ähnlich wie die frühen Hilfen - an die Kommunen ausgereicht wird, um Präventionsarbeit vor Ort zu leisten.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=31",
+          "beleg_studie_url": "https://www.cochrane.org/evidence/CD003020_do-school-based-programmes-prevent-illicit-drug-use",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8342,
+          "instrument": 8321,
+          "beschreibung": "Landesfachstelle für Kinder aus psychisch und suchtbelasteten Familien über 2027 hinaus finanzieren, um Hilfe zu bieten und Sucht vorzubeugen.",
+          "ursachen_ids": [3006],
+          "zitat": "Um Kindern und Jugendlichen aus psychisch und/oder suchtbelasteten Familien Hilfe und Schutz bieten zu können und um Suchterkrankungen vorzubeugen, wollen wir die Finanzierung der Landesfachstelle KipsFam über das Jahr 2027 hinaus sicherstellen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=35",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8343,
+          "instrument": 8320,
+          "beschreibung": "Soziale Beratungsangebote einschließlich Suchtberatung landesweit stärken und besser vernetzen.",
+          "ursachen_ids": [3006],
+          "zitat": "Soziale Beratungsangebote, einschließlich Schuldner-, Insolvenz-, Sucht- sowie Schwangerschafts- und Familienberatung, werden landesweit gestärkt und besser vernetzt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8344,
+          "instrument": 8328,
+          "beschreibung": "Werbung für Tabak und Alkohol stärker regulieren.",
+          "ursachen_ids": [3003],
+          "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir […] die Werbung für diese Produkte stärker regulieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=94",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8345,
+          "beschreibung": "Einheitliche, neutrale Verpackungen ohne Markenlogos für Tabakprodukte einführen.",
+          "ursachen_ids": [3003],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Neutrale Packungen machen Tabak weniger attraktiv, der Rückgang des Konsums ist klein. EU-Recht erlaubt es, Bundesgesetz genügt.",
+          "zitat": "Dabei setzen wir uns auch für einen starken Nichtraucher*innenschutz ein, unter anderem durch die Einführung von einheitlichen, neutralen Verpackungen ohne Markenlogos.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=94",
+          "beleg_studie_url": "https://www.cochrane.org/evidence/CD011244_do-plain-tobacco-packaging-reduce-smoking",
+          "evidenz": "belegt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8346,
+          "instrument": 8329,
+          "beschreibung": "Cannabis in lizenzierten Fachgeschäften verkaufen, um Schwarzmarkt und organisierte Kriminalität einzudämmen.",
+          "ursachen_ids": [3005],
+          "zitat": "An dem Ziel des Verkaufs von Cannabis in lizenzierten Fachgeschäften halten wir weiter fest und setzen uns auf europäischer und internationaler Ebene dafür ein, auch um damit den Schwarzmarkt und die Organisierte Kriminalität weiter einzudämmen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=96",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8347,
+          "beschreibung": "Drogenkriminalität auf organisierten Handel konzentrieren und dafür Kriminalpolizei und Zoll stärken.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verfolgung des organisierten Handels macht den Markt nicht sicherer; Wirkung auf Verfügbarkeit und Reinheit ist kaum belegt. Personalaufbau bei Polizei und Zoll dauert.",
+          "zitat": "Die Bekämpfung der Drogenkriminalität muss sich auf den organisierten Handel und die dahinterstehenden Strukturen der Organisierten Kriminalität fokussieren, dafür werden wir die Kriminalpolizei und den Zoll entsprechend stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=96",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8348,
+          "instrument": 8325,
+          "beschreibung": "Angebote für Prävention, Therapie und Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen.",
+          "ursachen_ids": [3006],
+          "zitat": "Gleichzeitig wollen wir die Angebote für Prävention, Therapie und den Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen und Menschen unterstützen, damit sie gar nicht erst abhängig werden oder ihnen besser geholfen werden kann, wenn sie suchtkrank sind.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=96",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8349,
+          "beschreibung": "Werbung für Sportwetten und Glücksspiel einschränken, Warnhinweise in der Werbung vorschreiben, Werbung gemeinnütziger Vereine verbieten.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Werbung und Warnhinweise können Spielen mindern; Warnhinweise wirken in Studien gemischt. Änderungen am Glücksspielstaatsvertrag brauchen alle Länder.",
+          "zitat": "Werbung für Sportwetten soll eingeschränkt, Glücksspielprävention an Schulen ausgebaut werden. Wir fordern eine öffentliche Kampagne zu den Risiken von Glücksspiel und entsprechende Aufklärungsarbeit durch den Landessportbund Berlin, klare Warnhinweise bei Glücksspielwerbung und ein Verbot von Glücksspielwerbung für gemeinnützige Vereine.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=38",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8350,
+          "beschreibung": "Spielersperrdatei „Oasis“ ausbauen, auch für glücksspielartige Elemente digital; im Online-Glücksspiel Vermögensprüfungen und feste Einzahlungslimits als Standard.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sperren und Limits helfen vor allem bei Pflicht statt Freiwilligkeit; Reviews zeigen begrenzte Wirkung wegen Umgehung. Änderungen brauchen alle Länder.",
+          "zitat": "Glücksspielwerbung soll stark eingeschränkt, der Schutz Minderjähriger verbessert und die Spieler*innensperrdatei „Oasis“ ausgebaut werden, auch für glücksspielartige Elemente in digitalen Angeboten. Echte Vermögensprüfungen und feste Einzahlungslimits sollen im Online-Glücksspiel der Standard sein.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=210",
+          "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8351,
+          "instrument": 8320,
+          "beschreibung": "Verhaltensbezogene Süchte wie Glücksspiel- oder Medienspielsucht systematisch in die Hilfestrukturen einbinden.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir Bündnisgrüne machen uns dafür stark, dass verhaltensgebundene Süchte wie Glücksspiel- oder Medienspielsucht systematisch in die Hilfestrukturen integriert werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=210",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8352,
+          "instrument": 8322,
+          "beschreibung": "Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Hilfsangebote ausbauen, besonders für junge und sozial benachteiligte Menschen.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir Grüne wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=209",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8353,
+          "instrument": 8324,
+          "beschreibung": "Sucht- und Präventionsarbeit im Strafvollzug absichern, Zugang zu Substitution und Therapie sowie Anschlussversorgung nach der Haft.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir setzen uns dafür ein, dass die Sucht- und Präventionsarbeit im Strafvollzug als zentraler Bestandteil der Resozialisierung abgesichert wird.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=210",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8354,
+          "instrument": 8320,
+          "beschreibung": "Beratungsangebote zu Suchterkrankungen ausbauen und unabhängige Ansprechpersonen in allen Regionen stärken.",
+          "ursachen_ids": [3006],
+          "zitat": "Um Menschen jeden Alters und in jeder Lebenslage Zugang zum Gesundheitssystem zu ermöglichen, werden wir: […] Beratungsangebote zu Suchterkrankungen und sexueller Gesundheit ausbauen und unabhängige Ansprechpersonen in allen Regionen stärken.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=60",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8355,
+          "instrument": 8320,
+          "beschreibung": "Kommunale Suchtberatungsstellen verlässlich fördern und Beratung zu Online-, Medien- und Gamingsucht stärken.",
+          "ursachen_ids": [3006],
+          "zitat": "Die kommunalen Suchtberatungsstellen fördern wir verlässlich und sichern damit auch die digitalen Angebote im Land. Wir wollen die Suchtberatung im Land konzeptionell weiterentwickeln und insbesondere Online- und Mediensucht sowie Suchtverhalten im Bereich Gaming im Beratungsansatz stärken.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=85",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8356,
+          "instrument": 8319,
+          "beschreibung": "Anonyme, rund um die Uhr erreichbare digitale Suchtberatung dauerhaft aus Landesmitteln finanzieren.",
+          "ursachen_ids": [3006],
+          "zitat": "Die Förderung für DigiSucht_LSA läuft Ende 2026 aus, dabei ist das Angebot unverzichtbar: Digitale Beratung ist anonym, kostenlos und rund um die Uhr erreichbar und damit die niedrigschwelligste Möglichkeit, überhaupt Hilfe zu suchen, egal bei welcher Sucht. […] Wir überführen DigiSucht_LSA in eine dauerhafte Landesfinanzierung.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=85",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8357,
+          "beschreibung": "Cannabis-Legalisierung beibehalten, um den Schwarzmarkt einzudämmen sowie Qualität und Jugendschutz zu sichern.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kontrollierte Qualität senkt Verunreinigungen bei Cannabis; Studien zeigen gemischte Folgen für Konsum und Gesundheit. Rechtsrahmen besteht bereits.",
+          "zitat": "Bei Cannabis haben wir bereits einen entscheidenden ersten Schritt gemacht, der hilft, den Schwarzmarkt einzudämmen und zugleich Qualität und Jugendschutz zu sichern. Wir halten deshalb an der Cannabis-Legalisierung fest.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "beleg_studie_url": "https://europepmc.org/articles/PMC10176789",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8358,
+          "instrument": 8327,
+          "beschreibung": "Spielerschutz im Glücksspiel stärken: konsequent gegen illegale Angebote vorgehen und regulierten Anbietern sichere Rahmenbedingungen schaffen.",
+          "ursachen_ids": [3004],
+          "zitat": "Wir wollen den Spielerschutz im Glücksspiel stärker aufstellen. […] Wir wollen daher konsequent gegen illegale Angebote vorgehen und gleichzeitig Rahmenbedingungen schaffen, die regulierte Anbieter in die Lage versetzen, ein sicheres und verlässliches Umfeld zu bieten",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8359,
+          "instrument": 8322,
+          "beschreibung": "Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, besonders für junge Menschen und sozial Benachteiligte.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir Liberale wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=117",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8360,
+          "instrument": 8321,
+          "beschreibung": "Alkohol- und Medikamentenberatung in den Bezirken landesweit steuern, damit sie flächendeckend und verlässlich verfügbar ist.",
+          "ursachen_ids": [3006],
+          "zitat": "Gerade die Struktur der Alkohol- und Medikamentenberatung in den Bezirken ist uneinheitlich und unzureichend aufgestellt. Es braucht eine landesweite Steuerung, um eine flächendeckende, qualitativ hochwertige und verlässliche Versorgung sicherzustellen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=118",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8361,
+          "instrument": 8320,
+          "beschreibung": "Suchtprävention mit Fokus auf junge Menschen ausbauen (Schule, Jugendarbeit, digitale Beratung) und den Zugang zu Beratung und Therapie verbessern.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir Freie Demokraten setzen uns dafür ein, dass Prävention ausgebaut wird – mit einem klaren Fokus auf junge Menschen, beginnend mit der Prävention im Schul- und Jugendkontext, digitalen Beratungsangeboten und besserem Zugang zu Beratung und Therapie.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=118",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8362,
+          "instrument": 8324,
+          "beschreibung": "Sucht- und Präventionsarbeit im Strafvollzug absichern, mit Zugang zu Substitution und Therapie sowie Anschlussversorgung nach der Haft.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir setzen uns dafür ein, dass die Sucht- und Präventionsarbeit im Strafvollzug als zentraler Bestandteil der Resozialisierung abgesichert wird. Dabei braucht es Zugang zu Substitutions- und Therapiemöglichkeiten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=118",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 2), Kapitel Gesundheit und Versorgungssicherheit (S. 40–42), Gewaltschutz (S. 52–53), Hochschul-Gesundheit (S. 115) und Fundstelle S. 44 gelesen; Volltextsuche nach Sucht, Alkohol, Glücksspiel, Sportwetten, Drogen, Cannabis, Tabak, Spielerschutz, Entzug, Selbsthilfe ergab keine einschlägige Stelle.",
+        "stand": "2026-10-06",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 2) sowie Kapitel Soziales (S. 35-39), Sicherheit (S. 47-49), Gesundheit und Rettungswesen (S. 59-63) und Ladenöffnung (S. 7) gelesen; keine Treffer und keine Fundstellen, nichts zu Alkohol, Glücksspiel, Suchtberatung oder Entstigmatisierung.",
+        "stand": "2026-10-06",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8363,
+          "instrument": 8330,
+          "beschreibung": "Die Freigabe des Cannabiskonsums außerhalb medizinischer Indikationen soll umgehend zurückgenommen werden.",
+          "ursachen_ids": [3005],
+          "zitat": "Die Freigabe des Cannabiskonsums außerhalb bestimmter medizinischer Indikationen halten wir für einen Fehler, der umgehend korrigiert werden muss.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8364,
+          "instrument": 8325,
+          "beschreibung": "Suchtpsychiatrische Versorgung ausbauen, damit Drogenkranke dauerhaft abstinent werden.",
+          "ursachen_ids": [3006],
+          "zitat": "Unterstützend befürworten wir den Ausbau der suchtpsychiatrischen Versorgung, um die dauerhafte Abstinenz von Drogenkranken zu erreichen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 3), Kapitel ‚Gesundheit‘ (S. 69–73), ‚Wirtschaft & Soziales‘ (S. 51–52) und ‚Kinder, Jugend & Familie‘ (S. 62–63) gelesen; nichts zu Alkohol-Verfügbarkeit, Glücksspielangeboten, Suchtberatung, Suchtbehandlung oder Entstigmatisierung.",
+        "stand": "2026-10-06",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8365,
+          "beschreibung": "Alkohol- und Drogenprävention im Land finanziell und strukturell absichern.",
+          "ursachen_ids": [3001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Prävention sichert vorhandene Arbeit, Programme zeigen gemischte Wirkung auf Konsum. Mit Landesmitteln leicht umsetzbar.",
+          "zitat": "Außerdem stellen wir die wichtige Alkohol- und Drogenprävention im Land finanziell und strukturell auf sichere Füße.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=63",
+          "beleg_studie_url": "https://www.cochrane.org/evidence/CD003020_do-school-based-programmes-prevent-illicit-drug-use",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 248–256) und Kapitel Gesundheit und Pflege (S. 236–247), Innere Sicherheit/Justiz (Fundstellen zu Drogen S. 123, 138), Finanzen (S. 229) und Schulbildung (S. 79) gelesen; nichts zu Alkoholverfügbarkeit, Glücksspiel oder Suchthilfe.",
+        "stand": "2026-10-06",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8366,
+          "beschreibung": "Werbe- und Sponsoringverbot für Tabak, Alkohol, andere Drogen und Glücksspielangebote, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen- und Spielsucht.",
+          "ursachen_ids": [3003],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Werbung erhöht die Konsumbereitschaft, ein Verbot entfernt die Ursache direkt. Glücksspielwerbung ist Ländersache, Alkohol-Verbot hat verfassungs- und EU-rechtliche Hürden.",
+          "zitat": "Wir wollen ein Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen sowie Glücksspielangebote einführen, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen und Spielsucht.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "beleg_studie_url": "https://www.cochrane.org/evidence/CD003439_does-advertising-and-promotion-tobacco-products-make-children-more-likely-smoke",
+          "evidenz": "belegt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8367,
+          "beschreibung": "Drogenkonsum vollständig entkriminalisieren und stattdessen medizinische und sozialarbeiterische Interventionsprogramme schaffen.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Strafandrohung hängt mit schlechterem Zugang zu Prävention und Behandlung zusammen; Studien meist beobachtend. Braucht Gesetzesänderung und Aufbau der Hilfsprogramme.",
+          "zitat": "Wir wollen Drogenkonsum vollständig entkriminalisieren und medizinische und sozialarbeiterische Interventions- programme schaffen, um Drogen endlich angemessen zu regulieren.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "beleg_studie_url": "https://europepmc.org/articles/PMC6005363",
+          "evidenz": "belegt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8368,
+          "instrument": 8329,
+          "beschreibung": "Cannabis vollständig legalisieren und dafür die nötigen Änderungen auf EU- und UN-Ebene durchsetzen.",
+          "ursachen_ids": [3005],
+          "zitat": "Wir wollen eine vollständige Legalisierung von Cannabis und die dafür notwendigen Änderungen auf EU- und UN-Ebene durchsetzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8369,
+          "beschreibung": "Flächendeckend Drogenkonsumräume, sterile Konsumutensilien, Medikamente gegen Überdosierung und Drugchecking verfügbar machen.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Konsumräume senken Überdosierungen ohne mehr Konsum oder Kriminalität; Drugchecking ist weniger untersucht. Räume sind Ländersache, der Bund kann Rahmen und Mittel setzen.",
+          "zitat": "Deshalb wollen wir einen flächendeckenden Zugang zu Drogenkonsumräumen, sterilen Konsumutensilien und Medikamenten gegen Überdosierung. Die Analyse von Drogen auf gefährliche Beimischungen und Verunreinigungen (Drugchecking) muss flächendeckend verfügbar sein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012",
+          "evidenz": "belegt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8370,
+          "instrument": 8325,
+          "beschreibung": "Präventions-, Beratungs- und Hilfsangebote im Bereich Drogen und Sucht stärken.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir stärken Präventions-, Beratungs- und Hilfsangebote.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8371,
+          "beschreibung": "Land soll sich auf Bundesebene für ein weitgehendes Werbeverbot für Sportwetten einsetzen.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Werbung hängt mit weniger Wetten zusammen; das Land kann nur auf Bundesebene werben, Zustimmung anderer Länder und des Bundes fehlt.",
+          "zitat": "Wir fordern daher, dass sich der Berliner Senat auf Bundesebene für ein weitgehendes Werbeverbot für Sportwetten einsetzt.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=324",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8372,
+          "instrument": 8326,
+          "beschreibung": "Präventions- und Aufklärungsmaßnahmen zu Sportwetten auf Landesebene deutlich verstärken, besonders für junge Männer in Sportvereinen.",
+          "ursachen_ids": [3004],
+          "zitat": "Auf Landesebene müssen Präventions- und Aufklärungsmaßnahmen deutlich intensiviert werden, insbesondere mit Blick auf junge Männer in Sportvereinen als besonders gefährdete Gruppe.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=324",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8373,
+          "beschreibung": "Äußeres Erscheinungsbild von Wettbüros regeln, etwa getönte Außenfenster.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Sichtbarkeit kann Anreize senken, ändert aber Zugang und Einsatzhöhe nicht. Per Landesrecht rasch umsetzbar.",
+          "zitat": "Das äußere Erscheinungsbild von Wettbüros wird geregelt. Dazu gehört unter anderem die Verpflichtung, dass Wettbüros getönte Außenfenster haben müssen, die den Blick ins Innere verhindern […]",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=324",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8374,
+          "instrument": 8320,
+          "beschreibung": "Angebote der Sucht- und Drogenhilfe verstetigen und ausbauen, ebenso bedarfsorientierte ambulante Therapieangebote.",
+          "ursachen_ids": [3006],
+          "zitat": "Angebote zur Suchtprävention und Aufklärung sowie zur Sucht- und Drogenhilfe werden wir verstetigen und ausbauen, um die gesellschaftliche Teilhabe von Menschen mit Suchterkrankungen zu fördern. Bedarfsorientierte ambulante Therapieangebote werden wir ausbauen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=145",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8375,
+          "instrument": 8322,
+          "beschreibung": "Psychosoziale Betreuung für Abhängige weiterentwickeln und niedrigschwelligen Zugang zur Substitutionsbehandlung vorantreiben.",
+          "ursachen_ids": [3006],
+          "zitat": "Psychosoziale sowie sozialpädagogische Betreuungsangebote für Abhängige müssen weiterentwickelt und der niedrigschwellige Zugang zur Substitutionsbehandlung vorangetrieben werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=145",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8376,
+          "beschreibung": "Suchthilfe und psychiatrische Versorgung über das Gesundheitsdienstgesetz ausweiten, auch mit Diagnostik und Therapie zulasten der Krankenkassen.",
+          "ursachen_ids": [3006],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Suchthilfe und Therapie erweitert den Zugang; Kassenleistungen hängen an Bundesrecht und Selbstverwaltung. Wirkung auf die Scham-Hürde ist indirekt.",
+          "zitat": "Im Rahmen des Berliner Gesundheitsdienstgesetzes (GDG) wollen wir die subsidiäre und sozialkompensatorische Gesundheitsförderung, Suchthilfe und psychiatrische Versorgung für Kinder und Jugendliche sowie für Erwachsene ausweiten auf Möglichkeiten zur Übernahme von Diagnostik und Therapie, auch zulasten der gesetzlichen Krankenversicherung […]",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=130",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8377,
+          "instrument": 8323,
+          "beschreibung": "Zwei Versorgungszentren für obdach- und wohnungslose Menschen finanzieren, unter anderem mit Beratung bei Suchterkrankungen.",
+          "ursachen_ids": [3006],
+          "zitat": "Wir wollen zwei Versorgungszentren für obdach- und wohnungslose Menschen finanzieren […] Neben fachärztlichen und zahnmedizinischen Leistungen sind das etwa Beratung bei psychischen und Suchterkrankungen […]",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=130",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 6 (S. 10–11), 7 (S. 11–13), 10 (S. 18–19), 11 (S. 19–20), 15 (S. 24–25), 16 (S. 25–26), 19 (S. 28) und Fundstelle S. 14 gelesen; Stichwortsuche (Sucht, Alkohol, Glücksspiel, Cannabis, Drogen, Abhängigkeit, Stigma, Tabak) ohne einschlägigen Treffer. Nichts zu Alkoholverkauf, Glücksspielrecht oder Suchtberatung.",
+        "stand": "2026-10-06",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8378,
+          "instrument": 8319,
+          "beschreibung": "Mobile Beratungsstellen für Sucht-, Schulden- und Familienprobleme sowie Sozialarbeit und Familienhilfe im ländlichen Raum verfügbar machen.",
+          "ursachen_ids": [3006],
+          "zitat": "Professionelle Hilfe vor Ort ist essentiell: Sozialarbeiter:innen und Familienhelfer müssen in ländlichen Gebieten verfügbar sein. Mobile Beratungsstellen für Schulden-, Sucht- und Familienprobleme beugen Krisen vor.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=134",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "keine_massnahme": {
+        "begruendung": "Kein Inhaltsverzeichnis; Kapitel Gesundheit und Pflege (S. 26-27), Verbraucher (S. 30-31), Familie und Bildung (S. 23-25, 31-32), Sicherheit/Polizei (S. 34-36), Corona-Aufarbeitung (S. 40-41) und Fundstellen S. 13 und 18 gelesen; Volltextsuche nach Sucht, Drogen, Alkohol, Tabak, Cannabis, Glücksspiel, Wetten, Konsum, Prävention: keine Zusage zu Alkohol, Tabak, Glücksspiel, Drogen oder Suchthilfe.",
+        "stand": "2026-10-06",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8379,
+          "instrument": 8322,
+          "beschreibung": "Hilfsangebote für Drogenkranke wie medizinische Betreuung und Unterstützung bei Substitutionstherapien ausweiten.",
+          "ursachen_ids": [3006],
+          "zitat": "Aufgrund der steigenden Zahl von Drogenkranken sollten Hilfsangebote wie geschützte Drogenkonsumräume, medizinische Betreuungseinrichtungen oder die Unterstützung bei Substitutionstherapien ausgeweitet werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=12",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8380,
+          "instrument": 8326,
+          "beschreibung": "Mindestens ein Prozent der Glücksspielerlöse des Vorjahres verbindlich für Suchtprävention bei Glücksspiel einsetzen.",
+          "ursachen_ids": [3004],
+          "zitat": "Mindestens 1% der Glücksspielerlöse des Vorjahres verbindlich für Maßnahmen der Glücksspielsuchtprävention einsetzen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=64",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8381,
+          "instrument": 8320,
+          "beschreibung": "Schwerpunktberatungsstellen und Landesfachstelle Glücksspielsucht personell und sachlich deutlich stärker ausstatten.",
+          "ursachen_ids": [3006],
+          "zitat": "Deutliche Stärkung der personellen und sachlichen Ausstattung von Schwerpunktberatungsstellen und der Landesfachstelle Glücksspielsucht.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=64",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8382,
+          "instrument": 8326,
+          "beschreibung": "Flächendeckende Präventionsangebote gegen Glücksspielsucht, auch mobil und digital, vor allem im ländlichen Raum.",
+          "ursachen_ids": [3004],
+          "zitat": "Flächendeckende Präventionsangebote, auch mobil und digital, insbesondere für ländliche Regionen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=64",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8383,
+          "beschreibung": "Initiativen zur Regulierung suchtfördernder Mechanismen wie Lootboxen fortführen und unterstützen.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Lootboxen ähneln Glücksspiel, Wirkung von Regulierung ist kaum untersucht. Zuständig sind Bund und EU, das Land kann nur Initiativen unterstützen.",
+          "zitat": "Fortführung und Unterstützung von Initiativen zur Regulierung suchtfördernder Mechanismen wie Lootboxen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=64",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8384,
+          "instrument": 8321,
+          "beschreibung": "Eigenständige Förderrichtlinie für Sucht- und Drogenberatung mit ausreichenden, verlässlichen Landesmitteln wieder einführen.",
+          "ursachen_ids": [3006],
+          "zitat": "Wiedereinführung einer eigenständigen Förderrichtlinie für Sucht- und Drogenberatung des zuständigen Gesundheitsministeriums in Zusammenarbeit mit dem Landesamt für Gesundheit und Soziales MV, ausgestattet mit ausreichenden, verlässlichen Landesmitteln.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=62",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8385,
+          "instrument": 8321,
+          "beschreibung": "Suchtprävention und Suchtberatung als Pflichtaufgabe der Gesundheitsämter verankern.",
+          "ursachen_ids": [3006],
+          "zitat": "Verankerung von Suchtprävention und Suchtberatung als Pflichtaufgabe der Gesundheitsämter.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=62",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8386,
+          "instrument": 8319,
+          "beschreibung": "Niedrigschwellige, anonyme Beratungsangebote ausbauen.",
+          "ursachen_ids": [3006],
+          "zitat": "Ausbau niedrigschwelliger, anonymer Beratungsangebote.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=64",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel 4.4 Gesundheit (S. 55-61, v. a. Psychische Gesundheit ernst nehmen, S. 58-59), Schulsozialarbeit (S. 47-48) und Kapitel 5.2 Sicherheit (S. 65-66) gelesen; keine Zusage zu Alkohol, Glücksspiel oder Suchthilfe. Suchtprävention steht nur als Ziel und Bedarfsaussage.",
+        "stand": "2026-10-06",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
   ]
 }

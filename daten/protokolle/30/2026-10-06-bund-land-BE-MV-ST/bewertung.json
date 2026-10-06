@@ -1,0 +1,636 @@
+{
+  "blind_pruefsumme": "34993b2ed36d8bb5711da6ed06135436b0dfb022a1aedc4888a52ab1039d8b68",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Anonyme, digitale und mobile Suchtberatung ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Anonymität und kurze Wege senken die Hemmschwelle durch Scham; Wirkung auf die Inanspruchnahme ist kaum untersucht. Finanzierbar und kurzfristig umsetzbar.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I2",
+      "name": "Suchtberatung und Suchthilfe ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Behandlung wirkt gut belegt, erreicht aber zu wenige Menschen; mehr Angebot beseitigt Scham als Hürde nur indirekt. Landesmittel und Träger vorhanden.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135"
+    },
+    {
+      "kennung": "I3",
+      "name": "Suchtberatung dauerhaft finanzieren und Struktur absichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert vorhandene Angebote, schafft aber kaum zusätzlichen Zugang und senkt die Scham-Hürde nicht. Rechtlich und finanziell leicht umsetzbar.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Konsumräume, Streetwork, Substitution und kürzere Wartezeiten ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Konsumräume erreichen Randgruppen und senken Überdosierungen ohne mehr Konsum; Substitution ist gut belegt. Räume brauchen Landesrecht, Therapieplätze Personal.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012"
+    },
+    {
+      "kennung": "I5",
+      "name": "Beratung und Versorgung für wohnungslose Menschen mit Suchtberatung ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erreicht eine Gruppe, die Behandlung häufig meidet; Wirkung kaum untersucht. Landesmittel und Träger vorhanden.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I6",
+      "name": "Suchthilfe und Substitution im Strafvollzug absichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Substitutionsbehandlung ist gut belegt, auch in Haft; senkt Rückfall und Todesfälle. Setzt an Behandlungszugang an, nicht an Scham allgemein. Länderzuständigkeit.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135"
+    },
+    {
+      "kennung": "I7",
+      "name": "Prävention, Beratung und Therapie bei Sucht ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Behandlung ist belegt wirksam, die Versorgung liegt aber vor allem bei Ländern, Kommunen und Kassen; der Bund kann Programme und Rahmen setzen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135"
+    },
+    {
+      "kennung": "I8",
+      "name": "Prävention und Aufklärung zu Glücksspiel ausbauen oder finanzieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aufklärung wirkte in weniger als der Hälfte der Studien zu Jugendprogrammen; Angebot und Werbung bleiben unverändert. Mit Landesmitteln leicht umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048"
+    },
+    {
+      "kennung": "I9",
+      "name": "Illegales Glücksspiel konsequent verfolgen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verfolgung kann illegale Angebote eindämmen; Wirkung auf Spielschäden kaum untersucht, Online-Anbieter sind schwer zu fassen. Braucht Personal und Länderabstimmung.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I10",
+      "name": "Werbung für Tabak und Alkohol stärker beschränken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wer mehr Werbung wahrnimmt, raucht später häufiger; Beschränkungen verringern die Reichweite, aber nicht vollständig. Bundesrecht, EU-Spielraum vorhanden.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.cochrane.org/evidence/CD003439_does-advertising-and-promotion-tobacco-products-make-children-more-likely-smoke"
+    },
+    {
+      "kennung": "I11",
+      "name": "Legalen Cannabisverkauf über EU- und UN-Änderungen ermöglichen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Geprüfte Qualität kann Verunreinigungen senken; Studien zeigen gemischte Folgen für Konsum und Gesundheit. Hängt von EU- und UN-Recht ab, das Deutschland nicht allein ändert.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC10176789"
+    },
+    {
+      "kennung": "I12",
+      "name": "Cannabis-Freigabe außerhalb medizinischer Nutzung zurücknehmen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann den legalen Konsum senken, setzt aber nicht an unbekannten Wirkstoffen am Schwarzmarkt an; Studien zur Legalisierung sind gemischt. Per Bundesgesetz umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC10176789"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schulische Aufklärung wirkt in Studien nur teils; Wissensvermittlung allein ändert Konsum kaum. Schulen sind Ländersache, der Bund kann Kampagnen und Mittel beitragen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.cochrane.org/evidence/CD003020_do-school-based-programmes-prevent-illicit-drug-use"
+      },
+      "ursachen": [
+        3001
+      ]
+    },
+    {
+      "kennung": "M02",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Kontrollierte Qualität senkt Verunreinigungen bei Cannabis; Studien zeigen gemischte Folgen für Konsum und Gesundheit. Rechtsrahmen besteht bereits.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://europepmc.org/articles/PMC10176789"
+      },
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": "I1",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I10",
+      "ursachen": [
+        3003
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I1",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Strafandrohung hängt mit schlechterem Zugang zu Prävention und Behandlung zusammen; Studien meist beobachtend. Braucht Gesetzesänderung und Aufbau der Hilfsprogramme.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://europepmc.org/articles/PMC6005363"
+      },
+      "ursachen": [
+        3005,
+        3006
+      ]
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Konsumräume senken Überdosierungen ohne mehr Konsum oder Kriminalität; Drugchecking ist weniger untersucht. Räume sind Ländersache, der Bund kann Rahmen und Mittel setzen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012"
+      },
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M10",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Mehr Suchthilfe und Therapie erweitert den Zugang; Kassenleistungen hängen an Bundesrecht und Selbstverwaltung. Wirkung auf die Scham-Hürde ist indirekt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M12",
+      "instrument": "I12",
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M13",
+      "instrument": "I8",
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M14",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Verfolgung des organisierten Handels macht den Markt nicht sicherer; Wirkung auf Verfügbarkeit und Reinheit ist kaum belegt. Personalaufbau bei Polizei und Zoll dauert.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M15",
+      "einzeln": {
+        "wirksamkeit": 3,
+        "umsetzbarkeit": 2,
+        "begruendung": "Werbung erhöht die Konsumbereitschaft, ein Verbot entfernt die Ursache direkt. Glücksspielwerbung ist Ländersache, Alkohol-Verbot hat verfassungs- und EU-rechtliche Hürden.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.cochrane.org/evidence/CD003439_does-advertising-and-promotion-tobacco-products-make-children-more-likely-smoke"
+      },
+      "ursachen": [
+        3003,
+        3004
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I10",
+      "ursachen": [
+        3003,
+        3001
+      ]
+    },
+    {
+      "kennung": "M17",
+      "instrument": "I5",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M18",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Weniger Sichtbarkeit kann Anreize senken, ändert aber Zugang und Einsatzhöhe nicht. Per Landesrecht rasch umsetzbar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I9",
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M20",
+      "instrument": "I11",
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M21",
+      "instrument": "I4",
+      "ursachen": [
+        3006,
+        3005
+      ]
+    },
+    {
+      "kennung": "M22",
+      "instrument": "I12",
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M23",
+      "instrument": "I6",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M24",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Lootboxen ähneln Glücksspiel, Wirkung von Regulierung ist kaum untersucht. Zuständig sind Bund und EU, das Land kann nur Initiativen unterstützen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M25",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schließt einen legalen Zugang für unter 16-Jährige, betrifft aber nur eine kleine Gruppe. Regelung liegt im Bundesrecht, das Land kann nur im Bundesrat unterstützen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3001
+      ]
+    },
+    {
+      "kennung": "M26",
+      "instrument": "I1",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M27",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Neutrale Packungen machen Tabak weniger attraktiv, der Rückgang des Konsums ist klein. EU-Recht erlaubt es, Bundesgesetz genügt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.cochrane.org/evidence/CD011244_do-plain-tobacco-packaging-reduce-smoking"
+      },
+      "ursachen": [
+        3003
+      ]
+    },
+    {
+      "kennung": "M28",
+      "instrument": "I4",
+      "ursachen": [
+        3006,
+        3005
+      ]
+    },
+    {
+      "kennung": "M29",
+      "instrument": "I4",
+      "ursachen": [
+        3006,
+        3005
+      ]
+    },
+    {
+      "kennung": "M30",
+      "instrument": "I3",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M31",
+      "ursachen": []
+    },
+    {
+      "kennung": "M32",
+      "instrument": "I7",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M33",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Werbung und Warnhinweise können Spielen mindern; Warnhinweise wirken in Studien gemischt. Änderungen am Glücksspielstaatsvertrag brauchen alle Länder.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M34",
+      "instrument": "I9",
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M35",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Mehr Therapie erweitert den Zugang, Drugchecking macht Inhalte erkennbar; beides in Deutschland erst in Teilen untersucht. Landesmittel und rechtliche Grundlage vorhanden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3005,
+        3006
+      ]
+    },
+    {
+      "kennung": "M36",
+      "instrument": "I5",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M37",
+      "instrument": "I8",
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M38",
+      "instrument": "I3",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M39",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M40",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Nennt Ziele für das Regelwerk ohne konkrete Mittel; Wirkung hängt von der Ausgestaltung ab. Änderungen brauchen alle Länder.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M41",
+      "instrument": "I6",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M42",
+      "instrument": "I7",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M43",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M44",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Kommunale Prävention zeigt in Studien gemischte Wirkung auf Konsum. Hängt von einem Bundesprogramm ab, das das Land nur anstoßen kann.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.cochrane.org/evidence/CD003020_do-school-based-programmes-prevent-illicit-drug-use"
+      },
+      "ursachen": [
+        3001
+      ]
+    },
+    {
+      "kennung": "M45",
+      "instrument": "I3",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M46",
+      "instrument": "I7",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M47",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Weniger Werbung hängt mit weniger Wetten zusammen; das Land kann nur auf Bundesebene werben, Zustimmung anderer Länder und des Bundes fehlt.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M48",
+      "instrument": "I11",
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M49",
+      "ursachen": []
+    },
+    {
+      "kennung": "M50",
+      "instrument": "I3",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M51",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sperren und Limits helfen vor allem bei Pflicht statt Freiwilligkeit; Reviews zeigen begrenzte Wirkung wegen Umgehung. Änderungen brauchen alle Länder.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048"
+      },
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I11",
+      "ursachen": [
+        3005
+      ]
+    },
+    {
+      "kennung": "M53",
+      "ursachen": []
+    },
+    {
+      "kennung": "M54",
+      "instrument": "I3",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M55",
+      "instrument": "I8",
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M56",
+      "ursachen": []
+    },
+    {
+      "kennung": "M57",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M58",
+      "ursachen": []
+    },
+    {
+      "kennung": "M59",
+      "instrument": "I2",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M60",
+      "instrument": "I4",
+      "ursachen": [
+        3006
+      ]
+    },
+    {
+      "kennung": "M61",
+      "instrument": "I8",
+      "ursachen": [
+        3004
+      ]
+    },
+    {
+      "kennung": "M62",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Prävention sichert vorhandene Arbeit, Programme zeigen gemischte Wirkung auf Konsum. Mit Landesmitteln leicht umsetzbar.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.cochrane.org/evidence/CD003020_do-school-based-programmes-prevent-illicit-drug-use"
+      },
+      "ursachen": [
+        3001
+      ]
+    }
+  ]
+}

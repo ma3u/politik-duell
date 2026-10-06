@@ -1,0 +1,40 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Die Teillegalisierung von Cannabis wird rückgängig gemacht.",
+      "ursachen_ids": [3005],
+      "zitat": "Die Ampel ist mit ihrem Cannabis-Gesetz gescheitert. Es begrenzt weder den Konsum, noch drängt es den Schwarzmarkt zurück. […] Die Legalisierung dieser Droge nehmen wir deshalb zurück.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Europol soll zur europäischen Zentralstelle ausgebaut werden, auch gegen Drogenkriminalität.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3005],
+      "zitat": "Wir stärken die Zusammenarbeit von Europol mit den Polizeien der Mitgliedstaaten. […] im Kampf gegen Organisierte Kriminalität, insbesondere Drogen- und Schleuserkriminalität, Cyberkriminalität und Terrorismus.",
+      "seite": 47
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3001, "seiten": [39], "grund": "Kapitel Recht und Ordnung und Gesundheit gelesen; nichts zu Alkohol, Verkaufszeiten oder Jugendschutz." },
+    { "ursache": 3002, "seiten": [70], "grund": "Gesundheitskapitel (S. 67–71) gelesen; keine Aussage zu Alkohol- oder Tabakpreisen oder -steuern." },
+    { "ursache": 3003, "seiten": [37, 58], "grund": "S. 37 lehnt Werbeverbote nur für Lebensmittel ab, S. 58 betrifft Kultursponsoring; beides keine Alkohol- oder Tabakwerbung." },
+    { "ursache": 3004, "seiten": [39, 70], "grund": "Kein Treffer; Kapitel Recht und Ordnung und Gesundheit gelesen, nichts zu Glücksspiel oder Sportwetten." },
+    { "ursache": 3006, "seiten": [40, 70], "grund": "Treffer sind Wortbestandteile von „Perspektive“ und „Personal“; im Gesundheitskapitel (S. 67–71) keine Aussage zu Suchtberatung, Suchtbehandlung oder Entstigmatisierung." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (S. 2), Kapitel Recht und Ordnung (S. 38–40), Europol-Abschnitt (S. 47), Gesundheit und Pflege (S. 69–72), alle Fundstellen mit Textbezug (S. 17, 37, 58).
+Textsuche im Programm nach Sucht, Drogen, Glücksspiel, Alkohol, Tabak, Wetten, Nikotin, Stigma: nur die zwei erfassten Stellen.
+
+Nicht erfasst:
+- S. 70: Verbesserung der Versorgungsangebote für psychische Erkrankungen und Präventionsangebote in allen Lebensbereichen – psychische Gesundheit allgemein, nach R2 kein Suchtthema.
+- S. 72: Suizidpräventionsgesetz – kein Suchtbezug.
+- S. 17, 18, 20, 71: „Lieferketten“ – Lieferkettengesetz bzw. Arzneimittelversorgung, kein Drogenhandel.
+- S. 37: Absage an Werbeverbote und Lenkungssteuern bei Lebensmitteln – keine Alkohol- oder Tabakwerbung.
+- S. 58: Kultursponsoring – kein Bezug.
+
+Richtungen ohne Maßnahme: Alle außer „Risikominderung und Qualitätskontrolle“ (Gegenrichtung, Rücknahme der Legalisierung) und „Angebot und Handel zurückdrängen“ (Europol, offen).
+Seiten ohne Text (1, 82) spielten keine Rolle.

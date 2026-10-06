@@ -1,0 +1,39 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Hilfsangebote für Drogenkranke wie medizinische Betreuung und Unterstützung bei Substitutionstherapien ausweiten.",
+      "ursachen_ids": [3006],
+      "zitat": "Aufgrund der steigenden Zahl von Drogenkranken sollten Hilfsangebote wie geschützte Drogenkonsumräume, medizinische Betreuungseinrichtungen oder die Unterstützung bei Substitutionstherapien ausgeweitet werden.",
+      "seite": 12
+    },
+    {
+      "beschreibung": "Mehr Unterkünfte, die speziell für suchtkranke Menschen vorgesehen sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3006],
+      "zitat": "Wir fordern daher eine Erweiterung von Unterkünften, die speziell für suchtkranke Menschen vorgesehen sind.",
+      "seite": 12
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3001, "seiten": [12, 23, 41], "grund": "Kein Alkoholbezug im Programm (Verkaufszeiten, Verkaufsstellen, Jugendschutz); Kontrollen in der Schankwirtschaft (S. 41) gelten Drogenmissbrauch, nicht Alkohol." },
+    { "ursache": 3004, "seiten": [12, 41], "grund": "Glücksspiel, Spielhallen, Sportwetten und Online-Glücksspiel kommen im Programm nicht vor." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Seiten 1-4 (Vorwort, Einleitung), Soziales (S. 11-12), Gesundheitswesen (S. 21-25), Innere Sicherheit (S. 41); dazu Volltextsuche nach Sucht, Drogen, Alkohol, Glücksspiel, Spielhallen, Wetten, Lotto, Casino, Jugendschutz, Verkaufszeiten, Stigma, Selbsthilfe, Entzug, Therapie.
+
+Erfasst: Seite 12, Abschnitt „Drogenpolitik und Suchtprävention“. Die erste Maßnahme steht im Wortlaut mit „sollten“; sie folgt auf „Wir setzen uns dafür ein“ und leitet zur festen Forderung („Wir fordern daher“) über, daher aufgenommen. Geschützte Drogenkonsumräume gehören nach R1 zu 3005 (hier nicht zulässig); medizinische Betreuung und Substitution zählen als Behandlung (3006). Unterkünfte für Suchtkranke sind ein Grenzfall (Hilfe, aber weder Beratung noch Behandlung) und stehen unter ursachen_offen.
+
+Nicht erfasst:
+- S. 12: „Maßnahmen zur Drogenprävention auszuweiten“ – Prävention bei illegalen Drogen, 3005 (nicht zulässig).
+- S. 11: Soziale Dienste und Beratungsangebote, „insbesondere zur Prävention von Suchtkrankheiten und Wohnungslosigkeit einzusetzen“ – allgemeine Sozialberatung, keine Suchtberatung oder -behandlung.
+- S. 25: ÖGD stärken, Prävention „von Impf- und Suchtprävention über Bewegungsangebote“ – allgemeine Stärkung des Gesundheitsdienstes ohne konkrete Suchthilfe-Zusage.
+- S. 23: Willkommenszentren mit niedrigschwelliger Hilfe für Familien – kein Suchtbezug.
+- S. 24: Zugang Wohnungs- und Obdachloser zu psychischer Versorgung – psychische Gesundheit allgemein (R2).
+- S. 41: Kontrollen und Sicherheitszonen gegen Drogenmissbrauch – Ordnungsrecht zu illegalen Drogen (3005).
+
+Richtungen ohne Maßnahme: Verfügbarkeit von Alkohol begrenzen, Verantwortlicher Verkauf und Aufklärung, Glücksspielangebote begrenzen, Selbstlimits und Aufklärung, Selbsthilfe und begleitete Vermittlung (Entstigmatisierung, Peer).

@@ -1,0 +1,44 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Beratungs- und Versorgungsangebote für wohnungslose Menschen, darunter Suchtberatung, ausbauen und dauerhaft sichern.",
+      "ursachen_ids": [3006],
+      "zitat": "Parallel bauen wir Beratungs- und Versorgungsangebote aus und verstetigen sie. Dazu zählen psychosoziale Beratung und Suchtberatung sowie Clearingstellen.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Therapieangebote für suchtkranke Menschen ausbauen.",
+      "ursachen_ids": [3006],
+      "zitat": "Drug-Checking und Therapieangebote bauen wir aus.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Abschaffung des begleiteten Trinkens für Jugendliche unter 16 Jahren unterstützen.",
+      "ursachen_ids": [3001],
+      "zitat": "Wir unterstützen die Abschaffung vom „begleiteten Trinken“ von Jugendlichen unter 16 Jahren.",
+      "seite": 51
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3004,
+      "seiten": [11, 51],
+      "grund": "Kein Treffer zu Glücksspiel, Spielhallen oder Sportwetten; Kapitel Gesundheit und Soziales Berlin gelesen. Gaming-Prävention (S. 11) betrifft E-Sport, nicht Glücksspiel."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (S. 4-5), Kapitel „Soziales Berlin“ (S. 50-51), Gesundheit/Psychische Gesundheit (S. 33-34), Fundstellen S. 11, 49, 51.
+
+Nicht erfasst:
+- S. 51: „Niedrigschwellige Beratung bleibt zentral.“ – Bekenntnis zu Bestehendem ohne eigene Handlung.
+- S. 51: Drug-Checking und Drogenkonsumräume – gehören zu illegalen Drogen (3005), keine zulässige Ursache im Landesauftrag.
+- S. 51: „Neue Drogen verlangen frühes Handeln. Wir reagieren sozial und präventiv.“ – allgemein, 3005.
+- S. 49: „Peer“-Projekte – queere Jugendarbeit, kein Suchtbezug.
+- S. 11: Gesundheit und Prävention im Gaming/E-Sport – kein Glücksspiel, kein Suchtbezug genannt.
+- S. 34: Masterplan psychische Gesundheit – psychische Gesundheit allgemein, gehört nach R2 nicht zu Sucht.
+
+Richtungen ohne Maßnahme: 3004 (Glücksspielangebote begrenzen; Selbstlimits und Aufklärung), 3001 (Verfügbarkeit begrenzen außer Jugendschutz; verantwortlicher Verkauf und Aufklärung), 3006 (Selbsthilfe und begleitete Vermittlung).
