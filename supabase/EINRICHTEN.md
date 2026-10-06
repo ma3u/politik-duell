@@ -380,11 +380,15 @@ erscheint sie unter „Ohne Wertung“ im Wortlaut mit dem Grund „Haltung“.
 
 ## Nach Änderungen am Code
 
-`npm run dashboard` erzeugt `supabase/seed.sql` und beide Dateien in `supabase/dashboard/` neu.
-Danach im Dashboard:
+`npm run dashboard` erzeugt `supabase/seed.sql`, die Teile in `supabase/seed-teile/` und die Dateien in
+`supabase/dashboard/` neu. Danach im Dashboard:
 
-- **Daten geändert** (neue Maßnahmen, Instrumente, Programme): nur den Inhalt von `supabase/seed.sql` im
-  SQL Editor ausführen (mehrfach ausführbar, gespielte Runden und Bewertungen bleiben erhalten). Die Edge
+- **Daten geändert** (neue Maßnahmen, Instrumente, Programme): im SQL Editor nur die Dateien aus
+  [`supabase/seed-teile/`](https://github.com/politik-duell/politik-duell/tree/main/supabase/seed-teile)
+  ausführen, die der Pull Request geändert hat (Reiter *Files changed*) – zuerst `0-gemeinsam.sql`, falls
+  geändert, dann die geänderten `thema-NN.sql`, jede einzeln. Jede Datei ist eine Transaktion (bei einem
+  Fehler bleibt alles beim Alten) und mehrfach ausführbar; gespielte Runden und Bewertungen bleiben erhalten.
+  Alle Teile zusammen ergeben denselben Stand wie `supabase/seed.sql` (für die Kommandozeile). Die Edge
   Functions bleiben unverändert.
 - **Edge Function geändert:** in der Funktion `analyse` den Code durch `2-analyse.ts` ersetzen → Deploy
   (bzw. `pruefung` durch `3-pruefung.ts`).

@@ -53,4 +53,4 @@ Haltungen mit weniger als drei erkennbaren Positionen trägt das Skript nicht ei
 
 ## 5. Abschluss
 
-In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
+In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.

@@ -1,4 +1,5 @@
-// Baut den Inhalt von supabase/seed.sql aus dem geprüften Datenkatalog.
+// Baut den Inhalt von supabase/seed.sql aus dem geprüften Datenkatalog – als eine Datei (seedSql)
+// und aufgeteilt je Thema für den SQL Editor des Dashboards (seedTeile, supabase/seed-teile/).
 import {
   pruefEinheiten,
   spielbareAbdeckung,
@@ -11,32 +12,26 @@ import {
 
 const q = (v: string | null | undefined) => (v == null ? 'null' : `'${v.replace(/'/g, "''")}'`)
 const zeilen = (werte: string[]) => werte.join(',\n  ')
+const idListe = (ids: number[]) => (ids.length ? ids.join(', ') : '0')
 
-export function seedSql(k: Katalog): string {
-  // Mit KI-Entwürfen: Die Datenbank zeigt sie nur mit Zugang zur Testphase (Row Level Security).
-  const massnahmen = spielbareMassnahmen(k, true)
-  const abdeckung = spielbareAbdeckung(k, true)
-  const landesprogramme = spielbareLandesprogramme(k)
-  const instrumente = spielbareInstrumente(k, true)
-  const einheiten = pruefEinheiten(k)
-  const haltungen = spielbareHaltungen(k, true)
-  const kopf = k.fiktiv
-    ? '-- FIKTIVE Platzhalterdaten: Parteien, Maßnahmen, Punkte und Links sind erfunden.'
-    : '-- Nur vollständig geprüfte Einträge je Thema und Partei; alles andere gilt als „noch nicht erfasst“.\n' +
-      '-- Ausnahme: KI-Entwürfe (ki_entwurf = true), nur mit Zugang zur geschlossenen Testphase sichtbar.'
-  return `-- AUTOMATISCH ERZEUGT aus daten/ (npm run seed) – nicht von Hand bearbeiten.
-${kopf}
+const KOPF = '-- AUTOMATISCH ERZEUGT aus daten/ (npm run seed) – nicht von Hand bearbeiten.'
 
--- Mehrfach ausführbar: Stammdaten per Upsert, Maßnahmen und Abdeckung werden neu geschrieben.
--- Gespielte Runden bleiben erhalten.
-delete from public.massnahmen;
-delete from public.abdeckung;
-delete from public.landesprogramme;
-delete from public.pruef_einheiten;
-delete from public.haltung_positionen;
-delete from public.haltung_zielkonflikte;
+/** Alles, was in die Datenbank kommt (mit KI-Entwürfen: die Datenbank zeigt sie nur mit Zugang zur Testphase). */
+function daten(k: Katalog) {
+  return {
+    massnahmen: spielbareMassnahmen(k, true),
+    abdeckung: spielbareAbdeckung(k, true),
+    landesprogramme: spielbareLandesprogramme(k),
+    instrumente: spielbareInstrumente(k, true),
+    einheiten: pruefEinheiten(k),
+    haltungen: spielbareHaltungen(k, true),
+  }
+}
+type Daten = ReturnType<typeof daten>
 
-insert into public.parteien (id, name, kurzname, farbe, programm_url, programm_stand) values
+/** Parteien, Länder, Landesprogramme, Themen und Ursachen. */
+function stammSql(k: Katalog, d: Daten): string {
+  return `insert into public.parteien (id, name, kurzname, farbe, programm_url, programm_stand) values
   ${zeilen(k.parteien.map((p) => `(${p.id}, ${q(p.name)}, ${q(p.kurzname)}, ${q(p.farbe)}, ${q(p.programm_url)}, ${q(p.programm_stand)})`))}
 on conflict (id) do update set name = excluded.name, kurzname = excluded.kurzname, farbe = excluded.farbe,
   programm_url = excluded.programm_url, programm_stand = excluded.programm_stand;
@@ -56,11 +51,11 @@ delete from public.laender where id not in (${k.laender.map((l) => q(l.id)).join
 delete from public.laender;
 `
 }${
-  landesprogramme.length
+  d.landesprogramme.length
     ? `
 -- Nur Programme der laufenden Wahlperiode.
 insert into public.landesprogramme (partei_id, land, url, stand, kein_programm) values
-  ${zeilen(landesprogramme.map((p) => `(${p.partei_id}, ${q(p.land)}, ${q(p.url)}, ${q(p.stand)}, ${q(p.kein_programm)})`))};
+  ${zeilen(d.landesprogramme.map((p) => `(${p.partei_id}, ${q(p.land)}, ${q(p.url)}, ${q(p.stand)}, ${q(p.kein_programm)})`))};
 `
     : ''
 }
@@ -76,8 +71,11 @@ on conflict (id) do update set thema_id = excluded.thema_id, beschreibung = excl
 -- Ursachen, die nicht mehr im Katalog stehen (etwa nach der Neuanlage eines Themas), entfernen –
 -- sonst ordnete die KI Probleme ihnen weiter zu. Nichts verweist per Fremdschlüssel auf sie.
 delete from public.ursachen where id not in (${k.ursachen.map((u) => u.id).join(', ')});
-${
-  instrumente.length
+`
+}
+
+function instrumenteSql(instrumente: Daten['instrumente']): string {
+  return instrumente.length
     ? `
 -- Lösungswege für die Forderungskarte (ohne Punkte). Upsert, damit gespeicherte Forderungen ihren Verweis behalten.
 insert into public.instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, entspricht, ki_entwurf, entwurf_herkunft) values
@@ -94,10 +92,12 @@ on conflict (id) do update set thema_id = excluded.thema_id, name = excluded.nam
 `
     : ''
 }
-delete from public.instrumente where id not in (${instrumente.length ? instrumente.map((i) => i.id).join(', ') : '0'});
-${
-  massnahmen.length
-    ? `
+
+/** Maßnahmen, Prüfeinheiten und Abdeckung. */
+function massnahmenSql(massnahmen: Daten['massnahmen'], einheiten: Daten['einheiten'], abdeckung: Daten['abdeckung']): string {
+  return `${
+    massnahmen.length
+      ? `
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, instrument_id, wirksamkeit, umsetzbarkeit,
   rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values
   ${zeilen(
@@ -111,33 +111,38 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 `
-    : ''
-}${
-  einheiten.length
-    ? `
+      : ''
+  }${
+    einheiten.length
+      ? `
 -- Was Prüfende je Thema bewerten (auch ungeprüfte Einträge): Instrumente und Maßnahmen ohne Instrument.
 insert into public.pruef_einheiten (id, thema_id) values
   ${zeilen(einheiten.map((e) => `(${e.id}, ${e.thema_id})`))};
 `
-    : ''
-}${
-  abdeckung.length
-    ? `
+      : ''
+  }${
+    abdeckung.length
+      ? `
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   ${zeilen(abdeckung.map((a) => `(${a.thema_id}, ${a.partei_id}, ${q(a.land)}, ${q(a.art)}, ${q(a.begruendung)}, ${q(a.stand)}, ${a.ki_entwurf ?? false}, ${a.durchsucht_fuer ? `'{${a.durchsucht_fuer.join(',')}}'` : 'null'})`))};
 `
-    : ''
-}${
-  haltungen.haltungen.length
-    ? `
+      : ''
+  }`
+}
+
+/** Haltungen mit Zielkonflikten und Positionen. */
+function haltungenSql({ haltungen }: Daten): string {
+  return `${
+    haltungen.haltungen.length
+      ? `
 -- Haltungen für die Haltungskarte (ohne Punkte). Upsert, damit gespeicherte Runden ihren Verweis behalten.
 insert into public.haltungen (id, frage, beschreibung, verwandte_themen) values
   ${zeilen(haltungen.haltungen.map((h) => `(${h.id}, ${q(h.frage)}, ${q(h.beschreibung)}, '{${h.verwandte_themen.join(',')}}')`))}
 on conflict (id) do update set frage = excluded.frage, beschreibung = excluded.beschreibung, verwandte_themen = excluded.verwandte_themen;
 `
-    : ''
-}
-delete from public.haltungen where id not in (${haltungen.haltungen.length ? haltungen.haltungen.map((h) => h.id).join(', ') : '0'});
+      : ''
+  }
+delete from public.haltungen where id not in (${idListe(haltungen.haltungen.map((h) => h.id))});
 ${
   haltungen.zielkonflikte.length
     ? `
@@ -159,4 +164,85 @@ insert into public.haltung_positionen (haltung_id, partei_id, land, position, ku
 `
     : ''
 }`
+}
+
+export function seedSql(k: Katalog): string {
+  const d = daten(k)
+  const kopf = k.fiktiv
+    ? '-- FIKTIVE Platzhalterdaten: Parteien, Maßnahmen, Punkte und Links sind erfunden.'
+    : '-- Nur vollständig geprüfte Einträge je Thema und Partei; alles andere gilt als „noch nicht erfasst“.\n' +
+      '-- Ausnahme: KI-Entwürfe (ki_entwurf = true), nur mit Zugang zur geschlossenen Testphase sichtbar.'
+  return `${KOPF}
+${kopf}
+
+-- Mehrfach ausführbar: Stammdaten per Upsert, Maßnahmen und Abdeckung werden neu geschrieben.
+-- Gespielte Runden bleiben erhalten.
+delete from public.massnahmen;
+delete from public.abdeckung;
+delete from public.landesprogramme;
+delete from public.pruef_einheiten;
+delete from public.haltung_positionen;
+delete from public.haltung_zielkonflikte;
+
+${stammSql(k, d)}${instrumenteSql(d.instrumente)}
+delete from public.instrumente where id not in (${idListe(d.instrumente.map((i) => i.id))});
+${massnahmenSql(d.massnahmen, d.einheiten, d.abdeckung)}${haltungenSql(d)}`
+}
+
+/** Dateiname des Teils für ein Thema in supabase/seed-teile/. */
+export const themaTeil = (id: number) => `thema-${String(id).padStart(2, '0')}.sql`
+export const GEMEINSAM_TEIL = '0-gemeinsam.sql'
+
+/**
+ * seed.sql aufgeteilt, damit nach einer Änderung nur die geänderten Teile in den SQL Editor müssen:
+ * `0-gemeinsam.sql` (Parteien, Länder, Themen, Ursachen, Haltungen) zuerst, dann je Thema eine Datei
+ * (Instrumente, Maßnahmen, Prüfeinheiten, Abdeckung). Jede Datei ist eine Transaktion und mehrfach ausführbar;
+ * zusammen ergeben alle denselben Stand wie seed.sql.
+ */
+export function seedTeile(k: Katalog): Record<string, string> {
+  const d = daten(k)
+  const themen = k.themen.map((t) => t.id)
+  const teile: Record<string, string> = {
+    [GEMEINSAM_TEIL]: `${KOPF}
+-- Teil von supabase/seed.sql: Parteien, Länder, Landesprogramme, Themen, Ursachen und Haltungen.
+-- Vor den Themen-Dateien (thema-NN.sql) ausführen. Mehrfach ausführbar, gespielte Runden bleiben erhalten.
+
+begin;
+
+delete from public.landesprogramme;
+delete from public.haltung_positionen;
+delete from public.haltung_zielkonflikte;
+
+-- Daten von Themen, die nicht mehr im Katalog stehen, entfernen.
+delete from public.massnahmen where thema_id not in (${idListe(themen)});
+delete from public.abdeckung where thema_id not in (${idListe(themen)});
+delete from public.pruef_einheiten where thema_id not in (${idListe(themen)});
+delete from public.instrumente where thema_id not in (${idListe(themen)});
+
+${stammSql(k, d)}${haltungenSql(d)}
+commit;
+`,
+  }
+  for (const t of k.themen) {
+    const instrumente = d.instrumente.filter((i) => i.thema_id === t.id)
+    teile[themaTeil(t.id)] = `${KOPF}
+-- Teil von supabase/seed.sql: Thema ${t.id} „${t.name}“ – Instrumente, Maßnahmen, Prüfeinheiten, Abdeckung.
+-- Nach ${GEMEINSAM_TEIL} ausführen. Mehrfach ausführbar, gespielte Runden bleiben erhalten.
+
+begin;
+
+delete from public.massnahmen where thema_id = ${t.id};
+delete from public.abdeckung where thema_id = ${t.id};
+delete from public.pruef_einheiten where thema_id = ${t.id};
+${instrumenteSql(instrumente)}
+delete from public.instrumente where thema_id = ${t.id} and id not in (${idListe(instrumente.map((i) => i.id))});
+${massnahmenSql(
+  d.massnahmen.filter((m) => m.thema_id === t.id),
+  d.einheiten.filter((e) => e.thema_id === t.id),
+  d.abdeckung.filter((a) => a.thema_id === t.id),
+)}
+commit;
+`
+  }
+  return teile
 }
