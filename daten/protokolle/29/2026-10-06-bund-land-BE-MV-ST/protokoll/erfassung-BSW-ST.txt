@@ -1,0 +1,48 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Einen landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie einführen.",
+      "ursachen_ids": [2903],
+      "zitat": "Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Schulpsychologen präventiv einsetzen und für Lernende sowie Lehrkräfte niedrigschwellig erreichbar machen.",
+      "ursachen_ids": [2903],
+      "zitat": "Schulpsychologen müssen stärker präventiv arbeiten können und für Schülerinnen, Schüler und Lehrkräfte niedrigschwellig erreichbar sein.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Multiprofessionelle Teams mit Schulpsychologie als Regelangebot an Schulen etablieren.",
+      "ursachen_ids": [2903],
+      "zitat": "Multiprofessionelle Teams müssen vom Ausnahmefall zum Standard werden. Neben Schulsozialarbeit und Schulpsychologie gehören dazu Inklusionsfachkräfte, Verwaltungspersonal, IT-Unterstützung, Lehrerassistenzen und Schulgesundheitsfachkräfte.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Den sozialpsychiatrischen Dienst ausbauen und stärker in Jugend-, Schul- und Integrationsarbeit einbinden.",
+      "ursachen_ids": [2903],
+      "zitat": "Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+      "seite": 59
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2901,
+      "seiten": [55],
+      "grund": "Einsamkeit im Alter wird als Problemlage beschrieben; konkrete Zusagen zu Begegnung, Besuchsdiensten oder Trauerbegleitung fehlen."
+    },
+    {
+      "ursache": 2904,
+      "seiten": [59],
+      "grund": "Die Stigmatisierung psychischer Erkrankungen soll aktiv bekämpft werden, aber ohne konkrete Maßnahme; zielgruppengerechte Angebote für Männer fehlen."
+    }
+  ]
+}
+
+Gelesen: PDF-Seiten 1–6 (Inhaltsverzeichnis), 21, 46–49 (Kapitel 4.2 „Gute Bildung – Starke Zukunft“, besonders „Soziale Arbeit stärkt Bildung“), 54–60 (Kapitel 4.4 „Gesundheit – Gemeinwohl statt Profitlogik“, besonders „Psychische Gesundheit ernst nehmen“), 73 sowie 80–81.
+
+Nicht erfasst: S. 21 betrifft niedrigschwellige Gründungsberatung; S. 58 genannte spezialisierte Einrichtungen für psychische Erkrankungen gehören zur Versorgung nach Ursache 2905. Die auf S. 59 genannten zusätzlichen Psychologen und Psychotherapeuten, Ausbildungskapazitäten, Akutsprechstunden und die Bedarfsplanung betreffen ebenfalls die psychotherapeutische Versorgung (2905). S. 73 behandelt Ombudsstellen für Konflikte in der Jugendhilfe; S. 80–81 bezeichnet „Klimaresilienz“ den landwirtschaftlichen Kontext. Die fehlenden Maßnahmen zu 2901 und 2904 sind im JSON dokumentiert.
+
+Seite ohne Text: PDF-Seite 1 ist die Titel-/Beschlussseite und liegt außerhalb der thematischen Kapitel.

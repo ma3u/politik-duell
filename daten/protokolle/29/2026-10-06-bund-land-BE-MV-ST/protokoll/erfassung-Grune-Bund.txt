@@ -1,0 +1,172 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Eine Garantierente für mehr Menschen mit geringem Einkommen weiterentwickeln.",
+      "ursachen_ids": [
+        2902
+      ],
+      "zitat": "Auch Menschen mit geringem Einkommen unterstützen wir dabei, auskömmliche Rentenansprüche zu erwerben und so Altersarmut zu vermeiden. Die Grundrente werden wir zu einer Garantierente nach 30 Versicherungsjahren weiterentwickeln, die deutlich mehr Menschen als bisher einbezieht und finanziell besserstellt.",
+      "seite": 97
+    },
+    {
+      "beschreibung": "Ein bundesweit vergünstigtes Nahverkehrsangebot für Menschen mit geringem Einkommen entwickeln.",
+      "ursachen_ids": [
+        2902
+      ],
+      "zitat": "Neben dem Deutschland-Semesterticket wollen wir auch Lösungen für Auszubildende und Freiwilligendienstleistende finden und zudem ein bundesweit vergünstigtes Angebot für Menschen mit geringem Einkommen entwickeln.",
+      "seite": 49
+    },
+    {
+      "beschreibung": "Den Zugang zum freiwilligen Engagement für Menschen mit geringem Einkommen verbessern.",
+      "ursachen_ids": [
+        2902
+      ],
+      "zitat": "Wir werden die Zugänge zum freiwilligen Engagement auch für Menschen mit geringem Einkommen, Migrationsgeschichte oder Behinderungen verbessern.",
+      "seite": 111
+    },
+    {
+      "beschreibung": "Sozial gestaffelte Unterstützungsmöglichkeiten für Freiwilligendienste schaffen.",
+      "ursachen_ids": [
+        2902
+      ],
+      "zitat": "Dafür wollen wir die Bedingungen für diese Personengruppen verbessern und sozial gestaffelte Unterstützungsmöglichkeiten schaffen.",
+      "seite": 112
+    },
+    {
+      "beschreibung": "Engagementstrukturen für ältere Menschen ausbauen, damit auch bisher schwer erreichbare Personen teilnehmen können.",
+      "ursachen_ids": [
+        2902
+      ],
+      "zitat": "Engagementstrukturen für Ältere wollen wir ausbauen, damit sich auch diejenigen einbringen können, die bislang schwerer Zugang finden.",
+      "seite": 86
+    },
+    {
+      "beschreibung": "Die Angebote der Mental Health Coaches an Schulen ausbauen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "zitat": "Wir bauen die Angebote der Mental Health Coaches an Schulen aus und wir setzen uns dafür ein, dass Inklusion aller Schüler*innen gemäß der UN-Behindertenrechtskonvention an allen Schulen zur gelebten Realität wird.",
+      "seite": 77
+    },
+    {
+      "beschreibung": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie in multiprofessionellen Teams schaffen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "zitat": "Wir schaffen mehr Stellen für Schulsozialarbeit, Schulpsychologie und Inklusion in multiprofessionellen Teams.",
+      "seite": 77
+    },
+    {
+      "beschreibung": "Therapieplätze bedarfsgerecht ausbauen.",
+      "ursachen_ids": [
+        2905
+      ],
+      "zitat": "Deswegen werden wir Therapieplätze […] bedarfsgerecht ausbauen.",
+      "seite": 95
+    },
+    {
+      "beschreibung": "Psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "zitat": "Deswegen werden wir […] psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+      "seite": 95
+    },
+    {
+      "beschreibung": "Psychosoziale Zentren für Geflüchtete stärken.",
+      "ursachen_ids": [
+        2903
+      ],
+      "zitat": "Psychosoziale Zentren für Geflüchtete werden wir stärken und das Recht auf Sprachmittlung verankern.",
+      "seite": 95
+    },
+    {
+      "beschreibung": "Die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+      "ursachen_ids": [
+        2905
+      ],
+      "zitat": "Deswegen werden wir […] die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+      "seite": 95
+    },
+    {
+      "beschreibung": "Die angemessene Finanzierung der psychotherapeutischen Weiterbildung sicherstellen.",
+      "ursachen_ids": [
+        2905
+      ],
+      "zitat": "Wir wollen die angemessene Finanzierung der Weiterbildung von Psychotherapeut*innen sicherstellen.",
+      "seite": 95
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2902,
+      "name": "Teilhabe finanziell sichern",
+      "seite": 97
+    },
+    {
+      "ursache": 2902,
+      "name": "Vergünstigtes Nahverkehrsangebot für Menschen mit geringem Einkommen",
+      "seite": 49
+    },
+    {
+      "ursache": 2902,
+      "name": "Soziale Einbindung unabhängig vom Einkommen",
+      "seite": 111
+    },
+    {
+      "ursache": 2902,
+      "name": "Sozial gestaffelte Unterstützung für Freiwilligendienste",
+      "seite": 112
+    },
+    {
+      "ursache": 2902,
+      "name": "Engagementstrukturen für ältere Menschen",
+      "seite": 86
+    },
+    {
+      "ursache": 2903,
+      "name": "Aufklärung und Prävention psychischer Gesundheit",
+      "seite": 77
+    },
+    {
+      "ursache": 2903,
+      "name": "Beratung und Weitervermittlung vereinfachen",
+      "seite": 77
+    },
+    {
+      "ursache": 2903,
+      "name": "Psychiatrisch-psychosoziale Krisendienste ausbauen",
+      "seite": 95
+    },
+    {
+      "ursache": 2903,
+      "name": "Psychosoziale Zentren für Geflüchtete stärken",
+      "seite": 95
+    },
+    {
+      "ursache": 2905,
+      "name": "Therapieplätze und Kapazitäten ausbauen",
+      "seite": 95
+    },
+    {
+      "ursache": 2905,
+      "name": "Zugang steuern und koordinieren",
+      "seite": 95
+    },
+    {
+      "ursache": 2905,
+      "name": "Finanzierung der psychotherapeutischen Weiterbildung",
+      "seite": 95
+    }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis S. 4–7; für 2902 die Fundstellen und einschlägigen Abschnitte S. 49, 51, 86, 97–99 sowie 111–112; für 2903 die einschlägigen Abschnitte S. 76–78, 84–86, 89–96; für 2905 insbesondere S. 90 und 95–96. S. 8, 11 und 15 liegen in der Präambel bzw. enthalten keinen konkreten thematischen Handlungsvorschlag. S. 27, 28, 30, 35, 68, 103, 113, 138, 144 und 153 wurden im Fundstellenkontext geprüft; die dortigen Treffer betreffen wirtschaftliche/rechtliche Resilienz, allgemeinen Arbeits- und Gesundheitsschutz oder andere Sachgebiete. S. 85 bestätigt den Ausbau der Mental-Health-Coaches und wurde wegen des aussagekräftigeren Zitats auf S. 77 nicht doppelt erfasst.
+
+Nicht erfasst: S. 51 nennt offene Gemeindezentren als Voraussetzung für Engagement, aber keine eigene konkrete Zusage zu deren Ausbau. S. 85 fordert eine bedarfsgerechte Finanzierung von „Nummer gegen Kummer“ und anderen Beratungsstellen, formuliert dafür jedoch keine konkrete Handlung der Partei. S. 89 betrifft allgemeine Patientenlotsen und Selbsthilfe, ohne spezifischen Bezug zu psychischer Gesundheit. S. 94 behandelt niedrigschwellige Versorgung wohnungs- und obdachloser Menschen allgemein, nicht die Ursachen dieses Themas. Auf S. 95 sind „mehr Hilfen und weniger Stigma“, ein Suizidpräventionsgesetz sowie die Förderung von Forschung, Therapie und Gesundheitsbildung als Ziel bzw. allgemein gehaltene Forderung formuliert; mangels konkreter Ausgestaltung nicht zusätzlich erfasst. Die Stärkung sektorübergreifender psychiatrischer Versorgung und gemeindenaher Versorgung auf S. 95 wurde nicht als zusätzliche Maßnahme aufgenommen, da sie ohne konkrete Ausgestaltung bleibt. Die allgemeine Forderung nach Abbau von Versorgungslücken bei Kinderärzt*innen und -psychotherapeut*innen auf S. 90 wurde nicht zusätzlich zur konkreten Kapazitätsausweitung auf S. 95 erfasst.
+
+Ursache 2901 und 2904 sind Land-Ursachen und für dieses Bundesprogramm nicht zulässig. Die dazugehörigen Treffer wurden nicht als Maßnahmen übernommen. Keine Seiten ohne Text lagen mitten in einem einschlägigen Kapitel; sie verhinderten die Erfassung daher nicht.

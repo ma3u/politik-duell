@@ -1,0 +1,94 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Babyboomer-Engagement gezielt für Sportangebote und Vereinsarbeit einbinden.",
+      "ursachen_ids": [2901, 2902],
+      "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Die Zusammenarbeit von Sportvereinen mit Bildung, Wirtschaft und sozialen Einrichtungen stärken, um mehr Menschen zu erreichen.",
+      "ursachen_ids": [2902],
+      "zitat": "Außerdem stärken wir die Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen, um möglichst viele Menschen zu erreichen.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Psychische Gesundheit durch Entstigmatisierung und niedrigschwellige digitale Angebote stärken.",
+      "ursachen_ids": [2903],
+      "zitat": "Auch in der psychischen Gesundheit und im Bereich «Mental Health» wollen wir durch Entstigmatisierung und niedrigschwellige, digitale Angebote die Lebensqualität der Betroffenen stärken.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Suizidprävention spürbar ausbauen und Menschen mit Suizidgedanken Unterstützung zusichern.",
+      "ursachen_ids": [2903],
+      "zitat": "Zugleich muss der Staat jedem, der Suizidgedanken hat, die helfende Hand reichen. Die Suizidprävention wollen wir deshalb spürbar ausbauen.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Die Wartezeit auf einen Psychotherapieplatz auf unter vier Wochen verkürzen.",
+      "ursachen_ids": [2905],
+      "zitat": "Wir setzen uns für eine bessere psychotherapeutische Versorgung ein und wollen die Wartezeit auf einen Therapieplatz auf unter vier Wochen verkürzen.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Das Kostenerstattungsverfahren während der Wartezeit vereinfachen und standardisieren.",
+      "ursachen_ids": [2905],
+      "zitat": "Bis zur Verkürzung der Wartezeiten wollen wir das Kostenerstattungsverfahren unbürokratischer machen und stärker standardisieren.",
+      "seite": 34
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2904,
+      "seiten": [34],
+      "grund": "Entstigmatisierung und digitale Angebote richten sich allgemein an psychisch belastete Menschen; eine gezielte Unterstützung von Männern oder ein Abbau männlicher Scham- und Männlichkeitsnormen wird nicht zugesagt."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2902,
+      "name": "Babyboomer-Engagement für Sportangebote und Vereinsarbeit",
+      "seite": 32
+    },
+    {
+      "ursache": 2902,
+      "name": "Kooperation von Sportvereinen mit Schulen und sozialen Einrichtungen",
+      "seite": 32
+    },
+    {
+      "ursache": 2903,
+      "name": "Entstigmatisierung und niedrigschwellige digitale Angebote",
+      "seite": 34
+    },
+    {
+      "ursache": 2903,
+      "name": "Suizidprävention",
+      "seite": 34
+    },
+    {
+      "ursache": 2905,
+      "name": "Psychotherapeutische Wartezeit auf unter vier Wochen verkürzen",
+      "seite": 34
+    },
+    {
+      "ursache": 2905,
+      "name": "Kostenerstattungsverfahren während der Wartezeit vereinfachen",
+      "seite": 34
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "suizidprävention",
+      "ursache": 2903,
+      "richtung": "Prävention psychischer Gesundheit"
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis PDF-S. 3–4 sowie PDF-S. 5–6; die einschlägigen Kapitel IV.e (PDF-S. 30–31), IV.f (PDF-S. 32) und IV.g (PDF-S. 32–35), einschließlich der Fundstellen auf PDF-S. 24, 31, 32 und 34. Die fast textlosen Seiten 1–2 liegen nicht im passenden Kapitel.
+Nicht erfasst: PDF-S. 31: Das moderne Altersbild und die Förderung gesellschaftlicher Teilhabe bleiben allgemeine Zielsetzungen ohne konkrete Maßnahme. PDF-S. 32: Bürokratieabbau, digitale Verwaltungsangebote und angepasste Pauschalen erleichtern die Arbeit von Vereinen und Ehrenamtlichen, sagen aber nicht konkret zu, soziale Teilhabe einsamer oder einkommensarmer Menschen auszubauen. PDF-S. 34: Die allgemeine Präventionsstrategie, Suchtprävention und Aufarbeitung der Corona-Maßnahmen betreffen die hier erfassten Ursachen nicht spezifisch. Auf PDF-S. 24 geht es beim Ehrenamt um Zivil- und Katastrophenschutz.
+Richtungen ohne Maßnahme: Zu 2904 keine männerspezifische Maßnahme; siehe nicht_erfasst.
+Seiten ohne Text: PDF-S. 1–2 (Titelseiten, außerhalb der passenden Kapitel).

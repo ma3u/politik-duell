@@ -1,0 +1,4192 @@
+{
+  "thema_id": 29,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Bestehende Netzwerke gegen Einsamkeit mit Nachbarschaftshilfen und Beratungsangeboten weiter unterstützen",
+          "ursachen_ids": [
+            2901,
+            2903
+          ],
+          "zitat": "Wir unterstützen die gute Arbeit bestehender Netzwerke weiter: Nachbarschaftshilfen, ehrenamtliches Engagement, Beratungsstellen und Telefonseelsorge.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Ein verpflichtendes Gesellschaftsjahr zur Begegnung zwischen Menschen unterschiedlicher Milieus und Generationen einführen",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Der Dienst für das Gemeinwohl bringt Menschen unterschiedlicher Milieus, Religionen und Generationen zusammen. […] Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken.",
+          "seite": 57
+        },
+        {
+          "beschreibung": "Ehrenamt durch ein Vereinspaket und besseren Zugang zu privater und öffentlicher Förderung stärken",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen. Zudem setzen wir mehr Anreize für private Gelder und Spenden und erleichtern den Zugang zu öffentlicher Förderung.",
+          "seite": 57
+        },
+        {
+          "beschreibung": "Ambulante und stationäre Angebote für psychische Erkrankungen bedarfsgerecht verbessern",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Wir wollen die ambulanten und stationären Versorgungsangebote für psychische Erkrankungen bedarfsgerecht verbessern, insbesondere für Kinder und Jugendliche.",
+          "seite": 70
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            42
+          ],
+          "grund": "Der Treffer ‚Selbsthilfe‘ steht im Zusammenhang mit persönlicher Krisenvorsorge im Bevölkerungsschutz; eine männerspezifische Unterstützung oder ein Abbau von Scham und Hilfesuchhemmnissen wird nicht zugesagt."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Lokale Kiez- und Nachbarschaftstreffen sowie wöchentliche Einsamkeitssprechstunden in Stadtteilzentren fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir werden Einsamkeit als gesellschaftliches Problem angehen und lokale Kiez- und Nachbarschaftstreffen fördern. Alle Stadtteilzentren sollen wöchentliche Einsamkeitssprechstunden anbieten und auf die vielfältigen Vernetzungsangebote hinweisen.",
+          "seite": 110
+        },
+        {
+          "beschreibung": "Plauderbänke als Orte für Austausch und offene Gespräche fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen „Plauderbänke“ fördern, die in Parks und auf großen Plätzen zum Austausch und zum offenen Gespräch einladen.",
+          "seite": 110
+        },
+        {
+          "beschreibung": "Ein Landesprogramm für psychische Gesundheit und schulpsychologische Angebote ausbauen sowie Prävention und frühe Hilfen im Schulalltag verankern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Niedrigschwellige Hilfen für junge Menschen in Krisen und mit psychischen Problemen an weiteren Standorten anbieten.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Die mentale Gesundheit rücken wir stärker in den Fokus, insbesondere bei jungen Menschen. Wir werden niedrigschwellige Angebote ausbauen, die schnelle und unbürokratische Hilfe ermöglichen. Erfolgreiche Projekte wie Soulspace wollen wir auf weitere Standorte ausweiten, um berlinweit erreichbare Anlaufstellen für junge Menschen in Krisensituationen und mit psychischen Problemen zu schaffen.",
+          "seite": 98
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            100
+          ],
+          "grund": "Der Treffer zu Resilienz betrifft die Krisenfestigkeit von Krankenhäusern, nicht Stigmaabbau oder männerspezifische Unterstützung."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Netzwerke, ehrenamtliches Engagement und generationenübergreifende Wohnformen zur Stärkung des gesellschaftlichen Zusammenhalts fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Mit präventiven Maßnahmen, der Förderung von Netzwerken und ehrenamtlichem Engagement sowie generationenübergreifenden Wohnformen stärken wir den gesellschaftlichen Zusammenhalt.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Einen Beauftragten für sozialen Zusammenhalt zur Koordination des Vorgehens gegen Einsamkeit einsetzen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Um dieses Thema zu koordinieren, wollen wir einen Beauftragten für sozialen Zusammenhalt einsetzen.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Landesmittel als Kofinanzierung für die Förderung von Mehrgenerationenhäusern bereitstellen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Darüber hinaus werden wir Landesmittel als Kofinanzierung des Bundesprogramms zur Förderung von Mehrgenerationenhäusern bereitstellen.",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Generationenmanager und Generationenwerker erproben und etablieren.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Zudem wollen wir den Einsatz von Generationenmanagern und Generationenwerkern erproben und etablieren.",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Die Vermittlung generationsübergreifender Wohnpartnerschaften im Konzept „Wohnen für Hilfe“ ausbauen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Mit der Erprobung und Etablierung des Konzeptes „Wohnen für Hilfe“ werden wir die Vermittlung von Wohnpartnerschaften zwischen Studenten und älteren Menschen ausbauen.",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Konzepte zur Vermittlung von Wunschgroßeltern zwischen Familien und älteren Menschen stärker unterstützen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Ebenso werden wir Konzepte wie „Wunschgroßeltern“ stärker unterstützen, bei denen Familien mit Kindern ohne Großeltern in der Nähe und Senioren ohne eigenen Enkel vermittelt werden.",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Den Sozialpsychiatrischen Dienst zu einer Notfallnummer mit telemedizinischem Bereitschaftsdienst und schneller ärztlicher Beratung weiterentwickeln.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Den Sozialpsychiatrischen Dienst wollen wir zu einer 24-Stunden-Notfallnummer weiterentwickeln, ergänzt durch einen bedarfsgesteuerten telemedizinischen Bereitschaftsdienst für alle Altersgruppen, der auch nach Praxisschließung eine schnelle ärztliche Beratung ermöglicht.",
+          "seite": 75
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            96
+          ],
+          "grund": "Der Treffer „Hilfe zur Selbsthilfe“ steht im allgemeinen Familienleitbild; eine konkrete Entstigmatisierung psychischer Belastungen oder zielgruppengerechte Unterstützung von Männern wird nicht zugesagt."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Orte der Begegnung für ältere Menschen stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen Orte der Begegnung wie Mehrgenerationenhäuser oder Seniorentreffs stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Ehrenamtlich getragene Anlaufstellen im ländlichen Raum unterstützen, die das soziale Miteinander sichern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Besonders unterstützen wir ehrenamtlich getragene Anlaufstellen im ländlichen Raum, die das soziale Miteinander vor Ort sichern.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Psychische Gesundheit und Suizidprävention in der Präventionsarbeit stärker berücksichtigen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Suizidprävention und mentale Gesundheit erhalten dabei einen höheren Stellenwert.",
+          "seite": 28
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            33
+          ],
+          "grund": "Selbsthilfeorganisationen werden allgemein als Partner einer bedarfsgerechten Beratungslandschaft genannt; ein Bezug zur psychischen Hilfesuche von Männern oder ein zielgruppengerechtes Angebot für Männer fehlt."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Barrieren für generationenübergreifendes gemeinschaftliches Leben abbauen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Wir wollen den Abbau von Barrieren für generationenübergreifendes gemeinschaftliches Leben fördern.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Die Finanzierung der Freiwilligendienste auf Grundlage einer Bund-Länder-Vereinbarung weiterentwickeln.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Ein Freiwilligendienst bietet jungen Menschen die Möglichkeit, sich für ihre Gemeinschaft einzusetzen und dabei wertvolle soziale Kompetenzen zu entwickeln. Derzeit gibt es vielerorts mehr Interessentinnen und Interessenten als Plätze. Wir wollen daher die Finanzierung der Freiwilligendienste auf Grundlage einer Bund-Länder-Vereinbarung weiterentwickeln.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Das Taschengeld im Freiwilligendienst so gestalten, dass Jugendliche aus einkommensärmeren Haushalten teilnehmen können.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Das „Taschengeld“ wollen wir so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten sich für einen Freiwilligendienst entscheiden können.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Antragsverfahren für Sozialleistungen vereinfachen und zentrale, niedrigschwellige Anlaufstellen entwickeln.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Indem wir Antragsverfahren vereinfachen, Leistungen zusammenfassen und aufeinander abstimmen, wollen wir verhindern, dass man von einer Stelle zur nächsten verwiesen wird. Wir arbeiten auf zentrale Anlaufstellen hin, die für alle wohnortnah, sozialräumlich, niedrigschwellig, mehrsprachig, barrierefrei und auch digital erreichbar sind.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Zugang und Attraktivität des Ehrenamts im Breitensport erhöhen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Wir helfen Ländern, Kommunen und Vereinen bei der Sanierung von Sportstätten und erhöhen die Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Menschen, die Psychotherapie benötigen, zügig einen Therapieplatz ermöglichen.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Wir arbeiten weiter konsequent daran, dass alle Menschen, die eine Psychotherapie benötigen, zügig einen Therapieplatz erhalten.",
+          "seite": 30
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Senior*innen mit ungenutzten Zimmern und junge Menschen werden für gegenseitige Alltagshilfe und gemeinsames Wohnen vermittelt.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Mit dem neuen Vermittlungsprogramm „Wohnen für Hilfe“ schaffen wir neue Wege für bezahlbares und generationenübergreifendes Wohnen. Wir bringen Senior*innen mit ungenutzten Zimmern mit jungen Menschen zusammen, die im Alltag unterstützen und dafür eine entsprechend verringerte Miete zahlen müssen. So entstehen Wohnpartnerschaften auf Gegenseitigkeit, die bezahlbares Wohnen ermöglichen, Einsamkeit vorbeugen und den Zusammenhalt stärken.",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Barrierefreie, bezahlbare Alters-WGs und generationenübergreifende Wohngruppen schaffen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Gemeinsam mit landeseigenen Wohnungsbaugesellschaften und Genossenschaften schaffen wir gezielt barrierefreie bezahlbare Wohnangebote für Alleinerziehende, Menschen mit Behinderungen und auch für Wohngemeinschaften, wie WGs für junge Menschen, die zum Beispiel Azubis und Studierende zusammenbringen, Alters-WGs und inklusive und generationenübergreifende Wohngruppen für Menschen mit und ohne Behinderungen.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Ein regelmäßiger stadtweiter Aktionstag soll Gemeinschaft in den Kiezen fördern und Großstadtanonymität aufbrechen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Mit einem regelmäßigen stadtweiten „Berlin Day“ fördern wir gezielt Gemeinschaft in unseren Kiezen und brechen Großstadtanonymität auf.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "In jedem Bezirk neue Orte der Begegnung schaffen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "In jedem Bezirk sollen neue Orte der Begegnung entstehen.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Psychische Kontakt- und Beratungsstellen ausbauen und eine niedrigschwellige, wohnortnahe Versorgung ermöglichen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Die Kontakt- und Beratungsstellen bauen wir aus, ebenso die Psychotherapie für Kinder und Jugendliche nach SGB VIII. Ziel ist eine niedrigschwellige und wohnortnahe Versorgung.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Niedrigschwellige Anlaufstellen für Jugendliche in seelischen Krisen ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir bauen niedrigschwellige Anlaufstellen für Jugendliche in seelischen Krisen aus, die das Regelsystem ergänzen, solange dieses nicht ausreichend Angebote für den tatsächlichen Bedarf vorhält.",
+          "seite": 38
+        },
+        {
+          "beschreibung": "Psychosoziale Beratung für wohnungslose Menschen als Teil ausgebauter und verstetigter Beratungs- und Versorgungsangebote.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Parallel bauen wir Beratungs- und Versorgungsangebote aus und verstetigen sie. Dazu zählen psychosoziale Beratung […]",
+          "seite": 51
+        },
+        {
+          "beschreibung": "Die mentale Gesundheit in Schulen durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte, stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Die mentale Gesundheit aller Beteiligten stärken wir, unter anderem durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte.",
+          "seite": 42
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            49
+          ],
+          "grund": "Die Stigmatisierung auf Seite 49 betrifft den Zugang älterer Menschen zu Sozialleistungen, nicht psychische Erkrankungen oder die Hilfesuche von Männern. Zielgruppengerechte psychische Unterstützungsangebote für Männer sind nicht belegt."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesprogramm zur Schaffung von Begegnungsorten weiter unterstützen",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir haben ein Landesprogramm zur Schaffung von Begegnungsorten (Dritte Orte) auf den Weg gebracht, um niedrigschwelliges soziales Miteinander zu fördern und Gemeinschaft zu stärken. Dafür werden wir uns auch weiterhin einsetzen.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Jugendclubs, soziokulturelle Zentren und Dritte Orte stärken und neu schaffen",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Stigmatisierung psychischer Erkrankungen entgegenwirken und Diagnostik und Therapie verbessern",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir wollen, dass psychische Erkrankungen von Menschen nicht mehr stigmatisiert werden und ihre Diagnostik und Therapie weiter verbessert werden.",
+          "seite": 31
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            31,
+            33,
+            49
+          ],
+          "grund": "S. 31 nennt Entstigmatisierung psychischer Erkrankungen allgemein, ohne Bezug zu Männern; S. 33 meint die Enttabuisierung von Einsamkeit; S. 49 betrifft Selbsthilfe im Katastrophenschutz. Keine Stelle bietet männerspezifische Unterstützung."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Wohnortnahe Versorgungsnetzwerke und organisierte Nachbarschaftshilfe stärken",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Versorgungsnetzwerke vor Ort werden gestärkt, um ein möglichst langes Leben in Selbstständigkeit und im eigenen Wohnumfeld zu ermöglichen. Quartiersansätze, wohnortnahe Unterstützungsstrukturen und organisierte Nachbarschaftshilfe sind zentrale Bausteine.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Eine landesweite Strategie gegen Einsamkeit entwickeln",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Sachsen-Anhalt entwickelt deshalb eine schlüssige Strategie gegen Einsamkeit.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Die Engagementstrategie finanziell stärken und weiterentwickeln",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Engagement, Begegnung und Beteiligung werden gezielt gestärkt. Die landesweite Engagementstrategie wird finanziell besser untersetzt und weiterentwickelt.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Den Engagementfonds niedrigschwellig ausbauen und Initiativen unterstützen",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Der Engagementfonds wird ausgebaut, niedrigschwellig gestaltet und bekannter gemacht, um Einzelpersonen, kleine Initiativen und informelles Engagement wirksam zu unterstützen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Freiwilligenagenturen und Engagementzentren strukturell fördern",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Freiwilligenagenturen und Engagementzentren werden verlässlich und strukturell gefördert.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Stadtteilfeste, Begegnungsformate und Vernetzung vor Ort finanziell unterstützen",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Unbürokratische Unterstützung, auch finanziell, ermöglicht Stadtteilfeste, Begegnungsformate und Vernetzung vor Ort. So werden nicht nur Einsamkeit bekämpft, sondern demokratische Alltagsräume gestärkt.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Prävention und Beratung zu psychischer Gesundheit ausbauen",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Dazu werden wir Prävention, Beratung und Versorgung ausbauen.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Gemeindepsychiatrische Verbünde stärken",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Gemeindepsychiatrische Verbünde werden gestärkt.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Passgenaue Beratung bei psychischen Belastungen queerer Menschen anbieten",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Besondere Belastungen queerer Menschen durch Diskriminierung werden durch passgenaue Beratungsangebote berücksichtigt.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Die Jungenarbeit im Land strukturell stärken",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "Um die Entwicklung von Jungen und jungen Männern im Land zu verbessern, werden wir die Jungenarbeit im Land strukturell stärken.",
+          "seite": 27
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Wohnortnahe Versorgungsnetzwerke und Nachbarschaftshilfe",
+          "seite": 14
+        },
+        {
+          "ursache": 2901,
+          "name": "Landesweite Strategie gegen Einsamkeit",
+          "seite": 34
+        },
+        {
+          "ursache": 2901,
+          "name": "Landesweite Engagementstrategie",
+          "seite": 34
+        },
+        {
+          "ursache": 2901,
+          "name": "Engagementfonds",
+          "seite": 34
+        },
+        {
+          "ursache": 2901,
+          "name": "Freiwilligenagenturen und Engagementzentren",
+          "seite": 34
+        },
+        {
+          "ursache": 2903,
+          "name": "Gemeindepsychiatrische Verbünde",
+          "seite": 15
+        },
+        {
+          "ursache": 2901,
+          "name": "Begegnung und Gemeinschaft vor Ort stärken",
+          "seite": 34
+        },
+        {
+          "ursache": 2903,
+          "name": "Aufklärung und Prävention psychischer Gesundheit",
+          "seite": 15
+        },
+        {
+          "ursache": 2903,
+          "name": "Beratung und Weitervermittlung vereinfachen",
+          "seite": 15
+        },
+        {
+          "ursache": 2904,
+          "name": "Zielgruppengerechte Unterstützung für Männer",
+          "seite": 27
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Eine Garantierente für mehr Menschen mit geringem Einkommen weiterentwickeln.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Auch Menschen mit geringem Einkommen unterstützen wir dabei, auskömmliche Rentenansprüche zu erwerben und so Altersarmut zu vermeiden. Die Grundrente werden wir zu einer Garantierente nach 30 Versicherungsjahren weiterentwickeln, die deutlich mehr Menschen als bisher einbezieht und finanziell besserstellt.",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Ein bundesweit vergünstigtes Nahverkehrsangebot für Menschen mit geringem Einkommen entwickeln.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Neben dem Deutschland-Semesterticket wollen wir auch Lösungen für Auszubildende und Freiwilligendienstleistende finden und zudem ein bundesweit vergünstigtes Angebot für Menschen mit geringem Einkommen entwickeln.",
+          "seite": 49
+        },
+        {
+          "beschreibung": "Den Zugang zum freiwilligen Engagement für Menschen mit geringem Einkommen verbessern.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Wir werden die Zugänge zum freiwilligen Engagement auch für Menschen mit geringem Einkommen, Migrationsgeschichte oder Behinderungen verbessern.",
+          "seite": 111
+        },
+        {
+          "beschreibung": "Sozial gestaffelte Unterstützungsmöglichkeiten für Freiwilligendienste schaffen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Dafür wollen wir die Bedingungen für diese Personengruppen verbessern und sozial gestaffelte Unterstützungsmöglichkeiten schaffen.",
+          "seite": 112
+        },
+        {
+          "beschreibung": "Engagementstrukturen für ältere Menschen ausbauen, damit auch bisher schwer erreichbare Personen teilnehmen können.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Engagementstrukturen für Ältere wollen wir ausbauen, damit sich auch diejenigen einbringen können, die bislang schwerer Zugang finden.",
+          "seite": 86
+        },
+        {
+          "beschreibung": "Die Angebote der Mental Health Coaches an Schulen ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir bauen die Angebote der Mental Health Coaches an Schulen aus und wir setzen uns dafür ein, dass Inklusion aller Schüler*innen gemäß der UN-Behindertenrechtskonvention an allen Schulen zur gelebten Realität wird.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie in multiprofessionellen Teams schaffen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir schaffen mehr Stellen für Schulsozialarbeit, Schulpsychologie und Inklusion in multiprofessionellen Teams.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Therapieplätze bedarfsgerecht ausbauen.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Deswegen werden wir Therapieplätze […] bedarfsgerecht ausbauen.",
+          "seite": 95
+        },
+        {
+          "beschreibung": "Psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Deswegen werden wir […] psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+          "seite": 95
+        },
+        {
+          "beschreibung": "Psychosoziale Zentren für Geflüchtete stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Psychosoziale Zentren für Geflüchtete werden wir stärken und das Recht auf Sprachmittlung verankern.",
+          "seite": 95
+        },
+        {
+          "beschreibung": "Die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Deswegen werden wir […] die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+          "seite": 95
+        },
+        {
+          "beschreibung": "Die angemessene Finanzierung der psychotherapeutischen Weiterbildung sicherstellen.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Wir wollen die angemessene Finanzierung der Weiterbildung von Psychotherapeut*innen sicherstellen.",
+          "seite": 95
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2902,
+          "name": "Teilhabe finanziell sichern",
+          "seite": 97
+        },
+        {
+          "ursache": 2902,
+          "name": "Vergünstigtes Nahverkehrsangebot für Menschen mit geringem Einkommen",
+          "seite": 49
+        },
+        {
+          "ursache": 2902,
+          "name": "Soziale Einbindung unabhängig vom Einkommen",
+          "seite": 111
+        },
+        {
+          "ursache": 2902,
+          "name": "Sozial gestaffelte Unterstützung für Freiwilligendienste",
+          "seite": 112
+        },
+        {
+          "ursache": 2902,
+          "name": "Engagementstrukturen für ältere Menschen",
+          "seite": 86
+        },
+        {
+          "ursache": 2903,
+          "name": "Aufklärung und Prävention psychischer Gesundheit",
+          "seite": 77
+        },
+        {
+          "ursache": 2903,
+          "name": "Beratung und Weitervermittlung vereinfachen",
+          "seite": 77
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychiatrisch-psychosoziale Krisendienste ausbauen",
+          "seite": 95
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychosoziale Zentren für Geflüchtete stärken",
+          "seite": 95
+        },
+        {
+          "ursache": 2905,
+          "name": "Therapieplätze und Kapazitäten ausbauen",
+          "seite": 95
+        },
+        {
+          "ursache": 2905,
+          "name": "Zugang steuern und koordinieren",
+          "seite": 95
+        },
+        {
+          "ursache": 2905,
+          "name": "Finanzierung der psychotherapeutischen Weiterbildung",
+          "seite": 95
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Begegnungsräume durch generationenübergreifende Treffpunkte und bestehende Begegnungsstätten in allen Bezirken schaffen und weiterentwickeln.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir schaffen Räume für Begegnungen durch generationenübergreifende Treffpunkte in allen Bezirken und die Weiterentwicklung bestehender Begegnungsstätten.",
+          "seite": 218
+        },
+        {
+          "beschreibung": "Gemeinschaftliche Flächen in Quartieren so gestalten, dass sie Nachbarschaft und Begegnung fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir unterstützen die Gestaltung von gemeinsamen Flächen, die Gemeinschaft fördern und die vielfältige Nachbarschaft zusammenbringen.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Eine Landesstrategie gegen Einsamkeit mit gezielten Maßnahmen für sozial isolierte Menschen entwickeln.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Gleichzeitig entwickeln wir mit einer Landesstrategie gegen Einsamkeit Maßnahmen, um gezielt Menschen zu erreichen, die von sozialer Isolation betroffen sind.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Mit mobiler Stadtteilarbeit Menschen erreichen, für die ein Nachbarschaftszentrum zu schwer zugänglich ist.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Mit mobiler Stadtteilarbeit wollen wir Menschen erreichen, denen der Weg in ein Nachbarschaftszentrum bislang zu hochschwellig ist.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Gemeinschaftliche Wohnformen unterstützen, die Vereinsamung vorbeugen und gegenseitige Hilfe fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir unterstützen kreative und gemeinschaftliche Wohnformen, die Vereinsamung vorbeugen, gegenseitige Hilfe und Zusammenarbeit fördern und trotzdem Individualität bewahren.",
+          "seite": 219
+        },
+        {
+          "beschreibung": "Das Projekt der Plauderbänke in den Bezirken fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Außerdem fördern wir das Projekt der Plauderbänke in den Bezirken, um auch kurze Pausen am Wegesrand zu ermöglichen.",
+          "seite": 219
+        },
+        {
+          "beschreibung": "Beratungsstrukturen sowie Hospiz- und Palliativangebote in einer modernen Strategie bündeln und weiterentwickeln.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir werden daher die Beratungsstrukturen sowie Hospiz- und Palliativangebote in der Stadt ebenfalls gemäß dem Prinzip „wohnortnah ambulant vor stationär“ in einer modernen Hospiz- und Palliativstrategie bündeln und weiterentwickeln.",
+          "seite": 205
+        },
+        {
+          "beschreibung": "Psychische Gesundheit durch Entstigmatisierung, Prävention und Früherkennung stärken.",
+          "ursachen_ids": [
+            2903,
+            2904
+          ],
+          "zitat": "Wir Grüne stärken die psychische Gesundheit durch Entstigmatisierung, Prävention und Früherkennung […]",
+          "seite": 204
+        },
+        {
+          "beschreibung": "Psychiatrische Einrichtungen fördern und niedrigschwellige Lotsen- und Vermittlungsangebote für passende Psychotherapie ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Um lange Wartezeiten zu reduzieren, fördern wir psychiatrische Einrichtungen personell und finanziell und bauen gemeinsam mit der Kassenärztlichen Vereinigung Berlin niedrigschwellige Lotsen- und Vermittlungsangebote aus, damit Menschen schneller Zugang zu passender psychotherapeutischer Versorgung erhalten.",
+          "seite": 204
+        },
+        {
+          "beschreibung": "Integrierte, niedrigschwellige, aufsuchende und multiprofessionelle Hilfs- und Krisenangebote in allen Bezirken ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir Grüne stärken die psychische Gesundheit […] durch den Ausbau integrierter, niedrigschwelliger, aufsuchender und multiprofessioneller Hilfs- und Krisenangebote in allen Bezirken, insbesondere für Menschen mit schweren psychischen Erkrankungen.",
+          "seite": 204
+        },
+        {
+          "beschreibung": "Präventions- und Unterstützungsangebote für Kinder und Jugendliche mit Schulpsychologie, Jugendpsychiatrie-Teams und früher Hilfe im sozialen Umfeld ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Speziell für Kinder und Jugendliche wollen wir Präventions- und Unterstützungsangebote deutlich ausbauen, unter anderem durch mehr Schulpsycholog*innen und -sozialarbeiter*innen, aufsuchende Jugendpsychiatrie-Teams, frühzeitige Hilfen im sozialen Umfeld und eine bessere Vernetzung zwischen dem Gesundheits-, Jugend- und Bildungsbereich.",
+          "seite": 204
+        },
+        {
+          "beschreibung": "Die anonyme Telefonsorge der „Nummer gegen Kummer“ für Kinder und Jugendliche dauerhaft erhalten.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Außerdem setzen wir uns für den dauerhaften Erhalt der „Nummer gegen Kummer“ ein, die mit anonymer Telefonsorge für Tausende Kinder und Jugendliche in dieser Stadt unverzichtbar ist.",
+          "seite": 204
+        },
+        {
+          "beschreibung": "Suizidprävention systematisch verankern und Hilfsangebote stärker vernetzen und gezielt ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Suizidprävention soll dabei systematisch verankert, Hilfsangebote sollen stärker vernetzt und gezielt ausgebaut werden.",
+          "seite": 204
+        },
+        {
+          "beschreibung": "Psychosoziale und psychotherapeutische Versorgung für Geflüchtete stärken und niedrigschwelligen, bedarfsgerechten Zugang ermöglichen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir möchten daher die psychologische und psychosoziale Versorgung für Geflüchtete stärken und einen niedrigschwelligen und bedarfsgerechten Zugang zu ihr ermöglichen. Dazu gehören mehrsprachige und kultursensible Angebote, insbesondere für Kinder und Jugendliche.",
+          "seite": 143
+        },
+        {
+          "beschreibung": "Flächendeckende integrierte Gesundheitszentren mit therapeutischen, psychosozialen und präventiven Angeboten aufbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir wollen flächendeckend integrierte Gesundheitszentren aufbauen, die ärztliche, therapeutische, psychosoziale und präventive Angebote unter einem Dach vereinen.",
+          "seite": 202
+        },
+        {
+          "beschreibung": "Gesundheitsförderung mit Schwerpunkt psychische Gesundheit verbindlich in Kitas, Schulen, Betrieben und Senior*inneneinrichtungen integrieren.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Die Gesundheitsförderung soll verbindlich in Kitas, Schulen, Betrieben und Senior*inneneinrichtungen integriert werden, mit Schwerpunkten auf Bewegung, gesunder Ernährung, Suchtprävention und psychischer Gesundheit.",
+          "seite": 208
+        },
+        {
+          "beschreibung": "Psychosoziale Versorgung durch Zusammenarbeit von Straßensozialarbeit und psychosozialen Diensten direkt in den Kiezen stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Ebenso stärken wir die psychosoziale Versorgung durch eine enge Zusammenarbeit von Straßensozialarbeit und psychosozialen Diensten direkt in den Kiezen.",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Kriseninterventionsteams einführen, um auf Einsatzlagen mit psychosozialen Herausforderungen besser reagieren zu können.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir Grüne stärken die Präventionsfähigkeiten und führen Kriseninterventionsteams ein, um insbesondere auf Einsatzlagen mit psychosozialen Herausforderungen besser reagieren zu können.",
+          "seite": 235
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Begegnung und Gemeinschaft vor Ort stärken",
+          "seite": 218
+        },
+        {
+          "ursache": 2901,
+          "name": "Gemeinschaftliche Flächen im Quartier",
+          "seite": 63
+        },
+        {
+          "ursache": 2901,
+          "name": "Landesstrategie gegen Einsamkeit",
+          "seite": 74
+        },
+        {
+          "ursache": 2901,
+          "name": "Mobile Stadtteilarbeit",
+          "seite": 74
+        },
+        {
+          "ursache": 2901,
+          "name": "Gemeinschaftliche Wohnformen gegen Vereinsamung",
+          "seite": 219
+        },
+        {
+          "ursache": 2901,
+          "name": "Plauderbänke",
+          "seite": 219
+        },
+        {
+          "ursache": 2901,
+          "name": "Professionelle Begleitung bei Verlust",
+          "seite": 205
+        },
+        {
+          "ursache": 2903,
+          "name": "Integrierte niedrigschwellige psychische Hilfs- und Krisenangebote",
+          "seite": 204
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychische Unterstützung für Kinder und Jugendliche",
+          "seite": 204
+        },
+        {
+          "ursache": 2903,
+          "name": "Anonyme telefonische Hilfe für Kinder und Jugendliche",
+          "seite": 204
+        },
+        {
+          "ursache": 2903,
+          "name": "Suizidprävention und Vernetzung von Hilfen",
+          "seite": 204
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychosoziale Versorgung Geflüchteter",
+          "seite": 143
+        },
+        {
+          "ursache": 2903,
+          "name": "Integrierte Gesundheitszentren mit psychosozialen Angeboten",
+          "seite": 202
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychische Gesundheitsförderung in Lebenswelten",
+          "seite": 208
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychosoziale Versorgung wohnungsloser Menschen",
+          "seite": 73
+        },
+        {
+          "ursache": 2903,
+          "name": "Psychosoziale Krisenintervention im Rettungsdienst",
+          "seite": 235
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunale Nachbarschaftstreffs als Orte der Geselligkeit und des gemeinsamen Arbeitens schaffen; Veranstaltungen für Menschen über 65 kostenlos anbieten.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Mentale Gesundheit an Schulen durch Aufklärung, geschultes Personal und verlässliche Unterstützung fördern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Und wir fangen früh an: Mentale Gesundheit gehört in Schulen. Mit Aufklärung, geschultem Personal und verlässlicher Unterstützung sorgen wir dafür, dass junge Menschen nicht allein gelassen und sensibilisiert werden.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Flächendeckende Krisendienste für schnelle und niedrigschwellige Hilfe in akuten Situationen aufbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "den flächendeckenden Aufbau von Krisendiensten für schnelle und niedrigschwellige Hilfe in akuten Situationen.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Psychosoziale Beratung flächendeckend und auskömmlich finanzieren und digitale Angebote ermöglichen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "die Beratungslandschaft sichern und ausbauen, indem unter anderem die Sozial-, Schuldner-, Sucht- und psychosoziale Beratung flächendeckend und auskömmlich finanziert sowie digitale Angebote ermöglicht werden.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Stigmatisierung psychisch erkrankter Menschen abbauen.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "den Abbau von Stigmatisierung, die Stärkung der Teilhabe, die bessere Unterstützung neurodivergenter Menschen sowie die Förderung mentaler Gesundheit in Schulen durch Prävention, Beratung und ausreichend Schulsozialarbeit.",
+          "seite": 60
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2901,
+          "seiten": [
+            53
+          ],
+          "grund": "Das dort beschriebene Mehrgenerationenwohnen soll Wohnkosten senken, die Lebensqualität erhöhen und Pflegebedürftigkeit verzögern; ein Bezug zu Begegnung gegen Einsamkeit nach dem Tod der Partnerin oder des Partners wird nicht hergestellt."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Bestehende Treffpunkte sichern und moderne Dorfzentren mit gebündelten Alltagsangeboten ermöglichen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Quartiersansätze gegen Einsamkeit bündeln, unterstützen und finanzieren.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Mit einem Landesaktionsplan gegen Einsamkeit wollen wir diese Maßnahmen bündeln, unterstützen und finanzieren.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Jugendorte für freie Treffen und Austausch in kleineren Städten und Gemeinden schaffen und ausbauen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen außerdem Jugendorte schaffen und ausbauen, wozu insbesondere unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden zählen.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Kitas als soziale Treffpunkte und offene Familienzentren weiterentwickeln.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Kitas sind auch soziale Treffpunkte. Wir wollen sie als offene Anlaufstellen für Bildung, Betreuung und Erziehung weiterentwickeln und enger mit Angeboten der Familienbildung verzahnen. Dazu unterstützen wir den weiteren Ausbau von Kinder- und Familienzentren.",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Kleine und mittlere Clubs und Musikspielstätten durch ein Förderprogramm unterstützen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir legen ein Förderprogramm mit klaren Richtlinien auf, um kleine und mittlere Clubs sowie Musikspielstätten zu unterstützen.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Selbsthilfegruppen unterstützen, um Engagement und soziale Teilhabe zu fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Initiativen wie Freiwilligenagenturen und Selbsthilfegruppen unterstützen wir, um freiwilliges Engagement zu fördern und soziale Teilhabe zu verbessern.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Patenschaften und Leihgroßeltern als generationenübergreifende Gemeinschaftsprojekte unterstützen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Modellprojekte für Patenschaften und „Leihgroßeltern“ unterstützen wir, denn sie können dazu beitragen, eine soziale Gemeinschaft zu stiften, in der Jung und Alt voneinander profitieren können.",
+          "seite": 86
+        },
+        {
+          "beschreibung": "Niedrigschwellige Beratung und Krisenintervention zur psychischen Gesundheit für Jugendliche ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir setzen uns für den Ausbau niedrigschwelliger Beratungsangebote im Bereich der psychischen Gesundheit für Jugendliche ein […]",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Schulsport mit Fokus auf Gesundheitsprävention und Freude an Bewegung erweitern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir wollen eine inhaltliche Erweiterung des Schulsports mit einem neuen Fokus auf Gesundheitsprävention und Freude an Bewegung einführen.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Beratung, Prävention und Aufklärung zu psychischen Erkrankungen fördern und Stigmatisierungen abbauen.",
+          "ursachen_ids": [
+            2903,
+            2904
+          ],
+          "zitat": "Initiativen zur Beratung, Prävention und Aufklärung über psychische Erkrankungen unterstützen wir, um die Versorgung nachhaltig zu sichern und Stigmatisierungen abzubauen.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Geschlechtersensible Forschung zu Männergesundheit in Ausbildung und Klinikalltag verankern.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "Die mentale Gesundheit von Männern muss endlich ausreichend Beachtung finden. Wir bringen die geschlechtergerechte Forschung direkt in die Ausbildung und den Klinikalltag, damit Vorsorge und Behandlung für alle Menschen exakt passen.",
+          "seite": 82
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Babyboomer-Engagement gezielt für Sportangebote und Vereinsarbeit einbinden.",
+          "ursachen_ids": [
+            2901,
+            2902
+          ],
+          "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Die Zusammenarbeit von Sportvereinen mit Bildung, Wirtschaft und sozialen Einrichtungen stärken, um mehr Menschen zu erreichen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Außerdem stärken wir die Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen, um möglichst viele Menschen zu erreichen.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Psychische Gesundheit durch Entstigmatisierung und niedrigschwellige digitale Angebote stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Auch in der psychischen Gesundheit und im Bereich «Mental Health» wollen wir durch Entstigmatisierung und niedrigschwellige, digitale Angebote die Lebensqualität der Betroffenen stärken.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Suizidprävention spürbar ausbauen und Menschen mit Suizidgedanken Unterstützung zusichern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Zugleich muss der Staat jedem, der Suizidgedanken hat, die helfende Hand reichen. Die Suizidprävention wollen wir deshalb spürbar ausbauen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Die Wartezeit auf einen Psychotherapieplatz auf unter vier Wochen verkürzen.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Wir setzen uns für eine bessere psychotherapeutische Versorgung ein und wollen die Wartezeit auf einen Therapieplatz auf unter vier Wochen verkürzen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Das Kostenerstattungsverfahren während der Wartezeit vereinfachen und standardisieren.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Bis zur Verkürzung der Wartezeiten wollen wir das Kostenerstattungsverfahren unbürokratischer machen und stärker standardisieren.",
+          "seite": 34
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            34
+          ],
+          "grund": "Entstigmatisierung und digitale Angebote richten sich allgemein an psychisch belastete Menschen; eine gezielte Unterstützung von Männern oder ein Abbau männlicher Scham- und Männlichkeitsnormen wird nicht zugesagt."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2902,
+          "name": "Babyboomer-Engagement für Sportangebote und Vereinsarbeit",
+          "seite": 32
+        },
+        {
+          "ursache": 2902,
+          "name": "Kooperation von Sportvereinen mit Schulen und sozialen Einrichtungen",
+          "seite": 32
+        },
+        {
+          "ursache": 2903,
+          "name": "Entstigmatisierung und niedrigschwellige digitale Angebote",
+          "seite": 34
+        },
+        {
+          "ursache": 2903,
+          "name": "Suizidprävention",
+          "seite": 34
+        },
+        {
+          "ursache": 2905,
+          "name": "Psychotherapeutische Wartezeit auf unter vier Wochen verkürzen",
+          "seite": 34
+        },
+        {
+          "ursache": 2905,
+          "name": "Kostenerstattungsverfahren während der Wartezeit vereinfachen",
+          "seite": 34
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "suizidprävention",
+          "ursache": 2903,
+          "richtung": "Prävention psychischer Gesundheit"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Den generationsübergreifenden Dialog vertiefen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Dazu vertiefen wir den generationsübergreifenden Dialog.",
+          "seite": 119
+        },
+        {
+          "beschreibung": "Eltern für traditionelle Rollenbilder sensibilisieren und geschlechtersensible Erziehung fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2904
+          ],
+          "zitat": "Eine frühe Sensibilisierung der Eltern, um tradierte Rollenbilder von Kindern bereits in den frühen Lebensjahren aufzubrechen, wollen wir mit Informationsangeboten begleiten. Kindergärten und Kitas leben eine geschlechtersensible Erziehung.",
+          "seite": 81
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2903,
+          "seiten": [
+            69,
+            115,
+            116,
+            117,
+            118
+          ],
+          "grund": "Keine konkrete Maßnahme zu psychischer Gesundheit, Erkennen psychischer Symptome oder niedrigschwelliger psychischer Beratung. Die Aufklärung zu psychischer Gewalt (S. 69), allgemeine Gesundheitsbildung (S. 115–116), psychologische Beratung bei Transitionen (S. 117) und Angebote zu Sucht (S. 118) betreffen andere Gegenstände."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2904,
+          "name": "Geschlechtersensible Erziehung und Rollenbilder",
+          "seite": 81
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Senioren- und Mehrgenerationenbegegnungsstätten mit generationsübergreifenden Freizeitprogrammen gegen Vereinsamung fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Seniorenbegegnungsstätten oder Mehrgenerationenbegegnungsstätten mit seniorengerechten und generationsübergreifenden Freizeitprogrammen fördern, um der Vereinsamung entgegenzuwirken.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Hospizeinrichtungen und die haupt- und ehrenamtliche Hospizarbeit fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Hospizeinrichtungen und die Arbeit der haupt- und ehrenamtlichen Mitarbeitenden fördern.",
+          "seite": 50
+        },
+        {
+          "beschreibung": "Den Bedarf an psychosozialer Beratung an Hochschulen regelmäßig erheben und die Ergebnisse in die Haushaltsberatungen einbringen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] den Bedarf an psychosozialer Beratung an den Hochschulstandorten in Mecklenburg-Vorpommern fortlaufend evaluieren, um so die Evaluationsergebnisse in die Haushaltsberatungen einfließen lassen zu können.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Digitale Mental-Health-Angebote und Online-Interventionen in die Regelversorgung an Hochschulen integrieren.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] die Regelversorgung um digitale Mental Health-Angebote erweitern, indem dezentrale Selbstmanagement-Programme an den Hochschulen und für Studierende bekannt gemacht werden, sowie online-gestützte Interventionen in die Beratungsstruktur der Studierendenwerke implementieren",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Online-Interventionen in den ersten vier bis sechs Wochen bis zur Regelversorgung ohne Verzögerung ermöglichen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Genehmigungsvorbehalte dahingehend entbürokratisieren, dass die Ersuchen von Studierenden in den ersten vier bis sechs Wochen bis zur Gewährung einer Regelversorgung zumindest über eine online-gestützte Intervention umgehend erfüllt werden können.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Universitätspersonal durch zertifizierte Trainings beim Abbau von Stigmata und im Umgang mit Betroffenen schulen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Trainingsprogramme für Universitätspersonal in Forschung, Lehre und Verwaltung als Fortbildung mit Zertifikatsnachweis etablieren, um Stigmata abzubauen, einen sicheren Umgang mit Betroffenen zu fördern sowie diese als Qualifizierungsmaßnahme des lebenslangen Lernens explizit für das Universitätspersonal auszuweisen.",
+          "seite": 115
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            115
+          ],
+          "grund": "Die gelesenen Abschnitte enthalten keine gezielte Maßnahme gegen männlichkeitsspezifische Scham oder für männergerechte psychische Unterstützung. Die Stigma-Fortbildung auf S. 115 richtet sich allgemein an Universitätspersonal und Betroffene, nicht spezifisch an Männer."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Begegnung und Gemeinschaft vor Ort stärken",
+          "seite": 39
+        },
+        {
+          "ursache": 2901,
+          "name": "Professionelle Begleitung bei Verlust",
+          "seite": 50
+        },
+        {
+          "ursache": 2903,
+          "name": "Beratung und Weitervermittlung vereinfachen",
+          "seite": 115
+        },
+        {
+          "ursache": 2903,
+          "name": "Aufklärung und Prävention psychischer Gesundheit",
+          "seite": 115
+        },
+        {
+          "ursache": 2903,
+          "name": "Sofortige Online-Intervention bis zur Regelversorgung",
+          "seite": 115
+        },
+        {
+          "ursache": 2903,
+          "name": "Antistigma-Fortbildungen an Hochschulen",
+          "seite": 115
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Orte der Begegnung für zivilgesellschaftliche Initiativen fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Um sozialer Isolierung und damit einhergehenden gesundheitlichen Nachteilen vorzubeugen, wollen wir Orte der Begegnung fördern, um dort zivilgesellschaftlichen Initiativen Raum zu geben, um zu wirken.",
+          "seite": 35
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2903,
+          "seiten": [
+            32,
+            59,
+            63
+          ],
+          "grund": "S. 32 nennt psychische Gesundheit nur als Fokus im Zusammenhang mit studentischen Innovationsprojekten und Studienverläufen. S. 59 und 63 behandeln allgemeine Gesundheitskompetenz und Prävention, nicht psychische Gesundheit, Symptomerkennung oder niedrigschwellige Beratung."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            35,
+            36,
+            37,
+            38,
+            39,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "grund": "Die vollständig gelesenen Kapitel Soziales (S. 35–39) und Gesundheit und Rettungswesen (S. 59–63) enthalten keine Zusage zu Entstigmatisierung oder zielgruppengerechter Unterstützung für Männer."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Begegnung und Gemeinschaft vor Ort stärken",
+          "seite": 35
+        }
+      ],
+      "stand_im_pdf": "05.06.2026"
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Erhöhung des einkommensteuerlichen Grundfreibetrags zur Entlastung niedriger Einkommen",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Förderung des generationenübergreifenden Zusammenhalts mit Großeltern und Urgroßeltern",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Der generationenübergreifende Zusammenhalt mit Großeltern und Urgroßeltern soll gefördert werden.",
+          "seite": 147
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2901,
+          "seiten": [
+            145,
+            146,
+            147,
+            154
+          ],
+          "grund": "Kein Vorschlag zu Begegnungsangeboten, Besuchs- oder Trauerbegleitung nach dem Tod eines Partners; Aussagen zu Familienzusammenhalt bzw. Trennung betreffen andere Situationen."
+        },
+        {
+          "ursache": 2903,
+          "seiten": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "grund": "Keine allgemeine Aufklärung oder niedrigschwellige Beratung zu psychischer Gesundheit; psychische Beschwerden erscheinen nur in anderen Sachzusammenhängen."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            96
+          ],
+          "grund": "Hilfe zur Selbsthilfe betrifft Entwicklungshilfe, nicht Entstigmatisierung oder zielgruppengerechte Unterstützung von Männern."
+        },
+        {
+          "ursache": 2905,
+          "seiten": [
+            28,
+            34
+          ],
+          "grund": "S. 28 behandelt allgemeine Facharztwartezeiten; auf S. 34 geht es um Datenzugriff auf Psychotherapeuten, nicht um Kassensitze oder Therapieplatzkapazität. Allgemeine Arzttermine sind laut R2 ausgeschlossen."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Einsamkeit im Alter durch gezielte Förderung von Teilhabe und ehrenamtlichem Engagement bekämpfen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir setzen uns für Würde, Teilhabe und Sicherheit im Alter ein und fordern: […] Die Bekämpfung von Einsamkeit im Alter durch gezielte Förderung von Teilhabemöglichkeiten und ehrenamtlichen Engagements.",
+          "seite": 51
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2903,
+          "seiten": [
+            73
+          ],
+          "grund": "Der Sozialpsychiatrische Dienst wird als Aufgabe des Öffentlichen Gesundheitsdienstes genannt; eine konkrete Zusage zu Aufklärung, Prävention oder niedrigschwelliger Beratung zur psychischen Gesundheit fehlt."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            46,
+            49
+          ],
+          "grund": "Die Selbsthilfe-Stellen stehen im allgemeinen Kontext von Wirtschafts- und Sozialleistungspolitik, ohne Bezug zu psychischer Unterstützung für Männer oder Entstigmatisierung."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Aufwandsentschädigungen für ehrenamtliche Trainer regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Ehrenamtliche Trainer, Übungsleiter, Kampf- und Schiedsrichter leisten einen gesellschaftlichen Wert, der in keiner Statistik vollständig erfasst wird. Ohne sie gibt es keinen Vereinssport. Ihre möglichen Aufwandsentschädigungen werden wir regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Bürokratische Hürden für Vereine systematisch abbauen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Bürokratische Hürden für Vereine, sei es bei Förderanträgen, Versicherungspflichten oder Nachweispflichten, werden wir systematisch abbauen. Vereine sollen sich ausschließlich auf ihren ursprünglichen Zweck konzentrieren können.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Heimatvereine gezielt fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir werden auch gezielt die leider nur noch selten anzutreffenden Heimatvereine fördern.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Die Zahl der Schulpsychologen am gestiegenen Bedarf ausrichten.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Gewalt- und Drogenprobleme werden wir durch konsequentes Handeln unterbinden; Schulsozialarbeit wird als Landesaufgabe etabliert und die Zahl der Schulpsychologen dem gestiegenen Bedarf angepasst.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Breitensport als Gesundheitsvorsorge politisch und finanziell aufwerten.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Den Breitensport werden wir als Gesundheitsvorsorge politisch und finanziell aufwerten.",
+          "seite": 63
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            25,
+            63
+          ],
+          "grund": "Keine Entstigmatisierung und keine zielgruppengerechten Angebote für Männer gefunden; Schulpsychologie und Sportprävention sind allgemein formuliert."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Im Kapitel XVII (S. 236–246) und den Fundstellen S. 242 und 246 geprüft; keine konkrete Zusage setzt an den zugelassenen Ursachen 2901, 2903 oder 2904 an.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2901,
+          "seiten": [
+            246
+          ],
+          "grund": "Die Stelle betrifft Palliativdienste und Hospizplätze für Sterbende sowie Entlastung ihrer Angehörigen; konkrete Trauerbegleitung nach dem Tod der Partnerperson oder Begegnungsangebote werden nicht zugesagt."
+        },
+        {
+          "ursache": 2903,
+          "seiten": [
+            242
+          ],
+          "grund": "Gesundheitskompetenz wird im Zusammenhang mit ungesunder Lebensführung und vermeidbaren Erkrankungen genannt; psychische Erkrankungen, Symptome oder Gefühle werden nicht angesprochen."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Eine sanktionsfreie Mindestsicherung am Armutsrisiko ausrichten und für Menschen ohne ausreichendes Einkommen oder Vermögen öffnen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen. Anspruch haben alle, die kein ausreichendes Einkommen oder Vermögen haben. Um Armut zu verhindern, orientieren wir uns an der sogenannten Armutsgefährdungsgrenze, gegenwärtig rund 1 � 400 Euro monatlich (inklusive Miete und sonstigen Wohnkosten; in Regionen mit hohen Mieten entsprechend mehr).",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Niedrige und mittlere Einkommen steuerlich entlasten.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Niedrige und mittlere Einkommen werden wir entlasten. Sehr hohe Einkommen wollen wir dagegen stärker besteuern.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Kinder- und Jugendangebote wohnortnah, barrierefrei und gebührenfrei zugänglich machen und kommunal finanzieren.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Vorhandene Angebote für ältere Menschen ohne finanziellen Aufschlag analog und digital zugänglich machen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Alle vorhandenen Angebote sollen sowohl digital als auch analog ohne finanziellen Aufschlag zur Verfügung gestellt werden.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Ein kostenloses bundesweites Senior*innen-Ticket für Mobilität und soziale Teilhabe einführen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Um die Mobilität und soziale Teilhabe von älteren Menschen zu stärken, wollen wir ein kostenloses bundesweites Senior*innen-Ticket einführen.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Kultur öffentlich fördern und gemeinnützige Kulturangebote sowie ehrenamtliche Anbieter verlässlich unterstützen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Länder und Kommunen müssen finanziell so ausgestattet werden, dass sie Kulturförderung betreiben können. Gemeinnützige Kultur- und Veranstaltungsstätten und Menschen, die ehrenamtlich kulturelle Angebote schaffen, brauchen verlässliche und unbürokratische Unterstützung.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Sport öffentlich fördern und barrierefreie Sportstätten sowie Schwimmbäder schaffen.",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Psychotherapien bis zu ausreichender Kassenzulassung unbürokratisch über Kostenerstattung ermöglichen.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Solange nicht genügend zugelassene Psychotherapeut*innen zur Verfügung stehen, müssen Therapien unbürokratisch über das Kostenerstattungsverfahren ermöglicht werden.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Die Bedarfsplanung für psychotherapeutische Kassensitze am tatsächlichen Bedarf ausrichten.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Dafür brauchen wir eine grundlegende Reform der Bedarfsplanung für vertragspsychotherapeutische Kassensitze, die sich nach dem realen Bedarf richtet.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Ausbildungskosten künftiger Psychotherapeut*innen deckeln.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Die Ausbildungskosten für zukünftige Psychotherapeut*innen müssen gedeckelt werden.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Psychotherapeut*innen in Ausbildung einen Beschäftigungsstatus mit Zugang zu Tarifstrukturen geben.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Psychotherapeut*innen in Ausbildung müssen einen Beschäftigungsstatus erhalten, der ihre Einbindung in Tarifstrukturen erlaubt.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Die Finanzierung der Psychotherapieausbildung durch Weiterbildungsstätten gesetzlich regeln.",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Die Finanzierung der Ausbildung durch die Weiterbildungsstätten muss gesetzlich geregelt werden.",
+          "seite": 19
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2903,
+          "seiten": [
+            19
+          ],
+          "grund": "Die allgemein genannten präventiven Maßnahmen und ‚Mental health in all policies‘ werden nicht konkretisiert; konkrete Aufklärung oder niedrigschwellige psychische Beratung der Bevölkerung wird nicht zugesagt."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Einsamkeitsbeauftragte bei landeseigenen Wohnungsunternehmen sollen ältere Mieter*innen besuchen und nachbarschaftliche Aktivitäten organisieren.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Die Landeseigenen Wohnungsunternehmen sollen Einsamkeitsbeauftragte einstellen, die insbesondere in größeren Siedlungen ältere Mieter*innen zu Hause besuchen und Senior*innen-gerechte Aktivitäten für die Nachbarschaft organisieren.",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Ein Aktionsprogramm soll nachbarschaftliche Angebote in Großsiedlungen fördern und Beteiligungsformate für das Miteinander ausbauen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen die Aufwertung von Grünflächen, den Ausbau von Sportflächen sowie von nachbarschaftlichen Angeboten fördern.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Kiezkantinen sollen bezahlbare Mahlzeiten und soziale Begegnungsorte in der Nachbarschaft schaffen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Genau da wollen wir mit unseren Kiezkantinen ansetzen! Den Aufbau und Betrieb von insgesamt 20 Kiezkantinen wollen wir mit jährlich 10 Millionen Euro finanzieren.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Pilotprojekte für Sorgezentren sollen Nachbarschaft, gemeinsame Sorgearbeit und Selbstorganisation vor Ort ermöglichen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen Pilotprojekte zur Schaffung von Sorgezentren starten, die Versorgungslücken im Nahraum schließen sollen, den Menschen in der Nachbarschaft den Zugang und den Raum für gemeinsame Sorgearbeit und Selbstorganisation ermöglichen und in denen Kunst, Kultur, Gesundheit und andere gemeinwohlorientierte Zwecke Raum finden.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Ein verbindliches Landesprogramm soll Einsamkeit durch aufsuchende Maßnahmen und bezirkliche Link-Worker bekämpfen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir fordern ein verbindliches Landesprogramm gegen Einsamkeit, das aufsuchende Maßnahmen und das Modell des Social Prescribing mit bezirklichen Link-Workern verbindet.",
+          "seite": 113
+        },
+        {
+          "beschreibung": "In jedem Bezirk soll eine Einsamkeitsbeauftragte oder ein Einsamkeitsbeauftragter eingesetzt werden.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Die Linke fordert eine*n Einsamkeitsbeauftragte*n in jedem Bezirk.",
+          "seite": 137
+        },
+        {
+          "beschreibung": "Ein Altenhilfestrukturgesetz soll soziale Infrastruktur für ältere Menschen bezirksübergreifend sichern und finanzieren.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Die Linke wird dieses Gesetz zu einem politischen Schwerpunkt machen, unverzüglich ein Gesetzgebungsverfahren auf der Grundlage des Entwurfes des Berliner Landesseniorenbeirates aus dem Jahr 2023 auf den Weg bringen und alle nötigen finanziellen Mittel bedarfsgerecht bereitstellen.",
+          "seite": 148
+        },
+        {
+          "beschreibung": "Aufsuchende Nachbarschaftshilfe für allein lebende ältere Menschen soll ausgebaut werden.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Vor allem für allein lebende ältere Berliner*innen müssen spezielle aufsuchende Angebote der Nachbarschaftshilfe ausgebaut werden.",
+          "seite": 151
+        },
+        {
+          "beschreibung": "Wohnortnahe soziale Treffpunkte und aufsuchende Stadtteilarbeit sollen erhalten und ausgebaut werden.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen diese wohnortnahe Infrastruktur erhalten und ausbauen – zugänglich, barrierefrei und kultursensibel. Die aufsuchende Stadtteilarbeit, die der schwarz-rote Senat abgewickelt hat, wollen wir weiterführen.",
+          "seite": 243
+        },
+        {
+          "beschreibung": "Ein zusätzlicher Fonds soll Personal und Infrastruktur im Breitensport stärken, dessen Vereine Schutzräume gegen soziale Isolation bieten.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir werden mit dem Landessportbund einen ergänzenden Fonds auflegen, der direkt in die Basis des Breitensports investiert, insbesondere zur Sicherung von Personal und zur Instandhaltung der Infrastruktur.",
+          "seite": 313
+        },
+        {
+          "beschreibung": "Psychische Gesundheit soll im Unterricht und in Projektwochen thematisiert werden, um Wissen zu Erkrankungen und Hilfen zu vermitteln und Stigmatisierung abzubauen.",
+          "ursachen_ids": [
+            2903,
+            2904
+          ],
+          "zitat": "Psychische Gesundheit soll durch Unterricht oder Projektwochen fester Bestandteil der schulischen Bildung werden, um Kinder und Jugendliche über Erkrankungen, Versorgung und Therapieformen aufzuklären, Resilienz zu fördern und Stigmatisierung zu verringern.",
+          "seite": 137
+        },
+        {
+          "beschreibung": "Bezirkliche Kriseninterventionszentren mit Chats und aufsuchenden Hilfen sowie der Berliner Krisendienst sollen gestärkt werden.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Kriseninterventionszentren mit Kurzzeitaufnahme, Notfall-Chats und aufsuchenden Hilfen sollen in jedem Bezirk eingerichtet werden. Der Berliner Krisendienst soll stabil finanziert und ausgebaut werden.",
+          "seite": 137
+        },
+        {
+          "beschreibung": "Psychosoziale Kontakt- und Beratungsstellen mit Einzel- und Gruppenberatung sowie alltagsnaher Unterstützung sollen in jedem Bezirk bestehen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Psychosoziale Kontakt- und Beratungsstellen sollen in jedem Bezirk mit Einzel- und Gruppenberatung, Workshops und Teilhabe am Alltagsleben bestehen.",
+          "seite": 137
+        },
+        {
+          "beschreibung": "Die psychosoziale Unterstützung junger Menschen soll vernetzt und durch Lotsen, niedrigschwellige Krisenkontakte und Anlaufstellen erreichbar werden.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Der Jugendarbeit kommt in diesem Zusammenhang eine Lotsinnenfunktion zu: Sie hilft, bestehende Angebote wie etwa Familienberatungsstellen bekannt zu machen. Niedrigschwellige Krisenchats und -telefone sowie analoge Anlaufstellen an den realen Aufenthaltsorten von Kindern und Jugendlichen wollen wir stärken.",
+          "seite": 179
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Begegnungsorte und Nachbarschaftsnetzwerke gegen Einsamkeit im Alter unterstützen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Der Einsamkeit im Alter entgegenwirken und Begegnungsorte und Nachbarschaftsnetzwerke unterstützen.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Resilienzförderung und Lerntrainings in schulischen Rahmenplänen verankern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Eingliederung von Resilienzförderung und Lerntrainings in die Rahmenpläne",
+          "seite": 6
+        },
+        {
+          "beschreibung": "Digitale Hilfsangebote und flächendeckende Schulpsychologie für Kinder und Jugendliche ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Hilfsangebote ausbauen: mehr Psychotherapeut:innen, digitale Angebote und flächendeckende Schulpsycholog:innen.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Gesundheitsförderndes Verhalten, Emotionsregulation und den Umgang mit Stress im Schulalltag verankern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wichtige Kompetenzen wie gesundheitsförderndes Verhalten, Emotionsregulation und Umgang mit Stress im Schulalltag verankern.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Die psychosoziale Beratung durch Studierendenwerke dauerhaft sichern und erweitern.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Die psychosoziale Beratung durch die Studierendenwerke verstetigen und erweitern.",
+          "seite": 17
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            13,
+            19
+          ],
+          "grund": "Die Selbsthilfeorganisationen auf S. 13 beziehen sich auf Geflüchtete, jene auf S. 19 allgemein auf Patient:innenvertretung; keine der Stellen betrifft Männer, Stigma oder geschlechtsspezifische Hilfesuche."
+        }
+      ],
+      "stand_im_pdf": "Juni 2026",
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Begegnung und Gemeinschaft vor Ort stärken",
+          "seite": 12
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunen beim Aufbau lokaler Bildungsnetzwerke für alle Altersgruppen unterstützen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir wollen Kommunen dabei unterstützen, lokale Bildungsnetzwerke für alle Altersgruppen aufzubauen.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Barrierefreie Begegnungsstätten und offene Treffpunkte fördern und erweitern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "die Förderung und Erweiterung von Begegnungsstätten (barrierefrei) und offener Treff’s,",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Nachbarschaftshilfe und Senior:innenassistenz mit Beratungsangeboten unterstützen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "die Unterstützung der Modelle Nachbarschaftshilfe und Senior:innenassistenz mit Beratungsangeboten,",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Patenschaften für Alleinstehende fördern.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Patenschaften für Alleinstehende fördern.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Präventions-, Beratungs- und Behandlungsangebote für Betroffene ausbauen und bestehende Angebote unterstützen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Präventions-, Beratungs- und Behandlungsangebote umfassend ausbauen, erweitern und bestehende unterstützen,",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Medizinisches Fachpersonal durch Aufklärung für Stigmata sensibilisieren und diese abbauen.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "Stigmata effektiv durch Aufklärung, insbesondere des medizinischen Fachpersonals, abbauen,",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Psychisches Leiden infolge medizinischer Stigmata verhindern, behandeln und rechtlich ahnden.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "durch Stigmata von medizinischen Fachpersonal verursachtes psychisches Leiden zu verhindern, zu behandeln und juristisch zu ahnden,",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Lotsenstellen in die psychische Versorgung und frühe Hilfen mit Familienhebammen landesweit stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "ÖGD zum Präventionsknoten machen – Lotsenstellen in die psychische Versorgung, frühe Hilfen inkl. Familienhebammen landesweit stärken,",
+          "seite": 60
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Lokale Bildungsnetzwerke für alle Altersgruppen",
+          "seite": 35
+        },
+        {
+          "ursache": 2901,
+          "name": "Nachbarschaftshilfe und Senior:innenassistenz",
+          "seite": 59
+        },
+        {
+          "ursache": 2901,
+          "name": "Patenschaften für Alleinstehende",
+          "seite": 59
+        },
+        {
+          "ursache": 2903,
+          "name": "Präventions-, Beratungs- und Behandlungsangebote",
+          "seite": 52
+        },
+        {
+          "ursache": 2904,
+          "name": "Folgen medizinischer Stigmata verhindern und behandeln",
+          "seite": 52
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mindestrenten nach Versicherungsdauer sichern und stufenweise erhöhen",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Wir fordern eine Mindestrente von 1500 Euro nach 40 Versicherungsjahren. Wir plädieren – ähnlich wie bei unseren Nachbarländern – für ein Stufenmodell: Nach 30 Versicherungsjahren liegt die Mindestrente bei 1300 Euro und nach 15 Jahren bei 1200 Euro.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Wohnortnahe Freizeit- und Bildungsangebote für Kinder und Familien zugänglich machen",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Ehrenamt gezielter fördern und unterstützen",
+          "ursachen_ids": [
+            2902
+          ],
+          "zitat": "Das Ehrenamt ist dabei für uns eine zentrale Säule unserer Gesellschaft, weshalb wir es künftig gezielter fördern und unterstützen werden.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Ausbildungsplätze für Psychotherapeutinnen und -therapeuten schaffen",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+          "seite": 27
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2901,
+          "seiten": [
+            27
+          ],
+          "grund": "Die Förderung der Hospizversorgung betrifft die Begleitung Sterbender. Eine Zusage zu Begegnung, Besuchsdiensten oder Trauerbegleitung für Hinterbliebene steht dort nicht."
+        },
+        {
+          "ursache": 2903,
+          "seiten": [
+            25
+          ],
+          "grund": "Schulpsychologen erscheinen als Teil von Unterstützungsteams zur Entlastung der Lehrkräfte. Eine Maßnahme zur Aufklärung, Prävention oder niedrigschwelligen Beratung über psychische Erkrankungen der Betroffenen ist nicht formuliert."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            22
+          ],
+          "grund": "Die Stigmatisierungsangst bezieht sich auf den Grundsicherungsantrag. Die Rentenversprechen zielen auf Altersarmut, nicht auf Entstigmatisierung psychischer Belastungen oder männerspezifische Unterstützung."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Stadtteilzentren ausbauen und dauerhaft sichern, Nachbarschafts- und Begegnungsprojekte fördern, gezielte Maßnahmen gegen Vereinsamung.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Berlin braucht mehr Orte der Begegnung und verlässliche Angebote, die soziale Teilhabe fördern. Dazu gehören der Ausbau und die langfristige Sicherung von Stadtteilzentren, die Förderung von Nachbarschafts- und Begegnungsprojekten sowie gezielte Maßnahmen gegen Vereinsamung bei jungen Menschen, älteren Menschen und sozial Benachteiligten.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Schulpsychologinnen und Schulpsychologen flächendeckend an Schulen einsetzen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2903
+          ],
+          "zitat": "Wir fordern zudem den flächendeckenden Einsatz von Schulpsychologen.",
+          "seite": 16
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2901,
+          "name": "Begegnung und Gemeinschaft vor Ort stärken",
+          "seite": 12
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            65
+          ],
+          "grund": "Einziger Treffer (Stigmatisierung beim Vorzeigen von Sozialbescheiden im ÖPNV) hat keinen Bezug zu psychischer Gesundheit oder Hilfesuche von Männern; sonst nichts zu Entstigmatisierung oder Angeboten für Männer."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Sportvereine, Kulturangebote und Ehrenamt als Orte der Begegnung und sozialen Teilhabe stärken.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Stärkung von Sportvereinen, kulturellen Angeboten und ehrenamtlichem Engagement, als zentrale Orte der Begegnung und sozialen Teilhabe.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Soziale Orte und Unterstützungsstrukturen im ländlichen Raum fördern, mit Mobilitätsprogrammen und niedrigschwelligen Treffpunkten.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Förderung sozialer Orte und Unterstützungsstrukturen, insbesondere im ländlichen Raum, etwa durch gezielte Programme für Mobilität und niedrigschwellige Treffpunkte.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Die Landesstrategie gegen Einsamkeit mit konkreten Maßnahmen, klaren Zuständigkeiten und ausreichender Finanzierung ausbauen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Ausbau der Landesstrategie gegen Einsamkeit, verbunden mit konkreten Maßnahmen, klaren Zuständigkeiten und einer ausreichenden finanziellen Ausstattung.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Krisentelefone und ambulante Hilfen für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen sichern und ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Sicherung und Ausbau von Krisentelefonen und ambulanten Hilfen, insbesondere für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Jugendsozialarbeit verlässlich finanzieren und Präventionsangebote für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Ausbau und verlässliche Finanzierung der Jugendsozialarbeit, sowie von Präventionsangeboten für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Schulen mit multiprofessionellen Teams zur Prävention psychischer Probleme ausstatten.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen, um Schüler wie Lehrkräfte zu entlasten.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Klassengrößen auf höchstens 24 Schülerinnen und Schüler begrenzen, um Resilienz und soziale Kompetenzen zu stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Kleinere Klassen mit maximal 24 Schülerinnen und Schülern, um individuelle Förderung, Resilienz, Selbstbewusstsein und soziale Kompetenzen zu stärken.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Mehr Schulpsychologen und dauerhaft finanzierte Schulsozialarbeit bereitstellen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Mehr Schulpsychologen sowie dauerhaft finanzierte Schulsozialarbeit.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Erziehungs- und Familienberatung mit kurzen Wartezeiten und niedrigschwelligen Zugängen stärken.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Ergänzende Beratungs- und Unterstützungsangebote für Kinder, Jugendliche und Eltern, insbesondere Stärkung der Erziehungs- und Familienberatung, mit kurzen Wartezeiten und niedrigschwelligen Zugängen.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Präventionsangebote zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+          "seite": 61
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2904,
+          "seiten": [
+            16
+          ],
+          "grund": "Die dort genannten Selbsthilfe-, Beratungs- und Krisenangebote richten sich allgemein an Menschen mit Unterstützungsbedarf; ein spezifisches Angebot für Männer oder ein Ansatz zum Abbau männlicher Hilfesuchbarrieren wird nicht zugesagt."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Einen landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie einführen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Schulpsychologen präventiv einsetzen und für Lernende sowie Lehrkräfte niedrigschwellig erreichbar machen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Schulpsychologen müssen stärker präventiv arbeiten können und für Schülerinnen, Schüler und Lehrkräfte niedrigschwellig erreichbar sein.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Multiprofessionelle Teams mit Schulpsychologie als Regelangebot an Schulen etablieren.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Multiprofessionelle Teams müssen vom Ausnahmefall zum Standard werden. Neben Schulsozialarbeit und Schulpsychologie gehören dazu Inklusionsfachkräfte, Verwaltungspersonal, IT-Unterstützung, Lehrerassistenzen und Schulgesundheitsfachkräfte.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Den sozialpsychiatrischen Dienst ausbauen und stärker in Jugend-, Schul- und Integrationsarbeit einbinden.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+          "seite": 59
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2901,
+          "seiten": [
+            55
+          ],
+          "grund": "Einsamkeit im Alter wird als Problemlage beschrieben; konkrete Zusagen zu Begegnung, Besuchsdiensten oder Trauerbegleitung fehlen."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            59
+          ],
+          "grund": "Die Stigmatisierung psychischer Erkrankungen soll aktiv bekämpft werden, aber ohne konkrete Maßnahme; zielgruppengerechte Angebote für Männer fehlen."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2901": {
+      "Begegnung und Gemeinschaft vor Ort stärken": [
+        "einsamkeit",
+        "begegnungsstätten",
+        "mehrgenerationenhaus",
+        "nachbarschaftshilfe",
+        "besuchsdienst",
+        "seniorentreff",
+        "strategie gegen einsamkeit",
+        "gemeinschaftsangebote"
+      ],
+      "Professionelle Begleitung bei Verlust": [
+        "trauerbegleitung",
+        "hospiz",
+        "seelsorgerische begleitung",
+        "beratungsangebote für ältere"
+      ]
+    },
+    "2902": {
+      "Teilhabe finanziell sichern": [
+        "teilhabe älterer",
+        "seniorenticket",
+        "sozialticket",
+        "altersarmut bekämpfen",
+        "grundrente",
+        "ermäßigungen für senioren"
+      ],
+      "Soziale Einbindung unabhängig vom Einkommen": [
+        "ehrenamt",
+        "freiwilligendienst",
+        "bürgerschaftliches engagement",
+        "soziale einbindung",
+        "generationenübergreifend"
+      ]
+    },
+    "2903": {
+      "Aufklärung und Prävention psychischer Gesundheit": [
+        "psychische gesundheit",
+        "mental health",
+        "gesundheitskompetenz",
+        "aufklärung psychische erkrankungen",
+        "schulpsychologen",
+        "prävention psychischer erkrankungen",
+        "resilienz"
+      ],
+      "Beratung und Weitervermittlung vereinfachen": [
+        "anlaufstellen",
+        "krisendienst",
+        "telefonseelsorge",
+        "beratungsstelle für",
+        "niedrigschwellige beratung",
+        "lotsenfunktion"
+      ]
+    },
+    "2904": {
+      "Stigma abbauen": [
+        "entstigmatisierung",
+        "stigmatisierung",
+        "tabu psychische erkrankungen",
+        "enttabuisierung",
+        "offener umgang"
+      ],
+      "Zielgruppengerechte Unterstützung für Männer": [
+        "männergesundheit",
+        "männerberatung",
+        "jungenarbeit",
+        "jungen- und männerarbeit",
+        "vertrauliche beratung",
+        "selbsthilfe"
+      ]
+    },
+    "2905": {
+      "Therapieplätze und Kapazitäten ausbauen": [
+        "psychotherapeutische versorgung",
+        "kassensitze",
+        "therapieplätze",
+        "bedarfsplanung psychotherapie",
+        "wartezeiten psychotherapie",
+        "psychotherapeuten"
+      ],
+      "Zugang steuern und koordinieren": [
+        "koordinierte versorgung",
+        "stepped care",
+        "gestufte versorgung",
+        "terminservicestelle",
+        "digitale gesundheitsanwendungen",
+        "e-mental-health"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "ae04a8f6529a59b5004b41bbf17b979429d28b176f5b8ba12998a58fac063f42",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 1,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 0,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 5,
+              "freiwilligendienst": 2,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 1,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 5
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 1,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 0,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 0
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 3,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 1,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 7
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 8,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 1,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 5,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 1,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 1,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 5,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 1,
+              "mental health": 0,
+              "gesundheitskompetenz": 3,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 1,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 9
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 3,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 1,
+              "begegnungsstätten": 1,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 1,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 1,
+              "mental health": 0,
+              "gesundheitskompetenz": 1,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 3
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 3,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 1,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 5,
+              "freiwilligendienst": 3,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 2
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 1,
+              "resilienz": 3
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 3,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 0,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 0
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 3,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 5
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 5,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 6,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 3,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 1,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 11
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 1,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 5,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 1,
+              "strategie gegen einsamkeit": 1,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 1,
+              "mental health": 0,
+              "gesundheitskompetenz": 2,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 1
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 3,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 1,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 6,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 1,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 1,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 14,
+              "freiwilligendienst": 3,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 2,
+              "gesundheitskompetenz": 2,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 7
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 3,
+              "krisendienst": 1,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 1,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 2
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 0,
+              "therapieplätze": 1,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 0
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 8,
+              "begegnungsstätten": 2,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 1,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 3,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 5,
+              "mental health": 0,
+              "gesundheitskompetenz": 1,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 20
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 2,
+              "krisendienst": 1,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 1,
+              "stigmatisierung": 5,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 6
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 4,
+              "krisendienst": 1,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 2,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 4
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 4,
+              "begegnungsstätten": 1,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 4
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 5,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 3,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 0,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 10,
+              "freiwilligendienst": 2,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 1
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 1,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 1
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 1,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 1,
+              "kassensitze": 0,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 0
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 1
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 1,
+              "begegnungsstätten": 3,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 1,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 1,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 2,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 1,
+              "mental health": 0,
+              "gesundheitskompetenz": 3,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 0,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 1,
+              "freiwilligendienst": 0,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 1
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 0,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 1
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 2,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 3
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 1,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 1
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 3,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 1,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 1,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 2,
+              "freiwilligendienst": 0,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 1,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 1,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 0
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 1,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 11,
+              "begegnungsstätten": 2,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 3,
+              "mental health": 0,
+              "gesundheitskompetenz": 1,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 11
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 5,
+              "krisendienst": 2,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 1,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 1
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 1,
+              "stigmatisierung": 5,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 3
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 1,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 0,
+              "gesundheitskompetenz": 2,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 4
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 2,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 2,
+              "begegnungsstätten": 1,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 3,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 1
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 1,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 0,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 2,
+              "freiwilligendienst": 0,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 1,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 0,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 1
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 4,
+              "begegnungsstätten": 1,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 1,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 1,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 0
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 7,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 1,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 4,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 1,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 10
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 0,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 1,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 4,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 2,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 2
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 1,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

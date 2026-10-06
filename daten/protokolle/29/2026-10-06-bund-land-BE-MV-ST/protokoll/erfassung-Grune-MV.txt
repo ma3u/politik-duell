@@ -1,0 +1,48 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Kommunale Nachbarschaftstreffs als Orte der Geselligkeit und des gemeinsamen Arbeitens schaffen; Veranstaltungen für Menschen über 65 kostenlos anbieten.",
+      "ursachen_ids": [2901],
+      "zitat": "in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Mentale Gesundheit an Schulen durch Aufklärung, geschultes Personal und verlässliche Unterstützung fördern.",
+      "ursachen_ids": [2903],
+      "zitat": "Und wir fangen früh an: Mentale Gesundheit gehört in Schulen. Mit Aufklärung, geschultem Personal und verlässlicher Unterstützung sorgen wir dafür, dass junge Menschen nicht allein gelassen und sensibilisiert werden.",
+      "seite": 59
+    },
+    {
+      "beschreibung": "Flächendeckende Krisendienste für schnelle und niedrigschwellige Hilfe in akuten Situationen aufbauen.",
+      "ursachen_ids": [2903],
+      "zitat": "den flächendeckenden Aufbau von Krisendiensten für schnelle und niedrigschwellige Hilfe in akuten Situationen.",
+      "seite": 59
+    },
+    {
+      "beschreibung": "Psychosoziale Beratung flächendeckend und auskömmlich finanzieren und digitale Angebote ermöglichen.",
+      "ursachen_ids": [2903],
+      "zitat": "die Beratungslandschaft sichern und ausbauen, indem unter anderem die Sozial-, Schuldner-, Sucht- und psychosoziale Beratung flächendeckend und auskömmlich finanziert sowie digitale Angebote ermöglicht werden.",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Stigmatisierung psychisch erkrankter Menschen abbauen.",
+      "ursachen_ids": [2904],
+      "zitat": "den Abbau von Stigmatisierung, die Stärkung der Teilhabe, die bessere Unterstützung neurodivergenter Menschen sowie die Förderung mentaler Gesundheit in Schulen durch Prävention, Beratung und ausreichend Schulsozialarbeit.",
+      "seite": 60
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2901,
+      "seiten": [53],
+      "grund": "Das dort beschriebene Mehrgenerationenwohnen soll Wohnkosten senken, die Lebensqualität erhöhen und Pflegebedürftigkeit verzögern; ein Bezug zu Begegnung gegen Einsamkeit nach dem Tod der Partnerin oder des Partners wird nicht hergestellt."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2; Kapitel 9 „Gesundheit“ (S. 56–61), Kapitel 10 „Zusammenleben“ (S. 62–65) sowie die Fundstellen S. 30, 53, 59, 60, 64, 83, 89 und 109. Die passenden Zusagen stehen in S. 59–60, 63 und 64.
+Nicht erfasst: S. 30, 53, 60, 64, 83 und 89 enthalten daneben Anlaufstellen für Zuwanderung und Rückkehr, Wohnungstausch- und Seniorenwohnangebote, allgemeine Gesundheits- und Selbsthilfeangebote, Familien-/Care-Beratung sowie Hilfen für Opfer von Gewalt und Hassverbrechen; sie sind nicht hinreichend auf psychische Hilfesuche, die Ursachen bei Männern oder trauerbezogene Einsamkeit bezogen. S. 109 behandelt gesellschaftliche und sicherheitspolitische Resilienz im Ostseeraum, nicht individuelle psychische Belastung. Für Ursache 2901 ist die gelesene, aber nicht passende Stelle auf S. 53 im JSON dokumentiert.
+Richtungen ohne Maßnahme: 2904 zielgruppengerechte Unterstützung für Männer; das Programm nennt an den gelesenen Stellen keine spezifischen Angebote für Männer. Für 2901 wurden keine Besuchsdienste oder Trauerbegleitung gefunden.

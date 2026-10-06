@@ -1,0 +1,80 @@
+{
+  "partei_id": 17,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportvereine, Kulturangebote und Ehrenamt als Orte der Begegnung und sozialen Teilhabe stärken.",
+      "ursachen_ids": [2901],
+      "zitat": "Stärkung von Sportvereinen, kulturellen Angeboten und ehrenamtlichem Engagement, als zentrale Orte der Begegnung und sozialen Teilhabe.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Soziale Orte und Unterstützungsstrukturen im ländlichen Raum fördern, mit Mobilitätsprogrammen und niedrigschwelligen Treffpunkten.",
+      "ursachen_ids": [2901],
+      "zitat": "Förderung sozialer Orte und Unterstützungsstrukturen, insbesondere im ländlichen Raum, etwa durch gezielte Programme für Mobilität und niedrigschwellige Treffpunkte.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Die Landesstrategie gegen Einsamkeit mit konkreten Maßnahmen, klaren Zuständigkeiten und ausreichender Finanzierung ausbauen.",
+      "ursachen_ids": [2901],
+      "zitat": "Ausbau der Landesstrategie gegen Einsamkeit, verbunden mit konkreten Maßnahmen, klaren Zuständigkeiten und einer ausreichenden finanziellen Ausstattung.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Krisentelefone und ambulante Hilfen für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen sichern und ausbauen.",
+      "ursachen_ids": [2903],
+      "zitat": "Sicherung und Ausbau von Krisentelefonen und ambulanten Hilfen, insbesondere für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Jugendsozialarbeit verlässlich finanzieren und Präventionsangebote für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit ausbauen.",
+      "ursachen_ids": [2903],
+      "zitat": "Ausbau und verlässliche Finanzierung der Jugendsozialarbeit, sowie von Präventionsangeboten für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Schulen mit multiprofessionellen Teams zur Prävention psychischer Probleme ausstatten.",
+      "ursachen_ids": [2903],
+      "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen, um Schüler wie Lehrkräfte zu entlasten.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Klassengrößen auf höchstens 24 Schülerinnen und Schüler begrenzen, um Resilienz und soziale Kompetenzen zu stärken.",
+      "ursachen_ids": [2903],
+      "zitat": "Kleinere Klassen mit maximal 24 Schülerinnen und Schülern, um individuelle Förderung, Resilienz, Selbstbewusstsein und soziale Kompetenzen zu stärken.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Mehr Schulpsychologen und dauerhaft finanzierte Schulsozialarbeit bereitstellen.",
+      "ursachen_ids": [2903],
+      "zitat": "Mehr Schulpsychologen sowie dauerhaft finanzierte Schulsozialarbeit.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Erziehungs- und Familienberatung mit kurzen Wartezeiten und niedrigschwelligen Zugängen stärken.",
+      "ursachen_ids": [2903],
+      "zitat": "Ergänzende Beratungs- und Unterstützungsangebote für Kinder, Jugendliche und Eltern, insbesondere Stärkung der Erziehungs- und Familienberatung, mit kurzen Wartezeiten und niedrigschwelligen Zugängen.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Präventionsangebote zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung ausbauen.",
+      "ursachen_ids": [2903],
+      "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+      "seite": 61
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2904,
+      "seiten": [16],
+      "grund": "Die dort genannten Selbsthilfe-, Beratungs- und Krisenangebote richten sich allgemein an Menschen mit Unterstützungsbedarf; ein spezifisches Angebot für Männer oder ein Ansatz zum Abbau männlicher Hilfesuchbarrieren wird nicht zugesagt."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2–5; Kapitel „Demografischen Wandel gestalten“ und „Gemeinsam gegen Einsamkeit“ S. 14–15, „Teilhabe/Inklusion“ S. 16–18, „Starke Schulen“ S. 46–48 sowie „Therapie“ und psychische Gesundheit S. 59–62.
+
+Nicht erfasst: S. 16, allgemeine Selbsthilfe- und Beratungsangebote ohne spezifischen Bezug zu Männern (Ursache 2904; siehe JSON). S. 59–61, Ausbau psychotherapeutischer Versorgung, Therapieplätze und Wartezeitverkürzung: betrifft die im Auftrag nicht zugelassene Ursache 2905. Die auf S. 18 genannten allgemeinen Seniorenangebote haben keinen hinreichend konkreten Bezug zur Ursache 2901. Eine spezifische Trauerbegleitung oder Unterstützung nach dem Tod der Partnerin/des Partners wurde nicht gefunden.
+
+Richtungen ohne passende Zusage: professionelle Trauerbegleitung nach Verlust (2901); gezielte Entstigmatisierung oder männerspezifische Beratung (2904). Seite ohne Text: S. 43, außerhalb der gelesenen einschlägigen Kapitel; sie spielte für die Erfassung keine Rolle.
