@@ -1,0 +1,45 @@
+{
+  "id": 23,
+  "name": "Mobbing und Druck in der Schule",
+  "beschreibung": "Schülerinnen und Schüler erleben Mobbing, Cybermobbing, Ausgrenzung oder belastenden Leistungs- und Prüfungsdruck im Schulalltag.",
+  "ziel": "Schülerinnen und Schüler können ohne Mobbing und Ausgrenzung zur Schule gehen und schulische Anforderungen ohne gesundheitlich belastenden Druck bewältigen.",
+  "schlagwoerter": ["mobbing", "cybermobbing", "ausgrenzung", "schulstress", "leistungsdruck", "pruefungsangst", "gemobbt"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2301,
+      "beschreibung": "Abwertende Klassennormen und die Rechtfertigung von Übergriffen begünstigen Mobbing (Längsschnittstudie 2019 mit 1.250 Kindern in 98 Klassen)",
+      "alltag": "In meiner Klasse wird jemand ausgegrenzt und keiner schreitet ein",
+      "quelle_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.01752/full",
+      "ebene": "land",
+      "schlagwoerter": ["ausgrenzung", "klassengemeinschaft", "mitlaeufer", "wegschauen", "abwertung"]
+    },
+    {
+      "id": 2302,
+      "beschreibung": "Greifen Lehrkräfte bei Mobbing nicht ein und unterstützen Betroffene nicht, kann sich das Verhalten verfestigen (Studie mit 609 Kindern in 34 Klassen, 2017)",
+      "alltag": "Lehrkräfte schauen weg, wenn Kinder gemobbt werden",
+      "quelle_url": "https://europepmc.org/article/MED/28317120",
+      "ebene": "land",
+      "schlagwoerter": ["keiner hilft", "lehrer schauen weg", "mobbing melden", "hilfe in der schule"]
+    },
+    {
+      "id": 2303,
+      "beschreibung": "Digitale Angriffe erreichen ein größeres Publikum als Mobbing in der Schule; 2022 wurden 3,0 % der Jugendlichen in Deutschland ausschließlich online gemobbt (HBSC-Studie, 2024)",
+      "alltag": "Mein Kind wird im Klassenchat bloßgestellt, auch nach der Schule",
+      "quelle_url": "https://europepmc.org/articles/PMC10977470",
+      "ebene": "bund",
+      "schlagwoerter": ["klassenchat", "cybermobbing", "bilder verschicken", "online blossgestellt"]
+    },
+    {
+      "id": 2304,
+      "beschreibung": "Belastender Leistungs- und Prüfungsdruck hängt mit Angst und depressiven Beschwerden zusammen (systematischer Review 2023, 52 Studien)",
+      "alltag": "Mein Kind steht unter großem Leistungs- und Prüfungsdruck",
+      "quelle_url": "https://europepmc.org/article/MED/37437728",
+      "ebene": "land",
+      "schlagwoerter": ["leistungsdruck", "pruefungsdruck", "notenstress", "versagensangst", "schulstress"]
+    }
+  ]
+}

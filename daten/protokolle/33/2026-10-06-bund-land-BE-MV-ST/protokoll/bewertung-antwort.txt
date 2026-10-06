@@ -1,0 +1,155 @@
+{
+  "blind_pruefsumme": "df1c3a3eb2280eb1c1ee2efab3476407719d626797cec09525f8cc7267d54151",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Verbindliches Handyverbot im Schulalltag bis zur Mittelstufe (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Dafür: In England, Florida und Indien stiegen die Noten leicht bis moderat, Ablenkung sank. Dagegen: In Florida, Schweden und England fanden Studien keine Effekte auf Noten oder Wohlbefinden; Abendnutzung bleibt unberührt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/"
+    },
+    {
+      "kennung": "I2",
+      "name": "Handyverbot oder bildschirmfreie Klassen in der Grundschule (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Ablenkung möglich, doch Effekte zeigten sich vor allem an weiterführenden Schulen mit hohem Smartphone-Besitz; in der Grundschule ist die Nutzung ohnehin geringer. Studien zu Handyregeln uneinheitlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/"
+    },
+    {
+      "kennung": "I3",
+      "name": "Medienbildung in Schule und außerschulischen Angeboten stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schulische Programme senkten problematische Nutzung deutlich, Bildschirmzeit kaum (Metaanalyse, 34 Studien, Verzerrung möglich). Allgemeine Medienbildung setzt nur indirekt an der Begleitung durch Eltern an.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    },
+    {
+      "kennung": "I4",
+      "name": "Schulische Prävention von Mediensucht und Mediengefahren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gezielte schulische Prävention senkte problematische Nutzung deutlich (d = 1,47), Bildschirmzeit kaum (d = 0,15); Publikationsverzerrung möglich. Setzt bei den Kindern an, nicht direkt bei der Begleitung durch Eltern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    },
+    {
+      "kennung": "I5",
+      "name": "Fachkräfte in Medienbildung qualifizieren, Zentren und Teams ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Geschulte Fachkräfte und Zentren können Medienbildung tragen; die Wirkung auf die Mediennutzung der Kinder läuft nur über den Unterricht und ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I6",
+      "name": "Eltern durch Beratung und Bildungsangebote in der Medienerziehung unterstützen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt bei den Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Belastbare Daten zu reinen Elternangeboten fehlen, und es erreichen vor allem interessierte Eltern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    },
+    {
+      "kennung": "I7",
+      "name": "Eltern mit Informationen zur Mediennutzung versorgen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Leicht und schnell umsetzbar; Information erreicht aber nur, wer sie nutzt, und die Wirkung auf die Begleitung durch Eltern ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Digital Services Act umsetzen mit Schwerpunkt Jugendschutz (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Der DSA verpflichtet Plattformen zu Risikoprüfungen auch zu Minderjährigen; die Wirkung auf Likes- und Belohnungsdesign ist bisher kaum untersucht. Umsetzung durch den Bund ist möglich.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I9",
+      "name": "Medienkompetenz in Schulen und Lehrplänen stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Schulische Medienbildung wirkt gegen problematische Nutzung, aber kaum auf die Bildschirmzeit; Schulen und Lehrpläne sind Ländersache, der Bund kann nur Anreize setzen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Weniger Ablenkung im Unterricht, Abendnutzung und Schlaf bleiben unberührt; Studien uneinheitlich. Schulrecht ist Ländersache, der Bund kann nur Anreize setzen.", "evidenz": "gemischt", "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/" }, "ursachen": [3302] },
+    { "kennung": "M02", "instrument": "I4", "ursachen": [3303] },
+    { "kennung": "M03", "instrument": "I6", "ursachen": [3303] },
+    { "kennung": "M04", "instrument": "I9", "ursachen": [3303] },
+    { "kennung": "M05", "instrument": "I5", "ursachen": [3303] },
+    { "kennung": "M06", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M07", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M08", "ursachen": [] },
+    { "kennung": "M09", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M10", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Transparenz und Prüfung machen Empfehlungsdesign sichtbar, verbieten es aber nicht; Wirkung auf Kinder kaum untersucht. Plattformregeln setzt weitgehend die EU (DSA).", "evidenz": "offen" }, "ursachen": [3301] },
+    { "kennung": "M11", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Regeln gegen suchtfördernde Algorithmen setzen direkt am Belohnungsdesign an, bleiben aber unbestimmt; Wirkung kaum untersucht, nationale Alleingänge begrenzt das EU-Recht.", "evidenz": "offen" }, "ursachen": [3301] },
+    { "kennung": "M12", "instrument": "I1", "ursachen": [3302] },
+    { "kennung": "M13", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Unterstützt nur freiwillige Entscheidungen der Schulen; ohne Verpflichtung geringere Wirkung als ein verbindliches Verbot. Studien zu Handyregeln uneinheitlich.", "evidenz": "gemischt", "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/" }, "ursachen": [3302] },
+    { "kennung": "M14", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M15", "instrument": "I6", "ursachen": [3303] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Ein Pflichtfach verankert Medienbildung dauerhaft; Wirkung auf das Nutzungsverhalten wie bei Schulprogrammen gemischt, Lehrkräfte für ein neues Fach fehlen absehbar.", "evidenz": "gemischt", "beleg_studie_url": "https://europepmc.org/article/MED/40549948" }, "ursachen": [3303] },
+    { "kennung": "M17", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M18", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M19", "ursachen": [] },
+    { "kennung": "M20", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M21", "instrument": "I8", "ursachen": [3301] },
+    { "kennung": "M22", "instrument": "I9", "ursachen": [3303] },
+    { "kennung": "M23", "instrument": "I5", "ursachen": [3303] },
+    { "kennung": "M24", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Wegschließen verringert Ablenkung in den Stunden, nicht aber die Nutzung in Pausen oder abends. Studien zu Handyregeln uneinheitlich.", "evidenz": "gemischt", "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/" }, "ursachen": [3302] },
+    { "kennung": "M25", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M26", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M27", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M28", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Frühe Förderung ist sinnvoll, nennt aber keinen Weg; Schulen sind Ländersache, der Bund kann mit Programmen und Geld beitragen. Wirkung auf die Bildschirmzeit gering.", "evidenz": "gemischt", "beleg_studie_url": "https://europepmc.org/article/MED/40549948" }, "ursachen": [3303] },
+    { "kennung": "M29", "instrument": "I2", "ursachen": [3302] },
+    { "kennung": "M30", "instrument": "I8", "ursachen": [3301] },
+    { "kennung": "M31", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M32", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M33", "instrument": "I5", "ursachen": [3303] },
+    { "kennung": "M34", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Altersgrenze setzt direkt am Zugang zu Likes- und Belohnungssystemen an; Erfahrungen aus Australien sind sehr jung, Umgehung möglich. Nationale Regelung stößt an EU-Recht und Länder-Jugendmedienschutz.", "evidenz": "offen" }, "ursachen": [3301] },
+    { "kennung": "M35", "ursachen": [] },
+    { "kennung": "M36", "ursachen": [] },
+    { "kennung": "M37", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M38", "instrument": "I1", "ursachen": [3302] },
+    { "kennung": "M39", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M40", "instrument": "I1", "ursachen": [3302] },
+    { "kennung": "M41", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M42", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Verifikation kann Altersgrenzen durchsetzen, ersetzt aber keine Designregeln; technische Umsetzung hängt an EU-Lösungen und Datenschutz.", "evidenz": "offen" }, "ursachen": [3301] },
+    { "kennung": "M43", "instrument": "I6", "ursachen": [3303] },
+    { "kennung": "M44", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M45", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M46", "instrument": "I5", "ursachen": [3303] },
+    { "kennung": "M47", "instrument": "I4", "ursachen": [3303] },
+    { "kennung": "M48", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M49", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Sichere Voreinstellungen entlasten Eltern und begrenzen riskante Funktionen von Beginn an; Wirkung auf die Nutzungsdauer kaum untersucht, Geräte- und Dienstregeln sind EU-geprägt.", "evidenz": "offen" }, "ursachen": [3301, 3303] },
+    { "kennung": "M50", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M51", "instrument": "I1", "ursachen": [3302] },
+    { "kennung": "M52", "ursachen": [] },
+    { "kennung": "M53", "instrument": "I7", "ursachen": [3303] },
+    { "kennung": "M54", "instrument": "I6", "ursachen": [3303] },
+    { "kennung": "M55", "instrument": "I2", "ursachen": [3302] },
+    { "kennung": "M56", "instrument": "I6", "ursachen": [3303] },
+    { "kennung": "M57", "instrument": "I4", "ursachen": [3303] },
+    { "kennung": "M58", "instrument": "I7", "ursachen": [3303] },
+    { "kennung": "M59", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M60", "instrument": "I3", "ursachen": [3303] },
+    { "kennung": "M61", "instrument": "I1", "ursachen": [3302] },
+    { "kennung": "M62", "instrument": "I2", "ursachen": [3302] }
+  ]
+}
+
+Nicht bestätigt: Keine vorgeschlagene Ursache gestrichen; ergänzt wurde 3301 bei M49 (sichere Voreinstellungen sind Pflichten für Dienste).
+
+Offene Ursachen entschieden: Alle Handyregeln in Schulen (M01, M12, M24, M29, M38, M40, M55, M61, M62) auf 3302, da Regel 1 sie nennt; M29 (bildschirmfreie Klassen) ist die schwächste Zuordnung. M09, M23, M27, M33, M37, M45 auf 3303 (Medienbildung bzw. Qualifizierung dazu), M10 auf 3301 (Empfehlungssysteme).
+
+Ohne Ursache: M08 und M52 (Bürgerrat bzw. Bewertung und Vorlage eines Pakets: Prozess ohne Inhalt, nur Ziel), M19 (nimmt Plattformpflichten zurück, setzt an keiner Ursache an; zudem als EU-Verordnung nicht abwählbar), M35 (Medien- und Nachrichtenkompetenz gegen Desinformation, nicht zur Mediennutzung von Kindern), M36 (allgemeine Familienberatung, Mediennutzung nur als Anlass genannt).
+
+Schwierig: (1) Wirksamkeit von Handyverboten (I1 mit 2): Studienlage uneinheitlich, Ursache 3302 betrifft Schlafenszeit, die Schulregeln kaum berühren; mit 2 bewusst an der Obergrenze, Alternative 1. (2) Allgemeine Medienbildung (I3) setzt nur indirekt an 3303 (Eltern) an, deshalb 1; gezielte Mediensuchtprävention (I4) und Elternangebote (I6) mit 2. (3) Umsetzbarkeit Bund bei Schulthemen: 1 für Lehrpläne (Länderzuständigkeit), bei Plattformregeln 1 bis 2 wegen EU-Recht (DSA). (4) M25 enthält zusätzlich eine endgerätefreie Grundschule (nach Muster M29), wurde aber wegen des Schwerpunkts Medienkompetenz nur I3 und 3303 zugeordnet.

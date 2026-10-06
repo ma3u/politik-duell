@@ -174,6 +174,10 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 | 29 | Sollen Anwohner und Gemeinden über den Bau von Windrädern vor Ort verbindlich mitentscheiden? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-05 |
 | 30 | Soll es Studiengebühren an staatlichen Hochschulen geben? | 4 Schule | diw.de | KI-Freigabe 2026-10-05 |
 | 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | 9 Sicherheit | dji.de, bundestag.de | KI-Freigabe 2026-10-05 |
+| 32 | Soll Deutschland seine Verteidigungsausgaben erhöhen? | 9 Sicherheit | kielinstitut.de, sipri.org | KI-Freigabe 2026-10-06 |
+| 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | 5 Arbeitsplätze, 11 Preise und Löhne | bundesverfassungsgericht.de, iab-forum.de | KI-Freigabe 2026-10-06 |
+| 34 | Sollen trockengelegte Moore wieder vernässt werden? | 18 Hitze und Unwetter | greifswaldmoor.de, moorwissen.de | KI-Freigabe 2026-10-06 |
+| 35 | Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-06 |
 
 **Ausgelassen (mit Grund):**
 
@@ -182,7 +186,8 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 - *Staatsangehörigkeit durch Geburt in Deutschland*: Für die Nein-Seite fand sich keine lesbare unabhängige Quelle zum Geburtsrecht (nur Kritik an den Einbürgerungsfristen); mit einer Seite schwächer belegt wäre die Karte nicht fair. Zurückgestellt, bis eine Quelle vorliegt.
 - Fragen, deren Wortlaut die Recherche geändert hat: Windkraft („vorantreiben“ statt „stoppen“, weil „stoppen“ einen Eingriff nahelegt), Wehrdienst („verpflichtender Wehrdienst“, weil seit 2026 ein freiwilliger Dienst gilt), Inklusion („Vorrang vor Förderschulen“), Renteneintrittsalter („über 67 hinaus“), Hausunterricht, Kirchenzahlungen („Staatsleistungen“), Kirchenasyl, Bleiberecht.
 - Aus der Liste vom 5. 10. 2026 (Haltungen 24–31): Haltung 28 hat die Recherche umformuliert („Sicherheitslage in ihrer Herkunftsregion es zulässt“ statt „Herkunftsregion sicher ist“), Haltung 31 auf Demokratieförderung verengt (die Jugendförderung ist ein anderes Feld, Kinder- und Jugendplan), Haltung 30 gilt für alle Studierenden gleich (nicht nur Nicht-EU-Ausländer). Zielkonflikt-Sätze, die in den geöffneten Quellen nicht wörtlich standen (u. a. DIW-Zahlen zur Erbschaftsteuer, Rechnungshof zu „Demokratie leben!“, 1,4-%-Zwischenziel der Windflächen, Kostenzahl je Bachelorstudium), sind weggelassen. Die Befragungszahl zur Ukraine stammt von 2023 und ist bei einer Prüfung durch eine neuere Welle zu ersetzen. Haltung 26 zitiert die amtliche englische Übersetzung des BVerfG-Urteils (die deutsche Seite war nicht abrufbar); Wortlaut: BVerfGE 88, 203, Leitsatz 4.
-- Verwandte Themen bei 25, 26, 30 und 31 sind nur lose (die Prüfung verlangt mindestens ein Thema).
+- Aus der Liste vom 6. 10. 2026 (Haltungen 32–35, Zeilen nur als Art „haltung“ bestätigt): Haltung 32 geht auf eine Zeile über Kriegsangst und Fluchttraumata zurück und ist nur eine Annäherung an diese Sorge; die Recherche hat „weiter erhöhen“ zu „erhöhen“ vereinfacht (kein zeitabhängiger Ausgangspunkt), NATO, Wehrdienst und Waffenlieferungen bleiben eigene Haltungen (16, 11, 7). Haltung 33 gilt für alle Leistungsbeziehenden gleich und nennt „ohne wichtigen Grund“; der IAB-Überblick bezieht sich auf Sanktionsregeln vor 2019 und ist nicht 1:1 auf die Zeit danach übertragbar. Haltung 35 meint nur unkonventionelles Fracking (Verbot seit 2017), nicht konventionelle Förderung; PDF-Quellen waren nicht lesbar, die Zielkonflikte stützen sich auf HTML-Seiten des Umweltbundesamts.
+- Verwandte Themen bei 25, 26, 30, 31, 33 und 34 sind nur lose (die Prüfung verlangt mindestens ein Thema).
 
 ### Ergebnisse Phase B (5. 10. 2026)
 
@@ -219,3 +224,17 @@ Positionen aus den sieben Bundesprogrammen (Fassungen laut `parteien.json`; das 
 - 30: Soll es Studiengebühren an staatlichen Hochschulen geben? (2 Programme)
 
 Lauf vom 5. 10. 2026 für die Haltungen 24–31 (Liste aus `/liste-einordnen`): 24, 25, 26 und 31 sind eingetragen, 27–30 zurückgestellt. Das BSW-Bundesprogramm war nicht abrufbar (HTTP 503) und lag als lokale Kopie der Betreiberin vor. Bei Haltung 31 meldeten FDP und AfD keine Aussage. Die Fundstellen suchte die kleinere Modellstufe, die Einordnung ein Agent ohne Parteinamen.
+
+### Ergebnisse Phase B (6. 10. 2026)
+
+Lauf für die Haltungen 32–35 (Liste aus `/liste-einordnen`), alle Bundesprogramme lasen die Agenten; **KI-Entwurf**, Einordnung ohne Parteinamen. „–“ heißt „keine Aussage“. Bei Haltung 32 fanden die Agenten bei Union, SPD und AfD Zitate (zwei Prozent des BIP als Untergrenze, gute Ausstattung), die Einordnung wertete sie nach dem Maßstab als „keine Aussage“, weil eine reale Erhöhung nicht ausdrücklich dasteht. Bei Haltung 33 waren zwei Begründungen länger als 400 Zeichen und wurden vor dem Eintragen gekürzt (Aussage unverändert).
+
+| ID | Frage | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 32 | Soll Deutschland seine Verteidigungsausgaben erhöhen? | – | – | ja | teils | – | nein | nein |
+| 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | teils | – | – | – | ja | nein | – |
+
+**Zurückgestellt** (nur zwei Programme mit erkennbarer Position; Phase A bleibt liegen, `--trotzdem` nur auf Entscheidung der Betreiberin):
+
+- 34: Sollen trockengelegte Moore wieder vernässt werden? (Union ja, Grüne ja; Linke: Zitat zur Revitalisierung ohne ausdrückliche Wiedervernässung)
+- 35: Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? (Grüne nein, Linke nein; FDP: Zitat zur heimischen Erdgasförderung mit Fracking-Verfahren, ohne Angabe unkonventioneller Lagerstätten)

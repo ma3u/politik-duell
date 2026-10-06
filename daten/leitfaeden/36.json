@@ -1,0 +1,35 @@
+{
+  "thema_id": 36,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 36), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3601, 3602, 3603, 3604],
+      "text": "Zu 3601 gehören Wettbewerbsbedingungen zwischen Online- und stationärem Handel und Digitalisierung des lokalen Handels, zu 3602 Sortiment, Ansiedlung und Nutzungsmischung in Innenstädten, zu 3603 Aufenthaltsqualität, Sauberkeit und Gestaltung des öffentlichen Raums, zu 3604 Erreichbarkeit (Parken, Straßenraum, Fuß-, Rad- und Nahverkehr) und Öffnungszeiten."
+    },
+    {
+      "nr": 2,
+      "text": "Wohnungsmieten gehören zu Miete, Abwanderung und kommunale Finanzen allgemein zu Abwanderung aus strukturschwachen Regionen, Parkplätze und Autoverkehr ohne Bezug zu Innenstadt oder Einzelhandel zu Autofahren. Maßnahmen für Innenstädte zählen nur, wenn das Zitat Innenstadt, Ortskern, Einzelhandel oder Leerstand nennt."
+    }
+  ],
+  "suchbegriffe": {
+    "3601": {
+      "Lokalen Handel stärken und Wettbewerb angleichen": ["lokaler einzelhandel", "stationärer handel", "onlinehandel", "plattformregulierung", "digitalisierung des handels", "fairer wettbewerb im handel", "händler vor ort"],
+      "Digitale Vertriebswege und Flächenanpassung": ["digitale vertriebswege", "händlerplattform", "flächen anpassen", "click and collect", "strukturwandel im handel"]
+    },
+    "3602": {
+      "Nutzungsmischung und Ansiedlung fördern": ["nutzungsmischung", "innenstadt belebung", "leerstandsmanagement", "ansiedlung", "zwischennutzung", "innenstadtfonds", "gründerinnen und gründer in innenstädten", "ankermieter"],
+      "Marktprofile und Wettbewerb": ["profil der geschäfte", "wettbewerb", "einzelhandelskonzept", "zentrenkonzept"]
+    },
+    "3603": {
+      "Aufenthaltsqualität und Verkehrsberuhigung": ["aufenthaltsqualität", "fußgängerzone", "stadtgrün", "verkehrsberuhigung", "platzgestaltung", "innenstadt umgestalten", "begrünung"],
+      "Sauberkeit, Sicherheit und Instandhaltung": ["sauberkeit", "ordnung in der innenstadt", "instandhaltung", "sicherheit in der innenstadt", "sauberkeit öffentlicher raum"]
+    },
+    "3604": {
+      "Erreichbarkeit mit dem Auto und Parkplätze": ["parkplätze", "innenstadt erreichbar", "zufahrt zur innenstadt", "parkraum", "autofreundliche innenstadt", "parkgebühren"],
+      "Nahmobilität und öffentlicher Verkehr": ["nahmobilität", "fahrradfreundliche innenstadt", "radwege zur innenstadt", "öpnv zur innenstadt", "fußwege"],
+      "Öffnungszeiten und zeitliche Zugänglichkeit": ["ladenöffnungszeiten", "öffnungszeiten", "sonntagsöffnung", "verkaufsoffene sonntage", "ladenschluss"]
+    }
+  }
+}

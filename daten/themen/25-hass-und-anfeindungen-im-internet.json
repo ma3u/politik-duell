@@ -1,0 +1,37 @@
+{
+  "id": 25,
+  "name": "Hass und Anfeindungen im Internet",
+  "beschreibung": "Privatpersonen und politisch Aktive erleben online Hassnachrichten, Beleidigungen, Bedrohungen und Schikanen, etwa Cybermobbing oder das Veröffentlichen persönlicher Daten zur Einschüchterung.",
+  "ziel": "Menschen können sich online austauschen und beteiligen, ohne angefeindet, bedroht oder durch digitale Gewalt eingeschüchtert zu werden.",
+  "schlagwoerter": ["hass im netz", "hassnachrichten", "hasskommentare", "beleidigung", "bedrohung", "cybermobbing", "doxing", "social media"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2501,
+      "beschreibung": "Hasskommentare werden selten bei Plattformen gemeldet: 2023 meldeten laut forsa-Befragung 30 % (2019: 25 %) Hasskommentare oder deren Verfasser",
+      "alltag": "Ich melde Hasskommentare selten, weil ich nicht weiß, wie das geht oder ob es etwas bringt",
+      "quelle_url": "https://www.medienanstalt-nrw.de/themen/hass/forsa-befragung-zur-wahrnehmung-von-hassrede.html",
+      "ebene": "land",
+      "schlagwoerter": ["hass melden", "meldung", "beschwerde", "hilfe finden"]
+    },
+    {
+      "id": 2502,
+      "beschreibung": "Als rechtswidrig gemeldete Hassrede bleibt teils online: Im EU-Kontrolltest 2022 entfernten Plattformen 63,6 % der gemeldeten Inhalte (3.634 Meldungen)",
+      "alltag": "Gemeldete Hassnachrichten bleiben trotzdem online",
+      "quelle_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_7109",
+      "ebene": "bund",
+      "schlagwoerter": ["hasskommentar bleibt", "nicht geloescht", "plattformregeln", "moderation"]
+    },
+    {
+      "id": 2503,
+      "beschreibung": "Frust und bereits sichtbare Anfeindungen erhöhen die Wahrscheinlichkeit weiterer beleidigender Beiträge (Experiment 2017 mit 667 Teilnehmenden in den USA)",
+      "alltag": "Streit im Netz schaukelt sich schnell zu Beleidigungen hoch",
+      "quelle_url": "https://arxiv.org/html/1702.01119v1",
+      "ebene": "land",
+      "schlagwoerter": ["eskalation", "streit im netz", "anfeindungen", "umgangston", "frust"]
+    }
+  ]
+}

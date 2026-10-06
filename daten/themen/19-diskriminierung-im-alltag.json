@@ -1,0 +1,45 @@
+{
+  "id": 19,
+  "name": "Diskriminierung im Alltag",
+  "beschreibung": "Menschen werden wegen zugeschriebener Herkunft, Religion, sexueller oder geschlechtlicher Identität bei der Wohnungs- und Arbeitssuche, in Behörden, Schulen und im öffentlichen Raum benachteiligt oder angefeindet.",
+  "ziel": "Betroffene können am Alltag gleichberechtigt teilnehmen, erhalten faire Zugangschancen und werden ohne herkunfts-, religions- oder identitätsbezogene Herabsetzung behandelt.",
+  "schlagwoerter": ["diskriminierung", "rassismus", "rassistische beleidigung", "kopftuch", "queer", "lgbtq", "homophobie", "transfeindlichkeit", "benachteiligung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 1901,
+      "beschreibung": "Bewerbungen von Frauen mit Kopftuch werden bei gleicher Qualifikation deutlich seltener beantwortet (IZA-Feldexperiment, veröffentlicht 2016)",
+      "alltag": "Ich werde bei Bewerbungen wegen meines Namens oder Kopftuchs aussortiert",
+      "quelle_url": "https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves",
+      "ebene": "bund",
+      "schlagwoerter": ["bewerbung", "absage", "kopftuch", "name", "wohnungssuche", "vorstellungsgespraech"]
+    },
+    {
+      "id": 1902,
+      "beschreibung": "Rassistische Zuschreibungen sind verbreitet: 48 % meinen, gewisse Gruppen seien „von Natur aus fleißiger“ als andere (Rassismusmonitor, Befragung 2025/26)",
+      "alltag": "Ich werde im Alltag rassistisch beleidigt oder abgewertet",
+      "quelle_url": "https://www.rassismusmonitor.de/publikationen/verfestigte-abwertungen-fragiles-vertrauen/",
+      "ebene": "land",
+      "schlagwoerter": ["rassismus", "vorurteile", "herkunft", "hautfarbe", "anfeindung", "beleidigung"]
+    },
+    {
+      "id": 1903,
+      "beschreibung": "Abwertende Einstellungen gegenüber sexueller und geschlechtlicher Vielfalt bestehen fort: Rund 20 % neigten 2016 zu Abwertung von trans*geschlechtlichen Menschen",
+      "alltag": "Ich werde als queerer Mensch angefeindet oder abgewertet",
+      "quelle_url": "https://www.antidiskriminierungsstelle.gov.de/SharedDocs/forschungsprojekte/DE/Studie_Einstellg_ggueber_LSB.html",
+      "ebene": "land",
+      "schlagwoerter": ["queer", "schwul", "lesbisch", "bisexuell", "trans", "homophobie", "transfeindlichkeit"]
+    },
+    {
+      "id": 1904,
+      "beschreibung": "Im öffentlichen Recht fehlt laut Rechtsgutachten (2025) ein spezifischer Rechtsschutz gegen Diskriminierung durch staatliches Handeln, etwa in Schulen und Behörden",
+      "alltag": "Ich werde in Schule oder Behörde benachteiligt und weiß nicht, wo ich mich wehren kann",
+      "quelle_url": "https://www.antidiskriminierungsstelle.gov.de/SharedDocs/forschungsprojekte/DE/RG_Staatliche_Diskriminierung.html",
+      "ebene": "land",
+      "schlagwoerter": ["behoerde", "schule", "ungleichbehandlung", "beschwerde", "rechtsschutz", "diskriminierung durch behoerden"]
+    }
+  ]
+}

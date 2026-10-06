@@ -1,0 +1,37 @@
+{
+  "id": 26,
+  "name": "Barrieren für Menschen mit Behinderung",
+  "beschreibung": "Menschen mit Behinderung stoßen beim Wohnen, unterwegs, in Gebäuden, bei digitalen Angeboten, im Arbeitsleben und beim Zugang zu Teilhabeleistungen auf Hindernisse.",
+  "ziel": "Menschen mit Behinderung können ihren Alltag selbstbestimmt gestalten und Wohnen, Mobilität, Angebote, Arbeit und benötigte Unterstützung gleichberechtigt nutzen.",
+  "schlagwoerter": ["behinderung", "barrierefreiheit", "inklusion", "rollstuhl", "teilhabe", "barrieren"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2601,
+      "beschreibung": "Der Abbau von Zugangsbarrieren an Bahnhöfen verzögert sich laut Bundesrechnungshof (2025) vor allem wegen unzureichender Steuerung der Investitionen",
+      "alltag": "Ich komme am Bahnhof nicht ohne Hilfe zum Gleis",
+      "quelle_url": "https://bundesrechnungshof.de/berichte/bmdv-verschleppt-investitionen-in-bahnhoefe",
+      "ebene": "bund",
+      "schlagwoerter": ["bahnhof", "aufzug", "bahnsteig", "zugang", "rollstuhl"]
+    },
+    {
+      "id": 2602,
+      "beschreibung": "Über 50 % der Betriebe nannten 2024 fehlende geeignete Tätigkeiten als Hürde für die Beschäftigung von Menschen mit Behinderung; etwa ein Viertel nannte Ausstattungskosten oder Aufwand",
+      "alltag": "Ich finde mit Behinderung keinen passenden Arbeitsplatz",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2025/heft/8/beitrag/aus-sicht-der-betriebe-was-es-braucht-damit-inklusion-besser-gelingt.html",
+      "ebene": "bund",
+      "schlagwoerter": ["arbeitsplatz", "bewerbung", "arbeitsmittel", "arbeitsplatzanpassung", "ausgleichsabgabe"]
+    },
+    {
+      "id": 2603,
+      "beschreibung": "Etwa 22 % der Betriebe nannten 2024 erwartete Leistungseinschränkungen oder Sonderregeln als Hürde für die Beschäftigung von Menschen mit Behinderung",
+      "alltag": "Arbeitgeber trauen mir mit Behinderung weniger zu",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2025/heft/8/beitrag/aus-sicht-der-betriebe-was-es-braucht-damit-inklusion-besser-gelingt.html",
+      "ebene": "bund",
+      "schlagwoerter": ["einstellung", "vorbehalte", "kuendigungsschutz", "zusatzurlaub", "leistungsfaehigkeit"]
+    }
+  ]
+}

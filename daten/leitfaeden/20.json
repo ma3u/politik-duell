@@ -1,0 +1,31 @@
+{
+  "thema_id": 20,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 20), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2001, 2002, 2003],
+      "text": "Zu 2001 gehören Jugendtreffs, Jugendzentren, offene Jugendarbeit, Freizeitangebote und Orte für Jugendliche; zu 2002 Kosten und Zuschüsse für Freizeit, Sport, Musik und Kultur von Kindern und Jugendlichen (etwa Teilhabeleistungen); zu 2003 Regeln für Lärm und Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen. Allgemeine Kinder- und Jugendhilfe ohne Freizeitbezug gehört nicht dazu."
+    },
+    {
+      "nr": 2,
+      "text": "Sportvereine und Sportstätten als Einrichtung, Clubs und Kulturorte als Veranstaltungsorte sowie Schule und Ganztag gehören zu anderen Themen, soweit das Zitat Jugendliche und Freizeit nicht ausdrücklich nennt."
+    }
+  ],
+  "suchbegriffe": {
+    "2001": {
+      "Angebote und Räume für Jugendliche ausbauen": ["jugendzentrum", "jugendtreff", "jugendclub", "offene jugendarbeit", "jugendarbeit", "jugendförderung", "freizeitangebot", "jugendraum", "kinder- und jugendplan"],
+      "Selbstorganisation und Mehrfachnutzung von Räumen": ["selbstverwaltet", "jugendbeteiligung", "mehrfachnutzung", "räume zur verfügung", "leerstehende gebäude"]
+    },
+    "2002": {
+      "Teilhabe für Kinder und Jugendliche finanziell sichern": ["teilhabepaket", "bildungs- und teilhabe", "kinderchancen", "kostenfreie angebote", "ermäßigt", "kulturpass", "freizeitpass", "kostenfrei"],
+      "Allgemeine Kosten und Gebühren senken": ["beiträge senken", "eintritt", "gebührenfrei", "günstige angebote", "erschwinglich"]
+    },
+    "2003": {
+      "Zugang zu öffentlichem Raum für Jugendliche ermöglichen": ["öffentlicher raum", "aufenthaltsqualität", "freiflächen", "bolzplatz", "skatepark", "jugendgerechte orte"],
+      "Lärm mindern und Ruhe schützen": ["lärmschutz", "nachtruhe", "ruhestörung", "lärmbelästigung", "ordnungsamt", "alkoholverbot"],
+      "Nutzungen abstimmen und vermitteln": ["streetwork", "mediation", "nutzungskonflikt", "runder tisch", "anwohner"]
+    }
+  }
+}

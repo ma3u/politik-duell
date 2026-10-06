@@ -1,0 +1,61 @@
+{
+  "id": 22,
+  "name": "Radikalisierung und Extremismus",
+  "beschreibung": "Menschen erleben die Hinwendung zu extremistischen Gruppen und Einstellungen sowie politische Konflikte, in denen gegenseitige Abwertung und Gesprächsabbrüche den Austausch erschweren.",
+  "ziel": "Menschen können politische Meinungsverschiedenheiten respektvoll austragen und ihr Leben ohne Hinwendung zu menschenfeindlichen, demokratiefeindlichen oder gewaltlegitimierenden Ideologien gestalten.",
+  "schlagwoerter": ["radikalisierung", "extremismus", "polarisierung", "politische spaltung", "streitkultur", "rechte gruppen", "linksextremismus", "islamismus"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2201,
+      "beschreibung": "Kontakt zu extremistischen Gleichgesinnten hängt mit radikalen Einstellungen zusammen (Metaanalyse 2021, 127 Studien: r = 0,17); Bindungen im Milieu können den Verbleib stützen",
+      "alltag": "Jugendliche in meinem Umfeld rutschen in extremistische Gruppen ab",
+      "quelle_url": "https://europepmc.org/articles/PMC10121227",
+      "ebene": "land",
+      "schlagwoerter": ["extremistische freunde", "anwerbung", "gruppendruck", "rechte clique", "radikale gruppe"]
+    },
+    {
+      "id": 2202,
+      "beschreibung": "Passiver Kontakt mit extremistischen Medieninhalten hängt mit radikalen Einstellungen zusammen (Metaanalyse 2021: r = 0,26); die Evidenzqualität ist laut Review niedrig",
+      "alltag": "Im Netz begegnen mir und meinen Kindern extremistische Inhalte",
+      "quelle_url": "https://europepmc.org/articles/PMC10121227",
+      "ebene": "bund",
+      "schlagwoerter": ["extremistische propaganda", "radikale videos", "radikalisierung im internet", "extremistische chats"]
+    },
+    {
+      "id": 2203,
+      "beschreibung": "Das Gefühl, unfair behandelt zu werden, und geringes Institutionenvertrauen gehen mit radikalen Einstellungen einher (Metaanalyse 2021: r = 0,11 bis 0,16 bzw. −0,17)",
+      "alltag": "Viele fühlen sich ungerecht behandelt und vertrauen Politik und Behörden nicht mehr",
+      "quelle_url": "https://europepmc.org/articles/PMC10121227",
+      "ebene": "bund",
+      "schlagwoerter": ["ungerecht behandelt", "benachteiligt", "misstrauen gegen politik", "vertrauensverlust"]
+    },
+    {
+      "id": 2204,
+      "beschreibung": "Überlegenheitsdenken der eigenen Gruppe, autoritäre Deutungen und Rechtfertigung von Gewalt hängen mit radikalen Einstellungen zusammen (Metaanalyse 2021: r = 0,25 bis 0,34)",
+      "alltag": "Manche rechtfertigen Gewalt und halten die eigene Gruppe für überlegen",
+      "quelle_url": "https://europepmc.org/articles/PMC10121227",
+      "ebene": "land",
+      "schlagwoerter": ["feindbilder", "wir gegen die", "autoritaeres denken", "gewalt rechtfertigen", "eigene gruppe"]
+    },
+    {
+      "id": 2205,
+      "beschreibung": "Wahrgenommene Ungleichbehandlung, Bevormundung und Kontrollverlust lassen politische Gespräche emotional eskalieren (Fokusgruppen mit 42 Personen, 2021/22)",
+      "alltag": "Politische Gespräche in meinem Umfeld eskalieren sofort",
+      "quelle_url": "https://europepmc.org/articles/PMC13536507",
+      "ebene": "land",
+      "schlagwoerter": ["aufgeheizte debatten", "bevormundung", "darf nichts mehr sagen", "kontrollverlust", "politischer streit"]
+    },
+    {
+      "id": 2206,
+      "beschreibung": "Wo gegenseitiger Respekt und Zuhören als schwach erlebt werden, sind Toleranz und Kooperationsbereitschaft geringer (Befragung 2023 in 12 Ländern, 12.041 Personen)",
+      "alltag": "Man hört einander nicht mehr zu, wenn man politisch verschiedener Meinung ist",
+      "quelle_url": "https://europepmc.org/articles/PMC13069891",
+      "ebene": "land",
+      "schlagwoerter": ["keiner hoert zu", "diskussionskultur", "gespraechsabbruch", "andersdenkende meiden", "gegenseitiger respekt"]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": 32,
+  "name": "Räume für Kultur und Clubs",
+  "beschreibung": "Clubs, Kulturorte, soziokulturelle Zentren, Freilichtbühnen und kulturell genutzte selbstverwaltete Hausprojekte verlieren Räume oder können sie wegen Kosten, Nutzungskonflikten und baulichen Hürden nur eingeschränkt nutzen.",
+  "ziel": "Kulturschaffende und Besucherinnen und Besucher finden dauerhaft nutzbare, bezahlbare Orte für vielfältige Musik, Kultur und Clubleben.",
+  "schlagwoerter": ["kulturraum", "club", "clubsterben", "konzerte", "soziokultur", "freilichtbuehne", "hausprojekt", "kulturort"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3201,
+      "beschreibung": "Steigende Mieten und rentablere konkurrierende Nutzungen verdrängen kleine Spielstätten und Clubs, die mit kleinen Budgets arbeiten (europäische Studie, veröffentlicht 2020)",
+      "alltag": "Unser Club oder Kulturort muss schließen, weil die Miete steigt",
+      "quelle_url": "https://europepmc.org/articles/PMC7567665",
+      "ebene": "land",
+      "schlagwoerter": ["clubmiete", "verdraengung", "kulturflaechen", "hausprojekt", "gewerbemiete"]
+    },
+    {
+      "id": 3202,
+      "beschreibung": "Schall aus Konzerten und Veranstaltungen führt zu Konflikten mit Anwohnenden, besonders bei Freiluftangeboten oder schlechter Schalldämmung (europäische Studie, 2020)",
+      "alltag": "Anwohner beschweren sich über Lärm, und unsere Veranstaltungen sind in Gefahr",
+      "quelle_url": "https://europepmc.org/articles/PMC7567665",
+      "ebene": "land",
+      "schlagwoerter": ["laerm", "anwohner", "schallschutz", "open air", "betriebszeiten", "auflagen"]
+    },
+    {
+      "id": 3203,
+      "beschreibung": "Kulturorte, die Nachwuchs fördern oder Gemeinwesenarbeit leisten, arbeiten häufig mit kleinen Budgets (europäische Studie, veröffentlicht 2020)",
+      "alltag": "Unserem Kulturzentrum fehlt das Geld für Betrieb und Programm",
+      "quelle_url": "https://europepmc.org/articles/PMC7567665",
+      "ebene": "land",
+      "schlagwoerter": ["kulturfoerderung", "betriebskosten", "projektmittel", "kulturzentrum"]
+    },
+    {
+      "id": 3204,
+      "beschreibung": "Umgenutzte Gebäude sind normalerweise nicht auf Akustik und Publikumsbetrieb von Musikveranstaltungen ausgelegt (europäische Studie, veröffentlicht 2020)",
+      "alltag": "Unser Veranstaltungsort ist baulich nicht für Konzerte geeignet",
+      "quelle_url": "https://europepmc.org/articles/PMC7567665",
+      "ebene": "land",
+      "schlagwoerter": ["kulturgebaeude", "veranstaltungstechnik", "umbau", "kulturort", "brandschutz"]
+    }
+  ]
+}

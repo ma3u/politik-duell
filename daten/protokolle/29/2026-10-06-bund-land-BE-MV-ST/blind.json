@@ -1,0 +1,1792 @@
+{
+  "pruefsumme": "ae29051aa6f0c4ed851e98cc1a789d8e2d0d8d3a07bd95e0692a82cb993a063e",
+  "thema": {
+    "id": 29,
+    "name": "Einsamkeit und psychische Belastung",
+    "ziel": "Betroffene erleben tragfähige soziale Beziehungen, können mit ihren Gefühlen und Belastungen umgehen und erhalten bei Bedarf rechtzeitig passende Unterstützung."
+  },
+  "ursachen": [
+    {
+      "id": 2901,
+      "beschreibung": "Einsamkeit steigt unmittelbar nach dem Tod der Partnerin oder des Partners (Review von 26 Längsschnittstudien, 2024)",
+      "ebene": "land"
+    },
+    {
+      "id": 2902,
+      "beschreibung": "Je geringer das Einkommen, desto höher das Einsamkeitsrisiko: Skalenwert 2,00 bei Armutsgefährdung gegenüber 1,69 bei hohem Einkommen (Deutscher Alterssurvey, 2025)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2903,
+      "beschreibung": "Schwierigkeiten, Symptome psychischer Erkrankungen zu erkennen und Gefühle auszudrücken, erschweren die Hilfesuche (Review von 22 Studien, 2010)",
+      "ebene": "land"
+    },
+    {
+      "id": 2904,
+      "beschreibung": "Verinnerlichte Männlichkeitsnormen, Scham und der Anspruch, alles allein zu bewältigen, hemmen die Hilfesuche von Männern (12 Interviews, 2018)",
+      "ebene": "land"
+    },
+    {
+      "id": 2905,
+      "beschreibung": "Psychotherapeutische Hilfe ist nicht überall rechtzeitig zugänglich: 2018 vergingen im Mittel 112 Tage vom Erstkontakt bis zur Richtlinientherapie, teils mit Versorgung dazwischen",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2901,
+        2902,
+        2903,
+        2904,
+        2905
+      ],
+      "text": "Zu 2901 Begegnung, Nachbarschaft, Besuchsdienste und Trauerbegleitung, zu 2902 finanzielle und soziale Teilhabe, zu 2903 Aufklärung, Prävention und niedrigschwellige Beratung zu psychischer Gesundheit, zu 2904 Entstigmatisierung und zielgruppengerechte Angebote, zu 2905 Psychotherapie und psychiatrische Versorgung (Kassensitze, Wartezeiten)."
+    },
+    {
+      "nr": 2,
+      "text": "Wartezeiten auf Arzttermine allgemein gehören zu Arzttermine, Sucht zu Sucht und Glücksspiel, Mobbing zu Mobbing in der Schule, Pflege und Pflegekosten zu Pflege. Allgemeine Seniorenpolitik ohne Bezug zu Einsamkeit oder psychischer Gesundheit ist keine Maßnahme dieses Themas."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "land",
+      "beschreibung": "Psychische Gesundheit soll im Unterricht und in Projektwochen thematisiert werden, um Wissen zu Erkrankungen und Hilfen zu vermitteln und Stigmatisierung abzubauen.",
+      "zitat": "Psychische Gesundheit soll durch Unterricht oder Projektwochen fester Bestandteil der schulischen Bildung werden, um Kinder und Jugendliche über Erkrankungen, Versorgung und Therapieformen aufzuklären, Resilienz zu fördern und Stigmatisierung zu verringern.",
+      "ursachen_ids": [
+        2903,
+        2904
+      ],
+      "pruefsumme": "6845fda07c7f443c"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Geschlechtersensible Forschung zu Männergesundheit in Ausbildung und Klinikalltag verankern.",
+      "zitat": "Die mentale Gesundheit von Männern muss endlich ausreichend Beachtung finden. Wir bringen die geschlechtergerechte Forschung direkt in die Ausbildung und den Klinikalltag, damit Vorsorge und Behandlung für alle Menschen exakt passen.",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "3b7145b43b3d88c5"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "bund",
+      "beschreibung": "Erhöhung des einkommensteuerlichen Grundfreibetrags zur Entlastung niedriger Einkommen",
+      "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "c45acea9d1315848"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Präventions- und Unterstützungsangebote für Kinder und Jugendliche mit Schulpsychologie, Jugendpsychiatrie-Teams und früher Hilfe im sozialen Umfeld ausbauen.",
+      "zitat": "Speziell für Kinder und Jugendliche wollen wir Präventions- und Unterstützungsangebote deutlich ausbauen, unter anderem durch mehr Schulpsycholog*innen und -sozialarbeiter*innen, aufsuchende Jugendpsychiatrie-Teams, frühzeitige Hilfen im sozialen Umfeld und eine bessere Vernetzung zwischen dem Gesundheits-, Jugend- und Bildungsbereich.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "8bc8eaf1e2dd4c7d"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Sportvereine, Kulturangebote und Ehrenamt als Orte der Begegnung und sozialen Teilhabe stärken.",
+      "zitat": "Stärkung von Sportvereinen, kulturellen Angeboten und ehrenamtlichem Engagement, als zentrale Orte der Begegnung und sozialen Teilhabe.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "1e2bbc27eb9db30e"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Schulpsychologen präventiv einsetzen und für Lernende sowie Lehrkräfte niedrigschwellig erreichbar machen.",
+      "zitat": "Schulpsychologen müssen stärker präventiv arbeiten können und für Schülerinnen, Schüler und Lehrkräfte niedrigschwellig erreichbar sein.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "934f6df07ef7186c"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "land",
+      "beschreibung": "Ein regelmäßiger stadtweiter Aktionstag soll Gemeinschaft in den Kiezen fördern und Großstadtanonymität aufbrechen.",
+      "zitat": "Mit einem regelmäßigen stadtweiten „[Land] Day“ fördern wir gezielt Gemeinschaft in unseren Kiezen und brechen Großstadtanonymität auf.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "eada407049c0c2ff"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "bund",
+      "beschreibung": "Psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+      "zitat": "Deswegen werden wir […] psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "a8f1d9c4ad950d4a"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, soziokulturelle Zentren und Dritte Orte stärken und neu schaffen",
+      "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "23312c2608cc4531"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Heimatvereine gezielt fördern.",
+      "zitat": "Wir werden auch gezielt die leider nur noch selten anzutreffenden Heimatvereine fördern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "43f2f2d4eebfea38"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Bürokratische Hürden für Vereine systematisch abbauen.",
+      "zitat": "Bürokratische Hürden für Vereine, sei es bei Förderanträgen, Versicherungspflichten oder Nachweispflichten, werden wir systematisch abbauen. Vereine sollen sich ausschließlich auf ihren ursprünglichen Zweck konzentrieren können.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "afc615d95c7ccdad"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "bund",
+      "beschreibung": "Psychosoziale Zentren für Geflüchtete stärken.",
+      "zitat": "Psychosoziale Zentren für Geflüchtete werden wir stärken und das Recht auf Sprachmittlung verankern.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "865d9661b38f9f46"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "Schulen mit multiprofessionellen Teams zur Prävention psychischer Probleme ausstatten.",
+      "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen, um Schüler wie Lehrkräfte zu entlasten.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "3212788889d9791e"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Mit mobiler Stadtteilarbeit Menschen erreichen, für die ein Nachbarschaftszentrum zu schwer zugänglich ist.",
+      "zitat": "Mit mobiler Stadtteilarbeit wollen wir Menschen erreichen, denen der Weg in ein Nachbarschaftszentrum bislang zu hochschwellig ist.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "a3394f3f244f81b5"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Beratungsstrukturen sowie Hospiz- und Palliativangebote in einer modernen Strategie bündeln und weiterentwickeln.",
+      "zitat": "Wir werden daher die Beratungsstrukturen sowie Hospiz- und Palliativangebote in der Stadt ebenfalls gemäß dem Prinzip „wohnortnah ambulant vor stationär“ in einer modernen Hospiz- und Palliativstrategie bündeln und weiterentwickeln.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "25d5fedee81b95bb"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "bund",
+      "beschreibung": "Die angemessene Finanzierung der psychotherapeutischen Weiterbildung sicherstellen.",
+      "zitat": "Wir wollen die angemessene Finanzierung der Weiterbildung von Psychotherapeut*innen sicherstellen.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "c5a3da163da1dd29"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "bund",
+      "beschreibung": "Das Taschengeld im Freiwilligendienst so gestalten, dass Jugendliche aus einkommensärmeren Haushalten teilnehmen können.",
+      "zitat": "Das „Taschengeld“ wollen wir so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten sich für einen Freiwilligendienst entscheiden können.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "c7ba0b0ec524d819"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Multiprofessionelle Teams mit Schulpsychologie als Regelangebot an Schulen etablieren.",
+      "zitat": "Multiprofessionelle Teams müssen vom Ausnahmefall zum Standard werden. Neben Schulsozialarbeit und Schulpsychologie gehören dazu Inklusionsfachkräfte, Verwaltungspersonal, IT-Unterstützung, Lehrerassistenzen und Schulgesundheitsfachkräfte.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "d25e432b7370d571"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "bund",
+      "beschreibung": "Die Finanzierung der Psychotherapieausbildung durch Weiterbildungsstätten gesetzlich regeln.",
+      "zitat": "Die Finanzierung der Ausbildung durch die Weiterbildungsstätten muss gesetzlich geregelt werden.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "4acfa99b5404c6ef"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Mentale Gesundheit an Schulen durch Aufklärung, geschultes Personal und verlässliche Unterstützung fördern.",
+      "zitat": "Und wir fangen früh an: Mentale Gesundheit gehört in Schulen. Mit Aufklärung, geschultem Personal und verlässlicher Unterstützung sorgen wir dafür, dass junge Menschen nicht allein gelassen und sensibilisiert werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "b1465cd4afa11a25"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "bund",
+      "beschreibung": "Psychotherapeut*innen in Ausbildung einen Beschäftigungsstatus mit Zugang zu Tarifstrukturen geben.",
+      "zitat": "Psychotherapeut*innen in Ausbildung müssen einen Beschäftigungsstatus erhalten, der ihre Einbindung in Tarifstrukturen erlaubt.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "acf5e667ece2fa35"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Die Engagementstrategie finanziell stärken und weiterentwickeln",
+      "zitat": "Engagement, Begegnung und Beteiligung werden gezielt gestärkt. Die landesweite Engagementstrategie wird finanziell besser untersetzt und weiterentwickelt.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "d8c11d34b5624e7c"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Das Projekt der Plauderbänke in den Bezirken fördern.",
+      "zitat": "Außerdem fördern wir das Projekt der Plauderbänke in den Bezirken, um auch kurze Pausen am Wegesrand zu ermöglichen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "77d1cc93c0075bf8"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Flächendeckende Krisendienste für schnelle und niedrigschwellige Hilfe in akuten Situationen aufbauen.",
+      "zitat": "den flächendeckenden Aufbau von Krisendiensten für schnelle und niedrigschwellige Hilfe in akuten Situationen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "d25735b7c2450ea8"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Flächendeckende integrierte Gesundheitszentren mit therapeutischen, psychosozialen und präventiven Angeboten aufbauen.",
+      "zitat": "Wir wollen flächendeckend integrierte Gesundheitszentren aufbauen, die ärztliche, therapeutische, psychosoziale und präventive Angebote unter einem Dach vereinen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "efb3a05f75e46529"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Pilotprojekte für Sorgezentren sollen Nachbarschaft, gemeinsame Sorgearbeit und Selbstorganisation vor Ort ermöglichen.",
+      "zitat": "Wir wollen Pilotprojekte zur Schaffung von Sorgezentren starten, die Versorgungslücken im Nahraum schließen sollen, den Menschen in der Nachbarschaft den Zugang und den Raum für gemeinsame Sorgearbeit und Selbstorganisation ermöglichen und in denen Kunst, Kultur, Gesundheit und andere gemeinwohlorientierte Zwecke Raum finden.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "3c9370ad1a8f8547"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Patenschaften für Alleinstehende fördern.",
+      "zitat": "Patenschaften für Alleinstehende fördern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "312bb44523f45d6e"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Stigmatisierung psychisch erkrankter Menschen abbauen.",
+      "zitat": "den Abbau von Stigmatisierung, die Stärkung der Teilhabe, die bessere Unterstützung neurodivergenter Menschen sowie die Förderung mentaler Gesundheit in Schulen durch Prävention, Beratung und ausreichend Schulsozialarbeit.",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "05897be7fcc03057"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Konzepte zur Vermittlung von Wunschgroßeltern zwischen Familien und älteren Menschen stärker unterstützen.",
+      "zitat": "Ebenso werden wir Konzepte wie „Wunschgroßeltern“ stärker unterstützen, bei denen Familien mit Kindern ohne Großeltern in der Nähe und Senioren ohne eigenen Enkel vermittelt werden.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "e73068f6dca93d13"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Suizidprävention systematisch verankern und Hilfsangebote stärker vernetzen und gezielt ausbauen.",
+      "zitat": "Suizidprävention soll dabei systematisch verankert, Hilfsangebote sollen stärker vernetzt und gezielt ausgebaut werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "1e4124653598ed24"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "bund",
+      "beschreibung": "Eine sanktionsfreie Mindestsicherung am Armutsrisiko ausrichten und für Menschen ohne ausreichendes Einkommen oder Vermögen öffnen.",
+      "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen. Anspruch haben alle, die kein ausreichendes Einkommen oder Vermögen haben. Um Armut zu verhindern, orientieren wir uns an der sogenannten Armutsgefährdungsgrenze, gegenwärtig rund 1 � 400 Euro monatlich (inklusive Miete und sonstigen Wohnkosten; in Regionen mit hohen Mieten entsprechend mehr).",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "14654789cf3358c8"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Beratung, Prävention und Aufklärung zu psychischen Erkrankungen fördern und Stigmatisierungen abbauen.",
+      "zitat": "Initiativen zur Beratung, Prävention und Aufklärung über psychische Erkrankungen unterstützen wir, um die Versorgung nachhaltig zu sichern und Stigmatisierungen abzubauen.",
+      "ursachen_ids": [
+        2903,
+        2904
+      ],
+      "pruefsumme": "d402e206ce118698"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "bund",
+      "beschreibung": "Wohnortnahe Freizeit- und Bildungsangebote für Kinder und Familien zugänglich machen",
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "65d3040d5ced8aa1"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "Barrierefreie, bezahlbare Alters-WGs und generationenübergreifende Wohngruppen schaffen.",
+      "zitat": "Gemeinsam mit landeseigenen Wohnungsbaugesellschaften und Genossenschaften schaffen wir gezielt barrierefreie bezahlbare Wohnangebote für Alleinerziehende, Menschen mit Behinderungen und auch für Wohngemeinschaften, wie WGs für junge Menschen, die zum Beispiel Azubis und Studierende zusammenbringen, Alters-WGs und inklusive und generationenübergreifende Wohngruppen für Menschen mit und ohne Behinderungen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "5e03ad87ca9c02a7"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Psychische Gesundheit und Suizidprävention in der Präventionsarbeit stärker berücksichtigen.",
+      "zitat": "Suizidprävention und mentale Gesundheit erhalten dabei einen höheren Stellenwert.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "d3837142926fbcef"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale Kontakt- und Beratungsstellen mit Einzel- und Gruppenberatung sowie alltagsnaher Unterstützung sollen in jedem Bezirk bestehen.",
+      "zitat": "Psychosoziale Kontakt- und Beratungsstellen sollen in jedem Bezirk mit Einzel- und Gruppenberatung, Workshops und Teilhabe am Alltagsleben bestehen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "33154eef283d0ba8"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Die psychosoziale Unterstützung junger Menschen soll vernetzt und durch Lotsen, niedrigschwellige Krisenkontakte und Anlaufstellen erreichbar werden.",
+      "zitat": "Der Jugendarbeit kommt in diesem Zusammenhang eine Lotsinnenfunktion zu: Sie hilft, bestehende Angebote wie etwa Familienberatungsstellen bekannt zu machen. Niedrigschwellige Krisenchats und -telefone sowie analoge Anlaufstellen an den realen Aufenthaltsorten von Kindern und Jugendlichen wollen wir stärken.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "4af638725f875a97"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "bund",
+      "beschreibung": "Bestehende Netzwerke gegen Einsamkeit mit Nachbarschaftshilfen und Beratungsangeboten weiter unterstützen",
+      "zitat": "Wir unterstützen die gute Arbeit bestehender Netzwerke weiter: Nachbarschaftshilfen, ehrenamtliches Engagement, Beratungsstellen und Telefonseelsorge.",
+      "ursachen_ids": [
+        2901,
+        2903
+      ],
+      "pruefsumme": "b5bdf026b6f9b6e3"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Niedrigschwellige Hilfen für junge Menschen in Krisen und mit psychischen Problemen an weiteren Standorten anbieten.",
+      "zitat": "Die mentale Gesundheit rücken wir stärker in den Fokus, insbesondere bei jungen Menschen. Wir werden niedrigschwellige Angebote ausbauen, die schnelle und unbürokratische Hilfe ermöglichen. Erfolgreiche Projekte wie Soulspace wollen wir auf weitere Standorte ausweiten, um berlinweit erreichbare Anlaufstellen für junge Menschen in Krisensituationen und mit psychischen Problemen zu schaffen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "2f714cc73a46b4e4"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "bund",
+      "beschreibung": "Sport öffentlich fördern und barrierefreie Sportstätten sowie Schwimmbäder schaffen.",
+      "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "98f406a7a18ed96a"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Die mentale Gesundheit in Schulen durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte, stärken.",
+      "zitat": "Die mentale Gesundheit aller Beteiligten stärken wir, unter anderem durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "b3b187b874269374"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Die Jungenarbeit im Land strukturell stärken",
+      "zitat": "Um die Entwicklung von Jungen und jungen Männern im Land zu verbessern, werden wir die Jungenarbeit im Land strukturell stärken.",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "c94313f1e259bf89"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Den Bedarf an psychosozialer Beratung an Hochschulen regelmäßig erheben und die Ergebnisse in die Haushaltsberatungen einbringen.",
+      "zitat": "Wir werden: […] den Bedarf an psychosozialer Beratung an den Hochschulstandorten in [Land] fortlaufend evaluieren, um so die Evaluationsergebnisse in die Haushaltsberatungen einfließen lassen zu können.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "de575d2753fdb2fe"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Begegnungsräume durch generationenübergreifende Treffpunkte und bestehende Begegnungsstätten in allen Bezirken schaffen und weiterentwickeln.",
+      "zitat": "Wir schaffen Räume für Begegnungen durch generationenübergreifende Treffpunkte in allen Bezirken und die Weiterentwicklung bestehender Begegnungsstätten.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "3134cc6009c805c0"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "bund",
+      "beschreibung": "Ausbildungsplätze für Psychotherapeutinnen und -therapeuten schaffen",
+      "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "28e2bec827c65a9a"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Niedrigschwellige Anlaufstellen für Jugendliche in seelischen Krisen ausbauen.",
+      "zitat": "Wir bauen niedrigschwellige Anlaufstellen für Jugendliche in seelischen Krisen aus, die das Regelsystem ergänzen, solange dieses nicht ausreichend Angebote für den tatsächlichen Bedarf vorhält.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "12911418857a26b9"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Kleine und mittlere Clubs und Musikspielstätten durch ein Förderprogramm unterstützen.",
+      "zitat": "Wir legen ein Förderprogramm mit klaren Richtlinien auf, um kleine und mittlere Clubs sowie Musikspielstätten zu unterstützen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "1222f3d6de5de633"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Orte der Begegnung für zivilgesellschaftliche Initiativen fördern.",
+      "zitat": "Um sozialer Isolierung und damit einhergehenden gesundheitlichen Nachteilen vorzubeugen, wollen wir Orte der Begegnung fördern, um dort zivilgesellschaftlichen Initiativen Raum zu geben, um zu wirken.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "f77aca37cdfe8983"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Soziale Orte und Unterstützungsstrukturen im ländlichen Raum fördern, mit Mobilitätsprogrammen und niedrigschwelligen Treffpunkten.",
+      "zitat": "Förderung sozialer Orte und Unterstützungsstrukturen, insbesondere im ländlichen Raum, etwa durch gezielte Programme für Mobilität und niedrigschwellige Treffpunkte.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "36d362286eadcbd3"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Psychische Kontakt- und Beratungsstellen ausbauen und eine niedrigschwellige, wohnortnahe Versorgung ermöglichen.",
+      "zitat": "Die Kontakt- und Beratungsstellen bauen wir aus, ebenso die Psychotherapie für Kinder und Jugendliche nach SGB VIII. Ziel ist eine niedrigschwellige und wohnortnahe Versorgung.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "f9fe1e8cd8751174"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "In jedem Bezirk neue Orte der Begegnung schaffen.",
+      "zitat": "In jedem Bezirk sollen neue Orte der Begegnung entstehen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "807a503199efa2b9"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "bund",
+      "beschreibung": "Sozial gestaffelte Unterstützungsmöglichkeiten für Freiwilligendienste schaffen.",
+      "zitat": "Dafür wollen wir die Bedingungen für diese Personengruppen verbessern und sozial gestaffelte Unterstützungsmöglichkeiten schaffen.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "adea74df3065c47f"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Den Engagementfonds niedrigschwellig ausbauen und Initiativen unterstützen",
+      "zitat": "Der Engagementfonds wird ausgebaut, niedrigschwellig gestaltet und bekannter gemacht, um Einzelpersonen, kleine Initiativen und informelles Engagement wirksam zu unterstützen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "fe2868f223a86e2d"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Universitätspersonal durch zertifizierte Trainings beim Abbau von Stigmata und im Umgang mit Betroffenen schulen.",
+      "zitat": "Wir werden: […] Trainingsprogramme für Universitätspersonal in Forschung, Lehre und Verwaltung als Fortbildung mit Zertifikatsnachweis etablieren, um Stigmata abzubauen, einen sicheren Umgang mit Betroffenen zu fördern sowie diese als Qualifizierungsmaßnahme des lebenslangen Lernens explizit für das Universitätspersonal auszuweisen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "c879c9e94d6b3447"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "bund",
+      "beschreibung": "Die Angebote der Mental Health Coaches an Schulen ausbauen.",
+      "zitat": "Wir bauen die Angebote der Mental Health Coaches an Schulen aus und wir setzen uns dafür ein, dass Inklusion aller Schüler*innen gemäß der UN-Behindertenrechtskonvention an allen Schulen zur gelebten Realität wird.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "f58e90ee9f97a401"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "bund",
+      "beschreibung": "Die Finanzierung der Freiwilligendienste auf Grundlage einer Bund-Länder-Vereinbarung weiterentwickeln.",
+      "zitat": "Ein Freiwilligendienst bietet jungen Menschen die Möglichkeit, sich für ihre Gemeinschaft einzusetzen und dabei wertvolle soziale Kompetenzen zu entwickeln. Derzeit gibt es vielerorts mehr Interessentinnen und Interessenten als Plätze. Wir wollen daher die Finanzierung der Freiwilligendienste auf Grundlage einer Bund-Länder-Vereinbarung weiterentwickeln.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "f0dd626424005d94"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "In jedem Bezirk soll eine Einsamkeitsbeauftragte oder ein Einsamkeitsbeauftragter eingesetzt werden.",
+      "zitat": "[Partei] fordert eine*n Einsamkeitsbeauftragte*n in jedem Bezirk.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "a0147a949bba3402"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Eltern für traditionelle Rollenbilder sensibilisieren und geschlechtersensible Erziehung fördern.",
+      "zitat": "Eine frühe Sensibilisierung der Eltern, um tradierte Rollenbilder von Kindern bereits in den frühen Lebensjahren aufzubrechen, wollen wir mit Informationsangeboten begleiten. Kindergärten und Kitas leben eine geschlechtersensible Erziehung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2904
+      ],
+      "pruefsumme": "b1e43cb4c3a28e5d"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Kommunale Nachbarschaftstreffs als Orte der Geselligkeit und des gemeinsamen Arbeitens schaffen; Veranstaltungen für Menschen über 65 kostenlos anbieten.",
+      "zitat": "in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "002d696dff8b27ab"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Die Vermittlung generationsübergreifender Wohnpartnerschaften im Konzept „Wohnen für Hilfe“ ausbauen.",
+      "zitat": "Mit der Erprobung und Etablierung des Konzeptes „Wohnen für Hilfe“ werden wir die Vermittlung von Wohnpartnerschaften zwischen Studenten und älteren Menschen ausbauen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "30fc88c80f5fdacf"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Eine Landesstrategie gegen Einsamkeit mit gezielten Maßnahmen für sozial isolierte Menschen entwickeln.",
+      "zitat": "Gleichzeitig entwickeln wir mit einer Landesstrategie gegen Einsamkeit Maßnahmen, um gezielt Menschen zu erreichen, die von sozialer Isolation betroffen sind.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "0d7ce84ff31632cc"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Wohnortnahe Versorgungsnetzwerke und organisierte Nachbarschaftshilfe stärken",
+      "zitat": "Versorgungsnetzwerke vor Ort werden gestärkt, um ein möglichst langes Leben in Selbstständigkeit und im eigenen Wohnumfeld zu ermöglichen. Quartiersansätze, wohnortnahe Unterstützungsstrukturen und organisierte Nachbarschaftshilfe sind zentrale Bausteine.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "024ed8ddd3d6a54f"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "land",
+      "beschreibung": "Gemeindepsychiatrische Verbünde stärken",
+      "zitat": "Gemeindepsychiatrische Verbünde werden gestärkt.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "1580a75dde3850c0"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Bezirkliche Kriseninterventionszentren mit Chats und aufsuchenden Hilfen sowie der [Land] Krisendienst sollen gestärkt werden.",
+      "zitat": "Kriseninterventionszentren mit Kurzzeitaufnahme, Notfall-Chats und aufsuchenden Hilfen sollen in jedem Bezirk eingerichtet werden. Der [Land] Krisendienst soll stabil finanziert und ausgebaut werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "427fbb58ab31f5d7"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale Beratung flächendeckend und auskömmlich finanzieren und digitale Angebote ermöglichen.",
+      "zitat": "die Beratungslandschaft sichern und ausbauen, indem unter anderem die Sozial-, Schuldner-, Sucht- und psychosoziale Beratung flächendeckend und auskömmlich finanziert sowie digitale Angebote ermöglicht werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "80657227e746fcc6"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "bund",
+      "beschreibung": "Förderung des generationenübergreifenden Zusammenhalts mit Großeltern und Urgroßeltern",
+      "zitat": "Der generationenübergreifende Zusammenhalt mit Großeltern und Urgroßeltern soll gefördert werden.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "4878bd2a796cc807"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Schulpsychologinnen und Schulpsychologen flächendeckend an Schulen einsetzen.",
+      "zitat": "Wir fordern zudem den flächendeckenden Einsatz von Schulpsychologen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2903
+      ],
+      "pruefsumme": "5af172b471b44ce7"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Ein zusätzlicher Fonds soll Personal und Infrastruktur im Breitensport stärken, dessen Vereine Schutzräume gegen soziale Isolation bieten.",
+      "zitat": "Wir werden mit dem Landessportbund einen ergänzenden Fonds auflegen, der direkt in die Basis des Breitensports investiert, insbesondere zur Sicherung von Personal und zur Instandhaltung der Infrastruktur.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "1f0ad27f5fc450eb"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Eine landesweite Strategie gegen Einsamkeit entwickeln",
+      "zitat": "[Land] entwickelt deshalb eine schlüssige Strategie gegen Einsamkeit.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "dd462a64a906691b"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "bund",
+      "beschreibung": "Babyboomer-Engagement gezielt für Sportangebote und Vereinsarbeit einbinden.",
+      "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+      "ursachen_ids": [
+        2901,
+        2902
+      ],
+      "pruefsumme": "e93596bfb73baa7b"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Kriseninterventionsteams einführen, um auf Einsatzlagen mit psychosozialen Herausforderungen besser reagieren zu können.",
+      "zitat": "Wir stärken die Präventionsfähigkeiten und führen Kriseninterventionsteams ein, um insbesondere auf Einsatzlagen mit psychosozialen Herausforderungen besser reagieren zu können.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "5bd25da48e148aec"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Die Zahl der Schulpsychologen am gestiegenen Bedarf ausrichten.",
+      "zitat": "Gewalt- und Drogenprobleme werden wir durch konsequentes Handeln unterbinden; Schulsozialarbeit wird als Landesaufgabe etabliert und die Zahl der Schulpsychologen dem gestiegenen Bedarf angepasst.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "c8633b50382f125c"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Ein verbindliches Landesprogramm soll Einsamkeit durch aufsuchende Maßnahmen und bezirkliche Link-Worker bekämpfen.",
+      "zitat": "Wir fordern ein verbindliches Landesprogramm gegen Einsamkeit, das aufsuchende Maßnahmen und das Modell des Social Prescribing mit bezirklichen Link-Workern verbindet.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "67f886d1e6242246"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Kommunen beim Aufbau lokaler Bildungsnetzwerke für alle Altersgruppen unterstützen.",
+      "zitat": "Wir wollen Kommunen dabei unterstützen, lokale Bildungsnetzwerke für alle Altersgruppen aufzubauen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "17a9e59a202bef65"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Gesundheitsförderung mit Schwerpunkt psychische Gesundheit verbindlich in Kitas, Schulen, Betrieben und Senior*inneneinrichtungen integrieren.",
+      "zitat": "Die Gesundheitsförderung soll verbindlich in Kitas, Schulen, Betrieben und Senior*inneneinrichtungen integriert werden, mit Schwerpunkten auf Bewegung, gesunder Ernährung, Suchtprävention und psychischer Gesundheit.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "7d9110ae3415c9f5"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Psychische Gesundheit durch Entstigmatisierung, Prävention und Früherkennung stärken.",
+      "zitat": "Wir stärken die psychische Gesundheit durch Entstigmatisierung, Prävention und Früherkennung […]",
+      "ursachen_ids": [
+        2903,
+        2904
+      ],
+      "pruefsumme": "eb4285c6d3e94f01"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Die psychosoziale Beratung durch Studierendenwerke dauerhaft sichern und erweitern.",
+      "zitat": "Die psychosoziale Beratung durch die Studierendenwerke verstetigen und erweitern.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "ef4f91d761ba877c"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Resilienzförderung und Lerntrainings in schulischen Rahmenplänen verankern.",
+      "zitat": "Eingliederung von Resilienzförderung und Lerntrainings in die Rahmenpläne",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "81225936ab2e5ad3"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "bund",
+      "beschreibung": "Die Bedarfsplanung für psychotherapeutische Kassensitze am tatsächlichen Bedarf ausrichten.",
+      "zitat": "Dafür brauchen wir eine grundlegende Reform der Bedarfsplanung für vertragspsychotherapeutische Kassensitze, die sich nach dem realen Bedarf richtet.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "099d3025efba414b"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Kitas als soziale Treffpunkte und offene Familienzentren weiterentwickeln.",
+      "zitat": "Kitas sind auch soziale Treffpunkte. Wir wollen sie als offene Anlaufstellen für Bildung, Betreuung und Erziehung weiterentwickeln und enger mit Angeboten der Familienbildung verzahnen. Dazu unterstützen wir den weiteren Ausbau von Kinder- und Familienzentren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "94aacfba144a9947"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "bund",
+      "beschreibung": "Mindestrenten nach Versicherungsdauer sichern und stufenweise erhöhen",
+      "zitat": "Wir fordern eine Mindestrente von 1500 Euro nach 40 Versicherungsjahren. Wir plädieren – ähnlich wie bei unseren Nachbarländern – für ein Stufenmodell: Nach 30 Versicherungsjahren liegt die Mindestrente bei 1300 Euro und nach 15 Jahren bei 1200 Euro.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "94fce300f35283bc"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Niedrigschwellige Beratung und Krisenintervention zur psychischen Gesundheit für Jugendliche ausbauen.",
+      "zitat": "Wir setzen uns für den Ausbau niedrigschwelliger Beratungsangebote im Bereich der psychischen Gesundheit für Jugendliche ein […]",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "1a0607083e2fc3b2"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Aufsuchende Nachbarschaftshilfe für allein lebende ältere Menschen soll ausgebaut werden.",
+      "zitat": "Vor allem für allein lebende ältere [Land]*innen müssen spezielle aufsuchende Angebote der Nachbarschaftshilfe ausgebaut werden.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "1a9cb8258b4325fc"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Präventions-, Beratungs- und Behandlungsangebote für Betroffene ausbauen und bestehende Angebote unterstützen.",
+      "zitat": "Präventions-, Beratungs- und Behandlungsangebote umfassend ausbauen, erweitern und bestehende unterstützen,",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "a96cb85492d8e942"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Senior*innen mit ungenutzten Zimmern und junge Menschen werden für gegenseitige Alltagshilfe und gemeinsames Wohnen vermittelt.",
+      "zitat": "Mit dem neuen Vermittlungsprogramm „Wohnen für Hilfe“ schaffen wir neue Wege für bezahlbares und generationenübergreifendes Wohnen. Wir bringen Senior*innen mit ungenutzten Zimmern mit jungen Menschen zusammen, die im Alltag unterstützen und dafür eine entsprechend verringerte Miete zahlen müssen. So entstehen Wohnpartnerschaften auf Gegenseitigkeit, die bezahlbares Wohnen ermöglichen, Einsamkeit vorbeugen und den Zusammenhalt stärken.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "97db090274cc2a2f"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Psychisches Leiden infolge medizinischer Stigmata verhindern, behandeln und rechtlich ahnden.",
+      "zitat": "durch Stigmata von medizinischen Fachpersonal verursachtes psychisches Leiden zu verhindern, zu behandeln und juristisch zu ahnden,",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "ded3acd62ceee25a"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Klassengrößen auf höchstens 24 Schülerinnen und Schüler begrenzen, um Resilienz und soziale Kompetenzen zu stärken.",
+      "zitat": "Kleinere Klassen mit maximal 24 Schülerinnen und Schülern, um individuelle Förderung, Resilienz, Selbstbewusstsein und soziale Kompetenzen zu stärken.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "feca779cfefec655"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Die Landesstrategie gegen Einsamkeit mit konkreten Maßnahmen, klaren Zuständigkeiten und ausreichender Finanzierung ausbauen.",
+      "zitat": "Ausbau der Landesstrategie gegen Einsamkeit, verbunden mit konkreten Maßnahmen, klaren Zuständigkeiten und einer ausreichenden finanziellen Ausstattung.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "b1cc5db2757fcf21"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "bund",
+      "beschreibung": "Ein bundesweit vergünstigtes Nahverkehrsangebot für Menschen mit geringem Einkommen entwickeln.",
+      "zitat": "Neben dem Deutschland-Semesterticket wollen wir auch Lösungen für Auszubildende und Freiwilligendienstleistende finden und zudem ein bundesweit vergünstigtes Angebot für Menschen mit geringem Einkommen entwickeln.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "27bcdf6678bb26e4"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "bund",
+      "beschreibung": "Ehrenamt gezielter fördern und unterstützen",
+      "zitat": "Das Ehrenamt ist dabei für uns eine zentrale Säule unserer Gesellschaft, weshalb wir es künftig gezielter fördern und unterstützen werden.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "2eda6655cd7c3045"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Netzwerke, ehrenamtliches Engagement und generationenübergreifende Wohnformen zur Stärkung des gesellschaftlichen Zusammenhalts fördern.",
+      "zitat": "Mit präventiven Maßnahmen, der Förderung von Netzwerken und ehrenamtlichem Engagement sowie generationenübergreifenden Wohnformen stärken wir den gesellschaftlichen Zusammenhalt.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "014300526b028a21"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "bund",
+      "beschreibung": "Kinder- und Jugendangebote wohnortnah, barrierefrei und gebührenfrei zugänglich machen und kommunal finanzieren.",
+      "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "81c1dc9cfdaf19f0"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Landesmittel als Kofinanzierung für die Förderung von Mehrgenerationenhäusern bereitstellen.",
+      "zitat": "Darüber hinaus werden wir Landesmittel als Kofinanzierung des Bundesprogramms zur Förderung von Mehrgenerationenhäusern bereitstellen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "5a2ca6bb521b4341"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "land",
+      "beschreibung": "Senioren- und Mehrgenerationenbegegnungsstätten mit generationsübergreifenden Freizeitprogrammen gegen Vereinsamung fördern.",
+      "zitat": "Wir werden: […] Seniorenbegegnungsstätten oder Mehrgenerationenbegegnungsstätten mit seniorengerechten und generationsübergreifenden Freizeitprogrammen fördern, um der Vereinsamung entgegenzuwirken.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "15ec659bb3798008"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Begegnungsorte und Nachbarschaftsnetzwerke gegen Einsamkeit im Alter unterstützen.",
+      "zitat": "Der Einsamkeit im Alter entgegenwirken und Begegnungsorte und Nachbarschaftsnetzwerke unterstützen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "a0359b5ac0de251b"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Gemeinschaftliche Wohnformen unterstützen, die Vereinsamung vorbeugen und gegenseitige Hilfe fördern.",
+      "zitat": "Wir unterstützen kreative und gemeinschaftliche Wohnformen, die Vereinsamung vorbeugen, gegenseitige Hilfe und Zusammenarbeit fördern und trotzdem Individualität bewahren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "65d2eced39870b38"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Medizinisches Fachpersonal durch Aufklärung für Stigmata sensibilisieren und diese abbauen.",
+      "zitat": "Stigmata effektiv durch Aufklärung, insbesondere des medizinischen Fachpersonals, abbauen,",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "75a5eb1371f6b42c"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "bund",
+      "beschreibung": "Psychische Gesundheit durch Entstigmatisierung und niedrigschwellige digitale Angebote stärken.",
+      "zitat": "Auch in der psychischen Gesundheit und im Bereich «Mental Health» wollen wir durch Entstigmatisierung und niedrigschwellige, digitale Angebote die Lebensqualität der Betroffenen stärken.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "298978eb02b5b222"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Den Sozialpsychiatrischen Dienst zu einer Notfallnummer mit telemedizinischem Bereitschaftsdienst und schneller ärztlicher Beratung weiterentwickeln.",
+      "zitat": "Den Sozialpsychiatrischen Dienst wollen wir zu einer 24-Stunden-Notfallnummer weiterentwickeln, ergänzt durch einen bedarfsgesteuerten telemedizinischen Bereitschaftsdienst für alle Altersgruppen, der auch nach Praxisschließung eine schnelle ärztliche Beratung ermöglicht.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "d06842ba6b722c70"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "bund",
+      "beschreibung": "Die Wartezeit auf einen Psychotherapieplatz auf unter vier Wochen verkürzen.",
+      "zitat": "Wir setzen uns für eine bessere psychotherapeutische Versorgung ein und wollen die Wartezeit auf einen Therapieplatz auf unter vier Wochen verkürzen.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "ed7a6ec7767424ef"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "land",
+      "beschreibung": "Psychiatrische Einrichtungen fördern und niedrigschwellige Lotsen- und Vermittlungsangebote für passende Psychotherapie ausbauen.",
+      "zitat": "Um lange Wartezeiten zu reduzieren, fördern wir psychiatrische Einrichtungen personell und finanziell und bauen gemeinsam mit der Kassenärztlichen Vereinigung [Land] niedrigschwellige Lotsen- und Vermittlungsangebote aus, damit Menschen schneller Zugang zu passender psychotherapeutischer Versorgung erhalten.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "9d874685bfd0014f"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "bund",
+      "beschreibung": "Ein verpflichtendes Gesellschaftsjahr zur Begegnung zwischen Menschen unterschiedlicher Milieus und Generationen einführen",
+      "zitat": "Der Dienst für das Gemeinwohl bringt Menschen unterschiedlicher Milieus, Religionen und Generationen zusammen. […] Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "a116712edf44c443"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "bund",
+      "beschreibung": "Barrieren für generationenübergreifendes gemeinschaftliches Leben abbauen.",
+      "zitat": "Wir wollen den Abbau von Barrieren für generationenübergreifendes gemeinschaftliches Leben fördern.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "5484e4d45e54437d"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "bund",
+      "beschreibung": "Eine Garantierente für mehr Menschen mit geringem Einkommen weiterentwickeln.",
+      "zitat": "Auch Menschen mit geringem Einkommen unterstützen wir dabei, auskömmliche Rentenansprüche zu erwerben und so Altersarmut zu vermeiden. Die Grundrente werden wir zu einer Garantierente nach 30 Versicherungsjahren weiterentwickeln, die deutlich mehr Menschen als bisher einbezieht und finanziell besserstellt.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "7f12a69d9379c82b"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "land",
+      "beschreibung": "Passgenaue Beratung bei psychischen Belastungen queerer Menschen anbieten",
+      "zitat": "Besondere Belastungen queerer Menschen durch Diskriminierung werden durch passgenaue Beratungsangebote berücksichtigt.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "da3a143e6d5ab1f1"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "land",
+      "beschreibung": "Wohnortnahe soziale Treffpunkte und aufsuchende Stadtteilarbeit sollen erhalten und ausgebaut werden.",
+      "zitat": "Wir wollen diese wohnortnahe Infrastruktur erhalten und ausbauen – zugänglich, barrierefrei und kultursensibel. Die aufsuchende Stadtteilarbeit, die der schwarz-rote [Land] abgewickelt hat, wollen wir weiterführen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "4e990d9973e4a180"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "land",
+      "beschreibung": "Krisentelefone und ambulante Hilfen für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen sichern und ausbauen.",
+      "zitat": "Sicherung und Ausbau von Krisentelefonen und ambulanten Hilfen, insbesondere für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "49c35ba4a59034f9"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "land",
+      "beschreibung": "Generationenmanager und Generationenwerker erproben und etablieren.",
+      "zitat": "Zudem wollen wir den Einsatz von Generationenmanagern und Generationenwerkern erproben und etablieren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "033ac4341e8c99e8"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "bund",
+      "beschreibung": "Suizidprävention spürbar ausbauen und Menschen mit Suizidgedanken Unterstützung zusichern.",
+      "zitat": "Zugleich muss der Staat jedem, der Suizidgedanken hat, die helfende Hand reichen. Die Suizidprävention wollen wir deshalb spürbar ausbauen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "9f4080489c548240"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Den sozialpsychiatrischen Dienst ausbauen und stärker in Jugend-, Schul- und Integrationsarbeit einbinden.",
+      "zitat": "Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "3e8bea822bd08de7"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Stigmatisierung psychischer Erkrankungen entgegenwirken und Diagnostik und Therapie verbessern",
+      "zitat": "Wir wollen, dass psychische Erkrankungen von Menschen nicht mehr stigmatisiert werden und ihre Diagnostik und Therapie weiter verbessert werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "d6b07be12c6431de"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Quartiersansätze gegen Einsamkeit bündeln, unterstützen und finanzieren.",
+      "zitat": "Mit einem Landesaktionsplan gegen Einsamkeit wollen wir diese Maßnahmen bündeln, unterstützen und finanzieren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "8bc2234d82f2fb7c"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "bund",
+      "beschreibung": "Antragsverfahren für Sozialleistungen vereinfachen und zentrale, niedrigschwellige Anlaufstellen entwickeln.",
+      "zitat": "Indem wir Antragsverfahren vereinfachen, Leistungen zusammenfassen und aufeinander abstimmen, wollen wir verhindern, dass man von einer Stelle zur nächsten verwiesen wird. Wir arbeiten auf zentrale Anlaufstellen hin, die für alle wohnortnah, sozialräumlich, niedrigschwellig, mehrsprachig, barrierefrei und auch digital erreichbar sind.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "90ed16d0c3a8cea7"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "bund",
+      "beschreibung": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie in multiprofessionellen Teams schaffen.",
+      "zitat": "Wir schaffen mehr Stellen für Schulsozialarbeit, Schulpsychologie und Inklusion in multiprofessionellen Teams.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "68a3a8fb80f6e3de"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "land",
+      "beschreibung": "Ein Altenhilfestrukturgesetz soll soziale Infrastruktur für ältere Menschen bezirksübergreifend sichern und finanzieren.",
+      "zitat": "[Partei] wird dieses Gesetz zu einem politischen Schwerpunkt machen, unverzüglich ein Gesetzgebungsverfahren auf der Grundlage des Entwurfes des [Land] Landesseniorenbeirates aus dem Jahr 2023 auf den Weg bringen und alle nötigen finanziellen Mittel bedarfsgerecht bereitstellen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "f0cf85a0dc4cbe89"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale Beratung für wohnungslose Menschen als Teil ausgebauter und verstetigter Beratungs- und Versorgungsangebote.",
+      "zitat": "Parallel bauen wir Beratungs- und Versorgungsangebote aus und verstetigen sie. Dazu zählen psychosoziale Beratung […]",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "467f2d61878c9a6c"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "land",
+      "beschreibung": "Ehrenamtlich getragene Anlaufstellen im ländlichen Raum unterstützen, die das soziale Miteinander sichern.",
+      "zitat": "Besonders unterstützen wir ehrenamtlich getragene Anlaufstellen im ländlichen Raum, die das soziale Miteinander vor Ort sichern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "6f026449852ce755"
+    },
+    {
+      "kennung": "M118",
+      "ebene": "bund",
+      "beschreibung": "Psychotherapien bis zu ausreichender Kassenzulassung unbürokratisch über Kostenerstattung ermöglichen.",
+      "zitat": "Solange nicht genügend zugelassene Psychotherapeut*innen zur Verfügung stehen, müssen Therapien unbürokratisch über das Kostenerstattungsverfahren ermöglicht werden.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "950cf2feb4f75eb6"
+    },
+    {
+      "kennung": "M119",
+      "ebene": "land",
+      "beschreibung": "Lotsenstellen in die psychische Versorgung und frühe Hilfen mit Familienhebammen landesweit stärken.",
+      "zitat": "ÖGD zum Präventionsknoten machen – Lotsenstellen in die psychische Versorgung, frühe Hilfen inkl. Familienhebammen landesweit stärken,",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "a87843a396787696"
+    },
+    {
+      "kennung": "M120",
+      "ebene": "bund",
+      "beschreibung": "Ehrenamt durch ein Vereinspaket und besseren Zugang zu privater und öffentlicher Förderung stärken",
+      "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen. Zudem setzen wir mehr Anreize für private Gelder und Spenden und erleichtern den Zugang zu öffentlicher Förderung.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "959f42f5ecf24d4f"
+    },
+    {
+      "kennung": "M121",
+      "ebene": "bund",
+      "beschreibung": "Den Zugang zum freiwilligen Engagement für Menschen mit geringem Einkommen verbessern.",
+      "zitat": "Wir werden die Zugänge zum freiwilligen Engagement auch für Menschen mit geringem Einkommen, Migrationsgeschichte oder Behinderungen verbessern.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "a6bf92cd8b6f4cff"
+    },
+    {
+      "kennung": "M122",
+      "ebene": "bund",
+      "beschreibung": "Engagementstrukturen für ältere Menschen ausbauen, damit auch bisher schwer erreichbare Personen teilnehmen können.",
+      "zitat": "Engagementstrukturen für Ältere wollen wir ausbauen, damit sich auch diejenigen einbringen können, die bislang schwerer Zugang finden.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "18ba6b67eec3fcf2"
+    },
+    {
+      "kennung": "M123",
+      "ebene": "land",
+      "beschreibung": "Barrierefreie Begegnungsstätten und offene Treffpunkte fördern und erweitern.",
+      "zitat": "die Förderung und Erweiterung von Begegnungsstätten (barrierefrei) und offener Treff’s,",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "ef24ef6597befdb6"
+    },
+    {
+      "kennung": "M124",
+      "ebene": "land",
+      "beschreibung": "Die anonyme Telefonsorge der „Nummer gegen Kummer“ für Kinder und Jugendliche dauerhaft erhalten.",
+      "zitat": "Außerdem setzen wir uns für den dauerhaften Erhalt der „Nummer gegen Kummer“ ein, die mit anonymer Telefonsorge für Tausende Kinder und Jugendliche in dieser Stadt unverzichtbar ist.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "f1be5b70518758c0"
+    },
+    {
+      "kennung": "M125",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale Versorgung durch Zusammenarbeit von Straßensozialarbeit und psychosozialen Diensten direkt in den Kiezen stärken.",
+      "zitat": "Ebenso stärken wir die psychosoziale Versorgung durch eine enge Zusammenarbeit von Straßensozialarbeit und psychosozialen Diensten direkt in den Kiezen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "af096c60f882c43b"
+    },
+    {
+      "kennung": "M126",
+      "ebene": "land",
+      "beschreibung": "Präventionsangebote zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung ausbauen.",
+      "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "6fb1ca7350bc685f"
+    },
+    {
+      "kennung": "M127",
+      "ebene": "bund",
+      "beschreibung": "Vorhandene Angebote für ältere Menschen ohne finanziellen Aufschlag analog und digital zugänglich machen.",
+      "zitat": "Alle vorhandenen Angebote sollen sowohl digital als auch analog ohne finanziellen Aufschlag zur Verfügung gestellt werden.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "90611502ff217c9e"
+    },
+    {
+      "kennung": "M128",
+      "ebene": "land",
+      "beschreibung": "Ein Aktionsprogramm soll nachbarschaftliche Angebote in Großsiedlungen fördern und Beteiligungsformate für das Miteinander ausbauen.",
+      "zitat": "Wir wollen die Aufwertung von Grünflächen, den Ausbau von Sportflächen sowie von nachbarschaftlichen Angeboten fördern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "ff7d0c1d195680d9"
+    },
+    {
+      "kennung": "M129",
+      "ebene": "land",
+      "beschreibung": "Einsamkeit im Alter durch gezielte Förderung von Teilhabe und ehrenamtlichem Engagement bekämpfen.",
+      "zitat": "Wir setzen uns für Würde, Teilhabe und Sicherheit im Alter ein und fordern: […] Die Bekämpfung von Einsamkeit im Alter durch gezielte Förderung von Teilhabemöglichkeiten und ehrenamtlichen Engagements.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "6336915ea754c863"
+    },
+    {
+      "kennung": "M130",
+      "ebene": "land",
+      "beschreibung": "Einen landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie einführen.",
+      "zitat": "Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "c999daf04b9baac1"
+    },
+    {
+      "kennung": "M131",
+      "ebene": "bund",
+      "beschreibung": "Zugang und Attraktivität des Ehrenamts im Breitensport erhöhen.",
+      "zitat": "Wir helfen Ländern, Kommunen und Vereinen bei der Sanierung von Sportstätten und erhöhen die Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "715e21d9418edd71"
+    },
+    {
+      "kennung": "M132",
+      "ebene": "land",
+      "beschreibung": "Stadtteilfeste, Begegnungsformate und Vernetzung vor Ort finanziell unterstützen",
+      "zitat": "Unbürokratische Unterstützung, auch finanziell, ermöglicht Stadtteilfeste, Begegnungsformate und Vernetzung vor Ort. So werden nicht nur Einsamkeit bekämpft, sondern demokratische Alltagsräume gestärkt.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "db685edbac490d12"
+    },
+    {
+      "kennung": "M133",
+      "ebene": "bund",
+      "beschreibung": "Niedrige und mittlere Einkommen steuerlich entlasten.",
+      "zitat": "Niedrige und mittlere Einkommen werden wir entlasten. Sehr hohe Einkommen wollen wir dagegen stärker besteuern.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "02e20d127c43f693"
+    },
+    {
+      "kennung": "M134",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale und psychotherapeutische Versorgung für Geflüchtete stärken und niedrigschwelligen, bedarfsgerechten Zugang ermöglichen.",
+      "zitat": "Wir möchten daher die psychologische und psychosoziale Versorgung für Geflüchtete stärken und einen niedrigschwelligen und bedarfsgerechten Zugang zu ihr ermöglichen. Dazu gehören mehrsprachige und kultursensible Angebote, insbesondere für Kinder und Jugendliche.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "b0fd391df4b4f6e5"
+    },
+    {
+      "kennung": "M135",
+      "ebene": "land",
+      "beschreibung": "Plauderbänke als Orte für Austausch und offene Gespräche fördern.",
+      "zitat": "Wir wollen „Plauderbänke“ fördern, die in Parks und auf großen Plätzen zum Austausch und zum offenen Gespräch einladen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "0151731a1dd7b719"
+    },
+    {
+      "kennung": "M136",
+      "ebene": "land",
+      "beschreibung": "Gemeinschaftliche Flächen in Quartieren so gestalten, dass sie Nachbarschaft und Begegnung fördern.",
+      "zitat": "Wir unterstützen die Gestaltung von gemeinsamen Flächen, die Gemeinschaft fördern und die vielfältige Nachbarschaft zusammenbringen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "99fc480f66cd0925"
+    },
+    {
+      "kennung": "M137",
+      "ebene": "land",
+      "beschreibung": "Den generationsübergreifenden Dialog vertiefen.",
+      "zitat": "Dazu vertiefen wir den generationsübergreifenden Dialog.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "17688269d6308978"
+    },
+    {
+      "kennung": "M138",
+      "ebene": "bund",
+      "beschreibung": "Die Zusammenarbeit von Sportvereinen mit Bildung, Wirtschaft und sozialen Einrichtungen stärken, um mehr Menschen zu erreichen.",
+      "zitat": "Außerdem stärken wir die Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen, um möglichst viele Menschen zu erreichen.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "7aa4b48ae5c9cb3f"
+    },
+    {
+      "kennung": "M139",
+      "ebene": "land",
+      "beschreibung": "Prävention und Beratung zu psychischer Gesundheit ausbauen",
+      "zitat": "Dazu werden wir Prävention, Beratung und Versorgung ausbauen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "3a2c9745c3740134"
+    },
+    {
+      "kennung": "M140",
+      "ebene": "land",
+      "beschreibung": "Jugendsozialarbeit verlässlich finanzieren und Präventionsangebote für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit ausbauen.",
+      "zitat": "Ausbau und verlässliche Finanzierung der Jugendsozialarbeit, sowie von Präventionsangeboten für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "4fe69bc792ad7322"
+    },
+    {
+      "kennung": "M141",
+      "ebene": "land",
+      "beschreibung": "Kiezkantinen sollen bezahlbare Mahlzeiten und soziale Begegnungsorte in der Nachbarschaft schaffen.",
+      "zitat": "Genau da wollen wir mit unseren Kiezkantinen ansetzen! Den Aufbau und Betrieb von insgesamt 20 Kiezkantinen wollen wir mit jährlich 10 Millionen Euro finanzieren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "3aa69255036ea141"
+    },
+    {
+      "kennung": "M142",
+      "ebene": "land",
+      "beschreibung": "Schulsport mit Fokus auf Gesundheitsprävention und Freude an Bewegung erweitern.",
+      "zitat": "Wir wollen eine inhaltliche Erweiterung des Schulsports mit einem neuen Fokus auf Gesundheitsprävention und Freude an Bewegung einführen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "08eec821bb3a17f8"
+    },
+    {
+      "kennung": "M143",
+      "ebene": "land",
+      "beschreibung": "Einen Beauftragten für sozialen Zusammenhalt zur Koordination des Vorgehens gegen Einsamkeit einsetzen.",
+      "zitat": "Um dieses Thema zu koordinieren, wollen wir einen Beauftragten für sozialen Zusammenhalt einsetzen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "f8c5ca002fe526b2"
+    },
+    {
+      "kennung": "M144",
+      "ebene": "land",
+      "beschreibung": "Gesundheitsförderndes Verhalten, Emotionsregulation und den Umgang mit Stress im Schulalltag verankern.",
+      "zitat": "Wichtige Kompetenzen wie gesundheitsförderndes Verhalten, Emotionsregulation und Umgang mit Stress im Schulalltag verankern.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "76fef428a1e98353"
+    },
+    {
+      "kennung": "M145",
+      "ebene": "land",
+      "beschreibung": "Orte der Begegnung für ältere Menschen stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern.",
+      "zitat": "Wir wollen Orte der Begegnung wie Mehrgenerationenhäuser oder Seniorentreffs stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "adb98b4261aebe55"
+    },
+    {
+      "kennung": "M146",
+      "ebene": "land",
+      "beschreibung": "Freiwilligenagenturen und Engagementzentren strukturell fördern",
+      "zitat": "Freiwilligenagenturen und Engagementzentren werden verlässlich und strukturell gefördert.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "f447e48ba159c52f"
+    },
+    {
+      "kennung": "M147",
+      "ebene": "land",
+      "beschreibung": "Nachbarschaftshilfe und Senior:innenassistenz mit Beratungsangeboten unterstützen.",
+      "zitat": "die Unterstützung der Modelle Nachbarschaftshilfe und Senior:innenassistenz mit Beratungsangeboten,",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "068ede210dae55aa"
+    },
+    {
+      "kennung": "M148",
+      "ebene": "land",
+      "beschreibung": "Integrierte, niedrigschwellige, aufsuchende und multiprofessionelle Hilfs- und Krisenangebote in allen Bezirken ausbauen.",
+      "zitat": "Wir stärken die psychische Gesundheit […] durch den Ausbau integrierter, niedrigschwelliger, aufsuchender und multiprofessioneller Hilfs- und Krisenangebote in allen Bezirken, insbesondere für Menschen mit schweren psychischen Erkrankungen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "328276b4db3ec5e5"
+    },
+    {
+      "kennung": "M149",
+      "ebene": "bund",
+      "beschreibung": "Ambulante und stationäre Angebote für psychische Erkrankungen bedarfsgerecht verbessern",
+      "zitat": "Wir wollen die ambulanten und stationären Versorgungsangebote für psychische Erkrankungen bedarfsgerecht verbessern, insbesondere für Kinder und Jugendliche.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "4a03752ad267b206"
+    },
+    {
+      "kennung": "M150",
+      "ebene": "land",
+      "beschreibung": "Breitensport als Gesundheitsvorsorge politisch und finanziell aufwerten.",
+      "zitat": "Den Breitensport werden wir als Gesundheitsvorsorge politisch und finanziell aufwerten.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "31ccd161f74ad5d4"
+    },
+    {
+      "kennung": "M151",
+      "ebene": "bund",
+      "beschreibung": "Die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+      "zitat": "Deswegen werden wir […] die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "c32e6df42892348e"
+    },
+    {
+      "kennung": "M152",
+      "ebene": "land",
+      "beschreibung": "Lokale Kiez- und Nachbarschaftstreffen sowie wöchentliche Einsamkeitssprechstunden in Stadtteilzentren fördern.",
+      "zitat": "Wir werden Einsamkeit als gesellschaftliches Problem angehen und lokale Kiez- und Nachbarschaftstreffen fördern. Alle Stadtteilzentren sollen wöchentliche Einsamkeitssprechstunden anbieten und auf die vielfältigen Vernetzungsangebote hinweisen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "62f86f02a791a57f"
+    },
+    {
+      "kennung": "M153",
+      "ebene": "land",
+      "beschreibung": "Jugendorte für freie Treffen und Austausch in kleineren Städten und Gemeinden schaffen und ausbauen.",
+      "zitat": "Wir wollen außerdem Jugendorte schaffen und ausbauen, wozu insbesondere unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden zählen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "31aabd122dd8c7fa"
+    },
+    {
+      "kennung": "M154",
+      "ebene": "bund",
+      "beschreibung": "Kultur öffentlich fördern und gemeinnützige Kulturangebote sowie ehrenamtliche Anbieter verlässlich unterstützen.",
+      "zitat": "Länder und Kommunen müssen finanziell so ausgestattet werden, dass sie Kulturförderung betreiben können. Gemeinnützige Kultur- und Veranstaltungsstätten und Menschen, die ehrenamtlich kulturelle Angebote schaffen, brauchen verlässliche und unbürokratische Unterstützung.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "9dc2afd1d725e17e"
+    },
+    {
+      "kennung": "M155",
+      "ebene": "land",
+      "beschreibung": "Einsamkeitsbeauftragte bei landeseigenen Wohnungsunternehmen sollen ältere Mieter*innen besuchen und nachbarschaftliche Aktivitäten organisieren.",
+      "zitat": "Die Landeseigenen Wohnungsunternehmen sollen Einsamkeitsbeauftragte einstellen, die insbesondere in größeren Siedlungen ältere Mieter*innen zu Hause besuchen und Senior*innen-gerechte Aktivitäten für die Nachbarschaft organisieren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "73c9216ac7a2299f"
+    },
+    {
+      "kennung": "M156",
+      "ebene": "land",
+      "beschreibung": "Aufwandsentschädigungen für ehrenamtliche Trainer regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+      "zitat": "Ehrenamtliche Trainer, Übungsleiter, Kampf- und Schiedsrichter leisten einen gesellschaftlichen Wert, der in keiner Statistik vollständig erfasst wird. Ohne sie gibt es keinen Vereinssport. Ihre möglichen Aufwandsentschädigungen werden wir regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "29d345a3c41e6310"
+    },
+    {
+      "kennung": "M157",
+      "ebene": "land",
+      "beschreibung": "Patenschaften und Leihgroßeltern als generationenübergreifende Gemeinschaftsprojekte unterstützen.",
+      "zitat": "Modellprojekte für Patenschaften und „Leihgroßeltern“ unterstützen wir, denn sie können dazu beitragen, eine soziale Gemeinschaft zu stiften, in der Jung und Alt voneinander profitieren können.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "33ed2a8cd187fd40"
+    },
+    {
+      "kennung": "M158",
+      "ebene": "bund",
+      "beschreibung": "Das Kostenerstattungsverfahren während der Wartezeit vereinfachen und standardisieren.",
+      "zitat": "Bis zur Verkürzung der Wartezeiten wollen wir das Kostenerstattungsverfahren unbürokratischer machen und stärker standardisieren.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "2a58e1ec17802590"
+    },
+    {
+      "kennung": "M159",
+      "ebene": "bund",
+      "beschreibung": "Menschen, die Psychotherapie benötigen, zügig einen Therapieplatz ermöglichen.",
+      "zitat": "Wir arbeiten weiter konsequent daran, dass alle Menschen, die eine Psychotherapie benötigen, zügig einen Therapieplatz erhalten.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "052b33cf1b6ca45c"
+    },
+    {
+      "kennung": "M160",
+      "ebene": "land",
+      "beschreibung": "Bestehende Treffpunkte sichern und moderne Dorfzentren mit gebündelten Alltagsangeboten ermöglichen.",
+      "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "e578598fa33618b1"
+    },
+    {
+      "kennung": "M161",
+      "ebene": "bund",
+      "beschreibung": "Ausbildungskosten künftiger Psychotherapeut*innen deckeln.",
+      "zitat": "Die Ausbildungskosten für zukünftige Psychotherapeut*innen müssen gedeckelt werden.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "aca3ffde57261a21"
+    },
+    {
+      "kennung": "M162",
+      "ebene": "land",
+      "beschreibung": "Mehr Schulpsychologen und dauerhaft finanzierte Schulsozialarbeit bereitstellen.",
+      "zitat": "Mehr Schulpsychologen sowie dauerhaft finanzierte Schulsozialarbeit.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "0d968cee2e256c45"
+    },
+    {
+      "kennung": "M163",
+      "ebene": "bund",
+      "beschreibung": "Ein kostenloses bundesweites Senior*innen-Ticket für Mobilität und soziale Teilhabe einführen.",
+      "zitat": "Um die Mobilität und soziale Teilhabe von älteren Menschen zu stärken, wollen wir ein kostenloses bundesweites Senior*innen-Ticket einführen.",
+      "ursachen_ids": [
+        2902
+      ],
+      "pruefsumme": "f609c10b2c22573b"
+    },
+    {
+      "kennung": "M164",
+      "ebene": "land",
+      "beschreibung": "Digitale Mental-Health-Angebote und Online-Interventionen in die Regelversorgung an Hochschulen integrieren.",
+      "zitat": "Wir werden: […] die Regelversorgung um digitale Mental Health-Angebote erweitern, indem dezentrale Selbstmanagement-Programme an den Hochschulen und für Studierende bekannt gemacht werden, sowie online-gestützte Interventionen in die Beratungsstruktur der Studierendenwerke implementieren",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "79482af400d54d5d"
+    },
+    {
+      "kennung": "M165",
+      "ebene": "land",
+      "beschreibung": "Digitale Hilfsangebote und flächendeckende Schulpsychologie für Kinder und Jugendliche ausbauen.",
+      "zitat": "Hilfsangebote ausbauen: mehr Psychotherapeut:innen, digitale Angebote und flächendeckende Schulpsycholog:innen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "51e55f4470c9e697"
+    },
+    {
+      "kennung": "M166",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm zur Schaffung von Begegnungsorten weiter unterstützen",
+      "zitat": "Wir haben ein Landesprogramm zur Schaffung von Begegnungsorten (Dritte Orte) auf den Weg gebracht, um niedrigschwelliges soziales Miteinander zu fördern und Gemeinschaft zu stärken. Dafür werden wir uns auch weiterhin einsetzen.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "719b0f8cd0a38eba"
+    },
+    {
+      "kennung": "M167",
+      "ebene": "land",
+      "beschreibung": "Stadtteilzentren ausbauen und dauerhaft sichern, Nachbarschafts- und Begegnungsprojekte fördern, gezielte Maßnahmen gegen Vereinsamung.",
+      "zitat": "[Land] braucht mehr Orte der Begegnung und verlässliche Angebote, die soziale Teilhabe fördern. Dazu gehören der Ausbau und die langfristige Sicherung von Stadtteilzentren, die Förderung von Nachbarschafts- und Begegnungsprojekten sowie gezielte Maßnahmen gegen Vereinsamung bei jungen Menschen, älteren Menschen und sozial Benachteiligten.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "f1aafa31cf5e9926"
+    },
+    {
+      "kennung": "M168",
+      "ebene": "land",
+      "beschreibung": "Selbsthilfegruppen unterstützen, um Engagement und soziale Teilhabe zu fördern.",
+      "zitat": "Initiativen wie Freiwilligenagenturen und Selbsthilfegruppen unterstützen wir, um freiwilliges Engagement zu fördern und soziale Teilhabe zu verbessern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "444a9ed168a99d73"
+    },
+    {
+      "kennung": "M169",
+      "ebene": "land",
+      "beschreibung": "Ein Landesprogramm für psychische Gesundheit und schulpsychologische Angebote ausbauen sowie Prävention und frühe Hilfen im Schulalltag verankern.",
+      "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "0dca0f16facf748e"
+    },
+    {
+      "kennung": "M170",
+      "ebene": "bund",
+      "beschreibung": "Therapieplätze bedarfsgerecht ausbauen.",
+      "zitat": "Deswegen werden wir Therapieplätze […] bedarfsgerecht ausbauen.",
+      "ursachen_ids": [
+        2905
+      ],
+      "pruefsumme": "e0b105aa59bd8be1"
+    },
+    {
+      "kennung": "M171",
+      "ebene": "land",
+      "beschreibung": "Hospizeinrichtungen und die haupt- und ehrenamtliche Hospizarbeit fördern.",
+      "zitat": "Wir werden: […] Hospizeinrichtungen und die Arbeit der haupt- und ehrenamtlichen Mitarbeitenden fördern.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "295faef5c82da421"
+    },
+    {
+      "kennung": "M172",
+      "ebene": "land",
+      "beschreibung": "Erziehungs- und Familienberatung mit kurzen Wartezeiten und niedrigschwelligen Zugängen stärken.",
+      "zitat": "Ergänzende Beratungs- und Unterstützungsangebote für Kinder, Jugendliche und Eltern, insbesondere Stärkung der Erziehungs- und Familienberatung, mit kurzen Wartezeiten und niedrigschwelligen Zugängen.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "2c43a6c4781ee192"
+    },
+    {
+      "kennung": "M173",
+      "ebene": "land",
+      "beschreibung": "Online-Interventionen in den ersten vier bis sechs Wochen bis zur Regelversorgung ohne Verzögerung ermöglichen.",
+      "zitat": "Wir werden: […] Genehmigungsvorbehalte dahingehend entbürokratisieren, dass die Ersuchen von Studierenden in den ersten vier bis sechs Wochen bis zur Gewährung einer Regelversorgung zumindest über eine online-gestützte Intervention umgehend erfüllt werden können.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "cea6ddd97cd8100b"
+    }
+  ]
+}

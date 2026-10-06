@@ -1,0 +1,41 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Auf Bundesebene ein Suchtpräventionsprogramm für Kommunen anstoßen, das Prävention vor Ort bei Alkohol, Nikotin, Cannabis und Drogen finanziert.",
+      "ursachen_ids": [3001],
+      "zitat": "Wir setzen uns auf Bundesebene für ein Suchtpräventionsprogramm ein, dass - ähnlich wie die frühen Hilfen - an die Kommunen ausgereicht wird, um Präventionsarbeit vor Ort zu leisten.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Landesfachstelle für Kinder aus psychisch und suchtbelasteten Familien über 2027 hinaus finanzieren, um Hilfe zu bieten und Sucht vorzubeugen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3006],
+      "zitat": "Um Kindern und Jugendlichen aus psychisch und/oder suchtbelasteten Familien Hilfe und Schutz bieten zu können und um Suchterkrankungen vorzubeugen, wollen wir die Finanzierung der Landesfachstelle KipsFam über das Jahr 2027 hinaus sicherstellen.",
+      "seite": 35
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3004,
+      "seiten": [30, 31, 35],
+      "grund": "Kapitel Gesundheit (S. 28–35) und Innenpolitik (S. 45–48) gelesen; keine Aussage zu Glücksspielrecht, Spielhallen, Sportwetten oder Online-Glücksspiel (Stichwort Glücksspiel im ganzen Programm ohne Treffer)."
+    }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis/Einleitung (S. 2–8), Kapitel Gesundheit (S. 28–32, v. a. „Prävention und Gesundheitsförderung“ S. 30–31), Kinder/Jugend (S. 35), Medien und Innenpolitik (S. 44–48), Schule (S. 68). Volltextsuche nach Sucht, Alkohol, Drogen, Cannabis, Nikotin, Tabak, Glücksspiel, Spielhalle, Sportwette, Selbsthilfe, Jugendschutz: sieben Treffer, alle gelesen.
+
+Nicht erfasst:
+- S. 30–31: „Präventionsprogramm […] zeigen Wege aus Sucht und Drogenkonsum auf“ – Rückblick auf bereits Aufgelegtes, keine neue Zusage.
+- S. 31: „psychische Erkrankungen von Menschen nicht mehr stigmatisiert werden“ – betrifft psychische Erkrankungen, nicht Sucht (R2: Einsamkeit und psychische Belastung); als Wunsch formuliert.
+- S. 35: Bundesebene-Gesamtkonzept für Hilfesysteme für Kinder aus suchtbelasteten Familien – gleichartig zur erfassten KipsFam-Zusage, nicht doppelt aufgenommen.
+- S. 45: Jugendschutz bei den Medienanstalten – Medien, nicht Alkohol (R1).
+- S. 68: „Gesundheitsvorsorge […] an Schulen weiter stärken“ – ohne Suchtbezug.
+
+Richtungen ohne Maßnahme: Verfügbarkeit von Alkohol begrenzen (3001), Glücksspielangebote begrenzen und Selbstlimits (3004), Suchthilfe/Behandlung ausbauen und Selbsthilfe (3006) – keine Zusagen im Programm gefunden.
+
+Grenzfall: KipsFam (Hilfe für Kinder aus suchtbelasteten Familien) als ursachen_offen 3006, weil R1 Suchtberatung und Behandlung nennt, aber nicht Angebote für Angehörige.

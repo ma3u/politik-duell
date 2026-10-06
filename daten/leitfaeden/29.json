@@ -1,0 +1,42 @@
+{
+  "thema_id": 29,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 29), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2901, 2902, 2903, 2904, 2905],
+      "text": "Zu 2901 Begegnung, Nachbarschaft, Besuchsdienste und Trauerbegleitung, zu 2902 finanzielle und soziale Teilhabe, zu 2903 Aufklärung, Prävention und niedrigschwellige Beratung zu psychischer Gesundheit, zu 2904 Entstigmatisierung und zielgruppengerechte Angebote, zu 2905 Psychotherapie und psychiatrische Versorgung (Kassensitze, Wartezeiten)."
+    },
+    {
+      "nr": 2,
+      "text": "Wartezeiten auf Arzttermine allgemein gehören zu Arzttermine, Sucht zu Sucht und Glücksspiel, Mobbing zu Mobbing in der Schule, Pflege und Pflegekosten zu Pflege. Allgemeine Seniorenpolitik ohne Bezug zu Einsamkeit oder psychischer Gesundheit ist keine Maßnahme dieses Themas."
+    }
+  ],
+  "suchbegriffe_geprueft": {
+    "begegnungsstätten": "Wenige Treffer (11), fast alle Orte für Begegnung; Wortformen wie Seniorenbegegnungsstätten gehören dazu.",
+    "freiwilligendienst": "Wenige Treffer (10); Bundesfreiwilligendienst und Freiwilligendienste sind gemeint."
+  },
+  "suchbegriffe": {
+    "2901": {
+      "Begegnung und Gemeinschaft vor Ort stärken": ["einsamkeit", "begegnungsstätten", "mehrgenerationenhaus", "nachbarschaftshilfe", "besuchsdienst", "seniorentreff", "strategie gegen einsamkeit", "gemeinschaftsangebote"],
+      "Professionelle Begleitung bei Verlust": ["trauerbegleitung", "hospiz", "seelsorgerische begleitung", "beratungsangebote für ältere"]
+    },
+    "2902": {
+      "Teilhabe finanziell sichern": ["teilhabe älterer", "seniorenticket", "sozialticket", "altersarmut bekämpfen", "grundrente", "ermäßigungen für senioren"],
+      "Soziale Einbindung unabhängig vom Einkommen": ["ehrenamt", "freiwilligendienst", "bürgerschaftliches engagement", "soziale einbindung", "generationenübergreifend"]
+    },
+    "2903": {
+      "Aufklärung und Prävention psychischer Gesundheit": ["psychische gesundheit", "mental health", "gesundheitskompetenz", "aufklärung psychische erkrankungen", "schulpsychologen", "prävention psychischer erkrankungen", "resilienz"],
+      "Beratung und Weitervermittlung vereinfachen": ["anlaufstellen", "krisendienst", "telefonseelsorge", "beratungsstelle für", "niedrigschwellige beratung", "lotsenfunktion"]
+    },
+    "2904": {
+      "Stigma abbauen": ["entstigmatisierung", "stigmatisierung", "tabu psychische erkrankungen", "enttabuisierung", "offener umgang"],
+      "Zielgruppengerechte Unterstützung für Männer": ["männergesundheit", "männerberatung", "jungenarbeit", "jungen- und männerarbeit", "vertrauliche beratung", "selbsthilfe"]
+    },
+    "2905": {
+      "Therapieplätze und Kapazitäten ausbauen": ["psychotherapeutische versorgung", "kassensitze", "therapieplätze", "bedarfsplanung psychotherapie", "wartezeiten psychotherapie", "psychotherapeuten"],
+      "Zugang steuern und koordinieren": ["koordinierte versorgung", "stepped care", "gestufte versorgung", "terminservicestelle", "digitale gesundheitsanwendungen", "e-mental-health"]
+    }
+  }
+}

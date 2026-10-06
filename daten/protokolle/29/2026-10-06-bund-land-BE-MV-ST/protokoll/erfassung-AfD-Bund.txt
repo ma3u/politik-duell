@@ -1,0 +1,45 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Erhöhung des einkommensteuerlichen Grundfreibetrags zur Entlastung niedriger Einkommen",
+      "ursachen_ids": [2902],
+      "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+      "seite": 59
+    },
+    {
+      "beschreibung": "Förderung des generationenübergreifenden Zusammenhalts mit Großeltern und Urgroßeltern",
+      "ursachen_ids": [2902],
+      "zitat": "Der generationenübergreifende Zusammenhalt mit Großeltern und Urgroßeltern soll gefördert werden.",
+      "seite": 147
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2901,
+      "seiten": [145, 146, 147, 154],
+      "grund": "Kein Vorschlag zu Begegnungsangeboten, Besuchs- oder Trauerbegleitung nach dem Tod eines Partners; Aussagen zu Familienzusammenhalt bzw. Trennung betreffen andere Situationen."
+    },
+    {
+      "ursache": 2903,
+      "seiten": [27, 28, 29, 30, 31, 32, 33, 34],
+      "grund": "Keine allgemeine Aufklärung oder niedrigschwellige Beratung zu psychischer Gesundheit; psychische Beschwerden erscheinen nur in anderen Sachzusammenhängen."
+    },
+    {
+      "ursache": 2904,
+      "seiten": [96],
+      "grund": "Hilfe zur Selbsthilfe betrifft Entwicklungshilfe, nicht Entstigmatisierung oder zielgruppengerechte Unterstützung von Männern."
+    },
+    {
+      "ursache": 2905,
+      "seiten": [28, 34],
+      "grund": "S. 28 behandelt allgemeine Facharztwartezeiten; auf S. 34 geht es um Datenzugriff auf Psychotherapeuten, nicht um Kassensitze oder Therapieplatzkapazität. Allgemeine Arzttermine sind laut R2 ausgeschlossen."
+    }
+  ]
+}
+
+Gelesen: Inhaltsverzeichnis PDF-S. 3–8; Eigenverantwortung, Rente und Grundsicherung S. 15–27; Gesundheitspolitik S. 27–35; Finanzen und Steuern S. 54–61; Entwicklungspolitik S. 95–97; Familie, Demografie und Trennungsfolgen S. 145–154.
+Nicht erfasst: S. 16 nennt Ehrenamt als allgemeines Bildungsziel, nicht als konkrete Maßnahme. S. 96 bezieht sich „Hilfe zur Selbsthilfe“ auf Entwicklungshilfe. Weitere Ursachen ohne passende Maßnahme siehe JSON.
+Richtungen ohne Maßnahme: Begegnung und Begleitung nach Partnerverlust; Aufklärung und Beratung zu psychischer Gesundheit; zielgruppengerechte Männerangebote; psychotherapeutische Kapazitäten und Zugangssteuerung.
+Seiten ohne Text: PDF-S. 35 ist fast textlos und folgt dem abgeschlossenen Gesundheitsteil; sie liegt nicht innerhalb eines zum Thema passenden Abschnitts.

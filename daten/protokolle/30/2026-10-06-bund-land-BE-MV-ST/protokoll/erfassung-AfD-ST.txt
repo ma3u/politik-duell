@@ -1,0 +1,23 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [],
+  "keine_massnahme": "Inhaltsverzeichnis (S. 248–256) und Kapitel Gesundheit und Pflege (S. 236–247), Innere Sicherheit/Justiz (Fundstellen zu Drogen S. 123, 138), Finanzen (S. 229) und Schulbildung (S. 79) gelesen; nichts zu Alkoholverfügbarkeit, Glücksspiel oder Suchthilfe.",
+  "nicht_erfasst": [
+    { "ursache": 3001, "seiten": [229, 241, 242], "grund": "Kein Alkoholverkauf, keine Verkaufszeiten oder Jugendschutz im Programm; die Streichung der Biersteuer (S. 229) betrifft Steuern (3002), nicht Verfügbarkeit." },
+    { "ursache": 3004, "seiten": [229], "grund": "Kein Glücksspielrecht, keine Spielhallen, Online-Glücksspiel oder Sportwetten im Programm; die Empfehlung an Kommunen zur Vergnügungssteuer (S. 229) ist nur eine Empfehlung zu Abgaben." },
+    { "ursache": 3006, "seiten": [138, 241, 242], "grund": "Prävention (S. 241–242) bezieht sich auf Ernährung, Bewegung und Gesundheitsrisiken, nicht auf Sucht; Drogensucht kommt nur als Waffenrechts-Kriterium (S. 138) vor." }
+  ]
+}
+
+Protokoll
+
+Gelesen: S. 1–14 (Vorwort, Familie), Inhaltsverzeichnis S. 248–256, Gesundheit und Pflege S. 236–247, Fundstellen zu Drogen/Sucht S. 123 (Schwarzmarkt in JVAs), S. 138 (Waffenrecht), Bagatellsteuern S. 229, Smartphones S. 79, Familie S. 18–20 (Sozialarbeit, Sport, Vorlesen).
+
+Nicht erfasst:
+- S. 123: Drogen im Gefängnis (Schwarzmarkt in JVAs) ist Justizvollzug/Sicherheit, keine Suchthilfe oder Verfügbarkeitsbegrenzung.
+- S. 138: Hinweise auf Drogensucht im Waffenrecht gehören zur Zuverlässigkeitsprüfung, nicht zu 3001/3004/3006.
+- S. 229: Biersteuer streichen = Steuer (3002); Vergnügungssteuer nur Empfehlung an Kommunen.
+- S. 79: Smartphone-Verbot an Schulen betrifft Unterricht, keine Suchtursache aus dem Auftrag.
+
+Seiten ohne Text (S. 101–103, 140–141, 233–235) sind Trennseiten zwischen Kapiteln, nicht mitten im passenden Kapitel.

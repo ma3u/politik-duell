@@ -1,0 +1,56 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Mindestrenten nach Versicherungsdauer sichern und stufenweise erhöhen",
+      "ursachen_ids": [2902],
+      "zitat": "Wir fordern eine Mindestrente von 1500 Euro nach 40 Versicherungsjahren. Wir plädieren – ähnlich wie bei unseren Nachbarländern – für ein Stufenmodell: Nach 30 Versicherungsjahren liegt die Mindestrente bei 1300 Euro und nach 15 Jahren bei 1200 Euro.",
+      "seite": 22
+    },
+    {
+      "beschreibung": "Wohnortnahe Freizeit- und Bildungsangebote für Kinder und Familien zugänglich machen",
+      "ursachen_ids": [2902],
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Ehrenamt gezielter fördern und unterstützen",
+      "ursachen_ids": [2902],
+      "zitat": "Das Ehrenamt ist dabei für uns eine zentrale Säule unserer Gesellschaft, weshalb wir es künftig gezielter fördern und unterstützen werden.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Ausbildungsplätze für Psychotherapeutinnen und -therapeuten schaffen",
+      "ursachen_ids": [2905],
+      "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+      "seite": 27
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2901,
+      "seiten": [27],
+      "grund": "Die Förderung der Hospizversorgung betrifft die Begleitung Sterbender. Eine Zusage zu Begegnung, Besuchsdiensten oder Trauerbegleitung für Hinterbliebene steht dort nicht."
+    },
+    {
+      "ursache": 2903,
+      "seiten": [25],
+      "grund": "Schulpsychologen erscheinen als Teil von Unterstützungsteams zur Entlastung der Lehrkräfte. Eine Maßnahme zur Aufklärung, Prävention oder niedrigschwelligen Beratung über psychische Erkrankungen der Betroffenen ist nicht formuliert."
+    },
+    {
+      "ursache": 2904,
+      "seiten": [22],
+      "grund": "Die Stigmatisierungsangst bezieht sich auf den Grundsicherungsantrag. Die Rentenversprechen zielen auf Altersarmut, nicht auf Entstigmatisierung psychischer Belastungen oder männerspezifische Unterstützung."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: PDF-Seiten 1–6 (Programmbeginn; im extrahierten Text kein Inhaltsverzeichnis), 22, 25–28, 31–32 und 35. Relevante Abschnitte: Gesundheit und Pflege (S. 26–27), Rente/Sozialstaat (S. 22), Bildung/Familie und gesellschaftliche Akteure (S. 31–32).
+
+Nicht erfasst: S. 35 nennt Ehrenamtliche als Alltagshelden und fordert Rückhalt, enthält dafür aber keine konkrete Förderzusage. Die fehlenden Ursachen sind mit Fundseite und Grund im JSON dokumentiert.
+
+Richtungen ohne Maßnahme: Zu 2901 keine Begegnungs-, Besuchs- oder Trauerbegleitung für Hinterbliebene; zu 2903 keine passende Aufklärung, Prävention oder Beratung; zu 2904 keine Entstigmatisierung oder männerspezifische Unterstützung. Bei 2905 ist die Schaffung von Ausbildungsplätzen für Psychotherapeuten erfasst.
+
+Seiten ohne Text: PDF-Seite 1 ist die Titelseite und liegt außerhalb der relevanten Kapitel; sie hat die Erfassung nicht behindert.

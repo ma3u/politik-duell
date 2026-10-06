@@ -1,0 +1,1015 @@
+{
+  "id": 33,
+  "name": "Mediennutzung von Kindern und Jugendlichen",
+  "beschreibung": "Kinder und Jugendliche verbringen länger als gewollt Zeit am Bildschirm oder in sozialen Medien. Familien erleben Schwierigkeiten beim Begrenzen sowie Sorgen um Schlaf, Konzentration und altersgerechte Nutzung.",
+  "ziel": "Kinder und Jugendliche nutzen Medien altersgerecht und selbstbestimmt, ohne dass Schlaf, Konzentration und ihr übriger Alltag darunter leiden.",
+  "schlagwoerter": ["bildschirmzeit", "social media", "handy", "medienkonsum", "kinder", "jugendliche", "tiktok", "smartphone"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3301,
+      "beschreibung": "Soziale Belohnungen wie Likes fördern wiederholtes Posten: In einem Experiment (2021, 176 Erwachsene) wurde bei mehr Likes häufiger gepostet; auch Jugendliche reagieren auf Likes",
+      "alltag": "Mein Kind kann nicht aufhören, ständig auf Likes und Nachrichten zu schauen",
+      "quelle_url": "https://europepmc.org/articles/PMC7910435",
+      "ebene": "bund",
+      "schlagwoerter": ["likes", "staendig online", "nicht aufhoeren", "plattformgestaltung"]
+    },
+    {
+      "id": 3302,
+      "beschreibung": "Bildschirmnutzung zur Schlafenszeit hängt mit zu wenig Schlaf und Tagesmüdigkeit zusammen (Metaanalyse 2016, 20 Studien, 125.198 Kinder und Jugendliche)",
+      "alltag": "Mein Kind sitzt nachts am Handy und ist tagsüber müde",
+      "quelle_url": "https://europepmc.org/articles/PMC5380441",
+      "ebene": "land",
+      "schlagwoerter": ["handy im bett", "nachts online", "schlaf", "muede", "konzentration"]
+    },
+    {
+      "id": 3303,
+      "beschreibung": "Eltern fällt die Begleitung der Mediennutzung schwer: Für 57,6 % war die passende tägliche Nutzungsdauer zumindest manchmal eine Sorge (niederländische Befragung 2015, Kinder 1 bis 9 Jahre)",
+      "alltag": "Ich weiß nicht, wie viel Bildschirmzeit für mein Kind in Ordnung ist",
+      "quelle_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5932097/fullTextXML",
+      "ebene": "land",
+      "schlagwoerter": ["medienkompetenz", "eltern", "medienerziehung", "handyregeln", "jugendschutzeinstellungen"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8387,
+      "name": "Verbindliches Handyverbot im Schulalltag bis zur Mittelstufe (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Dafür: In England, Florida und Indien stiegen die Noten leicht bis moderat, Ablenkung sank. Dagegen: In Florida, Schweden und England fanden Studien keine Effekte auf Noten oder Wohlbefinden; Abendnutzung bleibt unberührt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8388,
+      "name": "Handyverbot oder bildschirmfreie Klassen in der Grundschule (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Ablenkung möglich, doch Effekte zeigten sich vor allem an weiterführenden Schulen mit hohem Smartphone-Besitz; in der Grundschule ist die Nutzung ohnehin geringer. Studien zu Handyregeln uneinheitlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8389,
+      "name": "Medienbildung in Schule und außerschulischen Angeboten stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schulische Programme senkten problematische Nutzung deutlich, Bildschirmzeit kaum (Metaanalyse, 34 Studien, Verzerrung möglich). Allgemeine Medienbildung setzt nur indirekt an der Begleitung durch Eltern an.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8390,
+      "name": "Schulische Prävention von Mediensucht und Mediengefahren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gezielte schulische Prävention senkte problematische Nutzung deutlich (d = 1,47), Bildschirmzeit kaum (d = 0,15); Publikationsverzerrung möglich. Setzt bei den Kindern an, nicht direkt bei der Begleitung durch Eltern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8391,
+      "name": "Fachkräfte in Medienbildung qualifizieren, Zentren und Teams ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Geschulte Fachkräfte und Zentren können Medienbildung tragen; die Wirkung auf die Mediennutzung der Kinder läuft nur über den Unterricht und ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8392,
+      "name": "Eltern durch Beratung und Bildungsangebote in der Medienerziehung unterstützen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt bei den Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Belastbare Daten zu reinen Elternangeboten fehlen, und es erreichen vor allem interessierte Eltern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8393,
+      "name": "Eltern mit Informationen zur Mediennutzung versorgen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Leicht und schnell umsetzbar; Information erreicht aber nur, wer sie nutzt, und die Wirkung auf die Begleitung durch Eltern ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8394,
+      "name": "Digital Services Act umsetzen mit Schwerpunkt Jugendschutz (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Der DSA verpflichtet Plattformen zu Risikoprüfungen auch zu Minderjährigen; die Wirkung auf Likes- und Belohnungsdesign ist bisher kaum untersucht. Umsetzung durch den Bund ist möglich.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8395,
+      "name": "Medienkompetenz in Schulen und Lehrplänen stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Schulische Medienbildung wirkt gegen problematische Nutzung, aber kaum auf die Bildschirmzeit; Schulen und Lehrpläne sind Ländersache, der Bund kann nur Anreize setzen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8396,
+          "instrument": 8394,
+          "beschreibung": "Kinder- und Jugendschutz im Netz einschließlich sozialer Medien gewährleisten; bei der Umsetzung des Digital Services Act Jugend- und Medienschutz betonen.",
+          "ursachen_ids": [3301],
+          "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. Das gilt auch für Soziale Medien als wichtige Plattformen des Austauschs und der Information. Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8397,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz wird an allen Schulen verbindlicher Bestandteil des Unterrichts; Schülerinnen und Schüler lernen kritischen und verantwortungsvollen Umgang mit Medien.",
+          "ursachen_ids": [3303],
+          "zitat": "Medienbildung ist Demokratiebildung. Deshalb wollen wir Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=63",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8398,
+          "instrument": 8391,
+          "beschreibung": "Lehrkräfte werden im Bereich Digitalisierung und Medienbildung verbindlich und systematisch qualifiziert.",
+          "ursachen_ids": [3303],
+          "zitat": "Deshalb stärken wir die Qualifizierung von Lehrkräften im Bereich Digitalisierung und Medienbildung verbindlich und systematisch.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=60",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8399,
+          "instrument": 8387,
+          "beschreibung": "Landeseinheitliches Verbot privater Smartphone-Nutzung im Unterricht und auf dem Schulgelände bis Klasse zehn.",
+          "ursachen_ids": [3302],
+          "zitat": "Für die private Smartphone-Nutzung werden wir eine landeseinheitliche Regelung einführen, nach der die private Nutzung von Smartphones im Unterricht und auf dem gesamten Schulgelände bis Klasse zehn untersagt ist.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=53",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8400,
+          "instrument": 8390,
+          "beschreibung": "Altersgerechte Mediensensibilisierung über die Gefahren digitaler und sozialer Medien in Kindergarten und Grundschule.",
+          "ursachen_ids": [3303],
+          "zitat": "Um Kinder frühzeitig vor den Gefahren digitaler und sozialer Medien zu schützen, sorgen wir für eine altersgerechte Mediensensibilisierung bereits in Kindergarten und Grundschule.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=53",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8401,
+          "instrument": 8389,
+          "beschreibung": "Medienpädagogische Angebote ausbauen und mit Schulen, Landesmedienanstalt und Trägern neue Bildungsformate für alle Generationen entwickeln.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir werden medienpädagogische Angebote ausbauen und mit Schulen, der Landesmedienanstalt und zivilgesellschaftlichen Trägern neue (Weiter-)Bildungsformate für alle Generationen entwickeln.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=36",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8402,
+          "instrument": 8389,
+          "beschreibung": "Medienbildung in der Kita altersgerecht und mit pädagogischer Begleitung einführen.",
+          "ursachen_ids": [3303],
+          "zitat": "Medienbildung soll altersgerecht eingeführt werden, mit […] pädagogischer Begleitung für eine individuelle Lernerfahrung und nicht zur bloßen Beschäftigung.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=49",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8403,
+          "instrument": 8389,
+          "beschreibung": "In Schulen Projekte und Unterrichtseinheiten, die die kritische Reflexionsfähigkeit im Umgang mit digitalen Medien stärken.",
+          "ursachen_ids": [3303],
+          "zitat": "Durch gezielte Projekte, wie die „Lernwelt Sachsen-Anhalt“ und praxisnahe Unterrichtseinheiten werden Fähigkeiten entwickelt, die Kinder und Jugendliche nicht nur auf die Anforderungen der Arbeitswelt vorbereiten, sondern auch ihre kritische Reflexionsfähigkeit im Umgang mit digitalen Medien stärken.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=22",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8404,
+          "beschreibung": "Jugendschutz im Netz stärken, unter anderem durch wirksame Möglichkeiten zur Altersverifikation.",
+          "ursachen_ids": [3301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verifikation kann Altersgrenzen durchsetzen, ersetzt aber keine Designregeln; technische Umsetzung hängt an EU-Lösungen und Datenschutz.",
+          "zitat": "Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen, während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8405,
+          "beschreibung": "Plattformen müssen ihre Algorithmen zur Inhaltsdarstellung offenlegen und auf manipulative Praktiken prüfen lassen.",
+          "ursachen_ids": [3301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Transparenz und Prüfung machen Empfehlungsdesign sichtbar, verbieten es aber nicht; Wirkung auf Kinder kaum untersucht. Plattformregeln setzt weitgehend die EU (DSA).",
+          "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=50",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8406,
+          "instrument": 8388,
+          "beschreibung": "Handyverbot an allen Grundschulen durchsetzen, begründet mit Gesundheits- und Kinderschutz.",
+          "ursachen_ids": [3302],
+          "zitat": "Für besseren Gesundheits- und Kinderschutz setzen wir ein Handyverbot an allen Grundschulen durch.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8407,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz, kritischen Umgang mit sozialen Medien und digitale Verantwortung fest in der schulischen Bildung verankern.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir stärken Medienkompetenz, kritischen Umgang mit sozialen Medien, KI-Kompetenzen und digitale Verantwortung als festen Bestandteil schulischer Bildung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8408,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz altersgerecht in allen Schularten stärken; Lehrkräfte durch Fortbildung und praxisnahe Materialien unterstützen.",
+          "ursachen_ids": [3303],
+          "zitat": "Medienkompetenz und der verantwortungsvolle Umgang mit Künstlicher Intelligenz sollen altersgerecht in allen Schularten gestärkt werden. Lehrkräfte unterstützen wir durch Fortbildung und praxisnahe Materialien.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=67",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8409,
+          "instrument": 8389,
+          "beschreibung": "Lehrkräfte, Erziehende und Bildungsstätten stärken, damit Medienkompetenz von Beginn an vermittelt wird; außerschulische Angebote für alle Altersgruppen ergänzen.",
+          "ursachen_ids": [3303],
+          "zitat": "Darum werden wir insbesondere die Lehrkräfte, Erziehenden und Bildungsstätten stärken, um Medienkompetenz von Beginn an in allen Bildungsangeboten zu implementieren und zu vermitteln. Außerschulische Medienkompetenzangebote ergänzen dies und sollen alle Altersgruppen ansprechen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=44",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8410,
+          "instrument": 8389,
+          "beschreibung": "Medienbildung wird in allen Schulfächern fest verankert und weiter ausgebaut.",
+          "ursachen_ids": [3303],
+          "zitat": "Digitale Lernmittel, Medienbildung und barrierefreie Systeme werden weiter ausgebaut. Medienbildung erhält in allen Fächern einen festen Stellenwert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8411,
+          "beschreibung": "Manipulative Algorithmen sozialer Plattformen strenger regulieren; Algorithmen, die Kinder gezielt süchtig machen, nicht dulden.",
+          "ursachen_ids": [3301],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Regeln gegen suchtfördernde Algorithmen setzen direkt am Belohnungsdesign an, bleiben aber unbestimmt; Wirkung kaum untersucht, nationale Alleingänge begrenzt das EU-Recht.",
+          "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=85",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8412,
+          "beschreibung": "Eltern mit sicheren Voreinstellungen für Dienste und Geräte sowie Datenschutzregeln für Kinder und Jugendliche unterstützen.",
+          "ursachen_ids": [3303, 3301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sichere Voreinstellungen entlasten Eltern und begrenzen riskante Funktionen von Beginn an; Wirkung auf die Nutzungsdauer kaum untersucht, Geräte- und Dienstregeln sind EU-geprägt.",
+          "zitat": "Eltern unterstützen wir mit Voreinstellungen für sichere Dienste und Geräte (kids-safety-by-default) sowie Datenschutzregelungen, die die Privatsphäre von Kindern und Jugendlichen schützen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=85",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8413,
+          "instrument": 8395,
+          "beschreibung": "In den Schulen digitale Fähigkeiten und Medienkompetenz aufbauen.",
+          "ursachen_ids": [3303],
+          "zitat": "Außerdem setzen wir auf den Aufbau von digitalen Fähigkeiten, Medienkompetenz und auf den verantwortlichen Einsatz von Künstlicher Intelligenz (KI).",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=77",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8414,
+          "instrument": 8389,
+          "beschreibung": "Medienbildung als verbindlichen Teil des Unterrichts ab der 1. Klasse in allen Schulformen verankern.",
+          "ursachen_ids": [3303],
+          "zitat": "Um Jugendliche gezielt auf die digitalisierte Welt vorzubereiten, fordern wir die curriculare Integration der Kompetenzen der Informatik und Medienbildung verpflichtend ab der 1. Klasse in allen Schulformen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=190",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8415,
+          "instrument": 8391,
+          "beschreibung": "Medienkompetenzzentren ausbauen und an jeder Schule Medienteams einrichten.",
+          "ursachen_ids": [3303],
+          "zitat": "Für eine moderne, resiliente digitale Bildung bauen wir die Medienkompetenzzentren aus und etablieren Medienteams an jeder Schule.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=190",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8416,
+          "beschreibung": "Einschränkungen der privaten Handynutzung unterstützen, wenn die Schule sie für die beste Lösung hält.",
+          "ursachen_ids": [3302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Unterstützt nur freiwillige Entscheidungen der Schulen; ohne Verpflichtung geringere Wirkung als ein verbindliches Verbot. Studien zu Handyregeln uneinheitlich.",
+          "zitat": "Wir teilen die Sorgen über den steigenden Medienkonsum von Kindern und Jugendlichen. Deshalb unterstützen wir Einschränkungen der privaten Handynutzung, wo diese von der jeweiligen Schule für die beste Lösung gehalten werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=190",
+          "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8417,
+          "instrument": 8390,
+          "beschreibung": "Medienkompetenz-Angebote für Jugendliche und Erwachsene fördern, um Sucht- und Extremismusgefahren durch Games vorzubeugen.",
+          "ursachen_ids": [3303],
+          "zitat": "Zur gezielten Prävention von Sucht- und Extremismusgefahren durch Games fördern wir Medienkompetenz-Angebote für Jugendliche und Erwachsene.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=103",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8418,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz, auch zu Desinformation und digitaler Mündigkeit, verbindlich in Lehrerausbildung und Lehrplänen verankern.",
+          "ursachen_ids": [3303],
+          "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=44",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8419,
+          "instrument": 8389,
+          "beschreibung": "Bibliotheken als Orte für Kinder und Jugendliche stärken und ihre Angebote zur Medienkompetenz ausweiten.",
+          "ursachen_ids": [3303],
+          "zitat": "Um unsere Kultureinrichtungen zu erhalten, werden wir: […] Bibliotheken als Kultur- und Begegnungsorte insbesondere für Kinder und Jugendliche stärken und länger öffnen. Wir unterstützen Bibliotheken überall dabei, ihr Dienstleistungsangebot um interaktive und soziokulturelle Angebote zur Förderung der Lese- und Medienkompetenz sowie der kulturellen Bildung zu erweitern.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=98",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8420,
+          "beschreibung": "Pflichtfach Informatik und Medienbildung von Klasse 5 bis 10/11 an allen allgemeinbildenden Schulen, u. a. kritischer Umgang mit Inhalten in sozialen Medien.",
+          "ursachen_ids": [3303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Pflichtfach verankert Medienbildung dauerhaft; Wirkung auf das Nutzungsverhalten wie bei Schulprogrammen gemischt, Lehrkräfte für ein neues Fach fehlen absehbar.",
+          "zitat": "Dafür wollen wir nach dem Vorbild Baden-Württembergs ein Unterrichtsfach „Informatik und Medienbildung“ schaffen, das verpflichtend von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen durchgängig angeboten werden soll.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "beleg_studie_url": "https://europepmc.org/article/MED/40549948",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8421,
+          "instrument": 8389,
+          "beschreibung": "Digital- und Medienkompetenz fest in Bildung verankern, auch in Familienbildungsstätten, Jugendhilfe und Erwachsenenbildung.",
+          "ursachen_ids": [3303],
+          "zitat": "Deshalb wollen wir Digital- und Medienkompetenz zum festen Bestandteil von Bildung machen: in Schulen, in Familienbildungsstätten, in der Jugendhilfe, aber auch in der Erwachsenenbildung",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=53",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8422,
+          "instrument": 8389,
+          "beschreibung": "Computer- und Videospiele als Thema an weiterführenden Schulen fächerübergreifend stärker behandeln und analysieren.",
+          "ursachen_ids": [3303],
+          "zitat": "Deshalb setzen wir uns dafür ein, die Präsenz sowie Analysen des Mediums Computer- und Videospiel an den weiterführenden Schulen fächerübergreifend auszubauen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=85",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8423,
+          "instrument": 8395,
+          "beschreibung": "Lehrpläne modernisieren und dabei mehr Raum für Medienkompetenz schaffen.",
+          "ursachen_ids": [3303],
+          "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8424,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz im Schulunterricht stärken, dazu Lehrkräfte und Schulsozialarbeitende aus- und weiterbilden.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir wollen die Medienkompetenz bereits bei jungen Menschen im Unterricht an den Schulen stärken. Dafür wollen wir eine bessere Einbindung des Themas in die Ausbildung von Lehrkräften und Schulsozialarbeitern erreichen sowie ständige Weiterbildungen ermöglichen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=16",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8425,
+          "instrument": 8392,
+          "beschreibung": "Elternarbeit zur Aufklärung der Kinder über Medienkonsum und Gefahren im Netz stärken.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir wollen die Elternarbeit bezüglich der Aufklärung ihrer Kinder über Medienkonsum sowie Gefahren im Netz stärken.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=17",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8426,
+          "instrument": 8393,
+          "beschreibung": "Eltern und Fachkräfte mit mehr Informationen zur Mediennutzung von Kindern und Jugendlichen versorgen.",
+          "ursachen_ids": [3303],
+          "zitat": "Darüber hinaus müssen mehr Informationen zur Mediennutzung von Kindern und Jugendlichen für Eltern sowie Multiplikatorinnen und Multiplikatoren […] bereitgestellt werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=17",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8427,
+          "instrument": 8393,
+          "beschreibung": "Eltern durch verständliche, freiwillige, wissenschaftsbasierte Informationen zu Mediennutzung, Bildschirmzeiten und digitaler Sicherheit stärken.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir Freie Demokraten werden: […] Eltern in ihrer Erziehungsverantwortung stärken, indem wir auf verständliche, freiwillige und wissenschaftsbasierte Informationen zu Mediennutzung, Bildschirmzeiten und digitaler Sicherheit setzen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=84",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8428,
+          "instrument": 8389,
+          "beschreibung": "Medienbildung und kritischen, selbstbestimmten Umgang mit neuen Medien für alle Kinder und Jugendlichen als verbindlichen Lerninhalt festlegen.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir Freie Demokraten werden: […] für alle Kinder und Jugendlichen Medienbildung und den kritischen, selbstbestimmten Umgang mit neuen Medien als verbindlichen Lerninhalt definieren.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=98",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8429,
+          "instrument": 8392,
+          "beschreibung": "Angebote der Medienbildung weiter ausbauen und Eltern bei der digitalen Erziehung durch Unterstützungsangebote helfen.",
+          "ursachen_ids": [3303],
+          "zitat": "Wer Kinder und Jugendliche auf die digitale Welt vorbereiten will, braucht keine Verbote, sondern gute Unterstützungsangebote auch für Eltern. […] Angebote der Medienbildung bauen wir stetig weiter aus.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=26",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 50) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-06",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8430,
+          "instrument": 8388,
+          "beschreibung": "Grundschulen bildschirmfrei halten und dort Smartphones verbieten; an weiterführenden Schulen das Mitführen von Smartphones restriktiver handhaben.",
+          "ursachen_ids": [3302],
+          "zitat": "Die AfD will die Grundschule bildschirmfrei halten, dazu gehört auch ein Verbot der Verwendung von Smartphones. Auch an den weiterführenden Schulen werden wir das Mitführen von Smartphones restriktiver handhaben, damit die Aufmerksamkeit im Unterricht und die sozial-emotionale Entwicklung der Schüler nicht beeinträchtigt werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=30",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8431,
+          "instrument": 8387,
+          "beschreibung": "Private Handynutzung im Schulalltag bis zur 7. Klasse per Verordnung unterbinden, Ausnahmen nur bei Notfällen oder nach Rücksprache mit der Lehrkraft.",
+          "ursachen_ids": [3302],
+          "zitat": "Die private Handynutzung im Schulalltag werden wir auf dem Verordnungswege bis einschließlich der 7. Klasse konsequent unterbinden, allenfalls bei Notfällen oder nach Rücksprache mit dem Lehrer soll das Handy genutzt werden dürfen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=31",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8432,
+          "instrument": 8387,
+          "beschreibung": "Smartphone-Nutzung an Schulen bis einschließlich Klasse 10 untersagen.",
+          "ursachen_ids": [3302],
+          "zitat": "Außerdem werden wir entsprechend den Empfehlungen der Leopoldina die Nutzung von Smartphones bis einschließlich Klasse 10 untersagen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=79",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8433,
+          "beschreibung": "Medien- und Datenschutzkompetenz von Kindern und Jugendlichen möglichst früh fördern.",
+          "ursachen_ids": [3303],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Frühe Förderung ist sinnvoll, nennt aber keinen Weg; Schulen sind Ländersache, der Bund kann mit Programmen und Geld beitragen. Wirkung auf die Bildschirmzeit gering.",
+          "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "beleg_studie_url": "https://europepmc.org/article/MED/40549948",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8434,
+          "instrument": 8394,
+          "beschreibung": "EU-Gesetz über digitale Dienste zügig in nationales Recht überführen.",
+          "ursachen_ids": [3301],
+          "zitat": "Die EU-Gesetze über Künstliche Intelligenz (AI Act) und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8435,
+          "instrument": 8390,
+          "beschreibung": "Medienbildung inklusive Mediensuchtprävention ab der Grundschule verbindlich in Rahmenlehrplänen und schulinternen Curricula verankern.",
+          "ursachen_ids": [3303],
+          "zitat": "Medienbildung inklusive […] Mediensuchtprävention müssen bereits ab der Grundschule verbindlich in den Rahmenlehrplänen und schulinternen Curricula verankert werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=165",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8436,
+          "instrument": 8392,
+          "beschreibung": "Schulgemeinschaften in Medienbildung schulen und Ressourcen für Elternarbeit ausbauen, um Eltern früh einzubeziehen.",
+          "ursachen_ids": [3303],
+          "zitat": "Die Schulgemeinschaften […] müssen entsprechend geschult und die Ressourcen für Elternarbeit ausgebaut werden, um auch sie frühzeitig einzubeziehen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=165",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8437,
+          "instrument": 8392,
+          "beschreibung": "Medienkompetenzzentren in allen Bezirken gut ausstatten, kostenfreie begleitete Angebote und regelmäßige Schulungen für Fachkräfte schaffen, für junge Menschen, Eltern und Fachkräfte.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir wollen gut ausgestattete Medienkompetenzzentren in allen Bezirken, kostenfreie, pädagogisch begleitete Angebote und regelmäßige Schulungen für pädagogische Fachkräfte, damit junge Menschen, Eltern und Fachkräfte souverän und kritisch mit digitalen Medien umgehen können.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=178",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8438,
+          "instrument": 8389,
+          "beschreibung": "Haushaltsmittel für Medienkompetenzbildung durch Freie Träger bereitstellen, entwickelt mit jungen Menschen für junge Menschen.",
+          "ursachen_ids": [3303],
+          "zitat": "[…] Medienkompetenzbildung, die mit jungen Menschen für junge Menschen entwickelt wird. Dies ist nicht nur eine Aufgabe der mabb, es ist eine klassische Aufgabe Freier Träger in Berlin. Wir werden uns im Rahmen der Haushaltsverhandlungen dafür einsetzen, dass Mittel bereitgestellt werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=247",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8439,
+          "instrument": 8391,
+          "beschreibung": "Verbindliche Fort- und Weiterbildungsangebote für Schulbeschäftigte zu Medienbildung.",
+          "ursachen_ids": [3303],
+          "zitat": "Die Themenfelder Inklusion, Antidiskriminierung, Demokratiebildung und Medienbildung wollen wir durch verbindliche Fort- und Weiterbildungsangebote stärken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=229",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8440,
+          "instrument": 8387,
+          "beschreibung": "Handyfreier Schultag bis Jahrgangsstufe 9 als Grundsatz, solange die Schulgemeinschaft keine andere Regelung beschließt.",
+          "ursachen_ids": [3302],
+          "zitat": "Solange keine andere, von der Schulgemeinschaft beschlossene Regelung vorliegt, gilt für uns deshalb ein handyfreier Schultag bis einschließlich Jahrgangsstufe 9 als Grundsatz.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=167",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8441,
+          "instrument": 8389,
+          "beschreibung": "Medienbildung auf allen Ebenen ausbauen: in der Schule, außerschulisch und für Erwachsene.",
+          "ursachen_ids": [3303],
+          "zitat": "Medienbildung auf allen Ebenen ausbauen: schulisch, außerschulisch und für Erwachsene.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8442,
+          "instrument": 8391,
+          "beschreibung": "Das medienpädagogische Zentrum personell ausbauen, um Unterrichtsangebote zur Medienbildung zu stärken.",
+          "ursachen_ids": [3303],
+          "zitat": "Das medienpädagogische Zentrum personell ausbauen, um Unterrichtsangebote der Medienbildung zu stärken.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=5",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8443,
+          "instrument": 8389,
+          "beschreibung": "Landesprogramm zur Stärkung der Medienkompetenz und digitalen Bildung an Schulen.",
+          "ursachen_ids": [3303],
+          "zitat": "Mit einer Medienkompetenz-Offensive von 20 Millionen Euro stärken wir digitale Bildung an Schulen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=74",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8444,
+          "beschreibung": "Gesetz für soziale Medien nach australischem Vorbild, damit Kinder weniger in der virtuellen Welt verschwinden.",
+          "ursachen_ids": [3301],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Altersgrenze setzt direkt am Zugang zu Likes- und Belohnungssystemen an; Erfahrungen aus Australien sind sehr jung, Umgehung möglich. Nationale Regelung stößt an EU-Recht und Länder-Jugendmedienschutz.",
+          "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8445,
+          "beschreibung": "Handys und Tablets mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen, danach möglichst wenig im Unterricht einsetzen.",
+          "ursachen_ids": [3302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Ablenkung im Unterricht, Abendnutzung und Schlaf bleiben unberührt; Studien uneinheitlich. Schulrecht ist Ländersache, der Bund kann nur Anreize setzen.",
+          "zitat": "Handys und Tablets wollen wir mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen und auch danach möglichst wenig im Unterricht einsetzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8446,
+          "instrument": 8388,
+          "beschreibung": "Grundschulklassen ohne Bildschirme einrichten, um Aufmerksamkeit, Gedächtnis und Lesekompetenz zu fördern.",
+          "ursachen_ids": [3302],
+          "zitat": "In Grundschulen sollen sogenannte „Detox-Klassen“ ohne Bildschirme eingerichtet werden, um Aufmerksamkeit, Gedächtnisleistung und Lesekompetenz zu fördern.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=16",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8447,
+          "beschreibung": "Smartphones im Unterricht grundsätzlich nicht nutzen und vor dem Unterricht wegschließen.",
+          "ursachen_ids": [3302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Wegschließen verringert Ablenkung in den Stunden, nicht aber die Nutzung in Pausen oder abends. Studien zu Handyregeln uneinheitlich.",
+          "zitat": "Smartphones sollen während des Unterrichts grundsätzlich nicht genutzt werden und sind vor dem Unterricht wegzuschließen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=16",
+          "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8448,
+          "instrument": 8389,
+          "beschreibung": "Verbindlichen digitalen Führerschein mit Nachweis von Medien-, Datenschutz- und Informationskenntnissen bis Ende Klasse 10 einführen.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir fordern, dass alle Schülerinnen und Schüler am Ende der 10. Klasse einen verbindlichen digitalen Führerschein erwerben, der Kenntnisse im Umgang mit Medien, Datenschutz und Informationsbewertung nachweist.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=16",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8449,
+          "instrument": 8392,
+          "beschreibung": "Familienbildungs- und Beratungsangebote ausbauen, die Eltern in der Medienerziehung stärken und Orientierung im digitalen Alltag geben.",
+          "ursachen_ids": [3303],
+          "zitat": "Den Ausbau von Familienbildungs- und Beratungsangeboten, die Eltern auch in Fragen der Medienerziehung stärken und Orientierung im digitalen Alltag geben.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=12",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8450,
+          "instrument": 8389,
+          "beschreibung": "Präventionsangebote für Kinder und Jugendliche ausbauen, die auch Medienkompetenz stärken.",
+          "ursachen_ids": [3303],
+          "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=61",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8451,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz an weiterführenden Schulen vermitteln, in der Grundschule ohne digitale Endgeräte lernen.",
+          "ursachen_ids": [3303],
+          "zitat": "Altersgerechtes Lernen ohne digitale Endgeräte in der Grundschule, Vermittlung von Medienkompetenz an weiterführenden Schulen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=47",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8452,
+          "instrument": 8387,
+          "beschreibung": "Verbindliches Smartphone-Verbot im Schulalltag, um Ablenkung und digitale Abhängigkeiten zu verringern.",
+          "ursachen_ids": [3302],
+          "zitat": "Außerdem setzen wir uns für ein verbindliches Smartphone-Verbot im Schulalltag ein, um Ablenkung, Leistungsabfall, soziale Konflikte und digitale Abhängigkeiten zu reduzieren.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=45",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}

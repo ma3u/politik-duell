@@ -1,0 +1,37 @@
+{
+  "id": 20,
+  "name": "Freizeitangebote und Treffpunkte für Jugendliche",
+  "beschreibung": "Jugendliche finden vor Ort keine passenden Freizeitangebote oder Treffpunkte, können Aktivitäten nicht bezahlen oder verlieren Aufenthaltsorte durch Konflikte mit Anwohnenden und anderen Nutzenden.",
+  "ziel": "Jugendliche können passende Freizeitaktivitäten wahrnehmen und verlässlich Orte nutzen, an denen sie sich mit anderen treffen und ihre Interessen ausleben können.",
+  "schlagwoerter": ["jugendtreff", "jugendzentrum", "freizeitangebote", "treffpunkte", "vereinsbeitrag", "nirgendwo hingehen", "weggeschickt", "jugendarbeit"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2001,
+      "beschreibung": "Junge Menschen wünschen mehr jugendgerechte Treffpunkte im öffentlichen Raum und erschwingliche Angebote (Befragung von über 2.400 Jugendlichen in Halle, 2024)",
+      "alltag": "Bei uns gibt es keinen Ort, an dem wir uns als Jugendliche treffen können",
+      "quelle_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1467-einblicke-in-die-lebenswelt-junger-menschen-in-halle-saale.html",
+      "ebene": "land",
+      "schlagwoerter": ["kein jugendtreff", "nichts los", "keine freizeitangebote", "kein treffpunkt", "jugendraum"]
+    },
+    {
+      "id": 2002,
+      "beschreibung": "Geldmangel hindert junge Menschen an sozialer Teilhabe: In Interviews mit 54 Kindern und Jugendlichen (2023) beschrieben Betroffene finanzielle Probleme als Hindernis",
+      "alltag": "Ich kann Hobbys und Ausflüge nicht bezahlen, die andere Jugendliche machen",
+      "quelle_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/wie-von-armut-betroffene-kinder-und-jugendliche-ihre-situation-wahrnehmen.html",
+      "ebene": "bund",
+      "schlagwoerter": ["freizeit zu teuer", "vereinsbeitrag", "eintritt", "kein geld fuer hobbys", "musikunterricht"]
+    },
+    {
+      "id": 2003,
+      "beschreibung": "Nehmen Konflikte mit Anwohnenden und anderen Nutzenden überhand, geben Jugendliche Treffpunkte auf (Fallstudien in zwei Städten, veröffentlicht 2016)",
+      "alltag": "Wir werden von unserem Treffpunkt vertrieben, weil sich Anwohner über Lärm beschweren",
+      "quelle_url": "https://kluedo.ub.rptu.de/frontdoor/index/index/docId/4494",
+      "ebene": "land",
+      "schlagwoerter": ["weggeschickt", "vertrieben", "laerm", "anwohner beschweren sich", "aufenthaltsverbot", "nirgendwo treffen"]
+    }
+  ]
+}

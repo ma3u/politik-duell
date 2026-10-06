@@ -1,0 +1,32 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Gesetz für soziale Medien nach australischem Vorbild, damit Kinder weniger in der virtuellen Welt verschwinden.",
+      "ursachen_ids": [3301],
+      "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Handys und Tablets mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen, danach möglichst wenig im Unterricht einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3302],
+      "zitat": "Handys und Tablets wollen wir mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen und auch danach möglichst wenig im Unterricht einsetzen.",
+      "seite": 24
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3303, "seiten": [24, 25], "grund": "Kapitel Bildung gelesen; keine Zusage zu Medienbildung, Beratung oder Unterstützung für Eltern." }
+  ]
+}
+
+Protokoll
+Gelesen: Präambel (S. 2–3), Bildung (S. 23–25), Medien und Kultur (S. 39–40, Textstelle zu Medien/Kultur), Fundstelle S. 39 (Digital Services Act).
+Grenzfall: Handyverbot im Klassenzimmer (S. 24) betrifft Unterricht, nicht ausdrücklich Nutzungsdauer oder Schlaf; R1 lässt offen, ob es zu 3302 zählt, daher ursachen_offen.
+Nicht erfasst:
+- S. 24: „Statt krankmachender Social-Media-Algorithmen brauchen Kinder mehr Bewegung, Spaß und Freunde auch außerhalb der Schule.“ – Feststellung, keine Handlungszusage.
+- S. 24: Zuschuss für das erste Jahr im Sportverein – Freizeitangebot, setzt an keiner der Ursachen an.
+- S. 39–40: Digital Services Act und Meinungsfreiheit – Kritik an Löschregeln für Erwachsene, kein Jugendmedienschutz.
+- S. 39–40: Medien und Kultur (ÖRR-Reform, Rundfunkbeitrag) – nicht Thema.
+Ursachen 3302: keine Zusage zu Nutzungszeit oder Schlaf; Seiten ohne Text: nur Titelseite (S. 1), ohne Bedeutung.

@@ -1,0 +1,1729 @@
+{
+  "id": 27,
+  "name": "Arbeitsbelastung im Gesundheitswesen",
+  "beschreibung": "Beschäftigte in Pflege, Medizin, Kliniken und Rettungsdienst erleben Zeitdruck, belastende Dienste, knappe Personalbesetzung, aufwendige Dokumentation und unzureichende Anerkennung ihrer Arbeit.",
+  "ziel": "Beschäftigte im Gesundheitswesen können ihre Arbeit dauerhaft gesund, mit ausreichender Erholung, verlässlichen Arbeitszeiten und angemessener Entlohnung ausüben.",
+  "schlagwoerter": ["gesundheitswesen", "pflegepersonal", "klinikpersonal", "rettungsdienst", "arbeitsbelastung", "personalmangel", "schichtdienst", "bezahlung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2701,
+      "beschreibung": "Unzureichende Personalbesetzung und zu wenig Zeit je Patient hängen mit moralischem Stress zusammen (Befragung von 976 Pflegenden in der ambulanten Pflege, 2022)",
+      "alltag": "Wir sind zu wenige und haben keine Zeit für die Patienten",
+      "quelle_url": "https://europepmc.org/articles/PMC10709999",
+      "ebene": "bund",
+      "schlagwoerter": ["unterbesetzung", "personalbemessung", "zeitdruck", "zu wenig personal"]
+    },
+    {
+      "id": 2702,
+      "beschreibung": "Wer selten oder nie Pausen machen kann, ist stärker belastet; auch ein Schichtwechsel gegen den eigenen Willen belastet (Befragung von 873 Beschäftigten, 2021)",
+      "alltag": "Ich habe kaum Pausen und muss ständig für Kollegen einspringen",
+      "quelle_url": "https://europepmc.org/articles/PMC10195190",
+      "ebene": "bund",
+      "schlagwoerter": ["schichtdienst", "dienstplan", "einspringen", "pausen", "ueberstunden", "nachtdienst"]
+    },
+    {
+      "id": 2703,
+      "beschreibung": "Dokumentation bindet viel Zeit: In einer deutschen Pflegestudie (2024/25) nahm sie anfangs rund 54 Minuten je Frühdienst in Anspruch",
+      "alltag": "Ich verbringe einen großen Teil des Dienstes mit Dokumentation statt mit Patienten",
+      "quelle_url": "https://europepmc.org/articles/PMC13061367",
+      "ebene": "bund",
+      "schlagwoerter": ["buerokratie", "dokumentation", "papierkram", "computer"]
+    },
+    {
+      "id": 2704,
+      "beschreibung": "Pflegende erbringen mehr Aufwand, als sie Belohnung erfahren (ERI-Ratio 1,7; Befragung 2021 von 2.689 Pflegenden); 38,3 % hatten regelmäßig Ausstiegsgedanken",
+      "alltag": "Bezahlung und Anerkennung stehen in keinem Verhältnis zu meiner Arbeit",
+      "quelle_url": "https://europepmc.org/articles/PMC11248340",
+      "ebene": "bund",
+      "schlagwoerter": ["bezahlung", "gehalt", "wertschaetzung", "berufsausstieg", "kuendigen"]
+    },
+    {
+      "id": 2705,
+      "beschreibung": "Hohe emotionale Anforderungen, wenig Einfluss auf die Arbeit und fehlende soziale Unterstützung gehen mit stärkerem moralischem Stress einher (Befragung 2022, 976 Pflegende)",
+      "alltag": "Ich habe wenig Mitsprache, und niemand fängt mich auf, wenn die Arbeit mich belastet",
+      "quelle_url": "https://europepmc.org/articles/PMC10709999",
+      "ebene": "land",
+      "schlagwoerter": ["mitsprache", "vorgesetzte", "team", "erschoepfung", "psychischer druck"]
+    },
+    {
+      "id": 2706,
+      "beschreibung": "Fehlender Zugang zu Dolmetschenden bei Sprachbarrieren geht mit höherer Arbeitsbelastung einher (Befragung 2018 von 800 Beschäftigten in 22 Kliniken)",
+      "alltag": "Die Verständigung mit Patienten klappt oft nicht, und es gibt keine Sprachmittlung",
+      "quelle_url": "https://europepmc.org/articles/PMC9812741",
+      "ebene": "land",
+      "schlagwoerter": ["sprachbarrieren", "verstaendigung", "dolmetscher", "kommunikation"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8004,
+      "name": "Vergütung und Dienstzeiten im praktischen Jahr (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verlässliche Vergütung und Dienstzeiten verbessern die Bedingungen angehender Ärztinnen und Ärzte. Umfang, Finanzierung und tatsächliche Wirkung auf die Belastung hängen von der konkreten Regelung ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8005,
+      "name": "Digitale Zugangsrechte für betriebliche Mitbestimmung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Digitale Zugänge können Beteiligung erleichtern, ändern aber weder die Reichweite der Mitbestimmung noch unmittelbar Personal, Arbeitszeit oder Unterstützung.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8006,
+      "name": "Arbeitsbedingungen und Mitsprache im Gesundheitswesen verbessern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verlässlichere Arbeitszeiten und mehr Beteiligung setzen an Erholung und Einflussmöglichkeiten an. Die Zusage bleibt breit und lässt Umfang, Umsetzung und Finanzierung offen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8007,
+      "name": "Berufsbezogene Sprachförderung für Gesundheitsbeschäftigte (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Berufsbezogene Sprachförderung kann Verständigungsprobleme im Arbeitsalltag mindern. Für ihre direkte Wirkung auf die Belastung von Beschäftigten und die nötigen Kapazitäten ist die Evidenz begrenzt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8008,
+      "name": "Mitentscheidung bei Investitions- und Standortfragen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbindliche Beteiligung kann den Einfluss auf Arbeitsbedingungen und Veränderungsprozesse erhöhen. Ohne nähere Zuständigkeiten und Durchsetzungsrechte bleibt die erwartbare Wirkung unsicher.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8009,
+      "name": "Pflegepersonal gewinnen und zurückgewinnen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche Pflegekräfte können knappe Besetzung und Zeitdruck mindern. Anwerbung und Rückkehr sind jedoch nicht automatisch zusätzliche verfügbare Vollzeitkräfte und erfordern Zeit sowie geeignete Arbeitsbedingungen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8010,
+      "name": "Gesetzliche Personalbemessung im Gesundheitswesen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Höhere und bedarfsgerechte Besetzung kann Arbeitslast senken; Studien zu Personalstärke und Ergebnissen stützen den Ansatz, zeigen aber auch Kosten-, Mess- und Umsetzungsprobleme sowie weniger klare Befunde für andere Berufsgruppen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/35780608",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8011,
+      "name": "Gesundheitsfördernde Maßnahmen für Beschäftigte (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gesundheitsförderung kann Beschäftigte unterstützen, verändert aber nicht zwingend hohe emotionale Anforderungen, geringe Mitsprache oder fehlende soziale Unterstützung am Arbeitsplatz.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/37893584",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8012,
+      "name": "Tariftreue bei Bundesaufträgen und Subventionen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Tarifbindung kann Entlohnung und Arbeitsbedingungen bei erfassten Auftragnehmenden verbessern. Die Reichweite hängt von Vergabeumfang, Kontrollen und der tatsächlichen Tarifabdeckung ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8013,
+      "name": "Betriebliche Interessenvertretung unterstützen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Unterstützung und Schutz von Interessenvertretungen können Mitsprache und soziale Unterstützung fördern. Die Wirkungsforschung zur konkreten Entlastung im Gesundheitswesen ist begrenzt; private Arbeitsrechtsregeln liegen zudem teilweise beim Bund.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8014,
+      "name": "Karriere- und Entwicklungspfade in der Pflege (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Durchlässige Laufbahnen und neue Rollen können berufliche Anerkennung und Entwicklungsperspektiven verbessern. Sie brauchen Ausbildungsplätze, klare Befugnisse und passende Finanzierung und ersetzen keine ausreichende Besetzung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8015,
+      "name": "Dokumentations- und Nachweispflichten vereinfachen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Weniger unnötige Dokumentation kann unmittelbar Arbeitszeit freisetzen. Forschung misst die Belastung uneinheitlich und untersucht die Wirkung konkreter Vereinfachungen bislang nur begrenzt; notwendige Qualitäts- und Sicherheitsnachweise bleiben erforderlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/33434273",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8016,
+      "name": "Betriebsratsgründungen und Wahlen erleichtern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schutz von Initiierenden und leichtere Wahlen können betriebliche Mitsprache ermöglichen. Ob daraus spürbar mehr Einfluss auf Arbeitsbelastung folgt, hängt von tatsächlicher Gründung und Durchsetzung ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8017,
+      "name": "Beschäftigte in Krankenhausgremien beteiligen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mitwirkung in Planungs- und Leitungsgremien erhöht die Möglichkeit, Arbeitsbedingungen zu beeinflussen. Die Wirkung ist unklar, solange Aufgaben, Stimmrechte und Umsetzung der Beschlüsse nicht feststehen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8018,
+      "name": "Berufliche Selbstvertretung der Pflege durch eine Pflegekammer (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine Kammer kann berufliche Interessen und Selbstverwaltung stärken, wirkt aber nur mittelbar auf tägliche Arbeitslast, Dienstpläne oder Unterstützung am Arbeitsplatz.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8019,
+      "name": "Tarifbindung durch tarifrechtliche Erleichterungen fördern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erleichterte Tarifbindung und Allgemeinverbindlichkeit können die Reichweite ausgehandelter Entlohnung verbessern. Der Effekt auf die Belastung hängt von den vereinbarten Inhalten und der tatsächlichen Abdeckung ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8020,
+      "name": "Professionelle Sprachmittlung im Gesundheitswesen finanzieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Reviews zeigen bessere Kommunikation und Versorgungsqualität mit professioneller Sprachmittlung; eine direkte Entlastung der Beschäftigten ist weniger gut untersucht. Verfügbarkeit und Finanzierung bestimmen die Wirkung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/17362215",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8021,
+      "name": "Behinderung betrieblicher Mitbestimmung sanktionieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Wirksame Sanktionen können Mitsprache schützen und abschrecken. Die Schaffung neuer Straftatbestände oder Sanktionen liegt nicht ohne Weiteres in Landeshand; die Maßnahme braucht bundesrechtliche Schritte.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8022,
+      "name": "Arbeitszeit verkürzen und Personalausgleich sicherstellen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Kürzere Arbeitszeiten können Erholung verbessern, wenn die Arbeitsmenge nicht auf weniger Zeit verdichtet wird. Voller Lohnausgleich und zusätzlicher Personalausgleich sind kosten- und personalintensiv.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8023,
+      "name": "Springerpools und planbare Einsätze im Gesundheitswesen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Pools können kurzfristige Ausfälle auffangen und planbare Einsatzzeiten fördern. Modellierungen zeigen, dass flexible Kräfte eine ausreichende Grundbesetzung nicht ersetzen und bei knapper Verfügbarkeit wenig verlässlich sind.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/33677251",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8024,
+      "name": "Schutz vor Gewalt und Belästigung im Gesundheitswesen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schutzmaßnahmen können emotionale Belastungen und Gefährdungen mindern. Reviews betonen, dass Schulungen Teil eines umfassenden Schutzkonzepts mit Unterstützung und passenden Bedingungen sein müssen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/33802868",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8025,
+      "name": "Entlastungstarifverträge refinanzieren und verbreitern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastungstarifverträge können Arbeitsbedingungen verbindlicher verbessern. Reichweite, Finanzierung und Durchsetzung sind offen; Tarifregeln allein schaffen keine zusätzlichen Arbeitskräfte.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8026,
+      "name": "Pflegepersonal ausbilden und besser bezahlen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr ausgebildetes Personal kann Besetzungsengpässe mindern, bessere Bezahlung kann die Anerkennung stärken. Ausbildung wirkt zeitverzögert und beide Zusagen lassen Umfang und Finanzierung offen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8027,
+      "name": "Praxisnahe und kostenfreie Ausbildung in Gesundheitsberufen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kostenfreie und praxisnahe Ausbildung kann Zugang und Nachwuchs fördern, führt aber erst nach Abschluss zu zusätzlicher Besetzung. Ausbildungs- und Finanzierungskapazitäten begrenzen das Tempo.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8028,
+      "name": "Gesetzlicher Jahresurlaub von sechs Wochen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Urlaub ermöglicht zusätzliche Erholungszeit, verändert aber nicht unmittelbar Pausen und Belastung zwischen den Urlaubstagen. Personalvertretung während Abwesenheiten muss mitgedacht werden.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8029,
+      "name": "Entlastungsvereinbarungen öffentlicher Arbeitgeber mit Gewerkschaften (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbindliche Schritte können Personalengpässe und Arbeitsbedingungen adressieren. Die Zusage nennt weder Mindeststandards noch Finanzierung oder Sanktionen bei Nichteinhaltung.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8030,
+      "name": "Niedrigschwellige Beratung für Gesundheitsbeschäftigte (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Beratung kann bei Stress und psychischer Belastung helfen, beseitigt aber keine Ursachen wie Unterbesetzung oder ungünstige Dienstpläne. Reviews finden Nutzen individueller Ansätze, bei heterogenen Studien.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/37893584",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8031,
+      "name": "Tarifverträge in Gesundheit und Pflege unterstützen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Tarifverträge können Bezahlung und Bedingungen regeln; die bloße Unterstützung enthält aber keine konkrete Vorgabe zu Lohn, Arbeitszeit oder Entlastung.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8032,
+      "name": "Sprachniveau C1 für medizinisches Fachpersonal verlangen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gute Sprachkenntnisse können Verständigungsprobleme begrenzen, ersetzen aber keine verfügbare Sprachmittlung in komplexen Fällen. Höhere Zugangshürden können zudem die Personalgewinnung erschweren.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/17362215",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8033,
+      "name": "Betriebliche Gesundheitsprävention und Präventionspreise (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Prävention kann Gesundheit und Aufmerksamkeit für Arbeitsbedingungen fördern, greift aber ohne konkrete organisatorische Änderungen die genannten Ursachen nur begrenzt an.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8034,
+      "name": "Personalbemessung, zusätzliche Pflegekräfte und stressfreie Schichtpläne (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Personalbemessung und planbare Schichten setzen direkt an Besetzung und Erholung an. Die geforderte Größenordnung, Refinanzierung und Umsetzung über mehrere Berufsgruppen erfordern erhebliche Ressourcen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/35780608",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8035,
+      "name": "Sabbatjahr mit Rückkehrrecht (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ein Sabbatjahr kann einzelnen Beschäftigten Erholung ermöglichen, löst aber nicht die regelmäßigen Pausen- und Schichtprobleme. Vertretung, Anspruchsumfang und Finanzierung sind ungeklärt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8036,
+      "name": "Finanzierung des Personalaufwuchses sicherstellen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Finanzierung ist Voraussetzung für zusätzliche Stellen, schafft diese aber ohne konkrete Mittel, Verteilung und Einstellungsplan nicht selbst. Umfang und dauerhafte Finanzierung sind offen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8037,
+      "name": "Landesförderung an Mitbestimmung koppeln (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Förderbedingungen können Mitsprache bei geförderten Einrichtungen anreizen, erfassen aber nur einen Teil der Arbeitgeber und nennen keine konkreten Mitbestimmungsstandards.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8038,
+      "name": "KI-gestützte Dokumentation ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Automatisierung kann Dokumentationszeit senken, kann aber durch Prüfung, Korrekturen und Integration neue Arbeit erzeugen. Reviews finden wenige, heterogene Interventionsstudien und keine verlässliche allgemeine Wirkung.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://europepmc.org/article/MED/39366661",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8039,
+      "name": "Mitbestimmung in öffentlichen und kirchlichen Einrichtungen anpassen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Einheitlichere Beteiligungsrechte können den Einfluss Beschäftigter stärken. Die nötigen Änderungen betreffen unterschiedliche Rechts- und Trägerstrukturen; ihre Wirkung auf Belastung ist nicht direkt belegt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8040,
+      "name": "Rechtsanspruch auf familienfreundliche Schichten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Planbarere und passende Dienstzeiten können Erholung erleichtern. Reviews verbinden ungünstige Schichtmerkmale mit Müdigkeit, finden aber gemischte Befunde und belegen diesen konkreten Rechtsanspruch nicht direkt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8041,
+      "name": "Höchstarbeitszeit und Ruhezeiten flexibilisieren (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Flexiblere Grenzen können individuelle Modelle ermöglichen, garantieren aber weder Pausen noch Erholung und können längere Einsätze erleichtern. Die Forschung verbindet kurze Ruhezeiten mit Müdigkeit, während Gesamtergebnisse gemischt sind.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8042,
+      "name": "Verfolgung von Angriffen auf Mitbestimmung stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Spezialisierte Ermittlungen können bestehende Rechte besser durchsetzen und abschrecken. Sie schaffen selbst keine neuen Beteiligungsrechte und hängen von Fällen, Personal und Verfahrensdauer ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8043,
+      "name": "Verbindliche Mitbestimmung bei Personalplanung und Arbeitsbedingungen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erzwingbare Beteiligung bei Personalbemessung, Gesundheitsschutz und Weiterbildung stärkt den Einfluss auf Arbeitsbedingungen. Ob sie Belastungen reduziert, hängt von Durchsetzung und verfügbaren Ressourcen ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8044,
+      "name": "Psychische Belastungen kontrollieren und Beschäftigte beteiligen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kontrollen und Beteiligung können psychosoziale Risiken sichtbar machen und Verbesserungen anstoßen. Wirkung setzt wirksame Standards und Abhilfe voraus; Zuständigkeiten für Arbeitsschutzregeln sind zwischen Bund und Ländern verteilt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8045,
+      "name": "Dialogkonferenz für Betriebs- und Personalräte (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Austausch kann Probleme sichtbar machen, verleiht aber ohne verbindliche Rechte oder Umsetzungspflichten keinen zusätzlichen Einfluss auf Arbeitsbedingungen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8046,
+      "name": "Betriebliche Gesundheitsförderung in Gesundheitsfachberufen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Förderprogramme können Prävention und gesundheitsfördernde Arbeitsbedingungen unterstützen. Ohne konkrete Vorgaben zu Personal, Arbeitszeit oder Einfluss bleibt die Wirkung auf die benannten Belastungsursachen begrenzt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8047,
+      "name": "Digitale Anwendungen, Automatisierung und Robotik zur Entlastung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Technik kann einzelne Aufgaben erleichtern, aber die Maßnahme benennt weder Anwendungen noch Einsatzbedingungen. Einführungs-, Wartungs- und Kontrollaufwand kann einen Teil der erhofften Entlastung aufzehren.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8048,
+      "name": "Mitbestimmung durch öffentliche Trägerschaft sichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Rückgängigmachung von Ausgründungen kann Mitbestimmungswege wiederherstellen, betrifft aber nur bestimmte Einrichtungen und erfordert erhebliche organisatorische sowie finanzielle Schritte.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8049,
+      "name": "Leistungsgerechte Vergütung in Gesundheitsberufen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Angemessene Bezahlung kann das Verhältnis von Einsatz und Belohnung verbessern. Ohne Maßstab, Betrag und Finanzierungsweg bleibt der Umfang unbestimmt; leistungsbezogene Anreize können zusätzliche Belastung erzeugen.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8050,
+      "name": "Arbeitsschutz und Mitbestimmung bei Personalbemessung stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Arbeitsschutz und verbindliche Beteiligung können Belastungen vorbeugen und Mitsprache stärken. Die konkrete Entlastung hängt von Standards, Kontrolle und tatsächlicher Personalverfügbarkeit ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8051,
+      "name": "Lohnlücke in der Pflege schließen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine konkrete Lohnanhebung verbessert unmittelbar die finanzielle Belohnung für Pflegearbeit. Höhe, betroffene Beschäftigte und Refinanzierung sind nicht ausgeführt; höhere Bezahlung allein löst Überlastung nicht.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8052,
+      "name": "Vergütung nicht-dualer Gesundheitsausbildungen verbessern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Vergütung kann die finanzielle Belastung während der Ausbildung senken, betrifft aber Auszubildende und nicht unmittelbar die Arbeitslast der bereits Beschäftigten. Finanzierungszuständigkeiten sind zu klären.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8053,
+      "name": "Genossenschaften und Belegschaftsmodelle fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Solche Modelle können Beschäftigten mehr Mitsprache eröffnen, sind aber kein allgemeiner Hebel für Arbeitsbedingungen und erfordern freiwillige Gründungen sowie tragfähige Finanzierung.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8054,
+      "name": "Handlungsspielraum und Befugnisse der Pflegefachkräfte erweitern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr fachlicher Spielraum kann Einfluss auf die eigene Arbeit stärken. Zusätzliche Verantwortung kann zugleich Anforderungen erhöhen; Zuständigkeiten und Qualifikationen müssen klar geregelt sein.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.nationalacademies.org/publications/25982",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8055,
+      "name": "Arbeitszeit und Ruhezeiten verbindlich begrenzen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Begrenzte Arbeitszeiten und ausreichende Ruhe können Müdigkeit reduzieren; Reviews stützen den Zusammenhang, zeigen aber teils gemischte Ergebnisse. Ohne Ausgleich kann die Arbeitsmenge pro Schicht steigen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8056,
+      "name": "Gesetzlichen Mindestlohn anheben und dynamisieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein höherer Mindestlohn verbessert die Entlohnung der davon erfassten Beschäftigten, erreicht aber viele qualifizierte Gesundheitsberufe nicht direkt und verändert Arbeitsbelastung oder Personalbesetzung nicht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8057,
+      "name": "Zusammenarbeit und Kompetenzen in Gesundheitsberufen erweitern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Zusammenarbeit und erweiterte Befugnisse können Aufgaben verteilen und den Arbeitsablauf erleichtern. Ohne konkrete Zuständigkeiten oder Bezug zur Personalbemessung bleibt die Entlastung unsicher.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.nationalacademies.org/publications/25982",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8058,
+      "name": "Abstimmung über eine Pflegekammer ermöglichen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Abstimmung gibt Pflegekräften Einfluss auf die Einrichtung einer Selbstvertretung, ändert aber für sich genommen weder Arbeitsbedingungen noch Mitsprache am Arbeitsplatz.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8059,
+          "instrument": 8023,
+          "beschreibung": "Springerpools puffern Belastungsspitzen ab und planbare Einsatzzeiten verbessern die Arbeitsbedingungen.",
+          "ursachen_ids": [2701, 2702],
+          "zitat": "Um dem Personalnotstand entgegenzuwirken, setzen wir auf attraktive Arbeitsbedingungen wie planbare Einsatzzeiten und Springerpools zum Abfedern von Belastungsspitzen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=72",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8060,
+          "instrument": 8015,
+          "beschreibung": "Dokumentationsprozesse mit hohem Zeitaufwand vereinfachen.",
+          "ursachen_ids": [2703],
+          "zitat": "Wir stärken die Rolle von Pflegefachpersonen in der gesundheitlichen Versorgung und vereinfachen Dokumentationsprozesse, die viel Zeit in Anspruch nehmen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=72",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8061,
+          "instrument": 8019,
+          "beschreibung": "Durch Änderungen im Tarifvertragsgesetz die Bereitschaft zur Tarifbindung stützen.",
+          "ursachen_ids": [2704],
+          "zitat": "Wir stützen durch Änderungen im Tarifvertragsgesetz die Bereitschaft, sich an Tarifverträge zu binden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=33",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8062,
+          "instrument": 8005,
+          "beschreibung": "Online-Betriebsratssitzungen und -versammlungen als gleichwertige Alternative zu Präsenzformaten ermöglichen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir ermöglichen Online-Betriebsratssitzungen und Online-Betriebsversammlungen als gleichwertige Alternativen zu Präsenzformaten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=33",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8063,
+          "instrument": 8005,
+          "beschreibung": "Digitale Zugangsrechte bei der betrieblichen Mitbestimmung klarstellen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir wollen bei der betrieblichen Mitbestimmung digitale Zugangsrechte in Anlehnung an bestehende analoge Zugangsrechte klarstellen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=33",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8064,
+          "instrument": 8018,
+          "beschreibung": "Einrichtung einer Pflegekammer zur Weiterentwicklung des Pflegeberufs und Vertretung der Pflegeinteressen",
+          "ursachen_ids": [2705],
+          "zitat": "Wir setzen uns für die Einrichtung einer Pflegekammer in Berlin ein. Sie soll zur Weiterentwicklung des Berufsbildes Pflege sowie zur Weiterentwicklung und Sicherung pflegerischer Standards beitragen und die Interessen der Pflege vertreten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=100",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Die Kapitel zu medizinischer und pflegerischer Versorgung sowie Gesundheitsförderung (PDF-S. 71-80) enthalten keine konkrete Zusage zu Mitsprache, Führung, psychosozialer Unterstützung oder Sprachmittlung für Beschäftigte im Gesundheitswesen. S. 36 betrifft Beschäftigte der Justiz.",
+        "stand": "2026-10-06",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8065,
+          "instrument": 8054,
+          "beschreibung": "Pflegefachkräften mehr Kompetenzen und Verantwortung übertragen.",
+          "ursachen_ids": [2705],
+          "zitat": "Pflegefachkräfte erhalten mehr Kompetenzen und Verantwortung.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8066,
+          "instrument": 8010,
+          "beschreibung": "Bedarfsgerechte Personalausstattung für alle Beschäftigtengruppen bundesweit einführen.",
+          "ursachen_ids": [2701],
+          "zitat": "Wir wollen zudem dafür sorgen, dass die bedarfsgerechte Personalausstattung bundeseinheitlich für alle Beschäftigtengruppen im Gesundheitswesen eingeführt wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8067,
+          "instrument": 8057,
+          "beschreibung": "Zusammenarbeit aller Gesundheitsberufe und Durchlässigkeit stärken sowie Befugnisse von Pflegefachpersonen erweitern.",
+          "ursachen_ids": [2701],
+          "zitat": "Darüber hinaus wollen wir die Zusammenarbeit aller Gesundheitsberufe stärken, mehr Durchlässigkeit schaffen und die Befugnisse von Pflegefachpersonen erweitern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8068,
+          "instrument": 8009,
+          "beschreibung": "Weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+          "ursachen_ids": [2701],
+          "zitat": "Um dem durch den demografischen Wandel bedingten Personalmangel entgegenzuwirken, werden wir die weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8069,
+          "instrument": 8027,
+          "beschreibung": "Praxisnahe und kostenfreie Ausbildungen in Gesundheitsfachberufen fördern.",
+          "ursachen_ids": [2701],
+          "zitat": "Gleichzeitig wollen wir die Attraktivität der Ausbildungen steigern, denn die Auszubildenden von heute sind die Fachkräfte von morgen. Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8070,
+          "instrument": 8022,
+          "beschreibung": "Mehr Freizeitausgleich schaffen, etwa durch eine verkürzte Wochenarbeitszeit.",
+          "ursachen_ids": [2702],
+          "zitat": "Außerdem treten wir für mehr Freizeitausgleich ein – beispielsweise durch eine verkürzte Wochenarbeitszeit.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8071,
+          "instrument": 8004,
+          "beschreibung": "Vergütung und Dienstzeiten während des praktischen Jahres verlässlich regeln.",
+          "ursachen_ids": [2702, 2704],
+          "zitat": "bei den Ärztinnen und Ärzten für verlässliche Regeln bei Vergütungen und Dienstzeiten während des praktischen Jahres ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8072,
+          "instrument": 8038,
+          "beschreibung": "KI-gestützte Dokumentation ausbauen, um den Dokumentationsaufwand im Gesundheitswesen zu verringern.",
+          "ursachen_ids": [2703],
+          "zitat": "Der oft hohe Dokumentationsaufwand belastet viele Beschäftigte im Gesundheitswesen. Um dies zu verringern, setzen wir auf den Ausbau von KI-gestützter Dokumentation.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8073,
+          "instrument": 8031,
+          "beschreibung": "Ordentliche Tarifverträge in Gesundheit und Pflege unterstützen.",
+          "ursachen_ids": [2704],
+          "zitat": "Deshalb setzen wir uns weiterhin für ordentliche Tarifverträge in Gesundheit und Pflege ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8074,
+          "instrument": 8012,
+          "beschreibung": "Tarifgebundene Bezahlung bei Unternehmen mit Bundesaufträgen durchsetzen.",
+          "ursachen_ids": [2704],
+          "zitat": "Wir werden mit einem Bundestariftreuegesetz dafür sorgen, dass öffentliche Aufträge des Bundes nur an Unternehmen gehen, die ihre Beschäftigten nach Tarif bezahlen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=23",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8075,
+          "instrument": 8043,
+          "beschreibung": "Mitbestimmungsrechte der Betriebsräte bei Personalplanung, KI, Gesundheitsschutz und Weiterbildung ausbauen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir reformieren das Betriebsverfassungsgesetz und werden die Mitbestimmung der Betriebsräte bei strategischer Personalplanung und -bemessung, bei der Einführung von Künstlicher Intelligenz sowie bei Gesundheitsschutz und Weiterbildung im Betrieb zu echten Mitbestimmungsrechten mit Einigungserfordernis ausbauen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=13",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8076,
+          "instrument": 8011,
+          "beschreibung": "Zugang zu Weiterbildung und gesundheitsfördernden Maßnahmen für Beschäftigte in Gesundheitsberufen erleichtern.",
+          "ursachen_ids": [2705],
+          "zitat": "Gleichzeitig werden wir den Zugang zu Weiterbildung und gesundheitsfördernden Maßnahmen erleichtern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8077,
+          "instrument": 8045,
+          "beschreibung": "Eine Konferenz für Betriebs- und Personalräte als Dialogforum schaffen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir schaffen eine Betriebs- und Personalrätekonferenz für den direkten Dialog zwischen Politik, Gewerkschaften und Betrieben.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8078,
+          "instrument": 8042,
+          "beschreibung": "Die Verfolgung von Angriffen auf Mitbestimmung durch die Staatsanwaltschaft stärken.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir stärken die Schwerpunktabteilung in der Staatsanwaltschaft, die Angriffe auf Mitbestimmung (Union Busting) konsequent verfolgt.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8079,
+          "instrument": 8021,
+          "beschreibung": "Die Behinderung von Betriebsratsarbeit zu einem Offizialdelikt machen.",
+          "ursachen_ids": [2705],
+          "zitat": "Die Behinderung von Betriebsratsarbeit soll durch Bundesgesetz ein Offizialdelikt werden.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8080,
+          "instrument": 8013,
+          "beschreibung": "Eine unabhängige Arbeitnehmervertretung durch die Netzwerkstelle Gute Arbeit fördern.",
+          "ursachen_ids": [2705],
+          "zitat": "Darüber hinaus stärken wir die Netzwerkstelle Gute Arbeit (Joboption Berlin), um eine unabhängige Arbeitnehmervertretung zu fördern.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8081,
+          "instrument": 8037,
+          "beschreibung": "Landesförderungen an Tarifbindung und Mitbestimmung koppeln.",
+          "ursachen_ids": [2705],
+          "zitat": "Auch Förderungen des Landes Berlin werden wir an […] und Mitbestimmung koppeln.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8082,
+          "instrument": 8048,
+          "beschreibung": "Ausgründungen rückgängig machen, die Mitbestimmung einschränken.",
+          "ursachen_ids": [2705],
+          "zitat": "Bereits erfolgte Ausgründungen, um Personalkosten zu senken oder die Mitbestimmung einzuschränken, machen wir rückgängig.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=10",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8083,
+          "instrument": 8013,
+          "beschreibung": "Betriebsratsgründungen besser schützen und betriebliche Mitbestimmung stärken.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir werden in den kommenden Jahren weiterhin dafür sorgen, dass Mecklenburg - Vorpommern wirtschaftlich wächst und dass alle Menschen in unserem Bundesland davon profitieren, indem wir die Rahmenbedingungen für mehr Tarifbindung weiter optimieren, Betriebsratsgründungen besser schützen und betriebliche Mitbestimmung insgesamt stärken wollen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=23",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8084,
+          "instrument": 8013,
+          "beschreibung": "Das Land unterstützt die Gründung von Betriebsräten und informiert über Arbeitnehmerrechte.",
+          "ursachen_ids": [2705],
+          "zitat": "Das Land unterstützt die Gründung von Betriebsräten, informiert über Arbeitnehmerrechte und setzt klare Maßstäbe: Unternehmen, die Mitbestimmung systematisch behindern, sollen von staatlichen Förderungen ausgeschlossen werden und weitere Sanktionen erfahren.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=8",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8085,
+          "instrument": 8020,
+          "beschreibung": "Professionelle Sprachmittlung im Gesundheitswesen wird verlässlich finanziert.",
+          "ursachen_ids": [2706],
+          "zitat": "Professionelle Sprachmittlung im Gesundheitswesen wird verlässlich finanziert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8086,
+          "instrument": 8010,
+          "beschreibung": "Höhere Personalschlüssel für Pflegekräfte umsetzen.",
+          "ursachen_ids": [2701],
+          "zitat": "Dieses Potenzial wollen wir durch die weitere Umsetzung höherer Personalschlüssel, mehr Kompetenzen und Eigenverantwortlichkeit für den Pflegeberuf sowie durch bessere Aufstiegschancen nutzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8087,
+          "instrument": 8009,
+          "beschreibung": "Wegen Überlastung ausgeschiedene Pflegefachkräfte mit einer Rückkehroffensive zurückgewinnen.",
+          "ursachen_ids": [2701],
+          "zitat": "Fachkräfte, die aufgrund von Überlastung den Job verlassen haben, wollen wir mit einer Rückkehroffensive zurückgewinnen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8088,
+          "instrument": 8015,
+          "beschreibung": "Dokumentationspflichten und Bürokratie in der Pflege auf ein Mindestmaß reduzieren.",
+          "ursachen_ids": [2703],
+          "zitat": "Und wir wollen Dokumentationspflichten und Bürokratie in der Pflege auf ein Mindestmaß reduzieren",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=93",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8089,
+          "instrument": 8014,
+          "beschreibung": "Durchlässige Weiterentwicklungswege und neue fachliche Rollen bis zum Masterniveau schaffen.",
+          "ursachen_ids": [2704],
+          "zitat": "Das Studium der Pflege wollen wir weiterentwickeln und stärken, um Karrieremöglichkeiten durch durchlässige Weiterentwicklungswege zu fördern – von der Pflegeassistenz bis hin zu akademischen Graden. Dazu gehört es, neue Rollen wie Advanced Practice Nurses (APN) und Community Health Nurses (CHN) auf Masterniveau zu etablieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8090,
+          "instrument": 8016,
+          "beschreibung": "Gründung betrieblicher Interessenvertretungen unterstützen und Online-Wahlen ermöglichen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir unterstützen die Gründung von neuen Betriebsräten und ermöglichen Online-Betriebsratswahlen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=68",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8091,
+          "instrument": 8046,
+          "beschreibung": "Betriebliche Gesundheitsförderung und Präventionsprogramme für gesundheitsfördernde Arbeitsbedingungen in Gesundheitsfachberufen ausbauen.",
+          "ursachen_ids": [2705],
+          "zitat": "Betriebliche Gesundheitsförderung soll gezielt ausgebaut und besonders kleine und mittlere Unternehmen sollen unterstützt werden, um gesundheitsfördernde Arbeitsbedingungen und Präventionsprogramme zu etablieren. Das gilt besonders auch für die Gesundheitsfachberufe.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=208",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8092,
+          "instrument": 8018,
+          "beschreibung": "Aufbau einer Pflegekammer fördern und evaluieren, um die Interessenvertretung und Beteiligung der Pflegeberufe zu stärken.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir Bündnisgrüne werden den Aufbau einer Pflegekammer fördern und ihre Wirksamkeit nach der Aufbauphase evaluieren. Ohne eine Pflegekammer bleibt die Beteiligung der Pflegeberufe in Gremien auf Landesebene unzureichend – das wollen wir ändern.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=214",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8093,
+          "instrument": 8007,
+          "beschreibung": "Ausreichende Sprachangebote für angeworbene Pflegefachkräfte bereitstellen.",
+          "ursachen_ids": [2706],
+          "zitat": "Hierbei gilt es, sich an faire Anwerbestrukturen zu halten und die Voraussetzungen für eine schnelle Anerkennung von Ausbildungsabschlüssen zu schaffen sowie ausreichende Sprachangebote bereitzustellen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=213",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8094,
+          "instrument": 8024,
+          "beschreibung": "Beschäftigte in Gesundheits- und Pflegeberufen vor Gewalt und Belästigung schützen.",
+          "ursachen_ids": [2705],
+          "zitat": "Für gute Arbeitsbedingungen werden wir: […] die Arbeitsbedingungen in den Gesundheits- und Pflegeberufen strukturell verbessern und die Beschäftigten vor Gewalt und Belästigung schützen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=58",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8095,
+          "instrument": 8013,
+          "beschreibung": "Beschäftigte durch Betriebsräte stärker an Entscheidungen beteiligen.",
+          "ursachen_ids": [2705],
+          "zitat": "Zugleich fördern wir die Mitbestimmung durch Betriebsräte, insbesondere in kleinen und mittleren Unternehmen, damit Beschäftigte stärker an Entscheidungen beteiligt werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=76",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8096,
+          "instrument": 8018,
+          "beschreibung": "Eine Pflegeselbstvertretung schaffen, über die Pflegekräfte Berufsordnung und Interessen selbst mitgestalten.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir wollen eine professionelle Pflegeselbstvertretung gesetzlich auf den Weg bringen, damit die Berufs- und Fortbildungsordnung selbstbestimmt von den Pflegekräften entwickelt werden kann und sie eine wahrnehmbare Stimme in Politik und Selbstverwaltung bekommt.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=87",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8097,
+          "instrument": 8053,
+          "beschreibung": "Genossenschaften und Belegschaftsmodelle als Formen betrieblicher Mitbestimmung fördern.",
+          "ursachen_ids": [2705],
+          "zitat": "Gleichzeitig fördern wir Tarifbindung und Mitbestimmung und unterstützen solidarische Wirtschaftsformen durch eine Gründungsberatung sowie die Förderung von Genossenschaften und Belegschaftsmodellen bei Unternehmen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=89",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8098,
+          "instrument": 8041,
+          "beschreibung": "Wöchentliche statt tägliche Höchstarbeitszeit einführen und Arbeitszeit- sowie Ruhezeitvorgaben flexibilisieren.",
+          "ursachen_ids": [2702],
+          "zitat": "Wir Freie Demokraten wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen. Ebenso müssen die Vorgaben zur Arbeitszeit flexibilisiert und Öffnungsklauseln zu Ruhezeitregelungen genutzt werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8099,
+          "instrument": 8015,
+          "beschreibung": "Pflegeanbieter von unnötigen Nachweis- und Dokumentationspflichten befreien.",
+          "ursachen_ids": [2703],
+          "zitat": "Wir Freie Demokraten befreien Pflegeanbieter von doppelten Prüfungen ohne Mehrwert, unnötigen Nachweis- und Dokumentationspflichten und überbordenden Vorgaben.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8100,
+          "instrument": 8009,
+          "beschreibung": "Mehr Pflegefachkräfte im In- und Ausland gewinnen.",
+          "ursachen_ids": [2701],
+          "zitat": "Wir wollen im Inland und Ausland mehr Pflegefachkräfte gewinnen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8101,
+          "instrument": 8047,
+          "beschreibung": "Digitale Anwendungen, Automatisierung und Robotik zur Entlastung des Pflegepersonals einsetzen.",
+          "ursachen_ids": [2701],
+          "zitat": "Durch digitale Anwendungen, Automatisierung und Robotik wollen wir maßgeblich zur Entlastung des Pflegepersonals beitragen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=35",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8102,
+          "instrument": 8049,
+          "beschreibung": "Eine ungekürzte, leistungsgerechte Vergütung für Gesundheitsberufe vorsehen.",
+          "ursachen_ids": [2704],
+          "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8103,
+          "instrument": 8013,
+          "beschreibung": "Freiwilligen Zusammenschluss von Pflegekraeften zur Interessenvertretung unterstuetzen",
+          "ursachen_ids": [2705],
+          "zitat": "Wir unterstützen den freiwilligen Zusammenschluss von Pflegekräften zur Vertretung ihrer Interessen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=116",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8104,
+          "instrument": 8054,
+          "beschreibung": "Handlungs- und Ermessensspielraum von Pflegekräften erweitern",
+          "ursachen_ids": [2705],
+          "zitat": "Wir Freie Demokraten werden: […] den Handlungs- und Ermessensspielraum von Pflegekräften erweitern, beruhend auf der generalisierten und akademisierten Pflegeausbildung.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=50",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Die Kapitel 'Gesundheit und Rettungswesen' (S. 59–63) und 'Pflege' (S. 63–65) wurden vollständig gelesen. Keine konkrete Zusage setzt an Mitsprache, Führung oder Unterstützung der Beschäftigten (2705) oder an Sprachmittlung für Beschäftigte (2706) an.",
+        "stand": "2026-10-06",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8105,
+          "instrument": 8010,
+          "beschreibung": "Bundeseinheitliche gesetzliche Personalbemessung für alle pflegesensitiven Bereiche vorsehen.",
+          "ursachen_ids": [2701],
+          "zitat": "Eine bundeseinheitliche, gesetzliche Personalbemessung für alle",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8106,
+          "instrument": 8036,
+          "beschreibung": "Die Finanzierung des notwendigen Personalaufwuchses sicherstellen.",
+          "ursachen_ids": [2701],
+          "zitat": "Eine angemessene Finanzierung des notwendigen Personalaufwuchses ist von existenzieller Bedeutung und sicherzustellen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=29",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8107,
+          "instrument": 8032,
+          "beschreibung": "Für medizinisches Fachpersonal eine fachliche und sprachliche Qualifikation auf Niveau C1 verlangen.",
+          "ursachen_ids": [2706],
+          "zitat": "Sowohl die fachliche als auch sprachliche Qualifikation (Niveau C1) müssen uneingeschränkt dem deutschen Standard genügen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gesundheit (PDF-S. 69–73) vollständig gelesen; keine konkrete Zusage zu den zulässigen Ursachen 2705 oder 2706.",
+        "stand": "2026-10-06",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8108,
+          "instrument": 8024,
+          "beschreibung": "Besseren gesetzlichen Schutz des medizinischen und pflegerischen Personals vor Gewalt umsetzen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir werden gesetzlich Vorsorge tragen und einen besseren Schutz der Ärzte sowie des medizinischen und pflegerischen Personals vor Gewalt umsetzen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=64",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8109,
+          "instrument": 8007,
+          "beschreibung": "Berufsbegleitende Sprachförderangebote für medizinisches Personal verankern und einheitliche Approbationsstandards konsequent anwenden.",
+          "ursachen_ids": [2706],
+          "zitat": "Wir werden auf Landesebene ergänzend dafür sorgen, dass begleitende Sprachförderangebote im Berufsalltag verankert werden und die Approbationsbehörden in MV die neuen bundeseinheitlichen Standards konsequent anwenden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=63",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8110,
+          "instrument": 8058,
+          "beschreibung": "Pflegekräfte sollen über die Einrichtung einer Pflegekammer abstimmen.",
+          "ursachen_ids": [2705],
+          "zitat": "Um der Pflege eine Stimme zu verleihen und die Rechte der Pflege zu stärken, stehen wir dafür, dass die Pfleger selbst darüber abstimmen sollen, ob sie die Einrichtung einer Pflegekammer […]",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=244",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8111,
+          "instrument": 8034,
+          "beschreibung": "Verbindliche Personalbemessung mit PPR 2.0, mehr Pflegepersonal und stressfreien Schichtplänen einführen.",
+          "ursachen_ids": [2701, 2702],
+          "zitat": "Wir setzen uns für eine gesetzlich vorgeschriebene Personalbemessung ein, bei der es am Ende auch mehr Personal gibt, sowie für Schichtpläne ohne Stress. Es braucht mindestens 100 000 zusätzliche Pflegekräfte in den Krankenhäusern! Wir fordern die konsequente Umsetzung und Weiterentwicklung der Pflegepersonalregelung 2.0 (PPR 2.0) und Sanktionen bei Nichterfüllung. Die Personalbemessung soll für alle medizinischen, therapeutischen und pflegerischen Berufsgruppen verbindlich refinanziert und kontrolliert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8112,
+          "instrument": 8009,
+          "beschreibung": "Ehemalige Pflegekräfte und andere Gesundheitsbeschäftigte bundesweit zurückgewinnen und eine Ausbildungsoffensive starten.",
+          "ursachen_ids": [2701],
+          "zitat": "Wir fordern eine bundesweite Offensive zur Rückanwerbung von Pflegekräften und anderen Gesundheitsarbeiter*innen, die ihren Beruf verlassen haben, außerdem eine Ausbildungsoffensive",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8113,
+          "instrument": 8025,
+          "beschreibung": "Entlastungstarifverträge unterstützen, refinanzieren und leichter allgemeinverbindlich machen.",
+          "ursachen_ids": [2704],
+          "zitat": "Wir unterstützen die Kämpfe um flächendeckende Entlastungstarifverträge und bessere Arbeitsbedingungen. […] Wir fordern […] die Refinanzierung von Tarifverträgen und dass Tarifverträge leichter für allgemeinverbindlich erklärt werden können (Kapitel 7).",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8114,
+          "instrument": 8030,
+          "beschreibung": "Niedrigschwellige Beratung und Unterstützung für Pflegekräfte, Rettungssanitäter*innen und andere belastende Gesundheitsberufe bereitstellen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir fordern flächendeckend niedrigschwellige Beratungs- und Unterstützungsangebote für Pflegekräfte, Rettungssanitäter*innen und weitere belastende Gesundheitsberufe.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8115,
+          "instrument": 8029,
+          "beschreibung": "Öffentliche Arbeitgeber sollen mit Gewerkschaften Entlastung und gute Arbeit vereinbaren, um Personalmangel zu beheben.",
+          "ursachen_ids": [2701],
+          "zitat": "Öffentliche Verwaltungen und Betriebe in öffentlichem Eigentum müssen mit den Gewerkschaften realistische Schritte für Entlastung und gute Arbeit vereinbaren, um den Personalmangel zu beheben.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8116,
+          "instrument": 8050,
+          "beschreibung": "Arbeitsschutz stärken und Betriebsräten erzwingbare Mitbestimmung bei Personalbemessung und Belastungsvermeidung geben.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir brauchen bessere Arbeitsschutzverordnungen gegen berufliche Überlastung und erzwingbare Mitbestimmung für Betriebsräte bei Personalbemessung und der Vorbeugung von Belastungen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8117,
+          "instrument": 8025,
+          "beschreibung": "Kürzere Arbeitszeiten mit vollem Lohnausgleich und notwendigem Personalausgleich unterstützen.",
+          "ursachen_ids": [2701, 2702],
+          "zitat": "Wir unterstützen die Gewerkschaften im Kampf um kürzere Arbeitszeiten bei vollem Lohn- und notwendigem Personalausgleich in allen Branchen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8118,
+          "instrument": 8055,
+          "beschreibung": "Acht-Stunden-Tag, mindestens elf Stunden Ruhezeit zwischen Schichten und höchstens 40 Wochenstunden sichern.",
+          "ursachen_ids": [2702],
+          "zitat": "Wir verteidigen den 8-Stunden-Tag als Obergrenze und fordern mindestens 11 Stunden Ruhezeit zwischen Schichten, Ausnahmen wollen wir einschränken und die wöchentliche Höchstarbeitszeit auf 40 Stunden begrenzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8119,
+          "instrument": 8040,
+          "beschreibung": "Einen Rechtsanspruch auf familienfreundliche Schichten schaffen.",
+          "ursachen_ids": [2702],
+          "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8120,
+          "instrument": 8028,
+          "beschreibung": "Einen gesetzlichen Urlaubsanspruch von sechs Wochen pro Jahr einführen.",
+          "ursachen_ids": [2702],
+          "zitat": "Wir setzen uns für einen gesetzlichen Urlaubsanspruch von 6 Wochen im Jahr ein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8121,
+          "instrument": 8035,
+          "beschreibung": "Beschäftigten zweimal im Berufsleben ein Sabbatjahr mit Rückkehrrecht ermöglichen.",
+          "ursachen_ids": [2702],
+          "zitat": "Beschäftigte sollen zweimal in ihrem Berufsleben die Möglichkeit haben, für ein Jahr auszusteigen (Sabbatjahr), verbunden mit einem Rückkehrrecht.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8122,
+          "instrument": 8051,
+          "beschreibung": "Die Lohnlücke in der Kranken- und Altenpflege schließen und Pflegekräfte angemessen entlohnen.",
+          "ursachen_ids": [2704],
+          "zitat": "Trotzdem besteht noch eine Lohnlücke von etwa 300 Euro. Diese muss geschlossen werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8123,
+          "instrument": 8056,
+          "beschreibung": "Den gesetzlichen Mindestlohn auf mindestens 60 Prozent des Medianlohns erhöhen und an dessen Entwicklung anpassen.",
+          "ursachen_ids": [2704],
+          "zitat": "Der gesetzliche Mindestlohn muss gemäß der Europäischen Richtlinie erhöht werden – auf mindestens 60 Prozent des mittleren Einkommens (Medianlohn). Das wären schon 2025 etwa 15 Euro.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=26",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8124,
+          "instrument": 8039,
+          "beschreibung": "Die Mitbestimmung in öffentlichen und kirchlichen Einrichtungen an das Betriebsverfassungsgesetz anpassen.",
+          "ursachen_ids": [2705],
+          "zitat": "Die Mitbestimmung in öffentlichen und kirchlichen Einrichtungen muss an das Betriebsverfassungsgesetz angepasst werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8125,
+          "instrument": 8016,
+          "beschreibung": "Betriebsratswahlen erleichtern, ihre Behinderung konsequenter verfolgen und Initiator*innen besser schützen.",
+          "ursachen_ids": [2705],
+          "zitat": "Kein Betrieb ohne Betriebsrat! Betriebsratswahlen müssen einfacher werden, Behinderung von Wahlen und Betriebsräten muss strenger verfolgt und Gewerkschaften müssen verlässlich Zugang bekommen, insbesondere auch digital. Beschäftigte, die die erstmalige Wahl eines Betriebsrats initiieren, müssen gesetzlich besser geschützt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8126,
+          "instrument": 8052,
+          "beschreibung": "Nicht-duale Ausbildungen in Gesundheitsberufen besser entlohnen.",
+          "ursachen_ids": [2704],
+          "zitat": "Ausbildungen, die nicht dual erfolgen, etwa in allen Sozial-, Gesundheits- und Erziehungsberufen, müssen besser entlohnt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8127,
+          "instrument": 8017,
+          "beschreibung": "Beschäftigte in öffentlichen Krankenhäusern sollen in Planungs- und Leitungsgremien mitentscheiden.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir setzen auf gemeinwohlorientierte Organisationsstrukturen mit klarer Verantwortlichkeit: Planungs- und Leitungsgremien, in denen Beschäftigte, Patient*innenvertretungen, Bezirksvertreter*innen, das Land und der Öffentliche Gesundheitsdienst mitentscheiden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=136",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8128,
+          "instrument": 8044,
+          "beschreibung": "Psychische Belastungen sollen kontrolliert und Gesundheitsförderung sowie die Beteiligung der Beschäftigten an Verbesserungen verbindlich verankert werden.",
+          "ursachen_ids": [2705],
+          "zitat": "Psychische Belastungen sollen in die Arbeitsstättenverordnung aufgenommen, regelmäßige Kontrollen durchgeführt und Gesundheitsförderung verbindlich umgesetzt werden. Arbeitgeber sollen stärker in die Verantwortung genommen werden und Beschäftigte sollen bei Maßnahmen zur Verbesserung mit einbezogen werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=138",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8129,
+          "instrument": 8013,
+          "beschreibung": "Betriebs- und Personalräte stärken und das Personalvertretungsgesetz evaluieren.",
+          "ursachen_ids": [2705],
+          "zitat": "Das Tariftreuegesetz weiterentwickeln, Betriebs- und Personalräte stärken und das Personalvertretungsgesetzes evaluieren.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8130,
+          "instrument": 8033,
+          "beschreibung": "Betriebliche Gesundheitsprävention fördern.",
+          "ursachen_ids": [2705],
+          "zitat": "Die Förderung der betrieblichen Gesundheitsprävention, des Präventionspreises und des Betriebs- und Personalrätepreises.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=9",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8131,
+          "instrument": 8008,
+          "beschreibung": "Mitentscheidungsrechte der Betriebsräte bei Investitionen, Standortfragen und Digitalisierung ausweiten.",
+          "ursachen_ids": [2705],
+          "zitat": "Mitentscheidungsrechte der Betriebsräte bei Investitionen, Standortfragen und Digitalisierung",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=87",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8132,
+          "instrument": 8021,
+          "beschreibung": "Sanktionen gegen Union Busting und die Behinderung von Betriebsratsarbeit einführen.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir fordern: […] harte Sanktionen gegen Union Busting und die Behinderung von Betriebsratsarbeit",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=87",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8133,
+          "instrument": 8013,
+          "beschreibung": "Betriebsräte durch Bildung, Gesundheitsangebote und Weiterbildung fördern.",
+          "ursachen_ids": [2705],
+          "zitat": "Betriebsratsförderung durch Bildung, Gesundheit und Weiterbildung",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=87",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8134,
+          "instrument": 8013,
+          "beschreibung": "Ein Landesprogramm zur betrieblichen Mitbestimmung in kleinen und mittleren Unternehmen einrichten.",
+          "ursachen_ids": [2705],
+          "zitat": "Wir fordern: […] ein Landesprogramm zur Unterstützung von betrieblicher Mitbestimmung in kleinen und mittleren Unternehmen (KMU)",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=87",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8135,
+          "instrument": 8020,
+          "beschreibung": "Einen landesweiten Sprachmittlerservice als Standard für den öffentlichen Dienst und die medizinische Versorgung einführen.",
+          "ursachen_ids": [2706],
+          "zitat": "Ein landesweiter Sprachmittlerservice ist unterstützend für alle im öffentlichen Dienst und der medizinischen Versorgung Standard, um Missverständnisse zu vermeiden.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=99",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8136,
+          "instrument": 8012,
+          "beschreibung": "Öffentliche Aufträge und Subventionen an die Zahlung von Tariflöhnen knüpfen.",
+          "ursachen_ids": [2704],
+          "zitat": "Um dieses Ziel zu erreichen, wollen wir ein Bündel an Maßnahmen umsetzen: Öffentliche Aufträge und Subventionen sollen nur noch an Unternehmen vergeben werden, die Tariflöhne zahlen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8137,
+          "instrument": 8019,
+          "beschreibung": "Die Allgemeinverbindlichkeit von Tarifverträgen erleichtern.",
+          "ursachen_ids": [2704],
+          "zitat": "Zudem wollen wir die Allgemeinverbindlichkeitserklärung von Tarifverträgen erleichtern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8138,
+          "instrument": 8026,
+          "beschreibung": "Mehr Pflegepersonal ausbilden und besser bezahlen.",
+          "ursachen_ids": [2704, 2701],
+          "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Kapitel »Gesundheitswesen« (S. 21–25) und Fundstellen S. 31, 32, 62 gelesen; keine konkrete Zusage zu den zulässigen Ursachen 2705 oder 2706.",
+        "stand": "2026-10-06",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8139,
+          "instrument": 8006,
+          "beschreibung": "Mitbestimmung als Teil verbesserter Arbeitsbedingungen zur Fachkräftebindung stärken",
+          "ursachen_ids": [2705],
+          "zitat": "Arbeitsbedingungen verbessern, um FachkräŌe im Land zu halten – Gesundheitsschutz, verlässliche Arbeitszeiten und MitbesƟmmung stärken.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8140,
+          "instrument": 8008,
+          "beschreibung": "Betriebsräte und Gewerkschaften an Investitions-, Standort- und Transformationsentscheidungen beteiligen.",
+          "ursachen_ids": [2705],
+          "zitat": "Ihre Beteiligung bei Investitions-, Standort- und Transformationsentscheidungen ist unverzichtbar.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=22",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8141,
+          "instrument": 8021,
+          "beschreibung": "Behinderungen betrieblicher Mitbestimmung sanktionieren.",
+          "ursachen_ids": [2705],
+          "zitat": "Behinderungen von Mitbestimmung müssen konsequent sanktioniert werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=22",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+{
+  "pruefsumme": "df1c3a3eb2280eb1c1ee2efab3476407719d626797cec09525f8cc7267d54151",
+  "thema": {
+    "id": 33,
+    "name": "Mediennutzung von Kindern und Jugendlichen",
+    "ziel": "Kinder und Jugendliche nutzen Medien altersgerecht und selbstbestimmt, ohne dass Schlaf, Konzentration und ihr übriger Alltag darunter leiden."
+  },
+  "ursachen": [
+    {
+      "id": 3301,
+      "beschreibung": "Soziale Belohnungen wie Likes fördern wiederholtes Posten: In einem Experiment (2021, 176 Erwachsene) wurde bei mehr Likes häufiger gepostet; auch Jugendliche reagieren auf Likes",
+      "ebene": "bund"
+    },
+    {
+      "id": 3302,
+      "beschreibung": "Bildschirmnutzung zur Schlafenszeit hängt mit zu wenig Schlaf und Tagesmüdigkeit zusammen (Metaanalyse 2016, 20 Studien, 125.198 Kinder und Jugendliche)",
+      "ebene": "land"
+    },
+    {
+      "id": 3303,
+      "beschreibung": "Eltern fällt die Begleitung der Mediennutzung schwer: Für 57,6 % war die passende tägliche Nutzungsdauer zumindest manchmal eine Sorge (niederländische Befragung 2015, Kinder 1 bis 9 Jahre)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3301,
+        3302,
+        3303
+      ],
+      "text": "Zu 3301 gehören Pflichten und Altersgrenzen für Plattformen und soziale Medien, Gestaltung von Belohnungs- und Empfehlungssystemen und Jugendmedienschutz, zu 3302 Regeln zur Nutzungszeit und Schlaf (auch Handyregeln in Schulen mit Bezug zu Nutzungsdauer), zu 3303 Medienbildung, Beratung und Unterstützung für Eltern."
+    },
+    {
+      "nr": 2,
+      "text": "Cybermobbing gehört zu Mobbing in der Schule, Hass im Netz zu Hass und Anfeindungen im Internet, extremistische Inhalte zu Radikalisierung und Extremismus, Suchtbehandlung zu Sucht und Glücksspiel. Digitale Ausstattung der Schulen und Breitbandausbau sind keine Maßnahmen dieses Themas."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Handys und Tablets mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen, danach möglichst wenig im Unterricht einsetzen.",
+      "zitat": "Handys und Tablets wollen wir mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen und auch danach möglichst wenig im Unterricht einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "5fab0aad93a4b90d"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Medienbildung inklusive Mediensuchtprävention ab der Grundschule verbindlich in Rahmenlehrplänen und schulinternen Curricula verankern.",
+      "zitat": "Medienbildung inklusive […] Mediensuchtprävention müssen bereits ab der Grundschule verbindlich in den Rahmenlehrplänen und schulinternen Curricula verankert werden.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "99a78ece5c1dab6b"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenzzentren in allen Bezirken gut ausstatten, kostenfreie begleitete Angebote und regelmäßige Schulungen für Fachkräfte schaffen, für junge Menschen, Eltern und Fachkräfte.",
+      "zitat": "Wir wollen gut ausgestattete Medienkompetenzzentren in allen Bezirken, kostenfreie, pädagogisch begleitete Angebote und regelmäßige Schulungen für pädagogische Fachkräfte, damit junge Menschen, Eltern und Fachkräfte souverän und kritisch mit digitalen Medien umgehen können.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "9f76ead2c3b40880"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "In den Schulen digitale Fähigkeiten und Medienkompetenz aufbauen.",
+      "zitat": "Außerdem setzen wir auf den Aufbau von digitalen Fähigkeiten, Medienkompetenz und auf den verantwortlichen Einsatz von Künstlicher Intelligenz (KI).",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "daab5bafa30e47e6"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Fort- und Weiterbildungsangebote für Schulbeschäftigte zu Medienbildung.",
+      "zitat": "Die Themenfelder Inklusion, Antidiskriminierung, Demokratiebildung und Medienbildung wollen wir durch verbindliche Fort- und Weiterbildungsangebote stärken.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "cad5a0ce5937eecb"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz, kritischen Umgang mit sozialen Medien und digitale Verantwortung fest in der schulischen Bildung verankern.",
+      "zitat": "Wir stärken Medienkompetenz, kritischen Umgang mit sozialen Medien, KI-Kompetenzen und digitale Verantwortung als festen Bestandteil schulischer Bildung.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "05edd2306c6f81c2"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz wird an allen Schulen verbindlicher Bestandteil des Unterrichts; Schülerinnen und Schüler lernen kritischen und verantwortungsvollen Umgang mit Medien.",
+      "zitat": "Medienbildung ist Demokratiebildung. Deshalb wollen wir Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "80863c2ba830745f"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Bürgerrat mit Kindern und Jugendlichen zum digitalen Jugendschutz einsetzen; weiteres Maßnahmenpaket im Bundestag beschließen.",
+      "zitat": "Gleichzeitig soll ein Bürgerrat unter Einbeziehung von Kindern und Jugendlichen zu aktuellen Fragen des digitalen Kinder- und Jugendschutzes eingesetzt werden. Ziel ist es, bis Ende der Wahlperiode ein weiteres Maßnahmenpaket im Deutschen Bundestag zu beschließen.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "39b49ce7d1208557"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Bibliotheken als Orte für Kinder und Jugendliche stärken und ihre Angebote zur Medienkompetenz ausweiten.",
+      "zitat": "Um unsere Kultureinrichtungen zu erhalten, werden wir: […] Bibliotheken als Kultur- und Begegnungsorte insbesondere für Kinder und Jugendliche stärken und länger öffnen. Wir unterstützen Bibliotheken überall dabei, ihr Dienstleistungsangebot um interaktive und soziokulturelle Angebote zur Förderung der Lese- und Medienkompetenz sowie der kulturellen Bildung zu erweitern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "bcc76939c4188f5b"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Plattformen müssen ihre Algorithmen zur Inhaltsdarstellung offenlegen und auf manipulative Praktiken prüfen lassen.",
+      "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3301
+      ],
+      "pruefsumme": "ff56bf9883813bf9"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Manipulative Algorithmen sozialer Plattformen strenger regulieren; Algorithmen, die Kinder gezielt süchtig machen, nicht dulden.",
+      "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "500c88dbe378f597"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Handyfreier Schultag bis Jahrgangsstufe 9 als Grundsatz, solange die Schulgemeinschaft keine andere Regelung beschließt.",
+      "zitat": "Solange keine andere, von der Schulgemeinschaft beschlossene Regelung vorliegt, gilt für uns deshalb ein handyfreier Schultag bis einschließlich Jahrgangsstufe 9 als Grundsatz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "5f4698eac5817a2b"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Einschränkungen der privaten Handynutzung unterstützen, wenn die Schule sie für die beste Lösung hält.",
+      "zitat": "Wir teilen die Sorgen über den steigenden Medienkonsum von Kindern und Jugendlichen. Deshalb unterstützen wir Einschränkungen der privaten Handynutzung, wo diese von der jeweiligen Schule für die beste Lösung gehalten werden.",
+      "ursachen_ids": [
+        3302
+      ],
+      "pruefsumme": "601c9d30a564762d"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm zur Stärkung der Medienkompetenz und digitalen Bildung an Schulen.",
+      "zitat": "Mit einer Medienkompetenz-Offensive von 20 Millionen Euro stärken wir digitale Bildung an Schulen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "72e44ddd0f28712d"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Familienbildungs- und Beratungsangebote ausbauen, die Eltern in der Medienerziehung stärken und Orientierung im digitalen Alltag geben.",
+      "zitat": "Den Ausbau von Familienbildungs- und Beratungsangeboten, die Eltern auch in Fragen der Medienerziehung stärken und Orientierung im digitalen Alltag geben.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "326ddeca73a446f2"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "land",
+      "beschreibung": "Pflichtfach Informatik und Medienbildung von Klasse 5 bis 10/11 an allen allgemeinbildenden Schulen, u. a. kritischer Umgang mit Inhalten in sozialen Medien.",
+      "zitat": "Dafür wollen wir nach dem Vorbild [Land] ein Unterrichtsfach „Informatik und Medienbildung“ schaffen, das verpflichtend von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen durchgängig angeboten werden soll.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "efa883850734231d"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Medienbildung auf allen Ebenen ausbauen: in der Schule, außerschulisch und für Erwachsene.",
+      "zitat": "Medienbildung auf allen Ebenen ausbauen: schulisch, außerschulisch und für Erwachsene.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "3b6344e857446b6c"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Präventionsangebote für Kinder und Jugendliche ausbauen, die auch Medienkompetenz stärken.",
+      "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "d77d8bd315374f0f"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Den europäischen Digital Services Act in Deutschland nicht umsetzen und das Netzwerkdurchsetzungsgesetz rückabwickeln.",
+      "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3301
+      ],
+      "pruefsumme": "88d1f9f5792d8dfd"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Medienbildung wird in allen Schulfächern fest verankert und weiter ausgebaut.",
+      "zitat": "Digitale Lernmittel, Medienbildung und barrierefreie Systeme werden weiter ausgebaut. Medienbildung erhält in allen Fächern einen festen Stellenwert.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "7ae6c4f824c98079"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "EU-Gesetz über digitale Dienste zügig in nationales Recht überführen.",
+      "zitat": "Die EU-Gesetze über Künstliche Intelligenz (AI Act) und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "5167b1f4488cdf64"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Lehrpläne modernisieren und dabei mehr Raum für Medienkompetenz schaffen.",
+      "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "fa892aab6f7d4c86"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Lehrkräfte werden im Bereich Digitalisierung und Medienbildung verbindlich und systematisch qualifiziert.",
+      "zitat": "Deshalb stärken wir die Qualifizierung von Lehrkräften im Bereich Digitalisierung und Medienbildung verbindlich und systematisch.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "98854d41efa37685"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "land",
+      "beschreibung": "Smartphones im Unterricht grundsätzlich nicht nutzen und vor dem Unterricht wegschließen.",
+      "zitat": "Smartphones sollen während des Unterrichts grundsätzlich nicht genutzt werden und sind vor dem Unterricht wegzuschließen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "9af59a2d570e56e7"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz an weiterführenden Schulen vermitteln, in der Grundschule ohne digitale Endgeräte lernen.",
+      "zitat": "Altersgerechtes Lernen ohne digitale Endgeräte in der Grundschule, Vermittlung von Medienkompetenz an weiterführenden Schulen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "3cb4497c4468fb37"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz im Schulunterricht stärken, dazu Lehrkräfte und Schulsozialarbeitende aus- und weiterbilden.",
+      "zitat": "Wir wollen die Medienkompetenz bereits bei jungen Menschen im Unterricht an den Schulen stärken. Dafür wollen wir eine bessere Einbindung des Themas in die Ausbildung von Lehrkräften und Schulsozialarbeitern erreichen sowie ständige Weiterbildungen ermöglichen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "aeac13b6c2bbaa11"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Verbindlichen digitalen Führerschein mit Nachweis von Medien-, Datenschutz- und Informationskenntnissen bis Ende Klasse 10 einführen.",
+      "zitat": "Wir fordern, dass alle Schülerinnen und Schüler am Ende der 10. Klasse einen verbindlichen digitalen Führerschein erwerben, der Kenntnisse im Umgang mit Medien, Datenschutz und Informationsbewertung nachweist.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "09989df8714c0a00"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Medien- und Datenschutzkompetenz von Kindern und Jugendlichen möglichst früh fördern.",
+      "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "5690731cee4ec166"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "land",
+      "beschreibung": "Grundschulklassen ohne Bildschirme einrichten, um Aufmerksamkeit, Gedächtnis und Lesekompetenz zu fördern.",
+      "zitat": "In Grundschulen sollen sogenannte „Detox-Klassen“ ohne Bildschirme eingerichtet werden, um Aufmerksamkeit, Gedächtnisleistung und Lesekompetenz zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "18befcd1d9d375b3"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Kinder- und Jugendschutz im Netz einschließlich sozialer Medien gewährleisten; bei der Umsetzung des Digital Services Act Jugend- und Medienschutz betonen.",
+      "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. Das gilt auch für Soziale Medien als wichtige Plattformen des Austauschs und der Information. Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "7baf6761a5224ca1"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "land",
+      "beschreibung": "Lehrkräfte, Erziehende und Bildungsstätten stärken, damit Medienkompetenz von Beginn an vermittelt wird; außerschulische Angebote für alle Altersgruppen ergänzen.",
+      "zitat": "Darum werden wir insbesondere die Lehrkräfte, Erziehenden und Bildungsstätten stärken, um Medienkompetenz von Beginn an in allen Bildungsangeboten zu implementieren und zu vermitteln. Außerschulische Medienkompetenzangebote ergänzen dies und sollen alle Altersgruppen ansprechen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "cdf8c06115582448"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Medienbildung in der Kita altersgerecht und mit pädagogischer Begleitung einführen.",
+      "zitat": "Medienbildung soll altersgerecht eingeführt werden, mit […] pädagogischer Begleitung für eine individuelle Lernerfahrung und nicht zur bloßen Beschäftigung.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "ec81ce93cf13294f"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "land",
+      "beschreibung": "Das medienpädagogische Zentrum personell ausbauen, um Unterrichtsangebote zur Medienbildung zu stärken.",
+      "zitat": "Das medienpädagogische Zentrum personell ausbauen, um Unterrichtsangebote der Medienbildung zu stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "0aa9a1fddeaa4210"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Gesetz für soziale Medien nach australischem Vorbild, damit Kinder weniger in der virtuellen Welt verschwinden.",
+      "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "aa525390501afa11"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen ausbauen.",
+      "zitat": "Wir setzen uns dafür ein, Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen auszubauen, um Manipulation und Desinformation entgegenzuwirken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "6c6127cb7f41b9b5"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "land",
+      "beschreibung": "Beratungsangebote für Familien werden gebündelt und zu Familienberatungszentren weiterentwickelt, auch angesichts veränderter Mediennutzung.",
+      "zitat": "Gesellschaftliche Veränderungen wirken in Familien oft besonders stark: finanzielle Belastungen, veränderte Mediennutzung, brüchige soziale Netzwerke. Wir lassen Familien damit nicht allein. Beratungsangebote sollen gebündelt und zu Familienberatungszentren weiterentwickelt werden, um Hilfe aus einer Hand zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "7915f179333aeae8"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz, auch zu Desinformation und digitaler Mündigkeit, verbindlich in Lehrerausbildung und Lehrplänen verankern.",
+      "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3303
+      ],
+      "pruefsumme": "f38d6ae95734e87c"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Verbindliches Smartphone-Verbot im Schulalltag, um Ablenkung und digitale Abhängigkeiten zu verringern.",
+      "zitat": "Außerdem setzen wir uns für ein verbindliches Smartphone-Verbot im Schulalltag ein, um Ablenkung, Leistungsabfall, soziale Konflikte und digitale Abhängigkeiten zu reduzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "8352f3edf78ba9bd"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz altersgerecht in allen Schularten stärken; Lehrkräfte durch Fortbildung und praxisnahe Materialien unterstützen.",
+      "zitat": "Medienkompetenz und der verantwortungsvolle Umgang mit Künstlicher Intelligenz sollen altersgerecht in allen Schularten gestärkt werden. Lehrkräfte unterstützen wir durch Fortbildung und praxisnahe Materialien.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "5251e67d307e706a"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "land",
+      "beschreibung": "Private Handynutzung im Schulalltag bis zur 7. Klasse per Verordnung unterbinden, Ausnahmen nur bei Notfällen oder nach Rücksprache mit der Lehrkraft.",
+      "zitat": "Die private Handynutzung im Schulalltag werden wir auf dem Verordnungswege bis einschließlich der 7. Klasse konsequent unterbinden, allenfalls bei Notfällen oder nach Rücksprache mit dem Lehrer soll das Handy genutzt werden dürfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "4e6b32493146f1ce"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Haushaltsmittel für Medienkompetenzbildung durch Freie Träger bereitstellen, entwickelt mit jungen Menschen für junge Menschen.",
+      "zitat": "[…] Medienkompetenzbildung, die mit jungen Menschen für junge Menschen entwickelt wird. Dies ist nicht nur eine Aufgabe der mabb, es ist eine klassische Aufgabe Freier Träger in [Land]. Wir werden uns im Rahmen der Haushaltsverhandlungen dafür einsetzen, dass Mittel bereitgestellt werden.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "da2b699e73741c93"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Jugendschutz im Netz stärken, unter anderem durch wirksame Möglichkeiten zur Altersverifikation.",
+      "zitat": "Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen, während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "aae448e1e8494c01"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "land",
+      "beschreibung": "Schulgemeinschaften in Medienbildung schulen und Ressourcen für Elternarbeit ausbauen, um Eltern früh einzubeziehen.",
+      "zitat": "Die Schulgemeinschaften […] müssen entsprechend geschult und die Ressourcen für Elternarbeit ausgebaut werden, um auch sie frühzeitig einzubeziehen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "b8001be2a5777cac"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Digital- und Medienkompetenz fest in Bildung verankern, auch in Familienbildungsstätten, Jugendhilfe und Erwachsenenbildung.",
+      "zitat": "Deshalb wollen wir Digital- und Medienkompetenz zum festen Bestandteil von Bildung machen: in Schulen, in Familienbildungsstätten, in der Jugendhilfe, aber auch in der Erwachsenenbildung",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "a8167daa830c1e04"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "land",
+      "beschreibung": "Computer- und Videospiele als Thema an weiterführenden Schulen fächerübergreifend stärker behandeln und analysieren.",
+      "zitat": "Deshalb setzen wir uns dafür ein, die Präsenz sowie Analysen des Mediums Computer- und Videospiel an den weiterführenden Schulen fächerübergreifend auszubauen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "72344ff0830cb61a"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenzzentren ausbauen und an jeder Schule Medienteams einrichten.",
+      "zitat": "Für eine moderne, resiliente digitale Bildung bauen wir die Medienkompetenzzentren aus und etablieren Medienteams an jeder Schule.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "c9bd6a96b0c9de40"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Altersgerechte Mediensensibilisierung über die Gefahren digitaler und sozialer Medien in Kindergarten und Grundschule.",
+      "zitat": "Um Kinder frühzeitig vor den Gefahren digitaler und sozialer Medien zu schützen, sorgen wir für eine altersgerechte Mediensensibilisierung bereits in Kindergarten und Grundschule.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "e3199e30116d7445"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "land",
+      "beschreibung": "Medienpädagogische Angebote ausbauen und mit Schulen, Landesmedienanstalt und Trägern neue Bildungsformate für alle Generationen entwickeln.",
+      "zitat": "Wir werden medienpädagogische Angebote ausbauen und mit Schulen, der Landesmedienanstalt und zivilgesellschaftlichen Trägern neue (Weiter-)Bildungsformate für alle Generationen entwickeln.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "9e1322b65c7f378d"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Eltern mit sicheren Voreinstellungen für Dienste und Geräte sowie Datenschutzregeln für Kinder und Jugendliche unterstützen.",
+      "zitat": "Eltern unterstützen wir mit Voreinstellungen für sichere Dienste und Geräte (kids-safety-by-default) sowie Datenschutzregelungen, die die Privatsphäre von Kindern und Jugendlichen schützen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "ursachen_offen": [
+        3301
+      ],
+      "pruefsumme": "6a7db577a83c1fb3"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "land",
+      "beschreibung": "In Schulen Projekte und Unterrichtseinheiten, die die kritische Reflexionsfähigkeit im Umgang mit digitalen Medien stärken.",
+      "zitat": "Durch gezielte Projekte, wie die „Lernwelt [Land]“ und praxisnahe Unterrichtseinheiten werden Fähigkeiten entwickelt, die Kinder und Jugendliche nicht nur auf die Anforderungen der Arbeitswelt vorbereiten, sondern auch ihre kritische Reflexionsfähigkeit im Umgang mit digitalen Medien stärken.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "89173a7730c689e8"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Landeseinheitliches Verbot privater Smartphone-Nutzung im Unterricht und auf dem Schulgelände bis Klasse zehn.",
+      "zitat": "Für die private Smartphone-Nutzung werden wir eine landeseinheitliche Regelung einführen, nach der die private Nutzung von Smartphones im Unterricht und auf dem gesamten Schulgelände bis Klasse zehn untersagt ist.",
+      "ursachen_ids": [
+        3302
+      ],
+      "pruefsumme": "15c869eb16dc16f9"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Folgen früher Social-Media-Nutzung wissenschaftlich bewerten und ein Maßnahmenpaket für Gesundheits- und Jugendmedienschutz vorlegen.",
+      "zitat": "Diese werden wir schnellstmöglich wissenschaftlich basiert bewerten und ein Maßnahmenpaket zur Stärkung von Gesundheit- und Jugendmedienschutz vorlegen.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "83d2a8cab4eb6419"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "land",
+      "beschreibung": "Eltern und Fachkräfte mit mehr Informationen zur Mediennutzung von Kindern und Jugendlichen versorgen.",
+      "zitat": "Darüber hinaus müssen mehr Informationen zur Mediennutzung von Kindern und Jugendlichen für Eltern sowie Multiplikatorinnen und Multiplikatoren […] bereitgestellt werden.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "96d4883d54cf5feb"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "land",
+      "beschreibung": "Elternarbeit zur Aufklärung der Kinder über Medienkonsum und Gefahren im Netz stärken.",
+      "zitat": "Wir wollen die Elternarbeit bezüglich der Aufklärung ihrer Kinder über Medienkonsum sowie Gefahren im Netz stärken.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "cc905b167e2f68e7"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "land",
+      "beschreibung": "Handyverbot an allen Grundschulen durchsetzen, begründet mit Gesundheits- und Kinderschutz.",
+      "zitat": "Für besseren Gesundheits- und Kinderschutz setzen wir ein Handyverbot an allen Grundschulen durch.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "6e23ac52014bd99e"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "land",
+      "beschreibung": "Angebote der Medienbildung weiter ausbauen und Eltern bei der digitalen Erziehung durch Unterstützungsangebote helfen.",
+      "zitat": "Wer Kinder und Jugendliche auf die digitale Welt vorbereiten will, braucht keine Verbote, sondern gute Unterstützungsangebote auch für Eltern. […] Angebote der Medienbildung bauen wir stetig weiter aus.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "5b256405bb21c6d1"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz-Angebote für Jugendliche und Erwachsene fördern, um Sucht- und Extremismusgefahren durch Games vorzubeugen.",
+      "zitat": "Zur gezielten Prävention von Sucht- und Extremismusgefahren durch Games fördern wir Medienkompetenz-Angebote für Jugendliche und Erwachsene.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "269a65ab0ff4d921"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "land",
+      "beschreibung": "Eltern durch verständliche, freiwillige, wissenschaftsbasierte Informationen zu Mediennutzung, Bildschirmzeiten und digitaler Sicherheit stärken.",
+      "zitat": "Wir werden: […] Eltern in ihrer Erziehungsverantwortung stärken, indem wir auf verständliche, freiwillige und wissenschaftsbasierte Informationen zu Mediennutzung, Bildschirmzeiten und digitaler Sicherheit setzen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "df9dc15f12ee4281"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "land",
+      "beschreibung": "Medienbildung und kritischen, selbstbestimmten Umgang mit neuen Medien für alle Kinder und Jugendlichen als verbindlichen Lerninhalt festlegen.",
+      "zitat": "Wir werden: […] für alle Kinder und Jugendlichen Medienbildung und den kritischen, selbstbestimmten Umgang mit neuen Medien als verbindlichen Lerninhalt definieren.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "d49fbda5d26c6394"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "land",
+      "beschreibung": "Medienbildung als verbindlichen Teil des Unterrichts ab der 1. Klasse in allen Schulformen verankern.",
+      "zitat": "Um Jugendliche gezielt auf die digitalisierte Welt vorzubereiten, fordern wir die curriculare Integration der Kompetenzen der Informatik und Medienbildung verpflichtend ab der 1. Klasse in allen Schulformen.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "1e0d9b3cfc0a2549"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "land",
+      "beschreibung": "Smartphone-Nutzung an Schulen bis einschließlich Klasse 10 untersagen.",
+      "zitat": "Außerdem werden wir entsprechend den Empfehlungen der Leopoldina die Nutzung von Smartphones bis einschließlich Klasse 10 untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "208eabbcd0d97857"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "land",
+      "beschreibung": "Grundschulen bildschirmfrei halten und dort Smartphones verbieten; an weiterführenden Schulen das Mitführen von Smartphones restriktiver handhaben.",
+      "zitat": "[Partei] will die Grundschule bildschirmfrei halten, dazu gehört auch ein Verbot der Verwendung von Smartphones. Auch an den weiterführenden Schulen werden wir das Mitführen von Smartphones restriktiver handhaben, damit die Aufmerksamkeit im Unterricht und die sozial-emotionale Entwicklung der Schüler nicht beeinträchtigt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3302
+      ],
+      "pruefsumme": "62b022c479e31aaa"
+    }
+  ]
+}

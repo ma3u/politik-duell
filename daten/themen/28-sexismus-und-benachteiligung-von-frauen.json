@@ -1,0 +1,45 @@
+{
+  "id": 28,
+  "name": "Sexismus und Benachteiligung von Frauen",
+  "beschreibung": "Frauen erleben Benachteiligung im Beruf, ungleich verteilte Sorgearbeit, sexuelle Belästigung und widersprüchliche Erwartungen an ihre Lebensgestaltung.",
+  "ziel": "Frauen können ihren Alltag, ihren Beruf und ihr Familienleben selbstbestimmt gestalten, ohne geschlechtsbedingte Benachteiligung oder sexistische Anfeindungen.",
+  "schlagwoerter": ["sexismus", "frauenrechte", "gleichberechtigung", "benachteiligung", "patriarchat", "belaestigung", "gleichstellung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2801,
+      "beschreibung": "Bei 53 % der Paare übernimmt die Frau deutlich mehr Routine-Hausarbeit als der Mann, bei 44 % ist sie etwa gleich verteilt (BiB, 2025)",
+      "alltag": "Die Haus- und Sorgearbeit bleibt bei mir hängen",
+      "quelle_url": "https://www.bib.bund.de/Publikation/2025/Geteilt-gerecht-zufrieden-Aufteilung-von-Hausarbeit-in-Beziehungen.html",
+      "ebene": "bund",
+      "schlagwoerter": ["hausarbeit", "sorgearbeit", "doppelbelastung", "alles bleibt an mir haengen"]
+    },
+    {
+      "id": 2802,
+      "beschreibung": "Mütter bleiben nach einer Familienphase häufig langfristig und oft ungewollt in Teilzeit; die meisten Frauen wünschen Teilzeit vor allem, solange die Kinder klein sind (BiB, 2017)",
+      "alltag": "Ich bin nach der Elternzeit in Teilzeit hängen geblieben, obwohl ich mehr arbeiten will",
+      "quelle_url": "https://www.bib.bund.de/Publikation/2017/Arbeitszeit-neu-gedacht.html",
+      "ebene": "bund",
+      "schlagwoerter": ["teilzeitfalle", "wiedereinstieg", "weniger verdienen", "beruf und familie"]
+    },
+    {
+      "id": 2803,
+      "beschreibung": "Erwartungen an Mütter widersprechen sich: 83 % der Frauen befürworteten nachmittägliche Präsenz bei den Kindern, 84 % Erwerbstätigkeit zur Unabhängigkeit (Befragung 2012)",
+      "alltag": "Als Mutter kann ich es nur falsch machen, zu Hause oder im Job",
+      "quelle_url": "https://www.bpb.de/politik/innenpolitik/familienpolitik/191689/muetter-heute",
+      "ebene": "land",
+      "schlagwoerter": ["rollenbilder", "rabenmutter", "karrierefrau", "hausfrau", "rechtfertigen"]
+    },
+    {
+      "id": 2804,
+      "beschreibung": "Etwa 40 % der Befragten wussten 2018 nichts von einer betrieblichen Beschwerdestelle gegen sexuelle Belästigung am Arbeitsplatz",
+      "alltag": "Ich werde bei der Arbeit sexuell belästigt und weiß nicht, wo ich mich beschweren kann",
+      "quelle_url": "https://www.antidiskriminierungsstelle.gov.de/SharedDocs/forschungsprojekte/DE/Studie_Umgang_mit_sex_Bel_am_ArbPlatz.html",
+      "ebene": "bund",
+      "schlagwoerter": ["sexuelle belaestigung", "sexistische sprueche", "beschwerde", "arbeitsplatz"]
+    }
+  ]
+}

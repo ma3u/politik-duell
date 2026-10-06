@@ -1,0 +1,26 @@
+{
+  "thema_id": 35,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 35), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3501, 3502],
+      "text": "Zu 3501 gehören Preise, Gebühren, Wettbewerb und Transparenz bei Fahrschulen und der Fahrerlaubnis (Prüfungsgebühren, Kosten für Auszubildende), zu 3502 Ausbildungs- und Prüfungsanforderungen (Theorie, Praxis, Umfang der Pflichtstunden, Wiederholungen)."
+    },
+    {
+      "nr": 2,
+      "text": "Spritpreise, Kfz-Steuer, Elektroautos und Parkplätze gehören zu Autofahren, Führerschein für Berufe oder Dienste ohne Bezug zum Erwerb der Fahrerlaubnis ist keine Maßnahme dieses Themas. Förderung des Führerscheinerwerbs für bestimmte Gruppen zählt zu 3501."
+    }
+  ],
+  "suchbegriffe": {
+    "3501": {
+      "Führerscheinkosten senken und Zugang erleichtern": ["führerschein", "führerscheinkosten", "führerschein billiger", "führerscheinprämie", "fahrschulkosten", "führerschein bezahlbar", "führerschein für alle", "kosten für den führerschein"],
+      "Wettbewerb und Preistransparenz in Fahrschulen": ["fahrschule", "preisvergleich", "preistransparenz", "fahrschulpreise", "fahrschulwettbewerb", "festpreis"]
+    },
+    "3502": {
+      "Ausbildung und Prüfung entschlacken": ["pflichtstunden", "sonderfahrten", "theorieprüfung", "praktische prüfung", "fahrausbildung reform", "prüfung vereinfachen", "digitale theorieausbildung", "begleitetes fahren"],
+      "Qualität und Prüfungsreife sichern": ["prüfungsreife", "qualität der fahrausbildung", "verkehrssicherheit", "prüfungsstandards", "tüv", "dekra"]
+    }
+  }
+}

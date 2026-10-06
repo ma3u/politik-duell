@@ -1,0 +1,34 @@
+{
+  "thema_id": 28,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 28), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2801, 2802, 2803, 2804],
+      "text": "Zu 2801 Aufteilung von Haus- und Sorgearbeit in Partnerschaften (Elternzeit, Partnermonate, Entlastung), zu 2802 Teilzeit und Wiedereinstieg nach der Familienphase, zu 2803 Rollenbilder und Erwartungen an Mütter, zu 2804 Schutz vor sexueller Belästigung am Arbeitsplatz und Beschwerdewege. Die Wahlfreiheit für ein Familienmodell ist selbst keine Benachteiligung."
+    },
+    {
+      "nr": 2,
+      "text": "Gewalt in Partnerschaft, sexualisierte Gewalt und Frauenhausplätze gehören zu Sicherheit, Betreuungsplätze zu Kita-Betreuung, Online-Hass zu Hass im Internet, allgemeine Löhne zu Preise und Löhne. Lohnlücke und Entgelttransparenz zählen zu 2802, wenn das Zitat Teilzeit oder Familienphase nennt, sonst zu keiner Ursache."
+    }
+  ],
+  "suchbegriffe": {
+    "2801": {
+      "Partnerschaftliche Aufteilung fördern": ["partnerschaftliche aufteilung", "partnermonate", "elterngeld", "elternzeit für väter", "väter in die verantwortung", "gleichstellung in der familie", "sorgearbeit"],
+      "Familienarbeit entlasten und anerkennen": ["haushaltsnahe dienstleistungen", "entlastung von familien", "anerkennung familienarbeit", "wahlfreiheit", "erziehungsleistung"]
+    },
+    "2802": {
+      "Rückkehr in Vollzeit und planbare Arbeitszeiten": ["rückkehrrecht", "recht auf vollzeit", "teilzeitfalle", "brückenteilzeit", "familienarbeitszeit", "planbare arbeitszeiten", "wiedereinstieg"],
+      "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": ["teilzeit nach wunsch", "familienzeit", "flexible arbeitszeit", "lohngleichheit", "entgelttransparenz", "equal pay"]
+    },
+    "2803": {
+      "Rollenstereotype abbauen": ["geschlechterstereotype", "rollenbilder", "klischees", "gleichstellung in der bildung", "frauen in führungspositionen"],
+      "Anerkennung häuslicher Sorgearbeit": ["anerkennung der erziehungsleistung", "mütterrente", "wahlfreiheit der familien", "familienbild", "kindererziehung zu hause"]
+    },
+    "2804": {
+      "Beschwerdewege und Schutz vor Belästigung ausbauen": ["sexuelle belästigung", "beschwerdestelle", "belästigung am arbeitsplatz", "agg", "schutz vor belästigung", "metoo", "antidiskriminierungsberatung"],
+      "Betriebliche Prävention und klare Verantwortung": ["betriebliche prävention", "betriebsvereinbarung", "verhaltenskodex", "verantwortung des arbeitgebers", "schulung"]
+    }
+  }
+}

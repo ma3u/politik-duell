@@ -1,0 +1,39 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Jugendschutz im Netz stärken, unter anderem durch wirksame Möglichkeiten zur Altersverifikation.",
+      "ursachen_ids": [3301],
+      "zitat": "Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen, während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Plattformen müssen ihre Algorithmen zur Inhaltsdarstellung offenlegen und auf manipulative Praktiken prüfen lassen.",
+      "ursachen_ids": [], "ursachen_offen": [3301],
+      "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+      "seite": 50
+    },
+    {
+      "beschreibung": "Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen ausbauen.",
+      "ursachen_ids": [], "ursachen_offen": [3303],
+      "zitat": "Wir setzen uns dafür ein, Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen auszubauen, um Manipulation und Desinformation entgegenzuwirken.",
+      "seite": 49
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3302, "seiten": [28, 39, 45], "grund": "Keine Zusage zu Nutzungszeiten, Schlaf oder Handyregeln; Fundstelle S. 28 betrifft Altersgrenzen für Energy-Drinks, Alkohol und Nikotin." }
+  ]
+}
+
+Protokoll
+Gelesen: S. 28 (Kinder und Jugendliche, Gesundheit), S. 39 (Verbraucherschutz), S. 44-45 (Gewalt und Kriminalität im Netz, Jugendschutz), S. 49-50 (Medien, Plattformen). Alle Fundstellen des Auftrags geprüft, dazu Textsuche nach Jugendschutz, Plattform, Schlaf, Handy, Smartphone, Eltern, Mobbing.
+Nicht erfasst:
+- S. 25, 42: „Altersgrenze“ im Sinn der Rente bzw. Pension, anderer Zusammenhang.
+- S. 28: Altersgrenzen und Werbebeschränkungen für Energy-Drinks, Alkohol, Einweg-Zigaretten, Nikotinprodukte; keine Medien.
+- S. 39: „Hier bedarf es eines besonderen Schutzes gegen Abzocke und Manipulation, insbesondere für Kinder und Jugendliche“ im digitalen Raum; Feststellung eines Bedarfs ohne konkrete Zusage.
+- S. 44: digitales Gewaltschutzgesetz (Gewalt im Netz); nach R2 kein Thema dieser Erfassung.
+- S. 50: Bot-Kennzeichnung, Faktencheck-Tools, Durchsetzung von DSA und DMA gegen Desinformation; kein Bezug zu Kindern und Jugendlichen oder zu den Ursachen.
+Grenzfälle: Algorithmen-Offenlegung (S. 50) steht im Kontext Desinformation, passt aber zu Empfehlungssystemen (R1, 3301); Medienkompetenz (S. 49) richtet sich an alle Altersgruppen und nicht an Eltern, daher 3303 offen.
+Richtungen ohne Maßnahme: 3302 beide Richtungen; 3303 elterliche Verantwortung und technische Hilfen; 3301 Selbstregulation und begleiteter Zugang.
+Seiten ohne Text (1, 2, 67, 68) spielen keine Rolle.

@@ -1,0 +1,44 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Stadtteilzentren ausbauen und dauerhaft sichern, Nachbarschafts- und Begegnungsprojekte fördern, gezielte Maßnahmen gegen Vereinsamung.",
+      "ursachen_ids": [2901],
+      "zitat": "Berlin braucht mehr Orte der Begegnung und verlässliche Angebote, die soziale Teilhabe fördern. Dazu gehören der Ausbau und die langfristige Sicherung von Stadtteilzentren, die Förderung von Nachbarschafts- und Begegnungsprojekten sowie gezielte Maßnahmen gegen Vereinsamung bei jungen Menschen, älteren Menschen und sozial Benachteiligten.",
+      "seite": 12
+    },
+    {
+      "beschreibung": "Schulpsychologinnen und Schulpsychologen flächendeckend an Schulen einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2903],
+      "zitat": "Wir fordern zudem den flächendeckenden Einsatz von Schulpsychologen.",
+      "seite": 16
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2901, "name": "Begegnung und Gemeinschaft vor Ort stärken", "seite": 12 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2904, "seiten": [65], "grund": "Einziger Treffer (Stigmatisierung beim Vorzeigen von Sozialbescheiden im ÖPNV) hat keinen Bezug zu psychischer Gesundheit oder Hilfesuche von Männern; sonst nichts zu Entstigmatisierung oder Angeboten für Männer." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Seiten 2–5 (Einleitung, Frieden), 11–14, 16 (Schule, multiprofessionelle Teams), 23–24 (Gesundheit, Kindergesundheit, Chronisch Erkrankte, ÖGD), 65; Grep nach psych, Gesundheit, Beratung, Trauer, Männer, Depress, Krise, Senior im ganzen Text.
+
+Grenzfall: Schulpsychologen (S. 16) als ursachen_offen für 2903 – schulische Beratung, aber nicht ausdrücklich niedrigschwellige Beratung oder Aufklärung zu psychischer Gesundheit.
+
+Nicht erfasst:
+- S. 13: „Zusammendenken von Kitas, Grundschulen und Seniorenheimen“ – gehört zur selben Zusage wie S. 12 (Begegnung und Gemeinschaft vor Ort), nicht gesondert erfasst.
+- S. 4: „Begegnungsstätten“ (Russisches Haus) – außenpolitischer Zusammenhang, kein Bezug zu Einsamkeit.
+- S. 16: „multiprofessionelle Teams … Psychologen“ – Schulqualität/Personalmix, ohne Bezug zu Aufklärung oder Beratung; dieselbe Richtung wie Schulpsychologen.
+- S. 11 (Soziale Dienste, psychologische Betreuung; Wohnungslosigkeit, psychosoziale Beratung): Thema Wohnungslosigkeit und Armut (R2).
+- S. 23: Willkommenszentren und „family nurse“ – Familienhilfe, kein psychisches Gesundheitsangebot.
+- S. 24: psychotherapeutische Unterstützung bei chronischen Erkrankungen und psychische Versorgung für Obdachlose – Versorgung (Ursache 2905, nicht Teil dieses Auftrags). ÖGD-Prävention nennt Impf-, Sucht- und Bewegungsprävention, nicht psychische Gesundheit.
+- S. 29: Anlaufstellen für PostVac/Long Covid – somatische Erkrankungen.
+- S. 62: Psychotherapie kein Einstellungshindernis im öffentlichen Dienst – Personalrecht, keine Aufklärung oder Beratung.
+- S. 12 (Drogenprävention): Thema Sucht (R2).
+
+Richtungen ohne Maßnahme: Professionelle Begleitung bei Verlust (Trauerbegleitung, Besuchsdienste: keine Stelle), Beratung und Weitervermittlung vereinfachen, Stigma abbauen, Zielgruppengerechte Unterstützung für Männer.

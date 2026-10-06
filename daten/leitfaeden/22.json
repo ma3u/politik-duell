@@ -1,0 +1,42 @@
+{
+  "thema_id": 22,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 22), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [2201, 2202, 2203, 2204, 2205, 2206],
+      "text": "Maßnahmen gegen Extremismus aller Richtungen (rechts, links, islamistisch, auslandsbezogen) zählen gleich. Zu 2201 Ausstieg, Prävention und Zugang zu Milieus, zu 2202 extremistische Online-Inhalte und Medienkompetenz, zu 2203 Vertrauen und Teilhabe, zu 2204 Ideologie und Gewaltrechtfertigung, zu 2205 und 2206 Streit- und Gesprächskultur."
+    },
+    {
+      "nr": 2,
+      "text": "Strafverfolgung, Verbote und Gefahrenabwehr bei Straftaten gehören zu Sicherheit, individuelle Online-Anfeindungen zu Hass im Internet, Bundesförderung von Demokratieprojekten ist eine eigene Haltung. Pauschale Bekenntnisse zu Demokratie oder Zusammenhalt ohne Instrument sind keine Maßnahme."
+    }
+  ],
+  "suchbegriffe": {
+    "2201": {
+      "Ausstieg und Distanzierung begleiten": ["ausstieg", "aussteigerprogramm", "distanzierung", "deradikalisierung", "ausstiegsberatung", "extremismusprävention", "radikalisierungsprävention"],
+      "Rekrutierung und Netzwerke zurückdrängen": ["rekrutierung", "vereinsverbot", "extremistische netzwerke", "extremistische strukturen", "extremistische szene", "verbot extremistischer"]
+    },
+    "2202": {
+      "Plattformen in die Pflicht nehmen": ["desinformation", "propaganda", "radikalisierung im netz", "onlinepropaganda", "extremistische inhalte", "digital services act", "plattformverantwortung"],
+      "Medienkompetenz und Aufklärung stärken": ["medienkompetenz", "medienbildung", "digitale bildung", "aufklärung im netz"]
+    },
+    "2203": {
+      "Teilhabe und Gerechtigkeit stärken": ["teilhabe", "gleichwertige lebensverhältnisse", "soziale gerechtigkeit", "abgehängt", "vertrauen in die politik"],
+      "Vertrauen in Institutionen und Rechtsstaat stärken": ["vertrauen in den rechtsstaat", "bürgerrat", "bürgerdialog", "bürgerbeteiligung", "volksentscheid", "transparenz"]
+    },
+    "2204": {
+      "Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten": ["feindbild", "gewaltprävention", "politische bildung", "demokratiebildung", "vorurteil", "menschenfeindlichkeit"],
+      "Werte und Verfassungstreue betonen": ["grundgesetz", "verfassungstreue", "wehrhafte demokratie", "rechtsstaatlichkeit", "werte vermitteln", "leitkultur"]
+    },
+    "2205": {
+      "Meinungsfreiheit und Bevormundung": ["meinungsfreiheit", "bevormundung", "cancel culture", "sprechverbote", "meinungskorridor", "debattenkultur"],
+      "Dialog und Streitkultur fördern": ["streitkultur", "dialog", "gesprächsformate", "miteinander reden", "bürgerdialog", "diskurs"]
+    },
+    "2206": {
+      "Zusammenhalt und Respekt stärken": ["gesellschaftlicher zusammenhalt", "zusammenhalt", "respekt", "spaltung überwinden", "polarisierung"],
+      "Toleranz und Offenheit für Gegenpositionen": ["toleranz", "pluralismus", "meinungsvielfalt", "andere meinungen", "kontroverse"]
+    }
+  }
+}

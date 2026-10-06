@@ -1,0 +1,37 @@
+{
+  "id": 21,
+  "name": "Armut und Kinderarmut",
+  "beschreibung": "Menschen haben zu wenig Geld für grundlegende Bedürfnisse und gesellschaftliche Teilhabe. Kinder wachsen unter finanziellen Einschränkungen auf, auch wenn ihre Familien Unterstützung erhalten.",
+  "ziel": "Menschen und ihre Kinder können ihren notwendigen Lebensunterhalt dauerhaft sichern und am gesellschaftlichen Leben teilnehmen.",
+  "schlagwoerter": ["armut", "kinderarmut", "geldnot", "grundsicherung", "buergergeld", "existenzminimum", "teilhabe", "tafel"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2101,
+      "beschreibung": "Auch mit Grundsicherung bleibt bei manchen Haushalten eine Versorgungslücke: Rund drei Viertel der Tafelbesuchenden lebten 2020 in Haushalten mit Grundsicherungsbezug",
+      "alltag": "Ich komme mit Bürgergeld oder Grundsicherung nicht bis zum Monatsende aus",
+      "quelle_url": "https://www.diw.de/de/diw_01.c.854868.de/publikationen/wochenberichte/2022_39_1/etwa_1_1_millionen_menschen_in_deutschland_besuchen_tafeln_____erziehende_und_getrenntlebende_ueberdurchschnittlich_haeufig.html",
+      "ebene": "bund",
+      "schlagwoerter": ["geld reicht nicht", "grundsicherung", "regelsatz", "lebensunterhalt", "tafel"]
+    },
+    {
+      "id": 2102,
+      "beschreibung": "Familienressourcen sichern den Lebensunterhalt von Kindern nicht immer: 2022 waren etwa 31 % der Alleinerziehenden armutsgefährdet (2018: rund 37 %)",
+      "alltag": "Als Alleinerziehende bleibt für meine Kinder zu wenig Geld",
+      "quelle_url": "https://www.diw.de/de/diw_01.c.937313.de/publikationen/wochenberichte/2025_08_1/einkommensverteilung__anzeichen_fuer_trendbruch_beim_armutsrisiko_____alleinerziehende_seltener_von_armut_bedroht.html",
+      "ebene": "bund",
+      "schlagwoerter": ["kinderarmut", "alleinerziehend", "kinderzuschlag", "kindergeld", "familie", "unterhaltsvorschuss"]
+    },
+    {
+      "id": 2103,
+      "beschreibung": "Ein Teil der Anspruchsberechtigten nimmt Grundsicherung nicht in Anspruch; laut IAB-Studie (2012) sind Höhe des Anspruchs und erwartete Bezugsdauer die entscheidenden Einflussfaktoren",
+      "alltag": "Ich habe Anspruch auf Leistungen, beantrage sie aber nicht",
+      "quelle_url": "https://iab.de/publikation/?id=525387",
+      "ebene": "bund",
+      "schlagwoerter": ["hilfe nicht beantragt", "anspruch unbekannt", "grundsicherung", "sozialleistungen", "antrag", "schaemen"]
+    }
+  ]
+}

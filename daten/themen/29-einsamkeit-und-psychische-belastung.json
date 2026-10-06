@@ -1,0 +1,2265 @@
+{
+  "id": 29,
+  "name": "Einsamkeit und psychische Belastung",
+  "beschreibung": "Menschen aller Altersgruppen fühlen sich einsam oder psychisch belastet. Manche können ihre Gefühle schwer einordnen oder ausdrücken und finden nicht rechtzeitig passende Unterstützung.",
+  "ziel": "Betroffene erleben tragfähige soziale Beziehungen, können mit ihren Gefühlen und Belastungen umgehen und erhalten bei Bedarf rechtzeitig passende Unterstützung.",
+  "schlagwoerter": ["einsamkeit", "allein", "senioren", "junge maenner", "gefuehle", "psychische belastung", "therapieplatz", "beratung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 2901,
+      "beschreibung": "Einsamkeit steigt unmittelbar nach dem Tod der Partnerin oder des Partners (Review von 26 Längsschnittstudien, 2024)",
+      "alltag": "Seit mein Partner gestorben ist, habe ich niemanden zum Reden",
+      "quelle_url": "https://europepmc.org/articles/PMC11735283",
+      "ebene": "land",
+      "schlagwoerter": ["trauer", "verwitwet", "bezugsperson", "niemand zum reden"]
+    },
+    {
+      "id": 2902,
+      "beschreibung": "Je geringer das Einkommen, desto höher das Einsamkeitsrisiko: Skalenwert 2,00 bei Armutsgefährdung gegenüber 1,69 bei hohem Einkommen (Deutscher Alterssurvey, 2025)",
+      "alltag": "Ich kann mir Kontakte und Unternehmungen nicht leisten und bin allein",
+      "quelle_url": "https://www.dza.de/detailansicht/einsamkeit-in-der-zweiten-lebenshaelfte",
+      "ebene": "bund",
+      "schlagwoerter": ["teilhabe", "ausgeschlossen", "wenig geld", "fehlende kontakte"]
+    },
+    {
+      "id": 2903,
+      "beschreibung": "Schwierigkeiten, Symptome psychischer Erkrankungen zu erkennen und Gefühle auszudrücken, erschweren die Hilfesuche (Review von 22 Studien, 2010)",
+      "alltag": "Ich merke, dass es mir schlecht geht, kann aber nicht sagen, was los ist",
+      "quelle_url": "https://europepmc.org/articles/PMC3022639",
+      "ebene": "land",
+      "schlagwoerter": ["gefuehle einordnen", "gefuehle ausdruecken", "ueberfordert", "anlaufstelle"]
+    },
+    {
+      "id": 2904,
+      "beschreibung": "Verinnerlichte Männlichkeitsnormen, Scham und der Anspruch, alles allein zu bewältigen, hemmen die Hilfesuche von Männern (12 Interviews, 2018)",
+      "alltag": "Ich will keine Schwäche zeigen und spreche mit niemandem über meine Gefühle",
+      "quelle_url": "https://europepmc.org/articles/PMC7732518",
+      "ebene": "land",
+      "schlagwoerter": ["scham", "schwaeche zeigen", "alles allein schaffen", "maenner", "hilfe suchen"]
+    },
+    {
+      "id": 2905,
+      "beschreibung": "Psychotherapeutische Hilfe ist nicht überall rechtzeitig zugänglich: 2018 vergingen im Mittel 112 Tage vom Erstkontakt bis zur Richtlinientherapie, teils mit Versorgung dazwischen",
+      "alltag": "Ich finde keinen Therapieplatz und warte monatelang",
+      "quelle_url": "https://europepmc.org/articles/PMC11413774",
+      "ebene": "bund",
+      "schlagwoerter": ["therapieplatz", "psychotherapie", "wartezeit", "hilfe finden"]
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8142,
+      "name": "Orte der Begegnung, Nachbarschaftstreffs und Stadtteilzentren fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gruppen- und Aktivitätsangebote lindern Isolation häufiger als Einzelangebote (Übersicht, überwiegend schwache Studien); Wirkung bei Verwitweten nicht gesondert belegt. Land und Kommunen können Orte rasch fördern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/21843337",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8143,
+      "name": "Landesstrategie, Beauftragte und Koordination gegen Einsamkeit (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Strategie und Koordination schaffen selbst kein Angebot; die Wirkung hängt von den Maßnahmen ab, die daraus folgen. Wirkung solcher Strukturen kaum untersucht, rechtlich und finanziell leicht umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8144,
+      "name": "Aufsuchende Hilfen, Besuchsdienste und organisierte Nachbarschaftshilfe (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erreicht auch Menschen, die nicht von sich aus Treffpunkte aufsuchen. Besuchsangebote wirkten in Übersichten seltener als Gruppenangebote (60 % gegenüber 79 % der Studien mit Verbesserung). Gut umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/21843337",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8145,
+      "name": "Vereine, Ehrenamt und Engagementstrukturen fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vereine und Engagement bieten Kontaktgelegenheiten, die Förderung wirkt aber nur indirekt und erreicht Verwitwete nicht gezielt. Wirkung auf Einsamkeit kaum untersucht; leicht umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8146,
+      "name": "Vermittlung von Wohnpartnerschaften „Wohnen für Hilfe“ (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bietet Alltagskontakt im selben Haushalt, erreicht aber nur wenige Menschen und setzt passende Wohnungen voraus. Wirkung auf Einsamkeit kaum untersucht; Vermittlung ist schnell aufzubauen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8147,
+      "name": "Gemeinschaftliche und generationenübergreifende Wohnformen schaffen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gemeinschaftliches Wohnen kann Alltagskontakt bieten, entsteht aber nur durch Neubau oder Umbau und erreicht wenige Menschen. Wirkung kaum untersucht; Umsetzung dauert mehrere Jahre.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8148,
+      "name": "Patenschaften und Leihgroßeltern-Projekte unterstützen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Persönliche Kontakte können Alleinstehende erreichen, die Reichweite kleiner Modellprojekte ist aber gering. Einzelangebote wirkten in Übersichten seltener als Gruppenangebote; leicht umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8149,
+      "name": "Plauderbänke im öffentlichen Raum fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Niedrigschwellige Gesprächsgelegenheit mit sehr geringem Aufwand, aber nur flüchtige Kontakte und kaum Wirkung auf bestehende Einsamkeit. Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8150,
+      "name": "Mehr Schulpsychologie und multiprofessionelle Teams an Schulen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Fachkräfte vor Ort erleichtern das Erkennen von Belastungen und die Hilfesuche; Angebot und Bedarf klaffen bislang auseinander. Wirkung kaum untersucht, Personalgewinnung dauert Jahre.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC13341547",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8151,
+      "name": "Psychische Gesundheit und Resilienz im Schulalltag und Unterricht verankern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Unterricht kann Wissen vermitteln, doch Übersichten finden wenig Beleg, dass schulische Präventionsprogramme Angst oder Depression senken; einzelne Ansätze zeigen Effekte. Land kann Lehrpläne anpassen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/31734106",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8152,
+      "name": "Aufklärung und Entstigmatisierung zu psychischer Gesundheit (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aufklärung und Kontaktprogramme verbessern kurzfristig Einstellungen und Wissen; langfristige Effekte und Wirkung auf die Hilfesuche sind kaum belegt. Gut umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/26410341",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8153,
+      "name": "Fachpersonal zu Stigmatisierung psychischer Erkrankungen schulen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schulungen können Vorurteile im Umfeld von Betroffenen mindern; Studien zeigen vor allem kurzfristige Einstellungsänderungen, kaum Verhaltens- oder Langzeitwirkung. Leicht umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/26410341",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8154,
+      "name": "Psychosoziale Beratungs- und Kontaktstellen ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wohnortnahe, niedrigschwellige Beratung senkt Hürden bei der Hilfesuche und hilft beim Einordnen von Beschwerden. Wirkung einzelner Modelle kaum vergleichend untersucht; Land kann Förderung zügig ausweiten.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8155,
+      "name": "Krisendienste und Krisentelefone ausbauen und sichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Krisenmodelle sind laut Cochrane-Übersicht gangbar und werden gut angenommen, die Studienlage ist aber klein und von geringer bis mäßiger Qualität. Flächendeckender Aufbau braucht Personal und Zeit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/26633650",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8156,
+      "name": "Niedrigschwellige Anlaufstellen und Hilfen für junge Menschen in Krisen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Anlaufstellen ohne Termin und Diagnose erleichtern jungen Menschen den ersten Schritt zur Hilfe. Wirkung kaum vergleichend untersucht; Länder und Kommunen können Standorte rasch fördern.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8157,
+      "name": "Lotsen- und Vermittlungsangebote in die psychische Versorgung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Lotsen helfen, vorhandene Angebote zu finden, schaffen aber keine zusätzlichen Behandlungsplätze. Wirkung auf Wartezeiten und Hilfesuche kaum untersucht; gut umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8158,
+      "name": "Sozialpsychiatrische Dienste und aufsuchende psychosoziale Hilfen stärken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bestehende kommunale Dienste erreichen auch Menschen, die von sich aus keine Hilfe suchen. Wirkung der Ausbaustufen kaum untersucht; Land kann Mittel und Aufgaben zügig anpassen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8159,
+      "name": "Suizidprävention verankern und Hilfsangebote vernetzen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Übersicht sieht keine Einzelstrategie klar im Vorteil; schulische Aufklärung senkte Suizidversuche, Telefon- und Internethilfen sind noch zu wenig untersucht. Rechtlich und finanziell gut umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/27289303",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8160,
+      "name": "Digitale Mental-Health-Angebote in der Hochschulversorgung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Meta-Analyse von 21 Studien findet mittlere Effekte digitaler Angebote bei Depression und Angst von Studierenden. Sie senken die Hürde zur Hilfe, wirken aber auf Symptome, nicht auf das Erkennen. Gut umsetzbar.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40033658",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8161,
+      "name": "Jungenarbeit und geschlechtersensible Pädagogik stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt früh an Rollenbildern an, die später die Hilfesuche hemmen, wirkt aber erst nach Jahren und erreicht nur Teilgruppen. Wirkung auf spätere Hilfesuche kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8162,
+      "name": "Niedrige Einkommen steuerlich entlasten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet über die Steuer, erreicht aber Armutsgefährdete ohne Steuerlast kaum; der Zusammenhang zwischen mehr Einkommen und weniger Einsamkeit ist nicht kausal belegt. Bund kann es kurzfristig regeln.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8163,
+      "name": "Mindest- und Garantierente für Geringverdienende aufstocken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Hebt Alterseinkommen direkt an; Studien zu Geldleistungen und psychischer Gesundheit sind uneinheitlich, der Einfluss auf Einsamkeit ist kaum untersucht. Kosten erfordern Finanzierung und Vorlauf.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8164,
+      "name": "Zugang zu freiwilligem Engagement für Benachteiligte verbessern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt finanzielle und soziale Hürden zur Teilnahme, erreicht aber nur wenige und wirkt eher auf Teilhabe als auf bestehende Einsamkeit. Wirkung kaum untersucht; Bund finanziert Freiwilligendienste bereits.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8165,
+      "name": "Wohnortnahe, niedrigschwellige Kinder- und Jugendangebote sichern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Freizeit- und Bildungsangebote ermöglichen Teilhabe unabhängig vom Einkommen, wirken aber nur mittelbar auf Einsamkeit. Zuständig sind Länder und Kommunen, der Bund kann nur mit Geld beitragen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8166,
+      "name": "Finanzierung der Psychotherapie-Weiterbildung sichern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Sichert den Nachwuchs, wirkt aber erst nach Jahren und ändert nicht die Zahl der Kassensitze, die die Wartezeit begrenzt. Bund kann die Finanzierung regeln, braucht aber Einigung mit den Kassen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8167,
+      "name": "Bedarfsplanung für psychotherapeutische Kassensitze reformieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Kassensitze setzen direkt an der Kapazität an; Befragungen sehen fehlende Termine als Hauptengpass. Wirkung bisheriger Reformen nur teils belegt. Bund und Selbstverwaltung können es regeln.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC13288593",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8168,
+      "name": "Kostenerstattung für Psychotherapie bei Wartezeiten erleichtern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Überbrückt Wartezeit über Privatpraxen, solange es dort freie Plätze gibt; das Gesamtangebot wächst nicht. Wirkung kaum untersucht, rechtlich leicht änderbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8169,
+      "name": "Therapie- und Versorgungsangebote bedarfsgerecht ausbauen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ohne benannten Weg bleibt unklar, wie Plätze entstehen; die Versorgung gilt als unzureichend. Zusage lässt sich rechtlich leicht fassen, die Wirkung hängt von der Umsetzung ab.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40034167",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8170,
+      "name": "Mehr Stellen für Schulpsychologie und Schulsozialarbeit (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Fachkräfte an Schulen erleichtern das Erkennen von Belastungen und die Hilfesuche. Schulen sind Ländersache, der Bund kann nur über Förderprogramme oder Vereinbarungen beitragen. Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC13341547",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8171,
+          "beschreibung": "Bestehende Netzwerke gegen Einsamkeit mit Nachbarschaftshilfen und Beratungsangeboten weiter unterstützen",
+          "ursachen_ids": [2901, 2903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bloße Weiterförderung bestehender Netzwerke schafft kaum neue Angebote. Zuständig sind Länder und Kommunen; der Bund kann nur mit Programmen und Geld beitragen. Wirkung kaum untersucht.",
+          "zitat": "Wir unterstützen die gute Arbeit bestehender Netzwerke weiter: Nachbarschaftshilfen, ehrenamtliches Engagement, Beratungsstellen und Telefonseelsorge.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=63",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8172,
+          "instrument": 8169,
+          "beschreibung": "Ambulante und stationäre Angebote für psychische Erkrankungen bedarfsgerecht verbessern",
+          "ursachen_ids": [2905],
+          "zitat": "Wir wollen die ambulanten und stationären Versorgungsangebote für psychische Erkrankungen bedarfsgerecht verbessern, insbesondere für Kinder und Jugendliche.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=70",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8173,
+          "instrument": 8142,
+          "beschreibung": "Lokale Kiez- und Nachbarschaftstreffen sowie wöchentliche Einsamkeitssprechstunden in Stadtteilzentren fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir werden Einsamkeit als gesellschaftliches Problem angehen und lokale Kiez- und Nachbarschaftstreffen fördern. Alle Stadtteilzentren sollen wöchentliche Einsamkeitssprechstunden anbieten und auf die vielfältigen Vernetzungsangebote hinweisen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=110",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8174,
+          "instrument": 8149,
+          "beschreibung": "Plauderbänke als Orte für Austausch und offene Gespräche fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir wollen „Plauderbänke“ fördern, die in Parks und auf großen Plätzen zum Austausch und zum offenen Gespräch einladen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=110",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8175,
+          "instrument": 8150,
+          "beschreibung": "Ein Landesprogramm für psychische Gesundheit und schulpsychologische Angebote ausbauen sowie Prävention und frühe Hilfen im Schulalltag verankern.",
+          "ursachen_ids": [2903],
+          "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=61",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8176,
+          "instrument": 8156,
+          "beschreibung": "Niedrigschwellige Hilfen für junge Menschen in Krisen und mit psychischen Problemen an weiteren Standorten anbieten.",
+          "ursachen_ids": [2903],
+          "zitat": "Die mentale Gesundheit rücken wir stärker in den Fokus, insbesondere bei jungen Menschen. Wir werden niedrigschwellige Angebote ausbauen, die schnelle und unbürokratische Hilfe ermöglichen. Erfolgreiche Projekte wie Soulspace wollen wir auf weitere Standorte ausweiten, um berlinweit erreichbare Anlaufstellen für junge Menschen in Krisensituationen und mit psychischen Problemen zu schaffen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=98",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8177,
+          "beschreibung": "Netzwerke, ehrenamtliches Engagement und generationenübergreifende Wohnformen zur Stärkung des gesellschaftlichen Zusammenhalts fördern.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Allgemeine Absicht, Netzwerke, Ehrenamt und Wohnformen zu fördern, ohne konkreten Weg oder Zielgruppe. Wirkung auf Einsamkeit kaum untersucht, leicht umsetzbar.",
+          "zitat": "Mit präventiven Maßnahmen, der Förderung von Netzwerken und ehrenamtlichem Engagement sowie generationenübergreifenden Wohnformen stärken wir den gesellschaftlichen Zusammenhalt.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=79",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8178,
+          "instrument": 8143,
+          "beschreibung": "Einen Beauftragten für sozialen Zusammenhalt zur Koordination des Vorgehens gegen Einsamkeit einsetzen.",
+          "ursachen_ids": [2901],
+          "zitat": "Um dieses Thema zu koordinieren, wollen wir einen Beauftragten für sozialen Zusammenhalt einsetzen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=79",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8179,
+          "instrument": 8142,
+          "beschreibung": "Landesmittel als Kofinanzierung für die Förderung von Mehrgenerationenhäusern bereitstellen.",
+          "ursachen_ids": [2901],
+          "zitat": "Darüber hinaus werden wir Landesmittel als Kofinanzierung des Bundesprogramms zur Förderung von Mehrgenerationenhäusern bereitstellen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=97",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8180,
+          "instrument": 8143,
+          "beschreibung": "Generationenmanager und Generationenwerker erproben und etablieren.",
+          "ursachen_ids": [2901],
+          "zitat": "Zudem wollen wir den Einsatz von Generationenmanagern und Generationenwerkern erproben und etablieren.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=97",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8181,
+          "instrument": 8146,
+          "beschreibung": "Die Vermittlung generationsübergreifender Wohnpartnerschaften im Konzept „Wohnen für Hilfe“ ausbauen.",
+          "ursachen_ids": [2901],
+          "zitat": "Mit der Erprobung und Etablierung des Konzeptes „Wohnen für Hilfe“ werden wir die Vermittlung von Wohnpartnerschaften zwischen Studenten und älteren Menschen ausbauen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=98",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8182,
+          "instrument": 8148,
+          "beschreibung": "Konzepte zur Vermittlung von Wunschgroßeltern zwischen Familien und älteren Menschen stärker unterstützen.",
+          "ursachen_ids": [2901],
+          "zitat": "Ebenso werden wir Konzepte wie „Wunschgroßeltern“ stärker unterstützen, bei denen Familien mit Kindern ohne Großeltern in der Nähe und Senioren ohne eigenen Enkel vermittelt werden.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=98",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8183,
+          "instrument": 8155,
+          "beschreibung": "Den Sozialpsychiatrischen Dienst zu einer Notfallnummer mit telemedizinischem Bereitschaftsdienst und schneller ärztlicher Beratung weiterentwickeln.",
+          "ursachen_ids": [2903],
+          "zitat": "Den Sozialpsychiatrischen Dienst wollen wir zu einer 24-Stunden-Notfallnummer weiterentwickeln, ergänzt durch einen bedarfsgesteuerten telemedizinischen Bereitschaftsdienst für alle Altersgruppen, der auch nach Praxisschließung eine schnelle ärztliche Beratung ermöglicht.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=75",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8184,
+          "instrument": 8142,
+          "beschreibung": "Orte der Begegnung für ältere Menschen stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir wollen Orte der Begegnung wie Mehrgenerationenhäuser oder Seniorentreffs stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8185,
+          "instrument": 8142,
+          "beschreibung": "Ehrenamtlich getragene Anlaufstellen im ländlichen Raum unterstützen, die das soziale Miteinander sichern.",
+          "ursachen_ids": [2901],
+          "zitat": "Besonders unterstützen wir ehrenamtlich getragene Anlaufstellen im ländlichen Raum, die das soziale Miteinander vor Ort sichern.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=70",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8186,
+          "instrument": 8159,
+          "beschreibung": "Psychische Gesundheit und Suizidprävention in der Präventionsarbeit stärker berücksichtigen.",
+          "ursachen_ids": [2903],
+          "zitat": "Suizidprävention und mentale Gesundheit erhalten dabei einen höheren Stellenwert.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8187,
+          "instrument": 8164,
+          "beschreibung": "Das Taschengeld im Freiwilligendienst so gestalten, dass Jugendliche aus einkommensärmeren Haushalten teilnehmen können.",
+          "ursachen_ids": [2902],
+          "zitat": "Das „Taschengeld“ wollen wir so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten sich für einen Freiwilligendienst entscheiden können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=28",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8188,
+          "beschreibung": "Antragsverfahren für Sozialleistungen vereinfachen und zentrale, niedrigschwellige Anlaufstellen entwickeln.",
+          "ursachen_ids": [2902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einfachere Anträge und zentrale Anlaufstellen können die Inanspruchnahme von Leistungen erhöhen, ändern aber kaum die Einkommenshöhe. Anlaufstellen sind kommunal, der Bund kann nur gesetzlich vereinfachen und fördern.",
+          "zitat": "Indem wir Antragsverfahren vereinfachen, Leistungen zusammenfassen und aufeinander abstimmen, wollen wir verhindern, dass man von einer Stelle zur nächsten verwiesen wird. Wir arbeiten auf zentrale Anlaufstellen hin, die für alle wohnortnah, sozialräumlich, niedrigschwellig, mehrsprachig, barrierefrei und auch digital erreichbar sind.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8189,
+          "instrument": 8146,
+          "beschreibung": "Senior*innen mit ungenutzten Zimmern und junge Menschen werden für gegenseitige Alltagshilfe und gemeinsames Wohnen vermittelt.",
+          "ursachen_ids": [2901],
+          "zitat": "Mit dem neuen Vermittlungsprogramm „Wohnen für Hilfe“ schaffen wir neue Wege für bezahlbares und generationenübergreifendes Wohnen. Wir bringen Senior*innen mit ungenutzten Zimmern mit jungen Menschen zusammen, die im Alltag unterstützen und dafür eine entsprechend verringerte Miete zahlen müssen. So entstehen Wohnpartnerschaften auf Gegenseitigkeit, die bezahlbares Wohnen ermöglichen, Einsamkeit vorbeugen und den Zusammenhalt stärken.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=20",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8190,
+          "instrument": 8147,
+          "beschreibung": "Barrierefreie, bezahlbare Alters-WGs und generationenübergreifende Wohngruppen schaffen.",
+          "ursachen_ids": [2901],
+          "zitat": "Gemeinsam mit landeseigenen Wohnungsbaugesellschaften und Genossenschaften schaffen wir gezielt barrierefreie bezahlbare Wohnangebote für Alleinerziehende, Menschen mit Behinderungen und auch für Wohngemeinschaften, wie WGs für junge Menschen, die zum Beispiel Azubis und Studierende zusammenbringen, Alters-WGs und inklusive und generationenübergreifende Wohngruppen für Menschen mit und ohne Behinderungen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=17",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8191,
+          "beschreibung": "Ein regelmäßiger stadtweiter Aktionstag soll Gemeinschaft in den Kiezen fördern und Großstadtanonymität aufbrechen.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein einzelner Aktionstag schafft Kontaktgelegenheiten, aber keine dauerhaften Beziehungen und erreicht Zurückgezogene kaum. Wirkung kaum untersucht, leicht umsetzbar.",
+          "zitat": "Mit einem regelmäßigen stadtweiten „Berlin Day“ fördern wir gezielt Gemeinschaft in unseren Kiezen und brechen Großstadtanonymität auf.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=47",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8192,
+          "instrument": 8142,
+          "beschreibung": "In jedem Bezirk neue Orte der Begegnung schaffen.",
+          "ursachen_ids": [2901],
+          "zitat": "In jedem Bezirk sollen neue Orte der Begegnung entstehen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=47",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8193,
+          "instrument": 8154,
+          "beschreibung": "Psychische Kontakt- und Beratungsstellen ausbauen und eine niedrigschwellige, wohnortnahe Versorgung ermöglichen.",
+          "ursachen_ids": [2903],
+          "zitat": "Die Kontakt- und Beratungsstellen bauen wir aus, ebenso die Psychotherapie für Kinder und Jugendliche nach SGB VIII. Ziel ist eine niedrigschwellige und wohnortnahe Versorgung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8194,
+          "instrument": 8156,
+          "beschreibung": "Niedrigschwellige Anlaufstellen für Jugendliche in seelischen Krisen ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir bauen niedrigschwellige Anlaufstellen für Jugendliche in seelischen Krisen aus, die das Regelsystem ergänzen, solange dieses nicht ausreichend Angebote für den tatsächlichen Bedarf vorhält.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=38",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8195,
+          "instrument": 8154,
+          "beschreibung": "Psychosoziale Beratung für wohnungslose Menschen als Teil ausgebauter und verstetigter Beratungs- und Versorgungsangebote.",
+          "ursachen_ids": [2903],
+          "zitat": "Parallel bauen wir Beratungs- und Versorgungsangebote aus und verstetigen sie. Dazu zählen psychosoziale Beratung […]",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=51",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8196,
+          "instrument": 8150,
+          "beschreibung": "Die mentale Gesundheit in Schulen durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte, stärken.",
+          "ursachen_ids": [2903],
+          "zitat": "Die mentale Gesundheit aller Beteiligten stärken wir, unter anderem durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=42",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8197,
+          "instrument": 8142,
+          "beschreibung": "Landesprogramm zur Schaffung von Begegnungsorten weiter unterstützen",
+          "ursachen_ids": [2901],
+          "zitat": "Wir haben ein Landesprogramm zur Schaffung von Begegnungsorten (Dritte Orte) auf den Weg gebracht, um niedrigschwelliges soziales Miteinander zu fördern und Gemeinschaft zu stärken. Dafür werden wir uns auch weiterhin einsetzen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=33",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8198,
+          "instrument": 8142,
+          "beschreibung": "Jugendclubs, soziokulturelle Zentren und Dritte Orte stärken und neu schaffen",
+          "ursachen_ids": [2901],
+          "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=36",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8199,
+          "instrument": 8152,
+          "beschreibung": "Stigmatisierung psychischer Erkrankungen entgegenwirken und Diagnostik und Therapie verbessern",
+          "ursachen_ids": [2903],
+          "zitat": "Wir wollen, dass psychische Erkrankungen von Menschen nicht mehr stigmatisiert werden und ihre Diagnostik und Therapie weiter verbessert werden.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=31",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8200,
+          "instrument": 8144,
+          "beschreibung": "Wohnortnahe Versorgungsnetzwerke und organisierte Nachbarschaftshilfe stärken",
+          "ursachen_ids": [2901],
+          "zitat": "Versorgungsnetzwerke vor Ort werden gestärkt, um ein möglichst langes Leben in Selbstständigkeit und im eigenen Wohnumfeld zu ermöglichen. Quartiersansätze, wohnortnahe Unterstützungsstrukturen und organisierte Nachbarschaftshilfe sind zentrale Bausteine.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=14",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8201,
+          "instrument": 8143,
+          "beschreibung": "Eine landesweite Strategie gegen Einsamkeit entwickeln",
+          "ursachen_ids": [2901],
+          "zitat": "Sachsen-Anhalt entwickelt deshalb eine schlüssige Strategie gegen Einsamkeit.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8202,
+          "instrument": 8145,
+          "beschreibung": "Die Engagementstrategie finanziell stärken und weiterentwickeln",
+          "ursachen_ids": [2901],
+          "zitat": "Engagement, Begegnung und Beteiligung werden gezielt gestärkt. Die landesweite Engagementstrategie wird finanziell besser untersetzt und weiterentwickelt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8203,
+          "instrument": 8145,
+          "beschreibung": "Den Engagementfonds niedrigschwellig ausbauen und Initiativen unterstützen",
+          "ursachen_ids": [2901],
+          "zitat": "Der Engagementfonds wird ausgebaut, niedrigschwellig gestaltet und bekannter gemacht, um Einzelpersonen, kleine Initiativen und informelles Engagement wirksam zu unterstützen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8204,
+          "instrument": 8145,
+          "beschreibung": "Freiwilligenagenturen und Engagementzentren strukturell fördern",
+          "ursachen_ids": [2901],
+          "zitat": "Freiwilligenagenturen und Engagementzentren werden verlässlich und strukturell gefördert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8205,
+          "instrument": 8142,
+          "beschreibung": "Stadtteilfeste, Begegnungsformate und Vernetzung vor Ort finanziell unterstützen",
+          "ursachen_ids": [2901],
+          "zitat": "Unbürokratische Unterstützung, auch finanziell, ermöglicht Stadtteilfeste, Begegnungsformate und Vernetzung vor Ort. So werden nicht nur Einsamkeit bekämpft, sondern demokratische Alltagsräume gestärkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8206,
+          "instrument": 8154,
+          "beschreibung": "Prävention und Beratung zu psychischer Gesundheit ausbauen",
+          "ursachen_ids": [2903],
+          "zitat": "Dazu werden wir Prävention, Beratung und Versorgung ausbauen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8207,
+          "instrument": 8158,
+          "beschreibung": "Gemeindepsychiatrische Verbünde stärken",
+          "ursachen_ids": [2903],
+          "zitat": "Gemeindepsychiatrische Verbünde werden gestärkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8208,
+          "instrument": 8154,
+          "beschreibung": "Passgenaue Beratung bei psychischen Belastungen queerer Menschen anbieten",
+          "ursachen_ids": [2903],
+          "zitat": "Besondere Belastungen queerer Menschen durch Diskriminierung werden durch passgenaue Beratungsangebote berücksichtigt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8209,
+          "instrument": 8161,
+          "beschreibung": "Die Jungenarbeit im Land strukturell stärken",
+          "ursachen_ids": [2904],
+          "zitat": "Um die Entwicklung von Jungen und jungen Männern im Land zu verbessern, werden wir die Jungenarbeit im Land strukturell stärken.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=27",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8210,
+          "instrument": 8163,
+          "beschreibung": "Eine Garantierente für mehr Menschen mit geringem Einkommen weiterentwickeln.",
+          "ursachen_ids": [2902],
+          "zitat": "Auch Menschen mit geringem Einkommen unterstützen wir dabei, auskömmliche Rentenansprüche zu erwerben und so Altersarmut zu vermeiden. Die Grundrente werden wir zu einer Garantierente nach 30 Versicherungsjahren weiterentwickeln, die deutlich mehr Menschen als bisher einbezieht und finanziell besserstellt.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=97",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8211,
+          "beschreibung": "Ein bundesweit vergünstigtes Nahverkehrsangebot für Menschen mit geringem Einkommen entwickeln.",
+          "ursachen_ids": [2902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein günstiges Ticket erleichtert Teilhabe finanziell, wirkt aber nur mittelbar auf Einsamkeit; Wirkung kaum untersucht. Nahverkehr ist Ländersache, der Bund braucht eine Vereinbarung und muss Mittel bereitstellen.",
+          "zitat": "Neben dem Deutschland-Semesterticket wollen wir auch Lösungen für Auszubildende und Freiwilligendienstleistende finden und zudem ein bundesweit vergünstigtes Angebot für Menschen mit geringem Einkommen entwickeln.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=49",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8212,
+          "instrument": 8164,
+          "beschreibung": "Den Zugang zum freiwilligen Engagement für Menschen mit geringem Einkommen verbessern.",
+          "ursachen_ids": [2902],
+          "zitat": "Wir werden die Zugänge zum freiwilligen Engagement auch für Menschen mit geringem Einkommen, Migrationsgeschichte oder Behinderungen verbessern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=111",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8213,
+          "instrument": 8164,
+          "beschreibung": "Sozial gestaffelte Unterstützungsmöglichkeiten für Freiwilligendienste schaffen.",
+          "ursachen_ids": [2902],
+          "zitat": "Dafür wollen wir die Bedingungen für diese Personengruppen verbessern und sozial gestaffelte Unterstützungsmöglichkeiten schaffen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=112",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8214,
+          "instrument": 8164,
+          "beschreibung": "Engagementstrukturen für ältere Menschen ausbauen, damit auch bisher schwer erreichbare Personen teilnehmen können.",
+          "ursachen_ids": [2902],
+          "zitat": "Engagementstrukturen für Ältere wollen wir ausbauen, damit sich auch diejenigen einbringen können, die bislang schwerer Zugang finden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=86",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8215,
+          "instrument": 8170,
+          "beschreibung": "Die Angebote der Mental Health Coaches an Schulen ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir bauen die Angebote der Mental Health Coaches an Schulen aus und wir setzen uns dafür ein, dass Inklusion aller Schüler*innen gemäß der UN-Behindertenrechtskonvention an allen Schulen zur gelebten Realität wird.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=77",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8216,
+          "instrument": 8170,
+          "beschreibung": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie in multiprofessionellen Teams schaffen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir schaffen mehr Stellen für Schulsozialarbeit, Schulpsychologie und Inklusion in multiprofessionellen Teams.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=77",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8217,
+          "instrument": 8169,
+          "beschreibung": "Therapieplätze bedarfsgerecht ausbauen.",
+          "ursachen_ids": [2905],
+          "zitat": "Deswegen werden wir Therapieplätze […] bedarfsgerecht ausbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=95",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8218,
+          "beschreibung": "Psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Krisenmodelle sind laut Cochrane-Übersicht gangbar, die Studienlage ist klein. Zuständig sind die Länder; der Bund kann nur mit Geld oder Vereinbarungen beitragen.",
+          "zitat": "Deswegen werden wir […] psychiatrisch-psychosoziale Krisendienste bedarfsgerecht ausbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=95",
+          "beleg_studie_url": "https://europepmc.org/article/MED/26633650",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8219,
+          "beschreibung": "Psychosoziale Zentren für Geflüchtete stärken.",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Spezialisierte, niedrigschwellige Beratung mit Sprachmittlung hilft Geflüchteten bei der Hilfesuche, erreicht aber nur diese Gruppe. Wirkung kaum untersucht; der Bund fördert die Zentren bereits.",
+          "zitat": "Psychosoziale Zentren für Geflüchtete werden wir stärken und das Recht auf Sprachmittlung verankern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=95",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8220,
+          "instrument": 8167,
+          "beschreibung": "Die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+          "ursachen_ids": [2905],
+          "zitat": "Deswegen werden wir […] die Bedarfsplanung für psychotherapeutische Angebote modernisieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=95",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8221,
+          "instrument": 8166,
+          "beschreibung": "Die angemessene Finanzierung der psychotherapeutischen Weiterbildung sicherstellen.",
+          "ursachen_ids": [2905],
+          "zitat": "Wir wollen die angemessene Finanzierung der Weiterbildung von Psychotherapeut*innen sicherstellen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=95",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8222,
+          "instrument": 8142,
+          "beschreibung": "Begegnungsräume durch generationenübergreifende Treffpunkte und bestehende Begegnungsstätten in allen Bezirken schaffen und weiterentwickeln.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir schaffen Räume für Begegnungen durch generationenübergreifende Treffpunkte in allen Bezirken und die Weiterentwicklung bestehender Begegnungsstätten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=218",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8223,
+          "beschreibung": "Gemeinschaftliche Flächen in Quartieren so gestalten, dass sie Nachbarschaft und Begegnung fördern.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gemeinsam gestaltete Flächen können zufällige Begegnungen fördern, schaffen aber kein Angebot für Alleinstehende. Wirkung auf Einsamkeit kaum untersucht, leicht umsetzbar.",
+          "zitat": "Wir unterstützen die Gestaltung von gemeinsamen Flächen, die Gemeinschaft fördern und die vielfältige Nachbarschaft zusammenbringen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=63",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8224,
+          "instrument": 8143,
+          "beschreibung": "Eine Landesstrategie gegen Einsamkeit mit gezielten Maßnahmen für sozial isolierte Menschen entwickeln.",
+          "ursachen_ids": [2901],
+          "zitat": "Gleichzeitig entwickeln wir mit einer Landesstrategie gegen Einsamkeit Maßnahmen, um gezielt Menschen zu erreichen, die von sozialer Isolation betroffen sind.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=74",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8225,
+          "instrument": 8144,
+          "beschreibung": "Mit mobiler Stadtteilarbeit Menschen erreichen, für die ein Nachbarschaftszentrum zu schwer zugänglich ist.",
+          "ursachen_ids": [2901],
+          "zitat": "Mit mobiler Stadtteilarbeit wollen wir Menschen erreichen, denen der Weg in ein Nachbarschaftszentrum bislang zu hochschwellig ist.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=74",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8226,
+          "instrument": 8147,
+          "beschreibung": "Gemeinschaftliche Wohnformen unterstützen, die Vereinsamung vorbeugen und gegenseitige Hilfe fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir unterstützen kreative und gemeinschaftliche Wohnformen, die Vereinsamung vorbeugen, gegenseitige Hilfe und Zusammenarbeit fördern und trotzdem Individualität bewahren.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=219",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8227,
+          "instrument": 8149,
+          "beschreibung": "Das Projekt der Plauderbänke in den Bezirken fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Außerdem fördern wir das Projekt der Plauderbänke in den Bezirken, um auch kurze Pausen am Wegesrand zu ermöglichen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=219",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8228,
+          "instrument": 8152,
+          "beschreibung": "Psychische Gesundheit durch Entstigmatisierung, Prävention und Früherkennung stärken.",
+          "ursachen_ids": [2903, 2904],
+          "zitat": "Wir Grüne stärken die psychische Gesundheit durch Entstigmatisierung, Prävention und Früherkennung […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8229,
+          "instrument": 8157,
+          "beschreibung": "Psychiatrische Einrichtungen fördern und niedrigschwellige Lotsen- und Vermittlungsangebote für passende Psychotherapie ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Um lange Wartezeiten zu reduzieren, fördern wir psychiatrische Einrichtungen personell und finanziell und bauen gemeinsam mit der Kassenärztlichen Vereinigung Berlin niedrigschwellige Lotsen- und Vermittlungsangebote aus, damit Menschen schneller Zugang zu passender psychotherapeutischer Versorgung erhalten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8230,
+          "instrument": 8155,
+          "beschreibung": "Integrierte, niedrigschwellige, aufsuchende und multiprofessionelle Hilfs- und Krisenangebote in allen Bezirken ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir Grüne stärken die psychische Gesundheit […] durch den Ausbau integrierter, niedrigschwelliger, aufsuchender und multiprofessioneller Hilfs- und Krisenangebote in allen Bezirken, insbesondere für Menschen mit schweren psychischen Erkrankungen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8231,
+          "instrument": 8150,
+          "beschreibung": "Präventions- und Unterstützungsangebote für Kinder und Jugendliche mit Schulpsychologie, Jugendpsychiatrie-Teams und früher Hilfe im sozialen Umfeld ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Speziell für Kinder und Jugendliche wollen wir Präventions- und Unterstützungsangebote deutlich ausbauen, unter anderem durch mehr Schulpsycholog*innen und -sozialarbeiter*innen, aufsuchende Jugendpsychiatrie-Teams, frühzeitige Hilfen im sozialen Umfeld und eine bessere Vernetzung zwischen dem Gesundheits-, Jugend- und Bildungsbereich.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8232,
+          "instrument": 8155,
+          "beschreibung": "Die anonyme Telefonsorge der „Nummer gegen Kummer“ für Kinder und Jugendliche dauerhaft erhalten.",
+          "ursachen_ids": [2903],
+          "zitat": "Außerdem setzen wir uns für den dauerhaften Erhalt der „Nummer gegen Kummer“ ein, die mit anonymer Telefonsorge für Tausende Kinder und Jugendliche in dieser Stadt unverzichtbar ist.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8233,
+          "instrument": 8159,
+          "beschreibung": "Suizidprävention systematisch verankern und Hilfsangebote stärker vernetzen und gezielt ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Suizidprävention soll dabei systematisch verankert, Hilfsangebote sollen stärker vernetzt und gezielt ausgebaut werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8234,
+          "instrument": 8154,
+          "beschreibung": "Psychosoziale und psychotherapeutische Versorgung für Geflüchtete stärken und niedrigschwelligen, bedarfsgerechten Zugang ermöglichen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir möchten daher die psychologische und psychosoziale Versorgung für Geflüchtete stärken und einen niedrigschwelligen und bedarfsgerechten Zugang zu ihr ermöglichen. Dazu gehören mehrsprachige und kultursensible Angebote, insbesondere für Kinder und Jugendliche.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=143",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8235,
+          "beschreibung": "Flächendeckende integrierte Gesundheitszentren mit therapeutischen, psychosozialen und präventiven Angeboten aufbauen.",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gesundheitszentren bündeln Angebote und können Hürden senken, der Zusammenhang mit dem Erkennen psychischer Symptome ist aber indirekt. Wirkung kaum untersucht; flächendeckender Aufbau dauert Jahre.",
+          "zitat": "Wir wollen flächendeckend integrierte Gesundheitszentren aufbauen, die ärztliche, therapeutische, psychosoziale und präventive Angebote unter einem Dach vereinen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=202",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8236,
+          "instrument": 8151,
+          "beschreibung": "Gesundheitsförderung mit Schwerpunkt psychische Gesundheit verbindlich in Kitas, Schulen, Betrieben und Senior*inneneinrichtungen integrieren.",
+          "ursachen_ids": [2903],
+          "zitat": "Die Gesundheitsförderung soll verbindlich in Kitas, Schulen, Betrieben und Senior*inneneinrichtungen integriert werden, mit Schwerpunkten auf Bewegung, gesunder Ernährung, Suchtprävention und psychischer Gesundheit.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=208",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8237,
+          "instrument": 8158,
+          "beschreibung": "Psychosoziale Versorgung durch Zusammenarbeit von Straßensozialarbeit und psychosozialen Diensten direkt in den Kiezen stärken.",
+          "ursachen_ids": [2903],
+          "zitat": "Ebenso stärken wir die psychosoziale Versorgung durch eine enge Zusammenarbeit von Straßensozialarbeit und psychosozialen Diensten direkt in den Kiezen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=73",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8238,
+          "instrument": 8142,
+          "beschreibung": "Kommunale Nachbarschaftstreffs als Orte der Geselligkeit und des gemeinsamen Arbeitens schaffen; Veranstaltungen für Menschen über 65 kostenlos anbieten.",
+          "ursachen_ids": [2901],
+          "zitat": "in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=63",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8239,
+          "instrument": 8151,
+          "beschreibung": "Mentale Gesundheit an Schulen durch Aufklärung, geschultes Personal und verlässliche Unterstützung fördern.",
+          "ursachen_ids": [2903],
+          "zitat": "Und wir fangen früh an: Mentale Gesundheit gehört in Schulen. Mit Aufklärung, geschultem Personal und verlässlicher Unterstützung sorgen wir dafür, dass junge Menschen nicht allein gelassen und sensibilisiert werden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=59",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8240,
+          "instrument": 8155,
+          "beschreibung": "Flächendeckende Krisendienste für schnelle und niedrigschwellige Hilfe in akuten Situationen aufbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "den flächendeckenden Aufbau von Krisendiensten für schnelle und niedrigschwellige Hilfe in akuten Situationen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=59",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8241,
+          "instrument": 8154,
+          "beschreibung": "Psychosoziale Beratung flächendeckend und auskömmlich finanzieren und digitale Angebote ermöglichen.",
+          "ursachen_ids": [2903],
+          "zitat": "die Beratungslandschaft sichern und ausbauen, indem unter anderem die Sozial-, Schuldner-, Sucht- und psychosoziale Beratung flächendeckend und auskömmlich finanziert sowie digitale Angebote ermöglicht werden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=64",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8242,
+          "instrument": 8152,
+          "beschreibung": "Stigmatisierung psychisch erkrankter Menschen abbauen.",
+          "ursachen_ids": [2904],
+          "zitat": "den Abbau von Stigmatisierung, die Stärkung der Teilhabe, die bessere Unterstützung neurodivergenter Menschen sowie die Förderung mentaler Gesundheit in Schulen durch Prävention, Beratung und ausreichend Schulsozialarbeit.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=60",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8243,
+          "instrument": 8142,
+          "beschreibung": "Bestehende Treffpunkte sichern und moderne Dorfzentren mit gebündelten Alltagsangeboten ermöglichen.",
+          "ursachen_ids": [2901],
+          "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=39",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8244,
+          "instrument": 8143,
+          "beschreibung": "Quartiersansätze gegen Einsamkeit bündeln, unterstützen und finanzieren.",
+          "ursachen_ids": [2901],
+          "zitat": "Mit einem Landesaktionsplan gegen Einsamkeit wollen wir diese Maßnahmen bündeln, unterstützen und finanzieren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=39",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8245,
+          "beschreibung": "Jugendorte für freie Treffen und Austausch in kleineren Städten und Gemeinden schaffen und ausbauen.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Jugendorte bieten freie Treffen, erreichen aber vor allem junge Menschen und nicht die Gruppe der Verwitweten. Wirkung auf Einsamkeit kaum untersucht, leicht umsetzbar.",
+          "zitat": "Wir wollen außerdem Jugendorte schaffen und ausbauen, wozu insbesondere unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden zählen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=56",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8246,
+          "beschreibung": "Kitas als soziale Treffpunkte und offene Familienzentren weiterentwickeln.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Familienzentren bieten Kontakt für Familien, erreichen aber kaum Verwitwete oder Ältere. Wirkung auf Einsamkeit kaum untersucht, Ausbau ist gut umsetzbar.",
+          "zitat": "Kitas sind auch soziale Treffpunkte. Wir wollen sie als offene Anlaufstellen für Bildung, Betreuung und Erziehung weiterentwickeln und enger mit Angeboten der Familienbildung verzahnen. Dazu unterstützen wir den weiteren Ausbau von Kinder- und Familienzentren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=58",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8247,
+          "instrument": 8145,
+          "beschreibung": "Selbsthilfegruppen unterstützen, um Engagement und soziale Teilhabe zu fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Initiativen wie Freiwilligenagenturen und Selbsthilfegruppen unterstützen wir, um freiwilliges Engagement zu fördern und soziale Teilhabe zu verbessern.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=74",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8248,
+          "instrument": 8148,
+          "beschreibung": "Patenschaften und Leihgroßeltern als generationenübergreifende Gemeinschaftsprojekte unterstützen.",
+          "ursachen_ids": [2901],
+          "zitat": "Modellprojekte für Patenschaften und „Leihgroßeltern“ unterstützen wir, denn sie können dazu beitragen, eine soziale Gemeinschaft zu stiften, in der Jung und Alt voneinander profitieren können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=86",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8249,
+          "instrument": 8156,
+          "beschreibung": "Niedrigschwellige Beratung und Krisenintervention zur psychischen Gesundheit für Jugendliche ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir setzen uns für den Ausbau niedrigschwelliger Beratungsangebote im Bereich der psychischen Gesundheit für Jugendliche ein […]",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=56",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8250,
+          "instrument": 8152,
+          "beschreibung": "Beratung, Prävention und Aufklärung zu psychischen Erkrankungen fördern und Stigmatisierungen abbauen.",
+          "ursachen_ids": [2903, 2904],
+          "zitat": "Initiativen zur Beratung, Prävention und Aufklärung über psychische Erkrankungen unterstützen wir, um die Versorgung nachhaltig zu sichern und Stigmatisierungen abzubauen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=84",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8251,
+          "beschreibung": "Geschlechtersensible Forschung zu Männergesundheit in Ausbildung und Klinikalltag verankern.",
+          "ursachen_ids": [2904],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Forschung in Ausbildung und Klinikalltag kann Behandler für Männer sensibilisieren, ändert aber kaum die Scham, die Männer von der Hilfesuche abhält. Wirkung kaum untersucht.",
+          "zitat": "Die mentale Gesundheit von Männern muss endlich ausreichend Beachtung finden. Wir bringen die geschlechtergerechte Forschung direkt in die Ausbildung und den Klinikalltag, damit Vorsorge und Behandlung für alle Menschen exakt passen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=82",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8252,
+          "beschreibung": "Babyboomer-Engagement gezielt für Sportangebote und Vereinsarbeit einbinden.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einbindung der Babyboomer stärkt Vereine, erreicht Verwitwete aber nur mittelbar. Vereinsförderung ist überwiegend Ländersache, der Bund kann über Engagementprogramme beitragen. Wirkung kaum untersucht.",
+          "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=32",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8253,
+          "beschreibung": "Psychische Gesundheit durch Entstigmatisierung und niedrigschwellige digitale Angebote stärken.",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Entstigmatisierung und digitale Angebote können Hürden senken, die Maßnahme nennt aber keinen konkreten Weg. Digitale Angebote wirken auf Symptome, Entstigmatisierung meist nur kurzfristig.",
+          "zitat": "Auch in der psychischen Gesundheit und im Bereich «Mental Health» wollen wir durch Entstigmatisierung und niedrigschwellige, digitale Angebote die Lebensqualität der Betroffenen stärken.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "beleg_studie_url": "https://europepmc.org/article/MED/26410341",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8254,
+          "beschreibung": "Suizidprävention spürbar ausbauen und Menschen mit Suizidgedanken Unterstützung zusichern.",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Übersicht sieht keine Einzelstrategie klar im Vorteil; ohne konkrete Bausteine bleibt die Wirkung offen. Suizidprävention ist überwiegend Länder- und Kassenaufgabe, der Bund kann mit Strategie und Geld beitragen.",
+          "zitat": "Zugleich muss der Staat jedem, der Suizidgedanken hat, die helfende Hand reichen. Die Suizidprävention wollen wir deshalb spürbar ausbauen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "beleg_studie_url": "https://europepmc.org/article/MED/27289303",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8255,
+          "instrument": 8168,
+          "beschreibung": "Das Kostenerstattungsverfahren während der Wartezeit vereinfachen und standardisieren.",
+          "ursachen_ids": [2905],
+          "zitat": "Bis zur Verkürzung der Wartezeiten wollen wir das Kostenerstattungsverfahren unbürokratischer machen und stärker standardisieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8256,
+          "instrument": 8148,
+          "beschreibung": "Den generationsübergreifenden Dialog vertiefen.",
+          "ursachen_ids": [2901],
+          "zitat": "Dazu vertiefen wir den generationsübergreifenden Dialog.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=119",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8257,
+          "instrument": 8161,
+          "beschreibung": "Eltern für traditionelle Rollenbilder sensibilisieren und geschlechtersensible Erziehung fördern.",
+          "ursachen_ids": [2904],
+          "zitat": "Eine frühe Sensibilisierung der Eltern, um tradierte Rollenbilder von Kindern bereits in den frühen Lebensjahren aufzubrechen, wollen wir mit Informationsangeboten begleiten. Kindergärten und Kitas leben eine geschlechtersensible Erziehung.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=81",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8258,
+          "instrument": 8142,
+          "beschreibung": "Senioren- und Mehrgenerationenbegegnungsstätten mit generationsübergreifenden Freizeitprogrammen gegen Vereinsamung fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir Freie Demokraten werden: […] Seniorenbegegnungsstätten oder Mehrgenerationenbegegnungsstätten mit seniorengerechten und generationsübergreifenden Freizeitprogrammen fördern, um der Vereinsamung entgegenzuwirken.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=39",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8259,
+          "instrument": 8160,
+          "beschreibung": "Digitale Mental-Health-Angebote und Online-Interventionen in die Regelversorgung an Hochschulen integrieren.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir Freie Demokraten werden: […] die Regelversorgung um digitale Mental Health-Angebote erweitern, indem dezentrale Selbstmanagement-Programme an den Hochschulen und für Studierende bekannt gemacht werden, sowie online-gestützte Interventionen in die Beratungsstruktur der Studierendenwerke implementieren",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=115",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8260,
+          "instrument": 8160,
+          "beschreibung": "Online-Interventionen in den ersten vier bis sechs Wochen bis zur Regelversorgung ohne Verzögerung ermöglichen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir Freie Demokraten werden: […] Genehmigungsvorbehalte dahingehend entbürokratisieren, dass die Ersuchen von Studierenden in den ersten vier bis sechs Wochen bis zur Gewährung einer Regelversorgung zumindest über eine online-gestützte Intervention umgehend erfüllt werden können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=115",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8261,
+          "instrument": 8142,
+          "beschreibung": "Orte der Begegnung für zivilgesellschaftliche Initiativen fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Um sozialer Isolierung und damit einhergehenden gesundheitlichen Nachteilen vorzubeugen, wollen wir Orte der Begegnung fördern, um dort zivilgesellschaftlichen Initiativen Raum zu geben, um zu wirken.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=35",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8262,
+          "instrument": 8162,
+          "beschreibung": "Erhöhung des einkommensteuerlichen Grundfreibetrags zur Entlastung niedriger Einkommen",
+          "ursachen_ids": [2902],
+          "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=59",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8263,
+          "instrument": 8145,
+          "beschreibung": "Einsamkeit im Alter durch gezielte Förderung von Teilhabe und ehrenamtlichem Engagement bekämpfen.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir setzen uns für Würde, Teilhabe und Sicherheit im Alter ein und fordern: […] Die Bekämpfung von Einsamkeit im Alter durch gezielte Förderung von Teilhabemöglichkeiten und ehrenamtlichen Engagements.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=51",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8264,
+          "instrument": 8145,
+          "beschreibung": "Heimatvereine gezielt fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir werden auch gezielt die leider nur noch selten anzutreffenden Heimatvereine fördern.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=67",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8265,
+          "instrument": 8150,
+          "beschreibung": "Die Zahl der Schulpsychologen am gestiegenen Bedarf ausrichten.",
+          "ursachen_ids": [2903],
+          "zitat": "Gewalt- und Drogenprobleme werden wir durch konsequentes Handeln unterbinden; Schulsozialarbeit wird als Landesaufgabe etabliert und die Zahl der Schulpsychologen dem gestiegenen Bedarf angepasst.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=25",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "keine_massnahme": {
+        "begruendung": "Im Kapitel XVII (S. 236–246) und den Fundstellen S. 242 und 246 geprüft; keine konkrete Zusage setzt an den zugelassenen Ursachen 2901, 2903 oder 2904 an.",
+        "stand": "2026-10-06",
+        "treffer": 4,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8266,
+          "beschreibung": "Eine sanktionsfreie Mindestsicherung am Armutsrisiko ausrichten und für Menschen ohne ausreichendes Einkommen oder Vermögen öffnen.",
+          "ursachen_ids": [2902],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Hebt das Mindesteinkommen direkt auf die Armutsschwelle; Studien zu Geldleistungen und psychischer Gesundheit sind uneinheitlich, zu Einsamkeit kaum vorhanden. Die Kosten sind hoch, die Finanzierung ungeklärt.",
+          "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen. Anspruch haben alle, die kein ausreichendes Einkommen oder Vermögen haben. Um Armut zu verhindern, orientieren wir uns an der sogenannten Armutsgefährdungsgrenze, gegenwärtig rund 1 � 400 Euro monatlich (inklusive Miete und sonstigen Wohnkosten; in Regionen mit hohen Mieten entsprechend mehr).",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8267,
+          "instrument": 8162,
+          "beschreibung": "Niedrige und mittlere Einkommen steuerlich entlasten.",
+          "ursachen_ids": [2902],
+          "zitat": "Niedrige und mittlere Einkommen werden wir entlasten. Sehr hohe Einkommen wollen wir dagegen stärker besteuern.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8268,
+          "instrument": 8165,
+          "beschreibung": "Kinder- und Jugendangebote wohnortnah, barrierefrei und gebührenfrei zugänglich machen und kommunal finanzieren.",
+          "ursachen_ids": [2902],
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8269,
+          "beschreibung": "Ein kostenloses bundesweites Senior*innen-Ticket für Mobilität und soziale Teilhabe einführen.",
+          "ursachen_ids": [2902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein kostenloses Ticket erleichtert Teilhabe finanziell, wirkt aber nur mittelbar auf Einsamkeit; Wirkung kaum untersucht. Nahverkehr ist Ländersache, die Kosten für alle Älteren sind sehr hoch und ungeklärt finanziert.",
+          "zitat": "Um die Mobilität und soziale Teilhabe von älteren Menschen zu stärken, wollen wir ein kostenloses bundesweites Senior*innen-Ticket einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=17",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8270,
+          "instrument": 8168,
+          "beschreibung": "Psychotherapien bis zu ausreichender Kassenzulassung unbürokratisch über Kostenerstattung ermöglichen.",
+          "ursachen_ids": [2905],
+          "zitat": "Solange nicht genügend zugelassene Psychotherapeut*innen zur Verfügung stehen, müssen Therapien unbürokratisch über das Kostenerstattungsverfahren ermöglicht werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8271,
+          "instrument": 8167,
+          "beschreibung": "Die Bedarfsplanung für psychotherapeutische Kassensitze am tatsächlichen Bedarf ausrichten.",
+          "ursachen_ids": [2905],
+          "zitat": "Dafür brauchen wir eine grundlegende Reform der Bedarfsplanung für vertragspsychotherapeutische Kassensitze, die sich nach dem realen Bedarf richtet.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8272,
+          "instrument": 8166,
+          "beschreibung": "Ausbildungskosten künftiger Psychotherapeut*innen deckeln.",
+          "ursachen_ids": [2905],
+          "zitat": "Die Ausbildungskosten für zukünftige Psychotherapeut*innen müssen gedeckelt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8273,
+          "instrument": 8166,
+          "beschreibung": "Psychotherapeut*innen in Ausbildung einen Beschäftigungsstatus mit Zugang zu Tarifstrukturen geben.",
+          "ursachen_ids": [2905],
+          "zitat": "Psychotherapeut*innen in Ausbildung müssen einen Beschäftigungsstatus erhalten, der ihre Einbindung in Tarifstrukturen erlaubt.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8274,
+          "instrument": 8166,
+          "beschreibung": "Die Finanzierung der Psychotherapieausbildung durch Weiterbildungsstätten gesetzlich regeln.",
+          "ursachen_ids": [2905],
+          "zitat": "Die Finanzierung der Ausbildung durch die Weiterbildungsstätten muss gesetzlich geregelt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8275,
+          "instrument": 8144,
+          "beschreibung": "Einsamkeitsbeauftragte bei landeseigenen Wohnungsunternehmen sollen ältere Mieter*innen besuchen und nachbarschaftliche Aktivitäten organisieren.",
+          "ursachen_ids": [2901],
+          "zitat": "Die Landeseigenen Wohnungsunternehmen sollen Einsamkeitsbeauftragte einstellen, die insbesondere in größeren Siedlungen ältere Mieter*innen zu Hause besuchen und Senior*innen-gerechte Aktivitäten für die Nachbarschaft organisieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=30",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8276,
+          "instrument": 8142,
+          "beschreibung": "Ein Aktionsprogramm soll nachbarschaftliche Angebote in Großsiedlungen fördern und Beteiligungsformate für das Miteinander ausbauen.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir wollen die Aufwertung von Grünflächen, den Ausbau von Sportflächen sowie von nachbarschaftlichen Angeboten fördern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8277,
+          "instrument": 8142,
+          "beschreibung": "Kiezkantinen sollen bezahlbare Mahlzeiten und soziale Begegnungsorte in der Nachbarschaft schaffen.",
+          "ursachen_ids": [2901],
+          "zitat": "Genau da wollen wir mit unseren Kiezkantinen ansetzen! Den Aufbau und Betrieb von insgesamt 20 Kiezkantinen wollen wir mit jährlich 10 Millionen Euro finanzieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8278,
+          "beschreibung": "Pilotprojekte für Sorgezentren sollen Nachbarschaft, gemeinsame Sorgearbeit und Selbstorganisation vor Ort ermöglichen.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Pilotprojekte schaffen Orte für Nachbarschaft, erreichen aber nur wenige Standorte und liefern erst später Erkenntnisse. Wirkung kaum untersucht, leicht umsetzbar.",
+          "zitat": "Wir wollen Pilotprojekte zur Schaffung von Sorgezentren starten, die Versorgungslücken im Nahraum schließen sollen, den Menschen in der Nachbarschaft den Zugang und den Raum für gemeinsame Sorgearbeit und Selbstorganisation ermöglichen und in denen Kunst, Kultur, Gesundheit und andere gemeinwohlorientierte Zwecke Raum finden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=43",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8279,
+          "beschreibung": "Ein verbindliches Landesprogramm soll Einsamkeit durch aufsuchende Maßnahmen und bezirkliche Link-Worker bekämpfen.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Link-Worker vermitteln Isolierte in Angebote vor Ort; alle neun ausgewerteten Studien berichten positive Effekte, sie sind aber klein und uneinheitlich. Neue Stellen und Strukturen brauchen Aufbauzeit.",
+          "zitat": "Wir fordern ein verbindliches Landesprogramm gegen Einsamkeit, das aufsuchende Maßnahmen und das Modell des Social Prescribing mit bezirklichen Link-Workern verbindet.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=113",
+          "beleg_studie_url": "https://europepmc.org/article/MED/34159848",
+          "evidenz": "gemischt",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8280,
+          "instrument": 8143,
+          "beschreibung": "In jedem Bezirk soll eine Einsamkeitsbeauftragte oder ein Einsamkeitsbeauftragter eingesetzt werden.",
+          "ursachen_ids": [2901],
+          "zitat": "Die Linke fordert eine*n Einsamkeitsbeauftragte*n in jedem Bezirk.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=137",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8281,
+          "beschreibung": "Ein Altenhilfestrukturgesetz soll soziale Infrastruktur für ältere Menschen bezirksübergreifend sichern und finanzieren.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Gesetz mit gesicherter Finanzierung gibt Begegnungs- und Unterstützungsangeboten für Ältere Dauer und Verbindlichkeit. Wirkung kaum untersucht; Gesetzgebung und Aufbau brauchen mehrere Jahre.",
+          "zitat": "Die Linke wird dieses Gesetz zu einem politischen Schwerpunkt machen, unverzüglich ein Gesetzgebungsverfahren auf der Grundlage des Entwurfes des Berliner Landesseniorenbeirates aus dem Jahr 2023 auf den Weg bringen und alle nötigen finanziellen Mittel bedarfsgerecht bereitstellen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=148",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8282,
+          "instrument": 8144,
+          "beschreibung": "Aufsuchende Nachbarschaftshilfe für allein lebende ältere Menschen soll ausgebaut werden.",
+          "ursachen_ids": [2901],
+          "zitat": "Vor allem für allein lebende ältere Berliner*innen müssen spezielle aufsuchende Angebote der Nachbarschaftshilfe ausgebaut werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=151",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8283,
+          "instrument": 8142,
+          "beschreibung": "Wohnortnahe soziale Treffpunkte und aufsuchende Stadtteilarbeit sollen erhalten und ausgebaut werden.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir wollen diese wohnortnahe Infrastruktur erhalten und ausbauen – zugänglich, barrierefrei und kultursensibel. Die aufsuchende Stadtteilarbeit, die der schwarz-rote Senat abgewickelt hat, wollen wir weiterführen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=243",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8284,
+          "instrument": 8145,
+          "beschreibung": "Ein zusätzlicher Fonds soll Personal und Infrastruktur im Breitensport stärken, dessen Vereine Schutzräume gegen soziale Isolation bieten.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir werden mit dem Landessportbund einen ergänzenden Fonds auflegen, der direkt in die Basis des Breitensports investiert, insbesondere zur Sicherung von Personal und zur Instandhaltung der Infrastruktur.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8285,
+          "instrument": 8151,
+          "beschreibung": "Psychische Gesundheit soll im Unterricht und in Projektwochen thematisiert werden, um Wissen zu Erkrankungen und Hilfen zu vermitteln und Stigmatisierung abzubauen.",
+          "ursachen_ids": [2903, 2904],
+          "zitat": "Psychische Gesundheit soll durch Unterricht oder Projektwochen fester Bestandteil der schulischen Bildung werden, um Kinder und Jugendliche über Erkrankungen, Versorgung und Therapieformen aufzuklären, Resilienz zu fördern und Stigmatisierung zu verringern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=137",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8286,
+          "instrument": 8155,
+          "beschreibung": "Bezirkliche Kriseninterventionszentren mit Chats und aufsuchenden Hilfen sowie der Berliner Krisendienst sollen gestärkt werden.",
+          "ursachen_ids": [2903],
+          "zitat": "Kriseninterventionszentren mit Kurzzeitaufnahme, Notfall-Chats und aufsuchenden Hilfen sollen in jedem Bezirk eingerichtet werden. Der Berliner Krisendienst soll stabil finanziert und ausgebaut werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=137",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8287,
+          "instrument": 8154,
+          "beschreibung": "Psychosoziale Kontakt- und Beratungsstellen mit Einzel- und Gruppenberatung sowie alltagsnaher Unterstützung sollen in jedem Bezirk bestehen.",
+          "ursachen_ids": [2903],
+          "zitat": "Psychosoziale Kontakt- und Beratungsstellen sollen in jedem Bezirk mit Einzel- und Gruppenberatung, Workshops und Teilhabe am Alltagsleben bestehen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=137",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8288,
+          "instrument": 8156,
+          "beschreibung": "Die psychosoziale Unterstützung junger Menschen soll vernetzt und durch Lotsen, niedrigschwellige Krisenkontakte und Anlaufstellen erreichbar werden.",
+          "ursachen_ids": [2903],
+          "zitat": "Der Jugendarbeit kommt in diesem Zusammenhang eine Lotsinnenfunktion zu: Sie hilft, bestehende Angebote wie etwa Familienberatungsstellen bekannt zu machen. Niedrigschwellige Krisenchats und -telefone sowie analoge Anlaufstellen an den realen Aufenthaltsorten von Kindern und Jugendlichen wollen wir stärken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=179",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8289,
+          "instrument": 8142,
+          "beschreibung": "Begegnungsorte und Nachbarschaftsnetzwerke gegen Einsamkeit im Alter unterstützen.",
+          "ursachen_ids": [2901],
+          "zitat": "Der Einsamkeit im Alter entgegenwirken und Begegnungsorte und Nachbarschaftsnetzwerke unterstützen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=12",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8290,
+          "instrument": 8151,
+          "beschreibung": "Resilienzförderung und Lerntrainings in schulischen Rahmenplänen verankern.",
+          "ursachen_ids": [2903],
+          "zitat": "Eingliederung von Resilienzförderung und Lerntrainings in die Rahmenpläne",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8291,
+          "instrument": 8150,
+          "beschreibung": "Digitale Hilfsangebote und flächendeckende Schulpsychologie für Kinder und Jugendliche ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Hilfsangebote ausbauen: mehr Psychotherapeut:innen, digitale Angebote und flächendeckende Schulpsycholog:innen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=11",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8292,
+          "instrument": 8151,
+          "beschreibung": "Gesundheitsförderndes Verhalten, Emotionsregulation und den Umgang mit Stress im Schulalltag verankern.",
+          "ursachen_ids": [2903],
+          "zitat": "Wichtige Kompetenzen wie gesundheitsförderndes Verhalten, Emotionsregulation und Umgang mit Stress im Schulalltag verankern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=11",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8293,
+          "instrument": 8154,
+          "beschreibung": "Die psychosoziale Beratung durch Studierendenwerke dauerhaft sichern und erweitern.",
+          "ursachen_ids": [2903],
+          "zitat": "Die psychosoziale Beratung durch die Studierendenwerke verstetigen und erweitern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=17",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8294,
+          "instrument": 8142,
+          "beschreibung": "Barrierefreie Begegnungsstätten und offene Treffpunkte fördern und erweitern.",
+          "ursachen_ids": [2901],
+          "zitat": "die Förderung und Erweiterung von Begegnungsstätten (barrierefrei) und offener Treff’s,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=58",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8295,
+          "instrument": 8144,
+          "beschreibung": "Nachbarschaftshilfe und Senior:innenassistenz mit Beratungsangeboten unterstützen.",
+          "ursachen_ids": [2901],
+          "zitat": "die Unterstützung der Modelle Nachbarschaftshilfe und Senior:innenassistenz mit Beratungsangeboten,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=59",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8296,
+          "instrument": 8148,
+          "beschreibung": "Patenschaften für Alleinstehende fördern.",
+          "ursachen_ids": [2901],
+          "zitat": "Patenschaften für Alleinstehende fördern.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=59",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8297,
+          "instrument": 8154,
+          "beschreibung": "Präventions-, Beratungs- und Behandlungsangebote für Betroffene ausbauen und bestehende Angebote unterstützen.",
+          "ursachen_ids": [2903],
+          "zitat": "Präventions-, Beratungs- und Behandlungsangebote umfassend ausbauen, erweitern und bestehende unterstützen,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=52",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8298,
+          "instrument": 8153,
+          "beschreibung": "Medizinisches Fachpersonal durch Aufklärung für Stigmata sensibilisieren und diese abbauen.",
+          "ursachen_ids": [2904],
+          "zitat": "Stigmata effektiv durch Aufklärung, insbesondere des medizinischen Fachpersonals, abbauen,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=52",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8299,
+          "beschreibung": "Psychisches Leiden infolge medizinischer Stigmata verhindern, behandeln und rechtlich ahnden.",
+          "ursachen_ids": [2904],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Stigmatisierung durch Behandelnde kann die Hilfesuche erleichtern, erreicht aber nur einen Teil der Scham. Rechtliche Ahndung ist schwer zu fassen; Wirkung kaum untersucht.",
+          "zitat": "durch Stigmata von medizinischen Fachpersonal verursachtes psychisches Leiden zu verhindern, zu behandeln und juristisch zu ahnden,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=52",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8300,
+          "instrument": 8157,
+          "beschreibung": "Lotsenstellen in die psychische Versorgung und frühe Hilfen mit Familienhebammen landesweit stärken.",
+          "ursachen_ids": [2903],
+          "zitat": "ÖGD zum Präventionsknoten machen – Lotsenstellen in die psychische Versorgung, frühe Hilfen inkl. Familienhebammen landesweit stärken,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=60",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8301,
+          "instrument": 8163,
+          "beschreibung": "Mindestrenten nach Versicherungsdauer sichern und stufenweise erhöhen",
+          "ursachen_ids": [2902],
+          "zitat": "Wir fordern eine Mindestrente von 1500 Euro nach 40 Versicherungsjahren. Wir plädieren – ähnlich wie bei unseren Nachbarländern – für ein Stufenmodell: Nach 30 Versicherungsjahren liegt die Mindestrente bei 1300 Euro und nach 15 Jahren bei 1200 Euro.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=22",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8302,
+          "instrument": 8165,
+          "beschreibung": "Wohnortnahe Freizeit- und Bildungsangebote für Kinder und Familien zugänglich machen",
+          "ursachen_ids": [2902],
+          "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=32",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8303,
+          "beschreibung": "Ausbildungsplätze für Psychotherapeutinnen und -therapeuten schaffen",
+          "ursachen_ids": [2905],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Ausbildungsplätze erhöhen langfristig die Zahl der Fachkräfte, ändern aber nicht die Kassensitze und wirken erst nach Jahren. Studienplätze sind Ländersache, der Bund kann nur beitragen.",
+          "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8304,
+          "instrument": 8142,
+          "beschreibung": "Stadtteilzentren ausbauen und dauerhaft sichern, Nachbarschafts- und Begegnungsprojekte fördern, gezielte Maßnahmen gegen Vereinsamung.",
+          "ursachen_ids": [2901],
+          "zitat": "Berlin braucht mehr Orte der Begegnung und verlässliche Angebote, die soziale Teilhabe fördern. Dazu gehören der Ausbau und die langfristige Sicherung von Stadtteilzentren, die Förderung von Nachbarschafts- und Begegnungsprojekten sowie gezielte Maßnahmen gegen Vereinsamung bei jungen Menschen, älteren Menschen und sozial Benachteiligten.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=12",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8305,
+          "instrument": 8150,
+          "beschreibung": "Schulpsychologinnen und Schulpsychologen flächendeckend an Schulen einsetzen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir fordern zudem den flächendeckenden Einsatz von Schulpsychologen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=16",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8306,
+          "instrument": 8145,
+          "beschreibung": "Sportvereine, Kulturangebote und Ehrenamt als Orte der Begegnung und sozialen Teilhabe stärken.",
+          "ursachen_ids": [2901],
+          "zitat": "Stärkung von Sportvereinen, kulturellen Angeboten und ehrenamtlichem Engagement, als zentrale Orte der Begegnung und sozialen Teilhabe.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8307,
+          "instrument": 8142,
+          "beschreibung": "Soziale Orte und Unterstützungsstrukturen im ländlichen Raum fördern, mit Mobilitätsprogrammen und niedrigschwelligen Treffpunkten.",
+          "ursachen_ids": [2901],
+          "zitat": "Förderung sozialer Orte und Unterstützungsstrukturen, insbesondere im ländlichen Raum, etwa durch gezielte Programme für Mobilität und niedrigschwellige Treffpunkte.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8308,
+          "instrument": 8143,
+          "beschreibung": "Die Landesstrategie gegen Einsamkeit mit konkreten Maßnahmen, klaren Zuständigkeiten und ausreichender Finanzierung ausbauen.",
+          "ursachen_ids": [2901],
+          "zitat": "Ausbau der Landesstrategie gegen Einsamkeit, verbunden mit konkreten Maßnahmen, klaren Zuständigkeiten und einer ausreichenden finanziellen Ausstattung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8309,
+          "instrument": 8155,
+          "beschreibung": "Krisentelefone und ambulante Hilfen für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen sichern und ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Sicherung und Ausbau von Krisentelefonen und ambulanten Hilfen, insbesondere für Menschen mit psychischen Erkrankungen und in akuten Belastungssituationen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8310,
+          "instrument": 8156,
+          "beschreibung": "Jugendsozialarbeit verlässlich finanzieren und Präventionsangebote für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Ausbau und verlässliche Finanzierung der Jugendsozialarbeit, sowie von Präventionsangeboten für Kinder und Jugendliche zur Stärkung sozialer und mentaler Gesundheit.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=15",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8311,
+          "instrument": 8150,
+          "beschreibung": "Schulen mit multiprofessionellen Teams zur Prävention psychischer Probleme ausstatten.",
+          "ursachen_ids": [2903],
+          "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen, um Schüler wie Lehrkräfte zu entlasten.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8312,
+          "instrument": 8150,
+          "beschreibung": "Mehr Schulpsychologen und dauerhaft finanzierte Schulsozialarbeit bereitstellen.",
+          "ursachen_ids": [2903],
+          "zitat": "Mehr Schulpsychologen sowie dauerhaft finanzierte Schulsozialarbeit.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=61",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8313,
+          "instrument": 8154,
+          "beschreibung": "Erziehungs- und Familienberatung mit kurzen Wartezeiten und niedrigschwelligen Zugängen stärken.",
+          "ursachen_ids": [2903],
+          "zitat": "Ergänzende Beratungs- und Unterstützungsangebote für Kinder, Jugendliche und Eltern, insbesondere Stärkung der Erziehungs- und Familienberatung, mit kurzen Wartezeiten und niedrigschwelligen Zugängen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=61",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8314,
+          "instrument": 8151,
+          "beschreibung": "Präventionsangebote zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=61",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8315,
+          "instrument": 8150,
+          "beschreibung": "Einen landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie einführen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=47",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8316,
+          "instrument": 8150,
+          "beschreibung": "Schulpsychologen präventiv einsetzen und für Lernende sowie Lehrkräfte niedrigschwellig erreichbar machen.",
+          "ursachen_ids": [2903],
+          "zitat": "Schulpsychologen müssen stärker präventiv arbeiten können und für Schülerinnen, Schüler und Lehrkräfte niedrigschwellig erreichbar sein.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=48",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8317,
+          "instrument": 8150,
+          "beschreibung": "Multiprofessionelle Teams mit Schulpsychologie als Regelangebot an Schulen etablieren.",
+          "ursachen_ids": [2903],
+          "zitat": "Multiprofessionelle Teams müssen vom Ausnahmefall zum Standard werden. Neben Schulsozialarbeit und Schulpsychologie gehören dazu Inklusionsfachkräfte, Verwaltungspersonal, IT-Unterstützung, Lehrerassistenzen und Schulgesundheitsfachkräfte.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=48",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8318,
+          "instrument": 8158,
+          "beschreibung": "Den sozialpsychiatrischen Dienst ausbauen und stärker in Jugend-, Schul- und Integrationsarbeit einbinden.",
+          "ursachen_ids": [2903],
+          "zitat": "Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=59",
+          "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}

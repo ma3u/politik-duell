@@ -1,0 +1,129 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Bedarfsgerechte Personalausstattung für alle Beschäftigtengruppen bundesweit einführen.",
+      "ursachen_ids": [2701],
+      "zitat": "Wir wollen zudem dafür sorgen, dass die bedarfsgerechte Personalausstattung bundeseinheitlich für alle Beschäftigtengruppen im Gesundheitswesen eingeführt wird.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Zusammenarbeit aller Gesundheitsberufe und Durchlässigkeit stärken sowie Befugnisse von Pflegefachpersonen erweitern.",
+      "ursachen_ids": [2701],
+      "zitat": "Darüber hinaus wollen wir die Zusammenarbeit aller Gesundheitsberufe stärken, mehr Durchlässigkeit schaffen und die Befugnisse von Pflegefachpersonen erweitern.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+      "ursachen_ids": [2701],
+      "zitat": "Um dem durch den demografischen Wandel bedingten Personalmangel entgegenzuwirken, werden wir die weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Praxisnahe und kostenfreie Ausbildungen in Gesundheitsfachberufen fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2701],
+      "zitat": "Gleichzeitig wollen wir die Attraktivität der Ausbildungen steigern, denn die Auszubildenden von heute sind die Fachkräfte von morgen. Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Ausbildungs- und Weiterbildungskapazitäten für Haus- und Kinderärzte ausbauen.",
+      "ursachen_ids": [2701],
+      "zitat": "Bei den ärztlichen Berufen wollen wir den Schwerpunkt auf die Haus- und Kinderärztinnen und -ärzte legen und den Ausbau der Ausbildungs- und Weiterbildungskapazitäten vorantreiben",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Mehr Freizeitausgleich schaffen, etwa durch eine verkürzte Wochenarbeitszeit.",
+      "ursachen_ids": [2702],
+      "zitat": "Außerdem treten wir für mehr Freizeitausgleich ein – beispielsweise durch eine verkürzte Wochenarbeitszeit.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Vergütung und Dienstzeiten während des praktischen Jahres verlässlich regeln.",
+      "ursachen_ids": [2702, 2704],
+      "zitat": "bei den Ärztinnen und Ärzten für verlässliche Regeln bei Vergütungen und Dienstzeiten während des praktischen Jahres ein.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "KI-gestützte Dokumentation ausbauen, um den Dokumentationsaufwand im Gesundheitswesen zu verringern.",
+      "ursachen_ids": [2703],
+      "zitat": "Der oft hohe Dokumentationsaufwand belastet viele Beschäftigte im Gesundheitswesen. Um dies zu verringern, setzen wir auf den Ausbau von KI-gestützter Dokumentation.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Ordentliche Tarifverträge in Gesundheit und Pflege unterstützen.",
+      "ursachen_ids": [2704],
+      "zitat": "Deshalb setzen wir uns weiterhin für ordentliche Tarifverträge in Gesundheit und Pflege ein.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Tarifgebundene Bezahlung bei Unternehmen mit Bundesaufträgen durchsetzen.",
+      "ursachen_ids": [2704],
+      "zitat": "Wir werden mit einem Bundestariftreuegesetz dafür sorgen, dass öffentliche Aufträge des Bundes nur an Unternehmen gehen, die ihre Beschäftigten nach Tarif bezahlen.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Mitbestimmungsrechte der Betriebsräte bei Personalplanung, KI, Gesundheitsschutz und Weiterbildung ausbauen.",
+      "ursachen_ids": [2705],
+      "zitat": "Wir reformieren das Betriebsverfassungsgesetz und werden die Mitbestimmung der Betriebsräte bei strategischer Personalplanung und -bemessung, bei der Einführung von Künstlicher Intelligenz sowie bei Gesundheitsschutz und Weiterbildung im Betrieb zu echten Mitbestimmungsrechten mit Einigungserfordernis ausbauen.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Zugang zu Weiterbildung und gesundheitsfördernden Maßnahmen für Beschäftigte in Gesundheitsberufen erleichtern.",
+      "ursachen_ids": [2705],
+      "zitat": "Gleichzeitig werden wir den Zugang zu Weiterbildung und gesundheitsfördernden Maßnahmen erleichtern.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Praxisanleitung in den Pflegeberufen verbessern.",
+      "ursachen_ids": [2705],
+      "zitat": "für Nachbesserungen bei der Praxisanleitung",
+      "seite": 32
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2701,
+      "name": "Weltweite Anwerbung und Integration von Gesundheitsfachkräften",
+      "seite": 32
+    },
+    {
+      "ursache": 2701,
+      "name": "Praxisnahe und kostenfreie Gesundheitsfachausbildungen",
+      "seite": 32
+    },
+    {
+      "ursache": 2701,
+      "name": "Ausbildungs- und Weiterbildungskapazitäten für Haus- und Kinderärzte",
+      "seite": 32
+    },
+    {
+      "ursache": 2702,
+      "name": "Verlässliche Dienstzeiten im praktischen Jahr",
+      "seite": 32
+    },
+    {
+      "ursache": 2704,
+      "name": "Vergütungsregeln im praktischen Jahr",
+      "seite": 32
+    },
+    {
+      "ursache": 2704,
+      "name": "Bundestariftreue bei öffentlichen Aufträgen",
+      "seite": 23
+    },
+    {
+      "ursache": 2705,
+      "name": "Praxisanleitung in Pflegeberufen",
+      "seite": 32
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 3–6; Kapitel 3 (S. 12–14), Kapitel 7 (S. 23) sowie Kapitel 10 und 11 (S. 28–32); Fundstellen S. 27, 40, 47 und 54 geprüft. Kapitel 10 und 11 vollständig gelesen.
+
+Nicht erfasst: S. 12 enthält allgemeine Aussagen zu Beschäftigten und Mitbestimmung, aber keine konkrete gesundheitsbezogene Zusage. S. 14 enthält allgemeine Aussagen zu gleicher Bezahlung und Tarifbindung, jedoch keine konkrete Maßnahme für Beschäftigte im Gesundheitswesen. S. 27 betrifft Kinder und Jugendliche, S. 40 demokratische Teilhabe, S. 47 Arbeitszeitmodelle für Eltern und S. 54 Landwirtschaft; diese Stellen setzen nicht an den Ursachen für Beschäftigte im Gesundheitswesen an. S. 30 beschreibt allgemein erwartete Zeitgewinne durch KI; die konkrete Zusage zur KI-Dokumentation ist auf S. 32 erfasst. S. 31 betrifft die Entlastung pflegender Angehöriger, nicht die Beschäftigten.
+
+Richtungen ohne Maßnahme: 2702 flexible und selbstgewählte Dienstmodelle; 2704 Entlastung und Karriereperspektiven; 2706 Sprachmittlung bereitstellen und berufsbezogene Sprachkompetenz fördern (keine Treffer im Auftrag, in Kapiteln 10 und 11 keine Zusage). Die faire Vergütung und Mitbestimmung für Auszubildende auf S. 32 ist als Ziel formuliert, ohne konkrete Umsetzungszusage.

@@ -1,0 +1,95 @@
+{
+  "id": 32,
+  "frage": "Soll Deutschland seine Verteidigungsausgaben erhöhen?",
+  "beschreibung": "Ob Deutschland mehr Geld für seine militärische Verteidigung bereitstellen soll oder nicht, wobei ein bloßer Inflationsausgleich nicht als Erhöhung zählt.",
+  "verwandte_themen": [9],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer höhere Verteidigungsausgaben befürwortet, nennt den Ausbau militärischer Fähigkeiten und den Schutz vor militärischen Bedrohungen als Ziele.",
+      "quelle_url": "https://www.kielinstitut.de/publications/time-to-spend-smart-19558/"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer höhere Verteidigungsausgaben ablehnt, nennt den Erhalt finanzieller Spielräume für andere öffentliche Aufgaben und die Vermeidung sozialer Folgekosten als Ziele.",
+      "quelle_url": "https://www.sipri.org/media/press-release/2025/unprecedented-rise-global-military-expenditure-european-and-middle-east-spending-surges"
+    }
+  ],
+  "einordnung": {
+    "ja": "Ein Programm ist ja, wenn es eine über den Inflationsausgleich hinausgehende Erhöhung der gesamten Verteidigungsausgaben gegenüber dem im Programm zugrunde gelegten Niveau fordert.",
+    "teils": "Ein Programm ist teils, wenn es eine Erhöhung nur unter ausdrücklich genannten Voraussetzungen unterstützt oder zusätzliche Mittel nur für einzelne Bereiche vorsieht, ohne eine Erhöhung der Gesamtausgaben zu befürworten.",
+    "nein": "Ein Programm ist nein, wenn es eine weitere reale Erhöhung ausdrücklich ablehnt oder die Verteidigungsausgaben real auf dem bisherigen Niveau halten oder senken will."
+  },
+  "suchbegriffe": ["verteidigungsausgab", "verteidigungshaushalt", "verteidigungsetat", "militärausgab", "rüstungsausgab", "sondervermögen", "zwei-prozent", "aufrüstung", "abrüstung", "nato-ziel"],
+  "schlagwoerter": ["verteidigungsausgaben", "militaerausgaben", "bundeswehr", "aufruestung", "krieg"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "positionen": [
+    {
+      "partei_id": 11,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 52 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Das Zwei-Prozent-Ziel wird als Untergrenze bezeichnet. Das laesst hoehere Ausgaben zu, fordert aber keine reale Erhoehung gegenueber dem zugrunde gelegten Niveau ausdruecklich; eine solche laesst sich nur vermuten.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 12,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 57 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Mehr Geld wird allgemein fuer Sicherheit angekuendigt. Fuer Verteidigung wird mindestens zwei Prozent zugesichert, nachdem bereits mehr als zwei Prozent erreicht wurden. Eine reale Erhoehung der gesamten Verteidigungsausgaben gegenueber diesem Niveau ist damit nicht ausdruecklich belegt.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 13,
+      "position": "ja",
+      "kurzfassung": "Will dauerhaft deutlich mehr als zwei Prozent des Bruttoinlandsprodukts in Sicherheit und Verteidigungsfaehigkeit investieren.",
+      "zitat": "Dafür braucht es verlässliche Finanzierung mit einem Verteidigungsetat, der dauerhaft die in der NATO vereinbarten und auch national definierten Ziele und Bedarfe erfüllt und dafür dauerhaft deutlich mehr als 2 Prozent des Bruttoinlandsprodukts in unsere Sicherheit und Verteidigungsfähigkeit investiert.",
+      "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=152",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 14,
+      "position": "teils",
+      "kurzfassung": "Will mehr in Sicherheit investieren, wenn die NATO hoehere Ziele vereinbart.",
+      "zitat": "Wir setzen uns dafür ein, dass Deutschland die NATO-Anforderungen und -Ziele vollumfänglich erfüllt. Hierzu gehört, dass Deutschland mindestens das 2%-Ziel der NATO erfüllt. Wenn die NATO höhere Ziele vereinbart, werden wir auch diese erfüllen und noch mehr in unsere Sicherheit investieren.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=48",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 15,
+      "position": "keine_aussage",
+      "begruendung": "Fundstelle S. 89 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Gute finanzielle Ausstattung und hoehere Einsatzbereitschaft werden verlangt, aber weder eine Erhoehung noch eine Begrenzung der gesamten Verteidigungsausgaben genannt.",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 16,
+      "position": "nein",
+      "kurzfassung": "Will Ruestungsausgaben drastisch senken und das Sondervermoegen fuer zivile Infrastruktur einsetzen.",
+      "zitat": "Wir wollen die Rüstungsausgaben drastisch senken und stattdessen Investitionen in Bildung, Soziales, Gesundheit und eine gerechte Transformation. Das Aufrüstungsziel der NATO auf 2 Prozent des BIP oder noch mehr lehnen wir ab. Das „Sondervermögen“ der Zeitenwende soll in zivile Infrastruktur fließen.",
+      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=23",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    },
+    {
+      "partei_id": 17,
+      "position": "nein",
+      "kurzfassung": "Lehnt hoehere Militaerausgaben, das Zwei-Prozent-Ziel und weitere Schuldenfonds fuer Aufruestung oder Militaerhilfen ab.",
+      "zitat": "Wir lehnen höhere Militärausgaben ab, die Erfüllung des Zwei-Prozent-Zieles der NATO oder gar höhere Ausgaben ebenso wie weitere Sondervermögen bzw. Schuldenfonds für die Aufrüstung der Bundeswehr oder Militärhilfen.",
+      "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=6",
+      "stand": "2026-10-06",
+      "geprueft": false,
+      "ki_entwurf": true
+    }
+  ]
+}

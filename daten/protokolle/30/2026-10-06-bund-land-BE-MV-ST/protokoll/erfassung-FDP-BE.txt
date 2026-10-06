@@ -1,0 +1,53 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Spielerschutz im Glücksspiel stärken: konsequent gegen illegale Angebote vorgehen und regulierten Anbietern sichere Rahmenbedingungen schaffen.",
+      "ursachen_ids": [3004],
+      "zitat": "Wir wollen den Spielerschutz im Glücksspiel stärker aufstellen. […] Wir wollen daher konsequent gegen illegale Angebote vorgehen und gleichzeitig Rahmenbedingungen schaffen, die regulierte Anbieter in die Lage versetzen, ein sicheres und verlässliches Umfeld zu bieten",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, besonders für junge Menschen und sozial Benachteiligte.",
+      "ursachen_ids": [3006],
+      "zitat": "Wir Liberale wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+      "seite": 117
+    },
+    {
+      "beschreibung": "Alkohol- und Medikamentenberatung in den Bezirken landesweit steuern, damit sie flächendeckend und verlässlich verfügbar ist.",
+      "ursachen_ids": [3006],
+      "zitat": "Gerade die Struktur der Alkohol- und Medikamentenberatung in den Bezirken ist uneinheitlich und unzureichend aufgestellt. Es braucht eine landesweite Steuerung, um eine flächendeckende, qualitativ hochwertige und verlässliche Versorgung sicherzustellen.",
+      "seite": 118
+    },
+    {
+      "beschreibung": "Suchtprävention mit Fokus auf junge Menschen ausbauen (Schule, Jugendarbeit, digitale Beratung) und den Zugang zu Beratung und Therapie verbessern.",
+      "ursachen_ids": [3006],
+      "zitat": "Wir Freie Demokraten setzen uns dafür ein, dass Prävention ausgebaut wird – mit einem klaren Fokus auf junge Menschen, beginnend mit der Prävention im Schul- und Jugendkontext, digitalen Beratungsangeboten und besserem Zugang zu Beratung und Therapie.",
+      "seite": 118
+    },
+    {
+      "beschreibung": "Sucht- und Präventionsarbeit im Strafvollzug absichern, mit Zugang zu Substitution und Therapie sowie Anschlussversorgung nach der Haft.",
+      "ursachen_ids": [3006],
+      "zitat": "Wir setzen uns dafür ein, dass die Sucht- und Präventionsarbeit im Strafvollzug als zentraler Bestandteil der Resozialisierung abgesichert wird. Dabei braucht es Zugang zu Substitutions- und Therapiemöglichkeiten.",
+      "seite": 118
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3001,
+      "seiten": [18],
+      "grund": "Kapitel 'Sucht und Drogen' (S. 117-118) und Fundstelle S. 18 gelesen; nichts zu Alkoholverkauf, Verkaufszeiten oder Jugendschutz bei Alkohol (S. 18 nur Suchtprävention bei Mediennutzung)."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis-Treffer (Sucht und Drogen, S. 115 gedruckt), S. 18, S. 68, S. 117-119 (Kapitel "Sucht und Drogen").
+Nicht erfasst:
+- S. 117: Grundsatzabsatz ("stigmatisieren wir Menschen nicht und lassen Betroffene nicht allein") - Leitbild ohne konkrete Handlung zu 3006.
+- S. 117-118: Drug-Checking ausbauen, Naloxon-Abgabe, Konsumräume im Kurfürstenkiez, Konsumräume (3005, Drogenpolitik/Risikominderung; keine Ursache des Auftrags).
+- S. 118: Housing First für wohnungslose Drogenkonsumierende - gehört zu Wohnungslosigkeit, nicht zu 3001/3004/3006.
+- S. 18: Informationen zur Mediennutzung zur Prävention von Suchtverhalten - Medienkonsum, keine Substanz-/Glücksspielsucht-Hilfe.
+Richtungen ohne Maßnahme: Selbstlimits und Aufklärung zu Glücksspiel (3004), Verfügbarkeit von Alkohol begrenzen und verantwortlicher Verkauf (3001), Selbsthilfe und begleitete Vermittlung/Entstigmatisierung (3006, nur Leitbild).
+Seiten ohne Text (1, 94, 100, 105) spielten keine Rolle.

@@ -1,0 +1,29 @@
+{
+  "id": 31,
+  "name": "Kosten von Studium und Ausbildung",
+  "beschreibung": "Studierende und Auszubildende haben Schwierigkeiten, Lebenshaltung, Wohnen und Ausbildung zu finanzieren. Nebenjobs und spätere Darlehensrückzahlungen können zusätzlich belasten.",
+  "ziel": "Studierende und Auszubildende können ihren Lebensunterhalt sichern und ihre Ausbildung abschließen, ohne finanziell überfordert zu werden.",
+  "schlagwoerter": ["studium", "ausbildung", "bafoeg", "ausbildungsverguetung", "nebenjob", "rueckzahlung", "studienfinanzierung"],
+  "freigabe": {
+    "datum": "2026-10-06",
+    "art": "ki"
+  },
+  "ursachen": [
+    {
+      "id": 3101,
+      "beschreibung": "Die vereinbarte Ausbildungsvergütung im ersten Jahr unterscheidet sich stark: 2023 im Handwerk durchschnittlich 816 Euro brutto, im öffentlichen Dienst 1.075 Euro (BIBB, 2025)",
+      "alltag": "Meine Ausbildungsvergütung reicht kaum zum Leben",
+      "quelle_url": "https://www.bibb.de/de/pressemitteilung_205122.php",
+      "ebene": "bund",
+      "schlagwoerter": ["azubigehalt", "ausbildungsverguetung", "ausbildungsgeld", "wenig geld"]
+    },
+    {
+      "id": 3102,
+      "beschreibung": "Studierende finanzieren sich oft durch Erwerbsarbeit: 54,7 % mit und 63,6 % ohne BAföG waren 2021 erwerbstätig, 63,1 % bzw. 57,7 % nannten die Sicherung des Lebensunterhalts als Grund",
+      "alltag": "Ich muss neben dem Studium arbeiten, um mein Leben zu bezahlen",
+      "quelle_url": "https://www.studierendenwerke.de/fileadmin/api/files/Soz22_Hauptbericht.pdf#page=11",
+      "ebene": "bund",
+      "schlagwoerter": ["nebenjob", "bafoeg", "studienfinanzierung", "lebensunterhalt", "werkstudent", "erwerbstaetigkeit"]
+    }
+  ]
+}

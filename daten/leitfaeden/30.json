@@ -1,0 +1,42 @@
+{
+  "thema_id": 30,
+  "stand": "2026-10-06",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 30), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [3001, 3002, 3003, 3004, 3005, 3006],
+      "text": "Zu 3001 Verkaufszeiten, Verkaufsstellen und Jugendschutz bei Alkohol, zu 3002 Steuern und Preise für Alkohol und Tabak, zu 3003 Werbung und Sponsoring, zu 3004 Glücksspielrecht, Spielhallen, Online-Glücksspiel und Sportwetten, zu 3005 illegale Drogen, Drogenpolitik und Risikominderung, zu 3006 Suchtberatung, Behandlung und Entstigmatisierung. Cannabis zählt zu 3005."
+    },
+    {
+      "nr": 2,
+      "text": "Psychische Gesundheit allgemein gehört zu Einsamkeit und psychische Belastung, Gewalt unter Alkoholeinfluss zu Sicherheit. Reguläre Medikamenteneinnahme ist kein Suchtproblem; Medikamentenabhängigkeit zählt nur zu 3006, wenn das Zitat Abhängigkeit oder Hilfe nennt."
+    }
+  ],
+  "suchbegriffe": {
+    "3001": {
+      "Verfügbarkeit von Alkohol begrenzen": ["verkaufszeiten", "alkoholverkauf", "alkoholverbot", "nachtverkaufsverbot", "begleitetes trinken", "abgabe von alkohol", "jugendschutz bei alkohol", "alkohol ab 18"],
+      "Verantwortlicher Verkauf und Aufklärung": ["verantwortungsvoller konsum", "alkoholprävention", "konsumkompetenz", "aufklärung über alkohol", "testkäufe"]
+    },
+    "3002": {
+      "Preise und Steuern erhöhen": ["alkoholsteuer", "tabaksteuer", "mindestpreis für alkohol", "mindestpreise", "gesundheitssteuer", "preise erhöhen"],
+      "Gezielte Beratung statt Preisregulierung": ["gezielte beratung", "keine neuen steuern", "eigenverantwortung beim konsum", "steuern senken tabak", "preisreaktion"]
+    },
+    "3003": {
+      "Werbung begrenzen": ["tabakwerbung", "alkoholwerbung", "werbeverbot", "sponsoring", "werbebeschränkung", "werbung für alkohol"],
+      "Medienkompetenz und Lebenskompetenzen stärken": ["medienkompetenz", "lebenskompetenz", "suchtprävention in schulen", "präventionsprogramme", "selbstregulation"]
+    },
+    "3004": {
+      "Glücksspielangebote begrenzen": ["glücksspielstaatsvertrag", "spielhallen", "spielautomaten", "online-casino", "sportwetten", "werbung für glücksspiel", "spielersperre", "glücksspiel"],
+      "Selbstlimits und Aufklärung": ["selbstlimits", "einsatzlimit", "spielerschutz", "aufklärung über glücksspiel", "glücksspielsucht", "spielsuchthilfe"]
+    },
+    "3005": {
+      "Angebot und Handel zurückdrängen": ["drogenhandel", "drogenkriminalität", "betäubungsmittelgesetz", "lieferketten", "bekämpfung des drogenhandels", "drogenschmuggel"],
+      "Risikominderung und Qualitätskontrolle": ["drug-checking", "drugchecking", "schadensminderung", "konsumräume", "legalisierung", "cannabis", "kontrollierte abgabe"]
+    },
+    "3006": {
+      "Suchthilfe und Behandlung ausbauen": ["suchthilfe", "suchtberatung", "suchtbehandlung", "entzugsbehandlung", "entgiftung", "drogenberatung", "suchttherapie", "substitution"],
+      "Selbsthilfe und begleitete Vermittlung": ["selbsthilfegruppen", "niedrigschwellige hilfe", "entstigmatisierung", "begleitete vermittlung", "peer"]
+    }
+  }
+}

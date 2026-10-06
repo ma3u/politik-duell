@@ -1,0 +1,964 @@
+{
+  "pruefsumme": "4890eadc9a4ae9982dda0f3cb63617b944f5e82535f3c3ccf22f8b2580b3de49",
+  "thema": {
+    "id": 27,
+    "name": "Arbeitsbelastung im Gesundheitswesen",
+    "ziel": "Beschäftigte im Gesundheitswesen können ihre Arbeit dauerhaft gesund, mit ausreichender Erholung, verlässlichen Arbeitszeiten und angemessener Entlohnung ausüben."
+  },
+  "ursachen": [
+    {
+      "id": 2701,
+      "beschreibung": "Unzureichende Personalbesetzung und zu wenig Zeit je Patient hängen mit moralischem Stress zusammen (Befragung von 976 Pflegenden in der ambulanten Pflege, 2022)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2702,
+      "beschreibung": "Wer selten oder nie Pausen machen kann, ist stärker belastet; auch ein Schichtwechsel gegen den eigenen Willen belastet (Befragung von 873 Beschäftigten, 2021)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2703,
+      "beschreibung": "Dokumentation bindet viel Zeit: In einer deutschen Pflegestudie (2024/25) nahm sie anfangs rund 54 Minuten je Frühdienst in Anspruch",
+      "ebene": "bund"
+    },
+    {
+      "id": 2704,
+      "beschreibung": "Pflegende erbringen mehr Aufwand, als sie Belohnung erfahren (ERI-Ratio 1,7; Befragung 2021 von 2.689 Pflegenden); 38,3 % hatten regelmäßig Ausstiegsgedanken",
+      "ebene": "bund"
+    },
+    {
+      "id": 2705,
+      "beschreibung": "Hohe emotionale Anforderungen, wenig Einfluss auf die Arbeit und fehlende soziale Unterstützung gehen mit stärkerem moralischem Stress einher (Befragung 2022, 976 Pflegende)",
+      "ebene": "land"
+    },
+    {
+      "id": 2706,
+      "beschreibung": "Fehlender Zugang zu Dolmetschenden bei Sprachbarrieren geht mit höherer Arbeitsbelastung einher (Befragung 2018 von 800 Beschäftigten in 22 Kliniken)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2701,
+        2702,
+        2703,
+        2704,
+        2705,
+        2706
+      ],
+      "text": "Zu 2701 Personalbemessung und -ausstattung, zu 2702 Arbeitszeit, Dienstplan, Pausen und Erholung, zu 2703 Dokumentations- und Nachweispflichten, zu 2704 Bezahlung, Tarifbindung und Anerkennung, zu 2705 Mitsprache, Führung und Unterstützung am Arbeitsplatz, zu 2706 Sprachmittlung und Verständigung. Es zählen Maßnahmen für Beschäftigte im Gesundheitswesen, nicht für Patienten."
+    },
+    {
+      "nr": 2,
+      "text": "Zahl fehlender Pflegekräfte, Eigenanteile und Angehörige gehören zu Pflege, Wartezeiten und Praxen zu Arzttermine. Ausbildung und Anwerbung zusätzlicher Fachkräfte nur dann, wenn das Zitat Entlastung der Beschäftigten oder Personalbemessung nennt, sonst als ursachen_offen [2701]."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Vergütung und Dienstzeiten während des praktischen Jahres verlässlich regeln.",
+      "zitat": "bei den Ärztinnen und Ärzten für verlässliche Regeln bei Vergütungen und Dienstzeiten während des praktischen Jahres ein.",
+      "ursachen_ids": [
+        2702,
+        2704
+      ],
+      "pruefsumme": "96523aff6feeef3f"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Digitale Zugangsrechte bei der betrieblichen Mitbestimmung klarstellen.",
+      "zitat": "Wir wollen bei der betrieblichen Mitbestimmung digitale Zugangsrechte in Anlehnung an bestehende analoge Zugangsrechte klarstellen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "1bf01fadb2d8cd45"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Beschäftigte durch Betriebsräte stärker an Entscheidungen beteiligen.",
+      "zitat": "Zugleich fördern wir die Mitbestimmung durch Betriebsräte, insbesondere in kleinen und mittleren Unternehmen, damit Beschäftigte stärker an Entscheidungen beteiligt werden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "7e283cabf1838bb6"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Mitbestimmung als Teil verbesserter Arbeitsbedingungen zur Fachkräftebindung stärken",
+      "zitat": "Arbeitsbedingungen verbessern, um FachkräŌe im Land zu halten – Gesundheitsschutz, verlässliche Arbeitszeiten und MitbesƟmmung stärken.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "3971e0332a4850dd"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Berufsbegleitende Sprachförderangebote für medizinisches Personal verankern und einheitliche Approbationsstandards konsequent anwenden.",
+      "zitat": "Wir werden auf Landesebene ergänzend dafür sorgen, dass begleitende Sprachförderangebote im Berufsalltag verankert werden und die Approbationsbehörden in [Land] die neuen bundeseinheitlichen Standards konsequent anwenden.",
+      "ursachen_ids": [
+        2706
+      ],
+      "pruefsumme": "7dffdda529a18233"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Betriebsräte und Gewerkschaften an Investitions-, Standort- und Transformationsentscheidungen beteiligen.",
+      "zitat": "Ihre Beteiligung bei Investitions-, Standort- und Transformationsentscheidungen ist unverzichtbar.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "94152c90ecd5643a"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Online-Betriebsratssitzungen und -versammlungen als gleichwertige Alternative zu Präsenzformaten ermöglichen.",
+      "zitat": "Wir ermöglichen Online-Betriebsratssitzungen und Online-Betriebsversammlungen als gleichwertige Alternativen zu Präsenzformaten.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "0bfd6b0a40fecb5a"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+      "zitat": "Um dem durch den demografischen Wandel bedingten Personalmangel entgegenzuwirken, werden wir die weltweite Anwerbung und Integration von Fachkräften ausbauen.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "d95cc350ea032f7b"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Multiprofessionelle Teams stärken, um die Arbeit im Alltag spürbar zu entlasten.",
+      "zitat": "Gleichzeitig stärken wir multiprofessionelle Teams und nutzen digitale Unterstützung, um die Arbeit im Alltag spürbar zu entlasten.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "ecd21ba27a7b21f4"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Bundeseinheitliche gesetzliche Personalbemessung für alle pflegesensitiven Bereiche vorsehen.",
+      "zitat": "Eine bundeseinheitliche, gesetzliche Personalbemessung für alle",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "2c137aa16327212a"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Zugang zu Weiterbildung und gesundheitsfördernden Maßnahmen für Beschäftigte in Gesundheitsberufen erleichtern.",
+      "zitat": "Gleichzeitig werden wir den Zugang zu Weiterbildung und gesundheitsfördernden Maßnahmen erleichtern.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "dd40495fb577c8a2"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Tarifgebundene Bezahlung bei Unternehmen mit Bundesaufträgen durchsetzen.",
+      "zitat": "Wir werden mit einem Bundestariftreuegesetz dafür sorgen, dass öffentliche Aufträge des Bundes nur an Unternehmen gehen, die ihre Beschäftigten nach Tarif bezahlen.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "bb90d9224f0f2e88"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Öffentliche Aufträge und Subventionen an die Zahlung von Tariflöhnen knüpfen.",
+      "zitat": "Um dieses Ziel zu erreichen, wollen wir ein Bündel an Maßnahmen umsetzen: Öffentliche Aufträge und Subventionen sollen nur noch an Unternehmen vergeben werden, die Tariflöhne zahlen.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "2463fb2ee5ff26f9"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Betriebs- und Personalräte stärken und das Personalvertretungsgesetz evaluieren.",
+      "zitat": "Das Tariftreuegesetz weiterentwickeln, Betriebs- und Personalräte stärken und das Personalvertretungsgesetzes evaluieren.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "949c494b81e85419"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Ehemalige Pflegekräfte und andere Gesundheitsbeschäftigte bundesweit zurückgewinnen und eine Ausbildungsoffensive starten.",
+      "zitat": "Wir fordern eine bundesweite Offensive zur Rückanwerbung von Pflegekräften und anderen Gesundheitsarbeiter*innen, die ihren Beruf verlassen haben, außerdem eine Ausbildungsoffensive",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2701
+      ],
+      "pruefsumme": "2c35df774b090064"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Durchlässige Weiterentwicklungswege und neue fachliche Rollen bis zum Masterniveau schaffen.",
+      "zitat": "Das Studium der Pflege wollen wir weiterentwickeln und stärken, um Karrieremöglichkeiten durch durchlässige Weiterentwicklungswege zu fördern – von der Pflegeassistenz bis hin zu akademischen Graden. Dazu gehört es, neue Rollen wie Advanced Practice Nurses (APN) und Community Health Nurses (CHN) auf Masterniveau zu etablieren.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "89a0e63d37a1f5ee"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Dokumentationsprozesse mit hohem Zeitaufwand vereinfachen.",
+      "zitat": "Wir stärken die Rolle von Pflegefachpersonen in der gesundheitlichen Versorgung und vereinfachen Dokumentationsprozesse, die viel Zeit in Anspruch nehmen.",
+      "ursachen_ids": [
+        2703
+      ],
+      "pruefsumme": "a38cbcd6a3cc540a"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Betriebsratswahlen erleichtern, ihre Behinderung konsequenter verfolgen und Initiator*innen besser schützen.",
+      "zitat": "Kein Betrieb ohne Betriebsrat! Betriebsratswahlen müssen einfacher werden, Behinderung von Wahlen und Betriebsräten muss strenger verfolgt und Gewerkschaften müssen verlässlich Zugang bekommen, insbesondere auch digital. Beschäftigte, die die erstmalige Wahl eines Betriebsrats initiieren, müssen gesetzlich besser geschützt werden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "d963ee1dfee6ad32"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Beschäftigte in öffentlichen Krankenhäusern sollen in Planungs- und Leitungsgremien mitentscheiden.",
+      "zitat": "Wir setzen auf gemeinwohlorientierte Organisationsstrukturen mit klarer Verantwortlichkeit: Planungs- und Leitungsgremien, in denen Beschäftigte, Patient*innenvertretungen, Bezirksvertreter*innen, das Land und der Öffentliche Gesundheitsdienst mitentscheiden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "54b67d29ef54952d"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Eine Pflegeselbstvertretung schaffen, über die Pflegekräfte Berufsordnung und Interessen selbst mitgestalten.",
+      "zitat": "Wir wollen eine professionelle Pflegeselbstvertretung gesetzlich auf den Weg bringen, damit die Berufs- und Fortbildungsordnung selbstbestimmt von den Pflegekräften entwickelt werden kann und sie eine wahrnehmbare Stimme in Politik und Selbstverwaltung bekommt.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "66bef8b310c49a74"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Durch Änderungen im Tarifvertragsgesetz die Bereitschaft zur Tarifbindung stützen.",
+      "zitat": "Wir stützen durch Änderungen im Tarifvertragsgesetz die Bereitschaft, sich an Tarifverträge zu binden.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "ca57bb0a375985f8"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "land",
+      "beschreibung": "Einen landesweiten Sprachmittlerservice als Standard für den öffentlichen Dienst und die medizinische Versorgung einführen.",
+      "zitat": "Ein landesweiter Sprachmittlerservice ist unterstützend für alle im öffentlichen Dienst und der medizinischen Versorgung Standard, um Missverständnisse zu vermeiden.",
+      "ursachen_ids": [
+        2706
+      ],
+      "pruefsumme": "f23c49bbfab3299a"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Behinderungen betrieblicher Mitbestimmung sanktionieren.",
+      "zitat": "Behinderungen von Mitbestimmung müssen konsequent sanktioniert werden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "a9ca05a3dcfd3f2b"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Mehr Freizeitausgleich schaffen, etwa durch eine verkürzte Wochenarbeitszeit.",
+      "zitat": "Außerdem treten wir für mehr Freizeitausgleich ein – beispielsweise durch eine verkürzte Wochenarbeitszeit.",
+      "ursachen_ids": [
+        2702
+      ],
+      "pruefsumme": "dd7039b3760228f3"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Ein Landesprogramm zur betrieblichen Mitbestimmung in kleinen und mittleren Unternehmen einrichten.",
+      "zitat": "Wir fordern: […] ein Landesprogramm zur Unterstützung von betrieblicher Mitbestimmung in kleinen und mittleren Unternehmen (KMU)",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "7e9fd79b85b846e2"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Springerpools puffern Belastungsspitzen ab und planbare Einsatzzeiten verbessern die Arbeitsbedingungen.",
+      "zitat": "Um dem Personalnotstand entgegenzuwirken, setzen wir auf attraktive Arbeitsbedingungen wie planbare Einsatzzeiten und Springerpools zum Abfedern von Belastungsspitzen.",
+      "ursachen_ids": [
+        2701,
+        2702
+      ],
+      "pruefsumme": "ba82aa819269d218"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Besseren gesetzlichen Schutz des medizinischen und pflegerischen Personals vor Gewalt umsetzen.",
+      "zitat": "Wir werden gesetzlich Vorsorge tragen und einen besseren Schutz der Ärzte sowie des medizinischen und pflegerischen Personals vor Gewalt umsetzen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "f2d1c542d546c8bc"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Dokumentationspflichten und Bürokratie in der Pflege auf ein Mindestmaß reduzieren.",
+      "zitat": "Und wir wollen Dokumentationspflichten und Bürokratie in der Pflege auf ein Mindestmaß reduzieren",
+      "ursachen_ids": [
+        2703
+      ],
+      "pruefsumme": "5500022b3e648e95"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Kürzere Arbeitszeiten mit vollem Lohnausgleich und notwendigem Personalausgleich unterstützen.",
+      "zitat": "Wir unterstützen die Gewerkschaften im Kampf um kürzere Arbeitszeiten bei vollem Lohn- und notwendigem Personalausgleich in allen Branchen.",
+      "ursachen_ids": [
+        2701,
+        2702
+      ],
+      "pruefsumme": "ab7bc37628b3da3b"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Entlastungstarifverträge unterstützen, refinanzieren und leichter allgemeinverbindlich machen.",
+      "zitat": "Wir unterstützen die Kämpfe um flächendeckende Entlastungstarifverträge und bessere Arbeitsbedingungen. […] Wir fordern […] die Refinanzierung von Tarifverträgen und dass Tarifverträge leichter für allgemeinverbindlich erklärt werden können (Kapitel 7).",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "f82b256425e7cc2a"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Mehr Studienplätze in Zahn- und Humanmedizin schaffen.",
+      "zitat": "Wir fordern eine Ausweitung des Angebots an Studienplätzen in Zahn- und Humanmedizin.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2701
+      ],
+      "pruefsumme": "3868db6274789e64"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Pflegekräfte sollen über die Einrichtung einer Pflegekammer abstimmen.",
+      "zitat": "Um der Pflege eine Stimme zu verleihen und die Rechte der Pflege zu stärken, stehen wir dafür, dass die Pfleger selbst darüber abstimmen sollen, ob sie die Einrichtung einer Pflegekammer […]",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "ec8dfb9420295b9b"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Mehr Pflegepersonal ausbilden und besser bezahlen.",
+      "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+      "ursachen_ids": [
+        2704
+      ],
+      "ursachen_offen": [
+        2701
+      ],
+      "pruefsumme": "b3d7995bde4ee4c3"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Ausbildungs- und Weiterbildungskapazitäten für Haus- und Kinderärzte ausbauen.",
+      "zitat": "Bei den ärztlichen Berufen wollen wir den Schwerpunkt auf die Haus- und Kinderärztinnen und -ärzte legen und den Ausbau der Ausbildungs- und Weiterbildungskapazitäten vorantreiben",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "aaad52cbeebd4694"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "land",
+      "beschreibung": "Freiwilligen Zusammenschluss von Pflegekraeften zur Interessenvertretung unterstuetzen",
+      "zitat": "Wir unterstützen den freiwilligen Zusammenschluss von Pflegekräften zur Vertretung ihrer Interessen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "47b111008bea25fb"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Einen gesetzlichen Urlaubsanspruch von sechs Wochen pro Jahr einführen.",
+      "zitat": "Wir setzen uns für einen gesetzlichen Urlaubsanspruch von 6 Wochen im Jahr ein.",
+      "ursachen_ids": [
+        2702
+      ],
+      "pruefsumme": "212d35f90e4ab410"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Mehr Pflegefachkräfte im In- und Ausland gewinnen.",
+      "zitat": "Wir wollen im Inland und Ausland mehr Pflegefachkräfte gewinnen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2701
+      ],
+      "pruefsumme": "3199c63f21462bd9"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Beschäftigtenrechte beim Einsatz von KI in Unternehmen stärken.",
+      "zitat": "Gleichzeitig fördern wir branchen- und berufsübergreifend die KI-Kompetenzen von Beschäftigten und stärken ihre Rechte bei der Anwendung von KI in Unternehmen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "e8703bb7bbc55a6b"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Öffentliche Arbeitgeber sollen mit Gewerkschaften Entlastung und gute Arbeit vereinbaren, um Personalmangel zu beheben.",
+      "zitat": "Öffentliche Verwaltungen und Betriebe in öffentlichem Eigentum müssen mit den Gewerkschaften realistische Schritte für Entlastung und gute Arbeit vereinbaren, um den Personalmangel zu beheben.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "8f3380fdfb034ad2"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Niedrigschwellige Beratung und Unterstützung für Pflegekräfte, Rettungssanitäter*innen und andere belastende Gesundheitsberufe bereitstellen.",
+      "zitat": "Wir fordern flächendeckend niedrigschwellige Beratungs- und Unterstützungsangebote für Pflegekräfte, Rettungssanitäter*innen und weitere belastende Gesundheitsberufe.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "0db265568f1594b7"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Bedarfsgerechte Personalausstattung für alle Beschäftigtengruppen bundesweit einführen.",
+      "zitat": "Wir wollen zudem dafür sorgen, dass die bedarfsgerechte Personalausstattung bundeseinheitlich für alle Beschäftigtengruppen im Gesundheitswesen eingeführt wird.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "77ef3b313df0fab5"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "land",
+      "beschreibung": "Eine unabhängige Arbeitnehmervertretung durch die Netzwerkstelle Gute Arbeit fördern.",
+      "zitat": "Darüber hinaus stärken wir die Netzwerkstelle Gute Arbeit (Joboption [Land]), um eine unabhängige Arbeitnehmervertretung zu fördern.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "01560fd315413cd3"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Ordentliche Tarifverträge in Gesundheit und Pflege unterstützen.",
+      "zitat": "Deshalb setzen wir uns weiterhin für ordentliche Tarifverträge in Gesundheit und Pflege ein.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "00bc98de75b976d3"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Die Behinderung von Betriebsratsarbeit zu einem Offizialdelikt machen.",
+      "zitat": "Die Behinderung von Betriebsratsarbeit soll durch Bundesgesetz ein Offizialdelikt werden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "24f158c4bf9a74ea"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Den gesetzlichen Mindestlohn auf mindestens 60 Prozent des Medianlohns erhöhen und an dessen Entwicklung anpassen.",
+      "zitat": "Der gesetzliche Mindestlohn muss gemäß der Europäischen Richtlinie erhöht werden – auf mindestens 60 Prozent des mittleren Einkommens (Medianlohn). Das wären schon 2025 etwa 15 Euro.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "d9c277e4430826ec"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "land",
+      "beschreibung": "Einrichtung einer Pflegekammer zur Weiterentwicklung des Pflegeberufs und Vertretung der Pflegeinteressen",
+      "zitat": "Wir setzen uns für die Einrichtung einer Pflegekammer in [Land] ein. Sie soll zur Weiterentwicklung des Berufsbildes Pflege sowie zur Weiterentwicklung und Sicherung pflegerischer Standards beitragen und die Interessen der Pflege vertreten.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "7db291dff5bf9d26"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Professionelle Sprachmittlung im Gesundheitswesen wird verlässlich finanziert.",
+      "zitat": "Professionelle Sprachmittlung im Gesundheitswesen wird verlässlich finanziert.",
+      "ursachen_ids": [
+        2706
+      ],
+      "pruefsumme": "d040674c4790ea45"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "land",
+      "beschreibung": "Zugewanderten berufsbezogene Sprachkurse anbieten, auch im ländlichen Raum.",
+      "zitat": "Unabhängig des Aufenthaltsstatus und des Alters haben alle Zugewanderten direkten Zugang zu Sprachkursen, wobei sich berufsbezogene Sprachkurse direkt anschließen, auch im ländlichen Raum.",
+      "ursachen_ids": [
+        2706
+      ],
+      "pruefsumme": "aa99d3bda8345ee0"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Verbindliche Personalbemessung mit PPR 2.0, mehr Pflegepersonal und stressfreien Schichtplänen einführen.",
+      "zitat": "Wir setzen uns für eine gesetzlich vorgeschriebene Personalbemessung ein, bei der es am Ende auch mehr Personal gibt, sowie für Schichtpläne ohne Stress. Es braucht mindestens 100 000 zusätzliche Pflegekräfte in den Krankenhäusern! Wir fordern die konsequente Umsetzung und Weiterentwicklung der Pflegepersonalregelung 2.0 (PPR 2.0) und Sanktionen bei Nichterfüllung. Die Personalbemessung soll für alle medizinischen, therapeutischen und pflegerischen Berufsgruppen verbindlich refinanziert und kontrolliert werden.",
+      "ursachen_ids": [
+        2701,
+        2702
+      ],
+      "pruefsumme": "9a4f0035e6c8054d"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "bund",
+      "beschreibung": "Beschäftigten zweimal im Berufsleben ein Sabbatjahr mit Rückkehrrecht ermöglichen.",
+      "zitat": "Beschäftigte sollen zweimal in ihrem Berufsleben die Möglichkeit haben, für ein Jahr auszusteigen (Sabbatjahr), verbunden mit einem Rückkehrrecht.",
+      "ursachen_ids": [
+        2702
+      ],
+      "pruefsumme": "9898949c58f44aea"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Das Land unterstützt die Gründung von Betriebsräten und informiert über Arbeitnehmerrechte.",
+      "zitat": "Das Land unterstützt die Gründung von Betriebsräten, informiert über Arbeitnehmerrechte und setzt klare Maßstäbe: Unternehmen, die Mitbestimmung systematisch behindern, sollen von staatlichen Förderungen ausgeschlossen werden und weitere Sanktionen erfahren.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "524057d270bbcd83"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Wegen Überlastung ausgeschiedene Pflegefachkräfte mit einer Rückkehroffensive zurückgewinnen.",
+      "zitat": "Fachkräfte, die aufgrund von Überlastung den Job verlassen haben, wollen wir mit einer Rückkehroffensive zurückgewinnen.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "a4d1c2bac80815a4"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "bund",
+      "beschreibung": "Zusammenarbeit aller Gesundheitsberufe und Durchlässigkeit stärken sowie Befugnisse von Pflegefachpersonen erweitern.",
+      "zitat": "Darüber hinaus wollen wir die Zusammenarbeit aller Gesundheitsberufe stärken, mehr Durchlässigkeit schaffen und die Befugnisse von Pflegefachpersonen erweitern.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "3fe3f660d1f08f77"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "bund",
+      "beschreibung": "Praxisnahe und kostenfreie Ausbildungen in Gesundheitsfachberufen fördern.",
+      "zitat": "Gleichzeitig wollen wir die Attraktivität der Ausbildungen steigern, denn die Auszubildenden von heute sind die Fachkräfte von morgen. Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2701
+      ],
+      "pruefsumme": "4932620a3da74901"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "bund",
+      "beschreibung": "Pflegeanbieter von unnötigen Nachweis- und Dokumentationspflichten befreien.",
+      "zitat": "Wir befreien Pflegeanbieter von doppelten Prüfungen ohne Mehrwert, unnötigen Nachweis- und Dokumentationspflichten und überbordenden Vorgaben.",
+      "ursachen_ids": [
+        2703
+      ],
+      "pruefsumme": "f66700997c6fe1c8"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "bund",
+      "beschreibung": "Die Finanzierung des notwendigen Personalaufwuchses sicherstellen.",
+      "zitat": "Eine angemessene Finanzierung des notwendigen Personalaufwuchses ist von existenzieller Bedeutung und sicherzustellen.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "64ca82dc003b7978"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "bund",
+      "beschreibung": "Für medizinisches Fachpersonal eine fachliche und sprachliche Qualifikation auf Niveau C1 verlangen.",
+      "zitat": "Sowohl die fachliche als auch sprachliche Qualifikation (Niveau C1) müssen uneingeschränkt dem deutschen Standard genügen.",
+      "ursachen_ids": [
+        2706
+      ],
+      "pruefsumme": "d5b942c7ede03b12"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "land",
+      "beschreibung": "Betriebliche Gesundheitsprävention fördern.",
+      "zitat": "Die Förderung der betrieblichen Gesundheitsprävention, des Präventionspreises und des Betriebs- und Personalrätepreises.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "725afebc0a003c50"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "bund",
+      "beschreibung": "Gründung betrieblicher Interessenvertretungen unterstützen und Online-Wahlen ermöglichen.",
+      "zitat": "Wir unterstützen die Gründung von neuen Betriebsräten und ermöglichen Online-Betriebsratswahlen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "f388aae157fe280f"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "land",
+      "beschreibung": "Landesförderungen an Tarifbindung und Mitbestimmung koppeln.",
+      "zitat": "Auch Förderungen des Landes [Land] werden wir an […] und Mitbestimmung koppeln.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "ebd3c211048d8921"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "land",
+      "beschreibung": "Beschäftigte in Gesundheits- und Pflegeberufen vor Gewalt und Belästigung schützen.",
+      "zitat": "Für gute Arbeitsbedingungen werden wir: […] die Arbeitsbedingungen in den Gesundheits- und Pflegeberufen strukturell verbessern und die Beschäftigten vor Gewalt und Belästigung schützen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "c91e65e292d095f5"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "bund",
+      "beschreibung": "Höhere Personalschlüssel für Pflegekräfte umsetzen.",
+      "zitat": "Dieses Potenzial wollen wir durch die weitere Umsetzung höherer Personalschlüssel, mehr Kompetenzen und Eigenverantwortlichkeit für den Pflegeberuf sowie durch bessere Aufstiegschancen nutzen.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "b04ba5d651fe222b"
+    },
+    {
+      "kennung": "M63",
+      "ebene": "bund",
+      "beschreibung": "KI-gestützte Dokumentation ausbauen, um den Dokumentationsaufwand im Gesundheitswesen zu verringern.",
+      "zitat": "Der oft hohe Dokumentationsaufwand belastet viele Beschäftigte im Gesundheitswesen. Um dies zu verringern, setzen wir auf den Ausbau von KI-gestützter Dokumentation.",
+      "ursachen_ids": [
+        2703
+      ],
+      "pruefsumme": "008a352648d9393e"
+    },
+    {
+      "kennung": "M64",
+      "ebene": "bund",
+      "beschreibung": "Die Mitbestimmung in öffentlichen und kirchlichen Einrichtungen an das Betriebsverfassungsgesetz anpassen.",
+      "zitat": "Die Mitbestimmung in öffentlichen und kirchlichen Einrichtungen muss an das Betriebsverfassungsgesetz angepasst werden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "4af5ab8bcb1783c8"
+    },
+    {
+      "kennung": "M65",
+      "ebene": "bund",
+      "beschreibung": "Einen Rechtsanspruch auf familienfreundliche Schichten schaffen.",
+      "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+      "ursachen_ids": [
+        2702
+      ],
+      "pruefsumme": "6c79e5f362065789"
+    },
+    {
+      "kennung": "M66",
+      "ebene": "bund",
+      "beschreibung": "Die Allgemeinverbindlichkeit von Tarifverträgen erleichtern.",
+      "zitat": "Zudem wollen wir die Allgemeinverbindlichkeitserklärung von Tarifverträgen erleichtern.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "4b1c65def14e302c"
+    },
+    {
+      "kennung": "M67",
+      "ebene": "bund",
+      "beschreibung": "Praxisanleitung in den Pflegeberufen verbessern.",
+      "zitat": "für Nachbesserungen bei der Praxisanleitung",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "cd9c9ee5a37612a5"
+    },
+    {
+      "kennung": "M68",
+      "ebene": "bund",
+      "beschreibung": "Wöchentliche statt tägliche Höchstarbeitszeit einführen und Arbeitszeit- sowie Ruhezeitvorgaben flexibilisieren.",
+      "zitat": "Wir wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen. Ebenso müssen die Vorgaben zur Arbeitszeit flexibilisiert und Öffnungsklauseln zu Ruhezeitregelungen genutzt werden.",
+      "ursachen_ids": [
+        2702
+      ],
+      "pruefsumme": "98ca52a15fc67fe7"
+    },
+    {
+      "kennung": "M69",
+      "ebene": "land",
+      "beschreibung": "Die Verfolgung von Angriffen auf Mitbestimmung durch die Staatsanwaltschaft stärken.",
+      "zitat": "Wir stärken die Schwerpunktabteilung in der Staatsanwaltschaft, die Angriffe auf Mitbestimmung ([Partei] Busting) konsequent verfolgt.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "89e48a64f304e2ea"
+    },
+    {
+      "kennung": "M70",
+      "ebene": "land",
+      "beschreibung": "Ausreichende Sprachangebote für angeworbene Pflegefachkräfte bereitstellen.",
+      "zitat": "Hierbei gilt es, sich an faire Anwerbestrukturen zu halten und die Voraussetzungen für eine schnelle Anerkennung von Ausbildungsabschlüssen zu schaffen sowie ausreichende Sprachangebote bereitzustellen.",
+      "ursachen_ids": [
+        2706
+      ],
+      "pruefsumme": "1746e686d0071e0e"
+    },
+    {
+      "kennung": "M71",
+      "ebene": "bund",
+      "beschreibung": "Mitbestimmungsrechte der Betriebsräte bei Personalplanung, KI, Gesundheitsschutz und Weiterbildung ausbauen.",
+      "zitat": "Wir reformieren das Betriebsverfassungsgesetz und werden die Mitbestimmung der Betriebsräte bei strategischer Personalplanung und -bemessung, bei der Einführung von Künstlicher Intelligenz sowie bei Gesundheitsschutz und Weiterbildung im Betrieb zu echten Mitbestimmungsrechten mit Einigungserfordernis ausbauen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "95be16ff09f3a1ce"
+    },
+    {
+      "kennung": "M72",
+      "ebene": "land",
+      "beschreibung": "Psychische Belastungen sollen kontrolliert und Gesundheitsförderung sowie die Beteiligung der Beschäftigten an Verbesserungen verbindlich verankert werden.",
+      "zitat": "Psychische Belastungen sollen in die Arbeitsstättenverordnung aufgenommen, regelmäßige Kontrollen durchgeführt und Gesundheitsförderung verbindlich umgesetzt werden. Arbeitgeber sollen stärker in die Verantwortung genommen werden und Beschäftigte sollen bei Maßnahmen zur Verbesserung mit einbezogen werden.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "b862498c7b8334cc"
+    },
+    {
+      "kennung": "M73",
+      "ebene": "land",
+      "beschreibung": "Eine Konferenz für Betriebs- und Personalräte als Dialogforum schaffen.",
+      "zitat": "Wir schaffen eine Betriebs- und Personalrätekonferenz für den direkten Dialog zwischen Politik, Gewerkschaften und Betrieben.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "941a1fed214711c7"
+    },
+    {
+      "kennung": "M74",
+      "ebene": "land",
+      "beschreibung": "Betriebliche Gesundheitsförderung und Präventionsprogramme für gesundheitsfördernde Arbeitsbedingungen in Gesundheitsfachberufen ausbauen.",
+      "zitat": "Betriebliche Gesundheitsförderung soll gezielt ausgebaut und besonders kleine und mittlere Unternehmen sollen unterstützt werden, um gesundheitsfördernde Arbeitsbedingungen und Präventionsprogramme zu etablieren. Das gilt besonders auch für die Gesundheitsfachberufe.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "9cd73f234c7126a8"
+    },
+    {
+      "kennung": "M75",
+      "ebene": "bund",
+      "beschreibung": "Digitale Anwendungen, Automatisierung und Robotik zur Entlastung des Pflegepersonals einsetzen.",
+      "zitat": "Durch digitale Anwendungen, Automatisierung und Robotik wollen wir maßgeblich zur Entlastung des Pflegepersonals beitragen.",
+      "ursachen_ids": [
+        2701
+      ],
+      "pruefsumme": "6b8e2e56415bee94"
+    },
+    {
+      "kennung": "M76",
+      "ebene": "land",
+      "beschreibung": "Ausgründungen rückgängig machen, die Mitbestimmung einschränken.",
+      "zitat": "Bereits erfolgte Ausgründungen, um Personalkosten zu senken oder die Mitbestimmung einzuschränken, machen wir rückgängig.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "8e6c2dc9abf08d4a"
+    },
+    {
+      "kennung": "M77",
+      "ebene": "land",
+      "beschreibung": "Betriebsräte durch Bildung, Gesundheitsangebote und Weiterbildung fördern.",
+      "zitat": "Betriebsratsförderung durch Bildung, Gesundheit und Weiterbildung",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "9f6adcef3ebe9a93"
+    },
+    {
+      "kennung": "M78",
+      "ebene": "bund",
+      "beschreibung": "Eine ungekürzte, leistungsgerechte Vergütung für Gesundheitsberufe vorsehen.",
+      "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2704
+      ],
+      "pruefsumme": "fb34a4985c39b0c0"
+    },
+    {
+      "kennung": "M79",
+      "ebene": "bund",
+      "beschreibung": "Arbeitsschutz stärken und Betriebsräten erzwingbare Mitbestimmung bei Personalbemessung und Belastungsvermeidung geben.",
+      "zitat": "Wir brauchen bessere Arbeitsschutzverordnungen gegen berufliche Überlastung und erzwingbare Mitbestimmung für Betriebsräte bei Personalbemessung und der Vorbeugung von Belastungen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "c84758354933fc78"
+    },
+    {
+      "kennung": "M80",
+      "ebene": "land",
+      "beschreibung": "Betriebsratsgründungen besser schützen und betriebliche Mitbestimmung stärken.",
+      "zitat": "Wir werden in den kommenden Jahren weiterhin dafür sorgen, dass [Land] - [Land] wirtschaftlich wächst und dass alle Menschen in unserem Bundesland davon profitieren, indem wir die Rahmenbedingungen für mehr Tarifbindung weiter optimieren, Betriebsratsgründungen besser schützen und betriebliche Mitbestimmung insgesamt stärken wollen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "ae78bd278280568f"
+    },
+    {
+      "kennung": "M81",
+      "ebene": "bund",
+      "beschreibung": "Die Lohnlücke in der Kranken- und Altenpflege schließen und Pflegekräfte angemessen entlohnen.",
+      "zitat": "Trotzdem besteht noch eine Lohnlücke von etwa 300 Euro. Diese muss geschlossen werden.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "52a8f5df03534437"
+    },
+    {
+      "kennung": "M82",
+      "ebene": "land",
+      "beschreibung": "Mitentscheidungsrechte der Betriebsräte bei Investitionen, Standortfragen und Digitalisierung ausweiten.",
+      "zitat": "Mitentscheidungsrechte der Betriebsräte bei Investitionen, Standortfragen und Digitalisierung",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "693aa05ee4f1c1c9"
+    },
+    {
+      "kennung": "M83",
+      "ebene": "land",
+      "beschreibung": "Handlungs- und Ermessensspielraum von Pflegekräften erweitern",
+      "zitat": "Wir werden: […] den Handlungs- und Ermessensspielraum von Pflegekräften erweitern, beruhend auf der generalisierten und akademisierten Pflegeausbildung.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "3107ca6c70441eb6"
+    },
+    {
+      "kennung": "M84",
+      "ebene": "bund",
+      "beschreibung": "Nicht-duale Ausbildungen in Gesundheitsberufen besser entlohnen.",
+      "zitat": "Ausbildungen, die nicht dual erfolgen, etwa in allen Sozial-, Gesundheits- und Erziehungsberufen, müssen besser entlohnt werden.",
+      "ursachen_ids": [
+        2704
+      ],
+      "pruefsumme": "0e0008ae6b70ec8a"
+    },
+    {
+      "kennung": "M85",
+      "ebene": "land",
+      "beschreibung": "Aufbau einer Pflegekammer fördern und evaluieren, um die Interessenvertretung und Beteiligung der Pflegeberufe zu stärken.",
+      "zitat": "Wir werden den Aufbau einer Pflegekammer fördern und ihre Wirksamkeit nach der Aufbauphase evaluieren. Ohne eine Pflegekammer bleibt die Beteiligung der Pflegeberufe in Gremien auf Landesebene unzureichend – das wollen wir ändern.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "272c3d062ef6d6aa"
+    },
+    {
+      "kennung": "M86",
+      "ebene": "land",
+      "beschreibung": "Genossenschaften und Belegschaftsmodelle als Formen betrieblicher Mitbestimmung fördern.",
+      "zitat": "Gleichzeitig fördern wir Tarifbindung und Mitbestimmung und unterstützen solidarische Wirtschaftsformen durch eine Gründungsberatung sowie die Förderung von Genossenschaften und Belegschaftsmodellen bei Unternehmen.",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "60ac5df1a6641925"
+    },
+    {
+      "kennung": "M87",
+      "ebene": "land",
+      "beschreibung": "Pflegefachkräften mehr Kompetenzen und Verantwortung übertragen.",
+      "zitat": "Pflegefachkräfte erhalten mehr Kompetenzen und Verantwortung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2705
+      ],
+      "pruefsumme": "e8a70b7536e095e8"
+    },
+    {
+      "kennung": "M88",
+      "ebene": "land",
+      "beschreibung": "Sanktionen gegen [Partei] Busting und die Behinderung von Betriebsratsarbeit einführen.",
+      "zitat": "Wir fordern: […] harte Sanktionen gegen [Partei] Busting und die Behinderung von Betriebsratsarbeit",
+      "ursachen_ids": [
+        2705
+      ],
+      "pruefsumme": "ba5c9b0766f06f3f"
+    },
+    {
+      "kennung": "M89",
+      "ebene": "bund",
+      "beschreibung": "Acht-Stunden-Tag, mindestens elf Stunden Ruhezeit zwischen Schichten und höchstens 40 Wochenstunden sichern.",
+      "zitat": "Wir verteidigen den 8-Stunden-Tag als Obergrenze und fordern mindestens 11 Stunden Ruhezeit zwischen Schichten, Ausnahmen wollen wir einschränken und die wöchentliche Höchstarbeitszeit auf 40 Stunden begrenzen.",
+      "ursachen_ids": [
+        2702
+      ],
+      "pruefsumme": "280599e3f6c9278a"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [],
+  "keine_massnahme": "Im Kapitel XVII (S. 236–246) und den Fundstellen S. 242 und 246 geprüft; keine konkrete Zusage setzt an den zugelassenen Ursachen 2901, 2903 oder 2904 an.",
+  "nicht_erfasst": [
+    {
+      "ursache": 2901,
+      "seiten": [246],
+      "grund": "Die Stelle betrifft Palliativdienste und Hospizplätze für Sterbende sowie Entlastung ihrer Angehörigen; konkrete Trauerbegleitung nach dem Tod der Partnerperson oder Begegnungsangebote werden nicht zugesagt."
+    },
+    {
+      "ursache": 2903,
+      "seiten": [242],
+      "grund": "Gesundheitskompetenz wird im Zusammenhang mit ungesunder Lebensführung und vermeidbaren Erkrankungen genannt; psychische Erkrankungen, Symptome oder Gefühle werden nicht angesprochen."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: PDF-Seiten 1–6 (Präambel; kein Inhaltsverzeichnis im Textauszug), Kapitel XVII „Gesundheit und Pflege“, S. 236–246; Fundstellen S. 242 und 246. Geprüft wurden außerdem die Abschnitte „Besser vorsorgen“, „Pflege zuhause fördern – Familienzusammenhalt stärken“ und „Ein Lebensende in Würde“.
+Nicht erfasst: Die Fundstelle S. 242 betrifft allgemeine Lebensstilprävention; S. 246 Palliativ- und Hospizversorgung während des Sterbens. Gründe und Ursachen stehen im JSON.
+Richtungen ohne Maßnahme: Begegnung und Gemeinschaft sowie professionelle Begleitung bei Verlust (2901); Aufklärung/Prävention und Beratung zu psychischer Gesundheit (2903); Entstigmatisierung und zielgruppengerechte Unterstützung für Männer (2904).
