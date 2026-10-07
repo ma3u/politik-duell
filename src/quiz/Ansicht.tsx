@@ -4,6 +4,7 @@ import { ProgrammLink } from '../components/belege'
 import { Kreuzfeld } from '../components/Kreuz'
 import { parteiStil } from '../components/stil'
 import { KI_HINWEIS_HALTUNG } from '../components/HaltungsKarte'
+import { feedbackLink } from '../feedback'
 import { POSITION_TEXT } from '../logic/haltung'
 import { anleitung } from './fragen'
 import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
@@ -312,9 +313,11 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, allein, onAntwort, on
         </button>
       )}
       {frage.art === 'mehrfach' && offen && !gesperrt && (
-        <button type="button" className="knopf knopf-gross" disabled={!auswahl.length} onClick={() => abgeben(auswahl)}>
-          Abgeben
-        </button>
+        <div className="quiz-aktion">
+          <button type="button" className="knopf knopf-gross" disabled={!auswahl.length} onClick={() => abgeben(auswahl)}>
+            Abgeben
+          </button>
+        </div>
       )}
       <p className="hinweis quiz-warten" aria-live="polite">
         {!offen
@@ -547,6 +550,20 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
           <Zielkonflikte frage={frage} />
           <KiHinweis frage={frage} />
           <p className="meta">
+            <a
+              href={feedbackLink({
+                titel: `Quiz ${frage.id}: ${frage.frage}`,
+                wo: `Quiz, Frage ${frage.id}: ${frage.frage}`,
+                art: 'Fehler in einer Frage, Position oder einem Beleg',
+              })}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fehler in dieser Frage melden
+            </a>{' '}
+            (GitHub, öffentlich)
+          </p>
+          <p className="meta">
             Positionen aus den Bundeswahlprogrammen 2025 mit Wortlaut und Seite. „Keine Aussage im Programm“ heißt: Das
             Programm wurde durchsucht, eine Position dazu nicht gefunden. Punkte gibt es fürs Wissen, was im Programm
             steht – nicht für eine Meinung.
@@ -558,18 +575,22 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
             </>
           )}
         </div>
-      ) : (
-        <button type="button" className="knopf knopf-leise knopf-klein" onClick={show.ueberspringen}>
-          Auflösung überspringen
-        </button>
-      )}
-      {istLeitung ? (
-        <button type="button" className="knopf knopf-gross" onClick={onWeiter}>
-          {letzte ? 'Zum Ergebnis' : 'Nächste Frage'}
-        </button>
-      ) : (
-        <p className="hinweis quiz-warten">Gleich geht’s weiter – {z.spieler[0]?.name ?? 'die Spielleitung'} schaltet weiter.</p>
-      )}
+      ) : null}
+      {/* Klebt unten: Weiter ist immer ohne Scrollen erreichbar. */}
+      <div className="quiz-aktion">
+        {!show.fertig && (
+          <button type="button" className="knopf knopf-leise knopf-klein" onClick={show.ueberspringen}>
+            Auflösung überspringen
+          </button>
+        )}
+        {istLeitung ? (
+          <button type="button" className="knopf knopf-gross" onClick={onWeiter}>
+            {letzte ? 'Zum Ergebnis' : 'Nächste Frage'}
+          </button>
+        ) : (
+          <p className="hinweis quiz-warten">Gleich geht’s weiter – {z.spieler[0]?.name ?? 'die Spielleitung'} schaltet weiter.</p>
+        )}
+      </div>
     </main>
   )
 }
@@ -634,17 +655,26 @@ function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: Ans
           </details>
         )
       })}
-      <div className="knopf-reihe">
-        {(istLeitung || allein) && (
-          <button type="button" className="knopf" onClick={onNochmal}>
-            Nochmal
-          </button>
-        )}
-        <button type="button" className="knopf knopf-zweit" onClick={onVerlassen}>
-          {istLeitung && !allein ? 'Raum schließen' : 'Quiz verlassen'}
-        </button>
-      </div>
       {!istLeitung && !allein && <p className="meta">Ob es noch eine Runde gibt, entscheidet die Spielleitung.</p>}
+      <p className="meta">
+        Wie war’s? Fehler entdeckt, Idee?{' '}
+        <a href={feedbackLink({ wo: 'Programm-Quiz' })} target="_blank" rel="noopener noreferrer">
+          Feedback geben
+        </a>{' '}
+        (GitHub, öffentlich)
+      </p>
+      <div className="quiz-aktion">
+        <div className="knopf-reihe">
+          {(istLeitung || allein) && (
+            <button type="button" className="knopf" onClick={onNochmal}>
+              Nochmal
+            </button>
+          )}
+          <button type="button" className="knopf knopf-zweit" onClick={onVerlassen}>
+            {istLeitung && !allein ? 'Raum schließen' : 'Quiz verlassen'}
+          </button>
+        </div>
+      </div>
     </main>
   )
 }

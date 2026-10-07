@@ -1,4 +1,5 @@
 import { useBewegung } from '../barrierefrei'
+import { feedbackLink } from '../feedback'
 import { BETREIBER } from '../rechtliches/betreiber'
 
 export function Fusszeile() {
@@ -11,6 +12,9 @@ export function Fusszeile() {
       <a href="#/impressum">Impressum</a>
       <a href="#/datenschutz">Datenschutz</a>
       <a href={BETREIBER.quellcode}>Quellcode</a>
+      <a href={feedbackLink()} target="_blank" rel="noopener noreferrer">
+        Feedback
+      </a>
       <button type="button" aria-pressed={bewegungAus} onClick={umschalten}>
         Bewegung anhalten
       </button>

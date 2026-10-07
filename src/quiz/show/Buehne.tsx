@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { SPRECHER } from './texte'
-import { setzeTon, useTon, useUntertitel } from './ton'
+import { entsperren, setzeTon, useTon, useUntertitel } from './ton'
 
 // Sichtbare Bausteine der Quiz-Show. Animationen stehen in index.css („Quiz-Show“) und ruhen bei „Bewegung
 // anhalten“ bzw. „Bewegung reduzieren“. Kein Blinken (WCAG 2.3.1).
@@ -27,7 +27,16 @@ export function UntertitelLeiste() {
 export function TonKnopf() {
   const an = useTon()
   return (
-    <button type="button" className="knopf knopf-zweit knopf-klein show-ton" aria-pressed={!an} onClick={() => setzeTon(!an)}>
+    <button
+      type="button"
+      className="knopf knopf-zweit knopf-klein show-ton"
+      aria-pressed={!an}
+      onClick={() => {
+        // Das Tippen auf den Knopf weckt auch eine angehaltene Wiedergabe (iOS).
+        entsperren()
+        setzeTon(!an)
+      }}
+    >
       {an ? 'Ton aus' : 'Ton an'}
     </button>
   )

@@ -1,0 +1,38 @@
+name: Feedback
+description: Fehler, Belege, Ideen zum Politik-Duell und zum Programm-Quiz „Wer sagt Ja?“
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Mitspielen! Dieses Issue ist **öffentlich sichtbar** – bitte keine persönlichen Daten (Namen, Adressen, Telefonnummern) eintragen.
+  - type: dropdown
+    id: art
+    attributes:
+      label: Worum geht es?
+      options:
+        - Fehler in einer Frage, Position oder einem Beleg
+        - Technisches Problem (Ton, Verbindung, Anzeige)
+        - Barrierefreiheit
+        - Idee oder Wunsch
+        - Sonstiges
+    validations:
+      required: true
+  - type: input
+    id: wo
+    attributes:
+      label: Wo?
+      description: Seite oder Frage, z. B. „Quiz, Frage h4“ (wird über den Link aus dem Spiel vorausgefüllt)
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Beschreibung
+      description: Was ist passiert, was hast du erwartet? Bei Positionen gern mit Seite im Programm.
+    validations:
+      required: true
+  - type: input
+    id: geraet
+    attributes:
+      label: Gerät und Browser (optional)
+      description: z. B. „iPhone 14, Safari“ – hilft bei technischen Problemen

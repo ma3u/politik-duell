@@ -206,7 +206,9 @@ function Datenschutz() {
       <p>
         Beleg-Links führen zu fremden Websites (z. B. Wahlprogramme, Studien); erst mit dem Klick gelten deren
         Datenschutzbestimmungen. „Teilen“ nutzt die Teilen-Funktion deines Geräts bzw. die Zwischenablage – wir
-        erfahren davon nichts. Wir laden keine Schriften oder Skripte von fremden Servern.
+        erfahren davon nichts. „Feedback“ öffnet ein Formular auf GitHub (GitHub Inc., USA): Erst wenn du es dort mit
+        deinem GitHub-Konto absendest, wird deine Rückmeldung gespeichert – öffentlich sichtbar und nach den
+        Datenschutzbestimmungen von GitHub. Die App selbst schickt dabei nichts. Wir laden keine Schriften oder Skripte von fremden Servern.
       </p>
 
       <h2>8. Moderation</h2>

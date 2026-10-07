@@ -24,16 +24,45 @@ export async function ladeShow(): Promise<void> {
   }
 }
 
-/** Muss in einer Nutzeraktion (Klick) aufgerufen werden, sonst bleibt der Ton gesperrt. */
+type AudioNavigator = Navigator & { audioSession?: { type: string } }
+type AudioFenster = Window & { webkitAudioContext?: typeof AudioContext }
+
+/** Bei jeder Berührung: eine angehaltene Wiedergabe wieder starten (iOS hält sie nach Sperre oder Anruf an). */
+function aufwecken() {
+  if (ctx && ctx.state !== 'running') void ctx.resume().catch(() => {})
+}
+
+/**
+ * Muss in einer Nutzeraktion (Tippen, Klick) aufgerufen werden, sonst bleibt der Ton gesperrt. Auf iPhone/iPad:
+ * Sitzungstyp „playback“, damit der Ton auch bei Stummschalter spielt (wie ein Video, Safari 17+), und ein
+ * stiller Mini-Ton, der ältere Versionen freischaltet.
+ */
 export function entsperren() {
-  if (typeof AudioContext === 'undefined') return
+  const AC = window.AudioContext ?? (window as AudioFenster).webkitAudioContext
+  if (!AC) return
+  const nav = navigator as AudioNavigator
+  try {
+    if (nav.audioSession) nav.audioSession.type = 'playback'
+  } catch {
+    // ältere Browser
+  }
   if (!ctx) {
-    ctx = new AudioContext()
+    ctx = new AC()
     laut = ctx.createGain()
     laut.gain.value = tonAn ? 1 : 0
     laut.connect(ctx.destination)
+    for (const art of ['pointerdown', 'touchend', 'keydown'] as const) addEventListener(art, aufwecken, { capture: true, passive: true })
+    document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && aufwecken())
   }
-  if (ctx.state === 'suspended') void ctx.resume()
+  aufwecken()
+  try {
+    const q = ctx.createBufferSource()
+    q.buffer = ctx.createBuffer(1, 1, 22050)
+    q.connect(ctx.destination)
+    q.start(0)
+  } catch {
+    // ohne Ton weiter
+  }
 }
 
 function laden(datei: string) {
