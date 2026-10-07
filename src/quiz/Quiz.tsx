@@ -6,6 +6,7 @@ import { QuizAnsicht } from './Ansicht'
 import { bereinigeName, FRAGEN_JE_SPIEL } from './spielleitung'
 import type { QuizDaten } from './typen'
 import { useGast, useSpielleitung } from './useSpiel'
+import { VERMITTLUNG } from './netz'
 import { istRaumcode, neuerRaumcode, SIGNAL_ART } from './verbindung'
 
 // Programm-Quiz „Wer sagt Ja?“ unter #/quiz (Einladung: #/quiz/<Raumcode>). Ohne Datenbank: Die Fragen kommen
@@ -221,8 +222,8 @@ function QuizStart({
 
         <p className="datenschutz">
           <strong>Datenschutz:</strong> Kein Konto, keine Cookies, keine KI, nichts wird gespeichert. Das Spiel läuft
-          zwischen euren Geräten; ein Dienst in Frankfurt vermittelt nur die Verbindung und leitet weiter, wenn es direkt
-          nicht klappt. Bei einer direkten Verbindung sehen die Geräte im Raum gegenseitig ihre IP-Adresse.{' '}
+          zwischen euren Geräten; {VERMITTLUNG} vermittelt nur die Verbindung und leitet weiter, wenn es direkt nicht
+          klappt – Nachrichten liegen dort nur, bis sie gelesen sind. Bei einer direkten Verbindung sehen die Geräte im Raum gegenseitig ihre IP-Adresse.{' '}
           <a href="#/datenschutz">Mehr erfahren</a>
         </p>
       </div>

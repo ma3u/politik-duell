@@ -13,6 +13,7 @@
     "test": "vitest run",
     "seed": "node --experimental-strip-types scripts/erzeuge-seed.ts",
     "quiz:erzeugen": "node --experimental-strip-types scripts/erzeuge-quiz.ts",
+    "quiz:aufraeumen": "node --experimental-strip-types scripts/quiz-aufraeumen.ts",
     "dashboard": "npm run seed && node --experimental-strip-types scripts/erzeuge-dashboard.ts",
     "daten:pruefen": "node --experimental-strip-types scripts/pruefe-daten.ts",
     "pruefliste": "node --experimental-strip-types scripts/erzeuge-pruefliste.ts",

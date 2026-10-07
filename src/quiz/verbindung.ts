@@ -1,17 +1,18 @@
 import { supabase } from '../data/quelle'
-import { STUN_URLS } from './netz'
+import { FIREBASE_URL, STUN_URLS } from './netz'
 import type { Weg } from './spielleitung'
 
 // Verbindungen im Quiz (docs/plan-quiz.md → „Technik“): WebRTC-Datenkanal von Browser zu Browser. Zum
-// Verbindungsaufbau dient ein flüchtiger Signalkanal – Supabase Realtime Broadcast (nichts wird gespeichert)
-// oder ohne Supabase ein BroadcastChannel zwischen Tabs desselben Browsers (zum Ausprobieren). Steht die direkte
-// Verbindung nicht rechtzeitig, leitet der Signalkanal die Spielnachrichten weiter.
+// Verbindungsaufbau dient ein flüchtiger Signalkanal – Firebase Realtime Database (Postfach je Gerät, jede
+// Nachricht wird nach dem Lesen gelöscht), Supabase Realtime Broadcast (nichts gespeichert) oder ohne beides ein
+// BroadcastChannel zwischen Tabs desselben Browsers (zum Ausprobieren). Steht die direkte Verbindung nicht
+// rechtzeitig, leitet der Signalkanal die Spielnachrichten weiter.
 
 /** Kennung der Spielleitung im Raum; Gäste bekommen eine zufällige. */
 export const LEITUNG_ID = 'leitung'
 
-/** Signalkanal: Supabase (übers Internet) oder lokal (nur Tabs dieses Browsers). */
-export const SIGNAL_ART: 'supabase' | 'lokal' = supabase ? 'supabase' : 'lokal'
+/** Signalkanal: Firebase oder Supabase (übers Internet) oder lokal (nur Tabs dieses Browsers). */
+export const SIGNAL_ART: 'firebase' | 'supabase' | 'lokal' = FIREBASE_URL ? 'firebase' : supabase ? 'supabase' : 'lokal'
 
 const SUCHE_MS = 1500
 const RAUM_AUS_MS = 12_000
@@ -67,8 +68,10 @@ export const istRaumcode = (s: string) => new RegExp(`^[${ALPHABET}]{6}$`).test(
 
 const zufallsId = () => [...crypto.getRandomValues(new Uint8Array(8))].map((b) => b.toString(16).padStart(2, '0')).join('')
 
-async function oeffneSignalweg(code: string, onSignal: (s: Signal) => void): Promise<Signalweg> {
+/** Öffnet den Signalkanal des Raums für das Gerät `ich` (Spielleitung: LEITUNG_ID). */
+async function oeffneSignalweg(code: string, ich: string, onSignal: (s: Signal) => void): Promise<Signalweg> {
   const empfang = (s: unknown) => istSignal(s) && onSignal(s)
+  if (FIREBASE_URL) return firebaseSignalweg(FIREBASE_URL, code, ich, empfang)
   if (!supabase) {
     const kanal = new BroadcastChannel(`politik-duell-quiz-${code}`)
     kanal.onmessage = (e) => empfang(e.data)
@@ -86,6 +89,108 @@ async function oeffneSignalweg(code: string, onSignal: (s: Signal) => void): Pro
   return {
     senden: (s) => void kanal.send({ type: 'broadcast', event: 'signal', payload: s }),
     schliessen: () => void sb.removeChannel(kanal),
+  }
+}
+
+/**
+ * Signalkanal über die Firebase Realtime Database (Regeln: firebase/database.rules.json), per REST und
+ * Server-Sent Events – ohne Firebase-SDK, damit im Browser nichts gespeichert wird (das SDK legte eine
+ * IndexedDB und einen localStorage-Eintrag an). Jedes Gerät hat ein Postfach `quiz/<Raum>/an/<ID>`; gelesene
+ * Nachrichten löscht der Empfänger sofort. Beim Schließen und beim Verlassen der Seite löscht jedes Gerät sein
+ * Postfach und seine ungelesenen Nachrichten, die Spielleitung den ganzen Raum.
+ */
+async function firebaseSignalweg(url: string, code: string, ich: string, empfang: (s: unknown) => void): Promise<Signalweg> {
+  const adresse = (pfad: string) => `${url}/${pfad}.json`
+  const raum = `quiz/${code}`
+  const postfach = `${raum}/an/${ich}`
+  const istLeitung = ich === LEITUNG_ID
+  const aufraeumen = istLeitung ? raum : postfach
+  /** Eigene Nachrichten, die vielleicht noch ungelesen sind (die letzten 20 genügen). */
+  const gesendet: string[] = []
+  /** Je Empfänger eine Warteschlange: Die Reihenfolge der Nachrichten bleibt erhalten. */
+  const schlangen = new Map<string, Promise<void>>()
+  const loeschen = (pfad: string, keepalive = false) =>
+    fetch(adresse(pfad), { method: 'DELETE', keepalive }).then(
+      () => {},
+      () => {},
+    )
+
+  const nachricht = (id: string, wert: unknown) => {
+    if (!wert || typeof wert !== 'object' || typeof (wert as { s?: unknown }).s !== 'string') return
+    void loeschen(`${postfach}/${id}`)
+    try {
+      empfang(JSON.parse((wert as { s: string }).s))
+    } catch {
+      // kaputte Nachricht: verwerfen
+    }
+  }
+  // Streaming der REST-Schnittstelle: „put“/„patch“ mit { path, data }; path "/" = ganzes Postfach.
+  const bearbeite = (e: MessageEvent<string>) => {
+    let d: { path?: unknown; data?: unknown }
+    try {
+      d = JSON.parse(e.data)
+    } catch {
+      return
+    }
+    if (typeof d?.path !== 'string' || d.data === null || d.data === undefined) return
+    if (d.path === '/') {
+      if (typeof d.data === 'object') for (const [id, wert] of Object.entries(d.data as object)) nachricht(id, wert)
+    } else if (/^\/[^/]+$/.test(d.path)) nachricht(d.path.slice(1), d.data)
+  }
+
+  const quelle = new EventSource(adresse(postfach))
+  quelle.addEventListener('put', bearbeite)
+  quelle.addEventListener('patch', bearbeite)
+  try {
+    await new Promise<void>((ok, fehler) => {
+      const t = setTimeout(() => fehler(new RaumFehler('signal')), 10_000)
+      quelle.onopen = () => {
+        clearTimeout(t)
+        ok()
+      }
+      quelle.onerror = () => {
+        if (quelle.readyState !== EventSource.CLOSED) return
+        clearTimeout(t)
+        fehler(new RaumFehler('signal'))
+      }
+      quelle.addEventListener('cancel', () => fehler(new RaumFehler('signal')))
+    })
+  } catch (e) {
+    quelle.close()
+    throw e
+  }
+
+  const beimVerlassen = () => {
+    for (const pfad of gesendet) void loeschen(pfad, true)
+    void loeschen(aufraeumen, true)
+  }
+  addEventListener('pagehide', beimVerlassen)
+
+  return {
+    senden(s) {
+      const an = s.typ === 'suche' ? LEITUNG_ID : s.an
+      const ziel = `${raum}/an/${an}`
+      const weiter = (schlangen.get(an) ?? Promise.resolve()).then(async () => {
+        const r = await fetch(adresse(ziel), {
+          method: 'POST',
+          body: JSON.stringify({ s: JSON.stringify(s), t: { '.sv': 'timestamp' } }),
+        })
+        if (!r.ok || istLeitung) return
+        const { name } = (await r.json()) as { name?: unknown }
+        if (typeof name !== 'string') return
+        gesendet.push(`${ziel}/${name}`)
+        if (gesendet.length > 20) gesendet.shift()
+      })
+      schlangen.set(an, weiter.catch(() => {}))
+    },
+    schliessen() {
+      quelle.close()
+      removeEventListener('pagehide', beimVerlassen)
+      // Erst noch Ausstehendes senden (etwa „tschuess“), dann aufräumen.
+      void Promise.all(schlangen.values()).then(() =>
+        Promise.all([...gesendet.map((pfad) => loeschen(pfad)), loeschen(aufraeumen)]),
+      )
+    },
   }
 }
 
@@ -127,7 +232,7 @@ function datenkanalLeitung(dc: RTCDataChannel, pc: RTCPeerConnection): Leitung {
 /** Weiterleitung über den Signalkanal – wenn keine direkte Verbindung zustande kommt. */
 function relaisLeitung(weg: Signalweg, ich: string, du: string, nachSchliessen?: () => void): Leitung {
   return {
-    weg: SIGNAL_ART === 'supabase' ? 'server' : 'lokal',
+    weg: SIGNAL_ART === 'lokal' ? 'lokal' : 'server',
     senden: (daten) => weg.senden({ typ: 'daten', von: ich, an: du, daten }),
     schliessen: () => {
       weg.senden({ typ: 'tschuess', von: ich, an: du })
@@ -223,7 +328,7 @@ export async function eroeffneRaum(
   }
 
   const oeffnen = async () => {
-    weg = await oeffneSignalweg(code, (s) => void onSignal(s).catch(() => {}))
+    weg = await oeffneSignalweg(code, LEITUNG_ID, (s) => void onSignal(s).catch(() => {}))
     if (geschlossen) weg.schliessen()
   }
   await oeffnen()
@@ -267,7 +372,7 @@ export async function betrete(code: string, abbruch: AbortSignal): Promise<Leitu
     timer.forEach(clearInterval)
   }
 
-  const weg = await oeffneSignalweg(code, (s) => void onSignal(s).catch(() => {}))
+  const weg = await oeffneSignalweg(code, ich, (s) => void onSignal(s).catch(() => {}))
   if (abbruch.aborted) {
     weg.schliessen()
     throw new DOMException('abgebrochen', 'AbortError')

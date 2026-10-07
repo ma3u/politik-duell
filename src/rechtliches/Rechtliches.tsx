@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Logo } from '../components/Logo'
 import { BETREIBER, betreiberVollstaendig, DATENSCHUTZ_STAND } from './betreiber'
 import { Methode } from './Methode'
-import { STUN_URLS, stunHost } from '../quiz/netz'
+import { FIREBASE_URL, firebaseStandort, STUN_URLS, stunHost } from '../quiz/netz'
 
 // Impressum (#/impressum), Datenschutzerklärung (#/datenschutz) und Methode (#/methode).
 // Die Texte beschreiben, was die App tatsächlich tut – bei Änderungen an
@@ -275,14 +275,32 @@ function Datenschutz() {
         Arbeitsspeicher und ist weg, wenn ihr die Seite schließt. Wir speichern davon nichts. Der Raumcode steht im
         hinteren Teil der Adresse (nach „#“) und wird deshalb nicht an unseren Webserver übertragen.
       </p>
-      <p>
-        <strong>Verbindungsaufbau:</strong> Damit sich die Geräte finden, tauschen sie über einen Kanal bei Supabase
-        (Supabase Realtime, Rechenzentrum in Frankfurt am Main) kurz technische Verbindungsangaben aus. Darin können
-        Netzwerkadressen der Geräte stehen; alle Geräte im Raum empfangen sie. Die Nachrichten werden weitergeleitet,
-        aber nicht gespeichert; für die kurzzeitigen Zugriffsprotokolle von Supabase gilt Abschnitt 3. Danach sind die
-        Geräte direkt miteinander verbunden (WebRTC), und die Spielleitung schließt den Kanal. Klappt keine direkte
-        Verbindung, leitet derselbe Kanal die Spielnachrichten weiter – ebenfalls ohne sie zu speichern.
-      </p>
+      {FIREBASE_URL ? (
+        <p>
+          <strong>Verbindungsaufbau:</strong> Damit sich die Geräte finden, tauschen sie kurz technische
+          Verbindungsangaben über die Firebase Realtime Database aus (Google Ireland Limited, Dublin; Rechenzentrum in{' '}
+          {firebaseStandort(FIREBASE_URL)}). Darin können Netzwerkadressen der Geräte stehen. Jede Nachricht liegt dort
+          nur, bis das empfangende Gerät sie gelesen hat – in der Regel Sekundenbruchteile – und wird dann gelöscht;
+          beim Verlassen löscht jedes Gerät seine noch ungelesenen Nachrichten, die Spielleitung den ganzen Raum. Bricht
+          ein Gerät ohne Abmeldung ab, können einzelne Nachrichten liegen bleiben; die löschen wir automatisch, sobald
+          sie älter als eine Stunde sind (einmal täglich). Google verarbeitet dabei technisch notwendige
+          Verbindungsdaten einschließlich der IP-Adresse; eine Übermittlung in die USA ist nicht ausgeschlossen und
+          stützt sich auf das EU-US Data Privacy Framework bzw. Standardvertragsklauseln (Art. 45, 46 DSGVO); es gelten
+          die Datenverarbeitungsbedingungen von Firebase (Auftragsverarbeitung). Die App lädt dafür keine Software von
+          Google, nutzt kein Google Analytics und keine Anmeldung und speichert nichts in deinem Browser. Danach sind
+          die Geräte direkt miteinander verbunden (WebRTC). Klappt keine direkte Verbindung, laufen die
+          Spielnachrichten auf demselben Weg – ebenfalls nur bis zum Lesen.
+        </p>
+      ) : (
+        <p>
+          <strong>Verbindungsaufbau:</strong> Damit sich die Geräte finden, tauschen sie über einen Kanal bei Supabase
+          (Supabase Realtime, Rechenzentrum in Frankfurt am Main) kurz technische Verbindungsangaben aus. Darin können
+          Netzwerkadressen der Geräte stehen; alle Geräte im Raum empfangen sie. Die Nachrichten werden weitergeleitet,
+          aber nicht gespeichert; für die kurzzeitigen Zugriffsprotokolle von Supabase gilt Abschnitt 3. Danach sind
+          die Geräte direkt miteinander verbunden (WebRTC), und die Spielleitung schließt den Kanal. Klappt keine
+          direkte Verbindung, leitet derselbe Kanal die Spielnachrichten weiter – ebenfalls ohne sie zu speichern.
+        </p>
+      )}
       <p>
         <strong>IP-Adressen:</strong> Bei einer direkten Verbindung erfahren die verbundenen Geräte technisch bedingt
         gegenseitig ihre IP-Adresse.{' '}

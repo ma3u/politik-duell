@@ -65,7 +65,7 @@ Zweiter Spielmodus ohne Datenbank und ohne KI (Plan und rechtliche Einordnung: [
 
 - Bis zu acht Personen raten, welche Parteien im Wahlprogramm zu einer Frage Ja (oder Nein) sagen – Einzel- oder Mehrfachauswahl, schnellere richtige Antworten bringen mehr Punkte (bis 1000 je Frage); allein üben geht auch
 - Fragen aus den geprüften Haltungen: `npm run quiz:erzeugen` schreibt `public/quiz/fragen.json`; mit `-- --entwuerfe` zusätzlich eine lokale Fassung mit KI-Entwürfen (`fragen-entwurf.json`, nicht im Repository, lädt nur `npm run dev`)
-- Browser zu Browser per WebRTC; den Verbindungsaufbau vermittelt ein flüchtiger Supabase-Realtime-Kanal (Broadcast, nichts gespeichert), der auch weiterleitet, wenn keine Direktverbindung zustande kommt. Ohne Supabase (`VITE_DATENQUELLE=mock`) funktionieren Räume zwischen Tabs desselben Browsers
+- Browser zu Browser per WebRTC; den Verbindungsaufbau vermittelt die Firebase Realtime Database (`VITE_FIREBASE_DATABASE_URL`, per REST ohne SDK, jede Nachricht wird nach dem Lesen gelöscht – siehe [firebase/README.md](firebase/README.md)), die auch weiterleitet, wenn keine Direktverbindung zustande kommt. Ohne Firebase-Adresse übernimmt ein Supabase-Realtime-Kanal; ohne beides funktionieren Räume zwischen Tabs desselben Browsers
 - Optional `VITE_STUN_URLS` (z. B. `stun:stun.example.eu:3478`) für Direktverbindungen übers Internet – die Datenschutzerklärung nennt den Server dann automatisch
 
 ## Datenkatalog

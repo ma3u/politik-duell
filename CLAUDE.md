@@ -28,7 +28,7 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 
 ## Programm-Quiz „Wer sagt Ja?“ (`#/quiz`)
 
-Zweiter Modus, ohne Datenbank und ohne KI (`docs/plan-quiz.md`): Bis zu acht Personen raten, welche Parteien im Bundesprogramm zu einer Haltung Ja (oder Nein) sagen; Punkte für Treffer, mehr für Tempo – nie für eine Meinung. Fragen entstehen mechanisch aus Haltungen mit sieben geprüften Positionen (`npm run quiz:erzeugen` → `public/quiz/fragen.json`), je Spiel ist keine Partei mehr als einmal die einzige richtige Antwort. Zitate nur als Beleg in der Auflösung (§ 51 UrhG), nie als Rätseltext. Verbindung per WebRTC; Supabase Realtime Broadcast nur zur Vermittlung und als Weiterleitung, nichts gespeichert.
+Zweiter Modus, ohne Datenbank und ohne KI (`docs/plan-quiz.md`): Bis zu acht Personen raten, welche Parteien im Bundesprogramm zu einer Haltung Ja (oder Nein) sagen; Punkte für Treffer, mehr für Tempo – nie für eine Meinung. Fragen entstehen mechanisch aus Haltungen mit sieben geprüften Positionen (`npm run quiz:erzeugen` → `public/quiz/fragen.json`), je Spiel ist keine Partei mehr als einmal die einzige richtige Antwort. Zitate nur als Beleg in der Auflösung (§ 51 UrhG), nie als Rätseltext. Verbindung per WebRTC; zur Vermittlung und als Weiterleitung die Firebase Realtime Database (Projekt `politik-duell-quiz`, Belgien, Spark-Tarif, per REST ohne SDK – im Browser wird nichts gespeichert; Nachrichten werden nach dem Lesen gelöscht, Regeln in `firebase/database.rules.json`, `firebase/README.md`), ersatzweise Supabase Realtime Broadcast.
 
 ## Bewertungslogik
 

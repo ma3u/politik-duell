@@ -17,7 +17,7 @@ Leitplanken aus dem Projekt bleiben: neutrale Methode, keine KI im Spiel, keine 
 | Woher kommen die Aussagen? | Aus den Haltungen (`daten/haltungen/`): Dort steht je Wertfrage die Position **aller sieben** Bundesprogramme mit Zitat und Seitenanker – auch „keine Aussage im Programm“, nach Durchsuchen belegt. Nur so ist auch die *falsche* Antwort belegt. |
 | JSON-Liste | `npm run quiz:erzeugen` schreibt daraus `public/quiz/fragen.json` (nur geprüfte Positionen). Gepflegt wird weiter in `daten/haltungen/` mit dem bestehenden Prüfablauf; die Liste ist abgeleitet und wird in CI auf Aktualität geprüft. |
 | Datenbank? | Keine. Die Fragen sind eine statische Datei, das Spiel läuft im Browser. |
-| Verbindung | WebRTC-Datenkanal Browser zu Browser. Für den Verbindungsaufbau (Signalisierung) dient ein flüchtiger Supabase-Realtime-Kanal (Broadcast, Frankfurt) – ohne Tabelle, nichts wird gespeichert. Klappt keine direkte Verbindung, leitet derselbe Kanal die Spielnachrichten weiter (ebenfalls ohne Speicherung). |
+| Verbindung | WebRTC-Datenkanal Browser zu Browser. Für den Verbindungsaufbau (Signalisierung) dient in diesem Fork die **Firebase Realtime Database** (Spark-Tarif, Belgien, per REST ohne SDK): Postfach je Gerät, jede Nachricht wird nach dem Lesen gelöscht ([`firebase/README.md`](../firebase/README.md)). Ohne Firebase-Adresse ein flüchtiger Supabase-Realtime-Kanal (Broadcast). Klappt keine direkte Verbindung, leitet derselbe Weg die Spielnachrichten weiter. |
 | Antwortarten | **Einzelauswahl**, wenn genau eine Partei klar Ja (bzw. Nein) sagt; sonst **Mehrfachauswahl**. |
 | Tempo | Bis zu 1000 Punkte je Frage: Anteil richtig × (500 + 500 × verbleibende Zeit). |
 | KI-Entwürfe | Öffentlich nur geprüfte Positionen. Entwürfe nur lokal (`npm run quiz:erzeugen -- --entwuerfe`), mit Hinweis im Spiel. |
@@ -51,7 +51,8 @@ Leitplanken aus dem Projekt bleiben: neutrale Methode, keine KI im Spiel, keine 
 
 - **Antworten im Quiz** zeigen, was jemand über Programme *weiß*, nicht was er politisch *denkt*. Sie sind deshalb in der Regel keine besonderen Daten nach Art. 9 DSGVO. Trotzdem gilt: Sie gehen nur an die Geräte im Raum und werden nirgends gespeichert.
 - **IP-Adressen** sind personenbezogene Daten (EuGH, *Breyer*, C-582/14). Bei einer direkten WebRTC-Verbindung erfahren die Geräte im Raum gegenseitig ihre IP-Adressen – das ist technisch unvermeidbar und muss in der Datenschutzerklärung stehen. Wer das nicht möchte, spielt über die Weiterleitung (Q3).
-- **Signalisierung über Supabase:** Verbindungsangebote (SDP) und Netzwerk-Kandidaten (enthalten IP-Adressen) laufen kurz über den Realtime-Kanal. Broadcast-Nachrichten werden nicht gespeichert; Supabase führt kurzzeitige Verbindungsprotokolle (bereits in der Datenschutzerklärung, Abschnitt 3, AVV vorhanden).
+- **Signalisierung über Firebase:** Verbindungsangebote (SDP) und Netzwerk-Kandidaten liegen nur bis zum Lesen in der Datenbank (Sekundenbruchteile); Reste nach Abstürzen löscht eine tägliche GitHub Action (älter als eine Stunde). Anbieter ist Google Ireland (Firebase-Datenverarbeitungsbedingungen, Standort Belgien, mögliche US-Übermittlung auf Basis des Data Privacy Framework). Bewusst **ohne Firebase-SDK**: Das SDK legte im Browser eine IndexedDB (`firebase-heartbeat-database`) und einen localStorage-Eintrag an – nach § 25 TDDDG nicht unbedingt erforderlich und damit einwilligungspflichtig. Per REST und Server-Sent Events speichert die App im Browser nichts (geprüft).
+- **Signalisierung über Supabase** (Alternative ohne Firebase): Broadcast-Nachrichten werden nicht gespeichert; Supabase führt kurzzeitige Verbindungsprotokolle.
 - **STUN-Server:** Ohne STUN finden sich Geräte direkt nur im selben Netz (z. B. Schul-WLAN); sonst greift die Weiterleitung. Mit STUN (etwa Cloudflare, oder ein eigener Server in der EU) klappt die Direktverbindung auch übers Internet – der Betreiber des STUN-Servers sieht dann die IP-Adresse. Deshalb ist STUN standardmäßig **aus** und nur per `VITE_STUN_URLS` zuschaltbar (Q3); die Datenschutzerklärung nennt den Server automatisch.
 - **Name im Quiz:** freiwillig, höchstens 20 Zeichen, nur im Arbeitsspeicher; geht nur an die Mitspielenden.
 - **Raumcode:** steht im Hash der Adresse (`#/quiz/ABC234`) und geht damit nie an den Webserver.
@@ -123,17 +124,18 @@ Warum nicht eine frei gepflegte Liste „Aussage → Parteien“? Bei einer Mehr
 ## Technik
 
 ```
-Gast-Browser ──(1) „suche“ ─────────▶ Supabase Realtime Broadcast (Kanal quiz-<Code>, nichts gespeichert)
+Gast-Browser ──(1) „suche“ ─────────▶ Firebase RTDB quiz/<Code>/an/<Empfänger> (gelöscht nach dem Lesen)
              ◀─(2) Angebot/Antwort/ICE ─▶ Spielleitung
              ◀══(3) WebRTC-Datenkanal (direkt) ══▶  …oder Weiterleitung über denselben Kanal, wenn (3) nach 8 s nicht steht
 ```
 
 - `src/quiz/fragen.ts` – Fragen aus Haltungen (rein, getestet), `scripts/erzeuge-quiz.ts` schreibt die Datei.
 - `src/quiz/punkte.ts`, `src/quiz/spielleitung.ts` – Punkte und Spielzustand als reine Funktionen (getestet). Die Spielleitung schickt nach jeder Änderung einen Schnappschuss an alle; Antworten der anderen sind darin erst nach der Auflösung enthalten.
-- `src/quiz/verbindung.ts` – Signalisierung (Supabase oder, ohne Supabase, `BroadcastChannel` zwischen Tabs desselben Browsers zum Testen), WebRTC, Weiterleitung.
+- `src/quiz/verbindung.ts` – Signalisierung (Firebase per REST/SSE, sonst Supabase, ohne beides `BroadcastChannel` zwischen Tabs desselben Browsers zum Testen), WebRTC, Weiterleitung.
+- `firebase/database.rules.json` – Regeln der Datenbank; `scripts/quiz-aufraeumen.ts` + `.github/workflows/quiz-aufraeumen.yml` – tägliches Aufräumen.
 - Nach Spielstart schließt die Spielleitung den Signalkanal, wenn alle direkt verbunden sind. Nachzügler und Wiederverbinden gibt es in der ersten Fassung nicht.
 - Eingehende Nachrichten werden geprüft (Typen, Längen, Bereiche); Namen werden gekürzt.
-- CSP bleibt unverändert (WebRTC fällt nicht unter `connect-src`; Supabase-wss ist schon erlaubt).
+- CSP: `connect-src` erlaubt zusätzlich `https://*.europe-west1.firebasedatabase.app` (REST und Server-Sent Events); WebRTC fällt nicht unter `connect-src`.
 
 ## Offene Entscheidungen
 
@@ -141,7 +143,7 @@ Gast-Browser ──(1) „suche“ ─────────▶ Supabase Realt
 | --- | --- | --- |
 | Q1 | Punkte zu Haltungen? `plan-haltungen.md` Grundsatz 1 sagt „keine Punkte“ – gemeint ist: niemand wird für eine Haltung belohnt. Im Quiz gibt es Punkte nur fürs Wissen, *was im Programm steht*. | Zulassen, mit Ergänzung im Plan der Haltungen. Grundsätze 2–5 gelten unverändert. |
 | Q2 | Ist das Quiz öffentlich, während das Duell noch in der geschlossenen Testphase ist? | Ja – es zeigt nur geprüfte Positionen (derzeit Tempolimit und Zuwanderung, die Pilot-Haltungen aus E7). Weitere Haltungen erst nach Prüfung. |
-| Q3 | STUN-Server für Direktverbindungen übers Internet? | Vorerst aus (Weiterleitung über Supabase Frankfurt). Später eigener STUN in der EU, oder Cloudflare mit Hinweis. |
+| Q3 | STUN-Server für Direktverbindungen übers Internet? | Vorerst aus (sonst Weiterleitung über Firebase). Später eigener STUN in der EU, oder Cloudflare mit Hinweis. |
 | Q4 | Welche Fragenzahl und Zeiten? | 5 Fragen, 20/30 s; nach ersten Tests anpassen. |
 | Q5 | Zusätzlich frei formulierte Aussagen („Wer will Tempo 130?“) aus den Maßnahmen? | Später, wenn Maßnahmen geprüft sind – dann mit Beleg für alle sieben Parteien. |
 | Q6 | Klassenmodus (Beamer zeigt Frage, Handys nur Antwortknöpfe)? | Nächster Schritt nach ersten Tests. |
@@ -151,7 +153,8 @@ Gast-Browser ──(1) „suche“ ─────────▶ Supabase Realt
 
 - Unit-Tests `src/quiz/quiz.test.ts`: Fragenregeln, Punkte, Spielzustand, Ausgleich, Prüfung eingehender Nachrichten.
 - Im Browser (Headless-Chrome, zwei bis drei Tabs, ohne Supabase): Raum eröffnen, Einladungslink, direkte WebRTC-Verbindung, fünf Fragen mit Einzel- und Mehrfachauswahl, Zwischenstand, Endstand, „Nochmal“; Rückfall auf die Weiterleitung nach 8 s, wenn die Direktverbindung scheitert; Gast verlässt mitten in der Frage; Spielleitung verlässt den Raum; unbekannter Raumcode; Allein üben mit Zeitablauf.
-- Noch nicht getestet: Signalisierung über das echte Supabase-Projekt und Geräte in verschiedenen Netzen.
+- Gegen die echte Firebase-Datenbank (Belgien): ganzes Spiel mit Direktverbindung, Weiterleitung, Abbrüche, unbekannter Raum; danach war die Datenbank leer, im Browser lag nichts (IndexedDB, localStorage, sessionStorage, Cookies leer).
+- Noch nicht getestet: Geräte in verschiedenen Netzen und echte Mobilgeräte.
 
 ## Grenzen der ersten Fassung
 

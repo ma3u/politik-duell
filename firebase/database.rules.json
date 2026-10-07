@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "quiz": {
+      "$raum": {
+        ".write": "$raum.matches(/^[A-HJKMNP-Z2-9]{6}$/)",
+        "an": {
+          "$an": {
+            ".read": "$raum.matches(/^[A-HJKMNP-Z2-9]{6}$/) && $an.matches(/^(leitung|[0-9a-f]{16})$/)",
+            ".validate": "$an.matches(/^(leitung|[0-9a-f]{16})$/)",
+            "$nachricht": {
+              ".validate": "!data.exists() && newData.hasChildren(['s', 't'])",
+              "s": { ".validate": "newData.isString() && newData.val().length <= 60000" },
+              "t": { ".validate": "newData.val() === now" },
+              "$sonst": { ".validate": false }
+            }
+          }
+        },
+        "$sonst": { ".validate": false }
+      }
+    }
+  }
+}
