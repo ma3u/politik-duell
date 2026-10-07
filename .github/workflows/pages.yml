@@ -1,7 +1,8 @@
 name: GitHub Pages (Testversion)
 
 # Testversion unter https://ma3u.github.io/politik-duell/ – das Duell mit Beispieldaten (ohne Supabase), das
-# Programm-Quiz mit den geprüften Fragen und der Firebase-Vermittlung (firebase/README.md).
+# Programm-Quiz mit der Firebase-Vermittlung (firebase/README.md) und auch den ungeprüften KI-Entwurfsfragen,
+# deutlich gekennzeichnet (Entscheidung der Betreiberin des Forks, 7. 10. 2026; docs/plan-quiz.md, Q2).
 on:
   push:
     branches: [main]
@@ -26,10 +27,12 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run quiz:erzeugen -- --entwuerfe
       - run: npm run build
         env:
           BASIS_PFAD: /politik-duell/
           VITE_DATENQUELLE: mock
+          VITE_QUIZ_ENTWUERFE: 'true'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

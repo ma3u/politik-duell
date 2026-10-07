@@ -143,7 +143,7 @@ Gast-Browser ──(1) „suche“ ─────────▶ Firebase RTDB 
 | Nr. | Frage | Vorschlag |
 | --- | --- | --- |
 | Q1 | Punkte zu Haltungen? `plan-haltungen.md` Grundsatz 1 sagt „keine Punkte“ – gemeint ist: niemand wird für eine Haltung belohnt. Im Quiz gibt es Punkte nur fürs Wissen, *was im Programm steht*. | Zulassen, mit Ergänzung im Plan der Haltungen. Grundsätze 2–5 gelten unverändert. |
-| Q2 | Ist das Quiz öffentlich, während das Duell noch in der geschlossenen Testphase ist? | Ja – es zeigt nur geprüfte Positionen (derzeit Tempolimit und Zuwanderung, die Pilot-Haltungen aus E7). Weitere Haltungen erst nach Prüfung. |
+| Q2 | Ist das Quiz öffentlich, während das Duell noch in der geschlossenen Testphase ist? | Ja – es zeigt nur geprüfte Positionen (derzeit Tempolimit und Zuwanderung, die Pilot-Haltungen aus E7). Weitere Haltungen erst nach Prüfung. **Ausnahme Fork (entschieden 7. 10. 2026):** Die Testversion auf GitHub Pages (`ma3u.github.io/politik-duell`) zeigt zusätzlich die Entwurfsfragen, mit Banner und Hinweis „noch nicht von Menschen geprüft“ in jeder betroffenen Auflösung (`VITE_QUIZ_ENTWUERFE=true`). |
 | Q3 | STUN-Server für Direktverbindungen übers Internet? | Vorerst aus (sonst Weiterleitung über Firebase). Später eigener STUN in der EU, oder Cloudflare mit Hinweis. |
 | Q4 | Welche Fragenzahl und Zeiten? | 5 Fragen, 20/30 s; nach ersten Tests anpassen. |
 | Q5 | Zusätzlich frei formulierte Aussagen („Wer will Tempo 130?“) aus den Maßnahmen? | Später, wenn Maßnahmen geprüft sind – dann mit Beleg für alle sieben Parteien. |

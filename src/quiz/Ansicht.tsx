@@ -3,6 +3,7 @@ import { useAnsicht } from '../barrierefrei'
 import { ProgrammLink } from '../components/belege'
 import { Kreuzfeld } from '../components/Kreuz'
 import { parteiStil } from '../components/stil'
+import { KI_HINWEIS_HALTUNG } from '../components/HaltungsKarte'
 import { POSITION_TEXT } from '../logic/haltung'
 import { anleitung } from './fragen'
 import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
@@ -331,6 +332,16 @@ function Zielkonflikte({ frage }: { frage: QuizFrage }) {
   )
 }
 
+/** Testversion: Positionen nur als KI-Entwurf erfasst, noch nicht von Menschen geprüft. */
+function KiHinweis({ frage }: { frage: QuizFrage }) {
+  if (!frage.ki_entwurf) return null
+  return (
+    <p className="ki-hinweis" role="note">
+      <strong>{KI_HINWEIS_HALTUNG}</strong>
+    </p>
+  )
+}
+
 function MeinErgebnis({ e, frage }: { e: Ergebnis | undefined; frage: QuizFrage }) {
   if (!e || e.ms === null) return <p className="quiz-ergebnis">Keine Antwort – 0 Punkte.</p>
   const teile =
@@ -384,6 +395,7 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
       <MeinErgebnis e={mein} frage={frage} />
       <Positionen frage={frage} parteien={daten.parteien} auswahl={mein?.auswahl ?? []} />
       <Zielkonflikte frage={frage} />
+      <KiHinweis frage={frage} />
       <p className="meta">
         Positionen aus den Bundeswahlprogrammen 2025 mit Wortlaut und Seite. „Keine Aussage im Programm“ heißt: Das
         Programm wurde durchsucht, eine Position dazu nicht gefunden. Punkte gibt es fürs Wissen, was im Programm
@@ -432,6 +444,7 @@ function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: Ans
             <p className="quiz-loesung">{loesungText(f, daten.parteien)}</p>
             <Positionen frage={f} parteien={daten.parteien} auswahl={e?.auswahl ?? []} />
             <Zielkonflikte frage={f} />
+            <KiHinweis frage={f} />
           </details>
         )
       })}

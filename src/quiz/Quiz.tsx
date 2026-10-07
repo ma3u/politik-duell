@@ -76,7 +76,8 @@ export function Quiz() {
     <div className="app">
       {daten?.entwurf && (
         <div className="mock-hinweis" role="note">
-          Vorschau mit ungeprüften KI-Entwürfen – nur zum Testen, nicht öffentlich.
+          Testversion: Die meisten Fragen beruhen auf KI-Entwürfen, die noch nicht von Menschen geprüft sind. Einordnungen
+          können falsch sein – bitte die Belege im Programm ansehen.
         </div>
       )}
       {SIGNAL_ART === 'lokal' && modus.art !== 'start' && modus.code !== null && (
@@ -175,6 +176,8 @@ function QuizStart({
           {leer
             ? 'Noch gibt es keine vollständig geprüften Fragen.'
             : `${daten.fragen.length} ${daten.fragen.length === 1 ? 'Frage' : 'Fragen'} aus den Bundeswahlprogrammen 2025, je Spiel bis zu ${FRAGEN_JE_SPIEL}.`}
+          {daten.entwurf &&
+            ` Davon ${daten.fragen.filter((f) => f.ki_entwurf).length} als ungeprüfter KI-Entwurf (in der Auflösung gekennzeichnet).`}
         </p>
 
         <label className="label" htmlFor={`${id}-name`}>

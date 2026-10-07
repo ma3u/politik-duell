@@ -46,6 +46,6 @@ if (args.includes('--pruefen')) {
   if (args.includes('--entwuerfe')) {
     const entwurf = quizDaten(katalog, true)
     writeFileSync(new URL('fragen-entwurf.json', ordner), entwurf)
-    console.log(`public/quiz/fragen-entwurf.json geschrieben (${anzahl(entwurf)} Fragen, mit KI-Entwürfen – nur lokal).`)
+    console.log(`public/quiz/fragen-entwurf.json geschrieben (${anzahl(entwurf)} Fragen, mit KI-Entwürfen – nicht im Repository; ins Build nur mit VITE_QUIZ_ENTWUERFE=true).`)
   }
 }
