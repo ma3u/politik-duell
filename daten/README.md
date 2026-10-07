@@ -411,6 +411,7 @@ Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als 
 - **Alle sieben oder keine:** Die Karte erscheint erst, wenn jede Partei eine Position hat (sonst Warnung). Weniger als drei Programme mit erkennbarer Position (Aufnahmekriterium) meldet die Prüfung ebenfalls als Warnung.
 - `schlagwoerter` (optional, nur für den Mock ohne KI): Wörter, an denen die Mock-Analyse eine Haltung dieser Frage zuordnet.
 - **IDs:** eigener Nummernkreis 1, 2, … (`npm run daten:id -- --haltung`), nie wiederverwendet; eine entfernte Haltung kommt mit Grund in [`ids.json`](ids.json) → `haltungen_stillgelegt`.
+- **Programm-Quiz:** Aus jeder Haltung, deren sieben Positionen geprüft sind, macht `npm run quiz:erzeugen` eine Quizfrage in `public/quiz/fragen.json` (Regeln: [`docs/plan-quiz.md`](../docs/plan-quiz.md)). Die Datei nicht von Hand ändern – nach einer Änderung an Haltungen neu erzeugen und mit einchecken; die automatische Prüfung meldet eine veraltete Datei.
 
 ### IDs
 

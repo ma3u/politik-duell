@@ -26,6 +26,10 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
 6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, „Worüber ihr gesprochen habt“ (alle Haltungs- und Forderungskarten der Partie, aufklappbar, nicht im Teilen-Text), Teilen-Button.
 
+## Programm-Quiz „Wer sagt Ja?“ (`#/quiz`)
+
+Zweiter Modus, ohne Datenbank und ohne KI (`docs/plan-quiz.md`): Bis zu acht Personen raten, welche Parteien im Bundesprogramm zu einer Haltung Ja (oder Nein) sagen; Punkte für Treffer, mehr für Tempo – nie für eine Meinung. Fragen entstehen mechanisch aus Haltungen mit sieben geprüften Positionen (`npm run quiz:erzeugen` → `public/quiz/fragen.json`), je Spiel ist keine Partei mehr als einmal die einzige richtige Antwort. Zitate nur als Beleg in der Auflösung (§ 51 UrhG), nie als Rätseltext. Verbindung per WebRTC; Supabase Realtime Broadcast nur zur Vermittlung und als Weiterleitung, nichts gespeichert.
+
 ## Bewertungslogik
 
 Pro Maßnahme in der Datenbank:

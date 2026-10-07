@@ -32,3 +32,6 @@ supabase/.branches
 
 # Heruntergeladene Programme (npm run zitate:pruefen)
 /.cache/
+
+# Quiz-Fragen mit KI-Entwürfen (npm run quiz:erzeugen -- --entwuerfe) – nur lokal
+/public/quiz/fragen-entwurf.json

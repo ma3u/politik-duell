@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Logo } from '../components/Logo'
 import { BETREIBER, betreiberVollstaendig, DATENSCHUTZ_STAND } from './betreiber'
 import { Methode } from './Methode'
+import { STUN_URLS, stunHost } from '../quiz/netz'
 
 // Impressum (#/impressum), Datenschutzerklärung (#/datenschutz) und Methode (#/methode).
 // Die Texte beschreiben, was die App tatsächlich tut – bei Änderungen an
@@ -100,6 +101,10 @@ function Datenschutz() {
           nur für uns zur Prüfung sichtbar und höchstens 30 Tage.
         </li>
         <li>Die Wortwolke im Hintergrund zeigt nur die Themen, die das Spiel schon werten kann – keine Eingaben von Spielenden.</li>
+        <li>
+          Das Programm-Quiz „Wer sagt Ja?“ speichert nichts und nutzt keine KI; es läuft zwischen den Geräten der
+          Mitspielenden (Abschnitt 11).
+        </li>
       </ul>
 
       <h2>1. Verantwortlich</h2>
@@ -258,7 +263,50 @@ function Datenschutz() {
         E-Mail.
       </p>
 
-      <h2>11. Deine Rechte</h2>
+      <h2 id="quiz">11. Programm-Quiz „Wer sagt Ja?“</h2>
+      <p>
+        Im Quiz (Adresse <code>#/quiz</code>) ratet ihr, welche Parteien in ihrem Wahlprogramm zu einer Frage Ja sagen.
+        Die Fragen lädt die App als Datei von unserer Website; eine Datenbank, eine KI oder ein Konto gibt es dabei
+        nicht. Deine Antworten zeigen, was du über Programme weißt – nicht, was du politisch denkst.
+      </p>
+      <p>
+        <strong>Was zwischen den Geräten läuft:</strong> dein Name im Spiel (freiwillig, höchstens 20 Zeichen), deine
+        Antworten mit Antwortzeit und der Spielstand. Das alles geht nur an die Geräte im selben Raum, liegt nur im
+        Arbeitsspeicher und ist weg, wenn ihr die Seite schließt. Wir speichern davon nichts. Der Raumcode steht im
+        hinteren Teil der Adresse (nach „#“) und wird deshalb nicht an unseren Webserver übertragen.
+      </p>
+      <p>
+        <strong>Verbindungsaufbau:</strong> Damit sich die Geräte finden, tauschen sie über einen Kanal bei Supabase
+        (Supabase Realtime, Rechenzentrum in Frankfurt am Main) kurz technische Verbindungsangaben aus. Darin können
+        Netzwerkadressen der Geräte stehen; alle Geräte im Raum empfangen sie. Die Nachrichten werden weitergeleitet,
+        aber nicht gespeichert; für die kurzzeitigen Zugriffsprotokolle von Supabase gilt Abschnitt 3. Danach sind die
+        Geräte direkt miteinander verbunden (WebRTC), und die Spielleitung schließt den Kanal. Klappt keine direkte
+        Verbindung, leitet derselbe Kanal die Spielnachrichten weiter – ebenfalls ohne sie zu speichern.
+      </p>
+      <p>
+        <strong>IP-Adressen:</strong> Bei einer direkten Verbindung erfahren die verbundenen Geräte technisch bedingt
+        gegenseitig ihre IP-Adresse.{' '}
+        {STUN_URLS.length ? (
+          <>
+            Damit das auch zwischen verschiedenen Netzen klappt, fragt dein Browser einen STUN-Server (
+            {STUN_URLS.map(stunHost).join(', ')}) nach seiner öffentlichen Adresse; dessen Betreiber sieht dabei deine
+            IP-Adresse.
+          </>
+        ) : (
+          <>
+            Wir nutzen keinen STUN-Server: Direkt verbinden sich Geräte deshalb nur im selben Netz (etwa im selben
+            WLAN), sonst läuft das Spiel über die Weiterleitung. Öffentliche IP-Adressen tauschen die Geräte dabei
+            nicht aus.
+          </>
+        )}
+      </p>
+      <p>
+        <strong>Rechtsgrundlage</strong> ist unser berechtigtes Interesse, das gemeinsame Spiel möglichst ohne Server
+        und ohne Speicherung anzubieten (Art. 6 Abs. 1 lit. f DSGVO). Spiele mit Menschen, denen du deinen Raumcode
+        geben möchtest – wer ihn kennt, kann beitreten.
+      </p>
+
+      <h2>12. Deine Rechte</h2>
       <p>
         Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
         und Widerspruch (Art. 15–21 DSGVO) sowie auf Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO). Da wir keine

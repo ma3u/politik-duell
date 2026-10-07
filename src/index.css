@@ -2821,3 +2821,270 @@ textarea {
 .gespraechskarte .haltungskarte > h3 {
   display: none;
 }
+
+/* ---------- Programm-Quiz „Wer sagt Ja?“ (#/quiz) ---------- */
+.quiz-marke {
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+  color: var(--stimmblau);
+}
+.quiz-start-felder {
+  padding: 0 20px 4px;
+}
+.quiz-start-felder > .meta {
+  margin: 0;
+}
+.quiz-start .knopf-reihe {
+  flex-wrap: wrap;
+  margin-top: 1.1rem;
+}
+.quiz-start .knopf-gross {
+  width: 100%;
+  margin: 0.9rem 0 0;
+}
+.quiz-eingabe {
+  width: 100%;
+  font: inherit;
+  color: var(--text);
+  background: var(--flaeche);
+  border: 1.5px solid var(--tinte);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+}
+.quiz-eingabe:focus-visible {
+  outline: 3px solid var(--fokus);
+  outline-offset: 2px;
+}
+.quiz-beitreten {
+  margin-top: 0.4rem;
+}
+.quiz-beitreten-zeile {
+  display: flex;
+  gap: 10px;
+}
+.quiz-code-eingabe {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.quiz-einladung {
+  margin: 1rem 0 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.quiz .knopf-leise {
+  margin-top: 1rem;
+}
+.quiz-raum {
+  margin: 0.75rem 0 1rem;
+  padding: 14px 16px 16px;
+  text-align: center;
+}
+.quiz-raum .label {
+  margin: 0;
+}
+.quiz-code {
+  margin: 0.1rem 0 0.4rem;
+  font-family: var(--schrift-titel);
+  font-size: clamp(2.2rem, 12vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--stimmblau);
+}
+.quiz-link {
+  margin: 0 0 0.8rem;
+  font-size: 0.8rem;
+  color: var(--text-leise);
+  overflow-wrap: anywhere;
+}
+.quiz-spieler,
+.quiz-stand {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--linie);
+}
+.quiz-spieler li,
+.quiz-stand li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--linie);
+}
+.quiz-spieler-name {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 700;
+}
+.quiz-weg {
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
+.quiz-spieler .getrennt,
+.quiz-stand .getrennt {
+  color: var(--text-leise);
+}
+.quiz-stand .ich {
+  background: var(--stimmblau-hell);
+}
+.quiz-rang {
+  min-width: 1.6em;
+  font-weight: 700;
+  color: var(--text-leise);
+}
+.quiz-plus {
+  font-size: 0.85rem;
+  color: var(--text-leise);
+  font-variant-numeric: tabular-nums;
+}
+.quiz-punkte {
+  min-width: 3.5em;
+  text-align: right;
+  font-family: var(--schrift-titel);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.quiz-warten {
+  min-height: 1.5em;
+  margin: 1rem 0 0;
+}
+
+.quiz-fortschritt {
+  margin: 0.25rem 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-leise);
+}
+.quiz-zeit {
+  position: relative;
+  height: 1.6rem;
+  margin: 0 0 1rem;
+  overflow: hidden;
+  background: var(--flaeche-2);
+  border: 1.5px solid var(--tinte);
+  border-radius: 999px;
+}
+.quiz-zeit-balken {
+  position: absolute;
+  inset: 0;
+  background: var(--stimmblau);
+  transform-origin: left center;
+  transition: transform 0.1s linear;
+}
+.quiz-zeit-zahl {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--tinte);
+  background: var(--flaeche);
+  padding: 0 6px;
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+}
+.quiz-frage {
+  margin-bottom: 0.3rem;
+}
+.quiz-anleitung {
+  margin: 0.8rem 0;
+  font-weight: 700;
+}
+.quiz-wahl {
+  overflow: hidden;
+}
+.quiz-wahl .partei-zeile:disabled {
+  cursor: default;
+}
+
+.quiz-loesung {
+  margin: 0.4rem 0;
+  font-family: var(--schrift-titel);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--stimmblau);
+}
+.quiz-ergebnis {
+  margin: 0.4rem 0 0.8rem;
+}
+.quiz-kreuz {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 7px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1.5px solid var(--linie);
+}
+.quiz-kreuz-treffer {
+  border-color: var(--gut);
+  color: #1d6b52;
+}
+.quiz-kreuz-daneben {
+  border-color: var(--tinte);
+}
+.quiz-kreuz-neutral,
+.quiz-kreuz-verpasst {
+  color: var(--text-leise);
+}
+.quiz-ziele {
+  margin: 1rem 0 0;
+  font-size: 0.92rem;
+}
+.quiz-ziele summary,
+.quiz-zf > summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.quiz-ziele ul {
+  margin-top: 0.5rem;
+}
+.quiz .meta {
+  margin: 0.6rem 0 0;
+}
+.quiz .label {
+  margin-top: 1.25rem;
+}
+.quiz-zf-titel {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+.quiz-zf {
+  margin: 0 0 0.6rem;
+  padding: 10px 14px;
+  background: var(--flaeche);
+  border: 1.5px solid var(--linie);
+  border-radius: var(--papier-radius);
+}
+.quiz-zf > summary {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  list-style: none;
+}
+.quiz-zf > summary::-webkit-details-marker {
+  display: none;
+}
+.quiz-zf > summary::before {
+  content: '▸';
+  flex: none;
+  transition: transform 0.15s ease;
+}
+.quiz-zf[open] > summary::before {
+  transform: rotate(90deg);
+}
+.quiz-zf > summary > span:first-child {
+  flex: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .quiz-zeit-balken {
+    transition: none;
+  }
+}

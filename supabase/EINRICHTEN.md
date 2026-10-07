@@ -124,6 +124,11 @@ Datenbank: **nichts zu tun** (keine neue Migration).
    die *Site URL* auf die öffentliche Adresse setzen. „Allow new users to sign up“ ausgeschaltet lassen (Schritt 4.5).
 8. **Probe:** Seite öffnen → Einwilligung anhaken → eine Runde spielen. Im Browser (F12 → Konsole)
    dürfen keine Meldungen „Content Security Policy“ erscheinen.
+9. **Programm-Quiz (`#/quiz`):** Es nutzt Realtime *Broadcast* auf öffentlichen Kanälen `quiz-<Raumcode>`
+   – ohne Tabelle, ohne Migration. Unter *Realtime → Settings* muss der öffentliche Zugriff erlaubt sein
+   (Standard; „Allow public access“ bzw. nicht „Private channels only“). Probe: auf zwei Geräten
+   `#/quiz` öffnen, auf einem „Raum eröffnen“, auf dem anderen den Code eingeben. Optional
+   `VITE_STUN_URLS` in Vercel setzen (siehe README → Programm-Quiz).
 
 ## Weg B: mit der Supabase-Kommandozeile (auf einem eigenen Rechner)
 

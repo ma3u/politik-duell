@@ -34,6 +34,8 @@ export function Start({
         </p>
         <p className="start-themen">
           <a href="#/themen">Welche Themen das Spiel schon kennt</a>
+          {' · '}
+          <a href="#/quiz">Programm-Quiz: Wer sagt Ja?</a>
         </p>
         {ladeFehler ? (
           <div className="ladefehler" role="alert">

@@ -59,6 +59,15 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 
 **Einrichten:** siehe [supabase/EINRICHTEN.md](supabase/EINRICHTEN.md).
 
+## Programm-Quiz „Wer sagt Ja?“ (`#/quiz`)
+
+Zweiter Spielmodus ohne Datenbank und ohne KI (Plan und rechtliche Einordnung: [docs/plan-quiz.md](docs/plan-quiz.md)):
+
+- Bis zu acht Personen raten, welche Parteien im Wahlprogramm zu einer Frage Ja (oder Nein) sagen – Einzel- oder Mehrfachauswahl, schnellere richtige Antworten bringen mehr Punkte (bis 1000 je Frage); allein üben geht auch
+- Fragen aus den geprüften Haltungen: `npm run quiz:erzeugen` schreibt `public/quiz/fragen.json`; mit `-- --entwuerfe` zusätzlich eine lokale Fassung mit KI-Entwürfen (`fragen-entwurf.json`, nicht im Repository, lädt nur `npm run dev`)
+- Browser zu Browser per WebRTC; den Verbindungsaufbau vermittelt ein flüchtiger Supabase-Realtime-Kanal (Broadcast, nichts gespeichert), der auch weiterleitet, wenn keine Direktverbindung zustande kommt. Ohne Supabase (`VITE_DATENQUELLE=mock`) funktionieren Räume zwischen Tabs desselben Browsers
+- Optional `VITE_STUN_URLS` (z. B. `stun:stun.example.eu:3478`) für Direktverbindungen übers Internet – die Datenschutzerklärung nennt den Server dann automatisch
+
 ## Datenkatalog
 
 - **Echte Parteien:** CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW mit ihren Wahlprogrammen zur Bundestagswahl 2025 (`daten/parteien.json`). Maßnahmen sind bisher für Miete erfasst (alle 7 Parteien), noch ungeprüft – im Spiel gilt deshalb vorerst alles als „noch nicht erfasst“

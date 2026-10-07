@@ -1,0 +1,245 @@
+{
+ "version": "d84b5ba9",
+ "entwurf": false,
+ "parteien": [
+  {
+   "id": 11,
+   "name": "CDU/CSU",
+   "kurzname": "Union",
+   "farbe": "#8a96a3",
+   "programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf"
+  },
+  {
+   "id": 12,
+   "name": "SPD",
+   "kurzname": "SPD",
+   "farbe": "#f0605d",
+   "programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf"
+  },
+  {
+   "id": 13,
+   "name": "Bündnis 90/Die Grünen",
+   "kurzname": "Grüne",
+   "farbe": "#6fbf4a",
+   "programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf"
+  },
+  {
+   "id": 14,
+   "name": "FDP",
+   "kurzname": "FDP",
+   "farbe": "#ffe74d",
+   "programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf"
+  },
+  {
+   "id": 15,
+   "name": "AfD",
+   "kurzname": "AfD",
+   "farbe": "#4fb8e8",
+   "programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf"
+  },
+  {
+   "id": 16,
+   "name": "Die Linke",
+   "kurzname": "Linke",
+   "farbe": "#e0659b",
+   "programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf"
+  },
+  {
+   "id": 17,
+   "name": "BSW",
+   "kurzname": "BSW",
+   "farbe": "#b784c9",
+   "programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf"
+  }
+ ],
+ "fragen": [
+  {
+   "id": "h1",
+   "haltung_id": 1,
+   "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
+   "beschreibung": "Ob auf allen Autobahnen eine feste Höchstgeschwindigkeit gelten soll oder ob Tempolimits wie bisher nur dort gelten, wo Verkehr, Unfälle oder Lärm es verlangen.",
+   "art": "mehrfach",
+   "gesucht": "ja",
+   "richtig": [
+    12,
+    13,
+    16
+   ],
+   "neutral": [],
+   "positionen": [
+    {
+     "partei_id": 11,
+     "position": "nein",
+     "kurzfassung": "Lehnt ein generelles Tempolimit auf deutschen Autobahnen ab.",
+     "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+     "beleg_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+     "begruendung": null
+    },
+    {
+     "partei_id": 12,
+     "position": "ja",
+     "kurzfassung": "Will ein Tempolimit von 130 km/h auf Bundesautobahnen einführen.",
+     "zitat": "Wir wollen ein Tempolimit von 130 km/h auf Bundesautobahnen einführen.",
+     "beleg_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+     "begruendung": null
+    },
+    {
+     "partei_id": 13,
+     "position": "ja",
+     "kurzfassung": "Hält ein generelles Tempolimit von 130 km/h auf Autobahnen für überfällig.",
+     "zitat": "Ein Sicherheitstempo von 130 km/h auf Autobahnen als generelles Tempolimit ist deshalb überfällig.",
+     "beleg_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=48",
+     "begruendung": null
+    },
+    {
+     "partei_id": 14,
+     "position": "nein",
+     "kurzfassung": "Lehnt ein generelles Tempolimit auf Autobahnen ab.",
+     "zitat": "Wir Freie Demokraten lehnen ein generelles Tempolimit auf Autobahnen ab.",
+     "beleg_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=41",
+     "begruendung": null
+    },
+    {
+     "partei_id": 15,
+     "position": "nein",
+     "kurzfassung": "Lehnt ein generelles Tempolimit auf Bundesautobahnen strikt ab.",
+     "zitat": "Die AfD lehnt ein generelles Tempolimit auf Bundesautobahnen strikt ab.",
+     "beleg_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=45",
+     "begruendung": null
+    },
+    {
+     "partei_id": 16,
+     "position": "ja",
+     "kurzfassung": "Will ein Tempolimit von 120 km/h auf Autobahnen und innerorts Tempo 30.",
+     "zitat": "Um Menschen und Klima zu schützen, brauchen wir endlich ein Tempolimit von 120 km/h auf Autobahnen und innerorts Tempo 30 – außer auf Hauptverkehrsachsen.",
+     "beleg_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+     "begruendung": null
+    },
+    {
+     "partei_id": 17,
+     "position": "keine_aussage",
+     "kurzfassung": null,
+     "zitat": null,
+     "beleg_url": null,
+     "begruendung": "Programm auf Tempolimit, Höchstgeschwindigkeit, Geschwindigkeitsbegrenzung, Geschwindigkeitsbeschränkung, Tempo 130, Tempo 120, freie Fahrt, Geschwindigkeit, Tempo, Autobahn und Rasen durchsucht; Verkehrskapitel (S. 29–30) gelesen – keine Aussage zu einem Tempolimit gefunden."
+    }
+   ],
+   "zielkonflikte": [
+    {
+     "seite": "ja",
+     "text": "Wer ein Tempolimit will, nennt weniger schwere Unfälle: Mit Tempo 120 gab es auf Autobahnabschnitten gut ein Drittel weniger Unfälle mit Toten.",
+     "quelle_url": "https://doi.org/10.1016/j.tra.2025.104616"
+    },
+    {
+     "seite": "ja",
+     "text": "Wer ein Tempolimit will, nennt außerdem den Klimaschutz: Tempo 120 auf Autobahnen spart nach Berechnungen des Umweltbundesamts jährlich rund 6,7 Millionen Tonnen Treibhausgase.",
+     "quelle_url": "https://www.umweltbundesamt.de/themen/tempolimits-koennten-mehr-treibhausgase-sparen-als"
+    },
+    {
+     "seite": "nein",
+     "text": "Wer es ablehnt, nennt längere Fahrzeiten: Auf Abschnitten ohne Limit fuhren rund drei von zehn Fahrzeugen schneller als 130 km/h.",
+     "quelle_url": "https://doi.org/10.1515/pwp-2021-0023"
+    },
+    {
+     "seite": "nein",
+     "text": "Wer es ablehnt, will Tempolimits nur dort, wo Verkehr, Unfälle oder Lärm sie verlangen – so gilt es heute auf knapp drei von zehn Kilometern Autobahn.",
+     "quelle_url": "https://www.bast.de/DE/Publikationen/BerichteBASt/Fachveroeffentlichungen/Verkehrstechnik/Downloads/V1-BAB-Tempolimit-2015.pdf?__blob=publicationFile&v=1"
+    }
+   ],
+   "ki_entwurf": false
+  },
+  {
+   "id": "h2",
+   "haltung_id": 2,
+   "frage": "Soll Zuwanderung nach Deutschland stärker begrenzt werden?",
+   "beschreibung": "Ob insgesamt weniger Menschen nach Deutschland kommen sollen als bisher – über Asyl, Familiennachzug oder Arbeit –, unabhängig davon, mit welchen Mitteln das geschähe.",
+   "art": "einzeln",
+   "gesucht": "ja",
+   "richtig": [
+    15
+   ],
+   "neutral": [],
+   "positionen": [
+    {
+     "partei_id": 11,
+     "position": "teils",
+     "kurzfassung": "Gewährt Schutzbedürftigen Aufnahme im Rahmen einer Kontingentlösung und trennt humanitäre Aufnahme von der Einwanderung von Fachkräften.",
+     "zitat": "Unserer humanitären Verantwortung werden wir weiterhin gerecht und gewähren schutzbedürftigen Menschen auch in Zukunft im Rahmen einer Kontingentlösung Schutz und Aufenthalt in Deutschland. Dabei trennen wir wieder klar zwischen humanitärer Aufnahme und der Einwanderung von Fachkräften.",
+     "beleg_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=44",
+     "begruendung": null
+    },
+    {
+     "partei_id": 12,
+     "position": "teils",
+     "kurzfassung": "Will geordnete Migration auf den Arbeitsmarkt und eine bessere Kontrolle der Fluchtmigration.",
+     "zitat": "Wir haben für neue Klarheit in der Migrationspolitik gesorgt – für einen Paradigmenwechsel hin zu einer geordneten Migration auf den Arbeitsmarkt und eine bessere Kontrolle der Fluchtmigration.",
+     "beleg_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+     "begruendung": null
+    },
+    {
+     "partei_id": 13,
+     "position": "nein",
+     "kurzfassung": "Lehnt Verschärfungen des Asylrechts ab, die zulasten Schutzsuchender gehen und Integration behindern.",
+     "zitat": "Wir stellen uns gegen reine Symbolpolitik und einen Kurs der Asylrechtsverschärfungen, die nur zulasten der Schutzsuchenden gehen und Integration behindern.",
+     "beleg_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=129",
+     "begruendung": null
+    },
+    {
+     "partei_id": 14,
+     "position": "teils",
+     "kurzfassung": "Will mehr Einwanderung in den Arbeitsmarkt, aber keine in die sozialen Sicherungssysteme.",
+     "zitat": "Wir wollen Einwanderung in den Arbeitsmarkt, nicht in die sozialen Sicherungssysteme.",
+     "beleg_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=27",
+     "begruendung": null
+    },
+    {
+     "partei_id": 15,
+     "position": "ja",
+     "kurzfassung": "Will eine Kehrtwende in der Migrationspolitik: Grenzen wieder kontrollieren, einreisen darf nur, wem es erlaubt ist.",
+     "zitat": "Die AfD wird eine deutliche Kehrtwende in der bisherigen Migrationspolitik einleiten und die Staatsgrenzen wieder kontrollieren. Die Freizügigkeitsregelungen innerhalb der EU bleiben davon unberührt. Einreisen darf künftig nur noch, wem dies erlaubt ist.",
+     "beleg_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=101",
+     "begruendung": null
+    },
+    {
+     "partei_id": 16,
+     "position": "nein",
+     "kurzfassung": "Will Visa liberalisieren und ein offenes Einwanderungsrecht, das nicht nach Herkunft oder Verwertbarkeit unterscheidet.",
+     "zitat": "Wir setzen uns für eine umfassende Visaliberalisierung sowie für ein offenes und solidarisches Einwanderungsrecht ein, das sich nicht mehr am Maßstab Herkunft oder ökonomische Verwertbarkeit orientiert, sondern Teilhabe und Partizipation für alle ermöglicht.",
+     "beleg_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=54",
+     "begruendung": null
+    },
+    {
+     "partei_id": 17,
+     "position": "teils",
+     "kurzfassung": "Verteidigt das Asylrecht für wirklich Schutzbedürftige und will die unkontrollierte Einwanderung beenden.",
+     "zitat": "Wir verteidigen das Grundrecht auf Asyl für wirklich Schutzbedürftige. Gleichzeitig wollen wir die unkontrollierte Einwanderung beenden.",
+     "beleg_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=36",
+     "begruendung": null
+    }
+   ],
+   "zielkonflikte": [
+    {
+     "seite": "ja",
+     "text": "Wer Zuwanderung stärker begrenzen will, nennt die Belastung der Kommunen: Die Unterbringung bleibt für die meisten herausfordernd, Ausländerbehörden sind besonders stark belastet.",
+     "quelle_url": "https://mediendienst-integration.de/fileadmin/Dateien/EXPERTISE_FLUECHTLINGSAUFNAHME_IN_DEN_KOMMUNEN_MEDIENDIENST_INTEGRATION_NOV_2025_FINAL.pdf"
+    },
+    {
+     "seite": "ja",
+     "text": "Wer Zuwanderung stärker begrenzen will, nennt außerdem den Wohnungsmarkt: In Großstädten wächst die Nachfrage vor allem durch Zuwanderung.",
+     "quelle_url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2026/IW-Report_2026-Migration-und-Wohnungsmarkt.pdf"
+    },
+    {
+     "seite": "nein",
+     "text": "Wer das ablehnt, nennt den Bedarf an Arbeitskräften: Ohne Zuwanderung sänke das Arbeitskräfteangebot bis 2060 um 16 Millionen, gleich bliebe es nur mit netto rund 400.000 Zuwandernden im Jahr.",
+     "quelle_url": "https://doku.iab.de/kurzber/2021/kb2021-25.pdf"
+    },
+    {
+     "seite": "nein",
+     "text": "Wer das ablehnt, nennt außerdem den Schutz politisch Verfolgter, den das Grundgesetz als Recht auf Asyl garantiert.",
+     "quelle_url": "https://www.gesetze-im-internet.de/gg/art_16a.html"
+    }
+   ],
+   "ki_entwurf": false
+  }
+ ]
+}
