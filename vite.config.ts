@@ -36,7 +36,12 @@ export default defineConfig({
       // Das Manifest liegt schon in public/manifest.webmanifest.
       manifest: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,webmanifest}', MIT_QUIZ_ENTWUERFEN ? 'quiz/*.json' : 'quiz/fragen.json'],
+        globPatterns: [
+          '**/*.{js,css,html,svg,webmanifest}',
+          MIT_QUIZ_ENTWUERFEN ? 'quiz/*.json' : 'quiz/fragen.json',
+          // Stimmen und Geräusche der Quiz-Show (ca. 3 MB), damit sie auch offline spielt.
+          'quiz/audio/*.{mp3,json}',
+        ],
         navigateFallback: `${base}index.html`,
         cleanupOutdatedCaches: true,
         runtimeCaching: [],

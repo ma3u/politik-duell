@@ -52,6 +52,8 @@ export interface QuizZustand {
   verlauf: Record<string, Ergebnis>[]
   /** Zeit je Frage, von der Spielleitung vor dem Start gewählt (WCAG 2.2.1). */
   zeitfaktor: Zeitfaktor
+  /** Wie viele Spiele in diesem Raum begonnen wurden – das Intro der Show läuft nur beim ersten. */
+  spielNr: number
 }
 
 /** Nachrichten vom Gast an die Spielleitung. */
@@ -83,6 +85,7 @@ export const neuerZustand = (
   beantwortet: [],
   verlauf: [],
   zeitfaktor,
+  spielNr: 0,
 })
 
 /** Zeit je Frage ändern – nur vor dem Start. */
@@ -146,6 +149,7 @@ export function starte(z: QuizZustand, fragen: string[]): QuizZustand {
     index: 0,
     beantwortet: [],
     verlauf: [],
+    spielNr: (z.spielNr ?? 0) + 1,
     spieler: z.spieler.filter((s) => s.verbunden).map((s) => ({ ...s, punkte: 0 })),
   }
 }

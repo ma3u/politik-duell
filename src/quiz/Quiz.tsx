@@ -9,6 +9,9 @@ import { bereinigeName, FRAGEN_JE_SPIEL } from './spielleitung'
 import type { QuizDaten } from './typen'
 import { useGast, useSpielleitung } from './useSpiel'
 import { VERMITTLUNG } from './netz'
+import { TonKnopf, UntertitelLeiste } from './show/Buehne'
+import { alleClips, GERAEUSCHE } from './show/texte'
+import { entsperren, ladeShow, vorladen } from './show/ton'
 import { istRaumcode, neuerRaumcode, SIGNAL_ART } from './verbindung'
 
 // Programm-Quiz „Wer sagt Ja?“ unter #/quiz (Einladung: #/quiz/<Raumcode>). Ohne Datenbank: Die Fragen kommen
@@ -46,6 +49,12 @@ const einladungAus = (hash: string) => {
   return code && istRaumcode(code) ? code : null
 }
 
+/** In einer Nutzeraktion: Ton freischalten und alle Clips und Geräusche schon laden (ca. 3 MB). */
+function showStarten(daten: QuizDaten) {
+  entsperren()
+  vorladen(alleClips(daten.fragen, daten.parteien), GERAEUSCHE.map((g) => g.id))
+}
+
 const raumLink = (code: string) => `${location.origin}${location.pathname}#/quiz/${code}`
 
 type Modus = { art: 'start' } | { art: 'leitung'; code: string | null } | { art: 'gast'; code: string }
@@ -60,8 +69,8 @@ export function Quiz() {
   const [modus, setModus] = useState<Modus>({ art: 'start' })
 
   useEffect(() => {
-    ladeQuiz()
-      .then(setDaten)
+    Promise.all([ladeQuiz(), ladeShow()])
+      .then(([d]) => setDaten(d))
       .catch((e: unknown) => setLadeFehler(e instanceof Error ? e.message : String(e)))
   }, [])
 
@@ -91,7 +100,10 @@ export function Quiz() {
           <span>Politik-Duell</span>
           <span className="sr-only"> – zur Startseite</span>
         </a>
-        <span className="quiz-marke">Wer sagt Ja?</span>
+        <span className="quiz-kopf-rechts">
+          <span className="quiz-marke">Wer sagt Ja?</span>
+          <TonKnopf />
+        </span>
       </header>
       {!daten ? (
         <main className="seite quiz">
@@ -118,11 +130,21 @@ export function Quiz() {
           zeit={zeit}
           onZeit={setZeit}
           einladung={einladung}
-          onEroeffnen={() => setModus({ art: 'leitung', code: neuerRaumcode() })}
-          onAllein={() => setModus({ art: 'leitung', code: null })}
-          onBeitreten={(code) => setModus({ art: 'gast', code })}
+          onEroeffnen={() => {
+            showStarten(daten)
+            setModus({ art: 'leitung', code: neuerRaumcode() })
+          }}
+          onAllein={() => {
+            showStarten(daten)
+            setModus({ art: 'leitung', code: null })
+          }}
+          onBeitreten={(code) => {
+            showStarten(daten)
+            setModus({ art: 'gast', code })
+          }}
         />
       )}
+      <UntertitelLeiste />
       <Fusszeile />
     </div>
   )
@@ -261,7 +283,8 @@ function QuizStart({
         </div>
 
         <p className="datenschutz">
-          <strong>Datenschutz:</strong> Kein Konto, keine Cookies, keine KI, nichts wird gespeichert. Das Spiel läuft
+          <strong>Datenschutz:</strong> Kein Konto, keine Cookies, nichts wird gespeichert; keine KI wertet deine Antworten
+          aus. Mara und Ben sind KI-Stimmen (ElevenLabs), vorab aufgenommen – beim Spielen geht nichts an ElevenLabs. Das Spiel läuft
           zwischen euren Geräten; {VERMITTLUNG} vermittelt nur die Verbindung und leitet weiter, wenn es direkt nicht
           klappt – Nachrichten liegen dort nur, bis sie gelesen sind. Bei einer direkten Verbindung sehen die Geräte im Raum gegenseitig ihre IP-Adresse.{' '}
           <a href="#/datenschutz">Mehr erfahren</a>

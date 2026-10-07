@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Zeitfaktor } from './punkte'
+import { dauerMs, vorspann } from './show/ablauf'
 import {
   alleFertig,
   alsGastNachricht,
@@ -32,6 +33,12 @@ export const frageVon = (daten: QuizDaten, z: QuizZustand): QuizFrage | undefine
 
 /** Zeitlimit der laufenden Frage; null = ohne Zeitlimit. */
 const zeitFuer = (daten: QuizDaten, z: QuizZustand) => limitFuer(z, frageVon(daten, z) ?? { art: 'einzeln' })
+
+/** Dauer des Vorspanns der laufenden Frage (Show) – auf allen Geräten gleich berechnet. */
+export function vorspannMs(daten: QuizDaten, z: QuizZustand): number {
+  const f = frageVon(daten, z)
+  return f ? dauerMs(vorspann(f, z.index, z.fragen.length, daten.parteien, z.spielNr <= 1)) : 0
+}
 
 export interface Spielsicht {
   z: QuizZustand | null
@@ -82,7 +89,8 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
   const verteilen = useCallback(
     (s: QuizZustand) => {
       const limit = s.phase === 'frage' ? zeitFuer(daten, s) : null
-      const restMs = limit === null ? null : Math.max(0, limit - (performance.now() - frageStart.current))
+      // Restzeit bis zum Ende des Antwortfensters (Vorspann + Zeitlimit).
+      const restMs = limit === null ? null : Math.max(0, vorspannMs(daten, s) + limit - (performance.now() - frageStart.current))
       for (const [id, l] of leitungen.current) l.senden({ t: 'zustand', du: id, z: { ...s, restMs } } satisfies LeitungNachricht)
     },
     [daten],
@@ -110,7 +118,7 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
       frageStart.current = performance.now()
       clearTimeout(timer.current)
       const limit = zeitFuer(daten, s)
-      if (limit !== null) timer.current = setTimeout(aufloesenJetzt, limit + GNADE_MS)
+      if (limit !== null) timer.current = setTimeout(aufloesenJetzt, vorspannMs(daten, s) + limit + GNADE_MS)
       setze(s)
     },
     [daten, aufloesenJetzt, setze],
@@ -189,7 +197,7 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
   return {
     z,
     ich: LEITUNG_ID,
-    restMs: z.phase === 'frage' ? zeitFuer(daten, z) : null,
+    restMs: z.phase === 'frage' && zeitFuer(daten, z) !== null ? vorspannMs(daten, z) + zeitFuer(daten, z)! : null,
     raumFehler,
     raumBereit,
     antworten: (auswahl, ms) => antwortVon(LEITUNG_ID, zRef.current.index, auswahl, ms),

@@ -323,6 +323,12 @@ function Datenschutz() {
         )}
       </p>
       <p>
+        <strong>Stimmen und Geräusche:</strong> Die Moderatoren Mara und Ben sind erfundene, mit KI erzeugte Stimmen
+        (ElevenLabs). Alle Ansagen und Geräusche sind vorab aufgenommen und kommen als Dateien von unserer Website; beim
+        Spielen geht nichts an ElevenLabs. Der Ton lässt sich jederzeit ausschalten, die Ansagen stehen auch als
+        Untertitel auf dem Bildschirm.
+      </p>
+      <p>
         <strong>Rechtsgrundlage</strong> ist unser berechtigtes Interesse, das gemeinsame Spiel möglichst ohne Server
         und ohne Speicherung anzubieten (Art. 6 Abs. 1 lit. f DSGVO). Spiele mit Menschen, denen du deinen Raumcode
         geben möchtest – wer ihn kennt, kann beitreten.

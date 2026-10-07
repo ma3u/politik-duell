@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from 'react'
+import { Fragment, useEffect, useId, useRef, useState } from 'react'
 import { useAnsicht } from '../barrierefrei'
 import { ProgrammLink } from '../components/belege'
 import { Kreuzfeld } from '../components/Kreuz'
@@ -10,6 +10,11 @@ import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
 import { limitFuer, rangliste, type Ergebnis, type QuizSpieler, type QuizZustand, type Weg } from './spielleitung'
 import type { QuizDaten, QuizFrage, QuizPartei } from './typen'
 import { frageVon } from './useSpiel'
+import { aufloesung, dauerMs, parteiWoerter, reaktionFuer, vorspann, type Marke } from './show/ablauf'
+import { Knall, Konfetti } from './show/Buehne'
+import { COUNTDOWN, OUTRO, SCHLUSS, type Schluss } from './show/texte'
+import { klang, sprich } from './show/ton'
+import { useAblauf } from './show/useAblauf'
 
 // Ansichten des Quiz – für Spielleitung und Gäste gleich; nur die Knöpfe zum Weiterschalten hat die Leitung.
 
@@ -159,19 +164,48 @@ function Zeitleiste({ dauer, rest }: { dauer: number; rest: number }) {
   )
 }
 
-function Frage({ daten, z, ich, restMs, frage, istLeitung, onAntwort, onAufloesen }: AnsichtProps & { frage: QuizFrage }) {
+function Frage({ daten, z, ich, restMs, frage, istLeitung, allein, onAntwort, onAufloesen }: AnsichtProps & { frage: QuizFrage }) {
   const titel = useAnsicht(`Frage ${z.index + 1} von ${z.fragen.length}`)
   // null = ohne Zeitlimit (WCAG 2.2.1).
   const dauer = limitFuer(z, frage)
-  // Die Zeit läuft ab Anzeige auf diesem Gerät; die Restzeit kommt mit der Frage von der Spielleitung.
-  const [frist] = useState(() => (dauer === null ? Infinity : Math.min(restMs ?? dauer, dauer)))
+  // Show-Vorspann: Ansage, Frage, Anleitung, Antworten, „Los!“ – erst danach läuft die Zeit (auf allen Geräten gleich lang).
+  const [schritte] = useState(() => vorspann(frage, z.index, z.fragen.length, daten.parteien, z.spielNr <= 1))
+  const [vorspannDauer] = useState(() => dauerMs(schritte))
+  // Ende des Antwortfensters als fester Zeitpunkt: Ankunft der Frage + Restzeit der Spielleitung. Dauert der
+  // Vorspann auf diesem Gerät länger, wird das Fenster kürzer – nie länger als die Frist der Spielleitung.
+  const [frist, setFrist] = useState(() => dauer ?? Infinity)
+  const [schluss] = useState(() => (dauer === null ? Infinity : performance.now() + (restMs ?? vorspannDauer + dauer)))
+  const [offen, setOffen] = useState(false)
+  const [sichtbar, setSichtbar] = useState(0)
   const [rest, setRest] = useState(frist)
   const [auswahl, setAuswahl] = useState<number[]>([])
   const [abgegeben, setAbgegeben] = useState(false)
   const beginn = useRef(0)
   const auswahlRef = useRef<number[]>([])
   const abgegebenRef = useRef(false)
-  const abgelaufen = rest <= 0
+  const abgelaufen = offen && rest <= 0
+  const [optionenWoerter] = useState(() => {
+    const o = schritte.find((x) => x.marke === 'optionen')
+    return o?.clip ? parteiWoerter(o.clip, daten.parteien) : null
+  })
+
+  const show = useAblauf(schritte, {
+    onWort: (marke, i) => {
+      if (marke !== 'optionen') return
+      if (optionenWoerter) {
+        if (!optionenWoerter.has(i)) return
+        setSichtbar([...optionenWoerter.keys()].filter((k) => k <= i).length)
+      } else setSichtbar(i + 1)
+      klang('plopp')
+    },
+    onEnde: () => {
+      setSichtbar(daten.parteien.length)
+      if (dauer !== null) setFrist(Math.max(1000, Math.min(dauer, schluss - performance.now())))
+      setOffen(true)
+    },
+  })
+  const war = (m: Marke) => show.gewesen.includes(m)
+  const woerter = frage.frage.split(/\s+/)
 
   function abgeben(a: number[], ms = performance.now() - beginn.current) {
     if (abgegebenRef.current) return
@@ -180,24 +214,32 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, onAntwort, onAufloese
     onAntwort(a, Math.round(ms))
   }
 
+  // Antwortfenster: Zeit läuft ab dem Ende des Vorspanns.
   useEffect(() => {
+    if (!offen) return
     const start = performance.now()
     beginn.current = start
     if (dauer === null) return
+    let gewarnt = false
     const t = setInterval(() => {
       const r = Math.max(0, frist - (performance.now() - start))
       setRest(r)
+      if (!gewarnt && r <= 5000 && frist > 6000 && !abgegebenRef.current) {
+        gewarnt = true
+        klang('ticken')
+        void sprich(COUNTDOWN).catch(() => {})
+      }
       if (r > 0) return
       clearInterval(t)
       // Zeit um: Eine angekreuzte, aber nicht abgegebene Auswahl zählt (mit voller Zeit).
       if (auswahlRef.current.length) abgeben(auswahlRef.current, frist)
     }, 100)
     return () => clearInterval(t)
-    // Nur beim Erscheinen der Frage – abgeben liest den neuesten Stand aus Refs.
+    // Nur beim Öffnen des Antwortfensters – abgeben liest den neuesten Stand aus Refs.
     // oxlint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [offen])
 
-  const gesperrt = abgegeben || abgelaufen
+  const gesperrt = !offen || abgegeben || abgelaufen
   const verbunden = z.spieler.filter((s) => s.verbunden).length
 
   function waehle(id: number) {
@@ -205,31 +247,54 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, onAntwort, onAufloese
     const neu = frage.art === 'einzeln' ? [id] : auswahl.includes(id) ? auswahl.filter((x) => x !== id) : [...auswahl, id]
     auswahlRef.current = neu
     setAuswahl(neu)
+    klang('plopp')
     if (frage.art === 'einzeln') abgeben(neu)
   }
 
   return (
-    <main className="seite quiz">
+    <main className="seite quiz quiz-auftritt">
       <p className="quiz-fortschritt">
         Frage {z.index + 1} von {z.fragen.length}
       </p>
-      {dauer === null ? <p className="meta">Ohne Zeitlimit</p> : <Zeitleiste dauer={dauer} rest={rest} />}
-      <h2 className="quiz-frage" ref={titel}>
-        {frage.frage}
-      </h2>
-      <p className="meta">{frage.beschreibung}</p>
-      <p className="quiz-anleitung">
+      {show.marke === 'intro' && !show.fertig && <Knall text="Wer sagt Ja?" klein="Das Programm-Quiz" />}
+      {show.marke === 'ansage' && !show.fertig && (
+        <Knall text={z.index === z.fragen.length - 1 ? 'Letzte Frage!' : `Frage ${z.index + 1}`} klein={`von ${z.fragen.length}`} />
+      )}
+      {show.marke === 'los' && !show.fertig && <Knall text="Los!" art="gut" />}
+      {offen ? (
+        dauer === null ? (
+          <p className="meta">Ohne Zeitlimit</p>
+        ) : (
+          <Zeitleiste dauer={frist} rest={rest} />
+        )
+      ) : (
+        <div className="quiz-zeit quiz-zeit-wartet" aria-hidden="true" />
+      )}
+      <div className="buehne">
+        <h2 className="quiz-frage" ref={titel}>
+          <span className="sr-only">{frage.frage}</span>
+          <span aria-hidden="true">
+            {woerter.map((w, i) => (
+              <Fragment key={i}>
+                <span className={`show-wort${war('frage') && (show.marke !== 'frage' || i <= show.wort) ? ' da' : ''}`}>{w}</span>{' '}
+              </Fragment>
+            ))}
+          </span>
+        </h2>
+        <p className={`buehne-meta show-rein${war('anleitung') ? ' da' : ''}`}>{frage.beschreibung}</p>
+      </div>
+      <p className={`quiz-anleitung show-rein${war('anleitung') ? ' da' : ''}`}>
         {anleitung(frage)}
         {frage.art === 'einzeln' && <span className="quiz-anleitung-zusatz"> Ein Tipp auf eine Partei gibt die Antwort ab.</span>}
       </p>
       <div className="partei-liste stimmzettel quiz-wahl" role="group" aria-label="Parteien">
-        {daten.parteien.map((partei) => {
+        {daten.parteien.map((partei, i) => {
           const gewaehlt = auswahl.includes(partei.id)
           return (
             <button
               key={partei.id}
               type="button"
-              className={`partei-zeile${gewaehlt ? ' gewaehlt' : ''}`}
+              className={`partei-zeile show-zeile${i < sichtbar ? ' da' : ''}${gewaehlt ? ' gewaehlt' : ''}`}
               style={parteiStil(partei.farbe)}
               aria-pressed={gewaehlt}
               disabled={gesperrt && !gewaehlt}
@@ -241,21 +306,28 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, onAntwort, onAufloese
           )
         })}
       </div>
-      {frage.art === 'mehrfach' && !gesperrt && (
+      {!offen && allein && (
+        <button type="button" className="knopf knopf-leise knopf-klein" onClick={show.ueberspringen}>
+          Ansage überspringen
+        </button>
+      )}
+      {frage.art === 'mehrfach' && offen && !gesperrt && (
         <button type="button" className="knopf knopf-gross" disabled={!auswahl.length} onClick={() => abgeben(auswahl)}>
           Abgeben
         </button>
       )}
       <p className="hinweis quiz-warten" aria-live="polite">
-        {abgegeben
-          ? verbunden > 1
-            ? `Abgegeben. Warte auf die anderen (${z.beantwortet.length + (z.beantwortet.includes(ich) ? 0 : 1)} von ${verbunden}) …`
-            : 'Abgegeben.'
-          : abgelaufen
-            ? 'Zeit abgelaufen.'
-            : ''}
+        {!offen
+          ? 'Gleich geht’s los …'
+          : abgegeben
+            ? verbunden > 1
+              ? `Abgegeben. Warte auf die anderen (${z.beantwortet.length + (z.beantwortet.includes(ich) ? 0 : 1)} von ${verbunden}) …`
+              : 'Abgegeben.'
+            : abgelaufen
+              ? 'Zeit abgelaufen.'
+              : 'Jetzt antworten!'}
       </p>
-      {istLeitung && dauer === null && onAufloesen && verbunden > 1 && (
+      {istLeitung && dauer === null && onAufloesen && verbunden > 1 && offen && (
         <button type="button" className="knopf knopf-zweit" onClick={onAufloesen}>
           Jetzt auflösen
         </button>
@@ -342,16 +414,16 @@ function KiHinweis({ frage }: { frage: QuizFrage }) {
   )
 }
 
-function MeinErgebnis({ e, frage }: { e: Ergebnis | undefined; frage: QuizFrage }) {
-  if (!e || e.ms === null) return <p className="quiz-ergebnis">Keine Antwort – 0 Punkte.</p>
+function MeinErgebnisText({ e, frage }: { e: Ergebnis; frage: QuizFrage }) {
   const teile =
     frage.art === 'einzeln'
       ? [e.anteil === 1 ? 'richtig' : 'leider daneben']
       : [`${e.treffer} von ${frage.richtig.length} getroffen`, ...(e.fehler ? [`${e.fehler} daneben`] : [])]
   return (
-    <p className="quiz-ergebnis">
-      <strong>+{e.punkte} Punkte</strong> · {teile.join(', ')} · {sekunden(e.ms)} s
-    </p>
+    <>
+      {teile.join(', ')}
+      {e.ms !== null && ` · ${sekunden(e.ms)} s`}
+    </>
   )
 }
 
@@ -378,34 +450,118 @@ function loesungText(frage: QuizFrage, parteien: QuizPartei[]) {
   return `${frage.gesucht === 'ja' ? 'Ja' : 'Nein'} ${frage.richtig.length === 1 ? 'sagt' : 'sagen'}: ${namen}`
 }
 
+const REAKTION_KNALL = {
+  richtig: { text: 'Richtig!', art: 'gut' },
+  teils: { text: 'Halb richtig', art: 'normal' },
+  falsch: { text: 'Daneben!', art: 'schlecht' },
+  keine: { text: 'Zu spät!', art: 'schlecht' },
+} as const
+
+/** Punkte, die hochzählen. */
+function Hochzaehlen({ bis, laeuft }: { bis: number; laeuft: boolean }) {
+  const [wert, setWert] = useState(0)
+  useEffect(() => {
+    if (!laeuft) return
+    const start = performance.now()
+    let id = 0
+    const schritt = () => {
+      const t = Math.min(1, (performance.now() - start) / 900)
+      setWert(Math.round(bis * (1 - (1 - t) ** 3)))
+      if (t < 1) id = requestAnimationFrame(schritt)
+    }
+    id = requestAnimationFrame(schritt)
+    return () => cancelAnimationFrame(id)
+  }, [bis, laeuft])
+  return <>{laeuft ? wert : bis}</>
+}
+
 function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: AnsichtProps & { frage: QuizFrage }) {
   const titel = useAnsicht(`Auflösung ${z.index + 1} von ${z.fragen.length}`)
   const ergebnisse = z.verlauf[z.index]
   const mein = ergebnisse?.[ich]
   const letzte = z.index + 1 >= z.fragen.length
+  const reaktion = mein ? reaktionFuer(mein.anteil, mein.ms !== null && mein.auswahl.length > 0) : null
+  const [schritte] = useState(() => aufloesung(frage, z.index, daten.parteien, reaktion))
+  const [loesungWoerter] = useState(() => parteiWoerter(schritte.find((x) => x.marke === 'loesung')!.clip!, daten.parteien))
+  const [gestempelt, setGestempelt] = useState<number[]>([])
+  const show = useAblauf(schritte, {
+    onWort: (marke, i) => {
+      const id = marke === 'loesung' ? loesungWoerter.get(i) : undefined
+      if (id === undefined) return
+      setGestempelt((g) => [...g, id])
+      klang('stempel')
+    },
+    onEnde: () => setGestempelt(frage.richtig),
+  })
+  const war = (m: Marke) => show.gewesen.includes(m)
+  const loesungDa = war('loesung')
+  const gesucht = frage.gesucht === 'ja' ? 'Ja' : 'Nein'
+
   return (
-    <main className="seite quiz">
+    <main className="seite quiz quiz-auftritt">
       <p className="quiz-fortschritt">
         Auflösung {z.index + 1} von {z.fragen.length}
       </p>
-      <h2 className="quiz-frage" ref={titel}>
-        {frage.frage}
-      </h2>
-      <p className="quiz-loesung">{loesungText(frage, daten.parteien)}</p>
-      <MeinErgebnis e={mein} frage={frage} />
-      <Positionen frage={frage} parteien={daten.parteien} auswahl={mein?.auswahl ?? []} />
-      <Zielkonflikte frage={frage} />
-      <KiHinweis frage={frage} />
-      <p className="meta">
-        Positionen aus den Bundeswahlprogrammen 2025 mit Wortlaut und Seite. „Keine Aussage im Programm“ heißt: Das
-        Programm wurde durchsucht, eine Position dazu nicht gefunden. Punkte gibt es fürs Wissen, was im Programm
-        steht – nicht für eine Meinung.
-      </p>
-      {!allein && (
-        <>
-          <p className="label">Zwischenstand</p>
-          <Stand z={z} ich={ich} letzte={ergebnisse} />
-        </>
+      {show.marke === 'reaktion' && !show.fertig && reaktion && (
+        <Knall text={REAKTION_KNALL[reaktion].text} art={REAKTION_KNALL[reaktion].art} klein={mein ? `+${mein.punkte} Punkte` : undefined} />
+      )}
+      <div className="buehne">
+        <h2 className="quiz-frage" ref={titel}>
+          {frage.frage}
+        </h2>
+        <p className={`buehne-meta${loesungDa ? '' : ' show-spannung'}`}>{loesungDa ? `${gesucht}-Stimmen im Programm:` : 'Und die Programme sagen …'}</p>
+      </div>
+      {/* Stimmzettel mit Stempel: im Takt der Ansage. Feste Reihenfolge, keine Farben für Positionen. */}
+      <ul className="partei-liste stimmzettel show-tafel" aria-label="Lösung">
+        {daten.parteien.map((partei) => {
+          const p = frage.positionen.find((x) => x.partei_id === partei.id)
+          const stempel = gestempelt.includes(partei.id)
+          const gewaehlt = mein?.auswahl.includes(partei.id) ?? false
+          return (
+            <li key={partei.id} className={`partei-zeile show-tafel-zeile${gewaehlt ? ' gewaehlt' : ''}`} style={parteiStil(partei.farbe)}>
+              <span className="partei-zeile-name">
+                {partei.name}
+                {show.fertig && p && <small> · {POSITION_TEXT[p.position]}</small>}
+              </span>
+              {stempel && <span className="show-stempel">{gesucht}</span>}
+              {gewaehlt && <span className="sr-only">(dein Kreuz)</span>}
+              <Kreuzfeld />
+            </li>
+          )
+        })}
+      </ul>
+      {show.fertig ? (
+        <div className="show-rein da">
+          <p className="quiz-loesung">{loesungText(frage, daten.parteien)}</p>
+          {mein && mein.ms !== null ? (
+            <p className="quiz-ergebnis">
+              <strong className="show-punkte">
+                +<Hochzaehlen bis={mein.punkte} laeuft={reaktion !== null} /> Punkte
+              </strong>{' '}
+              · <MeinErgebnisText e={mein} frage={frage} />
+            </p>
+          ) : (
+            <p className="quiz-ergebnis">Keine Antwort – 0 Punkte.</p>
+          )}
+          <Positionen frage={frage} parteien={daten.parteien} auswahl={mein?.auswahl ?? []} />
+          <Zielkonflikte frage={frage} />
+          <KiHinweis frage={frage} />
+          <p className="meta">
+            Positionen aus den Bundeswahlprogrammen 2025 mit Wortlaut und Seite. „Keine Aussage im Programm“ heißt: Das
+            Programm wurde durchsucht, eine Position dazu nicht gefunden. Punkte gibt es fürs Wissen, was im Programm
+            steht – nicht für eine Meinung.
+          </p>
+          {!allein && (
+            <>
+              <p className="label">Zwischenstand</p>
+              <Stand z={z} ich={ich} letzte={ergebnisse} />
+            </>
+          )}
+        </div>
+      ) : (
+        <button type="button" className="knopf knopf-leise knopf-klein" onClick={show.ueberspringen}>
+          Auflösung überspringen
+        </button>
       )}
       {istLeitung ? (
         <button type="button" className="knopf knopf-gross" onClick={onWeiter}>
@@ -418,6 +574,27 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
   )
 }
 
+function schlussFuer(z: QuizZustand, ich: string, allein: boolean, max: number): Schluss {
+  const ich_ = z.spieler.find((s) => s.id === ich)
+  if (allein) {
+    const anteil = max ? (ich_?.punkte ?? 0) / max : 0
+    return anteil >= 0.6 ? 'solo-gut' : anteil >= 0.3 ? 'solo-mittel' : 'solo-schwach'
+  }
+  const plaetze = rangliste(z.spieler)
+  const erste = plaetze.filter((p) => p.rang === 1)
+  if (!erste.some((p) => p.spieler.id === ich)) return 'niederlage'
+  return erste.length > 1 ? 'gleichstand' : 'sieg'
+}
+
+const SCHLUSS_KNALL: Record<Schluss, { text: string; art: 'gut' | 'normal' | 'schlecht' }> = {
+  sieg: { text: 'Gewonnen!', art: 'gut' },
+  gleichstand: { text: 'Gleichstand!', art: 'normal' },
+  niederlage: { text: 'Verloren!', art: 'schlecht' },
+  'solo-gut': { text: 'Stark!', art: 'gut' },
+  'solo-mittel': { text: 'Solide!', art: 'normal' },
+  'solo-schwach': { text: 'Ausbaufähig!', art: 'schlecht' },
+}
+
 function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: AnsichtProps) {
   const titel = useAnsicht('Ergebnis', z.verlauf.length)
   const fragen = z.fragen.map((id) => daten.fragen.find((f) => f.id === id)).filter((f): f is QuizFrage => !!f)
@@ -425,11 +602,20 @@ function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: Ans
   const max = fragen.length * MAX_PUNKTE
   const plaetze = rangliste(z.spieler)
   const sieger = plaetze.filter((p) => p.rang === 1).map((p) => p.spieler.name)
+  const [schluss] = useState(() => schlussFuer(z, ich, allein, max))
+  const gut = SCHLUSS_KNALL[schluss].art === 'gut'
+  const [schritte] = useState(() => [
+    { marke: 'reaktion' as const, clip: SCHLUSS[schluss], klang: gut || schluss === 'gleichstand' ? 'sieg' : 'niederlage', pause: 300 },
+    { marke: 'reaktion' as const, clip: OUTRO },
+  ])
+  const show = useAblauf(schritte)
   return (
-    <main className="seite quiz">
+    <main className={`seite quiz quiz-auftritt show-ende show-ende-${SCHLUSS_KNALL[schluss].art}`}>
+      {gut && !show.fertig && <Konfetti />}
+      <Knall text={SCHLUSS_KNALL[schluss].text} art={SCHLUSS_KNALL[schluss].art} />
       <h2 ref={titel}>{allein ? 'Geschafft' : sieger.length > 1 ? `Gleichstand: ${sieger.join(' und ')}` : `${sieger[0]} gewinnt`}</h2>
       <p className="quiz-ergebnis">
-        Du hast <strong>{ich_?.punkte ?? 0}</strong> von {max} möglichen Punkten.
+        Du hast <strong className="show-punkte">{ich_?.punkte ?? 0}</strong> von {max} möglichen Punkten.
       </p>
       {!allein && <Stand z={z} ich={ich} />}
       <h3 className="quiz-zf-titel">Alle Fragen mit Belegen</h3>

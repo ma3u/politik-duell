@@ -1117,6 +1117,7 @@ textarea {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
@@ -3129,4 +3130,259 @@ html:has(.punktestand) {
   animation-iteration-count: 1 !important;
   animation-delay: 0s !important;
   transition-duration: 0.01ms !important;
+}
+
+/* ---------- Quiz-Show (Animationen, Untertitel) ----------
+   Schnell, laut, kinetische Schrift – eigene Gestaltung im Stimmzettel-Stil. Alle Bewegungen ruhen bei
+   „Bewegung anhalten“ und „Bewegung reduzieren“; nichts blinkt (WCAG 2.3.1). */
+.quiz-kopf-rechts {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz-auftritt {
+  animation: auftritt 0.38s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+@keyframes auftritt {
+  from {
+    opacity: 0;
+    transform: translateX(28px) skewX(-4deg);
+  }
+}
+.buehne {
+  margin: 0 0 0.8rem;
+  padding: 18px 18px 16px;
+  color: #fff;
+  background: var(--tinte);
+  border-radius: var(--papier-radius);
+  box-shadow: 0 6px 0 var(--stimmblau-tief);
+}
+.buehne .quiz-frage {
+  margin: 0;
+  font-size: clamp(1.45rem, 5.2vw, 2.1rem);
+  line-height: 1.15;
+}
+.buehne-meta {
+  margin: 0.6rem 0 0;
+  color: #c9d3ea;
+  font-size: 0.95rem;
+}
+.show-wort {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.35em) scale(0.85);
+}
+.show-wort.da {
+  opacity: 1;
+  transform: none;
+  animation: wortrein 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.4);
+}
+@keyframes wortrein {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em) scale(0.85);
+  }
+}
+.show-rein {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.show-rein.da {
+  opacity: 1;
+  transform: none;
+}
+.show-zeile {
+  opacity: 0;
+  transform: translateX(-26px) scale(0.97);
+}
+.show-zeile.da {
+  opacity: 1;
+  transform: none;
+  animation: zeilerein 0.28s cubic-bezier(0.2, 0.9, 0.3, 1.3);
+}
+@keyframes zeilerein {
+  from {
+    opacity: 0;
+    transform: translateX(-26px) scale(0.97);
+  }
+}
+.quiz-zeit-wartet {
+  background: var(--flaeche-2);
+}
+.show-spannung {
+  animation: wackeln 0.6s ease-in-out infinite alternate;
+}
+@keyframes wackeln {
+  from {
+    transform: translateX(-2px);
+  }
+  to {
+    transform: translateX(2px);
+  }
+}
+
+/* Knall: großer Schriftzug mitten auf dem Bildschirm. */
+.show-knall {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  pointer-events: none;
+  text-align: center;
+}
+.show-knall-text {
+  padding: 0.1em 0.35em 0.15em;
+  font-family: var(--schrift-titel);
+  font-size: clamp(3rem, 16vw, 7.5rem);
+  font-weight: 800;
+  font-stretch: 88%;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #fff;
+  background: var(--stimmblau);
+  box-shadow: 0 8px 0 var(--tinte);
+  transform: rotate(-4deg);
+  animation: knall 0.42s cubic-bezier(0.2, 0.9, 0.3, 1.35) both;
+}
+.show-knall-gut .show-knall-text {
+  background: var(--gut);
+  color: #062a1e;
+}
+.show-knall-schlecht .show-knall-text {
+  background: var(--tinte);
+}
+.show-knall-klein {
+  margin-top: 14px;
+  padding: 4px 12px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--tinte);
+  background: #fff;
+  border: 2px solid var(--tinte);
+  animation: knall 0.42s 0.12s cubic-bezier(0.2, 0.9, 0.3, 1.35) both;
+}
+@keyframes knall {
+  from {
+    opacity: 0;
+    transform: scale(2.4) rotate(-14deg);
+  }
+  60% {
+    opacity: 1;
+  }
+}
+.show-ende .show-knall {
+  position: static;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Lösungstafel mit Stempel */
+.show-tafel {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.show-tafel-zeile {
+  cursor: default;
+}
+.show-stempel {
+  padding: 2px 10px;
+  font-family: var(--schrift-titel);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--kuli);
+  border: 3px solid var(--kuli);
+  border-radius: 6px;
+  transform: rotate(-8deg);
+  animation: stempeln 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+@keyframes stempeln {
+  from {
+    opacity: 0;
+    transform: scale(3) rotate(-24deg);
+  }
+}
+.show-punkte {
+  font-family: var(--schrift-titel);
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Untertitel der Moderatoren */
+.show-untertitel {
+  position: sticky;
+  bottom: 12px;
+  z-index: 15;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin: 1rem 0 0;
+  padding: 10px 14px;
+  color: #fff;
+  background: rgb(26 34 51 / 0.94);
+  border-radius: 12px;
+  box-shadow: var(--schatten);
+}
+.show-sprecher {
+  flex: none;
+  padding: 1px 8px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tinte);
+  background: #fff;
+  border-radius: 999px;
+}
+.show-untertitel-ben .show-sprecher {
+  background: var(--warnung);
+}
+.show-satz span {
+  color: #8e9ab8;
+  transition: color 0.12s;
+}
+.show-satz span.gesagt {
+  color: #fff;
+}
+
+/* Konfetti beim Sieg – langsam fallend, kein Blinken. */
+.show-konfetti {
+  position: fixed;
+  inset: 0;
+  z-index: 19;
+  overflow: hidden;
+  pointer-events: none;
+}
+.show-konfetti span {
+  position: absolute;
+  top: -20px;
+  width: 9px;
+  height: 14px;
+  border-radius: 2px;
+  animation: fallen linear forwards;
+}
+@keyframes fallen {
+  to {
+    top: 105%;
+    transform: rotate(540deg) translateX(40px);
+  }
+}
+.show-ende-schlecht .show-knall-text {
+  animation:
+    knall 0.42s cubic-bezier(0.2, 0.9, 0.3, 1.35) both,
+    sacken 0.9s 0.5s ease-in forwards;
+}
+@keyframes sacken {
+  to {
+    transform: rotate(6deg) translateY(10px) scale(0.92);
+  }
+}
+.show-ton {
+  white-space: nowrap;
 }

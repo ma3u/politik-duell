@@ -122,6 +122,18 @@ Warum nicht eine frei gepflegte Liste „Aussage → Parteien“? Bei einer Mehr
 4. Auflösung: alle sieben Positionen in fester Reihenfolge mit Kurzfassung, Seitenlink und Wortlaut zum Aufklappen, dazu die Zielkonflikte beider Seiten; markiert sind nur die eigenen Kreuze (Treffer/daneben), keine Ampelfarben für Positionen. Punkte der Runde und Zwischenstand.
 5. Ende: Rangliste, alle Fragen mit Belegen, „Nochmal“ (Spielleitung).
 
+## Show: Moderation, Animationen, Geräusche
+
+Inspiriert von schnellen Quizshows (kinetische Schrift, freche Moderation, Knall-Effekte), aber eigene Gestaltung im Stimmzettel-Stil – kein fremdes Logo, keine fremden Figuren.
+
+- **Zwei erfundene Moderatoren im Dialog:** Mara (stellt die Fragen, löst auf) und Ben (sagt an, erklärt, kommentiert). Texte in `src/quiz/show/texte.ts`. Frech gegenüber den Spielenden, nie wertend gegenüber Parteien; ein Test prüft, dass Moderationstexte keine Parteinamen enthalten.
+- **Ablauf je Frage** (`src/quiz/show/ablauf.ts`): Intro (nur Frage 1 des ersten Spiels) → Ansage „Frage 2!“ mit Knall → Frage Wort für Wort im Takt der Sprache → Anleitung → Antworten poppen beim Namen auf (beim ersten Mal vorgelesen) → „Los!“. Erst dann läuft die Zeit. Auflösung: Trommelwirbel → Stempel „Ja“/„Nein“ beim Nennen der Partei → Reaktion auf das eigene Ergebnis mit Punkte-Zählwerk. Ende: „Gewonnen!“ mit Konfetti, „Verloren!“ sackt zusammen, dazu Fanfare oder Posaune.
+- **Synchron auf allen Geräten:** Jedes Gerät spielt die Show selbst ab, nach einem festen Zeitplan aus den Clip-Dauern (`dauerMs`). Die Spielleitung verlängert ihre Frist um den Vorspann; das Antwortfenster der Gäste endet zum selben Zeitpunkt. Gemessen: Antwortfenster öffnen sich auf zwei Geräten im Abstand von wenigen Millisekunden.
+- **Aufnahmen:** `npm run quiz:stimmen` erzeugt mit ElevenLabs (Voice Design für zwei neue Stimmen, `eleven_v3` mit Zeitstempeln je Zeichen, Sound Effects) alle Clips nach `public/quiz/audio/` samt `manifest.json` (Dauer, Wortzeiten). Unveränderte Clips werden übersprungen. Der Schlüssel liegt nur in `.env.local`. Erster Lauf: 89 Clips (4470 Zeichen), 12 Geräusche, ca. 3 MB.
+- **Ohne Ton** läuft derselbe Zeitplan mit Untertiteln; ohne Aufnahmen werden Dauern aus der Textlänge geschätzt.
+- **Barrierefreiheit:** Ton-aus-Knopf in der Kopfzeile (1.4.2), Untertitel aller Ansagen, Frage für Screenreader vollständig im Titel, Animationen ruhen bei „Bewegung anhalten“/„Bewegung reduzieren“, Sichtbarkeit hängt nie am Ende einer Animation, nichts blinkt (2.3.1). „Ansage überspringen“ beim Alleinspiel.
+- **Recht:** Starter-Tarif von ElevenLabs mit kommerzieller Lizenz für Sprache. Die Stimmen sind KI-erzeugt und erfunden (keine geklonte echte Person) und als KI-Stimmen gekennzeichnet (Startseite des Quiz, Datenschutzerklärung) – passend zur Transparenzpflicht für synthetische Audioinhalte (Art. 50 KI-Verordnung). Beim Spielen fließen keine Daten zu ElevenLabs.
+
 ## Technik
 
 ```
