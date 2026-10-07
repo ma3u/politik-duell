@@ -325,6 +325,19 @@ function Datenschutz() {
         )}
       </p>
       <p>
+        <strong>Merken auf diesem Gerät:</strong> Setzt du das Häkchen „Name und Raumnamen auf diesem Gerät merken“,
+        speichert die App deinen Namen im Spiel und deinen Raumnamen im Speicher deines Browsers (localStorage), damit
+        du sie beim nächsten Mal nicht neu eingeben musst. Das geschieht nur auf deinen ausdrücklichen Wunsch (§ 25
+        Abs. 2 Nr. 2 TDDDG) und bleibt auf deinem Gerät; Entfernen des Häkchens löscht beides.
+      </p>
+      <p>
+        <strong>Öffentliche Räume („Mit Zufälligen spielen“):</strong> Machst du einen Raum öffentlich, steht sein Name
+        und die Zahl der Mitspielenden in einer Liste, die alle Besucherinnen und Besucher des Quiz sehen – gespeichert
+        in der Firebase Realtime Database (siehe oben), solange der Raum auf Mitspielende wartet. Beim Spielstart, beim
+        Schließen oder Verlassen der Seite wird der Eintrag gelöscht; Reste löscht das tägliche Aufräumen. Wer
+        beitritt, sieht die Namen im Spiel der anderen. Beleidigende Namen zeigt das Spiel nicht an.
+      </p>
+      <p>
         <strong>Stimmen und Geräusche:</strong> Die Moderatoren Mara und Ben sind erfundene, mit KI erzeugte Stimmen
         (ElevenLabs). Alle Ansagen und Geräusche sind vorab aufgenommen und kommen als Dateien von unserer Website; beim
         Spielen geht nichts an ElevenLabs. Der Ton lässt sich jederzeit ausschalten, die Ansagen stehen auch als

@@ -5,6 +5,10 @@ import { useHash } from '../navigation'
 import { QuizAnsicht } from './Ansicht'
 import { useAnsicht } from '../barrierefrei'
 import { ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
+import { pruefeText } from '../../supabase/functions/_shared/moderation'
+import { gemerkt, merken, vergessen } from './merken'
+import { beobachteOeffentliche, meldeOeffentlich, OEFFENTLICH_MOEGLICH, type OeffentlicherRaum } from './oeffentlich'
+import { neuerRaumname, raumAusEingabe, raumPfad, type Raum } from './raumname'
 import { bereinigeName, FRAGEN_JE_SPIEL } from './spielleitung'
 import type { QuizDaten } from './typen'
 import { useGast, useSpielleitung } from './useSpiel'
@@ -12,9 +16,9 @@ import { VERMITTLUNG } from './netz'
 import { TonKnopf, UntertitelLeiste } from './show/Buehne'
 import { alleClips, GERAEUSCHE } from './show/texte'
 import { entsperren, ladeShow, vorladen } from './show/ton'
-import { istRaumcode, neuerRaumcode, SIGNAL_ART } from './verbindung'
+import { SIGNAL_ART } from './verbindung'
 
-// Programm-Quiz „Wer sagt Ja?“ unter #/quiz (Einladung: #/quiz/<Raumcode>). Ohne Datenbank: Die Fragen kommen
+// Programm-Quiz „Wer sagt Ja?“ unter #/quiz (Einladung: #/quiz/<Raumname>, z. B. #/quiz/kluge-eule-27). Ohne Datenbank: Die Fragen kommen
 // aus public/quiz/fragen.json, das Spiel läuft zwischen den Browsern (docs/plan-quiz.md).
 
 const MIT_ENTWUERFEN = import.meta.env.DEV || import.meta.env.VITE_QUIZ_ENTWUERFE === 'true'
@@ -44,9 +48,20 @@ async function ladeQuiz(): Promise<QuizDaten> {
   return d
 }
 
-const einladungAus = (hash: string) => {
-  const code = /^#\/quiz\/([A-Za-z0-9]{6})$/.exec(hash)?.[1]?.toUpperCase()
-  return code && istRaumcode(code) ? code : null
+const einladungAus = (hash: string): Raum | null => {
+  const teil = /^#\/quiz\/(.+)$/.exec(hash)?.[1]
+  if (!teil) return null
+  try {
+    return raumAusEingabe(decodeURIComponent(teil))
+  } catch {
+    return null
+  }
+}
+
+/** Namen, die Fremde in öffentlichen Räumen nicht sehen sollen (Beleidigung, Hetze). */
+const nameAnstoessig = (name: string) => {
+  const g = pruefeText(name)
+  return g === 'beleidigung' || g === 'hetze'
 }
 
 /** In einer Nutzeraktion: Ton freischalten und alle Clips und Geräusche schon laden (ca. 3 MB). */
@@ -55,18 +70,31 @@ function showStarten(daten: QuizDaten) {
   vorladen(alleClips(daten.fragen, daten.parteien), GERAEUSCHE.map((g) => g.id))
 }
 
-const raumLink = (code: string) => `${location.origin}${location.pathname}#/quiz/${code}`
+const raumLink = (r: Raum) => `${location.origin}${location.pathname}#/quiz/${raumPfad(r)}`
 
-type Modus = { art: 'start' } | { art: 'leitung'; code: string | null } | { art: 'gast'; code: string }
+type Modus =
+  | { art: 'start' }
+  | { art: 'suche' }
+  | { art: 'leitung'; raum: Raum | null; oeffentlich: boolean }
+  | { art: 'gast'; raum: Raum }
 
 export function Quiz() {
   const hash = useHash()
   const einladung = einladungAus(hash)
   const [daten, setDaten] = useState<QuizDaten | null>(null)
   const [ladeFehler, setLadeFehler] = useState<string | null>(null)
-  const [name, setName] = useState('')
+  // „Auf diesem Gerät merken“: Name und eigener Raumname nur mit Häkchen im localStorage.
+  const [anfang] = useState(gemerkt)
+  const [name, setName] = useState(anfang?.name ?? '')
+  const [merkenAn, setMerkenAn] = useState(anfang !== null)
+  const [eigenerRaum, setEigenerRaum] = useState(() => anfang?.raum ?? neuerRaumname())
   const [zeit, setZeit] = useState<Zeitfaktor>(1)
   const [modus, setModus] = useState<Modus>({ art: 'start' })
+
+  useEffect(() => {
+    if (merkenAn) merken({ name, raum: eigenerRaum })
+    else vergessen()
+  }, [merkenAn, name, eigenerRaum])
 
   useEffect(() => {
     Promise.all([ladeQuiz(), ladeShow()])
@@ -90,7 +118,7 @@ export function Quiz() {
           können falsch sein – bitte die Belege im Programm ansehen.
         </div>
       )}
-      {SIGNAL_ART === 'lokal' && modus.art === 'leitung' && modus.code !== null && (
+      {SIGNAL_ART === 'lokal' && modus.art === 'leitung' && modus.raum !== null && (
         <div className="mock-hinweis" role="note">
           Testmodus ohne Verbindungsdienst: Räume funktionieren nur zwischen Tabs dieses Browsers.
         </div>
@@ -116,32 +144,52 @@ export function Quiz() {
         <LeitungSpiel
           daten={daten}
           name={bereinigeName(name, 'Spielleitung')}
-          code={modus.code}
+          raum={modus.raum}
+          oeffentlich={modus.oeffentlich}
           zeit={zeit}
           onVerlassen={verlassen}
         />
       ) : modus.art === 'gast' ? (
-        <GastSpiel daten={daten} name={bereinigeName(name, '')} code={modus.code} onVerlassen={verlassen} />
+        <GastSpiel daten={daten} name={bereinigeName(name, '')} raum={modus.raum} onVerlassen={verlassen} />
+      ) : modus.art === 'suche' ? (
+        <ZufallSuche
+          name={name}
+          onBeitreten={(raum) => {
+            showStarten(daten)
+            setModus({ art: 'gast', raum })
+          }}
+          onEroeffnen={() => {
+            showStarten(daten)
+            const r = raumAusEingabe(neuerRaumname())!
+            setModus({ art: 'leitung', raum: r, oeffentlich: true })
+          }}
+          onZurueck={() => setModus({ art: 'start' })}
+        />
       ) : (
         <QuizStart
-          key={einladung}
+          key={einladung?.code}
           daten={daten}
           name={name}
           onName={setName}
+          merkenAn={merkenAn}
+          onMerken={setMerkenAn}
+          eigenerRaum={eigenerRaum}
+          onNeuerRaum={() => setEigenerRaum(neuerRaumname())}
           zeit={zeit}
           onZeit={setZeit}
           einladung={einladung}
           onEroeffnen={() => {
             showStarten(daten)
-            setModus({ art: 'leitung', code: neuerRaumcode() })
+            setModus({ art: 'leitung', raum: raumAusEingabe(eigenerRaum), oeffentlich: false })
           }}
           onAllein={() => {
             showStarten(daten)
-            setModus({ art: 'leitung', code: null })
+            setModus({ art: 'leitung', raum: null, oeffentlich: false })
           }}
-          onBeitreten={(code) => {
+          onZufall={() => setModus({ art: 'suche' })}
+          onBeitreten={(raum) => {
             showStarten(daten)
-            setModus({ art: 'gast', code })
+            setModus({ art: 'gast', raum })
           }}
         />
       )}
@@ -155,26 +203,36 @@ function QuizStart({
   daten,
   name,
   onName,
+  merkenAn,
+  onMerken,
+  eigenerRaum,
+  onNeuerRaum,
   zeit,
   onZeit,
   einladung,
   onEroeffnen,
   onAllein,
+  onZufall,
   onBeitreten,
 }: {
   daten: QuizDaten
   name: string
   onName: (n: string) => void
+  merkenAn: boolean
+  onMerken: (an: boolean) => void
+  eigenerRaum: string
+  onNeuerRaum: () => void
   zeit: Zeitfaktor
   onZeit: (f: Zeitfaktor) => void
-  einladung: string | null
+  einladung: Raum | null
   onEroeffnen: () => void
   onAllein: () => void
-  onBeitreten: (code: string) => void
+  onZufall: () => void
+  onBeitreten: (raum: Raum) => void
 }) {
   const id = useId()
-  const [code, setCode] = useState(einladung ?? '')
-  const codeOk = istRaumcode(code)
+  const [eingabe, setEingabe] = useState('')
+  const ziel = raumAusEingabe(eingabe)
   const leer = daten.fragen.length === 0
   const titel = useAnsicht('Programm-Quiz')
 
@@ -215,6 +273,10 @@ function QuizStart({
           placeholder="z. B. Kim"
           onChange={(e) => onName(e.target.value)}
         />
+        <label className="quiz-merken" htmlFor={`${id}-merken`}>
+          <input id={`${id}-merken`} type="checkbox" checked={merkenAn} onChange={(e) => onMerken(e.target.checked)} />
+          Name und Raumnamen auf diesem Gerät merken
+        </label>
 
         {!einladung && (
           <>
@@ -233,13 +295,19 @@ function QuizStart({
 
         {einladung ? (
           <>
-            <p className="hinweis quiz-einladung">Du bist in Raum {einladung} eingeladen.</p>
+            <p className="hinweis quiz-einladung">Du bist in den Raum „{einladung.name ?? einladung.code}“ eingeladen.</p>
             <button type="button" className="knopf knopf-gross" disabled={leer} onClick={() => onBeitreten(einladung)}>
               Mitspielen
             </button>
           </>
         ) : (
           <>
+            <p className="quiz-eigener-raum">
+              Dein Raum: <strong>{eigenerRaum}</strong>{' '}
+              <button type="button" className="knopf-link" onClick={onNeuerRaum}>
+                anderer Name
+              </button>
+            </p>
             <div className="knopf-reihe">
               <button type="button" className="knopf" disabled={leer} onClick={onEroeffnen}>
                 Raum eröffnen
@@ -248,35 +316,39 @@ function QuizStart({
                 Allein üben
               </button>
             </div>
+            {OEFFENTLICH_MOEGLICH && (
+              <button type="button" className="knopf knopf-zweit knopf-gross" disabled={leer} onClick={onZufall}>
+                Mit Zufälligen spielen
+              </button>
+            )}
             <form
               className="quiz-beitreten"
               onSubmit={(e) => {
                 e.preventDefault()
-                if (codeOk) onBeitreten(code)
+                if (ziel) onBeitreten(ziel)
               }}
             >
               <label className="label" htmlFor={`${id}-code`}>
-                Oder mit Raumcode beitreten
+                Oder einem Raum beitreten
               </label>
               <div className="quiz-beitreten-zeile">
                 <input
                   id={`${id}-code`}
                   aria-describedby={`${id}-code-hinweis`}
                   className="quiz-eingabe quiz-code-eingabe"
-                  value={code}
-                  maxLength={6}
+                  value={eingabe}
+                  maxLength={40}
                   autoComplete="off"
-                  autoCapitalize="characters"
                   spellCheck={false}
-                  placeholder="ABC234"
-                  onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ''))}
+                  placeholder="z. B. Kluge Eule 27"
+                  onChange={(e) => setEingabe(e.target.value)}
                 />
-                <button type="submit" className="knopf" disabled={!codeOk || leer}>
+                <button type="submit" className="knopf" disabled={!ziel || leer}>
                   Beitreten
                 </button>
               </div>
               <p className="meta" id={`${id}-code-hinweis`}>
-                Sechs Zeichen, Buchstaben und Ziffern.
+                Raumname mit Zahl, z. B. „Kluge Eule 27“ – Groß- und Kleinschreibung egal.
               </p>
             </form>
           </>
@@ -284,8 +356,8 @@ function QuizStart({
         </div>
 
         <p className="datenschutz">
-          <strong>Datenschutz:</strong> Kein Konto, keine Cookies, nichts wird gespeichert; keine KI wertet deine Antworten
-          aus. Mara und Ben sind KI-Stimmen (ElevenLabs), vorab aufgenommen – beim Spielen geht nichts an ElevenLabs. Das Spiel läuft
+          <strong>Datenschutz:</strong> Kein Konto, keine Cookies; gespeichert wird nur, was du mit dem Häkchen merken
+          lässt, und nur auf deinem Gerät. Keine KI wertet deine Antworten aus. Mara und Ben sind KI-Stimmen (ElevenLabs), vorab aufgenommen – beim Spielen geht nichts an ElevenLabs. Das Spiel läuft
           zwischen euren Geräten; {VERMITTLUNG} vermittelt nur die Verbindung und leitet weiter, wenn es direkt nicht
           klappt – Nachrichten liegen dort nur, bis sie gelesen sind. Bei einer direkten Verbindung sehen die Geräte im Raum gegenseitig ihre IP-Adresse.{' '}
           <a href="#/datenschutz">Mehr erfahren</a>
@@ -298,18 +370,37 @@ function QuizStart({
 function LeitungSpiel({
   daten,
   name,
-  code,
+  raum,
+  oeffentlich: oeffentlichAnfang,
   zeit,
   onVerlassen,
 }: {
   daten: QuizDaten
   name: string
-  code: string | null
+  raum: Raum | null
+  oeffentlich: boolean
   zeit: Zeitfaktor
   onVerlassen: () => void
 }) {
+  const code = raum?.code ?? null
   const s = useSpielleitung(daten, name, code, zeit)
   const allein = code === null
+  const [oeffentlich, setOeffentlich] = useState(oeffentlichAnfang)
+  // Öffentlicher Raum: in der Liste, solange der Raum vor dem Start offen ist.
+  const anmeldung = useRef<ReturnType<typeof meldeOeffentlich> | null>(null)
+  const offen = oeffentlich && s.raumBereit && s.z.phase === 'lobby' && raum !== null
+  useEffect(() => {
+    if (!offen || !raum) return
+    const a = meldeOeffentlich(raum.code, raum.name ?? raum.code, s.z.spieler.length)
+    anmeldung.current = a
+    return () => {
+      a.abmelden()
+      anmeldung.current = null
+    }
+    // Neu anmelden nur, wenn sich „offen“ ändert; die Spielerzahl folgt unten.
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
+  }, [offen, raum])
+  useEffect(() => anmeldung.current?.aktualisieren(s.z.spieler.length), [s.z.spieler.length])
   // Allein üben: ohne Raum gleich los.
   const gestartet = useRef(false)
   useEffect(() => {
@@ -338,7 +429,18 @@ function LeitungSpiel({
       restMs={s.restMs}
       istLeitung
       allein={allein}
-      raum={code ? { code, link: raumLink(code), bereit: s.raumBereit } : undefined}
+      raum={
+        raum
+          ? {
+              code: raum.code,
+              name: raum.name,
+              link: raumLink(raum),
+              bereit: s.raumBereit,
+              oeffentlich: OEFFENTLICH_MOEGLICH ? oeffentlich : undefined,
+              onOeffentlich: setOeffentlich,
+            }
+          : undefined
+      }
       onAntwort={s.antworten}
       onStart={s.starten}
       onZeit={s.setzeZeit}
@@ -353,8 +455,8 @@ function LeitungSpiel({
   )
 }
 
-function GastSpiel({ daten, name, code, onVerlassen }: { daten: QuizDaten; name: string; code: string; onVerlassen: () => void }) {
-  const s = useGast(daten, name, code)
+function GastSpiel({ daten, name, raum, onVerlassen }: { daten: QuizDaten; name: string; raum: Raum; onVerlassen: () => void }) {
+  const s = useGast(daten, name, raum.code)
   const zurueck = (
     <button type="button" className="knopf knopf-zweit" onClick={onVerlassen}>
       Zurück
@@ -373,7 +475,7 @@ function GastSpiel({ daten, name, code, onVerlassen }: { daten: QuizDaten; name:
     return (
       <main className="seite quiz">
         <p className="hinweis" aria-live="polite">
-          {s.status === 'getrennt' ? 'Die Verbindung ist abgebrochen.' : `Verbinde mit Raum ${code} …`}
+          {s.status === 'getrennt' ? 'Die Verbindung ist abgebrochen.' : `Verbinde mit Raum „${raum.name ?? raum.code}“ …`}
         </p>
         {zurueck}
       </main>
@@ -396,5 +498,66 @@ function GastSpiel({ daten, name, code, onVerlassen }: { daten: QuizDaten; name:
         onVerlassen={onVerlassen}
       />
     </>
+  )
+}
+
+/** „Mit Zufälligen spielen“: offene öffentliche Räume beitreten oder selbst einen eröffnen. */
+function ZufallSuche({
+  name,
+  onBeitreten,
+  onEroeffnen,
+  onZurueck,
+}: {
+  name: string
+  onBeitreten: (r: Raum) => void
+  onEroeffnen: () => void
+  onZurueck: () => void
+}) {
+  const titel = useAnsicht('Mit Zufälligen spielen')
+  const [raeume, setRaeume] = useState<OeffentlicherRaum[] | null>(null)
+  useEffect(() => beobachteOeffentliche(setRaeume), [])
+  const anstoessig = nameAnstoessig(name)
+  return (
+    <main className="seite quiz quiz-auftritt">
+      <h2 ref={titel}>Mit Zufälligen spielen</h2>
+      <p className="hinweis">
+        Offene Räume, in denen gerade Leute auf Mitspielende warten. Alle im Raum sehen deinen Namen im Spiel.
+      </p>
+      {anstoessig ? (
+        <p className="hinweis" role="alert">
+          Mit diesem Namen geht es in öffentlichen Räumen nicht. Bitte wähle auf der Startseite einen anderen.
+        </p>
+      ) : raeume === null ? (
+        <p className="meta">Suche offene Räume …</p>
+      ) : raeume.length === 0 ? (
+        <p className="meta" aria-live="polite">
+          Gerade wartet niemand. Eröffne einen öffentlichen Raum – wer als Nächstes sucht, findet dich.
+        </p>
+      ) : (
+        <ul className="quiz-spieler quiz-oeffentlich" aria-live="polite">
+          {raeume.map((r) => (
+            <li key={r.code}>
+              <span className="quiz-spieler-name">{r.name}</span>
+              <span className="quiz-weg">{r.spieler} von 8</span>
+              <button
+                type="button"
+                className="knopf knopf-klein"
+                onClick={() => onBeitreten(raumAusEingabe(r.name) ?? { code: r.code, name: r.name })}
+              >
+                Beitreten
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className="quiz-aktion">
+        <button type="button" className="knopf knopf-gross" disabled={anstoessig} onClick={onEroeffnen}>
+          Öffentlichen Raum eröffnen
+        </button>
+        <button type="button" className="knopf knopf-leise knopf-klein" onClick={onZurueck}>
+          Zurück
+        </button>
+      </div>
+    </main>
   )
 }

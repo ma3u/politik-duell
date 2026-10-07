@@ -37,6 +37,15 @@ for (const [code, raum] of Object.entries(raeume ?? {})) {
   else for (const pfad of alt) loeschen[pfad] = null
 }
 
+// Öffentliche Räume: ohne Lebenszeichen seit zehn Minuten löschen (die Liste in der App blendet sie nach 90 s aus).
+const o = await fetch(`${URL_}/quiz-oeffentlich.json?${auth}`)
+if (o.ok) {
+  const oeffentlich = (await o.json()) as Record<string, { t?: number } | null> | null
+  for (const [code, r] of Object.entries(oeffentlich ?? {})) {
+    if (typeof r?.t !== 'number' || r.t < Date.now() - 10 * 60 * 1000) loeschen[`quiz-oeffentlich/${code}`] = null
+  }
+}
+
 const anzahl = Object.keys(loeschen).length
 if (anzahl) {
   const d = await fetch(`${URL_}/.json?${auth}`, { method: 'PATCH', body: JSON.stringify(loeschen) })

@@ -9,13 +9,43 @@
             ".validate": "$an.matches(/^(leitung|[0-9a-f]{16})$/)",
             "$nachricht": {
               ".validate": "!data.exists() && newData.hasChildren(['s', 't'])",
-              "s": { ".validate": "newData.isString() && newData.val().length <= 60000" },
-              "t": { ".validate": "newData.val() === now" },
-              "$sonst": { ".validate": false }
+              "s": {
+                ".validate": "newData.isString() && newData.val().length <= 60000"
+              },
+              "t": {
+                ".validate": "newData.val() === now"
+              },
+              "$sonst": {
+                ".validate": false
+              }
             }
           }
         },
-        "$sonst": { ".validate": false }
+        "$sonst": {
+          ".validate": false
+        }
+      }
+    },
+    "quiz-oeffentlich": {
+      ".read": true,
+      ".indexOn": [
+        "t"
+      ],
+      "$raum": {
+        ".write": "$raum.matches(/^[A-HJKMNP-Z2-9]{6}$/)",
+        ".validate": "newData.hasChildren(['n', 's', 't'])",
+        "n": {
+          ".validate": "newData.isString() && newData.val().length >= 3 && newData.val().length <= 40"
+        },
+        "s": {
+          ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 8"
+        },
+        "t": {
+          ".validate": "newData.val() === now"
+        },
+        "$sonst": {
+          ".validate": false
+        }
       }
     }
   }

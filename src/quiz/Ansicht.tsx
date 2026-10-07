@@ -44,8 +44,15 @@ export interface AnsichtProps {
   /** Nur Spielleitung ohne Zeitlimit: auflösen, auch wenn nicht alle geantwortet haben. */
   onAufloesen?: () => void
   onVerlassen: () => void
-  /** Nur Spielleitung im Raum: Code und Link zum Einladen. */
-  raum?: { code: string; link: string; bereit: boolean }
+  /** Nur Spielleitung im Raum: Name, Code und Link zum Einladen; `oeffentlich` nur mit Firebase. */
+  raum?: {
+    code: string
+    name: string | null
+    link: string
+    bereit: boolean
+    oeffentlich?: boolean
+    onOeffentlich?: (an: boolean) => void
+  }
 }
 
 export function QuizAnsicht(p: AnsichtProps) {
@@ -82,7 +89,7 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onZeit, onVerlassen }
 
   async function teilen() {
     if (!raum) return
-    const text = `Spiel mit beim Programm-Quiz „Wer sagt Ja?“ – Raum ${raum.code}`
+    const text = `Spiel mit beim Programm-Quiz „Wer sagt Ja?“ – Raum „${raum.name ?? raum.code}“`
     try {
       if (navigator.share) await navigator.share({ title: 'Wer sagt Ja?', text, url: raum.link })
       else {
@@ -99,10 +106,14 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onZeit, onVerlassen }
       <h2 ref={titel}>{istLeitung ? 'Dein Raum' : 'Du bist im Raum'}</h2>
       {raum && (
         <div className="quiz-raum stimmzettel">
-          <p className="label">Raumcode</p>
-          <p className="quiz-code" aria-label={`Raumcode ${raum.code.split('').join(' ')}`}>
-            {raum.code}
-          </p>
+          <p className="label">Raumname</p>
+          {raum.name ? (
+            <p className="quiz-code quiz-raumname">{raum.name}</p>
+          ) : (
+            <p className="quiz-code" aria-label={`Raumcode ${raum.code.split('').join(' ')}`}>
+              {raum.code}
+            </p>
+          )}
           <p className="quiz-link">
             <code>{raum.link}</code>
           </p>
@@ -110,6 +121,12 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onZeit, onVerlassen }
             {kopiert ? 'Link kopiert' : 'Einladen'}
           </button>
           {!raum.bereit && <p className="meta">Raum wird eröffnet …</p>}
+          {raum.oeffentlich !== undefined && raum.onOeffentlich && (
+            <label className="quiz-merken quiz-oeffentlich-schalter">
+              <input type="checkbox" checked={raum.oeffentlich} onChange={(e) => raum.onOeffentlich!(e.target.checked)} />
+              Öffentlich: Auch Fremde können über „Mit Zufälligen spielen“ beitreten
+            </label>
+          )}
         </div>
       )}
       <p className="label">Dabei ({z.spieler.length} von 8)</p>

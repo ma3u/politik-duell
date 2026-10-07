@@ -122,6 +122,12 @@ Warum nicht eine frei gepflegte Liste „Aussage → Parteien“? Bei einer Mehr
 4. Auflösung: alle sieben Positionen in fester Reihenfolge mit Kurzfassung, Seitenlink und Wortlaut zum Aufklappen, dazu die Zielkonflikte beider Seiten; markiert sind nur die eigenen Kreuze (Treffer/daneben), keine Ampelfarben für Positionen. Punkte der Runde und Zwischenstand.
 5. Ende: Rangliste, alle Fragen mit Belegen, „Nochmal“ (Spielleitung).
 
+## Räume: Namen, Merken, Zufall
+
+- **Merkbare Raumnamen** („Kluge Eule 27“: Adjektiv + Tier mit Stabreim + Zahl, ohne Umlaute). Jedes Gerät berechnet daraus denselben sechsstelligen Code (`codeAusName`); alte Codes funktionieren weiter. Einladungslink `#/quiz/kluge-eule-27`.
+- **Merken auf diesem Gerät:** nur mit Häkchen; Name und eigener Raumname im localStorage (§ 25 Abs. 2 Nr. 2 TDDDG, ausdrücklich gewünscht). Häkchen weg = gelöscht.
+- **Mit Zufälligen spielen:** Öffentliche Räume stehen, solange sie warten, unter `quiz-oeffentlich/<Code>` (Name, Spielerzahl, Serverzeit; Lebenszeichen alle 30 s, nach 90 s ausgeblendet, beim Start gelöscht). Beleidigende Namen (Filter aus `moderation.ts`) zeigt die Spielleitung als „Gast N“; mit einem solchen Namen kann man keinen öffentlichen Raum eröffnen oder suchen.
+
 ## Show: Moderation, Animationen, Geräusche
 
 Inspiriert von schnellen Quizshows (kinetische Schrift, freche Moderation, Knall-Effekte), aber eigene Gestaltung im Stimmzettel-Stil – kein fremdes Logo, keine fremden Figuren.

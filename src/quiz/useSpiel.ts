@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { pruefeText } from '../../supabase/functions/_shared/moderation'
 import type { Zeitfaktor } from './punkte'
 import { dauerMs, vorspann } from './show/ablauf'
 import {
@@ -24,6 +25,12 @@ import {
 } from './spielleitung'
 import type { QuizDaten, QuizFrage } from './typen'
 import { betrete, eroeffneRaum, LEITUNG_ID, RaumFehler, type Leitung, type Raum } from './verbindung'
+
+/** Beleidigende oder hetzerische Namen zeigt die Spielleitung nicht – dann „Gast N“ (auch in öffentlichen Räumen). */
+const anstoessig = (name: string) => {
+  const g = pruefeText(name)
+  return g === 'beleidigung' || g === 'hetze'
+}
 
 /** Kurze Gnadenfrist nach Ablauf der Zeit, damit späte Antworten aus dem Netz noch ankommen. */
 const GNADE_MS = 1500
@@ -170,7 +177,7 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
           const nr = s.spieler.length
           const neu = s.spieler.some((x) => x.id === id)
             ? { ...s, spieler: s.spieler.map((x) => (x.id === id ? { ...x, weg: l.weg as Weg } : x)) }
-            : mitSpieler(s, { id, name: n.name || `Gast ${nr}`, weg: l.weg })
+            : mitSpieler(s, { id, name: n.name && !anstoessig(n.name) ? n.name : `Gast ${nr}`, weg: l.weg })
           if (typeof neu === 'string') l.senden({ t: 'abgelehnt', grund: neu } satisfies LeitungNachricht)
           else setze(neu)
         }

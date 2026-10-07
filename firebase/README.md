@@ -28,6 +28,10 @@ quiz/<Raumcode>/an/<Empfänger>/<Nachricht> = { s: "<Signal als JSON, ≤ 60 000
 - Reste nach einem harten Abbruch löscht die GitHub Action [`quiz-aufraeumen.yml`](../.github/workflows/quiz-aufraeumen.yml)
   täglich (alles älter als eine Stunde).
 
+Öffentliche Räume: `quiz-oeffentlich/<Raumcode> = { n: Raumname (3–40 Zeichen), s: Spielerzahl (1–8), t: Serverzeit }` –
+von allen lesbar, gelöscht beim Spielstart, beim Schließen und beim Verlassen; das Aufräumen löscht Einträge ohne
+Lebenszeichen seit zehn Minuten.
+
 ## Was die Regeln erlauben
 
 - Lesen: nur ein einzelnes Postfach mit gültigem Raumcode und Empfänger. Räume oder die Raumliste lassen sich nicht
