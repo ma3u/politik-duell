@@ -13,8 +13,13 @@ const ohneQuizEntwurf = (): Plugin => ({
   },
 })
 
+// Pfad, unter dem die App liegt: „/“ (Vercel) oder z. B. „/politik-duell/“ (GitHub Pages, siehe
+// .github/workflows/pages.yml).
+const base = process.env.BASIS_PFAD ?? '/'
+
 // https://vite.dev/config/
 export default defineConfig({
+  base,
   plugins: [
     react(),
     ohneQuizEntwurf(),
@@ -29,7 +34,7 @@ export default defineConfig({
       manifest: false,
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,webmanifest}', 'quiz/fragen.json'],
-        navigateFallback: '/index.html',
+        navigateFallback: `${base}index.html`,
         cleanupOutdatedCaches: true,
         runtimeCaching: [],
       },
