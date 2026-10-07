@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { ProgrammLink } from '../components/belege'
 import { Kreuzfeld } from '../components/Kreuz'
 import { parteiStil } from '../components/stil'
 import { POSITION_TEXT } from '../logic/haltung'
 import { anleitung } from './fragen'
-import { MAX_PUNKTE, ZEIT_MS } from './punkte'
-import { rangliste, type Ergebnis, type QuizSpieler, type QuizZustand, type Weg } from './spielleitung'
+import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
+import { limitFuer, rangliste, type Ergebnis, type QuizSpieler, type QuizZustand, type Weg } from './spielleitung'
 import type { QuizDaten, QuizFrage, QuizPartei } from './typen'
 import { frageVon } from './useSpiel'
 
@@ -31,6 +32,10 @@ export interface AnsichtProps {
   onStart?: () => void
   onWeiter?: () => void
   onNochmal?: () => void
+  /** Nur Spielleitung vor dem Start: Zeit je Frage (WCAG 2.2.1). */
+  onZeit?: (f: Zeitfaktor) => void
+  /** Nur Spielleitung ohne Zeitlimit: auflösen, auch wenn nicht alle geantwortet haben. */
+  onAufloesen?: () => void
   onVerlassen: () => void
   /** Nur Spielleitung im Raum: Code und Link zum Einladen. */
   raum?: { code: string; link: string; bereit: boolean }
@@ -61,8 +66,10 @@ function SpielerListe({ spieler, ich, mitWeg }: { spieler: QuizSpieler[]; ich: s
   )
 }
 
-function Lobby({ daten, z, ich, istLeitung, raum, onStart, onVerlassen }: AnsichtProps) {
+function Lobby({ daten, z, ich, istLeitung, raum, onStart, onZeit, onVerlassen }: AnsichtProps) {
   const [kopiert, setKopiert] = useState(false)
+  const titel = useAnsicht(istLeitung ? 'Dein Raum' : 'Im Raum')
+  const zeitId = useId()
   const leitung = z.spieler[0]
   const fragen = Math.min(daten.fragen.length, 5)
 
@@ -82,7 +89,7 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onVerlassen }: Ansich
 
   return (
     <main className="seite quiz">
-      <h2>{istLeitung ? 'Dein Raum' : 'Du bist im Raum'}</h2>
+      <h2 ref={titel}>{istLeitung ? 'Dein Raum' : 'Du bist im Raum'}</h2>
       {raum && (
         <div className="quiz-raum stimmzettel">
           <p className="label">Raumcode</p>
@@ -100,6 +107,22 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onVerlassen }: Ansich
       )}
       <p className="label">Dabei ({z.spieler.length} von 8)</p>
       <SpielerListe spieler={z.spieler} ich={ich} mitWeg />
+      {istLeitung && onZeit ? (
+        <>
+          <label className="label" htmlFor={zeitId}>
+            Zeit je Frage
+          </label>
+          <select id={zeitId} value={z.zeitfaktor} onChange={(e) => onZeit(Number(e.target.value) as Zeitfaktor)}>
+            {([1, 2, 0] as const).map((f) => (
+              <option key={f} value={f}>
+                {ZEITFAKTOR_TEXT[f]}
+              </option>
+            ))}
+          </select>
+        </>
+      ) : (
+        <p className="meta">Zeit je Frage: {ZEITFAKTOR_TEXT[z.zeitfaktor]}</p>
+      )}
       {istLeitung ? (
         <>
           <button type="button" className="knopf knopf-gross" onClick={onStart} disabled={!raum?.bereit}>
@@ -118,20 +141,29 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onVerlassen }: Ansich
 }
 
 function Zeitleiste({ dauer, rest }: { dauer: number; rest: number }) {
+  // Screenreader: nur zwei Ansagen kurz vor Schluss statt jeder Sekunde (4.1.3).
+  const ansage = rest <= 0 ? 'Zeit abgelaufen' : rest <= 5000 ? 'Noch 5 Sekunden' : rest <= 10_000 ? 'Noch 10 Sekunden' : ''
   return (
-    <div className="quiz-zeit" role="timer" aria-label={`Noch ${Math.ceil(rest / 1000)} Sekunden`}>
-      <div className="quiz-zeit-balken" style={{ transform: `scaleX(${Math.max(0, rest / dauer)})` }} />
-      <span className="quiz-zeit-zahl" aria-hidden="true">
-        {Math.ceil(rest / 1000)}
-      </span>
-    </div>
+    <>
+      <div className="quiz-zeit" role="timer" aria-label={`Noch ${Math.ceil(rest / 1000)} Sekunden`}>
+        <div className="quiz-zeit-balken" style={{ transform: `scaleX(${Math.max(0, rest / dauer)})` }} />
+        <span className="quiz-zeit-zahl" aria-hidden="true">
+          {Math.ceil(rest / 1000)}
+        </span>
+      </div>
+      <p className="sr-only" aria-live="polite">
+        {ansage}
+      </p>
+    </>
   )
 }
 
-function Frage({ daten, z, ich, restMs, frage, onAntwort }: AnsichtProps & { frage: QuizFrage }) {
-  const dauer = ZEIT_MS[frage.art]
+function Frage({ daten, z, ich, restMs, frage, istLeitung, onAntwort, onAufloesen }: AnsichtProps & { frage: QuizFrage }) {
+  const titel = useAnsicht(`Frage ${z.index + 1} von ${z.fragen.length}`)
+  // null = ohne Zeitlimit (WCAG 2.2.1).
+  const dauer = limitFuer(z, frage)
   // Die Zeit läuft ab Anzeige auf diesem Gerät; die Restzeit kommt mit der Frage von der Spielleitung.
-  const [frist] = useState(() => Math.min(restMs ?? dauer, dauer))
+  const [frist] = useState(() => (dauer === null ? Infinity : Math.min(restMs ?? dauer, dauer)))
   const [rest, setRest] = useState(frist)
   const [auswahl, setAuswahl] = useState<number[]>([])
   const [abgegeben, setAbgegeben] = useState(false)
@@ -150,13 +182,14 @@ function Frage({ daten, z, ich, restMs, frage, onAntwort }: AnsichtProps & { fra
   useEffect(() => {
     const start = performance.now()
     beginn.current = start
+    if (dauer === null) return
     const t = setInterval(() => {
       const r = Math.max(0, frist - (performance.now() - start))
       setRest(r)
       if (r > 0) return
       clearInterval(t)
       // Zeit um: Eine angekreuzte, aber nicht abgegebene Auswahl zählt (mit voller Zeit).
-      if (auswahlRef.current.length) abgeben(auswahlRef.current, dauer)
+      if (auswahlRef.current.length) abgeben(auswahlRef.current, frist)
     }, 100)
     return () => clearInterval(t)
     // Nur beim Erscheinen der Frage – abgeben liest den neuesten Stand aus Refs.
@@ -179,10 +212,15 @@ function Frage({ daten, z, ich, restMs, frage, onAntwort }: AnsichtProps & { fra
       <p className="quiz-fortschritt">
         Frage {z.index + 1} von {z.fragen.length}
       </p>
-      <Zeitleiste dauer={dauer} rest={rest} />
-      <h2 className="quiz-frage">{frage.frage}</h2>
+      {dauer === null ? <p className="meta">Ohne Zeitlimit</p> : <Zeitleiste dauer={dauer} rest={rest} />}
+      <h2 className="quiz-frage" ref={titel}>
+        {frage.frage}
+      </h2>
       <p className="meta">{frage.beschreibung}</p>
-      <p className="quiz-anleitung">{anleitung(frage)}</p>
+      <p className="quiz-anleitung">
+        {anleitung(frage)}
+        {frage.art === 'einzeln' && <span className="quiz-anleitung-zusatz"> Ein Tipp auf eine Partei gibt die Antwort ab.</span>}
+      </p>
       <div className="partei-liste stimmzettel quiz-wahl" role="group" aria-label="Parteien">
         {daten.parteien.map((partei) => {
           const gewaehlt = auswahl.includes(partei.id)
@@ -216,6 +254,11 @@ function Frage({ daten, z, ich, restMs, frage, onAntwort }: AnsichtProps & { fra
             ? 'Zeit abgelaufen.'
             : ''}
       </p>
+      {istLeitung && dauer === null && onAufloesen && verbunden > 1 && (
+        <button type="button" className="knopf knopf-zweit" onClick={onAufloesen}>
+          Jetzt auflösen
+        </button>
+      )}
     </main>
   )
 }
@@ -325,6 +368,7 @@ function loesungText(frage: QuizFrage, parteien: QuizPartei[]) {
 }
 
 function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: AnsichtProps & { frage: QuizFrage }) {
+  const titel = useAnsicht(`Auflösung ${z.index + 1} von ${z.fragen.length}`)
   const ergebnisse = z.verlauf[z.index]
   const mein = ergebnisse?.[ich]
   const letzte = z.index + 1 >= z.fragen.length
@@ -333,7 +377,9 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
       <p className="quiz-fortschritt">
         Auflösung {z.index + 1} von {z.fragen.length}
       </p>
-      <h2 className="quiz-frage">{frage.frage}</h2>
+      <h2 className="quiz-frage" ref={titel}>
+        {frage.frage}
+      </h2>
       <p className="quiz-loesung">{loesungText(frage, daten.parteien)}</p>
       <MeinErgebnis e={mein} frage={frage} />
       <Positionen frage={frage} parteien={daten.parteien} auswahl={mein?.auswahl ?? []} />
@@ -361,6 +407,7 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
 }
 
 function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: AnsichtProps) {
+  const titel = useAnsicht('Ergebnis', z.verlauf.length)
   const fragen = z.fragen.map((id) => daten.fragen.find((f) => f.id === id)).filter((f): f is QuizFrage => !!f)
   const ich_ = z.spieler.find((s) => s.id === ich)
   const max = fragen.length * MAX_PUNKTE
@@ -368,7 +415,7 @@ function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: Ans
   const sieger = plaetze.filter((p) => p.rang === 1).map((p) => p.spieler.name)
   return (
     <main className="seite quiz">
-      <h2>{allein ? 'Geschafft' : sieger.length > 1 ? `Gleichstand: ${sieger.join(' und ')}` : `${sieger[0]} gewinnt`}</h2>
+      <h2 ref={titel}>{allein ? 'Geschafft' : sieger.length > 1 ? `Gleichstand: ${sieger.join(' und ')}` : `${sieger[0]} gewinnt`}</h2>
       <p className="quiz-ergebnis">
         Du hast <strong>{ich_?.punkte ?? 0}</strong> von {max} möglichen Punkten.
       </p>

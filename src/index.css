@@ -7,6 +7,8 @@
   --flaeche: #ffffff;
   --flaeche-2: #e6eaf1;
   --linie: #d3d9e3;
+  /* Rand von Bedienelementen (Felder, Chips): mindestens 3:1 gegen Weiß und Papier (WCAG 1.4.11). */
+  --rand-bedien: #6b7590;
   --tinte: #1a2233;
   --text: var(--tinte);
   --text-leise: #535d74;
@@ -497,7 +499,7 @@ textarea {
   font: inherit;
   color: var(--text);
   background: var(--flaeche);
-  border: 1.5px solid var(--linie);
+  border: 1.5px solid var(--rand-bedien);
   border-radius: 10px;
   padding: 0.65rem 0.75rem;
 }
@@ -1234,7 +1236,7 @@ textarea {
 .knopf-leise {
   background: var(--flaeche);
   color: var(--text);
-  box-shadow: inset 0 0 0 1px var(--linie);
+  box-shadow: inset 0 0 0 1px var(--rand-bedien);
 }
 .knopf-klein {
   padding: 0.4rem 0.9rem;
@@ -1360,8 +1362,19 @@ textarea {
   padding: 16px 0 0;
   font-size: 0.85rem;
 }
-.fusszeile a {
+.fusszeile a,
+.fusszeile button {
+  display: inline-block;
+  padding: 4px 2px;
   color: var(--text-leise);
+}
+.fusszeile button {
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
 .recht {
   max-width: 720px;
@@ -2634,7 +2647,7 @@ textarea {
 .ursache-chip {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid var(--linie);
+  border: 1px solid var(--rand-bedien);
   border-radius: 10px;
   background: transparent;
   color: inherit;
@@ -3087,4 +3100,33 @@ textarea {
   .quiz-zeit-balken {
     transition: none;
   }
+}
+
+/* ---------- Barrierefreiheit (WCAG 2.2 AA) ---------- */
+/* Aufklapper: Zielfläche mindestens 24 px hoch (2.5.8). */
+summary {
+  padding-block: 4px;
+}
+/* Beleg-Links („Programm, S. 18“): Zielfläche mindestens 24 px hoch (2.5.8). */
+.belege a {
+  display: inline-block;
+  padding-block: 2px;
+}
+/* Der klebende Punktestand darf den Tastaturfokus nicht verdecken (2.4.11). */
+html:has(.punktestand) {
+  scroll-padding-top: 6.5rem;
+}
+/* Überschriften, auf die der Fokus beim Wechsel der Ansicht springt: kein Rahmen um Text (nur Tastatur sieht ihn). */
+[tabindex='-1']:focus:not(:focus-visible) {
+  outline: none;
+}
+/* „Bewegung anhalten“ in der Fußzeile (2.2.2): wie „Bewegung reduzieren“ – Animationen springen ans Ende,
+   die Wortwolke steht still, ein gesetztes Kreuz bleibt sichtbar. */
+:root[data-bewegung='aus'] *,
+:root[data-bewegung='aus'] *::before,
+:root[data-bewegung='aus'] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  animation-delay: 0s !important;
+  transition-duration: 0.01ms !important;
 }

@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useAnsicht, useFokusZurueck } from '../barrierefrei'
 import { Logo } from '../components/Logo'
 import { BETREIBER, betreiberVollstaendig, DATENSCHUTZ_STAND } from './betreiber'
 import { Methode } from './Methode'
@@ -40,6 +41,7 @@ function Anschrift() {
 }
 
 export function Rechtliches({ seite, onZurueck }: { seite: RechtsSeite; onZurueck: () => void }) {
+  useFokusZurueck()
   useEffect(() => {
     scrollTo(0, 0)
   }, [seite])
@@ -61,9 +63,10 @@ export function Rechtliches({ seite, onZurueck }: { seite: RechtsSeite; onZuruec
 }
 
 function Impressum() {
+  const titel = useAnsicht('Impressum')
   return (
     <article>
-      <h1>Impressum</h1>
+      <h1 ref={titel}>Impressum</h1>
       <h2>Angaben nach § 5 DDG</h2>
       <Anschrift />
       <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
@@ -86,9 +89,10 @@ function Impressum() {
 }
 
 function Datenschutz() {
+  const titel = useAnsicht('Datenschutzerklärung')
   return (
     <article>
-      <h1>Datenschutzerklärung</h1>
+      <h1 ref={titel}>Datenschutzerklärung</h1>
       <p className="meta">Stand: {DATENSCHUTZ_STAND}</p>
 
       <h2>Das Wichtigste in Kürze</h2>

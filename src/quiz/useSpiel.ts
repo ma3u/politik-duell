@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { ZEIT_MS } from './punkte'
+import type { Zeitfaktor } from './punkte'
 import {
   alleFertig,
   alsGastNachricht,
@@ -8,6 +8,8 @@ import {
   mitAntwort,
   mitSpieler,
   MAX_SPIELER,
+  limitFuer,
+  mitZeitfaktor,
   neuerZustand,
   ohneSpieler,
   starte,
@@ -28,7 +30,8 @@ const GNADE_MS = 1500
 export const frageVon = (daten: QuizDaten, z: QuizZustand): QuizFrage | undefined =>
   daten.fragen.find((f) => f.id === z.fragen[z.index])
 
-const zeitFuer = (daten: QuizDaten, z: QuizZustand) => ZEIT_MS[frageVon(daten, z)?.art ?? 'einzeln']
+/** Zeitlimit der laufenden Frage; null = ohne Zeitlimit. */
+const zeitFuer = (daten: QuizDaten, z: QuizZustand) => limitFuer(z, frageVon(daten, z) ?? { art: 'einzeln' })
 
 export interface Spielsicht {
   z: QuizZustand | null
@@ -43,6 +46,10 @@ export interface Leitstand extends Spielsicht {
   raumFehler: string | null
   raumBereit: boolean
   starten: () => void
+  /** Zeit je Frage – nur vor dem Start (WCAG 2.2.1). */
+  setzeZeit: (f: Zeitfaktor) => void
+  /** Ohne Zeitlimit: Die Spielleitung löst auf, wenn nicht alle antworten. */
+  aufloesen: () => void
   weiterGehen: () => void
   nochmal: () => void
 }
@@ -61,8 +68,8 @@ export function raumFehlerText(e: unknown): string {
  * Spielleitung: hält den Zustand, nimmt Gäste auf, sammelt Antworten und schickt nach jeder Änderung allen einen
  * Schnappschuss. `code` = null: allein üben, ohne Raum.
  */
-export function useSpielleitung(daten: QuizDaten, name: string, code: string | null): Leitstand {
-  const [z, setZ] = useState(() => neuerZustand(daten.version, { id: LEITUNG_ID, name }))
+export function useSpielleitung(daten: QuizDaten, name: string, code: string | null, zeitfaktor: Zeitfaktor = 1): Leitstand {
+  const [z, setZ] = useState(() => neuerZustand(daten.version, { id: LEITUNG_ID, name }, zeitfaktor))
   const [raumFehler, setRaumFehler] = useState<string | null>(null)
   const [raumBereit, setRaumBereit] = useState(code === null)
   const zRef = useRef(z)
@@ -74,7 +81,8 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
 
   const verteilen = useCallback(
     (s: QuizZustand) => {
-      const restMs = s.phase === 'frage' ? Math.max(0, zeitFuer(daten, s) - (performance.now() - frageStart.current)) : null
+      const limit = s.phase === 'frage' ? zeitFuer(daten, s) : null
+      const restMs = limit === null ? null : Math.max(0, limit - (performance.now() - frageStart.current))
       for (const [id, l] of leitungen.current) l.senden({ t: 'zustand', du: id, z: { ...s, restMs } } satisfies LeitungNachricht)
     },
     [daten],
@@ -101,7 +109,8 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
       antwortenRef.current = {}
       frageStart.current = performance.now()
       clearTimeout(timer.current)
-      timer.current = setTimeout(aufloesenJetzt, zeitFuer(daten, s) + GNADE_MS)
+      const limit = zeitFuer(daten, s)
+      if (limit !== null) timer.current = setTimeout(aufloesenJetzt, limit + GNADE_MS)
       setze(s)
     },
     [daten, aufloesenJetzt, setze],
@@ -113,7 +122,7 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
       const f = frageVon(daten, s)
       if (s.phase !== 'frage' || index !== s.index || s.beantwortet.includes(id) || !f) return
       const ids = new Set(daten.parteien.map((p) => p.id))
-      antwortenRef.current[id] = { auswahl: [...new Set(auswahl.filter((p) => ids.has(p)))], ms: Math.min(ms, ZEIT_MS[f.art]) }
+      antwortenRef.current[id] = { auswahl: [...new Set(auswahl.filter((p) => ids.has(p)))], ms: Math.min(ms, limitFuer(s, f) ?? ms) }
       const neu = mitAntwort(s, id)
       setze(neu)
       if (alleFertig(neu)) aufloesenJetzt()
@@ -184,6 +193,8 @@ export function useSpielleitung(daten: QuizDaten, name: string, code: string | n
     raumFehler,
     raumBereit,
     antworten: (auswahl, ms) => antwortVon(LEITUNG_ID, zRef.current.index, auswahl, ms),
+    setzeZeit: (f) => setze(mitZeitfaktor(zRef.current, f)),
+    aufloesen: aufloesenJetzt,
     starten: () => {
       frageBeginnt(starte(zRef.current, waehleFragen(daten.fragen)))
       raum.current?.signalPausieren()

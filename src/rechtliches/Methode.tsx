@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { supabase } from '../data/quelle'
 import { BETREIBER } from './betreiber'
 import { UMSETZBARKEIT, WIRKSAMKEIT } from './massstab'
@@ -60,9 +61,10 @@ function Pruefende() {
 }
 
 export function Methode() {
+  const titel = useAnsicht('So bewerten wir')
   return (
     <article>
-      <h1>So bewerten wir</h1>
+      <h1 ref={titel}>So bewerten wir</h1>
       <p>
         Das Politik-Duell fragt nicht, welche Partei sympathischer ist, sondern wer liefert: welche Partei für ein
         konkretes Alltagsproblem die wirksamste und umsetzbare Lösung anbietet. Alle Parteien werden nach denselben

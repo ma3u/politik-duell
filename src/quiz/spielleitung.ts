@@ -1,4 +1,4 @@
-import { bewerte } from './punkte.ts'
+import { bewerte, zeitlimit, type Zeitfaktor } from './punkte.ts'
 import type { QuizFrage } from './typen.ts'
 
 // Spielzustand des Quiz als reine Funktionen. Die Spielleitung (der Browser, der den Raum eröffnet) hält den
@@ -50,6 +50,8 @@ export interface QuizZustand {
   beantwortet: string[]
   /** Je gestellter Frage: Spieler-ID → Ergebnis. */
   verlauf: Record<string, Ergebnis>[]
+  /** Zeit je Frage, von der Spielleitung vor dem Start gewählt (WCAG 2.2.1). */
+  zeitfaktor: Zeitfaktor
 }
 
 /** Nachrichten vom Gast an die Spielleitung. */
@@ -67,7 +69,11 @@ export function bereinigeName(roh: unknown, ersatz: string): string {
   return [...name].slice(0, MAX_NAME).join('') || ersatz
 }
 
-export const neuerZustand = (version: string, leitung: { id: string; name: string }): QuizZustand => ({
+export const neuerZustand = (
+  version: string,
+  leitung: { id: string; name: string },
+  zeitfaktor: Zeitfaktor = 1,
+): QuizZustand => ({
   version,
   phase: 'lobby',
   spieler: [{ ...leitung, punkte: 0, verbunden: true, weg: 'selbst' }],
@@ -76,7 +82,15 @@ export const neuerZustand = (version: string, leitung: { id: string; name: strin
   restMs: null,
   beantwortet: [],
   verlauf: [],
+  zeitfaktor,
 })
+
+/** Zeit je Frage ändern – nur vor dem Start. */
+export const mitZeitfaktor = (z: QuizZustand, zeitfaktor: Zeitfaktor): QuizZustand =>
+  z.phase === 'lobby' ? { ...z, zeitfaktor } : z
+
+/** Zeitlimit der laufenden bzw. einer Frage dieses Spiels; null = ohne Zeitlimit. */
+export const limitFuer = (z: Pick<QuizZustand, 'zeitfaktor'>, frage: Pick<QuizFrage, 'art'>) => zeitlimit(frage.art, z.zeitfaktor)
 
 /** Neue Person im Raum – nur vor dem Start und bis MAX_SPIELER. Sonst der Grund der Ablehnung. */
 export function mitSpieler(
@@ -151,7 +165,7 @@ export function aufloesen(z: QuizZustand, frage: QuizFrage, antworten: Record<st
   const ergebnisse: Record<string, Ergebnis> = {}
   for (const s of z.spieler) {
     const a = antworten[s.id]
-    const b = bewerte(frage, a?.auswahl ?? [], a ? a.ms : null)
+    const b = bewerte(frage, a?.auswahl ?? [], a ? a.ms : null, limitFuer(z, frage))
     ergebnisse[s.id] = { auswahl: a?.auswahl ?? [], ms: a ? a.ms : null, ...b }
   }
   return {
@@ -219,7 +233,8 @@ export function alsLeitungNachricht(n: unknown): LeitungNachricht | null {
     Array.isArray(z.fragen) &&
     Number.isInteger(z.index) &&
     Array.isArray(z.beantwortet) &&
-    Array.isArray(z.verlauf)
+    Array.isArray(z.verlauf) &&
+    [0, 1, 2].includes(z.zeitfaktor as number)
   if (!ok) return null
   const spieler = (z.spieler as Record<string, unknown>[]).map((s) => ({
     ...(s as unknown as QuizSpieler),

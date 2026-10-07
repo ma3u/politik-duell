@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
@@ -251,6 +252,7 @@ export function Aufloesung({
   letzte: boolean
   onWeiter: () => void
 }) {
+  const titel = useAnsicht('Auflösung')
   const [enthuellt, setEnthuellt] = useState(false)
   useEffect(() => {
     const t = setTimeout(() => setEnthuellt(true), 1200)
@@ -264,7 +266,9 @@ export function Aufloesung({
 
   return (
     <main className="seite aufloesung">
-      <h2 className="sr-only">Das Problem</h2>
+      <h2 className="sr-only" ref={titel}>
+        Auflösung: das Problem
+      </h2>
       {/* Die eigene Eingabe im Wortlaut über der Kurzfassung – nicht, wenn beide gleich lauten. */}
       {runde.eingaben?.length && !(runde.eingaben.length === 1 && runde.eingaben[0].trim() === runde.zusammenfassung.trim()) ? (
         <div className="deine-eingabe">

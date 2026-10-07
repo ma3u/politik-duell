@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import type { Daten } from '../data/quelle'
 import {
   haltungStand,
@@ -119,7 +120,6 @@ function Balkendiagramm({
       <button
         type="button"
         className={`balken-zeile${aktiv === s ? ' aktiv' : ''}${eltern !== undefined ? ' balken-kind' : ''}`}
-        aria-label={z.detail}
         aria-expanded={kinder ? offen.has(z.id) : undefined}
         onMouseEnter={() => setAktiv(s)}
         onFocus={() => setAktiv(s)}
@@ -137,6 +137,7 @@ function Balkendiagramm({
           )}
           {z.name}
         </span>
+        <span className="sr-only">{z.detail.startsWith(z.name) ? z.detail.slice(z.name.length) : `: ${z.detail}`}</span>
         <Balken segmente={z.segmente} />
         <span className="balken-wert" aria-hidden="true">
           {z.wert}
@@ -525,6 +526,7 @@ export function Themenstand({
   ladeFehler: string | null
   onZurueck: () => void
 }) {
+  const titel = useAnsicht('Themen & Zahlen')
   useEffect(() => {
     scrollTo(0, 0)
   }, [])
@@ -539,7 +541,7 @@ export function Themenstand({
           <Logo groesse={32} />
         </a>
       </header>
-      <h1>Was das Spiel schon kennt</h1>
+      <h1 ref={titel}>Was das Spiel schon kennt</h1>
       <p>
         Wir werten die Wahlprogramme Thema für Thema aus. Hier siehst du, zu welchen Alltagsproblemen das Spiel
         schon etwas sagen kann. Gewertet wird eine Runde nur, wenn das Thema für beide gewählten Parteien ausgewertet

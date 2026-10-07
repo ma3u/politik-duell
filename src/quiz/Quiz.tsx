@@ -3,6 +3,8 @@ import { Fusszeile } from '../components/Fusszeile'
 import { Logo } from '../components/Logo'
 import { useHash } from '../navigation'
 import { QuizAnsicht } from './Ansicht'
+import { useAnsicht } from '../barrierefrei'
+import { ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
 import { bereinigeName, FRAGEN_JE_SPIEL } from './spielleitung'
 import type { QuizDaten } from './typen'
 import { useGast, useSpielleitung } from './useSpiel'
@@ -54,6 +56,7 @@ export function Quiz() {
   const [daten, setDaten] = useState<QuizDaten | null>(null)
   const [ladeFehler, setLadeFehler] = useState<string | null>(null)
   const [name, setName] = useState('')
+  const [zeit, setZeit] = useState<Zeitfaktor>(1)
   const [modus, setModus] = useState<Modus>({ art: 'start' })
 
   useEffect(() => {
@@ -96,7 +99,13 @@ export function Quiz() {
           </p>
         </main>
       ) : modus.art === 'leitung' ? (
-        <LeitungSpiel daten={daten} name={bereinigeName(name, 'Spielleitung')} code={modus.code} onVerlassen={verlassen} />
+        <LeitungSpiel
+          daten={daten}
+          name={bereinigeName(name, 'Spielleitung')}
+          code={modus.code}
+          zeit={zeit}
+          onVerlassen={verlassen}
+        />
       ) : modus.art === 'gast' ? (
         <GastSpiel daten={daten} name={bereinigeName(name, '')} code={modus.code} onVerlassen={verlassen} />
       ) : (
@@ -105,6 +114,8 @@ export function Quiz() {
           daten={daten}
           name={name}
           onName={setName}
+          zeit={zeit}
+          onZeit={setZeit}
           einladung={einladung}
           onEroeffnen={() => setModus({ art: 'leitung', code: neuerRaumcode() })}
           onAllein={() => setModus({ art: 'leitung', code: null })}
@@ -120,6 +131,8 @@ function QuizStart({
   daten,
   name,
   onName,
+  zeit,
+  onZeit,
   einladung,
   onEroeffnen,
   onAllein,
@@ -128,6 +141,8 @@ function QuizStart({
   daten: QuizDaten
   name: string
   onName: (n: string) => void
+  zeit: Zeitfaktor
+  onZeit: (f: Zeitfaktor) => void
   einladung: string | null
   onEroeffnen: () => void
   onAllein: () => void
@@ -137,13 +152,16 @@ function QuizStart({
   const [code, setCode] = useState(einladung ?? '')
   const codeOk = istRaumcode(code)
   const leer = daten.fragen.length === 0
+  const titel = useAnsicht('Programm-Quiz')
 
   return (
     <main className="start quiz-start">
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
-            <h1 className="titel">Wer sagt Ja?</h1>
+            <h1 className="titel" ref={titel}>
+              Wer sagt Ja?
+            </h1>
             <p className="slogan">Das Programm-Quiz</p>
           </div>
           <Logo groesse={72} />
@@ -167,10 +185,25 @@ function QuizStart({
           className="quiz-eingabe"
           value={name}
           maxLength={20}
-          autoComplete="off"
+          autoComplete="nickname"
           placeholder="z. B. Kim"
           onChange={(e) => onName(e.target.value)}
         />
+
+        {!einladung && (
+          <>
+            <label className="label" htmlFor={`${id}-zeit`}>
+              Zeit je Frage (für deinen Raum und zum Üben)
+            </label>
+            <select id={`${id}-zeit`} value={zeit} onChange={(e) => onZeit(Number(e.target.value) as Zeitfaktor)}>
+              {([1, 2, 0] as const).map((f) => (
+                <option key={f} value={f}>
+                  {ZEITFAKTOR_TEXT[f]}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
 
         {einladung ? (
           <>
@@ -202,6 +235,7 @@ function QuizStart({
               <div className="quiz-beitreten-zeile">
                 <input
                   id={`${id}-code`}
+                  aria-describedby={`${id}-code-hinweis`}
                   className="quiz-eingabe quiz-code-eingabe"
                   value={code}
                   maxLength={6}
@@ -215,6 +249,9 @@ function QuizStart({
                   Beitreten
                 </button>
               </div>
+              <p className="meta" id={`${id}-code-hinweis`}>
+                Sechs Zeichen, Buchstaben und Ziffern.
+              </p>
             </form>
           </>
         )}
@@ -231,8 +268,20 @@ function QuizStart({
   )
 }
 
-function LeitungSpiel({ daten, name, code, onVerlassen }: { daten: QuizDaten; name: string; code: string | null; onVerlassen: () => void }) {
-  const s = useSpielleitung(daten, name, code)
+function LeitungSpiel({
+  daten,
+  name,
+  code,
+  zeit,
+  onVerlassen,
+}: {
+  daten: QuizDaten
+  name: string
+  code: string | null
+  zeit: Zeitfaktor
+  onVerlassen: () => void
+}) {
+  const s = useSpielleitung(daten, name, code, zeit)
   const allein = code === null
   // Allein üben: ohne Raum gleich los.
   const gestartet = useRef(false)
@@ -265,6 +314,8 @@ function LeitungSpiel({ daten, name, code, onVerlassen }: { daten: QuizDaten; na
       raum={code ? { code, link: raumLink(code), bereit: s.raumBereit } : undefined}
       onAntwort={s.antworten}
       onStart={s.starten}
+      onZeit={s.setzeZeit}
+      onAufloesen={s.aufloesen}
       onWeiter={s.weiterGehen}
       onNochmal={() => {
         s.nochmal()

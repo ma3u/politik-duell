@@ -81,18 +81,18 @@ const STRAENGE: { strang: Strang; label: string; titel: string; erklaerung: stri
 function beschreibe(k: Knoten, strang: Strang): string {
   if (k.art === 'thema') {
     if (strang === 'forderung')
-      return `Thema ${k.text}: ${mz(k.anzahl, 'Lösungsweg', 'Lösungswege')}, ${mz(k.massnahmen, 'Maßnahme', 'Maßnahmen')} mit Lösungsweg.`
-    if (strang === 'haltung') return `Verwandtes Thema ${k.text}: ${mz(k.anzahl, 'Ursache', 'Ursachen')}.`
-    return `Thema ${k.text}: ${mz(k.anzahl, 'Ursache', 'Ursachen')}, ${mz(k.massnahmen, 'Maßnahme', 'Maßnahmen')}.`
+      return `${k.text} (Thema): ${mz(k.anzahl, 'Lösungsweg', 'Lösungswege')}, ${mz(k.massnahmen, 'Maßnahme', 'Maßnahmen')} mit Lösungsweg.`
+    if (strang === 'haltung') return `${k.text} (verwandtes Thema): ${mz(k.anzahl, 'Ursache', 'Ursachen')}.`
+    return `${k.text} (Thema): ${mz(k.anzahl, 'Ursache', 'Ursachen')}, ${mz(k.massnahmen, 'Maßnahme', 'Maßnahmen')}.`
   }
   if (k.art === 'instrument')
     return (
-      `Lösungsweg (${k.ebene === 'land' ? 'Landesprogramme' : 'Bundesprogramme'}${k.ki_entwurf ? ', KI-Entwurf' : ''}): ${k.text} – ` +
+      `${k.text} – Lösungsweg (${k.ebene === 'land' ? 'Landesprogramme' : 'Bundesprogramme'}${k.ki_entwurf ? ', KI-Entwurf' : ''}): ` +
       (k.anzahl ? `${mz(k.anzahl, 'Maßnahme', 'Maßnahmen')} aus den Programmen von ${mz(k.massnahmen, 'Partei', 'Parteien')}` : 'noch keine Maßnahme zugeordnet') +
       (k.evidenz ? `. ${EVIDENZ_TEXT[k.evidenz]}.` : '.')
     )
   if (k.art === 'haltung')
-    return `Haltung: ${k.text} – ${k.erfasst ? 'alle Positionen erfasst, im Spiel.' : `${zahl(k.anzahl)} Positionen erfasst, noch nicht im Spiel.`}`
+    return `${k.text} – Haltung: ${k.erfasst ? 'alle Positionen erfasst, im Spiel.' : `${zahl(k.anzahl)} Positionen erfasst, noch nicht im Spiel.`}`
   if (k.art === 'position')
     return `Position ${k.text}: ${k.erfasst ? `erfasst${k.ki_entwurf ? ' (KI-Entwurf)' : ''}` : 'noch nicht erfasst'}.`
   if (k.art === 'zielkonflikt') return `Zielkonflikt (Seite „${k.seite}“): ${k.text}`

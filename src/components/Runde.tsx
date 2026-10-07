@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { useDaten } from '../data/kontext'
 import { analysiere, AnalyseFehler, ebenenFuer, type Daten } from '../data/quelle'
 import { ROLLEN } from '../data/rollen'
@@ -92,6 +93,7 @@ export function Runde({
   spieler: [Spieler, Spieler]
   onErgebnis: (r: RundenErgebnis) => void
 }) {
+  const titel = useAnsicht(`Runde ${nr}`)
   const [verlauf, setVerlauf] = useState<Nachricht[]>([])
   /**
    * Gespräch des letzten Versuchs, der ohne Wertung endete (Haltung, Forderung, Grenze): bleibt oben stehen,
@@ -260,7 +262,7 @@ export function Runde({
         {rolle && <span className="rolle-chip">{rolle}</span>}
         {land && <span className="rolle-chip">{land}</span>}
       </div>
-      <h2>Welches Alltagsproblem nervt dich?</h2>
+      <h2 ref={titel}>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">
         Halte den Knopf gedrückt und erzähl, was in deinem Alltag konkret schiefläuft – oder tippe es ein.
       </p>

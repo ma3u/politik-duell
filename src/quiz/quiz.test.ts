@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { HaltungPosition, Positionswert } from '../data/types'
 import { anleitung, quizFrage, quizFragen } from './fragen'
-import { bewerte, ZEIT_MS } from './punkte'
+import { bewerte, ZEIT_MS, zeitlimit } from './punkte'
 import {
   alleFertig,
   alsGastNachricht,
@@ -10,6 +10,7 @@ import {
   bereinigeName,
   mitAntwort,
   mitSpieler,
+  mitZeitfaktor,
   neuerZustand,
   ohneSpieler,
   rangliste,
@@ -107,6 +108,15 @@ describe('bewerte', () => {
     expect(bewerte(ein, [15, 14], 0).punkte).toBe(0)
   })
 
+  it('Zeit je Frage (WCAG 2.2.1): doppelt verschiebt den Tempobonus, ohne Zeitlimit gibt es keinen', () => {
+    expect(zeitlimit('mehrfach', 2)).toBe(60_000)
+    expect(zeitlimit('einzeln', 0)).toBeNull()
+    expect(bewerte(mehr, [12, 13, 16], 30_000, zeitlimit('mehrfach', 2)).punkte).toBe(750)
+    expect(bewerte(mehr, [12, 13, 16], 999_999, null).punkte).toBe(1000)
+    expect(bewerte(mehr, [12, 13], 5_000, null).punkte).toBe(667)
+    expect(bewerte(ein, [15], null, null).punkte).toBe(0)
+  })
+
   it('keine Antwort = 0; Zeiten außerhalb werden begrenzt; doppelte Kreuze zählen einmal', () => {
     expect(bewerte(ein, [15], null).punkte).toBe(0)
     expect(bewerte(ein, [15], -500).punkte).toBe(1000)
@@ -140,6 +150,16 @@ describe('Spielleitung', () => {
     z = weiter(z)
     expect(z.phase).toBe('ende')
     expect(rangliste(z.spieler).map((r) => [r.spieler.id, r.rang])).toEqual([['L', 1], ['a', 2], ['b', 2]])
+  })
+
+  it('Zeit je Frage lässt sich nur vor dem Start ändern und zählt bei der Auflösung', () => {
+    let z = mitZeitfaktor(raum(), 2)
+    expect(z.zeitfaktor).toBe(2)
+    z = starte(z, ['h1'])
+    expect(mitZeitfaktor(z, 0).zeitfaktor).toBe(2)
+    z = aufloesen(z, frage, { L: { auswahl: [15], ms: 20_000 } })
+    expect(z.verlauf[0].L.punkte).toBe(750)
+    expect(alsLeitungNachricht({ t: 'zustand', du: 'a', z: { ...z, zeitfaktor: 5 } })).toBeNull()
   })
 
   it('nimmt nach dem Start und über acht Personen niemanden mehr auf', () => {

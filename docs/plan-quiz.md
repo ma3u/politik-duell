@@ -110,6 +110,7 @@ Warum nicht eine frei gepflegte Liste „Aussage → Parteien“? Bei einer Mehr
 - Mehrfachauswahl: Anteil = max(0, (Treffer − Fehlgriffe) / Zahl der richtigen). Gar nichts oder alles anzukreuzen bringt 0; `teils`-Parteien zählen nicht.
 - Tempo: Faktor 0,5 bis 1 je nach verbleibender Zeit; Punkte = round(1000 × Anteil × Faktor).
 - Zeit: 20 s (einzeln), 30 s (mehrfach). Bei Ablauf zählt eine schon angekreuzte, aber nicht abgegebene Auswahl mit voller Zeit.
+- Zeit einstellbar (WCAG 2.2.1, [`barrierefreiheit.md`](barrierefreiheit.md)): vor dem Start normal, doppelt oder ohne Zeitlimit – dann ohne Tempobonus, und die Spielleitung kann „Jetzt auflösen“.
 - Die Zeit misst jedes Gerät selbst ab Anzeige der Frage – Netzlaufzeiten benachteiligen niemanden. Die Spielleitung rechnet die Punkte. Wer schummeln will, kann das (die Lösungen stehen in der öffentlichen Datei) – bewusst hingenommen, es geht um Bildung, nicht um Preise.
 - Fünf Fragen je Spiel (weniger, wenn der Katalog weniger hat), zufällige Reihenfolge.
 

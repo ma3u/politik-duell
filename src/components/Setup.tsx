@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { useDaten } from '../data/kontext'
 import { waehlbareLaender } from '../data/quelle'
 import { ROLLEN } from '../data/rollen'
@@ -97,10 +98,11 @@ export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void 
   const [b, setB] = useState<Auswahl>({ partei: null, rolle: null, land: null })
   const mitLaendern = waehlbareLaender(useDaten()).length > 0
   const bereit = a.partei && b.partei && a.partei.id !== b.partei.id
+  const titel = useAnsicht('Wer tritt an?')
 
   return (
     <main className="seite">
-      <h2>Wer tritt an?</h2>
+      <h2 ref={titel}>Wer tritt an?</h2>
       <p className="hinweis">
         Jede Seite wählt eine andere Partei. Die Rolle beeinflusst manche Bewertungen.
         {mitLaendern && ' Mit Bundesland zählt bei Landesthemen wie Schule das Landeswahlprogramm. Gespeichert wird es nicht.'}

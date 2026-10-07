@@ -1,7 +1,9 @@
+import { useAnsicht } from '../barrierefrei'
 import { Logo } from './Logo'
 
 /** Sperrseite: Solange nur die geschlossene Testphase läuft, kommt man ohne Zugangslink nicht ins Spiel. */
 export function Testphasesperre() {
+  useAnsicht('Geschlossene Testphase')
   return (
     <main className="start">
       <div className="start-inhalt stimmzettel">

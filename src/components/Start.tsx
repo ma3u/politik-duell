@@ -1,4 +1,5 @@
 import { useId } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { Kreuzfeld } from './Kreuz'
 import { Logo } from './Logo'
 
@@ -18,12 +19,15 @@ export function Start({
   onStart: () => void
 }) {
   const id = useId()
+  const titel = useAnsicht('')
   return (
     <main className="start">
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
-            <h1 className="titel">Politik-Duell</h1>
+            <h1 className="titel" ref={titel}>
+              Politik-Duell
+            </h1>
             <p className="slogan">Versprechen kann jeder.</p>
           </div>
           <Logo groesse={72} />
