@@ -2,10 +2,7 @@
   "id": 1,
   "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
   "beschreibung": "Ob auf allen Autobahnen eine feste Höchstgeschwindigkeit gelten soll oder ob Tempolimits wie bisher nur dort gelten, wo Verkehr, Unfälle oder Lärm es verlangen.",
-  "verwandte_themen": [
-    15,
-    12
-  ],
+  "verwandte_themen": [15, 12],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -28,6 +25,7 @@
       "quelle_url": "https://www.bast.de/DE/Publikationen/BerichteBASt/Fachveroeffentlichungen/Verkehrstechnik/Downloads/V1-BAB-Tempolimit-2015.pdf?__blob=publicationFile&v=1"
     }
   ],
+  "suchbegriffe": ["tempolimit", "höchstgeschwindigkeit", "geschwindigkeitsbegrenzung", "geschwindigkeitsbeschränkung", "tempo 130", "tempo 120", "freie fahrt", "geschwindigkeit", "autobahn", "rasen"],
   "freigabe": {
     "datum": "2026-10-04"
   },
@@ -127,6 +125,16 @@
         "belege_geprueft": "2026-10-04",
         "zweite_suche": "Betreiberin: eigene Suche im PDF und Kapitel Verkehr (S. 29–30) gelesen, keine Aussage zu einem Tempolimit gefunden (Mitteilung vom 4. 10. 2026)"
       }
+    },
+    {
+      "partei_id": 18,
+      "position": "ja",
+      "kurzfassung": "Will bundesweit Tempo 120 auf Autobahnen, Tempo 80 auf Landstraßen und Tempo 30 innerorts.",
+      "zitat": "Bundesweite Tempolimits: Tempo 120 auf Autobahnen, Tempo 80 auf Landstraßen und Tempo 30 innerorts erhöhen die Verkehrssicherheit, reduzieren CO₂-Emissionen, schützen schwächere Verkehrsteilnehmende und reduzieren die Lärmbelastung.",
+      "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=69",
+      "stand": "2026-10-07",
+      "geprueft": false,
+      "ki_entwurf": true
     }
   ]
 }

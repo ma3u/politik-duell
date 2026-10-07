@@ -346,7 +346,7 @@ function kreuzText(frage: QuizFrage, parteiId: number, gewaehlt: boolean): { tex
   return null
 }
 
-/** Alle sieben Positionen mit Beleg – feste Reihenfolge, keine Farben für Positionen (wie die Haltungskarte). */
+/** Alle Positionen mit Beleg – feste Reihenfolge, keine Farben für Positionen (wie die Haltungskarte). */
 export function Positionen({ frage, parteien, auswahl }: { frage: QuizFrage; parteien: QuizPartei[]; auswahl: number[] | null }) {
   return (
     <ul className="position-liste quiz-positionen">

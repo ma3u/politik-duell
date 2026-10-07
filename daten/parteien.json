@@ -103,6 +103,16 @@
         { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf", "stand": "2026-03-14", "sha256": "062b284d3e91919c673a2746c53c9d4e14ef8b1ab4b82699782789ec483c7968" },
         { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf", "stand": "2026-04-25", "sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675" }
       ]
+    },
+    {
+      "id": 18,
+      "name": "Volt Deutschland",
+      "kurzname": "Volt",
+      "farbe": "#502379",
+      "programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf",
+      "programm_stand": "2025-01-16",
+      "programm_sha256": "71a00478c12063ec6177f51b70ae2348369716d5a6c32854cfd547d85a988a62",
+      "landesprogramme": []
     }
   ]
 }

@@ -2,7 +2,7 @@ import type { HaltungEintrag, HaltungPosition, Partei, Zielkonflikt } from '../d
 import type { QuizFrage, QuizPartei } from './typen.ts'
 
 // Quizfragen aus den Haltungen (docs/plan-quiz.md → „Fragen aus dem Katalog“). Mechanisch, ohne redaktionelle
-// Auswahl: je Haltung höchstens eine Frage, nur wenn alle sieben Bundesprogramme eine Position haben.
+// Auswahl: je Haltung höchstens eine Frage, nur wenn alle Bundesprogramme eine Position haben.
 
 const nachId = <T extends { partei_id: number }>(a: T, b: T) => a.partei_id - b.partei_id
 

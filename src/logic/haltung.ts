@@ -30,7 +30,7 @@ export interface Haltungskarte {
 }
 
 /**
- * Baut die Karte – nur, wenn jede Partei eine Position hat („Alle sieben oder keine“). Sonst null: Eine
+ * Baut die Karte – nur, wenn jede Partei eine Position hat („Alle oder keine“). Sonst null: Eine
  * unvollständige Karte machte einzelne Parteien sichtbarer als andere.
  */
 export function haltungskarte(daten: Daten, haltungId: number): Haltungskarte | null {

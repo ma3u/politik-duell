@@ -92,6 +92,9 @@ Zu jedem Programm steht in `parteien.json` die **SHA-256-Prüfsumme** der ausgew
 | 15 | AfD | [Zeit für Deutschland](https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf) | 12. 1. 2025 |
 | 16 | Die Linke | [Alle wollen regieren. Wir wollen verändern.](https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf) | 18. 1. 2025 |
 | 17 | BSW | [Unser Land verdient mehr!](https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf) | 12. 1. 2025 |
+| 18 | Volt Deutschland | [Holen wir uns die Zukunft zurück](https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf) | 16. 1. 2025 (Datum der PDF-Fassung; ein Beschlussdatum ist nicht veröffentlicht) |
+
+**Volt** ist im Fork seit 7. 10. 2026 dabei. Die Positionen zu den Haltungen kommen als Nachtrag dazu (`npm run haltung:auftrag|haltung:blind|haltung:eintragen -- <IDs> --nachtrag 18`): nur das Volt-Programm wird erfasst und ohne Parteinamen eingeordnet, die Positionen der übrigen Parteien bleiben unverändert. Maßnahmen und Landesprogramme von Volt sind noch nicht erfasst.
 
 Seitenanker `#page=N` zählen PDF-Seiten, nicht die gedruckten Seitenzahlen. Die IDs 1–5 waren fiktive Parteien und werden nicht wiederverwendet. Das BSW heißt ab 1. 10. 2026 „Bündnis Soziale Gerechtigkeit und Wirtschaftliche Vernunft“; die Abkürzung bleibt.
 

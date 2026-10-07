@@ -43,7 +43,7 @@ export interface QuizFrage {
   richtig: number[]
   /** Parteien mit `teils` bei Mehrfachauswahl – zählen weder als richtig noch als falsch. */
   neutral: number[]
-  /** Alle sieben Bundesprogramme, nach Partei-ID. */
+  /** Alle Bundesprogramme, nach Partei-ID. */
   positionen: QuizPosition[]
   zielkonflikte: QuizZielkonflikt[]
   /** Mindestens eine Position ist nur KI-Entwurf (nie in der öffentlichen Datei). */

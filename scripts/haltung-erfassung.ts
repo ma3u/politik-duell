@@ -115,8 +115,26 @@ type Json = Record<string, unknown>
  * Funde ohne Zitat (und Einordnung `keine_aussage`) als „Keine Aussage“. Alles als ungeprüfter KI-Entwurf.
  */
 export function positionenEintragen(k: Katalog, datei: Json, funde: HaltungFund[], kennungen: { kennung: string; partei_id: number }[], a: HaltungAntwort, heute: string): Json {
+  return { ...datei, positionen: k.parteien.map((p) => positionAus(p, funde, kennungen, a, heute)) }
+}
+
+/**
+ * Nachtrag einer neu aufgenommenen Partei: nur deren Position ergänzen (oder ersetzen), alle übrigen Positionen
+ * bleiben unverändert – auch geprüfte. Reihenfolge nach Partei-ID.
+ */
+export function positionNachtragen(k: Katalog, datei: Json, parteiId: number, funde: HaltungFund[], kennungen: { kennung: string; partei_id: number }[], a: HaltungAntwort, heute: string): Json {
+  const p = k.parteien.find((x) => x.id === parteiId)
+  if (!p) throw new Error(`Partei ${parteiId} gibt es nicht`)
+  const alt = ((datei.positionen as Json[] | undefined) ?? []).filter((x) => x.partei_id !== parteiId || x.land)
+  const positionen = [...alt, positionAus(p, funde, kennungen, a, heute)].sort(
+    (x, y) => (x.partei_id as number) - (y.partei_id as number) || String(x.land ?? '').localeCompare(String(y.land ?? '')),
+  )
+  return { ...datei, positionen }
+}
+
+function positionAus(p: Katalog['parteien'][number], funde: HaltungFund[], kennungen: { kennung: string; partei_id: number }[], a: HaltungAntwort, heute: string): Json {
   const nach = new Map(a.einordnungen.map((e) => [e.kennung, e]))
-  const positionen = k.parteien.map((p) => {
+  {
     const fund = funde.find((f) => f.partei_id === p.id)
     if (!fund) throw new Error(`Kein Fund für ${p.kurzname}`)
     const kennung = kennungen.find((x) => x.partei_id === p.id)?.kennung
@@ -138,8 +156,7 @@ export function positionenEintragen(k: Katalog, datei: Json, funde: HaltungFund[
       geprueft: false,
       ki_entwurf: true,
     }
-  })
-  return { ...datei, positionen }
+  }
 }
 
 /** Programme mit erkennbarer Position (Aufnahmekriterium: mindestens drei). */

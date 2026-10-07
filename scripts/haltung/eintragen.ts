@@ -1,17 +1,20 @@
 // Trägt die Positionen in die Haltungsdateien ein (ungeprüfter KI-Entwurf) und legt Funde, Blindliste, Kennungen
 // und Antwort unter daten/protokolle/haltung-<ID>/<Datum>/ ab. Weniger als drei erkennbare Positionen
 // (Aufnahmekriterium): diese Haltung nicht eintragen, außer mit --trotzdem; die übrigen laufen weiter.
-// Aufruf: npm run haltung:eintragen -- <Haltungs-ID> [<Haltungs-ID> …] [--trotzdem] [--stand JJJJ-MM-TT]
+// Aufruf: npm run haltung:eintragen -- <Haltungs-ID> [<Haltungs-ID> …] [--trotzdem] [--stand JJJJ-MM-TT] [--nachtrag <Partei-ID>]
+// Mit --nachtrag nur die Position dieser (neu aufgenommenen) Partei ergänzen; die übrigen bleiben unverändert,
+// auch geprüfte. Protokoll unter daten/protokolle/haltung-<ID>/<Datum>-nachtrag-<Partei>/.
 import { copyFileSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { erkennbar, positionenEintragen, pruefeHaltungAntwort, type HaltungAntwort, type HaltungBlindliste } from '../haltung-erfassung.ts'
+import { erkennbar, positionenEintragen, positionNachtragen, pruefeHaltungAntwort, type HaltungAntwort, type HaltungBlindliste } from '../haltung-erfassung.ts'
 import { erstesJsonObjekt } from '../entwurf/json-text.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { formatiere } from '../pruefung-export.ts'
-import { ids, katalogUndHaltungen, leseFunde, oderAbbruch, ordnerAnlegen, WURZEL } from './gemeinsam.ts'
+import { ids, katalogUndHaltungen, leseFunde, nachtrag, oderAbbruch, ordnerAnlegen, WURZEL } from './gemeinsam.ts'
 
 const args = process.argv.slice(2)
+const nur = oderAbbruch(() => nachtrag(args))
 const trotzdem = args.includes('--trotzdem')
 const s = args.indexOf('--stand')
 const heute = s >= 0 ? args.splice(s, 2)[1] : new Date().toISOString().slice(0, 10)
@@ -22,7 +25,7 @@ for (const { haltung, datei, arbeit } of haltungen) {
     probleme++
     console.error(`Haltung ${haltung.id}: ${t}`)
   }
-  if (haltung.positionen.some((p) => p.geprueft)) {
+  if (nur === null && haltung.positionen.some((p) => p.geprueft)) {
     melde('hat geprüfte Positionen – ein neuer KI-Entwurf würde sie ersetzen. Übersprungen.')
     continue
   }
@@ -40,11 +43,14 @@ for (const { haltung, datei, arbeit } of haltungen) {
     melde(`Antwort fehlerhaft:\n  ${fehler.join('\n  ')}`)
     continue
   }
-  const funde = leseFunde(arbeit).filter((f) => f.haltung_id === haltung.id)
+  const funde = leseFunde(arbeit).filter((f) => f.haltung_id === haltung.id && (nur === null || f.partei_id === nur))
   const original = readFileSync(datei, 'utf8')
-  const neu = positionenEintragen(katalog, JSON.parse(original), funde, kennungen, antwort, heute)
+  const neu =
+    nur === null
+      ? positionenEintragen(katalog, JSON.parse(original), funde, kennungen, antwort, heute)
+      : positionNachtragen(katalog, JSON.parse(original), nur, funde, kennungen, antwort, heute)
   const n = erkennbar(neu)
-  if (n < 3 && !trotzdem) {
+  if (n < 3 && !trotzdem && nur === null) {
     melde(`nur ${n} Programme mit erkennbarer Position – Aufnahmekriterium sind drei. Nicht eingetragen (zurückstellen oder mit --trotzdem und Begründung).`)
     continue
   }
@@ -55,7 +61,8 @@ for (const { haltung, datei, arbeit } of haltungen) {
     melde(`Eintragen verworfen, Katalog wäre fehlerhaft:\n  ${nachher.fehler.join('\n  ')}`)
     continue
   }
-  const archiv = fileURLToPath(new URL(`daten/protokolle/haltung-${haltung.id}/${heute}/`, WURZEL))
+  const zusatz = nur === null ? '' : `-nachtrag-${katalog.parteien.find((p) => p.id === nur)!.kurzname.toLowerCase()}`
+  const archiv = fileURLToPath(new URL(`daten/protokolle/haltung-${haltung.id}/${heute}${zusatz}/`, WURZEL))
   ordnerAnlegen(join(archiv, 'funde'))
   for (const f of ['blind.json', 'kennungen.json']) copyFileSync(join(arbeit, f), join(archiv, f))
   copyFileSync(join(arbeit, 'protokoll', 'einordnung-antwort.txt'), join(archiv, 'einordnung-antwort.txt'))

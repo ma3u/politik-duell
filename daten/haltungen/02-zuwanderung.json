@@ -2,12 +2,7 @@
   "id": 2,
   "frage": "Soll Zuwanderung nach Deutschland stärker begrenzt werden?",
   "beschreibung": "Ob insgesamt weniger Menschen nach Deutschland kommen sollen als bisher – über Asyl, Familiennachzug oder Arbeit –, unabhängig davon, mit welchen Mitteln das geschähe.",
-  "verwandte_themen": [
-    6,
-    2,
-    5,
-    9
-  ],
+  "verwandte_themen": [6, 2, 5, 9],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -30,6 +25,12 @@
       "quelle_url": "https://www.gesetze-im-internet.de/gg/art_16a.html"
     }
   ],
+  "einordnung": {
+    "ja": "will die Zuwanderung insgesamt senken, auch über das Asylsystem hinaus.",
+    "teils": "will einen Teil begrenzen (Asyl, irreguläre Migration) und einen anderen erleichtern oder erhalten (Arbeitsmigration) oder die Steuerung statt der Senkung betonen.",
+    "nein": "will keine stärkere Begrenzung, lehnt Verschärfungen ab."
+  },
+  "suchbegriffe": ["zuwanderung", "einwanderung", "obergrenze", "begrenzung der migration", "migration begrenz", "zuzug", "irreguläre migration", "asylzuwanderung", "migration", "asyl"],
   "freigabe": {
     "datum": "2026-10-04"
   },
@@ -131,6 +132,16 @@
         "belege_geprueft": "2026-10-04",
         "einordnung_bestaetigt": 2
       }
+    },
+    {
+      "partei_id": 18,
+      "position": "teils",
+      "kurzfassung": "Will ein effizienteres Zuwanderungssystem gegen den Fachkräftemangel und für den Arbeitsstandort.",
+      "zitat": "Ein effizienteres Zuwanderungssystem ist entscheidend, um dem Fachkräftemangel zu begegnen und Deutschland als attraktiven Arbeitsstandort zu stärken.",
+      "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=50",
+      "stand": "2026-10-07",
+      "geprueft": false,
+      "ki_entwurf": true
     }
   ]
 }

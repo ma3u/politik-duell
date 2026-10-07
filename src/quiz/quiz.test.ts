@@ -215,7 +215,8 @@ describe('Nachrichten', () => {
 
   it('verwirft fremde oder kaputte Nachrichten von Gästen', () => {
     expect(alsGastNachricht({ t: 'antwort', index: 0, auswahl: [15], ms: 1200 })).toEqual({ t: 'antwort', index: 0, auswahl: [15], ms: 1200 })
-    expect(alsGastNachricht({ t: 'antwort', index: 0, auswahl: Array(8).fill(1), ms: 1 })).toBeNull()
+    expect(alsGastNachricht({ t: 'antwort', index: 0, auswahl: Array(8).fill(1), ms: 1 })).not.toBeNull()
+    expect(alsGastNachricht({ t: 'antwort', index: 0, auswahl: Array(21).fill(1), ms: 1 })).toBeNull()
     expect(alsGastNachricht({ t: 'antwort', index: 0, auswahl: ['x'], ms: 1 })).toBeNull()
     expect(alsGastNachricht({ t: 'antwort', index: 0, auswahl: [1], ms: Infinity })).toBeNull()
     expect(alsGastNachricht({ t: 'zustand' })).toBeNull()

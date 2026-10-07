@@ -1246,7 +1246,7 @@ export function pruefeKatalog(
       haltung.positionen.push(p)
     }
 
-    // „Alle sieben oder keine“: Die Karte erscheint erst, wenn jede Partei eine Position hat.
+    // „Alle oder keine“: Die Karte erscheint erst, wenn jede Partei eine Position hat.
     const fehlend = katalog.parteien.filter((x) => !haltung.positionen.some((p) => p.partei_id === x.id))
     if ((haltung.freigabe || katalog.fiktiv) && fehlend.length)
       warnungen.push(`${ort}: keine Position für ${fehlend.map((x) => `„${x.kurzname}“ (${x.id})`).join(', ')} – die Haltungskarte erscheint erst, wenn alle Parteien erfasst sind`)

@@ -17,6 +17,19 @@ export interface HaltungKontext {
   arbeit: string
 }
 
+/**
+ * Nachtrag einer neu aufgenommenen Partei (`--nachtrag <Partei-ID>`): nimmt die Option aus `args` heraus. Dann
+ * wird nur dieses Programm erfasst und eingeordnet; die Positionen der übrigen Parteien bleiben unverändert.
+ */
+export function nachtrag(args: string[]): number | null {
+  const i = args.indexOf('--nachtrag')
+  if (i < 0) return null
+  const id = Number(args[i + 1])
+  if (!Number.isInteger(id)) throw new Error('--nachtrag braucht eine Partei-ID')
+  args.splice(i, 2)
+  return id
+}
+
 /** IDs aus den Argumenten (Zahlen), mindestens eine. */
 export function ids(args: string[]): number[] {
   const liste = args.filter((a) => /^\d+$/.test(a)).map(Number)

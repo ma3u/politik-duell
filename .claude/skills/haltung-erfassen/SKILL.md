@@ -54,3 +54,17 @@ Haltungen mit weniger als drei erkennbaren Positionen trägt das Skript nicht ei
 ## 5. Abschluss
 
 In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
+
+## Nachtrag einer neu aufgenommenen Partei
+
+Kommt eine Partei hinzu (in `parteien.json` mit Programm und Prüfsumme), fehlen ihr alle Positionen – die Haltungen gelten dann nach „Alle oder keine“ als unvollständig. Statt alle Programme neu zu erfassen und einzuordnen, nur diese Partei nachtragen; die Positionen der übrigen Parteien (auch geprüfte) bleiben unverändert:
+
+```bash
+npm run -s haltung:auftrag '--' <IDs> --nachtrag <Partei-ID>     # ein Auftrag, nur dieses Programm
+# ein Agent haltung-erfassung wie in Schritt 2
+npm run -s haltung:blind '--' <IDs> --nachtrag <Partei-ID>       # Blindliste nur mit diesem Zitat
+# ein Agent haltung-einordnung wie in Schritt 3 (Maßstab: „einordnung“ der Haltung)
+npm run -s haltung:eintragen '--' <IDs> --nachtrag <Partei-ID>   # nur diese Position, Protokoll <Datum>-nachtrag-<Partei>
+```
+
+Haltungen ohne `suchbegriffe` vorher ergänzen – mit den Begriffen, mit denen die übrigen Programme durchsucht wurden (`docs/haltungen.md` → „Vorgehen“), damit die Suche für alle gleich bleibt. Erster Nachtrag: Volt (18), 7. 10. 2026.

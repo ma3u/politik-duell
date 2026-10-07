@@ -1,17 +1,19 @@
 // Schreibt je Bundesprogramm die Textdatei und **einen** Auftrag für alle Haltungen des Laufs (Agent
 // haltung-erfassung): je Haltung Frage, Beschreibung, Maßstab der Einordnung, Treffer und Fundstellen.
 // So liest jeder Agent sein Programm einmal, gleich wie viele Haltungen es sind.
-// Aufruf: npm run haltung:auftrag -- <Haltungs-ID> [<Haltungs-ID> …] [--lokal <ordner>]
+// Aufruf: npm run haltung:auftrag -- <Haltungs-ID> [<Haltungs-ID> …] [--lokal <ordner>] [--nachtrag <Partei-ID>]
+// Mit --nachtrag nur der Auftrag für dieses eine Programm (neu aufgenommene Partei).
 import { rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { programmName } from '../entwurf.ts'
 import { erfassungsSeiten, lokalePdfs, textdatei } from '../programme.ts'
 import { fundstellen } from '../entwurf/auftrag-text.ts'
-import { abbruch, ids, katalogUndHaltungen, laufOrdner, oderAbbruch, ordnerAnlegen } from './gemeinsam.ts'
+import { abbruch, ids, katalogUndHaltungen, laufOrdner, nachtrag, oderAbbruch, ordnerAnlegen } from './gemeinsam.ts'
 
 const args = process.argv.slice(2)
 const l = args.indexOf('--lokal')
 const lokal = l >= 0 ? lokalePdfs(args.splice(l, 2)[1]) : undefined
+const nur = oderAbbruch(() => nachtrag(args))
 const { katalog, haltungen } = oderAbbruch(() => katalogUndHaltungen(ids(args)))
 for (const { haltung: h } of haltungen) {
   if (!h.freigabe) abbruch(`Haltung ${h.id} hat keine „freigabe“ – erst /haltung-anlegen`)
@@ -24,7 +26,7 @@ ordnerAnlegen(join(lauf, 'texte'), join(lauf, 'auftraege'), join(lauf, 'protokol
 writeFileSync(join(lauf, 'lauf.json'), JSON.stringify({ haltungen: haltungen.map((x) => x.haltung.id), datum: new Date().toISOString().slice(0, 10) }) + '\n')
 const jeHaltung = haltungen.length > 3 ? 20 : 60
 let fehlt = 0
-for (const p of katalog.parteien) {
+for (const p of katalog.parteien.filter((x) => nur === null || x.id === nur)) {
   const name = programmName(p.kurzname, null)
   let seiten: string[]
   try {

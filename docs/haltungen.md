@@ -238,3 +238,37 @@ Lauf für die Haltungen 32–35 (Liste aus `/liste-einordnen`), alle Bundesprogr
 
 - 34: Sollen trockengelegte Moore wieder vernässt werden? (Union ja, Grüne ja; Linke: Zitat zur Revitalisierung ohne ausdrückliche Wiedervernässung)
 - 35: Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? (Grüne nein, Linke nein; FDP: Zitat zur heimischen Erdgasförderung mit Fracking-Verfahren, ohne Angabe unkonventioneller Lagerstätten)
+
+
+## Nachtrag Volt (7. 10. 2026)
+
+Volt (ID 18, Programm zur Bundestagswahl 2025) ist im Fork neu aufgenommen. Erfasst als **Nachtrag** (`--nachtrag 18`, `.claude/skills/haltung-erfassen/SKILL.md`): ein Agent `haltung-erfassung` für das Volt-Programm mit denselben Suchbegriffen wie für die übrigen Programme (bei Tempolimit und Zuwanderung aus „Vorgehen“ oben übernommen), Einordnung durch einen Agenten `haltung-einordnung` ohne Parteinamen nach dem Maßstab der Haltung. Die Positionen der übrigen Parteien sind unverändert (geprüft per Vergleich vorher/nachher). Alle Volt-Positionen sind **KI-Entwurf** (`geprueft: false`); Protokolle unter `daten/protokolle/haltung-<ID>/2026-10-07-nachtrag-volt/`. Alle Zitate stehen wörtlich auf der angegebenen Seite (`npm run zitate:pruefen`).
+
+Für die Prüfung vormerken: Windkraft (4) und Euro (19) als „keine Aussage“ trotz gelesener Kapitel; Auslassungen in den Zitaten zu Zuckersteuer (15, enthält „wenn“) und Erbschaftsteuer (25, 565 Zeichen, enthält „sofern“). Folge für das öffentliche Quiz: Tempolimit und Zuwanderung zählen erst wieder, wenn auch die Volt-Position geprüft ist („Alle oder keine“).
+
+| ID | Frage | Volt |
+| --- | --- | --- |
+| 1 | Soll es ein generelles Tempolimit auf Autobahnen geben? | Ja (S. 69) |
+| 2 | Soll Zuwanderung nach Deutschland stärker begrenzt werden? | Teils (S. 50) |
+| 4 | Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben? | keine Aussage |
+| 5 | Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben? | keine Aussage |
+| 7 | Soll Deutschland die Ukraine weiter mit Waffen beliefern? | Ja (S. 45) |
+| 8 | Soll der gemeinsame Unterricht von Kindern mit und ohne Behinderung an Regelschulen Vorrang vor Förderschulen haben? | Ja (S. 112) |
+| 9 | Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden? | keine Aussage |
+| 10 | Soll eine Vermögensteuer eingeführt werden? | Ja (S. 100) |
+| 11 | Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben? | keine Aussage |
+| 12 | Soll es einen gesetzlichen Mindestlohn geben? | Ja (S. 89) |
+| 13 | Soll die Schuldenbremse im Grundgesetz bestehen bleiben? | Teils (S. 22) |
+| 14 | Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden? | Ja (S. 92) |
+| 15 | Soll es eine Steuer auf stark gezuckerte Getränke geben? | Ja (S. 131) |
+| 16 | Soll Deutschland Mitglied der NATO bleiben? | Teils (S. 40) |
+| 18 | Soll Deutschland wieder Erdgas aus Russland beziehen? | keine Aussage |
+| 19 | Soll Deutschland den Euro als Währung behalten? | keine Aussage |
+| 20 | Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | keine Aussage |
+| 21 | Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | Ja (S. 139) |
+| 24 | Soll Deutschland Mitglied der EU bleiben? | Ja (S. 9) |
+| 25 | Soll die Erbschaftsteuer abgeschafft werden? | Nein (S. 100) |
+| 26 | Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | Ja (S. 153) |
+| 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | Ja (S. 142) |
+| 32 | Soll Deutschland seine Verteidigungsausgaben erhöhen? | Ja (S. 41) |
+| 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | keine Aussage |

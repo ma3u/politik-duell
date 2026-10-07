@@ -44,7 +44,7 @@ const liste = (namen: string[]) => (namen.length < 2 ? namen.join('') : `${namen
 export const INTRO: Clip[] = [
   { id: 'intro-1', sprecher: 'mara', text: '[excited] Willkommen bei „Wer sagt Ja?“ – dem Quiz, das Wahlprogramme endlich unterhaltsam macht!' },
   { id: 'intro-2', sprecher: 'ben', text: '[laughs] Oder zumindest weniger einschläfernd. Ich bin Ben.' },
-  { id: 'intro-3', sprecher: 'mara', text: 'Und ich bin Mara. Sieben Parteien – und ihr ratet, wer was im Programm stehen hat.' },
+  { id: 'intro-3', sprecher: 'mara', text: 'Und ich bin Mara. Acht Parteien – und ihr ratet, wer was im Programm stehen hat.' },
   { id: 'intro-4', sprecher: 'ben', text: '[playful] Schnell sein bringt Punkte. Wissen bringt mehr. Los geht’s!' },
 ]
 

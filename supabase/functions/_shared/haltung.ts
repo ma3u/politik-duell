@@ -1,6 +1,6 @@
 import type { HaltungEintrag, HaltungPosition, Partei } from './typen.ts'
 
-// Haltungskarte (docs/plan-haltungen.md, Teil B): Regel „Alle sieben oder keine“. Reines TypeScript für
+// Haltungskarte (docs/plan-haltungen.md, Teil B): Regel „Alle oder keine“. Reines TypeScript für
 // App, Mock und Tests; die Datenbank nutzt dieselbe Regel in der View `haltungen_vollstaendig`.
 
 /**

@@ -8,6 +8,8 @@ import type { QuizFrage } from './typen.ts'
 export const MAX_SPIELER = 8
 export const FRAGEN_JE_SPIEL = 5
 export const MAX_NAME = 20
+/** Mehr Kreuze als Parteien kann es nicht geben – großzügig, damit eine neue Partei nichts bricht. */
+const MAX_KREUZE = 20
 
 export type Phase = 'lobby' | 'frage' | 'aufloesung' | 'ende'
 /** Wie ein Gerät mit der Spielleitung verbunden ist. */
@@ -216,7 +218,7 @@ export function alsGastNachricht(n: unknown): GastNachricht | null {
   const m = n as Record<string, unknown>
   if (m.t === 'hallo' && typeof m.version === 'string' && m.version.length <= 64)
     return { t: 'hallo', name: bereinigeName(m.name, ''), version: m.version }
-  if (m.t === 'antwort' && Number.isInteger(m.index) && istZahlenliste(m.auswahl, 7) && typeof m.ms === 'number' && Number.isFinite(m.ms))
+  if (m.t === 'antwort' && Number.isInteger(m.index) && istZahlenliste(m.auswahl, MAX_KREUZE) && typeof m.ms === 'number' && Number.isFinite(m.ms))
     return { t: 'antwort', index: m.index as number, auswahl: m.auswahl, ms: Math.max(0, m.ms) }
   return null
 }
