@@ -1,12 +1,97 @@
 {
-  "thema_id": 15,
-  "stand": "2026-10-05",
-  "herkunft": "Nachtrag zur Forderung „Steuern und Abgaben auf Sprit senken“ (Liste vom 5. 10. 2026, /forderung-erfassen), vor dem Blick in die Programme geschrieben; enthält nur die Richtungen dieses Nachtrags, die Gegenrichtung (Steuer anheben, Steuervorteile abbauen) ist mit aufgenommen.",
-  "regeln": [],
-  "suchbegriffe": {
-    "1502": {
-      "Energiesteuer auf Kraftstoffe dauerhaft senken": ["energiesteuer", "mineralölsteuer", "kraftstoffsteuer", "spritsteuer", "steuer auf kraftstoff", "steuern auf sprit", "steuern auf benzin", "mehrwertsteuer auf kraftstoff", "tankrabatt", "spritpreis", "benzinpreis", "dieselpreis"],
-      "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": ["dieselprivileg", "steuervorteil für diesel", "energiesteuer erhöh", "kraftstoffpreis erhöh", "klimaschädliche subvention", "diesel angleich"]
-    }
+ "thema_id": 15,
+ "stand": "2026-10-05",
+ "herkunft": "Nachtrag zur Forderung „Steuern und Abgaben auf Sprit senken“ (Liste vom 5. 10. 2026, /forderung-erfassen), vor dem Blick in die Programme geschrieben; enthält nur die Richtungen dieses Nachtrags, die Gegenrichtung (Steuer anheben, Steuervorteile abbauen) ist mit aufgenommen. Nachtrag Volt (7. 10. 2026): Suchbegriffe ohne Blick in die Programme geschrieben – Lösungsrichtungen aus der Spalte „Diagnose aus der Debatte“ in docs/perspektiven-ursachen.md, Begriffe aus den dort dokumentierten Stichwörtern der ersten Erfassung (für alle Programme gleich), ergänzt um Begriffe der jeweiligen Richtung.",
+ "regeln": [],
+ "suchbegriffe": {
+  "1502": {
+   "Energiesteuer auf Kraftstoffe dauerhaft senken": [
+    "energiesteuer",
+    "mineralölsteuer",
+    "kraftstoffsteuer",
+    "spritsteuer",
+    "steuer auf kraftstoff",
+    "steuern auf sprit",
+    "steuern auf benzin",
+    "mehrwertsteuer auf kraftstoff",
+    "tankrabatt",
+    "spritpreis",
+    "benzinpreis",
+    "dieselpreis"
+   ],
+   "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": [
+    "dieselprivileg",
+    "steuervorteil für diesel",
+    "energiesteuer erhöh",
+    "kraftstoffpreis erhöh",
+    "klimaschädliche subvention",
+    "diesel angleich"
+   ]
+  },
+  "1501": {
+   "Vorräte, Lieferländer, weniger Ölabhängigkeit": [
+    "erdölreserve",
+    "ölreserve",
+    "bevorratung",
+    "versorgungssicherheit",
+    "diversifizierung",
+    "lieferländer",
+    "importabhängigkeit",
+    "rohöl",
+    "erdöl"
+   ],
+   "Elektromobilität": [
+    "elektromobilität",
+    "e-auto",
+    "verbrennungsmotor"
+   ],
+   "Heimische Förderung, alternative Kraftstoffe": [
+    "heimische förderung",
+    "ölförderung",
+    "wasserstoff",
+    "biokraftstoff",
+    "e-fuels"
+   ]
+  },
+  "1503": {
+   "Kartellrecht, Übergewinne, Preisaufsicht": [
+    "raffinerie",
+    "mineralöl",
+    "tankstelle",
+    "kartell",
+    "übergewinn",
+    "preisaufsicht",
+    "markttransparenz",
+    "wettbewerb"
+   ]
+  },
+  "1504": {
+   "Kaufprämie, Social Leasing": [
+    "kaufprämie",
+    "leasing",
+    "elektroauto",
+    "e-auto",
+    "social leasing",
+    "förderung"
+   ],
+   "Technologieoffenheit, keine Subventionen": [
+    "technologieoffen",
+    "verbrenner",
+    "subvention"
+   ]
+  },
+  "1505": {
+   "Förderung und Recht auf Wallbox": [
+    "wallbox",
+    "ladepunkt",
+    "mehrfamilienhaus",
+    "wohnungseigentum"
+   ],
+   "Öffentliche Ladesäulen": [
+    "ladesäule",
+    "ladeinfrastruktur",
+    "schnellladen"
+   ]
   }
+ }
 }

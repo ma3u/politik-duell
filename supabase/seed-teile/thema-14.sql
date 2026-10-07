@@ -80,7 +80,13 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7156, 14, 16, 'BE', 'Verwaltung digitaler und effizienter machen, Verwaltungsreform umsetzen', '{1401}', 7125, 2, 3, null, 'Setzt an den Hürden an, die Nutzer nennen: schwere Auffindbarkeit und Anträge, die hinterher doch auf Papier bearbeitet werden. Die meisten Leistungen erbringen Land und Kommunen selbst.', 'https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=11', null, 'gemischt', '2026-09-30', false, true, null),
   (7157, 14, 17, 'BE', 'Konkurrenzfähige Gehälter für IT-Fachkräfte im öffentlichen Dienst', '{1401,1402}', 7128, 2, 2, null, 'Setzt am Personalmangel an, den der Normenkontrollrat als drängend beschreibt; das Land konkurriert aber mit Wirtschaft und anderen Ländern um dieselben Fachkräfte.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=66', null, 'gemischt', '2026-09-30', false, true, null),
   (7225, 14, 14, null, 'Vorausgefüllte Steuererklärung bis zur vollautomatisierten Einkommensteuerveranlagung („Easy Tax“)', '{1401,1402}', 6986, 2, 2, null, 'Kann den Personalmangel abfedern und Bearbeitungszeiten senken, wie der Normenkontrollrat empfiehlt; Voraussetzung sind digitale Akten und vernetzte Daten, die vielerorts fehlen.', 'https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=15', null, 'gemischt', '2026-09-30', false, true, null),
-  (7226, 14, 14, null, 'Elterngeld und Familienleistungen digitalisieren und automatisieren, KI-basierte Beantragung', '{1401,1402}', 6986, 2, 2, null, 'Kann den Personalmangel abfedern und Bearbeitungszeiten senken, wie der Normenkontrollrat empfiehlt; Voraussetzung sind digitale Akten und vernetzte Daten, die vielerorts fehlen.', 'https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=30', null, 'gemischt', '2026-09-30', false, true, null);
+  (7226, 14, 14, null, 'Elterngeld und Familienleistungen digitalisieren und automatisieren, KI-basierte Beantragung', '{1401,1402}', 6986, 2, 2, null, 'Kann den Personalmangel abfedern und Bearbeitungszeiten senken, wie der Normenkontrollrat empfiehlt; Voraussetzung sind digitale Akten und vernetzte Daten, die vielerorts fehlen.', 'https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=30', null, 'gemischt', '2026-09-30', false, true, null),
+  (8548, 14, 18, null, 'Zentrales Digitalministerium mit Richtlinienkompetenz für alle Verwaltungsebenen und bundeseinheitlichen Standards für durchgängige Digitalisierung der Verwaltung.', '{1401}', null, 2, 1, null, 'Verbindliche einheitliche Standards setzen an der Zersplitterung der IT von Bund und Ländern an, die Fachleute als Hauptbremse nennen. Eine Richtlinienkompetenz für alle Ebenen braucht aber eine Grundgesetzänderung (Art. 91c), Erfahrungen damit fehlen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=28', null, 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8549, 14, 18, null, 'Verwaltungsleistungen proaktiv, automatisiert, mobil und mit E-Identifikation und E-Payment bereitstellen.', '{1401}', 6986, 2, 2, null, 'Kann den Personalmangel abfedern und Bearbeitungszeiten senken, wie der Normenkontrollrat empfiehlt; Voraussetzung sind digitale Akten und vernetzte Daten, die vielerorts fehlen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=29', null, 'gemischt', '2026-10-07', false, true, null),
+  (8550, 14, 18, null, 'Once-Only-Prinzip konsequent umsetzen: Daten werden nur einmal übermittelt und von Behörden gemeinsam genutzt, bei gewährleistetem Datenschutz.', '{1403}', 6984, 2, 2, null, 'Setzt direkt daran an, dass Nachweise immer wieder eingereicht werden müssen; Länder wie Österreich und Estland zeigen, dass es funktioniert. Die Registermodernisierung ist aber ein Vorhaben über viele Jahre, und die Länder können nicht zur Anbindung verpflichtet werden.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=29', 'https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5', 'belegt', '2026-10-07', false, true, null),
+  (8551, 14, 18, null, 'Zentrale Anlaufstellen, automatische Genehmigung bei verspäteter Bearbeitung und regelmäßige Überprüfung von Vorschriften.', '{1404}', null, 2, 2, null, 'Regelmäßige Überprüfung von Vorschriften und Genehmigungsfiktion können Verfahren straffen; Behörden könnten aber vorsorglich ablehnen, die Fiktion ersetzt keine Prüfung, und ihre Wirkung ist kaum untersucht.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=17', null, 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8552, 14, 18, null, 'Zuständigkeiten zwischen Bund, Ländern und Kommunen neu ordnen.', '{1404}', null, 1, 1, null, 'Klarere Zuständigkeiten könnten Doppelarbeit und Aufgabenlast verringern; die Zusage bleibt unbestimmt, braucht Grundgesetzänderungen mit Zustimmung der Länder, und die Bilanz früherer Föderalismusreformen ist umstritten.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=15', null, 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8553, 14, 18, null, 'Angepasste Gehaltsstrukturen, Beamtentum auf Zeit und Personalrotation für die Verwaltung.', '{1402}', 6987, 2, 1, null, 'Setzt am Personalmangel an; der Bund regelt aber nur die Bedingungen seiner eigenen Beschäftigten, die meisten Stellen mit Bürgerkontakt liegen bei Ländern und Kommunen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=17', null, 'gemischt', '2026-10-07', false, true, null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -100,7 +106,10 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7127, 14),
   (7128, 14),
   (7129, 14),
-  (7155, 14);
+  (7155, 14),
+  (8548, 14),
+  (8551, 14),
+  (8552, 14);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (14, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -130,6 +139,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (14, 14, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (14, 15, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (14, 16, 'BE', 'massnahmen', null, '2026-09-30', true, null),
-  (14, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null);
+  (14, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null),
+  (14, 18, null, 'massnahmen', null, '2026-10-07', true, '{1401,1402,1403,1404}');
 
 commit;

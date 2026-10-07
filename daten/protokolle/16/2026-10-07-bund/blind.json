@@ -1,0 +1,137 @@
+{
+  "pruefsumme": "70a396382debe6a39b2c86cb0e96be0a511c681024f3667b11fbd6165885ecec",
+  "thema": {
+    "id": 16,
+    "name": "Heizungstausch",
+    "ziel": "Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten."
+  },
+  "ursachen": [
+    {
+      "id": 1601,
+      "beschreibung": "Viele halten den Umstieg für nicht lohnend oder können ihn nicht bezahlen: 43 % der Interessierten zweifeln an der Wirtschaftlichkeit einer Wärmepumpe, 32 % fehlt das Geld (2026)",
+      "ebene": "bund"
+    },
+    {
+      "id": 1602,
+      "beschreibung": "Die Regeln für neue Heizungen wurden in wenigen Jahren mehrfach grundlegend geändert (zuletzt Gebäudemodernisierungsgesetz, Juli 2026), dazu kommt ab 2028 ein europäischer CO₂-Preis für Heizöl und Gas",
+      "ebene": "bund"
+    },
+    {
+      "id": 1603,
+      "beschreibung": "Viele wissen noch nicht, ob Fernwärme oder ein Wärmenetz kommt: Erst 26 % der Gemeinden haben ihre Wärmeplanung abgeschlossen (Juni 2026)",
+      "ebene": "land"
+    },
+    {
+      "id": 1604,
+      "beschreibung": "Mieterinnen und Mieter können über die Heizung nicht entscheiden, tragen aber die Heizkosten: Sie nutzen fast viermal seltener klimafreundliche Technik als Eigenheimbesitzer (15 % zu 59 %)",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 7034,
+      "name": "Zuschüsse für neue klimafreundliche Heizungen fortführen oder ausbauen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Senkt die Investition, die viele Haushalte scheuen oder nicht aufbringen können, und setzt damit an den laut KfW größten Hindernissen an. Ob sie Haushalte mit wenig Geld erreicht, hängt von der Staffelung ab.",
+      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf"
+    },
+    {
+      "id": 7035,
+      "name": "Wärmepumpen-Leasing oder Wärme-Contracting ohne hohe Startinvestition",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Nimmt Haushalten die hohe Anfangsinvestition ab, die laut KfW oft fehlt; solche Angebote gibt es bisher nur vereinzelt, ihre Wirkung in der Breite ist kaum untersucht."
+    },
+    {
+      "id": 7036,
+      "name": "Heizungsgesetz abschaffen, freie Wahl der Heizung",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schafft Wahlfreiheit und beendet den Streit um die 65-Prozent-Vorgabe; ist aber selbst eine weitere Änderung der Regeln, und mit dem steigenden CO₂-Preis bleibt offen, welche Heizung sich langfristig lohnt. 2026 mit dem Gebäudemodernisierungsgesetz weitgehend umgesetzt."
+    },
+    {
+      "id": 7037,
+      "name": "Geltende Vorgaben beibehalten, Planungssicherheit bis 2045",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Vermeidet weitere Wechsel der Regeln; die Vorgaben selbst waren stark umstritten, und ob sie Regierungswechsel überdauern, ist offen – 2026 wurden sie grundlegend geändert."
+    },
+    {
+      "id": 7038,
+      "name": "Kommunale Wärmeplanung und Wärmenetze fördern",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Beschleunigt die Wärmepläne, auf die viele Eigentümer warten, und den Bau von Wärmenetzen; planen und bauen müssen die Kommunen, der Bund kann nur Geld und Beratung geben.",
+      "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html"
+    },
+    {
+      "id": 7039,
+      "name": "Modernisierungsumlage für energetische Sanierung abschaffen, Warmmietenneutralität",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schützt Mieterinnen und Mieter vor Mietsteigerungen durch den Heizungstausch; zugleich sinkt der Anreiz für Vermieter, die Heizung zu erneuern, sodass Mieter länger die Kosten alter Heizungen tragen können."
+    },
+    {
+      "id": 7158,
+      "name": "Kommunale Wärmeplanung und Wärmenetze unterstützen: Beratung, Personal, Förderung (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Beschleunigt die Wärmepläne und den Bau von Wärmenetzen, auf die viele Eigentümer warten; das Land kann Kommunen mit Geld und Fachleuten helfen."
+    },
+    {
+      "id": 7159,
+      "name": "Kommunale Wärmeplanung vereinfachen, realistische Vorgaben (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Kann die Planung für kleine Gemeinden beschleunigen; wenn Pläne gröber werden, wissen Eigentümer aber weniger genau, was kommt."
+    },
+    {
+      "id": 7160,
+      "name": "Pflicht zur kommunalen Wärmeplanung abschaffen (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Nimmt Kommunen eine Pflicht ab und Eigentümern das Warten auf einen Plan, schafft aber keine Klarheit, ob ein Wärmenetz kommt. Die Pflicht steht im Bundesrecht; das Land kann nur sein Ausführungsgesetz ändern oder im Bundesrat werben."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Kommunale Wärmeplanung dauerhaft finanzieren, Fernwärmeausbau über Duldungspflichten und Förderprogramme voranbringen.",
+      "zitat": "Kommunale Wärmeplanung: Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+      "ursachen_ids": [
+        1603
+      ],
+      "pruefsumme": "b383e44e94d09168"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Finanzielle Unterstützung für klimaneutrale Maßnahmen bei Neubau und Sanierung.",
+      "zitat": "Fördermittel für Klimaneutralität: Finanzielle Unterstützung wird bereitgestellt, um klimaneutrale Maßnahmen sowohl im Neubau als auch bei der Sanierung umzusetzen.",
+      "ursachen_ids": [
+        1601
+      ],
+      "pruefsumme": "dfeb402cefcee35e"
+    }
+  ]
+}

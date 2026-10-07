@@ -114,6 +114,16 @@
       "begruendung": "Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1"
+    },
+    {
+      "id": 8554,
+      "name": "Energiesteuer auf Kraftstoffe dauerhaft auf den EU-Mindestsatz senken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt Benzin um rund 30 Cent, Diesel um 14 Cent je Liter vor Mehrwertsteuer; 2022 kam die Senkung bei Benzin voll, bei Diesel nur teilweise an. Dauerhaft fehlen rund 12 Mrd. Euro im Jahr; die Abschaffung auf EU-Ebene braucht Einstimmigkeit.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.zew.de/PU84325",
+      "entwurf_herkunft": "blind"
     }
   ],
   "abdeckung": [
@@ -493,6 +503,50 @@
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
           "evidenz": "offen",
           "stand": "2026-10-01",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1501, 1502, 1503, 1504, 1505],
+      "massnahmen": [
+        {
+          "id": 8555,
+          "instrument": 8554,
+          "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene ganz abschaffen.",
+          "ursachen_ids": [1502],
+          "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8556,
+          "beschreibung": "Dieselsteuer schrittweise an die Benzinsteuer angleichen.",
+          "ursachen_ids": [1502],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die Angleichung verteuert Diesel um gut 18 Cent je Liter (mit Mehrwertsteuer rund 22 Cent) und macht das Fahren für Dieselfahrende teurer statt günstiger; rechtlich mit einfachem Gesetz möglich und bringt dem Bund Einnahmen.",
+          "zitat": "Die Dieselsteuer wird schrittweise an die Benzinsteuer angeglichen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=62",
+          "beleg_studie_url": "https://www.umweltbundesamt.de/en/press/pressinformation/environmentally-harmful-subsidies-in-transport",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8557,
+          "instrument": 7015,
+          "beschreibung": "Ausbau der Ladeinfrastruktur für E-Fahrzeuge.",
+          "ursachen_ids": [1505],
+          "zitat": "Ladeinfrastruktur für E-Fahrzeuge: Der Ausbau erleichtert den Umstieg auf klimafreundliche Antriebe.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70",
+          "stand": "2026-10-07",
           "geprueft": false,
           "ki_entwurf": true
         }

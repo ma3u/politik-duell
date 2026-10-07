@@ -1,0 +1,24 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Klimaanpassung wird als Gemeinschaftsaufgabe im Grundgesetz verankert.", "ursachen_ids": [1801], "zitat": "Klimaanpassung wird als Gemeinschaftsaufgabe im Grundgesetz verankert.", "seite": 76 },
+    { "beschreibung": "Naturbasierte Lösungen: Gebäudebegrünung, Entsiegelung, Schwammstadt als zentrales Konzept.", "ursachen_ids": [1804], "ursachen_offen": [1803], "zitat": "Naturbasierte Lösungen wie die Begrünung von Gebäuden sowie die Entsiegelung […] fördern die Klimaresilienz […] Die Schwammstadt wird als zentrales Konzept zur Erhöhung der urbanen Widerstandsfähigkeit etabliert.", "seite": 76 },
+    { "beschreibung": "Ausbau von Hochwasserschutzanlagen und Renaturierung von Uferbereichen.", "ursachen_ids": [1805], "zitat": "Der Ausbau von Hochwasserschutzanlagen und die Renaturierung von Uferbereichen verringern Risiken bei extremen Wetterereignissen.", "seite": 77 },
+    { "beschreibung": "Datengestützte Hitzestrategie mit Hitzeaktionsplänen und Förderprogrammen, gemeinsam mit den Ländern.", "ursachen_ids": [1802], "zitat": "Eine datengestützte Hitzestrategie, die Hitzeaktionspläne und Förderprogramme umfasst, wird in Zusammenarbeit mit den Bundesländern umgesetzt.", "seite": 129 },
+    { "beschreibung": "Stärkere Förderung von Projekten zur Senkung innerstädtischer Temperaturen, etwa Begrünung.", "ursachen_ids": [1803], "zitat": "Projekte, die das Ziel verfolgen, innerstädtische Temperaturen zu senken, werden stärker gefördert. Dazu gehören Begrünung und stadtplanerische Innovationen.", "seite": 129 },
+    { "beschreibung": "Europäischen Emissionshandel (ETS-2) wie geplant 2027 ausweiten.", "ursachen_ids": [1801, 1802], "buendel": "CO₂-Bepreisung und Emissionshandel", "zitat": "Der europäische Emissionshandel (ETS-2) wird wie geplant Anfang 2027 ausgeweitet.", "seite": 60 },
+    { "beschreibung": "Fossile Energieträger in Industrieanlagen bis 2035 befristen; neue Anlagen mit Strom oder Wasserstoff.", "ursachen_ids": [1801, 1802], "buendel": "Industrie und Wasserstoff", "zitat": "Der Einsatz fossiler Energieträger in Industrieanlagen wird bis 2035 befristet, und neue Anlagen müssen klimaneutrale Energieträger wie Strom und Wasserstoff nutzen.", "seite": 61 },
+    { "beschreibung": "CCS für unvermeidbare Industrieemissionen.", "ursachen_ids": [1801, 1802], "buendel": "CO₂-Abscheidung und Negativemissionen", "zitat": "Für unvermeidbare Emissionen, wie in der Zementindustrie, werden CCS-Technologien genutzt.", "seite": 62 },
+    { "beschreibung": "Nationales Sanierungsprogramm für klimaneutrales Bauen und Sanieren öffentlicher Gebäude.", "ursachen_ids": [1801, 1802], "buendel": "Wärme und Gebäude", "zitat": "Ein nationales Sanierungsprogramm macht den öffentlichen Sektor zum Vorbild für klimaneutrales Bauen und Sanieren.", "seite": 96 },
+    { "beschreibung": "Renaturierung und Wiedervernässung von Mooren massiv ausbauen.", "ursachen_ids": [1801, 1802], "buendel": "Natürliche Kohlenstoffspeicher (Wald, Moore, Böden)", "zitat": "Die Renaturierung und Wiedervernässung von Mooren wird massiv ausgebaut, um ihre Funktion als Kohlenstoffsenken zu erhalten und Emissionen zu vermeiden.", "seite": 79 },
+    { "beschreibung": "Subventionen für fossile Energieträger in der Industrie vollständig abbauen.", "ursachen_ids": [1801, 1802], "zitat": "Alle Subventionen, die direkt den Einsatz fossiler Energieträger in der Industrie fördern, werden vollständig abgebaut.", "seite": 62 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1806, "seiten": [19, 93, 94, 130], "grund": "Treffer nur zu Soforthilfe/Eigenverantwortung in anderem Zusammenhang; nichts zu Elementarschadenversicherung." }
+  ]
+}
+
+Protokoll
+Gelesen: S. 60-62, 68, 76-79, 96, 129 (Klimaanpassung, Klimaschutz, Prävention).
+Nicht erfasst: S. 76 Klimaanpassungsfonds (Finanzierung ohne konkreten Zweck, R10); S. 77 Mischwälder (R5 kein Siedlungsbezug); S. 78 Wasserinfrastruktur/Abwasser (kein Starkregenbezug), Aufforstung (weitere Stelle zum Bündel natürliche Kohlenstoffspeicher); S. 79 CCU/CCS-Förderung (weitere Stelle zum CCS-Bündel); S. 68 Wärmeplanung, Geothermie (weitere Stellen zum Bündel Wärme und Gebäude); S. 129 resiliente Krankenhäuser (kein Hitzebezug). Richtung Pflichtversicherung/Elementarschäden: nichts im Programm.

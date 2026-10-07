@@ -1,0 +1,237 @@
+{
+  "pruefsumme": "16a2730690b5d43889f2875ba9c9e66df172bfdce0c75985955cc5d738431168",
+  "thema": {
+    "id": 11,
+    "name": "Preise und Löhne",
+    "ziel": "Menschen können sich mit ihrem Einkommen Lebensmittel und den täglichen Bedarf dauerhaft leisten."
+  },
+  "ursachen": [
+    {
+      "id": 1101,
+      "beschreibung": "Lebensmittelpreise hängen stark an den Energiekosten in Landwirtschaft, Transport, Lagerung und Dünger; nach dem Preisschub ab 2021 steigen sie mit dem Energiepreisschock 2026 voraussichtlich erneut",
+      "ebene": "bund"
+    },
+    {
+      "id": 1102,
+      "beschreibung": "Der Lebensmittelhandel ist stark konzentriert: Vier Handelsgruppen haben rund 87 % des Umsatzes, und die Preisaufschläge in der Lieferkette sind zeitgleich mit der Konzentration gestiegen",
+      "ebene": "bund"
+    },
+    {
+      "id": 1103,
+      "beschreibung": "Die Löhne hielten mit den Preisen lange nicht mit: Die Reallöhne sanken von 2020 bis 2023 und erreichten 2025 erst wieder fast das Niveau von 2019",
+      "ebene": "bund"
+    },
+    {
+      "id": 1104,
+      "beschreibung": "Hohe Steuern und Sozialabgaben auf Arbeit: Bei einem alleinstehenden Durchschnittsverdiener gehen 49,3 % der Arbeitskosten an Staat und Sozialversicherung, der zweithöchste Wert in der OECD (2025)",
+      "ebene": "bund"
+    },
+    {
+      "id": 1105,
+      "beschreibung": "Rund 6,3 Millionen Jobs (16 %) liegen im Niedriglohnbereich, vor allem in Gastgewerbe, Landwirtschaft und Kultur (April 2025)",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6879,
+      "name": "Mehrwertsteuer auf Lebensmittel senken (von 7 auf 5 %)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Senkt die Preise einmalig um knapp 2 %, wenn der Handel die Senkung weitergibt; an den Ursachen der Preissteigerung ändert das nichts. Rechtlich und finanziell ohne große Hürden möglich."
+    },
+    {
+      "id": 6880,
+      "name": "Mehrwertsteuer auf Grundnahrungsmittel abschaffen (0 %)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Senkt die Preise für Grundnahrungsmittel um bis zu 6,5 % und entlastet vor allem Haushalte mit wenig Geld, wenn die Senkung weitergegeben wird; seit 2022 erlaubt das EU-Recht einen Nullsatz. Dagegen spricht der hohe Steuerausfall, und ob der Handel die Senkung vollständig weitergibt, ist umstritten."
+    },
+    {
+      "id": 6881,
+      "name": "Preisbeobachtung oder Preisüberwacher für Lebensmittel",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Macht Preise und Margen entlang der Lieferkette sichtbar und kann Kartellverfahren anstoßen; ob Transparenz allein die Preise senkt, ist kaum untersucht."
+    },
+    {
+      "id": 6882,
+      "name": "Marktbeherrschende Handelskonzerne entflechten",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt an der Konzentration im Lebensmittelhandel an; ob kleinere Händler niedrigere Preise bringen, ist offen. Eine Entflechtung ohne Rechtsverstoß ist verfassungsrechtlich umstritten und dauert Jahre."
+    },
+    {
+      "id": 6883,
+      "name": "Fusionskontrolle und Wettbewerbsrecht stärken",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Kann weitere Konzentration im Handel bremsen, wie es die Monopolkommission empfiehlt; auf die Preise wirkt das erst langfristig und nicht sicher.",
+      "beleg_studie_url": "https://www.monopolkommission.de/publikationen/lebensmittel/s/wettbewerb-in-der-lebensmittellieferkette"
+    },
+    {
+      "id": 6884,
+      "name": "Einkommensteuer für kleine und mittlere Einkommen senken, gegenfinanziert",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Erhöht das Nettoeinkommen von Geringverdienenden und der Mitte direkt; die Gegenfinanzierung über höhere Steuern für hohe Einkommen oder Vermögen ist umsetzbar, aber politisch und rechtlich aufwendig."
+    },
+    {
+      "id": 6885,
+      "name": "Einkommensteuertarif abflachen und Grundfreibetrag erhöhen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Erhöht das Nettoeinkommen fast aller Steuerzahlenden, am stärksten in absoluten Beträgen bei höheren Einkommen; die Kosten sind hoch und die Finanzierung ist nicht geklärt."
+    },
+    {
+      "id": 6886,
+      "name": "Grundfreibetrag stark anheben (auf rund 15.000 Euro bzw. die Armutsgefährdungsschwelle)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Entlastet besonders kleine Einkommen spürbar; die Steuerausfälle lägen im hohen zweistelligen Milliardenbereich, eine Finanzierung ist nicht geklärt."
+    },
+    {
+      "id": 6887,
+      "name": "Sozialabgaben bei 40 % begrenzen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verhindert weitere Beitragssteigerungen, senkt die Abgaben aber nicht; dafür wären Reformen in Rente, Gesundheit und Pflege nötig, die noch offen sind."
+    },
+    {
+      "id": 6888,
+      "name": "Beiträge für Bürgergeldbeziehende aus Steuern statt aus Beiträgen finanzieren",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Senkt die Kranken- und Pflegebeiträge etwas, weil der Bund die Kosten trägt; die Entlastung der Beschäftigten ist gering und belastet den Bundeshaushalt mit rund zehn Milliarden Euro im Jahr."
+    },
+    {
+      "id": 6889,
+      "name": "Mindestlohn auf 15 Euro oder 60 % des Medianlohns anheben",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Erhöht die Löhne im Niedriglohnbereich direkt; Studien zur Einführung 2015 und zur Erhöhung 2022 fanden kaum Jobverluste. Der Bundestag kann die Höhe per Gesetz festlegen, wie 2022 geschehen."
+    },
+    {
+      "id": 6890,
+      "name": "Tarifbindung stärken (Tariftreuegesetz, Allgemeinverbindlichkeit erleichtern)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Wer nach Tarif arbeitet, verdient im Schnitt mehr; Tariftreue greift aber nur bei öffentlichen Aufträgen, und wie stark die Tarifbindung dadurch steigt, ist offen."
+    },
+    {
+      "id": 6891,
+      "name": "Minijobs in sozialversicherungspflichtige Beschäftigung überführen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Minijobs sind überwiegend schlecht bezahlt; ob ihre Umwandlung zu höheren Stundenlöhnen führt oder nur zu mehr Sozialversicherung bei gleichem Netto, ist umstritten."
+    },
+    {
+      "id": 6892,
+      "name": "Steuerermäßigung für Agrardiesel wieder einführen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Senkt die Energiekosten landwirtschaftlicher Betriebe um wenige Hundert Millionen Euro im Jahr; auf die Lebensmittelpreise wirkt das kaum."
+    },
+    {
+      "id": 7228,
+      "name": "Geringqualifizierte zum Berufsabschluss führen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Grundnahrungsmittel wie Brot, Obst und Gemüse von der Mehrwertsteuer befreien, gegenfinanziert über die Erbschaftsteuer",
+      "zitat": "Grundnahrungsmittel wie Brot, Obst und Gemüse werden von der Mehrwertsteuer befreit, um die Grundversorgung für alle erschwinglicher zu machen.",
+      "ursachen_ids": [
+        1101
+      ],
+      "pruefsumme": "f2ce6754695e5944"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Umschulungen und maßgeschneiderte Weiterbildung mit Lohnkostenzuschüssen für Langzeitarbeitslose",
+      "zitat": "Spezielle Programme fördern den Berufswechsel in Berufsfelder mit Fachkräftemangel.",
+      "ursachen_ids": [
+        1105
+      ],
+      "pruefsumme": "deca91519dca88d6"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Grundfreibetrag moderat anheben, um kleine und mittlere Einkommen zu entlasten",
+      "zitat": "Der Grundfreibetrag wird moderat angehoben, um kleine und mittlere Einkommen spürbar zu entlasten.",
+      "ursachen_ids": [
+        1104
+      ],
+      "pruefsumme": "cc99610697d87fd0"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene abschaffen",
+      "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+      "ursachen_ids": [
+        1101
+      ],
+      "pruefsumme": "c1abbb3b30077c39"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Tarifbindung stärken",
+      "zitat": "Die Tarifbindung wird gestärkt.",
+      "ursachen_ids": [
+        1103,
+        1105
+      ],
+      "pruefsumme": "675280d96afba703"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen",
+      "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.",
+      "ursachen_ids": [
+        1103,
+        1105
+      ],
+      "pruefsumme": "e90ef1d0cd25c0ef"
+    }
+  ]
+}

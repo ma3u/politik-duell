@@ -1,0 +1,225 @@
+{
+  "thema_id": 11,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene abschaffen",
+          "ursachen_ids": [
+            1101
+          ],
+          "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Grundnahrungsmittel wie Brot, Obst und Gemüse von der Mehrwertsteuer befreien, gegenfinanziert über die Erbschaftsteuer",
+          "ursachen_ids": [
+            1101
+          ],
+          "zitat": "Grundnahrungsmittel wie Brot, Obst und Gemüse werden von der Mehrwertsteuer befreit, um die Grundversorgung für alle erschwinglicher zu machen.",
+          "seite": 101
+        },
+        {
+          "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen",
+          "ursachen_ids": [
+            1103,
+            1105
+          ],
+          "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Tarifbindung stärken",
+          "ursachen_ids": [
+            1103,
+            1105
+          ],
+          "zitat": "Die Tarifbindung wird gestärkt.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Grundfreibetrag moderat anheben, um kleine und mittlere Einkommen zu entlasten",
+          "ursachen_ids": [
+            1104
+          ],
+          "zitat": "Der Grundfreibetrag wird moderat angehoben, um kleine und mittlere Einkommen spürbar zu entlasten.",
+          "seite": 99
+        },
+        {
+          "beschreibung": "Umschulungen und maßgeschneiderte Weiterbildung mit Lohnkostenzuschüssen für Langzeitarbeitslose",
+          "ursachen_ids": [
+            1105
+          ],
+          "zitat": "Spezielle Programme fördern den Berufswechsel in Berufsfelder mit Fachkräftemangel.",
+          "seite": 120
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1102,
+          "seiten": [
+            53,
+            55,
+            74
+          ],
+          "grund": "Treffer zu Wettbewerb betreffen Wettbewerbsfähigkeit und Unternehmensthemen; nichts zu Lebensmittelhandel, Marktkonzentration oder Preisaufsicht."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1101": {
+      "Energiekosten und Abgaben senken": [
+        "agrardiesel",
+        "energiekosten",
+        "lebensmittelpreis",
+        "nahrungsmittel"
+      ],
+      "Mehrwertsteuer auf Lebensmittel senken": [
+        "mehrwertsteuer",
+        "lebensmittel",
+        "umsatzsteuer"
+      ]
+    },
+    "1102": {
+      "Fusionskontrolle, Preisbeobachtung": [
+        "kartell",
+        "marktmacht",
+        "entflechtung",
+        "preisaufsicht",
+        "preisüberwacher",
+        "übergewinn",
+        "fusionskontrolle"
+      ],
+      "Mehr Wettbewerb": [
+        "wettbewerb",
+        "markteintritt",
+        "lebensmittelhandel"
+      ]
+    },
+    "1103": {
+      "Höhere Löhne, Tarifbindung": [
+        "mindestlohn",
+        "tarifbindung",
+        "tariftreue",
+        "reallohn",
+        "lohnerhöhung"
+      ],
+      "Wachstum und Produktivität": [
+        "wachstum",
+        "produktivität"
+      ]
+    },
+    "1104": {
+      "Steuern und Abgaben senken": [
+        "einkommensteuer",
+        "grundfreibetrag",
+        "sozialabgaben",
+        "sozialversicherungsbeiträge",
+        "kalte progression",
+        "steuertarif",
+        "abgabenlast"
+      ],
+      "Entlastung unten, Gegenfinanzierung oben": [
+        "spitzensteuersatz",
+        "entlastung kleiner einkommen"
+      ]
+    },
+    "1105": {
+      "Mindestlohn, Tarifbindung": [
+        "mindestlohn",
+        "tarifbindung",
+        "niedriglohn",
+        "minijob"
+      ],
+      "Qualifizierung, Aufstieg": [
+        "qualifizierung",
+        "aufstieg",
+        "weiterbildung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5a5244b35d4232a7fafce8a3ea5b30a2c4523d33489950ac9cde5d2d3fd7f853",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "1101": {
+            "Energiekosten und Abgaben senken": {
+              "agrardiesel": 0,
+              "energiekosten": 5,
+              "lebensmittelpreis": 0,
+              "nahrungsmittel": 3
+            },
+            "Mehrwertsteuer auf Lebensmittel senken": {
+              "mehrwertsteuer": 5,
+              "lebensmittel": 7,
+              "umsatzsteuer": 6
+            }
+          },
+          "1102": {
+            "Fusionskontrolle, Preisbeobachtung": {
+              "kartell": 0,
+              "marktmacht": 0,
+              "entflechtung": 0,
+              "preisaufsicht": 0,
+              "preisüberwacher": 0,
+              "übergewinn": 0,
+              "fusionskontrolle": 0
+            },
+            "Mehr Wettbewerb": {
+              "wettbewerb": 77,
+              "markteintritt": 0,
+              "lebensmittelhandel": 0
+            }
+          },
+          "1103": {
+            "Höhere Löhne, Tarifbindung": {
+              "mindestlohn": 9,
+              "tarifbindung": 1,
+              "tariftreue": 0,
+              "reallohn": 0,
+              "lohnerhöhung": 0
+            },
+            "Wachstum und Produktivität": {
+              "wachstum": 8,
+              "produktivität": 0
+            }
+          },
+          "1104": {
+            "Steuern und Abgaben senken": {
+              "einkommensteuer": 9,
+              "grundfreibetrag": 2,
+              "sozialabgaben": 0,
+              "sozialversicherungsbeiträge": 0,
+              "kalte progression": 0,
+              "steuertarif": 0,
+              "abgabenlast": 0
+            },
+            "Entlastung unten, Gegenfinanzierung oben": {
+              "spitzensteuersatz": 2,
+              "entlastung kleiner einkommen": 0
+            }
+          },
+          "1105": {
+            "Mindestlohn, Tarifbindung": {
+              "mindestlohn": 9,
+              "tarifbindung": 1,
+              "niedriglohn": 0,
+              "minijob": 2
+            },
+            "Qualifizierung, Aufstieg": {
+              "qualifizierung": 1,
+              "aufstieg": 2,
+              "weiterbildung": 36
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "thema_id": 27,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Modellstudiengänge für Rettungsfachpersonal ausbauen und dauerhaft etablieren, weitere berufliche und akademische Weiterbildungsmöglichkeiten schaffen.",
+          "ursachen_ids": [
+            2704
+          ],
+          "zitat": "Berufliche Perspektiven erweitern: Die Modellstudiengänge für Rettungsfachpersonal werden ausgebaut und dauerhaft etabliert. Zusätzlich werden weitere berufliche und akademische Weiterbildungsmöglichkeiten geschaffen.",
+          "seite": 128
+        },
+        {
+          "beschreibung": "Heilberufe erhalten Antrags- und Stimmrechte im Gemeinsamen Bundesausschuss.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2705
+          ],
+          "zitat": "Mitbestimmung im Gemeinsamen Bundesausschuss (G-BA): Heilberufe erhalten Antrags- und Stimmrechte im G-BA.",
+          "seite": 128
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2701,
+          "seiten": [
+            127,
+            128
+          ],
+          "grund": "Keine Zusage zu Personalbemessung oder Personalausstattung; Fachkräftemangel nur als Begründung der Notfallreform."
+        },
+        {
+          "ursache": 2703,
+          "seiten": [
+            126,
+            127
+          ],
+          "grund": "Dokumentationsstandards (KDL, ePA) sind Datenstandards, keine Entlastung der Beschäftigten von Dokumentationsaufwand."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2701": {
+      "Personalbemessung verbindlich vorgeben": [
+        "personalbemessung",
+        "personaluntergrenze",
+        "pflegepersonalregelung",
+        "personalschlüssel",
+        "mindestbesetzung",
+        "pflegepersonalbemessung"
+      ],
+      "Aufgaben und Abläufe anders verteilen": [
+        "delegation",
+        "aufgabenverteilung",
+        "entlastung der pflege",
+        "pflegeassistenz",
+        "prozessorganisation",
+        "kompetenzen der pflege"
+      ]
+    },
+    "2702": {
+      "Arbeitszeit begrenzen und Erholung sichern": [
+        "pausenzeiten",
+        "ruhezeit",
+        "arbeitszeitbegrenzung",
+        "dienstplansicherheit",
+        "verlässliche dienstpläne",
+        "springerpool",
+        "nachtdienst"
+      ],
+      "Flexible und selbstgewählte Dienstmodelle": [
+        "wunschdienstplan",
+        "flexible arbeitszeitmodelle",
+        "selbstgewählte schichtmodelle",
+        "familienfreundliche dienstpläne",
+        "teilzeit im gesundheitswesen"
+      ]
+    },
+    "2703": {
+      "Nachweispflichten und Bürokratie verringern": [
+        "dokumentationspflicht",
+        "bürokratieabbau im gesundheitswesen",
+        "bürokratieentlastung pflege",
+        "nachweispflichten",
+        "dokumentationsaufwand"
+      ],
+      "Digitale Dokumentation verbessern": [
+        "digitale dokumentation",
+        "telematikinfrastruktur",
+        "elektronische patientenakte",
+        "sprachgestützte dokumentation",
+        "künstliche intelligenz in der pflege"
+      ]
+    },
+    "2704": {
+      "Löhne und Tarifbindung stärken": [
+        "tarifbindung",
+        "tariflohn",
+        "pflegemindestlohn",
+        "mehr gehalt pflege",
+        "bezahlung pflegekräfte",
+        "allgemeinverbindlich",
+        "pflegezulage"
+      ],
+      "Entlastung und Karriereperspektiven": [
+        "berufliche perspektiven",
+        "aufstiegschancen",
+        "pflegekammer",
+        "anerkennung des pflegeberufs",
+        "weiterbildung pflege"
+      ]
+    },
+    "2705": {
+      "Mitsprache und Mitbestimmung stärken": [
+        "mitbestimmung",
+        "betriebsrat",
+        "mitsprache",
+        "selbstverwaltung der pflege",
+        "pflegekammer"
+      ],
+      "Führung und psychosoziale Unterstützung": [
+        "supervision",
+        "psychosoziale unterstützung",
+        "betriebliche gesundheitsförderung",
+        "führungsqualität",
+        "gesundheit der beschäftigten"
+      ]
+    },
+    "2706": {
+      "Sprachmittlung bereitstellen": [
+        "dolmetscher",
+        "sprachmittlung",
+        "videodolmetschen",
+        "sprachmittler im krankenhaus"
+      ],
+      "Berufsbezogene Sprachkompetenz fördern": [
+        "berufsbezogene sprachkurse",
+        "fachsprache",
+        "sprachkompetenz pflegekräfte",
+        "deutschkenntnisse pflege"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "2b9b1a53063a08877d997f1b5768437861e7483cea5c745f100b2706e5bf93ee",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "2701": {
+            "Personalbemessung verbindlich vorgeben": {
+              "personalbemessung": 0,
+              "personaluntergrenze": 0,
+              "pflegepersonalregelung": 0,
+              "personalschlüssel": 0,
+              "mindestbesetzung": 0,
+              "pflegepersonalbemessung": 0
+            },
+            "Aufgaben und Abläufe anders verteilen": {
+              "delegation": 0,
+              "aufgabenverteilung": 0,
+              "entlastung der pflege": 0,
+              "pflegeassistenz": 0,
+              "prozessorganisation": 0,
+              "kompetenzen der pflege": 0
+            }
+          },
+          "2702": {
+            "Arbeitszeit begrenzen und Erholung sichern": {
+              "pausenzeiten": 0,
+              "ruhezeit": 2,
+              "arbeitszeitbegrenzung": 0,
+              "dienstplansicherheit": 0,
+              "verlässliche dienstpläne": 0,
+              "springerpool": 0,
+              "nachtdienst": 0
+            },
+            "Flexible und selbstgewählte Dienstmodelle": {
+              "wunschdienstplan": 0,
+              "flexible arbeitszeitmodelle": 1,
+              "selbstgewählte schichtmodelle": 0,
+              "familienfreundliche dienstpläne": 0,
+              "teilzeit im gesundheitswesen": 0
+            }
+          },
+          "2703": {
+            "Nachweispflichten und Bürokratie verringern": {
+              "dokumentationspflicht": 0,
+              "bürokratieabbau im gesundheitswesen": 0,
+              "bürokratieentlastung pflege": 0,
+              "nachweispflichten": 0,
+              "dokumentationsaufwand": 0
+            },
+            "Digitale Dokumentation verbessern": {
+              "digitale dokumentation": 0,
+              "telematikinfrastruktur": 0,
+              "elektronische patientenakte": 0,
+              "sprachgestützte dokumentation": 0,
+              "künstliche intelligenz in der pflege": 0
+            }
+          },
+          "2704": {
+            "Löhne und Tarifbindung stärken": {
+              "tarifbindung": 1,
+              "tariflohn": 0,
+              "pflegemindestlohn": 0,
+              "mehr gehalt pflege": 0,
+              "bezahlung pflegekräfte": 0,
+              "allgemeinverbindlich": 0,
+              "pflegezulage": 0
+            },
+            "Entlastung und Karriereperspektiven": {
+              "berufliche perspektiven": 2,
+              "aufstiegschancen": 0,
+              "pflegekammer": 0,
+              "anerkennung des pflegeberufs": 0,
+              "weiterbildung pflege": 0
+            }
+          },
+          "2705": {
+            "Mitsprache und Mitbestimmung stärken": {
+              "mitbestimmung": 15,
+              "betriebsrat": 0,
+              "mitsprache": 0,
+              "selbstverwaltung der pflege": 0,
+              "pflegekammer": 0
+            },
+            "Führung und psychosoziale Unterstützung": {
+              "supervision": 0,
+              "psychosoziale unterstützung": 1,
+              "betriebliche gesundheitsförderung": 0,
+              "führungsqualität": 0,
+              "gesundheit der beschäftigten": 0
+            }
+          },
+          "2706": {
+            "Sprachmittlung bereitstellen": {
+              "dolmetscher": 0,
+              "sprachmittlung": 0,
+              "videodolmetschen": 0,
+              "sprachmittler im krankenhaus": 0
+            },
+            "Berufsbezogene Sprachkompetenz fördern": {
+              "berufsbezogene sprachkurse": 0,
+              "fachsprache": 0,
+              "sprachkompetenz pflegekräfte": 0,
+              "deutschkenntnisse pflege": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

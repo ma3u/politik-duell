@@ -1,0 +1,118 @@
+{
+  "thema_id": 13,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Gezielte Förderung und Subventionen für den Internetausbau in ländlichen Regionen.",
+          "ursachen_ids": [
+            1301
+          ],
+          "zitat": "Subventionen für ländliche Regionen: Digitale Fairness wird durch gezielte Förderung gewährleistet.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Glasfaserausbau beschleunigen: Hürden und Genehmigungsverfahren abbauen, Koordination von Bund, Ländern und Kommunen verbessern.",
+          "ursachen_ids": [
+            1301
+          ],
+          "zitat": "Beschleunigter Ausbau von Glasfasernetzen: Bürokratische Hürden werden abgebaut und Genehmigungsverfahren vereinfacht. Eine bessere Koordination zwischen Bund, Ländern und Kommunen garantiert den zügigen und nachhaltigen Ausbau.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Anbieter sollen Netzinfrastruktur stärker gemeinsam nutzen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1302
+          ],
+          "zitat": "Ressourceneffizienz durch Infrastruktur-Sharing: Anbietende nutzen stärker gemeinsame Infrastruktur, um Nachhaltigkeit zu fördern.",
+          "seite": 72
+        }
+      ],
+      "nicht_erfasst": []
+    }
+  ],
+  "suchbegriffe": {
+    "1301": {
+      "Staatlicher oder kommunaler Ausbau, mehr Förderung": [
+        "glasfaser",
+        "breitband",
+        "gigabit",
+        "weiße flecken",
+        "förderung",
+        "kommunaler ausbau"
+      ],
+      "Förderung zielgenauer, privater Ausbau zuerst": [
+        "eigenwirtschaftlich",
+        "privater ausbau",
+        "überbau",
+        "digitale infrastruktur",
+        "internet"
+      ]
+    },
+    "1302": {
+      "Versorgungsauflagen, staatliche Masten": [
+        "mobilfunk",
+        "funkloch",
+        "5g",
+        "4g",
+        "versorgungsauflage",
+        "masten",
+        "mindestbandbreite"
+      ],
+      "Schnellere Genehmigung, Mitnutzung, Roaming": [
+        "roaming",
+        "mitnutzung",
+        "genehmigung",
+        "standort"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "903fd69ab2f17a5c6af1328ade2e8fd2775821a985b9baaeb7a60e9b7c6a7b06",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "1301": {
+            "Staatlicher oder kommunaler Ausbau, mehr Förderung": {
+              "glasfaser": 2,
+              "breitband": 0,
+              "gigabit": 0,
+              "weiße flecken": 0,
+              "förderung": 84,
+              "kommunaler ausbau": 0
+            },
+            "Förderung zielgenauer, privater Ausbau zuerst": {
+              "eigenwirtschaftlich": 0,
+              "privater ausbau": 0,
+              "überbau": 0,
+              "digitale infrastruktur": 6,
+              "internet": 8
+            }
+          },
+          "1302": {
+            "Versorgungsauflagen, staatliche Masten": {
+              "mobilfunk": 1,
+              "funkloch": 0,
+              "5g": 5,
+              "4g": 1,
+              "versorgungsauflage": 0,
+              "masten": 0,
+              "mindestbandbreite": 0
+            },
+            "Schnellere Genehmigung, Mitnutzung, Roaming": {
+              "roaming": 0,
+              "mitnutzung": 0,
+              "genehmigung": 10,
+              "standort": 11
+            }
+          }
+        }
+      }
+    ]
+  }
+}

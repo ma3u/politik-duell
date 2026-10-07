@@ -1,0 +1,198 @@
+{
+  "thema_id": 8,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Öffentlichen Nahverkehr zuverlässig, barrierefrei und dicht getaktet ausbauen",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "ÖPNV als Alternative: Öffentlicher Nahverkehr wird zuverlässig, barrierefrei und eng getaktet ausgebaut.",
+          "seite": 69
+        },
+        {
+          "beschreibung": "Bedarfsgesteuerte Rufbusse und Verzahnung von Nahverkehr und Individualverkehr im ländlichen Raum",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Flexible ÖPNV-Angebote: On-Demand-Rufbusse und eine enge Verzahnung von öffentlichem Nahverkehr mit dem Individualverkehr stärken nachhaltige Mobilität im ländlichen Raum.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Deutschlandtakt sowie Ausbau und Modernisierung des Schienennetzes vorantreiben",
+          "ursachen_ids": [
+            802
+          ],
+          "zitat": "Ausbau des Schienennetzes: Der Deutschlandtakt sowie der Ausbau und die Modernisierung des Schienennetzes werden vorangetrieben.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Netz und Betrieb der Bahn entflechten; Bundeskompetenzzentrum steuert die Netzentwicklung",
+          "ursachen_ids": [
+            802
+          ],
+          "zitat": "Restrukturierung der Deutschen Bahn: Netz und Betrieb werden entflochten und ein neues Bundeskompetenzzentrum steuert die Netzentwicklung.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Deutschlandticket sichern und weiterentwickeln",
+          "ursachen_ids": [
+            804
+          ],
+          "zitat": "Deutschlandticket: Das Deutschlandticket wird gesichert und weiterentwickelt.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Kosten für Semestertickets übernehmen",
+          "ursachen_ids": [
+            804
+          ],
+          "zitat": "Semestertickets und Wohnen: Die Kosten für Semestertickets werden übernommen.",
+          "seite": 106
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "801": {
+      "Mindestangebot, mehr Geld": [
+        "öpnv",
+        "nahverkehr",
+        "regionalisierungsmittel",
+        "mobilitätsgarantie",
+        "takt",
+        "ländlicher raum",
+        "busverkehr"
+      ],
+      "Rufbusse, On-Demand, autonomes Fahren": [
+        "rufbus",
+        "on-demand",
+        "autonomes fahren",
+        "bürgerbus"
+      ]
+    },
+    "802": {
+      "Geld und Fonds für die Schiene": [
+        "schiene",
+        "schienennetz",
+        "deutsche bahn",
+        "infrago",
+        "sanierung",
+        "infrastrukturfonds"
+      ],
+      "Netz und Betrieb trennen, Steuerung durch den Bund": [
+        "trennung von netz und betrieb",
+        "bahnreform",
+        "eigentümer",
+        "steuerung"
+      ]
+    },
+    "803": {
+      "Fahrpersonal gewinnen": [
+        "busfahrer",
+        "fahrermangel",
+        "fahrpersonal",
+        "berufskraftfahrer",
+        "führerschein",
+        "lokführer",
+        "tarif"
+      ]
+    },
+    "804": {
+      "Tickets günstiger": [
+        "deutschlandticket",
+        "ticket",
+        "fahrpreis",
+        "sozialticket",
+        "azubiticket",
+        "schülerticket",
+        "kostenlos",
+        "nulltarif",
+        "fahrscheinlos",
+        "9-euro",
+        "mehrwertsteuer im nahverkehr"
+      ],
+      "Preis an Kosten koppeln": [
+        "ticketpreis",
+        "finanzierung des deutschlandtickets"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "3779fe491b55bc3374e36909f0f9feea54d2daad4c243ab0ccb1844387406a73",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "801": {
+            "Mindestangebot, mehr Geld": {
+              "öpnv": 5,
+              "nahverkehr": 3,
+              "regionalisierungsmittel": 0,
+              "mobilitätsgarantie": 0,
+              "takt": 13,
+              "ländlicher raum": 1,
+              "busverkehr": 0
+            },
+            "Rufbusse, On-Demand, autonomes Fahren": {
+              "rufbus": 1,
+              "on-demand": 1,
+              "autonomes fahren": 0,
+              "bürgerbus": 0
+            }
+          },
+          "802": {
+            "Geld und Fonds für die Schiene": {
+              "schiene": 9,
+              "schienennetz": 2,
+              "deutsche bahn": 0,
+              "infrago": 0,
+              "sanierung": 6,
+              "infrastrukturfonds": 2
+            },
+            "Netz und Betrieb trennen, Steuerung durch den Bund": {
+              "trennung von netz und betrieb": 0,
+              "bahnreform": 0,
+              "eigentümer": 0,
+              "steuerung": 11
+            }
+          },
+          "803": {
+            "Fahrpersonal gewinnen": {
+              "busfahrer": 0,
+              "fahrermangel": 0,
+              "fahrpersonal": 0,
+              "berufskraftfahrer": 0,
+              "führerschein": 0,
+              "lokführer": 0,
+              "tarif": 1
+            }
+          },
+          "804": {
+            "Tickets günstiger": {
+              "deutschlandticket": 2,
+              "ticket": 6,
+              "fahrpreis": 0,
+              "sozialticket": 0,
+              "azubiticket": 0,
+              "schülerticket": 0,
+              "kostenlos": 9,
+              "nulltarif": 0,
+              "fahrscheinlos": 0,
+              "9-euro": 0,
+              "mehrwertsteuer im nahverkehr": 0
+            },
+            "Preis an Kosten koppeln": {
+              "ticketpreis": 0,
+              "finanzierung des deutschlandtickets": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

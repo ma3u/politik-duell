@@ -1,0 +1,23 @@
+{
+  "blind_pruefsumme": "2f13c27b7c3bd0b0983c2c516d4322a00f526583c00d58fab4945622f1b5c543",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 6110, "ursachen": [603] },
+    { "kennung": "M02", "instrument": 6108, "ursachen": [606] },
+    { "kennung": "M03", "instrument": 6108, "ursachen": [606] },
+    { "kennung": "M04", "instrument": 6101, "ursachen": [603] },
+    { "kennung": "M05", "instrument": 6107, "ursachen": [603] },
+    { "kennung": "M06", "instrument": 6109, "ursachen": [605] },
+    { "kennung": "M07", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Beratung kann Anhörungen vorbereiten und Fehlentscheidungen vermeiden; die BAMF-Evaluation 2026 konnte eine Wirkung auf Verfahrensdauer und Klagen mangels Daten nicht messen. Der Bund fördert die Beratung seit 2023 (§ 12a AsylG).", "evidenz": "offen", "beleg_studie_url": "https://www.asyl.net/view/evaluation-der-behoerdenunabhaengigen-asylverfahrensberatung" }, "ursachen": [602] },
+    { "kennung": "M08", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Spezialisierte Asylkammern können Verfahren beschleunigen (NRW meldet kürzere Dauer, zusammen mit mehr Personal); § 83 AsylG sieht sie aber schon vor, viele Gerichte haben sie. Einrichtung und Richterstellen liegen bei den Ländern.", "evidenz": "offen" }, "ursachen": [602] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; keine offenen Ursachen in der Liste, keine Maßnahme ohne Ursache.
+- M01 (Arbeitserlaubnis ab Tag 1) dem Instrument 6110 zugeordnet; Forschungsstand gestützt durch Marbach/Hainmueller/Hangartner 2018 (https://pmc.ncbi.nlm.nih.gov/articles/PMC6155022): sieben Monate längeres Arbeitsverbot senkte die Beschäftigung fünf Jahre später um rund 20 Prozentpunkte.
+- M02 und M03 (Bleiberecht nach Arbeit bzw. nach drei Jahren nicht vollzogener Abschiebung) beide Instrument 6108 (Spurwechsel/Bleiberecht für Geduldete); nur Ursache 606, nicht 604 – sie beenden Duldungen, nicht Rückführungen.
+- M04 (pauschale Anerkennung nach Berufsbild) zu 6101 gestellt, obwohl sie weiter geht als „vereinfachen“: Schwer fiel die Frage, ob eine pauschale Gleichwertigkeit bei reglementierten Berufen (Länderrecht, Qualitätsanforderungen) eine eigene, niedrigere Umsetzbarkeit verdient; 2/2 erschien passend.
+- M06 nur 605 (Dublin), nicht 601: 601 ist eine Landes-Ursache, und die EU-Verteilung wirkt dort nur mittelbar.
+- M08 schwierig: Die NRW-Erfahrung (Durchschnitt 16,4 auf 12,2 Monate, Evaluation des Justizministeriums, https://www.land.nrw/pressemitteilung/massnahmen-zur-beschleunigung-der-verwaltungsgerichtlichen-asylverfahren) vermischt Spezialisierung nach Herkunftsländern mit Personalaufbau und ist eine interne Auswertung, daher „offen“ und Wirksamkeit 1, zumal § 83 AsylG Spezialkammern bereits als Soll-Vorschrift enthält. Kein beleg_studie_url, weil die Quelle keine Studie ist.
+- M07: Die Asylverfahrensberatung existiert seit 2023 mit Bundesförderung; die BAMF-Evaluation (Forschungsbericht 54, 2026) fand nur geringe Effekte auf Klageverhalten und konnte keine Wirkungsanalyse durchführen.

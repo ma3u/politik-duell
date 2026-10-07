@@ -1,0 +1,81 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Teile der Netzentgelte aus dem Bundeshaushalt decken",
+      "ursachen_ids": [
+        301
+      ],
+      "zitat": "Teile der umlagefinanzierten Netzentgelte werden daher zukünftig aus dem Bundeshaushalt gedeckt.",
+      "seite": 53
+    },
+    {
+      "beschreibung": "Netzentgelte verursachungsgerecht gestalten, Investitionen nicht mehr allein darüber finanzieren",
+      "ursachen_ids": [
+        301
+      ],
+      "zitat": "Netzentgelte werden verursachungsgerecht gestaltet und Investitionen in Energieinfrastruktur werden nicht mehr ausschließlich durch Netzentgelte",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Stromsteuer auf das europäische Minimum senken",
+      "ursachen_ids": [
+        302
+      ],
+      "zitat": "Die Stromsteuer wird auf das europäische Minimum reduziert.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Einen Teil der CO₂-Einnahmen als direkte Zahlungen an die Menschen zurückgeben",
+      "ursachen_ids": [
+        302
+      ],
+      "zitat": "Einnahmen aus CO₂-Steuern und dem Emissionshandel werden künftig zu mindestens 33 % über direkte Zahlungen an die Menschen",
+      "seite": 60
+    },
+    {
+      "beschreibung": "Strombedarf bis 2035 durchgehend vollständig aus erneuerbaren Energien decken",
+      "ursachen_ids": [
+        304
+      ],
+      "zitat": "Im Jahr 2035 werden durchgehend 100 % des Strombedarfs aus erneuerbaren Energien gedeckt.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Hemmnisse für Energiespeicher abbauen, damit Speicher wirtschaftlich attraktiv werden",
+      "ursachen_ids": [
+        304
+      ],
+      "zitat": "Eine Regulierung von Energiespeichern, die sich eng am europäischen Rechtsrahmen orientiert, und der Abbau wirtschaftlicher und rechtlicher Hemmnisse",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Fernwärmeausbau und kommunale Wärmeplanung durch Förderprogramme und Duldungspflichten fördern",
+      "ursachen_ids": [
+        305
+      ],
+      "zitat": "Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+      "seite": 68
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 303,
+      "seiten": [
+        13,
+        43,
+        44,
+        61,
+        68,
+        96
+      ],
+      "grund": "Treffer betreffen Unabhängigkeit der Justiz, China-Abhängigkeit, Lieferketten; Energieimport nur als Nebensatz zur Wärmewende (S. 68), keine Zusage zu Lieferländern oder Verbrauch; S. 96 nur Effizienzstandards öffentlicher Einrichtungen."
+    }
+  ]
+}
+
+Protokoll
+Gelesen: S. 52-54, 60-61, 65-69; Fundstellen S. 96 u. a. laut Auftrag (Treffer außerhalb Energie: Unabhängigkeit/Import = Fehltreffer, übersprungen).
+Nicht erfasst: S. 53 Energiesteuer auf EU-Minimum (Energiesteuer, nicht Strom/Gas-Abgabe konkret; ähnlich S. 67 Stromsteuer erfasst). S. 66 Differenzverträge für EE, Smart-Meter, Netzausbau-Verfahren (Planung/Genehmigung, keine Kostenzusage zu 301). S. 68 Geothermie/Abwärme (weitere Wärmewende-Punkte, gleiches Thema wie erfasste Fernwärme). S. 60 ETS-2-Ausweitung: erhöht Preis, keine Entlastung; kein Eintrag.
+Ursache 303: keine Maßnahme, S. 43, 44, 72 (Abhängigkeit von China/digital, kein Energieimport); S. 96 nur Effizienzstandards öffentlicher Einrichtungen.

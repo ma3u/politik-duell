@@ -1,0 +1,73 @@
+{
+  "blind_pruefsumme": "2f13c27b7c3bd0b0983c2c516d4322a00f526583c00d58fab4945622f1b5c543",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": 6110,
+      "ursachen": [
+        603
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 6108,
+      "ursachen": [
+        606
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 6108,
+      "ursachen": [
+        606
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": 6101,
+      "ursachen": [
+        603
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": 6107,
+      "ursachen": [
+        603
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": 6109,
+      "ursachen": [
+        605
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Beratung kann Anhörungen vorbereiten und Fehlentscheidungen vermeiden; die BAMF-Evaluation 2026 konnte eine Wirkung auf Verfahrensdauer und Klagen mangels Daten nicht messen. Der Bund fördert die Beratung seit 2023 (§ 12a AsylG).",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.asyl.net/view/evaluation-der-behoerdenunabhaengigen-asylverfahrensberatung"
+      },
+      "ursachen": [
+        602
+      ]
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Spezialisierte Asylkammern können Verfahren beschleunigen (NRW meldet kürzere Dauer, zusammen mit mehr Personal); § 83 AsylG sieht sie aber schon vor, viele Gerichte haben sie. Einrichtung und Richterstellen liegen bei den Ländern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        602
+      ]
+    }
+  ]
+}

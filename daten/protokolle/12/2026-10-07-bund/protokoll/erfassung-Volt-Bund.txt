@@ -1,0 +1,20 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Elektronische, streckenabhängige Autobahnmaut, deren Einnahmen Unterhalt und Ausbau der Autobahnen finanzieren sollen", "ursachen_ids": [1201], "zitat": "Autobahnmaut: Analog zu anderen Infrastrukturabgaben wie Strom, Mobilfunk oder Schiene leisten diejenigen, die die Autobahnen nutzen, einen Beitrag über elektronisch erhobene Mautgebühren, die sich nach Entfernung und Emissionsklasse richten.", "seite": 71 },
+    { "beschreibung": "Schuldenbremse reformieren: Nettoinvestitionen unter anderem in Infrastruktur werden ausgenommen, Defizitgrenze steigt", "ursachen_ids": [1201], "zitat": "Goldene Regel Plus: Zukunftsorientierte Nettoinvestitionen in Bereiche wie Infrastruktur, […] Bildung, Klimaschutz und Digitalisierung werden von der Schuldenbremse ausgenommen, um langfristig nachhaltiges Wachstum und Fortschritt zu sichern.", "seite": 22 },
+    { "beschreibung": "Planungs- und Genehmigungsverfahren für Infrastrukturprojekte vereinfachen und auf höchstens drei Monate begrenzen", "ursachen_ids": [1201], "ursachen_offen": [1203], "zitat": "Baugenehmigungen: Planungs- und Genehmigungsverfahren für Industrieanlagen und Infrastrukturprojekte werden vereinfacht und sollen künftig spätestens nach drei Monaten abgeschlossen sein.", "seite": 53 },
+    { "beschreibung": "Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um Kommunalfinanzen zu stärken", "ursachen_ids": [1202], "zitat": "Moderne Kommunalfinanzierung: Die Gewerbesteuer wird aufkommensneutral und konjunkturunabhängig ersetzt und die Konzessionsabgabenverordnung grundlegend reformiert, um die Kommunalfinanzen auf robuste Füße zu stellen.", "seite": 15 },
+    { "beschreibung": "Sichere Radwege und Fahrradstraßen ausbauen", "ursachen_ids": [1204], "zitat": "Fahrradnutzung: Attraktive, sichere Radwege, der Ausbau von Fahrradstraßen, Abstellmöglichkeiten und Sharing-Angebote fördern eine aktive Mobilität.", "seite": 69 },
+    { "beschreibung": "Bundesweit Tempo 30 innerorts sowie Tempo 80 auf Landstraßen", "ursachen_ids": [1204], "zitat": "Bundesweite Tempolimits: Tempo 120 auf Autobahnen, Tempo 80 auf Landstraßen und Tempo 30 innerorts erhöhen die Verkehrssicherheit, reduzieren CO₂-Emissionen, schützen schwächere Verkehrsteilnehmende und reduzieren die Lärmbelastung.", "seite": 69 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1203, "seiten": [41, 54, 97, 53], "grund": "Nur Vergaberecht allgemein (S. 54, ohne Bezug zu Bau) und Bauvorschriften für Wohnungsbau (S. 97); Verfahren für Infrastrukturprojekte (S. 53) bei 1201 erfasst, ersatzweise offen. Kein Personal in Bauverwaltungen." }
+  ]
+}
+
+Protokoll
+Gelesen: Kapitel Infrastruktur (S. 64-72), Mobilität, Staatsreform/Kommunen (S. 15), Haushalt (S. 22-23), Bürokratie (S. 53-54), Bauen (S. 97), Investitionen (S. 65-66).
+Nicht erfasst: S. 54 Modernisiertes Vergaberecht (allgemein, ohne Bezug zu Bauvorhaben); S. 65 Infrastrukturfonds (fördert private Investitionen, kein Erhalt, Prüfauftrag-nah); S. 65 "Massive Investitionen" (Leitbild/Priorisierung ohne Erhaltsbezug; Straßen nicht genannt); S. 97 Genehmigungsverfahren Wohnungsbau (anderer Zusammenhang); S. 69 15-Minuten-Stadt (Leitbild).
+Keine Maßnahme zu Helm/Training/Rücksicht (1204): Treffer "rücksicht" sind nur "berücksichtigen".

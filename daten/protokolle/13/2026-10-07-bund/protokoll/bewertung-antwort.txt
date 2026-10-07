@@ -1,0 +1,17 @@
+{
+  "blind_pruefsumme": "e0abebe2aa83073e021d6baa21fc50f984665a614ed9f73612f329f4792bc8bf",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Gemeinsam genutzte Masten senken Kosten und können Funklöcher schließen (Großbritannien: Shared Rural Network); dort wirkte Sharing aber mit Versorgungsauflagen und Staatsgeld zusammen, hier bleibt es unverbindlich und zielt auf Nachhaltigkeit.", "evidenz": "gemischt", "beleg_studie_url": "https://www.gov.uk/government/publications/shared-rural-network-srn-progress-update-september-2024/shared-rural-network-srn-progress-update-september-2024" }, "ursachen": [1302] },
+    { "kennung": "M02", "instrument": 6966, "ursachen": [1301] },
+    { "kennung": "M03", "instrument": 6967, "ursachen": [1301] }
+  ]
+}
+
+Hinweise:
+- Bestätigt: M02 -> 1301, M03 -> 1301.
+- Offen entschieden: M01 -> 1302 übernommen. Das Zitat begründet Infrastruktur-Sharing mit Nachhaltigkeit, der Lösungsweg (gemeinsame Masten, Rechtsgrundlage für Mitnutzung/lokales Roaming in § 106 TKG) setzt aber an der Wirtschaftlichkeit der Versorgung in Funklöchern an. Deshalb nur Wirksamkeit 1: unverbindlich, ohne Gebiet oder Auflage.
+- Keine Maßnahme ohne Ursache.
+- M02 entspricht Instrument 6966 (Genehmigungen vereinfachen, Koordination); M03 entspricht 6967 (gezielte Förderung, wo sich Ausbau nicht lohnt).
+- Quelle von 6967 (WIK-Kurzstudie 2026): Das PDF ließ sich mit dem Werkzeug nicht als Text lesen; Existenz und Thema (Anreizwirkung der Gigabitförderung auf eigenwirtschaftlichen Ausbau) per Suche bestätigt. Berichte über Überzeichnung und Verdrängungssorgen (ZfK) passen zur Einstufung "gemischt"; ich verweise auf das vorhandene Instrument ohne Abweichung.
+- Schwierig: M01 – ob eine nachhaltigkeitsbegründete Sharing-Zusage als Maßnahme gegen Funklöcher zählt. Die britische Erfahrung (4G-Flächenabdeckung durch mindestens einen Anbieter von 91 % auf rund 95 %) beruht auf Sharing plus Versorgungsauflagen plus öffentlicher Finanzierung, nicht auf Sharing allein.

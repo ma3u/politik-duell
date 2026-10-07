@@ -83,7 +83,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (8449, 33, 17, 'MV', 'Familienbildungs- und Beratungsangebote ausbauen, die Eltern in der Medienerziehung stärken und Orientierung im digitalen Alltag geben.', '{3303}', 8392, 2, 3, null, 'Setzt direkt bei den Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Belastbare Daten zu reinen Elternangeboten fehlen, und es erreichen vor allem interessierte Eltern.', 'https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=12', 'https://europepmc.org/article/MED/40549948', 'gemischt', '2026-10-06', false, true, 'blind'),
   (8450, 33, 17, 'MV', 'Präventionsangebote für Kinder und Jugendliche ausbauen, die auch Medienkompetenz stärken.', '{3303}', 8389, 1, 3, null, 'Schulische Programme senkten problematische Nutzung deutlich, Bildschirmzeit kaum (Metaanalyse, 34 Studien, Verzerrung möglich). Allgemeine Medienbildung setzt nur indirekt an der Begleitung durch Eltern an.', 'https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=61', 'https://europepmc.org/article/MED/40549948', 'gemischt', '2026-10-06', false, true, 'blind'),
   (8451, 33, 17, 'MV', 'Medienkompetenz an weiterführenden Schulen vermitteln, in der Grundschule ohne digitale Endgeräte lernen.', '{3303}', 8389, 1, 3, null, 'Schulische Programme senkten problematische Nutzung deutlich, Bildschirmzeit kaum (Metaanalyse, 34 Studien, Verzerrung möglich). Allgemeine Medienbildung setzt nur indirekt an der Begleitung durch Eltern an.', 'https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=47', 'https://europepmc.org/article/MED/40549948', 'gemischt', '2026-10-06', false, true, 'blind'),
-  (8452, 33, 17, 'ST', 'Verbindliches Smartphone-Verbot im Schulalltag, um Ablenkung und digitale Abhängigkeiten zu verringern.', '{3302}', 8387, 2, 3, null, 'Dafür: In England, Florida und Indien stiegen die Noten leicht bis moderat, Ablenkung sank. Dagegen: In Florida, Schweden und England fanden Studien keine Effekte auf Noten oder Wohlbefinden; Abendnutzung bleibt unberührt.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=45', 'https://world-education-blog.org/2025/12/15/are-phone-bans-working/', 'gemischt', '2026-10-06', false, true, 'blind');
+  (8452, 33, 17, 'ST', 'Verbindliches Smartphone-Verbot im Schulalltag, um Ablenkung und digitale Abhängigkeiten zu verringern.', '{3302}', 8387, 2, 3, null, 'Dafür: In England, Florida und Indien stiegen die Noten leicht bis moderat, Ablenkung sank. Dagegen: In Florida, Schweden und England fanden Studien keine Effekte auf Noten oder Wohlbefinden; Abendnutzung bleibt unberührt.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=45', 'https://world-education-blog.org/2025/12/15/are-phone-bans-working/', 'gemischt', '2026-10-06', false, true, 'blind'),
+  (8595, 33, 18, null, 'Manipulative Gestaltung digitaler Angebote (Dark Patterns) und algorithmische Beeinflussung werden gesetzlich geregelt.', '{3301}', null, 2, 1, null, 'Setzt direkt an belohnungs- und suchtfördernden Designs an, die eine Prüfung trotz DSA auf allen großen Plattformen fand. Dagegen: Wirkung auf die Nutzung kaum untersucht; DSA und Verbraucherrecht sind EU-weit harmonisiert, nationale Regeln kaum möglich.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=27', 'https://www.vzbv.de/en/social-media-platforms-failing-adequately-protect-minors', 'offen', '2026-10-07', false, true, 'blind'),
+  (8596, 33, 18, null, 'Aufsicht über digitale Dienste einschließlich des digitalen Jugendschutzes wird bei der Bundesnetzagentur gebündelt.', '{3301}', 8394, 1, 3, null, 'Der DSA verpflichtet Plattformen zu Risikoprüfungen auch zu Minderjährigen; die Wirkung auf Likes- und Belohnungsdesign ist bisher kaum untersucht. Umsetzung durch den Bund ist möglich.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=25', null, 'offen', '2026-10-07', false, true, 'blind'),
+  (8597, 33, 18, null, 'Schulungen für Eltern zu Chancen und Risiken der Digitalisierung.', '{3303}', null, 2, 2, null, 'Setzt direkt bei der Begleitung durch Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Dagegen: reine Elternangebote kaum belegt, sie erreichen vor allem Interessierte; Elternbildung tragen Länder und Kommunen, der Bund kann fördern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=113', 'https://real.mtak.hu/222946', 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -107,7 +110,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (8433, 33),
   (8444, 33),
   (8445, 33),
-  (8447, 33);
+  (8447, 33),
+  (8595, 33),
+  (8597, 33);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (33, 11, null, 'massnahmen', null, '2026-10-06', true, '{3301,3302,3303}'),
@@ -137,6 +142,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (33, 17, null, 'massnahmen', null, '2026-10-06', true, '{3301,3302,3303}'),
   (33, 17, 'BE', 'massnahmen', null, '2026-10-06', true, '{3302,3303}'),
   (33, 17, 'MV', 'massnahmen', null, '2026-10-06', true, '{3302,3303}'),
-  (33, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{3302,3303}');
+  (33, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{3302,3303}'),
+  (33, 18, null, 'massnahmen', null, '2026-10-07', true, '{3301,3302,3303}');
 
 commit;

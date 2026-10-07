@@ -1,0 +1,92 @@
+{
+  "blind_pruefsumme": "65a5d57fb9cb99573ea890735bdc54469e13e07e1f07af24b6cb5bf2ee826a8b",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Simulationen zeigen, dass die Kopplung den Beitragsanstieg spürbar dämpft und die Beschäftigung erhöht; Menschen mit geringerer Lebenserwartung (oft Geringverdienende) verlieren überproportional Rentenjahre. Per Bundesgesetz ohne Mehrkosten umsetzbar.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.bundesbank.de/de/aufgaben/themen/monatsbericht-wie-rentenreformen-wirken-koennten--892950"
+      },
+      "ursachen": [
+        701
+      ]
+    },
+    {
+      "kennung": "M02",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Eine Mindestsicherung über der Armutsgrenze unabhängig von der Biografie senkt Altersarmut, wie Länder mit Mindest- oder Grundrente zeigen; sie gleicht Folgen niedriger Löhne aus, ohne die Ursache zu ändern. Höhe offen, Kosten hoch, Finanzierung ungeklärt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.824031.de/publikationen/diw_aktuell/2021_0072/mindestrente__absicherung_gegen_altersarmut_und_notwendiger_baustein_fuer_weitere_reformen.html"
+      },
+      "ursachen": [
+        702
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Anrechnung von Sorgezeiten senkt nachweislich Altersarmut von Frauen; sie wirkt aber wenig zielgenau und ist teuer (Mütterrente rund 14 Mrd. Euro jährlich). Umfang hier unbestimmt, Finanzierung offen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.909964.de/publikationen/wochenberichte/2024_31_1/abschaffung_der_muetterrente_wuerde_altersarmut_erhoehen.html"
+      },
+      "ursachen": [
+        702
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": 6177,
+      "ursachen": [
+        703
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": 6176,
+      "ursachen": [
+        701
+      ]
+    },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein staatlich befülltes Depot ab Geburt erreicht alle Kinder, auch aus armen Familien, und baut über Jahrzehnte Vermögen auf; britische Erfahrungen zeigen kleine Effekte auf das Sparverhalten. Wirkt erst sehr spät, rund 2 Mrd. Euro jährlich ohne Finanzierung.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://publications.aston.ac.uk/id/eprint/45231"
+      },
+      "ursachen": [
+        703
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Volle Versicherungspflicht schließt Lücken bei Minijobs, die meist von der Rentenpflicht befreit sind; die Ansprüche aus kleinen Verdiensten bleiben aber gering. Per Bundesgesetz umsetzbar, eine Expertenkommission empfiehlt es.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/reformen-bei-minijobs-und-ehegattensplitting-koennten-60000-neue-vollzeitstellen-schaffen"
+      },
+      "ursachen": [
+        702
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": 6181,
+      "ursachen": [
+        702
+      ]
+    }
+  ]
+}

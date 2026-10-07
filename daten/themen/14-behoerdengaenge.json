@@ -896,6 +896,90 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1401, 1402, 1403, 1404],
+      "massnahmen": [
+        {
+          "id": 8548,
+          "beschreibung": "Zentrales Digitalministerium mit Richtlinienkompetenz für alle Verwaltungsebenen und bundeseinheitlichen Standards für durchgängige Digitalisierung der Verwaltung.",
+          "ursachen_ids": [1401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verbindliche einheitliche Standards setzen an der Zersplitterung der IT von Bund und Ländern an, die Fachleute als Hauptbremse nennen. Eine Richtlinienkompetenz für alle Ebenen braucht aber eine Grundgesetzänderung (Art. 91c), Erfahrungen damit fehlen.",
+          "zitat": "Ein neues Digitalministerium legt die zentrale IT-Strategie für Deutschland fest und erhält Richtlinienkompetenz für alle Verwaltungsebenen. Doppelstrukturen werden so abgebaut.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=28",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8549,
+          "instrument": 6986,
+          "beschreibung": "Verwaltungsleistungen proaktiv, automatisiert, mobil und mit E-Identifikation und E-Payment bereitstellen.",
+          "ursachen_ids": [1401],
+          "zitat": "Benutzungsfreundliche und mobile Verwaltungsleistungen mit elektronischen Identifikationsmethoden und E-Payment-Optionen werden proaktiv und automatisiert bereitgestellt (“No-Stop-Shop”).",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=29",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8550,
+          "instrument": 6984,
+          "beschreibung": "Once-Only-Prinzip konsequent umsetzen: Daten werden nur einmal übermittelt und von Behörden gemeinsam genutzt, bei gewährleistetem Datenschutz.",
+          "ursachen_ids": [1403],
+          "zitat": "Daten müssen nur einmal übermittelt werden, die Behörden können sie dann effizient nutzen, wobei der Datenschutz gewährleistet ist",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=29",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8551,
+          "beschreibung": "Zentrale Anlaufstellen, automatische Genehmigung bei verspäteter Bearbeitung und regelmäßige Überprüfung von Vorschriften.",
+          "ursachen_ids": [1404],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Regelmäßige Überprüfung von Vorschriften und Genehmigungsfiktion können Verfahren straffen; Behörden könnten aber vorsorglich ablehnen, die Fiktion ersetzt keine Prüfung, und ihre Wirkung ist kaum untersucht.",
+          "zitat": "Zentrale Anlaufstellen („One-Stop-Shops“) sorgen für eine einfache und flexible Verwaltung, die sich an den Bedürfnissen der Menschen orientiert. Bürokratie wird abgebaut, indem Anträge bei nicht fristgerechter Bearbeitung automatisch als genehmigt gelten, und Vorschriften regelmäßig überprüft und vereinfacht werden, um die Menschen zu entlasten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=17",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8552,
+          "beschreibung": "Zuständigkeiten zwischen Bund, Ländern und Kommunen neu ordnen.",
+          "ursachen_ids": [1404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Klarere Zuständigkeiten könnten Doppelarbeit und Aufgabenlast verringern; die Zusage bleibt unbestimmt, braucht Grundgesetzänderungen mit Zustimmung der Länder, und die Bilanz früherer Föderalismusreformen ist umstritten.",
+          "zitat": "Die Zuständigkeiten zwischen Bund, Ländern und Kommunen werden neu geordnet und effizienter gestaltet.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8553,
+          "instrument": 6987,
+          "beschreibung": "Angepasste Gehaltsstrukturen, Beamtentum auf Zeit und Personalrotation für die Verwaltung.",
+          "ursachen_ids": [1402],
+          "zitat": "Durch angepasste Gehaltsstrukturen, die Förderung von „Beamtentum auf Zeit“ und sektorübergreifende Personalrotation entsteht eine innovative Verwaltungskultur mit neuen Kompetenzen und flexiblen Karrierewegen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=17",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

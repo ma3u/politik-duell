@@ -1,0 +1,113 @@
+{
+  "blind_pruefsumme": "1c129225b3c5a6b5ffd5e3ba99c20fd3c7295c978a74f9b4fd1ca8d68e364445",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Bundesweite Personalschlüssel von 1:3 und 1:7,5 mit Gruppenhöchstgrößen festlegen (Bund)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
+      "begruendung": "Die Zielwerte entsprechen den fachlichen Empfehlungen und setzen direkt an der Personalausstattung an. Für eine bundesweite Umsetzung fehlen absehbar sehr viele Fachkräfte; Umsetzung durch die Länder und Finanzierung sind ungeklärt."
+    },
+    {
+      "kennung": "I2",
+      "name": "Vergütung pädagogischer Fachkräfte an die von Lehrkräften angleichen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.817992.de/publikationen/wochenberichte/2021_19_1/erzieherinnen_empfinden_vielfache_belastungen_und_wenig_anerkennung.html",
+      "begruendung": "Die meisten Fachkräfte halten ihr Gehalt für unangemessen; höhere Löhne können Berufswahl und Verbleib stärken. Frühere Lohnzuwächse schlossen die Lücke aber nicht; der Bund ist nicht Tarifpartei, die Kosten sind sehr hoch."
+    },
+    {
+      "kennung": "I3",
+      "name": "Multiprofessionelle Teams zur Entlastung pädagogischer Fachkräfte fördern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.bertelsmann-stiftung.de/en/themen/aktuelle-meldungen/2023/november/mehr-plaetze-und-bessere-qualitaet-in-kitas-bis-2030-wenn-jetzt-entschlossen-gehandelt-wird",
+      "begruendung": "Zusätzliche Kräfte für Sprache, Verwaltung und Unterstützung können Fachkräfte entlasten; Entlastung durch Verwaltungskräfte wird empfohlen. Die Wirkung ist kaum untersucht, Ehrenamtliche ersetzen keine Fachkräfte, der Bund kann nur fördern."
+    },
+    {
+      "kennung": "I4",
+      "name": "Bundesweite digitale Plattform für Kita-Platzvergabe mit Anzeige freier Plätze (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2023/juni/schneller-fairer-und-transparenter-zum-kita-platz-wie-ein-algorithmus-kommunen-helfen-kann",
+      "begruendung": "Zentrale digitale Vergabe beschleunigt das Verfahren, macht es fairer und zeigt den tatsächlichen Bedarf. Sie schafft keine zusätzlichen Plätze; die Vergabe liegt bei Kommunen und Trägern, deren Anbindung der Bund nicht allein regelt."
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.uni-heidelberg.de/presse/news07/2709backu.html",
+        "begruendung": "Arbeitsplätze mit Betreuung können bei Ausfällen oder fehlendem Platz kurzfristig überbrücken; es gibt Praxisbeispiele, aber kaum Auswertungen. Sie ersetzen keinen regulären Platz, brauchen selbst Fachpersonal, Träger und Finanzierung sind offen."
+      },
+      "ursachen": [
+        1704,
+        1701
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I1",
+      "ursachen": [
+        1703
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 7280,
+      "ursachen": [
+        1701
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I2",
+      "ursachen": [
+        1702
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I3",
+      "ursachen": [
+        1702
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I4",
+      "ursachen": [
+        1701
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": 7303,
+      "ursachen": [
+        1705
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": 7295,
+      "ursachen": [
+        1702
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": 7301,
+      "ursachen": [
+        1701
+      ]
+    }
+  ]
+}

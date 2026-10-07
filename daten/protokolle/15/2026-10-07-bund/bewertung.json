@@ -1,0 +1,43 @@
+{
+  "blind_pruefsumme": "c5e162dd2b1eac7c306045ae86eb1a3a604f99bfa23f2da47e76b7200d14befd",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Energiesteuer auf Kraftstoffe dauerhaft auf den EU-Mindestsatz senken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt Benzin um rund 30 Cent, Diesel um 14 Cent je Liter vor Mehrwertsteuer; 2022 kam die Senkung bei Benzin voll, bei Diesel nur teilweise an. Dauerhaft fehlen rund 12 Mrd. Euro im Jahr; die Abschaffung auf EU-Ebene braucht Einstimmigkeit.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.zew.de/PU84325"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": "I1",
+      "ursachen": [
+        1502
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 7015,
+      "ursachen": [
+        1505
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Die Angleichung verteuert Diesel um gut 18 Cent je Liter (mit Mehrwertsteuer rund 22 Cent) und macht das Fahren für Dieselfahrende teurer statt günstiger; rechtlich mit einfachem Gesetz möglich und bringt dem Bund Einnahmen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.umweltbundesamt.de/en/press/pressinformation/environmentally-harmful-subsidies-in-transport"
+      },
+      "ursachen": [
+        1502
+      ]
+    }
+  ]
+}

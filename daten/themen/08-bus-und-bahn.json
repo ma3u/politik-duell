@@ -1535,6 +1535,93 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [801, 802, 803, 804],
+      "massnahmen": [
+        {
+          "id": 8506,
+          "beschreibung": "Öffentlichen Nahverkehr zuverlässig, barrierefrei und dicht getaktet ausbauen",
+          "ursachen_ids": [801],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Dichtere Takte gewinnen laut Metaanalyse mehr Fahrgäste als Preissenkungen; ohne Betrag bleibt offen, wie viel ankommt. Zuständig sind die Länder, der Bund kann über Geld beitragen, Fahrpersonal fehlt.",
+          "zitat": "ÖPNV als Alternative: Öffentlicher Nahverkehr wird zuverlässig, barrierefrei und eng getaktet ausgebaut.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=69",
+          "beleg_studie_url": "https://worldtransitresearch.info/research/6475",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8507,
+          "beschreibung": "Bedarfsgesteuerte Rufbusse und Verzahnung von Nahverkehr und Individualverkehr im ländlichen Raum",
+          "ursachen_ids": [801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Rufbusse erreichen auf dem Land mehr Menschen, vor allem abends und am Wochenende; sie kosten je Fahrgast aber ein Vielfaches eines Linienbusses. Zuständig sind die Länder, der Bund kann nur fördern.",
+          "zitat": "Flexible ÖPNV-Angebote: On-Demand-Rufbusse und eine enge Verzahnung von öffentlichem Nahverkehr mit dem Individualverkehr stärken nachhaltige Mobilität im ländlichen Raum.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70",
+          "beleg_studie_url": "https://kommunal.de/on-demand-verkehr-kommunen-aus-finanzierung",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8508,
+          "instrument": 6744,
+          "beschreibung": "Deutschlandtakt sowie Ausbau und Modernisierung des Schienennetzes vorantreiben",
+          "ursachen_ids": [802],
+          "zitat": "Ausbau des Schienennetzes: Der Deutschlandtakt sowie der Ausbau und die Modernisierung des Schienennetzes werden vorangetrieben.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8509,
+          "instrument": 6741,
+          "beschreibung": "Netz und Betrieb der Bahn entflechten; Bundeskompetenzzentrum steuert die Netzentwicklung",
+          "ursachen_ids": [802],
+          "zitat": "Restrukturierung der Deutschen Bahn: Netz und Betrieb werden entflochten und ein neues Bundeskompetenzzentrum steuert die Netzentwicklung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8510,
+          "beschreibung": "Deutschlandticket sichern und weiterentwickeln",
+          "ursachen_ids": [804],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die Evaluation zeigt, dass das Ticket genutzt wird und Fahrten vom Auto verlagert; reines Sichern verhindert aber weitere Preiserhöhungen nicht. Der Bund zahlt seinen Anteil bereits.",
+          "zitat": "Deutschlandticket: Das Deutschlandticket wird gesichert und weiterentwickelt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70",
+          "beleg_studie_url": "https://www.bmv.de/SharedDocs/DE/Pressemitteilungen/2026/027-schnieder-evaluation-deutschlandticket.html",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8511,
+          "instrument": 6838,
+          "beschreibung": "Kosten für Semestertickets übernehmen",
+          "ursachen_ids": [804],
+          "zitat": "Semestertickets und Wohnen: Die Kosten für Semestertickets werden übernommen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=106",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

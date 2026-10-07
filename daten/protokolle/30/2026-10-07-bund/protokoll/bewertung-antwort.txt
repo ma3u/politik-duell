@@ -1,0 +1,19 @@
+{
+  "blind_pruefsumme": "e0c1e6d8e60db4a4fb1e2e7928ffcb8b6efa50096503c89c829cd65b1ffb4731",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 8329, "ursachen": [3005] },
+    { "kennung": "M02", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Regulierter Verkauf macht Wirkstoff und Dosis bekannt, Modellprojekte erreichen aber nur wenige; Wirkung kaum untersucht. Verkauf widerspricht UN-Konventionen und EU-Rahmenbeschluss, die Deutschland nicht allein ändert.", "evidenz": "offen" }, "ursachen": [3005] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Präventionsprogramme zu Glücksspiel zeigten in weniger als der Hälfte der Studien Verhaltenseffekte; Angebot und Werbung bleiben unverändert. Bundesweite Präventionsarbeit ist bereits etabliert und leicht ausbaubar.", "evidenz": "gemischt", "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048" }, "ursachen": [3004] },
+    { "kennung": "M04", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Entkriminalisierung senkt Hürden zu Hilfe und erhöht den Konsum laut Studien meist nicht, ändert aber nichts an unbekannten Wirkstoffen am Schwarzmarkt; Erfahrungen (Portugal, Oregon) gemischt. Per Bundesgesetz möglich, Spannungen mit UN-Recht.", "evidenz": "gemischt", "beleg_studie_url": "https://doi.org/10.1136/bmjopen-2019-035148" }, "ursachen": [3005] },
+    { "kennung": "M05", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Kontakt- und Aufklärungsangebote verringerten Stigma in fast allen untersuchten Studien; ob mehr Betroffene Hilfe suchen, ist kaum belegt, Umfang der Förderung offen. Bundesprogramme dafür bestehen.", "evidenz": "belegt", "beleg_studie_url": "https://europepmc.org/articles/PMC3272222" }, "ursachen": [3006] },
+    { "kennung": "M06", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Konsumräume senken Überdosierungen ohne mehr Konsum, Substitution ist gut belegt; Drug-Checking ändert Konsumabsichten, Gesundheitsfolgen sind weniger untersucht. Der Bund kann fördern, Betrieb und Konsumräume regeln die Länder.", "evidenz": "belegt", "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012" }, "ursachen": [3005] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; es gab keine offenen Ursachen. Keine Maßnahme ohne Ursache.
+- M04 und M05 berühren nach Text auch die Scham-Hürde (3006); M04 bleibt laut Regel 1 (Drogenpolitik) bei 3005, 3006 wäre höchstens ein Hinweis.
+- M01 auf 8329 verwiesen: Verkauf in Fachgeschäften ist derselbe Lösungsweg und hängt ebenso von EU-/UN-Recht ab, auch wenn das Zitat das nicht nennt. Die Quelle von 8329 (PMC10176789) war über Europe PMC abrufbar und trägt den Forschungsstand (gemischt).
+- M03 und M06 entsprechen Landesinstrumenten (8326, 8322), kommen auf Bundesebene aber nur einmal vor und sind daher einzeln bewertet; Quellen dieser Landesinstrumente geöffnet (Abstracts über Europe PMC) und übernommen.
+- Schwierig: M05 – Evidenz zu Anti-Stigma-Maßnahmen ist einheitlich positiv, aber klein (13 Studien, Livingston 2012) und misst Einstellungen statt Hilfesuche; daher „belegt“, aber nur Wirksamkeit 2. M02 – Umsetzbarkeit 1 statt 0, weil Modellprojekte als wissenschaftliche Ausnahme denkbar sind.

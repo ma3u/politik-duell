@@ -1,0 +1,15 @@
+{
+  "blind_pruefsumme": "bfdfcdd8072a01991d8ad1ac1f31474869dfc767bd259a3b97048d123a7cc0b4",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 8394, "ursachen": [3301] },
+    { "kennung": "M02", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Setzt direkt bei der Begleitung durch Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Dagegen: reine Elternangebote kaum belegt, sie erreichen vor allem Interessierte; Elternbildung tragen Länder und Kommunen, der Bund kann fördern.", "evidenz": "gemischt", "beleg_studie_url": "https://real.mtak.hu/222946" }, "ursachen": [3303] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Setzt direkt an belohnungs- und suchtfördernden Designs an, die eine Prüfung trotz DSA auf allen großen Plattformen fand. Dagegen: Wirkung auf die Nutzung kaum untersucht; DSA und Verbraucherrecht sind EU-weit harmonisiert, nationale Regeln kaum möglich.", "evidenz": "offen", "beleg_studie_url": "https://www.vzbv.de/en/social-media-platforms-failing-adequately-protect-minors" }, "ursachen": [3301] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt (M01 und M03: 3301, M02: 3303); keine offenen Ursachen in der Liste, keine Maßnahme ohne Ursache.
+- M01 (Aufsicht über DSA einschließlich digitalem Jugendschutz bündeln) auf das vorhandene Instrument 8394 verwiesen: gleicher Lösungsweg (Durchsetzung des DSA mit Jugendschutz, Bund); die Bündelung ist eine organisatorische Ausgestaltung davon.
+- M02: Die Quelle von 8392/8395 (europepmc.org/article/MED/40549948) war nicht erreichbar (HTTP 403); dieselbe Metaanalyse (Žmavc u. a. 2025, 34 Studien, J. Behav. Addict.) wurde unter real.mtak.hu/222946 geöffnet, der Forschungsstand von 8392 übernommen. Umsetzbarkeit 2, weil Elternbildung bei Ländern, Kommunen und Trägern liegt und der Bund nur mit Programmen beitragen kann. Schwierig: Der Text ist allgemein („Chancen und Risiken der Digitalisierung“), nicht ausdrücklich auf Mediennutzung der Kinder bezogen; trotzdem wie 8392 mit 2 bewertet, um gleiche Maßstäbe zu wahren. Als Einzelbewertung, weil es auf Bundesebene kein passendes Instrument gibt.
+- M03: Umsetzbarkeit 1, weil Dark Patterns auf Plattformen bereits in Art. 25 DSA geregelt sind und das Lauterkeitsrecht vollharmonisiert ist; weitergehende Regeln hängen vom geplanten EU-Digital-Fairness-Act ab (Vorschlag für Q4 2026 angekündigt, laut Heuking-Fachbeitrag). Die vzbv-Quelle belegt das Fortbestehen solcher Designs, nicht die Wirkung einer Regulierung, daher evidenz „offen“.

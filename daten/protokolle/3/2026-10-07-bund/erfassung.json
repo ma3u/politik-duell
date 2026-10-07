@@ -1,0 +1,254 @@
+{
+  "thema_id": 3,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Teile der Netzentgelte aus dem Bundeshaushalt decken",
+          "ursachen_ids": [
+            301
+          ],
+          "zitat": "Teile der umlagefinanzierten Netzentgelte werden daher zukünftig aus dem Bundeshaushalt gedeckt.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Netzentgelte verursachungsgerecht gestalten, Investitionen nicht mehr allein darüber finanzieren",
+          "ursachen_ids": [
+            301
+          ],
+          "zitat": "Netzentgelte werden verursachungsgerecht gestaltet und Investitionen in Energieinfrastruktur werden nicht mehr ausschließlich durch Netzentgelte",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Stromsteuer auf das europäische Minimum senken",
+          "ursachen_ids": [
+            302
+          ],
+          "zitat": "Die Stromsteuer wird auf das europäische Minimum reduziert.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Einen Teil der CO₂-Einnahmen als direkte Zahlungen an die Menschen zurückgeben",
+          "ursachen_ids": [
+            302
+          ],
+          "zitat": "Einnahmen aus CO₂-Steuern und dem Emissionshandel werden künftig zu mindestens 33 % über direkte Zahlungen an die Menschen",
+          "seite": 60
+        },
+        {
+          "beschreibung": "Strombedarf bis 2035 durchgehend vollständig aus erneuerbaren Energien decken",
+          "ursachen_ids": [
+            304
+          ],
+          "zitat": "Im Jahr 2035 werden durchgehend 100 % des Strombedarfs aus erneuerbaren Energien gedeckt.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Hemmnisse für Energiespeicher abbauen, damit Speicher wirtschaftlich attraktiv werden",
+          "ursachen_ids": [
+            304
+          ],
+          "zitat": "Eine Regulierung von Energiespeichern, die sich eng am europäischen Rechtsrahmen orientiert, und der Abbau wirtschaftlicher und rechtlicher Hemmnisse",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Fernwärmeausbau und kommunale Wärmeplanung durch Förderprogramme und Duldungspflichten fördern",
+          "ursachen_ids": [
+            305
+          ],
+          "zitat": "Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+          "seite": 68
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 303,
+          "seiten": [
+            13,
+            43,
+            44,
+            61,
+            68,
+            96
+          ],
+          "grund": "Treffer betreffen Unabhängigkeit der Justiz, China-Abhängigkeit, Lieferketten; Energieimport nur als Nebensatz zur Wärmewende (S. 68), keine Zusage zu Lieferländern oder Verbrauch; S. 96 nur Effizienzstandards öffentlicher Einrichtungen."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "301": {
+      "Netzentgelte bezuschussen oder senken": [
+        "netzentgelt",
+        "netzentgelte",
+        "übertragungsnetz",
+        "netzkosten",
+        "netzausbau"
+      ],
+      "Günstigerer Netzausbau": [
+        "erdkabel",
+        "freileitung",
+        "netzausbau kosten"
+      ]
+    },
+    "302": {
+      "Stromsteuer und Abgaben senken": [
+        "stromsteuer",
+        "strompreis",
+        "umlage",
+        "abgaben",
+        "mehrwertsteuer auf strom"
+      ],
+      "CO2-Preis abschaffen oder zurückgeben": [
+        "co2-preis",
+        "co₂-preis",
+        "co2-bepreisung",
+        "klimageld",
+        "klimadividende",
+        "emissionshandel"
+      ]
+    },
+    "303": {
+      "Lieferländer streuen, heimische Förderung": [
+        "import",
+        "lieferländer",
+        "erdgasförderung",
+        "energieimport",
+        "abhängigkeit",
+        "lng"
+      ],
+      "Weniger Verbrauch": [
+        "energieeffizienz",
+        "energiesparen",
+        "verbrauch senken"
+      ]
+    },
+    "304": {
+      "Mehr Erneuerbare und Speicher": [
+        "erneuerbare",
+        "speicher",
+        "wind",
+        "solar",
+        "photovoltaik",
+        "börsenstrompreis",
+        "strommarkt"
+      ],
+      "Kohle- und Kernkraftwerke länger": [
+        "kraftwerk",
+        "kernenergie",
+        "kernkraft",
+        "atomkraft",
+        "kohle"
+      ]
+    },
+    "305": {
+      "Heizungstausch fördern": [
+        "wärmepumpe",
+        "heizungstausch",
+        "heizkosten",
+        "heizung",
+        "fernwärme"
+      ],
+      "Technologieoffenheit, fossile Preise senken": [
+        "technologieoffen",
+        "gasheizung",
+        "ölheizung",
+        "heizöl",
+        "gaspreis"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "2fc26e456cfeb7a2d5f4391b6e610e368dec67181524ddb8b50514253c299813",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "301": {
+            "Netzentgelte bezuschussen oder senken": {
+              "netzentgelt": 5,
+              "netzentgelte": 5,
+              "übertragungsnetz": 0,
+              "netzkosten": 0,
+              "netzausbau": 4
+            },
+            "Günstigerer Netzausbau": {
+              "erdkabel": 0,
+              "freileitung": 0,
+              "netzausbau kosten": 0
+            }
+          },
+          "302": {
+            "Stromsteuer und Abgaben senken": {
+              "stromsteuer": 2,
+              "strompreis": 1,
+              "umlage": 1,
+              "abgaben": 3,
+              "mehrwertsteuer auf strom": 0
+            },
+            "CO2-Preis abschaffen oder zurückgeben": {
+              "co2-preis": 0,
+              "co₂-preis": 0,
+              "co2-bepreisung": 1,
+              "klimageld": 0,
+              "klimadividende": 0,
+              "emissionshandel": 2
+            }
+          },
+          "303": {
+            "Lieferländer streuen, heimische Förderung": {
+              "import": 2,
+              "lieferländer": 0,
+              "erdgasförderung": 0,
+              "energieimport": 0,
+              "abhängigkeit": 19,
+              "lng": 2
+            },
+            "Weniger Verbrauch": {
+              "energieeffizienz": 2,
+              "energiesparen": 0,
+              "verbrauch senken": 0
+            }
+          },
+          "304": {
+            "Mehr Erneuerbare und Speicher": {
+              "erneuerbare": 12,
+              "speicher": 6,
+              "wind": 10,
+              "solar": 0,
+              "photovoltaik": 1,
+              "börsenstrompreis": 0,
+              "strommarkt": 0
+            },
+            "Kohle- und Kernkraftwerke länger": {
+              "kraftwerk": 0,
+              "kernenergie": 0,
+              "kernkraft": 0,
+              "atomkraft": 0,
+              "kohle": 1
+            }
+          },
+          "305": {
+            "Heizungstausch fördern": {
+              "wärmepumpe": 2,
+              "heizungstausch": 0,
+              "heizkosten": 0,
+              "heizung": 1,
+              "fernwärme": 2
+            },
+            "Technologieoffenheit, fossile Preise senken": {
+              "technologieoffen": 0,
+              "gasheizung": 0,
+              "ölheizung": 0,
+              "heizöl": 0,
+              "gaspreis": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

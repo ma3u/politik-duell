@@ -1,0 +1,193 @@
+{
+  "pruefsumme": "a822313748cc6a3e315fc2dd5d2e3cae366f38eec950174deb2da4ab256ea314",
+  "thema": {
+    "id": 10,
+    "name": "Pflege",
+    "ziel": "Pflegebedürftige bekommen gute Pflege, die sie und ihre Angehörigen bezahlen und organisieren können."
+  },
+  "ursachen": [
+    {
+      "id": 1001,
+      "beschreibung": "Zu wenige Pflegekräfte; bis 2049 fehlen je nach Szenario 280.000 bis 690.000",
+      "ebene": "bund"
+    },
+    {
+      "id": 1002,
+      "beschreibung": "Steigende Eigenanteile im Heim für Pflege, Ausbildung, Unterkunft und Verpflegung (mit Investitionskosten im ersten Jahr im Schnitt 3.364 Euro im Monat)",
+      "ebene": "bund"
+    },
+    {
+      "id": 1003,
+      "beschreibung": "Die Zahl der Pflegebedürftigen steigt stärker als durch die Alterung allein, auch wegen des 2017 weiter gefassten Pflegebedürftigkeitsbegriffs",
+      "ebene": "bund"
+    },
+    {
+      "id": 1004,
+      "beschreibung": "Pflegende Angehörige tragen die Hauptlast; Entlastungsangebote werden wenig genutzt",
+      "ebene": "bund"
+    },
+    {
+      "id": 1005,
+      "beschreibung": "Die Länder fördern die Investitionskosten der Heime kaum; Bewohner zahlen dafür im Schnitt über 500 Euro im Monat",
+      "ebene": "land"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6223,
+      "name": "Investitionskosten der Heime nicht mehr den Bewohnern anlasten",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Die Investitionskosten machen einen spürbaren Teil der Eigenanteile im Heim aus; übernehmen die Länder sie, sinkt die Belastung direkt. Der Bund kann es vorschreiben, zahlen müssten aber die Länder, deren Finanzierung offen ist."
+    },
+    {
+      "id": 6224,
+      "name": "Private Pflegeversicherung in den Finanzausgleich einbeziehen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein Ausgleich zwischen sozialer und privater Pflegeversicherung verbreitert die Finanzierung und kann Beiträge oder Eigenanteile entlasten; wie viel davon bei den Eigenanteilen ankommt, hängt von der Verwendung ab. Verfassungsrechtlich umstritten, aber per Bundesgesetz möglich."
+    },
+    {
+      "id": 6225,
+      "name": "Private und betriebliche Pflegezusatzvorsorge fördern",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Zusatzversicherungen können künftige Eigenanteile abdecken; bisher haben nur wenige eine, Geringverdienende und heute Pflegebedürftige erreicht die Förderung kaum. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6226,
+      "name": "Leistungen für häusliche Pflege zu einem flexiblen Budget bündeln",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt daran an, dass Entlastungsleistungen wenig genutzt werden, weil sie kompliziert und starr sind; ob ein Budget die Nutzung deutlich erhöht, ist noch wenig untersucht. Per Bundesgesetz umsetzbar, erste Schritte gibt es seit 2025."
+    },
+    {
+      "id": 6227,
+      "name": "Lohnersatz für pflegende Angehörige, die ihre Arbeitszeit reduzieren",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein Lohnersatz ähnlich dem Elterngeld entlastet pflegende Angehörige finanziell und erleichtert, Beruf und Pflege zu verbinden; die Kosten sind je nach Ausgestaltung hoch, und ob mehr Angehörige die Leistung nutzen als die bisherige Pflegezeit, ist offen."
+    },
+    {
+      "id": 6228,
+      "name": "Tages-, Nacht- und Kurzzeitpflege sowie Beratung ausbauen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr erreichbare Entlastungsangebote und Beratung setzen daran an, dass Angehörige die Hauptlast tragen; die Plätze fehlen aber oft auch wegen fehlender Pflegekräfte. Der Bund kann Leistungen und Förderung erhöhen, Planung und Bau liegen bei Ländern und Trägern."
+    },
+    {
+      "id": 6229,
+      "name": "Arbeitsbedingungen in der Pflege verbessern (Personalbemessung, verlässliche Dienstpläne, weniger Dokumentation)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Bessere Arbeitsbedingungen setzen am wichtigsten Grund an, warum Pflegekräfte den Beruf verlassen oder in Teilzeit gehen; eine verbindliche Personalbemessung braucht aber zunächst mehr Personal. Per Bundesgesetz umsetzbar, die Umsetzung dauert Jahre."
+    },
+    {
+      "id": 6230,
+      "name": "Ausgestiegene Pflegekräfte zurückgewinnen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Befragungen zeigen, dass viele ehemalige Pflegekräfte bei besseren Bedingungen zurückkehren würden; wie viele es tatsächlich tun, hängt davon ab, ob sich die Bedingungen spürbar ändern. Ohne eigene Maßnahmen bleibt es ein Ziel."
+    },
+    {
+      "id": 6231,
+      "name": "Pflegekräfte im Ausland anwerben, Anerkennung beschleunigen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Zuwanderung hat einen großen Teil des Beschäftigungszuwachses in der Pflege getragen; lange Anerkennungsverfahren und Sprachhürden bremsen, und die Anerkennung liegt bei den Ländern. Der Bund kann Verfahren vereinfachen und Anwerbung fördern."
+    },
+    {
+      "id": 6232,
+      "name": "Mehr Befugnisse und Aufstiegswege für Pflegefachpersonen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Verantwortung und Aufstiegsmöglichkeiten machen den Beruf attraktiver; wie stark das die Zahl der Pflegekräfte erhöht, ist kaum belegt. Per Bundesgesetz umsetzbar, erste Schritte wurden 2025 beschlossen."
+    },
+    {
+      "id": 6233,
+      "name": "Bessere Bezahlung in der Pflege",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Höhere Löhne machen den Beruf attraktiver und halten Pflegekräfte; seit der Tarifpflicht von 2022 sind die Löhne deutlich gestiegen, was aber auch die Eigenanteile erhöht hat. Die Refinanzierung ist per Bundesgesetz möglich, die Finanzierung ist offen."
+    },
+    {
+      "id": 6234,
+      "name": "Prävention und Reha, um Pflegebedürftigkeit hinauszuzögern",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Prävention und Rehabilitation können Pflegebedürftigkeit bei Einzelnen verzögern; an der Alterung der Bevölkerung ändern sie nichts, und ihre Wirkung auf die Zahl der Pflegebedürftigen ist schwer zu belegen. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6235,
+      "name": "Pflegeausbildung verbessern und ausbauen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Bessere Ausbildungsbedingungen können mehr Menschen in den Beruf bringen und Abbrüche verringern; die Ausbildung ist seit 2020 bereits vergütet und schulgeldfrei, weitere Effekte sind schwer abzuschätzen. Per Bundesgesetz und mit den Ländern umsetzbar."
+    },
+    {
+      "id": 6447,
+      "name": "Land übernimmt die Investitionskosten der Heime (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Übernimmt das Land die Investitionskosten, sinkt der Eigenanteil im Heim direkt um im Schnitt rund 500 Euro im Monat; Unterkunft, Verpflegung und pflegebedingte Kosten bleiben. Das Land kann es selbst regeln, die Kosten von vielen Millionen Euro im Jahr muss es dauerhaft im Haushalt tragen."
+    },
+    {
+      "id": 6448,
+      "name": "Land beteiligt sich an den Investitionskosten, ohne Umfang (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Landesbeteiligung an den Investitionskosten senkt den Eigenanteil; ohne Angabe, wie viel das Land übernimmt, bleibt die Entlastung offen. Das Land kann es selbst regeln."
+    },
+    {
+      "id": 6449,
+      "name": "Landesprogramm für Investitionen und Sanierung von Pflegeeinrichtungen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Fördergeld für Bau und Sanierung dämpft, was Heime als Investitionskosten weitergeben, betrifft aber nur geförderte Einrichtungen und senkt den laufenden Eigenanteil der übrigen Bewohner nicht. Das Land kann ein Programm selbst auflegen."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Betreuungsangebot für Pflegebedürftige deutlich ausbauen, damit niemand zu unbezahlter Sorgearbeit gezwungen ist",
+      "zitat": "Gleichzeitig wird das Betreuungsangebot für Kinder und Pflegebedürftige deutlich ausgebaut. Niemand darf wegen fehlender Betreuungsmöglichkeiten gezwungen sein, unbezahlte Sorgearbeit zu leisten.",
+      "ursachen_ids": [
+        1004
+      ],
+      "pruefsumme": "a8c37934b9917505"
+    }
+  ]
+}

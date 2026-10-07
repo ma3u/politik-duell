@@ -400,6 +400,55 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [101, 102, 103],
+      "massnahmen": [
+        {
+          "id": 8453,
+          "beschreibung": "Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt (Hausarztzentrierung), um Fachpraxen zu entlasten.",
+          "ursachen_ids": [102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Hausarztsteuerung kann Facharztbesuche verringern (Studien zum Gatekeeping); die Praxisgebühr mit Ausnahme bei Überweisung zeigte aber kaum Steuerungswirkung und schreckte eher Ärmere ab. Per Bundesgesetz rasch umsetzbar.",
+          "zitat": "Hauspraxiszentrierte Versorgung (HzV): Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt, um die Fachpraxen zu entlasten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=125",
+          "beleg_studie_url": "https://ideas.repec.org/p/zbw/rwipos/16.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8454,
+          "instrument": 6679,
+          "beschreibung": "Multiprofessionelle regionale Versorgungszentren mit Gesundheitsfachberufen werden eingerichtet.",
+          "ursachen_ids": [101],
+          "zitat": "Regionale Versorgungszentren (RVZ): Multiprofessionelle Zentren mit Gesundheitsfachberufen und Daseinsvorsorgediensten werden eingerichtet.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=125",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8455,
+          "beschreibung": "Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden kommen in entlegene Gebiete.",
+          "ursachen_ids": [101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bringt Sprechstunden zu wenig mobilen Menschen in entlegenen Orten; Studien und Pilotprojekte zeigen gute Auslastung. Ersetzt aber keine fehlenden Praxen, braucht selbst ärztliches Personal und ist teuer; die Sicherstellung liegt bei den KVen.",
+          "zitat": "Mobile Einheiten („Klinikmobile“): Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden werden in entlegenen Gebieten eingesetzt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=126",
+          "beleg_studie_url": "https://nnphi.org/resources/the-scope-and-impact-of-mobile-health-clinics-in-the-united-states-a-literature-review/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

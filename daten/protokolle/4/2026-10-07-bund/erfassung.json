@@ -1,0 +1,228 @@
+{
+  "thema_id": 4,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Duales Lehramtsstudium, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt.",
+          "ursachen_ids": [
+            401
+          ],
+          "zitat": "Duales Lehramtsstudium: Ein duales System, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt, wird eingeführt.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Lehrkräfte durch Verwaltungsfachkräfte und multiprofessionelle Teams entlasten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            401
+          ],
+          "zitat": "Entlastung durch Teams: Lehrkräfte werden durch Verwaltungsfachkräfte und multiprofessionelle Teams unterstützt, um sich auf ihre Kernaufgaben zu konzentrieren.",
+          "seite": 107
+        },
+        {
+          "beschreibung": "Bundesweiter Bildungskanon für das Vorschuljahr, der Deutsch als Schulsprache und bilinguale Betreuung fördert.",
+          "ursachen_ids": [
+            404
+          ],
+          "zitat": "Flächendeckende Sprachförderung: Ein bundesweiter Bildungskanon für das Vorschuljahr wird umgesetzt, der Deutsch als Schulsprache und bilinguale Betreuung fördert.",
+          "seite": 108
+        },
+        {
+          "beschreibung": "Bundesweit einheitliche Betreuungsschlüssel und Gruppengrößen in Krippen und Kitas.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            404
+          ],
+          "zitat": "Bundesweit einheitliche Betreuungsschlüssel: Betreuungsschlüssel von 1:3 für Kinder unter drei Jahren und 1:7,5 ab drei Jahren sowie maximale Gruppengrößen von neun Kindern in Krippen und 15 Kindern in Kitas werden eingeführt",
+          "seite": 108
+        },
+        {
+          "beschreibung": "Längeres gemeinsames Lernen: Dreigliedriges Schulsystem wird aufgehoben.",
+          "ursachen_ids": [
+            405
+          ],
+          "zitat": "Abschaffung der Dreigliedrigkeit: Die Trennung von Hauptschule, Realschule und Gymnasium wird zugunsten eines längeren gemeinsamen Lernens aufgehoben, um Chancengleichheit und sozialen Zusammenhalt zu stärken.",
+          "seite": 110
+        },
+        {
+          "beschreibung": "Lernmaterialien für schulpflichtige Kinder bundesweit kostenfrei, vom Bund finanziert.",
+          "ursachen_ids": [
+            405
+          ],
+          "zitat": "Kostenfreie Lernmittel: Lernmaterialien werden schulpflichtigen Kindern bundesweit kostenfrei zur Verfügung gestellt und über Bundesmittel finanziert.",
+          "seite": 105
+        },
+        {
+          "beschreibung": "Psychologie, Schulsozialarbeit, Schulgesundheit und Sonderpädagogik als fester Teil der Schulen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            403,
+            405
+          ],
+          "zitat": "Fachkräfte in Schulen: Fachkräfte für Psychologie, Schulsozialarbeit, Schulgesundheit sowie Sonderpädagogik werden fester Bestandteil des Schulsystems.",
+          "seite": 111
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 402,
+          "seiten": [
+            105,
+            112,
+            113
+          ],
+          "grund": "Nur Digitalisierungsbudget, Hard-/Software und barrierefreie Gestaltung; keine Zusage zur Sanierung von Schulgebäuden."
+        },
+        {
+          "ursache": 403,
+          "seiten": [
+            110,
+            111,
+            114
+          ],
+          "grund": "Individuelle Lernwege, Lehrplanreform und Abschaffung der Noten; keine Zusage zum Aufholen von Lernrückständen in Grundkompetenzen."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "401": {
+      "Mehr Lehrkräfte gewinnen": [
+        "lehrkräfte",
+        "lehrer",
+        "lehrermangel",
+        "lehrkräftemangel",
+        "quereinstieg",
+        "lehramt",
+        "seiteneinsteiger"
+      ]
+    },
+    "402": {
+      "Schulgebäude sanieren": [
+        "schulgebäude",
+        "schulsanierung",
+        "sanierungsstau",
+        "schulbau",
+        "investitionsprogramm schule",
+        "digitalpakt"
+      ]
+    },
+    "403": {
+      "Lernrückstände aufholen": [
+        "lernrückstände",
+        "grundkompetenzen",
+        "lesen",
+        "rechnen",
+        "basiskompetenzen",
+        "förderunterricht",
+        "pisa"
+      ]
+    },
+    "404": {
+      "Sprachstandstests und Förderpflicht": [
+        "sprachstand",
+        "sprachtest",
+        "sprachförderung",
+        "deutschkenntnisse",
+        "vorschulisch",
+        "einschulung"
+      ],
+      "Frühe Bildung in der Kita": [
+        "frühkindliche bildung",
+        "kita",
+        "sprach-kita"
+      ]
+    },
+    "405": {
+      "Förderung nach Sozialindex, Bildungsgerechtigkeit": [
+        "sozialindex",
+        "startchancen",
+        "bildungsgerechtigkeit",
+        "soziale herkunft",
+        "chancengleichheit",
+        "brennpunkt"
+      ],
+      "Leistung fördern, Schwache stärken": [
+        "leistung",
+        "begabtenförderung",
+        "nachhilfe"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "452113c65ff65f8e5d666d2fe7dee76db2ed010d8d383a2ef8724d1ce78ad09d",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "401": {
+            "Mehr Lehrkräfte gewinnen": {
+              "lehrkräfte": 19,
+              "lehrer": 0,
+              "lehrermangel": 0,
+              "lehrkräftemangel": 0,
+              "quereinstieg": 2,
+              "lehramt": 2,
+              "seiteneinsteiger": 0
+            }
+          },
+          "402": {
+            "Schulgebäude sanieren": {
+              "schulgebäude": 0,
+              "schulsanierung": 0,
+              "sanierungsstau": 0,
+              "schulbau": 0,
+              "investitionsprogramm schule": 0,
+              "digitalpakt": 0
+            }
+          },
+          "403": {
+            "Lernrückstände aufholen": {
+              "lernrückstände": 0,
+              "grundkompetenzen": 0,
+              "lesen": 1,
+              "rechnen": 0,
+              "basiskompetenzen": 0,
+              "förderunterricht": 0,
+              "pisa": 0
+            }
+          },
+          "404": {
+            "Sprachstandstests und Förderpflicht": {
+              "sprachstand": 0,
+              "sprachtest": 0,
+              "sprachförderung": 4,
+              "deutschkenntnisse": 0,
+              "vorschulisch": 0,
+              "einschulung": 0
+            },
+            "Frühe Bildung in der Kita": {
+              "frühkindliche bildung": 6,
+              "kita": 16,
+              "sprach-kita": 0
+            }
+          },
+          "405": {
+            "Förderung nach Sozialindex, Bildungsgerechtigkeit": {
+              "sozialindex": 0,
+              "startchancen": 0,
+              "bildungsgerechtigkeit": 0,
+              "soziale herkunft": 0,
+              "chancengleichheit": 20,
+              "brennpunkt": 0
+            },
+            "Leistung fördern, Schwache stärken": {
+              "leistung": 55,
+              "begabtenförderung": 0,
+              "nachhilfe": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

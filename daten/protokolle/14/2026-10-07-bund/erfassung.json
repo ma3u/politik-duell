@@ -1,0 +1,189 @@
+{
+  "thema_id": 14,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Zentrales Digitalministerium mit Richtlinienkompetenz für alle Verwaltungsebenen und bundeseinheitlichen Standards für durchgängige Digitalisierung der Verwaltung.",
+          "ursachen_ids": [
+            1401,
+            1404
+          ],
+          "zitat": "Ein neues Digitalministerium legt die zentrale IT-Strategie für Deutschland fest und erhält Richtlinienkompetenz für alle Verwaltungsebenen. Doppelstrukturen werden so abgebaut.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Verwaltungsleistungen proaktiv, automatisiert, mobil und mit E-Identifikation und E-Payment bereitstellen.",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Benutzungsfreundliche und mobile Verwaltungsleistungen mit elektronischen Identifikationsmethoden und E-Payment-Optionen werden proaktiv und automatisiert bereitgestellt (“No-Stop-Shop”).",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Once-Only-Prinzip konsequent umsetzen: Daten werden nur einmal übermittelt und von Behörden gemeinsam genutzt, bei gewährleistetem Datenschutz.",
+          "ursachen_ids": [
+            1403
+          ],
+          "zitat": "Daten müssen nur einmal übermittelt werden, die Behörden können sie dann effizient nutzen, wobei der Datenschutz gewährleistet ist",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Zentrale Anlaufstellen, automatische Genehmigung bei verspäteter Bearbeitung und regelmäßige Überprüfung von Vorschriften.",
+          "ursachen_ids": [
+            1404
+          ],
+          "zitat": "Zentrale Anlaufstellen („One-Stop-Shops“) sorgen für eine einfache und flexible Verwaltung, die sich an den Bedürfnissen der Menschen orientiert. Bürokratie wird abgebaut, indem Anträge bei nicht fristgerechter Bearbeitung automatisch als genehmigt gelten, und Vorschriften regelmäßig überprüft und vereinfacht werden, um die Menschen zu entlasten.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Zuständigkeiten zwischen Bund, Ländern und Kommunen neu ordnen.",
+          "ursachen_ids": [
+            1404
+          ],
+          "zitat": "Die Zuständigkeiten zwischen Bund, Ländern und Kommunen werden neu geordnet und effizienter gestaltet.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Angepasste Gehaltsstrukturen, Beamtentum auf Zeit und Personalrotation für die Verwaltung.",
+          "ursachen_ids": [
+            1402
+          ],
+          "zitat": "Durch angepasste Gehaltsstrukturen, die Förderung von „Beamtentum auf Zeit“ und sektorübergreifende Personalrotation entsteht eine innovative Verwaltungskultur mit neuen Kompetenzen und flexiblen Karrierewegen.",
+          "seite": 17
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1401": {
+      "Digitalisierung, zentrale Portale und Apps": [
+        "verwaltungsdigitalisierung",
+        "onlinezugang",
+        "ozg",
+        "deutschland-app",
+        "deutschlandid",
+        "digitale identität",
+        "bürgeramt",
+        "behörde",
+        "portal"
+      ]
+    },
+    "1402": {
+      "Mehr Personal, bessere Bezahlung": [
+        "öffentlicher dienst",
+        "personal",
+        "fachkräfte in der verwaltung",
+        "ausbildung",
+        "nachwuchs"
+      ],
+      "Automatisierung, Effizienz": [
+        "automatisierung",
+        "künstliche intelligenz",
+        "ki",
+        "effizienz",
+        "stellenabbau"
+      ]
+    },
+    "1403": {
+      "Once-Only, Register vernetzen": [
+        "once-only",
+        "register",
+        "registermodernisierung",
+        "antragslos",
+        "datenaustausch"
+      ],
+      "Datenschutz wahren": [
+        "datenschutz",
+        "steuer-id",
+        "personenkennzeichen"
+      ]
+    },
+    "1404": {
+      "Bürokratieabbau, Aufgabenkritik": [
+        "bürokratieabbau",
+        "ermessen",
+        "vorschriften",
+        "aufgabenkritik",
+        "normenkontrolle"
+      ],
+      "Aufgaben bündeln, Staatsreform": [
+        "staatsreform",
+        "digitalministerium",
+        "föderalismus",
+        "zuständigkeiten"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5eb83a8780a4b4b8638d2db302bfb59eecde22313460b97c26e25e9ab6e0ba87",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "1401": {
+            "Digitalisierung, zentrale Portale und Apps": {
+              "verwaltungsdigitalisierung": 0,
+              "onlinezugang": 0,
+              "ozg": 0,
+              "deutschland-app": 0,
+              "deutschlandid": 1,
+              "digitale identität": 1,
+              "bürgeramt": 0,
+              "behörde": 31,
+              "portal": 2
+            }
+          },
+          "1402": {
+            "Mehr Personal, bessere Bezahlung": {
+              "öffentlicher dienst": 0,
+              "personal": 20,
+              "fachkräfte in der verwaltung": 0,
+              "ausbildung": 52,
+              "nachwuchs": 1
+            },
+            "Automatisierung, Effizienz": {
+              "automatisierung": 1,
+              "künstliche intelligenz": 8,
+              "ki": 114,
+              "effizienz": 12,
+              "stellenabbau": 0
+            }
+          },
+          "1403": {
+            "Once-Only, Register vernetzen": {
+              "once-only": 1,
+              "register": 4,
+              "registermodernisierung": 0,
+              "antragslos": 0,
+              "datenaustausch": 0
+            },
+            "Datenschutz wahren": {
+              "datenschutz": 16,
+              "steuer-id": 0,
+              "personenkennzeichen": 0
+            }
+          },
+          "1404": {
+            "Bürokratieabbau, Aufgabenkritik": {
+              "bürokratieabbau": 6,
+              "ermessen": 0,
+              "vorschriften": 5,
+              "aufgabenkritik": 0,
+              "normenkontrolle": 0
+            },
+            "Aufgaben bündeln, Staatsreform": {
+              "staatsreform": 4,
+              "digitalministerium": 6,
+              "föderalismus": 10,
+              "zuständigkeiten": 6
+            }
+          }
+        }
+      }
+    ]
+  }
+}

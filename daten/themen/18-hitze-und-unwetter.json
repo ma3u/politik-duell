@@ -870,6 +870,152 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1801, 1802, 1803, 1804, 1805, 1806],
+      "massnahmen": [
+        {
+          "id": 8573,
+          "instrument": 7941,
+          "beschreibung": "Naturbasierte Lösungen: Gebäudebegrünung, Entsiegelung, Schwammstadt als zentrales Konzept.",
+          "ursachen_ids": [1804, 1803],
+          "zitat": "Naturbasierte Lösungen wie die Begrünung von Gebäuden sowie die Entsiegelung […] fördern die Klimaresilienz […] Die Schwammstadt wird als zentrales Konzept zur Erhöhung der urbanen Widerstandsfähigkeit etabliert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=76",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8574,
+          "instrument": 7942,
+          "beschreibung": "Ausbau von Hochwasserschutzanlagen und Renaturierung von Uferbereichen.",
+          "ursachen_ids": [1805],
+          "zitat": "Der Ausbau von Hochwasserschutzanlagen und die Renaturierung von Uferbereichen verringern Risiken bei extremen Wetterereignissen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=77",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8575,
+          "beschreibung": "Datengestützte Hitzestrategie mit Hitzeaktionsplänen und Förderprogrammen, gemeinsam mit den Ländern.",
+          "ursachen_ids": [1802],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Hitzeschutzpläne gingen in 14 europäischen Ländern mit rund 25 % weniger hitzebedingten Todesfällen einher. Dagegen: Zusage ohne Mittel und Ziele; Umsetzung liegt bei Ländern und Kommunen, der Bund kann nur fördern und koordinieren.",
+          "zitat": "Eine datengestützte Hitzestrategie, die Hitzeaktionspläne und Förderprogramme umfasst, wird in Zusammenarbeit mit den Bundesländern umgesetzt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=129",
+          "beleg_studie_url": "https://www.cmcc.it/article/heat-prevention-plans-help-save-lives",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8576,
+          "instrument": 7940,
+          "beschreibung": "Stärkere Förderung von Projekten zur Senkung innerstädtischer Temperaturen, etwa Begrünung.",
+          "ursachen_ids": [1803],
+          "zitat": "Projekte, die das Ziel verfolgen, innerstädtische Temperaturen zu senken, werden stärker gefördert. Dazu gehören Begrünung und stadtplanerische Innovationen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=129",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8577,
+          "beschreibung": "Europäischen Emissionshandel (ETS-2) wie geplant 2027 ausweiten.",
+          "ursachen_ids": [1801, 1802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "CO2-Preise senken Emissionen nachweislich, auf Hitze wirkt das aber nur gering und verzögert. Der Start 2027 ist durch EU-Recht (2026) bereits auf 2028 verschoben; Deutschland kann das nicht allein ändern.",
+          "zitat": "Der europäische Emissionshandel (ETS-2) wird wie geplant Anfang 2027 ausgeweitet.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=60",
+          "beleg_studie_url": "https://www.roedl.com/insights/ets-2-verzoegert-klimakosten-bleiben-warum-sie-nicht-auf-die-politik-warten-sollten-2/",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8578,
+          "beschreibung": "Fossile Energieträger in Industrieanlagen bis 2035 befristen; neue Anlagen mit Strom oder Wasserstoff.",
+          "ursachen_ids": [1801, 1802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Frist für fossile Energie in der Industrie würde Emissionen senken. Dagegen: Laut UBA ist die Umstellung der Prozesswärme bis 2045 machbar, 2035 ist sehr knapp, Wasserstoff und Strom fehlen, Bestandsschutz wirft Rechtsfragen auf; Wirkung auf Hitze gering.",
+          "zitat": "Der Einsatz fossiler Energieträger in Industrieanlagen wird bis 2035 befristet, und neue Anlagen müssen klimaneutrale Energieträger wie Strom und Wasserstoff nutzen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=61",
+          "beleg_studie_url": "https://www.umweltbundesamt.de/themen/industrielle-prozesswaerme-kann-bis-2045-co2",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8579,
+          "instrument": 7935,
+          "beschreibung": "CCS für unvermeidbare Industrieemissionen.",
+          "ursachen_ids": [1801, 1802],
+          "zitat": "Für unvermeidbare Emissionen, wie in der Zementindustrie, werden CCS-Technologien genutzt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=62",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8580,
+          "beschreibung": "Nationales Sanierungsprogramm für klimaneutrales Bauen und Sanieren öffentlicher Gebäude.",
+          "ursachen_ids": [1801, 1802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sanierung öffentlicher Gebäude senkt Energiebedarf und Emissionen (dena: rund 120 Mrd. Euro bis 2045 nötig, meist kommunale Gebäude). Auf Hitze in Deutschland wirkt das nur als kleiner Beitrag zum globalen Klimaschutz; Finanzierung offen.",
+          "zitat": "Ein nationales Sanierungsprogramm macht den öffentlichen Sektor zum Vorbild für klimaneutrales Bauen und Sanieren.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96",
+          "beleg_studie_url": "https://www.pv-magazine.de/?p=23862",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8581,
+          "beschreibung": "Renaturierung und Wiedervernässung von Mooren massiv ausbauen.",
+          "ursachen_ids": [1801, 1802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Entwässerte Moore verursachen laut UBA rund 7,5 % der deutschen Emissionen, Wiedervernässung senkt sie deutlich. Dagegen: Flächen meist privat, Wasser fehlt teils, Umsetzung über Länder; auf Hitze wirkt nationaler Klimaschutz nur gering und langfristig.",
+          "zitat": "Die Renaturierung und Wiedervernässung von Mooren wird massiv ausgebaut, um ihre Funktion als Kohlenstoffsenken zu erhalten und Emissionen zu vermeiden.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=79",
+          "beleg_studie_url": "https://www.umweltbundesamt.de/node/102188",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8582,
+          "beschreibung": "Subventionen für fossile Energieträger in der Industrie vollständig abbauen.",
+          "ursachen_ids": [1801, 1802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Steuervergünstigungen für fossile Energie mindern Sparanreize, ihr Abbau stützt Klimaschutz und entlastet den Haushalt. Dagegen: Abwanderungsrisiko energieintensiver Industrie, Wirkung kaum beziffert; auf Hitze in Deutschland nur geringer, verzögerter Effekt.",
+          "zitat": "Alle Subventionen, die direkt den Einsatz fossiler Energieträger in der Industrie fördern, werden vollständig abgebaut.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=62",
+          "beleg_studie_url": "https://www.umweltbundesamt.de/themen/umweltschaedliche-subventionen-klettern-auf-ueber",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

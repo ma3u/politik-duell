@@ -94,7 +94,16 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7221, 2, 12, null, 'Kurzzeitvermietung in Ballungsgebieten auf ein Mindestmaß reduzieren', '{201,205}', 7232, 1, 2, null, 'Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.', 'https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=20', null, 'gemischt', '2026-09-30', false, true, null),
   (7222, 2, 11, null, 'Ballungsräume entlasten: Verkehrswege und Nahverkehr ins Umland bedarfsgerecht ausbauen', '{205}', null, 1, 2, null, 'Bessere Verbindungen machen das Umland als Wohnort attraktiver und können die Nachfrage in den Großstädten dämpfen; wie stark, ist kaum untersucht, und der Ausbau dauert Jahre.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=77', null, 'offen', '2026-09-30', false, true, null),
   (7223, 2, 16, null, 'Wohngeld-Antrag stark vereinfachen, Anträge binnen drei Monaten bescheiden', '{202}', null, 1, 3, null, 'Entlastet Haushalte mit geringem Einkommen direkt, wenn mehr Berechtigte das Wohngeld tatsächlich erhalten; zusätzliche Wohnungen entstehen dadurch nicht.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=8', null, 'gemischt', '2026-09-30', false, true, null),
-  (7233, 2, 17, null, 'Umwandlung von Wohnungen in Ferienwohnungen und Leerstand strenger regulieren', '{201}', 7232, 1, 2, null, 'Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28', null, 'gemischt', '2026-09-30', false, true, null);
+  (7233, 2, 17, null, 'Umwandlung von Wohnungen in Ferienwohnungen und Leerstand strenger regulieren', '{201}', 7232, 1, 2, null, 'Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28', null, 'gemischt', '2026-09-30', false, true, null),
+  (8456, 2, 18, null, 'Fördersystem für klimafreundlichen Wohnbau im bezahlbaren Preissegment', '{201,202}', null, 1, 3, null, 'Ein Bundesprogramm mit zinsverbilligten Krediten für günstigen klimafreundlichen Neubau besteht bereits; ohne Mietbindung ist nicht gesichert, dass die Wohnungen günstig vermietet werden, Mitnahmeeffekte sind möglich, eine Wirkungsauswertung fehlt.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96', null, 'offen', '2026-10-07', false, true, 'blind'),
+  (8457, 2, 18, null, 'Steuerliche Begünstigungen und günstige Kredite für Genossenschaften und Baugemeinschaften', '{201}', null, 1, 2, null, 'Genossenschaften vermieten meist unter Marktniveau, Steuervorteile und günstige Kredite erleichtern ihren Neubau; ihr Anteil am Neubau ist aber klein, Engpass ist oft Bauland, und Steuerermäßigungen nur für eine Rechtsform werfen EU- und beihilferechtliche Fragen auf.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96', null, 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8458, 2, 18, null, 'Rückkauf und Neubau von Wohnungen durch Kommunen', '{201,202}', null, 2, 2, null, 'Kommunale Wohnungen werden deutlich unter Marktniveau vermietet (etwa Wien); Rückkäufe schaffen aber keine zusätzlichen Wohnungen und binden viel Geld, Neubauziele kommunaler Unternehmen wurden oft verfehlt, und der Bund kann Kommunen nur über die Länder fördern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=95', 'https://www.lpb-bw.de/wohnen-vorbild-wien', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8459, 2, 18, null, 'Sozialbindung bei Wohnbauprojekten verlängern, durch niedrigere Baukosten ausgeglichen', '{206}', null, 2, 2, null, 'Längere Bindungen bremsen den Verlust von Sozialwohnungen, die heute oft nach 15 bis 30 Jahren herausfallen; die Wohnraumförderung regeln die Länder, der Bund kann Bindungen nur über Finanzhilfen vorgeben, und wie niedrigere Baukosten den Ausgleich schaffen, bleibt offen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96', 'https://mieterbund.de/aktuelles/meldungen/historischer-tiefstand-bei-sozialwohnungen/', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8460, 2, 18, null, 'Umnutzung leerstehender Gewerbegebäude zu Wohnraum, Leerstandsmanagement und Baugebote', '{201}', null, 1, 2, null, 'Umnutzung und Leerstandsaktivierung schaffen Wohnraum ohne Neubau; laut ifo ist nur ein Teil leerer Büros umbaubar und weniger als die Hälfte davon wirtschaftlich, in Großstädten ist der Wohnungsleerstand gering, Baugebote sind rechtlich aufwendig.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=94', 'https://www.baulinks.de/webplugin/2024/1277.php4', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8461, 2, 18, null, 'Umbau-, Nachverdichtungs- und Aufstockungsverfahren vereinfachen und beschleunigen', '{201}', null, 2, 2, null, 'Aufstockung und Nachverdichtung schaffen Wohnungen ohne neues Bauland, Studien sehen über eine Million mögliche Wohnungen; das reale Potenzial ist wegen Statik, Brandschutz, Stellplätzen und Kosten deutlich kleiner, und Bauordnungsrecht ist Ländersache.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=94', 'https://www.baulinks.de/webplugin/2016/0333.php4', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8462, 2, 18, null, 'Weniger nachzuweisende Pkw-Stellplätze bei nachhaltigen Mobilitätslösungen', '{203}', null, 2, 1, null, 'Stellplatzpflichten verteuern den Neubau nachweislich (Tiefgaragenplatz 15.000–30.000 €, Aufschlag im Neubau rund 10 %); die Entlastung greift nur bei Mobilitätskonzepten, und Stellplatzvorgaben regeln Länder und Kommunen, nicht der Bund.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=97', 'https://vdiv.de/news-details/iw-koeln-stellplatzverordnungen-machen-bauen-unnoetig-teuer', 'belegt', '2026-10-07', false, true, 'blind'),
+  (8463, 2, 18, null, 'Landesbauordnungen angleichen, Genehmigungen digitalisieren und verschlanken', '{201}', null, 1, 1, null, 'Unterschiedliche Landesbauordnungen gelten als Hemmnis für serielles Bauen und Typengenehmigungen; wie stark eine Angleichung den Neubau steigert, ist kaum untersucht, und der Bund kann sie nicht anordnen, das können nur die Länder.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=97', null, 'offen', '2026-10-07', false, true, 'blind'),
+  (8464, 2, 18, null, 'Serieller Modulbau mit nachhaltigen Baustoffen, wo Neubau nötig ist', '{203}', null, 1, 2, null, 'Serieller Modulbau kann Bauzeit und Kosten senken, wenn genug gleiche Gebäude entstehen; Holz, Lehm und Recyclate sind oft teurer als übliche Baustoffe, und der Kostenvorteil hängt stark von Stückzahl und Grundstück ab.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96', null, 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -139,7 +148,16 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6672, 2),
   (7222, 2),
   (7223, 2),
-  (7232, 2);
+  (7232, 2),
+  (8456, 2),
+  (8457, 2),
+  (8458, 2),
+  (8459, 2),
+  (8460, 2),
+  (8461, 2),
+  (8462, 2),
+  (8463, 2),
+  (8464, 2);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (2, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -169,6 +187,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (2, 14, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (2, 15, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (2, 16, 'BE', 'massnahmen', null, '2026-09-30', true, null),
-  (2, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null);
+  (2, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null),
+  (2, 18, null, 'massnahmen', null, '2026-10-07', true, '{201,202,203,204,205,206}');
 
 commit;

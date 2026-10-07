@@ -1,0 +1,19 @@
+{
+  "blind_pruefsumme": "16a2730690b5d43889f2875ba9c9e66df172bfdce0c75985955cc5d738431168",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 6880, "ursachen": [1101] },
+    { "kennung": "M02", "instrument": 7228, "ursachen": [1105] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Erhöht das Nettoeinkommen aller Steuerpflichtigen, die Entlastung bleibt bei moderater Anhebung aber klein (eher zweistellige Euro im Monat). Der Grundfreibetrag wird regelmäßig per Gesetz angehoben, die Kosten von einigen Milliarden Euro sind tragbar.", "evidenz": "belegt" }, "ursachen": [1104] },
+    { "kennung": "M04", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Steuersenkungen auf Kraftstoff wurden 2022 zu knapp 90 % weitergegeben; auf Lebensmittelpreise wirkt Energiesteuer nur indirekt und gering. Der Steuerausfall läge im zweistelligen Milliardenbereich ohne Finanzierung, die Abschaffung hängt an der EU.", "evidenz": "gemischt", "beleg_studie_url": "https://www.leuphana.de/institute/ivwl/aktuell/ansicht/2024/08/27/neue-publikation-von-mats-kahl-in-energy-economics.html" }, "ursachen": [1101] },
+    { "kennung": "M05", "instrument": 6890, "ursachen": [1103, 1105] },
+    { "kennung": "M06", "instrument": 6889, "ursachen": [1103, 1105] }
+  ]
+}
+
+Hinweise:
+- Ursachen: Alle vorgeschlagenen Ursachen bestätigt; die Liste hat keine offenen Ursachen und keine Regeln. Bei M01 (Mehrwertsteuer-Nullsatz) ist 1101 ein Grenzfall: Die Maßnahme senkt den Lebensmittelpreis, setzt aber nicht an den Energiekosten an. Sie bleibt bei 1101, weil das die einzige Ursache zum Preisniveau von Lebensmitteln ist; die Koordination sollte prüfen, ob Preissenkungen über Steuern dieser Ursache überall gleich zugeordnet werden.
+- Keine Maßnahme ohne Ursache.
+- M02 dem vorhandenen Instrument 7228 zugeordnet (Qualifizierung als Weg aus dem Niedriglohnbereich), auch wenn der Text auf Langzeitarbeitslose und Lohnkostenzuschüsse zielt; die Wirkung auf 1105 ist ebenso indirekt.
+- M03 eigene Bewertung statt 6885/6886: Eine nur moderate Anhebung des Grundfreibetrags ist günstiger und routinemäßig umsetzbar (Umsetzbarkeit 3), wirkt aber schwächer (Wirksamkeit 1). Quelle zur Größenordnung war ein Gesetzentwurf (BT-Drs. 20/12783), deshalb keine Studien-URL.
+- M04 fiel schwer: Die Weitergabe von Energiesteuersenkungen ist gut belegt (Kahl 2024, Energy Economics, Tankrabatt), die Wirkung auf Lebensmittelpreise kaum untersucht, daher „gemischt“. Umsetzbarkeit 1 wegen ungeklärter Finanzierung und des EU-abhängigen Teils.

@@ -1,0 +1,158 @@
+{
+  "thema_id": 33,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Manipulative Gestaltung digitaler Angebote (Dark Patterns) und algorithmische Beeinflussung werden gesetzlich geregelt.",
+          "ursachen_ids": [
+            3301
+          ],
+          "zitat": "Praktiken wie Dark Patterns und algorithmische Beeinflussung werden gesetzlich klar geregelt.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Aufsicht über digitale Dienste einschließlich des digitalen Jugendschutzes wird bei der Bundesnetzagentur gebündelt.",
+          "ursachen_ids": [
+            3301
+          ],
+          "zitat": "Dies umfasst nicht nur die zentrale Steuerung der Implementierung des Data Acts und des Data Governance Act, sondern auch die zentrale Aufsicht im Rahmen des Gesetzes über Digitale Dienste (DSA) und der KI-VO, einschließlich des digitalen Jugendschutzes.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Schulungen für Eltern zu Chancen und Risiken der Digitalisierung.",
+          "ursachen_ids": [
+            3303
+          ],
+          "zitat": "Elternbildung: Schulungen für Eltern fördern das Verständnis für Chancen und Risiken der Digitalisierung.",
+          "seite": 113
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3301": {
+      "Plattformpflichten und Altersgrenzen": [
+        "altersgrenze",
+        "altersverifikation",
+        "social-media-verbot",
+        "mindestalter soziale medien",
+        "plattformpflichten",
+        "jugendmedienschutz",
+        "digital services act",
+        "suchtfördernde gestaltung"
+      ],
+      "Selbstregulation und begleiteter Zugang": [
+        "selbstregulation",
+        "begleitete nutzung",
+        "elternkontrolle",
+        "medienkompetenz stärken",
+        "keine pauschalen verbote"
+      ]
+    },
+    "3302": {
+      "Nutzungszeiten begrenzen": [
+        "handyverbot",
+        "handyfreie schule",
+        "bildschirmzeit",
+        "nutzungszeiten",
+        "schlafenszeit",
+        "handynutzung begrenzen",
+        "smartphone-verbot"
+      ],
+      "Familiäre Regeln und Aufklärung": [
+        "medienregeln in der familie",
+        "aufklärung über schlaf",
+        "medienerziehung",
+        "elternabende",
+        "mediennutzungsvertrag"
+      ]
+    },
+    "3303": {
+      "Medienbildung und Beratung ausbauen": [
+        "medienbildung",
+        "medienkompetenz",
+        "digitale bildung",
+        "elternberatung",
+        "medienpädagogik",
+        "elternbildung",
+        "medienführerschein"
+      ],
+      "Elterliche Verantwortung und technische Hilfen": [
+        "elterliche verantwortung",
+        "jugendschutzeinstellungen",
+        "jugendschutzprogramme",
+        "kinderschutzfilter",
+        "altersgerechte geräte"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5fa4e1bbcd5816eb6092e9d5d7dcebb3ee41c50cca4e804a98edb03dbfc20d8f",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "3301": {
+            "Plattformpflichten und Altersgrenzen": {
+              "altersgrenze": 0,
+              "altersverifikation": 0,
+              "social-media-verbot": 0,
+              "mindestalter soziale medien": 0,
+              "plattformpflichten": 0,
+              "jugendmedienschutz": 0,
+              "digital services act": 1,
+              "suchtfördernde gestaltung": 0
+            },
+            "Selbstregulation und begleiteter Zugang": {
+              "selbstregulation": 0,
+              "begleitete nutzung": 0,
+              "elternkontrolle": 0,
+              "medienkompetenz stärken": 0,
+              "keine pauschalen verbote": 0
+            }
+          },
+          "3302": {
+            "Nutzungszeiten begrenzen": {
+              "handyverbot": 0,
+              "handyfreie schule": 0,
+              "bildschirmzeit": 0,
+              "nutzungszeiten": 0,
+              "schlafenszeit": 0,
+              "handynutzung begrenzen": 0,
+              "smartphone-verbot": 0
+            },
+            "Familiäre Regeln und Aufklärung": {
+              "medienregeln in der familie": 0,
+              "aufklärung über schlaf": 0,
+              "medienerziehung": 0,
+              "elternabende": 0,
+              "mediennutzungsvertrag": 0
+            }
+          },
+          "3303": {
+            "Medienbildung und Beratung ausbauen": {
+              "medienbildung": 2,
+              "medienkompetenz": 2,
+              "digitale bildung": 3,
+              "elternberatung": 0,
+              "medienpädagogik": 1,
+              "elternbildung": 1,
+              "medienführerschein": 0
+            },
+            "Elterliche Verantwortung und technische Hilfen": {
+              "elterliche verantwortung": 0,
+              "jugendschutzeinstellungen": 0,
+              "jugendschutzprogramme": 0,
+              "kinderschutzfilter": 0,
+              "altersgerechte geräte": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "blind_pruefsumme": "143bf8eb9b05f7537a86d4c05a35d577601c8a5d98a584609ca31bd1ebb310e9",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Resilienzförderung ab der Kita und Fortbildung von Lehr- und Fachkräften unterstützen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Früh ansetzende Förderung und geschulte Fachkräfte können Belastungen eher erkennen; Übersichten finden aber wenig Beleg, dass Präventionsprogramme in Bildungseinrichtungen Angst oder Depression senken. Kita und Schule sind Ländersache, der Bund kann nur fördern.", "evidenz": "gemischt", "beleg_studie_url": "https://europepmc.org/article/MED/31734106" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 8167, "ursachen": [2905] },
+    { "kennung": "M02", "instrument": "I1", "ursachen": [2903] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Im Hamburger Modell gut angenommen und mit weniger vermeidbaren Klinikfällen, aber ohne messbare Verbesserung der Gesundheitskompetenz; Beratung ist allgemein, nicht auf psychische Gesundheit ausgerichtet. Flächendeckender Aufbau braucht Finanzierungseinigung mit Kassen und Kommunen.", "evidenz": "gemischt", "beleg_studie_url": "https://www.uni-hamburg.de/newsroom/presse/2021/pm17.html" }, "ursachen": [2903] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; keine offenen Ursachen in der Liste; keine Maßnahme ohne Ursache.
+- M01 entspricht dem vorhandenen Instrument 8167 (gleicher Lösungsweg, Ebene Bund). Dessen Quelle (Befragung von 447 Psychotherapeuten zur Terminservicestelle, 2026) über die Europe-PMC-Schnittstelle geöffnet: fehlende Kapazitäten als Haupthindernis, trägt die Einstufung.
+- M02: Quelle des Landesinstruments 8151 (Netzwerk-Metaanalyse, 137 Studien, 2019) geöffnet und übernommen; auf Bundesebene Umsetzbarkeit 2, weil Kita und Schule in Länderzuständigkeit liegen.
+- Grenzfall M03: Gesundheitskioske bieten allgemeine Gesundheitsberatung, nicht ausdrücklich zu psychischer Gesundheit. Zuordnung zu 2903 (niedrigschwellige Beratung) beibehalten, dafür Wirksamkeit nur 1. Die Evaluation (Hamburg, INVEST Billstedt/Horn) zeigt hohe Nutzung und weniger vermeidbare Krankenhausfälle, laut Berichterstattung aber keine signifikante Verbesserung bei Gesundheitskompetenz und Lebensqualität; daher „gemischt“. Die Prüfenden könnten auch eine Zuordnung ohne Ursache vertreten.

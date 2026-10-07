@@ -1,0 +1,255 @@
+{
+  "pruefsumme": "663bb8463d6c6f467e3d3d5be998dc5287abfef17f9caeda34196e10d0ffd27f",
+  "thema": {
+    "id": 2,
+    "name": "Miete",
+    "ziel": "Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten."
+  },
+  "ursachen": [
+    {
+      "id": 201,
+      "beschreibung": "Es werden weniger Wohnungen gebaut als gebraucht (Bedarf laut Prognose rund 320.000 pro Jahr)",
+      "ebene": "bund"
+    },
+    {
+      "id": 202,
+      "beschreibung": "Mieten bei Neuvermietung liegen rund 43 % über Bestandsmieten, in großen Städten besonders hoch",
+      "ebene": "bund"
+    },
+    {
+      "id": 203,
+      "beschreibung": "Stark gestiegene Baukosten: Wohngebäude wurden 2010 bis 2025 um 89 % teurer, mehr als doppelt so stark wie die Inflation",
+      "ebene": "bund"
+    },
+    {
+      "id": 204,
+      "beschreibung": "Mieten in laufenden Verträgen steigen weiter (Nettokaltmieten 2025 im Schnitt +2,1 %)",
+      "ebene": "bund"
+    },
+    {
+      "id": 205,
+      "beschreibung": "Die Nachfrage wächst vor allem in Großstädten: mehr Haushalte, getragen vor allem von Zuwanderung",
+      "ebene": "bund"
+    },
+    {
+      "id": 206,
+      "beschreibung": "Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden (2025: rund 27.000 neu gefördert, rund 55.000 fallen jährlich heraus)",
+      "ebene": "land"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6637,
+      "name": "Mietpreisbremse auslaufen lassen, um Investitionen anzuregen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Soll Investitionen anregen; Neubauten sind von der Mietpreisbremse ohnehin ausgenommen, die Wirkung auf den Neubau ist daher gering. Studien finden keinen deutlichen Rückgang des Neubaus durch die Bremse."
+    },
+    {
+      "id": 6638,
+      "name": "Bundesweiter Mietendeckel",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Begrenzt Mieten direkt, auch bei Neuvermietung, schafft aber keine neuen Wohnungen; in Berlin sanken 2020/21 die regulierten Mieten, zugleich wurden weniger Wohnungen angeboten. Ob ein bundesweiter Deckel mit Absenkung verfassungsgemäß wäre, ist offen."
+    },
+    {
+      "id": 6639,
+      "name": "Mietenstopp in angespannten Wohnungsmärkten",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen in angespannten Märkten; schafft keine neuen Wohnungen und kann Instandhaltung und Modernisierung bremsen. Ein Mietenstopp wirft verfassungsrechtliche Fragen auf."
+    },
+    {
+      "id": 6640,
+      "name": "Bessere steuerliche Abschreibung für den Mietwohnungsbau",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Steuerliche Anreize können Neubau anstoßen; kostet Steuereinnahmen, und ob die Wohnungen günstig vermietet werden, ist nicht gesichert. Frühere Sonderabschreibungen wirkten vor allem bei ohnehin geplanten Projekten."
+    },
+    {
+      "id": 6641,
+      "name": "Keine neuen kostentreibenden Baustandards, einfachere Standards und digitale Verfahren",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verhindert weitere Kostensteigerungen durch Vorschriften und verkürzt Verfahren; bereits gestiegene Material-, Lohn- und Zinskosten bleiben. Wie viel Standards an den Baukosten ausmachen, ist umstritten."
+    },
+    {
+      "id": 6642,
+      "name": "Sozialen und gemeinnützigen Wohnungsbau stärker fördern, mit langen Bindungen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Schafft preisgebundene Wohnungen für Haushalte mit geringem Einkommen; erfordert erhebliche öffentliche Mittel, der Umfang ist nicht beziffert."
+    },
+    {
+      "id": 6645,
+      "name": "Soziale Wohnraumförderung des Landes fortführen (ohne Ausbau)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Hält den Neubau geförderter Wohnungen aufrecht, bremst aber den Rückgang des Bestands nicht, solange mehr Wohnungen aus der Bindung fallen als neu gefördert werden."
+    },
+    {
+      "id": 6646,
+      "name": "Soziale Wohnraumförderung des Landes ausbauen, Bundesmittel voll kofinanzieren",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Mehr geförderte Neubauten wirken dem Rückgang des Bestands direkt entgegen; das Land muss dafür zusätzliche Haushaltsmittel bereitstellen, und die Wirkung hängt davon ab, dass Bauherren die Förderung annehmen."
+    },
+    {
+      "id": 6647,
+      "name": "Sozialbindung geförderter Wohnungen unbefristet",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verhindert, dass künftig geförderte Wohnungen nach einigen Jahren aus der Bindung fallen; das Land kann das im eigenen Förderrecht regeln. Private Bauherren nehmen eine Förderung mit Dauerbindung womöglich seltener an."
+    },
+    {
+      "id": 6648,
+      "name": "Höhere Quote für Sozialwohnungen bei Neubauten (kooperative Baulandentwicklung)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Sichert in neuen Quartieren mehr Sozialwohnungen ohne volle Landesförderung; eine sehr hohe Quote kann private Bauvorhaben unwirtschaftlich machen und den Neubau bremsen."
+    },
+    {
+      "id": 6649,
+      "name": "Fehlbelegungsabgabe für Mieter in Sozialwohnungen mit gestiegenem Einkommen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Lenkt Sozialwohnungen stärker zu Bedürftigen und bringt Geld für neue Förderung; schafft selbst kaum neue Wohnungen, der Verwaltungsaufwand ist hoch, und Besserverdienende ziehen aus, was die Durchmischung verringern kann."
+    },
+    {
+      "id": 6650,
+      "name": "Große Vermieter per Landesgesetz verpflichten, einen Teil der Wohnungen an WBS-Haushalte zu vermieten",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Würde den Bestand an Wohnungen für Haushalte mit geringem Einkommen schnell erweitern; ob ein Land das regeln darf, ist fraglich, denn das Mietrecht ist Bundessache (Bundesverfassungsgericht 2021 zum Berliner Mietendeckel)."
+    },
+    {
+      "id": 7232,
+      "name": "Kurzzeitvermietung und Zweckentfremdung begrenzen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Weniger nachzuweisende Pkw-Stellplätze bei nachhaltigen Mobilitätslösungen",
+      "zitat": "Reform der Stellplatzverordnungen: Weniger PKW-Stellplätze müssen nachgewiesen werden, wenn nachhaltige Mobilitätslösungen angeboten werden.",
+      "ursachen_ids": [
+        203
+      ],
+      "pruefsumme": "0783459deb20ef88"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Umnutzung leerstehender Gewerbegebäude zu Wohnraum, Leerstandsmanagement und Baugebote",
+      "zitat": "Leerstehende Gewerbegebäude werden unbürokratisch zu Wohnraum umgewandelt. Aktives Leerstandsmanagement sowie Anreize und Baugebote bringen leerstehende Wohnungen auf den Markt.",
+      "ursachen_ids": [
+        201
+      ],
+      "pruefsumme": "950702e79b331520"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Begünstigungen und günstige Kredite für Genossenschaften und Baugemeinschaften",
+      "zitat": "Genossenschaften und Baugemeinschaften profitieren von steuerlichen Begünstigungen wie ermäßigten Umsatz- und Grunderwerbsteuern, Sonderabschreibungen und vergünstigten Krediten.",
+      "ursachen_ids": [
+        201,
+        203
+      ],
+      "pruefsumme": "ca6520e3e2053738"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Umbau-, Nachverdichtungs- und Aufstockungsverfahren vereinfachen und beschleunigen",
+      "zitat": "Nachverdichtung und Aufstockung: Umbau-, Nachverdichtungs- und Aufstockungsverfahren werden vereinfacht und beschleunigt, um vorhandene Flächen effizient zu nutzen.",
+      "ursachen_ids": [
+        201,
+        205
+      ],
+      "pruefsumme": "d3a419adb0da6540"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Rückkauf und Neubau von Wohnungen durch Kommunen",
+      "zitat": "Mehr Wohnungen in kommunaler Trägerschaft: Durch den Rückkauf und Neubau von Wohnungen durch Kommunen profitieren Anwohnende von einer langfristigen Preisstabilität.",
+      "ursachen_ids": [
+        201,
+        202
+      ],
+      "pruefsumme": "6e4bb0a0e67366b3"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Fördersystem für klimafreundlichen Wohnbau im bezahlbaren Preissegment",
+      "zitat": "Gezielte Förderung im Niedrigpreissegment: Ein Fördersystem unterstützt gezielt klimafreundlichen Wohnbau im bezahlbaren Preissegment.",
+      "ursachen_ids": [
+        201,
+        202
+      ],
+      "pruefsumme": "d69e24d22f294c01"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Sozialbindung bei Wohnbauprojekten verlängern, durch niedrigere Baukosten ausgeglichen",
+      "zitat": "Verlängerung der Sozialbindung: Die Sozialbindung bei Wohnbauprojekten wird verlängert und durch niedrigere Baukosten wirtschaftlich ausgeglichen.",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "0c1adaa97ae1d8c4"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Landesbauordnungen angleichen, Genehmigungen digitalisieren und verschlanken",
+      "zitat": "Einheitliche Bauvorschriften: Die Angleichung der Landesbauordnungen erleichtert Bauprozesse und beschleunigt Projekte durch klare und einheitliche Normen.",
+      "ursachen_ids": [
+        201
+      ],
+      "pruefsumme": "944e7b87e1fe9aae"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Serieller Modulbau mit nachhaltigen Baustoffen, wo Neubau nötig ist",
+      "zitat": "Serieller Modulbau mit nachhaltigen Baustoffen: Dort, wo Neubau notwendig ist, wird auf nachhaltige Baustoffe wie Holz, Lehm und Recyclate gesetzt, um zukunftsorientierte Bauweisen zu fördern.",
+      "ursachen_ids": [
+        203
+      ],
+      "pruefsumme": "d1c97e9d0c11a67d"
+    }
+  ]
+}

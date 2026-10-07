@@ -1,0 +1,25 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Fördersystem für klimafreundlichen Wohnbau im bezahlbaren Preissegment", "ursachen_ids": [201, 202], "zitat": "Gezielte Förderung im Niedrigpreissegment: Ein Fördersystem unterstützt gezielt klimafreundlichen Wohnbau im bezahlbaren Preissegment.", "seite": 96 },
+    { "beschreibung": "Steuerliche Begünstigungen und günstige Kredite für Genossenschaften und Baugemeinschaften", "ursachen_ids": [201, 203], "zitat": "Genossenschaften und Baugemeinschaften profitieren von steuerlichen Begünstigungen wie ermäßigten Umsatz- und Grunderwerbsteuern, Sonderabschreibungen und vergünstigten Krediten.", "seite": 96 },
+    { "beschreibung": "Rückkauf und Neubau von Wohnungen durch Kommunen", "ursachen_ids": [201, 202], "zitat": "Mehr Wohnungen in kommunaler Trägerschaft: Durch den Rückkauf und Neubau von Wohnungen durch Kommunen profitieren Anwohnende von einer langfristigen Preisstabilität.", "seite": 95 },
+    { "beschreibung": "Sozialbindung bei Wohnbauprojekten verlängern, durch niedrigere Baukosten ausgeglichen", "ursachen_ids": [206], "zitat": "Verlängerung der Sozialbindung: Die Sozialbindung bei Wohnbauprojekten wird verlängert und durch niedrigere Baukosten wirtschaftlich ausgeglichen.", "seite": 96 },
+    { "beschreibung": "Umnutzung leerstehender Gewerbegebäude zu Wohnraum, Leerstandsmanagement und Baugebote", "ursachen_ids": [201], "zitat": "Leerstehende Gewerbegebäude werden unbürokratisch zu Wohnraum umgewandelt. Aktives Leerstandsmanagement sowie Anreize und Baugebote bringen leerstehende Wohnungen auf den Markt.", "seite": 94 },
+    { "beschreibung": "Umbau-, Nachverdichtungs- und Aufstockungsverfahren vereinfachen und beschleunigen", "ursachen_ids": [201, 205], "zitat": "Nachverdichtung und Aufstockung: Umbau-, Nachverdichtungs- und Aufstockungsverfahren werden vereinfacht und beschleunigt, um vorhandene Flächen effizient zu nutzen.", "seite": 94 },
+    { "beschreibung": "Weniger nachzuweisende Pkw-Stellplätze bei nachhaltigen Mobilitätslösungen", "ursachen_ids": [203], "zitat": "Reform der Stellplatzverordnungen: Weniger PKW-Stellplätze müssen nachgewiesen werden, wenn nachhaltige Mobilitätslösungen angeboten werden.", "seite": 97 },
+    { "beschreibung": "Landesbauordnungen angleichen, Genehmigungen digitalisieren und verschlanken", "ursachen_ids": [201], "zitat": "Einheitliche Bauvorschriften: Die Angleichung der Landesbauordnungen erleichtert Bauprozesse und beschleunigt Projekte durch klare und einheitliche Normen.", "seite": 97 },
+    { "beschreibung": "Serieller Modulbau mit nachhaltigen Baustoffen, wo Neubau nötig ist", "ursachen_ids": [203], "zitat": "Serieller Modulbau mit nachhaltigen Baustoffen: Dort, wo Neubau notwendig ist, wird auf nachhaltige Baustoffe wie Holz, Lehm und Recyclate gesetzt, um zukunftsorientierte Bauweisen zu fördern.", "seite": 96 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 202, "seiten": [94, 95, 96], "grund": "Keine Zusage zu Mietpreisbremse, Neuvermietungsmieten oder Mietendeckel; nur Angebotsausweitung, dort erfasst." },
+    { "ursache": 204, "seiten": [94, 95, 96], "grund": "Keine Zusage zu Bestandsmieten, Kappung oder Mietenstopp im Wohnkapitel." },
+    { "ursache": 205, "seiten": [50, 135, 94], "grund": "Zuwanderung wird nur erleichtert (Fachkräfte, Asylsystem), nicht begrenzt oder mit Bezug zur Wohnungsnachfrage gesteuert; Nachverdichtung ist erfasst." }
+  ]
+}
+
+Protokoll
+Gelesen: Kapitel Wohnen S. 94-97; Fundstellen zu Zuwanderung (S. 50, 51, 135) nur in den Auszügen.
+Nicht erfasst: S. 95 Recht auf bezahlbaren Wohnraum im Grundgesetz und Housing First (Ziel/Obdachlosigkeit, kein Bezug zu den Ursachen); S. 95 Anpassung Mietrecht für Obdachlose (zu unbestimmt); S. 96 Fördermittel/Sanierung öffentlicher Gebäude (Klima, nicht Ursachen); S. 86/88 allgemeine Bekenntnisse zu Wohnungsbau.
+Weitere gleichartige Stellen zu "Mehr bauen": Genehmigungen S. 97 (digital, schlank) mit Bauvorschriften zusammen erfasst.

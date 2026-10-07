@@ -1010,6 +1010,55 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [3301, 3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8595,
+          "beschreibung": "Manipulative Gestaltung digitaler Angebote (Dark Patterns) und algorithmische Beeinflussung werden gesetzlich geregelt.",
+          "ursachen_ids": [3301],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Setzt direkt an belohnungs- und suchtfördernden Designs an, die eine Prüfung trotz DSA auf allen großen Plattformen fand. Dagegen: Wirkung auf die Nutzung kaum untersucht; DSA und Verbraucherrecht sind EU-weit harmonisiert, nationale Regeln kaum möglich.",
+          "zitat": "Praktiken wie Dark Patterns und algorithmische Beeinflussung werden gesetzlich klar geregelt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=27",
+          "beleg_studie_url": "https://www.vzbv.de/en/social-media-platforms-failing-adequately-protect-minors",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8596,
+          "instrument": 8394,
+          "beschreibung": "Aufsicht über digitale Dienste einschließlich des digitalen Jugendschutzes wird bei der Bundesnetzagentur gebündelt.",
+          "ursachen_ids": [3301],
+          "zitat": "Dies umfasst nicht nur die zentrale Steuerung der Implementierung des Data Acts und des Data Governance Act, sondern auch die zentrale Aufsicht im Rahmen des Gesetzes über Digitale Dienste (DSA) und der KI-VO, einschließlich des digitalen Jugendschutzes.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=25",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8597,
+          "beschreibung": "Schulungen für Eltern zu Chancen und Risiken der Digitalisierung.",
+          "ursachen_ids": [3303],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Setzt direkt bei der Begleitung durch Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Dagegen: reine Elternangebote kaum belegt, sie erreichen vor allem Interessierte; Elternbildung tragen Länder und Kommunen, der Bund kann fördern.",
+          "zitat": "Elternbildung: Schulungen für Eltern fördern das Verständnis für Chancen und Risiken der Digitalisierung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=113",
+          "beleg_studie_url": "https://real.mtak.hu/222946",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

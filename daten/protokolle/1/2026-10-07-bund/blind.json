@@ -1,0 +1,113 @@
+{
+  "pruefsumme": "07711c6b64f0a1dcf23b40fc0b38710d0e29dc8b857146946a2753c65e7b33a6",
+  "thema": {
+    "id": 1,
+    "name": "Arzttermine",
+    "ziel": "Patientinnen und Patienten bekommen in angemessener Zeit und erreichbarer Nähe einen Arzttermin."
+  },
+  "ursachen": [
+    {
+      "id": 101,
+      "beschreibung": "Zu wenige Hausarztpraxen, besonders auf dem Land: Viele Ärztinnen und Ärzte gehen bald in den Ruhestand, zu wenige lassen sich als Hausarzt nieder",
+      "ebene": "bund"
+    },
+    {
+      "id": 102,
+      "beschreibung": "Termine und Wege durch das Gesundheitssystem werden kaum gesteuert; knappes Personal wird nicht gezielt eingesetzt",
+      "ebene": "bund"
+    },
+    {
+      "id": 103,
+      "beschreibung": "Unterschiedliche Vergütung: Facharztpraxen vergeben Termine bevorzugt an Privatversicherte",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6677,
+      "name": "Hausarztpraxis als erste Anlaufstelle (Primärarztsystem)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Lenkt Patientinnen und Patienten gezielter und kann unnötige Facharztbesuche vermeiden; die Erfahrungen aus Ländern mit Primärarztsystem sind überwiegend positiv. Es setzt aber voraus, dass genug Hausarztpraxen da sind, die schon heute knapp sind."
+    },
+    {
+      "id": 6678,
+      "name": "Andere Gesundheitsberufe übernehmen mehr Aufgaben (z. B. Advanced Practice Nurses, Gemeindeschwestern)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Entlastet Ärztinnen und Ärzte, sodass mehr Termine frei werden; internationale Studien zeigen gute Qualität bei übertragenen Aufgaben. Braucht neue Ausbildungswege und Änderungen im Berufsrecht, das dauert."
+    },
+    {
+      "id": 6679,
+      "name": "Kommunale MVZ und Gesundheitszentren fördern",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Angestelltenverhältnisse und Teamarbeit entsprechen den Wünschen vieler junger Ärztinnen und Ärzte und können Praxissitze in unterversorgten Regionen besetzen; wie viele Zentren tatsächlich entstehen, hängt von Kommunen und Finanzierung ab."
+    },
+    {
+      "id": 6680,
+      "name": "Budgetierung ärztlicher Leistungen aufheben",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Voll bezahlte Leistungen machen Kassenpatienten für Praxen attraktiver und verringern den Vergütungsabstand zu Privatversicherten; ob dadurch spürbar mehr Termine entstehen, ist nicht belegt, und die Mehrkosten tragen die Beitragszahlenden."
+    },
+    {
+      "id": 6681,
+      "name": "Einheitliche Vergütung für gesetzlich und privat Versicherte (Bürgerversicherung)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Nimmt Praxen den finanziellen Anreiz, Privatversicherte bei Terminen vorzuziehen; ob die Wartezeiten insgesamt sinken, hängt von der Höhe der neuen Vergütung ab. Der Umbau der privaten Krankenversicherung ist rechtlich und praktisch sehr aufwendig."
+    },
+    {
+      "id": 6824,
+      "name": "Mehr Studienplätze in der Medizin",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Absolventinnen und Absolventen setzen am Nachwuchsmangel an, wirken aber erst nach etwa zwölf Jahren Studium und Weiterbildung; ob sie Hausärzte auf dem Land werden, ist offen. Studienplätze finanzieren die Länder, der Bund kann nur mitfinanzieren."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden kommen in entlegene Gebiete.",
+      "zitat": "Mobile Einheiten („Klinikmobile“): Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden werden in entlegenen Gebieten eingesetzt.",
+      "ursachen_ids": [
+        101
+      ],
+      "pruefsumme": "554aeda46ae9861d"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Multiprofessionelle regionale Versorgungszentren mit Gesundheitsfachberufen werden eingerichtet.",
+      "zitat": "Regionale Versorgungszentren (RVZ): Multiprofessionelle Zentren mit Gesundheitsfachberufen und Daseinsvorsorgediensten werden eingerichtet.",
+      "ursachen_ids": [
+        101
+      ],
+      "pruefsumme": "7cb6eca6c020169a"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt (Hausarztzentrierung), um Fachpraxen zu entlasten.",
+      "zitat": "Hauspraxiszentrierte Versorgung (HzV): Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt, um die Fachpraxen zu entlasten.",
+      "ursachen_ids": [
+        102
+      ],
+      "pruefsumme": "bc454c742b2f7389"
+    }
+  ]
+}

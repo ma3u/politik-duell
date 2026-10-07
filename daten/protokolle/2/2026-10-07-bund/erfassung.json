@@ -1,0 +1,305 @@
+{
+  "thema_id": 2,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Fördersystem für klimafreundlichen Wohnbau im bezahlbaren Preissegment",
+          "ursachen_ids": [
+            201,
+            202
+          ],
+          "zitat": "Gezielte Förderung im Niedrigpreissegment: Ein Fördersystem unterstützt gezielt klimafreundlichen Wohnbau im bezahlbaren Preissegment.",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Steuerliche Begünstigungen und günstige Kredite für Genossenschaften und Baugemeinschaften",
+          "ursachen_ids": [
+            201,
+            203
+          ],
+          "zitat": "Genossenschaften und Baugemeinschaften profitieren von steuerlichen Begünstigungen wie ermäßigten Umsatz- und Grunderwerbsteuern, Sonderabschreibungen und vergünstigten Krediten.",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Rückkauf und Neubau von Wohnungen durch Kommunen",
+          "ursachen_ids": [
+            201,
+            202
+          ],
+          "zitat": "Mehr Wohnungen in kommunaler Trägerschaft: Durch den Rückkauf und Neubau von Wohnungen durch Kommunen profitieren Anwohnende von einer langfristigen Preisstabilität.",
+          "seite": 95
+        },
+        {
+          "beschreibung": "Sozialbindung bei Wohnbauprojekten verlängern, durch niedrigere Baukosten ausgeglichen",
+          "ursachen_ids": [
+            206
+          ],
+          "zitat": "Verlängerung der Sozialbindung: Die Sozialbindung bei Wohnbauprojekten wird verlängert und durch niedrigere Baukosten wirtschaftlich ausgeglichen.",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Umnutzung leerstehender Gewerbegebäude zu Wohnraum, Leerstandsmanagement und Baugebote",
+          "ursachen_ids": [
+            201
+          ],
+          "zitat": "Leerstehende Gewerbegebäude werden unbürokratisch zu Wohnraum umgewandelt. Aktives Leerstandsmanagement sowie Anreize und Baugebote bringen leerstehende Wohnungen auf den Markt.",
+          "seite": 94
+        },
+        {
+          "beschreibung": "Umbau-, Nachverdichtungs- und Aufstockungsverfahren vereinfachen und beschleunigen",
+          "ursachen_ids": [
+            201,
+            205
+          ],
+          "zitat": "Nachverdichtung und Aufstockung: Umbau-, Nachverdichtungs- und Aufstockungsverfahren werden vereinfacht und beschleunigt, um vorhandene Flächen effizient zu nutzen.",
+          "seite": 94
+        },
+        {
+          "beschreibung": "Weniger nachzuweisende Pkw-Stellplätze bei nachhaltigen Mobilitätslösungen",
+          "ursachen_ids": [
+            203
+          ],
+          "zitat": "Reform der Stellplatzverordnungen: Weniger PKW-Stellplätze müssen nachgewiesen werden, wenn nachhaltige Mobilitätslösungen angeboten werden.",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Landesbauordnungen angleichen, Genehmigungen digitalisieren und verschlanken",
+          "ursachen_ids": [
+            201
+          ],
+          "zitat": "Einheitliche Bauvorschriften: Die Angleichung der Landesbauordnungen erleichtert Bauprozesse und beschleunigt Projekte durch klare und einheitliche Normen.",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Serieller Modulbau mit nachhaltigen Baustoffen, wo Neubau nötig ist",
+          "ursachen_ids": [
+            203
+          ],
+          "zitat": "Serieller Modulbau mit nachhaltigen Baustoffen: Dort, wo Neubau notwendig ist, wird auf nachhaltige Baustoffe wie Holz, Lehm und Recyclate gesetzt, um zukunftsorientierte Bauweisen zu fördern.",
+          "seite": 96
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 202,
+          "seiten": [
+            94,
+            95,
+            96
+          ],
+          "grund": "Keine Zusage zu Mietpreisbremse, Neuvermietungsmieten oder Mietendeckel; nur Angebotsausweitung, dort erfasst."
+        },
+        {
+          "ursache": 204,
+          "seiten": [
+            94,
+            95,
+            96
+          ],
+          "grund": "Keine Zusage zu Bestandsmieten, Kappung oder Mietenstopp im Wohnkapitel."
+        },
+        {
+          "ursache": 205,
+          "seiten": [
+            50,
+            135,
+            94
+          ],
+          "grund": "Zuwanderung wird nur erleichtert (Fachkräfte, Asylsystem), nicht begrenzt oder mit Bezug zur Wohnungsnachfrage gesteuert; Nachverdichtung ist erfasst."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "201": {
+      "Mehr bauen": [
+        "wohnungsbau",
+        "neubau",
+        "bauland",
+        "bauen",
+        "wohnungen bauen",
+        "baugenehmigung",
+        "bauordnung",
+        "bauturbo"
+      ]
+    },
+    "202": {
+      "Mietpreisbremse, Mietendeckel": [
+        "mietpreisbremse",
+        "mietendeckel",
+        "neuvermietung",
+        "wiedervermietung",
+        "mietwucher"
+      ],
+      "Angebot ausweiten": [
+        "angebot",
+        "neubau",
+        "wohnraum schaffen"
+      ]
+    },
+    "203": {
+      "Standards senken, günstiger bauen": [
+        "baukosten",
+        "baustandard",
+        "gebäudetyp e",
+        "serielles bauen",
+        "modulares bauen",
+        "grunderwerbsteuer",
+        "normen"
+      ]
+    },
+    "204": {
+      "Kappung, Mietenstopp": [
+        "kappungsgrenze",
+        "mietenstopp",
+        "indexmiete",
+        "staffelmiete",
+        "bestandsmiete",
+        "mieterhöhung",
+        "modernisierungsumlage"
+      ]
+    },
+    "205": {
+      "Zuwanderung begrenzen oder steuern": [
+        "zuwanderung",
+        "migration",
+        "einwanderung",
+        "asyl",
+        "flüchtling"
+      ],
+      "Mehr Angebot in wachsenden Städten": [
+        "ballungsr",
+        "ballungszentr",
+        "großstädte",
+        "metropol",
+        "angespannte",
+        "wachsende städte",
+        "nachverdichtung",
+        "aufstockung",
+        "dachgeschoss",
+        "umland",
+        "speckgürtel"
+      ]
+    },
+    "206": {
+      "Sozialen Wohnungsbau ausweiten, Bindungen verlängern": [
+        "sozialwohnung",
+        "sozialer wohnungsbau",
+        "wohnraumförderung",
+        "belegungsbindung",
+        "sozialbindung",
+        "mietpreisbindung",
+        "geförderte wohnung",
+        "gemeinnützig",
+        "wohnungsgemeinnützigkeit"
+      ],
+      "Fehlbelegung, Wohngeld statt Objektförderung": [
+        "fehlbelegung",
+        "wohngeld",
+        "subjektförderung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "b31cb6bd4f6d86bc74bee03bf7e63f421df19614699990b7f7cc63184f882dcd",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "201": {
+            "Mehr bauen": {
+              "wohnungsbau": 3,
+              "neubau": 6,
+              "bauland": 0,
+              "bauen": 22,
+              "wohnungen bauen": 0,
+              "baugenehmigung": 1,
+              "bauordnung": 1,
+              "bauturbo": 0
+            }
+          },
+          "202": {
+            "Mietpreisbremse, Mietendeckel": {
+              "mietpreisbremse": 0,
+              "mietendeckel": 0,
+              "neuvermietung": 0,
+              "wiedervermietung": 0,
+              "mietwucher": 0
+            },
+            "Angebot ausweiten": {
+              "angebot": 65,
+              "neubau": 6,
+              "wohnraum schaffen": 1
+            }
+          },
+          "203": {
+            "Standards senken, günstiger bauen": {
+              "baukosten": 1,
+              "baustandard": 0,
+              "gebäudetyp e": 0,
+              "serielles bauen": 0,
+              "modulares bauen": 0,
+              "grunderwerbsteuer": 1,
+              "normen": 3
+            }
+          },
+          "204": {
+            "Kappung, Mietenstopp": {
+              "kappungsgrenze": 0,
+              "mietenstopp": 0,
+              "indexmiete": 0,
+              "staffelmiete": 0,
+              "bestandsmiete": 0,
+              "mieterhöhung": 0,
+              "modernisierungsumlage": 0
+            }
+          },
+          "205": {
+            "Zuwanderung begrenzen oder steuern": {
+              "zuwanderung": 2,
+              "migration": 7,
+              "einwanderung": 1,
+              "asyl": 27,
+              "flüchtling": 1
+            },
+            "Mehr Angebot in wachsenden Städten": {
+              "ballungsr": 0,
+              "ballungszentr": 0,
+              "großstädte": 0,
+              "metropol": 0,
+              "angespannte": 0,
+              "wachsende städte": 0,
+              "nachverdichtung": 2,
+              "aufstockung": 3,
+              "dachgeschoss": 0,
+              "umland": 0,
+              "speckgürtel": 0
+            }
+          },
+          "206": {
+            "Sozialen Wohnungsbau ausweiten, Bindungen verlängern": {
+              "sozialwohnung": 0,
+              "sozialer wohnungsbau": 0,
+              "wohnraumförderung": 0,
+              "belegungsbindung": 0,
+              "sozialbindung": 2,
+              "mietpreisbindung": 0,
+              "geförderte wohnung": 0,
+              "gemeinnützig": 4,
+              "wohnungsgemeinnützigkeit": 0
+            },
+            "Fehlbelegung, Wohngeld statt Objektförderung": {
+              "fehlbelegung": 0,
+              "wohngeld": 0,
+              "subjektförderung": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

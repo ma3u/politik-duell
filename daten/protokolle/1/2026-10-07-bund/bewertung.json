@@ -1,0 +1,39 @@
+{
+  "blind_pruefsumme": "07711c6b64f0a1dcf23b40fc0b38710d0e29dc8b857146946a2753c65e7b33a6",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bringt Sprechstunden zu wenig mobilen Menschen in entlegenen Orten; Studien und Pilotprojekte zeigen gute Auslastung. Ersetzt aber keine fehlenden Praxen, braucht selbst ärztliches Personal und ist teuer; die Sicherstellung liegt bei den KVen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://nnphi.org/resources/the-scope-and-impact-of-mobile-health-clinics-in-the-united-states-a-literature-review/"
+      },
+      "ursachen": [
+        101
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 6679,
+      "ursachen": [
+        101
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Hausarztsteuerung kann Facharztbesuche verringern (Studien zum Gatekeeping); die Praxisgebühr mit Ausnahme bei Überweisung zeigte aber kaum Steuerungswirkung und schreckte eher Ärmere ab. Per Bundesgesetz rasch umsetzbar.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://ideas.repec.org/p/zbw/rwipos/16.html"
+      },
+      "ursachen": [
+        102
+      ]
+    }
+  ]
+}

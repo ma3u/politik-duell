@@ -110,6 +110,16 @@
       "umsetzbarkeit": 0,
       "begruendung": "Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 8465,
+      "name": "Ausbau von Fernwärmenetzen und kommunaler Wärmeplanung fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann langfristig die Abhängigkeit von Gas- und Ölpreisen senken, wenn Netze erneuerbare Wärme oder Abwärme nutzen; Fernwärme wird heute aber noch stark mit Gas erzeugt, und in den Monopolnetzen sind die Preise oft hoch.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.vzbv.de/pressemitteilungen/teure-fernwaermepreise-verbraucherzentrale-fordert-preisdeckel",
+      "entwurf_herkunft": "blind"
     }
   ],
   "abdeckung": [
@@ -647,6 +657,89 @@
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
           "evidenz": "gemischt",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [301, 302, 303, 304, 305],
+      "massnahmen": [
+        {
+          "id": 8466,
+          "instrument": 6703,
+          "beschreibung": "Teile der Netzentgelte aus dem Bundeshaushalt decken",
+          "ursachen_ids": [301],
+          "zitat": "Teile der umlagefinanzierten Netzentgelte werden daher zukünftig aus dem Bundeshaushalt gedeckt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8467,
+          "instrument": 6703,
+          "beschreibung": "Netzentgelte verursachungsgerecht gestalten, Investitionen nicht mehr allein darüber finanzieren",
+          "ursachen_ids": [301],
+          "zitat": "Netzentgelte werden verursachungsgerecht gestaltet und Investitionen in Energieinfrastruktur werden nicht mehr ausschließlich durch Netzentgelte",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=67",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8468,
+          "instrument": 6704,
+          "beschreibung": "Stromsteuer auf das europäische Minimum senken",
+          "ursachen_ids": [302],
+          "zitat": "Die Stromsteuer wird auf das europäische Minimum reduziert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=67",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8469,
+          "instrument": 6705,
+          "beschreibung": "Einen Teil der CO₂-Einnahmen als direkte Zahlungen an die Menschen zurückgeben",
+          "ursachen_ids": [302],
+          "zitat": "Einnahmen aus CO₂-Steuern und dem Emissionshandel werden künftig zu mindestens 33 % über direkte Zahlungen an die Menschen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=60",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8470,
+          "instrument": 6707,
+          "beschreibung": "Strombedarf bis 2035 durchgehend vollständig aus erneuerbaren Energien decken",
+          "ursachen_ids": [304],
+          "zitat": "Im Jahr 2035 werden durchgehend 100 % des Strombedarfs aus erneuerbaren Energien gedeckt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=66",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8471,
+          "instrument": 6707,
+          "beschreibung": "Hemmnisse für Energiespeicher abbauen, damit Speicher wirtschaftlich attraktiv werden",
+          "ursachen_ids": [304],
+          "zitat": "Eine Regulierung von Energiespeichern, die sich eng am europäischen Rechtsrahmen orientiert, und der Abbau wirtschaftlicher und rechtlicher Hemmnisse",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=66",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8472,
+          "instrument": 8465,
+          "beschreibung": "Fernwärmeausbau und kommunale Wärmeplanung durch Förderprogramme und Duldungspflichten fördern",
+          "ursachen_ids": [305],
+          "zitat": "Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=68",
+          "stand": "2026-10-07",
           "geprueft": false,
           "ki_entwurf": true
         }

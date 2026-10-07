@@ -233,7 +233,13 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (4363, 4, 17, 'BE', 'Breites Angebot an Gemeinschaftsschulen', '{405}', 6079, 1, 2, null, 'Längeres gemeinsames Lernen soll den Einfluss der Herkunft verringern; ob die Schulstruktur den Schulerfolg beeinflusst, ist in der Forschung nicht entschieden. Eine Strukturreform braucht Jahre.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=15', null, 'offen', '2026-09-29', false, true, null),
   (4364, 4, 17, 'BE', 'Multiprofessionelle Teams mit Fachkräften für IT und Verwaltung', '{401}', 6072, 2, 2, null, 'Verwaltungs- und Unterstützungskräfte nehmen Lehrkräften Aufgaben ab und schaffen Zeit für Unterricht; Studien zu solchen Assistenzkräften zeigen positive, aber unterschiedlich große Effekte. Das Land kann die Stellen schaffen, Finanzierung und Bewerberlage sind die Hürden.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=16', null, 'gemischt', '2026-09-29', false, true, null),
   (4365, 4, 17, 'BE', 'Smartphones im Unterricht grundsätzlich nicht nutzen und wegschließen', '{403}', 6083, 1, 3, null, 'Ein Handyverbot kann Ablenkung im Unterricht verringern; Studien zu Wirkungen auf Leistungen sind gemischt. Das Land kann es per Erlass oder Gesetz regeln.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=16', null, 'gemischt', '2026-09-29', false, true, null),
-  (4366, 4, 17, 'BE', 'Sanierungen in klaren Fristen, Hausmeisterwesen für die Wartung', '{402}', 6085, 1, 2, null, 'Mehr Tempo bei Schulsanierungen setzt am Sanierungsstau an; das Programm nennt aber weder Umfang noch Finanzierung.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=17', null, 'gemischt', '2026-09-29', false, true, null);
+  (4366, 4, 17, 'BE', 'Sanierungen in klaren Fristen, Hausmeisterwesen für die Wartung', '{402}', 6085, 1, 2, null, 'Mehr Tempo bei Schulsanierungen setzt am Sanierungsstau an; das Programm nennt aber weder Umfang noch Finanzierung.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=17', null, 'gemischt', '2026-09-29', false, true, null),
+  (8473, 4, 18, null, 'Duales Lehramtsstudium, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt.', '{401}', null, 2, 2, null, 'Ein praxisintegriertes Lehramtsstudium mit Anrechnung ausländischer Abschlüsse kann zusätzliche Lehrkräfte gewinnen; zu dualen Lehramtsmodellen gibt es erst wenige Befunde. Lehrerbildung ist Ländersache, der Bund kann nur über Förderprogramme beitragen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=115', null, 'offen', '2026-10-07', false, true, 'blind'),
+  (8474, 4, 18, null, 'Lehrkräfte durch Verwaltungsfachkräfte und multiprofessionelle Teams entlasten.', '{401}', null, 2, 2, null, 'Verwaltungs- und Unterstützungskräfte nehmen Lehrkräften Aufgaben ab und schaffen Zeit für Unterricht; Studien zeigen Entlastung, Lerneffekte aber nur bei gezieltem Einsatz. Schulpersonal ist Ländersache, der Bund kann nur über Programme mitfinanzieren.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=107', 'https://evidenceforlearning.org.au/toolkit/teaching-assistants', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8475, 4, 18, null, 'Bundesweiter Bildungskanon für das Vorschuljahr, der Deutsch als Schulsprache und bilinguale Betreuung fördert.', '{404}', null, 1, 2, null, 'Ein gemeinsamer Bildungsrahmen für das Vorschuljahr kann Sprachförderung vereinheitlichen; ohne Sprachstandsfeststellung und Förderpflicht erreicht er nicht sicher alle Kinder mit Bedarf, Sprachförderprogramme wirken unterschiedlich. Der Bund braucht die Länder.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=108', null, 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8476, 4, 18, null, 'Längeres gemeinsames Lernen: Dreigliedriges Schulsystem wird aufgehoben.', '{405}', null, 2, 1, null, 'Längeres gemeinsames Lernen setzt an der frühen Trennung an; eine Studie zu deutschen Ländern findet Gewinne für Leistungsschwächere, die Forschung zur Schulstruktur ist insgesamt aber uneinheitlich. Für die Schulstruktur ist der Bund nicht zuständig (Grundgesetzänderung).', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=110', 'https://www.diw.de/de/diw_01.c.610091.de/publikationen/diskussionspapiere/2018_1775/better_together__heterogeneous_effects_of_tracking_on_student_achievement.html', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8477, 4, 18, null, 'Lernmaterialien für schulpflichtige Kinder bundesweit kostenfrei, vom Bund finanziert.', '{405}', null, 1, 2, null, 'Kostenfreie Lernmittel entlasten vor allem einkommensschwache Familien; Studien zu kostenlosen Schulbüchern finden im Durchschnitt kaum Effekte auf Leistungen. Schulen sind Ländersache, der Bund kann nur über Vereinbarung und Finanztransfers beitragen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=105', 'https://www.povertyactionlab.org/node/1436', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8478, 4, 18, null, 'Psychologie, Schulsozialarbeit, Schulgesundheit und Sonderpädagogik als fester Teil der Schulen.', '{405}', null, 1, 2, null, 'Fachkräfte für Psychologie, Sozialarbeit und Sonderpädagogik unterstützen Kinder in schwierigen Lagen; Studien finden kleine positive Effekte von Schulberatung, sonst sind Wirkungen auf Leistungen kaum belegt. Schulpersonal ist Ländersache, der Bund kann nur mitfinanzieren.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=111', 'https://ideas.repec.org/p/pit/wpaper/396.html', 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -313,7 +319,13 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6085, 4),
   (6086, 4),
   (6087, 4),
-  (6088, 4);
+  (6088, 4),
+  (8473, 4),
+  (8474, 4),
+  (8475, 4),
+  (8476, 4),
+  (8477, 4),
+  (8478, 4);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (4, 11, null, 'massnahmen', null, '2026-09-28', true, null),
@@ -343,6 +355,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (4, 14, 'BE', 'massnahmen', null, '2026-09-29', true, null),
   (4, 15, 'BE', 'massnahmen', null, '2026-09-29', true, null),
   (4, 16, 'BE', 'massnahmen', null, '2026-09-29', true, null),
-  (4, 17, 'BE', 'massnahmen', null, '2026-09-29', true, null);
+  (4, 17, 'BE', 'massnahmen', null, '2026-09-29', true, null),
+  (4, 18, null, 'massnahmen', null, '2026-10-07', true, '{401,402,403,404,405}');
 
 commit;

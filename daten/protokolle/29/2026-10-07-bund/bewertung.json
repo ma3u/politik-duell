@@ -1,0 +1,43 @@
+{
+  "blind_pruefsumme": "143bf8eb9b05f7537a86d4c05a35d577601c8a5d98a584609ca31bd1ebb310e9",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Resilienzförderung ab der Kita und Fortbildung von Lehr- und Fachkräften unterstützen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Früh ansetzende Förderung und geschulte Fachkräfte können Belastungen eher erkennen; Übersichten finden aber wenig Beleg, dass Präventionsprogramme in Bildungseinrichtungen Angst oder Depression senken. Kita und Schule sind Ländersache, der Bund kann nur fördern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/31734106"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": 8167,
+      "ursachen": [
+        2905
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I1",
+      "ursachen": [
+        2903
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Im Hamburger Modell gut angenommen und mit weniger vermeidbaren Klinikfällen, aber ohne messbare Verbesserung der Gesundheitskompetenz; Beratung ist allgemein, nicht auf psychische Gesundheit ausgerichtet. Flächendeckender Aufbau braucht Finanzierungseinigung mit Kassen und Kommunen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.uni-hamburg.de/newsroom/presse/2021/pm17.html"
+      },
+      "ursachen": [
+        2903
+      ]
+    }
+  ]
+}

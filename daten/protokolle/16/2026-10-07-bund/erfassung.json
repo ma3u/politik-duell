@@ -1,0 +1,150 @@
+{
+  "thema_id": 16,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Finanzielle Unterstützung für klimaneutrale Maßnahmen bei Neubau und Sanierung.",
+          "ursachen_ids": [
+            1601
+          ],
+          "zitat": "Fördermittel für Klimaneutralität: Finanzielle Unterstützung wird bereitgestellt, um klimaneutrale Maßnahmen sowohl im Neubau als auch bei der Sanierung umzusetzen.",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Kommunale Wärmeplanung dauerhaft finanzieren, Fernwärmeausbau über Duldungspflichten und Förderprogramme voranbringen.",
+          "ursachen_ids": [
+            1603
+          ],
+          "zitat": "Kommunale Wärmeplanung: Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+          "seite": 68
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1602,
+          "seiten": [
+            66,
+            67,
+            68,
+            96
+          ],
+          "grund": "Kapitel Wärmewende und Klimaneutral Bauen gelesen; keine Zusage zu stabilen Heizungsregeln. Treffer zu 'geg'/'verlässlich' sind Wortteile in anderem Zusammenhang."
+        },
+        {
+          "ursache": 1604,
+          "seiten": [
+            54,
+            96
+          ],
+          "grund": "Keine Zusage zu Umlage, Warmmiete oder Vermieter-Anreizen für Heizungen; Treffer zu Abschreibung betreffen private Investitionen allgemein bzw. Wohnbau."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1601": {
+      "Förderung, günstiger Strom für Wärmepumpen": [
+        "wärmepumpe",
+        "förderung",
+        "heizungstausch",
+        "wärmepumpenstrom",
+        "contracting",
+        "leasing"
+      ],
+      "Technologieoffenheit, keine Vorgaben": [
+        "technologieoffen",
+        "heizung"
+      ]
+    },
+    "1602": {
+      "Verlässliche Regeln": [
+        "heizungsgesetz",
+        "gebäudeenergiegesetz",
+        "geg",
+        "verlässlich",
+        "planungssicherheit"
+      ]
+    },
+    "1603": {
+      "Wärmeplanung beschleunigen und fördern": [
+        "wärmeplanung",
+        "wärmenetz",
+        "fernwärme",
+        "nahwärme",
+        "kommunale wärmeplanung"
+      ]
+    },
+    "1604": {
+      "Umlage begrenzen, Warmmietenneutralität": [
+        "modernisierungsumlage",
+        "kappungsgrenze",
+        "warmmietenneutral",
+        "mieter"
+      ],
+      "Anreize für Vermieter": [
+        "vermieter",
+        "abschreibung",
+        "wohngeld"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "eac5b274df504d92a1059ef5c90a0dcd2f8bfc4668e241df9f7ffb3c0fa496c2",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "1601": {
+            "Förderung, günstiger Strom für Wärmepumpen": {
+              "wärmepumpe": 2,
+              "förderung": 84,
+              "heizungstausch": 0,
+              "wärmepumpenstrom": 0,
+              "contracting": 0,
+              "leasing": 0
+            },
+            "Technologieoffenheit, keine Vorgaben": {
+              "technologieoffen": 0,
+              "heizung": 1
+            }
+          },
+          "1602": {
+            "Verlässliche Regeln": {
+              "heizungsgesetz": 0,
+              "gebäudeenergiegesetz": 0,
+              "geg": 103,
+              "verlässlich": 12,
+              "planungssicherheit": 6
+            }
+          },
+          "1603": {
+            "Wärmeplanung beschleunigen und fördern": {
+              "wärmeplanung": 1,
+              "wärmenetz": 2,
+              "fernwärme": 2,
+              "nahwärme": 1,
+              "kommunale wärmeplanung": 1
+            }
+          },
+          "1604": {
+            "Umlage begrenzen, Warmmietenneutralität": {
+              "modernisierungsumlage": 0,
+              "kappungsgrenze": 0,
+              "warmmietenneutral": 0,
+              "mieter": 0
+            },
+            "Anreize für Vermieter": {
+              "vermieter": 0,
+              "abschreibung": 2,
+              "wohngeld": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

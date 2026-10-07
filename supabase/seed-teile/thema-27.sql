@@ -155,7 +155,9 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (8138, 27, 17, null, 'Mehr Pflegepersonal ausbilden und besser bezahlen.', '{2704,2701}', 8026, 2, 2, null, 'Mehr ausgebildetes Personal kann Besetzungsengpässe mindern, bessere Bezahlung kann die Anerkennung stärken. Ausbildung wirkt zeitverzögert und beide Zusagen lassen Umfang und Finanzierung offen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', 'https://www.who.int/publications/i/item/9789240003279', 'gemischt', '2026-10-06', false, true, 'blind'),
   (8139, 27, 17, 'MV', 'Mitbestimmung als Teil verbesserter Arbeitsbedingungen zur Fachkräftebindung stärken', '{2705}', 8006, 2, 2, null, 'Verlässlichere Arbeitszeiten und mehr Beteiligung setzen an Erholung und Einflussmöglichkeiten an. Die Zusage bleibt breit und lässt Umfang, Umsetzung und Finanzierung offen.', 'https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=19', 'https://www.who.int/publications/i/item/9789240053052', 'gemischt', '2026-10-06', false, true, 'blind'),
   (8140, 27, 17, 'ST', 'Betriebsräte und Gewerkschaften an Investitions-, Standort- und Transformationsentscheidungen beteiligen.', '{2705}', 8008, 2, 2, null, 'Verbindliche Beteiligung kann den Einfluss auf Arbeitsbedingungen und Veränderungsprozesse erhöhen. Ohne nähere Zuständigkeiten und Durchsetzungsrechte bleibt die erwartbare Wirkung unsicher.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=22', null, 'offen', '2026-10-06', false, true, 'blind'),
-  (8141, 27, 17, 'ST', 'Behinderungen betrieblicher Mitbestimmung sanktionieren.', '{2705}', 8021, 2, 1, null, 'Wirksame Sanktionen können Mitsprache schützen und abschrecken. Die Schaffung neuer Straftatbestände oder Sanktionen liegt nicht ohne Weiteres in Landeshand; die Maßnahme braucht bundesrechtliche Schritte.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=22', null, 'offen', '2026-10-06', false, true, 'blind');
+  (8141, 27, 17, 'ST', 'Behinderungen betrieblicher Mitbestimmung sanktionieren.', '{2705}', 8021, 2, 1, null, 'Wirksame Sanktionen können Mitsprache schützen und abschrecken. Die Schaffung neuer Straftatbestände oder Sanktionen liegt nicht ohne Weiteres in Landeshand; die Maßnahme braucht bundesrechtliche Schritte.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=22', null, 'offen', '2026-10-06', false, true, 'blind'),
+  (8583, 27, 18, null, 'Modellstudiengänge für Rettungsfachpersonal ausbauen und dauerhaft etablieren, weitere berufliche und akademische Weiterbildungsmöglichkeiten schaffen.', '{2704}', null, 1, 2, null, 'Fehlende Entwicklungsperspektiven gelten in einer Befragung von 814 Rettungskräften als Ausstiegsgrund; Studiengänge und Weiterbildung verbessern aber weder Pausen, Überstunden noch Besetzung. Hochschulen sind Ländersache, der Bund kann über Berufsrecht und Förderung beitragen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=128', 'https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2025.1548525/full', 'offen', '2026-10-07', false, true, 'blind'),
+  (8584, 27, 18, null, 'Heilberufe erhalten Antrags- und Stimmrechte im Gemeinsamen Bundesausschuss.', '{2705}', null, 1, 2, null, 'Stimmrechte im G-BA geben Heilberufen Einfluss auf Richtlinien, die ihre Arbeit mitprägen, wirken aber nur mittelbar auf Mitsprache am Arbeitsplatz. Rechtlich per Bundesgesetz möglich, doch Fragen der demokratischen Legitimation und Vertretung sind ungeklärt.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=128', null, 'offen', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -215,7 +217,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (8055, 27),
   (8056, 27),
   (8057, 27),
-  (8058, 27);
+  (8058, 27),
+  (8583, 27),
+  (8584, 27);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (27, 11, null, 'massnahmen', null, '2026-10-06', true, '{2701,2702,2703,2704,2705,2706}'),
@@ -245,6 +249,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (27, 17, null, 'massnahmen', null, '2026-10-06', true, '{2701,2702,2703,2704,2705,2706}'),
   (27, 17, 'BE', 'keine', 'Kapitel »Gesundheitswesen« (S. 21–25) und Fundstellen S. 31, 32, 62 gelesen; keine konkrete Zusage zu den zulässigen Ursachen 2705 oder 2706.', '2026-10-06', true, '{2705,2706}'),
   (27, 17, 'MV', 'massnahmen', null, '2026-10-06', true, '{2705,2706}'),
-  (27, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{2705,2706}');
+  (27, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{2705,2706}'),
+  (27, 18, null, 'massnahmen', null, '2026-10-07', true, '{2701,2702,2703,2704,2705,2706}');
 
 commit;

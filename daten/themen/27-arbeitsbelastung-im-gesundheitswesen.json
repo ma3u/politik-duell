@@ -1724,6 +1724,43 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [2701, 2702, 2703, 2704, 2705, 2706],
+      "massnahmen": [
+        {
+          "id": 8583,
+          "beschreibung": "Modellstudiengänge für Rettungsfachpersonal ausbauen und dauerhaft etablieren, weitere berufliche und akademische Weiterbildungsmöglichkeiten schaffen.",
+          "ursachen_ids": [2704],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Fehlende Entwicklungsperspektiven gelten in einer Befragung von 814 Rettungskräften als Ausstiegsgrund; Studiengänge und Weiterbildung verbessern aber weder Pausen, Überstunden noch Besetzung. Hochschulen sind Ländersache, der Bund kann über Berufsrecht und Förderung beitragen.",
+          "zitat": "Berufliche Perspektiven erweitern: Die Modellstudiengänge für Rettungsfachpersonal werden ausgebaut und dauerhaft etabliert. Zusätzlich werden weitere berufliche und akademische Weiterbildungsmöglichkeiten geschaffen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=128",
+          "beleg_studie_url": "https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2025.1548525/full",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8584,
+          "beschreibung": "Heilberufe erhalten Antrags- und Stimmrechte im Gemeinsamen Bundesausschuss.",
+          "ursachen_ids": [2705],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Stimmrechte im G-BA geben Heilberufen Einfluss auf Richtlinien, die ihre Arbeit mitprägen, wirken aber nur mittelbar auf Mitsprache am Arbeitsplatz. Rechtlich per Bundesgesetz möglich, doch Fragen der demokratischen Legitimation und Vertretung sind ungeklärt.",
+          "zitat": "Mitbestimmung im Gemeinsamen Bundesausschuss (G-BA): Heilberufe erhalten Antrags- und Stimmrechte im G-BA.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=128",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

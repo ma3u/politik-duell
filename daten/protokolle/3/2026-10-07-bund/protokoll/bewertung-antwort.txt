@@ -1,0 +1,22 @@
+{
+  "blind_pruefsumme": "f2b961ac03fc781c77e1a76ee3890effd1f9460c900845df8cc9df68f85b50f3",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Ausbau von Fernwärmenetzen und kommunaler Wärmeplanung fördern (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Kann langfristig die Abhängigkeit von Gas- und Ölpreisen senken, wenn Netze erneuerbare Wärme oder Abwärme nutzen; Fernwärme wird heute aber noch stark mit Gas erzeugt, und in den Monopolnetzen sind die Preise oft hoch.", "evidenz": "gemischt", "beleg_studie_url": "https://www.vzbv.de/pressemitteilungen/teure-fernwaermepreise-verbraucherzentrale-fordert-preisdeckel" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 6707, "ursachen": [304] },
+    { "kennung": "M02", "instrument": 6703, "ursachen": [301] },
+    { "kennung": "M03", "instrument": "I1", "ursachen": [305] },
+    { "kennung": "M04", "instrument": 6704, "ursachen": [302] },
+    { "kennung": "M05", "instrument": 6707, "ursachen": [304] },
+    { "kennung": "M06", "instrument": 6703, "ursachen": [301] },
+    { "kennung": "M07", "instrument": 6705, "ursachen": [302] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; die Liste enthielt keine offenen Ursachen. Keine Maßnahme ohne Ursache.
+- M01 (100 % erneuerbarer Strom bis 2035) ist ein Ziel, aber ein konkretes Ausbauziel; ich habe es dem Lösungsweg 6707 zugeordnet und nur 304 genannt (eine Senkung der Importe, Ursache 303, wäre denkbar, steht aber nicht im Zitat und ist dem Instrument sonst nicht zugeordnet).
+- M02 fiel schwer: "verursachungsgerecht" ist unbestimmt; der Kern (Investitionen nicht mehr allein über Netzentgelte finanzieren) entspricht dem Lösungsweg 6703. Wer das für zu unbestimmt hält, könnte eine Einzelbewertung mit Wirksamkeit 1 erwägen.
+- M07 (mindestens 33 % der CO2-Einnahmen als Direktzahlung) ist ein teilweises Klimageld; gleicher Lösungsweg wie 6705.
+- I1: Belege geöffnet beim vzbv (Auswertung von 576 Wärmenetzen: Median 17 ct/kWh, gut jedes vierte Netz 20 ct oder mehr, Monopolmarkt ohne Preisaufsicht). Für die vorhandenen Instrumente lagen keine Studien-URLs vor; zu 6703 habe ich die Seite der Bundesregierung zum Bundeszuschuss (6,5 Mrd. Euro 2026, rund 100 Euro je Haushalt) geöffnet, die die Einstufung stützt.

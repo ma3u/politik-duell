@@ -1,0 +1,259 @@
+{
+  "pruefsumme": "c67651b717025269b5b097ec355362759428fe25fb1a4b8cc5177cbc3124e0af",
+  "thema": {
+    "id": 5,
+    "name": "Arbeitsplätze",
+    "ziel": "Menschen finden und behalten sichere, fair bezahlte Arbeit in ihrer Region."
+  },
+  "ursachen": [
+    {
+      "id": 501,
+      "beschreibung": "Die Industrie verliert an Wettbewerbsfähigkeit: überdurchschnittlich gestiegene Energiepreise und Lohnstückkosten, dazu hohe wirtschaftspolitische Unsicherheit und geopolitische Veränderungen",
+      "ebene": "bund"
+    },
+    {
+      "id": 502,
+      "beschreibung": "Strukturwandel: Die Industrie baut Stellen ab, neue Jobs entstehen vor allem in anderen Branchen",
+      "ebene": "bund"
+    },
+    {
+      "id": 503,
+      "beschreibung": "Löhne in Ostdeutschland liegen weiterhin deutlich unter denen im Westen",
+      "ebene": "bund"
+    },
+    {
+      "id": 504,
+      "beschreibung": "Zu wenig Investitionen: Für Verkehr, Bildung, Kommunen und Klimaschutz fehlen über zehn Jahre rund 600 Mrd. Euro zusätzliche öffentliche Investitionen",
+      "ebene": "bund"
+    },
+    {
+      "id": 505,
+      "beschreibung": "Hohe Bürokratiekosten: Unternehmen tragen jährlich rund 64 Mrd. Euro Kosten für Berichts- und Informationspflichten",
+      "ebene": "bund"
+    },
+    {
+      "id": 506,
+      "beschreibung": "Mehr zu arbeiten lohnt sich für Menschen im Bürgergeld oft kaum, weil der Hinzuverdienst größtenteils angerechnet wird",
+      "ebene": "bund"
+    },
+    {
+      "id": 507,
+      "beschreibung": "Nur knapp die Hälfte der Beschäftigten (49 %) arbeitet in einem tarifgebundenen Betrieb",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6089,
+      "name": "Stromsteuer und Netzentgelte senken",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Niedrigere Stromsteuer und Netzentgelte senken direkt die Energiekosten, die der Sachverständigenrat als Grund der Industrieschwäche nennt; allein gleichen sie den Kostenabstand aber nicht aus. Die Gegenfinanzierung ist offen."
+    },
+    {
+      "id": 6090,
+      "name": "Unternehmenssteuern senken",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Niedrigere Unternehmenssteuern können Investitionen anregen, setzen aber nicht an den vom Sachverständigenrat genannten Gründen (Energiepreise, Lohnstückkosten) an; Studien zur Wirkung sind gemischt. Die Gegenfinanzierung ist offen."
+    },
+    {
+      "id": 6091,
+      "name": "Bürokratie im nationalen Recht abbauen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Systematischer Abbau von Pflichten setzt an den Bürokratiekosten an; bisherige Programme haben die Kosten laut Normenkontrollrat nur langsam gesenkt. Umsetzbar im nationalen Recht."
+    },
+    {
+      "id": 6092,
+      "name": "Hinzuverdienst in Grundsicherung und Wohngeld weniger anrechnen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Geringere Anrechnung von Hinzuverdienst setzt direkt an der Ursache an; das ifo/ZEW-Gutachten für das Arbeitsministerium erwartet mehr Beschäftigung. Die Reform ist Bundesrecht, Kosten und Ausgestaltung sind offen."
+    },
+    {
+      "id": 6093,
+      "name": "Investitionsprämie für Unternehmen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Investitionsprämie kann Investitionen vorziehen, setzt aber nicht an den vom Sachverständigenrat genannten Gründen an; Studien finden teils Mitnahmeeffekte. Umsetzbar per Bundesgesetz, Finanzierung offen."
+    },
+    {
+      "id": 6094,
+      "name": "Mindestlohn auf 15 Euro anheben",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Ein höherer Mindestlohn hebt die unteren Löhne, von denen im Osten mehr Menschen betroffen sind; Studien zur Erhöhung auf 12 Euro fanden kaum Beschäftigungsverluste. Den Abstand oberhalb des Mindestlohns schließt er nicht. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6095,
+      "name": "Allgemeinverbindlicherklärung von Tarifverträgen erleichtern",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Eine erleichterte Allgemeinverbindlicherklärung kann die Tarifbindung ganzer Branchen erhöhen, Tariftreue wirkt nur bei öffentlichen Aufträgen; die Wirkung auf die Tarifquote ist in Studien begrenzt belegt. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6096,
+      "name": "Geförderte Weiterbildung beim Wechsel von Beruf oder Branche",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Geförderte Weiterbildung hilft Beschäftigten beim Wechsel in neue Branchen; Studien zeigen positive, aber je nach Maßnahme sehr unterschiedliche Effekte. Umsetzbar über die Arbeitsförderung, Finanzierung offen."
+    },
+    {
+      "id": 6097,
+      "name": "Berichtspflichten mit EU-rechtlicher Grundlage abschaffen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Wegfall von Berichtspflichten setzt an den Bürokratiekosten an; bisherige Programme haben die Kosten laut Normenkontrollrat nur langsam gesenkt. Ein Teil der genannten Pflichten beruht auf EU-Recht, das Deutschland nicht allein ändern kann."
+    },
+    {
+      "id": 6098,
+      "name": "Schuldenbremse für Investitionen lockern oder abschaffen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Mehr Spielraum für öffentliche Investitionen setzt direkt an der Investitionslücke an. Eine Änderung der Schuldenbremse erfordert eine Grundgesetzänderung mit Zweidrittelmehrheit."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Teil der Netzentgelte aus dem Bundeshaushalt finanzieren",
+      "zitat": "Teile der umlagefinanzierten Netzentgelte werden daher zukünftig aus dem Bundeshaushalt gedeckt.",
+      "ursachen_ids": [
+        501
+      ],
+      "pruefsumme": "3aafa4dd0b018cd5"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Tarifbindung stärken",
+      "zitat": "Gleiche Entlohnung für gleiche Arbeit: […] Die Tarifbindung wird gestärkt.",
+      "ursachen_ids": [
+        507
+      ],
+      "pruefsumme": "f008540df7973ee9"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Umschulungsprogramme für den Wechsel in Berufe mit Fachkräftemangel",
+      "zitat": "Umschulungsprogramme: Spezielle Programme fördern den Berufswechsel in Berufsfelder mit Fachkräftemangel.",
+      "ursachen_ids": [
+        502
+      ],
+      "pruefsumme": "dcca5622f61b8759"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Recht auf Freistellung für Weiterbildung in zukunftsorientierten Berufen",
+      "zitat": "Recht auf Weiterbildung: Jede Person erhält das Recht auf Freistellung von der Arbeit für die Weiterbildung in zukunftsorientierten Berufen, insbesondere in MINT-Berufen.",
+      "ursachen_ids": [
+        502
+      ],
+      "pruefsumme": "ef61e4037144684a"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Energiesteuer auf das EU-rechtliche Minimum senken",
+      "zitat": "Energiesteuer: Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+      "ursachen_ids": [
+        501
+      ],
+      "pruefsumme": "58752861df4366e9"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Genehmigungsverfahren für Industrieanlagen vereinfachen und auf drei Monate begrenzen",
+      "zitat": "Baugenehmigungen: Planungs- und Genehmigungsverfahren für Industrieanlagen und Infrastrukturprojekte werden vereinfacht und sollen künftig spätestens nach drei Monaten abgeschlossen sein.",
+      "ursachen_ids": [
+        505
+      ],
+      "pruefsumme": "aba2f117d1421dd6"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Investitionen aus der Schuldenbremse ausnehmen (Goldene Regel Plus)",
+      "zitat": "Goldene Regel Plus: Zukunftsorientierte Nettoinvestitionen in Bereiche wie Infrastruktur, […] Bildung, Klimaschutz und Digitalisierung werden von der Schuldenbremse ausgenommen",
+      "ursachen_ids": [
+        504
+      ],
+      "pruefsumme": "b0604deacde4ebcd"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Pflicht für Großunternehmen, bei betriebsbedingten Kündigungen Weiterbildung in zukunftsfähigen Berufen zu finanzieren",
+      "zitat": "Sozialpläne: Großunternehmen werden verpflichtet, von betriebsbedingten Kündigungen betroffenen Arbeitnehmenden Weiterbildungen in zukunftsfähigen Berufen zu finanzieren.",
+      "ursachen_ids": [
+        502
+      ],
+      "pruefsumme": "411c7c1f80a177e2"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Zeitlich befristete Investitionsprämie für private Investitionen",
+      "zitat": "Investitionsprämie: Eine unbürokratische Investitionsprämie in Höhe von 10 % der Investitionssumme für die nächsten zwei Jahre setzt Anreize für private Investitionen",
+      "ursachen_ids": [
+        504
+      ],
+      "pruefsumme": "35933afaf9e73463"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Effektive Unternehmenssteuerbelastung auf den OECD-Durchschnitt senken",
+      "zitat": "Senkung von Unternehmenssteuern auf OECD-Mittel: Die effektive Steuerbelastung der Unternehmen wird an den Durchschnitt der OECD-Länder angepasst",
+      "ursachen_ids": [
+        501
+      ],
+      "pruefsumme": "cadc4b3b43a37ffa"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Infrastrukturfonds für private Investitionen und massive Infrastrukturinvestitionen",
+      "zitat": "Einrichtung eines Infrastrukturfonds: Es wird ein Infrastrukturfonds eingerichtet, der private Investitionen und innovative Technologien durch verbesserte Rahmenbedingungen fördert.",
+      "ursachen_ids": [
+        504
+      ],
+      "pruefsumme": "0d1f3e3b66286ba7"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Berichtspflichten des Lieferkettengesetzes streichen und an EU-Recht angleichen",
+      "zitat": "Lieferkettensorgfaltspflichten: Die Berichtspflichten des deutschen Lieferkettengesetzes (LkSG) werden gestrichen und der persönliche Anwendungsbereich und das materielle Recht an das europäische Lieferkettengesetz (CSDDD) angeglichen.",
+      "ursachen_ids": [
+        505
+      ],
+      "pruefsumme": "200ba3a056000585"
+    }
+  ]
+}

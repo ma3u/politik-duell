@@ -1,0 +1,33 @@
+{
+  "blind_pruefsumme": "e0abebe2aa83073e021d6baa21fc50f984665a614ed9f73612f329f4792bc8bf",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Gemeinsam genutzte Masten senken Kosten und können Funklöcher schließen (Großbritannien: Shared Rural Network); dort wirkte Sharing aber mit Versorgungsauflagen und Staatsgeld zusammen, hier bleibt es unverbindlich und zielt auf Nachhaltigkeit.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.gov.uk/government/publications/shared-rural-network-srn-progress-update-september-2024/shared-rural-network-srn-progress-update-september-2024"
+      },
+      "ursachen": [
+        1302
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 6966,
+      "ursachen": [
+        1301
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 6967,
+      "ursachen": [
+        1301
+      ]
+    }
+  ]
+}

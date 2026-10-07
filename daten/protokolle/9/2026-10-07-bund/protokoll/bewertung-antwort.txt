@@ -1,0 +1,32 @@
+{
+  "blind_pruefsumme": "2460efeed02aa498a8129da97016820f1d1357cf1d0020a922cbf9cfb1be8cd5",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 7490, "ursachen": [902] },
+    { "kennung": "M02", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Extremistische Netzwerke und Plattformen agieren oft grenzüberschreitend, engere Zusammenarbeit setzt dort an. Ohne konkretes Instrument bleibt die Wirkung unbestimmt, und sie hängt von der Mitwirkung anderer Staaten ab.", "evidenz": "offen" }, "ursachen": [907] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Spezialisierte forensische Notdienste (SANE) gingen in US-Studien mit häufigeren Verurteilungen einher, einzelne Standorte zeigten aber keinen Effekt. Ein bundesweiter 24/7-Dienst braucht Länder, Kliniken und Personal.", "evidenz": "gemischt", "beleg_studie_url": "https://crimesolutions.ojp.gov/ratedprograms/sexual-assault-nurse-examiner-sane-program-multisite" }, "ursachen": [908] },
+    { "kennung": "M04", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Mehr spezialisierte Ermittler können mehr Online-Taten aufklären. Viele Taten kommen aber aus dem Ausland, wo die Aufklärung gering bleibt; der Umfang ist offen, und die meisten Einheiten unterstehen den Ländern.", "evidenz": "offen" }, "ursachen": [906] },
+    { "kennung": "M05", "instrument": 7502, "ursachen": [907] },
+    { "kennung": "M06", "ursachen": [] },
+    { "kennung": "M07", "instrument": 7488, "ursachen": [906, 907] },
+    { "kennung": "M08", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Eine Studie aus Italien zeigt, dass ein gesicherter Aufenthalt mit legaler Arbeit die Straffälligkeit von Zugewanderten etwa halbiert. Die Maßnahme betrifft aber nur Menschen, die schon arbeiten und nicht straffällig sind.", "evidenz": "belegt", "beleg_studie_url": "https://swlb1.aeaweb.org/research/legalizing-immigrants-impact-crime-rate" }, "ursachen": [905] },
+    { "kennung": "M09", "instrument": 7502, "ursachen": [907] },
+    { "kennung": "M10", "instrument": 7491, "ursachen": [904] },
+    { "kennung": "M11", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "In Portugal entlastete die Entkriminalisierung des Konsums Justiz und Gefängnisse ohne starken Anstieg des Konsums. Eine völlig sanktionsfreie Regel geht weiter und steht in Spannung zu UN-Drogenkonventionen; schwere Taten werden nur indirekt schneller verfolgt.", "evidenz": "belegt", "beleg_studie_url": "https://kar.kent.ac.uk/29910/" }, "ursachen": [902] },
+    { "kennung": "M12", "instrument": 7496, "ursachen": [904] },
+    { "kennung": "M13", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Ein weiteres Opportunitätsprinzip kann Ressourcen auf schwere Taten lenken. Zugleich bleiben mehr kleine Taten ohne Folgen, und zur Wirkung auf die Aufklärung gibt es kaum Daten; die Abkehr vom Legalitätsprinzip ist rechtlich umstritten.", "evidenz": "offen" }, "ursachen": [902] },
+    { "kennung": "M14", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Mehr Personal für Spezialeinheiten stärkt Ermittlungen gegen organisierte Kriminalität. Auf die Aufklärung alltäglicher Straftaten wirkt es kaum; der Bund steuert nur BKA und Zoll, Wirkungsstudien fehlen.", "evidenz": "offen" }, "ursachen": [902] },
+    { "kennung": "M15", "instrument": 7483, "ursachen": [902] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Bauliche Sicherung und Schutzkonzepte können Anschläge abwehren, wie die gesicherte Tür in Halle 2019 zeigte; Meldestellen machen Taten sichtbar. Objektschutz liegt bei den Ländern, und Wirkungsstudien fehlen.", "evidenz": "offen" }, "ursachen": [907] },
+    { "kennung": "M17", "instrument": 7482, "ursachen": [902] },
+    { "kennung": "M18", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Eine Meta-Analyse zeigt weniger Rückfälle bei therapeutisch ausgerichteten, gut umgesetzten Programmen für straffällige Jugendliche. Welche Maßnahmen gemeint sind, bleibt offen; Jugendhilfe liegt bei Ländern und Kommunen.", "evidenz": "belegt", "beleg_studie_url": "https://ojp.gov/ncjrs/virtual-library/abstracts/primary-factors-characterize-effective-interventions-juvenile" }, "ursachen": [903] },
+    { "kennung": "M19", "instrument": 7494, "ursachen": [904] },
+    { "kennung": "M20", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Bessere Technik kann Dokumentation und Auswertung erleichtern. Eine Übersichtsstudie fand bei Bodycams aber keine Wirkung auf Festnahmen, nur weniger Beschwerden; der Bund steuert nur die Bundespolizei.", "evidenz": "gemischt", "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/" }, "ursachen": [902] },
+    { "kennung": "M21", "instrument": 7491, "ursachen": [907] }
+  ]
+}
+
+Hinweise:
+- Nicht bestätigt: M06 (unabhängige Kontrollstellen für Polizei, Verwaltung, Justiz) setzt an keiner Ursache an – es geht um Kontrolle staatlichen Fehlverhaltens, nicht um Aufklärung oder Folgen von Straftaten (vorgeschlagen war 902). M10: 908 (offen) nicht bestätigt, da das Zitat „Belästigung und Gewalt“ nicht ausdrücklich als sexualisiert benennt und „neue Formen“ eher auf digitale Gewalt deutet (nach Regel 12 nicht erfasst).
+- Offene entschieden: M07 907 bestätigt (Zitat nennt Terrorismus ausdrücklich; 906 als Vorschlag beibehalten wegen internationaler Zusammenarbeit, gleiche Zuordnung wie beim Instrument). M14 902 bestätigt (Personal von Ermittlungsbehörden, organisierte Kriminalität nach Regel 4).
+- Schwierig: M08 (Bleibeperspektive, Regel 8 „in beiden Richtungen“) – Zitat nennt Straffälligkeit, daher 905; Wirkung klein, weil die Gruppe schon arbeitet. M11 als Einzelbewertung statt 7490, weil „sanktionsfrei“ über das portugiesische Modell hinausgeht (Umsetzbarkeit 2). M10 und M21 zu 7491 (Strafverschärfung für ein Deliktfeld), obwohl der Instrumentname „Gewalt- und Sexualdelikte“ nennt. M04: Wirksamkeit 2 vs. 1 knapp, weil Auslandstaten kaum aufklärbar sind.

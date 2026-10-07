@@ -1,0 +1,123 @@
+{
+  "blind_pruefsumme": "b5808b953edbc28a07420511416b7b6fb2b605e409a312afa8d2e70c32b80bca",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": 7942,
+      "ursachen": [
+        1805
+      ]
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sanierung öffentlicher Gebäude senkt Energiebedarf und Emissionen (dena: rund 120 Mrd. Euro bis 2045 nötig, meist kommunale Gebäude). Auf Hitze in Deutschland wirkt das nur als kleiner Beitrag zum globalen Klimaschutz; Finanzierung offen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.pv-magazine.de/?p=23862"
+      },
+      "ursachen": [
+        1801,
+        1802
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": 7935,
+      "ursachen": [
+        1801,
+        1802
+      ]
+    },
+    {
+      "kennung": "M05",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Entwässerte Moore verursachen laut UBA rund 7,5 % der deutschen Emissionen, Wiedervernässung senkt sie deutlich. Dagegen: Flächen meist privat, Wasser fehlt teils, Umsetzung über Länder; auf Hitze wirkt nationaler Klimaschutz nur gering und langfristig.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.umweltbundesamt.de/node/102188"
+      },
+      "ursachen": [
+        1801,
+        1802
+      ]
+    },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Steuervergünstigungen für fossile Energie mindern Sparanreize, ihr Abbau stützt Klimaschutz und entlastet den Haushalt. Dagegen: Abwanderungsrisiko energieintensiver Industrie, Wirkung kaum beziffert; auf Hitze in Deutschland nur geringer, verzögerter Effekt.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.umweltbundesamt.de/themen/umweltschaedliche-subventionen-klettern-auf-ueber"
+      },
+      "ursachen": [
+        1801,
+        1802
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Eine Frist für fossile Energie in der Industrie würde Emissionen senken. Dagegen: Laut UBA ist die Umstellung der Prozesswärme bis 2045 machbar, 2035 ist sehr knapp, Wasserstoff und Strom fehlen, Bestandsschutz wirft Rechtsfragen auf; Wirkung auf Hitze gering.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.umweltbundesamt.de/themen/industrielle-prozesswaerme-kann-bis-2045-co2"
+      },
+      "ursachen": [
+        1801,
+        1802
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": 7941,
+      "ursachen": [
+        1803,
+        1804
+      ]
+    },
+    {
+      "kennung": "M09",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Hitzeschutzpläne gingen in 14 europäischen Ländern mit rund 25 % weniger hitzebedingten Todesfällen einher. Dagegen: Zusage ohne Mittel und Ziele; Umsetzung liegt bei Ländern und Kommunen, der Bund kann nur fördern und koordinieren.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.cmcc.it/article/heat-prevention-plans-help-save-lives"
+      },
+      "ursachen": [
+        1802
+      ]
+    },
+    {
+      "kennung": "M10",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "CO2-Preise senken Emissionen nachweislich, auf Hitze wirkt das aber nur gering und verzögert. Der Start 2027 ist durch EU-Recht (2026) bereits auf 2028 verschoben; Deutschland kann das nicht allein ändern.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.roedl.com/insights/ets-2-verzoegert-klimakosten-bleiben-warum-sie-nicht-auf-die-politik-warten-sollten-2/"
+      },
+      "ursachen": [
+        1801,
+        1802
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": 7940,
+      "ursachen": [
+        1803
+      ]
+    }
+  ]
+}

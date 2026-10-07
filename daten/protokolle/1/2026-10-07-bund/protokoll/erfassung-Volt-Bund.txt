@@ -1,0 +1,20 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt (Hausarztzentrierung), um Fachpraxen zu entlasten.", "ursachen_ids": [102], "zitat": "Hauspraxiszentrierte Versorgung (HzV): Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt, um die Fachpraxen zu entlasten.", "seite": 125 },
+    { "beschreibung": "Multiprofessionelle regionale Versorgungszentren mit Gesundheitsfachberufen werden eingerichtet.", "ursachen_ids": [101], "zitat": "Regionale Versorgungszentren (RVZ): Multiprofessionelle Zentren mit Gesundheitsfachberufen und Daseinsvorsorgediensten werden eingerichtet.", "seite": 125 },
+    { "beschreibung": "Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden kommen in entlegene Gebiete.", "ursachen_ids": [101], "zitat": "Mobile Einheiten („Klinikmobile“): Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden werden in entlegenen Gebieten eingesetzt.", "seite": 126 }
+  ],
+  "neue_buendel": [
+    { "ursache": 102, "name": "Selbstbeteiligung bei Facharztbesuch ohne Überweisung", "seite": 125 },
+    { "ursache": 101, "name": "Regionale Versorgungszentren", "seite": 125 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 103, "seiten": [123, 124], "grund": "Keine Zusage zu Vergütung nach Versicherungsstatus; Einheitliches Vergütungssystem betrifft Leistungsarten, gemeinsame Krankenversicherung ist Finanzierungsreform ohne Bezug zur Terminvergabe." }
+  ]
+}
+
+Protokoll: Seiten 123-128 (Kapitel Gesundheit) gelesen, Fundstellen S. 124-126, 128, 133 geprüft; übrige Fundstellen (Budget-Treffer in anderen Themen) übersprungen.
+Nicht erfasst: S. 124 "Bedarfsgerechte Versorgung" (Unterversorgung durch Terminverknappung wird bekämpft) – ohne konkretes Instrument. S. 125 "Regionale Planung" – allgemeine Planung ohne Handlung zu Terminen. S. 126 Telemedizin und Approbationsordnung – kein klarer Ansatz an Ursachen. S. 128 Gesundheitsberufe – Aus-/Weiterbildung, keine Aufgabenübertragung.
+Ursache 103: keine Zusage zu Vergütung nach Versicherungsstatus; S. 124 Einheitliches Vergütungssystem betrifft Leistungsarten, nicht Privat/Gesetzlich; gemeinsame Krankenversicherung (S. 123) ist Finanzierungsreform ohne Bezug zur Terminvergabe, nicht aufgenommen.

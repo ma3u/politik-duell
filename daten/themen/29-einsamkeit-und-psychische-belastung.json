@@ -323,6 +323,16 @@
       "evidenz": "offen",
       "beleg_studie_url": "https://europepmc.org/articles/PMC13341547",
       "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8585,
+      "name": "Resilienzförderung ab der Kita und Fortbildung von Lehr- und Fachkräften unterstützen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Früh ansetzende Förderung und geschulte Fachkräfte können Belastungen eher erkennen; Übersichten finden aber wenig Beleg, dass Präventionsprogramme in Bildungseinrichtungen Angst oder Depression senken. Kita und Schule sind Ländersache, der Bund kann nur fördern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://europepmc.org/article/MED/31734106",
+      "entwurf_herkunft": "blind"
     }
   ],
   "abdeckung": [
@@ -2256,6 +2266,50 @@
           "zitat": "Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
           "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=59",
           "stand": "2026-10-06",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [2901, 2902, 2903, 2904, 2905],
+      "massnahmen": [
+        {
+          "id": 8586,
+          "instrument": 8167,
+          "beschreibung": "Bedarfsplanung für Psychotherapie anpassen, mehr Kassensitze und gerechtere Verteilung",
+          "ursachen_ids": [2905],
+          "zitat": "Die Bedarfsplanung für psychotherapeutische Fachkräfte wird angepasst, um die Anzahl der Kassensitze zu erhöhen und für eine bessere Verfügbarkeit und gerechte Verteilung zu sorgen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=132",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8587,
+          "beschreibung": "Flächendeckende Gesundheitskioske für individuelle, niedrigschwellige Beratung",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Im Hamburger Modell gut angenommen und mit weniger vermeidbaren Klinikfällen, aber ohne messbare Verbesserung der Gesundheitskompetenz; Beratung ist allgemein, nicht auf psychische Gesundheit ausgerichtet. Flächendeckender Aufbau braucht Finanzierungseinigung mit Kassen und Kommunen.",
+          "zitat": "Flächendeckende Gesundheitskioske werden eingerichtet, um individuelle und niedrigschwellige Beratungsangebote zu gewährleisten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=130",
+          "beleg_studie_url": "https://www.uni-hamburg.de/newsroom/presse/2021/pm17.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8588,
+          "instrument": 8585,
+          "beschreibung": "Resilienzförderung schon im Kita-Alter, Weiterbildung für Fach- und Lehrkräfte",
+          "ursachen_ids": [2903],
+          "zitat": "Maßnahmen zur Stärkung der Widerstandsfähigkeit beginnen bereits im Kita-Alter. Dies wird unterstützt durch Weiterbildungen für Lehr- und Fachkräfte.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=132",
+          "stand": "2026-10-07",
           "geprueft": false,
           "ki_entwurf": true
         }

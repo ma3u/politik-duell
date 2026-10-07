@@ -17,12 +17,13 @@ insert into public.instrumente (id, thema_id, name, begruendung, evidenz, beleg_
   (7015, 15, 'Öffentliche Ladeinfrastruktur ausbauen und Ladepreise senken', 'Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox.', 'gemischt', null, 'bund', null, true, null),
   (7258, 15, 'Elektro- und verbrauchsarme Fahrzeuge fördern, um weniger Kraftstoff zu brauchen (Bund, Ölabhängigkeit)', 'Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.', 'gemischt', 'https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html', 'bund', null, true, null),
   (7259, 15, 'Alternative Kraftstoffe wie E-Fuels zulassen und gleichstellen (Bund, Ölabhängigkeit)', 'Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.', 'offen', 'https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf', 'bund', null, true, null),
-  (7260, 15, 'Energie- und Umsatzsteuer in Preiskrisen schnell senken (Bund)', 'Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.', 'gemischt', 'https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1', 'bund', null, true, null)
+  (7260, 15, 'Energie- und Umsatzsteuer in Preiskrisen schnell senken (Bund)', 'Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.', 'gemischt', 'https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1', 'bund', null, true, null),
+  (8554, 15, 'Energiesteuer auf Kraftstoffe dauerhaft auf den EU-Mindestsatz senken (Bund)', 'Senkt Benzin um rund 30 Cent, Diesel um 14 Cent je Liter vor Mehrwertsteuer; 2022 kam die Senkung bei Benzin voll, bei Diesel nur teilweise an. Dauerhaft fehlen rund 12 Mrd. Euro im Jahr; die Abschaffung auf EU-Ebene braucht Einstimmigkeit.', 'belegt', 'https://www.zew.de/PU84325', 'bund', null, true, 'blind')
 on conflict (id) do update set thema_id = excluded.thema_id, name = excluded.name, begruendung = excluded.begruendung,
   evidenz = excluded.evidenz, beleg_studie_url = excluded.beleg_studie_url, ebene = excluded.ebene,
   entspricht = excluded.entspricht, ki_entwurf = excluded.ki_entwurf, entwurf_herkunft = excluded.entwurf_herkunft;
 
-delete from public.instrumente where thema_id = 15 and id not in (7011, 7012, 7013, 7014, 7015, 7258, 7259, 7260);
+delete from public.instrumente where thema_id = 15 and id not in (7011, 7012, 7013, 7014, 7015, 7258, 7259, 7260, 8554);
 
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, instrument_id, wirksamkeit, umsetzbarkeit,
   rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values
@@ -55,7 +56,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7269, 15, 11, null, 'In angespannter Lage Energie- und Umsatzsteuer für Güter des täglichen Bedarfs schnell senken dürfen', '{1501}', 7260, 1, 1, null, 'Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14', 'https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1', 'gemischt', '2026-10-01', false, true, null),
   (7270, 15, 11, null, 'Europäischen Energiebinnenmarkt stärken, internationale Energiepartnerschaften ausbauen', '{1501}', null, 1, 3, null, 'Mehr Lieferländer machen Deutschland weniger anfällig für Preissprünge bei einzelnen Lieferanten; die Maßnahme nennt weder Öl noch konkrete Schritte.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=22', null, 'offen', '2026-10-01', false, true, null),
   (7271, 15, 17, null, 'Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis', '{1501}', null, 1, 2, null, 'Langfristige Verträge können Preisschwankungen dämpfen, binden aber auch an Preise, wenn der Markt fällt; die Maßnahme nennt kein Öl, sondern Energieimporte allgemein.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', null, 'offen', '2026-10-01', false, true, null),
-  (8001, 15, 16, null, 'Ablehnung des europäischen Emissionshandels für Wärme und Verkehr (ETS-2); stattdessen verbindliche Klimaziele und Emissionsgrenzen, damit kein CO₂-Preis auf Kraftstoffe entsteht.', '{1502}', 7011, 2, 1, null, 'Senkt den Spritpreis 2026 um rund 15 bis 18 Cent je Liter; ab 2028 gilt aber der europäische Emissionshandel für Verkehr, den Deutschland nicht allein abschaffen kann. Die Einnahmen fehlen für Entlastungen an anderer Stelle.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=33', null, 'belegt', '2026-10-05', false, true, null);
+  (8001, 15, 16, null, 'Ablehnung des europäischen Emissionshandels für Wärme und Verkehr (ETS-2); stattdessen verbindliche Klimaziele und Emissionsgrenzen, damit kein CO₂-Preis auf Kraftstoffe entsteht.', '{1502}', 7011, 2, 1, null, 'Senkt den Spritpreis 2026 um rund 15 bis 18 Cent je Liter; ab 2028 gilt aber der europäische Emissionshandel für Verkehr, den Deutschland nicht allein abschaffen kann. Die Einnahmen fehlen für Entlastungen an anderer Stelle.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=33', null, 'belegt', '2026-10-05', false, true, null),
+  (8555, 15, 18, null, 'Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene ganz abschaffen.', '{1502}', 8554, 2, 2, null, 'Senkt Benzin um rund 30 Cent, Diesel um 14 Cent je Liter vor Mehrwertsteuer; 2022 kam die Senkung bei Benzin voll, bei Diesel nur teilweise an. Dauerhaft fehlen rund 12 Mrd. Euro im Jahr; die Abschaffung auf EU-Ebene braucht Einstimmigkeit.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53', 'https://www.zew.de/PU84325', 'belegt', '2026-10-07', false, true, 'blind'),
+  (8556, 15, 18, null, 'Dieselsteuer schrittweise an die Benzinsteuer angleichen.', '{1502}', null, 0, 3, null, 'Die Angleichung verteuert Diesel um gut 18 Cent je Liter (mit Mehrwertsteuer rund 22 Cent) und macht das Fahren für Dieselfahrende teurer statt günstiger; rechtlich mit einfachem Gesetz möglich und bringt dem Bund Einnahmen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=62', 'https://www.umweltbundesamt.de/en/press/pressinformation/environmentally-harmful-subsidies-in-transport', 'belegt', '2026-10-07', false, true, 'blind'),
+  (8557, 15, 18, null, 'Ausbau der Ladeinfrastruktur für E-Fahrzeuge.', '{1505}', 7015, 1, 3, null, 'Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70', null, 'gemischt', '2026-10-07', false, true, null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -73,7 +77,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7259, 15),
   (7260, 15),
   (7270, 15),
-  (7271, 15);
+  (7271, 15),
+  (8554, 15),
+  (8556, 15);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (15, 11, null, 'massnahmen', null, '2026-10-01', true, null),
@@ -82,6 +88,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (15, 14, null, 'massnahmen', null, '2026-10-01', true, null),
   (15, 15, null, 'massnahmen', null, '2026-10-01', true, null),
   (15, 16, null, 'massnahmen', null, '2026-10-05', true, null),
-  (15, 17, null, 'massnahmen', null, '2026-10-01', true, null);
+  (15, 17, null, 'massnahmen', null, '2026-10-01', true, null),
+  (15, 18, null, 'massnahmen', null, '2026-10-07', true, '{1501,1502,1503,1504,1505}');
 
 commit;

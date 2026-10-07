@@ -1,0 +1,250 @@
+{
+  "thema_id": 29,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Bedarfsplanung für Psychotherapie anpassen, mehr Kassensitze und gerechtere Verteilung",
+          "ursachen_ids": [
+            2905
+          ],
+          "zitat": "Die Bedarfsplanung für psychotherapeutische Fachkräfte wird angepasst, um die Anzahl der Kassensitze zu erhöhen und für eine bessere Verfügbarkeit und gerechte Verteilung zu sorgen.",
+          "seite": 132
+        },
+        {
+          "beschreibung": "Flächendeckende Gesundheitskioske für individuelle, niedrigschwellige Beratung",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Flächendeckende Gesundheitskioske werden eingerichtet, um individuelle und niedrigschwellige Beratungsangebote zu gewährleisten.",
+          "seite": 130
+        },
+        {
+          "beschreibung": "Resilienzförderung schon im Kita-Alter, Weiterbildung für Fach- und Lehrkräfte",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Maßnahmen zur Stärkung der Widerstandsfähigkeit beginnen bereits im Kita-Alter. Dies wird unterstützt durch Weiterbildungen für Lehr- und Fachkräfte.",
+          "seite": 132
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2902,
+          "seiten": [
+            38,
+            89,
+            92,
+            108,
+            109,
+            130,
+            132
+          ],
+          "grund": "Ehrenamt-Informationen, Rentenpunkte und Mindestlohn setzen nicht an Einsamkeit durch Armut an; 'Maßnahmen gegen die Vereinsamung' (S. 132) ist ohne konkrete Handlung."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            132,
+            133,
+            38
+          ],
+          "grund": "Entstigmatisierung nur im Suchtkontext (S. 133, gehört zu Sucht); nichts zu Männern oder Scham bei Hilfesuche."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2901": {
+      "Begegnung und Gemeinschaft vor Ort stärken": [
+        "einsamkeit",
+        "begegnungsstätten",
+        "mehrgenerationenhaus",
+        "nachbarschaftshilfe",
+        "besuchsdienst",
+        "seniorentreff",
+        "strategie gegen einsamkeit",
+        "gemeinschaftsangebote"
+      ],
+      "Professionelle Begleitung bei Verlust": [
+        "trauerbegleitung",
+        "hospiz",
+        "seelsorgerische begleitung",
+        "beratungsangebote für ältere"
+      ]
+    },
+    "2902": {
+      "Teilhabe finanziell sichern": [
+        "teilhabe älterer",
+        "seniorenticket",
+        "sozialticket",
+        "altersarmut bekämpfen",
+        "grundrente",
+        "ermäßigungen für senioren"
+      ],
+      "Soziale Einbindung unabhängig vom Einkommen": [
+        "ehrenamt",
+        "freiwilligendienst",
+        "bürgerschaftliches engagement",
+        "soziale einbindung",
+        "generationenübergreifend"
+      ]
+    },
+    "2903": {
+      "Aufklärung und Prävention psychischer Gesundheit": [
+        "psychische gesundheit",
+        "mental health",
+        "gesundheitskompetenz",
+        "aufklärung psychische erkrankungen",
+        "schulpsychologen",
+        "prävention psychischer erkrankungen",
+        "resilienz"
+      ],
+      "Beratung und Weitervermittlung vereinfachen": [
+        "anlaufstellen",
+        "krisendienst",
+        "telefonseelsorge",
+        "beratungsstelle für",
+        "niedrigschwellige beratung",
+        "lotsenfunktion"
+      ]
+    },
+    "2904": {
+      "Stigma abbauen": [
+        "entstigmatisierung",
+        "stigmatisierung",
+        "tabu psychische erkrankungen",
+        "enttabuisierung",
+        "offener umgang"
+      ],
+      "Zielgruppengerechte Unterstützung für Männer": [
+        "männergesundheit",
+        "männerberatung",
+        "jungenarbeit",
+        "jungen- und männerarbeit",
+        "vertrauliche beratung",
+        "selbsthilfe"
+      ]
+    },
+    "2905": {
+      "Therapieplätze und Kapazitäten ausbauen": [
+        "psychotherapeutische versorgung",
+        "kassensitze",
+        "therapieplätze",
+        "bedarfsplanung psychotherapie",
+        "wartezeiten psychotherapie",
+        "psychotherapeuten"
+      ],
+      "Zugang steuern und koordinieren": [
+        "koordinierte versorgung",
+        "stepped care",
+        "gestufte versorgung",
+        "terminservicestelle",
+        "digitale gesundheitsanwendungen",
+        "e-mental-health"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "ae04a8f6529a59b5004b41bbf17b979429d28b176f5b8ba12998a58fac063f42",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 0,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2902": {
+            "Teilhabe finanziell sichern": {
+              "teilhabe älterer": 0,
+              "seniorenticket": 0,
+              "sozialticket": 0,
+              "altersarmut bekämpfen": 0,
+              "grundrente": 0,
+              "ermäßigungen für senioren": 0
+            },
+            "Soziale Einbindung unabhängig vom Einkommen": {
+              "ehrenamt": 5,
+              "freiwilligendienst": 1,
+              "bürgerschaftliches engagement": 0,
+              "soziale einbindung": 0,
+              "generationenübergreifend": 4
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 4,
+              "mental health": 0,
+              "gesundheitskompetenz": 2,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 6
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 9,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 1,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 3,
+              "stigmatisierung": 4,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          },
+          "2905": {
+            "Therapieplätze und Kapazitäten ausbauen": {
+              "psychotherapeutische versorgung": 0,
+              "kassensitze": 1,
+              "therapieplätze": 0,
+              "bedarfsplanung psychotherapie": 0,
+              "wartezeiten psychotherapie": 0,
+              "psychotherapeuten": 0
+            },
+            "Zugang steuern und koordinieren": {
+              "koordinierte versorgung": 0,
+              "stepped care": 0,
+              "gestufte versorgung": 0,
+              "terminservicestelle": 0,
+              "digitale gesundheitsanwendungen": 0,
+              "e-mental-health": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

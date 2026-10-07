@@ -1,0 +1,21 @@
+{
+  "blind_pruefsumme": "32d776a472db5d3da300e280efac1e30ffceb4613d9f6726d091062190a39a5b",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "einzeln": { "wirksamkeit": 3, "umsetzbarkeit": 3, "begruendung": "Niedrigere Tempolimits senken Zahl und Schwere von Unfällen; Frankreich verzeichnete nach Tempo 80 auf Landstraßen 12 % weniger Getötete. Anders als Tempo 30 allein deckt es auch Landstraßen ab. Der Bund kann die StVO mit Zustimmung des Bundesrats ändern.", "evidenz": "belegt", "beleg_studie_url": "https://www.cerema.fr/en/node/7630" }, "ursachen": [1204] },
+    { "kennung": "M02", "instrument": 6932, "ursachen": [1201] },
+    { "kennung": "M03", "instrument": 6931, "ursachen": [1201] },
+    { "kennung": "M04", "instrument": 6936, "ursachen": [1204] },
+    { "kennung": "M05", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Schnellere Verfahren verkürzen den Weg zu Ersatzbauten; laut KfW und Fachleuten bremsen aber vor allem Personal und Geld. Eine Frist von drei Monaten für alle Infrastrukturprojekte ist mit EU-Vorgaben zu Umweltprüfung und Beteiligung kaum vereinbar.", "evidenz": "gemischt", "beleg_studie_url": "https://www.kfw.de/Über-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_855680.html" }, "ursachen": [1201, 1203] },
+    { "kennung": "M06", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Stabilere Einnahmen erleichtern Kommunen die Planung von Investitionen; aufkommensneutral entsteht aber kein zusätzliches Geld für Straßen. Ein Ersatz der Gewerbesteuer berührt Art. 28 und 106 GG und scheiterte bisher an Bund und Ländern.", "evidenz": "offen" }, "ursachen": [1202] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt. Offene Ursache 1203 bei M05 bestätigt: Die Maßnahme betrifft Infrastrukturprojekte allgemein, und lange Genehmigungen nennt die KfW als Hemmnis kommunaler Investitionen.
+- Keine Maßnahme ohne Ursache.
+- M01 einzeln statt Instrument 6937: Tempo 80 auf Landstraßen schließt die Lücke, die 6937 die Wirksamkeit 3 kostete (Landstraßen nicht erfasst); Quelle Cerema-Evaluation zu Frankreich (90 auf 80 km/h). Schwierig: Die Evaluation misst alle Getöteten, nicht nur Radfahrende; die Wirkung auf Radunfälle ergibt sich aus der allgemeinen Geschwindigkeits-Unfall-Beziehung.
+- M02 (streckenabhängige Pkw-Maut) Instrument 6932 zugeordnet (Nutzerfinanzierung der Autobahnen); eine nicht diskriminierende streckenabhängige Maut gilt als EU-rechtlich zulässig, anders als die gescheiterte Infrastrukturabgabe.
+- M05 einzeln statt 6933, weil die feste Drei-Monats-Frist für alle Infrastrukturprojekte die Umsetzbarkeit senkt.
+- M06 einzeln statt 6934, weil der Ersatz aufkommensneutral ist (kein zusätzliches Geld) und eine Grundgesetzänderung naheliegt. Zur Wirkung auf Straßeninvestitionen fand ich keine Untersuchung (offen).
+- Hinweis zu M03: Die Ausnahme von der Schuldenbremse könnte auch 1202 betreffen (Länder und Kommunen); nicht genannt, da nicht in den Listen und das Zitat nur allgemein von Infrastruktur spricht.

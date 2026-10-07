@@ -1,0 +1,342 @@
+{
+  "pruefsumme": "b5808b953edbc28a07420511416b7b6fb2b605e409a312afa8d2e70c32b80bca",
+  "thema": {
+    "id": 18,
+    "name": "Hitze und Unwetter",
+    "ziel": "Menschen bleiben bei Hitze gesund und können Schäden durch Unwetter an Wohnung und Eigentum finanziell verkraften."
+  },
+  "ursachen": [
+    {
+      "id": 1801,
+      "beschreibung": "Hitze nimmt zu: Die Zahl der Heißen Tage (mindestens 30 °C) hat sich im Mittel über Deutschland seit den 1950er-Jahren von etwa 4 auf durchschnittlich 12 pro Jahr verdreifacht",
+      "ebene": "bund"
+    },
+    {
+      "id": 1802,
+      "beschreibung": "Hitze fordert Todesopfer: Das RKI schätzt für die Sommer 2023 und 2024 jeweils rund 3.000 hitzebedingte Sterbefälle, vor allem bei Menschen über 75 Jahren",
+      "ebene": "bund"
+    },
+    {
+      "id": 1803,
+      "beschreibung": "Großstädte heizen sich auf: In heißen Sommern gab es in Berlin bis zu 20 Tropennächte (Bundesmittel 1 bis 1,5), die Innenstadt war über 11 Kelvin wärmer als das Umland",
+      "ebene": "land"
+    },
+    {
+      "id": 1804,
+      "beschreibung": "Viel Fläche ist versiegelt: Ende 2018 waren etwa 45,1 % der Siedlungs- und Verkehrsfläche versiegelt, Regenwasser versickert dort kaum und fließt über die Kanalisation direkt in die Gewässer",
+      "ebene": "land"
+    },
+    {
+      "id": 1805,
+      "beschreibung": "Auch in Überschwemmungsgebieten wird weiter gebaut: Die bebaute Fläche dort wuchs in rund 20 Jahren bis 2021 um rund 100 km² (knapp 13 %), in rund der Hälfte der Gemeinden ist dort bebaut",
+      "ebene": "land"
+    },
+    {
+      "id": 1806,
+      "beschreibung": "Viele Wohngebäude sind nicht gegen Elementarschäden versichert: 2024 hatten 57 % eine Volldeckung (vorläufig), in Mecklenburg-Vorpommern 37 %, in Sachsen-Anhalt und Berlin 52 %",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        1801,
+        1802
+      ],
+      "text": "Maßnahmen, die Treibhausgasemissionen senken, oder Zusagen, Klimaschutzinstrumente abzuschaffen, zurückzunehmen oder zu begrenzen, gehören zu 1801 und zu 1802 – in beiden Richtungen gleich, unabhängig davon, ob sie dem Ziel helfen (das entscheidet die Bewertung). Entscheidung der Betreiberin vom 4. 10. 2026: Klimaschutz zählt für beide Ursachen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        1801
+      ],
+      "text": "Hitzeanpassung, die nicht einer der Ursachen 1802 bis 1805 zuzuordnen ist (etwa eine nationale Anpassungsstrategie mit konkreter Zusage), gehört zu 1801. Ein bloßes Bekenntnis zu Klimazielen ohne Instrument ist keine Maßnahme."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        1802
+      ],
+      "text": "Zu 1802 gehören Hitzeaktionspläne, Hitzewarnung, Hitzeschutz in Pflege, Krankenhäusern und für ältere Menschen, Kühlräume und Trinkwasser als Gesundheitsschutz. Allgemeine Warnsysteme (Sirenen, Warn-Apps) ohne Hitzebezug im Zitat gehören nicht dazu."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        1803
+      ],
+      "text": "Zu 1803 gehören Stadtgrün, Straßenbäume, Verschattung, Frischluftschneisen und Hitzeschutz an Gebäuden, wenn das Zitat Stadt, Quartier oder Siedlung oder Hitze bzw. Kühlung nennt. Waldumbau, allgemeiner Wohnungsbau und Kommunalfinanzen ohne diesen Bezug gehören nicht dazu."
+    },
+    {
+      "nr": 5,
+      "ursachen": [
+        1804,
+        1805
+      ],
+      "text": "Zu 1804 gehören Entsiegelung, Schwammstadt, Regenwasserbewirtschaftung, Versickerung, Begrenzung des Flächenverbrauchs und Kanal- oder Speicherausbau gegen Starkregen in Siedlungen. Wasserrückhalt in Landwirtschaft, Wald oder Mooren ohne Siedlungsbezug gehört nicht zu 1804; mit Hochwasserbezug im Zitat zu 1805."
+    },
+    {
+      "nr": 6,
+      "ursachen": [
+        1803,
+        1804
+      ],
+      "text": "Eine Maßnahme gehört nur dann zu 1803 und 1804 zugleich, wenn das Zitat beide Wirkungen nennt (Kühlung und Regenwasser, etwa Gründächer zur Kühlung und zum Wasserrückhalt). Sonst nur die genannte Wirkung; im Zweifel die zweite als ursachen_offen."
+    },
+    {
+      "nr": 7,
+      "ursachen": [
+        1805
+      ],
+      "text": "Zu 1805 gehören technischer und naturnaher Hochwasserschutz (Deiche, Rückhaltebecken, Polder, Deichrückverlegung, Retentionsflächen, Auen mit Hochwasserbezug) und Zusagen, Bauen in Überschwemmungsgebieten zu begrenzen – auch ohne ausdrückliches Bauverbot. Gewässerrenaturierung ohne Hochwasserbezug im Zitat gehört nicht dazu."
+    },
+    {
+      "nr": 8,
+      "ursachen": [
+        1805
+      ],
+      "text": "Ausstattung von Feuerwehr und Katastrophenschutz reagiert auf Hochwasser, setzt aber nicht an der Bebauung von Überschwemmungsgebieten an: nur als ursachen_offen [1805], wenn das Zitat Hochwasserschutz nennt, sonst nicht erfassen."
+    },
+    {
+      "nr": 9,
+      "ursachen": [
+        1806
+      ],
+      "text": "Zu 1806 gehören Pflichtversicherung, Angebotspflicht mit Abwahlmöglichkeit, staatliche Rückversicherung und Förderung oder Information zur Elementarschadenversicherung. Staatliche Hilfen nach einem Schaden ändern den Versicherungsschutz nicht: nur als ursachen_offen [1806]."
+    },
+    {
+      "nr": 10,
+      "text": "Finanzierungszusagen ohne Zweck aus einer Ursache („Kommunen stärken“, „Klimaanpassung finanzieren“) sind keine Maßnahme. Nennt das Zitat den Zweck (etwa ein Programm für Entsiegelung), gehört die Maßnahme zur Ursache dieses Zwecks."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 7932,
+      "name": "CO2-Bepreisung bzw. Emissionshandel für Verkehr und Gebäude stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "CO2-Preise senken Emissionen nachweislich (Metaanalyse: im Mittel rund 10 %). Auf Hitze in Deutschland wirkt nationaler Klimaschutz aber nur als kleiner Beitrag zum globalen Klimaschutz und mit großer Verzögerung.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11099057/"
+    },
+    {
+      "id": 7933,
+      "name": "Verbindliche Sektorziele und Nachsteuerungspflicht im Klimaschutzgesetz (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Verbindliche Sektorziele erhöhen den Druck zum Nachsteuern und sind per Gesetzesänderung umsetzbar; ihre eigene Wirkung ist kaum belegt, und auf die Hitze in Deutschland wirkt nationaler Klimaschutz nur langfristig und gering."
+    },
+    {
+      "id": 7934,
+      "name": "Ausbau erneuerbarer Strom- und Wärmeversorgung fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Erneuerbare vermieden 2024 laut UBA rund 259 Mio. t CO2-Äquivalente; Förderprogramme bestehen. Auf Hitzetage in Deutschland wirkt das nur als kleiner Teil des globalen Klimaschutzes und mit Verzögerung.",
+      "beleg_studie_url": "https://www.umweltbundesamt.de/publikationen/emissionsbilanz-erneuerbarer-energietrager-2024"
+    },
+    {
+      "id": 7935,
+      "name": "Abscheidung und Speicherung von CO2 (CCS/CCU) ermöglichen und fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Seit Ende 2025 ist kommerzielles CCS rechtlich möglich; es kann schwer vermeidbare Industrieemissionen senken. Dagegen: Infrastruktur braucht 7 bis 10 Jahre, Kosten und Umfang sind unsicher; Wirkung auf Hitze gering.",
+      "beleg_studie_url": "https://www.bundesregierung.de/breg-de/aktuelles/speicherung-von-kohlendioxid-2376946"
+    },
+    {
+      "id": 7936,
+      "name": "Kohleausstieg aussetzen oder Abschaltung von Kohlekraftwerken aufschieben (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Längerer Kohlebetrieb erhöht die Emissionen gegenüber einem Ausstieg (Studien: deutliche Minderung durch Ausstieg) und hilft nicht gegen Hitze; per Gesetz änderbar, aber durch CO2-Preise im EU-Emissionshandel wirtschaftlich fraglich.",
+      "beleg_studie_url": "https://www.ewi.uni-koeln.de/en/news/neue-ewi-studie-kohleausstieg-ermoeglicht-erreichung-der-klimaziele-2030/"
+    },
+    {
+      "id": 7937,
+      "name": "Nationalen CO2-Preis abschaffen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Entfernt ein nachweislich emissionsmindernd wirkendes Instrument und hilft nicht gegen Hitze. National möglich, ab 2028 greift für Verkehr und Gebäude aber ohnehin der EU-Emissionshandel.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11099057/"
+    },
+    {
+      "id": 7938,
+      "name": "CO2-Flottenvorgaben für Neuwagen (Verbrenner-Aus 2035) aufheben (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Lockert eine Emissionsvorgabe und setzt an keiner Ursache im Sinne des Ziels an. Die Vorgabe ist EU-Recht; Deutschland kann sie nicht allein aufheben, sondern nur im EU-Verfahren darauf hinwirken."
+    },
+    {
+      "id": 7939,
+      "name": "Heizungsvorgaben im Gebäudeenergiegesetz abschaffen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Lockert eine Vorgabe zur Emissionsminderung bei Heizungen und hilft nicht gegen Hitze oder Unwetterschäden. Per Bundesgesetz änderbar, EU-Gebäuderichtlinie setzt aber Grenzen."
+    },
+    {
+      "id": 7940,
+      "name": "Bundesförderung für Stadtgrün, Entsiegelung und hitzeangepasste Städte (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Parks und Bäume kühlen nachweislich (große Parks 1 bis 2 °C im Umfeld); der Bund fördert Städtebau bereits. Dagegen: Wirkung bleibt lokal und hängt von Umsetzung in den Kommunen ab.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6458494/"
+    },
+    {
+      "id": 7941,
+      "name": "Allgemeine Zusage zu Begrünung und Entsiegelung ohne konkretes Instrument (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Begrünung und Entsiegelung wirken nachweislich gegen Hitze und Abfluss; die Zusage nennt aber weder Instrument noch Mittel, daher ist kaum eine Verbesserung absehbar.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6458494/"
+    },
+    {
+      "id": 7942,
+      "name": "Bundesmittel für Hochwasserschutz: Deiche, Rückhalteräume und Auen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Rückhalteräume und Auen dämpfen Hochwasserscheitel nachweislich, der Bund fördert Hochwasserschutz bereits mit. Dagegen: Deiche verlagern Risiken teils flussabwärts und ändern das Bauen in Überschwemmungsgebieten nicht.",
+      "beleg_studie_url": "https://www.umweltbundesamt.de/hochwasser-durch-renaturierung-entschaerfen"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Ausbau von Hochwasserschutzanlagen und Renaturierung von Uferbereichen.",
+      "zitat": "Der Ausbau von Hochwasserschutzanlagen und die Renaturierung von Uferbereichen verringern Risiken bei extremen Wetterereignissen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "fcdbf9c337bad803"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Klimaanpassung wird als Gemeinschaftsaufgabe im Grundgesetz verankert.",
+      "zitat": "Klimaanpassung wird als Gemeinschaftsaufgabe im Grundgesetz verankert.",
+      "ursachen_ids": [
+        1801
+      ],
+      "pruefsumme": "95577fae31affc4a"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Nationales Sanierungsprogramm für klimaneutrales Bauen und Sanieren öffentlicher Gebäude.",
+      "zitat": "Ein nationales Sanierungsprogramm macht den öffentlichen Sektor zum Vorbild für klimaneutrales Bauen und Sanieren.",
+      "ursachen_ids": [
+        1801,
+        1802
+      ],
+      "pruefsumme": "6a4b179b1a21dd81"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "CCS für unvermeidbare Industrieemissionen.",
+      "zitat": "Für unvermeidbare Emissionen, wie in der Zementindustrie, werden CCS-Technologien genutzt.",
+      "ursachen_ids": [
+        1801,
+        1802
+      ],
+      "pruefsumme": "f355d39f9fc0c4e7"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Renaturierung und Wiedervernässung von Mooren massiv ausbauen.",
+      "zitat": "Die Renaturierung und Wiedervernässung von Mooren wird massiv ausgebaut, um ihre Funktion als Kohlenstoffsenken zu erhalten und Emissionen zu vermeiden.",
+      "ursachen_ids": [
+        1801,
+        1802
+      ],
+      "pruefsumme": "fe88a2bab0bad75d"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Subventionen für fossile Energieträger in der Industrie vollständig abbauen.",
+      "zitat": "Alle Subventionen, die direkt den Einsatz fossiler Energieträger in der Industrie fördern, werden vollständig abgebaut.",
+      "ursachen_ids": [
+        1801,
+        1802
+      ],
+      "pruefsumme": "8fea3704bbf15fea"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Fossile Energieträger in Industrieanlagen bis 2035 befristen; neue Anlagen mit Strom oder Wasserstoff.",
+      "zitat": "Der Einsatz fossiler Energieträger in Industrieanlagen wird bis 2035 befristet, und neue Anlagen müssen klimaneutrale Energieträger wie Strom und Wasserstoff nutzen.",
+      "ursachen_ids": [
+        1801,
+        1802
+      ],
+      "pruefsumme": "b7a6daf103bb5f79"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Naturbasierte Lösungen: Gebäudebegrünung, Entsiegelung, Schwammstadt als zentrales Konzept.",
+      "zitat": "Naturbasierte Lösungen wie die Begrünung von Gebäuden sowie die Entsiegelung […] fördern die Klimaresilienz […] Die Schwammstadt wird als zentrales Konzept zur Erhöhung der urbanen Widerstandsfähigkeit etabliert.",
+      "ursachen_ids": [
+        1804
+      ],
+      "ursachen_offen": [
+        1803
+      ],
+      "pruefsumme": "6320a5a1fde5d917"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Datengestützte Hitzestrategie mit Hitzeaktionsplänen und Förderprogrammen, gemeinsam mit den Ländern.",
+      "zitat": "Eine datengestützte Hitzestrategie, die Hitzeaktionspläne und Förderprogramme umfasst, wird in Zusammenarbeit mit den Bundesländern umgesetzt.",
+      "ursachen_ids": [
+        1802
+      ],
+      "pruefsumme": "7509f2b0beb2726e"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Europäischen Emissionshandel (ETS-2) wie geplant 2027 ausweiten.",
+      "zitat": "Der europäische Emissionshandel (ETS-2) wird wie geplant Anfang 2027 ausgeweitet.",
+      "ursachen_ids": [
+        1801,
+        1802
+      ],
+      "pruefsumme": "0274315dc5054392"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Stärkere Förderung von Projekten zur Senkung innerstädtischer Temperaturen, etwa Begrünung.",
+      "zitat": "Projekte, die das Ziel verfolgen, innerstädtische Temperaturen zu senken, werden stärker gefördert. Dazu gehören Begrünung und stadtplanerische Innovationen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "9ffa36232ca5850a"
+    }
+  ]
+}

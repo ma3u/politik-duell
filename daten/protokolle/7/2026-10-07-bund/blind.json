@@ -1,0 +1,199 @@
+{
+  "pruefsumme": "65a5d57fb9cb99573ea890735bdc54469e13e07e1f07af24b6cb5bf2ee826a8b",
+  "thema": {
+    "id": 7,
+    "name": "Rente",
+    "ziel": "Menschen können im Alter von ihrer Rente auskömmlich leben, und die Rente bleibt dauerhaft finanzierbar."
+  },
+  "ursachen": [
+    {
+      "id": 701,
+      "beschreibung": "Immer weniger Beitragszahlende je Rentner: Nach geltendem Recht steigt der Beitrag bis 2039 auf 21,2 %, und das Rentenniveau sinkt auf 46,3 %",
+      "ebene": "bund"
+    },
+    {
+      "id": 702,
+      "beschreibung": "Niedrige Löhne und Lücken im Erwerbsleben (z. B. Arbeitslosigkeit) führen zu niedrigen Rentenansprüchen",
+      "ebene": "bund"
+    },
+    {
+      "id": 703,
+      "beschreibung": "Betriebliche und private Zusatzvorsorge erreicht Geringverdienende, Menschen mit Erwerbsunterbrechungen und Beschäftigte kleiner Betriebe deutlich seltener",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6173,
+      "name": "Rentenniveau gesetzlich bei mindestens 48 Prozent halten",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Haltelinie verhindert, dass die Renten wegen des steigenden Verhältnisses von Rentnern zu Beitragszahlenden hinter den Löhnen zurückfallen; das Missverhältnis bleibt, die Kosten steigen über Beiträge oder Steuerzuschüsse. Per Bundesgesetz umsetzbar, die dauerhafte Finanzierung ist offen."
+    },
+    {
+      "id": 6174,
+      "name": "Anreize, über das Rentenalter hinaus zu arbeiten",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Weiterarbeit im Rentenalter bringt der Rentenversicherung etwas mehr Beiträge und Steuern; Studien erwarten nur kleine Beschäftigungseffekte, Steuerfreiheit kostet Einnahmen. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6175,
+      "name": "Pflicht zur Altersvorsorge für nicht abgesicherte Selbstständige",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Viele Solo-Selbstständige sorgen kaum vor und sind im Alter häufiger arm; eine Vorsorgepflicht setzt direkt an dieser Lücke an, wirkt aber erst über Jahrzehnte, und Pflichtbeiträge belasten Selbstständige mit geringem Einkommen. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6176,
+      "name": "Beamte, Abgeordnete und weitere Gruppen in die gesetzliche Rente einbeziehen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Einzahlende verbessern das Verhältnis zu den Rentnern zunächst, später entstehen aus den Beiträgen aber auch Ansprüche; für Beamte kostet der Übergang Bund und Länder anfangs viel Geld. Per Bundesgesetz möglich, mit langen Übergangszeiten."
+    },
+    {
+      "id": 6177,
+      "name": "Betriebsrenten stärker fördern und für kleine Betriebe erleichtern",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt direkt an der geringen Verbreitung von Betriebsrenten an; mehr Förderung und weniger Haftungsrisiken haben die Verbreitung bisher aber nur langsam erhöht, vor allem in kleinen Betrieben und bei Geringverdienenden. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6178,
+      "name": "Geförderte private Vorsorge neu ordnen (kostengünstige Depots, gezielte Förderung)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Kostengünstige, einfache Produkte und eine Förderung für kleine und mittlere Einkommen setzen an der Lücke bei der Zusatzvorsorge an; ob deutlich mehr Menschen vorsorgen, ist offen, solange die Teilnahme freiwillig bleibt. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6179,
+      "name": "Kapitalstock zur Stützung der gesetzlichen Rente",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein Fonds kann den Beitragsanstieg dämpfen, wenn weniger Beitragszahlende auf mehr Rentner kommen; bei den vorgeschlagenen Größenordnungen ist der Effekt klein, die Erträge sind unsicher. Per Bundesgesetz umsetzbar, bei Kreditfinanzierung mit Haushaltsrisiken."
+    },
+    {
+      "id": 6180,
+      "name": "Grundrente ausbauen, niedrige Rentenansprüche aufwerten",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine stärkere Aufwertung niedriger Ansprüche setzt direkt an niedrigen Renten nach niedrigen Löhnen an; wer große Lücken im Erwerbsleben hat, profitiert oft nicht, die Kosten steigen. Per Bundesgesetz umsetzbar, die Finanzierung ist nicht geklärt."
+    },
+    {
+      "id": 6181,
+      "name": "Mindestlohn auf mindestens 15 Euro anheben",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Ein höherer Mindestlohn erhöht die Rentenansprüche von Geringverdienenden; auch mit 15 Euro liegt die Rente nach Lücken im Erwerbsleben oft nahe der Grundsicherung. Per Bundesgesetz umsetzbar, bisher entscheidet die Mindestlohnkommission."
+    },
+    {
+      "id": 6182,
+      "name": "Nicht beitragsgedeckte Leistungen aus dem Bundeshaushalt finanzieren",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Verlagert Kosten von den Beitragszahlenden auf die Steuerzahlenden und entlastet die Beiträge; am Verhältnis von Beitragszahlenden zu Rentnern ändert es nichts. Es geht um zweistellige Milliardenbeträge im Jahr, deren Finanzierung offen ist."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Renteneintrittsalter an die durchschnittliche Lebenserwartung koppeln",
+      "zitat": "Das Renteneintrittsalter wird an die durchschnittliche Lebenserwartung angepasst, um ein faires Verhältnis zwischen Anspar- und Auszahlungsphase zu gewährleisten.",
+      "ursachen_ids": [
+        701
+      ],
+      "pruefsumme": "10aba0b4e8976a61"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Einkommen oberhalb der Armutsgrenze unabhängig von der Erwerbsbiografie garantieren, ergänzend zu Rentenansprüchen",
+      "zitat": "Ein Einkommen, das die Armutsgrenze überschreitet, wird unabhängig von der Erwerbsbiogra",
+      "ursachen_ids": [
+        702
+      ],
+      "pruefsumme": "9cc8a5624fad64fa"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Care-Arbeit, Freiwilligendienste und gesellschaftlich wertvolle Aufgaben bei der Rentenberechnung stärker berücksichtigen",
+      "zitat": "Tätigkeiten wie Care-Arbeit, Freiwilligendienste und gesellschaftlich wertvolle Aufgaben werden bei der Rentenberechnung stärker berücksichtigt.",
+      "ursachen_ids": [
+        702
+      ],
+      "pruefsumme": "9552d6dc2c644304"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Arbeitgeberbeiträge zur betrieblichen Altersvorsorge ins persönliche Depot",
+      "zitat": "Hinzu kommen Arbeitgebendenbeiträge zur betrieblichen Altersvorsorge von bis zu 750 Euro pro Jahr.",
+      "ursachen_ids": [
+        703
+      ],
+      "pruefsumme": "641f2cb15dd33614"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Beamte, Selbstständige und Freischaffende schrittweise in die gesetzliche Rentenversicherung einbeziehen",
+      "zitat": "Verbeamtete Personen, Selbstständige und Freischaffende werden schrittweise in das Rentensystem integriert, um dessen Stabilität langfristig zu sichern.",
+      "ursachen_ids": [
+        701
+      ],
+      "pruefsumme": "91249bf0b0c2b6fa"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Staatlich gefördertes Renten-Depot zur Geburt mit Startbudget und jährlichen Staatseinzahlungen bis zur Volljährigkeit",
+      "zitat": "Zur Geburt wird ein staatlich gefördertes Depot mit einem Startbudget von 1.000 Euro eröffnet und erhält bis zur Volljährigkeit jährliche Einzahlungen von 100 Euro durch den Staat.",
+      "ursachen_ids": [
+        703
+      ],
+      "pruefsumme": "caf0b5d5c6ed90cb"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Geringfügig Beschäftigte in die Sozialversicherung einbinden",
+      "zitat": "Geringfügig Beschäftigte werden in die Sozialversicherung eingebunden, um Benachteiligungen und Lücken in der Absicherung zu verhindern.",
+      "ursachen_ids": [
+        702
+      ],
+      "pruefsumme": "958fe4eae90811db"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen",
+      "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.",
+      "ursachen_ids": [
+        702
+      ],
+      "pruefsumme": "73831c9ea17e34f5"
+    }
+  ]
+}

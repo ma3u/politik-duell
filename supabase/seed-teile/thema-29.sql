@@ -38,12 +38,13 @@ insert into public.instrumente (id, thema_id, name, begruendung, evidenz, beleg_
   (8167, 29, 'Bedarfsplanung für psychotherapeutische Kassensitze reformieren (Bund)', 'Mehr Kassensitze setzen direkt an der Kapazität an; Befragungen sehen fehlende Termine als Hauptengpass. Wirkung bisheriger Reformen nur teils belegt. Bund und Selbstverwaltung können es regeln.', 'offen', 'https://europepmc.org/articles/PMC13288593', 'bund', null, true, 'blind'),
   (8168, 29, 'Kostenerstattung für Psychotherapie bei Wartezeiten erleichtern (Bund)', 'Überbrückt Wartezeit über Privatpraxen, solange es dort freie Plätze gibt; das Gesamtangebot wächst nicht. Wirkung kaum untersucht, rechtlich leicht änderbar.', 'offen', null, 'bund', null, true, 'blind'),
   (8169, 29, 'Therapie- und Versorgungsangebote bedarfsgerecht ausbauen (Bund)', 'Ohne benannten Weg bleibt unklar, wie Plätze entstehen; die Versorgung gilt als unzureichend. Zusage lässt sich rechtlich leicht fassen, die Wirkung hängt von der Umsetzung ab.', 'offen', 'https://europepmc.org/article/MED/40034167', 'bund', null, true, 'blind'),
-  (8170, 29, 'Mehr Stellen für Schulpsychologie und Schulsozialarbeit (Bund)', 'Fachkräfte an Schulen erleichtern das Erkennen von Belastungen und die Hilfesuche. Schulen sind Ländersache, der Bund kann nur über Förderprogramme oder Vereinbarungen beitragen. Wirkung kaum untersucht.', 'offen', 'https://europepmc.org/articles/PMC13341547', 'bund', null, true, 'blind')
+  (8170, 29, 'Mehr Stellen für Schulpsychologie und Schulsozialarbeit (Bund)', 'Fachkräfte an Schulen erleichtern das Erkennen von Belastungen und die Hilfesuche. Schulen sind Ländersache, der Bund kann nur über Förderprogramme oder Vereinbarungen beitragen. Wirkung kaum untersucht.', 'offen', 'https://europepmc.org/articles/PMC13341547', 'bund', null, true, 'blind'),
+  (8585, 29, 'Resilienzförderung ab der Kita und Fortbildung von Lehr- und Fachkräften unterstützen (Bund)', 'Früh ansetzende Förderung und geschulte Fachkräfte können Belastungen eher erkennen; Übersichten finden aber wenig Beleg, dass Präventionsprogramme in Bildungseinrichtungen Angst oder Depression senken. Kita und Schule sind Ländersache, der Bund kann nur fördern.', 'gemischt', 'https://europepmc.org/article/MED/31734106', 'bund', null, true, 'blind')
 on conflict (id) do update set thema_id = excluded.thema_id, name = excluded.name, begruendung = excluded.begruendung,
   evidenz = excluded.evidenz, beleg_studie_url = excluded.beleg_studie_url, ebene = excluded.ebene,
   entspricht = excluded.entspricht, ki_entwurf = excluded.ki_entwurf, entwurf_herkunft = excluded.entwurf_herkunft;
 
-delete from public.instrumente where thema_id = 29 and id not in (8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8161, 8162, 8163, 8164, 8165, 8166, 8167, 8168, 8169, 8170);
+delete from public.instrumente where thema_id = 29 and id not in (8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8161, 8162, 8163, 8164, 8165, 8166, 8167, 8168, 8169, 8170, 8585);
 
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, instrument_id, wirksamkeit, umsetzbarkeit,
   rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values
@@ -194,7 +195,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (8315, 29, 17, 'ST', 'Einen landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie einführen.', '{2903}', 8150, 2, 2, null, 'Fachkräfte vor Ort erleichtern das Erkennen von Belastungen und die Hilfesuche; Angebot und Bedarf klaffen bislang auseinander. Wirkung kaum untersucht, Personalgewinnung dauert Jahre.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=47', 'https://europepmc.org/articles/PMC13341547', 'offen', '2026-10-06', false, true, 'blind'),
   (8316, 29, 17, 'ST', 'Schulpsychologen präventiv einsetzen und für Lernende sowie Lehrkräfte niedrigschwellig erreichbar machen.', '{2903}', 8150, 2, 2, null, 'Fachkräfte vor Ort erleichtern das Erkennen von Belastungen und die Hilfesuche; Angebot und Bedarf klaffen bislang auseinander. Wirkung kaum untersucht, Personalgewinnung dauert Jahre.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=48', 'https://europepmc.org/articles/PMC13341547', 'offen', '2026-10-06', false, true, 'blind'),
   (8317, 29, 17, 'ST', 'Multiprofessionelle Teams mit Schulpsychologie als Regelangebot an Schulen etablieren.', '{2903}', 8150, 2, 2, null, 'Fachkräfte vor Ort erleichtern das Erkennen von Belastungen und die Hilfesuche; Angebot und Bedarf klaffen bislang auseinander. Wirkung kaum untersucht, Personalgewinnung dauert Jahre.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=48', 'https://europepmc.org/articles/PMC13341547', 'offen', '2026-10-06', false, true, 'blind'),
-  (8318, 29, 17, 'ST', 'Den sozialpsychiatrischen Dienst ausbauen und stärker in Jugend-, Schul- und Integrationsarbeit einbinden.', '{2903}', 8158, 2, 3, null, 'Bestehende kommunale Dienste erreichen auch Menschen, die von sich aus keine Hilfe suchen. Wirkung der Ausbaustufen kaum untersucht; Land kann Mittel und Aufgaben zügig anpassen.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=59', null, 'offen', '2026-10-06', false, true, 'blind');
+  (8318, 29, 17, 'ST', 'Den sozialpsychiatrischen Dienst ausbauen und stärker in Jugend-, Schul- und Integrationsarbeit einbinden.', '{2903}', 8158, 2, 3, null, 'Bestehende kommunale Dienste erreichen auch Menschen, die von sich aus keine Hilfe suchen. Wirkung der Ausbaustufen kaum untersucht; Land kann Mittel und Aufgaben zügig anpassen.', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=59', null, 'offen', '2026-10-06', false, true, 'blind'),
+  (8586, 29, 18, null, 'Bedarfsplanung für Psychotherapie anpassen, mehr Kassensitze und gerechtere Verteilung', '{2905}', 8167, 2, 3, null, 'Mehr Kassensitze setzen direkt an der Kapazität an; Befragungen sehen fehlende Termine als Hauptengpass. Wirkung bisheriger Reformen nur teils belegt. Bund und Selbstverwaltung können es regeln.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=132', 'https://europepmc.org/articles/PMC13288593', 'offen', '2026-10-07', false, true, 'blind'),
+  (8587, 29, 18, null, 'Flächendeckende Gesundheitskioske für individuelle, niedrigschwellige Beratung', '{2903}', null, 1, 2, null, 'Im Hamburger Modell gut angenommen und mit weniger vermeidbaren Klinikfällen, aber ohne messbare Verbesserung der Gesundheitskompetenz; Beratung ist allgemein, nicht auf psychische Gesundheit ausgerichtet. Flächendeckender Aufbau braucht Finanzierungseinigung mit Kassen und Kommunen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=130', 'https://www.uni-hamburg.de/newsroom/presse/2021/pm17.html', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8588, 29, 18, null, 'Resilienzförderung schon im Kita-Alter, Weiterbildung für Fach- und Lehrkräfte', '{2903}', 8585, 1, 2, null, 'Früh ansetzende Förderung und geschulte Fachkräfte können Belastungen eher erkennen; Übersichten finden aber wenig Beleg, dass Präventionsprogramme in Bildungseinrichtungen Angst oder Depression senken. Kita und Schule sind Ländersache, der Bund kann nur fördern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=132', 'https://europepmc.org/article/MED/31734106', 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -250,7 +254,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (8279, 29),
   (8281, 29),
   (8299, 29),
-  (8303, 29);
+  (8303, 29),
+  (8585, 29),
+  (8587, 29);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (29, 11, null, 'massnahmen', null, '2026-10-06', true, '{2901,2902,2903,2904,2905}'),
@@ -280,6 +286,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (29, 17, null, 'massnahmen', null, '2026-10-06', true, '{2901,2902,2903,2904,2905}'),
   (29, 17, 'BE', 'massnahmen', null, '2026-10-06', true, '{2901,2903,2904}'),
   (29, 17, 'MV', 'massnahmen', null, '2026-10-06', true, '{2901,2903,2904}'),
-  (29, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{2901,2903,2904}');
+  (29, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{2901,2903,2904}'),
+  (29, 18, null, 'massnahmen', null, '2026-10-07', true, '{2901,2902,2903,2904,2905}');
 
 commit;

@@ -1,0 +1,145 @@
+{
+  "pruefsumme": "c5e162dd2b1eac7c306045ae86eb1a3a604f99bfa23f2da47e76b7200d14befd",
+  "thema": {
+    "id": 15,
+    "name": "Autofahren",
+    "ziel": "Wer auf das Auto angewiesen ist, kann sich das Fahren dauerhaft leisten, mit Verbrenner oder Elektroauto."
+  },
+  "ursachen": [
+    {
+      "id": 1501,
+      "beschreibung": "Der Spritpreis hängt am Weltmarkt für Rohöl: Mit dem Krieg im Iran und der zeitweisen Sperrung der Straße von Hormus stiegen die Preise 2026 binnen Wochen teils um mehr als ein Drittel",
+      "ebene": "bund"
+    },
+    {
+      "id": 1502,
+      "beschreibung": "Steuern und Abgaben machen einen großen Teil des Spritpreises aus: Energiesteuer (65,45 Cent je Liter Benzin, 47,04 Cent Diesel), CO₂-Preis und Mehrwertsteuer",
+      "ebene": "bund"
+    },
+    {
+      "id": 1503,
+      "beschreibung": "Wenig Wettbewerb bei Raffinerien und Großhandel: Preissenkungen kommen nicht vollständig an der Zapfsäule an, in Deutschland stiegen die Preise 2026 besonders stark",
+      "ebene": "bund"
+    },
+    {
+      "id": 1504,
+      "beschreibung": "Elektroautos sind für viele noch zu teuer: Gut die Hälfte der Haushalte ohne Elektroauto nennt den Preis als Hindernis (2026: 52 %)",
+      "ebene": "bund"
+    },
+    {
+      "id": 1505,
+      "beschreibung": "Wer in einem Mehrparteienhaus wohnt, kann oft nicht zu Hause laden: Die rund 9 Millionen Stellplätze an 21 Millionen Wohnungen sind bisher nur unzureichend mit Lademöglichkeiten ausgestattet",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 7011,
+      "name": "CO₂-Preis auf Kraftstoffe abschaffen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Senkt den Spritpreis 2026 um rund 15 bis 18 Cent je Liter; ab 2028 gilt aber der europäische Emissionshandel für Verkehr, den Deutschland nicht allein abschaffen kann. Die Einnahmen fehlen für Entlastungen an anderer Stelle."
+    },
+    {
+      "id": 7012,
+      "name": "CO₂-Einnahmen als Klimageld oder Klimabonus zurückzahlen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Gleicht die Mehrkosten durch den CO₂-Preis für viele Haushalte aus, senkt den Spritpreis aber nicht; wer viel fahren muss, wird nur teilweise entlastet. Ein Auszahlungsweg an alle Haushalte muss erst aufgebaut werden."
+    },
+    {
+      "id": 7013,
+      "name": "Pendlerpauschale erhöhen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Entlastet Pendelnde über die Steuer; wer wenig verdient und kaum Steuern zahlt, hat wenig davon."
+    },
+    {
+      "id": 7014,
+      "name": "Kaufförderung für Elektroautos für kleine und mittlere Einkommen (Prämie, Steuerabzug, Leasing)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt direkt am Preis an, den Haushalte als größtes Hindernis nennen; soziales Leasing hat in Frankreich viele Haushalte mit kleinem Einkommen erreicht. Frühere Prämien in Deutschland wurden zum Teil mitgenommen und kamen vor allem besser Verdienenden zugute.",
+      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf"
+    },
+    {
+      "id": 7015,
+      "name": "Öffentliche Ladeinfrastruktur ausbauen und Ladepreise senken",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox."
+    },
+    {
+      "id": 7258,
+      "name": "Elektro- und verbrauchsarme Fahrzeuge fördern, um weniger Kraftstoff zu brauchen (Bund, Ölabhängigkeit)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.",
+      "beleg_studie_url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html"
+    },
+    {
+      "id": 7259,
+      "name": "Alternative Kraftstoffe wie E-Fuels zulassen und gleichstellen (Bund, Ölabhängigkeit)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.",
+      "beleg_studie_url": "https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf"
+    },
+    {
+      "id": 7260,
+      "name": "Energie- und Umsatzsteuer in Preiskrisen schnell senken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.",
+      "beleg_studie_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene ganz abschaffen.",
+      "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+      "ursachen_ids": [
+        1502
+      ],
+      "pruefsumme": "4a5390549c17c361"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Ausbau der Ladeinfrastruktur für E-Fahrzeuge.",
+      "zitat": "Ladeinfrastruktur für E-Fahrzeuge: Der Ausbau erleichtert den Umstieg auf klimafreundliche Antriebe.",
+      "ursachen_ids": [
+        1505
+      ],
+      "pruefsumme": "1379908f9d08dc46"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Dieselsteuer schrittweise an die Benzinsteuer angleichen.",
+      "zitat": "Die Dieselsteuer wird schrittweise an die Benzinsteuer angeglichen.",
+      "ursachen_ids": [
+        1502
+      ],
+      "pruefsumme": "73c588bd69aa593e"
+    }
+  ]
+}

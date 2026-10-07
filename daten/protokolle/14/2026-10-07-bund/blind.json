@@ -1,0 +1,196 @@
+{
+  "pruefsumme": "86049342b00755a780d31e6ac6594fbd179dbe5a4381c51e6d5877c8015db5f3",
+  "thema": {
+    "id": 14,
+    "name": "Behördengänge",
+    "ziel": "Menschen erledigen Behördenangelegenheiten schnell, einfach und ohne unnötige Wege, möglichst digital."
+  },
+  "ursachen": [
+    {
+      "id": 1401,
+      "beschreibung": "Online-Angebote der Verwaltung sind schwer zu finden und oft nicht durchgängig digital: Digitale Anträge werden nicht schneller bearbeitet, nur 15 % sehen ihre Erwartungen erfüllt (2025)",
+      "ebene": "land"
+    },
+    {
+      "id": 1402,
+      "beschreibung": "Der Verwaltung fehlt Personal: Bis 2030 geht fast ein Drittel der Beschäftigten im öffentlichen Dienst in den Ruhestand",
+      "ebene": "land"
+    },
+    {
+      "id": 1403,
+      "beschreibung": "Behörden tauschen Daten kaum aus: Register sind nicht vernetzt, Menschen müssen dieselben Angaben und Nachweise immer wieder einreichen",
+      "ebene": "bund"
+    },
+    {
+      "id": 1404,
+      "beschreibung": "Die Verwaltung ist mit Aufgaben und kleinteiligen Vorschriften überladen: Die Kommunen beklagen einen ungebremsten Aufgabenanstieg und zu viele Detailvorschriften",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6983,
+      "name": "Zentrales Portal oder App mit digitaler Identität für alle Verwaltungsleistungen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein Zugang für alle Leistungen macht Angebote leichter auffindbar, was Nutzer laut eGovernment MONITOR vermissen; schneller wird es nur, wenn die Anträge dahinter auch digital bearbeitet werden. Braucht die Mitarbeit von Ländern und Kommunen, das Onlinezugangsgesetz zeigt, wie lange das dauert.",
+      "beleg_studie_url": "https://initiatived21.de/publikationen/egovernment-monitor/2025"
+    },
+    {
+      "id": 6984,
+      "name": "Once-Only: Register vernetzen, Daten nur einmal angeben",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Setzt direkt daran an, dass Nachweise immer wieder eingereicht werden müssen; Länder wie Österreich und Estland zeigen, dass es funktioniert. Die Registermodernisierung ist aber ein Vorhaben über viele Jahre, und die Länder können nicht zur Anbindung verpflichtet werden.",
+      "beleg_studie_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Downloads/DE/Jahresberichte/2025-jahresbericht.pdf?__blob=publicationFile&v=5"
+    },
+    {
+      "id": 6985,
+      "name": "Zuständigkeit für Verwaltungsdigitalisierung in einem Digitalministerium bündeln",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Klare Zuständigkeit kann Projekte beschleunigen; seit 2025 gibt es ein solches Ministerium. Für Bürgerinnen und Bürger ändert sich erst etwas, wenn Leistungen tatsächlich digital und schneller werden."
+    },
+    {
+      "id": 6986,
+      "name": "Automatisierung, KI und antragslose Verfahren in der Verwaltung",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Kann den Personalmangel abfedern und Bearbeitungszeiten senken, wie der Normenkontrollrat empfiehlt; Voraussetzung sind digitale Akten und vernetzte Daten, die vielerorts fehlen."
+    },
+    {
+      "id": 6987,
+      "name": "Öffentlichen Dienst als Arbeitgeber attraktiver machen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt am Personalmangel an; der Bund regelt aber nur die Bedingungen seiner eigenen Beschäftigten, die meisten Stellen mit Bürgerkontakt liegen bei Ländern und Kommunen."
+    },
+    {
+      "id": 6988,
+      "name": "Mehr Ermessen für Behörden, Regeln auf den Regelfall ausrichten",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Kann Entscheidungen beschleunigen und Einzelfallprüfungen vermeiden; wie stark Vorschriften dadurch tatsächlich schlanker werden, ist offen."
+    },
+    {
+      "id": 7125,
+      "name": "Verwaltungsleistungen im Land durchgängig digital, zentrales Portal oder App (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt an den Hürden an, die Nutzer nennen: schwere Auffindbarkeit und Anträge, die hinterher doch auf Papier bearbeitet werden. Die meisten Leistungen erbringen Land und Kommunen selbst."
+    },
+    {
+      "id": 7126,
+      "name": "Verwaltungsmodernisierung zentral im Land bündeln (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Klare Zuständigkeit kann Digitalisierungsprojekte beschleunigen; für Bürgerinnen und Bürger ändert sich erst etwas, wenn Leistungen tatsächlich einfacher werden."
+    },
+    {
+      "id": 7127,
+      "name": "KI und Automatisierung zur Entlastung der Verwaltung (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Kann Personalmangel abfedern und Bearbeitungszeiten senken; Voraussetzung sind digitale Akten und Daten, die vielerorts fehlen."
+    },
+    {
+      "id": 7128,
+      "name": "Öffentlichen Dienst im Land attraktiver machen: Ausbildung, Bezahlung, Arbeitsbedingungen (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt am Personalmangel an, den der Normenkontrollrat als drängend beschreibt; das Land konkurriert aber mit Wirtschaft und anderen Ländern um dieselben Fachkräfte."
+    },
+    {
+      "id": 7129,
+      "name": "Terminvergabe in Bürgerämtern verbessern (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Verteilt vorhandene Termine besser und verkürzt Wartezeiten etwas; mehr Kapazität entsteht dadurch nicht."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Zentrales Digitalministerium mit Richtlinienkompetenz für alle Verwaltungsebenen und bundeseinheitlichen Standards für durchgängige Digitalisierung der Verwaltung.",
+      "zitat": "Ein neues Digitalministerium legt die zentrale IT-Strategie für Deutschland fest und erhält Richtlinienkompetenz für alle Verwaltungsebenen. Doppelstrukturen werden so abgebaut.",
+      "ursachen_ids": [
+        1401,
+        1404
+      ],
+      "pruefsumme": "0ca96e2c463fa9e1"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Zentrale Anlaufstellen, automatische Genehmigung bei verspäteter Bearbeitung und regelmäßige Überprüfung von Vorschriften.",
+      "zitat": "Zentrale Anlaufstellen („One-Stop-Shops“) sorgen für eine einfache und flexible Verwaltung, die sich an den Bedürfnissen der Menschen orientiert. Bürokratie wird abgebaut, indem Anträge bei nicht fristgerechter Bearbeitung automatisch als genehmigt gelten, und Vorschriften regelmäßig überprüft und vereinfacht werden, um die Menschen zu entlasten.",
+      "ursachen_ids": [
+        1404
+      ],
+      "pruefsumme": "790f61257770f995"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Verwaltungsleistungen proaktiv, automatisiert, mobil und mit E-Identifikation und E-Payment bereitstellen.",
+      "zitat": "Benutzungsfreundliche und mobile Verwaltungsleistungen mit elektronischen Identifikationsmethoden und E-Payment-Optionen werden proaktiv und automatisiert bereitgestellt (“No-Stop-Shop”).",
+      "ursachen_ids": [
+        1401
+      ],
+      "pruefsumme": "ff0ae7a61dec25eb"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Once-Only-Prinzip konsequent umsetzen: Daten werden nur einmal übermittelt und von Behörden gemeinsam genutzt, bei gewährleistetem Datenschutz.",
+      "zitat": "Daten müssen nur einmal übermittelt werden, die Behörden können sie dann effizient nutzen, wobei der Datenschutz gewährleistet ist",
+      "ursachen_ids": [
+        1403
+      ],
+      "pruefsumme": "6399f76a1af9208f"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Angepasste Gehaltsstrukturen, Beamtentum auf Zeit und Personalrotation für die Verwaltung.",
+      "zitat": "Durch angepasste Gehaltsstrukturen, die Förderung von „Beamtentum auf Zeit“ und sektorübergreifende Personalrotation entsteht eine innovative Verwaltungskultur mit neuen Kompetenzen und flexiblen Karrierewegen.",
+      "ursachen_ids": [
+        1402
+      ],
+      "pruefsumme": "5bb84cdfb5b44861"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Zuständigkeiten zwischen Bund, Ländern und Kommunen neu ordnen.",
+      "zitat": "Die Zuständigkeiten zwischen Bund, Ländern und Kommunen werden neu geordnet und effizienter gestaltet.",
+      "ursachen_ids": [
+        1404
+      ],
+      "pruefsumme": "74e0bf20a8da07f8"
+    }
+  ]
+}

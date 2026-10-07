@@ -1,0 +1,340 @@
+{
+  "pruefsumme": "2f13c27b7c3bd0b0983c2c516d4322a00f526583c00d58fab4945622f1b5c543",
+  "thema": {
+    "id": 6,
+    "name": "Zuwanderung und Integration",
+    "ziel": "Aufnahme, Integration und Rückführung funktionieren geordnet, und die Belastung vor Ort bleibt tragbar."
+  },
+  "ursachen": [
+    {
+      "id": 601,
+      "beschreibung": "Zahl der Neuankommenden und Kapazitäten vor Ort passen vielerorts nicht zusammen: Unterbringung bleibt für die meisten Kommunen herausfordernd, Ausländerbehörden sind besonders stark belastet",
+      "ebene": "land"
+    },
+    {
+      "id": 602,
+      "beschreibung": "Asyl- und Gerichtsverfahren dauern lange (im Schnitt rund anderthalb Jahre bis zur rechtskräftigen Entscheidung)",
+      "ebene": "bund"
+    },
+    {
+      "id": 603,
+      "beschreibung": "Sprachkurse, Anerkennung von Abschlüssen und Zugang zum Arbeitsmarkt dauern lange",
+      "ebene": "bund"
+    },
+    {
+      "id": 604,
+      "beschreibung": "Viele Ausreisepflichtige werden nicht zurückgeführt, etwa wegen fehlender Papiere",
+      "ebene": "bund"
+    },
+    {
+      "id": 605,
+      "beschreibung": "Die EU-Zuständigkeitsregeln (Dublin) greifen kaum: 2025 wurde nur rund jede siebte von Deutschland beantragte Überstellung vollzogen",
+      "ebene": "bund"
+    },
+    {
+      "id": 606,
+      "beschreibung": "Viele Menschen leben jahrelang nur geduldet: Rund 41 % der gut 180.000 Geduldeten sind seit mehr als fünf Jahren in Deutschland",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6099,
+      "name": "Asylsuchende an den Binnengrenzen zurückweisen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Zurückweisungen an den Binnengrenzen können einzelne Einreisen verhindern; seit Mai 2025 betrafen sie nur einige hundert Asylsuchende, eine Wirkung auf die Zugangszahlen ist nicht belegt. Die Vereinbarkeit mit der Dublin-Verordnung ist umstritten (VG Berlin, Juni 2025: im Einzelfall rechtswidrig)."
+    },
+    {
+      "id": 6100,
+      "name": "Familiennachzug zu subsidiär Schutzberechtigten aussetzen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Das Aussetzen des Familiennachzugs zu subsidiär Schutzberechtigten senkt die Zahl der Neuankommenden etwas (vorher bis zu 1.000 Visa im Monat), im Verhältnis zu allen Zuzügen aber wenig; an den Kapazitäten vor Ort ändert es nichts. Per Bundesgesetz umsetzbar, 2025 für zwei Jahre beschlossen."
+    },
+    {
+      "id": 6101,
+      "name": "Anerkennung ausländischer Berufsabschlüsse vereinfachen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Einfachere und schnellere Anerkennungsverfahren setzen an einer Hürde an, die das IAB nennt; wie viel schneller es wird, hängt von der Ausgestaltung ab. Für viele reglementierte Berufe sind die Länder zuständig."
+    },
+    {
+      "id": 6102,
+      "name": "Arbeit parallel zum Sprachkurs (Job-Turbo)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Arbeit parallel zum Sprachkurs kann den Einstieg beschleunigen; Studien zeigen, dass frühe Beschäftigung die Integration fördert, die Wirkung des Job-Turbos von 2023 ist aber noch nicht abschließend untersucht. Umsetzbar über die Bundesagentur für Arbeit."
+    },
+    {
+      "id": 6103,
+      "name": "Mehr Staaten als sichere Herkunftsstaaten einstufen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr sichere Herkunftsstaaten beschleunigen die Verfahren für Antragsteller aus diesen Ländern; die Hauptherkunftsländer (Syrien, Afghanistan, Türkei) kommen dafür aber kaum in Frage. Einstufung per Gesetz, beim Asylgrundrecht mit Zustimmung des Bundesrats."
+    },
+    {
+      "id": 6104,
+      "name": "Rücknahme- und Migrationsabkommen mit Herkunftsstaaten",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Abkommen mit Herkunftsstaaten setzen an den Haupthindernissen an (fehlende Papiere, fehlende Mitwirkung), die Abschiebungen verhindern und Duldungen verlängern; die Erfahrungen sind je nach Partnerland gemischt. Umsetzbar nur mit Zustimmung der Partnerstaaten."
+    },
+    {
+      "id": 6105,
+      "name": "Mehr Abschiebungshaft und Ausreisegewahrsam",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Haft und Gewahrsam kann verhindern, dass Ausreisepflichtige vor dem Termin untertauchen; die meisten Abschiebungen scheitern aber an fehlenden Papieren oder am Herkunftsstaat. Haft ist verfassungsrechtlich eng begrenzt, Haftplätze stellen überwiegend die Länder."
+    },
+    {
+      "id": 6106,
+      "name": "Asylverfahren in Drittstaaten außerhalb der EU",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Asylverfahren außerhalb der EU sollen die Weiterreise nach Europa unattraktiv machen; belegt ist das nicht, bisherige Modelle (Großbritannien–Ruanda, Italien–Albanien) kamen kaum in Gang. Umsetzbar nur mit EU-Regeln und aufnahmebereiten Drittstaaten."
+    },
+    {
+      "id": 6107,
+      "name": "Integrations- und Sprachkurse ausbauen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Mehr und früher zugängliche Sprach- und Integrationskurse verkürzen Wartezeiten; Studien des IAB zeigen, dass Integrationskurse Sprachkenntnisse und Beschäftigung verbessern. Anerkennung und Arbeitsmarktzugang bleiben davon unberührt. Der Bund finanziert die Kurse bereits."
+    },
+    {
+      "id": 6108,
+      "name": "Bleiberecht für gut integrierte Geduldete (Spurwechsel)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Ein Bleiberecht für gut integrierte Geduldete beendet die Kettenduldung direkt; mit dem Chancen-Aufenthaltsrecht von 2022 haben viele Geduldete einen Aufenthaltstitel bekommen. Wer die Bedingungen nicht erfüllt, bleibt geduldet. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6109,
+      "name": "Verbindliche Verteilung Schutzsuchender in der EU",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Eine verbindliche Verteilung in der EU würde die Zuständigkeitsfrage anders lösen; ob Asylsuchende dann im zugewiesenen Staat bleiben, ist offen. Umsetzbar nur mit einer Mehrheit der EU-Staaten, die bisher nicht in Sicht ist."
+    },
+    {
+      "id": 6110,
+      "name": "Arbeitsverbote für Geflüchtete abschaffen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Ein früher Zugang zum Arbeitsmarkt setzt direkt an; Studien zeigen, dass Beschäftigungsverbote die Integration in Arbeit noch Jahre später verzögern. Sprachkurse und Anerkennung bleiben davon unberührt. Per Bundesgesetz umsetzbar."
+    },
+    {
+      "id": 6111,
+      "name": "Straftäter vorrangig abschieben",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Vorrang für Straftäter setzt Schwerpunkte beim Vollzug, beseitigt aber nicht die Hindernisse (fehlende Papiere, Herkunftsstaaten), an denen Abschiebungen meist scheitern. Den Vollzug steuern die Ausländerbehörden der Länder."
+    },
+    {
+      "id": 6112,
+      "name": "Mehr Personal für Asylbehörden und Verwaltungsgerichte",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Personal und gestraffte Verfahren setzen direkt an der Verfahrensdauer an; beim Bundesamt hat Personalaufbau Rückstände schon abgebaut. Das Bundesamt und das Asylprozessrecht regelt der Bund, das Personal der Verwaltungsgerichte stellen die Länder."
+    },
+    {
+      "id": 6113,
+      "name": "Bezahlkarte oder Sachleistungen für Asylsuchende (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Bezahlkarte und Sachleistungen sollen Anreize senken und Auszahlungen vereinfachen; eine Wirkung auf die Zahl der Neuankommenden ist nicht belegt, an Unterkünften und Ausländerbehörden ändert sich nichts. Die Länder können sie im Rahmen des Asylbewerberleistungsgesetzes selbst einführen."
+    },
+    {
+      "id": 6114,
+      "name": "Asylsuchende zentral in Landes- oder Großunterkünften unterbringen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Zentrale Unterbringung, etwa bis zum Asylbescheid, entlastet die Kommunen, verlagert den Bedarf an Plätzen aber auf das Land; ob Verfahren und Rückführungen dadurch schneller werden, ist kaum untersucht. Das Land schafft die Plätze, die Wohnpflicht regelt der Bund."
+    },
+    {
+      "id": 6115,
+      "name": "Ausländerbehörden personell und digital stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Setzt direkt an der Überlastung der Ausländerbehörden an; wie viel schneller die Verfahren werden, hängt von Stellen und Digitalisierung ab und ist wenig untersucht. Das Land kann Personal und Digitalisierung mitfinanzieren, braucht dafür aber Geld und Fachkräfte."
+    },
+    {
+      "id": 6116,
+      "name": "Kommunen und Bezirke für die Aufnahme finanziell stärker ausstatten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Landesgeld, etwa als Pauschale je Platz oder Person, setzt an der Kapazitätsseite an; Geld allein schafft aber nicht sofort Unterkünfte, Kitaplätze oder Personal, und die Programme nennen meist keinen Umfang. Umsetzbar über den Landeshaushalt."
+    },
+    {
+      "id": 6117,
+      "name": "Auf Bundes- und EU-Ebene auf weniger Zugang dringen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Grenzkontrollen, Zurückweisungen, Familiennachzug oder Asylverfahren an den EU-Außengrenzen kann ein Land nicht selbst regeln, sondern nur über den Bundesrat oder beim Bund darauf hinwirken; die Wirkung solcher Maßnahmen auf die Zugangszahlen ist zudem umstritten."
+    },
+    {
+      "id": 6118,
+      "name": "Geflüchtete dezentral in Wohnungen unterbringen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Wohnungen statt Sammelunterkünften erleichtern das Ankommen und können günstiger sein; zusätzliche Plätze entstehen aber nur, wo Wohnungen frei sind, in angespannten Wohnungsmärkten konkurriert der Bedarf mit anderen Wohnungssuchenden. Das Land kann es über Aufnahmegesetz und Förderung steuern."
+    },
+    {
+      "id": 6119,
+      "name": "Verteilung im Land an der Aufnahmefähigkeit der Kommunen ausrichten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verteilung nach Leistungsfähigkeit oder Zuzugssperren für überlastete Orte (§ 12a Aufenthaltsgesetz) entlasten einzelne Kommunen, verschieben den Bedarf aber nur im Land; Wohnsitzauflagen können laut Studien die Arbeitsaufnahme verzögern. Das Land kann es selbst regeln."
+    },
+    {
+      "id": 6120,
+      "name": "Aufnahmestopp des Landes",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 0,
+      "evidenz": "offen",
+      "begruendung": "Ein Aufnahmestopp würde das Land entlasten, den Bedarf aber auf andere Länder verschieben. Die Länder sind nach dem Asylgesetz verpflichtet, die ihnen zugewiesenen Asylsuchenden aufzunehmen; ein einseitiger Stopp ist rechtlich derzeit nicht umsetzbar."
+    },
+    {
+      "id": 6121,
+      "name": "Mehr Unterbringungsplätze verbindlich schaffen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verbindliche Vorgaben für Standorte und die Nutzung leer stehender Gebäude setzen direkt an fehlenden Unterkünften an; Planung und Umbau dauern aber, und gegen einzelne Standorte gibt es oft Widerstand vor Ort. Umsetzbar über Landesrecht und Landeshaushalt."
+    },
+    {
+      "id": 6122,
+      "name": "Vom Bund die volle Übernahme der Unterbringungskosten fordern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Eine volle Kostenübernahme durch den Bund würde Länder und Kommunen finanziell entlasten, schafft aber nicht sofort Plätze; ein Land kann sie nur fordern, entscheiden müssen Bundesregierung und Bundestag."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Arbeitserlaubnis vom ersten Tag an, unabhängig vom Aufenthaltsstatus und vom einzelnen Arbeitgeber",
+      "zitat": "Bedingungslose Arbeitserlaubnis: Zugewanderte Personen erhalten vom ersten Tag an eine Arbeitserlaubnis, unabhängig von ihrem Aufenthaltsstatus.",
+      "ursachen_ids": [
+        603
+      ],
+      "pruefsumme": "34e4f72270be2342"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Chancenjahr: Menschen mit abgelehntem Asylantrag können sich durch ein Jahr Arbeit einen Aufenthaltstitel erarbeiten",
+      "zitat": "Das Chancenjahr: Menschen mit abgelehntem Asylantrag erhalten die Möglichkeit, ein Jahr lang zu arbeiten und sich durch Beschäftigung das Recht auf einen Aufenthaltstitel zu erarbeiten.",
+      "ursachen_ids": [
+        606
+      ],
+      "pruefsumme": "0215bc5dee389362"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Dauerhafter Aufenthaltsstatus, wenn eine Abschiebung drei Jahre lang nicht vollzogen wurde und Integrationsbereitschaft gezeigt wurde",
+      "zitat": "Personen, bei denen eine Abschiebung innerhalb von drei Jahren nicht vollzogen wurde, können einen dauerhaften Aufenthaltsstatus erhalten, wenn sie die Abschiebung nicht aktiv verhindert und durch Integrationsmaßnahmen ihre Bereitschaft zur gesellschaftlichen Teilhabe gezeigt haben.",
+      "ursachen_ids": [
+        606
+      ],
+      "pruefsumme": "ce123f94e802fe16"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Abschlüsse werden nach Gleichwertigkeit des Berufsbildes im Ausbildungsland anerkannt statt individuell geprüft",
+      "zitat": "Beschleunigte Anerkennung von Abschlüssen: Die Anerkennung von Bildungs- und Berufsabschlüssen erfolgt nicht mehr individuell, sondern auf der Grundlage der Gleichwertigkeit des Berufsbildes im Ausbildungsland.",
+      "ursachen_ids": [
+        603
+      ],
+      "pruefsumme": "a927064457c9e422"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Kostenlose Deutschkurse für alle Zielgruppen unabhängig vom Aufenthaltsstatus",
+      "zitat": "Kostenlose Deutschkurse: Für alle Zielgruppen, unabhängig vom Aufenthaltsstatus, werden kostenlose Deutschkurse angeboten.",
+      "ursachen_ids": [
+        603
+      ],
+      "pruefsumme": "d9c87152a038d1b4"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Dublin-Verordnung abschaffen und Asylsuchende nach BIP, Bevölkerungsdichte und Größe auf die Länder verteilen",
+      "zitat": "Gerechte Verteilung von Asylsuchenden: Die Dublin-III-Verordnung wird zugunsten einer Verteilung nach Kriterien wie BIP, Bevölkerungsdichte und Gesamtgröße eines Landes abgeschafft.",
+      "ursachen_ids": [
+        605
+      ],
+      "pruefsumme": "c8800f6b265f7daf"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Bundesweite kostenlose Asylberatung zur Begleitung der Asylsuchenden und Beschleunigung der Verfahren",
+      "zitat": "Kostenlose Asylberatung: Es wird eine bundesweite, qualifizierte und kostenlose Beratung zur Begleitung von Asylsuchenden und zur Beschleunigung von Asylverfahren eingeführt.",
+      "ursachen_ids": [
+        602
+      ],
+      "pruefsumme": "3b8e0c8211296cec"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Spezialisierte Kammern an den Verwaltungsgerichten für Asylprozesse, um Verfahren zu beschleunigen",
+      "zitat": "Kammern für Asylprozesse: Spezialisierte Kammern an den Verwaltungsgerichten beschleunigen die Bearbeitung von Asylfällen und machen sie gerechter.",
+      "ursachen_ids": [
+        602
+      ],
+      "pruefsumme": "54afa5eda3a353b8"
+    }
+  ]
+}

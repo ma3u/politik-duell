@@ -628,6 +628,87 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1101, 1102, 1103, 1104, 1105],
+      "massnahmen": [
+        {
+          "id": 8533,
+          "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene abschaffen",
+          "ursachen_ids": [1101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Steuersenkungen auf Kraftstoff wurden 2022 zu knapp 90 % weitergegeben; auf Lebensmittelpreise wirkt Energiesteuer nur indirekt und gering. Der Steuerausfall läge im zweistelligen Milliardenbereich ohne Finanzierung, die Abschaffung hängt an der EU.",
+          "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53",
+          "beleg_studie_url": "https://www.leuphana.de/institute/ivwl/aktuell/ansicht/2024/08/27/neue-publikation-von-mats-kahl-in-energy-economics.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8534,
+          "instrument": 6880,
+          "beschreibung": "Grundnahrungsmittel wie Brot, Obst und Gemüse von der Mehrwertsteuer befreien, gegenfinanziert über die Erbschaftsteuer",
+          "ursachen_ids": [1101],
+          "zitat": "Grundnahrungsmittel wie Brot, Obst und Gemüse werden von der Mehrwertsteuer befreit, um die Grundversorgung für alle erschwinglicher zu machen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=101",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8535,
+          "instrument": 6889,
+          "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=89",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8536,
+          "instrument": 6890,
+          "beschreibung": "Tarifbindung stärken",
+          "ursachen_ids": [1103, 1105],
+          "zitat": "Die Tarifbindung wird gestärkt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=89",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8537,
+          "beschreibung": "Grundfreibetrag moderat anheben, um kleine und mittlere Einkommen zu entlasten",
+          "ursachen_ids": [1104],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erhöht das Nettoeinkommen aller Steuerpflichtigen, die Entlastung bleibt bei moderater Anhebung aber klein (eher zweistellige Euro im Monat). Der Grundfreibetrag wird regelmäßig per Gesetz angehoben, die Kosten von einigen Milliarden Euro sind tragbar.",
+          "zitat": "Der Grundfreibetrag wird moderat angehoben, um kleine und mittlere Einkommen spürbar zu entlasten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=99",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8538,
+          "instrument": 7228,
+          "beschreibung": "Umschulungen und maßgeschneiderte Weiterbildung mit Lohnkostenzuschüssen für Langzeitarbeitslose",
+          "ursachen_ids": [1105],
+          "zitat": "Spezielle Programme fördern den Berufswechsel in Berufsfelder mit Fachkräftemangel.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=120",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,194 @@
+{
+  "thema_id": 1,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt (Hausarztzentrierung), um Fachpraxen zu entlasten.",
+          "ursachen_ids": [
+            102
+          ],
+          "zitat": "Hauspraxiszentrierte Versorgung (HzV): Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt, um die Fachpraxen zu entlasten.",
+          "seite": 125
+        },
+        {
+          "beschreibung": "Multiprofessionelle regionale Versorgungszentren mit Gesundheitsfachberufen werden eingerichtet.",
+          "ursachen_ids": [
+            101
+          ],
+          "zitat": "Regionale Versorgungszentren (RVZ): Multiprofessionelle Zentren mit Gesundheitsfachberufen und Daseinsvorsorgediensten werden eingerichtet.",
+          "seite": 125
+        },
+        {
+          "beschreibung": "Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden kommen in entlegene Gebiete.",
+          "ursachen_ids": [
+            101
+          ],
+          "zitat": "Mobile Einheiten („Klinikmobile“): Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden werden in entlegenen Gebieten eingesetzt.",
+          "seite": 126
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 102,
+          "name": "Selbstbeteiligung bei Facharztbesuch ohne Überweisung",
+          "seite": 125
+        },
+        {
+          "ursache": 101,
+          "name": "Regionale Versorgungszentren",
+          "seite": 125
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 103,
+          "seiten": [
+            123,
+            124
+          ],
+          "grund": "Keine Zusage zu Vergütung nach Versicherungsstatus; Einheitliches Vergütungssystem betrifft Leistungsarten, gemeinsame Krankenversicherung ist Finanzierungsreform ohne Bezug zur Terminvergabe."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "101": {
+      "Niederlassung fördern, mehr Studienplätze": [
+        "hausarzt",
+        "landarzt",
+        "niederlassung",
+        "medizinstudium",
+        "studienplätze",
+        "hausärztliche versorgung",
+        "unterversorg"
+      ],
+      "Gesundheitszentren und Anstellung": [
+        "mvz",
+        "gesundheitszentrum",
+        "medizinisches versorgungszentrum",
+        "angestellte ärzt",
+        "kommunale praxis"
+      ],
+      "Budgetierung aufheben": [
+        "budgetierung",
+        "entbudgetierung",
+        "budget"
+      ]
+    },
+    "102": {
+      "Steuerung: Primärarzt, Terminvergabe": [
+        "primärarzt",
+        "hausarztmodell",
+        "terminservice",
+        "termin",
+        "facharzttermin",
+        "wartezeit",
+        "patientensteuerung"
+      ],
+      "Aufgaben an andere Gesundheitsberufe": [
+        "gesundheitsberufe",
+        "pflegefachperson",
+        "community health nurse",
+        "gemeindeschwester",
+        "delegation",
+        "substitution"
+      ],
+      "Selbstbeteiligung": [
+        "selbstbeteiligung",
+        "praxisgebühr",
+        "kontaktgebühr"
+      ]
+    },
+    "103": {
+      "Einheitliche Vergütung, Bürgerversicherung": [
+        "bürgerversicherung",
+        "privatversichert",
+        "private krankenversicherung",
+        "zwei-klassen",
+        "einheitliche vergütung",
+        "gebührenordnung"
+      ],
+      "Entbudgetierung für alle": [
+        "entbudgetierung",
+        "budgetierung",
+        "honorar"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "3f02c59d8936858a72520ced996e6b6338b3f6ab9ec5a28923a9f5099a07767a",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "101": {
+            "Niederlassung fördern, mehr Studienplätze": {
+              "hausarzt": 0,
+              "landarzt": 0,
+              "niederlassung": 0,
+              "medizinstudium": 0,
+              "studienplätze": 0,
+              "hausärztliche versorgung": 0,
+              "unterversorg": 2
+            },
+            "Gesundheitszentren und Anstellung": {
+              "mvz": 0,
+              "gesundheitszentrum": 0,
+              "medizinisches versorgungszentrum": 0,
+              "angestellte ärzt": 0,
+              "kommunale praxis": 0
+            },
+            "Budgetierung aufheben": {
+              "budgetierung": 0,
+              "entbudgetierung": 0,
+              "budget": 15
+            }
+          },
+          "102": {
+            "Steuerung: Primärarzt, Terminvergabe": {
+              "primärarzt": 0,
+              "hausarztmodell": 0,
+              "terminservice": 0,
+              "termin": 3,
+              "facharzttermin": 0,
+              "wartezeit": 1,
+              "patientensteuerung": 0
+            },
+            "Aufgaben an andere Gesundheitsberufe": {
+              "gesundheitsberufe": 1,
+              "pflegefachperson": 0,
+              "community health nurse": 0,
+              "gemeindeschwester": 0,
+              "delegation": 0,
+              "substitution": 1
+            },
+            "Selbstbeteiligung": {
+              "selbstbeteiligung": 1,
+              "praxisgebühr": 0,
+              "kontaktgebühr": 0
+            }
+          },
+          "103": {
+            "Einheitliche Vergütung, Bürgerversicherung": {
+              "bürgerversicherung": 0,
+              "privatversichert": 0,
+              "private krankenversicherung": 0,
+              "zwei-klassen": 0,
+              "einheitliche vergütung": 0,
+              "gebührenordnung": 0
+            },
+            "Entbudgetierung für alle": {
+              "entbudgetierung": 0,
+              "budgetierung": 0,
+              "honorar": 2
+            }
+          }
+        }
+      }
+    ]
+  }
+}

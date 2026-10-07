@@ -1,12 +1,100 @@
 {
-  "thema_id": 6,
-  "stand": "2026-10-05",
-  "herkunft": "Nachtrag zur Forderung „Identität und Hintergrund bei der Einreise strenger prüfen“ (Liste vom 5. 10. 2026, /forderung-erfassen), vor dem Blick in die Programme geschrieben; enthält nur die Richtungen dieses Nachtrags, die Gegenrichtung (weniger Datenzugriff, Datenschutz) ist mit aufgenommen.",
-  "regeln": [],
-  "suchbegriffe": {
-    "604": {
-      "Identität und Hintergrund bei Einreise und Registrierung strenger prüfen": ["identitätsfeststellung", "identitätsprüfung", "identitätsnachweis", "identität", "hintergrundprüfung", "sicherheitsüberprüfung", "sicherheitsprüfung", "biometrisch", "fingerabdruck", "eurodac", "datenträger", "mobiltelefon", "handydaten", "ohne papiere", "ohne pass"],
-      "Identitätsprüfung und Datenzugriff begrenzen, Datenschutz für Geflüchtete wahren": ["datenschutz für geflüchtete", "handydaten auslesen ablehn", "auslesen von handys", "auslesen von mobiltelefonen", "datenträgerauswertung"]
-    }
+ "thema_id": 6,
+ "stand": "2026-10-05",
+ "herkunft": "Nachtrag zur Forderung „Identität und Hintergrund bei der Einreise strenger prüfen“ (Liste vom 5. 10. 2026, /forderung-erfassen), vor dem Blick in die Programme geschrieben; enthält nur die Richtungen dieses Nachtrags, die Gegenrichtung (weniger Datenzugriff, Datenschutz) ist mit aufgenommen. Nachtrag Volt (7. 10. 2026): Suchbegriffe ohne Blick in die Programme geschrieben – Lösungsrichtungen aus der Spalte „Diagnose aus der Debatte“ in docs/perspektiven-ursachen.md, Begriffe aus den dort dokumentierten Stichwörtern der ersten Erfassung (für alle Programme gleich), ergänzt um Begriffe der jeweiligen Richtung.",
+ "regeln": [],
+ "suchbegriffe": {
+  "604": {
+   "Identität und Hintergrund bei Einreise und Registrierung strenger prüfen": [
+    "identitätsfeststellung",
+    "identitätsprüfung",
+    "identitätsnachweis",
+    "identität",
+    "hintergrundprüfung",
+    "sicherheitsüberprüfung",
+    "sicherheitsprüfung",
+    "biometrisch",
+    "fingerabdruck",
+    "eurodac",
+    "datenträger",
+    "mobiltelefon",
+    "handydaten",
+    "ohne papiere",
+    "ohne pass"
+   ],
+   "Identitätsprüfung und Datenzugriff begrenzen, Datenschutz für Geflüchtete wahren": [
+    "datenschutz für geflüchtete",
+    "handydaten auslesen ablehn",
+    "auslesen von handys",
+    "auslesen von mobiltelefonen",
+    "datenträgerauswertung"
+   ]
+  },
+  "601": {
+   "Zugang begrenzen": [
+    "obergrenze",
+    "begrenzung",
+    "zuzug",
+    "irreguläre migration",
+    "kommunen überlastet"
+   ],
+   "Kapazitäten ausbauen": [
+    "unterbringung",
+    "kommunen",
+    "kapazitäten",
+    "integrationsinfrastruktur",
+    "erstaufnahme"
+   ]
+  },
+  "602": {
+   "Schnellere Verfahren": [
+    "asylverfahren",
+    "verfahrensdauer",
+    "verwaltungsgericht",
+    "bamf",
+    "beschleunig"
+   ]
+  },
+  "603": {
+   "Schneller in Arbeit": [
+    "sprachkurs",
+    "integrationskurs",
+    "anerkennung",
+    "berufsabschlüsse",
+    "arbeitsmarktzugang",
+    "beschäftigungsverbot",
+    "arbeitserlaubnis"
+   ]
+  },
+  "605": {
+   "Grenzkontrollen, Zurückweisungen": [
+    "grenzkontrolle",
+    "zurückweisung",
+    "dublin",
+    "grenzschutz",
+    "außengrenze"
+   ],
+   "Europäische Verteilung, GEAS": [
+    "geas",
+    "gemeinsames europäisches asylsystem",
+    "verteilung",
+    "solidaritätsmechanismus"
+   ]
+  },
+  "606": {
+   "Bleiberecht, Arbeitserlaubnis": [
+    "duldung",
+    "geduldete",
+    "bleiberecht",
+    "chancen-aufenthaltsrecht",
+    "spurwechsel"
+   ],
+   "Ausreise durchsetzen": [
+    "ausreisepflicht",
+    "abschiebung",
+    "rückführung",
+    "ausreisezentr"
+   ]
   }
+ }
 }

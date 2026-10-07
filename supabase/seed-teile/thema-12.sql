@@ -119,7 +119,13 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7121, 12, 16, 'BE', 'Ausbau sicherer Radwege fortführen, lückenloses Netz nach Radnetzplan', '{1204}', 7064, 2, 3, null, 'Getrennte, durchgehende Radwege und sichere Kreuzungen senken das Unfallrisiko nach vielen Studien; die Wirkung hängt von der Gestaltung ab, und neue Wege entstehen nur nach und nach.', 'https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=65', null, 'gemischt', '2026-09-30', false, true, null),
   (7122, 12, 16, 'BE', 'Alle Möglichkeiten für Tempo 30 auf Berliner Straßen nutzen', '{1204}', 7065, 2, 3, null, 'Niedrigere Geschwindigkeit verringert Zahl und Schwere von Unfällen mit Radfahrenden und Fußgängern; seit 2024 können Länder und Kommunen Tempo 30 leichter anordnen.', 'https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=63', null, 'belegt', '2026-09-30', false, true, null),
   (7123, 12, 17, 'BE', 'Investitionsmittel für die Instandsetzung von Straßen und Brücken, Sondervermögen nutzen', '{1202}', 7060, 2, 3, null, 'Mehr Geld und klare Prioritäten für den Erhalt bauen den Sanierungsstau ab; seit 2025 stehen den Ländern Mittel aus dem Sondervermögen Infrastruktur zur Verfügung. Ob sie verbaut werden, hängt von Personal und Verfahren ab.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=43', null, 'gemischt', '2026-09-30', false, true, null),
-  (7124, 12, 17, 'BE', 'Sicheres, zusammenhängendes Radwegenetz, sichere Kreuzungen mit getrennten Ampelphasen', '{1204}', 7064, 2, 3, null, 'Getrennte, durchgehende Radwege und sichere Kreuzungen senken das Unfallrisiko nach vielen Studien; die Wirkung hängt von der Gestaltung ab, und neue Wege entstehen nur nach und nach.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=49', null, 'gemischt', '2026-09-30', false, true, null);
+  (7124, 12, 17, 'BE', 'Sicheres, zusammenhängendes Radwegenetz, sichere Kreuzungen mit getrennten Ampelphasen', '{1204}', 7064, 2, 3, null, 'Getrennte, durchgehende Radwege und sichere Kreuzungen senken das Unfallrisiko nach vielen Studien; die Wirkung hängt von der Gestaltung ab, und neue Wege entstehen nur nach und nach.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=49', null, 'gemischt', '2026-09-30', false, true, null),
+  (8539, 12, 18, null, 'Elektronische, streckenabhängige Autobahnmaut, deren Einnahmen Unterhalt und Ausbau der Autobahnen finanzieren sollen', '{1201}', 6932, 2, 2, null, 'Macht die Finanzierung der Autobahnen planbarer und unabhängiger vom Haushalt; öffentlich-private Partnerschaften waren laut Bundesrechnungshof bisher oft teurer als konventionelle Vergabe.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=71', null, 'gemischt', '2026-10-07', false, true, null),
+  (8540, 12, 18, null, 'Schuldenbremse reformieren: Nettoinvestitionen unter anderem in Infrastruktur werden ausgenommen, Defizitgrenze steigt', '{1201}', 6931, 2, 2, null, 'Mehr Geld für Bund, Länder und Kommunen kann Sanierungsstau abbauen; ob es bei Straßen und Brücken ankommt und verbaut werden kann, hängt von Personal und Verfahren ab. Braucht eine Grundgesetzänderung, wie sie 2025 für das Sondervermögen beschlossen wurde.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=22', null, 'gemischt', '2026-10-07', false, true, null),
+  (8541, 12, 18, null, 'Planungs- und Genehmigungsverfahren für Infrastrukturprojekte vereinfachen und auf höchstens drei Monate begrenzen', '{1201,1203}', null, 2, 1, null, 'Schnellere Verfahren verkürzen den Weg zu Ersatzbauten; laut KfW und Fachleuten bremsen aber vor allem Personal und Geld. Eine Frist von drei Monaten für alle Infrastrukturprojekte ist mit EU-Vorgaben zu Umweltprüfung und Beteiligung kaum vereinbar.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53', 'https://www.kfw.de/Über-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_855680.html', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8542, 12, 18, null, 'Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um Kommunalfinanzen zu stärken', '{1202}', null, 1, 1, null, 'Stabilere Einnahmen erleichtern Kommunen die Planung von Investitionen; aufkommensneutral entsteht aber kein zusätzliches Geld für Straßen. Ein Ersatz der Gewerbesteuer berührt Art. 28 und 106 GG und scheiterte bisher an Bund und Ländern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=15', null, 'offen', '2026-10-07', false, true, 'blind'),
+  (8543, 12, 18, null, 'Sichere Radwege und Fahrradstraßen ausbauen', '{1204}', 6936, 2, 2, null, 'Getrennte, durchgehende Radwege senken das Unfallrisiko nach vielen Studien; an Kreuzungen, wo die meisten schweren Unfälle passieren, hängt es von der Gestaltung ab. Bauen müssen Länder und Kommunen, der Bund kann fördern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=69', null, 'gemischt', '2026-10-07', false, true, null),
+  (8544, 12, 18, null, 'Bundesweit Tempo 30 innerorts sowie Tempo 80 auf Landstraßen', '{1204}', null, 3, 3, null, 'Niedrigere Tempolimits senken Zahl und Schwere von Unfällen; Frankreich verzeichnete nach Tempo 80 auf Landstraßen 12 % weniger Getötete. Anders als Tempo 30 allein deckt es auch Landstraßen ab. Der Bund kann die StVO mit Zustimmung des Bundesrats ändern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=69', 'https://www.cerema.fr/en/node/7630', 'belegt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -143,7 +149,10 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7063, 12),
   (7064, 12),
   (7065, 12),
-  (7066, 12);
+  (7066, 12),
+  (8541, 12),
+  (8542, 12),
+  (8544, 12);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (12, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -173,6 +182,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (12, 14, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (12, 15, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (12, 16, 'BE', 'massnahmen', null, '2026-09-30', true, null),
-  (12, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null);
+  (12, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null),
+  (12, 18, null, 'massnahmen', null, '2026-10-07', true, '{1201,1202,1203,1204}');
 
 commit;

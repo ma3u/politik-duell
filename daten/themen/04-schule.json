@@ -2699,6 +2699,106 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [401, 402, 403, 404, 405],
+      "massnahmen": [
+        {
+          "id": 8473,
+          "beschreibung": "Duales Lehramtsstudium, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt.",
+          "ursachen_ids": [401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein praxisintegriertes Lehramtsstudium mit Anrechnung ausländischer Abschlüsse kann zusätzliche Lehrkräfte gewinnen; zu dualen Lehramtsmodellen gibt es erst wenige Befunde. Lehrerbildung ist Ländersache, der Bund kann nur über Förderprogramme beitragen.",
+          "zitat": "Duales Lehramtsstudium: Ein duales System, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt, wird eingeführt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=115",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8474,
+          "beschreibung": "Lehrkräfte durch Verwaltungsfachkräfte und multiprofessionelle Teams entlasten.",
+          "ursachen_ids": [401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verwaltungs- und Unterstützungskräfte nehmen Lehrkräften Aufgaben ab und schaffen Zeit für Unterricht; Studien zeigen Entlastung, Lerneffekte aber nur bei gezieltem Einsatz. Schulpersonal ist Ländersache, der Bund kann nur über Programme mitfinanzieren.",
+          "zitat": "Entlastung durch Teams: Lehrkräfte werden durch Verwaltungsfachkräfte und multiprofessionelle Teams unterstützt, um sich auf ihre Kernaufgaben zu konzentrieren.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=107",
+          "beleg_studie_url": "https://evidenceforlearning.org.au/toolkit/teaching-assistants",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8475,
+          "beschreibung": "Bundesweiter Bildungskanon für das Vorschuljahr, der Deutsch als Schulsprache und bilinguale Betreuung fördert.",
+          "ursachen_ids": [404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein gemeinsamer Bildungsrahmen für das Vorschuljahr kann Sprachförderung vereinheitlichen; ohne Sprachstandsfeststellung und Förderpflicht erreicht er nicht sicher alle Kinder mit Bedarf, Sprachförderprogramme wirken unterschiedlich. Der Bund braucht die Länder.",
+          "zitat": "Flächendeckende Sprachförderung: Ein bundesweiter Bildungskanon für das Vorschuljahr wird umgesetzt, der Deutsch als Schulsprache und bilinguale Betreuung fördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=108",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8476,
+          "beschreibung": "Längeres gemeinsames Lernen: Dreigliedriges Schulsystem wird aufgehoben.",
+          "ursachen_ids": [405],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Längeres gemeinsames Lernen setzt an der frühen Trennung an; eine Studie zu deutschen Ländern findet Gewinne für Leistungsschwächere, die Forschung zur Schulstruktur ist insgesamt aber uneinheitlich. Für die Schulstruktur ist der Bund nicht zuständig (Grundgesetzänderung).",
+          "zitat": "Abschaffung der Dreigliedrigkeit: Die Trennung von Hauptschule, Realschule und Gymnasium wird zugunsten eines längeren gemeinsamen Lernens aufgehoben, um Chancengleichheit und sozialen Zusammenhalt zu stärken.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=110",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.610091.de/publikationen/diskussionspapiere/2018_1775/better_together__heterogeneous_effects_of_tracking_on_student_achievement.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8477,
+          "beschreibung": "Lernmaterialien für schulpflichtige Kinder bundesweit kostenfrei, vom Bund finanziert.",
+          "ursachen_ids": [405],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kostenfreie Lernmittel entlasten vor allem einkommensschwache Familien; Studien zu kostenlosen Schulbüchern finden im Durchschnitt kaum Effekte auf Leistungen. Schulen sind Ländersache, der Bund kann nur über Vereinbarung und Finanztransfers beitragen.",
+          "zitat": "Kostenfreie Lernmittel: Lernmaterialien werden schulpflichtigen Kindern bundesweit kostenfrei zur Verfügung gestellt und über Bundesmittel finanziert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=105",
+          "beleg_studie_url": "https://www.povertyactionlab.org/node/1436",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8478,
+          "beschreibung": "Psychologie, Schulsozialarbeit, Schulgesundheit und Sonderpädagogik als fester Teil der Schulen.",
+          "ursachen_ids": [405],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Fachkräfte für Psychologie, Sozialarbeit und Sonderpädagogik unterstützen Kinder in schwierigen Lagen; Studien finden kleine positive Effekte von Schulberatung, sonst sind Wirkungen auf Leistungen kaum belegt. Schulpersonal ist Ländersache, der Bund kann nur mitfinanzieren.",
+          "zitat": "Fachkräfte in Schulen: Fachkräfte für Psychologie, Schulsozialarbeit, Schulgesundheit sowie Sonderpädagogik werden fester Bestandteil des Schulsystems.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=111",
+          "beleg_studie_url": "https://ideas.repec.org/p/pit/wpaper/396.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

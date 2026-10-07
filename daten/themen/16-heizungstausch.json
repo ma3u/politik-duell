@@ -759,6 +759,34 @@
         "geprueft": false,
         "ki_entwurf": true
       }
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1601, 1602, 1603, 1604],
+      "massnahmen": [
+        {
+          "id": 8558,
+          "instrument": 7034,
+          "beschreibung": "Finanzielle Unterstützung für klimaneutrale Maßnahmen bei Neubau und Sanierung.",
+          "ursachen_ids": [1601],
+          "zitat": "Fördermittel für Klimaneutralität: Finanzielle Unterstützung wird bereitgestellt, um klimaneutrale Maßnahmen sowohl im Neubau als auch bei der Sanierung umzusetzen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8559,
+          "instrument": 7038,
+          "beschreibung": "Kommunale Wärmeplanung dauerhaft finanzieren, Fernwärmeausbau über Duldungspflichten und Förderprogramme voranbringen.",
+          "ursachen_ids": [1603],
+          "zitat": "Kommunale Wärmeplanung: Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=68",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

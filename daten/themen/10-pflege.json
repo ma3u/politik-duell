@@ -1060,6 +1060,23 @@
         "geprueft": false,
         "ki_entwurf": true
       }
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1001, 1002, 1003, 1004, 1005],
+      "massnahmen": [
+        {
+          "id": 8532,
+          "instrument": 6228,
+          "beschreibung": "Betreuungsangebot für Pflegebedürftige deutlich ausbauen, damit niemand zu unbezahlter Sorgearbeit gezwungen ist",
+          "ursachen_ids": [1004],
+          "zitat": "Gleichzeitig wird das Betreuungsangebot für Kinder und Pflegebedürftige deutlich ausgebaut. Niemand darf wegen fehlender Betreuungsmöglichkeiten gezwungen sein, unbezahlte Sorgearbeit zu leisten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=52",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

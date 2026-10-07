@@ -139,7 +139,13 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (6875, 8, 13, 'BE', 'Berliner Klimaticket für 9 Euro im Monat für Menschen mit wenig Geld', '{804}', 6840, 2, 2, null, 'Entlastet die Gruppen spürbar, für die der Preis am ehesten eine Hürde ist; das Land muss die Rabatte dauerhaft bezahlen, und für alle anderen bleibt der Preis gleich.', 'https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=82', null, 'belegt', '2026-09-30', false, true, null),
   (6876, 8, 16, 'BE', 'Sozialticket wieder auf 9 Euro senken', '{804}', 6840, 2, 2, null, 'Entlastet die Gruppen spürbar, für die der Preis am ehesten eine Hürde ist; das Land muss die Rabatte dauerhaft bezahlen, und für alle anderen bleibt der Preis gleich.', 'https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=57', null, 'belegt', '2026-09-30', false, true, null),
   (6877, 8, 16, 'BE', 'Preisanstieg bei BVG und S-Bahn stoppen, kostenloses Schülerticket erhalten', '{804}', null, 1, 3, null, 'Verhindert weitere Erhöhungen der Berliner Tarife; für das Deutschlandticket, das viele nutzen, gilt der bundesweit festgelegte Preis weiter. Das Land muss die steigenden Kosten der Verkehrsbetriebe ausgleichen.', 'https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=8', null, 'offen', '2026-09-30', false, true, null),
-  (6878, 8, 17, 'BE', 'Kostenloses Schülerticket in der ganzen Region Berlin-Brandenburg', '{804}', 6841, 2, 2, null, 'Nimmt jungen Menschen die Kosten ganz ab; kostenlose Schülertickets gibt es in mehreren Ländern bereits. Das Land muss die Einnahmeausfälle dauerhaft ausgleichen.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=48', null, 'belegt', '2026-09-30', false, true, null);
+  (6878, 8, 17, 'BE', 'Kostenloses Schülerticket in der ganzen Region Berlin-Brandenburg', '{804}', 6841, 2, 2, null, 'Nimmt jungen Menschen die Kosten ganz ab; kostenlose Schülertickets gibt es in mehreren Ländern bereits. Das Land muss die Einnahmeausfälle dauerhaft ausgleichen.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=48', null, 'belegt', '2026-09-30', false, true, null),
+  (8506, 8, 18, null, 'Öffentlichen Nahverkehr zuverlässig, barrierefrei und dicht getaktet ausbauen', '{801}', null, 2, 2, null, 'Dichtere Takte gewinnen laut Metaanalyse mehr Fahrgäste als Preissenkungen; ohne Betrag bleibt offen, wie viel ankommt. Zuständig sind die Länder, der Bund kann über Geld beitragen, Fahrpersonal fehlt.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=69', 'https://worldtransitresearch.info/research/6475', 'belegt', '2026-10-07', false, true, 'blind'),
+  (8507, 8, 18, null, 'Bedarfsgesteuerte Rufbusse und Verzahnung von Nahverkehr und Individualverkehr im ländlichen Raum', '{801}', null, 1, 2, null, 'Rufbusse erreichen auf dem Land mehr Menschen, vor allem abends und am Wochenende; sie kosten je Fahrgast aber ein Vielfaches eines Linienbusses. Zuständig sind die Länder, der Bund kann nur fördern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70', 'https://kommunal.de/on-demand-verkehr-kommunen-aus-finanzierung', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8508, 8, 18, null, 'Deutschlandtakt sowie Ausbau und Modernisierung des Schienennetzes vorantreiben', '{802}', 6744, 2, 2, null, 'Setzt direkt am maroden Netz an, wirkt wegen Bauzeiten aber erst nach Jahren; der Bundesrechnungshof bezweifelt, dass mehr Mittel ohne bessere Steuerung den Zustand verbessern.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70', null, 'gemischt', '2026-10-07', false, true, null),
+  (8509, 8, 18, null, 'Netz und Betrieb der Bahn entflechten; Bundeskompetenzzentrum steuert die Netzentwicklung', '{802}', 6741, 1, 2, null, 'Soll Wettbewerb und klare Verantwortung für das Netz schaffen; in anderen Ländern hat die Trennung nicht einheitlich zu einem besseren Netz geführt, und die Umstrukturierung bindet Jahre.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70', null, 'gemischt', '2026-10-07', false, true, null),
+  (8510, 8, 18, null, 'Deutschlandticket sichern und weiterentwickeln', '{804}', null, 1, 3, null, 'Die Evaluation zeigt, dass das Ticket genutzt wird und Fahrten vom Auto verlagert; reines Sichern verhindert aber weitere Preiserhöhungen nicht. Der Bund zahlt seinen Anteil bereits.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=70', 'https://www.bmv.de/SharedDocs/DE/Pressemitteilungen/2026/027-schnieder-evaluation-deutschlandticket.html', 'belegt', '2026-10-07', false, true, 'blind'),
+  (8511, 8, 18, null, 'Kosten für Semestertickets übernehmen', '{804}', 6838, 1, 2, null, 'Entlastet Gruppen mit wenig Geld wie Auszubildende, Studierende oder Menschen mit geringem Einkommen gezielt; für alle anderen ändert sich nichts. Der Bund kann es nur gemeinsam mit den Ländern einführen und mitfinanzieren.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=106', null, 'belegt', '2026-10-07', false, true, null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -174,7 +180,10 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6846, 8),
   (6850, 8),
   (6851, 8),
-  (6877, 8);
+  (6877, 8),
+  (8506, 8),
+  (8507, 8),
+  (8510, 8);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (8, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -204,6 +213,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (8, 14, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (8, 15, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (8, 16, 'BE', 'massnahmen', null, '2026-09-30', true, null),
-  (8, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null);
+  (8, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null),
+  (8, 18, null, 'massnahmen', null, '2026-10-07', true, '{801,802,803,804}');
 
 commit;

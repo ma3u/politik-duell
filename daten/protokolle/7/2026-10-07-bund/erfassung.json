@@ -1,0 +1,185 @@
+{
+  "thema_id": 7,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Renteneintrittsalter an die durchschnittliche Lebenserwartung koppeln",
+          "ursachen_ids": [
+            701
+          ],
+          "zitat": "Das Renteneintrittsalter wird an die durchschnittliche Lebenserwartung angepasst, um ein faires Verhältnis zwischen Anspar- und Auszahlungsphase zu gewährleisten.",
+          "seite": 92
+        },
+        {
+          "beschreibung": "Beamte, Selbstständige und Freischaffende schrittweise in die gesetzliche Rentenversicherung einbeziehen",
+          "ursachen_ids": [
+            701
+          ],
+          "zitat": "Verbeamtete Personen, Selbstständige und Freischaffende werden schrittweise in das Rentensystem integriert, um dessen Stabilität langfristig zu sichern.",
+          "seite": 92
+        },
+        {
+          "beschreibung": "Einkommen oberhalb der Armutsgrenze unabhängig von der Erwerbsbiografie garantieren, ergänzend zu Rentenansprüchen",
+          "ursachen_ids": [
+            702
+          ],
+          "zitat": "Ein Einkommen, das die Armutsgrenze überschreitet, wird unabhängig von der Erwerbsbiogra",
+          "seite": 92
+        },
+        {
+          "beschreibung": "Care-Arbeit, Freiwilligendienste und gesellschaftlich wertvolle Aufgaben bei der Rentenberechnung stärker berücksichtigen",
+          "ursachen_ids": [
+            702
+          ],
+          "zitat": "Tätigkeiten wie Care-Arbeit, Freiwilligendienste und gesellschaftlich wertvolle Aufgaben werden bei der Rentenberechnung stärker berücksichtigt.",
+          "seite": 92
+        },
+        {
+          "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen",
+          "ursachen_ids": [
+            702
+          ],
+          "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Geringfügig Beschäftigte in die Sozialversicherung einbinden",
+          "ursachen_ids": [
+            702
+          ],
+          "zitat": "Geringfügig Beschäftigte werden in die Sozialversicherung eingebunden, um Benachteiligungen und Lücken in der Absicherung zu verhindern.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Staatlich gefördertes Renten-Depot zur Geburt mit Startbudget und jährlichen Staatseinzahlungen bis zur Volljährigkeit",
+          "ursachen_ids": [
+            703
+          ],
+          "zitat": "Zur Geburt wird ein staatlich gefördertes Depot mit einem Startbudget von 1.000 Euro eröffnet und erhält bis zur Volljährigkeit jährliche Einzahlungen von 100 Euro durch den Staat.",
+          "seite": 93
+        },
+        {
+          "beschreibung": "Arbeitgeberbeiträge zur betrieblichen Altersvorsorge ins persönliche Depot",
+          "ursachen_ids": [
+            703
+          ],
+          "zitat": "Hinzu kommen Arbeitgebendenbeiträge zur betrieblichen Altersvorsorge von bis zu 750 Euro pro Jahr.",
+          "seite": 93
+        }
+      ],
+      "nicht_erfasst": []
+    }
+  ],
+  "suchbegriffe": {
+    "701": {
+      "Länger arbeiten, Kapitaldeckung": [
+        "renteneintrittsalter",
+        "lebensarbeitszeit",
+        "regelaltersgrenze",
+        "kapitaldeckung",
+        "aktienrente",
+        "generationenkapital",
+        "flexirente"
+      ],
+      "Rentenniveau sichern, mehr Einzahlende": [
+        "rentenniveau",
+        "haltelinie",
+        "erwerbstätigenversicherung",
+        "beamte in die rente",
+        "beitragszahler"
+      ]
+    },
+    "702": {
+      "Niedrige Renten aufwerten": [
+        "grundrente",
+        "mindestrente",
+        "niedrige renten",
+        "rentenpunkte",
+        "erwerbsbiografie"
+      ],
+      "Vorsorgepflicht für Selbstständige": [
+        "selbstständige",
+        "altersvorsorgepflicht"
+      ]
+    },
+    "703": {
+      "Geförderte Depots, Aktienrente": [
+        "altersvorsorgedepot",
+        "riester",
+        "private vorsorge",
+        "aktien",
+        "frühstart-rente"
+      ],
+      "Opt-out, öffentlicher Fonds, Arbeitgeberbeteiligung": [
+        "betriebsrente",
+        "betriebliche altersvorsorge",
+        "opt-out",
+        "staatsfonds",
+        "öffentlicher fonds",
+        "arbeitgeberzuschuss"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "30bfba31c8eb34951a22a5c745fdc7292baddb59796222f38afc8896380dd6e1",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "701": {
+            "Länger arbeiten, Kapitaldeckung": {
+              "renteneintrittsalter": 2,
+              "lebensarbeitszeit": 0,
+              "regelaltersgrenze": 0,
+              "kapitaldeckung": 0,
+              "aktienrente": 0,
+              "generationenkapital": 0,
+              "flexirente": 0
+            },
+            "Rentenniveau sichern, mehr Einzahlende": {
+              "rentenniveau": 0,
+              "haltelinie": 0,
+              "erwerbstätigenversicherung": 0,
+              "beamte in die rente": 0,
+              "beitragszahler": 0
+            }
+          },
+          "702": {
+            "Niedrige Renten aufwerten": {
+              "grundrente": 0,
+              "mindestrente": 0,
+              "niedrige renten": 0,
+              "rentenpunkte": 1,
+              "erwerbsbiografie": 1
+            },
+            "Vorsorgepflicht für Selbstständige": {
+              "selbstständige": 3,
+              "altersvorsorgepflicht": 0
+            }
+          },
+          "703": {
+            "Geförderte Depots, Aktienrente": {
+              "altersvorsorgedepot": 0,
+              "riester": 0,
+              "private vorsorge": 0,
+              "aktien": 0,
+              "frühstart-rente": 0
+            },
+            "Opt-out, öffentlicher Fonds, Arbeitgeberbeteiligung": {
+              "betriebsrente": 0,
+              "betriebliche altersvorsorge": 1,
+              "opt-out": 0,
+              "staatsfonds": 0,
+              "öffentlicher fonds": 0,
+              "arbeitgeberzuschuss": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

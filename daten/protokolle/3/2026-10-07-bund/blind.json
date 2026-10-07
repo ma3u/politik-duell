@@ -1,0 +1,181 @@
+{
+  "pruefsumme": "f2b961ac03fc781c77e1a76ee3890effd1f9460c900845df8cc9df68f85b50f3",
+  "thema": {
+    "id": 3,
+    "name": "Energiepreise",
+    "ziel": "Haushalte können Strom und Heizung dauerhaft bezahlen."
+  },
+  "ursachen": [
+    {
+      "id": 301,
+      "beschreibung": "Hohe Netzentgelte für den Betrieb und Ausbau der Stromnetze",
+      "ebene": "bund"
+    },
+    {
+      "id": 302,
+      "beschreibung": "Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis",
+      "ebene": "bund"
+    },
+    {
+      "id": 303,
+      "beschreibung": "Rund 70 % der Energie wird importiert, vor allem Öl, Gas und Steinkohle",
+      "ebene": "bund"
+    },
+    {
+      "id": 304,
+      "beschreibung": "Der Strompreis an der Börse richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk",
+      "ebene": "bund"
+    },
+    {
+      "id": 305,
+      "beschreibung": "Drei Viertel der Wohnungen wurden 2022 mit Gas oder Öl beheizt (Zensus); die Heizkosten hängen deshalb stark von deren Preisen ab",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6703,
+      "name": "Netzentgelte mit Bundesmitteln senken oder deckeln",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Senkt einen großen Teil des Strompreises direkt und spürbar; die Kosten des Netzausbaus trägt dann der Bundeshaushalt, und die Finanzierung muss auf Dauer gesichert werden."
+    },
+    {
+      "id": 6704,
+      "name": "Stromsteuer für alle auf das EU-Mindestmaß senken",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Senkt den Strompreis für Haushalte um gut 2 Cent je Kilowattstunde; kostet den Bundeshaushalt mehrere Milliarden Euro im Jahr."
+    },
+    {
+      "id": 6705,
+      "name": "Klimageld: Einnahmen aus dem CO₂-Preis pro Kopf an die Haushalte zurückgeben",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Gleicht höhere Heizkosten durch den CO₂-Preis vor allem für Haushalte mit geringem Einkommen aus, senkt die Preise selbst aber nicht; ein Auszahlungsweg muss erst aufgebaut werden."
+    },
+    {
+      "id": 6706,
+      "name": "CO₂-Preis auf Heizen abschaffen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "belegt",
+      "begruendung": "Würde Gas- und Heizölpreise direkt senken; ab 2028 gilt aber der europäische Emissionshandel für Gebäude und Verkehr, den Deutschland nicht allein abschaffen kann."
+    },
+    {
+      "id": 6707,
+      "name": "Erneuerbare Energien und Speicher schneller ausbauen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird."
+    },
+    {
+      "id": 6708,
+      "name": "Kohle- und Kernkraftwerke länger oder wieder betreiben",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Kraftwerksleistung könnte die Börsenpreise in einzelnen Stunden senken; die abgeschalteten Kernkraftwerke sind weitgehend zurückgebaut, eine Wiederinbetriebnahme wäre teuer, langwierig und rechtlich neu zu regeln, und Kohlestrom wird durch den Emissionshandel teurer."
+    },
+    {
+      "id": 6709,
+      "name": "Dynamische Stromtarife und intelligente Messsysteme",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Haushalte, die Strom in günstigen Stunden nutzen können, sparen; für viele Haushalte ohne Wärmepumpe, E-Auto oder Batterie ist die Ersparnis gering."
+    },
+    {
+      "id": 6828,
+      "name": "Wieder Gas aus Russland über Nord Stream beziehen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 0,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Strombedarf bis 2035 durchgehend vollständig aus erneuerbaren Energien decken",
+      "zitat": "Im Jahr 2035 werden durchgehend 100 % des Strombedarfs aus erneuerbaren Energien gedeckt.",
+      "ursachen_ids": [
+        304
+      ],
+      "pruefsumme": "b26dbff71f0e3071"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Netzentgelte verursachungsgerecht gestalten, Investitionen nicht mehr allein darüber finanzieren",
+      "zitat": "Netzentgelte werden verursachungsgerecht gestaltet und Investitionen in Energieinfrastruktur werden nicht mehr ausschließlich durch Netzentgelte",
+      "ursachen_ids": [
+        301
+      ],
+      "pruefsumme": "5c729edf87d136c6"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Fernwärmeausbau und kommunale Wärmeplanung durch Förderprogramme und Duldungspflichten fördern",
+      "zitat": "Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.",
+      "ursachen_ids": [
+        305
+      ],
+      "pruefsumme": "a027a3d70f6c1f4a"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Stromsteuer auf das europäische Minimum senken",
+      "zitat": "Die Stromsteuer wird auf das europäische Minimum reduziert.",
+      "ursachen_ids": [
+        302
+      ],
+      "pruefsumme": "7d6c412ec73fd14a"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Hemmnisse für Energiespeicher abbauen, damit Speicher wirtschaftlich attraktiv werden",
+      "zitat": "Eine Regulierung von Energiespeichern, die sich eng am europäischen Rechtsrahmen orientiert, und der Abbau wirtschaftlicher und rechtlicher Hemmnisse",
+      "ursachen_ids": [
+        304
+      ],
+      "pruefsumme": "5b97b3fab91d9c42"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Teile der Netzentgelte aus dem Bundeshaushalt decken",
+      "zitat": "Teile der umlagefinanzierten Netzentgelte werden daher zukünftig aus dem Bundeshaushalt gedeckt.",
+      "ursachen_ids": [
+        301
+      ],
+      "pruefsumme": "62cd2937007bb899"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Einen Teil der CO₂-Einnahmen als direkte Zahlungen an die Menschen zurückgeben",
+      "zitat": "Einnahmen aus CO₂-Steuern und dem Emissionshandel werden künftig zu mindestens 33 % über direkte Zahlungen an die Menschen",
+      "ursachen_ids": [
+        302
+      ],
+      "pruefsumme": "794508bffbff76d9"
+    }
+  ]
+}

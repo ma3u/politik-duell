@@ -1,0 +1,301 @@
+{
+  "thema_id": 30,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Drug-Checking, Konsumräume und Substitutionsangebote stärker fördern.",
+          "ursachen_ids": [
+            3005
+          ],
+          "zitat": "Sicherer Konsum: Drug-Checking, Konsumräume und vielfältige Substitutionsmöglichkeiten werden stärker gefördert.",
+          "seite": 133
+        },
+        {
+          "beschreibung": "Besitz und Gebrauch aller psychoaktiven Substanzen sanktionsfrei entkriminalisieren.",
+          "ursachen_ids": [
+            3005
+          ],
+          "zitat": "Entkriminalisierung: Der Besitz und Gebrauch aller psychoaktiven Substanzen wird sanktionsfrei entkriminalisiert.",
+          "seite": 154
+        },
+        {
+          "beschreibung": "Regulierten Verkauf einzelner noch illegaler Substanzen an Erwachsene in Modellprojekten erproben.",
+          "ursachen_ids": [
+            3005
+          ],
+          "zitat": "Modellprojekte: Der regulierte Verkauf einzelner noch illegaler Substanzen an Erwachsene wird erprobt.",
+          "seite": 155
+        },
+        {
+          "beschreibung": "Teillegalisierung von Cannabis beibehalten und durch Verkauf und Beratung in Fachgeschäften ausbauen.",
+          "ursachen_ids": [
+            3005
+          ],
+          "zitat": "Cannabis: An der Teillegalisierung von Cannabis wird festgehalten und sie wird durch Verkauf und Beratung in Fachgeschäften ausgebaut.",
+          "seite": 155
+        },
+        {
+          "beschreibung": "Aufklärung, Konsumkompetenz und Entstigmatisierung des Substanzgebrauchs sowie gemeindebasierte Prävention fördern.",
+          "ursachen_ids": [
+            3006
+          ],
+          "zitat": "Aufklärung und Entstigmatisierung: Konsumkompetenz, Entstigmatisierung des Gebrauchs psychoaktiver Substanzen und gemeindebasierte Prävention werden gefördert.",
+          "seite": 133
+        },
+        {
+          "beschreibung": "Glücksspiel in der Suchtprävention verstärkt berücksichtigen.",
+          "ursachen_ids": [
+            3004
+          ],
+          "zitat": "Weitere Arten der Sucht: In der Suchtprävention werden verstärkt Aspekte wie Glücksspiel und Medienkonsum berücksichtigt.",
+          "seite": 133
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3005,
+          "name": "Entkriminalisierung von Besitz und Gebrauch",
+          "seite": 154
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3001": {
+      "Verfügbarkeit von Alkohol begrenzen": [
+        "verkaufszeiten",
+        "alkoholverkauf",
+        "alkoholverbot",
+        "nachtverkaufsverbot",
+        "begleitetes trinken",
+        "abgabe von alkohol",
+        "jugendschutz bei alkohol",
+        "alkohol ab 18"
+      ],
+      "Verantwortlicher Verkauf und Aufklärung": [
+        "verantwortungsvoller konsum",
+        "alkoholprävention",
+        "konsumkompetenz",
+        "aufklärung über alkohol",
+        "testkäufe"
+      ]
+    },
+    "3002": {
+      "Preise und Steuern erhöhen": [
+        "alkoholsteuer",
+        "tabaksteuer",
+        "mindestpreis für alkohol",
+        "mindestpreise",
+        "gesundheitssteuer",
+        "preise erhöhen"
+      ],
+      "Gezielte Beratung statt Preisregulierung": [
+        "gezielte beratung",
+        "keine neuen steuern",
+        "eigenverantwortung beim konsum",
+        "steuern senken tabak",
+        "preisreaktion"
+      ]
+    },
+    "3003": {
+      "Werbung begrenzen": [
+        "tabakwerbung",
+        "alkoholwerbung",
+        "werbeverbot",
+        "sponsoring",
+        "werbebeschränkung",
+        "werbung für alkohol"
+      ],
+      "Medienkompetenz und Lebenskompetenzen stärken": [
+        "medienkompetenz",
+        "lebenskompetenz",
+        "suchtprävention in schulen",
+        "präventionsprogramme",
+        "selbstregulation"
+      ]
+    },
+    "3004": {
+      "Glücksspielangebote begrenzen": [
+        "glücksspielstaatsvertrag",
+        "spielhallen",
+        "spielautomaten",
+        "online-casino",
+        "sportwetten",
+        "werbung für glücksspiel",
+        "spielersperre",
+        "glücksspiel"
+      ],
+      "Selbstlimits und Aufklärung": [
+        "selbstlimits",
+        "einsatzlimit",
+        "spielerschutz",
+        "aufklärung über glücksspiel",
+        "glücksspielsucht",
+        "spielsuchthilfe"
+      ]
+    },
+    "3005": {
+      "Angebot und Handel zurückdrängen": [
+        "drogenhandel",
+        "drogenkriminalität",
+        "betäubungsmittelgesetz",
+        "lieferketten",
+        "bekämpfung des drogenhandels",
+        "drogenschmuggel"
+      ],
+      "Risikominderung und Qualitätskontrolle": [
+        "drug-checking",
+        "drugchecking",
+        "schadensminderung",
+        "konsumräume",
+        "legalisierung",
+        "cannabis",
+        "kontrollierte abgabe"
+      ]
+    },
+    "3006": {
+      "Suchthilfe und Behandlung ausbauen": [
+        "suchthilfe",
+        "suchtberatung",
+        "suchtbehandlung",
+        "entzugsbehandlung",
+        "entgiftung",
+        "drogenberatung",
+        "suchttherapie",
+        "substitution"
+      ],
+      "Selbsthilfe und begleitete Vermittlung": [
+        "selbsthilfegruppen",
+        "niedrigschwellige hilfe",
+        "entstigmatisierung",
+        "begleitete vermittlung",
+        "peer"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "67dc8c153a9a8ae2e2b294677ea7e6accfa0e220f5c902ca6d88e62e4571d4f5",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "3001": {
+            "Verfügbarkeit von Alkohol begrenzen": {
+              "verkaufszeiten": 0,
+              "alkoholverkauf": 0,
+              "alkoholverbot": 0,
+              "nachtverkaufsverbot": 0,
+              "begleitetes trinken": 0,
+              "abgabe von alkohol": 0,
+              "jugendschutz bei alkohol": 0,
+              "alkohol ab 18": 0
+            },
+            "Verantwortlicher Verkauf und Aufklärung": {
+              "verantwortungsvoller konsum": 0,
+              "alkoholprävention": 0,
+              "konsumkompetenz": 1,
+              "aufklärung über alkohol": 0,
+              "testkäufe": 0
+            }
+          },
+          "3002": {
+            "Preise und Steuern erhöhen": {
+              "alkoholsteuer": 0,
+              "tabaksteuer": 0,
+              "mindestpreis für alkohol": 0,
+              "mindestpreise": 0,
+              "gesundheitssteuer": 0,
+              "preise erhöhen": 0
+            },
+            "Gezielte Beratung statt Preisregulierung": {
+              "gezielte beratung": 1,
+              "keine neuen steuern": 0,
+              "eigenverantwortung beim konsum": 0,
+              "steuern senken tabak": 0,
+              "preisreaktion": 0
+            }
+          },
+          "3003": {
+            "Werbung begrenzen": {
+              "tabakwerbung": 0,
+              "alkoholwerbung": 0,
+              "werbeverbot": 0,
+              "sponsoring": 0,
+              "werbebeschränkung": 0,
+              "werbung für alkohol": 0
+            },
+            "Medienkompetenz und Lebenskompetenzen stärken": {
+              "medienkompetenz": 2,
+              "lebenskompetenz": 0,
+              "suchtprävention in schulen": 0,
+              "präventionsprogramme": 3,
+              "selbstregulation": 0
+            }
+          },
+          "3004": {
+            "Glücksspielangebote begrenzen": {
+              "glücksspielstaatsvertrag": 0,
+              "spielhallen": 0,
+              "spielautomaten": 0,
+              "online-casino": 0,
+              "sportwetten": 0,
+              "werbung für glücksspiel": 0,
+              "spielersperre": 0,
+              "glücksspiel": 1
+            },
+            "Selbstlimits und Aufklärung": {
+              "selbstlimits": 0,
+              "einsatzlimit": 0,
+              "spielerschutz": 0,
+              "aufklärung über glücksspiel": 0,
+              "glücksspielsucht": 0,
+              "spielsuchthilfe": 0
+            }
+          },
+          "3005": {
+            "Angebot und Handel zurückdrängen": {
+              "drogenhandel": 0,
+              "drogenkriminalität": 0,
+              "betäubungsmittelgesetz": 0,
+              "lieferketten": 7,
+              "bekämpfung des drogenhandels": 0,
+              "drogenschmuggel": 0
+            },
+            "Risikominderung und Qualitätskontrolle": {
+              "drug-checking": 1,
+              "drugchecking": 0,
+              "schadensminderung": 0,
+              "konsumräume": 1,
+              "legalisierung": 1,
+              "cannabis": 2,
+              "kontrollierte abgabe": 0
+            }
+          },
+          "3006": {
+            "Suchthilfe und Behandlung ausbauen": {
+              "suchthilfe": 0,
+              "suchtberatung": 0,
+              "suchtbehandlung": 0,
+              "entzugsbehandlung": 0,
+              "entgiftung": 0,
+              "drogenberatung": 0,
+              "suchttherapie": 0,
+              "substitution": 1
+            },
+            "Selbsthilfe und begleitete Vermittlung": {
+              "selbsthilfegruppen": 0,
+              "niedrigschwellige hilfe": 0,
+              "entstigmatisierung": 3,
+              "begleitete vermittlung": 0,
+              "peer": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

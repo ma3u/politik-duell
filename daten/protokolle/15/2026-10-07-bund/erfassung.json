@@ -1,0 +1,257 @@
+{
+  "thema_id": 15,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene ganz abschaffen.",
+          "ursachen_ids": [
+            1502
+          ],
+          "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Dieselsteuer schrittweise an die Benzinsteuer angleichen.",
+          "ursachen_ids": [
+            1502
+          ],
+          "zitat": "Die Dieselsteuer wird schrittweise an die Benzinsteuer angeglichen.",
+          "seite": 62
+        },
+        {
+          "beschreibung": "Ausbau der Ladeinfrastruktur für E-Fahrzeuge.",
+          "ursachen_ids": [
+            1505
+          ],
+          "zitat": "Ladeinfrastruktur für E-Fahrzeuge: Der Ausbau erleichtert den Umstieg auf klimafreundliche Antriebe.",
+          "seite": 70
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1501,
+          "seiten": [
+            44,
+            66,
+            67
+          ],
+          "grund": "Wasserstoff nur für Industrie und Wärme, Diversifizierung nur von Lieferketten gegenüber China; nichts zu Ölabhängigkeit oder Kraftstoffen."
+        },
+        {
+          "ursache": 1503,
+          "seiten": [
+            48,
+            50,
+            53,
+            55
+          ],
+          "grund": "'Wettbewerb' nur als Wettbewerbsfähigkeit der Wirtschaft; nichts zu Kartellrecht oder Preisaufsicht bei Kraftstoffen."
+        },
+        {
+          "ursache": 1504,
+          "seiten": [
+            54,
+            62,
+            68,
+            70
+          ],
+          "grund": "'Förderung' in anderen Zusammenhängen; Investitionsprämie und Subventionen betreffen Unternehmen; keine Kaufprämie oder Social Leasing für E-Autos."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1501": {
+      "Vorräte, Lieferländer, weniger Ölabhängigkeit": [
+        "erdölreserve",
+        "ölreserve",
+        "bevorratung",
+        "versorgungssicherheit",
+        "diversifizierung",
+        "lieferländer",
+        "importabhängigkeit",
+        "rohöl",
+        "erdöl"
+      ],
+      "Elektromobilität": [
+        "elektromobilität",
+        "e-auto",
+        "verbrennungsmotor"
+      ],
+      "Heimische Förderung, alternative Kraftstoffe": [
+        "heimische förderung",
+        "ölförderung",
+        "wasserstoff",
+        "biokraftstoff",
+        "e-fuels"
+      ]
+    },
+    "1502": {
+      "Energiesteuer auf Kraftstoffe dauerhaft senken": [
+        "energiesteuer",
+        "mineralölsteuer",
+        "kraftstoffsteuer",
+        "spritsteuer",
+        "steuer auf kraftstoff",
+        "steuern auf sprit",
+        "steuern auf benzin",
+        "mehrwertsteuer auf kraftstoff",
+        "tankrabatt",
+        "spritpreis",
+        "benzinpreis",
+        "dieselpreis"
+      ],
+      "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": [
+        "dieselprivileg",
+        "steuervorteil für diesel",
+        "energiesteuer erhöh",
+        "kraftstoffpreis erhöh",
+        "klimaschädliche subvention",
+        "diesel angleich"
+      ]
+    },
+    "1503": {
+      "Kartellrecht, Übergewinne, Preisaufsicht": [
+        "raffinerie",
+        "mineralöl",
+        "tankstelle",
+        "kartell",
+        "übergewinn",
+        "preisaufsicht",
+        "markttransparenz",
+        "wettbewerb"
+      ]
+    },
+    "1504": {
+      "Kaufprämie, Social Leasing": [
+        "kaufprämie",
+        "leasing",
+        "elektroauto",
+        "e-auto",
+        "social leasing",
+        "förderung"
+      ],
+      "Technologieoffenheit, keine Subventionen": [
+        "technologieoffen",
+        "verbrenner",
+        "subvention"
+      ]
+    },
+    "1505": {
+      "Förderung und Recht auf Wallbox": [
+        "wallbox",
+        "ladepunkt",
+        "mehrfamilienhaus",
+        "wohnungseigentum"
+      ],
+      "Öffentliche Ladesäulen": [
+        "ladesäule",
+        "ladeinfrastruktur",
+        "schnellladen"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "e858788d041aaebcb2cf3c0c81b3b92a5e538ebd1cb7252e5dfb5204a2e2045b",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "1501": {
+            "Vorräte, Lieferländer, weniger Ölabhängigkeit": {
+              "erdölreserve": 0,
+              "ölreserve": 0,
+              "bevorratung": 0,
+              "versorgungssicherheit": 1,
+              "diversifizierung": 2,
+              "lieferländer": 0,
+              "importabhängigkeit": 0,
+              "rohöl": 0,
+              "erdöl": 0
+            },
+            "Elektromobilität": {
+              "elektromobilität": 0,
+              "e-auto": 0,
+              "verbrennungsmotor": 0
+            },
+            "Heimische Förderung, alternative Kraftstoffe": {
+              "heimische förderung": 0,
+              "ölförderung": 0,
+              "wasserstoff": 10,
+              "biokraftstoff": 0,
+              "e-fuels": 0
+            }
+          },
+          "1502": {
+            "Energiesteuer auf Kraftstoffe dauerhaft senken": {
+              "energiesteuer": 3,
+              "mineralölsteuer": 0,
+              "kraftstoffsteuer": 0,
+              "spritsteuer": 0,
+              "steuer auf kraftstoff": 0,
+              "steuern auf sprit": 0,
+              "steuern auf benzin": 0,
+              "mehrwertsteuer auf kraftstoff": 0,
+              "tankrabatt": 0,
+              "spritpreis": 1,
+              "benzinpreis": 0,
+              "dieselpreis": 0
+            },
+            "Kraftstoffbesteuerung anheben, Steuervorteile abbauen": {
+              "dieselprivileg": 0,
+              "steuervorteil für diesel": 0,
+              "energiesteuer erhöh": 0,
+              "kraftstoffpreis erhöh": 0,
+              "klimaschädliche subvention": 0,
+              "diesel angleich": 0
+            }
+          },
+          "1503": {
+            "Kartellrecht, Übergewinne, Preisaufsicht": {
+              "raffinerie": 0,
+              "mineralöl": 0,
+              "tankstelle": 0,
+              "kartell": 0,
+              "übergewinn": 0,
+              "preisaufsicht": 0,
+              "markttransparenz": 0,
+              "wettbewerb": 77
+            }
+          },
+          "1504": {
+            "Kaufprämie, Social Leasing": {
+              "kaufprämie": 0,
+              "leasing": 0,
+              "elektroauto": 0,
+              "e-auto": 0,
+              "social leasing": 0,
+              "förderung": 84
+            },
+            "Technologieoffenheit, keine Subventionen": {
+              "technologieoffen": 0,
+              "verbrenner": 0,
+              "subvention": 10
+            }
+          },
+          "1505": {
+            "Förderung und Recht auf Wallbox": {
+              "wallbox": 0,
+              "ladepunkt": 0,
+              "mehrfamilienhaus": 0,
+              "wohnungseigentum": 0
+            },
+            "Öffentliche Ladesäulen": {
+              "ladesäule": 0,
+              "ladeinfrastruktur": 2,
+              "schnellladen": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

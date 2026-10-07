@@ -1,0 +1,32 @@
+{
+  "blind_pruefsumme": "1859c55ae445f084f769259bb12d22dbdc9fbcbdac0544c4bb8f82508078deee",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Fehlende Entwicklungsperspektiven gelten in einer Befragung von 814 Rettungskräften als Ausstiegsgrund; Studiengänge und Weiterbildung verbessern aber weder Pausen, Überstunden noch Besetzung. Hochschulen sind Ländersache, der Bund kann über Berufsrecht und Förderung beitragen.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2025.1548525/full"
+      },
+      "ursachen": [2704]
+    },
+    {
+      "kennung": "M02",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Stimmrechte im G-BA geben Heilberufen Einfluss auf Richtlinien, die ihre Arbeit mitprägen, wirken aber nur mittelbar auf Mitsprache am Arbeitsplatz. Rechtlich per Bundesgesetz möglich, doch Fragen der demokratischen Legitimation und Vertretung sind ungeklärt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [2705]
+    }
+  ]
+}
+
+Hinweise:
+- M01: Vorgeschlagene Ursache 2704 bestätigt (Karriereperspektiven sind Teil der Belohnungsseite im Aufwand-Belohnungs-Modell). Kein Verweis auf Instrument 8014, weil dessen Name auf die Pflege begrenzt ist und die Maßnahme Rettungsfachpersonal betrifft; die Werte entsprechen in der Umsetzbarkeit 8014, in der Wirksamkeit liegen sie niedriger (1 statt 2), weil nur ausgewählte Studien- und Weiterbildungsangebote ohne neue Rollen oder Befugnisse genannt sind. Falls die Koordination 8014 als gleichen Lösungsweg sieht, wäre auch ein Verweis vertretbar. Die geöffnete WHO-Quelle zu 8014 (State of the World's Nursing 2020) bezieht sich auf die Pflege; stattdessen dient eine deutsche Befragung von Rettungskräften als Beleg. Sie belegt den Zusammenhang, nicht die Wirkung der Maßnahme, deshalb "offen".
+- M02: Offene Ursache 2705 aufgenommen, und zwar ausdrücklich mit Wirksamkeit 1, analog zur Pflegekammer (8018, 8058): Mitsprache über die berufliche Selbstvertretung auf Systemebene, nicht am Arbeitsplatz. Diese Einstufung fiel schwer. Wer 2705 eng als Mitsprache "am Arbeitsplatz" liest, käme auf ursachen []. Zum Einwand gegen die Legitimation eines Stimmrechts: https://www.aerzteblatt.de/themen/g-ba/streit-um-stimmrecht-fuer-die-pflege-im-g-ba-6528402e-693e-4819-90d6-02dd652ea2c1
+- Keine Maßnahme ohne Ursache.

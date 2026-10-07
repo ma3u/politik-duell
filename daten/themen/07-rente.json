@@ -681,6 +681,125 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [701, 702, 703],
+      "massnahmen": [
+        {
+          "id": 8498,
+          "beschreibung": "Renteneintrittsalter an die durchschnittliche Lebenserwartung koppeln",
+          "ursachen_ids": [701],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Simulationen zeigen, dass die Kopplung den Beitragsanstieg spürbar dämpft und die Beschäftigung erhöht; Menschen mit geringerer Lebenserwartung (oft Geringverdienende) verlieren überproportional Rentenjahre. Per Bundesgesetz ohne Mehrkosten umsetzbar.",
+          "zitat": "Das Renteneintrittsalter wird an die durchschnittliche Lebenserwartung angepasst, um ein faires Verhältnis zwischen Anspar- und Auszahlungsphase zu gewährleisten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=92",
+          "beleg_studie_url": "https://www.bundesbank.de/de/aufgaben/themen/monatsbericht-wie-rentenreformen-wirken-koennten--892950",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8499,
+          "instrument": 6176,
+          "beschreibung": "Beamte, Selbstständige und Freischaffende schrittweise in die gesetzliche Rentenversicherung einbeziehen",
+          "ursachen_ids": [701],
+          "zitat": "Verbeamtete Personen, Selbstständige und Freischaffende werden schrittweise in das Rentensystem integriert, um dessen Stabilität langfristig zu sichern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=92",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8500,
+          "beschreibung": "Einkommen oberhalb der Armutsgrenze unabhängig von der Erwerbsbiografie garantieren, ergänzend zu Rentenansprüchen",
+          "ursachen_ids": [702],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Mindestsicherung über der Armutsgrenze unabhängig von der Biografie senkt Altersarmut, wie Länder mit Mindest- oder Grundrente zeigen; sie gleicht Folgen niedriger Löhne aus, ohne die Ursache zu ändern. Höhe offen, Kosten hoch, Finanzierung ungeklärt.",
+          "zitat": "Ein Einkommen, das die Armutsgrenze überschreitet, wird unabhängig von der Erwerbsbiogra",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=92",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.824031.de/publikationen/diw_aktuell/2021_0072/mindestrente__absicherung_gegen_altersarmut_und_notwendiger_baustein_fuer_weitere_reformen.html",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8501,
+          "beschreibung": "Care-Arbeit, Freiwilligendienste und gesellschaftlich wertvolle Aufgaben bei der Rentenberechnung stärker berücksichtigen",
+          "ursachen_ids": [702],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Anrechnung von Sorgezeiten senkt nachweislich Altersarmut von Frauen; sie wirkt aber wenig zielgenau und ist teuer (Mütterrente rund 14 Mrd. Euro jährlich). Umfang hier unbestimmt, Finanzierung offen.",
+          "zitat": "Tätigkeiten wie Care-Arbeit, Freiwilligendienste und gesellschaftlich wertvolle Aufgaben werden bei der Rentenberechnung stärker berücksichtigt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=92",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.909964.de/publikationen/wochenberichte/2024_31_1/abschaffung_der_muetterrente_wuerde_altersarmut_erhoehen.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8502,
+          "instrument": 6181,
+          "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen",
+          "ursachen_ids": [702],
+          "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=89",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8503,
+          "beschreibung": "Geringfügig Beschäftigte in die Sozialversicherung einbinden",
+          "ursachen_ids": [702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Volle Versicherungspflicht schließt Lücken bei Minijobs, die meist von der Rentenpflicht befreit sind; die Ansprüche aus kleinen Verdiensten bleiben aber gering. Per Bundesgesetz umsetzbar, eine Expertenkommission empfiehlt es.",
+          "zitat": "Geringfügig Beschäftigte werden in die Sozialversicherung eingebunden, um Benachteiligungen und Lücken in der Absicherung zu verhindern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=89",
+          "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/reformen-bei-minijobs-und-ehegattensplitting-koennten-60000-neue-vollzeitstellen-schaffen",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8504,
+          "beschreibung": "Staatlich gefördertes Renten-Depot zur Geburt mit Startbudget und jährlichen Staatseinzahlungen bis zur Volljährigkeit",
+          "ursachen_ids": [703],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein staatlich befülltes Depot ab Geburt erreicht alle Kinder, auch aus armen Familien, und baut über Jahrzehnte Vermögen auf; britische Erfahrungen zeigen kleine Effekte auf das Sparverhalten. Wirkt erst sehr spät, rund 2 Mrd. Euro jährlich ohne Finanzierung.",
+          "zitat": "Zur Geburt wird ein staatlich gefördertes Depot mit einem Startbudget von 1.000 Euro eröffnet und erhält bis zur Volljährigkeit jährliche Einzahlungen von 100 Euro durch den Staat.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=93",
+          "beleg_studie_url": "https://publications.aston.ac.uk/id/eprint/45231",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8505,
+          "instrument": 6177,
+          "beschreibung": "Arbeitgeberbeiträge zur betrieblichen Altersvorsorge ins persönliche Depot",
+          "ursachen_ids": [703],
+          "zitat": "Hinzu kommen Arbeitgebendenbeiträge zur betrieblichen Altersvorsorge von bis zu 750 Euro pro Jahr.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=93",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

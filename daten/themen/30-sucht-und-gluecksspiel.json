@@ -1118,6 +1118,102 @@
         "geprueft": false,
         "ki_entwurf": true
       }
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [3001, 3002, 3003, 3004, 3005, 3006],
+      "massnahmen": [
+        {
+          "id": 8589,
+          "beschreibung": "Drug-Checking, Konsumräume und Substitutionsangebote stärker fördern.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Konsumräume senken Überdosierungen ohne mehr Konsum, Substitution ist gut belegt; Drug-Checking ändert Konsumabsichten, Gesundheitsfolgen sind weniger untersucht. Der Bund kann fördern, Betrieb und Konsumräume regeln die Länder.",
+          "zitat": "Sicherer Konsum: Drug-Checking, Konsumräume und vielfältige Substitutionsmöglichkeiten werden stärker gefördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=133",
+          "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8590,
+          "beschreibung": "Besitz und Gebrauch aller psychoaktiven Substanzen sanktionsfrei entkriminalisieren.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Entkriminalisierung senkt Hürden zu Hilfe und erhöht den Konsum laut Studien meist nicht, ändert aber nichts an unbekannten Wirkstoffen am Schwarzmarkt; Erfahrungen (Portugal, Oregon) gemischt. Per Bundesgesetz möglich, Spannungen mit UN-Recht.",
+          "zitat": "Entkriminalisierung: Der Besitz und Gebrauch aller psychoaktiven Substanzen wird sanktionsfrei entkriminalisiert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=154",
+          "beleg_studie_url": "https://doi.org/10.1136/bmjopen-2019-035148",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8591,
+          "beschreibung": "Regulierten Verkauf einzelner noch illegaler Substanzen an Erwachsene in Modellprojekten erproben.",
+          "ursachen_ids": [3005],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Regulierter Verkauf macht Wirkstoff und Dosis bekannt, Modellprojekte erreichen aber nur wenige; Wirkung kaum untersucht. Verkauf widerspricht UN-Konventionen und EU-Rahmenbeschluss, die Deutschland nicht allein ändert.",
+          "zitat": "Modellprojekte: Der regulierte Verkauf einzelner noch illegaler Substanzen an Erwachsene wird erprobt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=155",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8592,
+          "instrument": 8329,
+          "beschreibung": "Teillegalisierung von Cannabis beibehalten und durch Verkauf und Beratung in Fachgeschäften ausbauen.",
+          "ursachen_ids": [3005],
+          "zitat": "Cannabis: An der Teillegalisierung von Cannabis wird festgehalten und sie wird durch Verkauf und Beratung in Fachgeschäften ausgebaut.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=155",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8593,
+          "beschreibung": "Aufklärung, Konsumkompetenz und Entstigmatisierung des Substanzgebrauchs sowie gemeindebasierte Prävention fördern.",
+          "ursachen_ids": [3006],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kontakt- und Aufklärungsangebote verringerten Stigma in fast allen untersuchten Studien; ob mehr Betroffene Hilfe suchen, ist kaum belegt, Umfang der Förderung offen. Bundesprogramme dafür bestehen.",
+          "zitat": "Aufklärung und Entstigmatisierung: Konsumkompetenz, Entstigmatisierung des Gebrauchs psychoaktiver Substanzen und gemeindebasierte Prävention werden gefördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=133",
+          "beleg_studie_url": "https://europepmc.org/articles/PMC3272222",
+          "evidenz": "belegt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8594,
+          "beschreibung": "Glücksspiel in der Suchtprävention verstärkt berücksichtigen.",
+          "ursachen_ids": [3004],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Präventionsprogramme zu Glücksspiel zeigten in weniger als der Hälfte der Studien Verhaltenseffekte; Angebot und Werbung bleiben unverändert. Bundesweite Präventionsarbeit ist bereits etabliert und leicht ausbaubar.",
+          "zitat": "Weitere Arten der Sucht: In der Suchtprävention werden verstärkt Aspekte wie Glücksspiel und Medienkonsum berücksichtigt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=133",
+          "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

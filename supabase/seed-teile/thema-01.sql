@@ -47,7 +47,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (6702, 1, 16, null, 'Privatversicherte in die gesetzliche Krankenversicherung übernehmen', '{103}', 6681, 2, 1, null, 'Nimmt Praxen den finanziellen Anreiz, Privatversicherte bei Terminen vorzuziehen; ob die Wartezeiten insgesamt sinken, hängt von der Höhe der neuen Vergütung ab. Der Umbau der privaten Krankenversicherung ist rechtlich und praktisch sehr aufwendig.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18', null, 'gemischt', '2026-09-30', false, true, null),
   (6825, 1, 17, null, 'Bürgerversicherung statt Zwei-Klassen-Medizin', '{103}', 6681, 2, 1, null, 'Nimmt Praxen den finanziellen Anreiz, Privatversicherte bei Terminen vorzuziehen; ob die Wartezeiten insgesamt sinken, hängt von der Höhe der neuen Vergütung ab. Der Umbau der privaten Krankenversicherung ist rechtlich und praktisch sehr aufwendig.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=26', null, 'gemischt', '2026-09-30', false, true, null),
   (6826, 1, 17, null, 'Hausärzte höher vergüten', '{101}', null, 1, 2, null, 'Macht die Niederlassung als Hausarzt attraktiver; ob das allein genug Nachwuchs bringt, ist offen, denn viele junge Ärztinnen und Ärzte wünschen sich vor allem Anstellung und Teilzeit. Die Mehrkosten tragen die Beitragszahlenden.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', null, 'gemischt', '2026-09-30', false, true, null),
-  (6827, 1, 17, null, 'Mehr Medizinstudienplätze', '{101}', 6824, 2, 2, null, 'Mehr Absolventinnen und Absolventen setzen am Nachwuchsmangel an, wirken aber erst nach etwa zwölf Jahren Studium und Weiterbildung; ob sie Hausärzte auf dem Land werden, ist offen. Studienplätze finanzieren die Länder, der Bund kann nur mitfinanzieren.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', null, 'gemischt', '2026-09-30', false, true, null);
+  (6827, 1, 17, null, 'Mehr Medizinstudienplätze', '{101}', 6824, 2, 2, null, 'Mehr Absolventinnen und Absolventen setzen am Nachwuchsmangel an, wirken aber erst nach etwa zwölf Jahren Studium und Weiterbildung; ob sie Hausärzte auf dem Land werden, ist offen. Studienplätze finanzieren die Länder, der Bund kann nur mitfinanzieren.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27', null, 'gemischt', '2026-09-30', false, true, null),
+  (8453, 1, 18, null, 'Für Fachpraxisbesuche ohne Überweisung wird eine Selbstbeteiligung eingeführt (Hausarztzentrierung), um Fachpraxen zu entlasten.', '{102}', null, 1, 3, null, 'Hausarztsteuerung kann Facharztbesuche verringern (Studien zum Gatekeeping); die Praxisgebühr mit Ausnahme bei Überweisung zeigte aber kaum Steuerungswirkung und schreckte eher Ärmere ab. Per Bundesgesetz rasch umsetzbar.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=125', 'https://ideas.repec.org/p/zbw/rwipos/16.html', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8454, 1, 18, null, 'Multiprofessionelle regionale Versorgungszentren mit Gesundheitsfachberufen werden eingerichtet.', '{101}', 6679, 2, 2, null, 'Angestelltenverhältnisse und Teamarbeit entsprechen den Wünschen vieler junger Ärztinnen und Ärzte und können Praxissitze in unterversorgten Regionen besetzen; wie viele Zentren tatsächlich entstehen, hängt von Kommunen und Finanzierung ab.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=125', null, 'gemischt', '2026-10-07', false, true, null),
+  (8455, 1, 18, null, 'Mobile Gesundheitseinheiten mit regelmäßigen Sprechstunden kommen in entlegene Gebiete.', '{101}', null, 1, 2, null, 'Bringt Sprechstunden zu wenig mobilen Menschen in entlegenen Orten; Studien und Pilotprojekte zeigen gute Auslastung. Ersetzt aber keine fehlenden Praxen, braucht selbst ärztliches Personal und ist teuer; die Sicherstellung liegt bei den KVen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=126', 'https://nnphi.org/resources/the-scope-and-impact-of-mobile-health-clinics-in-the-united-states-a-literature-review/', 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -65,7 +68,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6697, 1),
   (6700, 1),
   (6824, 1),
-  (6826, 1);
+  (6826, 1),
+  (8453, 1),
+  (8455, 1);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (1, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -74,6 +79,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (1, 14, null, 'massnahmen', null, '2026-09-30', true, null),
   (1, 15, null, 'massnahmen', null, '2026-09-30', true, null),
   (1, 16, null, 'massnahmen', null, '2026-09-30', true, null),
-  (1, 17, null, 'massnahmen', null, '2026-09-30', true, null);
+  (1, 17, null, 'massnahmen', null, '2026-09-30', true, null),
+  (1, 18, null, 'massnahmen', null, '2026-10-07', true, '{101,102,103}');
 
 commit;

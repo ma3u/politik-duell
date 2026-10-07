@@ -1,0 +1,92 @@
+{
+  "pruefsumme": "e0abebe2aa83073e021d6baa21fc50f984665a614ed9f73612f329f4792bc8bf",
+  "thema": {
+    "id": 13,
+    "name": "Internet und Mobilfunk",
+    "ziel": "Menschen haben zu Hause schnelles Internet und unterwegs verlässlichen Mobilfunkempfang, auch auf dem Land."
+  },
+  "ursachen": [
+    {
+      "id": 1301,
+      "beschreibung": "Glasfaser reicht erst zu rund 43 % der Haushalte (2025); wo sich der Ausbau nicht lohnt, vor allem auf dem Land, braucht es Förderung, die teuer ist und privaten Ausbau teils verdrängt",
+      "ebene": "bund"
+    },
+    {
+      "id": 1302,
+      "beschreibung": "Rund 2 % der Fläche haben gar keinen Mobilfunk mit 4G oder 5G, vor allem in Wäldern, Höhenlagen, Schutz- und Grenzgebieten",
+      "ebene": "bund"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6966,
+      "name": "Genehmigungen beschleunigen, Netzausbau im überragenden öffentlichen Interesse, alternative Verlegemethoden",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verkürzt Genehmigungen für Masten und Leitungen und senkt Tiefbaukosten; wo sich der Ausbau wirtschaftlich nicht lohnt oder das Gelände schwierig ist, ändert das allein wenig."
+    },
+    {
+      "id": 6967,
+      "name": "Staatliche Förderung gezielt dort, wo sich der private Ausbau nicht lohnt",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schließt Lücken, die der Markt nicht schließt; laut WIK ist die heutige Förderung aber teuer, anfällig für Überförderung und verdrängt teils privaten Ausbau – es kommt auf die Ausgestaltung an.",
+      "beleg_studie_url": "https://www.wik.org/fileadmin/user_upload/Unternehmen/Veroeffentlichungen/Kurzstudien/2026/WIK_Kurzstudie_Anreizwirkung_der_derzeitigen_Gigabitfoerderung_auf_den_eigenwirtschaftlichen_Glasfaserausbau_in_Deutschland.pdf"
+    },
+    {
+      "id": 6968,
+      "name": "Recht auf schnelles Internet: Mindestbandbreite erhöhen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein höherer Anspruch verpflichtet die Anbieter, auch unversorgte Haushalte anzuschließen; bei deutlich höheren Bandbreiten wird das teuer und langwierig, die Kosten tragen Anbieter oder Staat."
+    },
+    {
+      "id": 6969,
+      "name": "Breitband- und Netzausbau auf dem Land voranbringen (ohne nähere Angaben)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Nennt das Ziel, aber keinen Weg, wie die Lücken geschlossen werden sollen."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Anbieter sollen Netzinfrastruktur stärker gemeinsam nutzen.",
+      "zitat": "Ressourceneffizienz durch Infrastruktur-Sharing: Anbietende nutzen stärker gemeinsame Infrastruktur, um Nachhaltigkeit zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1302
+      ],
+      "pruefsumme": "f1c8180f496ad45f"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Glasfaserausbau beschleunigen: Hürden und Genehmigungsverfahren abbauen, Koordination von Bund, Ländern und Kommunen verbessern.",
+      "zitat": "Beschleunigter Ausbau von Glasfasernetzen: Bürokratische Hürden werden abgebaut und Genehmigungsverfahren vereinfacht. Eine bessere Koordination zwischen Bund, Ländern und Kommunen garantiert den zügigen und nachhaltigen Ausbau.",
+      "ursachen_ids": [
+        1301
+      ],
+      "pruefsumme": "ff0ed3ecbae35e34"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Gezielte Förderung und Subventionen für den Internetausbau in ländlichen Regionen.",
+      "zitat": "Subventionen für ländliche Regionen: Digitale Fairness wird durch gezielte Förderung gewährleistet.",
+      "ursachen_ids": [
+        1301
+      ],
+      "pruefsumme": "92af26399efff8a0"
+    }
+  ]
+}

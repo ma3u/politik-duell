@@ -70,7 +70,13 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (6927, 11, 17, null, 'Preisüberwacher nach Schweizer Vorbild', '{1102}', 6881, 1, 3, null, 'Macht Preise und Margen entlang der Lieferkette sichtbar und kann Kartellverfahren anstoßen; ob Transparenz allein die Preise senkt, ist kaum untersucht.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=31', null, 'offen', '2026-09-30', false, true, null),
   (6928, 11, 17, null, 'Mehrwertsteuer auf Grundnahrungsmittel auf 0 %', '{1101}', 6880, 2, 2, null, 'Senkt die Preise für Grundnahrungsmittel um bis zu 6,5 % und entlastet vor allem Haushalte mit wenig Geld, wenn die Senkung weitergegeben wird; seit 2022 erlaubt das EU-Recht einen Nullsatz. Dagegen spricht der hohe Steuerausfall, und ob der Handel die Senkung vollständig weitergibt, ist umstritten.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=31', null, 'gemischt', '2026-09-30', false, true, null),
   (7229, 11, 11, null, 'Menschen in Helfertätigkeiten auf dem Weg zur Fachkraft fördern', '{1105}', 7228, 1, 2, null, 'Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=15', null, 'gemischt', '2026-09-30', false, true, null),
-  (7230, 11, 16, null, 'Anspruch auf verlängerte Umschulung und erleichterte Externenprüfung für Menschen ohne Ausbildung', '{1105}', 7228, 1, 2, null, 'Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40', null, 'gemischt', '2026-09-30', false, true, null);
+  (7230, 11, 16, null, 'Anspruch auf verlängerte Umschulung und erleichterte Externenprüfung für Menschen ohne Ausbildung', '{1105}', 7228, 1, 2, null, 'Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40', null, 'gemischt', '2026-09-30', false, true, null),
+  (8533, 11, 18, null, 'Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene abschaffen', '{1101}', null, 1, 1, null, 'Steuersenkungen auf Kraftstoff wurden 2022 zu knapp 90 % weitergegeben; auf Lebensmittelpreise wirkt Energiesteuer nur indirekt und gering. Der Steuerausfall läge im zweistelligen Milliardenbereich ohne Finanzierung, die Abschaffung hängt an der EU.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53', 'https://www.leuphana.de/institute/ivwl/aktuell/ansicht/2024/08/27/neue-publikation-von-mats-kahl-in-energy-economics.html', 'gemischt', '2026-10-07', false, true, 'blind'),
+  (8534, 11, 18, null, 'Grundnahrungsmittel wie Brot, Obst und Gemüse von der Mehrwertsteuer befreien, gegenfinanziert über die Erbschaftsteuer', '{1101}', 6880, 2, 2, null, 'Senkt die Preise für Grundnahrungsmittel um bis zu 6,5 % und entlastet vor allem Haushalte mit wenig Geld, wenn die Senkung weitergegeben wird; seit 2022 erlaubt das EU-Recht einen Nullsatz. Dagegen spricht der hohe Steuerausfall, und ob der Handel die Senkung vollständig weitergibt, ist umstritten.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=101', null, 'gemischt', '2026-10-07', false, true, null),
+  (8535, 11, 18, null, 'Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen', '{1103,1105}', 6889, 2, 3, null, 'Erhöht die Löhne im Niedriglohnbereich direkt; Studien zur Einführung 2015 und zur Erhöhung 2022 fanden kaum Jobverluste. Der Bundestag kann die Höhe per Gesetz festlegen, wie 2022 geschehen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=89', null, 'belegt', '2026-10-07', false, true, null),
+  (8536, 11, 18, null, 'Tarifbindung stärken', '{1103,1105}', 6890, 1, 3, null, 'Wer nach Tarif arbeitet, verdient im Schnitt mehr; Tariftreue greift aber nur bei öffentlichen Aufträgen, und wie stark die Tarifbindung dadurch steigt, ist offen.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=89', null, 'gemischt', '2026-10-07', false, true, null),
+  (8537, 11, 18, null, 'Grundfreibetrag moderat anheben, um kleine und mittlere Einkommen zu entlasten', '{1104}', null, 1, 3, null, 'Erhöht das Nettoeinkommen aller Steuerpflichtigen, die Entlastung bleibt bei moderater Anhebung aber klein (eher zweistellige Euro im Monat). Der Grundfreibetrag wird regelmäßig per Gesetz angehoben, die Kosten von einigen Milliarden Euro sind tragbar.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=99', null, 'belegt', '2026-10-07', false, true, 'blind'),
+  (8538, 11, 18, null, 'Umschulungen und maßgeschneiderte Weiterbildung mit Lohnkostenzuschüssen für Langzeitarbeitslose', '{1105}', 7228, 1, 2, null, 'Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=120', null, 'gemischt', '2026-10-07', false, true, null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -92,7 +98,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6892, 11),
   (6913, 11),
   (6920, 11),
-  (7228, 11);
+  (7228, 11),
+  (8533, 11),
+  (8537, 11);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (11, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -101,6 +109,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (11, 14, null, 'massnahmen', null, '2026-09-30', true, null),
   (11, 15, null, 'massnahmen', null, '2026-09-30', true, null),
   (11, 16, null, 'massnahmen', null, '2026-09-30', true, null),
-  (11, 17, null, 'massnahmen', null, '2026-09-30', true, null);
+  (11, 17, null, 'massnahmen', null, '2026-09-30', true, null),
+  (11, 18, null, 'massnahmen', null, '2026-10-07', true, '{1101,1102,1103,1104,1105}');
 
 commit;

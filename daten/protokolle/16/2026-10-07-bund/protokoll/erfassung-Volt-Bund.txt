@@ -1,0 +1,15 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Finanzielle Unterstützung für klimaneutrale Maßnahmen bei Neubau und Sanierung.", "ursachen_ids": [1601], "zitat": "Fördermittel für Klimaneutralität: Finanzielle Unterstützung wird bereitgestellt, um klimaneutrale Maßnahmen sowohl im Neubau als auch bei der Sanierung umzusetzen.", "seite": 96 },
+    { "beschreibung": "Kommunale Wärmeplanung dauerhaft finanzieren, Fernwärmeausbau über Duldungspflichten und Förderprogramme voranbringen.", "ursachen_ids": [1603], "zitat": "Kommunale Wärmeplanung: Langfristige Finanzierung und Fernwärmeausbau werden durch Duldungspflichten und Förderprogramme gefördert.", "seite": 68 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1602, "seiten": [66, 67, 68, 96], "grund": "Kapitel Wärmewende und Klimaneutral Bauen gelesen; keine Zusage zu stabilen Heizungsregeln. Treffer zu 'geg'/'verlässlich' sind Wortteile in anderem Zusammenhang." },
+    { "ursache": 1604, "seiten": [54, 96], "grund": "Keine Zusage zu Umlage, Warmmiete oder Vermieter-Anreizen für Heizungen; Treffer zu Abschreibung betreffen private Investitionen allgemein bzw. Wohnbau." }
+  ]
+}
+
+Protokoll: Gelesen S. 66-68 (Energiewende, Wärmewende), 96 (Wohnbau, klimaneutral Bauen); Fundstellen per Grep zu Heizung/Wärmepumpe/Sanierung.
+Nicht erfasst: S. 68 "Niedrige Strompreise machen erneuerbare Wärme zur bevorzugten Wahl" (Zielaussage ohne Handlung); S. 67 Senkung der Stromsteuer (nicht auf Heizung bezogen); S. 68 Aus für Förderung von H2-ready-Heizungen (keine Ursache); S. 68 Abwärme/Anschluss an Fern- und Nahwärme (Rahmenbedingungen, nicht konkret genug); S. 96 Sanierung öffentlicher Gebäude (nicht private Heizungen).

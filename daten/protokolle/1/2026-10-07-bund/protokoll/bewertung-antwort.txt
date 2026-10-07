@@ -1,0 +1,16 @@
+{
+  "blind_pruefsumme": "07711c6b64f0a1dcf23b40fc0b38710d0e29dc8b857146946a2753c65e7b33a6",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Bringt Sprechstunden zu wenig mobilen Menschen in entlegenen Orten; Studien und Pilotprojekte zeigen gute Auslastung. Ersetzt aber keine fehlenden Praxen, braucht selbst ärztliches Personal und ist teuer; die Sicherstellung liegt bei den KVen.", "evidenz": "gemischt", "beleg_studie_url": "https://nnphi.org/resources/the-scope-and-impact-of-mobile-health-clinics-in-the-united-states-a-literature-review/" }, "ursachen": [101] },
+    { "kennung": "M02", "instrument": 6679, "ursachen": [101] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Hausarztsteuerung kann Facharztbesuche verringern (Studien zum Gatekeeping); die Praxisgebühr mit Ausnahme bei Überweisung zeigte aber kaum Steuerungswirkung und schreckte eher Ärmere ab. Per Bundesgesetz rasch umsetzbar.", "evidenz": "gemischt", "beleg_studie_url": "https://ideas.repec.org/p/zbw/rwipos/16.html" }, "ursachen": [102] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; ursachen_offen gab es nicht. Keine Maßnahme ohne Ursache.
+- M02 (multiprofessionelle regionale Versorgungszentren) dem vorhandenen Instrument 6679 (Gesundheitszentren fördern, Bund) zugeordnet: gleicher Lösungsweg. Grenzfall: Die Einbindung von Gesundheitsfachberufen berührt auch 102 (gezielter Einsatz knappen Personals) bzw. Instrument 6678; das Zitat spricht aber nur von der Einrichtung der Zentren, daher nur 101.
+- M03 nicht auf 6677 (Primärarztsystem) gelegt, sondern einzeln: Die Steuerung erfolgt allein über eine Selbstbeteiligung. Dazu gibt es eigene Erfahrungen – die Praxisgebühr 2004–2012 (Gebühr entfiel bei Überweisung) hatte laut Augurzky/Bauer/Schaffner (RWI 2007) keinen signifikanten Effekt auf Arztbesuche; Gatekeeping insgesamt senkt laut Sripa et al. (BJGP 2019, https://pmc.ncbi.nlm.nih.gov/articles/PMC6478478) die Facharztnutzung. Daher Wirksamkeit 1 bei höherer Umsetzbarkeit (3, Bundesrecht, früher schon umgesetzt). Schwierig: Wer das als denselben Lösungsweg wie 6677 sieht, käme auf 2/2.
+- M01: Wirksamkeit 1 statt 2, weil mobile Einheiten Folgen des Praxismangels lindern, ohne Niederlassungen zu schaffen (Medibus Hessen ausgelastet, aber als Übergangslösung bezeichnet: https://www.aerzteblatt.de/themen/hessen/rollende-praxis-medibus-erfuellt-die-erwartungen-143298db-4a45-4aa5-8ff7-c28b64a306fc). Umsetzbarkeit 2: Bund kann über SGB V und Finanzierung beitragen, Betrieb liegt bei KVen/Ländern.
+- Für 6679 lag keine Quelle vor; die IGES-Studie für die Robert Bosch Stiftung (2021) war als PDF nicht lesbar, die Pressemitteilung (idw-online.de/de/news769524) enthält keine Evaluationsergebnisse – der Forschungsstand „gemischt“ von 6679 bleibt plausibel.

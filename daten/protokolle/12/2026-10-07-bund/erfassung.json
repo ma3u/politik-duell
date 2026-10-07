@@ -1,0 +1,213 @@
+{
+  "thema_id": 12,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Elektronische, streckenabhängige Autobahnmaut, deren Einnahmen Unterhalt und Ausbau der Autobahnen finanzieren sollen",
+          "ursachen_ids": [
+            1201
+          ],
+          "zitat": "Autobahnmaut: Analog zu anderen Infrastrukturabgaben wie Strom, Mobilfunk oder Schiene leisten diejenigen, die die Autobahnen nutzen, einen Beitrag über elektronisch erhobene Mautgebühren, die sich nach Entfernung und Emissionsklasse richten.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Schuldenbremse reformieren: Nettoinvestitionen unter anderem in Infrastruktur werden ausgenommen, Defizitgrenze steigt",
+          "ursachen_ids": [
+            1201
+          ],
+          "zitat": "Goldene Regel Plus: Zukunftsorientierte Nettoinvestitionen in Bereiche wie Infrastruktur, […] Bildung, Klimaschutz und Digitalisierung werden von der Schuldenbremse ausgenommen, um langfristig nachhaltiges Wachstum und Fortschritt zu sichern.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Planungs- und Genehmigungsverfahren für Infrastrukturprojekte vereinfachen und auf höchstens drei Monate begrenzen",
+          "ursachen_ids": [
+            1201
+          ],
+          "ursachen_offen": [
+            1203
+          ],
+          "zitat": "Baugenehmigungen: Planungs- und Genehmigungsverfahren für Industrieanlagen und Infrastrukturprojekte werden vereinfacht und sollen künftig spätestens nach drei Monaten abgeschlossen sein.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um Kommunalfinanzen zu stärken",
+          "ursachen_ids": [
+            1202
+          ],
+          "zitat": "Moderne Kommunalfinanzierung: Die Gewerbesteuer wird aufkommensneutral und konjunkturunabhängig ersetzt und die Konzessionsabgabenverordnung grundlegend reformiert, um die Kommunalfinanzen auf robuste Füße zu stellen.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Sichere Radwege und Fahrradstraßen ausbauen",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Fahrradnutzung: Attraktive, sichere Radwege, der Ausbau von Fahrradstraßen, Abstellmöglichkeiten und Sharing-Angebote fördern eine aktive Mobilität.",
+          "seite": 69
+        },
+        {
+          "beschreibung": "Bundesweit Tempo 30 innerorts sowie Tempo 80 auf Landstraßen",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Bundesweite Tempolimits: Tempo 120 auf Autobahnen, Tempo 80 auf Landstraßen und Tempo 30 innerorts erhöhen die Verkehrssicherheit, reduzieren CO₂-Emissionen, schützen schwächere Verkehrsteilnehmende und reduzieren die Lärmbelastung.",
+          "seite": 69
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1203,
+          "seiten": [
+            41,
+            54,
+            97,
+            53
+          ],
+          "grund": "Nur Vergaberecht allgemein (S. 54, ohne Bezug zu Bau) und Bauvorschriften für Wohnungsbau (S. 97); Verfahren für Infrastrukturprojekte (S. 53) bei 1201 erfasst, ersatzweise offen. Kein Personal in Bauverwaltungen."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1201": {
+      "Mehr Geld, Erhalt vor Neubau": [
+        "brücke",
+        "autobahn",
+        "sanierung",
+        "erhalt",
+        "ersatzneubau",
+        "investitionsprogramm",
+        "maut",
+        "infrastrukturfonds"
+      ],
+      "Schneller planen und genehmigen": [
+        "planung",
+        "genehmigung",
+        "planungsbeschleunigung",
+        "umweltverträglichkeitsprüfung",
+        "baustelle"
+      ]
+    },
+    "1202": {
+      "Mehr Geld für Kommunen, Altschulden": [
+        "kommunen",
+        "altschulden",
+        "gemeindefinanz",
+        "kommunale straßen",
+        "straße",
+        "finanzausgleich"
+      ],
+      "Aufgabenkritik": [
+        "aufgabenkritik",
+        "schuldenbremse"
+      ]
+    },
+    "1203": {
+      "Planung und Vergabe beschleunigen": [
+        "vergabe",
+        "vergaberecht",
+        "planungsbeschleunigung",
+        "genehmigungsverfahren"
+      ],
+      "Personal in Bauverwaltungen": [
+        "bauverwaltung",
+        "straßenbauverwaltung",
+        "planungskapazit",
+        "ingenieure"
+      ]
+    },
+    "1204": {
+      "Sichere Radwege und Kreuzungen": [
+        "radweg",
+        "radverkehr",
+        "fahrrad",
+        "tempo 30",
+        "vision zero",
+        "kreuzung"
+      ],
+      "Helm, Training, Rücksicht": [
+        "helm",
+        "verkehrserziehung",
+        "verkehrssicherheit",
+        "rücksicht"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5bb2c408583859aefd82cb75a7fe60940a030d836d7209b1adef41c75a632afb",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "1201": {
+            "Mehr Geld, Erhalt vor Neubau": {
+              "brücke": 3,
+              "autobahn": 8,
+              "sanierung": 6,
+              "erhalt": 56,
+              "ersatzneubau": 0,
+              "investitionsprogramm": 0,
+              "maut": 7,
+              "infrastrukturfonds": 2
+            },
+            "Schneller planen und genehmigen": {
+              "planung": 25,
+              "genehmigung": 10,
+              "planungsbeschleunigung": 0,
+              "umweltverträglichkeitsprüfung": 0,
+              "baustelle": 0
+            }
+          },
+          "1202": {
+            "Mehr Geld für Kommunen, Altschulden": {
+              "kommunen": 20,
+              "altschulden": 0,
+              "gemeindefinanz": 0,
+              "kommunale straßen": 0,
+              "straße": 5,
+              "finanzausgleich": 2
+            },
+            "Aufgabenkritik": {
+              "aufgabenkritik": 0,
+              "schuldenbremse": 5
+            }
+          },
+          "1203": {
+            "Planung und Vergabe beschleunigen": {
+              "vergabe": 11,
+              "vergaberecht": 2,
+              "planungsbeschleunigung": 0,
+              "genehmigungsverfahren": 5
+            },
+            "Personal in Bauverwaltungen": {
+              "bauverwaltung": 0,
+              "straßenbauverwaltung": 0,
+              "planungskapazit": 0,
+              "ingenieure": 0
+            }
+          },
+          "1204": {
+            "Sichere Radwege und Kreuzungen": {
+              "radweg": 1,
+              "radverkehr": 1,
+              "fahrrad": 4,
+              "tempo 30": 1,
+              "vision zero": 0,
+              "kreuzung": 0
+            },
+            "Helm, Training, Rücksicht": {
+              "helm": 0,
+              "verkehrserziehung": 0,
+              "verkehrssicherheit": 1,
+              "rücksicht": 21
+            }
+          }
+        }
+      }
+    ]
+  }
+}

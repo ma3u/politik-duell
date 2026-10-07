@@ -1,0 +1,295 @@
+{
+  "thema_id": 5,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Effektive Unternehmenssteuerbelastung auf den OECD-Durchschnitt senken",
+          "ursachen_ids": [
+            501
+          ],
+          "zitat": "Senkung von Unternehmenssteuern auf OECD-Mittel: Die effektive Steuerbelastung der Unternehmen wird an den Durchschnitt der OECD-Länder angepasst",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Energiesteuer auf das EU-rechtliche Minimum senken",
+          "ursachen_ids": [
+            501
+          ],
+          "zitat": "Energiesteuer: Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Teil der Netzentgelte aus dem Bundeshaushalt finanzieren",
+          "ursachen_ids": [
+            501
+          ],
+          "zitat": "Teile der umlagefinanzierten Netzentgelte werden daher zukünftig aus dem Bundeshaushalt gedeckt.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Pflicht für Großunternehmen, bei betriebsbedingten Kündigungen Weiterbildung in zukunftsfähigen Berufen zu finanzieren",
+          "ursachen_ids": [
+            502
+          ],
+          "zitat": "Sozialpläne: Großunternehmen werden verpflichtet, von betriebsbedingten Kündigungen betroffenen Arbeitnehmenden Weiterbildungen in zukunftsfähigen Berufen zu finanzieren.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Recht auf Freistellung für Weiterbildung in zukunftsorientierten Berufen",
+          "ursachen_ids": [
+            502
+          ],
+          "zitat": "Recht auf Weiterbildung: Jede Person erhält das Recht auf Freistellung von der Arbeit für die Weiterbildung in zukunftsorientierten Berufen, insbesondere in MINT-Berufen.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Umschulungsprogramme für den Wechsel in Berufe mit Fachkräftemangel",
+          "ursachen_ids": [
+            502
+          ],
+          "zitat": "Umschulungsprogramme: Spezielle Programme fördern den Berufswechsel in Berufsfelder mit Fachkräftemangel.",
+          "seite": 120
+        },
+        {
+          "beschreibung": "Investitionen aus der Schuldenbremse ausnehmen (Goldene Regel Plus)",
+          "ursachen_ids": [
+            504
+          ],
+          "zitat": "Goldene Regel Plus: Zukunftsorientierte Nettoinvestitionen in Bereiche wie Infrastruktur, […] Bildung, Klimaschutz und Digitalisierung werden von der Schuldenbremse ausgenommen",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Infrastrukturfonds für private Investitionen und massive Infrastrukturinvestitionen",
+          "ursachen_ids": [
+            504
+          ],
+          "zitat": "Einrichtung eines Infrastrukturfonds: Es wird ein Infrastrukturfonds eingerichtet, der private Investitionen und innovative Technologien durch verbesserte Rahmenbedingungen fördert.",
+          "seite": 65
+        },
+        {
+          "beschreibung": "Zeitlich befristete Investitionsprämie für private Investitionen",
+          "ursachen_ids": [
+            504
+          ],
+          "zitat": "Investitionsprämie: Eine unbürokratische Investitionsprämie in Höhe von 10 % der Investitionssumme für die nächsten zwei Jahre setzt Anreize für private Investitionen",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Berichtspflichten des Lieferkettengesetzes streichen und an EU-Recht angleichen",
+          "ursachen_ids": [
+            505
+          ],
+          "zitat": "Lieferkettensorgfaltspflichten: Die Berichtspflichten des deutschen Lieferkettengesetzes (LkSG) werden gestrichen und der persönliche Anwendungsbereich und das materielle Recht an das europäische Lieferkettengesetz (CSDDD) angeglichen.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Genehmigungsverfahren für Industrieanlagen vereinfachen und auf drei Monate begrenzen",
+          "ursachen_ids": [
+            505
+          ],
+          "zitat": "Baugenehmigungen: Planungs- und Genehmigungsverfahren für Industrieanlagen und Infrastrukturprojekte werden vereinfacht und sollen künftig spätestens nach drei Monaten abgeschlossen sein.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Tarifbindung stärken",
+          "ursachen_ids": [
+            507
+          ],
+          "zitat": "Gleiche Entlohnung für gleiche Arbeit: […] Die Tarifbindung wird gestärkt.",
+          "seite": 89
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 503,
+          "seiten": [
+            19,
+            20,
+            54
+          ],
+          "grund": "Kapitel zur Einheit (S. 19-20) und Wirtschaftskapitel gelesen: nur Dialogformate und allgemeine Regionalförderung (GRW, Wirtschaftsförderung), keine Zusage zur Lohnangleichung Ost; 'osten'-Treffer sind fast alle 'Kosten'."
+        },
+        {
+          "ursache": 506,
+          "seiten": [
+            94,
+            101
+          ],
+          "grund": "Treffer sind Steuerfreibeträge; keine Zusage zu Hinzuverdienst oder Anrechnung im Bürgergeld im Programm gefunden (Volltextsuche nach Bürgergeld/Hinzuverdienst ohne Treffer)."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "501": {
+      "Standortkosten senken": [
+        "standort",
+        "unternehmenssteuer",
+        "lohnnebenkosten",
+        "energiekosten",
+        "wettbewerbsfähigkeit",
+        "industrie"
+      ],
+      "Industriestrompreis, Transformation fördern": [
+        "industriestrompreis",
+        "transformation",
+        "brückenstrompreis",
+        "klimaschutzverträge"
+      ]
+    },
+    "502": {
+      "Weiterbildung, Umschulung": [
+        "weiterbildung",
+        "umschulung",
+        "qualifizierung",
+        "strukturwandel",
+        "kurzarbeit",
+        "qualifizierungsgeld"
+      ]
+    },
+    "503": {
+      "Löhne im Osten angleichen": [
+        "ostdeutschland",
+        "osten",
+        "lohnangleichung",
+        "neue bundesländer",
+        "ost-west"
+      ]
+    },
+    "504": {
+      "Investitionsoffensive": [
+        "investitionen",
+        "investitionsoffensive",
+        "sondervermögen",
+        "infrastrukturfonds",
+        "investitionsstau"
+      ],
+      "Umschichtung statt Schulden": [
+        "schuldenbremse",
+        "haushaltskonsolidierung",
+        "subventionsabbau"
+      ]
+    },
+    "505": {
+      "Bürokratieabbau": [
+        "bürokratieabbau",
+        "bürokratie",
+        "berichtspflichten",
+        "dokumentationspflichten",
+        "lieferkettengesetz",
+        "genehmigungsverfahren"
+      ]
+    },
+    "506": {
+      "Arbeitsanreize im Bürgergeld": [
+        "hinzuverdienst",
+        "freibetrag",
+        "transferentzug",
+        "bürgergeld",
+        "arbeitsanreiz",
+        "zuverdienst"
+      ]
+    },
+    "507": {
+      "Tarifbindung stärken": [
+        "tarifbindung",
+        "tariftreue",
+        "tarifvertrag",
+        "allgemeinverbindlich",
+        "gewerkschaft"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "728115bf42f6be5cb2bcf46112f6758075a7e38fb11ad214662500070832720b",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "501": {
+            "Standortkosten senken": {
+              "standort": 11,
+              "unternehmenssteuer": 3,
+              "lohnnebenkosten": 0,
+              "energiekosten": 5,
+              "wettbewerbsfähigkeit": 16,
+              "industrie": 21
+            },
+            "Industriestrompreis, Transformation fördern": {
+              "industriestrompreis": 0,
+              "transformation": 20,
+              "brückenstrompreis": 0,
+              "klimaschutzverträge": 0
+            }
+          },
+          "502": {
+            "Weiterbildung, Umschulung": {
+              "weiterbildung": 36,
+              "umschulung": 3,
+              "qualifizierung": 1,
+              "strukturwandel": 0,
+              "kurzarbeit": 0,
+              "qualifizierungsgeld": 0
+            }
+          },
+          "503": {
+            "Löhne im Osten angleichen": {
+              "ostdeutschland": 0,
+              "osten": 55,
+              "lohnangleichung": 0,
+              "neue bundesländer": 0,
+              "ost-west": 0
+            }
+          },
+          "504": {
+            "Investitionsoffensive": {
+              "investitionen": 37,
+              "investitionsoffensive": 0,
+              "sondervermögen": 0,
+              "infrastrukturfonds": 2,
+              "investitionsstau": 2
+            },
+            "Umschichtung statt Schulden": {
+              "schuldenbremse": 5,
+              "haushaltskonsolidierung": 0,
+              "subventionsabbau": 0
+            }
+          },
+          "505": {
+            "Bürokratieabbau": {
+              "bürokratieabbau": 6,
+              "bürokratie": 17,
+              "berichtspflichten": 1,
+              "dokumentationspflichten": 0,
+              "lieferkettengesetz": 2,
+              "genehmigungsverfahren": 5
+            }
+          },
+          "506": {
+            "Arbeitsanreize im Bürgergeld": {
+              "hinzuverdienst": 0,
+              "freibetrag": 4,
+              "transferentzug": 0,
+              "bürgergeld": 0,
+              "arbeitsanreiz": 0,
+              "zuverdienst": 0
+            }
+          },
+          "507": {
+            "Tarifbindung stärken": {
+              "tarifbindung": 1,
+              "tariftreue": 0,
+              "tarifvertrag": 0,
+              "allgemeinverbindlich": 0,
+              "gewerkschaft": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Modellstudiengänge für Rettungsfachpersonal ausbauen und dauerhaft etablieren, weitere berufliche und akademische Weiterbildungsmöglichkeiten schaffen.",
+      "ursachen_ids": [2704],
+      "zitat": "Berufliche Perspektiven erweitern: Die Modellstudiengänge für Rettungsfachpersonal werden ausgebaut und dauerhaft etabliert. Zusätzlich werden weitere berufliche und akademische Weiterbildungsmöglichkeiten geschaffen.",
+      "seite": 128
+    },
+    {
+      "beschreibung": "Heilberufe erhalten Antrags- und Stimmrechte im Gemeinsamen Bundesausschuss.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2705],
+      "zitat": "Mitbestimmung im Gemeinsamen Bundesausschuss (G-BA): Heilberufe erhalten Antrags- und Stimmrechte im G-BA.",
+      "seite": 128
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2701, "seiten": [127, 128], "grund": "Keine Zusage zu Personalbemessung oder Personalausstattung; Fachkräftemangel nur als Begründung der Notfallreform." },
+    { "ursache": 2703, "seiten": [126, 127], "grund": "Dokumentationsstandards (KDL, ePA) sind Datenstandards, keine Entlastung der Beschäftigten von Dokumentationsaufwand." }
+  ]
+}
+
+Protokoll
+Gelesen: Kapitel Gesundheit S. 122-132, S. 120-121 (Digitales), alle Fundstellen zu 2704/2705/2702 in Stichprobe (S. 89, 91, 95, 123, 124, 151 etc.).
+Nicht erfasst: S. 124 "Bundesgesundheitskommission/G-BA bezieht alle Gesundheitsfachberufe ein" (Gremienbeteiligung, ähnlich der G-BA-Zusage, nicht zusätzlich); S. 124 Mitbestimmung der Versicherten (Patienten); S. 89 Tarifbindung (allgemeiner Arbeitsmarkt, nicht Gesundheitswesen); S. 91 Ruhezeiten (Homeoffice, allgemein); S. 151 flexible Arbeitszeitmodelle (allgemein); S. 128 Einleitung zu Heilberufen (Ausbildungsvergütung, faire Vergütung) nur Beschreibung ohne eigene Zusage; S. 128 Planstellen Weiterbildung und S. 129 höhere Vergütung für Kliniken mit Weiterbildungsplätzen (Ausbildung/Finanzierung, nicht Entlastung); S. 95, 111, 112, 11, 19, 29, 58 Mitbestimmung in anderem Zusammenhang.
+G-BA-Mitbestimmung ist Grenzfall (Gremium, nicht Arbeitsplatz): ursachen_offen.

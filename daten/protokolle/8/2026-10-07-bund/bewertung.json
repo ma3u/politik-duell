@@ -1,0 +1,66 @@
+{
+  "blind_pruefsumme": "eabbb196430f9ce73f7b4238a2038812425531ebb1905aa3852218ebe94ab53c",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Die Evaluation zeigt, dass das Ticket genutzt wird und Fahrten vom Auto verlagert; reines Sichern verhindert aber weitere Preiserhöhungen nicht. Der Bund zahlt seinen Anteil bereits.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.bmv.de/SharedDocs/DE/Pressemitteilungen/2026/027-schnieder-evaluation-deutschlandticket.html"
+      },
+      "ursachen": [
+        804
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 6741,
+      "ursachen": [
+        802
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 6744,
+      "ursachen": [
+        802
+      ]
+    },
+    {
+      "kennung": "M04",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Rufbusse erreichen auf dem Land mehr Menschen, vor allem abends und am Wochenende; sie kosten je Fahrgast aber ein Vielfaches eines Linienbusses. Zuständig sind die Länder, der Bund kann nur fördern.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://kommunal.de/on-demand-verkehr-kommunen-aus-finanzierung"
+      },
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M05",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Dichtere Takte gewinnen laut Metaanalyse mehr Fahrgäste als Preissenkungen; ohne Betrag bleibt offen, wie viel ankommt. Zuständig sind die Länder, der Bund kann über Geld beitragen, Fahrpersonal fehlt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://worldtransitresearch.info/research/6475"
+      },
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": 6838,
+      "ursachen": [
+        804
+      ]
+    }
+  ]
+}

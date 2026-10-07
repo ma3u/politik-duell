@@ -1,0 +1,18 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene abschaffen", "ursachen_ids": [1101], "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.", "seite": 53 },
+    { "beschreibung": "Grundnahrungsmittel wie Brot, Obst und Gemüse von der Mehrwertsteuer befreien, gegenfinanziert über die Erbschaftsteuer", "ursachen_ids": [1101], "zitat": "Grundnahrungsmittel wie Brot, Obst und Gemüse werden von der Mehrwertsteuer befreit, um die Grundversorgung für alle erschwinglicher zu machen.", "seite": 101 },
+    { "beschreibung": "Mindestlohn auf 60 % des Medianbruttolohns anheben und regelmäßig anpassen", "ursachen_ids": [1103, 1105], "zitat": "Der Mindestlohn wird auf 60 % des Medianbruttolohns erhöht, was derzeit (Stand 2024) 14,61 Euro entspricht, und regelmäßig angepasst.", "seite": 89 },
+    { "beschreibung": "Tarifbindung stärken", "ursachen_ids": [1103, 1105], "zitat": "Die Tarifbindung wird gestärkt.", "seite": 89 },
+    { "beschreibung": "Grundfreibetrag moderat anheben, um kleine und mittlere Einkommen zu entlasten", "ursachen_ids": [1104], "zitat": "Der Grundfreibetrag wird moderat angehoben, um kleine und mittlere Einkommen spürbar zu entlasten.", "seite": 99 },
+    { "beschreibung": "Umschulungen und maßgeschneiderte Weiterbildung mit Lohnkostenzuschüssen für Langzeitarbeitslose", "ursachen_ids": [1105], "zitat": "Spezielle Programme fördern den Berufswechsel in Berufsfelder mit Fachkräftemangel.", "seite": 120 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1102, "seiten": [53, 55, 74], "grund": "Treffer zu Wettbewerb betreffen Wettbewerbsfähigkeit und Unternehmensthemen; nichts zu Lebensmittelhandel, Marktkonzentration oder Preisaufsicht." }
+  ]
+}
+
+Protokoll: Auftrag, Seiten 50, 53, 88, 89, 99, 101, 102, 120 gelesen; Fundstellen zu 1102 (Wettbewerb) sind Wettbewerbsfähigkeit, kein Handelsbezug.
+Nicht erfasst: S. 99 Spitzensteuersatz (Gegenfinanzierung, keine Entlastung), S. 102 Grundeinkommen/negative Einkommensteuer (Existenzsicherung, nicht Lohn/Preis), S. 89 Minijob-Reform (Sozialversicherungseinbindung, kein Lohn).

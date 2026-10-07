@@ -1,0 +1,41 @@
+{
+  "vergeben_bis": 3,
+  "kennungen": [
+    {
+      "kennung": "M01",
+      "programm": 0,
+      "massnahme": 2,
+      "partei_id": 18,
+      "land": null,
+      "beschreibung": "mobile gesundheitseinheiten mit regelmäß",
+      "zitat": "mobile einheiten („klinikmobile“): mobil",
+      "zitat_sha": "aef00b696231b2b6",
+      "inhalt_sha": "d246a463cd65b43d",
+      "seite": 126
+    },
+    {
+      "kennung": "M02",
+      "programm": 0,
+      "massnahme": 1,
+      "partei_id": 18,
+      "land": null,
+      "beschreibung": "multiprofessionelle regionale versorgung",
+      "zitat": "regionale versorgungszentren (rvz): mult",
+      "zitat_sha": "f58821bd0dfbfdcc",
+      "inhalt_sha": "ffca72043d2b368a",
+      "seite": 125
+    },
+    {
+      "kennung": "M03",
+      "programm": 0,
+      "massnahme": 0,
+      "partei_id": 18,
+      "land": null,
+      "beschreibung": "für fachpraxisbesuche ohne überweisung w",
+      "zitat": "hauspraxiszentrierte versorgung (hzv): f",
+      "zitat_sha": "1a17c8b0feea3575",
+      "inhalt_sha": "01f02116c97514ae",
+      "seite": 125
+    }
+  ]
+}

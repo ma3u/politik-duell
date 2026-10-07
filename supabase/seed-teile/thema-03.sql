@@ -17,12 +17,13 @@ insert into public.instrumente (id, thema_id, name, begruendung, evidenz, beleg_
   (6707, 3, 'Erneuerbare Energien und Speicher schneller ausbauen', 'Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird.', 'gemischt', null, 'bund', null, true, null),
   (6708, 3, 'Kohle- und Kernkraftwerke länger oder wieder betreiben', 'Mehr Kraftwerksleistung könnte die Börsenpreise in einzelnen Stunden senken; die abgeschalteten Kernkraftwerke sind weitgehend zurückgebaut, eine Wiederinbetriebnahme wäre teuer, langwierig und rechtlich neu zu regeln, und Kohlestrom wird durch den Emissionshandel teurer.', 'gemischt', null, 'bund', null, true, null),
   (6709, 3, 'Dynamische Stromtarife und intelligente Messsysteme', 'Haushalte, die Strom in günstigen Stunden nutzen können, sparen; für viele Haushalte ohne Wärmepumpe, E-Auto oder Batterie ist die Ersparnis gering.', 'gemischt', null, 'bund', null, true, null),
-  (6828, 3, 'Wieder Gas aus Russland über Nord Stream beziehen', 'Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.', 'gemischt', null, 'bund', null, true, null)
+  (6828, 3, 'Wieder Gas aus Russland über Nord Stream beziehen', 'Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.', 'gemischt', null, 'bund', null, true, null),
+  (8465, 3, 'Ausbau von Fernwärmenetzen und kommunaler Wärmeplanung fördern (Bund)', 'Kann langfristig die Abhängigkeit von Gas- und Ölpreisen senken, wenn Netze erneuerbare Wärme oder Abwärme nutzen; Fernwärme wird heute aber noch stark mit Gas erzeugt, und in den Monopolnetzen sind die Preise oft hoch.', 'gemischt', 'https://www.vzbv.de/pressemitteilungen/teure-fernwaermepreise-verbraucherzentrale-fordert-preisdeckel', 'bund', null, true, 'blind')
 on conflict (id) do update set thema_id = excluded.thema_id, name = excluded.name, begruendung = excluded.begruendung,
   evidenz = excluded.evidenz, beleg_studie_url = excluded.beleg_studie_url, ebene = excluded.ebene,
   entspricht = excluded.entspricht, ki_entwurf = excluded.ki_entwurf, entwurf_herkunft = excluded.entwurf_herkunft;
 
-delete from public.instrumente where thema_id = 3 and id not in (6703, 6704, 6705, 6706, 6707, 6708, 6709, 6828);
+delete from public.instrumente where thema_id = 3 and id not in (6703, 6704, 6705, 6706, 6707, 6708, 6709, 6828, 8465);
 
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, instrument_id, wirksamkeit, umsetzbarkeit,
   rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values
@@ -67,7 +68,14 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (6833, 3, 17, null, 'Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis', '{303}', null, 1, 2, null, 'Langfristige Verträge können Preisschwankungen dämpfen; sie binden aber auch an Preise, wenn der Markt fällt, und ein Kriterium nur nach dem Preis erhöht die Abhängigkeit von einzelnen Lieferländern.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', null, 'gemischt', '2026-09-30', false, true, null),
   (6834, 3, 17, null, 'Neue Gaskraftwerke als Reserve für Dunkelflauten', '{304}', null, 1, 2, null, 'Mehr Reservekraftwerke können Preisspitzen in wind- und sonnenarmen Stunden dämpfen; sie senken den Durchschnittspreis kaum, weil gerade Gaskraftwerke den Preis dann setzen, und müssen über Umlagen oder Steuern bezahlt werden.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11', null, 'gemischt', '2026-09-30', false, true, null),
   (6835, 3, 17, null, 'Repowering: alte Windanlagen durch neue ersetzen', '{304}', 6707, 2, 2, null, 'Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11', null, 'gemischt', '2026-09-30', false, true, null),
-  (6836, 3, 17, null, 'Einbau von Wärmepumpen fördern, ohne andere Heizungen zu benachteiligen', '{305}', null, 1, 3, null, 'Förderung erleichtert den Umstieg von Gas und Öl; ohne Vorgaben für neue Heizungen bleiben viele Haushalte bei fossilen Heizungen und damit von deren Preisen abhängig.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', null, 'gemischt', '2026-09-30', false, true, null);
+  (6836, 3, 17, null, 'Einbau von Wärmepumpen fördern, ohne andere Heizungen zu benachteiligen', '{305}', null, 1, 3, null, 'Förderung erleichtert den Umstieg von Gas und Öl; ohne Vorgaben für neue Heizungen bleiben viele Haushalte bei fossilen Heizungen und damit von deren Preisen abhängig.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', null, 'gemischt', '2026-09-30', false, true, null),
+  (8466, 3, 18, null, 'Teile der Netzentgelte aus dem Bundeshaushalt decken', '{301}', 6703, 2, 2, null, 'Senkt einen großen Teil des Strompreises direkt und spürbar; die Kosten des Netzausbaus trägt dann der Bundeshaushalt, und die Finanzierung muss auf Dauer gesichert werden.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=53', null, 'belegt', '2026-10-07', false, true, null),
+  (8467, 3, 18, null, 'Netzentgelte verursachungsgerecht gestalten, Investitionen nicht mehr allein darüber finanzieren', '{301}', 6703, 2, 2, null, 'Senkt einen großen Teil des Strompreises direkt und spürbar; die Kosten des Netzausbaus trägt dann der Bundeshaushalt, und die Finanzierung muss auf Dauer gesichert werden.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=67', null, 'belegt', '2026-10-07', false, true, null),
+  (8468, 3, 18, null, 'Stromsteuer auf das europäische Minimum senken', '{302}', 6704, 2, 2, null, 'Senkt den Strompreis für Haushalte um gut 2 Cent je Kilowattstunde; kostet den Bundeshaushalt mehrere Milliarden Euro im Jahr.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=67', null, 'belegt', '2026-10-07', false, true, null),
+  (8469, 3, 18, null, 'Einen Teil der CO₂-Einnahmen als direkte Zahlungen an die Menschen zurückgeben', '{302}', 6705, 1, 2, null, 'Gleicht höhere Heizkosten durch den CO₂-Preis vor allem für Haushalte mit geringem Einkommen aus, senkt die Preise selbst aber nicht; ein Auszahlungsweg muss erst aufgebaut werden.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=60', null, 'belegt', '2026-10-07', false, true, null),
+  (8470, 3, 18, null, 'Strombedarf bis 2035 durchgehend vollständig aus erneuerbaren Energien decken', '{304}', 6707, 2, 2, null, 'Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=66', null, 'gemischt', '2026-10-07', false, true, null),
+  (8471, 3, 18, null, 'Hemmnisse für Energiespeicher abbauen, damit Speicher wirtschaftlich attraktiv werden', '{304}', 6707, 2, 2, null, 'Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=66', null, 'gemischt', '2026-10-07', false, true, null),
+  (8472, 3, 18, null, 'Fernwärmeausbau und kommunale Wärmeplanung durch Förderprogramme und Duldungspflichten fördern', '{305}', 8465, 1, 3, null, 'Kann langfristig die Abhängigkeit von Gas- und Ölpreisen senken, wenn Netze erneuerbare Wärme oder Abwärme nutzen; Fernwärme wird heute aber noch stark mit Gas erzeugt, und in den Monopolnetzen sind die Preise oft hoch.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=68', 'https://www.vzbv.de/pressemitteilungen/teure-fernwaermepreise-verbraucherzentrale-fordert-preisdeckel', 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -94,7 +102,8 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6830, 3),
   (6833, 3),
   (6834, 3),
-  (6836, 3);
+  (6836, 3),
+  (8465, 3);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (3, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -103,6 +112,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (3, 14, null, 'massnahmen', null, '2026-09-30', true, null),
   (3, 15, null, 'massnahmen', null, '2026-09-30', true, null),
   (3, 16, null, 'massnahmen', null, '2026-09-30', true, null),
-  (3, 17, null, 'massnahmen', null, '2026-09-30', true, null);
+  (3, 17, null, 'massnahmen', null, '2026-09-30', true, null),
+  (3, 18, null, 'massnahmen', null, '2026-10-07', true, '{301,302,303,304,305}');
 
 commit;

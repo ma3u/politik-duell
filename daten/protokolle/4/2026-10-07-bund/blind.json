@@ -1,0 +1,311 @@
+{
+  "pruefsumme": "d7c948b7e8bda13aaf7258057b14d5d4adeb91e818c282e9e57fa15025dc1229",
+  "thema": {
+    "id": 4,
+    "name": "Schule",
+    "ziel": "Kinder bekommen verlässlichen Unterricht in intakten Schulgebäuden und lernen, was sie brauchen."
+  },
+  "ursachen": [
+    {
+      "id": 401,
+      "beschreibung": "Zu wenige Lehrkräfte: Kurzfristig liegt das Angebot deutlich unter dem Einstellungsbedarf",
+      "ebene": "land"
+    },
+    {
+      "id": 402,
+      "beschreibung": "Großer Sanierungsstau bei Schulgebäuden (rund 68 Mrd. Euro, größter Posten der Kommunen)",
+      "ebene": "land"
+    },
+    {
+      "id": 403,
+      "beschreibung": "Wachsende Lernrückstände: Ein Drittel der Neuntklässler verfehlt den Mindeststandard in Mathematik",
+      "ebene": "land"
+    },
+    {
+      "id": 404,
+      "beschreibung": "Viele Kinder haben schon vor der Einschulung Sprachförderbedarf; die Länder erfassen und fördern das sehr unterschiedlich",
+      "ebene": "land"
+    },
+    {
+      "id": 405,
+      "beschreibung": "Der Schulerfolg hängt stark von der sozialen Herkunft ab; sozial benachteiligte Jugendliche fallen seit 2018 weiter zurück",
+      "ebene": "land"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6067,
+      "name": "Kostenloses Mittagessen in Kitas und Schulen, gemeinsam mit den Ländern",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Kostenfreies Essen entlastet benachteiligte Familien; Studien finden teils positive, meist kleine Effekte auf Lernen. Finanzierung mit den Ländern ist aufwendig."
+    },
+    {
+      "id": 6068,
+      "name": "Investitionsprogramm des Bundes für Schulgebäude, ohne genannten Betrag",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Investitionsmittel setzen direkt am Sanierungsstau an; der Umfang ist nicht beziffert. Der Bund kann Schulbau nur über Finanzhilfen mitfinanzieren."
+    },
+    {
+      "id": 6069,
+      "name": "Verbindliche Sprachstandsfeststellung vor der Einschulung mit Förderpflicht",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Eine verbindliche Sprachstandsfeststellung mit anschließender Förderpflicht setzt direkt am Sprachförderbedarf an; Studien zu Sprachförderprogrammen zeigen unterschiedlich starke Effekte. Das Land ist zuständig und kann das per Gesetz regeln."
+    },
+    {
+      "id": 6070,
+      "name": "Mehr Unterrichtszeit für Deutsch und Mathematik",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Unterrichtszeit für Lesen, Schreiben und Rechnen kann Basiskompetenzen stärken; Studien finden Effekte vor allem bei gezielter, gut angeleiteter Übung. Braucht zusätzliche Lehrkräftestunden, die knapp sind."
+    },
+    {
+      "id": 6071,
+      "name": "Mehr Mittel und Personal für Schulen in schwieriger Lage (Sozialindex)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Zusätzliche Mittel und Personal für Schulen in schwieriger Lage setzen an der Kopplung von Herkunft und Schulerfolg an; die Evaluation des Startchancen-Programms läuft noch, internationale Erfahrungen sind gemischt. Das Land kann Mittel umverteilen, zusätzliches Personal ist knapp."
+    },
+    {
+      "id": 6072,
+      "name": "Verwaltungs-, IT- und Assistenzkräfte an Schulen",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verwaltungs- und Unterstützungskräfte nehmen Lehrkräften Aufgaben ab und schaffen Zeit für Unterricht; Studien zu solchen Assistenzkräften zeigen positive, aber unterschiedlich große Effekte. Das Land kann die Stellen schaffen, Finanzierung und Bewerberlage sind die Hürden."
+    },
+    {
+      "id": 6073,
+      "name": "Mehr und praxisnähere Lehramtsausbildung",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr und praxisnähere Lehramtsausbildung setzt am Lehrkräftemangel an, wirkt aber erst nach Jahren; wie viele zusätzliche Lehrkräfte im Land ankommen, ist offen. Das Land kann seine Hochschulen selbst steuern."
+    },
+    {
+      "id": 6074,
+      "name": "Zulagen, Stipendien oder Verpflichtungen für unterversorgte Regionen und Fächer",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Zulagen, Stipendien oder Verpflichtungen können Lehrkräfte in unterversorgte Regionen oder Schulen lenken; die Gesamtzahl der Lehrkräfte steigt dadurch kaum. Für das Land finanzierbar, aber mit dauerhaften Kosten."
+    },
+    {
+      "id": 6075,
+      "name": "Seiten- und Quereinstieg mit Qualifizierung",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Seiten- und Quereinstieg mit Qualifizierung gewinnt kurzfristig zusätzliche Lehrkräfte; wie gut das gelingt, hängt stark von der Nachqualifizierung ab. Das Land ist zuständig und praktiziert das bereits."
+    },
+    {
+      "id": 6076,
+      "name": "Schulbauprogramm des Landes ohne genannten Betrag",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Ein Schulbauprogramm setzt direkt am Sanierungsstau an; wie weit es reicht, hängt von Umfang, Baukapazitäten und Kommunen ab. Das Programm nennt keinen Betrag, die Finanzierung muss das Land im Haushalt sichern."
+    },
+    {
+      "id": 6077,
+      "name": "Mehr Sprachförderung in Kitas, ohne Förderpflicht",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Sprachförderung in Kitas setzt am Sprachförderbedarf an; ohne verbindliche Feststellung und Förderpflicht erreicht sie nicht sicher alle Kinder mit Bedarf. Das Land ist zuständig."
+    },
+    {
+      "id": 6078,
+      "name": "Schulsozialarbeit ausbauen und dauerhaft finanzieren",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schulsozialarbeit unterstützt Kinder in schwierigen Lagen; Wirkungen auf Leistungen sind kaum belegt. Das Land kann die Finanzierung übernehmen."
+    },
+    {
+      "id": 6079,
+      "name": "Längeres gemeinsames Lernen, mehr Gemeinschaftsschulen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Längeres gemeinsames Lernen soll den Einfluss der Herkunft verringern; ob die Schulstruktur den Schulerfolg beeinflusst, ist in der Forschung nicht entschieden. Eine Strukturreform braucht Jahre."
+    },
+    {
+      "id": 6080,
+      "name": "Ganztagsangebote an Schulen ausbauen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ganztag kann Kinder aus benachteiligten Familien unterstützen, Effekte auf Leistungen hängen laut Studien stark von der Qualität ab. Der Ausbau braucht Personal und Räume."
+    },
+    {
+      "id": 6081,
+      "name": "Lehrkräfte im Ruhestand zurückgewinnen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Pensionierte Lehrkräfte zurückzugewinnen hilft kurzfristig; erfahrungsgemäß kehren nur wenige zurück, eine dauerhafte Lösung ist es nicht. Für das Land leicht umsetzbar."
+    },
+    {
+      "id": 6082,
+      "name": "Leistungsabhängiger Zugang zum Gymnasium",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Leistungsabhängige Übergänge ins Gymnasium sollen passgenauer fördern; ob die Schulstruktur die Leistungen verbessert, ist in der Forschung nicht entschieden. Das Land kann es im Schulgesetz regeln."
+    },
+    {
+      "id": 6083,
+      "name": "Handyverbot an Schulen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Ein Handyverbot kann Ablenkung im Unterricht verringern; Studien zu Wirkungen auf Leistungen sind gemischt. Das Land kann es per Erlass oder Gesetz regeln."
+    },
+    {
+      "id": 6084,
+      "name": "Kostenloses Schulessen und Lernmittel aus Landesmitteln",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Kostenfreies Essen und Lernmittel entlasten benachteiligte Familien; Studien finden teils positive, meist kleine Effekte auf das Lernen. Dauerhafte Kosten für das Land."
+    },
+    {
+      "id": 6085,
+      "name": "Schulsanierung beschleunigen, ohne Umfang und Finanzierung",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Tempo bei Schulsanierungen setzt am Sanierungsstau an; das Programm nennt aber weder Umfang noch Finanzierung."
+    },
+    {
+      "id": 6086,
+      "name": "Verbindliches Vorschuljahr mit Sprachbildung",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Ein verbindliches Vorschuljahr kann Sprachrückstände vor der Einschulung verringern; ohne Feststellung des Förderbedarfs ist die Förderung weniger gezielt. Braucht Fachkräfte in Kitas oder Grundschulen."
+    },
+    {
+      "id": 6087,
+      "name": "Getrennte Sprachklassen vor dem Regelunterricht",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Getrennte Sprachklassen vor dem Regelunterricht können gezielt Deutsch vermitteln; Studien zu getrenntem und gemeinsamem Unterricht sind gemischt. Braucht zusätzliche Lehrkräfte."
+    },
+    {
+      "id": 6088,
+      "name": "Leichtere Anerkennung ausländischer Lehrkräfte",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Leichtere Anerkennung ausländischer Lehrkräfte (etwa mit nur einem Fach) erschließt kurzfristig zusätzliche Bewerberinnen und Bewerber; ihre Zahl ist begrenzt, das Sprachniveau bleibt eine Hürde. Das Land ist zuständig."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Lernmaterialien für schulpflichtige Kinder bundesweit kostenfrei, vom Bund finanziert.",
+      "zitat": "Kostenfreie Lernmittel: Lernmaterialien werden schulpflichtigen Kindern bundesweit kostenfrei zur Verfügung gestellt und über Bundesmittel finanziert.",
+      "ursachen_ids": [
+        405
+      ],
+      "pruefsumme": "6063a0e30ebf1457"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Duales Lehramtsstudium, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt.",
+      "zitat": "Duales Lehramtsstudium: Ein duales System, das auch ausländische Abschlüsse und pädagogische Praxis anerkennt, wird eingeführt.",
+      "ursachen_ids": [
+        401
+      ],
+      "pruefsumme": "959bb0254e3233d5"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Bundesweiter Bildungskanon für das Vorschuljahr, der Deutsch als Schulsprache und bilinguale Betreuung fördert.",
+      "zitat": "Flächendeckende Sprachförderung: Ein bundesweiter Bildungskanon für das Vorschuljahr wird umgesetzt, der Deutsch als Schulsprache und bilinguale Betreuung fördert.",
+      "ursachen_ids": [
+        404
+      ],
+      "pruefsumme": "287aede848ec0bd1"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Bundesweit einheitliche Betreuungsschlüssel und Gruppengrößen in Krippen und Kitas.",
+      "zitat": "Bundesweit einheitliche Betreuungsschlüssel: Betreuungsschlüssel von 1:3 für Kinder unter drei Jahren und 1:7,5 ab drei Jahren sowie maximale Gruppengrößen von neun Kindern in Krippen und 15 Kindern in Kitas werden eingeführt",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        404
+      ],
+      "pruefsumme": "023905c0d77796e3"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Psychologie, Schulsozialarbeit, Schulgesundheit und Sonderpädagogik als fester Teil der Schulen.",
+      "zitat": "Fachkräfte in Schulen: Fachkräfte für Psychologie, Schulsozialarbeit, Schulgesundheit sowie Sonderpädagogik werden fester Bestandteil des Schulsystems.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        403,
+        405
+      ],
+      "pruefsumme": "a94a805b70723c46"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Lehrkräfte durch Verwaltungsfachkräfte und multiprofessionelle Teams entlasten.",
+      "zitat": "Entlastung durch Teams: Lehrkräfte werden durch Verwaltungsfachkräfte und multiprofessionelle Teams unterstützt, um sich auf ihre Kernaufgaben zu konzentrieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        401
+      ],
+      "pruefsumme": "8c1a5e59b2a1c45b"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Längeres gemeinsames Lernen: Dreigliedriges Schulsystem wird aufgehoben.",
+      "zitat": "Abschaffung der Dreigliedrigkeit: Die Trennung von Hauptschule, Realschule und Gymnasium wird zugunsten eines längeren gemeinsamen Lernens aufgehoben, um Chancengleichheit und sozialen Zusammenhalt zu stärken.",
+      "ursachen_ids": [
+        405
+      ],
+      "pruefsumme": "28dc025ff548bd25"
+    }
+  ]
+}

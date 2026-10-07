@@ -1,0 +1,24 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Energiesteuer auf das nach EU-Recht zulässige Minimum senken, langfristig auf EU-Ebene ganz abschaffen.", "ursachen_ids": [1502], "zitat": "Die Energiesteuer wird auf das unionsrechtlich zulässige Minimum reduziert und langfristig auf EU-Ebene ganz abgeschafft.", "seite": 53 },
+    { "beschreibung": "Dieselsteuer schrittweise an die Benzinsteuer angleichen.", "ursachen_ids": [1502], "zitat": "Die Dieselsteuer wird schrittweise an die Benzinsteuer angeglichen.", "seite": 62 },
+    { "beschreibung": "Ausbau der Ladeinfrastruktur für E-Fahrzeuge.", "ursachen_ids": [1505], "zitat": "Ladeinfrastruktur für E-Fahrzeuge: Der Ausbau erleichtert den Umstieg auf klimafreundliche Antriebe.", "seite": 70 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1501, "seiten": [44, 66, 67], "grund": "Wasserstoff nur für Industrie und Wärme, Diversifizierung nur von Lieferketten gegenüber China; nichts zu Ölabhängigkeit oder Kraftstoffen." },
+    { "ursache": 1503, "seiten": [48, 50, 53, 55], "grund": "'Wettbewerb' nur als Wettbewerbsfähigkeit der Wirtschaft; nichts zu Kartellrecht oder Preisaufsicht bei Kraftstoffen." },
+    { "ursache": 1504, "seiten": [54, 62, 68, 70], "grund": "'Förderung' in anderen Zusammenhängen; Investitionsprämie und Subventionen betreffen Unternehmen; keine Kaufprämie oder Social Leasing für E-Autos." }
+  ]
+}
+
+Protokoll
+Gelesen: S. 53-54 (Energiepreise), 60-63 (Klimaschutz, Subventionen), 65-71 (Infrastruktur, Energie, Mobilität), alle Fundstellen im Kapitel Wirtschaft/Klima/Infrastruktur; übrige Fundstellen (Bildung, Gesundheit, Integration usw.) sind Treffer in fremdem Zusammenhang und übersprungen.
+Nicht erfasst:
+- S. 62 Entfernungspauschale/Dienstwagen, S. 70 Dienstwagenprivileg abschaffen: nicht Ursache dieses Themas (keine Spritpreis-/Elektroauto-Preis-Ursache).
+- S. 60-61 ETS-2 mit Klimabonus-Rückzahlung (mind. 33 % der Einnahmen): allgemeine CO2-Bepreisung, kein Bezug zur Entlastung bei Kraftstoffen genannt; Klimabonus nur als Best Practice Österreich.
+- S. 71 Autobahnmaut: zusätzliche Belastung, keine Ursache.
+- S. 65 Ladeinfrastruktur als Priorität für Investitionen: gleiche Zusage wie S. 70, dort erfasst.
+- S. 69-70 ÖPNV, Tempolimit, Rad: andere Ursachen.
+Hinweis: Energiesteuer (S. 53) nennt keine Kraftstoffe ausdrücklich; Zuordnung zu 1502, da Energiesteuer auch Kraftstoffe umfasst. Ladeinfrastruktur S. 70 nennt kein Laden im Mehrparteienhaus.

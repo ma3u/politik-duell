@@ -34,7 +34,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (6979, 13, 16, null, 'Kommunalen und gemeinnützigen Glasfaserausbau fördern, Doppelausbau verhindern', '{1301}', null, 2, 2, null, 'Kommunale Netzgesellschaften haben in manchen Regionen Lücken geschlossen, die private Anbieter ließen; sie brauchen Kapital und Fachpersonal. Doppelausbau zu verhindern, kann Mittel für unversorgte Gebiete frei machen, schränkt aber Wettbewerb ein.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57', null, 'gemischt', '2026-09-30', false, true, null),
   (6980, 13, 16, null, 'Recht auf Internetzugang mit 100 Mbit/s', '{1301}', 6968, 1, 2, null, 'Ein höherer Anspruch verpflichtet die Anbieter, auch unversorgte Haushalte anzuschließen; bei deutlich höheren Bandbreiten wird das teuer und langwierig, die Kosten tragen Anbieter oder Staat.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57', null, 'gemischt', '2026-09-30', false, true, null),
   (6981, 13, 16, null, 'Ein gemeinsames Mobilfunk- und Glasfasernetz für alle Anbieter', '{1301,1302}', null, 1, 1, null, 'Ein gemeinsames Netz spart Doppelinvestitionen und kann Lücken schließen; laut Grundgesetz (Art. 87f) erbringen aber private Anbieter die Telekommunikation, ein Umbau der bestehenden Netze wäre rechtlich und finanziell sehr aufwendig.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57', null, 'offen', '2026-09-30', false, true, null),
-  (6982, 13, 17, null, 'Schnelles Internet als staatliche Aufgabe gewährleisten', '{1301}', 6969, 1, 3, null, 'Nennt das Ziel, aber keinen Weg, wie die Lücken geschlossen werden sollen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16', null, 'offen', '2026-09-30', false, true, null);
+  (6982, 13, 17, null, 'Schnelles Internet als staatliche Aufgabe gewährleisten', '{1301}', 6969, 1, 3, null, 'Nennt das Ziel, aber keinen Weg, wie die Lücken geschlossen werden sollen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16', null, 'offen', '2026-09-30', false, true, null),
+  (8545, 13, 18, null, 'Gezielte Förderung und Subventionen für den Internetausbau in ländlichen Regionen.', '{1301}', 6967, 2, 3, null, 'Schließt Lücken, die der Markt nicht schließt; laut WIK ist die heutige Förderung aber teuer, anfällig für Überförderung und verdrängt teils privaten Ausbau – es kommt auf die Ausgestaltung an.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=72', 'https://www.wik.org/fileadmin/user_upload/Unternehmen/Veroeffentlichungen/Kurzstudien/2026/WIK_Kurzstudie_Anreizwirkung_der_derzeitigen_Gigabitfoerderung_auf_den_eigenwirtschaftlichen_Glasfaserausbau_in_Deutschland.pdf', 'gemischt', '2026-10-07', false, true, null),
+  (8546, 13, 18, null, 'Glasfaserausbau beschleunigen: Hürden und Genehmigungsverfahren abbauen, Koordination von Bund, Ländern und Kommunen verbessern.', '{1301}', 6966, 1, 3, null, 'Verkürzt Genehmigungen für Masten und Leitungen und senkt Tiefbaukosten; wo sich der Ausbau wirtschaftlich nicht lohnt oder das Gelände schwierig ist, ändert das allein wenig.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=72', null, 'gemischt', '2026-10-07', false, true, null),
+  (8547, 13, 18, null, 'Anbieter sollen Netzinfrastruktur stärker gemeinsam nutzen.', '{1302}', null, 1, 3, null, 'Gemeinsam genutzte Masten senken Kosten und können Funklöcher schließen (Großbritannien: Shared Rural Network); dort wirkte Sharing aber mit Versorgungsauflagen und Staatsgeld zusammen, hier bleibt es unverbindlich und zielt auf Nachhaltigkeit.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=72', 'https://www.gov.uk/government/publications/shared-rural-network-srn-progress-update-september-2024/shared-rural-network-srn-progress-update-september-2024', 'gemischt', '2026-10-07', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -45,7 +48,8 @@ insert into public.pruef_einheiten (id, thema_id) values
   (6968, 13),
   (6969, 13),
   (6979, 13),
-  (6981, 13);
+  (6981, 13),
+  (8547, 13);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (13, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -54,6 +58,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (13, 14, null, 'massnahmen', null, '2026-09-30', true, null),
   (13, 15, null, 'massnahmen', null, '2026-09-30', true, null),
   (13, 16, null, 'massnahmen', null, '2026-09-30', true, null),
-  (13, 17, null, 'massnahmen', null, '2026-09-30', true, null);
+  (13, 17, null, 'massnahmen', null, '2026-09-30', true, null),
+  (13, 18, null, 'massnahmen', null, '2026-10-07', true, '{1301,1302}');
 
 commit;

@@ -1,0 +1,86 @@
+{
+  "blind_pruefsumme": "d7c948b7e8bda13aaf7258057b14d5d4adeb91e818c282e9e57fa15025dc1229",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Kostenfreie Lernmittel entlasten vor allem einkommensschwache Familien; Studien zu kostenlosen Schulbüchern finden im Durchschnitt kaum Effekte auf Leistungen. Schulen sind Ländersache, der Bund kann nur über Vereinbarung und Finanztransfers beitragen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.povertyactionlab.org/node/1436"
+      },
+      "ursachen": [
+        405
+      ]
+    },
+    {
+      "kennung": "M02",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein praxisintegriertes Lehramtsstudium mit Anrechnung ausländischer Abschlüsse kann zusätzliche Lehrkräfte gewinnen; zu dualen Lehramtsmodellen gibt es erst wenige Befunde. Lehrerbildung ist Ländersache, der Bund kann nur über Förderprogramme beitragen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        401
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein gemeinsamer Bildungsrahmen für das Vorschuljahr kann Sprachförderung vereinheitlichen; ohne Sprachstandsfeststellung und Förderpflicht erreicht er nicht sicher alle Kinder mit Bedarf, Sprachförderprogramme wirken unterschiedlich. Der Bund braucht die Länder.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        404
+      ]
+    },
+    {
+      "kennung": "M04",
+      "ursachen": []
+    },
+    {
+      "kennung": "M05",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Fachkräfte für Psychologie, Sozialarbeit und Sonderpädagogik unterstützen Kinder in schwierigen Lagen; Studien finden kleine positive Effekte von Schulberatung, sonst sind Wirkungen auf Leistungen kaum belegt. Schulpersonal ist Ländersache, der Bund kann nur mitfinanzieren.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://ideas.repec.org/p/pit/wpaper/396.html"
+      },
+      "ursachen": [
+        405
+      ]
+    },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Verwaltungs- und Unterstützungskräfte nehmen Lehrkräften Aufgaben ab und schaffen Zeit für Unterricht; Studien zeigen Entlastung, Lerneffekte aber nur bei gezieltem Einsatz. Schulpersonal ist Ländersache, der Bund kann nur über Programme mitfinanzieren.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://evidenceforlearning.org.au/toolkit/teaching-assistants"
+      },
+      "ursachen": [
+        401
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Längeres gemeinsames Lernen setzt an der frühen Trennung an; eine Studie zu deutschen Ländern findet Gewinne für Leistungsschwächere, die Forschung zur Schulstruktur ist insgesamt aber uneinheitlich. Für die Schulstruktur ist der Bund nicht zuständig (Grundgesetzänderung).",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.610091.de/publikationen/diskussionspapiere/2018_1775/better_together__heterogeneous_effects_of_tracking_on_student_achievement.html"
+      },
+      "ursachen": [
+        405
+      ]
+    }
+  ]
+}

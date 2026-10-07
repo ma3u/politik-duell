@@ -241,6 +241,50 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1301, 1302],
+      "massnahmen": [
+        {
+          "id": 8545,
+          "instrument": 6967,
+          "beschreibung": "Gezielte Förderung und Subventionen für den Internetausbau in ländlichen Regionen.",
+          "ursachen_ids": [1301],
+          "zitat": "Subventionen für ländliche Regionen: Digitale Fairness wird durch gezielte Förderung gewährleistet.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=72",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8546,
+          "instrument": 6966,
+          "beschreibung": "Glasfaserausbau beschleunigen: Hürden und Genehmigungsverfahren abbauen, Koordination von Bund, Ländern und Kommunen verbessern.",
+          "ursachen_ids": [1301],
+          "zitat": "Beschleunigter Ausbau von Glasfasernetzen: Bürokratische Hürden werden abgebaut und Genehmigungsverfahren vereinfacht. Eine bessere Koordination zwischen Bund, Ländern und Kommunen garantiert den zügigen und nachhaltigen Ausbau.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=72",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8547,
+          "beschreibung": "Anbieter sollen Netzinfrastruktur stärker gemeinsam nutzen.",
+          "ursachen_ids": [1302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gemeinsam genutzte Masten senken Kosten und können Funklöcher schließen (Großbritannien: Shared Rural Network); dort wirkte Sharing aber mit Versorgungsauflagen und Staatsgeld zusammen, hier bleibt es unverbindlich und zielt auf Nachhaltigkeit.",
+          "zitat": "Ressourceneffizienz durch Infrastruktur-Sharing: Anbietende nutzen stärker gemeinsame Infrastruktur, um Nachhaltigkeit zu fördern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=72",
+          "beleg_studie_url": "https://www.gov.uk/government/publications/shared-rural-network-srn-progress-update-september-2024/shared-rural-network-srn-progress-update-september-2024",
+          "evidenz": "gemischt",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

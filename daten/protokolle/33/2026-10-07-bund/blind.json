@@ -1,0 +1,161 @@
+{
+  "pruefsumme": "bfdfcdd8072a01991d8ad1ac1f31474869dfc767bd259a3b97048d123a7cc0b4",
+  "thema": {
+    "id": 33,
+    "name": "Mediennutzung von Kindern und Jugendlichen",
+    "ziel": "Kinder und Jugendliche nutzen Medien altersgerecht und selbstbestimmt, ohne dass Schlaf, Konzentration und ihr übriger Alltag darunter leiden."
+  },
+  "ursachen": [
+    {
+      "id": 3301,
+      "beschreibung": "Soziale Belohnungen wie Likes fördern wiederholtes Posten: In einem Experiment (2021, 176 Erwachsene) wurde bei mehr Likes häufiger gepostet; auch Jugendliche reagieren auf Likes",
+      "ebene": "bund"
+    },
+    {
+      "id": 3302,
+      "beschreibung": "Bildschirmnutzung zur Schlafenszeit hängt mit zu wenig Schlaf und Tagesmüdigkeit zusammen (Metaanalyse 2016, 20 Studien, 125.198 Kinder und Jugendliche)",
+      "ebene": "land"
+    },
+    {
+      "id": 3303,
+      "beschreibung": "Eltern fällt die Begleitung der Mediennutzung schwer: Für 57,6 % war die passende tägliche Nutzungsdauer zumindest manchmal eine Sorge (niederländische Befragung 2015, Kinder 1 bis 9 Jahre)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3301,
+        3302,
+        3303
+      ],
+      "text": "Zu 3301 gehören Pflichten und Altersgrenzen für Plattformen und soziale Medien, Gestaltung von Belohnungs- und Empfehlungssystemen und Jugendmedienschutz, zu 3302 Regeln zur Nutzungszeit und Schlaf (auch Handyregeln in Schulen mit Bezug zu Nutzungsdauer), zu 3303 Medienbildung, Beratung und Unterstützung für Eltern."
+    },
+    {
+      "nr": 2,
+      "text": "Cybermobbing gehört zu Mobbing in der Schule, Hass im Netz zu Hass und Anfeindungen im Internet, extremistische Inhalte zu Radikalisierung und Extremismus, Suchtbehandlung zu Sucht und Glücksspiel. Digitale Ausstattung der Schulen und Breitbandausbau sind keine Maßnahmen dieses Themas."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8387,
+      "name": "Verbindliches Handyverbot im Schulalltag bis zur Mittelstufe (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Dafür: In England, Florida und Indien stiegen die Noten leicht bis moderat, Ablenkung sank. Dagegen: In Florida, Schweden und England fanden Studien keine Effekte auf Noten oder Wohlbefinden; Abendnutzung bleibt unberührt.",
+      "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/"
+    },
+    {
+      "id": 8388,
+      "name": "Handyverbot oder bildschirmfreie Klassen in der Grundschule (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Weniger Ablenkung möglich, doch Effekte zeigten sich vor allem an weiterführenden Schulen mit hohem Smartphone-Besitz; in der Grundschule ist die Nutzung ohnehin geringer. Studien zu Handyregeln uneinheitlich.",
+      "beleg_studie_url": "https://world-education-blog.org/2025/12/15/are-phone-bans-working/"
+    },
+    {
+      "id": 8389,
+      "name": "Medienbildung in Schule und außerschulischen Angeboten stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schulische Programme senkten problematische Nutzung deutlich, Bildschirmzeit kaum (Metaanalyse, 34 Studien, Verzerrung möglich). Allgemeine Medienbildung setzt nur indirekt an der Begleitung durch Eltern an.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    },
+    {
+      "id": 8390,
+      "name": "Schulische Prävention von Mediensucht und Mediengefahren (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Gezielte schulische Prävention senkte problematische Nutzung deutlich (d = 1,47), Bildschirmzeit kaum (d = 0,15); Publikationsverzerrung möglich. Setzt bei den Kindern an, nicht direkt bei der Begleitung durch Eltern.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    },
+    {
+      "id": 8391,
+      "name": "Fachkräfte in Medienbildung qualifizieren, Zentren und Teams ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Geschulte Fachkräfte und Zentren können Medienbildung tragen; die Wirkung auf die Mediennutzung der Kinder läuft nur über den Unterricht und ist kaum untersucht."
+    },
+    {
+      "id": 8392,
+      "name": "Eltern durch Beratung und Bildungsangebote in der Medienerziehung unterstützen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt direkt bei den Eltern an; Programme mit Elternbeteiligung senkten problematische Nutzung stärker. Belastbare Daten zu reinen Elternangeboten fehlen, und es erreichen vor allem interessierte Eltern.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    },
+    {
+      "id": 8393,
+      "name": "Eltern mit Informationen zur Mediennutzung versorgen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Leicht und schnell umsetzbar; Information erreicht aber nur, wer sie nutzt, und die Wirkung auf die Begleitung durch Eltern ist kaum untersucht."
+    },
+    {
+      "id": 8394,
+      "name": "Digital Services Act umsetzen mit Schwerpunkt Jugendschutz (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Der DSA verpflichtet Plattformen zu Risikoprüfungen auch zu Minderjährigen; die Wirkung auf Likes- und Belohnungsdesign ist bisher kaum untersucht. Umsetzung durch den Bund ist möglich."
+    },
+    {
+      "id": 8395,
+      "name": "Medienkompetenz in Schulen und Lehrplänen stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Schulische Medienbildung wirkt gegen problematische Nutzung, aber kaum auf die Bildschirmzeit; Schulen und Lehrpläne sind Ländersache, der Bund kann nur Anreize setzen.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40549948"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Aufsicht über digitale Dienste einschließlich des digitalen Jugendschutzes wird bei der Bundesnetzagentur gebündelt.",
+      "zitat": "Dies umfasst nicht nur die zentrale Steuerung der Implementierung des Data Acts und des Data Governance Act, sondern auch die zentrale Aufsicht im Rahmen des Gesetzes über Digitale Dienste (DSA) und der KI-VO, einschließlich des digitalen Jugendschutzes.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "63ab6dc23ee4f340"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Schulungen für Eltern zu Chancen und Risiken der Digitalisierung.",
+      "zitat": "Elternbildung: Schulungen für Eltern fördern das Verständnis für Chancen und Risiken der Digitalisierung.",
+      "ursachen_ids": [
+        3303
+      ],
+      "pruefsumme": "df5dc95fbfd2cf66"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Manipulative Gestaltung digitaler Angebote (Dark Patterns) und algorithmische Beeinflussung werden gesetzlich geregelt.",
+      "zitat": "Praktiken wie Dark Patterns und algorithmische Beeinflussung werden gesetzlich klar geregelt.",
+      "ursachen_ids": [
+        3301
+      ],
+      "pruefsumme": "5c030d97cbf7166a"
+    }
+  ]
+}
