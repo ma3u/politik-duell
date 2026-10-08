@@ -222,6 +222,35 @@
       "umsetzbarkeit": 3,
       "begruendung": "Leichtere Anerkennung ausländischer Lehrkräfte (etwa mit nur einem Fach) erschließt kurzfristig zusätzliche Bewerberinnen und Bewerber; ihre Zahl ist begrenzt, das Sprachniveau bleibt eine Hürde. Das Land ist zuständig.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 8693,
+      "name": "Kostenfreie schulische Förder- und Nachhilfeangebote flächendeckend (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Nachhilfe in Kleingruppen verbessert Leistungen laut Metaanalysen deutlich, vor allem in der Schule und durch geschultes Personal; Umfang und Form sind offen, Personal und dauerhafte Kosten sind die Hürde.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.nber.org/papers/w27476",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8694,
+      "name": "Kitabesuch ab drei Jahren fördern, Platzausbau vorrangig in Quartieren mit hohem Bedarf (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kitabesuch ab drei verbessert die Schulfähigkeit benachteiligter und zugewanderter Kinder deutlich; wie der Besuch gefördert wird, bleibt offen. Der Ausbau braucht Fachkräfte, die knapp sind.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://iab.de/en/publications/publication/?id=8487991",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8695,
+      "name": "Erhebung sprachlicher und mathematischer Defizite vor der Einschulung mit gezielter Förderung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Frühe Erhebung mit gezielter Förderung setzt an Sprach- und Rechenrückständen vor Schulbeginn an; Studien zu vorschulischen Förderprogrammen zeigen unterschiedlich starke Effekte. Braucht Fachkräfte für die Förderung.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
     }
   ],
   "abdeckung": [
@@ -2795,6 +2824,215 @@
           "beleg_studie_url": "https://ideas.repec.org/p/pit/wpaper/396.html",
           "evidenz": "gemischt",
           "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [401, 402, 403, 404, 405],
+      "massnahmen": [
+        {
+          "id": 8696,
+          "instrument": 6075,
+          "beschreibung": "Lehrkräfte langfristiger gewinnen, Ausbildungs- und Qualifizierungswege ausbauen und den Quereinstieg bedarfsorientiert gestalten und pädagogisch begleiten.",
+          "ursachen_ids": [401],
+          "zitat": "Wir gewinnen deshalb Lehrkräfte langfristiger und gezielter und bauen Ausbildungs- und Qualifizierungswege aus. Wir strukturieren den Quereinstieg bedarfsorientiert und begleiten ihn pädagogisch",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=46",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8697,
+          "instrument": 6076,
+          "beschreibung": "Sanierung und Modernisierung der Schulen beschleunigen und verlässlich in Gebäude, Lernräume und Ausstattung investieren.",
+          "ursachen_ids": [402],
+          "zitat": "Wir beschleunigen die Sanierung und Modernisierung der Berliner Schulen. Außerdem sorgen wir für verlässliche Investitionen in Gebäude, Lernräume und zeitgemäße Ausstattung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=46",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8698,
+          "instrument": 6069,
+          "beschreibung": "Verbindliche Sprachtests mit vier Jahren, verknüpft mit gezielter Förderung durch qualifizierte Sprachlehrkräfte.",
+          "ursachen_ids": [404],
+          "zitat": "Wir führen Sprachtests mit vier Jahren verbindlich durch und verknüpfen sie mit gezielter Förderung durch qualifizierte Sprachlehrkräfte.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=45",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8699,
+          "instrument": 8694,
+          "beschreibung": "Kitabesuch ab dem dritten Lebensjahr gezielt fördern; Kitas in Quartieren mit hohem Bedarf beim Platzausbau bevorzugen.",
+          "ursachen_ids": [404],
+          "zitat": "Wir fördern gezielt den Kitabesuch ab dem dritten Lebensjahr, da frühkindliche Bildung nur ihre Wirkung entfaltet, wenn alle Kinder tatsächlich Zugang haben. Kitas in Quartieren mit hohem Bedarf erhalten Vorrang beim Platzausbau.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=45",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8700,
+          "instrument": 6071,
+          "beschreibung": "Mehrjähriges Turnaround-Programm für die am stärksten belasteten Schulen mit zusätzlichem Personal, stärkeren Schulleitungen und Ergebnisverantwortung.",
+          "ursachen_ids": [405],
+          "zitat": "Wir setzen für die am stärksten belasteten Schulen ein mehrjähriges Turnaround- Programm an. Das Programm umfasst zusätzliches Personal, stärkere Schulleitungen, erfahrene externe Schulentwickler*innen und klare Entwicklungsziele mit Ergebnisverantwortung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=46",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [401, 402, 403, 404, 405],
+      "massnahmen": [
+        {
+          "id": 8701,
+          "beschreibung": "Verbindlicher Lehrer-Schüler-Schlüssel mit klaren personellen Standards für Schulen",
+          "ursachen_ids": [401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kleinere Klassen können Leistungen verbessern, Studien sind aber uneinheitlich. Ein verbindlicher Schlüssel schafft keine Lehrkräfte, sondern erhöht bei bestehendem Mangel den Bedarf; das Personal fehlt absehbar.",
+          "zitat": "Einführung eines verbindlichen Lehrer-Schüler-Schlüssels Kleinere Lerngruppen, bessere Förderung und verlässliche Planbarkeit für Schulen durch klare personelle Standards.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=12",
+          "beleg_studie_url": "https://wol.iza.org/articles/class-size-does-it-matter-for-student-achievement/lang/de",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8702,
+          "instrument": 6072,
+          "beschreibung": "Lehrkräfte von nichtpädagogischen Aufgaben entlasten durch Digitalisierung und zusätzliche Verwaltungs- und Unterstützungsstellen",
+          "ursachen_ids": [401],
+          "zitat": "Entlastung der Lehrkräfte von nichtpädagogischen Aufgaben durch Digitalisierung und zusätzliche Verwaltungs- und Unterstützungsstellen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=12",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8703,
+          "instrument": 6077,
+          "beschreibung": "Verbindliche, kontinuierliche Sprachförderung in der Kita durch zusätzliche Fachkräfte",
+          "ursachen_ids": [404],
+          "zitat": "Sprachförderung in der Kita ausbauen Verbindliches und kontinuierliches Angebot von Sprachförderung, gezielte Unterstützung von Kinder beim Erwerb mehrsprachiger Kompetenzen durch zusätzliche Fachkräfte.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=10",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8704,
+          "instrument": 8695,
+          "beschreibung": "Flächendeckende Erhebung und gezielte Förderung von sprachlichen und mathematischen Defiziten, möglichst vor der Einschulung",
+          "ursachen_ids": [404, 403],
+          "zitat": "Erhebung und gezielte Förderung bei Defiziten in sprachlichen und mathematischen Bereichen, um diese möglichst vor der Einschulung auszugleichen, damit ein erfolgreicher Schulstart gelingt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=11",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8705,
+          "instrument": 6079,
+          "beschreibung": "Dreigliedriges Schulsystem langfristig abschaffen zugunsten einer inklusiven Schule für alle",
+          "ursachen_ids": [405],
+          "zitat": "Langfristige Abschaffung des dreigliedrigen Schulsystems Verbesserte Bildungschancen unabhängig von Herkunft oder Unterstützungsbedarf durch eine inklusive Schule für alle zur Vermeidung früher Selektion.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=11",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8706,
+          "instrument": 6084,
+          "beschreibung": "Schulhefte und Schulbücher werden von der Schule gestellt, damit Familien keine Zusatzkosten tragen",
+          "ursachen_ids": [405],
+          "zitat": "Schulhefte und Schulbücher werden von der Schule gestellt Zentrale Bereitstellung von Lehrmaterialien, sodass Familien keine zusätzlichen Kosten tragen müssen und alle Kinder Zugang zu denselben Lernmitteln haben.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=9",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [401, 402, 403, 404, 405],
+      "massnahmen": [
+        {
+          "id": 8707,
+          "beschreibung": "Beruf der Lehrkraft attraktiver machen: Teamzeiten im Stundenmodell, Entlastung durch Verwaltungs- und IT-Stellen, Abschaffung dauerhafter Mehrarbeit, verbindlicher Lehrer-Schüler-Schlüssel",
+          "ursachen_ids": [401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Entlastung und praxisnähere Ausbildung können den Beruf attraktiver machen und Abwanderung bremsen; weniger Mehrarbeit und ein fester Schlüssel erhöhen aber zunächst den Bedarf an Lehrkräften.",
+          "zitat": "Wir verbessern die Attraktivität des Berufs grundlegend und schaffen Bedingungen, unter denen gute Bildung entstehen kann. ● Lehrkräftebildung stärker auf Didaktik, Pädagogik und Praxisphasen ausrichten",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=22",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8708,
+          "instrument": 6069,
+          "beschreibung": "Verbindliche Sprachstandserhebungen vor der Einschulung einführen und frühe Förderung sicherstellen",
+          "ursachen_ids": [404],
+          "zitat": "Verbindliche Sprachstandserhebungen vor der Einschulung einführen und frühzeitige Förderung sicherstellen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=19",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8709,
+          "instrument": 6077,
+          "beschreibung": "Sprachförderung und Sprach-Kitas dauerhaft absichern, Kita stärker auf Schulfähigkeit ausrichten",
+          "ursachen_ids": [404],
+          "zitat": "Sprachförderung und Sprach-Kitas dauerhaft absichern",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8710,
+          "instrument": 6071,
+          "beschreibung": "Schulen in herausfordernden Lagen gezielt besser ausstatten",
+          "ursachen_ids": [405],
+          "zitat": "Schulen in herausfordernden Lagen gezielt besser ausstatten",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=19",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8711,
+          "instrument": 8693,
+          "beschreibung": "Kostenfreie schulische Förder- und Nachhilfeangebote flächendeckend einrichten",
+          "ursachen_ids": [403],
+          "zitat": "Kostenfreie, schulische Förder- und Nachhilfeangebote flächendeckend etablieren",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=19",
+          "stand": "2026-10-08",
           "geprueft": false,
           "ki_entwurf": true
         }

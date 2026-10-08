@@ -1,0 +1,25 @@
+{
+  "blind_pruefsumme": "6a3214f6a086fc4dce3e4f9dfabba8e4f03b31163020606ea94ad6e247ec9862",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Landesprogramme für Neubau und Sicherung von Sozialwohnungen, Umfang nicht beziffert (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Neue geförderte Wohnungen und gesicherte Bindungen wirken dem schrumpfenden Bestand direkt entgegen; der Umfang ist nicht beziffert, und bisher reichte die Förderung nicht, um auslaufende Bindungen auszugleichen.", "evidenz": "belegt", "beleg_studie_url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/soziale-situation-in-deutschland/341826/sozialmietwohnungen/" },
+    { "kennung": "I2", "name": "Längere Bindungsfristen für neu geförderte Sozialwohnungen, ohne feste Dauer (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Längere Bindungen verhindern, dass neue Sozialwohnungen früh aus der Bindung fallen; die Dauer ist offen, viele Länder binden schon 25 bis 35 Jahre, die Wirkung zeigt sich erst in Jahrzehnten, und Bauherren nehmen Förderung womöglich seltener an.", "evidenz": "gemischt", "beleg_studie_url": "https://www.evangelisch.de/inhalte/243851/30-05-2025/kaum-neue-sozialwohnungen-immer-weniger-sozialwohnungen-deutschland" },
+    { "kennung": "I3", "name": "Verbindliche Sozialquote bei großen Neubauprojekten beibehalten (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Sichert weiterhin einen Anteil Sozialwohnungen in neuen Quartieren ohne volle Landesförderung; als Fortführung ändert sie nichts daran, dass mehr Wohnungen aus der Bindung fallen, und kleinere Bauvorhaben sind nicht erfasst.", "evidenz": "gemischt" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I1", "ursachen": [206] },
+    { "kennung": "M02", "instrument": "I2", "ursachen": [206] },
+    { "kennung": "M03", "instrument": 6649, "ursachen": [206] },
+    { "kennung": "M04", "instrument": 6649, "ursachen": [206] },
+    { "kennung": "M05", "instrument": "I3", "ursachen": [206] },
+    { "kennung": "M06", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Mietet schnell Wohnungen am Markt für Haushalte mit geringem Einkommen an, wie Sozialvermietungsagenturen in Belgien; als Modellprojekt klein, abhängig von Vermietern, und die Mietgarantie kostet Landesmittel dauerhaft.", "evidenz": "gemischt", "beleg_studie_url": "https://housingeurope.eu/?p=2387" }, "ursachen": [206] },
+    { "kennung": "M07", "instrument": "I1", "ursachen": [206] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen (206) bestätigt. Offene Ursache bei M06 (206) bestätigt: Die Miet-Agentur schafft de facto belegungsgebundenen Wohnraum aus dem Bestand und setzt damit am Mangel an Sozialwohnungen an (ähnlich dem Ankauf von Belegungsrechten). Keine Maßnahme ohne Ursache.
+- M01 und M07 nicht 6646 (ausbauen, Bundesmittel voll kofinanzieren) zugeordnet, weil weder Ausbau noch Kofinanzierung genannt sind, aber auch nicht 6645 (fortführen ohne Ausbau), weil Sicherung bzw. dauerhafte Bindung hinzukommen; daher I1 mit gleichen Werten wie 6646. M07 enthält zusätzlich die höhere Fehlbelegungsabgabe und eine WBS-Kampagne; zugeordnet nach dem Hauptinhalt (Landesprogramme).
+- M02 nicht 6647 (unbefristet), weil „langfristig“ keine feste Dauer nennt; daher schwächer bewertet (I2). Schwierig: Abgrenzung zu 6647 mit Wirksamkeit 2.
+- M05 nicht 6648 (höhere Quote), weil nur die bestehende Quote beibehalten wird; analog zu 6645 (Fortführung) mit Wirksamkeit 1.
+- M03 und M04 auf 6649 (Fehlbelegungsabgabe); die Zweckbindung der Einnahmen in M04 ist in der Begründung von 6649 schon berücksichtigt.
+- Mehrere Quellen (IWU-Stellungnahme zur Fehlbelegungsabgabe, Hessische Drucksache, Münchner SoBoN-Unterlagen, FEANTSA-Studie) waren als PDF nicht lesbar und sind daher nicht als Beleg angegeben.

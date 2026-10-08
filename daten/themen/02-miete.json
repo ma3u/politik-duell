@@ -1228,6 +1228,112 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [206],
+      "massnahmen": [
+        {
+          "id": 8725,
+          "instrument": 6649,
+          "beschreibung": "Abgabe für Sozialwohnungen mit deutlich überschrittener Einkommensgrenze; Einnahmen zweckgebunden in den Neubau weiterer Sozialwohnungen",
+          "ursachen_ids": [206],
+          "zitat": "Wir führen eine Fehlbelegungsabgabe für Sozialwohnungen ein: Wer deutlich über der Einkommensgrenze liegt, zahlt einen gestaffelten Zuschlag. [...] Die Einnahmen fließen zweckgebunden in den Neubau weiterer Sozialwohnungen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=29",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8726,
+          "instrument": 8724,
+          "beschreibung": "Verbindliche Sozialquoten bei großen Neubauprojekten beibehalten",
+          "ursachen_ids": [206],
+          "zitat": "Wir halten an verbindlichen Sozialquoten bei großen Neubauprojekten fest, damit Berlin eine Stadt für alle bleibt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=29",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8727,
+          "beschreibung": "Soziale Miet-Agentur mietet Wohnungen am freien Markt an und gibt sie an Menschen mit geringem Einkommen weiter, mit Mietgarantie des Landes",
+          "ursachen_ids": [206],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mietet schnell Wohnungen am Markt für Haushalte mit geringem Einkommen an, wie Sozialvermietungsagenturen in Belgien; als Modellprojekt klein, abhängig von Vermietern, und die Mietgarantie kostet Landesmittel dauerhaft.",
+          "zitat": "Wir bekämpfen den Mangel an Sozialwohnungen sofort mit einem innovativen Modellprojekt. Wir gründen eine soziale Miet-Agentur zusammen mit erfahrenen Vereinen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=29",
+          "beleg_studie_url": "https://housingeurope.eu/?p=2387",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [206],
+      "massnahmen": [
+        {
+          "id": 8728,
+          "instrument": 8722,
+          "beschreibung": "Landesprogramme zur Sicherung und zum Neubau von Sozialwohnungen; höhere Fehlbelegungsabgabe",
+          "ursachen_ids": [206],
+          "zitat": "Landesprogramme zur Sicherung und zum Neubau von Sozialwohnungen, Erhöhung der Fehlbelegungsabgabe auf 25 Prozent, Aufklärungskampagne zum Wohnberechtigungsschein (WBS).",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=61",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8729,
+          "instrument": 8723,
+          "beschreibung": "Neu geschaffene Sozialwohnungen langfristig an Mietpreisgrenzen binden",
+          "ursachen_ids": [206],
+          "zitat": "Langfristige Bindung neu gescha ff ener Sozialwohnungen an Mietpreisgrenzen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=61",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [206],
+      "massnahmen": [
+        {
+          "id": 8730,
+          "instrument": 8722,
+          "beschreibung": "Landesprogramme für den Neubau von Sozialwohnungen und ihre dauerhafte Bindung.",
+          "ursachen_ids": [206],
+          "zitat": "Landesprogramme für Neubau und dauerhafte Bindung von Sozialwohnungen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8731,
+          "instrument": 6649,
+          "beschreibung": "Fehlbelegungsabgabe erhöhen, damit Sozialwohnungen zielgenauer genutzt werden.",
+          "ursachen_ids": [206],
+          "zitat": "Erhöhung der Fehlbelegungsabgabe auf 25 % zur besseren Zielgenauigkeit",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ],
   "instrumente": [
@@ -1364,6 +1470,35 @@
       "umsetzbarkeit": 2,
       "begruendung": "Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.",
       "evidenz": "gemischt"
+    },
+    {
+      "id": 8722,
+      "name": "Landesprogramme für Neubau und Sicherung von Sozialwohnungen, Umfang nicht beziffert (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Neue geförderte Wohnungen und gesicherte Bindungen wirken dem schrumpfenden Bestand direkt entgegen; der Umfang ist nicht beziffert, und bisher reichte die Förderung nicht, um auslaufende Bindungen auszugleichen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/soziale-situation-in-deutschland/341826/sozialmietwohnungen/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8723,
+      "name": "Längere Bindungsfristen für neu geförderte Sozialwohnungen, ohne feste Dauer (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Längere Bindungen verhindern, dass neue Sozialwohnungen früh aus der Bindung fallen; die Dauer ist offen, viele Länder binden schon 25 bis 35 Jahre, die Wirkung zeigt sich erst in Jahrzehnten, und Bauherren nehmen Förderung womöglich seltener an.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.evangelisch.de/inhalte/243851/30-05-2025/kaum-neue-sozialwohnungen-immer-weniger-sozialwohnungen-deutschland",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8724,
+      "name": "Verbindliche Sozialquote bei großen Neubauprojekten beibehalten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert weiterhin einen Anteil Sozialwohnungen in neuen Quartieren ohne volle Landesförderung; als Fortführung ändert sie nichts daran, dass mehr Wohnungen aus der Bindung fallen, und kleinere Bauvorhaben sind nicht erfasst.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
     }
   ]
 }

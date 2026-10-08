@@ -1,0 +1,582 @@
+{
+  "pruefsumme": "e1138cc391c222de9131ad91dab332d3823d10e90419b577cbab7c0da18db6e7",
+  "thema": {
+    "id": 27,
+    "name": "Arbeitsbelastung im Gesundheitswesen",
+    "ziel": "Beschäftigte im Gesundheitswesen können ihre Arbeit dauerhaft gesund, mit ausreichender Erholung, verlässlichen Arbeitszeiten und angemessener Entlohnung ausüben."
+  },
+  "ursachen": [
+    {
+      "id": 2701,
+      "beschreibung": "Unzureichende Personalbesetzung und zu wenig Zeit je Patient hängen mit moralischem Stress zusammen (Befragung von 976 Pflegenden in der ambulanten Pflege, 2022)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2702,
+      "beschreibung": "Wer selten oder nie Pausen machen kann, ist stärker belastet; auch ein Schichtwechsel gegen den eigenen Willen belastet (Befragung von 873 Beschäftigten, 2021)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2703,
+      "beschreibung": "Dokumentation bindet viel Zeit: In einer deutschen Pflegestudie (2024/25) nahm sie anfangs rund 54 Minuten je Frühdienst in Anspruch",
+      "ebene": "bund"
+    },
+    {
+      "id": 2704,
+      "beschreibung": "Pflegende erbringen mehr Aufwand, als sie Belohnung erfahren (ERI-Ratio 1,7; Befragung 2021 von 2.689 Pflegenden); 38,3 % hatten regelmäßig Ausstiegsgedanken",
+      "ebene": "bund"
+    },
+    {
+      "id": 2705,
+      "beschreibung": "Hohe emotionale Anforderungen, wenig Einfluss auf die Arbeit und fehlende soziale Unterstützung gehen mit stärkerem moralischem Stress einher (Befragung 2022, 976 Pflegende)",
+      "ebene": "land"
+    },
+    {
+      "id": 2706,
+      "beschreibung": "Fehlender Zugang zu Dolmetschenden bei Sprachbarrieren geht mit höherer Arbeitsbelastung einher (Befragung 2018 von 800 Beschäftigten in 22 Kliniken)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2701,
+        2702,
+        2703,
+        2704,
+        2705,
+        2706
+      ],
+      "text": "Zu 2701 Personalbemessung und -ausstattung, zu 2702 Arbeitszeit, Dienstplan, Pausen und Erholung, zu 2703 Dokumentations- und Nachweispflichten, zu 2704 Bezahlung, Tarifbindung und Anerkennung, zu 2705 Mitsprache, Führung und Unterstützung am Arbeitsplatz, zu 2706 Sprachmittlung und Verständigung. Es zählen Maßnahmen für Beschäftigte im Gesundheitswesen, nicht für Patienten."
+    },
+    {
+      "nr": 2,
+      "text": "Zahl fehlender Pflegekräfte, Eigenanteile und Angehörige gehören zu Pflege, Wartezeiten und Praxen zu Arzttermine. Ausbildung und Anwerbung zusätzlicher Fachkräfte nur dann, wenn das Zitat Entlastung der Beschäftigten oder Personalbemessung nennt, sonst als ursachen_offen [2701]."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8004,
+      "name": "Vergütung und Dienstzeiten im praktischen Jahr (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Verlässliche Vergütung und Dienstzeiten verbessern die Bedingungen angehender Ärztinnen und Ärzte. Umfang, Finanzierung und tatsächliche Wirkung auf die Belastung hängen von der konkreten Regelung ab."
+    },
+    {
+      "id": 8005,
+      "name": "Digitale Zugangsrechte für betriebliche Mitbestimmung (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Digitale Zugänge können Beteiligung erleichtern, ändern aber weder die Reichweite der Mitbestimmung noch unmittelbar Personal, Arbeitszeit oder Unterstützung."
+    },
+    {
+      "id": 8006,
+      "name": "Arbeitsbedingungen und Mitsprache im Gesundheitswesen verbessern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verlässlichere Arbeitszeiten und mehr Beteiligung setzen an Erholung und Einflussmöglichkeiten an. Die Zusage bleibt breit und lässt Umfang, Umsetzung und Finanzierung offen.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052"
+    },
+    {
+      "id": 8007,
+      "name": "Berufsbezogene Sprachförderung für Gesundheitsbeschäftigte (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Berufsbezogene Sprachförderung kann Verständigungsprobleme im Arbeitsalltag mindern. Für ihre direkte Wirkung auf die Belastung von Beschäftigten und die nötigen Kapazitäten ist die Evidenz begrenzt."
+    },
+    {
+      "id": 8008,
+      "name": "Mitentscheidung bei Investitions- und Standortfragen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Verbindliche Beteiligung kann den Einfluss auf Arbeitsbedingungen und Veränderungsprozesse erhöhen. Ohne nähere Zuständigkeiten und Durchsetzungsrechte bleibt die erwartbare Wirkung unsicher."
+    },
+    {
+      "id": 8009,
+      "name": "Pflegepersonal gewinnen und zurückgewinnen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Zusätzliche Pflegekräfte können knappe Besetzung und Zeitdruck mindern. Anwerbung und Rückkehr sind jedoch nicht automatisch zusätzliche verfügbare Vollzeitkräfte und erfordern Zeit sowie geeignete Arbeitsbedingungen.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279"
+    },
+    {
+      "id": 8010,
+      "name": "Gesetzliche Personalbemessung im Gesundheitswesen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Höhere und bedarfsgerechte Besetzung kann Arbeitslast senken; Studien zu Personalstärke und Ergebnissen stützen den Ansatz, zeigen aber auch Kosten-, Mess- und Umsetzungsprobleme sowie weniger klare Befunde für andere Berufsgruppen.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/35780608"
+    },
+    {
+      "id": 8011,
+      "name": "Gesundheitsfördernde Maßnahmen für Beschäftigte (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Gesundheitsförderung kann Beschäftigte unterstützen, verändert aber nicht zwingend hohe emotionale Anforderungen, geringe Mitsprache oder fehlende soziale Unterstützung am Arbeitsplatz.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/37893584"
+    },
+    {
+      "id": 8012,
+      "name": "Tariftreue bei Bundesaufträgen und Subventionen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Tarifbindung kann Entlohnung und Arbeitsbedingungen bei erfassten Auftragnehmenden verbessern. Die Reichweite hängt von Vergabeumfang, Kontrollen und der tatsächlichen Tarifabdeckung ab."
+    },
+    {
+      "id": 8013,
+      "name": "Betriebliche Interessenvertretung unterstützen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Unterstützung und Schutz von Interessenvertretungen können Mitsprache und soziale Unterstützung fördern. Die Wirkungsforschung zur konkreten Entlastung im Gesundheitswesen ist begrenzt; private Arbeitsrechtsregeln liegen zudem teilweise beim Bund."
+    },
+    {
+      "id": 8014,
+      "name": "Karriere- und Entwicklungspfade in der Pflege (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Durchlässige Laufbahnen und neue Rollen können berufliche Anerkennung und Entwicklungsperspektiven verbessern. Sie brauchen Ausbildungsplätze, klare Befugnisse und passende Finanzierung und ersetzen keine ausreichende Besetzung.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279"
+    },
+    {
+      "id": 8015,
+      "name": "Dokumentations- und Nachweispflichten vereinfachen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Weniger unnötige Dokumentation kann unmittelbar Arbeitszeit freisetzen. Forschung misst die Belastung uneinheitlich und untersucht die Wirkung konkreter Vereinfachungen bislang nur begrenzt; notwendige Qualitäts- und Sicherheitsnachweise bleiben erforderlich.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/33434273"
+    },
+    {
+      "id": 8016,
+      "name": "Betriebsratsgründungen und Wahlen erleichtern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Schutz von Initiierenden und leichtere Wahlen können betriebliche Mitsprache ermöglichen. Ob daraus spürbar mehr Einfluss auf Arbeitsbelastung folgt, hängt von tatsächlicher Gründung und Durchsetzung ab."
+    },
+    {
+      "id": 8017,
+      "name": "Beschäftigte in Krankenhausgremien beteiligen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Mitwirkung in Planungs- und Leitungsgremien erhöht die Möglichkeit, Arbeitsbedingungen zu beeinflussen. Die Wirkung ist unklar, solange Aufgaben, Stimmrechte und Umsetzung der Beschlüsse nicht feststehen."
+    },
+    {
+      "id": 8018,
+      "name": "Berufliche Selbstvertretung der Pflege durch eine Pflegekammer (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Eine Kammer kann berufliche Interessen und Selbstverwaltung stärken, wirkt aber nur mittelbar auf tägliche Arbeitslast, Dienstpläne oder Unterstützung am Arbeitsplatz."
+    },
+    {
+      "id": 8019,
+      "name": "Tarifbindung durch tarifrechtliche Erleichterungen fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Erleichterte Tarifbindung und Allgemeinverbindlichkeit können die Reichweite ausgehandelter Entlohnung verbessern. Der Effekt auf die Belastung hängt von den vereinbarten Inhalten und der tatsächlichen Abdeckung ab."
+    },
+    {
+      "id": 8020,
+      "name": "Professionelle Sprachmittlung im Gesundheitswesen finanzieren (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Reviews zeigen bessere Kommunikation und Versorgungsqualität mit professioneller Sprachmittlung; eine direkte Entlastung der Beschäftigten ist weniger gut untersucht. Verfügbarkeit und Finanzierung bestimmen die Wirkung.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/17362215"
+    },
+    {
+      "id": 8021,
+      "name": "Behinderung betrieblicher Mitbestimmung sanktionieren (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Wirksame Sanktionen können Mitsprache schützen und abschrecken. Die Schaffung neuer Straftatbestände oder Sanktionen liegt nicht ohne Weiteres in Landeshand; die Maßnahme braucht bundesrechtliche Schritte."
+    },
+    {
+      "id": 8022,
+      "name": "Arbeitszeit verkürzen und Personalausgleich sicherstellen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Kürzere Arbeitszeiten können Erholung verbessern, wenn die Arbeitsmenge nicht auf weniger Zeit verdichtet wird. Voller Lohnausgleich und zusätzlicher Personalausgleich sind kosten- und personalintensiv.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987"
+    },
+    {
+      "id": 8023,
+      "name": "Springerpools und planbare Einsätze im Gesundheitswesen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Pools können kurzfristige Ausfälle auffangen und planbare Einsatzzeiten fördern. Modellierungen zeigen, dass flexible Kräfte eine ausreichende Grundbesetzung nicht ersetzen und bei knapper Verfügbarkeit wenig verlässlich sind.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/33677251"
+    },
+    {
+      "id": 8024,
+      "name": "Schutz vor Gewalt und Belästigung im Gesundheitswesen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Schutzmaßnahmen können emotionale Belastungen und Gefährdungen mindern. Reviews betonen, dass Schulungen Teil eines umfassenden Schutzkonzepts mit Unterstützung und passenden Bedingungen sein müssen.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/33802868"
+    },
+    {
+      "id": 8025,
+      "name": "Entlastungstarifverträge refinanzieren und verbreitern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Entlastungstarifverträge können Arbeitsbedingungen verbindlicher verbessern. Reichweite, Finanzierung und Durchsetzung sind offen; Tarifregeln allein schaffen keine zusätzlichen Arbeitskräfte."
+    },
+    {
+      "id": 8026,
+      "name": "Pflegepersonal ausbilden und besser bezahlen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr ausgebildetes Personal kann Besetzungsengpässe mindern, bessere Bezahlung kann die Anerkennung stärken. Ausbildung wirkt zeitverzögert und beide Zusagen lassen Umfang und Finanzierung offen.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279"
+    },
+    {
+      "id": 8027,
+      "name": "Praxisnahe und kostenfreie Ausbildung in Gesundheitsberufen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Kostenfreie und praxisnahe Ausbildung kann Zugang und Nachwuchs fördern, führt aber erst nach Abschluss zu zusätzlicher Besetzung. Ausbildungs- und Finanzierungskapazitäten begrenzen das Tempo.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279"
+    },
+    {
+      "id": 8028,
+      "name": "Gesetzlicher Jahresurlaub von sechs Wochen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Mehr Urlaub ermöglicht zusätzliche Erholungszeit, verändert aber nicht unmittelbar Pausen und Belastung zwischen den Urlaubstagen. Personalvertretung während Abwesenheiten muss mitgedacht werden."
+    },
+    {
+      "id": 8029,
+      "name": "Entlastungsvereinbarungen öffentlicher Arbeitgeber mit Gewerkschaften (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Verbindliche Schritte können Personalengpässe und Arbeitsbedingungen adressieren. Die Zusage nennt weder Mindeststandards noch Finanzierung oder Sanktionen bei Nichteinhaltung."
+    },
+    {
+      "id": 8030,
+      "name": "Niedrigschwellige Beratung für Gesundheitsbeschäftigte (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Beratung kann bei Stress und psychischer Belastung helfen, beseitigt aber keine Ursachen wie Unterbesetzung oder ungünstige Dienstpläne. Reviews finden Nutzen individueller Ansätze, bei heterogenen Studien.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/37893584"
+    },
+    {
+      "id": 8031,
+      "name": "Tarifverträge in Gesundheit und Pflege unterstützen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Tarifverträge können Bezahlung und Bedingungen regeln; die bloße Unterstützung enthält aber keine konkrete Vorgabe zu Lohn, Arbeitszeit oder Entlastung."
+    },
+    {
+      "id": 8032,
+      "name": "Sprachniveau C1 für medizinisches Fachpersonal verlangen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Gute Sprachkenntnisse können Verständigungsprobleme begrenzen, ersetzen aber keine verfügbare Sprachmittlung in komplexen Fällen. Höhere Zugangshürden können zudem die Personalgewinnung erschweren.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/17362215"
+    },
+    {
+      "id": 8033,
+      "name": "Betriebliche Gesundheitsprävention und Präventionspreise (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Prävention kann Gesundheit und Aufmerksamkeit für Arbeitsbedingungen fördern, greift aber ohne konkrete organisatorische Änderungen die genannten Ursachen nur begrenzt an."
+    },
+    {
+      "id": 8034,
+      "name": "Personalbemessung, zusätzliche Pflegekräfte und stressfreie Schichtpläne (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Personalbemessung und planbare Schichten setzen direkt an Besetzung und Erholung an. Die geforderte Größenordnung, Refinanzierung und Umsetzung über mehrere Berufsgruppen erfordern erhebliche Ressourcen.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/35780608"
+    },
+    {
+      "id": 8035,
+      "name": "Sabbatjahr mit Rückkehrrecht (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Ein Sabbatjahr kann einzelnen Beschäftigten Erholung ermöglichen, löst aber nicht die regelmäßigen Pausen- und Schichtprobleme. Vertretung, Anspruchsumfang und Finanzierung sind ungeklärt."
+    },
+    {
+      "id": 8036,
+      "name": "Finanzierung des Personalaufwuchses sicherstellen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Finanzierung ist Voraussetzung für zusätzliche Stellen, schafft diese aber ohne konkrete Mittel, Verteilung und Einstellungsplan nicht selbst. Umfang und dauerhafte Finanzierung sind offen."
+    },
+    {
+      "id": 8037,
+      "name": "Landesförderung an Mitbestimmung koppeln (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Förderbedingungen können Mitsprache bei geförderten Einrichtungen anreizen, erfassen aber nur einen Teil der Arbeitgeber und nennen keine konkreten Mitbestimmungsstandards."
+    },
+    {
+      "id": 8038,
+      "name": "KI-gestützte Dokumentation ausbauen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Automatisierung kann Dokumentationszeit senken, kann aber durch Prüfung, Korrekturen und Integration neue Arbeit erzeugen. Reviews finden wenige, heterogene Interventionsstudien und keine verlässliche allgemeine Wirkung.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/39366661"
+    },
+    {
+      "id": 8039,
+      "name": "Mitbestimmung in öffentlichen und kirchlichen Einrichtungen anpassen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Einheitlichere Beteiligungsrechte können den Einfluss Beschäftigter stärken. Die nötigen Änderungen betreffen unterschiedliche Rechts- und Trägerstrukturen; ihre Wirkung auf Belastung ist nicht direkt belegt."
+    },
+    {
+      "id": 8040,
+      "name": "Rechtsanspruch auf familienfreundliche Schichten (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Planbarere und passende Dienstzeiten können Erholung erleichtern. Reviews verbinden ungünstige Schichtmerkmale mit Müdigkeit, finden aber gemischte Befunde und belegen diesen konkreten Rechtsanspruch nicht direkt.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987"
+    },
+    {
+      "id": 8041,
+      "name": "Höchstarbeitszeit und Ruhezeiten flexibilisieren (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Flexiblere Grenzen können individuelle Modelle ermöglichen, garantieren aber weder Pausen noch Erholung und können längere Einsätze erleichtern. Die Forschung verbindet kurze Ruhezeiten mit Müdigkeit, während Gesamtergebnisse gemischt sind.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987"
+    },
+    {
+      "id": 8042,
+      "name": "Verfolgung von Angriffen auf Mitbestimmung stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Spezialisierte Ermittlungen können bestehende Rechte besser durchsetzen und abschrecken. Sie schaffen selbst keine neuen Beteiligungsrechte und hängen von Fällen, Personal und Verfahrensdauer ab."
+    },
+    {
+      "id": 8043,
+      "name": "Verbindliche Mitbestimmung bei Personalplanung und Arbeitsbedingungen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Erzwingbare Beteiligung bei Personalbemessung, Gesundheitsschutz und Weiterbildung stärkt den Einfluss auf Arbeitsbedingungen. Ob sie Belastungen reduziert, hängt von Durchsetzung und verfügbaren Ressourcen ab.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052"
+    },
+    {
+      "id": 8044,
+      "name": "Psychische Belastungen kontrollieren und Beschäftigte beteiligen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Kontrollen und Beteiligung können psychosoziale Risiken sichtbar machen und Verbesserungen anstoßen. Wirkung setzt wirksame Standards und Abhilfe voraus; Zuständigkeiten für Arbeitsschutzregeln sind zwischen Bund und Ländern verteilt.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052"
+    },
+    {
+      "id": 8045,
+      "name": "Dialogkonferenz für Betriebs- und Personalräte (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Austausch kann Probleme sichtbar machen, verleiht aber ohne verbindliche Rechte oder Umsetzungspflichten keinen zusätzlichen Einfluss auf Arbeitsbedingungen."
+    },
+    {
+      "id": 8046,
+      "name": "Betriebliche Gesundheitsförderung in Gesundheitsfachberufen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Förderprogramme können Prävention und gesundheitsfördernde Arbeitsbedingungen unterstützen. Ohne konkrete Vorgaben zu Personal, Arbeitszeit oder Einfluss bleibt die Wirkung auf die benannten Belastungsursachen begrenzt.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052"
+    },
+    {
+      "id": 8047,
+      "name": "Digitale Anwendungen, Automatisierung und Robotik zur Entlastung (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Technik kann einzelne Aufgaben erleichtern, aber die Maßnahme benennt weder Anwendungen noch Einsatzbedingungen. Einführungs-, Wartungs- und Kontrollaufwand kann einen Teil der erhofften Entlastung aufzehren."
+    },
+    {
+      "id": 8048,
+      "name": "Mitbestimmung durch öffentliche Trägerschaft sichern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Rückgängigmachung von Ausgründungen kann Mitbestimmungswege wiederherstellen, betrifft aber nur bestimmte Einrichtungen und erfordert erhebliche organisatorische sowie finanzielle Schritte."
+    },
+    {
+      "id": 8049,
+      "name": "Leistungsgerechte Vergütung in Gesundheitsberufen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Angemessene Bezahlung kann das Verhältnis von Einsatz und Belohnung verbessern. Ohne Maßstab, Betrag und Finanzierungsweg bleibt der Umfang unbestimmt; leistungsbezogene Anreize können zusätzliche Belastung erzeugen."
+    },
+    {
+      "id": 8050,
+      "name": "Arbeitsschutz und Mitbestimmung bei Personalbemessung stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Arbeitsschutz und verbindliche Beteiligung können Belastungen vorbeugen und Mitsprache stärken. Die konkrete Entlastung hängt von Standards, Kontrolle und tatsächlicher Personalverfügbarkeit ab.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052"
+    },
+    {
+      "id": 8051,
+      "name": "Lohnlücke in der Pflege schließen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Eine konkrete Lohnanhebung verbessert unmittelbar die finanzielle Belohnung für Pflegearbeit. Höhe, betroffene Beschäftigte und Refinanzierung sind nicht ausgeführt; höhere Bezahlung allein löst Überlastung nicht.",
+      "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279"
+    },
+    {
+      "id": 8052,
+      "name": "Vergütung nicht-dualer Gesundheitsausbildungen verbessern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Vergütung kann die finanzielle Belastung während der Ausbildung senken, betrifft aber Auszubildende und nicht unmittelbar die Arbeitslast der bereits Beschäftigten. Finanzierungszuständigkeiten sind zu klären."
+    },
+    {
+      "id": 8053,
+      "name": "Genossenschaften und Belegschaftsmodelle fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Solche Modelle können Beschäftigten mehr Mitsprache eröffnen, sind aber kein allgemeiner Hebel für Arbeitsbedingungen und erfordern freiwillige Gründungen sowie tragfähige Finanzierung."
+    },
+    {
+      "id": 8054,
+      "name": "Handlungsspielraum und Befugnisse der Pflegefachkräfte erweitern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr fachlicher Spielraum kann Einfluss auf die eigene Arbeit stärken. Zusätzliche Verantwortung kann zugleich Anforderungen erhöhen; Zuständigkeiten und Qualifikationen müssen klar geregelt sein.",
+      "beleg_studie_url": "https://www.nationalacademies.org/publications/25982"
+    },
+    {
+      "id": 8055,
+      "name": "Arbeitszeit und Ruhezeiten verbindlich begrenzen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Begrenzte Arbeitszeiten und ausreichende Ruhe können Müdigkeit reduzieren; Reviews stützen den Zusammenhang, zeigen aber teils gemischte Ergebnisse. Ohne Ausgleich kann die Arbeitsmenge pro Schicht steigen.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/30737987"
+    },
+    {
+      "id": 8056,
+      "name": "Gesetzlichen Mindestlohn anheben und dynamisieren (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Ein höherer Mindestlohn verbessert die Entlohnung der davon erfassten Beschäftigten, erreicht aber viele qualifizierte Gesundheitsberufe nicht direkt und verändert Arbeitsbelastung oder Personalbesetzung nicht."
+    },
+    {
+      "id": 8057,
+      "name": "Zusammenarbeit und Kompetenzen in Gesundheitsberufen erweitern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Bessere Zusammenarbeit und erweiterte Befugnisse können Aufgaben verteilen und den Arbeitsablauf erleichtern. Ohne konkrete Zuständigkeiten oder Bezug zur Personalbemessung bleibt die Entlastung unsicher.",
+      "beleg_studie_url": "https://www.nationalacademies.org/publications/25982"
+    },
+    {
+      "id": 8058,
+      "name": "Abstimmung über eine Pflegekammer ermöglichen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Eine Abstimmung gibt Pflegekräften Einfluss auf die Einrichtung einer Selbstvertretung, ändert aber für sich genommen weder Arbeitsbedingungen noch Mitsprache am Arbeitsplatz."
+    }
+  ],
+  "massnahmen": []
+}

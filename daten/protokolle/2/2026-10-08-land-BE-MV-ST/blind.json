@@ -1,0 +1,232 @@
+{
+  "pruefsumme": "6a3214f6a086fc4dce3e4f9dfabba8e4f03b31163020606ea94ad6e247ec9862",
+  "thema": {
+    "id": 2,
+    "name": "Miete",
+    "ziel": "Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten."
+  },
+  "ursachen": [
+    {
+      "id": 201,
+      "beschreibung": "Es werden weniger Wohnungen gebaut als gebraucht (Bedarf laut Prognose rund 320.000 pro Jahr)",
+      "ebene": "bund"
+    },
+    {
+      "id": 202,
+      "beschreibung": "Mieten bei Neuvermietung liegen rund 43 % über Bestandsmieten, in großen Städten besonders hoch",
+      "ebene": "bund"
+    },
+    {
+      "id": 203,
+      "beschreibung": "Stark gestiegene Baukosten: Wohngebäude wurden 2010 bis 2025 um 89 % teurer, mehr als doppelt so stark wie die Inflation",
+      "ebene": "bund"
+    },
+    {
+      "id": 204,
+      "beschreibung": "Mieten in laufenden Verträgen steigen weiter (Nettokaltmieten 2025 im Schnitt +2,1 %)",
+      "ebene": "bund"
+    },
+    {
+      "id": 205,
+      "beschreibung": "Die Nachfrage wächst vor allem in Großstädten: mehr Haushalte, getragen vor allem von Zuwanderung",
+      "ebene": "bund"
+    },
+    {
+      "id": 206,
+      "beschreibung": "Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden (2025: rund 27.000 neu gefördert, rund 55.000 fallen jährlich heraus)",
+      "ebene": "land"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6637,
+      "name": "Mietpreisbremse auslaufen lassen, um Investitionen anzuregen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Soll Investitionen anregen; Neubauten sind von der Mietpreisbremse ohnehin ausgenommen, die Wirkung auf den Neubau ist daher gering. Studien finden keinen deutlichen Rückgang des Neubaus durch die Bremse."
+    },
+    {
+      "id": 6638,
+      "name": "Bundesweiter Mietendeckel",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Begrenzt Mieten direkt, auch bei Neuvermietung, schafft aber keine neuen Wohnungen; in Berlin sanken 2020/21 die regulierten Mieten, zugleich wurden weniger Wohnungen angeboten. Ob ein bundesweiter Deckel mit Absenkung verfassungsgemäß wäre, ist offen."
+    },
+    {
+      "id": 6639,
+      "name": "Mietenstopp in angespannten Wohnungsmärkten",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen in angespannten Märkten; schafft keine neuen Wohnungen und kann Instandhaltung und Modernisierung bremsen. Ein Mietenstopp wirft verfassungsrechtliche Fragen auf."
+    },
+    {
+      "id": 6640,
+      "name": "Bessere steuerliche Abschreibung für den Mietwohnungsbau",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Steuerliche Anreize können Neubau anstoßen; kostet Steuereinnahmen, und ob die Wohnungen günstig vermietet werden, ist nicht gesichert. Frühere Sonderabschreibungen wirkten vor allem bei ohnehin geplanten Projekten."
+    },
+    {
+      "id": 6641,
+      "name": "Keine neuen kostentreibenden Baustandards, einfachere Standards und digitale Verfahren",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verhindert weitere Kostensteigerungen durch Vorschriften und verkürzt Verfahren; bereits gestiegene Material-, Lohn- und Zinskosten bleiben. Wie viel Standards an den Baukosten ausmachen, ist umstritten."
+    },
+    {
+      "id": 6642,
+      "name": "Sozialen und gemeinnützigen Wohnungsbau stärker fördern, mit langen Bindungen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Schafft preisgebundene Wohnungen für Haushalte mit geringem Einkommen; erfordert erhebliche öffentliche Mittel, der Umfang ist nicht beziffert."
+    },
+    {
+      "id": 6645,
+      "name": "Soziale Wohnraumförderung des Landes fortführen (ohne Ausbau)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Hält den Neubau geförderter Wohnungen aufrecht, bremst aber den Rückgang des Bestands nicht, solange mehr Wohnungen aus der Bindung fallen als neu gefördert werden."
+    },
+    {
+      "id": 6646,
+      "name": "Soziale Wohnraumförderung des Landes ausbauen, Bundesmittel voll kofinanzieren",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Mehr geförderte Neubauten wirken dem Rückgang des Bestands direkt entgegen; das Land muss dafür zusätzliche Haushaltsmittel bereitstellen, und die Wirkung hängt davon ab, dass Bauherren die Förderung annehmen."
+    },
+    {
+      "id": 6647,
+      "name": "Sozialbindung geförderter Wohnungen unbefristet",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verhindert, dass künftig geförderte Wohnungen nach einigen Jahren aus der Bindung fallen; das Land kann das im eigenen Förderrecht regeln. Private Bauherren nehmen eine Förderung mit Dauerbindung womöglich seltener an."
+    },
+    {
+      "id": 6648,
+      "name": "Höhere Quote für Sozialwohnungen bei Neubauten (kooperative Baulandentwicklung)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Sichert in neuen Quartieren mehr Sozialwohnungen ohne volle Landesförderung; eine sehr hohe Quote kann private Bauvorhaben unwirtschaftlich machen und den Neubau bremsen."
+    },
+    {
+      "id": 6649,
+      "name": "Fehlbelegungsabgabe für Mieter in Sozialwohnungen mit gestiegenem Einkommen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Lenkt Sozialwohnungen stärker zu Bedürftigen und bringt Geld für neue Förderung; schafft selbst kaum neue Wohnungen, der Verwaltungsaufwand ist hoch, und Besserverdienende ziehen aus, was die Durchmischung verringern kann."
+    },
+    {
+      "id": 6650,
+      "name": "Große Vermieter per Landesgesetz verpflichten, einen Teil der Wohnungen an WBS-Haushalte zu vermieten",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Würde den Bestand an Wohnungen für Haushalte mit geringem Einkommen schnell erweitern; ob ein Land das regeln darf, ist fraglich, denn das Mietrecht ist Bundessache (Bundesverfassungsgericht 2021 zum Berliner Mietendeckel)."
+    },
+    {
+      "id": 7232,
+      "name": "Kurzzeitvermietung und Zweckentfremdung begrenzen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Landesprogramme für den Neubau von Sozialwohnungen und ihre dauerhafte Bindung.",
+      "zitat": "Landesprogramme für Neubau und dauerhafte Bindung von Sozialwohnungen",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "33f581dec2a2530b"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Neu geschaffene Sozialwohnungen langfristig an Mietpreisgrenzen binden",
+      "zitat": "Langfristige Bindung neu gescha ff ener Sozialwohnungen an Mietpreisgrenzen.",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "7f9a80f0abce7de6"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Fehlbelegungsabgabe erhöhen, damit Sozialwohnungen zielgenauer genutzt werden.",
+      "zitat": "Erhöhung der Fehlbelegungsabgabe auf 25 % zur besseren Zielgenauigkeit",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "587e54aaf2c41895"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Abgabe für Sozialwohnungen mit deutlich überschrittener Einkommensgrenze; Einnahmen zweckgebunden in den Neubau weiterer Sozialwohnungen",
+      "zitat": "Wir führen eine Fehlbelegungsabgabe für Sozialwohnungen ein: Wer deutlich über der Einkommensgrenze liegt, zahlt einen gestaffelten Zuschlag. [...] Die Einnahmen fließen zweckgebunden in den Neubau weiterer Sozialwohnungen.",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "1acdbf379a9b4184"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Sozialquoten bei großen Neubauprojekten beibehalten",
+      "zitat": "Wir halten an verbindlichen Sozialquoten bei großen Neubauprojekten fest, damit [Land] eine Stadt für alle bleibt.",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "b365fccbe83ed94c"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Soziale Miet-Agentur mietet Wohnungen am freien Markt an und gibt sie an Menschen mit geringem Einkommen weiter, mit Mietgarantie des Landes",
+      "zitat": "Wir bekämpfen den Mangel an Sozialwohnungen sofort mit einem innovativen Modellprojekt. Wir gründen eine soziale Miet-Agentur zusammen mit erfahrenen Vereinen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        206
+      ],
+      "pruefsumme": "4dbdcd9d71f8fe91"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Landesprogramme zur Sicherung und zum Neubau von Sozialwohnungen; höhere Fehlbelegungsabgabe",
+      "zitat": "Landesprogramme zur Sicherung und zum Neubau von Sozialwohnungen, Erhöhung der Fehlbelegungsabgabe auf 25 Prozent, Aufklärungskampagne zum Wohnberechtigungsschein (WBS).",
+      "ursachen_ids": [
+        206
+      ],
+      "pruefsumme": "72deec93f3727589"
+    }
+  ]
+}

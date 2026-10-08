@@ -156,7 +156,10 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (8494, 6, 18, null, 'Kostenlose Deutschkurse für alle Zielgruppen unabhängig vom Aufenthaltsstatus', '{603}', 6107, 2, 3, null, 'Mehr und früher zugängliche Sprach- und Integrationskurse verkürzen Wartezeiten; Studien des IAB zeigen, dass Integrationskurse Sprachkenntnisse und Beschäftigung verbessern. Anerkennung und Arbeitsmarktzugang bleiben davon unberührt. Der Bund finanziert die Kurse bereits.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=138', null, 'belegt', '2026-10-07', false, true, null),
   (8495, 6, 18, null, 'Dublin-Verordnung abschaffen und Asylsuchende nach BIP, Bevölkerungsdichte und Größe auf die Länder verteilen', '{605}', 6109, 1, 1, null, 'Eine verbindliche Verteilung in der EU würde die Zuständigkeitsfrage anders lösen; ob Asylsuchende dann im zugewiesenen Staat bleiben, ist offen. Umsetzbar nur mit einer Mehrheit der EU-Staaten, die bisher nicht in Sicht ist.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=135', null, 'offen', '2026-10-07', false, true, null),
   (8496, 6, 18, null, 'Chancenjahr: Menschen mit abgelehntem Asylantrag können sich durch ein Jahr Arbeit einen Aufenthaltstitel erarbeiten', '{606}', 6108, 2, 3, null, 'Ein Bleiberecht für gut integrierte Geduldete beendet die Kettenduldung direkt; mit dem Chancen-Aufenthaltsrecht von 2022 haben viele Geduldete einen Aufenthaltstitel bekommen. Wer die Bedingungen nicht erfüllt, bleibt geduldet. Per Bundesgesetz umsetzbar.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=138', null, 'belegt', '2026-10-07', false, true, null),
-  (8497, 6, 18, null, 'Dauerhafter Aufenthaltsstatus, wenn eine Abschiebung drei Jahre lang nicht vollzogen wurde und Integrationsbereitschaft gezeigt wurde', '{606}', 6108, 2, 3, null, 'Ein Bleiberecht für gut integrierte Geduldete beendet die Kettenduldung direkt; mit dem Chancen-Aufenthaltsrecht von 2022 haben viele Geduldete einen Aufenthaltstitel bekommen. Wer die Bedingungen nicht erfüllt, bleibt geduldet. Per Bundesgesetz umsetzbar.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=139', null, 'belegt', '2026-10-07', false, true, null);
+  (8497, 6, 18, null, 'Dauerhafter Aufenthaltsstatus, wenn eine Abschiebung drei Jahre lang nicht vollzogen wurde und Integrationsbereitschaft gezeigt wurde', '{606}', 6108, 2, 3, null, 'Ein Bleiberecht für gut integrierte Geduldete beendet die Kettenduldung direkt; mit dem Chancen-Aufenthaltsrecht von 2022 haben viele Geduldete einen Aufenthaltstitel bekommen. Wer die Bedingungen nicht erfüllt, bleibt geduldet. Per Bundesgesetz umsetzbar.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=139', null, 'belegt', '2026-10-07', false, true, null),
+  (8602, 6, 18, 'BE', 'Einheitlicher Rahmenvertrag mit Qualitätskriterien und verlässlicher Refinanzierung für Anbieter, die den Bezirken Unterbringungsplätze bereitstellen.', '{601}', null, 1, 3, null, 'Ein Rahmenvertrag mit verlässlicher Refinanzierung macht die Bereitstellung von Plätzen planbarer und kann teure Notbeschaffung vermeiden; zusätzliche Plätze schafft er nicht direkt, und höhere Qualitätsvorgaben können Kosten erhöhen. Das Land kann ihn selbst regeln.', 'https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=107', 'https://www.bpb.de/themen/migration-integration/kurzdossiers/kommunale-migrations-und-fluechtlingspolitik/577376/kommunale-unterbringung-von-gefluechteten-in-deutschland/', 'offen', '2026-10-08', false, true, 'blind'),
+  (8603, 6, 18, 'BE', 'Feste Stellen für die Belange Zugewanderter in Ämtern, darunter Landesamt für Einwanderung und Landesamt für Flüchtlingsangelegenheiten.', '{601}', null, 1, 2, null, 'Zusätzliche feste Stellen, auch in Einwanderungs- und Flüchtlingsbehörden, können Anliegen bündeln und Behörden etwas entlasten; die Überlastung entsteht laut Studien aber auch durch komplexes Recht und schleppende Digitalisierung, und Zahl und Wirkung der Stellen bleiben offen.', 'https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=105', 'https://www.bertelsmann-stiftung.de/de/unsere-projekte/migration-fair-gestalten/projektnachrichten/studie-auslaenderbehoerden-zwischen-anspruch-und-alltag', 'offen', '2026-10-08', false, true, 'blind'),
+  (8604, 6, 18, 'ST', 'Geflüchtete dezentral statt in großen Sammelunterkünften unterbringen, um Kosten zu senken und Teilhabe früh zu ermöglichen.', '{601}', 6118, 1, 2, null, 'Wohnungen statt Sammelunterkünften erleichtern das Ankommen und können günstiger sein; zusätzliche Plätze entstehen aber nur, wo Wohnungen frei sind, in angespannten Wohnungsmärkten konkurriert der Bedarf mit anderen Wohnungssuchenden. Das Land kann es über Aufnahmegesetz und Förderung steuern.', 'https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=135', null, 'gemischt', '2026-10-08', false, true, null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -210,7 +213,9 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7996, 6),
   (7997, 6),
   (8490, 6),
-  (8491, 6);
+  (8491, 6),
+  (8602, 6),
+  (8603, 6);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (6, 11, null, 'massnahmen', null, '2026-09-29', true, null),
@@ -241,6 +246,9 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (6, 15, 'BE', 'massnahmen', null, '2026-09-29', true, null),
   (6, 16, 'BE', 'massnahmen', null, '2026-09-29', true, null),
   (6, 17, 'BE', 'massnahmen', null, '2026-09-29', true, null),
-  (6, 18, null, 'massnahmen', null, '2026-10-07', true, '{601,602,603,604,605,606}');
+  (6, 18, null, 'massnahmen', null, '2026-10-07', true, '{601,602,603,604,605,606}'),
+  (6, 18, 'BE', 'massnahmen', null, '2026-10-08', true, '{601}'),
+  (6, 18, 'MV', 'keine', 'Kapitel ''Geflüchtete und Zugewanderte gleichberechtigt einbinden'' (S. 16-17), ''Freizügigkeit im Schengenraum erhalten'' (S. 47-48), ''Starke Kommunen durch gerechte Finanzierung'' (S. 23-24), Pflegekräfte-Anerkennung (S. 34) gelesen; nichts setzt an Unterbringungs- oder Behördenkapazitäten bei der Aufnahme an.', '2026-10-08', true, '{601}'),
+  (6, 18, 'ST', 'massnahmen', null, '2026-10-08', true, '{601}');
 
 commit;

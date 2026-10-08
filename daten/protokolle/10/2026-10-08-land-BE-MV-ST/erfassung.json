@@ -1,0 +1,168 @@
+{
+  "thema_id": 10,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Gesundheitsversorgung (PDF-S. 80-82, inkl. Abschnitt pflegende Angehörige) und Katastrophenschutz S. 79 gelesen; nichts zu Investitionskosten von Pflegeheimen oder Eigenanteilen. Suchbegriffe ohne Treffer.",
+      "nicht_erfasst": [
+        {
+          "ursache": 1005,
+          "seiten": [
+            80,
+            82
+          ],
+          "grund": "Nur Unterstützung pflegender Angehöriger, Hotline, Gesundheitskioske; keine Förderung von Heim-Investitionskosten."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Gezielte Förderung kommunaler, genossenschaftlicher und quartiersnaher Pflegeeinrichtungen, um die Versorgung vor Ort zu sichern und Pflege bezahlbar zu halten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1005
+          ],
+          "zitat": "Gezielte Förderung von kommunalen, genossenschaftlichen und quartiersnahen Pflegeeinrichtungen, um Versorgung vor Ort zu sichern.",
+          "seite": 33
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Investitionskostenförderung des Landes für Pflegeeinrichtungen ausbauen, damit Bewohner weniger zahlen.",
+          "ursachen_ids": [
+            1005
+          ],
+          "zitat": "Ausbau der Investitionskostenförderung für Pflegeeinrichtungen, um Kosten für Bewohner zu senken",
+          "seite": 41
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1001": {
+      "Bessere Bedingungen und Bezahlung": [
+        "pflegekräfte",
+        "pflegepersonal",
+        "personalbemessung",
+        "pflegefachkräfte",
+        "bezahlung",
+        "tarif"
+      ],
+      "Anwerbung, Digitalisierung, weniger Bürokratie": [
+        "anwerbung",
+        "anerkennung",
+        "pflegeassistenz",
+        "dokumentation",
+        "digitalisierung in der pflege"
+      ]
+    },
+    "1002": {
+      "Eigenanteile deckeln, Vollversicherung": [
+        "eigenanteil",
+        "eigenanteile",
+        "pflegevollversicherung",
+        "sockel-spitze",
+        "deckel",
+        "pflegekosten"
+      ],
+      "Private Zusatzvorsorge": [
+        "pflegezusatzversicherung",
+        "private vorsorge",
+        "kapitaldeckung"
+      ]
+    },
+    "1003": {
+      "Prävention und Reha": [
+        "prävention",
+        "rehabilitation",
+        "reha"
+      ],
+      "Einstufung prüfen, Kapitalrücklage": [
+        "pflegegrad",
+        "begutachtung",
+        "pflegevorsorgefonds",
+        "rücklage"
+      ]
+    },
+    "1004": {
+      "Pflegende Angehörige entlasten": [
+        "pflegende angehörige",
+        "pflegegeld",
+        "familienpflegezeit",
+        "lohnersatz",
+        "entlastungsbetrag",
+        "verhinderungspflege",
+        "kurzzeitpflege",
+        "pflegezeit"
+      ]
+    },
+    "1005": {
+      "Investitionskosten der Heime übernehmen": [
+        "investitionskosten",
+        "pflegewohngeld",
+        "pflegeheim",
+        "pflegeeinrichtung",
+        "eigenanteil"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "0e79d19a07de43d9335282c59fd893c2b19ec1d9735aa0c2ff7c296d157c3030",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "1005": {
+            "Investitionskosten der Heime übernehmen": {
+              "investitionskosten": 0,
+              "pflegewohngeld": 0,
+              "pflegeheim": 0,
+              "pflegeeinrichtung": 0,
+              "eigenanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "1005": {
+            "Investitionskosten der Heime übernehmen": {
+              "investitionskosten": 0,
+              "pflegewohngeld": 0,
+              "pflegeheim": 0,
+              "pflegeeinrichtung": 2,
+              "eigenanteil": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "1005": {
+            "Investitionskosten der Heime übernehmen": {
+              "investitionskosten": 1,
+              "pflegewohngeld": 0,
+              "pflegeheim": 4,
+              "pflegeeinrichtung": 3,
+              "eigenanteil": 1
+            }
+          }
+        }
+      }
+    ]
+  }
+}

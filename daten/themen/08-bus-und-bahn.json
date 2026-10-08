@@ -1622,6 +1622,183 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [801, 803, 804],
+      "massnahmen": [
+        {
+          "id": 8627,
+          "instrument": 6750,
+          "beschreibung": "Angebot in Außenbezirken und Randlagen durch digitale Rufbusse und autonome Shuttles verbessern; langfristige Finanzierung des Deutschlandtickets unterstützen.",
+          "ursachen_ids": [801],
+          "zitat": "Wir setzen uns für eine langfristige Finanzierung des Deutschlandtickets ein und verbessern gleichzeitig das ÖPNV-Angebot in den Außenbezirken und Randlagen durch digitale Rufbusse und autonome Shuttles.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=31",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8628,
+          "instrument": 6749,
+          "beschreibung": "Modernen Nahverkehrsplan zeitnah umsetzen: Investitionen bündeln, Takte verbessern, neue Tangentialverbindungen mit Tram und Expressbus schaffen.",
+          "ursachen_ids": [801],
+          "zitat": "Wir setzen dafür zeitnah einen modernen Nahverkehrsplan um, der Investitionen bündelt, Takte verbessert und neue Tangentialverbindungen wie Tram - und Expressbuslinien schafft.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=32",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8629,
+          "beschreibung": "U-Bahnen vollautomatisieren und bei Tram und Bus digitale Unterstützungssysteme für Fahrpersonal einsetzen, um den Betrieb unabhängiger vom Fachkräftemangel zu machen.",
+          "ursachen_ids": [803],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Fahrerlose U-Bahnen laufen etwa in Nürnberg und Paris und sparen Fahrpersonal; der Mangel betrifft aber vor allem Bus und Tram, wo Assistenzsysteme niemanden ersetzen. Die Umrüstung dauert Jahre und ist teuer.",
+          "zitat": "Wir priorisieren die Vollautomatisierung von U-Bahnen, um höhere Taktungen und den stabilen Betrieb rund um die Uhr zu ermöglichen. Bei Tram und Bus setzen wir auf digitale Unterstützungssysteme, die Fahrer*innen entlasten und die Zuverlässigkeit erhöhen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=32",
+          "beleg_studie_url": "https://www.trackopedia.com/en/news/all-countries/automated-metro-lines-could-double-in-length-by-2030",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [801, 803, 804],
+      "massnahmen": [
+        {
+          "id": 8630,
+          "instrument": 6749,
+          "beschreibung": "Dichtere Taktung auf stark nachgefragten Hauptachsen, durchgehender Stundentakt auf wichtigen Strecken",
+          "ursachen_ids": [801],
+          "zitat": "Dichtere Taktung auf stark nachgefragten Hauptachsen, insbesondere zu Stoßzeiten. Einführung eines durchgehenden Stundentakts, zum Beispiel zwischen Rostock und Hamburg",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=53",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8631,
+          "instrument": 6751,
+          "beschreibung": "Landesweite Mindeststandards für Taktung und Anschlusssicherheit im Nahverkehr",
+          "ursachen_ids": [801],
+          "zitat": "Landesweite Mindeststandards für Taktung und Anschlusssicherheit zur Sicherung der Nutzbarkeit.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=54",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8632,
+          "instrument": 6750,
+          "beschreibung": "Rufbus- und On-Demand-Systeme ausbauen, um ländliche Regionen besser anzubinden",
+          "ursachen_ids": [801],
+          "zitat": "Besserer Anschluss, vor allem ländlicher Regionen durch den Ausbau von Rufbus- und On-Demand-Systemen, Sicherstellung ausreichender Fahrzeuge und Fahrer*innen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=54",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8633,
+          "instrument": 6841,
+          "beschreibung": "Kostenloser ÖPNV für Schüler, Auszubildende, Studierende und Freiwilligendienst-Leistende",
+          "ursachen_ids": [804],
+          "zitat": "Kostenloser ÖPNV für Schüler*innen, Auszubildende, Studierende und Freiwilligendienst-Leistende",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=54",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [801, 803, 804],
+      "massnahmen": [
+        {
+          "id": 8634,
+          "instrument": 6751,
+          "beschreibung": "Landesweite Mindeststandards für Taktung, Anschlusssicherheit und Erreichbarkeit im Nahverkehr",
+          "ursachen_ids": [801],
+          "zitat": "Wir wollen den Nahverkehr als Rückgrat gleichwertiger Lebensverhältnisse stärken, sowie Stadt und Land wieder besser verbinden. […] Landesweite Mindeststandards für Taktung, Anschlusssicherheit und Erreichbarkeit",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=90",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8635,
+          "instrument": 6750,
+          "beschreibung": "Landesweiter Ausbau von Rufbus- und On-Demand-Systemen im ländlichen Raum",
+          "ursachen_ids": [801],
+          "zitat": "Wir wollen […] Mobilität systematisch ausbauen und intelligent mit dem bestehenden ÖPNV verknüpfen. […] Landesweiter Ausbau von Rufbus- und On-Demand-Systemen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=91",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8636,
+          "instrument": 6754,
+          "beschreibung": "Ausreichend Fahrzeuge und Fahrpersonal für Rufbusse durch Förderung und Qualifizierung sichern",
+          "ursachen_ids": [803],
+          "zitat": "Wir wollen […] Mobilität systematisch ausbauen und intelligent mit dem bestehenden ÖPNV verknüpfen. […] Sicherstellung ausreichender Fahrzeuge und Fahrer*innen durch gezielte Förderung und […]",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=91",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8637,
+          "instrument": 6840,
+          "beschreibung": "Landesweit koordiniertes, einkommensabhängig bezuschusstes Sozialticket für das Deutschlandticket",
+          "ursachen_ids": [804],
+          "zitat": "Wir wollen das Deutschlandticket gezielt bezahlbarer machen und dabei stärker auf bedarfsgerechte Unterstützung statt pauschaler Subventionen setzen. […] Einführung eines landesweit koordinierten Sozialtickets des Deutschlandtickets mit einkommensabhängiger Bezuschussung",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=96",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8638,
+          "instrument": 6841,
+          "beschreibung": "Kostenfreier ÖPNV für Schülerinnen und Schüler landesweit",
+          "ursachen_ids": [804],
+          "zitat": "Kostenfreier ÖPNV für Schüler*innen landesweit, mit klarer Zuständigkeitsregelung zwischen Land und Kommunen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=96",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8639,
+          "beschreibung": "Gesetzliche Grundlage für eine kommunale Nahverkehrsabgabe, zweckgebunden für Ausbau, Angebot und stabile Preise",
+          "ursachen_ids": [801],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine kommunale Abgabe schafft eigenes Geld für mehr Angebot, wie die Arbeitgeberabgabe in Frankreich zeigt; laut Difu löst sie die Finanzierungsprobleme nicht allein, und es hängt von den Kommunen ab, ob sie sie einführen.",
+          "zitat": "Wir schaffen eine gesetzliche Grundlage, damit Kommunen eine Nahverkehrsabgabe einführen können. […] Zweckbindung für Ausbau, Angebot und stabile Preise",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=93",
+          "beleg_studie_url": "https://www.zfk.de/mobilitaet/oepnv/mobil-nahverkehr-studie-difu-finanzierung",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

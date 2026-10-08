@@ -1,0 +1,107 @@
+{
+  "blind_pruefsumme": "cfa333c6ccd6c349210f41be692495b7618f0b275eb282f1aa36aaf8f7463219",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": 7125,
+      "ursachen": [
+        1401
+      ]
+    },
+    {
+      "kennung": "M02",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Automatisierung kann Routinearbeit abnehmen; Modellrechnungen sehen Potenzial, aber kein Allheilmittel. Die Einsparung betrifft die Ministerialverwaltung ohne Bürgerkontakt, und eine feste Stellenkürzung verbraucht den Gewinn, statt Engpässe zu lindern.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        1402
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 7127,
+      "ursachen": [
+        1402
+      ]
+    },
+    {
+      "kennung": "M04",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Einfacheres Ausfüllen senkt eine Hürde, die Nutzer bei komplizierten Anträgen nennen; ob Anträge dadurch schneller bearbeitet werden, hängt von der digitalen Bearbeitung dahinter ab und ist kaum untersucht.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://initiatived21.de/publikationen/egovernment-monitor/2025"
+      },
+      "ursachen": [
+        1401
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": 7128,
+      "ursachen": [
+        1402
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": 7125,
+      "ursachen": [
+        1401
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": 7125,
+      "ursachen": [
+        1401
+      ]
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Digitale Akten und Once-Only setzen an Medienbrüchen und doppelten Nachweisen an, die Nutzer als größte Ärgernisse nennen. Das Land kann eigene Register vernetzen, volle Wirkung braucht aber die mehrjährige Registermodernisierung mit Bund und Kommunen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://initiatived21.de/publikationen/egovernment-monitor/2025"
+      },
+      "ursachen": [
+        1401,
+        1403
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": 7125,
+      "ursachen": [
+        1401
+      ]
+    },
+    {
+      "kennung": "M10",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Eine Frist mit Fiktion zwingt Behörden zu zügiger Prüfung; das Land kann sie im eigenen Verfahrensrecht regeln. Fachleute erwarten aber vorsorgliche Ablehnungen und weite Ausnahmen; mehr Bearbeitungskapazität entsteht nicht.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.beck-aktuell.de/heute-im-recht/rechtspolitik-gesetzgebung/genehmigungsfiktion-bundes-vwvfg-verwaltungsverfahren-2026-07-09"
+      },
+      "ursachen": [
+        1404
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": 7125,
+      "ursachen": [
+        1401
+      ]
+    }
+  ]
+}

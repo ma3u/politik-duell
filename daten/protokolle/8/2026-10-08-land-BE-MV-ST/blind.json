@@ -1,0 +1,347 @@
+{
+  "pruefsumme": "f0c1566081be0b8b8771d9007ba05b8ebf1faa973afb82c2d258f4f49e0b828f",
+  "thema": {
+    "id": 8,
+    "name": "Bus und Bahn",
+    "ziel": "Menschen kommen mit Bus und Bahn zuverlässig, in vertretbarer Zeit und zu bezahlbaren Preisen ans Ziel, auch auf dem Land."
+  },
+  "ursachen": [
+    {
+      "id": 801,
+      "beschreibung": "Rund 21 Millionen Menschen fehlt ein gutes Grundangebot an Bus und Bahn, besonders auf dem Land",
+      "ebene": "land"
+    },
+    {
+      "id": 802,
+      "beschreibung": "Marodes, überaltertes Schienennetz; laut Bundesrechnungshof steuert der Bund seine Mittel für den Erhalt kaum wirksam",
+      "ebene": "bund"
+    },
+    {
+      "id": 803,
+      "beschreibung": "Zu wenige Bus- und Straßenbahnfahrerinnen und -fahrer; in den nächsten zehn Jahren gehen rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand",
+      "ebene": "land"
+    },
+    {
+      "id": 804,
+      "beschreibung": "Tickets werden teurer: Das Deutschlandticket kostet seit Januar 2026 63 Euro im Monat; den Preis legen die Länder fest, Bund und Länder zahlen je 1,5 Milliarden Euro im Jahr zu",
+      "ebene": "land"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6740,
+      "name": "Mehr Bundesmittel für den Nahverkehr (Regionalisierungsmittel)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Geld erlaubt den Ländern, mehr Züge und Busse zu bestellen; ob es beim Angebot auf dem Land ankommt oder etwa für gestiegene Kosten oder Ticketpreise gebraucht wird, entscheiden die Länder."
+    },
+    {
+      "id": 6741,
+      "name": "Netz und Betrieb der Deutschen Bahn stärker trennen",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Soll Wettbewerb und klare Verantwortung für das Netz schaffen; in anderen Ländern hat die Trennung nicht einheitlich zu einem besseren Netz geführt, und die Umstrukturierung bindet Jahre."
+    },
+    {
+      "id": 6742,
+      "name": "Überjährige Finanzierung der Schiene über einen Fonds",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verlässliche Mittel über mehrere Jahre erleichtern die Planung von Sanierungen, wie der Bahninfrastrukturfonds der Schweiz zeigt; ohne bessere Steuerung ist nicht gesichert, dass mehr Geld den Zustand verbessert."
+    },
+    {
+      "id": 6743,
+      "name": "Busführerschein und Berufskraftfahrerqualifikation günstiger und einfacher",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Senkt eine Hürde für den Berufseinstieg; die Regeln stammen zum großen Teil aus EU-Richtlinien, und Bezahlung und Arbeitszeiten bleiben die Hauptgründe für den Mangel."
+    },
+    {
+      "id": 6744,
+      "name": "Schienennetz mit mehr Mitteln sanieren und ausbauen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt direkt am maroden Netz an, wirkt wegen Bauzeiten aber erst nach Jahren; der Bundesrechnungshof bezweifelt, dass mehr Mittel ohne bessere Steuerung den Zustand verbessern."
+    },
+    {
+      "id": 6745,
+      "name": "Bund steuert die Infrastruktur der Deutschen Bahn wirksamer",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Setzt an der vom Bundesrechnungshof kritisierten Steuerung an; wie viel das für Pünktlichkeit bringt, ist kaum untersucht."
+    },
+    {
+      "id": 6746,
+      "name": "Bessere Bezahlung und Arbeitsbedingungen im Nahverkehr (Tariftreue, Personalübernahme)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Bessere Bedingungen machen den Fahrdienst attraktiver und halten Beschäftigte im Beruf; die Kosten tragen Länder und Kommunen, und Vergaben regeln vor allem die Länder."
+    },
+    {
+      "id": 6747,
+      "name": "Stillgelegte Bahnstrecken reaktivieren",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verbessert die Anbindung einzelner ländlicher Orte deutlich, erreicht insgesamt aber nur wenige Menschen; Planung und Bau dauern viele Jahre."
+    },
+    {
+      "id": 6748,
+      "name": "Verbindliches Mindestangebot an Bus und Bahn (Mobilitätsgarantie)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Setzt direkt am fehlenden Grundangebot an; ein flächendeckender Takt ist teuer und scheitert derzeit auch am fehlenden Fahrpersonal. Zuständig sind die Länder, der Bund kann über Geld und Rahmenrecht beitragen."
+    },
+    {
+      "id": 6749,
+      "name": "Landesweites Bus- und Bahnnetz ausbauen, Takte verdichten",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Häufigere Fahrten und direkte Verbindungen verbessern das Angebot spürbar und ziehen mehr Fahrgäste an; das Land muss die zusätzlichen Fahrten dauerhaft bezahlen und braucht Fahrpersonal."
+    },
+    {
+      "id": 6750,
+      "name": "Rufbusse und On-Demand-Verkehre ausbauen",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schließt Lücken dort, wo Linienbusse fast leer fahren würden; Rufbusse befördern wenige Menschen je Fahrt und sind teuer, ersetzen also keinen dichten Takt."
+    },
+    {
+      "id": 6751,
+      "name": "Verbindliches Mindestangebot (z. B. Stundentakt für jeden Ort, 10-Minuten-Takt in der Stadt)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Setzt direkt am fehlenden Grundangebot an; ein flächendeckender Takt ist teuer und braucht Fahrpersonal, das derzeit fehlt."
+    },
+    {
+      "id": 6752,
+      "name": "Stillgelegte Strecken und Haltepunkte reaktivieren (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verbessert die Anbindung einzelner Orte deutlich, erreicht insgesamt aber wenige Menschen; Planung und Bau dauern Jahre."
+    },
+    {
+      "id": 6753,
+      "name": "Tariftreue und bessere Bezahlung im Nahverkehr (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Bessere Bezahlung macht den Fahrdienst attraktiver und hält Beschäftigte; das Land kann Tariftreue in der Vergabe und bei eigenen Unternehmen durchsetzen, muss die Mehrkosten aber tragen."
+    },
+    {
+      "id": 6754,
+      "name": "Offensive zur Gewinnung und Ausbildung von Fahrpersonal",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schnellere Qualifizierung, Anerkennung ausländischer Abschlüsse und eigene Ausbildung setzen direkt am Mangel an; ohne bessere Bedingungen verlassen viele den Beruf wieder."
+    },
+    {
+      "id": 6837,
+      "name": "Deutschlandticket günstiger machen (Bund gemeinsam mit den Ländern)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Ein niedrigerer Preis entlastet alle Fahrgäste direkt; das Neun-Euro-Ticket und die Einführung des Deutschlandtickets haben die Nutzung deutlich erhöht. Jeder Euro weniger kostet Bund und Länder Hunderte Millionen im Jahr, den Preis legen die Länder fest."
+    },
+    {
+      "id": 6838,
+      "name": "Vergünstigtes Deutschlandticket für bestimmte Gruppen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Entlastet Gruppen mit wenig Geld wie Auszubildende, Studierende oder Menschen mit geringem Einkommen gezielt; für alle anderen ändert sich nichts. Der Bund kann es nur gemeinsam mit den Ländern einführen und mitfinanzieren."
+    },
+    {
+      "id": 6839,
+      "name": "Deutschlandticket mit Landesmitteln erhalten",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Sichert den bundesweit einheitlichen Preis, verhindert aber weitere Preiserhöhungen nicht; das Land zahlt seinen Anteil schon heute."
+    },
+    {
+      "id": 6840,
+      "name": "Vergünstigte Tickets für bestimmte Gruppen (Sozial-, Senioren-, Azubi-, Schülerticket)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Entlastet die Gruppen spürbar, für die der Preis am ehesten eine Hürde ist; das Land muss die Rabatte dauerhaft bezahlen, und für alle anderen bleibt der Preis gleich."
+    },
+    {
+      "id": 6841,
+      "name": "Kostenloser Nahverkehr für junge Menschen (Schüler, Auszubildende, unter 21 oder 27 Jahren)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Nimmt jungen Menschen die Kosten ganz ab; kostenlose Schülertickets gibt es in mehreren Ländern bereits. Das Land muss die Einnahmeausfälle dauerhaft ausgleichen."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "U-Bahnen vollautomatisieren und bei Tram und Bus digitale Unterstützungssysteme für Fahrpersonal einsetzen, um den Betrieb unabhängiger vom Fachkräftemangel zu machen.",
+      "zitat": "Wir priorisieren die Vollautomatisierung von U-Bahnen, um höhere Taktungen und den stabilen Betrieb rund um die Uhr zu ermöglichen. Bei Tram und Bus setzen wir auf digitale Unterstützungssysteme, die Fahrer*innen entlasten und die Zuverlässigkeit erhöhen.",
+      "ursachen_ids": [
+        803
+      ],
+      "pruefsumme": "456da06214f08fa5"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Dichtere Taktung auf stark nachgefragten Hauptachsen, durchgehender Stundentakt auf wichtigen Strecken",
+      "zitat": "Dichtere Taktung auf stark nachgefragten Hauptachsen, insbesondere zu Stoßzeiten. Einführung eines durchgehenden Stundentakts, zum Beispiel zwischen [Land] und [Land]",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "15af5f6aa0394ffb"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Ausreichend Fahrzeuge und Fahrpersonal für Rufbusse durch Förderung und Qualifizierung sichern",
+      "zitat": "Wir wollen […] Mobilität systematisch ausbauen und intelligent mit dem bestehenden ÖPNV verknüpfen. […] Sicherstellung ausreichender Fahrzeuge und Fahrer*innen durch gezielte Förderung und […]",
+      "ursachen_ids": [
+        803
+      ],
+      "pruefsumme": "a5a42ba4878c5cce"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Gesetzliche Grundlage für eine kommunale Nahverkehrsabgabe, zweckgebunden für Ausbau, Angebot und stabile Preise",
+      "zitat": "Wir schaffen eine gesetzliche Grundlage, damit Kommunen eine Nahverkehrsabgabe einführen können. […] Zweckbindung für Ausbau, Angebot und stabile Preise",
+      "ursachen_ids": [
+        801
+      ],
+      "ursachen_offen": [
+        804
+      ],
+      "pruefsumme": "25c698446dc717d0"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Landesweit koordiniertes, einkommensabhängig bezuschusstes Sozialticket für das Deutschlandticket",
+      "zitat": "Wir wollen das Deutschlandticket gezielt bezahlbarer machen und dabei stärker auf bedarfsgerechte Unterstützung statt pauschaler Subventionen setzen. […] Einführung eines landesweit koordinierten Sozialtickets des Deutschlandtickets mit einkommensabhängiger Bezuschussung",
+      "ursachen_ids": [
+        804
+      ],
+      "pruefsumme": "1e24884e51e47aff"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Rufbus- und On-Demand-Systeme ausbauen, um ländliche Regionen besser anzubinden",
+      "zitat": "Besserer Anschluss, vor allem ländlicher Regionen durch den Ausbau von Rufbus- und On-Demand-Systemen, Sicherstellung ausreichender Fahrzeuge und Fahrer*innen.",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "5b59f41c769e4b8e"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Landesweite Mindeststandards für Taktung und Anschlusssicherheit im Nahverkehr",
+      "zitat": "Landesweite Mindeststandards für Taktung und Anschlusssicherheit zur Sicherung der Nutzbarkeit.",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "5d3ec8b6b3b95281"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Angebot in Außenbezirken und Randlagen durch digitale Rufbusse und autonome Shuttles verbessern; langfristige Finanzierung des Deutschlandtickets unterstützen.",
+      "zitat": "Wir setzen uns für eine langfristige Finanzierung des Deutschlandtickets ein und verbessern gleichzeitig das ÖPNV-Angebot in den Außenbezirken und Randlagen durch digitale Rufbusse und autonome Shuttles.",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "c5eb6657b7ce9605"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Kostenfreier ÖPNV für Schülerinnen und Schüler landesweit",
+      "zitat": "Kostenfreier ÖPNV für Schüler*innen landesweit, mit klarer Zuständigkeitsregelung zwischen Land und Kommunen",
+      "ursachen_ids": [
+        804
+      ],
+      "pruefsumme": "0196783accdb4dbd"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Kostenloser ÖPNV für Schüler, Auszubildende, Studierende und Freiwilligendienst-Leistende",
+      "zitat": "Kostenloser ÖPNV für Schüler*innen, Auszubildende, Studierende und Freiwilligendienst-Leistende",
+      "ursachen_ids": [
+        804
+      ],
+      "pruefsumme": "08edef626503fd58"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Landesweiter Ausbau von Rufbus- und On-Demand-Systemen im ländlichen Raum",
+      "zitat": "Wir wollen […] Mobilität systematisch ausbauen und intelligent mit dem bestehenden ÖPNV verknüpfen. […] Landesweiter Ausbau von Rufbus- und On-Demand-Systemen",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "2ef4ef0bd937fde2"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Modernen Nahverkehrsplan zeitnah umsetzen: Investitionen bündeln, Takte verbessern, neue Tangentialverbindungen mit Tram und Expressbus schaffen.",
+      "zitat": "Wir setzen dafür zeitnah einen modernen Nahverkehrsplan um, der Investitionen bündelt, Takte verbessert und neue Tangentialverbindungen wie Tram - und Expressbuslinien schafft.",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "be34b752f463daab"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Landesweite Mindeststandards für Taktung, Anschlusssicherheit und Erreichbarkeit im Nahverkehr",
+      "zitat": "Wir wollen den Nahverkehr als Rückgrat gleichwertiger Lebensverhältnisse stärken, sowie Stadt und Land wieder besser verbinden. […] Landesweite Mindeststandards für Taktung, Anschlusssicherheit und Erreichbarkeit",
+      "ursachen_ids": [
+        801
+      ],
+      "pruefsumme": "b0d8ed2626467650"
+    }
+  ]
+}

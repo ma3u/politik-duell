@@ -1,0 +1,354 @@
+{
+  "thema_id": 12,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Sofortprogramm für sichere Kreuzungen: Unfallschwerpunkte beseitigen, getrennte Ampelphasen, Schutzinseln und abgesetzte Aufstellflächen.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Wir starten ein Sofortprogramm, um Kreuzungen sicherer zu machen und alle Unfallschwerpunkte bis 2030 zu beseitigen. Getrennte Ampelphasen für Rad- und Autoverkehr sowie Grünpfeile für abbiegende Radfahrer*innen verhindern Konflikte.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Radwege, Fahrradstraßen und Radschnellverbindungen zügig ausbauen, gestoppte Radschnellwege wieder aufnehmen.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Wir planen und bauen Radwege, Fahrradstraßen und Radschnellverbindungen konsequent und zügig aus. Insbesondere fordern wir, die Planung der gestoppten Radschnellwege unverzüglich wieder aufzunehmen und zügig umzusetzen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "An Schulen gezielt über Rücksichtnahme im Straßenverkehr aufklären.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Wir klären gezielt an Schulen auf und stärken so Rücksichtnahme und verantwortungsbewusstes Verhalten im Straßenverkehr.",
+          "seite": 33
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1202,
+          "seiten": [
+            33,
+            34,
+            4
+          ],
+          "grund": "Keine Zusage zu Finanzierung oder Sanierung von Straßen und Brücken; Mittel aus der City-Maut gehen in ÖPNV, Rad- und Fußwege."
+        },
+        {
+          "ursache": 1203,
+          "seiten": [
+            34,
+            59,
+            15
+          ],
+          "grund": "Baustellenregeln (Vertragsstrafen, Sondernutzungsgebühren) betreffen Baufirmen, nicht Personal oder Genehmigung und Vergabe der Verwaltung; Vergabegesetz S. 59 bezieht sich auf Innovationskriterien."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Das Land fördert kommunale Radverkehrsprojekte, die Radverkehr von Straßen und Fußgängern trennen, mit Vorrang für Schul- und Pendelwege.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Gezielte Förderung kommunaler Radverkehrsprojekte zur Trennung des Radverkehrs von Straßen und Fußgängern, Priorisierung von Schul- und Pendelwegen zur Erhöhung der Sicherheit",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Das Land gleicht neue gesetzliche Pflichten der Kommunen dauerhaft finanziell aus.",
+          "ursachen_ids": [
+            1202
+          ],
+          "zitat": "Vollständiger und dauerhafter finanzieller Ausgleich von neuen gesetzlichen Verpflichtungen.",
+          "seite": 24
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1203,
+          "seiten": [
+            37,
+            38,
+            60
+          ],
+          "grund": "Genehmigungsbeschleunigung betrifft Energie (S. 38) und Wohnungsbau (S. 60), nicht Straßen und Verkehrswege; kein Personal in Bauverwaltungen."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Verlässliche, planbare und bedarfsgerechte Landesfinanzierung der Kommunen, damit sie Aufgaben wie Infrastruktur erfüllen und investieren können.",
+          "ursachen_ids": [
+            1202
+          ],
+          "zitat": "Wir scha ff en verlässliche fi nanzielle Rahmenbedingungen, damit Kommunen ihre Aufgaben eigenständig und zukunftsorientiert erfüllen können. Dazu setzen wir auf folgende Maßnahmen: […] Planbare, bedarfsgerechte und langfristig angelegte Landes fi nanzierung.",
+          "seite": 119
+        },
+        {
+          "beschreibung": "Feste Fristen und Genehmigungsfiktion bei Bau- und Infrastrukturprojekten, vereinfachte Prüfverfahren und mehr Entscheidungskompetenz der Kommunen.",
+          "ursachen_ids": [
+            1203
+          ],
+          "zitat": "Einführung fester Fristen für Genehmigungen ● Mehr Entscheidungskompetenz für Kommunen bei temporären Bau- und Infrastrukturmaßnahmen ● Vereinfachte Prüfverfahren für standardisierte und sicherheitsgeprüfte Projekte ● „Genehmigungs fi ktion“ bei ausbleibender Rückmeldung innerhalb de fi nierter Fristen",
+          "seite": 118
+        },
+        {
+          "beschreibung": "Zusammenhängendes Radnetz mit priorisiertem Bau von Radwegen entlang von Bundes- und Landesstraßen, Lückenschlüssen und beschleunigten Verfahren.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Priorisierter Bau von begleitenden Radwegen entlang von Bundes- und Landesstraßen ● Einführung eines datenbasierten Algorithmus zur Radwegeplanung, der Projekte nach maximalem Nutzen (Anbindung, Sicherheit, Nachfrage) priorisiert ● Fokus auf Lückenschlüsse für ein zusammenhängendes ortsübergreifendes Netz",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Unfallhäufungsstellen an Landesstraßen systematisch beseitigen und gefährliche Kreuzungen umgestalten.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Landesstraßen gezielt entschärfen: Systematische Beseitigung von Unfallhäufungsstellen, Umgestaltung gefährlicher Kreuzungen (z. B. Kreisverkehre, getrennte Abbiegespuren) sowie sichere Ortsdurchfahrten",
+          "seite": 92
+        },
+        {
+          "beschreibung": "Tempo 30 als Standard innerorts, Ausweitung auf Wohngebiete und Schulwege mit Kontrolle.",
+          "ursachen_ids": [
+            1204
+          ],
+          "zitat": "Ausweitung von Tempo-30-Zonen auf Wohngebiete, Schulwege und Mischverkehrs fl ächen verbunden mit Kontrolle ● Einrichtung von fl ächendeckenden Tempo-30-Modellen als Standard innerhalb geschlossener Ortschaften",
+          "seite": 89
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1201": {
+      "Mehr Geld, Erhalt vor Neubau": [
+        "brücke",
+        "autobahn",
+        "sanierung",
+        "erhalt",
+        "ersatzneubau",
+        "investitionsprogramm",
+        "maut",
+        "infrastrukturfonds"
+      ],
+      "Schneller planen und genehmigen": [
+        "planung",
+        "genehmigung",
+        "planungsbeschleunigung",
+        "umweltverträglichkeitsprüfung",
+        "baustelle"
+      ]
+    },
+    "1202": {
+      "Mehr Geld für Kommunen, Altschulden": [
+        "kommunen",
+        "altschulden",
+        "gemeindefinanz",
+        "kommunale straßen",
+        "straße",
+        "finanzausgleich"
+      ],
+      "Aufgabenkritik": [
+        "aufgabenkritik",
+        "schuldenbremse"
+      ]
+    },
+    "1203": {
+      "Planung und Vergabe beschleunigen": [
+        "vergabe",
+        "vergaberecht",
+        "planungsbeschleunigung",
+        "genehmigungsverfahren"
+      ],
+      "Personal in Bauverwaltungen": [
+        "bauverwaltung",
+        "straßenbauverwaltung",
+        "planungskapazit",
+        "ingenieure"
+      ]
+    },
+    "1204": {
+      "Sichere Radwege und Kreuzungen": [
+        "radweg",
+        "radverkehr",
+        "fahrrad",
+        "tempo 30",
+        "vision zero",
+        "kreuzung"
+      ],
+      "Helm, Training, Rücksicht": [
+        "helm",
+        "verkehrserziehung",
+        "verkehrssicherheit",
+        "rücksicht"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5bb2c408583859aefd82cb75a7fe60940a030d836d7209b1adef41c75a632afb",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "1202": {
+            "Mehr Geld für Kommunen, Altschulden": {
+              "kommunen": 4,
+              "altschulden": 0,
+              "gemeindefinanz": 0,
+              "kommunale straßen": 0,
+              "straße": 24,
+              "finanzausgleich": 0
+            },
+            "Aufgabenkritik": {
+              "aufgabenkritik": 0,
+              "schuldenbremse": 0
+            }
+          },
+          "1203": {
+            "Planung und Vergabe beschleunigen": {
+              "vergabe": 7,
+              "vergaberecht": 0,
+              "planungsbeschleunigung": 0,
+              "genehmigungsverfahren": 4
+            },
+            "Personal in Bauverwaltungen": {
+              "bauverwaltung": 0,
+              "straßenbauverwaltung": 0,
+              "planungskapazit": 0,
+              "ingenieure": 0
+            }
+          },
+          "1204": {
+            "Sichere Radwege und Kreuzungen": {
+              "radweg": 6,
+              "radverkehr": 1,
+              "fahrrad": 3,
+              "tempo 30": 1,
+              "vision zero": 1,
+              "kreuzung": 4
+            },
+            "Helm, Training, Rücksicht": {
+              "helm": 0,
+              "verkehrserziehung": 0,
+              "verkehrssicherheit": 2,
+              "rücksicht": 7
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "1202": {
+            "Mehr Geld für Kommunen, Altschulden": {
+              "kommunen": 24,
+              "altschulden": 0,
+              "gemeindefinanz": 0,
+              "kommunale straßen": 0,
+              "straße": 6,
+              "finanzausgleich": 0
+            },
+            "Aufgabenkritik": {
+              "aufgabenkritik": 0,
+              "schuldenbremse": 0
+            }
+          },
+          "1203": {
+            "Planung und Vergabe beschleunigen": {
+              "vergabe": 0,
+              "vergaberecht": 0,
+              "planungsbeschleunigung": 0,
+              "genehmigungsverfahren": 3
+            },
+            "Personal in Bauverwaltungen": {
+              "bauverwaltung": 0,
+              "straßenbauverwaltung": 0,
+              "planungskapazit": 0,
+              "ingenieure": 0
+            }
+          },
+          "1204": {
+            "Sichere Radwege und Kreuzungen": {
+              "radweg": 6,
+              "radverkehr": 6,
+              "fahrrad": 4,
+              "tempo 30": 0,
+              "vision zero": 0,
+              "kreuzung": 0
+            },
+            "Helm, Training, Rücksicht": {
+              "helm": 0,
+              "verkehrserziehung": 0,
+              "verkehrssicherheit": 0,
+              "rücksicht": 3
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "1202": {
+            "Mehr Geld für Kommunen, Altschulden": {
+              "kommunen": 86,
+              "altschulden": 0,
+              "gemeindefinanz": 0,
+              "kommunale straßen": 0,
+              "straße": 36,
+              "finanzausgleich": 1
+            },
+            "Aufgabenkritik": {
+              "aufgabenkritik": 0,
+              "schuldenbremse": 0
+            }
+          },
+          "1203": {
+            "Planung und Vergabe beschleunigen": {
+              "vergabe": 11,
+              "vergaberecht": 1,
+              "planungsbeschleunigung": 0,
+              "genehmigungsverfahren": 5
+            },
+            "Personal in Bauverwaltungen": {
+              "bauverwaltung": 0,
+              "straßenbauverwaltung": 0,
+              "planungskapazit": 0,
+              "ingenieure": 0
+            }
+          },
+          "1204": {
+            "Sichere Radwege und Kreuzungen": {
+              "radweg": 8,
+              "radverkehr": 5,
+              "fahrrad": 2,
+              "tempo 30": 4,
+              "vision zero": 2,
+              "kreuzung": 1
+            },
+            "Helm, Training, Rücksicht": {
+              "helm": 1,
+              "verkehrserziehung": 0,
+              "verkehrssicherheit": 2,
+              "rücksicht": 10
+            }
+          }
+        }
+      }
+    ]
+  }
+}

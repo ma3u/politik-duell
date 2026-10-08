@@ -1,0 +1,265 @@
+{
+  "thema_id": 33,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Medienkompetenz, reflektierter Umgang mit digitalen Technologien und Algorithmusverständnis werden fester Teil des Unterrichts.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3303
+          ],
+          "zitat": "Wir bereiten Schüler*innen verstärkt auf das Leben nach der Schule vor: Medienkompetenz und ein reflektierter Umgang mit digitalen Technologien sowie Algorithmusverständnis, Umgang mit Desinformationen und extremistischen Inhalten gehören für uns in den Unterricht.",
+          "seite": 48
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3302,
+          "seiten": [
+            37,
+            48
+          ],
+          "grund": "Keine Zusage zu Nutzungszeiten, Schlaf oder Handyregeln im Programm gefunden; Suchbegriffe ohne Treffer."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Medien- und Demokratiebildung altersgerecht und fächerübergreifend ab der ersten Klasse im Unterricht verankern.",
+          "ursachen_ids": [
+            3303
+          ],
+          "zitat": "Fächerübergreifende Medien- und Demokratiebildung ab Klasse Eins Altersgerechte und kontinuierliche Vermittlung von Medien- und Demokratiebildung, eingebettet in alle relevanten Fächer",
+          "seite": 7
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3302,
+          "seiten": [
+            7,
+            8
+          ],
+          "grund": "Keine Aussagen zu Nutzungszeiten, Schlaf oder Handyregeln im Programm."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Medien- und Demokratiebildung ab Klasse 1 fächerübergreifend verankern, mit Vermittlung von Plattformlogiken und kritischer Medienkompetenz.",
+          "ursachen_ids": [
+            3303
+          ],
+          "zitat": "Medien- und Demokratiebildung wird in Sachsen-Anhalt ab Klasse 1 fächerübergreifend und kontinuierlich verankert.",
+          "seite": 30
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3302,
+          "seiten": [
+            153
+          ],
+          "grund": "Keine Zusage zu Nutzungszeiten, Schlaf oder Handyregeln im Programm; Suchbegriffe ohne Treffer."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3301": {
+      "Plattformpflichten und Altersgrenzen": [
+        "altersgrenze",
+        "altersverifikation",
+        "social-media-verbot",
+        "mindestalter soziale medien",
+        "plattformpflichten",
+        "jugendmedienschutz",
+        "digital services act",
+        "suchtfördernde gestaltung"
+      ],
+      "Selbstregulation und begleiteter Zugang": [
+        "selbstregulation",
+        "begleitete nutzung",
+        "elternkontrolle",
+        "medienkompetenz stärken",
+        "keine pauschalen verbote"
+      ]
+    },
+    "3302": {
+      "Nutzungszeiten begrenzen": [
+        "handyverbot",
+        "handyfreie schule",
+        "bildschirmzeit",
+        "nutzungszeiten",
+        "schlafenszeit",
+        "handynutzung begrenzen",
+        "smartphone-verbot"
+      ],
+      "Familiäre Regeln und Aufklärung": [
+        "medienregeln in der familie",
+        "aufklärung über schlaf",
+        "medienerziehung",
+        "elternabende",
+        "mediennutzungsvertrag"
+      ]
+    },
+    "3303": {
+      "Medienbildung und Beratung ausbauen": [
+        "medienbildung",
+        "medienkompetenz",
+        "digitale bildung",
+        "elternberatung",
+        "medienpädagogik",
+        "elternbildung",
+        "medienführerschein"
+      ],
+      "Elterliche Verantwortung und technische Hilfen": [
+        "elterliche verantwortung",
+        "jugendschutzeinstellungen",
+        "jugendschutzprogramme",
+        "kinderschutzfilter",
+        "altersgerechte geräte"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5fa4e1bbcd5816eb6092e9d5d7dcebb3ee41c50cca4e804a98edb03dbfc20d8f",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "3302": {
+            "Nutzungszeiten begrenzen": {
+              "handyverbot": 0,
+              "handyfreie schule": 0,
+              "bildschirmzeit": 0,
+              "nutzungszeiten": 0,
+              "schlafenszeit": 0,
+              "handynutzung begrenzen": 0,
+              "smartphone-verbot": 0
+            },
+            "Familiäre Regeln und Aufklärung": {
+              "medienregeln in der familie": 0,
+              "aufklärung über schlaf": 0,
+              "medienerziehung": 0,
+              "elternabende": 0,
+              "mediennutzungsvertrag": 0
+            }
+          },
+          "3303": {
+            "Medienbildung und Beratung ausbauen": {
+              "medienbildung": 0,
+              "medienkompetenz": 1,
+              "digitale bildung": 0,
+              "elternberatung": 0,
+              "medienpädagogik": 0,
+              "elternbildung": 0,
+              "medienführerschein": 0
+            },
+            "Elterliche Verantwortung und technische Hilfen": {
+              "elterliche verantwortung": 0,
+              "jugendschutzeinstellungen": 0,
+              "jugendschutzprogramme": 0,
+              "kinderschutzfilter": 0,
+              "altersgerechte geräte": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "3302": {
+            "Nutzungszeiten begrenzen": {
+              "handyverbot": 0,
+              "handyfreie schule": 0,
+              "bildschirmzeit": 0,
+              "nutzungszeiten": 0,
+              "schlafenszeit": 0,
+              "handynutzung begrenzen": 0,
+              "smartphone-verbot": 0
+            },
+            "Familiäre Regeln und Aufklärung": {
+              "medienregeln in der familie": 0,
+              "aufklärung über schlaf": 0,
+              "medienerziehung": 0,
+              "elternabende": 0,
+              "mediennutzungsvertrag": 0
+            }
+          },
+          "3303": {
+            "Medienbildung und Beratung ausbauen": {
+              "medienbildung": 2,
+              "medienkompetenz": 0,
+              "digitale bildung": 4,
+              "elternberatung": 0,
+              "medienpädagogik": 0,
+              "elternbildung": 0,
+              "medienführerschein": 0
+            },
+            "Elterliche Verantwortung und technische Hilfen": {
+              "elterliche verantwortung": 0,
+              "jugendschutzeinstellungen": 0,
+              "jugendschutzprogramme": 0,
+              "kinderschutzfilter": 0,
+              "altersgerechte geräte": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "3302": {
+            "Nutzungszeiten begrenzen": {
+              "handyverbot": 0,
+              "handyfreie schule": 0,
+              "bildschirmzeit": 0,
+              "nutzungszeiten": 0,
+              "schlafenszeit": 0,
+              "handynutzung begrenzen": 0,
+              "smartphone-verbot": 0
+            },
+            "Familiäre Regeln und Aufklärung": {
+              "medienregeln in der familie": 0,
+              "aufklärung über schlaf": 0,
+              "medienerziehung": 0,
+              "elternabende": 0,
+              "mediennutzungsvertrag": 0
+            }
+          },
+          "3303": {
+            "Medienbildung und Beratung ausbauen": {
+              "medienbildung": 3,
+              "medienkompetenz": 4,
+              "digitale bildung": 6,
+              "elternberatung": 0,
+              "medienpädagogik": 0,
+              "elternbildung": 0,
+              "medienführerschein": 0
+            },
+            "Elterliche Verantwortung und technische Hilfen": {
+              "elterliche verantwortung": 0,
+              "jugendschutzeinstellungen": 0,
+              "jugendschutzprogramme": 0,
+              "kinderschutzfilter": 0,
+              "altersgerechte geräte": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

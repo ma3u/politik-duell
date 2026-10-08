@@ -1,0 +1,35 @@
+{
+  "blind_pruefsumme": "e016319cbab305341dea28f809632d82df6620328aafcbfd288905c10536df28",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Kostenfreie schulische Förder- und Nachhilfeangebote flächendeckend (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Nachhilfe in Kleingruppen verbessert Leistungen laut Metaanalysen deutlich, vor allem in der Schule und durch geschultes Personal; Umfang und Form sind offen, Personal und dauerhafte Kosten sind die Hürde.", "evidenz": "belegt", "beleg_studie_url": "https://www.nber.org/papers/w27476" },
+    { "kennung": "I2", "name": "Kitabesuch ab drei Jahren fördern, Platzausbau vorrangig in Quartieren mit hohem Bedarf (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Kitabesuch ab drei verbessert die Schulfähigkeit benachteiligter und zugewanderter Kinder deutlich; wie der Besuch gefördert wird, bleibt offen. Der Ausbau braucht Fachkräfte, die knapp sind.", "evidenz": "belegt", "beleg_studie_url": "https://iab.de/en/publications/publication/?id=8487991" },
+    { "kennung": "I3", "name": "Erhebung sprachlicher und mathematischer Defizite vor der Einschulung mit gezielter Förderung (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Frühe Erhebung mit gezielter Förderung setzt an Sprach- und Rechenrückständen vor Schulbeginn an; Studien zu vorschulischen Förderprogrammen zeigen unterschiedlich starke Effekte. Braucht Fachkräfte für die Förderung.", "evidenz": "gemischt" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I1", "ursachen": [403] },
+    { "kennung": "M02", "instrument": 6077, "ursachen": [404] },
+    { "kennung": "M03", "instrument": 6077, "ursachen": [404] },
+    { "kennung": "M04", "instrument": 6071, "ursachen": [405] },
+    { "kennung": "M05", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Entlastung und praxisnähere Ausbildung können den Beruf attraktiver machen und Abwanderung bremsen; weniger Mehrarbeit und ein fester Schlüssel erhöhen aber zunächst den Bedarf an Lehrkräften.", "evidenz": "gemischt" }, "ursachen": [401] },
+    { "kennung": "M06", "instrument": 6069, "ursachen": [404] },
+    { "kennung": "M07", "instrument": 6079, "ursachen": [405] },
+    { "kennung": "M08", "instrument": 6075, "ursachen": [401] },
+    { "kennung": "M09", "instrument": 6076, "ursachen": [402] },
+    { "kennung": "M10", "instrument": 6069, "ursachen": [404] },
+    { "kennung": "M11", "instrument": 6072, "ursachen": [401] },
+    { "kennung": "M12", "instrument": 6084, "ursachen": [405] },
+    { "kennung": "M13", "instrument": "I3", "ursachen": [404, 403] },
+    { "kennung": "M14", "instrument": "I2", "ursachen": [404] },
+    { "kennung": "M15", "instrument": 6071, "ursachen": [405] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Kleinere Klassen können Leistungen verbessern, Studien sind aber uneinheitlich. Ein verbindlicher Schlüssel schafft keine Lehrkräfte, sondern erhöht bei bestehendem Mangel den Bedarf; das Personal fehlt absehbar.", "evidenz": "gemischt", "beleg_studie_url": "https://wol.iza.org/articles/class-size-does-it-matter-for-student-achievement/lang/de" }, "ursachen": [401] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; ursachen_offen enthielt die Liste nicht. Keine Maßnahme ohne Ursache.
+- M13 bekommt ein eigenes Instrument statt 6069, weil es neben Sprache auch mathematische Defizite erfasst (daher zusätzlich 403) und keine Verbindlichkeit/Förderpflicht nennt.
+- M09 („Sanierung beschleunigen“ plus „verlässliche Investitionen“) zu 6076 statt 6085 gestellt, weil es eine Investitionszusage enthält; Grenzfall.
+- M05 ist ein Bündel (Entlastung, Ausbildung, weniger Mehrarbeit, Schlüssel), das Zitat deckt vor allem die praxisnähere Ausbildung; daher Einzelbewertung statt 6072/6073.
+- M16 schwer: Ein Personalschlüssel setzt am Mangel nur über die Verteilung an, verschärft ihn rechnerisch; Umsetzbarkeit 1, weil Personal absehbar fehlt.
+- Hinweis zu 6079 (Längeres gemeinsames Lernen, „offen“): Internationale Differenzen-in-Differenzen-Studien finden, dass frühe Aufteilung die Ungleichheit erhöht (Hanushek/Woessmann, https://hanushek.stanford.edu/publications/does-educational-tracking-affect-performance-and-inequality-differences-differences); „gemischt“ wäre eher passend.
+- Hinweis zu 6071 (Sozialindex): Die US-Evaluation der School Improvement Grants fand keine signifikanten Effekte von Turnaround-Programmen (https://ies.ed.gov/use-work/resource-library/report/evaluation-report/school-improvement-grants-implementation-and-effectiveness); „gemischt“ bleibt vertretbar.

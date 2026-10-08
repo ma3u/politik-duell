@@ -112,7 +112,11 @@
       "programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf",
       "programm_stand": "2025-01-16",
       "programm_sha256": "71a00478c12063ec6177f51b70ae2348369716d5a6c32854cfd547d85a988a62",
-      "landesprogramme": []
+      "landesprogramme": [
+        { "land": "ST", "landtagswahl": "2026-09-06", "url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf", "stand": "2026-06-30", "sha256": "0df413e7bdf767923f5cbfff9cecc2ed2519ae487961d1e9f0781d0c2418a7f0" },
+        { "land": "MV", "landtagswahl": "2026-09-20", "url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf", "stand": "2026-07-24", "sha256": "a992f71adf0b37a633c60d9ac1e8923680e8a7e01ac428bf2e86036294e57663" },
+        { "land": "BE", "landtagswahl": "2026-09-20", "url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf", "stand": "2026-04-25", "sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1" }
+      ]
     }
   ]
 }

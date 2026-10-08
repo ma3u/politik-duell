@@ -1,0 +1,23 @@
+{
+  "blind_pruefsumme": "65bcb678ac3679beb6dfeb0b6e6d43efb2028845841df0d0009531d3673d35cd",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 7277, "ursachen": [1701] },
+    { "kennung": "M02", "instrument": 7286, "ursachen": [1703] },
+    { "kennung": "M03", "instrument": 7291, "ursachen": [1702] },
+    { "kennung": "M04", "instrument": 7302, "ursachen": [1705] },
+    { "kennung": "M05", "instrument": 7287, "ursachen": [1702, 1703] },
+    { "kennung": "M06", "instrument": 7302, "ursachen": [1705] },
+    { "kennung": "M07", "instrument": 7298, "ursachen": [1702] },
+    { "kennung": "M08", "instrument": 7293, "ursachen": [1702] },
+    { "kennung": "M09", "instrument": 7287, "ursachen": [1702, 1703] },
+    { "kennung": "M10", "instrument": 7276, "ursachen": [1701] }
+  ]
+}
+
+Hinweise:
+- Nicht bestätigt: M01 -> 1704. Flexiblere Öffnungszeiten für Schichtarbeitende setzen nicht an ungeplanten Schließtagen an, sondern an der Passung von Angebot und Bedarf. Stattdessen 1701 genannt (außerhalb der vorgeschlagenen Listen, als Hinweis); das DJI belegt, dass Eltern zeitlich flexiblere Angebote wünschen und die Lücke zwischen Wunsch und Nutzung auch an fehlender Passung liegt. Wird 1701 nicht übernommen, setzt M01 an keiner der vorgeschlagenen Ursachen an.
+- Offen entschieden: M09 -> 1702 bestätigt, weil der Text ausdrücklich „mehr pädagogisches Personal“ zusagt (wie M05: „mehr pädagogisches Personal pro Gruppe“ plus Vergütung). M02 nennt nur Zielgrößen ohne Weg zu mehr Personal, daher nur 1703.
+- Zuordnung zu vorhandenen Instrumenten: M02 entspricht genau 7286 (1:3 / 1:7,5, Land). M05 und M09 ohne Zielwert -> 7287 (schrittweise Verbesserung); M05 enthält zusätzlich Vergütung, die Bewertung (2/2) wäre bei 7291 gleich. M04 (6 Stunden beitragsfrei, darüber einkommensgestaffelt) und M06 (Beitragsfreiheit sichern) -> 7302; die Teil-Beitragsfreiheit mit Staffelung wäre nicht anders zu bewerten. M10 (Vorrang für Quartiere mit hohem Bedarf beim Ausbau) -> 7276 (bedarfsorientierte Steuerung), alternativ 7274.
+- Quellen der vorhandenen Instrumente geöffnet (DJI ERiK 2024 zu Personalschlüsseln und Ausfällen; DJI Personalkrise; DJI gebührenfreie Kitas; DJI bedarfsgerechte Angebote; DJI flexible Betreuungsangebote): Sie tragen die jeweiligen Einstufungen. Die Quelle von 7298 (DJI ERiK 2024) sagt zu multiprofessionellen Teams wenig; die Einstufung „gemischt“ bleibt vertretbar, eine passendere Quelle wäre wünschenswert.
+- Schwer fiel: M01 (Ursache), M10 (zwischen Planung 7276 und Ausbau 7274).

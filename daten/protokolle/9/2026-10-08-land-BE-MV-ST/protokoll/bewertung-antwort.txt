@@ -1,0 +1,67 @@
+{
+  "blind_pruefsumme": "1effa7a09185658bfdd0bea2368d392f1431da6b83410988d279db65942c37d0",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Bodycams für Polizeikräfte mit Einschaltpflicht und Schutz der Aufnahmen (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Laut Campbell-Übersichtsstudie senken Bodycams Beschwerden etwas, Gewaltanwendung und Festnahmen aber nicht verlässlich; Folgen für Aufklärung und Verurteilungen sind kaum untersucht. Das Land kann Einsatz und Pflichten im Polizeigesetz regeln.", "evidenz": "gemischt", "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/" },
+    { "kennung": "I2", "name": "Unabhängige Ermittlungs- oder Beschwerdestelle für mutmaßliche Polizeigewalt (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Polizeigewalt wird laut einer Opferbefragung (KviAPol) nur selten angezeigt und verfolgt; eine unabhängige Stelle setzt dort an. Ob solche Stellen mehr Taten aufklären, ist kaum untersucht, und sie betreffen nur einen kleinen Teil der Straftaten.", "evidenz": "offen", "beleg_studie_url": "https://www.lto.de/recht/nachrichten/n/studie-polizeigewalt-singelnstein-zwischenbericht" },
+    { "kennung": "I3", "name": "Bagatellverfahren im Land häufiger einstellen, etwa Fahren ohne Fahrschein oder geringe Drogenmengen (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Allein Fahren ohne Fahrschein führte 2021 zu über 38.000 Verurteilungen und fast einem Viertel der Ersatzfreiheitsstrafen; Einstellungsrichtlinien des Landes entlasten die Justiz rasch. Schwerere Taten werden dadurch nur indirekt schneller verfolgt.", "evidenz": "belegt", "beleg_studie_url": "https://www.drb.de/positionen/stellungnahmen/stellungnahme/news/14-2023" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 7652, "ursachen": [908] },
+    { "kennung": "M02", "instrument": 7637, "ursachen": [902] },
+    { "kennung": "M03", "instrument": 7636, "ursachen": [902] },
+    { "kennung": "M04", "instrument": "I2", "ursachen": [902] },
+    { "kennung": "M05", "instrument": 7642, "ursachen": [903] },
+    { "kennung": "M06", "instrument": 7629, "ursachen": [901] },
+    { "kennung": "M07", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Eine klarere Aufgabenteilung kann Polizeikräfte für Ermittlungen und Einsätze frei machen. Wie viel Zeit das bringt und ob mehr Taten aufgeklärt werden, ist kaum untersucht; die kommunalen Ordnungsdienste brauchen dafür selbst Personal.", "evidenz": "offen" }, "ursachen": [902] },
+    { "kennung": "M08", "instrument": "I2", "ursachen": [902] },
+    { "kennung": "M09", "instrument": "I1", "ursachen": [902] },
+    { "kennung": "M10", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Gemeinsame Kontrollen mehrerer Behörden können Verstöße und Strukturen sichtbar machen, die einzelne Stellen übersehen. Ohne konkreten Auftrag bleibt die Wirkung auf die Aufklärung von Straftaten unbestimmt, Studien dazu fehlen.", "evidenz": "offen" }, "ursachen": [902] },
+    { "kennung": "M11", "instrument": 7635, "ursachen": [901, 902] },
+    { "kennung": "M12", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Ein Codewort in Clubs und Bars verschafft Betroffenen von Belästigung schnelle Hilfe vor Ort und ist günstig umzusetzen. Ob es Übergriffe verhindert oder Anzeigen erhöht, ist nicht untersucht; es erreicht nur das Nachtleben.", "evidenz": "offen" }, "ursachen": [908] },
+    { "kennung": "M13", "instrument": 7657, "ursachen": [902] },
+    { "kennung": "M14", "instrument": "I3", "ursachen": [902] },
+    { "kennung": "M15", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Zielzeiten machen lange Verfahren sichtbar und können die Steuerung verbessern. Ohne mehr Personal bleibt der Effekt begrenzt, für Gerichte setzt die richterliche Unabhängigkeit verbindlichen Vorgaben Grenzen, und Wirkungsstudien fehlen.", "evidenz": "offen" }, "ursachen": [902] },
+    { "kennung": "M16", "instrument": 7627, "ursachen": [901] },
+    { "kennung": "M17", "instrument": 7642, "ursachen": [903] },
+    { "kennung": "M18", "instrument": 7629, "ursachen": [901] },
+    { "kennung": "M19", "instrument": "I1", "ursachen": [902] },
+    { "kennung": "M20", "instrument": 7643, "ursachen": [904] },
+    { "kennung": "M21", "instrument": 7634, "ursachen": [901] },
+    { "kennung": "M22", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Schnellere Einstellungsverfahren verringern den Verlust von Bewerbern an andere Arbeitgeber. Sie schaffen aber keine zusätzlichen Stellen oder Bewerber, und zur Wirkung auf die Personalstärke gibt es kaum Daten.", "evidenz": "offen" }, "ursachen": [902] },
+    { "kennung": "M23", "instrument": 7629, "ursachen": [901] },
+    { "kennung": "M24", "ursachen": [] },
+    { "kennung": "M25", "instrument": 7659, "ursachen": [902] },
+    { "kennung": "M26", "instrument": "I2", "ursachen": [902] },
+    { "kennung": "M27", "instrument": 7646, "ursachen": [904] },
+    { "kennung": "M28", "instrument": 7656, "ursachen": [902] },
+    { "kennung": "M29", "instrument": 7649, "ursachen": [904] },
+    { "kennung": "M30", "instrument": 7644, "ursachen": [904] },
+    { "kennung": "M31", "instrument": 7646, "ursachen": [904, 908] },
+    { "kennung": "M32", "instrument": 7646, "ursachen": [904] },
+    { "kennung": "M33", "instrument": "I1", "ursachen": [902] },
+    { "kennung": "M34", "instrument": "I3", "ursachen": [902] },
+    { "kennung": "M35", "instrument": 7648, "ursachen": [904, 908] },
+    { "kennung": "M36", "instrument": 7643, "ursachen": [904, 908] },
+    { "kennung": "M37", "instrument": 7643, "ursachen": [904] },
+    { "kennung": "M38", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Anonyme Meldungen zeigen, wo sich Menschen unsicher fühlen, und können Beleuchtung oder Streifen gezielter lenken, wie Projekte in Australien versuchen. Ob das die Sicherheit verbessert, ist nicht untersucht und hängt von den Folgemaßnahmen ab.", "evidenz": "offen" }, "ursachen": [901] },
+    { "kennung": "M39", "instrument": 7645, "ursachen": [904] },
+    { "kennung": "M40", "instrument": 7638, "ursachen": [902] }
+  ]
+}
+
+Nicht bestätigte Vorschläge:
+- M18: 904 nicht bestätigt, stattdessen offene 901. Das Zitat nennt kommunale Lichtkonzepte (Regel 1, öffentlicher Raum); Partnerschaftsgewalt geschieht überwiegend in der Wohnung, Beleuchtung setzt dort nicht an. Die Bildungskampagnen sind zu unbestimmt für ein eigenes Instrument.
+- M24: 902 nicht bestätigt, ursachen []. Eine Studie zu Racial Profiling und Menschenfeindlichkeit in der Polizei setzt an keiner Ursache an (weder Aufklärung noch Kriminalstatistik im Sinne von 909).
+
+Offene Ursachen:
+- M01: 904 nicht übernommen (anonyme Spurensicherung gehört nach Regel 12 zu 908, das Zitat nennt keine Partnerschaftsgewalt).
+- M10, M13, M28: 902 übernommen (Regel 4, organisierte Kriminalität bzw. Behördenvernetzung nur als offen 902).
+- M11: 902 übernommen, weil das Zitat ausdrücklich Justiz und Strafverfolgung nennt.
+- M12: 901 nicht übernommen (Clubs und Bars sind kein öffentlicher Raum im Sinne von Regel 1).
+- M16: 902 nicht übernommen (Präsenzpunkte schaffen keine zusätzlichen Ermittlungskapazitäten, Regel 2).
+
+Schwierige Einstufungen:
+- M31 (Koordinierungsstelle plus Fußfessel) habe ich 7646 zugeordnet, weil die Fußfessel der stärkere Teil ist; 908 stammt aber aus der Koordinierungsstelle, für 908 ist W2 daher eher großzügig.
+- M04/M26/M08 (Ermittlungsstelle Polizeigewalt) und Bodycams (M09/M19/M33) habe ich gemäß Erfassung bei 902 gelassen; sie berühren nur einen kleinen Ausschnitt der unaufgeklärten Taten. Man kann argumentieren, dass sie gar nicht am Thema ansetzen. Die Campbell-Übersicht zu Bodycams klammert Ermittlungs- und Verurteilungsergebnisse ausdrücklich aus.
+- M06 (nur „Konzept erarbeiten“) bekommt dieselbe Bewertung wie der Ausbau der Beleuchtung (7629, W3); eine Herabstufung wegen des reinen Konzeptcharakters wäre vertretbar.
+- M14/M34: Instrument 7658 (über den Bund, U1) passt nicht, weil das Land hier eigene Einstellungsspielräume nutzt (U3); daher neues Instrument I3 mit der DRB-Quelle aus 7658.

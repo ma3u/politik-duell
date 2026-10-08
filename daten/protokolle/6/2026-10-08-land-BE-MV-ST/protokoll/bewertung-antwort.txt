@@ -1,0 +1,15 @@
+{
+  "blind_pruefsumme": "db95b3d99f7b9a98262ca014402a7bbc313160639bfd5730ceec1a3f0e69ea32",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 6118, "ursachen": [601] },
+    { "kennung": "M02", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Zusätzliche feste Stellen, auch in Einwanderungs- und Flüchtlingsbehörden, können Anliegen bündeln und Behörden etwas entlasten; die Überlastung entsteht laut Studien aber auch durch komplexes Recht und schleppende Digitalisierung, und Zahl und Wirkung der Stellen bleiben offen.", "evidenz": "offen", "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/unsere-projekte/migration-fair-gestalten/projektnachrichten/studie-auslaenderbehoerden-zwischen-anspruch-und-alltag" }, "ursachen": [601] },
+    { "kennung": "M03", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Ein Rahmenvertrag mit verlässlicher Refinanzierung macht die Bereitstellung von Plätzen planbarer und kann teure Notbeschaffung vermeiden; zusätzliche Plätze schafft er nicht direkt, und höhere Qualitätsvorgaben können Kosten erhöhen. Das Land kann ihn selbst regeln.", "evidenz": "offen", "beleg_studie_url": "https://www.bpb.de/themen/migration-integration/kurzdossiers/kommunale-migrations-und-fluechtlingspolitik/577376/kommunale-unterbringung-von-gefluechteten-in-deutschland/" }, "ursachen": [601] }
+  ]
+}
+
+Hinweise:
+- M01: entspricht dem vorhandenen Instrument 6118 (dezentrale Unterbringung, Land); Ursache 601 bestätigt.
+- M02: offene Ursache 601 bestätigt, weil die Maßnahme ausdrücklich neue feste Stellen in den Landesämtern für Einwanderung und für Flüchtlingsangelegenheiten schafft (Personal in überlasteten Behörden). Grenzfall: Der Schwerpunkt liegt auf Zuständigkeit und Ansprechpersonen für Zugewanderte, nicht auf Kapazität; deshalb nur Wirksamkeit 1 und kein Verweis auf 6115 (dort gezielte personelle und digitale Stärkung der Ausländerbehörden).
+- M03: Ursache 601 bestätigt; eigene Bewertung, weil ein Rahmenvertrag für Betreiber weder 6116 (Geld für Kommunen) noch 6121 (verbindlich mehr Plätze) entspricht.
+- Keine Maßnahme ohne Ursache. Schwer fiel die Einstufung von M02 (Ursache ja oder nein).

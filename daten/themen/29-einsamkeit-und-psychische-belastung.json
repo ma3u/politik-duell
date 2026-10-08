@@ -2314,6 +2314,144 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8618,
+          "instrument": 8150,
+          "beschreibung": "Mental Health Coaches an Schulen und Jugendzentren und Mental Health im Lehrplan verankern; Mental Health Days vor Ort einführen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir führen „Mental Health Days“ auf lokaler Ebene ein und erheben regelmäßig Daten zur psychischen Gesundheit in Berlin. Wir etablieren Mental Health Coaches an Schulen und Jugendzentren und verankern Mental Health im Lehrplan.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8619,
+          "instrument": 8151,
+          "beschreibung": "Pflichtfach Lebenskompetenz mit Schwerpunkt psychische Gesundheit, Empathie und sozial-emotionalem Lernen, zunächst an Pilotschulen.",
+          "ursachen_ids": [2903],
+          "zitat": "Wir führen „Lebenskompetenz“ als Pflichtfach ein. Damit stärken wir Kompetenzen für ein selbstbestimmtes Leben in den Bereichen Gesundheit und Prävention mit Fokus auf psychische Gesundheit",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8620,
+          "beschreibung": "Gesundheitskioske und Gesundheitslots*innen für niedrigschwellige, mehrsprachige Beratung in benachteiligten Stadtteilen.",
+          "ursachen_ids": [2903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehrsprachige Gesundheitskioske wurden in einer Evaluation gut angenommen, Gesundheitskompetenz stieg aber nicht messbar; psychische Gesundheit ist nur ein Thema unter vielen. Dauerfinanzierung mit Kassen ungeklärt.",
+          "zitat": "Wir führen Gesundheitskioske und Gesundheitslots*innen zur niedrigschwelligen, mehrsprachigen Beratung und Stärkung der Gesundheitskompetenz – und das über alle Lebensphasen hinweg – in besonders benachteiligten Stadtteilen ein.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=80",
+          "beleg_studie_url": "https://www.aerzteblatt.de/archiv/223895",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8621,
+          "instrument": 8152,
+          "beschreibung": "Betroffene in Anti-Stigma-Kampagnen und Programme zur psychischen Gesundheit einbeziehen.",
+          "ursachen_ids": [2904],
+          "zitat": "Wir beziehen Betroffene mit ein: bei der Gestaltung von Programmen, bei Anti-Stigma-Kampagnen und bei der Förderung von Gesundheitskompetenz in Schulen, Vereinen und Betrieben.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8622,
+          "instrument": 8142,
+          "beschreibung": "Begegnungsorte gegen Einsamkeit wie Mehrgenerationencafés und Nachbarschaftszentren schaffen.",
+          "ursachen_ids": [2901],
+          "zitat": "Wir schaffen Begegnungsorte gegen Einsamkeit, wie Mehrgenerationencafés und Nachbarschaftszentren, von denen insbesondere Senior*innen, Kinder und Jugendliche profitieren.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Gesellschaftlicher Zusammenhalt' (S. 13-16), 'Gesundheit und Wohlbefinden' (S. 29-32) sowie Fundstellen S. 3, 26, 44, 64 gelesen; keine Zusage zu Einsamkeit, Trauerbegleitung, psychischer Aufklärung oder Männern/Hilfesuche.",
+        "stand": "2026-10-08",
+        "treffer": 8,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2901, 2903, 2904],
+      "massnahmen": [
+        {
+          "id": 8623,
+          "instrument": 8154,
+          "beschreibung": "Niedrigschwellige Angebote zur psychischen Gesundheit wie Mental-Health-Cafés, Gruppen und digitale Formate ausbauen.",
+          "ursachen_ids": [2903],
+          "zitat": "Ausbau niedrigschwelliger Angebote wie Mental-Health-Cafés, Gruppenangebote und digitale Unterstützungsformate",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8624,
+          "instrument": 8154,
+          "beschreibung": "Männerberatungsstellen und psychosoziale Beratung ausbauen und regional besser verfügbar machen.",
+          "ursachen_ids": [2904],
+          "zitat": "Ausbau und bessere regionale Verfügbarkeit von Männerberatungsstellen und psychosozialer Beratung",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=128",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8625,
+          "instrument": 8152,
+          "beschreibung": "Öffentlichkeitsarbeit, die das Holen von Hilfe als normale Stärke vermittelt.",
+          "ursachen_ids": [2904],
+          "zitat": "Ergänzt werden diese Maßnahmen durch eine klare Öffentlichkeitsarbeit, die Hilfeholen als normale Stärke vermittelt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=128",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8626,
+          "beschreibung": "Soziale Gesundheit stärken durch Programme gegen Einsamkeit und Förderung stabiler Beziehungen.",
+          "ursachen_ids": [2901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gruppenangebote gegen Isolation zeigen in Übersichten häufig Verbesserungen, die Studien sind aber oft schwach; ohne benannte Programme bleibt offen, was entsteht. Land kann Programme leicht auflegen.",
+          "zitat": "Wir richten Gesundheitspolitik konsequent auf Prävention und Ursachenbekämpfung aus und erweitern wirksame Vorsorgeangebote: […] Stärkung sozialer Gesundheit durch Programme gegen Einsamkeit und Förderung stabiler Beziehungen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=40",
+          "beleg_studie_url": "https://europepmc.org/article/MED/21843337",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

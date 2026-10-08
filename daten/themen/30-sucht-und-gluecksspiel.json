@@ -1214,6 +1214,51 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "massnahmen": [
+        {
+          "id": 8598,
+          "instrument": 8322,
+          "beschreibung": "Diamorphin-Substitution ausbauen und drogenabhängigen Menschen Zugang zu psychotherapeutischer Hilfe ermöglichen",
+          "ursachen_ids": [3006],
+          "zitat": "Wir bauen die Diamorphinsubstitution aus und ermöglichen drogenabhängigen Menschen einen Zugang zu nachhaltiger psychotherapeutischer Hilfe.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=84",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 2-3), Kapitel Gesellschaftlicher Zusammenhalt (S. 13-14), Gesundheit und Wohlbefinden (S. 29-34) gelesen; Textsuche nach Sucht, Alkohol, Glücksspiel, Wetten, Drogen, Cannabis, Tabak, Stigma ohne Treffer. Keine Zusage zu Suchtprävention, Glücksspielrecht oder Suchthilfe.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3001, 3004, 3006],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Gesundheit schützen - Suchtverhalten wirksam eindämmen' (S. 146), Nichtraucherschutz (S. 46 gedruckt), Psychische Gesundheit/Männerberatung (ca. S. 125-128) und Fundstellen S. 15, 37, 128 gelesen; nichts zu Verkaufsstellen/Jugendschutz Alkohol, Glücksspiel oder Suchtberatung/Entstigmatisierung.",
+        "stand": "2026-10-08",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
     }
   ]
 }

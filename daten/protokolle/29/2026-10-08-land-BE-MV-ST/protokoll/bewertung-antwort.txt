@@ -1,0 +1,24 @@
+{
+  "blind_pruefsumme": "02e8e1a0b85c98f0a9fa8b3a6e334c261b5e127cb27f4e7f7c23899425724be5",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 8152, "ursachen": [2904] },
+    { "kennung": "M02", "instrument": 8150, "ursachen": [2903] },
+    { "kennung": "M03", "instrument": 8151, "ursachen": [2903] },
+    { "kennung": "M04", "instrument": 8154, "ursachen": [2903] },
+    { "kennung": "M05", "instrument": 8154, "ursachen": [2904, 2903] },
+    { "kennung": "M06", "instrument": 8142, "ursachen": [2901] },
+    { "kennung": "M07", "instrument": 8152, "ursachen": [2904] },
+    { "kennung": "M08", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Gruppenangebote gegen Isolation zeigen in Übersichten häufig Verbesserungen, die Studien sind aber oft schwach; ohne benannte Programme bleibt offen, was entsteht. Land kann Programme leicht auflegen.", "evidenz": "gemischt", "beleg_studie_url": "https://europepmc.org/article/MED/21843337" }, "ursachen": [2901] },
+    { "kennung": "M09", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Mehrsprachige Gesundheitskioske wurden in einer Evaluation gut angenommen, Gesundheitskompetenz stieg aber nicht messbar; psychische Gesundheit ist nur ein Thema unter vielen. Dauerfinanzierung mit Kassen ungeklärt.", "evidenz": "gemischt", "beleg_studie_url": "https://www.aerzteblatt.de/archiv/223895" }, "ursachen": [2903] }
+  ]
+}
+
+Hinweise:
+- Alle Maßnahmen sind Landesebene; alle vorgeschlagenen Ursachen bestätigt. Keine offenen Ursachen in der Liste. Keine Maßnahme ohne Ursache.
+- M05: zusätzlich 2903 genannt (Hinweis, nicht in ursachen_ids), weil der Text neben Männerberatung allgemein den Ausbau psychosozialer Beratung zusagt – nach Regel 1 niedrigschwellige Beratung (2903). Zugeordnet zu 8154, da derselbe Lösungsweg (Beratungsstellen ausbauen); die zielgruppengerechte Ausrichtung auf Männer stützt eine Review zu Hilfesuche-Interventionen für Männer (7 von 9 Studien mit Verbesserung, meist nur Einstellungen gemessen, https://pmc.ncbi.nlm.nih.gov/articles/PMC6560805/), daher keine abweichende Bewertung.
+- M02: Mental Health Coaches an Schulen und Jugendzentren zu 8150 (zusätzliches Fachpersonal an Schulen) statt 8151 (Lehrplan), weil das Personal der stärkere Teil der Zusage ist. Die Evaluation eines vergleichbaren Modellprogramms misst vor allem Akzeptanz, nicht Wirkung auf psychische Gesundheit – passt zu „offen“ in 8150. Lehrplan-Teil allein wäre 8151.
+- M07: Einbeziehung Betroffener in Anti-Stigma-Kampagnen zu 8152; Kontaktansätze sind laut Übersicht die wirksamste Form, aber nur kurzfristig belegt – daher keine Höherstufung.
+- M09 fiel schwer: Gesundheitskioske sind allgemeine Gesundheitsberatung, psychische Gesundheit nennt das Zitat nicht ausdrücklich. 2903 als Randbezug bestätigt (Wirksamkeit 1); man könnte auch „keine Ursache“ vertreten.
+- M08 fiel schwer: „Programme gegen Einsamkeit“ ohne Inhalt – nicht 8143 (Strategie/Koordination), da Programme angekündigt werden, aber auch nicht 8142, da kein konkretes Angebot benannt ist; daher Einzelbewertung mit 1.
+- Quellen 21843337, 26410341, 31734106 und PMC13341547 über die Europe-PMC-Schnittstelle geprüft (Seiten selbst gaben 403); Forschungsstand der Instrumente übernommen.

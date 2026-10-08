@@ -1,0 +1,188 @@
+{
+  "pruefsumme": "18a4ec311bcc036bc38ba3b6ce1492e8a06ff8be958081d27268ae1b70491584",
+  "thema": {
+    "id": 30,
+    "name": "Sucht und Glücksspiel",
+    "ziel": "Betroffene können Abhängigkeit und gesundheitliche, soziale sowie finanzielle Schäden vermeiden oder überwinden und ihren Alltag selbstbestimmt gestalten."
+  },
+  "ursachen": [
+    {
+      "id": 3001,
+      "beschreibung": "Leichte Verfügbarkeit von Alkohol hängt mit höherem Konsum zusammen; der Zusammenhang unterscheidet sich nach Verkaufsstelle und Altersgruppe (Review von 32 Reviews, 2025)",
+      "ebene": "land"
+    },
+    {
+      "id": 3002,
+      "beschreibung": "Niedrigere Preise gehen mit höherer Nachfrage nach Alkohol und Tabak einher; nicht alle Konsumgruppen reagieren gleich stark (Review, 2024)",
+      "ebene": "bund"
+    },
+    {
+      "id": 3003,
+      "beschreibung": "Alkohol- und Tabakwerbung erhöht bei Jugendlichen die Bereitschaft zum Konsum; bei hoher Selbstkontrolle ist der Effekt geringer (Studie, 2010)",
+      "ebene": "bund"
+    },
+    {
+      "id": 3004,
+      "beschreibung": "Schnelle, leicht zugängliche Glücksspiele erleichtern häufige Einsätze und hohe Verluste; Werbung für Sportwetten hängt mit mehr Spielen zusammen (Reviews 2021 und 2025)",
+      "ebene": "land"
+    },
+    {
+      "id": 3005,
+      "beschreibung": "Auf dem illegalen Drogenmarkt sind Wirkstoffe und Dosierungen unbekannt; die meisten der mindestens 7.600 drogenbezogenen Todesfälle in der EU 2024 betrafen mehrere Substanzen",
+      "ebene": "bund"
+    },
+    {
+      "id": 3006,
+      "beschreibung": "Scham und erwartete Abwertung halten von Hilfe ab: 36,1 % von 119 stationär behandelten Menschen mit Suchterkrankung in Frankfurt mieden notwendige medizinische Behandlung (2021 bis 2024)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006
+      ],
+      "text": "Zu 3001 Verkaufszeiten, Verkaufsstellen und Jugendschutz bei Alkohol, zu 3002 Steuern und Preise für Alkohol und Tabak, zu 3003 Werbung und Sponsoring, zu 3004 Glücksspielrecht, Spielhallen, Online-Glücksspiel und Sportwetten, zu 3005 illegale Drogen, Drogenpolitik und Risikominderung, zu 3006 Suchtberatung, Behandlung und Entstigmatisierung. Cannabis zählt zu 3005."
+    },
+    {
+      "nr": 2,
+      "text": "Psychische Gesundheit allgemein gehört zu Einsamkeit und psychische Belastung, Gewalt unter Alkoholeinfluss zu Sicherheit. Reguläre Medikamenteneinnahme ist kein Suchtproblem; Medikamentenabhängigkeit zählt nur zu 3006, wenn das Zitat Abhängigkeit oder Hilfe nennt."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8319,
+      "name": "Anonyme, digitale und mobile Suchtberatung ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Anonymität und kurze Wege senken die Hemmschwelle durch Scham; Wirkung auf die Inanspruchnahme ist kaum untersucht. Finanzierbar und kurzfristig umsetzbar."
+    },
+    {
+      "id": 8320,
+      "name": "Suchtberatung und Suchthilfe ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Behandlung wirkt gut belegt, erreicht aber zu wenige Menschen; mehr Angebot beseitigt Scham als Hürde nur indirekt. Landesmittel und Träger vorhanden.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135"
+    },
+    {
+      "id": 8321,
+      "name": "Suchtberatung dauerhaft finanzieren und Struktur absichern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Sichert vorhandene Angebote, schafft aber kaum zusätzlichen Zugang und senkt die Scham-Hürde nicht. Rechtlich und finanziell leicht umsetzbar."
+    },
+    {
+      "id": 8322,
+      "name": "Konsumräume, Streetwork, Substitution und kürzere Wartezeiten ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Konsumräume erreichen Randgruppen und senken Überdosierungen ohne mehr Konsum; Substitution ist gut belegt. Räume brauchen Landesrecht, Therapieplätze Personal.",
+      "beleg_studie_url": "https://doi.org/10.1016/j.drugalcdep.2014.10.012"
+    },
+    {
+      "id": 8323,
+      "name": "Beratung und Versorgung für wohnungslose Menschen mit Suchtberatung ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Erreicht eine Gruppe, die Behandlung häufig meidet; Wirkung kaum untersucht. Landesmittel und Träger vorhanden."
+    },
+    {
+      "id": 8324,
+      "name": "Suchthilfe und Substitution im Strafvollzug absichern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Substitutionsbehandlung ist gut belegt, auch in Haft; senkt Rückfall und Todesfälle. Setzt an Behandlungszugang an, nicht an Scham allgemein. Länderzuständigkeit.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135"
+    },
+    {
+      "id": 8325,
+      "name": "Prävention, Beratung und Therapie bei Sucht ausbauen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Behandlung ist belegt wirksam, die Versorgung liegt aber vor allem bei Ländern, Kommunen und Kassen; der Bund kann Programme und Rahmen setzen.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC7068135"
+    },
+    {
+      "id": 8326,
+      "name": "Prävention und Aufklärung zu Glücksspiel ausbauen oder finanzieren (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Aufklärung wirkte in weniger als der Hälfte der Studien zu Jugendprogrammen; Angebot und Werbung bleiben unverändert. Mit Landesmitteln leicht umsetzbar.",
+      "beleg_studie_url": "https://doi.org/10.1016/j.addbeh.2018.11.048"
+    },
+    {
+      "id": 8327,
+      "name": "Illegales Glücksspiel konsequent verfolgen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Verfolgung kann illegale Angebote eindämmen; Wirkung auf Spielschäden kaum untersucht, Online-Anbieter sind schwer zu fassen. Braucht Personal und Länderabstimmung."
+    },
+    {
+      "id": 8328,
+      "name": "Werbung für Tabak und Alkohol stärker beschränken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Wer mehr Werbung wahrnimmt, raucht später häufiger; Beschränkungen verringern die Reichweite, aber nicht vollständig. Bundesrecht, EU-Spielraum vorhanden.",
+      "beleg_studie_url": "https://www.cochrane.org/evidence/CD003439_does-advertising-and-promotion-tobacco-products-make-children-more-likely-smoke"
+    },
+    {
+      "id": 8329,
+      "name": "Legalen Cannabisverkauf über EU- und UN-Änderungen ermöglichen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "evidenz": "gemischt",
+      "begruendung": "Geprüfte Qualität kann Verunreinigungen senken; Studien zeigen gemischte Folgen für Konsum und Gesundheit. Hängt von EU- und UN-Recht ab, das Deutschland nicht allein ändert.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC10176789"
+    },
+    {
+      "id": 8330,
+      "name": "Cannabis-Freigabe außerhalb medizinischer Nutzung zurücknehmen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Kann den legalen Konsum senken, setzt aber nicht an unbekannten Wirkstoffen am Schwarzmarkt an; Studien zur Legalisierung sind gemischt. Per Bundesgesetz umsetzbar.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC10176789"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Diamorphin-Substitution ausbauen und drogenabhängigen Menschen Zugang zu psychotherapeutischer Hilfe ermöglichen",
+      "zitat": "Wir bauen die Diamorphinsubstitution aus und ermöglichen drogenabhängigen Menschen einen Zugang zu nachhaltiger psychotherapeutischer Hilfe.",
+      "ursachen_ids": [
+        3006
+      ],
+      "pruefsumme": "f84a6d3ee2175240"
+    }
+  ]
+}

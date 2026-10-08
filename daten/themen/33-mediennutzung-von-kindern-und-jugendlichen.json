@@ -1059,6 +1059,63 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8599,
+          "instrument": 8389,
+          "beschreibung": "Medienkompetenz, reflektierter Umgang mit digitalen Technologien und Algorithmusverständnis werden fester Teil des Unterrichts.",
+          "ursachen_ids": [3303],
+          "zitat": "Wir bereiten Schüler*innen verstärkt auf das Leben nach der Schule vor: Medienkompetenz und ein reflektierter Umgang mit digitalen Technologien sowie Algorithmusverständnis, Umgang mit Desinformationen und extremistischen Inhalten gehören für uns in den Unterricht.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8600,
+          "instrument": 8389,
+          "beschreibung": "Medien- und Demokratiebildung altersgerecht und fächerübergreifend ab der ersten Klasse im Unterricht verankern.",
+          "ursachen_ids": [3303],
+          "zitat": "Fächerübergreifende Medien- und Demokratiebildung ab Klasse Eins Altersgerechte und kontinuierliche Vermittlung von Medien- und Demokratiebildung, eingebettet in alle relevanten Fächer",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=7",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3302, 3303],
+      "massnahmen": [
+        {
+          "id": 8601,
+          "instrument": 8389,
+          "beschreibung": "Medien- und Demokratiebildung ab Klasse 1 fächerübergreifend verankern, mit Vermittlung von Plattformlogiken und kritischer Medienkompetenz.",
+          "ursachen_ids": [3303],
+          "zitat": "Medien- und Demokratiebildung wird in Sachsen-Anhalt ab Klasse 1 fächerübergreifend und kontinuierlich verankert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=30",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

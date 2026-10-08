@@ -1,0 +1,377 @@
+{
+  "thema_id": 8,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Angebot in Außenbezirken und Randlagen durch digitale Rufbusse und autonome Shuttles verbessern; langfristige Finanzierung des Deutschlandtickets unterstützen.",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Wir setzen uns für eine langfristige Finanzierung des Deutschlandtickets ein und verbessern gleichzeitig das ÖPNV-Angebot in den Außenbezirken und Randlagen durch digitale Rufbusse und autonome Shuttles.",
+          "seite": 31
+        },
+        {
+          "beschreibung": "Modernen Nahverkehrsplan zeitnah umsetzen: Investitionen bündeln, Takte verbessern, neue Tangentialverbindungen mit Tram und Expressbus schaffen.",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Wir setzen dafür zeitnah einen modernen Nahverkehrsplan um, der Investitionen bündelt, Takte verbessert und neue Tangentialverbindungen wie Tram - und Expressbuslinien schafft.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "U-Bahnen vollautomatisieren und bei Tram und Bus digitale Unterstützungssysteme für Fahrpersonal einsetzen, um den Betrieb unabhängiger vom Fachkräftemangel zu machen.",
+          "ursachen_ids": [
+            803
+          ],
+          "zitat": "Wir priorisieren die Vollautomatisierung von U-Bahnen, um höhere Taktungen und den stabilen Betrieb rund um die Uhr zu ermöglichen. Bei Tram und Bus setzen wir auf digitale Unterstützungssysteme, die Fahrer*innen entlasten und die Zuverlässigkeit erhöhen.",
+          "seite": 32
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 804,
+          "seiten": [
+            31
+          ],
+          "grund": "Nur Einsatz für langfristige Finanzierung des Deutschlandtickets (bei 801 mitzitiert); keine Zusage zu Preis oder günstigeren Tickets. Übrige Treffer 'kostenlos' sind andere Zusammenhänge."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Dichtere Taktung auf stark nachgefragten Hauptachsen, durchgehender Stundentakt auf wichtigen Strecken",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Dichtere Taktung auf stark nachgefragten Hauptachsen, insbesondere zu Stoßzeiten. Einführung eines durchgehenden Stundentakts, zum Beispiel zwischen Rostock und Hamburg",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Landesweite Mindeststandards für Taktung und Anschlusssicherheit im Nahverkehr",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Landesweite Mindeststandards für Taktung und Anschlusssicherheit zur Sicherung der Nutzbarkeit.",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Rufbus- und On-Demand-Systeme ausbauen, um ländliche Regionen besser anzubinden",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Besserer Anschluss, vor allem ländlicher Regionen durch den Ausbau von Rufbus- und On-Demand-Systemen, Sicherstellung ausreichender Fahrzeuge und Fahrer*innen.",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Kostenloser ÖPNV für Schüler, Auszubildende, Studierende und Freiwilligendienst-Leistende",
+          "ursachen_ids": [
+            804
+          ],
+          "zitat": "Kostenloser ÖPNV für Schüler*innen, Auszubildende, Studierende und Freiwilligendienst-Leistende",
+          "seite": 54
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 803,
+          "seiten": [
+            54
+          ],
+          "grund": "Nur der Nebensatz zu ausreichend Fahrerinnen und Fahrern beim Rufbus-Ausbau, keine eigene Maßnahme zur Gewinnung von Fahrpersonal."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesweite Mindeststandards für Taktung, Anschlusssicherheit und Erreichbarkeit im Nahverkehr",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Wir wollen den Nahverkehr als Rückgrat gleichwertiger Lebensverhältnisse stärken, sowie Stadt und Land wieder besser verbinden. […] Landesweite Mindeststandards für Taktung, Anschlusssicherheit und Erreichbarkeit",
+          "seite": 90
+        },
+        {
+          "beschreibung": "Landesweiter Ausbau von Rufbus- und On-Demand-Systemen im ländlichen Raum",
+          "ursachen_ids": [
+            801
+          ],
+          "zitat": "Wir wollen […] Mobilität systematisch ausbauen und intelligent mit dem bestehenden ÖPNV verknüpfen. […] Landesweiter Ausbau von Rufbus- und On-Demand-Systemen",
+          "seite": 91
+        },
+        {
+          "beschreibung": "Ausreichend Fahrzeuge und Fahrpersonal für Rufbusse durch Förderung und Qualifizierung sichern",
+          "ursachen_ids": [
+            803
+          ],
+          "zitat": "Wir wollen […] Mobilität systematisch ausbauen und intelligent mit dem bestehenden ÖPNV verknüpfen. […] Sicherstellung ausreichender Fahrzeuge und Fahrer*innen durch gezielte Förderung und […]",
+          "seite": 91
+        },
+        {
+          "beschreibung": "Landesweit koordiniertes, einkommensabhängig bezuschusstes Sozialticket für das Deutschlandticket",
+          "ursachen_ids": [
+            804
+          ],
+          "zitat": "Wir wollen das Deutschlandticket gezielt bezahlbarer machen und dabei stärker auf bedarfsgerechte Unterstützung statt pauschaler Subventionen setzen. […] Einführung eines landesweit koordinierten Sozialtickets des Deutschlandtickets mit einkommensabhängiger Bezuschussung",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Kostenfreier ÖPNV für Schülerinnen und Schüler landesweit",
+          "ursachen_ids": [
+            804
+          ],
+          "zitat": "Kostenfreier ÖPNV für Schüler*innen landesweit, mit klarer Zuständigkeitsregelung zwischen Land und Kommunen",
+          "seite": 96
+        },
+        {
+          "beschreibung": "Gesetzliche Grundlage für eine kommunale Nahverkehrsabgabe, zweckgebunden für Ausbau, Angebot und stabile Preise",
+          "ursachen_ids": [
+            801
+          ],
+          "ursachen_offen": [
+            804
+          ],
+          "zitat": "Wir schaffen eine gesetzliche Grundlage, damit Kommunen eine Nahverkehrsabgabe einführen können. […] Zweckbindung für Ausbau, Angebot und stabile Preise",
+          "seite": 93
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "801": {
+      "Mindestangebot, mehr Geld": [
+        "öpnv",
+        "nahverkehr",
+        "regionalisierungsmittel",
+        "mobilitätsgarantie",
+        "takt",
+        "ländlicher raum",
+        "busverkehr"
+      ],
+      "Rufbusse, On-Demand, autonomes Fahren": [
+        "rufbus",
+        "on-demand",
+        "autonomes fahren",
+        "bürgerbus"
+      ]
+    },
+    "802": {
+      "Geld und Fonds für die Schiene": [
+        "schiene",
+        "schienennetz",
+        "deutsche bahn",
+        "infrago",
+        "sanierung",
+        "infrastrukturfonds"
+      ],
+      "Netz und Betrieb trennen, Steuerung durch den Bund": [
+        "trennung von netz und betrieb",
+        "bahnreform",
+        "eigentümer",
+        "steuerung"
+      ]
+    },
+    "803": {
+      "Fahrpersonal gewinnen": [
+        "busfahrer",
+        "fahrermangel",
+        "fahrpersonal",
+        "berufskraftfahrer",
+        "führerschein",
+        "lokführer",
+        "tarif"
+      ]
+    },
+    "804": {
+      "Tickets günstiger": [
+        "deutschlandticket",
+        "ticket",
+        "fahrpreis",
+        "sozialticket",
+        "azubiticket",
+        "schülerticket",
+        "kostenlos",
+        "nulltarif",
+        "fahrscheinlos",
+        "9-euro",
+        "mehrwertsteuer im nahverkehr"
+      ],
+      "Preis an Kosten koppeln": [
+        "ticketpreis",
+        "finanzierung des deutschlandtickets"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "3779fe491b55bc3374e36909f0f9feea54d2daad4c243ab0ccb1844387406a73",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "801": {
+            "Mindestangebot, mehr Geld": {
+              "öpnv": 13,
+              "nahverkehr": 4,
+              "regionalisierungsmittel": 0,
+              "mobilitätsgarantie": 0,
+              "takt": 11,
+              "ländlicher raum": 0,
+              "busverkehr": 0
+            },
+            "Rufbusse, On-Demand, autonomes Fahren": {
+              "rufbus": 1,
+              "on-demand": 1,
+              "autonomes fahren": 0,
+              "bürgerbus": 0
+            }
+          },
+          "803": {
+            "Fahrpersonal gewinnen": {
+              "busfahrer": 0,
+              "fahrermangel": 0,
+              "fahrpersonal": 0,
+              "berufskraftfahrer": 0,
+              "führerschein": 1,
+              "lokführer": 0,
+              "tarif": 3
+            }
+          },
+          "804": {
+            "Tickets günstiger": {
+              "deutschlandticket": 1,
+              "ticket": 1,
+              "fahrpreis": 0,
+              "sozialticket": 0,
+              "azubiticket": 0,
+              "schülerticket": 0,
+              "kostenlos": 6,
+              "nulltarif": 0,
+              "fahrscheinlos": 0,
+              "9-euro": 0,
+              "mehrwertsteuer im nahverkehr": 0
+            },
+            "Preis an Kosten koppeln": {
+              "ticketpreis": 0,
+              "finanzierung des deutschlandtickets": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "801": {
+            "Mindestangebot, mehr Geld": {
+              "öpnv": 13,
+              "nahverkehr": 3,
+              "regionalisierungsmittel": 0,
+              "mobilitätsgarantie": 0,
+              "takt": 10,
+              "ländlicher raum": 0,
+              "busverkehr": 0
+            },
+            "Rufbusse, On-Demand, autonomes Fahren": {
+              "rufbus": 2,
+              "on-demand": 4,
+              "autonomes fahren": 0,
+              "bürgerbus": 0
+            }
+          },
+          "803": {
+            "Fahrpersonal gewinnen": {
+              "busfahrer": 0,
+              "fahrermangel": 0,
+              "fahrpersonal": 0,
+              "berufskraftfahrer": 0,
+              "führerschein": 0,
+              "lokführer": 0,
+              "tarif": 0
+            }
+          },
+          "804": {
+            "Tickets günstiger": {
+              "deutschlandticket": 1,
+              "ticket": 5,
+              "fahrpreis": 0,
+              "sozialticket": 0,
+              "azubiticket": 0,
+              "schülerticket": 0,
+              "kostenlos": 8,
+              "nulltarif": 0,
+              "fahrscheinlos": 0,
+              "9-euro": 0,
+              "mehrwertsteuer im nahverkehr": 0
+            },
+            "Preis an Kosten koppeln": {
+              "ticketpreis": 0,
+              "finanzierung des deutschlandtickets": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "801": {
+            "Mindestangebot, mehr Geld": {
+              "öpnv": 30,
+              "nahverkehr": 11,
+              "regionalisierungsmittel": 0,
+              "mobilitätsgarantie": 0,
+              "takt": 21,
+              "ländlicher raum": 2,
+              "busverkehr": 1
+            },
+            "Rufbusse, On-Demand, autonomes Fahren": {
+              "rufbus": 10,
+              "on-demand": 7,
+              "autonomes fahren": 0,
+              "bürgerbus": 0
+            }
+          },
+          "803": {
+            "Fahrpersonal gewinnen": {
+              "busfahrer": 0,
+              "fahrermangel": 0,
+              "fahrpersonal": 0,
+              "berufskraftfahrer": 0,
+              "führerschein": 0,
+              "lokführer": 0,
+              "tarif": 18
+            }
+          },
+          "804": {
+            "Tickets günstiger": {
+              "deutschlandticket": 8,
+              "ticket": 21,
+              "fahrpreis": 0,
+              "sozialticket": 5,
+              "azubiticket": 0,
+              "schülerticket": 0,
+              "kostenlos": 7,
+              "nulltarif": 0,
+              "fahrscheinlos": 0,
+              "9-euro": 0,
+              "mehrwertsteuer im nahverkehr": 0
+            },
+            "Preis an Kosten koppeln": {
+              "ticketpreis": 2,
+              "finanzierung des deutschlandtickets": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

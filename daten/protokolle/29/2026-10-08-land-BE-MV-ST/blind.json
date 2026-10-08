@@ -1,0 +1,429 @@
+{
+  "pruefsumme": "02e8e1a0b85c98f0a9fa8b3a6e334c261b5e127cb27f4e7f7c23899425724be5",
+  "thema": {
+    "id": 29,
+    "name": "Einsamkeit und psychische Belastung",
+    "ziel": "Betroffene erleben tragfähige soziale Beziehungen, können mit ihren Gefühlen und Belastungen umgehen und erhalten bei Bedarf rechtzeitig passende Unterstützung."
+  },
+  "ursachen": [
+    {
+      "id": 2901,
+      "beschreibung": "Einsamkeit steigt unmittelbar nach dem Tod der Partnerin oder des Partners (Review von 26 Längsschnittstudien, 2024)",
+      "ebene": "land"
+    },
+    {
+      "id": 2902,
+      "beschreibung": "Je geringer das Einkommen, desto höher das Einsamkeitsrisiko: Skalenwert 2,00 bei Armutsgefährdung gegenüber 1,69 bei hohem Einkommen (Deutscher Alterssurvey, 2025)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2903,
+      "beschreibung": "Schwierigkeiten, Symptome psychischer Erkrankungen zu erkennen und Gefühle auszudrücken, erschweren die Hilfesuche (Review von 22 Studien, 2010)",
+      "ebene": "land"
+    },
+    {
+      "id": 2904,
+      "beschreibung": "Verinnerlichte Männlichkeitsnormen, Scham und der Anspruch, alles allein zu bewältigen, hemmen die Hilfesuche von Männern (12 Interviews, 2018)",
+      "ebene": "land"
+    },
+    {
+      "id": 2905,
+      "beschreibung": "Psychotherapeutische Hilfe ist nicht überall rechtzeitig zugänglich: 2018 vergingen im Mittel 112 Tage vom Erstkontakt bis zur Richtlinientherapie, teils mit Versorgung dazwischen",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2901,
+        2902,
+        2903,
+        2904,
+        2905
+      ],
+      "text": "Zu 2901 Begegnung, Nachbarschaft, Besuchsdienste und Trauerbegleitung, zu 2902 finanzielle und soziale Teilhabe, zu 2903 Aufklärung, Prävention und niedrigschwellige Beratung zu psychischer Gesundheit, zu 2904 Entstigmatisierung und zielgruppengerechte Angebote, zu 2905 Psychotherapie und psychiatrische Versorgung (Kassensitze, Wartezeiten)."
+    },
+    {
+      "nr": 2,
+      "text": "Wartezeiten auf Arzttermine allgemein gehören zu Arzttermine, Sucht zu Sucht und Glücksspiel, Mobbing zu Mobbing in der Schule, Pflege und Pflegekosten zu Pflege. Allgemeine Seniorenpolitik ohne Bezug zu Einsamkeit oder psychischer Gesundheit ist keine Maßnahme dieses Themas."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 8142,
+      "name": "Orte der Begegnung, Nachbarschaftstreffs und Stadtteilzentren fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Gruppen- und Aktivitätsangebote lindern Isolation häufiger als Einzelangebote (Übersicht, überwiegend schwache Studien); Wirkung bei Verwitweten nicht gesondert belegt. Land und Kommunen können Orte rasch fördern.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/21843337"
+    },
+    {
+      "id": 8143,
+      "name": "Landesstrategie, Beauftragte und Koordination gegen Einsamkeit (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Strategie und Koordination schaffen selbst kein Angebot; die Wirkung hängt von den Maßnahmen ab, die daraus folgen. Wirkung solcher Strukturen kaum untersucht, rechtlich und finanziell leicht umsetzbar."
+    },
+    {
+      "id": 8144,
+      "name": "Aufsuchende Hilfen, Besuchsdienste und organisierte Nachbarschaftshilfe (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Erreicht auch Menschen, die nicht von sich aus Treffpunkte aufsuchen. Besuchsangebote wirkten in Übersichten seltener als Gruppenangebote (60 % gegenüber 79 % der Studien mit Verbesserung). Gut umsetzbar.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/21843337"
+    },
+    {
+      "id": 8145,
+      "name": "Vereine, Ehrenamt und Engagementstrukturen fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Vereine und Engagement bieten Kontaktgelegenheiten, die Förderung wirkt aber nur indirekt und erreicht Verwitwete nicht gezielt. Wirkung auf Einsamkeit kaum untersucht; leicht umsetzbar."
+    },
+    {
+      "id": 8146,
+      "name": "Vermittlung von Wohnpartnerschaften „Wohnen für Hilfe“ (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Bietet Alltagskontakt im selben Haushalt, erreicht aber nur wenige Menschen und setzt passende Wohnungen voraus. Wirkung auf Einsamkeit kaum untersucht; Vermittlung ist schnell aufzubauen."
+    },
+    {
+      "id": 8147,
+      "name": "Gemeinschaftliche und generationenübergreifende Wohnformen schaffen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Gemeinschaftliches Wohnen kann Alltagskontakt bieten, entsteht aber nur durch Neubau oder Umbau und erreicht wenige Menschen. Wirkung kaum untersucht; Umsetzung dauert mehrere Jahre."
+    },
+    {
+      "id": 8148,
+      "name": "Patenschaften und Leihgroßeltern-Projekte unterstützen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Persönliche Kontakte können Alleinstehende erreichen, die Reichweite kleiner Modellprojekte ist aber gering. Einzelangebote wirkten in Übersichten seltener als Gruppenangebote; leicht umsetzbar."
+    },
+    {
+      "id": 8149,
+      "name": "Plauderbänke im öffentlichen Raum fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Niedrigschwellige Gesprächsgelegenheit mit sehr geringem Aufwand, aber nur flüchtige Kontakte und kaum Wirkung auf bestehende Einsamkeit. Wirkung kaum untersucht."
+    },
+    {
+      "id": 8150,
+      "name": "Mehr Schulpsychologie und multiprofessionelle Teams an Schulen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Fachkräfte vor Ort erleichtern das Erkennen von Belastungen und die Hilfesuche; Angebot und Bedarf klaffen bislang auseinander. Wirkung kaum untersucht, Personalgewinnung dauert Jahre.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC13341547"
+    },
+    {
+      "id": 8151,
+      "name": "Psychische Gesundheit und Resilienz im Schulalltag und Unterricht verankern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Unterricht kann Wissen vermitteln, doch Übersichten finden wenig Beleg, dass schulische Präventionsprogramme Angst oder Depression senken; einzelne Ansätze zeigen Effekte. Land kann Lehrpläne anpassen.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/31734106"
+    },
+    {
+      "id": 8152,
+      "name": "Aufklärung und Entstigmatisierung zu psychischer Gesundheit (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Aufklärung und Kontaktprogramme verbessern kurzfristig Einstellungen und Wissen; langfristige Effekte und Wirkung auf die Hilfesuche sind kaum belegt. Gut umsetzbar.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/26410341"
+    },
+    {
+      "id": 8153,
+      "name": "Fachpersonal zu Stigmatisierung psychischer Erkrankungen schulen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schulungen können Vorurteile im Umfeld von Betroffenen mindern; Studien zeigen vor allem kurzfristige Einstellungsänderungen, kaum Verhaltens- oder Langzeitwirkung. Leicht umsetzbar.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/26410341"
+    },
+    {
+      "id": 8154,
+      "name": "Psychosoziale Beratungs- und Kontaktstellen ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Wohnortnahe, niedrigschwellige Beratung senkt Hürden bei der Hilfesuche und hilft beim Einordnen von Beschwerden. Wirkung einzelner Modelle kaum vergleichend untersucht; Land kann Förderung zügig ausweiten."
+    },
+    {
+      "id": 8155,
+      "name": "Krisendienste und Krisentelefone ausbauen und sichern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Krisenmodelle sind laut Cochrane-Übersicht gangbar und werden gut angenommen, die Studienlage ist aber klein und von geringer bis mäßiger Qualität. Flächendeckender Aufbau braucht Personal und Zeit.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/26633650"
+    },
+    {
+      "id": 8156,
+      "name": "Niedrigschwellige Anlaufstellen und Hilfen für junge Menschen in Krisen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Anlaufstellen ohne Termin und Diagnose erleichtern jungen Menschen den ersten Schritt zur Hilfe. Wirkung kaum vergleichend untersucht; Länder und Kommunen können Standorte rasch fördern."
+    },
+    {
+      "id": 8157,
+      "name": "Lotsen- und Vermittlungsangebote in die psychische Versorgung (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Lotsen helfen, vorhandene Angebote zu finden, schaffen aber keine zusätzlichen Behandlungsplätze. Wirkung auf Wartezeiten und Hilfesuche kaum untersucht; gut umsetzbar."
+    },
+    {
+      "id": 8158,
+      "name": "Sozialpsychiatrische Dienste und aufsuchende psychosoziale Hilfen stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Bestehende kommunale Dienste erreichen auch Menschen, die von sich aus keine Hilfe suchen. Wirkung der Ausbaustufen kaum untersucht; Land kann Mittel und Aufgaben zügig anpassen."
+    },
+    {
+      "id": 8159,
+      "name": "Suizidprävention verankern und Hilfsangebote vernetzen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Eine Übersicht sieht keine Einzelstrategie klar im Vorteil; schulische Aufklärung senkte Suizidversuche, Telefon- und Internethilfen sind noch zu wenig untersucht. Rechtlich und finanziell gut umsetzbar.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/27289303"
+    },
+    {
+      "id": 8160,
+      "name": "Digitale Mental-Health-Angebote in der Hochschulversorgung (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Eine Meta-Analyse von 21 Studien findet mittlere Effekte digitaler Angebote bei Depression und Angst von Studierenden. Sie senken die Hürde zur Hilfe, wirken aber auf Symptome, nicht auf das Erkennen. Gut umsetzbar.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40033658"
+    },
+    {
+      "id": 8161,
+      "name": "Jungenarbeit und geschlechtersensible Pädagogik stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Setzt früh an Rollenbildern an, die später die Hilfesuche hemmen, wirkt aber erst nach Jahren und erreicht nur Teilgruppen. Wirkung auf spätere Hilfesuche kaum untersucht."
+    },
+    {
+      "id": 8162,
+      "name": "Niedrige Einkommen steuerlich entlasten (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Entlastet über die Steuer, erreicht aber Armutsgefährdete ohne Steuerlast kaum; der Zusammenhang zwischen mehr Einkommen und weniger Einsamkeit ist nicht kausal belegt. Bund kann es kurzfristig regeln."
+    },
+    {
+      "id": 8163,
+      "name": "Mindest- und Garantierente für Geringverdienende aufstocken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Hebt Alterseinkommen direkt an; Studien zu Geldleistungen und psychischer Gesundheit sind uneinheitlich, der Einfluss auf Einsamkeit ist kaum untersucht. Kosten erfordern Finanzierung und Vorlauf."
+    },
+    {
+      "id": 8164,
+      "name": "Zugang zu freiwilligem Engagement für Benachteiligte verbessern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Senkt finanzielle und soziale Hürden zur Teilnahme, erreicht aber nur wenige und wirkt eher auf Teilhabe als auf bestehende Einsamkeit. Wirkung kaum untersucht; Bund finanziert Freiwilligendienste bereits."
+    },
+    {
+      "id": 8165,
+      "name": "Wohnortnahe, niedrigschwellige Kinder- und Jugendangebote sichern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Freizeit- und Bildungsangebote ermöglichen Teilhabe unabhängig vom Einkommen, wirken aber nur mittelbar auf Einsamkeit. Zuständig sind Länder und Kommunen, der Bund kann nur mit Geld beitragen."
+    },
+    {
+      "id": 8166,
+      "name": "Finanzierung der Psychotherapie-Weiterbildung sichern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Sichert den Nachwuchs, wirkt aber erst nach Jahren und ändert nicht die Zahl der Kassensitze, die die Wartezeit begrenzt. Bund kann die Finanzierung regeln, braucht aber Einigung mit den Kassen."
+    },
+    {
+      "id": 8167,
+      "name": "Bedarfsplanung für psychotherapeutische Kassensitze reformieren (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Mehr Kassensitze setzen direkt an der Kapazität an; Befragungen sehen fehlende Termine als Hauptengpass. Wirkung bisheriger Reformen nur teils belegt. Bund und Selbstverwaltung können es regeln.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC13288593"
+    },
+    {
+      "id": 8168,
+      "name": "Kostenerstattung für Psychotherapie bei Wartezeiten erleichtern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Überbrückt Wartezeit über Privatpraxen, solange es dort freie Plätze gibt; das Gesamtangebot wächst nicht. Wirkung kaum untersucht, rechtlich leicht änderbar."
+    },
+    {
+      "id": 8169,
+      "name": "Therapie- und Versorgungsangebote bedarfsgerecht ausbauen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Ohne benannten Weg bleibt unklar, wie Plätze entstehen; die Versorgung gilt als unzureichend. Zusage lässt sich rechtlich leicht fassen, die Wirkung hängt von der Umsetzung ab.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/40034167"
+    },
+    {
+      "id": 8170,
+      "name": "Mehr Stellen für Schulpsychologie und Schulsozialarbeit (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Fachkräfte an Schulen erleichtern das Erkennen von Belastungen und die Hilfesuche. Schulen sind Ländersache, der Bund kann nur über Förderprogramme oder Vereinbarungen beitragen. Wirkung kaum untersucht.",
+      "beleg_studie_url": "https://europepmc.org/articles/PMC13341547"
+    },
+    {
+      "id": 8585,
+      "name": "Resilienzförderung ab der Kita und Fortbildung von Lehr- und Fachkräften unterstützen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Früh ansetzende Förderung und geschulte Fachkräfte können Belastungen eher erkennen; Übersichten finden aber wenig Beleg, dass Präventionsprogramme in Bildungseinrichtungen Angst oder Depression senken. Kita und Schule sind Ländersache, der Bund kann nur fördern.",
+      "beleg_studie_url": "https://europepmc.org/article/MED/31734106"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Öffentlichkeitsarbeit, die das Holen von Hilfe als normale Stärke vermittelt.",
+      "zitat": "Ergänzt werden diese Maßnahmen durch eine klare Öffentlichkeitsarbeit, die Hilfeholen als normale Stärke vermittelt.",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "d437706801e08b2f"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Mental Health Coaches an Schulen und Jugendzentren und Mental Health im Lehrplan verankern; Mental Health Days vor Ort einführen.",
+      "zitat": "Wir führen „Mental Health Days“ auf lokaler Ebene ein und erheben regelmäßig Daten zur psychischen Gesundheit in [Land]. Wir etablieren Mental Health Coaches an Schulen und Jugendzentren und verankern Mental Health im Lehrplan.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "c808d9654969fff3"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Pflichtfach Lebenskompetenz mit Schwerpunkt psychische Gesundheit, Empathie und sozial-emotionalem Lernen, zunächst an Pilotschulen.",
+      "zitat": "Wir führen „Lebenskompetenz“ als Pflichtfach ein. Damit stärken wir Kompetenzen für ein selbstbestimmtes Leben in den Bereichen Gesundheit und Prävention mit Fokus auf psychische Gesundheit",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "c8565823a08080f1"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Niedrigschwellige Angebote zur psychischen Gesundheit wie Mental-Health-Cafés, Gruppen und digitale Formate ausbauen.",
+      "zitat": "Ausbau niedrigschwelliger Angebote wie Mental-Health-Cafés, Gruppenangebote und digitale Unterstützungsformate",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "18956d844f74419a"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Männerberatungsstellen und psychosoziale Beratung ausbauen und regional besser verfügbar machen.",
+      "zitat": "Ausbau und bessere regionale Verfügbarkeit von Männerberatungsstellen und psychosozialer Beratung",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "7a708af5835d2689"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Begegnungsorte gegen Einsamkeit wie Mehrgenerationencafés und Nachbarschaftszentren schaffen.",
+      "zitat": "Wir schaffen Begegnungsorte gegen Einsamkeit, wie Mehrgenerationencafés und Nachbarschaftszentren, von denen insbesondere Senior*innen, Kinder und Jugendliche profitieren.",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "eec3b94b6c2c5be7"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Betroffene in Anti-Stigma-Kampagnen und Programme zur psychischen Gesundheit einbeziehen.",
+      "zitat": "Wir beziehen Betroffene mit ein: bei der Gestaltung von Programmen, bei Anti-Stigma-Kampagnen und bei der Förderung von Gesundheitskompetenz in Schulen, Vereinen und Betrieben.",
+      "ursachen_ids": [
+        2904
+      ],
+      "pruefsumme": "5eb1860cc6210a1c"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Soziale Gesundheit stärken durch Programme gegen Einsamkeit und Förderung stabiler Beziehungen.",
+      "zitat": "Wir richten Gesundheitspolitik konsequent auf Prävention und Ursachenbekämpfung aus und erweitern wirksame Vorsorgeangebote: […] Stärkung sozialer Gesundheit durch Programme gegen Einsamkeit und Förderung stabiler Beziehungen",
+      "ursachen_ids": [
+        2901
+      ],
+      "pruefsumme": "4e14f2f80b999e75"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Gesundheitskioske und Gesundheitslots*innen für niedrigschwellige, mehrsprachige Beratung in benachteiligten Stadtteilen.",
+      "zitat": "Wir führen Gesundheitskioske und Gesundheitslots*innen zur niedrigschwelligen, mehrsprachigen Beratung und Stärkung der Gesundheitskompetenz – und das über alle Lebensphasen hinweg – in besonders benachteiligten Stadtteilen ein.",
+      "ursachen_ids": [
+        2903
+      ],
+      "pruefsumme": "36c2ac9f320f1460"
+    }
+  ]
+}

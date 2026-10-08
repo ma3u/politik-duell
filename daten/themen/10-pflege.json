@@ -1077,6 +1077,61 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1005],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gesundheitsversorgung (PDF-S. 80-82, inkl. Abschnitt pflegende Angehörige) und Katastrophenschutz S. 79 gelesen; nichts zu Investitionskosten von Pflegeheimen oder Eigenanteilen. Suchbegriffe ohne Treffer.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1005],
+      "massnahmen": [
+        {
+          "id": 8616,
+          "beschreibung": "Gezielte Förderung kommunaler, genossenschaftlicher und quartiersnaher Pflegeeinrichtungen, um die Versorgung vor Ort zu sichern und Pflege bezahlbar zu halten.",
+          "ursachen_ids": [1005],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Landesförderung für bestimmte Träger kann Kosten dämpfen, die Heime an Bewohner weitergeben; Art und Umfang der Förderung bleiben offen, und kommunale oder gemeinnützige Heime sind laut Daten nicht günstiger als private. Das Land kann ein Programm selbst auflegen.",
+          "zitat": "Gezielte Förderung von kommunalen, genossenschaftlichen und quartiersnahen Pflegeeinrichtungen, um Versorgung vor Ort zu sichern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=33",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1005],
+      "massnahmen": [
+        {
+          "id": 8617,
+          "instrument": 6448,
+          "beschreibung": "Investitionskostenförderung des Landes für Pflegeeinrichtungen ausbauen, damit Bewohner weniger zahlen.",
+          "ursachen_ids": [1005],
+          "zitat": "Ausbau der Investitionskostenförderung für Pflegeeinrichtungen, um Kosten für Bewohner zu senken",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=41",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,398 @@
+{
+  "thema_id": 29,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Mental Health Coaches an Schulen und Jugendzentren und Mental Health im Lehrplan verankern; Mental Health Days vor Ort einführen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir führen „Mental Health Days“ auf lokaler Ebene ein und erheben regelmäßig Daten zur psychischen Gesundheit in Berlin. Wir etablieren Mental Health Coaches an Schulen und Jugendzentren und verankern Mental Health im Lehrplan.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Pflichtfach Lebenskompetenz mit Schwerpunkt psychische Gesundheit, Empathie und sozial-emotionalem Lernen, zunächst an Pilotschulen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir führen „Lebenskompetenz“ als Pflichtfach ein. Damit stärken wir Kompetenzen für ein selbstbestimmtes Leben in den Bereichen Gesundheit und Prävention mit Fokus auf psychische Gesundheit",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Gesundheitskioske und Gesundheitslots*innen für niedrigschwellige, mehrsprachige Beratung in benachteiligten Stadtteilen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Wir führen Gesundheitskioske und Gesundheitslots*innen zur niedrigschwelligen, mehrsprachigen Beratung und Stärkung der Gesundheitskompetenz – und das über alle Lebensphasen hinweg – in besonders benachteiligten Stadtteilen ein.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Betroffene in Anti-Stigma-Kampagnen und Programme zur psychischen Gesundheit einbeziehen.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "Wir beziehen Betroffene mit ein: bei der Gestaltung von Programmen, bei Anti-Stigma-Kampagnen und bei der Förderung von Gesundheitskompetenz in Schulen, Vereinen und Betrieben.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Begegnungsorte gegen Einsamkeit wie Mehrgenerationencafés und Nachbarschaftszentren schaffen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir schaffen Begegnungsorte gegen Einsamkeit, wie Mehrgenerationencafés und Nachbarschaftszentren, von denen insbesondere Senior*innen, Kinder und Jugendliche profitieren.",
+          "seite": 83
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Gesellschaftlicher Zusammenhalt' (S. 13-16), 'Gesundheit und Wohlbefinden' (S. 29-32) sowie Fundstellen S. 3, 26, 44, 64 gelesen; keine Zusage zu Einsamkeit, Trauerbegleitung, psychischer Aufklärung oder Männern/Hilfesuche.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2901,
+          "seiten": [
+            13,
+            26
+          ],
+          "grund": "S. 13 nennt Einsamkeit nur als Lagebeschreibung und Leitbild; S. 26 Co-Working/Co-Living als Begegnungsstätten dient Arbeitsbedingungen, kein Bezug zu Verwitwung oder Einsamkeit."
+        },
+        {
+          "ursache": 2903,
+          "seiten": [
+            30,
+            32,
+            44,
+            64
+          ],
+          "grund": "S. 44 und 64 Resilienz im Sinne Digital/Landwirtschaft; S. 30 Diagnostikzentren (ADHS, Autismus) und S. 32 Gesundheitsstützpunkte ohne Bezug zu psychischer Aufklärung oder Beratung; S. 29 nur Lagebeschreibung."
+        },
+        {
+          "ursache": 2904,
+          "seiten": [
+            29
+          ],
+          "grund": "Keine Treffer; kein Kapitel zu Entstigmatisierung oder Männergesundheit."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Niedrigschwellige Angebote zur psychischen Gesundheit wie Mental-Health-Cafés, Gruppen und digitale Formate ausbauen.",
+          "ursachen_ids": [
+            2903
+          ],
+          "zitat": "Ausbau niedrigschwelliger Angebote wie Mental-Health-Cafés, Gruppenangebote und digitale Unterstützungsformate",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Männerberatungsstellen und psychosoziale Beratung ausbauen und regional besser verfügbar machen.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "Ausbau und bessere regionale Verfügbarkeit von Männerberatungsstellen und psychosozialer Beratung",
+          "seite": 128
+        },
+        {
+          "beschreibung": "Öffentlichkeitsarbeit, die das Holen von Hilfe als normale Stärke vermittelt.",
+          "ursachen_ids": [
+            2904
+          ],
+          "zitat": "Ergänzt werden diese Maßnahmen durch eine klare Öffentlichkeitsarbeit, die Hilfeholen als normale Stärke vermittelt.",
+          "seite": 128
+        },
+        {
+          "beschreibung": "Soziale Gesundheit stärken durch Programme gegen Einsamkeit und Förderung stabiler Beziehungen.",
+          "ursachen_ids": [
+            2901
+          ],
+          "zitat": "Wir richten Gesundheitspolitik konsequent auf Prävention und Ursachenbekämpfung aus und erweitern wirksame Vorsorgeangebote: […] Stärkung sozialer Gesundheit durch Programme gegen Einsamkeit und Förderung stabiler Beziehungen",
+          "seite": 40
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2901": {
+      "Begegnung und Gemeinschaft vor Ort stärken": [
+        "einsamkeit",
+        "begegnungsstätten",
+        "mehrgenerationenhaus",
+        "nachbarschaftshilfe",
+        "besuchsdienst",
+        "seniorentreff",
+        "strategie gegen einsamkeit",
+        "gemeinschaftsangebote"
+      ],
+      "Professionelle Begleitung bei Verlust": [
+        "trauerbegleitung",
+        "hospiz",
+        "seelsorgerische begleitung",
+        "beratungsangebote für ältere"
+      ]
+    },
+    "2902": {
+      "Teilhabe finanziell sichern": [
+        "teilhabe älterer",
+        "seniorenticket",
+        "sozialticket",
+        "altersarmut bekämpfen",
+        "grundrente",
+        "ermäßigungen für senioren"
+      ],
+      "Soziale Einbindung unabhängig vom Einkommen": [
+        "ehrenamt",
+        "freiwilligendienst",
+        "bürgerschaftliches engagement",
+        "soziale einbindung",
+        "generationenübergreifend"
+      ]
+    },
+    "2903": {
+      "Aufklärung und Prävention psychischer Gesundheit": [
+        "psychische gesundheit",
+        "mental health",
+        "gesundheitskompetenz",
+        "aufklärung psychische erkrankungen",
+        "schulpsychologen",
+        "prävention psychischer erkrankungen",
+        "resilienz"
+      ],
+      "Beratung und Weitervermittlung vereinfachen": [
+        "anlaufstellen",
+        "krisendienst",
+        "telefonseelsorge",
+        "beratungsstelle für",
+        "niedrigschwellige beratung",
+        "lotsenfunktion"
+      ]
+    },
+    "2904": {
+      "Stigma abbauen": [
+        "entstigmatisierung",
+        "stigmatisierung",
+        "tabu psychische erkrankungen",
+        "enttabuisierung",
+        "offener umgang"
+      ],
+      "Zielgruppengerechte Unterstützung für Männer": [
+        "männergesundheit",
+        "männerberatung",
+        "jungenarbeit",
+        "jungen- und männerarbeit",
+        "vertrauliche beratung",
+        "selbsthilfe"
+      ]
+    },
+    "2905": {
+      "Therapieplätze und Kapazitäten ausbauen": [
+        "psychotherapeutische versorgung",
+        "kassensitze",
+        "therapieplätze",
+        "bedarfsplanung psychotherapie",
+        "wartezeiten psychotherapie",
+        "psychotherapeuten"
+      ],
+      "Zugang steuern und koordinieren": [
+        "koordinierte versorgung",
+        "stepped care",
+        "gestufte versorgung",
+        "terminservicestelle",
+        "digitale gesundheitsanwendungen",
+        "e-mental-health"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "ae04a8f6529a59b5004b41bbf17b979429d28b176f5b8ba12998a58fac063f42",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 2,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 1,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 3,
+              "gesundheitskompetenz": 4,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 3
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 4,
+              "krisendienst": 1,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 1,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 1,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 1,
+              "begegnungsstätten": 1,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 0,
+              "mental health": 0,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 4
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 2,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 0,
+              "niedrigschwellige beratung": 0,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 0,
+              "stigmatisierung": 0,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 0,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "2901": {
+            "Begegnung und Gemeinschaft vor Ort stärken": {
+              "einsamkeit": 1,
+              "begegnungsstätten": 0,
+              "mehrgenerationenhaus": 0,
+              "nachbarschaftshilfe": 0,
+              "besuchsdienst": 0,
+              "seniorentreff": 0,
+              "strategie gegen einsamkeit": 0,
+              "gemeinschaftsangebote": 0
+            },
+            "Professionelle Begleitung bei Verlust": {
+              "trauerbegleitung": 0,
+              "hospiz": 0,
+              "seelsorgerische begleitung": 0,
+              "beratungsangebote für ältere": 0
+            }
+          },
+          "2903": {
+            "Aufklärung und Prävention psychischer Gesundheit": {
+              "psychische gesundheit": 2,
+              "mental health": 1,
+              "gesundheitskompetenz": 0,
+              "aufklärung psychische erkrankungen": 0,
+              "schulpsychologen": 0,
+              "prävention psychischer erkrankungen": 0,
+              "resilienz": 12
+            },
+            "Beratung und Weitervermittlung vereinfachen": {
+              "anlaufstellen": 6,
+              "krisendienst": 0,
+              "telefonseelsorge": 0,
+              "beratungsstelle für": 1,
+              "niedrigschwellige beratung": 3,
+              "lotsenfunktion": 0
+            }
+          },
+          "2904": {
+            "Stigma abbauen": {
+              "entstigmatisierung": 1,
+              "stigmatisierung": 4,
+              "tabu psychische erkrankungen": 0,
+              "enttabuisierung": 0,
+              "offener umgang": 0
+            },
+            "Zielgruppengerechte Unterstützung für Männer": {
+              "männergesundheit": 0,
+              "männerberatung": 3,
+              "jungenarbeit": 0,
+              "jungen- und männerarbeit": 0,
+              "vertrauliche beratung": 0,
+              "selbsthilfe": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

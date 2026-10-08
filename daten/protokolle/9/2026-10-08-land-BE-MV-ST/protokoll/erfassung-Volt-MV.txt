@@ -1,0 +1,23 @@
+{
+  "partei_id": 18,
+  "land": "MV",
+  "massnahmen": [
+    { "beschreibung": "Landeskoordinierungsstelle gegen häusliche und sexualisierte Gewalt wieder einrichten und elektronische Fußfessel gegen Wiederholungstaten einführen.", "ursachen_ids": [904, 908], "zitat": "Erneute Einrichtung einer Landeskoordinierungsstelle gegen häusliche und sexualisierte Gewalt, Einführung der elektronischen Fußfessel zur Prävention von Wiederholungstaten.", "seite": 14 },
+    { "beschreibung": "Schutzhäuser deutlich ausbauen und dauerhaft finanzieren, inklusive anonymer Spurensicherung; mindestens eine Beratungsstelle je Landkreis.", "ursachen_ids": [904, 908], "zitat": "Deutlicher Ausbau und gesicherte Finanzierung von Schutzhäusern inklusive spezialisierter Angebote wie der anonymen Spurensicherung sowie Einrichtung von mindestens einer Beratungsstelle pro Landkreis für Betroffene.", "seite": 15 },
+    { "beschreibung": "Kommunale Lichtkonzepte und Bildungskampagnen zur Prävention von Femiziden unterstützen.", "ursachen_ids": [904], "ursachen_offen": [901], "zitat": "Unterstützung bei der Ausarbeitung und Umsetzung kommunaler Lichtkonzepte und Bildungskampagnen.", "seite": 15 },
+    { "beschreibung": "Beamte zum Einsatz von Bodycams zur Einsatzdokumentation verpflichten.", "ursachen_ids": [902], "buendel": "Bodycams und Kennzeichnungspflicht", "zitat": "Einrichtung einer unabhängigen Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium und Beamte zum Einsatz von Bodycams zur Einsatzdokumentation und zum Schutz von Polizeibeamt*innen und Bürger*innen verpflichten.", "seite": 15 },
+    { "beschreibung": "Unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium einrichten.", "ursachen_ids": [902], "buendel": "Unabhängige Kontrolle und Beschwerdeverfahren", "zitat": "Einrichtung einer unabhängigen Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium und Beamte zum Einsatz von Bodycams", "seite": 15 },
+    { "beschreibung": "Auf Palantir und vergleichbare intransparente Analyseplattformen bei der Polizei verzichten.", "ursachen_ids": [902], "buendel": "Ermittlungsbefugnisse und Datenzugriff", "zitat": "Verzicht auf Palantir und vergleichbare Systeme Ausschluss proprietärer Analyseplattformen mit unzureichender Transparenz bei Polizei und Verwaltung", "seite": 45 },
+    { "beschreibung": "Schul- und Jugendsozialarbeit dauerhaft mit Landesmitteln fördern, auch zur Präventionsarbeit.", "ursachen_ids": [903], "zitat": "Dauerhafte Förderung von Schul- und Jugendsozialarbeit durch Landesmittel Sozialpädagogische Fachkräfte begleiten Kinder und Jugendliche kontinuierlich, bieten Beratung, Konfliktlösung und Präventionsarbeit an", "seite": 14 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 901, "seiten": [15, 16, 53, 54, 57, 58], "grund": "Kapitel Schutz, Sicherheit und Prävention (S. 14-15) gelesen: keine Maßnahmen an Orten, Präsenz, Videoüberwachung oder Verbotszonen; Fundstellen zu ÖPNV/Bahnhöfen betreffen Mobilität, nicht Sicherheit; Lichtkonzepte (S. 15) nur als offene Zuordnung." },
+    { "ursache": 909, "seiten": [5, 11], "grund": "Treffer 'Herkunft' betreffen Bildungschancen, nicht Tatverdächtige; nichts zu Kriminalstatistik oder Herkunftsnennung." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis, Kapitel "Schutz, Sicherheit und Prävention" (S. 14-15), Digitale Sicherheit (S. 16, 45), Fundstellen S. 5, 10-12, 53-58.
+Nicht erfasst: S. 15 Beratung der Polizei/Extremismusvorbeugung nur Begründung; S. 16/45 Landesstrategie digitale Sicherheit, IT-Beirat, Datenschutzbeauftragter (keine Ursache, Cybersicherheit); S. 45 Sicherheits- und Transparenzprüfungen (IT, keine Ursache); S. 53ff Radwege-Sicherheit (Verkehrssicherheit, R15).
+Bodycams und Ermittlungsstelle stehen im selben Satz, als zwei Instrumente in getrennten Bündeln erfasst.
+Richtungen ohne Maßnahme: Waffenverbote, Drogenszenen, Videoüberwachung, Jugendstrafrecht, Sexualstrafrecht, Herkunft/Statistik, Dunkelfeld.

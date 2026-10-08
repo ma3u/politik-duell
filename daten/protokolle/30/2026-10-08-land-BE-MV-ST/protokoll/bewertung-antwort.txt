@@ -1,0 +1,12 @@
+{
+  "blind_pruefsumme": "18a4ec311bcc036bc38ba3b6ce1492e8a06ff8be958081d27268ae1b70491584",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": 8322, "ursachen": [3006] }
+  ]
+}
+
+Hinweise:
+- M01 (Diamorphin-Substitution ausbauen, Zugang zu Psychotherapie) passt zum vorhandenen Landesinstrument 8322 (Konsumräume, Streetwork, Substitution, kürzere Wartezeiten): gleicher Lösungsweg (Ausbau von Substitution und Behandlungszugang), gleiche Ebene. Die Werte von 8322 (Wirksamkeit 2, Umsetzbarkeit 2, belegt) passen auch für Diamorphin: Der Cochrane-Review (Ferri u. a. 2011, Zusammenfassung unter https://www.drugsandalcohol.ie/16167/ geöffnet) zeigt bessere Haltequote und weniger illegalen Konsum bei behandlungsresistenten Menschen, aber mehr schwere Nebenwirkungen und hohen Aufwand für ausgestattete Ambulanzen – das stützt Umsetzbarkeit 2. Die Quelle von 8322 (doi 10.1016/j.drugalcdep.2014.10.012) war nur als Weiterleitung erreichbar, nicht inhaltlich lesbar; der Cochrane-Review trägt den Forschungsstand für Substitution unabhängig davon.
+- Ursache 3006 bestätigt (Behandlung, Regel 1). Grenzfall 3005: Diamorphin ersetzt Straßenheroin mit unbekannter Dosis durch geprüften Wirkstoff und setzt damit auch an 3005 an; 3005 stand aber weder in ursachen_ids noch in ursachen_offen. Ich nenne sie deshalb nicht, sondern nur als Hinweis: Wird 8322 bei anderen Maßnahmen (Konsumräume) mit 3005 verbunden, wäre 3005 auch hier konsequent.
+- Keine Maßnahme ohne Ursache.

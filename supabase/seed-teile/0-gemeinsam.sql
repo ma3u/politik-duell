@@ -59,7 +59,10 @@ insert into public.landesprogramme (partei_id, land, url, stand, kein_programm) 
   (16, 'BE', 'https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf', '2026-04-25', null),
   (17, 'ST', 'https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf', '2026-03-07', null),
   (17, 'MV', 'https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf', '2026-03-14', null),
-  (17, 'BE', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf', '2026-04-25', null);
+  (17, 'BE', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf', '2026-04-25', null),
+  (18, 'ST', 'https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf', '2026-06-30', null),
+  (18, 'MV', 'https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf', '2026-07-24', null),
+  (18, 'BE', 'https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf', '2026-04-25', null);
 
 insert into public.themen (id, name, beschreibung) values
   (1, 'Arzttermine', 'Lange Wartezeiten und schwer erreichbare Praxen.'),

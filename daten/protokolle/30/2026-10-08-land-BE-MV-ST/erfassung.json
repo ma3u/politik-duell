@@ -1,0 +1,382 @@
+{
+  "thema_id": 30,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Diamorphin-Substitution ausbauen und drogenabhängigen Menschen Zugang zu psychotherapeutischer Hilfe ermöglichen",
+          "ursachen_ids": [
+            3006
+          ],
+          "zitat": "Wir bauen die Diamorphinsubstitution aus und ermöglichen drogenabhängigen Menschen einen Zugang zu nachhaltiger psychotherapeutischer Hilfe.",
+          "seite": 84
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3001,
+          "seiten": [
+            86
+          ],
+          "grund": "Nur alkoholfreie Pride-Veranstaltungsformate gefördert; keine Regel zu Verkauf oder Verfügbarkeit von Alkohol."
+        },
+        {
+          "ursache": 3004,
+          "seiten": [
+            84
+          ],
+          "grund": "Im ganzen Programm nichts zu Glücksspiel, Spielhallen oder Sportwetten."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis (S. 2-3), Kapitel Gesellschaftlicher Zusammenhalt (S. 13-14), Gesundheit und Wohlbefinden (S. 29-34) gelesen; Textsuche nach Sucht, Alkohol, Glücksspiel, Wetten, Drogen, Cannabis, Tabak, Stigma ohne Treffer. Keine Zusage zu Suchtprävention, Glücksspielrecht oder Suchthilfe."
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Gesundheit schützen - Suchtverhalten wirksam eindämmen' (S. 146), Nichtraucherschutz (S. 46 gedruckt), Psychische Gesundheit/Männerberatung (ca. S. 125-128) und Fundstellen S. 15, 37, 128 gelesen; nichts zu Verkaufsstellen/Jugendschutz Alkohol, Glücksspiel oder Suchtberatung/Entstigmatisierung.",
+      "nicht_erfasst": [
+        {
+          "ursache": 3001,
+          "seiten": [
+            146
+          ],
+          "grund": "Nur Steuern auf Alkohol (Ursache 3002) und der unspezifische Satz 'Kombination mit Werbe- und Jugendschutzmaßnahmen' ohne konkrete Zusage."
+        },
+        {
+          "ursache": 3004,
+          "seiten": [
+            146
+          ],
+          "grund": "Kein Wort zu Glücksspiel, Spielhallen oder Sportwetten im Programm."
+        },
+        {
+          "ursache": 3006,
+          "seiten": [
+            15,
+            37,
+            128
+          ],
+          "grund": "'Entstigmatisierung' (S. 37) betrifft Schwangerschaftsabbruch, 'Peer' (S. 15) Schulentwicklung, S. 128 Männerberatung ohne Sucht."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3001": {
+      "Verfügbarkeit von Alkohol begrenzen": [
+        "verkaufszeiten",
+        "alkoholverkauf",
+        "alkoholverbot",
+        "nachtverkaufsverbot",
+        "begleitetes trinken",
+        "abgabe von alkohol",
+        "jugendschutz bei alkohol",
+        "alkohol ab 18"
+      ],
+      "Verantwortlicher Verkauf und Aufklärung": [
+        "verantwortungsvoller konsum",
+        "alkoholprävention",
+        "konsumkompetenz",
+        "aufklärung über alkohol",
+        "testkäufe"
+      ]
+    },
+    "3002": {
+      "Preise und Steuern erhöhen": [
+        "alkoholsteuer",
+        "tabaksteuer",
+        "mindestpreis für alkohol",
+        "mindestpreise",
+        "gesundheitssteuer",
+        "preise erhöhen"
+      ],
+      "Gezielte Beratung statt Preisregulierung": [
+        "gezielte beratung",
+        "keine neuen steuern",
+        "eigenverantwortung beim konsum",
+        "steuern senken tabak",
+        "preisreaktion"
+      ]
+    },
+    "3003": {
+      "Werbung begrenzen": [
+        "tabakwerbung",
+        "alkoholwerbung",
+        "werbeverbot",
+        "sponsoring",
+        "werbebeschränkung",
+        "werbung für alkohol"
+      ],
+      "Medienkompetenz und Lebenskompetenzen stärken": [
+        "medienkompetenz",
+        "lebenskompetenz",
+        "suchtprävention in schulen",
+        "präventionsprogramme",
+        "selbstregulation"
+      ]
+    },
+    "3004": {
+      "Glücksspielangebote begrenzen": [
+        "glücksspielstaatsvertrag",
+        "spielhallen",
+        "spielautomaten",
+        "online-casino",
+        "sportwetten",
+        "werbung für glücksspiel",
+        "spielersperre",
+        "glücksspiel"
+      ],
+      "Selbstlimits und Aufklärung": [
+        "selbstlimits",
+        "einsatzlimit",
+        "spielerschutz",
+        "aufklärung über glücksspiel",
+        "glücksspielsucht",
+        "spielsuchthilfe"
+      ]
+    },
+    "3005": {
+      "Angebot und Handel zurückdrängen": [
+        "drogenhandel",
+        "drogenkriminalität",
+        "betäubungsmittelgesetz",
+        "lieferketten",
+        "bekämpfung des drogenhandels",
+        "drogenschmuggel"
+      ],
+      "Risikominderung und Qualitätskontrolle": [
+        "drug-checking",
+        "drugchecking",
+        "schadensminderung",
+        "konsumräume",
+        "legalisierung",
+        "cannabis",
+        "kontrollierte abgabe"
+      ]
+    },
+    "3006": {
+      "Suchthilfe und Behandlung ausbauen": [
+        "suchthilfe",
+        "suchtberatung",
+        "suchtbehandlung",
+        "entzugsbehandlung",
+        "entgiftung",
+        "drogenberatung",
+        "suchttherapie",
+        "substitution"
+      ],
+      "Selbsthilfe und begleitete Vermittlung": [
+        "selbsthilfegruppen",
+        "niedrigschwellige hilfe",
+        "entstigmatisierung",
+        "begleitete vermittlung",
+        "peer"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "67dc8c153a9a8ae2e2b294677ea7e6accfa0e220f5c902ca6d88e62e4571d4f5",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "3001": {
+            "Verfügbarkeit von Alkohol begrenzen": {
+              "verkaufszeiten": 0,
+              "alkoholverkauf": 0,
+              "alkoholverbot": 0,
+              "nachtverkaufsverbot": 0,
+              "begleitetes trinken": 0,
+              "abgabe von alkohol": 0,
+              "jugendschutz bei alkohol": 0,
+              "alkohol ab 18": 0
+            },
+            "Verantwortlicher Verkauf und Aufklärung": {
+              "verantwortungsvoller konsum": 0,
+              "alkoholprävention": 0,
+              "konsumkompetenz": 0,
+              "aufklärung über alkohol": 0,
+              "testkäufe": 0
+            }
+          },
+          "3004": {
+            "Glücksspielangebote begrenzen": {
+              "glücksspielstaatsvertrag": 0,
+              "spielhallen": 0,
+              "spielautomaten": 0,
+              "online-casino": 0,
+              "sportwetten": 0,
+              "werbung für glücksspiel": 0,
+              "spielersperre": 0,
+              "glücksspiel": 0
+            },
+            "Selbstlimits und Aufklärung": {
+              "selbstlimits": 0,
+              "einsatzlimit": 0,
+              "spielerschutz": 0,
+              "aufklärung über glücksspiel": 0,
+              "glücksspielsucht": 0,
+              "spielsuchthilfe": 0
+            }
+          },
+          "3006": {
+            "Suchthilfe und Behandlung ausbauen": {
+              "suchthilfe": 0,
+              "suchtberatung": 0,
+              "suchtbehandlung": 0,
+              "entzugsbehandlung": 0,
+              "entgiftung": 0,
+              "drogenberatung": 0,
+              "suchttherapie": 0,
+              "substitution": 1
+            },
+            "Selbsthilfe und begleitete Vermittlung": {
+              "selbsthilfegruppen": 0,
+              "niedrigschwellige hilfe": 0,
+              "entstigmatisierung": 0,
+              "begleitete vermittlung": 0,
+              "peer": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "3001": {
+            "Verfügbarkeit von Alkohol begrenzen": {
+              "verkaufszeiten": 0,
+              "alkoholverkauf": 0,
+              "alkoholverbot": 0,
+              "nachtverkaufsverbot": 0,
+              "begleitetes trinken": 0,
+              "abgabe von alkohol": 0,
+              "jugendschutz bei alkohol": 0,
+              "alkohol ab 18": 0
+            },
+            "Verantwortlicher Verkauf und Aufklärung": {
+              "verantwortungsvoller konsum": 0,
+              "alkoholprävention": 0,
+              "konsumkompetenz": 0,
+              "aufklärung über alkohol": 0,
+              "testkäufe": 0
+            }
+          },
+          "3004": {
+            "Glücksspielangebote begrenzen": {
+              "glücksspielstaatsvertrag": 0,
+              "spielhallen": 0,
+              "spielautomaten": 0,
+              "online-casino": 0,
+              "sportwetten": 0,
+              "werbung für glücksspiel": 0,
+              "spielersperre": 0,
+              "glücksspiel": 0
+            },
+            "Selbstlimits und Aufklärung": {
+              "selbstlimits": 0,
+              "einsatzlimit": 0,
+              "spielerschutz": 0,
+              "aufklärung über glücksspiel": 0,
+              "glücksspielsucht": 0,
+              "spielsuchthilfe": 0
+            }
+          },
+          "3006": {
+            "Suchthilfe und Behandlung ausbauen": {
+              "suchthilfe": 0,
+              "suchtberatung": 0,
+              "suchtbehandlung": 0,
+              "entzugsbehandlung": 0,
+              "entgiftung": 0,
+              "drogenberatung": 0,
+              "suchttherapie": 0,
+              "substitution": 0
+            },
+            "Selbsthilfe und begleitete Vermittlung": {
+              "selbsthilfegruppen": 0,
+              "niedrigschwellige hilfe": 0,
+              "entstigmatisierung": 0,
+              "begleitete vermittlung": 0,
+              "peer": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "3001": {
+            "Verfügbarkeit von Alkohol begrenzen": {
+              "verkaufszeiten": 0,
+              "alkoholverkauf": 0,
+              "alkoholverbot": 0,
+              "nachtverkaufsverbot": 0,
+              "begleitetes trinken": 0,
+              "abgabe von alkohol": 0,
+              "jugendschutz bei alkohol": 0,
+              "alkohol ab 18": 0
+            },
+            "Verantwortlicher Verkauf und Aufklärung": {
+              "verantwortungsvoller konsum": 0,
+              "alkoholprävention": 0,
+              "konsumkompetenz": 0,
+              "aufklärung über alkohol": 0,
+              "testkäufe": 0
+            }
+          },
+          "3004": {
+            "Glücksspielangebote begrenzen": {
+              "glücksspielstaatsvertrag": 0,
+              "spielhallen": 0,
+              "spielautomaten": 0,
+              "online-casino": 0,
+              "sportwetten": 0,
+              "werbung für glücksspiel": 0,
+              "spielersperre": 0,
+              "glücksspiel": 0
+            },
+            "Selbstlimits und Aufklärung": {
+              "selbstlimits": 0,
+              "einsatzlimit": 0,
+              "spielerschutz": 0,
+              "aufklärung über glücksspiel": 0,
+              "glücksspielsucht": 0,
+              "spielsuchthilfe": 0
+            }
+          },
+          "3006": {
+            "Suchthilfe und Behandlung ausbauen": {
+              "suchthilfe": 0,
+              "suchtberatung": 0,
+              "suchtbehandlung": 0,
+              "entzugsbehandlung": 0,
+              "entgiftung": 0,
+              "drogenberatung": 0,
+              "suchttherapie": 0,
+              "substitution": 0
+            },
+            "Selbsthilfe und begleitete Vermittlung": {
+              "selbsthilfegruppen": 0,
+              "niedrigschwellige hilfe": 0,
+              "entstigmatisierung": 1,
+              "begleitete vermittlung": 0,
+              "peer": 2
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -250,6 +250,9 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (27, 17, 'BE', 'keine', 'Kapitel »Gesundheitswesen« (S. 21–25) und Fundstellen S. 31, 32, 62 gelesen; keine konkrete Zusage zu den zulässigen Ursachen 2705 oder 2706.', '2026-10-06', true, '{2705,2706}'),
   (27, 17, 'MV', 'massnahmen', null, '2026-10-06', true, '{2705,2706}'),
   (27, 17, 'ST', 'massnahmen', null, '2026-10-06', true, '{2705,2706}'),
-  (27, 18, null, 'massnahmen', null, '2026-10-07', true, '{2701,2702,2703,2704,2705,2706}');
+  (27, 18, null, 'massnahmen', null, '2026-10-07', true, '{2701,2702,2703,2704,2705,2706}'),
+  (27, 18, 'BE', 'keine', 'Kapitel ''Berlin schützt'' Gesundheitsversorgung für alle (S. 80-85), ''Bedingungen für Fachkräfte'' (S. 67-69) und Fundstellen S. 9, 35, 52 gelesen; keine Zusage zu Mitsprache, Führung oder Unterstützung von Beschäftigten im Gesundheitswesen und keine zu Sprachmittlung für Beschäftigte.', '2026-10-08', true, '{2705,2706}'),
+  (27, 18, 'MV', 'keine', 'Kapitel ''Gesundheit und Wohlbefinden'' (PDF-S. 29-34) vollständig gelesen, dazu Fundstellen S. 2, 13, 14, 24; keine Zusage zu Mitsprache/Unterstützung für Beschäftigte im Gesundheitswesen (2705) oder Sprachmittlung/Verständigung (2706).', '2026-10-08', true, '{2705,2706}'),
+  (27, 18, 'ST', 'keine', 'Inhaltsverzeichnis (S. 3-6), Kapitel Gesundheit (S. 33-44) und Fundstellen S. 8, 54, 129, 130 gelesen; keine Zusage für Beschäftigte im Gesundheitswesen zu Mitsprache, Unterstützung am Arbeitsplatz oder Sprachmittlung.', '2026-10-08', true, '{2705,2706}');
 
 commit;

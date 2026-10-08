@@ -1,0 +1,109 @@
+{
+  "blind_pruefsumme": "f0c1566081be0b8b8771d9007ba05b8ebf1faa973afb82c2d258f4f49e0b828f",
+  "neue_instrumente": [],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Fahrerlose U-Bahnen laufen etwa in Nürnberg und Paris und sparen Fahrpersonal; der Mangel betrifft aber vor allem Bus und Tram, wo Assistenzsysteme niemanden ersetzen. Die Umrüstung dauert Jahre und ist teuer.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.trackopedia.com/en/news/all-countries/automated-metro-lines-could-double-in-length-by-2030"
+      },
+      "ursachen": [
+        803
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 6749,
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 6754,
+      "ursachen": [
+        803
+      ]
+    },
+    {
+      "kennung": "M04",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine kommunale Abgabe schafft eigenes Geld für mehr Angebot, wie die Arbeitgeberabgabe in Frankreich zeigt; laut Difu löst sie die Finanzierungsprobleme nicht allein, und es hängt von den Kommunen ab, ob sie sie einführen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.zfk.de/mobilitaet/oepnv/mobil-nahverkehr-studie-difu-finanzierung"
+      },
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": 6840,
+      "ursachen": [
+        804
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": 6750,
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": 6751,
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": 6750,
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": 6841,
+      "ursachen": [
+        804
+      ]
+    },
+    {
+      "kennung": "M10",
+      "instrument": 6841,
+      "ursachen": [
+        804
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": 6750,
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M12",
+      "instrument": 6749,
+      "ursachen": [
+        801
+      ]
+    },
+    {
+      "kennung": "M13",
+      "instrument": 6751,
+      "ursachen": [
+        801
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "blind_pruefsumme": "9463e6cf08780a429c6339fc6c1e14c3d5acab1e462a4f9f90f6f54d430a86ec",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Unfallschwerpunkte beseitigen und gefährliche Kreuzungen sicher umgestalten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt dort an, wo sich Unfälle mit Radfahrenden häufen, etwa an Kreuzungen mit abbiegenden Autos; Auswertungen zeigen oft Rückgänge, strengere Studien mit Kontrolle der Regression zur Mitte finden aber deutlich kleinere Effekte.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://trid.trb.org/View/482195"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": "I1",
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": 7066,
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": 7064,
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": 7064,
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": 7061,
+      "ursachen": [
+        1202
+      ]
+    },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Tempo senkt Zahl und Schwere von Unfällen deutlich (Edinburgh: rund 40 % weniger Verletzte); Zonen kann das Land ausweiten, Tempo 30 als Regel innerorts braucht aber eine Änderung der StVO durch den Bund, sonst nur Modellversuche.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.engineersireland.ie/Engineers-Journal/News/revealed-slowing-city-traffic-reduces-road-deaths-by-25-study"
+      },
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": 7062,
+      "ursachen": [
+        1203
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": 7064,
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I1",
+      "ursachen": [
+        1204
+      ]
+    },
+    {
+      "kennung": "M10",
+      "instrument": 7061,
+      "ursachen": [
+        1202
+      ]
+    }
+  ]
+}

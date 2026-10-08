@@ -1,0 +1,350 @@
+{
+  "thema_id": 14,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Einheitliches, mehrsprachiges Serviceportal für zentrale Verwaltungsleistungen, Anträge vollständig online, mit Statusanzeige.",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Wir bündeln zentrale Verwaltungsleistungen auf einem einheitlichen Serviceportal. Mit unserem Portal bekommen Bürger*innen und Unternehmen eine klare, barrierefreie und mehrsprachige Anlaufstelle für ihre Anliegen, unabhängig vom zuständigen Bezirk. Digitale Anträge werden vollständig online abgewickelt",
+          "seite": 15
+        },
+        {
+          "beschreibung": "E-Akte flächendeckend und verbindlich ausbauen, damit digitale Vorgänge nicht ausgedruckt und neu erfasst werden.",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Wir treiben den flächendeckenden Ausbau der E-Akte verbindlich voran, sodass digitale Vorgänge nicht mehr ausgedruckt und neu erfasst werden müssen.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Genehmigungsfiktion in standardisierbaren Verfahren ausweiten: Antrag gilt nach Fristablauf ohne begründete Ablehnung als genehmigt.",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Wir weiten das Prinzip der Genehmigungsfiktion in standardisierbaren Verfahren ohne Drittbetroffene aus: Wird ein vollständiger Antrag nicht innerhalb der Frist begründet abgelehnt, gilt er als genehmigt.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "KI in der Verwaltung zur Vorprüfung von Anträgen, Vollständigkeitsprüfung, Priorisierung und Bescheidentwürfen einsetzen.",
+          "ursachen_ids": [
+            1402
+          ],
+          "zitat": "Wir setzen KI gezielt ein, um Verwaltungsleistungen zu verbessern, auf Basis klarer Leitplanken. KI unterstützt insbesondere bei der Vorprüfung von Anträgen, prüft Unterlagen auf Vollständigkeit, priorisiert Vorgänge und erstellt Entwürfe für Bescheide.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Besoldung der Berliner Verwaltung an Bundesniveau angleichen, Zulagen für gefragte Berufsgruppen.",
+          "ursachen_ids": [
+            1402
+          ],
+          "zitat": "Wir gleichen die Besoldung der Berliner Verwaltung verbindlich an das Bundesniveau an. Für besonders gefragte Berufsgruppen, wie IT-Fachkräfte, Ingenieur*innen oder Jurist*innen, schaffen wir zusätzliche Zulagen.",
+          "seite": 17
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 1401,
+          "name": "Durchgängige digitale Prozesse (E-Akte, Once-Only)",
+          "seite": 14
+        },
+        {
+          "ursache": 1401,
+          "name": "Bearbeitungsfristen und Genehmigungsfiktion",
+          "seite": 11
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Einheitliche digitale Bürgerplattform für alle Verwaltungsleistungen im Land, bis 2030",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Einführung einer landesweit einheitlichen digitalen Bürgerplattform für alle Verwaltungsleistungen bis zum Jahr 2030.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Durchgängig digitale Akten, transparente Bearbeitungsstände und einmalige Datenangabe (Once-Only)",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Durchgängige digitale Akten, klare Zuständigkeiten und transparente Bearbeitungsstände, Umsetzung des Once-Only-Prinzips (einmalige Angabe von Daten).",
+          "seite": 43
+        },
+        {
+          "beschreibung": "KI-gestützte Automatisierung und Standardisierung in der Ministerialverwaltung, Stellenabbau über Neubesetzungssperren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1402
+          ],
+          "zitat": "KI-gestützte Automatisierung ausführender Tätigkeiten und Umsetzung via Standardisierung, verbindliche Einsparung von 15% der Stellen in administrativen Bereichen der Ministerialverwaltung über Neubesetzungssperren.",
+          "seite": 23
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Einheitliche digitale Landesplattform für alle Verwaltungsleistungen bis 2030, OZG konsequent umsetzen",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Onlinezugangsgesetz (OZG) konsequent umsetzen und weiterentwickeln und eine einheitliche Landesplattform bis spätestens 2030 einrichten",
+          "seite": 106
+        },
+        {
+          "beschreibung": "Vollständig digitale, medienbruchfreie Verfahren von der Antragstellung bis zum Bescheid",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Vollständig digitale, rechtssichere und medienbruchfreie Verwaltungsverfahren einführen, von der Antragstellung bis zum Bescheid",
+          "seite": 106
+        },
+        {
+          "beschreibung": "Tools, die Formulare mit wenigen Klicks automatisiert ausfüllen",
+          "ursachen_ids": [
+            1401
+          ],
+          "zitat": "Digitale Entscheidungsbäume und interaktive Tools einführen, die Formulare durch wenige Klicks automatisiert ausfüllen und Prozesse vereinfachen",
+          "seite": 117
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1402,
+          "seiten": [
+            107,
+            120,
+            166,
+            175
+          ],
+          "grund": "Zusagen zu Personal betreffen Polizei, Justiz, Kommunen-Beratung; keine zur Verwaltung allgemein oder Bürgerbehörden. KI-Treffer meist 'Kinder'."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1401": {
+      "Digitalisierung, zentrale Portale und Apps": [
+        "verwaltungsdigitalisierung",
+        "onlinezugang",
+        "ozg",
+        "deutschland-app",
+        "deutschlandid",
+        "digitale identität",
+        "bürgeramt",
+        "behörde",
+        "portal"
+      ],
+      "Durchgängige digitale Prozesse (E-Akte, Once-Only)": [
+        "e-akte",
+        "elektronische akte",
+        "once-only",
+        "medienbruch"
+      ],
+      "Bearbeitungsfristen und Genehmigungsfiktion": [
+        "bearbeitungsfrist",
+        "genehmigungsfiktion",
+        "bearbeitungszeit"
+      ]
+    },
+    "1402": {
+      "Mehr Personal, bessere Bezahlung": [
+        "öffentlicher dienst",
+        "personal",
+        "fachkräfte in der verwaltung",
+        "ausbildung",
+        "nachwuchs"
+      ],
+      "Automatisierung, Effizienz": [
+        "automatisierung",
+        "künstliche intelligenz",
+        "ki",
+        "effizienz",
+        "stellenabbau"
+      ]
+    },
+    "1403": {
+      "Once-Only, Register vernetzen": [
+        "once-only",
+        "register",
+        "registermodernisierung",
+        "antragslos",
+        "datenaustausch"
+      ],
+      "Datenschutz wahren": [
+        "datenschutz",
+        "steuer-id",
+        "personenkennzeichen"
+      ]
+    },
+    "1404": {
+      "Bürokratieabbau, Aufgabenkritik": [
+        "bürokratieabbau",
+        "ermessen",
+        "vorschriften",
+        "aufgabenkritik",
+        "normenkontrolle"
+      ],
+      "Aufgaben bündeln, Staatsreform": [
+        "staatsreform",
+        "digitalministerium",
+        "föderalismus",
+        "zuständigkeiten"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "59f15d66adf0b58d9ee9253838d57a566efee8e5db1cece1270211f70558a42f",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "1401": {
+            "Digitalisierung, zentrale Portale und Apps": {
+              "verwaltungsdigitalisierung": 0,
+              "onlinezugang": 0,
+              "ozg": 0,
+              "deutschland-app": 0,
+              "deutschlandid": 0,
+              "digitale identität": 1,
+              "bürgeramt": 1,
+              "behörde": 31,
+              "portal": 8
+            },
+            "Durchgängige digitale Prozesse (E-Akte, Once-Only)": {
+              "e-akte": 2,
+              "elektronische akte": 0,
+              "once-only": 2,
+              "medienbruch": 1
+            },
+            "Bearbeitungsfristen und Genehmigungsfiktion": {
+              "bearbeitungsfrist": 4,
+              "genehmigungsfiktion": 1,
+              "bearbeitungszeit": 3
+            }
+          },
+          "1402": {
+            "Mehr Personal, bessere Bezahlung": {
+              "öffentlicher dienst": 1,
+              "personal": 17,
+              "fachkräfte in der verwaltung": 0,
+              "ausbildung": 42,
+              "nachwuchs": 0
+            },
+            "Automatisierung, Effizienz": {
+              "automatisierung": 3,
+              "künstliche intelligenz": 1,
+              "ki": 204,
+              "effizienz": 6,
+              "stellenabbau": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "1401": {
+            "Digitalisierung, zentrale Portale und Apps": {
+              "verwaltungsdigitalisierung": 0,
+              "onlinezugang": 0,
+              "ozg": 0,
+              "deutschland-app": 0,
+              "deutschlandid": 0,
+              "digitale identität": 0,
+              "bürgeramt": 0,
+              "behörde": 10,
+              "portal": 1
+            },
+            "Durchgängige digitale Prozesse (E-Akte, Once-Only)": {
+              "e-akte": 0,
+              "elektronische akte": 0,
+              "once-only": 1,
+              "medienbruch": 0
+            },
+            "Bearbeitungsfristen und Genehmigungsfiktion": {
+              "bearbeitungsfrist": 0,
+              "genehmigungsfiktion": 0,
+              "bearbeitungszeit": 0
+            }
+          },
+          "1402": {
+            "Mehr Personal, bessere Bezahlung": {
+              "öffentlicher dienst": 0,
+              "personal": 7,
+              "fachkräfte in der verwaltung": 0,
+              "ausbildung": 5,
+              "nachwuchs": 2
+            },
+            "Automatisierung, Effizienz": {
+              "automatisierung": 2,
+              "künstliche intelligenz": 0,
+              "ki": 31,
+              "effizienz": 2,
+              "stellenabbau": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "1401": {
+            "Digitalisierung, zentrale Portale und Apps": {
+              "verwaltungsdigitalisierung": 0,
+              "onlinezugang": 1,
+              "ozg": 1,
+              "deutschland-app": 0,
+              "deutschlandid": 0,
+              "digitale identität": 6,
+              "bürgeramt": 0,
+              "behörde": 36,
+              "portal": 6
+            },
+            "Durchgängige digitale Prozesse (E-Akte, Once-Only)": {
+              "e-akte": 0,
+              "elektronische akte": 0,
+              "once-only": 2,
+              "medienbruch": 4
+            },
+            "Bearbeitungsfristen und Genehmigungsfiktion": {
+              "bearbeitungsfrist": 1,
+              "genehmigungsfiktion": 2,
+              "bearbeitungszeit": 0
+            }
+          },
+          "1402": {
+            "Mehr Personal, bessere Bezahlung": {
+              "öffentlicher dienst": 0,
+              "personal": 28,
+              "fachkräfte in der verwaltung": 0,
+              "ausbildung": 53,
+              "nachwuchs": 7
+            },
+            "Automatisierung, Effizienz": {
+              "automatisierung": 4,
+              "künstliche intelligenz": 0,
+              "ki": 141,
+              "effizienz": 4,
+              "stellenabbau": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

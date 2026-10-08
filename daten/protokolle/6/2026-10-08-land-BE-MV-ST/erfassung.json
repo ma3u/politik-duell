@@ -1,0 +1,228 @@
+{
+  "thema_id": 6,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Einheitlicher Rahmenvertrag mit Qualitätskriterien und verlässlicher Refinanzierung für Anbieter, die den Bezirken Unterbringungsplätze bereitstellen.",
+          "ursachen_ids": [
+            601
+          ],
+          "zitat": "Wir schaffen einen einheitlichen Rahmenvertrag für Akteure, die Unterbringungsplätze für Bezirke bereitstellen. Der Vertrag beinhaltet klare Qualitätskriterien, Beschwerderechte sowie eine transparente und verlässliche Refinanzierung.",
+          "seite": 107
+        },
+        {
+          "beschreibung": "Feste Stellen für die Belange Zugewanderter in Ämtern, darunter Landesamt für Einwanderung und Landesamt für Flüchtlingsangelegenheiten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            601
+          ],
+          "zitat": "In Jugendamt, Sozialamt, Gesundheitsamt, Schulamt, Jobcenter, Bürgeramt sowie in den Landesämtern für Einwanderung (LEA) und für Flüchtlingsangelegenheiten (LAF) schaffen wir feste Stellen, die spezifisch für die Belange von Zugewanderten zuständig sind.",
+          "seite": 105
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Geflüchtete und Zugewanderte gleichberechtigt einbinden' (S. 16-17), 'Freizügigkeit im Schengenraum erhalten' (S. 47-48), 'Starke Kommunen durch gerechte Finanzierung' (S. 23-24), Pflegekräfte-Anerkennung (S. 34) gelesen; nichts setzt an Unterbringungs- oder Behördenkapazitäten bei der Aufnahme an.",
+      "nicht_erfasst": [
+        {
+          "ursache": 601,
+          "seiten": [
+            16,
+            17,
+            23,
+            24,
+            34,
+            47,
+            48
+          ],
+          "grund": "Integrationsmaßnahmen (Arbeitsmarkt, Sprachkurse, Anerkennung) setzen nicht an Unterbringung oder Ausländerbehörden an; Kommunalfinanzierung (S. 23-24) ist allgemein ohne Bezug zu Aufnahme; Grenzkontrollen/Asylstandards sind Bund/EU."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Geflüchtete dezentral statt in großen Sammelunterkünften unterbringen, um Kosten zu senken und Teilhabe früh zu ermöglichen.",
+          "ursachen_ids": [
+            601
+          ],
+          "zitat": "Dezentrale Unterbringung statt großer Sammelunterkünfte, um Inklusion zu erleichtern, Kosten zu senken und soziale Teilhabe früh zu ermöglichen",
+          "seite": 135
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "601": {
+      "Zugang begrenzen": [
+        "obergrenze",
+        "begrenzung",
+        "zuzug",
+        "irreguläre migration",
+        "kommunen überlastet"
+      ],
+      "Kapazitäten ausbauen": [
+        "unterbringung",
+        "kommunen",
+        "kapazitäten",
+        "integrationsinfrastruktur",
+        "erstaufnahme"
+      ]
+    },
+    "602": {
+      "Schnellere Verfahren": [
+        "asylverfahren",
+        "verfahrensdauer",
+        "verwaltungsgericht",
+        "bamf",
+        "beschleunig"
+      ]
+    },
+    "603": {
+      "Schneller in Arbeit": [
+        "sprachkurs",
+        "integrationskurs",
+        "anerkennung",
+        "berufsabschlüsse",
+        "arbeitsmarktzugang",
+        "beschäftigungsverbot",
+        "arbeitserlaubnis"
+      ]
+    },
+    "604": {
+      "Identität und Hintergrund bei Einreise und Registrierung strenger prüfen": [
+        "identitätsfeststellung",
+        "identitätsprüfung",
+        "identitätsnachweis",
+        "identität",
+        "hintergrundprüfung",
+        "sicherheitsüberprüfung",
+        "sicherheitsprüfung",
+        "biometrisch",
+        "fingerabdruck",
+        "eurodac",
+        "datenträger",
+        "mobiltelefon",
+        "handydaten",
+        "ohne papiere",
+        "ohne pass"
+      ],
+      "Identitätsprüfung und Datenzugriff begrenzen, Datenschutz für Geflüchtete wahren": [
+        "datenschutz für geflüchtete",
+        "handydaten auslesen ablehn",
+        "auslesen von handys",
+        "auslesen von mobiltelefonen",
+        "datenträgerauswertung"
+      ]
+    },
+    "605": {
+      "Grenzkontrollen, Zurückweisungen": [
+        "grenzkontrolle",
+        "zurückweisung",
+        "dublin",
+        "grenzschutz",
+        "außengrenze"
+      ],
+      "Europäische Verteilung, GEAS": [
+        "geas",
+        "gemeinsames europäisches asylsystem",
+        "verteilung",
+        "solidaritätsmechanismus"
+      ]
+    },
+    "606": {
+      "Bleiberecht, Arbeitserlaubnis": [
+        "duldung",
+        "geduldete",
+        "bleiberecht",
+        "chancen-aufenthaltsrecht",
+        "spurwechsel"
+      ],
+      "Ausreise durchsetzen": [
+        "ausreisepflicht",
+        "abschiebung",
+        "rückführung",
+        "ausreisezentr"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "2b7b197be63ff7c4a7d8ebecc298fc789d652de1b00d9b4fa9b5a0209ef8b552",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "601": {
+            "Zugang begrenzen": {
+              "obergrenze": 1,
+              "begrenzung": 0,
+              "zuzug": 0,
+              "irreguläre migration": 0,
+              "kommunen überlastet": 0
+            },
+            "Kapazitäten ausbauen": {
+              "unterbringung": 4,
+              "kommunen": 4,
+              "kapazitäten": 7,
+              "integrationsinfrastruktur": 0,
+              "erstaufnahme": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "601": {
+            "Zugang begrenzen": {
+              "obergrenze": 0,
+              "begrenzung": 0,
+              "zuzug": 0,
+              "irreguläre migration": 0,
+              "kommunen überlastet": 0
+            },
+            "Kapazitäten ausbauen": {
+              "unterbringung": 0,
+              "kommunen": 24,
+              "kapazitäten": 1,
+              "integrationsinfrastruktur": 0,
+              "erstaufnahme": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "601": {
+            "Zugang begrenzen": {
+              "obergrenze": 1,
+              "begrenzung": 3,
+              "zuzug": 3,
+              "irreguläre migration": 0,
+              "kommunen überlastet": 0
+            },
+            "Kapazitäten ausbauen": {
+              "unterbringung": 4,
+              "kommunen": 86,
+              "kapazitäten": 13,
+              "integrationsinfrastruktur": 0,
+              "erstaufnahme": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

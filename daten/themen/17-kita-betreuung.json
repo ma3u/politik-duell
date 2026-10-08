@@ -2616,6 +2616,129 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1701, 1702, 1703, 1704, 1705],
+      "massnahmen": [
+        {
+          "id": 8607,
+          "instrument": 7286,
+          "beschreibung": "Gesetzliche Zielgrößen für den Betreuungsschlüssel in Krippe und Kita",
+          "ursachen_ids": [1703],
+          "zitat": "Wir verankern daher gesetzliche Zielgrößen für den Betreuungsschlüssel von 1:3 in der Krippe und 1:7,5 in der Kita.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=44",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8608,
+          "instrument": 7293,
+          "beschreibung": "Ausbildung und Qualifizierungswege ausbauen, Quereinstieg besser strukturieren, ausländische Abschlüsse schneller anerkennen",
+          "ursachen_ids": [1702],
+          "zitat": "Wir bauen Ausbildung und Qualifizierungswege aus, strukturieren den Quereinstieg besser und beschleunigen die Anerkennung ausländischer Abschlüsse.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=44",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8609,
+          "instrument": 7298,
+          "beschreibung": "Multiprofessionelle Teams in Kitas stärken, um Fachkräfte zu entlasten",
+          "ursachen_ids": [1702],
+          "zitat": "Wir stärken multiprofessionelle Teams in den Kitas: Neben Erzieher*innen arbeiten dort Fachkräfte aus den Bereichen Gesundheit, Sozial- und Heilpädagogik zusammen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=44",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8610,
+          "instrument": 7276,
+          "beschreibung": "Vorrang beim Kita-Platzausbau für Quartiere mit hohem Bedarf",
+          "ursachen_ids": [1701],
+          "zitat": "Kitas in Quartieren mit hohem Bedarf erhalten Vorrang beim Platzausbau.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=45",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1701, 1702, 1703, 1704, 1705],
+      "massnahmen": [
+        {
+          "id": 8611,
+          "instrument": 7302,
+          "beschreibung": "Beitragsfreiheit der Kitas langfristig absichern, unabhängig vom Einkommen der Eltern.",
+          "ursachen_ids": [1705],
+          "zitat": "Kostenlose Kitas dauerhaft sichern Langfristige Absicherung der Beitragsfreiheit, Gewährleistung frühkindlicher Bildung als Teil der öffentlichen Daseinsvorsorge, unabhängig vom Einkommen der Eltern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=9",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8612,
+          "instrument": 7287,
+          "beschreibung": "Besserer Betreuungsschlüssel mit mehr pädagogischem Personal pro Gruppe sowie bessere Arbeitsbedingungen und angemessene Vergütung.",
+          "ursachen_ids": [1702, 1703],
+          "zitat": "Besserer Betreuungsschlüssel und bessere Bezahlung Die Verbesserung der Arbeitsbedingungen, die Erhöhung der Qualität der Betreuung und mehr pädagogisches Personal pro Gruppe sowie eine angemessene Vergütung machen den Beruf langfristig attraktiv.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=9",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1701, 1702, 1703, 1704, 1705],
+      "massnahmen": [
+        {
+          "id": 8613,
+          "instrument": 7287,
+          "beschreibung": "Mehr pädagogisches Personal und Objekt- statt Subjektfinanzierung, um den Betreuungsschlüssel zu verbessern.",
+          "ursachen_ids": [1703, 1702],
+          "zitat": "Betreuungsschlüssel durch mehr pädagogisches Personal und Objekt- statt Subjektfinanzierung verbessern",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8614,
+          "instrument": 7291,
+          "beschreibung": "Erzieherinnen und Erzieher höher und verlässlicher bezahlen.",
+          "ursachen_ids": [1702],
+          "zitat": "Erzieherinnen und Erzieher höher und verlässlicher bezahlen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8615,
+          "instrument": 7302,
+          "beschreibung": "Sechs Stunden tägliche Kita-Betreuung landesweit kostenfrei; darüber hinaus Beiträge nach Elterneinkommen gestaffelt.",
+          "ursachen_ids": [1705],
+          "zitat": "6 Stunden tägliche Kita-Betreuung als landesweit kostenfreie Grundversorgung für alle Kinder ab dem ersten Lebensjahr bis zur Einschulung sichern",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

@@ -168,6 +168,16 @@
       "umsetzbarkeit": 3,
       "begruendung": "Richtet sich an Gruppen mit hohem Risiko, etwa ältere Menschen auf Pedelecs; wie stark Trainings die Zahl schwerer Unfälle senken, ist kaum untersucht.",
       "evidenz": "offen"
+    },
+    {
+      "id": 8682,
+      "name": "Unfallschwerpunkte beseitigen und gefährliche Kreuzungen sicher umgestalten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt dort an, wo sich Unfälle mit Radfahrenden häufen, etwa an Kreuzungen mit abbiegenden Autos; Auswertungen zeigen oft Rückgänge, strengere Studien mit Kontrolle der Regression zur Mitte finden aber deutlich kleinere Effekte.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://trid.trb.org/View/482195",
+      "entwurf_herkunft": "blind"
     }
   ],
   "abdeckung": [
@@ -1389,6 +1399,145 @@
           "beleg_studie_url": "https://www.cerema.fr/en/node/7630",
           "evidenz": "belegt",
           "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1202, 1203, 1204],
+      "massnahmen": [
+        {
+          "id": 8683,
+          "instrument": 8682,
+          "beschreibung": "Sofortprogramm für sichere Kreuzungen: Unfallschwerpunkte beseitigen, getrennte Ampelphasen, Schutzinseln und abgesetzte Aufstellflächen.",
+          "ursachen_ids": [1204],
+          "zitat": "Wir starten ein Sofortprogramm, um Kreuzungen sicherer zu machen und alle Unfallschwerpunkte bis 2030 zu beseitigen. Getrennte Ampelphasen für Rad- und Autoverkehr sowie Grünpfeile für abbiegende Radfahrer*innen verhindern Konflikte.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=33",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8684,
+          "instrument": 7064,
+          "beschreibung": "Radwege, Fahrradstraßen und Radschnellverbindungen zügig ausbauen, gestoppte Radschnellwege wieder aufnehmen.",
+          "ursachen_ids": [1204],
+          "zitat": "Wir planen und bauen Radwege, Fahrradstraßen und Radschnellverbindungen konsequent und zügig aus. Insbesondere fordern wir, die Planung der gestoppten Radschnellwege unverzüglich wieder aufzunehmen und zügig umzusetzen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8685,
+          "instrument": 7066,
+          "beschreibung": "An Schulen gezielt über Rücksichtnahme im Straßenverkehr aufklären.",
+          "ursachen_ids": [1204],
+          "zitat": "Wir klären gezielt an Schulen auf und stärken so Rücksichtnahme und verantwortungsbewusstes Verhalten im Straßenverkehr.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=33",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1202, 1203, 1204],
+      "massnahmen": [
+        {
+          "id": 8686,
+          "instrument": 7064,
+          "beschreibung": "Das Land fördert kommunale Radverkehrsprojekte, die Radverkehr von Straßen und Fußgängern trennen, mit Vorrang für Schul- und Pendelwege.",
+          "ursachen_ids": [1204],
+          "zitat": "Gezielte Förderung kommunaler Radverkehrsprojekte zur Trennung des Radverkehrs von Straßen und Fußgängern, Priorisierung von Schul- und Pendelwegen zur Erhöhung der Sicherheit",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8687,
+          "instrument": 7061,
+          "beschreibung": "Das Land gleicht neue gesetzliche Pflichten der Kommunen dauerhaft finanziell aus.",
+          "ursachen_ids": [1202],
+          "zitat": "Vollständiger und dauerhafter finanzieller Ausgleich von neuen gesetzlichen Verpflichtungen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1202, 1203, 1204],
+      "massnahmen": [
+        {
+          "id": 8688,
+          "instrument": 7061,
+          "beschreibung": "Verlässliche, planbare und bedarfsgerechte Landesfinanzierung der Kommunen, damit sie Aufgaben wie Infrastruktur erfüllen und investieren können.",
+          "ursachen_ids": [1202],
+          "zitat": "Wir scha ff en verlässliche fi nanzielle Rahmenbedingungen, damit Kommunen ihre Aufgaben eigenständig und zukunftsorientiert erfüllen können. Dazu setzen wir auf folgende Maßnahmen: […] Planbare, bedarfsgerechte und langfristig angelegte Landes fi nanzierung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=119",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8689,
+          "instrument": 7062,
+          "beschreibung": "Feste Fristen und Genehmigungsfiktion bei Bau- und Infrastrukturprojekten, vereinfachte Prüfverfahren und mehr Entscheidungskompetenz der Kommunen.",
+          "ursachen_ids": [1203],
+          "zitat": "Einführung fester Fristen für Genehmigungen ● Mehr Entscheidungskompetenz für Kommunen bei temporären Bau- und Infrastrukturmaßnahmen ● Vereinfachte Prüfverfahren für standardisierte und sicherheitsgeprüfte Projekte ● „Genehmigungs fi ktion“ bei ausbleibender Rückmeldung innerhalb de fi nierter Fristen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=118",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8690,
+          "instrument": 7064,
+          "beschreibung": "Zusammenhängendes Radnetz mit priorisiertem Bau von Radwegen entlang von Bundes- und Landesstraßen, Lückenschlüssen und beschleunigten Verfahren.",
+          "ursachen_ids": [1204],
+          "zitat": "Priorisierter Bau von begleitenden Radwegen entlang von Bundes- und Landesstraßen ● Einführung eines datenbasierten Algorithmus zur Radwegeplanung, der Projekte nach maximalem Nutzen (Anbindung, Sicherheit, Nachfrage) priorisiert ● Fokus auf Lückenschlüsse für ein zusammenhängendes ortsübergreifendes Netz",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=98",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8691,
+          "instrument": 8682,
+          "beschreibung": "Unfallhäufungsstellen an Landesstraßen systematisch beseitigen und gefährliche Kreuzungen umgestalten.",
+          "ursachen_ids": [1204],
+          "zitat": "Landesstraßen gezielt entschärfen: Systematische Beseitigung von Unfallhäufungsstellen, Umgestaltung gefährlicher Kreuzungen (z. B. Kreisverkehre, getrennte Abbiegespuren) sowie sichere Ortsdurchfahrten",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=92",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8692,
+          "beschreibung": "Tempo 30 als Standard innerorts, Ausweitung auf Wohngebiete und Schulwege mit Kontrolle.",
+          "ursachen_ids": [1204],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Tempo senkt Zahl und Schwere von Unfällen deutlich (Edinburgh: rund 40 % weniger Verletzte); Zonen kann das Land ausweiten, Tempo 30 als Regel innerorts braucht aber eine Änderung der StVO durch den Bund, sonst nur Modellversuche.",
+          "zitat": "Ausweitung von Tempo-30-Zonen auf Wohngebiete, Schulwege und Mischverkehrs fl ächen verbunden mit Kontrolle ● Einrichtung von fl ächendeckenden Tempo-30-Modellen als Standard innerhalb geschlossener Ortschaften",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=89",
+          "beleg_studie_url": "https://www.engineersireland.ie/Engineers-Journal/News/revealed-slowing-city-traffic-reduces-road-deaths-by-25-study",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
           "geprueft": false,
           "ki_entwurf": true
         }

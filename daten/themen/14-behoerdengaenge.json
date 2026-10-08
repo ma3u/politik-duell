@@ -980,6 +980,154 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1401, 1402],
+      "massnahmen": [
+        {
+          "id": 8712,
+          "instrument": 7125,
+          "beschreibung": "Einheitliches, mehrsprachiges Serviceportal für zentrale Verwaltungsleistungen, Anträge vollständig online, mit Statusanzeige.",
+          "ursachen_ids": [1401],
+          "zitat": "Wir bündeln zentrale Verwaltungsleistungen auf einem einheitlichen Serviceportal. Mit unserem Portal bekommen Bürger*innen und Unternehmen eine klare, barrierefreie und mehrsprachige Anlaufstelle für ihre Anliegen, unabhängig vom zuständigen Bezirk. Digitale Anträge werden vollständig online abgewickelt",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=15",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8713,
+          "instrument": 7125,
+          "beschreibung": "E-Akte flächendeckend und verbindlich ausbauen, damit digitale Vorgänge nicht ausgedruckt und neu erfasst werden.",
+          "ursachen_ids": [1401],
+          "zitat": "Wir treiben den flächendeckenden Ausbau der E-Akte verbindlich voran, sodass digitale Vorgänge nicht mehr ausgedruckt und neu erfasst werden müssen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8714,
+          "instrument": 7127,
+          "beschreibung": "KI in der Verwaltung zur Vorprüfung von Anträgen, Vollständigkeitsprüfung, Priorisierung und Bescheidentwürfen einsetzen.",
+          "ursachen_ids": [1402],
+          "zitat": "Wir setzen KI gezielt ein, um Verwaltungsleistungen zu verbessern, auf Basis klarer Leitplanken. KI unterstützt insbesondere bei der Vorprüfung von Anträgen, prüft Unterlagen auf Vollständigkeit, priorisiert Vorgänge und erstellt Entwürfe für Bescheide.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=15",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8715,
+          "instrument": 7128,
+          "beschreibung": "Besoldung der Berliner Verwaltung an Bundesniveau angleichen, Zulagen für gefragte Berufsgruppen.",
+          "ursachen_ids": [1402],
+          "zitat": "Wir gleichen die Besoldung der Berliner Verwaltung verbindlich an das Bundesniveau an. Für besonders gefragte Berufsgruppen, wie IT-Fachkräfte, Ingenieur*innen oder Jurist*innen, schaffen wir zusätzliche Zulagen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=17",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1401, 1402],
+      "massnahmen": [
+        {
+          "id": 8716,
+          "instrument": 7125,
+          "beschreibung": "Einheitliche digitale Bürgerplattform für alle Verwaltungsleistungen im Land, bis 2030",
+          "ursachen_ids": [1401],
+          "zitat": "Einführung einer landesweit einheitlichen digitalen Bürgerplattform für alle Verwaltungsleistungen bis zum Jahr 2030.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=43",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8717,
+          "beschreibung": "Durchgängig digitale Akten, transparente Bearbeitungsstände und einmalige Datenangabe (Once-Only)",
+          "ursachen_ids": [1401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Digitale Akten und Once-Only setzen an Medienbrüchen und doppelten Nachweisen an, die Nutzer als größte Ärgernisse nennen. Das Land kann eigene Register vernetzen, volle Wirkung braucht aber die mehrjährige Registermodernisierung mit Bund und Kommunen.",
+          "zitat": "Durchgängige digitale Akten, klare Zuständigkeiten und transparente Bearbeitungsstände, Umsetzung des Once-Only-Prinzips (einmalige Angabe von Daten).",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=43",
+          "beleg_studie_url": "https://initiatived21.de/publikationen/egovernment-monitor/2025",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8718,
+          "beschreibung": "KI-gestützte Automatisierung und Standardisierung in der Ministerialverwaltung, Stellenabbau über Neubesetzungssperren",
+          "ursachen_ids": [1402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Automatisierung kann Routinearbeit abnehmen; Modellrechnungen sehen Potenzial, aber kein Allheilmittel. Die Einsparung betrifft die Ministerialverwaltung ohne Bürgerkontakt, und eine feste Stellenkürzung verbraucht den Gewinn, statt Engpässe zu lindern.",
+          "zitat": "KI-gestützte Automatisierung ausführender Tätigkeiten und Umsetzung via Standardisierung, verbindliche Einsparung von 15% der Stellen in administrativen Bereichen der Ministerialverwaltung über Neubesetzungssperren.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=23",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1401, 1402],
+      "massnahmen": [
+        {
+          "id": 8719,
+          "instrument": 7125,
+          "beschreibung": "Einheitliche digitale Landesplattform für alle Verwaltungsleistungen bis 2030, OZG konsequent umsetzen",
+          "ursachen_ids": [1401],
+          "zitat": "Onlinezugangsgesetz (OZG) konsequent umsetzen und weiterentwickeln und eine einheitliche Landesplattform bis spätestens 2030 einrichten",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=106",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8720,
+          "instrument": 7125,
+          "beschreibung": "Vollständig digitale, medienbruchfreie Verfahren von der Antragstellung bis zum Bescheid",
+          "ursachen_ids": [1401],
+          "zitat": "Vollständig digitale, rechtssichere und medienbruchfreie Verwaltungsverfahren einführen, von der Antragstellung bis zum Bescheid",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=106",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8721,
+          "beschreibung": "Tools, die Formulare mit wenigen Klicks automatisiert ausfüllen",
+          "ursachen_ids": [1401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einfacheres Ausfüllen senkt eine Hürde, die Nutzer bei komplizierten Anträgen nennen; ob Anträge dadurch schneller bearbeitet werden, hängt von der digitalen Bearbeitung dahinter ab und ist kaum untersucht.",
+          "zitat": "Digitale Entscheidungsbäume und interaktive Tools einführen, die Formulare durch wenige Klicks automatisiert ausfüllen und Prozesse vereinfachen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=117",
+          "beleg_studie_url": "https://initiatived21.de/publikationen/egovernment-monitor/2025",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

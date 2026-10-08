@@ -1761,6 +1761,45 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Berlin schützt' Gesundheitsversorgung für alle (S. 80-85), 'Bedingungen für Fachkräfte' (S. 67-69) und Fundstellen S. 9, 35, 52 gelesen; keine Zusage zu Mitsprache, Führung oder Unterstützung von Beschäftigten im Gesundheitswesen und keine zu Sprachmittlung für Beschäftigte.",
+        "stand": "2026-10-08",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Gesundheit und Wohlbefinden' (PDF-S. 29-34) vollständig gelesen, dazu Fundstellen S. 2, 13, 14, 24; keine Zusage zu Mitsprache/Unterstützung für Beschäftigte im Gesundheitswesen (2705) oder Sprachmittlung/Verständigung (2706).",
+        "stand": "2026-10-08",
+        "treffer": 5,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2705, 2706],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 3-6), Kapitel Gesundheit (S. 33-44) und Fundstellen S. 8, 54, 129, 130 gelesen; keine Zusage für Beschäftigte im Gesundheitswesen zu Mitsprache, Unterstützung am Arbeitsplatz oder Sprachmittlung.",
+        "stand": "2026-10-08",
+        "treffer": 4,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
     }
   ]
 }

@@ -1,0 +1,280 @@
+{
+  "pruefsumme": "9463e6cf08780a429c6339fc6c1e14c3d5acab1e462a4f9f90f6f54d430a86ec",
+  "thema": {
+    "id": 12,
+    "name": "Straßen und Brücken",
+    "ziel": "Menschen kommen auf Straßen, Brücken und Radwegen sicher und ohne lange Sperrungen und Umwege ans Ziel."
+  },
+  "ursachen": [
+    {
+      "id": 1201,
+      "beschreibung": "Viele Autobahnbrücken sind marode, ihre Modernisierung liegt weit hinter dem Plan: Bis Ende 2024 war nur 40 % des Vorgesehenen geschafft; der Autobahn GmbH fehlen Personal und Mittel",
+      "ebene": "bund"
+    },
+    {
+      "id": 1202,
+      "beschreibung": "Die Kommunen schieben bei Straßen und Verkehrswegen einen Sanierungsstau von rund 54 Mrd. Euro vor sich her",
+      "ebene": "land"
+    },
+    {
+      "id": 1203,
+      "beschreibung": "Bauvorhaben kommen schleppend voran: Kommunen setzen nur rund zwei Drittel ihrer geplanten Investitionen um; es fehlt Personal, Genehmigung und Vergabe sind aufwendig",
+      "ebene": "land"
+    },
+    {
+      "id": 1204,
+      "beschreibung": "Radfahren ist gefährlicher geworden: 2025 starben 462 Radfahrende, 20,6 % mehr als 2015, vor allem Ältere auf Pedelecs; Unfallgegner ist meist ein Auto",
+      "ebene": "land"
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 6929,
+      "name": "Erhalt und Sanierung von Autobahnen, Straßen und Brücken ausreichend und verlässlich finanzieren",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr und planbares Geld ist eine Voraussetzung, um den Rückstand bei den Brücken aufzuholen; laut Bundesrechnungshof fehlen der Autobahn GmbH aber auch Personal und Steuerung. Seit 2025 steht mit dem Sondervermögen Infrastruktur zusätzliches Geld bereit.",
+      "beleg_studie_url": "https://www.bundesrechnungshof.de/SharedDocs/Pressemitteilungen/DE/2025/brueckenmodernisierung.html"
+    },
+    {
+      "id": 6930,
+      "name": "Vorrang für Sanierung vor Neu- und Ausbau von Straßen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Bündelt knappe Planungs- und Baukapazitäten auf den Erhalt, wie es der Bundesrechnungshof für die Brücken fordert; weniger Neubau kann Engpässe auf überlasteten Strecken länger bestehen lassen.",
+      "beleg_studie_url": "https://www.bundesrechnungshof.de/SharedDocs/Statements/DE/2025/brueckenmodernisierung.html"
+    },
+    {
+      "id": 6931,
+      "name": "Großes Investitionsprogramm, Investitionen von der Schuldenbremse ausnehmen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Geld für Bund, Länder und Kommunen kann Sanierungsstau abbauen; ob es bei Straßen und Brücken ankommt und verbaut werden kann, hängt von Personal und Verfahren ab. Braucht eine Grundgesetzänderung, wie sie 2025 für das Sondervermögen beschlossen wurde."
+    },
+    {
+      "id": 6932,
+      "name": "Finanzierungskreislauf Straße: Lkw-Maut für die Autobahn GmbH, privates Kapital",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Macht die Finanzierung der Autobahnen planbarer und unabhängiger vom Haushalt; öffentlich-private Partnerschaften waren laut Bundesrechnungshof bisher oft teurer als konventionelle Vergabe."
+    },
+    {
+      "id": 6933,
+      "name": "Planung und Genehmigung beschleunigen, Ersatzneubauten ohne Planfeststellung oder Umweltprüfung",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verkürzt die Zeit bis zum Ersatz maroder Brücken, bei denen sich an Lage und Umweltwirkung wenig ändert; seit 2023 gibt es dafür schon Erleichterungen. Nach Bundesrechnungshof und KfW bremsen vor allem Personal und Geld, nicht nur die Verfahren."
+    },
+    {
+      "id": 6934,
+      "name": "Kommunalfinanzen stärken: Altschuldenlösung, Gemeindefinanzreform",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Gibt überschuldeten Kommunen wieder Spielraum für Investitionen; ob das Geld in Straßen fließt, entscheiden die Kommunen. Eine Altschuldenlösung braucht eine Einigung von Bund und Ländern."
+    },
+    {
+      "id": 6935,
+      "name": "Güterverkehr von der Straße auf die Schiene verlagern",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Schwere Lkw belasten Brücken am stärksten, weniger Lkw verlangsamen den Verschleiß; eine spürbare Verlagerung braucht aber Jahre und mehr Kapazität auf der Schiene."
+    },
+    {
+      "id": 6936,
+      "name": "Radwegenetz ausbauen und dauerhaft finanzieren",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Getrennte, durchgehende Radwege senken das Unfallrisiko nach vielen Studien; an Kreuzungen, wo die meisten schweren Unfälle passieren, hängt es von der Gestaltung ab. Bauen müssen Länder und Kommunen, der Bund kann fördern."
+    },
+    {
+      "id": 6937,
+      "name": "Tempo 30 innerorts erleichtern oder zur Regel machen",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Niedrigere Geschwindigkeit verringert Zahl und Schwere von Unfällen mit Radfahrenden und Fußgängern deutlich; auf Landstraßen und an Hauptverkehrsachsen, wo viele schwere Radunfälle passieren, ändert es nichts."
+    },
+    {
+      "id": 7060,
+      "name": "Landes- und kommunale Straßen und Brücken sanieren (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Geld und klare Prioritäten für den Erhalt bauen den Sanierungsstau ab; seit 2025 stehen den Ländern Mittel aus dem Sondervermögen Infrastruktur zur Verfügung. Ob sie verbaut werden, hängt von Personal und Verfahren ab."
+    },
+    {
+      "id": 7061,
+      "name": "Kommunen finanziell stärken: Finanzausgleich, Investitionspauschalen, Altschulden (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Gibt Kommunen Spielraum für Investitionen; ob das Geld in Straßen fließt, entscheiden sie selbst, und der Landeshaushalt ist begrenzt."
+    },
+    {
+      "id": 7062,
+      "name": "Planung, Genehmigung und Vergabe im Land beschleunigen (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Das Land kann Bauordnung, Vergaberecht und Verwaltungsabläufe selbst ändern und so Verfahren verkürzen; laut KfW bremst aber vor allem fehlendes Personal."
+    },
+    {
+      "id": 7063,
+      "name": "Bauverwaltungen personell und finanziell stärken (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Setzt am größten Hemmnis an, das die KfW nennt; Ingenieurinnen und Ingenieure sind knapp, neue Stellen lassen sich nicht sofort besetzen."
+    },
+    {
+      "id": 7064,
+      "name": "Radwege ausbauen und sanieren, sichere und durchgängige Netze (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Getrennte, durchgehende Radwege und sichere Kreuzungen senken das Unfallrisiko nach vielen Studien; die Wirkung hängt von der Gestaltung ab, und neue Wege entstehen nur nach und nach."
+    },
+    {
+      "id": 7065,
+      "name": "Tempo 30 innerorts ausweiten, besonders an Schulen, Kitas und Seniorenheimen (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Niedrigere Geschwindigkeit verringert Zahl und Schwere von Unfällen mit Radfahrenden und Fußgängern; seit 2024 können Länder und Kommunen Tempo 30 leichter anordnen."
+    },
+    {
+      "id": 7066,
+      "name": "Verkehrserziehung und Sicherheitsangebote, auch für Ältere (Landesprogramm)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Richtet sich an Gruppen mit hohem Risiko, etwa ältere Menschen auf Pedelecs; wie stark Trainings die Zahl schwerer Unfälle senken, ist kaum untersucht."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Unfallhäufungsstellen an Landesstraßen systematisch beseitigen und gefährliche Kreuzungen umgestalten.",
+      "zitat": "Landesstraßen gezielt entschärfen: Systematische Beseitigung von Unfallhäufungsstellen, Umgestaltung gefährlicher Kreuzungen (z. B. Kreisverkehre, getrennte Abbiegespuren) sowie sichere Ortsdurchfahrten",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "1af5f6ee3c4bb011"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "An Schulen gezielt über Rücksichtnahme im Straßenverkehr aufklären.",
+      "zitat": "Wir klären gezielt an Schulen auf und stärken so Rücksichtnahme und verantwortungsbewusstes Verhalten im Straßenverkehr.",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "d8ef34c5c98e9209"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Das Land fördert kommunale Radverkehrsprojekte, die Radverkehr von Straßen und Fußgängern trennen, mit Vorrang für Schul- und Pendelwege.",
+      "zitat": "Gezielte Förderung kommunaler Radverkehrsprojekte zur Trennung des Radverkehrs von Straßen und Fußgängern, Priorisierung von Schul- und Pendelwegen zur Erhöhung der Sicherheit",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "4fe77a4d04d88d0a"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Zusammenhängendes Radnetz mit priorisiertem Bau von Radwegen entlang von Bundes- und Landesstraßen, Lückenschlüssen und beschleunigten Verfahren.",
+      "zitat": "Priorisierter Bau von begleitenden Radwegen entlang von Bundes- und Landesstraßen ● Einführung eines datenbasierten Algorithmus zur Radwegeplanung, der Projekte nach maximalem Nutzen (Anbindung, Sicherheit, Nachfrage) priorisiert ● Fokus auf Lückenschlüsse für ein zusammenhängendes ortsübergreifendes Netz",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "23fbbf37a6348644"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Verlässliche, planbare und bedarfsgerechte Landesfinanzierung der Kommunen, damit sie Aufgaben wie Infrastruktur erfüllen und investieren können.",
+      "zitat": "Wir scha ff en verlässliche fi nanzielle Rahmenbedingungen, damit Kommunen ihre Aufgaben eigenständig und zukunftsorientiert erfüllen können. Dazu setzen wir auf folgende Maßnahmen: […] Planbare, bedarfsgerechte und langfristig angelegte Landes fi nanzierung.",
+      "ursachen_ids": [
+        1202
+      ],
+      "pruefsumme": "a86b39495e26702d"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Tempo 30 als Standard innerorts, Ausweitung auf Wohngebiete und Schulwege mit Kontrolle.",
+      "zitat": "Ausweitung von Tempo-30-Zonen auf Wohngebiete, Schulwege und Mischverkehrs fl ächen verbunden mit Kontrolle ● Einrichtung von fl ächendeckenden Tempo-30-Modellen als Standard innerhalb geschlossener Ortschaften",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "3ba7ecf348c0e024"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Feste Fristen und Genehmigungsfiktion bei Bau- und Infrastrukturprojekten, vereinfachte Prüfverfahren und mehr Entscheidungskompetenz der Kommunen.",
+      "zitat": "Einführung fester Fristen für Genehmigungen ● Mehr Entscheidungskompetenz für Kommunen bei temporären Bau- und Infrastrukturmaßnahmen ● Vereinfachte Prüfverfahren für standardisierte und sicherheitsgeprüfte Projekte ● „Genehmigungs fi ktion“ bei ausbleibender Rückmeldung innerhalb de fi nierter Fristen",
+      "ursachen_ids": [
+        1203
+      ],
+      "pruefsumme": "1096c7f77f440264"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Radwege, Fahrradstraßen und Radschnellverbindungen zügig ausbauen, gestoppte Radschnellwege wieder aufnehmen.",
+      "zitat": "Wir planen und bauen Radwege, Fahrradstraßen und Radschnellverbindungen konsequent und zügig aus. Insbesondere fordern wir, die Planung der gestoppten Radschnellwege unverzüglich wieder aufzunehmen und zügig umzusetzen.",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "55a1e32f0b4a2481"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Sofortprogramm für sichere Kreuzungen: Unfallschwerpunkte beseitigen, getrennte Ampelphasen, Schutzinseln und abgesetzte Aufstellflächen.",
+      "zitat": "Wir starten ein Sofortprogramm, um Kreuzungen sicherer zu machen und alle Unfallschwerpunkte bis 2030 zu beseitigen. Getrennte Ampelphasen für Rad- und Autoverkehr sowie Grünpfeile für abbiegende Radfahrer*innen verhindern Konflikte.",
+      "ursachen_ids": [
+        1204
+      ],
+      "pruefsumme": "59f50e90aad80c2d"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Das Land gleicht neue gesetzliche Pflichten der Kommunen dauerhaft finanziell aus.",
+      "zitat": "Vollständiger und dauerhafter finanzieller Ausgleich von neuen gesetzlichen Verpflichtungen.",
+      "ursachen_ids": [
+        1202
+      ],
+      "pruefsumme": "c5fb77f104744b95"
+    }
+  ]
+}

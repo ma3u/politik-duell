@@ -1,0 +1,44 @@
+{
+  "blind_pruefsumme": "9463e6cf08780a429c6339fc6c1e14c3d5acab1e462a4f9f90f6f54d430a86ec",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Unfallschwerpunkte beseitigen und gefährliche Kreuzungen sicher umgestalten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt dort an, wo sich Unfälle mit Radfahrenden häufen, etwa an Kreuzungen mit abbiegenden Autos; Auswertungen zeigen oft Rückgänge, strengere Studien mit Kontrolle der Regression zur Mitte finden aber deutlich kleinere Effekte.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://trid.trb.org/View/482195"
+    }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I1", "ursachen": [1204] },
+    { "kennung": "M02", "instrument": 7066, "ursachen": [1204] },
+    { "kennung": "M03", "instrument": 7064, "ursachen": [1204] },
+    { "kennung": "M04", "instrument": 7064, "ursachen": [1204] },
+    { "kennung": "M05", "instrument": 7061, "ursachen": [1202] },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Tempo senkt Zahl und Schwere von Unfällen deutlich (Edinburgh: rund 40 % weniger Verletzte); Zonen kann das Land ausweiten, Tempo 30 als Regel innerorts braucht aber eine Änderung der StVO durch den Bund, sonst nur Modellversuche.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.engineersireland.ie/Engineers-Journal/News/revealed-slowing-city-traffic-reduces-road-deaths-by-25-study"
+      },
+      "ursachen": [1204]
+    },
+    { "kennung": "M07", "instrument": 7062, "ursachen": [1203] },
+    { "kennung": "M08", "instrument": 7064, "ursachen": [1204] },
+    { "kennung": "M09", "instrument": "I1", "ursachen": [1204] },
+    { "kennung": "M10", "instrument": 7061, "ursachen": [1202] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen Ursachen bestätigt; keine offenen Ursachen in der Liste; keine Maßnahme ohne Ursache.
+- M01 und M09 bekommen ein neues Landes-Instrument (Unfallschwerpunkte, Kreuzungen), weil kein vorhandenes Instrument diesen Lösungsweg abdeckt. Forschungsstand gemischt: Elvik (1997) zeigt, dass Wirkungen von Black-Spot-Programmen bei Kontrolle von Regression zur Mitte und Unfallverlagerung schrumpfen; positive Auswertungen (z. B. Flandern) konnten nicht geöffnet werden.
+- M06 einzeln statt 7065: Inhaltlich gleicher Weg (Tempo 30), aber „flächendeckend als Standard innerorts“ kann ein Land nicht selbst regeln (StVO ist Bundesrecht, Novelle 2024 erweitert nur Einzelanordnungen) – daher Umsetzbarkeit 2 statt 3. Wirksamkeit trotz „belegt“ bei 2 wie 7065, da Landstraßen und Hauptachsen unberührt bleiben.
+- M10 (Konnexität, Ausgleich neuer Pflichten) zu 7061 gestellt: verhindert eher, dass sich die Lage verschlechtert, als dass es neuen Spielraum schafft; Grenzfall zwischen 7061 und Einzelbewertung mit Wirksamkeit 1.
+- M02 zu 7066: Cochrane-Review (Duperrex u. a.) zeigt bessere Kenntnisse und Verhalten bei Kindern, aber keine Belege für weniger Unfälle; zudem richtet sich die Maßnahme an Schulkinder, während die Ursache vor allem Ältere auf Pedelecs nennt.
+- Geöffnete Quellen ohne Übernahme als Beleg: Teschke u. a. 2012 (AJPH, über ScienceDaily) bestätigt 7064 (getrennte Radwege ca. ein Zehntel des Risikos); KfW-Kommunalpanel 2025 (Pressemitteilung) bestätigt 7061/7062 (53,4 Mrd. Euro Rückstand Straßen, Hemmnisse vor allem Personal und Verfahren).

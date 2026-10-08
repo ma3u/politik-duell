@@ -1,0 +1,137 @@
+{
+  "thema_id": 16,
+  "programme": [
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Ausgewiesene Wärmenetzgebiete zügig ans Fernwärmenetz anschließen und außerhalb davon Nahwärmelösungen schaffen, wo technisch und wirtschaftlich sinnvoll.",
+          "ursachen_ids": [
+            1603
+          ],
+          "zitat": "Wir erweitern das Fernwärmenetz, um möglichst vielen Berliner*innen Zugang zu günstiger, klimaneutraler Wärme zu ermöglichen. […] Wir schließen die ausgewiesenen Wärmenetzgebiete zügig an das Fernwärmenetz an und schaffen Nahwärmelösungen außerhalb dieser Gebiete, wo diese Lösungen technisch und wirtschaftlich sinnvoll sind.",
+          "seite": 92
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis, Kapitel Energie, Umwelt und Klimaschutz (PDF-S. 35-38) und Bauen und Wohnen (S. 59-61) gelesen; nichts zu kommunaler Wärmeplanung, Wärmenetz oder Fernwärme (Suchbegriffe ohne Treffer)."
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Zentrale Kompetenzstelle im Land, die Kommunen und Unternehmen bei Wärmeplanung und Wärmenetzprojekten berät und begleitet.",
+          "ursachen_ids": [
+            1603
+          ],
+          "zitat": "Wir setzen auf skalierbare Lösungen und bündeln Kompetenzen: Zentrale Kompetenzstelle in der Landesverwaltung zur Beratung und Projektbegleitung für Kommunen und Unternehmen […]",
+          "seite": 69
+        }
+      ],
+      "nicht_erfasst": []
+    }
+  ],
+  "suchbegriffe": {
+    "1601": {
+      "Förderung, günstiger Strom für Wärmepumpen": [
+        "wärmepumpe",
+        "förderung",
+        "heizungstausch",
+        "wärmepumpenstrom",
+        "contracting",
+        "leasing"
+      ],
+      "Technologieoffenheit, keine Vorgaben": [
+        "technologieoffen",
+        "heizung"
+      ]
+    },
+    "1602": {
+      "Verlässliche Regeln": [
+        "heizungsgesetz",
+        "gebäudeenergiegesetz",
+        "geg",
+        "verlässlich",
+        "planungssicherheit"
+      ]
+    },
+    "1603": {
+      "Wärmeplanung beschleunigen und fördern": [
+        "wärmeplanung",
+        "wärmenetz",
+        "fernwärme",
+        "nahwärme",
+        "kommunale wärmeplanung"
+      ]
+    },
+    "1604": {
+      "Umlage begrenzen, Warmmietenneutralität": [
+        "modernisierungsumlage",
+        "kappungsgrenze",
+        "warmmietenneutral",
+        "mieter"
+      ],
+      "Anreize für Vermieter": [
+        "vermieter",
+        "abschreibung",
+        "wohngeld"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "eac5b274df504d92a1059ef5c90a0dcd2f8bfc4668e241df9f7ffb3c0fa496c2",
+    "programme": [
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "1603": {
+            "Wärmeplanung beschleunigen und fördern": {
+              "wärmeplanung": 0,
+              "wärmenetz": 7,
+              "fernwärme": 9,
+              "nahwärme": 1,
+              "kommunale wärmeplanung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "1603": {
+            "Wärmeplanung beschleunigen und fördern": {
+              "wärmeplanung": 0,
+              "wärmenetz": 0,
+              "fernwärme": 0,
+              "nahwärme": 0,
+              "kommunale wärmeplanung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "1603": {
+            "Wärmeplanung beschleunigen und fördern": {
+              "wärmeplanung": 1,
+              "wärmenetz": 2,
+              "fernwärme": 3,
+              "nahwärme": 0,
+              "kommunale wärmeplanung": 1
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -67,7 +67,9 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (7178, 16, 17, 'BE', 'Konsequenter Ausbau der Fernwärme, gesteuert über die kommunale Wärmeplanung', '{1603}', 7158, 2, 3, null, 'Beschleunigt die Wärmepläne und den Bau von Wärmenetzen, auf die viele Eigentümer warten; das Land kann Kommunen mit Geld und Fachleuten helfen.', 'https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=46', null, 'gemischt', '2026-09-30', false, true, null),
   (7227, 16, 11, null, 'Investitionen in Klimatechnologien und Energieeffizienz steuerlich schneller absetzbar, auch für Vermieter', '{1604}', null, 1, 2, null, 'Macht den Heizungstausch auch für Vermieter steuerlich attraktiver, sodass mehr Mietwohnungen umgestellt werden können; ob Mieterinnen und Mieter dabei sparen, hängt von der Umlage ab, und die Maßnahme ist nicht auf Mietwohnungen zugeschnitten.', 'https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=24', null, 'offen', '2026-09-30', false, true, null),
   (8558, 16, 18, null, 'Finanzielle Unterstützung für klimaneutrale Maßnahmen bei Neubau und Sanierung.', '{1601}', 7034, 2, 3, null, 'Senkt die Investition, die viele Haushalte scheuen oder nicht aufbringen können, und setzt damit an den laut KfW größten Hindernissen an. Ob sie Haushalte mit wenig Geld erreicht, hängt von der Staffelung ab.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=96', 'https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf', 'gemischt', '2026-10-07', false, true, null),
-  (8559, 16, 18, null, 'Kommunale Wärmeplanung dauerhaft finanzieren, Fernwärmeausbau über Duldungspflichten und Förderprogramme voranbringen.', '{1603}', 7038, 2, 2, null, 'Beschleunigt die Wärmepläne, auf die viele Eigentümer warten, und den Bau von Wärmenetzen; planen und bauen müssen die Kommunen, der Bund kann nur Geld und Beratung geben.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=68', 'https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html', 'gemischt', '2026-10-07', false, true, null);
+  (8559, 16, 18, null, 'Kommunale Wärmeplanung dauerhaft finanzieren, Fernwärmeausbau über Duldungspflichten und Förderprogramme voranbringen.', '{1603}', 7038, 2, 2, null, 'Beschleunigt die Wärmepläne, auf die viele Eigentümer warten, und den Bau von Wärmenetzen; planen und bauen müssen die Kommunen, der Bund kann nur Geld und Beratung geben.', 'https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=68', 'https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html', 'gemischt', '2026-10-07', false, true, null),
+  (8605, 16, 18, 'BE', 'Ausgewiesene Wärmenetzgebiete zügig ans Fernwärmenetz anschließen und außerhalb davon Nahwärmelösungen schaffen, wo technisch und wirtschaftlich sinnvoll.', '{1603}', null, 2, 2, null, 'Schafft Klarheit, wo ein Wärmenetz kommt, und setzt den Wärmeplan um; Netzausbau ist teuer, dauert Jahre und rechnet sich nur bei hoher Anschlussquote, die im Bestand unsicher ist.', 'https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=92', 'https://www.roedl.com/insights/investitionsunsicherheit-ausbaugebiet-foerderung/', 'gemischt', '2026-10-08', false, true, 'blind'),
+  (8606, 16, 18, 'ST', 'Zentrale Kompetenzstelle im Land, die Kommunen und Unternehmen bei Wärmeplanung und Wärmenetzprojekten berät und begleitet.', '{1603}', 7158, 2, 3, null, 'Beschleunigt die Wärmepläne und den Bau von Wärmenetzen, auf die viele Eigentümer warten; das Land kann Kommunen mit Geld und Fachleuten helfen.', 'https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=69', null, 'gemischt', '2026-10-08', false, true, null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -87,7 +89,8 @@ insert into public.pruef_einheiten (id, thema_id) values
   (7159, 16),
   (7160, 16),
   (7172, 16),
-  (7227, 16);
+  (7227, 16),
+  (8605, 16);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (16, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -118,6 +121,9 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (16, 16, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (16, 17, 'BE', 'massnahmen', null, '2026-09-30', true, null),
   (16, 15, 'BE', 'keine', 'Landesprogramm durchsucht (Stichwörter Wärmeplanung, Wärmenetz, Nahwärme, Fernwärme, Wärmewende, Wärme): keine Maßnahme zur kommunalen Wärmeplanung oder zu Wärmenetzen.', '2026-09-30', true, null),
-  (16, 18, null, 'massnahmen', null, '2026-10-07', true, '{1601,1602,1603,1604}');
+  (16, 18, null, 'massnahmen', null, '2026-10-07', true, '{1601,1602,1603,1604}'),
+  (16, 18, 'BE', 'massnahmen', null, '2026-10-08', true, '{1603}'),
+  (16, 18, 'MV', 'keine', 'Inhaltsverzeichnis, Kapitel Energie, Umwelt und Klimaschutz (PDF-S. 35-38) und Bauen und Wohnen (S. 59-61) gelesen; nichts zu kommunaler Wärmeplanung, Wärmenetz oder Fernwärme (Suchbegriffe ohne Treffer).', '2026-10-08', true, '{1603}'),
+  (16, 18, 'ST', 'massnahmen', null, '2026-10-08', true, '{1603}');
 
 commit;

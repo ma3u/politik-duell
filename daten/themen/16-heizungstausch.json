@@ -787,6 +787,62 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1603],
+      "massnahmen": [
+        {
+          "id": 8605,
+          "beschreibung": "Ausgewiesene Wärmenetzgebiete zügig ans Fernwärmenetz anschließen und außerhalb davon Nahwärmelösungen schaffen, wo technisch und wirtschaftlich sinnvoll.",
+          "ursachen_ids": [1603],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schafft Klarheit, wo ein Wärmenetz kommt, und setzt den Wärmeplan um; Netzausbau ist teuer, dauert Jahre und rechnet sich nur bei hoher Anschlussquote, die im Bestand unsicher ist.",
+          "zitat": "Wir erweitern das Fernwärmenetz, um möglichst vielen Berliner*innen Zugang zu günstiger, klimaneutraler Wärme zu ermöglichen. […] Wir schließen die ausgewiesenen Wärmenetzgebiete zügig an das Fernwärmenetz an und schaffen Nahwärmelösungen außerhalb dieser Gebiete, wo diese Lösungen technisch und wirtschaftlich sinnvoll sind.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=92",
+          "beleg_studie_url": "https://www.roedl.com/insights/investitionsunsicherheit-ausbaugebiet-foerderung/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1603],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel Energie, Umwelt und Klimaschutz (PDF-S. 35-38) und Bauen und Wohnen (S. 59-61) gelesen; nichts zu kommunaler Wärmeplanung, Wärmenetz oder Fernwärme (Suchbegriffe ohne Treffer).",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1603],
+      "massnahmen": [
+        {
+          "id": 8606,
+          "instrument": 7158,
+          "beschreibung": "Zentrale Kompetenzstelle im Land, die Kommunen und Unternehmen bei Wärmeplanung und Wärmenetzprojekten berät und begleitet.",
+          "ursachen_ids": [1603],
+          "zitat": "Wir setzen auf skalierbare Lösungen und bündeln Kompetenzen: Zentrale Kompetenzstelle in der Landesverwaltung zur Beratung und Projektbegleitung für Kommunen und Unternehmen […]",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

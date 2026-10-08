@@ -1786,6 +1786,78 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [601],
+      "massnahmen": [
+        {
+          "id": 8602,
+          "beschreibung": "Einheitlicher Rahmenvertrag mit Qualitätskriterien und verlässlicher Refinanzierung für Anbieter, die den Bezirken Unterbringungsplätze bereitstellen.",
+          "ursachen_ids": [601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Rahmenvertrag mit verlässlicher Refinanzierung macht die Bereitstellung von Plätzen planbarer und kann teure Notbeschaffung vermeiden; zusätzliche Plätze schafft er nicht direkt, und höhere Qualitätsvorgaben können Kosten erhöhen. Das Land kann ihn selbst regeln.",
+          "zitat": "Wir schaffen einen einheitlichen Rahmenvertrag für Akteure, die Unterbringungsplätze für Bezirke bereitstellen. Der Vertrag beinhaltet klare Qualitätskriterien, Beschwerderechte sowie eine transparente und verlässliche Refinanzierung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=107",
+          "beleg_studie_url": "https://www.bpb.de/themen/migration-integration/kurzdossiers/kommunale-migrations-und-fluechtlingspolitik/577376/kommunale-unterbringung-von-gefluechteten-in-deutschland/",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8603,
+          "beschreibung": "Feste Stellen für die Belange Zugewanderter in Ämtern, darunter Landesamt für Einwanderung und Landesamt für Flüchtlingsangelegenheiten.",
+          "ursachen_ids": [601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zusätzliche feste Stellen, auch in Einwanderungs- und Flüchtlingsbehörden, können Anliegen bündeln und Behörden etwas entlasten; die Überlastung entsteht laut Studien aber auch durch komplexes Recht und schleppende Digitalisierung, und Zahl und Wirkung der Stellen bleiben offen.",
+          "zitat": "In Jugendamt, Sozialamt, Gesundheitsamt, Schulamt, Jobcenter, Bürgeramt sowie in den Landesämtern für Einwanderung (LEA) und für Flüchtlingsangelegenheiten (LAF) schaffen wir feste Stellen, die spezifisch für die Belange von Zugewanderten zuständig sind.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=105",
+          "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/unsere-projekte/migration-fair-gestalten/projektnachrichten/studie-auslaenderbehoerden-zwischen-anspruch-und-alltag",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [601],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Geflüchtete und Zugewanderte gleichberechtigt einbinden' (S. 16-17), 'Freizügigkeit im Schengenraum erhalten' (S. 47-48), 'Starke Kommunen durch gerechte Finanzierung' (S. 23-24), Pflegekräfte-Anerkennung (S. 34) gelesen; nichts setzt an Unterbringungs- oder Behördenkapazitäten bei der Aufnahme an.",
+        "stand": "2026-10-08",
+        "treffer": 25,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [601],
+      "massnahmen": [
+        {
+          "id": 8604,
+          "instrument": 6118,
+          "beschreibung": "Geflüchtete dezentral statt in großen Sammelunterkünften unterbringen, um Kosten zu senken und Teilhabe früh zu ermöglichen.",
+          "ursachen_ids": [601],
+          "zitat": "Dezentrale Unterbringung statt großer Sammelunterkünfte, um Inklusion zu erleichtern, Kosten zu senken und soziale Teilhabe früh zu ermöglichen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=135",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }
