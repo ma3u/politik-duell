@@ -7,7 +7,7 @@ import { QuizAnsicht } from './Ansicht'
 import { useAnsicht } from '../barrierefrei'
 import { ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
 import { pruefeText } from '../../supabase/functions/_shared/moderation'
-import { gemerkt, merken, vergessen } from './merken'
+import { gemerkterName, nameMerken } from './merken'
 import { beobachteOeffentliche, meldeOeffentlich, OEFFENTLICH_MOEGLICH, type OeffentlicherRaum } from './oeffentlich'
 import { neuerRaumname, raumAusEingabe, raumPfad, type Raum } from './raumname'
 import { bereinigeName, FRAGEN_JE_SPIEL } from './spielleitung'
@@ -122,18 +122,13 @@ export function Quiz() {
   const einladung = einladungAus(hash)
   const [daten, setDaten] = useState<QuizDaten | null>(null)
   const [ladeFehler, setLadeFehler] = useState<string | null>(null)
-  // „Auf diesem Gerät merken“: Name und eigener Raumname nur mit Häkchen im localStorage.
-  const [anfang] = useState(gemerkt)
-  const [name, setName] = useState(anfang?.name ?? '')
-  const [merkenAn, setMerkenAn] = useState(anfang !== null)
-  const [eigenerRaum, setEigenerRaum] = useState(() => anfang?.raum ?? neuerRaumname())
+  // Der Name bleibt auf dem Gerät (merken.ts), der Raumname nicht.
+  const [name, setName] = useState(gemerkterName)
+  const [eigenerRaum, setEigenerRaum] = useState(neuerRaumname)
   const [zeit, setZeit] = useState<Zeitfaktor>(1)
   const [modus, setModus] = useState<Modus>({ art: 'start' })
 
-  useEffect(() => {
-    if (merkenAn) merken({ name, raum: eigenerRaum })
-    else vergessen()
-  }, [merkenAn, name, eigenerRaum])
+  useEffect(() => nameMerken(name), [name])
 
   useEffect(() => {
     Promise.all([ladeQuiz(), ladeShow()])
@@ -211,8 +206,6 @@ export function Quiz() {
           daten={daten}
           name={name}
           onName={setName}
-          merkenAn={merkenAn}
-          onMerken={setMerkenAn}
           eigenerRaum={eigenerRaum}
           onNeuerRaum={() => setEigenerRaum(neuerRaumname())}
           zeit={zeit}
@@ -239,12 +232,44 @@ export function Quiz() {
   )
 }
 
+/** Zeit je Frage: ein Knopf, der bei jedem Tippen weiterschaltet (WCAG 2.2.1: Zeitlimit einstellbar). */
+const ZEIT_REIHE: Zeitfaktor[] = [1, 2, 0]
+const ZEIT_KURZ: Record<Zeitfaktor, string> = { 1: '20 s', 2: '40 s', 0: 'ohne Limit' }
+
+function ZeitKnopf({ zeit, onZeit }: { zeit: Zeitfaktor; onZeit: (f: Zeitfaktor) => void }) {
+  const [gewechselt, setGewechselt] = useState(false)
+  const naechste = ZEIT_REIHE[(ZEIT_REIHE.indexOf(zeit) + 1) % ZEIT_REIHE.length]
+  return (
+    <>
+      <button
+        type="button"
+        className="knopf knopf-zweit quiz-zeit-knopf"
+        title={`Zeit je Frage: ${ZEITFAKTOR_TEXT[zeit]} – tippen für ${ZEITFAKTOR_TEXT[naechste]}`}
+        onClick={() => {
+          onZeit(naechste)
+          setGewechselt(true)
+        }}
+      >
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <circle cx="12" cy="13.5" r="7.5" />
+            <path d="M12 13.5V9.5M10 3h4M18.5 6.5l1.5-1.5" />
+          </g>
+        </svg>
+        <span className="sr-only">Zeit je Frage: </span>
+        {ZEIT_KURZ[zeit]}
+      </button>
+      <span className="sr-only" aria-live="polite">
+        {gewechselt ? `Zeit je Frage: ${ZEITFAKTOR_TEXT[zeit]}` : ''}
+      </span>
+    </>
+  )
+}
+
 function QuizStart({
   daten,
   name,
   onName,
-  merkenAn,
-  onMerken,
   eigenerRaum,
   onNeuerRaum,
   zeit,
@@ -258,8 +283,6 @@ function QuizStart({
   daten: QuizDaten
   name: string
   onName: (n: string) => void
-  merkenAn: boolean
-  onMerken: (an: boolean) => void
   eigenerRaum: string
   onNeuerRaum: () => void
   zeit: Zeitfaktor
@@ -272,6 +295,7 @@ function QuizStart({
 }) {
   const id = useId()
   const [eingabe, setEingabe] = useState('')
+  const [freunde, setFreunde] = useState(false)
   const ziel = raumAusEingabe(eingabe)
   const leer = daten.fragen.length === 0
   const titel = useAnsicht('Programm-Quiz')
@@ -290,121 +314,116 @@ function QuizStart({
           <Logo groesse={72} animiert={auftritt} />
         </div>
         <p className="erklaerung">
-          Welche Parteien sagen in ihrem Wahlprogramm Ja? Ratet gegeneinander – wer richtig liegt, bekommt Punkte, wer
-          schneller ist, mehr. Nach jeder Frage zeigt das Quiz die Stelle in jedem Programm.
-        </p>
-        <p className="start-themen">
-          <a href="#/">Politik-Duell zu zweit: Wer liefert die beste Lösung?</a>
+          Welche Parteien sagen in ihrem Wahlprogramm Ja? Wer richtig liegt, bekommt Punkte – wer schneller ist, mehr.
+          Danach zeigt das Quiz die Stelle in jedem Programm.
         </p>
         <div className="quiz-start-felder">
-        <p className="meta">
-          {leer
-            ? 'Noch gibt es keine vollständig geprüften Fragen.'
-            : `${daten.fragen.length} ${daten.fragen.length === 1 ? 'Frage' : 'Fragen'} aus den Bundeswahlprogrammen 2025, je Spiel bis zu ${FRAGEN_JE_SPIEL}.`}
-          {daten.entwurf &&
-            ` Davon ${daten.fragen.filter((f) => f.ki_entwurf).length} als ungeprüfter KI-Entwurf (in der Auflösung gekennzeichnet).`}
-        </p>
+          <p className="meta">
+            {leer
+              ? 'Noch gibt es keine vollständig geprüften Fragen.'
+              : `${daten.fragen.length} ${daten.fragen.length === 1 ? 'Frage' : 'Fragen'} aus den Bundeswahlprogrammen 2025, je Spiel bis zu ${FRAGEN_JE_SPIEL}.`}
+          </p>
 
-        <label className="label" htmlFor={`${id}-name`}>
-          Dein Name im Spiel (freiwillig)
-        </label>
-        <input
-          id={`${id}-name`}
-          className="quiz-eingabe"
-          value={name}
-          maxLength={20}
-          autoComplete="nickname"
-          placeholder="z. B. Kim"
-          onChange={(e) => onName(e.target.value)}
-        />
-        <label className="quiz-merken" htmlFor={`${id}-merken`}>
-          <input id={`${id}-merken`} type="checkbox" checked={merkenAn} onChange={(e) => onMerken(e.target.checked)} />
-          Name und Raumnamen auf diesem Gerät merken
-        </label>
+          <label className="label" htmlFor={`${id}-name`}>
+            Dein Name im Spiel (freiwillig)
+          </label>
+          <div className="quiz-name-zeile">
+            <input
+              id={`${id}-name`}
+              className="quiz-eingabe"
+              value={name}
+              maxLength={20}
+              autoComplete="nickname"
+              placeholder="z. B. Kim"
+              onChange={(e) => onName(e.target.value)}
+            />
+            {!einladung && <ZeitKnopf zeit={zeit} onZeit={onZeit} />}
+          </div>
 
-        {!einladung && (
-          <>
-            <label className="label" htmlFor={`${id}-zeit`}>
-              Zeit je Frage (für deinen Raum und zum Üben)
-            </label>
-            <select id={`${id}-zeit`} value={zeit} onChange={(e) => onZeit(Number(e.target.value) as Zeitfaktor)}>
-              {([1, 2, 0] as const).map((f) => (
-                <option key={f} value={f}>
-                  {ZEITFAKTOR_TEXT[f]}
-                </option>
-              ))}
-            </select>
-          </>
-        )}
-
-        {einladung ? (
-          <>
-            <p className="hinweis quiz-einladung">Du bist in den Raum „{einladung.name ?? einladung.code}“ eingeladen.</p>
-            <button type="button" className="knopf knopf-gross" disabled={leer} onClick={() => onBeitreten(einladung)}>
-              Mitspielen
-            </button>
-          </>
-        ) : (
-          <>
-            <p className="quiz-eigener-raum">
-              Dein Raum: <strong>{eigenerRaum}</strong>{' '}
-              <button type="button" className="knopf-link" onClick={onNeuerRaum}>
-                anderer Name
+          {einladung ? (
+            <>
+              <p className="hinweis quiz-einladung">Du bist in den Raum „{einladung.name ?? einladung.code}“ eingeladen.</p>
+              <button type="button" className="knopf knopf-gross" disabled={leer} onClick={() => onBeitreten(einladung)}>
+                Mitspielen
               </button>
-            </p>
-            <div className="knopf-reihe">
-              <button type="button" className="knopf" disabled={leer} onClick={onEroeffnen}>
-                Raum eröffnen
-              </button>
-              <button type="button" className="knopf knopf-zweit" disabled={leer} onClick={onAllein}>
-                Allein üben
-              </button>
-            </div>
-            {OEFFENTLICH_MOEGLICH && (
-              <button type="button" className="knopf knopf-zweit knopf-gross" disabled={leer} onClick={onZufall}>
-                Mit Zufälligen spielen
-              </button>
-            )}
-            <form
-              className="quiz-beitreten"
-              onSubmit={(e) => {
-                e.preventDefault()
-                if (ziel) onBeitreten(ziel)
-              }}
-            >
-              <label className="label" htmlFor={`${id}-code`}>
-                Oder einem Raum beitreten
-              </label>
-              <div className="quiz-beitreten-zeile">
-                <input
-                  id={`${id}-code`}
-                  aria-describedby={`${id}-code-hinweis`}
-                  className="quiz-eingabe quiz-code-eingabe"
-                  value={eingabe}
-                  maxLength={40}
-                  autoComplete="off"
-                  spellCheck={false}
-                  placeholder="z. B. Kluge Eule 27"
-                  onChange={(e) => setEingabe(e.target.value)}
-                />
-                <button type="submit" className="knopf" disabled={!ziel || leer}>
-                  Beitreten
+            </>
+          ) : (
+            <>
+              <div className="quiz-arten" role="group" aria-label="Spielen">
+                {OEFFENTLICH_MOEGLICH && (
+                  <button type="button" className="knopf" disabled={leer} onClick={onZufall}>
+                    Mit Fremden
+                  </button>
+                )}
+                <button
+                  type="button"
+                  className={freunde ? 'knopf knopf-zweit quiz-art-offen' : 'knopf knopf-zweit'}
+                  disabled={leer}
+                  aria-expanded={freunde}
+                  aria-controls={`${id}-freunde`}
+                  onClick={() => setFreunde(!freunde)}
+                >
+                  Mit Freunden
+                </button>
+                <button type="button" className="knopf knopf-zweit" disabled={leer} onClick={onAllein}>
+                  Alleine
                 </button>
               </div>
-              <p className="meta" id={`${id}-code-hinweis`}>
-                Raumname mit Zahl, z. B. „Kluge Eule 27“ – Groß- und Kleinschreibung egal.
-              </p>
-            </form>
-          </>
-        )}
+
+              {freunde && (
+                <div className="quiz-freunde" id={`${id}-freunde`}>
+                  <p className="quiz-eigener-raum">
+                    Dein Raum: <strong>{eigenerRaum}</strong>{' '}
+                    <button type="button" className="knopf-link" onClick={onNeuerRaum}>
+                      anderer Name
+                    </button>
+                  </p>
+                  <button type="button" className="knopf knopf-gross" disabled={leer} onClick={onEroeffnen}>
+                    Raum eröffnen
+                  </button>
+                  <form
+                    className="quiz-beitreten"
+                    onSubmit={(e) => {
+                      e.preventDefault()
+                      if (ziel) onBeitreten(ziel)
+                    }}
+                  >
+                    <label className="label" htmlFor={`${id}-code`}>
+                      Oder einem Raum beitreten
+                    </label>
+                    <div className="quiz-beitreten-zeile">
+                      <input
+                        id={`${id}-code`}
+                        aria-describedby={`${id}-code-hinweis`}
+                        className="quiz-eingabe quiz-code-eingabe"
+                        value={eingabe}
+                        maxLength={40}
+                        autoComplete="off"
+                        spellCheck={false}
+                        placeholder="z. B. Kluge Eule 27"
+                        onChange={(e) => setEingabe(e.target.value)}
+                      />
+                      <button type="submit" className="knopf" disabled={!ziel || leer}>
+                        Beitreten
+                      </button>
+                    </div>
+                    <p className="meta" id={`${id}-code-hinweis`}>
+                      Raumname mit Zahl, z. B. „Kluge Eule 27“ – Groß- und Kleinschreibung egal.
+                    </p>
+                  </form>
+                </div>
+              )}
+            </>
+          )}
         </div>
 
         <p className="datenschutz">
-          <strong>Datenschutz:</strong> Kein Konto, keine Cookies; gespeichert wird nur, was du mit dem Häkchen merken
-          lässt, und nur auf deinem Gerät. Keine KI wertet deine Antworten aus. Mara und Ben sind KI-Stimmen (ElevenLabs), vorab aufgenommen – beim Spielen geht nichts an ElevenLabs. Das Spiel läuft
-          zwischen euren Geräten; {VERMITTLUNG} vermittelt nur die Verbindung und leitet weiter, wenn es direkt nicht
-          klappt – Nachrichten liegen dort nur, bis sie gelesen sind. Bei einer direkten Verbindung sehen die Geräte im Raum gegenseitig ihre IP-Adresse.{' '}
-          <a href="#/datenschutz">Mehr erfahren</a>
+          <strong>Datenschutz:</strong> Kein Konto, keine Cookies; dein Name im Spiel und deine Ton-Wahl bleiben nur auf
+          deinem Gerät (leeres Namensfeld löscht den Namen). Keine KI wertet deine Antworten aus. Mara und Ben sind
+          KI-Stimmen (ElevenLabs), vorab aufgenommen – beim Spielen geht nichts an ElevenLabs. Das Spiel läuft zwischen
+          euren Geräten; {VERMITTLUNG} vermittelt nur die Verbindung und leitet weiter, wenn es direkt nicht klappt –
+          Nachrichten liegen dort nur, bis sie gelesen sind. Bei einer direkten Verbindung sehen die Geräte im Raum
+          gegenseitig ihre IP-Adresse. <a href="#/datenschutz">Mehr erfahren</a>
         </p>
       </div>
     </main>

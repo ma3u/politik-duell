@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { SPRECHER } from './texte'
 import { entsperren, setzeTon, startmelodie, tonWahlMerken, useTon, useTonFrei, useUntertitel } from './ton'
 
@@ -77,6 +78,46 @@ export function TonKnopf() {
   )
 }
 
+// Liegt gerade ein Finger (oder die Maustaste) auf? Von Anfang an mitgezählt, auch vor dem ersten Anzeigen.
+let gedrueckt = 0
+const tippHoerer = new Set<() => void>()
+if (typeof window !== 'undefined') {
+  addEventListener('pointerdown', () => gedrueckt++, true)
+  for (const art of ['pointerup', 'pointercancel'] as const)
+    addEventListener(
+      art,
+      () => {
+        gedrueckt = Math.max(0, gedrueckt - 1)
+        tippHoerer.forEach((h) => h())
+      },
+      true,
+    )
+}
+
+/**
+ * true erst, wenn `aus` gilt, kein Finger mehr aufliegt und kurz Ruhe war: Verschwände der Hinweis zwischen Drücken
+ * und Loslassen, rückte die Seite nach oben, und der Tipp ginge verloren oder träfe einen anderen Knopf.
+ */
+function useVerzoegertWeg(aus: boolean): boolean {
+  const [weg, setWeg] = useState(aus)
+  useEffect(() => {
+    if (!aus) return
+    let zeit: ReturnType<typeof setTimeout> | undefined
+    const pruefen = () => {
+      clearTimeout(zeit)
+      zeit = setTimeout(() => gedrueckt === 0 && setWeg(true), 600)
+    }
+    tippHoerer.add(pruefen)
+    pruefen()
+    return () => {
+      clearTimeout(zeit)
+      tippHoerer.delete(pruefen)
+      setWeg(false)
+    }
+  }, [aus])
+  return aus && weg
+}
+
 /**
  * Deutlicher Hinweis, solange der Ton an ist, der Browser ihn aber noch nicht freigegeben hat: Browser spielen Ton
  * erst nach einer Nutzeraktion. `mitMelodie`: auf der Startseite die Startmusik spielen, im Spiel nur freischalten.
@@ -84,7 +125,8 @@ export function TonKnopf() {
 export function TonAufruf({ mitMelodie }: { mitMelodie: boolean }) {
   const an = useTon()
   const frei = useTonFrei()
-  if (frei || !an) return null
+  const weg = useVerzoegertWeg(frei || !an)
+  if (weg) return null
   return (
     <section className="ton-aufruf ton-wahl" aria-labelledby="ton-aufruf-titel">
       <Lautsprecher an groesse={34} />

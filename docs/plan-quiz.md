@@ -125,7 +125,8 @@ Warum nicht eine frei gepflegte Liste „Aussage → Parteien“? Bei einer Mehr
 ## Räume: Namen, Merken, Zufall
 
 - **Merkbare Raumnamen** („Kluge Eule 27“: Adjektiv + Tier mit Stabreim + Zahl, ohne Umlaute). Jedes Gerät berechnet daraus denselben sechsstelligen Code (`codeAusName`); alte Codes funktionieren weiter. Einladungslink `#/quiz/kluge-eule-27`.
-- **Merken auf diesem Gerät:** nur mit Häkchen; Name und eigener Raumname im localStorage (§ 25 Abs. 2 Nr. 2 TDDDG, ausdrücklich gewünscht). Häkchen weg = gelöscht.
+- **Name im Spiel:** bleibt ohne Häkchen im localStorage, damit er beim nächsten Mal dasteht (Entscheidung der Betreiberin, 8. 10. 2026); leeres Namensfeld löscht ihn, Raumnamen merkt sich das Quiz nicht.
+- **Startseite:** Name und Zeit-Knopf (Normal → Doppelt → Ohne Limit, je Tippen weiter) in einer Zeile, darunter „Mit Fremden“, „Mit Freunden“, „Alleine“; „Mit Freunden“ klappt erst den eigenen Raum (eröffnen) und das Beitreten auf.
 - **Mit Zufälligen spielen:** Öffentliche Räume stehen, solange sie warten, unter `quiz-oeffentlich/<Code>` (Name, Spielerzahl, Serverzeit; Lebenszeichen alle 30 s, nach 90 s ausgeblendet, beim Start gelöscht). Beleidigende Namen (Filter aus `moderation.ts`) zeigt die Spielleitung als „Gast N“; mit einem solchen Namen kann man keinen öffentlichen Raum eröffnen oder suchen.
 
 ## Show: Moderation, Animationen, Geräusche

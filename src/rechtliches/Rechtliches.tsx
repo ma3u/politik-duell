@@ -325,10 +325,9 @@ function Datenschutz() {
         )}
       </p>
       <p>
-        <strong>Merken auf diesem Gerät:</strong> Setzt du das Häkchen „Name und Raumnamen auf diesem Gerät merken“,
-        speichert die App deinen Namen im Spiel und deinen Raumnamen im Speicher deines Browsers (localStorage), damit
-        du sie beim nächsten Mal nicht neu eingeben musst. Das geschieht nur auf deinen ausdrücklichen Wunsch (§ 25
-        Abs. 2 Nr. 2 TDDDG) und bleibt auf deinem Gerät; Entfernen des Häkchens löscht beides.
+        <strong>Name im Spiel:</strong> Den Namen, den du im Quiz eingibst, speichert die App im Speicher deines
+        Browsers (localStorage), damit er beim nächsten Mal schon dasteht – nur dieses Feld, kein Raumname. Er bleibt auf
+        deinem Gerät; die anderen im Raum sehen ihn nur während des Spiels. Leerst du das Namensfeld, ist er gelöscht.
       </p>
       <p>
         <strong>Ton-Einstellung:</strong> Tippst du auf „Ton einschalten“, „Ohne Ton spielen“ oder den Lautsprecher,

@@ -1,37 +1,27 @@
-// „Auf diesem Gerät merken“: Spielername und eigener Raumname im localStorage – nur, wenn man das Häkchen setzt
-// (ausdrücklich gewünscht, § 25 Abs. 2 Nr. 2 TDDDG). Ohne Häkchen bleibt nichts im Browser; Abwählen löscht alles.
+// Dein Name im Spiel bleibt auf diesem Gerät (localStorage), damit er beim nächsten Mal schon dasteht. Er verlässt das
+// Gerät nur im Spiel (die anderen im Raum sehen ihn). Ein leeres Namensfeld löscht ihn; Raumnamen merkt sich das Quiz
+// nicht. Datenschutzerklärung: „Name im Spiel“.
 
 const SCHLUESSEL = 'politik-duell-quiz'
 
-export interface Gemerkt {
-  name: string
-  /** Eigener Raumname (für „Raum eröffnen“ beim nächsten Mal). */
-  raum?: string
-}
-
-export function gemerkt(): Gemerkt | null {
+export function gemerkterName(): string {
   try {
     const roh = localStorage.getItem(SCHLUESSEL)
-    if (!roh) return null
-    const d = JSON.parse(roh) as Partial<Gemerkt>
-    return { name: typeof d.name === 'string' ? d.name.slice(0, 40) : '', raum: typeof d.raum === 'string' ? d.raum.slice(0, 40) : undefined }
+    if (!roh) return ''
+    const d = JSON.parse(roh) as { name?: unknown }
+    return typeof d.name === 'string' ? d.name.slice(0, 20) : ''
   } catch {
-    return null
+    return ''
   }
 }
 
-export function merken(g: Gemerkt) {
+export function nameMerken(name: string) {
   try {
-    localStorage.setItem(SCHLUESSEL, JSON.stringify(g))
+    const n = name.trim()
+    // Ältere Fassungen speicherten auch den Raumnamen – beim Schreiben bleibt nur der Name.
+    if (n) localStorage.setItem(SCHLUESSEL, JSON.stringify({ name: n.slice(0, 20) }))
+    else localStorage.removeItem(SCHLUESSEL)
   } catch {
     // privater Modus o. Ä.: dann eben nicht
-  }
-}
-
-export function vergessen() {
-  try {
-    localStorage.removeItem(SCHLUESSEL)
-  } catch {
-    // nichts zu tun
   }
 }

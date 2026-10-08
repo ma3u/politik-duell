@@ -2848,6 +2848,42 @@ textarea {
 .quiz-start-felder > .meta {
   margin: 0;
 }
+/* Name und Zeit in einer Zeile; die drei Spielarten kompakt nebeneinander. */
+.quiz-name-zeile {
+  display: flex;
+  gap: 10px;
+}
+.quiz-name-zeile .quiz-eingabe {
+  flex: 1;
+  min-width: 0;
+}
+.quiz-zeit-knopf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: none;
+  white-space: nowrap;
+  padding-inline: 0.8rem;
+}
+.quiz-arten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+  gap: 10px;
+  margin-top: 1.1rem;
+}
+.quiz-arten .knopf {
+  padding-inline: 0.5rem;
+  line-height: 1.2;
+  white-space: normal;
+}
+.quiz-art-offen {
+  background: var(--stimmblau-hell);
+}
+.quiz-freunde {
+  margin-top: 0.9rem;
+  padding: 0.2rem 0 0.4rem;
+  border-top: 1.5px dashed var(--tinte);
+}
 .quiz-start .knopf-reihe {
   flex-wrap: wrap;
   margin-top: 1.1rem;
@@ -3395,6 +3431,10 @@ html:has(.punktestand) {
   display: block;
 }
 /* „Mit Ton spielen?“ – solange der Browser den Ton noch nicht freigegeben hat. */
+/* Mit Hinweis steht die Startkarte direkt darunter statt mittig im Fenster (sonst klafft eine Lücke). */
+.ton-aufruf + .start {
+  min-height: auto;
+}
 .ton-aufruf {
   display: flex;
   gap: 0.9rem;
