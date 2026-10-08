@@ -307,3 +307,16 @@ Anlass: Im Quiz standen viele „keine Aussage“ (45 von 192 Positionen), oft w
 | 31 Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | teils S. 45 | ja S. 41 | ja S. 109 | teils S. 26 | teils S. 56 | ja S. 51 | nein S. 39 | ja S. 142 |
 | 32 Soll Deutschland seine Verteidigungsausgaben erhöhen? | ja S. 52 | ja S. 57 | ja S. 152 | ja S. 48 | – | nein S. 23 | nein S. 6 | ja S. 41 |
 | 33 Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | ja S. 31 | ja S. 14 | – | ja S. 19 | ja S. 25 | nein S. 15 | ja S. 22 | – |
+
+### Zweitlauf der Einordnung (8. 10. 2026)
+
+Dieselben Blindlisten ein zweites Mal von einem unabhängigen Agenten `haltung-einordnung` eingeordnet (Antwort je Haltung in `daten/protokolle/haltung-<ID>/2026-10-08/einordnung-antwort-zweitlauf.txt`). Übereinstimmung: 144 von 148 Zitaten. Die vier Abweichungen liegen jeweils zwischen Nachbarstufen; eingetragen bleibt Lauf 1, die Fälle gehen an die menschliche Prüfung:
+
+| Haltung | Partei | Lauf 1 | Lauf 2 | Streitpunkt |
+| --- | --- | --- | --- | --- |
+| 7 Waffen für die Ukraine | SPD | ja | teils | Lieferung „mit Besonnenheit und Augenmaß“, nicht Kriegspartei werden – Vorbehalt oder Bedingung? |
+| 20 Solaranlagen auf Äckern | BSW | teils | nein | „dürfen die agrarische Nutzung nicht verdrängen“ – Doppelnutzung ausgeschlossen oder nicht? |
+| 24 EU-Mitgliedschaft | BSW | ja | teils | kein Austritt, aber Umbau zum lockereren Staatenverbund |
+| 33 Kürzung der Grundsicherung | BSW | ja | teils | Konsequenzen nur bei abgelehnten Qualifizierungsmaßnahmen, nicht bei abgelehnter Arbeit |
+
+Alle übrigen 144 Positionen (Haltungen 4–33 ohne 1 und 2) hat der Zweitlauf bestätigt.
