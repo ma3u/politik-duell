@@ -39,6 +39,8 @@ export interface QuizFrage {
   art: Antwortart
   /** Nach welcher Position gefragt wird. */
   gesucht: 'ja' | 'nein'
+  /** Antwort, die der heutigen Lage entspricht – `keine_aussage` zählt wie sie (null: nicht festgelegt). */
+  status_quo: 'ja' | 'nein' | null
   /** Parteien mit der gesuchten Position. */
   richtig: number[]
   /** Parteien mit `teils` bei Mehrfachauswahl – zählen weder als richtig noch als falsch. */

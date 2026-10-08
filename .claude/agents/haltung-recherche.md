@@ -33,10 +33,11 @@ Nur dieses JSON (dahinter höchstens drei Zeilen zu Verworfenem):
     { "seite": "nein", "text": "Wer sie ablehnt, nennt …", "quelle_url": "https://…" }
   ],
   "einordnung": { "ja": "…", "teils": "…", "nein": "…" },
+  "status_quo": { "antwort": "nein", "begruendung": "Wehrpflicht seit 2011 ausgesetzt (§ 2 WPflG).", "quelle_url": "https://…" },
   "suchbegriffe": ["wehrpflicht", "wehrdienst", "dienstpflicht", "musterung"],
   "schlagwoerter": ["wehrpflicht", "bundeswehr"],
   "quellen_zitate": [{ "quelle_url": "https://…", "zitat": "wörtlich, mit Seite" }]
 }
 ```
 
-`schlagwoerter` kleingeschrieben, Umlaute als ae/oe/ue, so wie Menschen die Frage im Alltag nennen.
+`status_quo.antwort` ist die Antwort auf die Frage, die der heutigen Rechtslage bzw. gängigen Praxis in Deutschland entspricht (`ja` oder `nein`; `offen`, wenn weder noch – keine Wertung) – mit einer Quelle, die den heutigen Stand belegt. `schlagwoerter` kleingeschrieben, Umlaute als ae/oe/ue, so wie Menschen die Frage im Alltag nennen.

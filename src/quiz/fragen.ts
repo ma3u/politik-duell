@@ -20,7 +20,10 @@ export function quizFrage(
   const je = parteien.map((partei) => bund.find((p) => p.partei_id === partei.id))
   if (!je.length || je.some((p) => !p)) return null
   const alle = (je as HaltungPosition[]).sort(nachId)
-  const mit = (w: string) => alle.filter((p) => p.position === w).map((p) => p.partei_id)
+  // Keine Aussage heißt: Das Programm will daran nichts ändern – es zählt wie die heutige Lage (`status_quo`).
+  const status_quo = haltung.status_quo === 'ja' || haltung.status_quo === 'nein' ? haltung.status_quo : null
+  const gilt = (p: HaltungPosition) => (p.position === 'keine_aussage' && status_quo ? status_quo : p.position)
+  const mit = (w: string) => alle.filter((p) => gilt(p) === w).map((p) => p.partei_id)
   const ja = mit('ja')
   const nein = mit('nein')
   const teils = mit('teils')
@@ -28,6 +31,8 @@ export function quizFrage(
   const gesucht = ja.length ? 'ja' : nein.length ? 'nein' : null
   if (!gesucht) return null
   const richtig = gesucht === 'ja' ? ja : nein
+  // Stehen alle auf derselben Seite, gibt es nichts zu raten.
+  if (richtig.length >= alle.length) return null
   const art = richtig.length === 1 ? 'einzeln' : 'mehrfach'
 
   return {
@@ -37,6 +42,7 @@ export function quizFrage(
     beschreibung: haltung.beschreibung,
     art,
     gesucht,
+    status_quo,
     richtig,
     neutral: art === 'mehrfach' ? teils : [],
     positionen: alle.map((p) => ({
@@ -73,9 +79,11 @@ export const quizParteien = (parteien: Partei[]): QuizPartei[] =>
     .sort((a, b) => a.id - b.id)
     .map(({ id, name, kurzname, farbe, programm_url }) => ({ id, name, kurzname, farbe, programm_url }))
 
-/** Anleitung unter der Frage – sagt, was gesucht ist und wie „teils“ zählt. */
-export function anleitung(f: Pick<QuizFrage, 'art' | 'gesucht'>): string {
+/** Anleitung unter der Frage – kurz: was gesucht ist, wie „teils“ und „keine Aussage“ zählen. */
+export function anleitung(f: Pick<QuizFrage, 'art' | 'gesucht' | 'status_quo'>): string {
   const wort = f.gesucht === 'ja' ? 'Ja' : 'Nein'
-  if (f.art === 'einzeln') return `Nur eine Partei sagt in ihrem Wahlprogramm klar ${wort}. Welche?`
-  return `Welche Parteien sagen in ihrem Wahlprogramm ${wort}? Mehrere sind richtig. Wer nur „teils“ sagt, zählt weder als richtig noch als falsch.`
+  const heute = f.status_quo ? ` Kein Wort dazu heißt: Es bleibt, wie es ist – also ${f.status_quo === 'ja' ? 'Ja' : 'Nein'}.` : ''
+  if (f.art === 'einzeln') return `Nur eine Partei steht im Wahlprogramm für ${wort}. Welche?${heute}`
+  return `Wer steht im Wahlprogramm für ${wort}? Mehrere sind richtig, „teils“ zählt nicht.${heute}`
 }
+

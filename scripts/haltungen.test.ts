@@ -59,6 +59,7 @@ const haltung = (ueber: Record<string, unknown> = {}): Datei => ({
     id: 1,
     frage: 'Soll es ein generelles Tempolimit auf Autobahnen geben?',
     beschreibung: 'Ob überall eine feste Höchstgeschwindigkeit gelten soll.',
+    status_quo: 'nein',
     verwandte_themen: [8],
     zielkonflikte: [
       { seite: 'ja', text: 'Wer es will, nennt weniger schwere Unfälle.', quelle_url: 'https://studie.de/unfaelle' },
@@ -99,6 +100,9 @@ describe('Datenkatalog: Haltungen', () => {
     expect(fehlerVon(haltung({ verwandte_themen: [9] }))).toMatch(/Thema 9 gibt es nicht/)
     expect(fehlerVon(haltung({ verwandte_themen: [8, 8] }))).toMatch(/enthält Doppelte/)
     expect(fehlerVon(haltung({ meinung: 'x' }))).toMatch(/unbekanntes Feld „meinung“/)
+    expect(fehlerVon(haltung({ status_quo: undefined }))).toMatch(/„status_quo“ fehlt/)
+    expect(fehlerVon(haltung({ status_quo: 'teils' }))).toMatch(/„status_quo“ ist „ja“, „nein“ oder „offen“/)
+    expect(fehlerVon(haltung({ status_quo: 'offen' }))).toBe('')
   })
 
   it('verlangt zwei bis vier Zielkonflikte, mindestens einen je Seite, jeden mit https-Quelle', () => {
@@ -204,7 +208,7 @@ describe('spielbareHaltungen', () => {
   it('liefert Frage, Zielkonflikte und Positionen in der Form der Datenbank', () => {
     const s = spielbareHaltungen(pruefe(haltung()).katalog)
     expect(s.haltungen).toEqual([
-      { id: 1, frage: 'Soll es ein generelles Tempolimit auf Autobahnen geben?', beschreibung: 'Ob überall eine feste Höchstgeschwindigkeit gelten soll.', verwandte_themen: [8] },
+      { id: 1, frage: 'Soll es ein generelles Tempolimit auf Autobahnen geben?', beschreibung: 'Ob überall eine feste Höchstgeschwindigkeit gelten soll.', status_quo: 'nein', verwandte_themen: [8] },
     ])
     expect(s.zielkonflikte).toEqual([
       { haltung_id: 1, seite: 'ja', text: 'Wer es will, nennt weniger schwere Unfälle.', quelle_url: 'https://studie.de/unfaelle' },

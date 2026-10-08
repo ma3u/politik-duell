@@ -9,7 +9,7 @@ const parteien = [11, 12, 13].map((id, i) => ({
 const PARTEIEN: Datei = { pfad: 'parteien.json', inhalt: { fiktiv: false, parteien } }
 const THEMA: Datei = { pfad: 'themen/15-auto.json', inhalt: { id: 15, name: 'Autofahren', beschreibung: 'x', ziel: 'Gut ankommen.', ursachen: [{ id: 1501, beschreibung: 'Staus', quelle_url: 'https://destatis.de/a', ebene: 'bund' }] } }
 const haltung = (extra: Record<string, unknown> = {}) => ({
-  id: 4, frage: 'Soll es ein Tempolimit geben?', beschreibung: 'Ob auf Autobahnen eine Höchstgeschwindigkeit gilt.', verwandte_themen: [15],
+  id: 4, frage: 'Soll es ein Tempolimit geben?', beschreibung: 'Ob auf Autobahnen eine Höchstgeschwindigkeit gilt.', status_quo: 'nein', verwandte_themen: [15],
   zielkonflikte: [
     { seite: 'ja', text: 'Wer es will, nennt Sicherheit.', quelle_url: 'https://doi.org/1' },
     { seite: 'nein', text: 'Wer es ablehnt, nennt Fahrzeit.', quelle_url: 'https://doi.org/2' },

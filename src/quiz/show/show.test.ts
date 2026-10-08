@@ -7,7 +7,7 @@ const PARTEIEN: QuizPartei[] = [
   [11, 'Union'], [12, 'SPD'], [13, 'Grüne'], [14, 'FDP'], [15, 'AfD'], [16, 'Linke'], [17, 'BSW'],
 ].map(([id, kurzname]) => ({ id: id as number, kurzname: kurzname as string, name: kurzname as string, farbe: '#000', programm_url: '' }))
 const frage = (art: 'einzeln' | 'mehrfach', richtig: number[]): QuizFrage => ({
-  id: 'h1', haltung_id: 1, frage: 'Soll es ein Tempolimit geben?', beschreibung: '', art, gesucht: 'ja', richtig, neutral: [],
+  id: 'h1', haltung_id: 1, frage: 'Soll es ein Tempolimit geben?', beschreibung: '', art, gesucht: 'ja', status_quo: null, richtig, neutral: [],
   positionen: [], zielkonflikte: [], ki_entwurf: false,
 })
 

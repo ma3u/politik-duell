@@ -23,7 +23,7 @@ import {
 import type { QuizFrage } from './typen'
 
 const PARTEIEN = [11, 12, 13, 14, 15, 16, 17].map((id) => ({ id }))
-const haltung = (id: number) => ({ id, frage: `Frage ${id}?`, beschreibung: 'b', verwandte_themen: [] })
+const haltung = (id: number, status_quo?: 'ja' | 'nein') => ({ id, frage: `Frage ${id}?`, beschreibung: 'b', verwandte_themen: [], ...(status_quo ? { status_quo } : {}) })
 const pos = (haltung_id: number, werte: Positionswert[], extra: Partial<HaltungPosition> = {}): HaltungPosition[] =>
   werte.map((position, i) => ({
     haltung_id,
@@ -41,16 +41,36 @@ const pos = (haltung_id: number, werte: Positionswert[], extra: Partial<HaltungP
 describe('quizFrage', () => {
   it('Mehrfachauswahl, wenn mehrere Ja sagen; „teils“ zählt weder noch', () => {
     const f = quizFrage(haltung(1), pos(1, ['nein', 'ja', 'ja', 'nein', 'teils', 'ja', 'keine_aussage']), [], PARTEIEN)!
-    expect(f).toMatchObject({ id: 'h1', art: 'mehrfach', gesucht: 'ja', richtig: [12, 13, 16], neutral: [15] })
+    expect(f).toMatchObject({ id: 'h1', art: 'mehrfach', gesucht: 'ja', status_quo: null, richtig: [12, 13, 16], neutral: [15] })
     expect(f.positionen.map((p) => p.partei_id)).toEqual([11, 12, 13, 14, 15, 16, 17])
     expect(f.positionen[6]).toMatchObject({ zitat: null, beleg_url: null, begruendung: 'durchsucht' })
-    expect(anleitung(f)).toMatch(/Welche Parteien sagen .* Ja\?/)
+    expect(anleitung(f)).toMatch(/Wer steht im Wahlprogramm für Ja\?/)
+  })
+
+  it('„keine Aussage“ zählt wie die heutige Lage – nur mit status_quo', () => {
+    const werte: Positionswert[] = ['ja', 'nein', 'keine_aussage', 'ja', 'nein', 'keine_aussage', 'teils']
+    const ohne = quizFrage(haltung(5), pos(5, werte), [], PARTEIEN)!
+    expect(ohne.richtig).toEqual([11, 14])
+    expect(ohne.status_quo).toBeNull()
+    const heuteJa = quizFrage(haltung(5, 'ja'), pos(5, werte), [], PARTEIEN)!
+    expect(heuteJa.richtig).toEqual([11, 13, 14, 16])
+    expect(heuteJa.status_quo).toBe('ja')
+    expect(anleitung(heuteJa)).toContain('Es bleibt, wie es ist – also Ja.')
+    const heuteNein = quizFrage(haltung(5, 'nein'), pos(5, werte), [], PARTEIEN)!
+    expect(heuteNein.richtig).toEqual([11, 14])
+    expect(heuteNein.neutral).toEqual([17])
+    // Nur eine Partei sagt Ja, eine schweigt bei heutiger Lage Ja: dann ist es eine Mehrfachauswahl.
+    const zwei = quizFrage(haltung(6, 'ja'), pos(6, ['ja', 'nein', 'keine_aussage', 'nein', 'nein', 'nein', 'nein']), [], PARTEIEN)!
+    expect(zwei.art).toBe('mehrfach')
+    expect(zwei.richtig).toEqual([11, 13])
+    // Stehen alle auf einer Seite, gibt es nichts zu raten.
+    expect(quizFrage(haltung(7, 'ja'), pos(7, ['ja', 'ja', 'keine_aussage', 'ja', 'ja', 'ja', 'keine_aussage']), [], PARTEIEN)).toBeNull()
   })
 
   it('Einzelauswahl, wenn genau eine Partei klar Ja sagt – dann ist „teils“ falsch', () => {
     const f = quizFrage(haltung(2), pos(2, ['teils', 'teils', 'nein', 'teils', 'ja', 'nein', 'teils']), [], PARTEIEN)!
-    expect(f).toMatchObject({ art: 'einzeln', gesucht: 'ja', richtig: [15], neutral: [] })
-    expect(anleitung(f)).toBe('Nur eine Partei sagt in ihrem Wahlprogramm klar Ja. Welche?')
+    expect(f).toMatchObject({ art: 'einzeln', gesucht: 'ja', status_quo: null, richtig: [15], neutral: [] })
+    expect(anleitung(f)).toBe('Nur eine Partei steht im Wahlprogramm für Ja. Welche?')
   })
 
   it('fragt nach Nein, wenn niemand Ja sagt', () => {
@@ -127,7 +147,7 @@ describe('bewerte', () => {
 
 describe('Spielleitung', () => {
   const frage: QuizFrage = {
-    id: 'h1', haltung_id: 1, frage: 'F?', beschreibung: '', art: 'einzeln', gesucht: 'ja', richtig: [15], neutral: [],
+    id: 'h1', haltung_id: 1, frage: 'F?', beschreibung: '', art: 'einzeln', gesucht: 'ja', status_quo: null, richtig: [15], neutral: [],
     positionen: [], zielkonflikte: [], ki_entwurf: false,
   }
   const raum = () => {

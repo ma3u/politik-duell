@@ -1,11 +1,12 @@
 import { Fragment, useEffect, useId, useRef, useState } from 'react'
-import { useAnsicht } from '../barrierefrei'
+import { useAnsicht, useBewegung } from '../barrierefrei'
 import { ProgrammLink } from '../components/belege'
 import { Kreuzfeld } from '../components/Kreuz'
 import { parteiStil } from '../components/stil'
 import { KI_HINWEIS_HALTUNG } from '../components/HaltungsKarte'
 import { feedbackLink } from '../feedback'
 import { POSITION_TEXT } from '../logic/haltung'
+import type { Positionswert } from '../data/types'
 import { QrCode } from './QrCode'
 import { anleitung } from './fragen'
 import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
@@ -28,6 +29,25 @@ const WEG_TEXT: Record<Weg, string> = {
 }
 
 const sekunden = (ms: number) => (ms / 1000).toLocaleString('de-DE', { maximumFractionDigits: 1 })
+
+/** Was eine Position im Quiz bedeutet – „keine Aussage“ zählt wie die heutige Lage (docs/plan-quiz.md). */
+function positionImQuiz(position: Positionswert, status_quo: QuizFrage['status_quo']): string {
+  if (position !== 'keine_aussage' || !status_quo) return POSITION_TEXT[position]
+  return `Keine Aussage – bleibt wie heute, zählt als ${status_quo === 'ja' ? 'Ja' : 'Nein'}`
+}
+
+/** Springt zu einem Element, sobald es gebraucht wird – ohne Animation, wenn Bewegung aus ist (2.3.3). */
+function useSprungZu<T extends HTMLElement>(wann: boolean) {
+  const ref = useRef<T>(null)
+  const [bewegungAus] = useBewegung()
+  useEffect(() => {
+    // Direkt nach dem Commit, ohne requestAnimationFrame: Das feuert in Hintergrund-Tabs nicht.
+    if (wann) ref.current?.scrollIntoView({ block: 'end', behavior: bewegungAus ? 'auto' : 'smooth' })
+    // Nur beim Öffnen – die Bewegungseinstellung gilt ab dem nächsten Sprung.
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
+  }, [wann])
+  return ref
+}
 
 export interface AnsichtProps {
   daten: QuizDaten
@@ -261,6 +281,8 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, allein, onAntwort, on
 
   const gesperrt = !offen || abgegeben || abgelaufen
   const verbunden = z.spieler.filter((s) => s.verbunden).length
+  // Sobald das Antwortfenster offen ist, rückt die Liste mit „Abgeben“ ins Bild – die Frage bleibt oben erreichbar.
+  const antworten = useSprungZu<HTMLDivElement>(offen)
 
   function waehle(id: number) {
     if (gesperrt) return
@@ -307,6 +329,7 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, allein, onAntwort, on
         {anleitung(frage)}
         {frage.art === 'einzeln' && <span className="quiz-anleitung-zusatz"> Ein Tipp auf eine Partei gibt die Antwort ab.</span>}
       </p>
+      <div className="quiz-antworten" ref={antworten}>
       <div className="partei-liste stimmzettel quiz-wahl" role="group" aria-label="Parteien">
         {daten.parteien.map((partei, i) => {
           const gewaehlt = auswahl.includes(partei.id)
@@ -338,6 +361,7 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, allein, onAntwort, on
           </button>
         </div>
       )}
+      </div>
       <p className="hinweis quiz-warten" aria-live="polite">
         {!offen
           ? 'Gleich geht’s los …'
@@ -381,7 +405,7 @@ export function Positionen({ frage, parteien, auswahl }: { frage: QuizFrage; par
             <span className="fund-partei" title={partei.name}>
               {partei.kurzname}
             </span>
-            <span className="position-wert">{POSITION_TEXT[p.position]}</span>
+            <span className="position-wert">{positionImQuiz(p.position, frage.status_quo)}</span>
             {kreuz && <span className={`quiz-kreuz quiz-kreuz-${kreuz.art}`}>{kreuz.text}</span>}
             {p.position === 'keine_aussage' ? (
               p.begruendung && <p className="position-text meta">{p.begruendung}</p>
@@ -467,9 +491,15 @@ function Stand({ z, ich, letzte }: { z: QuizZustand; ich: string; letzte?: Recor
   )
 }
 
+/** Kurzer Zusatz in der Lösungstafel. */
+function zeilenText(position: Positionswert, frage: QuizFrage): string {
+  if (position !== 'keine_aussage' || !frage.status_quo) return POSITION_TEXT[position]
+  return `keine Aussage, zählt als ${frage.status_quo === 'ja' ? 'Ja' : 'Nein'}`
+}
+
 function loesungText(frage: QuizFrage, parteien: QuizPartei[]) {
   const namen = frage.richtig.map((id) => parteien.find((p) => p.id === id)?.kurzname ?? id).join(', ')
-  return `${frage.gesucht === 'ja' ? 'Ja' : 'Nein'} ${frage.richtig.length === 1 ? 'sagt' : 'sagen'}: ${namen}`
+  return `Für ${frage.gesucht === 'ja' ? 'Ja' : 'Nein'} ${frage.richtig.length === 1 ? 'steht' : 'stehen'}: ${namen}`
 }
 
 const REAKTION_KNALL = {
@@ -543,7 +573,8 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
             <li key={partei.id} className={`partei-zeile show-tafel-zeile${gewaehlt ? ' gewaehlt' : ''}`} style={parteiStil(partei.farbe)}>
               <span className="partei-zeile-name">
                 {partei.name}
-                {show.fertig && p && <small> · {POSITION_TEXT[p.position]}</small>}
+                {/* Der Stempel sagt es schon – der Zusatz nur, wo er etwas Neues sagt (Nein, teils, keine Aussage). */}
+                {show.fertig && p && p.position !== frage.gesucht && <small> · {zeilenText(p.position, frage)}</small>}
               </span>
               {stempel && <span className="show-stempel">{gesucht}</span>}
               {gewaehlt && <span className="sr-only">(dein Kreuz)</span>}
@@ -565,7 +596,15 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
           ) : (
             <p className="quiz-ergebnis">Keine Antwort – 0 Punkte.</p>
           )}
-          <Positionen frage={frage} parteien={daten.parteien} auswahl={mein?.auswahl ?? []} />
+          {/* Belege eingeklappt: Die Tafel oben zeigt das Ergebnis, hier steht der Wortlaut mit Seite. */}
+          <details className="quiz-belege haltung-ziele">
+            <summary>Was in den Programmen steht (Wortlaut und Seite)</summary>
+            <Positionen frage={frage} parteien={daten.parteien} auswahl={mein?.auswahl ?? []} />
+            <p className="meta">
+              Bundeswahlprogramme 2025. „Keine Aussage“ heißt: durchsucht, nichts gefunden – das Programm will daran
+              nichts ändern. Punkte gibt es fürs Wissen, was im Programm steht, nicht für eine Meinung.
+            </p>
+          </details>
           <Zielkonflikte frage={frage} />
           <KiHinweis frage={frage} />
           <p className="meta">
@@ -581,11 +620,6 @@ function Aufloesung({ daten, z, ich, frage, istLeitung, allein, onWeiter }: Ansi
               Fehler in dieser Frage melden
             </a>{' '}
             (GitHub, öffentlich)
-          </p>
-          <p className="meta">
-            Positionen aus den Bundeswahlprogrammen 2025 mit Wortlaut und Seite. „Keine Aussage im Programm“ heißt: Das
-            Programm wurde durchsucht, eine Position dazu nicht gefunden. Punkte gibt es fürs Wissen, was im Programm
-            steht – nicht für eine Meinung.
           </p>
           {!allein && (
             <>

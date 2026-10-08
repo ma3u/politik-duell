@@ -116,6 +116,13 @@ export interface HaltungEintrag {
   beschreibung: string
   /** Themen, deren Alltagsprobleme mit der Haltung zusammenhängen (zum Antippen auf der Karte). */
   verwandte_themen: number[]
+  /**
+   * Antwort auf die Frage, die der heutigen Rechtslage bzw. Praxis entspricht. Ein Programm ohne Aussage will
+   * daran nichts ändern – im Quiz zählt `keine_aussage` deshalb wie diese Antwort (docs/plan-quiz.md).
+   * `offen`: heute weder klar Ja noch klar Nein (etwa „erlaubt, aber nur in Teilen“) – dann zählt `keine_aussage`
+   * schlicht als „nicht Ja“ bzw. „nicht Nein“. Fehlt nur in Datenbankzeilen aus älteren Migrationen.
+   */
+  status_quo?: 'ja' | 'nein' | 'offen'
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse eine Haltung dieser Frage zuordnet. */
   schlagwoerter?: string[]
 }

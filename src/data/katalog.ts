@@ -279,8 +279,8 @@ export interface SpielbareHaltungen {
 export function spielbareHaltungen(k: Katalog, mitKiEntwurf = false): SpielbareHaltungen {
   const frei = k.haltungen.filter((h) => k.fiktiv || h.freigabe)
   return {
-    haltungen: frei.map(({ id, frage, beschreibung, verwandte_themen, schlagwoerter }) => ({
-      id, frage, beschreibung, verwandte_themen, ...(schlagwoerter ? { schlagwoerter } : {}),
+    haltungen: frei.map(({ id, frage, beschreibung, status_quo, verwandte_themen, schlagwoerter }) => ({
+      id, frage, beschreibung, ...(status_quo ? { status_quo } : {}), verwandte_themen, ...(schlagwoerter ? { schlagwoerter } : {}),
     })),
     positionen: frei.flatMap((h) =>
       h.positionen
@@ -1088,7 +1088,7 @@ export function pruefeKatalog(
       f(ort, 'erwartet ein Objekt')
       continue
     }
-    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'verwandte_themen', 'zielkonflikte', 'einordnung', 'suchbegriffe', 'positionen', 'freigabe', 'schlagwoerter'])
+    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'status_quo', 'verwandte_themen', 'zielkonflikte', 'einordnung', 'suchbegriffe', 'positionen', 'freigabe', 'schlagwoerter'])
     const haltung: KatalogHaltung = {
       id: ganzzahl(ort, h, 'id', 1, 32767),
       frage: text(ort, h, 'frage', 160),
@@ -1098,6 +1098,11 @@ export function pruefeKatalog(
       positionen: [],
     }
     if (haltung.frage && !haltung.frage.trim().endsWith('?')) f(ort, '„frage“ ist eine neutrale Ja/Nein-Frage und endet mit „?“')
+    // Heutige Lage: Pflicht ab der Freigabe, denn im Quiz zählt „keine Aussage“ wie diese Antwort (docs/plan-quiz.md).
+    if (h.status_quo === undefined) {
+      if (h.freigabe !== undefined) f(ort, '„status_quo“ fehlt: „ja“ oder „nein“ – die Antwort, die der heutigen Rechtslage bzw. Praxis entspricht („offen“, wenn weder noch)')
+    } else if (h.status_quo === 'ja' || h.status_quo === 'nein' || h.status_quo === 'offen') haltung.status_quo = h.status_quo
+    else f(ort, '„status_quo“ ist „ja“, „nein“ oder „offen“')
     for (const [feld, wert] of [['frage', haltung.frage], ['beschreibung', haltung.beschreibung]] as const)
       if (wert && ohneParteinamen(wert, parteinamen) !== wert) f(ort, `„${feld}“ nennt eine Partei – die Frage beschreibt den Wertkonflikt, nicht wer wo steht`)
     if (haltungIds.has(haltung.id)) f(ort, `Haltungs-ID ${haltung.id} ist doppelt`)

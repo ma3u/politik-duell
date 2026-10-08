@@ -3055,8 +3055,32 @@ textarea {
   margin-bottom: 0.3rem;
 }
 .quiz-anleitung {
-  margin: 0.8rem 0;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
   font-weight: 700;
+}
+/* Kompakte Zeilen im Quiz: Zielfläche bleibt über 44 px (2.5.8), Zusatz in einer Zeile. */
+.quiz .partei-zeile {
+  min-height: 2.9rem;
+  padding: 4px 10px 4px 20px;
+}
+.quiz .partei-zeile-name small {
+  font-size: 0.85rem;
+}
+/* Das Ziel des automatischen Sprungs – mit Luft nach unten, damit „Abgeben“ frei liegt. */
+.quiz-antworten {
+  scroll-margin-bottom: 8px;
+}
+.quiz-belege {
+  margin: 0.8rem 0 0;
+  font-size: 0.92rem;
+}
+.quiz-belege > summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.quiz-belege .quiz-positionen {
+  margin-top: 0.5rem;
 }
 .quiz-wahl {
   overflow: hidden;
@@ -3197,8 +3221,8 @@ html:has(.punktestand) {
   }
 }
 .buehne {
-  margin: 0 0 0.8rem;
-  padding: 18px 18px 16px;
+  margin: 0 0 0.6rem;
+  padding: 14px 16px 12px;
   color: #fff;
   background: var(--tinte);
   border-radius: var(--papier-radius);
@@ -3206,13 +3230,13 @@ html:has(.punktestand) {
 }
 .buehne .quiz-frage {
   margin: 0;
-  font-size: clamp(1.45rem, 5.2vw, 2.1rem);
+  font-size: clamp(1.3rem, 4.8vw, 1.9rem);
   line-height: 1.15;
 }
 .buehne-meta {
-  margin: 0.6rem 0 0;
+  margin: 0.4rem 0 0;
   color: #c9d3ea;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 .show-wort {
   display: inline-block;
@@ -3337,10 +3361,10 @@ html:has(.punktestand) {
   cursor: default;
 }
 .show-stempel {
-  padding: 2px 10px;
+  padding: 1px 8px;
   font-family: var(--schrift-titel);
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--kuli);

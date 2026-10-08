@@ -371,13 +371,14 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 
 ### `haltungen/NN-name.json` – eine Datei pro Haltung
 
-Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als neutrale Ja/Nein-Frage. Sie bekommt **keine Punkte**: Die Haltungskarte zeigt nur, wo die Parteien dazu stehen (mit Zitat) und welche Ziele gegeneinander stehen (Regeln: [`docs/methode.md`](../docs/methode.md) → „Forderungen und Haltungen“, Plan: [`docs/plan-haltungen.md`](../docs/plan-haltungen.md), Teil B).
+Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als neutrale Ja/Nein-Frage. Sie bekommt **keine Punkte**: Die Haltungskarte zeigt nur, wo die Parteien dazu stehen (mit Zitat) und welche Ziele gegeneinander stehen (Regeln: [`docs/methode.md`](../docs/methode.md) → „Forderungen und Haltungen“, Plan: [`docs/plan-haltungen.md`](../docs/plan-haltungen.md), Teil B). `status_quo` ist die Antwort, die der heutigen Rechtslage bzw. Praxis entspricht (`ja`, `nein` oder `offen`, wenn weder noch; Pflicht ab der Freigabe): Im Quiz zählt `keine_aussage` wie diese Antwort, weil ein Programm ohne Aussage daran nichts ändern will (`docs/plan-quiz.md`); die Tabelle „Heutige Lage je Haltung“ in `docs/haltungen.md` begründet jeden Wert.
 
 ```json
 {
   "id": 1,
   "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
   "beschreibung": "Ein neutraler Satz, worum es geht.",
+  "status_quo": "nein",
   "verwandte_themen": [8],
   "zielkonflikte": [
     { "seite": "ja", "text": "Wer ein Tempolimit will, nennt …", "quelle_url": "https://…" },

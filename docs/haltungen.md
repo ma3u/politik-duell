@@ -322,3 +322,45 @@ Dieselben Blindlisten ein zweites Mal von einem unabhängigen Agenten `haltung-e
 Alle übrigen 144 Positionen (Haltungen 4–33 ohne 1 und 2) hat der Zweitlauf bestätigt.
 
 **Entscheidung der Betreiberin (8. 10. 2026)** zu den vier Grenzfällen des Zweitlaufs, nach Lesen der Zitate: 7 SPD **ja** (Lauf 1 bestätigt), 20 BSW **nein** (Lauf 2), 24 BSW **teils** (Lauf 2), 33 BSW **ja** (Lauf 1 bestätigt). Die beiden geänderten Positionen tragen Kurzfassung und Stand des Zweitlaufs und bleiben KI-Entwurf: `geprueft` setzt die Freigabe der Haltung durch die Betreiberin (statt `art: ki`) und zwei blinde Bestätigungen voraus.
+
+## Heutige Lage je Haltung (8. 10. 2026)
+
+Seit dem 8. 10. 2026 trägt jede Haltung `status_quo`: die Antwort auf die Frage, die der heutigen Rechtslage bzw. gängigen Praxis entspricht. Im Quiz zählt „keine Aussage im Programm“ wie diese Antwort, weil ein Programm, das zu einer Frage schweigt, daran nichts ändern will (Entscheidung der Betreiberin; Regel in `docs/plan-quiz.md`). `offen` steht, wo die heutige Lage weder klar Ja noch klar Nein ist; dann zählt „keine Aussage“ wie bisher als „nicht Ja“. Die Werte hat die Koordination ohne Blick in Programme gesetzt; drei sind Ermessensfälle und mit ⚠ markiert – Änderung durch die Betreiberin jederzeit möglich.
+
+| Nr. | Status quo | Grundlage |
+| --- | --- | --- |
+| 1 | nein | Kein generelles Tempolimit auf Autobahnen (§ 3 StVO, Richtgeschwindigkeit 130). |
+| 2 | nein | Keine zusätzliche Begrenzung über das geltende Aufenthalts- und Asylrecht hinaus. |
+| 3 | nein | Bundes-Betreuungsgeld 2015 vom BVerfG aufgehoben; nur Landesleistungen. |
+| 4 | ja | Ausbau läuft nach EEG und Wind-an-Land-Gesetz mit festen Flächenzielen. |
+| 5 | nein | Letzte Kernkraftwerke am 15. 4. 2023 abgeschaltet (AtG). |
+| 6 | nein | Kein bundesweites Verbot; einzelne Länder regeln Schulen und Behörden selbst. |
+| 7 | ja | Waffenlieferungen laufen seit 2022. |
+| 8 | ja ⚠ | UN-Behindertenrechtskonvention (Art. 24) gilt als Bundesrecht; Förderschulen bestehen in allen Ländern fort. |
+| 9 | nein | Düngeverordnung 2020 in Kraft; Lockerungen nur als Vorhaben. |
+| 10 | nein | Vermögensteuer seit 1997 nicht erhoben. |
+| 11 | nein | Wehrpflicht seit 2011 ausgesetzt; neuer Wehrdienst freiwillig. |
+| 12 | ja | Mindestlohngesetz seit 2015. |
+| 13 | ja | Schuldenbremse steht im Grundgesetz (Art. 109, 115), 2025 um Ausnahmen ergänzt. |
+| 14 | nein | Regelaltersgrenze steigt bis 2031 auf 67, nicht darüber (§ 35 SGB VI). |
+| 15 | nein | Keine Zuckersteuer; freiwillige Reduktionsstrategie. |
+| 16 | ja | NATO-Mitglied seit 1955. |
+| 17 | nein | Staatsleistungen laufen; Ablösungsauftrag (Art. 140 GG, Art. 138 WRV) nicht umgesetzt. |
+| 18 | nein | Kein Pipelinegas aus Russland seit 2022; EU-Ausstieg beschlossen. |
+| 19 | ja | Euro gesetzliches Zahlungsmittel seit 2002. |
+| 20 | offen | Freiflächen- und Agri-Photovoltaik auf Äckern nur in Gebietskulissen des EEG erlaubt – weder klar Ja noch Nein; „keine Aussage“ zählt wie bisher. |
+| 21 | ja | Bleiberecht für gut Integrierte in §§ 25a, 25b AufenthG. |
+| 22 | ja | Kirchenasyl geduldet; Verfahren zwischen Kirchen und BAMF seit 2015. |
+| 23 | nein | Schulpflicht in allen Ländern, Hausunterricht nicht zulässig. |
+| 24 | ja | EU-Mitglied seit 1958 (EWG). |
+| 25 | nein | Erbschaftsteuer wird erhoben (ErbStG). |
+| 26 | nein | Abbruch nach § 218 StGB rechtswidrig, nach Beratung straffrei (§ 218a). |
+| 27 | nein | Keine ausdrückliche Geburtenförderung; Familienleistungen ohne dieses Ziel. |
+| 28 | ja ⚠ | Vorübergehender Schutz ist befristet (EU-Richtlinie 2001/55, bis März 2027 verlängert). |
+| 29 | nein | Keine verbindliche Mitentscheidung vor Ort; nur finanzielle Beteiligung (§ 6 EEG). |
+| 30 | nein | Keine allgemeinen Studiengebühren an staatlichen Hochschulen. |
+| 31 | ja | Bundesprogramm „Demokratie leben!“ läuft. |
+| 32 | ja ⚠ | Verteidigungsausgaben steigen nach Beschlusslage (Sondervermögen, Grundgesetzänderung 2025). |
+| 33 | ja | Leistungsminderung bei Ablehnung zumutbarer Arbeit (§ 31 SGB II). |
+| 34 | ja | Nationale Moorschutzstrategie 2022, Aktionsprogramm Natürlicher Klimaschutz. |
+| 35 | nein | Unkonventionelles Fracking verboten (§ 13a WHG). |

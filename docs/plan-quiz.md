@@ -77,7 +77,7 @@ Je Haltung höchstens eine Frage, mechanisch bestimmt:
 | 0× `ja`, ≥ 2× `nein` | „Welche Parteien sagen Nein?“ | mehrfach | alle Nein-Parteien | `teils` |
 | sonst | keine Frage | | | |
 
-`keine_aussage` zählt als „sagt nicht Ja“ (bzw. „nicht Nein“) – das Programm wurde durchsucht und belegt nichts. `teils` zählt bei der Mehrfachauswahl weder als richtig noch als falsch, weil „teils“ weder Ja noch Nein ist; das steht in der Frage dabei.
+`keine_aussage` zählt wie die **heutige Lage** (`status_quo` der Haltung, `ja` oder `nein`): Ein Programm, das zu einer Frage nichts sagt, will daran nichts ändern – wer etwa zum Euro schweigt, steht für „behalten“. Die Positionen werden also erst auf Ja/Nein/teils abgebildet, dann greift die Tabelle; stehen danach alle Parteien auf derselben Seite, gibt es keine Frage. In der Anleitung steht der Satz „Kein Wort dazu heißt: Es bleibt, wie es ist – also Ja“, in der Auflösung „keine Aussage, zählt als Ja“. Ist die heutige Lage weder klar Ja noch klar Nein (`status_quo: "offen"`, etwa Solaranlagen auf Äckern: erlaubt, aber nur in Gebietskulissen) oder fehlt das Feld (alte Datenbankzeilen), zählt `keine_aussage` wie bisher als „nicht Ja“ bzw. „nicht Nein“. `teils` zählt bei der Mehrfachauswahl weder als richtig noch als falsch, weil „teils“ weder Ja noch Nein ist; das steht in der Frage dabei.
 
 Format von `public/quiz/fragen.json` (Auszug):
 
@@ -93,6 +93,7 @@ Format von `public/quiz/fragen.json` (Auszug):
     "beschreibung": "…",
     "art": "mehrfach",
     "gesucht": "ja",
+    "status_quo": "nein",
     "richtig": [12, 13, 16],
     "neutral": [],
     "positionen": [{ "partei_id": 12, "position": "ja", "kurzfassung": "…", "zitat": "…", "beleg_url": "…#page=36", "begruendung": null }],
@@ -127,6 +128,7 @@ Warum nicht eine frei gepflegte Liste „Aussage → Parteien“? Bei einer Mehr
 - **Merkbare Raumnamen** („Kluge Eule 27“: Adjektiv + Tier mit Stabreim + Zahl, ohne Umlaute). Jedes Gerät berechnet daraus denselben sechsstelligen Code (`codeAusName`); alte Codes funktionieren weiter. Einladungslink `#/quiz/kluge-eule-27`.
 - **Name im Spiel:** bleibt ohne Häkchen im localStorage, damit er beim nächsten Mal dasteht (Entscheidung der Betreiberin, 8. 10. 2026); leeres Namensfeld löscht ihn, Raumnamen merkt sich das Quiz nicht.
 - **Raum eröffnen:** Einladungslink als QR-Code (Paket `qrcode`, im Browser als SVG erzeugt, kein externer Dienst) neben Link und „Einladen“, damit Mitspielende im selben Raum einfach abfotografieren.
+- **Frage und Auflösung kompakt** (8. 10. 2026): kleinere Bühne und Zeilen, kurze Anleitung in einer Zeile; sobald das Antwortfenster offen ist, springt die Seite zur Parteienliste mit „Abgeben“ (`scrollIntoView`, ohne Animation bei „Bewegung anhalten“). In der Lösungstafel steht der Zusatz nur, wo der Stempel nichts sagt (Nein, teils, keine Aussage); Wortlaut und Seite liegen eingeklappt unter „Was in den Programmen steht“.
 - **Startseite:** Name und Zeit-Knopf (Normal → Doppelt → Ohne Limit, je Tippen weiter) in einer Zeile, darunter „Mit Fremden“, „Mit Freunden“, „Alleine“; „Mit Freunden“ klappt erst den eigenen Raum (eröffnen) und das Beitreten auf.
 - **Mit Zufälligen spielen:** Öffentliche Räume stehen, solange sie warten, unter `quiz-oeffentlich/<Code>` (Name, Spielerzahl, Serverzeit; Lebenszeichen alle 30 s, nach 90 s ausgeblendet, beim Start gelöscht). Beleidigende Namen (Filter aus `moderation.ts`) zeigt die Spielleitung als „Gast N“; mit einem solchen Namen kann man keinen öffentlichen Raum eröffnen oder suchen.
 

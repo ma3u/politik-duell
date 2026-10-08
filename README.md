@@ -12,7 +12,7 @@ Testversion: **https://ma3u.github.io/politik-duell/** (GitHub Pages, ohne Supab
 - Mehrspieler bis acht Personen, Browser zu Browser per WebRTC; Vermittlung über die Firebase Realtime Database (REST, ohne SDK), ersatzweise Supabase Realtime; merkbare Raumnamen („Kluge Eule 27“), „Mit Fremden“, „Mit Freunden“ (Raum eröffnen oder beitreten), „Alleine“
 - Show mit zwei KI-Moderatoren (Mara, Ben; ElevenLabs, vorab aufgenommen), Animationen, Geräuschen, Konfetti für den Sieg, Startmusik im Party-Elektro-Stil; Ton-Schalter als Lautsprecher, Hinweis „Mit Ton spielen?“ bis der Browser den Ton freigibt
 - Startseite: Name (wird gemerkt) und Zeit je Frage als Knopf in einer Zeile; Ton-Wahl wird auf ausdrücklichen Wunsch gemerkt
-- 24 Fragen aus den Haltungen, auf Pages mit KI-Entwürfen (gekennzeichnet)
+- 24 Fragen aus den Haltungen, auf Pages mit KI-Entwürfen (gekennzeichnet); „keine Aussage im Programm“ zählt wie die heutige Lage (`status_quo` je Haltung, [docs/haltungen.md](docs/haltungen.md)); Frage und Auflösung kompakt, Sprung zu den Antwortfeldern, Belege eingeklappt
 
 **Daten**
 - **Volt** als achte Partei: Bundesprogramm, Landesprogramme ST, MV, BE, Positionen der erfassten Haltungen
