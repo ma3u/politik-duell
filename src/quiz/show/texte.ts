@@ -121,6 +121,15 @@ export const SCHLUSS: Record<Schluss, Clip> = {
   'solo-schwach': { id: 'solo-schwach', sprecher: 'ben', text: '[laughs] Na ja. Aber jetzt weißt du, wo du nachlesen kannst.' },
 }
 
+/**
+ * Startmelodie: Beat „startbeat“ mit Sprechchor – beide Moderatoren rufen „Politik-Duell!“. Spielt beim ersten
+ * Tippen auf der Startseite des Quiz und beim Einschalten des Tons, damit man hört, ob der Ton an ist.
+ */
+export const CHOR: Clip[] = [
+  { id: 'chor-mara', sprecher: 'mara', text: '[shouting] Politik-Duell!' },
+  { id: 'chor-ben', sprecher: 'ben', text: '[shouting] Politik-Duell!' },
+]
+
 export const OUTRO: Clip = { id: 'outro', sprecher: 'mara', text: 'Danke fürs Mitspielen – und denk dran: Versprechen kann jeder!' }
 
 // ---- Clips je Frage ----
@@ -138,6 +147,7 @@ export function loesungClip(f: Pick<QuizFrage, 'id' | 'art' | 'gesucht' | 'richt
 export function alleClips(fragen: QuizFrage[], parteien: QuizPartei[]): Clip[] {
   return [
     ...INTRO,
+    ...CHOR,
     ...ANSAGE,
     ...Object.values(ANLEITUNG),
     optionenClip(parteien),
@@ -172,4 +182,12 @@ export const GERAEUSCHE: Geraeusch[] = [
   { id: 'falsch', beschreibung: 'Comedic wrong answer buzzer, game show, short', sekunden: 1 },
   { id: 'sieg', beschreibung: 'Triumphant short victory fanfare with cheering crowd and applause', sekunden: 4 },
   { id: 'niederlage', beschreibung: 'Sad comedic trombone, wah wah wah waaah', sekunden: 2.5 },
+  // Grundlage der Startmelodie (siehe CHOR): ausgelassener Party-Elektro-Beat, eigener Stil.
+  {
+    id: 'startbeat',
+    beschreibung:
+      'High-energy electro-punk party anthem intro beat, pounding four-on-the-floor kick drum, distorted squelchy analog synth bass riff, cheeky brass stabs, handclaps, rowdy festival crowd cheering, rave energy, ends with a hard stop',
+    sekunden: 8,
+  },
 ]
+

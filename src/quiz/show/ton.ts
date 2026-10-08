@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from 'react'
 import type { ShowManifest } from './manifest'
-import { ohneTags, type Clip, type Sprecher } from './texte'
+import { CHOR, ohneTags, type Clip, type Sprecher } from './texte'
 
 // Ton der Quiz-Show: Sprecher-Clips und Geräusche aus public/quiz/audio/ (erzeugt mit `npm run quiz:stimmen`),
 // abgespielt über die Web-Audio-API (spielt nach dem ersten Antippen auch auf iPhone und iPad). Ist der Ton aus
@@ -12,9 +12,28 @@ let manifest: ShowManifest | null = null
 let ctx: AudioContext | null = null
 let laut: GainNode | null = null
 const puffer = new Map<string, AudioBuffer>()
-const ladend = new Set<string>()
+const ladend = new Map<string, Promise<AudioBuffer | null>>()
+/** Heruntergeladene, noch nicht dekodierte Dateien – ohne AudioContext möglich, also schon vor dem ersten Tippen. */
+const roh = new Map<string, Promise<ArrayBuffer | null>>()
 
-/** Lädt das Manifest (Dauer und Wortzeiten). Ohne Manifest gibt es nur Untertitel mit geschätzter Dauer. */
+const alleDateien = () =>
+  manifest ? [...Object.values(manifest.geraeusche), ...Object.values(manifest.clips)].map((x) => x.datei) : []
+
+function holen(datei: string): Promise<ArrayBuffer | null> {
+  let p = roh.get(datei)
+  if (!p) {
+    p = fetch(`${BASIS}${datei}`)
+      .then((r) => (r.ok ? r.arrayBuffer() : null))
+      .catch(() => null)
+    roh.set(datei, p)
+  }
+  return p
+}
+
+/**
+ * Lädt das Manifest (Dauer und Wortzeiten) und gleich alle Aufnahmen und Geräusche (ca. 3 MB) – sonst käme der
+ * Ton erst Sekunden nach dem Start. Ohne Manifest gibt es nur Untertitel mit geschätzter Dauer.
+ */
 export async function ladeShow(): Promise<void> {
   try {
     const r = await fetch(`${BASIS}manifest.json`)
@@ -22,6 +41,8 @@ export async function ladeShow(): Promise<void> {
   } catch {
     manifest = null
   }
+  // Geräusche zuerst, sie kommen in jeder Runde.
+  for (const d of alleDateien()) void holen(d)
 }
 
 type AudioNavigator = Navigator & { audioSession?: { type: string } }
@@ -55,6 +76,8 @@ export function entsperren() {
     document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && aufwecken())
   }
   aufwecken()
+  // Alles schon Heruntergeladene jetzt dekodieren (geht nur mit AudioContext).
+  for (const d of alleDateien()) laden(d)
   try {
     const q = ctx.createBufferSource()
     q.buffer = ctx.createBuffer(1, 1, 22050)
@@ -65,15 +88,22 @@ export function entsperren() {
   }
 }
 
-function laden(datei: string) {
-  if (!ctx || puffer.has(datei) || ladend.has(datei)) return
-  ladend.add(datei)
-  fetch(`${BASIS}${datei}`)
-    .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
-    .then((b) => ctx!.decodeAudioData(b))
-    .then((b) => puffer.set(datei, b))
-    .catch(() => {})
-    .finally(() => ladend.delete(datei))
+function laden(datei: string): Promise<AudioBuffer | null> {
+  const fertig = puffer.get(datei)
+  if (fertig) return Promise.resolve(fertig)
+  if (!ctx) return Promise.resolve(null)
+  let p = ladend.get(datei)
+  if (!p) {
+    const c = ctx
+    p = holen(datei)
+      // Kopie: decodeAudioData übernimmt den Speicher, die Rohdaten bleiben für einen neuen Versuch.
+      .then((b) => (b ? c.decodeAudioData(b.slice(0)) : null))
+      .then((b) => (b && puffer.set(datei, b), b))
+      .catch(() => null)
+      .finally(() => ladend.delete(datei))
+    ladend.set(datei, p)
+  }
+  return p
 }
 
 /** Clips und Geräusche schon laden, bevor sie gebraucht werden. */
@@ -88,14 +118,62 @@ export function vorladen(clips: Clip[], geraeusche: string[] = []) {
   }
 }
 
-function abspielen(datei: string | undefined): AudioBufferSourceNode | null {
+function abspielen(datei: string | undefined, wann = 0, ziel: AudioNode | null = laut): AudioBufferSourceNode | null {
   const b = datei ? puffer.get(datei) : undefined
-  if (!ctx || !laut || !b) return null
+  if (!ctx || !ziel || !b) return null
   const q = ctx.createBufferSource()
   q.buffer = b
-  q.connect(laut)
-  q.start()
+  q.connect(ziel)
+  q.start(wann)
   return q
+}
+
+/** Wann der Chor in der Startmelodie „Politik-Duell!“ ruft (Sekunden nach Beginn des Beats). */
+const CHOR_EINSAETZE = [0.9, 3.0, 5.6]
+let melodieLaeuft = false
+let melodie: { lautstaerke: GainNode; quellen: AudioBufferSourceNode[] } | null = null
+
+/**
+ * Startmelodie: Beat mit Sprechchor beider Moderatoren. Muss in einer Nutzeraktion starten (ruft entsperren auf);
+ * wartet kurz, bis die Dateien dekodiert sind, und plant dann alles auf der Uhr des AudioContext – so sitzt der Chor
+ * auf dem Beat. Spielt nicht doppelt, wenn sie schon läuft.
+ */
+export async function startmelodie() {
+  entsperren()
+  if (!ctx || !manifest || !tonAn || melodieLaeuft) return
+  const beat = manifest.geraeusche.startbeat?.datei
+  const stimmen = CHOR.map((c) => manifest!.clips[c.id]?.datei)
+  if (!beat) return
+  melodieLaeuft = true
+  const bereit = await Promise.race([
+    Promise.all([beat, ...stimmen].map((d) => (d ? laden(d) : Promise.resolve(null)))),
+    new Promise<null>((ok) => setTimeout(() => ok(null), 2500)),
+  ])
+  if (!bereit) {
+    melodieLaeuft = false
+    return
+  }
+  if (!melodieLaeuft || !laut) return // inzwischen abgebrochen (Spiel gestartet)
+  const t0 = ctx.currentTime + 0.05
+  const lautstaerke = ctx.createGain()
+  lautstaerke.connect(laut)
+  const q = abspielen(beat, t0, lautstaerke)
+  const quellen = [q, ...CHOR_EINSAETZE.flatMap((e) => stimmen.map((d) => abspielen(d, t0 + e, lautstaerke)))].filter(
+    (x): x is AudioBufferSourceNode => !!x,
+  )
+  melodie = { lautstaerke, quellen }
+  if (q) q.onended = () => ((melodieLaeuft = false), (melodie = null))
+  else melodieLaeuft = false
+}
+
+/** Startmelodie sanft ausblenden – etwa wenn das Spiel beginnt und die Show ihren eigenen Jingle spielt. */
+export function melodieStoppen() {
+  melodieLaeuft = false
+  if (!melodie || !ctx) return
+  const { lautstaerke, quellen } = melodie
+  lautstaerke.gain.setTargetAtTime(0, ctx.currentTime, 0.12)
+  for (const q of quellen) q.stop(ctx.currentTime + 0.6)
+  melodie = null
 }
 
 /** Geräusch abspielen (nicht abwarten). */
@@ -184,6 +262,7 @@ export function setzeTon(an: boolean) {
   if (laut && ctx) laut.gain.setTargetAtTime(an ? 1 : 0, ctx.currentTime, 0.02)
   tonHoerer.forEach((h) => h())
 }
+export const tonIstAn = () => tonAn
 export const useTon = () =>
   useSyncExternalStore(
     (h) => (tonHoerer.add(h), () => tonHoerer.delete(h)),

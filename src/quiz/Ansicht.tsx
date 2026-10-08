@@ -646,10 +646,10 @@ function Ende({ daten, z, ich, istLeitung, allein, onNochmal, onVerlassen }: Ans
     { marke: 'reaktion' as const, clip: SCHLUSS[schluss], klang: gut || schluss === 'gleichstand' ? 'sieg' : 'niederlage', pause: 300 },
     { marke: 'reaktion' as const, clip: OUTRO },
   ])
-  const show = useAblauf(schritte)
+  useAblauf(schritte)
   return (
     <main className={`seite quiz quiz-auftritt show-ende show-ende-${SCHLUSS_KNALL[schluss].art}`}>
-      {gut && !show.fertig && <Konfetti />}
+      {gut && <Konfetti />}
       <Knall text={SCHLUSS_KNALL[schluss].text} art={SCHLUSS_KNALL[schluss].art} />
       <h2 ref={titel}>{allein ? 'Geschafft' : sieger.length > 1 ? `Gleichstand: ${sieger.join(' und ')}` : `${sieger[0]} gewinnt`}</h2>
       <p className="quiz-ergebnis">

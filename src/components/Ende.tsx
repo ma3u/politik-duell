@@ -9,6 +9,7 @@ import { useDaten, useLandName } from '../data/kontext'
 import { Belege, KI_HINWEIS, NICHT_BLIND } from './Aufloesung'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HaltungsKarte } from './HaltungsKarte'
+import { Konfetti } from './Konfetti'
 import { Kreuz } from './Kreuz'
 import { Logo } from './Logo'
 import { parteiStil } from './stil'
@@ -54,6 +55,8 @@ export function Ende({
 
   return (
     <main className="seite ende">
+      {/* Konfettiregen für die Seite, die gewonnen hat (bei Gleichstand keiner). */}
+      {sieger && <Konfetti />}
       <div className="ende-kopf">
         <Logo groesse={72} />
         <h2 className="sr-only" ref={titel}>

@@ -2,6 +2,7 @@ import { useId } from 'react'
 import { useAnsicht } from '../barrierefrei'
 import { Kreuzfeld } from './Kreuz'
 import { Logo } from './Logo'
+import { useErstesMal } from './erstesMal'
 
 export function Start({
   bereit,
@@ -23,8 +24,9 @@ export function Start({
 }) {
   const id = useId()
   const titel = useAnsicht('')
+  const auftritt = useErstesMal('start')
   return (
-    <main className="start">
+    <main className={auftritt ? 'start start-auftritt' : 'start'}>
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
@@ -33,7 +35,7 @@ export function Start({
             </h1>
             <p className="slogan">Versprechen kann jeder.</p>
           </div>
-          <Logo groesse={72} />
+          <Logo groesse={72} animiert={auftritt} />
         </div>
         <p className="erklaerung">
           Zwei Spieler:innen, zwei Parteien, fünf Runden. Nennt echte Alltagsprobleme – das Spiel zeigt, welche Partei

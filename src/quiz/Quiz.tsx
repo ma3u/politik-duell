@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { Fusszeile } from '../components/Fusszeile'
 import { Logo } from '../components/Logo'
+import { useErstesMal } from '../components/erstesMal'
 import { useHash } from '../navigation'
 import { QuizAnsicht } from './Ansicht'
 import { useAnsicht } from '../barrierefrei'
@@ -15,7 +16,7 @@ import { useGast, useSpielleitung } from './useSpiel'
 import { VERMITTLUNG } from './netz'
 import { TonKnopf, UntertitelLeiste } from './show/Buehne'
 import { alleClips, GERAEUSCHE } from './show/texte'
-import { entsperren, ladeShow, vorladen } from './show/ton'
+import { entsperren, ladeShow, melodieStoppen, startmelodie, vorladen } from './show/ton'
 import { SIGNAL_ART } from './verbindung'
 
 // Programm-Quiz „Wer sagt Ja?“ unter #/quiz (Einladung: #/quiz/<Raumname>, z. B. #/quiz/kluge-eule-27). Ohne Datenbank: Die Fragen kommen
@@ -66,8 +67,27 @@ const nameAnstoessig = (name: string) => {
 
 /** In einer Nutzeraktion: Ton freischalten und alle Clips und Geräusche schon laden (ca. 3 MB). */
 function showStarten(daten: QuizDaten) {
+  melodieStoppen()
   entsperren()
   vorladen(alleClips(daten.fragen, daten.parteien), GERAEUSCHE.map((g) => g.id))
+}
+
+/** Startmelodie nur einmal je Besuch – beim ersten Tippen oder Tastendruck auf der Startseite (vorher darf kein Ton). */
+let melodieGespielt = false
+function useStartmelodie() {
+  useEffect(() => {
+    if (melodieGespielt) return
+    const arten = ['pointerdown', 'keydown'] as const
+    const entfernen = () => arten.forEach((a) => removeEventListener(a, los, true))
+    function los() {
+      entfernen()
+      if (melodieGespielt) return
+      melodieGespielt = true
+      void startmelodie()
+    }
+    arten.forEach((a) => addEventListener(a, los, true))
+    return entfernen
+  }, [])
 }
 
 const raumLink = (r: Raum) => `${location.origin}${location.pathname}#/quiz/${raumPfad(r)}`
@@ -235,9 +255,11 @@ function QuizStart({
   const ziel = raumAusEingabe(eingabe)
   const leer = daten.fragen.length === 0
   const titel = useAnsicht('Programm-Quiz')
+  useStartmelodie()
+  const auftritt = useErstesMal('quiz')
 
   return (
-    <main className="start quiz-start">
+    <main className={auftritt ? 'start quiz-start start-auftritt' : 'start quiz-start'}>
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
@@ -246,7 +268,7 @@ function QuizStart({
             </h1>
             <p className="slogan">Das Programm-Quiz</p>
           </div>
-          <Logo groesse={72} />
+          <Logo groesse={72} animiert={auftritt} />
         </div>
         <p className="erklaerung">
           Welche Parteien sagen in ihrem Wahlprogramm Ja? Ratet gegeneinander – wer richtig liegt, bekommt Punkte, wer

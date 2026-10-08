@@ -1443,6 +1443,26 @@
     1.387
    ],
    "hash": "6a7d18cc7838"
+  },
+  "chor-mara": {
+   "datei": "chor-mara.mp3",
+   "sprecher": "mara",
+   "text": "Politik-Duell!",
+   "dauer": 1.2,
+   "woerter": [
+    0.27
+   ],
+   "hash": "e9441bc86402"
+  },
+  "chor-ben": {
+   "datei": "chor-ben.mp3",
+   "sprecher": "ben",
+   "text": "Politik-Duell!",
+   "dauer": 1.2,
+   "woerter": [
+    0.267
+   ],
+   "hash": "935f8e3f629b"
   }
  },
  "geraeusche": {
@@ -1505,6 +1525,11 @@
    "datei": "klang-niederlage.mp3",
    "dauer": 2.5,
    "hash": "c280dda529fa"
+  },
+  "startbeat": {
+   "datei": "klang-startbeat.mp3",
+   "dauer": 8,
+   "hash": "ec65b2a1aa7d"
   }
  }
 }

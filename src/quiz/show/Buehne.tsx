@@ -1,6 +1,5 @@
-import { useMemo } from 'react'
 import { SPRECHER } from './texte'
-import { entsperren, setzeTon, useTon, useUntertitel } from './ton'
+import { setzeTon, startmelodie, useTon, useUntertitel } from './ton'
 
 // Sichtbare Bausteine der Quiz-Show. Animationen stehen in index.css („Quiz-Show“) und ruhen bei „Bewegung
 // anhalten“ bzw. „Bewegung reduzieren“. Kein Blinken (WCAG 2.3.1).
@@ -32,9 +31,10 @@ export function TonKnopf() {
       className="knopf knopf-zweit knopf-klein show-ton"
       aria-pressed={!an}
       onClick={() => {
-        // Das Tippen auf den Knopf weckt auch eine angehaltene Wiedergabe (iOS).
-        entsperren()
         setzeTon(!an)
+        // Beim Einschalten die Startmelodie – so hört man sofort, ob der Ton geht. Das Tippen weckt auch eine
+        // angehaltene Wiedergabe (iOS).
+        if (!an) void startmelodie()
       }}
     >
       {an ? 'Ton aus' : 'Ton an'}
@@ -52,35 +52,5 @@ export function Knall({ text, klein, art = 'normal' }: { text: string; klein?: s
   )
 }
 
-const FARBEN = ['var(--stimmblau)', 'var(--kuli)', 'var(--warnung)', 'var(--gut)', '#ffffff']
-
-/** Konfetti beim Sieg – rein dekorativ, langsam, ohne Blinken. */
-export function Konfetti() {
-  const teile = useMemo(
-    () =>
-      Array.from({ length: 48 }, (_, i) => ({
-        links: (i * 37) % 100,
-        verzug: ((i * 53) % 100) / 60,
-        dauer: 2.6 + ((i * 29) % 100) / 70,
-        farbe: FARBEN[i % FARBEN.length],
-        drehung: (i * 47) % 360,
-      })),
-    [],
-  )
-  return (
-    <div className="show-konfetti" aria-hidden="true">
-      {teile.map((t, i) => (
-        <span
-          key={i}
-          style={{
-            left: `${t.links}%`,
-            animationDelay: `${t.verzug}s`,
-            animationDuration: `${t.dauer}s`,
-            background: t.farbe,
-            transform: `rotate(${t.drehung}deg)`,
-          }}
-        />
-      ))}
-    </div>
-  )
-}
+/** Konfettiregen beim Sieg – gemeinsam mit dem Duell (src/components/Konfetti.tsx). */
+export { Konfetti } from '../../components/Konfetti'
