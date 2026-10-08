@@ -43,7 +43,7 @@ npm run -s entwurf:auftrag '--' .cache/entwurf/<ID>/erfassung.json
 
 ## 2. Erfassen
 
-Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig, alle mit **derselben** Modellstufe: die nächstkleinere deiner Modellfamilie (Parameter `model`; bist du auf der mittleren, behalte sie; nie automatisch die kleinste). Auftrag nur dieser Satz:
+Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
@@ -57,7 +57,7 @@ npm run -s entwurf:treffer '--' .cache/entwurf/<ID>/erfassung.json
 - **Rückfragen nur bei Skriptfehlern** (`zusammenfuehren` lehnt ein Programm ab) oder bei Hinweisen „viele Treffer, aber keine Maßnahme“, die das Skript noch meldet: eine gebündelte Rückfrage an dieses Programm, Antwort nach `protokoll/erfassung-<Name>-rueckfrage-1.txt`. Keine Rückfragen zu Inhalt oder Zuordnung – das entscheidet die Bewertung.
 - **Eigene Synonyme, neue Bündel:** in den Leitfaden übernehmen (gilt für spätere Durchgänge); keine erneute Erfassung.
 - Nach einer Rückfrage `zusammenfuehren` und `treffer` erneut; meldet der Vergleich **entfallene** Maßnahmen, die die Rückfrage nicht betraf, mit derselben Rückfrage-Datei korrigieren lassen.
-- `protokoll/rueckfragen.md`: erste Zeilen „Modell der Erfassung: …“, „Modell der Bewertung: …“, danach je Rückfrage eine Zeile `| Programm | Anlass | Ergebnis |` oder „keine“.
+- `protokoll/rueckfragen.md`: erste Zeilen „Modell der Erfassung: …“, „Modell der Bewertung: …“ (aus der Agentenbeschreibung), danach je Rückfrage eine Zeile `| Programm | Anlass | Ergebnis |` oder „keine“.
 
 ## 3. Bewerten ohne Parteinamen
 
@@ -68,7 +68,7 @@ npm run -s entwurf:bewertung-auftrag '--' .cache/entwurf/<ID>/erfassung.json
 
 Meldet `entwurf:blind` Reste über der Schwelle: Beschreibung neutral formulieren (Zitate bleiben) oder `'--schwelle' N`. Ab jetzt ist die Erfassung eingefroren.
 
-**Ein** Agent `blind-bewertung` mit deinem eigenen Modell, Auftrag = genau der Text von `protokoll/bewertung-auftrag.txt`. Danach:
+**Ein** Agent `blind-bewertung` (ohne Parameter `model`), Auftrag = genau der Text von `protokoll/bewertung-auftrag.txt`. Danach:
 
 ```bash
 npm run -s entwurf:json '--' .cache/entwurf/<ID>/protokoll/bewertung-antwort.txt .cache/entwurf/<ID>/bewertung.json
@@ -96,7 +96,7 @@ npm run -s entwurf:bericht '--' .cache/entwurf/<ID>/erfassung.json .cache/entwur
 npm run -s entwurf:archivieren '--' .cache/entwurf/<ID>/erfassung.json
 ```
 
-Commit je Thema („<Thema>: Maßnahmen aus N Programmen (KI-Entwurf)“) mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/` und `daten/protokolle/<ID>/…`. Keine weiteren Dokumente. Pull Request: je Thema zwei, drei Sätze (Programme, Maßnahmen, Instrumente, nicht erfasste Programme) und darunter `pr-daten.md` unverändert ([reference/pull-request.md](reference/pull-request.md)).
+Commit je Thema („<Thema>: Maßnahmen aus N Programmen (KI-Entwurf)“) mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/` und `daten/protokolle/<ID>/…`. Keine weiteren Dokumente. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request: je Thema zwei, drei Sätze (Programme, Maßnahmen, Instrumente, nicht erfasste Programme) und darunter `pr-daten.md` unverändert ([reference/pull-request.md](reference/pull-request.md)).
 
 ## Sonderfälle
 

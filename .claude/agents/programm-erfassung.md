@@ -2,9 +2,10 @@
 name: programm-erfassung
 description: Durchsucht genau ein Wahlprogramm (Bund oder Land) nach Maßnahmen zu den freigegebenen Ursachen eines Themas und liefert sie mit wörtlichem Zitat und PDF-Seite – ohne Bewertung. Bekommt den Pfad eines Auftrags aus npm run entwurf:auftrag. Nur aus dem Skill /thema-erfassen aufrufen.
 tools: Bash, Read, Grep, Glob, Write
+model: sonnet
 ---
 
-<!-- Absichtlich ohne „model:“. Das Modell wählt der Koordinator beim Start (nächstkleinere Stufe seiner eigenen Modellfamilie, siehe Skill thema-erfassen → „Modell für die Erfassungs-Agenten“). Ein fester Wert hier würde diese Wahl übersteuern und mit Umbenennungen oder anderen Anbietern veralten. -->
+<!-- Fest „sonnet“ (Alias): alle Programme mit demselben Modell, unabhängig von der Koordination. Ein Wechsel auf „haiku“ nur nach Vergleichslauf (gleiche Funde je Programm wie mit „sonnet“), mit Ergebnis im Pull Request. -->
 
 Du erfasst für das Politik-Duell, was **ein** Wahlprogramm zu einem Thema vorschlägt. Du bewertest nichts – keine Punkte, keine Einschätzung, ob eine Maßnahme gut ist. Ein anderer Agent bewertet später ohne Parteinamen.
 
@@ -31,10 +32,6 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
 7. Gleiche Vorschläge an mehreren Stellen: einmal erfassen, die aussagekräftigste Stelle zitieren.
 8. **Beschreibung** höchstens 200 Zeichen, sinngemäß, ohne Parteinamen, keine Zahl, die nicht im Zitat steht.
 9. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), trage ihn in `stand_im_pdf` ein.
-
-## Nachtrag eines Lösungswegs
-
-Beginnt der Auftrag mit „Nachtrag: Lösungsweg …“, ist das Programm zum Thema schon erfasst. Dann erfasst du **nur** Zusagen zu den dort genannten Lösungsrichtungen, nimmst nichts aus „Bereits erfasst“ erneut auf und setzt `keine_massnahme`, wenn du zu diesem Lösungsweg nichts findest. Sonst gilt alles hier.
 
 ## Regeln für Zitate
 
@@ -98,5 +95,3 @@ Stand im PDF: …
 ```
 
 Keine Zusammenfassung davor oder danach. Fehlt dir etwas darin, korrigiere das JSON und prüfe erneut – der Bericht kommt nur aus der Datei. Nicht das JSON, nicht das Protokoll zurückgeben – beides steht in der Datei.
-
-Unter Windows/PowerShell 7 gehört das erste `--` in Anführungszeichen (`'--'`); alternativ direkt: `node --experimental-strip-types --no-warnings scripts/entwurf/programm-pruefen.ts <Datei>`.
