@@ -102,6 +102,9 @@ type Modus =
 
 export function Quiz() {
   const hash = useHash()
+  // Schon beim Öffnen, nicht erst mit der fertigen Startseite: Das erste Tippen startet die Musik auch, wenn die
+  // Fragen noch laden.
+  useStartmelodie()
   const einladung = einladungAus(hash)
   const [daten, setDaten] = useState<QuizDaten | null>(null)
   const [ladeFehler, setLadeFehler] = useState<string | null>(null)
@@ -257,7 +260,6 @@ function QuizStart({
   const ziel = raumAusEingabe(eingabe)
   const leer = daten.fragen.length === 0
   const titel = useAnsicht('Programm-Quiz')
-  useStartmelodie()
   const auftritt = useErstesMal('quiz')
 
   return (

@@ -30,19 +30,46 @@ function holen(datei: string): Promise<ArrayBuffer | null> {
   return p
 }
 
+// Startmusik als gestreamtes <audio>: Sie spielt, sobald die ersten Sekunden da sind, statt auf das Herunterladen
+// und Dekodieren der ganzen Datei zu warten. Der Dateiname ist fest (npm run quiz:stimmen), so kann das Element
+// schon vor dem Manifest puffern. Klappt es nicht (Datei fehlt, Safari aus dem Service-Worker-Cache), spielt die
+// Startmelodie wie bisher über die Web-Audio-API.
+const STARTMUSIK_DATEI = 'klang-startmusik.mp3'
+let musik: HTMLAudioElement | null = null
+let musikGeht = true
+let musikBereit: Promise<void> = Promise.resolve()
+
+function startmusikVorladen() {
+  if (musik || typeof Audio === 'undefined') return
+  const el = new Audio(`${BASIS}${STARTMUSIK_DATEI}`)
+  el.preload = 'auto'
+  el.muted = !tonAn
+  el.addEventListener('ended', () => (melodieLaeuft = false))
+  el.addEventListener('error', () => (musikGeht = false))
+  musikBereit = new Promise((ok) => {
+    for (const art of ['canplaythrough', 'error'] as const) el.addEventListener(art, () => ok(), { once: true })
+    setTimeout(ok, 4000)
+  })
+  musik = el
+}
+
 /**
- * Lädt das Manifest (Dauer und Wortzeiten) und gleich alle Aufnahmen und Geräusche (ca. 3 MB) – sonst käme der
- * Ton erst Sekunden nach dem Start. Ohne Manifest gibt es nur Untertitel mit geschätzter Dauer.
+ * Lädt das Manifest (Dauer und Wortzeiten) und alle Aufnahmen und Geräusche (ca. 3 MB) – sonst käme der Ton erst
+ * Sekunden nach dem Start. Die Startmusik puffert zuerst, der Rest folgt, wenn sie spielbereit ist (höchstens 4 s),
+ * damit sie nicht mit dem ganzen Show-Ton um die Leitung konkurriert. Ohne Manifest gibt es nur Untertitel.
  */
 export async function ladeShow(): Promise<void> {
+  startmusikVorladen()
   try {
     const r = await fetch(`${BASIS}manifest.json`)
     if (r.ok && r.headers.get('content-type')?.includes('json')) manifest = (await r.json()) as ShowManifest
   } catch {
     manifest = null
   }
-  // Geräusche zuerst, sie kommen in jeder Runde.
-  for (const d of alleDateien()) void holen(d)
+  // Nicht abwarten: Die Startseite erscheint sofort, der übrige Ton lädt im Hintergrund nach.
+  void musikBereit.then(() => {
+    for (const d of alleDateien()) void holen(d)
+  })
 }
 
 type AudioNavigator = Navigator & { audioSession?: { type: string } }
@@ -134,17 +161,35 @@ let melodieLaeuft = false
 let melodie: { lautstaerke: GainNode; quellen: AudioBufferSourceNode[] } | null = null
 
 /**
- * Startmelodie: die Startmusik oder – ohne sie – Beat mit Sprechchor beider Moderatoren. Muss in einer Nutzeraktion starten (ruft entsperren auf);
- * wartet kurz, bis die Dateien dekodiert sind, und plant dann alles auf der Uhr des AudioContext – so sitzt der Chor
- * auf dem Beat. Spielt nicht doppelt, wenn sie schon läuft.
+ * Startmelodie: die Startmusik, gestreamt (spielt sofort, ohne auf die ganze Datei zu warten), oder – geht das nicht –
+ * über die Web-Audio-API die Startmusik bzw. Beat mit Sprechchor beider Moderatoren: wartet dann kurz, bis die Dateien
+ * dekodiert sind, und plant alles auf der Uhr des AudioContext, damit der Chor auf dem Beat sitzt. Muss in einer
+ * Nutzeraktion starten (ruft entsperren auf). Spielt nicht doppelt, wenn sie schon läuft.
  */
 export async function startmelodie() {
   entsperren()
+  if (!tonAn || melodieLaeuft) return
+  // Gestreamte Startmusik: play() noch in der Nutzeraktion, vor dem ersten await (sonst sperrt Safari).
+  if (musik && musikGeht) {
+    melodieLaeuft = true
+    musik.currentTime = 0
+    musik.volume = 1
+    musik.muted = false
+    try {
+      await musik.play()
+      return
+    } catch (e) {
+      melodieLaeuft = false
+      // Gesperrt (keine Nutzeraktion): später über „Ton an“. Sonst geht das Streamen nicht – Web-Audio versuchen.
+      if (e instanceof DOMException && e.name === 'NotAllowedError') return
+      musikGeht = false
+    }
+  }
   if (!ctx || !manifest || !tonAn || melodieLaeuft) return
   // Bevorzugt die Startmusik (Music-API); sonst Beat mit Sprechchor.
-  const musik = manifest.geraeusche.startmusik?.datei
-  const beat = musik ?? manifest.geraeusche.startbeat?.datei
-  const stimmen = musik ? [] : CHOR.map((c) => manifest!.clips[c.id]?.datei)
+  const musikDatei = manifest.geraeusche.startmusik?.datei
+  const beat = musikDatei ?? manifest.geraeusche.startbeat?.datei
+  const stimmen = musikDatei ? [] : CHOR.map((c) => manifest!.clips[c.id]?.datei)
   if (!beat) return
   melodieLaeuft = true
   const bereit = await Promise.race([
@@ -171,6 +216,22 @@ export async function startmelodie() {
 /** Startmelodie sanft ausblenden – etwa wenn das Spiel beginnt und die Show ihren eigenen Jingle spielt. */
 export function melodieStoppen() {
   melodieLaeuft = false
+  if (musik && !musik.paused) {
+    // Ausblenden in einer halben Sekunde (auf iPhone/iPad ist die Lautstärke fest – dort endet sie nach 0,5 s).
+    const el = musik
+    const beginn = performance.now()
+    const schritt = () => {
+      const t = (performance.now() - beginn) / 500
+      if (t >= 1) {
+        el.pause()
+        el.volume = 1
+        return
+      }
+      el.volume = 1 - t
+      requestAnimationFrame(schritt)
+    }
+    requestAnimationFrame(schritt)
+  }
   if (!melodie || !ctx) return
   const { lautstaerke, quellen } = melodie
   lautstaerke.gain.setTargetAtTime(0, ctx.currentTime, 0.12)
@@ -262,6 +323,7 @@ const tonHoerer = new Set<() => void>()
 export function setzeTon(an: boolean) {
   tonAn = an
   if (laut && ctx) laut.gain.setTargetAtTime(an ? 1 : 0, ctx.currentTime, 0.02)
+  if (musik) musik.muted = !an
   tonHoerer.forEach((h) => h())
 }
 export const tonIstAn = () => tonAn
