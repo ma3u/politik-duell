@@ -34,35 +34,39 @@
   "positionen": [
     {
       "partei_id": 11,
-      "position": "keine_aussage",
-      "begruendung": "Kapitel zu Gesundheit und Ernährung (S. 69–71) durchsucht; Suchbegriffe 'zuckersteuer', 'zuckerabgabe', 'zuckerhaltige getränke', 'gezuckerte getränke', 'limonadensteuer' nicht gefunden. Keine Aussage zur Steuer auf gezuckerte Getränke vorhanden.",
-      "stand": "2026-10-05",
+      "position": "nein",
+      "kurzfassung": "Setzt auf Ernährungsbildung und Information statt auf Lenkungssteuern und Werbeverbote.",
+      "zitat": "Wir setzen auf Ernährungsbildung und gute Information, aber nicht auf unwirksame Werbeverbote oder Lenkungssteuern.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=37",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 12,
       "position": "ja",
-      "kurzfassung": "Will verbindliche Reduktionsziele und eine Herstellerabgabe für zuckerhaltige Getränke.",
+      "kurzfassung": "Will eine Herstellerabgabe für zuckerhaltige Getränke und verbindliche Reduktionsziele für Zucker, Salz und Fett.",
       "zitat": "Um den Zucker-, Salz- und Fettgehalt in unseren Lebensmitteln zu reduzieren, legen wir verbindliche Ziele fest und setzen ökonomische Anreize für weniger gesundheitsschädliche Produkte – über eine Herstellerabgabe für zuckerhaltige Getränke.",
       "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=28",
-      "stand": "2026-10-05",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 13,
       "position": "keine_aussage",
-      "begruendung": "Fundstelle S. 60 äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: Nennt wirksame Maßnahmen, aber weder Steuer noch Ablehnung.",
-      "stand": "2026-10-05",
+      "begruendung": "Kapitel Gesundheit/Ernährung (S. 60) gelesen, Suche nach Zucker, Softdrink, Abgabe, Herstellerabgabe, Steuer, Ernährung: nur 'wirksame Maßnahmen zum Senken des Zuckergehalts von Softdrinks' und Bürgerrat-Empfehlungen, weder Steuer noch Abgabe noch Ablehnung genannt.",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 14,
-      "position": "keine_aussage",
-      "begruendung": "Kapitel Gesundheit/Prävention (S. 33-34) und Nachhaltigkeit/Klima (S. 39-40) gelesen: allgemeine Aussagen zu Prävention und digitalen Gesundheitsangeboten, aber nichts zur Zuckersteuer oder Getränkeabgabe.",
-      "stand": "2026-10-05",
+      "position": "nein",
+      "kurzfassung": "Lehnt neue Lenkungsabgaben, etwa auf Zucker, und Eingriffe in Rezepturen ab.",
+      "zitat": "Eingriffe in Rezepturen lehnen wir ab, ebenso neue Lenkungsabgaben z. B. auf Zucker.",
+      "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=46",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
@@ -70,37 +74,35 @@
       "partei_id": 15,
       "position": "nein",
       "kurzfassung": "Lehnt jede gesonderte Lebensmittelbesteuerung ab, auch eine Zuckersteuer.",
-      "zitat": "Die AfD unterstützt das Leitbild des mündigen Bürgers. Er soll in seinem Konsumverhalten nicht staatlich bevormundet werden. Deshalb lehnen wir jede Form der gesonderten Lebensmittelbesteuerung ab, wie z. B. eine Fleisch- oder Zuckersteuer.",
+      "zitat": "Deshalb lehnen wir jede Form der gesonderten Lebensmittelbesteuerung ab, wie z. B. eine Fleisch- oder Zuckersteuer.",
       "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=75",
-      "stand": "2026-10-05",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 16,
-      "position": "teils",
-      "kurzfassung": "Will den Zuckergehalt in Softdrinks regeln und begrenzen, ohne Verbraucher zu belasten.",
-      "zitat": "Der Zuckergehalt insbesondere in Softdrinks muss geregelt und begrenzt werden, ohne die Verbraucher*innen zu belasten.",
-      "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=42",
-      "stand": "2026-10-05",
+      "position": "keine_aussage",
+      "begruendung": "Ernährungsabschnitt (S. 6, 42) gelesen; Suche nach Zucker, Softdrink, Getränke, Steuer auf, Abgabe: nur Begrenzung des Zuckergehalts in Softdrinks ohne Steuer oder Abgabe (S. 42), Zuckerfest (S. 50) irrelevant.",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 17,
       "position": "keine_aussage",
-      "begruendung": "Ernährungspolitik und Gesundheit durchsucht (Grep nach Zuckersteuer, Zuckerabgabe, gezuckerte Getränke, Softdrink, Limonadensteuer): keine Treffer. BSW behandelt Gesundheit (S. 26–27), Ernährung wird nicht spezifisch erwähnt.",
-      "stand": "2026-10-05",
+      "begruendung": "Ernährungsabschnitt (S. 33) gelesen; Suche nach Zucker, Getränk, Softdrink, Abgabe: nichts zu einer Zuckersteuer.",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 18,
       "position": "ja",
-      "kurzfassung": "Will eine Lenkungssteuer auf Zucker und Süßungsmittel: 25 Cent auf alkoholfreie Getränke mit mehr als 3 g Zucker pro 100 ml.",
-      "zitat": "Einführung einer gesundheitspolitisch motivierten Steuer auf Zucker, Zuckerersatzstoffe und Süßungsmittel als besondere Verbrauchs- und Lenkungssteuer. […] Die Steuer beträgt 25 Cent auf alkoholfreie Getränke mit mehr als 3 g Zucker pro 100 ml, einschließlich Light- und Zero-Produkte sowie Energydrinks.",
+      "kurzfassung": "Will eine Lenkungssteuer auf Zucker und Süßungsmittel, 25 Cent auf alkoholfreie Getränke mit mehr als 3 g Zucker pro 100 ml.",
+      "zitat": "Steuer auf Zuckerprodukte: Einführung einer gesundheitspolitisch motivierten Steuer auf Zucker, Zuckerersatzstoffe und Süßungsmittel als besondere Verbrauchs- und Lenkungssteuer. […] Die Steuer beträgt 25 Cent auf alkoholfreie Getränke mit mehr als 3 g Zucker pro 100 ml, einschließlich Light- und Zero-Produkte sowie Energydrinks.",
       "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=131",
-      "stand": "2026-10-07",
+      "stand": "2026-10-08",
       "geprueft": false,
       "ki_entwurf": true
     }

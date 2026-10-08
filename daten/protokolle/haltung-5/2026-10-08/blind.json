@@ -1,0 +1,41 @@
+{
+  "haltung_id": 5,
+  "frage": "Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben?",
+  "beschreibung": "Ob Deutschland die Kernenergie zur Stromerzeugung wieder nutzen soll, also neue Anlagen bauen oder stillgelegte reaktivieren, oder ob es beim Atomausstieg bleibt.",
+  "einordnung": {
+    "ja": "Will Atomkraftwerke in Deutschland wieder betreiben, etwa durch Reaktivierung stillgelegter Anlagen, Laufzeitverlängerung oder Neubau, und ändert dafür den Atomausstieg.",
+    "teils": "Will die Kernenergie nur eingeschränkt oder unter Bedingungen öffnen, zum Beispiel Forschung, neue Reaktortypen oder eine spätere Prüfung, ohne den Ausstieg klar aufzuheben.",
+    "nein": "Hält am Atomausstieg fest oder lehnt die Kernenergie zur Stromerzeugung in Deutschland ab."
+  },
+  "eintraege": [
+    {
+      "kennung": "H1",
+      "zitat": "Neben dem kurzfristig notwendigen Ausbau von Kohlekraftwerken planen wir den Wiedereinstieg in die Kernenergie. Dabei sollen bestehende Konzepte wieder aufgegriffen und neue Entwicklungen berücksichtigt werden. Bestehende Kraftwerke sollen so schnell wie möglich wieder in Betrieb genommen werden."
+    },
+    {
+      "kennung": "H2",
+      "zitat": "Den Neubau konventioneller Atomkraftwerke lehnen wir ab. Dasselbe gilt derzeit für Mini-Kraftwerke (SMR), deren Betrieb bis zu 30-mal mehr radioaktive Abfälle erzeugt als konventionelle Reaktoren."
+    },
+    {
+      "kennung": "H3",
+      "zitat": "Eine Rückkehr zur Hochrisikotechnologie Atomkraft ist weder für das Erreichen der Klimaziele noch für die Versorgungssicherheit notwendig und für uns aufgrund der ungeklärten Endlagerfrage, der Kosten und der Gefahr der Verbreitung von atomwaffenfähigem Material […]"
+    },
+    {
+      "kennung": "H4",
+      "zitat": "Dabei setzen wir auf die Forschung zu Kernenergie der vierten und fünften Generation, Small Modular Reactors und Fusionskraftwerken. Gleichzeitig streben wir schnellstmöglich eine fachliche Bestandsaufnahme an, ob angesichts des jeweiligen Rückbaustadiums eine Wiederaufnahme des Betriebs der zuletzt abgeschalteten Kernkraftwerke unter vertretbarem technischem und finanziellem Aufwand noch möglich ist."
+    },
+    {
+      "kennung": "H5",
+      "zitat": "Kein Rollback, sondern Atomausstieg sofort: Wir wollen den Ausstieg aus der Atomkraft im Grundgesetz festschreiben und die Fertigung von Uranbrennstoff in den Atomfabriken in Gronau und Lingen beenden."
+    },
+    {
+      "kennung": "H6",
+      "zitat": "Unser Ziel ist, dass Kernkraftwerke der neuen Generation, etwa Dual-Fluid-Reaktoren, Thorium-Flüssigsalzreaktoren oder Small Modular Reactors in Deutschland rechtssicher gebaut werden können. [...] Wir wollen die Wiederinbetriebnahme der vorhandenen Kernkraftwerke rechtlich ermöglichen und die Entscheidung darüber den Betreibern überlassen."
+    },
+    {
+      "kennung": "H7",
+      "zitat": "Die Atomkraft in Deutschland ist stillgelegt und das ist gut so. Jetzt braucht es die sichere Endlagerung der radioaktiven Stoffe."
+    }
+  ],
+  "pruefsumme": "6447a24565e5bcdd"
+}

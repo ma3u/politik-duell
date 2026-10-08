@@ -272,3 +272,38 @@ Für die Prüfung vormerken: Windkraft (4) und Euro (19) als „keine Aussage“
 | 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | Ja (S. 142) |
 | 32 | Soll Deutschland seine Verteidigungsausgaben erhöhen? | Ja (S. 41) |
 | 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | keine Aussage |
+
+## Neuerfassung der Quiz-Haltungen (8. 10. 2026)
+
+Anlass: Im Quiz standen viele „keine Aussage“ (45 von 192 Positionen), oft weil die Fundstelle nur das Thema berührte (etwa der digitale Euro statt des Verbleibs im Euro). Vorgehen, für alle Programme gleich:
+
+- Anleitung `haltung-erfassung` geschärft: vor dem Speichern prüfen, ob die Passage allein nach dem Maßstab Ja/Teils/Nein trägt; Formen aus dem Maßstab (etwa „erhalten oder vertiefen“) zählen.
+- Suchbegriffe ergänzt (4, 9, 13, 15, 20, 32), „euro“ (traf Europa und Geldbeträge) und „bündnis“ (traf die Parteinamen „Bündnis 90/Die Grünen“ und „Bündnis Sahra Wagenknecht“) ersetzt.
+- Programmtext: doppelt gezeichneter Fettdruck wird zusammengeführt (im Unionsprogramm 902 verschränkte Zeilen, dort fand die Suche etwa „Schuldenbremse“ nicht).
+- Erfassung in Runden zu je vier Haltungen statt aller auf einmal; danach eine Nachprüfung jeder „keine Aussage“ mit gleichem Hinweis für alle; Einordnung ohne Parteinamen wie bisher. Haltungen 1 und 2 haben geprüfte Positionen und blieben unverändert.
+- Ergebnis: 29 statt 45 Positionen ohne Aussage (KI-Entwurf, Einordnung ohne Parteinamen, 8. 10. 2026). Rest der Blindliste: Haltung 26 „fraktionsübergreifend“ (kein Parteiname, Hinweis auf einen Gruppenantrag).
+
+| Haltung | Union | SPD | Grüne | FDP | AfD | Linke | BSW | Volt |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4 Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben? | ja S. 21 | ja S. 34 | ja S. 41 | teils S. 18 | nein S. 81 | ja S. 33 | teils S. 11 | ja S. 66 |
+| 5 Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben? | teils S. 22 | nein S. 53 | nein S. 43 | ja S. 18 | ja S. 42 | nein S. 33 | nein S. 11 | – |
+| 7 Soll Deutschland die Ukraine weiter mit Waffen beliefern? | ja S. 47 | ja S. 58 | ja S. 142 | ja S. 47 | – | nein S. 23 | nein S. 7 | ja S. 45 |
+| 8 Soll der gemeinsame Unterricht von Kindern mit und ohne Behinderung an Regelschulen Vorrang vor Förderschulen haben? | nein S. 62 | – | ja S. 77 | teils S. 25 | nein S. 161 | ja S. 54 | – | ja S. 112 |
+| 9 Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden? | ja S. 36 | – | nein S. 59 | teils S. 45 | ja S. 76 | – | – | nein S. 77 |
+| 10 Soll eine Vermögensteuer eingeführt werden? | nein S. 34 | ja S. 19 | ja S. 73 | nein S. 14 | nein S. 61 | ja S. 10 | ja S. 17 | ja S. 100 |
+| 11 Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben? | ja S. 52 | nein S. 58 | nein S. 154 | nein S. 48 | ja S. 89 | nein S. 23 | nein S. 6 | – |
+| 12 Soll es einen gesetzlichen Mindestlohn geben? | ja S. 5 | ja S. 23 | ja S. 67 | teils S. 18 | – | ja S. 45 | ja S. 21 | ja S. 89 |
+| 13 Soll die Schuldenbremse im Grundgesetz bestehen bleiben? | ja S. 77 | teils S. 17 | teils S. 36 | ja S. 35 | ja S. 55 | nein S. 13 | teils S. 15 | teils S. 22 |
+| 14 Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden? | nein S. 5 | nein S. 25 | teils S. 98 | teils S. 21 | teils S. 19 | nein S. 15 | nein S. 23 | ja S. 92 |
+| 15 Soll es eine Steuer auf stark gezuckerte Getränke geben? | nein S. 37 | ja S. 28 | – | nein S. 46 | nein S. 75 | – | – | ja S. 131 |
+| 16 Soll Deutschland Mitglied der NATO bleiben? | ja S. 52 | ja S. 57 | ja S. 152 | ja S. 48 | teils S. 88 | teils S. 22 | teils S. 5 | teils S. 40 |
+| 18 Soll Deutschland wieder Erdgas aus Russland beziehen? | – | nein S. 4 | – | nein S. 49 | ja S. 93 | – | ja S. 10 | – |
+| 19 Soll Deutschland den Euro als Währung behalten? | ja S. 78 | ja S. 18 | – | ja S. 36 | nein S. 63 | – | – | – |
+| 20 Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | – | – | teils S. 60 | – | nein S. 81 | – | teils S. 20 | – |
+| 21 Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | nein S. 43 | teils S. 54 | teils S. 127 | teils S. 28 | nein S. 108 | ja S. 53 | – | ja S. 139 |
+| 24 Soll Deutschland Mitglied der EU bleiben? | ja S. 54 | ja S. 60 | ja S. 144 | ja S. 51 | nein S. 141 | ja S. 24 | ja S. 8 | ja S. 9 |
+| 25 Soll die Erbschaftsteuer abgeschafft werden? | nein S. 34 | nein S. 19 | nein S. 73 | nein S. 15 | ja S. 61 | nein S. 11 | nein S. 17 | nein S. 100 |
+| 26 Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | nein S. 64 | ja S. 48 | ja S. 120 | teils S. 29 | nein S. 150 | ja S. 46 | teils S. 34 | ja S. 153 |
+| 31 Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | teils S. 45 | ja S. 41 | ja S. 109 | teils S. 26 | teils S. 56 | ja S. 51 | nein S. 39 | ja S. 142 |
+| 32 Soll Deutschland seine Verteidigungsausgaben erhöhen? | ja S. 52 | ja S. 57 | ja S. 152 | ja S. 48 | – | nein S. 23 | nein S. 6 | ja S. 41 |
+| 33 Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | ja S. 31 | ja S. 14 | – | ja S. 19 | ja S. 25 | nein S. 15 | ja S. 22 | – |

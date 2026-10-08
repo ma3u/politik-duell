@@ -102,7 +102,8 @@ describe('Prüfseiten', () => {
 
   it('das Blindblatt verrät weder Partei noch Einordnung des Entwurfs noch Kurzfassung', () => {
     const html = blindesBlatt(katalog)
-    for (const n of namen) expect(html, n).not.toContain(n)
+    // Wie bei den Zitaten: „Europäische Union“ ist kein Parteiname (ersetzeNamen in entwurf.ts).
+    for (const n of namen) expect(enthaeltParteinamen(html.replace(/<[^>]*>/g, ' '), [n]), n).toBe(false)
     for (const p of mitZitat) expect(html).not.toContain(p.kurzfassung!)
     for (const z of zitate) expect(html).toContain(`"r-${z.kennung}"`)
     expect(html).not.toMatch(/partei_id|ki_entwurf|beleg_programm_url|#page=/)
