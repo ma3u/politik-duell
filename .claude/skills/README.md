@@ -50,9 +50,11 @@ flowchart TD
 
 - Skripte statt Agenten, wo es geht (zählen, Fundstellen, Zitate, Zusammenführen, Bericht).
 - Keine inhaltlichen Rückfragen, keine Nachrecherche der Koordination, eine Runde für die Suchbegriffe.
-- Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf, Erfassung mit der nächstkleineren Modellstufe.
+- Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf.
+- Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und kann deshalb mit `sonnet` laufen, ohne dass sich Urteile ändern.
+- Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
 - Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.
-- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen.
+- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen – ein Block je Aufruf, mit `/clear` dazwischen.
 - Keine Dokumentpflege außer dem Abschnitt in `docs/perspektiven-ursachen.md` bzw. `docs/haltungen.md`; der Rest steht in Protokoll und Pull Request.
 
 ## Grundlage

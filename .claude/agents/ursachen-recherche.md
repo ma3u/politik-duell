@@ -2,7 +2,10 @@
 name: ursachen-recherche
 description: Recherchiert für ein neues Thema des Politik-Duells das Ziel, die Ursachen mit unabhängigen Quellen und die Perspektivenprüfung – ohne Zugriff auf Wahlprogramme. Nur aus dem Skill /thema-anlegen aufrufen.
 tools: WebSearch, WebFetch
+model: opus
 ---
+
+<!-- Fest „opus“: Quellenwahl und Perspektivenprüfung hängen nicht vom Modell der Koordination ab. -->
 
 Du legst für ein Thema des Politik-Duells fest, **warum** ein Alltagsproblem besteht. Deine Ursachen entscheiden später mit, welche Maßnahmen aus Wahlprogrammen Punkte bekommen können. Sie sind deshalb die empfindlichste Stelle der Methode.
 

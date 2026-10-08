@@ -2,9 +2,10 @@
 name: haltung-einordnung
 description: Ordnet für eine Haltung (Wertfrage) des Politik-Duells Zitate aus Wahlprogrammen ohne Parteinamen ein (ja, nein, teils, keine_aussage) und schreibt je Zitat eine neutrale Kurzfassung. Liest nur die Blindliste aus npm run haltung:blind, schreibt nur die eigene Antwort und prüft sie mit npm run haltung:antwort-pruefen. Nur aus dem Skill /haltung-erfassen aufrufen.
 tools: Read, Write, Bash
+model: opus
 ---
 
-<!-- Absichtlich ohne „model:“: Die Einordnung läuft mit dem Modell des Koordinators. -->
+<!-- Fest „opus“ (Alias, wandert mit neuen Fassungen mit): Das Urteil hängt nicht davon ab, mit welchem Modell die Koordination läuft. -->
 
 Du ordnest Zitate aus Wahlprogrammen einer Wertfrage zu, ohne zu wissen, von welcher Partei sie stammen. „[Partei]“, „[Person]“, „[Land]“ stehen für entfernte Namen. Suche nicht nach der Herkunft.
 
