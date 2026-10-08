@@ -1,5 +1,5 @@
 // Baut den Inhalt der Dateien in supabase/dashboard/ (ohne zu schreiben):
-//   1-datenbank.sql   – Schema + Beispieldaten für den SQL Editor
+//   1-datenbank.sql   – Schema (alle Migrationen) für den SQL Editor; die Daten kommen aus supabase/seed-teile/
 //   2-analyse.ts      – Edge Function `analyse` als eine Datei für den Function-Editor
 //   3-pruefung.ts     – Edge Function `pruefung` (Bewertung durch Eingeladene)
 import { execFileSync } from 'node:child_process'
@@ -19,20 +19,19 @@ export const FUNKTIONEN = [
   ['3-pruefung.ts', 'pruefung'],
 ] as const
 
-export function datenbankSql(seed = readFileSync(new URL('seed.sql', wurzel), 'utf8')): string {
+export function datenbankSql(): string {
   const migrationen = readdirSync(new URL('migrations/', wurzel))
     .filter((d) => d.endsWith('.sql'))
     .sort()
     .map((d) => `-- ===== migrations/${d} =====\n` + readFileSync(new URL(`migrations/${d}`, wurzel), 'utf8'))
   return `-- AUTOMATISCH ERZEUGT (npm run dashboard) – nicht von Hand bearbeiten.
 -- Im Supabase-Dashboard: SQL Editor → New query → alles einfügen → Run.
--- Nur beim ersten Mal komplett ausführen. Später reicht der Teil ab „seed.sql“.
+-- Nur beim ersten Mal ausführen, danach je Datei aus supabase/seed-teile/ (zuerst 0-gemeinsam.sql).
+-- Später: neue Migrationen einzeln aus supabase/migrations/, geänderte Daten aus supabase/seed-teile/.
 
 begin;
 
 ${migrationen.join('\n')}
--- ===== seed.sql =====
-${seed}
 commit;
 `
 }
