@@ -30,6 +30,7 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
 6. **Bündel.** Ein Bündel begrenzt die *Erfassung*: je Programm und Bündel höchstens **eine** Maßnahme, und nur für **gleichartige** Einzelzusagen (dasselbe Instrument, mehrfach im Programm). Es ist kein Instrument der Bewertung – ob zwei Maßnahmen gleich bewertet werden, entscheidet später die Bewertung. Nennt der Auftrag Bündel für eine Ursache, setze `buendel` (Name genau wie im Auftrag) und nimm die konkreteste Stelle (Zusage, Zahl oder Frist) – nicht die, die du für die beste hältst. Die Richtung steht in der Beschreibung: „CO₂-Preis erhöhen“ und „CO₂-Preis abschaffen“ gehören beide zu „CO₂-Bepreisung und Emissionshandel“. Weitere gleichartige Stellen zum selben Bündel nennst du im Protokoll.
    **Gleichartig oder verschieden – der Hebel entscheidet,** nicht der Bereich. Gleichartig sind Stellen mit demselben Hebel, die sich nur in Umfang, Frist, Zielgruppe oder Richtung unterscheiden (Förderung für Wärmepumpen und für Wärmenetze; CO₂-Preis erhöhen und abschaffen). Verschieden ist ein anderer Hebel, auch im selben Bereich: Ge- oder Verbot, Preis oder Abgabe, Förderung, öffentliche Investition, Planung oder Beteiligung (Tempolimit, Kaufprämie und Ladeinfrastruktur sind drei Hebel im Bereich Verkehr). Benennt ein Bündel einen Bereich, gehört die konkreteste Stelle dazu; jede Zusage mit anderem Hebel ist verschieden.
    **Verschiedene Zusagen fasst du nie zusammen und lässt sie nie weg**, auch nicht, weil das passende Bündel schon belegt ist (etwa „mehr Stellen“ und „bessere Bezahlung“ in einem Bündel „Personal“). Die zweite trägst du ohne `buendel` ein und meldest ihren Hebel unter `neue_buendel` (Name = Hebel, etwa „Tempolimit“; die Koordination ergänzt den Leitfaden für alle Programme). Alle Fundstellen und passenden Kapitel liest du vollständig – Auslassen aus Zeitgründen gibt es nicht.
+   **Hebel-Checkliste:** Nennt der Auftrag eine, beantwortest du jeden Hebel – mit einer Maßnahme (`buendel` = Hebel) oder unter `hebel_nicht_gefunden`. **Gekoppelte Ursachen** (im Auftrag) nennst du immer zusammen.
 7. Gleiche Vorschläge an mehreren Stellen: einmal erfassen, die aussagekräftigste Stelle zitieren.
 8. **Beschreibung** höchstens 200 Zeichen, sinngemäß, ohne Parteinamen, keine Zahl, die nicht im Zitat steht.
 9. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), trage ihn in `stand_im_pdf` ein.
@@ -70,7 +71,8 @@ Weitere Angaben im JSON (nur wenn zutreffend; das Skript prüft sie und gibt sie
 - `"nicht_erfasst": [{ "ursache": 909, "seiten": [35, 66], "grund": "…" }]` – Ursache ohne Maßnahme: gelesene Fundstellen (PDF-Seiten) und warum nichts passt. **Pflicht** für jede Pflichtursache des Auftrags ohne Maßnahme, sonst lehnt die Prüfung ab; für andere Ursachen ohne Maßnahme, wenn du Fundstellen gelesen hast;
 - `"neue_buendel": [{ "ursache": 905, "name": "…", "seite": 33 }]` – eigenes Instrument, das in keinem Bündel des Auftrags steht;
 - `"eigene_synonyme": [{ "begriff": "rückführ", "ursache": 905, "richtung": "…" }]` – Begriffe, die im Programm für eine Richtung stehen und in der Suche fehlen;
-- `"stand_im_pdf": "…"` – nur wenn das PDF einen anderen Stand nennt als der Auftrag.
+- `"stand_im_pdf": "…"` – nur wenn das PDF einen anderen Stand nennt als der Auftrag;
+- `"hebel_nicht_gefunden": [{ "ursache": 1801, "hebel": "Tempolimit", "seiten": [36, 37], "grund": "…" }]` – **Pflicht** für jeden Hebel der Checkliste ohne Maßnahme: gelesene Seiten (Kapitel, Fundstellen) und warum nichts passt.
 
 **Protokoll** (unter dem JSON, kurz): gelesene Seiten und Kapitel; „Nicht erfasst“ mit Seite und Grund für Stellen, die du gelesen und nicht aufgenommen hast (Ursachen ohne Maßnahme stehen schon in `nicht_erfasst`); Richtungen ohne Maßnahme; Seiten ohne Text, falls sie eine Rolle spielten.
 
@@ -92,6 +94,7 @@ Grenzfälle: …
 Neue Bündel: …
 Eigene Synonyme: …
 Nicht erfasst: …
+Hebel ohne Fund: … (nur mit Checkliste)
 Stand im PDF: …
 ```
 

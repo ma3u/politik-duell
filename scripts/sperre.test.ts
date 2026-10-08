@@ -25,7 +25,7 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
       expect(web(url)).toBeNull()
   })
 
-  it('sperrt in Phase A Lesezugriffe auf .cache/ und Programm-Werkzeuge', () => {
+  it('sperrt in Phase A Lesezugriffe auf .cache/, daten/protokolle/ und Programm-Werkzeuge', () => {
     const p = (tool_name: string, tool_input: Record<string, string>, phaseA = true) => pruefe({ tool_name, tool_input }, kontext(phaseA))
     expect(p('Read', { file_path: '/repo/.cache/entwurf/17/texte/SPD-Bund.txt' })).toMatch(/Phase A/)
     expect(p('Grep', { pattern: 'Kita', path: '.cache/texte' })).toMatch(/Phase A/)
@@ -35,6 +35,11 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     expect(p('Bash', { command: 'npm run phase-a -- ende' })).toBeNull()
     expect(p('Bash', { command: 'npm run -s quelle:text -- https://www.dji.de/x.pdf --suche Kita' })).toBeNull()
     expect(p('Read', { file_path: '/repo/daten/README.md' })).toBeNull()
+    expect(p('Read', { file_path: '/repo/daten/protokolle/18/2026-10-04-bund/erfassung.json' })).toMatch(/daten\/protokolle/)
+    expect(p('Grep', { pattern: 'Tempolimit', path: 'daten/protokolle' })).toMatch(/daten\/protokolle/)
+    expect(p('Bash', { command: 'cat daten/protokolle/18/2026-10-04-bund/protokoll/erfassung-SPD-Bund.txt' })).toMatch(/daten\/protokolle/)
+    expect(p('Read', { file_path: '/repo/daten/leitfaeden/18.json' })).toBeNull()
+    expect(p('Read', { file_path: '/repo/daten/protokolle/18/x.json' }, false)).toBeNull()
     expect(p('Read', { file_path: '/repo/.cache/entwurf/17/texte/SPD-Bund.txt' }, false)).toBeNull()
   })
 

@@ -4,7 +4,8 @@
 // 1. WebFetch auf Partei-, Fraktions- und Stiftungsserver, die Server aller Programme aus
 //    daten/parteien.json und das Repository auf GitHub ist immer gesperrt (Liste: daten/gesperrte-adressen.json).
 // 2. Phase A (Ursachen festlegen, /thema-anlegen): Solange .cache/phase-a besteht, sind Lesezugriffe auf
-//    .cache/ (Programmtexte, Erfassungen) und die Programm-Werkzeuge gesperrt. Start und Ende:
+//    .cache/ (Programmtexte, Erfassungen), daten/protokolle/ (Programmstellen früherer Erfassungen) und die
+//    Programm-Werkzeuge gesperrt. Start und Ende:
 //    npm run phase-a -- start "<Thema>" bzw. npm run phase-a -- ende
 // 3. Agent blind-bewertung (erkannt an agent_type in der Hook-Eingabe, die Claude Code bei jedem
 //    Werkzeugaufruf eines Subagenten mitschickt): Read nur genau .cache/entwurf/<ID>/blind.json und die
@@ -102,10 +103,14 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
   const texte = [e.file_path, e.path, e.pattern, e.glob].filter((x) => typeof x === 'string')
   if (['Read', 'Grep', 'Glob', 'NotebookRead'].includes(werkzeug) && texte.some((t) => cache.test(t) || t.includes('/.cache/') || t.startsWith('.cache')))
     return 'Phase A (Ursachen festlegen): kein Zugriff auf .cache/ – dort liegen Programmtexte und Erfassungen.'
+  const protokolle = /(^|[\s/\\'"=])daten[/\\]protokolle([\s/\\'"]|$)/
+  if (['Read', 'Grep', 'Glob', 'NotebookRead'].includes(werkzeug) && texte.some((t) => protokolle.test(t) || t.startsWith('daten/protokolle')))
+    return 'Phase A (Ursachen festlegen): kein Zugriff auf daten/protokolle/ – dort stehen Programmstellen früherer Erfassungen.'
   if (werkzeug === 'Bash' && typeof e.command === 'string') {
     const c = e.command
     if (/\bnpm run phase-a\b/.test(c) && !/[;&|]/.test(c.replace(/\b2>&1\b/g, ''))) return null
     if (cache.test(c) || /\.cache\//.test(c)) return 'Phase A (Ursachen festlegen): kein Zugriff auf .cache/ – dort liegen Programmtexte und Erfassungen.'
+    if (/daten[/\\]protokolle/.test(c)) return 'Phase A (Ursachen festlegen): kein Zugriff auf daten/protokolle/ – dort stehen Programmstellen früherer Erfassungen.'
     if (/\b(programme:(laden|suche|texte)|programm:(text|sichern)|zitate:pruefen|entwurf:|punkte\b|pruefliste|blind:reste|instrumente\b|haltung:(auftrag|programm-pruefen|blind|eintragen))/.test(c))
       return 'Phase A (Ursachen festlegen): Werkzeuge, die Wahlprogramme lesen, sind gesperrt. Erlaubt: npm run quelle:text, npm run themen:ueberblick.'
     if (/(^|[\s/])scripts\/(entwurf\/(programm|programme|treffer|reste)|pruefe-zitate|erzeuge-pruefliste)/.test(c))
