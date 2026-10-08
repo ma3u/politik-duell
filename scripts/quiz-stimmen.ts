@@ -7,7 +7,7 @@
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import type { QuizDaten } from '../src/quiz/typen.ts'
-import { alleClips, GERAEUSCHE, ohneTags, SPRECHER, type Clip, type Sprecher } from '../src/quiz/show/texte.ts'
+import { alleClips, GERAEUSCHE, ohneTags, SPRECHER, STARTMUSIK, type Clip, type Sprecher } from '../src/quiz/show/texte.ts'
 import type { ShowManifest } from '../src/quiz/show/manifest.ts'
 
 const API = 'https://api.elevenlabs.io/v1'
@@ -115,9 +115,11 @@ const fehlendeGeraeusche = GERAEUSCHE.filter((g) => {
   const alt = manifest.geraeusche[g.id]
   return !(alt?.hash === hash(g) && existsSync(new URL(alt.datei, ordner)))
 })
+const musikAlt = manifest.geraeusche[STARTMUSIK.id]
+const musikFehlt = !(musikAlt?.hash === hash(STARTMUSIK) && existsSync(new URL(musikAlt.datei, ordner)))
 console.log(
   `${clips.length} Clips, davon ${fehlend.length} zu erzeugen (${zeichen} Zeichen ≈ ${zeichen} Credits); ` +
-    `${fehlendeGeraeusche.length} von ${GERAEUSCHE.length} Geräuschen.`,
+    `${fehlendeGeraeusche.length} von ${GERAEUSCHE.length} Geräuschen; Startmusik ${musikFehlt ? 'zu erzeugen' : 'vorhanden'}.`,
 )
 if (nurZeigen) process.exit(0)
 
@@ -164,5 +166,18 @@ for (const g of fehlendeGeraeusche) {
   manifest.geraeusche[g.id] = { datei, dauer: g.sekunden, hash: hash(g) }
   speichern()
   console.log(`Geräusch ${g.id}`)
+}
+if (musikFehlt) {
+  // Music-API (Musik mit Gesang; der Schlüssel braucht die Berechtigung „Music Generation“).
+  const r = await api(`/music?output_format=mp3_44100_128`, {
+    prompt: STARTMUSIK.beschreibung,
+    music_length_ms: STARTMUSIK.sekunden * 1000,
+    model_id: 'music_v1',
+  })
+  const datei = `klang-${STARTMUSIK.id}.mp3`
+  writeFileSync(new URL(datei, ordner), Buffer.from(await r.arrayBuffer()))
+  manifest.geraeusche[STARTMUSIK.id] = { datei, dauer: STARTMUSIK.sekunden, hash: hash(STARTMUSIK) }
+  speichern()
+  console.log('Startmusik')
 }
 console.log('Fertig: public/quiz/audio/')

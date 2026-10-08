@@ -125,6 +125,18 @@ export const SCHLUSS: Record<Schluss, Clip> = {
  * Startmelodie: Beat „startbeat“ mit Sprechchor – beide Moderatoren rufen „Politik-Duell!“. Spielt beim ersten
  * Tippen auf der Startseite des Quiz und beim Einschalten des Tons, damit man hört, ob der Ton an ist.
  */
+/**
+ * Startmusik (bevorzugt, wenn vorhanden): kurzer Party-Elektro-Song mit gesungenem Chor „Politik-Duell!“, erzeugt mit
+ * der Music-API von ElevenLabs. Ohne Künstlernamen im Prompt: eigener Stil, keine Nachahmung. Fehlt die Datei, spielt
+ * die Startmelodie Beat und CHOR.
+ */
+export const STARTMUSIK: Geraeusch = {
+  id: 'startmusik',
+  beschreibung:
+    "High-energy German electro-punk party rap anthem intro for a TV quiz show called 'Politik-Duell'. A rowdy group of male and female voices shouts the German chant 'Po-li-tik-Du-ell!' in a stomping call-and-response, over a pounding four-on-the-floor kick, distorted squelchy analog synth bass, cheeky brass stabs and handclaps. Rave energy, ironic and fun, festival crowd vibe. Ends with one final shouted 'Politik-Duell!' and a hard stop.",
+  sekunden: 10,
+}
+
 export const CHOR: Clip[] = [
   { id: 'chor-mara', sprecher: 'mara', text: '[shouting] Politik-Duell!' },
   { id: 'chor-ben', sprecher: 'ben', text: '[shouting] Politik-Duell!' },

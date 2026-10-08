@@ -134,15 +134,17 @@ let melodieLaeuft = false
 let melodie: { lautstaerke: GainNode; quellen: AudioBufferSourceNode[] } | null = null
 
 /**
- * Startmelodie: Beat mit Sprechchor beider Moderatoren. Muss in einer Nutzeraktion starten (ruft entsperren auf);
+ * Startmelodie: die Startmusik oder – ohne sie – Beat mit Sprechchor beider Moderatoren. Muss in einer Nutzeraktion starten (ruft entsperren auf);
  * wartet kurz, bis die Dateien dekodiert sind, und plant dann alles auf der Uhr des AudioContext – so sitzt der Chor
  * auf dem Beat. Spielt nicht doppelt, wenn sie schon läuft.
  */
 export async function startmelodie() {
   entsperren()
   if (!ctx || !manifest || !tonAn || melodieLaeuft) return
-  const beat = manifest.geraeusche.startbeat?.datei
-  const stimmen = CHOR.map((c) => manifest!.clips[c.id]?.datei)
+  // Bevorzugt die Startmusik (Music-API); sonst Beat mit Sprechchor.
+  const musik = manifest.geraeusche.startmusik?.datei
+  const beat = musik ?? manifest.geraeusche.startbeat?.datei
+  const stimmen = musik ? [] : CHOR.map((c) => manifest!.clips[c.id]?.datei)
   if (!beat) return
   melodieLaeuft = true
   const bereit = await Promise.race([
