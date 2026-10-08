@@ -126,20 +126,22 @@ export const SCHLUSS: Record<Schluss, Clip> = {
  * Tippen auf der Startseite des Quiz und beim Einschalten des Tons, damit man hört, ob der Ton an ist.
  */
 /**
- * Startmusik (bevorzugt, wenn vorhanden): kurzer Party-Elektro-Song mit gesungenem Chor „Politik-Duell!“, erzeugt mit
- * der Music-API von ElevenLabs. Ohne Künstlernamen im Prompt: eigener Stil, keine Nachahmung. Fehlt die Datei, spielt
- * die Startmelodie Beat und CHOR.
+ * Startmusik (bevorzugt, wenn vorhanden): kurzer Party-Elektro-Track, erzeugt mit der Music-API von ElevenLabs – rein
+ * instrumental, damit der Ruf verständlich bleibt. `npm run quiz:stimmen` mischt den Ruf CHOR beider Moderatoren im
+ * Takt darüber (Musik darunter leiser). Ohne Künstlernamen im Prompt: eigener Stil, keine Nachahmung. Fehlt die
+ * Datei, spielt die Startmelodie Beat und CHOR.
  */
 export const STARTMUSIK: Geraeusch = {
   id: 'startmusik',
   beschreibung:
-    "High-energy German electro-punk party rap anthem intro for a TV quiz show called 'Politik-Duell'. A rowdy group of male and female voices shouts the German chant 'Po-li-tik-Du-ell!' in a stomping call-and-response, over a pounding four-on-the-floor kick, distorted squelchy analog synth bass, cheeky brass stabs and handclaps. Rave energy, ironic and fun, festival crowd vibe. Ends with one final shouted 'Politik-Duell!' and a hard stop.",
+    'Instrumental only, no vocals, no singing. High-energy electro-punk party anthem intro for a TV quiz show, steady 128 BPM, four-on-the-floor kick from the very first beat, distorted squelchy analog synth bass, cheeky brass stabs, handclaps on two and four. Rave energy, ironic and fun. Keep the mid frequencies open for shouted chants on top. Ends with a hard stop.',
   sekunden: 10,
 }
 
+/** Ruf „Politik-Duell!“ – silbenweise gerufen, damit er über der Musik verständlich ist. */
 export const CHOR: Clip[] = [
-  { id: 'chor-mara', sprecher: 'mara', text: '[shouting] Politik-Duell!' },
-  { id: 'chor-ben', sprecher: 'ben', text: '[shouting] Politik-Duell!' },
+  { id: 'chor-mara', sprecher: 'mara', text: '[shouting] Po-li-tik-Du-ell!' },
+  { id: 'chor-ben', sprecher: 'ben', text: '[shouting] Po-li-tik-Du-ell!' },
 ]
 
 export const OUTRO: Clip = { id: 'outro', sprecher: 'mara', text: 'Danke fürs Mitspielen – und denk dran: Versprechen kann jeder!' }
