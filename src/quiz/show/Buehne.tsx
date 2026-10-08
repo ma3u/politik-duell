@@ -5,10 +5,17 @@ import { entsperren, setzeTon, startmelodie, tonWahlMerken, useTon, useTonFrei, 
 // Sichtbare Bausteine der Quiz-Show. Animationen stehen in index.css („Quiz-Show“) und ruhen bei „Bewegung
 // anhalten“ bzw. „Bewegung reduzieren“. Kein Blinken (WCAG 2.3.1).
 
-/** Untertitel der Moderatoren – für alle, die ohne Ton spielen oder nicht hören (für Screenreader ausgeblendet: der Inhalt steht ohnehin auf der Seite). */
+/** Clips, deren Inhalt ohnehin als Text auf der Seite steht – dazu kein zweiter Text darunter. */
+const steht_auf_der_seite = (id: string) => id.startsWith('frage-') || id.startsWith('anl-') || id === 'optionen' || id.startsWith('loesung-')
+
+/**
+ * Untertitel der Moderatoren – nur, wenn der Ton aus ist (oder eine Aufnahme fehlt) und der Inhalt nicht schon auf
+ * der Seite steht: Wer hört, soll nicht zugleich mitlesen müssen. Für Screenreader ausgeblendet, denn alles, was
+ * zählt, steht ohnehin auf der Seite.
+ */
 export function UntertitelLeiste() {
   const u = useUntertitel()
-  if (!u) return null
+  if (!u || u.hoerbar || steht_auf_der_seite(u.id)) return null
   return (
     <div className={`show-untertitel show-untertitel-${u.sprecher}`} aria-hidden="true">
       <span className="show-sprecher">{SPRECHER[u.sprecher].name}</span>

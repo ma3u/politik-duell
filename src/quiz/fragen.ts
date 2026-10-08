@@ -79,11 +79,18 @@ export const quizParteien = (parteien: Partei[]): QuizPartei[] =>
     .sort((a, b) => a.id - b.id)
     .map(({ id, name, kurzname, farbe, programm_url }) => ({ id, name, kurzname, farbe, programm_url }))
 
-/** Anleitung unter der Frage – kurz: was gesucht ist, wie „teils“ und „keine Aussage“ zählen. */
-export function anleitung(f: Pick<QuizFrage, 'art' | 'gesucht' | 'status_quo'>): string {
+/** Anleitung unter der Frage – ein kurzer Satz: was gesucht ist. */
+export function anleitung(f: Pick<QuizFrage, 'art' | 'gesucht'>): string {
   const wort = f.gesucht === 'ja' ? 'Ja' : 'Nein'
-  const heute = f.status_quo ? ` Kein Wort dazu heißt: Es bleibt, wie es ist – also ${f.status_quo === 'ja' ? 'Ja' : 'Nein'}.` : ''
-  if (f.art === 'einzeln') return `Nur eine Partei steht im Wahlprogramm für ${wort}. Welche?${heute}`
-  return `Wer steht im Wahlprogramm für ${wort}? Mehrere sind richtig, „teils“ zählt nicht.${heute}`
+  if (f.art === 'einzeln') return `Nur eine Partei sagt ${wort}. Welche?`
+  return `Wer sagt ${wort}? Mehrere sind richtig.`
+}
+
+/** Regeln in Stichworten darunter: wie „teils“ und „keine Aussage“ zählen, wie man abgibt. */
+export function anleitungRegeln(f: Pick<QuizFrage, 'art' | 'status_quo'>): string[] {
+  return [
+    ...(f.art === 'mehrfach' ? ['„teils“ zählt nicht'] : ['ein Tipp gibt ab']),
+    ...(f.status_quo ? [`keine Aussage zählt als ${f.status_quo === 'ja' ? 'Ja' : 'Nein'}`] : []),
+  ]
 }
 

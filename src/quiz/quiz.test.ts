@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { HaltungPosition, Positionswert } from '../data/types'
-import { anleitung, quizFrage, quizFragen } from './fragen'
+import { anleitung, anleitungRegeln, quizFrage, quizFragen } from './fragen'
 import { bewerte, ZEIT_MS, zeitlimit } from './punkte'
 import {
   alleFertig,
@@ -44,7 +44,8 @@ describe('quizFrage', () => {
     expect(f).toMatchObject({ id: 'h1', art: 'mehrfach', gesucht: 'ja', status_quo: null, richtig: [12, 13, 16], neutral: [15] })
     expect(f.positionen.map((p) => p.partei_id)).toEqual([11, 12, 13, 14, 15, 16, 17])
     expect(f.positionen[6]).toMatchObject({ zitat: null, beleg_url: null, begruendung: 'durchsucht' })
-    expect(anleitung(f)).toMatch(/Wer steht im Wahlprogramm für Ja\?/)
+    expect(anleitung(f)).toBe('Wer sagt Ja? Mehrere sind richtig.')
+    expect(anleitungRegeln(f)).toEqual(['„teils“ zählt nicht'])
   })
 
   it('„keine Aussage“ zählt wie die heutige Lage – nur mit status_quo', () => {
@@ -55,7 +56,7 @@ describe('quizFrage', () => {
     const heuteJa = quizFrage(haltung(5, 'ja'), pos(5, werte), [], PARTEIEN)!
     expect(heuteJa.richtig).toEqual([11, 13, 14, 16])
     expect(heuteJa.status_quo).toBe('ja')
-    expect(anleitung(heuteJa)).toContain('Es bleibt, wie es ist – also Ja.')
+    expect(anleitungRegeln(heuteJa)).toContain('keine Aussage zählt als Ja')
     const heuteNein = quizFrage(haltung(5, 'nein'), pos(5, werte), [], PARTEIEN)!
     expect(heuteNein.richtig).toEqual([11, 14])
     expect(heuteNein.neutral).toEqual([17])
@@ -70,7 +71,7 @@ describe('quizFrage', () => {
   it('Einzelauswahl, wenn genau eine Partei klar Ja sagt – dann ist „teils“ falsch', () => {
     const f = quizFrage(haltung(2), pos(2, ['teils', 'teils', 'nein', 'teils', 'ja', 'nein', 'teils']), [], PARTEIEN)!
     expect(f).toMatchObject({ art: 'einzeln', gesucht: 'ja', status_quo: null, richtig: [15], neutral: [] })
-    expect(anleitung(f)).toBe('Nur eine Partei steht im Wahlprogramm für Ja. Welche?')
+    expect(anleitung(f)).toBe('Nur eine Partei sagt Ja. Welche?')
   })
 
   it('fragt nach Nein, wenn niemand Ja sagt', () => {

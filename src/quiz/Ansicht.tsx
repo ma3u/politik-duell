@@ -8,7 +8,7 @@ import { feedbackLink } from '../feedback'
 import { POSITION_TEXT } from '../logic/haltung'
 import type { Positionswert } from '../data/types'
 import { QrCode } from './QrCode'
-import { anleitung } from './fragen'
+import { anleitung, anleitungRegeln } from './fragen'
 import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
 import { limitFuer, rangliste, type Ergebnis, type QuizSpieler, type QuizZustand, type Weg } from './spielleitung'
 import type { QuizDaten, QuizFrage, QuizPartei } from './typen'
@@ -323,11 +323,14 @@ function Frage({ daten, z, ich, restMs, frage, istLeitung, allein, onAntwort, on
             ))}
           </span>
         </h2>
-        <p className={`buehne-meta show-rein${war('anleitung') ? ' da' : ''}`}>{frage.beschreibung}</p>
+        {/* Erklärung nur auf Wunsch: Frage, Ansage und Liste sind schon genug zum Lesen. */}
+        <details className={`buehne-mehr show-rein${war('anleitung') ? ' da' : ''}`}>
+          <summary>Worum geht’s?</summary>
+          <p className="buehne-meta">{frage.beschreibung}</p>
+        </details>
       </div>
       <p className={`quiz-anleitung show-rein${war('anleitung') ? ' da' : ''}`}>
-        {anleitung(frage)}
-        {frage.art === 'einzeln' && <span className="quiz-anleitung-zusatz"> Ein Tipp auf eine Partei gibt die Antwort ab.</span>}
+        {anleitung(frage)} <span className="quiz-regeln">{anleitungRegeln(frage).join(' · ')}</span>
       </p>
       <div className="quiz-antworten" ref={antworten}>
       <div className="partei-liste stimmzettel quiz-wahl" role="group" aria-label="Parteien">

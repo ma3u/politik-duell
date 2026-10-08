@@ -3059,6 +3059,23 @@ textarea {
   font-size: 0.95rem;
   font-weight: 700;
 }
+.quiz-regeln {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+.buehne-mehr {
+  margin: 0.4rem 0 0;
+}
+.buehne-mehr > summary {
+  /* list-item behält das Aufklapp-Dreieck. */
+  display: list-item;
+  min-height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #c9d3ea;
+  font-size: 0.85rem;
+}
 /* Kompakte Zeilen im Quiz: Zielfläche bleibt über 44 px (2.5.8), Zusatz in einer Zeile. */
 .quiz .partei-zeile {
   min-height: 2.9rem;

@@ -266,6 +266,10 @@ function wortzeitenMs(c: Clip): number[] {
 
 // ---- Untertitel ----
 export interface Untertitel {
+  /** Clip-ID – sagt, ob der Inhalt ohnehin auf der Seite steht (Frage, Anleitung, Auswahl, Lösung). */
+  id: string
+  /** true = die Aufnahme ist zu hören; dann braucht es keinen Untertitel. */
+  hoerbar: boolean
   sprecher: Sprecher
   woerter: string[]
   /** Bis zu welchem Wort gesprochen ist. */
@@ -304,9 +308,9 @@ export async function sprich(
   { signal, onWort, bis }: { signal?: AbortSignal; onWort?: (i: number) => void; bis?: number } = {},
 ) {
   const woerter = ohneTags(c.text).split(/\s+/)
-  untertitel = { sprecher: c.sprecher, woerter, wort: -1 }
-  melden()
   const quelle = abspielen(manifest?.clips[c.id]?.datei)
+  untertitel = { id: c.id, hoerbar: !!quelle && tonAn && frei, sprecher: c.sprecher, woerter, wort: -1 }
+  melden()
   const timer = wortzeitenMs(c).map((ms, i) =>
     setTimeout(() => {
       if (untertitel) untertitel = { ...untertitel, wort: i }
