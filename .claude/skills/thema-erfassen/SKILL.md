@@ -27,7 +27,7 @@ Verlangt `freigabe` (auch `art: "ki"`) im letzten Commit und unveränderte Ursac
 
 ## 1. Suchbegriffe und Aufträge
 
-Die Suchbegriffe stehen im Leitfaden `daten/leitfaeden/<ID>.json` (aus `/thema-anlegen`). Fehlen sie, schreibe sie jetzt ohne Blick in Programme aus der Spalte „Diagnose aus der Debatte“ in `docs/perspektiven-ursachen.md` (je Ursache jede Lösungsrichtung mit eigenen Begriffen). Arbeitsdatei `.cache/entwurf/<ID>/erfassung.json` = `{ "thema_id": <ID>, "programme": [] }`.
+Die Suchbegriffe stehen im Leitfaden `daten/leitfaeden/<ID>.json` (aus `/thema-anlegen`). Fehlen sie, schreibe sie jetzt ohne Blick in Programme aus der Spalte „Diagnose aus der Debatte“ in `docs/perspektiven-ursachen.md` (je Ursache jede Lösungsrichtung mit eigenen Begriffen). Hat eine Ursache Bündel nach Bereichen (etwa „Verkehr und Antriebe“), aber keine Hebel-Checkliste (`hebel`), ergänze sie **vor** dem Erfassen unter Phase-A-Sperre (`npm run phase-a -- start`): aus der Perspektivenprüfung, ohne Blick in Programme **und ohne frühere Erfassungen** (`daten/protokolle/` enthält Programmstellen); eigener Commit „<Thema>: Hebel-Checkliste (Phase A)“. Arbeitsdatei `.cache/entwurf/<ID>/erfassung.json` = `{ "thema_id": <ID>, "programme": [] }`.
 
 ```bash
 npm run -s entwurf:treffer '--' .cache/entwurf/<ID>/erfassung.json '--vorab'

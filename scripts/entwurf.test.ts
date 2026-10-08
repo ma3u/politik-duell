@@ -1119,3 +1119,61 @@ describe('Datenteil des Pull Requests', () => {
     expect(text).toMatch(new RegExp(`Prüfsumme \`${blindListe(k, e, fest).pruefsumme}\``))
   })
 })
+
+describe('Hebel-Checkliste und gekoppelte Ursachen', () => {
+  const leitfaden = (x: Partial<Leitfaden> = {}): Leitfaden => ({ thema_id: 17, stand: '2026-10-08', regeln: [], ...x })
+
+  it('prüft Hebel und Kopplung im Leitfaden', () => {
+    expect(pruefeLeitfaden(katalog(), leitfaden({ hebel: { '1702': ['Quereinstieg', 'Vergütung'] }, gekoppelt: [[1701, 1702]] }))).toEqual([])
+    const f = pruefeLeitfaden(katalog(), leitfaden({ hebel: { '9999': ['X'], '1702': ['Vergütung', 'Vergütung'] }, gekoppelt: [[1701], [1701, 9999]] })).join('\n')
+    expect(f).toMatch(/Hebel für Ursache 9999/)
+    expect(f).toMatch(/Hebel „Vergütung“ zu Ursache 1702 doppelt/)
+    expect(f).toMatch(/gekoppelt \[1701\]/)
+    expect(f).toMatch(/gekoppelt \[1701,9999\]/)
+  })
+
+  it('verlangt eine Antwort zu jedem Hebel – Maßnahme oder hebel_nicht_gefunden mit Seiten', () => {
+    const e = { ...erfassung(), leitfaden: leitfaden({ hebel: { '1702': ['Quereinstieg', 'Vergütung'] } }) }
+    const p = structuredClone(e.programme[0])
+    p.massnahmen[1].buendel = 'Vergütung'
+    expect(pruefeProgramm(katalog(), e, p).join('\n')).toMatch(/Hebel „Quereinstieg“ \(Ursache 1702\) nicht beantwortet/)
+    p.hebel_nicht_gefunden = [{ ursache: 1702, hebel: 'Quereinstieg', seiten: [], grund: 'nichts' }]
+    expect(pruefeProgramm(katalog(), e, p).join('\n')).toMatch(/hebel_nicht_gefunden – je Eintrag/)
+    p.hebel_nicht_gefunden[0].seiten = [13, 14]
+    expect(pruefeProgramm(katalog(), e, p)).toEqual([])
+    // Landesprogramm: 1702 ist Bund – kein Hebel zu beantworten.
+    expect(pruefeProgramm(katalog(), e, e.programme[2])).toEqual([])
+    // Nachtrag eines Lösungswegs: keine Checkliste.
+    const n = { ...e, nachtrag: { forderung: 'X', richtungen: { '1702': ['Quereinstieg'] } } }
+    expect(pruefeProgramm(katalog(), n, { ...e.programme[0], massnahmen: [e.programme[0].massnahmen[1]] }).join()).not.toMatch(/Hebel/)
+  })
+
+  it('lehnt eine Maßnahme ab, die nur einen Teil gekoppelter Ursachen nennt – im Landesprogramm nur die zulässigen', () => {
+    const e = { ...erfassung(), leitfaden: leitfaden({ gekoppelt: [[1701, 1702]] }) }
+    expect(pruefeProgramm(katalog(), e, e.programme[0]).join('\n')).toMatch(/Maßnahme 1: Ursachen gehören laut Leitfaden zusammen – auch 1702/)
+    expect(pruefeProgramm(katalog(), e, e.programme[2])).toEqual([])
+    const p = structuredClone(e.programme[0])
+    p.massnahmen[0].ursachen_ids = [1701]
+    p.massnahmen[0].ursachen_offen = [1702]
+    expect(pruefeProgramm(katalog(), e, p).join('\n')).toMatch(/Maßnahme 1: .*auch 1702 in ursachen_ids/)
+    p.massnahmen[0].ursachen_ids = [1701, 1702]
+    p.massnahmen[0].ursachen_offen = undefined
+    p.massnahmen[1].ursachen_ids = [1701, 1702]
+    expect(pruefeProgramm(katalog(), e, p)).toEqual([])
+  })
+
+  it('gibt die Kopplung an die Bewertung weiter und prüft sie dort', () => {
+    const e = erfassung()
+    e.programme[0].massnahmen[0].ursachen_ids = [1701, 1702]
+    const mit = { ...e, leitfaden: leitfaden({ gekoppelt: [[1701, 1702]] }) }
+    const liste = blindListe(katalog(), mit)
+    expect(liste.gekoppelt).toEqual([[1701, 1702]])
+    // Ohne Kopplung bleibt die Liste wie bisher (gleiche Prüfsumme für Themen ohne das Feld).
+    expect(blindListe(katalog(), { ...e, leitfaden: leitfaden() }).gekoppelt).toBeUndefined()
+    const b = bewertung(e)
+    b.blind_pruefsumme = liste.pruefsumme
+    expect(pruefeAntwort(liste, b, { teil: false }).join('\n')).toMatch(/gehören laut Liste \(„gekoppelt“\) zusammen – auch 1702/)
+    b.zuordnung[0].ursachen = [1701, 1702]
+    expect(pruefeAntwort(liste, b, { teil: false })).toEqual([])
+  })
+})

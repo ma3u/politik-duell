@@ -53,6 +53,11 @@ export interface ErfasstesProgramm {
    * als erledigt an – für alle Programme nach derselben Regel, ohne dass jemand Protokolle liest.
    */
   nicht_erfasst?: { ursache: number; seiten: number[]; grund: string }[]
+  /**
+   * Hebel der Checkliste (Leitfaden `hebel`) ohne Maßnahme: gelesene Seiten und warum nichts passt.
+   * Jeder Hebel einer Ursache des Programms ist beantwortet – mit einer Maßnahme (`buendel` = Hebel) oder hier.
+   */
+  hebel_nicht_gefunden?: { ursache: number; hebel: string; seiten: number[]; grund: string }[]
 }
 
 /**
@@ -73,6 +78,18 @@ export interface Leitfaden {
    * Die Liste ist offen: Neue Instrumente meldet ein Agent, der Koordinator ergänzt sie für alle.
    */
   buendel?: Record<string, string[]>
+  /**
+   * Hebel-Checkliste je Ursache, in Phase A ohne Blick in die Programme festgelegt: Jeder Hebel ist ein
+   * Bündel (höchstens eine Maßnahme je Programm), und jedes Programm beantwortet jeden Hebel – mit einer
+   * Maßnahme oder unter `hebel_nicht_gefunden`. So hängt die Zahl der erfassten Lösungswege nicht an der
+   * Gründlichkeit des einzelnen Agenten.
+   */
+  hebel?: Record<string, string[]>
+  /**
+   * Ursachen, die immer zusammen gelten (etwa [[1801, 1802]]): Nennt eine Maßnahme eine davon, nennt sie
+   * alle, die für das Programm zulässig sind – in der Erfassung und in der Bewertung.
+   */
+  gekoppelt?: number[][]
   /**
    * Suchbegriffe je Ursache und Lösungsrichtung, für alle Programme gleich und vor dem ersten Agenten
    * festgelegt. Stehen sie hier, gelten sie für jeden Durchgang des Themas (Bund und Länder) –
@@ -564,6 +581,8 @@ export interface BlindListe {
   ursachen: { id: number; beschreibung: string; ebene: string }[]
   /** Regeln zur Zuordnung aus dem Leitfaden – dieselben, die die Erfassung hatte. */
   regeln?: { nr: number; ursachen?: number[]; text: string }[]
+  /** Ursachen, die immer zusammen gelten (Leitfaden `gekoppelt`). */
+  gekoppelt?: number[][]
   /** Vorhandene Instrumente mit ihrer Quelle: Bewertet die Bewertung denselben Lösungsweg auf der anderen Ebene, prüft sie diese Quelle zuerst, statt neu zu suchen. */
   instrumente: { id: number; name: string; ebene: string | null; wirksamkeit: number; umsetzbarkeit: number; evidenz?: string | null; begruendung: string; beleg_studie_url?: string }[]
   massnahmen: BlindMassnahme[]
@@ -618,6 +637,7 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
     thema: { id: thema.id, name: thema.name, ziel: thema.ziel },
     ursachen: k.ursachen.filter((u) => u.thema_id === thema.id).map((u) => ({ id: u.id, beschreibung: u.beschreibung, ebene: u.ebene ?? 'bund' })),
     ...(regeln?.length ? { regeln } : {}),
+    ...(e.leitfaden?.gekoppelt?.length ? { gekoppelt: e.leitfaden.gekoppelt } : {}),
     instrumente: k.instrumente
       .filter((i) => i.thema_id === thema.id)
       .map((i) => ({
@@ -953,7 +973,7 @@ export function vergleicheErfassung(k: Katalog, vorher: ErfasstesProgramm[], jet
  */
 export function ohneBuendel(k: Katalog, e: Pick<Erfassung, 'programme' | 'leitfaden'>): string[] {
   const zeilen: string[] = []
-  const mitBuendel = new Set(Object.entries(e.leitfaden?.buendel ?? {}).filter(([, l]) => l.length).map(([u]) => Number(u)))
+  const mitBuendel = new Set([...Object.entries(e.leitfaden?.buendel ?? {}), ...Object.entries(e.leitfaden?.hebel ?? {})].filter(([, l]) => l.length).map(([u]) => Number(u)))
   for (const p of e.programme) {
     const name = `${k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? p.partei_id} (${p.land ?? 'Bund'})`
     for (const m of p.massnahmen) {
@@ -962,6 +982,22 @@ export function ohneBuendel(k: Katalog, e: Pick<Erfassung, 'programme' | 'leitfa
     }
   }
   return zeilen
+}
+
+/** Bündel und Hebel einer Ursache: Ein Hebel der Checkliste ist zugleich ein Bündel. */
+export const buendelVon = (l: Pick<Leitfaden, 'buendel' | 'hebel'> | undefined, u: number) => [...(l?.buendel?.[String(u)] ?? []), ...(l?.hebel?.[String(u)] ?? [])]
+
+/**
+ * Gekoppelte Ursachen: Nennt eine Zuordnung (`ursachen`) eine Ursache einer Gruppe, muss sie alle nennen,
+ * die in `moeglich` stehen (für das Programm zulässig bzw. vorgeschlagen). Rückgabe: fehlende je Gruppe.
+ */
+export function fehlendeGekoppelte(gekoppelt: number[][] | undefined, ursachen: number[], moeglich: number[]): number[] {
+  const fehlt = new Set<number>()
+  for (const g of gekoppelt ?? []) {
+    const teil = g.filter((u) => moeglich.includes(u))
+    if (teil.some((u) => ursachen.includes(u))) for (const u of teil) if (!ursachen.includes(u)) fehlt.add(u)
+  }
+  return [...fehlt]
 }
 
 /** Ab so vielen Maßnahmen ohne Bündel an einer Ursache mit Bündelliste gibt es einen Hinweis. */
@@ -1016,6 +1052,27 @@ export function pruefeLeitfaden(k: Katalog, l: Leitfaden): string[] {
       namen.add(b)
     }
   }
+  for (const [u, liste] of Object.entries(l.hebel ?? {})) {
+    if (!ursachen.has(Number(u))) f.push(`Leitfaden: Hebel für Ursache ${u}, die nicht zum Thema gehört`)
+    if (!Array.isArray(liste)) {
+      f.push(`Leitfaden: Hebel zu Ursache ${u} müssen eine Liste sein`)
+      continue
+    }
+    const namen = new Set(l.buendel?.[u] ?? [])
+    for (const h of liste) {
+      if (typeof h !== 'string' || !h.trim() || h.length > 80) f.push(`Leitfaden: Hebel „${h}“ zu Ursache ${u} – leer oder länger als 80 Zeichen`)
+      else if (namen.has(h)) f.push(`Leitfaden: Hebel „${h}“ zu Ursache ${u} doppelt (auch als Bündel?)`)
+      else if (enthaeltParteinamen(h, weitere)) f.push(`Leitfaden: Hebel „${h}“ nennt eine Partei oder Person`)
+      namen.add(h)
+    }
+  }
+  if (l.gekoppelt !== undefined) {
+    if (!Array.isArray(l.gekoppelt)) f.push('Leitfaden: gekoppelt muss eine Liste von Gruppen sein, etwa [[1801, 1802]]')
+    else
+      for (const g of l.gekoppelt)
+        if (!Array.isArray(g) || g.length < 2 || new Set(g).size < g.length || g.some((u) => !ursachen.has(u)))
+          f.push(`Leitfaden: gekoppelt ${JSON.stringify(g)} – je Gruppe mindestens zwei verschiedene Ursachen des Themas`)
+  }
   return f
 }
 
@@ -1055,6 +1112,12 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
   for (const n of Array.isArray(p.nicht_erfasst) ? p.nicht_erfasst : [])
     if (!n || !ursachen.has(n.ursache) || !Array.isArray(n.seiten) || !n.seiten.length || !n.seiten.every((x) => Number.isInteger(x) && x > 0) || typeof n.grund !== 'string' || !n.grund.trim())
       f.push(`${name}: nicht_erfasst – je Eintrag { "ursache": <ID des Themas>, "seiten": [gelesene PDF-Seiten], "grund": "…" }`)
+  if (p.hebel_nicht_gefunden !== undefined && !Array.isArray(p.hebel_nicht_gefunden)) f.push(`${name}: hebel_nicht_gefunden muss eine Liste sein`)
+  for (const n of Array.isArray(p.hebel_nicht_gefunden) ? p.hebel_nicht_gefunden : [])
+    if (!n || !ursachen.has(n.ursache) || !(e.leitfaden?.hebel?.[String(n.ursache)] ?? []).includes(n.hebel) || !Array.isArray(n.seiten) || !n.seiten.length || !n.seiten.every((x) => Number.isInteger(x) && x > 0) || typeof n.grund !== 'string' || !n.grund.trim())
+      f.push(`${name}: hebel_nicht_gefunden – je Eintrag { "ursache": <ID>, "hebel": "<Name genau wie im Auftrag>", "seiten": [gelesene PDF-Seiten], "grund": "…" }`)
+  // Für das Programm zulässige Ursachen: Landesprogramme nur Ebene Land.
+  const zulaessig = [...ursachen.values()].filter((u) => !p.land || (u.ebene ?? 'bund') === 'land').map((u) => u.id)
   const buendelGesehen = new Map<string, number>()
   for (const [j, m] of p.massnahmen.entries()) {
     const was = `${name}, Maßnahme ${j + 1}`
@@ -1077,8 +1140,12 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
       if (!u) f.push(`${was}: Ursache ${id} gehört nicht zum Thema`)
       else if (p.land && (u.ebene ?? 'bund') !== 'land') f.push(`${was}: Landesprogramme nur für Ursachen mit ebene „land“ (${id} ist Bund)`)
     }
+    const fehlt = fehlendeGekoppelte(e.leitfaden?.gekoppelt, m.ursachen_ids ?? [], zulaessig)
+    if (fehlt.length) f.push(`${was}: Ursachen gehören laut Leitfaden zusammen – auch ${fehlt.join(', ')} in ursachen_ids eintragen`)
+    const fehltOffen = fehlendeGekoppelte(e.leitfaden?.gekoppelt, alle, zulaessig)
+    if (!fehlt.length && fehltOffen.length) f.push(`${was}: Ursachen gehören laut Leitfaden zusammen – auch ${fehltOffen.join(', ')} eintragen (ursachen_ids oder ursachen_offen wie die übrigen)`)
     if (m.buendel !== undefined) {
-      const erlaubt = alle.flatMap((u) => e.leitfaden?.buendel?.[String(u)] ?? [])
+      const erlaubt = alle.flatMap((u) => buendelVon(e.leitfaden, u))
       if (!erlaubt.includes(m.buendel))
         f.push(`${was}: Bündel „${m.buendel}“ steht im Leitfaden nicht bei ihren Ursachen – im Protokoll unter „Neue Bündel“ melden; der Koordinator ergänzt den Leitfaden für alle Programme`)
       const vorher = buendelGesehen.get(m.buendel)
@@ -1088,6 +1155,12 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
       else buendelGesehen.set(m.buendel, j + 1)
     }
   }
+  // Hebel-Checkliste: jeder Hebel einer zulässigen Ursache beantwortet (nicht beim Nachtrag eines Lösungswegs).
+  if (!e.nachtrag && p.massnahmen.length + (p.keine_massnahme ? 1 : 0))
+    for (const u of zulaessig)
+      for (const h of e.leitfaden?.hebel?.[String(u)] ?? [])
+        if (!p.massnahmen.some((m) => m.buendel === h) && !(p.hebel_nicht_gefunden ?? []).some((n) => n.ursache === u && n.hebel === h))
+          f.push(`${name}: Hebel „${h}“ (Ursache ${u}) nicht beantwortet – Maßnahme mit "buendel": "${h}" oder Eintrag in hebel_nicht_gefunden mit gelesenen Seiten und Grund`)
   return f
 }
 
@@ -1113,6 +1186,7 @@ export function kurzbericht(name: string, p: ErfasstesProgramm, hinweise: number
     `Neue Bündel: ${liste((p.neue_buendel ?? []).map((b) => `${b.ursache} „${b.name}“${b.seite ? ` (S. ${b.seite})` : ''}`))}`,
     `Eigene Synonyme: ${liste((p.eigene_synonyme ?? []).map((b) => `„${b.begriff}“ → ${b.ursache} ${b.richtung}`))}`,
     `Nicht erfasst: ${liste((p.nicht_erfasst ?? []).map((n) => `${n.ursache} (S. ${n.seiten.join(', ')})`))}`,
+    ...(p.hebel_nicht_gefunden?.length ? [`Hebel ohne Fund: ${liste(p.hebel_nicht_gefunden.map((n) => `${n.ursache} „${n.hebel}“`))}`] : []),
     `Stand im PDF: ${p.stand_im_pdf?.trim() || 'wie im Auftrag'}`,
   ].join('\n')
 }
@@ -1200,6 +1274,8 @@ export function pruefeAntwort(liste: BlindListe, b: Bewertung, o: { teil: boolea
     // Bestätigt die Bewertung keine vorgeschlagene Ursache, wird die Maßnahme nicht eingetragen und braucht keine Bewertung.
     const vorgeschlagen = [...m.ursachen_ids, ...(m.ursachen_offen ?? [])]
     if (!z.ursachen.some((u) => vorgeschlagen.includes(u))) continue
+    const fehlt = fehlendeGekoppelte(liste.gekoppelt, z.ursachen, vorgeschlagen)
+    if (fehlt.length) f.push(`${z.kennung}: Ursachen gehören laut Liste („gekoppelt“) zusammen – auch ${fehlt.join(', ')} nennen oder keine davon`)
     if (!('instrument' in z) && !('einzeln' in z)) f.push(`${z.kennung}: weder instrument noch einzeln, aber Ursachen bestätigt`)
     else if ('instrument' in z) {
       const bekannt = typeof z.instrument === 'number' ? vorhandene.has(z.instrument) : neue.has(z.instrument) || bisher.has(z.instrument)
