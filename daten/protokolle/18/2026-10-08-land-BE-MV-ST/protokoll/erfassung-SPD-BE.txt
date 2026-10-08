@@ -1,0 +1,15 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Stadtbaumbestand deutlich erhöhen, neue Baumstandorte und Baumscheiben bepflanzen, Altbäume schützen", "ursachen_ids": [1803], "zitat": "Bis 2040 soll die Zahl der Stadtbäume um 70 Prozent steigen.", "seite": 22 },
+    { "beschreibung": "Mini-Parks und wohnortnahe Grünflächen als Abkühlung; Hitzehotspots entsiegeln oder begrünen", "ursachen_ids": [1803], "zitat": "Mini - Parks und wohnortnahe Grünflächen schaffen Abkühlung in fußläufiger Entfernung.", "seite": 22 },
+    { "beschreibung": "Mehr Regenwasser von der Kanalisation abkoppeln, vor Ort versickern lassen (Schwammstadt), grundstücksübergreifendes Regenwassermanagement verbindlich", "ursachen_ids": [1804], "zitat": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab. Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken.", "seite": 23 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1805, "seiten": [22, 23], "grund": "Keine Aussage zu Hochwasserschutz oder Bauen in Überschwemmungsgebieten im Programm." }
+  ]
+}
+
+Protokoll: Auftrag, Seiten 22-23 (Kapitel Sauber, grün, lebenswert) vollständig gelesen; Grep nach Hitze, Klimaanpassung, Starkregen, Hochwasser.
+Nicht erfasst: S. 3 (Leitbild Abkühlung), S. 18 (Bauland, Sozialquote), S. 38/47 (Spielplätze, Grünflächen ohne Hitzebezug), S. 60 (Abwasser als Energie), S. 22 Parks pflegen/Volkspark (ohne Hitzezusage; Volkspark ohne Kühlungsbezug im Zitat), S. 22 Hotspots entsiegeln (Teil der Kiez-Zusage, Bündel nicht vorhanden), S. 23 Wasserrahmenrichtlinie/Wassersparen (kein Bezug), Zeile ~4014 Kälte- und Hitzehilfe (Sozialhilfe, keine Ursache).

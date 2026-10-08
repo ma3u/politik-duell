@@ -1,0 +1,3075 @@
+{
+  "thema_id": 18,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Bestand an Straßenbäumen deutlich erhöhen, bis 2040 auf eine Million, gegen Hitze und Extremwetter",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir wollen den Bestand an Straßenbäumen deutlich erhöhen und bis zum Jahr 2040 auf eine Million Bäume steigern, um Berlin widerstandsfähiger gegen Hitze und Extremwetter zu machen.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Neuer Stadtwald auf Teilen des Tempelhofer Feldes zur Verbesserung des Stadtklimas",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir wollen auf Teilen des Tempelhofer Feldes einen neuen Stadtwald entwickeln, der als zweite „Grüne Lunge“ Berlins – analog zum Tiergarten – nachhaltig das Stadtklima verbessern und so die Lebensqualität der Berlinerinnen und Berliner steigern soll.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Hitzeschutz früh in Planung und Bau einbinden, mehr Dach- und Fassadenbegrünung vor allem bei öffentlichen Gebäuden, verbindlicher Hitzeschutz bei Kitas und Schulen",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir werden den Hitzeschutz in Berlin konsequent ausbauen und von Anfang an in Planungs- und Bauprozesse integrieren. Dazu gehört insbesondere die verstärkte Begrünung von Dächern und Fassaden, vor allem bei öffentlichen Gebäuden.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Mehr Sonnensegel und Verschattungselemente auf Spielplätzen, besonders in Neubaugebieten",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir werden die Ausstattung von Spielplätzen gezielt verbessern und insbesondere den Hitzeschutz stärken. In vielen Teilen der Stadt fehlen ausreichend schattige Spielflächen. Deshalb wollen wir verstärkt Sonnensegel und andere Verschattungselemente einsetzen",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Schulhöfe, Kitagelände und Sportanlagen entsiegeln, begrünen und mit Wasserspeicherung ausstatten",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Schulhöfe, Kitagelände und Sportanlagen sollen nach dem Prinzip der „blau-grünen Infrastruktur“ entsiegelt, begrünt und mit Möglichkeiten zur Wasserspeicherung ausgestattet werden.",
+          "seite": 81
+        },
+        {
+          "beschreibung": "Berlin zur Schwammstadt entwickeln: Regenwasser auffangen und speichern, Infrastruktur und Speicherkapazitäten ausbauen",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Unser Ziel ist es, Berlin konsequent zur Schwammstadt weiterzuentwickeln. Regenwasser soll künftig stärker aufgefangen, gespeichert und genutzt werden statt ungenutzt abzufließen. Die dafür notwendige Infrastruktur wollen wir gezielt ausbauen.",
+          "seite": 82
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            80,
+            82,
+            83
+          ],
+          "grund": "Keine Treffer zu Hochwasser oder Überschwemmungsgebieten; Kapitel Hitzeschutz und Gewässer gelesen. Grundwasser-Brunnen (S. 83) betreffen hohe Grundwasserstände, nicht Überschwemmungsgebiete."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Deiche, Dünen und Hochwasserschutzanlagen sichern und modernisieren; regionale Hochwasser- und Küstenschutzprojekte unterstützen",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Unsere Umwelt- und Küstenschutzstrategie setzt auf die Sicherung und Modernisierung von Deichen, Dünen und Hochwasserschutzanlagen",
+          "seite": 93
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1803,
+          "seiten": [
+            19,
+            20
+          ],
+          "grund": "Kein Stadtgrün, keine Verschattung; Hitzeschutzkonzepte für vulnerable Gruppen im Gesundheitswesen setzen nicht an der Aufheizung der Städte an; Nachverdichtung und Bauland sind Wohnungsbau ohne Hitzebezug."
+        },
+        {
+          "ursache": 1804,
+          "seiten": [
+            89,
+            119,
+            20
+          ],
+          "grund": "Flächenverbrauch betrifft Kompensation in der Landwirtschaft bzw. Windkraft, nicht Siedlungen; Bauland ohne Entsiegelungsbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Hitzeschutz in der Städtebauförderung stärken und Wasserspeicherung unterstützen, um klimaresiliente Stadtquartiere zu schaffen",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Wir wollen den Hitzeschutz als Förderaspekt in der Städtebauförderung stärken, Maßnahmen zur besseren Wasserspeicherung unterstützen und damit klimaresiliente Stadtquartiere schaffen.",
+          "seite": 68
+        },
+        {
+          "beschreibung": "Deiche dort zurückverlegen, wo eine Kosten-Nutzen-Abschätzung dies sinnvoll erscheinen lässt, sowie Aktionsplan Wassermanagement",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Deshalb werden wir dort, wo es eine Kosten- Nutzenabschätzung sinnvoll erscheinen lässt, Deiche zurückverlegen und einen Aktionsplan zum Wassermanagement unter Berücksichtigung der Landbewirtschafter und -eigentümer auflegen.",
+          "seite": 68
+        },
+        {
+          "beschreibung": "Förderkulisse für Entsiegelungsprojekte schaffen, auch zur Umsetzung kommunaler Hitzeschutzpläne",
+          "ursachen_ids": [
+            1804
+          ],
+          "ursachen_offen": [
+            1803
+          ],
+          "zitat": "Gleichzeitig möchten wir eine Förderkulisse für Entsiegelungsprojekte eröffnen, um Städte und Gemeinden insbesondere auch bei der Umsetzung von Hitzeschutzplänen zu unterstützen.",
+          "seite": 68
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Stadtbaumbestand deutlich erhöhen, neue Baumstandorte und Baumscheiben bepflanzen, Altbäume schützen",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Bis 2040 soll die Zahl der Stadtbäume um 70 Prozent steigen.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Mini-Parks und wohnortnahe Grünflächen als Abkühlung; Hitzehotspots entsiegeln oder begrünen",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Mini - Parks und wohnortnahe Grünflächen schaffen Abkühlung in fußläufiger Entfernung.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Mehr Regenwasser von der Kanalisation abkoppeln, vor Ort versickern lassen (Schwammstadt), grundstücksübergreifendes Regenwassermanagement verbindlich",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab. Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken.",
+          "seite": 23
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            22,
+            23
+          ],
+          "grund": "Keine Aussage zu Hochwasserschutz oder Bauen in Überschwemmungsgebieten im Programm."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Alle zusammenhängend bebauten Gebiete an Küste und in Flusseinzugsgebieten sollen vor Hochwasser geschützt werden.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Wir werden künftig alle zusammenhängend bebauten Gebiete an der Küste und in den Flusseinzugsgebieten vor Hochwasser schützen.",
+          "seite": 86
+        },
+        {
+          "beschreibung": "Wasser- und Bodenverbände werden bei Deichertüchtigung und Sanierung defekter Rohrleitungen investiv unterstützt.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Wir wollen die Wasser - und Bodenverbände auch weiterhin bei investiven Maßnahmen bei der Deichertüchtigung und der Sanierung der defekten Rohrleitungen, unterstützen.",
+          "seite": 86
+        },
+        {
+          "beschreibung": "Weitere Flächenversiegelung konsequent reduzieren; Innenentwicklung hat Vorrang vor der Ausweisung neuer Baugebiete.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir setzen uns für eine konsequente Reduzierung der weiteren Flächenversiegelung im Interesse des Bodenschutzes ein. Die ortstypische Innenentwicklung muss Vorrang vor der Neuausweisung von Baugebieten haben.",
+          "seite": 87
+        },
+        {
+          "beschreibung": "Projekte der blau/grünen Stadtentwicklung mit Wasserflächen, Bäumen und Grünflächen zur Verbesserung des Stadtklimas fördern.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wasserflächen und Verschattung durch Bäume und Grünflächen verbessern das innerstädtische Klima. Dafür helfen Projekte der blau/grünen Stadtentwicklung, für die wir uns einsetzen wollen.",
+          "seite": 87
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Bauliche Maßnahmen gegen Hitze fördern, etwa hellere Oberflächen an Gebäuden und Plätzen.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Die zunehmende Zahl an Hitzetoten schafft hier unmittelbaren Handlungsbedarf. Die Auswahl hellerer Oberflächen an Gebäuden und auf Plätzen ist gegenüber dunkleren oft ohne Mehrkosten möglich und sehr effektiv. Wir wollen bauliche Maßnahmen fördern.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Kommunen bei Hitzeaktionsplänen und beim Schutz innerörtlicher Grünflächen fachlich und finanziell unterstützen.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir wollen diese fachlich und finanziell bei Klimaschutz- und Klimamanagement, kommunaler Wärmeplanung, Hitzeaktionsplänen, dem Schutz innerörtlicher Grünflächen sowie Luftreinhalte- und Lärmschutzplänen unterstützen.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Flächenrecycling hat Vorrang vor weiterer Versiegelung.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Für uns hat Flächenrecycling Vorrang vor weiterer Versiegelung.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Wasserrückhalt ausbauen durch Versickerung und Schwammstadtkonzepte.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Der Wasserrückhalt in der Fläche wird weiter ausgebaut – durch Versickerung, Schwammstadtkonzepte, die Sanierung von Stauanlagen und eine auskömmliche Finanzierung der Unterhaltungsverbände.",
+          "seite": 23
+        },
+        {
+          "beschreibung": "Deichsanierung abschließen, Retentionsräume und Rückhalteflächen schaffen oder reaktivieren.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Die Sanierung und Sicherung der Deiche wird abgeschlossen. Retentionsräume und Rückhalteflächen werden geschaffen oder reaktiviert.",
+          "seite": 23
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Umfassendes Entsiegelungsprogramm mit dem Ziel Netto-Null-Versiegelung.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Berlin braucht ein umfassendes Entsiegelungsprogramm mit dem Ziel, eine Netto-Null-Versiegelung so schnell wie möglich zu erreichen.",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Schwammstadt: Regenwasser durch Entsiegelung, begrünte Dächer und Versickerung in der Stadt halten; das kühlt zugleich die Stadt.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Berlin muss zur Schwammstadt werden: Wir halten Regenwasser in der Stadt, statt es in die überforderte Kanalisation zu leiten – durch Entsiegelung und begrünte Dächer, Regengärten, Versickerungsstreifen, auch um Gullys herum (sogenannte grüne Gullys), und Regentonnen. So kühlen wir die Stadt […]",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Klimainseln mit Schatten und Wasser in besonders belasteten Quartieren.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "In besonders belasteten Quartieren schaffen wir Klimainseln, die mit Schatten, Wasser und Sitzgelegenheiten für sofortige Abkühlung sorgen.",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Klimaresiliente Bäume vorrangig in Hitze-Hotspots und stark versiegelten, dicht bebauten Kiezen pflanzen.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Vorrangig sollen klimaresiliente Bäume in Hitze-Hotspots, auf stark versiegelten Flächen und in dicht bebauten Kiezen gepflanzt werden.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Kaltluftschneisen erhalten und wo möglich ausbauen.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Kaltluftschneisen sollen erhalten und, wo möglich, ausgebaut werden – damit Berlin auch in Zukunft durchatmen kann.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Abkopplung von der Mischwasserkanalisation voranbringen, um Wasser in der Stadt zu halten.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir werden die Abkoppelung von der Mischwasserkanalisation deutlich voranbringen, um unsere Gewässer vor Verschmutzung zu schützen und Wasser in der Stadt zu halten.",
+          "seite": 25
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Klimaanpassung in den Kommunen stärken: klimaresiliente Baumpflanzungen, Trinkwasserspender und Schwammstadt-Maßnahmen für kühlere Orte und Umgang mit Starkregen.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Wir helfen Natur und Menschen in allen Orten, indem wir Klimaanpassung in den Kommunen stärken, etwa durch Trinkwasserspender, klimaresiliente Baumpflanzungen und Schwammstadt-Maßnahmen. Damit es im Sommer kühler bleibt, Wasser verfügbar ist und Orte besser mit Starkregen und Hitze klarkommen.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Kommunale Klimaanpassungskonzepte fördern, damit Dörfer und Städte vor Hitze und Starkregen geschützt sind.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Um das klimaschädliche CO2 besser zu speichern und uns vor Extremwetterereignissen besser zu schützen, werden wir: […] kommunale Klimaanpassungskonzepte fördern, damit die Menschen in jedem Dorf und jeder Stadt vor Hitze und Starkregen geschützt sind.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Natürliche Pufferzonen wie breitere Gewässerrandstreifen, Feuchtgebiete und Auen ausbauen, um Überflutungen abzufedern.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Für sauberes Wasser und gesunde Böden wollen wir: • die Wasserrahmenrichtlinie und die Landeswasserstrategie konsequent umsetzen, insbesondere durch den Ausbau natürlicher Pufferzonen wie breiterer Gewässerrandstreifen, Feuchtgebiete und Auen, um Überflutungen abzufedern und Wasser besser in der Fläche zu halten.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Bauturbo für Innenentwicklung und Nachverdichtung nutzen, um zusätzlichen Flächenverbrauch auf der grünen Wiese zu vermeiden.",
+          "ursachen_ids": [
+            1804
+          ],
+          "ursachen_offen": [
+            1803
+          ],
+          "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den „Bauturbo“ des Bundes insbesondere für Innenentwicklung, Nachverdichtung und vereinfachtes Bauen im Bestand nutzen, um langwierige Bauleitplanungsverfahren, hohe Erschließungskosten und zusätzlichen Flächenverbrauch auf der grünen Wiese zu vermeiden.",
+          "seite": 52
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Förderprogramm für Kommunen und Einrichtungen zum Hitzeschutz, mit Stadtplanung auf Grünflächen und Verschattung",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Zur Gesundheitsförderung werden in Zukunft verstärkt vorbeugende Maßnahmen gegen die Folgen der Klimakrise nötig sein: von kommunalen Hitzeschutzplänen über eine Stadtplanung, die auf Grünflächen, Verschattung, Trinkbrunnen und Sitzgelegenheiten setzt, bis hin zu Hitzeschutzkonzepten beispielsweise für Krankenhäuser, stationäre Wohnformen, Kitas und Schulen. Dafür wollen wir ein Förderprogramm auflegen, um insbesondere Kommunen und Einrichtungen dabei zu unterstützen, den Hitzeschutz zu stärken.",
+          "seite": 81
+        },
+        {
+          "beschreibung": "Förderung von Begrünungskonzepten, baulichem Hitzeschutz und passiver Kühlung als neuer Standard in Quartieren",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Klimaschutz und Aufenthaltsqualität verbinden wir mit der Förderung von Solaranlagen auf Gebäuden, Begrünungskonzepten, Parkflächen, baulichem Hitzeschutz und passiver Kühlung als neuem Standard.",
+          "seite": 93
+        },
+        {
+          "beschreibung": "Schwammstadt-Prinzip stärken, Dach- und Fassadenbegrünung und grüne Gleise fördern",
+          "ursachen_ids": [
+            1804
+          ],
+          "ursachen_offen": [
+            1803
+          ],
+          "zitat": "Zur Klimaanpassung setzen wir verstärkt auf das Prinzip der Schwammstadt beziehungsweise Schwammlandschaft und fördern Dach- und Fassadenbegrünung sowie grüne Gleise.",
+          "seite": 93
+        },
+        {
+          "beschreibung": "Entsiegelung ungenutzter Asphaltflächen und Entsiegelungskataster zur Auswahl geeigneter Orte",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Weiterhin fordern wir die Entsiegelung nicht genutzter Asphaltflächen und die Einführung eines Entsiegelungskatasters zur Erfassung versiegelter Flächen.",
+          "seite": 9
+        },
+        {
+          "beschreibung": "Täglichen Flächenverbrauch senken, 30-Hektar-Ziel gegenüber Kommunen einfordern",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Der tägliche Flächenverbrauch soll bis 2030 deutlich gesenkt werden, wobei das 30-Hektar-Ziel der Bundesregierung eingehalten und gegenüber Kommunen stärker eingefordert wird.",
+          "seite": 93
+        },
+        {
+          "beschreibung": "Bebauung in Überschwemmungsgebieten untersagen (Ausnahmen für PV-Anlagen und landwirtschaftliche Unterstände)",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Wir setzen uns entschieden dafür ein, die Be- […] bauung in Überschwemmungsgebieten zu untersagen, um den Hochwasserschutz zu stärken.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Natürlichen Wasserrückhalt in der Fläche durch naturnahen Hochwasserschutz fördern",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Wir fordern, dass der natürliche Wasserrückhalt in der Fläche durch Maßnahmen des naturnahen Hochwasserschutzes gefördert und gestärkt wird",
+          "seite": 12
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Klimaanpassung der Stadt durch Stadtdurchlüftung und Verschattung sowie Gesundheitsvorsorge und Vorbereitung auf Extremwetter.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir wollen die Klimaresilienz unserer Stadt stärken: durch Maßnahmen zur Stadtdurchlüftung und zur Verschattung, zum Wassermanagement, zur Vorbereitung auf Extremwetterereignisse, zur Gesundheitsvorsorge und zum regelmäßigen Monitoring von Klimaveränderungen.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Straßenbäume regelmäßig nachpflanzen, dauerhaft pflegen und bewässern.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir wollen die gärtnerische und ökologische Qualität der Grünflächen erhöhen, unsere Straßenbäume regelmäßig nachpflanzen und deren kontinuierliche Pflege und Bewässerung sicherstellen.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Regenwassermanagement flächendeckend anstoßen und fördern, mit mehr Stauraum in der Kanalisation und dezentralem Versickern an Gebäuden und Straßen.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Dazu werden wir flächendeckend Maßnahmen zum Regenwassermanagement anstoßen und fördern. Neben Maßnahmen zur Schaffung von Stauraum in der Kanalisation setzen wir vor allem auf dezentrale Ansätze zum Auffangen und Versickern von Regenwasser an Gebäuden und im Straßenraum.",
+          "seite": 89
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            89
+          ],
+          "grund": "Keine Treffer; Kapitel Umwelt und Klima gelesen, nichts zu Hochwasserschutz oder Bauen in Überschwemmungsgebieten."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Innerstädtische Grünflächen, Kleingärten und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "die Entwicklung innerstädtischer Grünflächen, Kleingartenanlagen und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Hochwasser- und Küstenschutzprogramme fortsetzen und regelmäßig überprüfen; naturnahe und technische Maßnahmen nach Wirksamkeit kombinieren.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] uns für die Fortsetzung und regelmäßige Überprüfung der Hochwasser- und Küstenschutzprogramme einsetzen.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Bestehende Retentionsräume sichern, wo sie für nachgewiesenen Hochwasserschutz erforderlich sind.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] bestehende Retentionsräume dort sichern, wo sie für den nachgewiesenen Hochwasserschutz erforderlich sind.",
+          "seite": 35
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1804,
+          "seiten": [
+            31,
+            129
+          ],
+          "grund": "S. 31 nur allgemeines Bekenntnis zum Flächenverbrauch ohne Zusage; S. 129 Warnsysteme bei Starkregen, keine Entsiegelung oder Rückhalt."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Naturschutzmaßnahmen sollen besonders in städtischen Räumen ansetzen, wo Grünflächen, Alleen und Parks zur sommerlichen Kühlung beitragen.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Nehmen wir für Maßnahmen zur Verbesserung von Ökosystemen besonders urbane Räume in den Blick.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Innenentwicklung (Ortskerne, Brachflächen) hat Vorrang vor zusätzlichem Flächenverbrauch.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Innenentwicklung hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Landesfonds für Katastrophenschutz, der bei Großschadenslagen wie Hochwasser schnell Mittel bereitstellt.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1805
+          ],
+          "zitat": "Wir fordern zusätzlich die Einrichtung eines rechtlich selbstständigen Landesfonds für Katastrophenschutz, der bei Großschadenslagen (zum Beispiel Großbränden, Hochwasser) zum Einsatz kommt.",
+          "seite": 48
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Verpflichtende Entsiegelung, wo mit geringem Aufwand möglich, und Flächensparprogramme; Anreize für private Eigentümer zur Teilentsiegelung",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir setzen dagegen auf Flächensparprogramme und verpflichtende Entsiegelung, wo dies sinnvoll und mit geringem Aufwand möglich ist. Private Eigentümer sollen gezielt Anreize erhalten, ihre Flächen teilweise zu entsiegeln.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Jeder gefällte Baum in Berlin wird nachgepflanzt; Nachpflanzpflicht konsequenter durchsetzen und per Baumbilanz kontrollieren",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Künftig muss gelten: Jeder in Berlin gefällte Baum wird nachgepflanzt. Wir werden die Nachpflanzpflicht konsequenter durchsetzen und durch transparente Baumbilanzen kontrollieren.",
+          "seite": 79
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Leerstände durch geförderte Sanierung und Umbau nutzbar machen, damit neuer Wohnraum ohne zusätzlichen Flächenverbrauch entsteht",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Leerstände machen wir durch Förderung von Sanierungen und Umbauten nutzbar, so entsteht neuer Wohnraum ohne zusätzlichen Flächenfraß.",
+          "seite": 90
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1803,
+          "seiten": [
+            17
+          ],
+          "grund": "Einziger Treffer (Kühlung) betrifft Rechenzentren, nicht Stadt- oder Gebäudehitze; sonst nichts zu Hitze im Programm."
+        },
+        {
+          "ursache": 1805,
+          "seiten": [
+            17,
+            80
+          ],
+          "grund": "Kein Hochwasserschutz, keine Begrenzung des Bauens in Überschwemmungsgebieten; Küstenschutz nur als Schiffbau-Aufgabe und Argument gegen das LNG-Terminal; Katastrophenschutz nur Ehrenamt ohne Hochwasserbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Mehr Überflutungsflächen schaffen, Versiegelungen und Einengungen entlang der Flussläufe abbauen und laufende Hochwasserschutzmaßnahmen zügig vollenden.",
+          "ursachen_ids": [
+            1805
+          ],
+          "ursachen_offen": [
+            1804
+          ],
+          "zitat": "In diesem Zusammenhang werden wir, um künftige Hochwasserlagen besser beherrschen zu können, mehr Überflutungsflächen schaffen und Versiegelungen oder Einengungen entlang der Flussläufe in Sachsen-Anhalt abbauen.",
+          "seite": 205
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1803,
+          "seiten": [
+            166,
+            167
+          ],
+          "grund": "Keine Zusage zu Stadtgrün, Verschattung oder Gebäudehitzeschutz; Kapitel Klimaanpassung nur Mikroklima/Windkraft-Argumentation."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Verbindlicher Mindestanteil an Grünflächen bei allen Neubauvorhaben (Biotopflächenfaktor), gegen Hitze und für bessere Regenversickerung.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Bei allen Neubauvorhaben werden wir einen verbindlichen Mindestanteil an Grünflächen vorschreiben (Biotopflächenfaktor), um Hitze zu reduzieren, Lebensräume für Tiere und Pflanzen zu sichern und die Versickerung von Regen zu verbessern.",
+          "seite": 202
+        },
+        {
+          "beschreibung": "Netto-Null-Versiegelung bis 2030: Wo versiegelt wird, wird in gleicher Größe entsiegelt; Entsiegelungsprogramm umsetzen.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir treten für eine Netto-Null-Versiegelung bis 2030 ein. Wo versiegelt wird, muss innerhalb Berlins in gleicher Größe entsiegelt werden. Das Entsiegelungsprogramm wird in der nächsten Wahlperiode konsequent umgesetzt.",
+          "seite": 202
+        },
+        {
+          "beschreibung": "Schwammstadt durch Entsiegelung, Regenwassermanagement und Versickerung vor Ort, auch im Liegenschaftsbestand.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Berlin verfolgt das Schwammstadtprinzip durch Entsiegelung, Regenwassermanagement und Ausbau und Pflege von Naturflächen. Das Regenwassermanagement wollen wir durch die Versickerung vor Ort auch im Liegenschaftsbestand für spätere Nutzung erweitern.",
+          "seite": 204
+        },
+        {
+          "beschreibung": "In sozial benachteiligten Kiezen Hitzeschutz und mehr Grünflächen und Stadtbäume konsequent umsetzen, auf Grundlage des Umweltgerechtigkeitsatlas.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Insbesondere in sozial benachteiligten Kiezen werden wir auf Grundlage des alle zwei Jahre zu aktualisierenden Umweltgerechtigkeitsatlas Maßnahmen zur Lärmminderung, Luftreinhaltung, zum Hitzeschutz und zur besseren Versorgung mit Grünflächen und Stadtbäumen konsequent umsetzen",
+          "seite": 201
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            202,
+            204
+          ],
+          "grund": "Keine Treffer; Kapitel Umwelt gelesen, nichts zu Hochwasserschutz oder Bauen in Überschwemmungsgebieten."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Flächensparziele und Flächenkontingente in der Raumordnung einführen, um den Flächenverbrauch zu begrenzen.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir wollen: […] Die Einführung von Flächensparzielen und Flächenkontingenten in der Raumordnung, sowie eine dem Klimaschutz angepasste Entwicklung von Industrie- und Gewerbeflächen.",
+          "seite": 22
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1803,
+          "seiten": [
+            26
+          ],
+          "grund": "Keine Zusage zu Stadtgrün, Verschattung, Frischluft oder Hitzeschutz; Fundstelle S. 26 (Innenentwicklung vor Außenentwicklung) ohne Hitzebezug."
+        },
+        {
+          "ursache": 1805,
+          "seiten": [
+            20,
+            22
+          ],
+          "grund": "Katastrophenschutz-Ausbau (S. 20) ohne Hochwasserschutz im Zitat (R8); Wasserrückhalt/Moorwiedervernässung (S. 22) ohne Siedlungs- oder Hochwasserbezug; kein Deich-, Polder- oder Bauverbotsversprechen."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesfonds, der Kommunen und Eigentümer beim Rückbau versiegelter Flächen unterstützt.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir wollen: […] einen Landesfonds für Entsiegelung schaffen, der Kommunen und Eigentümer:innen beim Rückbau versiegelter Flächen unterstützt und so mehr Grün in die Städte und Dörfer bringt.",
+          "seite": 113
+        },
+        {
+          "beschreibung": "Schwammstadtprinzip in Kommunen verankern und bei neuen Projekten sowie Sanierungen anwenden.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir wollen: […] das Schwammstadtprinzip in Kommunen verankern und bei neuen Projekten sowie Sanierungen anwenden,",
+          "seite": 127
+        },
+        {
+          "beschreibung": "Regenrückhalt systematisch stärken, damit Wasser in der Fläche bleibt.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Wir wollen: […] Regenrückhalt systematisch stärken, damit Wasser in der Fläche bleibt und nicht unkontrolliert abfließt,",
+          "seite": 127
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            94,
+            127,
+            131,
+            133
+          ],
+          "grund": "Keine Zusage zu Hochwasserschutz oder Bauen in Überschwemmungsgebieten; Treffer 'polder' sind 'Pol der Hoffnung'. S. 94 Tourismusprogramm, S. 131 Risikokarten, S. 133 Feuerwehrausstattung ohne Hochwasserschutz (R8)."
+        },
+        {
+          "ursache": 1803,
+          "seiten": [
+            19,
+            126,
+            127
+          ],
+          "grund": "Nur allgemeine Zusagen (blau-grüne Infrastruktur, 'mehr Stadtgrün') ohne Hitze- oder Kühlbezug im Zusagesatz."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Baumoffensiven mit verlässlicher Haushaltsfinanzierung und Priorität für Neupflanzungen und Pflege, um die Hitze zu senken.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir wollen, dass aus diesen Beschlüssen echte Baumoffensiven werden. Dazu gehören eine verlässliche Finanzierung im Haushalt und klare Priorität für Neupflanzungen und Pflege. Bäume sind unsere beste Klimaanlage.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Verbindliche Begrünungspflichten für Neubauten: begrünte Dächer, Fassaden und Innenhöfe als Regel.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1803
+          ],
+          "zitat": "Verbindliche Begrünungspflichten für Neubauten: begrünte Dächer, Fassaden und Innenhöfe sollen die Regel sein.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Asphaltflächen entsiegeln, damit Regenwasser versickern kann und Schatten entsteht.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Entsiegelung statt Versiegelung: Asphaltflächen müssen, wo immer möglich, für Regenwasser, Schatten und Leben weichen.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Schwammstadt-Prinzip als Leitlinie aller Planungen: Regenwasser vor Ort versickern, speichern oder nutzen statt in die Kanalisation leiten.",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Das Schwammstadt-Prinzip soll Leitlinie aller Planungen werden: Regenwasser soll nicht in die Kanalisation fließen, sondern vor Ort versickern, gespeichert oder zur Bewässerung genutzt werden.",
+          "seite": 56
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Land fördert Rückhaltebecken, Naturteiche und Feuchtpuffer als Teil eines aktiven Wassermanagements.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1805
+          ],
+          "zitat": "Ausbau eines aktiven Wassermanagements: Wir fördern Rückhaltebecken, Naturteiche, Gewässerrandstreifen, Feuchtpuffer und Bewässerungskonzepte",
+          "seite": 85
+        },
+        {
+          "beschreibung": "Ausbau einer leistungsfähigen Regenwasserinfrastruktur, bezogen auf Einträge in Gewässer.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            1804
+          ],
+          "zitat": "Ausbau einer leistungsfähigen Regenwasserinfrastruktur, um Einträge in Flüsse, Seen und Ostsee wirksam zu verringern.",
+          "seite": 85
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1803,
+          "seiten": [
+            21,
+            84,
+            86
+          ],
+          "grund": "Kein Stadtgrün, Verschattung oder Gebäudehitzeschutz; Hitze wird nicht erwähnt."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Städte und Gemeinden klimaangepasst umbauen: entsiegeln, mehr Grünflächen, Schwammstadt, Grünfassaden und Schattenräume gegen Hitze und Starkregen",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Die zunehmende Flächenversiegelung verschärft Hitze- und Starkregenprobleme. Sachsen-Anhalt muss deshalb konsequent auf Entsiegelung, Grünflächen, Schwammstadt-Konzepte, Rückhaltebecken, Grünfassaden, Schattenräume und kühlende Elemente im öffentlichen Raum setzen.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Regenwasser in Siedlungen gezielt versickern lassen statt nur abzuleiten; Schwammstadt mit Rückhalt, Versickerung und Verdunstung",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Regenwasser darf nicht länger ausschließlich abgeleitet werden, sondern muss gezielt versickern und dem natürlichen Wasserhaushalt wieder zugeführt werden.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Deichrückverlegungen und Auenrenaturierung, um Überschwemmungsflächen zurückzugewinnen",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Das BSW setzt sich daher für Deichrückverlegungen und die Renaturierung von Auen ein.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Baurecht so gestalten, dass in hochwassergefährdeten Zonen keine neuen Baugebiete entstehen",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Das Baurecht ist so auszugestalten, dass keine neuen Baugebiete in hochwassergefährdeten Zonen entstehen.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Bestehende Hochwasserschutzanlagen modernisieren und an das veränderte Klima anpassen",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Bestehende Schutzanlagen müssen modernisiert und an die veränderten klimatischen Bedingungen angepasst werden.",
+          "seite": 84
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Regenwasser vor Ort speichern, versiegelte Flächen auf Plätzen und Straßen durch sickerfähige Böden ersetzen (Entsiegelungsoffensive), Genehmigung von Dach- und Fassadenbegrünung vereinfachen.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Wir speichern Regenwasser vor Ort, statt es ungenutzt in die Kanalisation zu leiten. So verhindern wir Überflutungen bei Starkregen, stabilisieren das Grundwasser und kühlen das Stadtklima aktiv durch Verdunstung. Dafür initiieren wir eine systematische Entsiegelungsoffensive",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Hitze-Aktionsplan mit Koordination und Finanzierung ausbauen, mehr Straßenbäume pflanzen für schattige Aufenthaltsorte.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir bauen den Berliner Hitze-Aktionsplan strukturell aus: mit zentraler Koordination, gesicherter Finanzierung und wissenschaftlicher Begleitung. […] Die Anpflanzung von mehr Straßenbäumen sorgt zudem für schattige und barrierefreie Aufenthaltsorte.",
+          "seite": 97
+        },
+        {
+          "beschreibung": "Baurecht anpassen, damit Hitzeschutz an Gebäuden wie Begrünung und Verschattung unbürokratisch möglich wird.",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Wir passen das Baurecht an, um Hitzeschutzmaßnahmen, wie Begrünung und Verschattung, unbürokratisch zu ermöglichen.",
+          "seite": 95
+        },
+        {
+          "beschreibung": "Bei der Umgestaltung der Kieze Entsiegelung, Begrünung und Regenwassermanagement umsetzen, um sie gegen Hitze und Starkregen widerstandsfähiger zu machen.",
+          "ursachen_ids": [
+            1803,
+            1804
+          ],
+          "zitat": "Gleichzeitig nutzen wir die Umgestaltung für Entsiegelung, Begrünung und Regenwassermanagement, um Berlins Kieze widerstandsfähiger gegen Hitze und Starkregen zu machen.",
+          "seite": 35
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1805,
+          "seiten": [
+            97
+          ],
+          "grund": "Nur Auenrenaturierung zur Trinkwassersicherung ohne Hochwasserbezug; nichts zu Überschwemmungsgebieten oder Hochwasserschutz."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Deiche an der Ostseeküste gezielt umbauen, sodass sie Hochwasserschutz mit Radwegen und Naherholung verbinden.",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Multifunktionale Deiche ausbauen Gezielter Umbau der Deiche, damit sie Hochwasserschutz, Radwege und […] verbinden.",
+          "seite": 41
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 1803,
+          "seiten": [
+            19,
+            20,
+            41
+          ],
+          "grund": "Kein Stadtgrün, keine Verschattung oder Hitzeschutz im Programm; Fundstellen ohne Bezug."
+        },
+        {
+          "ursache": 1804,
+          "seiten": [
+            57,
+            59,
+            60
+          ],
+          "grund": "Treffer betreffen Verkehr (Flächenverbrauch) und Bauland/Bodenpolitik, nicht Entsiegelung oder Regenwasser."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Baumpflanzprogramme in Städten und Dörfern zur Verschattung von Straßen, Plätzen und Schulwegen",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Baumpflanzprogramme in Städten und Dörfern zur Verschattung von Straßen, Plätzen und Schulwegen durchführen",
+          "seite": 179
+        },
+        {
+          "beschreibung": "Landesweiter Entsiegelungsfonds für Kommunen zur Förderung von Rückbauprojekten",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Landesweiter Entsiegelungsfonds für Kommunen zur gezielten Förderung von Rückbauprojekten schaffen",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Schulen, Kitas und Pflegeheime mit Kühlsystemen ausstatten",
+          "ursachen_ids": [
+            1803
+          ],
+          "zitat": "Ausstattung von Schulen, Kitas und Pflegeheimen mit reversiblen Wärmepumpen und Kühlsystemen, bevorzugt auf Basis erneuerbarer Energien",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Mehr Überflutungsflächen und natürliche Rückhalteräume für Hochwasser aufbauen",
+          "ursachen_ids": [
+            1805
+          ],
+          "zitat": "Mehr Überflutungsflächen und natürliche Rückhalteräume für Hochwasser aufbauen",
+          "seite": 180
+        },
+        {
+          "beschreibung": "Kanalisationen digital steuerbar machen, um Starkregen abzufedern",
+          "ursachen_ids": [
+            1804
+          ],
+          "zitat": "Kanalisationen digital steuerbar machen",
+          "seite": 180
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "1801": {
+      "Erwärmung begrenzen, Emissionen senken": [
+        "klimaschutzgesetz",
+        "treibhausgas",
+        "klimaneutral",
+        "klimaziel",
+        "emissionshandel",
+        "co2-preis",
+        "co₂-preis",
+        "co2-bepreisung",
+        "co₂-bepreisung",
+        "pariser",
+        "klimaschutzziel",
+        "klimaschutzpolitik",
+        "klimaschutzprogramm",
+        "klimaschutzvertr"
+      ],
+      "Klimaschutz begrenzen, Kosten senken": [
+        "klimapolitik",
+        "heizungsgesetz",
+        "gebäudeenergiegesetz",
+        "verbrennerverbot",
+        "green deal",
+        "klimaideologie",
+        "dekarbonisierung"
+      ],
+      "Energie und Emissionsquellen": [
+        "erneuerbare energie",
+        "windkraft",
+        "windenergie",
+        "kernkraft",
+        "kernenergie",
+        "atomkraft",
+        "kohleausstieg",
+        "kohlekraft",
+        "abscheidung",
+        "wiedervernässung",
+        "aufforstung"
+      ],
+      "Hitzeanpassung": [
+        "klimaanpassung",
+        "anpassung an den klimawandel",
+        "klimafolgen",
+        "klimawandel",
+        "erderwärmung",
+        "klimaresilien"
+      ]
+    },
+    "1802": {
+      "Hitzeaktionspläne, Warnung, Schutz Verletzlicher": [
+        "hitze",
+        "trinkbrunnen",
+        "trinkwasserbrunnen",
+        "kühlräume",
+        "kühle orte",
+        "tropennacht"
+      ]
+    },
+    "1803": {
+      "Stadtgrün, Verschattung, Frischluft": [
+        "stadtgrün",
+        "stadtbäume",
+        "straßenbäume",
+        "stadtbaum",
+        "begrünung",
+        "gründach",
+        "grünfläche",
+        "frischluft",
+        "kaltluft",
+        "verschattung",
+        "wärmeinsel",
+        "stadtklima"
+      ],
+      "Bauvorschriften und Gebäudehitzeschutz": [
+        "sommerlicher wärmeschutz",
+        "außenverschattung",
+        "kühlung"
+      ],
+      "Nachverdichtung nicht bremsen": [
+        "nachverdichtung",
+        "innenentwicklung"
+      ]
+    },
+    "1804": {
+      "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": [
+        "entsiegel",
+        "versiegel",
+        "schwammstadt",
+        "flächenverbrauch",
+        "flächenfraß",
+        "flächenneuinanspruchnahme"
+      ],
+      "Technischer Rückhalt, Kanal und Speicher": [
+        "regenwasser",
+        "versicker",
+        "starkregen",
+        "kanalisation",
+        "regenrückhalt",
+        "abwasser"
+      ],
+      "Bauland ausweisen, Bauen nicht verteuern": [
+        "baulandausweisung",
+        "neubaugebiet",
+        "flächenausweisung",
+        "bauland"
+      ]
+    },
+    "1805": {
+      "Bauverbot, Flächen freihalten, Rückbau": [
+        "überschwemmungsgebiet",
+        "überschwemmung",
+        "bauverbot",
+        "retention",
+        "flussauen",
+        "auenschutz",
+        "deichrückverlegung"
+      ],
+      "Technischer Hochwasserschutz": [
+        "hochwasser",
+        "deich",
+        "polder",
+        "rückhaltebecken",
+        "überflutung",
+        "flutkatastrophe",
+        "ahrtal"
+      ],
+      "Bauvorsorge der Eigentümer": [
+        "objektschutz",
+        "bauvorsorge",
+        "eigenvorsorge"
+      ]
+    },
+    "1806": {
+      "Pflichtversicherung, Angebotspflicht": [
+        "elementarschaden",
+        "elementarversicherung",
+        "pflichtversicherung",
+        "versicherungspflicht",
+        "opt-out",
+        "naturgefahren"
+      ],
+      "Rückversicherung, Prävention": [
+        "rückversicherung",
+        "versicherungsschutz"
+      ],
+      "Freiwillige Versicherung, staatliche Hilfen": [
+        "soforthilfe",
+        "aufbauhilfe",
+        "fluthilfe",
+        "katastrophenhilfe",
+        "eigenverantwortung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "5813194c3ebb9bac018835039ba1c1670de3902ed2dcc39ae2d68a527e9d2917",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 1,
+              "stadtbaum": 0,
+              "begrünung": 3,
+              "gründach": 0,
+              "grünfläche": 1,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 1,
+              "wärmeinsel": 0,
+              "stadtklima": 1
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 2,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 1,
+              "versiegel": 0,
+              "schwammstadt": 1,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 2,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 1,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 1,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 1,
+              "flächenfraß": 1,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 4,
+              "deich": 2,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 1,
+              "versiegel": 2,
+              "schwammstadt": 0,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 1,
+              "deichrückverlegung": 1
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 2,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 1,
+              "stadtbäume": 2,
+              "straßenbäume": 0,
+              "stadtbaum": 1,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 5,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 1
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 3
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 1,
+              "versiegel": 2,
+              "schwammstadt": 1,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 5,
+              "versicker": 1,
+              "starkregen": 0,
+              "kanalisation": 2,
+              "regenrückhalt": 0,
+              "abwasser": 2
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 1,
+              "flächenausweisung": 0,
+              "bauland": 3
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 1,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 1,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 1,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 1,
+              "innenentwicklung": 1
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 2,
+              "schwammstadt": 0,
+              "flächenverbrauch": 2,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 1,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 1,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 6,
+              "deich": 1,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 1,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 1,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 1
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 1,
+              "schwammstadt": 1,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 1,
+              "starkregen": 3,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 1,
+              "flussauen": 0,
+              "auenschutz": 1,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 4,
+              "deich": 1,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 11,
+              "stadtbäume": 2,
+              "straßenbäume": 2,
+              "stadtbaum": 0,
+              "begrünung": 3,
+              "gründach": 0,
+              "grünfläche": 16,
+              "frischluft": 0,
+              "kaltluft": 2,
+              "verschattung": 1,
+              "wärmeinsel": 0,
+              "stadtklima": 4
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 5
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 5,
+              "innenentwicklung": 3
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 10,
+              "versiegel": 14,
+              "schwammstadt": 2,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 9,
+              "versicker": 2,
+              "starkregen": 7,
+              "kanalisation": 3,
+              "regenrückhalt": 0,
+              "abwasser": 3
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 5
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 1
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 1,
+              "innenentwicklung": 1
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 1,
+              "schwammstadt": 1,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 5,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 2
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 2,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 4,
+              "gründach": 0,
+              "grünfläche": 3,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 2,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 1
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 1,
+              "innenentwicklung": 1
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 5,
+              "versiegel": 10,
+              "schwammstadt": 1,
+              "flächenverbrauch": 6,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 1,
+              "überschwemmung": 2,
+              "bauverbot": 0,
+              "retention": 1,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 11,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 1,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 4,
+              "stadtbäume": 0,
+              "straßenbäume": 5,
+              "stadtbaum": 0,
+              "begrünung": 3,
+              "gründach": 0,
+              "grünfläche": 9,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 1,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 1,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 5,
+              "versicker": 2,
+              "starkregen": 1,
+              "kanalisation": 2,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 1,
+              "flächenausweisung": 0,
+              "bauland": 3
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 1,
+              "frischluft": 0,
+              "kaltluft": 1,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 1,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 1,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 3,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 1,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 1
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 1
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 2,
+              "stadtbäume": 0,
+              "straßenbäume": 1,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 5,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 3,
+              "versiegel": 4,
+              "schwammstadt": 0,
+              "flächenverbrauch": 2,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 3,
+              "versicker": 2,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 2
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 1
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 3,
+              "schwammstadt": 0,
+              "flächenverbrauch": 0,
+              "flächenfraß": 1,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 1,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 4,
+              "schwammstadt": 0,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 1,
+              "versicker": 1,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 2
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 5,
+              "deich": 1,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 2,
+              "flutkatastrophe": 0,
+              "ahrtal": 1
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 5,
+              "stadtbäume": 3,
+              "straßenbäume": 1,
+              "stadtbaum": 0,
+              "begrünung": 3,
+              "gründach": 0,
+              "grünfläche": 21,
+              "frischluft": 0,
+              "kaltluft": 3,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 1
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 3
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 5,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 4,
+              "versiegel": 6,
+              "schwammstadt": 4,
+              "flächenverbrauch": 1,
+              "flächenfraß": 2,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 5,
+              "versicker": 4,
+              "starkregen": 0,
+              "kanalisation": 1,
+              "regenrückhalt": 0,
+              "abwasser": 5
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 1,
+              "flächenausweisung": 0,
+              "bauland": 5
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 1
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 1,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 1
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 5,
+              "versiegel": 4,
+              "schwammstadt": 1,
+              "flächenverbrauch": 2,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 2,
+              "starkregen": 2,
+              "kanalisation": 0,
+              "regenrückhalt": 1,
+              "abwasser": 8
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 1,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 5,
+              "deich": 0,
+              "polder": 34,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 1,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 2,
+              "gründach": 0,
+              "grünfläche": 3,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 2,
+              "versiegel": 2,
+              "schwammstadt": 2,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 3,
+              "versicker": 1,
+              "starkregen": 0,
+              "kanalisation": 1,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 2
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 2,
+              "schwammstadt": 0,
+              "flächenverbrauch": 2,
+              "flächenfraß": 1,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 1,
+              "versicker": 0,
+              "starkregen": 2,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 1,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 1,
+              "gründach": 0,
+              "grünfläche": 2,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 2
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 1,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 3,
+              "versiegel": 8,
+              "schwammstadt": 3,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 2,
+              "versicker": 2,
+              "starkregen": 4,
+              "kanalisation": 1,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 1,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 2
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 10,
+              "deich": 2,
+              "polder": 0,
+              "rückhaltebecken": 1,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 1,
+              "straßenbäume": 1,
+              "stadtbaum": 0,
+              "begrünung": 5,
+              "gründach": 0,
+              "grünfläche": 7,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 1,
+              "wärmeinsel": 0,
+              "stadtklima": 1
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 4,
+              "versiegel": 1,
+              "schwammstadt": 3,
+              "flächenverbrauch": 0,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 3,
+              "versicker": 0,
+              "starkregen": 5,
+              "kanalisation": 1,
+              "regenrückhalt": 0,
+              "abwasser": 2
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 1,
+              "flächenausweisung": 0,
+              "bauland": 1
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 0,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 2,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 0,
+              "gründach": 0,
+              "grünfläche": 0,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 0,
+              "wärmeinsel": 0,
+              "stadtklima": 0
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 0
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 0,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 0,
+              "versiegel": 0,
+              "schwammstadt": 0,
+              "flächenverbrauch": 1,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 0,
+              "versicker": 0,
+              "starkregen": 0,
+              "kanalisation": 0,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 2
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 0,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 0,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 1,
+              "deich": 2,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 0,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "1803": {
+            "Stadtgrün, Verschattung, Frischluft": {
+              "stadtgrün": 0,
+              "stadtbäume": 0,
+              "straßenbäume": 0,
+              "stadtbaum": 0,
+              "begrünung": 10,
+              "gründach": 0,
+              "grünfläche": 6,
+              "frischluft": 0,
+              "kaltluft": 0,
+              "verschattung": 3,
+              "wärmeinsel": 0,
+              "stadtklima": 4
+            },
+            "Bauvorschriften und Gebäudehitzeschutz": {
+              "sommerlicher wärmeschutz": 0,
+              "außenverschattung": 0,
+              "kühlung": 5
+            },
+            "Nachverdichtung nicht bremsen": {
+              "nachverdichtung": 3,
+              "innenentwicklung": 0
+            }
+          },
+          "1804": {
+            "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen": {
+              "entsiegel": 15,
+              "versiegel": 9,
+              "schwammstadt": 3,
+              "flächenverbrauch": 2,
+              "flächenfraß": 0,
+              "flächenneuinanspruchnahme": 0
+            },
+            "Technischer Rückhalt, Kanal und Speicher": {
+              "regenwasser": 3,
+              "versicker": 0,
+              "starkregen": 11,
+              "kanalisation": 1,
+              "regenrückhalt": 0,
+              "abwasser": 0
+            },
+            "Bauland ausweisen, Bauen nicht verteuern": {
+              "baulandausweisung": 0,
+              "neubaugebiet": 0,
+              "flächenausweisung": 0,
+              "bauland": 0
+            }
+          },
+          "1805": {
+            "Bauverbot, Flächen freihalten, Rückbau": {
+              "überschwemmungsgebiet": 0,
+              "überschwemmung": 1,
+              "bauverbot": 0,
+              "retention": 0,
+              "flussauen": 0,
+              "auenschutz": 1,
+              "deichrückverlegung": 0
+            },
+            "Technischer Hochwasserschutz": {
+              "hochwasser": 7,
+              "deich": 0,
+              "polder": 0,
+              "rückhaltebecken": 0,
+              "überflutung": 7,
+              "flutkatastrophe": 0,
+              "ahrtal": 0
+            },
+            "Bauvorsorge der Eigentümer": {
+              "objektschutz": 0,
+              "bauvorsorge": 0,
+              "eigenvorsorge": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

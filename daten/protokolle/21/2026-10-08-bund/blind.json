@@ -1,0 +1,328 @@
+{
+  "pruefsumme": "fa1bd8e19f7e763f14d2ae73a7dcccc57c131808d3724676c2a4318af5823060",
+  "thema": {
+    "id": 21,
+    "name": "Armut und Kinderarmut",
+    "ziel": "Menschen und ihre Kinder können ihren notwendigen Lebensunterhalt dauerhaft sichern und am gesellschaftlichen Leben teilnehmen."
+  },
+  "ursachen": [
+    {
+      "id": 2101,
+      "beschreibung": "Auch mit Grundsicherung bleibt bei manchen Haushalten eine Versorgungslücke: Rund drei Viertel der Tafelbesuchenden lebten 2020 in Haushalten mit Grundsicherungsbezug",
+      "ebene": "bund"
+    },
+    {
+      "id": 2102,
+      "beschreibung": "Familienressourcen sichern den Lebensunterhalt von Kindern nicht immer: 2022 waren etwa 31 % der Alleinerziehenden armutsgefährdet (2018: rund 37 %)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2103,
+      "beschreibung": "Ein Teil der Anspruchsberechtigten nimmt Grundsicherung nicht in Anspruch; laut IAB-Studie (2012) sind Höhe des Anspruchs und erwartete Bezugsdauer die entscheidenden Einflussfaktoren",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2101,
+        2102,
+        2103
+      ],
+      "text": "Zu 2101 gehören Höhe und Bemessung der Grundsicherung (Regelsatz, Existenzminimum), zu 2102 Familienleistungen und Kindersicherung (Kindergeld, Kinderzuschlag, Kindergrundsicherung, Unterhaltsvorschuss, Alleinerziehende), zu 2103 Zugang und Beantragung (Information, automatische Auszahlung, Vereinfachung). Dieselbe Maßnahme zählt nur dort, wo das Zitat die Wirkung nennt."
+    },
+    {
+      "nr": 2,
+      "text": "Löhne und Arbeitsmarkt (Mindestlohn, Niedriglohn, Hinzuverdienst), Wohnen, Energie, Kita, Schule und Rente gehören zu eigenen Themen. Sanktionen und Kürzungen der Grundsicherung gehören zur Haltung, nicht zu diesem Thema."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Regelbedarfssätze der Grundsicherung (Bürgergeld) an die tatsächliche Preisentwicklung des Warenkorbs anpassen.",
+      "zitat": "Dazu wollen wir […] die Regelbedarfssätze an die tatsächliche Inflationsentwicklung des Bürgergeld-Warenkorbs anpassen.",
+      "ursachen_ids": [
+        2101
+      ],
+      "pruefsumme": "8b8f02c84fd2b013"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Bürgergeld wird zu einer sanktionsfreien, individuellen Mindestsicherung umgebaut, die sich an der Armutsgefährdungsgrenze orientiert.",
+      "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen […] Um Armut zu verhindern, orientieren wir uns an der sogenannten Armutsgefährdungsgrenze, gegenwärtig rund 1 400 Euro monatlich",
+      "ursachen_ids": [
+        2101
+      ],
+      "pruefsumme": "d48cff2d722c92e7"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Beim Wechselmodell nach Trennung das Existenzminimum von Eltern und Kindern in beiden Haushalten sichern.",
+      "zitat": "Beim Wechselmodell muss das Existenzminimum von Eltern und Kindern in beiden Haushalten gesichert werden.",
+      "ursachen_ids": [
+        2102
+      ],
+      "ursachen_offen": [
+        2101
+      ],
+      "pruefsumme": "2f0a1669c61890f6"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld und weitere Familienleistungen entbürokratisieren, digitalisieren und automatisieren, etwa über KI-gestützte Beantragung und ein Kinderchancenportal.",
+      "zitat": "Das Elterngeld sowie weitere Familienleistungen müssen entbürokratisiert, digitalisiert und automatisiert werden, z. B. durch eine KI-basierte Beantragung und einem Kinderchancenportal.",
+      "ursachen_ids": [
+        2103
+      ],
+      "pruefsumme": "1108c4d92c0a4427"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern, um Familien und Alleinerziehende zu entlasten.",
+      "zitat": "Um Familien und Alleinerziehende stärker zu entlasten, wollen wir die steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "b0931ef9f84691ed"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Digitales Portal für alle Familienleistungen schaffen, Familienleistungen bündeln und einfacher zugänglich machen.",
+      "zitat": "Wir wollen ein übergreifendes digitales Portal für alle Familienleistungen, damit Familien die ihnen zustehenden Leistungen einfach und unbürokratisch erhalten können.",
+      "ursachen_ids": [
+        2103
+      ],
+      "pruefsumme": "212e39a45951170a"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Die jährliche Anpassung der Grundsicherung soll so modernisiert werden, dass überproportionale Erhöhungen gegenüber der Lohnentwicklung künftig verhindert werden.",
+      "zitat": "Viele Arbeitnehmerinnen und Arbeitnehmer konnten die überproportionale Erhöhung des sogenannten „Bürgergelds“ nicht nachvollziehen. Denn ihre Löhne sind nicht im selben Maße gestiegen. Solche Fälle wollen wir in Zukunft verhindern.",
+      "ursachen_ids": [
+        2101
+      ],
+      "pruefsumme": "932cf005b800459d"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Familien mit niedrigem Erwerbseinkommen sollen durch Kindergeld, Kinderzuschlag und Wohngeld ohne ergänzendes Bürgergeld auskommen.",
+      "zitat": "Im nächsten Schritt wollen wir erreichen, dass Familien – insbesondere auch Alleinerziehende – mit eigenem niedrigem Lohneinkommen mit einer Kombination aus Kindergeld, Kinderzuschlag und Wohngeld nicht auf ergänzendes Bürgergeld angewiesen sind.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "feb3789839afe9b8"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Bürgergeld-Regelsatz regelmäßig anpassen, damit das soziokulturelle Existenzminimum garantiert bleibt.",
+      "zitat": "Wir lassen nicht zu, dass der Regelsatz darunter sinkt. Deshalb passen wir das Bürgergeld regelmäßig an, damit das soziokulturelle Existenzminimum immer garantiert ist.",
+      "ursachen_ids": [
+        2101
+      ],
+      "pruefsumme": "317c6ce7049cddf5"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Eigenständige Kindergrundsicherung, die Kindergeld, Kinderzuschlag, Unterkunftskosten und Sonderbedarfe bündelt.",
+      "zitat": "Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "b35c3c945d1be1fc"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Kindergrundsicherungs-Check: Familien werden ab der Geburt aktiv über ihre Ansprüche informiert.",
+      "zitat": "Dazu führen wir einen Kindergrundsicherungs-Check ein, der prüft, in welcher Höhe ein Kind Ansprüche auf Unterstützung hat und die Familien aktiv darüber informiert.",
+      "ursachen_ids": [
+        2103
+      ],
+      "pruefsumme": "eab9ece301a367ab"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Steuerlichen Entlastungsbetrag für Alleinerziehende erhöhen.",
+      "zitat": "Sie sind besonders armutsgefährdet, selbst wenn sie arbeiten. Deshalb erhöhen wir den steuerlichen Entlastungsbetrag.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "aba3cc7486af3489"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Existenzminimum für Kinder armutsfest neu berechnen; Alleinerziehende bei Anrechnung von Unterhalt und Einkommen besser stellen.",
+      "zitat": "Für den Kampf gegen Kinderarmut wollen wir neben der Modernisierung der Verwaltung eine armutsfeste Neuberechnung des soziokulturellen Existenzminimums für Kinder sowie eine bessere Unterstützung und Entlastung von Alleinerziehenden bei der Anrechnung von Unterhalt und Einkommen.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "4bafba500ef651f1"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Kindergeld erhöhen, im Gegenzug Ehegattensplitting abschaffen.",
+      "zitat": "Abschaffung des Ehegattensplittings: Das Ehegattensplitting wird abgeschafft. Stattdessen wird das Kindergeld erhöht, um Familien gezielt zu fördern.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "2892ee85f7adfa7b"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Mehrwertsteuer auf Artikel des Kinderbedarfs auf den ermäßigten Satz senken.",
+      "zitat": "Die Mehrwertsteuer für Artikel des Kinderbedarfs soll auf 7 % reduziert werden.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "7a747b6e6979fe74"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Freibetrag für Alleinerziehende zur Steuergutschrift ausbauen; Kindergeld nur zur Hälfte auf den Unterhaltsvorschuss anrechnen.",
+      "zitat": "Dafür bauen wir den bestehenden Freibetrag für Alleinerziehende zu einer Steuergutschrift aus, wovon besonders kleine und mittlere Einkommen profitieren. Das Kindergeld rechnen wir nur noch zur Hälfte auf den Unterhaltsvorschuss an.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "5a832baa2e83921b"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Familiensplitting und höherer Kinderfreibetrag, um Familien mit mittlerem Einkommen steuerlich zu entlasten.",
+      "zitat": "[Partei] möchte mit dem steuerlichen Familiensplitting und einer Anhebung des Kinderfreibetrages insbesondere Familien mit mittlerem Einkommen entlasten.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "0717b633427c9b2a"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Zentrale Ansprechstelle, einfachere digitale Beantragung und möglichst automatische Auszahlung der Familienleistungen.",
+      "zitat": "Mit einer zentralen Ansprechstelle soll zudem die Zugänglichkeit dieser Leistungen weiter verbessert und die (digitale) Beantragung weiter erleichtert werden. Wo möglich sollen Leistungen automatisch beantragt und ausgezahlt werden.",
+      "ursachen_ids": [
+        2103
+      ],
+      "pruefsumme": "41504fc3bb181384"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Steuerlicher Kinderfreibetrag und Kindergeld sollen gleich hoch sein, damit jedes Kind dem Staat gleich viel wert ist.",
+      "zitat": "Dem Staat muss jedes Kind gleich viel wert sein: Der steuerliche Freibetrag des Chefarztes für seine Kinder sollte genauso hoch sein wie das Kindergeld, das eine Krankenschwester für ihre Kinder erhält.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "5e303de56b700813"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Unterhaltsvorschuss ausweiten: Kindergeld nicht mehr voll anrechnen, Bezug bis 25 Jahre.",
+      "zitat": "Den Unterhaltsvorschuss machen wir gerechter, indem u […] a […] das Kindergeld nicht mehr voll angerechnet und das Bezugsalter bis zum 25 […] Lebensjahr ausgeweitet wird",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "e7ef1467df2908a5"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Existenzsicherndes Grundeinkommen als negative Einkommensteuer, bei fehlendem Einkommen automatisch ohne Antrag ausgezahlt; ersetzt Sozialleistungen bis zur Armutsgrenze.",
+      "zitat": "Einführung eines Grundeinkommens: Ein existenzsicherndes Grundeinkommen wird eingeführt und bei fehlendem Einkommen automatisch und ohne Antrag ausgezahlt.",
+      "ursachen_ids": [
+        2101,
+        2103
+      ],
+      "pruefsumme": "e1022b5c4031531a"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Kinderfreibetrag in Richtung Grundfreibetrag der Eltern entwickeln, Kindergeld entsprechend anheben.",
+      "zitat": "Unser Ziel ist, den Kinderfreibetrag in Richtung des Grundfreibetrags der Eltern zu entwickeln. Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "789ebbdb48a7270e"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Kindergrundsicherung schnellstmöglich einführen, Anträge verschlanken und automatisieren.",
+      "zitat": "Deshalb wollen wir schnellstmöglich eine Kindergrundsicherung einführen. Mit ihr wollen wir Antragsverfahren weiter verschlanken und stetig automatisieren, damit Kinder und ihre Familien die ihnen zustehenden Leistungen auch tatsächlich erhalten.",
+      "ursachen_ids": [
+        2102,
+        2103
+      ],
+      "pruefsumme": "bff7c79951a6b335"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Mehr Kinderkrankentage und volles Kinderkrankengeld für Alleinerziehende zur finanziellen Absicherung.",
+      "zitat": "Ausbau der Unterstützung für alleinerziehende Personen: Die Anzahl der Kinderkrankentage wird auf 45 Arbeitstage und das Kinderkrankengeld auf 100 % des ausgefallenen Nettoarbeitsentgelts erhöht. Dies schafft mehr finanzielle Sicherheit für Alleinerziehende.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "f5fed55c21ac7d55"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Kindergeld gesetzlich an die Erhöhung des Kinderfreibetrags koppeln, später die Entlastung angleichen.",
+      "zitat": "Um der Ungleichheit der Entlastung zwischen Kinderfreibetrag und Kindergeld entgegenzuwirken, wollen wir zunächst die Höhe des Kindergeldes gesetzlich an die regelmäßige Erhöhung des Kinderfreibetrages koppeln.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "867f3c6edb0cc300"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Bürgergeld und Wohngeld in einer Leistung an einer staatlichen Stelle zusammenfassen, um Bürokratie und Komplexität zu verringern.",
+      "zitat": "Wir wollen das bürokratische Wirr-Warr der verschiedenen Sozialleistungen reduzieren, indem wir die steuerfinanzierten Sozialleistungen – wie das Bürgergeld und das Wohngeld – in einer Leistung und an einer staatlichen Stelle zusammenfassen.",
+      "ursachen_ids": [
+        2103
+      ],
+      "pruefsumme": "60ef31827130a135"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Regelsatz der Grundsicherung absenken, indem die Besitzstandsregelung abgeschafft wird.",
+      "zitat": "Der Regelsatz liegt im Jahr 2025 weiter über dem Bedarf. Deshalb wollen wir mit der Abschaffung der sogenannten Besitzstandsregelung die Voraussetzung dafür schaffen, den Regelsatz abzusenken.",
+      "ursachen_ids": [
+        2101
+      ],
+      "pruefsumme": "7fff9eb9e2f49251"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Der Entlastungsbetrag für Alleinerziehende wird in einen Abzug von der Steuerschuld umgewandelt.",
+      "zitat": "Für Alleinerziehende wollen wir den Entlastungsbetrag in einen Abzug von der Steuerschuld umwandeln.",
+      "ursachen_ids": [
+        2102
+      ],
+      "pruefsumme": "f401024e1158b699"
+    }
+  ]
+}

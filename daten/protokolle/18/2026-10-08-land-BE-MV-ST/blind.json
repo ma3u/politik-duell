@@ -1,0 +1,1057 @@
+{
+  "pruefsumme": "6b18bfde5942d4ea0ca080f2d5c4ad586a44645f5b4e00f4d5c515987b10d3bc",
+  "thema": {
+    "id": 18,
+    "name": "Hitze und Unwetter",
+    "ziel": "Menschen bleiben bei Hitze gesund und können Schäden durch Unwetter an Wohnung und Eigentum finanziell verkraften."
+  },
+  "ursachen": [
+    {
+      "id": 1801,
+      "beschreibung": "Hitze nimmt zu: Die Zahl der Heißen Tage (mindestens 30 °C) hat sich im Mittel über Deutschland seit den 1950er-Jahren von etwa 4 auf durchschnittlich 12 pro Jahr verdreifacht",
+      "ebene": "bund"
+    },
+    {
+      "id": 1802,
+      "beschreibung": "Hitze fordert Todesopfer: Das RKI schätzt für die Sommer 2023 und 2024 jeweils rund 3.000 hitzebedingte Sterbefälle, vor allem bei Menschen über 75 Jahren",
+      "ebene": "bund"
+    },
+    {
+      "id": 1803,
+      "beschreibung": "Großstädte heizen sich auf: In heißen Sommern gab es in Berlin bis zu 20 Tropennächte (Bundesmittel 1 bis 1,5), die Innenstadt war über 11 Kelvin wärmer als das Umland",
+      "ebene": "land"
+    },
+    {
+      "id": 1804,
+      "beschreibung": "Viel Fläche ist versiegelt: Ende 2018 waren etwa 45,1 % der Siedlungs- und Verkehrsfläche versiegelt, Regenwasser versickert dort kaum und fließt über die Kanalisation direkt in die Gewässer",
+      "ebene": "land"
+    },
+    {
+      "id": 1805,
+      "beschreibung": "Auch in Überschwemmungsgebieten wird weiter gebaut: Die bebaute Fläche dort wuchs in rund 20 Jahren bis 2021 um rund 100 km² (knapp 13 %), in rund der Hälfte der Gemeinden ist dort bebaut",
+      "ebene": "land"
+    },
+    {
+      "id": 1806,
+      "beschreibung": "Viele Wohngebäude sind nicht gegen Elementarschäden versichert: 2024 hatten 57 % eine Volldeckung (vorläufig), in Mecklenburg-Vorpommern 37 %, in Sachsen-Anhalt und Berlin 52 %",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        1801,
+        1802
+      ],
+      "text": "Maßnahmen, die Treibhausgasemissionen senken, oder Zusagen, Klimaschutzinstrumente abzuschaffen, zurückzunehmen oder zu begrenzen, gehören zu 1801 und zu 1802 – in beiden Richtungen gleich, unabhängig davon, ob sie dem Ziel helfen (das entscheidet die Bewertung). Entscheidung der Betreiberin vom 4. 10. 2026: Klimaschutz zählt für beide Ursachen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        1801
+      ],
+      "text": "Hitzeanpassung, die nicht einer der Ursachen 1802 bis 1805 zuzuordnen ist (etwa eine nationale Anpassungsstrategie mit konkreter Zusage), gehört zu 1801. Ein bloßes Bekenntnis zu Klimazielen ohne Instrument ist keine Maßnahme."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        1802
+      ],
+      "text": "Zu 1802 gehören Hitzeaktionspläne, Hitzewarnung, Hitzeschutz in Pflege, Krankenhäusern und für ältere Menschen, Kühlräume und Trinkwasser als Gesundheitsschutz. Allgemeine Warnsysteme (Sirenen, Warn-Apps) ohne Hitzebezug im Zitat gehören nicht dazu."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        1803
+      ],
+      "text": "Zu 1803 gehören Stadtgrün, Straßenbäume, Verschattung, Frischluftschneisen und Hitzeschutz an Gebäuden, wenn das Zitat Stadt, Quartier oder Siedlung oder Hitze bzw. Kühlung nennt. Waldumbau, allgemeiner Wohnungsbau und Kommunalfinanzen ohne diesen Bezug gehören nicht dazu."
+    },
+    {
+      "nr": 5,
+      "ursachen": [
+        1804,
+        1805
+      ],
+      "text": "Zu 1804 gehören Entsiegelung, Schwammstadt, Regenwasserbewirtschaftung, Versickerung, Begrenzung des Flächenverbrauchs und Kanal- oder Speicherausbau gegen Starkregen in Siedlungen. Wasserrückhalt in Landwirtschaft, Wald oder Mooren ohne Siedlungsbezug gehört nicht zu 1804; mit Hochwasserbezug im Zitat zu 1805."
+    },
+    {
+      "nr": 6,
+      "ursachen": [
+        1803,
+        1804
+      ],
+      "text": "Eine Maßnahme gehört nur dann zu 1803 und 1804 zugleich, wenn das Zitat beide Wirkungen nennt (Kühlung und Regenwasser, etwa Gründächer zur Kühlung und zum Wasserrückhalt). Sonst nur die genannte Wirkung; im Zweifel die zweite als ursachen_offen."
+    },
+    {
+      "nr": 7,
+      "ursachen": [
+        1805
+      ],
+      "text": "Zu 1805 gehören technischer und naturnaher Hochwasserschutz (Deiche, Rückhaltebecken, Polder, Deichrückverlegung, Retentionsflächen, Auen mit Hochwasserbezug) und Zusagen, Bauen in Überschwemmungsgebieten zu begrenzen – auch ohne ausdrückliches Bauverbot. Gewässerrenaturierung ohne Hochwasserbezug im Zitat gehört nicht dazu."
+    },
+    {
+      "nr": 8,
+      "ursachen": [
+        1805
+      ],
+      "text": "Ausstattung von Feuerwehr und Katastrophenschutz reagiert auf Hochwasser, setzt aber nicht an der Bebauung von Überschwemmungsgebieten an: nur als ursachen_offen [1805], wenn das Zitat Hochwasserschutz nennt, sonst nicht erfassen."
+    },
+    {
+      "nr": 9,
+      "ursachen": [
+        1806
+      ],
+      "text": "Zu 1806 gehören Pflichtversicherung, Angebotspflicht mit Abwahlmöglichkeit, staatliche Rückversicherung und Förderung oder Information zur Elementarschadenversicherung. Staatliche Hilfen nach einem Schaden ändern den Versicherungsschutz nicht: nur als ursachen_offen [1806]."
+    },
+    {
+      "nr": 10,
+      "text": "Finanzierungszusagen ohne Zweck aus einer Ursache („Kommunen stärken“, „Klimaanpassung finanzieren“) sind keine Maßnahme. Nennt das Zitat den Zweck (etwa ein Programm für Entsiegelung), gehört die Maßnahme zur Ursache dieses Zwecks."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 7932,
+      "name": "CO2-Bepreisung bzw. Emissionshandel für Verkehr und Gebäude stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "CO2-Preise senken Emissionen nachweislich (Metaanalyse: im Mittel rund 10 %). Auf Hitze in Deutschland wirkt nationaler Klimaschutz aber nur als kleiner Beitrag zum globalen Klimaschutz und mit großer Verzögerung.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11099057/"
+    },
+    {
+      "id": 7933,
+      "name": "Verbindliche Sektorziele und Nachsteuerungspflicht im Klimaschutzgesetz (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Verbindliche Sektorziele erhöhen den Druck zum Nachsteuern und sind per Gesetzesänderung umsetzbar; ihre eigene Wirkung ist kaum belegt, und auf die Hitze in Deutschland wirkt nationaler Klimaschutz nur langfristig und gering."
+    },
+    {
+      "id": 7934,
+      "name": "Ausbau erneuerbarer Strom- und Wärmeversorgung fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Erneuerbare vermieden 2024 laut UBA rund 259 Mio. t CO2-Äquivalente; Förderprogramme bestehen. Auf Hitzetage in Deutschland wirkt das nur als kleiner Teil des globalen Klimaschutzes und mit Verzögerung.",
+      "beleg_studie_url": "https://www.umweltbundesamt.de/publikationen/emissionsbilanz-erneuerbarer-energietrager-2024"
+    },
+    {
+      "id": 7935,
+      "name": "Abscheidung und Speicherung von CO2 (CCS/CCU) ermöglichen und fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Seit Ende 2025 ist kommerzielles CCS rechtlich möglich; es kann schwer vermeidbare Industrieemissionen senken. Dagegen: Infrastruktur braucht 7 bis 10 Jahre, Kosten und Umfang sind unsicher; Wirkung auf Hitze gering.",
+      "beleg_studie_url": "https://www.bundesregierung.de/breg-de/aktuelles/speicherung-von-kohlendioxid-2376946"
+    },
+    {
+      "id": 7936,
+      "name": "Kohleausstieg aussetzen oder Abschaltung von Kohlekraftwerken aufschieben (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Längerer Kohlebetrieb erhöht die Emissionen gegenüber einem Ausstieg (Studien: deutliche Minderung durch Ausstieg) und hilft nicht gegen Hitze; per Gesetz änderbar, aber durch CO2-Preise im EU-Emissionshandel wirtschaftlich fraglich.",
+      "beleg_studie_url": "https://www.ewi.uni-koeln.de/en/news/neue-ewi-studie-kohleausstieg-ermoeglicht-erreichung-der-klimaziele-2030/"
+    },
+    {
+      "id": 7937,
+      "name": "Nationalen CO2-Preis abschaffen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Entfernt ein nachweislich emissionsmindernd wirkendes Instrument und hilft nicht gegen Hitze. National möglich, ab 2028 greift für Verkehr und Gebäude aber ohnehin der EU-Emissionshandel.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11099057/"
+    },
+    {
+      "id": 7938,
+      "name": "CO2-Flottenvorgaben für Neuwagen (Verbrenner-Aus 2035) aufheben (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Lockert eine Emissionsvorgabe und setzt an keiner Ursache im Sinne des Ziels an. Die Vorgabe ist EU-Recht; Deutschland kann sie nicht allein aufheben, sondern nur im EU-Verfahren darauf hinwirken."
+    },
+    {
+      "id": 7939,
+      "name": "Heizungsvorgaben im Gebäudeenergiegesetz abschaffen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Lockert eine Vorgabe zur Emissionsminderung bei Heizungen und hilft nicht gegen Hitze oder Unwetterschäden. Per Bundesgesetz änderbar, EU-Gebäuderichtlinie setzt aber Grenzen."
+    },
+    {
+      "id": 7940,
+      "name": "Bundesförderung für Stadtgrün, Entsiegelung und hitzeangepasste Städte (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Parks und Bäume kühlen nachweislich (große Parks 1 bis 2 °C im Umfeld); der Bund fördert Städtebau bereits. Dagegen: Wirkung bleibt lokal und hängt von Umsetzung in den Kommunen ab.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6458494/"
+    },
+    {
+      "id": 7941,
+      "name": "Allgemeine Zusage zu Begrünung und Entsiegelung ohne konkretes Instrument (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Begrünung und Entsiegelung wirken nachweislich gegen Hitze und Abfluss; die Zusage nennt aber weder Instrument noch Mittel, daher ist kaum eine Verbesserung absehbar.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6458494/"
+    },
+    {
+      "id": 7942,
+      "name": "Bundesmittel für Hochwasserschutz: Deiche, Rückhalteräume und Auen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Rückhalteräume und Auen dämpfen Hochwasserscheitel nachweislich, der Bund fördert Hochwasserschutz bereits mit. Dagegen: Deiche verlagern Risiken teils flussabwärts und ändern das Bauen in Überschwemmungsgebieten nicht.",
+      "beleg_studie_url": "https://www.umweltbundesamt.de/hochwasser-durch-renaturierung-entschaerfen"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Baumpflanzprogramme in Städten und Dörfern zur Verschattung von Straßen, Plätzen und Schulwegen",
+      "zitat": "Baumpflanzprogramme in Städten und Dörfern zur Verschattung von Straßen, Plätzen und Schulwegen durchführen",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "24928edbd59cc6a4"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Regenwassermanagement flächendeckend anstoßen und fördern, mit mehr Stauraum in der Kanalisation und dezentralem Versickern an Gebäuden und Straßen.",
+      "zitat": "Dazu werden wir flächendeckend Maßnahmen zum Regenwassermanagement anstoßen und fördern. Neben Maßnahmen zur Schaffung von Stauraum in der Kanalisation setzen wir vor allem auf dezentrale Ansätze zum Auffangen und Versickern von Regenwasser an Gebäuden und im Straßenraum.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "7fa0bb864f0d93e6"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Innenentwicklung (Ortskerne, Brachflächen) hat Vorrang vor zusätzlichem Flächenverbrauch.",
+      "zitat": "Innenentwicklung hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "9d23532c6651f1ee"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "[Land] zur Schwammstadt entwickeln: Regenwasser auffangen und speichern, Infrastruktur und Speicherkapazitäten ausbauen",
+      "zitat": "Unser Ziel ist es, [Land] konsequent zur Schwammstadt weiterzuentwickeln. Regenwasser soll künftig stärker aufgefangen, gespeichert und genutzt werden statt ungenutzt abzufließen. Die dafür notwendige Infrastruktur wollen wir gezielt ausbauen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "a729a012f624b281"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Abkopplung von der Mischwasserkanalisation voranbringen, um Wasser in der Stadt zu halten.",
+      "zitat": "Wir werden die Abkoppelung von der Mischwasserkanalisation deutlich voranbringen, um unsere Gewässer vor Verschmutzung zu schützen und Wasser in der Stadt zu halten.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "27fc3a618272ed3a"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Landesweiter Entsiegelungsfonds für Kommunen zur Förderung von Rückbauprojekten",
+      "zitat": "Landesweiter Entsiegelungsfonds für Kommunen zur gezielten Förderung von Rückbauprojekten schaffen",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "9aa0078b59838624"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Umfassendes Entsiegelungsprogramm mit dem Ziel Netto-Null-Versiegelung.",
+      "zitat": "[Land] braucht ein umfassendes Entsiegelungsprogramm mit dem Ziel, eine Netto-Null-Versiegelung so schnell wie möglich zu erreichen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "13b4558c239fccc2"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Schulen, Kitas und Pflegeheime mit Kühlsystemen ausstatten",
+      "zitat": "Ausstattung von Schulen, Kitas und Pflegeheimen mit reversiblen Wärmepumpen und Kühlsystemen, bevorzugt auf Basis erneuerbarer Energien",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "e8b8c397072d4f52"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Städte und Gemeinden klimaangepasst umbauen: entsiegeln, mehr Grünflächen, Schwammstadt, Grünfassaden und Schattenräume gegen Hitze und Starkregen",
+      "zitat": "Die zunehmende Flächenversiegelung verschärft Hitze- und Starkregenprobleme. [Land] muss deshalb konsequent auf Entsiegelung, Grünflächen, Schwammstadt-Konzepte, Rückhaltebecken, Grünfassaden, Schattenräume und kühlende Elemente im öffentlichen Raum setzen.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "0f7c69ad5160a15e"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Naturschutzmaßnahmen sollen besonders in städtischen Räumen ansetzen, wo Grünflächen, Alleen und Parks zur sommerlichen Kühlung beitragen.",
+      "zitat": "Nehmen wir für Maßnahmen zur Verbesserung von Ökosystemen besonders urbane Räume in den Blick.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "0ba818d8963f940c"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Flächensparziele und Flächenkontingente in der Raumordnung einführen, um den Flächenverbrauch zu begrenzen.",
+      "zitat": "Wir wollen: […] Die Einführung von Flächensparzielen und Flächenkontingenten in der Raumordnung, sowie eine dem Klimaschutz angepasste Entwicklung von Industrie- und Gewerbeflächen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "c2513e1f4343cb1b"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Deichsanierung abschließen, Retentionsräume und Rückhalteflächen schaffen oder reaktivieren.",
+      "zitat": "Die Sanierung und Sicherung der Deiche wird abgeschlossen. Retentionsräume und Rückhalteflächen werden geschaffen oder reaktiviert.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "d2d48e54207e9755"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Natürliche Pufferzonen wie breitere Gewässerrandstreifen, Feuchtgebiete und Auen ausbauen, um Überflutungen abzufedern.",
+      "zitat": "Für sauberes Wasser und gesunde Böden wollen wir: • die Wasserrahmenrichtlinie und die Landeswasserstrategie konsequent umsetzen, insbesondere durch den Ausbau natürlicher Pufferzonen wie breiterer Gewässerrandstreifen, Feuchtgebiete und Auen, um Überflutungen abzufedern und Wasser besser in der Fläche zu halten.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "139e06ea8dcc45fd"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Kommunale Klimaanpassungskonzepte fördern, damit Dörfer und Städte vor Hitze und Starkregen geschützt sind.",
+      "zitat": "Um das klimaschädliche CO2 besser zu speichern und uns vor Extremwetterereignissen besser zu schützen, werden wir: […] kommunale Klimaanpassungskonzepte fördern, damit die Menschen in jedem Dorf und jeder Stadt vor Hitze und Starkregen geschützt sind.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "d2ea5f37b6a04265"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Alle zusammenhängend bebauten Gebiete an Küste und in Flusseinzugsgebieten sollen vor Hochwasser geschützt werden.",
+      "zitat": "Wir werden künftig alle zusammenhängend bebauten Gebiete an der Küste und in den Flusseinzugsgebieten vor Hochwasser schützen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "457cc8f8ce343941"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "land",
+      "beschreibung": "Deiche dort zurückverlegen, wo eine Kosten-Nutzen-Abschätzung dies sinnvoll erscheinen lässt, sowie Aktionsplan Wassermanagement",
+      "zitat": "Deshalb werden wir dort, wo es eine Kosten- Nutzenabschätzung sinnvoll erscheinen lässt, Deiche zurückverlegen und einen Aktionsplan zum Wassermanagement unter Berücksichtigung der Landbewirtschafter und -eigentümer auflegen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "e344ae8dddc86b9b"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für Kommunen und Einrichtungen zum Hitzeschutz, mit Stadtplanung auf Grünflächen und Verschattung",
+      "zitat": "Zur Gesundheitsförderung werden in Zukunft verstärkt vorbeugende Maßnahmen gegen die Folgen der Klimakrise nötig sein: von kommunalen Hitzeschutzplänen über eine Stadtplanung, die auf Grünflächen, Verschattung, Trinkbrunnen und Sitzgelegenheiten setzt, bis hin zu Hitzeschutzkonzepten beispielsweise für Krankenhäuser, stationäre Wohnformen, Kitas und Schulen. Dafür wollen wir ein Förderprogramm auflegen, um insbesondere Kommunen und Einrichtungen dabei zu unterstützen, den Hitzeschutz zu stärken.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "cffe9af7ba119a20"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Schulhöfe, Kitagelände und Sportanlagen entsiegeln, begrünen und mit Wasserspeicherung ausstatten",
+      "zitat": "Schulhöfe, Kitagelände und Sportanlagen sollen nach dem Prinzip der „blau-grünen Infrastruktur“ entsiegelt, begrünt und mit Möglichkeiten zur Wasserspeicherung ausgestattet werden.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "0ba9d34dc3bc4d91"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Innerstädtische Grünflächen, Kleingärten und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen.",
+      "zitat": "die Entwicklung innerstädtischer Grünflächen, Kleingartenanlagen und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "ef11337f27b48a5d"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Schwammstadt-Prinzip stärken, Dach- und Fassadenbegrünung und grüne Gleise fördern",
+      "zitat": "Zur Klimaanpassung setzen wir verstärkt auf das Prinzip der Schwammstadt beziehungsweise Schwammlandschaft und fördern Dach- und Fassadenbegrünung sowie grüne Gleise.",
+      "ursachen_ids": [
+        1804
+      ],
+      "ursachen_offen": [
+        1803
+      ],
+      "pruefsumme": "1c9543a523c45cd7"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Neuer Stadtwald auf Teilen des Tempelhofer Feldes zur Verbesserung des Stadtklimas",
+      "zitat": "Wir wollen auf Teilen des Tempelhofer Feldes einen neuen Stadtwald entwickeln, der als zweite „[Partei] Lunge“ [Land] – analog zum Tiergarten – nachhaltig das Stadtklima verbessern und so die Lebensqualität der Berlinerinnen und [Land] steigern soll.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "485f234a93bc0ed0"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Entsiegelung, wo mit geringem Aufwand möglich, und Flächensparprogramme; Anreize für private Eigentümer zur Teilentsiegelung",
+      "zitat": "Wir setzen dagegen auf Flächensparprogramme und verpflichtende Entsiegelung, wo dies sinnvoll und mit geringem Aufwand möglich ist. Private Eigentümer sollen gezielt Anreize erhalten, ihre Flächen teilweise zu entsiegeln.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "462b0de74476b613"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Netto-Null-Versiegelung bis 2030: Wo versiegelt wird, wird in gleicher Größe entsiegelt; Entsiegelungsprogramm umsetzen.",
+      "zitat": "Wir treten für eine Netto-Null-Versiegelung bis 2030 ein. Wo versiegelt wird, muss innerhalb [Land] in gleicher Größe entsiegelt werden. Das Entsiegelungsprogramm wird in der nächsten Wahlperiode konsequent umgesetzt.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "aefe0040c88ec284"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "land",
+      "beschreibung": "Bauliche Maßnahmen gegen Hitze fördern, etwa hellere Oberflächen an Gebäuden und Plätzen.",
+      "zitat": "Die zunehmende Zahl an Hitzetoten schafft hier unmittelbaren Handlungsbedarf. Die Auswahl hellerer Oberflächen an Gebäuden und auf Plätzen ist gegenüber dunkleren oft ohne Mehrkosten möglich und sehr effektiv. Wir wollen bauliche Maßnahmen fördern.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "9c65b3ab80f2cf7b"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Regenwasser in Siedlungen gezielt versickern lassen statt nur abzuleiten; Schwammstadt mit Rückhalt, Versickerung und Verdunstung",
+      "zitat": "Regenwasser darf nicht länger ausschließlich abgeleitet werden, sondern muss gezielt versickern und dem natürlichen Wasserhaushalt wieder zugeführt werden.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "7f0305d87903c3a1"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "land",
+      "beschreibung": "Projekte der blau/grünen Stadtentwicklung mit Wasserflächen, Bäumen und Grünflächen zur Verbesserung des Stadtklimas fördern.",
+      "zitat": "Wasserflächen und Verschattung durch Bäume und Grünflächen verbessern das innerstädtische Klima. Dafür helfen Projekte der blau/grünen Stadtentwicklung, für die wir uns einsetzen wollen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "72633ca59b1628b8"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Bebauung in Überschwemmungsgebieten untersagen (Ausnahmen für PV-Anlagen und landwirtschaftliche Unterstände)",
+      "zitat": "Wir setzen uns entschieden dafür ein, die Be- […] bauung in Überschwemmungsgebieten zu untersagen, um den Hochwasserschutz zu stärken.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "8d0dcece9b7c3ace"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "land",
+      "beschreibung": "Natürlichen Wasserrückhalt in der Fläche durch naturnahen Hochwasserschutz fördern",
+      "zitat": "Wir fordern, dass der natürliche Wasserrückhalt in der Fläche durch Maßnahmen des naturnahen Hochwasserschutzes gefördert und gestärkt wird",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "1d17c4ee8cfe6e47"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "land",
+      "beschreibung": "Klimaanpassung der Stadt durch Stadtdurchlüftung und Verschattung sowie Gesundheitsvorsorge und Vorbereitung auf Extremwetter.",
+      "zitat": "Wir wollen die Klimaresilienz unserer Stadt stärken: durch Maßnahmen zur Stadtdurchlüftung und zur Verschattung, zum Wassermanagement, zur Vorbereitung auf Extremwetterereignisse, zur Gesundheitsvorsorge und zum regelmäßigen Monitoring von Klimaveränderungen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "e39b3a1dea7b805e"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "land",
+      "beschreibung": "Wasserrückhalt ausbauen durch Versickerung und Schwammstadtkonzepte.",
+      "zitat": "Der Wasserrückhalt in der Fläche wird weiter ausgebaut – durch Versickerung, Schwammstadtkonzepte, die Sanierung von Stauanlagen und eine auskömmliche Finanzierung der Unterhaltungsverbände.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "f5d22c41e84ea8cf"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "land",
+      "beschreibung": "Land fördert Rückhaltebecken, Naturteiche und Feuchtpuffer als Teil eines aktiven Wassermanagements.",
+      "zitat": "Ausbau eines aktiven Wassermanagements: Wir fördern Rückhaltebecken, Naturteiche, Gewässerrandstreifen, Feuchtpuffer und Bewässerungskonzepte",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1805
+      ],
+      "pruefsumme": "c4b88044a3094d12"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Klimaanpassung in den Kommunen stärken: klimaresiliente Baumpflanzungen, Trinkwasserspender und Schwammstadt-Maßnahmen für kühlere Orte und Umgang mit Starkregen.",
+      "zitat": "Wir helfen Natur und Menschen in allen Orten, indem wir Klimaanpassung in den Kommunen stärken, etwa durch Trinkwasserspender, klimaresiliente Baumpflanzungen und Schwammstadt-Maßnahmen. Damit es im Sommer kühler bleibt, Wasser verfügbar ist und Orte besser mit Starkregen und Hitze klarkommen.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "da65ae4daee03261"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "land",
+      "beschreibung": "Kommunen bei Hitzeaktionsplänen und beim Schutz innerörtlicher Grünflächen fachlich und finanziell unterstützen.",
+      "zitat": "Wir wollen diese fachlich und finanziell bei Klimaschutz- und Klimamanagement, kommunaler Wärmeplanung, Hitzeaktionsplänen, dem Schutz innerörtlicher Grünflächen sowie Luftreinhalte- und Lärmschutzplänen unterstützen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "f63c3799dab3bc76"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "land",
+      "beschreibung": "Förderkulisse für Entsiegelungsprojekte schaffen, auch zur Umsetzung kommunaler Hitzeschutzpläne",
+      "zitat": "Gleichzeitig möchten wir eine Förderkulisse für Entsiegelungsprojekte eröffnen, um Städte und Gemeinden insbesondere auch bei der Umsetzung von Hitzeschutzplänen zu unterstützen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "ursachen_offen": [
+        1803
+      ],
+      "pruefsumme": "35818bb9014f75f8"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "land",
+      "beschreibung": "Jeder gefällte Baum in [Land] wird nachgepflanzt; Nachpflanzpflicht konsequenter durchsetzen und per Baumbilanz kontrollieren",
+      "zitat": "Künftig muss gelten: Jeder in [Land] gefällte Baum wird nachgepflanzt. Wir werden die Nachpflanzpflicht konsequenter durchsetzen und durch transparente Baumbilanzen kontrollieren.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "a33f43e586186475"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "land",
+      "beschreibung": "Mehr Sonnensegel und Verschattungselemente auf Spielplätzen, besonders in Neubaugebieten",
+      "zitat": "Wir werden die Ausstattung von Spielplätzen gezielt verbessern und insbesondere den Hitzeschutz stärken. In vielen Teilen der Stadt fehlen ausreichend schattige Spielflächen. Deshalb wollen wir verstärkt Sonnensegel und andere Verschattungselemente einsetzen",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "8a284d870fae5b57"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Mehr Überflutungsflächen und natürliche Rückhalteräume für Hochwasser aufbauen",
+      "zitat": "Mehr Überflutungsflächen und natürliche Rückhalteräume für Hochwasser aufbauen",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "bff619c67922a957"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Baumoffensiven mit verlässlicher Haushaltsfinanzierung und Priorität für Neupflanzungen und Pflege, um die Hitze zu senken.",
+      "zitat": "Wir wollen, dass aus diesen Beschlüssen echte Baumoffensiven werden. Dazu gehören eine verlässliche Finanzierung im Haushalt und klare Priorität für Neupflanzungen und Pflege. Bäume sind unsere beste Klimaanlage.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "d8061ab74cc90c06"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "land",
+      "beschreibung": "Schwammstadt: Regenwasser durch Entsiegelung, begrünte Dächer und Versickerung in der Stadt halten; das kühlt zugleich die Stadt.",
+      "zitat": "[Land] muss zur Schwammstadt werden: Wir halten Regenwasser in der Stadt, statt es in die überforderte Kanalisation zu leiten – durch Entsiegelung und begrünte Dächer, Regengärten, Versickerungsstreifen, auch um Gullys herum (sogenannte grüne Gullys), und Regentonnen. So kühlen wir die Stadt […]",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "cd3efb62ae5a1604"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "land",
+      "beschreibung": "Bestand an Straßenbäumen deutlich erhöhen, bis 2040 auf eine Million, gegen Hitze und Extremwetter",
+      "zitat": "Wir wollen den Bestand an Straßenbäumen deutlich erhöhen und bis zum Jahr 2040 auf eine Million Bäume steigern, um [Land] widerstandsfähiger gegen Hitze und Extremwetter zu machen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "4ade3a58c0a41660"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Schwammstadt durch Entsiegelung, Regenwassermanagement und Versickerung vor Ort, auch im Liegenschaftsbestand.",
+      "zitat": "[Land] verfolgt das Schwammstadtprinzip durch Entsiegelung, Regenwassermanagement und Ausbau und Pflege von Naturflächen. Das Regenwassermanagement wollen wir durch die Versickerung vor Ort auch im Liegenschaftsbestand für spätere Nutzung erweitern.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "68575c9a5807ebb1"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "land",
+      "beschreibung": "Täglichen Flächenverbrauch senken, 30-Hektar-Ziel gegenüber Kommunen einfordern",
+      "zitat": "Der tägliche Flächenverbrauch soll bis 2030 deutlich gesenkt werden, wobei das 30-Hektar-Ziel der Bundesregierung eingehalten und gegenüber Kommunen stärker eingefordert wird.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "44a4d0e364db8c38"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "land",
+      "beschreibung": "Hochwasser- und Küstenschutzprogramme fortsetzen und regelmäßig überprüfen; naturnahe und technische Maßnahmen nach Wirksamkeit kombinieren.",
+      "zitat": "Wir werden: […] uns für die Fortsetzung und regelmäßige Überprüfung der Hochwasser- und Küstenschutzprogramme einsetzen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "651a2dc0d194d81e"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Weitere Flächenversiegelung konsequent reduzieren; Innenentwicklung hat Vorrang vor der Ausweisung neuer Baugebiete.",
+      "zitat": "Wir setzen uns für eine konsequente Reduzierung der weiteren Flächenversiegelung im Interesse des Bodenschutzes ein. Die ortstypische Innenentwicklung muss Vorrang vor der Neuausweisung von Baugebieten haben.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "01f207a3f4cc9673"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "land",
+      "beschreibung": "Wasser- und Bodenverbände werden bei Deichertüchtigung und Sanierung defekter Rohrleitungen investiv unterstützt.",
+      "zitat": "Wir wollen die Wasser - und Bodenverbände auch weiterhin bei investiven Maßnahmen bei der Deichertüchtigung und der Sanierung der defekten Rohrleitungen, unterstützen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "c5e3ca674763bd38"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Begrünungspflichten für Neubauten: begrünte Dächer, Fassaden und Innenhöfe als Regel.",
+      "zitat": "Verbindliche Begrünungspflichten für Neubauten: begrünte Dächer, Fassaden und Innenhöfe sollen die Regel sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1803
+      ],
+      "pruefsumme": "f08dc4b6f37ab644"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Deiche, Dünen und Hochwasserschutzanlagen sichern und modernisieren; regionale Hochwasser- und Küstenschutzprojekte unterstützen",
+      "zitat": "Unsere Umwelt- und Küstenschutzstrategie setzt auf die Sicherung und Modernisierung von Deichen, Dünen und Hochwasserschutzanlagen",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "a013014f2be4ba8a"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "land",
+      "beschreibung": "Mehr Überflutungsflächen schaffen, Versiegelungen und Einengungen entlang der Flussläufe abbauen und laufende Hochwasserschutzmaßnahmen zügig vollenden.",
+      "zitat": "In diesem Zusammenhang werden wir, um künftige Hochwasserlagen besser beherrschen zu können, mehr Überflutungsflächen schaffen und Versiegelungen oder Einengungen entlang der Flussläufe in [Land] abbauen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "ursachen_offen": [
+        1804
+      ],
+      "pruefsumme": "bcdff3b193bc6d64"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "land",
+      "beschreibung": "Bei der Umgestaltung der Kieze Entsiegelung, Begrünung und Regenwassermanagement umsetzen, um sie gegen Hitze und Starkregen widerstandsfähiger zu machen.",
+      "zitat": "Gleichzeitig nutzen wir die Umgestaltung für Entsiegelung, Begrünung und Regenwassermanagement, um [Land] Kieze widerstandsfähiger gegen Hitze und Starkregen zu machen.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "6295c6e20ac8aafc"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "land",
+      "beschreibung": "Kanalisationen digital steuerbar machen, um Starkregen abzufedern",
+      "zitat": "Kanalisationen digital steuerbar machen",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "b102c74cf9e79b07"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Förderung von Begrünungskonzepten, baulichem Hitzeschutz und passiver Kühlung als neuer Standard in Quartieren",
+      "zitat": "Klimaschutz und Aufenthaltsqualität verbinden wir mit der Förderung von Solaranlagen auf Gebäuden, Begrünungskonzepten, Parkflächen, baulichem Hitzeschutz und passiver Kühlung als neuem Standard.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "471ce8101e10f892"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "land",
+      "beschreibung": "Baurecht so gestalten, dass in hochwassergefährdeten Zonen keine neuen Baugebiete entstehen",
+      "zitat": "Das Baurecht ist so auszugestalten, dass keine neuen Baugebiete in hochwassergefährdeten Zonen entstehen.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "cc516d56ed3cd057"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "land",
+      "beschreibung": "Ausbau einer leistungsfähigen Regenwasserinfrastruktur, bezogen auf Einträge in Gewässer.",
+      "zitat": "Ausbau einer leistungsfähigen Regenwasserinfrastruktur, um Einträge in Flüsse, Seen und Ostsee wirksam zu verringern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1804
+      ],
+      "pruefsumme": "0e91d70f92e5c8ff"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "land",
+      "beschreibung": "Entsiegelung ungenutzter Asphaltflächen und Entsiegelungskataster zur Auswahl geeigneter Orte",
+      "zitat": "Weiterhin fordern wir die Entsiegelung nicht genutzter Asphaltflächen und die Einführung eines Entsiegelungskatasters zur Erfassung versiegelter Flächen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "691cbb629e4991c0"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "land",
+      "beschreibung": "Landesfonds für Katastrophenschutz, der bei Großschadenslagen wie Hochwasser schnell Mittel bereitstellt.",
+      "zitat": "Wir fordern zusätzlich die Einrichtung eines rechtlich selbstständigen Landesfonds für Katastrophenschutz, der bei Großschadenslagen (zum Beispiel Großbränden, Hochwasser) zum Einsatz kommt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1805
+      ],
+      "pruefsumme": "2aee97104954f825"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "land",
+      "beschreibung": "Deichrückverlegungen und Auenrenaturierung, um Überschwemmungsflächen zurückzugewinnen",
+      "zitat": "[Partei] setzt sich daher für Deichrückverlegungen und die Renaturierung von Auen ein.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "596480d5239f4151"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "land",
+      "beschreibung": "Schwammstadt-Prinzip als Leitlinie aller Planungen: Regenwasser vor Ort versickern, speichern oder nutzen statt in die Kanalisation leiten.",
+      "zitat": "Das Schwammstadt-Prinzip soll Leitlinie aller Planungen werden: Regenwasser soll nicht in die Kanalisation fließen, sondern vor Ort versickern, gespeichert oder zur Bewässerung genutzt werden.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "b979c653f7638ac2"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "land",
+      "beschreibung": "Kaltluftschneisen erhalten und wo möglich ausbauen.",
+      "zitat": "Kaltluftschneisen sollen erhalten und, wo möglich, ausgebaut werden – damit [Land] auch in Zukunft durchatmen kann.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "03d774800fccae56"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "land",
+      "beschreibung": "Klimainseln mit Schatten und Wasser in besonders belasteten Quartieren.",
+      "zitat": "In besonders belasteten Quartieren schaffen wir Klimainseln, die mit Schatten, Wasser und Sitzgelegenheiten für sofortige Abkühlung sorgen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "c54db75c733c9ea7"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "land",
+      "beschreibung": "Verbindlicher Mindestanteil an Grünflächen bei allen Neubauvorhaben (Biotopflächenfaktor), gegen Hitze und für bessere Regenversickerung.",
+      "zitat": "Bei allen Neubauvorhaben werden wir einen verbindlichen Mindestanteil an Grünflächen vorschreiben (Biotopflächenfaktor), um Hitze zu reduzieren, Lebensräume für Tiere und Pflanzen zu sichern und die Versickerung von Regen zu verbessern.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "7db3b2d83deb6782"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "land",
+      "beschreibung": "Hitzeschutz in der Städtebauförderung stärken und Wasserspeicherung unterstützen, um klimaresiliente Stadtquartiere zu schaffen",
+      "zitat": "Wir wollen den Hitzeschutz als Förderaspekt in der Städtebauförderung stärken, Maßnahmen zur besseren Wasserspeicherung unterstützen und damit klimaresiliente Stadtquartiere schaffen.",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "adf77ce168641ae9"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "land",
+      "beschreibung": "Klimaresiliente Bäume vorrangig in Hitze-Hotspots und stark versiegelten, dicht bebauten Kiezen pflanzen.",
+      "zitat": "Vorrangig sollen klimaresiliente Bäume in Hitze-Hotspots, auf stark versiegelten Flächen und in dicht bebauten Kiezen gepflanzt werden.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "bd0eec6ceb3301e7"
+    },
+    {
+      "kennung": "M63",
+      "ebene": "land",
+      "beschreibung": "Mehr Regenwasser von der Kanalisation abkoppeln, vor Ort versickern lassen (Schwammstadt), grundstücksübergreifendes Regenwassermanagement verbindlich",
+      "zitat": "Für die Schwammstadt koppeln wir mit den [Land] Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab. Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "c7aaa087d8deb5ed"
+    },
+    {
+      "kennung": "M64",
+      "ebene": "land",
+      "beschreibung": "Regenrückhalt systematisch stärken, damit Wasser in der Fläche bleibt.",
+      "zitat": "Wir wollen: […] Regenrückhalt systematisch stärken, damit Wasser in der Fläche bleibt und nicht unkontrolliert abfließt,",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "1460b905d8221f02"
+    },
+    {
+      "kennung": "M65",
+      "ebene": "land",
+      "beschreibung": "Asphaltflächen entsiegeln, damit Regenwasser versickern kann und Schatten entsteht.",
+      "zitat": "Entsiegelung statt Versiegelung: Asphaltflächen müssen, wo immer möglich, für Regenwasser, Schatten und Leben weichen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "b9409c07e3090b83"
+    },
+    {
+      "kennung": "M66",
+      "ebene": "land",
+      "beschreibung": "Hitzeschutz früh in Planung und Bau einbinden, mehr Dach- und Fassadenbegrünung vor allem bei öffentlichen Gebäuden, verbindlicher Hitzeschutz bei Kitas und Schulen",
+      "zitat": "Wir werden den Hitzeschutz in [Land] konsequent ausbauen und von Anfang an in Planungs- und Bauprozesse integrieren. Dazu gehört insbesondere die verstärkte Begrünung von Dächern und Fassaden, vor allem bei öffentlichen Gebäuden.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "4b4665df2facac0d"
+    },
+    {
+      "kennung": "M67",
+      "ebene": "land",
+      "beschreibung": "Regenwasser vor Ort speichern, versiegelte Flächen auf Plätzen und Straßen durch sickerfähige Böden ersetzen (Entsiegelungsoffensive), Genehmigung von Dach- und Fassadenbegrünung vereinfachen.",
+      "zitat": "Wir speichern Regenwasser vor Ort, statt es ungenutzt in die Kanalisation zu leiten. So verhindern wir Überflutungen bei Starkregen, stabilisieren das Grundwasser und kühlen das Stadtklima aktiv durch Verdunstung. Dafür initiieren wir eine systematische Entsiegelungsoffensive",
+      "ursachen_ids": [
+        1803,
+        1804
+      ],
+      "pruefsumme": "2d45adc5133e05c0"
+    },
+    {
+      "kennung": "M68",
+      "ebene": "land",
+      "beschreibung": "Mini-Parks und wohnortnahe Grünflächen als Abkühlung; Hitzehotspots entsiegeln oder begrünen",
+      "zitat": "Mini - Parks und wohnortnahe Grünflächen schaffen Abkühlung in fußläufiger Entfernung.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "caf4cd8f280450c3"
+    },
+    {
+      "kennung": "M69",
+      "ebene": "land",
+      "beschreibung": "Bestehende Retentionsräume sichern, wo sie für nachgewiesenen Hochwasserschutz erforderlich sind.",
+      "zitat": "Wir werden: […] bestehende Retentionsräume dort sichern, wo sie für den nachgewiesenen Hochwasserschutz erforderlich sind.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "7f97c840260cd5e5"
+    },
+    {
+      "kennung": "M70",
+      "ebene": "land",
+      "beschreibung": "Landesfonds, der Kommunen und Eigentümer beim Rückbau versiegelter Flächen unterstützt.",
+      "zitat": "Wir wollen: […] einen Landesfonds für Entsiegelung schaffen, der Kommunen und Eigentümer:innen beim Rückbau versiegelter Flächen unterstützt und so mehr Grün in die Städte und Dörfer bringt.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "f67fab20fd852c76"
+    },
+    {
+      "kennung": "M71",
+      "ebene": "land",
+      "beschreibung": "Straßenbäume regelmäßig nachpflanzen, dauerhaft pflegen und bewässern.",
+      "zitat": "Wir wollen die gärtnerische und ökologische Qualität der Grünflächen erhöhen, unsere Straßenbäume regelmäßig nachpflanzen und deren kontinuierliche Pflege und Bewässerung sicherstellen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "a27cd1bc2aa0e51c"
+    },
+    {
+      "kennung": "M72",
+      "ebene": "land",
+      "beschreibung": "Bauturbo für Innenentwicklung und Nachverdichtung nutzen, um zusätzlichen Flächenverbrauch auf der grünen Wiese zu vermeiden.",
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den „Bauturbo“ des Bundes insbesondere für Innenentwicklung, Nachverdichtung und vereinfachtes Bauen im Bestand nutzen, um langwierige Bauleitplanungsverfahren, hohe Erschließungskosten und zusätzlichen Flächenverbrauch auf der grünen Wiese zu vermeiden.",
+      "ursachen_ids": [
+        1804
+      ],
+      "ursachen_offen": [
+        1803
+      ],
+      "pruefsumme": "4f2aaeb27f5f90b1"
+    },
+    {
+      "kennung": "M73",
+      "ebene": "land",
+      "beschreibung": "Baurecht anpassen, damit Hitzeschutz an Gebäuden wie Begrünung und Verschattung unbürokratisch möglich wird.",
+      "zitat": "Wir passen das Baurecht an, um Hitzeschutzmaßnahmen, wie Begrünung und Verschattung, unbürokratisch zu ermöglichen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "e8e0bea4544a4401"
+    },
+    {
+      "kennung": "M74",
+      "ebene": "land",
+      "beschreibung": "Flächenrecycling hat Vorrang vor weiterer Versiegelung.",
+      "zitat": "Für uns hat Flächenrecycling Vorrang vor weiterer Versiegelung.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "b73e1e7e4becf650"
+    },
+    {
+      "kennung": "M75",
+      "ebene": "land",
+      "beschreibung": "In sozial benachteiligten Kiezen Hitzeschutz und mehr Grünflächen und Stadtbäume konsequent umsetzen, auf Grundlage des Umweltgerechtigkeitsatlas.",
+      "zitat": "Insbesondere in sozial benachteiligten Kiezen werden wir auf Grundlage des alle zwei Jahre zu aktualisierenden Umweltgerechtigkeitsatlas Maßnahmen zur Lärmminderung, Luftreinhaltung, zum Hitzeschutz und zur besseren Versorgung mit Grünflächen und Stadtbäumen konsequent umsetzen",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "a5e85a0407f409df"
+    },
+    {
+      "kennung": "M76",
+      "ebene": "land",
+      "beschreibung": "Stadtbaumbestand deutlich erhöhen, neue Baumstandorte und Baumscheiben bepflanzen, Altbäume schützen",
+      "zitat": "Bis 2040 soll die Zahl der Stadtbäume um 70 Prozent steigen.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "95254499b4911dc1"
+    },
+    {
+      "kennung": "M77",
+      "ebene": "land",
+      "beschreibung": "Schwammstadtprinzip in Kommunen verankern und bei neuen Projekten sowie Sanierungen anwenden.",
+      "zitat": "Wir wollen: […] das Schwammstadtprinzip in Kommunen verankern und bei neuen Projekten sowie Sanierungen anwenden,",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "bbafdd31a2c30c09"
+    },
+    {
+      "kennung": "M78",
+      "ebene": "land",
+      "beschreibung": "Bestehende Hochwasserschutzanlagen modernisieren und an das veränderte Klima anpassen",
+      "zitat": "Bestehende Schutzanlagen müssen modernisiert und an die veränderten klimatischen Bedingungen angepasst werden.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "8e5b053fca3faa0c"
+    },
+    {
+      "kennung": "M79",
+      "ebene": "land",
+      "beschreibung": "Deiche an der Ostseeküste gezielt umbauen, sodass sie Hochwasserschutz mit Radwegen und Naherholung verbinden.",
+      "zitat": "Multifunktionale Deiche ausbauen Gezielter Umbau der Deiche, damit sie Hochwasserschutz, Radwege und […] verbinden.",
+      "ursachen_ids": [
+        1805
+      ],
+      "pruefsumme": "f7b76e2346855420"
+    },
+    {
+      "kennung": "M80",
+      "ebene": "land",
+      "beschreibung": "Hitze-Aktionsplan mit Koordination und Finanzierung ausbauen, mehr Straßenbäume pflanzen für schattige Aufenthaltsorte.",
+      "zitat": "Wir bauen den [Land] Hitze-Aktionsplan strukturell aus: mit zentraler Koordination, gesicherter Finanzierung und wissenschaftlicher Begleitung. […] Die Anpflanzung von mehr Straßenbäumen sorgt zudem für schattige und barrierefreie Aufenthaltsorte.",
+      "ursachen_ids": [
+        1803
+      ],
+      "pruefsumme": "4115208b0ff211d7"
+    },
+    {
+      "kennung": "M81",
+      "ebene": "land",
+      "beschreibung": "Leerstände durch geförderte Sanierung und Umbau nutzbar machen, damit neuer Wohnraum ohne zusätzlichen Flächenverbrauch entsteht",
+      "zitat": "Leerstände machen wir durch Förderung von Sanierungen und Umbauten nutzbar, so entsteht neuer Wohnraum ohne zusätzlichen Flächenfraß.",
+      "ursachen_ids": [
+        1804
+      ],
+      "pruefsumme": "4336026c415ea1a8"
+    }
+  ]
+}

@@ -1,0 +1,940 @@
+{
+  "blind_pruefsumme": "9a9fb6b3d9ee1a14c19adb080fe5e35095ce059c37b779a478e4414f32b730d2",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Ausstiegs-, Distanzierungs- und Deradikalisierungsarbeit ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an der Bindung ans Milieu an; Land kann Träger fördern. Robuste Wirkungsnachweise fehlen aber, Evaluationen stützen sich laut Review meist auf Fallberichte und Output-Zahlen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://jd.journals.publicknowledgeproject.org/index.php/jd/article/view/643"
+    },
+    {
+      "kennung": "I2",
+      "name": "Extremismusprävention und Beratungsstrukturen (Landesprogramme, mobile Beratung, Träger) fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Metaanalyse findet positive Effekte psychosozialer Prävention (d ≈ 0,5), aber nur neun kontrollierte Studien mit schwacher Validität; Wirkung hängt stark von Zielgruppe und Umsetzung ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://cris.fau.de/publications/248100739"
+    },
+    {
+      "kennung": "I3",
+      "name": "Demokratieförderprogramme und Projekte zivilgesellschaftlicher Träger dauerhaft fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Breite Projektförderung stärkt Engagierte und schafft Planungssicherheit; Evaluationen zeigen aber, dass Jugendliche mit verfestigten extremen Orientierungen kaum erreicht werden.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bpb.de/themen/rechtsextremismus/infopool-rechtsextremismus/541813/evaluation-von-massnahmen-und-programmen/"
+    },
+    {
+      "kennung": "I4",
+      "name": "Offene Jugendarbeit und Jugendangebote als Orte der Demokratiebildung und Prävention fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Jugendangebote können Alternativen zu extremen Gruppen bieten und sind für Land und Kommunen finanzierbar; ihre Wirkung auf Einstellungen ist kaum eigens untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Demokratiebildung und Extremismusprävention in Unterricht und Schulprojekten verankern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schule erreicht alle Jugendlichen; ein offenes Diskussionsklima geht mit mehr Unterstützung gleicher Rechte einher. Belege sind meist korrelativ, einzelne Projekte wirken ohne Kontinuität wenig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC109180"
+    },
+    {
+      "kennung": "I6",
+      "name": "Politische Bildung als Pflichtfach ausweiten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Unterrichtszeit für politische Bildung erreicht alle Schülerinnen und Schüler; Wirkung auf Einstellungen nur korrelativ belegt, zusätzliche Fachlehrkräfte und Stunden brauchen Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC109180"
+    },
+    {
+      "kennung": "I7",
+      "name": "Landeszentrale für politische Bildung finanziell und personell stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Mittel sind für das Land leicht umsetzbar; Angebote erreichen aber vor allem bereits Interessierte, eine Wirkung auf extreme Einstellungen ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Gesprächskultur, Empathie und Konfliktfähigkeit an Schulen fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schulisches soziales Lernen verbessert laut Metaanalyse (213 Programme) soziale Fähigkeiten und Verhalten; ob das später politische Gespräche respektvoller macht, ist nicht direkt belegt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ojp.gov/ncjrs/virtual-library/abstracts/impact-enhancing-students-social-and-emotional-learning-meta"
+    },
+    {
+      "kennung": "I9",
+      "name": "Bürgerbeteiligung vor Ort ausbauen: Bürgerräte, Bürgerdialoge, Beteiligungsverfahren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Beteiligung kann Kontrollverlust mindern und wird teils als legitimer erlebt; Effekte erreichen meist nur Teilnehmende und hängen davon ab, ob Ergebnisse umgesetzt werden.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I10",
+      "name": "Begegnungs- und Dialogprojekte zwischen Gruppen fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kontakt zwischen Gruppen senkt Vorurteile laut Metaanalysen recht verlässlich; bei ethnischen Vorurteilen sind die Effekte schwächer, und freiwillige Projekte erreichen oft schon Offene.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ideas.repec.org/a/cup/bpubpo/v3y2019i02p129-158_00.html"
+    },
+    {
+      "kennung": "I11",
+      "name": "Wissenschafts- und Meinungsfreiheit an Hochschulen gesetzlich absichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann das Gefühl von Bevormundung im Hochschulbereich mindern, Land kann das Hochschulgesetz ändern; Wirkung auf die allgemeine Gesprächskultur ist nicht untersucht und betrifft nur einen kleinen Bereich.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I12",
+      "name": "Medien- und Nachrichtenkompetenz für alle Altersgruppen fördern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Experimente zeigen, dass Medienkompetenz die Unterscheidung von Falschmeldungen verbessert, teils nur kurzzeitig; Schulinhalte regeln die Länder, der Bund kann über Programme beitragen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://collaborate.princeton.edu/en/publications/a-digital-media-literacy-intervention-increases-discernment-betwe/"
+    },
+    {
+      "kennung": "I13",
+      "name": "Plattformen zu Algorithmen-Transparenz und Maßnahmen gegen Desinformation verpflichten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Plattformregeln liegen weitgehend beim EU-Recht (DSA); ein Feldexperiment fand, dass ein anderer Feed zwar Inhalte, aber nicht Polarisierung oder Einstellungen veränderte.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://csmapnyu.org/research/how-do-social-media-feed-algorithms-affect-attitudes-and-behavior-in-an-election-campaign"
+    },
+    {
+      "kennung": "I14",
+      "name": "Bundesweite Volksentscheide einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Verfügbare Volksrechte gehen in der Schweiz mit mehr Institutionenvertrauen einher, häufige Nutzung teils mit weniger; nötig ist eine Grundgesetzänderung mit Zweidrittelmehrheiten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.cogitatiopress.com/politicsandgovernance/article/view/820"
+    },
+    {
+      "kennung": "I15",
+      "name": "Bürgerräte und Dialogformate auf Bundesebene verankern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bürgerräte können vor allem bei Misstrauischen die Legitimität stärken, aber nur wenn Empfehlungen aufgegriffen werden; für die Breite bleibt die Wirkung begrenzt. Bundestag kann sie einsetzen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I16",
+      "name": "Demokratiebildung und Extremismusprävention in Schulen und Jugendarbeit stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bildung in Schulen erreicht viele Jugendliche, die Belege sind aber überwiegend korrelativ; Lehrpläne verantworten die Länder, der Bund kann über Förderprogramme beitragen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC109180"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M001",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M002",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Gedenkstättenbesuche können Impulse setzen, ersetzen laut Fachleuten aber keine kontinuierliche Auseinandersetzung; Schulbesuche regeln die Länder, das Jugendwerk kann der Bund fördern.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.bpb.de/themen/rechtsextremismus/infopool-rechtsextremismus/569718/mit-schulklassen-an-orten-von-ns-verbrechen/"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M003",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Kann das Gefühl von Bevormundung bei manchen mindern und ist für das Land einfach umsetzbar; zugleich entfällt eine Dokumentation von Vorfällen, Wirkungen sind nicht untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M004",
+      "instrument": "I8",
+      "ursachen": [
+        2205,
+        2206
+      ]
+    },
+    {
+      "kennung": "M005",
+      "instrument": "I2",
+      "ursachen": [
+        2204,
+        2201
+      ]
+    },
+    {
+      "kennung": "M006",
+      "instrument": "I14",
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M007",
+      "instrument": "I12",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M008",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M009",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Kontroverse Darstellung fördert ein offenes Unterrichtsklima; das Kontroversitätsgebot gilt aber schon weitgehend, der zusätzliche Effekt ist gering und nicht untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2206
+      ]
+    },
+    {
+      "kennung": "M010",
+      "instrument": "I13",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M011",
+      "instrument": "I7",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M012",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Kontakt und Dialog zwischen Gruppen senken Vorurteile laut Metaanalysen; Effekte bei ethnischen Vorurteilen schwächer, freiwillige Projekte erreichen oft schon Offene. Bund kann fördern.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://ideas.repec.org/a/cup/bpubpo/v3y2019i02p129-158_00.html"
+      },
+      "ursachen": [
+        2206,
+        2204
+      ]
+    },
+    {
+      "kennung": "M013",
+      "instrument": "I16",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M014",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Setzt direkt an der Bindung ans Milieu an, der Bund fördert solche Programme bereits; robuste Wirkungsnachweise fehlen, Evaluationen stützen sich meist auf Fallberichte.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://jd.journals.publicknowledgeproject.org/index.php/jd/article/view/643"
+      },
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M015",
+      "ursachen": []
+    },
+    {
+      "kennung": "M016",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M017",
+      "instrument": "I14",
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M018",
+      "instrument": "I4",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M019",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M020",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M021",
+      "instrument": "I7",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M022",
+      "ursachen": []
+    },
+    {
+      "kennung": "M023",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M024",
+      "instrument": "I11",
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M025",
+      "instrument": "I10",
+      "ursachen": [
+        2206
+      ]
+    },
+    {
+      "kennung": "M026",
+      "instrument": "I12",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M027",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M028",
+      "instrument": "I8",
+      "ursachen": [
+        2206
+      ]
+    },
+    {
+      "kennung": "M029",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Kann das Gefühl von Bevormundung bei Gelöschten mindern; Pflichten großer Plattformen regelt aber vor allem das EU-Recht (DSA), und mehr Sichtbarkeit extremer Inhalte ist ein möglicher Gegeneffekt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M030",
+      "instrument": "I16",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M031",
+      "instrument": "I6",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M032",
+      "instrument": "I4",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M033",
+      "instrument": "I2",
+      "ursachen": [
+        2201,
+        2204
+      ]
+    },
+    {
+      "kennung": "M034",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M035",
+      "instrument": "I3",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M036",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Bessere Zusammenarbeit mit Ausstiegsprogrammen kann Zugänge zu Personen im Milieu schaffen; der Schwerpunkt liegt auf Beobachtung, die Wirkung auf Ausstiege ist nicht untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M037",
+      "instrument": "I7",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M038",
+      "instrument": "I8",
+      "ursachen": [
+        2205,
+        2206
+      ]
+    },
+    {
+      "kennung": "M039",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M040",
+      "instrument": "I2",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M041",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M042",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M043",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M044",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M045",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M046",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Transparenz über Gesetzgebung und Lobbykontakte kann Vertrauen stützen und ist rechtlich einfach umsetzbar; ob sie das Institutionenvertrauen messbar erhöht, ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M047",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M048",
+      "instrument": "I10",
+      "ursachen": [
+        2206,
+        2204
+      ]
+    },
+    {
+      "kennung": "M049",
+      "instrument": "I15",
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M050",
+      "ursachen": []
+    },
+    {
+      "kennung": "M051",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M052",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M053",
+      "instrument": "I15",
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M054",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M055",
+      "instrument": "I12",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M056",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Eine tolerantere Behördenpraxis kann das Gefühl von Ungleichbehandlung mindern und liegt in Landeshand; die Zusage bleibt unbestimmt, Wirkungen sind nicht untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M057",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M058",
+      "instrument": "I7",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M059",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Kann das Gefühl von Bevormundung mindern; ein Löschverbot widerspräche wohl dem vollharmonisierten DSA, das Land kann nur über den Bundesrat werben. Mehr Sichtbarkeit extremer Inhalte ist möglich.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M060",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M061",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M062",
+      "instrument": "I3",
+      "ursachen": [
+        2206
+      ]
+    },
+    {
+      "kennung": "M063",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M064",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M065",
+      "instrument": "I12",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M066",
+      "instrument": "I13",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M067",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M068",
+      "instrument": "I9",
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M069",
+      "instrument": "I4",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M070",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M071",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M072",
+      "instrument": "I12",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M073",
+      "instrument": "I16",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M074",
+      "instrument": "I3",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M075",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M076",
+      "instrument": "I14",
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M077",
+      "instrument": "I9",
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M078",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Gedenkstättenbesuche können Impulse setzen, ersetzen laut Fachleuten aber keine kontinuierliche Auseinandersetzung; eine Pflicht für alle stößt an Kapazitäten der Gedenkstätten.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.bpb.de/themen/rechtsextremismus/infopool-rechtsextremismus/569718/mit-schulklassen-an-orten-von-ns-verbrechen/"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M079",
+      "instrument": "I10",
+      "ursachen": [
+        2204,
+        2206
+      ]
+    },
+    {
+      "kennung": "M080",
+      "instrument": "I3",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M081",
+      "ursachen": []
+    },
+    {
+      "kennung": "M082",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Unabhängige Kontrolle kann das Gefühl unfairer Behandlung durch Behörden mindern; der Bund regelt nur seine eigenen Stellen, die Wirkung auf das Institutionenvertrauen ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M083",
+      "instrument": "I1",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M084",
+      "instrument": "I7",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M085",
+      "instrument": "I11",
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M086",
+      "instrument": "I3",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M087",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Politische Bildung bliebe erhalten, doch ein neuer Schwerpunkt auf kultureller Identität setzt kaum an Abwertung anderer Gruppen an; Abbau und Neuaufbau unterbrechen Angebote über Jahre.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M088",
+      "instrument": "I7",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M089",
+      "instrument": "I5",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M090",
+      "instrument": "I13",
+      "ursachen": [
+        2202
+      ]
+    },
+    {
+      "kennung": "M091",
+      "ursachen": []
+    },
+    {
+      "kennung": "M092",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Geschultes Personal kann extreme Haltungen früher erkennen und ansprechen; die Wirkung auf Einstellungen anderer ist kaum untersucht, Pflichtfortbildung für viele Berufsgruppen braucht Zeit.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M093",
+      "instrument": "I9",
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M094",
+      "instrument": "I2",
+      "ursachen": [
+        2201
+      ]
+    },
+    {
+      "kennung": "M095",
+      "instrument": "I6",
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M096",
+      "instrument": "I9",
+      "ursachen": [
+        2205
+      ]
+    },
+    {
+      "kennung": "M097",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Aufklärungskampagnen sind für das Land leicht umsetzbar; ein Review zu Gegenerzählungen findet nur kleine Effekte und kaum Wirkung auf Gewaltabsichten.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356325"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M098",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Rückmeldungen können Behörden bürgernäher machen und sind einfach einzuführen; ob das Vertrauen in Institutionen dadurch steigt, ist nicht untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2203
+      ]
+    },
+    {
+      "kennung": "M099",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Mehr Forschung verbessert das Wissen über Ideologien und damit künftige Prävention; selbst wirkt sie nur mittelbar auf Einstellungen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M100",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Der Bund kann die Bundeszentrale direkt absichern; ihre Angebote erreichen aber vor allem Interessierte, eine Wirkung auf extreme Einstellungen ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2204
+      ]
+    },
+    {
+      "kennung": "M101",
+      "instrument": "I3",
+      "ursachen": [
+        2204
+      ]
+    }
+  ]
+}

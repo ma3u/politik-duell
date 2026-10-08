@@ -1,0 +1,14 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Medienkompetenz soll in den modernisierten Lehrplänen mehr Raum erhalten.", "ursachen_ids": [], "ursachen_offen": [2303], "zitat": "Zugleich wollen wir die Lehrpläne modernisieren : Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz .", "seite": 9 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2301, "seiten": [9], "grund": "Nur Antisemitismus-/Menschenfeindlichkeit im Unterricht, kein Bezug zu Mobbing oder Klassenklima; keine Treffer." },
+    { "ursache": 2302, "seiten": [9, 33], "grund": "Aus- und Fortbildung der Lehrkräfte ohne Bezug zu Mobbing; S. 33 Anlaufstelle meint Hausärzte." },
+    { "ursache": 2304, "seiten": [7, 35, 9], "grund": "Treffer zu Entlastung betreffen Kita-Personal, Pflege; Notenpflicht ab Klasse 3 ist keine Entlastung; psychische Gesundheit (S. 33) ohne Schulbezug." }
+  ]
+}
+
+Protokoll: Inhaltsverzeichnis, Kapitel Bildung S. 7-10 (Schulen), S. 33 (psychische Gesundheit) und alle sieben Fundstellen gelesen. Kein Treffer zu Mobbing, Cybermobbing, Schulsozialarbeit, Prüfungsdruck. Nicht erfasst: Chancenbudget/multiprofessionelle Teams (S. 9, ohne Mobbingbezug), Notenpflicht (S. 8), psychotherapeutische Versorgung (S. 33, kein Schulbezug). Medienkompetenz als Grenzfall (kein ausdrücklicher Mobbing-/Cybermobbing-Bezug) in ursachen_offen.

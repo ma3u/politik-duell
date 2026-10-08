@@ -41,5 +41,1992 @@
       "ebene": "land",
       "schlagwoerter": ["behoerde", "schule", "ungleichbehandlung", "beschwerde", "rechtsschutz", "diskriminierung durch behoerden"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 8856,
+      "name": "Anonymisierte Bewerbungsverfahren einführen und fördern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an der Vorauswahl an, in der etwa Name oder Kopftuchfoto zu Absagen führen; das deutsche Pilotprojekt fand bessere Einladungschancen, ein französisches Feldexperiment dagegen Nachteile für Minderheiten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.povertyactionlab.org/evaluation/cv-anonymes",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8857,
+      "name": "Gleichbehandlungsgesetz reformieren: längere Fristen, Verbandsklage, Schutz vor staatlicher Diskriminierung (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Längere Fristen und Verbandsklage erleichtern die Durchsetzung bei Bewerbung und gegenüber Behörden; Wirkung auf die Häufigkeit von Diskriminierung kaum untersucht, Bundeskompetenz für Landesbehörden begrenzt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8858,
+      "name": "Antidiskriminierungsstelle des Bundes und Beratungsangebote für Betroffene ausbauen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Beratung hilft Betroffenen, Rechte durchzusetzen, lindert aber vor allem Folgen; auf verbreitete Vorurteile wirkt sie nur mittelbar, Wirkungsstudien fehlen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8859,
+      "name": "Antidiskriminierungs-Fortbildungen für Beschäftigte von Behörden fördern oder vorschreiben (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Für eigene Behörden leicht umsetzbar; Meta-Analysen zeigen stabile Wissenszuwächse, aber schwache und abklingende Effekte auf Einstellungen und Verhalten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://business.cornell.edu/news/2016/07/28/successful-lasting-diversity-training/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8860,
+      "name": "Diskriminierungsverbot in Art. 3 GG um sexuelle und geschlechtliche Identität erweitern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Rechtliche Gleichstellung kann Normen und Einstellungen verschieben, Schutz besteht aber schon über Art. 3 Abs. 1 GG; Verfassungsänderung braucht Zweidrittelmehrheiten in Bundestag und Bundesrat.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.mcgill.ca/newsroom/node/158154",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8861,
+      "name": "Bundesaktionsplan gegen Queerfeindlichkeit umsetzen und finanzieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bündelt Akzeptanz-, Bildungs- und Beratungsmaßnahmen und ist finanzierbar; die Wirkung hängt von den Einzelmaßnahmen ab und ist kaum evaluiert.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8862,
+      "name": "Familien- und Abstammungsrecht für Regenbogenfamilien gleichstellen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Beseitigt eine konkrete rechtliche Benachteiligung, Bund ist zuständig; Studien zur Ehe-Öffnung zeigen schneller sinkende Vorurteile, teils aber Gegenreaktionen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.mcgill.ca/newsroom/node/158154",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8863,
+      "name": "Landesantidiskriminierungsgesetz einführen oder ausbauen, mit gestärkter Ombudsstelle (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schließt direkt die Schutzlücke gegenüber Behörden und Schulen; das erste Bundesland mit Gesetz verzeichnet tausende Anfragen und viele Schlichtungen, eine Wirkungsevaluation fehlt.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.berlin.de/sen/asgiva/presse/pressemitteilungen/2026/pressemitteilung.1670019.php",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8864,
+      "name": "Landesantidiskriminierungsgesetz aufheben oder einschränken (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Rechtlich möglich, vergrößert aber die Schutzlücke gegenüber staatlichem Handeln, statt sie zu schließen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8865,
+      "name": "Unabhängige Beschwerde- und Ombudsstellen für Diskriminierung durch Schulen, Polizei und Behörden (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gibt Betroffenen einen Weg gegen staatliche Diskriminierung; Erfahrungen mit Polizeibeauftragten zeigen Wirkung nur mit Ermittlungsbefugnissen und gezielter Ansprache Betroffener.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.humanistische-union.de/publikationen/vorgaenge/237-238-vorgaenge/publikation/unabhaengige-polizeibeauftragte-in-deutschland-auf-dem-weg-zum-standard-ziele-praktiken-defizite-und-moegliche-beitraege-zum-diskriminierungsschutz/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8866,
+      "name": "Antidiskriminierungsstelle und Beauftragte des Landes abbauen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Spart Mittel und ist rechtlich möglich, nimmt Betroffenen aber Anlaufstellen gegen Diskriminierung durch staatliche Stellen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8867,
+      "name": "Antidiskriminierungs-Ansprechpersonen in Schulen, Behörden und Polizei (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Niedrigschwellige Anlaufstelle vor Ort, leicht umsetzbar; ohne eigene Rechte oder Unabhängigkeit bleibt die Wirkung auf staatliches Handeln begrenzt und ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8868,
+      "name": "Antidiskriminierungs- und Interkulturalitäts-Fortbildungen in Verwaltung, Schule und Polizei (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Land kann Fortbildungen für eigenes Personal vorschreiben; Meta-Analysen zeigen stabile Wissenszuwächse, aber schwache und abklingende Effekte auf Einstellungen und Verhalten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://business.cornell.edu/news/2016/07/28/successful-lasting-diversity-training/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8869,
+      "name": "Schulische Programme und Unterricht gegen Rassismus und Antisemitismus (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erreicht junge Menschen, bevor sich Vorurteile verfestigen; Meta-Analyse findet kleine bis mittlere Effekte, am stärksten mit Kontakt, schwächer bei ethnischen Vorurteilen und ohne Langzeitbelege.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.switchboardta.org/evidence/preventing-prejudice-and-improving-intergroup-attitudes-a-meta-analysis-of-child-and-adolescent-training-programs-3",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8870,
+      "name": "Landesförderung von Programmen und Projekten gegen Rassismus beenden (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Spart Mittel und ist rechtlich möglich, streicht aber Angebote, die an verbreiteten Vorurteilen ansetzen (wenn auch mit gemischt belegter Wirkung).",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8871,
+      "name": "Zivilgesellschaftliche Projekte gegen Rassismus und gruppenbezogene Menschenfeindlichkeit fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Finanzierbar und setzt an Vorurteilen an; Übersichtsarbeiten zeigen, dass meist kurze Interventionen untersucht sind und große Studien oft nur begrenzte Effekte finden.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://collaborate.princeton.edu/en/publications/prejudice-reduction-progress-and-challenges/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8872,
+      "name": "Begegnungs- und Dialogprojekte zwischen Gruppen fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kontakt zwischen Gruppen senkt Vorurteile in vielen Studien; neuere Auswertungen finden schwächere Effekte bei ethnischen Vorurteilen und kaum Experimente mit Erwachsenen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://collaborate.princeton.edu/en/publications/the-contact-hypothesis-re-evaluated/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8873,
+      "name": "Antidiskriminierungsberatungsstellen erhalten und ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Unterstützt Betroffene beim Umgang mit Diskriminierung und dokumentiert Fälle, lindert aber vor allem Folgen; Wirkungsstudien fehlen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8874,
+      "name": "Landesstrategie oder Landesbeauftragte gegen Rassismus als Querschnittsaufgabe (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bündelt und koordiniert Maßnahmen gegen Vorurteile, leicht umsetzbar; die Wirkung hängt von den Einzelmaßnahmen ab und ist kaum evaluiert.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8875,
+      "name": "Landesaktionsplan für Akzeptanz sexueller und geschlechtlicher Vielfalt (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bündelt Akzeptanz-, Bildungs- und Beratungsmaßnahmen, Land ist zuständig; die Wirkung hängt von den Einzelmaßnahmen ab und ist kaum evaluiert.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8876,
+      "name": "Queere Themen in Unterricht, Lehrplänen und Jugendarbeit verankern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt bei abwertenden Einstellungen junger Menschen an; Querschnittsdaten zeigen weniger Mobbing an Schulen mit inklusivem Unterricht, kausale Belege fehlen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6478545",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8877,
+      "name": "Queere Beratungs-, Anlauf- und Begegnungsstrukturen fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Stützt Betroffene und schafft Sichtbarkeit, lindert aber vor allem Folgen; auf verbreitete Abwertung wirkt es nur mittelbar, Wirkungsstudien fehlen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8878,
+      "name": "Erweiterung von Art. 3 GG um sexuelle und geschlechtliche Identität über den Bundesrat anstoßen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Rechtliche Gleichstellung kann Einstellungen verschieben; ein Land kann aber nur initiieren, die Änderung braucht Zweidrittelmehrheiten in Bundestag und Bundesrat.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.mcgill.ca/newsroom/node/158154",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8879,
+      "name": "Themen geschlechtlicher und sexueller Vielfalt in Kita und Schule zurückfahren (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Landesrechtlich möglich, verringert aber Bildungsangebote, die an abwertenden Einstellungen ansetzen, statt diese abzubauen.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8880,
+      "name": "Regenbogenflaggen an öffentlichen Gebäuden und Schulen untersagen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Per Erlass umsetzbar; setzt nicht am Abbau abwertender Einstellungen an, sondern entfernt ein Zeichen der Anerkennung.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8881,
+          "beschreibung": "Selbstbestimmungsgesetz für Kinder und Jugendliche ablehnen; Änderung des Geschlechtseintrags nur mit unabhängigem psychologischem Gutachten.",
+          "ursachen_ids": [1903],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Der Bund kann das Gesetz ändern; eine Gutachtenpflicht baut keine Abwertung ab, sondern erhöht die Hürden für trans* Jugendliche.",
+          "zitat": "Das Selbstbestimmungsgesetz der Ampel erlaubt bei Kindern und Jugendlichen, ihren Geschlechtseintrag und Vornamen auch ohne Gutachten oder Beratung und gerichtliche Entscheidung zu ändern. Das lehnen wir entschieden ab.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=64",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8882,
+          "instrument": 8864,
+          "beschreibung": "Landesantidiskriminierungsgesetz überarbeiten, damit es nicht über Bundesregelungen hinausgeht (Rückbau des Landesrechtsschutzes)",
+          "ursachen_ids": [1904],
+          "zitat": "Wir werden das Landesantidiskriminierungsgesetz einer umfassenden Überarbeitung unterziehen mit dem Ziel, dass die Landesregelungen nicht über Bundesregelungen hinausgehen",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=8",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8883,
+          "instrument": 8866,
+          "beschreibung": "Landesantidiskriminierungsstelle zugunsten des Petitionsausschusses abbauen (Doppelstrukturen)",
+          "ursachen_ids": [1904],
+          "zitat": "Die Arbeit des Petitionsausschusses werden wir stärken und Doppelstrukturen mit der Landesantidiskriminierungsstelle sowie dem Bürger- und Polizeibeauftragten abbauen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=118",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8884,
+          "instrument": 8878,
+          "beschreibung": "Verfassungsrechtliche Ergänzung des Grundgesetzes Artikel 3 um sexuelle Identität vorantreiben",
+          "ursachen_ids": [1903],
+          "zitat": "Wir setzen uns weiter dafür ein, die verfassungsrechtliche Vervollständigung des Artikel 3 im Grundgesetz um das Merkmal „sexuelle Identität“ voranzutreiben und abzuschließen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=110",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8885,
+          "instrument": 8873,
+          "beschreibung": "Beratungs- und Unterstützungsangebote bei antisemitischen Vorfällen ausbauen und dauerhaft sichern",
+          "ursachen_ids": [1902],
+          "zitat": "Bestehende Beratungs- und Unterstützungsangebote bei antisemitischen Vorfällen im Kulturbereich – wie etwa das OpenArtsHub – wollen wir ausbauen und dauerhaft sichern.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=23",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8886,
+          "instrument": 8869,
+          "beschreibung": "Politische Bildung, Erinnerungskultur und eine klare Haltung gegen Antisemitismus, Extremismus und Hass werden verpflichtender Teil schulischer Erziehung.",
+          "ursachen_ids": [1902],
+          "zitat": "Auch politische Bildung, Erinnerungskultur sowie eine klare Haltung gegen Antisemitismus, Extremismus und Hass sind Pflichtbestandteile schulischer Erziehung.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8887,
+          "instrument": 8872,
+          "beschreibung": "Initiativen für Begegnung und Dialog zwischen den Religionen und für respektvolles Miteinander in religiöser Vielfalt unterstützen.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir werden Initiativen unterstützen, die Begegnung und Dialog ermöglichen und das respektvolle Miteinander in religiöser Vielfalt stärken.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=73",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8888,
+          "beschreibung": "Das Allgemeine Gleichbehandlungsgesetz soll modernisiert werden, um wirksameren Schutz vor Diskriminierung zu bieten.",
+          "ursachen_ids": [1901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bund ist zuständig, aber ohne Angabe, was sich am Gesetz ändern soll, ist keine deutliche Verbesserung bei Bewerbung und Einstellung abschätzbar.",
+          "zitat": "Wir wollen das Allgemeine Gleichbehandlungsgesetz (AGG) modernisieren, um effektiveren Schutz vor Diskriminierung zu gewährleisten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8889,
+          "instrument": 8858,
+          "beschreibung": "Antidiskriminierungsstelle des Bundes stärken und zivilgesellschaftliche Beratungsangebote für Betroffene ausbauen.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8890,
+          "instrument": 8858,
+          "beschreibung": "Antidiskriminierungsberatung ausbauen, Anti-Rassismus-Beauftragte dauerhaft verankern und Nationalen Aktionsplan gegen Rassismus neu auflegen.",
+          "ursachen_ids": [1902],
+          "zitat": "Dazu werden wir das Allgemeine Gleichbehandlungsgesetz ausweiten und die Stelle der Anti-Rassismus- Beauftragten dauerhaft verankern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=55",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8891,
+          "instrument": 8860,
+          "beschreibung": "Diskriminierungsverbot im Grundgesetz auf sexuelle Orientierung und geschlechtliche Identität erweitern.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir wollen den Schutz vor Diskriminierung im Grundgesetz (GG) explizit auf sexuelle Orientierung und geschlechtliche Identität erweitern .",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8892,
+          "instrument": 8862,
+          "beschreibung": "Aktionsplan für queeres Leben mit der Zivilgesellschaft fortschreiben und queere Familien rechtlich gleichstellen.",
+          "ursachen_ids": [1903],
+          "zitat": "Queere Familien sollen im Familien- und Abstammungsrecht vollständig gleichgestellt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8893,
+          "instrument": 8863,
+          "beschreibung": "Die Ombudsstelle des Landesantidiskriminierungsgesetzes erhält mehr Rechte (Initiativ-, Befragungsrechte, Berichtspflicht).",
+          "ursachen_ids": [1904],
+          "zitat": "Die Ombudsstelle des Landesantidiskriminierungsgesetzes (LADG) statten wir deshalb mit mehr Rechten aus. Dazu zählen Initiativ- und Befragungsrechte sowie eine Berichtspflicht.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8894,
+          "instrument": 8863,
+          "beschreibung": "Neue Gesetze werden auf Vereinbarkeit mit dem Landesantidiskriminierungsgesetz geprüft; Beratungsstellen werden ausgebaut.",
+          "ursachen_ids": [1904],
+          "zitat": "Neue Gesetze prüfen wir künftig auf Konformität mit dem LADG und dem LGBG. Die Landesstelle für Gleichbehandlung – gegen Diskriminierung (LADS) binden wir frühzeitig ein. Wir bauen Beratungsstellen aus.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8895,
+          "instrument": 8868,
+          "beschreibung": "Leitstelle Diversity in der Verwaltung; Beschäftigte werden verbindlich zu Diskriminierung geschult.",
+          "ursachen_ids": [1904],
+          "zitat": "Wir etablieren eine Leitstelle Diversity. Diese soll die Wertschätzung der kulturellen Vielfalt stärken und die Sensibilisierung der Beschäftigten voranbringen. So bekämpft die Verwaltung strukturelle Diskriminierung und schult Beschäftigte verbindlich.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8896,
+          "instrument": 8865,
+          "beschreibung": "Unabhängige Beschwerdestelle für Schulen und Kitas beim Parlament.",
+          "ursachen_ids": [1904],
+          "zitat": "Eine unabhängige Beschwerdestelle für Schulen und Kitas siedeln wir beim Parlament an",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8897,
+          "beschreibung": "Rassismus- und queersensible Überarbeitung von Lehrplänen und Materialien, Fortbildungen und Pflichtmodule in der Ausbildung pädagogischer Fachkräfte.",
+          "ursachen_ids": [1904, 1902, 1903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Überarbeitete Lehrpläne erreichen alle Schülerinnen und Schüler, Fortbildungen das Lehrpersonal; Programme gegen Vorurteile zeigen kleine bis mittlere, nicht dauerhaft belegte Effekte.",
+          "zitat": "Deshalb setzen wir uns für eine queer-, rassismus- und kolonialsensible Überarbeitung von Rahmenlehrplan, Schulcurricula sowie Lehr- und Lernmaterialien ein. Fortbildungen zu Diskriminierung, Rassismus und Postkolonialismus stärken wir.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "beleg_studie_url": "https://www.switchboardta.org/evidence/preventing-prejudice-and-improving-intergroup-attitudes-a-meta-analysis-of-child-and-adolescent-training-programs-3",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8898,
+          "instrument": 8868,
+          "beschreibung": "Interkulturelle Kompetenz der Polizei ausbauen und Rassismus-Sensibilisierung in Aus- und Fortbildung stärken.",
+          "ursachen_ids": [1904],
+          "zitat": "Ihre interkulturelle Kompetenz bauen wir deshalb weiter aus und stärken die Sensibilisierung für Rassismus, Queerfeindlichkeit und geschlechtsspezifische Gewalt in der Aus- und Fortbildung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8899,
+          "instrument": 8874,
+          "beschreibung": "Landeskonzept Antidiskriminierung mit unabhängiger Beauftragter; Rassismusprävention gemeinsam mit den Communities weiterentwickeln.",
+          "ursachen_ids": [1902],
+          "zitat": "Antisemitismus-, Antiziganismus-, antimuslimische und anti-Schwarze-Rassismusprävention entwickeln wir gemeinsam mit den Communities weiter. Alle Maßnahmen bündeln wir in einem integralen Landeskonzept Antidiskriminierung. Eine unabhängige Beauftragte koordiniert dieses Vorgehen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8900,
+          "instrument": 8875,
+          "beschreibung": "LSBTIQ+-Aktionsplan umsetzen, finanziell absichern und Queerbeauftragte in allen Bezirken einsetzen.",
+          "ursachen_ids": [1903],
+          "zitat": "Und den LSBTIQ+-Aktionsplan 2023 setzen wir konsequent um. Wir entwickeln ihn weiter. Wir sichern ihn finanziell ab. Und wir etablieren in allen Bezirken Queerbeauftragte.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8901,
+          "instrument": 8876,
+          "beschreibung": "Queere Bildung in Schulen, Jugendarbeit und Erwachsenenbildung stärken.",
+          "ursachen_ids": [1903],
+          "zitat": "In Schulen, Jugendarbeit und Erwachsenenbildung stärken wir queere Bildung, um Hass und Gewalt vorzubeugen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8902,
+          "instrument": 8877,
+          "beschreibung": "Queere Jugendzentren, Regenbogenfamilienzentren, Peer-Projekte und Anlaufstellen in allen Bezirken erhalten und ausbauen.",
+          "ursachen_ids": [1903],
+          "zitat": "Deshalb halten wir queere Jugendzentren und bauen sie aus. Wir stärken Regenbogenfamilienzentren und Peer-Projekte. Auch Anlaufstellen in allen Bezirken sichern wir ab.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8903,
+          "instrument": 8878,
+          "beschreibung": "Sexuelle Orientierung soll im Grundgesetz-Diskriminierungsverbot ausdrücklich stehen; Selbstbestimmungsgesetz verteidigen.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir kämpfen für die Erweiterung von Artikel 3 Absatz 3 des Grundgesetzes. Diskriminierung aufgrund sexueller Orientierung muss dort ausdrücklich verboten sein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8904,
+          "instrument": 8875,
+          "beschreibung": "Queere Menschen besser vor Diskriminierung schützen, indem das Landeshandeln am Landesaktionsplan Vielfalt ausgerichtet und mit der Community weiterentwickelt wird.",
+          "ursachen_ids": [1903],
+          "zitat": "Queere Lebensentwürfe wollen wir noch besser vor Diskriminierung schützen, indem wir unser politisches Handeln konsequent am Landesaktionsplan Vielfalt ausrichten und gemeinsam mit der Community weiterentwickeln.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8905,
+          "instrument": 8868,
+          "beschreibung": "Interkulturelle Öffnung von Verwaltung, Bildung, Polizei und sozialen Einrichtungen fortführen, für eine diskriminierungsfreie, interkulturell kompetente Verwaltung.",
+          "ursachen_ids": [1904],
+          "zitat": "Eine moderne Einwanderungsgesellschaft braucht eine dienstleistungsorientierte, diskriminierungsfreie und interkulturell kompetente Verwaltung. Diese interkulturelle Öffnung führen wir konsequent fort – in Verwaltung, Bildung, Polizei und sozialen Einrichtungen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8906,
+          "instrument": 8871,
+          "beschreibung": "Projekte der politischen, kulturellen und interkulturellen Bildung fördern, die Demokratie und Vielfalt stärken.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir fördern Projekte der politischen, kulturellen und interkulturellen Bildung, die Demokratie und Vielfalt stärken.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=78",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8907,
+          "instrument": 8863,
+          "beschreibung": "Landes-Antidiskriminierungsgesetz, das die Rechte Betroffener stärkt",
+          "ursachen_ids": [1904],
+          "zitat": "Mit einem Landes-Antidiskriminierungsgesetz stärken wir die Rechte der Betroffenen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8908,
+          "instrument": 8868,
+          "beschreibung": "Rassismuskritische Bildungsarbeit in Verwaltung, Schulen und Polizei ausbauen; interkulturelle Bildung und Schulsozialarbeit verstetigen",
+          "ursachen_ids": [1902, 1904],
+          "zitat": "Rassismuskritische Bildungsarbeit wird in Verwaltung, Schulen und Polizei ausgebaut. Interkulturelle Bildung, Schulsozialarbeit und Elternarbeit werden verstetigt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8909,
+          "instrument": 8869,
+          "beschreibung": "Landesprogramm „Schule ohne Rassismus“ stärken und schulinterne Fortbildungen wieder ermöglichen",
+          "ursachen_ids": [1902],
+          "zitat": "Das Landesprogramm „Schule ohne Rassismus“ wird gestärkt, schulinterne Fortbildungen wieder ermöglicht.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8910,
+          "instrument": 8875,
+          "beschreibung": "Landesprogramm für queeres Leben fortführen und mit verbindlichen Zielen, Mitteln und Zuständigkeit ausstatten",
+          "ursachen_ids": [1903],
+          "zitat": "Die Landesprogramme „Für ein geschlechtergerechtes Sachsen - Anhalt“ und „Queer leben in Sachsen- Anhalt“ werden fortgeführt, weiterentwickelt und mit verbindlichen Zielen, ausreichenden Mitteln und klarer Zuständigkeit ausgestattet.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8911,
+          "instrument": 8877,
+          "beschreibung": "Fachzentren für geschlechtliche Vielfalt zu Versorgungs- und Beratungsstellen ausbauen",
+          "ursachen_ids": [1903],
+          "zitat": "Die landesfinanzierten Fachzentren für geschlechtliche Vielfalt werden zu interdisziplinären Versorgungs- und Beratungsstellen ausgebaut.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8912,
+          "beschreibung": "Bundesratsinitiative gegen die Diskriminierung von Regenbogenfamilien und queeren Personen unterstützen",
+          "ursachen_ids": [1903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Rechtliche Gleichstellung kann Vorurteile abbauen, der Inhalt der Initiative bleibt aber offen; ein Land kann sie nur unterstützen, entscheiden müssen Bundestag und Bundesrat.",
+          "zitat": "Deshalb unterstützt Sachsen-Anhalt eine Bundesratsinitiative zum Abbau der Diskriminierung von Regenbogenfamilien und queeren Personen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=26",
+          "beleg_studie_url": "https://www.mcgill.ca/newsroom/node/158154",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8913,
+          "instrument": 8868,
+          "beschreibung": "Verwaltung erkennt selbstgewählte Namen und Pronomen an und bildet queersensibel aus und weiter",
+          "ursachen_ids": [1903, 1904],
+          "zitat": "Dazu gehören die Anerkennung selbstgewählter Namen und Pronomen, eine queersensible Aus- und Weiterbildung sowie eine gendersensible Sprache.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8914,
+          "instrument": 8857,
+          "beschreibung": "Allgemeines Gleichbehandlungsgesetz reformieren: längere Fristen, mehr Diskriminierungsgründe, größerer Anwendungsbereich, Verbandsklagerecht, Schutz auch vor Diskriminierung durch staatliche Stellen.",
+          "ursachen_ids": [1901, 1904],
+          "zitat": "Wir werden das Allgemeine Gleichbehandlungsgesetz reformieren. Dazu weiten wir Fristen, Diskriminierungsgründe und den Anwendungsbereich aus, führen ein Verbandsklagerecht ein und schließen Schutzlücken. Dazu gehört auch der Schutz vor Diskriminierung durch staatliche Stellen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=116",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8915,
+          "instrument": 8858,
+          "beschreibung": "Beratungsstellen und Selbstorganisationen langfristig absichern und ausbauen, Antidiskriminierungsstelle stärken, Nationaler Aktionsplan Antidiskriminierung.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir wollen, dass Beratungsstellen und Selbstorganisationen langfristig abgesichert und ausgebaut werden sowie die Antidiskriminierungsstelle des Bundes auch in ihren Kompetenzen gestärkt wird. Mit einem Nationalen Aktionsplan Antidiskriminierung wollen wir eine wirksame Antidiskriminierungspolitik umsetzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=116",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8916,
+          "instrument": 8859,
+          "beschreibung": "Fortbildungsangebote zur Diskriminierungssensibilität in Gesundheitswesen, Justiz und Sicherheitsbehörden stärker fördern, um strukturellen Rassismus zu bekämpfen.",
+          "ursachen_ids": [1904, 1902],
+          "zitat": "Um strukturellen Rassismus, egal ob im Gesundheitswesen, in der Justiz oder in unseren Sicherheitsbehörden, zu bekämpfen, wollen wir zielgerichtete Fortbildungsangebote zur Steigerung der Diskriminierungssensibilität stärker fördern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=116",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8917,
+          "beschreibung": "Nationale Strategie gegen Islamfeindlichkeit und antimuslimischen Rassismus nach den Empfehlungen einer Expertenkommission.",
+          "ursachen_ids": [1902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Strategie bündelt Maßnahmen gegen antimuslimische Vorurteile und ist umsetzbar; ihre Wirkung hängt von den Einzelmaßnahmen ab und ist kaum evaluiert.",
+          "zitat": "Mit einer Nationalen Strategie gegen Islamfeindlichkeit und antimuslimischen Rassismus gehen wir gegen die zunehmende Diskriminierung von Muslim*innen und muslimisch gelesenen Menschen vor.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=117",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8918,
+          "instrument": 8861,
+          "beschreibung": "Bundesförderprogramm für queere Beratungs- und Projektstrukturen, Schutz vor Diskriminierung wegen sexueller und geschlechtlicher Identität im Grundgesetz verankern.",
+          "ursachen_ids": [1903],
+          "zitat": "Zur weiteren Umsetzung wollen wir mit einem Bundesförderprogramm die nötigen Mittel bereitstellen. So stärken wir queere Beratungs- und Projektstrukturen. Wir wollen den Schutz vor Diskriminierung aufgrund der sexuellen und geschlechtlichen Identität in Artikel 3 des Grundgesetzes verankern",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=121",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8919,
+          "instrument": 8862,
+          "beschreibung": "Familienrecht anpassen und Diskriminierung von Regenbogenfamilien im Abstammungsrecht beenden.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir passen deshalb das Familienrecht an, beenden schnellstmöglich die Diskriminierung von Regenbogenfamilien, insbesondere von lesbischen Müttern und ihren Kindern, im Abstammungsrecht",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8920,
+          "instrument": 8874,
+          "beschreibung": "Landesbeauftragte(r) gegen antimuslimische Diskriminierung, verpflichtende Fortbildungen und Ausbau von Beratungs- und Empowermentstrukturen gegen Rassismus.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir setzen eine*n Landesbeauftragte*n ein, die*der ressortübergreifend Lücken im Schutz vor antimuslimischer Diskriminierung in unseren gesellschaftlichen Institutionen wie Behörden und Schulen sowie bei strukturellen Benachteiligungen etwa im Berufsleben schließt",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=140",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8921,
+          "instrument": 8863,
+          "beschreibung": "Landesantidiskriminierungsgesetz ausweiten: mehr Merkmale, längere Verjährung, Rechtshilfefonds, unabhängige Ombudsstelle und Beschwerdestelle für Schulen.",
+          "ursachen_ids": [1904],
+          "zitat": "Wir stärken die LADG-Ombudsstelle und stellen sie als unabhängige Behörde auf. Sie erhält ein Initiativrecht, ein eigenes Presserecht und eine Berichtspflicht. Unter dem Dach der LADG-Ombudsstelle wird eine unabhängige Beschwerdestelle gegen Diskriminierung an Schulen eingerichtet.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=136",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8922,
+          "instrument": 8877,
+          "beschreibung": "Queere Beratung und Anlaufstellen in allen Bezirken, queerer Ort je Bezirk, Queerbeauftragte mit gesetzlicher Grundlage.",
+          "ursachen_ids": [1903],
+          "zitat": "In jedem Bezirk soll daher mindestens ein queerer Ort in Form eines Zentrums, Jugendclubs oder Familienzentrums entstehen. Wir wollen Queerbeauftragte in allen Bezirken und für sie eine gesetzliche Grundlage schaffen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=150",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8923,
+          "instrument": 8876,
+          "beschreibung": "Queere Bildungsangebote an Schulen dauerhaft sichern, damit alle Schüler*innen jährlich Zugang haben; Projekte gegen Vorurteile stärken.",
+          "ursachen_ids": [1903],
+          "zitat": "Dazu sichern wir die Fachstellen für queere und intersektionale Bildung dauerhaft und bauen sie aus. Unser Ziel: Alle Berliner Schüler*innen sollen jährlich Zugang zu queeren Bildungsangeboten erhalten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=151",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8924,
+          "instrument": 8868,
+          "beschreibung": "Diskriminierungskritische Schulentwicklung und Fortbildungen für Lehrkräfte.",
+          "ursachen_ids": [1904],
+          "zitat": "Wir setzen auf diskriminierungskritische Schulentwicklung sowie Fortbildungsangebote unter Einbezug der Zivilgesellschaft",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=193",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8925,
+          "instrument": 8873,
+          "beschreibung": "Unabhängige Antidiskriminierungsberatungsstellen im ganzen Land ausbauen und dauerhaft vom Land finanzieren.",
+          "ursachen_ids": [1902],
+          "zitat": "Für konsequente intersektionale Antidiskriminierung wollen wir: […] unabhängige Antidiskriminierungsberatungsstellen im ganzen Bundesland nicht nur erhalten, sondern ausbauen und langfristig durch das Land finanzieren.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=86",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8926,
+          "instrument": 8863,
+          "beschreibung": "Landes-Antidiskriminierungsgesetz, das Beratungsstellen absichert und Diskriminierungstatbestände beklagbar macht.",
+          "ursachen_ids": [1904],
+          "zitat": "Mit einem Landes-Antidiskriminierungsgesetz sichern wir die bestehenden und durch Land und Bund geförderten Beratungsstellen rechtlich und dauerhaft finanziell ab und setzen einen Landesrahmen für Diskriminierungstatbestände und machen diese damit beklagbar.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=90",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8927,
+          "instrument": 8877,
+          "beschreibung": "Beratungs- und Hilfeangebote für queere Menschen länger fördern, mit jährlichem Inflationsausgleich, landesweit.",
+          "ursachen_ids": [1903],
+          "zitat": "Um Queerfeminismus zu fördern: […] schaffen wir längere Förderzeiten für Beratungsangebote und Hilfestellen im gesamten Bundesland mit jährlichen Inflationsangleichungen der Mittel.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=87",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8928,
+          "instrument": 8868,
+          "beschreibung": "Verpflichtende Weiterbildungen für Pädagogik, Sozialarbeit, Schulpsychologie und Polizei gegen Mehrfachdiskriminierung queerer Personen.",
+          "ursachen_ids": [1903, 1904],
+          "zitat": "Um Queerfeminismus zu fördern: […] führen wir verpflichtende Weiterbildungen für Pädagog*innen, Sozialarbeiter*innen, Schulpsycholog*innen und für Polizist*innen ein, um Mehrfachdiskriminierung von queeren Personen zu verhindern.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=87",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8929,
+          "instrument": 8871,
+          "beschreibung": "Projekte gegen Rassismus und andere gruppenbezogene Menschenfeindlichkeit dauerhaft und verlässlich fördern",
+          "ursachen_ids": [1902],
+          "zitat": "Wir wollen Projekte stärken, die gegen Rassismus, Antisemitismus, Islamfeindlichkeit, LGBTIQ*- Feindlichkeit und andere Formen gruppenbezogener Menschenfeindlichkeit arbeiten.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=75",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8930,
+          "instrument": 8869,
+          "beschreibung": "Prävention und Bildungsarbeit gegen Rassismus und gruppenbezogene Menschenfeindlichkeit in Schulen, Vereinen und Jugendhilfe stärken",
+          "ursachen_ids": [1902],
+          "zitat": "Wir setzen uns für die Prävention und Bildung gegen Rassismus, Antisemitismus, Antifeminismus und andere gruppenbezogene Menschenfeindlichkeit ein.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=41",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8931,
+          "instrument": 8873,
+          "beschreibung": "Beratungsstellen für Betroffene rassistischer Gewalt und das Landesberatungsnetzwerk stärken",
+          "ursachen_ids": [1902],
+          "zitat": "Beratungsstellen sind oft die erste Anlaufstelle für Betroffene rechter, rassistischer, antisemitischer oder antifeministischer Gewalt und sie unterstützen Kommunen, Schulen und Vereine bei der Präventionsarbeit. Wir wollen diese Strukturen weiter stärken[…]",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=74",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8932,
+          "instrument": 8875,
+          "beschreibung": "Institutionelle Strukturen und Zuständigkeiten für eine Queer-Politik im Land aufbauen",
+          "ursachen_ids": [1903],
+          "zitat": "Wir setzen uns dafür ein, institutionelle Strukturen für eine konsequente Queer-Politik in Sachsen-Anhalt auszubauen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=45",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8933,
+          "instrument": 8863,
+          "beschreibung": "Landesantidiskriminierungsgesetz gegen Diskriminierung durch staatliche Stellen mit Entschädigung für Betroffene",
+          "ursachen_ids": [1904],
+          "zitat": "Wir wollen ein Landesantidiskriminierungsgesetz (LADG) auf den Weg bringen, um Diskriminierung durch staatliche Stellen effektiv zu verhindern und Betroffenen rechtliches Gehör und Entschädigung zu ermöglichen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=51",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8934,
+          "instrument": 8865,
+          "beschreibung": "Unabhängige Ombudsstelle für Diskriminierung an Schulen und verbindliche Lehrerfortbildung zum Umgang mit Diskriminierung",
+          "ursachen_ids": [1904],
+          "zitat": "Wir setzen für Schulen eine unabhängige landesweite Ombudsstelle für Diskriminierung und Übergriffe jeglicher Art, verbal und körperlich ein, an die sich Schüler*innen, Eltern und Lehrkräfte zur (anonymen) Meldung von Vorfällen und zur (anonymen) Beratung im Umgang mit diesen wenden können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8935,
+          "instrument": 8868,
+          "beschreibung": "Aus- und Fortbildung der Polizei auf Antidiskriminierung und interkulturelle Kompetenz ausrichten, um Racial Profiling entgegenzuwirken",
+          "ursachen_ids": [1904],
+          "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=43",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8936,
+          "instrument": 8861,
+          "beschreibung": "Diskriminierung gegenüber LSBTI bekämpfen: Aktionsplan „Queer leben“ umsetzen und die Bundesstiftung Magnus Hirschfeld finanziell besser ausstatten.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir bekämpfen Diskriminierung gegenüber LSBTI, setzen den Nationalen Aktionsplan „Queer leben“ um und statten die Bundesstiftung Magnus Hirschfeld finanziell besser aus.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=25",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8937,
+          "instrument": 8860,
+          "beschreibung": "Grundgesetz Artikel 3 um die sexuelle Identität ergänzen.",
+          "ursachen_ids": [1903],
+          "zitat": "Artikel 3 GG wollen wir um die sexuelle Identität ergänzen .",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=25",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8938,
+          "instrument": 8862,
+          "beschreibung": "Familienrecht modernisieren, etwa Elternschaftsvereinbarungen in Regenbogenfamilien und Adoption für unverheiratete Paare ermöglichen.",
+          "ursachen_ids": [1903],
+          "zitat": "Ein modernes Familienrecht soll die den heute vielfältigen Familienkonstellationen gerecht werden, etwa indem wir Elternschaftsvereinbarungen gerade in Regenbogenfamilien vor der Empfängnis ermöglichen, das Abstammungsrecht modernisieren, auch unverheirateten Paaren Adoptionen erlauben",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=31",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8939,
+          "instrument": 8859,
+          "beschreibung": "IHRA-Antisemitismusdefinition in staatlichen Behörden etablieren und zur Grundlage von Fortbildungen von Beamten machen.",
+          "ursachen_ids": [1904],
+          "zitat": "Wir treten dafür ein, die Arbeitsdefinition von Antisemitismus nach der IHRA (International Holocaust Remembrance Alliance) umfassend in den staatlichen Behörden zu etablieren und diese insbesondere zur Grundlage von Fortbildungen von Beamtinnen und Beamten und bei der Vergabe staatlicher Gelder zu machen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8940,
+          "instrument": 8869,
+          "beschreibung": "Verbindliche Bildungsprogramme an Schulen gegen Antisemitismus mit jüdischen Perspektiven und Begegnungsformaten, die Vorurteile abbauen.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir fordern verbindliche Bildungsprogramme gegen Antisemitismus, die historische Aufklärung mit einem klaren Gegenwartsbezug verbinden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=79",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8941,
+          "instrument": 8877,
+          "beschreibung": "Queere Netzwerke in Landesunternehmen, Verwaltung und Wirtschaft fördern.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir fördern queere Netzwerke in öffentlichen Unternehmen, in der Verwaltung und in der Wirtschaft.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=82",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8942,
+          "instrument": 8877,
+          "beschreibung": "Schutzunterkünfte und Beratungsangebote für queere Menschen, besonders Geflüchtete und Menschen mit Migrationsgeschichte, stärker unterstützen.",
+          "ursachen_ids": [1903],
+          "zitat": "Berlin muss sich stärker für Schutzunterkünfte und Beratungsangebote für queere Menschen, insbesondere queere Geflüchtete und Menschen mit Migrationsgeschichte, engagieren.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=82",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8943,
+          "instrument": 8864,
+          "beschreibung": "Beweislastumkehr-Vermutungsregel im Landesantidiskriminierungsgesetz abschaffen.",
+          "ursachen_ids": [1904],
+          "zitat": "Die Vermutungsregelung in § 7 Landesantidiskriminierungsgesetz, deren Beweislastumkehr die Polizeiarbeit bürokratisch erschwert, wollen wir abschaffen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=67",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 37) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-08",
+        "treffer": 30,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8944,
+          "instrument": 8869,
+          "beschreibung": "In Jugendarbeit und Schule soll Diskriminierung wegen Herkunft, Religion oder sexueller Orientierung durch Aufklärung für Toleranz und Akzeptanz entgegengewirkt werden.",
+          "ursachen_ids": [1902, 1903],
+          "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8945,
+          "instrument": 8867,
+          "beschreibung": "Feste Ansprechpersonen für Antidiskriminierung in der Polizei aufbauen und konsequente, nachhaltige Fortbildung einfordern.",
+          "ursachen_ids": [1904],
+          "zitat": "Zudem unterstützen wir den Aufbau von festen Ansprechpersonen für die Antidiskriminierung in der Polizei und fordern eine konsequente sowie nachhaltige Fortbildung.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8946,
+          "beschreibung": "Verwaltungshandeln soll verschiedene Geschlechtsidentitäten berücksichtigen und von Selbstbestimmung geprägt sein; Geschlechtsangabe nur wo nötig erfassen.",
+          "ursachen_ids": [1903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Respektvolle Verwaltungspraxis zur Geschlechtsidentität vermeidet Herabsetzung im Behördenkontakt; auf verbreitete Einstellungen wirkt sie kaum, Belege fehlen.",
+          "zitat": "Administrative Akte müssen vom Gedanken der Selbstbestimmung geprägt sein. Die freie Entfaltung der Persönlichkeit darf nicht von verschiedenen externen Gutachtern abhängig sein.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8947,
+          "beschreibung": "Gesetzliche Antidiskriminierungsregeln im Zivilrecht werden abgelehnt; Vertragsabschlussfreiheit soll Vorrang haben.",
+          "ursachen_ids": [1901],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 0,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verzicht auf Diskriminierungsschutz bei Verträgen und Einstellung hilft Betroffenen nicht; EU-Gleichbehandlungsrichtlinien verpflichten Deutschland zu solchen Regeln.",
+          "zitat": "Deshalb lehnen wir sog. „Antidiskriminierungsgesetze“ ab. Zentraler Grundwert einer freiheitlichen Zivilrechtsordnung ist die Vertragsabschlussfreiheit",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=134",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8948,
+          "instrument": 8864,
+          "beschreibung": "Das Landesantidiskriminierungsgesetz soll sofort aufgehoben werden (Abschaffung des Rechtsschutzes gegen Diskriminierung durch staatliches Handeln).",
+          "ursachen_ids": [1904],
+          "zitat": "Die AfD fordert: → Die sofortige Aufhebung des Landesantidiskriminierungsgesetzes und die Überarbeitung anderer sicherheitsrelevanter Gesetze.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8949,
+          "instrument": 8866,
+          "beschreibung": "Das Beauftragtenwesen, auch Antidiskriminierungsbeauftragte, soll abgeschafft und das Geld für Familienförderung verwendet werden.",
+          "ursachen_ids": [1904],
+          "zitat": "Das Beauftragtenwesen wollen wir abschaffen. Das Geld für die unnötigen Beauftragten, deren Mitarbeiter und Sachmittel werden wir zur Familienförderung ein- setzen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=60",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8950,
+          "instrument": 8870,
+          "beschreibung": "Die öffentliche Förderung von Meldestellen für diskriminierende Vorfälle wird beendet; sie sollen sich privat finanzieren.",
+          "ursachen_ids": [1902],
+          "zitat": "Deswegen werden wir die öffentliche Förderung des Meldestellen-Unwesens beenden, so dass sich auch diese Organisa- tionen zukünftig ausschließlich privat finanzieren müssen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8951,
+          "instrument": 8869,
+          "beschreibung": "Antisemitismusprävention im Schulunterricht ausbauen und verankern.",
+          "ursachen_ids": [1902],
+          "zitat": "Die AfD fordert: → Die verbindliche Einforderung von Integrationsleistungen. → Klare Sanktionen bei Integrationsverweigerung. → Den Ausbau und die wirksame Verankerung der Antisemitismus- prävention im Schulunterricht.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8952,
+          "beschreibung": "Das Selbstbestimmungsgesetz (Änderung des Geschlechtseintrags) soll über den Bundesrat aufgehoben werden.",
+          "ursachen_ids": [1903],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Baut keine Abwertung ab, sondern erschwert die rechtliche Anerkennung der Geschlechtsidentität; ein Land kann die Aufhebung nur über den Bundesrat beantragen.",
+          "zitat": "Das Selbstbestimmungsgesetz, das seit November 2024 die formale Änderung des Geschlechtseintrags einmal jährlich ermöglicht, widerspricht dieser Realität. Wir werden die Aufhebung des Gesetzes über den Bundesrat beantragen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=20",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8953,
+          "instrument": 8880,
+          "beschreibung": "Nicht hoheitliche Flaggen wie Regenbogenflaggen vor öffentlichen Einrichtungen werden untersagt.",
+          "ursachen_ids": [1903],
+          "zitat": "Das Hissen von nicht hoheitlichen Flaggen, wie Regenbogenflaggen vor öffentlichen Einrichtungen widerspricht der Neutralitätspflicht des Staates und wird untersagt.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=42",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8954,
+          "instrument": 8879,
+          "beschreibung": "Lehrinhalte sollen sich an der Mehrheit orientieren und ein bestimmtes Familienbild vermitteln; Gender-Programme an Schulen sind unerwünscht.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir akzeptieren die unterschiedlichen Formen des Zusammenlebens, bestehen aber darauf, dass sich Lehrinhalte vorrangig an der Lebenswirklichkeit der Mehrheit orientieren und ein lebensbejahendes, verantwortungsvolles Familienbild vermitteln.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8955,
+          "instrument": 8870,
+          "beschreibung": "Landesförderung für Vereine und Initiativen, die Regierungs- und Migrationskritik mit Rassismus gleichsetzen, wird beendet.",
+          "ursachen_ids": [1902],
+          "zitat": "Wir beenden jede finanzielle Förderung des Landes für diese linksradikalen Netzwerke.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=47",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8956,
+          "beschreibung": "Schulungen zu interkultureller Kompetenz in der Verwaltung werden beendet.",
+          "ursachen_ids": [1904],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Rechtlich ohne Weiteres möglich, streicht aber Schulungen, die (mit gemischt belegter Wirkung) diskriminierendes Verwaltungshandeln verringern sollen.",
+          "zitat": "Unter dem Schlagwort „Interkulturelle Kompetenz“ betreibt sie eine promigrantische Indoktrination der Verwaltung. Wir machen dem ein Ende.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=53",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8957,
+          "instrument": 8870,
+          "beschreibung": "Landesförderung des Schulprogramms gegen Rassismus einstellen",
+          "ursachen_ids": [1902],
+          "zitat": "Wir werden deshalb die Landesförderung des Programms „Schule gegen Rassismus – Schule mit Courage“ einstellen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8958,
+          "instrument": 8880,
+          "beschreibung": "Regenbogenflagge an Schulen von offizieller Seite nicht mehr zeigen (Runderlass)",
+          "ursachen_ids": [1903],
+          "zitat": "Wir werden deshalb durch entsprechenden Runderlass sicherstellen, dass von schul - offizieller Seite keine Regenbogenfahne mehr gezeigt wird.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8959,
+          "instrument": 8879,
+          "beschreibung": "Kampagnen und Programme zu sexuellen Themen für Kinder vor der Pubertät einstellen; in der Kita Familie aus Mann und Frau als Normalform voraussetzen",
+          "ursachen_ids": [1903],
+          "zitat": "In der Kita ist die Familie aus Mann und Frau zwanglos als Normalform des Zusammenlebens vorauszusetzen [...] Wir werden alle staatlichen Kampagnen und Programme einstellen, die Kinder vor der Pubertät mit sexuellen Themen konfrontieren.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=22",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8960,
+          "instrument": 8856,
+          "beschreibung": "Anonymisierte Bewerbungsverfahren für gleiche Ausbildungschancen",
+          "ursachen_ids": [1901],
+          "zitat": "Anonymisierte Bewerbungsverfahren sollen sicherstellen, dass alle die gleichen Chancen auf eine Ausbildung haben.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8961,
+          "beschreibung": "Quoten für von Diskriminierung Betroffene auch auf dem privaten Arbeitsmarkt",
+          "ursachen_ids": [1901],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Vorgaben für Arbeitgeber erhöhten in den USA dauerhaft den Anteil Schwarzer Beschäftigter; starre Quoten nach Herkunft stoßen aber auf Art. 3 Abs. 3 GG, EU-Recht und Datenschutz.",
+          "zitat": "Damit gleiche Teilhabe nicht nur im öffentlichen Dienst, sondern in allen Lebensbereichen möglich wird, soll es Quoten für von Diskriminierung betroffene Personengruppen wie Menschen mit Migrationsgeschichte und von Rassismus Betroffene auch auf dem privaten Arbeitsmarkt",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "beleg_studie_url": "https://ftp.aeaweb.org/research/can-temporary-affirmative-action-policies-have-lasting-effects",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8962,
+          "instrument": 8857,
+          "beschreibung": "Reform des Gleichbehandlungsgesetzes: längere Klagefristen, Verbandsklage, Einbezug staatlichen Handelns",
+          "ursachen_ids": [1904],
+          "zitat": "Zudem fordern wir eine grundlegende Reform des Allgemeinen Gleichbehandlungsgesetzes (AGG), die insbesondere die Klagefristen verlängert, ein Verbandsklagerecht vorsieht,",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8963,
+          "beschreibung": "Gesetzliches Verbot rassistischer Polizeikontrollen und Antidiskriminierungsschulungen im öffentlichen Dienst",
+          "ursachen_ids": [1904],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ethnisches Profiling bei Kontrollen ist laut EU-Grundrechteagentur verbreitet; ein Verbot und der Wegfall anlassloser Kontrollen setzen direkt dort an, für die Bundespolizei ist der Bund zuständig, Wirkungsstudien fehlen.",
+          "zitat": "Es braucht zudem ein gesetzliches Verbot rassistischer Polizeikontrollen („Racial Profiling“) und die Abschaffung von anlasslosen polizeilichen Kontrollbefugnissen sowie verpflichtende Antidiskriminierungsschulungen im gesamten öffentlichen Dienst",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "beleg_studie_url": "https://fra.europa.eu/en/news/2023/stop-discrimination-and-ethnic-profiling-europe",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8964,
+          "beschreibung": "Stärkere, langfristige Förderung von Opferberatungen und Bündnissen gegen Rassismus per Demokratiefördergesetz",
+          "ursachen_ids": [1902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Langfristige Förderung stabilisiert Präventions- und Beratungsarbeit; Effekte solcher Projekte auf Vorurteile sind begrenzt belegt, die Bundeskompetenz für ein Demokratiefördergesetz ist umstritten.",
+          "zitat": "Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse, Migrant*innen-Selbstorganisationen sowie Antifa-Initiativen müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=51",
+          "beleg_studie_url": "https://collaborate.princeton.edu/en/publications/prejudice-reduction-progress-and-challenges/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8965,
+          "instrument": 8860,
+          "beschreibung": "Grundgesetz Art. 3 um sexuelle Orientierung und geschlechtliche Identität erweitern",
+          "ursachen_ids": [1903],
+          "zitat": "Artikel 3 des Grundgesetzes muss um den Schutz der sexuellen Orientierung und der geschlechtlichen Identität erweitert werden",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8966,
+          "instrument": 8861,
+          "beschreibung": "Ausfinanzierter Aktionsplan gegen queerfeindliche Diskriminierung und bundesweites Antidiskriminierungsgesetz",
+          "ursachen_ids": [1903],
+          "zitat": "Dafür braucht es einen ausfinanzierten Aktionsplan „Queer leben“ . Darüber hinaus wollen wir ein bundesweites Antidiskriminierungsgesetz und eine Novelle des Allgemeinen Gleichbehandlungsgesetzes",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8967,
+          "beschreibung": "Queere Orte schützen, queere Jugendarbeit als kommunale Pflichtaufgabe",
+          "ursachen_ids": [1903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erhält Treffpunkte, lindert aber vor allem Folgen; der Bund darf Kommunen keine Pflichtaufgaben übertragen (Art. 84 Abs. 1 GG), Mietschutz für einzelne Orte ist rechtlich ungeklärt.",
+          "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8968,
+          "instrument": 8874,
+          "beschreibung": "Rassismusbekämpfung als Querschnittsaufgabe aller Senatsverwaltungen mit eigenen Strategien, Geld und Personal; Arbeit dauerhaft sichern",
+          "ursachen_ids": [1902],
+          "zitat": "Wir verstehen die Bekämpfung von Rassismus und Antisemitismus als ressortübergreifende Querschnittsaufgabe und wollen in allen Senatsverwaltungen entsprechende Strategien und Maßnahmen etablieren und entsprechende finanzielle und personelle Ressourcen zur Verfügung stellen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=268",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8969,
+          "instrument": 8874,
+          "beschreibung": "Ressortübergreifende Strategie gegen antimuslimischen Rassismus, auch für den digitalen Raum, mit Ansprechperson",
+          "ursachen_ids": [1902],
+          "zitat": "Wir werden eine ressortübergreifende Strategie zur Bekämpfung von antimuslimischem Rassismus entwickeln und umsetzen, die auch für den digitalen Raum gilt.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=272",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8970,
+          "instrument": 8868,
+          "beschreibung": "Pflichtfortbildungen zu Diskriminierung und Rassismus für Beschäftigte im öffentlichen Dienst, Sozialbereich und Sicherheitspersonal",
+          "ursachen_ids": [1902],
+          "zitat": "[…] im öffentlichen Dienst sowie Sicherheitspersonal, Personal- und Betriebsräte verpflichtend zu den Themen Diskriminierung, Rassismus sowie zum Umgang mit extrem rechten Ideologien aus- und weitergebildet werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=327",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8971,
+          "instrument": 8863,
+          "beschreibung": "Landesantidiskriminierungsgesetz um weitere Tatbestände ergänzen und Ombudsstelle stärken, mit Informationskampagne",
+          "ursachen_ids": [1904],
+          "zitat": "Es muss um weitere Diskriminierungstatbestände wie Aufenthaltsstatus, Staatsbürgerschaft, Fürsorgeverantwortung oder Gewichtsdiskriminierung ergänzt werden. Die Ombudsstelle werden wir in ihrer Unabhängigkeit sowie personell stärken und ihre Befugnisse ausweiten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=270",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8972,
+          "instrument": 8865,
+          "beschreibung": "Unabhängige Beschwerdestelle für Diskriminierung an Schulen mit Akteneinsichts- und Durchgriffsrechten",
+          "ursachen_ids": [1904],
+          "zitat": "Kernstück ist eine unabhängige Beschwerdestelle, angedockt an die Landesantidiskriminierungsstelle.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=162",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8973,
+          "instrument": 8868,
+          "beschreibung": "Gesamten öffentlichen Dienst diskriminierungskritisch aufstellen und schulen, inklusive Einstellungsverfahren",
+          "ursachen_ids": [1904],
+          "zitat": "Der gesamte öffentliche Dienst des Landes Berlin soll diskriminierungskritisch und menschenrechtsbasiert aufgestellt und geschult werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=268",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8974,
+          "instrument": 8876,
+          "beschreibung": "Qualifizierte Verantwortliche für geschlechtliche und sexuelle Vielfalt an jeder Schule, externe queere Bildungsarbeit stärken, Vielfalt in Rahmenlehrplänen",
+          "ursachen_ids": [1903],
+          "zitat": "Wir sorgen für qualifizierte Verantwortliche für geschlechtliche und sexuelle Vielfalt an jeder Schule und stärken die externe queere Bildungsarbeit.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=218",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8975,
+          "instrument": 8875,
+          "beschreibung": "Landesinitiative für Akzeptanz geschlechtlicher und sexueller Vielfalt evaluieren, weiterentwickeln, ins Parlament holen; queerer Beirat",
+          "ursachen_ids": [1903],
+          "zitat": "Die Linke Berlin wird die Initiative „Berlin tritt ein für Selbstbestimmung und die Akzeptanz geschlechtlicher und sexueller Vielfalt“ (IGSV) gemeinsam mit den Communitys kritisch evaluieren und konsequent weiterentwickeln.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=216",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8976,
+          "instrument": 8873,
+          "beschreibung": "Antidiskriminierungsberatungsstellen erhalten und ausbauen",
+          "ursachen_ids": [1902],
+          "zitat": "Wir wollen: • Antidiskriminierungsberatungsstellen erhalten und weiter ausbauen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8977,
+          "instrument": 8863,
+          "beschreibung": "Eigenes Landesantidiskriminierungsgesetz auf den Weg bringen",
+          "ursachen_ids": [1904],
+          "zitat": "Ein eigenes Landesantidiskriminierungsgesetz auf den Weg bringen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8978,
+          "instrument": 8868,
+          "beschreibung": "Fortbildungen zu Antidiskriminierung und strukturellem Rassismus für alle Beschäftigten der Justiz verankern",
+          "ursachen_ids": [1904],
+          "zitat": "Fortbildungen zu Antidiskriminierung, strukturellem Rassismus, Geschlechtergerechtigkeit, Diversity und Gewaltsensibilität für alle Beschäftigten verankern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8979,
+          "instrument": 8875,
+          "beschreibung": "Landesaktionsplan für Akzeptanz sexueller und geschlechtlicher Vielfalt ausfinanzieren und weiterführen",
+          "ursachen_ids": [1903],
+          "zitat": "Wir wollen: • Den Landesaktionsplan für Gleichstellung und Akzeptanz sexueller und geschlechtlicher Vielfalt ausfinanzieren und weiterführen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8980,
+          "instrument": 8876,
+          "beschreibung": "Queeres Leben im Rahmenplan von Schulen verankern",
+          "ursachen_ids": [1903],
+          "zitat": "Wir wollen: […] Queeres Leben im Rahmenplan von Schulen verankern – in Fächern wie Sozialkunde, Biologie und Geschichte.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8981,
+          "instrument": 8875,
+          "beschreibung": "Landesaktionsprogramm für die Akzeptanz von LSBTI+ zusammen mit der Community ausbauen und finanziell ausstatten, besonders im ländlichen Raum, in Jugendbildung und Seniorenarbeit.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir werden: […] das Aktionsprogramm für die Akzeptanz von LSBTI+ zusammen mit der Community zu einem modernen Programm ausgestalten und mit den notwendigen finanziellen Mitteln unterstützen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8982,
+          "instrument": 8876,
+          "beschreibung": "Queere Themen in allen Stationen des Bildungsweges behandeln; Lehr- und Erziehungskräfte schon in Ausbildung dafür befähigen, Lehrpläne anpassen.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir wollen: […] den Bildungsunterricht inklusiver gestalten. In allen Stationen des Bildungs- und Erziehungsweges sollen queere Themen mitbehandelt werden.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=25",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8983,
+          "instrument": 8877,
+          "beschreibung": "LSBTIQ+-Landeskoordinierungsstellen weiter ausbauen und ihre Sichtbarkeit erhöhen.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir werden: […] die LSBTIQ+-Landeskoordinierungsstellen weiter ausbauen und ihre Sichtbarkeit erhöhen,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8984,
+          "instrument": 8878,
+          "beschreibung": "Bundesratsinitiative, um sexuelle und geschlechtliche Identität als Merkmal in den Gleichheitsartikel des Grundgesetzes aufzunehmen.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir werden: […] uns für eine Bundesratsinitiative einsetzen, damit der 3. Artikel des Grundgesetzes um das Merkmal der sexuellen und geschlechtlichen Identität erweitert wird,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8985,
+          "instrument": 8868,
+          "beschreibung": "Weiterbildungen zu interkultureller Kompetenz für alle relevanten Beschäftigten im öffentlichen Dienst.",
+          "ursachen_ids": [1904],
+          "zitat": "Interkulturelle Kompetenz: Alle relevanten Beschäftigten im öffentlichen Dienst erhalten Weiterbildungen zur Erweiterung der interkulturellen Kompetenz und von Sprachkenntnissen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=98",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8986,
+          "instrument": 8868,
+          "beschreibung": "Regelmäßige Fortbildungen der Polizei zu Menschenrechten und interkultureller Kompetenz.",
+          "ursachen_ids": [1904],
+          "zitat": "Besondere Aufmerksamkeit legen wir auf demokratische Professionalität durch regel- […] mäßige Fortbildungen zu Menschenrechten und interkultureller Kompetenz, um eine demokratische Alltagskultur in der Polizei zu stärken.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=128",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8987,
+          "instrument": 8869,
+          "beschreibung": "Lehrpläne greifen die Vielfalt der Kulturen im Unterricht auf, um gegenseitiges Lernen zu fördern.",
+          "ursachen_ids": [1902],
+          "zitat": "Bildung in Vielfalt: Lehrpläne greifen die Vielfalt der Kulturen auch sprachlich im Unterricht auf und schaffen so gegenseitige Lern- und Integrationseffekte.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=99",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8988,
+          "instrument": 8872,
+          "beschreibung": "Interkulturelle Kulturarbeit und migrantische Kunst- und Kulturszenen über regionale Netzwerke fördern.",
+          "ursachen_ids": [1902],
+          "zitat": "Förderung interkultureller Kulturarbeit und migrantischer Kunst- und Kulturszenen durch Unterstützung von regionalen Netzwerken für interkulturelle Arbeit in Kommunen, Vereinen, Schulen und Kulturzentren,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel 'Gesellschaftliche Akteure im Fokus' und 'Frauenrechte statt Gender-Ideologie' (S. 32-34) sowie Fundstellen S. 25, 32, 34, 35, 36, 41 gelesen; Volltextsuche nach Diskriminierung, Kopftuch, Rassismus, Antidiskriminierung, Gleichbehandlung. Nichts zu Diskriminierung bei Bewerbung/Einstellung (1901); nur allgemeine Bekenntnisse.",
+        "stand": "2026-10-08",
+        "treffer": 12,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8989,
+          "instrument": 8872,
+          "beschreibung": "Kulturelle Begegnungen und integrative Stadtteilarbeit fördern, Nachbarschaftsprojekte, interkulturelle Feste und Sportvereine finanzieren, um Vorbehalte abzubauen.",
+          "ursachen_ids": [1902],
+          "zitat": "Rassistischer und ausländerfeindlicher Stimmungsmache stellen wir uns mit aller Kraft entgegen. Deshalb wollen wir kulturelle Begegnungen und integrative Stadtteilarbeit in den Berliner Kommunen fördern.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=37",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel Soziales/Gleichstellung (S. 15-16), Gewaltschutz und Selbstbestimmungsgesetz (S. 71-72), Migration/Integration (S. 73-74), Kultur/Sprache (S. 55) und Fundstellen gelesen; nur allgemeine Ziele, Ablehnung eines Bundesgesetzes und Bekenntnisse, keine konkrete Landeszusage zu Rassismus, queeren Menschen oder staatlichem Rechtsschutz.",
+        "stand": "2026-10-08",
+        "treffer": 28,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8990,
+          "instrument": 8868,
+          "beschreibung": "Fortbildungen zur Sensibilisierung in staatlichen Institutionen im Zusammenhang mit dem Schutz der Rechte gleichgeschlechtlicher Ehepaare.",
+          "ursachen_ids": [1904],
+          "zitat": "Diese Ehepartner können auf unseren Einsatz für den Schutz ihrer Rechte in einer sicheren Öffentlichkeit zählen. Dazu gehören auch Fortbildungsmaßnahmen zur Sensibilisierung in […] staatlichen Institutionen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=38",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8991,
+          "instrument": 8879,
+          "beschreibung": "Staatliche und kommunale Einrichtungen sollen keine Konzepte zu Geschlecht, Sexualität oder Identität gegen den Willen der Eltern einführen oder fördern.",
+          "ursachen_ids": [1903],
+          "zitat": "Staatliche und kommunale Einrichtungen dürfen keine ideologischen Konzepte zu Themen wie Geschlecht, Sexualität oder Identität gegen den Willen der Eltern einführen oder fördern.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [1901, 1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8992,
+          "instrument": 8856,
+          "beschreibung": "Anonymisierte Bewerbungsverfahren einführen und fördern, um Diskriminierung bei der Einstellung zu verringern.",
+          "ursachen_ids": [1901],
+          "zitat": "Anonymisierte Bewerbungsverfahren werden gezielt eingeführt und gefördert, um Diskriminierung im Einstellungsprozess zu minimieren und gleiche Chancen für alle Bewerbenden zu schaffen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=147",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8993,
+          "instrument": 8858,
+          "beschreibung": "Antidiskriminierungsstelle des Bundes erweitern: mehr Anlaufstellen, schnellere Verfahren, mehr Beratung und Begleitung für Betroffene.",
+          "ursachen_ids": [1902],
+          "zitat": "Anlaufstellen für Betroffene werden ausgebaut, um diese effektiver zu unterstützen, schnellere Verfahren zu ermöglichen sowie ein breiteres Angebot an Beratung und Begleitung zur Verfügung zu stellen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=141",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8994,
+          "beschreibung": "Bildungsangebote und Programme für Kinder und Jugendliche gegen Rassismus und Vorurteile, mit Austausch zwischen unterschiedlichen Hintergründen.",
+          "ursachen_ids": [1902],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Programme mit Begegnung wirken laut Meta-Analyse am besten gegen Vorurteile Jugendlicher, schwächer bei ethnischen Vorurteilen; Bildung ist Ländersache, der Bund kann fördern.",
+          "zitat": "Kinder werden durch Bildungsprogramme zum kulturellen Austausch ermutigt, um Vorurteile frühzeitig abzubauen und interkulturelle Kompetenzen zu stärken.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=143",
+          "beleg_studie_url": "https://www.switchboardta.org/evidence/preventing-prejudice-and-improving-intergroup-attitudes-a-meta-analysis-of-child-and-adolescent-training-programs-3",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8995,
+          "instrument": 8860,
+          "beschreibung": "Geschlechtsidentität und sexuelle Vielfalt als Diskriminierungsmerkmale ins Grundgesetz aufnehmen.",
+          "ursachen_ids": [1903],
+          "zitat": "Die Geschlechtsidentität und sexuelle Vielfalt werden als Diskriminierungsmerkmale in Artikel 3 des Grundgesetzes aufgenommen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=148",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8996,
+          "beschreibung": "Queere Lebensweisen und Identitäten in Schulen und Universitäten gemeinsam mit zivilgesellschaftlichen Organisationen thematisieren.",
+          "ursachen_ids": [1903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Setzt bei Einstellungen junger Menschen an, Querschnittsdaten zeigen weniger Mobbing bei inklusivem Unterricht; Schulen sind Ländersache, der Bund kann nur über Förderung beitragen.",
+          "zitat": "Öffentliche Bildungskooperationen mit Organisationen in zivilgesellschaftlicher Trägerschaft thematisieren queere Lebensweisen und Identitäten in Schulen und Universitäten fächerübergreifend.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=149",
+          "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6478545",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8997,
+          "beschreibung": "Unabhängige Kontrollstellen für Polizei, Verwaltung und Justiz sowie Antidiskriminierungsbeauftragte als Ansprechpersonen in Behörden.",
+          "ursachen_ids": [1904],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Unabhängige Kontrolle gibt Betroffenen einen Weg gegen staatliche Diskriminierung; Erfahrungen zeigen Wirkung nur mit Befugnissen, eine Kontrollstelle für die Justiz stößt an die richterliche Unabhängigkeit.",
+          "zitat": "Polizei, Verwaltung und Justiz werden durch unabhängige Kontrollstellen überwacht, die Fehlverhalten transparent aufarbeiten und institutionelle Verantwortung gewährleisten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=143",
+          "beleg_studie_url": "https://www.humanistische-union.de/publikationen/vorgaenge/237-238-vorgaenge/publikation/unabhaengige-polizeibeauftragte-in-deutschland-auf-dem-weg-zum-standard-ziele-praktiken-defizite-und-moegliche-beitraege-zum-diskriminierungsschutz/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8998,
+          "instrument": 8859,
+          "beschreibung": "Verpflichtende Schulungen für Behördenmitarbeitende zu Sensibilität und Antidiskriminierung.",
+          "ursachen_ids": [1904],
+          "zitat": "Verpflichtende Schulungen für Behördenmitarbeitende fördern interkulturelle Sensibilität und reduzieren Diskriminierung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=137",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 8999,
+          "instrument": 8874,
+          "beschreibung": "Landesstrategien gegen Queerfeindlichkeit sowie gegen Rassismus konsequent umsetzen und die Prävention gegen Diskriminierung in Bezirken ausbauen.",
+          "ursachen_ids": [1902, 1903],
+          "zitat": "Wir setzen die Berliner Landesstrategie für queere Sicherheit und gegen Queerfeindlichkeit sowie die Landeskonzeption gegen Rechtsextremismus, Rassismus und Antisemitismus konsequent um und entwickeln sie insbesondere im Bereich Prävention weiter.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=74",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9000,
+          "instrument": 8877,
+          "beschreibung": "Queere Kultur- und Begegnungsorte fördern und queere Sichtbarkeit im öffentlichen Raum stärken, auch durch Veranstaltungen zum Pride Month in allen Bezirken.",
+          "ursachen_ids": [1903],
+          "zitat": "Wir unterstützen queere Kultur- und Begegnungsorte und stärken die queere Präsenz im öffentlichen Raum, etwa durch Gedenkorte, Gedenktafeln und sichtbare Zeichen der Anerkennung",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=86",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9001,
+          "instrument": 8871,
+          "beschreibung": "Kolonialgeschichte im Humboldt Forum kritisch aufarbeiten, um Ungleichheiten und Rassismus entgegenzuwirken.",
+          "ursachen_ids": [1902],
+          "zitat": "Koloniale Gewaltverhältnisse werden in Ausstellungen und Bildungsarbeit klar benannt, um fortwährenden Ungleichheiten und Rassismus entgegenzuwirken.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9002,
+          "instrument": 8868,
+          "beschreibung": "Polizei verpflichtend regelmäßig zu Rassismus und Diskriminierung schulen.",
+          "ursachen_ids": [1904],
+          "zitat": "Wir verpflichten Polizist*innen zu regelmäßigen Schulungen über Rechtsextremismus, Sexismus, Rassismus und Diskriminierung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9003,
+          "instrument": 8865,
+          "beschreibung": "Bürger- und Polizeibeauftragten als anonyme Meldestelle mit Ermittlungsbefugnissen stärken, damit rassistische und queerfeindliche Äußerungen im Dienst sanktioniert werden.",
+          "ursachen_ids": [1904],
+          "zitat": "Wir stärken den „Bürger- und Polizeibeauftragten des Landes Berlin” als anonyme Meldestelle, indem er Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen erhält. So können rechtsextreme, queer-feindliche, rassistische oder sexistische Äußerungen im Dienst aufgedeckt und sanktioniert werden.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 9004,
+          "instrument": 8865,
+          "beschreibung": "Unabhängige Landesantidiskriminierungsstelle für Beratung, Monitoring und Prävention gegen Diskriminierung aufbauen.",
+          "ursachen_ids": [1904],
+          "zitat": "Aufbau einer unabhängigen Landesantidiskriminierungsstelle Eine unabhängige Institution übernimmt Beratung, Monitoring und",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=17",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9005,
+          "instrument": 8868,
+          "beschreibung": "Verbindliche, regelmäßige Antidiskriminierungs-Fortbildungen für Mitarbeitende in Verwaltung, Bildungseinrichtungen und Polizei.",
+          "ursachen_ids": [1904],
+          "zitat": "Verbindliche Fortbildungen zum Thema Antidiskriminierung Mitarbeitende in Verwaltung, Bildungseinrichtungen und Polizei erhalten regelmäßige Schulungen, um diskriminierungssensibel zu handeln",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=18",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9006,
+          "instrument": 8867,
+          "beschreibung": "Antidiskriminierungsbeauftragte als Ansprechpersonen in Schulen, Behörden und Polizei einsetzen.",
+          "ursachen_ids": [1904],
+          "zitat": "Antidiskriminierungsbeauftragte in Schulen, Behörden und Polizei Spezialisierte Ansprechpartner*innen vor Ort unterstützen Betro ff ene,",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=18",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [1902, 1903, 1904],
+      "massnahmen": [
+        {
+          "id": 9007,
+          "instrument": 8863,
+          "beschreibung": "Landesantidiskriminierungsgesetz einführen und unabhängige Landes-Antidiskriminierungsstelle mit Beratungs-, Monitoring- und Präventionsauftrag stärken.",
+          "ursachen_ids": [1904],
+          "zitat": "Einführung eines Landesantidiskriminierungsgesetzes (LADG) für Sachsen-Anhalt",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=131",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9008,
+          "instrument": 8868,
+          "beschreibung": "Verbindliche Fortbildungen zur Antidiskriminierung in Verwaltung, Schule und Polizei.",
+          "ursachen_ids": [1904],
+          "zitat": "Verbindliche, kooperative Fortbildungen zur Antidiskriminierung in Verwaltung, Schule und Polizei",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=131",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9009,
+          "instrument": 8869,
+          "beschreibung": "Schulprogramme gegen Rassismus systematisch stärken und flächendeckend ausbauen.",
+          "ursachen_ids": [1902],
+          "zitat": "Programme wie „Schule ohne Rassismus – Schule mit Courage“ systematisch stärken und",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=131",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

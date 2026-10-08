@@ -33,5 +33,481 @@
       "ebene": "bund",
       "schlagwoerter": ["hilfe nicht beantragt", "anspruch unbekannt", "grundsicherung", "sozialleistungen", "antrag", "schaemen"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 8821,
+      "name": "Regelsatz der Grundsicherung regelmäßig an Preisentwicklung anpassen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zeitnahe Anpassung verhindert reale Kaufkraftverluste wie 2022/23. Die Fortschreibung mit Mischindex und Besitzschutz besteht aber schon; eine Lücke durch zu knappe Bemessung schließt sie nicht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bundesregierung.de/breg-de/suche/buergergeld-2025-2248000",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8822,
+      "name": "Anstieg des Regelsatzes begrenzen oder Regelsatz absenken (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Ein niedrigerer oder langsamer steigender Regelsatz vergrößert eine Versorgungslücke eher. Für die Absenkung spricht der Inflationsüberschuss 2024; Studien sehen die Bemessung dagegen eher als zu knapp.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.boeckler.de/de/pressemitteilungen-2675-kindergrundsicherung-niveau-muesste-je-nach-alter-6-bis-30-prozent-hoeher-sein-59625.htm",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8823,
+      "name": "Kindergrundsicherung einführen, die kindbezogene Leistungen bündelt (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Simulationen erwarten rund 2 Prozentpunkte weniger Kinderarmut, vor allem weil mehr Berechtigte Leistungen erhalten. Ohne festgelegtes Niveau bleibt die Wirkung begrenzt; Kosten und Verwaltungsumbau sind erheblich.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.boeckler.de/de/boeckler-impuls-kindergrundsicherung-besser-als-nichts-58539.htm",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8824,
+      "name": "Kindergeld anheben bzw. an den Kinderfreibetrag angleichen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kindergeld senkt das Armutsrisiko von Familien nachweislich, besonders bei Alleinerziehenden. Bei Grundsicherungsbezug wird es aber angerechnet, die ärmsten Familien gewinnen daher wenig; die Kosten sind hoch.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.caritas.de/neue-caritas/heftarchiv/jahrgang2014/artikel/milliarden-nur-fuer-schmu--wie-familienpolitik-wirkt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8825,
+      "name": "Steuerliche Abzüge für Alleinerziehende und Familien ausweiten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet Alleinerziehende mit Steuerschuld und ist leicht umsetzbar. Haushalte mit geringem Einkommen zahlen kaum Steuern und profitieren von Abzügen wenig; Steuervorteile wachsen meist mit dem Einkommen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.426860.de/unionsreformvorschlag_zur_familienbesteuerung__einkommensschwache_profitieren_am_wenigsten.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8826,
+      "name": "Unterhaltsvorschuss ausweiten, Kindergeld nur teilweise anrechnen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Geld für Kinder Alleinerziehender ohne Unterhalt; die Ausweitung 2017 erreichte 300.000 Kinder mehr. Dagegen: Anrechnung auf Kinderzuschlag und Bürgergeld mindert den Nettoeffekt; Bund, Länder und Kommunen tragen Kosten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bundesregierung.de/Content/DE/Artikel/2018/08/2018-08-22-bericht-unterhaltsvorschuss.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8827,
+      "name": "Familienleistungen digital bündeln, Antrag vereinfachen und automatisch auszahlen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Vereinfachte, vorausgefüllte oder antragslose Verfahren erhöhen die Inanspruchnahme (Studien, antraglose Familienbeihilfe in Österreich). Dagegen: Datenverknüpfung und Digitalisierung der Verwaltung brauchen Jahre.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.699957.de/publikationen/wochenberichte/2019_49/starke_nichtinanspruchnahme_von_grundsicherung_deutet_auf_hohe_verdeckte_altersarmut.html",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8828,
+          "instrument": 8822,
+          "beschreibung": "Die jährliche Anpassung der Grundsicherung soll so modernisiert werden, dass überproportionale Erhöhungen gegenüber der Lohnentwicklung künftig verhindert werden.",
+          "ursachen_ids": [2101],
+          "zitat": "Viele Arbeitnehmerinnen und Arbeitnehmer konnten die überproportionale Erhöhung des sogenannten „Bürgergelds“ nicht nachvollziehen. Denn ihre Löhne sind nicht im selben Maße gestiegen. Solche Fälle wollen wir in Zukunft verhindern.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=32",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8829,
+          "instrument": 8824,
+          "beschreibung": "Kinderfreibetrag in Richtung Grundfreibetrag der Eltern entwickeln, Kindergeld entsprechend anheben.",
+          "ursachen_ids": [2102],
+          "zitat": "Unser Ziel ist, den Kinderfreibetrag in Richtung des Grundfreibetrags der Eltern zu entwickeln. Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=63",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8830,
+          "instrument": 8825,
+          "beschreibung": "Steuerlichen Entlastungsbetrag für Alleinerziehende erhöhen.",
+          "ursachen_ids": [2102],
+          "zitat": "Sie sind besonders armutsgefährdet, selbst wenn sie arbeiten. Deshalb erhöhen wir den steuerlichen Entlastungsbetrag.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=63",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8831,
+          "instrument": 8827,
+          "beschreibung": "Digitales Portal für alle Familienleistungen schaffen, Familienleistungen bündeln und einfacher zugänglich machen.",
+          "ursachen_ids": [2103],
+          "zitat": "Wir wollen ein übergreifendes digitales Portal für alle Familienleistungen, damit Familien die ihnen zustehenden Leistungen einfach und unbürokratisch erhalten können.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=63",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8832,
+          "beschreibung": "Familien mit niedrigem Erwerbseinkommen sollen durch Kindergeld, Kinderzuschlag und Wohngeld ohne ergänzendes Bürgergeld auskommen.",
+          "ursachen_ids": [2102],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kinderzuschlag senkt das Armutsrisiko der Empfänger deutlich; ein Ausbau mit Wohngeld hilft Geringverdienenden mit Kindern. Dagegen: geringe Inanspruchnahme und Schnittstellen bleiben, Höhe nicht genannt.",
+          "zitat": "Im nächsten Schritt wollen wir erreichen, dass Familien – insbesondere auch Alleinerziehende – mit eigenem niedrigem Lohneinkommen mit einer Kombination aus Kindergeld, Kinderzuschlag und Wohngeld nicht auf ergänzendes Bürgergeld angewiesen sind.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=27",
+          "beleg_studie_url": "https://www.caritas.de/neue-caritas/heftarchiv/jahrgang2014/artikel/milliarden-nur-fuer-schmu--wie-familienpolitik-wirkt",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8833,
+          "instrument": 8825,
+          "beschreibung": "Der Entlastungsbetrag für Alleinerziehende wird in einen Abzug von der Steuerschuld umgewandelt.",
+          "ursachen_ids": [2102],
+          "zitat": "Für Alleinerziehende wollen wir den Entlastungsbetrag in einen Abzug von der Steuerschuld umwandeln.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8834,
+          "instrument": 8827,
+          "beschreibung": "Zentrale Ansprechstelle, einfachere digitale Beantragung und möglichst automatische Auszahlung der Familienleistungen.",
+          "ursachen_ids": [2103],
+          "zitat": "Mit einer zentralen Ansprechstelle soll zudem die Zugänglichkeit dieser Leistungen weiter verbessert und die (digitale) Beantragung weiter erleichtert werden. Wo möglich sollen Leistungen automatisch beantragt und ausgezahlt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8835,
+          "instrument": 8821,
+          "beschreibung": "Bürgergeld-Regelsatz regelmäßig anpassen, damit das soziokulturelle Existenzminimum garantiert bleibt.",
+          "ursachen_ids": [2101],
+          "zitat": "Wir lassen nicht zu, dass der Regelsatz darunter sinkt. Deshalb passen wir das Bürgergeld regelmäßig an, damit das soziokulturelle Existenzminimum immer garantiert ist.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=99",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8836,
+          "instrument": 8824,
+          "beschreibung": "Kindergeld gesetzlich an die Erhöhung des Kinderfreibetrags koppeln, später die Entlastung angleichen.",
+          "ursachen_ids": [2102],
+          "zitat": "Um der Ungleichheit der Entlastung zwischen Kinderfreibetrag und Kindergeld entgegenzuwirken, wollen wir zunächst die Höhe des Kindergeldes gesetzlich an die regelmäßige Erhöhung des Kinderfreibetrages koppeln.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=81",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8837,
+          "instrument": 8826,
+          "beschreibung": "Freibetrag für Alleinerziehende zur Steuergutschrift ausbauen; Kindergeld nur zur Hälfte auf den Unterhaltsvorschuss anrechnen.",
+          "ursachen_ids": [2102],
+          "zitat": "Dafür bauen wir den bestehenden Freibetrag für Alleinerziehende zu einer Steuergutschrift aus, wovon besonders kleine und mittlere Einkommen profitieren. Das Kindergeld rechnen wir nur noch zur Hälfte auf den Unterhaltsvorschuss an.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8838,
+          "instrument": 8823,
+          "beschreibung": "Kindergrundsicherung schnellstmöglich einführen, Anträge verschlanken und automatisieren.",
+          "ursachen_ids": [2102, 2103],
+          "zitat": "Deshalb wollen wir schnellstmöglich eine Kindergrundsicherung einführen. Mit ihr wollen wir Antragsverfahren weiter verschlanken und stetig automatisieren, damit Kinder und ihre Familien die ihnen zustehenden Leistungen auch tatsächlich erhalten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8839,
+          "beschreibung": "Kindergrundsicherungs-Check: Familien werden ab der Geburt aktiv über ihre Ansprüche informiert.",
+          "ursachen_ids": [2103],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Aktive, einfache Information über konkrete Ansprüche erhöht die Inanspruchnahme nachweislich (Feldexperimente). Allein schließt sie die Lücke nicht; nötig sind Daten zur Prüfung der Ansprüche.",
+          "zitat": "Dazu führen wir einen Kindergrundsicherungs-Check ein, der prüft, in welcher Höhe ein Kind Ansprüche auf Unterstützung hat und die Familien aktiv darüber informiert.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "beleg_studie_url": "https://www.povertyactionlab.org/case-study/simplified-reminders-increase-take-tax-credits",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8840,
+          "beschreibung": "Existenzminimum für Kinder armutsfest neu berechnen; Alleinerziehende bei Anrechnung von Unterhalt und Einkommen besser stellen.",
+          "ursachen_ids": [2102],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Studien sehen das Kinderexistenzminimum als zu knapp bemessen; eine Neuberechnung und günstigere Anrechnung setzen direkt an. Dagegen: Ergebnis und Höhe offen, Mehrkosten nicht beziffert.",
+          "zitat": "Für den Kampf gegen Kinderarmut wollen wir neben der Modernisierung der Verwaltung eine armutsfeste Neuberechnung des soziokulturellen Existenzminimums für Kinder sowie eine bessere Unterstützung und Entlastung von Alleinerziehenden bei der Anrechnung von Unterhalt und Einkommen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "beleg_studie_url": "https://www.boeckler.de/de/pressemitteilungen-2675-kindergrundsicherung-niveau-muesste-je-nach-alter-6-bis-30-prozent-hoeher-sein-59625.htm",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8841,
+          "instrument": 8822,
+          "beschreibung": "Regelsatz der Grundsicherung absenken, indem die Besitzstandsregelung abgeschafft wird.",
+          "ursachen_ids": [2101],
+          "zitat": "Der Regelsatz liegt im Jahr 2025 weiter über dem Bedarf. Deshalb wollen wir mit der Abschaffung der sogenannten Besitzstandsregelung die Voraussetzung dafür schaffen, den Regelsatz abzusenken.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=20",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8842,
+          "beschreibung": "Bürgergeld und Wohngeld in einer Leistung an einer staatlichen Stelle zusammenfassen, um Bürokratie und Komplexität zu verringern.",
+          "ursachen_ids": [2103],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Leistung an einer Stelle senkt Antragshürden; Komplexität gilt als ein Grund für Nichtinanspruchnahme. Dagegen: Wirkung solcher Zusammenlegungen kaum untersucht, großer Umbau zwischen Bund und Kommunen.",
+          "zitat": "Wir Freie Demokraten wollen das bürokratische Wirr-Warr der verschiedenen Sozialleistungen reduzieren, indem wir die steuerfinanzierten Sozialleistungen – wie das Bürgergeld und das Wohngeld – in einer Leistung und an einer staatlichen Stelle zusammenfassen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=20",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8843,
+          "instrument": 8825,
+          "beschreibung": "Steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern, um Familien und Alleinerziehende zu entlasten.",
+          "ursachen_ids": [2102],
+          "zitat": "Um Familien und Alleinerziehende stärker zu entlasten, wollen wir die steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8844,
+          "instrument": 8827,
+          "beschreibung": "Elterngeld und weitere Familienleistungen entbürokratisieren, digitalisieren und automatisieren, etwa über KI-gestützte Beantragung und ein Kinderchancenportal.",
+          "ursachen_ids": [2103],
+          "zitat": "Das Elterngeld sowie weitere Familienleistungen müssen entbürokratisiert, digitalisiert und automatisiert werden, z. B. durch eine KI-basierte Beantragung und einem Kinderchancenportal.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=30",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8845,
+          "instrument": 8821,
+          "beschreibung": "Regelbedarfssätze der Grundsicherung (Bürgergeld) an die tatsächliche Preisentwicklung des Warenkorbs anpassen.",
+          "ursachen_ids": [2101],
+          "zitat": "Dazu wollen wir […] die Regelbedarfssätze an die tatsächliche Inflationsentwicklung des Bürgergeld-Warenkorbs anpassen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8846,
+          "beschreibung": "Familiensplitting und höherer Kinderfreibetrag, um Familien mit mittlerem Einkommen steuerlich zu entlasten.",
+          "ursachen_ids": [2102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Familiensplitting und höherer Kinderfreibetrag entlasten vor allem mittlere und hohe Einkommen; Familien mit geringem Einkommen oder Grundsicherung profitieren kaum. Hohe Steuerausfälle.",
+          "zitat": "Die AfD möchte mit dem steuerlichen Familiensplitting und einer Anhebung des Kinderfreibetrages insbesondere Familien mit mittlerem Einkommen entlasten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=149",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.60474.de/familiensplitting_beguenstigt_einkommensstarke_familien_und_ist_kein_arbeitsanreiz_fuer_ehefrauen.html",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8847,
+          "beschreibung": "Mehrwertsteuer auf Artikel des Kinderbedarfs auf den ermäßigten Satz senken.",
+          "ursachen_ids": [2102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Senkt Preise für Kinderbedarf, wenn der Handel die Senkung weitergibt, was nur teilweise geschieht. Die Entlastung ist ungezielt und für arme Familien klein; EU-Recht lässt den ermäßigten Satz nur für gelistete Güter zu.",
+          "zitat": "Die Mehrwertsteuer für Artikel des Kinderbedarfs soll auf 7 % reduziert werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=149",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8848,
+          "beschreibung": "Beim Wechselmodell nach Trennung das Existenzminimum von Eltern und Kindern in beiden Haushalten sichern.",
+          "ursachen_ids": [2102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Berücksichtigt Mehrkosten getrennter Familien im Wechselmodell, die heute oft nicht gedeckt sind. Die Zusage nennt aber weder Instrument noch Betrag, die Wirkung bleibt unbestimmt.",
+          "zitat": "Beim Wechselmodell muss das Existenzminimum von Eltern und Kindern in beiden Haushalten gesichert werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=155",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8849,
+          "beschreibung": "Bürgergeld wird zu einer sanktionsfreien, individuellen Mindestsicherung umgebaut, die sich an der Armutsgefährdungsgrenze orientiert.",
+          "ursachen_ids": [2101],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Mindestsicherung an der Armutsgefährdungsgrenze setzt direkt an der Höhe an; Studien sehen die heutige Bemessung als zu knapp. Dagegen: sehr hohe, ungeklärte Kosten; Wirkung auf Arbeitsanreize ist umstritten.",
+          "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen […] Um Armut zu verhindern, orientieren wir uns an der sogenannten Armutsgefährdungsgrenze, gegenwärtig rund 1 400 Euro monatlich",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=15",
+          "beleg_studie_url": "https://www.boeckler.de/de/pressemitteilungen-2675-kindergrundsicherung-niveau-muesste-je-nach-alter-6-bis-30-prozent-hoeher-sein-59625.htm",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8850,
+          "instrument": 8823,
+          "beschreibung": "Eigenständige Kindergrundsicherung, die Kindergeld, Kinderzuschlag, Unterkunftskosten und Sonderbedarfe bündelt.",
+          "ursachen_ids": [2102],
+          "zitat": "Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8851,
+          "instrument": 8826,
+          "beschreibung": "Unterhaltsvorschuss ausweiten: Kindergeld nicht mehr voll anrechnen, Bezug bis 25 Jahre.",
+          "ursachen_ids": [2102],
+          "zitat": "Den Unterhaltsvorschuss machen wir gerechter, indem u […] a […] das Kindergeld nicht mehr voll angerechnet und das Bezugsalter bis zum 25 […] Lebensjahr ausgeweitet wird",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8852,
+          "instrument": 8824,
+          "beschreibung": "Steuerlicher Kinderfreibetrag und Kindergeld sollen gleich hoch sein, damit jedes Kind dem Staat gleich viel wert ist.",
+          "ursachen_ids": [2102],
+          "zitat": "Dem Staat muss jedes Kind gleich viel wert sein: Der steuerliche Freibetrag des Chefarztes für seine Kinder sollte genauso hoch sein wie das Kindergeld, das eine Krankenschwester für ihre Kinder erhält.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=32",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [2101, 2102, 2103],
+      "massnahmen": [
+        {
+          "id": 8853,
+          "beschreibung": "Existenzsicherndes Grundeinkommen als negative Einkommensteuer, bei fehlendem Einkommen automatisch ohne Antrag ausgezahlt; ersetzt Sozialleistungen bis zur Armutsgrenze.",
+          "ursachen_ids": [2101, 2103],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Automatische, antragslose Existenzsicherung würde Nichtinanspruchnahme und Lücken schließen; Experimente zeigen mehr Wohlbefinden, kaum Beschäftigungseffekte. Dagegen: Systemumbau mit ungeklärter Finanzierung.",
+          "zitat": "Einführung eines Grundeinkommens: Ein existenzsicherndes Grundeinkommen wird eingeführt und bei fehlendem Einkommen automatisch und ohne Antrag ausgezahlt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=102",
+          "beleg_studie_url": "https://vatt.fi/en/-/perustulon-tyollisyysvaikutukset-jaivat-vahaisiksi",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8854,
+          "instrument": 8824,
+          "beschreibung": "Kindergeld erhöhen, im Gegenzug Ehegattensplitting abschaffen.",
+          "ursachen_ids": [2102],
+          "zitat": "Abschaffung des Ehegattensplittings: Das Ehegattensplitting wird abgeschafft. Stattdessen wird das Kindergeld erhöht, um Familien gezielt zu fördern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=99",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8855,
+          "beschreibung": "Mehr Kinderkrankentage und volles Kinderkrankengeld für Alleinerziehende zur finanziellen Absicherung.",
+          "ursachen_ids": [2102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mindert Einkommensausfälle erwerbstätiger Alleinerziehender bei Krankheit des Kindes. Wirkt nur am Rand auf die Sicherung des Lebensunterhalts; Mehrkosten für die Krankenkassen.",
+          "zitat": "Ausbau der Unterstützung für alleinerziehende Personen: Die Anzahl der Kinderkrankentage wird auf 45 Arbeitstage und das Kinderkrankengeld auf 100 % des ausgefallenen Nettoarbeitsentgelts erhöht. Dies schafft mehr finanzielle Sicherheit für Alleinerziehende.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=149",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

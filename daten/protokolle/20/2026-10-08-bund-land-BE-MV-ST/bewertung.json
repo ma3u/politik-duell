@@ -1,0 +1,511 @@
+{
+  "blind_pruefsumme": "2f08aa5fccb15b3cb5cba95375e4a841684e98e8763d68a32fa07a037cea63d1",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Jugendtreffs und offene Jugendarbeit erhalten, ausbauen und verlässlich finanzieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schließungen von Jugendclubs (London 2010–2019) verschlechterten nachweislich Schulleistungen und erhöhten Jugendkriminalität. Ohne Zielgröße oder Betrag bleibt offen, wie viele Orte gesichert werden; Fachkräfte sind knapp.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.iser.essex.ac.uk/research/publications/publication-588442"
+    },
+    {
+      "kennung": "I2",
+      "name": "Jugendarbeit gesetzlich absichern: Rechtsanspruch, Pflichtaufgabe oder verbindliche Mindeststandards (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbindliche Vorgaben schützen Angebote vor Kürzungen; Berlin setzt seit 2022 Mengen- und Qualitätsstandards, eine Wirkungsauswertung fehlt. Mehrkosten trägt das Land (Konnexität), Fachkräfte sind knapp.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.berlin.de/sen/jugend/jugend/jugendarbeit/"
+    },
+    {
+      "kennung": "I4",
+      "name": "Mobile Jugendarbeit und mobile Jugendzentren im ländlichen Raum fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mobile Angebote erreichen Jugendliche, wo es keinen festen Treff gibt. Eine Wirkungsevaluation aus Österreich zeigt aber auf dem Land deutlich weniger Kontakte als in Städten und vor allem Jungen als Nutzer.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://austria-forum.org/web-books/jugendarbeit00de2017isds/000062"
+    },
+    {
+      "kennung": "I5",
+      "name": "Queere Jugendzentren und queere Jugendorte erhalten und ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Studien verbinden die Teilnahme an queeren Jugendangeboten mit weniger psychischer Belastung der Teilnehmenden. Sie erreichen aber nur einen kleinen Teil der Jugendlichen und schaffen kaum allgemeine Treffpunkte.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://shine.lab.uconn.edu/wp-content/uploads/sites/3321/2021/06/eisenberg_lgbtq_orgs_2020_annals.pdf"
+    },
+    {
+      "kennung": "I6",
+      "name": "Jugendgerechte Treffpunkte im öffentlichen Raum und in Leerständen mit Jugendlichen gestalten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt am häufig geäußerten Wunsch nach Treffpunkten im öffentlichen Raum an; Modellvorhaben des Bundes zeigen Nutzen von Beteiligung. Belastbare Wirkungsstudien fehlen, Konflikte mit Anwohnenden bleiben möglich.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/Forschungsfelder/2009/JugendlicheImStadtquartier/01_Start.html"
+    },
+    {
+      "kennung": "I7",
+      "name": "Kulturpass mit Guthaben für junge Menschen fortführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Guthaben senkt Kosten kultureller Freizeit, der Bund hat es bereits umgesetzt. Beim französischen Vorbild prüfte der Rechnungshof: Es verstärkt vor allem bestehende Gewohnheiten und erreicht Jugendliche aus ärmeren Familien seltener.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.livreshebdo.fr/article/pass-culture-la-cour-des-comptes-epingle-le-dispositif"
+    },
+    {
+      "kennung": "I8",
+      "name": "Bund finanziert kommunale Jugendzentren und Jugendfreizeitinfrastruktur mit (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Jugendclubs wirken nachweislich; mehr Geld für Kommunen kann Schließungen verhindern. Der Bund kann aber nur über Investitions- und Förderprogramme beitragen, laufende Jugendarbeit ist Sache von Ländern und Kommunen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.iser.essex.ac.uk/research/publications/publication-588442"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": "I5",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M02",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Selbst gestaltete Orte im öffentlichen Raum entsprechen dem Wunsch vieler Jugendlicher; Wirkung kaum untersucht. Der Bund kann nur über Städtebauförderung beitragen, Planung liegt bei Ländern und Kommunen.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/Forschungsfelder/2009/JugendlicheImStadtquartier/01_Start.html"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Setzt direkt an der rechtlichen Verdrängung durch Lärmbeschwerden an; verhaltensbezogener Lärm ist seit 2006 Ländersache. Die Wirkung auf Konflikte ist kaum untersucht, der Schutz der Anwohnenden muss abgewogen werden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2003
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I7",
+      "ursachen": [
+        2002
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": "I6",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I8",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M12",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Sichert Angebote für eine kleine Gruppe Jugendlicher. Der Bund darf Gemeinden keine Aufgaben übertragen (Art. 84 GG), eine kommunale Pflichtaufgabe müssten die Länder festlegen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M13",
+      "ursachen": []
+    },
+    {
+      "kennung": "M14",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Jugendorte wirken nachweislich, ein selbstverwalteter Ort je Bezirk ist aber nur eine kleine Zahl zusätzlicher Treffpunkte; mit überschaubaren Kosten umsetzbar.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.iser.essex.ac.uk/research/publications/publication-588442"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M15",
+      "instrument": "I8",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M17",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M18",
+      "instrument": "I6",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I2",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M20",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M21",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Jugendbudgets lassen Jugendliche eigene Angebote umsetzen und stärken Beteiligung; die Summen sind meist klein und hängen davon ab, ob Kommunen Gremien einrichten. Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M22",
+      "instrument": "I8",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M23",
+      "instrument": "I4",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M24",
+      "einzeln": {
+        "wirksamkeit": 3,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein Jugendort in 15 Minuten in jedem Ortsteil setzt mit klarer Zielgröße direkt am Mangel an Treffpunkten an; der Nutzen von Jugendclubs ist belegt. Flächendeckend braucht das Jahre, Geld und knappe Fachkräfte.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.iser.essex.ac.uk/research/publications/publication-588442"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M25",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Zweckbindung verhindert, dass Mittel für Jugendclubs abfließen, schafft aber kein zusätzliches Geld oder Angebot; sie greift in die Haushaltsautonomie der Bezirke ein.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M26",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M27",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M28",
+      "instrument": "I8",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M29",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M30",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M31",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Gebührenfreie, wohnortnahe Angebote senken die Kostenhürde direkt; Gutscheinprogramme erhöhten Teilnahme, ein Teil nutzte Angebote aber schon vorher. Der Bund kann kommunale Gebühren nicht abschaffen, die Kosten sind hoch.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://hfjc.library.ubc.ca/index.php/HFJC/article/view/383"
+      },
+      "ursachen": [
+        2001,
+        2002
+      ]
+    },
+    {
+      "kennung": "M32",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M33",
+      "instrument": "I6",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M34",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M35",
+      "instrument": "I8",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M36",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M37",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M38",
+      "instrument": "I2",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M39",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M40",
+      "instrument": "I4",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M41",
+      "instrument": "I2",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M42",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Parkläufer entschärfen Nutzungskonflikte in Grünanlagen niedrigschwellig; sie richten sich nicht gezielt an Jugendliche und setzen auch Parkordnungen gegen sie durch. Wirkung kaum ausgewertet.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2003
+      ]
+    },
+    {
+      "kennung": "M43",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Sichere, einladende Jugendhäuser können mehr Jugendliche anziehen; die Zusage bleibt unbestimmt und schafft keine zusätzlichen Orte.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M44",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M45",
+      "instrument": "I4",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M46",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein Zuschuss für das erste Vereinsjahr senkt die Einstiegskosten; ein Gutscheinprogramm in Australien erhöhte die Aktivität, ohne Kontrollgruppe. Danach fallen die Kosten wieder an; Sportförderung ist überwiegend Ländersache.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://hfjc.library.ubc.ca/index.php/HFJC/article/view/383"
+      },
+      "ursachen": [
+        2002
+      ]
+    },
+    {
+      "kennung": "M47",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Günstige Räume können Jugendeinrichtungen ermöglichen, Jugendliche sind aber nur eine von mehreren Zielgruppen; ob Leerstand verfügbar ist, hängt von den Eigentümern ab.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M48",
+      "instrument": "I7",
+      "ursachen": [
+        2002
+      ]
+    },
+    {
+      "kennung": "M49",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M50",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I5",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M53",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    },
+    {
+      "kennung": "M54",
+      "instrument": "I1",
+      "ursachen": [
+        2001
+      ]
+    }
+  ]
+}

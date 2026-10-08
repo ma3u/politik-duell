@@ -1,0 +1,585 @@
+{
+  "pruefsumme": "2f08aa5fccb15b3cb5cba95375e4a841684e98e8763d68a32fa07a037cea63d1",
+  "thema": {
+    "id": 20,
+    "name": "Freizeitangebote und Treffpunkte für Jugendliche",
+    "ziel": "Jugendliche können passende Freizeitaktivitäten wahrnehmen und verlässlich Orte nutzen, an denen sie sich mit anderen treffen und ihre Interessen ausleben können."
+  },
+  "ursachen": [
+    {
+      "id": 2001,
+      "beschreibung": "Junge Menschen wünschen mehr jugendgerechte Treffpunkte im öffentlichen Raum und erschwingliche Angebote (Befragung von über 2.400 Jugendlichen in Halle, 2024)",
+      "ebene": "land"
+    },
+    {
+      "id": 2002,
+      "beschreibung": "Geldmangel hindert junge Menschen an sozialer Teilhabe: In Interviews mit 54 Kindern und Jugendlichen (2023) beschrieben Betroffene finanzielle Probleme als Hindernis",
+      "ebene": "bund"
+    },
+    {
+      "id": 2003,
+      "beschreibung": "Nehmen Konflikte mit Anwohnenden und anderen Nutzenden überhand, geben Jugendliche Treffpunkte auf (Fallstudien in zwei Städten, veröffentlicht 2016)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2001,
+        2002,
+        2003
+      ],
+      "text": "Zu 2001 gehören Jugendtreffs, Jugendzentren, offene Jugendarbeit, Freizeitangebote und Orte für Jugendliche; zu 2002 Kosten und Zuschüsse für Freizeit, Sport, Musik und Kultur von Kindern und Jugendlichen (etwa Teilhabeleistungen); zu 2003 Regeln für Lärm und Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen. Allgemeine Kinder- und Jugendhilfe ohne Freizeitbezug gehört nicht dazu."
+    },
+    {
+      "nr": 2,
+      "text": "Sportvereine und Sportstätten als Einrichtung, Clubs und Kulturorte als Veranstaltungsorte sowie Schule und Ganztag gehören zu anderen Themen, soweit das Zitat Jugendliche und Freizeit nicht ausdrücklich nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Queere Jugendzentren erhalten und ausbauen",
+      "zitat": "Zusätzlich brauchen queere Jugendliche sichere Orte, an denen sie Respekt erfahren. Deshalb halten wir queere Jugendzentren und bauen sie aus.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "181a385447ce7bd6"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Sichere, selbst gestaltete Aufenthaltsorte für Jugendliche im öffentlichen Raum schaffen.",
+      "zitat": "Für alle Jugendlichen wollen wir sichere und selbst gestaltete Aufenthaltsorte im öffentlichen Raum schaffen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "3efc5f40dfb354ff"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Gesetzliche Lärmschutzvorgaben anpassen, damit junge Menschen nicht aus dem öffentlichen Raum verdrängt werden",
+      "zitat": "Wir schützen junge Menschen zudem vor Verdrängung aus dem öffentlichen Raum, in dem wir die gesetzlichen Vorgaben zum Lärmschutz anpassen.",
+      "ursachen_ids": [
+        2003
+      ],
+      "pruefsumme": "b55f5ec924215bc5"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Kulturpass für junge Menschen über 2024 hinaus verlängern",
+      "zitat": "Verlängerung des Kulturpasses: Der Kulturpass wird über 2024 hinaus verlängert, um jungen Menschen weiterhin Zugang zu kulturellen Angeboten zu ermöglichen.",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "2b6ce3e6d155cd39"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Jugendorte schaffen und ausbauen, vor allem unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden.",
+      "zitat": "Wir wollen außerdem Jugendorte schaffen und ausbauen, wozu insbesondere unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden zählen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "708d4f70f68174c4"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Soziale Präventionsarbeit der Kommunen wie Streetwork und Jugendclubs finanziell stärken.",
+      "zitat": "Für ein sicheres [Land] wollen wir: • soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "4d09e818e2ac13ca"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Träger der Jugendarbeit durch dauerhafte Finanzierung statt kurzfristiger Projektförderung absichern",
+      "zitat": "Wir ersetzen dafür kurzfristige, projektgebundene Förderungen durch institutionell verankerte Strukturen mit abgesicherter Finanzierung und ansprechenden Arbeitsbedingungen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "14cd509de59426fd"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Calisthenikanlagen in Parks ausbauen und ungenutzte öffentliche Räume so umgestalten, dass Kinder und Jugendliche sie nutzen können.",
+      "zitat": "Wir wollen Calisthenikanlagen in Parks ausbauen und ungenutzte öffentliche Räume so umgestalten, dass sich Kinder und Jugendliche dort ungestört aufhalten können.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "cc99086665f1f863"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Jugendzentren als Teil der Daseinsvorsorge ausreichend über die Kommunen finanzieren (Infrastrukturgarantie).",
+      "zitat": "Schwimmbäder und Sportstätten, Jugendzentren, Wohnungslosenhilfe und Schulpsycholog*innen sind unverzichtbarer Teil der öffentlichen Daseinsvorsorge. Dazu müssen die Kommunen ausreichend finanziert werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "64e15ccef70f0ccd"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, pädagogisch begleitete Freiräume und selbstorganisierte Räume weiter stärken; Bundesmittel für die Instandsetzung von Jugendclubs umsetzen.",
+      "zitat": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume wie das bisherige Modellprojekt Queer*Spaces werden weiter gestärkt. Mit Mitteln aus dem Sondervermögen des Bundes konnten mehr als 15 Mio. Euro für die Instandsetzung von Jugendclubs mobilisiert werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "0bfcdf185ece77b3"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Angebote für Kinder und Jugendliche sichern und rechte Kader aus Jugendclubs fernhalten.",
+      "zitat": "Das bedeutet, die Angebote […] Kinder und Jugendliche zu sichern und organisierte rechte Kader aus Jugendclubs rauszuhalten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "85fd3b92d3ac59e1"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Queere Jugendzentren schützen und queere Jugendarbeit zur kommunalen Pflichtaufgabe machen.",
+      "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse. Die queere Jugendarbeit muss kommunale Pflichtaufgabe werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "5342ba7d2ca6479b"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Ehrenamtliche der Babyboomer-Generation gezielt einbinden, um Sportangebote für Kinder und Jugendliche auszubauen.",
+      "zitat": "wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "40862d67c67c6918"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Mindestens ein selbstverwalteter Jugendort in jedem Bezirk.",
+      "zitat": "[Partei] wird sich für mindestens einen selbstverwalteten Jugendort pro Bezirk einsetzen",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "0b09964bff985c05"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Jugendtreffs, Clubs und Ateliers als Räume für Jugendliche schützen und gezielt fördern",
+      "zitat": "Förderung kultureller Räume: Clubs, Ateliers und Jugendtreffs werden als kulturelle Räume für Jugendliche geschützt und gezielt gefördert.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "015c2216dc6b4946"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "land",
+      "beschreibung": "Jugendfreizeiteinrichtungen in den Kiezen weiter ausbauen und modernisieren, auch digital besser ausstatten.",
+      "zitat": "Deshalb wollen wir Jugendfreizeiteinrichtungen weiter ausbauen und sie konsequent modernisieren.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "981155b6a974eb49"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Offene Jugendarbeit und Jugendverbände dauerhaft unterstützen; Masterplan für Jugendbildungsstätten und Weiterentwicklung der Jugendpauschale für Planungssicherheit.",
+      "zitat": "Jugendverbände und offene Jugendarbeit leisten einen wichtigen Beitrag zur Persönlichkeitsentwicklung. Wir unterstützen diese Arbeit dauerhaft und verlässlich. Mit einem neuen Masterplan für Jugendbildungsstätten und der Weiterentwicklung der Jugendpauschale schaffen wir Planungssicherheit.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b8726c7d1ce49d38"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Leerstand soll zu Freiräumen für Jugendliche werden, gemeinsam mit ihnen gestaltet und genutzt.",
+      "zitat": "Wir wollen: […] Leerstand zu Freiräumen machen – mit Jugendlichen gestalten und nutzen, auch in engen Quartieren,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "7fef697ddde7222d"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Jugendarbeit wird gesetzlicher Anspruch für alle jungen Menschen, mit höherer Landesförderung besonders im ländlichen Raum.",
+      "zitat": "Wir machen Jugendarbeit zu einem gesetzlichen Anspruch für alle jungen Menschen und erhöhen die Förderung, besonders im ländlichen Raum.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "399e30fd29598c0f"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs als Orte der Begegnung und Demokratiebildung fördern, getragen von freien und öffentlichen Trägern.",
+      "zitat": "Jugendclubs wollen wir als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung frühzeitig entgegenzuwirken.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "0b48854caeb2e34a"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Kommunen mit Jugendgremien erhalten Unterstützung für Jugendbudgets und Angebote von und für Jugendliche.",
+      "zitat": "Kommunen, die Jugendgremien einrichten, erhalten gezielte Unterstützung, um Jugendbudgets bereitzustellen und Angebote von und für Jugendliche zu ermöglichen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "8ffca067c1937cbf"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Staat soll Freizeittreffs für Jugendliche (und Ältere) flächendeckend gewährleisten (Infrastruktur-Garantie).",
+      "zitat": "ÖPNV, ärztliche Grundversorgung und regional erreichbare Krankenhäuser, Einkaufsmöglichkeiten für den täglichen Bedarf, Freizeittreffs insbesondere für die Jugend und ältere Mitbürger sowie schnelles Internet sind vom Staat zu gewährleisten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "523fd032b0f81eb3"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Modellprojekt für mobile Kinder- und Jugendzentren im ländlichen Raum, um Jugendangebote besser erreichbar zu machen",
+      "zitat": "Mit der Durchführung eines Modellprojektes für mobile Kinder- und Jugendzentren im ländlichen Raum wollen wir die Erreichbarkeit dieser Angebote verbessern.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "f36823ee38f28baf"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "land",
+      "beschreibung": "In jedem Ortsteil soll ein Jugendort in etwa 15 Minuten erreichbar sein, wo er fehlt ein mobiles Angebot.",
+      "zitat": "Wir wollen: […] Nähe sichern – in jedem Ortsteil mindestens einen Jugendort in ca. 15 Minuten erreichbar, wo das fehlt: mobiles Angebot vor Ort,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "c3a130e64a31a4f5"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Zweckbindung der Mittel für Jugendclubs, damit Bezirke sie nicht anderweitig ausgeben.",
+      "zitat": "Geld, das für Jugendclubs vorgesehen ist, muss auch bei den Jugendclubs ankommen und darf von den Bezirken nicht für andere Zwecke ausgegeben werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "52be9ca964f3d8cb"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "land",
+      "beschreibung": "Jugendkultur stärken: Stabsstelle in der Staatskanzlei, Landesliegenschaften auf Doppelnutzung prüfen, ausreichende Finanzierung.",
+      "zitat": "Jugendkultur zur Verhinderung von Abwanderung in den Fokus nehmen. Wir richten eine Stabsstelle in der Staatskanzlei ein, die Landesliegenschaften werden auf Doppelnutzung untersucht und Jugendkultur soll auf Landesebene sowie in den Kommunen ausreichend finanziert werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "592b4e318e9c3bd3"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Flächendeckendes, niedrigschwelliges Angebot an Jugendclubs und weiteren Orten für junge Menschen unterstützen; offene Kinder- und Jugendarbeit fördern.",
+      "zitat": "Für eine unbeschwerte Kindheit und Jugend wollen wir: […] ein flächendeckendes und niedrigschwelliges Angebot an Jugendclubs, Vereinen, Kultur-, Musik- und Sportstätten unterstützen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "7c2e2fac1e8a514f"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Zehnjähriges Sonderprogramm für Kommunen, um Strukturen der Kinder- und Jugendarbeit aufzubauen; Mittel des Kinder- und Jugendplans aufstocken.",
+      "zitat": "Mit einem Sonderprogramm wollen wir über zehn Jahre Kommunen dabei unterstützen, Strukturen für Kinder- und Jugendarbeit aufzubauen und zu stärken. Die Mittel des Kinder- und Jugendplans, dem zentralen Förderinstrument für Jugendarbeit und Jugendhilfe, […] wollen wir aufstocken",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "903ad97964bb0d4c"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "land",
+      "beschreibung": "Landesmittel der Kinder- und Jugendhilfe werden an die Preisentwicklung gekoppelt, damit die Jugendarbeit Planungssicherheit hat.",
+      "zitat": "Damit Jugendliche ihre Fähigkeiten und Interessen entdecken und entwickeln können, sollen die Mittel der Kinder und Jugendhilfe des Landes entsprechend der Entwicklung des Verbraucherpreisindexes erhöht werden. Die Jugendarbeit gewinnt so langfristige Planungssicherheit.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "d6b9086fe4106dd0"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "land",
+      "beschreibung": "Offene Jugendarbeit und Jugendfreizeiteinrichtungen als Alternativangebot angemessen und langfristig finanziell ausstatten.",
+      "zitat": "[…] indem wir Angebote der […] und der Demokratiebildung stärken und die offene Jugendarbeit und Jugendfreizeiteinrichtungen als Alternativangebote angemessen und langfristig finanziell ausstatten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "3c0817f00133d2a6"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Freizeit-, Musik- und Sporteinrichtungen für Kinder und Jugendliche wohnortnah und gebührenfrei machen; Kommunen und Kinder- und Jugendplan des Bundes dafür besser finanzieren.",
+      "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder. Die Mittel des Kinder- und Jugendplans des Bundes müssen dafür ebenfalls aufgestockt werden.",
+      "ursachen_ids": [
+        2001,
+        2002
+      ],
+      "pruefsumme": "989267c6b048aa3c"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Jugendtreffs wieder aufbauen und langfristig sichern, besonders im ländlichen Raum",
+      "zitat": "Wiederaufbau und langfristige Sicherung von Jugendtreffs, insbesondere im ländlichen Raum",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "dfbd4d957b7bb173"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "land",
+      "beschreibung": "Mehr kostenfreie Treffpunkte („JugendOrte“) im öffentlichen Raum, nach Wünschen der Jugendlichen gestaltet und in den Bezirken dauerhaft finanziert",
+      "zitat": "Auch im öffentlichen Raum schaffen wir mehr Treffpunkte für Jugendliche mit und ohne Beeinträchtigungen, die entsprechend ihren Wünschen und Bedürfnissen gestaltet werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b93ad610479bb739"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs als soziale Räume für junge Menschen erhalten.",
+      "zitat": "Unsere Ziele: […] Bewahrung von Jugendclubs, Schulen und anderen sozialen Räumen der politischen Teilhabe junger Menschen",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "393902e84b01eb51"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Investitionsprogramm für kinder- und jugendgerechte Infrastruktur mit wohnortnahem, niedrigschwelligem Zugang zu Jugendfreizeiteinrichtungen, Sportstätten und Musikschulen.",
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "0ffb3b6e2da41749"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, soziokulturelle Zentren und offene Dritte Orte stärken und neu schaffen, besonders im ländlichen Raum sichern und ausbauen.",
+      "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause. Gerade im ländlichen Raum müssen solche Treffpunkte gesichert und ausgebaut werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "2965c907f7fc488b"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, Freizeithäuser und offene Treffpunkte langfristig absichern und verlässlich finanzieren",
+      "zitat": "Unsere Ziele: […] Langfristige Absicherung und verlässliche Finanzierung von Jugendclubs, Freizeithäusern und offenen Treffpunkten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "83c309266c30b5d7"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Kinder- und Jugendarbeit als kommunale Pflichtaufgabe festschreiben und den Landesjugendplan bedarfsgerecht ausfinanzieren; Jugendverbände und Ferienfreizeiten gezielt fördern.",
+      "zitat": "Kinder- und Jugendarbeit zur kommunalen Pflichtaufgabe machen, die Landesjugendhilfeplanung strategisch ausrichten und den Landesjugendplan bedarfsgerecht ausfinanzieren.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "122f8efee3a8865a"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "land",
+      "beschreibung": "Selbstorganisierte, ehrenamtlich von jungen Menschen gestaltete Jugendarbeit stärken",
+      "zitat": "Unsere Ziele: […] Stärkung selbstorganisierter Jugendarbeit, die von jungen Menschen eigenverantwortlich und ehrenamtlich gestaltet wird.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "ac3fc5b5d83e62ac"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "land",
+      "beschreibung": "Mobile Projekte und Jugendtreffs als soziale Angebote auch in abgelegenen ländlichen Regionen sichern, damit Jugendliche Zugang zu Freizeitangeboten haben.",
+      "zitat": "Mobile Projekte, Jugendtreffs und andere Formen sozialer Arbeit sichern auch in abgelegenen Regionen den Zugang zu Freizeitangeboten, Bildungsinitiativen und Beratungsmöglichkeiten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "1781b8b4b60c0dbd"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Verbindlicher Jugendförderplan mit Mindeststandards für Landesangebote und einfacherer Förderung.",
+      "zitat": "Wir werden mit den Akteuren der Kinder- und Jugendarbeit einen verbindlichen Jugendförderplan erarbeiten. Dieser soll unter anderem Mindeststandards für Angebote des Landes definieren und die Förderung vereinfachen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "2fd7c439bb0290c5"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "land",
+      "beschreibung": "Finanzierung des Parkläufer-Projekts dauerhaft sichern, um Nutzungskonflikte in Grünanlagen niedrigschwellig zu entschärfen.",
+      "zitat": "Wir verstetigen die Finanzierung des „Parkläufer“-Projekts, um Konflikte zwischen Nutzern und Anwohnern öffentlicher Grünanlagen niedrigschwellig zu deeskalieren und die Einhaltung der Parkordnungen sicherzustellen.",
+      "ursachen_ids": [
+        2003
+      ],
+      "pruefsumme": "670fcc97700f6ecd"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "land",
+      "beschreibung": "Jugendhäuser und Jugendfreizeiteinrichtungen sollen sichere, für alle einladende Orte sein; Jugendzentren erhalten ein neues Konzept.",
+      "zitat": "Wir werden dafür Sorge tragen, dass Jugendhäuser wieder sichere Orte für Kinder und Jugendliche sind. Jugendfreizeiteinrichtungen sollen für alle Jugendlichen einladend sein.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "e06e9d86a757b1a6"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Lokale Kulturorte und Einrichtungen, darunter Jugendclubs und mobile Clubs, flächendeckend und verlässlich fördern",
+      "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören Dorfkirchen und Kirchensanierungen, Bibliotheken, Musikschulen, Vereinshäuser, Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "53a2c1ac2697a1fe"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "land",
+      "beschreibung": "Mobile Jugendarbeit und aufsuchende Angebote in strukturschwachen Regionen fördern",
+      "zitat": "Förderung mobiler Jugendarbeit und aufsuchender Angebote in strukturschwachen Regionen",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "0bd2639c3ca32ce8"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Bund bezahlt allen Kindern das erste Jahr im Sportverein mit einem Zuschuss.",
+      "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr).",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "1f755bbb8ed23d3c"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Erdgeschossflächen zu gedeckelten Mieten unter anderem an Jugendeinrichtungen vergeben.",
+      "zitat": "Mit einem Sofortprogramm […] soziale Gewerbemieten stellen wir leerstehende Erdgeschossfl […] chen sozialen Trägern, Kulturschaffenden, Jugendeinrichtungen und Nachbarschaftsinitiativen zu gedeckelten Mieten zur Verf […] gung",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "e561d7cb179af7c1"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "bund",
+      "beschreibung": "Kulturpass mit Guthaben für Jugendliche dauerhaft fortführen.",
+      "zitat": "Deshalb werden wir den Kulturpass verstetigen und prüfen, ihn auszubauen. Mit ihm erhalten Jugendliche ein Guthaben, um Kultur zu entdecken.",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "952d467bb92bee9c"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "land",
+      "beschreibung": "Angebote der Jugendarbeit ausbauen, zusammen mit Sprachkursen und Integrationsangeboten.",
+      "zitat": "Sprachkurse, Integrationsangebote und Angebote der Jugendarbeit werden ausgebaut.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "9927de8ba7c23b7c"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "land",
+      "beschreibung": "Jugendbegegnungsorte mit attraktiven, bezahlbaren Freizeit- und Kulturangeboten, auch abends und außerhalb der Städte.",
+      "zitat": "Jugendbegegnungsorte sollen digital anschlussfähig sein, attraktive und bezahlbare Freizeit- und Kulturangebote bieten – auch abends und jenseits der Städte.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "99bc1cd34800cb55"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Jugendzentren, Sport- und Kulturangebote sowie mobile Angebote in besonders belasteten Quartieren ausbauen",
+      "zitat": "Dort bauen wir Jugendzentren, Sport- und Kulturangebote sowie Beratungsstellen aus und ergänzen sie durch mobile Angebote.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "90660ae06217e347"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "land",
+      "beschreibung": "In jedem Bezirk mindestens einen queeren Ort (Zentrum, Jugendclub oder Familienzentrum) schaffen.",
+      "zitat": "In jedem Bezirk soll daher mindestens ein queerer Ort in Form eines Zentrums, Jugendclubs oder Familienzentrums entstehen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "55f7be85ab0b10d3"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "land",
+      "beschreibung": "Kinder- und Jugendfreizeitangebote ausbauen",
+      "zitat": "Wir setzen uns für den Ausbau der Kinder- und Jugendfreizeitangebote ein.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "1b21065d4f05ac49"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, Abenteuerspielplätze und selbstverwaltete Treffpunkte als Räume für Jugendliche sichern und ausbauen.",
+      "zitat": "Ob Jugendclub, Abenteuerspielplatz, Sporthalle, Stadtbibliothek oder selbstverwalteter Treffpunkt – all diese Angebote wollen wir sichern und ausbauen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "84822910b6a6b4d0"
+    }
+  ]
+}

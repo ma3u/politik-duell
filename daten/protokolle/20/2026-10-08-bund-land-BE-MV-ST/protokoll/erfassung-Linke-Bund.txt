@@ -1,0 +1,15 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Freizeit-, Musik- und Sporteinrichtungen für Kinder und Jugendliche wohnortnah und gebührenfrei machen; Kommunen und Kinder- und Jugendplan des Bundes dafür besser finanzieren.", "ursachen_ids": [2001, 2002], "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder. Die Mittel des Kinder- und Jugendplans des Bundes müssen dafür ebenfalls aufgestockt werden.", "seite": 16 },
+    { "beschreibung": "Jugendzentren als Teil der Daseinsvorsorge ausreichend über die Kommunen finanzieren (Infrastrukturgarantie).", "ursachen_ids": [2001], "zitat": "Schwimmbäder und Sportstätten, Jugendzentren, Wohnungslosenhilfe und Schulpsycholog*innen sind unverzichtbarer Teil der öffentlichen Daseinsvorsorge. Dazu müssen die Kommunen ausreichend finanziert werden.", "seite": 44 },
+    { "beschreibung": "Queere Jugendzentren schützen und queere Jugendarbeit zur kommunalen Pflichtaufgabe machen.", "ursachen_ids": [2001], "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse. Die queere Jugendarbeit muss kommunale Pflichtaufgabe werden.", "seite": 47 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2003, "seiten": [16, 44], "grund": "Keine Treffer; keine Zusage zu Lärm, Nutzungskonflikten oder öffentlichem Raum für Jugendliche." }
+  ]
+}
+
+Protokoll: Auftrag, Inhaltsverzeichnis, Kapitel Kinderarmut/Jugend (S. 16-17), Infrastruktur (S. 44), Queer (S. 47), S. 52 gelesen; Treffer per Grep nach "jugend" geprüft.
+Nicht erfasst: S. 6, 7, 11 (allgemeine Preise/Steuern), S. 16 gebührenfreie Ganztagsbetreuung und S. 38 kostenfreie Verpflegung/Beförderung (Schule/Ganztag, R2), S. 36/45 kostenfreier ÖPNV (Verkehr), S. 39 gebührenfreie Ausbildung, S. 47, 56, 57 (kein Jugend-Freizeitbezug), S. 17 Altenangebote, S. 17 Jugendbeiräte/Wahlalter (Beteiligung, kein Freizeitbezug), S. 52 Jugend- und Kulturzentren nur Verweis auf Investitionen ohne Zusage, S. 53 selbstverwaltete Beratung (anderer Zusammenhang).

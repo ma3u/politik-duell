@@ -1,0 +1,14 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    { "beschreibung": "Deiche, Dünen und Hochwasserschutzanlagen sichern und modernisieren; regionale Hochwasser- und Küstenschutzprojekte unterstützen", "ursachen_ids": [1805], "zitat": "Unsere Umwelt- und Küstenschutzstrategie setzt auf die Sicherung und Modernisierung von Deichen, Dünen und Hochwasserschutzanlagen", "seite": 93 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1803, "seiten": [19, 20], "grund": "Kein Stadtgrün, keine Verschattung; Hitzeschutzkonzepte für vulnerable Gruppen im Gesundheitswesen setzen nicht an der Aufheizung der Städte an; Nachverdichtung und Bauland sind Wohnungsbau ohne Hitzebezug." },
+    { "ursache": 1804, "seiten": [89, 119, 20], "grund": "Flächenverbrauch betrifft Kompensation in der Landwirtschaft bzw. Windkraft, nicht Siedlungen; Bauland ohne Entsiegelungsbezug." }
+  ]
+}
+
+Protokoll: Kapitel Umwelt (S. 90-94), Fundstellen S. 19, 20, 89, 91, 93, 119 sowie Grep nach Hitze, Starkregen, Versiegelung, Begrünung gelesen.
+Nicht erfasst: S. 91 (Hochwasserschutz langfristig stärken) nur Leitbild, S. 93 Aktionsplan Gewässerdurchgängigkeit/Renaturierung (Hochwasserbezug im Satz, aber Planungsauftrag, Bündel schon durch Deiche belegt). Hitzeschutzkonzepte im Gesundheitskapitel (Resilienz) nicht Ursache 1803.

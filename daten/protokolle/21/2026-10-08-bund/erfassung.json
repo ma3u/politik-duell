@@ -1,0 +1,880 @@
+{
+  "thema_id": 21,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Die jährliche Anpassung der Grundsicherung soll so modernisiert werden, dass überproportionale Erhöhungen gegenüber der Lohnentwicklung künftig verhindert werden.",
+          "ursachen_ids": [
+            2101
+          ],
+          "zitat": "Viele Arbeitnehmerinnen und Arbeitnehmer konnten die überproportionale Erhöhung des sogenannten „Bürgergelds“ nicht nachvollziehen. Denn ihre Löhne sind nicht im selben Maße gestiegen. Solche Fälle wollen wir in Zukunft verhindern.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Kinderfreibetrag in Richtung Grundfreibetrag der Eltern entwickeln, Kindergeld entsprechend anheben.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Unser Ziel ist, den Kinderfreibetrag in Richtung des Grundfreibetrags der Eltern zu entwickeln. Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Steuerlichen Entlastungsbetrag für Alleinerziehende erhöhen.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Sie sind besonders armutsgefährdet, selbst wenn sie arbeiten. Deshalb erhöhen wir den steuerlichen Entlastungsbetrag.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Digitales Portal für alle Familienleistungen schaffen, Familienleistungen bündeln und einfacher zugänglich machen.",
+          "ursachen_ids": [
+            2103
+          ],
+          "zitat": "Wir wollen ein übergreifendes digitales Portal für alle Familienleistungen, damit Familien die ihnen zustehenden Leistungen einfach und unbürokratisch erhalten können.",
+          "seite": 63
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Familien mit niedrigem Erwerbseinkommen sollen durch Kindergeld, Kinderzuschlag und Wohngeld ohne ergänzendes Bürgergeld auskommen.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Im nächsten Schritt wollen wir erreichen, dass Familien – insbesondere auch Alleinerziehende – mit eigenem niedrigem Lohneinkommen mit einer Kombination aus Kindergeld, Kinderzuschlag und Wohngeld nicht auf ergänzendes Bürgergeld angewiesen sind.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Der Entlastungsbetrag für Alleinerziehende wird in einen Abzug von der Steuerschuld umgewandelt.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Für Alleinerziehende wollen wir den Entlastungsbetrag in einen Abzug von der Steuerschuld umwandeln.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Zentrale Ansprechstelle, einfachere digitale Beantragung und möglichst automatische Auszahlung der Familienleistungen.",
+          "ursachen_ids": [
+            2103
+          ],
+          "zitat": "Mit einer zentralen Ansprechstelle soll zudem die Zugänglichkeit dieser Leistungen weiter verbessert und die (digitale) Beantragung weiter erleichtert werden. Wo möglich sollen Leistungen automatisch beantragt und ausgezahlt werden.",
+          "seite": 27
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2101,
+          "seiten": [
+            26,
+            27,
+            21
+          ],
+          "grund": "Keine Zusage zu Höhe oder Bemessung der Grundsicherung; nur allgemeines Ziel 'armutsfeste, unbürokratische Geldleistungen' und Bekenntnis zum Bürgergeld-Prinzip."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Bürgergeld-Regelsatz regelmäßig anpassen, damit das soziokulturelle Existenzminimum garantiert bleibt.",
+          "ursachen_ids": [
+            2101
+          ],
+          "zitat": "Wir lassen nicht zu, dass der Regelsatz darunter sinkt. Deshalb passen wir das Bürgergeld regelmäßig an, damit das soziokulturelle Existenzminimum immer garantiert ist.",
+          "seite": 99
+        },
+        {
+          "beschreibung": "Kindergeld gesetzlich an die Erhöhung des Kinderfreibetrags koppeln, später die Entlastung angleichen.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Um der Ungleichheit der Entlastung zwischen Kinderfreibetrag und Kindergeld entgegenzuwirken, wollen wir zunächst die Höhe des Kindergeldes gesetzlich an die regelmäßige Erhöhung des Kinderfreibetrages koppeln.",
+          "seite": 81
+        },
+        {
+          "beschreibung": "Freibetrag für Alleinerziehende zur Steuergutschrift ausbauen; Kindergeld nur zur Hälfte auf den Unterhaltsvorschuss anrechnen.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Dafür bauen wir den bestehenden Freibetrag für Alleinerziehende zu einer Steuergutschrift aus, wovon besonders kleine und mittlere Einkommen profitieren. Das Kindergeld rechnen wir nur noch zur Hälfte auf den Unterhaltsvorschuss an.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Kindergrundsicherung schnellstmöglich einführen, Anträge verschlanken und automatisieren.",
+          "ursachen_ids": [
+            2102,
+            2103
+          ],
+          "zitat": "Deshalb wollen wir schnellstmöglich eine Kindergrundsicherung einführen. Mit ihr wollen wir Antragsverfahren weiter verschlanken und stetig automatisieren, damit Kinder und ihre Familien die ihnen zustehenden Leistungen auch tatsächlich erhalten.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Kindergrundsicherungs-Check: Familien werden ab der Geburt aktiv über ihre Ansprüche informiert.",
+          "ursachen_ids": [
+            2103
+          ],
+          "zitat": "Dazu führen wir einen Kindergrundsicherungs-Check ein, der prüft, in welcher Höhe ein Kind Ansprüche auf Unterstützung hat und die Familien aktiv darüber informiert.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Existenzminimum für Kinder armutsfest neu berechnen; Alleinerziehende bei Anrechnung von Unterhalt und Einkommen besser stellen.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Für den Kampf gegen Kinderarmut wollen wir neben der Modernisierung der Verwaltung eine armutsfeste Neuberechnung des soziokulturellen Existenzminimums für Kinder sowie eine bessere Unterstützung und Entlastung von Alleinerziehenden bei der Anrechnung von Unterhalt und Einkommen.",
+          "seite": 84
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Regelsatz der Grundsicherung absenken, indem die Besitzstandsregelung abgeschafft wird.",
+          "ursachen_ids": [
+            2101
+          ],
+          "zitat": "Der Regelsatz liegt im Jahr 2025 weiter über dem Bedarf. Deshalb wollen wir mit der Abschaffung der sogenannten Besitzstandsregelung die Voraussetzung dafür schaffen, den Regelsatz abzusenken.",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Bürgergeld und Wohngeld in einer Leistung an einer staatlichen Stelle zusammenfassen, um Bürokratie und Komplexität zu verringern.",
+          "ursachen_ids": [
+            2103
+          ],
+          "zitat": "Wir Freie Demokraten wollen das bürokratische Wirr-Warr der verschiedenen Sozialleistungen reduzieren, indem wir die steuerfinanzierten Sozialleistungen – wie das Bürgergeld und das Wohngeld – in einer Leistung und an einer staatlichen Stelle zusammenfassen.",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern, um Familien und Alleinerziehende zu entlasten.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Um Familien und Alleinerziehende stärker zu entlasten, wollen wir die steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Elterngeld und weitere Familienleistungen entbürokratisieren, digitalisieren und automatisieren, etwa über KI-gestützte Beantragung und ein Kinderchancenportal.",
+          "ursachen_ids": [
+            2103
+          ],
+          "zitat": "Das Elterngeld sowie weitere Familienleistungen müssen entbürokratisiert, digitalisiert und automatisiert werden, z. B. durch eine KI-basierte Beantragung und einem Kinderchancenportal.",
+          "seite": 30
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Regelbedarfssätze der Grundsicherung (Bürgergeld) an die tatsächliche Preisentwicklung des Warenkorbs anpassen.",
+          "ursachen_ids": [
+            2101
+          ],
+          "zitat": "Dazu wollen wir […] die Regelbedarfssätze an die tatsächliche Inflationsentwicklung des Bürgergeld-Warenkorbs anpassen.",
+          "seite": 26
+        },
+        {
+          "beschreibung": "Familiensplitting und höherer Kinderfreibetrag, um Familien mit mittlerem Einkommen steuerlich zu entlasten.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Die AfD möchte mit dem steuerlichen Familiensplitting und einer Anhebung des Kinderfreibetrages insbesondere Familien mit mittlerem Einkommen entlasten.",
+          "seite": 149
+        },
+        {
+          "beschreibung": "Mehrwertsteuer auf Artikel des Kinderbedarfs auf den ermäßigten Satz senken.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Die Mehrwertsteuer für Artikel des Kinderbedarfs soll auf 7 % reduziert werden.",
+          "seite": 149
+        },
+        {
+          "beschreibung": "Beim Wechselmodell nach Trennung das Existenzminimum von Eltern und Kindern in beiden Haushalten sichern.",
+          "ursachen_ids": [
+            2102
+          ],
+          "ursachen_offen": [
+            2101
+          ],
+          "zitat": "Beim Wechselmodell muss das Existenzminimum von Eltern und Kindern in beiden Haushalten gesichert werden.",
+          "seite": 155
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Bürgergeld wird zu einer sanktionsfreien, individuellen Mindestsicherung umgebaut, die sich an der Armutsgefährdungsgrenze orientiert.",
+          "ursachen_ids": [
+            2101
+          ],
+          "zitat": "Wir wollen das Bürgergeld zu einer sanktionsfreien individuellen Mindestsicherung umbauen […] Um Armut zu verhindern, orientieren wir uns an der sogenannten Armutsgefährdungsgrenze, gegenwärtig rund 1 400 Euro monatlich",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Eigenständige Kindergrundsicherung, die Kindergeld, Kinderzuschlag, Unterkunftskosten und Sonderbedarfe bündelt.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Unterhaltsvorschuss ausweiten: Kindergeld nicht mehr voll anrechnen, Bezug bis 25 Jahre.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Den Unterhaltsvorschuss machen wir gerechter, indem u […] a […] das Kindergeld nicht mehr voll angerechnet und das Bezugsalter bis zum 25 […] Lebensjahr ausgeweitet wird",
+          "seite": 16
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Steuerlicher Kinderfreibetrag und Kindergeld sollen gleich hoch sein, damit jedes Kind dem Staat gleich viel wert ist.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Dem Staat muss jedes Kind gleich viel wert sein: Der steuerliche Freibetrag des Chefarztes für seine Kinder sollte genauso hoch sein wie das Kindergeld, das eine Krankenschwester für ihre Kinder erhält.",
+          "seite": 32
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2101,
+          "seiten": [
+            21,
+            22,
+            32
+          ],
+          "grund": "Bürgergeld soll durch 'faire Grundsicherung' ersetzt werden, ohne Aussage zu Höhe oder Bemessung; Mindestlohn und Mitwirkungspflichten gehören zu anderen Themen/Haltung."
+        },
+        {
+          "ursache": 2103,
+          "seiten": [
+            22,
+            32
+          ],
+          "grund": "Keine Zusage zu Zugang, Beantragung oder automatischer Auszahlung gefunden."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Existenzsicherndes Grundeinkommen als negative Einkommensteuer, bei fehlendem Einkommen automatisch ohne Antrag ausgezahlt; ersetzt Sozialleistungen bis zur Armutsgrenze.",
+          "ursachen_ids": [
+            2101,
+            2103
+          ],
+          "zitat": "Einführung eines Grundeinkommens: Ein existenzsicherndes Grundeinkommen wird eingeführt und bei fehlendem Einkommen automatisch und ohne Antrag ausgezahlt.",
+          "seite": 102
+        },
+        {
+          "beschreibung": "Kindergeld erhöhen, im Gegenzug Ehegattensplitting abschaffen.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Abschaffung des Ehegattensplittings: Das Ehegattensplitting wird abgeschafft. Stattdessen wird das Kindergeld erhöht, um Familien gezielt zu fördern.",
+          "seite": 99
+        },
+        {
+          "beschreibung": "Mehr Kinderkrankentage und volles Kinderkrankengeld für Alleinerziehende zur finanziellen Absicherung.",
+          "ursachen_ids": [
+            2102
+          ],
+          "zitat": "Ausbau der Unterstützung für alleinerziehende Personen: Die Anzahl der Kinderkrankentage wird auf 45 Arbeitstage und das Kinderkrankengeld auf 100 % des ausgefallenen Nettoarbeitsentgelts erhöht. Dies schafft mehr finanzielle Sicherheit für Alleinerziehende.",
+          "seite": 149
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2101": {
+      "Grundsicherung und Regelsätze erhöhen": [
+        "regelsatz",
+        "regelbedarf",
+        "existenzminimum",
+        "bürgergeld erhöhen",
+        "grundsicherung erhöhen",
+        "mindestsicherung",
+        "armutsfest",
+        "teilhabepaket",
+        "bildung und teilhabe"
+      ],
+      "Leistungen begrenzen und gezielter einsetzen": [
+        "sachleistung",
+        "gezielt",
+        "bürgergeld begrenzen",
+        "neue grundsicherung",
+        "grundsicherung reform",
+        "bezahlkarte"
+      ]
+    },
+    "2102": {
+      "Familien- und Kinderleistungen ausbauen": [
+        "kindergrundsicherung",
+        "kindergeld",
+        "kinderzuschlag",
+        "kinderarmut",
+        "unterhaltsvorschuss",
+        "alleinerziehend",
+        "kinderfreibetrag"
+      ],
+      "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": [
+        "vereinbarkeit",
+        "erwerbstätigkeit der eltern",
+        "familienarbeitszeit",
+        "eltern in arbeit",
+        "betreuung für alleinerziehende"
+      ]
+    },
+    "2103": {
+      "Zugang erleichtern und Leistungen automatisch auszahlen": [
+        "automatische auszahlung",
+        "antragsverfahren vereinfachen",
+        "nichtinanspruchnahme",
+        "verdeckte armut",
+        "ansprüche kennen",
+        "leistungen bündeln",
+        "digitaler antrag"
+      ],
+      "Leistungsansprüche und Anreize anpassen": [
+        "anspruchshöhe",
+        "bezugsdauer",
+        "leistungsanreiz",
+        "zumutbare arbeit",
+        "kombination von leistungen"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "88d8c53f0be255759a4c059fb55a32c9a2b69d95b06834501f850a3fd96ae7a4",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 0,
+              "regelbedarf": 0,
+              "existenzminimum": 0,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 0,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 0
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 1,
+              "gezielt": 10,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 2,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 1
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 0,
+              "kindergeld": 2,
+              "kinderzuschlag": 0,
+              "kinderarmut": 0,
+              "unterhaltsvorschuss": 0,
+              "alleinerziehend": 1,
+              "kinderfreibetrag": 1
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 2,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 0,
+              "regelbedarf": 0,
+              "existenzminimum": 0,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 1,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 1
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 0,
+              "gezielt": 24,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 0
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 1,
+              "kindergeld": 5,
+              "kinderzuschlag": 3,
+              "kinderarmut": 1,
+              "unterhaltsvorschuss": 0,
+              "alleinerziehend": 4,
+              "kinderfreibetrag": 0
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 5,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 1,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 1,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 1,
+              "regelbedarf": 0,
+              "existenzminimum": 4,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 1,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 1
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 0,
+              "gezielt": 35,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 1
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 2,
+              "kindergeld": 7,
+              "kinderzuschlag": 2,
+              "kinderarmut": 5,
+              "unterhaltsvorschuss": 1,
+              "alleinerziehend": 12,
+              "kinderfreibetrag": 4
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 14,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 2,
+              "regelbedarf": 0,
+              "existenzminimum": 0,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 0,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 0
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 0,
+              "gezielt": 5,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 1
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 0,
+              "kindergeld": 0,
+              "kinderzuschlag": 0,
+              "kinderarmut": 0,
+              "unterhaltsvorschuss": 0,
+              "alleinerziehend": 2,
+              "kinderfreibetrag": 0
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 4,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 1,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 0,
+              "regelbedarf": 4,
+              "existenzminimum": 3,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 0,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 0
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 3,
+              "gezielt": 6,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 1
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 0,
+              "kindergeld": 0,
+              "kinderzuschlag": 0,
+              "kinderarmut": 0,
+              "unterhaltsvorschuss": 0,
+              "alleinerziehend": 3,
+              "kinderfreibetrag": 1
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 1,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 2,
+              "regelbedarf": 0,
+              "existenzminimum": 3,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 2,
+              "armutsfest": 0,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 0
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 1,
+              "gezielt": 8,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 1
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 4,
+              "kindergeld": 4,
+              "kinderzuschlag": 1,
+              "kinderarmut": 3,
+              "unterhaltsvorschuss": 1,
+              "alleinerziehend": 3,
+              "kinderfreibetrag": 0
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 5,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 0,
+              "regelbedarf": 0,
+              "existenzminimum": 0,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 1,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 0
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 0,
+              "gezielt": 6,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 0
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 0,
+              "kindergeld": 1,
+              "kinderzuschlag": 0,
+              "kinderarmut": 1,
+              "unterhaltsvorschuss": 0,
+              "alleinerziehend": 2,
+              "kinderfreibetrag": 0
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 1,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "2101": {
+            "Grundsicherung und Regelsätze erhöhen": {
+              "regelsatz": 0,
+              "regelbedarf": 0,
+              "existenzminimum": 0,
+              "bürgergeld erhöhen": 0,
+              "grundsicherung erhöhen": 0,
+              "mindestsicherung": 0,
+              "armutsfest": 0,
+              "teilhabepaket": 0,
+              "bildung und teilhabe": 2
+            },
+            "Leistungen begrenzen und gezielter einsetzen": {
+              "sachleistung": 0,
+              "gezielt": 54,
+              "bürgergeld begrenzen": 0,
+              "neue grundsicherung": 0,
+              "grundsicherung reform": 0,
+              "bezahlkarte": 0
+            }
+          },
+          "2102": {
+            "Familien- und Kinderleistungen ausbauen": {
+              "kindergrundsicherung": 0,
+              "kindergeld": 3,
+              "kinderzuschlag": 0,
+              "kinderarmut": 0,
+              "unterhaltsvorschuss": 0,
+              "alleinerziehend": 4,
+              "kinderfreibetrag": 0
+            },
+            "Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken": {
+              "vereinbarkeit": 3,
+              "erwerbstätigkeit der eltern": 0,
+              "familienarbeitszeit": 0,
+              "eltern in arbeit": 0,
+              "betreuung für alleinerziehende": 0
+            }
+          },
+          "2103": {
+            "Zugang erleichtern und Leistungen automatisch auszahlen": {
+              "automatische auszahlung": 0,
+              "antragsverfahren vereinfachen": 0,
+              "nichtinanspruchnahme": 0,
+              "verdeckte armut": 0,
+              "ansprüche kennen": 0,
+              "leistungen bündeln": 0,
+              "digitaler antrag": 0
+            },
+            "Leistungsansprüche und Anreize anpassen": {
+              "anspruchshöhe": 0,
+              "bezugsdauer": 0,
+              "leistungsanreiz": 0,
+              "zumutbare arbeit": 0,
+              "kombination von leistungen": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

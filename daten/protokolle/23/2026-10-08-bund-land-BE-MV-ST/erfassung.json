@@ -1,0 +1,3451 @@
+{
+  "thema_id": 23,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Ausreichender Kinder- und Jugendschutz im Internet, auch auf Sozialen Medien; bei der Umsetzung des Digital Services Act Schwerpunkt auf Jugend- und Medienschutz.",
+          "ursachen_ids": [
+            2303
+          ],
+          "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. Das gilt auch für Soziale Medien als wichtige Plattformen des Austauschs und der Information.",
+          "seite": 41
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            3,
+            14,
+            24,
+            63,
+            66
+          ],
+          "grund": "Treffer 'Entlastung' betreffen Steuern, Landwirte, Justiz; 'Resilienz' Wirtschaft, Energie, Cyber, Verteidigung. Schulkapitel S. 65-66 gelesen: nichts zu Leistungs- oder Prüfungsdruck."
+        },
+        {
+          "ursache": 2301,
+          "seiten": [
+            65,
+            66
+          ],
+          "grund": "Schulkapitel ohne Aussage zu Klassenklima, sozialem Lernen oder Mobbingprävention."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            66,
+            67,
+            69,
+            70
+          ],
+          "grund": "Fortbildung-Treffer betreffen Berufsbildung; 'Anlaufstelle' Apotheken; Qualifizierung von Lehrkräften (S. 66) nur zu Digitalem."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesprogramm für psychische Gesundheit an Schulen, mehr schulpsychologische Angebote sowie Prävention, frühe Hilfen und Resilienzförderung im Schulalltag.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Landesstrategie gegen Gewalt an Schulen, die Prävention, Intervention und Repression verbindet, mit klaren Regeln und konsequentem Handeln.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301,
+            2302
+          ],
+          "zitat": "Mit dem Gewaltbarometer hat die CDU-geführte Bildungsverwaltung erstmals eine belastbare Datengrundlage über Gewalt an Schulen geschaffen. Darauf aufbauend werden wir eine klare Strategie entwickeln, die Prävention, Intervention und Repression konsequent miteinander verbindet.",
+          "seite": 60
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Bildung (S. 46-53), Fundstellen S. 28, 48, 50, 60 und Sicherheitskapitel S. 35, 38 gelesen; keine Zusage, die an Klassenklima, Lehrerhandeln bei Mobbing oder Leistungsdruck ansetzt.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            28,
+            48,
+            50,
+            60
+          ],
+          "grund": "Schulsozialarbeit (S. 50) und multiprofessionelle Teams (S. 48) ohne Bezug zu Mobbing, Gewalt oder Konflikten (R2); Fortbildung S. 28 betrifft Fachhochschule, übrige Treffer Anlaufstellen/Fortbildung anderer Themen."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            50,
+            51,
+            52
+          ],
+          "grund": "Treffer zu Entlastung/Resilienz betreffen Strom, Wirtschaft, Gesundheitswesen; S. 51 will Leistungsanforderungen erhöhen statt Druck zu senken, S. 52 Resilienz nur als Erste-Hilfe-Kompetenz."
+        },
+        {
+          "ursache": 2301,
+          "seiten": [
+            35
+          ],
+          "grund": "Treffer 'Konsequenzen' betrifft Jugendstrafrecht, nicht Schule."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Bildung (S. 20-25), Kinder- und Jugendschutz (S. 31-32) und alle Fundstellen gelesen; keine Zusage zu Mobbing, Klassenklima, Lehrkräfteintervention oder Prüfungsdruck.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            8,
+            12,
+            21,
+            23,
+            24,
+            28
+          ],
+          "grund": "Treffer zu Entlastung betreffen Kommunen, Steuern, Eltern; S. 24 hält an Noten und zentralen Prüfungen fest; S. 28 psychische Gesundheit nur allgemein ohne Schulbezug."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            23,
+            22,
+            24
+          ],
+          "grund": "Schulsozialarbeit (S. 23) nur 'möglichst erhalten', ohne Nennung von Mobbing, Gewalt oder Konflikten (R2); Fortbildung nur zu Medienkompetenz bzw. Seiteneinsteigern."
+        },
+        {
+          "ursache": 2301,
+          "seiten": [
+            22,
+            73
+          ],
+          "grund": "Keine Zusage zu Klassenklima oder sozialem Lernen; S. 73 betrifft religiösen Extremismus."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Plattformbetreiber müssen illegale Inhalte entfernen; der Jugendschutz im Netz wird gestärkt, etwa durch Altersverifikation.",
+          "ursachen_ids": [
+            2303
+          ],
+          "zitat": "Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen, während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+          "seite": 45
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2301,
+          "seiten": [
+            27,
+            45,
+            54,
+            55
+          ],
+          "grund": "Fundstellen zu Ausgrenzung betreffen gesellschaftliche Diskriminierung, nicht Schulklima; Demokratiebildung in Schulen (S. 27) ohne Bezug zu Mobbing."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            28,
+            30,
+            37
+          ],
+          "grund": "Anlaufstellen betreffen Apotheken und Sozialleistungen; Schutzkonzepte (S. 28) richten sich gegen Gewalt an Kindern in Einrichtungen, nicht gegen Mobbing unter Schülern."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            5,
+            7,
+            27,
+            30,
+            31
+          ],
+          "grund": "Entlastung/Resilienz bezogen auf Steuern, Pflege, Wirtschaft; Beratungsangebote für psychisch belastete junge Menschen (S. 30) ohne Schulbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Jede Schule bekommt ein Anti-Mobbing-Team.",
+          "ursachen_ids": [
+            2302
+          ],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "Mobbing, Diskriminierung und gruppenfeindliches Verhalten müssen wir erkennen und bekämpfen. Jede Schule soll künftig ein Anti-Mobbing-Team haben.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Multiprofessionelle Teams an Schulen ausbauen, mit mehr Stellen für Schulsozialarbeit und Schulpsychologie.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Mobbing, Diskriminierung und gruppenfeindliches Verhalten müssen wir erkennen und bekämpfen. […] Wir setzen uns darüber hinaus für den Ausbau multiprofessioneller Teams ein, z.B. durch mehr Stellen für Schulsozialarbeiter*innen, Schulpsycholog*innen, pädagogischen Unterrichtshilfen sowie Erzieher*innen.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Unabhängige Beschwerdestelle für Schulen und Kitas beim Parlament.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Eine unabhängige Beschwerdestelle für Schulen und Kitas siedeln wir beim Parlament an",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Wöchentlicher Klassenrat und Schülervertretungen für Konfliktlösung stärken.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir stärken Schüler*innenvertretungen und den wöchentlichen Klassenrat als Instrumente für Partizipation, demokratische Praxis und Konfliktlösung.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Wahlpflichtfach Empathie einführen.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Empathie, Mitgefühl und die Fähigkeit zum Kompromiss wollen wir gezielt fördern. Dafür führen wir in einem Wahlpflichtfach das Thema Empathie ein.",
+          "seite": 41
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            13,
+            34,
+            42
+          ],
+          "grund": "Treffer betreffen Unternehmen, Pflege, Lehrkräfte-Entlastung (Unterrichtsverpflichtung) und allgemeine psychische Gesundheit; keine Zusage zu Leistungs- oder Prüfungsdruck von Schülern."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung weiter unterstützen",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir wollen Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung sowie Angebote zur Stärkung psychischer Gesundheit junger Menschen weiter unterstützen .",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Leistungsbewertung reformieren, lernförderliche und prozessorientierte Rückmeldungen in den Mittelpunkt stellen",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Wir wollen die Leistungsbewertung reformieren und damit lernförderliche und prozessorientierte Leistungsrückmeldungen in den Mittelpunkt stellen.",
+          "seite": 68
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            37,
+            66,
+            67,
+            68
+          ],
+          "grund": "Schulsozialarbeit (S. 37) und multiprofessionelle Teams (S. 67) ohne Bezug zu Mobbing, Gewalt oder Konflikten; Fortbildung (S. 66, 68) zu Demokratiebildung, Heterogenität, Digitalem; keine Zusage zu Eingreifen bei Mobbing oder Beschwerdewegen."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Ausbildung zur Beratungslehrkraft wird neu aufgelegt.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2302
+          ],
+          "zitat": "Die Qualifizierung zu Beratungslehrkräften wird neu gestartet.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Schulen und andere Einrichtungen müssen verbindlich Schutzkonzepte gegen Gewalt und Diskriminierung entwickeln; Fachkräfte werden verbindlich geschult.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301,
+            2302
+          ],
+          "zitat": "Einrichtungen der Jugendhilfe, Schulen, Einrichtungen der Eingliederungshilfe, der Geflüchtetenhilfe sowie des Gesundheits- und Pflegebereichs sollen verpflichtend Schutzkonzepte entwickeln und umsetzen.",
+          "seite": 32
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mental Health Coaches mit Gruppenangeboten an weiterführenden Schulen als Anlaufstellen für psychische Belastung ausbauen, Schwerpunkt auf Schulen mit besonderen Bedarfen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2302,
+            2304
+          ],
+          "zitat": "Mit den Mental Health Coaches und ihren Gruppenangeboten an weiterführenden Schulen konnten wichtige Anlaufstellen geschaffen werden, die wir ausbauen wollen.",
+          "seite": 85
+        },
+        {
+          "beschreibung": "Kinder und Jugendliche besser vor Risiken exzessiver Social-Media-Nutzung schützen, manipulative Algorithmen strenger regulieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2303
+          ],
+          "zitat": "Wir wollen Kinder und Jugendliche vor den psychischen und sozialen Risiken der exzessiven Nutzung sozialer Medien besser schützen.",
+          "seite": 85
+        },
+        {
+          "beschreibung": "Diskriminierungssensible Fortbildungen in der Lehrkräfteausbildung.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2302,
+            2301
+          ],
+          "zitat": "Um die Chancen für alle Kinder von Anfang an gleich zu gestalten, setzen wir uns für diskriminierungssensible Fortbildungen in der Kindertagespflege und Lehrer*innenausbildung ein.",
+          "seite": 76
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            77,
+            85,
+            76,
+            79
+          ],
+          "grund": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie (S. 77) nennen weder Mobbing, Gewalt noch Konflikte (R2); übrige Treffer (Anlaufstellen, Fortbildung) betreffen Berufsagenturen, Polizei, Kultur u. a."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            81,
+            84,
+            85,
+            91
+          ],
+          "grund": "Treffer zu Entlastung betreffen Familien, Pflege; Resilienz betrifft Wirtschaft, Rechtsstaat; nichts zu Leistungs- oder Prüfungsdruck in der Schule."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Unabhängige Beschwerdestelle gegen Diskriminierung an Schulen unter dem Dach der Ombudsstelle des Landesantidiskriminierungsgesetzes.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Unter dem Dach der LADG-Ombudsstelle wird eine unabhängige Beschwerdestelle gegen Diskriminierung an Schulen eingerichtet.",
+          "seite": 136
+        },
+        {
+          "beschreibung": "Soziales Lernen an allen Schulen verankern, indem Schulen nach dem Vorbild preisgekrönter Schulen fortentwickelt werden.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir Grüne wollen die Erkenntnisse und Erfahrungen der preisgekrönten Schulen nutzen, um alle Schulen so fortzuentwickeln, dass in ihnen nicht nur wichtige Grundlagen wie Lesen, Schreiben und Rechnen, sondern auch Bildung für nachhaltige Entwicklung, soziales Lernen und die Zukunftskompetenzen allen Kindern erfolgreich vermittelt werden.",
+          "seite": 187
+        },
+        {
+          "beschreibung": "Projekte gegen Queerfeindlichkeit, Rassismus und Antisemitismus an Schulen ausbauen und fest etablieren, um Akzeptanz und Respekt unter Schülerinnen und Schülern zu fördern.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir halten diese Projekte auch im Sinne der Prävention für zentral, um Akzeptanz, Diskriminierungssensibilität und Respekt unter Schüler*innen zu befördern, und werden sie weiter ausbauen und fest als Angebote an den Berliner Schulen etablieren.",
+          "seite": 193
+        },
+        {
+          "beschreibung": "Übergang auf die Oberschule reformieren, damit Kinder der Klassen 4 bis 6 mit weniger Druck zur Schule gehen.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Den Übergang auf die Oberschule werden wir reformieren und gerechter gestalten, sodass Schüler*innen der 4., 5. und 6. Klassen mit weniger Druck zur Schule gehen können.",
+          "seite": 188
+        },
+        {
+          "beschreibung": "Verlässliche Betreuung bis 14:30 Uhr mit professioneller Begleitung, sodass keine Hausaufgaben zu Hause nötig sind und Hausaufgabenstress entfällt.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Wir Grüne verlängern die Zeiten der verlässlichen Betreuung auch für Kinder ohne Hortvertrag in der Grundschule um mindestens eine Stunde auf 14:30 Uhr. In dieser Zeit sollen Kinder Gelerntes mit professioneller Begleitung vertiefen können, sodass keine weiteren Aufgaben zu Hause erledigt werden müssen.",
+          "seite": 191
+        }
+      ],
+      "nicht_erfasst": []
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 6 Bildung (S. 40-44, bes. 6.2 Lehrkräfte stärken und 6.4 Mitbestimmung/gesundes Lernklima) sowie S. 60 gelesen; keine Zusage, die an Klassenklima, Eingreifen bei Mobbing oder Leistungsdruck ansetzt.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            40,
+            42,
+            60,
+            87,
+            89,
+            84
+          ],
+          "grund": "Multiprofessionelle Teams mit Schulsozialarbeit/Schulpsychologie und Schulsozialarbeit (S. 40, 42, 60) nennen weder Mobbing, Gewalt noch Konflikte (R2); Fortbildungen S. 84 betreffen Kinderschutz allgemein; Anlaufstellen S. 87/89 betreffen Queer/Hassverbrechen, nicht Schule."
+        },
+        {
+          "ursache": 2301,
+          "seiten": [
+            44,
+            65,
+            86
+          ],
+          "grund": "Nur allgemeine Mitbestimmung und Demokratiebildung; Ausgrenzung S. 65/86 nicht schulbezogen."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            43,
+            44,
+            58,
+            64
+          ],
+          "grund": "Psychosoziale Beratung/mentale Gesundheit ohne Bezug zu Leistungs- oder Prüfungsdruck; Entlastung S. 58/64 nicht schulbezogen."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesaktionsprogramm gegen Mobbing mit Schulklima der Kooperation im Schulgesetz, in Lehrerbildung und Unterricht, Aktionstagen und jährlichem Anti-Mobbing-Tag.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir möchten ein Landesaktionsprogramm gegen Mobbing etablieren. […] Dazu braucht es eine starke Schulsozialarbeit ebenso wie ein Schulklima, das auf Kooperation und Miteinander setzt. Das wollen wir im Schulgesetz verankern, in die Curricula von Studium und Fortbildung aufnehmen und im Sozialkundeunterricht vermitteln.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Unabhängige landesweite Ombudsstelle für Diskriminierung und Übergriffe an Schulen mit anonymer Meldung und Beratung.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Wir setzen für Schulen eine unabhängige landesweite Ombudsstelle für Diskriminierung und Übergriffe jeglicher Art, verbal und körperlich ein, an die sich Schüler*innen, Eltern und Lehrkräfte zur (anonymen) Meldung von Vorfällen und zur (anonymen) Beratung im Umgang mit diesen wenden können.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Verbindliche regelmäßige Fortbildungen für Lehrkräfte zu Diskriminierung und Übergriffen.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Gleichzeitig wollen wir verbindliche regelmäßige Fortbildungen von Lehrer*innen im Bereich der Diskriminierung, um sie zu sensibilisieren und um ihnen wirksame Werkzeuge im Umgang mit Diskriminierung und Übergriffen an die Hand zu geben.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Klassenräte und Schülerparlamente als zusätzliche Gremien der Mitbestimmung an Schulen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "Um echte Mitbestimmung zu gewährleisten, fordern wir neben Schüler*innenvertretungen auch die Einführung weiterer Gremien wie Klassenräte und Schüler*innenparlamente.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Flexible Schuleingangsphase stärken, damit Kinder ohne Leistungsdruck durch Sitzenbleiben Zeit zur Entwicklung haben.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Zusätzlich setzen wir uns für die Stärkung der flexiblen Schuleingangsphase ein. […] So bekommt jedes Kind die nötige Zeit, sich zu entwickeln, ohne Stigmatisierung und Leistungsdruck durch Sitzenbleiben zu erfahren.",
+          "seite": 60
+        },
+        {
+          "beschreibung": "Schulsport inhaltlich erweitern mit Fokus auf Gesundheitsprävention und Freude an Bewegung statt Leistung und Noten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2304
+          ],
+          "zitat": "Wir wollen eine inhaltliche Erweiterung des Schulsports mit einem neuen Fokus auf Gesundheitsprävention und Freude an Bewegung einführen.",
+          "seite": 56
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Medienkompetenz soll in den modernisierten Lehrplänen mehr Raum erhalten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2303
+          ],
+          "zitat": "Zugleich wollen wir die Lehrpläne modernisieren : Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz .",
+          "seite": 9
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2301,
+          "seiten": [
+            9
+          ],
+          "grund": "Nur Antisemitismus-/Menschenfeindlichkeit im Unterricht, kein Bezug zu Mobbing oder Klassenklima; keine Treffer."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            9,
+            33
+          ],
+          "grund": "Aus- und Fortbildung der Lehrkräfte ohne Bezug zu Mobbing; S. 33 Anlaufstelle meint Hausärzte."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            7,
+            35,
+            9
+          ],
+          "grund": "Treffer zu Entlastung betreffen Kita-Personal, Pflege; Notenpflicht ab Klasse 3 ist keine Entlastung; psychische Gesundheit (S. 33) ohne Schulbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Präventive Anti-Gewalt-Trainings im Schulunterricht ausbauen und Polizei, Schulen und Jugendhilfe besser verzahnen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden. Gleichzeitig ist eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe erforderlich.",
+          "seite": 68
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            8,
+            10,
+            12
+          ],
+          "grund": "Verpflichtende Lehrkräftefortbildung (S. 10) und multiprofessionelle Teams (S. 8) nennen weder Mobbing noch Gewalt oder Konflikte; Medienkompetenz/Cybermobbing (S. 12) gehört zu 2303."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            8,
+            11,
+            20,
+            21
+          ],
+          "grund": "Treffer zu Entlastung betreffen Bürokratie, Haushalt; G9-Option (S. 11) nennt keinen Leistungs- oder Prüfungsdruck."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Prävention von Mobbing und Cybermobbing stärken; Lehrkräfte durch Aus- und Fortbildung für Handlungssicherheit qualifizieren",
+          "ursachen_ids": [
+            2301,
+            2302
+          ],
+          "zitat": "Deshalb stärken wir die Prävention von Mobbing, Cybermobbing, Gewalt und digitalen Konflikten sowie den Zugang zu bestehenden Unterstützungsangeboten. Lehrkräfteaus- und -fortbildung sollen dafür systematisch qualifizieren.",
+          "seite": 87
+        },
+        {
+          "beschreibung": "Schulordnungen auf klare Regeln konzentrieren; Mobbing mit abgestuften, verbindlichen Reaktionswegen regeln",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] die Schulordnungen auf wenige klare und rechtssichere Regeln konzentrieren. Gewalt, Mobbing, Bedrohungen und das Mitführen von Waffen müssen darin eindeutig geregelt und mit abgestuften, verbindlichen Reaktionswegen hinterlegt werden.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Jede Schule erhält eine Kraft für Schulsozialarbeit zur Lösung sozialer Konflikte",
+          "ursachen_ids": [
+            2302
+          ],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "gewährleisten, dass jede Schule eine Kraft für Schulsozialarbeit als pädagogische Unterstützung und Beratung im Haus hat, um komplexe und schwierige soziale Konflikte lösen zu können.",
+          "seite": 97
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            101,
+            115
+          ],
+          "grund": "Psychische Gesundheit und Schulpsychologie ohne Bezug zu Leistungs- oder Prüfungsdruck; Treffer zu Entlastung betreffen Bürokratie, Pflege, Ehrenamt."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Bildung (S. 24-32) und Fundstellen S. 28, 30 gelesen; nichts zu Mobbing, Klassenklima, Beschwerdewegen, Prüfungs- oder Leistungsdruck.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            28,
+            30,
+            32,
+            11,
+            12,
+            36,
+            44,
+            53,
+            60,
+            63,
+            65,
+            67
+          ],
+          "grund": "Treffer „Entlastung“ betreffen Wohnen, Bürokratie, Haushalt, Ärzte, Rettungsdienst, Pflege, Bahn; nur S. 28/30 betreffen Entlastung von Lehrkräften, nicht von Schülern. S. 32 psychische Gesundheit nur Studierende, allgemeines Leitbild."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            28,
+            29,
+            30,
+            16,
+            37,
+            59
+          ],
+          "grund": "Schulsozialarbeit/Schulpsychologie (S. 28) dienen der Entlastung von Lehrkräften ohne Nennung von Mobbing, Gewalt oder Konflikten (R2); Fortbildung S. 30 betrifft Seiteneinsteiger/Lehrkräftemangel; übrige Treffer in anderem Zusammenhang."
+        },
+        {
+          "ursache": 2301,
+          "seiten": [
+            26,
+            28
+          ],
+          "grund": "Keine Treffer; Kapitel Bildung gelesen, keine Zusage zu Klassenklima, sozialem Lernen oder Prävention."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Rechtliche Sicherheit und Disziplinarrechte von Lehrkräften und Schulen sollen gestärkt werden.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301,
+            2302
+          ],
+          "zitat": "Um den Auftrag der Schule gerecht zu werden, bedarf es einer Stärkung der rechtlichen Sicherheit und der Disziplinarrechte.",
+          "seite": 162
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            159,
+            59,
+            148
+          ],
+          "grund": "Leistungsorientierung und höhere Standards, keine Entlastung; Treffer zu Entlastung betreffen Steuern und Eltern."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Übergriffiges Verhalten gegenüber Mitschülern, auch unterhalb der Strafbarkeitsgrenze, soll an Schulen konsequent geahndet werden (Null-Toleranz bei Gewalt).",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Die AfD wird konsequente Maßnahmen gegen Gewalt an Schulen umsetzen. Auch übergriffiges Verhalten unterhalb der Strafbarkeitsgrenze gegenüber Mitschülern und Lehrern muss konsequent geahndet werden.",
+          "seite": 31
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            8,
+            28,
+            30,
+            32,
+            46,
+            54,
+            57,
+            71,
+            95,
+            98
+          ],
+          "grund": "Fundstellen zu „Entlastung“ betreffen Steuern, Energie, Pflege, Haushalt oder Lehrerstunden an Brennpunktschulen, nicht Schülerdruck. Kapitel Schule & Bildung (S. 27–32) gelesen: Leistungsprinzip und Noten werden bekräftigt, keine Entlastungszusage für Schüler."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            31,
+            32,
+            50
+          ],
+          "grund": "Keine Zusage zu Handeln, Qualifikation von Lehrkräften oder Beschwerdewegen bei Mobbing; „Fortbildung“ auf S. 50 betrifft Meister-BAföG."
+        }
+      ],
+      "nicht_erfasst_hinweis": null
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Schulsozialarbeit wird Landesaufgabe, Zahl der Schulpsychologen wird dem Bedarf angepasst; Gewalt an Schulen soll unterbunden werden.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Gewalt- und Drogenprobleme werden wir durch konsequentes Handeln unterbinden; Schulsozialarbeit wird als Landesaufgabe etabliert und die Zahl der Schulpsychologen dem gestiegenen Bedarf angepasst.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Sanktionsmöglichkeiten der Lehrkräfte gesetzlich stärken und bei Gewalt schneller Schulverweise aussprechen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "Dafür werden wir die Sanktionsmöglichkeiten der Lehrkräfte gesetzlich stärken und bei Gewalt- und Drogendelikten deutlich schneller von Schulverweisen Gebrauch machen.",
+          "seite": 32
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            12,
+            19,
+            22,
+            54
+          ],
+          "grund": "Fundstellen zu Entlastung betreffen Steuern, Familien, Wirtschaft; kein Bezug zu Leistungs- oder Prüfungsdruck in der Schule. Kapitel Bildungsland MV (S. 25-32) gelesen."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Schulische Ordnungsmaßnahmen so überarbeiten, dass Gewalttäter schneller der Schule verwiesen und bei Wiederholung an eine Spezialschule überwiesen werden können.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "Für die noch nicht strafmündigen Schüler werden wir die Verordnung über schulische Ordnungsmaßnahmen vom 6. Februar 2012 und den Erlass über Erziehungsmitteln in der Schule vom 26. Mai 1994 dergestalt überarbeiten, dass Gewalttäter schneller der Schule verwiesen und im Wiederholungsfall oder in besonders schweren Fällen an eine Spezialschule für Gewalttäter überwiesen werden können.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Bei Bedarf einen privaten Wachdienst unter dem Schulleiter einrichten, der auf dem Schulhof gegen Gewalt unter Schülern vorgeht.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2302
+          ],
+          "zitat": "Deshalb braucht es einen dem Schulleiter unterstehenden privaten Wachdienst, der auf dem Schulhof für Recht und Ordnung sorgt und potenzielle Gewalttäter in ihre Schranken weist. Wir werden bei Bedarf einen solchen Wachdienst einrichten.",
+          "seite": 88
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            15,
+            83,
+            112,
+            120,
+            121,
+            181,
+            228,
+            237,
+            245
+          ],
+          "grund": "Treffer 'Entlastung' betreffen Familien, Haushalt, Strafvollzug, Landwirtschaft, Pflege; S. 83 nur Entlastung der Lehrer (Lehrkräftemangel, gehört zu Schule), nichts zu Leistungs- oder Prüfungsdruck von Schülern."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 10 „Gute Bildung“ (S. 38–40) und Fundstellen S. 19, 44, 47, 54, 58 gelesen; keine Zusage zu Mobbing, Cybermobbing, Klassenklima, Lehrkräfte-Intervention oder Prüfungs-/Leistungsdruck.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            6,
+            15,
+            16,
+            18,
+            20,
+            26,
+            27,
+            32,
+            38,
+            39
+          ],
+          "grund": "Die 10 Treffer für „Entlastung“ betreffen Steuern, Energie, Pflege, Arbeitsbedingungen; im Schulkapitel nichts zu Leistungs- oder Prüfungsdruck (Hausaufgaben-Abschaffung begründet mit sozialer Ungleichheit)."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Unabhängige Beschwerdestelle für Schülerinnen, Schüler und Eltern bei Mobbing und Diskriminierung, mit Akteneinsichts- und Durchgriffsrechten.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Die Linke setzt sich konsequent gegen [...] Mobbing und Gewalt an Berliner Schulen ein. Dafür braucht es eine abgestimmte und funktionsfähige Antidiskriminierungsarchitektur. Kernstück ist eine unabhängige Beschwerdestelle, angedockt an die Landesantidiskriminierungsstelle.",
+          "seite": 162
+        },
+        {
+          "beschreibung": "Stelle und Einfluss der Mobbingbeauftragten der Bildungsverwaltung stärken; Beschwerdestrukturen auf Einzelschulebene etablieren.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Zudem wollen wir die Stelle und den Einfluss des*der Antidiskriminierungs- sowie Mobbingbeauftragten der Bildungsverwaltung stärken.",
+          "seite": 162
+        },
+        {
+          "beschreibung": "Angebote der Mobbing- und Gewaltprävention für Schulen absichern und verstetigen.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Außerschulische Bildungs- und Empowermentangebote in den Bereichen Antidiskriminierung, antirassistische und inklusionssensible Bildung, Antisemitismusprävention, queere Bildung, Armutssensibilisierung, Mobbing- und Gewaltprävention, die die Berliner Schulen durch Projektarbeit, Fortbildungen und bei der Schulentwicklung unterstützen, wollen wir absichern und verstetigen.",
+          "seite": 163
+        },
+        {
+          "beschreibung": "Schulsozialarbeit strukturell stärken, um Ausgrenzung und Gewalt frühzeitig entgegenzuwirken.",
+          "ursachen_ids": [
+            2301,
+            2302
+          ],
+          "zitat": "Darüber hinaus müssen diskriminierungskritische Jugendarbeit und Schulsozialarbeit strukturell gestärkt werden, um Rassismus, Ausgrenzung und digitaler Gewalt frühzeitig entgegenzuwirken.",
+          "seite": 281
+        },
+        {
+          "beschreibung": "Ziffernnoten bis Klasse 9 durch Rückmeldungen ersetzen, um Leistungsdruck zu mindern.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Ziffernnoten wollen wir an allen Schularten bis einschließlich Klasse 9 durch mündliche und schriftliche Rückmeldungen zum Leistungsstand ersetzen. [...] Das Ziel ist es, den zunehmend belastenden Leistungsdruck zu mindern und die Eigenmotivation von Schüler*innen zu fördern.",
+          "seite": 168
+        },
+        {
+          "beschreibung": "Probeunterricht beim Übergang auf weiterführende Schulen abschaffen, Übergang weniger leistungsbezogen entscheiden.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Übergänge stellen eine sensible Phase in der Bildungsbiografie von Kindern und Jugendlichen dar, die mit vielen Ängsten und Unsicherheiten, angesichts fehlender Schulplätze aber auch mit enormem Leistungsdruck, Stress und viel Frustration verbunden sind. [...] Den Probeunterricht wollen wir abschaffen.",
+          "seite": 161
+        },
+        {
+          "beschreibung": "Psychische Gesundheit im Unterricht und in Projektwochen verankern, um Resilienz zu fördern.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Psychische Gesundheit soll durch Unterricht oder Projektwochen fester Bestandteil der schulischen Bildung werden, um Kinder und Jugendliche über Erkrankungen, Versorgung und Therapieformen aufzuklären, Resilienz zu fördern und Stigmatisierung zu verringern.",
+          "seite": 137
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Klassenleiterstunden verbindlich machen und als Klassenrat gemeinsam mit allen Schülern gestalten; Handreichungen für Lehrkräfte.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Klassenleiterstunden verpflichtend machen und basisdemokratisch gemeinsam mit allen Schüler:innen in Form eines Klassenrates gestalten. Hierfür soll das Bildungsministerium Handreichungen für Lehrkräfte entwickeln.",
+          "seite": 5
+        },
+        {
+          "beschreibung": "Zahl der Klausuren und Tests pro Woche auf höchstens zwei begrenzen.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Klare Regelung zur Leistungskontrolle. Die aktuellen „Soll“- Bestimmungen sollen so angepasst werden, dass maximal zwei Klausuren oder Test die Woche geschrieben werden dürfen.",
+          "seite": 6
+        },
+        {
+          "beschreibung": "Resilienzförderung und Lerntrainings in die Rahmenpläne aufnehmen.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Eingliederung von Resilienzförderung und Lerntrainings in die Rahmenpläne",
+          "seite": 6
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            5,
+            8,
+            11,
+            20,
+            24,
+            25
+          ],
+          "grund": "Schulsozialarbeit, Schulpsychologie und Fortbildung werden zugesagt, aber ohne Nennung von Mobbing, Gewalt oder Konflikten im Zitat (R2); Fortbildung nur zu Medienkompetenz bzw. Polizei/Justiz."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Bewertung des Verhaltens durch Kopfnoten abschaffen und durch individuelle Rückmeldungen ersetzen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2304
+          ],
+          "zitat": "Die Bewertung des Verhaltens durch „Kopfnoten“ werden wir aufheben und durch individuelle Rückmeldungen ersetzen.",
+          "seite": 30
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2301,
+          "seiten": [
+            11,
+            21,
+            27,
+            28,
+            70,
+            97
+          ],
+          "grund": "Treffer betreffen Ausgrenzung in Armut/Integration, Konsequenzen allgemein; kein Programm zu Klassenklima oder sozialem Lernen gegen Mobbing."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            27,
+            28,
+            34,
+            59,
+            60
+          ],
+          "grund": "Schulsozialarbeit (Personalschlüssel 1:150) und Fortbildungen nennen weder Mobbing, Gewalt noch Konflikte (R2), daher nicht zugeordnet; übrige Treffer (Polizei, Medizin, Kommunen) anderer Zusammenhang."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            30,
+            32,
+            46,
+            56
+          ],
+          "grund": "Treffer zu Entlastung betreffen Familien, Pflege; nur die Kopfnoten-Abschaffung ist als Grenzfall offen erfasst."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Gesetz zur Begrenzung von Social Media für Kinder nach australischem Vorbild",
+          "ursachen_ids": [
+            2303
+          ],
+          "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+          "seite": 24
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2301,
+          "seiten": [
+            25,
+            31
+          ],
+          "grund": "S. 25: Schutzräume ohne Mobbing nur als Ziel; Unterstützungsteams als 'kann' formuliert, keine Zusage. S. 31: Lagebeschreibung zu Armut."
+        },
+        {
+          "ursache": 2302,
+          "seiten": [
+            25,
+            35
+          ],
+          "grund": "S. 25: Unterstützungsteams dienen der Entlastung von fachfremden Aufgaben, ohne Bezug zu Mobbing/Gewalt/Konflikten (R2). S. 35: Fortbildung betrifft Sicherheitsbehörden."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            24,
+            35
+          ],
+          "grund": "Notengebung als Standard ist keine Entlastung; S. 35 Treffer 'Entlastung' nicht schulbezogen."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Mehr Sozialarbeit an Schulen und flächendeckende Präventions- und Anti-Gewaltprogramme statt reiner Repression.",
+          "ursachen_ids": [
+            2301,
+            2302
+          ],
+          "zitat": "Wir setzen auf Prävention vor Repression. In die Schulen gehören mehr Sozalarbeiter. Es müssen flächendeckend Präventions- und Anti- Gewaltprogramme eingeführt werden.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Fortbildungsangebote für Lehrkräfte, Sozialarbeiter und Polizei gegen Cybermobbing ausbauen.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Cybermobbing und Online-Kriminalität unter Jugendlichen sagen wir den Kampf an. Dazu erweitern und verbessern wir Fortbildungsangebote für Lehrkräfte, Sozialarbeiter und die Polizei.",
+          "seite": 40
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            15,
+            16,
+            62
+          ],
+          "grund": "Schulnoten werden beibehalten, Lehrpläne entschlackt für Wiederholung und Förderung; keine Zusage zur Entlastung von Leistungs- oder Prüfungsdruck."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Schulen erhalten multiprofessionelle Teams mit Sozialarbeit, Gesundheitsförderung und Schulpsychologie, um psychischen Problemen und Gewalt vorzubeugen.",
+          "ursachen_ids": [
+            2302
+          ],
+          "ursachen_offen": [
+            2301
+          ],
+          "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Gewaltschutz, Prävention und soziales Lernen werden als feste Bestandteile schulischer Bildung ausgebaut.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Ausbau von Gewaltschutz, Prävention und sozialem Lernen als festen Bestandteilen schulischer Bildung.",
+          "seite": 46
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2304,
+          "seiten": [
+            46,
+            47,
+            48,
+            61,
+            63
+          ],
+          "grund": "Resilienz, kleine Klassen und Prävention zielen auf psychische Gesundheit allgemein; keine Zusage zu Leistungs- oder Prüfungsdruck oder Entlastung von Schülern."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesweiter Personalschlüssel für Schulsozialarbeit und Schulpsychologie, mindestens eine dauerhafte Sozialarbeiterstelle je Schule, Ende von Befristungen.",
+          "ursachen_ids": [
+            2301,
+            2302
+          ],
+          "zitat": "Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt. Jede Schule muss dauerhaft mindestens eine Schulsozialarbeiterstelle haben, Förderschulen benötigen angepasste Schlüssel.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Längeres gemeinsames Lernen bis zur 8. Klasse, um Überforderung und Leistungsdruck durch frühe Auslese zu verringern.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Der Druck, das Abitur als einzigen Weg zum Erfolg zu betrachten, belastet Familien und Kinder. Überforderung, Leistungsdruck, Nachhilfe und Schulabbrüche sind häufige Folgen. Das BSW ist deshalb für längeres gemeinsames Lernen bis zur 8. Klasse.",
+          "seite": 45
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Neutrale Schlichtungsstellen helfen bei Konflikten im Schulsystem.",
+          "ursachen_ids": [
+            2302
+          ],
+          "zitat": "Schlichtungsstellen: Neutrale Stellen helfen bei Konflikten im Schulsystem.",
+          "seite": 114
+        },
+        {
+          "beschreibung": "Sensibilisierungsprogramme und Mediation gegen Mobbing, vor allem zur Deeskalation von Gewalt in sozialen Medien.",
+          "ursachen_ids": [
+            2301
+          ],
+          "ursachen_offen": [
+            2303
+          ],
+          "zitat": "Bekämpfung von Mobbing: Es werden Sensibilisierungsprogramme und Mediationsmaßnahmen entwickelt, insbesondere zur Deeskalation von Gewalt in sozialen Medien.",
+          "seite": 132
+        },
+        {
+          "beschreibung": "Klassische Noten werden durch ganzheitliche, individuelle Leistungserfassung ersetzt.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Individuelle Leistungserfassung: Die klassische Notenvergabe wird durch eine ganzheitliche und individuelle Leistungserfassung ersetzt.",
+          "seite": 111
+        },
+        {
+          "beschreibung": "Resilienzförderung ab dem Kita-Alter, unterstützt durch Weiterbildungen für Lehr- und Fachkräfte.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Resilienzförderung: Maßnahmen zur Stärkung der Widerstandsfähigkeit beginnen bereits im Kita-Alter. Dies wird unterstützt durch Weiterbildungen für Lehr- und Fachkräfte.",
+          "seite": 132
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Empathie und sozial-emotionales Lernen werden fester Unterrichtsbestandteil, im Pflichtfach „Lebenskompetenz“ (zunächst an Pilotschulen), um Mobbing vorzubeugen.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Wir machen Empathie und sozial-emotionales Lernen zum festen Bestandteil des Unterrichts. Empathie stärkt Beziehungen und das Selbstwertgefühl, verbessert das Lernklima und beugt Mobbing effektiv vor.",
+          "seite": 48
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            46,
+            10,
+            36,
+            15
+          ],
+          "grund": "Fundstellen zu Anlaufstelle/Ansprechperson betreffen Verwaltung, Gründung, Gesundheit; Schulsozialarbeit (S. 36) nur Rückblick auf Kürzungen; multiprofessionelle Teams (S. 46) nennen weder Mobbing, Gewalt noch Konflikte (R2), Lehrkräftequalifizierung ohne Mobbingbezug."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            48,
+            47,
+            80,
+            83
+          ],
+          "grund": "Keine Zusage zu Leistungs- oder Prüfungsdruck; Leistungsrückmeldungen (S. 47) und Lebenskompetenz (S. 48) nennen keinen Druck; übrige Treffer betreffen Gesundheit, Pflege, Klima."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Schulen sollen soziale Kompetenzen und gegenseitiges Verständnis durch klassenübergreifende Projekte, Begegnungstage und verbindliche Beteiligung stärken.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Partizipative Schulkonzepte Stärkung von sozialen Kompetenzen, gegenseitigem Verständnis und demokratischer Teilhabe im Schulalltag durch lernstufenübergreifende Projekte, Begegnungstage und verbindliche Formen der Beteiligung.",
+          "seite": 11
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            6,
+            7,
+            8,
+            10,
+            12,
+            17,
+            18,
+            30,
+            32
+          ],
+          "grund": "Fortbildungen betreffen Medien-, Demokratie- und Antidiskriminierungsthemen, nicht Eingreifen bei Mobbing; Schulsozialarbeit/Schulpsychologie (S. 10) ohne Nennung von Mobbing, Gewalt oder Konflikten; Anlaufstellen S. 30/32 sind Gesundheit."
+        },
+        {
+          "ursache": 2304,
+          "seiten": [
+            5,
+            11,
+            12
+          ],
+          "grund": "S. 5 nur Problemschilderung; Abschaffung der Kopfnoten (S. 11) und Entbürokratisierung (S. 12) nicht erkennbar auf Leistungs-/Prüfungsdruck bezogen."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Verbindliche Zeit für Beziehungsarbeit und Klassenentwicklung sowie Unterrichtsformen, die Kooperation statt Konkurrenz fördern.",
+          "ursachen_ids": [
+            2301
+          ],
+          "zitat": "Unsere Lösung – Konkrete Maßnahmen: […] verbindliche Zeit für Beziehungsarbeit und Klassenentwicklung […] Unterrichtsformen, die Kooperation statt Konkurrenz fördern",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Klare Konzepte für Stressprävention und Lernbalance an Schulen.",
+          "ursachen_ids": [
+            2304
+          ],
+          "zitat": "Unsere Lösung – Konkrete Maßnahmen: […] klare Konzepte für Stressprävention und Lernbalance",
+          "seite": 28
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2302,
+          "seiten": [
+            19,
+            20,
+            22,
+            28,
+            30,
+            123,
+            124,
+            128,
+            131
+          ],
+          "grund": "Schulsozialarbeit/Schulpsychologie und Fortbildungen werden ohne Bezug zu Mobbing, Gewalt oder Konflikten genannt (R2); Fortbildungen betreffen Medien, Antidiskriminierung allgemein; übrige Treffer fachfremd."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2301": {
+      "Klassenklima und soziales Lernen stärken": [
+        "mobbingprävention",
+        "antimobbing",
+        "klassenklima",
+        "soziales lernen",
+        "klassenrat",
+        "streitschlichter",
+        "schulklima",
+        "ausgrenzung"
+      ],
+      "Regeln und Konsequenzen durchsetzen": [
+        "verhaltensregeln",
+        "konsequenzen",
+        "schulordnung",
+        "ordnungsmaßnahmen",
+        "ordnungsmaßnahme",
+        "schulverweis"
+      ]
+    },
+    "2302": {
+      "Unterstützung durch Fachkräfte und Beschwerdewege": [
+        "schulsozialarbeit",
+        "schulpsycholog",
+        "vertrauenslehrer",
+        "beratungslehrer",
+        "anlaufstelle",
+        "beschwerdestelle",
+        "ansprechperson"
+      ],
+      "Fortbildung und Handlungssicherheit der Lehrkräfte": [
+        "fortbildung",
+        "lehrkräftefortbildung",
+        "interventionskompetenz",
+        "umgang mit mobbing"
+      ]
+    },
+    "2303": {
+      "Plattformen und Jugendschutz im Netz": [
+        "cybermobbing",
+        "jugendmedienschutz",
+        "plattformverantwortung",
+        "jugendschutz im netz",
+        "altersgrenze soziale medien"
+      ],
+      "Medienkompetenz und Nutzungsregeln in der Schule": [
+        "medienkompetenz",
+        "handyverbot",
+        "handynutzung",
+        "digitale bildung",
+        "medienbildung"
+      ]
+    },
+    "2304": {
+      "Belastung reduzieren": [
+        "leistungsdruck",
+        "prüfungsdruck",
+        "notendruck",
+        "entlastung",
+        "weniger prüfungen",
+        "stress in der schule",
+        "schulstress"
+      ],
+      "Befähigung und Stressbewältigung": [
+        "resilienz",
+        "stressbewältigung",
+        "lernstrategien",
+        "psychische gesundheit",
+        "schulpsychologische beratung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "a8caec8a888da644eb110facfe19485c8bf536560f39c8ae5f19402c75d6d448",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 0,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 1,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 3,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 1,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 0,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 1
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 8,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 5,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 1,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 3,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 2,
+              "schulpsycholog": 2,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 11,
+              "beschwerdestelle": 0,
+              "ansprechperson": 1
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 2,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 8,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 7,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 4,
+              "schulpsycholog": 3,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 9,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 5,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 6,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 9,
+              "stressbewältigung": 0,
+              "lernstrategien": 1,
+              "psychische gesundheit": 1,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 1
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 1,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 2,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 1,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 4,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 10,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 3,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 1,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 3
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 0,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 4,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 0,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 1,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 4,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 3,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 1,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 3
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 2,
+              "schulpsycholog": 2,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 8,
+              "beschwerdestelle": 3,
+              "ansprechperson": 1
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 6,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 3,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 5,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 4
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 9,
+              "schulpsycholog": 4,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 7,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 7,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 15,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 11,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 6,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 3,
+              "beschwerdestelle": 0,
+              "ansprechperson": 3
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 7,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 4,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 1,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 1,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 2
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 7,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 7,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 3,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 2
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 4,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 7,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 1,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 3
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 1,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 3,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 9,
+              "beschwerdestelle": 4,
+              "ansprechperson": 2
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 19,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 11,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 1
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 20,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 5,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 3
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 3,
+              "schulpsycholog": 3,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 7,
+              "beschwerdestelle": 0,
+              "ansprechperson": 3
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 4,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 3,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 6,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 1,
+              "ausgrenzung": 2
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 11,
+              "schulpsycholog": 2,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 8,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 9,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 3,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 3,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 4,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 0,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 1,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 3,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 1,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 3,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 1,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 2,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 5,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 5,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 1,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 4,
+              "schulordnung": 1,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 4,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 3,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 15,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 7,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 2,
+              "beschwerdestelle": 0,
+              "ansprechperson": 1
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 3,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 9,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 1,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 1
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 0,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 0,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 0,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 0,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 3,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 2
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 0,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 0,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 2,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 14,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 1
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 2,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 1,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 8,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 1,
+              "ordnungsmaßnahme": 1,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 1,
+              "beschwerdestelle": 3,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 3,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 10,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 3
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 2,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 2,
+              "beschwerdestelle": 1,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 0,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 1,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 10,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 1,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 7
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 4,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 1,
+              "ordnungsmaßnahme": 1,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 6,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 10,
+              "beschwerdestelle": 9,
+              "ansprechperson": 9
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 15,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 2,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 9,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 11,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 3,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 1,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 3
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 5,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 3,
+              "beschwerdestelle": 1,
+              "ansprechperson": 1
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 4,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 5,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 4,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 6
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 5,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 6,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 7,
+              "beschwerdestelle": 2,
+              "ansprechperson": 1
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 9,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 9,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 1,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 1
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 0,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 0,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 1,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 0,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 0,
+              "medienbildung": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 1,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 1,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 2
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 3,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 1,
+              "beschwerdestelle": 0,
+              "ansprechperson": 2
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 3,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 6,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 0,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 1,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 1,
+              "ausgrenzung": 5
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 4,
+              "schulpsycholog": 3,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 0,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 4,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 12,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 10,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 4,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 1,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 4
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 1,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 13,
+              "schulpsycholog": 6,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 2,
+              "beschwerdestelle": 0,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 4,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 1,
+              "prüfungsdruck": 2,
+              "notendruck": 0,
+              "entlastung": 16,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 2,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 4,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 1
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 0,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 13,
+              "beschwerdestelle": 2,
+              "ansprechperson": 2
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 7,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2303": {
+            "Plattformen und Jugendschutz im Netz": {
+              "cybermobbing": 0,
+              "jugendmedienschutz": 0,
+              "plattformverantwortung": 0,
+              "jugendschutz im netz": 0,
+              "altersgrenze soziale medien": 0
+            },
+            "Medienkompetenz und Nutzungsregeln in der Schule": {
+              "medienkompetenz": 2,
+              "handyverbot": 0,
+              "handynutzung": 0,
+              "digitale bildung": 3,
+              "medienbildung": 2
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 6,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 6,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 4,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 0
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 9,
+              "beschwerdestelle": 0,
+              "ansprechperson": 4
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 3,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 2,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 3,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 1
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 0,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 1,
+              "schulpsycholog": 1,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 2,
+              "beschwerdestelle": 1,
+              "ansprechperson": 0
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 11,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 1,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 3,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 4,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 0,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "2301": {
+            "Klassenklima und soziales Lernen stärken": {
+              "mobbingprävention": 0,
+              "antimobbing": 0,
+              "klassenklima": 0,
+              "soziales lernen": 0,
+              "klassenrat": 0,
+              "streitschlichter": 0,
+              "schulklima": 0,
+              "ausgrenzung": 1
+            },
+            "Regeln und Konsequenzen durchsetzen": {
+              "verhaltensregeln": 0,
+              "konsequenzen": 2,
+              "schulordnung": 0,
+              "ordnungsmaßnahmen": 0,
+              "ordnungsmaßnahme": 0,
+              "schulverweis": 0
+            }
+          },
+          "2302": {
+            "Unterstützung durch Fachkräfte und Beschwerdewege": {
+              "schulsozialarbeit": 4,
+              "schulpsycholog": 3,
+              "vertrauenslehrer": 0,
+              "beratungslehrer": 0,
+              "anlaufstelle": 8,
+              "beschwerdestelle": 0,
+              "ansprechperson": 1
+            },
+            "Fortbildung und Handlungssicherheit der Lehrkräfte": {
+              "fortbildung": 12,
+              "lehrkräftefortbildung": 0,
+              "interventionskompetenz": 0,
+              "umgang mit mobbing": 0
+            }
+          },
+          "2304": {
+            "Belastung reduzieren": {
+              "leistungsdruck": 0,
+              "prüfungsdruck": 0,
+              "notendruck": 0,
+              "entlastung": 16,
+              "weniger prüfungen": 0,
+              "stress in der schule": 0,
+              "schulstress": 0
+            },
+            "Befähigung und Stressbewältigung": {
+              "resilienz": 12,
+              "stressbewältigung": 0,
+              "lernstrategien": 0,
+              "psychische gesundheit": 2,
+              "schulpsychologische beratung": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}
