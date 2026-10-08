@@ -1,0 +1,67 @@
+{
+  "blind_pruefsumme": "50b430d0e365be01436fa4f3a93e442c639e9c9a686c60e30146dbbc5192380c",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Zuschuss oder steuerfreie Förderung des Führerscheins für Auszubildende und junge Beschäftigte (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet Auszubildende direkt und ist steuerrechtlich einfach umsetzbar; senkt aber nicht die Preise selbst, erreicht nur Geförderte und birgt Mitnahmeeffekte, wie Erfahrungen mit Führerscheinförderung in Frankreich zeigen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I2",
+      "name": "Reform der Fahrausbildung zur Kostensenkung: digitale Theorie, Simulatoren, weniger Vorgaben (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an Ausbildungsvorgaben an, die Preise und Prüfungserfolg prägen; der Bund regelt dies per Verordnung. Simulatoren decken laut Forschung viele Lernziele ab, Transfer in den Verkehr und Folgen für die Sicherheit sind aber nicht abschließend geklärt.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I3",
+      "name": "Begleitetes Fahren bzw. begleitetes Üben ab 16 Jahren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr begleitete Fahrpraxis senkt laut BASt-Evaluation das Unfallrisiko von Fahranfängern deutlich; Kosten und Durchfallquoten berührt sie nur am Rand. EU-Recht sieht begleitetes Fahren ab 17 vor, ab 16 ginge nur als Übungsphase vor der Prüfung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://trid.trb.org/View/940676"
+    }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I1", "ursachen": [3501] },
+    { "kennung": "M02", "instrument": "I2", "ursachen": [3501, 3502] },
+    { "kennung": "M03", "instrument": "I1", "ursachen": [3501] },
+    {
+      "kennung": "M04",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein Guthaben von 500 Euro lindert die Kosten für alle Jugendlichen, senkt aber nicht die Preise und ist auf mehrere Zwecke verteilt; jährliche Kosten von mehreren hundert Millionen Euro sind nicht gegenfinanziert.",
+        "evidenz": "offen"
+      },
+      "ursachen": [3501]
+    },
+    { "kennung": "M05", "instrument": "I3", "ursachen": [3502] },
+    { "kennung": "M06", "instrument": "I2", "ursachen": [3501, 3502] },
+    { "kennung": "M07", "instrument": "I3", "ursachen": [3502] },
+    { "kennung": "M08", "instrument": "I2", "ursachen": [3501, 3502] },
+    {
+      "kennung": "M09",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Mehr Prüfanbieter und Prüfer können Wartezeiten und dadurch nötige Zusatzstunden verringern; die Prüfgebühren sind aber staatlich festgesetzt, Kostenwirkung und Folgen für die Prüfqualität sind kaum untersucht, die Prüferausbildung braucht Zeit.",
+        "evidenz": "offen"
+      },
+      "ursachen": [3501]
+    }
+  ]
+}
+
+Hinweise:
+- Offene Ursachen: M02 und M08 zusätzlich 3501, M06 zusätzlich 3502 bestätigt. Alle drei beschreiben denselben Lösungsweg (Ausbildungsvorgaben ändern, um Kosten zu senken) und setzen damit an Ausbildungsanforderungen (3502) und am Preis der Fahrschule (3501) an; gleiche Ursachen für alle drei.
+- Alle vorgeschlagenen Ursachen bestätigt; keine Maßnahme ohne Ursache.
+- Schwierig: I3 (begleitetes Fahren ab 16). Die Sicherheitswirkung ist gut belegt (BASt/KBA-Evaluation BF17), das Thema zielt aber auf Kosten und Durchfallquoten; daher Wirksamkeit 1 trotz „belegt“. EU-Richtlinie 2025/2205 harmonisiert begleitetes Fahren ab 17; ab 16 nur als Übungsphase vor der Prüfung (wie in Österreich) denkbar, daher Umsetzbarkeit 2.
+- Schwierig: M09. Das Ziel nennt planbare Abläufe, Wartezeiten sind aber keine eigene Ursache; der Bezug zu 3501 (Wettbewerb) ist indirekt, daher Wirksamkeit 1. Man könnte auch 2 vertreten.
+- I2 ohne Studienlink: Der BASt-Bericht zu Fahrsimulatoren war nicht abrufbar (Zugriffssperre), die Aussagen dazu stammen aus Berichten über die Studie; evidenz daher „gemischt“ ohne beleg_studie_url.
+- I1 und M04 getrennt: M04 hat einen festen Betrag für alle Jugendlichen mit ungeklärter Finanzierung (Umsetzbarkeit 2), I1 ist eine steuerliche bzw. unbestimmte Förderung (Umsetzbarkeit 3).

@@ -1,0 +1,55 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Förderprogramm für kleine und mittlere Clubs und Musikspielstätten; feste Spielstätten erhalten Basisförderung für Sanierung, Betrieb, Technik, Lärm- und Brandschutz",
+      "ursachen_ids": [3203, 3204, 3202],
+      "zitat": "Wir legen ein Förderprogramm mit klaren Richtlinien auf, um kleine und mittlere Clubs sowie Musikspielstätten zu unterstützen. Insbesondere feste Spielstätten sollen eine Basisförderung für Sanierungs- und Betriebskosten erhalten. Damit helfen wir Betreiber*innen bei notwendigen Investitionen in Technik, Lärm- und Brandschutz und sichern den laufenden Betrieb.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Landesprogramm Soziokultur mit mindestens 500.000 Euro zur verlässlichen Förderung soziokultureller Zentren",
+      "ursachen_ids": [3203],
+      "zitat": "Zudem engagieren wir uns für die verlässliche Förderung der soziokulturellen Zentren im Land. Zu diesem Zweck werden wir ein Landesprogramm Soziokultur einrichten, das mit mindestens 500.000 Euro ausgestattet wird.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Förderprogramm für den barrierefreien Umbau von Kultureinrichtungen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3204],
+      "zitat": "Deswegen kämpfen wir für ein Förderprogramm, welches den barrierefreien Umbau von Kultureinrichtungen unterstützt, genauso wie für die Einführung des kostenlosen Museumssonntags einmal im Monat, an dem man ohne Eintritt Museen besuchen kann.",
+      "seite": 69
+    },
+    {
+      "beschreibung": "Stillgelegte Industrieorte erhalten, erschließen und kulturell nutzen, etwa als Kulturzentren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201],
+      "zitat": "Denn stillgelegte Industrieorte erzählen unsere Geschichte. Wir fördern ihre Erhaltung, Erschließung und kulturelle Nutzung, etwa als Museen, Lernorte oder Kulturzentren.",
+      "seite": 71
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3201, "seiten": [70, 91, 92, 93, 98], "grund": "Kein Schutz von Flächen oder Gewerbemieten für Kulturorte; Anerkennung der Clubkultur als Kulturgut ohne Instrument; Zwischennutzung und Leerstand (S. 93, 98) ohne Kulturbezug; Miethausprojekte und Umbauordnung (S. 91, 92) betreffen Wohnen und Bauen allgemein." },
+    { "ursache": 3202, "seiten": [9, 10, 24], "grund": "Lärmschutz nur zu Verkehrs- und Umweltlärm (S. 9–10) und Immissionsschutz bei Windanlagen (S. 24); keine Regel zu Veranstaltungsschall oder Genehmigungen. Lärmschutzinvestitionen der Clubs sind in der Club-Förderung erfasst." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3–4 (gedruckte Seite + 5 = PDF-Seite); Kapitel 3.6 „Lebendige Kultur“ PDF S. 69–72 vollständig; Fundstellen S. 13, 14, 18, 22, 24, 25, 26, 33, 67, 91, 92, 93, 98 (Umbau von Wald, Tierhaltung, Energiesystem, Heizung, Industrie, Bauordnung; Mehrfachnutzung = Abfallvermeidung; S. 67 nur Silbentreffer „Fernstudium bauen“) – alle ohne Bezug zum Thema. Zusätzlich S. 9–10 (Lärm), S. 38–39 (Orte der Begegnung), S. 89 (Dorfzentren).
+
+Nicht erfasst:
+- S. 69: Kultur als kommunale Pflicht, 1,5 % des Landeshaushalts für Kultur, zentrale Beratungsstelle für Förderanträge – allgemeine Kulturförderung (R2).
+- S. 69–70: Finanzierung Theater/Orchester, Investitionsfonds Theater – Hochkultur (R2).
+- S. 70: „freie Theater und Spielstätten gezielt unterstützen“ – Projektförderung für freie Theater (Ensembles), institutionelle Förderung von Theaterhäusern nur „langfristig anstreben“; R2 bzw. Ziel.
+- S. 70: Freie Szene – Fördermittel erhöhen, mehrjährige Förderverträge – Förderung von Akteur*innen, ohne Bezug zu Kulturorten (R2).
+- S. 70: „Clubkultur als schützenswertes Kulturgut anerkennen und fördern“ – Anerkennung ohne eigenes Instrument; Förderung in Maßnahme 1 erfasst.
+- S. 70–71: kulturelle Großevents in ländlichen Räumen stärken – allgemeines Ziel.
+- S. 71: KulturPass 2.0 (200 Euro für 18-Jährige) – Nachfrageförderung für Jugendliche, nicht Förderung von Kulturorten.
+- S. 71: Bibliotheken, Denkmalpflege und energetische Sanierung – allgemeine Kultur/Denkmal (R2).
+- S. 72: Jugendkulturarbeit – Freizeitangebote für Jugendliche (R2).
+- S. 38–39: Landesprogramm für soziale Begegnungsorte („öffentliche Wohnzimmer“) – soziale Treffpunkte, nicht Kulturorte.
+- S. 39, 89: Dorfzentren mit Veranstaltungsräumen – Grundversorgung im ländlichen Raum, kein Kulturortbezug.
+- S. 93, 98: Zwischennutzung bei Leerstand – „sollen“, ohne Kulturbezug.
+
+Grenzfälle: barrierefreier Umbau von Kultureinrichtungen (3204 offen: Umbau, aber Kultureinrichtungen allgemein und Barrierefreiheit statt Akustik/Veranstaltungsbetrieb); kulturelle Nutzung stillgelegter Industrieorte als Kulturzentren (3201 offen: zusätzliche Flächen durch Umnutzung, aber im Rahmen von Industriekultur/Denkmal).

@@ -1,0 +1,1890 @@
+{
+  "thema_id": 28,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus für gleichzeitige vollzeitnahe Teilzeit beider Eltern weiterentwickeln.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.",
+          "seite": 62
+        },
+        {
+          "beschreibung": "Steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen verbessern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2801
+          ],
+          "zitat": "Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen.",
+          "seite": 15
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2804,
+          "seiten": [
+            3,
+            5,
+            6,
+            10,
+            64
+          ],
+          "grund": "Alle 36 Treffer sind Zufallstreffer des Kürzels 'agg' in Wörtern wie 'Agenda' oder 'Engagement'; im ganzen Programm nichts zu sexueller Belästigung oder Beschwerdestellen."
+        },
+        {
+          "ursache": 2802,
+          "seiten": [
+            15,
+            62
+          ],
+          "grund": "Nur Feststellung 'Es braucht bessere Rahmenbedingungen für Vollzeit- oder vollzeitnahe Arbeit' (Frauen in Teilzeit) ohne Handlungszusage; kein Wiedereinstiegs- oder Rückkehrrecht."
+        },
+        {
+          "ursache": 2803,
+          "seiten": [
+            62,
+            63
+          ],
+          "grund": "Nur Bekenntnis zu Leitbild Ehe und Familie; nichts zu Rollenbildern oder Erwartungen an Mütter."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis, Kapitel 'Gewalt gegen Frauen' (S. 11), 'Chancen bieten' (S. 102-103) und 'Starke Familien' (S. 108-109) gelesen. Nichts zu Rollenbildern oder widersprüchlichen Erwartungen an Mütter; Vereinbarkeit und Kita-Ausbau gehören zu anderen Ursachen.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            108
+          ],
+          "grund": "S. 108 nennt Vereinbarkeit, flexible Arbeitszeit und Betreuung, aber keine Rollenbilder oder Erwartungen an Mütter."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis, Kapitel Familienland (S. 96-98), Gesundheit von Frauen (Gesundheitskapitel) und alle Textstellen zu Frauen, Mütter, Vereinbarkeit, Rollen per Volltextsuche gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter (2803).",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            96,
+            97
+          ],
+          "grund": "Familienland nennt nur Wahlfreiheit der Eltern und Erziehungsverantwortung als Leitbild, keine Handlungszusage zu Rollenbildern."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Soziale Gerechtigkeit und Familie (S. 30-33), Frühkindliche Bildung (S. 48-50) und Justiz (S. 57-58) gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter. Nur Wahlfreiheit, Vereinbarkeit, Chancengleichheit in Führungspositionen und Sorgearbeit (andere Ursachen).",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            31,
+            33,
+            50
+          ],
+          "grund": "Wahlfreiheit des Familienmodells und Vereinbarkeit sind keine Maßnahme gegen widersprüchliche Rollenerwartungen; Sorgearbeit-Verteilung gehört zu 2801 (Bundesebene)."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Elterngeld ausbauen: je sechs nicht übertragbare Monate pro Elternteil plus sechs frei verteilbare Monate.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+          "seite": 26
+        },
+        {
+          "beschreibung": "Familienstartzeit: bezahlte Freistellung für Väter oder Partnerinnen und Partner in den ersten zwei Wochen nach der Geburt.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Wir wollen deshalb eine Familienstartzeit einführen: Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+          "seite": 26
+        },
+        {
+          "beschreibung": "Jährliches Familienbudget für Alltagshelfer, das haushaltsnahe Dienstleistungen direkt fördert.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Mit einem jährlichen Familienbudget für Alltagshelfer wollen wir sozialversicherungspflichtige haushaltsnahe Dienstleistungen direkt fördern und einfach digital zugänglich machen.",
+          "seite": 26
+        },
+        {
+          "beschreibung": "Allgemeines Gleichbehandlungsgesetz modernisieren und Antidiskriminierungsberatung ausbauen, für wirksameren Schutz vor Diskriminierung.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2804
+          ],
+          "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten. Wir wollen das Allgemeine Gleichbehandlungsgesetz (AGG) modernisieren, um effektiveren Schutz vor Diskriminierung zu gewährleisten.",
+          "seite": 41
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2802,
+          "seiten": [
+            23,
+            26,
+            47
+          ],
+          "grund": "Entgelttransparenz S. 23 nennt weder Teilzeit noch Familienphase (R2); Arbeitszeit S. 26 und 47 nur Verweis auf Tarifautonomie bzw. unkonkrete Modernisierung."
+        },
+        {
+          "ursache": 2803,
+          "seiten": [
+            47,
+            48
+          ],
+          "grund": "Nur allgemeine Ziele (Gleichstellung, Gender Mainstreaming) ohne konkrete Zusage zu Rollenbildern von Müttern."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis, Kapitel Gute Arbeit (S. 8), Zusammenleben, Familie und Gleichstellung (S. 47-48) und Fundstelle S. 11 gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter, nur Parität, Gleichstellungsgesetz, Pay Gap, Wiedereinstieg.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            8,
+            11,
+            47,
+            48
+          ],
+          "grund": "Fundstelle S. 11 betrifft Gründungsförderung; übrige Gleichstellungsstellen setzen nicht an Rollenbildern an."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Gleichstellung (S. 38) und Leitsatz S. 6 gelesen. Zu Rollenbildern/Erwartungen an Mütter (2803) nur Rückblick (Führungspositionen in Landesverwaltung ergriffen) und allgemeine Ziele; Gewalt und Frauenhäuser gehören zu Sicherheit."
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Gleichstellung auf dem Arbeitsmarkt (S. 9), Vielfalt/Diskriminierung (S. 36), Fundstelle S. 27 gelesen: nichts zu Rollenbildern oder Erwartungen an Mütter; Sorgearbeit-Zusagen (S. 9) gehören zu 2801, nicht Landesursache.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            9,
+            27,
+            36
+          ],
+          "grund": "S. 27 ist Familienbildung/Jugendhilfe (Treffer nur Wortspiel); S. 9 betrifft Arbeitszeit und Sorgearbeitsverteilung (2801); S. 36 nur allgemeine Gleichstellung und sexistische Haltungen bei Schülern, keine Rollenbilder von Müttern."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Elternzeit so gestalten, dass jeder Elternteil mindestens ein Drittel nutzen kann, als Anreiz zu partnerschaftlicher Aufteilung.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Die Elternzeit möchten wir deshalb so gestalten, dass mindestens jeweils ein Drittel der Zeit von jedem Elternteil genutzt werden kann. Damit setzen wir Anreize für eine partnerschaftlichere Aufteilung.",
+          "seite": 82
+        },
+        {
+          "beschreibung": "Brückenteilzeit und Rückkehrrecht in Vollzeit ausweiten und individueller gestalten.",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Die Brückenteilzeit und das damit verbundene Rückkehrrecht in Vollzeit wollen wir weiten und individueller gestalten.",
+          "seite": 69
+        },
+        {
+          "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen, weil sie für Frauen zur Teilzeitfalle werden.",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende. Denn sie führen vor allem für Frauen und in Kombination mit dem Ehegattensplitting zu einer Teilzeitfalle",
+          "seite": 69
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2804,
+          "seiten": [
+            68,
+            82,
+            118
+          ],
+          "grund": "Nur allgemeiner Schutz vor Mobbing und Diskriminierung von Eltern; nichts zu sexueller Belästigung am Arbeitsplatz oder Beschwerdestellen. Treffer 'agg' sind Aggression, 'schulung' Fachkräfte."
+        },
+        {
+          "ursache": 2803,
+          "seiten": [
+            118
+          ],
+          "grund": "Keine konkrete Zusage zu Rollenbildern oder Erwartungen an Mütter."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 4.1 Strukturelle Gleichstellung (S. 130-133), Gleichstellung am Arbeitsplatz (S. 109-110) und Fundstelle S. 183 gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter. S. 183 meint Familienbildung/Sprach-Kitas.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            110,
+            130,
+            131,
+            183,
+            196
+          ],
+          "grund": "Keine Zusage zu Rollenbildern oder Erwartungen an Mütter; S. 183 betrifft Familienbildung in Kitas, S. 196 nur allgemein klischeefreie Berufsorientierung."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 13 (S. 80-85) und Fundstelle S. 81 gelesen. Rollenbilder werden nur als Lagebeschreibung genannt; keine Zusage, die Rollenbilder oder Erwartungen an Mütter angeht. Care-Arbeit/Gleichstellung (S. 83-85) zählt nicht zu 2803."
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Schulungen in Kitas für geschlechterneutrale Erziehung, um stereotype Rollenbilder früh abzubauen",
+          "ursachen_ids": [
+            2803
+          ],
+          "zitat": "Wir setzen auf gezielte Schulungsmaßnahmen in Kitas, um eine geschlechterneutrale Erziehung zu fördern und stereotype Rollenbilder von Anfang an abzubauen.",
+          "seite": 58
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Volles Elterngeld soll ausgezahlt werden, wenn beide Partner mindestens vier Monate nehmen; die übrigen Monate frei aufteilbar.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Viele Paare streben heute eine partnerschaftliche Aufteilung der Sorgearbeit an. Das darf nicht an politischen Entscheidungen scheitern. Auch Eltern müssen selbstbestimmt sein. Das volle Elterngeld (14 Monate) soll voll ausgezahlt werden, wenn beide Partner je mindestens vier Elterngeldmonate in Anspruch nehmen.",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Arbeitszeitgesetz abschaffen, um flexible Arbeitszeiten, Teilzeit, Jobsharing und Homeoffice für Frauen wie Männer zu ermöglichen.",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen. Flexible Arbeitszeiten, Teilzeit, Jobsharing, bzw. Topsharing und Homeoffice soll es Frauen wie Männern ermöglichen, Beruf und Familie besser zu vereinbaren.",
+          "seite": 31
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            30,
+            31
+          ],
+          "grund": "Kapitel Frauen/Familie gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter."
+        },
+        {
+          "ursache": 2804,
+          "seiten": [
+            11,
+            19,
+            24,
+            47
+          ],
+          "grund": "Treffer für 'agg' sind Wörter wie Aggression; im Programm keine Zusage zu sexueller Belästigung am Arbeitsplatz."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Eltern früh über tradierte Rollenbilder informieren; Kitas sollen geschlechtersensible Erziehung leben.",
+          "ursachen_ids": [
+            2803
+          ],
+          "zitat": "Eine frühe Sensibilisierung der Eltern, um tradierte Rollenbilder von Kindern bereits in den frühen Lebensjahren aufzubrechen, wollen wir mit Informationsangeboten begleiten.",
+          "seite": 81
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Familie (S. 37) und Fundstelle gelesen; Rollenbilder werden nur als Ziel genannt (sollen aufgebrochen werden), ohne Handlungszusage. Sonst nichts zu Müttern, Rollenerwartungen, Teilzeit oder Belästigung im Landesprogramm gefunden."
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Gleichstellung und Frauenpolitik (S. 38-39) und Familien (S. 24) gelesen; nur Bekenntnis zu gleichberechtigter Erziehungs- und Erwerbsarbeit und allgemeine Weiterentwicklung des Frauenfördergesetzes, nichts zu Rollenbildern oder Erwartungen an Mütter."
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Erziehungsgeld für die Eigenbetreuung in den ersten drei Lebensjahren sowie Hilfen beim beruflichen Wiedereinstieg.",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] ein Erziehungsgeld, das Eltern die Eigenbetreuung ihrer Kinder in den ersten drei Lebensjahren finanziell erleichtert, sowie Hilfen beim beruflichen «Wiedereinstieg», damit Kinderwünsche nicht mehr an Geld- und Karrieresorgen scheitern,",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag, damit Eltern zwischen Fremd- und Selbstbetreuung wählen können.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2803,
+            2802
+          ],
+          "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung […]",
+          "seite": 148
+        },
+        {
+          "beschreibung": "Arbeitgeber sollen Telearbeit, flexible Arbeitszeiten und Betriebskindergärten anbieten, damit Eltern Betreuung und Arbeit vereinbaren können.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2802
+          ],
+          "zitat": "Arbeitgeber sollen durch Telearbeit, flexible Arbeitszeiten und Betriebskindergärten ein Arbeitsumfeld schaffen, in dem Eltern Kinderbetreuung und Arbeit gut vereinbaren können, so sie es wünschen.",
+          "seite": 148
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2801,
+          "seiten": [
+            146,
+            148
+          ],
+          "grund": "Keine Zusage zur Aufteilung von Haus- und Sorgearbeit zwischen Partnern; nur Familienbild und Wahlfreiheit."
+        },
+        {
+          "ursache": 2804,
+          "seiten": [
+            45,
+            131,
+            135,
+            163,
+            172
+          ],
+          "grund": "Fundstellen sind Zufallstreffer (agg, schulung); nichts zu sexueller Belästigung am Arbeitsplatz. Auch Gleichberechtigungskapitel (S. 134) ohne Zusage dazu."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Landeserziehungsgeld für U3-Kinder in Höhe der vergleichbaren Kita-Kosten, um Selbstbetreuung gegenüber Fremdbetreuung zu stärken.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2803
+          ],
+          "zitat": "Mütter zählen in der „woken“ Gesellschaft nur, wenn sie einer Erwerbstätigkeit nachgehen und ihre Kinder möglichst schon im Babyalter in eine staatliche Ganztagsbetreuung geben. Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+          "seite": 59
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Familienland MV (S. 17-21) und Fundstellen S. 17, 19, 26 gelesen. Nur Leitbilder (Wahlfreiheit, positives Familienbild) und Kritik an Rollenbildern in der Schule; keine konkrete Zusage zu Rollenbildern oder Erwartungen an Mütter."
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel I. Familie und Kinder (S. 10-19), Gleichberechtigung (S. 94), Girls and Boys Day (S. 63) und Fundstelle S. 17 gelesen; nichts setzt an widersprüchlichen Erwartungen an Mütter an. S. 17 ist Kritik, keine Zusage.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            17,
+            63,
+            15
+          ],
+          "grund": "S. 17 kritisiert Rollenbilder-Wandel ohne Zusage; Familiengeld (S. 15) und Zukunftstag (S. 63) setzen nicht an den widersprüchlichen Erwartungen an Mütter an."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einführung eines bezahlten Elternschutzes von 28 Tagen für den zweiten Elternteil ab Geburt, um Sorge- und Erwerbsarbeit partnerschaftlich aufzuteilen.",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Um eine partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zwischen den Elternteilen zu fördern, wollen wir für den zweiten Elternteil 28 Tage Elternschutz (ab Geburt des Kindes) einführen.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz nach der Elternzeit.",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Die Situation von Berufsrückkehrer*innen nach der Elternzeit stärken wir u. a. durch ein ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten.",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Arbeitsschutzgesetz um Gewalt und sexuelle Belästigung ergänzen, damit das Gesetz gegen Gewalt und Belästigung in der Arbeitswelt in der Praxis ankommt.",
+          "ursachen_ids": [
+            2804
+          ],
+          "zitat": "Das Gesetz über die Beseitigung von Gewalt und Belästigung in der Arbeitswelt muss auch in der betrieblichen Praxis ankommen. Wir wollen deshalb u. a. das Arbeitsschutzgesetz um die Aspekte „Gewalt“ und „sexuelle Belästigung“ ergänzen.",
+          "seite": 47
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2803,
+          "seiten": [
+            15
+          ],
+          "grund": "Mütterrente nur als versicherungsfremde Leistung, die nicht aus Beiträgen finanziert werden soll; kein Bezug zu Rollenbildern."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Aufklärung und Weiterbildung, besonders in Schulen, über Sexismus, häusliche Gewalt und stereotype Rollenbilder.",
+          "ursachen_ids": [
+            2803
+          ],
+          "zitat": "Aufklärung und Weiterbildung – insbesondere in Schulen – müssen gezielt über Sexismus, häusliche Gewalt und stereotype Rollenbilder informieren.",
+          "seite": 214
+        }
+      ],
+      "nicht_erfasst": []
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Berufsorientierung ohne Geschlechterstereotype; Girls' Day und Boys' Day in Klasse 9 verpflichtend.",
+          "ursachen_ids": [
+            2803
+          ],
+          "zitat": "Eine Berufsorientierung fördern, die jungen Menschen ermöglicht, ihre Fähigkeiten unabhängig von Geschlechterstereotypen zu entwickeln. Den Girls’ Day und den Boys’ Day wollen wir in der 9. Klasse verpflichtend durchführen.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Genderkompetenz verbindlich in der Ausbildung von Lehrkräften und pädagogischen Fachkräften verankern, um Rollenmuster aufzubrechen.",
+          "ursachen_ids": [
+            2803
+          ],
+          "zitat": "Genderkompetenz verbindlich in der Ausbildung von Lehrkräften und pädagogischen Fachkräften verankern.",
+          "seite": 14
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Unbezahlte Sorgearbeit aufwerten, Pflegende absichern und Wiedereinstieg in Erwerbsarbeit gezielt fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2803
+          ],
+          "zitat": "Wir wollen: […] die Sorgearbeit aufwerten. Wer Kranke pflegt, soll deswegen keinen Nachteil erleiden, sondern ein abgesichertes Leben führen können.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Kinder und Jugendliche früh für alltägliche Aufgaben sensibilisieren, damit Sorgearbeit besser verteilt wird.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2803
+          ],
+          "zitat": "Wir wollen: […] bereits früh Kinder und Jugendliche für alltägliche Aufgaben sensibilisieren, so dass die Sorgearbeit besser verteilt wird.",
+          "seite": 22
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Frauenrechte statt Gender-Ideologie (S. 33-34), Arbeit/Löhne (S. 18) und Fundstellen S. 5, 6, 15, 16, 22 gelesen. Nur Kita-, Ferienbetreuung und Frauenhäuser (R2: andere Themen) sowie Lagebeschreibung zu Sorgearbeit; nichts zu Aufteilung, Teilzeit-Wiedereinstieg, Rollenbildern oder Belästigung."
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Soziales/Familie (S. 10-13), Bildung, Sport (S. 27), Wirtschaft, Sicherheit/Frauenhäuser sowie Volltextsuche (Frauen, Mütter, Gleichstellung, Rollen, Vereinbarkeit) gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter. Frauenhäuser gehören zu Sicherheit (R2)."
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Familien (S. 11-12), Gute Arbeit (S. 19) und Frauenschutz (S. 69) gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter (2803). Vereinbarkeit/Gleichstellung am Arbeitsmarkt gehört nicht zu 2803."
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Gleichstellung voranbringen' (S. 37-39) und 'Gute Arbeit' (S. 22) gelesen. Zu Rollenbildern und Erwartungen an Mütter nur Wahlfreiheit-Bekenntnis und Betreuungsfinanzierung (gehört zu Kita-Betreuung); keine Zusage gegen widersprüchliche Rollenerwartungen."
+    },
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Achtwöchiger Vaterschaftsurlaub und dreimonatige Mindest-Elternzeit je Elternteil, um Familienarbeit partnerschaftlich aufzuteilen",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Ein achtwöchiger Vaterschaftsurlaub während des Wochenbetts sowie eine dreimonatige Mindest-Elternzeit pro Elternteil nach schwedischem Vorbild fördern partnerschaftliche Familienstrukturen.",
+          "seite": 149
+        },
+        {
+          "beschreibung": "Ehegattensplitting abschaffen und jedem Elternteil einen eigenen Elterngeld-Anspruch auf sieben Monate geben",
+          "ursachen_ids": [
+            2801
+          ],
+          "zitat": "Das Ehegattensplitting wird abgeschafft, das Elterngeld reformiert und künftig jedem Elternteil ein individueller Anspruch auf sieben Monate Elterngeld zugesichert.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Teilzeit-Elterngeld attraktiver gestalten und fördern",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Das Teilzeit-Elterngeld wird attraktiver gestaltet und gefördert.",
+          "seite": 149
+        },
+        {
+          "beschreibung": "Flexible Arbeitszeitmodelle ausbauen und betriebliche Kinderbetreuung steuerlich fördern, um Beruf und Familie besser zu vereinbaren",
+          "ursachen_ids": [
+            2802
+          ],
+          "zitat": "Betriebliche Kinderbetreuung wird durch steuerliche Anreize unterstützt, und flexible Arbeitszeitmodelle werden ausgebaut.",
+          "seite": 151
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2804,
+          "seiten": [
+            37,
+            105,
+            151,
+            152
+          ],
+          "grund": "Fundstellen zu Schulung/Beschwerdestelle betreffen Rassismus, Verwaltung, Weiterbildung; Schutz vor Belästigung (S. 151-152) gehört nach R2 zu Sicherheit. Nichts zu betrieblicher Beschwerdestelle."
+        },
+        {
+          "ursache": 2803,
+          "seiten": [
+            149,
+            150
+          ],
+          "grund": "Kapitel Gleichberechtigung für Frauen gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Pflichtfach Lebenskompetenz an Schulen (Pilotschulen), das auch die kritische Auseinandersetzung mit Rollenbildern behandelt",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2803
+          ],
+          "zitat": "Wir führen „Lebenskompetenz“ als Pflichtfach ein. Damit stärken wir Kompetenzen für ein selbstbestimmtes Leben in den Bereichen […] Beziehungen und Fürsorge sowie der kritischen Auseinandersetzung mit Rollenbildern.",
+          "seite": 48
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis, Kapitel Bildung, Gesellschaftlicher Zusammenhalt (S. 13-19, u.a. Diskriminierung) und Stichwortsuche (Frauen, Mütter, Gleichstellung, Geschlecht, Sexismus, Vereinbarkeit, Rollen) gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter."
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis und Fundstelle S. 128 gelesen (Männerpolitik: moderne Rollenbilder für Männer, nicht Erwartungen an Mütter). Volltextsuche nach Frauen, Mütter, Rollenbild, Stereotyp, Elternzeit, Teilzeit, Vereinbarkeit ergab nur Gewalt-, Gesundheits- und Männerthemen."
+    }
+  ],
+  "suchbegriffe": {
+    "2801": {
+      "Partnerschaftliche Aufteilung fördern": [
+        "partnerschaftliche aufteilung",
+        "partnermonate",
+        "elterngeld",
+        "elternzeit für väter",
+        "väter in die verantwortung",
+        "gleichstellung in der familie",
+        "sorgearbeit"
+      ],
+      "Familienarbeit entlasten und anerkennen": [
+        "haushaltsnahe dienstleistungen",
+        "entlastung von familien",
+        "anerkennung familienarbeit",
+        "wahlfreiheit",
+        "erziehungsleistung"
+      ]
+    },
+    "2802": {
+      "Rückkehr in Vollzeit und planbare Arbeitszeiten": [
+        "rückkehrrecht",
+        "recht auf vollzeit",
+        "teilzeitfalle",
+        "brückenteilzeit",
+        "familienarbeitszeit",
+        "planbare arbeitszeiten",
+        "wiedereinstieg"
+      ],
+      "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": [
+        "teilzeit nach wunsch",
+        "familienzeit",
+        "flexible arbeitszeit",
+        "lohngleichheit",
+        "entgelttransparenz",
+        "equal pay"
+      ]
+    },
+    "2803": {
+      "Rollenstereotype abbauen": [
+        "geschlechterstereotype",
+        "rollenbilder",
+        "klischees",
+        "gleichstellung in der bildung",
+        "frauen in führungspositionen"
+      ],
+      "Anerkennung häuslicher Sorgearbeit": [
+        "anerkennung der erziehungsleistung",
+        "mütterrente",
+        "wahlfreiheit der familien",
+        "familienbild",
+        "kindererziehung zu hause"
+      ]
+    },
+    "2804": {
+      "Beschwerdewege und Schutz vor Belästigung ausbauen": [
+        "sexuelle belästigung",
+        "beschwerdestelle",
+        "belästigung am arbeitsplatz",
+        "agg",
+        "schutz vor belästigung",
+        "metoo",
+        "antidiskriminierungsberatung"
+      ],
+      "Betriebliche Prävention und klare Verantwortung": [
+        "betriebliche prävention",
+        "betriebsvereinbarung",
+        "verhaltenskodex",
+        "verantwortung des arbeitgebers",
+        "schulung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "535db4418c2c5e56843b4030aa0f8208b52d1144ade8d6922eb1afaca0868d37",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 0,
+              "partnermonate": 0,
+              "elterngeld": 2,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 0
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 0,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 0,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 0,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 0
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 0,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 0,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 0,
+              "beschwerdestelle": 0,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 36,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 0,
+              "partnermonate": 0,
+              "elterngeld": 8,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 2
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 1,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 0,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 0,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 0
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 1,
+              "flexible arbeitszeit": 1,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 2,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 1
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 1,
+              "beschwerdestelle": 0,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 4,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 1
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 1
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 1
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 1,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 0,
+              "partnermonate": 0,
+              "elterngeld": 2,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 4
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 1,
+              "entlastung von familien": 1,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 3,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 2,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 1,
+              "brückenteilzeit": 1,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 0
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 1,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 1,
+              "equal pay": 1
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 0,
+              "beschwerdestelle": 0,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 10,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 1,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 1,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 2,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 1,
+              "partnermonate": 0,
+              "elterngeld": 3,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 1
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 0,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 5,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 0,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 0
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 3,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 0,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 0,
+              "beschwerdestelle": 0,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 8,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 3,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 0,
+              "partnermonate": 0,
+              "elterngeld": 0,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 0
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 0,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 1,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 0,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 3
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 1,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 0,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 1,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 0,
+              "beschwerdestelle": 0,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 4,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 3,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 1,
+              "partnermonate": 0,
+              "elterngeld": 2,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 1
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 0,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 1,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 2,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 0
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 0,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 1,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 1,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 1,
+              "beschwerdestelle": 1,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 8,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 1
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 1,
+              "rollenbilder": 2,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 2
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 0,
+              "partnermonate": 0,
+              "elterngeld": 0,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 1
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 0,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 0,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 0,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 1
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 1,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 0,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 0,
+              "beschwerdestelle": 0,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 3,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 2,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "2801": {
+            "Partnerschaftliche Aufteilung fördern": {
+              "partnerschaftliche aufteilung": 0,
+              "partnermonate": 0,
+              "elterngeld": 5,
+              "elternzeit für väter": 0,
+              "väter in die verantwortung": 0,
+              "gleichstellung in der familie": 0,
+              "sorgearbeit": 1
+            },
+            "Familienarbeit entlasten und anerkennen": {
+              "haushaltsnahe dienstleistungen": 0,
+              "entlastung von familien": 0,
+              "anerkennung familienarbeit": 0,
+              "wahlfreiheit": 3,
+              "erziehungsleistung": 0
+            }
+          },
+          "2802": {
+            "Rückkehr in Vollzeit und planbare Arbeitszeiten": {
+              "rückkehrrecht": 0,
+              "recht auf vollzeit": 0,
+              "teilzeitfalle": 0,
+              "brückenteilzeit": 0,
+              "familienarbeitszeit": 0,
+              "planbare arbeitszeiten": 0,
+              "wiedereinstieg": 0
+            },
+            "Teilzeit nach Wunsch und Familienzeit ohne Nachteile": {
+              "teilzeit nach wunsch": 0,
+              "familienzeit": 0,
+              "flexible arbeitszeit": 1,
+              "lohngleichheit": 0,
+              "entgelttransparenz": 0,
+              "equal pay": 0
+            }
+          },
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          },
+          "2804": {
+            "Beschwerdewege und Schutz vor Belästigung ausbauen": {
+              "sexuelle belästigung": 0,
+              "beschwerdestelle": 2,
+              "belästigung am arbeitsplatz": 0,
+              "agg": 1,
+              "schutz vor belästigung": 0,
+              "metoo": 0,
+              "antidiskriminierungsberatung": 0
+            },
+            "Betriebliche Prävention und klare Verantwortung": {
+              "betriebliche prävention": 0,
+              "betriebsvereinbarung": 0,
+              "verhaltenskodex": 0,
+              "verantwortung des arbeitgebers": 0,
+              "schulung": 13
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 1,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 0,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "2803": {
+            "Rollenstereotype abbauen": {
+              "geschlechterstereotype": 0,
+              "rollenbilder": 2,
+              "klischees": 0,
+              "gleichstellung in der bildung": 0,
+              "frauen in führungspositionen": 0
+            },
+            "Anerkennung häuslicher Sorgearbeit": {
+              "anerkennung der erziehungsleistung": 0,
+              "mütterrente": 0,
+              "wahlfreiheit der familien": 0,
+              "familienbild": 0,
+              "kindererziehung zu hause": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

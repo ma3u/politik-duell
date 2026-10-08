@@ -1,0 +1,368 @@
+{
+  "pruefsumme": "8cad333a3d5b397291320a2980797d5094a3cc7db8190d3fcec1cb95fbe9eb4b",
+  "thema": {
+    "id": 28,
+    "name": "Sexismus und Benachteiligung von Frauen",
+    "ziel": "Frauen können ihren Alltag, ihren Beruf und ihr Familienleben selbstbestimmt gestalten, ohne geschlechtsbedingte Benachteiligung oder sexistische Anfeindungen."
+  },
+  "ursachen": [
+    {
+      "id": 2801,
+      "beschreibung": "Bei 53 % der Paare übernimmt die Frau deutlich mehr Routine-Hausarbeit als der Mann, bei 44 % ist sie etwa gleich verteilt (BiB, 2025)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2802,
+      "beschreibung": "Mütter bleiben nach einer Familienphase häufig langfristig und oft ungewollt in Teilzeit; die meisten Frauen wünschen Teilzeit vor allem, solange die Kinder klein sind (BiB, 2017)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2803,
+      "beschreibung": "Erwartungen an Mütter widersprechen sich: 83 % der Frauen befürworteten nachmittägliche Präsenz bei den Kindern, 84 % Erwerbstätigkeit zur Unabhängigkeit (Befragung 2012)",
+      "ebene": "land"
+    },
+    {
+      "id": 2804,
+      "beschreibung": "Etwa 40 % der Befragten wussten 2018 nichts von einer betrieblichen Beschwerdestelle gegen sexuelle Belästigung am Arbeitsplatz",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2801,
+        2802,
+        2803,
+        2804
+      ],
+      "text": "Zu 2801 Aufteilung von Haus- und Sorgearbeit in Partnerschaften (Elternzeit, Partnermonate, Entlastung), zu 2802 Teilzeit und Wiedereinstieg nach der Familienphase, zu 2803 Rollenbilder und Erwartungen an Mütter, zu 2804 Schutz vor sexueller Belästigung am Arbeitsplatz und Beschwerdewege. Die Wahlfreiheit für ein Familienmodell ist selbst keine Benachteiligung."
+    },
+    {
+      "nr": 2,
+      "text": "Gewalt in Partnerschaft, sexualisierte Gewalt und Frauenhausplätze gehören zu Sicherheit, Betreuungsplätze zu Kita-Betreuung, Online-Hass zu Hass im Internet, allgemeine Löhne zu Preise und Löhne. Lohnlücke und Entgelttransparenz zählen zu 2802, wenn das Zitat Teilzeit oder Familienphase nennt, sonst zu keiner Ursache."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Teilzeit-Elterngeld attraktiver gestalten und fördern",
+      "zitat": "Das Teilzeit-Elterngeld wird attraktiver gestaltet und gefördert.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "8d1ddf3d2d978ab0"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Kinder und Jugendliche früh für alltägliche Aufgaben sensibilisieren, damit Sorgearbeit besser verteilt wird.",
+      "zitat": "Wir wollen: […] bereits früh Kinder und Jugendliche für alltägliche Aufgaben sensibilisieren, so dass die Sorgearbeit besser verteilt wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "b179a53cc61c7315"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Arbeitgeber sollen Telearbeit, flexible Arbeitszeiten und Betriebskindergärten anbieten, damit Eltern Betreuung und Arbeit vereinbaren können.",
+      "zitat": "Arbeitgeber sollen durch Telearbeit, flexible Arbeitszeiten und Betriebskindergärten ein Arbeitsumfeld schaffen, in dem Eltern Kinderbetreuung und Arbeit gut vereinbaren können, so sie es wünschen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "a6cb66062d329ae3"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Berufsorientierung ohne Geschlechterstereotype; Girls' Day und Boys' Day in Klasse 9 verpflichtend.",
+      "zitat": "Eine Berufsorientierung fördern, die jungen Menschen ermöglicht, ihre Fähigkeiten unabhängig von Geschlechterstereotypen zu entwickeln. Den Girls’ Day und den Boys’ Day wollen wir in der 9. Klasse verpflichtend durchführen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "09519465e58f31af"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Pflichtfach Lebenskompetenz an Schulen (Pilotschulen), das auch die kritische Auseinandersetzung mit Rollenbildern behandelt",
+      "zitat": "Wir führen „Lebenskompetenz“ als Pflichtfach ein. Damit stärken wir Kompetenzen für ein selbstbestimmtes Leben in den Bereichen […] Beziehungen und Fürsorge sowie der kritischen Auseinandersetzung mit Rollenbildern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "cbbcf98a08f3d859"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Flexible Arbeitszeitmodelle ausbauen und betriebliche Kinderbetreuung steuerlich fördern, um Beruf und Familie besser zu vereinbaren",
+      "zitat": "Betriebliche Kinderbetreuung wird durch steuerliche Anreize unterstützt, und flexible Arbeitszeitmodelle werden ausgebaut.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "bcbb707f02fb9bef"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Einführung eines bezahlten Elternschutzes von 28 Tagen für den zweiten Elternteil ab Geburt, um Sorge- und Erwerbsarbeit partnerschaftlich aufzuteilen.",
+      "zitat": "Um eine partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zwischen den Elternteilen zu fördern, wollen wir für den zweiten Elternteil 28 Tage Elternschutz (ab Geburt des Kindes) einführen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "965b85c3b9f8c401"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeitgesetz abschaffen, um flexible Arbeitszeiten, Teilzeit, Jobsharing und Homeoffice für Frauen wie Männer zu ermöglichen.",
+      "zitat": "Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen. Flexible Arbeitszeiten, Teilzeit, Jobsharing, bzw. Topsharing und Homeoffice soll es Frauen wie Männern ermöglichen, Beruf und Familie besser zu vereinbaren.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "72b178ff73e63835"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Arbeitsschutzgesetz um Gewalt und sexuelle Belästigung ergänzen, damit das Gesetz gegen Gewalt und Belästigung in der Arbeitswelt in der Praxis ankommt.",
+      "zitat": "Das Gesetz über die Beseitigung von Gewalt und Belästigung in der Arbeitswelt muss auch in der betrieblichen Praxis ankommen. Wir wollen deshalb u. a. das Arbeitsschutzgesetz um die Aspekte „Gewalt“ und „sexuelle Belästigung“ ergänzen.",
+      "ursachen_ids": [
+        2804
+      ],
+      "pruefsumme": "ebe15e1aea48da95"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Allgemeines Gleichbehandlungsgesetz modernisieren und Antidiskriminierungsberatung ausbauen, für wirksameren Schutz vor Diskriminierung.",
+      "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten. Wir wollen das Allgemeine Gleichbehandlungsgesetz (AGG) modernisieren, um effektiveren Schutz vor Diskriminierung zu gewährleisten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2804
+      ],
+      "pruefsumme": "010a084e258d9136"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Volles Elterngeld soll ausgezahlt werden, wenn beide Partner mindestens vier Monate nehmen; die übrigen Monate frei aufteilbar.",
+      "zitat": "Viele Paare streben heute eine partnerschaftliche Aufteilung der Sorgearbeit an. Das darf nicht an politischen Entscheidungen scheitern. Auch Eltern müssen selbstbestimmt sein. Das volle Elterngeld (14 Monate) soll voll ausgezahlt werden, wenn beide Partner je mindestens vier Elterngeldmonate in Anspruch nehmen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "579f79823d9fbf63"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld ausbauen: je sechs nicht übertragbare Monate pro Elternteil plus sechs frei verteilbare Monate.",
+      "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "d190e5915ae44b2b"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Schulungen in Kitas für geschlechterneutrale Erziehung, um stereotype Rollenbilder früh abzubauen",
+      "zitat": "Wir setzen auf gezielte Schulungsmaßnahmen in Kitas, um eine geschlechterneutrale Erziehung zu fördern und stereotype Rollenbilder von Anfang an abzubauen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "a57bae6e81099047"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Familienstartzeit: bezahlte Freistellung für Väter oder Partnerinnen und Partner in den ersten zwei Wochen nach der Geburt.",
+      "zitat": "Wir wollen deshalb eine Familienstartzeit einführen: Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "eb412e4e8bd28a6f"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Landeserziehungsgeld für U3-Kinder in Höhe der vergleichbaren Kita-Kosten, um Selbstbetreuung gegenüber Fremdbetreuung zu stärken.",
+      "zitat": "Mütter zählen in der „woken“ Gesellschaft nur, wenn sie einer Erwerbstätigkeit nachgehen und ihre Kinder möglichst schon im Babyalter in eine staatliche Ganztagsbetreuung geben. Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "cbd824e4969692f5"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Brückenteilzeit und Rückkehrrecht in Vollzeit ausweiten und individueller gestalten.",
+      "zitat": "Die Brückenteilzeit und das damit verbundene Rückkehrrecht in Vollzeit wollen wir weiten und individueller gestalten.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "5c3f7052d81d6cb2"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus für gleichzeitige vollzeitnahe Teilzeit beider Eltern weiterentwickeln.",
+      "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "60e65c2dbccb1c6d"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen, weil sie für Frauen zur Teilzeitfalle werden.",
+      "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende. Denn sie führen vor allem für Frauen und in Kombination mit dem Ehegattensplitting zu einer Teilzeitfalle",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "1ec71e8f39bb7717"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Achtwöchiger Vaterschaftsurlaub und dreimonatige Mindest-Elternzeit je Elternteil, um Familienarbeit partnerschaftlich aufzuteilen",
+      "zitat": "Ein achtwöchiger Vaterschaftsurlaub während des Wochenbetts sowie eine dreimonatige Mindest-Elternzeit pro Elternteil nach schwedischem Vorbild fördern partnerschaftliche Familienstrukturen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "fc3f76ca5243f540"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Ehegattensplitting abschaffen und jedem Elternteil einen eigenen Elterngeld-Anspruch auf sieben Monate geben",
+      "zitat": "Das Ehegattensplitting wird abgeschafft, das Elterngeld reformiert und künftig jedem Elternteil ein individueller Anspruch auf sieben Monate Elterngeld zugesichert.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "a0542c324070990a"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen verbessern.",
+      "zitat": "Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "6b4b0d286682579e"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Jährliches Familienbudget für Alltagshelfer, das haushaltsnahe Dienstleistungen direkt fördert.",
+      "zitat": "Mit einem jährlichen Familienbudget für Alltagshelfer wollen wir sozialversicherungspflichtige haushaltsnahe Dienstleistungen direkt fördern und einfach digital zugänglich machen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "6843dbe2fac9f62c"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Genderkompetenz verbindlich in der Ausbildung von Lehrkräften und pädagogischen Fachkräften verankern, um Rollenmuster aufzubrechen.",
+      "zitat": "Genderkompetenz verbindlich in der Ausbildung von Lehrkräften und pädagogischen Fachkräften verankern.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "21ab9f4505565236"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag, damit Eltern zwischen Fremd- und Selbstbetreuung wählen können.",
+      "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803,
+        2802
+      ],
+      "pruefsumme": "e33ed2eddcb50c21"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Eltern früh über tradierte Rollenbilder informieren; Kitas sollen geschlechtersensible Erziehung leben.",
+      "zitat": "Eine frühe Sensibilisierung der Eltern, um tradierte Rollenbilder von Kindern bereits in den frühen Lebensjahren aufzubrechen, wollen wir mit Informationsangeboten begleiten.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "a8b14889b06d1cc5"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz nach der Elternzeit.",
+      "zitat": "Die Situation von Berufsrückkehrer*innen nach der Elternzeit stärken wir u. a. durch ein ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "edfffb9fd3661dc9"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Erziehungsgeld für die Eigenbetreuung in den ersten drei Lebensjahren sowie Hilfen beim beruflichen Wiedereinstieg.",
+      "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] ein Erziehungsgeld, das Eltern die Eigenbetreuung ihrer Kinder in den ersten drei Lebensjahren finanziell erleichtert, sowie Hilfen beim beruflichen «Wiedereinstieg», damit Kinderwünsche nicht mehr an Geld- und Karrieresorgen scheitern,",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "eeecb0d9be06a590"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "land",
+      "beschreibung": "Unbezahlte Sorgearbeit aufwerten, Pflegende absichern und Wiedereinstieg in Erwerbsarbeit gezielt fördern.",
+      "zitat": "Wir wollen: […] die Sorgearbeit aufwerten. Wer Kranke pflegt, soll deswegen keinen Nachteil erleiden, sondern ein abgesichertes Leben führen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "09de7fe89ac708a2"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Elternzeit so gestalten, dass jeder Elternteil mindestens ein Drittel nutzen kann, als Anreiz zu partnerschaftlicher Aufteilung.",
+      "zitat": "Die Elternzeit möchten wir deshalb so gestalten, dass mindestens jeweils ein Drittel der Zeit von jedem Elternteil genutzt werden kann. Damit setzen wir Anreize für eine partnerschaftlichere Aufteilung.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "852579b4b649403e"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "land",
+      "beschreibung": "Aufklärung und Weiterbildung, besonders in Schulen, über Sexismus, häusliche Gewalt und stereotype Rollenbilder.",
+      "zitat": "Aufklärung und Weiterbildung – insbesondere in Schulen – müssen gezielt über Sexismus, häusliche Gewalt und stereotype Rollenbilder informieren.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "8d9226f9620dd828"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten.",
+      "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "48927449e85babe9"
+    }
+  ]
+}

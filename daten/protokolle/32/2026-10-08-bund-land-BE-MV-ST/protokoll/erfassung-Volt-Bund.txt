@@ -1,0 +1,52 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Clubs, Ateliers und Jugendtreffs als kulturelle Räume schützen und gezielt fördern",
+      "ursachen_ids": [3203],
+      "ursachen_offen": [3201],
+      "zitat": "Förderung kultureller Räume: Clubs, Ateliers und Jugendtreffs werden als kulturelle Räume für Jugendliche geschützt und gezielt gefördert.",
+      "seite": 158
+    },
+    {
+      "beschreibung": "Fonds für Kommunen zum Rückkauf leerstehender Immobilien für kulturelle Projekte",
+      "ursachen_ids": [3201],
+      "zitat": "Kommunen erhalten durch einen Fonds die Möglichkeit zum Rückkauf von Leerstand für kulturelle Projekte.",
+      "seite": 158
+    },
+    {
+      "beschreibung": "Fonds von Bund und Ländern zur Förderung von Jugend-, Vereins- und Kulturzentren als Räume für Begegnung",
+      "ursachen_ids": [3203],
+      "ursachen_offen": [3201],
+      "zitat": "Förderung für Jugend-, Vereins- und Kulturzentren fördern: Ein Fonds von Bund und Ländern sichert Räume für Begegnung und Teilhabe.",
+      "seite": 20
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3202, "seiten": [157, 158, 159, 160], "grund": "Kulturkapitel gelesen; nichts zu Schallschutz, Lärmkonflikten oder Genehmigung von Veranstaltungen." },
+    { "ursache": 3204, "seiten": [20, 54, 94, 158], "grund": "Fundstellen zu 'Umbau' betreffen Wirtschaft (S. 54) und Wohnungsbau (S. 94); im Kulturkapitel nichts zu Umbau, Akustik oder Brandschutz von Veranstaltungsorten." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis S. 2–4; Kapitel „Wir sind bereit für ein kulturell reiches Deutschland“ / „Kulturelle Räume schaffen und schützen“ S. 156–160; Abschnitt „Bau kultureller Brücken“ S. 20; Fundstellen S. 11, 29, 54, 86, 94, 95 (Auszüge).
+
+Zuordnung:
+- S. 158 Clubs/Ateliers/Jugendtreffs: Förderung -> 3203; „geschützt“ ohne Angabe, wovor (Mieten, Flächenkonkurrenz), daher 3201 offen. Jugendtreffs gehören nach R2 zu einem anderen Thema, Clubs und Ateliers hierher.
+- S. 158 Rückkauf von Leerstand: Flächen für Kultur -> 3201. Gleichartige Stelle S. 20 („Rückkauf und Umgestaltung: Länder und Kommunen werden unterstützt, um leerstehende Immobilien für soziale und kulturelle Projekte zurückzukaufen.“) nicht erneut erfasst; S. 158 nennt den Fonds.
+- S. 20 Fonds für Jugend-, Vereins- und Kulturzentren: Förderung von Kulturorten (soziokulturelle Zentren) -> 3203; „sichert Räume“ als Grenzfall zu 3201 offen.
+
+Nicht erfasst:
+- S. 157 Kultur als Staatsziel, Schutz von Minderheitenkulturen, Denkmalschutz, Unterstützung der freien Kulturszene: allgemeine Ziele bzw. allgemeine Kulturförderung ohne Bezug zu Kulturorten (R2).
+- S. 157/158 Kultur-Tickets, Kultur- und Bücherbusse, Kulturpass: Zugang/Teilhabe, nicht Räume.
+- S. 158 Kulturelle Bildung (Fachunterricht, Quereinstieg, Kooperation mit Kulturinstitutionen): anderes Thema.
+- S. 159 Basishonorar, Künstlersozialkasse, Arbeitslosenversicherung: soziale Absicherung Kulturschaffender, nicht Kulturorte.
+- S. 160 Sicherung der Kulturetats, zweckgebundene Tourismustaxen: allgemeine Kulturfinanzierung ohne Bezug zu Clubs/Spielstätten (R2).
+- S. 94 Leerstand von Gewerbegebäuden zu Wohnraum, Umbauverfahren: Wohnungsbau (R1, gehört zu Miete).
+- S. 95 Umnutzung für Housing First: Wohnungslosigkeit.
+- S. 11 Kulturförderung bleibt auf lokaler Ebene (Subsidiaritätsgrundsatz), S. 29 Beteiligungsplattform, S. 54 klimagerechter Umbau der Wirtschaft, S. 86 kulturelle Teilhabe (Kapiteleinleitung): anderer Zusammenhang bzw. Leitbild.
+
+Richtungen ohne Maßnahme: Schallschutz und angepasste Genehmigungen; Emissionen begrenzen; Eigenmittel und Kooperationen; Gebäude für Veranstaltungen anpassen; Nutzung an das Gebäude anpassen.
+Seiten ohne Text: S. 156 ist Kapiteltrennseite, Inhalt folgt ab S. 157 vollständig.

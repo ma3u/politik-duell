@@ -1,0 +1,649 @@
+{
+  "thema_id": 35,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Führerschein für junge Menschen bezahlbar machen, indem Bürokratie abgebaut und die Fahrausbildung effizienter gestaltet wird",
+          "ursachen_ids": [
+            3501
+          ],
+          "ursachen_offen": [
+            3502
+          ],
+          "zitat": "Der Führerschein muss für junge Menschen bezahlbar sein. Dafür gilt es, Bürokratie abzubauen und die Ausbildung effizient zu gestalten.",
+          "seite": 74
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3502,
+          "seiten": [
+            60,
+            74
+          ],
+          "grund": "Keine eigene Zusage zu Prüfungsanforderungen, Pflichtstunden oder Wiederholungsprüfungen; S. 74 nennt nur allgemein eine effiziente Ausbildung (als offen bei der Maßnahme zu 3501 vermerkt); Treffer 'dekra' auf S. 60 stammt aus 'verbindende Kraft' (Kulturerbe)."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Fahrausbildung samt Theorieunterricht reformieren, im Sinne von Verkehrssicherheit und Effizienz und mit dem Ziel spürbar geringerer Kosten",
+          "ursachen_ids": [
+            3502
+          ],
+          "ursachen_offen": [
+            3501
+          ],
+          "zitat": "Vor dem Hintergrund erhöhter Quoten nicht bestandener Prüfungen und steigender Preise werden wir die Fahrausbildung samt Theorieunterricht im Sinne von Verkehrssicherheit und Effizienz reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Mobilitätspass mit 500 Euro Guthaben für alle jungen Menschen im 17. Lebensjahr, nutzbar u. a. für Führerscheinkosten",
+          "ursachen_ids": [
+            3501
+          ],
+          "zitat": "Alle jungen Menschen im 17. Lebensjahr sollen daher einen MobilitätsPass mit 500 Euro Guthaben, etwa für Führerscheinkosten, Bahntickets oder Fahrräder, erhalten.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Arbeitgeber sollen Auszubildenden und jungen Beschäftigten einen Führerscheinzuschuss bis 2.000 Euro steuer- und abgabenfrei zahlen können",
+          "ursachen_ids": [
+            3501
+          ],
+          "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+          "seite": 36
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Führerscheinerwerb für Menschen in Ausbildung finanziell fördern",
+          "ursachen_ids": [
+            3501
+          ],
+          "zitat": "Wir wollen für Menschen in Ausbildung auch den Führerscheinerwerb fördern, eine Lösung für ein Azubi-Deutschland-Ticket finden und den öffentlichen Personennahverkehr (ÖPNV) für Auszubildende attraktiver machen.",
+          "seite": 78
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3502,
+          "seiten": [
+            20,
+            46,
+            47,
+            48
+          ],
+          "grund": "Treffer zu Verkehrssicherheit betreffen Tempolimits, Bußgelder und Schulwege (S. 48), Treffer S. 20 ist ein Wortbestandteil („treibende Kraft“); nichts zu Fahrausbildung, Prüfungsanforderungen oder Wiederholungsprüfungen."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Führerschein und Lkw-/Bus-Führerschein günstiger machen: keine Tagesobergrenze für Theorieunterricht, Theorie digital, Fahrsimulatoren in der Ausbildung",
+          "ursachen_ids": [
+            3502
+          ],
+          "ursachen_offen": [
+            3501
+          ],
+          "zitat": "Deshalb wollen wir den Führerschein und die Berufskraftfahrerqualifikation (Lkw-Führerschein, Bus-Führerschein) wieder günstiger machen, z. B. durch den Verzicht auf eine Tagesobergrenze für den Theorieunterricht, die Möglichkeit den Theorieunterricht digital zu absolvieren und die Integration von Fahrsimulatoren in der Ausbildung.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Prüfungsmarkt für weitere Anbieter öffnen und Fahrprüfer-Weiterbildung ohne Ingenieursstudium, um mehr Prüftermine und kürzere Wartezeiten zu erreichen",
+          "ursachen_ids": [
+            3501
+          ],
+          "zitat": "Mit der Öffnung des Prüfungsmarktes für weitere Anbieter und einer Weiterbildung zum Fahrprüfer auch ohne Ingenieursstudium wollen wir die Anzahl an Prüfterminen steigern und Wartezeiten deutlich senken.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Begleitetes Fahren schon ab 16 Jahren ermöglichen, damit frühe Fahrpraxis die Verkehrssicherheit erhöht",
+          "ursachen_ids": [
+            3502
+          ],
+          "zitat": "Das begleitete Fahren wollen wir ab 16 Jahren ermöglichen – denn frühe Fahrpraxis erhöht nachweislich die Verkehrssicherheit.",
+          "seite": 42
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Begleitetes Fahren schon ab 16 Jahren ermöglichen",
+          "ursachen_ids": [
+            3502
+          ],
+          "zitat": "In diesem Zusammenhang wollen wir auch das begleitete Fahren bereits ab 16 Jahren ermöglichen.",
+          "seite": 43
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3501,
+          "seiten": [
+            42,
+            43,
+            44,
+            45
+          ],
+          "grund": "Kapitel Verkehr (S. 42–45) gelesen; nichts zu Fahrschulpreisen, Prüfungsgebühren, Wettbewerb oder Förderung des Führerscheinerwerbs. Nur das allgemeine Ziel, individuelle Mobilität bezahlbar zu halten."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "begleitete fahren",
+          "ursache": 3502,
+          "richtung": "Ausbildung und Prüfung entschlacken"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis (S. 2–3), Kapitel 9 ‚Mobilität für alle‘ (S. 36–37), Kapitel 10 ‚Ausbilden, sonst wird umgelegt‘ (S. 39–40), Preisaufsicht (S. 7) und Fundstellen S. 10, 14, 38 gelesen; nichts zu Fahrschulkosten, Führerscheingebühren oder Fahrausbildung und -prüfung.",
+      "nicht_erfasst": [
+        {
+          "ursache": 3501,
+          "seiten": [
+            7,
+            36,
+            39
+          ],
+          "grund": "Keine Aussage zu Führerschein- oder Fahrschulkosten; allgemeine Preisaufsicht (S. 7) nennt Mobilität nur als systemrelevante Branche ohne Bezug zur Fahrerlaubnis, Tickets für Azubis (S. 36) betreffen den ÖPNV, gebührenfreie Ausbildung (S. 39) die Berufsausbildung."
+        },
+        {
+          "ursache": 3502,
+          "seiten": [
+            10,
+            14,
+            37,
+            38
+          ],
+          "grund": "Treffer betreffen Milliardärsteuer (S. 10), Finanz-TÜV (S. 14) und Verkehrssicherheit auf dem Schulweg/Tempolimit (S. 37, 38) – keine Aussage zu Fahrausbildung oder Prüfung."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Verkehrspolitik für alle statt Bevormundung und Verbote' (S. 28–30), Bildungskapitel mit Berufsausbildung (S. 24–25) und Familien-/Jugendpolitik (S. 31–32) gelesen; nichts zu Fahrschul- oder Prüfungskosten, Führerscheinförderung oder Fahrausbildung und -prüfung. Suche nach Führerschein, Fahrschule, Prüfung u. a. ohne Treffer.",
+      "nicht_erfasst": [
+        {
+          "ursache": 3501,
+          "seiten": [
+            28,
+            29,
+            30
+          ],
+          "grund": "Verkehrskapitel behandelt Spritpreise, Raststätten, Deutschlandticket, Volksleasing und Infrastruktur, nichts zu Kosten von Fahrschule oder Fahrerlaubnis."
+        },
+        {
+          "ursache": 3502,
+          "seiten": [
+            24,
+            25,
+            28,
+            29,
+            30
+          ],
+          "grund": "Keine Aussage zu Fahrausbildung, Pflichtstunden oder Prüfungen der Fahrerlaubnis."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis (S. 2–4), Kapitel ‚Nachhaltige Mobilität‘ (S. 68–71) und ‚Berufsbildung und lebenslanges Lernen‘ inkl. ‚Finanzierung von Studium und Ausbildung‘ (S. 116–117) sowie Fundstelle S. 69 gelesen; nichts zu Kosten, Gebühren, Ausbildung oder Prüfung für die Fahrerlaubnis.",
+      "nicht_erfasst": [
+        {
+          "ursache": 3501,
+          "seiten": [
+            117
+          ],
+          "grund": "Keine Aussage zu Fahrschul- oder Führerscheinkosten; ‚Kostenfreie Aus- und Weiterbildungen‘ (S. 117) betrifft staatlich anerkannte Berufsausbildungen, nicht die Fahrerlaubnis."
+        },
+        {
+          "ursache": 3502,
+          "seiten": [
+            69
+          ],
+          "grund": "Einziger Treffer ‚Verkehrssicherheit‘ (S. 69) begründet Tempolimits, betrifft nicht Fahrausbildung oder Prüfungen."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3501": {
+      "Führerscheinkosten senken und Zugang erleichtern": [
+        "führerschein",
+        "führerscheinkosten",
+        "führerschein billiger",
+        "führerscheinprämie",
+        "fahrschulkosten",
+        "führerschein bezahlbar",
+        "führerschein für alle",
+        "kosten für den führerschein"
+      ],
+      "Wettbewerb und Preistransparenz in Fahrschulen": [
+        "fahrschule",
+        "preisvergleich",
+        "preistransparenz",
+        "fahrschulpreise",
+        "fahrschulwettbewerb",
+        "festpreis"
+      ]
+    },
+    "3502": {
+      "Ausbildung und Prüfung entschlacken": [
+        "pflichtstunden",
+        "sonderfahrten",
+        "theorieprüfung",
+        "praktische prüfung",
+        "fahrausbildung reform",
+        "prüfung vereinfachen",
+        "digitale theorieausbildung",
+        "begleitetes fahren"
+      ],
+      "Qualität und Prüfungsreife sichern": [
+        "prüfungsreife",
+        "qualität der fahrausbildung",
+        "verkehrssicherheit",
+        "prüfungsstandards",
+        "tüv",
+        "dekra"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "8503dc028abff828d90a6ef309a0f20f70b4ff2b04cf2192a4411f66bd155e70",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 2,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 0,
+              "prüfungsstandards": 0,
+              "tüv": 0,
+              "dekra": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 3,
+              "führerscheinkosten": 1,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 1,
+              "prüfungsstandards": 0,
+              "tüv": 0,
+              "dekra": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 1,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 3,
+              "prüfungsstandards": 0,
+              "tüv": 0,
+              "dekra": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 6,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 1,
+              "prüfungsstandards": 0,
+              "tüv": 0,
+              "dekra": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 0,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 0,
+              "prüfungsstandards": 1,
+              "tüv": 0,
+              "dekra": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 0,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 1,
+              "prüfungsstandards": 0,
+              "tüv": 1,
+              "dekra": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 0,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 0,
+              "prüfungsstandards": 0,
+              "tüv": 0,
+              "dekra": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "3501": {
+            "Führerscheinkosten senken und Zugang erleichtern": {
+              "führerschein": 0,
+              "führerscheinkosten": 0,
+              "führerschein billiger": 0,
+              "führerscheinprämie": 0,
+              "fahrschulkosten": 0,
+              "führerschein bezahlbar": 0,
+              "führerschein für alle": 0,
+              "kosten für den führerschein": 0
+            },
+            "Wettbewerb und Preistransparenz in Fahrschulen": {
+              "fahrschule": 0,
+              "preisvergleich": 0,
+              "preistransparenz": 0,
+              "fahrschulpreise": 0,
+              "fahrschulwettbewerb": 0,
+              "festpreis": 0
+            }
+          },
+          "3502": {
+            "Ausbildung und Prüfung entschlacken": {
+              "pflichtstunden": 0,
+              "sonderfahrten": 0,
+              "theorieprüfung": 0,
+              "praktische prüfung": 0,
+              "fahrausbildung reform": 0,
+              "prüfung vereinfachen": 0,
+              "digitale theorieausbildung": 0,
+              "begleitetes fahren": 0
+            },
+            "Qualität und Prüfungsreife sichern": {
+              "prüfungsreife": 0,
+              "qualität der fahrausbildung": 0,
+              "verkehrssicherheit": 1,
+              "prüfungsstandards": 0,
+              "tüv": 0,
+              "dekra": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

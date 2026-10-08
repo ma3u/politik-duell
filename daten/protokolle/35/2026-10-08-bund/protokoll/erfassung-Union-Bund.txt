@@ -1,0 +1,26 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Führerschein für junge Menschen bezahlbar machen, indem Bürokratie abgebaut und die Fahrausbildung effizienter gestaltet wird",
+      "ursachen_ids": [3501],
+      "ursachen_offen": [3502],
+      "zitat": "Der Führerschein muss für junge Menschen bezahlbar sein. Dafür gilt es, Bürokratie abzubauen und die Ausbildung effizient zu gestalten.",
+      "seite": 74
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3502, "seiten": [60, 74], "grund": "Keine eigene Zusage zu Prüfungsanforderungen, Pflichtstunden oder Wiederholungsprüfungen; S. 74 nennt nur allgemein eine effiziente Ausbildung (als offen bei der Maßnahme zu 3501 vermerkt); Treffer 'dekra' auf S. 60 stammt aus 'verbindende Kraft' (Kulturerbe)." }
+  ]
+}
+
+Protokoll
+- Gelesen: Inhaltsverzeichnis (S. 2), Kapitel „Ja zu bezahlbarem Bauen, Wohnen und zukunftsfähiger Mobilität“ (PDF-S. 72–75), Fundstellen S. 29, 60, 74. Zusätzliche Volltextsuche nach Fahrschul-, Fahrerlaubnis-, Führerschein-, Azubi-Begriffen: keine weiteren Stellen.
+- Erfasst: S. 74, Führerschein bezahlbar für junge Menschen, Bürokratieabbau und effiziente Ausbildung. Zuordnung 3501 (Kosten); „Ausbildung effizient gestalten“ berührt Ausbildungsanforderungen nach R1 (3502), aber ohne Bezug zu Prüfungen/Wiederholungen – daher 3502 offen.
+- Nicht erfasst:
+  - S. 29: digitaler Führerschein per Smartphone (EU-Ausweisfunktion) – kein Bezug zu Kosten oder Ausbildung beim Erwerb.
+  - S. 60: Treffer „dekra“ ist Silbentrennungsartefakt („verbindende Kraft“), anderer Zusammenhang (Kulturerbe).
+  - S. 75: Reform der Berufskraftfahrerqualifikation gegen Fahrermangel bei LKW und Bus – Führerschein für Berufe ohne Bezug zum allgemeinen Erwerb (R2).
+  - S. 75: digitale Kfz-Anmeldung, digitale Fahrzeugakte – betrifft Fahrzeugzulassung, nicht die Fahrerlaubnis.
+- Richtungen ohne Maßnahme: Wettbewerb und Preistransparenz in Fahrschulen; Qualität und Prüfungsreife sichern; konkrete Entschlackung der Prüfung (Pflichtstunden, Theorieprüfung).

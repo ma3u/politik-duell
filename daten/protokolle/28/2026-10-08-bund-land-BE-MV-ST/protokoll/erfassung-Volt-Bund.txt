@@ -1,0 +1,16 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Achtwöchiger Vaterschaftsurlaub und dreimonatige Mindest-Elternzeit je Elternteil, um Familienarbeit partnerschaftlich aufzuteilen", "ursachen_ids": [2801], "zitat": "Ein achtwöchiger Vaterschaftsurlaub während des Wochenbetts sowie eine dreimonatige Mindest-Elternzeit pro Elternteil nach schwedischem Vorbild fördern partnerschaftliche Familienstrukturen.", "seite": 149 },
+    { "beschreibung": "Ehegattensplitting abschaffen und jedem Elternteil einen eigenen Elterngeld-Anspruch auf sieben Monate geben", "ursachen_ids": [2801], "zitat": "Das Ehegattensplitting wird abgeschafft, das Elterngeld reformiert und künftig jedem Elternteil ein individueller Anspruch auf sieben Monate Elterngeld zugesichert.", "seite": 52 },
+    { "beschreibung": "Teilzeit-Elterngeld attraktiver gestalten und fördern", "ursachen_ids": [2802], "zitat": "Das Teilzeit-Elterngeld wird attraktiver gestaltet und gefördert.", "seite": 149 },
+    { "beschreibung": "Flexible Arbeitszeitmodelle ausbauen und betriebliche Kinderbetreuung steuerlich fördern, um Beruf und Familie besser zu vereinbaren", "ursachen_ids": [2802], "zitat": "Betriebliche Kinderbetreuung wird durch steuerliche Anreize unterstützt, und flexible Arbeitszeitmodelle werden ausgebaut.", "seite": 151 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2804, "seiten": [37, 105, 151, 152], "grund": "Fundstellen zu Schulung/Beschwerdestelle betreffen Rassismus, Verwaltung, Weiterbildung; Schutz vor Belästigung (S. 151-152) gehört nach R2 zu Sicherheit. Nichts zu betrieblicher Beschwerdestelle." },
+    { "ursache": 2803, "seiten": [149, 150], "grund": "Kapitel Gleichberechtigung für Frauen gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter." }
+  ]
+}
+
+Protokoll: Gelesen S. 52, 149-152 sowie Treffer per Grep zu Frauen/Gleichstellung/Belästigung. Nicht erfasst: S. 52 Betreuungsangebot (Kita-Betreuung), S. 151 Transparenzpflicht und Entgeltgleichheit (Zitat ohne Teilzeit, R2), Frauenquote, Ehegattensplitting (S. 151, gleiche Zusage wie S. 52), S. 152 Frauenhäuser/Gewalt (Sicherheit), S. 149 Kinderkrankentage/Kündigungsschutz Alleinerziehende (keine Ursache). Zuordnung "Teilzeit-Elterngeld" und "flexible Arbeitszeitmodelle" zu 2802 ist knapp, aber vertretbar.

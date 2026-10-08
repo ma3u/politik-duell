@@ -1,0 +1,45 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Lokale Kulturorte flächendeckend und verlässlich fördern, darunter Vereinshäuser, mobile Clubs und lokale Festivals",
+      "ursachen_ids": [3203],
+      "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören Dorfkirchen und Kirchensanierungen, Bibliotheken, Musikschulen, Vereinshäuser, Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+      "seite": 129
+    },
+    {
+      "beschreibung": "Dem Clubsterben entgegenwirken und sich für mehr (mobile) Club-Angebote vor allem im ländlichen Raum einsetzen",
+      "ursachen_ids": [3201],
+      "zitat": "Wir wirken dem Clubsterben entgegen und setzen uns für mehr (mobile) Club-Angebote insbesondere im ländlichen Raum ein.",
+      "seite": 129
+    },
+    {
+      "beschreibung": "Kultur-Investitionsprogramm für den Erhalt von Gebäuden, ihrer Technik, Barrierearmut, Brandschutz und Digitalisierung",
+      "ursachen_ids": [],
+      "ursachen_offen": [3204],
+      "zitat": "Mit einem Kultur-Investitionsprogramm unterstützen wir den Erhalt von Gebäuden, deren Technik und auch Barrierearmut, Brandschutz und Digitalisierung.",
+      "seite": 130
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3202, "seiten": [88, 134], "grund": "S. 88 Bau- und Immissionsschutzrecht für Tierhaltung (anderer Zusammenhang), S. 134 Stichwortverzeichnis; im Kapitel Kulturland nichts zu Schall, Lärmschutz oder Genehmigung von Veranstaltungen." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3–4; Kapitel J „Kulturland“ S. 128–132 vollständig; Fundstellen S. 11, 18, 19, 78, 86, 88, 92, 93 (Auszüge im Auftrag geprüft), S. 134/138 Stichwortverzeichnis übersprungen.
+
+Grenzfall: Kultur-Investitionsprogramm (S. 130) nennt Gebäude, Technik und Brandschutz (passt zu 3204), aber keine Clubs, Spielstätten oder soziokulturellen Zentren (R2) – daher 3204 offen.
+
+Nicht erfasst:
+- S. 11, 18: Gewerbeflächen für Unternehmensansiedlung – anderer Zusammenhang.
+- S. 19: Vereinfachung der Landesbauordnung für Umbauten allgemein – kein Bezug zu Veranstaltungsorten.
+- S. 78, 92, 93: Umbau für Mehrgenerationenwohnen bzw. Waldumbau – anderer Zusammenhang.
+- S. 86: Bestandsschutz für landwirtschaftliche Investitionen – anderer Zusammenhang.
+- S. 128: „Kulturförderung erfolgt planbar, nachhaltig und nachvollziehbar“ – Ziel; Förderung von Festivallandschaft, Musik- und Jugendkunstschulen – allgemeine Kulturförderung (R2).
+- S. 129: Digitalisierung und Energieeffizienz von Kultureinrichtungen, Stärkung von Theatern, Orchestern, Museen – allgemeine Kulturförderung (R2).
+- S. 130: mehrjährige Fördervereinbarungen „etwa für wiederkehrende Festivals“ – allgemeine Kulturförderung ohne Bezug zu Kulturorten (R2); Denkmalschutz, Kirchensanierungsfonds – kein Bezug zu Spielstätten.
+- S. 131: kulturelle Bildung auch über soziokulturelle Zentren anbieten – kulturelle Bildung, keine Förderung der Orte selbst; ehrenamtlich getragene Kultur (Dorftheater, Chöre) – R2.
+- S. 132: Infrastruktur von Kultureinrichtungen modernisieren (Digitalisierung, Energieeffizienz) – allgemein (R2), entspricht S. 129.
+Richtungen ohne Maßnahme: Schallschutz/Genehmigungen, Emissionen begrenzen (3202), Eigenmittel und Kooperationen (3203), Nutzung an das Gebäude anpassen (3204).

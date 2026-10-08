@@ -1,0 +1,51 @@
+{
+  "blind_pruefsumme": "8cad333a3d5b397291320a2980797d5094a3cc7db8190d3fcec1cb95fbe9eb4b",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Mehr nicht übertragbare Elterngeldmonate je Elternteil im bisherigen Umfang (Bund)", "wirksamkeit": 3, "umsetzbarkeit": 3, "begruendung": "Reservierte Partnermonate erhöhen die Elternzeit von Vätern deutlich; Studien aus Deutschland und Québec zeigen danach dauerhaft mehr Haus- und Sorgearbeit der Väter, in Schweden fand sich kein solcher Effekt. Umbau im bestehenden Elterngeld ohne große Mehrkosten.", "evidenz": "belegt", "beleg_studie_url": "https://www.rwi-essen.de/publikationen/zitationsansicht/gemischt/detail/fathers-parental-leave-taking-childcare-involvement-and-1043" },
+    { "kennung": "I2", "name": "Elterngeld verlängern mit mehr nicht übertragbaren Monaten je Elternteil (Bund)", "wirksamkeit": 3, "umsetzbarkeit": 2, "begruendung": "Reservierte Monate für jeden Elternteil verschieben laut Québec- und Deutschland-Studien die Hausarbeit dauerhaft zu den Vätern. Die Verlängerung des Bezugs verursacht aber erhebliche Mehrkosten und braucht Finanzierung.", "evidenz": "belegt", "beleg_studie_url": "https://ideas.repec.org/a/ucp/jlabec/doi10.1086-703115.html" },
+    { "kennung": "I3", "name": "Bezahlte Freistellung des zweiten Elternteils direkt nach der Geburt (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Kurze Partnerfreistellung wird stark genutzt und erleichtert Müttern den Wiedereinstieg; in Spanien änderte sie die längerfristige Aufteilung aber kaum. Gesetzlich einfach, umlage- oder steuerfinanziert machbar.", "evidenz": "gemischt", "beleg_studie_url": "https://www.iza.org/publications/dp/10865" },
+    { "kennung": "I4", "name": "Elterngeld bei Teilzeit und Partnerschaftsbonus verbessern (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "ElterngeldPlus und Partnerschaftsbonus werden zunehmend genutzt, der Bonus aber nur von einem kleinen Teil der Väter; eine messbare Wirkung auf Aufteilung oder Rückkehr aus der Teilzeit ist kaum untersucht. Leicht im bestehenden Gesetz umsetzbar.", "evidenz": "offen", "beleg_studie_url": "https://www.bundestag.de/webarchiv/textarchiv/2018/kw08-de-elterngeld-plus-542316" },
+    { "kennung": "I5", "name": "Flexible Arbeitszeiten, Homeoffice und betriebliche Kinderbetreuung fördern (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Homeoffice erhöht laut Paneldaten die vertraglichen Stunden von Müttern; Appelle an Arbeitgeber und Steueranreize für Betriebskitas bleiben aber unverbindlich, ihre Wirkung auf Teilzeit ist offen.", "evidenz": "gemischt", "beleg_studie_url": "https://www.zew.de/PU80770" },
+    { "kennung": "I6", "name": "Haushaltsnahe Dienstleistungen staatlich fördern (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Zuschüsse oder Steuerabzug entlasten Haushalte bei Routinearbeit, verändern aber nicht die Aufteilung zwischen Partnern; Evaluationen in Belgien und Schweden können Effekte für die Nutzenden nicht sicher belegen. Ein neues Budget braucht Finanzierung.", "evidenz": "offen", "beleg_studie_url": "https://www.tillvaxtanalys.se/en-GB/publikationer/pm/pm/branschspecifikaskattelattnadereninternationelljamforelse.4573.html" },
+    { "kennung": "I7", "name": "Geschlechterrollen in Kita, Schule, Berufsorientierung und Fachkräfteausbildung thematisieren (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Ein Schulexperiment in Indien veränderte Rollenbilder messbar und dauerhaft; Evaluationen hier messen meist Zufriedenheit, die Wirkung auf Erwartungen an Mütter ist offen. Liegt in Landeszuständigkeit und ist günstig umsetzbar.", "evidenz": "gemischt", "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/aer.20201112" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I4", "ursachen": [2802] },
+    { "kennung": "M02", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M03", "instrument": "I5", "ursachen": [2802] },
+    { "kennung": "M04", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M05", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M06", "instrument": "I5", "ursachen": [2802] },
+    { "kennung": "M07", "instrument": "I3", "ursachen": [2801] },
+    { "kennung": "M08", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Flexiblere Arbeitszeiten können Vereinbarkeit erleichtern, ein Bezug zur Teilzeitfalle ist aber kaum belegt. Eine ersatzlose Abschaffung widerspräche der EU-Arbeitszeitrichtlinie (Höchstarbeitszeit, Ruhezeiten); nötig wäre eine Ersatzregelung.", "evidenz": "offen" }, "ursachen": [2802] },
+    { "kennung": "M09", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Belästigung als Pflicht im Arbeitsschutz (Gefährdungsbeurteilung, Aufsicht) macht Prävention und Beschwerdewege verbindlicher, wo 40 % die Beschwerdestelle nicht kennen; die Wirkung dieses Wegs ist kaum evaluiert. Einfache Gesetzesänderung.", "evidenz": "offen", "beleg_studie_url": "https://www.antidiskriminierungsstelle.gov.de/SharedDocs/pressemitteilungen/EN/2019/20191025_Study_sexual_harrasment.html" }, "ursachen": [2804] },
+    { "kennung": "M10", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Mehr Beratung und ein reformiertes AGG können Betroffenen den Beschwerdeweg erleichtern; die Zusage bleibt allgemein und nennt sexuelle Belästigung am Arbeitsplatz nicht ausdrücklich.", "evidenz": "offen" }, "ursachen": [2804] },
+    { "kennung": "M11", "instrument": "I1", "ursachen": [2801] },
+    { "kennung": "M12", "instrument": "I2", "ursachen": [2801] },
+    { "kennung": "M13", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M14", "instrument": "I3", "ursachen": [2801] },
+    { "kennung": "M15", "ursachen": [] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Ein breiteres Rückkehrrecht in Vollzeit setzt direkt an ungewollter Teilzeit an, da die heutige Brückenteilzeit viele kleine Betriebe ausnimmt und selten genutzt wird; eine Wirkungsevaluation fehlt. Änderung im Teilzeitgesetz.", "evidenz": "offen" }, "ursachen": [2802] },
+    { "kennung": "M17", "instrument": "I4", "ursachen": [2801] },
+    { "kennung": "M18", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Minijobs verstärken mit Splitting und Mitversicherung geringe Stunden verheirateter Frauen; ihre Überführung würde diesen Anreiz abbauen. Wie viele Stunden tatsächlich steigen, ist unsicher; der schrittweise Umbau braucht Zeit.", "evidenz": "gemischt", "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2026/maerz/nach-kinderphase-ehegattensplitting-bremst-beschaeftigung-von-frauen-aus" }, "ursachen": [2802] },
+    { "kennung": "M19", "instrument": "I2", "ursachen": [2801] },
+    { "kennung": "M20", "einzeln": { "wirksamkeit": 3, "umsetzbarkeit": 2, "begruendung": "Eigene Elterngeldmonate je Elternteil verschieben belegt Sorgearbeit zu Vätern; das Splitting bremst laut Studien die Stundenausweitung von Ehefrauen. Eine Abschaffung muss aber das Existenzminimum des Partners sichern und betrifft Bestandsehen.", "evidenz": "belegt", "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2026/maerz/nach-kinderphase-ehegattensplitting-bremst-beschaeftigung-von-frauen-aus" }, "ursachen": [2801, 2802] },
+    { "kennung": "M21", "instrument": "I6", "ursachen": [2801] },
+    { "kennung": "M22", "instrument": "I6", "ursachen": [2801] },
+    { "kennung": "M23", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M24", "ursachen": [] },
+    { "kennung": "M25", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M26", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Ein Rückkehrrecht auf denselben oder gleichwertigen Arbeitsplatz erleichtert den Wiedereinstieg, schreibt aber weitgehend fest, was EU-Recht (Richtlinie 2019/1158) bereits vorsieht; zur Wirkung gibt es kaum Studien.", "evidenz": "offen" }, "ursachen": [2802] },
+    { "kennung": "M27", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Hilfen zum Wiedereinstieg setzen an langer Teilzeit an; ein Erziehungsgeld für Eigenbetreuung senkte in Westdeutschland aber leicht die Erwerbstätigkeit von Müttern. Ein Bundes-Betreuungsgeld wurde 2015 mangels Bundeskompetenz verworfen.", "evidenz": "gemischt", "beleg_studie_url": "https://jhr.uwpress.org/node/11990" }, "ursachen": [2802] },
+    { "kennung": "M28", "ursachen": [] },
+    { "kennung": "M29", "instrument": "I1", "ursachen": [2801] },
+    { "kennung": "M30", "instrument": "I7", "ursachen": [2803] },
+    { "kennung": "M31", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Ein Anspruch auf Vollzeit und familienfreundliche Schichten setzt direkt an ungewollter Teilzeit an; Belege zur Wirkung fehlen. Ein allgemeiner Anspruch greift stark in betriebliche Planung ein und braucht Ausnahmen, daher aufwendig.", "evidenz": "offen" }, "ursachen": [2802] }
+  ]
+}
+
+Hinweise:
+- Nicht bestätigt: keine der vorgeschlagenen Ursachen gestrichen; M27 behält 2802 nur wegen der Wiedereinstiegshilfen.
+- Offene Ursachen: 2803 bestätigt für M02 und M05 (Rollenbilder in Bildung, wie I7); 2802 bestätigt für M03 (gleicher Weg wie M06); 2804 bestätigt für M10 (Beratung/Beschwerdeweg, nur am Rand); 2801 bestätigt für M21 (gleicher Weg wie M22, Entlastung laut Regel 1).
+- Keine Ursache: M15 und M24 (Erziehungsgeld/Betreuungsgehalt zur Wahlfreiheit; Regel 1: Wahlfreiheit ist selbst keine Benachteiligung; ein Betreuungsgeld ändert keine Erwartungen an Mütter und wirkt der Erwerbstätigkeit eher entgegen). M28 (Aufwertung der Sorgearbeit und Absicherung Pflegender betrifft Pflege, nicht Rollenbilder an Mütter; Wiedereinstieg steht nur in der Beschreibung, nicht im Zitat).
+- Schwierig: Partnermonate (I1/I2) als belegt mit 3, obwohl eine schwedische Studie keinen dauerhaften Effekt fand und die kurze Freistellung in Spanien (I3) längerfristig wenig änderte. M08: Umsetzbarkeit 1 statt 0, weil eine EU-konforme Ersatzregelung denkbar ist; bei wörtlicher ersatzloser Abschaffung wäre 0 vertretbar. M20 kombiniert Partnermonate und Splitting; deshalb Einzelbewertung statt I2. M15/M24 als "keine Ursache" ist ein Grenzfall zu 2803.

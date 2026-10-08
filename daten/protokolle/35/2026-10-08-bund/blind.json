@@ -1,0 +1,136 @@
+{
+  "pruefsumme": "50b430d0e365be01436fa4f3a93e442c639e9c9a686c60e30146dbbc5192380c",
+  "thema": {
+    "id": 35,
+    "name": "Kosten für den Führerschein",
+    "ziel": "Menschen können die Fahrerlaubnis zu bezahlbaren, nachvollziehbaren Kosten und in verlässlich planbaren Abläufen erwerben und sicher fahren lernen."
+  },
+  "ursachen": [
+    {
+      "id": 3501,
+      "beschreibung": "Fahrschule und Führerscheingebühr wurden 2024 durchschnittlich um 5,8 % teurer als im Vorjahr; die Verbraucherpreise insgesamt stiegen um 2,2 %",
+      "ebene": "bund"
+    },
+    {
+      "id": 3502,
+      "beschreibung": "Nicht bestandene Prüfungen führen zu Wiederholungskosten: 2025 wurden 828.324 von 2.042.050 theoretischen und 577.858 von 1.886.133 praktischen Prüfungen nicht bestanden",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3501,
+        3502
+      ],
+      "text": "Zu 3501 gehören Preise, Gebühren, Wettbewerb und Transparenz bei Fahrschulen und der Fahrerlaubnis (Prüfungsgebühren, Kosten für Auszubildende), zu 3502 Ausbildungs- und Prüfungsanforderungen (Theorie, Praxis, Umfang der Pflichtstunden, Wiederholungen)."
+    },
+    {
+      "nr": 2,
+      "text": "Spritpreise, Kfz-Steuer, Elektroautos und Parkplätze gehören zu Autofahren, Führerschein für Berufe oder Dienste ohne Bezug zum Erwerb der Fahrerlaubnis ist keine Maßnahme dieses Themas. Förderung des Führerscheinerwerbs für bestimmte Gruppen zählt zu 3501."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Arbeitgeber sollen Auszubildenden und jungen Beschäftigten einen Führerscheinzuschuss bis 2.000 Euro steuer- und abgabenfrei zahlen können",
+      "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "ce672a817499510f"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Fahrausbildung samt Theorieunterricht reformieren, im Sinne von Verkehrssicherheit und Effizienz und mit dem Ziel spürbar geringerer Kosten",
+      "zitat": "Vor dem Hintergrund erhöhter Quoten nicht bestandener Prüfungen und steigender Preise werden wir die Fahrausbildung samt Theorieunterricht im Sinne von Verkehrssicherheit und Effizienz reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken.",
+      "ursachen_ids": [
+        3502
+      ],
+      "ursachen_offen": [
+        3501
+      ],
+      "pruefsumme": "090b44fd66a3aaf0"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Führerscheinerwerb für Menschen in Ausbildung finanziell fördern",
+      "zitat": "Wir wollen für Menschen in Ausbildung auch den Führerscheinerwerb fördern, eine Lösung für ein Azubi-Deutschland-Ticket finden und den öffentlichen Personennahverkehr (ÖPNV) für Auszubildende attraktiver machen.",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "98274c3f84167b21"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Mobilitätspass mit 500 Euro Guthaben für alle jungen Menschen im 17. Lebensjahr, nutzbar u. a. für Führerscheinkosten",
+      "zitat": "Alle jungen Menschen im 17. Lebensjahr sollen daher einen MobilitätsPass mit 500 Euro Guthaben, etwa für Führerscheinkosten, Bahntickets oder Fahrräder, erhalten.",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "0ec3eb89a49e003b"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Begleitetes Fahren schon ab 16 Jahren ermöglichen",
+      "zitat": "In diesem Zusammenhang wollen wir auch das begleitete Fahren bereits ab 16 Jahren ermöglichen.",
+      "ursachen_ids": [
+        3502
+      ],
+      "pruefsumme": "637224dca475bb6a"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Führerschein für junge Menschen bezahlbar machen, indem Bürokratie abgebaut und die Fahrausbildung effizienter gestaltet wird",
+      "zitat": "Der Führerschein muss für junge Menschen bezahlbar sein. Dafür gilt es, Bürokratie abzubauen und die Ausbildung effizient zu gestalten.",
+      "ursachen_ids": [
+        3501
+      ],
+      "ursachen_offen": [
+        3502
+      ],
+      "pruefsumme": "fb043108a83eacbf"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Begleitetes Fahren schon ab 16 Jahren ermöglichen, damit frühe Fahrpraxis die Verkehrssicherheit erhöht",
+      "zitat": "Das begleitete Fahren wollen wir ab 16 Jahren ermöglichen – denn frühe Fahrpraxis erhöht nachweislich die Verkehrssicherheit.",
+      "ursachen_ids": [
+        3502
+      ],
+      "pruefsumme": "f40c88cebda3c177"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Führerschein und Lkw-/Bus-Führerschein günstiger machen: keine Tagesobergrenze für Theorieunterricht, Theorie digital, Fahrsimulatoren in der Ausbildung",
+      "zitat": "Deshalb wollen wir den Führerschein und die Berufskraftfahrerqualifikation (Lkw-Führerschein, Bus-Führerschein) wieder günstiger machen, z. B. durch den Verzicht auf eine Tagesobergrenze für den Theorieunterricht, die Möglichkeit den Theorieunterricht digital zu absolvieren und die Integration von Fahrsimulatoren in der Ausbildung.",
+      "ursachen_ids": [
+        3502
+      ],
+      "ursachen_offen": [
+        3501
+      ],
+      "pruefsumme": "4a09e8c1dc12629e"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Prüfungsmarkt für weitere Anbieter öffnen und Fahrprüfer-Weiterbildung ohne Ingenieursstudium, um mehr Prüftermine und kürzere Wartezeiten zu erreichen",
+      "zitat": "Mit der Öffnung des Prüfungsmarktes für weitere Anbieter und einer Weiterbildung zum Fahrprüfer auch ohne Ingenieursstudium wollen wir die Anzahl an Prüfterminen steigern und Wartezeiten deutlich senken.",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "efdd1b9187bd41ec"
+    }
+  ]
+}

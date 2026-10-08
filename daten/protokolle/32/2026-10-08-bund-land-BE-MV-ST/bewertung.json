@@ -1,0 +1,934 @@
+{
+  "blind_pruefsumme": "de41c7655e258a1653d7b10cddc3be496ae83debc4087bd10ac38e1ef7d32755",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Agent-of-Change-Prinzip: Neubau neben bestehenden Clubs trägt den Schallschutz (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an Lärmkonflikten durch heranrückende Wohnbebauung an. In Großbritannien seit 2018 Planungsgrundsatz, doch Kommunen wenden ihn uneinheitlich an; im Land nur über Bebauungspläne und Verträge, Kern liegt im Bundesrecht.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.localgovernmentlawyer.co.uk/planning/401-planning-news/57383-agent-of-change-principles-should-be-enshrined-in-law-select-committee-says"
+    },
+    {
+      "kennung": "I2",
+      "name": "Lärmrechtliche Ausnahmen und Lärmtoleranzzonen für Kulturveranstaltungen im Landesrecht (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schafft rechtssichere Spielräume für Veranstaltungen abseits von Wohngebieten oder zu längeren Zeiten; Land kann das im Immissionsschutz regeln. Wirkt vor allem für Freiluftangebote, Wirkung kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I3",
+      "name": "Genehmigungsverfahren für Veranstaltungen und Spielstätten vereinfachen und bündeln (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt Aufwand und Kosten für Veranstaltende und ist im Land gut umsetzbar. Lärmkonflikte mit Anwohnenden selbst löst ein einfacheres Verfahren kaum; Wirkung wenig untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Clubs im Bauplanungsrecht als Kulturorte einstufen und vor Verdrängung schützen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bisher gelten Clubs als Vergnügungsstätten und sind in vielen Gebieten unzulässig; eine eigene Kategorie erweitert Standorte. Bund zuständig, Kabinett hat 2026 eine Novelle beschlossen; Lärmregeln (TA Lärm) bleiben offen, Wirkung noch unbelegt.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://miz.org/en/news/livekomm-begrusst-kabinettsbeschluss-zu-musikclubs-im-baurecht"
+    },
+    {
+      "kennung": "I5",
+      "name": "Für Reform von Baurecht und Lärmschutz zugunsten von Clubs auf Bundesebene eintreten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Baurecht und TA Lärm setzen an Standortsicherung und Lärmkonflikten an. Das Land kann die Reform nur über Bundesrat und Bund anstoßen, nicht selbst beschließen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I6",
+      "name": "Gewerbemieten für Kulturorte und Kleingewerbe gesetzlich begrenzen oder Begrenzung ermöglichen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an steigenden Gewerbemieten an, für die es bisher keinen Schutz gibt; Bund ist zuständig. Erfahrungen mit der Wohnungs-Mietpreisbremse zeigen nur moderate Dämpfung, für Gewerbe fehlen Studien.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.578099.de/publikationen/wochenberichte/2018_07_1/mietpreisbremse_ist_besser_als_ihr_ruf__aber_nicht_die_loesung_des_wohnungsmarktproblems.html"
+    },
+    {
+      "kennung": "I7",
+      "name": "Über den Bundesrat für Begrenzung der Gewerbemieten eintreten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Gewerbemietbegrenzung setzt an der Verdrängung an, Wirkung analog zur Mietpreisbremse eher moderat. Gewerbemietrecht ist Bundesrecht; das Land kann nur eine Initiative einbringen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.578099.de/publikationen/wochenberichte/2018_07_1/mietpreisbremse_ist_besser_als_ihr_ruf__aber_nicht_die_loesung_des_wohnungsmarktproblems.html"
+    },
+    {
+      "kennung": "I8",
+      "name": "Landeseigene Immobilien für Kulturnutzung öffnen, günstig überlassen oder ankaufen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft Räume außerhalb des Mietmarkts; Raumprogramme mit öffentlichen Flächen funktionieren seit Jahren, der Bedarf übersteigt das Angebot aber deutlich. Geeignete Flächen und Umbaukosten begrenzen die Umsetzung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/arbeitsraeume/"
+    },
+    {
+      "kennung": "I9",
+      "name": "Leerstand und Zwischennutzungen für Kultur erschließen und erleichtern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bringt kurzfristig günstige Räume in Nutzung und ist leicht umsetzbar. Zwischennutzungen sind befristet und schaffen keine dauerhaften Orte; Erfolg hängt laut Untersuchungen an der Kooperation der Eigentümer.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/1355.php4"
+    },
+    {
+      "kennung": "I10",
+      "name": "Kulturorte und Clubstandorte in Stadtplanung und Bebauungsplänen sichern und einplanen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Planungsrechtliche Sicherung kann Standorte vor Umnutzung schützen und neue Orte vorsehen. Wirkt langsam, hängt an Kommunen und Bundesbaurecht, schützt nicht vor Mietsteigerungen; kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I11",
+      "name": "Öffentlich geförderte Arbeits- und Proberäume für Kulturschaffende über Generalanmietung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Generalanmietung mit Förderung der Mietdifferenz sichert seit Jahrzehnten bezahlbare Räume. Der Bedarf übersteigt das Angebot um ein Vielfaches, der Ausbau ist teuer und dauert.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/arbeitsraeume/"
+    },
+    {
+      "kennung": "I12",
+      "name": "Verlässliche Förderung von Clubs, Spielstätten und soziokulturellen Zentren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an knappen Budgets an; Clubs arbeiten mit geringen Margen, Förderung kommt laut Evaluationen an. Höhe und Dauer oft unbestimmt, Mieten und Lärm bleiben unberührt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://miz.org/en/news/evaluationsbericht-zum-spielstaettenprogrammpreis-rock-pop-jazz-veroeffentlicht-n11734"
+    },
+    {
+      "kennung": "I13",
+      "name": "Förderung von Betrieb und baulichen Investitionen kleiner Spielstätten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbindet Betriebskosten mit Investitionen in Technik, Sanierung und Schutzmaßnahmen und setzt so an mehreren Ursachen an. Förderung wirkt laut Evaluationen, Umfang und Reichweite bleiben offen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://miz.org/en/news/evaluationsbericht-zum-spielstaettenprogrammpreis-rock-pop-jazz-veroeffentlicht-n11734"
+    },
+    {
+      "kennung": "I14",
+      "name": "Notfall- und Krisenhilfe für akut bedrohte Clubs (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Schließungen in akuten Notlagen abwenden, wie Krisenhilfen in der Pandemie zeigten. Lindert aber nur Folgen und verbessert die dauerhafte Finanzierung nicht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bundesregierung.de/breg-de/suche/neustart-kultur-evaluation-zeigt-wirksamkeit-des-programms-2324916"
+    },
+    {
+      "kennung": "I15",
+      "name": "Zugang von Clubs zur Kulturförderung öffnen und Förderrichtlinien anpassen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Öffnet wirtschaftlich arbeitenden Clubs bestehende Förderung, ohne Mittel aufzustocken. Wirkung hängt von verfügbaren Budgets ab, kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I16",
+      "name": "Investitionen in Ausstattung und Technik öffentlicher Veranstaltungsorte (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbessert Technik und Publikumsbetrieb vorhandener Orte. Zielt auf öffentliche Häuser, nicht auf kleine freie Spielstätten in umgenutzten Gebäuden; Wirkung kaum untersucht.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M001",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Bestandsschutz würde Kulturorte direkt vor Verdrängung durch Umnutzung sichern. Bauplanungsrecht ist Bundesrecht, das Land kann ihn kaum selbst einführen; Wirkung unbelegt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M002",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M003",
+      "instrument": "I9",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M004",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Anerkennung und Schutz von Clubs sind als Richtung benannt, ohne Instrument. Ohne konkrete Regelung bleibt die Wirkung auf Verdrängung gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M005",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Eine Taskforce kann bedrohte Räume schnell begleiten und vermitteln. Ohne eigene Rechte oder Mittel bleibt der Schutz vor Verdrängung begrenzt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M006",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Erschließt zusätzliche Flächen auch für Kultur. Hängt von der Bahn ab, Kultur konkurriert dort mit Geschäftsnutzungen um Mieten.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M007",
+      "instrument": "I2",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M008",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schallschutz an Spielstätten setzt direkt an Lärmkonflikten an; das Bundesprogramm war fünffach überzeichnet. Fortführung im Haushalt ungesichert, Wirkung nicht evaluiert.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://miz.org/de/nachrichten/verbaende-kritisieren-moegliches-ende-des-bundes-schallschutz-programms"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M009",
+      "instrument": "I16",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M010",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bundesregeln könnten Planern mehr Raum für Clubkultur geben. Unbestimmt, welche Regel geändert wird; Umsetzung bleibt bei den Kommunen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M011",
+      "instrument": "I8",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M012",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein Schallschutzfonds finanziert Dämmung und Technik und entschärft so Lärmkonflikte; im Land bereits eingeführt. Eine Evaluation der Wirkung liegt nicht vor.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://miz.org/de/nachrichten/verbaende-kritisieren-moegliches-ende-des-bundes-schallschutz-programms"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M013",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Zielt auf Verdrängung von Gewerbe einschließlich Kulturorten. Milieuschutz nach Baugesetzbuch schützt Gewerbe nicht vor Mieterhöhungen; dafür wäre Bundesrecht nötig.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.bundestag.de/resource/blob/569790/WD-7-185-18-pdf.pdf"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M014",
+      "instrument": "I1",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M015",
+      "instrument": "I16",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M016",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M017",
+      "instrument": "I15",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M018",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Kommunaler Rückkauf entzieht Räume dem Mietmarkt und sichert sie dauerhaft. Bund kann über Fonds beitragen, Umfang und Finanzierung sind offen; Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M019",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M020",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M021",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M022",
+      "instrument": "I11",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M023",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Benennt das Ziel, Clubs zu erhalten, und mobile Angebote auf dem Land. Ohne Instrument gegen Mieten oder Verdrängung bleibt die Wirkung gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M024",
+      "instrument": "I3",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M025",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Umbau leerer Handelsflächen kann auch Kulturorte schaffen. Kultur ist eine von mehreren Nutzungen und konkurriert mit Wohnen und Büro; Umfang offen.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/1355.php4"
+      },
+      "ursachen": [
+        3201,
+        3204
+      ]
+    },
+    {
+      "kennung": "M026",
+      "instrument": "I3",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M027",
+      "ursachen": []
+    },
+    {
+      "kennung": "M028",
+      "ursachen": []
+    },
+    {
+      "kennung": "M029",
+      "instrument": "I8",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M030",
+      "ursachen": []
+    },
+    {
+      "kennung": "M031",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Frühe Mediation entschärft Lärmkonflikte, bevor Auflagen oder Schließungen drohen; ein New Yorker Programm meldet rund 80 Prozent gelöste Fälle. Bauliche Ursachen des Lärms bleiben.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.csmonitor.com/USA/Society/2023/0810/They-like-the-nightlife-Night-mayors-revive-cities-after-dusk?icid=rss"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M032",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M033",
+      "instrument": "I4",
+      "ursachen": [
+        3201,
+        3202
+      ]
+    },
+    {
+      "kennung": "M034",
+      "instrument": "I3",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M035",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein Fonds stärkt die Finanzierung von Kulturzentren; der Bund kann gemeinsam mit den Ländern beitragen. Höhe offen, Mittel verteilen sich auch auf Jugend- und Vereinszentren.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.bundesregierung.de/breg-de/suche/neustart-kultur-evaluation-zeigt-wirksamkeit-des-programms-2324916"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M036",
+      "instrument": "I5",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M037",
+      "instrument": "I15",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M038",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M039",
+      "instrument": "I7",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M040",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Auflagen senken Aufwand für Veranstaltende. Genehmigungen liegen großteils bei Ländern und Kommunen, Lärmkonflikte bleiben unberührt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M041",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M042",
+      "instrument": "I6",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M043",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M044",
+      "instrument": "I3",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M045",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schutz und Förderung kultureller Räume sind als Ziel benannt, ohne Instrument oder Betrag. Kulturorte sind Ländersache, der Bund kann nur mit Programmen beitragen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201,
+        3203
+      ]
+    },
+    {
+      "kennung": "M046",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M047",
+      "instrument": "I9",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M048",
+      "ursachen": []
+    },
+    {
+      "kennung": "M049",
+      "instrument": "I8",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M050",
+      "instrument": "I11",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M051",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Öffnet bestehende Investitionsprogramme des Bundes für Spielstätten der freien Szene und Popkultur, etwa für Umbau und Technik. Umfang offen, Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M052",
+      "instrument": "I9",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M053",
+      "ursachen": []
+    },
+    {
+      "kennung": "M054",
+      "instrument": "I9",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M055",
+      "instrument": "I7",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M056",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M057",
+      "instrument": "I3",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M058",
+      "instrument": "I7",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M059",
+      "instrument": "I11",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M060",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Umnutzung stillgelegter Industrieorte kann Raum für Kulturzentren schaffen. Schwerpunkt liegt auf Erhalt und Museen, Umbau ist teuer und langwierig.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M061",
+      "instrument": "I14",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M062",
+      "instrument": "I4",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M063",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Verlässliche Unterstützung gemeinnütziger Spielstätten ist als Ziel benannt, ohne Programm oder Betrag. Kulturförderung ist vorrangig Ländersache.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M064",
+      "ursachen": []
+    },
+    {
+      "kennung": "M065",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M066",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M067",
+      "instrument": "I4",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M068",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M069",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M070",
+      "instrument": "I1",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M071",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bestandsschutz und Verdrängungsschutz für Probe- und Atelierhäuser setzen an Verdrängung an. Kein konkretes Instrument benannt, Raumförderung liegt überwiegend bei den Ländern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M072",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M073",
+      "instrument": "I13",
+      "ursachen": [
+        3202,
+        3203,
+        3204
+      ]
+    },
+    {
+      "kennung": "M074",
+      "ursachen": []
+    },
+    {
+      "kennung": "M075",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M076",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M077",
+      "instrument": "I3",
+      "ursachen": [
+        3202,
+        3204
+      ]
+    },
+    {
+      "kennung": "M078",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M079",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M080",
+      "ursachen": []
+    },
+    {
+      "kennung": "M081",
+      "instrument": "I9",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M082",
+      "instrument": "I13",
+      "ursachen": [
+        3203,
+        3204
+      ]
+    },
+    {
+      "kennung": "M083",
+      "ursachen": []
+    },
+    {
+      "kennung": "M084",
+      "instrument": "I5",
+      "ursachen": [
+        3201,
+        3202
+      ]
+    },
+    {
+      "kennung": "M085",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M086",
+      "instrument": "I2",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M087",
+      "instrument": "I9",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M088",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M089",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Übernimmt Kosten für Sicherheitsauflagen nicht-kommerzieller Veranstaltungen. Betrifft vor allem Feste im Freien, nicht feste Spielstätten oder Lärmkonflikte.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M090",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M091",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M092",
+      "instrument": "I14",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M093",
+      "instrument": "I10",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M094",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M095",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Dämpft steigende Grundsteuer als Betriebskosten von Clubs und Kultureinrichtungen. Betrifft nur einen Kostenposten; Härtefallregeln sind im Landesrecht mit Aufwand möglich.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M096",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M097",
+      "instrument": "I6",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M098",
+      "instrument": "I12",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M099",
+      "instrument": "I8",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M100",
+      "ursachen": []
+    }
+  ]
+}

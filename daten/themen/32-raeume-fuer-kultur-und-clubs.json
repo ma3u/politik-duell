@@ -41,5 +41,1528 @@
       "ebene": "land",
       "schlagwoerter": ["kulturgebaeude", "veranstaltungstechnik", "umbau", "kulturort", "brandschutz"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9525,
+      "name": "Agent-of-Change-Prinzip: Neubau neben bestehenden Clubs trägt den Schallschutz (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an Lärmkonflikten durch heranrückende Wohnbebauung an. In Großbritannien seit 2018 Planungsgrundsatz, doch Kommunen wenden ihn uneinheitlich an; im Land nur über Bebauungspläne und Verträge, Kern liegt im Bundesrecht.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.localgovernmentlawyer.co.uk/planning/401-planning-news/57383-agent-of-change-principles-should-be-enshrined-in-law-select-committee-says",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9526,
+      "name": "Lärmrechtliche Ausnahmen und Lärmtoleranzzonen für Kulturveranstaltungen im Landesrecht (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schafft rechtssichere Spielräume für Veranstaltungen abseits von Wohngebieten oder zu längeren Zeiten; Land kann das im Immissionsschutz regeln. Wirkt vor allem für Freiluftangebote, Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9527,
+      "name": "Genehmigungsverfahren für Veranstaltungen und Spielstätten vereinfachen und bündeln (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt Aufwand und Kosten für Veranstaltende und ist im Land gut umsetzbar. Lärmkonflikte mit Anwohnenden selbst löst ein einfacheres Verfahren kaum; Wirkung wenig untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9528,
+      "name": "Clubs im Bauplanungsrecht als Kulturorte einstufen und vor Verdrängung schützen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bisher gelten Clubs als Vergnügungsstätten und sind in vielen Gebieten unzulässig; eine eigene Kategorie erweitert Standorte. Bund zuständig, Kabinett hat 2026 eine Novelle beschlossen; Lärmregeln (TA Lärm) bleiben offen, Wirkung noch unbelegt.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://miz.org/en/news/livekomm-begrusst-kabinettsbeschluss-zu-musikclubs-im-baurecht",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9529,
+      "name": "Für Reform von Baurecht und Lärmschutz zugunsten von Clubs auf Bundesebene eintreten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Baurecht und TA Lärm setzen an Standortsicherung und Lärmkonflikten an. Das Land kann die Reform nur über Bundesrat und Bund anstoßen, nicht selbst beschließen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9530,
+      "name": "Gewerbemieten für Kulturorte und Kleingewerbe gesetzlich begrenzen oder Begrenzung ermöglichen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an steigenden Gewerbemieten an, für die es bisher keinen Schutz gibt; Bund ist zuständig. Erfahrungen mit der Wohnungs-Mietpreisbremse zeigen nur moderate Dämpfung, für Gewerbe fehlen Studien.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.578099.de/publikationen/wochenberichte/2018_07_1/mietpreisbremse_ist_besser_als_ihr_ruf__aber_nicht_die_loesung_des_wohnungsmarktproblems.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9531,
+      "name": "Über den Bundesrat für Begrenzung der Gewerbemieten eintreten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Gewerbemietbegrenzung setzt an der Verdrängung an, Wirkung analog zur Mietpreisbremse eher moderat. Gewerbemietrecht ist Bundesrecht; das Land kann nur eine Initiative einbringen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.578099.de/publikationen/wochenberichte/2018_07_1/mietpreisbremse_ist_besser_als_ihr_ruf__aber_nicht_die_loesung_des_wohnungsmarktproblems.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9532,
+      "name": "Landeseigene Immobilien für Kulturnutzung öffnen, günstig überlassen oder ankaufen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft Räume außerhalb des Mietmarkts; Raumprogramme mit öffentlichen Flächen funktionieren seit Jahren, der Bedarf übersteigt das Angebot aber deutlich. Geeignete Flächen und Umbaukosten begrenzen die Umsetzung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/arbeitsraeume/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9533,
+      "name": "Leerstand und Zwischennutzungen für Kultur erschließen und erleichtern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bringt kurzfristig günstige Räume in Nutzung und ist leicht umsetzbar. Zwischennutzungen sind befristet und schaffen keine dauerhaften Orte; Erfolg hängt laut Untersuchungen an der Kooperation der Eigentümer.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/1355.php4",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9534,
+      "name": "Kulturorte und Clubstandorte in Stadtplanung und Bebauungsplänen sichern und einplanen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Planungsrechtliche Sicherung kann Standorte vor Umnutzung schützen und neue Orte vorsehen. Wirkt langsam, hängt an Kommunen und Bundesbaurecht, schützt nicht vor Mietsteigerungen; kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9535,
+      "name": "Öffentlich geförderte Arbeits- und Proberäume für Kulturschaffende über Generalanmietung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Generalanmietung mit Förderung der Mietdifferenz sichert seit Jahrzehnten bezahlbare Räume. Der Bedarf übersteigt das Angebot um ein Vielfaches, der Ausbau ist teuer und dauert.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/arbeitsraeume/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9536,
+      "name": "Verlässliche Förderung von Clubs, Spielstätten und soziokulturellen Zentren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an knappen Budgets an; Clubs arbeiten mit geringen Margen, Förderung kommt laut Evaluationen an. Höhe und Dauer oft unbestimmt, Mieten und Lärm bleiben unberührt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://miz.org/en/news/evaluationsbericht-zum-spielstaettenprogrammpreis-rock-pop-jazz-veroeffentlicht-n11734",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9537,
+      "name": "Förderung von Betrieb und baulichen Investitionen kleiner Spielstätten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbindet Betriebskosten mit Investitionen in Technik, Sanierung und Schutzmaßnahmen und setzt so an mehreren Ursachen an. Förderung wirkt laut Evaluationen, Umfang und Reichweite bleiben offen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://miz.org/en/news/evaluationsbericht-zum-spielstaettenprogrammpreis-rock-pop-jazz-veroeffentlicht-n11734",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9538,
+      "name": "Notfall- und Krisenhilfe für akut bedrohte Clubs (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Schließungen in akuten Notlagen abwenden, wie Krisenhilfen in der Pandemie zeigten. Lindert aber nur Folgen und verbessert die dauerhafte Finanzierung nicht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bundesregierung.de/breg-de/suche/neustart-kultur-evaluation-zeigt-wirksamkeit-des-programms-2324916",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9539,
+      "name": "Zugang von Clubs zur Kulturförderung öffnen und Förderrichtlinien anpassen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Öffnet wirtschaftlich arbeitenden Clubs bestehende Förderung, ohne Mittel aufzustocken. Wirkung hängt von verfügbaren Budgets ab, kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9540,
+      "name": "Investitionen in Ausstattung und Technik öffentlicher Veranstaltungsorte (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbessert Technik und Publikumsbetrieb vorhandener Orte. Zielt auf öffentliche Häuser, nicht auf kleine freie Spielstätten in umgenutzten Gebäuden; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9541,
+          "instrument": 9528,
+          "beschreibung": "Clubs in der Baunutzungsverordnung als Orte der Kultur anerkennen",
+          "ursachen_ids": [3202, 3201],
+          "zitat": "Clubs sind Orte des kulturellen Austauschs. In der Baunutzungsverordnung sollten Clubs als Orte der Kultur anerkannt werden, um ihre gesellschaftliche Bedeutung zu unterstreichen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=59",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9542,
+          "beschreibung": "Genehmigungen und Auflagen für öffentliche Veranstaltungen vereinfachen (im Rahmen eines Pakets für Vereine)",
+          "ursachen_ids": [3202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Auflagen senken Aufwand für Veranstaltende. Genehmigungen liegen großteils bei Ländern und Kommunen, Lärmkonflikte bleiben unberührt.",
+          "zitat": "Genehmigungen und Auflagen für öffentliche Veranstaltungen machen wir einfacher.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=57",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9543,
+          "instrument": 9534,
+          "beschreibung": "Flächen für kreative Orte und Clubs frühzeitig sichern und planungsrechtlich verlässlich absichern",
+          "ursachen_ids": [3201],
+          "zitat": "Flächen für kreative Orte und Clubnutzungen sollen frühzeitig gesichert und planungsrechtlich verlässlich abgesichert werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9544,
+          "instrument": 9532,
+          "beschreibung": "Landeseigene Grundstücke im Rahmen einer kulturfreundlichen Stadtentwicklung stärker für Standorte der Kreativwirtschaft öffnen",
+          "ursachen_ids": [3201],
+          "zitat": "Wir setzen uns weiter für eine kulturfreundliche Stadtentwicklungspolitik ein, die landeseigene Grundstücke stärker auch für Standorte der Kreativwirtschaft öffnet.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9545,
+          "beschreibung": "S-Bahn-Bögen gemeinsam mit der Bahn als Kunst-, Kultur- und Geschäftsorte erschließen",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erschließt zusätzliche Flächen auch für Kultur. Hängt von der Bahn ab, Kultur konkurriert dort mit Geschäftsnutzungen um Mieten.",
+          "zitat": "Mit der Deutschen Bahn wollen wir S-Bahn-Bögen als Kunst-, Kultur- und Geschäftsorte erschließen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=121",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9546,
+          "beschreibung": "Programm für den Umbau von Handelsimmobilien auch für Kulturnutzungen auflegen",
+          "ursachen_ids": [3201, 3204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Umbau leerer Handelsflächen kann auch Kulturorte schaffen. Kultur ist eine von mehreren Nutzungen und konkurriert mit Wohnen und Büro; Umfang offen.",
+          "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen und ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/1355.php4",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9547,
+          "instrument": 9535,
+          "beschreibung": "Arbeitsraumprogramm für bezahlbare Arbeitsräume von Künstlerinnen und Künstlern weiter fördern, mit Fokus auf den Erhalt bestehender Räume",
+          "ursachen_ids": [3201],
+          "zitat": "Wir werden das Arbeitsraumprogramm weiter fördern und setzen einen Fokus auf den Erhalt von bestehenden Räumen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=119",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9548,
+          "instrument": 9539,
+          "beschreibung": "Förderrichtlinien praxisnäher gestalten, damit wirtschaftlich arbeitende Kultureinrichtungen nicht zwischen Kultur- und Wirtschaftsförderung durchs Raster fallen",
+          "ursachen_ids": [3203],
+          "zitat": "Förderrichtlinien sollen praxisnäher gestaltet werden, damit wirtschaftlich agierende Kultureinrichtungen nicht zwischen klassischer Kulturförderung und Wirtschaftsförderung durchs Raster fallen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=121",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9549,
+          "instrument": 9536,
+          "beschreibung": "Lokale Kulturorte flächendeckend und verlässlich fördern, darunter Vereinshäuser, mobile Clubs und lokale Festivals",
+          "ursachen_ids": [3203],
+          "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören Dorfkirchen und Kirchensanierungen, Bibliotheken, Musikschulen, Vereinshäuser, Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=129",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9550,
+          "beschreibung": "Dem Clubsterben entgegenwirken und sich für mehr (mobile) Club-Angebote vor allem im ländlichen Raum einsetzen",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Benennt das Ziel, Clubs zu erhalten, und mobile Angebote auf dem Land. Ohne Instrument gegen Mieten oder Verdrängung bleibt die Wirkung gering.",
+          "zitat": "Wir wirken dem Clubsterben entgegen und setzen uns für mehr (mobile) Club-Angebote insbesondere im ländlichen Raum ein.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=129",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9551,
+          "instrument": 9536,
+          "beschreibung": "Gezielte Startförderungen auflegen, insbesondere für Clubs und kreative Orte, und die Zusammenarbeit mit der Kultur- und Kreativwirtschaft intensivieren",
+          "ursachen_ids": [3203],
+          "zitat": "Wir werden die Zusammenarbeit mit der Kultur- und Kreativwirtschaft intensivieren und gezielte Startförderungen, insbesondere für Clubs und kreative Orte, auflegen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=82",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9552,
+          "instrument": 9528,
+          "beschreibung": "Kulturschutzgebiete im Baurecht einführen, die kulturelle Einrichtungen wie Clubs vor Verdrängung schützen und ihnen eine langfristige Perspektive sichern",
+          "ursachen_ids": [3201],
+          "zitat": "Mit „Kulturschutzgebieten“ im Baurecht schützen wir kulturelle Einrichtungen wie Clubs vor Verdrängung und sichern ihnen eine langfristige Perspektive.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=51",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9553,
+          "instrument": 9536,
+          "beschreibung": "Erstmals eine Spielstättenförderung für Clubs einführen und Empfehlungen der Berliner Strategie zur Nachtökonomie umsetzen",
+          "ursachen_ids": [3203],
+          "zitat": "Für die Clubwirtschaft initiieren wir erstmals eine Spielstättenförderung und setzen Empfehlungen aus der Berliner Strategie zur Berliner Nachtökonomie um. So sichern wir Clubs langfristig.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=11",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9554,
+          "instrument": 9531,
+          "beschreibung": "Mischung aus Gewerbe und Kultur in Kiezen erhalten: auf Bundesebene für Regeln zu bezahlbaren Gewerbemieten eintreten",
+          "ursachen_ids": [3201],
+          "zitat": "Wir erhalten den Mix aus Gewerbe, Dienstleistungen und Kultur in unseren Kiezen und schützen Unternehmen vor Verdrängung. Dafür setzen wir uns auf Bundesebene für gesetzliche Regelungen ein, mit denen wir bezahlbare Gewerbemieten durchsetzen können.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=13",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9555,
+          "instrument": 9533,
+          "beschreibung": "Leerstehende Einkaufszentren und Ladenzeilen für Kultur- und andere Angebote öffnen, Zwischennutzungen fördern und Genehmigungen vereinfachen",
+          "ursachen_ids": [3201],
+          "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=19",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9556,
+          "instrument": 9532,
+          "beschreibung": "Landeseigene Immobilien stärker für kulturelle Nutzungen öffnen und Räume wie beim Sport kostenlos bereitstellen",
+          "ursachen_ids": [3201],
+          "zitat": "Landeseigene Immobilien sollen- stärker für kulturelle Nutzungen geöffnet […] werden. Analog zum Sport sollen Räume kostenlos zur Verfügung gestellt werden.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=54",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9557,
+          "instrument": 9534,
+          "beschreibung": "Kulturfördergesetz und Stadtentwicklungsplan Kultur: Kultur in der Stadtplanung verankern, neue Quartiere von Anfang an mit kultureller Infrastruktur planen",
+          "ursachen_ids": [3201],
+          "zitat": "Ein neues Kulturfördergesetz sowie ein Stadtentwicklungsplan Kultur sollen Kunst und Kultur als feste Bestandteile der Stadtplanung verankern. Neue lebendige Quartiere planen wir von Anfang an mit kultureller Infrastruktur – in allen Bezirken, nicht nur im Zentrum.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=54",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9558,
+          "instrument": 9536,
+          "beschreibung": "Soziokulturelle Zentren und andere „Dritte Orte“ weiter fördern, insbesondere im ländlichen Raum",
+          "ursachen_ids": [3203],
+          "zitat": "Wir fördern weiterhin „Dritte Orte“ wie z.B. Soziokulturelle Zentren, die wichtig sind für die lokale Begegnung und Vernetzung.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=80",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9559,
+          "beschreibung": "Clubs als Kulturorte anerkennen und schützen",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Anerkennung und Schutz von Clubs sind als Richtung benannt, ohne Instrument. Ohne konkrete Regelung bleibt die Wirkung auf Verdrängung gering.",
+          "zitat": "Clubs werden als Kulturorte anerkannt und geschützt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=39",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9560,
+          "instrument": 9536,
+          "beschreibung": "Gast- und Spielstättenförderung für die freie Szene und Kulturhäuser ohne eigenes Ensemble einführen",
+          "ursachen_ids": [3203],
+          "zitat": "Zur Sicherung der Vielfalt wird eine Gast- und Spielstättenförderung der freien (Theater-)Szene und der Kulturhäuser ohne eigenes Ensemble auf den Weg gebracht.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9561,
+          "instrument": 9536,
+          "beschreibung": "Soziokulturelle Zentren, ehrenamtliche Kulturinitiativen und „Dritte Orte“ im ländlichen Raum gezielt fördern",
+          "ursachen_ids": [3203],
+          "zitat": "Ehrenamtliche Initiativen, soziokulturelle Zentren und „Dritte Orte“ im ländlichen Raum werden gezielt gefördert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9562,
+          "instrument": 9530,
+          "beschreibung": "Kulturelle Orte wie Clubs, Kinos und Theater im Gewerbemietrecht vor Verdrängung schützen",
+          "ursachen_ids": [3201],
+          "zitat": "Dazu gehören auch kulturelle Einrichtungen wie Theater, Kinos, Bibliotheken oder Clubs, die Raum für neue Begegnungen und gemeinsame Erfahrungen oder Projekte geben. Geschäfte und Gastronomie sind ebenso ein Teil davon: Wir wollen diese Orte deshalb im Gewerbemietrecht vor Verdrängung schützen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=105",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9563,
+          "instrument": 9528,
+          "beschreibung": "Rahmenbedingungen für Clubs und Livemusikstätten, vor allem in Innenstädten, durch Änderungen beim Lärmschutz und im Baurecht verbessern",
+          "ursachen_ids": [3202],
+          "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht […] verbessern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=124",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9564,
+          "beschreibung": "Förderung von Schallschutzmaßnahmen für Kulturorte ausbauen",
+          "ursachen_ids": [3202],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schallschutz an Spielstätten setzt direkt an Lärmkonflikten an; das Bundesprogramm war fünffach überzeichnet. Fortführung im Haushalt ungesichert, Wirkung nicht evaluiert.",
+          "zitat": "Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=124",
+          "beleg_studie_url": "https://miz.org/de/nachrichten/verbaende-kritisieren-moegliches-ende-des-bundes-schallschutz-programms",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9565,
+          "beschreibung": "Kultur-Investitionsprogramme des Bundes stärker auf Einrichtungen der freien Szene und der Popkultur ausrichten",
+          "ursachen_ids": [3204],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Öffnet bestehende Investitionsprogramme des Bundes für Spielstätten der freien Szene und Popkultur, etwa für Umbau und Technik. Umfang offen, Wirkung kaum untersucht.",
+          "zitat": "Wir wollen die Kultur-Investitionsprogramme des Bundes vielfältiger aufstellen, indem wir Einrichtungen der freien Szene und der Popkultur stärker berücksichtigen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=125",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9566,
+          "instrument": 9534,
+          "beschreibung": "Clubs und kleine Musikspielstätten durch planungsrechtliche Vorgaben und Auflagen von Land und Bezirken besser absichern",
+          "ursachen_ids": [3201],
+          "zitat": "Wir Bündnisgrüne wollen Berlins Clubkultur erhalten und gezielt weiterentwickeln. […] nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: von einer besseren Absicherung durch planungsrechtliche Vorgaben und Auflagen durch Land und Bezirke […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9567,
+          "instrument": 9527,
+          "beschreibung": "Genehmigungsverfahren für Clubs, kleine Musikspielstätten und Open-Air-Formate vereinfachen",
+          "ursachen_ids": [3202],
+          "zitat": "Neben dem von uns eingeführten Schallschutzfonds und der Unterstützung der Arbeit der Clubcommission nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: […] über vereinfachte Genehmigungsverfahren […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9568,
+          "instrument": 9533,
+          "beschreibung": "Zwischennutzungen für Clubs und Musikspielstätten gezielt unterstützen",
+          "ursachen_ids": [3201],
+          "zitat": "Neben dem von uns eingeführten Schallschutzfonds und der Unterstützung der Arbeit der Clubcommission nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: […] […] die gezielte Unterstützung von Zwischennutzungen […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9569,
+          "instrument": 9531,
+          "beschreibung": "Für ein soziales Gewerbemietrecht zum Schutz von Clubs und Musikspielstätten eintreten",
+          "ursachen_ids": [3201],
+          "zitat": "Neben dem von uns eingeführten Schallschutzfonds und der Unterstützung der Arbeit der Clubcommission nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: […] bis hin zu unserem Einsatz für ein soziales Gewerbemietrecht […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9570,
+          "instrument": 9529,
+          "beschreibung": "Für die Einstufung von Clubs als Kultureinrichtungen im Baugesetzbuch eintreten",
+          "ursachen_ids": [3202, 3201],
+          "zitat": "Neben dem von uns eingeführten Schallschutzfonds und der Unterstützung der Arbeit der Clubcommission nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: […] die Definition von Clubs als Kultureinrichtungen im Baugesetzbuch […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9571,
+          "instrument": 9529,
+          "beschreibung": "Für eine Lärmschutz-Reform auf Bundesebene zur Sicherung von Clubs eintreten",
+          "ursachen_ids": [3202],
+          "zitat": "Neben dem von uns eingeführten Schallschutzfonds und der Unterstützung der Arbeit der Clubcommission nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: […] und eine Lärmschutz-Reform auf Bundesebene.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9572,
+          "instrument": 9536,
+          "beschreibung": "Eigene Förderkulisse für Clubs mit kuratierten Programmen und Förderung der künstlerischen Arbeit in der Clubkultur",
+          "ursachen_ids": [3203],
+          "zitat": "Zukünftig müssen auch Clubs mit kuratierten Programmen eine eigene Förderkulisse bekommen. Wir setzen uns für eine Förderung der künstlerischen Arbeit in der Clubkultur ein […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9573,
+          "instrument": 9538,
+          "beschreibung": "Notfallfonds für akut bedrohte Orte der Clubkultur einrichten",
+          "ursachen_ids": [3203],
+          "zitat": "Wir stärken die Vernetzung und die ressortübergreifende Zusammenarbeit im Bereich Nachtökonomie und wollen für akut bedrohte Orte der Clubkultur einen Notfallfonds einrichten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9574,
+          "instrument": 9536,
+          "beschreibung": "Strukturorientierte Förderung für Clubs, die Planungssicherheit schafft und nachhaltiges Wirtschaften unterstützt",
+          "ursachen_ids": [3203],
+          "zitat": "Ergänzend setzen wir uns für eine strukturorientierte Förderung ein, die Planungssicherheit schafft und nachhaltiges Wirtschaften unterstützt.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9575,
+          "instrument": 9536,
+          "beschreibung": "Freie Szene mit ihren kleinen Spielstätten und Veranstaltungsorten stärken, finanziert aus Einnahmen der City Tax",
+          "ursachen_ids": [3203],
+          "zitat": "Die Freie Szene möchten wir stärken; sie ist mit ihren kleinen Spielstätten, Projekträumen und Veranstaltungsorten ein essenzieller Bestandteil des Kulturangebots – in der Breite wie in der Spitze. Dafür setzen wir adäquate Einnahmen aus der City Tax ein […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=162",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9576,
+          "instrument": 9535,
+          "beschreibung": "Kürzungen beim Arbeitsraumprogramm zurücknehmen, Programm reformieren und das Raumangebot für Kulturschaffende ausweiten",
+          "ursachen_ids": [3201],
+          "zitat": "Deshalb wollen wir die drastischen Kürzungen beim Arbeitsraumprogramm rückgängig machen und dieses zugleich reformieren: Neben einer generellen Ausweitung des Raumangebots braucht es eine bessere Berücksichtigung aller künstlerischen Sparten […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=163",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9577,
+          "instrument": 9532,
+          "beschreibung": "Öffentliche Immobilien kulturell nutzen, strategische Ankäufe und zusätzliche Kulturräume in neuen Stadtquartieren",
+          "ursachen_ids": [3201],
+          "zitat": "Dabei setzen wir vor allem auf die kulturelle Nutzung und Nachnutzung öffentlicher Immobilien, strategische Ankäufe und die Schaffung zusätzlicher Kulturräume bei der Entwicklung neuer Stadtquartiere […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=163",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9578,
+          "instrument": 9534,
+          "beschreibung": "Kulturkataster ausbauen und einen Stadtentwicklungsplan Kultur aufstellen",
+          "ursachen_ids": [3201],
+          "zitat": "Mit dem Ausbau des Kulturkatasters, einem Stadtentwicklungsplan „Kultur“ und neuen Beteiligungsgremien schaffen wir die notwendige Transparenz und Planungssicherheit […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=163",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9579,
+          "instrument": 9532,
+          "beschreibung": "Öffentliche Dienstgebäude kostenfrei für temporäre kulturelle Nutzung überlassen",
+          "ursachen_ids": [3201],
+          "zitat": "Mit dem Ausbau des Kulturkatasters […] schaffen wir die notwendige Transparenz und Planungssicherheit – und mit der kostenfreien Überlassung von öffentlichen Dienstgebäuden die Möglichkeit, geeignete Räumlichkeiten temporär auch für kulturelle Zwecke zu nutzen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=163",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9580,
+          "beschreibung": "Härtefallregelung, die u. a. Clubs und kulturelle Einrichtungen vor unverhältnismäßigen Grundsteuersteigerungen schützt",
+          "ursachen_ids": [3203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Dämpft steigende Grundsteuer als Betriebskosten von Clubs und Kultureinrichtungen. Betrifft nur einen Kostenposten; Härtefallregeln sind im Landesrecht mit Aufwand möglich.",
+          "zitat": "Damit diese Berliner Mischung erhalten bleibt, werden wir eine wirksame Härtefallregelung schaffen, die u. a. Kleingewerbe, Clubs, Strandbäder, Wagenburgen, soziale und kulturelle Einrichtungen vor unverhältnismäßigen Steigerungen der Grundsteuer schützt.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=47",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9581,
+          "beschreibung": "Milieuschutz auch für Gewerbemieterinnen und Gewerbemieter einführen",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zielt auf Verdrängung von Gewerbe einschließlich Kulturorten. Milieuschutz nach Baugesetzbuch schützt Gewerbe nicht vor Mieterhöhungen; dafür wäre Bundesrecht nötig.",
+          "zitat": "Wir führen Milieuschutz auch für Gewerbemieter*innen ein.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=101",
+          "beleg_studie_url": "https://www.bundestag.de/resource/blob/569790/WD-7-185-18-pdf.pdf",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9582,
+          "instrument": 9540,
+          "beschreibung": "In die nötige Ausstattung öffentlicher Veranstaltungsorte investieren",
+          "ursachen_ids": [3204],
+          "zitat": "Wir investieren in die nötige Ausstattung öffentlicher Veranstaltungsorte, weiten eintrittsfreie Open-Air-Formate aus […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=165",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9583,
+          "instrument": 9536,
+          "beschreibung": "Institutionelle Landesförderung für soziokulturelle Begegnungs- und Bildungsorte, ergänzt um einen Eigenmittel- und Liquiditätsfonds für das Einwerben von Fördermitteln",
+          "ursachen_ids": [3203],
+          "zitat": "Damit unsere Kultur die Unterstützung erhält, die sie braucht, werden wir: […] eine institutionelle Förderung der soziokulturellen Begegnungs- und Bildungsorte auflegen, damit sie erhalten bleiben und unabhängig und frei wirken können. Dafür braucht es auch einen Eigenmittel- und Liquiditätsfonds zur Unterstützung der Einwerbung von Fördermitteln.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=96",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9584,
+          "instrument": 9536,
+          "beschreibung": "Landesförderung für Clubs und Festivals verbessern und verstetigen, vor allem bei den Personalkosten",
+          "ursachen_ids": [3203],
+          "zitat": "Um die Kulturwirtschaft zu fördern, werden wir: […] kulturelle Festivals und Clubs im Land aktiv stärken durch eine Verbesserung und Verstetigung der landesseitigen Förderung, insbesondere von Personalkosten.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=98",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9585,
+          "instrument": 9537,
+          "beschreibung": "Förderprogramm für kleine und mittlere Clubs und Musikspielstätten; feste Spielstätten erhalten Basisförderung für Sanierung, Betrieb, Technik, Lärm- und Brandschutz",
+          "ursachen_ids": [3203, 3204, 3202],
+          "zitat": "Wir legen ein Förderprogramm mit klaren Richtlinien auf, um kleine und mittlere Clubs sowie Musikspielstätten zu unterstützen. Insbesondere feste Spielstätten sollen eine Basisförderung für Sanierungs- und Betriebskosten erhalten. Damit helfen wir Betreiber*innen bei notwendigen Investitionen in Technik, Lärm- und Brandschutz und sichern den laufenden Betrieb.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9586,
+          "instrument": 9536,
+          "beschreibung": "Landesprogramm Soziokultur mit mindestens 500.000 Euro zur verlässlichen Förderung soziokultureller Zentren",
+          "ursachen_ids": [3203],
+          "zitat": "Zudem engagieren wir uns für die verlässliche Förderung der soziokulturellen Zentren im Land. Zu diesem Zweck werden wir ein Landesprogramm Soziokultur einrichten, das mit mindestens 500.000 Euro ausgestattet wird.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9587,
+          "beschreibung": "Stillgelegte Industrieorte erhalten, erschließen und kulturell nutzen, etwa als Kulturzentren",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Umnutzung stillgelegter Industrieorte kann Raum für Kulturzentren schaffen. Schwerpunkt liegt auf Erhalt und Museen, Umbau ist teuer und langwierig.",
+          "zitat": "Denn stillgelegte Industrieorte erzählen unsere Geschichte. Wir fördern ihre Erhaltung, Erschließung und kulturelle Nutzung, etwa als Museen, Lernorte oder Kulturzentren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=71",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 3–4), Kapitel 'Vielfältige Kunst und Kultur' (S. 11), Kapitel 'Mehr Bauen und besseres Wohnen' (S. 43–45) und Fundstellen S. 31, 46 gelesen; nichts zu Flächenschutz, Gewerbemieten, Schall/Genehmigung, Förderung oder Umbau von Clubs, Spielstätten oder Kulturorten.",
+        "stand": "2026-10-08",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9588,
+          "instrument": 9534,
+          "beschreibung": "Clubstandorte bei der Stadtentwicklung frühzeitig berücksichtigen und langfristig sichern",
+          "ursachen_ids": [3201],
+          "zitat": "Wir setzen uns dafür ein, Clubstandorte bei der Stadtentwicklung frühzeitig mitzudenken und langfristig zu sichern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9589,
+          "instrument": 9525,
+          "beschreibung": "Agent-of-Change-Prinzip: Wer neu neben bestehende Clubs baut, muss selbst für ausreichenden Schallschutz sorgen",
+          "ursachen_ids": [3202],
+          "zitat": "Gleichzeitig unterstützen wir das sogenannte Agent-of-Change-Prinzip: Wer neu in die Nachbarschaft bestehender Clubs baut, muss selbst für ausreichenden Schallschutz sorgen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9590,
+          "instrument": 9539,
+          "beschreibung": "Clubs als Kulturorte anerkennen und ihnen so besseren Zugang zur Kulturförderung verschaffen",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen Clubs konsequent als Kulturorte anerkennen und ihnen damit einen besseren Zugang zu Kulturförderung ermöglichen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9591,
+          "instrument": 9527,
+          "beschreibung": "Genehmigungsverfahren für Veranstaltungen, Umbauten und temporäre Nutzungen vereinfachen und beschleunigen",
+          "ursachen_ids": [3202, 3204],
+          "zitat": "Gleichzeitig müssen Genehmigungsverfahren einfacher, schneller und transparenter werden. Veranstaltungen, Umbauten oder temporäre Nutzungen dürfen nicht an übermäßiger Bürokratie scheitern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9592,
+          "instrument": 9538,
+          "beschreibung": "Clubs insbesondere in Krisenzeiten unbürokratisch unterstützen",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen sie stärker in Standort- und Tourismusstrategien einbinden und Clubs insbesondere in Krisenzeiten unbürokratisch unterstützen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9593,
+          "instrument": 9533,
+          "beschreibung": "Zwischennutzung leerstehender Gebäude, temporäre Veranstaltungsflächen und Open-Air-Angebote erleichtern",
+          "ursachen_ids": [3201],
+          "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9594,
+          "beschreibung": "Konflikte zwischen Anwohnenden, Bezirken und Clubs durch frühzeitige Mediation über das Büro des Nachtlebens lösen",
+          "ursachen_ids": [3202],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Frühe Mediation entschärft Lärmkonflikte, bevor Auflagen oder Schließungen drohen; ein New Yorker Programm meldet rund 80 Prozent gelöste Fälle. Bauliche Ursachen des Lärms bleiben.",
+          "zitat": "Konflikte zwischen Anwohnerinnen und Anwohnern, Bezirken und Clubbetreibenden sollen durch frühzeitige Mediation, insbesondere über das „Büro des Nachtlebens“, gelöst werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=111",
+          "beleg_studie_url": "https://www.csmonitor.com/USA/Society/2023/0810/They-like-the-nightlife-Night-mayors-revive-cities-after-dusk?icid=rss",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9595,
+          "instrument": 9527,
+          "beschreibung": "Kommunale Genehmigungs- und Antragsverfahren für Veranstaltungen und Vereinsaktivitäten vereinfachen, digitalisieren und beschleunigen",
+          "ursachen_ids": [3202],
+          "zitat": "Wir Freie Demokraten werden: […] kommunale Genehmigungs- und Antragsverfahren für Veranstaltungen und Vereinsaktivitäten vereinfachen, digitalisieren und beschleunigen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 2), Kapitel 'Kultur' (S. 40–41), 'Kommunales' (S. 49), Schulbau (S. 29) und Fundstellen S. 11, 19, 20, 41 gelesen; keine Zusage zu Gewerbemieten oder Flächenschutz für Clubs/Spielstätten, Schallschutz und Veranstaltungsgenehmigungen, Förderung von Kulturorten oder Umbau von Veranstaltungsgebäuden.",
+        "stand": "2026-10-08",
+        "treffer": 4,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Kultur und Medienpolitik (S. 171-175) und Fundstellen S. 37, 38, 173 gelesen; keine Zusage zu Clubs, Spielstätten, Lärmschutz, Kulturflächen oder Umbau. Nur allgemeine Kulturförderung und Umsatzsteuerbefreiung für Künstler.",
+        "stand": "2026-10-08",
+        "treffer": 11,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Kunst, Kultur, Medien (S. 86-92) und Fundstellen S. 44, 86, 88-90 gelesen; nichts zu Clubs, Spielstätten, soziokulturellen Zentren, Gewerbemieten, Lärmschutz oder Umbau von Kulturorten. Nur allgemeine Kulturförderung und Räume für Breitenkultur (S. 89, ohne Bezug zu Clubs).",
+        "stand": "2026-10-08",
+        "treffer": 6,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Theater und Kultur, Musikschulen (S. 91-93) sowie Tourismus/Baukultur gelesen; Textsuche nach Club, Soziokultur, Lärm, Veranstaltung ohne einschlägigen Treffer. Nur allgemeine Kulturförderung (R2). Fundstellen S. 8, 21, 26, 47, 78, 79, 89, 90 sind Fehltreffer (umbau, soziokulturell).",
+        "stand": "2026-10-08",
+        "treffer": 9,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Kapitel „Kultur und Integration“ (S. 55–67) und Fundstellen S. 14, 44, 45, 59, 155, 158, 182, 198, 214 gelesen; nichts zu Clubs, Spielstätten, Kulturorten, Lärmschutz bei Veranstaltungen oder Gewerbemieten. Fundstellen sind Treffer in anderem Zusammenhang.",
+        "stand": "2026-10-08",
+        "treffer": 10,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9596,
+          "instrument": 9530,
+          "beschreibung": "Bundesrecht so ändern, dass Länder und Kommunen rechtssicher Mietendeckel für Gewerbemieten u. a. kultureller Einrichtungen einführen können",
+          "ursachen_ids": [3201],
+          "zitat": "Kleingewerbe leiden unter explodierten Gewerbemieten. Der Bund muss dafür sorgen, dass Länder und Kommunen rechtssicher Mietendeckel für Kleingewerbe, Handwerk, kulturelle Einrichtungen sowie für soziale und gemeinnützige Träger einführen können.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=8",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9597,
+          "beschreibung": "Bundesregeln für die Stadtplanung, damit Freiräume etwa für Clubkultur zur partizipativen und experimentellen Nutzung stärker berücksichtigt werden",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bundesregeln könnten Planern mehr Raum für Clubkultur geben. Unbestimmt, welche Regel geändert wird; Umsetzung bleibt bei den Kommunen.",
+          "zitat": "Bundesregularien sollen es Stadtplaner*innen ermöglichen, verstärkt Freiräume etwa für die Clubkultur zu berücksichtigen, die für eine partizipative und experimentelle Nutzung zur Verfügung stehen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=45",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9598,
+          "beschreibung": "Bestandsschutz und Schutz vor Verdrängung für oft ehrenamtlich geschaffene Proben-, Produktionsräume und Atelierhäuser",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bestandsschutz und Verdrängungsschutz für Probe- und Atelierhäuser setzen an Verdrängung an. Kein konkretes Instrument benannt, Raumförderung liegt überwiegend bei den Ländern.",
+          "zitat": "Künstlerisches Schaffen braucht Infrastruktur: von Proben- und Produktionsräumen bis hin zu Atelierhäusern für Kulturschaffende. Diese oft ehrenamtlich geschaffenen Orte verdienen Bestandsschutz, finanzielle Unterstützung und Schutz vor Verdrängung durch Profitorientierung.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=56",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9599,
+          "beschreibung": "Verlässliche und unbürokratische Unterstützung für gemeinnützige Kultur- und Veranstaltungsstätten",
+          "ursachen_ids": [3203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verlässliche Unterstützung gemeinnütziger Spielstätten ist als Ziel benannt, ohne Programm oder Betrag. Kulturförderung ist vorrangig Ländersache.",
+          "zitat": "Gemeinnützige Kultur- und Veranstaltungsstätten und Menschen, die ehrenamtlich kulturelle Angebote schaffen, brauchen verlässliche und unbürokratische Unterstützung.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=55",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9600,
+          "instrument": 9531,
+          "beschreibung": "Über den Bundesrat eine dauerhafte gesetzliche Begrenzung der Gewerbemieten vorschlagen, auch zum Schutz soziokultureller Infrastruktur",
+          "ursachen_ids": [3201],
+          "zitat": "Die rasant steigenden Gewerbemieten und das Fehlen eines schützenden Gewerbemietrechts sind ein wachsendes Problem, vor allem für kiezgebundene kleinere Geschäfte und die soziokulturelle Infrastruktur in unserer Stadt. […] Wir werden über den Bundesrat eine dauerhafte Begrenzung der Gewerbemieten per Gesetz vorschlagen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=89",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9601,
+          "instrument": 9533,
+          "beschreibung": "Kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten",
+          "ursachen_ids": [3201],
+          "zitat": "Wir wollen die kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=238",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9602,
+          "instrument": 9534,
+          "beschreibung": "Bei neuen Stadtquartieren und größeren Neubauvorhaben Orte für Kunst und Kultur verpflichtend planen und bauen",
+          "ursachen_ids": [3201],
+          "zitat": "Bei der Entwicklung neuer Stadtquartiere sowie bei allen anderen größeren Neubauvorhaben werden mit uns Orte für Kunst und Kultur verpflichtend geplant und gebaut.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=238",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9603,
+          "instrument": 9534,
+          "beschreibung": "Bebauungspläne zur Sicherung und zum Erhalt kultureller Infrastruktur nutzen",
+          "ursachen_ids": [3201],
+          "zitat": "Bebauungspläne wollen wir zur Sicherung und zum Erhalt kultureller und sozialer Infrastruktur nutzen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=45",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9604,
+          "beschreibung": "Kurzfristige Taskforce für bedrohte Räume der Berliner Mischung und Soziokultur unterstützen",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Taskforce kann bedrohte Räume schnell begleiten und vermitteln. Ohne eigene Rechte oder Mittel bleibt der Schutz vor Verdrängung begrenzt.",
+          "zitat": "Die Forderung des Berliner Initiativenforums Stadtpolitik nach einer kurzfristig umzusetzenden „Taskforce für bedrohte Räume der Berliner Mischung und Soziokultur“ […] unterstützen wir.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=42",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9605,
+          "instrument": 9535,
+          "beschreibung": "1.000 neue Arbeitsräume (Ateliers, Studio-, Proberäume) zur Kostenmiete durch öffentliche Generalanmietung und Ausweitung der Förderprogramme",
+          "ursachen_ids": [3201],
+          "zitat": "Wir setzen uns dafür ein, dass zu dem Bestand in den kommenden Jahren 1.000 neue Arbeitsräume zur Kostenmiete dazukommen. Dazu braucht es eine verlässliche öffentliche Generalanmietung von Arbeitsräumen, Transparenz bei der Vergabe und die Ausweitung der bestehenden Förderprogramme.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=237",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9606,
+          "instrument": 9536,
+          "beschreibung": "Landesweite Spielstättenförderung für Clubs mit gesellschaftspolitischem Engagement einführen",
+          "ursachen_ids": [3203],
+          "zitat": "Auf Landesebene wollen wir eine Spielstättenförderung einführen, die Clubs mit gesellschaftspolitischem Engagement würdigt […]",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=237",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9607,
+          "instrument": 9536,
+          "beschreibung": "Gemeinwohlorientierte und kollektiv betriebene Clubstrukturen fördern",
+          "ursachen_ids": [3203],
+          "zitat": "Wir fördern gemeinwohlorientierte und kollektiv betriebene Clubstrukturen, stärken Awareness-Arbeit in Clubs sowie niedrigschwellige Angebote zur Schadensminimierung beim Drogenkonsum.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=237",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9608,
+          "instrument": 9536,
+          "beschreibung": "Festen Anteil der City Tax für kulturelle Infrastruktur einsetzen, darunter Soziokultur",
+          "ursachen_ids": [3203],
+          "zitat": "Wir setzen uns dafür ein, dass ein fester Anteil der City Tax künftig für die kulturelle Infrastruktur und Grundversorgung eingesetzt wird: für Bibliotheken, Jugendkunstschulen, Musikschulen, Soziokultur.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=232",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9609,
+          "beschreibung": "Schallschutzfonds für Clubs ausbauen",
+          "ursachen_ids": [3202],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Schallschutzfonds finanziert Dämmung und Technik und entschärft so Lärmkonflikte; im Land bereits eingeführt. Eine Evaluation der Wirkung liegt nicht vor.",
+          "zitat": "Auf Landesebene wollen wir […] den Schallschutzfonds ausbauen […]",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=237",
+          "beleg_studie_url": "https://miz.org/de/nachrichten/verbaende-kritisieren-moegliches-ende-des-bundes-schallschutz-programms",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9610,
+          "instrument": 9527,
+          "beschreibung": "Genehmigungsverfahren für Clubs vereinfachen",
+          "ursachen_ids": [3202],
+          "zitat": "Auf Landesebene wollen wir […] Genehmigungsverfahren vereinfachen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=237",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9611,
+          "instrument": 9527,
+          "beschreibung": "Nutzung öffentlicher Räume für unkommerzielle Freiluftveranstaltungen deutlich erleichtern",
+          "ursachen_ids": [3202],
+          "zitat": "Die Nutzung öffentlicher Räume für unkommerzielle Freiluftveranstaltungen werden wir deutlich erleichtern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=237",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9612,
+          "beschreibung": "Kulturorte vor Verdrängung schützen und einen baurechtlichen Bestandsschutz für Kulturorte einführen",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bestandsschutz würde Kulturorte direkt vor Verdrängung durch Umnutzung sichern. Bauplanungsrecht ist Bundesrecht, das Land kann ihn kaum selbst einführen; Wirkung unbelegt.",
+          "zitat": "Wir wollen: • Kulturelle Infrastruktur im ganzen Land erhalten und ausbauen. • Kulturorte vor Verdrängung schützen und einen baurechtlichen Bestandsschutz für Kulturorte einführen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9613,
+          "instrument": 9533,
+          "beschreibung": "Nutzung von Leerständen und öffentlichen Gebäuden für Kultur fördern",
+          "ursachen_ids": [3201],
+          "zitat": "Wir wollen: […] Die Nutzung von Leerständen und öffentlichen Gebäuden für Kultur fördern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9614,
+          "instrument": 9536,
+          "beschreibung": "Selbstverwaltete und freie Kulturorte unterstützen",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen: […] Selbstverwaltete und freie Kulturorte unterstützen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9615,
+          "instrument": 9536,
+          "beschreibung": "Partizipative, sozio- und subkulturelle Angebote ausbauen und gleichberechtigt fördern",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen: […] Partizipative, sozio- und subkulturelle Angebote ausbauen und gleichberechtigt fördern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9616,
+          "instrument": 9536,
+          "beschreibung": "Verstetigte Landesförderung für Clubs und Musikspielstätten gegen das Clubsterben",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen: […] eine verstetigte Landesförderung von Klubs und Musikspielstätten, um aktiv das Klubsterben zu bekämpfen und Subkultur zu fördern.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9617,
+          "instrument": 9536,
+          "beschreibung": "Verlässliche Finanzierung von freier Szene, Soziokultur und alternativen Kulturzentren durch Förderung von Spiel- und Veranstaltungsstätten",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen: […] eine verlässliche Finanzierung der freien Kulturszene, der Soziokultur und alternativer Kulturzentren durch Förderung von Spiel- und Veranstaltungsstätten […]",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9618,
+          "instrument": 9536,
+          "beschreibung": "Zusätzliche Landespauschale an kleine Kommunen im ländlichen Raum für soziokulturelle Einrichtungen",
+          "ursachen_ids": [3203],
+          "zitat": "Wir wollen: […] eine Kulturpauschale im ländlichen Raum installieren, die als Landespauschale für soziokulturelle Einrichtungen im ländlichen Raum, die Kommunen (Städte unter 25.000 Einwohnern) über die Allgemeinen Kommunalfinanzen zusätzlich erhalten […]",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Medien und Kultur (S. 41-42) und Fundstellen S. 10, 42 gelesen. Nur allgemeine Kulturpflichtaufgabe, Grundgesetz-Initiative, Absicherung von Kulturschaffenden und KSK; nichts zu Clubs, Spielstätten, Flächen, Lärm, Förderung von Orten oder Umbau.",
+        "stand": "2026-10-08",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Kulturhauptstadt Berlin (S. 18-19) und Fundstellen S. 11, 21, 27, 46 gelesen. Nur allgemeine Kulturförderung (Gesetz, Etat, Kulturpass, Jurys, Ateliers); nichts zu Clubs, Spielstätten, Gewerbemieten, Lärmschutz oder Umbau von Kulturorten (R2).",
+        "stand": "2026-10-08",
+        "treffer": 7,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9619,
+          "instrument": 9537,
+          "beschreibung": "Spielstätten und soziokulturelle Zentren stärken und modernisieren, auch als Orte der Begegnung und Bildung.",
+          "ursachen_ids": [3203, 3204],
+          "zitat": "Stärkung und Modernisierung von SpielstäƩen, Museen, Bibliotheken und soziokulturellen Zentren, auch als Orte der Begegnung und Bildung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=54",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9620,
+          "instrument": 9536,
+          "beschreibung": "Kulturfördergesetz verabschieden, das u. a. soziokulturelle Zentren dauerhaft sichert und finanziell stabilisiert",
+          "ursachen_ids": [3203],
+          "zitat": "Wir fordern, dass das in der Gesetzgebung befindliche Kulturfördergesetz (Kultur FÖG LSA) 2026 verabschiedet wird. UNESCO-Welterbestätten, Theater, Museen, Orte der Industriekultur, kulturelle Bildungseinrichtungen und soziokulturelle Zentren sollen so dauerhaft gesichert und finanziell stabilisiert werden",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9621,
+          "beschreibung": "Clubs, Ateliers und Jugendtreffs als kulturelle Räume schützen und gezielt fördern",
+          "ursachen_ids": [3203, 3201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schutz und Förderung kultureller Räume sind als Ziel benannt, ohne Instrument oder Betrag. Kulturorte sind Ländersache, der Bund kann nur mit Programmen beitragen.",
+          "zitat": "Förderung kultureller Räume: Clubs, Ateliers und Jugendtreffs werden als kulturelle Räume für Jugendliche geschützt und gezielt gefördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=158",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9622,
+          "beschreibung": "Fonds für Kommunen zum Rückkauf leerstehender Immobilien für kulturelle Projekte",
+          "ursachen_ids": [3201],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kommunaler Rückkauf entzieht Räume dem Mietmarkt und sichert sie dauerhaft. Bund kann über Fonds beitragen, Umfang und Finanzierung sind offen; Wirkung kaum untersucht.",
+          "zitat": "Kommunen erhalten durch einen Fonds die Möglichkeit zum Rückkauf von Leerstand für kulturelle Projekte.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=158",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9623,
+          "beschreibung": "Fonds von Bund und Ländern zur Förderung von Jugend-, Vereins- und Kulturzentren als Räume für Begegnung",
+          "ursachen_ids": [3203],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Fonds stärkt die Finanzierung von Kulturzentren; der Bund kann gemeinsam mit den Ländern beitragen. Höhe offen, Mittel verteilen sich auch auf Jugend- und Vereinszentren.",
+          "zitat": "Förderung für Jugend-, Vereins- und Kulturzentren fördern: Ein Fonds von Bund und Ländern sichert Räume für Begegnung und Teilhabe.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=20",
+          "beleg_studie_url": "https://www.bundesregierung.de/breg-de/suche/neustart-kultur-evaluation-zeigt-wirksamkeit-des-programms-2324916",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9624,
+          "instrument": 9525,
+          "beschreibung": "Agent-of-Change-Prinzip: Wer neu an einen Club heranbaut, trägt die Kosten für den Lärmschutz, nicht der Club.",
+          "ursachen_ids": [3202],
+          "zitat": "Damit Clubs durch teure Schallschutzmaßnahmen nicht in finanzielle Schieflage geraten, setzen wir uns für das „Agent of Change”-Prinzip ein. Danach muss die neu hinzukommende Partei für etwaige Kosten für den Lärmschutz aufkommen, nicht der Club.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=110",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9625,
+          "instrument": 9533,
+          "beschreibung": "Leerstehende Gewerbeflächen unbürokratisch für kulturelle Nutzung öffnen, mit digitaler Plattform für Angebot und Nachfrage.",
+          "ursachen_ids": [3201],
+          "zitat": "Wir öffnen leerstehende Gewerbeflächen unbürokratisch für kulturelle Nutzung. Hierfür schaffen wir eine transparente, digitale Plattform, die Angebot und Nachfrage effizient zusammenführt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=110",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9626,
+          "instrument": 9527,
+          "beschreibung": "Anmeldung von Veranstaltungen durch Bündelung von Zuständigkeiten vereinfachen.",
+          "ursachen_ids": [3202],
+          "zitat": "Wir vereinfachen die Anmeldung von Veranstaltungen durch die Bündelung von Zuständigkeiten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9627,
+          "instrument": 9526,
+          "beschreibung": "Spielräume im Landes-Immissionsschutzgesetz für Ausnahmeregelungen nutzen, damit die freie Kulturszene wie Außengastronomie länger öffnen darf.",
+          "ursachen_ids": [3202],
+          "zitat": "Während die klassische Außengastronomie bereits länger öffnen darf, steht die notwendige Ausweitung dieser Regelung für die freie Kulturszene noch aus. Wir setzen uns dafür ein, die Spielräume im Landes-Immissionsschutzgesetz (LImSchG Bln) zu nutzen, um entsprechende Ausnahmeregelungen zu beschließen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9628,
+          "instrument": 9526,
+          "beschreibung": "Lärmtoleranz-Zonen auf Freiflächen abseits von Wohngebieten ausweiten, damit Veranstaltungen bis 23 Uhr rechtssicher möglich sind.",
+          "ursachen_ids": [3202],
+          "zitat": "Wir weiten „Lärmtoleranz-Zonen” auf Freiflächen abseits von Wohngebieten aus, um Veranstaltungen bis 23 Uhr rechtssicher zu ermöglichen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9629,
+          "instrument": 9540,
+          "beschreibung": "Bestehende Kongress-, Veranstaltungs- und Kulturorte modernisieren (Barrierefreiheit, Veranstaltungstechnik), u. a. mit der Clubcommission.",
+          "ursachen_ids": [3204],
+          "zitat": "Wir modernisieren bestehende Kongress-, Veranstaltungs- und Kulturorte und sichern damit Berlins internationale Wettbewerbsfähigkeit. Gleichzeitig optimieren wir die digitale Infrastruktur, die Barrierefreiheit und die hybride Veranstaltungstechnik in Zusammenarbeit mit der Messe Berlin, den Bezirken, der Clubcommission, den relevanten Verbänden und Veranstalter*innen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=109",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 2–3), Kapitel ‚Gesellschaftlicher Zusammenhalt‘ mit Abschnitt ‚Demokratie- und Kulturförderung‘ (S. 13–17), ‚Kommunen‘, ‚Zukunftslabor‘ und ‚Tourismus‘ (S. 23–28), ‚Europa‘ (S. 48–50), ‚Bauen und Wohnen‘ (S. 59–61) sowie Fundstellen S. 39 und 41 gelesen; nichts zu Clubs, Spielstätten oder soziokulturellen Zentren (Flächen, Schall, Betriebsförderung, Umbau).",
+        "stand": "2026-10-08",
+        "treffer": 6,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3201, 3202, 3203, 3204],
+      "massnahmen": [
+        {
+          "id": 9630,
+          "beschreibung": "Sicherheitsanforderungen bei Veranstaltungen als Landesaufgabe; mobile Sperren zentral beschaffen und nicht-kommerziellen Veranstaltungen kostenfrei bereitstellen",
+          "ursachen_ids": [3202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Übernimmt Kosten für Sicherheitsauflagen nicht-kommerzieller Veranstaltungen. Betrifft vor allem Feste im Freien, nicht feste Spielstätten oder Lärmkonflikte.",
+          "zitat": "Wir schaffen verlässliche Rahmenbedingungen […] Dazu gehören: […] Sicherheitsanforderungen bei Veranstaltungen (z. B. Terrorismusabwehr) als Aufgabe des Landes definieren und notwendige Infrastruktur wie mobile Sperren zentral beschaffen, lagern und für nicht-kommerzielle Veranstaltungen kostenfrei bereitstellen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=152",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

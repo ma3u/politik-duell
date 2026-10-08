@@ -41,5 +41,762 @@
       "ebene": "bund",
       "schlagwoerter": ["sexuelle belaestigung", "sexistische sprueche", "beschwerde", "arbeitsplatz"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9490,
+      "name": "Mehr nicht übertragbare Elterngeldmonate je Elternteil im bisherigen Umfang (Bund)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 3,
+      "begruendung": "Reservierte Partnermonate erhöhen die Elternzeit von Vätern deutlich; Studien aus Deutschland und Québec zeigen danach dauerhaft mehr Haus- und Sorgearbeit der Väter, in Schweden fand sich kein solcher Effekt. Umbau im bestehenden Elterngeld ohne große Mehrkosten.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.rwi-essen.de/publikationen/zitationsansicht/gemischt/detail/fathers-parental-leave-taking-childcare-involvement-and-1043",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9491,
+      "name": "Elterngeld verlängern mit mehr nicht übertragbaren Monaten je Elternteil (Bund)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "begruendung": "Reservierte Monate für jeden Elternteil verschieben laut Québec- und Deutschland-Studien die Hausarbeit dauerhaft zu den Vätern. Die Verlängerung des Bezugs verursacht aber erhebliche Mehrkosten und braucht Finanzierung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ideas.repec.org/a/ucp/jlabec/doi10.1086-703115.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9492,
+      "name": "Bezahlte Freistellung des zweiten Elternteils direkt nach der Geburt (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kurze Partnerfreistellung wird stark genutzt und erleichtert Müttern den Wiedereinstieg; in Spanien änderte sie die längerfristige Aufteilung aber kaum. Gesetzlich einfach, umlage- oder steuerfinanziert machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.iza.org/publications/dp/10865",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9493,
+      "name": "Elterngeld bei Teilzeit und Partnerschaftsbonus verbessern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "ElterngeldPlus und Partnerschaftsbonus werden zunehmend genutzt, der Bonus aber nur von einem kleinen Teil der Väter; eine messbare Wirkung auf Aufteilung oder Rückkehr aus der Teilzeit ist kaum untersucht. Leicht im bestehenden Gesetz umsetzbar.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.bundestag.de/webarchiv/textarchiv/2018/kw08-de-elterngeld-plus-542316",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9494,
+      "name": "Flexible Arbeitszeiten, Homeoffice und betriebliche Kinderbetreuung fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Homeoffice erhöht laut Paneldaten die vertraglichen Stunden von Müttern; Appelle an Arbeitgeber und Steueranreize für Betriebskitas bleiben aber unverbindlich, ihre Wirkung auf Teilzeit ist offen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.zew.de/PU80770",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9495,
+      "name": "Haushaltsnahe Dienstleistungen staatlich fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zuschüsse oder Steuerabzug entlasten Haushalte bei Routinearbeit, verändern aber nicht die Aufteilung zwischen Partnern; Evaluationen in Belgien und Schweden können Effekte für die Nutzenden nicht sicher belegen. Ein neues Budget braucht Finanzierung.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.tillvaxtanalys.se/en-GB/publikationer/pm/pm/branschspecifikaskattelattnadereninternationelljamforelse.4573.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9496,
+      "name": "Geschlechterrollen in Kita, Schule, Berufsorientierung und Fachkräfteausbildung thematisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein Schulexperiment in Indien veränderte Rollenbilder messbar und dauerhaft; Evaluationen hier messen meist Zufriedenheit, die Wirkung auf Erwartungen an Mütter ist offen. Liegt in Landeszuständigkeit und ist günstig umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/aer.20201112",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9497,
+          "instrument": 9493,
+          "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus für gleichzeitige vollzeitnahe Teilzeit beider Eltern weiterentwickeln.",
+          "ursachen_ids": [2801],
+          "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=62",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9498,
+          "instrument": 9495,
+          "beschreibung": "Steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen verbessern.",
+          "ursachen_ids": [2801],
+          "zitat": "Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=15",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel 'Gewalt gegen Frauen' (S. 11), 'Chancen bieten' (S. 102-103) und 'Starke Familien' (S. 108-109) gelesen. Nichts zu Rollenbildern oder widersprüchlichen Erwartungen an Mütter; Vereinbarkeit und Kita-Ausbau gehören zu anderen Ursachen.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel Familienland (S. 96-98), Gesundheit von Frauen (Gesundheitskapitel) und alle Textstellen zu Frauen, Mütter, Vereinbarkeit, Rollen per Volltextsuche gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter (2803).",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Soziale Gerechtigkeit und Familie (S. 30-33), Frühkindliche Bildung (S. 48-50) und Justiz (S. 57-58) gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter. Nur Wahlfreiheit, Vereinbarkeit, Chancengleichheit in Führungspositionen und Sorgearbeit (andere Ursachen).",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9499,
+          "instrument": 9491,
+          "beschreibung": "Elterngeld ausbauen: je sechs nicht übertragbare Monate pro Elternteil plus sechs frei verteilbare Monate.",
+          "ursachen_ids": [2801],
+          "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9500,
+          "instrument": 9492,
+          "beschreibung": "Familienstartzeit: bezahlte Freistellung für Väter oder Partnerinnen und Partner in den ersten zwei Wochen nach der Geburt.",
+          "ursachen_ids": [2801],
+          "zitat": "Wir wollen deshalb eine Familienstartzeit einführen: Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9501,
+          "instrument": 9495,
+          "beschreibung": "Jährliches Familienbudget für Alltagshelfer, das haushaltsnahe Dienstleistungen direkt fördert.",
+          "ursachen_ids": [2801],
+          "zitat": "Mit einem jährlichen Familienbudget für Alltagshelfer wollen wir sozialversicherungspflichtige haushaltsnahe Dienstleistungen direkt fördern und einfach digital zugänglich machen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=26",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9502,
+          "beschreibung": "Allgemeines Gleichbehandlungsgesetz modernisieren und Antidiskriminierungsberatung ausbauen, für wirksameren Schutz vor Diskriminierung.",
+          "ursachen_ids": [2804],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Beratung und ein reformiertes AGG können Betroffenen den Beschwerdeweg erleichtern; die Zusage bleibt allgemein und nennt sexuelle Belästigung am Arbeitsplatz nicht ausdrücklich.",
+          "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten. Wir wollen das Allgemeine Gleichbehandlungsgesetz (AGG) modernisieren, um effektiveren Schutz vor Diskriminierung zu gewährleisten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel Gute Arbeit (S. 8), Zusammenleben, Familie und Gleichstellung (S. 47-48) und Fundstelle S. 11 gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter, nur Parität, Gleichstellungsgesetz, Pay Gap, Wiedereinstieg.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gleichstellung (S. 38) und Leitsatz S. 6 gelesen. Zu Rollenbildern/Erwartungen an Mütter (2803) nur Rückblick (Führungspositionen in Landesverwaltung ergriffen) und allgemeine Ziele; Gewalt und Frauenhäuser gehören zu Sicherheit.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gleichstellung auf dem Arbeitsmarkt (S. 9), Vielfalt/Diskriminierung (S. 36), Fundstelle S. 27 gelesen: nichts zu Rollenbildern oder Erwartungen an Mütter; Sorgearbeit-Zusagen (S. 9) gehören zu 2801, nicht Landesursache.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9503,
+          "instrument": 9490,
+          "beschreibung": "Elternzeit so gestalten, dass jeder Elternteil mindestens ein Drittel nutzen kann, als Anreiz zu partnerschaftlicher Aufteilung.",
+          "ursachen_ids": [2801],
+          "zitat": "Die Elternzeit möchten wir deshalb so gestalten, dass mindestens jeweils ein Drittel der Zeit von jedem Elternteil genutzt werden kann. Damit setzen wir Anreize für eine partnerschaftlichere Aufteilung.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=82",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9504,
+          "beschreibung": "Brückenteilzeit und Rückkehrrecht in Vollzeit ausweiten und individueller gestalten.",
+          "ursachen_ids": [2802],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein breiteres Rückkehrrecht in Vollzeit setzt direkt an ungewollter Teilzeit an, da die heutige Brückenteilzeit viele kleine Betriebe ausnimmt und selten genutzt wird; eine Wirkungsevaluation fehlt. Änderung im Teilzeitgesetz.",
+          "zitat": "Die Brückenteilzeit und das damit verbundene Rückkehrrecht in Vollzeit wollen wir weiten und individueller gestalten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9505,
+          "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen, weil sie für Frauen zur Teilzeitfalle werden.",
+          "ursachen_ids": [2802],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Minijobs verstärken mit Splitting und Mitversicherung geringe Stunden verheirateter Frauen; ihre Überführung würde diesen Anreiz abbauen. Wie viele Stunden tatsächlich steigen, ist unsicher; der schrittweise Umbau braucht Zeit.",
+          "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende. Denn sie führen vor allem für Frauen und in Kombination mit dem Ehegattensplitting zu einer Teilzeitfalle",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2026/maerz/nach-kinderphase-ehegattensplitting-bremst-beschaeftigung-von-frauen-aus",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 4.1 Strukturelle Gleichstellung (S. 130-133), Gleichstellung am Arbeitsplatz (S. 109-110) und Fundstelle S. 183 gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter. S. 183 meint Familienbildung/Sprach-Kitas.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 13 (S. 80-85) und Fundstelle S. 81 gelesen. Rollenbilder werden nur als Lagebeschreibung genannt; keine Zusage, die Rollenbilder oder Erwartungen an Mütter angeht. Care-Arbeit/Gleichstellung (S. 83-85) zählt nicht zu 2803.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "massnahmen": [
+        {
+          "id": 9506,
+          "instrument": 9496,
+          "beschreibung": "Schulungen in Kitas für geschlechterneutrale Erziehung, um stereotype Rollenbilder früh abzubauen",
+          "ursachen_ids": [2803],
+          "zitat": "Wir setzen auf gezielte Schulungsmaßnahmen in Kitas, um eine geschlechterneutrale Erziehung zu fördern und stereotype Rollenbilder von Anfang an abzubauen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=58",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9507,
+          "instrument": 9490,
+          "beschreibung": "Volles Elterngeld soll ausgezahlt werden, wenn beide Partner mindestens vier Monate nehmen; die übrigen Monate frei aufteilbar.",
+          "ursachen_ids": [2801],
+          "zitat": "Viele Paare streben heute eine partnerschaftliche Aufteilung der Sorgearbeit an. Das darf nicht an politischen Entscheidungen scheitern. Auch Eltern müssen selbstbestimmt sein. Das volle Elterngeld (14 Monate) soll voll ausgezahlt werden, wenn beide Partner je mindestens vier Elterngeldmonate in Anspruch nehmen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=30",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9508,
+          "beschreibung": "Arbeitszeitgesetz abschaffen, um flexible Arbeitszeiten, Teilzeit, Jobsharing und Homeoffice für Frauen wie Männer zu ermöglichen.",
+          "ursachen_ids": [2802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Flexiblere Arbeitszeiten können Vereinbarkeit erleichtern, ein Bezug zur Teilzeitfalle ist aber kaum belegt. Eine ersatzlose Abschaffung widerspräche der EU-Arbeitszeitrichtlinie (Höchstarbeitszeit, Ruhezeiten); nötig wäre eine Ersatzregelung.",
+          "zitat": "Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen. Flexible Arbeitszeiten, Teilzeit, Jobsharing, bzw. Topsharing und Homeoffice soll es Frauen wie Männern ermöglichen, Beruf und Familie besser zu vereinbaren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "massnahmen": [
+        {
+          "id": 9509,
+          "instrument": 9496,
+          "beschreibung": "Eltern früh über tradierte Rollenbilder informieren; Kitas sollen geschlechtersensible Erziehung leben.",
+          "ursachen_ids": [2803],
+          "zitat": "Eine frühe Sensibilisierung der Eltern, um tradierte Rollenbilder von Kindern bereits in den frühen Lebensjahren aufzubrechen, wollen wir mit Informationsangeboten begleiten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=81",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Familie (S. 37) und Fundstelle gelesen; Rollenbilder werden nur als Ziel genannt (sollen aufgebrochen werden), ohne Handlungszusage. Sonst nichts zu Müttern, Rollenerwartungen, Teilzeit oder Belästigung im Landesprogramm gefunden.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gleichstellung und Frauenpolitik (S. 38-39) und Familien (S. 24) gelesen; nur Bekenntnis zu gleichberechtigter Erziehungs- und Erwerbsarbeit und allgemeine Weiterentwicklung des Frauenfördergesetzes, nichts zu Rollenbildern oder Erwartungen an Mütter.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9510,
+          "beschreibung": "Erziehungsgeld für die Eigenbetreuung in den ersten drei Lebensjahren sowie Hilfen beim beruflichen Wiedereinstieg.",
+          "ursachen_ids": [2802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Hilfen zum Wiedereinstieg setzen an langer Teilzeit an; ein Erziehungsgeld für Eigenbetreuung senkte in Westdeutschland aber leicht die Erwerbstätigkeit von Müttern. Ein Bundes-Betreuungsgeld wurde 2015 mangels Bundeskompetenz verworfen.",
+          "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] ein Erziehungsgeld, das Eltern die Eigenbetreuung ihrer Kinder in den ersten drei Lebensjahren finanziell erleichtert, sowie Hilfen beim beruflichen «Wiedereinstieg», damit Kinderwünsche nicht mehr an Geld- und Karrieresorgen scheitern,",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=21",
+          "beleg_studie_url": "https://jhr.uwpress.org/node/11990",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9511,
+          "instrument": 9494,
+          "beschreibung": "Arbeitgeber sollen Telearbeit, flexible Arbeitszeiten und Betriebskindergärten anbieten, damit Eltern Betreuung und Arbeit vereinbaren können.",
+          "ursachen_ids": [2802],
+          "zitat": "Arbeitgeber sollen durch Telearbeit, flexible Arbeitszeiten und Betriebskindergärten ein Arbeitsumfeld schaffen, in dem Eltern Kinderbetreuung und Arbeit gut vereinbaren können, so sie es wünschen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=148",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 59) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Familienland MV (S. 17-21) und Fundstellen S. 17, 19, 26 gelesen. Nur Leitbilder (Wahlfreiheit, positives Familienbild) und Kritik an Rollenbildern in der Schule; keine konkrete Zusage zu Rollenbildern oder Erwartungen an Mütter.",
+        "stand": "2026-10-08",
+        "treffer": 4,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel I. Familie und Kinder (S. 10-19), Gleichberechtigung (S. 94), Girls and Boys Day (S. 63) und Fundstelle S. 17 gelesen; nichts setzt an widersprüchlichen Erwartungen an Mütter an. S. 17 ist Kritik, keine Zusage.",
+        "stand": "2026-10-08",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9512,
+          "instrument": 9492,
+          "beschreibung": "Einführung eines bezahlten Elternschutzes von 28 Tagen für den zweiten Elternteil ab Geburt, um Sorge- und Erwerbsarbeit partnerschaftlich aufzuteilen.",
+          "ursachen_ids": [2801],
+          "zitat": "Um eine partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zwischen den Elternteilen zu fördern, wollen wir für den zweiten Elternteil 28 Tage Elternschutz (ab Geburt des Kindes) einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9513,
+          "beschreibung": "Ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz nach der Elternzeit.",
+          "ursachen_ids": [2802],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Rückkehrrecht auf denselben oder gleichwertigen Arbeitsplatz erleichtert den Wiedereinstieg, schreibt aber weitgehend fest, was EU-Recht (Richtlinie 2019/1158) bereits vorsieht; zur Wirkung gibt es kaum Studien.",
+          "zitat": "Die Situation von Berufsrückkehrer*innen nach der Elternzeit stärken wir u. a. durch ein ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9514,
+          "beschreibung": "Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten.",
+          "ursachen_ids": [2802],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Anspruch auf Vollzeit und familienfreundliche Schichten setzt direkt an ungewollter Teilzeit an; Belege zur Wirkung fehlen. Ein allgemeiner Anspruch greift stark in betriebliche Planung ein und braucht Ausnahmen, daher aufwendig.",
+          "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9515,
+          "beschreibung": "Arbeitsschutzgesetz um Gewalt und sexuelle Belästigung ergänzen, damit das Gesetz gegen Gewalt und Belästigung in der Arbeitswelt in der Praxis ankommt.",
+          "ursachen_ids": [2804],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Belästigung als Pflicht im Arbeitsschutz (Gefährdungsbeurteilung, Aufsicht) macht Prävention und Beschwerdewege verbindlicher, wo 40 % die Beschwerdestelle nicht kennen; die Wirkung dieses Wegs ist kaum evaluiert. Einfache Gesetzesänderung.",
+          "zitat": "Das Gesetz über die Beseitigung von Gewalt und Belästigung in der Arbeitswelt muss auch in der betrieblichen Praxis ankommen. Wir wollen deshalb u. a. das Arbeitsschutzgesetz um die Aspekte „Gewalt“ und „sexuelle Belästigung“ ergänzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "beleg_studie_url": "https://www.antidiskriminierungsstelle.gov.de/SharedDocs/pressemitteilungen/EN/2019/20191025_Study_sexual_harrasment.html",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "massnahmen": [
+        {
+          "id": 9516,
+          "instrument": 9496,
+          "beschreibung": "Aufklärung und Weiterbildung, besonders in Schulen, über Sexismus, häusliche Gewalt und stereotype Rollenbilder.",
+          "ursachen_ids": [2803],
+          "zitat": "Aufklärung und Weiterbildung – insbesondere in Schulen – müssen gezielt über Sexismus, häusliche Gewalt und stereotype Rollenbilder informieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=214",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "massnahmen": [
+        {
+          "id": 9517,
+          "instrument": 9496,
+          "beschreibung": "Berufsorientierung ohne Geschlechterstereotype; Girls' Day und Boys' Day in Klasse 9 verpflichtend.",
+          "ursachen_ids": [2803],
+          "zitat": "Eine Berufsorientierung fördern, die jungen Menschen ermöglicht, ihre Fähigkeiten unabhängig von Geschlechterstereotypen zu entwickeln. Den Girls’ Day und den Boys’ Day wollen wir in der 9. Klasse verpflichtend durchführen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=15",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9518,
+          "instrument": 9496,
+          "beschreibung": "Genderkompetenz verbindlich in der Ausbildung von Lehrkräften und pädagogischen Fachkräften verankern, um Rollenmuster aufzubrechen.",
+          "ursachen_ids": [2803],
+          "zitat": "Genderkompetenz verbindlich in der Ausbildung von Lehrkräften und pädagogischen Fachkräften verankern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "massnahmen": [
+        {
+          "id": 9519,
+          "instrument": 9496,
+          "beschreibung": "Kinder und Jugendliche früh für alltägliche Aufgaben sensibilisieren, damit Sorgearbeit besser verteilt wird.",
+          "ursachen_ids": [2803],
+          "zitat": "Wir wollen: […] bereits früh Kinder und Jugendliche für alltägliche Aufgaben sensibilisieren, so dass die Sorgearbeit besser verteilt wird.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=22",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Frauenrechte statt Gender-Ideologie (S. 33-34), Arbeit/Löhne (S. 18) und Fundstellen S. 5, 6, 15, 16, 22 gelesen. Nur Kita-, Ferienbetreuung und Frauenhäuser (R2: andere Themen) sowie Lagebeschreibung zu Sorgearbeit; nichts zu Aufteilung, Teilzeit-Wiedereinstieg, Rollenbildern oder Belästigung.",
+        "stand": "2026-10-08",
+        "treffer": 7,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Soziales/Familie (S. 10-13), Bildung, Sport (S. 27), Wirtschaft, Sicherheit/Frauenhäuser sowie Volltextsuche (Frauen, Mütter, Gleichstellung, Rollen, Vereinbarkeit) gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter. Frauenhäuser gehören zu Sicherheit (R2).",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Familien (S. 11-12), Gute Arbeit (S. 19) und Frauenschutz (S. 69) gelesen; nichts zu Rollenbildern oder Erwartungen an Mütter (2803). Vereinbarkeit/Gleichstellung am Arbeitsmarkt gehört nicht zu 2803.",
+        "stand": "2026-10-08",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Gleichstellung voranbringen' (S. 37-39) und 'Gute Arbeit' (S. 22) gelesen. Zu Rollenbildern und Erwartungen an Mütter nur Wahlfreiheit-Bekenntnis und Betreuungsfinanzierung (gehört zu Kita-Betreuung); keine Zusage gegen widersprüchliche Rollenerwartungen.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [2801, 2802, 2803, 2804],
+      "massnahmen": [
+        {
+          "id": 9520,
+          "instrument": 9491,
+          "beschreibung": "Achtwöchiger Vaterschaftsurlaub und dreimonatige Mindest-Elternzeit je Elternteil, um Familienarbeit partnerschaftlich aufzuteilen",
+          "ursachen_ids": [2801],
+          "zitat": "Ein achtwöchiger Vaterschaftsurlaub während des Wochenbetts sowie eine dreimonatige Mindest-Elternzeit pro Elternteil nach schwedischem Vorbild fördern partnerschaftliche Familienstrukturen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=149",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9521,
+          "beschreibung": "Ehegattensplitting abschaffen und jedem Elternteil einen eigenen Elterngeld-Anspruch auf sieben Monate geben",
+          "ursachen_ids": [2801],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eigene Elterngeldmonate je Elternteil verschieben belegt Sorgearbeit zu Vätern; das Splitting bremst laut Studien die Stundenausweitung von Ehefrauen. Eine Abschaffung muss aber das Existenzminimum des Partners sichern und betrifft Bestandsehen.",
+          "zitat": "Das Ehegattensplitting wird abgeschafft, das Elterngeld reformiert und künftig jedem Elternteil ein individueller Anspruch auf sieben Monate Elterngeld zugesichert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=52",
+          "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2026/maerz/nach-kinderphase-ehegattensplitting-bremst-beschaeftigung-von-frauen-aus",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9522,
+          "instrument": 9493,
+          "beschreibung": "Teilzeit-Elterngeld attraktiver gestalten und fördern",
+          "ursachen_ids": [2802],
+          "zitat": "Das Teilzeit-Elterngeld wird attraktiver gestaltet und gefördert.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=149",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9523,
+          "instrument": 9494,
+          "beschreibung": "Flexible Arbeitszeitmodelle ausbauen und betriebliche Kinderbetreuung steuerlich fördern, um Beruf und Familie besser zu vereinbaren",
+          "ursachen_ids": [2802],
+          "zitat": "Betriebliche Kinderbetreuung wird durch steuerliche Anreize unterstützt, und flexible Arbeitszeitmodelle werden ausgebaut.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=151",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "massnahmen": [
+        {
+          "id": 9524,
+          "instrument": 9496,
+          "beschreibung": "Pflichtfach Lebenskompetenz an Schulen (Pilotschulen), das auch die kritische Auseinandersetzung mit Rollenbildern behandelt",
+          "ursachen_ids": [2803],
+          "zitat": "Wir führen „Lebenskompetenz“ als Pflichtfach ein. Damit stärken wir Kompetenzen für ein selbstbestimmtes Leben in den Bereichen […] Beziehungen und Fürsorge sowie der kritischen Auseinandersetzung mit Rollenbildern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=48",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel Bildung, Gesellschaftlicher Zusammenhalt (S. 13-19, u.a. Diskriminierung) und Stichwortsuche (Frauen, Mütter, Gleichstellung, Geschlecht, Sexismus, Vereinbarkeit, Rollen) gelesen; keine Zusage zu Rollenbildern oder Erwartungen an Mütter.",
+        "stand": "2026-10-08",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2803],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis und Fundstelle S. 128 gelesen (Männerpolitik: moderne Rollenbilder für Männer, nicht Erwartungen an Mütter). Volltextsuche nach Frauen, Mütter, Rollenbild, Stereotyp, Elternzeit, Teilzeit, Vereinbarkeit ergab nur Gewalt-, Gesundheits- und Männerthemen.",
+        "stand": "2026-10-08",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Verstetigte Landesförderung für Clubs und Musikspielstätten gegen das Clubsterben",
+      "ursachen_ids": [3203],
+      "zitat": "Wir wollen: […] eine verstetigte Landesförderung von Klubs und Musikspielstätten, um aktiv das Klubsterben zu bekämpfen und Subkultur zu fördern.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Verlässliche Finanzierung von freier Szene, Soziokultur und alternativen Kulturzentren durch Förderung von Spiel- und Veranstaltungsstätten",
+      "ursachen_ids": [3203],
+      "zitat": "Wir wollen: […] eine verlässliche Finanzierung der freien Kulturszene, der Soziokultur und alternativer Kulturzentren durch Förderung von Spiel- und Veranstaltungsstätten […]",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Zusätzliche Landespauschale an kleine Kommunen im ländlichen Raum für soziokulturelle Einrichtungen",
+      "ursachen_ids": [3203],
+      "zitat": "Wir wollen: […] eine Kulturpauschale im ländlichen Raum installieren, die als Landespauschale für soziokulturelle Einrichtungen im ländlichen Raum, die Kommunen (Städte unter 25.000 Einwohnern) über die Allgemeinen Kommunalfinanzen zusätzlich erhalten […]",
+      "seite": 70
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "klub", "ursache": 3203, "richtung": "Verlässliche Förderung für Kulturorte" },
+    { "begriff": "gewerbemieten", "ursache": 3201, "richtung": "Flächen für Kultur schützen" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3204, "seiten": [6, 13, 33, 54, 58, 83, 85, 90, 91, 92, 95, 111, 112, 115, 116], "grund": "Alle Treffer zu „Umbau“ betreffen Schulen, Krankenhäuser, Wohnungen, Stadtumbau, Industrie, Ställe oder Wald; nichts zu Umbau, Sanierung oder Brandschutz von Gebäuden für Veranstaltungen." },
+    { "ursache": 3201, "seiten": [85], "grund": "S. 85 beschreibt nur, dass kulturelle Einrichtungen unter Gewerbemieten leiden; die folgenden Zusagen betreffen Wohnraum und Stadtumbau, keine Mieten oder Flächen für Kulturorte." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 2–6; Kapitel 8 „Kultur und Medien“ S. 69–74 vollständig (Kultur S. 69–72); Kapitel 9 „Wohnen“ S. 83–85 (inkl. „Städtebau, Gemeindeentwicklung und Leerstand“); Ende Sportkapitel S. 68; queere Szene-Orte S. 25; Umbau-Fundstellen S. 13, 33, 54, 58, 90–92, 95, 111, 112, 115, 116 (alle anderer Zusammenhang).
+
+Nicht erfasst:
+- S. 70: „Spielstättenförderung für freie Bühnen und Akteur:innen“ – gleiche Zusage wie Maßnahme 2 (Förderung von Spiel- und Veranstaltungsstätten der freien Szene, S. 71), dort einmal erfasst.
+- S. 70: Landesförderprogramm kulturelle Teilhabe und Vielfalt, Mindesthonorare, Tarifsteigerungen, Erhöhung des Kulturbudgets, Dynamisierung der Landesmittel, Ausstellungshonorare – allgemeine Kulturförderung bzw. Honorare ohne Bezug zu Kulturorten (R2).
+- S. 71: langfristige institutionelle statt Projektförderung, überjährige Förderinstrumente – allgemein für alle Kulturbereiche (R2); Evaluation Kulturfördergesetz – Prüfauftrag; Kultur und Schule, freier Museumseintritt, barrierefreier Zugang – kein Bezug zu den Ursachen.
+- S. 72: „Schutzgesetze für Kultureinrichtungen“ – Zusammenfassung ohne konkrete Zusage.
+- S. 25: queere Szene-Orte (Bars, Clubs) „wieder aufleben lassen“ und „vorhandene Strukturen stärken“ – Ziel ohne Instrument.
+- S. 61 (Jugendarbeit): Leerstand zu Freiräumen mit Jugendlichen – Jugendtreffs, gehört zu anderem Thema (R2).
+- S. 83/85: Stadtumbauprogramme, Leerstand – Wohnungs- und Städtebau, kein Bezug zu Kulturorten.
+
+Richtungen ohne Maßnahme: 3201 (Flächenschutz, Umnutzung), 3202 (Schallschutz, Genehmigungen, Anwohnerschutz – keine Fundstelle, Kulturkapitel ohne Aussage), 3203 Eigenmittel/Kooperationen, 3204 (beide Richtungen).
+Seite ohne Text: S. 1 (Titelseite), ohne Bedeutung.

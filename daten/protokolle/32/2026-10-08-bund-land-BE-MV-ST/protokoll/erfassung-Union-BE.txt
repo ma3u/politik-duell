@@ -1,0 +1,73 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Flächen für kreative Orte und Clubs frühzeitig sichern und planungsrechtlich verlässlich absichern",
+      "ursachen_ids": [3201],
+      "zitat": "Flächen für kreative Orte und Clubnutzungen sollen frühzeitig gesichert und planungsrechtlich verlässlich abgesichert werden.",
+      "seite": 122
+    },
+    {
+      "beschreibung": "Landeseigene Grundstücke im Rahmen einer kulturfreundlichen Stadtentwicklung stärker für Standorte der Kreativwirtschaft öffnen",
+      "ursachen_ids": [3201],
+      "zitat": "Wir setzen uns weiter für eine kulturfreundliche Stadtentwicklungspolitik ein, die landeseigene Grundstücke stärker auch für Standorte der Kreativwirtschaft öffnet.",
+      "seite": 122
+    },
+    {
+      "beschreibung": "S-Bahn-Bögen gemeinsam mit der Bahn als Kunst-, Kultur- und Geschäftsorte erschließen",
+      "ursachen_ids": [3201],
+      "zitat": "Mit der Deutschen Bahn wollen wir S-Bahn-Bögen als Kunst-, Kultur- und Geschäftsorte erschließen.",
+      "seite": 121
+    },
+    {
+      "beschreibung": "Programm für den Umbau von Handelsimmobilien auch für Kulturnutzungen auflegen",
+      "ursachen_ids": [3201],
+      "ursachen_offen": [3204],
+      "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen und ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Arbeitsraumprogramm für bezahlbare Arbeitsräume von Künstlerinnen und Künstlern weiter fördern, mit Fokus auf den Erhalt bestehender Räume",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201],
+      "zitat": "Wir werden das Arbeitsraumprogramm weiter fördern und setzen einen Fokus auf den Erhalt von bestehenden Räumen.",
+      "seite": 119
+    },
+    {
+      "beschreibung": "Förderrichtlinien praxisnäher gestalten, damit wirtschaftlich arbeitende Kultureinrichtungen nicht zwischen Kultur- und Wirtschaftsförderung durchs Raster fallen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Förderrichtlinien sollen praxisnäher gestaltet werden, damit wirtschaftlich agierende Kultureinrichtungen nicht zwischen klassischer Kulturförderung und Wirtschaftsförderung durchs Raster fallen.",
+      "seite": 121
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3202, "seiten": [119, 120, 121, 122, 37], "grund": "Kapitel Kultur und Medien und Stadtentwicklung gelesen; nichts zu Schallschutz, Lärmkonflikten oder Genehmigung von Veranstaltungen." },
+    { "ursache": 3204, "seiten": [24, 36, 45, 81], "grund": "Treffer zu Umbau betreffen JVA Tegel, Flughafenterminal für die BHT, Express-Baugenehmigungen für Start-up- und Kreativflächen und klimaresilienten Umbau von Schulhöfen – keine Veranstaltungsorte." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel „Kultur und Medien“ (S. 119–124) vollständig; „Berliner Mischung erhalten“ und „Wachsen mit Plan“ (S. 33, 36–37); „Gründerhauptstadt“ (S. 45); „The Place To Be“/Messe (S. 48); „Neue Liegenschaftspolitik“ (S. 93); Fundstellen S. 24, 36, 37, 45, 81, 121, 122; weitere Kultur-Erwähnungen S. 22, 59, 107.
+
+Grenzfälle:
+- S. 119 Arbeitsraumprogramm: Arbeitsräume für Künstlerinnen und Künstler (Ateliers), keine Spielstätten oder Clubs – ob das unter Flächenschutz für Kulturorte (3201) fällt, lässt R1 offen.
+- S. 121 Förderrichtlinien für wirtschaftlich agierende Kultureinrichtungen: Clubs sind nicht genannt, aber gemeint sein könnten solche Einrichtungen – R2 lässt den Bezug offen (3203).
+- S. 37 Umbau von Handelsimmobilien für Kulturnutzungen: Umnutzung schafft Fläche (3201); Umbau für Veranstaltungsbetrieb (3204) nicht ausdrücklich.
+- S. 122 landeseigene Grundstücke: „Kreativwirtschaft“ steht im Absatz zur Clubkultur, daher 3201.
+
+Nicht erfasst:
+- S. 37: S-Bahn-Bögen für Gewerbe- und Kulturnutzungen „prüfen“ (Prüfauftrag; die Zusage auf S. 121 ist erfasst).
+- S. 37: Leerstandsmanagement landeseigener Immobilien für Start-ups und Kreativwirtschaft öffnen – Wirtschaftsförderung (Pop-up-Showrooms, Prototypen), keine Kulturorte.
+- S. 45: Express-Baugenehmigungen für kleinere Umbaumaßnahmen bei Start-up- und Kreativflächen – Gründungsförderung, keine Veranstaltungsorte.
+- S. 119: Ziel „kulturelle Räume zu sichern“, Unterstützung niedrigschwelliger Angebote/Freie Szene, kleine Bühnen „gehören zur Vielfalt“ – Ziele und Bekenntnisse ohne konkrete Handlung.
+- S. 120: Sanierung Komische Oper, Staatsoper, Philharmonie; Transformationsfonds, Stiftung Oper; KulturLeben Berlin – Hochkultur bzw. Ticketförderung (R2).
+- S. 121: „House of Jazz“ im L'Aiglon – einzelnes Leuchtturmprojekt, setzt nicht an Verdrängung, Budget oder Gebäudeeignung kleiner Spielstätten an; Tempelhof als Kulturort (Nutzungskonzept erarbeiten, Ziel); „weiter eruieren“, welche Orte kulturell nutzbar sind (Prüfauftrag); ZLB, Bibliotheken, Musikschulen (R2).
+- S. 122: Clubkommission „bleibt wichtiges Netzwerk“ (Bekenntnis); internationale Vernetzung der Clubszene (keine Ursache).
+- S. 48: multifunktionale ICC-Nutzung (Ziel), Kultur- und Sportevent-Strategie für Großveranstaltungen (keine Ursache).
+- S. 123–124: Rundfunk, Kino, Games (R2).
+- S. 36: Tempelhofer Feld als Ort für Kultur erhalten – Bekenntnis zu Bestehendem.
+
+Richtungen ohne Maßnahme: Schallschutz und Genehmigungen, Emissionen begrenzen (3202); Eigenmittel und Kooperationen (3203); Gebäude für Veranstaltungen anpassen, Nutzung an Gebäude anpassen (3204, außer Grenzfall S. 37).
+Seiten ohne Text: 106 (Trennseite Kapitel X) und 127/128 (Rückseiten) – keine Rolle, das Kulturkapitel ist vollständig als Text vorhanden.

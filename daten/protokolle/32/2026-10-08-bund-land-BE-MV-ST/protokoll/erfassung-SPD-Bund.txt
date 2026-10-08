@@ -1,0 +1,36 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Kulturschutzgebiete im Baurecht einführen, die kulturelle Einrichtungen wie Clubs vor Verdrängung schützen und ihnen eine langfristige Perspektive sichern",
+      "ursachen_ids": [3201],
+      "zitat": "Mit „Kulturschutzgebieten“ im Baurecht schützen wir kulturelle Einrichtungen wie Clubs vor Verdrängung und sichern ihnen eine langfristige Perspektive.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Förderung von Popkultur ausbauen, um besonders für jüngere Zielgruppen vielfältige kulturelle Angebote zu schaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Die Förderung von Popkultur wollen wir ausbauen, um insbesondere für jüngere Zielgruppen vielfältige kulturelle Angebote zu schaffen.",
+      "seite": 51
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3202, "seiten": [50, 51], "grund": "Kulturkapitel (S. 50–52) gelesen; nichts zu Schallschutz, Lärmkonflikten oder Genehmigung von Veranstaltungen." },
+    { "ursache": 3204, "seiten": [50, 51, 52], "grund": "Kulturkapitel gelesen; nichts zu Umbau, Sanierung oder Brandschutz von Veranstaltungsorten (Sanierung nur für Sportstätten S. 52, Denkmalschutz S. 50 ohne Bezug zu Spielstätten)." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3–6; Kapitel 18 „Medienvielfalt, Kunst und Kultur, Sport“ (PDF S. 50–52); Kapitel 19 „Starke Kommunen, Land und Stadt“ (PDF S. 52–54); Fundstellen S. 50, 51, 53. Zusätzliche Volltextsuche nach Club, Musik, Soziokultur, Spielstätte, Veranstaltung, Lärm, Gewerbe: keine weiteren Stellen zum Thema.
+
+Grenzfall: Popkultur-Förderung (S. 51) – Förderung von Popkultur kann Spielstätten und Clubs einschließen, nennt aber keine Kulturorte; daher 3203 offen (R2).
+
+Nicht erfasst:
+- S. 50: „Kultur für alle“, Trägerinnen und Träger kultureller Infrastruktur stärker unterstützen – allgemeine Kulturförderung ohne Bezug zu Clubs, Spielstätten oder soziokulturellen Zentren (R2), zudem allgemein formuliert; Kultur als Staatsziel, Denkmalschutz, Stiftung Preußischer Kulturbesitz – R2.
+- S. 51: Breites Kulturverständnis „Hoch-, Pop-, Sozio- und Subkultur“ – Bekenntnis ohne eigene Handlung. Künstlersozialkasse, Urheberrecht, Kreativwirtschaft, Filmförderung – nicht an den Ursachen (Orte). Kinos im ländlichen Raum durch Förderprogramme erhalten – Kinos sind keine Clubs/Spielstätten/soziokulturellen Zentren im Sinne von R2; nicht aufgenommen. Bundesinitiative Industriekultur – Kultur- und Gedenkorte, R2.
+- S. 53: Leerstand-Strategie für den ländlichen Raum – „brauchen wir“, Umwandlung in Wohn- oder Gewerberaum ohne Bezug zu Kulturnutzung.
+- S. 52: Sanierung von Sportstätten – anderes Thema.
+
+Seiten ohne Text (1, 2, 67, 68): Titel- und Rückseiten, nicht im Kulturkapitel.

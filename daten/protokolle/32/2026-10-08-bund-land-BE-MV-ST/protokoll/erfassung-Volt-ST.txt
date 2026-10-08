@@ -1,0 +1,44 @@
+{
+  "partei_id": 18,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "„Dritte Orte“ wie Begegnungsräume, offene Bibliotheken und Kulturcafés fördern",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Dafür stärken wir Stadtteilzentren, schaffen „Dritte Orte“ und fördern gemischte Quartiere. […] Förderung von „Dritten Orten“ wie Begegnungsräumen, offenen Bibliotheken und Kulturcafés",
+      "seite": 82
+    },
+    {
+      "beschreibung": "Sicherheitsanforderungen bei Veranstaltungen als Landesaufgabe; mobile Sperren zentral beschaffen und nicht-kommerziellen Veranstaltungen kostenfrei bereitstellen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3202],
+      "zitat": "Wir schaffen verlässliche Rahmenbedingungen […] Dazu gehören: […] Sicherheitsanforderungen bei Veranstaltungen (z. B. Terrorismusabwehr) als Aufgabe des Landes definieren und notwendige Infrastruktur wie mobile Sperren zentral beschaffen, lagern und für nicht-kommerzielle Veranstaltungen kostenfrei bereitstellen",
+      "seite": 152
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3201, "seiten": [81, 101, 106, 179], "grund": "Fundstellen zu Umnutzung betreffen Brachflächen/Wohnungsbau, Tankstellenflächen, Benutzeroberflächen und Parkflächen; kein Schutz oder keine Bereitstellung von Flächen für Kulturorte oder Clubs." },
+    { "ursache": 3204, "seiten": [71, 81, 92, 101], "grund": "„Umbau“ betrifft Waldumbau, Wohngebäude, Straßen und Tankstellenflächen; nichts zu Umbau, Sanierung oder Brandschutz von Veranstaltungsgebäuden." },
+    { "ursache": 3203, "seiten": [84, 152, 154], "grund": "Grundfinanzierung kultureller Infrastruktur, mehrjährige Förderzusagen, lokale Kulturförderung im ländlichen Raum und GEMA-Übernahme für Vereine sind allgemeine Kultur- bzw. Vereinsförderung ohne Bezug zu Clubs, Spielstätten oder soziokulturellen Zentren (R2)." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3–9; Kapitel „Kultur, Heimat & Europa“ S. 151–155 (Kultur stärken S. 152, Sport S. 153, GEMA S. 154); „Kurze Wege, lebendige Quartiere“ S. 82; „Bezahlbaren Wohnraum“ S. 83; „Ländliche Räume stärken“ S. 84; „Weniger Lärm“ S. 47; Strukturwandel S. 61; Fundstellen S. 71, 81, 92, 101, 106, 152, 179.
+
+Erfasst (beide als Grenzfall in ursachen_offen):
+- S. 82 Kulturcafés als „Dritte Orte“: ob ein Kulturcafé als Kulturort mit Gemeinwesenarbeit (3203) gilt, lässt R2 offen.
+- S. 152 mobile Sperren/Sicherheitsanforderungen: R1 ordnet „Auflagen … von Veranstaltungen“ 3202 zu, die Ursache selbst betrifft aber Schall; Bezug zu Kulturorten fehlt (Dorffeste, nicht-kommerzielle Veranstaltungen).
+
+Nicht erfasst:
+- S. 152 „Kultur als Pflichtaufgabe im Landesrecht verankern … verbindliche Grundfinanzierung sowie Mindeststandards für kulturelle Infrastruktur“ und „Mehrjährige Förderzusagen statt kurzfristiger Projektförderung“: allgemeine Kulturförderung ohne Bezug zu Clubs/Spielstätten/Soziokultur (R2).
+- S. 152 „Bürokratie abbauen und gezielte Beratungsangebote für Veranstaltende ausbauen“: allgemein, kein Bezug zu Genehmigung oder Schall.
+- S. 152 Kulturpass, Ehrenamtskarte: Teilhabe/Ehrenamt, keine Ursache.
+- S. 154 GEMA-Gebühren für Vereinsveranstaltungen: Vereinsentlastung, keine Kulturorte (R2).
+- S. 84 „Kultur- und Freizeitangebote durch lokale Förderung … ausbauen“: allgemein (R2).
+- S. 47 Lärmschutz: Verkehrs- und Gewerbelärm, keine Veranstaltungen.
+- S. 173 „Schutzräume im Nachtleben“ (Luisa-Kampagne): Sicherheit, keine Ursache des Themas.
+- S. 81 Sanierung/Umnutzung: Wohnungsbau (gehört zu Miete).
+Richtungen ohne Maßnahme: Flächen für Kultur schützen, Zusätzliche Flächen und Umnutzung, Schallschutz, Emissionen begrenzen, Eigenmittel und Kooperationen, Gebäude für Veranstaltungen anpassen, Nutzung an das Gebäude anpassen.
+Seite ohne Text: 1 (Titelseite), ohne Bedeutung.

@@ -1,0 +1,25 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Begleitetes Fahren schon ab 16 Jahren ermöglichen",
+      "ursachen_ids": [3502],
+      "zitat": "In diesem Zusammenhang wollen wir auch das begleitete Fahren bereits ab 16 Jahren ermöglichen.",
+      "seite": 43
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3501, "seiten": [42, 43, 44, 45], "grund": "Kapitel Verkehr (S. 42–45) gelesen; nichts zu Fahrschulpreisen, Prüfungsgebühren, Wettbewerb oder Förderung des Führerscheinerwerbs. Nur das allgemeine Ziel, individuelle Mobilität bezahlbar zu halten." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "begleitete fahren", "ursache": 3502, "richtung": "Ausbildung und Prüfung entschlacken" }
+  ]
+}
+
+Protokoll
+- Gelesen: Inhaltsverzeichnis (S. 3–8); Kapitel „Verkehr“ (S. 43–45: Verkehrspolitik, motorisierter Individualverkehr, Automobilindustrie, Autobahnen); Grep nach Fahrerlaubnis, Fahrschule, Führerschein, Prüfung, Auszubildende ohne weitere Fundstellen zum Thema.
+- Fundstellen S. 28, 33, 42 (Krankenhausreform, Heilpraktiker-Prüfungsstandards, Kraftwerke) gehören zu anderen Zusammenhängen, nicht erfasst.
+- Nicht erfasst: S. 43 „Individuelle Mobilität muss bezahlbar bleiben.“ – allgemeines Ziel ohne Handlung, kein Bezug zum Führerscheinerwerb. S. 43 Ablehnung von Fahrverboten, Erhalt von Fahrspuren und Parkraum, S. 43–44 Verbrenner und synthetische Kraftstoffe – gehören nach R2 zu Autofahren.
+- Begleitetes Fahren ab 16: Suchbegriff „begleitetes fahren“ trifft nicht, weil der Text „begleitete Fahren“ (mit Zeilenumbruch) schreibt; zugeordnet zu 3502 entsprechend der Richtung „Ausbildung und Prüfung entschlacken“ (Praxis/Fahrerfahrung vor dem Alleinfahren).
+- Richtungen ohne Maßnahme: Führerscheinkosten senken, Wettbewerb und Preistransparenz, Qualität und Prüfungsreife sichern.

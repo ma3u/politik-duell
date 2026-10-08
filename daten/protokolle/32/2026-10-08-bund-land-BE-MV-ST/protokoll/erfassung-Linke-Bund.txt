@@ -1,0 +1,49 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Bundesrecht so ändern, dass Länder und Kommunen rechtssicher Mietendeckel für Gewerbemieten u. a. kultureller Einrichtungen einführen können",
+      "ursachen_ids": [3201],
+      "zitat": "Kleingewerbe leiden unter explodierten Gewerbemieten. Der Bund muss dafür sorgen, dass Länder und Kommunen rechtssicher Mietendeckel für Kleingewerbe, Handwerk, kulturelle Einrichtungen sowie für soziale und gemeinnützige Träger einführen können.",
+      "seite": 8
+    },
+    {
+      "beschreibung": "Bundesregeln für die Stadtplanung, damit Freiräume etwa für Clubkultur zur partizipativen und experimentellen Nutzung stärker berücksichtigt werden",
+      "ursachen_ids": [3201],
+      "zitat": "Bundesregularien sollen es Stadtplaner*innen ermöglichen, verstärkt Freiräume etwa für die Clubkultur zu berücksichtigen, die für eine partizipative und experimentelle Nutzung zur Verfügung stehen.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Bestandsschutz und Schutz vor Verdrängung für oft ehrenamtlich geschaffene Proben-, Produktionsräume und Atelierhäuser",
+      "ursachen_ids": [3201],
+      "zitat": "Künstlerisches Schaffen braucht Infrastruktur: von Proben- und Produktionsräumen bis hin zu Atelierhäusern für Kulturschaffende. Diese oft ehrenamtlich geschaffenen Orte verdienen Bestandsschutz, finanzielle Unterstützung und Schutz vor Verdrängung durch Profitorientierung.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Verlässliche und unbürokratische Unterstützung für gemeinnützige Kultur- und Veranstaltungsstätten",
+      "ursachen_ids": [3203],
+      "zitat": "Gemeinnützige Kultur- und Veranstaltungsstätten und Menschen, die ehrenamtlich kulturelle Angebote schaffen, brauchen verlässliche und unbürokratische Unterstützung.",
+      "seite": 55
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3204, "seiten": [5, 15, 17, 24, 28, 29, 30, 31, 32, 33, 34, 35, 42, 44, 53, 55, 56], "grund": "Treffer „umbau“ betreffen Wirtschafts-, Industrie-, Agrar-, Stadt- und Wohnungsumbau; Kulturkapitel (S. 55–56) enthält nichts zu Umbau, Sanierung, Akustik oder Brandschutz von Veranstaltungsgebäuden (Sanierung nur für Turnhallen und Sportstätten)." },
+    { "ursache": 3202, "seiten": [45, 55, 56], "grund": "Keine Aussage zu Schall, Lärmschutz, Auflagen oder Genehmigung von Veranstaltungen; Kapitel Kommunen und Kultur gelesen." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 2–3; Kapitel 2 „Wohnen“ Gewerbemieten S. 8; Kapitel 12 „Kommunen“ S. 44–45; Kapitel 14 „Queere Emanzipation“ S. 47; Kapitel 19 „Medien und Kultur“ S. 55–56; Kapitel 20 S. 57; Fundstellen S. 5, 15, 17, 20, 24, 28–35, 42, 49, 53 per Auszug geprüft (anderer Zusammenhang).
+
+Nicht erfasst:
+- S. 47: „Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse“ – gleiche Richtung wie Gewerbemietendeckel (S. 8) und Schutz vor Verdrängung (S. 56), weniger konkret; einmal erfasst.
+- S. 55: „Kulturförderung sollte Pflichtaufgabe werden“ – „sollte“; zudem allgemeine Kulturförderung (R2). „Länder und Kommunen müssen finanziell so ausgestattet werden, dass sie Kulturförderung betreiben können“ – allgemeine Kulturförderung ohne Bezug zu Spielstätten (R2).
+- S. 55: Mindesthonorare, Künstlersozialkasse, Kooperationsverbot – betreffen Kulturschaffende, nicht Orte.
+- S. 56: „finanzielle Unterstützung“ für Proberäume/Ateliers – gleiche Zusage wie S. 55 (3203), dort erfasst.
+- S. 56: Sanierung von Turnhallen und Sportstätten – Sport, nicht Kultur.
+- S. 45: Umgestaltung leerstehender Gewerbeflächen zu Sorgezentren und konsumfreien Treffpunkten – soziale Infrastruktur, keine Kulturorte.
+- S. 20, 49: „Sponsoring“-Treffer zu Werbeverboten und Parteispenden – anderer Zusammenhang.
+- S. 57: „kulturelle Teilhabe“ im Kontext Digitalisierung – anderer Zusammenhang.
+
+Richtungen ohne Maßnahme: Zusätzliche Flächen und Umnutzung (3201), Schallschutz/Genehmigungen und Emissionsbegrenzung (3202), Eigenmittel und Kooperationen (3203), beide Richtungen zu 3204.
