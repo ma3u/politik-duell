@@ -1,0 +1,16 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Reform der Kommunalfinanzierung mit Flächenfaktor, kommunaler Grundsicherung und verlässlicher Finanzausstattung; Altschuldenfonds für überschuldete Kommunen.", "ursachen_ids": [2404], "zitat": "Wir fordern eine Reform der Kommunalfinanzierung, die einen Flächenfaktor, eine kommunale Grundsicherung und verlässliche Finanzausstattung umfasst, damit Städte und Gemeinden ihre Aufgaben zuverlässig erfüllen können.", "seite": 97 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2401, "seiten": [90, 66, 67], "grund": "S. 90 'Innovation statt Abwanderung' und Start-up-Abwanderung betrifft Unternehmen/Gründer, nicht junge Menschen; Hochschulfinanzierung (S. 67) ohne Bezug zu Abwanderung; S. 83 Gesundheit." },
+    { "ursache": 2402, "seiten": [88, 93], "grund": "Fundstellen nur Lagebeschreibung bzw. anderer Zusammenhang (Kreislaufwirtschaft); keine Zusage zu Geburten oder Zuzug." }
+  ]
+}
+
+Protokoll
+Gelesen: Fundstellen S. 83, 88, 90, 93, 97; Kapitel Hochschulen (S. 66-67), Kommunen (S. 97-98), Wirtschaft/Innovation (S. 90). Grep nach Abwanderung, ländlich, Rückkehr, Altschulden.
+Nicht erfasst: S. 97 Altschuldenfonds, Umsatzsteueranteil, Kreisumlage als weitere Kommunalfinanz-Zusagen (gleiches Bündel/Ziel, nicht separat). 
+Auftrag nennt keinen Abschnitt Bündel, daher kein buendel.

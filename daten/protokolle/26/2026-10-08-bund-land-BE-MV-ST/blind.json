@@ -1,0 +1,246 @@
+{
+  "pruefsumme": "879ae513f767c3055c21f54d42b26e077c49d28fac8fecadfcd2171a872bea94",
+  "thema": {
+    "id": 26,
+    "name": "Barrieren für Menschen mit Behinderung",
+    "ziel": "Menschen mit Behinderung können ihren Alltag selbstbestimmt gestalten und Wohnen, Mobilität, Angebote, Arbeit und benötigte Unterstützung gleichberechtigt nutzen."
+  },
+  "ursachen": [
+    {
+      "id": 2601,
+      "beschreibung": "Der Abbau von Zugangsbarrieren an Bahnhöfen verzögert sich laut Bundesrechnungshof (2025) vor allem wegen unzureichender Steuerung der Investitionen",
+      "ebene": "bund"
+    },
+    {
+      "id": 2602,
+      "beschreibung": "Über 50 % der Betriebe nannten 2024 fehlende geeignete Tätigkeiten als Hürde für die Beschäftigung von Menschen mit Behinderung; etwa ein Viertel nannte Ausstattungskosten oder Aufwand",
+      "ebene": "bund"
+    },
+    {
+      "id": 2603,
+      "beschreibung": "Etwa 22 % der Betriebe nannten 2024 erwartete Leistungseinschränkungen oder Sonderregeln als Hürde für die Beschäftigung von Menschen mit Behinderung",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2601,
+        2602,
+        2603
+      ],
+      "text": "Zu 2601 gehören Barrierefreiheit von Bahnhöfen, Haltestellen und Verkehrsmitteln und die Steuerung der Umsetzung; zu 2602 Arbeitsplätze, Ausstattung, Ausgleichsabgabe und Beschäftigungspflicht; zu 2603 Vorbehalte, Beratung und Regeln, die Einstellung und Beschäftigung betreffen. Barrierefreies Wohnen, Gebäude und digitale Angebote ohne Bezug zu diesen Ursachen sind nur als ursachen_offen zu melden."
+    },
+    {
+      "nr": 2,
+      "text": "Gemeinsamer Unterricht an Regelschulen ist eine eigene Haltung und gehört nicht hierher. Pflege, Rente und allgemeine Diskriminierung gehören zu anderen Themen, soweit das Zitat keine Barriere für Menschen mit Behinderung nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Beschäftigungspflicht für Menschen mit Behinderung wieder auf sechs Prozent anheben, ohne Freikaufen",
+      "zitat": "Die Beschäftigungspflicht von Menschen mit Behinderungen muss wieder auf sechs Prozent angehoben werden. Die Betriebe dürfen sich daraus nicht rauskaufen können",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "b64ee5f4eaa8ac72"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Mehr Barrierefreiheit im öffentlichen Leben, ohne Bezug auf Bahn oder Verkehr genannt.",
+      "zitat": "Wir setzen uns für mehr Barrierefreiheit im öffentlichen Leben ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "debe83b491b39e89"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Ausgleichsabgabe für Betriebe, die zu wenige Menschen mit Behinderung beschäftigen, wird nach Unternehmensgröße und Erfüllungsgrad der Quote gestaffelt.",
+      "zitat": "Ausgleichsabgabe reformieren: Arbeitgebende, die nicht ausreichend Menschen mit Behinderung beschäftigen, zahlen eine Ausgleichsabgabe, die an einen Prozentsatz des monatlichen Einkommens und Unternehmensgröße gekoppelt ist.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "2ca09922286c6946"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Bahnnetz sanieren, elektrifizieren und Strecken ausbauen bzw. reaktivieren, dabei barrierefrei",
+      "zitat": "Damit die Bahn wieder pünktlich und zuverlässig fährt, muss das Netz saniert, elektrifiziert, müssen Strecken reaktiviert und ausgebaut werden, natürlich barrierefrei",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "35f5608c47ebbce8"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Erhebliche Investitionen in umfassende Barrierefreiheit im Verkehr, an Haltestellen und Mobilitätsangeboten.",
+      "zitat": "Durch erhebliche Investitionen in umfassende Barrierefreiheit, sichere Haltestellen und attraktive Mobilitätsangebote stellen wir sicher, dass klimafreundliche Mobilität für alle zugänglich ist",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "49c515c50ca7f112"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Barrieren in Bus und Bahn sollen schneller beseitigt werden.",
+      "zitat": "Barrieren in Bus und Bahn müssen schneller beseitigt werden.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "f048b4280cc7af36"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Inklusionsbetriebe besser öffentlich finanzieren",
+      "zitat": "Inklusionsbetriebe besser fördern, denn diese leisten einen wesentlichen Beitrag zur Inklusion in den allgemeinen Arbeitsmarkt. Sie brauchen eine bessere öffentliche Finanzierung",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "b392de7d71d14bc9"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Mehr Anreize für Betriebe, barrierefreie Arbeitsplätze zu schaffen.",
+      "zitat": "Gleichzeitig braucht es mehr Anreize zur Schaffung barrierefreier Arbeitsplätze. Eine inklusive Arbeitswelt nutzt das Potenzial aller und stärkt den sozialen Zusammenhalt.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "4887a7eef3aef15c"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Werkstätten für Menschen mit Behinderung werden abgeschafft und in Inklusionsbetriebe mit Arbeitnehmendenrechten und Mindestlohn umgewandelt.",
+      "zitat": "Werkstätten (WfBM) werden abgeschafft und in Inklusionsbetriebe umgewandelt, in denen Arbeitnehmendenrechte gelten und Mindestlöhne gezahlt werden.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "2d4ab34e393338ed"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern und Werkstätten weiterentwickeln",
+      "zitat": "Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern und die Weiterentwicklung der Werkstätten für behinderte Menschen zügig umsetzen.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "4a6e8072cba380ff"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Privatwirtschaft per AGG und BGG zur Barrierefreiheit bei öffentlich zugänglichen Gütern und Dienstleistungen verpflichten",
+      "zitat": "Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "abb6a6bbe280ee0c"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Beschäftigte mit Behinderung in Werkstätten sollen durch Umschichtung von Mitteln den Mindestlohn erhalten.",
+      "zitat": "Behinderten in Werkstätten möchten wir durch Mittelumschichtung den Erhalt des Mindestlohns ermög- […] lichen;",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "5c600972f3064436"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Praxisnahe Förderung und Arbeitsvermittlung für Menschen mit Behinderung, um Chancen auf dem ersten Arbeitsmarkt zu verbessern.",
+      "zitat": "Durch praxisnahe Förderung und Arbeitsvermittlung verbessern wir die Chancen auf dem ersten Arbeitsmarkt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2602
+      ],
+      "pruefsumme": "482af56fd28cb459"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Barrierefreiheit auch in der Mobilität zu einem Schwerpunkt machen",
+      "zitat": "Darüber hinaus werden wir die Barrierefreiheit im Wohnungsbau, bei der Mobilität, im Digitalen und in der Gesundheit zu einem Schwerpunkt machen.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "b0b92c2a72ffca45"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Zusätzliche Arbeitsplätze für Menschen mit Behinderung über die Quote hinaus werden mit steuerlichen Gutschriften gefördert.",
+      "zitat": "Zusätzliche Arbeitsplätze für Menschen mit Behinderungen über die […] hinaus werden durch steuerliche Gutschriften gefördert.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "c4e35df9cc713771"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliche Schlupflöcher bei der Beschäftigungspflicht schließen und die Ausgleichsabgabe anpassen.",
+      "zitat": "Damit Arbeitgeber*innen ihrer Beschäftigungspflicht nachkommen, schließen wir gesetzliche Schlupflöcher und passen die Ausgleichsabgabe an.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "c177fb40411fc5fb"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Öffentlicher Nahverkehr wird barrierefrei ausgebaut.",
+      "zitat": "ÖPNV als Alternative: Öffentlicher Nahverkehr wird zuverlässig, barrierefrei und eng getaktet ausgebaut.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "bc652c65ac7abaf7"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Werkstättensystem schrittweise zu Inklusionsunternehmen weiterentwickeln, mit Mindestlohn und individueller Unterstützung.",
+      "zitat": "Das heutige ausgrenzende Werkstättensystem wollen wir schrittweise in Richtung Inklusionsunternehmen weiterentwickeln, in denen Menschen mit und ohne Behinderung gemeinsam arbeiten, mindestens nach Mindestlohn entlohnt werden",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "1ab2a3dfc4bcbc04"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Veraltete Regelwerke erneuern, um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+      "zitat": "Wir wollen den Stadtumbau stärker fördern und veraltete Regelwerke erneuern, etwa um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "47306d66e237aae9"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Zugang zu Ausbildung und Arbeit erleichtern: Vermittlung auf den ersten Arbeitsmarkt sowie Inklusionsbetriebe und Werkstätten stärken.",
+      "zitat": "Wir erleichtern Menschen mit Behinderungen den Zugang zu Ausbildung und Arbeit mit passgenauen Impulsen für einen inklusiven Arbeitsmarkt. Dafür stärken wir sowohl die Vermittlung auf den ersten Arbeitsmarkt als auch Inklusionsbetriebe und Werkstätten.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "61285eb45aef3b76"
+    }
+  ]
+}

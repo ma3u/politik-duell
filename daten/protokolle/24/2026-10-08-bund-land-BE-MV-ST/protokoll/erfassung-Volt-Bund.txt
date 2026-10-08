@@ -1,0 +1,15 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Anreize für Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, damit Fachkräfte in der Region bleiben", "ursachen_ids": [2401], "zitat": "Homeoffice im ländlichen Raum:   Eine Anreizstruktur fördert Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, um Fachkräfte in der Region zu halten.", "seite": 20 },
+    { "beschreibung": "Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um die Finanzen der Kommunen zu stabilisieren", "ursachen_ids": [2404], "zitat": "Moderne Kommunalfinanzierung:   Die Gewerbesteuer wird aufkommensneutral und konjunkturunabhängig ersetzt und die Konzessionsabgabenverordnung grundlegend reformiert, um die Kommunalfinanzen auf robuste Füße zu stellen.", "seite": 15 },
+    { "beschreibung": "Demografiefaktor im bundesstaatlichen Finanzausgleich für mehr Verteilungsgerechtigkeit", "ursachen_ids": [], "ursachen_offen": [2402, 2404], "zitat": "Eine stärkere Steuerautonomie für die Länder schafft Anreize für eine nachhaltige Finanzpolitik und ein Demografiefaktor im bundesstaatlichen Finanzausgleich sorgt für mehr Verteilungsgerechtigkeit.", "seite": 16 },
+    { "beschreibung": "Strukturschwache Regionen sollen lokale Konzepte zur Ansiedlung von Menschen und Gewerbe sowie die Vernetzung von Kommunen fördern können", "ursachen_ids": [2402], "zitat": "Regionale Wirtschaftsförderung:   Strukturschwache Regionen profitieren von lokal entwickelten Konzepten zur Ansiedlung von Menschen und Gewerbe sowie von der Vernetzung von Kommunen.", "seite": 54 },
+    { "beschreibung": "Verbundausbildungen und Förderkampagnen helfen Kleinbetrieben und Start-ups, Ausbildungsplätze anzubieten", "ursachen_ids": [2403], "zitat": "Unterstützung kleiner Betriebe:   Kleinbetriebe und Start-ups profitieren von Verbundausbildungen und Förderkampagnen, um Ausbildungsplätze anzubieten.", "seite": 116 },
+    { "beschreibung": "Digitale Plattformen vernetzen Bildungsträger, Beratungsstellen und Unternehmen für bedarfsgerechte Ausbildungsplanung", "ursachen_ids": [2403], "zitat": "Plattformen für Vernetzung:   Bildungsträger, Beratungsstellen und Unternehmen werden über digitale Plattformen noch besser vernetzt, um bedarfsgerechte Ausbildungsplanung zu fördern.", "seite": 116 }
+  ]
+}
+
+Protokoll: Gelesen S. 15-16, 20, 54, 61, 116-117 und alle Fundstellen per Grep (ländlich, strukturschwach, Kommunen, Ausbildung).
+Nicht erfasst: S. 61 regionaler Klimabonus (Ausgleich CO2, anderes Thema); S. 55 Dorfschulen (R2 Schulen); S. 20 GRW-Förderung (Investitionen, R2); S. 33/139 Rückkehr (Polizei/Migration); S. 36 Finanzausgleich Länderpolizeien; S. 50/51/138 Matching/Internationale Azubis (Zuwanderung, kein Regionsbezug); S. 53, 66, 68, 72, 97 Genehmigungsverfahren (Energie/Glasfaser/Bau, anderes Thema); S. 116 Orientierungsangebote/Berufsorientierung (Jugendarbeitslosigkeit, ohne Regionsbezug); S. 159-160 Kulturförderung.

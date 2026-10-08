@@ -1,0 +1,3610 @@
+{
+  "thema_id": 24,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Berufsorientierung in allen Schulformen strukturieren und bestehende Maßnahmen bundesweit und regional aufeinander abstimmen",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Ein strukturierter, individueller Prozess einer Berufsorientierung in allen Schulformen ist hierfür entscheidend. Zusammen mit den Akteuren, die sich bundesweit und regional in der Berufsorientierung engagieren, wollen wir sämtliche bestehenden Maßnahmen aufeinander abstimmen.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Kommunal relevante Bundesförderprogramme zusammenfassen, online bündeln und Antragsverfahren sowie Nachweispflichten vereinfachen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir machen die kommunal relevanten Förderprogramme des Bundes einfacher in der Abwicklung, indem wir sie zusammenfassen und auf einer Online-Plattform bündeln. Fristen fassen wir realitätsnah, vereinfachen Antragsverfahren und reduzieren Nachweispflichten.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Konnexität: Wer Aufgaben für Länder und Kommunen veranlasst oder ausweitet, muss sie finanzieren",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir orientieren uns am Grundsatz der Konnexität. Für uns ist klar: Wer eine Leistung veranlasst oder ausweitet, muss für ihre Finanzierung aufkommen.",
+          "seite": 76
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            6,
+            60
+          ],
+          "grund": "Treffer zu Zuzug betreffen Migrationsbegrenzung bzw. Familiennachzug, nicht Halten oder Zurückholen junger Menschen in der Region."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            6,
+            69
+          ],
+          "grund": "Treffer betreffen Migration und Alterung im Gesundheitssystem; keine Zusage zu Geburten, Zuzug oder Anpassung an Schrumpfung."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Inhaltsverzeichnis, Kapitel Wohnen (S. 30-37), Berlin wird spitze (S. 41-50), Bildung/Ausbildung (S. 55-64), Starke Familien (S. 108-109) und Fundstellen S. 32, 34, 35, 42, 49, 50, 81, 83, 103 gelesen bzw. durchsucht; Stadtstaat-Programm ohne Zusagen zu Abwanderung aus ländlichen/strukturschwachen Regionen, Kommunalfinanzen oder Rückkehrförderung.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            49,
+            103
+          ],
+          "grund": "S. 49 Hochschulstandorte: Sanierung Berliner Hochschulen, keine Bindung junger Menschen aus ländlichen Regionen; S. 103 Rückkehrprogramme für EU-Bürger ohne Perspektive, anderer Zusammenhang."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            108,
+            109
+          ],
+          "grund": "Familien- und Generationenkapitel betrifft Berlin-Alltag, nicht Geburten/Alterung in schrumpfenden Regionen."
+        },
+        {
+          "ursache": 2404,
+          "seiten": [
+            32,
+            34,
+            35,
+            42,
+            50,
+            81,
+            83
+          ],
+          "grund": "Genehmigungsverfahren betreffen Energie, Bau, Wirtschaft, Gewässer in Berlin, keine Kommunalfinanzen oder Planungskapazitäten strukturschwacher Kommunen (R2)."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Programm „Stay in MV“ mit regionalen Netzwerken, Mentoring und Stipendien mit Mindestverbleib im Land, um Studierende zu halten",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Zur Bindung von Talenten an das Land und den Arbeitsmarkt schaffen wir ein Programm „Stay in MV“ mit regionalen Netzwerken, Mentoring und einem Stipendienprogramm, das an einen nachfolgenden Mindestverbleib in Mecklenburg-Vorpommern geknüpft ist.",
+          "seite": 69
+        },
+        {
+          "beschreibung": "Staatliche Hochschule in Schwerin schaffen, um junge Menschen nach dem Schulabschluss in der Region zu halten",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Staatlichen Hochschulstandort in Schwerin schaffen [...] Jährlich verlassen begabte junge Menschen nach dem Schulabschluss die Region, meist ohne Wiederkehr. Um die Bindungswirkung der Region zu steigern, bedarf es neben den etablierten privaten Hochschulansiedlungen eines staatlichen Hochschulstandortes.",
+          "seite": 65
+        },
+        {
+          "beschreibung": "Finanzausgleichsgesetz novellieren, Infrastrukturpauschale deutlich anheben und Investitionsmittel mehrjährig bereitstellen, auch für finanzschwache Kommunen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Mit einer Novellierung des Finanzausgleichsgesetzes werden wir die kommunale Finanzausstattung strukturell und dauerhaft stärken.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Entschuldungsprogramme für hoch verschuldete Kommunen fortführen und weiterentwickeln",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Für hoch verschuldete Kommunen werden wir nachhaltige Entschuldungsprogramme fortführen und weiterentwickeln.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Landesbeschleunigungsgesetz mit verbindlichen Fristen und digitalisierten Verfahren für schnellere Planung und Genehmigung",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Mit einem Landesbeschleunigungsgesetz werden wir Bürokratie reduzieren und Planungs- und Genehmigungsverfahren beschleunigen. Für alle Verfahren werden wir klare Fristen und verbindliche Bearbeitungszeiten einführen.",
+          "seite": 104
+        },
+        {
+          "beschreibung": "Standardisierte Vorlagen für Bauprojekte stellen, um Kommunen bei der Bauverwaltung fachlich zu unterstützen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Um die Kommunen angesichts der demographischen Entwicklung fachlich zu unterstützen, werden wir Vorlagen für die standardisierte Umsetzung von Bauprojekten zur Verfügung stellen.",
+          "seite": 113
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunalen Finanzausgleich in neuem Gesetz ab 2027 nach Gutachten umsetzen, mit Mindestausstattung und Ausgleich struktureller Finanzschwäche",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Ab 2027 setzen wir die Ergebnisse des durch uns initiierten Gutachtens zur gerechten Verteilung der Mittel auf die kommunalen Ebenen in einem neuen Finanzausgleichsgesetz um. Dabei werden wir dem Anspruch einer finanziellen Mindestausstattung genügen und strukturelle Finanzschwäche im Sinne gleichwertiger Lebensverhältnisse ausgleichen.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Unterstützungsfonds für kleine Kommunen in Haushaltskonsolidierung für kleinere Investitionen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Für kleinere Kommunen in Haushaltskonsolidierung soll über einen Unterstützungsfonds die Möglichkeit geschaffen werden, finanzielle Unterstützung für kleinere Investitionsmaßnahmen zu erhalten.",
+          "seite": 10
+        },
+        {
+          "beschreibung": "Genehmigungs- und Vergabeverfahren vollständig digitalisieren, Genehmigungsfiktion einführen, Stichproben statt Nachweisprüfung",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir digitalisieren Genehmigungs- und Vergabeverfahren vollständig, führen eine Genehmigungsfiktion ein und setzen bei Kontrollen stärker auf Stichproben statt auf Verwendungsnachweisprüfung.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Gemeinsame digitale Basisdienste und interkommunale Lösungen für Kommunen, um Vergabe zu beschleunigen und Verwaltungen zu entlasten",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Durch interkommunale Lösungen und digitale Plattformen beschleunigen wir Vergabeverfahren und schaffen praxisnahe […] Entlastung. Standardisierung spart Kosten, verbessert den Service und entlastet die Verwaltungen vor Ort.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Förderverfahren für Kommunen vereinfachen, mehr Pauschalzahlungen und Experimentierklauseln, interkommunale Zusammenarbeit fördern",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Dazu gehört eine Vereinfachung von Förderverfahren, die Stärkung der Mittelverwendung durch mehr Pauschalzahlungen und die Schaffung von mehr Experimentierklauseln bei Landesgesetzen, die auf kommunaler Ebene umgesetzt werden müssen.",
+          "seite": 10
+        },
+        {
+          "beschreibung": "Paare mit unerfülltem Kinderwunsch weiter finanziell unterstützen",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Auch Paare mit unerfülltem Kinderwunsch wollen wir weiter finanziell unterstützen.",
+          "seite": 31
+        },
+        {
+          "beschreibung": "Hochschulen bauen Bindungsinstrumente für internationale Studierende auf und erleichtern den Übergang in den regionalen Arbeitsmarkt",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2401
+          ],
+          "zitat": "Hierfür werden durch die Hochschulen strukturierte Bindungs- und Integrationsinstrumente etabliert und weiterentwickelt, um bereits während des Studiums berufliche, soziale und räumliche Bindungen aufzubauen.",
+          "seite": 76
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2403,
+          "seiten": [
+            76
+          ],
+          "grund": "Nur allgemeine Aussage zu durchlässigen Bildungswegen, keine Ausbildungsplatz-Zusage mit Regionsbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Branchenbezogene Umlagen bzw. Fonds, wo unterhalb des Bedarfs ausgebildet wird, und mehr Ausbildungsverantwortung der Unternehmen.",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Die Unternehmen müssen ihrer Verantwortung für Ausbildung stärker gerecht werden. Wir unterstützen das Mittel der Umlagen bzw. Fonds, beispielsweise branchenbezogen, dort, wo unterhalb des Bedarfs ausgebildet wird.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Ausbildungsgarantie fortführen und Jugendberufsagenturen weiter stärken.",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Wir setzen unseren Weg der Ausbildungsgarantie fort.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Lösung für die Altschulden der Kommunen, auch unter Berücksichtigung ostdeutscher Kommunen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Es bedarf endlich einer Lösung des spezifischen Problems der kommunalen Altschulden. Dabei wollen wir dafür Sorge tragen, dass auch die Situation der ostdeutschen Kommunen berücksichtigt wird",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Förderprogramme für Kommunen deutlich vereinfachen und entbürokratisieren.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Förderprogramme wollen wir im Rahmen der Möglichkeiten deutlich vereinfachen und entbürokratisieren.",
+          "seite": 18
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            14,
+            16,
+            21,
+            52,
+            53
+          ],
+          "grund": "Wohnheim-, BAföG- und Wohnungsmaßnahmen sowie Fachkräfteeinwanderung ohne Bezug zu Region/Abwanderung (R2); Leerstand-Strategie und Stärkung ländlicher Räume setzen nicht an Halten/Zurückholen junger Menschen an."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            14,
+            52
+          ],
+          "grund": "Keine Zusage zu Geburten, Alterung oder Zuzug in Regionen; allgemeine Fachkräfteeinwanderung ohne Regionbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Azubi-Werk berät und vernetzt Auszubildende und schafft bezahlbaren Wohnraum für sie.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2401
+          ],
+          "zitat": "Deshalb schaffen wir ein Azubi-Werk nach dem Vorbild anderer großer Städte. Es soll die Auszubildenden in Berlin beraten, vernetzen und unterstützen und vor allem bezahlbaren Wohnraum für sie schaffen.",
+          "seite": 9
+        },
+        {
+          "beschreibung": "Vorhandene Studienplätze an den Hochschulen werden erhalten statt gekürzt.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2401
+          ],
+          "zitat": "Statt Studienplätze zu kürzen, erhalten wir die vorhandenen Plätze an unseren Hochschulen, gewinnen internationale Spitzenforscher*innen und schaffen weitere sichtbare nationale Leuchttürme.",
+          "seite": 43
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            7,
+            8,
+            35,
+            37,
+            52
+          ],
+          "grund": "Treffer sind Zuzug-Erwähnungen im Wohnungsbau, Fachkräfte, Kita-Finanzierung und Rückkehrhilfen für Geflüchtete; keine Zusage zu Geburten oder Alterung ländlicher Regionen."
+        },
+        {
+          "ursache": 2404,
+          "seiten": [
+            60,
+            63
+          ],
+          "grund": "Berlin ist Stadtstaat; Haushalts- und Bezirksfinanzierung betrifft nicht die Finanzkraft strukturschwacher Kommunen, kein Finanzausgleich oder Altschuldenzusage."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Alle Hochschulstandorte im Land erhalten und weiterentwickeln, um junge Menschen im Land zu halten.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Wir werden die einzelnen Hochschulstandorte im Land erhalten und weiterentwickeln.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Landeswerbemaßnahmen bündeln und mit attraktiven Lebensbedingungen verknüpfen, um Fachkräfte an das Land zu binden.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Bestehende Werbemaßnahmen des Landes werden dazu gebündelt, mit der freien Wirtschaft abgestimmt und mit den attraktiven Lebensbedingungen in MV verknüpft.",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Kommunen verlässlich finanzieren, Mehrbelastungen ausgleichen (Konnexität) und Entschuldung und Konsolidierung weiter unterstützen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Damit sie diese Verantwortung auch weiterhin erfüllen können, stellen wir weiterhin ihre verlässliche Finanzierung sicher und sorgen für klare Zuständigkeiten sowie Rahmenbedingungen.",
+          "seite": 51
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            30,
+            22
+          ],
+          "grund": "Nur Fortführung der Kinderwunschbehandlung (Gesundheitsthema) und Fachkräfte-Zuzug aus dem Ausland ohne Bezug zu Region/Abwanderung; keine Zusage zu Geburten oder Alterung in Regionen."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesbehörden in Mittelzentren und ländlichen Regionen ansiedeln, um Abwanderung entgegenzuwirken",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Die Ansiedlung von Landesbehörden und Verwaltungseinheiten in Mittelzentren und ländlichen Regionen stärkt regionale Wirtschaftskreisläufe, schafft Arbeitsplätze und verbessert die Erreichbarkeit öffentlicher Dienstleistungen.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Familien, die in ihrer Heimat bleiben wollen, werden unterstützt, auch durch zinslose Kredite",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Familien, die in ihrer Heimat bleiben wollen, werden unterstützt – auch durch zinslose Kredite.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Bedarfsgerechter kommunaler Finanzausgleich, der Aufgaben und Abschreibungen abbildet; Bundeszuweisungen nicht anrechnen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Die SPD Sachsen-Anhalt fordert einen bedarfsgerechten kommunalen Finanzausgleich (FAG), der die tatsächlichen Aufgaben der Gemeinden abbildet. Dazu gehört, dass auch Abschreibungen berücksichtigt werden.",
+          "seite": 60
+        },
+        {
+          "beschreibung": "Höhere Anteile der Kommunen an Umsatz- und Einkommensteuer, Gewerbesteuer erhalten",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Die Gewerbesteuer soll als zentrale kommunale Steuer erhalten und stabilisiert werden. Städte und Gemeinden benötigen höhere Anteile an der Umsatz- und Einkommensteuer.",
+          "seite": 49
+        },
+        {
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, Vergaberecht vereinfachen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Planungs- und Genehmigungsverfahren werden beschleunigt. Planfeststellungen werden reduziert, Vergaberecht vereinfacht, Musterbauten mit Genehmigungsfiktion ermöglicht.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Interkommunale Zusammenarbeit und Verwaltungskooperationen fördern, Doppelprüfungen abbauen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Interkommunale Zusammenarbeit wird erleichtert und gefördert, wo sie Ressourcen bündelt, Kosten senkt und Qualität sichert.",
+          "seite": 49
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            3,
+            51,
+            55
+          ],
+          "grund": "Nur Leitbilder (Gesundheit, Willkommenskultur) und Verwaltungs-/Katastrophenschutzplanung unter Demografie; keine Zusage zu Geburten, Zuzug oder Alterung."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Von Bund und Ländern finanzierter Altschuldenfonds für finanzschwache Kommunen nach Strukturwandel",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Um ihnen wieder eine Perspektive zu geben, setzen wir uns für einen von Bund und Ländern finanzierten Altschuldenfonds ein.",
+          "seite": 108
+        },
+        {
+          "beschreibung": "Kommunen erhalten direkt mehr Geld und mehr ungebundene Mittel statt vieler Förderprogramme",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir stellen den Kommunen künftig direkt mehr Gelder zur Verfügung und stärken weiter die sogenannten ungebundenen Mittel.",
+          "seite": 109
+        },
+        {
+          "beschreibung": "Solidarische Ausbildungsumlage soll die Ausbildungsbereitschaft kleiner und mittlerer Betriebe fördern",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Mit einer solidarischen Ausbildungsumlage sorgen wir dabei für einen finanziellen Ausgleich, um die Ausbildungsbereitschaft kleiner und mittlerer Betriebe zu fördern.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "Flächendeckende Jugendberufsagenturen als Anlaufstelle für Berufsorientierung und Ausbildungsplatzsuche",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Durch eine flächendeckende Einrichtung und Stärkung von Jugendberufsagenturen bieten wir eine zentrale Anlaufstelle für Berufsorientierung, Ausbildungsplatzsuche und Begleitung während der Ausbildung.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Auszubildendenwerke mit Wohnheimen nach dem Vorbild der Studierendenwerke fördern",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Wir fördern Auszubildendenwerke nach dem Vorbild der Studierendenwerke. Im Fokus stehen Auszubildendenwohnheime[…]",
+          "seite": 78
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            20,
+            43,
+            46,
+            50,
+            51,
+            69,
+            92,
+            123,
+            126,
+            130,
+            144,
+            148,
+            151
+          ],
+          "grund": "Treffer sind Fehltreffer (Rückkehr in Beruf/Klimapfad/Syrien, Fachkräfteeinwanderung, Talentabwanderung im Ausland); Kapitel Gleichwertige Lebensverhältnisse (S. 50-51) und Hochschulkapitel ohne Zusage zum Halten oder Zurückholen junger Menschen."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            66,
+            82
+          ],
+          "grund": "Familiengründung nur im Zusammenhang Wohnen bzw. Mutterschaftsgeld Selbstständiger; keine Zusage zu Geburten, Alterung oder Zuzug in Regionen."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Azubiwerk mit günstigen Wohnheimen und Beratung für Auszubildende sowie bezahlbarer Wohnraum für Azubis und Studierende.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Deshalb führen wir das neue Azubiwerk zum Erfolg, das ähnlich wie das Studierendenwerk bezahlbaren Wohnraum für Auszubildende sowie Beratungs- und Kulturangebote schafft.",
+          "seite": 197
+        },
+        {
+          "beschreibung": "Reproduktionsmedizin ausbauen und Beratung erweitern, um Menschen mit unerfülltem Kinderwunsch zu unterstützen.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Um sie bestmöglich zu unterstützen, wollen wir die Reproduktionsmedizin ausbauen und uns dafür einsetzen, dass sie allen – egal, ob alleinstehend oder verpartnert – von der Krankenkasse finanziert wird.",
+          "seite": 206
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2404,
+          "seiten": [
+            61,
+            69,
+            94
+          ],
+          "grund": "Typengenehmigung/digitale Bauplattform, Bürokratieabbau allgemein: betreffen Bauen bzw. Landesverwaltung, nicht Finanzkraft oder Planungskapazitäten der Kommunen; Stadtstaat ohne Kommunalfinanzausgleich."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Welcome Center und One-Stop-Agencies für Zuzug und Berufsrückkehrende ausbauen, um Fachkräfte im Land zu halten",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Damit wir Fachkräfte in MV halten, braucht es: • den Ausbau von One-Stop Agencies bzw. Welcome Centern zu zugewandten und serviceorientierten Zentren für Fachkräfteeinwanderung und Berufsrückkehrer*innen nach Mecklenburg-Vorpommern",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Hochschulen und Fachschulen stärker mit regionalen Unternehmen vernetzen, damit Absolventinnen und Absolventen im Land bleiben",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Damit wir Fachkräfte in MV halten, braucht es: […] eine stärkere Vernetzung von Hochschulen und Fachschulen mit regionalen Unternehmen, um den Verbleib von Absolvent*innen im Land zu erhöhen.",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Zinsfreies Startdarlehen für Azubis, das nach einem Jahr Arbeit im Land entfällt",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Damit Ausbildungen auch in MV wieder attraktiv sind, braucht es: […] die Einführung eines Azubi-Start-Bonus. Hier erhalten Azubis zum Start der ersten Ausbildung ein Darlehen von zinsfreien 1.500,00 €. Wer insgesamt ein Jahr als Facharbeiter in MV gearbeitet hat, muss dieses nicht zurückzahlen.",
+          "seite": 31
+        },
+        {
+          "beschreibung": "Das Land als Studienstandort stärken, mit Landesprogramm für internationale Studiengänge und Hochschulmarketing, um mehr junge Menschen zu gewinnen",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Damit unsere Hochschulen den Anschluss nicht verlieren, wollen wir Mecklenburg-Vorpommern als internationalen Studienstandort stärken und mehr junge Menschen für ein Studium in unserem Land gewinnen.",
+          "seite": 38
+        },
+        {
+          "beschreibung": "Jugendkultur gegen Abwanderung fördern, mit Stabsstelle in der Staatskanzlei und ausreichender Finanzierung",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Jugendkultur zur Verhinderung von Abwanderung in den Fokus nehmen. Wir richten eine Stabsstelle in der Staatskanzlei ein, die Landesliegenschaften werden auf Doppelnutzung untersucht und Jugendkultur soll auf Landesebene sowie in den Kommunen ausreichend finanziert werden.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Finanzielle Handlungsfähigkeit der Kommunen durch mehr direkte Zuweisungen statt Förderprogramme und echte Konnexität stärken",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir sorgen dafür, dass unsere Kommunen funktionieren, indem wir: • die finanzielle Handlungsfähigkeit der Kommunen stärken. Durch mehr direkte Zuweisungen statt komplizierte Förderprogramme. • eine echte Umsetzung von Konnexität zwischen Land und den Kommunen fördern: Wer bestellt, muss auch bezahlen.",
+          "seite": 104
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            30
+          ],
+          "grund": "Einzige Fundstelle (Zuzug, S. 30) ist bereits bei 2401 erfasst; keine Zusage zu Geburten oder Alterung gefunden."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Reform der Kommunalfinanzierung mit Flächenfaktor, kommunaler Grundsicherung und verlässlicher Finanzausstattung; Altschuldenfonds für überschuldete Kommunen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir fordern eine Reform der Kommunalfinanzierung, die einen Flächenfaktor, eine kommunale Grundsicherung und verlässliche Finanzausstattung umfasst, damit Städte und Gemeinden ihre Aufgaben zuverlässig erfüllen können.",
+          "seite": 97
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            90,
+            66,
+            67
+          ],
+          "grund": "S. 90 'Innovation statt Abwanderung' und Start-up-Abwanderung betrifft Unternehmen/Gründer, nicht junge Menschen; Hochschulfinanzierung (S. 67) ohne Bezug zu Abwanderung; S. 83 Gesundheit."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            88,
+            93
+          ],
+          "grund": "Fundstellen nur Lagebeschreibung bzw. anderer Zusammenhang (Kreislaufwirtschaft); keine Zusage zu Geburten oder Zuzug."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Berufsorientierung und Jugendberufsagenturen stärken, ein berufliches Orientierungsjahr schaffen und Azubi-Stipendien ausbauen.",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Die Angebote zur Berufsorientierung, wie z. B. Azubi-Botschafter, Frauen in MINT-Berufen, und Jugendberufsagenturen wollen wir stärken. Zudem wollen wir analog zum Freiwilligen Sozialen Jahr (FSJ) ein berufliches Orientierungsjahr schaffen und SBB-Stipendien sowie Azubi-Stipendien ausbauen.",
+          "seite": 9
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            12,
+            16,
+            22,
+            28
+          ],
+          "grund": "Treffer sind Wortspiele (zurückkehrt, Abwanderung von Kapitalgebern, Rückführung); nichts zu jungen Menschen in der Region."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            22,
+            31
+          ],
+          "grund": "Zuzug betrifft Asylsystem, Kinderwunschbehandlung ist Familienpolitik ohne Regionbezug; demografischer Wandel nur bei Sozialversicherung."
+        },
+        {
+          "ursache": 2404,
+          "seiten": [
+            44
+          ],
+          "grund": "Genehmigungsverfahren betreffen Wohnungsbau, nicht Finanzkraft oder Planungskapazität der Kommunen."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Grund- und Gewerbesteuer langfristig durch kommunalen Zuschlag mit eigenem Hebesatzrecht auf Körperschaft- und Einkommensteuer ersetzen, ggf. höherer Kommunalanteil an der Umsatzsteuer.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2404
+          ],
+          "zitat": "Langfristig wollen wir die Grund- und Gewerbesteuer abschaffen und durch einen kommunalen Zuschlag mit eigenem Hebesatzrecht auf die Körperschaftsteuer und auf die Einkommensteuer sowie ggf. einen höheren Anteil der Kommunen an der Umsatzsteuer ersetzen.",
+          "seite": 50
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            16
+          ],
+          "grund": "Berlin ist Stadtstaat; S. 16 (Startchancenkonto) hat keinen Bezug zu Region oder Abwanderung; keine Maßnahme zu Rückkehr oder Standorten."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            82
+          ],
+          "grund": "S. 82 Kinderwunschbehandlung: Gleichbehandlung bei der Finanzierung, kein Ansatz bei Geburten- oder Alterungsentwicklung."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunalen Finanzausgleich transparenter und einfacher machen und stärker an den tatsächlichen Aufgaben und Belastungen ausrichten.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir entflechten die Finanzströme zwischen Land und Kommunen und richten den kommunalen Finanzausgleich transparenter, einfacher und stärker an den tatsächlichen Aufgaben und Belastungen aus.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Bedürfnisse des ländlichen Raums bei der Finanzausstattung der Kommunen stärker berücksichtigen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] die infrastrukturellen Bedürfnisse des ländlichen Raumes bei der Finanzausstattung stärker berücksichtigen und Fehlanreize durch unübersichtliche Bundes- und Landesprogramme einschränken",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Freiwillige Zusammenarbeit von Kommunen fördern, etwa durch gemeinsame Verwaltungseinheiten.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "freiwillige interkommunale Zusammenarbeit fördern, z. B. durch gemeinsame Verwaltungseinheiten oder gemeinsame Beauftragte für Datenschutz oder Gleichstellung.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Juristischen Examensstudiengang an der Universität Rostock wieder eröffnen, um Abwanderung junger Talente zu verhindern.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] den Examensstudiengang Rechtswissenschaften an der Universität Rostock wieder eröffnen, um den Justizstandort zu stärken und die Abwanderung junger Talente zu verhindern.",
+          "seite": 139
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            17,
+            38,
+            43,
+            50,
+            118,
+            123
+          ],
+          "grund": "Nur Fachkräfteeinwanderung auf Bundesebene, Kinderwunsch-Programm bei gesundheitlichen Einschränkungen, Ehrenamt und Kultur; keine Zusage zu Geburten, Alterung oder Zuzug als Gegenmittel zur Schrumpfung."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Bestehende Hochschulstandorte im ländlichen Raum gezielt unterstützen und strukturell fördern.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Wir werden: • bestehende Hochschulstandorte insbesondere im ländlichen Raum gezielt unterstützen und strukturell fördern.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Zuzug aus Metropolräumen durch bezahlbare Wohnungen, schnelles Internet und Coworking-Angebote gewinnen.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Wir setzen auf bezahlbare Wohnungen, hohe Lebensqualität und moderne Arbeitsformen: mit flächendeckend schnellem Internet, digitalen Angeboten und neuen Möglichkeiten wie Coworking in Stadt und Land.",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Einnahmebasis der Kommunen stärken: höherer Anteil an Einkommen- und Umsatzsteuer, Gewerbesteuer sichern.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Kommunen müssen stärker an der Einkommensteuer und Umsatzsteuer beteiligt werden, zugleich muss die Gewerbesteuer als zentrale kommunale Einnahmequelle gesichert und weiterentwickelt werden.",
+          "seite": 50
+        },
+        {
+          "beschreibung": "Fördermittel möglichst in pauschale Investitionszuweisungen überführen, um Kommunen von Förderlogik und Bürokratie zu entlasten.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Fördermittel sollen, wo immer möglich, ganz oder teilweise in pauschalierte investive Zuweisungen überführt werden, insbesondere in die Investitionspauschale.",
+          "seite": 50
+        },
+        {
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, kommunale Verantwortung stärken und interkommunale Kooperation erleichtern.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir beschleunigen Planungs- und Genehmigungsverfahren, stärken kommunale Verantwortung und erleichtern interkommunale Kooperationen.",
+          "seite": 58
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Rückzahlung von Rentenbeiträgen oder Freistellung von künftigen Zahlungen bei jeder Geburt, um Familien zu entlasten und mehr Kinder zu ermöglichen.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Zur Herstellung der Lastengerechtigkeit soll bei der Geburt jedes Kindes eine Rückzahlung von 20.000 € an Rentenbeiträgen oder eine entsprechende Freistellung von künftigen Zahlungen erfolgen.",
+          "seite": 148
+        },
+        {
+          "beschreibung": "Ehe-Start-Kredit für junge Paare bei Familiengründung, der mit jedem Kind teilweise erlassen wird.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Junge Paare erhalten für die Erstanschaffungen bei Familiengründung unter bestimmten Voraussetzungen einen Ehe-Start-Kredit. Mit jedem Kind wird ein Teil des Kredits erlassen.",
+          "seite": 149
+        },
+        {
+          "beschreibung": "Familiensplitting statt Ehegattensplitting, um Familien mit Kindern steuerlich zu entlasten und Anreiz für mehr Kinder zu schaffen.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Hierdurch werden Familien mit Kindern steuerlich entlastet. Angesichts der in Deutschland deutlich zu geringen Geburtenrate schaffen wir dadurch auch einen Anreiz für mehr Kinder.",
+          "seite": 60
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            16,
+            40,
+            102,
+            108,
+            109,
+            114
+          ],
+          "grund": "Rückgewinnungsprogramme (S. 114) und Stopp der Abwanderung (S. 16) betreffen Fachkräfte und Unternehmen bundesweit, nicht junge Menschen aus ländlichen Regionen, Zitate nennen keine Region; S. 40 (ländlicher Raum) nur Leitbild; S. 102-109 Rückkehr von Migranten."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Steuerliches Familiensplitting zusätzlich zum Kindergeld einführen, damit junge Menschen früher Kinder bekommen können.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Wir wollen Rahmenbedingungen schaffen, durch die junge Menschen frühzeitig Kinder bekommen können. Familienbezogene Leistungen müssen von der Verwaltung schnell und bürokratiearm erbracht werden. Die AfD will ein steuerliches Familiensplitting zusätzlich zum Kindergeld einführen.",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Landeserziehungsgeld für U3-Kinder in Höhe der vergleichbaren Kosten eines Kita-Platzes einführen.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Bezirke durch eigene Einnahmequellen und ein eigenes Klagerecht in ihrer Rechtsstellung stärken.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Darüber hinaus setzten wir uns für eine Stärkung der Rechtsstellung der Bezirke etwa durch eigene Einnahmequellen und ein eigenes Klagerecht ein.",
+          "seite": 76
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            21,
+            22,
+            37,
+            52,
+            54,
+            55,
+            95,
+            50
+          ],
+          "grund": "Alle zwölf Treffer sind Fehltreffer (Rückkehr von Migranten, Energiemix, Haushaltsführung, Abwanderung von Forschung). Berlin ist Stadtstaat; keine Maßnahme zu Halten oder Zurückholen junger Menschen aus ländlichen Regionen."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Einmaliges Baby-Begrüßungsgeld des Landes für Familien mit Hauptwohnsitz im Land, um die Entscheidung für Kinder zu erleichtern.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Wir werden ein Baby-Begrüßungsgeld in Höhe von 3.000 Euro einführen. Damit erleichtern wir jungen Menschen die Entscheidung für den Schritt ins Elternsein.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Landesmittel für Kommunen vorrangig über den allgemeinen Finanzausgleich und die Infrastrukturpauschale statt über zweckgebundene Programme.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Deshalb stellen wir Finanzmittel vorrangig über den allgemeinen kommunalen Finanzausgleich, insbesondere die Infrastrukturpauschale, bereit.",
+          "seite": 57
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            5,
+            14,
+            50,
+            51,
+            52,
+            71,
+            77,
+            86,
+            34,
+            35
+          ],
+          "grund": "Die Treffer zu Rückkehr betreffen Rückkehr von Asylbewerbern und Flüchtlingen (S. 50-52), Städtebau (S. 71) und Tierarten (S. 77); Fachkräfteeinwanderung (S. 14) ist keine Haltemaßnahme. Hochschulkapitel (S. 34-35) enthält nichts zum Halten oder Zurückholen junger Menschen."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Rückkehrprogramm für ausgewanderte Fachkräfte mit Hilfe bei Wohnung und Kitaplatz sowie Rückkehrprämie nach zwei Jahren Beschäftigung.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Eine AfD-geführte Landesregierung wird ein Rückkehrprogramm für ausgewanderte deutsche Fachkräfte auflegen, das unter anderem folgende Remigrationsanreize beinhaltet:",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Führerschein-Zuschuss für Auszubildende, gekoppelt an den Ausbildungsabschluss, gegen Abwanderung Jugendlicher.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Deshalb wird eine AfD-Landesregierung einen Führerschein-Zuschuss für Auszubildende in Höhe von 1.500 Euro einführen. Der Zuschuss soll an den erfolgreichen Abschluss einer Ausbildung in der Regelzeit gekoppelt werden.",
+          "seite": 147
+        },
+        {
+          "beschreibung": "Prämie für Auszubildende mit guten Abschlüssen, ausgezahlt erst nach zwei Jahren Beschäftigung im Land.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Als Anreiz dafür wird eine AfD-Landesregierung Prämien für Auszubildende mit überdurchschnittlich guten Abschlusszeugnissen einführen. Die Prämien sollen zudem als Anreiz dazu dienen, dauerhaft im Land sesshaft zu bleiben.",
+          "seite": 148
+        },
+        {
+          "beschreibung": "Landeseigenes Familiengeld, gestaffelt nach Kinderzahl, vor allem für Mehrkindfamilien.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Zur weiteren Entlastung der Familien werden wir ein landeseigenes Kindergeld einführen. Dieses „Familiengeld“ soll insbesondere Mehrkindfamilien finanziell stärken.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Zinsvergünstigter Kredit für junge Eltern zum Bau oder Kauf von Wohneigentum, mit Teilerlass bei weiteren Geburten.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Hierbei wird Eltern mit mindestens einem Kind, die das 40. Lebensjahr noch nicht vollendet haben, ein zinsvergünstigter Kredit bis zu einer Höhe von 300.000 Euro zum Bau oder Kauf von selbstgenutztem Wohnraum zur Verfügung gestellt.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Landeseigene Unterstützung für Kinderwunschbehandlungen, bis der Bund die Kosten übernimmt.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Wir werden auf Bundesebene darauf hinarbeiten, dass die Krankenkassen sinnvolle und aussichtsreiche reproduktionsmedizinische Maßnahmen als Regelleistungen übernehmen und diese Lücke mit landeseigenen Unterstützungsangeboten übergangsweise schließen.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Finanzausgleichsgesetz grundlegend reformieren: größere Ausgleichsmasse, mehr Schlüsselzuweisungen, automatischer Konnexitätsausgleich.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir werden das Finanzausgleichsgesetz (FAG) grundlegend reformieren. Die Finanzausgleichsmasse wird über das geltende Mindestniveau hinaus angehoben und stärker als bisher über allgemeine Schlüsselzuweisungen statt über kleinteilige Fördertöpfe verteilt.",
+          "seite": 232
+        },
+        {
+          "beschreibung": "Verbindliche Mindestfinanzausstattung für jede Kommune und Sonderprogramm zum Abbau alter Kassenkredite.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir fordern deshalb eine verbindliche Mindestfinanzausstattung für jede Kommune sowie ein Sonderprogramm zum Abbau alter Kassenkredite.",
+          "seite": 189
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Strukturpolitik und Infrastrukturinvestitionen, damit Regionen außerhalb der Metropolen attraktiver werden und ländliche Regionen nicht veröden",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Wir wollen eine aktive Strukturpolitik und Infrastruktur- investitionen, um Regionen außerhalb der Metropolen attraktiver zu machen und der Verödung ländlicher Regionen entgegenzuwirken.",
+          "seite": 9
+        },
+        {
+          "beschreibung": "Solidarische Ausbildungsumlage: nicht ausbildende Betriebe zahlen in einen Fonds ein, der Ausbildungsplätze und Verbundausbildung finanziert; soll Ausbildung im ländlichen Raum stärken",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Mit unserer solidarischen Ausbildungsumlage (siehe Kapitel 10) stärken wir auch in Ostdeutschland die Ausbildungsbetriebe. Das wird speziell kleinen und mittleren Unternehmen im ländlichen Raum zugutekommen. So ermöglichen wir Jugendlichen eine gute Ausbildung in der Nähe ihres Heimatorts.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Unternehmen sollen sich im ländlichen Raum finanziell an bezahlbaren Wohnheimplätzen für Auszubildende beteiligen",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Unternehmen sollten dazu verpflichtet werden, sich insbesondere im ländlichen Raum an der Schaffung von öffentlichem Wohnraum, etwa bezahlbaren Wohnheimplätzen für Auszubildende, finanziell zu beteiligen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Gemeindefinanzreform, volle Anrechnung der Finanzkraft im Länderfinanzausgleich und Altschuldenfonds für überschuldete Kommunen",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Um die Kommunen zu unterstützen, brauchen wir eine Gemeindefinanzreform, die 100-prozentige Anrechnung der kommunalen Finanzkraft im Länderfinanzausgleich und einen Altschuldenfonds für überschuldete Kommunen.",
+          "seite": 13
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Finanzierungssystem der Bezirke grundlegend ändern, um deren Handlungsfähigkeit durch bedarfsgerechte Ressourcenverteilung zu sichern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2404
+          ],
+          "zitat": "Wir wollen starke Bezirke und eine verbindliche Bezirkspolitik. Das wird nur erreicht mit der Sicherung der Handlungsfähigkeit der Bezirke mit einer klaren und ehrlichen Ressourcenverteilung, indem das Finanzierungssystem der Bezirke grundsätzlich geändert wird.",
+          "seite": 263
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            13,
+            154
+          ],
+          "grund": "Treffer sind Wortteile (dazugehören) bzw. Rückkehr zur Verbeamtung; keine Maßnahme gegen Abwanderung junger Menschen aus ländlichen Regionen. Berlin ist Stadtstaat."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            13,
+            112,
+            183
+          ],
+          "grund": "Treffer sind Wortteile (dazugehören); Familienförderungsgesetz (S. 183) ist allgemeine Familienpolitik ohne Bezug zu Geburten, Alterung oder Zuzug in Regionen."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Career-Center an Hochschulen sollen Studierende durch Beratung zu Karriereperspektiven im Land halten.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Wir wollen: […] Career-Center an den Universitäten und Hochschulen etablieren, um Studierende nach ihrem Studium durch Beratungsangebote zu Karriereperspektiven in der Region und in MV zu halten.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Kommunale Finanzausstattung stärken und stabilisieren; Gewerbesteuer im Bund zu einer konjunkturunabhängigeren Gemeindewirtschaftssteuer weiterentwickeln.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir wollen: […] Die kommunale Finanzausstattung stärken und stabilisieren und uns auf Bundesebene für eine Weiterentwicklung der Gewerbesteuer hin zu einer konjunkturunabhängigeren Gemeindewirtschaftssteuer einsetzen.",
+          "seite": 8
+        },
+        {
+          "beschreibung": "Kommunen bei Projektbürokratie und Altschulden entlasten.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir wollen: […] Kommunen bei Projektbürokratie und Altschulden entlasten.",
+          "seite": 8
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            11,
+            15
+          ],
+          "grund": "Nur allgemeine Aussagen zu Familienförderung und Wiedereinstieg, keine Zusage zu Geburten, Alterung oder Zuzug in Regionen."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Umverteilung zugunsten der Städte und Gemeinden; kommunaler Finanzausgleich stärker dynamisieren und aufgabengerecht gestalten.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir setzen uns ein für: eine echte Umverteilung zugunsten der Städte und Gemeinden,",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Schuldenschnitt für kommunale Altschulden, um Kommunen finanziellen Spielraum zu geben.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir setzen uns ein für: […] einen Schuldenschnitt auf Bundesebene für mehr „Beinfreiheit“ in den Kommunen.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Willkommenszentren als Netzwerk von Kommunen, Initiativen und Behörden zur Aufnahme von Zugewanderten.",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Willkommenszentren als Netzwerk:   Wir fördern die Vernetzung von Kommunen, lokalen Initiativen, Hilfestellen und Behörden für eine offene Willkommenskultur und Begleitung.",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Hochschulstandorte Anhalt und Merseburg ausbauen (im Zusammenhang mit Recycling-Forschung).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2401
+          ],
+          "zitat": "Wir wollen: […] technologische Kompetenz stärken – den Hochschulstandort Anhalt und Merseburg ausbauen, Forschung im Bereich Recycling und Rückgewinnung seltener Erden gezielt fördern",
+          "seite": 123
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2403,
+          "seiten": [
+            42
+          ],
+          "grund": "Keine Zusage zu Ausbildungsplätzen im gelesenen Kontext."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunale Selbstverwaltung stärken, mit einer Altschuldenlösung für die Kommunen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Wir setzen uns dafür ein, dass die kommunale Selbstverwaltung wieder gestärkt wird. Ein wichtiger Hebel wäre eine gerechte Altschuldenlösung für die Kommunen.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Recht auf einen Ausbildungsplatz für jeden jungen Menschen garantieren.",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Jedem jungen Menschen ist das Recht auf einen Ausbildungsplatz zu garantieren.",
+          "seite": 25
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Bund soll bei übertragenen Aufgaben die Kosten vollständig tragen; Finanzreform zur Entlastung der Kommunen und mehr Mitsprache der Länder im Bundesrat bei Gesetzen mit finanziellen Folgen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Um Berlins Handlungsfähigkeit wieder herzustellen, fordern wir klare gesetzliche Vorgaben zur vollständigen Kostenübernahme bei Aufgabenübertragungen durch den Bund. [...] Wir benötigen dringend eine Finanzreform zur Entlastung der Kommunen.",
+          "seite": 53
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            36,
+            39,
+            57
+          ],
+          "grund": "Treffer sind Fehlgriffe (Abwanderung von Personal bei Polizei, Fachkräfte-Herkunftsländer, Rückkehr der Umweltbildung); Hochschulkapitel (S. 40ff) ohne Maßnahme zum Halten junger Menschen in Regionen."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            1,
+            2
+          ],
+          "grund": "Stadtstaat Berlin; keine Maßnahmen zu Geburten, Alterung oder Zuzug im Sinne der Ursache gefunden."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Aufgaben, die das Land auf Kommunen überträgt, sollen mit Kostenausgleich verbunden sein.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Keine Aufgabenverlagerung des Landes an Kommunen ohne entsprechenden Kostenausgleich.",
+          "seite": 75
+        },
+        {
+          "beschreibung": "Pauschale Zuweisungen an Kommunen, auch aus dem Bundes-Sondervermögen, anstelle kleinteiliger Förderprogramme.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Pauschale Zuweisungen an Kommunen, insbesondere aus dem Bundes-Sondervermögen für Infrastruktur und Klimaschutz, […] kleinteiliger Förderprogramme.",
+          "seite": 76
+        },
+        {
+          "beschreibung": "Förderprogramme vereinfachen und auf kommunale Eigenanteile verzichten, wo sie nicht leistbar sind.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Vereinfachung bestehender Förderprogramme und Verzicht auf verpflichtende kommunale Eigenanteile, wo diese […] nicht leistbar sind.",
+          "seite": 76
+        },
+        {
+          "beschreibung": "Formulare und Verfahren vereinheitlichen, um den Aufwand der Verwaltungen zu senken.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Vereinheitlichung von Formularen und Verfahren, um Aufwand für Bürger, Unternehmen und Verwaltungen zu reduzieren.",
+          "seite": 76
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            14,
+            34,
+            50
+          ],
+          "grund": "Nur Ziele und Leitbilder (Abwanderung entgegenwirken, Bedingungen schaffen, Perspektiven vor Ort) ohne konkrete Handlungszusage; Ausbildungsprämien (S. 50) gehören zu 2403, nicht zugelassen."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            14
+          ],
+          "grund": "Kapitel Demografischer Wandel nennt nur Angebote für Generationen und Begegnungsorte, nichts zu Geburten oder Zuzug."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunen durch Bund und Land vollständig entschulden, den kommunalen Finanzausgleich stärken und Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen ausbauen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Notwendig ist daher eine vollständige Entschuldung der Kommunen durch Bund und Land sowie die konsequente Anwendung des Bestellerprinzips […]. Das Land Sachsen-Anhalt muss dazu eigene Investitionsprogramme auflegen, den Kommunalfinanzausgleich stärken, landeseigene Gesellschaften gezielt einsetzen und die Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen dauerhaft ausbauen.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Finanzbeziehungen zwischen Bund, Land und Kommunen reformieren und den kommunalen Anteil an den Steuereinnahmen erhöhen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Dazu braucht es eine Reform der Finanzbeziehungen zwischen Bund, Land und Kommunen sowie eine Erhöhung des kommunalen Anteils an den Steuereinnahmen.",
+          "seite": 76
+        },
+        {
+          "beschreibung": "Verwaltung der Kommunen stärken: landeseinheitliche Software, Bürokratieabbau und mehr Serviceorientierung des Landesverwaltungsamts, um lange Genehmigungsverfahren zu verkürzen.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Personalmangel, veraltete IT und ineffiziente Zuständigkeiten führen zu langen Genehmigungsverfahren und Überlastung der Beschäftigten. Kommunen dürfen keine neuen Aufgaben ohne ausreichende Finanzierung erhalten. Wir fordern landeseinheitliche Softwarelösungen, den Abbau von Bürokratie sowie eine stärkere Serviceorientierung des Landesverwaltungsamtes gegenüber den Kommunen.",
+          "seite": 76
+        },
+        {
+          "beschreibung": "Mittelzentren als Wohn-, Arbeits- und Versorgungsstandorte stärken (Wohnungsbau, Unternehmensansiedlung, bessere ÖPNV-Anbindung), um Abwanderung zu bremsen.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden – durch gezielte Förderung des Wohnungsbaus, die Ansiedlung von Unternehmen und durch deutlich bessere ÖPNV-Anbindungen an die Oberzentren. So können Abwanderung gebremst und regionale Wirtschaftskreisläufe gestärkt werden.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Zwei Lehramts-Studienstandorte mit mehr Studienplätzen sichern und allen Absolventen ein Stellenangebot im Schuldienst machen, um Abwanderung zu verhindern.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Wir wollen die Stärken beider Modelle zusammenführen: mehr Studienplätze schaffen, den Praxisbezug landesweit ausbauen und zugleich eine exzellente wissenschaftliche Qualifizierung zukünftiger Lehrkräfte sichern. Zwei leistungsfähige Ausbildungsstandorte sind für ein Flächenland wie Sachsen-Anhalt notwendig und sinnvoll, um regionale Bedarfe zu decken, Abwanderung zu verhindern und die Versorgung insbesondere des ländlichen Raums sicherzustellen.",
+          "seite": 52
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            11,
+            22,
+            30,
+            38,
+            51,
+            76,
+            88
+          ],
+          "grund": "Nur Lagebeschreibungen oder Schlagwörter (demografischer Wandel, Kinderwunsch, Familiengründung); keine Zusage zu Geburten, Zuzug oder Alterung. S. 76 (Kitas, kleine Grundschulen) gehört zu eigenen Themen."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Anreize für Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, damit Fachkräfte in der Region bleiben",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Homeoffice im ländlichen Raum:   Eine Anreizstruktur fördert Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, um Fachkräfte in der Region zu halten.",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um die Finanzen der Kommunen zu stabilisieren",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Moderne Kommunalfinanzierung:   Die Gewerbesteuer wird aufkommensneutral und konjunkturunabhängig ersetzt und die Konzessionsabgabenverordnung grundlegend reformiert, um die Kommunalfinanzen auf robuste Füße zu stellen.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Demografiefaktor im bundesstaatlichen Finanzausgleich für mehr Verteilungsgerechtigkeit",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2402,
+            2404
+          ],
+          "zitat": "Eine stärkere Steuerautonomie für die Länder schafft Anreize für eine nachhaltige Finanzpolitik und ein Demografiefaktor im bundesstaatlichen Finanzausgleich sorgt für mehr Verteilungsgerechtigkeit.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Strukturschwache Regionen sollen lokale Konzepte zur Ansiedlung von Menschen und Gewerbe sowie die Vernetzung von Kommunen fördern können",
+          "ursachen_ids": [
+            2402
+          ],
+          "zitat": "Regionale Wirtschaftsförderung:   Strukturschwache Regionen profitieren von lokal entwickelten Konzepten zur Ansiedlung von Menschen und Gewerbe sowie von der Vernetzung von Kommunen.",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Verbundausbildungen und Förderkampagnen helfen Kleinbetrieben und Start-ups, Ausbildungsplätze anzubieten",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Unterstützung kleiner Betriebe:   Kleinbetriebe und Start-ups profitieren von Verbundausbildungen und Förderkampagnen, um Ausbildungsplätze anzubieten.",
+          "seite": 116
+        },
+        {
+          "beschreibung": "Digitale Plattformen vernetzen Bildungsträger, Beratungsstellen und Unternehmen für bedarfsgerechte Ausbildungsplanung",
+          "ursachen_ids": [
+            2403
+          ],
+          "zitat": "Plattformen für Vernetzung:   Bildungsträger, Beratungsstellen und Unternehmen werden über digitale Plattformen noch besser vernetzt, um bedarfsgerechte Ausbildungsplanung zu fördern.",
+          "seite": 116
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Landeseigenes Azubiwerk stellt bezahlbaren Wohnraum für Auszubildende bereit, unabhängig vom Einkommen der Eltern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2401
+          ],
+          "zitat": "Wir richten ein Berliner Azubiwerk ein, das bezahlbare Wohnmöglichkeiten bereitstellt, unabhängig vom Einkommen der Eltern.",
+          "seite": 50
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2402,
+          "seiten": [
+            25,
+            69
+          ],
+          "grund": "Nichts zu Geburten, Alterung oder Zuzug im Sinne der Ursache; Programm ist auf die Stadt Berlin bezogen."
+        },
+        {
+          "ursache": 2404,
+          "seiten": [
+            26,
+            62,
+            63,
+            110
+          ],
+          "grund": "Genehmigungsverfahren betreffen Wohnungsbau und Betriebsnachfolge, Strukturförderung die Kultur; keine Zusage zu Finanzkraft oder Planungskapazitäten der Kommunen."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Land gleicht neue gesetzliche Pflichten der Kommunen vollständig und dauerhaft finanziell aus.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Unsere Lösung – Konkrete Maßnahmen: ● Finanzielle Verantwortung regeln Vollständiger und dauerhafter finanzieller Ausgleich von neuen gesetzlichen Verpflichtungen.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Kommunen werden bei der Erstellung von Flächennutzungsplänen unterstützt.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Flächennutzungspläne Unterstützung der Kommunen bei der Erstellung von Flächennutzungsplänen, insbesondere bei der situativen Abwägung relevanter Faktoren.",
+          "seite": 24
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2401,
+          "seiten": [
+            21,
+            32,
+            34
+          ],
+          "grund": "Treffer nur in Lagebeschreibungen oder bei Ärzte- und Pflegestipendien (eigene Themen Hausärzte/Pflege, R2); keine Zusage gegen Abwanderung junger Menschen allgemein."
+        },
+        {
+          "ursache": 2402,
+          "seiten": [
+            4
+          ],
+          "grund": "Nur Lagebeschreibung (Überalterung) im Vorwort; keine Zusage zu Geburten, Zuzug oder Anpassung."
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesweite Rückkehr- und Willkommensprogramme für ehemalige Einwohner*innen, um Abwanderung junger Menschen umzukehren.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Landesweite Rückkehr- und Willkommensprogramme für ehemalige Einwohner*innen („Come back“-Initiativen).",
+          "seite": 136
+        },
+        {
+          "beschreibung": "Ausbildungs- und Studienangebote im Land ausbauen und eng mit der regionalen Wirtschaft verzahnen.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Ausbau attraktiver Ausbildungs- und Studienangebote mit enger Verzahnung zur regionalen Wirtschaft.",
+          "seite": 136
+        },
+        {
+          "beschreibung": "Eigenheimförderung für Familien und Rückkehrer sowie günstige kommunale Baugrundstücke in ländlichen Regionen.",
+          "ursachen_ids": [
+            2401
+          ],
+          "zitat": "Bezahlbares Wohnen sichern durch günstige kommunale Baugrundstücke und gezielte Eigenheimförderung für Familien und Rückkehrer",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Konnexitätsprinzip konsequent umsetzen: Aufgaben, die das Land überträgt, werden finanziert.",
+          "ursachen_ids": [
+            2404
+          ],
+          "zitat": "Konsequente Umsetzung des Konnexitätsprinzips in der Landesverfassung Art. 87 („Wer bestellt, der bezahlt“).",
+          "seite": 119
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2401": {
+      "Perspektiven vor Ort schaffen und Rückkehr fördern": [
+        "rückkehr",
+        "abwanderung",
+        "wegzug",
+        "regionale perspektiven",
+        "studienstandort",
+        "hochschulstandort",
+        "junge menschen halten",
+        "rückkehrer"
+      ],
+      "Mobilität und Zuzug ermöglichen": [
+        "zuzug",
+        "fachkräfteeinwanderung",
+        "wohnraum für azubis",
+        "mobilität junger menschen"
+      ]
+    },
+    "2402": {
+      "Familien und Geburten fördern": [
+        "geburtenrate",
+        "familiengründung",
+        "familienförderung",
+        "kinderwunsch",
+        "demografischer wandel"
+      ],
+      "Zuzug und Versorgung an Schrumpfung anpassen": [
+        "schrumpfende regionen",
+        "demografie",
+        "zuzug",
+        "bevölkerungsrückgang",
+        "alterung",
+        "daseinsvorsorge anpassen"
+      ]
+    },
+    "2403": {
+      "Ausbildungsplätze schaffen und sichern": [
+        "ausbildungsplatzgarantie",
+        "ausbildungsumlage",
+        "ausbildungsplätze",
+        "ausbildungsförderung",
+        "überbetriebliche ausbildung",
+        "azubi"
+      ],
+      "Orientierung, Vermittlung und Mobilität": [
+        "berufsorientierung",
+        "ausbildungsvermittlung",
+        "azubi-ticket",
+        "mobilitätshilfe",
+        "wohnheim für auszubildende",
+        "matching"
+      ]
+    },
+    "2404": {
+      "Kommunale Finanzen stärken": [
+        "kommunale finanzen",
+        "finanzausgleich",
+        "altschulden",
+        "kommunalfinanzen",
+        "investitionsfonds",
+        "kommunen entlasten",
+        "strukturförderung"
+      ],
+      "Verfahren und Verwaltung vereinfachen": [
+        "genehmigungsverfahren",
+        "vergabe vereinfachen",
+        "planungsbeschleunigung",
+        "bauverwaltung",
+        "interkommunale zusammenarbeit"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "1ae960c89e12283e5e627f949c20ca75958e5a547591e5405947111c8126df29",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 2,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 2,
+              "bevölkerungsrückgang": 0,
+              "alterung": 1,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 0,
+              "ausbildungsplätze": 0,
+              "ausbildungsförderung": 0,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 0
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 2,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 1,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 1,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 7,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 4,
+              "abwanderung": 3,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 1,
+              "hochschulstandort": 8,
+              "junge menschen halten": 0,
+              "rückkehrer": 1
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 1,
+              "finanzausgleich": 3,
+              "altschulden": 2,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 1,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 11,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 3,
+              "interkommunale zusammenarbeit": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 1
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 2,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 1,
+              "strukturförderung": 3
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 5,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 1,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 4,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 0,
+              "ausbildungsplätze": 0,
+              "ausbildungsförderung": 1,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 6
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 1,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 1,
+              "altschulden": 1,
+              "kommunalfinanzen": 1,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 2,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 1,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 2,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 2,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 1,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 1
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 2,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 0,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 1,
+              "hochschulstandort": 1,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 1,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 1
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 1,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 1,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 4,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 1,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 2,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 1
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 1,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 2,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 1,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 10,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 1,
+              "fachkräfteeinwanderung": 1,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 3,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 1,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 1,
+              "ausbildungsplätze": 2,
+              "ausbildungsförderung": 0,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 1
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 2,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 2,
+              "altschulden": 1,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 1,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 4,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 3,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 1,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 2,
+              "kinderwunsch": 1,
+              "demografischer wandel": 1
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 2,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 1,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 4,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 3,
+              "hochschulstandort": 2,
+              "junge menschen halten": 0,
+              "rückkehrer": 1
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 1,
+              "fachkräfteeinwanderung": 1,
+              "wohnraum für azubis": 1,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 1,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 2,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 2,
+              "wegzug": 1,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 2
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 1,
+              "finanzausgleich": 1,
+              "altschulden": 1,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 0,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 1,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 2,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 1,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 1,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 0,
+              "ausbildungsplätze": 0,
+              "ausbildungsförderung": 0,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 2
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 1,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 1,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 0,
+              "wegzug": 1,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 2,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 2,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 6,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 2,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 3,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 1,
+              "fachkräfteeinwanderung": 1,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 1
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 3,
+              "zuzug": 1,
+              "bevölkerungsrückgang": 1,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 3,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 7,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 1,
+              "hochschulstandort": 1,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 2,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 1,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 6,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 11,
+              "abwanderung": 4,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 2,
+              "fachkräfteeinwanderung": 2,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 3,
+              "familiengründung": 1,
+              "familienförderung": 0,
+              "kinderwunsch": 2,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 14,
+              "zuzug": 2,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 0,
+              "ausbildungsplätze": 0,
+              "ausbildungsförderung": 0,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 0
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 1,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 1
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 1,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 11,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 1,
+              "familiengründung": 2,
+              "familienförderung": 1,
+              "kinderwunsch": 1,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 1,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 2,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 10,
+              "abwanderung": 0,
+              "wegzug": 1,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 2
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 1,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 2,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 2,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 1,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 1,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 3,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 40,
+              "abwanderung": 2,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 4,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 7,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 3,
+              "demografischer wandel": 2
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 4,
+              "bevölkerungsrückgang": 1,
+              "alterung": 1,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 6,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 0,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 5,
+              "abwanderung": 1,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 1
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 1,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 3,
+              "ausbildungsplätze": 1,
+              "ausbildungsförderung": 1,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 4
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 0,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 1,
+              "altschulden": 1,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 4,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 1,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 2,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 2,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 2,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 3,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 3,
+              "abwanderung": 2,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 1,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 2,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 1,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 0,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 3,
+              "abwanderung": 2,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 1,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 1,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 1,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 1,
+              "zuzug": 1,
+              "bevölkerungsrückgang": 1,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 3,
+              "altschulden": 3,
+              "kommunalfinanzen": 1,
+              "investitionsfonds": 2,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 0,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 3,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 0,
+              "ausbildungsplätze": 1,
+              "ausbildungsförderung": 0,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 0
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 0,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 1,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 2,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 2,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 1,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 3,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 2,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 2,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 1,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 1,
+              "abwanderung": 4,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 1,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 2,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 1,
+              "familienförderung": 0,
+              "kinderwunsch": 1,
+              "demografischer wandel": 1
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 2,
+              "bevölkerungsrückgang": 1,
+              "alterung": 1,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 1,
+              "altschulden": 1,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 5,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": null,
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 3,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 1,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2403": {
+            "Ausbildungsplätze schaffen und sichern": {
+              "ausbildungsplatzgarantie": 0,
+              "ausbildungsumlage": 0,
+              "ausbildungsplätze": 2,
+              "ausbildungsförderung": 0,
+              "überbetriebliche ausbildung": 0,
+              "azubi": 0
+            },
+            "Orientierung, Vermittlung und Mobilität": {
+              "berufsorientierung": 2,
+              "ausbildungsvermittlung": 0,
+              "azubi-ticket": 0,
+              "mobilitätshilfe": 0,
+              "wohnheim für auszubildende": 0,
+              "matching": 1
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 2,
+              "altschulden": 0,
+              "kommunalfinanzen": 1,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 5,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "BE",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 0,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 1,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 2
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 4,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "MV",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 0,
+              "abwanderung": 4,
+              "wegzug": 0,
+              "regionale perspektiven": 0,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 0
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 0,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 0,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 0,
+              "zuzug": 0,
+              "bevölkerungsrückgang": 0,
+              "alterung": 1,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 0,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 3,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 18,
+        "land": "ST",
+        "ursachen": {
+          "2401": {
+            "Perspektiven vor Ort schaffen und Rückkehr fördern": {
+              "rückkehr": 9,
+              "abwanderung": 8,
+              "wegzug": 1,
+              "regionale perspektiven": 1,
+              "studienstandort": 0,
+              "hochschulstandort": 0,
+              "junge menschen halten": 0,
+              "rückkehrer": 3
+            },
+            "Mobilität und Zuzug ermöglichen": {
+              "zuzug": 3,
+              "fachkräfteeinwanderung": 0,
+              "wohnraum für azubis": 0,
+              "mobilität junger menschen": 0
+            }
+          },
+          "2402": {
+            "Familien und Geburten fördern": {
+              "geburtenrate": 0,
+              "familiengründung": 0,
+              "familienförderung": 1,
+              "kinderwunsch": 0,
+              "demografischer wandel": 0
+            },
+            "Zuzug und Versorgung an Schrumpfung anpassen": {
+              "schrumpfende regionen": 0,
+              "demografie": 1,
+              "zuzug": 3,
+              "bevölkerungsrückgang": 0,
+              "alterung": 0,
+              "daseinsvorsorge anpassen": 0
+            }
+          },
+          "2404": {
+            "Kommunale Finanzen stärken": {
+              "kommunale finanzen": 0,
+              "finanzausgleich": 1,
+              "altschulden": 0,
+              "kommunalfinanzen": 0,
+              "investitionsfonds": 0,
+              "kommunen entlasten": 0,
+              "strukturförderung": 0
+            },
+            "Verfahren und Verwaltung vereinfachen": {
+              "genehmigungsverfahren": 5,
+              "vergabe vereinfachen": 0,
+              "planungsbeschleunigung": 0,
+              "bauverwaltung": 0,
+              "interkommunale zusammenarbeit": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

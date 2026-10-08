@@ -1,0 +1,22 @@
+{
+  "partei_id": 16,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Finanzierungssystem der Bezirke grundlegend ändern, um deren Handlungsfähigkeit durch bedarfsgerechte Ressourcenverteilung zu sichern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2404],
+      "zitat": "Wir wollen starke Bezirke und eine verbindliche Bezirkspolitik. Das wird nur erreicht mit der Sicherung der Handlungsfähigkeit der Bezirke mit einer klaren und ehrlichen Ressourcenverteilung, indem das Finanzierungssystem der Bezirke grundsätzlich geändert wird.",
+      "seite": 263
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2401, "seiten": [13, 154], "grund": "Treffer sind Wortteile (dazugehören) bzw. Rückkehr zur Verbeamtung; keine Maßnahme gegen Abwanderung junger Menschen aus ländlichen Regionen. Berlin ist Stadtstaat." },
+    { "ursache": 2402, "seiten": [13, 112, 183], "grund": "Treffer sind Wortteile (dazugehören); Familienförderungsgesetz (S. 183) ist allgemeine Familienpolitik ohne Bezug zu Geburten, Alterung oder Zuzug in Regionen." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (S. 3), Einleitung S. 5-6, Fundstellen S. 13, 112, 132, 154, 183, 203, 237, Kapitel Verwaltungsreform/Bezirksfinanzen S. 262-264; Suche nach Brandenburg, Umland, ländlich, Abwanderung, Altschulden.
+Nicht erfasst: S. 132, 203, 237 (Genehmigungsverfahren zu Praxisräumen, Grundwasser, Clubs: anderer Zusammenhang, keine Verfahrensvereinfachung für Kommunen). Das Programm betrifft den Stadtstaat Berlin; ländliche Regionen, Abwanderung oder Strukturwandel kommen nicht vor.
+Grenzfall: Bezirksfinanzierung (S. 263) in ursachen_offen 2404, da Bezirke keine Kommunen im Sinne der Ursache sind.

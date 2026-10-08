@@ -1,0 +1,1148 @@
+{
+  "pruefsumme": "8f554335e235963ab3a4564662536d0e6e15372e0ed8c48ebfd8b1e93032710f",
+  "thema": {
+    "id": 24,
+    "name": "Abwanderung aus strukturschwachen Regionen",
+    "ziel": "Menschen können in ihrer Region eine passende Ausbildung und berufliche Perspektive finden und ihren Alltag mit verlässlicher Versorgung gestalten."
+  },
+  "ursachen": [
+    {
+      "id": 2401,
+      "beschreibung": "Junge Menschen von 18 bis 24 ziehen besonders häufig für Ausbildung, Studium und Berufseinstieg von ländlichen in städtische Regionen (Daten 2021)",
+      "ebene": "land"
+    },
+    {
+      "id": 2402,
+      "beschreibung": "Seit 1972 werden jedes Jahr weniger Kinder geboren als Menschen sterben; 2022 waren 22 % der Bevölkerung mindestens 65 Jahre alt (Osten 26,6 %, Westen 21,5 %)",
+      "ebene": "land"
+    },
+    {
+      "id": 2403,
+      "beschreibung": "Ausbildungsangebot und -wünsche passen regional und beruflich nicht zusammen: 2025 blieben 54.400 Stellen unbesetzt, 84.400 junge Menschen suchten noch",
+      "ebene": "bund"
+    },
+    {
+      "id": 2404,
+      "beschreibung": "44 % der Kommunen bewerteten 2026 ihre Finanzlage als mangelhaft; hinzu kommen aufwendige Genehmigungs- und Vergabeverfahren und Personalmangel in Bauverwaltungen",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2401,
+        2402,
+        2403,
+        2404
+      ],
+      "text": "Zu 2401 gehören Maßnahmen, die junge Menschen in der Region halten oder zurückholen (Studien- und Ausbildungsstandorte, Rückkehrförderung), zu 2402 Geburten, Alterung und Zuzug, zu 2403 Ausbildungsplätze und Ausbildungsvermittlung, zu 2404 Finanzkraft und Handlungsfähigkeit der Kommunen (Finanzausgleich, Altschulden, Planungskapazitäten)."
+    },
+    {
+      "nr": 2,
+      "text": "Löhne, Arbeitsplätze und Investitionen, Bus und Bahn, Internet, Hausärzte, Schulen, Kultur und Sport gehören zu eigenen Themen. Maßnahmen für alle strukturschwachen Regionen zählen hier nur, wenn das Zitat Region, ländlichen Raum, Strukturwandel oder Abwanderung nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "land",
+      "beschreibung": "Kommunen verlässlich finanzieren, Mehrbelastungen ausgleichen (Konnexität) und Entschuldung und Konsolidierung weiter unterstützen.",
+      "zitat": "Damit sie diese Verantwortung auch weiterhin erfüllen können, stellen wir weiterhin ihre verlässliche Finanzierung sicher und sorgen für klare Zuständigkeiten sowie Rahmenbedingungen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "49a7d7d78c20ef35"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Willkommenszentren als Netzwerk von Kommunen, Initiativen und Behörden zur Aufnahme von Zugewanderten.",
+      "zitat": "Willkommenszentren als Netzwerk:   Wir fördern die Vernetzung von Kommunen, lokalen Initiativen, Hilfestellen und Behörden für eine offene Willkommenskultur und Begleitung.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "13a0c7f96edc33c8"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Finanzierungssystem der Bezirke grundlegend ändern, um deren Handlungsfähigkeit durch bedarfsgerechte Ressourcenverteilung zu sichern.",
+      "zitat": "Wir wollen starke Bezirke und eine verbindliche Bezirkspolitik. Das wird nur erreicht mit der Sicherung der Handlungsfähigkeit der Bezirke mit einer klaren und ehrlichen Ressourcenverteilung, indem das Finanzierungssystem der Bezirke grundsätzlich geändert wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2404
+      ],
+      "pruefsumme": "e57d46c38c8f6f27"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Kommunalen Finanzausgleich in neuem Gesetz ab 2027 nach Gutachten umsetzen, mit Mindestausstattung und Ausgleich struktureller Finanzschwäche",
+      "zitat": "Ab 2027 setzen wir die Ergebnisse des durch uns initiierten Gutachtens zur gerechten Verteilung der Mittel auf die kommunalen Ebenen in einem neuen Finanzausgleichsgesetz um. Dabei werden wir dem Anspruch einer finanziellen Mindestausstattung genügen und strukturelle Finanzschwäche im Sinne gleichwertiger Lebensverhältnisse ausgleichen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "b0c6fe1812442fd9"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "bund",
+      "beschreibung": "Kommunal relevante Bundesförderprogramme zusammenfassen, online bündeln und Antragsverfahren sowie Nachweispflichten vereinfachen",
+      "zitat": "Wir machen die kommunal relevanten Förderprogramme des Bundes einfacher in der Abwicklung, indem wir sie zusammenfassen und auf einer Online-Plattform bündeln. Fristen fassen wir realitätsnah, vereinfachen Antragsverfahren und reduzieren Nachweispflichten.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "46f1b28b33e688fa"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Prämie für Auszubildende mit guten Abschlüssen, ausgezahlt erst nach zwei Jahren Beschäftigung im Land.",
+      "zitat": "Als Anreiz dafür wird eine [Partei]-Landesregierung Prämien für Auszubildende mit überdurchschnittlich guten Abschlusszeugnissen einführen. Die Prämien sollen zudem als Anreiz dazu dienen, dauerhaft im Land sesshaft zu bleiben.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "e9594345f113ef2a"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "land",
+      "beschreibung": "Landeswerbemaßnahmen bündeln und mit attraktiven Lebensbedingungen verknüpfen, um Fachkräfte an das Land zu binden.",
+      "zitat": "Bestehende Werbemaßnahmen des Landes werden dazu gebündelt, mit der freien Wirtschaft abgestimmt und mit den attraktiven Lebensbedingungen in [Land] verknüpft.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "a91af88a837265b6"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Jugendkultur gegen Abwanderung fördern, mit Stabsstelle in der Staatskanzlei und ausreichender Finanzierung",
+      "zitat": "Jugendkultur zur Verhinderung von Abwanderung in den Fokus nehmen. Wir richten eine Stabsstelle in der Staatskanzlei ein, die Landesliegenschaften werden auf Doppelnutzung untersucht und Jugendkultur soll auf Landesebene sowie in den Kommunen ausreichend finanziert werden.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "b6c67297aaed7899"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Juristischen Examensstudiengang an der Universität [Land] wieder eröffnen, um Abwanderung junger Talente zu verhindern.",
+      "zitat": "Wir werden: […] den Examensstudiengang Rechtswissenschaften an der Universität [Land] wieder eröffnen, um den Justizstandort zu stärken und die Abwanderung junger Talente zu verhindern.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "67ab002d02bf5938"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Standardisierte Vorlagen für Bauprojekte stellen, um Kommunen bei der Bauverwaltung fachlich zu unterstützen",
+      "zitat": "Um die Kommunen angesichts der demographischen Entwicklung fachlich zu unterstützen, werden wir Vorlagen für die standardisierte Umsetzung von Bauprojekten zur Verfügung stellen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "36176ddd5c64925e"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Pauschale Zuweisungen an Kommunen, auch aus dem Bundes-Sondervermögen, anstelle kleinteiliger Förderprogramme.",
+      "zitat": "Pauschale Zuweisungen an Kommunen, insbesondere aus dem Bundes-Sondervermögen für Infrastruktur und Klimaschutz, […] kleinteiliger Förderprogramme.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "634a4787eefe5efb"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Eigenheimförderung für Familien und Rückkehrer sowie günstige kommunale Baugrundstücke in ländlichen Regionen.",
+      "zitat": "Bezahlbares Wohnen sichern durch günstige kommunale Baugrundstücke und gezielte Eigenheimförderung für Familien und Rückkehrer",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "7bcfaa8cf3efddbb"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "Konnexitätsprinzip konsequent umsetzen: Aufgaben, die das Land überträgt, werden finanziert.",
+      "zitat": "Konsequente Umsetzung des Konnexitätsprinzips in der Landesverfassung Art. 87 („Wer bestellt, der bezahlt“).",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "e59d6eccd29c5c59"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Kommunen durch Bund und Land vollständig entschulden, den kommunalen Finanzausgleich stärken und Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen ausbauen.",
+      "zitat": "Notwendig ist daher eine vollständige Entschuldung der Kommunen durch Bund und Land sowie die konsequente Anwendung des Bestellerprinzips […]. Das Land [Land] muss dazu eigene Investitionsprogramme auflegen, den Kommunalfinanzausgleich stärken, landeseigene Gesellschaften gezielt einsetzen und die Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen dauerhaft ausbauen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "9cdce7e7138c103e"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Verwaltung der Kommunen stärken: landeseinheitliche Software, Bürokratieabbau und mehr Serviceorientierung des Landesverwaltungsamts, um lange Genehmigungsverfahren zu verkürzen.",
+      "zitat": "Personalmangel, veraltete IT und ineffiziente Zuständigkeiten führen zu langen Genehmigungsverfahren und Überlastung der Beschäftigten. Kommunen dürfen keine neuen Aufgaben ohne ausreichende Finanzierung erhalten. Wir fordern landeseinheitliche Softwarelösungen, den Abbau von Bürokratie sowie eine stärkere Serviceorientierung des Landesverwaltungsamtes gegenüber den Kommunen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "eee9a963d5cb68ac"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "bund",
+      "beschreibung": "Von Bund und Ländern finanzierter Altschuldenfonds für finanzschwache Kommunen nach Strukturwandel",
+      "zitat": "Um ihnen wieder eine Perspektive zu geben, setzen wir uns für einen von Bund und Ländern finanzierten Altschuldenfonds ein.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "f54d5dd83e67b58f"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "bund",
+      "beschreibung": "Lösung für die Altschulden der Kommunen, auch unter Berücksichtigung ostdeutscher Kommunen.",
+      "zitat": "Es bedarf endlich einer Lösung des spezifischen Problems der kommunalen Altschulden. Dabei wollen wir dafür Sorge tragen, dass auch die Situation der ostdeutschen Kommunen berücksichtigt wird",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "63bd61cab900e819"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "bund",
+      "beschreibung": "Demografiefaktor im bundesstaatlichen Finanzausgleich für mehr Verteilungsgerechtigkeit",
+      "zitat": "Eine stärkere Steuerautonomie für die Länder schafft Anreize für eine nachhaltige Finanzpolitik und ein Demografiefaktor im bundesstaatlichen Finanzausgleich sorgt für mehr Verteilungsgerechtigkeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2402,
+        2404
+      ],
+      "pruefsumme": "648810d96ad193c8"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Grund- und Gewerbesteuer langfristig durch kommunalen Zuschlag mit eigenem Hebesatzrecht auf Körperschaft- und Einkommensteuer ersetzen, ggf. höherer Kommunalanteil an der Umsatzsteuer.",
+      "zitat": "Langfristig wollen wir die Grund- und Gewerbesteuer abschaffen und durch einen kommunalen Zuschlag mit eigenem Hebesatzrecht auf die Körperschaftsteuer und auf die Einkommensteuer sowie ggf. einen höheren Anteil der Kommunen an der Umsatzsteuer ersetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2404
+      ],
+      "pruefsumme": "2cf6cebb12f07dd8"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Finanzausgleichsgesetz novellieren, Infrastrukturpauschale deutlich anheben und Investitionsmittel mehrjährig bereitstellen, auch für finanzschwache Kommunen",
+      "zitat": "Mit einer Novellierung des Finanzausgleichsgesetzes werden wir die kommunale Finanzausstattung strukturell und dauerhaft stärken.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "21ee1c26104c10f7"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Ausbildungs- und Studienangebote im Land ausbauen und eng mit der regionalen Wirtschaft verzahnen.",
+      "zitat": "Ausbau attraktiver Ausbildungs- und Studienangebote mit enger Verzahnung zur regionalen Wirtschaft.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "00d3be5f2829ab51"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Landeserziehungsgeld für U3-Kinder in Höhe der vergleichbaren Kosten eines Kita-Platzes einführen.",
+      "zitat": "Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "5866ca0321a9e231"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Zwei Lehramts-Studienstandorte mit mehr Studienplätzen sichern und allen Absolventen ein Stellenangebot im Schuldienst machen, um Abwanderung zu verhindern.",
+      "zitat": "Wir wollen die Stärken beider Modelle zusammenführen: mehr Studienplätze schaffen, den Praxisbezug landesweit ausbauen und zugleich eine exzellente wissenschaftliche Qualifizierung zukünftiger Lehrkräfte sichern. Zwei leistungsfähige Ausbildungsstandorte sind für ein Flächenland wie [Land] notwendig und sinnvoll, um regionale Bedarfe zu decken, Abwanderung zu verhindern und die Versorgung insbesondere des ländlichen Raums sicherzustellen.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "6a997eb9bedfce81"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Bezirke durch eigene Einnahmequellen und ein eigenes Klagerecht in ihrer Rechtsstellung stärken.",
+      "zitat": "Darüber hinaus setzten wir uns für eine Stärkung der Rechtsstellung der Bezirke etwa durch eigene Einnahmequellen und ein eigenes Klagerecht ein.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "93cd5c8b19415951"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Azubi-Werk berät und vernetzt Auszubildende und schafft bezahlbaren Wohnraum für sie.",
+      "zitat": "Deshalb schaffen wir ein Azubi-Werk nach dem Vorbild anderer großer Städte. Es soll die Auszubildenden in [Land] beraten, vernetzen und unterstützen und vor allem bezahlbaren Wohnraum für sie schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "pruefsumme": "a68c26d88e04b9c2"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "bund",
+      "beschreibung": "Gemeindefinanzreform, volle Anrechnung der Finanzkraft im Länderfinanzausgleich und Altschuldenfonds für überschuldete Kommunen",
+      "zitat": "Um die Kommunen zu unterstützen, brauchen wir eine Gemeindefinanzreform, die 100-prozentige Anrechnung der kommunalen Finanzkraft im Länderfinanzausgleich und einen Altschuldenfonds für überschuldete Kommunen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "e56cae13f34fd2e7"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, kommunale Verantwortung stärken und interkommunale Kooperation erleichtern.",
+      "zitat": "Wir beschleunigen Planungs- und Genehmigungsverfahren, stärken kommunale Verantwortung und erleichtern interkommunale Kooperationen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "058924a04e96d754"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, Vergaberecht vereinfachen",
+      "zitat": "Planungs- und Genehmigungsverfahren werden beschleunigt. Planfeststellungen werden reduziert, Vergaberecht vereinfacht, Musterbauten mit Genehmigungsfiktion ermöglicht.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "8d34c1a700bd7705"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Landesmittel für Kommunen vorrangig über den allgemeinen Finanzausgleich und die Infrastrukturpauschale statt über zweckgebundene Programme.",
+      "zitat": "Deshalb stellen wir Finanzmittel vorrangig über den allgemeinen kommunalen Finanzausgleich, insbesondere die Infrastrukturpauschale, bereit.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "a4db2d4b3afe394f"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Landeseigenes Azubiwerk stellt bezahlbaren Wohnraum für Auszubildende bereit, unabhängig vom Einkommen der Eltern.",
+      "zitat": "Wir richten ein [Land] Azubiwerk ein, das bezahlbare Wohnmöglichkeiten bereitstellt, unabhängig vom Einkommen der Eltern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "pruefsumme": "48458c13e49cda7e"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Kommunalen Finanzausgleich transparenter und einfacher machen und stärker an den tatsächlichen Aufgaben und Belastungen ausrichten.",
+      "zitat": "Wir entflechten die Finanzströme zwischen Land und Kommunen und richten den kommunalen Finanzausgleich transparenter, einfacher und stärker an den tatsächlichen Aufgaben und Belastungen aus.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "b6ee95d071ea97f0"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "bund",
+      "beschreibung": "Solidarische Ausbildungsumlage soll die Ausbildungsbereitschaft kleiner und mittlerer Betriebe fördern",
+      "zitat": "Mit einer solidarischen Ausbildungsumlage sorgen wir dabei für einen finanziellen Ausgleich, um die Ausbildungsbereitschaft kleiner und mittlerer Betriebe zu fördern.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "71b115b61c4cf0ac"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Landesweite Rückkehr- und Willkommensprogramme für ehemalige Einwohner*innen, um Abwanderung junger Menschen umzukehren.",
+      "zitat": "Landesweite Rückkehr- und Willkommensprogramme für ehemalige Einwohner*innen („Come back“-Initiativen).",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "b571d1e2515d2a28"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "bund",
+      "beschreibung": "Recht auf einen Ausbildungsplatz für jeden jungen Menschen garantieren.",
+      "zitat": "Jedem jungen Menschen ist das Recht auf einen Ausbildungsplatz zu garantieren.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "6af96cbb6a1e08b9"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Landeseigenes Familiengeld, gestaffelt nach Kinderzahl, vor allem für Mehrkindfamilien.",
+      "zitat": "Zur weiteren Entlastung der Familien werden wir ein landeseigenes Kindergeld einführen. Dieses „Familiengeld“ soll insbesondere Mehrkindfamilien finanziell stärken.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "a77d45d773ecf31a"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Aufgaben, die das Land auf Kommunen überträgt, sollen mit Kostenausgleich verbunden sein.",
+      "zitat": "Keine Aufgabenverlagerung des Landes an Kommunen ohne entsprechenden Kostenausgleich.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "4c674b330433de5a"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Mittelzentren als Wohn-, Arbeits- und Versorgungsstandorte stärken (Wohnungsbau, Unternehmensansiedlung, bessere ÖPNV-Anbindung), um Abwanderung zu bremsen.",
+      "zitat": "Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden – durch gezielte Förderung des Wohnungsbaus, die Ansiedlung von Unternehmen und durch deutlich bessere ÖPNV-Anbindungen an die Oberzentren. So können Abwanderung gebremst und regionale Wirtschaftskreisläufe gestärkt werden.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "316fd59fd4e2ba0e"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "bund",
+      "beschreibung": "Digitale Plattformen vernetzen Bildungsträger, Beratungsstellen und Unternehmen für bedarfsgerechte Ausbildungsplanung",
+      "zitat": "Plattformen für Vernetzung:   Bildungsträger, Beratungsstellen und Unternehmen werden über digitale Plattformen noch besser vernetzt, um bedarfsgerechte Ausbildungsplanung zu fördern.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "dfacc40e9b4edf59"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Einnahmebasis der Kommunen stärken: höherer Anteil an Einkommen- und Umsatzsteuer, Gewerbesteuer sichern.",
+      "zitat": "Kommunen müssen stärker an der Einkommensteuer und Umsatzsteuer beteiligt werden, zugleich muss die Gewerbesteuer als zentrale kommunale Einnahmequelle gesichert und weiterentwickelt werden.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "f309ef24628c1e37"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "bund",
+      "beschreibung": "Familiensplitting statt Ehegattensplitting, um Familien mit Kindern steuerlich zu entlasten und Anreiz für mehr Kinder zu schaffen.",
+      "zitat": "Hierdurch werden Familien mit Kindern steuerlich entlastet. Angesichts der in Deutschland deutlich zu geringen Geburtenrate schaffen wir dadurch auch einen Anreiz für mehr Kinder.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "9a2fa89cd501b78c"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Career-Center an Hochschulen sollen Studierende durch Beratung zu Karriereperspektiven im Land halten.",
+      "zitat": "Wir wollen: […] Career-Center an den Universitäten und Hochschulen etablieren, um Studierende nach ihrem Studium durch Beratungsangebote zu Karriereperspektiven in der Region und in [Land] zu halten.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "26677d7ce74e676e"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Bedürfnisse des ländlichen Raums bei der Finanzausstattung der Kommunen stärker berücksichtigen.",
+      "zitat": "Wir werden: […] die infrastrukturellen Bedürfnisse des ländlichen Raumes bei der Finanzausstattung stärker berücksichtigen und Fehlanreize durch unübersichtliche Bundes- und Landesprogramme einschränken",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "463d7c0301d6f8f7"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "bund",
+      "beschreibung": "Anreize für Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, damit Fachkräfte in der Region bleiben",
+      "zitat": "Homeoffice im ländlichen Raum:   Eine Anreizstruktur fördert Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, um Fachkräfte in der Region zu halten.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "1933d8b222275b97"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Bund soll bei übertragenen Aufgaben die Kosten vollständig tragen; Finanzreform zur Entlastung der Kommunen und mehr Mitsprache der Länder im Bundesrat bei Gesetzen mit finanziellen Folgen.",
+      "zitat": "Um [Land] Handlungsfähigkeit wieder herzustellen, fordern wir klare gesetzliche Vorgaben zur vollständigen Kostenübernahme bei Aufgabenübertragungen durch den Bund. [...] Wir benötigen dringend eine Finanzreform zur Entlastung der Kommunen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "cee8170b2d6d374b"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Finanzausgleichsgesetz grundlegend reformieren: größere Ausgleichsmasse, mehr Schlüsselzuweisungen, automatischer Konnexitätsausgleich.",
+      "zitat": "Wir werden das Finanzausgleichsgesetz (FAG) grundlegend reformieren. Die Finanzausgleichsmasse wird über das geltende Mindestniveau hinaus angehoben und stärker als bisher über allgemeine Schlüsselzuweisungen statt über kleinteilige Fördertöpfe verteilt.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "798e3ca63d26a859"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Gemeinsame digitale Basisdienste und interkommunale Lösungen für Kommunen, um Vergabe zu beschleunigen und Verwaltungen zu entlasten",
+      "zitat": "Durch interkommunale Lösungen und digitale Plattformen beschleunigen wir Vergabeverfahren und schaffen praxisnahe […] Entlastung. Standardisierung spart Kosten, verbessert den Service und entlastet die Verwaltungen vor Ort.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "6d778ef9d07dcb42"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "bund",
+      "beschreibung": "Branchenbezogene Umlagen bzw. Fonds, wo unterhalb des Bedarfs ausgebildet wird, und mehr Ausbildungsverantwortung der Unternehmen.",
+      "zitat": "Die Unternehmen müssen ihrer Verantwortung für Ausbildung stärker gerecht werden. Wir unterstützen das Mittel der Umlagen bzw. Fonds, beispielsweise branchenbezogen, dort, wo unterhalb des Bedarfs ausgebildet wird.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "9d7f635e38a2799b"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Landesbehörden in Mittelzentren und ländlichen Regionen ansiedeln, um Abwanderung entgegenzuwirken",
+      "zitat": "Die Ansiedlung von Landesbehörden und Verwaltungseinheiten in Mittelzentren und ländlichen Regionen stärkt regionale Wirtschaftskreisläufe, schafft Arbeitsplätze und verbessert die Erreichbarkeit öffentlicher Dienstleistungen.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "68f037d149cd711b"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Zuzug aus Metropolräumen durch bezahlbare Wohnungen, schnelles Internet und Coworking-Angebote gewinnen.",
+      "zitat": "Wir setzen auf bezahlbare Wohnungen, hohe Lebensqualität und moderne Arbeitsformen: mit flächendeckend schnellem Internet, digitalen Angeboten und neuen Möglichkeiten wie Coworking in Stadt und Land.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "d90d5d19e267f33e"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "bund",
+      "beschreibung": "Solidarische Ausbildungsumlage: nicht ausbildende Betriebe zahlen in einen Fonds ein, der Ausbildungsplätze und Verbundausbildung finanziert; soll Ausbildung im ländlichen Raum stärken",
+      "zitat": "Mit unserer solidarischen Ausbildungsumlage (siehe Kapitel 10) stärken wir auch in Ostdeutschland die Ausbildungsbetriebe. Das wird speziell kleinen und mittleren Unternehmen im ländlichen Raum zugutekommen. So ermöglichen wir Jugendlichen eine gute Ausbildung in der Nähe ihres Heimatorts.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "a68fff63171e9f02"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Rückkehrprogramm für ausgewanderte Fachkräfte mit Hilfe bei Wohnung und Kitaplatz sowie Rückkehrprämie nach zwei Jahren Beschäftigung.",
+      "zitat": "Eine [Partei]-geführte Landesregierung wird ein Rückkehrprogramm für ausgewanderte deutsche Fachkräfte auflegen, das unter anderem folgende Remigrationsanreize beinhaltet:",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "39c62f13e3e1c9db"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Unterstützungsfonds für kleine Kommunen in Haushaltskonsolidierung für kleinere Investitionen",
+      "zitat": "Für kleinere Kommunen in Haushaltskonsolidierung soll über einen Unterstützungsfonds die Möglichkeit geschaffen werden, finanzielle Unterstützung für kleinere Investitionsmaßnahmen zu erhalten.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "06ada05b60666389"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Hochschulen bauen Bindungsinstrumente für internationale Studierende auf und erleichtern den Übergang in den regionalen Arbeitsmarkt",
+      "zitat": "Hierfür werden durch die Hochschulen strukturierte Bindungs- und Integrationsinstrumente etabliert und weiterentwickelt, um bereits während des Studiums berufliche, soziale und räumliche Bindungen aufzubauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "pruefsumme": "1034831808b04a3b"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "bund",
+      "beschreibung": "Kommunen erhalten direkt mehr Geld und mehr ungebundene Mittel statt vieler Förderprogramme",
+      "zitat": "Wir stellen den Kommunen künftig direkt mehr Gelder zur Verfügung und stärken weiter die sogenannten ungebundenen Mittel.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "abd1dcebd5988feb"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Welcome Center und One-Stop-Agencies für Zuzug und Berufsrückkehrende ausbauen, um Fachkräfte im Land zu halten",
+      "zitat": "Damit wir Fachkräfte in [Land] halten, braucht es: • den Ausbau von One-Stop Agencies bzw. Welcome Centern zu zugewandten und serviceorientierten Zentren für Fachkräfteeinwanderung und Berufsrückkehrer*innen nach [Land]",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "0928cc2922e3d3bb"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Vorhandene Studienplätze an den Hochschulen werden erhalten statt gekürzt.",
+      "zitat": "Statt Studienplätze zu kürzen, erhalten wir die vorhandenen Plätze an unseren Hochschulen, gewinnen internationale Spitzenforscher*innen und schaffen weitere sichtbare nationale Leuchttürme.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "pruefsumme": "029680597c3e821e"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Schuldenschnitt für kommunale Altschulden, um Kommunen finanziellen Spielraum zu geben.",
+      "zitat": "Wir setzen uns ein für: […] einen Schuldenschnitt auf Bundesebene für mehr „Beinfreiheit“ in den Kommunen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "eaa40ea926211e8b"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "bund",
+      "beschreibung": "Rückzahlung von Rentenbeiträgen oder Freistellung von künftigen Zahlungen bei jeder Geburt, um Familien zu entlasten und mehr Kinder zu ermöglichen.",
+      "zitat": "Zur Herstellung der Lastengerechtigkeit soll bei der Geburt jedes Kindes eine Rückzahlung von 20.000 € an Rentenbeiträgen oder eine entsprechende Freistellung von künftigen Zahlungen erfolgen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "5a911488d9fba58b"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Interkommunale Zusammenarbeit und Verwaltungskooperationen fördern, Doppelprüfungen abbauen",
+      "zitat": "Interkommunale Zusammenarbeit wird erleichtert und gefördert, wo sie Ressourcen bündelt, Kosten senkt und Qualität sichert.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "f8cbef56eae24d8e"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Fördermittel möglichst in pauschale Investitionszuweisungen überführen, um Kommunen von Förderlogik und Bürokratie zu entlasten.",
+      "zitat": "Fördermittel sollen, wo immer möglich, ganz oder teilweise in pauschalierte investive Zuweisungen überführt werden, insbesondere in die Investitionspauschale.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "d39654f4bf6a5762"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Führerschein-Zuschuss für Auszubildende, gekoppelt an den Ausbildungsabschluss, gegen Abwanderung Jugendlicher.",
+      "zitat": "Deshalb wird eine [Partei]-Landesregierung einen Führerschein-Zuschuss für Auszubildende in Höhe von 1.500 Euro einführen. Der Zuschuss soll an den erfolgreichen Abschluss einer Ausbildung in der Regelzeit gekoppelt werden.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "35e5e4f8acd07a98"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Steuerliches Familiensplitting zusätzlich zum Kindergeld einführen, damit junge Menschen früher Kinder bekommen können.",
+      "zitat": "Wir wollen Rahmenbedingungen schaffen, durch die junge Menschen frühzeitig Kinder bekommen können. Familienbezogene Leistungen müssen von der Verwaltung schnell und bürokratiearm erbracht werden. [Partei] will ein steuerliches Familiensplitting zusätzlich zum Kindergeld einführen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "b02775f0ecab09db"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "bund",
+      "beschreibung": "Verbundausbildungen und Förderkampagnen helfen Kleinbetrieben und Start-ups, Ausbildungsplätze anzubieten",
+      "zitat": "Unterstützung kleiner Betriebe:   Kleinbetriebe und Start-ups profitieren von Verbundausbildungen und Förderkampagnen, um Ausbildungsplätze anzubieten.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "68a3bb3e016605b6"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Kommunen bei Projektbürokratie und Altschulden entlasten.",
+      "zitat": "Wir wollen: […] Kommunen bei Projektbürokratie und Altschulden entlasten.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "0ff967b1406e4714"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Förderverfahren für Kommunen vereinfachen, mehr Pauschalzahlungen und Experimentierklauseln, interkommunale Zusammenarbeit fördern",
+      "zitat": "Dazu gehört eine Vereinfachung von Förderverfahren, die Stärkung der Mittelverwendung durch mehr Pauschalzahlungen und die Schaffung von mehr Experimentierklauseln bei Landesgesetzen, die auf kommunaler Ebene umgesetzt werden müssen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "db3a63e493af424c"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "bund",
+      "beschreibung": "Strukturpolitik und Infrastrukturinvestitionen, damit Regionen außerhalb der Metropolen attraktiver werden und ländliche Regionen nicht veröden",
+      "zitat": "Wir wollen eine aktive Strukturpolitik und Infrastruktur- investitionen, um Regionen außerhalb der Metropolen attraktiver zu machen und der Verödung ländlicher Regionen entgegenzuwirken.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "b84e9da6f0fa8ccf"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Kommunen werden bei der Erstellung von Flächennutzungsplänen unterstützt.",
+      "zitat": "Flächennutzungspläne Unterstützung der Kommunen bei der Erstellung von Flächennutzungsplänen, insbesondere bei der situativen Abwägung relevanter Faktoren.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "83a735f30a84e3a9"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Reform der Kommunalfinanzierung mit Flächenfaktor, kommunaler Grundsicherung und verlässlicher Finanzausstattung; Altschuldenfonds für überschuldete Kommunen.",
+      "zitat": "Wir fordern eine Reform der Kommunalfinanzierung, die einen Flächenfaktor, eine kommunale Grundsicherung und verlässliche Finanzausstattung umfasst, damit Städte und Gemeinden ihre Aufgaben zuverlässig erfüllen können.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "6abb41e637c0418f"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Entschuldungsprogramme für hoch verschuldete Kommunen fortführen und weiterentwickeln",
+      "zitat": "Für hoch verschuldete Kommunen werden wir nachhaltige Entschuldungsprogramme fortführen und weiterentwickeln.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "ca62bf04631e0557"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Programm „Stay in [Land]“ mit regionalen Netzwerken, Mentoring und Stipendien mit Mindestverbleib im Land, um Studierende zu halten",
+      "zitat": "Zur Bindung von Talenten an das Land und den Arbeitsmarkt schaffen wir ein Programm „Stay in [Land]“ mit regionalen Netzwerken, Mentoring und einem Stipendienprogramm, das an einen nachfolgenden Mindestverbleib in [Land] geknüpft ist.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "ffa221c45eb68a14"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Kommunale Finanzausstattung stärken und stabilisieren; Gewerbesteuer im Bund zu einer konjunkturunabhängigeren Gemeindewirtschaftssteuer weiterentwickeln.",
+      "zitat": "Wir wollen: […] Die kommunale Finanzausstattung stärken und stabilisieren und uns auf Bundesebene für eine Weiterentwicklung der Gewerbesteuer hin zu einer konjunkturunabhängigeren Gemeindewirtschaftssteuer einsetzen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "23eb19527d41adaf"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Bestehende Hochschulstandorte im ländlichen Raum gezielt unterstützen und strukturell fördern.",
+      "zitat": "Wir werden: • bestehende Hochschulstandorte insbesondere im ländlichen Raum gezielt unterstützen und strukturell fördern.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "75407d83c4e80a12"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "bund",
+      "beschreibung": "Auszubildendenwerke mit Wohnheimen nach dem Vorbild der Studierendenwerke fördern",
+      "zitat": "Wir fördern Auszubildendenwerke nach dem Vorbild der Studierendenwerke. Im Fokus stehen Auszubildendenwohnheime[…]",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "e1d706116acc58cc"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Förderprogramme vereinfachen und auf kommunale Eigenanteile verzichten, wo sie nicht leistbar sind.",
+      "zitat": "Vereinfachung bestehender Förderprogramme und Verzicht auf verpflichtende kommunale Eigenanteile, wo diese […] nicht leistbar sind.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "f00573cb060abd34"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "bund",
+      "beschreibung": "Ausbildungsgarantie fortführen und Jugendberufsagenturen weiter stärken.",
+      "zitat": "Wir setzen unseren Weg der Ausbildungsgarantie fort.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "fc53074d1135cca9"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Höhere Anteile der Kommunen an Umsatz- und Einkommensteuer, Gewerbesteuer erhalten",
+      "zitat": "Die Gewerbesteuer soll als zentrale kommunale Steuer erhalten und stabilisiert werden. Städte und Gemeinden benötigen höhere Anteile an der Umsatz- und Einkommensteuer.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "e824d927c7b492cf"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "bund",
+      "beschreibung": "Berufsorientierung in allen Schulformen strukturieren und bestehende Maßnahmen bundesweit und regional aufeinander abstimmen",
+      "zitat": "Ein strukturierter, individueller Prozess einer Berufsorientierung in allen Schulformen ist hierfür entscheidend. Zusammen mit den Akteuren, die sich bundesweit und regional in der Berufsorientierung engagieren, wollen wir sämtliche bestehenden Maßnahmen aufeinander abstimmen.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "7ae4eb30d69c4c08"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Familien, die in ihrer Heimat bleiben wollen, werden unterstützt, auch durch zinslose Kredite",
+      "zitat": "Familien, die in ihrer Heimat bleiben wollen, werden unterstützt – auch durch zinslose Kredite.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "db7c0e005ecbd4e4"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Zinsvergünstigter Kredit für junge Eltern zum Bau oder Kauf von Wohneigentum, mit Teilerlass bei weiteren Geburten.",
+      "zitat": "Hierbei wird Eltern mit mindestens einem Kind, die das 40. Lebensjahr noch nicht vollendet haben, ein zinsvergünstigter Kredit bis zu einer Höhe von 300.000 Euro zum Bau oder Kauf von selbstgenutztem Wohnraum zur Verfügung gestellt.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "9484e5ca21eddce7"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Finanzielle Handlungsfähigkeit der Kommunen durch mehr direkte Zuweisungen statt Förderprogramme und echte Konnexität stärken",
+      "zitat": "Wir sorgen dafür, dass unsere Kommunen funktionieren, indem wir: • die finanzielle Handlungsfähigkeit der Kommunen stärken. Durch mehr direkte Zuweisungen statt komplizierte Förderprogramme. • eine echte Umsetzung von Konnexität zwischen Land und den Kommunen fördern: Wer bestellt, muss auch bezahlen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "8f3458631d41eb86"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Paare mit unerfülltem Kinderwunsch weiter finanziell unterstützen",
+      "zitat": "Auch Paare mit unerfülltem Kinderwunsch wollen wir weiter finanziell unterstützen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "8c6787240ce83bdc"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Reproduktionsmedizin ausbauen und Beratung erweitern, um Menschen mit unerfülltem Kinderwunsch zu unterstützen.",
+      "zitat": "Um sie bestmöglich zu unterstützen, wollen wir die Reproduktionsmedizin ausbauen und uns dafür einsetzen, dass sie allen – egal, ob alleinstehend oder verpartnert – von der Krankenkasse finanziert wird.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "810e72bc340c88b0"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Das Land als Studienstandort stärken, mit Landesprogramm für internationale Studiengänge und Hochschulmarketing, um mehr junge Menschen zu gewinnen",
+      "zitat": "Damit unsere Hochschulen den Anschluss nicht verlieren, wollen wir [Land] als internationalen Studienstandort stärken und mehr junge Menschen für ein Studium in unserem Land gewinnen.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "e08274a366a10fc2"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "bund",
+      "beschreibung": "Ehe-Start-Kredit für junge Paare bei Familiengründung, der mit jedem Kind teilweise erlassen wird.",
+      "zitat": "Junge Paare erhalten für die Erstanschaffungen bei Familiengründung unter bestimmten Voraussetzungen einen Ehe-Start-Kredit. Mit jedem Kind wird ein Teil des Kredits erlassen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "a47deff47b1e4ae0"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Hochschulstandorte [Land] und Merseburg ausbauen (im Zusammenhang mit Recycling-Forschung).",
+      "zitat": "Wir wollen: […] technologische Kompetenz stärken – den Hochschulstandort [Land] und Merseburg ausbauen, Forschung im Bereich Recycling und Rückgewinnung seltener Erden gezielt fördern",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "pruefsumme": "7807dd03c86c8ed1"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Azubiwerk mit günstigen Wohnheimen und Beratung für Auszubildende sowie bezahlbarer Wohnraum für Azubis und Studierende.",
+      "zitat": "Deshalb führen wir das neue Azubiwerk zum Erfolg, das ähnlich wie das Studierendenwerk bezahlbaren Wohnraum für Auszubildende sowie Beratungs- und Kulturangebote schafft.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "8da8757aa2a9613c"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Alle Hochschulstandorte im Land erhalten und weiterentwickeln, um junge Menschen im Land zu halten.",
+      "zitat": "Wir werden die einzelnen Hochschulstandorte im Land erhalten und weiterentwickeln.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "baca9823e2eca154"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "bund",
+      "beschreibung": "Förderprogramme für Kommunen deutlich vereinfachen und entbürokratisieren.",
+      "zitat": "Förderprogramme wollen wir im Rahmen der Möglichkeiten deutlich vereinfachen und entbürokratisieren.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "cbb1d54b7ce34c4a"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Staatliche Hochschule in [Land] schaffen, um junge Menschen nach dem Schulabschluss in der Region zu halten",
+      "zitat": "Staatlichen Hochschulstandort in [Land] schaffen [...] Jährlich verlassen begabte junge Menschen nach dem Schulabschluss die Region, meist ohne Wiederkehr. Um die Bindungswirkung der Region zu steigern, bedarf es neben den etablierten privaten Hochschulansiedlungen eines staatlichen Hochschulstandortes.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "b95f9e932e2c2fa3"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "bund",
+      "beschreibung": "Unternehmen sollen sich im ländlichen Raum finanziell an bezahlbaren Wohnheimplätzen für Auszubildende beteiligen",
+      "zitat": "Unternehmen sollten dazu verpflichtet werden, sich insbesondere im ländlichen Raum an der Schaffung von öffentlichem Wohnraum, etwa bezahlbaren Wohnheimplätzen für Auszubildende, finanziell zu beteiligen.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "d734e472fb0dd2ab"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckende Jugendberufsagenturen als Anlaufstelle für Berufsorientierung und Ausbildungsplatzsuche",
+      "zitat": "Durch eine flächendeckende Einrichtung und Stärkung von Jugendberufsagenturen bieten wir eine zentrale Anlaufstelle für Berufsorientierung, Ausbildungsplatzsuche und Begleitung während der Ausbildung.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "5dc7e3f7ca62838d"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Umverteilung zugunsten der Städte und Gemeinden; kommunaler Finanzausgleich stärker dynamisieren und aufgabengerecht gestalten.",
+      "zitat": "Wir setzen uns ein für: eine echte Umverteilung zugunsten der Städte und Gemeinden,",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "f191858fb2911287"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "bund",
+      "beschreibung": "Konnexität: Wer Aufgaben für Länder und Kommunen veranlasst oder ausweitet, muss sie finanzieren",
+      "zitat": "Wir orientieren uns am Grundsatz der Konnexität. Für uns ist klar: Wer eine Leistung veranlasst oder ausweitet, muss für ihre Finanzierung aufkommen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "d66c3e10be8991aa"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "bund",
+      "beschreibung": "Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um die Finanzen der Kommunen zu stabilisieren",
+      "zitat": "Moderne Kommunalfinanzierung:   Die Gewerbesteuer wird aufkommensneutral und konjunkturunabhängig ersetzt und die Konzessionsabgabenverordnung grundlegend reformiert, um die Kommunalfinanzen auf robuste Füße zu stellen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "40039b9095ae341c"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "bund",
+      "beschreibung": "Strukturschwache Regionen sollen lokale Konzepte zur Ansiedlung von Menschen und Gewerbe sowie die Vernetzung von Kommunen fördern können",
+      "zitat": "Regionale Wirtschaftsförderung:   Strukturschwache Regionen profitieren von lokal entwickelten Konzepten zur Ansiedlung von Menschen und Gewerbe sowie von der Vernetzung von Kommunen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "b2ee2c25222a475e"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Genehmigungs- und Vergabeverfahren vollständig digitalisieren, Genehmigungsfiktion einführen, Stichproben statt Nachweisprüfung",
+      "zitat": "Wir digitalisieren Genehmigungs- und Vergabeverfahren vollständig, führen eine Genehmigungsfiktion ein und setzen bei Kontrollen stärker auf Stichproben statt auf Verwendungsnachweisprüfung.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "04166fde0664001f"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Freiwillige Zusammenarbeit von Kommunen fördern, etwa durch gemeinsame Verwaltungseinheiten.",
+      "zitat": "freiwillige interkommunale Zusammenarbeit fördern, z. B. durch gemeinsame Verwaltungseinheiten oder gemeinsame Beauftragte für Datenschutz oder Gleichstellung.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "d22934fa6c82505d"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Hochschulen und Fachschulen stärker mit regionalen Unternehmen vernetzen, damit Absolventinnen und Absolventen im Land bleiben",
+      "zitat": "Damit wir Fachkräfte in [Land] halten, braucht es: […] eine stärkere Vernetzung von Hochschulen und Fachschulen mit regionalen Unternehmen, um den Verbleib von Absolvent*innen im Land zu erhöhen.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "3e256cfcf8d332ab"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Finanzbeziehungen zwischen Bund, Land und Kommunen reformieren und den kommunalen Anteil an den Steuereinnahmen erhöhen.",
+      "zitat": "Dazu braucht es eine Reform der Finanzbeziehungen zwischen Bund, Land und Kommunen sowie eine Erhöhung des kommunalen Anteils an den Steuereinnahmen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "0f41d55dcabe33f7"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Landeseigene Unterstützung für Kinderwunschbehandlungen, bis der Bund die Kosten übernimmt.",
+      "zitat": "Wir werden auf Bundesebene darauf hinarbeiten, dass die Krankenkassen sinnvolle und aussichtsreiche reproduktionsmedizinische Maßnahmen als Regelleistungen übernehmen und diese Lücke mit landeseigenen Unterstützungsangeboten übergangsweise schließen.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "1bdc981d86e63810"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "bund",
+      "beschreibung": "Berufsorientierung und Jugendberufsagenturen stärken, ein berufliches Orientierungsjahr schaffen und Azubi-Stipendien ausbauen.",
+      "zitat": "Die Angebote zur Berufsorientierung, wie z. B. Azubi-Botschafter, Frauen in MINT-Berufen, und Jugendberufsagenturen wollen wir stärken. Zudem wollen wir analog zum Freiwilligen Sozialen Jahr (FSJ) ein berufliches Orientierungsjahr schaffen und SBB-Stipendien sowie Azubi-Stipendien ausbauen.",
+      "ursachen_ids": [
+        2403
+      ],
+      "pruefsumme": "5d95e71f61cac3a1"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "land",
+      "beschreibung": "Zinsfreies Startdarlehen für Azubis, das nach einem Jahr Arbeit im Land entfällt",
+      "zitat": "Damit Ausbildungen auch in [Land] wieder attraktiv sind, braucht es: […] die Einführung eines Azubi-Start-Bonus. Hier erhalten Azubis zum Start der ersten Ausbildung ein Darlehen von zinsfreien 1.500,00 €. Wer insgesamt ein Jahr als Facharbeiter in [Land] gearbeitet hat, muss dieses nicht zurückzahlen.",
+      "ursachen_ids": [
+        2401
+      ],
+      "pruefsumme": "237d4940d789353d"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "bund",
+      "beschreibung": "Kommunale Selbstverwaltung stärken, mit einer Altschuldenlösung für die Kommunen.",
+      "zitat": "Wir setzen uns dafür ein, dass die kommunale Selbstverwaltung wieder gestärkt wird. Ein wichtiger Hebel wäre eine gerechte Altschuldenlösung für die Kommunen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "6765bdcc65840cc9"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Mindestfinanzausstattung für jede Kommune und Sonderprogramm zum Abbau alter Kassenkredite.",
+      "zitat": "Wir fordern deshalb eine verbindliche Mindestfinanzausstattung für jede Kommune sowie ein Sonderprogramm zum Abbau alter Kassenkredite.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "86710a0427fe49a2"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "land",
+      "beschreibung": "Formulare und Verfahren vereinheitlichen, um den Aufwand der Verwaltungen zu senken.",
+      "zitat": "Vereinheitlichung von Formularen und Verfahren, um Aufwand für Bürger, Unternehmen und Verwaltungen zu reduzieren.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "14a654d4778e463b"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "land",
+      "beschreibung": "Land gleicht neue gesetzliche Pflichten der Kommunen vollständig und dauerhaft finanziell aus.",
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: ● Finanzielle Verantwortung regeln Vollständiger und dauerhafter finanzieller Ausgleich von neuen gesetzlichen Verpflichtungen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "ed0c2a89f1ca6f46"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "land",
+      "beschreibung": "Einmaliges Baby-Begrüßungsgeld des Landes für Familien mit Hauptwohnsitz im Land, um die Entscheidung für Kinder zu erleichtern.",
+      "zitat": "Wir werden ein Baby-Begrüßungsgeld in Höhe von 3.000 Euro einführen. Damit erleichtern wir jungen Menschen die Entscheidung für den Schritt ins Elternsein.",
+      "ursachen_ids": [
+        2402
+      ],
+      "pruefsumme": "8cec2c3e139574c0"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "land",
+      "beschreibung": "Landesbeschleunigungsgesetz mit verbindlichen Fristen und digitalisierten Verfahren für schnellere Planung und Genehmigung",
+      "zitat": "Mit einem Landesbeschleunigungsgesetz werden wir Bürokratie reduzieren und Planungs- und Genehmigungsverfahren beschleunigen. Für alle Verfahren werden wir klare Fristen und verbindliche Bearbeitungszeiten einführen.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "0c2850ed08a6a26b"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "land",
+      "beschreibung": "Bedarfsgerechter kommunaler Finanzausgleich, der Aufgaben und Abschreibungen abbildet; Bundeszuweisungen nicht anrechnen",
+      "zitat": "[Partei] [Land] fordert einen bedarfsgerechten kommunalen Finanzausgleich (FAG), der die tatsächlichen Aufgaben der Gemeinden abbildet. Dazu gehört, dass auch Abschreibungen berücksichtigt werden.",
+      "ursachen_ids": [
+        2404
+      ],
+      "pruefsumme": "14db4a3d3d5a2a05"
+    }
+  ]
+}

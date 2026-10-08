@@ -41,5 +41,1731 @@
       "ebene": "land",
       "schlagwoerter": ["gemeinde hat kein geld", "kommunale infrastruktur", "daseinsvorsorge", "versorgung vor ort"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9319,
+      "name": "Kommunale Finanzausstattung über den Finanzausgleich erhöhen und Mindestausstattung sichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr allgemeine Zuweisungen erhöhen nachweislich die Ausgaben der Kommunen (Flypaper-Effekt) und setzen direkt an der Finanzlage an; dagegen sprechen knappe Landeshaushalte und dass mehr Geld allein Personal- und Verfahrensengpässe nicht löst.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.mohrsiebeck.com/artikel/intergovernmental-transfers-local-fiscal-policy-and-the-flypaper-effect-evidence-from-a-german-state-101628001522116x14462054864882",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9320,
+      "name": "Kommunalfinanzierung verlässlich und aufgabengerecht ausrichten, ohne zusätzliche Mittel zu nennen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine aufgabengerechtere, transparentere Verteilung kann Belastungen besser abbilden und ist rechtlich einfach; ohne zusätzliche Mittel verschiebt sie aber vor allem Geld zwischen Kommunen und verbessert die Gesamtlage kaum.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9321,
+      "name": "Finanzierungssystem und eigene Einnahmen der Bezirke eines Stadtstaats neu ordnen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr finanzielle Eigenständigkeit kann die Handlungsfähigkeit der Bezirke stärken; die Wirkung hängt von der Gesamtsumme ab, und eigene Einnahmen oder Klagerechte erfordern aufwendige Verfassungs- und Gesetzesänderungen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9322,
+      "name": "Konnexität: vom Land übertragene Aufgaben vollständig gegenfinanzieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert neue ungedeckte Lasten und ist in den meisten Landesverfassungen schon angelegt; bestehende Defizite und vom Bund verursachte Sozialausgaben bleiben unberührt, die Wirkung ist empirisch kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9323,
+      "name": "Landesprogramm zur Entschuldung von Kommunen (Altschulden, Kassenkredite) (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Länderprogramme haben Kassenkredite gestoppt und Haushalte ausgeglichen; zugleich kürzten Teilnehmerkommunen Investitionen und erhöhten Steuern, und die Programme binden hohe Landesmittel über viele Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9324,
+      "name": "Altschuldenlösung von Bund und Ländern für überschuldete Kommunen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entschuldung schafft Spielraum, Länderprogramme zeigen gestoppte Kassenkredite, aber auch Investitionskürzungen bei Auflagen; der Bund kann sich finanziell beteiligen, braucht aber die Länder und ggf. eine Verfassungsänderung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9325,
+      "name": "Höheren Anteil der Kommunen an Einkommen- und Umsatzsteuer auf Bundesebene anstreben (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ein höherer Steueranteil stärkt die Einnahmebasis dauerhaft; das Land kann das nur über Bundesrat und Bundesgesetz erreichen, und die Verteilung begünstigt eher steuerstarke Kommunen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9326,
+      "name": "Förderprogramme für Kommunen in pauschale Zuweisungen überführen und Förderverfahren vereinfachen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kommunen nennen aufwendige Anträge, Nachweise und Personalmangel als Investitionshemmnis; Pauschalen und Verzicht auf Eigenanteile helfen gerade schwachen Kommunen. Dagegen: kein zusätzliches Geld, weniger Steuerung, Wirkung kaum evaluiert.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_855680.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9327,
+      "name": "Förderprogramme des Bundes für Kommunen bündeln und Antragsverfahren vereinfachen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vereinfachte Anträge entlasten Verwaltungen, die über Förderbürokratie klagen; die Finanzlage selbst ändert sich dadurch kaum, und die Wirkung solcher Bündelungen ist wenig untersucht.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_855680.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9328,
+      "name": "Planungs-, Genehmigungs- und Vergabeverfahren beschleunigen und digitalisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Fristen, Digitalisierung und einfachere Vergabe können Verwaltungen entlasten; bisherige Beschleunigungsgesetze brachten nur begrenzte Erfolge, weil lange Verfahren oft am materiellen Recht und fehlendem Personal liegen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://trid.trb.org/View/2427394",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9329,
+      "name": "Fachliche Unterstützung der Kommunen durch das Land bei Bauprojekten und Bauleitplanung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vorlagen und Beratung können kleine, personalschwache Bauverwaltungen entlasten und sind leicht umsetzbar; sie ersetzen weder Personal noch Geld, die Wirkung ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9330,
+      "name": "Interkommunale Zusammenarbeit erleichtern und fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kooperation gilt als Mittel, Personal und Kosten zu bündeln, und ist weit verbreitet; belastbare Studien zu Einsparungen fehlen für Deutschland weitgehend, die Finanzlage ändert sich nur am Rand.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://ideas.repec.org/a/zbw/iwhwiw/iwh-1-16-4.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9331,
+      "name": "Hochschul- und Studienangebote in den Regionen erhalten und ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Neue Hochschulen erhöhen nachweislich Studierendenzahl und Anteil Hochqualifizierter in der Region; in wenig dynamischen Regionen wandern Absolventen aber oft ab, und Ausbau kostet viel und dauert Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.zew.de/PU83481",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9332,
+      "name": "Absolventen durch Karriereberatung und Vernetzung mit regionalen Arbeitgebern binden (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kontakte zu regionalen Arbeitgebern während des Studiums können den Verbleib erleichtern und sind günstig umsetzbar; ohne passende Stellen bleibt die Wirkung begrenzt und ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9333,
+      "name": "Prämien, Stipendien oder Darlehenserlass gegen Verbleib im Land nach Ausbildung oder Studium (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bindungsprämien sind einfach einzuführen; Studien zu Verpflichtungsprogrammen finden nur schwache Belege für dauerhaften Verbleib, viele brechen ab oder ziehen nach der Bindungsfrist weg, Mitnahmeeffekte sind wahrscheinlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://rrh.org.au/journal/article/2459",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9334,
+      "name": "Rückkehr- und Willkommensagenturen für Abgewanderte und Zuziehende (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Rückkehrinitiativen in ländlichen Regionen erhöhen nachweislich die Rückwanderung, besonders bei mittleren und höheren Einkommen; sie wirken auf bereits Abgewanderte und ersetzen fehlende Stellen nicht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ideas.repec.org/a/oup/jecgeo/v24y2024i5p759-784..html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9335,
+      "name": "Eigenheimförderung und zinsgünstige Kredite für Familien, die in der Region bleiben oder zurückkehren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Wohneigentumsförderung wirkt in ländlichen Regionen als Bleibeanreiz; Evaluationen ähnlicher Zuschüsse zeigen aber erhebliche Mitnahmeeffekte und Vorteile für einkommensstarke Haushalte, die Kosten sind hoch.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.593685.de/publikationen/diw_aktuell/2018_0014/baukindergeld__einkommensstarke_haushalte_profitieren_in_besonderem_masse.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9336,
+      "name": "Familienbezogene Geldleistungen des Landes zur Förderung von Geburten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Geldleistungen bei Geburt erhöhen die Geburtenzahl in Studien messbar, aber nur um wenige Prozent; an Alterung und Abwanderung ändern sie wenig, und dauerhafte Landesleistungen sind teuer.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9337,
+      "name": "Steuerliche Entlastung oder Kredite mit Teilerlass für Familien zur Geburtenförderung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Finanzielle Anreize für Kinder zeigen in Studien einen beständigen, aber kleinen Effekt auf Geburten; Steuerreformen dieser Art sind teuer und begünstigen oft höhere Einkommen, Alterung bleibt weitgehend unberührt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9338,
+      "name": "Finanzielle Unterstützung von Kinderwunschbehandlungen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zuschüsse erhöhen die Nutzung der Reproduktionsmedizin und ermöglichen einzelnen Paaren Kinder; Studien finden aber kaum Effekte auf die Geburtenrate insgesamt, weil sich Geburten eher ins höhere Alter verschieben.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ifstudies.org/blog/mandating-insurance-coverage-for-ivf-will-not-boost-fertility",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9339,
+      "name": "Umlagefinanzierter Ausbildungsfonds, in den nicht ausbildende Betriebe einzahlen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Die Pflege-Ausbildungsumlage erhöhte die Zahl der Auszubildenden; eine Studie aus Québec fand dagegen keine Wirkung auf das Ausbildungsniveau. Mehr Plätze lösen zudem nicht die Passungsprobleme bei unbesetzten Stellen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://dspace-test.bibb.de/items/035ea543-8cab-4e72-a7a6-b31107ba1a2d/full",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9340,
+      "name": "Berufsorientierung und Jugendberufsagenturen stärken und abstimmen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Junge Menschen mit durchgehendem Beratungskontakt münden weit häufiger in Ausbildung, was an der Passung ansetzt; der Zusammenhang ist aber nicht kausal belegt, und Jugendberufsagenturen hängen von Ländern und Kommunen ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bibb.de/dienst/nlt/de/newsletter/newsletter_bibbaktuell_2025_09.php",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9341,
+          "instrument": 9340,
+          "beschreibung": "Berufsorientierung in allen Schulformen strukturieren und bestehende Maßnahmen bundesweit und regional aufeinander abstimmen",
+          "ursachen_ids": [2403],
+          "zitat": "Ein strukturierter, individueller Prozess einer Berufsorientierung in allen Schulformen ist hierfür entscheidend. Zusammen mit den Akteuren, die sich bundesweit und regional in der Berufsorientierung engagieren, wollen wir sämtliche bestehenden Maßnahmen aufeinander abstimmen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=67",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9342,
+          "instrument": 9327,
+          "beschreibung": "Kommunal relevante Bundesförderprogramme zusammenfassen, online bündeln und Antragsverfahren sowie Nachweispflichten vereinfachen",
+          "ursachen_ids": [2404],
+          "zitat": "Wir machen die kommunal relevanten Förderprogramme des Bundes einfacher in der Abwicklung, indem wir sie zusammenfassen und auf einer Online-Plattform bündeln. Fristen fassen wir realitätsnah, vereinfachen Antragsverfahren und reduzieren Nachweispflichten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9343,
+          "beschreibung": "Konnexität: Wer Aufgaben für Länder und Kommunen veranlasst oder ausweitet, muss sie finanzieren",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Wenn der Bund neue Leistungen selbst finanziert, entstehen Ländern und Kommunen keine neuen Lasten; als Grundsatz ohne Gesetzesänderung ist das unverbindlich, bestehende Lücken bleiben.",
+          "zitat": "Wir orientieren uns am Grundsatz der Konnexität. Für uns ist klar: Wer eine Leistung veranlasst oder ausweitet, muss für ihre Finanzierung aufkommen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=76",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis, Kapitel Wohnen (S. 30-37), Berlin wird spitze (S. 41-50), Bildung/Ausbildung (S. 55-64), Starke Familien (S. 108-109) und Fundstellen S. 32, 34, 35, 42, 49, 50, 81, 83, 103 gelesen bzw. durchsucht; Stadtstaat-Programm ohne Zusagen zu Abwanderung aus ländlichen/strukturschwachen Regionen, Kommunalfinanzen oder Rückkehrförderung.",
+        "stand": "2026-10-08",
+        "treffer": 9,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9344,
+          "instrument": 9333,
+          "beschreibung": "Programm „Stay in MV“ mit regionalen Netzwerken, Mentoring und Stipendien mit Mindestverbleib im Land, um Studierende zu halten",
+          "ursachen_ids": [2401],
+          "zitat": "Zur Bindung von Talenten an das Land und den Arbeitsmarkt schaffen wir ein Programm „Stay in MV“ mit regionalen Netzwerken, Mentoring und einem Stipendienprogramm, das an einen nachfolgenden Mindestverbleib in Mecklenburg-Vorpommern geknüpft ist.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=69",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9345,
+          "instrument": 9331,
+          "beschreibung": "Staatliche Hochschule in Schwerin schaffen, um junge Menschen nach dem Schulabschluss in der Region zu halten",
+          "ursachen_ids": [2401],
+          "zitat": "Staatlichen Hochschulstandort in Schwerin schaffen [...] Jährlich verlassen begabte junge Menschen nach dem Schulabschluss die Region, meist ohne Wiederkehr. Um die Bindungswirkung der Region zu steigern, bedarf es neben den etablierten privaten Hochschulansiedlungen eines staatlichen Hochschulstandortes.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=65",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9346,
+          "instrument": 9319,
+          "beschreibung": "Finanzausgleichsgesetz novellieren, Infrastrukturpauschale deutlich anheben und Investitionsmittel mehrjährig bereitstellen, auch für finanzschwache Kommunen",
+          "ursachen_ids": [2404],
+          "zitat": "Mit einer Novellierung des Finanzausgleichsgesetzes werden wir die kommunale Finanzausstattung strukturell und dauerhaft stärken.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=41",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9347,
+          "instrument": 9323,
+          "beschreibung": "Entschuldungsprogramme für hoch verschuldete Kommunen fortführen und weiterentwickeln",
+          "ursachen_ids": [2404],
+          "zitat": "Für hoch verschuldete Kommunen werden wir nachhaltige Entschuldungsprogramme fortführen und weiterentwickeln.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=42",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9348,
+          "instrument": 9328,
+          "beschreibung": "Landesbeschleunigungsgesetz mit verbindlichen Fristen und digitalisierten Verfahren für schnellere Planung und Genehmigung",
+          "ursachen_ids": [2404],
+          "zitat": "Mit einem Landesbeschleunigungsgesetz werden wir Bürokratie reduzieren und Planungs- und Genehmigungsverfahren beschleunigen. Für alle Verfahren werden wir klare Fristen und verbindliche Bearbeitungszeiten einführen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=104",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9349,
+          "instrument": 9329,
+          "beschreibung": "Standardisierte Vorlagen für Bauprojekte stellen, um Kommunen bei der Bauverwaltung fachlich zu unterstützen",
+          "ursachen_ids": [2404],
+          "zitat": "Um die Kommunen angesichts der demographischen Entwicklung fachlich zu unterstützen, werden wir Vorlagen für die standardisierte Umsetzung von Bauprojekten zur Verfügung stellen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=113",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9350,
+          "instrument": 9319,
+          "beschreibung": "Kommunalen Finanzausgleich in neuem Gesetz ab 2027 nach Gutachten umsetzen, mit Mindestausstattung und Ausgleich struktureller Finanzschwäche",
+          "ursachen_ids": [2404],
+          "zitat": "Ab 2027 setzen wir die Ergebnisse des durch uns initiierten Gutachtens zur gerechten Verteilung der Mittel auf die kommunalen Ebenen in einem neuen Finanzausgleichsgesetz um. Dabei werden wir dem Anspruch einer finanziellen Mindestausstattung genügen und strukturelle Finanzschwäche im Sinne gleichwertiger Lebensverhältnisse ausgleichen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=79",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9351,
+          "beschreibung": "Unterstützungsfonds für kleine Kommunen in Haushaltskonsolidierung für kleinere Investitionen",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein kleiner Fonds kann verhindern, dass Kommunen in Konsolidierung jede Investition streichen, ein bekanntes Problem solcher Programme; der Umfang ist gering, die Wirkung kaum untersucht.",
+          "zitat": "Für kleinere Kommunen in Haushaltskonsolidierung soll über einen Unterstützungsfonds die Möglichkeit geschaffen werden, finanzielle Unterstützung für kleinere Investitionsmaßnahmen zu erhalten.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=10",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9352,
+          "instrument": 9328,
+          "beschreibung": "Genehmigungs- und Vergabeverfahren vollständig digitalisieren, Genehmigungsfiktion einführen, Stichproben statt Nachweisprüfung",
+          "ursachen_ids": [2404],
+          "zitat": "Wir digitalisieren Genehmigungs- und Vergabeverfahren vollständig, führen eine Genehmigungsfiktion ein und setzen bei Kontrollen stärker auf Stichproben statt auf Verwendungsnachweisprüfung.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=55",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9353,
+          "instrument": 9328,
+          "beschreibung": "Gemeinsame digitale Basisdienste und interkommunale Lösungen für Kommunen, um Vergabe zu beschleunigen und Verwaltungen zu entlasten",
+          "ursachen_ids": [2404],
+          "zitat": "Durch interkommunale Lösungen und digitale Plattformen beschleunigen wir Vergabeverfahren und schaffen praxisnahe […] Entlastung. Standardisierung spart Kosten, verbessert den Service und entlastet die Verwaltungen vor Ort.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=55",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9354,
+          "instrument": 9326,
+          "beschreibung": "Förderverfahren für Kommunen vereinfachen, mehr Pauschalzahlungen und Experimentierklauseln, interkommunale Zusammenarbeit fördern",
+          "ursachen_ids": [2404],
+          "zitat": "Dazu gehört eine Vereinfachung von Förderverfahren, die Stärkung der Mittelverwendung durch mehr Pauschalzahlungen und die Schaffung von mehr Experimentierklauseln bei Landesgesetzen, die auf kommunaler Ebene umgesetzt werden müssen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=10",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9355,
+          "instrument": 9338,
+          "beschreibung": "Paare mit unerfülltem Kinderwunsch weiter finanziell unterstützen",
+          "ursachen_ids": [2402],
+          "zitat": "Auch Paare mit unerfülltem Kinderwunsch wollen wir weiter finanziell unterstützen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=31",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9356,
+          "instrument": 9332,
+          "beschreibung": "Hochschulen bauen Bindungsinstrumente für internationale Studierende auf und erleichtern den Übergang in den regionalen Arbeitsmarkt",
+          "ursachen_ids": [2401],
+          "zitat": "Hierfür werden durch die Hochschulen strukturierte Bindungs- und Integrationsinstrumente etabliert und weiterentwickelt, um bereits während des Studiums berufliche, soziale und räumliche Bindungen aufzubauen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9357,
+          "instrument": 9339,
+          "beschreibung": "Branchenbezogene Umlagen bzw. Fonds, wo unterhalb des Bedarfs ausgebildet wird, und mehr Ausbildungsverantwortung der Unternehmen.",
+          "ursachen_ids": [2403],
+          "zitat": "Die Unternehmen müssen ihrer Verantwortung für Ausbildung stärker gerecht werden. Wir unterstützen das Mittel der Umlagen bzw. Fonds, beispielsweise branchenbezogen, dort, wo unterhalb des Bedarfs ausgebildet wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=13",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9358,
+          "beschreibung": "Ausbildungsgarantie fortführen und Jugendberufsagenturen weiter stärken.",
+          "ursachen_ids": [2403],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die bestehende Ausbildungsgarantie mit außerbetrieblichen Plätzen fängt Jugendliche ohne Betrieb auf und ist gesetzlich verankert; außerbetriebliche Ausbildung führt nicht immer in Beschäftigung und löst unbesetzte Stellen nicht.",
+          "zitat": "Wir setzen unseren Weg der Ausbildungsgarantie fort.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=13",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9359,
+          "instrument": 9324,
+          "beschreibung": "Lösung für die Altschulden der Kommunen, auch unter Berücksichtigung ostdeutscher Kommunen.",
+          "ursachen_ids": [2404],
+          "zitat": "Es bedarf endlich einer Lösung des spezifischen Problems der kommunalen Altschulden. Dabei wollen wir dafür Sorge tragen, dass auch die Situation der ostdeutschen Kommunen berücksichtigt wird",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9360,
+          "instrument": 9327,
+          "beschreibung": "Förderprogramme für Kommunen deutlich vereinfachen und entbürokratisieren.",
+          "ursachen_ids": [2404],
+          "zitat": "Förderprogramme wollen wir im Rahmen der Möglichkeiten deutlich vereinfachen und entbürokratisieren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=18",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 9, 43) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-08",
+        "treffer": 9,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9361,
+          "instrument": 9331,
+          "beschreibung": "Alle Hochschulstandorte im Land erhalten und weiterentwickeln, um junge Menschen im Land zu halten.",
+          "ursachen_ids": [2401],
+          "zitat": "Wir werden die einzelnen Hochschulstandorte im Land erhalten und weiterentwickeln.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9362,
+          "beschreibung": "Landeswerbemaßnahmen bündeln und mit attraktiven Lebensbedingungen verknüpfen, um Fachkräfte an das Land zu binden.",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gebündelte Standortwerbung ist günstig und schnell umsetzbar; ohne bessere Stellen- oder Ausbildungsangebote ändert Werbung an den Gründen für Abwanderung wenig, belastbare Wirkungsnachweise fehlen.",
+          "zitat": "Bestehende Werbemaßnahmen des Landes werden dazu gebündelt, mit der freien Wirtschaft abgestimmt und mit den attraktiven Lebensbedingungen in MV verknüpft.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=21",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9363,
+          "instrument": 9320,
+          "beschreibung": "Kommunen verlässlich finanzieren, Mehrbelastungen ausgleichen (Konnexität) und Entschuldung und Konsolidierung weiter unterstützen.",
+          "ursachen_ids": [2404],
+          "zitat": "Damit sie diese Verantwortung auch weiterhin erfüllen können, stellen wir weiterhin ihre verlässliche Finanzierung sicher und sorgen für klare Zuständigkeiten sowie Rahmenbedingungen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=51",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9364,
+          "beschreibung": "Landesbehörden in Mittelzentren und ländlichen Regionen ansiedeln, um Abwanderung entgegenzuwirken",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Öffentliche Stellen ziehen private Beschäftigung nach sich (etwa 55 private je 100 öffentliche Stellen beim Umzug nach Berlin); Verlagerungen betreffen aber nur wenige Stellen, dauern Jahre und kosten viel.",
+          "zitat": "Die Ansiedlung von Landesbehörden und Verwaltungseinheiten in Mittelzentren und ländlichen Regionen stärkt regionale Wirtschaftskreisläufe, schafft Arbeitsplätze und verbessert die Erreichbarkeit öffentlicher Dienstleistungen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=59",
+          "beleg_studie_url": "https://openaccess.city.ac.uk/id/eprint/22234",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9365,
+          "instrument": 9335,
+          "beschreibung": "Familien, die in ihrer Heimat bleiben wollen, werden unterstützt, auch durch zinslose Kredite",
+          "ursachen_ids": [2401],
+          "zitat": "Familien, die in ihrer Heimat bleiben wollen, werden unterstützt – auch durch zinslose Kredite.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=44",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9366,
+          "instrument": 9319,
+          "beschreibung": "Bedarfsgerechter kommunaler Finanzausgleich, der Aufgaben und Abschreibungen abbildet; Bundeszuweisungen nicht anrechnen",
+          "ursachen_ids": [2404],
+          "zitat": "Die SPD Sachsen-Anhalt fordert einen bedarfsgerechten kommunalen Finanzausgleich (FAG), der die tatsächlichen Aufgaben der Gemeinden abbildet. Dazu gehört, dass auch Abschreibungen berücksichtigt werden.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=60",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9367,
+          "instrument": 9325,
+          "beschreibung": "Höhere Anteile der Kommunen an Umsatz- und Einkommensteuer, Gewerbesteuer erhalten",
+          "ursachen_ids": [2404],
+          "zitat": "Die Gewerbesteuer soll als zentrale kommunale Steuer erhalten und stabilisiert werden. Städte und Gemeinden benötigen höhere Anteile an der Umsatz- und Einkommensteuer.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9368,
+          "instrument": 9328,
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, Vergaberecht vereinfachen",
+          "ursachen_ids": [2404],
+          "zitat": "Planungs- und Genehmigungsverfahren werden beschleunigt. Planfeststellungen werden reduziert, Vergaberecht vereinfacht, Musterbauten mit Genehmigungsfiktion ermöglicht.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=44",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9369,
+          "instrument": 9330,
+          "beschreibung": "Interkommunale Zusammenarbeit und Verwaltungskooperationen fördern, Doppelprüfungen abbauen",
+          "ursachen_ids": [2404],
+          "zitat": "Interkommunale Zusammenarbeit wird erleichtert und gefördert, wo sie Ressourcen bündelt, Kosten senkt und Qualität sichert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=49",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9370,
+          "instrument": 9324,
+          "beschreibung": "Von Bund und Ländern finanzierter Altschuldenfonds für finanzschwache Kommunen nach Strukturwandel",
+          "ursachen_ids": [2404],
+          "zitat": "Um ihnen wieder eine Perspektive zu geben, setzen wir uns für einen von Bund und Ländern finanzierten Altschuldenfonds ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=108",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9371,
+          "beschreibung": "Kommunen erhalten direkt mehr Geld und mehr ungebundene Mittel statt vieler Förderprogramme",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ungebundene Mittel erhöhen nachweislich die Ausgaben der Kommunen und mindern Förderbürokratie; der Bund kann Kommunen aber nur auf Umwegen (etwa Umsatzsteueranteil) direkt finanzieren, die Höhe ist offen.",
+          "zitat": "Wir stellen den Kommunen künftig direkt mehr Gelder zur Verfügung und stärken weiter die sogenannten ungebundenen Mittel.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=109",
+          "beleg_studie_url": "https://www.mohrsiebeck.com/artikel/intergovernmental-transfers-local-fiscal-policy-and-the-flypaper-effect-evidence-from-a-german-state-101628001522116x14462054864882",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9372,
+          "instrument": 9339,
+          "beschreibung": "Solidarische Ausbildungsumlage soll die Ausbildungsbereitschaft kleiner und mittlerer Betriebe fördern",
+          "ursachen_ids": [2403],
+          "zitat": "Mit einer solidarischen Ausbildungsumlage sorgen wir dabei für einen finanziellen Ausgleich, um die Ausbildungsbereitschaft kleiner und mittlerer Betriebe zu fördern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9373,
+          "instrument": 9340,
+          "beschreibung": "Flächendeckende Jugendberufsagenturen als Anlaufstelle für Berufsorientierung und Ausbildungsplatzsuche",
+          "ursachen_ids": [2403],
+          "zitat": "Durch eine flächendeckende Einrichtung und Stärkung von Jugendberufsagenturen bieten wir eine zentrale Anlaufstelle für Berufsorientierung, Ausbildungsplatzsuche und Begleitung während der Ausbildung.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=79",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9374,
+          "beschreibung": "Auszubildendenwerke mit Wohnheimen nach dem Vorbild der Studierendenwerke fördern",
+          "ursachen_ids": [2403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Wohnheime erleichtern Auszubildenden den Umzug zu einem passenden Ausbildungsplatz und setzen an regionaler Passung an; der Bund fördert junges Wohnen bereits, die Wirkung auf die Besetzung von Stellen ist kaum untersucht.",
+          "zitat": "Wir fördern Auszubildendenwerke nach dem Vorbild der Studierendenwerke. Im Fokus stehen Auszubildendenwohnheime[…]",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9375,
+          "instrument": 9338,
+          "beschreibung": "Reproduktionsmedizin ausbauen und Beratung erweitern, um Menschen mit unerfülltem Kinderwunsch zu unterstützen.",
+          "ursachen_ids": [2402],
+          "zitat": "Um sie bestmöglich zu unterstützen, wollen wir die Reproduktionsmedizin ausbauen und uns dafür einsetzen, dass sie allen – egal, ob alleinstehend oder verpartnert – von der Krankenkasse finanziert wird.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=206",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9376,
+          "instrument": 9334,
+          "beschreibung": "Welcome Center und One-Stop-Agencies für Zuzug und Berufsrückkehrende ausbauen, um Fachkräfte im Land zu halten",
+          "ursachen_ids": [2401],
+          "zitat": "Damit wir Fachkräfte in MV halten, braucht es: • den Ausbau von One-Stop Agencies bzw. Welcome Centern zu zugewandten und serviceorientierten Zentren für Fachkräfteeinwanderung und Berufsrückkehrer*innen nach Mecklenburg-Vorpommern",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=30",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9377,
+          "instrument": 9332,
+          "beschreibung": "Hochschulen und Fachschulen stärker mit regionalen Unternehmen vernetzen, damit Absolventinnen und Absolventen im Land bleiben",
+          "ursachen_ids": [2401],
+          "zitat": "Damit wir Fachkräfte in MV halten, braucht es: […] eine stärkere Vernetzung von Hochschulen und Fachschulen mit regionalen Unternehmen, um den Verbleib von Absolvent*innen im Land zu erhöhen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=30",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9378,
+          "instrument": 9333,
+          "beschreibung": "Zinsfreies Startdarlehen für Azubis, das nach einem Jahr Arbeit im Land entfällt",
+          "ursachen_ids": [2401],
+          "zitat": "Damit Ausbildungen auch in MV wieder attraktiv sind, braucht es: […] die Einführung eines Azubi-Start-Bonus. Hier erhalten Azubis zum Start der ersten Ausbildung ein Darlehen von zinsfreien 1.500,00 €. Wer insgesamt ein Jahr als Facharbeiter in MV gearbeitet hat, muss dieses nicht zurückzahlen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=31",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9379,
+          "instrument": 9331,
+          "beschreibung": "Das Land als Studienstandort stärken, mit Landesprogramm für internationale Studiengänge und Hochschulmarketing, um mehr junge Menschen zu gewinnen",
+          "ursachen_ids": [2401],
+          "zitat": "Damit unsere Hochschulen den Anschluss nicht verlieren, wollen wir Mecklenburg-Vorpommern als internationalen Studienstandort stärken und mehr junge Menschen für ein Studium in unserem Land gewinnen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=38",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9380,
+          "beschreibung": "Jugendkultur gegen Abwanderung fördern, mit Stabsstelle in der Staatskanzlei und ausreichender Finanzierung",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Jugendkultur kann die Lebensqualität junger Menschen vor Ort erhöhen und ist mit überschaubaren Mitteln umsetzbar; die Hauptgründe für Abwanderung sind aber Ausbildung, Studium und Beruf, die Wirkung ist kaum untersucht.",
+          "zitat": "Jugendkultur zur Verhinderung von Abwanderung in den Fokus nehmen. Wir richten eine Stabsstelle in der Staatskanzlei ein, die Landesliegenschaften werden auf Doppelnutzung untersucht und Jugendkultur soll auf Landesebene sowie in den Kommunen ausreichend finanziert werden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=64",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9381,
+          "instrument": 9326,
+          "beschreibung": "Finanzielle Handlungsfähigkeit der Kommunen durch mehr direkte Zuweisungen statt Förderprogramme und echte Konnexität stärken",
+          "ursachen_ids": [2404],
+          "zitat": "Wir sorgen dafür, dass unsere Kommunen funktionieren, indem wir: • die finanzielle Handlungsfähigkeit der Kommunen stärken. Durch mehr direkte Zuweisungen statt komplizierte Förderprogramme. • eine echte Umsetzung von Konnexität zwischen Land und den Kommunen fördern: Wer bestellt, muss auch bezahlen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=104",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9382,
+          "instrument": 9319,
+          "beschreibung": "Reform der Kommunalfinanzierung mit Flächenfaktor, kommunaler Grundsicherung und verlässlicher Finanzausstattung; Altschuldenfonds für überschuldete Kommunen.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir fordern eine Reform der Kommunalfinanzierung, die einen Flächenfaktor, eine kommunale Grundsicherung und verlässliche Finanzausstattung umfasst, damit Städte und Gemeinden ihre Aufgaben zuverlässig erfüllen können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=97",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9383,
+          "instrument": 9340,
+          "beschreibung": "Berufsorientierung und Jugendberufsagenturen stärken, ein berufliches Orientierungsjahr schaffen und Azubi-Stipendien ausbauen.",
+          "ursachen_ids": [2403],
+          "zitat": "Die Angebote zur Berufsorientierung, wie z. B. Azubi-Botschafter, Frauen in MINT-Berufen, und Jugendberufsagenturen wollen wir stärken. Zudem wollen wir analog zum Freiwilligen Sozialen Jahr (FSJ) ein berufliches Orientierungsjahr schaffen und SBB-Stipendien sowie Azubi-Stipendien ausbauen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9384,
+          "beschreibung": "Grund- und Gewerbesteuer langfristig durch kommunalen Zuschlag mit eigenem Hebesatzrecht auf Körperschaft- und Einkommensteuer ersetzen, ggf. höherer Kommunalanteil an der Umsatzsteuer.",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Zuschlag mit Hebesatzrecht könnte kommunale Einnahmen stetiger machen; die Umstellung ist nur über Bund und Grundgesetzänderung möglich und bringt ohne höheren Umsatzsteueranteil kaum mehr Geld.",
+          "zitat": "Langfristig wollen wir die Grund- und Gewerbesteuer abschaffen und durch einen kommunalen Zuschlag mit eigenem Hebesatzrecht auf die Körperschaftsteuer und auf die Einkommensteuer sowie ggf. einen höheren Anteil der Kommunen an der Umsatzsteuer ersetzen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=50",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9385,
+          "instrument": 9320,
+          "beschreibung": "Kommunalen Finanzausgleich transparenter und einfacher machen und stärker an den tatsächlichen Aufgaben und Belastungen ausrichten.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir entflechten die Finanzströme zwischen Land und Kommunen und richten den kommunalen Finanzausgleich transparenter, einfacher und stärker an den tatsächlichen Aufgaben und Belastungen aus.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9386,
+          "instrument": 9320,
+          "beschreibung": "Bedürfnisse des ländlichen Raums bei der Finanzausstattung der Kommunen stärker berücksichtigen.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir Freie Demokraten werden: […] die infrastrukturellen Bedürfnisse des ländlichen Raumes bei der Finanzausstattung stärker berücksichtigen und Fehlanreize durch unübersichtliche Bundes- und Landesprogramme einschränken",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=79",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9387,
+          "instrument": 9330,
+          "beschreibung": "Freiwillige Zusammenarbeit von Kommunen fördern, etwa durch gemeinsame Verwaltungseinheiten.",
+          "ursachen_ids": [2404],
+          "zitat": "freiwillige interkommunale Zusammenarbeit fördern, z. B. durch gemeinsame Verwaltungseinheiten oder gemeinsame Beauftragte für Datenschutz oder Gleichstellung.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=80",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9388,
+          "instrument": 9331,
+          "beschreibung": "Juristischen Examensstudiengang an der Universität Rostock wieder eröffnen, um Abwanderung junger Talente zu verhindern.",
+          "ursachen_ids": [2401],
+          "zitat": "Wir Freie Demokraten werden: […] den Examensstudiengang Rechtswissenschaften an der Universität Rostock wieder eröffnen, um den Justizstandort zu stärken und die Abwanderung junger Talente zu verhindern.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=139",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9389,
+          "instrument": 9331,
+          "beschreibung": "Bestehende Hochschulstandorte im ländlichen Raum gezielt unterstützen und strukturell fördern.",
+          "ursachen_ids": [2401],
+          "zitat": "Wir werden: • bestehende Hochschulstandorte insbesondere im ländlichen Raum gezielt unterstützen und strukturell fördern.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=33",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9390,
+          "beschreibung": "Zuzug aus Metropolräumen durch bezahlbare Wohnungen, schnelles Internet und Coworking-Angebote gewinnen.",
+          "ursachen_ids": [2402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bezahlbares Wohnen, Internet und Coworking können Zuzug aus Ballungsräumen erleichtern; die Maßnahme bleibt allgemein, und wie viele Menschen dadurch tatsächlich zuziehen, ist kaum untersucht.",
+          "zitat": "Wir setzen auf bezahlbare Wohnungen, hohe Lebensqualität und moderne Arbeitsformen: mit flächendeckend schnellem Internet, digitalen Angeboten und neuen Möglichkeiten wie Coworking in Stadt und Land.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=58",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9391,
+          "instrument": 9325,
+          "beschreibung": "Einnahmebasis der Kommunen stärken: höherer Anteil an Einkommen- und Umsatzsteuer, Gewerbesteuer sichern.",
+          "ursachen_ids": [2404],
+          "zitat": "Kommunen müssen stärker an der Einkommensteuer und Umsatzsteuer beteiligt werden, zugleich muss die Gewerbesteuer als zentrale kommunale Einnahmequelle gesichert und weiterentwickelt werden.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=50",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9392,
+          "instrument": 9326,
+          "beschreibung": "Fördermittel möglichst in pauschale Investitionszuweisungen überführen, um Kommunen von Förderlogik und Bürokratie zu entlasten.",
+          "ursachen_ids": [2404],
+          "zitat": "Fördermittel sollen, wo immer möglich, ganz oder teilweise in pauschalierte investive Zuweisungen überführt werden, insbesondere in die Investitionspauschale.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=50",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9393,
+          "instrument": 9328,
+          "beschreibung": "Planungs- und Genehmigungsverfahren beschleunigen, kommunale Verantwortung stärken und interkommunale Kooperation erleichtern.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir beschleunigen Planungs- und Genehmigungsverfahren, stärken kommunale Verantwortung und erleichtern interkommunale Kooperationen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=58",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9394,
+          "beschreibung": "Rückzahlung von Rentenbeiträgen oder Freistellung von künftigen Zahlungen bei jeder Geburt, um Familien zu entlasten und mehr Kinder zu ermöglichen.",
+          "ursachen_ids": [2402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Hohe Geldleistungen je Geburt erhöhen Geburten in Studien messbar, aber begrenzt; 20.000 Euro je Kind kosten jährlich zweistellige Milliardenbeträge, die Finanzierung der Rentenversicherung ist ungeklärt.",
+          "zitat": "Zur Herstellung der Lastengerechtigkeit soll bei der Geburt jedes Kindes eine Rückzahlung von 20.000 € an Rentenbeiträgen oder eine entsprechende Freistellung von künftigen Zahlungen erfolgen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=148",
+          "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9395,
+          "instrument": 9337,
+          "beschreibung": "Ehe-Start-Kredit für junge Paare bei Familiengründung, der mit jedem Kind teilweise erlassen wird.",
+          "ursachen_ids": [2402],
+          "zitat": "Junge Paare erhalten für die Erstanschaffungen bei Familiengründung unter bestimmten Voraussetzungen einen Ehe-Start-Kredit. Mit jedem Kind wird ein Teil des Kredits erlassen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=149",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9396,
+          "instrument": 9337,
+          "beschreibung": "Familiensplitting statt Ehegattensplitting, um Familien mit Kindern steuerlich zu entlasten und Anreiz für mehr Kinder zu schaffen.",
+          "ursachen_ids": [2402],
+          "zitat": "Hierdurch werden Familien mit Kindern steuerlich entlastet. Angesichts der in Deutschland deutlich zu geringen Geburtenrate schaffen wir dadurch auch einen Anreiz für mehr Kinder.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=60",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9397,
+          "beschreibung": "Steuerliches Familiensplitting zusätzlich zum Kindergeld einführen, damit junge Menschen früher Kinder bekommen können.",
+          "ursachen_ids": [2402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Finanzielle Entlastung von Familien wirkt in Studien nur schwach auf Geburten; ein Familiensplitting ist Bundessteuerrecht, das Land kann es nur über den Bundesrat anstoßen.",
+          "zitat": "Wir wollen Rahmenbedingungen schaffen, durch die junge Menschen frühzeitig Kinder bekommen können. Familienbezogene Leistungen müssen von der Verwaltung schnell und bürokratiearm erbracht werden. Die AfD will ein steuerliches Familiensplitting zusätzlich zum Kindergeld einführen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=58",
+          "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit",
+          "evidenz": "belegt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9398,
+          "instrument": 9336,
+          "beschreibung": "Landeserziehungsgeld für U3-Kinder in Höhe der vergleichbaren Kosten eines Kita-Platzes einführen.",
+          "ursachen_ids": [2402],
+          "zitat": "Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=59",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9399,
+          "instrument": 9321,
+          "beschreibung": "Bezirke durch eigene Einnahmequellen und ein eigenes Klagerecht in ihrer Rechtsstellung stärken.",
+          "ursachen_ids": [2404],
+          "zitat": "Darüber hinaus setzten wir uns für eine Stärkung der Rechtsstellung der Bezirke etwa durch eigene Einnahmequellen und ein eigenes Klagerecht ein.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9400,
+          "instrument": 9336,
+          "beschreibung": "Einmaliges Baby-Begrüßungsgeld des Landes für Familien mit Hauptwohnsitz im Land, um die Entscheidung für Kinder zu erleichtern.",
+          "ursachen_ids": [2402],
+          "zitat": "Wir werden ein Baby-Begrüßungsgeld in Höhe von 3.000 Euro einführen. Damit erleichtern wir jungen Menschen die Entscheidung für den Schritt ins Elternsein.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=19",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9401,
+          "instrument": 9326,
+          "beschreibung": "Landesmittel für Kommunen vorrangig über den allgemeinen Finanzausgleich und die Infrastrukturpauschale statt über zweckgebundene Programme.",
+          "ursachen_ids": [2404],
+          "zitat": "Deshalb stellen wir Finanzmittel vorrangig über den allgemeinen kommunalen Finanzausgleich, insbesondere die Infrastrukturpauschale, bereit.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=57",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9402,
+          "instrument": 9334,
+          "beschreibung": "Rückkehrprogramm für ausgewanderte Fachkräfte mit Hilfe bei Wohnung und Kitaplatz sowie Rückkehrprämie nach zwei Jahren Beschäftigung.",
+          "ursachen_ids": [2401],
+          "zitat": "Eine AfD-geführte Landesregierung wird ein Rückkehrprogramm für ausgewanderte deutsche Fachkräfte auflegen, das unter anderem folgende Remigrationsanreize beinhaltet:",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=42",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9403,
+          "beschreibung": "Führerschein-Zuschuss für Auszubildende, gekoppelt an den Ausbildungsabschluss, gegen Abwanderung Jugendlicher.",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Führerschein erleichtert Auszubildenden auf dem Land den Weg zu Betrieb und Schule und ist günstig umsetzbar; ein Zuschuss ohne Verbleibsbezug hält kaum jemanden in der Region, Mitnahmeeffekte sind wahrscheinlich.",
+          "zitat": "Deshalb wird eine AfD-Landesregierung einen Führerschein-Zuschuss für Auszubildende in Höhe von 1.500 Euro einführen. Der Zuschuss soll an den erfolgreichen Abschluss einer Ausbildung in der Regelzeit gekoppelt werden.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=147",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9404,
+          "instrument": 9333,
+          "beschreibung": "Prämie für Auszubildende mit guten Abschlüssen, ausgezahlt erst nach zwei Jahren Beschäftigung im Land.",
+          "ursachen_ids": [2401],
+          "zitat": "Als Anreiz dafür wird eine AfD-Landesregierung Prämien für Auszubildende mit überdurchschnittlich guten Abschlusszeugnissen einführen. Die Prämien sollen zudem als Anreiz dazu dienen, dauerhaft im Land sesshaft zu bleiben.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=148",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9405,
+          "instrument": 9336,
+          "beschreibung": "Landeseigenes Familiengeld, gestaffelt nach Kinderzahl, vor allem für Mehrkindfamilien.",
+          "ursachen_ids": [2402],
+          "zitat": "Zur weiteren Entlastung der Familien werden wir ein landeseigenes Kindergeld einführen. Dieses „Familiengeld“ soll insbesondere Mehrkindfamilien finanziell stärken.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=15",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9406,
+          "instrument": 9336,
+          "beschreibung": "Zinsvergünstigter Kredit für junge Eltern zum Bau oder Kauf von Wohneigentum, mit Teilerlass bei weiteren Geburten.",
+          "ursachen_ids": [2402],
+          "zitat": "Hierbei wird Eltern mit mindestens einem Kind, die das 40. Lebensjahr noch nicht vollendet haben, ein zinsvergünstigter Kredit bis zu einer Höhe von 300.000 Euro zum Bau oder Kauf von selbstgenutztem Wohnraum zur Verfügung gestellt.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9407,
+          "instrument": 9338,
+          "beschreibung": "Landeseigene Unterstützung für Kinderwunschbehandlungen, bis der Bund die Kosten übernimmt.",
+          "ursachen_ids": [2402],
+          "zitat": "Wir werden auf Bundesebene darauf hinarbeiten, dass die Krankenkassen sinnvolle und aussichtsreiche reproduktionsmedizinische Maßnahmen als Regelleistungen übernehmen und diese Lücke mit landeseigenen Unterstützungsangeboten übergangsweise schließen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9408,
+          "instrument": 9319,
+          "beschreibung": "Finanzausgleichsgesetz grundlegend reformieren: größere Ausgleichsmasse, mehr Schlüsselzuweisungen, automatischer Konnexitätsausgleich.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir werden das Finanzausgleichsgesetz (FAG) grundlegend reformieren. Die Finanzausgleichsmasse wird über das geltende Mindestniveau hinaus angehoben und stärker als bisher über allgemeine Schlüsselzuweisungen statt über kleinteilige Fördertöpfe verteilt.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=232",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9409,
+          "instrument": 9319,
+          "beschreibung": "Verbindliche Mindestfinanzausstattung für jede Kommune und Sonderprogramm zum Abbau alter Kassenkredite.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir fordern deshalb eine verbindliche Mindestfinanzausstattung für jede Kommune sowie ein Sonderprogramm zum Abbau alter Kassenkredite.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=189",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9410,
+          "beschreibung": "Strukturpolitik und Infrastrukturinvestitionen, damit Regionen außerhalb der Metropolen attraktiver werden und ländliche Regionen nicht veröden",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Regionale Strukturpolitik kann Arbeitsplätze in schwächeren Regionen sichern, wie Evaluationen der Regionalförderung zeigen; die Zusage bleibt aber unbestimmt, ohne Instrument, Ziel oder Betrag.",
+          "zitat": "Wir wollen eine aktive Strukturpolitik und Infrastruktur- investitionen, um Regionen außerhalb der Metropolen attraktiver zu machen und der Verödung ländlicher Regionen entgegenzuwirken.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9411,
+          "instrument": 9339,
+          "beschreibung": "Solidarische Ausbildungsumlage: nicht ausbildende Betriebe zahlen in einen Fonds ein, der Ausbildungsplätze und Verbundausbildung finanziert; soll Ausbildung im ländlichen Raum stärken",
+          "ursachen_ids": [2403],
+          "zitat": "Mit unserer solidarischen Ausbildungsumlage (siehe Kapitel 10) stärken wir auch in Ostdeutschland die Ausbildungsbetriebe. Das wird speziell kleinen und mittleren Unternehmen im ländlichen Raum zugutekommen. So ermöglichen wir Jugendlichen eine gute Ausbildung in der Nähe ihres Heimatorts.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=46",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9412,
+          "beschreibung": "Unternehmen sollen sich im ländlichen Raum finanziell an bezahlbaren Wohnheimplätzen für Auszubildende beteiligen",
+          "ursachen_ids": [2403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Wohnheimplätze auf dem Land erleichtern Auszubildenden den Weg zu entfernten Betrieben; eine Zahlungspflicht für Unternehmen wäre eine verfassungsrechtlich heikle Sonderabgabe und belastet kleine Betriebe.",
+          "zitat": "Unternehmen sollten dazu verpflichtet werden, sich insbesondere im ländlichen Raum an der Schaffung von öffentlichem Wohnraum, etwa bezahlbaren Wohnheimplätzen für Auszubildende, finanziell zu beteiligen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9413,
+          "instrument": 9324,
+          "beschreibung": "Gemeindefinanzreform, volle Anrechnung der Finanzkraft im Länderfinanzausgleich und Altschuldenfonds für überschuldete Kommunen",
+          "ursachen_ids": [2404],
+          "zitat": "Um die Kommunen zu unterstützen, brauchen wir eine Gemeindefinanzreform, die 100-prozentige Anrechnung der kommunalen Finanzkraft im Länderfinanzausgleich und einen Altschuldenfonds für überschuldete Kommunen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=13",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9414,
+          "instrument": 9321,
+          "beschreibung": "Finanzierungssystem der Bezirke grundlegend ändern, um deren Handlungsfähigkeit durch bedarfsgerechte Ressourcenverteilung zu sichern.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir wollen starke Bezirke und eine verbindliche Bezirkspolitik. Das wird nur erreicht mit der Sicherung der Handlungsfähigkeit der Bezirke mit einer klaren und ehrlichen Ressourcenverteilung, indem das Finanzierungssystem der Bezirke grundsätzlich geändert wird.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=263",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9415,
+          "instrument": 9332,
+          "beschreibung": "Career-Center an Hochschulen sollen Studierende durch Beratung zu Karriereperspektiven im Land halten.",
+          "ursachen_ids": [2401],
+          "zitat": "Wir wollen: […] Career-Center an den Universitäten und Hochschulen etablieren, um Studierende nach ihrem Studium durch Beratungsangebote zu Karriereperspektiven in der Region und in MV zu halten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=17",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9416,
+          "instrument": 9319,
+          "beschreibung": "Kommunale Finanzausstattung stärken und stabilisieren; Gewerbesteuer im Bund zu einer konjunkturunabhängigeren Gemeindewirtschaftssteuer weiterentwickeln.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir wollen: […] Die kommunale Finanzausstattung stärken und stabilisieren und uns auf Bundesebene für eine Weiterentwicklung der Gewerbesteuer hin zu einer konjunkturunabhängigeren Gemeindewirtschaftssteuer einsetzen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=8",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9417,
+          "instrument": 9323,
+          "beschreibung": "Kommunen bei Projektbürokratie und Altschulden entlasten.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir wollen: […] Kommunen bei Projektbürokratie und Altschulden entlasten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=8",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9418,
+          "instrument": 9319,
+          "beschreibung": "Umverteilung zugunsten der Städte und Gemeinden; kommunaler Finanzausgleich stärker dynamisieren und aufgabengerecht gestalten.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir setzen uns ein für: eine echte Umverteilung zugunsten der Städte und Gemeinden,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=79",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9419,
+          "beschreibung": "Schuldenschnitt für kommunale Altschulden, um Kommunen finanziellen Spielraum zu geben.",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Schuldenschnitt schafft verschuldeten Kommunen Spielraum, Entschuldungsprogramme stoppten Kassenkredite, führten aber auch zu Investitionskürzungen; das Land kann ihn auf Bundesebene nur fordern.",
+          "zitat": "Wir setzen uns ein für: […] einen Schuldenschnitt auf Bundesebene für mehr „Beinfreiheit“ in den Kommunen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=79",
+          "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9420,
+          "beschreibung": "Willkommenszentren als Netzwerk von Kommunen, Initiativen und Behörden zur Aufnahme von Zugewanderten.",
+          "ursachen_ids": [2402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Vernetzte Willkommensstrukturen können Zugewanderten das Ankommen und Bleiben erleichtern und sind günstig umsetzbar; sie schaffen selbst keinen Zuzug, die Wirkung auf die Bevölkerungsentwicklung ist kaum untersucht.",
+          "zitat": "Willkommenszentren als Netzwerk:   Wir fördern die Vernetzung von Kommunen, lokalen Initiativen, Hilfestellen und Behörden für eine offene Willkommenskultur und Begleitung.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=98",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9421,
+          "instrument": 9324,
+          "beschreibung": "Kommunale Selbstverwaltung stärken, mit einer Altschuldenlösung für die Kommunen.",
+          "ursachen_ids": [2404],
+          "zitat": "Wir setzen uns dafür ein, dass die kommunale Selbstverwaltung wieder gestärkt wird. Ein wichtiger Hebel wäre eine gerechte Altschuldenlösung für die Kommunen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9422,
+          "beschreibung": "Recht auf einen Ausbildungsplatz für jeden jungen Menschen garantieren.",
+          "ursachen_ids": [2403],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Rechtsanspruch auf einen Ausbildungsplatz schließt Lücken dort, wo Betriebe fehlen; außerbetriebliche Plätze sind teuer, führen nicht immer in Beschäftigung und lösen unbesetzte Stellen nicht.",
+          "zitat": "Jedem jungen Menschen ist das Recht auf einen Ausbildungsplatz zu garantieren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=25",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9423,
+          "beschreibung": "Bund soll bei übertragenen Aufgaben die Kosten vollständig tragen; Finanzreform zur Entlastung der Kommunen und mehr Mitsprache der Länder im Bundesrat bei Gesetzen mit finanziellen Folgen.",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Volle Kostenübernahme durch den Bund würde Kommunen entlasten; das Land kann sie nur fordern, umsetzbar ist sie nur über Bundesgesetze und das Grundgesetz.",
+          "zitat": "Um Berlins Handlungsfähigkeit wieder herzustellen, fordern wir klare gesetzliche Vorgaben zur vollständigen Kostenübernahme bei Aufgabenübertragungen durch den Bund. [...] Wir benötigen dringend eine Finanzreform zur Entlastung der Kommunen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=53",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9424,
+          "instrument": 9322,
+          "beschreibung": "Aufgaben, die das Land auf Kommunen überträgt, sollen mit Kostenausgleich verbunden sein.",
+          "ursachen_ids": [2404],
+          "zitat": "Keine Aufgabenverlagerung des Landes an Kommunen ohne entsprechenden Kostenausgleich.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=75",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9425,
+          "instrument": 9326,
+          "beschreibung": "Pauschale Zuweisungen an Kommunen, auch aus dem Bundes-Sondervermögen, anstelle kleinteiliger Förderprogramme.",
+          "ursachen_ids": [2404],
+          "zitat": "Pauschale Zuweisungen an Kommunen, insbesondere aus dem Bundes-Sondervermögen für Infrastruktur und Klimaschutz, […] kleinteiliger Förderprogramme.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9426,
+          "instrument": 9326,
+          "beschreibung": "Förderprogramme vereinfachen und auf kommunale Eigenanteile verzichten, wo sie nicht leistbar sind.",
+          "ursachen_ids": [2404],
+          "zitat": "Vereinfachung bestehender Förderprogramme und Verzicht auf verpflichtende kommunale Eigenanteile, wo diese […] nicht leistbar sind.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9427,
+          "instrument": 9328,
+          "beschreibung": "Formulare und Verfahren vereinheitlichen, um den Aufwand der Verwaltungen zu senken.",
+          "ursachen_ids": [2404],
+          "zitat": "Vereinheitlichung von Formularen und Verfahren, um Aufwand für Bürger, Unternehmen und Verwaltungen zu reduzieren.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9428,
+          "instrument": 9323,
+          "beschreibung": "Kommunen durch Bund und Land vollständig entschulden, den kommunalen Finanzausgleich stärken und Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen ausbauen.",
+          "ursachen_ids": [2404],
+          "zitat": "Notwendig ist daher eine vollständige Entschuldung der Kommunen durch Bund und Land sowie die konsequente Anwendung des Bestellerprinzips […]. Das Land Sachsen-Anhalt muss dazu eigene Investitionsprogramme auflegen, den Kommunalfinanzausgleich stärken, landeseigene Gesellschaften gezielt einsetzen und die Planungs- und Umsetzungskapazitäten in Verwaltung und Kommunen dauerhaft ausbauen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=19",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9429,
+          "instrument": 9325,
+          "beschreibung": "Finanzbeziehungen zwischen Bund, Land und Kommunen reformieren und den kommunalen Anteil an den Steuereinnahmen erhöhen.",
+          "ursachen_ids": [2404],
+          "zitat": "Dazu braucht es eine Reform der Finanzbeziehungen zwischen Bund, Land und Kommunen sowie eine Erhöhung des kommunalen Anteils an den Steuereinnahmen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9430,
+          "instrument": 9328,
+          "beschreibung": "Verwaltung der Kommunen stärken: landeseinheitliche Software, Bürokratieabbau und mehr Serviceorientierung des Landesverwaltungsamts, um lange Genehmigungsverfahren zu verkürzen.",
+          "ursachen_ids": [2404],
+          "zitat": "Personalmangel, veraltete IT und ineffiziente Zuständigkeiten führen zu langen Genehmigungsverfahren und Überlastung der Beschäftigten. Kommunen dürfen keine neuen Aufgaben ohne ausreichende Finanzierung erhalten. Wir fordern landeseinheitliche Softwarelösungen, den Abbau von Bürokratie sowie eine stärkere Serviceorientierung des Landesverwaltungsamtes gegenüber den Kommunen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9431,
+          "beschreibung": "Mittelzentren als Wohn-, Arbeits- und Versorgungsstandorte stärken (Wohnungsbau, Unternehmensansiedlung, bessere ÖPNV-Anbindung), um Abwanderung zu bremsen.",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Wohnungen, Arbeitsplätze und bessere Anbindung in Mittelzentren setzen an Gründen für den Wegzug junger Menschen an; das Paket ist breit, teuer und langfristig, die Wirkung solcher Ankerstrategien ist wenig untersucht.",
+          "zitat": "Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden – durch gezielte Förderung des Wohnungsbaus, die Ansiedlung von Unternehmen und durch deutlich bessere ÖPNV-Anbindungen an die Oberzentren. So können Abwanderung gebremst und regionale Wirtschaftskreisläufe gestärkt werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=29",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9432,
+          "instrument": 9331,
+          "beschreibung": "Zwei Lehramts-Studienstandorte mit mehr Studienplätzen sichern und allen Absolventen ein Stellenangebot im Schuldienst machen, um Abwanderung zu verhindern.",
+          "ursachen_ids": [2401],
+          "zitat": "Wir wollen die Stärken beider Modelle zusammenführen: mehr Studienplätze schaffen, den Praxisbezug landesweit ausbauen und zugleich eine exzellente wissenschaftliche Qualifizierung zukünftiger Lehrkräfte sichern. Zwei leistungsfähige Ausbildungsstandorte sind für ein Flächenland wie Sachsen-Anhalt notwendig und sinnvoll, um regionale Bedarfe zu decken, Abwanderung zu verhindern und die Versorgung insbesondere des ländlichen Raums sicherzustellen.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [2401, 2402, 2403, 2404],
+      "massnahmen": [
+        {
+          "id": 9433,
+          "beschreibung": "Anreize für Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, damit Fachkräfte in der Region bleiben",
+          "ursachen_ids": [2401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Homeoffice kann Beschäftigten das Wohnen auf dem Land trotz Stelle in der Stadt ermöglichen; Anreize für Unternehmen sind teuer und ungezielt, und Ausbildung und Berufseinstieg finden selten im Homeoffice statt.",
+          "zitat": "Homeoffice im ländlichen Raum:   Eine Anreizstruktur fördert Unternehmen, Homeoffice-Stellen im ländlichen Raum anzubieten, um Fachkräfte in der Region zu halten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=20",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9434,
+          "beschreibung": "Gewerbesteuer ersetzen und Konzessionsabgabenverordnung reformieren, um die Finanzen der Kommunen zu stabilisieren",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein konjunkturunabhängiger Ersatz könnte die Einnahmen stetiger machen; aufkommensneutral bringt er kein zusätzliches Geld, und der Ersatz der Gewerbesteuer erfordert eine Grundgesetzänderung.",
+          "zitat": "Moderne Kommunalfinanzierung:   Die Gewerbesteuer wird aufkommensneutral und konjunkturunabhängig ersetzt und die Konzessionsabgabenverordnung grundlegend reformiert, um die Kommunalfinanzen auf robuste Füße zu stellen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=15",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9435,
+          "beschreibung": "Demografiefaktor im bundesstaatlichen Finanzausgleich für mehr Verteilungsgerechtigkeit",
+          "ursachen_ids": [2404],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Demografiefaktor könnte schrumpfenden Ländern und damit indirekt ihren Kommunen mehr Mittel bringen; er braucht eine Einigung aller Länder im Finanzausgleich, und die Wirkung auf die Kommunen ist unsicher.",
+          "zitat": "Eine stärkere Steuerautonomie für die Länder schafft Anreize für eine nachhaltige Finanzpolitik und ein Demografiefaktor im bundesstaatlichen Finanzausgleich sorgt für mehr Verteilungsgerechtigkeit.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=16",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9436,
+          "beschreibung": "Strukturschwache Regionen sollen lokale Konzepte zur Ansiedlung von Menschen und Gewerbe sowie die Vernetzung von Kommunen fördern können",
+          "ursachen_ids": [2402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Lokale Ansiedlungskonzepte können Zuzug von Menschen und Betrieben unterstützen; die Zusage nennt weder Mittel noch Instrument, die Wirkung ist kaum untersucht.",
+          "zitat": "Regionale Wirtschaftsförderung:   Strukturschwache Regionen profitieren von lokal entwickelten Konzepten zur Ansiedlung von Menschen und Gewerbe sowie von der Vernetzung von Kommunen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=54",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9437,
+          "beschreibung": "Verbundausbildungen und Förderkampagnen helfen Kleinbetrieben und Start-ups, Ausbildungsplätze anzubieten",
+          "ursachen_ids": [2403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verbundausbildung ermöglicht kleinen Betrieben Ausbildung, die sie allein nicht stemmen; als Förderkampagne bleibt der Umfang begrenzt, die Passung von Angebot und Wünschen ändert sich kaum.",
+          "zitat": "Unterstützung kleiner Betriebe:   Kleinbetriebe und Start-ups profitieren von Verbundausbildungen und Förderkampagnen, um Ausbildungsplätze anzubieten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=116",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9438,
+          "beschreibung": "Digitale Plattformen vernetzen Bildungsträger, Beratungsstellen und Unternehmen für bedarfsgerechte Ausbildungsplanung",
+          "ursachen_ids": [2403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Vernetzung von Trägern, Beratung und Betrieben kann die Ausbildungsplanung verbessern und ist leicht umsetzbar; regionale Passungsprobleme durch Entfernung und Berufswünsche löst eine Plattform allein kaum.",
+          "zitat": "Plattformen für Vernetzung:   Bildungsträger, Beratungsstellen und Unternehmen werden über digitale Plattformen noch besser vernetzt, um bedarfsgerechte Ausbildungsplanung zu fördern.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=116",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 50) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-08",
+        "treffer": 7,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9439,
+          "instrument": 9322,
+          "beschreibung": "Land gleicht neue gesetzliche Pflichten der Kommunen vollständig und dauerhaft finanziell aus.",
+          "ursachen_ids": [2404],
+          "zitat": "Unsere Lösung – Konkrete Maßnahmen: ● Finanzielle Verantwortung regeln Vollständiger und dauerhafter finanzieller Ausgleich von neuen gesetzlichen Verpflichtungen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9440,
+          "instrument": 9329,
+          "beschreibung": "Kommunen werden bei der Erstellung von Flächennutzungsplänen unterstützt.",
+          "ursachen_ids": [2404],
+          "zitat": "Flächennutzungspläne Unterstützung der Kommunen bei der Erstellung von Flächennutzungsplänen, insbesondere bei der situativen Abwägung relevanter Faktoren.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=24",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2401, 2402, 2404],
+      "massnahmen": [
+        {
+          "id": 9441,
+          "instrument": 9334,
+          "beschreibung": "Landesweite Rückkehr- und Willkommensprogramme für ehemalige Einwohner*innen, um Abwanderung junger Menschen umzukehren.",
+          "ursachen_ids": [2401],
+          "zitat": "Landesweite Rückkehr- und Willkommensprogramme für ehemalige Einwohner*innen („Come back“-Initiativen).",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=136",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9442,
+          "instrument": 9331,
+          "beschreibung": "Ausbildungs- und Studienangebote im Land ausbauen und eng mit der regionalen Wirtschaft verzahnen.",
+          "ursachen_ids": [2401],
+          "zitat": "Ausbau attraktiver Ausbildungs- und Studienangebote mit enger Verzahnung zur regionalen Wirtschaft.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=136",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9443,
+          "instrument": 9335,
+          "beschreibung": "Eigenheimförderung für Familien und Rückkehrer sowie günstige kommunale Baugrundstücke in ländlichen Regionen.",
+          "ursachen_ids": [2401],
+          "zitat": "Bezahlbares Wohnen sichern durch günstige kommunale Baugrundstücke und gezielte Eigenheimförderung für Familien und Rückkehrer",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=84",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9444,
+          "instrument": 9322,
+          "beschreibung": "Konnexitätsprinzip konsequent umsetzen: Aufgaben, die das Land überträgt, werden finanziert.",
+          "ursachen_ids": [2404],
+          "zitat": "Konsequente Umsetzung des Konnexitätsprinzips in der Landesverfassung Art. 87 („Wer bestellt, der bezahlt“).",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=119",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Kommunalen Finanzausgleich in neuem Gesetz ab 2027 nach Gutachten umsetzen, mit Mindestausstattung und Ausgleich struktureller Finanzschwäche", "ursachen_ids": [2404], "zitat": "Ab 2027 setzen wir die Ergebnisse des durch uns initiierten Gutachtens zur gerechten Verteilung der Mittel auf die kommunalen Ebenen in einem neuen Finanzausgleichsgesetz um. Dabei werden wir dem Anspruch einer finanziellen Mindestausstattung genügen und strukturelle Finanzschwäche im Sinne gleichwertiger Lebensverhältnisse ausgleichen.", "seite": 79 },
+    { "beschreibung": "Unterstützungsfonds für kleine Kommunen in Haushaltskonsolidierung für kleinere Investitionen", "ursachen_ids": [2404], "zitat": "Für kleinere Kommunen in Haushaltskonsolidierung soll über einen Unterstützungsfonds die Möglichkeit geschaffen werden, finanzielle Unterstützung für kleinere Investitionsmaßnahmen zu erhalten.", "seite": 10 },
+    { "beschreibung": "Genehmigungs- und Vergabeverfahren vollständig digitalisieren, Genehmigungsfiktion einführen, Stichproben statt Nachweisprüfung", "ursachen_ids": [2404], "zitat": "Wir digitalisieren Genehmigungs- und Vergabeverfahren vollständig, führen eine Genehmigungsfiktion ein und setzen bei Kontrollen stärker auf Stichproben statt auf Verwendungsnachweisprüfung.", "seite": 55 },
+    { "beschreibung": "Gemeinsame digitale Basisdienste und interkommunale Lösungen für Kommunen, um Vergabe zu beschleunigen und Verwaltungen zu entlasten", "ursachen_ids": [2404], "zitat": "Durch interkommunale Lösungen und digitale Plattformen beschleunigen wir Vergabeverfahren und schaffen praxisnahe […] Entlastung. Standardisierung spart Kosten, verbessert den Service und entlastet die Verwaltungen vor Ort.", "seite": 55 },
+    { "beschreibung": "Förderverfahren für Kommunen vereinfachen, mehr Pauschalzahlungen und Experimentierklauseln, interkommunale Zusammenarbeit fördern", "ursachen_ids": [2404], "zitat": "Dazu gehört eine Vereinfachung von Förderverfahren, die Stärkung der Mittelverwendung durch mehr Pauschalzahlungen und die Schaffung von mehr Experimentierklauseln bei Landesgesetzen, die auf kommunaler Ebene umgesetzt werden müssen.", "seite": 10 },
+    { "beschreibung": "Paare mit unerfülltem Kinderwunsch weiter finanziell unterstützen", "ursachen_ids": [2402], "zitat": "Auch Paare mit unerfülltem Kinderwunsch wollen wir weiter finanziell unterstützen.", "seite": 31 },
+    { "beschreibung": "Hochschulen bauen Bindungsinstrumente für internationale Studierende auf und erleichtern den Übergang in den regionalen Arbeitsmarkt", "ursachen_ids": [], "ursachen_offen": [2401], "zitat": "Hierfür werden durch die Hochschulen strukturierte Bindungs- und Integrationsinstrumente etabliert und weiterentwickelt, um bereits während des Studiums berufliche, soziale und räumliche Bindungen aufzubauen.", "seite": 76 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2403, "seiten": [76], "grund": "Nur allgemeine Aussage zu durchlässigen Bildungswegen, keine Ausbildungsplatz-Zusage mit Regionsbezug." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (S. 2), S. 3 Vorwort, S. 10, 31, 54-56 (Staat effizient), 65-67 (Wohnraum, Regionen), 75-80 (Wissenschaft, Finanzpolitik, Kultur).
+Nicht erfasst: S. 78/79 "Strukturwandel als Chance": Mittel effizient einsetzen, ohne konkrete Zusage zu Abwanderung (und eigenes Thema). S. 31 Grunderwerbsteuerbefreiung für Eigenheim auf dem Land: Wohnen, kein klarer Bezug zu den Ursachen. S. 55 Planungsbeschleunigung/Verbandsklagerecht: Infrastruktur, nicht Kommunen. S. 13/14/41/62 Genehmigungsverfahren: Wirtschaft/Landwirtschaft/Bund. S. 54 "Kommunen entlasten" nur Stichwort. S. 71 Sportentwicklungsplanung: Sport. S. 86, 88, 89 Strukturförderung: Tourismus bzw. Bund/EU, keine Kommunalfinanz-Zusage. S. 61 Fundstelle zum demografischen Wandel: Lagebeschreibung.
+Bei 2401 keine direkte Rückkehrförderung für junge Menschen gefunden (Grenzfall siehe ursachen_offen).

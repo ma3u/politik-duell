@@ -1,0 +1,17 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Bestehende Meinungsstraftatbestände entschlacken, statt neue Gesetze gegen sogenannte Hasskriminalität zu schaffen.", "ursachen_ids": [], "ursachen_offen": [2501], "zitat": "Wir werden uns diesem Problem mit allen Möglichkeiten einer Landesregierung widmen und uns für eine Entschlackung der bestehenden Meinungsstraftatbestände einsetzen.", "seite": 123 },
+    { "beschreibung": "Initiativen und Kampagnen gegen undurchsichtige Löschregeln und algorithmische Meinungskontrolle der Plattformen starten.", "ursachen_ids": [], "ursachen_offen": [2503], "zitat": "Als Landesregierung werden wir Initiativen und Kampagnen gegen undurchsichtige Löschregeln und gegen die algorithmische Meinungskontrolle auf den Weg bringen.", "seite": 223 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [32, 89, 108, 120], "grund": "Fundstellen betreffen Passprüfung, Schüler-Straftaten, Ermittlungen und Überstellung; kein Bezug zu Hass im Netz, keine Meldewege oder Hilfe für Betroffene." }
+  ]
+}
+
+Protokoll
+Gelesen: Fundstellen S. 32, 89, 108, 120, 123, 222, 223; Kapitel Justizwesen (S. 122-123), Medien (S. 219-224).
+Nicht erfasst: S. 222 (NetzDG rückabwickeln, DSA überprüfen) betrifft Pflichten und Aufsicht für Plattformen (Ursache 2502), für das Land nicht zulässig. S. 223 (Rückgängigmachen des Gesetzes gegen Rechtsextremismus und Hasskriminalität) ist Bundesrecht, nur Hinwirken, Strafverfolgung/2502. S. 124/S. 3016-Stelle (Hausdurchsuchungen) nur Lagebeschreibung.
+Grenzfälle: S. 123 (Strafverfolgung ohne Nennung von Betroffenen oder Plattformen, Richtung Abbau) und S. 223 (Löschregeln/Algorithmen: Plattformgestaltung vs. Plattformpflichten) als ursachen_offen.
+Keine Zusagen zu Meldewegen, Beratung, Prävention, Medienkompetenz. Seiten ohne Text spielten keine Rolle.

@@ -1,0 +1,14 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Azubi-Werk berät und vernetzt Auszubildende und schafft bezahlbaren Wohnraum für sie.", "ursachen_ids": [], "ursachen_offen": [2401], "zitat": "Deshalb schaffen wir ein Azubi-Werk nach dem Vorbild anderer großer Städte. Es soll die Auszubildenden in Berlin beraten, vernetzen und unterstützen und vor allem bezahlbaren Wohnraum für sie schaffen.", "seite": 9 },
+    { "beschreibung": "Vorhandene Studienplätze an den Hochschulen werden erhalten statt gekürzt.", "ursachen_ids": [], "ursachen_offen": [2401], "zitat": "Statt Studienplätze zu kürzen, erhalten wir die vorhandenen Plätze an unseren Hochschulen, gewinnen internationale Spitzenforscher*innen und schaffen weitere sichtbare nationale Leuchttürme.", "seite": 43 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2402, "seiten": [7, 8, 35, 37, 52], "grund": "Treffer sind Zuzug-Erwähnungen im Wohnungsbau, Fachkräfte, Kita-Finanzierung und Rückkehrhilfen für Geflüchtete; keine Zusage zu Geburten oder Alterung ländlicher Regionen." },
+    { "ursache": 2404, "seiten": [60, 63], "grund": "Berlin ist Stadtstaat; Haushalts- und Bezirksfinanzierung betrifft nicht die Finanzkraft strukturschwacher Kommunen, kein Finanzausgleich oder Altschuldenzusage." }
+  ]
+}
+
+Protokoll: Inhaltsverzeichnis, Kapitel Arbeit/Ausbildung (S. 8-9), Hochschule (S. 43-44), Haushalt (S. 63), Fundstellen S. 7, 8, 35, 37, 52 gelesen. Berlin-Programm mit Stadtstaat-Perspektive, kein Bezug zu ländlichen Regionen. Grenzfälle: Azubi-Wohnraum und Studienplatzerhalt sind Zuzug/Standortmaßnahmen der Stadt, daher ursachen_offen. Nicht erfasst: S. 9 Ausbildungsplatzumlage, Azubi-Ticket (2403 ist keine Landesursache); S. 9 Berlin-Brandenburg-Dialog (Wirtschaftsstandort, eigenes Thema).

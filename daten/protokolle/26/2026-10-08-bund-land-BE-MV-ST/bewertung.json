@@ -1,0 +1,200 @@
+{
+  "blind_pruefsumme": "879ae513f767c3055c21f54d42b26e077c49d28fac8fecadfcd2171a872bea94",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Beschäftigungspflicht durchsetzen: Ausgleichsabgabe erhöhen oder staffeln, Schlupflöcher schließen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine spürbare Abgabe erhöht die Beschäftigung an der Quotenschwelle (Österreich, IAB); Übersichtsstudien finden aber gemischte Effekte, Betriebe weichen teils unter Schwellen aus. Der Bund regelt das im SGB IX selbst.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://econpapers.repec.org/RePEc:jku:nrnwps:2009_11"
+    },
+    {
+      "kennung": "I2",
+      "name": "Barrieren in Bahn, Bus und an Haltestellen durch mehr Investitionen schneller abbauen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Investitionen beseitigen Barrieren, wo sie verbaut werden; laut Bundesrechnungshof lag die Verzögerung aber vor allem an der Steuerung, Fördergeld blieb ungenutzt. Ohne bessere Steuerung wenig Beschleunigung; der ÖPNV liegt zudem bei Ländern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://bundesrechnungshof.de/berichte/bmdv-verschleppt-investitionen-in-bahnhoefe"
+    },
+    {
+      "kennung": "I3",
+      "name": "Werkstätten für behinderte Menschen zu Inklusionsbetrieben mit Mindestlohn umbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Nach Schließung der Werkstätten fanden in Vermont viele reguläre Arbeit, in Maine sanken Stunden und Einkommen. Mindestlohn für rund 300.000 Beschäftigte und tragfähige Inklusionsbetriebe sind finanziell ungeklärt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.publicsource.org/vermont-closed-workshops-for-people-with-disabilities-what-happened-next/"
+    },
+    {
+      "kennung": "I4",
+      "name": "Vermittlung und Förderung für Arbeit auf dem allgemeinen Arbeitsmarkt stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vermittlung kann Menschen mit Behinderung und Betriebe mit geeigneten Tätigkeiten zusammenbringen; Förderungen wie Lohnzuschüsse wirken laut Übersichtsstudie aber uneinheitlich, die Zusage bleibt unbestimmt. Bund und Arbeitsagentur sind zuständig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pureportal.strath.ac.uk/en/publications/employer-focused-interventions-targeting-disability-employment-a-/"
+    },
+    {
+      "kennung": "I5",
+      "name": "Finanzielle Anreize für Arbeitgeber, barrierefreie und zusätzliche Arbeitsplätze zu schaffen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt an Ausstattungskosten an, die ein Viertel der Betriebe als Hürde nennt; Betriebe wünschen vor allem Zuschüsse. Studien zu Einstellungsanreizen sind gemischt (Mitnahmeeffekte); Steuergutschriften brauchen den Bundesrat und Gegenfinanzierung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pureportal.strath.ac.uk/en/publications/employer-focused-interventions-targeting-disability-employment-a-/"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Die Senkung der Quote von 6 auf 5 % (2000) veränderte die Beschäftigungschancen laut IAB-Studie nicht; Abgaben wirken eher an Schwellen. Eine Pflicht ohne Abgabe als Ausgleich wirft Fragen der Berufsfreiheit auf, wenn geeignete Bewerbungen fehlen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://iab.de/publication/?id=591316"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "instrument": "I1",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I2",
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I2",
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I2",
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Inklusionsbetriebe schaffen Arbeitsplätze mit passenden Tätigkeiten; die BMAS-Evaluation bewertet die Beschäftigung dort als nachhaltig. Die Zahl der Plätze ist begrenzt, ohne Betrag bleibt der Umfang der Förderung offen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-578-foerderung-inklusionsbetriebe.html"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": "I5",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I3",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I4",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M11",
+      "ursachen": []
+    },
+    {
+      "kennung": "M12",
+      "ursachen": []
+    },
+    {
+      "kennung": "M13",
+      "instrument": "I4",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M14",
+      "instrument": "I2",
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M15",
+      "instrument": "I5",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I1",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M17",
+      "instrument": "I2",
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M18",
+      "instrument": "I3",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M19",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Das Ende von Ausnahmen schafft verbindlichen Druck, Haltestellen und Fahrzeuge barrierefrei zu machen; die Wirkung ist kaum untersucht. Umsetzung liegt bei Ländern und Kommunen, die Finanzierung ist offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M20",
+      "instrument": "I4",
+      "ursachen": [
+        2602
+      ]
+    }
+  ]
+}

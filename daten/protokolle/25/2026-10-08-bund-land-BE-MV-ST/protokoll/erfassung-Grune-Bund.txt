@@ -1,0 +1,16 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Strafbare Hassinhalte konsequent löschen, Accounts schneller sperren, per digitalem Gewaltschutzgesetz und mit mehr Nutzerrechten.", "ursachen_ids": [2502], "zitat": "Diese Inhalte […] müssen konsequent gelöscht und entsprechende Accounts schneller gesperrt werden. Dafür sorgen wir mit einem digitalen Gewaltschutzgesetz und stärken die Rechte der Nutzer*innen.", "seite": 114 },
+    { "beschreibung": "Konsequente Durchsetzung des Digitale-Dienste-Gesetzes (DSA) gegenüber Plattformen gemeinsam mit der EU.", "ursachen_ids": [2502], "zitat": "In Kooperation mit der EU wirken wir auf eine konsequente Rechtsdurchsetzung des DSA hin.", "seite": 115 },
+    { "beschreibung": "Medienanstalten der Länder mit mehr Ressourcen für Löschung und Verfolgung von Hasskriminalität im Netz ausstatten.", "ursachen_ids": [2502], "zitat": "Die Medienanstalten der Bundesländer müssen weitere Ressourcen erhalten, um effizient bei der Löschung und Verfolgung von Hasskriminalität im Internet und in den sozialen Medien zusammenzuarbeiten.", "seite": 115 },
+    { "beschreibung": "Strafverfolgung bei Hasskriminalität im digitalen Raum stärken, auch bei anonymen Accounts (Login-Falle, Accountsperren).", "ursachen_ids": [2501], "ursachen_offen": [2502], "zitat": "Wir stärken die effektiven Möglichkeiten der deutschen Strafverfolgungsbehörden im digitalen Raum, um gegen Organisierte Kriminalität und Hasskriminalität vorgehen zu können und bei anonymisierten Accounts, die derzeit strafrechtlich kaum verfolgt werden können, Strafverfolgung mit der Login-Falle und durch Gerichte angeordnete Accountsperren zu ermöglichen.", "seite": 140 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [85, 86, 116, 118, 121, 133], "grund": "Beratungsstellen und Hilfen betreffen Kinder, Diskriminierung, Partnerschaftsgewalt; keine Hilfe/Meldewege für Betroffene von Online-Hass. Polizeistatistik und Queer-Hasskriminalität nicht netzbezogen." },
+    { "ursache": 2503, "seiten": [77, 110, 115, 126], "grund": "Medienkompetenz und Algorithmen allgemein bzw. gegen Desinformation, ohne Bezug zu Hass/Anfeindung." }
+  ]
+}
+
+Protokoll: Seiten 85, 86, 110, 113-116, 118, 121, 126, 133, 140 gelesen bzw. geprüft. Nicht erfasst: S. 115 Strafverfolgung von Straftaten im Netz (allgemein, Quick-Freeze) ohne Hassbezug; S. 113/114 Staatsanwaltschaften (Umweltkriminalität/EUStA).

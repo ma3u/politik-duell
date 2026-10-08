@@ -1,0 +1,1100 @@
+{
+  "blind_pruefsumme": "8f554335e235963ab3a4564662536d0e6e15372e0ed8c48ebfd8b1e93032710f",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Kommunale Finanzausstattung über den Finanzausgleich erhöhen und Mindestausstattung sichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr allgemeine Zuweisungen erhöhen nachweislich die Ausgaben der Kommunen (Flypaper-Effekt) und setzen direkt an der Finanzlage an; dagegen sprechen knappe Landeshaushalte und dass mehr Geld allein Personal- und Verfahrensengpässe nicht löst.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.mohrsiebeck.com/artikel/intergovernmental-transfers-local-fiscal-policy-and-the-flypaper-effect-evidence-from-a-german-state-101628001522116x14462054864882"
+    },
+    {
+      "kennung": "I2",
+      "name": "Kommunalfinanzierung verlässlich und aufgabengerecht ausrichten, ohne zusätzliche Mittel zu nennen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine aufgabengerechtere, transparentere Verteilung kann Belastungen besser abbilden und ist rechtlich einfach; ohne zusätzliche Mittel verschiebt sie aber vor allem Geld zwischen Kommunen und verbessert die Gesamtlage kaum.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I3",
+      "name": "Finanzierungssystem und eigene Einnahmen der Bezirke eines Stadtstaats neu ordnen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr finanzielle Eigenständigkeit kann die Handlungsfähigkeit der Bezirke stärken; die Wirkung hängt von der Gesamtsumme ab, und eigene Einnahmen oder Klagerechte erfordern aufwendige Verfassungs- und Gesetzesänderungen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Konnexität: vom Land übertragene Aufgaben vollständig gegenfinanzieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert neue ungedeckte Lasten und ist in den meisten Landesverfassungen schon angelegt; bestehende Defizite und vom Bund verursachte Sozialausgaben bleiben unberührt, die Wirkung ist empirisch kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Landesprogramm zur Entschuldung von Kommunen (Altschulden, Kassenkredite) (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Länderprogramme haben Kassenkredite gestoppt und Haushalte ausgeglichen; zugleich kürzten Teilnehmerkommunen Investitionen und erhöhten Steuern, und die Programme binden hohe Landesmittel über viele Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html"
+    },
+    {
+      "kennung": "I6",
+      "name": "Altschuldenlösung von Bund und Ländern für überschuldete Kommunen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entschuldung schafft Spielraum, Länderprogramme zeigen gestoppte Kassenkredite, aber auch Investitionskürzungen bei Auflagen; der Bund kann sich finanziell beteiligen, braucht aber die Länder und ggf. eine Verfassungsänderung.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html"
+    },
+    {
+      "kennung": "I7",
+      "name": "Höheren Anteil der Kommunen an Einkommen- und Umsatzsteuer auf Bundesebene anstreben (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ein höherer Steueranteil stärkt die Einnahmebasis dauerhaft; das Land kann das nur über Bundesrat und Bundesgesetz erreichen, und die Verteilung begünstigt eher steuerstarke Kommunen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Förderprogramme für Kommunen in pauschale Zuweisungen überführen und Förderverfahren vereinfachen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kommunen nennen aufwendige Anträge, Nachweise und Personalmangel als Investitionshemmnis; Pauschalen und Verzicht auf Eigenanteile helfen gerade schwachen Kommunen. Dagegen: kein zusätzliches Geld, weniger Steuerung, Wirkung kaum evaluiert.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_855680.html"
+    },
+    {
+      "kennung": "I9",
+      "name": "Förderprogramme des Bundes für Kommunen bündeln und Antragsverfahren vereinfachen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vereinfachte Anträge entlasten Verwaltungen, die über Förderbürokratie klagen; die Finanzlage selbst ändert sich dadurch kaum, und die Wirkung solcher Bündelungen ist wenig untersucht.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_855680.html"
+    },
+    {
+      "kennung": "I10",
+      "name": "Planungs-, Genehmigungs- und Vergabeverfahren beschleunigen und digitalisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Fristen, Digitalisierung und einfachere Vergabe können Verwaltungen entlasten; bisherige Beschleunigungsgesetze brachten nur begrenzte Erfolge, weil lange Verfahren oft am materiellen Recht und fehlendem Personal liegen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://trid.trb.org/View/2427394"
+    },
+    {
+      "kennung": "I11",
+      "name": "Fachliche Unterstützung der Kommunen durch das Land bei Bauprojekten und Bauleitplanung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vorlagen und Beratung können kleine, personalschwache Bauverwaltungen entlasten und sind leicht umsetzbar; sie ersetzen weder Personal noch Geld, die Wirkung ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I12",
+      "name": "Interkommunale Zusammenarbeit erleichtern und fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kooperation gilt als Mittel, Personal und Kosten zu bündeln, und ist weit verbreitet; belastbare Studien zu Einsparungen fehlen für Deutschland weitgehend, die Finanzlage ändert sich nur am Rand.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://ideas.repec.org/a/zbw/iwhwiw/iwh-1-16-4.html"
+    },
+    {
+      "kennung": "I13",
+      "name": "Hochschul- und Studienangebote in den Regionen erhalten und ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Neue Hochschulen erhöhen nachweislich Studierendenzahl und Anteil Hochqualifizierter in der Region; in wenig dynamischen Regionen wandern Absolventen aber oft ab, und Ausbau kostet viel und dauert Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.zew.de/PU83481"
+    },
+    {
+      "kennung": "I14",
+      "name": "Absolventen durch Karriereberatung und Vernetzung mit regionalen Arbeitgebern binden (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kontakte zu regionalen Arbeitgebern während des Studiums können den Verbleib erleichtern und sind günstig umsetzbar; ohne passende Stellen bleibt die Wirkung begrenzt und ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I15",
+      "name": "Prämien, Stipendien oder Darlehenserlass gegen Verbleib im Land nach Ausbildung oder Studium (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bindungsprämien sind einfach einzuführen; Studien zu Verpflichtungsprogrammen finden nur schwache Belege für dauerhaften Verbleib, viele brechen ab oder ziehen nach der Bindungsfrist weg, Mitnahmeeffekte sind wahrscheinlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://rrh.org.au/journal/article/2459"
+    },
+    {
+      "kennung": "I16",
+      "name": "Rückkehr- und Willkommensagenturen für Abgewanderte und Zuziehende (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Rückkehrinitiativen in ländlichen Regionen erhöhen nachweislich die Rückwanderung, besonders bei mittleren und höheren Einkommen; sie wirken auf bereits Abgewanderte und ersetzen fehlende Stellen nicht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ideas.repec.org/a/oup/jecgeo/v24y2024i5p759-784..html"
+    },
+    {
+      "kennung": "I17",
+      "name": "Eigenheimförderung und zinsgünstige Kredite für Familien, die in der Region bleiben oder zurückkehren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Wohneigentumsförderung wirkt in ländlichen Regionen als Bleibeanreiz; Evaluationen ähnlicher Zuschüsse zeigen aber erhebliche Mitnahmeeffekte und Vorteile für einkommensstarke Haushalte, die Kosten sind hoch.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.593685.de/publikationen/diw_aktuell/2018_0014/baukindergeld__einkommensstarke_haushalte_profitieren_in_besonderem_masse.html"
+    },
+    {
+      "kennung": "I18",
+      "name": "Familienbezogene Geldleistungen des Landes zur Förderung von Geburten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Geldleistungen bei Geburt erhöhen die Geburtenzahl in Studien messbar, aber nur um wenige Prozent; an Alterung und Abwanderung ändern sie wenig, und dauerhafte Landesleistungen sind teuer.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit"
+    },
+    {
+      "kennung": "I19",
+      "name": "Steuerliche Entlastung oder Kredite mit Teilerlass für Familien zur Geburtenförderung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Finanzielle Anreize für Kinder zeigen in Studien einen beständigen, aber kleinen Effekt auf Geburten; Steuerreformen dieser Art sind teuer und begünstigen oft höhere Einkommen, Alterung bleibt weitgehend unberührt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit"
+    },
+    {
+      "kennung": "I20",
+      "name": "Finanzielle Unterstützung von Kinderwunschbehandlungen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zuschüsse erhöhen die Nutzung der Reproduktionsmedizin und ermöglichen einzelnen Paaren Kinder; Studien finden aber kaum Effekte auf die Geburtenrate insgesamt, weil sich Geburten eher ins höhere Alter verschieben.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ifstudies.org/blog/mandating-insurance-coverage-for-ivf-will-not-boost-fertility"
+    },
+    {
+      "kennung": "I21",
+      "name": "Umlagefinanzierter Ausbildungsfonds, in den nicht ausbildende Betriebe einzahlen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Die Pflege-Ausbildungsumlage erhöhte die Zahl der Auszubildenden; eine Studie aus Québec fand dagegen keine Wirkung auf das Ausbildungsniveau. Mehr Plätze lösen zudem nicht die Passungsprobleme bei unbesetzten Stellen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://dspace-test.bibb.de/items/035ea543-8cab-4e72-a7a6-b31107ba1a2d/full"
+    },
+    {
+      "kennung": "I22",
+      "name": "Berufsorientierung und Jugendberufsagenturen stärken und abstimmen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Junge Menschen mit durchgehendem Beratungskontakt münden weit häufiger in Ausbildung, was an der Passung ansetzt; der Zusammenhang ist aber nicht kausal belegt, und Jugendberufsagenturen hängen von Ländern und Kommunen ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bibb.de/dienst/nlt/de/newsletter/newsletter_bibbaktuell_2025_09.php"
+    },
+    {
+      "kennung": "I23",
+      "name": "Azubiwerk mit bezahlbarem Wohnraum und Beratung für Auszubildende (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bezahlbares Wohnen erleichtert den Weg zu einem Ausbildungsplatz fern vom Elternhaus; zum Halten junger Menschen in strukturschwachen Regionen tragen städtische Azubiwerke kaum bei, die Wirkung ist wenig untersucht.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M001",
+      "instrument": "I2",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M002",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Vernetzte Willkommensstrukturen können Zugewanderten das Ankommen und Bleiben erleichtern und sind günstig umsetzbar; sie schaffen selbst keinen Zuzug, die Wirkung auf die Bevölkerungsentwicklung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M003",
+      "instrument": "I3",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M004",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M005",
+      "instrument": "I9",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M006",
+      "instrument": "I15",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M007",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Gebündelte Standortwerbung ist günstig und schnell umsetzbar; ohne bessere Stellen- oder Ausbildungsangebote ändert Werbung an den Gründen für Abwanderung wenig, belastbare Wirkungsnachweise fehlen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M008",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Jugendkultur kann die Lebensqualität junger Menschen vor Ort erhöhen und ist mit überschaubaren Mitteln umsetzbar; die Hauptgründe für Abwanderung sind aber Ausbildung, Studium und Beruf, die Wirkung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M009",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M010",
+      "instrument": "I11",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M011",
+      "instrument": "I8",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M012",
+      "instrument": "I17",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M013",
+      "instrument": "I4",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M014",
+      "instrument": "I5",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M015",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M016",
+      "instrument": "I6",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M017",
+      "instrument": "I6",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M018",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Ein Demografiefaktor könnte schrumpfenden Ländern und damit indirekt ihren Kommunen mehr Mittel bringen; er braucht eine Einigung aller Länder im Finanzausgleich, und die Wirkung auf die Kommunen ist unsicher.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M019",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Ein Zuschlag mit Hebesatzrecht könnte kommunale Einnahmen stetiger machen; die Umstellung ist nur über Bund und Grundgesetzänderung möglich und bringt ohne höheren Umsatzsteueranteil kaum mehr Geld.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M020",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M021",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M022",
+      "instrument": "I18",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M023",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M024",
+      "instrument": "I3",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M025",
+      "instrument": "I23",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M026",
+      "instrument": "I6",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M027",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M028",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M029",
+      "instrument": "I8",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M030",
+      "instrument": "I23",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M031",
+      "instrument": "I2",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M032",
+      "instrument": "I21",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M033",
+      "instrument": "I16",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M034",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein Rechtsanspruch auf einen Ausbildungsplatz schließt Lücken dort, wo Betriebe fehlen; außerbetriebliche Plätze sind teuer, führen nicht immer in Beschäftigung und lösen unbesetzte Stellen nicht.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M035",
+      "instrument": "I18",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M036",
+      "instrument": "I4",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M037",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Wohnungen, Arbeitsplätze und bessere Anbindung in Mittelzentren setzen an Gründen für den Wegzug junger Menschen an; das Paket ist breit, teuer und langfristig, die Wirkung solcher Ankerstrategien ist wenig untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M038",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Bessere Vernetzung von Trägern, Beratung und Betrieben kann die Ausbildungsplanung verbessern und ist leicht umsetzbar; regionale Passungsprobleme durch Entfernung und Berufswünsche löst eine Plattform allein kaum.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M039",
+      "instrument": "I7",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M040",
+      "instrument": "I19",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M041",
+      "instrument": "I14",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M042",
+      "instrument": "I2",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M043",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Homeoffice kann Beschäftigten das Wohnen auf dem Land trotz Stelle in der Stadt ermöglichen; Anreize für Unternehmen sind teuer und ungezielt, und Ausbildung und Berufseinstieg finden selten im Homeoffice statt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M044",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Volle Kostenübernahme durch den Bund würde Kommunen entlasten; das Land kann sie nur fordern, umsetzbar ist sie nur über Bundesgesetze und das Grundgesetz.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M045",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M046",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M047",
+      "instrument": "I21",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M048",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Öffentliche Stellen ziehen private Beschäftigung nach sich (etwa 55 private je 100 öffentliche Stellen beim Umzug nach Berlin); Verlagerungen betreffen aber nur wenige Stellen, dauern Jahre und kosten viel.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://openaccess.city.ac.uk/id/eprint/22234"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M049",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bezahlbares Wohnen, Internet und Coworking können Zuzug aus Ballungsräumen erleichtern; die Maßnahme bleibt allgemein, und wie viele Menschen dadurch tatsächlich zuziehen, ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M050",
+      "instrument": "I21",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M051",
+      "instrument": "I16",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M052",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein kleiner Fonds kann verhindern, dass Kommunen in Konsolidierung jede Investition streichen, ein bekanntes Problem solcher Programme; der Umfang ist gering, die Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M053",
+      "instrument": "I14",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M054",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ungebundene Mittel erhöhen nachweislich die Ausgaben der Kommunen und mindern Förderbürokratie; der Bund kann Kommunen aber nur auf Umwegen (etwa Umsatzsteueranteil) direkt finanzieren, die Höhe ist offen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.mohrsiebeck.com/artikel/intergovernmental-transfers-local-fiscal-policy-and-the-flypaper-effect-evidence-from-a-german-state-101628001522116x14462054864882"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M055",
+      "instrument": "I16",
+      "ursachen": [
+        2401,
+        2402
+      ]
+    },
+    {
+      "kennung": "M056",
+      "ursachen": []
+    },
+    {
+      "kennung": "M057",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Ein Schuldenschnitt schafft verschuldeten Kommunen Spielraum, Entschuldungsprogramme stoppten Kassenkredite, führten aber auch zu Investitionskürzungen; das Land kann ihn auf Bundesebene nur fordern.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M058",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Hohe Geldleistungen je Geburt erhöhen Geburten in Studien messbar, aber begrenzt; 20.000 Euro je Kind kosten jährlich zweistellige Milliardenbeträge, die Finanzierung der Rentenversicherung ist ungeklärt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit"
+      },
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M059",
+      "instrument": "I12",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M060",
+      "instrument": "I8",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M061",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein Führerschein erleichtert Auszubildenden auf dem Land den Weg zu Betrieb und Schule und ist günstig umsetzbar; ein Zuschuss ohne Verbleibsbezug hält kaum jemanden in der Region, Mitnahmeeffekte sind wahrscheinlich.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M062",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Finanzielle Entlastung von Familien wirkt in Studien nur schwach auf Geburten; ein Familiensplitting ist Bundessteuerrecht, das Land kann es nur über den Bundesrat anstoßen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://bse.eu/research/working-papers/effects-universal-child-benefit"
+      },
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M063",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verbundausbildung ermöglicht kleinen Betrieben Ausbildung, die sie allein nicht stemmen; als Förderkampagne bleibt der Umfang begrenzt, die Passung von Angebot und Wünschen ändert sich kaum.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M064",
+      "instrument": "I5",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M065",
+      "instrument": "I8",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M066",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Regionale Strukturpolitik kann Arbeitsplätze in schwächeren Regionen sichern, wie Evaluationen der Regionalförderung zeigen; die Zusage bleibt aber unbestimmt, ohne Instrument, Ziel oder Betrag.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M067",
+      "instrument": "I11",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M068",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M069",
+      "instrument": "I5",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M070",
+      "instrument": "I15",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M071",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M072",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M073",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Wohnheime erleichtern Auszubildenden den Umzug zu einem passenden Ausbildungsplatz und setzen an regionaler Passung an; der Bund fördert junges Wohnen bereits, die Wirkung auf die Besetzung von Stellen ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M074",
+      "instrument": "I8",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M075",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Die bestehende Ausbildungsgarantie mit außerbetrieblichen Plätzen fängt Jugendliche ohne Betrieb auf und ist gesetzlich verankert; außerbetriebliche Ausbildung führt nicht immer in Beschäftigung und löst unbesetzte Stellen nicht.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M076",
+      "instrument": "I7",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M077",
+      "instrument": "I22",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M078",
+      "instrument": "I17",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M079",
+      "instrument": "I18",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M080",
+      "instrument": "I8",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M081",
+      "instrument": "I20",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M082",
+      "instrument": "I20",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M083",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M084",
+      "instrument": "I19",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M085",
+      "ursachen": []
+    },
+    {
+      "kennung": "M086",
+      "instrument": "I23",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M087",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M088",
+      "instrument": "I9",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M089",
+      "instrument": "I13",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M090",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Mehr Wohnheimplätze auf dem Land erleichtern Auszubildenden den Weg zu entfernten Betrieben; eine Zahlungspflicht für Unternehmen wäre eine verfassungsrechtlich heikle Sonderabgabe und belastet kleine Betriebe.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M091",
+      "instrument": "I22",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M092",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M093",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Wenn der Bund neue Leistungen selbst finanziert, entstehen Ländern und Kommunen keine neuen Lasten; als Grundsatz ohne Gesetzesänderung ist das unverbindlich, bestehende Lücken bleiben.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M094",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Ein konjunkturunabhängiger Ersatz könnte die Einnahmen stetiger machen; aufkommensneutral bringt er kein zusätzliches Geld, und der Ersatz der Gewerbesteuer erfordert eine Grundgesetzänderung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M095",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Lokale Ansiedlungskonzepte können Zuzug von Menschen und Betrieben unterstützen; die Zusage nennt weder Mittel noch Instrument, die Wirkung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M096",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M097",
+      "instrument": "I12",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M098",
+      "instrument": "I14",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M099",
+      "instrument": "I7",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M100",
+      "instrument": "I20",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M101",
+      "instrument": "I22",
+      "ursachen": [
+        2403
+      ]
+    },
+    {
+      "kennung": "M102",
+      "instrument": "I15",
+      "ursachen": [
+        2401
+      ]
+    },
+    {
+      "kennung": "M103",
+      "instrument": "I6",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M104",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M105",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M106",
+      "instrument": "I4",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M107",
+      "instrument": "I18",
+      "ursachen": [
+        2402
+      ]
+    },
+    {
+      "kennung": "M108",
+      "instrument": "I10",
+      "ursachen": [
+        2404
+      ]
+    },
+    {
+      "kennung": "M109",
+      "instrument": "I1",
+      "ursachen": [
+        2404
+      ]
+    }
+  ]
+}

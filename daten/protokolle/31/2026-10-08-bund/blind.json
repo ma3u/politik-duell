@@ -1,0 +1,321 @@
+{
+  "pruefsumme": "83a72a7423de16841fc3cf59d0d01ff5eb7b08a80a2a613ab93a12d4f90eceae",
+  "thema": {
+    "id": 31,
+    "name": "Kosten von Studium und Ausbildung",
+    "ziel": "Studierende und Auszubildende können ihren Lebensunterhalt sichern und ihre Ausbildung abschließen, ohne finanziell überfordert zu werden."
+  },
+  "ursachen": [
+    {
+      "id": 3101,
+      "beschreibung": "Die vereinbarte Ausbildungsvergütung im ersten Jahr unterscheidet sich stark: 2023 im Handwerk durchschnittlich 816 Euro brutto, im öffentlichen Dienst 1.075 Euro (BIBB, 2025)",
+      "ebene": "bund"
+    },
+    {
+      "id": 3102,
+      "beschreibung": "Studierende finanzieren sich oft durch Erwerbsarbeit: 54,7 % mit und 63,6 % ohne BAföG waren 2021 erwerbstätig, 63,1 % bzw. 57,7 % nannten die Sicherung des Lebensunterhalts als Grund",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3101,
+        3102
+      ],
+      "text": "Zu 3101 gehören Ausbildungsvergütung, Mindestvergütung, Tarifbindung der Ausbildungsbetriebe und Unterstützung von Auszubildenden (Wohnen, Mobilität); zu 3102 BAföG (Höhe, Freibeträge, Rückzahlung), Studienfinanzierung, Nebenjobs und Wohnheimplätze für Studierende."
+    },
+    {
+      "nr": 2,
+      "text": "Studiengebühren sind eine eigene Haltung. Allgemeine Mieten gehören zu Miete, Ausbildungsplatzangebot zu Abwanderung aus strukturschwachen Regionen. Eine Maßnahme zählt hier nur, wenn das Zitat Studierende, Auszubildende, BAföG oder Ausbildung nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Azubi-Stipendien ausbauen.",
+      "zitat": "Zudem wollen wir analog zum Freiwilligen Sozialen Jahr (FSJ) ein berufliches Orientierungsjahr schaffen und SBB-Stipendien sowie Azubi-Stipendien ausbauen.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "de016498cba088fc"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Mittel für Studierenden- und Azubi-Wohnheime verstetigen und erhöhen, damit WG-Zimmer höchstens 400 Euro kosten",
+      "zitat": "Wir wollen sicherstellen, dass Studierende und Azubis für ein WG-Zimmer möglichst nicht mehr als 400 Euro zahlen. Dafür wollen wir die Mittel in den Ausbau von Studierenden- und Azubi- Wohnheimen verstetigen und erhöhen",
+      "ursachen_ids": [
+        3102,
+        3101
+      ],
+      "pruefsumme": "4be87328b30352fc"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Teilzeit-BAföG einführen, Anspruchsvoraussetzungen senken und Berechtigung erst nach der Auszahlung prüfen.",
+      "zitat": "Teilzeit-BAföG: Teilzeit-BAföG erleichtert die Bildungs[…]nanzierung in besonderen Lebensumständen.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "c87372091a32879b"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Studienkredit mit fairen Konditionen und festem Zinssatz absichern.",
+      "zitat": "Deshalb setzen wir uns für faire Konditionen ein und stellen einen festen Zinssatz sicher.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "3d532dff456f024e"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Kostenloses Nahverkehrsticket für Auszubildende.",
+      "zitat": "Für Schüler*innen, Azubis, Studierende und Senior*innen wollen wir ein sofortiges 0-Euro-Ticket.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "7ed1f89275771911"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Automatische, regelmäßige Erhöhung der BAföG-Wohnkostenpauschale gemäß Mietpreisentwicklung",
+      "zitat": "Ähnlich wollen wir auch für Menschen in Ausbildung eine regelmäßige und automatische Erhöhung der BAföG-Wohnkostenpauschale festschreiben.",
+      "ursachen_ids": [
+        3102,
+        3101
+      ],
+      "pruefsumme": "1f5523b1c1b97e3b"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "BAföG reformieren, sodass die Förderhöhe regelmäßig an die Lebenshaltungskosten angepasst wird",
+      "zitat": "Mit einer Reform des BAföG wollen wir dafür sorgen, dass die Höhe der Ausbildungsförderung regelmäßig an die steigenden […]",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "58240506ce37ca66"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "BAföG-Sätze an ortsabhängige Lebenshaltungskosten anpassen und unabhängig von der Ausbildungsart gewähren.",
+      "zitat": "Anpassung der BAföG-Sätze: Die Sätze werden an ortsabhängige Lebenshaltungskosten angepasst und unabhängig von der Ausbildungsart gewährt.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "2493c9012ceb3547"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "BAföG-Empfänger sollen mehr hinzuverdienen können.",
+      "zitat": "Wir bieten BAföG-Empfängern die Möglichkeit, mehr hinzuzuverdienen.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "45a2025a3d80f259"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Auszubildendenwerke nach Vorbild der Studierendenwerke fördern, mit Wohnheimen und Beratung für Auszubildende",
+      "zitat": "Wir fördern Auszubildendenwerke nach dem Vorbild der Studierendenwerke. Im Fokus stehen Auszubildendenwohnheime, Betreuung ausländischer Auszubildender, psychologische, soziale und rechtliche Beratung sowie kulturelle Angebote.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "753f56b1fbf41123"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "BAföG-Anspruch schrittweise ausweiten, elternunabhängiger machen und zum Vollzuschuss zurückkehren",
+      "zitat": "Daher sollen für uns schrittweise mehr Studierende einen Anspruch haben. Langfristig wollen wir das BAföG elternunabhängiger machen. Eine schrittweise Rückkehr zum Vollzuschuss streben wir an.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "d2e1e49924e7940f"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Ausbildungsvergütung soll für ein menschenwürdiges Leben reichen; der Staat schließt Lücken über Anreize mit Orientierung am Mindestlohn.",
+      "zitat": "Vergütung ohne Armutsrisiko: Die Ausbildungsvergütung reicht für ein menschenwürdiges Leben aus und der Staat schließt Lücken durch gezielte, leistungsorientierte Anreize, wie eine Orientierung am Mindestlohn, um Armut während der Ausbildung zu vermeiden.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "60c7e3e1f73b7e0a"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "BAföG soll auskömmlich sein und mit dem KfW-Studienkredit besser abgestimmt werden; Anträge sollen digital und schneller bearbeitet werden.",
+      "zitat": "Wir stimmen das BAföG und den KfW-Studienkredit besser aufeinander ab. Das BAföG muss auskömmlich sein.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "545b1b44e2f08656"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "BAföG zu einem elternunabhängigen Baukasten-System weiterentwickeln, damit die Studienwahl nicht vom Elternhaus abhängt.",
+      "zitat": "Die Wahl des Studiums darf nicht von den Voraussetzungen des Elternhauses abhängig sein. Daher wollen wir das BAföG zu einem elternunabhängigen Baukasten-System weiterentwickeln.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "72cccb4bf92db321"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Studierendenwerke ausreichend finanzieren, damit Semesterbeiträge, Mensapreise und Wohnkosten sinken.",
+      "zitat": "Die Studierendenwerke müssen ausreichend finanziert werden, damit sie die Semesterbeiträge, Mensapreise und Wohnkosten für Studierende senken können.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "e3831f6126afe70d"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Bildungskreditprogramm kurzfristig stärken und ausbauen.",
+      "zitat": "Das Bildungskreditprogramm wollen wir bereits kurzfristig stärken und ausbauen.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "a7dc9a5087b8842a"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "BAföG-Empfängern wird bei einer Geburt während Ausbildung oder Studium die Rückzahlung nach erfolgreichem Abschluss erlassen.",
+      "zitat": "BAföG-Empfängern soll bei einer Geburt während der Ausbildung bzw. während des Studiums die Rückzahlung nach erfolgreichem Abschluss erlassen werden.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "eab848dd4e2a0309"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliche Mindestausbildungsvergütung in Höhe von 80 % der durchschnittlichen tariflichen Vergütung der Branchen.",
+      "zitat": "Wir wollen, dass das Schulgeld entfällt und Azubis eine Mindestausbildungsvergütung erhalten (80 Prozent der durchschnittlichen tariflichen Ausbildungsvergütung der Branchen).",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "162ddc0d7453ff5f"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Kostenfreie Ausbildungen in Gesundheitsfachberufen und faire Vergütung für alle Auszubildenden",
+      "zitat": "Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "b8910e5822b50d33"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "BAföG für alle: elternunabhängig, existenzsichernd, als Vollzuschuss, regelmäßig an die Lebenshaltungskosten angepasst.",
+      "zitat": "[Partei] fordert, ein BAföG für alle, das heißt: eltern-, alters- und herkunftsunabhängig, existenzsichernd, unbefristet und als Vollzuschuss.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "a4e0289112a75cfd"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Mindestausbildungsvergütung deutlich anheben, damit Auszubildende selbstständig leben können",
+      "zitat": "Wir werden die Mindestausbildungsvergütung deutlich anheben, um die Attraktivität der Ausbildung zu erhöhen und ein eigenständiges Leben zu ermöglichen.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "ed4d861fe3659b98"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Mindestausbildungsvergütung anheben",
+      "zitat": "Wir wollen deshalb die Mindestausbildungsvergütung anheben.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "0b03581d7256b0d8"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Steuer- und abgabenfreier Führerscheinzuschuss des Arbeitgebers für Auszubildende",
+      "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "53685848c570f275"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "BAföG existenzsichernd machen, Bedarfssätze und Freibeträge regelmäßig an Lebenshaltungskosten anpassen",
+      "zitat": "Das BAföG soll existenzsichernd und bedarfsgerecht sein. Deshalb setzen wir einen zuverlässigen Mechanismus ein, um die Bedarfssätze und Freibeträge regelmäßig an die steigenden Lebenshaltungskosten anzupassen.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "2a0735e9acfe9681"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Unternehmen sollen sich finanziell an bezahlbaren Wohnheimplätzen für Auszubildende beteiligen müssen.",
+      "zitat": "Unternehmen sollten dazu verpflichtet werden, sich insbesondere im ländlichen Raum an der Schaffung von öffentlichem Wohnraum, etwa bezahlbaren Wohnheimplätzen für Auszubildende, finanziell zu beteiligen.",
+      "ursachen_ids": [
+        3101
+      ],
+      "pruefsumme": "44c283ca368e53af"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Bundesweit vergünstigtes Deutschlandticket für Auszubildende und Studierende",
+      "zitat": "Außerdem setzen wir uns für ein bundeseinheitlich vergünstigtes Deutschlandticket zu einem reduzierten Preis für bestimmte soziale Gruppen wie Seniorinnen und Senioren, Familien mit Kindern, Auszubildende, Studierende",
+      "ursachen_ids": [
+        3101,
+        3102
+      ],
+      "pruefsumme": "4dcf385a9237c70e"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Bau und Sanierung von Wohnheimen über das Programm Junges Wohnen weiter fördern, Auszubildende stärker einbeziehen",
+      "zitat": "Für mehr bezahlbaren, inklusiven und barrierefreien Wohnraum möchten wir den Bau sowie die Sanierung von Wohnheimen über das von uns in der laufenden Wahlperiode aufgelegte Programm „Junges Wohnen“ […] und weiter fördern.",
+      "ursachen_ids": [
+        3102
+      ],
+      "pruefsumme": "5cd8fff9620c2c4b"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Bundesprogramm Junges Wohnen fortsetzen und aufstocken für bezahlbaren Wohnraum für Auszubildende und Studierende",
+      "zitat": "Das erfolgreiche Bundesprogramm Junges Wohnen wollen wir fortsetzen und aufstocken, um bezahlbaren Wohnraum für Auszubildende und Studierende zu schaffen.",
+      "ursachen_ids": [
+        3101,
+        3102
+      ],
+      "pruefsumme": "0523cd212f41a525"
+    }
+  ]
+}
