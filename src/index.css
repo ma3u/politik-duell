@@ -2951,6 +2951,17 @@ textarea {
   color: var(--text-leise);
   overflow-wrap: anywhere;
 }
+/* QR-Code zum Beitreten: Link der Einladung, zum Abfotografieren mit dem Handy. */
+.quiz-qr {
+  display: block;
+  width: min(60vw, 220px);
+  height: auto;
+  margin: 0.2rem auto 0.8rem;
+  padding: 8px;
+  background: #fff;
+  border: 1.5px solid var(--tinte);
+  border-radius: 10px;
+}
 .quiz-spieler,
 .quiz-stand {
   margin: 0;

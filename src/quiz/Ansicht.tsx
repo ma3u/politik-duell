@@ -6,6 +6,7 @@ import { parteiStil } from '../components/stil'
 import { KI_HINWEIS_HALTUNG } from '../components/HaltungsKarte'
 import { feedbackLink } from '../feedback'
 import { POSITION_TEXT } from '../logic/haltung'
+import { QrCode } from './QrCode'
 import { anleitung } from './fragen'
 import { MAX_PUNKTE, ZEITFAKTOR_TEXT, type Zeitfaktor } from './punkte'
 import { limitFuer, rangliste, type Ergebnis, type QuizSpieler, type QuizZustand, type Weg } from './spielleitung'
@@ -114,6 +115,7 @@ function Lobby({ daten, z, ich, istLeitung, raum, onStart, onZeit, onVerlassen }
               {raum.code}
             </p>
           )}
+          {raum.bereit && <QrCode className="quiz-qr" text={raum.link} titel={`QR-Code zum Beitreten in den Raum ${raum.name ?? raum.code}`} />}
           <p className="quiz-link">
             <code>{raum.link}</code>
           </p>

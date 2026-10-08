@@ -320,3 +320,5 @@ Dieselben Blindlisten ein zweites Mal von einem unabhängigen Agenten `haltung-e
 | 33 Kürzung der Grundsicherung | BSW | ja | teils | Konsequenzen nur bei abgelehnten Qualifizierungsmaßnahmen, nicht bei abgelehnter Arbeit |
 
 Alle übrigen 144 Positionen (Haltungen 4–33 ohne 1 und 2) hat der Zweitlauf bestätigt.
+
+**Entscheidung der Betreiberin (8. 10. 2026)** zu den vier Grenzfällen des Zweitlaufs, nach Lesen der Zitate: 7 SPD **ja** (Lauf 1 bestätigt), 20 BSW **nein** (Lauf 2), 24 BSW **teils** (Lauf 2), 33 BSW **ja** (Lauf 1 bestätigt). Die beiden geänderten Positionen tragen Kurzfassung und Stand des Zweitlaufs und bleiben KI-Entwurf: `geprueft` setzt die Freigabe der Haltung durch die Betreiberin (statt `art: ki`) und zwei blinde Bestätigungen voraus.
