@@ -32,11 +32,12 @@ import type {
   Zielkonflikt,
 } from './types'
 
-// Datenquelle der App: Supabase (Standard, wenn konfiguriert) oder die
-// eingebauten Beispieldaten (VITE_DATENQUELLE=mock, z. B. für Offline-Demos).
+// Datenquelle der App: Supabase (Standard, wenn konfiguriert), die eingebauten
+// Beispieldaten (VITE_DATENQUELLE=mock, z. B. für Offline-Demos) oder der echte
+// Katalog aus `daten/` ohne Datenbank (VITE_DATENQUELLE=katalog, src/data/echt.ts).
 
 export interface Daten {
-  quelle: 'supabase' | 'mock'
+  quelle: 'supabase' | 'mock' | 'katalog'
   parteien: Partei[]
   themen: Thema[]
   ursachen: Ursache[]
@@ -61,10 +62,11 @@ export interface Daten {
 
 const URL = import.meta.env.VITE_SUPABASE_URL as string | undefined
 const KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined
-const NUR_MOCK = import.meta.env.VITE_DATENQUELLE === 'mock'
+const DATENQUELLE = import.meta.env.VITE_DATENQUELLE as string | undefined
+const OHNE_DATENBANK = DATENQUELLE === 'mock' || DATENQUELLE === 'katalog'
 
 export const supabase: SupabaseClient | null =
-  !NUR_MOCK && URL && KEY ? createClient(URL, KEY, { auth: { persistSession: false } }) : null
+  !OHNE_DATENBANK && URL && KEY ? createClient(URL, KEY, { auth: { persistSession: false } }) : null
 
 export const MOCK_DATEN: Daten = {
   quelle: 'mock',
@@ -89,6 +91,8 @@ export const sindBeispieldaten = (d: Daten) =>
   d.quelle === 'mock' || d.parteien.some((p) => /^https:\/\/example\.(org|com|net)\//.test(p.programm_url))
 
 export async function ladeDaten(): Promise<Daten> {
+  // Eigener Chunk: Der ganze Katalog lädt nur in dieser Fassung mit.
+  if (DATENQUELLE === 'katalog') return (await import('./echt.ts')).ECHTE_DATEN
   if (!supabase) return MOCK_DATEN
   const [p, t, u, m, a, l, lp, ins, h, hp, zk] = await Promise.all([
     supabase.from('parteien').select('*').order('id'),
@@ -216,7 +220,7 @@ export async function analysiere(
   daten: Daten,
   anfrage: Omit<AnalyseAnfrage, 'sitzung'>,
 ): Promise<AnalyseAntwort> {
-  if (daten.quelle === 'mock' || !supabase) {
+  if (daten.quelle !== 'supabase' || !supabase) {
     if (anfrage.auswahl) return antwortAusAuswahl(anfrage.auswahl, daten.themen, daten.ursachen)
     return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen, {
       instrumente: daten.instrumente,

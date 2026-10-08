@@ -92,7 +92,7 @@ export default function App() {
       {themenSeite && (
         <div className="app">
           {daten && sindBeispieldaten(daten) && <MockHinweis />}
-          {daten?.testphase && <TestphaseHinweis />}
+          {daten?.testphase && <TestphaseHinweis ohneDatenbank={daten.quelle === 'katalog'} />}
           <Themenstand daten={daten} ladeFehler={ladeFehler} onZurueck={zurueck} />
           <Fusszeile />
         </div>
@@ -101,7 +101,7 @@ export default function App() {
         {/* Startseite: ganze Fläche; im Spiel nur links und rechts neben der Spalte. */}
         <Wortwolke woerter={woerter} nurRaender={phase !== 'start'} />
         {sindBeispieldaten(daten ?? MOCK_DATEN) && <MockHinweis />}
-        {daten?.testphase && <TestphaseHinweis />}
+        {daten?.testphase && <TestphaseHinweis ohneDatenbank={daten.quelle === 'katalog'} />}
         {zugangsHinweis && (
           <div className="mock-hinweis" role="alert">
             {zugangsHinweis} Es werden nur geprüfte Daten gezeigt.
@@ -125,6 +125,7 @@ export default function App() {
               setDaten(MOCK_DATEN)
             }}
             onStart={() => setPhase('setup')}
+            lokal={!!daten && daten.quelle !== 'supabase'}
           />
         )}
         {phase === 'setup' && (

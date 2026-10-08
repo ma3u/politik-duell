@@ -10,6 +10,7 @@ export function Start({
   ladeFehler,
   onBeispieldaten,
   onStart,
+  lokal = false,
 }: {
   bereit: boolean
   einverstanden: boolean
@@ -17,6 +18,8 @@ export function Start({
   ladeFehler: string | null
   onBeispieldaten: () => void
   onStart: () => void
+  /** Ohne Datenbank und KI (Beispieldaten, Katalog-Fassung): Eingaben verlassen den Browser nicht. */
+  lokal?: boolean
 }) {
   const id = useId()
   const titel = useAnsicht('')
@@ -48,6 +51,10 @@ export function Start({
               Mit Beispieldaten spielen
             </button>
           </div>
+        ) : lokal ? (
+          <button className="knopf knopf-gross" onClick={onStart} disabled={!bereit}>
+            {bereit ? 'Spiel starten' : 'Lade Spieldaten …'}
+          </button>
         ) : (
           <>
             {/* Ausdrückliche Einwilligung (Art. 9 DSGVO): Eingaben können politische Meinungen erkennen lassen. */}
@@ -70,13 +77,22 @@ export function Start({
             </button>
           </>
         )}
-        <p className="datenschutz">
-          <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
-          ordnet eine KI (Mistral, EU) ein. Gespeichert wird eine anonyme, neutrale Kurzfassung des Problems; endet eine
-          Runde ohne Wertung, sehen wir den Wortlaut zur Prüfung (höchstens 30 Tage). Die
-          Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
-          <a href="#/datenschutz">Mehr erfahren</a>
-        </p>
+        {lokal ? (
+          <p className="datenschutz">
+            <strong>Datenschutz:</strong> Keine Konten, keine Cookies, kein Audio. In dieser Fassung bleiben deine
+            Eingaben in deinem Browser: Eine einfache Stichwortsuche ordnet sie ein, keine KI, nichts wird gesendet oder
+            gespeichert. Die Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann.{' '}
+            <a href="#/datenschutz">Mehr erfahren</a>
+          </p>
+        ) : (
+          <p className="datenschutz">
+            <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
+            ordnet eine KI (Mistral, EU) ein. Gespeichert wird eine anonyme, neutrale Kurzfassung des Problems; endet eine
+            Runde ohne Wertung, sehen wir den Wortlaut zur Prüfung (höchstens 30 Tage). Die
+            Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
+            <a href="#/datenschutz">Mehr erfahren</a>
+          </p>
+        )}
       </div>
     </main>
   )

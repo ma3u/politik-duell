@@ -34,7 +34,7 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 - Punkte berechnet dieselbe Logik in App und Funktion (`supabase/functions/_shared/bewertung.ts`) – die KI vergibt keine Punkte
 - Abgeschlossene Runden werden anonym gespeichert (nur neutrale Kurzfassung); unbekannte Themen landen in `review_warteschlange` mit vorläufiger Einschätzung; Runden ohne Wertung (auch Grenzfälle) zusätzlich im Wortlaut in `review_eingaben` (nur Admins, gelöscht beim Sichten oder nach 30 Tagen)
 - Rate-Limit pro zufälliger Sitzungs-ID
-- Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`
+- Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`; echter Katalog aus `daten/` mit KI-Entwürfen und Stichwortsuche statt KI: `VITE_DATENQUELLE=katalog` (so auf GitHub Pages)
 
 ## Stand: Meilenstein 4 – Wortwolke und Moderation
 
