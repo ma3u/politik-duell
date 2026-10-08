@@ -3,6 +3,7 @@ name: haltung-recherche
 description: Legt für eine Haltung (Wertfrage) des Politik-Duells die neutrale Ja/Nein-Frage, Beschreibung, Zielkonflikte mit unabhängigen Quellen, den Maßstab der Einordnung und Suchbegriffe fest – ohne Zugriff auf Wahlprogramme. Nur aus dem Skill /haltung-anlegen aufrufen.
 tools: WebSearch, WebFetch
 model: opus
+maxTurns: 100
 ---
 
 <!-- Fest „opus“: Quellenwahl und Perspektivenprüfung hängen nicht vom Modell der Koordination ab. -->

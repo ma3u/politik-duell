@@ -45,7 +45,7 @@ Leitplanken aus dem Projekt bleiben: neutrale Methode, keine KI im Spiel, keine 
 ### 2. Neutralität und Chancengleichheit
 
 - Der Fall Wahl-O-Mat (VG Köln, Beschluss vom 20. 5. 2019, 6 L 1056/19) zeigt: Öffentliche Stellen müssen Parteien chancengleich behandeln (Art. 21 GG, § 5 PartG). Für ein privates Projekt gilt das nicht unmittelbar, wird aber wichtig, sobald öffentliche Fördermittel fließen. Das Quiz hält sich deshalb an dieselben Regeln wie die Haltungskarte: alle sieben Parteien, gleiche Darstellung, feste Reihenfolge, Fragen werden mechanisch aus dem Katalog erzeugt (keine redaktionelle Auswahl, welche Partei „auffällt“).
-- Welche Parteien dabei sind, ist schon entschieden (CLAUDE.md → Offene Punkte) und begründet; das sollte auf der Methodenseite für das Quiz genauso stehen.
+- Welche Parteien dabei sind, ist schon entschieden (docs/projekt.md → Offene Punkte) und begründet; das sollte auf der Methodenseite für das Quiz genauso stehen.
 
 ### 3. Datenschutz
 

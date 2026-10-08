@@ -2,7 +2,7 @@ import type { QuizFrage, QuizPartei } from '../typen.ts'
 
 // Sprechertexte der Quiz-Show (docs/plan-quiz.md → „Show“). Zwei erfundene Moderatoren im Dialog: Mara stellt
 // Fragen und löst auf, Ben sagt an, erklärt und frotzelt. Frech gegenüber den Spielenden, nie wertend gegenüber
-// Parteien (CLAUDE.md → Tonalität): keine Kommentare zu Positionen, keine Seitenhiebe.
+// Parteien (docs/projekt.md → Branding, Tonalität): keine Kommentare zu Positionen, keine Seitenhiebe.
 // Die Tags in [eckigen Klammern] steuern die Betonung (ElevenLabs eleven_v3) und erscheinen nicht im Untertitel.
 // Aus dieser Datei erzeugt `npm run quiz:stimmen` die Aufnahmen; die App zeigt dieselben Texte als Untertitel.
 

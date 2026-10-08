@@ -3,6 +3,9 @@ name: haltung-erfassung
 description: Sucht in genau einem Bundesprogramm je Haltung (Wertfrage des Politik-Duells) des Auftrags die Stelle, die die Haltung des Programms am klarsten zeigt, und liefert sie mit wörtlichem Zitat und PDF-Seite – ohne Einordnung. Bekommt den Pfad eines Auftrags aus npm run haltung:auftrag. Nur aus dem Skill /haltung-erfassen aufrufen.
 tools: Bash, Read, Grep, Write
 model: sonnet
+maxTurns: 40
+experimental:
+  cacheTtl: 1h
 ---
 
 <!-- Fest „sonnet“ (Alias): alle Programme mit demselben Modell, unabhängig von der Koordination. Ein Wechsel auf „haiku“ nur nach Vergleichslauf (gleiche Funde je Programm wie mit „sonnet“), mit Ergebnis im Pull Request. -->

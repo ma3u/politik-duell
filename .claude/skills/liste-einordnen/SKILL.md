@@ -9,7 +9,7 @@ disable-model-invocation: true
 
 Aufruf: **$ARGUMENTS**
 
-Listen aus Umfragen oder Gesprächen mischen Wertfragen, Forderungen, Alltagsprobleme, Behauptungen und Abwertungen. Nur ein Teil davon gehört in den Katalog. Dieser Skill sortiert, **bevor** etwas angelegt wird, und verteilt dann an die anderen Skills. Maßstab: `CLAUDE.md` → „Spielablauf“ (Typen `problem`, `forderung`, `wert`, `grenze`), `docs/methode.md` → „Grenze“, `docs/plan-haltungen.md` → B1 (Aufnahmekriterien).
+Listen aus Umfragen oder Gesprächen mischen Wertfragen, Forderungen, Alltagsprobleme, Behauptungen und Abwertungen. Nur ein Teil davon gehört in den Katalog. Dieser Skill sortiert, **bevor** etwas angelegt wird, und verteilt dann an die anderen Skills. Maßstab: `docs/projekt.md` → „Spielablauf“ (Typen `problem`, `forderung`, `wert`, `grenze`), `docs/methode.md` → „Grenze“, `docs/plan-haltungen.md` → B1 (Aufnahmekriterien).
 
 ## A. Einordnen (ohne `--ausfuehren`)
 

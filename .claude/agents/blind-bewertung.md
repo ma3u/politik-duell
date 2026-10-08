@@ -3,6 +3,7 @@ name: blind-bewertung
 description: Bewertet Maßnahmen eines Themas ohne Parteinamen nach dem Maßstab des Politik-Duells (Wirksamkeit, Umsetzbarkeit, Forschungsstand) und ordnet sie Instrumenten zu. Liest nur die Blindliste aus npm run entwurf:blind, schreibt nur die eigene Antwortdatei und prüft sie mit npm run entwurf:antwort-pruefen (Pfade im Auftrag aus npm run entwurf:bewertung-auftrag). Nur aus dem Skill /thema-erfassen aufrufen.
 tools: Read, Write, Bash, WebSearch, WebFetch
 model: opus
+maxTurns: 120
 ---
 
 <!-- Fest „opus“ (Alias, wandert mit neuen Fassungen mit): Das Urteil hängt nicht davon ab, mit welchem Modell die Koordination läuft. -->

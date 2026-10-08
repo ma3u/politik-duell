@@ -3,6 +3,7 @@ name: haltung-einordnung
 description: Ordnet für eine Haltung (Wertfrage) des Politik-Duells Zitate aus Wahlprogrammen ohne Parteinamen ein (ja, nein, teils, keine_aussage) und schreibt je Zitat eine neutrale Kurzfassung. Liest nur die Blindliste aus npm run haltung:blind, schreibt nur die eigene Antwort und prüft sie mit npm run haltung:antwort-pruefen. Nur aus dem Skill /haltung-erfassen aufrufen.
 tools: Read, Write, Bash
 model: opus
+maxTurns: 80
 ---
 
 <!-- Fest „opus“ (Alias, wandert mit neuen Fassungen mit): Das Urteil hängt nicht davon ab, mit welchem Modell die Koordination läuft. -->
