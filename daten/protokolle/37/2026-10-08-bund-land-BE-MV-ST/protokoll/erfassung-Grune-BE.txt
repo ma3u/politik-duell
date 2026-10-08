@@ -1,0 +1,70 @@
+{
+  "partei_id": 13,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportstätten inklusiv, multifunktional und ökologisch sanieren und wo nötig neu bauen",
+      "ursachen_ids": [3701],
+      "zitat": "Wir wollen die Sportstätten inklusiv, […] multifunktional, ökologisch und nachhaltig sanieren bzw. wo nötig neu bauen.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Mit Sportstätten-Entwicklungsplanung und Unterstützung der Bezirke ein Netz barrierefreier, klimaneutraler Sportstätten schaffen, mindestens drei inklusive je Bezirk",
+      "ursachen_ids": [3701],
+      "zitat": "Durch eine sinnvolle Sportstätten-Entwicklungsplanung und die Unterstützung der Bezirke bei der Umsetzung werden wir ein berlinweites Netz barrierefreier, klimaneutraler Sportstätten schaffen. […] Mindestens drei inklusive Sportstätten pro Bezirk sollen entstehen",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Schwimmbadoffensive: Bäder schnell neu bauen und wiedereröffnen, gezielt in Bezirken mit fehlender Infrastruktur investieren",
+      "ursachen_ids": [3701],
+      "zitat": "Doch in Berlin mangelt es an Schwimmbädern, weshalb wir eine Schwimmbadoffensive starten und Bäder schnell neu bauen und wiedereröffnen. Besonders in Bezirken mit fehlender Infrastruktur wird gezielt investiert, damit Schwimmen keine Frage des Wohnorts ist.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Bäder energetisch sanieren, um Strom- und Wärmeversorgung zu optimieren und Betriebskosten zu senken, etwa mit Wärmerückgewinnung",
+      "ursachen_ids": [3702],
+      "ursachen_offen": [3701],
+      "zitat": "Die Berliner Bäder werden energetisch saniert, um Strom- und Wärmeversorgung zu optimieren und die Kosten zu senken.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Sporthallen und -plätze vorrangig für den Vereinssport; Nutzungsvorschriften ändern, damit Vereine bessere Chancen auf Trainingszeiten erhalten",
+      "ursachen_ids": [3701],
+      "ursachen_offen": [3703],
+      "zitat": "Dazu wollen wir die Sportanlagen-Nutzungsvorschriften (SPAN) so ändern, dass Vereine mit entsprechendem Angebot künftig eine bessere Chance auf Trainingszeiten erhalten.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Vergütung von Übungsleitern im Kinder-, Jugend- und Inklusionssport perspektivisch auf 20 bis 25 Euro pro Stunde anheben",
+      "ursachen_ids": [3703],
+      "zitat": "Perspektivisch soll die Vergütung von Übungsleiter*innen im Kinder-, Jugend- und Inklusionssport auf 20 bis 25 Euro pro Stunde steigen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Förderung hauptamtlicher Verwaltungskräfte in Vereinen erleichtern: nötige Mitgliedszahlen in der Fördervereinbarung mit dem Landessportbund deutlich senken",
+      "ursachen_ids": [3703],
+      "zitat": "Deswegen wollen wir die Fördervereinbarung zwischen dem Land Berlin und dem Landessportbund Berlin so ändern, dass die Mitgliedszahlen, die für eine Förderung benötigt werden, deutlich sinken.",
+      "seite": 37
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3703, "seiten": [52, 180, 191], "grund": "Wohngemeinnützigkeit (S. 52) und Kooperation von Schulen/Jugendhilfe mit Sportvereinen (S. 180, 191) gehören nach R2 zu anderen Themen; Vereinsförderung selbst ist auf S. 37 erfasst." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis; Kapitel 1.8 „Sport für alle – nachhaltig, inklusiv und gerecht“ (S. 35–41) vollständig; Fundstellen S. 52, 155, 180, 191, 203; weitere Sport-Stellen S. 63 (Quartiersplanung), S. 245 (Spiel- und Sportplätze als Daseinsvorsorge).
+
+Nicht erfasst:
+- S. 35/36: Lagebeschreibung (sanierungsbedürftige, geschlossene Sportstätten), Leitbild „Sportstätten sind Teil der Daseinsvorsorge“.
+- S. 36: Förderung von Frauen-, Mädchen-, Inklusions-, Kinder- und Seniorensport, Fortbildungen für FLINTA* – Sportangebote, nicht Vereinsfinanzierung/Sportstätten; Skateparks/Sport im Park – vereinsungebundener Sport.
+- S. 37: Bundesligaförderung, Eliteschulen des Sports – Spitzensport (R2); Kinderschutz-Siegel, Gender Budgeting – kein Bezug zu Ursachen.
+- S. 38: Sportgroßveranstaltungen, E-Sport, Glücksspielwerbung, Olympia-Bewerbung – R2.
+- S. 39/40: Kriterienkatalog Inklusive Sportstätten, Kunstrasen ohne Mikroplastik, klimaneutrale Eisflächen, gerechte digitale Vergabe der Sportstätten, Schulaußengelände nach Schulschluss, Schlechtwetterstrategie Skateanlagen – Bau-/Vergabedetails, dem erfassten Netz-/Vergabe-Ansatz zugehörig bzw. ohne Vereinsbezug.
+- S. 40: Freibad Marzahn-Hellersdorf – Teil der erfassten Schwimmbadoffensive; Schulschwimmzentren, Ferienkurse, Wasserzeiten, kostenfreier Eintritt für Freiwilligendienstleistende, Schwimmbusse – Schwimmenlernen/Freizeitkosten von Personen, nicht Betriebskosten oder Vereine; Vetorecht der Bezirke „prüfen wir“ – Prüfauftrag.
+- S. 41: Stadien, Fanarbeit, Sicherheitskosten Hochrisikospiele – Profisport (R2).
+- S. 155: „Sportstätten möchten wir sukzessive inklusiv ertüchtigen“ – gleichartig zur erfassten inklusiven Sportstätten-Netz-Zusage (S. 39), dort konkreter.
+- S. 203: Hitzeschutzkonzepte für Sportstätten – Klimaanpassung, nicht Finanzierung/Sanierung.
+- S. 63, 245: Sportflächen in der Quartiersplanung, Leitbild Sportplätze als Daseinsvorsorge – allgemein.
+
+Richtungen ohne Maßnahme: 3702 „Eigenverantwortung und Auslastung“; 3703 „Eigeneinnahmen und Kooperation der Vereine“ (nur Schul-/Jugendkooperationen, R2).

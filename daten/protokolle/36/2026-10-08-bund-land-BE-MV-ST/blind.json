@@ -1,0 +1,916 @@
+{
+  "pruefsumme": "0281ff0f128c4d4f359f2325f7dbc11e5671b48e460d443b38cb1652e66edf33",
+  "thema": {
+    "id": 36,
+    "name": "Leerstand und Geschäftsschließungen in Innenstädten",
+    "ziel": "Menschen finden in ihrer Innenstadt oder ihrem Ortskern passende Einkaufsangebote und können diese gut erreichen und gerne nutzen."
+  },
+  "ursachen": [
+    {
+      "id": 3601,
+      "beschreibung": "Der zunehmende Onlinehandel wirkt sich laut BBSR-Projekt (2021 bis 2024) negativ auf den Geschäftsbesatz in den Zentren aus",
+      "ebene": "bund"
+    },
+    {
+      "id": 3602,
+      "beschreibung": "Einzigartigkeit des Sortiments und Atmosphäre eines Geschäfts hängen signifikant mit Schließungen zusammen (Daten 2015 bis 2020, Bekleidung und Medien; Studie 2024)",
+      "ebene": "land"
+    },
+    {
+      "id": 3603,
+      "beschreibung": "26 % der Befragten im Osten und 32 % im Westen sahen 2026 beim Stadtbild und Aufenthalt im öffentlichen Raum großen Handlungsbedarf (Befragung von 5.079 Personen)",
+      "ebene": "land"
+    },
+    {
+      "id": 3604,
+      "beschreibung": "Eine zugängliche Lage und günstige Öffnungszeiten hängen mit weniger Geschäftsschließungen zusammen (Daten 2015 bis 2020, Bekleidung und Medien; Studie 2024)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3601,
+        3602,
+        3603,
+        3604
+      ],
+      "text": "Zu 3601 gehören Wettbewerbsbedingungen zwischen Online- und stationärem Handel und Digitalisierung des lokalen Handels, zu 3602 Sortiment, Ansiedlung und Nutzungsmischung in Innenstädten, zu 3603 Aufenthaltsqualität, Sauberkeit und Gestaltung des öffentlichen Raums, zu 3604 Erreichbarkeit (Parken, Straßenraum, Fuß-, Rad- und Nahverkehr) und Öffnungszeiten."
+    },
+    {
+      "nr": 2,
+      "text": "Wohnungsmieten gehören zu Miete, Abwanderung und kommunale Finanzen allgemein zu Abwanderung aus strukturschwachen Regionen, Parkplätze und Autoverkehr ohne Bezug zu Innenstadt oder Einzelhandel zu Autofahren. Maßnahmen für Innenstädte zählen nur, wenn das Zitat Innenstadt, Ortskern, Einzelhandel oder Leerstand nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Landesstrategie zur Stärkung des Einzelhandels und gemeinsam mit Bezirken, Handel und Gastronomie Kiezpläne für jede Einkaufsstraße",
+      "zitat": "Wir werden eine umfassende Strategie zur Stärkung des [Land] Einzelhandels entwickeln. Gemeinsam mit Bezirken, Handel und Gastronomie wollen wir konkrete Kiezpläne für jede Einkaufsstraße entwickeln.",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "a27259756bca1474"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Handel, Dienstleistung und Handwerk vor Ort fördern, durch steuerliche Vergünstigungen bei Modernisierung und Geräteanschaffung sowie Hilfe bei der Fachkräfteausbildung",
+      "zitat": "Handel, Dienstleistung und Handwerk vor Ort sollen gezielt gefördert werden. Das erreichen wir durch steuerliche Vergünstigungen bei Modernisierungen, der Anschaffung von Geräten und durch die Unterstützung bei der Ausbildung von Fachkräften.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "ceb30601cac7173a"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Fonds, mit dem Kommunen Leerstand für kulturelle Projekte zurückkaufen können",
+      "zitat": "Kommunen erhalten durch einen Fonds die Möglichkeit zum Rückkauf von Leerstand für kulturelle Projekte.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "36be6b17b41711bc"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Umweltzonen in Innenstädten aufheben",
+      "zitat": "Überholte Umweltzonen in Innenstädten wollen wir aufheben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "21868cbd34d846e9"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Ausreichende Mittel für attraktive Innenstädte bereitstellen, im Zusammenhang mit gepflegten, gut gestalteten öffentlichen Räumen",
+      "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "cd3c72be353fe5fc"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Regeln auf europäischer und nationaler Ebene, damit importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden",
+      "zitat": "Wir setzen uns zudem für wirksame und praktikable Regeln auf europäischer und nationaler Ebene ein, die sicherstellen, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3601
+      ],
+      "pruefsumme": "f3e7359ed39c022e"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Über den Bundesrat eine dauerhafte gesetzliche Begrenzung der Gewerbemieten vorschlagen, gegen Verdrängung von Läden und Einzelhandel",
+      "zitat": "Immer mehr Läden, insbesondere Gastronomie und Einzelhandel, aber auch Kitas und andere Einrichtungen, sind dadurch von Verdrängung bedroht. Wir werden über den Bundesrat eine dauerhafte Begrenzung der Gewerbemieten per Gesetz vorschlagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "bcb77174959f4540"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Leerstehende landeseigene Immobilien über eine zentrale Vergabestelle erfassen und flexibel, auch temporär (z. B. Pop-up), an Start-ups und Kreativwirtschaft vergeben",
+      "zitat": "Wir werden das Leerstandsmanagement landeseigener Immobilien weiterentwickeln und gezielt für die Nutzung durch Start-ups und Unternehmen der Kreativwirtschaft öffnen. Durch die BIM ist eine zentrale Vergabestelle einzurichten, die Leerstände in landeseigenen Immobilien erfasst.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "b143f45dc53ef75a"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Verbot von Leerstand auch bei Gewerbeimmobilien, um Spekulation zu unterbinden",
+      "zitat": "Auch bei Gewerbeimmobilien muss es ein Verbot von Leerstand geben, um Spekulation zu unterbinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "728782ec2aee11d2"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Integrierte ländliche Entwicklung fördern, die Wohnen, Freizeit, Naherholung und die Wiederbelebung leerstehender Gebäude verbindet",
+      "zitat": "Wir fördern eine integrierte ländliche Entwicklung, die partizipative Beteiligung der Bevölkerung und regionale Kooperationen, um Wohnen, Freizeit, Naherholung und die Revitalisierung von Leerstand zu verbinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "bfdccc66ee82c53a"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Städtebauförderprogramm „Lebendige Zentren“ gemeinsam mit dem Bund um- und ausbauen",
+      "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "c88a3c4c26be69de"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Kommunen beim Abbau von Leerstand unterstützen und Zwischennutzungen ermöglichen, etwa durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte",
+      "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "64b762839eb5fd3c"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Leerstand-Strategie für den ländlichen Raum: Förderprogramme und Anreize, damit Kommunen und Eigentümer leerstehende Immobilien in Wohn- oder Gewerberaum umwandeln",
+      "zitat": "Um leerstehende Gebäude im ländlichen Raum wieder nutzbar zu machen und damit die Attraktivität und Wirtschaftskraft dieser Regionen zu stärken, brauchen wir eine umfassende Leerstand-Strategie für den ländlichen Raum. Durch gezielte Förderprogramme und Anreize sollen Kommunen und private Eigentümer motiviert werden, leerstehende Immobilien in Wohn- oder Gewerberaum umzuwandeln.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "a6694fcf55bbedb0"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Gesetzlichen Rahmen für verkaufsoffene Sonntage ausschöpfen, unter Schutz der Beschäftigten im Einzelhandel",
+      "zitat": "Den Rahmen der aktuellen Gesetzgebung für verkaufsoffene Sonntage wollen wir ausschöpfen und achten dabei konsequent auf den Schutz der Beschäftigten im Einzelhandel",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "9fe74b6403f6225d"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Stadtkerne stärken durch gezielte Unterstützung des Einzelhandels und kreative Konzepte gegen Leerstand",
+      "zitat": "Innenstädte lebendig halten, als Zentren des Lebens und Wirtschaftens: Wir stärken Stadtkerne als Orte der Begegnung, Kultur und Wirtschaft, mit gezielter Unterstützung des Einzelhandels und kreativen Konzepten gegen Leerstand.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "010c6b763e3edc0f"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "land",
+      "beschreibung": "Warenhaus-Standorte am Hermannplatz und Ku'damm erhalten statt Abriss, behutsam mit Anwohnern und Gewerbetreibenden weiterentwickeln",
+      "zitat": "Wir lehnen weiterhin die Pläne ab, die GaleriaKarstadt-Gebäude am Hermannplatz und am Ku’damm abzureißen […]. Wir setzen uns für den Erhalt der dortigen Galeria-Warenhaus-Standorte, eine behutsame Weiterentwicklung der Objekte unter Beteiligung der Anwohner*innen und der benachbarten Gewerbetreibenden ein.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "b9aa13057d49a73c"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Aktive Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand verringert und kleinteilige Versorgungsstrukturen in Innenstädten und Ortskernen erhält",
+      "zitat": "Lebendigkeit der Innenstädte und Ortskerne erhalten und fördern durch eine aktive Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "3440386ae056a3f8"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "[Land] Mitte als nichtkommerziellen öffentlichen Raum weiterentwickeln, klimaresiliente Umgestaltung des Rathausforums fertigstellen",
+      "zitat": "Die [Land] Mitte, zwischen Alexanderplatz und Spree, wollen wir als öffentlichen Raum möglichst frei von privater und kommerzieller Nutzung gemeinsam mit den Bewohner*innen unserer Stadt weiterentwickeln. Die begonnene klimaresiliente Umgestaltung des Rathausforums/Marx-Engels-Forums werden wir weiterführen und fertigstellen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "bf13d58f2845c4e2"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Park-and-Ride-Standorte an Stadtgrenzen und in Außenbezirken, die die Innenstadt vom Verkehr entlasten und den Umstieg auf Bus und Bahn erleichtern",
+      "zitat": "Park&Ride-Standorte an den Stadtgrenzen und in den Außenbezirken entlasten die Innenstadt vom Verkehr und ermöglichen einen unkomplizierten Umstieg auf das gemeinsame Mobilitätsnetz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "515673e6594669c8"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Autofreie Innenstädte mit Ausnahmen für Menschen mit besonderen Bedarfen und Lieferverkehr",
+      "zitat": "Wir setzen uns für autofreie Innenstädte ein – selbstverständlich mit Ausnahmen für Menschen mit besonderen Bedarfen oder für den Lieferverkehr.",
+      "ursachen_ids": [
+        3604
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "6ddcdeabea96e31e"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Rahmenbedingungen für Kulturorte, Clubs und Livemusikstätten vor allem in Innenstädten über Lärmschutz, Baurecht und Gewerbemietrecht verbessern",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "377d90a8f4820f6a"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "land",
+      "beschreibung": "Verkehrsberuhigung in Innenstädten durch Umgestaltung der Straßenräume zugunsten von Fuß- und Radverkehr",
+      "zitat": "Wir setzen auf eine konsequente Ausweitung von Tempo-30-Zonen in Städten und Gemeinden, […] Verkehrsberuhigung in Innenstädten durch Umgestaltung von Straßenräumen zugunsten von Fuß- und Radverkehr",
+      "ursachen_ids": [
+        3603
+      ],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "4e7472d4efb47e01"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Vergünstigte Nachfolgekredite über die Landesförderbank, damit Betriebsübernahmen etwa im Einzelhandel nicht an fehlenden Sicherheiten scheitern",
+      "zitat": "Wenn diese Betriebe schließen, verschwinden Arbeitsplätze, Ausbildungsplätze und Nahversorgung […]. Wir ermöglichen vergünstigte Nachfolgekredite über die IBB, damit Übernahmen nicht an fehlenden Sicherheiten scheitern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "4613fd3c74da88fa"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "land",
+      "beschreibung": "Neues Stadtumbauprogramm bis 2035 gegen Leerstand finanzieren, für Rückbau und Aufwertung im Bestand (Abschnitt beginnt mit der Verödung der Innenstädte)",
+      "zitat": "Wir wollen: […] gegen den Leerstand die Auflage eines neuen Stadtumbauprogramms bis 2035 für den Rückbau und Aufwertung im Bestand finanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602,
+        3603
+      ],
+      "pruefsumme": "200e14088aa81e62"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Auf Bundesebene Tempo 30 als Regelgeschwindigkeit in Innenstädten anstreben, auch um die Aufenthaltsqualität zu erhöhen",
+      "zitat": "Gleichzeitig arbeiten wir auf Bundesebene daran, Tempo-30 als Regelgeschwindigkeit in Innenstädten festzuschreiben, um Unfälle zu vermeiden und die Aufenthaltsqualität zu erhöhen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "7bf3d659ad8bc0eb"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "land",
+      "beschreibung": "Gegen Leerstand Nutzungsänderungen vereinfachen und Auflagen für Zwischennutzungen (Atelier, Sportstudio, Repair-Café) deutlich senken",
+      "zitat": "Jetzt Leerstand bekämpfen […] Wir erteilen Baugenehmigungen schneller und vereinfachen Nutzungsänderungen – etwa von Gewerbe zu Kultur. Für temporäre Nutzungen braucht es deutlich weniger Auflagen, damit Flächen unkompliziert als Atelier, Sportstudio oder Repair-Café zwischengenutzt werden können.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "58aa32ef1e7226b4"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Kooperation von Kultur und Tourismus stärken, um Innenstädte mit Kulturrouten, Festivals und Kunst im öffentlichen Raum zu beleben",
+      "zitat": "Dieses Potenzial wollen wir besser nutzen und werden dafür die Kooperation zwischen Kultur und Tourismus stärken. Ziel ist es dabei auch, die Innenstädte durch Kulturrouten, Festivals oder Kunst im öffentlichen Raum zu beleben.",
+      "ursachen_ids": [
+        3603
+      ],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "e6cb74a788468a9f"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "land",
+      "beschreibung": "Regeln für verkaufsoffene Sonntage praxisnah und flexibler gestalten, nach Vorbild liberalerer Nachbarländer, für Einzelhandel, Gastronomie und Tourismus",
+      "zitat": "Die Regelungen für verkaufsoffene Sonntage in [Land] sollen praxisnah und flexibel gestaltet werden. Damit werden wir den Bedürfnissen von Einzelhandel, Gastronomie und Tourismus gerecht.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "05e517ac8749b3e6"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Leerstehende Gewerbegebäude unbürokratisch zu Wohnraum umwandeln; aktives Leerstandsmanagement",
+      "zitat": "Umwandlung von Leerstand: Leerstehende Gewerbegebäude werden unbürokratisch zu Wohnraum umgewandelt. Aktives Leerstandsmanagement sowie Anreize und Baugebote bringen leerstehende Wohnungen auf den Markt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "b48cd4a6fd57a941"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "land",
+      "beschreibung": "Bevorzugte Parkplätze in Innenstädten für geteilte Fahrzeuge und registrierte Fahrgemeinschaften",
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: […] Bevorzugte Innenstadtparkplätze für geteilte Fahrzeuge und registrierte Fahrgemeinschaften",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "9273d226a38c42aa"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "land",
+      "beschreibung": "Zwischennutzungen leer stehender Gebäude und temporäre Veranstaltungsflächen für Kultur erleichtern",
+      "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "e0f539bd4796ddcd"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Milieuschutz auch für Gewerbemieter einführen, um Betriebe wie den Einzelhandel vor Verdrängung zu schützen",
+      "zitat": "[Land] Wirtschaft lebt auch von ihrem gewerblichen Fundament – vom Handwerksbetrieb über Manufakturen und den Einzelhandel bis zur Industrie. […] Wir führen Milieuschutz auch für Gewerbemieter*innen ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "8ed3610a34ac0a7f"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "land",
+      "beschreibung": "Sonntagsöffnung auf Bundesebene ganz freigeben; zunächst sollen die Bezirke zusätzliche verkaufsoffene Sonntage selbst genehmigen und terminieren dürfen",
+      "zitat": "Auf Bundesebene setzen wir uns dafür ein, die Sonntagsöffnung komplett zu erlauben. In einem ersten Schritt sollen die Bezirke zusätzliche verkaufsoffene Sonntage pro Jahr genehmigen und eigenständig terminieren dürfen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "d11d24d9e05c253e"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Leerstehende Gewerbeflächen wie Shoppingmalls oder Warenhäuser in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten",
+      "zitat": "Um die Nahversorgung im Wohnumfeld zu sichern, wollen wir leerstehendes Gewerbe (insbesondere große Gewerbeflächen wie Shoppingmalls oder Warenhäuser) in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "7cd76f20f8c8e1ad"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "land",
+      "beschreibung": "Leerstand bekämpfen: Zentrengipfel mit den Bezirken fortführen und systematisches Leerstandsmonitoring für Büro- und Gewerbeflächen einführen",
+      "zitat": "Leerstand werden wir bekämpfen. Dafür streben wir einen engen Austausch mit den Bezirken an und führen den erfolgreichen Zentrengipfel fort. Für mehr Transparenz über die Entwicklungen auf dem Gewerbemarkt setzen wir uns für die Einführung eines systematischen Leerstandsmonitorings von Büro- und Gewerbeflächen ein.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "74095a18d9c2c66f"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "land",
+      "beschreibung": "Radinfrastruktur ausbauen, mit sicheren Fahrrad-Abstellanlagen und Ladepunkten unter anderem in Ortszentren",
+      "zitat": "Menschen wollen mit dem Rad mobil sein, wir schaffen die Infrastruktur dafür. […] Zur Attraktivität gehören sichere Abstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "247f2a85a0f080ae"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Alle leerstehenden Gewerbeflächen digital kartieren, damit Bezirke, Eigentümer und mögliche Nutzer wissen, was wo verfügbar ist",
+      "zitat": "Wir kartieren alle leerstehenden Gewerbeflächen digital, damit Bezirke, Eigentümer*innen und potentielle Nutzer*innen wissen, was wo verfügbar ist.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "e2f47eca8e0a8701"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Kommunale Vorkaufsrechte konsequent gegen Leerstand und Spekulation nutzen, im Rahmen ganzheitlicher Gemeindeentwicklung",
+      "zitat": "[Partei] setzt auf eine ganzheitliche Gemeindeentwicklung und die Stärkung lokaler Handlungsfähigkeit, etwa durch die konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "6405b1f30bb22fcc"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "land",
+      "beschreibung": "Fahr- und Stellflächen für Autos besonders in Einkaufsstraßen reduzieren, um mehr Platz und Aufenthaltsqualität für Fußgänger zu schaffen",
+      "zitat": "Mehr Platz und mehr Aufenthaltsqualität für Fußgänger*innen schaffen wir durch die Reduzierung von Fahr- und Stellflächen für den Autoverkehr, besonders in großen lebendigen Einkaufsstraßen, Flaniermeilen und Kiezblocks.",
+      "ursachen_ids": [
+        3603,
+        3604
+      ],
+      "pruefsumme": "ebe05864d00a216c"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "land",
+      "beschreibung": "Ortskerne durch Handel und Dienstleistungen stärken statt neue Flächen auf der grünen Wiese zu versiegeln",
+      "zitat": "Lebendige Ortskerne sollen durch Handel und Dienstleistungen gestärkt werden, statt neue Flächen auf der grünen Wiese zu versiegeln.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "0919ac9c564d4e93"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm „Neue Dorfmitte“ weiterentwickeln mit dem Ziel eines Dorfladens für den täglichen Bedarf in erreichbarer Nähe jeder Gemeinde, lebendige Dorfmitten",
+      "zitat": "Die Zielstellungen und Programme des Landes zur Förderung des ländlichen Raums wie […] die „Neue Dorfmitte“ […] sollen zielgerichtet weiterentwickelt werden. Langfristiges Ziel der weiteren Förderung des Programms „Neue Dorfmitte” ist ein Dorfladen für die Güter des täglichen Bedarfs in erreichbarer Nähe jeder Gemeinde [Land] mit dem Ziel der wohnortnahen Grundversorgung der dort lebenden Menschen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "401f880683fe69af"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "land",
+      "beschreibung": "Ladenschlusszeiten und Bäderverkaufsverordnung liberalisieren, mehr verkaufsoffene Sonntage und mehr touristische Orte mit Sonderöffnung",
+      "zitat": "Wir stehen für eine Liberalisierung der Ladenschlusszeiten und der Bäderverkaufsverordnung, mehr verkaufsoffene Sonntage und eine Erweiterung der touristischen Orte in der Bäderverkaufsverordnung.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "ddc374d638b82300"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Das Bild historischer Innenstädte bewahren und bei Bedarf durch Rekonstruktionen wiederherstellen",
+      "zitat": "Die Schönheit historischer Innenstädte muss bewahrt und bei Bedarf durch Rekonstruktionen wiederhergestellt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "11f557173697db0e"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Sich dafür einsetzen, dass große Onlineplattformen wie lokale Läden Produktverantwortung übernehmen müssen; Digital Fairness Act der EU unterstützen",
+      "zitat": "Wir unterstützen den Digital Fairness Act der EU-Kommission und setzen uns dafür ein, dass große Plattformen – genau wie der Laden um die Ecke – Produktverantwortung übernehmen müssen.",
+      "ursachen_ids": [
+        3601
+      ],
+      "pruefsumme": "7cfaa59eca1b1e76"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "land",
+      "beschreibung": "Bei öffentlichen Bauten, die Innenstädte prägen, künftig auf einen regionalen architektonischen Heimatstil achten",
+      "zitat": "Die öffentliche Hand prägt mit Bauvorhaben maßgeblich Innenstädte und Infrastruktur. […] Bei öffentlichen Bauten soll in Zukunft auf einen architektonischen Heimatstil geachtet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "4eb37440be60e20d"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "land",
+      "beschreibung": "Kostenlose Park-and-Ride-Parkplätze mit inbegriffenem Nahverkehrsticket in die Stadtzentren",
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: […] Kostenlose P+R-Parkplätze mit inkludiertem ÖPNV-Ticket in die Stadtzentren",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "4616d256181f9132"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Mehr Ladezonen und Kurzzeitparkplätze in Geschäftsstraßen einrichten",
+      "zitat": "In Geschäftsstraßen richten wir mehr Ladezonen und Kurzzeitparkplätze ein",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "e7f4a9ac1403762c"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "land",
+      "beschreibung": "Gegen an Attraktivität verlierende Ortskerne Stadtteilzentren stärken, „Dritte Orte“ schaffen und gemischte Quartiere fördern",
+      "zitat": "Ortskerne verlieren an Attraktivität, während Randlagen schlechter angebunden bleiben. […] Dafür stärken wir Stadtteilzentren, schaffen „Dritte Orte“ und fördern gemischte Quartiere.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "c2074ff24dc7e752"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Innerstädtische Fahrspuren und Parkraum erhalten und ausbauen, auch um die Attraktivität des Einzelhandels zu schützen",
+      "zitat": "Gleichzeitig fordert [Partei] den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "e384197974616273"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "land",
+      "beschreibung": "Parkplatzflächen schrittweise zurückbauen zugunsten breiter Gehwege, Radspuren, Grünflächen und Außengastronomie (Flaniermeilen für das lokale Gewerbe)",
+      "zitat": "Wir bauen Parkplatzflächen schrittweise zurück, um Platz für breite Gehwege, sichere Radspuren, Grünflächen und Außengastronomie zu gewinnen. Diese Umwandlung in […] Flaniermeilen belebt das lokale Gewerbe, da Menschen dort einkaufen, wo sie gerne verweilen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603,
+        3604
+      ],
+      "pruefsumme": "0c54609b005c5554"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Leer stehende Gewerbe-, Büro- und Ladenflächen dürfen freiwillig in Wohnraum umgewandelt werden",
+      "zitat": "Wir ermöglichen es, leer stehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umzuwandeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "2ef021feaf58583b"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "land",
+      "beschreibung": "Kommunen erhalten abgestufte Instrumente gegen langfristigen Leerstand: Nutzungs- oder Sanierungsfristen, höhere Abgaben, verpflichtende Zwischennutzung; Übernahme als letztes Mittel",
+      "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpflichtende Zwischennutzung.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "a05d838a374680b3"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Immobilien und alte Fabrikhallen in jedem Bezirk zu lokalen Gründer- und Nachbarschaftszentren (KiezLabs) umbauen, um Nebenstraßen und den stationären Einzelhandel zu beleben",
+      "zitat": "Wir verwandeln leerstehende Immobilien und alte Fabrikhallen in KiezLabs – lokale Innovations- und Gründerzentren in jedem [Land] Bezirk. […] So schaffen wir Arbeitsplätze vor Ort, binden Gründer*innen an ihren Kiez und beleben die Nebenstraßen zum Vorteil des gesamten stationären Einzelhandels.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "34d92ca23c3db750"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "land",
+      "beschreibung": "Stadt- und Ortszentren durch gemeinsame Initiativen von Kommunen und Wirtschaft stärken",
+      "zitat": "Stadt- und Ortszentren werden durch gemeinsame Initiativen von Kommunen und Wirtschaft gestärkt.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "2924660cf5257fed"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "land",
+      "beschreibung": "Bezahlbare landeseigene Gewerbeflächen im Sinne der Nutzungsmischung schaffen, für Betriebe vom Handwerk über den Einzelhandel bis zur Industrie",
+      "zitat": "[Land] Wirtschaft lebt auch von ihrem gewerblichen Fundament – vom Handwerksbetrieb über Manufakturen und den Einzelhandel bis zur Industrie. […] Im Sinne der [Land] Mischung schaffen wir bezahlbare landeseigene Gewerbeflächen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "47eefc6fd7723412"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "bund",
+      "beschreibung": "Städtebauförderung ausbauen und den stationären Einzelhandel stärken (im Rahmen der Stärkung ländlicher Räume und kleiner Städte)",
+      "zitat": "Wir bauen die Städtebauförderung aus und stärken den stationären Einzelhandel.",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3601,
+        3603
+      ],
+      "pruefsumme": "cf22ee519ef00a7d"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "bund",
+      "beschreibung": "Mittel der Städtebauförderung aufstocken und Innenentwicklung vereinfachen, für lebendige, nutzungsgemischte Innenstädte und Ortszentren",
+      "zitat": "Wir wollen lebendige und zukunftsfähige Innenstädte und Ortszentren mit attraktiven und nutzungsdurchmischten Quartieren schaffen. […] Hierfür wollen wir die Mittel für die Städtebauförderung aufstocken und die Anwendung der Innenentwicklungsmaßnahmen vereinfachen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "7265b14817b67219"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "land",
+      "beschreibung": "Öffentlichen Raum klimaangepasst umgestalten und dabei Flächen in Ortskernen und auf Plätzen entsiegeln",
+      "zitat": "Wir unterstützen Städte und Gemeinden bei der Entwicklung und Umsetzung von Hitzeaktionsplänen und fördern eine schnelle, sichtbare klimaangepasste Umgestaltung des öffentlichen Raums. […] Flächen in Ortskernen, auf Plätzen und Schulhöfen entsiegeln",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "ed55e02b96b8c428"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "land",
+      "beschreibung": "Keine Lockerung des Sonntagsöffnungsverbots im Einzelhandel, Zahl der verkaufsoffenen Sonntage verringern",
+      "zitat": "Eine Aufweichung des Verbots der Sonntagsöffnung für den Einzelhandel insbesondere durch digitale Kleinstsupermärkte lehnen wir ab, die Zahl der verkaufsoffenen Sonntage wollen wir reduzieren.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "ad6357845900e155"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "bund",
+      "beschreibung": "Lehnt Fahrverbote für Innenstädte und das Umwidmen von Parkplätzen ab; die Innenstadt soll mit dem Auto erreichbar bleiben.",
+      "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "290e7165b071f655"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "land",
+      "beschreibung": "Sondernutzungsflächen für Einzelhandel und Gastronomie unbürokratisch ausweisen; berlinweit einheitliche, digitale Genehmigungsstandards mit Fristen für Warenauslagen und Außengastronomie",
+      "zitat": "Wir wollen, dass Sondernutzungsflächen für den Einzelhandel, Schankbetriebe und kulturelle Projekte unbürokratisch ausgewiesen werden […] Für Außengastronomie, Schankvorgärten, Warenauslagen und temporäre Nutzungen schaffen wir berlinweit einheitliche, digitale und rechtssichere Genehmigungsstandards mit verbindlichen Fristen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "d2fec504dbf55da7"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "land",
+      "beschreibung": "Keine Durchfahrtssperren wie Poller, damit Einzelhandel für Kunden und Lieferanten erreichbar bleibt; einheitlicher Baukasten für Verkehrsberuhigung für die Bezirke",
+      "zitat": "Dazu werden wir die Verkehrssicherheit erhöhen, aber dabei nicht auf Durchfahrtsbeschränkungen wie Poller setzen. Polizei und Feuerwehr wie Müllabfuhr müssen schnell überall hin gelangen, wohnungsnaher Einzelhandel und Supermärkte erreichbar für Kunden wie Lieferanten sein.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "e706a1bc97c1ce2a"
+    },
+    {
+      "kennung": "M63",
+      "ebene": "land",
+      "beschreibung": "Einkaufszentren zu multifunktionalen Orten mit Kultur, Bildung, Gesundheit und Verwaltung weiterentwickeln; Mischnutzung, flexible Mietmodelle und Zwischennutzung gegen Leerstand fördern",
+      "zitat": "Wir wollen Einkaufszentren zu multifunktionalen Orten weiterentwickeln, die neben Handel auch Raum für Kultur, Bildung, Gesundheit und öffentliche Dienstleistungen bieten. Dazu sollen […] Mischnutzung, flexible Mietmodelle und Zwischennutzungskonzepte gefördert werden, um Leerstand zu vermeiden und lebendige Quartierszentren zu erhalten.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "a0eb4978ef7b34ad"
+    },
+    {
+      "kennung": "M64",
+      "ebene": "land",
+      "beschreibung": "Am Alexanderplatz einen Nutzungsmix vor allem mit Kultur und eine ansprechende Gestaltung ermöglichen",
+      "zitat": "Die Innenstadt muss Lebensraum für alle sein und braucht eine hohe Aufenthaltsqualität. […] Der Alexanderplatz ist für viele [Land]*innen ein zentraler Ort. Damit der Platz Aufenthaltsqualität zurückerhält, wollen wir einen Nutzungsmix insbesondere mit Kultur und eine ansprechende Gestaltung ermöglichen.",
+      "ursachen_ids": [
+        3602,
+        3603
+      ],
+      "pruefsumme": "cc078d2858b8856d"
+    },
+    {
+      "kennung": "M65",
+      "ebene": "land",
+      "beschreibung": "Genehmigungsverfahren bei Betriebsübernahmen vereinfachen, damit Betriebe etwa im Einzelhandel nicht schließen",
+      "zitat": "[…] Nahversorgung, gerade in Gastronomie, Einzelhandel und Handwerk. Wir vereinfachen Genehmigungsverfahren bei Betriebsübernahmen […], damit Nachfolger*innen nicht am ersten Tag mit Auflagen für bauliche Veränderungen konfrontiert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "919af2456b7f83da"
+    },
+    {
+      "kennung": "M66",
+      "ebene": "land",
+      "beschreibung": "Mehr Polizeipräsenz in den Innenstädten und an Kriminalitätsschwerpunkten, höherer Kontrolldruck, wirksamere Platzverweise und Aufenthaltsverbote",
+      "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "adaba944ab5b89ec"
+    },
+    {
+      "kennung": "M67",
+      "ebene": "land",
+      "beschreibung": "Das Verbot der Ladenöffnung an Sonntagen vollständig aufheben (im Kapitel Tourismus).",
+      "zitat": "Wir werden: […] das Sonntagsöffnungsverbot vollständig aufheben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "2354c7da05a1858d"
+    },
+    {
+      "kennung": "M68",
+      "ebene": "land",
+      "beschreibung": "Empfehlungen des [Land] Zentrengipfels umsetzen, um Einkaufsstraßen attraktiver zu machen, und lokale Selbstorganisation stärken",
+      "zitat": "Stationärer Einzelhandel, vielfältige Gastronomie- und Kulturangebote beleben Kieze und schaffen Begegnung – zwischen [Land]*innen und Gästen aus aller Welt. Um Einkaufsstraßen attraktiver zu machen, setzen wir die Empfehlungen des [Land] Zentrengipfels konsequent um und stärken lokale Selbstorganisation.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "e0854fa155847868"
+    },
+    {
+      "kennung": "M69",
+      "ebene": "land",
+      "beschreibung": "Bauliche Umgestaltung von Vierteln mit viel Einzelhandel, um Aufenthaltsqualität, Sauberkeit und Sicherheit zu erhöhen",
+      "zitat": "Wir werden uns dafür einsetzen, dass stark vom Einzelhandel geprägte Viertel echte bauliche Umgestaltungen erfahren, um die Aufenthaltsqualität zu erhöhen, da zu ihrer Attraktivität eine angenehme Atmosphäre gehört, die mittels Sauberkeit und Sicherheit gewährleistet wird.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "b5f3138192ea1d95"
+    },
+    {
+      "kennung": "M70",
+      "ebene": "land",
+      "beschreibung": "Leerstand aktiv managen: kommunales Leerstands- und Brachflächenmanagement und Förderung temporärer Zwischennutzungen (im Kapitel Wohnraum)",
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "f6b23568c7b610c8"
+    },
+    {
+      "kennung": "M71",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Shoppingcenter und Ladenzeilen mit Jugend-, Kultur-, Sport- und sozialen Angeboten neu beleben, Zwischennutzungen fördern und Genehmigungen vereinfachen",
+      "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "21df89d50a168bd5"
+    },
+    {
+      "kennung": "M72",
+      "ebene": "land",
+      "beschreibung": "Entwicklungsinstrumente gezielt nutzen, um Dorfkerne sowie Gewerbe- und Industrieflächen zu stärken",
+      "zitat": "Gleichzeitig werden wir Entwicklungsinstrumente gezielt nutzen, um Dorfkerne und Gewerbe- und Industrieflächen zu stärken und so die regionale Wirtschaftskraft nachhaltig zu fördern.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "e492d20e31d98a2a"
+    },
+    {
+      "kennung": "M73",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für den Umbau von Handelsimmobilien zu Wohn-, Büro- und Kulturnutzungen",
+      "zitat": "Wir werden […] ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "d9c4138a98aba00b"
+    },
+    {
+      "kennung": "M74",
+      "ebene": "land",
+      "beschreibung": "Kredite zu Sonderkonditionen für die Sanierung der Altbausubstanz in historischen Innenstadtbereichen ermöglichen",
+      "zitat": "In [Land] verfügen viele Städte über eine gute Altbausubstanz, vor allem in den historischen Innenstadtbereichen. […] Eine [Partei]-geführte Landesregierung wird die Kreditvergabe zu Sonderkonditionen für die Sanierung dieser Altbausubstanz […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "d2b8e256197ef4e4"
+    },
+    {
+      "kennung": "M75",
+      "ebene": "bund",
+      "beschreibung": "Geschäfte und Gastronomie im Gewerbemietrecht vor Verdrängung schützen",
+      "zitat": "Geschäfte und Gastronomie sind ebenso ein Teil davon: Wir wollen diese Orte deshalb im Gewerbemietrecht vor Verdrängung schützen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "dc52826f58002bc6"
+    },
+    {
+      "kennung": "M76",
+      "ebene": "land",
+      "beschreibung": "Ortsumfahrungen schneller realisieren, um die Ortskerne vom Durchgangsverkehr zu entlasten",
+      "zitat": "Aber auch Ortsumfahrungen müssen schneller realisiert werden, um die Ortskerne zu entlasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "9f2b1a2d24442046"
+    },
+    {
+      "kennung": "M77",
+      "ebene": "land",
+      "beschreibung": "Keine neuen Shopping-Center mehr genehmigen, um die Verdrängung von Kleingewerbe zu stoppen",
+      "zitat": "Da [Land] schon jetzt ein Überangebot an Shopping-Centern aufweist, die zu einer Verdrängung von Kleingewerbe führen, schlagen wir vor, dass keine solchen neu genehmigt werden.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "c5f86ec186fee07e"
+    },
+    {
+      "kennung": "M78",
+      "ebene": "land",
+      "beschreibung": "Standortgemeinschaften (BIDs) in allen Bezirken ermöglichen und Bezirke beim Aufbau von Managementteams für überregional bedeutende Standorte unterstützen",
+      "zitat": "[Land] Einzelhandel – eine [Land] Besonderheit […] In allen 12 Bezirken ermöglichen wir die Gründung von Standortgemeinschaften (BIDs) und lebendigen Bündnissen aus Gastronomie, Gewerbe, Kultur, Anwohner*innen und Eigentümer*innen. Zu diesem Zweck unterstützen wir die Bezirke darin, Managementteams für die überregional bedeutenden Standorte einzurichten.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "8f932aec748fc338"
+    },
+    {
+      "kennung": "M79",
+      "ebene": "land",
+      "beschreibung": "Leer gefallene Shoppingcenter in öffentliche Hand überführen und als gemeinschaftlich betriebene Sorgezentren im Quartier nutzen",
+      "zitat": "Insbesondere leer gefallene Shoppingcenter wollen wir dafür in die öffentliche Hand überführen und gemeinschaftlich und demokratisch über Quartiers-Sorgeräte betreiben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "58a276acc0c2a6d3"
+    },
+    {
+      "kennung": "M80",
+      "ebene": "land",
+      "beschreibung": "Acht verkaufsoffene Sonntage tatsächlich ermöglichen, rechtssichere Sonntagsöffnung; Bezirke dürfen zweimal im Jahr zusätzliche verkaufsoffene Sonntage festlegen",
+      "zitat": "Unser Ziel sind lebenswerte Innenstädte, mit einem lebendigen und starken Einzelhandel. Wir stehen für eine rechtssichere Gestaltung der Sonntagsöffnung und setzen uns dafür ein, dass die gesetzlich möglichen acht verkaufsoffenen Sonntage auch tatsächlich stattfinden. Darüber hinaus sollen die Bezirke zweimal im Jahr zusätzliche verkaufsoffene Sonntage für besondere bezirkliche Anlässe festlegen können.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "94d0e4fc150f999d"
+    },
+    {
+      "kennung": "M81",
+      "ebene": "land",
+      "beschreibung": "Ladenöffnungszeitengesetz vollständig liberalisieren, mit größtmöglicher Ausweitung der Sonntagsöffnungen und Öffnungen an Feiertagen",
+      "zitat": "Wir werden schnellstmöglich die vollständige Liberalisierung des Ladenöffnungszeitengesetzes vorantreiben, die insbesondere eine größtmögliche Ausweitung der Sonntagsöffnungen sowie Öffnungen an Feiertagen ermöglicht.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "61dba3e6f7acb0d2"
+    }
+  ]
+}

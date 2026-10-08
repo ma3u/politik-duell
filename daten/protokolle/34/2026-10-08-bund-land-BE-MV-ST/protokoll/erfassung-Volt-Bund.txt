@@ -1,0 +1,63 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Polizei, Verwaltung und Justiz werden durch unabhängige Kontrollstellen überwacht, die Fehlverhalten transparent aufarbeiten",
+      "ursachen_ids": [3403],
+      "zitat": "Einrichtung unabhängiger Kontrollstellen: Polizei, Verwaltung und Justiz werden durch unabhängige Kontrollstellen überwacht, die Fehlverhalten transparent aufarbeiten und institutionelle Verantwortung gewährleisten.",
+      "seite": 143
+    },
+    {
+      "beschreibung": "Unabhängige Beschwerdestellen gegen Diskriminierung (auch durch Sicherheitsbehörden) ausbauen",
+      "ursachen_ids": [3403],
+      "zitat": "Deshalb setzt sich Volt für diese Zukunft ein: • Unabhängige Beschwerdestellen: Unabhängige Beschwerdestellen werden ausgebaut, um stärker gegen Diskriminierung vorzugehen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Bodycams und Personalrotation bei Polizei und anderen Institutionen einsetzen, um Transparenz zu sichern",
+      "ursachen_ids": [3403],
+      "zitat": "Zusätzlich werden technische Maßnahmen wie Bodycams und Personalrotation eingesetzt, um Transparenz und Unvoreingenommenheit zu gewährleisten.",
+      "seite": 143
+    },
+    {
+      "beschreibung": "Verpflichtende Schulungen für Sicherheitskräfte, um unbewusste Diskriminierung zu erkennen und zu verhindern",
+      "ursachen_ids": [3402],
+      "zitat": "Verpflichtende Schulungen: Sicherheitskräfte werden geschult, um unbewusste Diskriminierung zu erkennen und zu verhindern.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Begegnungsräume zwischen Polizei, migrantischen Communities und Sozialarbeit schaffen, um Vorurteile abzubauen",
+      "ursachen_ids": [3402],
+      "zitat": "Förderung von Dialog und Begegnung: Begegnungsräume zwischen Polizei, migrantischen Communities und Fachkräften der Sozialarbeit fördern den Austausch, bauen Vorurteile ab und stärken das gegenseitige Verständnis.",
+      "seite": 143
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3401,
+      "seiten": [32, 33, 34, 35, 36],
+      "grund": "Kapitel Innere Sicherheit gelesen: keine Regeln zu anlasslosen Kontrollen, Kontrollbescheinigung, Kontrollorten oder Kontrollbefugnissen; einheitliches Polizeigesetz (S. 36) ohne Inhalt zu Kontrollen."
+    }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2–5); Kapitel „Innere Sicherheit“ S. 31–38 (Innere Sicherheit in Deutschland, Ausrüstung, Strafverfolgung, Bundesweite Standards, Schutz gefährdeter Gruppen, Jugendkriminalität); Kapitel „Kein Platz für Rassismus“ S. 141–144; weitere Polizei-Stellen S. 26, S. 145 (Antisemitismus), S. 160 (Pressefreiheit); Fundstelle S. 132.
+
+Nicht erfasst:
+- S. 34: Bodycams „stärker in den Dienst integriert“ und Ergänzung der Strafprozessordnung „im Hinblick auf den sachgerechten Einsatz von Bodycams“ – dasselbe Instrument wie die erfasste Bodycam-Zusage S. 143 (dort ausdrücklich mit Ziel Transparenz); einmal erfasst.
+- S. 143: „Verpflichtende antirassistische Schulungen“ für Polizei, Verwaltung und Justiz – gleiche Zusage wie Schulungen für Sicherheitskräfte S. 37; einmal erfasst.
+- S. 33: Mehr Personal, Rückgabe subsidiärer Aufgaben – nach R2 Sicherheit.
+- S. 35: Opportunitätsprinzip, Digitalisierung der Fallbearbeitung – Strafverfolgung, nicht Umgang bei Polizeikontakten.
+- S. 36: Einheitliches Polizeigesetz, einheitliche Ausbildungsstandards, moderne Ausrüstung – Vereinheitlichung bzw. Ausstattung (R2) ohne Inhalt zu Kontrollen, Kommunikation oder Fortbildungsinhalten.
+- S. 37: Diversität in Polizei und Justiz – Personalgewinnung, nicht Einsatzpraxis/Fortbildung.
+- S. 38: Präventionsprogramme für straffällige Jugendliche – Jugendhilfe, nicht Polizeikontakte.
+- S. 143: Antidiskriminierungsbeauftragte, Bundesnetzwerk Antidiskriminierung – Diskriminierung im Alltag (R2), nicht polizeispezifisch.
+- S. 144: Whistleblower-Schutz für Missstände in staatlichen Institutionen – allgemein, kein Bezug zu Polizeieinsätzen.
+- S. 145: Fortbildungen für Polizei und Justiz zum Erkennen antisemitischer Vorfälle – Aufklärung von Straftaten (Sicherheit/Antisemitismus).
+- S. 160: Schulungen für die Polizei zum Schutz der Presse bei Demonstrationen – „sollen“, Schutz der Presse, anderer Zusammenhang.
+- S. 26: Schranken für KI-Überwachung bei polizeilichen Ermittlungen – Überwachung/Datenschutz, nicht Kontrollen.
+- S. 132: „Deeskalation“ von Gewalt in sozialen Medien (Mobbing) – anderer Zusammenhang.
+
+Richtungen ohne Maßnahme: 3401 beide Richtungen; 3402 „Handlungsfähigkeit und Rückhalt der Polizei“.

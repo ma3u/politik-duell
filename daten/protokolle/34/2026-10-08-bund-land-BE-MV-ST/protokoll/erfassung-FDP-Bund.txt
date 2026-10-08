@@ -1,0 +1,33 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Keine flächendeckende Überwachung im öffentlichen Raum; automatisierte Gesichtserkennung im öffentlichen Raum wird abgelehnt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Eine flächendeckende Überwachung im öffentlichen Raum darf es daher nicht geben. Den Einsatz von automatisierter Gesichtserkennung im öffentlichen Raum lehnen wir ab.",
+      "seite": 24
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3402, "seiten": [22, 23, 24, 25, 26], "grund": "Kapitel IV.a/b gelesen; nichts zu Einsatzpraxis, Kommunikation, Aus- oder Fortbildung der Polizei bei Kontakten mit Bürgern. Fortbildung zur IHRA-Antisemitismusdefinition (S. 26) gehört zu Antisemitismus." },
+    { "ursache": 3403, "seiten": [22, 23, 24, 25, 26], "grund": "Keine Beschwerdestelle, Polizeibeauftragte, Kennzeichnung oder Einsatzdokumentation. Kontrolle betrifft nur die Nachrichtendienste (S. 22); Aufzeichnung betrifft Strafprozesse vor Gericht (S. 23)." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 3–4), Kapitel IV Einleitung und IV.a „Grundrechte und Rechtstaat bewahren“ (S. 21–25), IV.b „Offene Gesellschaft und liberale Demokratie“ (S. 25–26), Fundstelle S. 24. Zusätzlich Volltextsuche nach Polizei, Kontroll, Beschwerde, Bodycam, Kennzeichnung, Sicherheitsbehörden, Beamt, Jugendlich, Staatsanwalt, Gewalt.
+
+Erfasst: S. 24 Ablehnung flächendeckender Überwachung und automatisierter Gesichtserkennung im öffentlichen Raum – Grenzfall zu 3401 (Befugnis der Polizei im öffentlichen Raum, aber keine Kontrolle im Sinne eines Polizeikontakts), daher ursachen_offen.
+
+Nicht erfasst:
+- S. 24 „Videoüberwachung kann an einzelnen Kriminalitätsschwerpunkten wie Bahnhöfen Sinn ergeben …“ – Möglichkeit („kann“), keine Zusage.
+- S. 22 Überwachungsgesamtrechnung, Freiheitskommission, Prüfung neuer Befugnisse der Sicherheitsbehörden – allgemein für alle Sicherheitsbehörden und künftige Befugnisse, keine Regel für Polizeikontrollen; „geprüft werden“.
+- S. 22 Kontrolle der Nachrichtendienste neu ordnen – betrifft Nachrichtendienste, nicht Polizei.
+- S. 23 Kontrollen unterschiedlicher Behörden im Verbund gegen Clankriminalität stärken – Kriminalitätsbekämpfung (Sicherheit, R2).
+- S. 25 Polizei soll LSBTI-feindliche Hasskriminalität einheitlich erfassen – Aufklärung von Straftaten (Sicherheit, R2).
+- S. 26 Schutz gefährdeter Gruppen, wissenschaftliche Expertise in Sicherheitsbehörden, IHRA-Definition als Grundlage von Fortbildungen – Extremismus/Antisemitismus, anderer Zusammenhang.
+
+Richtungen ohne Maßnahme: Kontrollen begrenzen und nachvollziehbar machen; Kommunikation und Fortbildung der Polizei; Handlungsfähigkeit und Rückhalt der Polizei; Unabhängige Beschwerde- und Kontrollstellen; Dokumentation und faire Verfahren.
+Seiten ohne Text: S. 1–2 (Titel), ohne Bedeutung.

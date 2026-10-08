@@ -1,0 +1,50 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Mehr Bundesmittel für Sportvereine und ehrenamtliche Initiativen bereitstellen",
+      "ursachen_ids": [3703],
+      "zitat": "Breitensport und Vereine: Es werden mehr Bundesmittel für Sportvereine und ehrenamtliche Initiativen zur Verfügung gestellt.",
+      "seite": 130
+    },
+    {
+      "beschreibung": "Sportstätten barrierefrei gestalten und spezielle Förderprogramme für Menschen mit Behinderung einrichten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3701],
+      "zitat": "Inklusive Sportangebote: Sportstätten werden barrierefrei gestaltet und spezielle Förderprogramme für Menschen mit Behinderung eingerichtet, um allen eine gleichberechtigte Teilhabe zu ermöglichen.",
+      "seite": 161
+    },
+    {
+      "beschreibung": "Nationale Kampagnen zur Gewinnung neuer Vereinsmitglieder, besonders Kinder, Jugendliche und sozial Benachteiligte",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Mitgliedergewinnung: Nationale Kampagnen sollen neue Vereinsmitglieder gewinnen, insbesondere unter Kindern, Jugendlichen und sozial benachteiligten Gruppen.",
+      "seite": 161
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [42, 93, 94, 130, 161, 162], "grund": "Keine Zusage zu Betriebs- oder Nutzungskosten von Sportstätten (Hallenmieten, Energiekosten, Betriebszuschüsse). Treffer zu Auslastung/Eigenverantwortung betreffen Rüstung (S. 42), Rente (S. 93), Finanzbildung (S. 94) und Gesundheitskompetenz (S. 130)." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis S. 2–4; Kapitel „Sport als Schlüssel zu Gesundheit, Gemeinschaft und Erfolg“ S. 161–163 vollständig; „Gesundheit durch Prävention“ S. 129–131; Fundstellen S. 42, 93, 94, 160; außerdem S. 15 (Föderalismusreform und starke Kommunen), S. 65 (Investitionen in Infrastruktur) und S. 147 (Inklusion, Barrierefreiheit in Kultur und Sport).
+
+Erfasst:
+- S. 130: mehr Bundesmittel für Sportvereine -> 3703. Gleichartige Stelle S. 161 („Förderung von Sportvereinen: Lokale Vereine werden finanziell unterstützt, um ihre Angebote zu modernisieren …“) nicht gesondert erfasst (gleiche Zusage, S. 130 konkreter: Bundesmittel, mehr).
+- S. 161: barrierefreie Gestaltung von Sportstätten -> 3701 offen (Umbau von Sportstätten, aber auf Barrierefreiheit gerichtet, keine Zusage zu Sanierung oder Investitionsrückstand).
+- S. 161: Kampagnen zur Mitgliedergewinnung -> 3703 offen (Unterstützung der Vereine, setzt aber nicht an Förderung/Finanzen im Sinne von R1 an, allenfalls über Beitragseinnahmen).
+
+Nicht erfasst:
+- S. 130 „Bewegungsfreundliche Infrastrukturen“: allgemeine Infrastrukturprojekte für Bewegung, keine Sportstätten oder Vereine.
+- S. 147 „Barrierefreiheit in Kultur und Sport“: Förderung zugänglicher Sportangebote allgemein, weder Sportstätten noch Vereinsförderung ausdrücklich; inhaltlich nahe an der erfassten Stelle S. 161.
+- S. 162 Leistungssport (Sportfördergesetz, Spitzensportagentur, duale Karrieren): Spitzensport ohne Bezug zu Vereinen/Sportstätten (R2).
+- S. 162 Tägliche Bewegung in Schulen; kommunale kostenlose Bewegungsangebote für Erwachsene: keine Vereine oder Sportstätten.
+- S. 163 Krankenkassen-Bonusprogramme inkl. Vereinsmitgliedschaften: Anreiz für Einzelne, nicht Förderung der Vereine oder Sportstätten.
+- S. 163 Digitale Plattform für Sportangebote: Vernetzung, keine Finanzierung.
+- S. 160 Gemeinnützigkeitsrecht: betrifft gemeinnützigen Journalismus.
+- S. 15 Moderne Kommunalfinanzierung (Ersatz der Gewerbesteuer) und S. 65 Infrastrukturinvestitionen: allgemein, Sportstätten nicht genannt.
+
+Richtungen ohne Maßnahme: 3701 „Bestand priorisieren und gemeinsam nutzen“; 3702 beide Richtungen; 3703 „Eigeneinnahmen und Kooperation der Vereine“ (nur Mitgliederkampagne als Grenzfall).

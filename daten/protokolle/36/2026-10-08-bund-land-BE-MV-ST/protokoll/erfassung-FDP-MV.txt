@@ -1,0 +1,32 @@
+{
+  "partei_id": 14,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Das Verbot der Ladenöffnung an Sonntagen vollständig aufheben (im Kapitel Tourismus).",
+      "ursachen_ids": [],
+      "ursachen_offen": [3604],
+      "zitat": "Wir Freie Demokraten werden: […] das Sonntagsöffnungsverbot vollständig aufheben.",
+      "seite": 19
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3602, "seiten": [4, 12, 13, 15, 20, 35, 63, 65], "grund": "Ansiedlung nur von Industrie, Gewerbeflächen, Bundeswehr, Digitalwirtschaft und Forschung; Standortmarketing für Tagungstourismus; nichts zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten." },
+    { "ursache": 3603, "seiten": [76, 124], "grund": "Instandhaltung betrifft Sportstätten; S. 76 nur allgemein gegen Verödung von Dörfern und Städten ohne konkrete Zusage zum öffentlichen Raum." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 2; Wirtschaft und Arbeit S. 4–6, 15, Tourismus S. 19–20; Fundstellen S. 4, 12, 13, 15, 19, 20, 35, 56, 63, 65, 83, 124; Kapitel „Kommunen als Fundament und Rückgrat des Landes“ S. 75–80. Zusätzliche Volltextsuche nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Stadtentwicklung, Parken, Ladenöffnung, Nahversorgung: keine Treffer zu Innenstädten.
+
+Grenzfall: S. 19 „Sonntagsöffnungsverbot vollständig aufheben“ – Öffnungszeiten gehören nach R1 zu 3604, das Zitat nennt aber weder Innenstadt noch Einzelhandel (R2); steht im Tourismuskapitel. Daher ursachen_offen 3604.
+
+Nicht erfasst:
+- S. 15: Regulatory Sandboxes u. a. für „neue Formen des Onlinehandels“ – Digitalwirtschaft, kein Bezug zu Innenstadt/lokalem Handel; 3601 im Landesauftrag ohnehin nicht zulässig.
+- S. 56: Öffnungszeiten von Behörden (Verwaltungsdigitalisierung), anderer Zusammenhang.
+- S. 83: Öffnungszeiten von Kitas, anderer Zusammenhang.
+- S. 76: „Einer Verödung unserer Dörfer und Städte stellen wir uns entschieden entgegen.“ – allgemeines Bekenntnis zu freiwilligen kommunalen Leistungen, keine konkrete Handlung zu Innenstädten.
+- S. 4: Gewerbeflächenmanagement, Freiheitszonen – Industrie/Gewerbe, keine Innenstadt.
+
+Richtungen ohne Maßnahme: Nutzungsmischung und Ansiedlung, Marktprofile, Aufenthaltsqualität, Sauberkeit/Instandhaltung, Erreichbarkeit mit Auto, Nahmobilität.
+Seiten ohne Text: 1, 3, 36, 54, 67, 74, 81, 121, 127, 130 sind Titel- und Kapiteltrennseiten; kein Hinweis auf fehlenden Inhalt.

@@ -1,0 +1,34 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Neues Stadtumbauprogramm bis 2035 gegen Leerstand finanzieren, für Rückbau und Aufwertung im Bestand (Abschnitt beginnt mit der Verödung der Innenstädte)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602, 3603],
+      "zitat": "Wir wollen: […] gegen den Leerstand die Auflage eines neuen Stadtumbauprogramms bis 2035 für den Rückbau und Aufwertung im Bestand finanzieren.",
+      "seite": 85
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3603, "seiten": [19, 81], "grund": "S. 19 Präambel/Einleitung (Stadtgrün allgemein); S. 81 Kommune der Zukunft: Instandhaltung von Fuß- und Radwegen allgemein, ohne Bezug zu Innenstadt oder Einzelhandel (R2)." },
+    { "ursache": 3604, "seiten": [63, 81, 104], "grund": "S. 63 Öffnungszeiten von Jugendeinrichtungen (anderer Zusammenhang); S. 81 und S. 104 Rad- und Fußverkehr allgemein, ohne Innenstadt, Ortskern, Einzelhandel oder Leerstand im Zitat (R2)." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2–6; Kapitel 9 Kommunalpolitik und Wohnen S. 81–85 (Kommune der Zukunft, Wohnen, Abschnitt „Städtebau, Gemeindeentwicklung und Leerstand“ S. 85); S. 58 (ÖPNV für Senior:innen, „Geschäften“); S. 63 (Freiräume, Leerstand); S. 75 (Medien); S. 94–95 (Tourismus und Gastronomie); S. 103–104 (Rad- und Fußverkehr); S. 108, 114, 124, 125 (Fundstellen „Ansiedlung“); S. 149 (Digital-Points im Tante-Emma-Laden). Zusätzliche Suche nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Gewerbemieten, Quartier, Nahversorgung, Laden.
+
+Grenzfall S. 85: Der Abschnitt beginnt mit „Die Verödung der Innenstädte …“ und explodierenden Gewerbemieten, die Zusagen (Stadtumbauprogramm gegen Leerstand, Rückbau und Aufwertung im Bestand) zielen aber überwiegend auf Wohnungsbestand (Plattenbauten). Ob das an Ansiedlung/Nutzungsmischung (3602) oder Gestaltung/Stadtbild (3603) ansetzt, lässt der Leitfaden offen – daher ursachen_offen.
+
+Nicht erfasst:
+- S. 85: „Die Linke setzt sich für Nachnutzung und moderate Verdichtung … ein“ und „Eine unkontrollierte Zersiedelung durch Neubauten am Stadtrand und auf der grünen Wiese lehnen wir ab“ – Grundhaltung ohne konkrete Handlung.
+- S. 85: Rückläufe zweckgebunden u. a. für „Wiederertüchtigung von Leerstand“ – Fortführung bestehender Mittelverwendung im Wohnraumförderfonds, Wohnungsbezug; Stadtumbau zur Quartiersentwicklung fortführen – ohne Innenstadt/Leerstand im Zitat (R2); Zweckentfremdungsgesetz, Plattenbau-Förderprogramm – Wohnen (R2).
+- S. 83: Stadtumbauprogramme aufstocken, Wohnumfeld fördern – Wohnungspolitik ohne Innenstadt/Einzelhandel/Leerstand im Zitat (R2).
+- S. 63: Leerstand zu Freiräumen für Jugendliche machen – Jugendpolitik, nicht Einkaufsangebot/Innenstadt.
+- S. 58: ÖPNV-Ausbau für Senior:innen (Weg zu Geschäften) – allgemeiner ÖPNV, kein Innenstadtbezug.
+- S. 75: Standortmarketing durch regionale Medien – Lagebeschreibung, Medienpolitik.
+- S. 108, 114, 124, 125: „Ansiedlung“ von Großspeichern, Fischbeständen, Industrie – anderer Zusammenhang.
+- S. 94–95: Tourismus/Gastronomie – kein Innenstadt- oder Einzelhandelsbezug.
+- S. 149: Digital-Points im Tante-Emma-Laden – digitale Teilhabe, nicht Einzelhandel.
+Richtungen ohne Maßnahme: Marktprofile, Sauberkeit/Sicherheit, Auto/Parken, Nahmobilität zur Innenstadt, Öffnungszeiten.

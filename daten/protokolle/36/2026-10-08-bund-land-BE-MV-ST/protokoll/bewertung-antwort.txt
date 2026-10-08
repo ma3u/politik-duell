@@ -1,0 +1,126 @@
+{
+  "blind_pruefsumme": "0281ff0f128c4d4f359f2325f7dbc11e5671b48e460d443b38cb1652e66edf33",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Allgemeine Strategie und Kooperation zur Stärkung von Innenstädten und Einzelhandel ohne konkretes Instrument (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Abstimmung von Land, Kommunen und Handel kann Maßnahmen bündeln; ohne benanntes Instrument, Mittel oder Ziel ist eine spürbare Wirkung auf Angebot und Leerstand aber kaum zu erwarten.", "evidenz": "offen" },
+    { "kennung": "I2", "name": "Leerstandserfassung und Leerstandsmonitoring für Gewerbeflächen (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Ein Kataster schafft Transparenz und erleichtert Vermittlung an Nutzer; es ändert aber weder Nachfrage noch Mieten und wirkt nur zusammen mit weiteren Instrumenten.", "evidenz": "offen" },
+    { "kennung": "I3", "name": "Zwischennutzung leerstehender Flächen fördern und Genehmigungen dafür erleichtern (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Zwischennutzungen beleben leere Läden kurzfristig und mit wenig Risiko; sie sind befristet, oft ohne Handel, und ob sie zu dauerhafter Vermietung führen, ist kaum untersucht.", "evidenz": "offen" },
+    { "kennung": "I4", "name": "Förderprogramm zum Umbau von Handelsimmobilien für gemischte Nutzungen (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Dauerhafte Mischnutzung (Kultur, Bildung, Gründer, Dienste) bringt Besuchsanlässe in Zentren zurück; Wirkung auf den verbleibenden Handel ist kaum belegt, Umbau ist teuer und dauert.", "evidenz": "offen" },
+    { "kennung": "I5", "name": "Kommunaler Erwerb leerstehender Gewerbeimmobilien, auch über Vorkaufsrechte (Land)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Öffentliches Eigentum erlaubt gezielte Belegung leerer Flächen; Erwerb ist teuer, Vorkaufsrechte sind rechtlich eng, und Gemeinwohlnutzungen schaffen nicht unbedingt Einkaufsangebote.", "evidenz": "offen" },
+    { "kennung": "I6", "name": "Bundesmittel für kommunalen Erwerb leerstehender Gewerbeimmobilien für Gemeinwohlnutzungen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Ein Fonds kann Kommunen den Zugriff auf Leerstand ermöglichen; Kultur- oder Sorgenutzungen beleben Zentren, schaffen aber kaum Einkaufsangebote, Wirkung kaum untersucht.", "evidenz": "offen" },
+    { "kennung": "I7", "name": "Pflichten, Fristen und Abgaben gegen langfristigen Gewerbeleerstand (Land)", "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Erfahrungen mit der französischen Leerstandsabgabe: in gefragten Lagen bringt sie Eigentümer zum Gespräch, in schwachen Lagen kaum Wirkung. Landesrechtliche Grundlage und Eigentumsschutz sind ungeklärt.", "evidenz": "gemischt", "beleg_studie_url": "https://www.banquedesterritoires.fr/taxe-sur-les-friches-commerciales-un-outil-utiliser-bon-escient" },
+    { "kennung": "I8", "name": "Mehr verkaufsoffene Sonntage und längere Ladenöffnung im verfassungsrechtlichen Rahmen (Land)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Studien zur Freigabe der Sonntagsöffnung in Europa zeigen mehr Beschäftigung und Ausgaben; wenige zusätzliche Sonntage wirken vor allem als Ereignis. Sonntagsöffnungen brauchen einen Anlass und werden oft gerichtlich gekippt.", "evidenz": "gemischt", "beleg_studie_url": "https://researchonline.lse.ac.uk/id/eprint/61156/" },
+    { "kennung": "I9", "name": "Vollständige Freigabe der Ladenöffnung an Sonn- und Feiertagen (Land)", "wirksamkeit": 2, "umsetzbarkeit": 0, "begruendung": "Freigabe der Sonntagsöffnung brachte in Europa mehr Beschäftigung und Ausgaben, kleine Geschäfte profitieren aber weniger. Der Sonntagsschutz (Art. 140 GG, Art. 139 WRV) verbietet laut BVerfG eine generelle Freigabe.", "evidenz": "gemischt", "beleg_studie_url": "https://researchonline.lse.ac.uk/id/eprint/61156/" },
+    { "kennung": "I10", "name": "Autoerreichbarkeit von Geschäftsstraßen sichern: Ladezonen, Kurzzeitparken, keine Durchfahrtssperren (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Nach einer Studie zu Madrid sanken Ladenausgaben Auswärtiger nach Zufahrtsbeschränkungen; andere Studien finden Vorteile von Verkehrsberuhigung. Kurzzeitparken und Lieferzonen sind lokal leicht umsetzbar.", "evidenz": "gemischt", "beleg_studie_url": "https://www.iese.edu/insight/articles/low-emission-zones-business-commerce/" },
+    { "kennung": "I11", "name": "Fahrspuren und Parkraum in Innenstädten erhalten, keine Fahrverbote (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Autoerreichbarkeit kann Besuche aus dem Umland sichern (Madrid-Studie), Fußgängerzonen zeigen aber oft mehr Umsatz. Parkraum regeln die Kommunen; der Bund kann nur über StVO und Förderung beitragen.", "evidenz": "gemischt", "beleg_studie_url": "https://www.iese.edu/insight/articles/low-emission-zones-business-commerce/" },
+    { "kennung": "I12", "name": "Verkehrsberuhigung und Umverteilung des Straßenraums zugunsten Fuß-, Radverkehr und Aufenthalt in Zentren (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Übersichten aus Deutschland und Großbritannien zeigen meist mehr Passanten und Umsatz in beruhigten Zonen, mit Einbußen in der Übergangszeit und am Rand; Zufahrtsbeschränkungen können Kunden aus dem Umland verdrängen.", "evidenz": "gemischt", "beleg_studie_url": "https://trid.trb.org/View/408042" },
+    { "kennung": "I13", "name": "Park-and-Ride am Stadtrand mit Nahverkehr in die Zentren (Land)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Erleichtert Besuchern aus dem Umland die Anreise und entlastet die Innenstadt; Park-and-Ride deckt seine Kosten meist nicht, ein kostenloses Ticket erhöht den Zuschussbedarf, die Wirkung auf den Handel ist kaum untersucht.", "evidenz": "offen" },
+    { "kennung": "I14", "name": "Bauliche Aufwertung und Umgestaltung öffentlicher Räume in Zentren (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Fallstudien zeigen nach Aufwertungen mehr Aufenthalt und höhere Ladenmieten; kausale Studien sind selten, höhere Mieten können kleine Geschäfte belasten. Umsetzung über Kommunen und Förderung in mehreren Jahren.", "evidenz": "gemischt" },
+    { "kennung": "I15", "name": "Städtebauförderung für Zentren ausbauen oder eigenes Landesprogramm auflegen (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Zentrenprogramme finanzieren Aufwertung, Geschäftsstraßenmanagement und Leerstandsprojekte, Begleitforschung berichtet verbesserte Perspektiven; kausale Wirkungen sind methodisch kaum nachweisbar. Ausbau hängt teils vom Bund ab.", "evidenz": "gemischt", "beleg_studie_url": "https://repos.hcu-hamburg.de/handle/hcu/503" },
+    { "kennung": "I16", "name": "Mittel der Städtebauförderung für Innenstädte und Ortszentren aufstocken (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Der Bund finanziert die Städtebauförderung bereits und kann sie aufstocken; Programme wie Lebendige Zentren stärken Aufwertung und Nutzungsmischung, ihre kausale Wirkung ist aber methodisch kaum nachweisbar.", "evidenz": "gemischt", "beleg_studie_url": "https://repos.hcu-hamburg.de/handle/hcu/503" },
+    { "kennung": "I17", "name": "Gewerbemieter vor Verdrängung schützen über Bundesrat oder Bundesrecht (Land)", "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Mietbegrenzung oder Milieuschutz für Gewerbe kann kleine Läden in teuren Lagen halten; Schließungen haben aber meist andere Gründe, Datenbasis und Folgen sind ungeklärt. Das Land braucht eine Bundesmehrheit.", "evidenz": "offen" },
+    { "kennung": "I18", "name": "Betriebsnachfolge im lokalen Handel erleichtern: Nachfolgekredite und einfachere Genehmigungen (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Erleichterte Übernahmen können einzelne Schließungen verhindern; fehlende Nachfolge ist aber nur ein Grund für Leerstand neben Nachfrage und Onlinehandel, die Wirkung ist kaum untersucht.", "evidenz": "offen" },
+    { "kennung": "I19", "name": "Einzelhandelssteuerung zugunsten der Zentren, keine neuen Einkaufszentren außerhalb (Land)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "In Großbritannien lenkten Bauhürden für Großflächen am Stadtrand Ketten in die Zentren, schwächten dort aber unabhängige Läden. Landes- und Regionalplanung kann steuern, ein pauschales Verbot ist rechtlich angreifbar.", "evidenz": "gemischt", "beleg_studie_url": "https://nber.org/papers/w19797" },
+    { "kennung": "I20", "name": "Gleiche Regeln für Online-Plattformen aus Drittstaaten bei Zoll, Steuern und Produktverantwortung (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Gleiche Zoll- und Haftungsregeln mindern einen Kostenvorteil billiger Importe; der Onlinehandel insgesamt bleibt davon unberührt. Zoll und Produktrecht entscheidet die EU (Abschaffung der 150-Euro-Grenze läuft).", "evidenz": "offen" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M02", "ursachen": [] },
+    { "kennung": "M03", "instrument": "I6", "ursachen": [3602] },
+    { "kennung": "M04", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Zufahrtsbeschränkungen können Ladenbesuche Auswärtiger senken (Madrid-Studie); heutige Umweltzonen schließen aber kaum noch Fahrzeuge aus. Aufhebung setzt Einhaltung der EU-Grenzwerte voraus.", "evidenz": "gemischt", "beleg_studie_url": "https://www.iese.edu/insight/articles/low-emission-zones-business-commerce/" }, "ursachen": [3604] },
+    { "kennung": "M05", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Mehr Geld für attraktive Innenstädte kann Gestaltung und Pflege öffentlicher Räume verbessern; ohne Betrag, Programm oder Verwendungszweck bleibt die Wirkung unbestimmt.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M06", "instrument": "I20", "ursachen": [3601] },
+    { "kennung": "M07", "instrument": "I17", "ursachen": [3602] },
+    { "kennung": "M08", "instrument": "I3", "ursachen": [3602] },
+    { "kennung": "M09", "instrument": "I7", "ursachen": [3602] },
+    { "kennung": "M10", "ursachen": [] },
+    { "kennung": "M11", "instrument": "I15", "ursachen": [3602, 3603] },
+    { "kennung": "M12", "instrument": "I3", "ursachen": [3602] },
+    { "kennung": "M13", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Förderung der Umnutzung leerer Gebäude kann Ortskerne beleben; Wohnnutzung schafft aber keine Einkaufsangebote, und ohne Mittelangabe und Ortskernbezug bleibt die Wirkung auf den Handel gering.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M14", "instrument": "I8", "ursachen": [3604] },
+    { "kennung": "M15", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Erhalt großer Warenhäuser sichert Ankerangebote einzelner Zentren; ob der Betrieb weiterläuft, entscheidet der Betreiber, das Land kann nur über Planungsrecht Einfluss nehmen.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M17", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M18", "instrument": "I14", "ursachen": [3603] },
+    { "kennung": "M19", "instrument": "I13", "ursachen": [3604] },
+    { "kennung": "M20", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Autofreie Zonen bringen meist mehr Passanten und Aufenthalt, können aber Kunden aus dem Umland verlieren. Verkehrsplanung liegt bei den Kommunen, der Bund kann nur Rahmen setzen.", "evidenz": "gemischt", "beleg_studie_url": "https://trid.trb.org/View/408042" }, "ursachen": [3603, 3604] },
+    { "kennung": "M21", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Bessere Bedingungen für Clubs und Kulturorte stärken die Nutzungsmischung in Innenstädten; Einkaufsangebote betrifft das kaum, Wirkung wenig untersucht. Lärmschutz- und Baurechtsänderungen sind möglich, aber konfliktreich.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M22", "instrument": "I12", "ursachen": [3603, 3604] },
+    { "kennung": "M23", "instrument": "I18", "ursachen": [3602] },
+    { "kennung": "M24", "instrument": "I15", "ursachen": [3602, 3603] },
+    { "kennung": "M25", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Tempo 30 senkt Lärm und Unfälle und kann den Aufenthalt angenehmer machen; auf Angebot und Leerstand wirkt es kaum. Die Regelgeschwindigkeit legt der Bund fest, das Land kann nur werben.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M26", "instrument": "I3", "ursachen": [3602] },
+    { "kennung": "M27", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Festivals, Kulturrouten und Kunst im öffentlichen Raum schaffen Besuchsanlässe; die Wirkung ist meist punktuell und auf dauerhafte Einkaufsangebote kaum untersucht.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M28", "instrument": "I8", "ursachen": [3604] },
+    { "kennung": "M29", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Umwandlung leerer Gewerbeflächen in Wohnungen füllt Leerstand und bringt Bewohner in Zentren; Einkaufsflächen gehen dabei verloren. Der Bund hat Umnutzungen im Baurecht bereits erleichtert.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M30", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Bevorzugte Stellplätze für Carsharing und Fahrgemeinschaften sind leicht umsetzbar; sie verschieben Parkraum eher, als die Erreichbarkeit insgesamt zu verbessern.", "evidenz": "offen" }, "ursachen": [3604] },
+    { "kennung": "M31", "instrument": "I3", "ursachen": [3602] },
+    { "kennung": "M32", "instrument": "I17", "ursachen": [3602] },
+    { "kennung": "M33", "instrument": "I9", "ursachen": [3604] },
+    { "kennung": "M34", "instrument": "I6", "ursachen": [3602] },
+    { "kennung": "M35", "instrument": "I2", "ursachen": [3602] },
+    { "kennung": "M36", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Sichere Radabstellanlagen in Ortszentren erleichtern das Einkaufen mit dem Rad und sind günstig umsetzbar; ihr Beitrag zur Belebung der Zentren ist begrenzt und wenig untersucht.", "evidenz": "offen" }, "ursachen": [3604] },
+    { "kennung": "M37", "instrument": "I2", "ursachen": [3602] },
+    { "kennung": "M38", "instrument": "I5", "ursachen": [3602] },
+    { "kennung": "M39", "instrument": "I12", "ursachen": [3603, 3604] },
+    { "kennung": "M40", "instrument": "I19", "ursachen": [3602] },
+    { "kennung": "M41", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Geförderte Dorfläden schaffen direkt Einkaufsangebote in Ortsmitten und sind als Treffpunkt beliebt; viele tragen sich nur mit regionalem Sortiment und Bürgerbeteiligung, belastbare Wirkungsstudien fehlen.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M42", "instrument": "I8", "ursachen": [3604] },
+    { "kennung": "M43", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Ein gepflegtes historisches Stadtbild kann Aufenthalt und Besuche fördern; Rekonstruktionen sind teuer, langwierig und zum Handel kaum untersucht. Denkmalpflege liegt bei Ländern und Kommunen.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M44", "instrument": "I20", "ursachen": [3601] },
+    { "kennung": "M45", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Die Gestaltung öffentlicher Bauten prägt das Stadtbild nur am Rand; ein bestimmter Baustil berührt Angebot und Aufenthalt in Innenstädten kaum, die Wirkung ist nicht untersucht.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M46", "instrument": "I13", "ursachen": [3604] },
+    { "kennung": "M47", "instrument": "I10", "ursachen": [3604] },
+    { "kennung": "M48", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M49", "instrument": "I11", "ursachen": [3604] },
+    { "kennung": "M50", "instrument": "I12", "ursachen": [3603, 3604] },
+    { "kennung": "M51", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Freiwillige Umwandlung leerer Läden in Wohnungen füllt Leerstand und bringt Bewohner ins Zentrum; Einkaufsflächen gehen verloren. Über die Landesbauordnung leicht umsetzbar.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M52", "instrument": "I7", "ursachen": [3602] },
+    { "kennung": "M53", "instrument": "I4", "ursachen": [3602] },
+    { "kennung": "M54", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M55", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Bezahlbare landeseigene Gewerbeflächen können Mischung und kleine Betriebe sichern; sie sind nicht auf Zentren und Handel beschränkt, Flächen und Mittel sind begrenzt.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M56", "instrument": "I16", "ursachen": [3602, 3603] },
+    { "kennung": "M57", "instrument": "I16", "ursachen": [3602, 3603] },
+    { "kennung": "M58", "instrument": "I14", "ursachen": [3603] },
+    { "kennung": "M59", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 3, "begruendung": "Weniger verkaufsoffene Sonntage schützen Beschäftigte, verbessern aber die Öffnungszeiten für Kunden nicht; Studien zur Sonntagsöffnung sprechen eher für leicht positive Effekte einer Lockerung.", "evidenz": "gemischt", "beleg_studie_url": "https://researchonline.lse.ac.uk/id/eprint/61156/" }, "ursachen": [3604] },
+    { "kennung": "M60", "instrument": "I11", "ursachen": [3604] },
+    { "kennung": "M61", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Einfachere Genehmigungen für Außengastronomie und Warenauslagen beleben Straßen und sind schnell umsetzbar; der Beitrag zu Angebot und Leerstand ist klein und kaum untersucht.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M62", "instrument": "I10", "ursachen": [3604] },
+    { "kennung": "M63", "instrument": "I4", "ursachen": [3602] },
+    { "kennung": "M64", "instrument": "I14", "ursachen": [3602, 3603] },
+    { "kennung": "M65", "instrument": "I18", "ursachen": [3602] },
+    { "kennung": "M66", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Gezielte Polizeipräsenz an Kriminalitätsschwerpunkten senkt Kriminalität nachweislich ohne Verdrängung; ob sich das in mehr Besuchen der Innenstadt zeigt, ist kaum untersucht. Zusätzliches Personal fehlt vielerorts.", "evidenz": "belegt", "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356500/" }, "ursachen": [3603] },
+    { "kennung": "M67", "instrument": "I9", "ursachen": [3604] },
+    { "kennung": "M68", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M69", "instrument": "I14", "ursachen": [3603] },
+    { "kennung": "M70", "instrument": "I3", "ursachen": [3602] },
+    { "kennung": "M71", "instrument": "I3", "ursachen": [3602] },
+    { "kennung": "M72", "instrument": "I1", "ursachen": [3602] },
+    { "kennung": "M73", "instrument": "I4", "ursachen": [3602] },
+    { "kennung": "M74", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Günstige Kredite für die Sanierung historischer Altbauten können das Stadtbild aufwerten und sind über die Förderbank umsetzbar; der Bezug zu Handel und Aufenthalt bleibt mittelbar.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M75", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Mehr Schutz im Gewerbemietrecht kann kleine Geschäfte in teuren Lagen halten; Schließungen haben oft andere Gründe, Folgen für Angebot und Investitionen sind ungeklärt. Der Bund ist zuständig, die Ausgestaltung umstritten.", "evidenz": "offen" }, "ursachen": [3602] },
+    { "kennung": "M76", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Ortsumfahrungen nehmen Durchgangsverkehr aus Ortskernen und verbessern den Aufenthalt; zugleich fällt Laufkundschaft weg. Planung und Bau dauern meist länger als eine Wahlperiode.", "evidenz": "offen" }, "ursachen": [3603] },
+    { "kennung": "M77", "instrument": "I19", "ursachen": [3602] },
+    { "kennung": "M78", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Standortgemeinschaften bündeln Geld der Eigentümer für Pflege und Marketing; Studien finden keine (New York) oder nur vorübergehende Umsatzeffekte (Schweden). Rechtlich und organisatorisch gut umsetzbar.", "evidenz": "gemischt", "beleg_studie_url": "https://socialsciences.uchicago.edu/node/23348" }, "ursachen": [3602] },
+    { "kennung": "M79", "instrument": "I5", "ursachen": [3602] },
+    { "kennung": "M80", "instrument": "I8", "ursachen": [3604] },
+    { "kennung": "M81", "instrument": "I9", "ursachen": [3604] }
+  ]
+}
+
+Nicht bestätigte vorgeschlagene bzw. offene Ursachen:
+- M01: offene 3603 nicht übernommen (Strategie und Kiezpläne nennen keine Gestaltung des öffentlichen Raums).
+- M27, M61: offene 3602 nicht übernommen (Festivals bzw. Außengastronomie betreffen Aufenthalt, nicht Sortiment oder Nutzungsmischung von Gebäuden).
+- M56: offene 3601 nicht übernommen ("stationären Einzelhandel stärken" nennt weder Wettbewerbsbedingungen zum Onlinehandel noch Digitalisierung); 3603 übernommen wie bei allen Städtebauförderungs-Maßnahmen (M11, M24, M56, M57 einheitlich [3602, 3603]).
+- Alle übrigen offenen Ursachen übernommen.
+
+Ohne Ursache:
+- M02: Zitat nennt weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (allgemeine Förderung von Handel, Dienstleistung und Handwerk), Regel 2.
+- M10: integrierte ländliche Entwicklung mit Wohnen, Freizeit, Naherholung; kein Bezug zu Handel oder Ortskern (eher Thema Abwanderung).
+
+Schwierige Einstufungen:
+- M59 (weniger verkaufsoffene Sonntage): setzt an den Öffnungszeiten (3604) an, aber in Gegenrichtung zum Ziel; daher zugeordnet mit Wirksamkeit 0 statt ohne Ursache. Ebenso sind I10/I11 (Autoerreichbarkeit) und I12/M20 (Verkehrsberuhigung) gegensätzliche Wege an derselben Ursache; beide "gemischt" (Hass-Klau-Übersicht positiv, Madrid-Central-Studie negativ für Auswärtige).
+- I9 (vollständige Sonntagsfreigabe): Umsetzbarkeit 0 wegen Art. 140 GG/Art. 139 WRV (BVerfG 2009); M33 enthält als ersten Schritt mehr bezirkliche Sonntage, die allein eher I8 entsprächen.
+- M66 (Polizeipräsenz): Evidenz "belegt" bezieht sich auf Kriminalitätssenkung (Campbell-Review), nicht auf Innenstadtbesuche; daher nur Wirksamkeit 2.
+- Zwischennutzung (I3) vs. Umbauprogramm (I4): getrennt, weil befristete Nutzungen anders wirken als dauerhafte Umnutzung; zu beiden fand ich keine Wirkungsevaluation (NRW-Sofortprogramm wird erst bis 2027 untersucht).
+- Für Aufwertung öffentlicher Räume (I14) konnte ich die UCL-Studie "Street Appeal" nicht öffnen; daher ohne Beleg-Link, "gemischt".
+- M29/M51 (Umwandlung in Wohnraum) zu 3602 gezählt (Nutzungsmischung, Leerstand genannt), aber nur Wirksamkeit 1, weil Einkaufsflächen verloren gehen.

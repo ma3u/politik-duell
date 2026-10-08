@@ -1,0 +1,52 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Mehr Polizeipräsenz in den Innenstädten und an Kriminalitätsschwerpunkten, höherer Kontrolldruck, wirksamere Platzverweise und Aufenthaltsverbote",
+      "ursachen_ids": [3603],
+      "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Regeln für verkaufsoffene Sonntage praxisnah und flexibler gestalten, nach Vorbild liberalerer Nachbarländer, für Einzelhandel, Gastronomie und Tourismus",
+      "ursachen_ids": [3604],
+      "zitat": "Die Regelungen für verkaufsoffene Sonntage in Mecklenburg-Vorpommern sollen praxisnah und flexibel gestaltet werden. Damit werden wir den Bedürfnissen von Einzelhandel, Gastronomie und Tourismus gerecht.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Entwicklungsinstrumente gezielt nutzen, um Dorfkerne sowie Gewerbe- und Industrieflächen zu stärken",
+      "ursachen_ids": [3602],
+      "zitat": "Gleichzeitig werden wir Entwicklungsinstrumente gezielt nutzen, um Dorfkerne und Gewerbe- und Industrieflächen zu stärken und so die regionale Wirtschaftskraft nachhaltig zu fördern.",
+      "seite": 122
+    },
+    {
+      "beschreibung": "Integrierte ländliche Entwicklung fördern, die Wohnen, Freizeit, Naherholung und die Wiederbelebung leerstehender Gebäude verbindet",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Wir fördern eine integrierte ländliche Entwicklung, die partizipative Beteiligung der Bevölkerung und regionale Kooperationen, um Wohnen, Freizeit, Naherholung und die Revitalisierung von Leerstand zu verbinden.",
+      "seite": 122
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "dorfkern", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3-4; Kurzprogramm S. 6-7; Kapitel A.I Ansiedlungsoffensive (Fundstellen S. 8-13); A.III Handwerk und Mittelstand S. 16-18; A.IV Bauwirtschaft S. 18-20; A.V Tourismus S. 20-23; A.VI Gründungen S. 23-24; B.I Sicherheit im öffentlichen Raum S. 31-32; B.IV Kommunen S. 40-43; I.IV Ländlicher Raum S. 121-123; I.V Mobilität S. 124-125; übrige Fundstellen S. 63, 65, 75, 91, 104, 113, 116, 118, 130, Stichwortverzeichnis S. 134-138.
+
+Nicht erfasst:
+- S. 8-12, 63, 65, 75, 104, 116, 118: "Ansiedlung" meint Industrie-, Hochschul-, Pharma-, Wasserstoff- und Gewerbeansiedlung, ohne Bezug zu Innenstadt oder Einzelhandel (R2). S. 91: Wiederansiedlung von Arten.
+- S. 12-13: Standortmarketing für den Wirtschaftsstandort MV, kein Bezug zu Innenstädten.
+- S. 20: "Unser Ziel: ... praxisnahe Regelung für Öffnungszeiten und verkaufsoffene Sonntage" – Zielformulierung, dieselbe Zusage wie S. 23 (dort erfasst).
+- S. 19: Reduzierung von Leerständen im Zusammenhang mit Mietwohnungsbau – gehört zu Miete (R2).
+- S. 22: Aufenthaltsqualität bezieht sich auf Strände und Küste, nicht auf Innenstädte.
+- S. 32: Vorgehen gegen Vermüllung, Graffiti und Störungen im öffentlichen Raum – nennt keine Innenstadt (R2); S. 42: Sicherheitskonzepte für Angsträume, ohne Innenstadtbezug.
+- S. 113, 130: Instandhaltung von Landesgebäuden bzw. Kirchen – kein Innenstadtbezug.
+- S. 123: Förderung multifunktionaler Nahversorgungs- und Servicepunkte ("MV-Läden") fortsetzen – Zitat nennt weder Ortskern noch Einzelhandel oder Leerstand (R2); dörfliche Nahversorgung.
+- S. 124-125: Rad- und Fußwegenetz, Nahmobilität, ÖPNV – allgemein, ohne Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 134, 137, 138: Stichwortverzeichnis.
+
+Grenzfall: S. 122 "Revitalisierung von Leerstand" im Rahmen der integrierten ländlichen Entwicklung – Leerstand ist nicht auf Geschäfte eingegrenzt, daher 3602 offen.
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb (3602); Aufenthaltsqualität und Verkehrsberuhigung (3603); Erreichbarkeit mit Auto/Parkplätze und Nahmobilität (3604).

@@ -1,0 +1,77 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Sport-Pakt mit Kommunen, Verbänden und Vereinen zum Abbau des Sanierungs- und Investitionsstaus bei Sportstätten; Landesmittel für Sportförderung von 13 auf 20 Mio. erhöhen",
+      "ursachen_ids": [3701],
+      "zitat": "Gemeinsam mit Kommunen, Sportverbänden und Vereinen werden wir den massiven Sanierungs- und Investitionsstau bei Sportstätten systematisch abbauen. Dafür werden wir die Mittel für die Sportförderung im Landeshaushalt von aktuell 13 Millionen auf 20 Millionen erhöhen.",
+      "seite": 83
+    },
+    {
+      "beschreibung": "Digitalen Sportstätten-Atlas zu Zustand, Sanierungsbedarf und Nutzung einrichten; darauf Sportstättenbericht und Sportentwicklungsplanung als Grundlage für Investitionen",
+      "ursachen_ids": [3701],
+      "zitat": "Zwecks einer gezielten und strategisch gesteuerten Investitionsoffensive richten wir in Kooperation mit Kommunen und Vereinen einen digitalen Sportstätten-Atlas ein, der Zustand, Sanierungsbedarf und Nutzung landesweit erfasst.",
+      "seite": 83
+    },
+    {
+      "beschreibung": "Sportfördergesetz novellieren: Bürokratie abbauen, Antragsverfahren vollständig digitalisieren, Förderung des Landessportbundes dynamisieren",
+      "ursachen_ids": [3703],
+      "zitat": "Mit einer Novellierung des Sportfördergesetzes werden wir die Sportförderung in Mecklenburg-Vorpommern modernisieren und die Autonomie des Sports garantieren. Ziel ist die Abschaffung überflüssiger Bürokratie, eine vollständige Digitalisierung der Antragsverfahren und eine Dynamisierung der finanziellen Förderung des Landessportbundes.",
+      "seite": 83
+    },
+    {
+      "beschreibung": "Förderprogramm „Ehrenamt im Sport“ einführen, das mit dem Landessportbund Weiterbildungsmöglichkeiten für Ehrenamtliche finanziell absichert",
+      "ursachen_ids": [3703],
+      "zitat": "Wir führen das Förderprogramm „ Ehrenamt im Sport “ ein. Damit werden wir in enger Abstimmung mit dem Landessportbund Weiterbildungsmöglichkeiten finanziell absichern.",
+      "seite": 99
+    },
+    {
+      "beschreibung": "Landesprogramm zur Zusammenarbeit von Schulen und Sportvereinen, vor allem zur Einbindung der Vereine in den Ganztag",
+      "ursachen_ids": [3703],
+      "zitat": "Zur Förderung der Zusammenarbeit von Schulen und Sportvereinen werden wir ein Landesprogramm auflegen, um insbesondere die Einbindung der Vereine in den Ganztag zu stärken.",
+      "seite": 84
+    },
+    {
+      "beschreibung": "Programm „Kinder in den Sportverein“: Das Land übernimmt für jedes Kind die Mitgliedschaft in einem Sportverein in den ersten zwei Jahren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Mit einem Programm „Kinder in den Sportverein“ („KidS“) soll das Land für jedes Kind in Mecklenburg-Vorpommern die Mitgliedschaft in einem selbst gewählten Sportverein in den ersten zwei Jahren übernehmen.",
+      "seite": 83
+    },
+    {
+      "beschreibung": "GEMA-Gebühren für ehrenamtliche, eintrittsfreie Veranstaltungen gemeinnütziger Vereine per Landesprogramm übernehmen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Ehrenamtliche Tätigkeiten werden wir weiter fördern, bspw. indem wir mit einem Landesprogramm die GEMA-Gebühren für ehrenamtlich durchgeführte und eintrittsfreie Veranstaltungen von gemeinnützigen Vereinen und Feuerwehren übernehmen.",
+      "seite": 99
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [2, 50, 71], "grund": "Treffer „Eigenverantwortung“ in Grundsätzen, Bildung und Gesundheit ohne Bezug zum Sport; im Kapitel Sportoffensive (S. 82–84) nichts zu Betriebskosten, Hallenentgelten oder Energiekosten." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Gliederung S. 3–4, Kommunen S. 41, Eliteschulen S. 57–58, Gesundheitsförderung S. 80–82, Sportoffensive S. 82–84 (vollständig), Familie/Senioren/Ehrenamt S. 97–99, Führerschein S. 124–125, Stichwortverzeichnis S. 135/138 (übersprungen).
+
+Grenzfälle:
+- KidS (S. 83): Übernahme der Mitgliedsbeiträge für Kinder – Ziel nennt bezahlbare Beiträge, R2 ordnet Kosten für Freizeit von Kindern aber einem anderen Thema zu; daher 3703 offen.
+- GEMA-Gebühren (S. 99): Entlastung gemeinnütziger Vereine allgemein, nicht sportspezifisch; 3703 offen.
+
+Gleichartige Stellen (nicht separat erfasst):
+- S. 83: „langfristig angelegtes Investitionsprogramm“ für kommunale und Vereinssportstätten, Unterstützung kleiner Vereine und finanzschwacher Kommunen beim Erhalt/Ausbau von Sportstätten; S. 82 „deutlich mehr Mittel“, Sportstätteninfrastruktur ausbauen – gleiche Zusage wie Sport-Pakt.
+- S. 83: Unterstützung der Kommunen bei Sportentwicklungsplanung – gehört zum Sportstätten-Atlas/Sportentwicklungsplanung M-V.
+- S. 97: Förderprogramm „Ehrenamt stärken im Sport“ nach sächsischem Vorbild – gleich wie S. 99.
+- S. 84: mehr Mittel für Trainerausbildung, stärkere Unterstützung der Qualifizierung ehrenamtlicher Übungsleiter; S. 83 Übungsleiterausbildung (C-Lizenz) für Schüler – gleichartig zur Weiterbildungsförderung „Ehrenamt im Sport“.
+- S. 80: Programm „Gemeinsam Sport in Schule und Verein“ ausbauen, Sportvereine in Ganztag der Grundschulen einbinden – gleichartig zum Landesprogramm S. 84.
+
+Nicht erfasst:
+- S. 41: Neubau/Sanierung von Schul- und Sportstätten „sollten“ durch Bund und Land finanziert werden – Sollte-Formulierung; Infrastrukturpauschale allgemein kommunal.
+- S. 82: Landessportbund „stärken“, Bundes- und Olympiastützpunkte, Olympiabewerbung – allgemein bzw. Spitzensport (R2).
+- S. 57–58: Eliteschulen des Sports – Spitzensport/Schule (R2).
+- S. 84: Sportler mit Handicap, Schwimmmeister-Offensive, Schwimmkurse, Hilfe für Schwimmsportvereine bei Mitgliedergewinnung („wollen wir helfen“) – unbestimmt oder nicht an den Ursachen.
+- S. 98: Landesprogramm Sportvereine und Pflegeeinrichtungen – Seniorenpolitik/Gesundheit, anderer Zusammenhang.
+- S. 97: Familienkarte – Prüfauftrag.
+- S. 125: Führerscheinzuschuss bei Engagement u. a. in Sportvereinen – anderes Thema.
+- S. 80: „MV kann schwimmen“ – Schwimmfähigkeit, nicht Vereine/Sportstätten.

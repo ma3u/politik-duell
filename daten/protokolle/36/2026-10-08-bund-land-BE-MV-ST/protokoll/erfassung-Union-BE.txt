@@ -1,0 +1,77 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Acht verkaufsoffene Sonntage tatsächlich ermöglichen, rechtssichere Sonntagsöffnung; Bezirke dürfen zweimal im Jahr zusätzliche verkaufsoffene Sonntage festlegen",
+      "ursachen_ids": [3604],
+      "zitat": "Unser Ziel sind lebenswerte Innenstädte, mit einem lebendigen und starken Einzelhandel. Wir stehen für eine rechtssichere Gestaltung der Sonntagsöffnung und setzen uns dafür ein, dass die gesetzlich möglichen acht verkaufsoffenen Sonntage auch tatsächlich stattfinden. Darüber hinaus sollen die Bezirke zweimal im Jahr zusätzliche verkaufsoffene Sonntage für besondere bezirkliche Anlässe festlegen können.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Landesstrategie zur Stärkung des Einzelhandels und gemeinsam mit Bezirken, Handel und Gastronomie Kiezpläne für jede Einkaufsstraße",
+      "ursachen_ids": [3602],
+      "ursachen_offen": [3603],
+      "zitat": "Wir werden eine umfassende Strategie zur Stärkung des Berliner Einzelhandels entwickeln. Gemeinsam mit Bezirken, Handel und Gastronomie wollen wir konkrete Kiezpläne für jede Einkaufsstraße entwickeln.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Städtebauförderprogramm „Lebendige Zentren“ gemeinsam mit dem Bund um- und ausbauen",
+      "ursachen_ids": [3602],
+      "ursachen_offen": [3603],
+      "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Förderprogramm für den Umbau von Handelsimmobilien zu Wohn-, Büro- und Kulturnutzungen",
+      "ursachen_ids": [3602],
+      "zitat": "Wir werden […] ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Leerstand bekämpfen: Zentrengipfel mit den Bezirken fortführen und systematisches Leerstandsmonitoring für Büro- und Gewerbeflächen einführen",
+      "ursachen_ids": [3602],
+      "zitat": "Leerstand werden wir bekämpfen. Dafür streben wir einen engen Austausch mit den Bezirken an und führen den erfolgreichen Zentrengipfel fort. Für mehr Transparenz über die Entwicklungen auf dem Gewerbemarkt setzen wir uns für die Einführung eines systematischen Leerstandsmonitorings von Büro- und Gewerbeflächen ein.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Leerstehende landeseigene Immobilien über eine zentrale Vergabestelle erfassen und flexibel, auch temporär (z. B. Pop-up), an Start-ups und Kreativwirtschaft vergeben",
+      "ursachen_ids": [3602],
+      "zitat": "Wir werden das Leerstandsmanagement landeseigener Immobilien weiterentwickeln und gezielt für die Nutzung durch Start-ups und Unternehmen der Kreativwirtschaft öffnen. Durch die BIM ist eine zentrale Vergabestelle einzurichten, die Leerstände in landeseigenen Immobilien erfasst.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Keine Durchfahrtssperren wie Poller, damit Einzelhandel für Kunden und Lieferanten erreichbar bleibt; einheitlicher Baukasten für Verkehrsberuhigung für die Bezirke",
+      "ursachen_ids": [3604],
+      "zitat": "Dazu werden wir die Verkehrssicherheit erhöhen, aber dabei nicht auf Durchfahrtsbeschränkungen wie Poller setzen. Polizei und Feuerwehr wie Müllabfuhr müssen schnell überall hin gelangen, wohnungsnaher Einzelhandel und Supermärkte erreichbar für Kunden wie Lieferanten sein.",
+      "seite": 70
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3603,
+      "seiten": [10, 11, 59, 71, 72, 73, 77, 78, 79, 80, 82, 116, 123],
+      "grund": "Sauberkeits- und Ordnungsmaßnahmen (BSR, Ordnungsämter, Papierkörbe, Graffiti, Tauben an Einkaufszentren), Aufenthaltsqualität an Bahnhöfen, Kurfürstenkiez, Fußgängerzonen (Videoüberwachung, E-Scooter-Tempo) ohne Nennung von Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2) bzw. aus anderem Zusammenhang (Schulhöfe, Gewässer, Gedenkorte)"
+    }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 2–3; Kap. III „Berlin wird größer“ S. 33–38 (Einzelhandel/Leerstand auf S. 37 im Abschnitt „Wachsen mit Plan“); Kap. IV S. 41–44, Fundstellen S. 47, 48; Kap. VI „Berlin wird schneller“ S. 68–75; Kap. VII „Berlin wird sauber“ S. 77–82; Fundstellen S. 10, 11, 24, 49, 59, 89, 93, 109, 112, 115, 116, 121, 123. Zusätzlich Grep nach Einzelhandel, Innenstadt, Einkauf, Zentren, Leerstand, City, Stadtbild.
+
+Nicht erfasst:
+- S. 37: Spätis „rechtssichere Regelungen“ – ohne konkrete Handlung, nennt weder Innenstadt noch Einzelhandel.
+- S. 37: S-Bahn-Bögen für Gewerbe- und Kulturnutzung – Prüfauftrag („prüfen“).
+- S. 37: „Digitalisierungsprogramm Handel und Gastronomie“ – gehört nach R1 zu 3601 (nicht Ebene Land, nicht zulässig).
+- S. 37: Industrieparks, Gewerbehöfe – kein Bezug zu Innenstadt/Einzelhandel.
+- S. 36: Entwicklungskonzept City-West – nennt weder Innenstadt noch Einzelhandel (R2), Inhalt offen.
+- S. 48 (Großveranstaltungen/World Pride): Stärkung des Einzelhandels nur als erhoffter Effekt, keine Maßnahme dafür.
+- S. 69/70: Parkplätze im öffentlichen Raum erhalten, Parkraumbewirtschaftung, Quartiersgaragen, Lade- und Lieferzonen – ohne Bezug zu Innenstadt/Einzelhandel (R2: Autofahren); Supermarktparkplätze für Anwohner nur Prüfauftrag.
+- S. 69: Infrastruktur „um Innenstadt und Außenbezirke noch besser zu vernetzen“ – allgemeiner Verkehrsausbau, nicht auf Erreichbarkeit des Handels bezogen.
+- S. 71: Gehwege, Fußgängerzonen (Schrittgeschwindigkeit für E-Scooter) – ohne Nennung von Innenstadt/Einzelhandel.
+- S. 74: Park-&-Ride in Außenbezirken – Pendlerverkehr.
+- S. 79: Tauben an Einkaufszentren begrenzen – Sauberkeit an frequentierten Orten allgemein, nennt nicht Innenstadt/Einzelhandel; im Zweifel nicht erfasst.
+- S. 24, 49, 59, 89, 93, 109, 112, 115, 116, 121, 123: anderer Zusammenhang (JVA, Hochschulen, Schulhöfe, Behörden, Bäder, Sport, Bibliotheken, Gedenkorte).
+
+Richtungen ohne Maßnahme: 3603 (Aufenthaltsqualität, Sauberkeit) – keine Zusage mit Innenstadtbezug; 3604 Nahmobilität/ÖPNV zur Innenstadt – nichts mit Innenstadtbezug.
+Seiten ohne Text (Trennseiten 39, 53, 67, 76 usw.) liegen an Kapitelanfängen; kein erkennbar fehlender Inhalt.

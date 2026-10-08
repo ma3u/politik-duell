@@ -1,0 +1,51 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Kriterien für kriminalitätsbelastete Orte (mit verdachtsunabhängigen Kontrollen) präzisieren, öffentlich nachvollziehbar machen und im ASOG mit einer Straftatenliste festlegen",
+      "ursachen_ids": [3401],
+      "zitat": "Wir Freie Demokraten wollen die Kriterien, nach denen ein Ort als kriminalitätsbelastet eingestuft wird, präzisieren und öffentlich nachvollziehbar machen. Dazu muss das Allgemeine Sicherheits- und Ordnungsgesetz (ASOG) um eine Auflistung der Straftaten, die zu einer solchen Einstufung führen, ergänzt werden.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Kontaktbereichsbeamtinnen und -beamte intensiver einsetzen und entlasten, um den niedrigschwelligen Austausch zwischen Polizei und Bevölkerung zu verbessern",
+      "ursachen_ids": [3402],
+      "zitat": "Um das Sicherheitsgefühl der Bürgerinnen und Bürger zu steigern und den niedrigschwelligen Austausch zwischen Polizei und Bevölkerung zu verbessern, fordern wir, die Kontaktbereichsbeamtinnen und -beamten intensiver einzusetzen und dafür von zusätzlichen Tätigkeiten zu entlasten.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Polizeiliche Datei über Fußballfans („Szenekunde Sport“) ersatzlos löschen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Aufgrund des mangelnden Nutzens sowie der nach wie vor fehlenden Transparenz wollen wir die polizeiliche Datei „Szenekunde Sport“ ersatzlos löschen […].",
+      "seite": 75
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "kriminalitätsbelastet", "ursache": 3401, "richtung": "Kontrollen begrenzen und nachvollziehbar machen" },
+    { "begriff": "kontaktbereichsbeamt", "ursache": 3402, "richtung": "Kommunikation und Fortbildung der Polizei" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3403, "seiten": [66, 67, 72, 75, 76], "grund": "Kapitel Sicherheit, Justiz und Bürgerrechte gelesen; keine Zusage zu Beschwerdestellen, unabhängiger Kontrolle, Kennzeichnung oder Dokumentation von Polizeieinsätzen." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 3–5); Kapitel „Innen, Recht und saubere Stadt“: Sicherheit (S. 66–69), Justiz und Katastrophenschutz (S. 72–75), Bürgerrechte (S. 75–77), Jüdisches Leben (S. 77–78), Offene Gesellschaft (S. 82); Fundstellen S. 67, 75; Volltextsuche nach Polizei/Beschwerde/Kennzeichnung/Identitätsfeststellung.
+
+Erfasst:
+- S. 67 kriminalitätsbelastete Orte: Kriterien präzisieren, im ASOG festlegen, Einstufung regelmäßig evaluieren und aufheben (3401, Kontrollorte). Der Satz „Dazu erhält die Polizei an solchen kriminalitätsbelasteten Orten die Sonderbefugnisse …“ beschreibt die bestehende Befugnis und ist nicht eigens erfasst.
+- S. 67 Kontaktbereichsbeamte (3402, Einsatzpraxis/Kommunikation).
+- S. 75 Datei „Szenekunde Sport“ löschen: Grenzfall, ob eine polizeiliche Personendatei zu den Befugnissen bei Kontrollen (3401) gehört – daher ursachen_offen.
+
+Nicht erfasst:
+- S. 66 verstärkte Polizeipräsenz, „Kotti-Wache“; S. 72 Ausstattung und Personal der Polizei – nach R2 Sicherheit.
+- S. 67 temporäre Videoüberwachung an Risikoorten, Security by Design – keine Regel für Personenkontrollen, Sicherheit.
+- S. 67 Abschaffung der Vermutungsregelung § 7 LADG – nach R2 Diskriminierung im Alltag (Schutzlücken im öffentlichen Recht).
+- S. 67/68 Ablehnung anlassloser Datenverknüpfung, Funkzellenabfragen, Quick-Freeze; S. 76 Staatstrojaner, Rücknahme der verdeckten Durchsuchung, stille SMS – Überwachungsbefugnisse ohne Bezug zu Polizeikontakten/Kontrollen.
+- S. 68 Anti-Gewalt-Trainings der Polizei an Schulen, Verzahnung Polizei/Schule/Jugendhilfe – Kriminalprävention, nicht Umgang der Polizei bei Kontakten.
+- S. 75 Kosten und Nutzen anlassloser Videoüberwachung evaluieren, „ggf.“ zurückbauen – Prüfauftrag.
+- S. 75 Richtervorbehalt bei Überwachung nicht aufweichen – Bekenntnis zu Bestehendem, Überwachung.
+- S. 78 Schulungen der Polizei zu antisemitischen Straftaten; S. 82 Schulungen zu queerfeindlicher Gewalt und Hasskriminalität – Sensibilisierung für Erkennen und Verfolgung von Hasskriminalität, nicht Einsatzpraxis bei Kontrollen.
+- Richtungen ohne Maßnahme: Kontrollbescheinigung, Bodycams, Deeskalationstraining, Polizeibeauftragte, Kennzeichnungspflicht, Beschwerdestellen.

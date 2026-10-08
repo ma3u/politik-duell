@@ -1,0 +1,42 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Landesprogramm „Neue Dorfmitte“ weiterentwickeln mit dem Ziel eines Dorfladens für den täglichen Bedarf in erreichbarer Nähe jeder Gemeinde, lebendige Dorfmitten",
+      "ursachen_ids": [3602],
+      "zitat": "Die Zielstellungen und Programme des Landes zur Förderung des ländlichen Raums wie […] die „Neue Dorfmitte“ […] sollen zielgerichtet weiterentwickelt werden. Langfristiges Ziel der weiteren Förderung des Programms „Neue Dorfmitte” ist ein Dorfladen für die Güter des täglichen Bedarfs in erreichbarer Nähe jeder Gemeinde Mecklenburg-Vorpommerns mit dem Ziel der wohnortnahen Grundversorgung der dort lebenden Menschen.",
+      "seite": 19
+    },
+    {
+      "beschreibung": "Kooperation von Kultur und Tourismus stärken, um Innenstädte mit Kulturrouten, Festivals und Kunst im öffentlichen Raum zu beleben",
+      "ursachen_ids": [3603],
+      "ursachen_offen": [3602],
+      "zitat": "Dieses Potenzial wollen wir besser nutzen und werden dafür die Kooperation zwischen Kultur und Tourismus stärken. Ziel ist es dabei auch, die Innenstädte durch Kulturrouten, Festivals oder Kunst im öffentlichen Raum zu beleben.",
+      "seite": 80
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3604, "seiten": [25, 26, 12], "grund": "Pendlerparkplätze nur als Prüfauftrag und ohne Bezug zu Innenstadt oder Einzelhandel (S. 25); Radwege, Fußverkehr und ÖPNV ohne Nennung von Innenstadt oder Ortskern (S. 12, 26, R2); nichts zu Öffnungszeiten." }
+  ]
+}
+
+Protokoll
+
+Gelesen: S. 1–6 (Präambel, kein eigenes Inhaltsverzeichnis), Fundstellen S. 8, 14, 18, 19, 25, 27, 28, 85, 90; Kapitel Landesentwicklung/Quartiere S. 19–20, Tourismus S. 12, Rad- und Fußverkehr S. 26, Kommunen und Wohnen S. 50–55, Kultur S. 80, Klimaanpassung S. 87. Zusätzlich Volltextsuche nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Laden, Sonntag, Bäder, Zentrum, Dorfmitte, Einkauf.
+
+Erfasst:
+- S. 19 „Neue Dorfmitte“/Dorfladen: Zitat nennt Dorfladen (Einzelhandel) in der Dorfmitte (Ortskern), daher R2 erfüllt; Ansiedlung eines Angebots → 3602.
+- S. 80 Innenstädte beleben durch Kulturrouten, Festivals, Kunst im öffentlichen Raum: Gestaltung des öffentlichen Raums → 3603; Festivals/Kulturrouten als Nutzungsmischung möglich → 3602 offen.
+
+Nicht erfasst:
+- S. 8, 14, 18, 19, 27, 85, 90 „Ansiedlung“: Industrie-, Hafen-, Recycling-, Aquakultur-Ansiedlungen ohne Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 28 Ansiedlung von Ärztinnen und Ärzten: anderes Thema.
+- S. 25 Pendlerparkplätze: Prüfauftrag, kein Innenstadtbezug.
+- S. 20 Starke Quartiere: Prüfauftrag zur Bündelung von Programmen, Großwohnsiedlungen, kein Innenstadtbezug.
+- S. 52 Städtebauprogramme mit Quartiersbudgets: soziale Stadtteile, kein Innenstadt-/Einzelhandelsbezug.
+- S. 53 „Leerstand zu vermeiden“: Lagebeschreibung zum Wohnen im ländlichen Raum (gehört zu Wohnen).
+- S. 87 leerstehende Gebäude neu nutzen / Innenentwicklung: Kontext Bodenschutz und Wohnraum im ländlichen Raum, „müssen“ ohne eigene Handlungszusage; blau/grüne Stadtentwicklung („innerstädtisches Klima“): Klimaanpassung, nennt nicht Innenstadt oder Einzelhandel.
+- S. 12, 26 ÖPNV, Gästekarten, Rad- und Fußverkehr: ohne Nennung von Innenstadt/Ortskern (R2).
+- S. 80 Kreativquartiere/Raumprogramm: nur „prüfen“.
+- Öffnungszeiten (Bäderverkaufsverordnung, Sonntagsöffnung): im Programm nicht gefunden.

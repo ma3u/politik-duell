@@ -1,0 +1,36 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Ehrenamts- und Übungsleiterpauschale spürbar erhöhen, um ehrenamtlich Tätige steuerlich zu entlasten", "ursachen_ids": [3703], "zitat": "Wir erhöhen die Ehrenamts- und die Übungsleiterpauschale spürbar.", "seite": 57 },
+    { "beschreibung": "Mehr Anreize für private Gelder und Spenden an Vereine setzen und den Zugang zu öffentlicher Förderung erleichtern", "ursachen_ids": [3703], "zitat": "Zudem setzen wir mehr Anreize für private Gelder und Spenden und erleichtern den Zugang zu öffentlicher Förderung.", "seite": 57 },
+    { "beschreibung": "Vereinspaket für das Ehrenamt, das Bürokratie, Datenschutz und Haftungsfragen angeht", "ursachen_ids": [3703], "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen.", "seite": 57 },
+    { "beschreibung": "In der kommenden Wahlperiode die Bereitstellung der Sportmilliarde sicherstellen", "ursachen_ids": [], "ursachen_offen": [3701], "zitat": "Für die kommende Wahlperiode stellen wir sicher, dass die Sportmilliarde zur Verfügung steht.", "seite": 61 },
+    { "beschreibung": "Gemeinnützigkeit des E-Sports anerkennen", "ursachen_ids": [], "ursachen_offen": [3703], "zitat": "E-Sport ist in Deutschland so etabliert, dass wir nun die Gemeinnützigkeit anerkennen.", "seite": 61 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [9, 12, 13, 58, 67, 69, 70], "grund": "„Eigenverantwortung“ nur in Gesundheit, Leitbild, Kultur und Forschung; im Sportkapitel (S. 60–61) und bei den Kommunalfinanzen (S. 76) nichts zu Betriebskosten, Hallenentgelten oder Zuschüssen für den Betrieb von Sportstätten." }
+  ]
+}
+
+Protokoll
+=========
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel IV „Unser Plan für ein Land, das wieder zusammenhält“ mit Einleitung (S. 56), „Menschen miteinander verbinden“ (S. 56–57, Ehrenamt und Vereine), „Sport und Bewegung fördern“ (S. 60–61); Kommunalfinanzen (S. 76); Fundstellen S. 9, 12, 13, 24, 58, 67, 69, 70.
+
+Grenzfälle:
+- S. 61 „Sportmilliarde“: Das Programm sagt nicht, wofür die Mittel eingesetzt werden (Sanierung von Sportstätten wäre naheliegend, steht aber nicht im Text) – daher 3701 offen.
+- S. 61 Gemeinnützigkeit des E-Sports: steuerlicher Status für E-Sport-Vereine; ob das als Vereinsförderung im Sinne von 3703 gilt, offen.
+
+Gleichartige Stellen (nicht gesondert erfasst):
+- S. 57 „Die notarielle Beglaubigung von Anträgen auf Satzungsänderung oder Vorstandswechsel soll entfallen.“ und „Sie sollen keinen Datenschutzbeauftragten mehr bestellen müssen.“ – Einzelschritte des Vereinspakets (Bürokratie, Datenschutz), dort mit erfasst.
+
+Nicht erfasst:
+- S. 24 „Transportinfrastruktur“ (CCS) – anderer Zusammenhang.
+- S. 58 Kultur-Sponsoring und Eigenverantwortung von Kultureinrichtungen – Kultur, nicht Sportvereine.
+- S. 61 halbe Stunde Sport täglich für Grundschulkinder, Bundesjugendspiele, Aktion zum Schwimmenlernen – Schulsport, kein Ansatz an Sportstätten oder Vereinsfinanzen.
+- S. 61 Spitzensportförderung, Trainerinnen und Trainer, Duale Karriere, Olympia-Bewerbung, Doping/Korruption – Spitzensport bzw. Großveranstaltungen (R2).
+- S. 61 Staatsminister für Sport und Ehrenamt, Sportpolitik im Kanzleramt – Organisation, keine Maßnahme an den Ursachen.
+- S. 61 „Sportvereine müssen sichere Orte für Kinder und Jugendliche sein“ – Ziel ohne Handlung, Kinderschutz.
+- S. 76 Kommunalfinanzen („dauerhaft sichere Einnahmequellen“, Konnexität) – allgemein, ohne Bezug zu Sportstätten; Ziel ohne konkrete Zusage.
+
+Richtungen ohne Maßnahme: Bestand priorisieren und gemeinsam nutzen (3701); Betriebskosten und Hallenentgelte, Eigenverantwortung und Auslastung (3702); Eigeneinnahmen und Kooperation der Vereine (3703, außer Spendenanreize).

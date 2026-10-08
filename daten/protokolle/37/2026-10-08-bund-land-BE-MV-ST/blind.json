@@ -1,0 +1,1709 @@
+{
+  "pruefsumme": "30a2bc38fa66a1751fcc56b46058d5c8e80f8fbf0b39573e2f29773e985fb31a",
+  "thema": {
+    "id": 37,
+    "name": "Finanzierung von Sportvereinen und Sportstätten",
+    "ziel": "Menschen können dauerhaft in ihrem Sportverein trainieren und an Wettkämpfen teilnehmen, mit bezahlbaren Beiträgen und geeigneten Sportstätten."
+  },
+  "ursachen": [
+    {
+      "id": 3701,
+      "beschreibung": "Der geschätzte Investitionsrückstand der Kommunen bei Sportstätten stieg im Kommunalpanel 2026 um 6,0 Milliarden Euro gegenüber dem Vorjahr",
+      "ebene": "land"
+    },
+    {
+      "id": 3702,
+      "beschreibung": "Im Sportbereich mussten laut Kommunalpanel 2026 60 % der Kommunen mit eigenen Betrieben zuletzt Verluste ausgleichen (beim ÖPNV 52 %)",
+      "ebene": "land"
+    },
+    {
+      "id": 3703,
+      "beschreibung": "Der Problemdruck der Vereine durch den Zustand der Sportstätten (+3,7 %) und ihre finanzielle Situation (+2,5 %) ist im Sportentwicklungsbericht 2023 bis 2025 gegenüber 2020 gestiegen",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3701,
+        3702,
+        3703
+      ],
+      "text": "Zu 3701 gehören Sanierung und Neubau von Sportstätten und Sporthallen, zu 3702 Betriebs- und Nutzungskosten (Hallenmieten, Energiekosten, Zuschüsse für den Betrieb), zu 3703 Förderung der Vereine selbst (Vereinsförderung, Ehrenamt, Entlastung von Vereinen)."
+    },
+    {
+      "nr": 2,
+      "text": "Sanierung von Schulgebäuden gehört zu Schule, Straßen und Wege zu Straßen und Brücken, Kosten für Freizeit von Kindern zu Freizeitangebote und Treffpunkte für Jugendliche. Allgemeine Sportförderung (Spitzensport, Großveranstaltungen) ohne Bezug zu Vereinen oder Sportstätten ist keine Maßnahme dieses Themas."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "land",
+      "beschreibung": "Bei der Sanierung eines großen Sportparks inklusive und barrierefreie Außensportstätten für umliegende Sportvereine planen.",
+      "zitat": "Für die von uns angestoßene Realisierung der Sanierung des Friedrich-Ludwig-Jahn-Sportparks planen wir für die Außenanlage des Cantian-Stadions inklusive und barrierefreie Sportstätten, die von möglichst vielen Mitgliedern umliegender Sportvereine genutzt werden können.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "f60687d974f7560c"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Investitionsprogramm zur energetischen Sanierung der Kälteanlagen von Eissporthallen",
+      "zitat": "Wir starten ein […] zur energetischen Sanierung der Kälteanlagen, um den Eissport auch in Zeiten der Klimakrise ökologisch nachhaltig und finanzierbar zu halten.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "5947c957856d9841"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Alle Landesförderprogramme für Ehrenamt und Vereine zentral bündeln, digital, mit einfachen Antragswegen, Pauschalen und verständlichen Nachweisen",
+      "zitat": "Wir werden: […] alle Landesförderprogramme für Ehrenamt und Vereine zentral bündeln: transparent, digital, mit einfachen Antragswegen, Pauschalen und verständlichen Nachweisen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "734c74abd51eac77"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "bund",
+      "beschreibung": "Vereine bei Haftungsrisiken und Bürokratie entlasten, u. a. weniger Dokumentations- und Aufbewahrungspflichten und ein zentraler Vereinslotse",
+      "zitat": "Damit sich Ehrenamtliche auf ihr Engagement konzentrieren können, wollen wir Vereine bei Haftungsrisiken und Bürokratie deutlich entlasten. […] Insbesondere schlagen wir eine Reduzierung von Dokumentations- und Aufbewahrungspflichten vor.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "16220a21474922e3"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Mittel des Bädervertrags verlässlich auszahlen und wegen gestiegener Bau- und Energiekosten dynamisieren",
+      "zitat": "Der abgeschlossene Bädervertrag gibt den [Land] Bäder-Betrieben (BBB) Planungssicherheit. Die darin zugesagten Mittel müssen jedoch verlässlich fließen und angesichts der massiv gestiegenen Bau- und Energiekosten dynamisiert werden.",
+      "ursachen_ids": [
+        3702
+      ],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "5f894274e2802222"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "bund",
+      "beschreibung": "Aufwandsentschädigungen für Ehrenämter einheitlich pauschal steuerfrei stellen.",
+      "zitat": "Wenn für Ehrenämter Aufwandsentschädigungen gezahlt werden, sollen sie einheitlich pauschal steuerfrei sein.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "0c9680e266a2c1b0"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "land",
+      "beschreibung": "Regelmäßige Sanierung und Modernisierung bestehender kommunaler Infrastruktur, ausdrücklich auch Sporthallen und Schwimmbäder",
+      "zitat": "Unsere Ziele: […] Regelmäßige Sanierung und Modernisierung bestehender Infrastruktur, etwa Straßen, Brücken, Schulen, Sporthallen, Schwimmbäder und Kitas.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "29d90de2264802ad"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Sonderprogramm zur Sanierung bestehender öffentlicher Kiezsportflächen (Bolz- und Basketballplätze)",
+      "zitat": "Wir legen ein Sonderprogramm zur Sanierung bestehender Kiezsportflächen auf.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "dfa2a07aaa47b595"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm „Ehrenamt“ als zentrale Förderlinie, u. a. für Sport: Projekte, Ausbildung, Nachwuchsgewinnung, Ausfallhilfen",
+      "zitat": "Mit einem Landesprogramm „Ehrenamt“ schaffen wir eine zentrale Förderlinie für alle Engagierten, z.B. in Sport, Kultur, Umwelt, Heimatpflege oder im sozialen Bereich. Hierüber fördern wir Projekte, Veranstaltungen, Ausbildung, Nachwuchsgewinnung, Ausfallhilfen und Vergünstigungen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "af708b29b148eb63"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Aufwandsentschädigungen ehrenamtlicher Trainer, Übungsleiter und Schiedsrichter regelmäßig an Lohn- und Preisentwicklung anpassen",
+      "zitat": "Ehrenamtliche Trainer, Übungsleiter, Kampf- und Schiedsrichter leisten einen gesellschaftlichen Wert, der in keiner Statistik vollständig erfasst wird. […] Ihre möglichen Aufwandsentschädigungen werden wir regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "bc916c80f9f6b350"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Ehrenamtskarte überarbeiten und mit Vorteilen wie Nahverkehrsvergünstigungen, Eintrittsermäßigungen und steuerlichen Erleichterungen ausstatten",
+      "zitat": "Die Ehrenamtskarte werden wir überarbeiten und mit wirklichen Vorteilen für die Ehrenamtlichen, wie Vergünstigungen im öffentlichen Nahverkehr über Eintrittsermäßigungen bis hin zu steuerlichen Erleichterungen, ausstatten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "e04f120088d9db4b"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Ehrenamt im Sport stärken durch Anerkennungsinstrumente, mehr Sichtbarkeit und bessere Vereinbarkeit mit Schule, Studium und Beruf",
+      "zitat": "Wir wollen ehrenamtliches Engagement im Sport konkret stärken – durch Anerkennungsinstrumente, mehr Sichtbarkeit für ehrenamtliches Wirken und bessere Rahmenbedingungen für die Vereinbarkeit mit Schule, Studium und Beruf sowie die langfristige Sicherung der Freiwilligendienste.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "525cc96a5e1a0418"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "In landeseigene Schwimmbäder investieren, Typenschwimmhallen bauen und Bestandsbäder klimagerecht sanieren",
+      "zitat": "Wir investieren in landeseigene Schwimmbäder, bauen Typenschwimmhallen und sanieren Bestandsbäder klimagerecht.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "f4b9f7a64c602e6d"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Sportflächen ganzjährig nutzbar machen, etwa mit moderner Beleuchtung, witterungsbeständigen Belägen und besserer Organisation der Trainingszeiten.",
+      "zitat": "Wir werden die ganzjährige Nutzbarkeit von Sportflächen konsequent verbessern. Dabei setzen wir auf moderne Beleuchtungssysteme, witterungsbeständige Beläge und bessere organisatorische Lösungen, damit Trainingszeiten optimal genutzt werden können.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "32e47537f93398c2"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "bund",
+      "beschreibung": "Gemeinnützigkeit des E-Sports anerkennen",
+      "zitat": "E-Sport ist in Deutschland so etabliert, dass wir nun die Gemeinnützigkeit anerkennen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "532ac05d8a97be0a"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Für eine Erhöhung der steuerlichen Freibeträge für Übungsleiter- und Ehrenamtspauschalen eintreten",
+      "zitat": "Wir werden: […] uns für eine Erhöhung der steuerlichen Freibeträge für Übungsleiter- und Ehrenamtspauschalen einsetzen",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "9714556e9e9647d6"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Kontinuierliche Investitionen in Sportstätten, damit die Nutzung kommunaler Sportstätten für Vereine bezahlbar bleibt",
+      "zitat": "Für die Sportvereine insgesamt muss die Inanspruchnahme von kommunalen Sportstätten bezahlbar bleiben. Wir setzen uns deshalb für kontinuierliche Investitionen in Sportstätten ein.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "a78807ddcaebdf2a"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Vereine gezielt bei Aus- und Fortbildung von Übungsleitern und Trainern sowie bei der Digitalisierung unterstützen",
+      "zitat": "Außerdem wollen wir die Vereine bei der Aus- und Fortbildung von Übungsleiter:innen und Trainer:innen, bei der Digitalisierung und bei der Entwicklung von Strukturen der Fan-Kultur gezielt unterstützen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "a7bea6635943da86"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Einen regelmäßig fortgeschriebenen Zustandsbericht der Sportstätten im Land für einen sinnvollen Mitteleinsatz einfordern",
+      "zitat": "Wir werden: […] einen aussagekräftigen und regelmäßig fortzuschreibenden Zustandsbericht der Sportstätten im Land für einen sinnvollen Mitteleinsatz einfordern",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "44c4e6466d6e356f"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Unbürokratische Instandhaltungsbudgets für Vereine, ohne komplizierte Antragsverfahren selbst verwendbar",
+      "zitat": "Wir führen unbürokratische Instandhaltungsbudgets für Vereine ein. Diese können selbstbestimmt und ohne komplizierte Antragsverfahren genutzt werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "c9a58e5a694df5cf"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Mindestens eine vollinklusive Sportanlage je Bezirk, Bau inklusiver Typensporthallen forcieren",
+      "zitat": "Dafür werden wir: […] das Ziel von mindestens einer vollinklusiven Sportanlage pro Bezirk konsequent umsetzen, die barrierefrei auffindbar und nutzbar ist. Um dieses Ziel schneller und kosteneffizienter zu erreichen, forcieren wir den Bau von inklusiven „Typensporthallen“.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "96faf02264469ae5"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Sanierungsstau bei Sportflächen mit massiven Investitionen und einem Sofortprogramm beheben",
+      "zitat": "Der Sanierungsstau bei Sportflächen muss durch massive Investitionen und ein […] Sofortprogramm behoben werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "ce7229314db4996c"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Landesinvestitionsprogramm für Schwimmhallen und Schwimmbäder, das Sanierung, Neubau und Betrieb langfristig sichert",
+      "zitat": "Investitionsprogramm für Schwimmhallen und Schwimmbäder aufsetzen, um Sanierung, Neubau und Betrieb langfristig zu sichern",
+      "ursachen_ids": [
+        3701
+      ],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "3e75c109f48a3f98"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Sportstätten bei Sanierungen energetisch und klimaverträglich modernisieren und multifunktional nutzbar machen.",
+      "zitat": "Wir setzen uns dafür ein, Sportstätten im Zuge von Sanierungen umwelt- und klimaverträglich zu modernisieren. Dabei wollen wir nicht nur bauliche Mängel beseitigen, sondern zugleich energetische Standards verbessern und multifunktionale Nutzungen ermöglichen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "555a75d27ef330be"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "bund",
+      "beschreibung": "Bund unterstützt Länder, Kommunen und Vereine bei der Sanierung von Sportstätten",
+      "zitat": "Wir helfen Ländern, Kommunen und Vereinen bei der Sanierung von Sportstätten […]",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "5b7632d068af67f1"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Verlässliche Sanierungsstrategie, bessere Datengrundlage und schnellere Genehmigungen für mehr Planungssicherheit von Bezirken und Vereinen.",
+      "zitat": "Zugleich werden wir mehr Planungssicherheit für Bezirke und Vereine schaffen – durch eine verlässliche Sanierungsstrategie, eine bessere Datengrundlage und beschleunigte Genehmigungsprozesse.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "19b70ff1c0ea7148"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Neues Förderprogramm zur Entlastung der Vereine für Trainerinnen, Trainer und Übungsleiter auflegen",
+      "zitat": "Dafür braucht es ausreichend Trainerinnen und Trainer sowie Übungsleiter. Zur Entlastung der Vereine wollen wir hierfür ein neues Förderprogramm auflegen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "a0771f0c12cc094b"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Ehrenamt im Sport durch Digitalisierung von Bürokratie entlasten",
+      "zitat": "Um es zu stützen, werden wir […] die Digitalisierung vorantreiben, um das Ehrenamt von Bürokratie zu entlasten.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "61e6253f888276b8"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Sportentwicklungsplanung und interkommunale Zusammenarbeit im Sport strukturell fördern",
+      "zitat": "Sportentwicklungsplanung und interkommunale Zusammenarbeit fördern wir strukturell.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "d6a26d6c1fd0de72"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Vorhandene Sportanlagen besser nutzen: Onlineportal für die Nutzung von Sportanlagen, Schulhöfe und Sportanlagen auch außerhalb der Schulzeiten öffnen",
+      "zitat": "Die vorhandenen Sportanlagen müssen besser für den Sport genutzt werden. Dazu werden wir ein Onlineportal für die Nutzung von Sportanlagen einrichten und Schulhöfe und Sportanlagen auch außerhalb der Schulzeiten für sportliche Aktivitäten zur Verfügung stellen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "e8d0247fb41eda44"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Sanierungsbedürftige, von Ausfall bedrohte Bäder vorrangig finanziell absichern",
+      "zitat": "Sanierungsbedürftige Bäder, die auszufallen drohen, werden wir prioritär finanziell absichern.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "08d5c6eb1921f988"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Vereine mit eigenen Sportanlagen bei der Förderung den Nutzern kommunaler Sportstätten gleichstellen, Sportfördergesetz anpassen",
+      "zitat": "Dies wollen wir stärken, zum Beispiel durch die Unterstützung des Ehrenamtes, die Stimulierung zur Erlangung von Trainerlizenzen oder die Gleichstellung von Vereinen, die eigene Liegenschaften nutzen und tragen zu Vereinen, die kommunale Sportstätten in Anspruch nehmen. Bei letzterem geht es auch um die Anpassung des Sportfördergesetzes [Land].",
+      "ursachen_ids": [
+        3703
+      ],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "4bb3183263c2c331"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Trainer- und Übungsleiterstrukturen dauerhaft sichern, besonders im Nachwuchs- und Leistungssport",
+      "zitat": "Qualifizierte Trainer- und Übungsleiterstrukturen sichern wir dauerhaft – insbesondere im Nachwuchs- und Leistungssport.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "79b130386d0e3782"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "Land übernimmt GEMA-Gebühren für bis zu vier nicht-kommerzielle, eintrittsfreie Veranstaltungen pro Jahr je gemeinnützigem Verein",
+      "zitat": "Übernahme der GEMA-Gebühren für bis zu vier Veranstaltungen pro Jahr je eingetragenem, gemeinnützigem Verein",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "dfb6b043e710af98"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Digitalen Sportstätten-Atlas zu Zustand, Sanierungsbedarf und Nutzung einrichten; darauf Sportstättenbericht und Sportentwicklungsplanung als Grundlage für Investitionen",
+      "zitat": "Zwecks einer gezielten und strategisch gesteuerten Investitionsoffensive richten wir in Kooperation mit Kommunen und Vereinen einen digitalen Sportstätten-Atlas ein, der Zustand, Sanierungsbedarf und Nutzung landesweit erfasst.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "a6ad540f61c31e6b"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Bäder energetisch sanieren, um Strom- und Wärmeversorgung zu optimieren und Betriebskosten zu senken, etwa mit Wärmerückgewinnung",
+      "zitat": "Die [Land] Bäder werden energetisch saniert, um Strom- und Wärmeversorgung zu optimieren und die Kosten zu senken.",
+      "ursachen_ids": [
+        3702
+      ],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "8818a11d74aefa93"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Sanierungsstau im Sportforum Hohenschönhausen und im Olympiapark abbauen",
+      "zitat": "[Land] verfügt mit dem Sportforum Hohenschönhausen und dem Olympiapark über zwei Sportkomplexe mit einzigartigem Potenzial. Beide Standorte leiden jedoch unter einem massiven Sanierungsstau, den wir konsequent abbauen werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "715367e90ce15e4a"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "land",
+      "beschreibung": "Fördervereinbarung mit dem Landessportbund fortschreiben und anpassen, für Planungssicherheit der Vereine",
+      "zitat": "Die Fördervereinbarung mit dem Landessportbund schreiben wir fort, um den Vereinen Planungssicherheit zu geben, und passen sie an die neuen Herausforderungen an.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "f5741ce8bc399629"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Fördervereinbarung mit dem Landessportbund über 2029 hinaus fortführen",
+      "zitat": "Die Fördervereinbarung mit dem Landessportbund wollen wir nach 2029 fortführen; Bundes- und EU - Programme akquirieren wir stärker für Breiten- und Spitzensport.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "d202c9a532386d5c"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "land",
+      "beschreibung": "Sport in Kita und Schule stärken und Kooperationen mit Sportvereinen ausbauen",
+      "zitat": "Wir stärken Sport in Kita und Schule und bauen Kooperationen mit Sportvereinen aus.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "486915258d73dcc9"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Landessportbund als zentrale Säule der Sportförderung weiterführen und auskömmlich finanzieren",
+      "zitat": "Weiterführung und auskömmliche Finanzierung des Landessportbund [Land] als zentrale Säule der Sportförderung",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "8c8f149d4481d3ec"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "bund",
+      "beschreibung": "Vereinspaket für das Ehrenamt, das Bürokratie, Datenschutz und Haftungsfragen angeht",
+      "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "6a3e5b556115d3d8"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Barrierefreie Planung und Anpassung von Sportstätten unterstützen",
+      "zitat": "Wir werden: […] die barrierefreie Planung und Anpassung von Sportstätten unterstützen, um Teilhabe für alle zu sichern.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "ec222b282b392ae7"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Gemeinsam mit den Kommunen ein langfristiges Programm zur Sanierung und Modernisierung von Sportstätten mit verlässlicher, planbarer Förderung auflegen",
+      "zitat": "Wir werden: […] gemeinsam mit Kommunen ein langfristiges Programm zur Sanierung und Modernisierung von Sportstätten auflegen und dafür eine verlässliche und planbare Förderkulisse schaffen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "5296b985571b5891"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Landesinvestitionsprogramm für Schwimmhallen und Schwimmbäder auflegen",
+      "zitat": "Ein Investitionsprogramm für Schwimmhallen und Schwimmbäder wird aufgelegt.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "7b0ec6b840a35307"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "bund",
+      "beschreibung": "Gemeinnützige zivilgesellschaftliche Organisationen von überflüssiger Bürokratie entlasten.",
+      "zitat": "Zivilgesellschaftliche Organisationen tragen das gemeinnützige Engagement. Ihre Arbeit wollen wir von überflüssiger Bürokratie entlasten.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "759d3d20f96f41f6"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Pauschalen für Sportvereine verdoppeln, an die Kostenentwicklung koppeln und im Sportfördergesetz festschreiben",
+      "zitat": "Vereine sind das Rückgrat des Sports. Die Vereinspauschalen werden verdoppelt und dynamisiert und im Sportfördergesetz festgeschrieben.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "6d484bc28f133140"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Sanierung von Sportstätten und Schwimmbädern mit Fokus auf ökologische Nachhaltigkeit und Inklusion",
+      "zitat": "Deshalb setzen wir uns für die Sanierung von Sportstätten und Schwimmbädern ein, wobei ökologische Nachhaltigkeit und echte Inklusion im Vordergrund stehen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "80165be35550d424"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "GEMA-Ländervertrag anstreben, der ehrenamtlichen Vereinen bis zu vier lizenzkostenfreie Musiknutzungen pro Jahr ermöglicht",
+      "zitat": "Vereine als tragende Säulen des gesellschaftlichen Zusammenhalts spürbar entlasten: Dazu streben wir einen GEMA-Ländervertrag für [Land] an, der ehrenamtlich tätigen Vereinen bis zu vier lizenzkostenfreie Musiknutzungen pro Jahr ermöglicht sowie bürokratische und finanzielle Hürden deutlich reduziert.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "93c4c3584d3d7f7c"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Ehrenamtskarte so anpassen, dass ehrenamtlich Engagierte unter Federführung des Landes den ÖPNV kostenlos nutzen können",
+      "zitat": "Unter Federführung des Landes ermöglichen die Landkreise den Menschen, die sich ehrenamtlich engagieren, den ÖPNV kostenlos zu nutzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "46063f0a2f6850dc"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Buchung von Hallen und Plätzen für Vereine über ein transparentes Online-System vereinfachen, freie Kapazitäten sichtbar machen",
+      "zitat": "Wir vereinfachen die Buchung von Hallen oder Plätzen für Vereine und Initiativen über ein transparentes Online-System. So machen wir freie Kapazitäten sichtbar und bauen bürokratische Hürden ab.",
+      "ursachen_ids": [
+        3701
+      ],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "0226ab7636b58de8"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Kapazitäten der Sportanlagen an das Bevölkerungswachstum anpassen, etwa mit Bewegungsflächen und Open-Workout-Anlagen in Parks",
+      "zitat": "Die Kapazitäten der Sportanlagen wollen wir an das Wachstum der Bevölkerung anpassen. Sport- und Bewegungsflächen wollen wir beispielsweise in Form von Open-Work-out-Einrichtungen in Parks und Landschaften integrieren.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "3bd3b6379f4bcf27"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Sportstätten weiter über die bestehenden Programme fördern und zusätzliche Investitionsmittel des [Land]-Plans 2035 gezielt für ein Sportanlagenprogramm einsetzen",
+      "zitat": "Zur Stärkung des Breitensports werden wir weiterhin Sportstätten über die etablierten Programme fördern. Die zusätzlichen Investitionsmittel aus dem [Land]-Plan 2035 wollen wir dabei auch gezielt für ein starkes Sportanlagenprogramm einsetzen, damit Vereine, Schulen und Kommunen gute Bedingungen für Sport und Bewegung vorfinden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "5488090d3f66508e"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Programm „Kinder in den Sportverein“: Das Land übernimmt für jedes Kind die Mitgliedschaft in einem Sportverein in den ersten zwei Jahren",
+      "zitat": "Mit einem Programm „Kinder in den Sportverein“ („KidS“) soll das Land für jedes Kind in [Land] die Mitgliedschaft in einem selbst gewählten Sportverein in den ersten zwei Jahren übernehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "8564af7a6ff9b75c"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Vereinsinvestitionsprogramm finanziell aufstocken und entbürokratisieren",
+      "zitat": "Das Vereinsinvestitionsprogramm werden wir finanziell aufstocken und entbürokratisieren.",
+      "ursachen_ids": [
+        3703
+      ],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "90c6e65c0805648a"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Digitale Zugangs- und Buchungssysteme für Sportanlagen fördern, damit vorhandene Flächen flexibler und länger genutzt werden.",
+      "zitat": "Digitale Zugangs- und Buchungssysteme für [Land] Sportanlagen wollen wir fördern, um einen vereinfachten Zutritt zu jeder Zeit zu den Sportanlagen und damit eine erweiterte, flexible Nutzung von Sportflächen zu ermöglichen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "c082643ed4ee9b6a"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Kein Abriss von Sportstätten ohne gleichwertigen Ersatz; bestehende Anlagen wie SEZ und Jahn-Sportpark erhalten und ertüchtigen",
+      "zitat": "Kein Abriss ohne gleichwertigen Ersatz – das SEZ, der Jahn-Sportpark und andere Sportstätten müssen fit für die Zukunft gemacht werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "9327dc3eaeb32705"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Einfachere Förderanträge und Bürokratieabbau für ehrenamtlich geführte Vereine",
+      "zitat": "Einfachere Förderanträge und Bürokratieabbau für ehrenamtlich geführte Vereine",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "a4abb08ec56bdfef"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Ehrenamt stärken: Freistellungsgesetz auf privates Ehrenamt ausweiten, Ehrenamtspauschalen erhöhen, Ehrenamt bei der Rente anrechnen",
+      "zitat": "Dazu bedarf es einer Ausweitung des Freistellungsgesetzes auf privates Ehrenamt, die Erhöhung von Ehrenamtspauschalen sowie die Anerkennung der ehrenamtlichen Tätigkeit bei der Rentenberechnung.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "97de5661b4fb52be"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Ungenutzte Sportorte reaktivieren und in Eigenverantwortung der Vereine geben, saisonale Sportstätten ganzjährig nutzen",
+      "zitat": "Wir setzen uns für die Reaktivierung ungenutzter Sport- und Bewegungsorte ein, die in die Eigenverantwortung der Sportvereine übertragen werden sollen. Saisonal genutzte Sportstätten müssen einer ganzjährigen aktiven Nutzung zugeführt werden.",
+      "ursachen_ids": [
+        3702
+      ],
+      "pruefsumme": "84a510f9ac5292f9"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Beim Bund und bei der EU darauf hinwirken, dass das Land stärker von Förderprogrammen für Sportstätten profitiert.",
+      "zitat": "Wir werden uns auf Bundes- und Europaebene mit Nachdruck dafür einsetzen, dass [Land] stärker von Förderprogrammen für Sportstätten, Großveranstaltungen und Nachwuchsförderung profitiert.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "d6ced8fd60ac01a5"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Sanierungsoffensive für Sportstätten: Kürzungen stoppen, Sanierungsmittel verdoppeln, Vorrang für Instandhaltung, Umbau und barrierefreie Modernisierung",
+      "zitat": "Sanierungsoffensive für Sportstätten: Wir stoppen Kürzungen und verdoppeln die Mittel für Sanierungen. Priorität haben Instandhaltung, Umbau und barrierefreie Modernisierung.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "0dc667626c8d4a39"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "bund",
+      "beschreibung": "Der Bund bezahlt allen Kindern das erste Jahr im Sportverein (Zuschuss bis zu 150 Euro im Jahr), um Kinder in die Vereine zu bringen und die Vereine zu unterstützen.",
+      "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr). So werden Kinder in die Vereine gebracht und die Vereine und ihre wertvolle Arbeit unterstützt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "e7563fbe1cf17235"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Ehrenamt im Vereinssport stärker anerkennen, Bürokratie abbauen und Förderverfahren vereinfachen.",
+      "zitat": "Wir werden dieses Engagement stärker anerkennen, bürokratische Hürden abbauen und Förderverfahren vereinfachen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "228366a504229712"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte im Breitensport",
+      "zitat": "Breitensport und Vereine stärken: […] Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "a083033cfc868661"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Gezielte Programme zur Stärkung ehrenamtlicher Strukturen im ländlichen Raum entwickeln, wo Bevölkerungsrückgang Vereine gefährdet",
+      "zitat": "Wir werden: […] gezielte Programme zur Stärkung ehrenamtlicher Strukturen im ländlichen Raum entwickeln, insbesondere dort, wo Bevölkerungsrückgang Vereine und Initiativen gefährdet.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "92483b06f08c25f7"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Vereinen, Karneval und Kapellen die GEMA-Gebühren für bis zu drei öffentliche Veranstaltungen im Jahr erstatten",
+      "zitat": "Um sie zu entlasten, werden wir Vereinen, dem Karneval und (Schalmeien-)Kapellen für […] öffentliche Auftritte und Veranstaltungen für bis zu drei Veranstaltungen im Jahr die GEMA-Gebühren erstatten.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "74b3de2e26997a58"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Das Landesprogramm zur Sanierung von Sportstätten ausbauen und langfristig finanziell absichern.",
+      "zitat": "Wir werden das Sportstättensanierungsprogramm deshalb konsequent ausbauen und langfristig finanziell absichern.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "07c21082ff11da81"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Sportfördergesetz novellieren: Bürokratie abbauen, Antragsverfahren vollständig digitalisieren, Förderung des Landessportbundes dynamisieren",
+      "zitat": "Mit einer Novellierung des Sportfördergesetzes werden wir die Sportförderung in [Land] modernisieren und die Autonomie des Sports garantieren. Ziel ist die Abschaffung überflüssiger Bürokratie, eine vollständige Digitalisierung der Antragsverfahren und eine Dynamisierung der finanziellen Förderung des Landessportbundes.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "f30aa33792340764"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm „Ehrenamt im Sport“ einführen, das mit dem Landessportbund Weiterbildungsmöglichkeiten für Ehrenamtliche finanziell absichert",
+      "zitat": "Wir führen das Förderprogramm „ Ehrenamt im Sport “ ein. Damit werden wir in enger Abstimmung mit dem Landessportbund Weiterbildungsmöglichkeiten finanziell absichern.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "c103fd3483c610ef"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Ehrenamts-Check bei neuen Gesetzen und Einsatz für einfacheres Vereins-, Gemeinnützigkeits- und Steuerrecht",
+      "zitat": "Wir führen einen Ehrenamts-Check bei allen neuen Gesetzen ein und setzen uns für Vereinfachungen im Vereins-, Gemeinnützigkeits- und Steuerrecht auf Bundesebene ein.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "17372529f8312098"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Bezirke finanziell bei der Umsetzung ihrer Sportentwicklungspläne (neue Sportstätten) unterstützen",
+      "zitat": "Die Bezirke unterstützen wir finanziell gezielt dabei, ihre bezirklichen Sportentwicklungspläne in die Tat umsetzen zu können.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "62c9035017daed8b"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Sportstättenförderung des Landes für Kommunen und Vereine fortsetzen",
+      "zitat": "Wir werden die Sportstättenförderung für Kommunen und Vereine fortsetzen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "c0863e4fe1be4467"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm zur Zusammenarbeit von Schulen und Sportvereinen, vor allem zur Einbindung der Vereine in den Ganztag",
+      "zitat": "Zur Förderung der Zusammenarbeit von Schulen und Sportvereinen werden wir ein Landesprogramm auflegen, um insbesondere die Einbindung der Vereine in den Ganztag zu stärken.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "b10449347c69e112"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Vereine bei der Entschädigung ehrenamtlicher Übungsleitungen unterstützen, vor allem mit Angeboten für Kinder und Jugendliche",
+      "zitat": "Wir setzen uns dafür ein, Vereine bei der Entschädigung ehrenamtlicher Übungsleiter*innen zu unterstützen. Unser Fokus liegt besonders auf Vereinen, die Angebote für Kinder und Jugendliche organisieren.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "00fe9e04291f496b"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Sportvereine bei der Digitalisierung ihrer Arbeit unterstützen",
+      "zitat": "Vereine werden bei der Digitalisierung ihrer Arbeit unterstützt.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "3f92e8bf4bac161a"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Bei Neubauvorhaben den Bedarf an zusätzlichen Sportflächen berücksichtigen",
+      "zitat": "Bei Neubauvorhaben muss der Bedarf an zusätzlichen Sportflächen berücksichtigt werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "e156db5e4b16e69e"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "bund",
+      "beschreibung": "Sportstätten barrierefrei gestalten und spezielle Förderprogramme für Menschen mit Behinderung einrichten",
+      "zitat": "Inklusive Sportangebote: Sportstätten werden barrierefrei gestaltet und spezielle Förderprogramme für Menschen mit Behinderung eingerichtet, um allen eine gleichberechtigte Teilhabe zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "f80c4777adc2d5ed"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten weiter vorantreiben",
+      "zitat": "Wir setzen Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten mit Nachdruck fort.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "aa215a23205ca721"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Verwaltungs- und Förderverfahren vereinfachen, um Vereine und Verbände zu entlasten",
+      "zitat": "Gleichzeitig müssen Verwaltungs- und Förderverfahren vereinfacht werden, um Vereine und Verbände spürbar zu entlasten.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "1548fe1670c65f0e"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Jahrzehnt der Investitionen in den Breitensport mit zentraler Baudienststelle für den Sportstättenbau",
+      "zitat": "Wir werden ein „Jahrzehnt der Investitionen“ in den Breitensport einleiten. Dafür richten wir eine zentrale Baudienststelle für den Sportstättenbau ein.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "5e635f00b1c3b357"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Übungsleiterpauschale spürbar anheben, um das Ehrenamt im Sport zu stützen",
+      "zitat": "Das Ehrenamt ist das Rückgrat des Sports. […] Um es zu stützen, werden wir die Übungsleiterpauschale spürbar anheben",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "4196b011709af474"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Sporthallen und -plätze vorrangig für den Vereinssport; Nutzungsvorschriften ändern, damit Vereine bessere Chancen auf Trainingszeiten erhalten",
+      "zitat": "Dazu wollen wir die Sportanlagen-Nutzungsvorschriften (SPAN) so ändern, dass Vereine mit entsprechendem Angebot künftig eine bessere Chance auf Trainingszeiten erhalten.",
+      "ursachen_ids": [
+        3701
+      ],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "81d43d26fab34b8e"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Sportanlagen im Land ausbauen und sanieren",
+      "zitat": "Wir wollen: […] Sportanlagen ausbauen und sanieren, Breiten- und Leistungssport fördern sowie Bundesstützpunkte und Nachwuchsleistungssport sichern.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "186f2ab538ad5130"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Schulische Sportstätten stärker öffnen und bei Bedarf modernisieren und sanieren, mehr frei zugängliche Bewegungsflächen",
+      "zitat": "Um das zu gewährleisten, unterstützen wir ein vielfältiges Sportangebot und wollen mehr frei zugängliche Bewegungsflächen schaffen, schulische Sportstätten stärker öffnen und dort, wo es nötig ist, modernisieren und sanieren.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "3593a6288f3fc0ff"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Bürokratische Hürden für ehrenamtlich getragene Vereine und Initiativen gezielt abbauen (allgemein, nicht nur Sport)",
+      "zitat": "Wir bauen bürokratische Hürden für ehrenamtlich getragene Vereine und Initiativen gezielt ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "d49dd92ee57c9315"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Vereinsinvestitionsprogramm entbürokratisieren und finanziell stärken",
+      "zitat": "Das Vereinsinvestitionsprogramm entbürokratisieren wir und stärken es finanziell.",
+      "ursachen_ids": [
+        3703
+      ],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "5a1a9bb6fab91ec0"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Bessere Nutzung der Sportstandorte: Schulhöfe, Sporthallen und Grünflächen auch nach Schulschluss, am Wochenende und in den Ferien öffnen",
+      "zitat": "Wir ermöglichen eine bessere Nutzung der rund 1.200 Sportstandorte [Land]. Dafür öffnen wir Schulhöfe, Sporthallen, Parks und Grünflächen konsequent auch nach Schulschluss, am Wochenende und in den Ferien.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "762a730932b1209f"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "bund",
+      "beschreibung": "In der kommenden Wahlperiode die Bereitstellung der Sportmilliarde sicherstellen",
+      "zitat": "Für die kommende Wahlperiode stellen wir sicher, dass die Sportmilliarde zur Verfügung steht.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "5ebd5b9b4bf767f3"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Bürokratische Hindernisse im Sport abbauen, insbesondere bei Förderanträgen, Genehmigungen und Bauvorhaben",
+      "zitat": "Wir werden: […] auch im Sport Hindernisse abbauen, die sich aus allzu bürokratischen gesetzlichen Regelungen oder einem unvertretbar strengen Verwaltungsvollzug ergeben, insbesondere bei Förderanträgen, Genehmigungen und Bauvorhaben.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "6b1eb32aaffe565d"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Förderung des Ehrenamts im Sport mit dem Landessportbund weiterentwickeln, u. a. landesweite Ehrenamtskarte und Sicherung der Freiwilligendienste",
+      "zitat": "Gemeinsam mit dem Landessportbund wollen wir die Förderung des Ehrenamtes weiterentwickeln, u.a. durch mehr Anerkennung, eine landesweite Ehrenamtskarte, die Sicherung der Freiwilligendienste und den Ausbau der Vereinbarkeit von Engagement mit Schule, Studium und Beruf.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "432120eaa739c671"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "bund",
+      "beschreibung": "Ehrenamt im Breitensport attraktiver und zugänglicher machen",
+      "zitat": "Wir […] erhöhen die Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "e68c9cacf3925303"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Schwimmbäder modernisieren: bestehende Bäder energiesparsam sanieren, neue Wasserflächen bei hohem Bedarf schaffen, Betriebsabläufe effizienter machen.",
+      "zitat": "Gleichzeitig werden wir die [Land] Bäderlandschaft umfassend modernisieren und langfristig sichern. Bestehende Anlagen wollen wir umweltgerecht und dadurch energiesparsam sanieren, neue Wasserflächen dort schaffen, wo der Bedarf besonders hoch ist, und Betriebsabläufe effizienter gestalten.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "63b7549e3caabf0d"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "land",
+      "beschreibung": "Unbürokratischer Soforthilfefonds für kleine Vereine, etwa 1.000 Euro pro Verein",
+      "zitat": "Ein […] Soforthilfefonds für kleine Vereine, etwa in Höhe von 1.000 Euro pro Verein.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "1c0604850e76687f"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Rechtssichere Regeln, damit gemeinnützige Sportvereine mit erneuerbaren Energien (Eigenversorgung, Einspeisung) Einnahmen erzielen können, ohne die Gemeinnützigkeit zu verlieren.",
+      "zitat": "Gleichzeitig wollen wir rechtssichere Rahmenbedingungen schaffen, damit gemeinnützige Sportvereine durch den Betrieb erneuerbarer Energiequellen – insbesondere zur Eigenversorgung und in begrenztem […] Umfang auch zur Einspeisung – zusätzliche Einnahmen erzielen können, ohne ihre Gemeinnützigkeit zu gefährden.",
+      "ursachen_ids": [
+        3703
+      ],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "b50c9dd0a2441c27"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Landesprogramme für Kinderbewegung, Sport in Schule und Verein sowie Schwimmen ausfinanzieren",
+      "zitat": "Sportförderung: Die Ausfinanzierung von den Programmen „Kinderbewegungsland“, „Gemeinsam Sport in Schule und Verein“ und „[Land] kann schwimmen“.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "53065b572672c18c"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Zuschüsse für Ausrüstung oder Honorare an Vereine, die Zugewanderte und Geflüchtete aktiv einbinden",
+      "zitat": "Wir unterstützen Vereine, die Migrant*innen und Menschen mit Fluchterfahrung aktiv einbinden, mit Zuschüssen für Ausrüstung oder für Honorare.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "2f4f77e38d7fb804"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "bund",
+      "beschreibung": "Ehrenamts- und Übungsleiterpauschale spürbar erhöhen, um ehrenamtlich Tätige steuerlich zu entlasten",
+      "zitat": "Wir erhöhen die Ehrenamts- und die Übungsleiterpauschale spürbar.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "5a0f09725a4c4950"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Jährlicher Anerkennungsbonus für Übungsleiter, Jugendbetreuer und Vorstandsmitglieder im Ehrenamt",
+      "zitat": "Ein jährlicher Anerkennungsbonus für Übungsleiter, Jugendbetreuer und Vorstandsmitglieder, als Zeichen der Wertschätzung für ehrenamtliche Arbeit.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "1325781a8de83726"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Planungs- und Förderverfahren für Sportstätten beschleunigen, digitalisieren und ehrenamtsfreundlich gestalten",
+      "zitat": "Planungs- und Förderverfahren müssen beschleunigt, digitalisiert und ehrenamtsfreundlich gestaltet werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "2feea1b915fc4660"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "land",
+      "beschreibung": "Auflagen, Dokumentationspflichten und Förderbürokratie für Sportvereine abbauen",
+      "zitat": "Staatliche Auflagen, Dokumentationspflichten und Förderbürokratie sind konsequent abzubauen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "db233f86e5f94931"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "land",
+      "beschreibung": "Förderung hauptamtlicher Verwaltungskräfte in Vereinen erleichtern: nötige Mitgliedszahlen in der Fördervereinbarung mit dem Landessportbund deutlich senken",
+      "zitat": "Deswegen wollen wir die Fördervereinbarung zwischen dem Land [Land] und dem Landessportbund [Land] so ändern, dass die Mitgliedszahlen, die für eine Förderung benötigt werden, deutlich sinken.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "8342bfe397615d1b"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "land",
+      "beschreibung": "Auf Bundesebene für höhere Übungsleiter- und Ehrenamtspauschale eintreten",
+      "zitat": "Wir setzen uns für die Anhebung der Übungsleiter- und Ehrenamtspauschale auf Bundesebene ein.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "7b2782c92f4c1ef5"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Vergütung von Übungsleitern im Kinder-, Jugend- und Inklusionssport perspektivisch auf 20 bis 25 Euro pro Stunde anheben",
+      "zitat": "Perspektivisch soll die Vergütung von Übungsleiter*innen im Kinder-, Jugend- und Inklusionssport auf 20 bis 25 Euro pro Stunde steigen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "328b77b759bdf180"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "bund",
+      "beschreibung": "Kommunen besser finanzieren und über einen Deutschlandfonds Investitionen in kommunale Infrastruktur (u. a. Schwimmbäder, Sportplätze) ermöglichen.",
+      "zitat": "Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "0b5e84e6d642989f"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "land",
+      "beschreibung": "Pauschalförderung für Vereine und Mitgliedsorganisationen dauerhaft erhöhen und dynamisieren",
+      "zitat": "Wir wollen die Pauschalförderung für Vereine und Mitgliedsorganisationen nachhaltig erhöhen und dynamisieren.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "52bfac208d60beb6"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "bund",
+      "beschreibung": "Mehr Anreize für private Gelder und Spenden an Vereine setzen und den Zugang zu öffentlicher Förderung erleichtern",
+      "zitat": "Zudem setzen wir mehr Anreize für private Gelder und Spenden und erleichtern den Zugang zu öffentlicher Förderung.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "f412410c1d5f24fc"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "land",
+      "beschreibung": "Landesweites digitales Vereinsportal zur Vereinfachung von Verwaltung, Förderung und Beratung der Vereine",
+      "zitat": "Ein digitales Vereinsportal [Land], zur Vereinfachung von Verwaltung, Förderung und Beratung.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "276218089eb19f71"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "land",
+      "beschreibung": "Gezielte Förderung von Vereinen mit hohem Jugendanteil durch Zuschüsse für Übungsleiter, Ausstattung und Infrastruktur",
+      "zitat": "Gezielte Förderung von Vereinen mit hohem Jugendanteil, etwa durch Zuschüsse für Übungsleiter, Ausstattung und Infrastruktur",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "f2ae1c41ce0a6161"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Breitensport als Gesundheitsvorsorge politisch und finanziell aufwerten",
+      "zitat": "Den Breitensport werden wir als Gesundheitsvorsorge politisch und finanziell aufwerten.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "bf9b147ac5612ab2"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Typenbauprogramm für Sportfunktionsgebäude und zentrale Planungs- und Baueinheit, die Bezirke entlastet und Bau und Sanierung beschleunigt",
+      "zitat": "Bei der bezirklichen Sportinfrastruktur richten wir uns an der Sportentwicklungsplanung aus und entwickeln ein Typenbauprogramm für Sportfunktionsgebäude. Eine zentrale Planungs- und Baueinheit entlastet Bezirke und beschleunigt barrierefreien Bau und Sanierung.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "dddd422ce268e3db"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Vereinen ohne eigene Sportstätten Zugang zu Sportstätten ermöglichen; Nutzung muss finanzierbar sein",
+      "zitat": "Vereinen, die über keine eigenen Sportstätten verfügen, ist der Zugang zu ermöglichen. Viele Vereine verfügen nicht über eigene Sportstätten und sind auf „Einmietmöglichkeiten“ angewiesen. Der Zugang und die Nutzung müssen möglich und finanzierbar sein.",
+      "ursachen_ids": [
+        3702
+      ],
+      "pruefsumme": "62f546acfcfa8feb"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "bund",
+      "beschreibung": "Investitionsprogramm für kinder- und familienfreundliche Infrastruktur in Kommunen mit Sanierungsstau, mit wohnortnahem Zugang u. a. zu Sportstätten.",
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "69ec5af832ba89d6"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "land",
+      "beschreibung": "Pauschalförderung für Kreis- und Stadtsportbünde sowie Landesfachverbände erhöhen und dynamisieren, Landessportbund auskömmlich finanzieren",
+      "zitat": "Die Pauschalförderung für Kreis- und Stadtsportbünde sowie Landesfachverbände wird erhöht und dynamisiert. Der Landessportbund wird auskömmlich finanziert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "6a4e388313c0cd4f"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "bund",
+      "beschreibung": "Sanierung von Turnhallen und Sportplätzen sowie Bau moderner, barrierefreier Sportstätten und Schwimmbäder; Bund beteiligt sich 15 Jahre mit je einer Milliarde Euro jährlich",
+      "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder. Daran soll sich der Bund in den kommenden 15 Jahren mit jeweils einer Milliarde Euro pro Jahr beteiligen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "ed96501d7497998e"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "land",
+      "beschreibung": "Instandhaltung von Sportstätten neu regeln, damit Nutzende Baumaßnahmen eigenverantwortlich und mit finanzieller Planungssicherheit umsetzen; bei Sanierung Fokus auf Barrierefreiheit",
+      "zitat": "Die Instandhaltung von Sportstätten wollen wir auf eine neue Grundlage stellen, die es den Nutzerinnen und Nutzern ermöglicht, Baumaßnahmen möglichst eigenverantwortlich und mit finanzieller Planungssicherheit umzusetzen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "0c3974d726e7762c"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm: Jedes Kind bis 18 kann kostenfrei in einem Sportverein seiner Wahl Sport treiben, auch um dem Vereinssport Nachwuchs zu verschaffen",
+      "zitat": "Um dieser negativen Tendenz entgegenzuwirken, gleichzeitig die Familien finanziell zu entlasten und dem Vereinssport Nachwuchs zu verschaffen, werden wir im Rahmen eines Landesprogramms jedem Kind bis zur Vollendung des 18. Lebensjahres die Möglichkeit bieten, sich in einem Verein seiner Wahl kostenfrei sportlich zu betätigen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "fd05ba92e6c40103"
+    },
+    {
+      "kennung": "M118",
+      "ebene": "bund",
+      "beschreibung": "Das Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern ausbauen, mit Blick auf ökologische Nachhaltigkeit und Inklusion.",
+      "zitat": "Wir wollen das Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern ausbauen. Für uns sind dabei ökologische Nachhaltigkeit und Inklusion leitend.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "4e130c61b9b18ef1"
+    },
+    {
+      "kennung": "M119",
+      "ebene": "land",
+      "beschreibung": "Kostenlose oder stark vergünstigte Nutzung kommunaler Sportanlagen für Vereine",
+      "zitat": "Breitensport und Vereine stärken: Kostenlose oder stark vergünstigte Nutzung kommunaler Anlagen für Vereine.",
+      "ursachen_ids": [
+        3702
+      ],
+      "pruefsumme": "f7053b6b5ec743fe"
+    },
+    {
+      "kennung": "M120",
+      "ebene": "land",
+      "beschreibung": "Mit Sportstätten-Entwicklungsplanung und Unterstützung der Bezirke ein Netz barrierefreier, klimaneutraler Sportstätten schaffen, mindestens drei inklusive je Bezirk",
+      "zitat": "Durch eine sinnvolle Sportstätten-Entwicklungsplanung und die Unterstützung der Bezirke bei der Umsetzung werden wir ein berlinweites Netz barrierefreier, klimaneutraler Sportstätten schaffen. […] Mindestens drei inklusive Sportstätten pro Bezirk sollen entstehen",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "fab4afa6e5e9c700"
+    },
+    {
+      "kennung": "M121",
+      "ebene": "bund",
+      "beschreibung": "eSports als gemeinnützig anerkennen",
+      "zitat": "Wir setzen uns zudem dafür ein, dass eSports als gemeinnützig anerkannt wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "917f86157fbbf10c"
+    },
+    {
+      "kennung": "M122",
+      "ebene": "land",
+      "beschreibung": "Vereine sollen Schulen, Sporthallen und kommunale Einrichtungen außerhalb der regulären Nutzungszeiten unbürokratisch und möglichst kostenfrei nutzen können",
+      "zitat": "Wir werden: […] uns dafür einsetzen, dass Vereine und ehrenamtliche Initiativen öffentliche Räume wie Schulen, Sporthallen oder kommunale Einrichtungen außerhalb der regulären Nutzungszeiten unbürokratisch und möglichst kostenfrei für ihre Arbeit nutzen können.",
+      "ursachen_ids": [
+        3702
+      ],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "4c7b69c7daa64d7f"
+    },
+    {
+      "kennung": "M123",
+      "ebene": "land",
+      "beschreibung": "Etat für Sportanlagen an Schulstandorten erhöhen und schnelle Sanierung der Schulsporthallen priorisieren",
+      "zitat": "Wir erhöhen den Etat für Sportanlagen an Schulstandorten und priorisieren die schnelle Sanierung dieser Hallen, damit Kinder und Jugendliche ihr Recht auf Bewegung und Sport wahrnehmen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "0e39e2e76af72f1f"
+    },
+    {
+      "kennung": "M124",
+      "ebene": "land",
+      "beschreibung": "Steganlagen von Wassersportvereinen erhalten, Planungssicherheit schaffen und Bürokratie abbauen, damit Vereine ihre Anlagen langfristig betreiben können.",
+      "zitat": "Wir setzen uns für den Erhalt bestehender Steganlagen ein, da diese eine unverzichtbare Grundlage für Wassersportvereine und Freizeitnutzer sind. Wir wollen Planungssicherheit schaffen und bürokratische Hindernisse abbauen, damit Vereine ihre Anlagen langfristig betreiben können.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "57138e029454bb8a"
+    },
+    {
+      "kennung": "M125",
+      "ebene": "land",
+      "beschreibung": "Ergänzender Fonds mit dem Landessportbund für die Basis des Breitensports, v. a. Personal und Instandhaltung",
+      "zitat": "Wir werden mit dem Landessportbund einen ergänzenden Fonds auflegen, der direkt in die Basis des Breitensports investiert, insbesondere zur Sicherung von Personal und zur Instandhaltung der Infrastruktur.",
+      "ursachen_ids": [
+        3703
+      ],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "51c3999eef74ad8e"
+    },
+    {
+      "kennung": "M126",
+      "ebene": "land",
+      "beschreibung": "Führung und Struktur des landeseigenen Bäderbetriebs kritisch überprüfen.",
+      "zitat": "Dafür werden wir die Unternehmensführung und -struktur der [Land] Bäder-Betriebe einer kritischen Revision unterziehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "57107e57cd119ec9"
+    },
+    {
+      "kennung": "M127",
+      "ebene": "land",
+      "beschreibung": "Ehrenamt im Sport durch Erhöhung der Ehrenamtspauschale und bessere Anerkennung stärken",
+      "zitat": "Zusätzlich möchten wir das Ehrenamt im Sport stärken, indem wir die Ehrenamtspauschale erhöhen und die Anerkennung verbessern, denn ohne ehrenamtliches Engagement wäre der Sport in seiner heutigen Form nicht möglich.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "1aa7883c480c86d5"
+    },
+    {
+      "kennung": "M128",
+      "ebene": "land",
+      "beschreibung": "Verlässliche und langfristige Finanzierung des Landessportbunds garantieren",
+      "zitat": "Wir unterstützen den Landessportbund [Land] dabei, die Vielfalt des [Land] Sports in allen Facetten erlebbar und sichtbar zu halten, indem wir eine verlässliche und langfristige Finanzierung garantieren.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "e1d8f04494e0891c"
+    },
+    {
+      "kennung": "M129",
+      "ebene": "land",
+      "beschreibung": "Ausbau umweltschonender Infrastruktur wie Schwimmhallen für ganzjährige Angebote für Gäste und Einheimische",
+      "zitat": "Für ein [Land], in dem es vorangeht, fordern wir: […] nachhaltige Ganzjahresangebote für Tourist*innen und Einheimische: durch den Ausbau umweltschonender Infrastruktur wie Schwimmhallen, Kultur- und Freizeitangeboten für alle Generationen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "c2eed6effa6ed884"
+    },
+    {
+      "kennung": "M130",
+      "ebene": "land",
+      "beschreibung": "Sanierung bezirklicher Sportanlagen im Sportanlagensanierungsprogramm beschleunigen und dessen Etat erhöhen",
+      "zitat": "Gleiches gilt für die Sportanlagen in den Bezirken, deren Sanierung wir im Rahmen des Sportanlagensanierungsprogramms beschleunigen werden. Den Etat für das Programm werden wir erhöhen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "ab70820903731f8e"
+    },
+    {
+      "kennung": "M131",
+      "ebene": "land",
+      "beschreibung": "Bürokratische Hürden für Vereine bei Förderanträgen, Versicherungs- und Nachweispflichten systematisch abbauen",
+      "zitat": "Bürokratische Hürden für Vereine, sei es bei Förderanträgen, Versicherungspflichten oder Nachweispflichten, werden wir systematisch abbauen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "f80696bbf7ed2cde"
+    },
+    {
+      "kennung": "M132",
+      "ebene": "land",
+      "beschreibung": "Sportvereine gezielt bei Energiekosten und Sanierungen unterstützen",
+      "zitat": "Wir streben eine Entbürokratisierung der Sportförderung an und wollen Vereine gezielt bei Energiekosten und Sanierungen unterstützen, um die Belastung durch Bürokratie und hohe Kosten zu reduzieren.",
+      "ursachen_ids": [
+        3702,
+        3701
+      ],
+      "pruefsumme": "0c2e31fe5ea33d7a"
+    },
+    {
+      "kennung": "M133",
+      "ebene": "land",
+      "beschreibung": "Förderung des Vereinssportstättenbaus so ausstatten, dass Sanierungen und Neubauten der Vereine umgesetzt werden; planbare, unbürokratische Programme auch für kleine Vereine",
+      "zitat": "Wir wollen die Förderung des Vereinssportstättenbaus so ausstatten, […] dass notwendige Sanierungen und Neubauten tatsächlich umgesetzt werden können. Förderprogramme müssen planbar, unbürokratisch und auch auf kleine und mittlere Vereine zugeschnitten sein.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "e48bc3f892be7636"
+    },
+    {
+      "kennung": "M134",
+      "ebene": "land",
+      "beschreibung": "Sportvereine bei Digitalisierung und beim Einsatz Künstlicher Intelligenz unterstützen.",
+      "zitat": "Deshalb werden wir Sportvereine bei der Digitalisierung und beim Einsatz Künstlicher Intelligenz unterstützen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "224ae29ea1575775"
+    },
+    {
+      "kennung": "M135",
+      "ebene": "land",
+      "beschreibung": "Sicherstellen, dass Kommunen und Vereine Fördermittel für die Sanierung von Sportstätten und Schwimmhallen vollständig und unbürokratisch abrufen können",
+      "zitat": "Der Sanierungsstau bei Vereins- und Schulsportstätten sowie Schwimmhallen ist noch nicht überwunden. Wir werden sicherstellen, dass Kommunen und Vereine in [Land]- [Land] Mittel vollständig und unbürokratisch abrufen können.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "6426dee23ef68d83"
+    },
+    {
+      "kennung": "M136",
+      "ebene": "land",
+      "beschreibung": "Dem Sport im Sinne der Mehrfachnutzung weitgehenden Zugang zu Schulen ermöglichen",
+      "zitat": "Im Sinne der Mehrfachnutzung, soll dem Sport der Zugang zu den Schulen weitestgehend ermöglicht werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "e2e26ade7a30adef"
+    },
+    {
+      "kennung": "M137",
+      "ebene": "land",
+      "beschreibung": "GEMA-Gebühren für ehrenamtliche, eintrittsfreie Veranstaltungen gemeinnütziger Vereine per Landesprogramm übernehmen",
+      "zitat": "Ehrenamtliche Tätigkeiten werden wir weiter fördern, bspw. indem wir mit einem Landesprogramm die GEMA-Gebühren für ehrenamtlich durchgeführte und eintrittsfreie Veranstaltungen von gemeinnützigen Vereinen und Feuerwehren übernehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "f751c99f6af8cc0e"
+    },
+    {
+      "kennung": "M138",
+      "ebene": "land",
+      "beschreibung": "Schwimmbadoffensive: Bäder schnell neu bauen und wiedereröffnen, gezielt in Bezirken mit fehlender Infrastruktur investieren",
+      "zitat": "Doch in [Land] mangelt es an Schwimmbädern, weshalb wir eine Schwimmbadoffensive starten und Bäder schnell neu bauen und wiedereröffnen. Besonders in Bezirken mit fehlender Infrastruktur wird gezielt investiert, damit Schwimmen keine Frage des Wohnorts ist.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "82620f85dcdca1a7"
+    },
+    {
+      "kennung": "M139",
+      "ebene": "land",
+      "beschreibung": "Vollständige Sanierung aller Schulsportstätten",
+      "zitat": "Schulsport ausbauen: Mehr Stunden, bessere Ausstattung und vollständige Sanierung aller Schulsportstätten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3701
+      ],
+      "pruefsumme": "ddf413a48508683b"
+    },
+    {
+      "kennung": "M140",
+      "ebene": "land",
+      "beschreibung": "Breitensport über die Förderung von Vereinen unterstützen",
+      "zitat": "Der Breitensport spielt eine zentrale Rolle für Gesundheit und gesellschaftliche Werte. Wir wollen ihn über die Förderung von Vereinen unterstützen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "ff395227cde2f568"
+    },
+    {
+      "kennung": "M141",
+      "ebene": "land",
+      "beschreibung": "Neue Sporthallen und Plätze dort bauen, wo sie dringend benötigt werden",
+      "zitat": "Unsere konkreten Maßnahmen: Sanierungsoffensive für Sportstätten: […] Neue Sporthallen und Plätze müssen dort entstehen, wo sie dringend benötigt werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "8fbde55ef5d0d0c6"
+    },
+    {
+      "kennung": "M142",
+      "ebene": "land",
+      "beschreibung": "Angemessene Ausstattung des Landessportbundes und der Kreissportbünde als hauptamtliche Stütze des Ehrenamts",
+      "zitat": "Ohne Hauptamt lässt sich ein breites Ehrenamt nicht erhalten. Wir setzen uns daher für eine angemessene Ausstattung des Landessportbundes und seiner Kreissportbünde ein.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "ef52adcf58ae8839"
+    },
+    {
+      "kennung": "M143",
+      "ebene": "land",
+      "beschreibung": "Sportstätten inklusiv, multifunktional und ökologisch sanieren und wo nötig neu bauen",
+      "zitat": "Wir wollen die Sportstätten inklusiv, […] multifunktional, ökologisch und nachhaltig sanieren bzw. wo nötig neu bauen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "dfc578aed1e516e8"
+    },
+    {
+      "kennung": "M144",
+      "ebene": "land",
+      "beschreibung": "Trainerinnen und Trainer weiter qualifizieren und ihre Einkommenssituation verbessern",
+      "zitat": "Trainer*innen qualifizieren wir weiter und verbessern ihre Einkommenssituation.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "282f372a220dcaf0"
+    },
+    {
+      "kennung": "M145",
+      "ebene": "land",
+      "beschreibung": "Vereine bei der Umsetzung des Datenschutzes entlasten: Muster, zentrale Beratung und Bagatellregelungen bei geringem Risiko",
+      "zitat": "Wir werden: […] Vereine bei der DSGVO-Umsetzung entlasten: praxisnahe Muster (Einwilligungen, Website, Mitgliederlisten), zentrale Beratung und Bagatellregelungen dort nutzen, wo Risiken gering sind",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "13189e4429b55fe5"
+    },
+    {
+      "kennung": "M146",
+      "ebene": "land",
+      "beschreibung": "Hauptamtliche Strukturen ausbauen (Ansprechpartner, Beratung, einfache Förderprogramme), die Vereine und Ehrenamtliche entlasten.",
+      "zitat": "Gleichzeitig wollen wir professionelle Strukturen ausbauen, die Ehrenamtliche unterstützen. Hauptamtliche Ansprechpartner, klare Zuständigkeiten, bedarfsgerechte Beratung und einfache Förderprogramme sollen Vereine entlasten und das Ehrenamt stärken.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "be3f63fdee97c38b"
+    },
+    {
+      "kennung": "M147",
+      "ebene": "land",
+      "beschreibung": "Gesetz zur Stärkung des Ehrenamts mit Ehrenamtsfonds und Kommunalbudget für Strukturen des Engagements (allgemein, nicht nur Sport)",
+      "zitat": "[Partei] will: […] dafür in einem „Gesetz zur Stärkung des Ehrenamts den rechtlichen Rahmen schaffen und einen Ehrenamtsfonds zur Förderung einzelner Maßnahmen und Projekte sowie ein Kommunalbudget zur Schaffung von kommunalen Strukturen zur Unterstützung des bürgerschaftlichen Engagements einrichten,",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "7db56b2b2dc0dfee"
+    },
+    {
+      "kennung": "M148",
+      "ebene": "land",
+      "beschreibung": "Vereine für Sport (sowie Feuerwehr, Gesang, Brauchtum) im ländlichen Raum finanziell entlasten",
+      "zitat": "Vereine für Sport, Feuerwehr, Gesang und Brauchtum werden wir finanziell entlasten.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "b1e3ec702017a989"
+    },
+    {
+      "kennung": "M149",
+      "ebene": "bund",
+      "beschreibung": "Mehr Bundesmittel für Sportvereine und ehrenamtliche Initiativen bereitstellen",
+      "zitat": "Breitensport und Vereine: Es werden mehr Bundesmittel für Sportvereine und ehrenamtliche Initiativen zur Verfügung gestellt.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "7850d65c149835ed"
+    },
+    {
+      "kennung": "M150",
+      "ebene": "land",
+      "beschreibung": "Langfristige Investitionsprogramme, mit denen das Land Kommunen bei Sanierung und Modernisierung von Bädern, Turnhallen und Sportanlagen verlässlich unterstützt",
+      "zitat": "Der hohe Sanierungsstau bei Schwimm- und Sportstätten muss abgebaut werden. Wir setzen uns für langfristige Investitionsprogramme ein, durch die Kommunen bei der Sanierung und Modernisierung von Bädern, Turnhallen und Sportanlagen verlässlich unterstützt werden.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "2e8a18924df76668"
+    },
+    {
+      "kennung": "M151",
+      "ebene": "bund",
+      "beschreibung": "Übungsleiter- und Ehrenamtspauschalen sowie relevante Einnahmegrenzen anpassen",
+      "zitat": "Wir passen rechtliche Rahmen, Übungsleiter- und Ehrenamtspauschalen, sowie relevante Einnahmegrenzen an.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "833bc75a1147cc12"
+    },
+    {
+      "kennung": "M152",
+      "ebene": "land",
+      "beschreibung": "Sportstätten den Vereinen weiterhin gebührenfrei überlassen",
+      "zitat": "Sportstätten stellen wir Vereinen weiterhin gebührenfrei zur Verfügung.",
+      "ursachen_ids": [
+        3702
+      ],
+      "pruefsumme": "27f16b2a33e27d06"
+    },
+    {
+      "kennung": "M153",
+      "ebene": "land",
+      "beschreibung": "Sport-Pakt mit Kommunen, Verbänden und Vereinen zum Abbau des Sanierungs- und Investitionsstaus bei Sportstätten; Landesmittel für Sportförderung von 13 auf 20 Mio. erhöhen",
+      "zitat": "Gemeinsam mit Kommunen, Sportverbänden und Vereinen werden wir den massiven Sanierungs- und Investitionsstau bei Sportstätten systematisch abbauen. Dafür werden wir die Mittel für die Sportförderung im Landeshaushalt von aktuell 13 Millionen auf 20 Millionen erhöhen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "98356252ce1b71dd"
+    },
+    {
+      "kennung": "M154",
+      "ebene": "land",
+      "beschreibung": "In Erhalt und Neubau von Sportstätten investieren, vorrangig Schulsportstätten und Bäder; Förderprogramme langfristig, einfach und auf Energieeffizienz und Mehrfachnutzung ausrichten",
+      "zitat": "Deshalb muss in den kommenden Jahren intensiv in die Erhaltung oder den […] Neubau von Sportstätten investiert werden. […] Dabei sind Förderprogramme langfristig, unkompliziert und verlässlich auszugestalten sowie stärker auf Energieeffizienz, Barrierefreiheit und Mehrfachnutzung auszurichten.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "59a33cddc190bdba"
+    },
+    {
+      "kennung": "M155",
+      "ebene": "land",
+      "beschreibung": "Sportstätten erhalten und modernisieren; Kommunen bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützen",
+      "zitat": "Sportstätten werden erhalten und modernisiert. Kommunen werden unter anderem bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützt.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "2c1029552afb5afe"
+    },
+    {
+      "kennung": "M156",
+      "ebene": "land",
+      "beschreibung": "Kommunen und Sportvereine bei Klimaanpassungs- und Klimaschutzmaßnahmen in Sportstätten unterstützen",
+      "zitat": "Wir wollen Kommunen und Sportvereine bei Klimaanpassungs- und Klimaschutzmaßnahmen in Sportstätten unterstützen.",
+      "ursachen_ids": [
+        3701
+      ],
+      "pruefsumme": "60260c8e5c921b0b"
+    },
+    {
+      "kennung": "M157",
+      "ebene": "bund",
+      "beschreibung": "Nationale Kampagnen zur Gewinnung neuer Vereinsmitglieder, besonders Kinder, Jugendliche und sozial Benachteiligte",
+      "zitat": "Mitgliedergewinnung: Nationale Kampagnen sollen neue Vereinsmitglieder gewinnen, insbesondere unter Kindern, Jugendlichen und sozial benachteiligten Gruppen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3703
+      ],
+      "pruefsumme": "7105cb9a8d5af95b"
+    },
+    {
+      "kennung": "M158",
+      "ebene": "land",
+      "beschreibung": "Sport-AGs an Kitas und Schulen ausbauen, Zusammenarbeit mit Sportvereinen stärken und Hürden für Kooperationen von Schulen und Vereinen abbauen.",
+      "zitat": "Deshalb werden wir Sport-AGs an Kitas und Schulen gezielt ausbauen und die Zusammenarbeit mit Sportvereinen stärken. Zudem wollen wir mehr Kooperationen zwischen Schulen und Vereinen ermöglichen und bürokratische Hürden abbauen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "a71e3799e5315d1f"
+    },
+    {
+      "kennung": "M159",
+      "ebene": "bund",
+      "beschreibung": "Schwimmbäder und Sportstätten als Teil einer Infrastrukturgarantie der Daseinsvorsorge; Kommunen in Finanzkrisen erhalten Mittel aus einem Bundesfonds für eine Mindestausstattung",
+      "zitat": "Schwimmbäder und Sportstätten, Jugendzentren, Wohnungslosenhilfe und Schulpsycholog*innen sind unverzichtbarer Teil der öffentlichen Daseinsvorsorge. Dazu müssen die Kommunen ausreichend finanziert werden. Als Soforthilfeprogramm sollen Kommunen in Finanzkrisen aus einem Bundesfonds Mittel für eine Mindestausstattung der sozialen Infrastruktur bekommen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3702
+      ],
+      "pruefsumme": "7de0d87949d81856"
+    },
+    {
+      "kennung": "M160",
+      "ebene": "land",
+      "beschreibung": "Förderanträge und Verwendungsnachweise vereinfachen, digitale Antragsverfahren ausbauen, Förderverfahren vereinheitlichen",
+      "zitat": "Förderanträge und Verwendungsnachweise werden wir entschlacken, digitale Antragsverfahren weiter ausbauen und die Förderverfahren vereinheitlichen.",
+      "ursachen_ids": [
+        3703
+      ],
+      "pruefsumme": "1c3a08dfe5349638"
+    }
+  ]
+}

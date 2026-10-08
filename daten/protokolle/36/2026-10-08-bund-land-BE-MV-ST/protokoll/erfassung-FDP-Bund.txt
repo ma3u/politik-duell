@@ -1,0 +1,36 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Regeln auf europäischer und nationaler Ebene, damit importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden",
+      "ursachen_ids": [],
+      "ursachen_offen": [3601],
+      "zitat": "Wir setzen uns zudem für wirksame und praktikable Regeln auf europäischer und nationaler Ebene ein, die sicherstellen, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3602, "seiten": [12, 13, 14, 15, 16, 43, 44], "grund": "Kapitel Bürokratie, Steuern sowie Bauen und Wohnen gelesen; nichts zu Sortiment, Ansiedlung, Leerstand oder Nutzungsmischung in Innenstädten." },
+    { "ursache": 3603, "seiten": [43, 44], "grund": "S. 43: Instandhaltung betrifft die Schieneninfrastruktur der Bahn; S. 44: Smart Cities ohne Bezug zu Aufenthaltsqualität oder Innenstadt. Nichts zu Gestaltung oder Sauberkeit des öffentlichen Raums." },
+    { "ursache": 3604, "seiten": [18, 41, 42, 43, 44], "grund": "S. 44: Echtzeiterfassung von Parkplätzen als Baustein eines KI-Verkehrsmanagements, ohne Bezug zu Innenstadt oder Einzelhandel (R2) und ohne eigene Zusage; S. 43 ÖPNV allgemein; S. 18 Arbeitszeitgesetz betrifft Arbeitszeit, nicht Ladenöffnungszeiten." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 3–4), Präambel (S. 5–6), Kapitel III a–d (Bürokratie, Steuern, Arbeitsrecht; S. 12–18, gezielt per Stichwortsuche nach Handel, Online, Gastronomie, Öffnung, Mittelstand), Kapitel VI b–c (Infrastruktur und Mobilität, Bauen und Wohnen; S. 41–45), Fundstellen S. 43 und 44.
+
+Erfasst:
+- S. 16: Verzollung und Versteuerung importierter Waren auf großen Online-Plattformen. Setzt an Wettbewerbsbedingungen zwischen Plattformhandel und hiesigem Handel an (R1 zu 3601), steht aber im Abschnitt zur Bekämpfung von Steuerbetrug und nennt weder Einzelhandel noch Innenstadt (R2); daher 3601 nur in ursachen_offen.
+
+Nicht erfasst:
+- S. 15 (Gastronomie): reduzierter Umsatzsteuersatz für Speisen „sollte“ gelten – Möglichkeit, kein Bezug zu Innenstadt oder Einzelhandel.
+- S. 18: Reform des Arbeitszeitgesetzes – Arbeitszeit, keine Ladenöffnungszeiten.
+- S. 43: Trennung von Netz und Betrieb bei der Bahn, Instandhaltung der Schieneninfrastruktur – anderer Zusammenhang.
+- S. 43: flexible, bedarfsgerechte ÖPNV-Angebote, Mobility Hubs – ohne Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 44: Smart Cities, KI-gestütztes Verkehrsmanagement, Echtzeiterfassung von Parkplätzen – „wichtige Bausteine“, keine eigene Zusage, ohne Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 17: Erhalt des Bargelds – keine Ursache des Themas.
+
+Richtungen ohne Maßnahme: Digitalisierung des lokalen Handels, Nutzungsmischung und Ansiedlung, Marktprofile, Aufenthaltsqualität, Sauberkeit und Sicherheit in Innenstädten, Erreichbarkeit der Innenstadt, Nahmobilität, Öffnungszeiten.
+
+Seiten ohne Text: 1, 2 (Titelseiten), keine Rolle.

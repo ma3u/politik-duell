@@ -1,0 +1,44 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Unabhängigkeit des Polizeibeauftragten stärken",
+      "ursachen_ids": [3403],
+      "zitat": "Eine starke Polizei braucht Akzeptanz in der Bevölkerung, die auch durch den unabhängigen Polizeibeauftragten getragen wird. Die Unabhängigkeit des Polizeibeauftragen soll gestärkt werden.",
+      "seite": 29
+    },
+    {
+      "beschreibung": "Aus- und Fortbildung der Polizei modernisieren und an neue Einsatzlagen anpassen",
+      "ursachen_ids": [3402],
+      "zitat": "Ausbildung und Fortbildung werden modernisiert und an neue Einsatzlagen angepasst.",
+      "seite": 29
+    },
+    {
+      "beschreibung": "Rassismuskritische Bildungsarbeit in der Polizei (sowie Verwaltung und Schulen) ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "zitat": "Rassismuskritische Bildungsarbeit wird in Verwaltung, Schulen und Polizei ausgebaut.",
+      "seite": 36
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [28, 29, 30], "grund": "Kapitel Sicherheit gelesen; keine Aussage zu Kontrollbefugnissen, anlasslosen Kontrollen, Kontrollbescheinigungen oder Kontrollorten." }
+  ]
+}
+
+Protokoll
+Gelesen: Seiten 2–5 (Einleitung, kein eigenes Inhaltsverzeichnis), Kapitel „Sicherheit schaffen. Rechtsstaat durchsetzen.“ S. 28–31 (Polizei stärken und entlasten, Prävention und kommunale Sicherheit, Justiz), S. 27 (Frühe Hilfen/Kriminalprävention), S. 33 (Verfassungsschutz), S. 36 (Antidiskriminierung), Fundstelle S. 11.
+
+Nicht erfasst:
+- S. 11: „Interkulturelle Kompetenzen in Verwaltung, Bildungseinrichtungen und Betrieben“ – Fachkräfteintegration, kein Polizeibezug.
+- S. 27: Häuser des Jugendrechts (gemeinsame Bearbeitung von Delikten Minderjähriger durch Polizei, Staatsanwaltschaft, Jugendhilfe) – Kriminalprävention/Strafverfahren, setzt nicht an Kontrollen, Einsatzpraxis oder Beschwerde an.
+- S. 29: Personalstärke, Ausstattung, Dienstpläne, Beförderungsbudget, Alimentierung – nach R2 Sicherheit.
+- S. 29: Ausbau Ansprechpersonen LSBTTI und Gleichstellungsbeauftragte bei der Polizei – interne Struktur für Beschäftigte, kein Polizeikontakt.
+- S. 28/29: „Transparenz, Fehlerkultur und Kontrolle sichern Vertrauen“ – Leitbild ohne eigene Handlung.
+- S. 33: Verhältnismäßigkeit und parlamentarische Kontrolle beim Verfassungsschutz – nicht Polizei.
+- S. 30: Präventionsräte, Beleuchtung – Sicherheit/Prävention.
+
+Grenzfall: S. 36 rassismuskritische Bildungsarbeit in der Polizei – Fortbildung (R1 → 3402), inhaltlich aber Diskriminierung (R2); daher ursachen_offen.
+Richtungen ohne Maßnahme: 3401 beide Richtungen; 3402 „Handlungsfähigkeit und Rückhalt“ (politische Rückendeckung nur als Lagebeschreibung S. 28); 3403 „Dokumentation und faire Verfahren“.
+Seite ohne Text: S. 1 (Titelseite), ohne Bedeutung.

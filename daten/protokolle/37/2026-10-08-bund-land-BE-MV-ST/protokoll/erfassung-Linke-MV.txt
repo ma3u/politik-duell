@@ -1,0 +1,36 @@
+{
+  "partei_id": 16,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportanlagen im Land ausbauen und sanieren",
+      "ursachen_ids": [3701],
+      "zitat": "Wir wollen: […] Sportanlagen ausbauen und sanieren, Breiten- und Leistungssport fördern sowie Bundesstützpunkte und Nachwuchsleistungssport sichern.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Landesprogramme für Kinderbewegung, Sport in Schule und Verein sowie Schwimmen ausfinanzieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Sportförderung: Die Ausfinanzierung von den Programmen „Kinderbewegungsland“, „Gemeinsam Sport in Schule und Verein“ und „MV kann schwimmen“.",
+      "seite": 11
+    }
+  ],
+  "stand_im_pdf": "Stand: Juni 2026 (S. 2; beschlossen am 30. Mai 2026)",
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [8, 11], "grund": "Nichts zu Betriebs- oder Nutzungskosten von Sportstätten (Hallenmieten, Energiekosten, Betriebszuschüsse); S. 8 nur allgemein kommunale Finanzausstattung." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 4 Finanzen, Abschnitt „Kommunen, Wohnraum und soziale Infrastruktur“ (S. 8); Kap. 6 Kinder- und Jugendpolitik, Abschnitte „Kinderarmut, soziale Teilhabe und Bildung“ und „Jugendförderung, Sport und Familienpolitik“ (S. 10–11); Kap. 7 Soziales, Abschnitte Inklusion und „Ehrenamt“ (S. 13); Kap. 16 Kommunen (S. 25, Vereine/Initiativen) per Stichwortsuche.
+
+Grenzfall: Die Ausfinanzierung von „Kinderbewegungsland“, „Gemeinsam Sport in Schule und Verein“ und „MV kann schwimmen“ (S. 11) fördert Sportangebote von Vereinen für Kinder; ob das Vereinsförderung (3703) oder Freizeitangebote für Kinder (R2) ist, lässt der Leitfaden offen – daher ursachen_offen.
+
+Nicht erfasst:
+- S. 8: „Kommunale Finanzausstattung stärken“ – allgemein, kein Bezug zu Sportstätten oder Vereinen; Einleitungssatz zu Investitionen in Sport ist Lagebeschreibung.
+- S. 11: Kinderkarte von 50 Euro monatlich für Sport, Kultur und Bildung – Kosten für Freizeit von Kindern (R2).
+- S. 11: Verpflichtende Prävention sexualisierter Gewalt in Sportvereinen – Schutzauflage, keine Förderung oder Entlastung der Vereine („Das müssen Vereine gewährleisten können“ ist Forderung ohne konkrete Handlung).
+- S. 13: Para-Sport stärken, Angebote im Breitensport für Menschen mit geistiger Behinderung ausbauen – Sportförderung ohne Bezug zu Vereinsfinanzen oder Sportstätten.
+- S. 13: Ehrenamt (Engagementstrategie finanzieren, Weiterbildung und Freistellung für Ehrenamtliche) – allgemeines Ehrenamt, nicht auf Sportvereine bezogen.
+- S. 25: Förderung lokaler Initiativen, Vereine und ehrenamtlicher Projekte – allgemein, ohne Sportbezug.

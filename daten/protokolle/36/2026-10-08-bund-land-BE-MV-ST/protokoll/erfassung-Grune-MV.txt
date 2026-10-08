@@ -1,0 +1,35 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Leerstand aktiv managen: kommunales Leerstands- und Brachflächenmanagement und Förderung temporärer Zwischennutzungen (im Kapitel Wohnraum)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+      "seite": 52
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3603, "seiten": [21, 25], "grund": "S. 21 Instandhaltung von Radwegen, S. 25 Verkehrsberuhigung innerorts (Vision Zero, Verkehrssicherheit); kein Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2)." },
+    { "ursache": 3604, "seiten": [9, 23, 24, 25], "grund": "S. 9 PV auf Parkplätzen (Energie), S. 23–25 Rad- und Fußwege, Mobilitätsstationen, Verkehrssicherheit allgemein; kein Bezug zu Innenstadt oder Einzelhandel (R2). Zu Öffnungszeiten nichts gefunden." }
+  ],
+  "stand_im_pdf": "16.07.2026"
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2), Präambel (S. 3–4), Kap. 3 Mobilität (S. 21–25), Kap. 4 Wirtschaft (S. 27–33, gezielt nach Handel/Geschäften/Orten durchsucht), Kap. 8 Wohnraum (S. 51–54), Kap. 15.5 Denkmalpflege (S. 99), Fundstellen S. 9, 21, 23, 24, 25, 27, 52. Volltext zusätzlich nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Nahversorgung, Ortsbild durchsucht.
+
+Grenzfall: S. 52 Leerstandsmanagement und Zwischennutzung nennt Leerstand (R2 erfüllt), steht aber in der Einleitung „Schaffung von Wohnraum“ – daher 3602 nur offen.
+
+Nicht erfasst:
+- S. 27: Ansiedlung energieintensiver Industrien – Industriepolitik, kein Innenstadtbezug.
+- S. 52 (8.1): Umwandlung leerstehender Gewerberäume in Wohnraum – Wohnraumschaffung (R2 Miete).
+- S. 52/53 (8.2): Programme „Neuer Schwung für alte Orte“ und „Jung kauft Alt“ (Dorfkerne beleben, Bestandsimmobilien für junge Familien), Fördersparte „Aktivierung von Leerstand in zentralen Ortslagen“ in der Wohnraumförderung, Seniorenwohnformen in zentralen Ortslagen – Wohnraumförderung bzw. Abwanderung (R2), kein Einzelhandels- oder Einkaufsbezug.
+- S. 53/54 (8.3): Landesbodenfonds zur Stärkung zentraler Ortslagen – Wohnungsbau/Bodenpolitik (R2).
+- S. 99: Erhalt ortsbildender Gebäude, Denkmalstrategie – Denkmalpflege, nennt Innenstadt/Ortskern im Zusagetext nicht (historische Ortskerne nur in der Lagebeschreibung).
+- S. 24: kurze Fußwegeverbindungen in Stadt und Land, Mobilitätsstationen – ohne Innenstadtbezug (R2).
+- S. 25: Verkehrsberuhigung innerorts – Verkehrssicherheit, ohne Innenstadtbezug (R2).
+
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb; Sauberkeit/Sicherheit; Aufenthaltsqualität; Erreichbarkeit mit dem Auto; Nahmobilität zur Innenstadt; Öffnungszeiten.
+Seiten ohne Text: nur Kapiteltrennseiten, spielten keine Rolle.

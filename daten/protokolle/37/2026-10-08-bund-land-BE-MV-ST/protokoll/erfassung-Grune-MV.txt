@@ -1,0 +1,36 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "stand_im_pdf": "Stand: 16.07.2026 (Inhaltsverzeichnis S. 2)",
+  "massnahmen": [
+    {
+      "beschreibung": "Ausbau umweltschonender Infrastruktur wie Schwimmhallen für ganzjährige Angebote für Gäste und Einheimische",
+      "ursachen_ids": [],
+      "ursachen_offen": [3701],
+      "zitat": "Für ein Mecklenburg-Vorpommern, in dem es vorangeht, fordern wir: […] nachhaltige Ganzjahresangebote für Tourist*innen und Einheimische: durch den Ausbau umweltschonender Infrastruktur wie Schwimmhallen, Kultur- und Freizeitangeboten für alle Generationen",
+      "seite": 27
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3701, "seiten": [10, 64], "grund": "S. 10 betrifft gemeinsame Nutzung von Netzanschlusspunkten (anderer Zusammenhang); S. 64 'Angebot an Jugendclubs, Vereinen, Kultur-, Musik- und Sportstätten unterstützen' ist ein allgemeines Ziel ohne konkretes Instrument (Jugendpolitik); Doppelnutzung von Landesliegenschaften dort bezieht sich auf Jugendkultur." },
+    { "ursache": 3702, "seiten": [63, 104], "grund": "Keine Zusage zu Betriebskosten oder Hallenentgelten von Sportstätten. S. 63: Vereine sollen Nachbarschaftstreffs gegen minimale Gebühr nutzen können – Gemeinschaftsräume, keine Sportstätten; S. 104: allgemeine Kommunalfinanzen (Schwimmbad nur als Beispiel in der Einleitung)." },
+    { "ursache": 3703, "seiten": [68, 107], "grund": "Keine Vereinsförderung mit Bezug zum Sport. S. 68: Freistellung für Ehrenamt nur als Prüfauftrag bzw. allgemein für Engagement; S. 107: Unterstützung von Vereinen bei EU-Fördermitteln allgemein, ohne Sportbezug." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2; Präambel S. 3–4; Wirtschaft S. 27 (Einleitung mit Forderungsliste) und Tourismus S. 33; Bildung S. 40; Zusammenleben S. 63–64 (inkl. 10.1 Kinder- und Jugendpolitik); Demokratie 11.1 Bürgerschaftliches Engagement S. 67–68; Finanzen 16.3 Kommunen S. 104; Europa S. 107. Volltextsuche nach sport, verein, ehrenamt, halle, schwimm, bäder.
+
+Erfasst: S. 27 Ausbau von Schwimmhallen – Grenzfall (ursachen_offen 3701), weil im Zusammenhang Tourismus/Ganzjahresangebote, aber ausdrücklich auch für Einheimische und als Ausbau von Sportstätten-Infrastruktur.
+
+Nicht erfasst:
+- S. 4 (Präambel): U27-Deutschlandticket, um u. a. zum Sportverein zu kommen – Mobilität, nicht Vereine/Sportstätten.
+- S. 33: Unterstützung von Ganzjahresangeboten im Gesundheits-, Wellness- und Kulturtourismus – keine Sportstätten.
+- S. 40: Sportplätze nur in der Einleitung (Lagebild).
+- S. 63: Nachbarschaftstreffs, Vereine nutzen Räume gegen minimale Gebühr – Gemeinschaftsräume, kein Sportbezug.
+- S. 64: Sportstätten-Angebot "unterstützen" – allgemeines Ziel in der Jugendpolitik.
+- S. 68: Freistellung für weitere ehrenamtliche Tätigkeiten "prüfen" – Prüfauftrag; Dorffest-Förderprogramm – kein Sportbezug.
+- S. 104: Kommunalfinanzen allgemein (direkte Zuweisungen, Konnexität) – nicht sportspezifisch.
+- S. 107: Begleitung von Vereinen bei EU-Fördermitteln – allgemein, ohne Sportbezug.
+Richtungen ohne Maßnahme: Bestand priorisieren/gemeinsam nutzen; Betriebskosten/Hallenentgelte; Eigenverantwortung/Auslastung; Vereinsförderung/Ehrenamt im Sport; Eigeneinnahmen/Kooperation.
+Seiten ohne Text: Kapiteltrennseiten (1, 5, 12, 20, 26, …), spielten keine Rolle.

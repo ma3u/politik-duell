@@ -1,0 +1,47 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Einsatzkräfte stärker in Deeskalation schulen; bestehende Deeskalationsstrategien bei Demonstrationen konsequent anwenden und auswerten",
+      "ursachen_ids": [3402],
+      "zitat": "Zugleich müssen Einsatzkräfte noch stärker darin geschult und dazu angehalten werden, deeskalierend zu wirken. Eine gewaltsame Polizei provoziert Gegengewalt. Existierende Deeskalationsstrategien bei Demonstrationen – völlig unabhängig von deren politischer Ausrichtung – sind konsequent anzuwenden und auszuwerten.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Bei unverhältnismäßiger Polizeigewalt sofortige Disziplinarmaßnahmen und Überprüfung der Einsatzkräfte, bei schweren oder wiederholten Fehltritten bis zur Entfernung aus dem Dienst",
+      "ursachen_ids": [3403],
+      "zitat": "Zugleich setzen wir aber im Falle der Anwendung unverhältnismäßiger Gewalt sofortige und konsequente Disziplinarmaßnahmen um. Bei Verletzungen des Deeskalationsverbots und des Verbots der Anwendung unverhältnismäßiger Gewalt hat eine Überprüfung der betreffenden Einsatzkräfte zu erfolgen, an deren Ende im Falle schwerer und insbesondere wiederholter Fehltritte die Entfernung aus dem Dienst stehen kann.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Zusätzliche gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll gegen Drogenmissbrauch, in Innenräumen und im öffentlichen Raum",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Für eine saubere Stadt und die Bekämpfung von Drogenmissbrauch führen wir zusätzliche gemeinsame Kontrollen des Ordnungsamts mit der Polizei und den Zollbehörden ein. Solche Kontrollen werden sowohl in Innenräumen, etwa in der Schankwirtschaft, als auch im öffentlichen Raum durchgeführt.",
+      "seite": 41
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [38, 40, 41], "grund": "Videoüberwachung an kriminalitätsbelasteten Orten (S. 41) ist keine Regel für Polizeikontrollen von Personen, sondern Überwachungstechnik (Sicherheit, R2); Streifenpräsenz an Brennpunkten (S. 40) betrifft Personaleinsatz (R2); Grundsatz zu verhältnismäßigen, richterlich kontrollierten Eingriffen (S. 38) ist ein Leitbild ohne eigene Handlung. Keine Aussage zu anlasslosen Kontrollen oder Kontrollbescheinigung." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: S. 1-6 (Vorwort und Beginn Kapitel Wohnen; kein Inhaltsverzeichnis im PDF), Kapitel "Innere Sicherheit" S. 38-41 vollständig, dazu S. 37 (Ende Integration). Fundstellen S. 38, 39, 41 gelesen.
+
+Erfasst:
+- S. 39 Deeskalationsschulungen (3402). Gleichartige Stelle S. 38 ("setzen wir auf Deeskalationsmaßnahmen" neben besserer Ausbildung) nicht doppelt erfasst.
+- S. 39 Disziplinarmaßnahmen und Überprüfung bei unverhältnismäßiger Gewalt (3403: Klärung von Fehlverhalten; keine unabhängige Stelle, sondern dienstrechtliche Konsequenz).
+- S. 41 gemeinsame Kontrollen Ordnungsamt/Polizei/Zoll: Grenzfall 3401 (Kontrollen verstärken, Anlass Drogen/Sauberkeit, auch Gaststättenkontrollen) -> ursachen_offen.
+
+Nicht erfasst:
+- S. 2 "bürgernahe Polizei" (Vorwort, Leitbild).
+- S. 38 Entpolitisierung der Polizei, Neutralitätspflicht, Rückführung auf "klassische Polizeiarbeit" – kein Bezug zu Kontrollen, Einsatzpraxis gegenüber Bürgern oder Beschwerden.
+- S. 38/39 Einstellungsoffensive, Besoldung, Ausstattung, Arbeitsbedingungen, Wertschätzung – Ausstattung/Personal gehört nach R2 zu Sicherheit.
+- S. 40 Fortbildung der Polizei zu Cybermobbing und Online-Kriminalität – Zusammenhang Straftatenbekämpfung, nicht Umgang bei Polizeikontakten.
+- S. 40 Streifenpräsenz an Brennpunkten; S. 41 Videoüberwachung, Quellen-TKÜ – Sicherheit (R2) bzw. keine Personenkontrolle.
+- S. 41 Platzverweise und Sicherheitszonen bei Drogenkonsum im Umfeld von Schulen/Kitas – Ahndung von Drogenkonsum, keine Regel für Kontrollen; nicht aufgenommen.
+- S. 41 beschleunigte Verfahren bei Jugendkriminalität – Justiz, nicht Polizeikontakt.
+
+Richtungen ohne Maßnahme: Kontrollen begrenzen/Kontrollquittung; Handlungsfähigkeit und Rückhalt der Polizei; unabhängige Beschwerde-/Kontrollstelle, Kennzeichnungspflicht; Dokumentation (Bodycams).

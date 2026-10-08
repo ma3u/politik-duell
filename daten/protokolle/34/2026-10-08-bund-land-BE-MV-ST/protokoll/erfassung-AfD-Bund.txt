@@ -1,0 +1,42 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Polizeibeauftragte und innerbehördliche Meldestellen abschaffen, ebenso die Beweislastumkehr im Disziplinarverfahren",
+      "ursachen_ids": [3403],
+      "zitat": "Wir fordern deshalb: […] Abschaffung aller politisch installierten Polizeibeauftragten, innerbehördlichen Denunzierungsstellen sowie der Beweislastumkehr […] im Disziplinarverfahren",
+      "seite": 119
+    },
+    {
+      "beschreibung": "Razzien und Kontrollstellen in sogenannten No-go-Areas durchführen, um dort den Rechtsstaat durchzusetzen",
+      "ursachen_ids": [3401],
+      "zitat": "Es sind weiter die erforderlichen Mittel bereitzustellen und Maßnahmen (wie z. B. Razzien und Kontrollstellen) durchzuführen, damit der Rechtsstaat in den sogenannten No-go-Areas wieder durchgesetzt werden kann.",
+      "seite": 123
+    },
+    {
+      "beschreibung": "Strafverfolgungsbefugnisse und Fahndungsmöglichkeiten der Polizei an die aktuelle Kriminalitätsentwicklung anpassen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Wir fordern deshalb: […] Anpassung der Strafverfolgungsbefugnisse und der Fahndungsmöglichkeiten der Polizei an die jeweils aktuelle Kriminalitätsentwicklung",
+      "seite": 119
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3402, "seiten": [119, 120], "grund": "Kapitel ‚Stärkung der Polizei‘ gelesen: nur Besoldung, Ausrüstung, Versicherung, Versorgung (R2 Sicherheit); nichts zu Einsatzpraxis, Kommunikation oder Aus- und Fortbildung." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3–6; Kapitel „Innere Sicherheit“ PDF-S. 117–126 vollständig (Kriminalität, Jugendstrafrecht, Stärkung der Polizei, Justiz, Extremismus, No-go-Areas, Grundrechte schützen, Bundespolizei); Fundstellen S. 119 und S. 125; Grep nach Polizei/Kontroll/Beschwerde/Kennzeichnung/Bodycam/Deeskalation im ganzen Text (übrige Treffer in anderem Zusammenhang, z. B. S. 135 politische Beamte, S. 101/104 Grenzkontrollen).
+
+Grenzfall: Anpassung der Strafverfolgungsbefugnisse und Fahndungsmöglichkeiten (S. 120, Liste ab S. 119) – R1 ordnet Befugnisse der Polizei 3401 zu, R2 Aufklärung von Straftaten der Sicherheit; daher ursachen_offen 3401.
+
+Nicht erfasst:
+- S. 125 „Wir stellen uns gegen eine flächendeckende Videoüberwachung“: Ablehnung einer Ausweitung, keine eigene Handlung zu Polizeikontrollen; Videoüberwachung ist keine Personenkontrolle.
+- S. 119 Herabsetzung der Strafmündigkeit, Jugendstrafrecht: Strafrecht, nicht Polizeikontakt.
+- S. 118/120 Aufstockung Personal, Besoldung, Bewaffnung, Ausrüstung: R2 Sicherheit.
+- S. 120 Rechtsschutz der Beamten in dienstlichen Angelegenheiten, Diensthaftpflichtversicherung: Dienstrecht und Absicherung der Beamten, keine Kontrolle oder Klärung von Einsätzen.
+- S. 119 Ablehnung von Gesinnungsüberprüfungen, keine politischen Beamten an der Spitze: Dienstrecht, nicht Polizeikontakt.
+- S. 126 Erweiterung der Befugnisse der Bundespolizei als Grenzbehörde: Grenzschutz/Migration, nicht Polizeikontakte im Alltag.
+Richtungen ohne Maßnahme: Kontrollen begrenzen (3401), Kommunikation/Fortbildung und Rückhalt (3402), Dokumentation von Einsätzen (3403).

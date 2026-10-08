@@ -1,0 +1,44 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Funktion des Polizeibeauftragten des Landes abschaffen; Beschwerden weiter nur über die Zentrale Beschwerdestelle des Innenministeriums",
+      "ursachen_ids": [3403],
+      "zitat": "Funktion des Polizeibeauftragten abschaffen! […] Die Zentrale Beschwerdestelle leistet hervorragende Arbeit. Daneben braucht es keinen Polizeibeauftragten.",
+      "seite": 109
+    },
+    {
+      "beschreibung": "Interne Ermittlungen nach Schusswaffengebrauch von Polizeibeamten nur noch bei konkreten Verdachtsmomenten auf Fehlverhalten einleiten",
+      "ursachen_ids": [3403],
+      "zitat": "Wir werden deshalb durchsetzen, dass nach Schusswaffengebrauch nur noch bei konkreten Verdachtsmomenten auf Fehlverhalten interne Ermittlungen gegen Polizeivollzugsbeamte eingeleitet werden.",
+      "seite": 106
+    },
+    {
+      "beschreibung": "Fördermaßnahmen und Beförderungen von Polizeibeamten erst bei staatsanwaltschaftlichen Ermittlungen aussetzen, nicht schon bei Disziplinarverfahren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3403],
+      "zitat": "Wir werden deshalb feststellen, dass erst staatsanwaltschaftliche Ermittlungen diesen Suspensiveffekt entfalten.",
+      "seite": 108
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [104, 112, 132, 133], "grund": "Kapitel Innere Sicherheit und Demokratie/Bürgerrechte gelesen; keine Zusage zu Regeln für Polizeikontrollen oder Kontrollbefugnissen. Ablehnung anlassloser Überwachung (S. 132) betrifft digitale Datenspeicherung." },
+    { "ursache": 3402, "seiten": [104, 106, 133], "grund": "Keine Zusage zu Einsatzpraxis, Kommunikation oder Fortbildung im Umgang mit Bürgern; S. 104 nur allgemeines Ziel (Polizei als Freund und Helfer), S. 106 Taser mit Ausbildung ist Ausstattung (R2), S. 133 'neue Praxis der Toleranz gegenüber Demonstrationen' ohne konkretes Instrument." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 249-252, am Ende des PDFs), Kapitel VI Innere Sicherheit (S. 104-112), Kapitel VIII Demokratie und Bürgerrechte (S. 131-134); Durchsicht aller übrigen Stellen mit "Polizei", "Kontrolle", "Beschwerde" (S. 6, 27, 46, 86, 88, 124, 193, 240 u. a.: Grenzkontrollen, Schule, Kriminalstatistik – kein Bezug).
+Fundstellen: S. 109 erfasst; S. 251 Inhaltsverzeichnis übersprungen.
+
+Grenzfall: S. 108 (Disziplinarverfahren, Suspensiveffekt erst bei staatsanwaltschaftlichen Ermittlungen) betrifft Folgen von Verfahren gegen Polizeibeamte für deren Laufbahn; ob das zur Klärung von Fehlverhalten (3403) gehört, lässt R1 offen -> ursachen_offen.
+
+Nicht erfasst:
+- S. 104: "durch Respekt gegenüber der Polizei, aber auch durch die Neugewichtung ihrer Aufgaben" – allgemeines Ziel ohne konkretes Instrument.
+- S. 105 Mehr Polizisten (7.500), schnellere Polizei; S. 106 Taser anschaffen und ausbilden; S. 107-108 Besoldung, Beförderung, Dienstunfähigkeitsversicherung – Ausstattung/Personal (R2, Sicherheit).
+- S. 109 Warnschussarrest für Jugendliche – Jugendstrafrecht, kein Polizeikontakt.
+- S. 112 Freiwillige Bürgerwacht – Sicherheitsarchitektur, keine Regel für Polizeikontakte.
+- S. 134 Versammlungsrecht (Erstanmelderprinzip, unmittelbarer Zwang) – Versammlungsrecht, nicht Kontrollen/Einsatzpraxis gegenüber Einzelnen.
+Richtungen ohne Maßnahme: 3401 beide Richtungen; 3402 beide Richtungen; 3403 Dokumentation (Bodycams, Kennzeichnung) ohne Zusage.
+Seiten ohne Text: 103, 115-117 sind Trennseiten vor bzw. nach dem Kapitel; das Kapitel ist laut Inhaltsverzeichnis vollständig als Text vorhanden.

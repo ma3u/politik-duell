@@ -1,0 +1,43 @@
+{
+  "partei_id": 18,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium einrichten",
+      "ursachen_ids": [3403],
+      "zitat": "Polizeibeamte und Bürger*innen vor Gewalt schützen Einrichtung einer unabhängigen Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Polizeibeamte zum Einsatz von Bodycams zur Einsatzdokumentation und zum Schutz von Polizei und Bürgern verpflichten",
+      "ursachen_ids": [3403],
+      "ursachen_offen": [3402],
+      "zitat": "Polizeibeamte und Bürger*innen vor Gewalt schützen […] Beamte zum Einsatz von Bodycams zur Einsatzdokumentation und zum Schutz von Polizeibeamt*innen und Bürger*innen verpflichten.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Verbindliche, regelmäßige Antidiskriminierungs-Fortbildungen auch für die Polizei, um diskriminierungssensibel zu handeln und Konflikte professionell zu bearbeiten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "zitat": "Verbindliche Fortbildungen zum Thema Antidiskriminierung Mitarbeitende in Verwaltung, Bildungseinrichtungen und Polizei erhalten regelmäßige Schulungen, um diskriminierungssensibel zu handeln und Konflikte professionell zu bearbeiten.",
+      "seite": 18
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [14, 15, 17, 18, 47], "grund": "Keine Aussage zu anlasslosen Kontrollen, Kontrollbescheinigungen, Kontrollorten oder Befugnissen der Landespolizei; Grenzkontrollen (S. 47) betreffen Freizügigkeit im Schengenraum, nicht Polizeikontakte im Alltag." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel „Mitbestimmung, Prävention und Jugend stärken“ und „Schutz, Sicherheit und Prävention“ (S. 13–15); „Diskriminierung ernst nehmen und wirksam bekämpfen“ (S. 17–18); Fundstellen S. 15, 17; per Suche nach „Polizei“/„Kontroll“ zusätzlich S. 44–45 (Palantir) und S. 47 (Grenzkontrollen).
+
+Grenzfall: Fortbildung Antidiskriminierung (S. 18) nennt die Polizei ausdrücklich und „Konflikte professionell bearbeiten“ (R1: Fortbildung → 3402), ist aber auf Diskriminierung ausgerichtet (R2: Diskriminierung im Alltag) – daher nur ursachen_offen 3402. Bodycams: R1 ordnet Dokumentation 3403 zu; die Suche führt „bodycam“ auch unter 3402 – daher 3402 offen.
+
+Nicht erfasst:
+- S. 17: Verbindliche Standards und unabhängige Beschwerdestellen gegen Diskriminierung in Behörden, Schulen und öffentlichen Einrichtungen – Diskriminierungsschutz allgemein, nicht polizeispezifisch (R2: Diskriminierung im Alltag).
+- S. 17–18: Unabhängige Landesantidiskriminierungsstelle; Antidiskriminierungsbeauftragte in Schulen, Behörden und Polizei; Stichproben und Evaluationen zu Diskriminierungserfahrungen – Diskriminierungsschutz (R2), keine Kontrolle von Polizeieinsätzen.
+- S. 14: Schul- und Jugendsozialarbeit, Jugendtreffs – kein Polizeibezug.
+- S. 45: Verzicht auf Palantir bei Polizei und Verwaltung – Datenanalyse, kein Ansatz an Polizeikontakten.
+- S. 47: Beendigung der Grenzkontrollen über den Bundesrat – Schengen-Freizügigkeit, Bundespolizei; keine Ursache des Themas.
+Richtungen ohne Maßnahme: „Gezielte Kontrollen für Sicherheit ermöglichen“, „Handlungsfähigkeit und Rückhalt der Polizei“, „Kontrollen begrenzen und nachvollziehbar machen“.
+Seiten ohne Text (1, 67): Titel- und Rückseite, ohne Bedeutung.

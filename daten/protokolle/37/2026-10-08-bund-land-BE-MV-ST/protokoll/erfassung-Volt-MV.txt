@@ -1,0 +1,30 @@
+{
+  "partei_id": 18,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Ehrenamtskarte so anpassen, dass ehrenamtlich Engagierte unter Federführung des Landes den ÖPNV kostenlos nutzen können",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Unter Federführung des Landes ermöglichen die Landkreise den Menschen, die sich ehrenamtlich engagieren, den ÖPNV kostenlos zu nutzen.",
+      "seite": 15
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3701, "seiten": [46], "grund": "Einziger Treffer (gemeinsame Nutzung) betrifft Funkmasten; das Programm enthält kein Wort zu Sportstätten, Sporthallen oder Schwimmbädern." },
+    { "ursache": 3702, "seiten": [27, 32, 63, 24], "grund": "Treffer betreffen Tourismus, Patienten und landwirtschaftliche Betriebe; Kommunalfinanzierung S. 24 allgemein ohne Bezug zu Sportstätten oder deren Betrieb." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2–3; Vorwort S. 4; Kapitel Gesellschaftlicher Zusammenhalt S. 13–17 (u. a. Ehrenamt, Demokratie- und Kulturförderung S. 15–16); Starke Kommunen durch gerechte Finanzierung S. 23–24; EU-Fördermittel S. 51; Fundstellen S. 27, 32, 46, 63. Volltextsuche nach sport, verein, ehrenamt, schwimm, halle, sanier, freizeit: Das Programm erwähnt Sport, Sportvereine oder Sportstätten nirgends.
+
+Grenzfall: Ehrenamtskarte mit kostenlosem ÖPNV (S. 15) gilt für alle Ehrenamtlichen, nicht speziell für Sportvereine; R1 nennt Ehrenamt bei 3703, die Maßnahme entlastet aber nicht die Vereinsfinanzen – daher ursachen_offen.
+
+Nicht erfasst:
+- S. 24 „Finanzielle Verantwortung regeln“ / „Planbare und bedarfsgerechte Landesfinanzierung“ / „Mehr nicht zweckgebundene Mittel für lokale Projekte“: allgemeine Kommunalfinanzierung ohne Bezug zu Sportstätten oder Vereinen.
+- S. 51 EU-Fördermittelberatungsstelle für Kommunen, Vereine u. a.: allgemeine Antragsberatung, kein Bezug zu Sportvereinen oder Sportstätten.
+- S. 16 MV-Schutzfonds Kultur, Landeskulturpass: Kultur, nicht Sport.
+- S. 14 Soziale Angebote im ländlichen Raum (Jugendtreffs, Freizeitangebote): gehört nach R2 zu Freizeitangeboten für Jugendliche.
+- S. 27, 32, 46, 63: Treffer aus anderem Zusammenhang (Tourismus, Gesundheit, Funkmasten, Landwirtschaft).
+- 3703 Richtung „Eigeneinnahmen und Kooperation der Vereine“: nichts im Programm.

@@ -1,0 +1,29 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Polizei mit moderner Ausstattung versehen und dabei auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren setzen",
+      "ursachen_ids": [3402],
+      "zitat": "Wir fordern eine solide Ausstattung der Polizei mit modernen Einsatzmitteln und IT […]. Dabei setzen wir auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren.",
+      "seite": 35
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [34, 35], "grund": "Kapitel 'Sicherheit gewährleisten, Freiheit schützen' gelesen; nichts zu anlasslosen Kontrollen, Kontrollbescheinigungen oder Kontrollorten. Der Grundsatz klarer Grenzen für Befugnisse betrifft Datenauswertung und ist keine konkrete Zusage." },
+    { "ursache": 3403, "seiten": [12, 34, 35, 36], "grund": "Einziger Treffer 'Kennzeichnungspflicht' (S. 12) betrifft die Lebensdauer von Produkten. Parlamentarische Kontrolle (S. 36) betrifft den Verfassungsschutz. Nichts zu Beschwerdestellen, Kennzeichnung oder Dokumentation von Polizeieinsätzen." }
+  ]
+}
+
+Protokoll
+- Gelesen: Inhaltsverzeichnis/Einleitung S. 2–3; Kapitel 4 "Sicherheit gewährleisten, Freiheit schützen" S. 34–37 (Polizei, Verfassungsschutz, Justiz, Migration); Fundstelle S. 12; Grep nach Überwachung, Versammlung, Jugendliche, Beschwerde, Kontrolle, Gewalt, Befugnis.
+- Erfasst: Aus- und Fortbildung der Polizei (S. 35) nach R1 bei 3402.
+- Nicht erfasst:
+  - S. 12 Kennzeichnungspflicht: anderer Zusammenhang (Produktlebensdauer).
+  - S. 34/35 mehr Personal, Ausstattung, sichtbare Polizeipräsenz: nach R2 Sicherheit.
+  - S. 35 Schutz von Vollstreckungsbeamten durch schnellere Anklagen: Schutz der Einsatzkräfte vor Angriffen, kein Ansatz an Einsatzpraxis oder Kontrolle; eher Sicherheit.
+  - S. 35 "alle Befugnisse ... klare Grenzen": allgemeiner Grundsatz, bezogen auf KI-Datenauswertung und Datenabgleich, keine Regel für Kontrollen.
+  - S. 35 Entlastung der Polizei von Hausdurchsuchungen wegen Politikerbeleidigung, Streichung § 188 StGB: Strafrecht/Meinungsfreiheit, nicht Polizeikontakte.
+  - S. 36 parlamentarische Kontrolle des Verfassungsschutzes: nicht Polizei.
+- Richtungen ohne Maßnahme: Kontrollen begrenzen; gezielte Kontrollen; Handlungsfähigkeit und Rückhalt (nur allgemein "Rückhalt" S. 35 ohne Handlung); Beschwerde- und Kontrollstellen; Dokumentation und faire Verfahren.
+- Seite ohne Text: S. 1 (Titelseite), ohne Bedeutung.

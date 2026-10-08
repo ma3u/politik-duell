@@ -1,0 +1,1262 @@
+{
+  "pruefsumme": "10f8780fed4fee782e418e874f67bc560a7a77c8ff37a15136b54aeebf3c5589",
+  "thema": {
+    "id": 34,
+    "name": "Umgang der Polizei mit jungen Menschen",
+    "ziel": "Junge Menschen werden bei Polizeikontakten respektvoll, nachvollziehbar und verhältnismäßig behandelt und können mögliche Fehler wirksam klären lassen."
+  },
+  "ursachen": [
+    {
+      "id": 3401,
+      "beschreibung": "Häufige Polizeikontrollen können Jugendliche psychisch belasten: In einer US-Längsschnittstudie (2013 bis 2015, 645 Jungen) hing die Zahl der Kontrollen mit späterer Belastung zusammen",
+      "ebene": "land"
+    },
+    {
+      "id": 3402,
+      "beschreibung": "Respektloses Verhalten bei Polizeikontakten ließ sich in einem US-Experiment (2017 bis 2020, 120 Orte) durch eine veränderte Einsatzpraxis beeinflussen",
+      "ebene": "land"
+    },
+    {
+      "id": 3403,
+      "beschreibung": "Verfahren wegen mutmaßlich übermäßiger Polizeigewalt werden von Staatsanwaltschaften häufig mangels hinreichenden Tatverdachts eingestellt (Fachbeitrag, 2019)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3401,
+        3402,
+        3403
+      ],
+      "text": "Zu 3401 gehören Regeln für Kontrollen und Befugnisse der Polizei (anlasslose Kontrollen, Kontrollbescheinigung, Kontrollorte), zu 3402 Einsatzpraxis, Kommunikation, Aus- und Fortbildung, zu 3403 Beschwerdestellen, unabhängige Kontrolle, Kennzeichnung und Dokumentation von Einsätzen. Es zählen Maßnahmen für alle Polizeikontakte; ein Bezug zu jungen Menschen im Zitat ist nicht nötig."
+    },
+    {
+      "nr": 2,
+      "text": "Ausstattung der Polizei, Zahl der Polizistinnen und Polizisten und Aufklärung von Straftaten gehören zu Sicherheit. Diskriminierende Auswahl bei Kontrollen und Schutzlücken im öffentlichen Recht gehören zu Diskriminierung im Alltag. Platzverweise wegen Lärm gehören zu Freizeitangebote und Treffpunkte für Jugendliche."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "bund",
+      "beschreibung": "Polizei mit moderner Ausstattung versehen und dabei auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren setzen",
+      "zitat": "Wir fordern eine solide Ausstattung der Polizei mit modernen Einsatzmitteln und IT […]. Dabei setzen wir auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "c463ac3968295100"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Einheit „Interne Ermittlungen“ bei der Innenverwaltung für strafrechtliche Vorwürfe gegen Beschäftigte des öffentlichen Dienstes",
+      "zitat": "Zur Aufarbeitung strafrechtlicher Vorwürfe gegen Beschäftigte des öffentlichen Dienstes streben wir eine Einheit „Interne Ermittlungen“ bei der [Land] für Inneres an.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "89d412001600c1c4"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Kontrolle durch den Bürger- und Polizeibeauftragten verbessern, damit er alle an ihn herangetragenen Sachverhalte effektiv überprüfen kann",
+      "zitat": "Wir werden die unabhängige Kontrolle verbessern und dem Beauftragten ermöglichen, effektiv alle an ihn herangetragenen Sachverhalte zu überprüfen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "0164527b9b6ca670"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Mehr anlasslose Polizeikontrollen in Problemvierteln",
+      "zitat": "[Partei] fordert: […] Mehr Polizeikontrollen ohne Anlass in Problemvierteln.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "d5f552e6530e8a3b"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Polizeiliche Datei über Fußballfans („Szenekunde Sport“) ersatzlos löschen",
+      "zitat": "Aufgrund des mangelnden Nutzens sowie der nach wie vor fehlenden Transparenz wollen wir die polizeiliche Datei „Szenekunde Sport“ ersatzlos löschen […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "67d1dc758367e5bd"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Kontaktbereichsbeamtinnen und -beamte intensiver einsetzen und entlasten, um den niedrigschwelligen Austausch zwischen Polizei und Bevölkerung zu verbessern",
+      "zitat": "Um das Sicherheitsgefühl der Bürgerinnen und Bürger zu steigern und den niedrigschwelligen Austausch zwischen Polizei und Bevölkerung zu verbessern, fordern wir, die Kontaktbereichsbeamtinnen und -beamten intensiver einzusetzen und dafür von zusätzlichen Tätigkeiten zu entlasten.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "b462891dc3f7c5ae"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "land",
+      "beschreibung": "Polizei- und Bürgerbeauftragten ausbauen: mehr Personal, Zugang zu Akten und Bodycam-Aufnahmen, Untersuchungs- und Ermittlungsbefugnisse bei Polizeigewalt",
+      "zitat": "Deshalb wollen wir den Polizei- und Bürgerbeauftragten als Institution ausbauen, seine Befugnisse und sein Personal stärken […]. Der Zugang zu polizeilichen Akten und Daten, insbesondere Bodycam-Aufzeichnungen, muss gesetzlich garantiert sein. Der Polizeibeauftragte muss über die notwendigen Untersuchungs- und Ermittlungsbefugnisse verfügen, um rechtswidrige Gewalt und Menschenrechtsverletzungen durch die Sicherheitsbehörden aufzuklären.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "4f9ae84db5d4f2eb"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Disziplinarverfahren der Polizei durch bessere Abläufe und mehr Personal straffen, damit Dienstvergehen schnell geahndet und unberechtigte Vorwürfe schnell ausgeräumt werden.",
+      "zitat": "Wir straffen Disziplinarverfahren durch verbesserte Prozesse und mehr Personaleinsatz. Tatsächliche Dienstvergehen müssen schnell geahndet, unberechtigte Vorwürfe schnell ausgeräumt werden.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "7cf2f3351550edf7"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Demokratie- und Grundrechtsbildung in Aus- und Fortbildung der Polizei stärken und eine Fehlerkultur fördern.",
+      "zitat": "Die Polizei durch ausreichende personelle und sachliche Ausstattung unterstützen, Demokratie- und Grundrechtsbildung in Ausbildung und Fortbildung stärken, eine Fehlerkultur und Resilienz gegen extrem rechte Einstellungen befördern.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "0180add006d8f3e1"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Polizei modernisieren und an neue Einsatzlagen anpassen",
+      "zitat": "Ausbildung und Fortbildung werden modernisiert und an neue Einsatzlagen angepasst.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "f62ca47edd552677"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Eine von der Polizei unabhängige Beschwerdestelle mit ausreichendem Mandat, Ressourcen und Befugnissen schaffen, um Fehlverhalten der Polizei zu verfolgen und aufzuklären.",
+      "zitat": "Eine von der Polizei unabhängige Beschwerdestelle mit ausreichendem Mandat, Ressourcen und Befugnissen, um Fehlverhalten der Polizei effektiv zu verfolgen und aufzuklären.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "acd10084fa0960f2"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Gegen Vorwürfe gegen die Polizei rechtlich vorgehen und Polizisten bei der Verteidigung gegen ungerechtfertigte Vorwürfe unterstützen.",
+      "zitat": "Wo möglich und geboten, gehen wir dagegen rechtlich vor und unterstützen Polizisten dabei, sich gegen ungerechtfertigte Vorwürfe zu verteidigen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "0ec051bf1186061a"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "Gemeinsame mobile Street-Triage-Teams aus Polizei und Krisendienst, geschult in Deeskalation, für Einsätze bei Menschen in psychischen Krisen",
+      "zitat": "Wir bauen die bestehende Kooperation zwischen Polizei und dem [Land] Krisendienst zu interdisziplinären mobilen Street-Triage-Teams aus. Dadurch vermitteln wir Menschen in psychischen Krisen frühzeitig in das Gesundheitssystem, reduzieren Zwangsunterbringungen und verbessern die Qualität von Polizeieinsätzen bei vulnerablen Gruppen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "cfef6f8795cb75d5"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Bodycams im Polizeidienst verpflichtend einsetzen, zur Einsatzdokumentation und zum Schutz aller Beteiligten",
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: Sicherheit entsteht durch Prävention, konsequente Strafverfolgung und transparente Kontrolle. […] Bodycams im Polizeidienst zur besseren Einsatzdokumentation und zum Schutz aller Beteiligten verpflichtend einsetzen",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "e7b021ee58030985"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Polizei auf hohem Niveau sichern und die Fachhochschule in Güstrow personell und finanziell stärken",
+      "zitat": "Wir werden: […] die Aus- und Fortbildung auf höchstem Niveau gewährleisten und den Standort der Fachhochschule für öffentliche Verwaltung, Polizei und Rechtspflege in Güstrow personell und finanziell stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "76d314af65f3f4b8"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Bodycam-Einsatz der Polizei rechtlich auch in Wohnungen ermöglichen, wegen der deeskalierenden Wirkung etwa bei häuslicher Gewalt",
+      "zitat": "Den Rechtsrahmen der Polizei modern fortentwickeln: Der Einsatz der Bodycam soll auch in Wohnungen möglich sein, da gerade bei Fällen häuslicher Gewalt die deeskalierende Wirkung zum Schutz der vor Ort im Einsatz befindlichen Polizistinnen und Polizisten wichtig ist.",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "b161cc165f29ca50"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Rechtsgrundlage für nächtliche Ausgangssperren für jugendliche Intensivtäter schaffen",
+      "zitat": "[Partei] fordert: […] Eine rechtliche Grundlage für kriminalitätsbezogene nächtliche Ausgangssperren für jugendliche Intensivtäter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "afef9564b9fe6045"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "bund",
+      "beschreibung": "Razzien und Kontrollstellen in sogenannten No-go-Areas durchführen, um dort den Rechtsstaat durchzusetzen",
+      "zitat": "Es sind weiter die erforderlichen Mittel bereitzustellen und Maßnahmen (wie z. B. Razzien und Kontrollstellen) durchzuführen, damit der Rechtsstaat in den sogenannten No-go-Areas wieder durchgesetzt werden kann.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "84a95ee1b021a3f4"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Polizei verpflichten, bei jeder Identitätsfeststellung und Durchsuchung Grund und Rechtsgrundlage schriftlich anzugeben (Kontrollquittung)",
+      "zitat": "Die Polizei ist zu verpflichten, bei jeder Identitätsfeststellung und Durchsuchung schriftlich den Grund und die Rechtsgrundlage anzugeben (Kontrollquittungen).",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "eec4a6119b1ca7db"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "bund",
+      "beschreibung": "Ticketsystem für polizeiliche Kontrollen einführen, das die Gründe der Kontrolle darlegt",
+      "zitat": "Mit einem Ticketsystem für Kontrollen, das die Gründe für Kontrollen darlegt, wollen wir polizeiliches Handeln transparenter machen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "0364b88c963d8273"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Eigenes Landesversammlungsgesetz mit normklaren Ermächtigungsgrundlagen für die Polizei, u. a. Videoüberwachung bei Versammlungen",
+      "zitat": "Die Gesetzgebungskompetenz des Landes im Bereich des Versammlungsrechts wollen wir nutzen, indem wir ein eigenes Versammlungsgesetz schaffen. Dieses soll durch normklare Ermächtigungsgrundlagen stärkere Rechtssicherheit und Klarheit für das Handeln der Polizei schaffen und beispielsweise auch die Videoüberwachung während Versammlungen grundrechtskonform erlauben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "726c47f73728a284"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Rassismuskritische Bildungsarbeit in der Polizei (sowie Verwaltung und Schulen) ausbauen",
+      "zitat": "Rassismuskritische Bildungsarbeit wird in Verwaltung, Schulen und Polizei ausgebaut.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "72e2bf6712166fdc"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Bodycams automatisch einschalten, wenn Schusswaffen oder Taser eingesetzt werden, um Einsätze zu dokumentieren",
+      "zitat": "Die individuelle Kennzeichnungspflicht und der automatische Einsatz von Bodycams beim Schusswaffengebrauch oder beim Einsatz von Tasern schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "b93cdb14902980d1"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Kriminalitätsauffällige Räume sollen kurzfristig zu kriminalitätsbelasteten Orten erklärt werden können, an denen verdachtsunabhängige Personenkontrollen möglich sind.",
+      "zitat": "Neben der konsequenten Nutzung der neuen Befugnisse der Polizei zur Kontrolle öffentlicher Räume durch Videoüberwachung muss die Polizei auch verdachtsunabhängig Personenkontrollen durchführen können. […] Wir werden daher dafür sorgen, dass ein kriminalitätsauffälliger Raum unter bestimmten Voraussetzungen auch kurzfristig zu einem kriminalbelasteten Ort erklärt werden kann, um kriminellen Entwicklungen frühzeitig zu begegnen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "1e499b0ae3a8217f"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Demokratiebildung, Diskriminierungskritik und kommunikative Kompetenzen in Aus- und Fortbildung sowie Studium der Sicherheitsbehörden fördern",
+      "zitat": "Deshalb müssen Demokratiebildung, Diskriminierungskritik und kommunikative Kompetenzen in Aus- und Fortbildung sowie im Studium gefördert werden.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "dc79eb7d0dee767b"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "bund",
+      "beschreibung": "Schutz der Einsatzkräfte durch bessere technische Ausrüstung, Schulungen und einen überlegenen Kräfteansatz in bedrohlichen Situationen erhöhen",
+      "zitat": "Zudem wollen wir den Schutz der Einsatzkräfte durch verbesserte technische Ausrüstung, Schulungen und einen überlegenen Kräfteansatz in bedrohlichen Situationen schnell erhöhen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "a603f480c754d8ed"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Bürger können Bodycam-Aktivierung verlangen und Aufnahmen einsehen; Hinweispflicht der Polizei, automatische Auslösung beim Waffeneinsatz",
+      "zitat": "Bürger*innen sollen die Aktivierung der Bodycam verlangen und die Aufzeichnungen einsehen können. Polizeibeamt*innen sollen verpflichtet werden, auf dieses Recht zu Beginn einer Maßnahme hinzuweisen. Beim Einsatz von Waffen ist die Bodycam automatisch auszulösen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "a3774e357b089271"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium einrichten",
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: Sicherheit entsteht durch Prävention, konsequente Strafverfolgung und transparente Kontrolle. […] Eine unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt im Bereich des Justizministeriums einrichten",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "35cacd673187a303"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Bürger- und Polizeibeauftragten als anonyme Meldestelle stärken: Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen",
+      "zitat": "Wir stärken den „Bürger- und Polizeibeauftragten des Landes [Land]” als anonyme Meldestelle, indem er Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen erhält.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "202bd1e284626eb4"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Polizeibeamte zum Einsatz von Bodycams zur Einsatzdokumentation und zum Schutz von Polizei und Bürgern verpflichten",
+      "zitat": "Polizeibeamte und Bürger*innen vor Gewalt schützen […] Beamte zum Einsatz von Bodycams zur Einsatzdokumentation und zum Schutz von Polizeibeamt*innen und Bürger*innen verpflichten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "49cd14dd6040bc1a"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Bestehende kriminalitätsbelastete Orte sowie Messer- und Waffenverbotszonen überprüfen und, wo erforderlich, wieder abschaffen",
+      "zitat": "Wir werden die bestehenden kriminalitätsbelasteten Orte und Messer- und Waffenverbotszonen auf ihre Sinnhaftigkeit überprüfen und werden sie, wo erforderlich, wieder abschaffen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "4cd1b421a6bfea92"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Sicherheitskonzepte mit den Kommunen für Kriminalitätsschwerpunkte und Angsträume, u. a. mit zielgerichteter Videoüberwachung",
+      "zitat": "Für Kriminalitätsschwerpunkte und öffentliche Angsträume werden wir gemeinsam mit den Kommunen Sicherheitskonzepte entwickeln und den öffentlichen Raum mit intelligenten Sicherheitslösungen wie zielgerichteter Videoüberwachung und modernen Lichtkonzepten sicherer machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "9d517dbe832a0238"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Digitale Kontrollquittung einführen, die Kontrollierte über den Anlass der Polizeikontrolle informiert; anlasslose Kontrollen werden abgelehnt",
+      "zitat": "Polizeiliches Handeln muss sich stets nach dem Handeln der Verdächtigen richten, weshalb wir anlasslose Kontrollen ablehnen. […] Um dem entgegenzuwirken, möchten wir eine digitale Kontrollquittung einführen, mit der jede Person über den Anlass der Kontrolle informiert werden kann.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "628facc273d3904e"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "Pflichtschulungen der Polizei zu Rassismus und Diskriminierung sowie Training im Umgang mit vulnerablen Gruppen, um Konflikteskalationen zu vermeiden",
+      "zitat": "Wir verpflichten Polizist*innen zu regelmäßigen Schulungen über Rechtsextremismus, Sexismus, Rassismus und Diskriminierung. Wir trainieren Polizist*innen im Umgang mit besonders vulnerablen Gruppen, wie Personen mit psychischen Erkrankungen oder Sprachbarrieren.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "b8333732564049e5"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "bund",
+      "beschreibung": "Einsatz von Pfefferspray durch die Polizei stark einschränken, bei Versammlungen und Ansammlungen im öffentlichen Raum verbieten",
+      "zitat": "Den Einsatz von Pfefferspray durch die Polizei wollen wir massiv einschränken. Im Zusammenhang mit Versammlungen, Ansammlungen im öffentlichen Raum und Veranstaltungen soll er verboten werden.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "0f2cc892216313ad"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Polizei, sozialpädagogische Fachkräfte und sozialpsychiatrische Dienste für Einsätze bei Menschen in psychischen Krisen vernetzen",
+      "zitat": "Um Menschen in psychischen Krisen besser zu helfen, vernetzen wir Polizei, sozialpädagogische Fachkräfte und sozialpsychiatrische Dienste.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "c335ce044e2152cc"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Regelmäßige Fortbildungen der Polizei zu Menschenrechten und interkultureller Kompetenz",
+      "zitat": "Besondere Aufmerksamkeit legen wir auf demokratische Professionalität durch regelmäßige Fortbildungen zu Menschenrechten und interkultureller Kompetenz, um eine demokratische Alltagskultur in der Polizei zu stärken.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "a7241ecb72a09770"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium einrichten",
+      "zitat": "Polizeibeamte und Bürger*innen vor Gewalt schützen Einrichtung einer unabhängigen Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "8e6c0d9c29c2c089"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Polizeihochschule zu einer unabhängigen Hochschule mit Forschung, Veröffentlichungen und externen Lehrenden weiterentwickeln",
+      "zitat": "Die Polizeihochschule Aschersleben soll zu einer unabhängigen Hochschule weiterentwickelt werden, an der geforscht wird, Ergebnisse veröffentlicht werden und externe Fachakteur*innen in die Lehre einbezogen sind.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "a0180de4959b7d2c"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "land",
+      "beschreibung": "Feste Ansprechpersonen für Antidiskriminierung in der Polizei aufbauen und konsequente, nachhaltige Fortbildung der Polizei",
+      "zitat": "Zudem unterstützen wir den Aufbau von festen Ansprechpersonen für die Antidiskriminierung in der Polizei und fordern eine konsequente sowie nachhaltige Fortbildung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402,
+        3403
+      ],
+      "pruefsumme": "f5ca79d9b8211ff2"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "bund",
+      "beschreibung": "Individuelle Kennzeichnungspflicht für Polizistinnen und Polizisten einführen",
+      "zitat": "Wir fordern eine individuelle Kennzeichnungspflicht von Politist*innen. Es muss selbstverständlich werden, dass Polizeibeamt*innen den Bürger*innen individuell erkennbar gegenübertreten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "1c108c813d07cc31"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Videoüberwachung an allen kriminalitätsbelasteten Orten weiter ausbauen, auch mit intelligenten Systemen.",
+      "zitat": "Wir werden die Videoüberwachung an allen kriminalitätsbelasteten Orten weiter ausbauen und setzen dabei auch auf intelligente Systeme, die im Rahmen der bestehenden Rechtsgrundlagen einen wirksamen Beitrag zur Gefahrenabwehr leisten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "ff7c1e30339a4514"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Fortbildungen zur Antidiskriminierung in Verwaltung, Schule und Polizei",
+      "zitat": "Wir schaffen klare rechtliche Grundlagen und stärken unabhängige Strukturen, damit Diskriminierung wirksam verhindert und verfolgt werden kann. Dazu gehören insbesondere: […] Verbindliche, kooperative Fortbildungen zur Antidiskriminierung in Verwaltung, Schule und Polizei",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "7f064f3a30b06be1"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Funktion des Polizeibeauftragten des Landes abschaffen; Beschwerden weiter nur über die Zentrale Beschwerdestelle des Innenministeriums",
+      "zitat": "Funktion des Polizeibeauftragten abschaffen! […] Die Zentrale Beschwerdestelle leistet hervorragende Arbeit. Daneben braucht es keinen Polizeibeauftragten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "8aa30c3db7276d1b"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "bund",
+      "beschreibung": "Polizeiausbildung soll Kenntnisse über gruppenbezogene Menschenfeindlichkeit vermitteln",
+      "zitat": "Polizist*innen brauchen gute Arbeitsbedingungen und eine gute und moderne Ausbildung. […] Zu einer angemessenen Ausbildung gehört auch die Vermittlung von Kenntnissen über das Wesen gruppenbezogener Menschenfeindlichkeit.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "5afddb19410fa448"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Deeskalationskonzepte bei Versammlungen konsequent verfolgen",
+      "zitat": "Deeskalationskonzepte bei Versammlungen schützen auch die Beschäftigten und sind konsequent zu verfolgen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "fdedcb8a9a082453"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Interkulturelle Öffnung und interkulturelle Kompetenz der Verwaltung fortführen, ausdrücklich auch in der Polizei",
+      "zitat": "Eine moderne Einwanderungsgesellschaft braucht eine dienstleistungsorientierte, diskriminierungsfreie und interkulturell kompetente Verwaltung. Diese interkulturelle Öffnung führen wir konsequent fort – in Verwaltung, Bildung, Polizei und sozialen Einrichtungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "91bc79cae8b2ca3c"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Community Policing: Polizeiarbeit mit Bündnisarbeit im Quartier verbinden, dazu ein digitales Programm, das junge Menschen online erreicht",
+      "zitat": "Die Polizei soll Strafverfolgung und Gefahrenabwehr mit „Community Policing“ verbinden und auf Bündnisarbeit mit der Zivilbevölkerung setzen. […] Ergänzend starten wir ein Programm des digitalen „Community Policing“, das besonders junge Menschen auch online erreicht.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "e1672d34f576d9d4"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Unabhängigkeit des Polizeibeauftragten stärken",
+      "zitat": "Eine starke Polizei braucht Akzeptanz in der Bevölkerung, die auch durch den unabhängigen Polizeibeauftragten getragen wird. Die Unabhängigkeit des Polizeibeauftragen soll gestärkt werden.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "bfa9f95fe2069e6b"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Kriterien für kriminalitätsbelastete Orte (mit verdachtsunabhängigen Kontrollen) präzisieren, öffentlich nachvollziehbar machen und im ASOG mit einer Straftatenliste festlegen",
+      "zitat": "Wir wollen die Kriterien, nach denen ein Ort als kriminalitätsbelastet eingestuft wird, präzisieren und öffentlich nachvollziehbar machen. Dazu muss das Allgemeine Sicherheits- und Ordnungsgesetz (ASOG) um eine Auflistung der Straftaten, die zu einer solchen Einstufung führen, ergänzt werden.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "1c884ba75433dc34"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Numerische Kennzeichnungspflicht auf alle Einsatzlagen und alle eingesetzten Polizeikräfte ausweiten",
+      "zitat": "Wir garantieren friedliche Demonstrationen und fordern: • die numerische Kennzeichnungspflicht auf alle Einsatzlagen und alle eingesetzten Polizeibeamtinnen und -beamte auszuweiten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "42dc29b3f8958a56"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeikräfte",
+      "zitat": "Eine demokratische Polizei hat nichts zu verbergen. Die individuelle Kennzeichnungspflicht […] schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "dca41fccda85dfe9"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Landespolizei reformieren: mehr politische Bildung, bessere Vorbereitung auf Einsätze mit Menschen in psychischen Ausnahmezuständen",
+      "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] eine Reform der Aus- und Fortbildung der Landespolizei, die einen höheren Anteil an politischer Bildung vorsieht sowie besser auf Einsatzsituationen mit Menschen in psychischen Ausnahmezuständen vorbereitet […]",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "e908ade7e48d1527"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "bund",
+      "beschreibung": "Strafverfolgungsbefugnisse und Fahndungsmöglichkeiten der Polizei an die aktuelle Kriminalitätsentwicklung anpassen",
+      "zitat": "Wir fordern deshalb: […] Anpassung der Strafverfolgungsbefugnisse und der Fahndungsmöglichkeiten der Polizei an die jeweils aktuelle Kriminalitätsentwicklung",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "409e28f48d464b7c"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Auf Bundesebene die Rechte des unabhängigen Polizei- und Bürgerbeauftragten im Strafprozess stärken",
+      "zitat": "Auf Bundesebene setzen wir uns deshalb dafür ein, die Rechte des unabhängigen Polizei- und Bürgerbeauftragten im Strafprozess zu stärken.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "9b981d65255bf6a1"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Interne Ermittlungen nach Schusswaffengebrauch von Polizeibeamten nur noch bei konkreten Verdachtsmomenten auf Fehlverhalten einleiten",
+      "zitat": "Wir werden deshalb durchsetzen, dass nach Schusswaffengebrauch nur noch bei konkreten Verdachtsmomenten auf Fehlverhalten interne Ermittlungen gegen Polizeivollzugsbeamte eingeleitet werden.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "2f55d2f37e2e58a8"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "bund",
+      "beschreibung": "Bodycams und Personalrotation bei Polizei und anderen Institutionen einsetzen, um Transparenz zu sichern",
+      "zitat": "Zusätzlich werden technische Maßnahmen wie Bodycams und Personalrotation eingesetzt, um Transparenz und Unvoreingenommenheit zu gewährleisten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "a9faf0bbf83170d0"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "bund",
+      "beschreibung": "Einsatzprotokolle und Polizeivideos zur Aufklärung von Übergriffen bei Treuhandstellen aufbewahren",
+      "zitat": "Zur Aufklärung und Vermeidung von Übergriffen sollen Einsatzprotokolle und Polizeivideos bei Treuhandstellen aufbewahrt werden.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "f74f3ab7487d7c17"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Präventionspolizei mit spezialisierten Beamtinnen und Beamten stärken, die in Schulen, Vereinen und Gemeinden langfristig Vertrauen aufbauen",
+      "zitat": "Wir stärken die Präventionspolizei mit spezialisierten Beamt:innen, die in Schulen, Vereinen und Gemeinden langfristig Vertrauen aufbauen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "8786fedc6f073a9d"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Polizeibeauftragte Stelle schaffen, an die sich Bürgerinnen und Bürger sowie Polizeikräfte mit Hinweisen und Beschwerden wenden können",
+      "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] ein*n unabhängige*n Polizeibeauftragte*n, an den/die sich nicht nur Polizeibeamt*innen, sondern auch alle Bürger*innen mit Hinweisen und Beschwerden wenden können.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "229406a33b2e3e32"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Gezielt Menschen mit Migrationsgeschichte, Frauen, queere Menschen und Mehrsprachige für die Polizei ansprechen und fördern, auch für bessere Kommunikation in Einsätzen",
+      "zitat": "Unsere Polizei soll die Gesellschaft widerspiegeln, der sie dient. Dafür wollen wir gezielt Menschen mit Migrationsgeschichte, Frauen, queere Menschen und Bewerber*innen mit mehrsprachigen Kompetenzen ansprechen und fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "f76f7abec7a60bb3"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "bund",
+      "beschreibung": "Polizei mit Bodycams ausstatten, auch für Einsätze in Wohnräumen",
+      "zitat": "Polizistinnen und Polizisten müssen gut ausgerüstet sein, damit sie uns und sich selbst gut schützen können. Dafür sorgen wir, etwa durch […] die Verwendung von Bodycams – auch bei Einsätzen in Wohnräumen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "b03994600af92c60"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "bund",
+      "beschreibung": "Vorwürfe gegen Sicherheitsbehörden nur durch Staatsanwaltschaften und Gerichte klären; den Polizeibeauftragten des Bundes abschaffen",
+      "zitat": "Wo es Vorwürfe gegen sie gibt, müssen diese durch Staatsanwaltschaften und Gerichte aufgeklärt werden. Sonderermittler, wie den von der Ampel eingerichteten Polizeibeauftragten des Bundes, schaffen wir ab.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "1b5a3d1c6c1be91d"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Bei unverhältnismäßiger Polizeigewalt sofortige Disziplinarmaßnahmen und Überprüfung der Einsatzkräfte, bei schweren oder wiederholten Fehltritten bis zur Entfernung aus dem Dienst",
+      "zitat": "Zugleich setzen wir aber im Falle der Anwendung unverhältnismäßiger Gewalt sofortige und konsequente Disziplinarmaßnahmen um. Bei Verletzungen des Deeskalationsverbots und des Verbots der Anwendung unverhältnismäßiger Gewalt hat eine Überprüfung der betreffenden Einsatzkräfte zu erfolgen, an deren Ende im Falle schwerer und insbesondere wiederholter Fehltritte die Entfernung aus dem Dienst stehen kann.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "34aade50b9987472"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "bund",
+      "beschreibung": "Neues Bundespolizeigesetz mit klaren Befugnissen der Bundespolizei schaffen",
+      "zitat": "Wir schaffen ein modernes Bundespolizeigesetz, das der Bundespolizei klare Befugnisse gibt, um den heutigen sicherheitspolitischen Herausforderungen wirksam zu begegnen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "0f885523333a4ae6"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Polizeiausbildung für den gehobenen Dienst an der Hochschule stärken, mit Fokus auf reflektierte, demokratisch handelnde Beamtinnen und Beamte",
+      "zitat": "Stattdessen treten wir dafür ein, die Polizeiausbildung für den gehobenen Dienst an der HWR gegenüber der Polizeiakademie zu stärken. Die Ausbildung zu mündigen, reflektierten und demokratisch handelnden Beamt*innen muss im Zentrum stehen",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "46ee2fc2dcc8e0ad"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Ausbildung der Einsatzkräfte modernisieren und um politische und grundrechtsbezogene Bildung ergänzen",
+      "zitat": "Die Ausbildung der Einsatz- und Rettungskräfte soll modernisiert und um allgemeinpolitische und grundrechtsbezogene Bildung angereichert werden.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "6f69fb29d4995162"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "bund",
+      "beschreibung": "In der Aus- und Fortbildung der Polizei für Diversität sensibilisieren und eine gute Fehlerkultur entwickeln",
+      "zitat": "In der Aus- und Fortbildung wollen wir für Diversität sensibilisieren und eine gute Fehlerkultur entwickeln.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "bab8e70ced009a75"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Polizei auf Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausrichten, mit regelmäßigen Fortbildungen",
+      "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "3260e19397d53bfa"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Kriminalitätsbelastete Orte und Waffenverbotszonen mit ihren Sonderbefugnissen wie anlasslosen Kontrollen abschaffen",
+      "zitat": "Die sogenannten kriminalitätsbelasteten Orte und Waffenverbotszonen sind mit zusätzlichen polizeilichen Befugnissen wie Videoüberwachung oder anlasslosen Kontrollen verknüpft und somit ein Einfallstor für Racial Profiling und diskriminierendes Polizeihandeln. Sie wollen wir abschaffen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "f7f17d3e682b8b68"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Bodycams für alle eingesetzten Kräfte mit Pflicht zum Einschalten bei Einsätzen; Beamte können die Daten nicht selbst löschen",
+      "zitat": "Jedoch verpflichten wir Beamt*innen, die Kamera bei Einsätzen anzuschalten, statten alle eingesetzten Kräfte mit Kameras aus und stellen sicher, dass Einsatzbeamte die Daten nicht selbst löschen können.",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "35563264d7ac1cb1"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Community Policing in die Fläche bringen: mehr Kontaktbereichsbeamte als lokale Ansprechpersonen, Fahrradstreifen, mobile Wachen",
+      "zitat": "Wir wollen Ansätze des „Community Policing“ in die Fläche bringen, um das Vertrauen in die Sicherheitsbehörden zu erhöhen und das Sicherheitsgefühl zu stärken. Dazu zählen mehr Kontaktbereichsbeamt*innen als lokale Ansprechpersonen, die Ausweitung von Fahrradstreifen und Präsenz an hochfrequentierten Orten oder Hotspots, auch mit mobilen Wachen und Kiezläufer*innen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "d1417bd1a52ba00f"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Den Polizeibeauftragten des Landes zu einer Anlaufstelle für alle Menschen ausbauen.",
+      "zitat": "Den Polizeibeauftragten zu einer Anlaufstelle für „alle“ machen […]",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "493dbba62bc0b337"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Einstufung kriminalitätsbelasteter Orte regelmäßig parlamentarisch kontrollieren",
+      "zitat": "Deshalb unterziehen […] wir die Einstufung kriminalitätsbelasteter Orte einer regelmäßigen parlamentarischen Kontrolle.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "1f757455329b5e71"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Petitionsausschuss stärken und Doppelstrukturen mit dem Bürger- und Polizeibeauftragten abbauen.",
+      "zitat": "Die Arbeit des Petitionsausschusses werden wir stärken und Doppelstrukturen mit der Landesantidiskriminierungsstelle sowie dem Bürger- und Polizeibeauftragten abbauen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "f8640536eb9c4c12"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "bund",
+      "beschreibung": "Keine flächendeckende Überwachung im öffentlichen Raum; automatisierte Gesichtserkennung im öffentlichen Raum wird abgelehnt.",
+      "zitat": "Eine flächendeckende Überwachung im öffentlichen Raum darf es daher nicht geben. Den Einsatz von automatisierter Gesichtserkennung im öffentlichen Raum lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "466d4c55d055ddac"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Fehlerkultur und Qualitätssicherung bei der Polizei durch praxisnahe Fortbildung und klare Standards für die Nachbereitung von Einsätzen",
+      "zitat": "Professionelle Fehlerkultur und Qualitätssicherung durch praxisnahe Fortbildung und klare Standards für Einsatznachbereitung.",
+      "ursachen_ids": [
+        3402
+      ],
+      "ursachen_offen": [
+        3403
+      ],
+      "pruefsumme": "6cd0eb01bc835bae"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Verbindliche, regelmäßige Antidiskriminierungs-Fortbildungen auch für die Polizei, um diskriminierungssensibel zu handeln und Konflikte professionell zu bearbeiten",
+      "zitat": "Verbindliche Fortbildungen zum Thema Antidiskriminierung Mitarbeitende in Verwaltung, Bildungseinrichtungen und Polizei erhalten regelmäßige Schulungen, um diskriminierungssensibel zu handeln und Konflikte professionell zu bearbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "8efb4d0b6391851f"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Kontrollquittungen für Personen einführen, die von polizeilichen Maßnahmen betroffen sind.",
+      "zitat": "Wir wollen: […] Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "978aebc974fe8f82"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "bund",
+      "beschreibung": "Polizeibeauftragte und innerbehördliche Meldestellen abschaffen, ebenso die Beweislastumkehr im Disziplinarverfahren",
+      "zitat": "Wir fordern deshalb: […] Abschaffung aller politisch installierten Polizeibeauftragten, innerbehördlichen Denunzierungsstellen sowie der Beweislastumkehr […] im Disziplinarverfahren",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "fe51027e49785c8c"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Zusätzliche gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll gegen Drogenmissbrauch, in Innenräumen und im öffentlichen Raum",
+      "zitat": "Für eine saubere Stadt und die Bekämpfung von Drogenmissbrauch führen wir zusätzliche gemeinsame Kontrollen des Ordnungsamts mit der Polizei und den Zollbehörden ein. Solche Kontrollen werden sowohl in Innenräumen, etwa in der Schankwirtschaft, als auch im öffentlichen Raum durchgeführt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "d6bde6ba7821f762"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Die im Landespolizeigesetz (SOG) beschlossenen Dokumentationspflichten der Polizei sofort zurücknehmen.",
+      "zitat": "Wir treten unwahren Behauptungen und Unterstellungen wie z.B. pauschalen Rassismusvorwürfen in Richtung der Polizei öffentlich entgegen und werden die durch Rot-Rot beschlossenen Dokumentationspflichten im SOG in Regierungsverantwortung sofort zurücknehmen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "081da0fcfee592df"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Polizeibeauftragten als unabhängige Anlaufstelle für Beschwerden von Bürgern und für Polizeibeschäftigte stärken",
+      "zitat": "Wir werden: […] die Funktion des Polizeibeauftragten stärken: als unabhängige Anlaufstelle für Bürger bei Beschwerden sowie für Polizeibeschäftigte bei internen Konflikten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "735edd90d9023eaa"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Finanzielle Förderung von Vereinen beenden, die der Polizei Rassismus und gewalttätige Übergriffe unterstellen.",
+      "zitat": "Wir beenden die finanzielle Förderung von Vereinen, die der Polizei immer wieder pauschal und unbelegt Rassismus und gewalttätige Übergriffe unterstellen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "3f1169e1b0139c5b"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen und ausreichender Ausstattung schaffen",
+      "zitat": "Ihre Rechte werden gestärkt durch eine unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen und ausreichender Ausstattung, damit Beschwerden nicht zu den Akten gelegt werden.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "3ecead69784f3a01"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "bund",
+      "beschreibung": "Unabhängige Beschwerdestellen gegen Diskriminierung (auch durch Sicherheitsbehörden) ausbauen",
+      "zitat": "Deshalb setzt sich [Partei] für diese Zukunft ein: • Unabhängige Beschwerdestellen: Unabhängige Beschwerdestellen werden ausgebaut, um stärker gegen Diskriminierung vorzugehen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "5cb7b784a164297d"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Verdachtsunabhängige Kontrollen räumlich und im Anwendungsbereich auf das notwendige Minimum beschränken",
+      "zitat": "Verdachtsunabhängige Kontrollen wollen wir räumlich und in ihrem Anwendungsbereich auf das notwendige Minimum beschränken.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "a600668b96466509"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Interkulturelle Kompetenz der Polizei ausbauen, Sensibilisierung für Rassismus, Queerfeindlichkeit und geschlechtsspezifische Gewalt in Aus- und Fortbildung stärken",
+      "zitat": "Ihre interkulturelle Kompetenz bauen wir deshalb weiter aus und stärken die Sensibilisierung für Rassismus, Queerfeindlichkeit und geschlechtsspezifische Gewalt in der Aus- und Fortbildung.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "f08dbcda349c662f"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Polizei im Umgang mit Menschen in psychischen Ausnahmesituationen stärken",
+      "zitat": "Wir wollen stattdessen Fähigkeiten im Umgang mit Menschen in psychischen Ausnahmesituationen stärken. Das betrifft Aus- und Fortbildung der Polizeibeamt*innen, vor allem aber die Stärkung nicht-polizeilicher Ressourcen in der Krisenintervention […]",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "0b6eac1f15a50b16"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Rechtslage klarstellen, damit alle Bürgerinnen und Bürger Polizeieinsätze filmen dürfen",
+      "zitat": "Wir wollen eine Klarstellung der Rechtslage, sodass Polizeieinsätze von jedem*r Bürger*in gefilmt werden dürfen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "51779705170ad209"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Kooperation von Schulen mit der Polizei ausbauen und regelmäßige Blaulicht-Tage an Schulen einführen, auch um Distanz zu Vertretern des Staates abzubauen.",
+      "zitat": "Wir setzen uns dafür ein, die Kooperation von Schulen mit Polizei, Feuerwehr und Bundeswehr gezielt auszubauen und regelmäßige „Blaulicht-Tage“ an [Land] Schulen zu etablieren. Dies kann wertvolle Anstöße für die berufliche Orientierung geben, Distanz zu Vertretern des Staates abbauen […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "a905d909f2e1c539"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Polizei soll bei Demonstrationen schon im Vorfeld gegen vermummte und bewaffnete Personen vorgehen dürfen.",
+      "zitat": "Wir werden die Polizei zudem mit den notwendigen Befugnissen ausstatten, um Gewalt und Ausschreitungen bei Demonstrationen frühzeitig zu verhindern. Dazu gehört insbesondere die Möglichkeit, bereits im Vorfeld gegen vermummte und bewaffnete Demonstranten vorzugehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "d574b2d5d12c5d11"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Kurswechsel zu einer Deeskalationsstrategie der Polizei bei Versammlungen",
+      "zitat": "Während der [Person]-[Land] mit einem Kurs der Repression zu mehr Eskalation auf den Straßen beiträgt, stehen wir für einen Kurswechsel zu einer Deeskalationsstrategie ein.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "54a1e22a216f533b"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "bund",
+      "beschreibung": "Mit den Ländern eine Initiative starten, um Unterschiede im Polizei- und Versammlungsrecht zu harmonisieren",
+      "zitat": "Darüber hinaus werden wir mit den Ländern eine Initiative starten, um die föderalen Unterschiede im Bereich des Polizei- und Versammlungsrechts zu harmonisieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "600d85c771c8be5a"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Pseudonymisierte Kennzeichnungspflicht für alle Polizeikräfte bei Einsätzen einführen",
+      "zitat": "Wir werden: […] eine pseudonymisierte Kennzeichnungspflicht für alle Polizeibeamtinnen und -beamte bei Einsätzen einführen. So wird polizeiliches Handeln transparent, ohne die persönliche Sicherheit der Einsatzkräfte zu gefährden.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "04159fe6e73f800d"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Alle Waffenverbotszonen im Land abschaffen und damit die Möglichkeit anlassloser Personenkontrollen dort beenden",
+      "zitat": "Ebenso fordern wir die Abschaffung aller Waffenverbotszonen im Land und damit die Abschaffung der Möglichkeit der anlasslosen Personenkontrollen in diesen.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "29dfe77cf0b6b1b2"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Polizeiausbildung anheben: bessere Auswahlverfahren, kleinere Ausbildungsgruppen und verpflichtende Weiterbildungen",
+      "zitat": "Wir schaffen bessere Auswahlverfahren, kleinere Ausbildungsgruppen und verpflichtende Weiterbildungen und heben so das Niveau der Polizeiausbildung nachhaltig an.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "2674a8bd88064eb7"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "bund",
+      "beschreibung": "Anlasslose polizeiliche Kontrollbefugnisse abschaffen",
+      "zitat": "Es braucht zudem ein gesetzliches Verbot rassistischer Polizeikontrollen („Racial Profiling“) und die Abschaffung von anlasslosen polizeilichen Kontrollbefugnissen",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "4d2c1f38312812a2"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Polizeibeauftragte Stelle schaffen, die Beschwerden und Fehlverhalten niedrigschwellig mit umfassenden Rechten untersucht und jährlich dem Landtag berichtet",
+      "zitat": "Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "6903bf528c22f296"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Empfehlungen der [Land] Polizeistudie umsetzen und Supervision, Einsatznachbereitung und Resilienzstärkung ausbauen",
+      "zitat": "Wir werden überdies die Empfehlungen der [Land] Polizeistudie konsequent […] umsetzen und Angebote hinsichtlich Supervision, Einsatznachbereitungen und Resilienzstärkung ausbauen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "d08d7a6cb66903cb"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "bund",
+      "beschreibung": "Polizeibeauftragten des Bundes als Anlaufstelle für Polizeikräfte und Bürgerinnen und Bürger stärken und weiterentwickeln",
+      "zitat": "Mit dem Polizeibeauftragten des Bundes haben wir eine Anlaufstelle für Polizist*innen und Bürger*innen geschaffen, die wir stärken und weiterentwickeln wollen.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "3cc03693280ab76d"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "land",
+      "beschreibung": "Berichts- und Dokumentationspflichten der Polizei drastisch zurückfahren und überarbeiten.",
+      "zitat": "Polizeiarbeit darf nicht durch überbordende Bürokratie ausgebremst werden. Die Berichts- und Dokumentationspflichten werden wir daher drastisch zurückfahren und überarbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3403
+      ],
+      "pruefsumme": "9e59b9cc65701ee6"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtende Schulungen für Sicherheitskräfte, um unbewusste Diskriminierung zu erkennen und zu verhindern",
+      "zitat": "Verpflichtende Schulungen: Sicherheitskräfte werden geschult, um unbewusste Diskriminierung zu erkennen und zu verhindern.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "edee0d7f06ebf7de"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Klare, gut zugängliche Beschwerdewege bei der Polizei; Beschwerden nachvollziehbar dokumentieren und auswerten",
+      "zitat": "Eine moderne Polizei braucht klare und gut zugängliche Beschwerdewege, die von Bürger*innen ebenso genutzt werden können wie von Beamt*innen selbst. Beschwerden müssen nachvollziehbar dokumentiert und ausgewertet werden, um Strukturen zu verbessern.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "e80b82cefbbe66ca"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "land",
+      "beschreibung": "Bürgernahe Polizei nach skandinavischem Vorbild stärken: mehr Präsenz vor Ort, Fußstreifen in den Quartieren, direkter Dialog mit den Menschen",
+      "zitat": "Für ein sicheres [Land] wollen wir: […] eine „Bürger*innen-Polizei“ nach skandinavischem Vorbild stärken, mit mehr Präsenz vor Ort, etwa durch Beamt*innen zu Fuß in den Quartieren und im direkten Dialog mit den Menschen.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "9ce2fb1a69f5d91c"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "land",
+      "beschreibung": "Einsatzkräfte stärker in Deeskalation schulen; bestehende Deeskalationsstrategien bei Demonstrationen konsequent anwenden und auswerten",
+      "zitat": "Zugleich müssen Einsatzkräfte noch stärker darin geschult und dazu angehalten werden, deeskalierend zu wirken. Eine gewaltsame Polizei provoziert Gegengewalt. Existierende Deeskalationsstrategien bei Demonstrationen – völlig unabhängig von deren politischer Ausrichtung – sind konsequent anzuwenden und auszuwerten.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "57f8cbc1a476c5e6"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "bund",
+      "beschreibung": "Polizei, Verwaltung und Justiz werden durch unabhängige Kontrollstellen überwacht, die Fehlverhalten transparent aufarbeiten",
+      "zitat": "Einrichtung unabhängiger Kontrollstellen: Polizei, Verwaltung und Justiz werden durch unabhängige Kontrollstellen überwacht, die Fehlverhalten transparent aufarbeiten und institutionelle Verantwortung gewährleisten.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "133fc94b95c19959"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "bund",
+      "beschreibung": "Begegnungsräume zwischen Polizei, migrantischen Communities und Sozialarbeit schaffen, um Vorurteile abzubauen",
+      "zitat": "Förderung von Dialog und Begegnung: Begegnungsräume zwischen Polizei, migrantischen Communities und Fachkräften der Sozialarbeit fördern den Austausch, bauen Vorurteile ab und stärken das gegenseitige Verständnis.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "0000d9129da33c6c"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "land",
+      "beschreibung": "Vollständige Videoüberwachung in allen Brennpunktbereichen",
+      "zitat": "[Partei] fordert: […] Eine vollständige Videoüberwachung in allen Brennpunktbereichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "pruefsumme": "f66658062cefe212"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Ergebnisse der Bodycam-Studie umsetzen; Bodycam muss auf Verlangen oder bei unmittelbarem Zwang zur Beweissicherung eingeschaltet werden",
+      "zitat": "Die Ergebnisse der Bodycam-Studie wollen wir umsetzen und den Einsatz auf die Polizei beschränken. Die Bodycam dient dabei auch als bürgerrechtliches Instrument, das auf Verlangen oder bei unmittelbarem Zwang zur Beweissicherung angeschaltet werden muss.",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "b786072a44156cc9"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Ausbildung des mittleren Polizeivollzugsdienstes analysieren, Ausbildungsinhalte modernisieren und digital aufbereiten",
+      "zitat": "Wir werden die derzeitige Ausbildung insbesondere für den mittleren Polizeivollzugsdienst analysieren und Ausbildungsinhalte modernisieren und digital aufbereiten.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "69c0a2d9ee16a290"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Höheren Kontrolldruck in Innenstädten und an Kriminalitätsschwerpunkten sowie wirksamere Platzverweise und Aufenthaltsverbote",
+      "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+      "ursachen_ids": [
+        3401
+      ],
+      "pruefsumme": "c401fa2650465c35"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "land",
+      "beschreibung": "Zahl der Schießtrainings der Polizei verdoppeln.",
+      "zitat": "Um der geänderten Gefahrenlage gerecht zu werden, werden wir die Anzahl der Schießtrainings verdoppeln.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "2a62a6244c57e33e"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "land",
+      "beschreibung": "Fördermaßnahmen und Beförderungen von Polizeibeamten erst bei staatsanwaltschaftlichen Ermittlungen aussetzen, nicht schon bei Disziplinarverfahren",
+      "zitat": "Wir werden deshalb feststellen, dass erst staatsanwaltschaftliche Ermittlungen diesen Suspensiveffekt entfalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3403
+      ],
+      "pruefsumme": "baffd59fb977be43"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "land",
+      "beschreibung": "Im Polizeigesetz verpflichtenden Einsatz von Bodycams bei Androhung und Anwendung körperlicher Gewalt vorsehen",
+      "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] ein Polizeigesetz, das für intensive Grundrechtseingriffe hohe Hürden aufstellt, Vorkehrungen gegen Racial Profiling trifft, den verpflichtenden Einsatz von Bodycams bei der Androhung und Anwendung körperlicher Gewalt vorsieht […]",
+      "ursachen_ids": [
+        3403
+      ],
+      "ursachen_offen": [
+        3402
+      ],
+      "pruefsumme": "54d19b4c79410d92"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "land",
+      "beschreibung": "Routinemäßige Supervision ausbauen, in der Polizeikräfte das Einsatzgeschehen reflektieren",
+      "zitat": "Routinemäßige Supervision, bei der Beamt*innen das Einsatzgeschehen reflektieren können, bauen wir aus.",
+      "ursachen_ids": [
+        3402
+      ],
+      "pruefsumme": "0715428b81d347d2"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "bund",
+      "beschreibung": "Anonymisierte Kennzeichnungspflicht für die Bundespolizei einführen",
+      "zitat": "Zudem führen wir für die Bundespolizei eine anonymisierte Kennzeichnungspflicht ein.",
+      "ursachen_ids": [
+        3403
+      ],
+      "pruefsumme": "08929562e349d154"
+    }
+  ]
+}

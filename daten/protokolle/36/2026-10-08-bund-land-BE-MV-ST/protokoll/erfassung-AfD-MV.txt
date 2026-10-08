@@ -1,0 +1,35 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Ladenschlusszeiten und Bäderverkaufsverordnung liberalisieren, mehr verkaufsoffene Sonntage und mehr touristische Orte mit Sonderöffnung",
+      "ursachen_ids": [3604],
+      "zitat": "Wir stehen für eine Liberalisierung der Ladenschlusszeiten und der Bäderverkaufsverordnung, mehr verkaufsoffene Sonntage und eine Erweiterung der touristischen Orte in der Bäderverkaufsverordnung.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Bei öffentlichen Bauten, die Innenstädte prägen, künftig auf einen regionalen architektonischen Heimatstil achten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Die öffentliche Hand prägt mit Bauvorhaben maßgeblich Innenstädte und Infrastruktur. […] Bei öffentlichen Bauten soll in Zukunft auf einen architektonischen Heimatstil geachtet werden.",
+      "seite": 89
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3602, "seiten": [16, 55, 89, 90], "grund": "S. 16 und 55: Ansiedlung von Industrie bzw. Kostensenkung durch Grunderwerbsteuer, ohne Bezug zu Innenstadt oder Einzelhandel; S. 89 Umwandlung von Gewerbeflächen zu Wohnraum in Mischgebieten und S. 90 Leerstände als Wohnraum nutzbar machen betreffen Wohnraum (R2), nicht Sortiment oder Ansiedlung in Innenstädten." }
+  ]
+}
+
+Protokoll
+- Gelesen: Inhaltsverzeichnis S. 2–7; Fundstellen S. 13 (Wirtschaft und Förderung), S. 16, S. 55, S. 71 (Straßen, Mobilität im ländlichen Raum), S. 84; Kapitel „Starke Kommunen“ S. 56–57, „Sportstätten“ S. 72, „Heimatland MV“ S. 88–91 (Baurecht, Regionalität in der Architektur, Leerstand, historische Bausubstanz, Denkmale). Volltextsuche nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Handel, Parken, Städtebau.
+- Grenzfall: S. 89 Heimatstil bei öffentlichen Bauten – Einleitung nennt Innenstädte, Bezug zu Stadtbild/Gestaltung des öffentlichen Raums (3603) offen, daher ursachen_offen.
+- Nicht erfasst:
+  - S. 71: Instandhaltung von Straßen- und Schienennetz – allgemeine Verkehrsinfrastruktur, kein Innenstadtbezug (R2).
+  - S. 71: Gehwegausbau, „am Menschen orientierter Städtebau“, Radwege als kommunale Pflichtaufgabe – Kapitel „Mobilität im ländlichen Raum“, Wohnumfeld, kein Bezug zu Innenstadt oder Einzelhandel (R2); „Wir stehen für eine Rückkehr …“ zudem Leitbild.
+  - S. 84: Parkplätze als Fläche für Photovoltaik – Energiethema, nicht Erreichbarkeit.
+  - S. 56: Finanzmittel über kommunalen Finanzausgleich – kommunale Finanzen allgemein (R2).
+  - S. 91: Förderung der Sanierung historischer Gebäude in Städten und Dörfern, Denkmalpflege – nennt weder Innenstadt noch Ortskern (R2).
+  - S. 90: Leerstände durch Sanierungsförderung als Wohnraum nutzbar machen – Wohnraum (R2).
+- Richtungen ohne Maßnahme: Nutzungsmischung/Ansiedlung, Marktprofile, Aufenthaltsqualität/Verkehrsberuhigung, Sauberkeit/Sicherheit, Parken/Auto-Erreichbarkeit der Innenstadt, Nahmobilität/ÖPNV zur Innenstadt.
+- Seite ohne Text: S. 1 (Titelseite), ohne Bedeutung.

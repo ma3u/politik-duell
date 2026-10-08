@@ -1,0 +1,45 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Kommunen beim Abbau von Leerstand unterstützen und Zwischennutzungen ermöglichen, etwa durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte",
+      "ursachen_ids": [3602],
+      "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+      "seite": 93
+    },
+    {
+      "beschreibung": "Ortskerne durch Handel und Dienstleistungen stärken statt neue Flächen auf der grünen Wiese zu versiegeln",
+      "ursachen_ids": [3602],
+      "zitat": "Lebendige Ortskerne sollen durch Handel und Dienstleistungen gestärkt werden, statt neue Flächen auf der grünen Wiese zu versiegeln.",
+      "seite": 93
+    },
+    {
+      "beschreibung": "Kommunen erhalten abgestufte Instrumente gegen langfristigen Leerstand: Nutzungs- oder Sanierungsfristen, höhere Abgaben, verpflichtende Zwischennutzung; Übernahme als letztes Mittel",
+      "ursachen_ids": [3602],
+      "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpflichtende Zwischennutzung.",
+      "seite": 98
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3603, "seiten": [9, 88, 93, 94], "grund": "S. 93: 'Innenstädte und Ortskerne sollten neu gedacht werden, um die Aufenthaltsqualität zu steigern' ist ein allgemeines Ziel ('sollten'); Förderung von Begrünungskonzepten und Hitzeschutz (S. 93), Dach- und Fassadenbegrünung (S. 93), essbare Städte (S. 94) nennen weder Innenstadt noch Ortskern (R2). S. 9 und 88: Entsiegelung bzw. allgemeines Leitbild." },
+    { "ursache": 3604, "seiten": [30, 31, 71, 93, 94], "grund": "Parkraumbewirtschaftung (S. 31), Fußverkehr (S. 30), autoarme Quartiere (S. 93), 15-Minuten-Stadt und Nahmobilität (S. 94) ohne Bezug zu Innenstadt, Ortskern oder Einzelhandel (R2); Sonntagsöffnung S. 71 betrifft Bibliotheken." }
+  ]
+}
+
+Protokoll
+=========
+Gelesen: Inhaltsverzeichnis S. 3-4; Kapitel 5.3 "Wohnen, Bauen, Stadt- und Landesentwicklung" (S. 91-94) vollständig; Kapitel 5.6 Kommunen (S. 97-98); Kapitel 2.2 Kommunen/Dorfzentren (S. 38-39); Mobilität S. 30-31; Wirtschaft S. 89; Fundstellen S. 9, 21, 30, 31, 71, 78, 81, 88, 93, 94, 98. Zusätzlich Volltextsuche nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Laden, grüne Wiese.
+
+Nicht erfasst:
+- S. 93: "Innenstädte und Ortskerne sollten neu gedacht werden, um die Aufenthaltsqualität zu steigern und neue Begegnungsräume zu schaffen." – allgemeines Ziel mit "sollten".
+- S. 93: Förderung von Solaranlagen, Begrünungskonzepten, Parkflächen, Hitzeschutz; autoarme Quartiere/autofreie Zonen – ohne Innenstadt-/Ortskernbezug im Zitat (R2).
+- S. 94: 15-Minuten-Stadt mit guter Nahversorgung, Nahmobilität, essbare Städte – ohne Innenstadt-/Einzelhandelsbezug (R2).
+- S. 39 und S. 89: moderne Dorfzentren mit Dorfladen – Nahversorgung im ländlichen Raum, kein Ortskern/Einzelhandel/Leerstand im Zitat (R2).
+- S. 31: digitale Parkraumbewirtschaftung, Parkgebühren – allgemeine Verkehrspolitik ohne Innenstadtbezug (R2, Autofahren).
+- S. 98: kommunales Vorkaufsrecht – Bodenpolitik/Wohnraum, nicht Innenstadt.
+- S. 9 (Entsiegelung), S. 21 (Wiederansiedlung von Arten), S. 71 (Sonntagsöffnung Bibliotheken; Einzelhandel nur als Lagebeschreibung zu Festivals), S. 78 (Migrationszentren), S. 81 (Ansiedlung Fachärzte), S. 88 (Leitbild Begrünung) – anderer Zusammenhang.
+
+Abgrenzung: S. 93 (Unterstützung beim Leerstandsabbau, Zwischennutzung ermöglichen) und S. 98 (ordnungsrechtliche Instrumente: Fristen, Abgaben, Pflicht zur Zwischennutzung) als verschiedene Instrumente getrennt erfasst. Keine Bündel im Auftrag.
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb; Aufenthaltsqualität; Sauberkeit/Sicherheit; Erreichbarkeit Auto; Nahmobilität; Öffnungszeiten.
+Seiten ohne Text: 1, 5, 100 sind Titel-/Rückseiten, ohne Bedeutung.

@@ -1,0 +1,69 @@
+```json
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Pauschalen für Sportvereine verdoppeln, an die Kostenentwicklung koppeln und im Sportfördergesetz festschreiben",
+      "ursachen_ids": [3703],
+      "zitat": "Vereine sind das Rückgrat des Sports. Die Vereinspauschalen werden verdoppelt und dynamisiert und im Sportfördergesetz festgeschrieben.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Sportvereine bei der Digitalisierung ihrer Arbeit unterstützen",
+      "ursachen_ids": [3703],
+      "zitat": "Vereine werden bei der Digitalisierung ihrer Arbeit unterstützt.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Pauschalförderung für Kreis- und Stadtsportbünde sowie Landesfachverbände erhöhen und dynamisieren, Landessportbund auskömmlich finanzieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Die Pauschalförderung für Kreis- und Stadtsportbünde sowie Landesfachverbände wird erhöht und dynamisiert. Der Landessportbund wird auskömmlich finanziert.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Landesinvestitionsprogramm für Schwimmhallen und Schwimmbäder auflegen",
+      "ursachen_ids": [3701],
+      "zitat": "Ein Investitionsprogramm für Schwimmhallen und Schwimmbäder wird aufgelegt.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Sportstätten erhalten und modernisieren; Kommunen bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützen",
+      "ursachen_ids": [3701],
+      "zitat": "Sportstätten werden erhalten und modernisiert. Kommunen werden unter anderem bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützt.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Bürokratische Hürden für ehrenamtlich getragene Vereine und Initiativen gezielt abbauen (allgemein, nicht nur Sport)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Wir bauen bürokratische Hürden für ehrenamtlich getragene Vereine und Initiativen gezielt ab.",
+      "seite": 34
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [37, 40], "grund": "Keine Zusage zu Betriebs-, Energie- oder Nutzungskosten von Sportstätten; Treffer S. 37 ('Eigenverantwortung') betrifft Kulturförderung." }
+  ]
+}
+```
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis/Einleitung S. 1–6 (Überblick), Kapitel „Kultur, Religion und Sport stiften Zusammenhalt“ S. 37–41 mit Abschnitt „Sportland Sachsen-Anhalt“ (S. 40) und „E-Sport“ (S. 41); Fundstellen S. 18, 37, 40; zusätzlich Engagement/Ehrenamt S. 34, Feuerwehr S. 29/51.
+
+Grenzfälle:
+- S. 40 Pauschalförderung für Kreis-/Stadtsportbünde, Landesfachverbände und Landessportbund: Förderung der Sportorganisationen, nicht der Vereine selbst (R1) – daher 3703 offen.
+- S. 34 Abbau bürokratischer Hürden für ehrenamtlich getragene Vereine: allgemeine Engagementpolitik (Kapitel Einsamkeit/Engagement), nicht sportspezifisch – daher 3703 offen.
+
+Nicht erfasst:
+- S. 18: Beschattung und Kühlung von Sporthallen im Rahmen des Landesschulbauprogramms – Schulgebäude (R2).
+- S. 40: Olympiastützpunkt, Bundesstützpunkte, Leistungszentren, Sportinternate, Landessportschule Osterburg, Leistungssportschwimmhalle Magdeburg, Eliteschulen des Sports, duale Karrieren – Spitzensport (R2).
+- S. 40: „In Halle wird ein Haus des Sportes gebaut.“ – Verbands-/Verwaltungsbau ohne erkennbaren Bezug zu Vereinssportstätten.
+- S. 40 und S. 34: Ehrenamtsgesetz „wird angestrebt“ – Absicht/Ziel, keine konkrete Handlungszusage.
+- S. 40: Inklusionsberater:innen im Sport („soll … verankert werden“), Landesaktionsplan Inklusiver Sport – Inklusion, setzt nicht an Finanzierung von Vereinen oder Sportstätten an.
+- S. 41: E-Sport-Förderleitlinie, Gleichstellung von E-Sport – keine Vereinsfinanzierung im Sinne der Ursachen (Leitlinie erst zu erarbeiten).
+- S. 29/51: Feuerwehrsport und Wettkämpfe stärker unterstützen – Feuerwehrwesen, nicht Sportvereine.
+- S. 34: Engagementfonds, Freiwilligenagenturen – allgemeine Engagementförderung ohne Bezug zu Sportvereinen.
+
+Richtungen ohne Maßnahme: 3701 „Bestand priorisieren und gemeinsam nutzen“; 3702 beide Richtungen; 3703 „Eigeneinnahmen und Kooperation der Vereine“.

@@ -1,0 +1,60 @@
+{
+  "partei_id": 18,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Polizeiausbildung anheben: bessere Auswahlverfahren, kleinere Ausbildungsgruppen und verpflichtende Weiterbildungen",
+      "ursachen_ids": [3402],
+      "zitat": "Wir schaffen bessere Auswahlverfahren, kleinere Ausbildungsgruppen und verpflichtende Weiterbildungen und heben so das Niveau der Polizeiausbildung nachhaltig an.",
+      "seite": 77
+    },
+    {
+      "beschreibung": "Pflichtschulungen der Polizei zu Rassismus und Diskriminierung sowie Training im Umgang mit vulnerablen Gruppen, um Konflikteskalationen zu vermeiden",
+      "ursachen_ids": [3402],
+      "zitat": "Wir verpflichten Polizist*innen zu regelmäßigen Schulungen über Rechtsextremismus, Sexismus, Rassismus und Diskriminierung. Wir trainieren Polizist*innen im Umgang mit besonders vulnerablen Gruppen, wie Personen mit psychischen Erkrankungen oder Sprachbarrieren.",
+      "seite": 77
+    },
+    {
+      "beschreibung": "Gemeinsame mobile Street-Triage-Teams aus Polizei und Krisendienst, geschult in Deeskalation, für Einsätze bei Menschen in psychischen Krisen",
+      "ursachen_ids": [3402],
+      "zitat": "Wir bauen die bestehende Kooperation zwischen Polizei und dem Berliner Krisendienst zu interdisziplinären mobilen Street-Triage-Teams aus. Dadurch vermitteln wir Menschen in psychischen Krisen frühzeitig in das Gesundheitssystem, reduzieren Zwangsunterbringungen und verbessern die Qualität von Polizeieinsätzen bei vulnerablen Gruppen.",
+      "seite": 83
+    },
+    {
+      "beschreibung": "Bürger- und Polizeibeauftragten als anonyme Meldestelle stärken: Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen",
+      "ursachen_ids": [3403],
+      "zitat": "Wir stärken den „Bürger- und Polizeibeauftragten des Landes Berlin” als anonyme Meldestelle, indem er Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen erhält.",
+      "seite": 77
+    },
+    {
+      "beschreibung": "Bodycams für alle eingesetzten Kräfte mit Pflicht zum Einschalten bei Einsätzen; Beamte können die Daten nicht selbst löschen",
+      "ursachen_ids": [3403],
+      "ursachen_offen": [3402],
+      "zitat": "Jedoch verpflichten wir Beamt*innen, die Kamera bei Einsätzen anzuschalten, statten alle eingesetzten Kräfte mit Kameras aus und stellen sicher, dass Einsatzbeamte die Daten nicht selbst löschen können.",
+      "seite": 78
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3401,
+      "seiten": [74, 76, 77, 78],
+      "grund": "Keine Regel zu Kontrollbefugnissen, anlasslosen Kontrollen oder Kontrollbescheinigung. Die Studie zu Racial Profiling und Personenkontrollen (S. 78) ist ein Untersuchungsauftrag mit erst später abzuleitenden Maßnahmen und gehört nach R2 zu Diskriminierung im Alltag."
+    }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 4–7), Kapitelvorspann „Berlin schützt“ (S. 73), Kapitel „Berlin schützt: mit Prävention, moderner Polizei und Krisenvorsorge“ (S. 74–79), Fundstelle S. 83–84 (Street Triage), Kapitelanfang Kinder und Jugendliche (S. 36–37, nichts zur Polizei), Fundstellen S. 105 und S. 107 (Beschwerdemanagement in Geflüchtetenunterkünften – anderer Zusammenhang).
+
+Nicht erfasst:
+- S. 74: Zusammenarbeit von Schulen, Streetwork, Jugendhilfe mit Polizei zur Kriminalitätsprävention – Prävention, kein Ansatz am Umgang der Polizei.
+- S. 76: Personal der Polizei, Streifendichte, Aufgabenverteilung mit Ordnungsdiensten – nach R2 Sicherheit.
+- S. 77: KI bei Einsatzberichten mit Datenschutzregeln – Effizienz der Strafverfolgung, kein Bezug zu den Ursachen.
+- S. 78: Studie zu Racial Profiling und Personenkontrollen – Untersuchungsauftrag, nach R2 Diskriminierung im Alltag.
+- S. 78: „Wir stehen dem Einsatz von Bodycams positiv gegenüber“ – Haltung; erfasst wurde der folgende Satz mit den Zusagen.
+- S. 84: Best Practice Street Triage (Großbritannien) – Beispiel, keine Zusage.
+- S. 105, 107: unabhängiges Beschwerdemanagement für Geflüchtetenunterkünfte – anderer Zusammenhang.
+
+Grenzfall: Bodycams (Dokumentation von Einsätzen, R1 → 3403); das Programm begründet sie auch mit Deeskalation, daher 3402 offen.
+Richtungen ohne Maßnahme: „Gezielte Kontrollen für Sicherheit ermöglichen“ (3401), „Handlungsfähigkeit und Rückhalt der Polizei“ (3402).
+Seiten ohne Text (1, 8, 23, 42, 55, 72, 89, 100) liegen außerhalb des Polizei-Kapitels (Titel- und Trennseiten).

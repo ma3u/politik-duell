@@ -1,0 +1,42 @@
+{
+  "partei_id": 18,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Leerstehende Gewerbegebäude unbürokratisch zu Wohnraum umwandeln; aktives Leerstandsmanagement",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Umwandlung von Leerstand: Leerstehende Gewerbegebäude werden unbürokratisch zu Wohnraum umgewandelt. Aktives Leerstandsmanagement sowie Anreize und Baugebote bringen leerstehende Wohnungen auf den Markt.",
+      "seite": 94
+    },
+    {
+      "beschreibung": "Fonds, mit dem Kommunen Leerstand für kulturelle Projekte zurückkaufen können",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Kommunen erhalten durch einen Fonds die Möglichkeit zum Rückkauf von Leerstand für kulturelle Projekte.",
+      "seite": 158
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3601, "seiten": [58, 74], "grund": "Nichts zu Wettbewerb zwischen Online- und stationärem Handel oder Digitalisierung des lokalen Handels; S. 58 (Binnenmarkt, DMA/DSA) und S. 74 (Smarte Städte) ohne Bezug zu Einzelhandel oder Innenstadt." },
+    { "ursache": 3603, "seiten": [76, 129], "grund": "Begrünung nur als Klimaanpassung bzw. Hitzeschutz (Gebäudebegrünung, Schwammstadt, innerstädtische Temperaturen senken), ohne Bezug zu Innenstadt, Einzelhandel oder Leerstand (R2)." },
+    { "ursache": 3604, "seiten": [69, 70], "grund": "Mobilität in der Stadt (ÖPNV, Radwege, 15-Minuten-Stadt, Tempo 30) ohne Bezug zu Innenstadt oder Einzelhandel (R2); nichts zu Öffnungszeiten." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis S. 2–4; S. 15 (Föderalismusreform und starke Kommunen); S. 54 (Unternehmenssteuern, Regionale Wirtschaftsförderung); S. 58 (EU-Binnenmarkt); S. 69–70 (Mobilität in der Stadt / im ländlichen Raum); S. 74 (Smarte Städte); S. 76 (Klimaanpassung); S. 94 (Aktiver Wohnungsmarkt); S. 129 (Prävention im Zeitalter der Klimakrise); S. 157–158 (Kultur für alle). Zusätzliche Volltextsuche nach Innenstadt, Ortskern, Einzelhandel, Leerstand, Händler, Handel, Fußgängerzone, Stadtentwicklung, öffentlicher Raum, Online-Handel: keine weiteren Treffer mit Bezug zum Thema.
+
+Grenzfälle (ursachen_offen 3602):
+- S. 94: Umwandlung leerstehender Gewerbegebäude zu Wohnraum – nennt Leerstand (R2), Ziel ist aber Wohnraum; ob das als Nutzungsmischung gegen Leerstand in Zentren (3602) oder nur zu Miete zählt, lässt der Leitfaden offen.
+- S. 158: Fonds für Kommunen zum Rückkauf von Leerstand für kulturelle Projekte – nennt Leerstand (R2), steht aber im Zusammenhang „Zugang zu Kultur“ (ländlicher Raum); Nutzungsmischung möglich, Bezug zu Innenstadt/Einzelhandel nicht ausdrücklich.
+
+Nicht erfasst:
+- S. 54: „Regionale Wirtschaftsförderung … Konzepte zur Ansiedlung von Menschen und Gewerbe“ in strukturschwachen Regionen – gehört nach R2 zu Abwanderung aus strukturschwachen Regionen, nennt weder Innenstadt noch Einzelhandel noch Leerstand.
+- S. 15: Ersatz der Gewerbesteuer, Kommunalfinanzen – kommunale Finanzen allgemein (R2).
+- S. 69: 15-Minuten-Stadt, ÖPNV, Radwege, Tempo 30 innerorts – ohne Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 76, 129: Gebäudebegrünung, Schwammstadt, Förderung von Projekten zur Senkung innerstädtischer Temperaturen – Klimaanpassung/Hitzeschutz, nicht Aufenthaltsqualität in Innenstädten.
+
+Richtungen ohne Maßnahme: alle Richtungen zu 3601, 3603, 3604; „Marktprofile und Wettbewerb“ (3602).
+Seiten ohne Text: keine im passenden Kapitel (S. 75 ist Trennseite vor „Planeten schützen“, S. 156 Trennseite vor Kultur).

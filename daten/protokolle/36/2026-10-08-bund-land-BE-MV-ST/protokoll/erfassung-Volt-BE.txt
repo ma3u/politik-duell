@@ -1,0 +1,85 @@
+{
+  "partei_id": 18,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Leerstehende Immobilien und alte Fabrikhallen in jedem Bezirk zu lokalen Gründer- und Nachbarschaftszentren (KiezLabs) umbauen, um Nebenstraßen und den stationären Einzelhandel zu beleben",
+      "ursachen_ids": [3602],
+      "zitat": "Wir verwandeln leerstehende Immobilien und alte Fabrikhallen in KiezLabs – lokale Innovations- und Gründerzentren in jedem Berliner Bezirk. […] So schaffen wir Arbeitsplätze vor Ort, binden Gründer*innen an ihren Kiez und beleben die Nebenstraßen zum Vorteil des gesamten stationären Einzelhandels.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Alle leerstehenden Gewerbeflächen digital kartieren, damit Bezirke, Eigentümer und mögliche Nutzer wissen, was wo verfügbar ist",
+      "ursachen_ids": [3602],
+      "zitat": "Wir kartieren alle leerstehenden Gewerbeflächen digital, damit Bezirke, Eigentümer*innen und potentielle Nutzer*innen wissen, was wo verfügbar ist.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Gegen Leerstand Nutzungsänderungen vereinfachen und Auflagen für Zwischennutzungen (Atelier, Sportstudio, Repair-Café) deutlich senken",
+      "ursachen_ids": [3602],
+      "zitat": "Jetzt Leerstand bekämpfen […] Wir erteilen Baugenehmigungen schneller und vereinfachen Nutzungsänderungen – etwa von Gewerbe zu Kultur. Für temporäre Nutzungen braucht es deutlich weniger Auflagen, damit Flächen unkompliziert als Atelier, Sportstudio oder Repair-Café zwischengenutzt werden können.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Vergünstigte Nachfolgekredite über die Landesförderbank, damit Betriebsübernahmen etwa im Einzelhandel nicht an fehlenden Sicherheiten scheitern",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Wenn diese Betriebe schließen, verschwinden Arbeitsplätze, Ausbildungsplätze und Nahversorgung […]. Wir ermöglichen vergünstigte Nachfolgekredite über die IBB, damit Übernahmen nicht an fehlenden Sicherheiten scheitern.",
+      "seite": 62
+    },
+    {
+      "beschreibung": "Genehmigungsverfahren bei Betriebsübernahmen vereinfachen, damit Betriebe etwa im Einzelhandel nicht schließen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "[…] Nahversorgung, gerade in Gastronomie, Einzelhandel und Handwerk. Wir vereinfachen Genehmigungsverfahren bei Betriebsübernahmen […], damit Nachfolger*innen nicht am ersten Tag mit Auflagen für bauliche Veränderungen konfrontiert werden.",
+      "seite": 62
+    },
+    {
+      "beschreibung": "Parkplatzflächen schrittweise zurückbauen zugunsten breiter Gehwege, Radspuren, Grünflächen und Außengastronomie (Flaniermeilen für das lokale Gewerbe)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603, 3604],
+      "zitat": "Wir bauen Parkplatzflächen schrittweise zurück, um Platz für breite Gehwege, sichere Radspuren, Grünflächen und Außengastronomie zu gewinnen. Diese Umwandlung in […] Flaniermeilen belebt das lokale Gewerbe, da Menschen dort einkaufen, wo sie gerne verweilen.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Auf Bundesebene Tempo 30 als Regelgeschwindigkeit in Innenstädten anstreben, auch um die Aufenthaltsqualität zu erhöhen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Gleichzeitig arbeiten wir auf Bundesebene daran, Tempo-30 als Regelgeschwindigkeit in Innenstädten festzuschreiben, um Unfälle zu vermeiden und die Aufenthaltsqualität zu erhöhen.",
+      "seite": 33
+    },
+    {
+      "beschreibung": "Park-and-Ride-Standorte an Stadtgrenzen und in Außenbezirken, die die Innenstadt vom Verkehr entlasten und den Umstieg auf Bus und Bahn erleichtern",
+      "ursachen_ids": [],
+      "ursachen_offen": [3604],
+      "zitat": "Park&Ride-Standorte an den Stadtgrenzen und in den Außenbezirken entlasten die Innenstadt vom Verkehr und ermöglichen einen unkomplizierten Umstieg auf das gemeinsame Mobilitätsnetz.",
+      "seite": 31
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "leerstehende Gewerbeflächen", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "Flaniermeile", "ursache": 3603, "richtung": "Aufenthaltsqualität und Verkehrsberuhigung" }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 2–6; Kapitel „Mobilität“ S. 30–34 (Fundstellen S. 31, 33), „Gemeinsam gestaltete Kieze“ S. 35–36, „Sauberkeit, Ordnung und Verantwortung“ S. 38–41, „Wohnungsbau“ S. 24–26 (Umnutzung), „Wirtschaftlich starke Kieze“ S. 61–62 (Fundstelle S. 62), Kultur S. 110, Tourismus S. 107–108; Fundstellen S. 45, 78, 80, 84, 86, 91, 95, 97, 104 geprüft.
+
+Grenzfälle (ursachen_offen):
+- Betriebsnachfolge (S. 62): Zitat nennt Einzelhandel; ob Sicherung von Nachfolgen (gegen Schließungen) zu 3602 (Sortiment, Ansiedlung) gehört, lässt R1 offen.
+- Parkplatzrückbau/Flaniermeilen (S. 35): Kapitel über Kieze, Zitat nennt „lokale Gewerbe“ und „einkaufen“, aber nicht wörtlich Innenstadt/Einzelhandel/Leerstand (R2); inhaltlich 3603 (Aufenthaltsqualität) und 3604 (Straßenraum, Parken, Fuß/Rad).
+- Tempo 30 in Innenstädten (S. 33): nennt Innenstädte und Aufenthaltsqualität, Ziel vor allem Verkehrssicherheit, Instrument auf Bundesebene.
+- Park&Ride (S. 31): nennt Innenstadt, aber allgemeine Verkehrsentlastung ohne Bezug zum Einkaufen.
+
+Nicht erfasst:
+- S. 38–40 Sauberkeit (mehr Mülleimer, höhere Leerungsfrequenz, Recycling-Punkte, Verfolgung illegaler Müllentsorgung): stadtweit, Zitate nennen weder Innenstadt noch Einzelhandel (R2).
+- S. 107/108 Sauberkeitsstandards für touristische Hotspots; S. 108 touristische Angebote außerhalb des S-Bahn-Rings „um die Innenstadt zu entlasten“: Tourismus, nicht Innenstadt-Handel (R2).
+- S. 31 City-Maut innerhalb des S-Bahn-Rings, Parkraumbepreisung, Anwohnerparkausweise: Zitat nennt keine Innenstadt/Einzelhandel (R2 → Autofahren).
+- S. 25 Umwandlung leerstehender Gewerbeflächen in Wohnraum: Wohnen (R2 → Miete).
+- S. 35 Einleitung „stärken den lokalen Handel“ (Entsiegelung, Begrünung): Leitbild ohne eigene Handlung; Kiezbeiräte, Kiezbudgets, Reallabore (S. 35) und Wohnstraßen/altersfreundliche Kieze (S. 36): ohne Innenstadt/Einzelhandel-Bezug (R2).
+- S. 61 Nachfolgezentrale als One-Stop-Shop: Zitat ohne Einzelhandel/Leerstand (R2); „prüfen einen befristeten Bestandsschutz“ (S. 62): Prüfauftrag.
+- S. 62 Best Practice Rathenow (Leerstand in der Innenstadt): Beispiel, keine eigene Zusage.
+- S. 110 „Wir öffnen leerstehende Gewerbeflächen unbürokratisch für kulturelle Nutzung“ mit digitaler Plattform: gleichartig mit Kartierung und Nutzungsänderung S. 61, dort erfasst.
+- S. 45, 80, 84, 86 Öffnungszeiten von Kitas, Gesundheitszentren, Konsumräumen, Sportstätten; S. 91 PV auf Parkplätzen; S. 78 Beleuchtung/Begrünung für Sicherheit; S. 95, 97 Begrünung als Hitzeschutz; S. 104 Unternehmensansiedlung Berlin–Paris: anderer Zusammenhang.
+
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb (3602); Sauberkeit, Sicherheit und Instandhaltung (3603); Öffnungszeiten (3604).

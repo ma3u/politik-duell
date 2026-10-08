@@ -1,0 +1,43 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Kredite zu Sonderkonditionen für die Sanierung der Altbausubstanz in historischen Innenstadtbereichen ermöglichen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "In Sachsen-Anhalt verfügen viele Städte über eine gute Altbausubstanz, vor allem in den historischen Innenstadtbereichen. […] Eine AfD-geführte Landesregierung wird die Kreditvergabe zu Sonderkonditionen für die Sanierung dieser Altbausubstanz […]",
+      "seite": 58
+    },
+    {
+      "beschreibung": "Ortsumfahrungen schneller realisieren, um die Ortskerne vom Durchgangsverkehr zu entlasten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Aber auch Ortsumfahrungen müssen schneller realisiert werden, um die Ortskerne zu entlasten.",
+      "seite": 198
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3602, "seiten": [42, 143, 145, 192, 193, 206], "grund": "Ansiedlung betrifft Rückkehrer, Großkonzerne und Rechenzentren; Dorfläden und Nahversorgung im ländlichen Raum (S. 192, 193) ohne Nennung von Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2); Verpackungssteuerverbot setzt nicht an Sortiment oder Ansiedlung an." },
+    { "ursache": 3604, "seiten": [198, 199, 202], "grund": "Parkplätze nur als Behindertenparkplätze ohne Innenstadtbezug; Straßenbau und Baustellen ohne Bezug zur Erreichbarkeit von Innenstadt oder Einzelhandel; keine Aussage zu Öffnungszeiten." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 249–256); Kapitel III Nr. 5 „Altbaubestand retten!“ (S. 58–59); II Nr. 12 (S. 33–34); VI Nr. 20 Bürgerwacht (S. 112–113); IX Wirtschaft Nr. 1, 4 (S. 143, 145); XI Nr. 19 (S. 185); XII Ländlicher Raum und Kommunales (S. 189–193); XIII Verkehr und Infrastruktur (S. 196–206).
+
+Grenzfälle (ursachen_offen 3603):
+- S. 58: Sanierungskredite für Altbauten in historischen Innenstadtbereichen – Gebäude/Stadtbild, nicht öffentlicher Raum im engeren Sinn; Wohnraumbezug (R2 Miete) möglich.
+- S. 198: Ortsumfahrungen zur Entlastung der Ortskerne – Verkehrsberuhigung des Ortskerns als Begründung einer Straßenbaumaßnahme; Formulierung „müssen“ im Abschnitt mit „Wir werden … beschleunigen“.
+
+Nicht erfasst:
+- S. 112–113: freiwillige Bürgerwacht für „Sicherheit, Sauberkeit und Ordnung“ – Zitat nennt weder Innenstadt noch Ortskern (R2).
+- S. 33: Asylunterkünfte nicht in Innenstadtlagen – anderer Zusammenhang (Unterbringung).
+- S. 34, 185, 196: „Instandhaltung“ von Unterkünften, Tierheimen, Straßeninfrastruktur – anderer Zusammenhang.
+- S. 145: Verbot der kommunalen Verpackungssteuer (Einzelhandel nur in der Begründung) – setzt an keiner der Ursachen 3602–3604 an.
+- S. 192/193: Sonderprogramme für Nahversorgung und Dorfläden, Dorfläden fördern – ohne Nennung von Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2: ländlicher Raum).
+- S. 191: Rückbau von Wohnungsleerständen – Wohnungen (R2 Miete), nicht Geschäftsleerstand.
+- S. 205: „Innenstadtsanierungsgewinnbeteiligung nach Naturkatastrophen“ – Zusammenhang Hochwasserschutz.
+- S. 202: Behindertenparkplätze, Lastenräder – ohne Innenstadtbezug.
+
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb; Nahmobilität und öffentlicher Verkehr zur Innenstadt; Öffnungszeiten; Erreichbarkeit mit dem Auto und Parkplätze.

@@ -1,0 +1,30 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Empfehlungen des Berliner Zentrengipfels umsetzen, um Einkaufsstraßen attraktiver zu machen, und lokale Selbstorganisation stärken", "ursachen_ids": [3602], "zitat": "Stationärer Einzelhandel, vielfältige Gastronomie- und Kulturangebote beleben Kieze und schaffen Begegnung – zwischen Berliner*innen und Gästen aus aller Welt. Um Einkaufsstraßen attraktiver zu machen, setzen wir die Empfehlungen des Berliner Zentrengipfels konsequent um und stärken lokale Selbstorganisation.", "seite": 13 },
+    { "beschreibung": "Standortgemeinschaften (BIDs) in allen Bezirken ermöglichen und Bezirke beim Aufbau von Managementteams für überregional bedeutende Standorte unterstützen", "ursachen_ids": [3602], "zitat": "Berliner Einzelhandel – eine Berliner Besonderheit […] In allen 12 Bezirken ermöglichen wir die Gründung von Standortgemeinschaften (BIDs) und lebendigen Bündnissen aus Gastronomie, Gewerbe, Kultur, Anwohner*innen und Eigentümer*innen. Zu diesem Zweck unterstützen wir die Bezirke darin, Managementteams für die überregional bedeutenden Standorte einzurichten.", "seite": 13 },
+    { "beschreibung": "Leerstehende Shoppingcenter und Ladenzeilen mit Jugend-, Kultur-, Sport- und sozialen Angeboten neu beleben, Zwischennutzungen fördern und Genehmigungen vereinfachen", "ursachen_ids": [3602], "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.", "seite": 19 },
+    { "beschreibung": "Mehr Ladezonen und Kurzzeitparkplätze in Geschäftsstraßen einrichten", "ursachen_ids": [], "ursachen_offen": [3604], "zitat": "In Geschäftsstraßen richten wir mehr Ladezonen und Kurzzeitparkplätze ein", "seite": 27 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3603, "seiten": [19, 21, 22, 23, 24, 25, 26, 55], "grund": "Gestaltung von Plätzen, Stadtgrün, Sauberkeit (BSR, Sperrmüll) und Verkehrsberuhigung ohne Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2); Instandhaltung betrifft Wohnungen, Fußwege und Sportvereine; Aufenthaltsqualität betrifft das Tempelhofer Feld." },
+    { "ursache": 3604, "seiten": [24, 25, 26, 33, 51, 63], "grund": "Außer den Kurzzeitparkplätzen in Geschäftsstraßen (S. 27) nur Parkraumbewirtschaftung, Kiezparkhäuser, Park-and-Ride, Fußwege und Öffnungszeiten von Recyclinghöfen, Notdienstpraxen und Drogenkonsumräumen – ohne Bezug zu Innenstadt oder Einzelhandel (R2)." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 4–5; Kapitel „Wirtschaftsförderung vor Ort“ (S. 12–13, inkl. „Berliner Einzelhandel – eine Berliner Besonderheit“ und „Lebendige Kieze mit bezahlbaren Gewerbeflächen“), S. 14, „Mehr Wohnungen“/„Regulierungen“ S. 19–22, „Unser Berlin wird sauber, grün und lebenswert“ S. 22–24, „Sichere Mobilität“ S. 24–27; Fundstellen S. 33, 51, 55, 56, 63.
+
+Nicht erfasst:
+- S. 13: Überbrückungshilfe für Gewerbetreibende bei Umsatzeinbußen durch Baustellen – setzt an keiner der Ursachen nach R1 an (finanzielle Hilfe, kein Sortiment/Erreichbarkeit).
+- S. 13: Zentrengipfel dauerhaft als Austauschplattform etablieren – gleicher Vorschlag wie Maßnahme 1 (Zentrengipfel), nicht doppelt erfasst.
+- S. 13: Mix aus Gewerbe, Dienstleistungen und Kultur in Kiezen erhalten, Einsatz beim Bund für bezahlbare Gewerbemieten (auch S. 22 soziales Gewerbemietrecht) – Zitat nennt weder Innenstadt noch Einzelhandel noch Leerstand (R2), zudem Forderung an den Bund; kommunale Gewerbehöfe betreffen Handwerk und Gewerbe.
+- S. 13/14: Ansiedlungen über Berlin Partner – internationale Unternehmensansiedlung, kein Innenstadtbezug.
+- S. 19: „Die Wiege Berlins entwickeln“ (Nikolaiviertel, Areal Fernsehturm–Spreeufer als grüner Freiraum, Molkenmarkt mit Gewerbe) – historischer Kern, Zitat nennt aber weder Innenstadt noch Ortskern noch Einzelhandel (R2); Grenzfall, nicht aufgenommen.
+- S. 21: Leerstandsmeldepflicht und progressive Leerstandssteuer – betrifft Wohnraum (R2: Miete).
+- S. 22: Plätze und Straßen zum Verweilen gestalten – kein Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 26: Ladepunkte auf Einzelhandelsparkplätzen „anregen“ – Ladeinfrastruktur/E-Mobilität, keine Zusage zur Erreichbarkeit der Geschäfte.
+- S. 56: Sport als Motor für Einzelhandel – Lagebeschreibung.
+Grenzfall: S. 27 Kurzzeitparkplätze in Geschäftsstraßen – „Geschäftsstraße“ steht nicht in der Wortliste von R2, meint aber Einkaufsstraßen; daher 3604 in ursachen_offen.
+Richtungen ohne Maßnahme: Aufenthaltsqualität und Verkehrsberuhigung, Sauberkeit/Sicherheit (mit Innenstadtbezug), Nahmobilität, Öffnungszeiten.

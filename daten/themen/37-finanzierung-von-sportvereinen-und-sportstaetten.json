@@ -33,5 +33,2268 @@
       "ebene": "land",
       "schlagwoerter": ["vereinsfinanzen", "finanzielle situation", "zustand der sportstaetten", "ehrenamt", "mitgliedsbeitrag"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9851,
+      "name": "Neues oder aufgestocktes, langfristiges Landesprogramm zur Sanierung von Sportstätten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt am Investitionsrückstand an; zusätzliche, verlässliche Mittel bauen ihn ab. Dagegen: Planungs- und Baukapazitäten der Kommunen begrenzen das Tempo; dass bessere Anlagen die Teilnahme erhöhen, zeigen Studien vor allem für ländliche Räume.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.alexandria.unisg.ch/id/eprint/237715",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9852,
+      "name": "Sanierung und Ausbau von Sportstätten allgemein zusagen, fortführen oder für einzelne Anlagen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt am Sanierungsbedarf an, aber ohne zusätzliche Mittel oder nur für einzelne Anlagen; der wachsende Rückstand wird so kaum kleiner. Dafür spricht, dass bestehende Förderung ohne Neuregelung weiterlaufen kann.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.alexandria.unisg.ch/id/eprint/237715",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9853,
+      "name": "Barrierefreie und inklusive Sportstätten fördern und bauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbessert Zugang und Teilhabe, berührt den allgemeinen Sanierungsrückstand aber nur, soweit dabei saniert wird. Umbau und Neubau brauchen Mittel und mehrere Jahre; Wirkung auf die Vereinsfinanzen kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9854,
+      "name": "Investitionsprogramm für Sanierung und Neubau von Schwimmbädern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt am besonders hohen Rückstand bei Bädern an und kann Schließungen verhindern. Dagegen: sehr hohe Bau- und Betriebskosten, lange Bauzeiten; die Wirkung auf die Teilnahme hängt von Lage und Erreichbarkeit ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.alexandria.unisg.ch/id/eprint/237715",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9855,
+      "name": "Energetische Sanierung von Sportstätten und Bädern zur Senkung der Betriebskosten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Energetische Sanierung senkt Energie- und Betriebskosten nachweislich deutlich (Pilotbad: über 50 % weniger Heizenergie) und baut Sanierungsbedarf ab. Dagegen: hohe Investitionen, lange Bauzeiten und Schließung während der Arbeiten.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.energiezukunft.eu/bauen/bauzukunft/energieeffizient-im-spa",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9856,
+      "name": "Zustandserfassung, Sportstätten-Atlas und Sportentwicklungsplanung als Grundlage für Investitionen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Daten und Planung lenken Mittel gezielter, beseitigen den Rückstand aber nicht ohne zusätzliches Geld. Rasch und günstig umsetzbar; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9857,
+      "name": "Typenbau, zentrale Bau-Einheit und schnellere Planungs- und Förderverfahren für Sportstätten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Planung und Bau beschleunigen und verbilligen, wo Verwaltungskapazität der Engpass ist. Ohne zusätzliche Mittel bleibt der Rückstand; Aufbau einer zentralen Einheit dauert, Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9858,
+      "name": "Vorhandene Sportanlagen besser nutzen: Öffnung von Schulanlagen, Buchungsportale, ganzjährige Nutzung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schafft mehr Trainingszeiten ohne Neubau und lindert so Folgen knapper Anlagen, setzt am Investitionsrückstand selbst aber nicht an. Günstig umsetzbar; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9859,
+      "name": "Kostenlose oder stark vergünstigte Nutzung öffentlicher Sportanlagen durch Vereine (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Nutzungskosten der Vereine und damit den Druck auf Beiträge. Dagegen: Die Kosten verlagern sich auf Kommunen, deren Sportbetriebe schon Verluste ausgleichen; ohne Ausgleich durch das Land kaum tragfähig. Wenig untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9860,
+      "name": "Investitions- und Instandhaltungsförderung für von Vereinen genutzte oder eigene Sportanlagen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Geld fließt direkt an Vereine für den Zustand ihrer Anlagen, wo der Problemdruck gestiegen ist; einfache Budgets erleichtern den Abruf. Dagegen: Umfang unbestimmt, Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9861,
+      "name": "Pauschale Förderung von Vereinen und Sportbünden erhöhen und dynamisieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verlässliche, mit den Kosten steigende Pauschalen setzen an der finanziellen Lage der Vereine an und erleichtern bezahlbare Beiträge. Dagegen: dauerhafte Haushaltsbelastung; Wirkung auf Beiträge kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9862,
+      "name": "Förderung des Landessportbunds und Fördervereinbarung fortführen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert bestehende Strukturen und gibt Planungssicherheit, verbessert die finanzielle Lage der Vereine aber kaum, solange die Mittel nicht steigen. Leicht umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9863,
+      "name": "Hauptamtliche Unterstützung für Vereine fördern (Verwaltungskräfte, Ansprechpartner, Beratung) (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt am größten Existenzproblem an, der Last auf Ehrenamtlichen. Studien: Vereine mit Hauptamt haben weniger Probleme bei Mitgliedern, aber mehr bei den Finanzen; dauerhafte Finanzierung nötig.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9864,
+      "name": "Unbestimmte Zusage, Vereine und Breitensport finanziell zu fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Berührt die finanzielle Lage der Vereine, nennt aber weder Instrument noch Umfang; eine spürbare Verbesserung ist so nicht absehbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9865,
+      "name": "Neues Förderprogramm oder Fonds für Vereine und Ehrenamt (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zusätzliche Mittel für Projekte, Nachwuchs und Strukturen setzen an der Lage der Vereine an. Dagegen: Wirkung hängt von Umfang und Antragsaufwand ab; kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9866,
+      "name": "Bürokratie für Vereine abbauen: einfachere Förderverfahren, Pauschalen, digitale Anträge, Beratung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet Ehrenamtliche, für die Vorschriften ein häufig genanntes Problem sind. Dagegen: Viele Pflichten stammen aus Bundes- oder EU-Recht; ob Entlastung mehr Engagement bringt, ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9867,
+      "name": "Vereinsrecht entbürokratisieren: Haftung, Dokumentations- und Datenschutzpflichten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Der Bund regelt Vereins-, Haftungs- und Gemeinnützigkeitsrecht und kann Ehrenamtliche entlasten. Dagegen: Datenschutz ist EU-rechtlich vorgegeben; Wirkung auf Engagement und Vereinsfinanzen kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9868,
+      "name": "Vereine bei der Digitalisierung unterstützen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Verwaltungsarbeit erleichtern und Ehrenamtliche entlasten, berührt die finanzielle Lage aber nur am Rand. Leicht umsetzbar, Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9869,
+      "name": "Vergütung von Übungsleitungen und Trainern fördern bzw. anheben (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt am Mangel an Übungsleitungen an, dem zweitgrößten Existenzproblem der Vereine, und entlastet deren Kasse. Dagegen: Studien zeigen, dass Bezahlung unbezahltes Engagement verdrängen kann; dauerhafte Finanzierung nötig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/zur/iewwpx/007.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9870,
+      "name": "Aus- und Fortbildung von Übungsleitungen und Ehrenamtlichen fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Stärkt Qualifikation und Bindung von Ehrenamtlichen, entlastet die Vereinsfinanzen aber nur wenig. Rasch umsetzbar, Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9871,
+      "name": "Übungsleiter- und Ehrenamtspauschale erhöhen oder vereinheitlichen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Steuerfreie Pauschalen entlasten Ehrenamtliche, nicht die Vereinskasse, die Zahlungen aufbringen muss; 2026 bereits erhöht. Ob Geldanreize mehr Engagement bringen, ist umstritten (Verdrängungseffekte).",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/zur/iewwpx/007.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9872,
+      "name": "Auf höhere steuerfreie Übungsleiter- und Ehrenamtspauschale hinwirken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Wirkt wie die Erhöhung im Bund, entlastet aber nicht die Vereinskasse; Steuerrecht ist Bundessache, das Land kann nur über den Bundesrat drängen. Ob Geldanreize Engagement fördern, ist umstritten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/zur/iewwpx/007.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9873,
+      "name": "Anerkennung des Ehrenamts: Ehrenamtskarte mit Vergünstigungen, Sichtbarkeit, Vereinbarkeit (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Würdigt Ehrenamtliche und kann Bindung stärken; Evaluationen zeigen Zufriedenheit, aber keinen belegten Effekt auf die Gewinnung neuer Engagierter. Vergünstigungen wie freier Nahverkehr kosten Geld.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9874,
+      "name": "GEMA-Gebühren für Vereinsveranstaltungen übernehmen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet Vereine bei Veranstaltungskosten, für Sportvereine meist ein kleiner Posten; die finanzielle Lage verbessert sich nur am Rand. Mit überschaubarem Geld rasch umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9875,
+      "name": "Kooperation von Schulen, Kitas und Sportvereinen fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Vereinen Nachwuchs und Einnahmen aus Ganztagsangeboten bringen, berührt ihre Finanzlage aber nur am Rand. Hängt von Übungsleitungen am Nachmittag ab; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9876,
+      "name": "Bundesförderprogramm zur Sanierung kommunaler Sportstätten und Schwimmbäder (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt am Investitionsrückstand an; der Bund finanziert bereits ein Sanierungsprogramm (2025/26 rund 916 Mio. €). Dagegen: Mittel gemessen am Rückstand klein, Kofinanzierung und Planungskapazität der Kommunen begrenzen den Abruf.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.alexandria.unisg.ch/id/eprint/237715",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9877,
+      "name": "Kommunalfinanzen und allgemeine Investitionsmittel für kommunale Infrastruktur stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Geld für Kommunen kann auch Sportstätten zugutekommen, ist aber nicht zweckgebunden; Sportanlagen konkurrieren mit vielen anderen Bedarfen. Finanzierung und Ausgestaltung offen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9878,
+          "instrument": 9871,
+          "beschreibung": "Ehrenamts- und Übungsleiterpauschale spürbar erhöhen, um ehrenamtlich Tätige steuerlich zu entlasten",
+          "ursachen_ids": [3703],
+          "zitat": "Wir erhöhen die Ehrenamts- und die Übungsleiterpauschale spürbar.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=57",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9879,
+          "beschreibung": "Mehr Anreize für private Gelder und Spenden an Vereine setzen und den Zugang zu öffentlicher Förderung erleichtern",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Spendenanreize und leichterer Zugang zu Förderung können Einnahmen der Vereine erhöhen; ohne Ausgestaltung bleibt der Effekt klein. Steuerliche Regeln liegen beim Bund.",
+          "zitat": "Zudem setzen wir mehr Anreize für private Gelder und Spenden und erleichtern den Zugang zu öffentlicher Förderung.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=57",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9880,
+          "instrument": 9867,
+          "beschreibung": "Vereinspaket für das Ehrenamt, das Bürokratie, Datenschutz und Haftungsfragen angeht",
+          "ursachen_ids": [3703],
+          "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=57",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9881,
+          "instrument": 9876,
+          "beschreibung": "In der kommenden Wahlperiode die Bereitstellung der Sportmilliarde sicherstellen",
+          "ursachen_ids": [3701],
+          "zitat": "Für die kommende Wahlperiode stellen wir sicher, dass die Sportmilliarde zur Verfügung steht.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=61",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9882,
+          "instrument": 9851,
+          "beschreibung": "Das Landesprogramm zur Sanierung von Sportstätten ausbauen und langfristig finanziell absichern.",
+          "ursachen_ids": [3701],
+          "zitat": "Wir werden das Sportstättensanierungsprogramm deshalb konsequent ausbauen und langfristig finanziell absichern.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9883,
+          "instrument": 9856,
+          "beschreibung": "Verlässliche Sanierungsstrategie, bessere Datengrundlage und schnellere Genehmigungen für mehr Planungssicherheit von Bezirken und Vereinen.",
+          "ursachen_ids": [3701],
+          "zitat": "Zugleich werden wir mehr Planungssicherheit für Bezirke und Vereine schaffen – durch eine verlässliche Sanierungsstrategie, eine bessere Datengrundlage und beschleunigte Genehmigungsprozesse.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9884,
+          "instrument": 9855,
+          "beschreibung": "Sportstätten bei Sanierungen energetisch und klimaverträglich modernisieren und multifunktional nutzbar machen.",
+          "ursachen_ids": [3701, 3702],
+          "zitat": "Wir setzen uns dafür ein, Sportstätten im Zuge von Sanierungen umwelt- und klimaverträglich zu modernisieren. Dabei wollen wir nicht nur bauliche Mängel beseitigen, sondern zugleich energetische Standards verbessern und multifunktionale Nutzungen ermöglichen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9885,
+          "beschreibung": "Rechtssichere Regeln, damit gemeinnützige Sportvereine mit erneuerbaren Energien (Eigenversorgung, Einspeisung) Einnahmen erzielen können, ohne die Gemeinnützigkeit zu verlieren.",
+          "ursachen_ids": [3703, 3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einnahmen und Eigenversorgung aus erneuerbaren Energien können Energiekosten der Vereine senken. Das Gemeinnützigkeitsrecht ist aber Bundesrecht; das Land kann es nicht allein regeln.",
+          "zitat": "Gleichzeitig wollen wir rechtssichere Rahmenbedingungen schaffen, damit gemeinnützige Sportvereine durch den Betrieb erneuerbarer Energiequellen – insbesondere zur Eigenversorgung und in begrenztem […] Umfang auch zur Einspeisung – zusätzliche Einnahmen erzielen können, ohne ihre Gemeinnützigkeit zu gefährden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=111",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9886,
+          "instrument": 9855,
+          "beschreibung": "Schwimmbäder modernisieren: bestehende Bäder energiesparsam sanieren, neue Wasserflächen bei hohem Bedarf schaffen, Betriebsabläufe effizienter machen.",
+          "ursachen_ids": [3701],
+          "zitat": "Gleichzeitig werden wir die Berliner Bäderlandschaft umfassend modernisieren und langfristig sichern. Bestehende Anlagen wollen wir umweltgerecht und dadurch energiesparsam sanieren, neue Wasserflächen dort schaffen, wo der Bedarf besonders hoch ist, und Betriebsabläufe effizienter gestalten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=112",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9887,
+          "beschreibung": "Führung und Struktur des landeseigenen Bäderbetriebs kritisch überprüfen.",
+          "ursachen_ids": [3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Prüfung des Bäderbetriebs kann Effizienzreserven aufzeigen und Verluste mindern, senkt Kosten aber erst durch Folgeschritte. Rasch umsetzbar, Ergebnis offen.",
+          "zitat": "Dafür werden wir die Unternehmensführung und -struktur der Berliner Bäder-Betriebe einer kritischen Revision unterziehen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=112",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9888,
+          "beschreibung": "Beim Bund und bei der EU darauf hinwirken, dass das Land stärker von Förderprogrammen für Sportstätten profitiert.",
+          "ursachen_ids": [3701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Bundes- und EU-Mittel würden Sanierungen finanzieren, das Land kann darauf aber nur hinwirken; Erfolg hängt von fremden Entscheidungen ab.",
+          "zitat": "Wir werden uns auf Bundes- und Europaebene mit Nachdruck dafür einsetzen, dass Berlin stärker von Förderprogrammen für Sportstätten, Großveranstaltungen und Nachwuchsförderung profitiert.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=112",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9889,
+          "instrument": 9858,
+          "beschreibung": "Sportflächen ganzjährig nutzbar machen, etwa mit moderner Beleuchtung, witterungsbeständigen Belägen und besserer Organisation der Trainingszeiten.",
+          "ursachen_ids": [3701],
+          "zitat": "Wir werden die ganzjährige Nutzbarkeit von Sportflächen konsequent verbessern. Dabei setzen wir auf moderne Beleuchtungssysteme, witterungsbeständige Beläge und bessere organisatorische Lösungen, damit Trainingszeiten optimal genutzt werden können.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=112",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9890,
+          "instrument": 9852,
+          "beschreibung": "Bei der Sanierung eines großen Sportparks inklusive und barrierefreie Außensportstätten für umliegende Sportvereine planen.",
+          "ursachen_ids": [3701],
+          "zitat": "Für die von uns angestoßene Realisierung der Sanierung des Friedrich-Ludwig-Jahn-Sportparks planen wir für die Außenanlage des Cantian-Stadions inklusive und barrierefreie Sportstätten, die von möglichst vielen Mitgliedern umliegender Sportvereine genutzt werden können.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=112",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9891,
+          "instrument": 9875,
+          "beschreibung": "Sport-AGs an Kitas und Schulen ausbauen, Zusammenarbeit mit Sportvereinen stärken und Hürden für Kooperationen von Schulen und Vereinen abbauen.",
+          "ursachen_ids": [3703],
+          "zitat": "Deshalb werden wir Sport-AGs an Kitas und Schulen gezielt ausbauen und die Zusammenarbeit mit Sportvereinen stärken. Zudem wollen wir mehr Kooperationen zwischen Schulen und Vereinen ermöglichen und bürokratische Hürden abbauen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=113",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9892,
+          "instrument": 9866,
+          "beschreibung": "Ehrenamt im Vereinssport stärker anerkennen, Bürokratie abbauen und Förderverfahren vereinfachen.",
+          "ursachen_ids": [3703],
+          "zitat": "Wir werden dieses Engagement stärker anerkennen, bürokratische Hürden abbauen und Förderverfahren vereinfachen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=114",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9893,
+          "instrument": 9863,
+          "beschreibung": "Hauptamtliche Strukturen ausbauen (Ansprechpartner, Beratung, einfache Förderprogramme), die Vereine und Ehrenamtliche entlasten.",
+          "ursachen_ids": [3703],
+          "zitat": "Gleichzeitig wollen wir professionelle Strukturen ausbauen, die Ehrenamtliche unterstützen. Hauptamtliche Ansprechpartner, klare Zuständigkeiten, bedarfsgerechte Beratung und einfache Förderprogramme sollen Vereine entlasten und das Ehrenamt stärken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=114",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9894,
+          "instrument": 9868,
+          "beschreibung": "Sportvereine bei Digitalisierung und beim Einsatz Künstlicher Intelligenz unterstützen.",
+          "ursachen_ids": [3703],
+          "zitat": "Deshalb werden wir Sportvereine bei der Digitalisierung und beim Einsatz Künstlicher Intelligenz unterstützen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=115",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9895,
+          "instrument": 9858,
+          "beschreibung": "Digitale Zugangs- und Buchungssysteme für Sportanlagen fördern, damit vorhandene Flächen flexibler und länger genutzt werden.",
+          "ursachen_ids": [3701],
+          "zitat": "Digitale Zugangs- und Buchungssysteme für Berliner Sportanlagen wollen wir fördern, um einen vereinfachten Zutritt zu jeder Zeit zu den Sportanlagen und damit eine erweiterte, flexible Nutzung von Sportflächen zu ermöglichen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=115",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9896,
+          "beschreibung": "Steganlagen von Wassersportvereinen erhalten, Planungssicherheit schaffen und Bürokratie abbauen, damit Vereine ihre Anlagen langfristig betreiben können.",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Planungssicherheit und weniger Auflagen sichern den Betrieb von Steganlagen für Wassersportvereine, betreffen aber nur einen kleinen Teil der Vereine.",
+          "zitat": "Wir setzen uns für den Erhalt bestehender Steganlagen ein, da diese eine unverzichtbare Grundlage für Wassersportvereine und Freizeitnutzer sind. Wir wollen Planungssicherheit schaffen und bürokratische Hindernisse abbauen, damit Vereine ihre Anlagen langfristig betreiben können.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=115",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9897,
+          "instrument": 9851,
+          "beschreibung": "Sport-Pakt mit Kommunen, Verbänden und Vereinen zum Abbau des Sanierungs- und Investitionsstaus bei Sportstätten; Landesmittel für Sportförderung von 13 auf 20 Mio. erhöhen",
+          "ursachen_ids": [3701],
+          "zitat": "Gemeinsam mit Kommunen, Sportverbänden und Vereinen werden wir den massiven Sanierungs- und Investitionsstau bei Sportstätten systematisch abbauen. Dafür werden wir die Mittel für die Sportförderung im Landeshaushalt von aktuell 13 Millionen auf 20 Millionen erhöhen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9898,
+          "instrument": 9856,
+          "beschreibung": "Digitalen Sportstätten-Atlas zu Zustand, Sanierungsbedarf und Nutzung einrichten; darauf Sportstättenbericht und Sportentwicklungsplanung als Grundlage für Investitionen",
+          "ursachen_ids": [3701],
+          "zitat": "Zwecks einer gezielten und strategisch gesteuerten Investitionsoffensive richten wir in Kooperation mit Kommunen und Vereinen einen digitalen Sportstätten-Atlas ein, der Zustand, Sanierungsbedarf und Nutzung landesweit erfasst.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9899,
+          "instrument": 9861,
+          "beschreibung": "Sportfördergesetz novellieren: Bürokratie abbauen, Antragsverfahren vollständig digitalisieren, Förderung des Landessportbundes dynamisieren",
+          "ursachen_ids": [3703],
+          "zitat": "Mit einer Novellierung des Sportfördergesetzes werden wir die Sportförderung in Mecklenburg-Vorpommern modernisieren und die Autonomie des Sports garantieren. Ziel ist die Abschaffung überflüssiger Bürokratie, eine vollständige Digitalisierung der Antragsverfahren und eine Dynamisierung der finanziellen Förderung des Landessportbundes.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9900,
+          "instrument": 9870,
+          "beschreibung": "Förderprogramm „Ehrenamt im Sport“ einführen, das mit dem Landessportbund Weiterbildungsmöglichkeiten für Ehrenamtliche finanziell absichert",
+          "ursachen_ids": [3703],
+          "zitat": "Wir führen das Förderprogramm „ Ehrenamt im Sport “ ein. Damit werden wir in enger Abstimmung mit dem Landessportbund Weiterbildungsmöglichkeiten finanziell absichern.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=99",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9901,
+          "instrument": 9875,
+          "beschreibung": "Landesprogramm zur Zusammenarbeit von Schulen und Sportvereinen, vor allem zur Einbindung der Vereine in den Ganztag",
+          "ursachen_ids": [3703],
+          "zitat": "Zur Förderung der Zusammenarbeit von Schulen und Sportvereinen werden wir ein Landesprogramm auflegen, um insbesondere die Einbindung der Vereine in den Ganztag zu stärken.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=84",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9902,
+          "instrument": 9874,
+          "beschreibung": "GEMA-Gebühren für ehrenamtliche, eintrittsfreie Veranstaltungen gemeinnütziger Vereine per Landesprogramm übernehmen",
+          "ursachen_ids": [3703],
+          "zitat": "Ehrenamtliche Tätigkeiten werden wir weiter fördern, bspw. indem wir mit einem Landesprogramm die GEMA-Gebühren für ehrenamtlich durchgeführte und eintrittsfreie Veranstaltungen von gemeinnützigen Vereinen und Feuerwehren übernehmen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=99",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9903,
+          "instrument": 9852,
+          "beschreibung": "Sportstättenförderung des Landes für Kommunen und Vereine fortsetzen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir werden die Sportstättenförderung für Kommunen und Vereine fortsetzen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9904,
+          "instrument": 9856,
+          "beschreibung": "Sportentwicklungsplanung und interkommunale Zusammenarbeit im Sport strukturell fördern",
+          "ursachen_ids": [3701],
+          "zitat": "Sportentwicklungsplanung und interkommunale Zusammenarbeit fördern wir strukturell.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9905,
+          "instrument": 9869,
+          "beschreibung": "Neues Förderprogramm zur Entlastung der Vereine für Trainerinnen, Trainer und Übungsleiter auflegen",
+          "ursachen_ids": [3703],
+          "zitat": "Dafür braucht es ausreichend Trainerinnen und Trainer sowie Übungsleiter. Zur Entlastung der Vereine wollen wir hierfür ein neues Förderprogramm auflegen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9906,
+          "instrument": 9865,
+          "beschreibung": "Landesprogramm „Ehrenamt“ als zentrale Förderlinie, u. a. für Sport: Projekte, Ausbildung, Nachwuchsgewinnung, Ausfallhilfen",
+          "ursachen_ids": [3703],
+          "zitat": "Mit einem Landesprogramm „Ehrenamt“ schaffen wir eine zentrale Förderlinie für alle Engagierten, z.B. in Sport, Kultur, Umwelt, Heimatpflege oder im sozialen Bereich. Hierüber fördern wir Projekte, Veranstaltungen, Ausbildung, Nachwuchsgewinnung, Ausfallhilfen und Vergünstigungen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9907,
+          "instrument": 9866,
+          "beschreibung": "Förderanträge und Verwendungsnachweise vereinfachen, digitale Antragsverfahren ausbauen, Förderverfahren vereinheitlichen",
+          "ursachen_ids": [3703],
+          "zitat": "Förderanträge und Verwendungsnachweise werden wir entschlacken, digitale Antragsverfahren weiter ausbauen und die Förderverfahren vereinheitlichen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9908,
+          "instrument": 9866,
+          "beschreibung": "Ehrenamts-Check bei neuen Gesetzen und Einsatz für einfacheres Vereins-, Gemeinnützigkeits- und Steuerrecht",
+          "ursachen_ids": [3703],
+          "zitat": "Wir führen einen Ehrenamts-Check bei allen neuen Gesetzen ein und setzen uns für Vereinfachungen im Vereins-, Gemeinnützigkeits- und Steuerrecht auf Bundesebene ein.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=70",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9909,
+          "instrument": 9872,
+          "beschreibung": "Auf Bundesebene für höhere Übungsleiter- und Ehrenamtspauschale eintreten",
+          "ursachen_ids": [3703],
+          "zitat": "Wir setzen uns für die Anhebung der Übungsleiter- und Ehrenamtspauschale auf Bundesebene ein.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=71",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9910,
+          "instrument": 9874,
+          "beschreibung": "GEMA-Ländervertrag anstreben, der ehrenamtlichen Vereinen bis zu vier lizenzkostenfreie Musiknutzungen pro Jahr ermöglicht",
+          "ursachen_ids": [3703],
+          "zitat": "Vereine als tragende Säulen des gesellschaftlichen Zusammenhalts spürbar entlasten: Dazu streben wir einen GEMA-Ländervertrag für Sachsen-Anhalt an, der ehrenamtlich tätigen Vereinen bis zu vier lizenzkostenfreie Musiknutzungen pro Jahr ermöglicht sowie bürokratische und finanzielle Hürden deutlich reduziert.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=37",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9911,
+          "instrument": 9876,
+          "beschreibung": "Bund unterstützt Länder, Kommunen und Vereine bei der Sanierung von Sportstätten",
+          "ursachen_ids": [3701],
+          "zitat": "Wir helfen Ländern, Kommunen und Vereinen bei der Sanierung von Sportstätten […]",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9912,
+          "instrument": 9852,
+          "beschreibung": "Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten weiter vorantreiben",
+          "ursachen_ids": [3701],
+          "zitat": "Wir setzen Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten mit Nachdruck fort.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9913,
+          "instrument": 9857,
+          "beschreibung": "Typenbauprogramm für Sportfunktionsgebäude und zentrale Planungs- und Baueinheit, die Bezirke entlastet und Bau und Sanierung beschleunigt",
+          "ursachen_ids": [3701],
+          "zitat": "Bei der bezirklichen Sportinfrastruktur richten wir uns an der Sportentwicklungsplanung aus und entwickeln ein Typenbauprogramm für Sportfunktionsgebäude. Eine zentrale Planungs- und Baueinheit entlastet Bezirke und beschleunigt barrierefreien Bau und Sanierung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9914,
+          "instrument": 9854,
+          "beschreibung": "In landeseigene Schwimmbäder investieren, Typenschwimmhallen bauen und Bestandsbäder klimagerecht sanieren",
+          "ursachen_ids": [3701],
+          "zitat": "Wir investieren in landeseigene Schwimmbäder, bauen Typenschwimmhallen und sanieren Bestandsbäder klimagerecht.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9915,
+          "instrument": 9860,
+          "beschreibung": "Unbürokratische Instandhaltungsbudgets für Vereine, ohne komplizierte Antragsverfahren selbst verwendbar",
+          "ursachen_ids": [3701, 3703],
+          "zitat": "Wir führen unbürokratische Instandhaltungsbudgets für Vereine ein. Diese können selbstbestimmt und ohne komplizierte Antragsverfahren genutzt werden.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=55",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9916,
+          "beschreibung": "Sportstätten den Vereinen weiterhin gebührenfrei überlassen",
+          "ursachen_ids": [3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die weiterhin gebührenfreie Überlassung hält Nutzungskosten der Vereine niedrig, ändert am bestehenden Zustand aber nichts; die Kosten tragen weiter die Kommunen.",
+          "zitat": "Sportstätten stellen wir Vereinen weiterhin gebührenfrei zur Verfügung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=55",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9917,
+          "instrument": 9860,
+          "beschreibung": "Vereinsinvestitionsprogramm entbürokratisieren und finanziell stärken",
+          "ursachen_ids": [3703, 3701],
+          "zitat": "Das Vereinsinvestitionsprogramm entbürokratisieren wir und stärken es finanziell.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9918,
+          "instrument": 9862,
+          "beschreibung": "Fördervereinbarung mit dem Landessportbund über 2029 hinaus fortführen",
+          "ursachen_ids": [3703],
+          "zitat": "Die Fördervereinbarung mit dem Landessportbund wollen wir nach 2029 fortführen; Bundes- und EU - Programme akquirieren wir stärker für Breiten- und Spitzensport.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9919,
+          "instrument": 9869,
+          "beschreibung": "Trainerinnen und Trainer weiter qualifizieren und ihre Einkommenssituation verbessern",
+          "ursachen_ids": [3703],
+          "zitat": "Trainer*innen qualifizieren wir weiter und verbessern ihre Einkommenssituation.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9920,
+          "instrument": 9851,
+          "beschreibung": "Sportstätten weiter über die bestehenden Programme fördern und zusätzliche Investitionsmittel des MV-Plans 2035 gezielt für ein Sportanlagenprogramm einsetzen",
+          "ursachen_ids": [3701],
+          "zitat": "Zur Stärkung des Breitensports werden wir weiterhin Sportstätten über die etablierten Programme fördern. Die zusätzlichen Investitionsmittel aus dem MV-Plan 2035 wollen wir dabei auch gezielt für ein starkes Sportanlagenprogramm einsetzen, damit Vereine, Schulen und Kommunen gute Bedingungen für Sport und Bewegung vorfinden.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9921,
+          "instrument": 9874,
+          "beschreibung": "Vereinen, Karneval und Kapellen die GEMA-Gebühren für bis zu drei öffentliche Veranstaltungen im Jahr erstatten",
+          "ursachen_ids": [3703],
+          "zitat": "Um sie zu entlasten, werden wir Vereinen, dem Karneval und (Schalmeien-)Kapellen für […] öffentliche Auftritte und Veranstaltungen für bis zu drei Veranstaltungen im Jahr die GEMA-Gebühren erstatten.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=5",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9922,
+          "instrument": 9861,
+          "beschreibung": "Pauschalen für Sportvereine verdoppeln, an die Kostenentwicklung koppeln und im Sportfördergesetz festschreiben",
+          "ursachen_ids": [3703],
+          "zitat": "Vereine sind das Rückgrat des Sports. Die Vereinspauschalen werden verdoppelt und dynamisiert und im Sportfördergesetz festgeschrieben.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9923,
+          "instrument": 9868,
+          "beschreibung": "Sportvereine bei der Digitalisierung ihrer Arbeit unterstützen",
+          "ursachen_ids": [3703],
+          "zitat": "Vereine werden bei der Digitalisierung ihrer Arbeit unterstützt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9924,
+          "instrument": 9861,
+          "beschreibung": "Pauschalförderung für Kreis- und Stadtsportbünde sowie Landesfachverbände erhöhen und dynamisieren, Landessportbund auskömmlich finanzieren",
+          "ursachen_ids": [3703],
+          "zitat": "Die Pauschalförderung für Kreis- und Stadtsportbünde sowie Landesfachverbände wird erhöht und dynamisiert. Der Landessportbund wird auskömmlich finanziert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9925,
+          "instrument": 9854,
+          "beschreibung": "Landesinvestitionsprogramm für Schwimmhallen und Schwimmbäder auflegen",
+          "ursachen_ids": [3701],
+          "zitat": "Ein Investitionsprogramm für Schwimmhallen und Schwimmbäder wird aufgelegt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9926,
+          "instrument": 9852,
+          "beschreibung": "Sportstätten erhalten und modernisieren; Kommunen bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützen",
+          "ursachen_ids": [3701],
+          "zitat": "Sportstätten werden erhalten und modernisiert. Kommunen werden unter anderem bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9927,
+          "instrument": 9866,
+          "beschreibung": "Bürokratische Hürden für ehrenamtlich getragene Vereine und Initiativen gezielt abbauen (allgemein, nicht nur Sport)",
+          "ursachen_ids": [3703],
+          "zitat": "Wir bauen bürokratische Hürden für ehrenamtlich getragene Vereine und Initiativen gezielt ab.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=34",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9928,
+          "instrument": 9876,
+          "beschreibung": "Das Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern ausbauen, mit Blick auf ökologische Nachhaltigkeit und Inklusion.",
+          "ursachen_ids": [3701],
+          "zitat": "Wir wollen das Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern ausbauen. Für uns sind dabei ökologische Nachhaltigkeit und Inklusion leitend.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=112",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9929,
+          "instrument": 9877,
+          "beschreibung": "Kommunen besser finanzieren und über einen Deutschlandfonds Investitionen in kommunale Infrastruktur (u. a. Schwimmbäder, Sportplätze) ermöglichen.",
+          "ursachen_ids": [3701],
+          "zitat": "Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=108",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9930,
+          "instrument": 9871,
+          "beschreibung": "Aufwandsentschädigungen für Ehrenämter einheitlich pauschal steuerfrei stellen.",
+          "ursachen_ids": [3703],
+          "zitat": "Wenn für Ehrenämter Aufwandsentschädigungen gezahlt werden, sollen sie einheitlich pauschal steuerfrei sein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=111",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9931,
+          "instrument": 9867,
+          "beschreibung": "Gemeinnützige zivilgesellschaftliche Organisationen von überflüssiger Bürokratie entlasten.",
+          "ursachen_ids": [3703],
+          "zitat": "Zivilgesellschaftliche Organisationen tragen das gemeinnützige Engagement. Ihre Arbeit wollen wir von überflüssiger Bürokratie entlasten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=112",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9932,
+          "instrument": 9852,
+          "beschreibung": "Sportstätten inklusiv, multifunktional und ökologisch sanieren und wo nötig neu bauen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir wollen die Sportstätten inklusiv, […] multifunktional, ökologisch und nachhaltig sanieren bzw. wo nötig neu bauen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9933,
+          "instrument": 9853,
+          "beschreibung": "Mit Sportstätten-Entwicklungsplanung und Unterstützung der Bezirke ein Netz barrierefreier, klimaneutraler Sportstätten schaffen, mindestens drei inklusive je Bezirk",
+          "ursachen_ids": [3701],
+          "zitat": "Durch eine sinnvolle Sportstätten-Entwicklungsplanung und die Unterstützung der Bezirke bei der Umsetzung werden wir ein berlinweites Netz barrierefreier, klimaneutraler Sportstätten schaffen. […] Mindestens drei inklusive Sportstätten pro Bezirk sollen entstehen",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=39",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9934,
+          "instrument": 9854,
+          "beschreibung": "Schwimmbadoffensive: Bäder schnell neu bauen und wiedereröffnen, gezielt in Bezirken mit fehlender Infrastruktur investieren",
+          "ursachen_ids": [3701],
+          "zitat": "Doch in Berlin mangelt es an Schwimmbädern, weshalb wir eine Schwimmbadoffensive starten und Bäder schnell neu bauen und wiedereröffnen. Besonders in Bezirken mit fehlender Infrastruktur wird gezielt investiert, damit Schwimmen keine Frage des Wohnorts ist.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9935,
+          "instrument": 9855,
+          "beschreibung": "Bäder energetisch sanieren, um Strom- und Wärmeversorgung zu optimieren und Betriebskosten zu senken, etwa mit Wärmerückgewinnung",
+          "ursachen_ids": [3702, 3701],
+          "zitat": "Die Berliner Bäder werden energetisch saniert, um Strom- und Wärmeversorgung zu optimieren und die Kosten zu senken.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=40",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9936,
+          "instrument": 9858,
+          "beschreibung": "Sporthallen und -plätze vorrangig für den Vereinssport; Nutzungsvorschriften ändern, damit Vereine bessere Chancen auf Trainingszeiten erhalten",
+          "ursachen_ids": [3701],
+          "zitat": "Dazu wollen wir die Sportanlagen-Nutzungsvorschriften (SPAN) so ändern, dass Vereine mit entsprechendem Angebot künftig eine bessere Chance auf Trainingszeiten erhalten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=36",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9937,
+          "instrument": 9869,
+          "beschreibung": "Vergütung von Übungsleitern im Kinder-, Jugend- und Inklusionssport perspektivisch auf 20 bis 25 Euro pro Stunde anheben",
+          "ursachen_ids": [3703],
+          "zitat": "Perspektivisch soll die Vergütung von Übungsleiter*innen im Kinder-, Jugend- und Inklusionssport auf 20 bis 25 Euro pro Stunde steigen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=37",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9938,
+          "instrument": 9863,
+          "beschreibung": "Förderung hauptamtlicher Verwaltungskräfte in Vereinen erleichtern: nötige Mitgliedszahlen in der Fördervereinbarung mit dem Landessportbund deutlich senken",
+          "ursachen_ids": [3703],
+          "zitat": "Deswegen wollen wir die Fördervereinbarung zwischen dem Land Berlin und dem Landessportbund Berlin so ändern, dass die Mitgliedszahlen, die für eine Förderung benötigt werden, deutlich sinken.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=37",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9939,
+          "instrument": 9854,
+          "beschreibung": "Ausbau umweltschonender Infrastruktur wie Schwimmhallen für ganzjährige Angebote für Gäste und Einheimische",
+          "ursachen_ids": [3701],
+          "zitat": "Für ein Mecklenburg-Vorpommern, in dem es vorangeht, fordern wir: […] nachhaltige Ganzjahresangebote für Tourist*innen und Einheimische: durch den Ausbau umweltschonender Infrastruktur wie Schwimmhallen, Kultur- und Freizeitangeboten für alle Generationen",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9940,
+          "instrument": 9852,
+          "beschreibung": "Sanierung von Sportstätten und Schwimmbädern mit Fokus auf ökologische Nachhaltigkeit und Inklusion",
+          "ursachen_ids": [3701],
+          "zitat": "Deshalb setzen wir uns für die Sanierung von Sportstätten und Schwimmbädern ein, wobei ökologische Nachhaltigkeit und echte Inklusion im Vordergrund stehen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=72",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9941,
+          "instrument": 9855,
+          "beschreibung": "Kommunen und Sportvereine bei Klimaanpassungs- und Klimaschutzmaßnahmen in Sportstätten unterstützen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir wollen Kommunen und Sportvereine bei Klimaanpassungs- und Klimaschutzmaßnahmen in Sportstätten unterstützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=72",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9942,
+          "beschreibung": "Sportvereine gezielt bei Energiekosten und Sanierungen unterstützen",
+          "ursachen_ids": [3702, 3701],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zuschüsse zu Energiekosten und Sanierungen setzen an Betriebskosten und Anlagenzustand an. Dagegen: Umfang offen, Energiekostenhilfen lindern ohne Sanierung nur Folgen.",
+          "zitat": "Wir streben eine Entbürokratisierung der Sportförderung an und wollen Vereine gezielt bei Energiekosten und Sanierungen unterstützen, um die Belastung durch Bürokratie und hohe Kosten zu reduzieren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=72",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9943,
+          "instrument": 9869,
+          "beschreibung": "Vereine bei der Entschädigung ehrenamtlicher Übungsleitungen unterstützen, vor allem mit Angeboten für Kinder und Jugendliche",
+          "ursachen_ids": [3703],
+          "zitat": "Wir setzen uns dafür ein, Vereine bei der Entschädigung ehrenamtlicher Übungsleiter*innen zu unterstützen. Unser Fokus liegt besonders auf Vereinen, die Angebote für Kinder und Jugendliche organisieren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=72",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9944,
+          "instrument": 9862,
+          "beschreibung": "Angemessene Ausstattung des Landessportbundes und der Kreissportbünde als hauptamtliche Stütze des Ehrenamts",
+          "ursachen_ids": [3703],
+          "zitat": "Ohne Hauptamt lässt sich ein breites Ehrenamt nicht erhalten. Wir setzen uns daher für eine angemessene Ausstattung des Landessportbundes und seiner Kreissportbünde ein.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=72",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9945,
+          "instrument": 9852,
+          "beschreibung": "Schulische Sportstätten stärker öffnen und bei Bedarf modernisieren und sanieren, mehr frei zugängliche Bewegungsflächen",
+          "ursachen_ids": [3701],
+          "zitat": "Um das zu gewährleisten, unterstützen wir ein vielfältiges Sportangebot und wollen mehr frei zugängliche Bewegungsflächen schaffen, schulische Sportstätten stärker öffnen und dort, wo es nötig ist, modernisieren und sanieren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=73",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9946,
+          "instrument": 9872,
+          "beschreibung": "Ehrenamt im Sport durch Erhöhung der Ehrenamtspauschale und bessere Anerkennung stärken",
+          "ursachen_ids": [3703],
+          "zitat": "Zusätzlich möchten wir das Ehrenamt im Sport stärken, indem wir die Ehrenamtspauschale erhöhen und die Anerkennung verbessern, denn ohne ehrenamtliches Engagement wäre der Sport in seiner heutigen Form nicht möglich.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=73",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9947,
+          "instrument": 9867,
+          "beschreibung": "Vereine bei Haftungsrisiken und Bürokratie entlasten, u. a. weniger Dokumentations- und Aufbewahrungspflichten und ein zentraler Vereinslotse",
+          "ursachen_ids": [3703],
+          "zitat": "Damit sich Ehrenamtliche auf ihr Engagement konzentrieren können, wollen wir Vereine bei Haftungsrisiken und Bürokratie deutlich entlasten. […] Insbesondere schlagen wir eine Reduzierung von Dokumentations- und Aufbewahrungspflichten vor.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=32",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9948,
+          "instrument": 9871,
+          "beschreibung": "Übungsleiter- und Ehrenamtspauschalen sowie relevante Einnahmegrenzen anpassen",
+          "ursachen_ids": [3703],
+          "zitat": "Wir passen rechtliche Rahmen, Übungsleiter- und Ehrenamtspauschalen, sowie relevante Einnahmegrenzen an.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=32",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9949,
+          "instrument": 9860,
+          "beschreibung": "Instandhaltung von Sportstätten neu regeln, damit Nutzende Baumaßnahmen eigenverantwortlich und mit finanzieller Planungssicherheit umsetzen; bei Sanierung Fokus auf Barrierefreiheit",
+          "ursachen_ids": [3701],
+          "zitat": "Die Instandhaltung von Sportstätten wollen wir auf eine neue Grundlage stellen, die es den Nutzerinnen und Nutzern ermöglicht, Baumaßnahmen möglichst eigenverantwortlich und mit finanzieller Planungssicherheit umzusetzen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9950,
+          "instrument": 9852,
+          "beschreibung": "Kapazitäten der Sportanlagen an das Bevölkerungswachstum anpassen, etwa mit Bewegungsflächen und Open-Workout-Anlagen in Parks",
+          "ursachen_ids": [3701],
+          "zitat": "Die Kapazitäten der Sportanlagen wollen wir an das Wachstum der Bevölkerung anpassen. Sport- und Bewegungsflächen wollen wir beispielsweise in Form von Open-Work-out-Einrichtungen in Parks und Landschaften integrieren.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9951,
+          "instrument": 9858,
+          "beschreibung": "Vorhandene Sportanlagen besser nutzen: Onlineportal für die Nutzung von Sportanlagen, Schulhöfe und Sportanlagen auch außerhalb der Schulzeiten öffnen",
+          "ursachen_ids": [3701],
+          "zitat": "Die vorhandenen Sportanlagen müssen besser für den Sport genutzt werden. Dazu werden wir ein Onlineportal für die Nutzung von Sportanlagen einrichten und Schulhöfe und Sportanlagen auch außerhalb der Schulzeiten für sportliche Aktivitäten zur Verfügung stellen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9952,
+          "instrument": 9864,
+          "beschreibung": "Breitensport über die Förderung von Vereinen unterstützen",
+          "ursachen_ids": [3703],
+          "zitat": "Der Breitensport spielt eine zentrale Rolle für Gesundheit und gesellschaftliche Werte. Wir wollen ihn über die Förderung von Vereinen unterstützen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=83",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9953,
+          "instrument": 9862,
+          "beschreibung": "Verlässliche und langfristige Finanzierung des Landessportbunds garantieren",
+          "ursachen_ids": [3703],
+          "zitat": "Wir unterstützen den Landessportbund Berlin dabei, die Vielfalt des Berliner Sports in allen Facetten erlebbar und sichtbar zu halten, indem wir eine verlässliche und langfristige Finanzierung garantieren.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=84",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9954,
+          "instrument": 9851,
+          "beschreibung": "Gemeinsam mit den Kommunen ein langfristiges Programm zur Sanierung und Modernisierung von Sportstätten mit verlässlicher, planbarer Förderung auflegen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir Freie Demokraten werden: […] gemeinsam mit Kommunen ein langfristiges Programm zur Sanierung und Modernisierung von Sportstätten auflegen und dafür eine verlässliche und planbare Förderkulisse schaffen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=124",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9955,
+          "instrument": 9856,
+          "beschreibung": "Einen regelmäßig fortgeschriebenen Zustandsbericht der Sportstätten im Land für einen sinnvollen Mitteleinsatz einfordern",
+          "ursachen_ids": [3701],
+          "zitat": "Wir Freie Demokraten werden: […] einen aussagekräftigen und regelmäßig fortzuschreibenden Zustandsbericht der Sportstätten im Land für einen sinnvollen Mitteleinsatz einfordern",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=124",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9956,
+          "instrument": 9853,
+          "beschreibung": "Barrierefreie Planung und Anpassung von Sportstätten unterstützen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir Freie Demokraten werden: […] die barrierefreie Planung und Anpassung von Sportstätten unterstützen, um Teilhabe für alle zu sichern.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=124",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9957,
+          "instrument": 9859,
+          "beschreibung": "Vereine sollen Schulen, Sporthallen und kommunale Einrichtungen außerhalb der regulären Nutzungszeiten unbürokratisch und möglichst kostenfrei nutzen können",
+          "ursachen_ids": [3702],
+          "zitat": "Wir Freie Demokraten werden: […] uns dafür einsetzen, dass Vereine und ehrenamtliche Initiativen öffentliche Räume wie Schulen, Sporthallen oder kommunale Einrichtungen außerhalb der regulären Nutzungszeiten unbürokratisch und möglichst kostenfrei für ihre Arbeit nutzen können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9958,
+          "instrument": 9866,
+          "beschreibung": "Alle Landesförderprogramme für Ehrenamt und Vereine zentral bündeln, digital, mit einfachen Antragswegen, Pauschalen und verständlichen Nachweisen",
+          "ursachen_ids": [3703],
+          "zitat": "Wir Freie Demokraten werden: […] alle Landesförderprogramme für Ehrenamt und Vereine zentral bündeln: transparent, digital, mit einfachen Antragswegen, Pauschalen und verständlichen Nachweisen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9959,
+          "instrument": 9872,
+          "beschreibung": "Für eine Erhöhung der steuerlichen Freibeträge für Übungsleiter- und Ehrenamtspauschalen eintreten",
+          "ursachen_ids": [3703],
+          "zitat": "Wir Freie Demokraten werden: […] uns für eine Erhöhung der steuerlichen Freibeträge für Übungsleiter- und Ehrenamtspauschalen einsetzen",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9960,
+          "instrument": 9866,
+          "beschreibung": "Vereine bei der Umsetzung des Datenschutzes entlasten: Muster, zentrale Beratung und Bagatellregelungen bei geringem Risiko",
+          "ursachen_ids": [3703],
+          "zitat": "Wir Freie Demokraten werden: […] Vereine bei der DSGVO-Umsetzung entlasten: praxisnahe Muster (Einwilligungen, Website, Mitgliederlisten), zentrale Beratung und Bagatellregelungen dort nutzen, wo Risiken gering sind",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9961,
+          "instrument": 9865,
+          "beschreibung": "Gezielte Programme zur Stärkung ehrenamtlicher Strukturen im ländlichen Raum entwickeln, wo Bevölkerungsrückgang Vereine gefährdet",
+          "ursachen_ids": [3703],
+          "zitat": "Wir Freie Demokraten werden: […] gezielte Programme zur Stärkung ehrenamtlicher Strukturen im ländlichen Raum entwickeln, insbesondere dort, wo Bevölkerungsrückgang Vereine und Initiativen gefährdet.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=122",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9962,
+          "instrument": 9866,
+          "beschreibung": "Bürokratische Hindernisse im Sport abbauen, insbesondere bei Förderanträgen, Genehmigungen und Bauvorhaben",
+          "ursachen_ids": [3703],
+          "zitat": "Wir Freie Demokraten werden: […] auch im Sport Hindernisse abbauen, die sich aus allzu bürokratischen gesetzlichen Regelungen oder einem unvertretbar strengen Verwaltungsvollzug ergeben, insbesondere bei Förderanträgen, Genehmigungen und Bauvorhaben.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=124",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9963,
+          "instrument": 9852,
+          "beschreibung": "Kontinuierliche Investitionen in Sportstätten, damit die Nutzung kommunaler Sportstätten für Vereine bezahlbar bleibt",
+          "ursachen_ids": [3701],
+          "zitat": "Für die Sportvereine insgesamt muss die Inanspruchnahme von kommunalen Sportstätten bezahlbar bleiben. Wir setzen uns deshalb für kontinuierliche Investitionen in Sportstätten ein.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9964,
+          "instrument": 9857,
+          "beschreibung": "Planungs- und Förderverfahren für Sportstätten beschleunigen, digitalisieren und ehrenamtsfreundlich gestalten",
+          "ursachen_ids": [3701],
+          "zitat": "Planungs- und Förderverfahren müssen beschleunigt, digitalisiert und ehrenamtsfreundlich gestaltet werden.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9965,
+          "instrument": 9861,
+          "beschreibung": "Pauschalförderung für Vereine und Mitgliedsorganisationen dauerhaft erhöhen und dynamisieren",
+          "ursachen_ids": [3703],
+          "zitat": "Wir wollen die Pauschalförderung für Vereine und Mitgliedsorganisationen nachhaltig erhöhen und dynamisieren.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9966,
+          "beschreibung": "Vereine mit eigenen Sportanlagen bei der Förderung den Nutzern kommunaler Sportstätten gleichstellen, Sportfördergesetz anpassen",
+          "ursachen_ids": [3703, 3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gleichstellung bei der Förderung entlastet Vereine, die eigene Anlagen tragen und betreiben. Umfang offen, Gesetzesänderung nötig; Wirkung kaum untersucht.",
+          "zitat": "Dies wollen wir Liberale stärken, zum Beispiel durch die Unterstützung des Ehrenamtes, die Stimulierung zur Erlangung von Trainerlizenzen oder die Gleichstellung von Vereinen, die eigene Liegenschaften nutzen und tragen zu Vereinen, die kommunale Sportstätten in Anspruch nehmen. Bei letzterem geht es auch um die Anpassung des Sportfördergesetzes Sachsen-Anhalt.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9967,
+          "instrument": 9873,
+          "beschreibung": "Ehrenamt im Sport stärken durch Anerkennungsinstrumente, mehr Sichtbarkeit und bessere Vereinbarkeit mit Schule, Studium und Beruf",
+          "ursachen_ids": [3703],
+          "zitat": "Wir wollen ehrenamtliches Engagement im Sport konkret stärken – durch Anerkennungsinstrumente, mehr Sichtbarkeit für ehrenamtliches Wirken und bessere Rahmenbedingungen für die Vereinbarkeit mit Schule, Studium und Beruf sowie die langfristige Sicherung der Freiwilligendienste.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9968,
+          "instrument": 9866,
+          "beschreibung": "Auflagen, Dokumentationspflichten und Förderbürokratie für Sportvereine abbauen",
+          "ursachen_ids": [3703],
+          "zitat": "Staatliche Auflagen, Dokumentationspflichten und Förderbürokratie sind konsequent abzubauen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=51",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9969,
+          "instrument": 9869,
+          "beschreibung": "Trainer- und Übungsleiterstrukturen dauerhaft sichern, besonders im Nachwuchs- und Leistungssport",
+          "ursachen_ids": [3703],
+          "zitat": "Qualifizierte Trainer- und Übungsleiterstrukturen sichern wir dauerhaft – insbesondere im Nachwuchs- und Leistungssport.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9970,
+          "instrument": 9875,
+          "beschreibung": "Sport in Kita und Schule stärken und Kooperationen mit Sportvereinen ausbauen",
+          "ursachen_ids": [3703],
+          "zitat": "Wir stärken Sport in Kita und Schule und bauen Kooperationen mit Sportvereinen aus.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=52",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "keine_massnahme": {
+        "begruendung": "Inhaltsverzeichnis (S. 3–8): kein Kapitel zu Sport. Fundstellen S. 16, 30, 34, 55, 62 sowie 'Infrastruktur' (S. 39), 'Konnexitätsprinzip' (S. 56), 'Brauchtum'/'Kulturförderung' (S. 171–174) gelesen; Suche nach Sport, Verein, Ehrenamt, Schwimm nur mit Angelsport und Sportunterricht in anderem Zusammenhang. Nichts zu Sportstätten, deren Betriebskosten oder Sportvereinen.",
+        "stand": "2026-10-08",
+        "treffer": 8,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9971,
+          "instrument": 9851,
+          "beschreibung": "Sanierungsstau bei Sportflächen mit massiven Investitionen und einem Sofortprogramm beheben",
+          "ursachen_ids": [3701],
+          "zitat": "Der Sanierungsstau bei Sportflächen muss durch massive Investitionen und ein […] Sofortprogramm behoben werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=65",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9972,
+          "instrument": 9856,
+          "beschreibung": "Bei Neubauvorhaben den Bedarf an zusätzlichen Sportflächen berücksichtigen",
+          "ursachen_ids": [3701],
+          "zitat": "Bei Neubauvorhaben muss der Bedarf an zusätzlichen Sportflächen berücksichtigt werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=66",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9973,
+          "instrument": 9852,
+          "beschreibung": "Sicherstellen, dass Kommunen und Vereine Fördermittel für die Sanierung von Sportstätten und Schwimmhallen vollständig und unbürokratisch abrufen können",
+          "ursachen_ids": [3701],
+          "zitat": "Der Sanierungsstau bei Vereins- und Schulsportstätten sowie Schwimmhallen ist noch nicht überwunden. Wir werden sicherstellen, dass Kommunen und Vereine in Mecklenburg- Vorpommern Mittel vollständig und unbürokratisch abrufen können.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=72",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9974,
+          "instrument": 9869,
+          "beschreibung": "Aufwandsentschädigungen ehrenamtlicher Trainer, Übungsleiter und Schiedsrichter regelmäßig an Lohn- und Preisentwicklung anpassen",
+          "ursachen_ids": [3703],
+          "zitat": "Ehrenamtliche Trainer, Übungsleiter, Kampf- und Schiedsrichter leisten einen gesellschaftlichen Wert, der in keiner Statistik vollständig erfasst wird. […] Ihre möglichen Aufwandsentschädigungen werden wir regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=66",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9975,
+          "instrument": 9866,
+          "beschreibung": "Bürokratische Hürden für Vereine bei Förderanträgen, Versicherungs- und Nachweispflichten systematisch abbauen",
+          "ursachen_ids": [3703],
+          "zitat": "Bürokratische Hürden für Vereine, sei es bei Förderanträgen, Versicherungspflichten oder Nachweispflichten, werden wir systematisch abbauen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=66",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9976,
+          "instrument": 9864,
+          "beschreibung": "Breitensport als Gesundheitsvorsorge politisch und finanziell aufwerten",
+          "ursachen_ids": [3703],
+          "zitat": "Den Breitensport werden wir als Gesundheitsvorsorge politisch und finanziell aufwerten.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=63",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9977,
+          "instrument": 9873,
+          "beschreibung": "Ehrenamtskarte überarbeiten und mit Vorteilen wie Nahverkehrsvergünstigungen, Eintrittsermäßigungen und steuerlichen Erleichterungen ausstatten",
+          "ursachen_ids": [3703],
+          "zitat": "Die Ehrenamtskarte werden wir überarbeiten und mit wirklichen Vorteilen für die Ehrenamtlichen, wie Vergünstigungen im öffentlichen Nahverkehr über Eintrittsermäßigungen bis hin zu steuerlichen Erleichterungen, ausstatten.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=66",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9978,
+          "instrument": 9864,
+          "beschreibung": "Vereine für Sport (sowie Feuerwehr, Gesang, Brauchtum) im ländlichen Raum finanziell entlasten",
+          "ursachen_ids": [3703],
+          "zitat": "Vereine für Sport, Feuerwehr, Gesang und Brauchtum werden wir finanziell entlasten.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=193",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9979,
+          "instrument": 9876,
+          "beschreibung": "Sanierung von Turnhallen und Sportplätzen sowie Bau moderner, barrierefreier Sportstätten und Schwimmbäder; Bund beteiligt sich 15 Jahre mit je einer Milliarde Euro jährlich",
+          "ursachen_ids": [3701],
+          "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder. Daran soll sich der Bund in den kommenden 15 Jahren mit jeweils einer Milliarde Euro pro Jahr beteiligen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=56",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9980,
+          "beschreibung": "Schwimmbäder und Sportstätten als Teil einer Infrastrukturgarantie der Daseinsvorsorge; Kommunen in Finanzkrisen erhalten Mittel aus einem Bundesfonds für eine Mindestausstattung",
+          "ursachen_ids": [3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Bundesfonds für Kommunen in Finanznot kann den Betrieb von Bädern und Sportstätten sichern, ist aber nicht zweckgebunden und nur Soforthilfe; Ausgestaltung offen.",
+          "zitat": "Schwimmbäder und Sportstätten, Jugendzentren, Wohnungslosenhilfe und Schulpsycholog*innen sind unverzichtbarer Teil der öffentlichen Daseinsvorsorge. Dazu müssen die Kommunen ausreichend finanziert werden. Als Soforthilfeprogramm sollen Kommunen in Finanzkrisen aus einem Bundesfonds Mittel für eine Mindestausstattung der sozialen Infrastruktur bekommen können.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=44",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9981,
+          "instrument": 9851,
+          "beschreibung": "Jahrzehnt der Investitionen in den Breitensport mit zentraler Baudienststelle für den Sportstättenbau",
+          "ursachen_ids": [3701],
+          "zitat": "Wir werden ein „Jahrzehnt der Investitionen“ in den Breitensport einleiten. Dafür richten wir eine zentrale Baudienststelle für den Sportstättenbau ein.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=316",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9982,
+          "instrument": 9851,
+          "beschreibung": "Etat für Sportanlagen an Schulstandorten erhöhen und schnelle Sanierung der Schulsporthallen priorisieren",
+          "ursachen_ids": [3701],
+          "zitat": "Wir erhöhen den Etat für Sportanlagen an Schulstandorten und priorisieren die schnelle Sanierung dieser Hallen, damit Kinder und Jugendliche ihr Recht auf Bewegung und Sport wahrnehmen können.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=316",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9983,
+          "instrument": 9851,
+          "beschreibung": "Sanierung bezirklicher Sportanlagen im Sportanlagensanierungsprogramm beschleunigen und dessen Etat erhöhen",
+          "ursachen_ids": [3701],
+          "zitat": "Gleiches gilt für die Sportanlagen in den Bezirken, deren Sanierung wir im Rahmen des Sportanlagensanierungsprogramms beschleunigen werden. Den Etat für das Programm werden wir erhöhen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=316",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9984,
+          "instrument": 9852,
+          "beschreibung": "Bezirke finanziell bei der Umsetzung ihrer Sportentwicklungspläne (neue Sportstätten) unterstützen",
+          "ursachen_ids": [3701],
+          "zitat": "Die Bezirke unterstützen wir finanziell gezielt dabei, ihre bezirklichen Sportentwicklungspläne in die Tat umsetzen zu können.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=316",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9985,
+          "instrument": 9853,
+          "beschreibung": "Mindestens eine vollinklusive Sportanlage je Bezirk, Bau inklusiver Typensporthallen forcieren",
+          "ursachen_ids": [3701],
+          "zitat": "Dafür werden wir: […] das Ziel von mindestens einer vollinklusiven Sportanlage pro Bezirk konsequent umsetzen, die barrierefrei auffindbar und nutzbar ist. Um dieses Ziel schneller und kosteneffizienter zu erreichen, forcieren wir den Bau von inklusiven „Typensporthallen“.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=315",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9986,
+          "instrument": 9854,
+          "beschreibung": "Sanierungsbedürftige, von Ausfall bedrohte Bäder vorrangig finanziell absichern",
+          "ursachen_ids": [3701],
+          "zitat": "Sanierungsbedürftige Bäder, die auszufallen drohen, werden wir prioritär finanziell absichern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=317",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9987,
+          "instrument": 9854,
+          "beschreibung": "Mittel des Bädervertrags verlässlich auszahlen und wegen gestiegener Bau- und Energiekosten dynamisieren",
+          "ursachen_ids": [3702, 3701],
+          "zitat": "Der abgeschlossene Bädervertrag gibt den Berliner Bäder-Betrieben (BBB) Planungssicherheit. Die darin zugesagten Mittel müssen jedoch verlässlich fließen und angesichts der massiv gestiegenen Bau- und Energiekosten dynamisiert werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=317",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9988,
+          "instrument": 9852,
+          "beschreibung": "Sanierungsstau im Sportforum Hohenschönhausen und im Olympiapark abbauen",
+          "ursachen_ids": [3701],
+          "zitat": "Berlin verfügt mit dem Sportforum Hohenschönhausen und dem Olympiapark über zwei Sportkomplexe mit einzigartigem Potenzial. Beide Standorte leiden jedoch unter einem massiven Sanierungsstau, den wir konsequent abbauen werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=320",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9989,
+          "instrument": 9855,
+          "beschreibung": "Investitionsprogramm zur energetischen Sanierung der Kälteanlagen von Eissporthallen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir starten ein […] zur energetischen Sanierung der Kälteanlagen, um den Eissport auch in Zeiten der Klimakrise ökologisch nachhaltig und finanzierbar zu halten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=320",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9990,
+          "instrument": 9852,
+          "beschreibung": "Sonderprogramm zur Sanierung bestehender öffentlicher Kiezsportflächen (Bolz- und Basketballplätze)",
+          "ursachen_ids": [3701],
+          "zitat": "Wir legen ein Sonderprogramm zur Sanierung bestehender Kiezsportflächen auf.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=321",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9991,
+          "instrument": 9858,
+          "beschreibung": "Dem Sport im Sinne der Mehrfachnutzung weitgehenden Zugang zu Schulen ermöglichen",
+          "ursachen_ids": [3701],
+          "zitat": "Im Sinne der Mehrfachnutzung, soll dem Sport der Zugang zu den Schulen weitestgehend ermöglicht werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9992,
+          "beschreibung": "Ungenutzte Sportorte reaktivieren und in Eigenverantwortung der Vereine geben, saisonale Sportstätten ganzjährig nutzen",
+          "ursachen_ids": [3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Reaktivierte Orte in Vereinsverantwortung und ganzjährige Nutzung können Betriebskosten der Kommunen senken und Kapazität schaffen. Dagegen: Vereine übernehmen Lasten; Wirkung kaum untersucht.",
+          "zitat": "Wir setzen uns für die Reaktivierung ungenutzter Sport- und Bewegungsorte ein, die in die Eigenverantwortung der Sportvereine übertragen werden sollen. Saisonal genutzte Sportstätten müssen einer ganzjährigen aktiven Nutzung zugeführt werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=317",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9993,
+          "instrument": 9872,
+          "beschreibung": "Übungsleiterpauschale spürbar anheben, um das Ehrenamt im Sport zu stützen",
+          "ursachen_ids": [3703],
+          "zitat": "Das Ehrenamt ist das Rückgrat des Sports. […] Um es zu stützen, werden wir die Übungsleiterpauschale spürbar anheben",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9994,
+          "instrument": 9868,
+          "beschreibung": "Ehrenamt im Sport durch Digitalisierung von Bürokratie entlasten",
+          "ursachen_ids": [3703],
+          "zitat": "Um es zu stützen, werden wir […] die Digitalisierung vorantreiben, um das Ehrenamt von Bürokratie zu entlasten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9995,
+          "instrument": 9862,
+          "beschreibung": "Fördervereinbarung mit dem Landessportbund fortschreiben und anpassen, für Planungssicherheit der Vereine",
+          "ursachen_ids": [3703],
+          "zitat": "Die Fördervereinbarung mit dem Landessportbund schreiben wir fort, um den Vereinen Planungssicherheit zu geben, und passen sie an die neuen Herausforderungen an.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9996,
+          "instrument": 9860,
+          "beschreibung": "Vereinsinvestitionsprogramm finanziell aufstocken und entbürokratisieren",
+          "ursachen_ids": [3703, 3701],
+          "zitat": "Das Vereinsinvestitionsprogramm werden wir finanziell aufstocken und entbürokratisieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9997,
+          "instrument": 9860,
+          "beschreibung": "Ergänzender Fonds mit dem Landessportbund für die Basis des Breitensports, v. a. Personal und Instandhaltung",
+          "ursachen_ids": [3703, 3701],
+          "zitat": "Wir werden mit dem Landessportbund einen ergänzenden Fonds auflegen, der direkt in die Basis des Breitensports investiert, insbesondere zur Sicherung von Personal und zur Instandhaltung der Infrastruktur.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=313",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 9998,
+          "instrument": 9852,
+          "beschreibung": "Sportanlagen im Land ausbauen und sanieren",
+          "ursachen_ids": [3701],
+          "zitat": "Wir wollen: […] Sportanlagen ausbauen und sanieren, Breiten- und Leistungssport fördern sowie Bundesstützpunkte und Nachwuchsleistungssport sichern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=11",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9999,
+          "instrument": 9875,
+          "beschreibung": "Landesprogramme für Kinderbewegung, Sport in Schule und Verein sowie Schwimmen ausfinanzieren",
+          "ursachen_ids": [3703],
+          "zitat": "Sportförderung: Die Ausfinanzierung von den Programmen „Kinderbewegungsland“, „Gemeinsam Sport in Schule und Verein“ und „MV kann schwimmen“.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=11",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10000,
+          "instrument": 9851,
+          "beschreibung": "Langfristige Investitionsprogramme, mit denen das Land Kommunen bei Sanierung und Modernisierung von Bädern, Turnhallen und Sportanlagen verlässlich unterstützt",
+          "ursachen_ids": [3701],
+          "zitat": "Der hohe Sanierungsstau bei Schwimm- und Sportstätten muss abgebaut werden. Wir setzen uns für langfristige Investitionsprogramme ein, durch die Kommunen bei der Sanierung und Modernisierung von Bädern, Turnhallen und Sportanlagen verlässlich unterstützt werden.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=67",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10001,
+          "instrument": 9860,
+          "beschreibung": "Förderung des Vereinssportstättenbaus so ausstatten, dass Sanierungen und Neubauten der Vereine umgesetzt werden; planbare, unbürokratische Programme auch für kleine Vereine",
+          "ursachen_ids": [3701],
+          "zitat": "Wir wollen die Förderung des Vereinssportstättenbaus so ausstatten, […] dass notwendige Sanierungen und Neubauten tatsächlich umgesetzt werden können. Förderprogramme müssen planbar, unbürokratisch und auch auf kleine und mittlere Vereine zugeschnitten sein.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=67",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10002,
+          "beschreibung": "Vereinen ohne eigene Sportstätten Zugang zu Sportstätten ermöglichen; Nutzung muss finanzierbar sein",
+          "ursachen_ids": [3702],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bezahlbarer Zugang zu Sportstätten senkt Nutzungskosten der Vereine ohne eigene Anlagen; die Zusage nennt aber weder Instrument noch Finanzierung.",
+          "zitat": "Vereinen, die über keine eigenen Sportstätten verfügen, ist der Zugang zu ermöglichen. Viele Vereine verfügen nicht über eigene Sportstätten und sind auf „Einmietmöglichkeiten“ angewiesen. Der Zugang und die Nutzung müssen möglich und finanzierbar sein.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=68",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10003,
+          "instrument": 9873,
+          "beschreibung": "Förderung des Ehrenamts im Sport mit dem Landessportbund weiterentwickeln, u. a. landesweite Ehrenamtskarte und Sicherung der Freiwilligendienste",
+          "ursachen_ids": [3703],
+          "zitat": "Gemeinsam mit dem Landessportbund wollen wir die Förderung des Ehrenamtes weiterentwickeln, u.a. durch mehr Anerkennung, eine landesweite Ehrenamtskarte, die Sicherung der Freiwilligendienste und den Ausbau der Vereinbarkeit von Engagement mit Schule, Studium und Beruf.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=68",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10004,
+          "instrument": 9870,
+          "beschreibung": "Vereine gezielt bei Aus- und Fortbildung von Übungsleitern und Trainern sowie bei der Digitalisierung unterstützen",
+          "ursachen_ids": [3703],
+          "zitat": "Außerdem wollen wir die Vereine bei der Aus- und Fortbildung von Übungsleiter:innen und Trainer:innen, bei der Digitalisierung und bei der Entwicklung von Strukturen der Fan-Kultur gezielt unterstützen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=68",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10005,
+          "instrument": 9865,
+          "beschreibung": "Gesetz zur Stärkung des Ehrenamts mit Ehrenamtsfonds und Kommunalbudget für Strukturen des Engagements (allgemein, nicht nur Sport)",
+          "ursachen_ids": [3703],
+          "zitat": "Die Linke will: […] dafür in einem „Gesetz zur Stärkung des Ehrenamts den rechtlichen Rahmen schaffen und einen Ehrenamtsfonds zur Förderung einzelner Maßnahmen und Projekte sowie ein Kommunalbudget zur Schaffung von kommunalen Strukturen zur Unterstützung des bürgerschaftlichen Engagements einrichten,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=14",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10006,
+          "instrument": 9877,
+          "beschreibung": "Investitionsprogramm für kinder- und familienfreundliche Infrastruktur in Kommunen mit Sanierungsstau, mit wohnortnahem Zugang u. a. zu Sportstätten.",
+          "ursachen_ids": [3701],
+          "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=32",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10007,
+          "instrument": 9851,
+          "beschreibung": "Sanierungsoffensive für Sportstätten: Kürzungen stoppen, Sanierungsmittel verdoppeln, Vorrang für Instandhaltung, Umbau und barrierefreie Modernisierung",
+          "ursachen_ids": [3701],
+          "zitat": "Sanierungsoffensive für Sportstätten: Wir stoppen Kürzungen und verdoppeln die Mittel für Sanierungen. Priorität haben Instandhaltung, Umbau und barrierefreie Modernisierung.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10008,
+          "instrument": 9852,
+          "beschreibung": "Kein Abriss von Sportstätten ohne gleichwertigen Ersatz; bestehende Anlagen wie SEZ und Jahn-Sportpark erhalten und ertüchtigen",
+          "ursachen_ids": [3701],
+          "zitat": "Kein Abriss ohne gleichwertigen Ersatz – das SEZ, der Jahn-Sportpark und andere Sportstätten müssen fit für die Zukunft gemacht werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10009,
+          "instrument": 9852,
+          "beschreibung": "Neue Sporthallen und Plätze dort bauen, wo sie dringend benötigt werden",
+          "ursachen_ids": [3701],
+          "zitat": "Unsere konkreten Maßnahmen: Sanierungsoffensive für Sportstätten: […] Neue Sporthallen und Plätze müssen dort entstehen, wo sie dringend benötigt werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10010,
+          "instrument": 9859,
+          "beschreibung": "Kostenlose oder stark vergünstigte Nutzung kommunaler Sportanlagen für Vereine",
+          "ursachen_ids": [3702],
+          "zitat": "Breitensport und Vereine stärken: Kostenlose oder stark vergünstigte Nutzung kommunaler Anlagen für Vereine.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10011,
+          "instrument": 9864,
+          "beschreibung": "Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte im Breitensport",
+          "ursachen_ids": [3703],
+          "zitat": "Breitensport und Vereine stärken: […] Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10012,
+          "instrument": 9851,
+          "beschreibung": "Vollständige Sanierung aller Schulsportstätten",
+          "ursachen_ids": [3701],
+          "zitat": "Schulsport ausbauen: Mehr Stunden, bessere Ausstattung und vollständige Sanierung aller Schulsportstätten.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10013,
+          "instrument": 9852,
+          "beschreibung": "Regelmäßige Sanierung und Modernisierung bestehender kommunaler Infrastruktur, ausdrücklich auch Sporthallen und Schwimmbäder",
+          "ursachen_ids": [3701],
+          "zitat": "Unsere Ziele: […] Regelmäßige Sanierung und Modernisierung bestehender Infrastruktur, etwa Straßen, Brücken, Schulen, Sporthallen, Schwimmbäder und Kitas.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=76",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10014,
+          "beschreibung": "Unbürokratischer Soforthilfefonds für kleine Vereine, etwa 1.000 Euro pro Verein",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einmalige kleine Hilfe von etwa 1.000 Euro entlastet kleine Vereine kurzfristig, ändert ihre finanzielle Lage aber nicht dauerhaft. Rasch umsetzbar.",
+          "zitat": "Ein […] Soforthilfefonds für kleine Vereine, etwa in Höhe von 1.000 Euro pro Verein.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=78",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10015,
+          "instrument": 9869,
+          "beschreibung": "Jährlicher Anerkennungsbonus für Übungsleiter, Jugendbetreuer und Vorstandsmitglieder im Ehrenamt",
+          "ursachen_ids": [3703],
+          "zitat": "Ein jährlicher Anerkennungsbonus für Übungsleiter, Jugendbetreuer und Vorstandsmitglieder, als Zeichen der Wertschätzung für ehrenamtliche Arbeit.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=78",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10016,
+          "instrument": 9866,
+          "beschreibung": "Landesweites digitales Vereinsportal zur Vereinfachung von Verwaltung, Förderung und Beratung der Vereine",
+          "ursachen_ids": [3703],
+          "zitat": "Ein digitales Vereinsportal Mecklenburg-Vorpommern, zur Vereinfachung von Verwaltung, Förderung und Beratung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=77",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10017,
+          "instrument": 9851,
+          "beschreibung": "In Erhalt und Neubau von Sportstätten investieren, vorrangig Schulsportstätten und Bäder; Förderprogramme langfristig, einfach und auf Energieeffizienz und Mehrfachnutzung ausrichten",
+          "ursachen_ids": [3701],
+          "zitat": "Deshalb muss in den kommenden Jahren intensiv in die Erhaltung oder den […] Neubau von Sportstätten investiert werden. […] Dabei sind Förderprogramme langfristig, unkompliziert und verlässlich auszugestalten sowie stärker auf Energieeffizienz, Barrierefreiheit und Mehrfachnutzung auszurichten.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=41",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10018,
+          "beschreibung": "Ehrenamt stärken: Freistellungsgesetz auf privates Ehrenamt ausweiten, Ehrenamtspauschalen erhöhen, Ehrenamt bei der Rente anrechnen",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Freistellung für privates Ehrenamt kann das Land regeln; Pauschalen und Rentenanrechnung sind Bundesrecht. Ob solche Anreize mehr Engagement bringen, ist umstritten.",
+          "zitat": "Dazu bedarf es einer Ausweitung des Freistellungsgesetzes auf privates Ehrenamt, die Erhöhung von Ehrenamtspauschalen sowie die Anerkennung der ehrenamtlichen Tätigkeit bei der Rentenberechnung.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=42",
+          "beleg_studie_url": "https://ideas.repec.org/p/zur/iewwpx/007.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10019,
+          "instrument": 9866,
+          "beschreibung": "Verwaltungs- und Förderverfahren vereinfachen, um Vereine und Verbände zu entlasten",
+          "ursachen_ids": [3703],
+          "zitat": "Gleichzeitig müssen Verwaltungs- und Förderverfahren vereinfacht werden, um Vereine und Verbände spürbar zu entlasten.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=42",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10020,
+          "beschreibung": "Mehr Bundesmittel für Sportvereine und ehrenamtliche Initiativen bereitstellen",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Bundesmittel würden die Finanzlage der Vereine verbessern; Umfang und Weg sind offen, und Breitensport ist Ländersache, der Bund kann nur über Programme beitragen.",
+          "zitat": "Breitensport und Vereine: Es werden mehr Bundesmittel für Sportvereine und ehrenamtliche Initiativen zur Verfügung gestellt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=130",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10021,
+          "beschreibung": "Sportstätten barrierefrei gestalten und spezielle Förderprogramme für Menschen mit Behinderung einrichten",
+          "ursachen_ids": [3701],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Barrierefreie Sportstätten verbessern Teilhabe, berühren den Sanierungsrückstand nur beim Umbau. Sportstätten sind Sache von Ländern und Kommunen; der Bund kann nur über Förderprogramme beitragen.",
+          "zitat": "Inklusive Sportangebote: Sportstätten werden barrierefrei gestaltet und spezielle Förderprogramme für Menschen mit Behinderung eingerichtet, um allen eine gleichberechtigte Teilhabe zu ermöglichen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=161",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10022,
+          "beschreibung": "Nationale Kampagnen zur Gewinnung neuer Vereinsmitglieder, besonders Kinder, Jugendliche und sozial Benachteiligte",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kampagnen können Mitglieder und damit Beitragseinnahmen bringen, setzen an der finanziellen Lage der Vereine aber nur indirekt an; Wirkung solcher Kampagnen kaum belegt.",
+          "zitat": "Mitgliedergewinnung: Nationale Kampagnen sollen neue Vereinsmitglieder gewinnen, insbesondere unter Kindern, Jugendlichen und sozial benachteiligten Gruppen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=161",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10023,
+          "instrument": 9858,
+          "beschreibung": "Bessere Nutzung der Sportstandorte: Schulhöfe, Sporthallen und Grünflächen auch nach Schulschluss, am Wochenende und in den Ferien öffnen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir ermöglichen eine bessere Nutzung der rund 1.200 Sportstandorte Berlins. Dafür öffnen wir Schulhöfe, Sporthallen, Parks und Grünflächen konsequent auch nach Schulschluss, am Wochenende und in den Ferien.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=87",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10024,
+          "instrument": 9858,
+          "beschreibung": "Buchung von Hallen und Plätzen für Vereine über ein transparentes Online-System vereinfachen, freie Kapazitäten sichtbar machen",
+          "ursachen_ids": [3701],
+          "zitat": "Wir vereinfachen die Buchung von Hallen oder Plätzen für Vereine und Initiativen über ein transparentes Online-System. So machen wir freie Kapazitäten sichtbar und bauen bürokratische Hürden ab.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=87",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10025,
+          "beschreibung": "Zuschüsse für Ausrüstung oder Honorare an Vereine, die Zugewanderte und Geflüchtete aktiv einbinden",
+          "ursachen_ids": [3703],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zuschüsse für Ausrüstung und Honorare entlasten einen kleinen Teil der Vereine zweckgebunden; die finanzielle Lage der Vereine insgesamt berührt das nur am Rand.",
+          "zitat": "Wir unterstützen Vereine, die Migrant*innen und Menschen mit Fluchterfahrung aktiv einbinden, mit Zuschüssen für Ausrüstung oder für Honorare.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=88",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10026,
+          "instrument": 9873,
+          "beschreibung": "Ehrenamtskarte so anpassen, dass ehrenamtlich Engagierte unter Federführung des Landes den ÖPNV kostenlos nutzen können",
+          "ursachen_ids": [3703],
+          "zitat": "Unter Federführung des Landes ermöglichen die Landkreise den Menschen, die sich ehrenamtlich engagieren, den ÖPNV kostenlos zu nutzen.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf#page=15",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3701, 3702, 3703],
+      "massnahmen": [
+        {
+          "id": 10027,
+          "instrument": 9854,
+          "beschreibung": "Landesinvestitionsprogramm für Schwimmhallen und Schwimmbäder, das Sanierung, Neubau und Betrieb langfristig sichert",
+          "ursachen_ids": [3701, 3702],
+          "zitat": "Investitionsprogramm für Schwimmhallen und Schwimmbäder aufsetzen, um Sanierung, Neubau und Betrieb langfristig zu sichern",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=29",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10028,
+          "instrument": 9865,
+          "beschreibung": "Gezielte Förderung von Vereinen mit hohem Jugendanteil durch Zuschüsse für Übungsleiter, Ausstattung und Infrastruktur",
+          "ursachen_ids": [3703],
+          "zitat": "Gezielte Förderung von Vereinen mit hohem Jugendanteil, etwa durch Zuschüsse für Übungsleiter, Ausstattung und Infrastruktur",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10029,
+          "instrument": 9866,
+          "beschreibung": "Einfachere Förderanträge und Bürokratieabbau für ehrenamtlich geführte Vereine",
+          "ursachen_ids": [3703],
+          "zitat": "Einfachere Förderanträge und Bürokratieabbau für ehrenamtlich geführte Vereine",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=27",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10030,
+          "instrument": 9862,
+          "beschreibung": "Landessportbund als zentrale Säule der Sportförderung weiterführen und auskömmlich finanzieren",
+          "ursachen_ids": [3703],
+          "zitat": "Weiterführung und auskömmliche Finanzierung des Landessportbund Sachsen-Anhalt als zentrale Säule der Sportförderung",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=153",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10031,
+          "instrument": 9874,
+          "beschreibung": "Land übernimmt GEMA-Gebühren für bis zu vier nicht-kommerzielle, eintrittsfreie Veranstaltungen pro Jahr je gemeinnützigem Verein",
+          "ursachen_ids": [3703],
+          "zitat": "Übernahme der GEMA-Gebühren für bis zu vier Veranstaltungen pro Jahr je eingetragenem, gemeinnützigem Verein",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=154",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

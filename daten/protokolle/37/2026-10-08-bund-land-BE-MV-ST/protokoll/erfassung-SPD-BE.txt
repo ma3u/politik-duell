@@ -1,0 +1,34 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten weiter vorantreiben", "ursachen_ids": [3701], "zitat": "Wir setzen Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten mit Nachdruck fort.", "seite": 56 },
+    { "beschreibung": "Typenbauprogramm für Sportfunktionsgebäude und zentrale Planungs- und Baueinheit, die Bezirke entlastet und Bau und Sanierung beschleunigt", "ursachen_ids": [3701], "zitat": "Bei der bezirklichen Sportinfrastruktur richten wir uns an der Sportentwicklungsplanung aus und entwickeln ein Typenbauprogramm für Sportfunktionsgebäude. Eine zentrale Planungs- und Baueinheit entlastet Bezirke und beschleunigt barrierefreien Bau und Sanierung.", "seite": 56 },
+    { "beschreibung": "In landeseigene Schwimmbäder investieren, Typenschwimmhallen bauen und Bestandsbäder klimagerecht sanieren", "ursachen_ids": [3701], "zitat": "Wir investieren in landeseigene Schwimmbäder, bauen Typenschwimmhallen und sanieren Bestandsbäder klimagerecht.", "seite": 56 },
+    { "beschreibung": "Unbürokratische Instandhaltungsbudgets für Vereine, ohne komplizierte Antragsverfahren selbst verwendbar", "ursachen_ids": [3701], "ursachen_offen": [3703], "zitat": "Wir führen unbürokratische Instandhaltungsbudgets für Vereine ein. Diese können selbstbestimmt und ohne komplizierte Antragsverfahren genutzt werden.", "seite": 55 },
+    { "beschreibung": "Sportstätten den Vereinen weiterhin gebührenfrei überlassen", "ursachen_ids": [3702], "zitat": "Sportstätten stellen wir Vereinen weiterhin gebührenfrei zur Verfügung.", "seite": 55 },
+    { "beschreibung": "Vereinsinvestitionsprogramm entbürokratisieren und finanziell stärken", "ursachen_ids": [3703], "ursachen_offen": [3701], "zitat": "Das Vereinsinvestitionsprogramm entbürokratisieren wir und stärken es finanziell.", "seite": 56 },
+    { "beschreibung": "Fördervereinbarung mit dem Landessportbund über 2029 hinaus fortführen", "ursachen_ids": [3703], "zitat": "Die Fördervereinbarung mit dem Landessportbund wollen wir nach 2029 fortführen; Bundes- und EU - Programme akquirieren wir stärker für Breiten- und Spitzensport.", "seite": 56 },
+    { "beschreibung": "Trainerinnen und Trainer weiter qualifizieren und ihre Einkommenssituation verbessern", "ursachen_ids": [3703], "zitat": "Trainer*innen qualifizieren wir weiter und verbessern ihre Einkommenssituation.", "seite": 56 }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3–6; Kapitel „Zuhause in der Sportmetropole“ S. 55–56 vollständig; Fundstellen S. 11, 25, 38, 40, 47. S. 57 ist eine leere Seite am Kapitelende (Kapitel endet auf S. 56 mit Abschnitt Olympia, S. 58 beginnt neuer Teil), kein fehlender Inhalt erkennbar.
+
+Kein Bündel im Auftrag, daher kein Feld „buendel“.
+
+Grenzfälle:
+- Instandhaltungsbudgets für Vereine (S. 55): Erhalt von Sportstätten (3701), aber als Budget an Vereine (3703) – 3703 offen.
+- Vereinsinvestitionsprogramm (S. 56): Vereinsförderung (3703), dient aber Investitionen in vereinseigene Anlagen (3701) – 3701 offen.
+
+Nicht erfasst:
+- S. 56 „Vereins-, Kita- und Schulschwimmen bleiben gebührenfrei“: gleiche Zusage wie gebührenfreie Sportstätten für Vereine (S. 55), dort einmal erfasst.
+- S. 56 Neubau Jahn-Sportpark („setzen uns ein“), neue Hallen und Sportplätze in Tegel, Wassersportzentrum Grünau, Strandbad Wannsee: Einzelprojekte des bereits erfassten Neubaus/Sanierung von Sportstätten; Sportforum/Paul-Heyse-Straße, Olympiapark: Spitzensport (R2).
+- S. 56 Großveranstaltungen, Profisport, Olympische Spiele: allgemeine Sportförderung ohne Vereinsbezug (R2).
+- S. 56 „Bezirkliche Sportbünde unterstützen wir“: ohne konkretes Instrument.
+- S. 56 Förderung der Sportbetätigung von Landesbeschäftigten in Vereinen: setzt nicht an den Ursachen an.
+- S. 55 Sportvereine in Schul- und Kitaprogramme einbinden, zentrale Plattform, Schwimmunterricht, Sportjugend, Aktivplätze in Parks: Bewegung von Kindern bzw. individueller Sport, nicht Finanzierung von Vereinen oder Sportstätten; ebenso S. 38, 40 (Kooperation Kita/Ganztag mit Sportvereinen, Kapitel Bildung).
+- S. 11 E-Sport-Breitensportvereine „unterstützen wir langfristig“: E-Sport-Förderung im Digitalkapitel, ohne konkretes Instrument.
+- S. 25 „Sondernutzungsgebühr“ für E-Scooter: anderer Zusammenhang.
+- S. 47 Schwimmbäder: nur Verweis auf das Sportkapitel.

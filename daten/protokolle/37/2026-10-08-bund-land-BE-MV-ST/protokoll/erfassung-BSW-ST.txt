@@ -1,0 +1,46 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "In Erhalt und Neubau von Sportstätten investieren, vorrangig Schulsportstätten und Bäder; Förderprogramme langfristig, einfach und auf Energieeffizienz und Mehrfachnutzung ausrichten",
+      "ursachen_ids": [3701],
+      "zitat": "Deshalb muss in den kommenden Jahren intensiv in die Erhaltung oder den […] Neubau von Sportstätten investiert werden. […] Dabei sind Förderprogramme langfristig, unkompliziert und verlässlich auszugestalten sowie stärker auf Energieeffizienz, Barrierefreiheit und Mehrfachnutzung auszurichten.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Ehrenamt stärken: Freistellungsgesetz auf privates Ehrenamt ausweiten, Ehrenamtspauschalen erhöhen, Ehrenamt bei der Rente anrechnen",
+      "ursachen_ids": [3703],
+      "zitat": "Dazu bedarf es einer Ausweitung des Freistellungsgesetzes auf privates Ehrenamt, die Erhöhung von Ehrenamtspauschalen sowie die Anerkennung der ehrenamtlichen Tätigkeit bei der Rentenberechnung.",
+      "seite": 42
+    },
+    {
+      "beschreibung": "Verwaltungs- und Förderverfahren vereinfachen, um Vereine und Verbände zu entlasten",
+      "ursachen_ids": [3703],
+      "zitat": "Gleichzeitig müssen Verwaltungs- und Förderverfahren vereinfacht werden, um Vereine und Verbände spürbar zu entlasten.",
+      "seite": 42
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [20, 41, 42, 75, 76], "grund": "Kapitel ‚Breitensport stärken‘ und ‚Starke Kommunen‘ gelesen; nichts zu Betriebskosten, Hallenentgelten oder Betriebszuschüssen. Treffer S. 20 betrifft land- und forstwirtschaftliche Betriebe." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2–4), Kapitel 4.1 „Kultur fördern“/„Breitensport stärken“ (PDF-S. 41–43), „Starke Kommunen – Starkes Land“ (S. 75–76), Fundstellen S. 14, 15, 20, 54, 69; Grep nach Sport/Schwimm/Bäder/Verein im ganzen Text.
+
+Nicht erfasst:
+- S. 14/15: Gemeinnützigkeit enger definieren – betrifft NGOs/Parteienfinanzierung, nicht Sportvereine.
+- S. 20: „wirtschaftlicher Betrieb“ – Land- und Forstwirtschaft.
+- S. 41: Engagement von Sportvereinen „stärken“ – allgemeines Ziel ohne Instrument.
+- S. 42: Bezahlung von Trainern im Leistungssport, Stützpunkte, kostenfreie sportmedizinische Untersuchung für Landessportschulen – Leistungssport (R2).
+- S. 42: Ehrenamtskarten zugänglicher machen – „sollte“.
+- S. 42: Stärkere Zusammenarbeit von Schulen, Kitas und Sportvereinen, verlässliche Rahmenbedingungen für Sportjugendarbeit – Bedarfsfeststellung ohne konkrete Zusage.
+- S. 42: Unterstützung der sportpolitischen Forderungen des Landessportbundes – Bekenntnis ohne eigene Handlung; Zielliste „Unsere Ziele“ – Leitbilder.
+- S. 54: gemeinsame Nutzung von Räumlichkeiten – Hochschulen.
+- S. 69: Erhöhung der Ehrenamtspauschalen – Feuerwehr (gleiche Zusage wie S. 42, dort erfasst).
+- S. 75: Schwimmbäder im Investitionsstau – Lagebeschreibung.
+- S. 76: ständige Grundfinanzierung der Kommunen für Investitionen in die Daseinsvorsorge – allgemeine Kommunalfinanzierung ohne Bezug zu Sportstätten; Ehrenamt (auch Sport) braucht „bessere Ausstattung, verlässliche Förderung, steuerliche Entlastung“ – allgemein, Ehrenamt bereits über S. 42 erfasst.
+
+Richtungen ohne Maßnahme: Bestand priorisieren/gemeinsam nutzen (nur Mehrfachnutzung als Förderkriterium in Maßnahme 1), Betriebskosten/Hallenentgelte, Eigenverantwortung und Auslastung, Eigeneinnahmen und Kooperation der Vereine.
+Seite ohne Text: S. 1 (Titelseite), ohne Bedeutung.

@@ -1,0 +1,28 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [],
+  "keine_massnahme": "Kein Inhaltsverzeichnis; Kapitel 'Verkehr' (S. 48–50), 'Natur, Umwelt, Sauberkeit und Tierschutz' (S. 56–58), 'Innere Sicherheit' (S. 38–41), Energie (S. 47), Wohnen/Leerstand (S. 8, 12), Finanzen (S. 54) und alle Fundstellen gelesen. Einzelhandel, Geschäfte oder Ortskerne kommen im Programm nicht vor; Sauberkeits- und Verkehrszusagen gelten stadtweit ohne Bezug zu Innenstadt oder Einzelhandel (R2), die einzige Stelle mit 'Innenstadtbereich' (S. 47) ist keine Handlungszusage.",
+  "nicht_erfasst": [
+    { "ursache": 3603, "seiten": [26, 27, 38, 41, 47, 56, 57, 58], "grund": "Sauberkeitszusagen (Kiezreinigungsteams, Sperrmüll, Kontrollen Ordnungsamt, S. 41, 58) und Begrünung (S. 56) gelten stadtweit und nennen weder Innenstadt noch Einzelhandel (R2); S. 47 nennt Begrünung als 'sinnvolle Investitionen im Innenstadtbereich' ohne Zusage, im Kontext Klima/Hitze; S. 26/27 Instandhaltung von Sportstätten." },
+    { "ursache": 3602, "seiten": [35, 44, 54], "grund": "'Ansiedlung' betrifft Geflüchtete (S. 35), Rüstungsbetriebe (S. 44) und Unternehmen allgemein über die Gewerbesteuer (S. 54); nichts zu Sortiment oder Ansiedlung in Innenstädten." },
+    { "ursache": 3604, "seiten": [22, 49], "grund": "Öffnungszeiten betreffen Arztpraxen (S. 22); Parkraummanagement und Ladezonen (S. 49) ohne Bezug zu Innenstadt oder Einzelhandel (R2, gehört zu Autofahren)." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: S. 1–6 (Vorwort, Friedenspolitik, Beginn Wohnen; kein Inhaltsverzeichnis), S. 8 und 12 (Leerstand von Wohnungen), S. 12 (Stadtteilzentren gegen Einsamkeit), S. 22, 26–27, 35, 38, 40–41, 44, 47, 48–50 (Verkehr), 54 (Gewerbesteuer), 56–58 (Natur, Umwelt, Sauberkeit). Volltextsuche nach Einzelhandel, Innenstadt, Ortskern, Geschäft, Laden, Gewerbe, Handel, Einkauf, Stadtbild, Mittelstand: kein Treffer zum Einzelhandel in Innenstädten.
+
+Nicht erfasst:
+- S. 8: Vorgehen gegen spekulativen Leerstand – Wohnungen, gehört zu Miete (R2), zudem Prüfauftrag.
+- S. 12: Leerstand erfassen (Housing First) – Wohnungen, R2.
+- S. 12: Ausbau von Stadtteilzentren – soziale Begegnungsorte gegen Einsamkeit, kein Bezug zu Einkaufsangeboten.
+- S. 38: mehr Beleuchtung, städtebauliche Kriminalprävention in Parks und Bahnhofsvorplätzen – Sicherheit, kein Innenstadt-/Einzelhandelsbezug.
+- S. 41: gemeinsame Kontrollen Ordnungsamt/Polizei/Zoll für eine saubere Stadt – stadtweit, R2.
+- S. 47: Baumpflanzungen, Begrünung, Trinkwasserbrunnen 'sinnvolle Investitionen im Innenstadtbereich' – Bewertung ohne Handlungszusage, Klimaanpassung.
+- S. 49: Parkraummanagement, Quartiersgaragen, Ladezonen, Kiezblocks ablehnen – kein Bezug zu Innenstadt/Einzelhandel (R2).
+- S. 50: Baustellenkoordination, Haftung gegenüber Gewerbetreibenden bei Einbußen – Baustellen allgemein, nennt weder Innenstadt noch Einzelhandel.
+- S. 56: Begrünungspflichten, Trinkwasserstellen, begrünte Plätze – stadtweit, Umwelt/Klima.
+- S. 58: Kiezreinigungsteams, Reaktion binnen 24 Stunden, Sperrmüllabfuhr – stadtweit, R2.
+
+Richtungen ohne Maßnahme: alle (Nutzungsmischung/Ansiedlung, Marktprofile, Aufenthaltsqualität, Sauberkeit in Innenstädten, Erreichbarkeit Auto, Nahmobilität, Öffnungszeiten).

@@ -1,0 +1,45 @@
+{
+  "partei_id": 18,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt beim Justizministerium einrichten",
+      "ursachen_ids": [3403],
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: Sicherheit entsteht durch Prävention, konsequente Strafverfolgung und transparente Kontrolle. […] Eine unabhängige Ermittlungsstelle für mutmaßliche Polizeigewalt im Bereich des Justizministeriums einrichten",
+      "seite": 170
+    },
+    {
+      "beschreibung": "Bodycams im Polizeidienst verpflichtend einsetzen, zur Einsatzdokumentation und zum Schutz aller Beteiligten",
+      "ursachen_ids": [3403],
+      "ursachen_offen": [3402],
+      "zitat": "Unsere Lösung – Konkrete Maßnahmen: Sicherheit entsteht durch Prävention, konsequente Strafverfolgung und transparente Kontrolle. […] Bodycams im Polizeidienst zur besseren Einsatzdokumentation und zum Schutz aller Beteiligten verpflichtend einsetzen",
+      "seite": 170
+    },
+    {
+      "beschreibung": "Verbindliche Fortbildungen zur Antidiskriminierung in Verwaltung, Schule und Polizei",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "zitat": "Wir schaffen klare rechtliche Grundlagen und stärken unabhängige Strukturen, damit Diskriminierung wirksam verhindert und verfolgt werden kann. Dazu gehören insbesondere: […] Verbindliche, kooperative Fortbildungen zur Antidiskriminierung in Verwaltung, Schule und Polizei",
+      "seite": 131
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [92, 168, 170], "grund": "Keine Regeln zu Kontrollen oder Kontrollbefugnissen gegenüber Personen; S. 92 betrifft Verkehrskontrollen (Vision Zero), S. 168 Kontrollen bei Gewerbeanmeldungen und Befugnisse gegen organisierte Kriminalität." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 2–7; Kapitel „Innen, Recht & Bevölkerungsschutz“ S. 165–175 vollständig; Fundstellen S. 92, 170; weitere Polizei-Stellen S. 111, 125, 131, 155.
+
+Erfasst: S. 170 unabhängige Ermittlungsstelle (3403); S. 170 Bodycams (3403 nach R1 Dokumentation von Einsätzen; 3402 offen, da Bodycams auch als Mittel der Deeskalation/Einsatzpraxis gelten – Best Practice S. 170 nennt „Transparenz und Deeskalation“); S. 131 Antidiskriminierungs-Fortbildung der Polizei (nur offen 3402: Fortbildung der Polizei nach R1, aber Kapitel „Diskriminierung“, R2 ordnet diskriminierende Kontrollauswahl dem Thema Diskriminierung zu).
+
+Nicht erfasst:
+- S. 131 Antidiskriminierungsbeauftragte in Schulen, Behörden und Polizei: Diskriminierungsfälle, nach R2 Thema Diskriminierung im Alltag (Grenzfall zu 3403 Beschwerdestellen).
+- S. 165 Einleitung („unabhängige Kontrolle sicherstellen“): allgemeines Leitbild, konkret auf S. 170 erfasst.
+- S. 166 Personal, S. 167 Präsenz im ländlichen Raum, feste regionale Teams: R2 (Ausstattung/Zahl der Polizei → Sicherheit).
+- S. 168 Befugnisse von Ermittlungs- und Kontrollbehörden nachschärfen, konzertierte Kontrollen bei Gewerbeanmeldungen: organisierte Kriminalität, keine Personenkontrollen.
+- S. 92 „Kontrollen verstärken“: Verkehrssicherheit, anderer Zusammenhang.
+- S. 111 Verzicht auf intransparente Überwachungssoftware: Datenschutz, kein Polizeikontakt.
+- S. 125 Schulungen für Polizei gegen Frauenhass, S. 155 Polizeischulungen bei Angriffen auf Medienschaffende und Pressefreiheit bei Polizeieinsätzen: anderer Zusammenhang (Opferschutz, Pressefreiheit).
+- S. 171 polizeiliche Gefährderansprachen: Täterarbeit häusliche Gewalt.
+Richtungen ohne Maßnahme: 3401 beide Richtungen; 3402 „Handlungsfähigkeit und Rückhalt der Polizei“.

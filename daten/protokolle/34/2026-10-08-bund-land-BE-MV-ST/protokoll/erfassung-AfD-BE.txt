@@ -1,0 +1,28 @@
+{
+  "partei_id": 15,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Mehr anlasslose Polizeikontrollen in Problemvierteln", "ursachen_ids": [3401], "zitat": "Die AfD fordert: […] Mehr Polizeikontrollen ohne Anlass in Problemvierteln.", "seite": 13 },
+    { "beschreibung": "Vollständige Videoüberwachung in allen Brennpunktbereichen", "ursachen_ids": [], "ursachen_offen": [3401], "zitat": "Die AfD fordert: […] Eine vollständige Videoüberwachung in allen Brennpunktbereichen.", "seite": 13 },
+    { "beschreibung": "Rechtsgrundlage für nächtliche Ausgangssperren für jugendliche Intensivtäter schaffen", "ursachen_ids": [], "ursachen_offen": [3401], "zitat": "Die AfD fordert: […] Eine rechtliche Grundlage für kriminalitätsbezogene nächtliche Ausgangssperren für jugendliche Intensivtäter.", "seite": 13 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3402, "seiten": [12, 13], "grund": "Keine Zusage zu Einsatzpraxis, Kommunikation oder Fortbildung; 'ausreichende Ausbildung des Nachwuchses' steht in der Personalforderung (R2: Sicherheit)." },
+    { "ursache": 3403, "seiten": [13], "grund": "Treffer 'polizeikontrolle' betrifft anlasslose Kontrollen (3401); keine Zusage zu Beschwerdestellen, Kennzeichnung oder Dokumentation. Aufhebung des LADG gehört nach R2 zu Diskriminierung im Alltag." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2-3; Kapitel "Innere Sicherheit, Justiz & Datenschutz" PDF-S. 12-19 vollständig; S. 24 (Neutralität Polizei), S. 31 (Gewalt an Schulen), S. 41; Kapitel "Kinder, Jugend & Familie" per Suche nach Polizei/Kontrolle geprüft (keine Polizeibezüge); Fundstelle S. 83 (Müll).
+
+Nicht erfasst:
+- S. 15: "Ausweitung anlassloser Kontrollen an kriminalitätsbelasteten Orten" – gleiche Zusage wie S. 13, einmal erfasst.
+- S. 12-13: Bezirkspolizei beim Ordnungsamt mit Identitätsfeststellung, Durchsuchung, Platzverweis, unmittelbarem Zwang – Organisation/Entlastung der Polizei (R2 Sicherheit).
+- S. 13: Aufhebung des Landesantidiskriminierungsgesetzes – nach R2 Diskriminierung im Alltag.
+- S. 13: mobile Polizeiwachen, mehr Personal, Ausrüstung, Alimentierung, Vermummungsverbot – R2 Sicherheit bzw. kein Bezug.
+- S. 15: Absenkung Strafmündigkeit, Jugendstrafrecht – Justiz, kein Polizeikontakt.
+- S. 24: Neutralitätsgesetz bei Polizei – kein Bezug zu den Ursachen.
+- S. 31: Einschalten der Polizei bei Gewalt an Schulen – Meldeverfahren, keine Regel zu Kontrollen.
+- S. 83: Videoüberwachung an Müll-Hotspots ("kann") – Möglichkeit, anderer Zusammenhang.
+Grenzfälle: Videoüberwachung und Ausgangssperren (S. 13) als ursachen_offen 3401 – Leitfaden lässt offen, ob sie zu "Regeln für Kontrollen und Befugnisse" gehören.
+Richtungen ohne Maßnahme: 3401 "Kontrollen begrenzen", 3402 beide, 3403 beide.

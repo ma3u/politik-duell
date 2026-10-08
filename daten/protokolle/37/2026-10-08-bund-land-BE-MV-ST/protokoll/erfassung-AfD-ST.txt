@@ -1,0 +1,41 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Vereine für Sport (sowie Feuerwehr, Gesang, Brauchtum) im ländlichen Raum finanziell entlasten",
+      "ursachen_ids": [3703],
+      "zitat": "Vereine für Sport, Feuerwehr, Gesang und Brauchtum werden wir finanziell entlasten.",
+      "seite": 193
+    },
+    {
+      "beschreibung": "Landesprogramm: Jedes Kind bis 18 kann kostenfrei in einem Sportverein seiner Wahl Sport treiben, auch um dem Vereinssport Nachwuchs zu verschaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Um dieser negativen Tendenz entgegenzuwirken, gleichzeitig die Familien finanziell zu entlasten und dem Vereinssport Nachwuchs zu verschaffen, werden wir im Rahmen eines Landesprogramms jedem Kind bis zur Vollendung des 18. Lebensjahres die Möglichkeit bieten, sich in einem Verein seiner Wahl kostenfrei sportlich zu betätigen.",
+      "seite": 19
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3701, "seiten": [200], "grund": "Schwimmbäder nur als Beispiel belasteter freiwilliger Aufgaben im Abschnitt Fährverbindungen; keine Zusage zu Sanierung oder Neubau von Sportstätten im Programm." },
+    { "ursache": 3702, "seiten": [45, 46, 59, 202, 221, 242], "grund": "Treffer (Auslastung, Eigenverantwortung, Kostensenkung) betreffen Abschiebehaft, Wohnungsbau, Behindertenparkplätze, MDR und Gesundheit; nichts zu Betriebs- oder Nutzungskosten von Sportstätten." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (PDF S. 250–255, steht am Ende), Kapitel I Familie und Kinder S. 17–20 (Nr. 12–15), S. 67 (Nr. 21 Leistungsträger im Sport), Kapitel IV Schulbildung S. 81, 85–88, Bevölkerungsschutz S. 113, Kapitel VIII Demokratie S. 131, 135, Kapitel XII Ländlicher Raum S. 192–193, Kapitel XIII Verkehr S. 200, 202–203, sowie Fundstellen S. 45, 46, 59, 112, 213, 221, 230, 242, 252, 255. Zusätzlich Volltextsuche nach „Sport“, „Schwimm“, „Ehrenamt“, „Vereine“.
+
+Grenzfall: S. 19 „Sport frei!“ – kostenfreie Vereinsmitgliedschaft für Kinder bis 18 per Landesprogramm. Setzt an Mitgliedsbeiträgen an und soll ausdrücklich dem Vereinssport Nachwuchs verschaffen (3703), R2 ordnet aber Kosten für Freizeit von Kindern dem Thema Freizeitangebote zu – daher ursachen_offen.
+
+Nicht erfasst:
+- S. 18: Entzug von Förderung für Vereine, die sich an „Agitation“ beteiligen – kein Bezug zu Sportvereinen oder -stätten.
+- S. 67: Ehrenrente für Olympiasieger – Spitzensport ohne Bezug zu Vereinen oder Sportstätten (R2).
+- S. 81: Mehr Sportunterricht, Schwimmenlernen – Schule (R2).
+- S. 112: Bürgerwacht mit Aufwandsentschädigung nach Übungsleiterpauschale – anderer Zusammenhang.
+- S. 113: Ehrenamtskarte – Bevölkerungsschutz/Rettungsdienst, nicht Sport.
+- S. 131, 135: Vereinsförderung nur mit Demokratie- und Patriotismuserklärung – Förderbedingung für alle Vereine, keine Förderung oder Entlastung von Sportvereinen.
+- S. 193: „Kommunale Schulen, Vereine und Kindergärten werden unterstützt – aber nur, wenn …“ – allgemein, bedingt; die konkrete Entlastungszusage im selben Abschnitt ist erfasst.
+- S. 193: Vereinfachung aller Förderprogramme (Ein-Antrags-Verfahren) – allgemein, nicht auf Sport bezogen.
+- S. 213, 230: Mitgliedsbeiträge von Parteistiftungen bzw. Kirchen – anderer Zusammenhang.
+Richtungen ohne Maßnahme: Sanierung/Neubau von Sportstätten, Bestand gemeinsam nutzen, Betriebskosten/Hallenentgelte, Eigenverantwortung/Auslastung, Eigeneinnahmen/Kooperation der Vereine.
+Seiten ohne Text: Trennseiten (z. B. 68, 69, 194, 195) liegen zwischen Kapiteln, kein erkennbar fehlender Inhalt.

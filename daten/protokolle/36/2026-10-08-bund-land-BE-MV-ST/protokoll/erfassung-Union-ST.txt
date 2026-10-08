@@ -1,0 +1,38 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Stadtkerne stärken durch gezielte Unterstützung des Einzelhandels und kreative Konzepte gegen Leerstand",
+      "ursachen_ids": [3602],
+      "zitat": "Innenstädte lebendig halten, als Zentren des Lebens und Wirtschaftens: Wir stärken Stadtkerne als Orte der Begegnung, Kultur und Wirtschaft, mit gezielter Unterstützung des Einzelhandels und kreativen Konzepten gegen Leerstand.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Umweltzonen in Innenstädten aufheben",
+      "ursachen_ids": [],
+      "ursachen_offen": [3604],
+      "zitat": "Überholte Umweltzonen in Innenstädten wollen wir aufheben.",
+      "seite": 62
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3603, "seiten": [86, 68, 66], "grund": "Aufenthaltsqualität nur im Tourismuskontext (S. 86); klimafeste Stadtquartiere (S. 68) und Wohngebiete (S. 66) ohne Bezug zu Innenstadt oder Einzelhandel." }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis S. 2; Kapitel „Bezahlbare Mobilität in Stadt und Land“ (S. 61–64), „Wohnraum schaffen, Regionen stärken“ (S. 65–66), „Die Natur – Unsere Heimat“ (S. 67–68), Tourismus (S. 85–86); Fundstellen S. 11, 14, 15, 16, 33, 39, 50, 56, 90 (Treffer „Ansiedlung“).
+Zusätzliche Suche im Text: Innenstadt, Stadtkern, Ortskern, Einzelhandel, Leerstand, Laden, Sonntag, Nahversorgung.
+
+Nicht erfasst:
+- S. 2, 11, 14, 15, 16, 33, 90: „Ansiedlung“ meint Unternehmens-, Industrie- und Behördenansiedlung, ohne Bezug zu Innenstadt oder Einzelhandel (R2).
+- S. 39: Industrieansiedlungen auf der grünen Wiese begrenzen – Schutz landwirtschaftlicher Flächen, kein Innenstadtbezug.
+- S. 56: Digitale Zwillinge für Stadtentwicklung – Planungsinstrument ohne Bezug zu Innenstadt/Einzelhandel.
+- S. 50: Öffnungszeiten von Kitas, nicht von Geschäften.
+- S. 62: ÖPNV-Takt zwischen Ober- und Mittelzentren, Radwege zu städtischen Zentren (S. 63) – ohne Innenstadt-/Einzelhandelsbezug im Zitat (R2).
+- S. 65: „lebendigen Innenstädten“ unter „Wir wollen“ – allgemeines Leitbild.
+- S. 66: Kofinanzierung Städtebauförderung – auf Wohnraumumbau bezogen; Umnutzung von Brachflächen – ohne Innenstadtbezug.
+- S. 85: Tourismus verbindet Einzelhandel u. a. – Lagebeschreibung.
+Grenzfall: Aufhebung der Umweltzonen in Innenstädten (S. 62) steht im Kontext Verkehrsverbote; nennt Innenstadt, betrifft Erreichbarkeit mit dem Auto – daher 3604 offen.
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb; Sauberkeit/Sicherheit; Nahmobilität mit Innenstadtbezug; Ladenöffnungszeiten.

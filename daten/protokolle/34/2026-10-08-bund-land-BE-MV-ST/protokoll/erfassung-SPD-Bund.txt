@@ -1,0 +1,48 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Neues Bundespolizeigesetz mit klaren Befugnissen der Bundespolizei schaffen",
+      "ursachen_ids": [3401],
+      "zitat": "Wir schaffen ein modernes Bundespolizeigesetz, das der Bundespolizei klare Befugnisse gibt, um den heutigen sicherheitspolitischen Herausforderungen wirksam zu begegnen.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Schutz der Einsatzkräfte durch bessere technische Ausrüstung, Schulungen und einen überlegenen Kräfteansatz in bedrohlichen Situationen erhöhen",
+      "ursachen_ids": [3402],
+      "zitat": "Zudem wollen wir den Schutz der Einsatzkräfte durch verbesserte technische Ausrüstung, Schulungen und einen überlegenen Kräfteansatz in bedrohlichen Situationen schnell erhöhen.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Mit den Ländern eine Initiative starten, um Unterschiede im Polizei- und Versammlungsrecht zu harmonisieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Darüber hinaus werden wir mit den Ländern eine Initiative starten, um die föderalen Unterschiede im Bereich des Polizei- und Versammlungsrechts zu harmonisieren.",
+      "seite": 43
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3403,
+      "seiten": [40, 41, 42, 43, 47, 50, 55],
+      "grund": "Keine Zusage zu Beschwerdestellen, Polizeibeauftragten, unabhängiger Kontrolle, Kennzeichnung oder Dokumentation von Polizeieinsätzen; Treffer 'Kennzeichnungspflicht' S. 50 betrifft Bots (KI-Verordnung)."
+    }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis S. 3; Kapitel 15 „Zusammenhalt und gegen die Feinde der Demokratie“ (S. 40–42), Kapitel 16 „Respekt, Sicherheit und Schutz vor Gewalt“ (S. 42–44), Kapitel 17 Anfang (S. 47), Fundstelle S. 50, Abschnitt Diskriminierung/Rassismus S. 55. Volltextsuche nach Polizei, Sicherheitsbehörden, Beschwerde, Kontroll, Rassis, Profil.
+
+Grenzfall: Harmonisierung des Polizei- und Versammlungsrechts (S. 43) – betrifft Polizeirecht und damit möglicherweise Kontrollbefugnisse, Richtung offen; daher ursachen_offen 3401.
+Bundespolizeigesetz (S. 43) nach R1 („Befugnisse der Polizei“) zu 3401; gleichartige Stelle S. 42 („moderne Ausrüstung und zeitgemäße Befugnisse von Polizei- und Sicherheitsbehörden“) nicht gesondert erfasst.
+
+Nicht erfasst:
+- S. 42: Personalaufbau bei Sicherheitsbehörden, Pensionsaltersgrenze, gute Arbeitsbedingungen, moderne Ausrüstung – Personal und Ausstattung gehören nach R2 zu Sicherheit; „den Rücken stärken“ ohne konkrete Handlung.
+- S. 43: Angriffe auf Polizei härter bestrafen – Strafrecht/Sicherheit, keine Ursache dieses Themas.
+- S. 43: KI-basierte Datenanalysen, Organisierte Kriminalität, Bundesakademie für Prävention und Kriminalwissenschaften, Pakt für den Rechtsstaat – Aufklärung von Straftaten/Kriminalprävention (R2 Sicherheit).
+- S. 43: Feuerwerk – Prüfauftrag.
+- S. 42: Bundesdisziplinarrecht „bereits reformiert“ – Rückblick, Verfassungsfeinde im öffentlichen Dienst, kein Bezug zu Polizeikontakten.
+- S. 41, 55: AGG ausweiten, Antidiskriminierungsstelle, Anti-Rassismus-Beauftragte, Aktionsplan gegen Rassismus – nach R2 Diskriminierung im Alltag.
+- S. 50: „Kennzeichnungspflicht“ für Bots – anderer Zusammenhang.
+Richtungen ohne Maßnahme: Kontrollen begrenzen/Kontrollbescheinigung (3401), Kommunikation und Deeskalationsfortbildung (3402), unabhängige Beschwerde- und Kontrollstellen sowie Dokumentation/Bodycams (3403).
