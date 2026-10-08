@@ -3384,7 +3384,21 @@ html:has(.punktestand) {
   }
 }
 .show-ton {
-  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.35rem;
+}
+.show-ton-symbol {
+  display: block;
+}
+.show-ton-luecke {
+  stroke: var(--flaeche);
+}
+.show-ton:hover:not(:disabled) .show-ton-luecke {
+  stroke: var(--stimmblau-hell);
 }
 
 /* Aktionsleiste im Quiz: klebt unten, damit „Weiter“, „Abgeben“ usw. ohne Scrollen erreichbar sind. */

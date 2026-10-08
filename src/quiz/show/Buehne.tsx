@@ -22,14 +22,20 @@ export function UntertitelLeiste() {
   )
 }
 
-/** Ton an/aus (WCAG 1.4.2) – gilt für Sprache und Geräusche, nur für diesen Besuch. */
+/**
+ * Ton an/aus (WCAG 1.4.2) – gilt für Sprache und Geräusche, nur für diesen Besuch. Zeigt den Zustand, nicht die
+ * Aktion: Lautsprecher mit Schallwellen = Ton an, durchgestrichen = Ton aus. Für Screenreader ein Schalter „Ton“
+ * (gedrückt = an); der Tooltip sagt, was ein Tippen tut.
+ */
 export function TonKnopf() {
   const an = useTon()
   return (
     <button
       type="button"
       className="knopf knopf-zweit knopf-klein show-ton"
-      aria-pressed={!an}
+      aria-pressed={an}
+      aria-label="Ton"
+      title={an ? 'Ton ist an – tippen zum Ausschalten' : 'Ton ist aus – tippen zum Einschalten'}
       onClick={() => {
         setzeTon(!an)
         // Beim Einschalten die Startmelodie – so hört man sofort, ob der Ton geht. Das Tippen weckt auch eine
@@ -37,7 +43,21 @@ export function TonKnopf() {
         if (!an) void startmelodie()
       }}
     >
-      {an ? 'Ton aus' : 'Ton an'}
+      <svg className="show-ton-symbol" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+        <path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z" fill="currentColor" />
+        {an ? (
+          <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <path d="M15.5 9a4.2 4.2 0 0 1 0 6" />
+            <path d="M18.2 6.3a8 8 0 0 1 0 11.4" />
+          </g>
+        ) : (
+          <>
+            {/* Lücke in Knopffarbe, damit der Strich sich vom Lautsprecher abhebt. */}
+            <path className="show-ton-luecke" d="M3.5 3.5l17 17" fill="none" strokeWidth="5" strokeLinecap="round" />
+            <path d="M3.5 3.5l17 17" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+          </>
+        )}
+      </svg>
     </button>
   )
 }

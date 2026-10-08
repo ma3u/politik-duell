@@ -19,7 +19,7 @@ Frage, Auflösung, Ergebnis), Themen & Zahlen, Methode, Datenschutz, Impressum �
 | 2.5.8 | Zielflächen mindestens 24 px: Aufklapper, Fußzeilen-Links, Beleg-Links | `src/index.css` |
 | 3.3.2 | Hinweise: „Ein Tipp auf eine Partei gibt die Antwort ab“, Format des Raumcodes | `Ansicht.tsx`, `Quiz.tsx` |
 | 4.1.3 | Zeitansage für Screenreader nur bei 10 und 5 Sekunden und bei Ablauf (statt jeder Sekunde) | `Zeitleiste` |
-| 1.4.2 | Quiz-Show: „Ton aus“ in der Kopfzeile für Sprache und Geräusche | `src/quiz/show/Buehne.tsx` |
+| 1.4.2 | Quiz-Show: Ton-Schalter in der Kopfzeile für Sprache und Geräusche (Lautsprecher, durchgestrichen = aus; Schalter „Ton“ mit `aria-pressed`) | `src/quiz/show/Buehne.tsx` |
 | 1.2.1 | Untertitel aller Ansagen der Moderatoren (die Inhalte stehen zusätzlich als Text auf der Seite) | `UntertitelLeiste` |
 | 2.3.1, 2.2.2 | Show-Animationen ohne Blinken, kurz; sie ruhen bei „Bewegung anhalten“ und „Bewegung reduzieren“ (jetzt auch Übergänge); Sichtbarkeit hängt nie am Ende einer Animation | `src/index.css` („Quiz-Show“) |
 

@@ -81,7 +81,13 @@ function useStartmelodie() {
     if (melodieGespielt) return
     const arten = ['pointerdown', 'keydown'] as const
     const entfernen = () => arten.forEach((a) => removeEventListener(a, los, true))
-    function los() {
+    function los(e: Event) {
+      // Landet das erste Tippen auf dem Ton-Knopf, entscheidet der Knopf (aus: keine Musik, an: Musik).
+      if (e.target instanceof Element && e.target.closest('.show-ton')) {
+        entfernen()
+        melodieGespielt = true
+        return
+      }
       entfernen()
       if (melodieGespielt) return
       melodieGespielt = true
