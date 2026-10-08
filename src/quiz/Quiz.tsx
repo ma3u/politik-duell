@@ -23,6 +23,8 @@ import { SIGNAL_ART } from './verbindung'
 // aus public/quiz/fragen.json, das Spiel läuft zwischen den Browsern (docs/plan-quiz.md).
 
 const MIT_ENTWUERFEN = import.meta.env.DEV || import.meta.env.VITE_QUIZ_ENTWUERFE === 'true'
+// Ist das Quiz die Startseite dieser Fassung (src/main.tsx), führt „Politik-Duell“ im Kopf zum Duell.
+const QUIZ_IST_START = import.meta.env.VITE_STARTSEITE === 'quiz'
 
 const istQuizDaten = (d: unknown): d is QuizDaten =>
   !!d &&
@@ -147,7 +149,7 @@ export function Quiz() {
         <a href="#/" className="kopfzeile-marke">
           <Logo groesse={30} />
           <span>Politik-Duell</span>
-          <span className="sr-only"> – zur Startseite</span>
+          <span className="sr-only">{QUIZ_IST_START ? ' – zum Duell' : ' – zur Startseite'}</span>
         </a>
         <span className="quiz-kopf-rechts">
           <span className="quiz-marke">Wer sagt Ja?</span>
@@ -273,6 +275,9 @@ function QuizStart({
         <p className="erklaerung">
           Welche Parteien sagen in ihrem Wahlprogramm Ja? Ratet gegeneinander – wer richtig liegt, bekommt Punkte, wer
           schneller ist, mehr. Nach jeder Frage zeigt das Quiz die Stelle in jedem Programm.
+        </p>
+        <p className="start-themen">
+          <a href="#/">Politik-Duell zu zweit: Wer liefert die beste Lösung?</a>
         </p>
         <div className="quiz-start-felder">
         <p className="meta">

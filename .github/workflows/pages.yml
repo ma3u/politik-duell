@@ -32,6 +32,8 @@ jobs:
         env:
           BASIS_PFAD: /politik-duell/
           VITE_DATENQUELLE: katalog
+          # Einstieg ins Mehrspieler-Quiz; das Duell bleibt über „Politik-Duell“ im Kopf erreichbar.
+          VITE_STARTSEITE: quiz
           VITE_QUIZ_ENTWUERFE: 'true'
           VITE_FIREBASE_DATABASE_URL: https://politik-duell-quiz-default-rtdb.europe-west1.firebasedatabase.app
       - uses: actions/upload-pages-artifact@v3

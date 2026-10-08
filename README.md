@@ -35,6 +35,7 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 - Abgeschlossene Runden werden anonym gespeichert (nur neutrale Kurzfassung); unbekannte Themen landen in `review_warteschlange` mit vorläufiger Einschätzung; Runden ohne Wertung (auch Grenzfälle) zusätzlich im Wortlaut in `review_eingaben` (nur Admins, gelöscht beim Sichten oder nach 30 Tagen)
 - Rate-Limit pro zufälliger Sitzungs-ID
 - Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`; echter Katalog aus `daten/` mit KI-Entwürfen und Stichwortsuche statt KI: `VITE_DATENQUELLE=katalog` (so auf GitHub Pages)
+- Startseite: `VITE_STARTSEITE=quiz` öffnet beim Aufruf ohne Unterseite das Programm-Quiz (so auf GitHub Pages), sonst das Duell
 
 ## Stand: Meilenstein 4 – Wortwolke und Moderation
 
