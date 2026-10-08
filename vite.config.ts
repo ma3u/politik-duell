@@ -42,6 +42,9 @@ export default defineConfig({
           // Stimmen und Geräusche der Quiz-Show (ca. 3 MB), damit sie auch offline spielt.
           'quiz/audio/*.{mp3,json}',
         ],
+        // Der echte Katalog (VITE_DATENQUELLE=katalog) ist ein einzelner Chunk über 2 MiB (Workbox-Standard),
+        // soll aber offline verfügbar bleiben.
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: `${base}index.html`,
         cleanupOutdatedCaches: true,
         runtimeCaching: [],
