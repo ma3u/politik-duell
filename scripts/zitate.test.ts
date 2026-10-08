@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bereinigeSeite, fehlendeZahlen, findeZitat, kompakt, seiteVon, seitenTexte, zitatKontext, zitatTeile } from './zitate'
+import { bereinigeSeite, fehlendeZahlen, fettdruckZusammenfuehren, findeZitat, kompakt, seiteVon, seitenTexte, zitatKontext, zitatTeile } from './zitate'
 
 /** Kleines PDF mit einer Textzeile-Liste je Seite (Helvetica, WinAnsi – Umlaute als Oktal-Escape). */
 function testPdf(seiten: string[][]): Uint8Array {
@@ -88,5 +88,24 @@ describe('Zitat mit Kontext', () => {
   it('findet Zahlen der Beschreibung, die im Zitat fehlen', () => {
     expect(fehlendeZahlen('Mehrwertsteuer von 7 auf 5 % senken', 'von sieben Prozent auf fünf Prozent senken')).toEqual([])
     expect(fehlendeZahlen('Förderung bis zu 70 % und 100.000 Plätze', 'Die Förderung bauen wir aus, 100 000 Plätze.')).toEqual(['70'])
+  })
+})
+
+describe('fettdruckZusammenfuehren', () => {
+  const st = (str: string, x: number, breite: number, hasEOL = false) => ({ str, x, breite, hasEOL, y: 692, hoehe: 12 })
+  it('führt doppelt gezeichneten Fettdruck zusammen (gemessen im Unionsprogramm 2025)', () => {
+    const stuecke = [
+      st('P', 99.26, 7.5), st('Po', 99.26, 14.32), st('ol', 106.81, 10.32), st('li', 113.53, 7.38), st('it', 117.13, 8.06),
+      st('ti', 120.96, 8.02), st('ik', 125.2, 10.79), st('kw', 128.98, 16.33), st('we', 135.98, 15.76), st('ec', 145.31, 12.67),
+      st('ch', 151.79, 13.72), st('hs', 158.02, 13.3), st('se', 165.46, 12.29), st('el', 171.31, 10.09), st('l f', 177.8, 10.49),
+      st('fü', 184.19, 11.48), st('ür', 188.24, 12.86), st('r D', 195.79, 16.54), st('De', 203.86, 14.9), st('eu', 212.33, 13.81),
+      st('ut', 218.71, 11.66), st('ts', 226.14, 10.09), st('sc', 230.38, 12.05), st('ch', 236.23, 13.84), st('hl', 242.58, 11.04),
+      st('la', 250.02, 10.15), st('an', 253.62, 14.26), st('nd', 260.21, 14.96), st('d.', 267.88, 10.93, true),
+    ]
+    expect(fettdruckZusammenfuehren(stuecke).map((t) => t.str)).toEqual(['Politikwechsel für Deutschland.'])
+  })
+  it('lässt normal gesetzten Text unverändert', () => {
+    const stuecke = [st('Wir halten an', 100, 60), st('niedrigen Steuern', 162, 80), st('fest.', 244, 20, true), st('Neue Zeile', 100, 50)]
+    expect(fettdruckZusammenfuehren(stuecke).map((t) => t.str)).toEqual(['Wir halten an', 'niedrigen Steuern', 'fest.', 'Neue Zeile'])
   })
 })

@@ -3,7 +3,7 @@
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import type { Katalog } from '../src/data/katalog.ts'
-import { seitenTexte } from './zitate.ts'
+import { seitenTexte, TEXTFASSUNG } from './zitate.ts'
 
 export const sha256 = (daten: Uint8Array) => createHash('sha256').update(daten).digest('hex')
 
@@ -130,7 +130,7 @@ export async function programmSeiten(
   erwartet: string | undefined,
   lokal?: Map<string, Uint8Array>,
 ): Promise<{ seiten: string[]; sha256: string; hinweis?: string; abweichend?: boolean }> {
-  const cache = new URL(`../.cache/texte/${cacheName(url)}.json`, import.meta.url)
+  const cache = new URL(`../.cache/texte/${cacheName(url)}-t${TEXTFASSUNG}.json`, import.meta.url)
   // Eine lokale Kopie der ausgewerteten Fassung geht dem Zwischenspeicher vor.
   if (existsSync(cache) && !(erwartet && lokal?.has(erwartet))) {
     const gespeichert = JSON.parse(readFileSync(cache, 'utf8')) as { sha256: string; seiten: string[] }

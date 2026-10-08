@@ -168,6 +168,51 @@ export function seiteVon(url: string): number | null {
   return m ? Number(m[1]) : null
 }
 
+/**
+ * Fassung des ausgelesenen Texts – erhöhen, wenn sich das Auslesen ändert (Teil des Namens im Zwischenspeicher
+ * .cache/texte/, sonst bliebe der alte Text). 2: doppelt gezeichneter Fettdruck wird zusammengeführt.
+ */
+export const TEXTFASSUNG = 2
+
+export interface TextStueck {
+  str: string
+  hasEOL: boolean
+  x: number
+  y: number
+  breite: number
+  hoehe: number
+}
+
+/**
+ * Doppelt gezeichneter Fettdruck („Fake Bold“: jedes Zeichen zweimal, minimal versetzt) kommt bei pdf.js als
+ * überlappende Stücke an – „P“ „Po“ „ol“ „li“ … „l f“ „fü“ statt „Politikwechsel für“. Ein Stück, das auf derselben
+ * Zeile innerhalb des vorigen beginnt und mit dessen letztem Zeichen anfängt, setzt es fort: Das erste Zeichen ist
+ * die Dublette und fällt weg. Normal gesetzter Text überlappt nicht und bleibt unverändert.
+ */
+export function fettdruckZusammenfuehren(stuecke: TextStueck[]): TextStueck[] {
+  const aus: TextStueck[] = []
+  for (const t of stuecke) {
+    const v = aus.at(-1)
+    const fortsetzung =
+      v &&
+      !v.hasEOL &&
+      v.str.length > 0 &&
+      t.str.length > 0 &&
+      t.str[0] === v.str.at(-1) &&
+      !/\s/.test(t.str[0]) &&
+      Math.abs(t.y - v.y) < 0.5 &&
+      Math.abs(t.hoehe - v.hoehe) < 0.5 &&
+      t.x >= v.x - 0.5 &&
+      t.x < v.x + v.breite - 0.5
+    if (fortsetzung) {
+      v.str += t.str.slice(1)
+      v.breite = t.x + t.breite - v.x
+      v.hasEOL = t.hasEOL
+    } else aus.push({ ...t })
+  }
+  return aus
+}
+
 /** Text jeder Seite eines PDFs (Index 0 = Seite 1). */
 export async function seitenTexte(pdf: Uint8Array): Promise<string[]> {
   const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs')
@@ -180,7 +225,10 @@ export async function seitenTexte(pdf: Uint8Array): Promise<string[]> {
     const seiten: string[] = []
     for (let n = 1; n <= dokument.numPages; n++) {
       const inhalt = await (await dokument.getPage(n)).getTextContent()
-      seiten.push(inhalt.items.map((t) => ('str' in t ? t.str + (t.hasEOL ? '\n' : ' ') : '')).join(''))
+      const stuecke = inhalt.items.flatMap((t) =>
+        'str' in t ? [{ str: t.str, hasEOL: t.hasEOL, x: t.transform[4], y: t.transform[5], breite: t.width, hoehe: t.height }] : [],
+      )
+      seiten.push(fettdruckZusammenfuehren(stuecke).map((t) => t.str + (t.hasEOL ? '\n' : ' ')).join(''))
     }
     return seiten
   } finally {
