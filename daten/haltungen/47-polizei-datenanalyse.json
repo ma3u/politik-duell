@@ -1,0 +1,57 @@
+{
+  "id": 47,
+  "frage": "Soll die Polizei große Datenmengen mit Software automatisiert auswerten dürfen?",
+  "beschreibung": "Ob die Polizei ihre gespeicherten Daten aus verschiedenen Quellen mit Software, auch mit KI, automatisiert zusammenführen und auswerten darf oder ob sie bei der Einzelabfrage und der Auswertung von Hand bleibt.",
+  "status_quo": "offen",
+  "verwandte_themen": [
+    9
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer die automatisierte Auswertung will, nennt das Erkennen schwerer Straftaten in großen Datenbeständen: In Hessen wurde die Analyseplattform laut Bundesverfassungsgericht jährlich tausendfach genutzt (Stand 2023), weil sich solche Hinweise unter Zeitdruck kaum von Hand finden lassen.",
+      "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2023/bvg23-018.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer sie will, nennt außerdem die stark wachsenden Mengen an sichergestellten Daten: Bundeskriminalamt und Polizei nannten deren technische Auswertung in der Bundestagsanhörung vom September 2026 unverzichtbar.",
+      "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw39-pa-inneres-1206160"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer sie ablehnt, nennt den Schutz der informationellen Selbstbestimmung: Laut Bundesverfassungsgericht (2023) kann Software mit einem Klick Profile von Personen, Gruppen und Milieus erstellen und viele Unbeteiligte erfassen; Fehler- und Diskriminierungsanfälligkeit verschärfen den Eingriff.",
+      "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2023/bvg23-018.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer sie ablehnt, nennt außerdem, dass neben Beschuldigten auch Zeugen erfasst werden und Bewegungs- und Kontaktprofile möglich sind. So äußerten sich Sachverständige in der Bundestagsanhörung vom September 2026.",
+      "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw39-pa-inneres-1206160"
+    }
+  ],
+  "einordnung": {
+    "ja": "Das Programm will die automatisierte Datenanalyse durch die Polizei erlauben, beibehalten oder ausbauen (auch mit KI). Es nennt dabei höchstens allgemeine Vorgaben wie Rechtsstaatlichkeit oder Datenschutz.",
+    "teils": "Das Programm erlaubt die Analyse nur unter einer ausdrücklich einschränkenden Bedingung, etwa nur bei schwersten Straftaten, nur mit eigener oder europäischer Software statt eines bestimmten Anbieters oder erst nach einem Moratorium. Oder es stimmt einem Teil zu und lehnt einen anderen ab (z. B. Auswertung ja, KI-Prognosen über Personen nein).",
+    "nein": "Das Programm lehnt die automatisierte Auswertung großer Datenmengen durch die Polizei ab oder will bestehende Befugnisse dazu abschaffen."
+  },
+  "suchbegriffe": [
+    "datenanalyse",
+    "analyseplattform",
+    "analysesoftware",
+    "datenauswertung",
+    "datenzusammenführung",
+    "palantir",
+    "predictive",
+    "rasterfahndung",
+    "massenüberwachung"
+  ],
+  "schlagwoerter": [
+    "palantir",
+    "datenanalyse polizei",
+    "polizei software",
+    "ki bei der polizei"
+  ],
+  "freigabe": {
+    "datum": "2026-10-08",
+    "art": "ki"
+  }
+}

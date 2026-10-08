@@ -364,3 +364,53 @@ Seit dem 8. 10. 2026 trägt jede Haltung `status_quo`: die Antwort auf die Frage
 | 33 | ja | Leistungsminderung bei Ablehnung zumutbarer Arbeit (§ 31 SGB II). |
 | 34 | ja | Nationale Moorschutzstrategie 2022, Aktionsprogramm Natürlicher Klimaschutz. |
 | 35 | nein | Unkonventionelles Fracking verboten (§ 13a WHG). |
+
+## Wahlkampf 2026 und Themenradar: neue Haltungen 36–53 (8. 10. 2026, nur Phase A)
+
+Anlass: die Wahl-O-Mat-Thesen 2026 (Sachsen-Anhalt, Mecklenburg-Vorpommern, Berlin), die Einordnungstabelle `.cache/listen/2026-10-08-wahlkampf-2026.md` (nur lokal) und der Themenradar „Was Menschen in Deutschland gerade bewegt“ der Betreiberin. Entscheidung: Das Quiz wird um Haltungen ergänzt, die die größten Sorgen abdecken, vor allem Krieg und Frieden (36–40), Klima und Energie (41–42), Vertrauen in die Politik (43–45), Grundsicherung und Sicherheit (46–47) sowie Schule (48–49). Jede Zeile kam aus einem Agenten `haltung-recherche` ohne Blick in Programme; die Koordination hat nur die Form geprüft und Zielkonflikte auf 300 Zeichen kürzen lassen. Phase B (Positionen aus den acht Bundesprogrammen) steht noch aus: `/haltung-erfassen 36-41`, dann `42-47`, dann `48-53`. Erst danach entstehen die Quizfragen.
+
+| Nr. | Frage | Quellen der Zielkonflikte | Freigabe |
+| --- | --- | --- | --- |
+| 36 | Soll der Staat die Ansiedlung und den Ausbau von Rüstungsunternehmen in Deutschland fördern? | bpb.de, sipri.org, uni-mannheim.de | KI-Freigabe 8. 10. 2026 |
+| 37 | Sollen in Deutschland weitreichende US-Raketen stationiert werden? | blog.prif.org, ifsh.de, swp-berlin.org | KI-Freigabe 8. 10. 2026 |
+| 38 | Soll Deutschland an der nuklearen Teilhabe der NATO festhalten? | sipri.org, swp-berlin.org | KI-Freigabe 8. 10. 2026 |
+| 39 | Sollen die Wirtschaftssanktionen gegen Russland gelockert werden? | destatis.de, ifo.de, swp-berlin.org | KI-Freigabe 8. 10. 2026 |
+| 40 | Soll an staatlichen Hochschulen auch für militärische Zwecke geforscht werden dürfen? | idw-online.de, reference-global.com | KI-Freigabe 8. 10. 2026 |
+| 41 | Soll Deutschland bis spätestens 2045 klimaneutral werden? | bundesverfassungsgericht.de, eur-lex.europa.eu, kfw.de, umweltbundesamt.de | KI-Freigabe 8. 10. 2026 |
+| 42 | Soll der gesetzlich beschlossene Ausstieg aus der Kohleverstromung aufgehoben oder zeitlich verschoben werden? | bundesnetzagentur.de, dehst.de, gesetze-im-internet.de, iwh-halle.de | KI-Freigabe 8. 10. 2026 |
+| 43 | Soll der Staat beim Bundesverfassungsgericht das Verbot von Parteien beantragen, die er für verfassungsfeindlich hält? | bundesverfassungsgericht.de | KI-Freigabe 8. 10. 2026 |
+| 44 | Soll die Fünf-Prozent-Hürde bei Bundestagswahlen beibehalten werden? | bundesverfassungsgericht.de, bundeswahlleiterin.de | KI-Freigabe 8. 10. 2026 |
+| 45 | Soll das Wahlalter für Bundestagswahlen auf 16 Jahre gesenkt werden? | bpb.de, bundeswahlleiterin.de, ebi.ac.uk, ideas.repec.org | KI-Freigabe 8. 10. 2026 |
+| 46 | Sollen arbeitsfähige Menschen ohne Arbeit, die Grundsicherung beziehen, grundsätzlich zu gemeinnütziger Arbeit verpflichtet werden? | bundestag.de, gesetze-im-internet.de, iab-forum.de | KI-Freigabe 8. 10. 2026 |
+| 47 | Soll die Polizei große Datenmengen mit Software automatisiert auswerten dürfen? | bundestag.de, bundesverfassungsgericht.de | KI-Freigabe 8. 10. 2026 |
+| 48 | Sollen Kinder länger gemeinsam lernen und erst später als heute auf verschiedene Schulformen aufgeteilt werden? | bpb.de, ideas.repec.org | KI-Freigabe 8. 10. 2026 |
+| 49 | Soll sexuelle und geschlechtliche Vielfalt im Schulunterricht behandelt werden? | fra.europa.eu, servat.unibe.ch | KI-Freigabe 8. 10. 2026 |
+| 50 | Soll innerorts auf mehr Straßen Tempo 30 statt Tempo 50 gelten? | destatis.de, ideas.repec.org, stadt-zuerich.ch, tfw.wales | KI-Freigabe 8. 10. 2026 |
+| 51 | Sollen die gesetzlichen Vorgaben für die Haltung von Nutztieren in der Landwirtschaft gelockert werden? | destatis.de, ideas.repec.org, umweltbundesamt.de | KI-Freigabe 8. 10. 2026 |
+| 52 | Soll die Masern-Impfpflicht für Kinder in Kita und Schule beibehalten werden? | bundesverfassungsgericht.de, ethikrat.org, rki.de | KI-Freigabe 8. 10. 2026 |
+| 53 | Soll der öffentlich-rechtliche Rundfunk weiterhin über den Rundfunkbeitrag finanziert werden? | bundesverfassungsgericht.de, kef-online.de, wirtschaftsdienst.eu | KI-Freigabe 8. 10. 2026 |
+
+Noch nicht angelegt (Recherche am 8. 10. 2026 wegen des Nutzungslimits abgebrochen): Mehrwertsteuer auf Lebensmittel, Bürgerversicherung, Pflegevollversicherung, Rentenversicherung für Beamte und Selbstständige, Kindergrundsicherung, Mietpreisbremse, Ehegattensplitting, Vorratsdatenspeicherung, Verbrenner-Aus 2035, Zurückweisungen an der Grenze, Spitzensteuersatz, Deutschlandticket, Mindestalter für soziale Medien, Volksentscheide. Ebenfalls offen aus der Wahl-O-Mat-Liste: Wald ohne Nutzung, Corona-Aufarbeitung, Ökolandbau, Wolf, Kita-Pflichtjahr, Solarpflicht, Silvesterfeuerwerk.
+
+### Heutige Lage je Haltung 36–53
+
+| Nr. | Status quo | Grundlage |
+| --- | --- | --- |
+| 36 | ja | Nationale Sicherheits- und Verteidigungsindustriestrategie, Kabinettsbeschluss 4. 12. 2024: Schlüsseltechnologien fördern, Finanzierung verbessern, wehrtechnischen Mittelstand stärken. |
+| 37 | nein | Keine weitreichenden US-Raketen in Deutschland; die 2024 vereinbarte zeitweise Stationierung ab 2026 setzen die USA nicht um (Regierungspressekonferenz 4. 5. 2026). |
+| 38 | ja | Deutschland nimmt an der nuklearen Teilhabe teil; F-35 sollen die Rolle des Tornado übernehmen (Beschluss März 2022). |
+| 39 | nein | EU-Sanktionen nach Verordnung (EU) Nr. 833/2014 gelten weiter, zuletzt mit dem 21. Paket (Verordnung (EU) 2026/1848 vom 23. 7. 2026) ausgeweitet. |
+| 40 | ja | Kein Bundesgesetz verbietet militärische Forschung an Hochschulen; Zivilklauseln sind Selbstverpflichtungen (Bundesregierung 2023). Bremen schreibt sie seit 2015 vor, Bayern untersagt sie seit 2024 (Art. 20 BayHIG). |
+| 41 | ja | Nach § 3 Abs. 2 des Bundes-Klimaschutzgesetzes soll bis 2045 Netto-Treibhausgasneutralität erreicht werden. |
+| 42 | nein | Das Kohleverstromungsbeendigungsgesetz schreibt den Ausstieg bis spätestens Ende 2038 vor (§§ 2, 4 KVBG); aufgehoben oder verschoben ist er nicht. |
+| 43 | nein | Das Instrument besteht (Art. 21 Abs. 2 GG), doch weder Bundestag noch Bundesrat noch Bundesregierung haben seit 2017 einen Antrag gestellt (Stand 2026). |
+| 44 | ja | § 4 Abs. 2 Satz 2 Nr. 2 BWahlG: Parteien unter 5 % der Zweitstimmen erhalten keine Sitze (Ausnahmen: nationale Minderheiten; bis zur Neuregelung Parteien mit drei Direktmandaten). |
+| 45 | nein | Für Bundestagswahlen ist wahlberechtigt, wer 18 ist (Art. 38 Abs. 2 GG); ab 16 nur bei der Europawahl (seit 2024) und in einigen Ländern. |
+| 46 | nein | Keine allgemeine Pflicht; Jobcenter können einzelne Leistungsberechtigte nachrangig und höchstens 24 Monate in fünf Jahren in zusätzliche, gemeinnützige Arbeitsgelegenheiten zuweisen (§ 16d SGB II). |
+| 47 | offen | Je Land verschieden: erlaubt und im Einsatz etwa in Bayern (Art. 61a PAG) und Hessen, in anderen Ländern nicht; für BKA und Bundespolizei liegt eine Regelung noch im Bundestag (Anhörung 21. 9. 2026). |
+| 48 | nein | Grundschule Klassen 1–4 (Berlin, Brandenburg 1–6), danach verschiedene Schulformen; Gymnasium in allen Ländern (Eurydice, Stand März 2026). |
+| 49 | ja | Schulrecht ist Ländersache; Lehrpläne und Richtlinien der Länder sehen das Thema vor, etwa Bayern (Richtlinien Familien- und Sexualerziehung 2016, Abschnitt 2.3) und Berlin-Brandenburg (Rahmenlehrplan 1–10, „Bildung zur Akzeptanz von Vielfalt“). |
+| 50 | nein | Innerorts gilt in der Regel 50 km/h (§ 3 Abs. 3 Nr. 1 StVO); Tempo 30 nur in Zonen und streckenweise, etwa vor Kitas und Schulwegen (§ 45 Abs. 9 StVO). |
+| 51 | nein | Tierschutz-Nutztierhaltungsverordnung gilt mit festen Übergangsfristen (§ 45 TierSchNutztV); keine allgemeine Lockerung beschlossen, nur die Tierhaltungskennzeichnung auf 1. 1. 2027 verschoben. |
+| 52 | ja | Masernschutzgesetz seit 1. 3. 2020: Nachweis für Kinder in Kita, Kindertagespflege und Schule (§ 20 Abs. 8 IfSG); 2022 vom Bundesverfassungsgericht bestätigt. |
+| 53 | ja | Rundfunkbeitrag je Wohnung nach § 2 Abs. 1 Rundfunkbeitragsstaatsvertrag, 2026 18,36 € im Monat. |

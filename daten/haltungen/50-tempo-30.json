@@ -1,0 +1,58 @@
+{
+  "id": 50,
+  "frage": "Soll innerorts auf mehr Straßen Tempo 30 statt Tempo 50 gelten?",
+  "beschreibung": "Ob Tempo 30 in Städten und Dörfern auf mehr Straßen gelten soll, bis hin zur Regelgeschwindigkeit, oder ob 50 km/h die Regel bleibt und Tempo 30 auf Zonen und besondere Stellen beschränkt ist.",
+  "status_quo": "nein",
+  "verwandte_themen": [
+    12,
+    9
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer Tempo 30 auf mehr Straßen will, nennt die Verkehrssicherheit: 2024 starben innerorts 915 Menschen bei Verkehrsunfällen, 62 % von ihnen waren zu Fuß oder mit dem Fahrrad unterwegs (Statistisches Bundesamt, 2025).",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/07/PD25_248_46241.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer es befürwortet, nennt auch weniger Unfälle und Lärm: Eine Übersichtsstudie zu 40 europäischen Städten fand nach Einführung von Tempo 30 im Mittel 37 % weniger Verkehrstote und 2,5 dB weniger Lärm (Yannis/Michelaraki, Sustainability, 2024).",
+      "quelle_url": "https://ideas.repec.org/a/gam/jsusta/v16y2024i11p4382-d1399519.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer es ablehnt, nennt längere Fahrzeiten: Nachdem Wales 20 mph (rund 32 km/h) zur Regel gemacht hatte, stieg die mittlere Fahrzeit auf 57 von 60 untersuchten Strecken, meist um höchstens zwei Minuten (Transport for Wales, 2025).",
+      "quelle_url": "https://tfw.wales/national-monitoring-report-july-2025"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer es ablehnt, nennt auch Kosten für Bus und Bahn: Wo der Nahverkehr nicht auf eine eigene Fahrbahn ausweichen kann, entstehen durch die Temporeduktion laut Stadt Zürich Mehrkosten (2021).",
+      "quelle_url": "https://www.stadt-zuerich.ch/de/aktuell/medienmitteilungen/2021/12/211215a3.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Das Programm will Tempo 30 innerorts deutlich ausweiten: als Regelgeschwindigkeit oder so, dass Kommunen es auch auf Hauptstraßen ohne besondere Begründung anordnen dürfen.",
+    "teils": "Das Programm will Tempo 30 nur an bestimmten Stellen ausweiten (etwa vor Schulen, Kitas, an Unfallschwerpunkten) oder nur unter Bedingungen, und will 50 km/h als Regel auf Hauptstraßen behalten.",
+    "nein": "Das Programm will keine Ausweitung von Tempo 30, lehnt es als Regelgeschwindigkeit ab oder will bestehende Tempo-30-Strecken zurücknehmen."
+  },
+  "suchbegriffe": [
+    "tempo 30",
+    "tempo-30",
+    "30 km/h",
+    "regelgeschwindigkeit",
+    "innerort",
+    "verkehrsberuhig",
+    "geschwindigkeitsbegrenz",
+    "straßenverkehrsordnung",
+    "stvo"
+  ],
+  "schlagwoerter": [
+    "tempo 30",
+    "tempo 30 innerorts",
+    "tempo 30 in der stadt",
+    "regelgeschwindigkeit"
+  ],
+  "freigabe": {
+    "datum": "2026-10-08",
+    "art": "ki"
+  }
+}

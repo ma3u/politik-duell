@@ -1,0 +1,58 @@
+{
+  "id": 42,
+  "frage": "Soll der gesetzlich beschlossene Ausstieg aus der Kohleverstromung aufgehoben oder zeitlich verschoben werden?",
+  "beschreibung": "Ob Kohlekraftwerke über die gesetzlichen Fristen hinaus Strom erzeugen dürfen oder ob Deutschland den Ausstieg wie beschlossen bis spätestens 2038 umsetzt oder ihn sogar vorzieht.",
+  "status_quo": "nein",
+  "verwandte_themen": [
+    3,
+    5,
+    24
+  ],
+  "zielkonflikte": [
+    {
+      "seite": "ja",
+      "text": "Wer den Ausstieg verschieben oder aufheben will, nennt die Versorgungssicherheit: Laut Bundesnetzagentur ist die Stromversorgung nur dann gesichert, wenn bis 2035 zusätzliche steuerbare Kraftwerke mit 22,4 bis 35,5 Gigawatt Leistung gebaut werden (Monitoring 2025).",
+      "quelle_url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2025/20250903_Versorgungsmonitoring.html"
+    },
+    {
+      "seite": "ja",
+      "text": "Wer den Ausstieg verschieben will, nennt gut bezahlte Arbeitsplätze in den Revieren: In der Lausitz arbeiteten etwa 1,7 % aller Erwerbstätigen in der Braunkohlenwirtschaft, und ein Beschäftigter dort verdiente 2014 im Schnitt rund doppelt so viel wie im Bundesdurchschnitt (IWH 2019).",
+      "quelle_url": "https://www.iwh-halle.de/en/publications/detail/zu-den-effekten-eines-beschleunigten-braunkohleausstiegs-auf-beschaeftigung-und-regionale-arbeitnehmerentgelte"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer am Ausstieg festhält, nennt den Klimaschutz: Die Emissionen der deutschen Energieanlagen im Emissionshandel sanken 2024 um 9,5 % auf 171 Mio. t CO2-Äquivalente, ein Hauptgrund war die geringere Stromerzeugung aus Stein- und Braunkohle (DEHSt 2025).",
+      "quelle_url": "https://www.dehst.de/SharedDocs/Pressemitteilungen/DE/2025-029-VET.html"
+    },
+    {
+      "seite": "nein",
+      "text": "Wer am Ausstieg festhält, nennt die Planungssicherheit für die Reviere: Der Bund gewährt bis 2038 bis zu 14 Mrd. Euro Finanzhilfen, um den Strukturwandel beim Ausstieg aus der Braunkohle zu bewältigen (§ 1 InvKG).",
+      "quelle_url": "https://www.gesetze-im-internet.de/invkg/__1.html"
+    }
+  ],
+  "einordnung": {
+    "ja": "Das Programm will den Kohleausstieg aufheben oder Kohlekraftwerke ausdrücklich über die gesetzlichen Fristen hinaus am Markt halten, zum Beispiel keine weiteren Stilllegungen oder einen späteren Ausstieg als 2038 bzw. als 2030 im Rheinischen Revier.",
+    "teils": "Das Programm hält grundsätzlich am Ausstieg fest, knüpft Stilllegungen aber an Bedingungen wie gebaute Ersatzkraftwerke oder gesicherte Versorgung, oder es will stillgelegte Kohlekraftwerke länger als Reserve halten.",
+    "nein": "Das Programm will den beschlossenen Ausstiegspfad beibehalten oder den Ausstieg vorziehen; allgemeine Klimaziele ohne Bezug zur Kohle sowie Aussagen nur zur Atomkraft zählen nicht."
+  },
+  "suchbegriffe": [
+    "kohleausstieg",
+    "kohleverstromung",
+    "kohlekraft",
+    "kohlestrom",
+    "braunkohle",
+    "steinkohle",
+    "tagebau",
+    "kvbg"
+  ],
+  "schlagwoerter": [
+    "kohleausstieg",
+    "kohle",
+    "braunkohle",
+    "kohlekraftwerke"
+  ],
+  "freigabe": {
+    "datum": "2026-10-08",
+    "art": "ki"
+  }
+}
