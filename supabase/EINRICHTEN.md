@@ -11,7 +11,9 @@ Die Dateien in `supabase/dashboard/` sind zum Kopieren gedacht. Auf GitHub gibt 
 
 1. Datei öffnen: [`supabase/dashboard/1-datenbank.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/1-datenbank.sql) → **Copy raw file**
 2. [SQL Editor öffnen](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new), einfügen, **Run** klicken.
-3. Erwartet: „Success. No rows returned“. Im *Table Editor* stehen jetzt Tabellen mit Beispieldaten.
+3. Erwartet: „Success. No rows returned“. Im *Table Editor* stehen jetzt die (leeren) Tabellen.
+4. Daten einspielen: die Dateien aus [`supabase/seed-teile/`](https://github.com/politik-duell/politik-duell/tree/main/supabase/seed-teile)
+   einzeln ausführen, zuerst `0-gemeinsam.sql`, dann die `thema-NN.sql` (Reihenfolge beliebig).
 
 ### 2. Edge Function anlegen
 

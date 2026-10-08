@@ -2,3 +2,9 @@
 daten/**/*.json text eol=lf
 supabase/seed.sql text eol=lf
 supabase/seed-teile/*.sql text eol=lf
+
+# Erzeugte Dateien (npm run seed / npm run dashboard): auf GitHub im Pull Request eingeklappt, in `git diff` nicht
+# ausgeschrieben – Grundlage ist daten/, dessen Diff zählt. Dass sie aktuell sind, prüfen die Tests.
+supabase/seed.sql linguist-generated=true -diff
+supabase/seed-teile/*.sql linguist-generated=true -diff
+supabase/dashboard/* linguist-generated=true -diff
