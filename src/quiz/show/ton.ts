@@ -5,7 +5,8 @@ import { CHOR, ohneTags, type Clip, type Sprecher } from './texte'
 // Ton der Quiz-Show: Sprecher-Clips und Geräusche aus public/quiz/audio/ (erzeugt mit `npm run quiz:stimmen`),
 // abgespielt über die Web-Audio-API (spielt nach dem ersten Antippen auch auf iPhone und iPad). Ist der Ton aus
 // oder fehlt eine Datei, läuft derselbe Zeitplan mit Untertiteln – alle Geräte im Raum bleiben im Takt.
-// Nichts wird gespeichert; die Dateien kommen von der eigenen Website.
+// Die Dateien kommen von der eigenen Website. Gespeichert wird nur die ausdrücklich gewählte Ton-Einstellung
+// (an/aus, localStorage), wenn man „Ton einschalten“, „Ohne Ton spielen“ oder den Lautsprecher antippt.
 
 const BASIS = `${import.meta.env.BASE_URL}quiz/audio/`
 let manifest: ShowManifest | null = null
@@ -45,6 +46,7 @@ function startmusikVorladen() {
   el.preload = 'auto'
   el.muted = !tonAn
   el.addEventListener('ended', () => (melodieLaeuft = false))
+  el.addEventListener('playing', freigeben)
   el.addEventListener('error', () => (musikGeht = false))
   musikBereit = new Promise((ok) => {
     for (const art of ['canplaythrough', 'error'] as const) el.addEventListener(art, () => ok(), { once: true })
@@ -96,6 +98,8 @@ export function entsperren() {
   }
   if (!ctx) {
     ctx = new AC()
+    const c = ctx
+    c.addEventListener('statechange', () => c.state === 'running' && freigeben())
     laut = ctx.createGain()
     laut.gain.value = tonAn ? 1 : 0
     laut.connect(ctx.destination)
@@ -166,9 +170,10 @@ let melodie: { lautstaerke: GainNode; quellen: AudioBufferSourceNode[] } | null 
  * dekodiert sind, und plant alles auf der Uhr des AudioContext, damit der Chor auf dem Beat sitzt. Muss in einer
  * Nutzeraktion starten (ruft entsperren auf). Spielt nicht doppelt, wenn sie schon läuft.
  */
-export async function startmelodie() {
+export async function startmelodie(): Promise<boolean> {
+  startmusikVorladen()
   entsperren()
-  if (!tonAn || melodieLaeuft) return
+  if (!tonAn || melodieLaeuft) return false
   // Gestreamte Startmusik: play() noch in der Nutzeraktion, vor dem ersten await (sonst sperrt Safari).
   if (musik && musikGeht) {
     melodieLaeuft = true
@@ -177,20 +182,20 @@ export async function startmelodie() {
     musik.muted = false
     try {
       await musik.play()
-      return
+      return true
     } catch (e) {
       melodieLaeuft = false
-      // Gesperrt (keine Nutzeraktion): später über „Ton an“. Sonst geht das Streamen nicht – Web-Audio versuchen.
-      if (e instanceof DOMException && e.name === 'NotAllowedError') return
+      // Gesperrt (keine Nutzeraktion): später über „Ton einschalten“. Sonst geht das Streamen nicht – Web-Audio versuchen.
+      if (e instanceof DOMException && e.name === 'NotAllowedError') return false
       musikGeht = false
     }
   }
-  if (!ctx || !manifest || !tonAn || melodieLaeuft) return
+  if (!ctx || !manifest || !tonAn || melodieLaeuft) return false
   // Bevorzugt die Startmusik (Music-API); sonst Beat mit Sprechchor.
   const musikDatei = manifest.geraeusche.startmusik?.datei
   const beat = musikDatei ?? manifest.geraeusche.startbeat?.datei
   const stimmen = musikDatei ? [] : CHOR.map((c) => manifest!.clips[c.id]?.datei)
-  if (!beat) return
+  if (!beat) return false
   melodieLaeuft = true
   const bereit = await Promise.race([
     Promise.all([beat, ...stimmen].map((d) => (d ? laden(d) : Promise.resolve(null)))),
@@ -198,9 +203,9 @@ export async function startmelodie() {
   ])
   if (!bereit) {
     melodieLaeuft = false
-    return
+    return false
   }
-  if (!melodieLaeuft || !laut) return // inzwischen abgebrochen (Spiel gestartet)
+  if (!melodieLaeuft || !laut) return false // inzwischen abgebrochen (Spiel gestartet)
   const t0 = ctx.currentTime + 0.05
   const lautstaerke = ctx.createGain()
   lautstaerke.connect(laut)
@@ -211,6 +216,7 @@ export async function startmelodie() {
   melodie = { lautstaerke, quellen }
   if (q) q.onended = () => ((melodieLaeuft = false), (melodie = null))
   else melodieLaeuft = false
+  return !!q && ctx.state === 'running'
 }
 
 /** Startmelodie sanft ausblenden – etwa wenn das Spiel beginnt und die Show ihren eigenen Jingle spielt. */
@@ -317,9 +323,35 @@ export async function sprich(
   }
 }
 
-// ---- Ton an/aus (WCAG 1.4.2): nur im Arbeitsspeicher ----
-let tonAn = true
+// ---- Ton an/aus (WCAG 1.4.2) ----
+// Die Wahl bleibt nur, wenn man sie ausdrücklich trifft („Ton einschalten“, „Ohne Ton spielen“, Lautsprecher) –
+// § 25 Abs. 2 Nr. 2 TDDDG. Ohne Wahl ist der Ton an, spielt aber erst nach der ersten Nutzeraktion (Browser).
+const WAHL = 'politik-duell-ton'
+export function gemerkteTonWahl(): 'an' | 'aus' | null {
+  try {
+    const w = localStorage.getItem(WAHL)
+    return w === 'an' || w === 'aus' ? w : null
+  } catch {
+    return null
+  }
+}
+export function tonWahlMerken(an: boolean) {
+  try {
+    localStorage.setItem(WAHL, an ? 'an' : 'aus')
+  } catch {
+    // privater Modus o. Ä.: gilt dann nur für diesen Besuch
+  }
+}
+
+let tonAn = gemerkteTonWahl() !== 'aus'
+/** Hat der Browser den Ton in diesem Besuch freigegeben (Musik spielt oder Audio-Kontext läuft)? */
+let frei = false
 const tonHoerer = new Set<() => void>()
+function freigeben() {
+  if (frei) return
+  frei = true
+  tonHoerer.forEach((h) => h())
+}
 export function setzeTon(an: boolean) {
   tonAn = an
   if (laut && ctx) laut.gain.setTargetAtTime(an ? 1 : 0, ctx.currentTime, 0.02)
@@ -327,8 +359,6 @@ export function setzeTon(an: boolean) {
   tonHoerer.forEach((h) => h())
 }
 export const tonIstAn = () => tonAn
-export const useTon = () =>
-  useSyncExternalStore(
-    (h) => (tonHoerer.add(h), () => tonHoerer.delete(h)),
-    () => tonAn,
-  )
+const tonAbo = (h: () => void) => (tonHoerer.add(h), () => tonHoerer.delete(h))
+export const useTon = () => useSyncExternalStore(tonAbo, () => tonAn)
+export const useTonFrei = () => useSyncExternalStore(tonAbo, () => frei)

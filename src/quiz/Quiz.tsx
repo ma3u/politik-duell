@@ -14,9 +14,9 @@ import { bereinigeName, FRAGEN_JE_SPIEL } from './spielleitung'
 import type { QuizDaten } from './typen'
 import { useGast, useSpielleitung } from './useSpiel'
 import { VERMITTLUNG } from './netz'
-import { TonKnopf, UntertitelLeiste } from './show/Buehne'
+import { TonAufruf, TonKnopf, UntertitelLeiste } from './show/Buehne'
 import { alleClips, GERAEUSCHE } from './show/texte'
-import { entsperren, ladeShow, melodieStoppen, startmelodie, vorladen } from './show/ton'
+import { entsperren, gemerkteTonWahl, ladeShow, melodieStoppen, startmelodie, vorladen } from './show/ton'
 import { SIGNAL_ART } from './verbindung'
 
 // Programm-Quiz „Wer sagt Ja?“ unter #/quiz (Einladung: #/quiz/<Raumname>, z. B. #/quiz/kluge-eule-27). Ohne Datenbank: Die Fragen kommen
@@ -82,8 +82,8 @@ function useStartmelodie() {
     const arten = ['pointerdown', 'keydown'] as const
     const entfernen = () => arten.forEach((a) => removeEventListener(a, los, true))
     function los(e: Event) {
-      // Landet das erste Tippen auf dem Ton-Knopf, entscheidet der Knopf (aus: keine Musik, an: Musik).
-      if (e.target instanceof Element && e.target.closest('.show-ton')) {
+      // Landet das erste Tippen auf dem Ton-Knopf oder dem Hinweis, entscheiden diese (aus: keine Musik, an: Musik).
+      if (e.target instanceof Element && e.target.closest('.ton-wahl')) {
         entfernen()
         melodieGespielt = true
         return
@@ -94,6 +94,14 @@ function useStartmelodie() {
       void startmelodie()
     }
     arten.forEach((a) => addEventListener(a, los, true))
+    // Hat man den Ton früher ausdrücklich eingeschaltet, gleich versuchen – manche Browser erlauben das bei
+    // bekannten Seiten. Sonst bleibt es beim ersten Tippen (und dem Hinweis „Mit Ton spielen?“).
+    if (gemerkteTonWahl() === 'an')
+      void startmelodie().then((ok) => {
+        if (!ok) return
+        melodieGespielt = true
+        entfernen()
+      })
     return entfernen
   }, [])
 }
@@ -165,6 +173,7 @@ export function Quiz() {
           <TonKnopf />
         </span>
       </header>
+      <TonAufruf mitMelodie={modus.art === 'start'} />
       {!daten ? (
         <main className="seite quiz">
           <p className="hinweis" role={ladeFehler ? 'alert' : undefined}>

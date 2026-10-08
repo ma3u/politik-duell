@@ -331,6 +331,12 @@ function Datenschutz() {
         Abs. 2 Nr. 2 TDDDG) und bleibt auf deinem Gerät; Entfernen des Häkchens löscht beides.
       </p>
       <p>
+        <strong>Ton-Einstellung:</strong> Tippst du auf „Ton einschalten“, „Ohne Ton spielen“ oder den Lautsprecher,
+        merkt sich die App deine Wahl (an oder aus) im Speicher deines Browsers (localStorage), damit du sie nicht bei
+        jedem Besuch neu treffen musst – auf deinen ausdrücklichen Wunsch (§ 25 Abs. 2 Nr. 2 TDDDG). Gespeichert wird nur
+        dieses eine Wort; löschen kannst du es über die Website-Daten deines Browsers.
+      </p>
+      <p>
         <strong>Öffentliche Räume („Mit Zufälligen spielen“):</strong> Machst du einen Raum öffentlich, steht sein Name
         und die Zahl der Mitspielenden in einer Liste, die alle Besucherinnen und Besucher des Quiz sehen – gespeichert
         in der Firebase Realtime Database (siehe oben), solange der Raum auf Mitspielende wartet. Beim Spielstart, beim

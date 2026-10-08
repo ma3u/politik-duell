@@ -3394,6 +3394,39 @@ html:has(.punktestand) {
 .show-ton-symbol {
   display: block;
 }
+/* „Mit Ton spielen?“ – solange der Browser den Ton noch nicht freigegeben hat. */
+.ton-aufruf {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  max-width: 34rem;
+  margin: 0.75rem auto 0;
+  padding: 0.9rem 1rem;
+  background: var(--stimmblau-hell);
+  color: var(--text);
+  border: 2px solid var(--stimmblau);
+  border-radius: 12px;
+}
+.ton-aufruf > .show-ton-symbol {
+  flex: none;
+  color: var(--stimmblau);
+  margin-top: 0.15rem;
+}
+.ton-aufruf-text {
+  flex: 1;
+  min-width: 0;
+}
+.ton-aufruf-titel {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+.ton-aufruf p {
+  margin: 0 0 0.6rem;
+}
+.ton-aufruf .knopf-reihe {
+  flex-wrap: wrap;
+  margin-top: 0;
+}
 .show-ton-luecke {
   stroke: var(--flaeche);
 }
