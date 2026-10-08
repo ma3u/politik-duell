@@ -9,13 +9,13 @@ import { entsperren, setzeTon, startmelodie, tonWahlMerken, useTon, useTonFrei, 
 const steht_auf_der_seite = (id: string) => id.startsWith('frage-') || id.startsWith('anl-') || id === 'optionen' || id.startsWith('loesung-')
 
 /**
- * Untertitel der Moderatoren – nur, wenn der Ton aus ist (oder eine Aufnahme fehlt) und der Inhalt nicht schon auf
- * der Seite steht: Wer hört, soll nicht zugleich mitlesen müssen. Für Screenreader ausgeblendet, denn alles, was
- * zählt, steht ohnehin auf der Seite.
+ * Sprechblase der Moderatoren – mit und ohne Ton, aber nicht für Ansagen, deren Inhalt schon auf der Seite steht
+ * (sonst steht derselbe Text doppelt da). Für Screenreader ausgeblendet, denn alles, was zählt, steht ohnehin auf
+ * der Seite.
  */
 export function UntertitelLeiste() {
   const u = useUntertitel()
-  if (!u || u.hoerbar || steht_auf_der_seite(u.id)) return null
+  if (!u || steht_auf_der_seite(u.id)) return null
   return (
     <div className={`show-untertitel show-untertitel-${u.sprecher}`} aria-hidden="true">
       <span className="show-sprecher">{SPRECHER[u.sprecher].name}</span>

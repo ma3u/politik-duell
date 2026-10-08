@@ -20,7 +20,7 @@ Frage, Auflösung, Ergebnis), Themen & Zahlen, Methode, Datenschutz, Impressum �
 | 3.3.2 | Hinweise: „Ein Tipp auf eine Partei gibt die Antwort ab“, Format des Raumcodes | `Ansicht.tsx`, `Quiz.tsx` |
 | 4.1.3 | Zeitansage für Screenreader nur bei 10 und 5 Sekunden und bei Ablauf (statt jeder Sekunde) | `Zeitleiste` |
 | 1.4.2 | Quiz-Show: Ton-Schalter in der Kopfzeile für Sprache und Geräusche (Lautsprecher, durchgestrichen = aus; Schalter „Ton“ mit `aria-pressed`) | `src/quiz/show/Buehne.tsx` |
-| 1.2.1 | Untertitel der Moderatoren, wenn der Ton aus ist oder eine Aufnahme fehlt; nicht bei Frage, Anleitung, Auswahl und Lösung, die ohnehin als Text auf der Seite stehen (wer hört, soll nicht doppelt lesen – Entscheidung der Betreiberin, 8. 10. 2026) | `UntertitelLeiste` |
+| 1.2.1 | Untertitel der Moderatoren als Sprechblase, mit und ohne Ton; nicht bei Frage, Anleitung, Auswahl und Lösung, die ohnehin als Text auf der Seite stehen (kein doppelter Text – Entscheidung der Betreiberin, 8. 10. 2026) | `UntertitelLeiste` |
 | 2.3.1, 2.2.2 | Show-Animationen ohne Blinken, kurz; sie ruhen bei „Bewegung anhalten“ und „Bewegung reduzieren“ (jetzt auch Übergänge); Sichtbarkeit hängt nie am Ende einer Animation | `src/index.css` („Quiz-Show“) |
 
 Schon vorher erfüllt: `lang="de"`, Beschriftungen aller Felder, sichtbarer Fokus (`:focus-visible`), Bedienung
