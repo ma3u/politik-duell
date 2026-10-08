@@ -126,10 +126,9 @@ export const SCHLUSS: Record<Schluss, Clip> = {
  * Tippen auf der Startseite des Quiz und beim Einschalten des Tons, damit man hört, ob der Ton an ist.
  */
 /**
- * Startmusik (bevorzugt, wenn vorhanden): kurzer Party-Elektro-Song mit gesungenem Chor „Politik-Duell!“, erzeugt mit der
- * Music-API von ElevenLabs. Ohne Künstlernamen im Prompt: eigener Stil, keine Nachahmung. Weil der gesungene Chor
- * schwer zu verstehen ist, mischt `npm run quiz:stimmen` den Ruf CHOR beider Moderatoren im Takt darüber (Musik
- * darunter leicht abgesenkt). Fehlt die Datei, spielt die Startmelodie Beat und CHOR.
+ * Startmusik (bevorzugt, wenn vorhanden): kurzer Party-Elektro-Song mit gesungenem Chor „Politik-Duell!“, erzeugt mit
+ * der Music-API von ElevenLabs. Ohne Künstlernamen im Prompt: eigener Stil, keine Nachahmung. Fehlt die Datei, spielt
+ * die Startmelodie Beat und CHOR.
  */
 export const STARTMUSIK: Geraeusch = {
   id: 'startmusik',
@@ -138,10 +137,9 @@ export const STARTMUSIK: Geraeusch = {
   sekunden: 10,
 }
 
-/** Ruf „Politik-Duell!“ – silbenweise gerufen, damit er über der Musik verständlich ist. */
 export const CHOR: Clip[] = [
-  { id: 'chor-mara', sprecher: 'mara', text: '[shouting] Po-li-tik-Du-ell!' },
-  { id: 'chor-ben', sprecher: 'ben', text: '[shouting] Po-li-tik-Du-ell!' },
+  { id: 'chor-mara', sprecher: 'mara', text: '[shouting] Politik-Duell!' },
+  { id: 'chor-ben', sprecher: 'ben', text: '[shouting] Politik-Duell!' },
 ]
 
 export const OUTRO: Clip = { id: 'outro', sprecher: 'mara', text: 'Danke fürs Mitspielen – und denk dran: Versprechen kann jeder!' }
