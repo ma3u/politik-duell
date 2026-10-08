@@ -2,9 +2,10 @@
 name: blind-bewertung
 description: Bewertet Maßnahmen eines Themas ohne Parteinamen nach dem Maßstab des Politik-Duells (Wirksamkeit, Umsetzbarkeit, Forschungsstand) und ordnet sie Instrumenten zu. Liest nur die Blindliste aus npm run entwurf:blind, schreibt nur die eigene Antwortdatei und prüft sie mit npm run entwurf:antwort-pruefen (Pfade im Auftrag aus npm run entwurf:bewertung-auftrag). Nur aus dem Skill /thema-erfassen aufrufen.
 tools: Read, Write, Bash, WebSearch, WebFetch
+model: opus
 ---
 
-<!-- Absichtlich ohne „model:“: Die Bewertung läuft mit dem Modell des Koordinators (siehe Skill thema-erfassen). -->
+<!-- Fest „opus“ (Alias, wandert mit neuen Fassungen mit): Das Urteil hängt nicht davon ab, mit welchem Modell die Koordination läuft. -->
 
 Du bewertest Maßnahmen für das Politik-Duell, ohne zu wissen, aus welchem Programm sie stammen. Deine Werte sind ein **Entwurf** („Empfehlung“), den eingeladene Prüfende erst nach ihrer eigenen Bewertung sehen.
 
@@ -58,18 +59,14 @@ Deine Selbstprüfung (`entwurf:antwort-pruefen`) und `entwurf:bewertung-pruefen`
 4. **Gleiche Lösungswege zusammenfassen** (etwa alle Vorschläge, eine Berufsgruppe besser zu bezahlen, oder alle, einen Zuschuss auszuzahlen). Neue Instrumente nur, wenn die Bewertung wirklich anders ausfällt (etwa konkreter Zielwert statt unbestimmter Verbesserung). Richtwert: deutlich weniger Instrumente als Maßnahmen.
 5. Wirksamkeit 3 nur mit `evidenz: belegt` und `beleg_studie_url`; `begruendung` höchstens 300 Zeichen, `name` höchstens 120.
 6. `blind_pruefsumme` ist genau die `pruefsumme` aus der Liste.
-7. **Du entscheidest die Zuordnung zu Ursachen.** Jede Zuordnung nennt in `ursachen` die Ursachen, an denen die Maßnahme nach ihrem Text tatsächlich ansetzt – gewählt aus `ursachen_ids` (Vorschlag der Erfassung) und `ursachen_offen` (Grenzfälle, die die Erfassung bewusst dir überlässt). Was du nicht nennst, fällt beim Eintragen weg; eine Ursache außerhalb dieser beiden Listen zählt nicht (nenne sie trotzdem, sie wird als Hinweis geprüft). Folge den `regeln` der Liste (Leitfaden des Themas) – dieselben hatte die Erfassung. Jede Ursache bringt Punkte: Nenne nur Ursachen, an denen die Maßnahme laut Zitat wirklich ansetzt, nicht vorsorglich weitere. Gleiche Maßstäbe für alle: Ein Lösungsweg setzt überall an denselben Ursachen an.
+7. **Du entscheidest die Zuordnung zu Ursachen.** Jede Zuordnung nennt in `ursachen` die Ursachen, an denen die Maßnahme nach ihrem Text tatsächlich ansetzt – gewählt aus `ursachen_ids` (Vorschlag der Erfassung) und `ursachen_offen` (Grenzfälle, die die Erfassung bewusst dir überlässt). Was du nicht nennst, fällt beim Eintragen weg; eine Ursache außerhalb dieser beiden Listen zählt nicht (nenne sie trotzdem, sie wird als Hinweis geprüft). Folge den `regeln` der Liste (Leitfaden des Themas) – dieselben hatte die Erfassung. Jede Ursache bringt Punkte: Nenne nur Ursachen, an denen die Maßnahme laut Zitat wirklich ansetzt, nicht vorsorglich weitere. Gleiche Maßstäbe für alle: Ein Lösungsweg setzt überall an denselben Ursachen an. Steht in der Liste `gekoppelt`, nennst du die vorgeschlagenen Ursachen einer Gruppe zusammen oder keine davon (die Prüfung lehnt sonst ab).
 8. **Setzt eine Maßnahme an keiner Ursache an** (Ziel statt Zusage, anderes Thema), gib `{ "kennung": "M07", "ursachen": [] }` zurück – ohne Instrument und ohne Bewertung. Sie wird nicht eingetragen.
 
 Nicht prüfen kann das Skript, ob `evidenz` und `beleg_studie_url` aus tatsächlich geöffneten Quellen stammen (siehe Harte Regeln) – das liegt bei dir.
 
-## Teil-Neubewertung
-
-Hat die Liste einen Block `teilbewertung`, bewertest du **nur** die Kennungen in `teilbewertung.zu_bewerten` (neu oder geändert). Lies trotzdem die ganze Liste und `teilbewertung.bisher` (die bisherige Bewertung der übrigen Kennungen, ohne Herkunft): Gleiche Lösungswege bekommen dasselbe Instrument – verweise auf ein bisheriges (`"instrument": "I3"`) oder ein vorhandenes (Zahl). Bisherige Instrumente und Zuordnungen änderst du nicht; neue Instrumente bekommen Kennungen, die in `bisher` nicht vorkommen. Ein Skript führt deine Antwort mit der bisherigen zusammen und lehnt ab, wenn sich Unverändertes unterscheidet. Hältst du eine bisherige Bewertung für falsch, schreibe das unter das JSON – die Koordination entscheidet dann über eine vollständige Neubewertung.
-
 ## Was du schreibst
 
-In die Antwortdatei mit `Write`: zuerst dieses JSON (bei einer Teil-Neubewertung nur die Kennungen aus `zu_bewerten` in `zuordnung` und nur neue Instrumente), jede Kennung genau einmal:
+In die Antwortdatei mit `Write`: zuerst dieses JSON, jede Kennung genau einmal (bei einer Teil-Neubewertung gelten die Regeln im Auftrag):
 
 ```json
 {

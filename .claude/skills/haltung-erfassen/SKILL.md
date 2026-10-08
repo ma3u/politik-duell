@@ -25,7 +25,7 @@ Je Bundesprogramm eine Textdatei und ein Auftrag mit allen Haltungen (`.cache/ha
 
 ## 2. Fundstellen
 
-Je Auftrag ein Agent `haltung-erfassung` (alle sieben gleichzeitig, mit der nächstkleineren Modellstufe deiner Familie), Auftrag nur:
+Je Auftrag ein Agent `haltung-erfassung` (alle sieben gleichzeitig, ohne Parameter `model` – das Modell steht in der Agentenbeschreibung), Auftrag nur:
 
 > Erledige den Auftrag `.cache/haltung/lauf/auftraege/<Name>.md` nach `.claude/agents/haltung-erfassung.md`.
 
@@ -37,7 +37,7 @@ Der Agent prüft seine Zitate selbst und speichert je Haltung `.cache/haltung/<I
 npm run -s haltung:blind '--' <ID> <ID> …
 ```
 
-„Rest: …“ heißt: ein Name im Zitat wurde nicht ersetzt – im Pull Request nennen. Dann **ein** Agent `haltung-einordnung` mit deinem eigenen Modell und genau dem Auftragssatz aus der Ausgabe. Er prüft jede Antwort selbst (`haltung:antwort-pruefen`).
+„Rest: …“ heißt: ein Name im Zitat wurde nicht ersetzt – im Pull Request nennen. Dann **ein** Agent `haltung-einordnung` (ohne Parameter `model`) mit genau dem Auftragssatz aus der Ausgabe. Er prüft jede Antwort selbst (`haltung:antwort-pruefen`).
 
 ## 4. Eintragen
 
@@ -53,7 +53,7 @@ Haltungen mit weniger als drei erkennbaren Positionen trägt das Skript nicht ei
 
 ## 5. Abschluss
 
-In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
+In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
 
 ## Nachtrag einer neu aufgenommenen Partei
 

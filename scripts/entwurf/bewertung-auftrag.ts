@@ -71,6 +71,13 @@ if (existsSync(auftragDatei) || existsSync(antwortDatei)) {
 }
 copyFileSync(blindDatei, archivPfad(pfad, blind.pruefsumme))
 
+// Steht nur hier, nicht in der Agentenbeschreibung: Der Agent liest die Regeln nur, wenn sie gelten.
+const teilNeubewertung = (n: number) => [
+  `Teil-Neubewertung: Bewerte nur die ${n} Kennungen unter „teilbewertung.zu_bewerten“ (neu oder geändert). Lies trotzdem die ganze Liste und „teilbewertung.bisher“ (die bisherige Bewertung der übrigen Kennungen, ohne Herkunft): Gleiche Lösungswege bekommen dasselbe Instrument – verweise auf ein bisheriges („"instrument": "I3"“) oder ein vorhandenes (Zahl).`,
+  'Bisherige Instrumente und Zuordnungen änderst du nicht; neue Instrumente bekommen Kennungen, die in „bisher“ nicht vorkommen. In „zuordnung“ stehen nur die Kennungen aus „zu_bewerten“, in „neue_instrumente“ nur neue Instrumente. Ein Skript führt deine Antwort mit der bisherigen zusammen und lehnt ab, wenn sich Unverändertes unterscheidet.',
+  'Hältst du eine bisherige Bewertung für falsch, schreibe das unter das JSON – die Koordination entscheidet dann über eine vollständige Neubewertung.',
+]
+
 const posix = (p: string) => resolve(p).replace(/\\/g, '/')
 const teil = blind.teilbewertung
 const text = [
@@ -79,7 +86,7 @@ const text = [
   `Prüfsumme der Liste: ${blind.pruefsumme}`,
   `Antwort (nur schreiben): ${posix(antwortDatei)}`,
   `Heute ist der ${datum}.`,
-  ...(teil ? [`Teil-Neubewertung: Bewerte nur die ${teil.zu_bewerten.length} Kennungen unter „teilbewertung.zu_bewerten“; lies trotzdem die ganze Liste (siehe „Teil-Neubewertung“ in der Agentenbeschreibung).`] : []),
+  ...(teil ? ['', ...teilNeubewertung(teil.zu_bewerten.length)] : []),
   ...(rueckfrage ? ['', 'Rückfrage der Koordination:', rueckfrage] : []),
 ].join('\n')
 writeFileSync(auftragDatei, text + '\n', 'utf8')

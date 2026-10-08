@@ -137,6 +137,20 @@ export function auftragText(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'suchbeg
     for (const [u, l] of buendel) z.push(`- **${u}**: ${l.map((b) => `„${b}“`).join(' · ')}`)
     z.push('')
   }
+  const hebel = e.nachtrag ? [] : Object.entries(e.leitfaden?.hebel ?? {}).filter(([u, l]) => ids.has(Number(u)) && l.length)
+  if (hebel.length) {
+    z.push(
+      '## Hebel-Checkliste (jeden Hebel beantworten)',
+      '',
+      'Je Hebel höchstens eine Maßnahme mit `"buendel": "<Hebel>"` (die konkreteste Stelle). Findest du zu einem Hebel nichts, trage ihn unter `hebel_nicht_gefunden` mit den gelesenen Seiten und dem Grund ein. Ein Hebel geht vor einem Bündel desselben Bereichs. Zusagen mit einem Hebel, der hier fehlt, erfasst du trotzdem (ohne `buendel`, gemeldet unter `neue_buendel`).',
+      '',
+    )
+    for (const [u, l] of hebel) z.push(`- **${u}**: ${l.map((b) => `„${b}“`).join(' · ')}`)
+    z.push('')
+  }
+  const gekoppelt = (e.leitfaden?.gekoppelt ?? []).map((g) => g.filter((u) => ids.has(u))).filter((g) => g.length > 1)
+  if (gekoppelt.length)
+    z.push(`**Gekoppelte Ursachen:** ${gekoppelt.map((g) => g.join(' + ')).join('; ')} – nennt eine Maßnahme eine davon, nennt sie alle (die Selbstprüfung lehnt sonst ab).`, '')
   z.push('## Treffer je Ursache und Richtung', '')
   const pflicht: number[] = []
   for (const u of ursachen) {

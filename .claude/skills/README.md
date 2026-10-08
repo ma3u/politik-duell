@@ -21,7 +21,7 @@ flowchart TD
     end
     subgraph F["Forderungen"]
         F1["/forderung-erfassen<br/>npm run instrumente: schon vorhanden?"]
-        F2["neue Suchbegriffe im Leitfaden<br/>Nachtrag nur in erfassten Programmen"]
+        F2["neue Suchbegriffe im Leitfaden<br/>Nachtrag nur in erfassten Programmen<br/>mehrere Themen: ein Agent je Programm (entwurf:sammelauftrag)"]
         F1 --> F2 --> T4
     end
     subgraph H["Haltungen"]
@@ -50,9 +50,12 @@ flowchart TD
 
 - Skripte statt Agenten, wo es geht (zählen, Fundstellen, Zitate, Zusammenführen, Bericht).
 - Keine inhaltlichen Rückfragen, keine Nachrecherche der Koordination, eine Runde für die Suchbegriffe.
-- Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf, Erfassung mit der nächstkleineren Modellstufe.
+- Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf.
+- Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und kann deshalb mit `sonnet` laufen, ohne dass sich Urteile ändern.
+- Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
+- Forderungen gebündelt: mehrere Themen in einem `/forderung-erfassen`, ein Erfassungs-Agent je Programm für alle Themen (`entwurf:sammelauftrag`); bewertet wird weiter je Thema.
 - Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.
-- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen.
+- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen – ein Block je Aufruf, mit `/clear` dazwischen.
 - Keine Dokumentpflege außer dem Abschnitt in `docs/perspektiven-ursachen.md` bzw. `docs/haltungen.md`; der Rest steht in Protokoll und Pull Request.
 
 ## Grundlage

@@ -1,7 +1,7 @@
 ---
 name: forderung-erfassen
-description: Trägt für ein schon erfasstes Thema des Politik-Duells einen fehlenden Lösungsweg nach (Forderungskarte „Zeig mir, wer das fordert“) – prüft, ob es das Instrument schon gibt, ergänzt sonst Suchbegriffe im Leitfaden, durchsucht alle erfassten Programme nur danach, bewertet neue Fundstellen ohne Parteinamen und ergänzt die vorhandenen Einträge als KI-Entwurf. Aufruf z. B. /forderung-erfassen 2 "Mietendeckel" oder mehrere Forderungen eines Themas: /forderung-erfassen 2 "Mietendeckel"; "Wohngeld erhöhen".
-argument-hint: <Themen-ID> "<Forderung>"[; "<Forderung>" …]
+description: Trägt für ein schon erfasstes Thema des Politik-Duells einen fehlenden Lösungsweg nach (Forderungskarte „Zeig mir, wer das fordert“) – prüft, ob es das Instrument schon gibt, ergänzt sonst Suchbegriffe im Leitfaden, durchsucht alle erfassten Programme nur danach, bewertet neue Fundstellen ohne Parteinamen und ergänzt die vorhandenen Einträge als KI-Entwurf. Aufruf z. B. /forderung-erfassen 2 "Mietendeckel" oder mehrere Forderungen eines Themas: /forderung-erfassen 2 "Mietendeckel"; "Wohngeld erhöhen"; mehrere Themen durch „|“ getrennt: /forderung-erfassen 2 "Mietendeckel" | 15 "Tempolimit" (dann ein Agent je Programm für alle Themen).
+argument-hint: <Themen-ID> "<Forderung>"[; "<Forderung>" …] [| <Themen-ID> "<Forderung>" …]
 disable-model-invocation: true
 ---
 
@@ -12,6 +12,14 @@ Aufruf: **$ARGUMENTS**
 Eine Forderung („weniger X“, „Y einführen“) ist im Politik-Duell ein **Lösungsweg** (Instrument) eines Themas. Die Forderungskarte zeigt, welche Programme ihn haben. Fehlt er, wurde bisher nicht danach gesucht. Dieser Skill sucht nur danach – in **allen** Programmen, die zum Thema schon erfasst sind, mit denselben Begriffen – und ergänzt die Einträge. Vorhandenes bleibt unverändert. Ergebnis: KI-Entwurf für die Testphase.
 
 Du bist Koordination wie in `/thema-erfassen` (liest keine Programme, vergibst keine Werte). Die Befehle und Agenten sind dieselben; Unterschiede stehen hier.
+
+**Mehrere Themen** (durch „|“ getrennt): Schritte 1–2 je Thema. In Schritt 3 je Thema Arbeitsordner, `entwurf:treffer --vorab` und `entwurf:auftrag`, dann **gemeinsam erfassen** (jedes Programm wird einmal gelesen statt einmal je Thema):
+
+```bash
+npm run -s entwurf:sammelauftrag '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/erfassung.json …
+```
+
+Je Sammelauftrag ein Agent `programm-erfassung` (ohne Parameter `model`), Auftrag nur: „Erledige den Sammelauftrag `.cache/entwurf/sammel/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.“ Er schreibt je Thema die gewohnte Ergebnisdatei und prüft sie selbst. Rückfragen gehen per SendMessage an denselben Agenten und nennen das Thema. Kosten je Agent in `protokoll/kosten.md` des ersten Themas, mit den Themen-IDs. Ab `zusammenfuehren` läuft alles **je Thema** weiter wie unten (eigene Blindliste, eigener Agent `blind-bewertung`, eigener Commit) – die Bewertung mischt keine Themen.
 
 ## 1. Gibt es den Lösungsweg schon?
 
@@ -52,4 +60,4 @@ npm run -s entwurf:archivieren '--' .cache/entwurf/<ID>/erfassung.json '--name' 
 npm run -s instrumente '--' <ID>
 ```
 
-Commit „<Thema>: Lösungsweg <Forderung> nachgetragen (KI-Entwurf)“ mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/`, Protokoll. Pull Request: ein Satz je Forderung (Instrument-ID, in wie vielen Programmen gefunden) und `pr-daten.md`.
+Commit „<Thema>: Lösungsweg <Forderung> nachgetragen (KI-Entwurf)“ mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/`, Protokoll. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request: ein Satz je Forderung (Instrument-ID, in wie vielen Programmen gefunden) und `pr-daten.md`.
