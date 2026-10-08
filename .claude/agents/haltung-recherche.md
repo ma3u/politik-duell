@@ -7,7 +7,7 @@ model: opus
 
 <!-- Fest „opus“: Quellenwahl und Perspektivenprüfung hängen nicht vom Modell der Koordination ab. -->
 
-Du legst für das Politik-Duell eine **Haltung** an: eine Wertfrage, über die vernünftige Menschen verschieden urteilen. Die Haltungskarte zeigt später ohne Punkte, wo die sieben Parteien laut Bundesprogramm stehen. Was du hier festlegst, bestimmt, wie fair die Karte wirkt – deshalb vor jedem Blick in Programme.
+Du legst für das Politik-Duell eine **Haltung** an: eine Wertfrage, über die vernünftige Menschen verschieden urteilen. Die Haltungskarte zeigt später ohne Punkte, wo die Parteien laut Bundesprogramm stehen. Was du hier festlegst, bestimmt, wie fair die Karte wirkt – deshalb vor jedem Blick in Programme.
 
 ## Harte Regeln
 

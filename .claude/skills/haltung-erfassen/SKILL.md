@@ -9,7 +9,7 @@ disable-model-invocation: true
 
 Aufruf: **$ARGUMENTS** (Bereiche wie `4-20` als einzelne IDs schreiben).
 
-Du bist Koordination: Programme lesen nur die Agenten `haltung-erfassung`, einordnen nur der Agent `haltung-einordnung` (ohne Parteinamen). Du liest keine Programme und änderst keine Einordnung. Ergebnis: KI-Entwurf für die Testphase. Alle Haltungen laufen **gemeinsam**: sieben Erfassungs-Agenten und ein Einordnungs-Agent, gleich wie viele Haltungen. Bei mehr als 15 Haltungen in Läufen zu höchstens 15 (sonst werden die Aufträge zu lang).
+Du bist Koordination: Programme lesen nur die Agenten `haltung-erfassung`, einordnen nur der Agent `haltung-einordnung` (ohne Parteinamen). Du liest keine Programme und änderst keine Einordnung. Ergebnis: KI-Entwurf für die Testphase. Je Lauf ein Erfassungs-Agent je Bundesprogramm (derzeit acht) und am Ende ein Einordnungs-Agent für alle Haltungen. **Höchstens sechs Haltungen je Lauf**, mehr nacheinander (gemeinsamer Lauf-Ordner): Mit 15 auf einmal nahmen die Agenten oft Stellen, die das Thema nur berühren; die Neuerfassung am 8. 10. 2026 mit vier je Lauf brachte deutlich bessere Funde (docs/haltungen.md).
 
 ## 0. Voraussetzung
 
@@ -25,11 +25,17 @@ Je Bundesprogramm eine Textdatei und ein Auftrag mit allen Haltungen (`.cache/ha
 
 ## 2. Fundstellen
 
-Je Auftrag ein Agent `haltung-erfassung` (alle sieben gleichzeitig, ohne Parameter `model` – das Modell steht in der Agentenbeschreibung), Auftrag nur:
+Je Auftrag ein Agent `haltung-erfassung` (alle gleichzeitig, ohne Parameter `model` – das Modell steht in der Agentenbeschreibung), Auftrag nur:
 
 > Erledige den Auftrag `.cache/haltung/lauf/auftraege/<Name>.md` nach `.claude/agents/haltung-erfassung.md`.
 
 Der Agent prüft seine Zitate selbst und speichert je Haltung `.cache/haltung/<ID>/funde/<Name>.json`. Kommt kein „In Ordnung“, denselben Agenten (SendMessage) die Fehler beheben lassen.
+
+**Nachprüfung, für alle Programme gleich:** Nach dem letzten Lauf je Programm die Haltungen mit `keine_aussage` sammeln, für jedes Programm nacheinander `npm run -s haltung:auftrag '--' <genau diese IDs>` und ein Agent `haltung-erfassung` mit dem Auftragssatz und diesem Zusatz (wortgleich für alle):
+
+> Nachprüfung: Bei allen Haltungen dieses Auftrags hat eine erste Erfassung keine Stelle gefunden. Lies die Treffer und das passende Kapitel noch einmal und prüfe auch naheliegende Wörter. Auch eine Stelle, die eine im Maßstab genannte Form trägt, ist ein Fund (Schritt 3). Bleibt es bei keiner Aussage, nenne im Feld keine_aussage, was du gelesen und gesucht hast.
+
+Kein Eingriff in einzelne Programme darüber hinaus – auch nicht, wenn ein Ergebnis überrascht.
 
 ## 3. Einordnen ohne Parteinamen
 
@@ -53,7 +59,7 @@ Haltungen mit weniger als drei erkennbaren Positionen trägt das Skript nicht ei
 
 ## 5. Abschluss
 
-In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
+In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus den Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
 
 ## Nachtrag einer neu aufgenommenen Partei
 

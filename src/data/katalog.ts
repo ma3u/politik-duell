@@ -1162,7 +1162,13 @@ export function pruefeKatalog(
     if (h.suchbegriffe !== undefined) {
       const s = h.suchbegriffe
       if (!Array.isArray(s) || !s.length || s.some((x) => typeof x !== 'string' || !x.trim())) f(ort, '„suchbegriffe“ muss eine nicht leere Liste von Wörtern sein')
-      else haltung.suchbegriffe = s as string[]
+      else {
+        haltung.suchbegriffe = s as string[]
+        for (const b of s as string[]) {
+          const n = suchbegriffInParteinamen(b, parteinamen)
+          if (n) f(ort, `Suchbegriff „${b}“ steckt im Parteinamen „${n}“ – träfe dort fast jede Seite; genauer fassen`)
+        }
+      }
     }
 
     // Positionen der Parteien (Phase B): erst nach der Freigabe, höchstens eine je Partei und Programm.
@@ -1289,6 +1295,19 @@ export const alsDateien = (module: Record<string, unknown>): Datei[] =>
     .map(([pfad, inhalt]) => ({ pfad: pfad.replace(/^(\.\.\/)+/, ''), inhalt }))
 
 /** Prüft und wirft bei Fehlern – für Stellen, an denen die Daten schon geprüft sein müssen. */
+/**
+ * Steckt ein Suchbegriff in einem Parteinamen („bündnis“ in „Bündnis 90/Die Grünen“, „sozial“ in
+ * „Sozialdemokratische Partei“)? Dann träfe die Suche im Programm dieser Partei fast jede Seite (Kopfzeilen, Selbstnennung)
+ * und begrübe die eigentlichen Stellen – eine Ungleichbehandlung. Gibt den getroffenen Namen zurück, sonst null.
+ */
+export function suchbegriffInParteinamen(begriff: string, parteien: { name: string; kurzname: string }[]): string | null {
+  const norm = (t: string) => t.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '')
+  const b = norm(begriff)
+  if (b.length < 3) return null
+  for (const p of parteien) for (const n of [p.name, p.kurzname]) if (norm(n).includes(b)) return n
+  return null
+}
+
 export function ladeKatalog(parteienDatei: Datei, themenDateien: Datei[], haltungDateien: Datei[] = []): Katalog {
   const { katalog, fehler } = pruefeKatalog(parteienDatei, themenDateien, undefined, undefined, haltungDateien)
   if (fehler.length) throw new Error(`Datenkatalog fehlerhaft (npm run daten:pruefen):\n${fehler.join('\n')}`)

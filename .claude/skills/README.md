@@ -40,7 +40,7 @@ flowchart TD
 | Sicherung | Wie |
 |---|---|
 | Ursachen und Fragen vor den Programmen | Phase A mit Programmsperre (`npm run phase-a`, Hook `.claude/hooks/sperre.mjs`); eigener Commit mit KI-Freigabe, bevor erfasst wird – `daten:id --gegen` prüft das am Commit-Verlauf |
-| Gleiche Suche für alle | Suchbegriffe und Leitfaden je Thema bzw. Haltung, für alle Programme gleich, von Skripten gezählt |
+| Gleiche Suche für alle | Suchbegriffe und Leitfaden je Thema bzw. Haltung, für alle Programme gleich, von Skripten gezählt; kein Suchbegriff darf in einem Parteinamen stecken („bündnis“ träfe sonst zwei Programme auf fast jeder Seite – `daten:pruefen` und `pruefeLeitfaden` melden das). Doppelt gezeichneter Fettdruck wird beim Auslesen zusammengeführt (`seitenTexte`), sonst fände die Suche dort nichts |
 | Belegte Zitate | Jeder Erfassungs-Agent prüft sein Zitat gegen die PDF-Seite (`entwurf:programm-pruefen`, `haltung:programm-pruefen`); `zitate:pruefen` in der CI |
 | Urteil ohne Parteinamen | `blind-bewertung` und `haltung-einordnung` sehen nur neutralisierte Listen; der Hook sperrt ihnen alles andere |
 | Keine Eingriffe der Koordination | Sie liest keine Programme und vergibt keine Werte; Rückfragen nur bei Skriptfehlern und im Protokoll |
@@ -54,7 +54,7 @@ flowchart TD
 - Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und kann deshalb mit `sonnet` laufen, ohne dass sich Urteile ändern.
 - Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
 - Forderungen gebündelt: mehrere Themen in einem `/forderung-erfassen`, ein Erfassungs-Agent je Programm für alle Themen (`entwurf:sammelauftrag`); bewertet wird weiter je Thema.
-- Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.
+- Haltungen gebündelt: ein Erfassungs-Agent je Programm und Lauf, ein Einordnungs-Agent am Ende. Höchstens sechs Haltungen je Lauf – mit 15 litt die Qualität (Stellen, die das Thema nur berühren); danach eine Nachprüfung der „keine Aussage“ mit gleichem Hinweis für alle Programme.
 - Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen – ein Block je Aufruf, mit `/clear` dazwischen.
 - Keine Dokumentpflege außer dem Abschnitt in `docs/perspektiven-ursachen.md` bzw. `docs/haltungen.md`; der Rest steht in Protokoll und Pull Request.
 

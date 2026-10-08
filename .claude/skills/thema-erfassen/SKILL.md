@@ -43,7 +43,7 @@ npm run -s entwurf:auftrag '--' .cache/entwurf/<ID>/erfassung.json
 
 ## 2. Erfassen
 
-Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
+Je Auftrag ein Agent `programm-erfassung` – je Bundes- und Landesprogramm einer (bei acht Parteien und drei Ländern bis zu 32 je Thema), höchstens 20 gleichzeitig; frei werdende Plätze sofort mit dem nächsten Auftrag füllen. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
