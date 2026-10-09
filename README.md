@@ -8,21 +8,19 @@ Grundprinzipien und Kurzüberblick: [CLAUDE.md](CLAUDE.md); Konzept, Spielablauf
 
 Testversion: **https://ma3u.github.io/politik-duell/** (GitHub Pages, ohne Supabase). Stand gegenüber dem Upstream [politik-duell/politik-duell](https://github.com/politik-duell/politik-duell): 35 eigene Commits seit `feb91ac`; die 8 neueren Upstream-Commits (u. a. Hebel-Checkliste im Leitfaden, Forderungen je Programm bündeln, sparsamere Skills) sind noch nicht übernommen. Änderungen gehen nur auf den Fork, nicht in den Upstream.
 
-**Programm-Quiz „Wer sagt Ja?“** (neu, `#/quiz`, auf Pages die Startseite)
-- Mehrspieler bis acht Personen, Browser zu Browser per WebRTC; Vermittlung über die Firebase Realtime Database (REST, ohne SDK), ersatzweise Supabase Realtime; merkbare Raumnamen („Kluge Eule 27“), „Mit Fremden“, „Mit Freunden“ (Raum eröffnen oder beitreten), „Alleine“
-- Show mit zwei KI-Moderatoren (Mara, Ben; ElevenLabs, vorab aufgenommen), Animationen, Geräuschen, Konfetti für den Sieg, Startmusik im Party-Elektro-Stil; Ton-Schalter als Lautsprecher, Hinweis „Mit Ton spielen?“ bis der Browser den Ton freigibt
-- Startseite: Name (wird gemerkt) und Zeit je Frage als Knopf in einer Zeile; Ton-Wahl wird auf ausdrücklichen Wunsch gemerkt
-- 24 Fragen aus den Haltungen, auf Pages mit KI-Entwürfen (gekennzeichnet); „keine Aussage im Programm“ zählt wie die heutige Lage (`status_quo` je Haltung, [docs/haltungen.md](docs/haltungen.md)); Frage und Auflösung kompakt, Sprung zu den Antwortfeldern, Belege eingeklappt
+**Quiz „Wer sagt Ja?“ ist jetzt ein eigenes Repository:** [ma3u/wer-sagt-ja](https://github.com/ma3u/wer-sagt-ja). Hier
+bleibt nur der Export der Fragen aus den Haltungen (`npm run quiz:erzeugen -- --entwuerfe`), inklusive der Regel
+„keine Aussage im Programm“ zählt wie die heutige Lage (`status_quo` je Haltung, [docs/haltungen.md](docs/haltungen.md)).
 
 **Daten**
 - **Volt** als achte Partei: Bundesprogramm, Landesprogramme ST, MV, BE, Positionen der erfassten Haltungen
 - **Alle 37 Themen** mit Maßnahmen aller acht Parteien aus Bundes- und (wo Landessache) Landesprogrammen ST, MV, BE – 3242 Maßnahmen, Einordnung ohne Parteinamen, alle als **ungeprüfter KI-Entwurf**
-- **Haltungen** der Quizfragen neu erfasst (weniger „keine Aussage“, Suchbegriffe bereinigt, siehe [docs/haltungen.md](docs/haltungen.md))
+- **Haltungen** (Wertfragen, auch Grundlage des Quiz) neu erfasst (weniger „keine Aussage“, Suchbegriffe bereinigt, siehe [docs/haltungen.md](docs/haltungen.md))
 - **Programmtext:** doppelt gezeichneter Fettdruck wird beim Auslesen zusammengeführt (im Unionsprogramm 2025 waren 902 Zeilen verschränkt; die Suche fand dort etwa „Schuldenbremse“ nicht)
 
 **App und Betrieb**
 - Barrierefreiheit nach WCAG 2.2 AA für Handy, iPad und Desktop ([docs/barrierefreiheit.md](docs/barrierefreiheit.md))
-- Duell auf Pages mit dem echten Katalog (`VITE_DATENQUELLE=katalog`, Stichwortsuche im Browser statt KI), Einstieg ins Quiz (`VITE_STARTSEITE=quiz`)
+- Duell auf Pages mit dem echten Katalog (`VITE_DATENQUELLE=katalog`, Stichwortsuche im Browser statt KI)
 - Startseiten mit einmaligem Auftritt und animiertem Logo; PWA-Precache bis 4 MiB, damit der Katalog offline bleibt
 - `.env` nicht mehr im Repository (Vorlage `.env.example`); Schlüssel wie `ELEVENLABS_API_KEY` nur in `.env.local`
 
@@ -57,7 +55,6 @@ Testversion: **https://ma3u.github.io/politik-duell/** (GitHub Pages, ohne Supab
 - Abgeschlossene Runden werden anonym gespeichert (nur neutrale Kurzfassung); unbekannte Themen landen in `review_warteschlange` mit vorläufiger Einschätzung; Runden ohne Wertung (auch Grenzfälle) zusätzlich im Wortlaut in `review_eingaben` (nur Admins, gelöscht beim Sichten oder nach 30 Tagen)
 - Rate-Limit pro zufälliger Sitzungs-ID
 - Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`; echter Katalog aus `daten/` mit KI-Entwürfen und Stichwortsuche statt KI: `VITE_DATENQUELLE=katalog` (so auf GitHub Pages)
-- Startseite: `VITE_STARTSEITE=quiz` öffnet beim Aufruf ohne Unterseite das Programm-Quiz (so auf GitHub Pages), sonst das Duell
 
 ## Stand: Meilenstein 4 – Wortwolke und Moderation
 
@@ -82,14 +79,12 @@ Testversion: **https://ma3u.github.io/politik-duell/** (GitHub Pages, ohne Supab
 
 **Einrichten:** siehe [supabase/EINRICHTEN.md](supabase/EINRICHTEN.md).
 
-## Programm-Quiz „Wer sagt Ja?“ (`#/quiz`)
+## Quiz „Wer sagt Ja?“
 
-Zweiter Spielmodus ohne Datenbank und ohne KI (Plan und rechtliche Einordnung: [docs/plan-quiz.md](docs/plan-quiz.md)):
-
-- Bis zu acht Personen raten, welche Parteien im Wahlprogramm zu einer Frage Ja (oder Nein) sagen – Einzel- oder Mehrfachauswahl, schnellere richtige Antworten bringen mehr Punkte (bis 1000 je Frage); allein üben geht auch
-- Fragen aus den geprüften Haltungen: `npm run quiz:erzeugen` schreibt `public/quiz/fragen.json`; mit `-- --entwuerfe` zusätzlich eine lokale Fassung mit KI-Entwürfen (`fragen-entwurf.json`, nicht im Repository; ins Build nur mit `VITE_QUIZ_ENTWUERFE=true`, so auf der Pages-Testversion)
-- Browser zu Browser per WebRTC; den Verbindungsaufbau vermittelt die Firebase Realtime Database (`VITE_FIREBASE_DATABASE_URL`, per REST ohne SDK, jede Nachricht wird nach dem Lesen gelöscht – siehe [firebase/README.md](firebase/README.md)), die auch weiterleitet, wenn keine Direktverbindung zustande kommt. Ohne Firebase-Adresse übernimmt ein Supabase-Realtime-Kanal; ohne beides funktionieren Räume zwischen Tabs desselben Browsers
-- Optional `VITE_STUN_URLS` (z. B. `stun:stun.example.eu:3478`) für Direktverbindungen übers Internet – die Datenschutzerklärung nennt den Server dann automatisch
+Das Mehrspieler-Quiz zu den Wahlprogrammen ist ein eigenes Repository: [ma3u/wer-sagt-ja](https://github.com/ma3u/wer-sagt-ja).
+Seine Fragen entstehen hier aus den Haltungen (`daten/haltungen/`): `npm run quiz:erzeugen -- --entwuerfe` schreibt
+`.cache/fragen.json` (oder den als Argument genannten Pfad), die dort als `public/fragen.json` eingecheckt wird.
+Je Haltung höchstens eine Frage, nur wenn alle Bundesprogramme eine Position haben (`scripts/quiz-fragen.ts`).
 
 ## Datenkatalog
 

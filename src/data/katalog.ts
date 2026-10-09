@@ -1098,7 +1098,7 @@ export function pruefeKatalog(
       positionen: [],
     }
     if (haltung.frage && !haltung.frage.trim().endsWith('?')) f(ort, '„frage“ ist eine neutrale Ja/Nein-Frage und endet mit „?“')
-    // Heutige Lage: Pflicht ab der Freigabe, denn im Quiz zählt „keine Aussage“ wie diese Antwort (docs/plan-quiz.md).
+    // Heutige Lage: Pflicht ab der Freigabe, denn im Quiz „Wer sagt Ja?“ zählt „keine Aussage“ wie diese Antwort (docs/haltungen.md).
     if (h.status_quo === undefined) {
       if (h.freigabe !== undefined) f(ort, '„status_quo“ fehlt: „ja“ oder „nein“ – die Antwort, die der heutigen Rechtslage bzw. Praxis entspricht („offen“, wenn weder noch)')
     } else if (h.status_quo === 'ja' || h.status_quo === 'nein' || h.status_quo === 'offen') haltung.status_quo = h.status_quo

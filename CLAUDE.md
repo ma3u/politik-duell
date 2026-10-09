@@ -1,6 +1,6 @@
 # Projekt: „Politik-Duell"
 
-Slogan: *„Versprechen kann jeder."* Webspiel: Spielende nennen Alltagsprobleme, das Spiel zeigt, welche Partei dafür die **wirksamste und umsetzbare** Lösung bietet – mit Beleg-Link. Zweiter Modus: Programm-Quiz „Wer sagt Ja?“ (`#/quiz`). Volle Spezifikation (Spielablauf, Datenmodell, KI-Schnittstelle, Branding, offene Punkte): [docs/projekt.md](docs/projekt.md) – bei Arbeit an Spiellogik, Datenmodell oder Texten dort nachlesen.
+Slogan: *„Versprechen kann jeder."* Webspiel: Spielende nennen Alltagsprobleme, das Spiel zeigt, welche Partei dafür die **wirksamste und umsetzbare** Lösung bietet – mit Beleg-Link. Volle Spezifikation (Spielablauf, Datenmodell, KI-Schnittstelle, Branding, offene Punkte): [docs/projekt.md](docs/projekt.md) – bei Arbeit an Spiellogik, Datenmodell oder Texten dort nachlesen.
 
 ## Grundprinzipien (nicht verhandelbar)
 
@@ -8,7 +8,7 @@ Slogan: *„Versprechen kann jeder."* Webspiel: Spielende nennen Alltagsprobleme
 2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und ordnet Probleme Themen/Ursachen zu. Punkte kommen deterministisch aus der kuratierten Datenbank. (KI-gestützte Entwürfe im Datenkatalog sind erlaubt, gekennzeichnet und zählen erst nach menschlicher Prüfung – außer in einer geschlossenen Testphase mit deutlichem Hinweis am Ergebnis.)
 3. **Die KI erfindet niemals Quellen oder Links.** Alle Belege stammen ausschließlich aus der Datenbank.
 4. **Forderung ≠ Problem.** Nennt ein Spieler eine Forderung („weniger X"), fragt die KI nach dem konkreten Alltagsproblem dahinter.
-5. **Datenschutz:** Politische Meinungen sind besondere Daten (Art. 9 DSGVO). Keine Konten, keine IPs, kein Audio speichern – nur anonymen Problemtext. Ausnahme: Runden ohne Wertung (auch `grenze`) landen im Wortlaut in `review_eingaben` – nur Admins, ohne Parteien, gelöscht beim Sichten oder nach 30 Tagen. Im Browser nur: Name im Quiz und Ton-Wahl (localStorage).
+5. **Datenschutz:** Politische Meinungen sind besondere Daten (Art. 9 DSGVO). Keine Konten, keine IPs, kein Audio speichern – nur anonymen Problemtext. Ausnahme: Runden ohne Wertung (auch `grenze`) landen im Wortlaut in `review_eingaben` – nur Admins, ohne Parteien, gelöscht beim Sichten oder nach 30 Tagen. Im Browser nur der Zugang zur geschlossenen Testphase (localStorage).
 
 ## Kurz zur Logik
 
@@ -23,15 +23,14 @@ npm run dev | build | lint | test        # App (React + Vite + TS), Tests mit Vi
 npm run daten:pruefen                    # Datenkatalog prüfen (daten/*.json)
 npm run zitate:pruefen                   # jedes Zitat gegen die PDF-Seite
 npm run seed && npm run dashboard        # supabase/seed.sql, seed-teile/, dashboard/ neu erzeugen
-npm run quiz:erzeugen [-- --entwuerfe]   # public/quiz/fragen*.json
-npm run quiz:stimmen [-- --nur-zeigen]   # ElevenLabs-Audio (Kosten!), Schlüssel nur in .env.local
+npm run quiz:erzeugen [-- --entwuerfe]   # Fragen für das Quiz „Wer sagt Ja?“ (eigenes Repository ma3u/wer-sagt-ja)
 ```
 
 Erfassung von Themen und Haltungen nur über die Skills (`.claude/skills/README.md`).
 
 ## Verzeichnisse
 
-`src/` App (Duell; `src/quiz/` Quiz) · `daten/` Katalog als JSON (Parteien, Themen, Haltungen, Leitfäden, Protokolle) · `scripts/` Erfassung, Prüfungen, Generatoren · `supabase/` Schema, Edge Functions, Seed · `firebase/` Quiz-Vermittlung · `docs/` Methode, Pläne, Barrierefreiheit · `.claude/` Skills, Agenten, Sperr-Hook.
+`src/` App · `daten/` Katalog als JSON (Parteien, Themen, Haltungen, Leitfäden, Protokolle) · `scripts/` Erfassung, Prüfungen, Generatoren · `supabase/` Schema, Edge Functions, Seed · `docs/` Methode, Pläne, Barrierefreiheit · `.claude/` Skills, Agenten, Sperr-Hook.
 
 ## Stolperfallen
 

@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 const FARBEN = ['var(--stimmblau)', 'var(--kuli)', 'var(--warnung)', 'var(--gut)', '#ffffff']
 
 /**
- * Konfettiregen für den Sieg (Quiz und Duell) – rein dekorativ, fällt einmal und langsam, ohne Blinken (WCAG 2.3.1).
+ * Konfettiregen für den Sieg – rein dekorativ, fällt einmal und langsam, ohne Blinken (WCAG 2.3.1).
  * Ruht bei „Bewegung anhalten“ und „Bewegung reduzieren“ (index.css).
  */
 export function Konfetti({ teile = 120 }: { teile?: number }) {

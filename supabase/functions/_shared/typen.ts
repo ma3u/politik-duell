@@ -118,7 +118,7 @@ export interface HaltungEintrag {
   verwandte_themen: number[]
   /**
    * Antwort auf die Frage, die der heutigen Rechtslage bzw. Praxis entspricht. Ein Programm ohne Aussage will
-   * daran nichts ändern – im Quiz zählt `keine_aussage` deshalb wie diese Antwort (docs/plan-quiz.md).
+   * daran nichts ändern – im Quiz „Wer sagt Ja?“ zählt `keine_aussage` deshalb wie diese Antwort (docs/haltungen.md).
    * `offen`: heute weder klar Ja noch klar Nein (etwa „erlaubt, aber nur in Teilen“) – dann zählt `keine_aussage`
    * schlicht als „nicht Ja“ bzw. „nicht Nein“. Fehlt nur in Datenbankzeilen aus älteren Migrationen.
    */

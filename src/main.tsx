@@ -15,12 +15,6 @@ if (location.hash.startsWith('#/testphase/')) {
   history.replaceState(null, '', `${location.pathname}${location.search}#/`)
 }
 
-// Startseite der Fassung (VITE_STARTSEITE=quiz, so auf GitHub Pages): Wer die Adresse ohne Unterseite öffnet,
-// landet im Programm-Quiz. Nur beim Laden – „Politik-Duell“ im Kopf (#/) führt danach weiter zum Duell.
-if (import.meta.env.VITE_STARTSEITE === 'quiz' && ['', '#', '#/'].includes(location.hash)) {
-  history.replaceState(null, '', `${location.pathname}${location.search}#/quiz`)
-}
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Wurzel />

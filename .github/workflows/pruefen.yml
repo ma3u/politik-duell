@@ -19,8 +19,6 @@ jobs:
       - run: npm ci
       - name: Datenkatalog prüfen
         run: npm run daten:pruefen
-      - name: Quizfragen aktuell (public/quiz/fragen.json)
-        run: npm run quiz:erzeugen -- --pruefen
       - name: IDs, neue Ursachen und Blindwerte gegen den Zielzweig
         if: github.event_name == 'pull_request'
         env:

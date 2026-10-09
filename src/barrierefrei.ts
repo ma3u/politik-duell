@@ -1,6 +1,6 @@
 import { useEffect, useRef, useSyncExternalStore } from 'react'
 
-// Hilfen für Barrierefreiheit (WCAG 2.2 AA), für Duell, Quiz und Unterseiten gemeinsam.
+// Hilfen für Barrierefreiheit (WCAG 2.2 AA), für Spiel und Unterseiten gemeinsam.
 
 // Erst nach der ersten Eingabe (Tippen, Klicken, Taste) verschiebt die App den Fokus – beim Laden der Seite
 // bleibt er, wo der Browser ihn hat.

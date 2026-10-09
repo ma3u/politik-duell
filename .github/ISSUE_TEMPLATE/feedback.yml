@@ -1,5 +1,5 @@
 name: Feedback
-description: Fehler, Belege, Ideen zum Politik-Duell und zum Programm-Quiz „Wer sagt Ja?“
+description: Fehler, Belege, Ideen zum Politik-Duell
 title: "[Feedback] "
 labels: ["feedback"]
 body:
@@ -23,7 +23,7 @@ body:
     id: wo
     attributes:
       label: Wo?
-      description: Seite oder Frage, z. B. „Quiz, Frage h4“ (wird über den Link aus dem Spiel vorausgefüllt)
+      description: Seite oder Runde, z. B. „Auflösung, Thema Mieten“ (wird über den Link aus dem Spiel vorausgefüllt)
   - type: textarea
     id: beschreibung
     attributes:

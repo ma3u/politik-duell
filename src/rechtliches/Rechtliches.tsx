@@ -3,7 +3,6 @@ import { useAnsicht, useFokusZurueck } from '../barrierefrei'
 import { Logo } from '../components/Logo'
 import { BETREIBER, betreiberVollstaendig, DATENSCHUTZ_STAND } from './betreiber'
 import { Methode } from './Methode'
-import { FIREBASE_URL, firebaseStandort, STUN_URLS, stunHost } from '../quiz/netz'
 
 // Impressum (#/impressum), Datenschutzerklärung (#/datenschutz) und Methode (#/methode).
 // Die Texte beschreiben, was die App tatsächlich tut – bei Änderungen an
@@ -105,10 +104,6 @@ function Datenschutz() {
           nur für uns zur Prüfung sichtbar und höchstens 30 Tage.
         </li>
         <li>Die Wortwolke im Hintergrund zeigt nur die Themen, die das Spiel schon werten kann – keine Eingaben von Spielenden.</li>
-        <li>
-          Das Programm-Quiz „Wer sagt Ja?“ speichert nichts und nutzt keine KI; es läuft zwischen den Geräten der
-          Mitspielenden (Abschnitt 11).
-        </li>
       </ul>
 
       <h2>1. Verantwortlich</h2>
@@ -269,92 +264,7 @@ function Datenschutz() {
         E-Mail.
       </p>
 
-      <h2 id="quiz">11. Programm-Quiz „Wer sagt Ja?“</h2>
-      <p>
-        Im Quiz (Adresse <code>#/quiz</code>) ratet ihr, welche Parteien in ihrem Wahlprogramm zu einer Frage Ja sagen.
-        Die Fragen lädt die App als Datei von unserer Website; eine Datenbank, eine KI oder ein Konto gibt es dabei
-        nicht. Deine Antworten zeigen, was du über Programme weißt – nicht, was du politisch denkst.
-      </p>
-      <p>
-        <strong>Was zwischen den Geräten läuft:</strong> dein Name im Spiel (freiwillig, höchstens 20 Zeichen), deine
-        Antworten mit Antwortzeit und der Spielstand. Das alles geht nur an die Geräte im selben Raum, liegt nur im
-        Arbeitsspeicher und ist weg, wenn ihr die Seite schließt. Wir speichern davon nichts. Der Raumcode steht im
-        hinteren Teil der Adresse (nach „#“) und wird deshalb nicht an unseren Webserver übertragen.
-      </p>
-      {FIREBASE_URL ? (
-        <p>
-          <strong>Verbindungsaufbau:</strong> Damit sich die Geräte finden, tauschen sie kurz technische
-          Verbindungsangaben über die Firebase Realtime Database aus (Google Ireland Limited, Dublin; Rechenzentrum in{' '}
-          {firebaseStandort(FIREBASE_URL)}). Darin können Netzwerkadressen der Geräte stehen. Jede Nachricht liegt dort
-          nur, bis das empfangende Gerät sie gelesen hat – in der Regel Sekundenbruchteile – und wird dann gelöscht;
-          beim Verlassen löscht jedes Gerät seine noch ungelesenen Nachrichten, die Spielleitung den ganzen Raum. Bricht
-          ein Gerät ohne Abmeldung ab, können einzelne Nachrichten liegen bleiben; die löschen wir automatisch, sobald
-          sie älter als eine Stunde sind (einmal täglich). Google verarbeitet dabei technisch notwendige
-          Verbindungsdaten einschließlich der IP-Adresse; eine Übermittlung in die USA ist nicht ausgeschlossen und
-          stützt sich auf das EU-US Data Privacy Framework bzw. Standardvertragsklauseln (Art. 45, 46 DSGVO); es gelten
-          die Datenverarbeitungsbedingungen von Firebase (Auftragsverarbeitung). Die App lädt dafür keine Software von
-          Google, nutzt kein Google Analytics und keine Anmeldung und speichert nichts in deinem Browser. Danach sind
-          die Geräte direkt miteinander verbunden (WebRTC). Klappt keine direkte Verbindung, laufen die
-          Spielnachrichten auf demselben Weg – ebenfalls nur bis zum Lesen.
-        </p>
-      ) : (
-        <p>
-          <strong>Verbindungsaufbau:</strong> Damit sich die Geräte finden, tauschen sie über einen Kanal bei Supabase
-          (Supabase Realtime, Rechenzentrum in Frankfurt am Main) kurz technische Verbindungsangaben aus. Darin können
-          Netzwerkadressen der Geräte stehen; alle Geräte im Raum empfangen sie. Die Nachrichten werden weitergeleitet,
-          aber nicht gespeichert; für die kurzzeitigen Zugriffsprotokolle von Supabase gilt Abschnitt 3. Danach sind
-          die Geräte direkt miteinander verbunden (WebRTC), und die Spielleitung schließt den Kanal. Klappt keine
-          direkte Verbindung, leitet derselbe Kanal die Spielnachrichten weiter – ebenfalls ohne sie zu speichern.
-        </p>
-      )}
-      <p>
-        <strong>IP-Adressen:</strong> Bei einer direkten Verbindung erfahren die verbundenen Geräte technisch bedingt
-        gegenseitig ihre IP-Adresse.{' '}
-        {STUN_URLS.length ? (
-          <>
-            Damit das auch zwischen verschiedenen Netzen klappt, fragt dein Browser einen STUN-Server (
-            {STUN_URLS.map(stunHost).join(', ')}) nach seiner öffentlichen Adresse; dessen Betreiber sieht dabei deine
-            IP-Adresse.
-          </>
-        ) : (
-          <>
-            Wir nutzen keinen STUN-Server: Direkt verbinden sich Geräte deshalb nur im selben Netz (etwa im selben
-            WLAN), sonst läuft das Spiel über die Weiterleitung. Öffentliche IP-Adressen tauschen die Geräte dabei
-            nicht aus.
-          </>
-        )}
-      </p>
-      <p>
-        <strong>Name im Spiel:</strong> Den Namen, den du im Quiz eingibst, speichert die App im Speicher deines
-        Browsers (localStorage), damit er beim nächsten Mal schon dasteht – nur dieses Feld, kein Raumname. Er bleibt auf
-        deinem Gerät; die anderen im Raum sehen ihn nur während des Spiels. Leerst du das Namensfeld, ist er gelöscht.
-      </p>
-      <p>
-        <strong>Ton-Einstellung:</strong> Tippst du auf „Ton einschalten“, „Ohne Ton spielen“ oder den Lautsprecher,
-        merkt sich die App deine Wahl (an oder aus) im Speicher deines Browsers (localStorage), damit du sie nicht bei
-        jedem Besuch neu treffen musst – auf deinen ausdrücklichen Wunsch (§ 25 Abs. 2 Nr. 2 TDDDG). Gespeichert wird nur
-        dieses eine Wort; löschen kannst du es über die Website-Daten deines Browsers.
-      </p>
-      <p>
-        <strong>Öffentliche Räume („Mit Zufälligen spielen“):</strong> Machst du einen Raum öffentlich, steht sein Name
-        und die Zahl der Mitspielenden in einer Liste, die alle Besucherinnen und Besucher des Quiz sehen – gespeichert
-        in der Firebase Realtime Database (siehe oben), solange der Raum auf Mitspielende wartet. Beim Spielstart, beim
-        Schließen oder Verlassen der Seite wird der Eintrag gelöscht; Reste löscht das tägliche Aufräumen. Wer
-        beitritt, sieht die Namen im Spiel der anderen. Beleidigende Namen zeigt das Spiel nicht an.
-      </p>
-      <p>
-        <strong>Stimmen und Geräusche:</strong> Die Moderatoren Mara und Ben sind erfundene, mit KI erzeugte Stimmen
-        (ElevenLabs). Alle Ansagen und Geräusche sind vorab aufgenommen und kommen als Dateien von unserer Website; beim
-        Spielen geht nichts an ElevenLabs. Der Ton lässt sich jederzeit ausschalten, die Ansagen stehen auch als
-        Untertitel auf dem Bildschirm.
-      </p>
-      <p>
-        <strong>Rechtsgrundlage</strong> ist unser berechtigtes Interesse, das gemeinsame Spiel möglichst ohne Server
-        und ohne Speicherung anzubieten (Art. 6 Abs. 1 lit. f DSGVO). Spiele mit Menschen, denen du deinen Raumcode
-        geben möchtest – wer ihn kennt, kann beitreten.
-      </p>
-
-      <h2>12. Deine Rechte</h2>
+      <h2>11. Deine Rechte</h2>
       <p>
         Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
         und Widerspruch (Art. 15–21 DSGVO) sowie auf Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO). Da wir keine
